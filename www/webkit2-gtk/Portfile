@@ -12,9 +12,8 @@ PortGroup           cxx11 1.1
 
 name                webkit2-gtk
 conflicts           webkit2-gtk-devel
-version             2.14.2
-revision            2
-description         Apple's WebKit2 HTML rendering library for GTK+3 (with optional support for GTK+2 plugins)
+version             2.18.0
+description         Apple's WebKit2 HTML rendering library for GTK+3
 long_description    ${description}
 maintainers         {jeremyhu @jeremyhu} {devans @dbevans}
 categories          www gnome
@@ -28,8 +27,8 @@ distname            webkitgtk-${version}
 
 dist_subdir         webkit-gtk
 
-checksums           rmd160  3fea1696539ba305367e36af803ce1a934b99b0d \
-                    sha256  2edbcbd5105046aea55af9671c4de8deedb5b0e3567c618034d440a760675556
+checksums           rmd160  786ffab37419fb68f83b20059fca98fd9fdf6cc1 \
+                    sha256  b583e46a3de36a3e80ba33b084ead60512a2046aca01ff61e50e519436e5038d
 
 # don't overwrite build dependencies provided by cmake portgroup
 depends_build-append \
@@ -72,11 +71,18 @@ depends_lib         port:atk \
 # PR-153138.patch: https://bugs.webkit.org/show_bug.cgi?id=153138
 # PR-157554.patch: https://bugs.webkit.org/show_bug.cgi?id=157554
 # PR-157574.patch: https://bugs.webkit.org/show_bug.cgi?id=157574
+# PR-176870.patch: https://bugs.webkit.org/show_bug.cgi?id=176870 (already landed in trunk)
 patchfiles-append \
     PR-152650-2.patch \
     PR-153138.patch \
     PR-157554.patch \
-    PR-157574.patch
+    PR-157574.patch \
+    PR-176870.patch \
+    patch-disable-mach-exceptions.diff \
+    patch-ramsize.diff \
+    patch-bundle-link-webcore.diff \
+    patch-fix-include-path.diff
+
 
 # Build out-of-tree
 configure.post_args     ../${worksrcdir}
@@ -110,30 +116,28 @@ pre-configure {
 }
 
 post-configure {
+    # Source/WebKit2 is renamed to Source/WebKit
+    # https://github.com/WebKit/webkit/commit/7f8a4a6dab6e75a624a97e5ce47de5626476b67d
+
     # https://bugs.webkit.org/show_bug.cgi?id=153176
     reinplace {s|\.\./\.\./lib/libWTFGTK\.a||} \
-        ${build.dir}/Source/WebKit2/CMakeFiles/WebKit2.dir/link.txt
+        ${build.dir}/Source/WebKit/CMakeFiles/WebKit2.dir/link.txt
     reinplace {s|\.\./\.\./lib/libbmalloc\.a||} \
         ${build.dir}/Source/JavaScriptCore/CMakeFiles/JavaScriptCore.dir/link.txt
+    # DatabaseProcess is renamed to StorageProcess
+    # https://bugs.webkit.org/show_bug.cgi?id=174879
     reinplace {s|[\./]*\.\./lib/lib[^\.]*\.a||g} \
         ${build.dir}/Source/JavaScriptCore/CMakeFiles/LLIntOffsetsExtractor.dir/link.txt \
         ${build.dir}/Source/JavaScriptCore/shell/CMakeFiles/jsc.dir/link.txt \
         ${build.dir}/Source/JavaScriptCore/shell/CMakeFiles/testb3.dir/link.txt \
-        ${build.dir}/Source/WebKit2/CMakeFiles/DatabaseProcess.dir/link.txt \
-        ${build.dir}/Source/WebKit2/CMakeFiles/NetworkProcess.dir/link.txt \
-        ${build.dir}/Source/WebKit2/CMakeFiles/webkit2gtkinjectedbundle.dir/link.txt \
-        ${build.dir}/Source/WebKit2/CMakeFiles/WebProcess.dir/link.txt
+        ${build.dir}/Source/WebKit/CMakeFiles/StorageProcess.dir/link.txt \
+        ${build.dir}/Source/WebKit/CMakeFiles/NetworkProcess.dir/link.txt \
+        ${build.dir}/Source/WebKit/CMakeFiles/webkit2gtkinjectedbundle.dir/link.txt \
+        ${build.dir}/Source/WebKit/CMakeFiles/WebProcess.dir/link.txt
     if {[variant_isset x11]} {
         # ENABLE_PLUGIN_PROCESS is only enabled with +x11
         reinplace {s|[\./]*\.\./lib/lib[^\.]*\.a||g} \
-            ${build.dir}/Source/WebKit2/CMakeFiles/PluginProcess.dir/link.txt
-
-        if {[variant_isset gtk2]} {
-            reinplace {s|\.\./\.\./lib/libWTFGTK\.a||} \
-                ${build.dir}/Source/WebKit2/CMakeFiles/WebKitPluginProcess2.dir/link.txt
-            reinplace {s|-Wl,-all_load||g} \
-                ${build.dir}/Source/WebKit2/CMakeFiles/WebKitPluginProcess2.dir/link.txt
-        }
+            ${build.dir}/Source/WebKit/CMakeFiles/PluginProcess.dir/link.txt
     }
     if {[variant_isset minibrowser]} {
         reinplace {s|[\./]*\.\./lib/lib[^\.]*\.a||g} \
@@ -157,7 +161,7 @@ if {${os.platform} eq "darwin" && ${os.major} > 13} {
 
 
 if {![variant_isset quartz]} {
-    default_variants-append +x11 +gtk2
+    default_variants-append +x11
 }
 
 # fix build on older systems
@@ -188,7 +192,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 13} {
     }
 }
 
-variant quartz conflicts x11 gtk2 {
+variant quartz conflicts x11 {
     require_active_variants port:gtk3 quartz
 
     configure.args-append \
@@ -214,14 +218,6 @@ variant x11 conflicts quartz {
 variant minibrowser description {Build and install MiniBrowser (for testing)} {
     configure.args-delete   -DENABLE_MINIBROWSER=OFF
     configure.args-append   -DENABLE_MINIBROWSER=ON
-}
-
-variant gtk2 conflicts quartz description {Enable support for GTK+2 plugins} {
-    require_active_variants port:gtk2 x11
-
-    depends_lib-append      port:gtk2
-    configure.args-delete   -DENABLE_PLUGIN_PROCESS_GTK2=OFF
-    configure.args-append   -DENABLE_PLUGIN_PROCESS_GTK2=ON
 }
 
 livecheck.type      regex

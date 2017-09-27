@@ -1,0 +1,38 @@
+--- Source/WTF/wtf/RAMSize.cpp.orig	2017-09-28 01:28:24.000000000 +0800
++++ Source/WTF/wtf/RAMSize.cpp	2017-09-28 01:31:18.000000000 +0800
+@@ -32,8 +32,11 @@
+ #if OS(WINDOWS)
+ #include <windows.h>
+ #elif defined(USE_SYSTEM_MALLOC) && USE_SYSTEM_MALLOC
+-#if OS(UNIX)
++#if OS(UNIX) && !OS(DARWIN)
+ #include <sys/sysinfo.h>
++#elif OS(DARWIN)
++#include <sys/types.h>
++#include <sys/sysctl.h>
+ #endif // OS(UNIX)
+ #else
+ #include <bmalloc/bmalloc.h>
+@@ -55,10 +58,21 @@
+         return ramSizeGuess;
+     return status.ullTotalPhys;
+ #elif defined(USE_SYSTEM_MALLOC) && USE_SYSTEM_MALLOC
+-#if OS(UNIX)
++#if OS(UNIX) && !OS(DARWIN)
+     struct sysinfo si;
+     sysinfo(&si);
+     return si.totalram * si.mem_unit;
++#elif OS(DARWIN)
++    int mib[2];
++    int64_t physical_memory;
++    size_t length;
++
++    // Get the Physical memory size
++    mib[0] = CTL_HW;
++    mib[1] = HW_MEMSIZE;
++    length = sizeof(int64_t);
++    sysctl(mib, 2, &physical_memory, &length, NULL, 0);
++    return physical_memory;
+ #else
+ #error "Missing a platform specific way of determining the available RAM"
+ #endif // OS(UNIX)
