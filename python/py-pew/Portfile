@@ -1,0 +1,33 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup			python 1.0
+PortGroup           github 1.0
+
+github.setup        berdario pew 1.1.0
+github.tarball_from releases
+name                py-${github.project}
+
+master_sites        ${github.homepage}/archive/
+distname            ${github.version}
+worksrcdir          ${github.project}-${github.version}
+
+categories          python
+platforms           darwin
+license             MIT
+
+python.versions		35 36
+
+maintainers         openmaintainer @esafak
+description         A tool to manage multiple virtual environments written in pure python
+long_description    $description
+checksums           rmd160 2633e21c3d4c6d288c8469603eaed078a7ef93f4 \
+                    sha256 755869c2aeed7ec0ad5d7bff0f2bfb75030b079b4d81691fd313d906bf637d90
+use_zip             yes
+
+test.run			yes
+
+if {${name} ne ${subport}} {
+	depends_lib-append		port:py${python.version}-virtualenv-clone
+}
+
