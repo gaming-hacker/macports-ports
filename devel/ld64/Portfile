@@ -234,7 +234,7 @@ if {${subport} eq ${name}} {
     build {}
     destroot {
         file mkdir ${destroot}${prefix}/libexec/ld64
-        xinstall -m 755 ${filespath}/ld-xcode ${destroot}${prefix}/libexec/ld64/ld-xcode
+        xinstall -m 0755 ${filespath}/ld-xcode ${destroot}${prefix}/libexec/ld64/ld-xcode
         ln -s ../libexec/ld64/ld-xcode ${destroot}${prefix}/bin/ld-xcode
     }
 } elseif {${subport} ne "${name}-136"} {
@@ -247,7 +247,7 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm39 llvm40 llvm50 llvmdev}
+    set all_llvm_variants {llvm39 llvm40 llvm50 llvm60 llvmdev}
     if {${os.major} < 10} {
         lappend all_llvm_variants llvm33
     }
@@ -257,7 +257,7 @@ if {${subport} eq ${name}} {
     if {${os.major} < 14} {
         lappend all_llvm_variants llvm37
     }
-    array set llvm_variant_version {llvm33 3.3 llvm34 3.4 llvm37 3.7 llvm39 3.9 llvm40 4.0 llvm50 5.0 llvmdev devel}
+    array set llvm_variant_version {llvm33 3.3 llvm34 3.4 llvm37 3.7 llvm39 3.9 llvm40 4.0 llvm50 5.0 llvm60 6.0 llvmdev devel}
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
