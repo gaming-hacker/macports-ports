@@ -111,6 +111,13 @@ test.target         check
 test.args           VERBOSE=1
 
 destroot.args       VERBOSE=1
+post-destroot {
+    if {${subport} eq ${name}} {
+        xinstall -d ${destroot}${prefix}/share/${name}
+        xinstall -m 644 ${worksrcpath}/src/etc/ctags.rust \
+            ${destroot}${prefix}/share/${name}
+    }
+}
 
 livecheck.type      regex
 livecheck.url       https://github.com/rust-lang/rust/tags
