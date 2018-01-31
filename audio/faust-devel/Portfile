@@ -1,6 +1,7 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
+PortGroup               cxx11 1.1
 PortGroup               github 1.0
 
 github.setup            grame-cncm faust 279974a0c8c7e913f1d8e4f1414d8086de88798c
@@ -9,10 +10,10 @@ github.setup            grame-cncm faust 279974a0c8c7e913f1d8e4f1414d8086de88798
 version                 2.5-20180126
 
 name                    faust-devel
-conflicts               faust faust2-devel
+conflicts               faust
 categories              audio lang
 platforms               darwin
-maintainers             ryandesign gmail.com:aggraef
+maintainers             {ryandesign @ryandesign} {gmail.com:aggraef @agraef}
 license                 GPL-2
 homepage                http://faust.grame.fr/
 
@@ -45,7 +46,15 @@ depends_lib             port:clang-${llvm_version} \
                         port:llvm-${llvm_version} \
                         path:lib/libssl.dylib:openssl
 
+patchfiles              patch-compiler-Makefile.unix.diff
+
 post-patch {
+    if [string match *clang* ${configure.compiler}] {
+        set stdlib_flag -stdlib=${configure.cxx_stdlib}
+    } else {
+        set stdlib_flag {}
+    }
+    reinplace "s|@STDLIB_FLAG@|${stdlib_flag}|g" ${worksrcpath}/compiler/Makefile.unix
     reinplace "s|/usr/local/|/usr/./local/|g" \
         ${worksrcpath}/tools/faust2appls/faust2faustvst
     reinplace "s|/usr/local|${prefix}|g" \
@@ -56,8 +65,8 @@ post-patch {
     fs-traverse f ${worksrcpath} {
         switch [file rootname [file tail ${f}]] {
             Makefile {
-                reinplace "s|/usr/local|${prefix}|g" ${f}
-                reinplace "s|/opt/local|${prefix}|g" ${f}
+                reinplace -q "s|/usr/local|${prefix}|g" ${f}
+                reinplace -q "s|/opt/local|${prefix}|g" ${f}
             }
         }
     }
@@ -70,7 +79,7 @@ use_configure           no
 variant universal {}
 
 build.args-append       ARCHFLAGS="[get_canonical_archflags cxx]" \
-                        CXX="${configure.cxx} [get_canonical_archflags cxx]"
+                        CXX="${configure.cxx} -std=gnu++11 [get_canonical_archflags cxx]"
 build.target            world
 
 post-destroot {
