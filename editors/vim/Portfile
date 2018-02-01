@@ -3,7 +3,7 @@ PortGroup           github 1.0
 
 name                vim
 set vim_version     8.0
-set vim_patchlevel  1420
+set vim_patchlevel  1451
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
 categories          editors
 platforms           darwin freebsd
@@ -16,9 +16,9 @@ long_description \
 
 homepage            http://www.vim.org/
 
-checksums           rmd160  d103bb544e9816b18670ce8c14c018c8e07d2cb0 \
-                    sha256  92777f141b8c976e563aab6a1fc714f0e3469221b84d5ed69680c87f2c109829 \
-                    size    13414510
+checksums           rmd160  88d79d42a4909688cf4743ea1665b1a0fd610b0c \
+                    sha256  704ad1bf2bc0e656f04fb24b7da5d8f7f0dc736daa60fe5aa2849d445346bd66 \
+                    size    13434579
 
 depends_build       bin:grep:grep
 depends_lib         port:ncurses \
@@ -102,7 +102,7 @@ variant xim description {Build with support for X Input Method} {
 
 variant perl description {Enable Perl scripting} {
     configure.args-append   --enable-perlinterp
-    depends_lib-append      path:bin/perl:perl5
+    depends_lib-append      path:bin/perl:perl5.26
 }
 
 variant python26 conflicts python27 description {Enable Python scripting} {
@@ -161,37 +161,46 @@ variant python36 conflicts python33 python34 python35 description {Enable Python
 }
 
 variant ruby requires ruby18 description {Compatibility variant, requires +ruby18} {}
-variant ruby18 conflicts ruby19 ruby20 ruby21 ruby22 ruby23 description {Enable Ruby scripting} {
+variant ruby18 conflicts ruby19 ruby20 ruby21 ruby22 ruby23 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby1.8
     depends_lib-append      port:ruby
 }
-variant ruby19 conflicts ruby18 ruby20 ruby21 ruby22 ruby23 description {Enable Ruby scripting} {
+variant ruby19 conflicts ruby18 ruby20 ruby21 ruby22 ruby23 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby1.9
     depends_lib-append      port:ruby19
 }
-variant ruby20 conflicts ruby18 ruby19 ruby21 ruby22 ruby23 description {Enable Ruby scripting} {
+variant ruby20 conflicts ruby18 ruby19 ruby21 ruby22 ruby23 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.0
     depends_lib-append      port:ruby20
 }
-variant ruby21 conflicts ruby18 ruby19 ruby20 ruby22 ruby23 description {Enable Ruby scripting} {
+variant ruby21 conflicts ruby18 ruby19 ruby20 ruby22 ruby23 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.1
     depends_lib-append      port:ruby21
 }
-variant ruby22 conflicts ruby18 ruby19 ruby20 ruby21 ruby23 description {Enable Ruby scripting} {
+variant ruby22 conflicts ruby18 ruby19 ruby20 ruby21 ruby23 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.2
     depends_lib-append      port:ruby22
 }
-variant ruby23 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 description {Enable Ruby scripting} {
+variant ruby23 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby24 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
     configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.3
     depends_lib-append      port:ruby23
 }
-
+variant ruby24 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby23 ruby25 description {Enable Ruby scripting} {
+    configure.args-append   --enable-rubyinterp
+    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.3
+    depends_lib-append      port:ruby23
+}
+variant ruby25 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby23 ruby24 description {Enable Ruby scripting} {
+    configure.args-append   --enable-rubyinterp
+    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.3
+    depends_lib-append      port:ruby23
+}
 variant tcl description {Enable Tcl scripting} {
     configure.args-append   --enable-tclinterp \
                             --with-tclsh=${prefix}/bin/tclsh
