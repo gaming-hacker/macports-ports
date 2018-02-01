@@ -4,6 +4,7 @@ PortGroup           github 1.0
 name                vim
 set vim_version     8.0
 set vim_patchlevel  1451
+revision            1
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
 categories          editors
 platforms           darwin freebsd
@@ -193,13 +194,13 @@ variant ruby23 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby24 ruby25 descri
 }
 variant ruby24 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby23 ruby25 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
-    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.3
-    depends_lib-append      port:ruby23
+    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.4
+    depends_lib-append      port:ruby24
 }
 variant ruby25 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby23 ruby24 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
-    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.3
-    depends_lib-append      port:ruby23
+    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.5
+    depends_lib-append      port:ruby25
 }
 variant tcl description {Enable Tcl scripting} {
     configure.args-append   --enable-tclinterp \
