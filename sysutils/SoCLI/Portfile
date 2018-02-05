@@ -23,12 +23,13 @@ long_description	Stack Overflow command line written in python. \
 
 homepage			http://www.github.com/gautamkrishnar/socli
 
-checksums			rmd160 f23f3bc03c722fe8eb45482bdb490b6f07971ae7
+checksums			rmd160 f23f3bc03c722fe8eb45482bdb490b6f07971ae7 \
 					sha256 abf585ab347d8087870312f181c49f3b7f4a17084bd611adeadb03a6a063af41
 
 depends_lib			port:py-beautifulsoup4 \
 					port:py-colorama \
 					port:py-urwid \
 					port:py-requests \
-					lib:py-stackexchange
+					port:py-stackexchange
+
 use_zip				yes
