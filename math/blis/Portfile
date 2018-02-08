@@ -1,0 +1,86 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           github 1.0
+
+name                blis
+version             2.0.2
+revision            1
+epoch               1
+categories          math
+
+github.author       gaming-hacker
+
+github.tag_prefix   master
+
+maintainers         github:${github.author}
+
+description         BLAS-like Library Instantiation Software Framework
+
+long_description    BLIS is a portable software framework for instantiating\
+                    high-performance BLAS-like dense linear algebra libraries. \
+                    The framework was designed to isolate essential kernels of \
+                    computation that, when optimized, immediately enable optimized \
+                    implementations of most of its commonly used and \
+                    computationally intensive operations. BLIS is written in \
+                    ISO C99 and available under a new/modified/3-clause BSD license.\
+                    While BLIS exports a new BLAS-like API, it also includes a BLAS \
+                    compatibility layer which gives application developers access to \
+                    BLIS implementations via traditional BLAS routine calls.
+
+homepage            https://github.org/${name}/
+
+platforms           darwin
+
+supported_archs     x86_64
+
+license             GPL
+
+distname            ${name}
+
+fetch.type          git
+
+git.branch          origin/${github.tag_prefix}
+github.homepage     https://github.com/${github.author}/${name}
+github.master_sites https://github.com/${github.author}/${name}
+git.url             https://github.com/${github.author}/${name}
+
+use_configure       yes
+
+use_parallel_build  yes
+
+configure.ccache            no
+
+use_autoreconf              no
+
+configure.args  --quiet \
+                --enable-shared \
+                --disable-static \
+                --enable-cblas \
+                --enable-blas \
+                --disable-verbose-make \
+                --enable-threading=pthreads \
+                CC=clang-mp-5.0
+
+
+default_variants    +haswell
+
+universal_variant   no
+
+variant haswell description {fourth-generation core successor to the Ivy Bridge} {
+    configure.args-append   haswell
+}
+
+variant sandybridge description {Nehalem microarchitecture} {
+    configure.args-append   sandybridge
+}
+
+variant dunnington description {Xeon chipsets} {
+    configure.args-append   dunnington
+}
+
+variant reference description {reference build} {
+    configure.args-append   reference
+}
+
+livecheck.type      none
