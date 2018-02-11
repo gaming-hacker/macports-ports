@@ -9,7 +9,7 @@ categories          net
 license             GPL-3+
 installs_libs       no
 platforms           darwin freebsd sunos
-maintainers         jimjag
+maintainers         nomaintainer
 description         Fast incremental file transfer
 long_description    rsync is an open source utility that provides fast \
                     incremental file transfer. It works both locally and remote \
@@ -30,7 +30,7 @@ depends_lib         port:popt port:libiconv
 # these come from http://rsync.samba.org/ftp/rsync/rsync-patches-3.1.3.tar.gz
 # and need to be updated with each release
 # hfs-compression.diff is marked by upstream as broken as of 3.1.3
-# removed: patch-hfs-compression.diff patch-hfs-compression-options.diff
+# don't use: patch-hfs-compression.diff patch-hfs-compression-options.diff
 patchfiles          patch-fileflags.diff \
                     patch-crtimes.diff \
                     patch-acls-unpack-error.diff
