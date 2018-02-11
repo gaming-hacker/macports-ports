@@ -3,11 +3,12 @@
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           cmake 1.0
-# this line is needed to allow use of gcc
-configure.cxx_stdlib   libstdc++
 PortGroup           cxx11 1.1
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
+
+# this line is needed to allow use of gcc
+configure.cxx_stdlib   libstdc++
 
 name                gromacs
 # not all versions have patches available for plumed; subport's patch will fail if not there
@@ -37,7 +38,7 @@ checksums           rmd160  76d85579ae322ef61e7382984e66f48f63d1cba9 \
 depends_build-append \
                     port:pkgconfig
 
-depends_lib-append  port:fftw-3-single port:libxml2 port:zlib
+depends_lib-append  port:fftw-3-single port:libxml2 port:hwloc port:zlib
 
 # FIXME: enable use of avx when appropriate, instead of just SSE
 configure.args-append  -DGMX_SIMD:STRING="SSE4.1" -DBUILD_TESTING:BOOL=ON -DGMX_X11:BOOL=OFF
@@ -70,14 +71,24 @@ if {[mpi_variant_isset]} {
 }
 
 pre-test {
-    system -W ${worksrcpath} "install_name_tool -change ${prefix}/lib/libgromacs${suffix}.dylib @executable_path/../lib/libgromacs${suffix}.dylib bin/gmx${suffix}"
+    if {[mpi_variant_isset]} {
+        set suffix _mpi
+    } else {
+        set suffix ""
+    }
+    system -W ${worksrcpath} "install_name_tool -change ${prefix}/lib/libgromacs${suffix}.2.dylib @executable_path/../lib/libgromacs${suffix}.2.dylib bin/gmx${suffix}"
     # reset name for new executables that will be built in this phase
-    system -W ${worksrcpath} "install_name_tool -id @executable_path/../lib/libgromacs${suffix}.dylib lib/libgromacs${suffix}.dylib"
+    system -W ${worksrcpath} "install_name_tool -id @executable_path/../lib/libgromacs${suffix}.2.dylib lib/libgromacs${suffix}.2.dylib"
 }
 post-test {
+    if {[mpi_variant_isset]} {
+        set suffix _mpi
+    } else {
+        set suffix ""
+    }
     # undo changes, in case 'install' is done afterward
-    system -W ${worksrcpath} "install_name_tool -change @executable_path/../lib/libgromacs${suffix}.dylib ${prefix}/lib/libgromacs.dylib bin/gmx${suffix}"
-    system -W ${worksrcpath} "install_name_tool -id ${prefix}/lib/libgromacs${suffix}.dylib lib/libgromacs${suffix}.dylib"
+    system -W ${worksrcpath} "install_name_tool -change @executable_path/../lib/libgromacs${suffix}.2.dylib ${prefix}/lib/libgromacs.2.dylib bin/gmx${suffix}"
+    system -W ${worksrcpath} "install_name_tool -id ${prefix}/lib/libgromacs${suffix}.2.dylib lib/libgromacs${suffix}.2.dylib"
 }
 # look into this:
 #NOTE: Regression tests have not been run. If you want to run them from the build system, get the correct version of the regression tests package and set REGRESSIONTEST_PATH in CMake to point to it, or set REGRESSIONTEST_DOWNLOAD=ON.
@@ -108,13 +119,13 @@ subport gromacs-plumed {
     depends_build-append   path:${prefix}/bin/plumed:plumed path:${prefix}/lib/libplumedWrapper.a:plumed
     pre-configure {
 # I need to execute with full path since PATH variable is not properly set here
-# Also notice that I am patching with runtime. Notice that 
+# Also notice that I am patching with runtime. Notice that
 # plumed compiled for MacPorts has the hardcoded path also in the runtime patch.
 # This allows the user to work with MacPorts plumed and possibly
 # override the choice setting the PLUMED_KERNEL environment variable.
 # Also notice that gromacs version is hardcoded here. Plumed patch is not always
-# updated when gromacs is.
-        exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-${version} --runtime -p
+# updated when gromacs is.=
+      exec ${prefix}/bin/plumed patch --mdroot=${worksrcpath} -e gromacs-2016.4 --runtime -p
     }
     notes "
 PLUMED is linked with runtime binding. By setting the environment variable PLUMED_KERNEL\
