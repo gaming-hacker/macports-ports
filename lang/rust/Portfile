@@ -29,7 +29,7 @@ depends_build       bin:python2.7:python27 \
 
 # Currently LLVM 4.0 is required, see this issue for LLVM 5.0 support:
 # https://github.com/rust-lang/rust/issues/43370 .
-depends_lib         port:llvm-4.0
+depends_lib         port:llvm-6.0
 
 master_sites        https://static.rust-lang.org/dist
 
@@ -100,7 +100,7 @@ configure.args      --build=${rust_platform} \
                     --default-linker=${configure.cc} \
                     --disable-codegen-tests \
                     --disable-docs \
-                    --llvm-root=${prefix}/libexec/llvm-4.0 \
+                    --llvm-root=${prefix}/libexec/llvm-6.0 \
                     --local-rust-root=${stage0(dir)} \
                     --release-channel=stable \
                     --set=target.${rust_platform}.cc=${configure.cc} \
