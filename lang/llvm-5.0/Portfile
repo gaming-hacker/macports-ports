@@ -33,7 +33,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                         the LLVM intermediate representation ("LLVM IR").
 
     depends_lib         port:libedit port:libffi port:ncurses path:lib/libxar.dylib:xar port:zlib
-    depends_run         bin:perl:perl5 port:llvm_select
+    depends_run         bin:perl:perl5.26 port:llvm_select
 } elseif {${subport} eq "clang-${llvm_version}"} {
     homepage            http://clang.llvm.org/
     description         C, C++, Objective C and Objective C++ compiler
@@ -169,7 +169,7 @@ if {${subport} eq "clang-${llvm_version}"} {
         #configure.cxxflags-append -DSVN_REVISION='"${svn.revision}"'
 
         post-patch {
-            reinplace "1 i \\                             
+            reinplace "1 i \\
                 #define SVN_REVISION \"${svn.revision}\"
             " ${worksrcpath}/tools/clang/lib/Basic/Version.cpp
         }
@@ -197,7 +197,7 @@ if {${subport} eq "lldb-${llvm_version}"} {
         #configure.cxxflags-append -DSVN_REVISION='"${svn.revision}"'
 
         post-patch {
-            reinplace "1 i \\                             
+            reinplace "1 i \\
                 #define SVN_REVISION \"${svn.revision}\"
             " ${worksrcpath}/tools/clang/lib/Basic/Version.cpp
         }
@@ -555,10 +555,10 @@ if {${subport} eq "llvm-${llvm_version}"} {
         configure.args-append \
             -DCLANG_ENABLE_STATIC_ANALYZER=ON
 
-        depends_run-append port:perl5
+        depends_run-append port:perl5.26
 
         post-patch {
-            reinplace "s|/usr/bin/env perl|${prefix}/bin/perl5|g" \
+            reinplace "s|/usr/bin/env perl|${prefix}/bin/perl5.26|g" \
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/ccc-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/c++-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/bin/scan-build
