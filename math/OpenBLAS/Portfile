@@ -195,7 +195,7 @@ post-destroot {
     move ${destroot}${prefix}/include/cblas.h \
         ${destroot}${prefix}/include/cblas_openblas.h
     #Correct library name
-    system "install_name_tool -id \
+    system "/opt/local/bin/install_name_tool -id \
         ${prefix}/lib/libopenblas-r1.dylib \
         ${destroot}${prefix}/lib/libopenblas-r1.dylib"
     delete file ${destroot}/${prefix}/lib/cmake
