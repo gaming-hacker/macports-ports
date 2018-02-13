@@ -120,69 +120,37 @@ default_variants-append +lapack
 use_configure       no
 
 pre-build {
-    if {[variant_isset universal]} {
-        foreach arch ${universal_archs_to_use} {
-            set makeINC [open ${worksrcpath}-${arch}/Makefile.rule "w"]
-            puts $makeINC "VERSION = 1"
-            puts $makeINC "LIBNAMESUFFIX = "
+    set makeINC [open ${worksrcpath}/Makefile.rule "w"]
+    puts $makeINC "VERSION = 1"
+    puts $makeINC "LIBNAMESUFFIX = "
 
-            puts $makeINC "CC = ${configure.cc}"
-            puts $makeINC "FC = ${configure.fc}"
+    puts $makeINC "CC = ${configure.cc}"
+    puts $makeINC "FC = ${configure.fc}"
 
-            if {${arch} eq "x86_64" || ${arch} eq "ppc64"} {
-                puts $makeINC "BINARY = 64"
-            } else {
-                puts $makeINC "BINARY = 32"
-            }
-            if {![variant_isset clang]} {
-                 puts $makeINC "COMMON_OPT = -O3"
-            } else {
-                #Ensure to use the AVX-capable assembler
-                puts $makeINC "COMMON_OPT = -O3"
-            }
-            puts $makeINC "COMMON_PROF = -pg"
-
-            if {![variant_isset lapack]} {
-                puts $makeINC "NO_LAPACK = 1"
-            }
-            if {![variant_isset clang]} {
-                puts $makeINC "NO_AVX = 1"
-            }
-            close $makeINC
-        }
+    if {${build_arch} eq "x86_64" || ${build_arch} eq "ppc64"} {
+        puts $makeINC "BINARY = 64"
     } else {
-        set makeINC [open ${worksrcpath}/Makefile.rule "w"]
-        puts $makeINC "VERSION = 1"
-        puts $makeINC "LIBNAMESUFFIX = "
-
-        puts $makeINC "CC = ${configure.cc}"
-        puts $makeINC "FC = ${configure.fc}"
-
-        if {${build_arch} eq "x86_64" || ${build_arch} eq "ppc64"} {
-            puts $makeINC "BINARY = 64"
-        } else {
-            puts $makeINC "BINARY = 32"
-        }
-        if {![variant_isset clang]} {
-            puts $makeINC "COMMON_OPT = -O3"
-        } else {
-            #Ensure to use the AVX-capable assembler
-            puts $makeINC "COMMON_OPT = -O3"
-        }
-        puts $makeINC "COMMON_PROF = -pg"
-
-        if {![variant_isset lapack]} {
-            puts $makeINC "NO_LAPACK = 1"
-        }
-        if {![variant_isset clang]} {
-            if { ![catch {sysctl hw.optional.avx1_0} has_avx] && $has_avx == 1 } {
-                ui_msg "Warning: the chosen compiler cannot handle advanced optimisation instructions."
-                ui_msg "         AVX instructions are disabled."
-            }
-            puts $makeINC "NO_AVX = 1"
-        }
-        close $makeINC
+        puts $makeINC "BINARY = 32"
     }
+    if {![variant_isset clang]} {
+        puts $makeINC "COMMON_OPT = -O3"
+    } else {
+        #Ensure to use the AVX-capable assembler
+        puts $makeINC "COMMON_OPT = -O3"
+    }
+    puts $makeINC "COMMON_PROF = -pg"
+
+    if {![variant_isset lapack]} {
+        puts $makeINC "NO_LAPACK = 1"
+    }
+    if {![variant_isset clang]} {
+        if { ![catch {sysctl hw.optional.avx1_0} has_avx] && $has_avx == 1 } {
+            ui_msg "Warning: the chosen compiler cannot handle advanced optimisation instructions."
+            ui_msg "         AVX instructions are disabled."
+        }
+        puts $makeINC "NO_AVX = 1"
+    }
+    close $makeINC
 }
 # Using system ones as default is set to bin/gcc-ar which does not
 # exist, and using gcc-mp ones end up in an error about a missing
@@ -213,4 +181,3 @@ post-destroot {
             ${destroot}${prefix}/include/lapacke.h
     }
 }
-
