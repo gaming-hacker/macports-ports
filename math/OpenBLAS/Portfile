@@ -1,54 +1,31 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
-PortSystem          1.0
-PortGroup           github 1.0
-PortGroup           muniversal 1.0
+PortSystem      1.0
+PortGroup       github 1.0
+# PortGroup       muniversal 1.0
+# PortGroup       github 1.0
 
 name                OpenBLAS
 categories          math science
 license             BSD
-maintainers         nicos {michaelld @michaelld} openmaintainer
 description         OpenBLAS is an optimized BLAS library based on GotoBLAS2
 long_description    ${description}
 platforms           darwin
 
+github.setup        gaming-hacker OpenBlas 6cc9e5683e2b840b13e614eaae3dc1d3520dbf1c
+version             20180213
+fetch.type          git
 # Prevent precompiled binaries to let compilation optimise the library
 # for the user processor
 archive_sites
 
-subport OpenBLAS-devel {}
-if {[string first "-devel" $subport] > 0} {
-
-    github.setup    xianyi OpenBLAS 0391c07b17d75650fa8716a642b737e996f35be5
-    version         20180211
-    checksums       rmd160 1b0f1b961876240a395b543b35e5674856c96c2f \
-                    sha256 c847f0bf3bd830657cc0bf52ba4033f894d674a41c49e6547bf743652f8d5205
-
-    name            ${github.project}-devel
-    conflicts       OpenBLAS
-
-    patchfiles      patch-libnoarch.devel.diff \
-                    patch-linkLib.devel.diff
-
-    livecheck.url   ${github.homepage}/commits/develop.atom
-
-} else {
-
-    github.setup    xianyi OpenBLAS 0.2.20 v
-    revision        1
-checksums           rmd160  259835e7fe94fa1d7cb861cbb579955ded7bb69b \
-                    sha256  2a9848fcfebdd8594a5252ea119e06cb8c1508528b87c781a20b44db0b1ba0ad
-
-    conflicts       OpenBLAS-devel
-
-    patchfiles      patch-libnoarch.release.diff \
-                    patch-linkLib.release.diff
-
-}
+# livecheck.url   ${github.homepage}/commits/develop.atom
 
 # declare +clang variant
 
 variant clang description "Use Clang as C/C++ compiler (required for AVX)" {}
+
+universal_variant   no
 
 # default to +clang if the processor has avx instructions
 if {![catch {sysctl hw.optional.avx1_0} has_avx] && $has_avx == 1 &&
@@ -90,7 +67,7 @@ foreach this_gcc_version_no_dot ${GCC_VERSIONS_NO_DOT} {
 }
 
 if {${GCC_VER_NO_DOT} == 0} {
-    default_variants +gcc6
+    default_variants +gcc8 -universal
 }
 
 # make sure -gcc6 was not selected alone
@@ -119,13 +96,13 @@ if {[variant_isset clang]} {
     configure.fc            ${prefix}/bin/gfortran-mp-${GCC_VER_DOT}
 
     if {[vercmp $xcodeversion 5.0] >= 0} {
-        configure.compiler      clang
+        configure.compiler      macports-clang-6.0
     } else {
         # Xcode's clang < 5.0 does not support avx
 
         #Use a compiler depending on system
         if {${configure.cxx_stdlib} eq "libc++"} {
-            configure.compiler      macports-clang-3.7
+            configure.compiler      macports-clang-6.0
         } else {
             configure.compiler      macports-clang-3.4
         }
@@ -213,53 +190,27 @@ pre-build {
 build.args          "AR=/usr/bin/ar RANLIB=/usr/bin/ranlib"
 destroot.args       "PREFIX=${prefix}"
 
-if {[variant_isset universal]} {
-    merger-post-destroot {
-        foreach arch ${universal_archs_to_use} {
-            move ${destroot}-${arch}${prefix}/include/cblas.h \
-                ${destroot}-${arch}${prefix}/include/cblas_openblas.h
-            #Correct library name
-            system "install_name_tool -id \
-                ${prefix}/lib/libopenblas-r1.dylib \
-                ${destroot}-${arch}${prefix}/lib/libopenblas-r1.dylib"
-            delete file ${destroot}-${arch}/${prefix}/lib/cmake
-            if {[variant_isset lapack]} {
-                #Install lapacke headers too
-                set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
-                                     grep -i lapacke]
-                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
-                    ${destroot}-${arch}${prefix}/include/lapacke_config.h
-                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
-                    ${destroot}-${arch}${prefix}/include/lapacke_mangling.h
-                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
-                    ${destroot}-${arch}${prefix}/include/lapacke_utils.h
-                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
-                    ${destroot}-${arch}${prefix}/include/lapacke.h
-            }
-        }
-    }
-} else {
-    post-destroot {
-        #Avoid conflict with Atlas
-        move ${destroot}${prefix}/include/cblas.h \
-            ${destroot}${prefix}/include/cblas_openblas.h
-        #Correct library name
-        system "install_name_tool -id \
-            ${prefix}/lib/libopenblas-r1.dylib \
-            ${destroot}${prefix}/lib/libopenblas-r1.dylib"
-        delete file ${destroot}/${prefix}/lib/cmake
-        if {[variant_isset lapack]} {
-            #Install lapacke headers too
-            set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
-                                 grep -i lapacke]
-            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
-                ${destroot}${prefix}/include/lapacke_config.h
-            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
-                ${destroot}${prefix}/include/lapacke_mangling.h
-            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
-                ${destroot}${prefix}/include/lapacke_utils.h
-            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
-                ${destroot}${prefix}/include/lapacke.h
-        }
+post-destroot {
+    #Avoid conflict with Atlas
+    move ${destroot}${prefix}/include/cblas.h \
+        ${destroot}${prefix}/include/cblas_openblas.h
+    #Correct library name
+    system "install_name_tool -id \
+        ${prefix}/lib/libopenblas-r1.dylib \
+        ${destroot}${prefix}/lib/libopenblas-r1.dylib"
+    delete file ${destroot}/${prefix}/lib/cmake
+    if {[variant_isset lapack]} {
+        #Install lapacke headers too
+        set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
+                             grep -i lapacke]
+        xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
+            ${destroot}${prefix}/include/lapacke_config.h
+        xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
+            ${destroot}${prefix}/include/lapacke_mangling.h
+        xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
+            ${destroot}${prefix}/include/lapacke_utils.h
+        xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
+            ${destroot}${prefix}/include/lapacke.h
     }
 }
+
