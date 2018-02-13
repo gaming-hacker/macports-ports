@@ -2,8 +2,6 @@
 
 PortSystem      1.0
 PortGroup       github 1.0
-# PortGroup       muniversal 1.0
-# PortGroup       github 1.0
 
 name                OpenBLAS
 categories          math science
@@ -18,10 +16,6 @@ fetch.type          git
 # Prevent precompiled binaries to let compilation optimise the library
 # for the user processor
 archive_sites
-
-# livecheck.url   ${github.homepage}/commits/develop.atom
-
-# declare +clang variant
 
 variant clang description "Use Clang as C/C++ compiler (required for AVX)" {}
 
@@ -123,21 +117,10 @@ pre-build {
     set makeINC [open ${worksrcpath}/Makefile.rule "w"]
     puts $makeINC "VERSION = 1"
     puts $makeINC "LIBNAMESUFFIX = "
-
     puts $makeINC "CC = ${configure.cc}"
     puts $makeINC "FC = ${configure.fc}"
-
-    if {${build_arch} eq "x86_64" || ${build_arch} eq "ppc64"} {
-        puts $makeINC "BINARY = 64"
-    } else {
-        puts $makeINC "BINARY = 32"
-    }
-    if {![variant_isset clang]} {
-        puts $makeINC "COMMON_OPT = -O3"
-    } else {
-        #Ensure to use the AVX-capable assembler
-        puts $makeINC "COMMON_OPT = -O3"
-    }
+    puts $makeINC "BINARY = 64"
+    puts $makeINC "COMMON_OPT = -O3"
     puts $makeINC "COMMON_PROF = -pg"
 
     if {![variant_isset lapack]} {
@@ -159,25 +142,26 @@ build.args          "AR=/usr/bin/ar RANLIB=/usr/bin/ranlib"
 destroot.args       "PREFIX=${prefix}"
 
 post-destroot {
-    #Avoid conflict with Atlas
-    move ${destroot}${prefix}/include/cblas.h \
-        ${destroot}${prefix}/include/cblas_openblas.h
-    #Correct library name
-    system "/opt/local/bin/install_name_tool -id \
-        ${prefix}/lib/libopenblas-r1.dylib \
-        ${destroot}${prefix}/lib/libopenblas-r1.dylib"
+#     #Avoid conflict with Atlas
+    move ${destroot}/${prefix}/include/cblas.h \
+        ${destroot}/${prefix}/include/cblas_openblas.h
+#     #Correct library name
+#***This is broken
+#     system "${prefix}/bin/install_name_tool -id \
+#         ${prefix}/lib/libopenblas-r1.dylib \
+#         ${destroot}${prefix}/lib/libopenblas-r1.dylib"
     delete file ${destroot}/${prefix}/lib/cmake
     if {[variant_isset lapack]} {
         #Install lapacke headers too
         set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
                              grep -i lapacke]
         xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
-            ${destroot}${prefix}/include/lapacke_config.h
+            ${destroot}/${prefix}/include/lapacke_config.h
         xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
-            ${destroot}${prefix}/include/lapacke_mangling.h
+            ${destroot}/${prefix}/include/lapacke_mangling.h
         xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
-            ${destroot}${prefix}/include/lapacke_utils.h
+            ${destroot}/${prefix}/include/lapacke_utils.h
         xinstall -m 0755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
-            ${destroot}${prefix}/include/lapacke.h
+            ${destroot}/${prefix}/include/lapacke.h
     }
 }
