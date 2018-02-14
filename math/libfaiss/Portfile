@@ -1,0 +1,49 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                libfaiss
+version             20180214
+categories          math
+license             BSD
+platforms           darwin
+maintainers         fb.com:hoss \
+                    fb.com:matthijs
+description         Efficient similarity search library from Facebook AI Research.
+long_description    Library for efficient similarity search and clustering of dense vectors.
+homepage            https://github.com/facebookresearch/faiss
+fetch.type          git
+git.url             https://github.com/facebookresearch/faiss.git
+git.branch          56383610bcb982d6591e2e2bea3516cb7723e04a
+
+depends_build       port:gcc7
+
+use_configure       no
+
+pre-build {
+    touch ${worksrcpath}/makefile.inc
+}
+
+build.env-append    CC="${prefix}/bin/g++-mp-7"
+build.env-append    CFLAGS="-fPIC -m64 -Wall -g -O3 -msse4 -mpopcnt -fopenmp \
+                            -Wno-sign-compare -std=c++11 -I/usr/include/malloc/"
+build.env-append    LDFLAGS="-g -fPIC -fopenmp"
+build.env-append    SHAREDEXT="dylib"
+build.env-append    SHAREDFLAGS="-Wl,-F. -bundle -undefined dynamic_lookup"
+build.env-append    FAISSSHAREDFLAGS="-dynamiclib"
+build.env-append    BLASCFLAGS="-DFINTEGER=int"
+build.env-append    BLASLDFLAGS="-framework Accelerate"
+build.target        libfaiss.a libfaiss.dylib
+
+destroot.target
+destroot.destdir
+destroot.cmd        mkdir -p ${destroot}${prefix}/lib && \
+                    cp libfaiss.a libfaiss.dylib ${destroot}${prefix}/lib
+
+variant openblas description {Use OpenBLAS instead of Apple's Accelerate framework} {
+    depends_lib-append  port:openblas
+    build.env-delete    BLASLDFLAGS="-framework Accelerate"
+    build.env-append    BLASLDFLAGS="${prefix}/lib/libopenblas.dylib"
+}
+
+default_variants +openblas
