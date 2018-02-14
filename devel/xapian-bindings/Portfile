@@ -43,10 +43,10 @@ variant python27 description {build python 2.7 bindings} {
     configure.args-replace  --without-python --with-python
 }
 
-variant ruby description {build ruby bindings} {
-    depends_lib-append      port:ruby24
+variant ruby description {build ruby 2.5 bindings} {
+    depends_lib-append      port:ruby25
 
-    configure.env           RUBY=ruby2.4
+    configure.env           RUBY=ruby2.5
     configure.args-replace  --without-ruby --with-ruby
 
     post-destroot {
