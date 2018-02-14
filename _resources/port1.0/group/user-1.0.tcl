@@ -37,4 +37,4 @@ configure.cxxflags ${user.CFLAGS} ${user.WNO}  ${user.MACROS} -std=c++17 -stdlib
 
 configure.cpp      ${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E
 
-set user.config.default  "--disable-option-checking  --enable-shared --disable-static --enable-silent-rules --enable-fast-install --disable-dependency-tracking --enable-libtool-lock --disable-debug --enable-simd"
+set user.config.default  "--disable-option-checking  --enable-shared --enable-static --enable-silent-rules --enable-fast-install --disable-dependency-tracking --enable-libtool-lock --disable-debug --enable-simd"
