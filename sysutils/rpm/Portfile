@@ -4,7 +4,7 @@ PortGroup		perl5 1.0
 name			rpm
 version			4.4.9
 revision		19
-perl5.branches	5.24
+perl5.branches	5.26
 platforms		darwin freebsd linux
 license			GPL-2 LGPL-2
 categories		sysutils archivers
