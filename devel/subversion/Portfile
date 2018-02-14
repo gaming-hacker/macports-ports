@@ -22,7 +22,7 @@ checksums	sha1	874b81749cdc3e88152d103243c3623ac6338388 \
 
 depends_lib		port:expat \
 			port:apr port:apr-util \
-			port:db46 port:sqlite3 \
+			port:db60 port:sqlite3 \
 			port:gettext port:libiconv \
 			port:serf1 port:cyrus-sasl2 \
 			port:libmagic port:libcomerr \
@@ -39,7 +39,7 @@ patchfiles		config_impl.h.patch
 post-patch {		reinplace "s|__PREFIX__|${prefix}|" ${worksrcpath}/subversion/libsvn_subr/config_impl.h
 			}
 
-configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
+configure.args		--with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db60:db-6.0 \
 			--with-apr=${prefix}/bin/apr-1-config \
 			--with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
 			--mandir=\\\${prefix}/share/man \
@@ -98,8 +98,8 @@ variant mod_dav_svn 	description {Install the subversion apache module (mod_dav_
 			}
 
 variant no_bdb		description {Build without support for BerkeleyDB repositories} {
-			depends_lib-delete	port:db46
-			configure.args-delete	--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6
+			depends_lib-delete	port:db60
+			configure.args-delete	--with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db60:db-6.0
 			configure.args-append	--without-berkeley-db
 			}
 

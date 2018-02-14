@@ -52,10 +52,10 @@ test.run            yes
 test.target         check
 
 if {![variant_isset db44] && ![variant_isset db47]} {
-    default_variants +db46
+    default_variants +db60
 }
 
-variant db44 conflicts db46 db47 {
+variant db44 conflicts db46 db47 db60 {
     configure.args-delete   --with-bdb=no
     configure.args-append   --with-bdb=${prefix} \
                             --with-bdb-include=${prefix}/include/db44 \
@@ -63,7 +63,7 @@ variant db44 conflicts db46 db47 {
     depends_lib-append      port:db44
 }
 
-variant db46 conflicts db44 db47 {
+variant db46 conflicts db44 db47 db60 {
     configure.args-delete   --with-bdb=no
     configure.args-append   --with-bdb=${prefix} \
                             --with-bdb-include=${prefix}/include/db46 \
@@ -71,12 +71,20 @@ variant db46 conflicts db44 db47 {
     depends_lib-append      port:db46
 }
 
-variant db47 conflicts db44 db46 {
+variant db47 conflicts db44 db46 db60 {
     configure.args-delete   --with-bdb=no
     configure.args-append   --with-bdb=${prefix} \
                             --with-bdb-include=${prefix}/include/db47 \
                             --with-bdb-lib=${prefix}/lib/db47
     depends_lib-append      port:db47
+}
+
+variant db60 conflicts db44 db46 db47 {
+    configure.args-delete   --with-bdb=no
+    configure.args-append   --with-bdb=${prefix} \
+                            --with-bdb-include=${prefix}/include/db460 \
+                            --with-bdb-lib=${prefix}/lib/db60
+    depends_lib-append      port:db60
 }
 
 variant mysql4 conflicts mysql5 {

@@ -49,7 +49,7 @@ patchfiles              patch-Makefile.pre.in.diff \
                         improve-QuickTime.h-check.patch
 
 depends_lib             port:gettext port:zlib path:lib/libssl.dylib:openssl \
-                        port:sqlite3 port:db46 port:ncurses \
+                        port:sqlite3 port:db60 port:ncurses \
                         port:bzip2 port:libedit
 depends_run             port:python_select \
                         port:python2_select
@@ -130,7 +130,7 @@ post-destroot {
    foreach unversionedFile {idle pydoc python python-config pythonw smtpd.py} {
       delete ${destroot}${prefix}/bin/${unversionedFile}
    }
-   
+
    # remove -arch flags from the config
    reinplace -E {s|-arch [a-z0-9_]+||g} \
       ${destroot}${framewdir}/lib/python${branch}/config/Makefile

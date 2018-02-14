@@ -33,7 +33,7 @@ depends_lib         port:xorg-libXp \
                     port:ImageMagick \
                     port:gdal \
                     port:pcre \
-                    port:db46 \
+                    port:db60 \
                     port:tiff \
                     port:proj \
                     port:shapelib
@@ -52,7 +52,7 @@ pre-configure {
 
 configure.args      --without-graphicsmagick
 
-configure.cppflags-append   -I${prefix}/include/db46
-configure.ldflags-append    -L${prefix}/lib/db46
+configure.cppflags-append   -I${prefix}/include/db60
+configure.ldflags-append    -L${prefix}/lib/db60
 
 livecheck.regex     /${name}-(\[0-9.\]+)/

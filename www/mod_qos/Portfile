@@ -21,7 +21,7 @@ depends_build       port:autoconf \
                     port:automake
 
 depends_lib         port:apache2 \
-                    port:db46 \
+                    port:db60 \
                     port:libpng \
                     path:${prefix}lib/libssl.dylib:openssl \
                     port:pcre
@@ -29,7 +29,7 @@ depends_lib         port:apache2 \
 patchfiles          patch-tools-Makefile.in.diff
 
 configure.dir       ${worksrcpath}/tools
-configure.env       LDFLAGS=-L${prefix}/lib/db46
+configure.env       LDFLAGS=-L${prefix}/lib/db60
 build.dir           ${configure.dir}
 
 if {[variant_isset apache22]} {
@@ -50,16 +50,16 @@ post-build {
 }
 
 pre-destroot {
-   xinstall -m 755 -d ${mdir}
+   xinstall -m 0755 -d ${mdir}
 }
 
 post-destroot {
-    xinstall -m 755 ${worksrcpath}/apache2/.libs/mod_qos.so ${mdir}
-    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
-    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}/images
-    xinstall -m 644 {*}[glob -type f ${worksrcpath}/doc/*] \
+    xinstall -m 0755 ${worksrcpath}/apache2/.libs/mod_qos.so ${mdir}
+    xinstall -m 0755 -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 0755 -d ${destroot}${prefix}/share/doc/${name}/images
+    xinstall -m 0644 {*}[glob -type f ${worksrcpath}/doc/*] \
         ${destroot}${prefix}/share/doc/${name}
-    xinstall -m 644 {*}[glob ${worksrcpath}/doc/images/*] \
+    xinstall -m 0644 {*}[glob ${worksrcpath}/doc/images/*] \
         ${destroot}${prefix}/share/doc/${name}/images
 }
 

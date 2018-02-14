@@ -48,7 +48,7 @@ patchfiles      patch-ice.cpp.config.Make.rules.diff \
 platforms       darwin
 
 depends_lib     port:libiconv \
-                port:db46 \
+                port:db60 \
                 port:expat \
                 path:lib/libssl.dylib:openssl \
                 port:readline \

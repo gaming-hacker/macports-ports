@@ -52,7 +52,7 @@ patchfiles      patch-ice.cpp.config.Make.rules.diff \
 patch.pre_args  -p1
 platforms       darwin
 
-depends_lib     port:db46 \
+depends_lib     port:db60 \
                 port:expat \
                 port:libiconv \
                 port:mcpp \
@@ -127,13 +127,13 @@ post-destroot {
     set sharedir ${destroot}${prefix}/share
     set docdir ${sharedir}/doc/${name}
 
-    xinstall -m 755 -d ${sharedir}/ice
+    xinstall -m 0755 -d ${sharedir}/ice
     file rename ${destroot}${prefix}/config ${sharedir}/ice
     file delete -force ${sharedir}/man
     file rename ${destroot}${prefix}/man ${sharedir}/man
     file rename ${destroot}${prefix}/slice ${sharedir}/slice
 
-    xinstall -m 755 -d ${docdir}
+    xinstall -m 0755 -d ${docdir}
     foreach f {CHANGES ICE_LICENSE LICENSE RELEASE_NOTES} {
         file rename ${destroot}${prefix}/${f} ${docdir}
     }

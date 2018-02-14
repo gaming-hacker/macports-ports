@@ -19,7 +19,7 @@ use_bzip2		yes
 checksums	sha1	874b81749cdc3e88152d103243c3623ac6338388 \
 		rmd160	d4ede3249729ce56ff7c9d7993a238d7a5446733 \
 		sha256	c3b118333ce12e501d509e66bb0a47bcc34d053990acab45559431ac3e491623
-		
+
 distname		subversion-${version}
 dist_subdir		subversion
 
@@ -27,14 +27,14 @@ depends_build		port:junit
 
 depends_lib		port:expat \
 			port:apr port:apr-util \
-			port:db46 port:subversion \
+			port:db60 port:subversion \
 			port:sqlite3 port:gettext \
 			port:libiconv port:serf1 \
 			port:cyrus-sasl2 \
 			port:libmagic port:libcomerr \
 			port:zlib
 
-configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
+configure.args		--with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db46:db-6.0 \
 			--with-apr=${prefix}/bin/apr-1-config \
 			--with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
 			--mandir=\\\${prefix}/share/man \
@@ -84,8 +84,8 @@ platform darwin 9	{	pre-fetch {
 			}
 
 variant no_bdb description {Build without support for BerkeleyDB repositories} {
-			depends_lib-delete	port:db46
-			configure.args-delete	--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6
+			depends_lib-delete	port:db60
+			configure.args-delete	--with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db60:db-6.0
 			configure.args-append	--without-berkeley-db
 			}
 post-destroot {
