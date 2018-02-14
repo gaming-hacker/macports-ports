@@ -48,7 +48,7 @@ proc perl5_get_default_branch {} {
     if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
         set ret [join [lrange [split $val .] 0 1] .]
     } else {
-        set ret 5.24
+        set ret 5.26
     }
     # if the above default is not supported by this module, use the latest it does support
     if {[info exists perl5.branches] && [lsearch -exact ${perl5.branches} $ret] == -1} {
@@ -191,7 +191,7 @@ proc perl5.setup {module vers {cpandir ""}} {
     }
     version             [perl5_convert_version ${perl5.moduleversion}]
     categories          perl
-    
+
     if {${perl5.use_search_cpan_org}} {
         homepage        http://search.cpan.org/dist/${perl5.module}/
     } else {
@@ -262,7 +262,7 @@ proc perl5.setup {module vers {cpandir ""}} {
     }
 
     livecheck.type      regexm
-    
+
     if {${perl5.use_search_cpan_org}} {
         livecheck.url       http://search.cpan.org/dist/${perl5.module}/
         livecheck.regex     >[quotemeta ${perl5.module}]-(\[^"\]+?)<
