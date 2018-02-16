@@ -5,13 +5,12 @@ PortGroup           muniversal 1.0
 
 name                libatomic_ops
 version             7.6.2
-
-homepage            https://github.com/ivmai/libatomic_ops/
-master_sites        https://github.com/ivmai/libatomic_ops/releases/download/v${version}/
-distname            ${name}-${version}
-github.setup    ivmai libatomic_ops 7.6.2 v
+github.setup    ivmai libatomic_ops ${version}  v
 checksums       rmd160  994eee4df05d0c3eed92d9946e24f35642a32807 \
                     sha256  6b378569f52f97cf26c3ab9d5098ae9c418361e26c13aac6d1527f7fd76ddfe2
+
+# not sure if there is any reasonable alternative
+livecheck.type  none
 
 maintainers         nomaintainer
 
@@ -25,8 +24,11 @@ description         library for hardware-provided atomic memory operations
 long_description    This package provides semi-portable access to \
                     hardware-provided atomic memory operations.
 
+# needed since we use the github version
+use_autoreconf      yes
+
 test.run            yes
 test.target         check
 
 # universal requires muniversal, but i386 tests fail on x86_64
-universal_variant no
+#universal_variant no
