@@ -26,16 +26,18 @@ set user.WNO "-Wno-unknown-warning-option -Wno-unused-function -Wno-unused-varia
 
 set user.MACROS "-DLEVEL1_DCACHE_LINESIZE=64 -DLEVEL1_DCACHE_SIZE=32 -DLEVEL2_DCACHE_SIZE=256 -DHASWELL -DL1_DATA_SIZE=32768 -DL1_DATA_LINESIZE=64 -DL2_SIZE=262144 -DL2_LINESIZE=64 -DDTB_DEFAULT_ENTRIES=64 -DDTB_SIZE=4096 -DHAVE_AVX -DHAVE_AVX2 -DHAVE_CFLUSH -DHAVE_CMOV -DHAVE_FMA3 -DHAVE_MMX -DHAVE_PSE -DHAVE_SSE -DHAVE_SSE2 -DHAVE_SSE3 -DHAVE_SSSE3 -DSSE4_1 -DHAVE_SSE4_2 -DHAVE_VFPV3 -DHAVE_OPENCL -D_REENTRANT -D_THREAD_SAFE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_NASM -DNDEBUG -DPIC -DUSE_PTHREAD"
 
-configure.compiler  macports-clang-${user.ver.clang}
+set universal_variant     no
 
-configure.cc       ${prefix}/bin/clang-mp-${user.ver.clang}
+set configure.compiler  macports-clang-${user.ver.clang}
 
-configure.cflags   ${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c11 -stdlib=libc++
+set configure.cc       ${prefix}/bin/clang-mp-${user.ver.clang}
 
-configure.cxx      ${prefix}/bin/clang++-mp-${user.ver.clang}
+set configure.cflags   ${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c11 -stdlib=libc++
 
-configure.cxxflags ${user.CFLAGS} ${user.WNO}  ${user.MACROS} -std=c++17 -stdlib=libc++
+set configure.cxx      ${prefix}/bin/clang++-mp-${user.ver.clang}
 
-configure.cpp      ${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E
+set configure.cxxflags ${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c++17 -stdlib=libc++
+
+set configure.cpp      ${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E
 
 set user.config.default  "--disable-option-checking  --enable-shared --enable-static --enable-silent-rules --enable-fast-install --disable-dependency-tracking --enable-libtool-lock --disable-debug --enable-simd"
