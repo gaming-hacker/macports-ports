@@ -1,7 +1,8 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
-PortSystem          1.0
-PortGroup           python 1.0
+PortSystem  1.0
+PortGroup   python 1.0
+PortGroup   user 1.0
 
 name                py-spacepy
 python.rootname     spacepy
@@ -38,13 +39,13 @@ if {${name} ne ${subport}} {
     # TODO: use the compilers portgroup
     if {${os.major} > 9} {
         depends_build-append \
-                    port:gcc8
+                    port:gcc${user.ver.gcc}
         configure.env-append \
-                    F77=${prefix}/bin/gfortran-mp-8 \
-                    F90=${prefix}/bin/gfortran-mp-8
+                    F77=${prefix}/bin/gfortran-mp-${user.ver.gcc} \
+                    F90=${prefix}/bin/gfortran-mp-${user.ver.gcc}
         build.env-append \
-                    F77=${prefix}/bin/gfortran-mp-8 \
-                    F90=${prefix}/bin/gfortran-mp-8
+                    F77=${prefix}/bin/gfortran-mp-${user.ver.gcc} \
+                    F90=${prefix}/bin/gfortran-mp-${user.ver.gcc}
     } else {
         # https://trac.macports.org/ticket/51388
         depends_build-append \

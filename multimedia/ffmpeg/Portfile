@@ -65,7 +65,6 @@ post-extract {
 depends_build       port:pkgconfig \
                     port:gmake \
                     port:texinfo
-
 # libvpx 1.7.0 now provides a shared library
 # move dependency from depends_build to depends_lib
 
