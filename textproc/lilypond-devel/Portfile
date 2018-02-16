@@ -69,7 +69,7 @@ post-patch {
 # https://lists.gnu.org/archive/html/bug-lilypond/2016-07/msg00071.html
 # blacklist any clang compiler and any old gcc (a better expression is needed)
 compiler.blacklist *clang* *llvm-gcc* *apple-gcc* gcc gcc-3.3 gcc-4.0 gcc-4.2
-compiler.whitelist macports-gcc-6 macports-gcc-5 macports-gcc-4.9 macports-gcc-4.8 macports-gcc-4.7
+compiler.whitelist macports-gcc-8 macports-gcc-7 macports-gcc-6 macports-gcc-5 macports-gcc-4.9 macports-gcc-4.8 macports-gcc-4.7
 
 configure.args-append  --with-texgyre-dir=${prefix}/share/texmf-texlive/fonts/opentype/public/tex-gyre \
     --enable-documentation

@@ -4,6 +4,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           cxx11 1.0
 PortGroup           compilers 1.0
+PortGroup   user 1.0
 
 name                py-networkit
 version             4.5
@@ -28,7 +29,7 @@ checksums           rmd160  0cd8edf8fdd8ee978e23d3ce778421c677bfff8f \
                     sha256  d2f7862970d376da916a4f87bf6d90e080dcbb37ab74a30dc6b3924b3b7b0475
 
 if {${name} ne ${subport}} {
-    compiler.whitelist  macports-gcc-4.9 macports-gcc-5 macports-gcc-6 macports-clang-5.0
+    compiler.whitelist  macports-gcc-${user.ver.gcc} macports-clang-${user.ver.clang}
 
     depends_build-append \
                         port:py${python.version}-setuptools \

@@ -32,7 +32,7 @@ depends_build       bin:perl:perl5
 universal_variant   no
 
 if {![gcc_variant_isset]} {
-    default_variants-append +gcc6
+    default_variants-append +gcc8
 }
 set mpi [mpi_variant_name]
 set cmp [gcc_variant_name]

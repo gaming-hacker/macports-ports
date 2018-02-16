@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-
+PortGroup   user 1.0
 name                py-llvmlite
 version             0.21.0
 revision            0
@@ -29,21 +29,21 @@ if {${name} ne ${subport}} {
     patchfiles-append   patch-ffi_Makefile.osx.diff
 
     post-patch {
-        reinplace "s|%%CXX%%|clang++-mp-5.0|" ${worksrcpath}/ffi/Makefile.osx
+        reinplace "s|%%CXX%%|clang++-mp-6.0|" ${worksrcpath}/ffi/Makefile.osx
     }
 
     depends_build-append \
                         port:py${python.version}-setuptools \
-                        port:clang-5.0
+                        port:clang-${user.ver.clang}
 
-    depends_lib-append  port:llvm-5.0
+    depends_lib-append  port:llvm-${user.ver.clang}
 
     if {${python.version} < 34} {
         depends_lib-append  port:py${python.version}-enum34
     }
 
-    build.env-append    LLVM_CONFIG=llvm-config-mp-5.0
-    destroot.env-append LLVM_CONFIG=llvm-config-mp-5.0
+    build.env-append    LLVM_CONFIG=llvm-config-mp-${user.ver.clang}
+    destroot.env-append LLVM_CONFIG=llvm-config-mp-${user.ver.clang}
 
     livecheck.type      none
 }

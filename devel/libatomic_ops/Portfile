@@ -2,6 +2,7 @@
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
+PortGroup   github 1.0
 
 name                libatomic_ops
 version             7.6.2

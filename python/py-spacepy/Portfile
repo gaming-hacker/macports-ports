@@ -38,13 +38,13 @@ if {${name} ne ${subport}} {
     # TODO: use the compilers portgroup
     if {${os.major} > 9} {
         depends_build-append \
-                    port:gcc6
+                    port:gcc8
         configure.env-append \
-                    F77=${prefix}/bin/gfortran-mp-6 \
-                    F90=${prefix}/bin/gfortran-mp-6
+                    F77=${prefix}/bin/gfortran-mp-8 \
+                    F90=${prefix}/bin/gfortran-mp-8
         build.env-append \
-                    F77=${prefix}/bin/gfortran-mp-6 \
-                    F90=${prefix}/bin/gfortran-mp-6
+                    F77=${prefix}/bin/gfortran-mp-8 \
+                    F90=${prefix}/bin/gfortran-mp-8
     } else {
         # https://trac.macports.org/ticket/51388
         depends_build-append \

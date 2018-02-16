@@ -40,7 +40,7 @@ if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-llvmlite \
                         port:py${python.version}-numpy
 
-    configure.compiler  macports-clang-5.0
+    configure.compiler  macports-clang-6.0
 
     if {${python.version} < 33} {
         depends_lib-append  port:py${python.version}-funcsigs
