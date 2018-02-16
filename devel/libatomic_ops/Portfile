@@ -4,20 +4,17 @@ PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                libatomic_ops
-subport             libatomic_ops-devel {}
 version             7.6.2
 
 homepage            https://github.com/ivmai/libatomic_ops/
 master_sites        https://github.com/ivmai/libatomic_ops/releases/download/v${version}/
 distname            ${name}-${version}
+github.setup    ivmai libatomic_ops 7.6.2 v
+checksums       rmd160  994eee4df05d0c3eed92d9946e24f35642a32807 \
+                    sha256  6b378569f52f97cf26c3ab9d5098ae9c418361e26c13aac6d1527f7fd76ddfe2
 
-checksums           rmd160  8764acd6d84488bbc79f5239037ccc3d4a59f2e2 \
-                    sha256  219724edad3d580d4d37b22e1d7cb52f0006d282d26a9b8681b560a625142ee6
+maintainers         nomaintainer
 
-livecheck.url       ${master_sites}
-livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}
-
-maintainers         mail.ru:ivmai
 categories          devel
 platforms           darwin
 # Permissive for parts from boehmgc, MIT for parts to be linked with other
@@ -32,4 +29,4 @@ test.run            yes
 test.target         check
 
 # universal requires muniversal, but i386 tests fail on x86_64
-# universal_variant no
+universal_variant no
