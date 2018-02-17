@@ -22,12 +22,11 @@ distfiles           git-${version}${extract.suffix} \
                     git-manpages-${version}${extract.suffix}
 
 checksums           git-${version}${extract.suffix} \
-
-                    rmd160  bfc6cbbf54c0c9ea10952005a91f93db141c88be \
-                    sha256  5560578bd21468d98637f41515c165d32f69caff0838b8989dee5ce10022c717 \
-                    git-manpages-${version}${extract.suffix} \
-                    rmd160  e64a6fe167af57b2d1d88f634850d97cb429db0d \
-                    sha256  42eee5134cc8b3b64c736025edfbfee86c2ecb76e37980a0aff26c86b5abcb05 \
+    rmd160  bfc6cbbf54c0c9ea10952005a91f93db141c88be \
+    sha256  5560578bd21468d98637f41515c165d32f69caff0838b8989dee5ce10022c717 \
+    git-manpages-${version}${extract.suffix} \
+    rmd160  e64a6fe167af57b2d1d88f634850d97cb429db0d \
+    sha256  42eee5134cc8b3b64c736025edfbfee86c2ecb76e37980a0aff26c86b5abcb05 \
 
 perl5.require_variant   yes
 perl5.conflict_variants no
