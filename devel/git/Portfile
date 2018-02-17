@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                git
-version             2.16.1
+version             2.16.2
 
 description         A fast version control system
 long_description    Git is a fast, scalable, distributed open source version \
@@ -22,15 +22,16 @@ distfiles           git-${version}${extract.suffix} \
                     git-manpages-${version}${extract.suffix}
 
 checksums           git-${version}${extract.suffix} \
-                    rmd160  25ec306da1a322a744a92154bdb3eab24d768836 \
-                    sha256  cfad4337f2fdbfc1e2c8abce5e17e1dd4e1718a34ac2cbe3238fbe2426f2ea19 \
+
+                    rmd160  bfc6cbbf54c0c9ea10952005a91f93db141c88be \
+                    sha256  5560578bd21468d98637f41515c165d32f69caff0838b8989dee5ce10022c717 \
                     git-manpages-${version}${extract.suffix} \
-                    rmd160  2bdff59f99720b9656a03d91c0d70eb3eadfe985 \
-                    sha256  97e61ddbf00f46cc5e8ae0f5fe282836a45db3ec30bb2739d928a036cf8ab7fa \
+                    rmd160  e64a6fe167af57b2d1d88f634850d97cb429db0d \
+                    sha256  42eee5134cc8b3b64c736025edfbfee86c2ecb76e37980a0aff26c86b5abcb05 \
 
 perl5.require_variant   yes
 perl5.conflict_variants no
-perl5.branches          5.24 5.26
+perl5.branches          5.26
 perl5.default_branch    5.26
 perl5.create_variants   ${perl5.branches}
 
@@ -142,8 +143,8 @@ variant pcre {
 variant doc description {Install HTML and plaintext documentation} {
     distfiles-append        git-htmldocs-${version}${extract.suffix}
     checksums-append        git-htmldocs-${version}${extract.suffix} \
-                            rmd160  6ea4691c40aaf4cfa1ce1a369a9276d666717379 \
-                            sha256  c30d033feb9048de876986b3ea87964eb68f73392ce23e18a64280d60dbe997e
+                            rmd160  187e341b9f2adf92ee3d40a696fde997e975e5ec \
+                            sha256  dbaf94de882e6ad6827a79935e6982021f0908bd7cccf984d3130fc77ecccb19
 
     patchfiles-append       git-subtree.html.diff
 
