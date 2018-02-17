@@ -2,10 +2,11 @@
 
 PortSystem          1.0
 PortGroup           perl5 1.0
+PortGroup   user 1.0
 
 name                git
 version             2.16.2
-
+revision        1
 description         A fast version control system
 long_description    Git is a fast, scalable, distributed open source version \
                     control system focusing on speed and efficiency.
@@ -30,8 +31,8 @@ checksums           git-${version}${extract.suffix} \
 
 perl5.require_variant   yes
 perl5.conflict_variants no
-perl5.branches          5.26
-perl5.default_branch    5.26
+perl5.branches          ${user.ver.perl}
+perl5.default_branch    ${user.ver.perl}
 perl5.create_variants   ${perl5.branches}
 
 depends_lib-append  port:curl \
@@ -56,9 +57,7 @@ extract.only        git-${version}${extract.suffix} \
 
 use_configure       no
 
-variant universal   {}
-
-set CFLAGS          "-I. -Wall -O2 -I${prefix}/include [get_canonical_archflags cc]"
+set CFLAGS          "-I. -Wall -O3 -I${prefix}/include [get_canonical_archflags cc]"
 set LDFLAGS         "-L${prefix}/lib [get_canonical_archflags ld]"
 
 build.args          CFLAGS="${CFLAGS}" \
@@ -86,7 +85,7 @@ pre-test {
 destroot.target     install
 pre-destroot {
     destroot.args  {*}${build.args}
-    xinstall -m 644 ${worksrcpath}/contrib/subtree/git-subtree.1 ${workpath}/man1
+    xinstall -m 0644 ${worksrcpath}/contrib/subtree/git-subtree.1 ${workpath}/man1
 }
 
 set docdestroot ${destroot}${prefix}/share/doc/git-doc
@@ -113,23 +112,23 @@ post-destroot {
 
     set completions_path ${destroot}${prefix}/share/bash-completion/completions
     xinstall -d ${completions_path}
-    xinstall -m 644 ${worksrcpath}/contrib/completion/git-completion.bash \
+    xinstall -m 0644 ${worksrcpath}/contrib/completion/git-completion.bash \
         ${completions_path}/git
 
     set share_path ${destroot}${prefix}/share/${name}
     xinstall -d ${share_path}
-    xinstall -m 644 ${worksrcpath}/contrib/completion/git-prompt.sh \
+    xinstall -m 0644 ${worksrcpath}/contrib/completion/git-prompt.sh \
         ${share_path}/git-prompt.sh
 
     xinstall -d ${destroot}${prefix}/libexec/git-core
-    xinstall -m 755 ${worksrcpath}/contrib/subtree/git-subtree.sh \
+    xinstall -m 0755 ${worksrcpath}/contrib/subtree/git-subtree.sh \
         ${destroot}${prefix}/libexec/git-core/git-subtree
 
     file delete -force ${share_path}/contrib
     copy ${worksrcpath}/contrib ${share_path}
 
-    xinstall -m 755 -d ${destroot}${prefix}/share/emacs/site-lisp/
-    xinstall -m 644 {*}[glob ${worksrcpath}/contrib/emacs/*.el] \
+    xinstall -m 0755 -d ${destroot}${prefix}/share/emacs/site-lisp/
+    xinstall -m 0644 {*}[glob ${worksrcpath}/contrib/emacs/*.el] \
         ${destroot}${prefix}/share/emacs/site-lisp/
 
 }
@@ -185,14 +184,14 @@ variant gitweb description {Install gitweb.cgi} {
         xinstall -W ${worksrcpath}/gitweb \
             gitweb.cgi \
             ${destroot}${prefix}/share/${name}/gitweb
-        xinstall -m 444 -W ${worksrcpath}/gitweb/static \
+        xinstall -m 0444 -W ${worksrcpath}/gitweb/static \
             gitweb.css \
             gitweb.js \
             git-favicon.png \
             git-logo.png \
             ${destroot}${prefix}/share/${name}/gitweb
         xinstall -d ${docdestroot}/gitweb
-        xinstall -m 444 -W ${worksrcpath}/gitweb README INSTALL \
+        xinstall -m 0444 -W ${worksrcpath}/gitweb README INSTALL \
             ${docdestroot}/gitweb
     }
 }
@@ -210,7 +209,7 @@ variant credential_osxkeychain description {Install git credential-osxkeychain u
     }
 
     post-destroot {
-        xinstall -m 755 "${worksrcpath}/contrib/credential/osxkeychain/git-credential-osxkeychain" \
+        xinstall -m 0755 "${worksrcpath}/contrib/credential/osxkeychain/git-credential-osxkeychain" \
             "${destroot}${prefix}/libexec/git-core/"
     }
 }
@@ -219,7 +218,7 @@ platform darwin 8 {
     build.args-append   NO_APPLE_COMMON_CRYPTO=1
 }
 
-default_variants    +doc +pcre +credential_osxkeychain
+default_variants    +doc +pcre +credential_osxkeychain +svn
 
 livecheck.type          regexm
 livecheck.regex         {<span class="version">.*?(\d+\.\d+\.\d+).*?</span>}
