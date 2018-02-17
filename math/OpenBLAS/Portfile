@@ -10,8 +10,9 @@ description         OpenBLAS is an optimized BLAS library based on GotoBLAS2
 long_description    ${description}
 platforms           darwin
 
-github.setup        gaming-hacker OpenBlas 6cc9e5683e2b840b13e614eaae3dc1d3520dbf1c
-version             20180213
+github.setup        gaming-hacker OpenBlas eaab622f0393590e5ad12298b9fd8739553c591f
+version             20180217
+revision            0
 fetch.type          git
 # Prevent precompiled binaries to let compilation optimise the library
 # for the user processor
