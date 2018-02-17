@@ -40,13 +40,13 @@ depends_lib-append  port:curl \
                     path:lib/libssl.dylib:openssl \
                     port:expat \
                     port:libiconv \
-                    port:python27
+                    port:${user.ver.py27}
 
-depends_run-append  port:p${perl5.major}-authen-sasl \
-                    port:p${perl5.major}-error \
-                    port:p${perl5.major}-net-smtp-ssl \
-                    port:p${perl5.major}-term-readkey \
-                    port:p${perl5.major}-cgi \
+depends_run-append  port:p${user.ver.perl}-authen-sasl \
+                    port:p${user.ver.perl}-error \
+                    port:p${user.ver.perl}-net-smtp-ssl \
+                    port:p${user.ver.perl}-term-readkey \
+                    port:p${user.ver.perl}-cgi \
                     port:rsync
 
 patchfiles          patch-Makefile.diff git-subtree.1.diff
@@ -67,8 +67,8 @@ build.args          CFLAGS="${CFLAGS}" \
                     CURLDIR=${prefix} \
                     OPENSSLDIR=${prefix} \
                     ICONVDIR=${prefix} \
-                    PERL_PATH="${prefix}/bin/perl${perl5.major}" \
-                    PYTHON_PATH="${prefix}/bin/python2.7" \
+                    PERL_PATH="${prefix}/bin/perl${user.ver.perl}" \
+                    PYTHON_PATH="${prefix}/bin/python${user.ver.python}" \
                     NO_FINK=1 \
                     NO_DARWIN_PORTS=1 \
                     NO_R_TO_GCC_LINKER=1 \
@@ -198,8 +198,8 @@ variant gitweb description {Install gitweb.cgi} {
 
 variant svn description {Bi-directional subversion repository support} {
     depends_run-append  port:subversion \
-                        port:p${perl5.major}-libwww-perl \
-                        port:p${perl5.major}-svn-simple
+                        port:p${user.ver.perl}-libwww-perl \
+                        port:p${user.ver.perl}-svn-simple
 }
 
 variant credential_osxkeychain description {Install git credential-osxkeychain utility from contrib} {

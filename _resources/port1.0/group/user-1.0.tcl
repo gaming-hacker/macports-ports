@@ -6,6 +6,7 @@ set user.ver.perl 5.26
 set user.ver.ruby 2.5
 set user.ver.php 5.4
 set user.ver.python 2.7
+set user.ver.py27 python27
 set user.arch x86_64
 set user.ghub gaming-hacker
 set user.ver.intel  2018.1.126
@@ -28,6 +29,9 @@ set user.MACROS "-DLEVEL1_DCACHE_LINESIZE=64 -DLEVEL1_DCACHE_SIZE=32 -DLEVEL2_DC
 
 set universal_variant     no
 set configure.ccache      no
+set use_parallel_build    yes
+set autoreconf.args       -fvi
+set livecheck.type      none
 
 set configure.compiler  macports-clang-${user.ver.clang}
 
@@ -41,4 +45,6 @@ set configure.cxxflags "${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c++17 -st
 
 set configure.cpp      "${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E"
 
-set user.config.default  "--disable-option-checking  --enable-shared --enable-static  --enable-silent-rules  --enable-fast-install --disable-dependency-tracking --enable-libtool-lock --disable-debug --enable-simd"
+set configure.env ${user.MACROS}
+
+set user.config.default  "--quiet --disable-option-checking  --enable-shared --enable-static  --enable-silent-rules --enable-fast-install --enable-pic --with-pic --disable-dependency-tracking --enable-libtool-lock --disable-debug --disable-example --enable-simd --enable-asm --enable-libc++"

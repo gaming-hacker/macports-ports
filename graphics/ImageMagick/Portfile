@@ -2,14 +2,14 @@
 
 PortSystem                  1.0
 PortGroup                   conflicts_build 1.0
-
+PortGroup user 1.0
 # Keep relevant lines in sync between ImageMagick and p5-perlmagick.
 
 # Before updating to a newer version, install phpNN-imagick. After updating, run `phpNN -v`. If the following warning appears, revbump php-imagick.
 # PHP Warning:  Version warning: Imagick was compiled against Image Magick version XXXX but version YYYY is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
 
 name                        ImageMagick
-version                     6.9.9-26
+version                     7.0.7-9
 set reasonable_version      [lindex [split ${version} -] 0]
 homepage                    http://www.imagemagick.org/
 categories                  graphics devel
@@ -41,9 +41,9 @@ master_sites                http://www.imagemagick.org/download/ \
                             ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
                             ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
-checksums                   rmd160  4058b96fb5e3bf030648d84a25b709b65f1cd578 \
-                            sha256  dcf23a7356a970e613a9fa2cfaa64c999ea8e278a45aec4905e54398d6c12c83 \
-                            size    8799740
+checksums                   rmd160  e69d0afec4cdc726f93f2d123fefc80ca3b3f85b \
+                            sha256  dc0c7418e20d9f113b3c3ae6903ed89d00a95465bd3f5e15832f3b06593a085c \
+                            size    8622068
 
 depends_lib                 port:bzip2 \
                             port:djvulibre \
@@ -72,17 +72,22 @@ depends_lib-append          port:pkgconfig
 
 depends_run                 port:urw-fonts
 
-configure.ccache            no
+# On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
+# tries to use it as if it were Apple's OpenCL, which fails; see #23354.
+# if {[file exists ${prefix}/lib/libCL.dylib]} {
+#     conflicts_build         cryptlib
+# }
 
 use_autoreconf              yes
-autoreconf.args             -fvi
 
 configure.args              --enable-shared \
                             --enable-static \
+                            --disable-ltdl-install \
                             --disable-silent-rules \
+                            --disable-rpath --disable-nls \
                             --with-frozenpaths \
                             --with-openexr \
-                            --disable-hdri \
+                            --enable-hdri \
                             --with-dps \
                             --with-bzlib \
                             --with-djvu \
@@ -96,7 +101,7 @@ configure.args              --enable-shared \
                             --with-tiff \
                             --with-webp \
                             --with-zlib \
-                            --with-modules \
+                            --without-modules \
                             --with-xml \
                             --without-perl \
                             --without-fpx \
@@ -106,7 +111,23 @@ configure.args              --enable-shared \
                             --without-lqr \
                             --without-pango \
                             --without-x \
-                            --with-gs-font-dir=${prefix}/share/fonts/urw-fonts
+                            --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
+                            --with-quantum-depth=64 \
+                            --disable-deprecated \
+                            --enable-hugepages \
+                            --enable-openmp \
+                            --enable-opencl \
+                            --enable-zero-configuration \
+                            --with-gcc-arch=native \
+                            --with-apple-font-dir=/Library/Fonts \
+                            --disable-assert \
+                            --disable-docs \
+                            --enable-cipher \
+                            --with-autotrace \
+                            --disable-option-checking \
+                            --disable-maintainer-mode \
+                            --enable-fast-install \
+                            --with-sysroot=/opt/local/libexec/llvm-${user.ver.clang}/c++/v1
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     configure.args-append   --disable-opencl
@@ -127,7 +148,7 @@ test.env                    DYLD_LIBRARY_PATH=${worksrcpath}/magick/.libs
 destroot.delete_la_files    no
 
 variant graphviz description {Support Graphviz} {
-    depends_lib-append      path:bin/dot:graphviz
+    depends_lib-append      path:bin/dot:graphviz-devel
     configure.args-replace  --without-gvc --with-gvc
 }
 
@@ -158,9 +179,9 @@ variant x11 {
     configure.args-replace  --without-x --with-x
 }
 
-default_variants            +x11
+default_variants            +x11 +lqr +wmf +rsvg
 
 livecheck.version           ${reasonable_version}
 livecheck.type              regex
 livecheck.url               [lindex ${master_sites} 0]
-livecheck.regex             ${name}-(6(?:\\.\\d+)*)(?:-\\d+)?
+livecheck.regex             ${name}-(7(?:\\.\\d+)*)(?:-\\d+)?
