@@ -109,9 +109,9 @@ proc ruby_set_branch {option action args} {
         set ruby.prog_suffix     ""
     }
     #
+    #         1.9 {set ruby.api_version 1.9.1}
     set ruby.api_version ${ruby.branch}.0
     switch -exact ${ruby.branch} {
-        1.9 {set ruby.api_version 1.9.1}
         2.5 {set ruby.api_version 2.5}
     }
     set ruby.gemdir         ${prefix}/lib/ruby${ruby.prog_suffix}/gems/${ruby.api_version}
