@@ -72,7 +72,7 @@ options perl5.default_variant perl5.variant perl5.set_default_variant perl5.conf
 # The default variant derived from perl5.default_branch if not set in Portfile.
 default perl5.default_variant {[string map {. _} perl${perl5.default_branch}]}
 # The name of the selected variant or empty if there is not one.
-default perl5.variant {true}
+default perl5.variant {}
 # Control whether to set a default perl variant or not.
 default perl5.set_default_variant {true}
 # Control whether to conflict the perl variants or not. Probably almost always true.
@@ -82,9 +82,8 @@ default perl5.require_variant {false}
 # Get variant names from branches
 proc perl5.get_variant_names {branches} {
     set ret {}
-    lappend ret "perl5.26"
-#     foreach branch ${branches} {
-#      lappend ret "perl5.26"
+    lappend ret perl5.26
+#    foreach branch ${branches} {
 #         lappend ret "perl[string map {. _} ${branch}]"
 #     }
     return $ret
