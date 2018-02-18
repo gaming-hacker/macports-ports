@@ -1,7 +1,8 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
+PortGroup user 1.0
 
 github.setup        khenriks mp3fs 0.91 v
 github.tarball_from releases
@@ -30,5 +31,3 @@ depends_lib         port:osxfuse \
                     port:lame \
                     port:libid3tag
 
-# osxfuse is not universal
-universal_variant   no

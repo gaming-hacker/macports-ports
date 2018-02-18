@@ -1,4 +1,4 @@
-# -*- mode: tcl; indent-tabs-mode: nil; tab-width: 4; c-basic-offset: 4 -*-
+# -*- mode: _tcl; indent-tabs-mode: nil; tab-width: 2; c-basic-offset: 4 -*-
 
 PortSystem 1.0
 PortGroup cmake 1.0

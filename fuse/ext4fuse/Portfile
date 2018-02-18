@@ -1,7 +1,8 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
+PortGroup user 1.0
 
 github.setup        gerard ext4fuse 0.1.3 v
 categories          fuse
@@ -23,9 +24,6 @@ depends_lib-append  path:lib/libfuse.dylib:osxfuse \
 
 use_configure       no
 
-# osxfuse is not universal
-universal_variant   no
-
 build.env           CC=${configure.cc} \
                     CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \
                     LDFLAGS="${configure.ldflags} [get_canonical_archflags ld]"
@@ -33,5 +31,5 @@ build.env           CC=${configure.cc} \
 build.target
 
 destroot            {
-    xinstall -m 755 ${worksrcpath}/ext4fuse ${destroot}${prefix}/bin/
+    xinstall -m 0755 ${worksrcpath}/ext4fuse ${destroot}${prefix}/bin/
 }

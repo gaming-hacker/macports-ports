@@ -43,4 +43,4 @@ livecheck.type      regex
 livecheck.url       [lindex ${master_sites} 0]
 livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}
 
-# vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2

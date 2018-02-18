@@ -1,6 +1,7 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup user 1.0
 
 name                osxfuse
 version             3.7.1
@@ -134,7 +135,7 @@ build.args      -v 5 \
                 -a [join [get_canonical_archs] " -a "] \
                 --framework-prefix="${prefix}" \
                 --fsbundle-prefix="${prefix}" \
-                --library-prefix="${prefix}" 
+                --library-prefix="${prefix}"
 
 # Clear CPATH and LIBRARY_PATH because a ncurses include file
 # conflicts with the one in MacPorts. It doesn't matter much anyway

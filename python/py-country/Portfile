@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
 # vim: set fileencoding=utf-8 tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem	    1.0
