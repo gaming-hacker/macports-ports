@@ -8,7 +8,6 @@ set ruby.branch   ${user.ver.ruby}
 set user.ver.php 5.6
 set user.ver.python 2.7
 set user.ver.py  27
-set user.ver.py27 python27
 set user.arch x86_64
 set user.ghub gaming-hacker
 set user.ver.intel  2018.1.126
