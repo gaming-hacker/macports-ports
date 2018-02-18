@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
+PortGroup user 1.0
 
 name                abinit
 version             8.0.8b
@@ -40,13 +41,11 @@ worksrcdir          ${name}-8.0.8
 
 compilers.choose    cc cxx fc
 # g95 is no longer supported by abinit
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran
 
 configure.args-append  --enable-gw-dpc
 configure.fcflags-append  -ffree-line-length-none
 configure.optflags  -O3
-
-use_parallel_build  yes
 
 # We do not need to use ABINIT's own approach to parallel builds, which only is relevant if
 # the "fallbacks" are used, namely if we asked for etsf_io, libxc, wannier90, etc. support
@@ -117,9 +116,6 @@ pre-configure {
 # install binaries and pkgconfig but not the very large number of test files
 destroot.target   install-exec install-data-local
 
-#universal variant not allowed for libxc/etsf_io
-universal_variant   no
-
 test.run            yes
 test.cmd            tests/runtests.py
 # args -t0 for no timeout since it cannot be found anyway; or: set depends_build-append port:timeout
@@ -156,7 +152,7 @@ pre-configure {
 variant fftw3 description {Build with support for fftw-3 FFT library} {
     depends_lib-append      port:fftw-3 port:fftw-3-single
     compilers.enforce_some_fortran fftw-3 fftw-3-single
-    
+
     if { [variant_isset threads] } {
         configure.args-append   --with-fft-flavor="fftw3-threads"
         configure.args-append   --with-fft-libs="-lfftw3_threads -lfftw3 -lfftw3f"
@@ -202,7 +198,7 @@ variant scalapack description {Build with ScaLAPACK for parallel linear algebra}
         ui_error "+scalapack requires an MPI variant. Choose +mpich, +mpich_devel, +openmpi, or +openmpi_devel."
         return -code error "+scalapack requires an MPI variant."
     }
-    
+
     mpi.setup               require
     mpi.enforce_variant     scalapack
 }
@@ -227,7 +223,7 @@ variant wannier90 description {Build with support for Wannier90} {
 # FIXME: same problem as for BigDFT, it gets downloaded. Make a separate port.
 #variant atompaw description {Build including AtomPAW atomic dataset generator} {
 #}
- 
+
 livecheck.type      regex
 livecheck.url       ${homepage}/packages
 livecheck.regex     ABINIT v (\[0-9.\]+)

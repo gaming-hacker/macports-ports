@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           mpi 1.0
+PortGroup user 1.0
 
 name                hdf5
 version             1.10.1
@@ -27,11 +28,10 @@ master_sites \
     https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${shortversion}/hdf5-${version}/src
 checksums           rmd160  759e63ead405740dcf3260bdc9644b97480f3b8b \
                     sha256  9c5ce1e33d2463fb1a42dd04daacbc22104e57676e2204e3d66b1ef54b88ebf2
-mpi.setup           -gcc44 -gcc45
+mpi.setup
 
 use_bzip2           yes
 depends_lib         port:zlib
-use_parallel_build  yes
 
 patchfiles          patch-tools-src-misc-h5cc.in.diff
 
@@ -40,7 +40,7 @@ patchfiles          patch-tools-src-misc-h5cc.in.diff
 compiler.blacklist  llvm-gcc-4.2
 
 # #pragma pack() results in "too many #pragma options align=reset"
-compiler.blacklist-append gcc-3.3 gcc-4.0 gcc-4.2 apple-gcc-4.2
+compiler.blacklist-append apple-gcc-4.2
 if {[vercmp ${xcodeversion} 4.0] < 0} {
     # configure.cxx is still /usr/bin/llvm-g++-4.2
     compiler.blacklist-append clang
@@ -135,8 +135,8 @@ if {[ variant_isset fortran ] && ![ fortran_variant_isset ] } {
     return -code error
 }
 
-if {([ variant_isset gfortran ] || [ variant_isset g95 ]) && ![ variant_isset fortran ]} {
-    default_variants +fortran
+if {[ variant_isset gfortran ] && ![ variant_isset fortran ]} {
+    default_variants +gfortran
 }
 
 variant threadsafe description {

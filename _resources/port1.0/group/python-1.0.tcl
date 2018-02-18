@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # Copyright (c) 2011-2016 The MacPorts Project
 #
@@ -262,11 +262,11 @@ proc python_get_defaults {var} {
             return $ret
         }
         bin {
-            if {${python.version} != 24} {
+#             if {${python.version} != 24} {
                 return "${python.prefix}/bin/python${python.branch}"
-            } else {
-                return "${prefix}/bin/python${python.branch}"
-            }
+#             } else {
+#                 return "${prefix}/bin/python${python.branch}"
+#             }
         }
         include {
             set inc_dir "${python.prefix}/include/python${python.branch}"
@@ -287,46 +287,46 @@ proc python_get_defaults {var} {
             }
         }
         lib {
-            if {${python.version} != 24 && ${python.version} != 25} {
+#             if {${python.version} != 24 && ${python.version} != 25} {
                 return "${python.prefix}/Python"
-            } else {
-                return "${prefix}/lib/lib${python.branch}.dylib"
-            }
+#             } else {
+#                 return "${prefix}/lib/lib${python.branch}.dylib"
+#             }
         }
         pkgd {
-            if {${python.version} != 24} {
+#             if {${python.version} != 24} {
                 return "${python.prefix}/lib/python${python.branch}/site-packages"
-            } else {
-                return "${prefix}/lib/python${python.branch}/site-packages"
-            }
+ #            } else {
+#                 return "${prefix}/lib/python${python.branch}/site-packages"
+#             }
         }
         setup_args {
-            if {${python.version} != 24} {
+#             if {${python.version} != 24} {
                 return "--no-user-cfg"
-            } else {
-                return ""
-            }
+#             } else {
+#                 return ""
+#             }
         }
         setup_prefix {
-            if {${python.version} != 24} {
+#             if {${python.version} != 24} {
                 return "${python.prefix}"
-            } else {
-                return "${prefix}"
-            }
+#             } else {
+#                 return "${prefix}"
+#             }
         }
         link_binaries {
-            if {${python.version} != 24 && ${python.version} != 25} {
+#             if {${python.version} != 24 && ${python.version} != 25} {
                 return yes
-            } else {
-                return no
-            }
+#             } else {
+#                 return no
+#             }
         }
         move_binaries {
-            if {${python.version} == 24 || ${python.version} == 25} {
-                return yes
-            } else {
+#             if {${python.version} == 24 || ${python.version} == 25} {
+#                 return yes
+#             } else {
                 return no
-            }
+#             }
         }
         binary_suffix {
             if {[string match py-* [option name]]} {

@@ -4,9 +4,10 @@ PortSystem          1.0
 PortGroup cmake     1.0
 PortGroup compilers 1.0
 PortGroup perl5     1.0
-PortGroup qt4       1.0
+PortGroup qt5       1.0
+PortGroup user 1.0
 
-perl5.branches      5.26
+perl5.branches      ${user.ver.perl}
 
 name                magicspp
 version             2.34.3
@@ -34,7 +35,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 
 depends_build-append \
                     port:flex \
@@ -68,9 +69,7 @@ depends_lib         port:libemos \
                     port:fftw-3
 require_active_variants path:lib/pkgconfig/cairo.pc:cairo x11
 
-universal_variant   no
-
-default_variants-append +python27
+default_variants-append +python${user.ver.py}
 
 # patch-cmake-FindPangoCairo.cmake.diff excludes -Wl,-framework
 patchfiles          patch-CMakeLists.txt.diff \
@@ -139,7 +138,7 @@ variant python27 description {Add support for python27} {
 }
 
 variant metview description {Add support for MetView} {
-    depends_lib-append      port:qt4-mac
+    depends_lib-append      port:qt5-mac
     configure.args-append   -DENABLE_METVIEW=ON \
                             -DQT_QMAKE_EXECUTABLE=${qt_qmake_cmd}
 }

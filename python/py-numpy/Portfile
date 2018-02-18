@@ -4,6 +4,7 @@ PortSystem              1.0
 PortGroup               python 1.0
 PortGroup               github 1.0
 PortGroup               compilers 1.0
+PortGroup user 1.0
 
 name                    py-numpy
 categories-append       math
@@ -14,8 +15,8 @@ description             The core utilities for the scientific library scipy for 
 long_description        ${description}
 
 github.setup            numpy numpy 1.14.0 v
-checksums               rmd160 1626ff09eb2aa4cd4ab3b6ed311436f379540765 \
-                        sha256 af480180ad5d5b6dec9b8cbe0ff10246dff0f62bc9d5c3d6a4bdb68428595add
+checksums   rmd160 1626ff09eb2aa4cd4ab3b6ed311436f379540765 \
+            sha256 af480180ad5d5b6dec9b8cbe0ff10246dff0f62bc9d5c3d6a4bdb68428595add
 
 if {${name} ne ${subport}} {
     # the python PortGroup puts compiler names in build.env and destroot.env
@@ -24,7 +25,7 @@ if {${name} ne ${subport}} {
     pre-destroot { set_compilers }
 }
 
-python.versions         26 27 33 34 35 36
+python.versions  27 36
 
 # respect ${build_arch} value
 compilers.clear_archflags  no
@@ -32,29 +33,15 @@ compilers.clear_archflags  no
 # http://trac.macports.org/ticket/34562
 python.consistent_destroot yes
 
-# TODO: Fix the +universal variant.  This port is a fairly deep dependency and needs to be able to support +universal.
-# https://trac.macports.org/ticket/48263
-#universal_variant no
-
 if {${name} ne ${subport}} {
-    if {${python.version} == 26} {
-        github.setup        numpy numpy 1.11.3 v
-        checksums           rmd160 8cc323d5944301aefa1f66f17d4af14c364c6b32 \
-                            sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1
-        patchfiles-append   patch-numpy_core_setup.py.26.diff \
-                            patch-numpy_distutils_fcompiler_gnu.py.26.diff \
-                            patch-numpy_tests_test_scripts.py.26.diff
-    } else {
-        patchfiles-append   patch-numpy_core_setup.py.diff \
-                            patch-numpy_distutils_fcompiler_gnu.py.diff \
-                            patch-numpy_tests_test_scripts.py.diff
-    }
-    compilers.setup         require_fortran -clang -dragonegg -gcc44 -gcc45 \
-                            -gcc46 -gcc47 -gcc48 -g95 clang37
+    patchfiles-append   patch-numpy_core_setup.py.diff \
+                        patch-numpy_distutils_fcompiler_gnu.py.diff \
+                        patch-numpy_tests_test_scripts.py.diff
 
-    patchfiles-append       patch-f2py_setup.py.diff \
-                            patch-fcompiler_g95.diff
-    
+    compilers.setup         require_fortran -clang clang60
+
+    patchfiles-append       patch-f2py_setup.py.diff
+
     depends_lib-append      port:fftw-3 \
                             port:py${python.version}-nose \
                             port:py${python.version}-cython
@@ -83,11 +70,8 @@ if {${name} ne ${subport}} {
         # create binaries only for the native OS architecture, at
         # either 32 or 64 bits.  Restrict the supported archs
         # accordingly.
-        if {${os.arch} eq "i386"} {
-            supported_archs         i386 x86_64
-        } elseif {${os.arch} eq "powerpc"} {
-            supported_archs         ppc ppc64
-        }
+        supported_archs         i386 x86_64
+
 
         # force LDFLAGS for correct linking of the linalg module
         # for non-Apple GCC compilers
@@ -146,12 +130,6 @@ variant."
     post-patch {
         reinplace "s|@@MPORTS_PYTHON@@|${python.bin}|" \
             ${worksrcpath}/numpy/f2py/setup.py
-
-        # https://trac.macports.org/ticket/46392
-        if {${os.arch} eq "powerpc"} {
-            reinplace "s,'-O3','-O2'," \
-                ${worksrcpath}/numpy/distutils/fcompiler/gnu.py
-        }
 
         if { [use_wrapper] } {
             # Prepare wrappers

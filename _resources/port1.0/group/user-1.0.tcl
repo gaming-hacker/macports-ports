@@ -5,8 +5,9 @@ set user.ver.gcc  8
 set user.ver.perl 5.26
 set user.ver.ruby 2.5
 set ruby.branch   ${user.ver.ruby}
-set user.ver.php 5.4
+set user.ver.php 5.6
 set user.ver.python 2.7
+set user.ver.py  27
 set user.ver.py27 python27
 set user.arch x86_64
 set user.ghub gaming-hacker

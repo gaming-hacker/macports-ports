@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
-
+PortGroup user 1.0
 name                quantum-espresso
 version             6.2
 revision            1
@@ -46,7 +46,7 @@ patchfiles          \
 
 compilers.choose    cc fc
 # g95 is not compatible with OpenMP
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran
 
 configure.optflags  -O3
 
@@ -130,7 +130,6 @@ if {[mpi_variant_isset]} {
     default_variants-append +scalapack
 }
 
-use_parallel_build yes
 build.target  all-j
 # as patched, builds pw pp ld1 upf ph
 
@@ -138,11 +137,10 @@ build.target  all-j
 
 #BEWARE: you are not using multi-threaded FFTs!
 
-#variant threads description {Build with support for OpenMP threads} {
-    # not compatible with g95. What about threaded FFTW3?
-#    configure.args-append   --enable-openmp
-#    configure.fcflags-append -fopenmp
-#}
+variant threads description {Build with support for OpenMP threads} {
+   configure.args-append   --enable-openmp
+   configure.fcflags-append -fopenmp
+}
 
 livecheck.type      regex
 livecheck.url       ${homepage}/news/

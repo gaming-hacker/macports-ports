@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup compilers 1.0
-
+PortGroup user 1.0
 name                splash
 version             2.7.0
 revision            2
@@ -26,7 +26,7 @@ default_variants    +giza
 
 use_configure       no
 
-compilers.setup     require_fortran -dragonegg -g95 -gcc44 -clang -llvm
+compilers.setup     require_fortran -clang -llvm
 
 build.cmd           make
 build.args          SYSTEM=gfortran CC=${configure.cc} FC=${configure.fc}

@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           mpi 1.0
 PortGroup           linear_algebra 1.0
-
+PortGroup user 1.0
 name                octopus
 version             7.2
 categories          science
@@ -24,12 +24,9 @@ master_sites        ${homepage}/download/${version}
 checksums           rmd160  695a22404ab2ce0efbd5555be1077f61ff0d430c \
                     sha256  f5589f14ff30d5a960af697fb4ab71daf4f3e2d19dd6e5229cd2b62f0eaeff0f
 
-# clang38: errors on operate.o
-compiler.blacklist  macports-clang-3.8
-
 # clang versions are unnecessary
 # dragonegg34-gcc46 segfaults on varia.c
-mpi.setup           require_fortran -dragonegg34 -clang
+mpi.setup           require_fortran -clang
 
 # this incorrectly passes if libxc +gcc5, octopus +mpich, mpich-default +gcc49
 compilers.enforce_fortran libxc
@@ -122,7 +119,7 @@ variant scalapack description {Build with ScaLAPACK for parallel linear algebra}
         ui_error "+scalapack requires an MPI variant. Choose +mpich, +mpich_devel, +openmpi, or +openmpi_devel."
         return -code error "+scalapack requires an MPI variant."
     }
-    
+
     mpi.setup               require
     # FIXME: this unnecessarily enforces scalapack had same C compiler as we are using.
     # also, if +scalapack but no MPI is used, an internal error from active_variants

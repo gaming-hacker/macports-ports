@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           compilers 1.0
-
+PortGroup user 1.0
 name                ccpnmr
 version             2.4.2
 revision            1
@@ -28,9 +28,9 @@ patchfiles          ccpnmr.patch
 use_configure       no
 
 compilers.choose    cc cxx
-compilers.setup     -clang -dragonegg -g95 -gfortran -llvm
+compilers.setup     -clang -gfortran -llvm
 
-set python.branch	2.7
+set python.branch	${user.ver.python}
 set python.prefix	${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin	${python.prefix}/bin/python${python.branch}
 set python.pkgd	${python.prefix}/lib/python${python.branch}/site-packages

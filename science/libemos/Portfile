@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup compilers 1.0
 PortGroup cmake     1.0
-
+PortGroup user 1.0
 name                libemos
 version             4.5.1
 platforms           darwin
@@ -22,7 +22,7 @@ long_description \
     and BUFR & CREX encoding/decoding routines.
 
 compilers.choose    fc f77 f90
-compilers.setup     -clang -dragonegg -g95 -llvm
+compilers.setup     -clang
 cmake.out_of_source yes
 
 patchfiles          patch-libemos-dp-CMakeLists.txt.diff \
@@ -40,7 +40,7 @@ compilers.enforce_fortran \
                     port:fftw-3
 
 if {![fortran_variant_isset]} {
-    default_variants    +gcc7
+    default_variants    +gcc${user.ver.gcc}
 }
 
 configure.args-append \

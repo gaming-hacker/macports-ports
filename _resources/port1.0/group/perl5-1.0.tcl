@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 #
 # Copyright (c) 2004 Robert Shaw <rshaw@opendarwin.org>,
 #                    Toby Peterson <toby@opendarwin.org>
@@ -44,17 +44,7 @@ default perl5.use_search_cpan_org {false}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches
-    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.26
-    if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
-        set ret [join [lrange [split $val .] 0 1] .]
-    } else {
-        set ret 5.26
-    }
-    # if the above default is not supported by this module, use the latest it does support
-    if {[info exists perl5.branches] && [lsearch -exact ${perl5.branches} $ret] == -1} {
-        set ret [lindex ${perl5.branches} end]
-    }
-    return $ret
+  set ret 5.26
 }
 
 proc perl5.extract_config {var {default ""}} {
@@ -70,9 +60,9 @@ proc perl5.extract_config {var {default ""}} {
 # Create perl subports
 proc perl5.create_subports {branches rootname} {
     foreach v ${branches} {
-        subport p${v}-${rootname} {
-            depends_lib-append port:perl${v}
-            perl5.major ${v}
+        subport p5-26 {
+            depends_lib-append port:perl5.26
+            perl5.major 5.26
         }
     }
 }
@@ -82,7 +72,7 @@ options perl5.default_variant perl5.variant perl5.set_default_variant perl5.conf
 # The default variant derived from perl5.default_branch if not set in Portfile.
 default perl5.default_variant {[string map {. _} perl${perl5.default_branch}]}
 # The name of the selected variant or empty if there is not one.
-default perl5.variant {}
+default perl5.variant {true}
 # Control whether to set a default perl variant or not.
 default perl5.set_default_variant {true}
 # Control whether to conflict the perl variants or not. Probably almost always true.
@@ -92,9 +82,11 @@ default perl5.require_variant {false}
 # Get variant names from branches
 proc perl5.get_variant_names {branches} {
     set ret {}
-    foreach branch ${branches} {
-        lappend ret "perl[string map {. _} ${branch}]"
-    }
+    lappend ret "perl5.26"
+#     foreach branch ${branches} {
+#      lappend ret "perl5.26"
+#         lappend ret "perl[string map {. _} ${branch}]"
+#     }
     return $ret
 }
 # Create perl variants

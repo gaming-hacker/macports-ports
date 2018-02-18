@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           compilers 1.0
+PortGroup user 1.0
 
 github.setup        JuliaLang julia 0.4.6 v
 categories-append   lang math science
@@ -12,7 +13,7 @@ license             MIT
 homepage            http://julialang.org
 
 compilers.choose    fc f77 f90
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 
 description         The Julia Language: A fresh approach to technical computing.
 long_description    Julia is a high-level, high-performance dynamic programming \
@@ -29,7 +30,7 @@ checksums           rmd160  332a32fb0e10750540592eb125b3f31843702333 \
 # Force buildbot to skip this since julia builds its own blas; see #45101
 archive_sites
 
-set llvm_ver        3.7
+set llvm_ver        ${user.ver.clang}
 
 depends_lib-append  port:llvm-${llvm_ver} \
     port:curl \

@@ -2,7 +2,8 @@
 
 PortSystem          1.0
 PortGroup           compilers 1.0
-PortGroup           active_variants 1.1 
+PortGroup           active_variants 1.1
+PortGroup user 1.0
 
 name                gildas
 version             201802c
@@ -42,8 +43,8 @@ patchfiles          patch-admin-Makefile.def.diff \
 
 depends_lib         port:gtk2 \
                     port:libpng \
-                    port:python27 \
-                    port:py27-numpy
+                    port:python${user.ver.py} \
+                    port:py${user.ver.py}-numpy
 
 depends_build       port:cfitsio \
                     port:pkgconfig \
@@ -56,8 +57,8 @@ require_active_variants gtk2 x11 quartz
 compilers.enforce_some_fortran cfitsio
 
 compilers.choose    fc
-compilers.setup     -g95 -gcc44 -gcc45 -gcc46 require_fortran
-configure.python    ${prefix}/bin/python2.7
+compilers.setup     require_fortran
+configure.python    ${prefix}/bin/python${user.ver.python}
 
 post-extract {
     if {![gcc_variant_isset]} {
@@ -104,5 +105,5 @@ destroot {
 
     # delete broken module
     delete ${destroot}${prefix}/lib/gildas/x86_64-darwin-gfortran/python/pyclassfiller
-    
+
 }

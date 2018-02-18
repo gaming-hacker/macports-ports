@@ -5,6 +5,7 @@ PortGroup               python 1.0
 PortGroup               active_variants 1.1
 PortGroup               github 1.0
 PortGroup               compilers 1.0
+PortGroup user 1.0
 
 github.setup            scipy scipy 1.0.0 v
 checksums               rmd160 76192e7c3d3ca8b219d109f98704da2980d5cacc \
@@ -19,24 +20,23 @@ long_description        ${description}
 
 homepage                http://www.scipy.org/
 
-python.versions         26 27 33 34 35 36
+python.versions         27 36
 
 python.add_archflags    no
 universal_variant       no
 
-compilers.setup         require_fortran -clang -dragonegg -gcc44 -gcc45 -gcc46 \
-                        -gcc47 -gcc48 -g95 clang37
+compilers.setup         require_fortran clang60
 
 livecheck.regex         archive/[join ${github.tag_prefix} ""](\[^"r\]+)${extract.suffix}
 
 if {${name} ne ${subport}} {
 
-    depends_lib-append      port:py${python.version}-numpy \
-                            port:py${python.version}-nose \
+    depends_lib-append      port:py${user.ver.py}-numpy \
+                            port:py${user.ver.py}-nose \
                             port:swig-python
 
-    depends_test-append     port:py${python.version}-py \
-                            port:py${python.version}-pytest
+    depends_test-append     port:py${user.ver.py}-py \
+                            port:py${user.ver.py}-pytest
 
     worksrcdir              ${distname}
 

@@ -97,40 +97,25 @@ default compilers.libfortran {}
 default compilers.clear_archflags yes
 
 # also set a default gcc version
-if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
-    # see https://trac.macports.org/ticket/54215#comment:36
-    set compilers.gcc_default gcc6
-} else {
-    set compilers.gcc_default gcc8
-}
 
+set compilers.gcc_default gcc8
 set compilers.list {cc cxx cpp objc fc f77 f90}
-
 # build database of gcc compiler attributes
-set gcc_versions {44 45 46 47 48 49 5 6 7 8}
+set gcc_versions {6 7 8}
 foreach v ${gcc_versions} {
     # if the string is more than one character insert a '.' into it: e.g 49 -> 4.9
     set version $v
-    if {[string length $v] > 1} {
-        set version [string index $v 0].[string index $v 1]
-    }
     lappend compilers.gcc_variants gcc$v
     set cdb(gcc$v,variant)  gcc$v
     set cdb(gcc$v,compiler) macports-gcc-$version
     set cdb(gcc$v,descrip)  "MacPorts gcc $version"
     set cdb(gcc$v,depends)  port:gcc$v
-    if {[vercmp ${version} 4.6] < 0} {
-        set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc port:libgcc6 port:libgcc45"
-    } elseif {[vercmp ${version} 7] < 0} {
-        set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc port:libgcc6"
-    } else {
-        set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc"
-    }
+    set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc"
     set cdb(gcc$v,libfortran) ${prefix}/lib/gcc$v/libgfortran.dylib
     # note: above is ultimately a symlink to ${prefix}/lib/libgcc/libgfortran.3.dylib
-    set cdb(gcc$v,dependsd) port:g95
+    set cdb(gcc$v,dependsd) ""
     set cdb(gcc$v,dependsa) gcc$v
-    set cdb(gcc$v,conflict) "gfortran g95"
+    set cdb(gcc$v,conflict) "gfortran"
     set cdb(gcc$v,cc)       ${prefix}/bin/gcc-mp-$version
     set cdb(gcc$v,cxx)      ${prefix}/bin/g++-mp-$version
     set cdb(gcc$v,cpp)      ${prefix}/bin/cpp-mp-$version
@@ -140,7 +125,7 @@ foreach v ${gcc_versions} {
     set cdb(gcc$v,f90)      ${prefix}/bin/gfortran-mp-$version
 }
 
-set clang_versions {33 34 35 36 37 38 39 40 50 60}
+set clang_versions {50 60}
 foreach v ${clang_versions} {
     # if the string is more than one character insert a '.' into it: e.g 33 -> 3.3
     set version $v
@@ -164,28 +149,6 @@ foreach v ${clang_versions} {
     set cdb(clang$v,fc)       ""
     set cdb(clang$v,f77)      ""
     set cdb(clang$v,f90)      ""
-}
-
-# dragonegg versions match the corresponding clang version until 3.5
-set dragonegg_versions {3 4}
-foreach v ${dragonegg_versions} {
-    lappend compilers.dragonegg_variants dragonegg3$v
-    set cdb(dragonegg3$v,variant)  dragonegg3$v
-    set cdb(dragonegg3$v,compiler) macports-dragonegg-3.$v
-    set cdb(dragonegg3$v,descrip)  "MacPorts dragonegg 3.$v"
-    set cdb(dragonegg3$v,depends)  path:bin/dragonegg-3.$v-gcc:dragonegg-3.$v
-    set cdb(dragonegg3$v,dependsl) path:lib/libgcc/libgcc_s.1.dylib:libgcc
-    set cdb(dragonegg3$v,libfortran) ${prefix}/lib/gcc46/libgfortran.dylib
-    set cdb(dragonegg3$v,dependsd) port:g95
-    set cdb(dragonegg3$v,dependsa) dragonegg-3.$v
-    set cdb(dragonegg3$v,conflict) "gfortran g95"
-    set cdb(dragonegg3$v,cc)       ${prefix}/bin/dragonegg-3.$v-gcc
-    set cdb(dragonegg3$v,cxx)      ${prefix}/bin/dragonegg-3.$v-g++
-    set cdb(dragonegg3$v,cpp)      ${prefix}/bin/dragonegg-3.$v-cpp
-    set cdb(dragonegg3$v,objc)     ""
-    set cdb(dragonegg3$v,fc)       ${prefix}/bin/dragonegg-3.$v-gfortran
-    set cdb(dragonegg3$v,f77)      ${prefix}/bin/dragonegg-3.$v-gfortran
-    set cdb(dragonegg3$v,f90)      ${prefix}/bin/dragonegg-3.$v-gfortran
 }
 
 set cdb(llvm,variant)  llvm
@@ -224,23 +187,6 @@ set cdb(gfortran,fc)       $cdb(${compilers.gcc_default},fc)
 set cdb(gfortran,f77)      $cdb(${compilers.gcc_default},f77)
 set cdb(gfortran,f90)      $cdb(${compilers.gcc_default},f90)
 
-set cdb(g95,variant)  g95
-set cdb(g95,compiler) g95
-set cdb(g95,descrip)  "g95 Fortran"
-set cdb(g95,depends)  port:g95
-set cdb(g95,dependsl) ""
-set cdb(g95,libfortran) ${prefix}/lib/g95/x86_64-apple-darwin14/4.2.4/libf95.a
-set cdb(g95,dependsd) ""
-set cdb(g95,dependsa) g95
-set cdb(g95,conflict) ""
-set cdb(g95,cc)       ""
-set cdb(g95,cxx)      ""
-set cdb(g95,cpp)      ""
-set cdb(g95,objc)     ""
-set cdb(g95,fc)       ${prefix}/bin/g95
-set cdb(g95,f77)      ${prefix}/bin/g95
-set cdb(g95,f90)      ${prefix}/bin/g95
-
 foreach cname [array names cdb *,variant] {
     lappend compilers.variants $cdb($cname)
 }
@@ -253,7 +199,6 @@ foreach variant ${compilers.variants} {
 
 proc compilers.set_variants_conflict {args} {
     global compilers.variants_conflict
-
     lappend compilers.variants_conflict $args
 }
 
@@ -276,15 +221,13 @@ proc compilers.setup_variants {args} {
 
             # Fortran compilers do not conflict with C compilers.
             # thus, llvm and clang do not conflict with g95 and gfortran
-            if {$variant eq "gfortran" || $variant eq "g95"} {
+            if {$variant eq "gfortran" } {
                 foreach clangcomp [concat ${compilers.clang_variants} {llvm}] {
                     set i [lsearch -exact $c $clangcomp]
                     set c [lreplace $c $i $i]
                 }
             } elseif {[string match clang* $variant] || $variant == "llvm"} {
                 set i [lsearch -exact $c gfortran]
-                set c [lreplace $c $i $i]
-                set i [lsearch -exact $c g95]
                 set c [lreplace $c $i $i]
             }
 

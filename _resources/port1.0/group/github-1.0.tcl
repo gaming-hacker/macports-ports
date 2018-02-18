@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # Copyright (c) 2012-2014 The MacPorts Project
 # All rights reserved.
@@ -55,7 +55,7 @@
 #   github.setup        someone someproject 1.2.3 v
 #
 # Some projects use github's "releases" service to offer distfiles:
-# 
+#
 # https://github.com/blog/1547-release-your-software
 #
 # If the project offers a "release", that's probably the best distfile to use
