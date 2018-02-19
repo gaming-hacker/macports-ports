@@ -69,25 +69,25 @@ set mpi.fc   mpif90
 set mpi.exec mpiexec
 set mpi.name ""
 
-set mpidb(mpich,variant)  mpich
-set mpidb(mpich,descrip)  "MPICH"
-set mpidb(mpich,name)     mpich
-set mpidb(mpich,conflict) universal
+# set mpidb(mpich,variant)  mpich
+# set mpidb(mpich,descrip)  "MPICH"
+# set mpidb(mpich,name)     mpich
+# set mpidb(mpich,conflict) universal
 
-set mpidb(mpich_devel,variant)  mpich_devel
-set mpidb(mpich_devel,descrip)  "MPICH-devel"
-set mpidb(mpich_devel,name)     mpich-devel
-set mpidb(mpich_devel,conflict) universal
+# set mpidb(mpich_devel,variant)  mpich_devel
+# set mpidb(mpich_devel,descrip)  "MPICH-devel"
+# set mpidb(mpich_devel,name)     mpich-devel
+# set mpidb(mpich_devel,conflict) universal
 
 set mpidb(openmpi,variant)  openmpi
 set mpidb(openmpi,descrip)  "OpenMPI"
 set mpidb(openmpi,name)     openmpi
 set mpidb(openmpi,conflict) universal
 
-set mpidb(openmpi_devel,variant)  openmpi_devel
-set mpidb(openmpi_devel,descrip)  "OpenMPI-devel"
-set mpidb(openmpi_devel,name)     openmpi-devel
-set mpidb(openmpi_devel,conflict) universal
+# set mpidb(openmpi_devel,variant)  openmpi_devel
+# set mpidb(openmpi_devel,descrip)  "OpenMPI-devel"
+# set mpidb(openmpi_devel,name)     openmpi-devel
+# set mpidb(openmpi_devel,conflict) universal
 
 foreach mpiname [array names mpidb *,variant] {
     lappend mpi.variants $mpidb($mpiname)
