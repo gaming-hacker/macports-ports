@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
-
+PortGroup user 1.0
 name                lzip
 epoch               20091025
 version             1.20
@@ -26,7 +26,7 @@ checksums           rmd160  72868e3b290a7c5ece0919978f3cf19714dc5f10 \
 variant universal {}
 
 # respect default optimization
-configure.cflags-replace -Os -O2
+configure.cflags-replace -Os -O3
 
 configure.args      CXX="${configure.cxx}" \
                     CXXFLAGS="${configure.cxxflags} [get_canonical_archflags cxx]" \
@@ -36,7 +36,7 @@ configure.args      CXX="${configure.cxx}" \
 post-destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}
     file mkdir ${docdir}
-    xinstall -m 644 -v -W ${worksrcpath} \
+    xinstall -m 0644 -v -W ${worksrcpath} \
       AUTHORS ChangeLog COPYING NEWS ${docdir}
 }
 

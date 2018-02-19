@@ -101,7 +101,7 @@ default compilers.clear_archflags yes
 set compilers.gcc_default gcc8
 set compilers.list {cc cxx cpp objc fc f77 f90}
 # build database of gcc compiler attributes
-set gcc_versions {6 7 8}
+set gcc_versions {7 8}
 foreach v ${gcc_versions} {
     # if the string is more than one character insert a '.' into it: e.g 49 -> 4.9
     set version $v
@@ -125,7 +125,7 @@ foreach v ${gcc_versions} {
     set cdb(gcc$v,f90)      ${prefix}/bin/gfortran-mp-$version
 }
 
-set clang_versions {50 60}
+set clang_versions {60}
 foreach v ${clang_versions} {
     # if the string is more than one character insert a '.' into it: e.g 33 -> 3.3
     set version $v

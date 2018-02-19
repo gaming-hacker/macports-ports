@@ -40,7 +40,7 @@ options perl5.default_variant perl5.variant perl5.set_default_variant perl5.conf
 # The default variant derived from perl5.default_branch if not set in Portfile.
 default perl5.default_variant {[string map {. _} perl${perl5.default_branch}]}
 # The name of the selected variant or empty if there is not one.
-default perl5.variant {}
+default perl5.variant {p5.26}
 # Control whether to set a default perl variant or not.
 default perl5.set_default_variant {true}
 # Control whether to conflict the perl variants or not. Probably almost always true.

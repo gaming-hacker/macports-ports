@@ -57,16 +57,16 @@ depends_lib                 port:bzip2 \
                             port:tiff \
                             port:webp \
                             port:zlib \
-                            port:fftw-3 \
-                            port:freetype \
-                            port:fontconfig \
-                            port:ghostscript \
-                            port:libiconv \
-                            port:libtool \
-                            port:openjpeg \
-                            port:openexr \
-                            port:expat \
-                            port:libxml2
+                            port:fftw-3
+#                             port:freetype \
+#                             port:fontconfig \
+#                             port:ghostscript \
+#                             port:libiconv \
+#                             port:libtool \
+#                             port:openjpeg \
+#                             port:openexr \
+#                             port:expat \
+#                             port:libxml2
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
@@ -82,58 +82,58 @@ depends_run                 port:urw-fonts
 use_autoreconf              yes
 
 configure.args              --enable-shared \
-                            --enable-static \
-                            --disable-ltdl-install \
-                            --disable-silent-rules \
-                            --disable-rpath --disable-nls \
-                            --with-frozenpaths \
-                            --with-openexr \
-                            --enable-hdri \
-                            --with-dps \
-                            --with-bzlib \
-                            --with-djvu \
-                            --with-fontconfig \
-                            --with-gslib \
-                            --with-jbig \
-                            --with-jpeg \
-                            --with-lcms \
-                            --with-openjp2 \
-                            --with-png \
-                            --with-tiff \
-                            --with-webp \
-                            --with-zlib \
-                            --without-modules \
-                            --with-xml \
-                            --without-perl \
-                            --without-fpx \
-                            --without-wmf \
-                            --without-gvc \
-                            --without-rsvg \
-                            --without-lqr \
-                            --without-pango \
-                            --without-x \
-                            --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
-                            --with-quantum-depth=64 \
-                            --disable-deprecated \
-                            --enable-hugepages \
-                            --enable-openmp \
-                            --enable-opencl \
-                            --enable-zero-configuration \
-                            --with-gcc-arch=native \
-                            --with-apple-font-dir=/Library/Fonts \
-                            --disable-assert \
-                            --disable-docs \
-                            --enable-cipher \
-                            --with-autotrace \
-                            --disable-option-checking \
-                            --disable-maintainer-mode \
-                            --enable-fast-install \
-                            --with-sysroot=/opt/local/libexec/llvm-${user.ver.clang}/c++/v1
+                            --enable-static
+#                             --disable-ltdl-install \
+#                             --disable-silent-rules \
+#                             --disable-rpath --disable-nls \
+#                             --with-frozenpaths \
+#                             --without-openexr \
+#                             --enable-hdri \
+#                             --without-dps \
+#                             --with-bzlib \
+#                             --without-djvu \
+#                             --without-fontconfig \
+#                             --without-gslib \
+#                             --with-jbig \
+#                             --without-jpeg \
+#                             --without-lcms \
+#                             --without-openjp2 \
+#                             --without-png \
+#                             --without-tiff \
+#                             --without-webp \
+#                             --without-zlib \
+#                             --without-modules \
+#                             --without-xml \
+#                             --without-perl \
+#                             --without-fpx \
+#                             --without-wmf \
+#                             --without-gvc \
+#                             --without-rsvg \
+#                             --without-lqr \
+#                             --without-pango \
+#                             --without-x \
+#                             --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
+#                             --with-quantum-depth=64 \
+#                             --disable-deprecated \
+#                             --enable-hugepages \
+#                             --enable-openmp \
+#                             --enable-opencl \
+#                             --enable-zero-configuration \
+#                             --with-gcc-arch=native \
+#                             --with-apple-font-dir=/Library/Fonts \
+#                             --disable-assert \
+#                             --disable-docs \
+#                             --enable-cipher \
+#                             --without-autotrace \
+#                             --disable-option-checking \
+#                             --disable-maintainer-mode \
+#                             --enable-fast-install
+#                             --with-sysroot=/opt/local/libexec/llvm-${user.ver.clang}/c++/v1
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     configure.args-append   --disable-opencl
 } else {
-    configure.args-append   --enable-opencl
+#     configure.args-append   --enable-opencl
     # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
     # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
     if {[file exists ${prefix}/lib/libCL.dylib]} {
@@ -180,7 +180,7 @@ variant x11 {
     configure.args-replace  --without-x --with-x
 }
 
-default_variants            +x11 +lqr +wmf +rsvg
+# default_variants            +x11 +lqr +wmf +rsvg
 
 livecheck.version           ${reasonable_version}
 livecheck.type              regex

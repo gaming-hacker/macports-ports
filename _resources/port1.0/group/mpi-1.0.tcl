@@ -218,9 +218,7 @@ pre-fetch {
     if {[fortran_variant_isset] && [mpi_variant_isset]} {
         set gcc_name ""
         regexp (gcc\[0-9\]*) ${mpi.name} gcc_name
-#         if {$gcc_name eq ""} {
-#             regexp (dragonegg\[0-9\]*) ${mpi.name} gcc_name
-#         }
+
         if {$gcc_name ne ""} {
             if {[active_variants ${mpi.name} "fortran" ""]} {
                 set mpif $gcc_name
@@ -293,7 +291,6 @@ proc mpi.setup {args} {
             default {
                 if {[info exists mpidb($v,variant)] == 0} {
                     if {$v eq "gcc" ||
-                        $v eq "dragonegg" ||
                         $v eq "fortran" ||
                         $v eq "clang" ||
                         $v eq "require_fortran" ||

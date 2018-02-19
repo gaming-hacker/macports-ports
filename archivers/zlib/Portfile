@@ -2,7 +2,7 @@
 
 PortSystem              1.0
 PortGroup               xcodeversion 1.0
-
+PortGroup user 1.0
 name                    zlib
 version                 1.2.11
 categories              archivers
@@ -24,7 +24,7 @@ use_xz                  yes
 checksums               rmd160  3f3ecd35efa6d41ba7b90e5f6e872e2ee8e42044 \
                         sha256  4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066
 
-minimum_xcodeversions   {8 2.4.1 9 3.1}
+minimum_xcodeversions   {9 3.1}
 
 configure.universal_args
 
@@ -44,11 +44,11 @@ post-destroot {
             }
         }
     }
-    
+
     set docdir ${prefix}/share/doc/${name}
     xinstall -d ${destroot}${docdir}
     xinstall -m 0644 -W ${worksrcpath} ChangeLog FAQ README zlib.3.pdf ${destroot}${docdir}
-    
+
     set examplesdir ${prefix}/share/examples/${name}
     xinstall -d ${destroot}${examplesdir}
     xinstall -m 0644 {*}[glob ${worksrcpath}/example{.c,s/*}] ${destroot}${examplesdir}

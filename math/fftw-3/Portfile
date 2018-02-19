@@ -4,7 +4,7 @@ PortSystem      1.0
 PortGroup       muniversal 1.0
 PortGroup       compiler_blacklist_versions 1.0
 PortGroup       mpi 1.0
-
+PortGroup user 1.0
 name            fftw-3
 version         3.3.5
 revision        1
@@ -68,7 +68,7 @@ variant pfft_patches description {Apply patches recommended for use as dependenc
 mpi.setup
 
 # blacklist older versions of clang which do not handle the --enable-avx option (#41622, #41673)
-compiler.blacklist-append {clang <= 211.10.1} gcc-4.2
+# compiler.blacklist-append {clang <= 211.10.1} gcc-4.2
 
 configure.args \
     --enable-threads \
@@ -101,20 +101,6 @@ pre-configure {
 
 test.run     yes
 test.target  check
-
-use_parallel_build yes
-
-platform darwin {
-  if {${os.major} < 10} {
-    configure.args-append --with-our-malloc
-  }
-}
-
-platform powerpc {
-  if {![variant_isset universal]} {
-    configure.args-append --enable-fma
-  }
-}
 
 subport fftw-3-single {
     configure.args-append --enable-float

@@ -30,8 +30,6 @@ patchfiles              patch-Makefile
 
 use_configure           no
 
-variant universal {}
-
 build.args              CC="${configure.cc} ${configure.cppflags} ${configure.cflags} [get_canonical_archflags cc]"
 
 test.run                yes

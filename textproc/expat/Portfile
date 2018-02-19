@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
-
+PortGroup user 1.0
 name                expat
 version             2.2.5
 categories          textproc devel
@@ -24,8 +24,6 @@ checksums           rmd160  c580ebbf9dc030d0c15752cd399a539a5b371a92 \
                     sha256  d9dc32efba7e74f788fcc4f212a43216fc37cf5f23f4c2339664d473353aedf6 \
                     size    510868
 
-use_parallel_build  yes
-
 test.run            yes
 test.target         check
 
@@ -33,10 +31,10 @@ post-destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}
     set examplesdir ${destroot}${prefix}/share/examples/${name}
     xinstall -m 0755 -d ${examplesdir} ${docdir}/html
-    
+
     xinstall -m 0644 -W ${worksrcpath} COPYING Changes README.md ${docdir}
     xinstall -m 0644 {*}[glob ${worksrcpath}/doc/*] ${docdir}/html
-    
+
     xinstall -m 0644 -W ${worksrcpath}/examples elements.c outline.c \
         ${examplesdir}
 }
