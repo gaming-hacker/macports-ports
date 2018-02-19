@@ -65,8 +65,8 @@ depends_lib   port:bzip2 \
               port:openjpeg \
               port:openexr \
               port:libxml2 \
-              port:liblqr \
-              port:libwmf
+              port:liblqr
+#               port:libwmf
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
@@ -123,7 +123,6 @@ configure.args  --enable-shared \
       --with-gcc-arch=native \
       --with-apple-font-dir=/Library/Fonts \
       --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
-      --disable-assert \
       --disable-docs \
       --disable-cipher \
       --without-autotrace \
