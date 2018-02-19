@@ -1,5 +1,7 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
+PortSystem      1.0
+PortGroup user 1.0
 name            gcam
 version         2010.07.27
 categories      cad
@@ -14,7 +16,7 @@ long_description    GCAM is the free GNU Computer Aided Manufacturing package. \
                 entities one can export the corresponding G-code for the selected \
                 cutting tool(s).
 homepage        http://gcam.js.cx/wiki/Main_Page
-platforms       macosx
+platforms       darwin
 master_sites    http://gcam.js.cx/files/
 checksums       md5 8397112e0c22b5f4a883c4808891bc2c \
                 sha1 a007a1a5d528ec7f3513504242991fe399f0ba65 \

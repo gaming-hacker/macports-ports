@@ -12,7 +12,17 @@ default perl5.use_search_cpan_org {false}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches
-  set ret 5.26
+    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.24
+    if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
+        set ret [join [lrange [split $val .] 0 1] .]
+    } else {
+        set ret 5.26
+    }
+    # if the above default is not supported by this module, use the latest it does support
+    if {[info exists perl5.branches] && [lsearch -exact ${perl5.branches} $ret] == -1} {
+        set ret [lindex ${perl5.branches} end]
+    }
+    return $ret
 }
 
 proc perl5.extract_config {var {default ""}} {
@@ -28,9 +38,9 @@ proc perl5.extract_config {var {default ""}} {
 # Create perl subports
 proc perl5.create_subports {branches rootname} {
     foreach v ${branches} {
-        subport p5-26 {
-            depends_lib-append port:perl5.26
-            perl5.major 5.26
+        subport p${v}-${rootname} {
+            depends_lib-append port:perl${v}
+            perl5.major ${v}
         }
     }
 }
@@ -40,7 +50,7 @@ options perl5.default_variant perl5.variant perl5.set_default_variant perl5.conf
 # The default variant derived from perl5.default_branch if not set in Portfile.
 default perl5.default_variant {[string map {. _} perl${perl5.default_branch}]}
 # The name of the selected variant or empty if there is not one.
-default perl5.variant {p5.26}
+default perl5.variant {}
 # Control whether to set a default perl variant or not.
 default perl5.set_default_variant {true}
 # Control whether to conflict the perl variants or not. Probably almost always true.
