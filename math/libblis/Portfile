@@ -3,16 +3,25 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup user 1.0
+
+set repo.author     gaming-hacker
+set repo.name       libblis
+set repo.date       20180217
+set repo.hash       92547f765ed6abe502a7559766f1532d4e8d0588
+set repo.tag        master
+
 name                libblis
 version             2.0.2
-revision            1
+revision            0
 epoch               1
 categories          math
 
-github.author       gaming-hacker
+github.setup        ${repo.author} ${repo.name} ${repo.hash}
+version             ${repo.date}-${revision}
+fetch.type          git
 
-github.tag_prefix   master
-
+github.author       ${repo.author}
+github.tag_prefix   ${repo.tag}
 maintainers         github:${github.author}
 
 description         BLAS-like Library Instantiation Software Framework
@@ -38,25 +47,18 @@ license             GPL
 
 distname            ${name}
 
-fetch.type          git
-
-git.branch          origin/${github.tag_prefix}
-github.homepage     https://github.com/${github.author}/${name}
-github.master_sites https://github.com/${github.author}/${name}
-git.url             https://github.com/${github.author}/${name}
-
 use_configure       yes
 
-use_autoreconf              no
+use_autoreconf     no
 
 configure.args  --quiet \
                 --enable-shared \
-                --disable-static \
+                --enable-static \
                 --enable-cblas \
                 --enable-blas \
-                --disable-verbose-make \
+                --enable-verbose-make \
                 --enable-threading=pthreads \
-                CC=clang-mp-5.0
+                CC=clang-mp-${user.ver.clang}
 
 
 default_variants    +haswell
