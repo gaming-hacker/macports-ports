@@ -3,7 +3,7 @@
 PortSystem                  1.0
 PortGroup                   mpi 1.0
 PortGroup                   cxx11 1.1
-
+PortGroup user 1.0
 name                        cdo
 version                     1.9.3
 platforms                   darwin
@@ -25,7 +25,7 @@ long_description \
 fetch.ignore_sslcert        yes
 
 compilers.choose            cc cxx
-mpi.setup                   -dragonegg
+mpi.setup
 mpi.enforce_variant         hdf5
 
 depends_lib                 port:netcdf \

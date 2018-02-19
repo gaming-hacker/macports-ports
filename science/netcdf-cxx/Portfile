@@ -2,7 +2,7 @@
 
 PortSystem                  1.0
 PortGroup                   mpi 1.0
-
+PortGroup user 1.0
 name                        netcdf-cxx
 version                     4.2
 revision                    11
