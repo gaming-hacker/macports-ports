@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # Copyright (c) 2002 Apple Computer, Inc.
 # Copyright (c) 2004 Robert Shaw <rshaw@opendarwin.org>
@@ -109,7 +109,6 @@ proc ruby_set_branch {option action args} {
         set ruby.prog_suffix     ""
     }
     #
-    #         1.9 {set ruby.api_version 1.9.1}
     set ruby.api_version ${ruby.branch}.0
     switch -exact ${ruby.branch} {
         2.5 {set ruby.api_version 2.5}
@@ -216,15 +215,8 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
     } else {
         switch ${implementation} {
             ruby25 { ruby.branch 2.5 }
-            ruby24 { ruby.branch 2.4 }
-            ruby23 { ruby.branch 2.3 }
-            ruby22 { ruby.branch 2.2 }
-            ruby21 { ruby.branch 2.1 }
-            ruby20 { ruby.branch 2.0 }
-            ruby19 { ruby.branch 1.9 }
-            ruby   { ruby.branch 1.8 }
             default {
-                ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby25 ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
+                ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby25)"
                 return -code error "ruby.setup failed"
             }
         }

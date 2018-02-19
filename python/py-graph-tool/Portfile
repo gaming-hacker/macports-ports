@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; c-basic-offset: 2 -*-
 
 PortSystem          1.0
 PortGroup           python 1.0

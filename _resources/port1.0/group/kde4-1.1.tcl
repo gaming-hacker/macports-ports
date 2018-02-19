@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 #
 # Copyright (c) 2010-2014 The MacPorts Project
 # All rights reserved.

@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 PortGroup           xcodeversion 1.0
 PortGroup           active_variants 1.1
 PortGroup           compiler_blacklist_versions 1.0
-
+PortGroup user 1.0
 name                gtk3
 set real_name       gtk+
 epoch               1
@@ -43,7 +43,7 @@ depends_lib         port:atk \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:gobject-introspection \
                     port:libepoxy
-                    
+
 depends_run         port:shared-mime-info \
                     port:hicolor-icon-theme
 
@@ -83,8 +83,6 @@ pre-configure {
     }
 }
 
-configure.ccache    no
-
 configure.cppflags-append \
                     -DX_LOCALE
 
@@ -119,34 +117,13 @@ post-destroot {
     # avoid conflict with the gtk-update-icon-cache installed by gtk2
     move ${destroot}${prefix}/bin/gtk-update-icon-cache \
          ${destroot}${prefix}/bin/gtk-update-icon-cache-3.0
-    
+
     ui_debug "Creating gtk.immodules..."
     system "DYLD_LIBRARY_PATH=${destroot}${prefix}/lib \
         ${destroot}${prefix}/bin/gtk-query-immodules-3.0 \
         ${destroot}${prefix}/lib/gtk-3.0/3.0.0/immodules/*.so \
         >${destroot}${prefix}/etc/gtk-3.0/gtk.immodules"
     reinplace "s|${destroot}||" ${destroot}${prefix}/etc/gtk-3.0/gtk.immodules
-}
-
-platform darwin {
-    if {${os.major} <= 8} {
-        # The rules enabled by gobject-introspection require GNU make 3.81+
-        depends_build-append    port:gmake
-        build.cmd               ${prefix}/bin/gmake
-
-        if {[variant_isset quartz] || ![variant_isset x11]} {
-            configure.ldflags-append  -framework Cocoa -framework Carbon
-        }
-    
-        configure.args-append --disable-cups
-    }
-
-    if {${os.major} <= 10} {
-        # OS X 10.6 and earlier do not supply all cursors specified by gtk3 +quartz (#49391)
-        if {[variant_isset quartz]} {
-            patchfiles-append   patch-gdk_quartz_gdkcursor-quartz-10_6_compat.diff
-        }
-    }
 }
 
 if {[variant_isset universal]} {
@@ -218,7 +195,7 @@ if {[variant_isset universal]} {
         reinplace s/@host@/${host}-apple-darwin${os.version}/ \
             {*}[glob -directory ${worksrcpath} *.pc.in]
     }
-    
+
     merger_arch_compiler yes
 } else {
     configure.cc "${configure.cc} ${configure.cc_archflags}"
