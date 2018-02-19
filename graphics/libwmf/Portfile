@@ -37,7 +37,6 @@ depends_lib \
 patchfiles          configure.ac.diff
 
 use_autoreconf      yes
-autoreconf.args     -fvi
 
 configure.args      --with-jpeg \
                     --with-expat \
@@ -45,8 +44,8 @@ configure.args      --with-jpeg \
                     --with-fontdir=${prefix}/share/fonts/${name}
 
 post-destroot {
-    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
-    xinstall -m 644 -W ${worksrcpath} AUTHORS COPYING CREDITS ChangeLog \
+    xinstall -m 0755 -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 0644 -W ${worksrcpath} AUTHORS COPYING CREDITS ChangeLog \
         NEWS README TODO ${destroot}${prefix}/share/doc/${name}
 }
 

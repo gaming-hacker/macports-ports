@@ -9,7 +9,8 @@ PortGroup user 1.0
 # PHP Warning:  Version warning: Imagick was compiled against Image Magick version XXXX but version YYYY is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
 
 name                        ImageMagick
-version                     7.0.7-22
+version                     7.0.7-23
+revision 1
 set reasonable_version      [lindex [split ${version} -] 0]
 homepage                    http://www.imagemagick.org/
 categories                  graphics devel
@@ -35,38 +36,37 @@ long_description            ImageMagick is a robust collection of tools and \
                             supported, including GIF, JPEG, JPEG 2000, PNG, PDF, \
                             PhotoCD and TIFF.
 
-master_sites                http://www.imagemagick.org/download/ \
-                            http://mirror.checkdomain.de/imagemagick/ \
-                            ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/ \
-                            ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
-                            ftp://sunsite.icm.edu.pl/packages/ImageMagick
+master_sites  http://www.imagemagick.org/download/ \
+              http://mirror.checkdomain.de/imagemagick/ \                      ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/ \
+ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
+ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
-checksums           rmd160  d2a95bd7059cbfc0b4453e1cd083722b41109be0 \
-                    sha256  49de9e08ea255a1f939158d85d50dfa29285bccbdcb7fee0fe4309061d438489 \
-                     size    8605016
+checksums   rmd160  bdec29a15268770c867262ab55925a347bbb37f0 \
+  sha256  8dee83fe4978a2d07a90c947508d734ddb175eeb299491f8560cea5ac0c26896 \
+  size    8604724
 
-
-depends_lib                 port:bzip2 \
-                            port:djvulibre \
-                            port:xz \
-                            port:jbigkit \
-                            port:jpeg \
-                            port:lcms2 \
-                            port:libpng \
-                            port:libraw \
-                            port:tiff \
-                            port:webp \
-                            port:zlib \
-                            port:fftw-3
-#                             port:freetype \
-#                             port:fontconfig \
-#                             port:ghostscript \
-#                             port:libiconv \
-#                             port:libtool \
-#                             port:openjpeg \
-#                             port:openexr \
-#                             port:expat \
-#                             port:libxml2
+depends_lib   port:bzip2 \
+              port:djvulibre \
+              port:xz \
+              port:jbigkit \
+              port:jpeg \
+              port:lcms2 \
+              port:libpng \
+              port:libraw \
+              port:tiff \
+              port:webp \
+              port:zlib \
+              port:fftw-3 \
+              port:freetype \
+              port:fontconfig \
+              port:ghostscript \
+              port:libiconv \
+              port:libtool \
+              port:openjpeg \
+              port:openexr \
+              port:libxml2 \
+              port:liblqr \
+              port:libwmf
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
@@ -75,70 +75,66 @@ depends_run                 port:urw-fonts
 
 # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
 # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
-# if {[file exists ${prefix}/lib/libCL.dylib]} {
-#     conflicts_build         cryptlib
-# }
+if {[file exists ${prefix}/lib/libCL.dylib]} {
+    conflicts_build         cryptlib
+}
 
-use_autoreconf              yes
+use_autoreconf  yes
 
-configure.args              --enable-shared \
-                            --enable-static
-#                             --disable-ltdl-install \
-#                             --disable-silent-rules \
-#                             --disable-rpath --disable-nls \
-#                             --with-frozenpaths \
-#                             --without-openexr \
-#                             --enable-hdri \
-#                             --without-dps \
-#                             --with-bzlib \
-#                             --without-djvu \
-#                             --without-fontconfig \
-#                             --without-gslib \
-#                             --with-jbig \
-#                             --without-jpeg \
-#                             --without-lcms \
-#                             --without-openjp2 \
-#                             --without-png \
-#                             --without-tiff \
-#                             --without-webp \
-#                             --without-zlib \
-#                             --without-modules \
-#                             --without-xml \
-#                             --without-perl \
-#                             --without-fpx \
-#                             --without-wmf \
-#                             --without-gvc \
-#                             --without-rsvg \
-#                             --without-lqr \
-#                             --without-pango \
-#                             --without-x \
-#                             --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
-#                             --with-quantum-depth=64 \
-#                             --disable-deprecated \
-#                             --enable-hugepages \
-#                             --enable-openmp \
-#                             --enable-opencl \
-#                             --enable-zero-configuration \
-#                             --with-gcc-arch=native \
-#                             --with-apple-font-dir=/Library/Fonts \
-#                             --disable-assert \
-#                             --disable-docs \
-#                             --enable-cipher \
-#                             --without-autotrace \
-#                             --disable-option-checking \
-#                             --disable-maintainer-mode \
-#                             --enable-fast-install
-#                             --with-sysroot=/opt/local/libexec/llvm-${user.ver.clang}/c++/v1
+configure.args  --enable-shared \
+      --enable-static \
+      --disable-ltdl-install \
+      --disable-silent-rules \
+      --disable-rpath --disable-nls \
+      --disable-assert \
+      --with-frozenpaths \
+      --with-openexr \
+      --enable-hdri \
+      --without-dps \
+      --with-bzlib \
+      --with-djvu \
+      --with-fontconfig \
+      --with-gslib \
+      --with-jbig \
+      --with-jpeg \
+      --without-lcms \
+      --with-openjp2 \
+      --with-png \
+      --with-tiff \
+      --with-webp \
+      --with-zlib \
+      --with-fftw \
+      --without-heic \
+      --without-modules \
+      --with-xml \
+      --without-perl \
+      --without-fpx \
+      --without-wmf \
+      --without-gvc \
+      --with-rsvg \
+      --with-lqr \
+      --without-x \
+      --with-quantum-depth=64 \
+      --disable-deprecated \
+      --enable-hugepages \
+      --enable-openmp \
+      --enable-opencl \
+      --enable-zero-configuration \
+      --with-gcc-arch=native \
+      --with-apple-font-dir=/Library/Fonts \
+      --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
+      --disable-assert \
+      --disable-docs \
+      --disable-cipher \
+      --without-autotrace \
+      --disable-option-checking \
+      --disable-maintainer-mode \
+      --enable-fast-install \                        --with-sysroot=${prefix}/libexec/llvm-${user.ver.clang}/c++/v1
 
-if {${os.platform} eq "darwin" && ${os.major} < 11} {
-    configure.args-append   --disable-opencl
-} else {
-#     configure.args-append   --enable-opencl
-    # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
-    # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
-    if {[file exists ${prefix}/lib/libCL.dylib]} {
-        conflicts_build         cryptlib
-    }
+# On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
+# tries to use it as if it were Apple's OpenCL, which fails; see #23354.
+if {[file exists ${prefix}/lib/libCL.dylib]} {
+    conflicts_build         cryptlib
 }
 
 test.run                    yes
@@ -153,25 +149,12 @@ variant graphviz description {Support Graphviz} {
     configure.args-replace  --without-gvc --with-gvc
 }
 
-variant lqr description {Support Liquid Rescale (experimental)} {
-    depends_lib-append      port:liblqr
-    configure.args-replace  --without-lqr --with-lqr
-}
 
 variant pango description {Support Pango} {
     depends_lib-append      path:lib/pkgconfig/pango.pc:pango
     configure.args-replace  --without-pango --with-pango
 }
 
-variant rsvg description {Support SVG using librsvg} {
-    depends_lib-append      port:librsvg
-    configure.args-replace  --without-rsvg --with-rsvg
-}
-
-variant wmf description {Support the Windows Metafile Format} {
-    depends_lib-append      port:libwmf
-    configure.args-replace  --without-wmf --with-wmf
-}
 
 variant x11 {
     depends_lib-append      port:xorg-libX11 \
