@@ -50,14 +50,10 @@ if {![variant_isset fftw2]} {
 #   _spg_get_schoenflies in libsymspg.a(spglib.o)
 compilers.choose    fc cc cxx cpp
 # can we re-enable OpenMPI?
-mpi.setup           require_fortran -openmpi -openmpi_devel -gfortran -clang -llvm
+mpi.setup           require_fortran -openmpi -gfortran -clang -llvm
 # FIXME: +gfortran just needs smarter setting of cpp to the one from gcc;
 #clang and llvm only useful with +g95 currently (which is useless)
 
-# just for cpp
-if {[variant_isset g95]} {
-    depends_build-append  port:llvm-gcc42
-}
 
 # FIXME: this unnecessarily enforces scalapack also had same C compiler as we are using.
 if {[mpi_variant_isset]} {
@@ -67,9 +63,6 @@ if {[mpi_variant_isset]} {
         return -code error "+scalapack requires an MPI variant."
     }
 }
-
-# fftw is not universal
-universal_variant   no
 
 configure {
     system -W ${worksrcpath} "sed 's|/opt/local|${prefix}|' < config/generic.serial.macos.mk > arch.mk"
