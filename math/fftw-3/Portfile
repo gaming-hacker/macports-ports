@@ -2,12 +2,11 @@
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
-PortGroup       compiler_blacklist_versions 1.0
 PortGroup       mpi 1.0
-PortGroup user 1.0
+
 name            fftw-3
 version         3.3.5
-revision        1
+revision        2
 categories      math
 license         GPL-2+
 platforms       darwin
@@ -65,10 +64,8 @@ variant pfft_patches description {Apply patches recommended for use as dependenc
 
 # don't change configure.cc, etc. since we'll take care of that manually with
 # MPICC env var
-mpi.setup
+# mpi.setup
 
-# blacklist older versions of clang which do not handle the --enable-avx option (#41622, #41673)
-# compiler.blacklist-append {clang <= 211.10.1} gcc-4.2
 
 configure.args \
     --enable-threads \
@@ -106,12 +103,6 @@ subport fftw-3-single {
     configure.args-append --enable-float
 
     depends_lib port:fftw-3
-
-    platform powerpc {
-        if {![variant_isset universal]} {
-            configure.args-append --enable-altivec
-        }
-    }
 
     pre-configure {
         if { [avx_compiler_isset] == 1 } {
