@@ -7,7 +7,7 @@ name                libsbml
 version             5.16.0
 categories          science
 platforms           darwin
-maintainers         @funasoul openmaintainer
+maintainers         {@funasoul gmail.com:funasoul} openmaintainer
 license             LGPL-2.1+
 
 description         The Systems Biology Markup Language library
