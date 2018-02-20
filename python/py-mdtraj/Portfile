@@ -21,7 +21,7 @@ supported_archs     i386 x86_64
 checksums           rmd160  58a3684fdf7a81813699aa281c411c04b130b91b \
                     sha256  e93db244035b7551488cea24d96dd813e67ce655461fc50f53c4d8a9cd8bd7ca
 
-python.versions     27 34 35 36
+python.versions     27 36
 
 if {${name} ne ${subport}} {
 
