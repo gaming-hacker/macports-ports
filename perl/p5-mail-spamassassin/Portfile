@@ -42,7 +42,6 @@ if {${perl5.major} != ""} {
 # use Time::HiRes 1.9739+ for Sierra+ compatibility
 # use Time::HiRes 1.9751+ for most recent macOS fixes
 # https://metacpan.org/changes/distribution/Time-HiRes
-# perl 5.24.2 core version is 1.9733 
 # perl 5.26.1 core version is 1.9741
     depends_lib-append \
                     port:p${perl5.major}-time-hires
@@ -105,7 +104,7 @@ if {${perl5.major} != ""} {
     foreach file ${conf_files} {
         append conf_file_notes "cp ${file}.sample ${file}\n"
     }
-    
+
     notes "If you're running spamassassin for the first time, you should copy the\
 following configuration files and remove the .sample extension:\n\ncd\
 ${prefix}/etc/mail/spamassassin\n${conf_file_notes}"

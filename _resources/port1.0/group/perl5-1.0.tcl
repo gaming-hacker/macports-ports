@@ -12,7 +12,7 @@ default perl5.use_search_cpan_org {false}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches
-    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.24
+    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.26
     if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
         set ret [join [lrange [split $val .] 0 1] .]
     } else {
@@ -20,7 +20,8 @@ proc perl5_get_default_branch {} {
     }
     # if the above default is not supported by this module, use the latest it does support
     if {[info exists perl5.branches] && [lsearch -exact ${perl5.branches} $ret] == -1} {
-        set ret [lindex ${perl5.branches} end]
+#         set ret [lindex ${perl5.branches} end]
+        set ret 5.26
     }
     return $ret
 }
@@ -60,7 +61,6 @@ default perl5.require_variant {false}
 # Get variant names from branches
 proc perl5.get_variant_names {branches} {
     set ret {}
-#     lappend ret perl5.26
    foreach branch ${branches} {
         lappend ret "perl[string map {. _} ${branch}]"
     }

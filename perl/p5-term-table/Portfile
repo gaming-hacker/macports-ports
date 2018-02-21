@@ -17,7 +17,7 @@ checksums           rmd160  9d9bc5db8071e6a524a6a3d45d9febf8a23edf89 \
 
 if {${perl5.major} != ""} {
 # requires Test2::Tools::Tiny (from Test::Simple) version 1.302072
-# perl5.24 core version is 1.001014 so use our latest version 1.302078 instead
+# perl5.26 core version is 1.001014 so use our latest version 1.302078 instead
     depends_build-append \
                     port:p${perl5.major}-test-simple
 

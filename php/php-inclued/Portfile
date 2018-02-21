@@ -10,7 +10,7 @@ categories      php devel
 platforms       darwin
 maintainers     ryandesign openmaintainer
 
-php.branches    5.3 5.4
+php.branches    5.6
 php.pecl        yes
 php.pecl.prerelease yes
 
@@ -25,7 +25,7 @@ checksums       rmd160  9987e9eb7bd9d1787aa54304e76e8a8b9f59b245 \
 
 if {${name} != ${subport}} {
     use_parallel_build  yes
-    
+
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}
         xinstall -d ${destroot}${docdir}

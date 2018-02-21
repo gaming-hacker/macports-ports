@@ -49,7 +49,7 @@ categories      python
 
 use_configure   no
 # we want the default universal variant added despite not using configure
-universal_variant yes
+universal_variant  no
 
 build.target    build
 
@@ -253,20 +253,10 @@ proc python_get_defaults {var} {
         prefix {
             global build_arch frameworks_dir
             set ret "${frameworks_dir}/Python.framework/Versions/${python.branch}"
-            if {${python.version} == 25 || (${python.version} == 24 &&
-                ![file isfile ${ret}/include/python${python.branch}/Python.h] &&
-                ([file isfile ${prefix}/include/python${python.branch}/Python.h]
-                || [string match *64* $build_arch]))} {
-                set ret $prefix
-            }
             return $ret
         }
         bin {
-#             if {${python.version} != 24} {
-                return "${python.prefix}/bin/python${python.branch}"
-#             } else {
-#                 return "${prefix}/bin/python${python.branch}"
-#             }
+          return "${python.prefix}/bin/python${python.branch}"
         }
         include {
             set inc_dir "${python.prefix}/include/python${python.branch}"
@@ -287,46 +277,22 @@ proc python_get_defaults {var} {
             }
         }
         lib {
-#             if {${python.version} != 24 && ${python.version} != 25} {
-                return "${python.prefix}/Python"
-#             } else {
-#                 return "${prefix}/lib/lib${python.branch}.dylib"
-#             }
+              return "${python.prefix}/Python"
         }
         pkgd {
-#             if {${python.version} != 24} {
-                return "${python.prefix}/lib/python${python.branch}/site-packages"
- #            } else {
-#                 return "${prefix}/lib/python${python.branch}/site-packages"
-#             }
+              return "${python.prefix}/lib/python${python.branch}/site-packages"
         }
         setup_args {
-#             if {${python.version} != 24} {
                 return "--no-user-cfg"
-#             } else {
-#                 return ""
-#             }
         }
         setup_prefix {
-#             if {${python.version} != 24} {
                 return "${python.prefix}"
-#             } else {
-#                 return "${prefix}"
-#             }
         }
         link_binaries {
-#             if {${python.version} != 24 && ${python.version} != 25} {
                 return yes
-#             } else {
-#                 return no
-#             }
         }
         move_binaries {
-#             if {${python.version} == 24 || ${python.version} == 25} {
-#                 return yes
-#             } else {
                 return no
-#             }
         }
         binary_suffix {
             if {[string match py-* [option name]]} {

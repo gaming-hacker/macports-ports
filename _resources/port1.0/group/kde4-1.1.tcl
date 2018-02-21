@@ -56,16 +56,6 @@ depends_build-append    port:automoc
 # cyclic dependency
 depends_lib-append      port:phonon
 
-# set compiler to Apple's GCC 4.2
-switch ${os.platform}_${os.major} {
-    darwin_8 {
-	    configure.compiler	apple-gcc-4.2
-    }
-    darwin_9 {
-	    configure.compiler  gcc-4.2
-    }
-}
-
 # Install the kdelibs headerfiles in their own directory to prevent clashes with KF5 headers
 set kde4.include_prefix KDE4
 set kde4.include_dirs   ${prefix}/include/${kde4.include_prefix}
@@ -134,15 +124,6 @@ if { ${os.platform} eq "darwin" && ${os.major} >= 17 } {
     configure.cxxflags-append -D__KDE_HAVE_GCC_VISIBILITY
 }
 
-
-# These two can be removed (see #46240):
-#                        -DQCA2_INCLUDE_DIR=${prefix}/include/QtCrypto \
-#                        -DQCA2_LIBRARIES=${prefix}/lib/libqca.dylib \
-# These ones are obsolete, as purely based on mysql5 paths (see #49296):
-#                        -DMYSQLD_EXECUTABLE=${prefix}/libexec/mysqld \
-#                        -DMYSQL_INCLUDE_DIR=${prefix}/include/mysql5/mysql \
-#                        -DMYSQL_LIB_DIR=${prefix}/lib/mysql5/mysql \
-#                        -DMYSQLCONFIG_EXECUTABLE=${prefix}/bin/mysql_config5 \
 
 # standard variant for building documentation
 variant docs description "Build documentation" {

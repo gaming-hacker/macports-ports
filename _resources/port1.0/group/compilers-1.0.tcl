@@ -275,17 +275,9 @@ proc compilers.setup_variants {args} {
     }
 }
 
-foreach variant ${compilers.gcc_variants} {
-    # we need to check the default_variants so we can't use variant_isset
-    if {[info exists variations($variant)] && $variations($variant) eq "+"} {
-        depends_lib-delete      port:g95
-        break
-    }
-}
-
 proc c_active_variant_name {depspec} {
     global compilers.variants compilers.fortran_variants
-    set c_list [remove_from_list ${compilers.variants} {gfortran g95}]
+    set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach c $c_list {
         if {![catch {set result [active_variants $depspec $c ""]}]} {
@@ -302,7 +294,7 @@ proc c_active_variant_name {depspec} {
 
 proc c_variant_name {} {
     global compilers.variants compilers.fortran_variants
-    set c_list [remove_from_list ${compilers.variants} {gfortran g95}]
+    set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach cc $c_list {
         if {[variant_isset $cc]} {
@@ -538,7 +530,7 @@ proc compilers.action_enforce_some_f {args} {
     foreach portname $args {
         if {![catch {set result [active_variants $portname "" ""]}]} {
             if {[fortran_active_variant_name $portname] eq ""} {
-                ui_error "Install $portname with a Fortran variant (e.g. +gfortran, +gccX, +g95)"
+                ui_error "Install $portname with a Fortran variant (e.g. +gfortran)"
                 return -code error "$portname not installed with a Fortran variant"
             }
         } else {
@@ -567,7 +559,7 @@ proc compilers.setup {args} {
             set remove_list [remove_from_list ${compilers.fortran_variants} gfortran]
         } elseif {[compilers.is_c_only]} {
             # remove gfortran and g95 since those are purely for fortran
-            set remove_list [remove_from_list ${compilers.variants} {gfortran g95}]
+            set remove_list [remove_from_list ${compilers.variants} {gfortran}]
         }
 
         foreach v $args {
@@ -593,7 +585,7 @@ proc compilers.setup {args} {
                     # here we just check gfortran and g95, not every fortran
                     # compatible variant since it makes more sense to specify
                     # 'fortran' to mean add just the +gfortran and +g95 variants
-                    set ${mode}_list [${mode}_from_list [expr $${mode}_list] {gfortran g95}]
+                    set ${mode}_list [${mode}_from_list [expr $${mode}_list] {gfortran}]
 
                 }
                 clang {
@@ -657,7 +649,7 @@ proc compilers.setup {args} {
                 lappend ordered_variants $v
             }
         }
-        lappend ordered_variants {g95}
+
 
         if {${compilers.default_fortran} && ![fortran_variant_isset]} {
             foreach fv $ordered_variants {
@@ -676,7 +668,7 @@ proc compilers.setup {args} {
 # this might also need to be in pre-archivefetch
 pre-fetch {
     if {${compilers.require_fortran} && [fortran_variant_name] eq ""} {
-        return -code error "must set at least one Fortran variant (e.g. +gfortran, +gccX, +g95)"
+        return -code error "must set at least one Fortran variant (e.g. +gfortran)"
     }
     eval compilers.action_enforce_c ${compilers.required_c}
     eval compilers.action_enforce_f ${compilers.required_f}

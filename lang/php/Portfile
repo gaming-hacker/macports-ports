@@ -10,7 +10,6 @@ platforms               darwin freebsd
 maintainers             {ryandesign @ryandesign}
 license                 PHP-3.01
 default master_sites    {php:get/[lindex ${distfiles} 0]/from/this/mirror?dummy=}
-use_parallel_build      yes
 livecheck.type          none
 
 description             PHP: Hypertext Preprocessor
@@ -21,7 +20,7 @@ long_description        PHP is a widely-used general-purpose scripting \
                         scripting.
 
 # The list of PHP branches this port provides.
-php.branches   5.3 ${user.ver.php} 7.2
+php.branches   5.6 7.2
 
 # Fix for users specifying the subport name with the wrong case.
 set subport             [string tolower ${subport}]
@@ -59,22 +58,6 @@ set subport_branch      [php.branch_from_subport]
 
 # Remember to increment revision of ${php}-eaccelerator when updating version of ${php}.
 switch ${subport_branch} {
-    5.3 {
-        version         5.3.29
-        use_bzip2       yes
-        set suhosin_available       yes
-        set suhosin_patch_version   5.3.9-0.9.10
-        set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
-        checksums       ${distname}${extract.suffix} \
-                        md5     9469e240cbe6ac865aeaec89b253dd30 \
-                        rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
-                        sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
-                        size    11396771 \
-                        ${suhosin_patch} \
-                        rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
-                        sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
-                        size    40967
-    }
     5.6 {
         epoch           2
         version         5.6.33
@@ -146,17 +129,11 @@ if {[is_sapi_subport]} {
 
     # Use -p1 to accommodate the Suhosin patch
     patch.pre_args      -p1
-    patchfiles          patch-${php}-scripts-php-config.in.diff
-
-    if {[vercmp ${branch} 5.3] <= 0} {
-        patchfiles-append \
-                        patch-${php}-configure.diff
-    }
-    if {[vercmp ${branch} 5.2] <= 0} {
-        patchfiles-append \
+    patchfiles          patch-${php}-scripts-php-config.in.diff \
+                        patch-${php}-configure.diff \
                         patch-${php}-libxml-2.9.diff \
                         patch-${php}-pcre-8.30.diff
-    }
+
 
     # https://trac.macports.org/ticket/31590
     # Tested all subports (except oracle) and they built with clang-425.  The reported failure was with Xcode 4.2.
@@ -202,21 +179,15 @@ if {[is_sapi_subport]} {
                         RE2C=true \
                         YACC=true
 
-    if {[vercmp ${branch} 5.3] >= 0} {
-        configure.args-append \
-                        --enable-fileinfo \
-                        --enable-phar \
-                        --disable-fpm
+    configure.args-append \
+                    --enable-fileinfo \
+                    --enable-phar \
+                    --disable-fpm
 
-        # ${php}-mysql +mysqlnd needs mysqlnd support compiled into the SAPI
-        configure.env-append \
-                        PHP_MYSQLND_ENABLED=yes
-    }
+    # ${php}-mysql +mysqlnd needs mysqlnd support compiled into the SAPI
+    configure.env-append \
+                    PHP_MYSQLND_ENABLED=yes
 
-    if {[vercmp ${branch} 5.4] == 0} {
-        # https://bugs.php.net/bug.php?id=68114
-        configure.args-append ac_cv_decimal_fp_supported=no
-    }
 
     configure.universal_args-delete --disable-dependency-tracking
 
@@ -228,31 +199,6 @@ if {[is_sapi_subport]} {
         configure.args-append   --enable-debug
     }
 
-    if {[vercmp ${branch} 5.3] <= 0} {
-    variant suhosin description {Add Suhosin patch} {
-        pre-fetch {
-            if {!${suhosin_available}} {
-                ui_error "There is no suhosin patch for PHP ${version} yet. Please check back later."
-            }
-            if {![file exists ${extraphpinidir}/suhosin.ini]} {
-                ui_msg "You may also be interested in the suhosin extension, a related but different piece of software. See the ${php}-suhosin port."
-            }
-            if {!${suhosin_available}} {
-                return -code error "unavailable variant"
-            }
-        }
-        patch_sites-append          http://download.suhosin.org/
-        if {${suhosin_available}} {
-            if {[vercmp ${branch} 5.3] >= 0} {
-                patchfiles-append   patch-${php}-suhosin-before.diff
-            }
-            patchfiles-append       ${suhosin_patch}
-            if {[vercmp ${branch} 5.3] >= 0} {
-                patchfiles-append   patch-${php}-suhosin-after.diff
-            }
-        }
-    }
-    }
 
     if {${subport} ne ${php}} {
         notes-append "If this is your first install, you need to enable ${subport} in your web server."
@@ -294,23 +240,15 @@ subport ${php} {
     post-destroot {
         # Copy the default php.ini files.
         xinstall -m 755 -d ${destroot}${phpinidir}
-        if {[vercmp ${branch} 5.3] >= 0} {
-            xinstall -m 644 -W ${worksrcpath} \
-                php.ini-development \
-                php.ini-production \
-                ${destroot}${phpinidir}
-        } else {
-            xinstall -m 644 -W ${worksrcpath} \
-                php.ini-dist \
-                php.ini-recommended \
-                ${destroot}${phpinidir}
-        }
+        xinstall -m 644 -W ${worksrcpath} \
+            php.ini-development \
+            php.ini-production \
+            ${destroot}${phpinidir}
 
-        if {[vercmp ${branch} 5.3] >= 0} {
-            # Copy mysqlnd headers.
-            xinstall -d ${destroot}${prefix}/include/${php}/php/ext/mysqlnd
-            xinstall -m 644 {*}[glob ${worksrcpath}/ext/mysqlnd/*.h] ${destroot}${prefix}/include/${php}/php/ext/mysqlnd
-        }
+        # Copy mysqlnd headers.
+        xinstall -d ${destroot}${prefix}/include/${php}/php/ext/mysqlnd
+        xinstall -m 644 {*}[glob ${worksrcpath}/ext/mysqlnd/*.h] ${destroot}${prefix}/include/${php}/php/ext/mysqlnd
+
     }
 
     # Include the readline extension http://www.php.net/readline directly in
@@ -463,7 +401,6 @@ subport ${php}-cgi {
 
 ### FPM SAPI ###
 
-if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-fpm {
     description             ${php} FPM SAPI
 
@@ -516,7 +453,6 @@ ${phpinidir}/php-fpm.conf.default.
 "
     }
 }
-}
 
 ### Bundled extensions ###
 
@@ -559,7 +495,6 @@ subport ${php}-dba {
     }
 }
 
-if {[vercmp ${branch} 5.3] >= 0} {
 subport ${php}-enchant {
     categories-append       textproc devel
 
@@ -582,7 +517,7 @@ subport ${php}-enchant {
             ${destroot}${examplesdir}
     }
 }
-}
+
 
 subport ${php}-exif {
     categories-append       graphics

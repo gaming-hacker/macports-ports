@@ -9,7 +9,7 @@ revision            2
 categories          python
 replaced_by         py-gnureadline
 
-foreach v {26 27 34 35 36} {
+foreach v {26 27 36} {
     subport py${v}-readline "
         replaced_by py${v}-gnureadline
     "

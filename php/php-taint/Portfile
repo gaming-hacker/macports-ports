@@ -9,7 +9,7 @@ platforms               darwin
 maintainers             ryandesign openmaintainer
 license                 PHP-3.01
 
-php.branches            5.3 5.4
+php.branches            5.6
 php.pecl                yes
 
 description             detects XSS and SQL-injection vulnerabilities

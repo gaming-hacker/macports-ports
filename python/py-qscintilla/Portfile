@@ -13,7 +13,7 @@ if {${subport} eq ${name}} {
     PortGroup           obsolete 1.0
 }
 
-set python_versions {27 34 35 36}
+set python_versions {27 36}
 foreach pver ${python_versions} {
     subport py${pver}-qscintilla {
         replaced_by    py${pver}-qscintilla-qt4

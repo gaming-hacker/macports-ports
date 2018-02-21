@@ -46,7 +46,7 @@ version             4.19.7
 set branch          [join [lrange [split ${version} .] 0 1] .]
 set patch           [lindex [split ${version} .] 2]
 
-python.versions     27 34 35 36
+python.versions     27 36
 python.default_version 27
 
 if {${name} ne ${subport}} {

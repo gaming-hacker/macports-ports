@@ -40,13 +40,13 @@ depends_lib-append  port:curl \
                     path:lib/libssl.dylib:openssl \
                     port:expat \
                     port:libiconv \
-                    port:${user.ver.py}
+                    port:python27
 
-depends_run-append  port:p${user.ver.perl}-authen-sasl \
-                    port:p${user.ver.perl}-error \
-                    port:p${user.ver.perl}-net-smtp-ssl \
-                    port:p${user.ver.perl}-term-readkey \
-                    port:p${user.ver.perl}-cgi \
+depends_run-append  port:p${perl5.major}-authen-sasl \
+                    port:p${perl5.major}-error \
+                    port:p${perl5.major}-net-smtp-ssl \
+                    port:p${perl5.major}-term-readkey \
+                    port:p${perl5.major}-cgi \
                     port:rsync
 
 patchfiles          patch-Makefile.diff git-subtree.1.diff

@@ -22,7 +22,7 @@ checksums           rmd160  b7f15b1ee28c07c57aee21db988c5b74882f5f43 \
 
 mpi.setup           require
 
-python.versions     27 34 35
+python.versions     27 36
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc

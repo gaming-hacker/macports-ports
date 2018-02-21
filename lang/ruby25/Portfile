@@ -56,12 +56,6 @@ configure.args      --enable-shared \
                     --program-suffix=2.5 \
                     --with-rubylibprefix="${prefix}/lib/ruby2.5"
 
-platform darwin {
-    if {${os.major} < 10} {
-        configure.args-append --disable-dtrace
-    }
-}
-
 # Add the architecture flag as required
 if {[info exists build_arch] && ${build_arch} != ""} {
     configure.args-append "--with-arch=${build_arch}"

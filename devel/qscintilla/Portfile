@@ -30,7 +30,7 @@ long_description    QScintilla is a port to Qt of Neil Hodgson's Scintilla C++ e
 distname            QScintilla_gpl-${version}
 master_sites        sourceforge:pyqt
 
-foreach qt_major {4 5} {
+foreach qt_major {5} {
     subport ${name}-qt${qt_major} {
         if {${qt_major} eq 4} {
             PortGroup qmake 1.0
@@ -101,7 +101,7 @@ foreach qt_major {4 5} {
         }
     }
 
-    set python_versions {27 34 35 36}
+    set python_versions {27 36}
 
     foreach pver ${python_versions} {
         subport py${pver}-${name}-qt${qt_major} {
@@ -196,7 +196,7 @@ if {${subport} eq ${name}} {
             port:qscintilla-designer-qt5
     }
 
-    default_variants +qt4
+    default_variants +qt5
 }
 
 livecheck.type      regex

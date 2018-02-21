@@ -17,7 +17,7 @@ platforms           darwin
 checksums           rmd160  2fe4c902de9f6370ee8f09756d408899f853e069 \
                     sha256  5a6a36320162b0d923e1980dd0757247e7376622da5e930442d46b85f825b507
 
-python.versions     27 34 35 36
+python.versions     27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

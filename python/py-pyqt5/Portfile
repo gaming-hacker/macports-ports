@@ -20,7 +20,7 @@ checksums           rmd160  f9db4a93c335126006827df7d39b1e35f17f9156 \
                     sha256  342fe6675df8ba9fabb3f3cc5d79ebc24714cd9bd1a3b5c8ab5dba7596f15f50
 
 
-python.versions 27 34 35 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     PortGroup           qmake5 1.0

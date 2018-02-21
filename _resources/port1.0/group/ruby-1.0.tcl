@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 #
 # Copyright (c) 2002 Apple Computer, Inc.
 # Copyright (c) 2004 Robert Shaw <rshaw@opendarwin.org>
@@ -76,7 +76,7 @@
 options ruby.default_branch
 default ruby.default_branch 2.5
 options ruby.branch ruby.branches
-default ruby.branches {2.5}
+default ruby.branches {}
 options ruby.bin ruby.rdoc ruby.gem ruby.rake ruby.bindir ruby.gemdir ruby.suffix
 options ruby.api_version ruby.lib ruby.archlib
 # ruby.version is obsoleted. use ruby.api_version.
@@ -95,24 +95,25 @@ proc ruby_set_branch {option action args} {
     set ruby.gem            ${prefix}/bin/gem${ruby.branch}
     set ruby.rake           ${prefix}/bin/rake${ruby.branch}
     set ruby.bindir         ${prefix}/libexec/ruby${ruby.branch}
-    # gem, rake command for 2.5 from port:rb-rubygems, port:rb-rake
-    if {${ruby.branch} eq "2.5"} {
-        set ruby.gem        ${ruby.bindir}/gem
-        set ruby.rake       ${ruby.bindir}/rake
-    }
+    # gem, rake command for 1.8 from port:rb-rubygems, port:rb-rake
+#     if {${ruby.branch} eq "1.8"} {
+#         set ruby.gem        ${ruby.bindir}/gem
+#         set ruby.rake       ${ruby.bindir}/rake
+#     }
     set ruby.suffix         [join [split ${ruby.branch} .] {}]
-    if {${ruby.branch} eq "2.5"} {
-        set ruby.suffix     ""
-    }
+#     if {${ruby.branch} eq "1.8"} {
+#         set ruby.suffix     ""
+#     }
     set ruby.prog_suffix    ${ruby.branch}
-    if {${ruby.branch} eq "2.5"} {
-        set ruby.prog_suffix     ""
-    }
+#     if {${ruby.branch} eq "1.8"} {
+#         set ruby.prog_suffix     ""
+#     }
     #
     set ruby.api_version ${ruby.branch}.0
-    switch -exact ${ruby.branch} {
-        2.5 {set ruby.api_version 2.5}
-    }
+#     switch -exact ${ruby.branch} {
+#         1.9 {set ruby.api_version 1.9.1}
+#         1.8 {set ruby.api_version 1.8}
+#     }
     set ruby.gemdir         ${prefix}/lib/ruby${ruby.prog_suffix}/gems/${ruby.api_version}
     # define installation libraries as vendor location
     default ruby.lib        {[ruby.extract_config vendorlibdir ${prefix}/lib/ruby${ruby.prog_suffix}/vendor_ruby/${ruby.api_version}]}
@@ -215,8 +216,15 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
     } else {
         switch ${implementation} {
             ruby25 { ruby.branch 2.5 }
+            ruby24 { ruby.branch 2.4 }
+            ruby23 { ruby.branch 2.3 }
+            ruby22 { ruby.branch 2.2 }
+            ruby21 { ruby.branch 2.1 }
+            ruby20 { ruby.branch 2.0 }
+            ruby19 { ruby.branch 1.9 }
+            ruby   { ruby.branch 1.8 }
             default {
-                ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby25)"
+                ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
                 return -code error "ruby.setup failed"
             }
         }
@@ -402,7 +410,7 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
 
             # extconf.rb|mkmf.rb of ruby-1.8 does not support universal binary.
             # to build universal extentions, write "Portgrourp muniversal 1.0" in the Portfile.
-            if {[variant_isset universal] && (${ruby.branch} eq "2.5") && [info exists universal_archs_supported]} {
+            if {[variant_isset universal] && (${ruby.branch} eq "1.8") && [info exists universal_archs_supported]} {
                 foreach arch ${universal_archs_supported} {
                     lappend merger_configure_env(${arch}) \
                         ARCHPREFERENCE=ruby${ruby.branch}:${arch}
@@ -434,7 +442,7 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
             use_configure no
             extract.suffix .gem
 
-            if {${ruby.branch} eq "2.5"} {
+            if {${ruby.branch} eq "1.8"} {
                 depends_lib-append  port:rb-rubygems
                 if {${ruby.module} ne "rake"} {
                     depends_build-append    port:rb-rake

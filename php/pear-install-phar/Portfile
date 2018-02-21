@@ -12,26 +12,6 @@ master_sites        http://pear.php.net
 
 subport php5-pear {}
 
-subport php53-pear {
-
-    set php.port        [lindex [split $subport -] 0]
-    set php.db          /var/db/${php.port}
-    depends_lib         port:${php.port}
-}
-
-subport php54-pear {
-
-    set php.port        [lindex [split $subport -] 0]
-    set php.db          /var/db/${php.port}
-    depends_lib         port:${php.port}
-}
-
-subport php55-pear {
-
-    set php.port        [lindex [split $subport -] 0]
-    set php.db          /var/db/${php.port}
-    depends_lib         port:${php.port}
-}
 
 subport php56-pear {
 
@@ -40,14 +20,7 @@ subport php56-pear {
     depends_lib         port:${php.port}
 }
 
-subport php70-pear {
-
-    set php.port        [lindex [split $subport -] 0]
-    set php.db          /var/db/${php.port}
-    depends_lib         port:${php.port}
-}
-
-subport php71-pear {
+subport php72-pear {
 
     set php.port        [lindex [split $subport -] 0]
     set php.db          /var/db/${php.port}

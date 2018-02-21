@@ -22,7 +22,7 @@ long_description        ${description}
 checksums               rmd160  16ce1ad969a9fb06f8f28a7b07495b738d1af22f \
                         sha256  9cfd69b782400048df819298f889b4ea924e16edadcaf94bb3b19c02b798df2d
 
-python.versions         27 34 35 36
+python.versions         27 36
 
 if {${name} ne ${subport}} {
     depends_build           port:pkgconfig
