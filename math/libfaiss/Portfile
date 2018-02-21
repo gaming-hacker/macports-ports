@@ -7,8 +7,9 @@ version             20180214
 categories          math
 license             BSD
 platforms           darwin
-maintainers         fb.com:hoss \
-                    fb.com:matthijs
+maintainers         {@beauby fb.com:hoss} {@mdouze fb.com:matthijs} \
+                    openmaintainer
+
 description         Efficient similarity search library from Facebook AI Research.
 long_description    Library for efficient similarity search and clustering of dense vectors.
 homepage            https://github.com/facebookresearch/faiss
