@@ -11,11 +11,17 @@ maintainers         {@beauby fb.com:hoss} {@mdouze fb.com:matthijs} \
                     openmaintainer
 
 description         Efficient similarity search library from Facebook AI Research.
-long_description    Library for efficient similarity search and clustering of dense vectors.
 homepage            https://github.com/facebookresearch/faiss
 fetch.type          git
 git.url             https://github.com/facebookresearch/faiss.git
 git.branch          56383610bcb982d6591e2e2bea3516cb7723e04a
+long_description    Library for efficient similarity search and clustering of \
+                    dense vectors. It contains algorithms that search in sets \
+                    of vectors of any size, up to ones that possibly do not \
+                    fit in RAM. It also contains supporting code for \
+                    evaluation and parameter tuning. Faiss is written in C++ \
+                    with complete wrappers for Python/numpy. Some of the most \
+                    useful algorithms are implemented on the GPU.
 
 depends_build       port:gcc7
 
