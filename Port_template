@@ -12,16 +12,7 @@ maintainers         nomaintainer
 
 description         Colorspaces: SMPTE-C (NTSC), Rec.709, Rec.2020
 
-long_description    The "z" library implements the commonly required image processing \
-                    basics of scaling, colorspace conversion, and depth conversion. \
-                    A simple API enables conversion between any supported formats to \
-                    operate with minimal knowledge from the programmer. \
-                    \
-                    All \
-                    routines were designed from the ground-up with correctness, \
-                    flexibility, and thread-safety as first priorities. Allocation, \
-                    buffering, and I/O are cleanly separated from processing, \
-                    allowing the programmer to adapt "z" to many scenarios
+long_description    ${description}
 
 platforms           darwin
 

@@ -27,3 +27,9 @@ depends_run-append  port:rb25-activeresource \
                     port:rb25-activesupport \
                     port:rb25-bundler \
                     port:rb25-railties
+
+# ruby.setup          rails 5.1.5 gem {} rubygems ruby25
+# checksums   md5     03133010818e9e6eed8a0c77f612bc9b \
+# sha1    31caa4e7280f65836fb75b3c554adb3a7797758c \
+# rmd160  2c93297585d79250271882d048a4751993697eec \
+# sha256  fee9771fc53f3060875267a6789aea9e35975e5c344ff5c3175e27be92a01561

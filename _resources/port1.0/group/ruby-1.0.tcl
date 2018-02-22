@@ -96,24 +96,24 @@ proc ruby_set_branch {option action args} {
     set ruby.rake           ${prefix}/bin/rake${ruby.branch}
     set ruby.bindir         ${prefix}/libexec/ruby${ruby.branch}
     # gem, rake command for 1.8 from port:rb-rubygems, port:rb-rake
-#     if {${ruby.branch} eq "1.8"} {
-#         set ruby.gem        ${ruby.bindir}/gem
-#         set ruby.rake       ${ruby.bindir}/rake
-#     }
+    if {${ruby.branch} eq "1.8"} {
+        set ruby.gem        ${ruby.bindir}/gem
+        set ruby.rake       ${ruby.bindir}/rake
+    }
     set ruby.suffix         [join [split ${ruby.branch} .] {}]
-#     if {${ruby.branch} eq "1.8"} {
-#         set ruby.suffix     ""
-#     }
+    if {${ruby.branch} eq "1.8"} {
+        set ruby.suffix     ""
+    }
     set ruby.prog_suffix    ${ruby.branch}
-#     if {${ruby.branch} eq "1.8"} {
-#         set ruby.prog_suffix     ""
-#     }
+    if {${ruby.branch} eq "1.8"} {
+        set ruby.prog_suffix     ""
+    }
     #
     set ruby.api_version ${ruby.branch}.0
-#     switch -exact ${ruby.branch} {
-#         1.9 {set ruby.api_version 1.9.1}
-#         1.8 {set ruby.api_version 1.8}
-#     }
+    switch -exact ${ruby.branch} {
+        1.9 {set ruby.api_version 1.9.1}
+        1.8 {set ruby.api_version 1.8}
+    }
     set ruby.gemdir         ${prefix}/lib/ruby${ruby.prog_suffix}/gems/${ruby.api_version}
     # define installation libraries as vendor location
     default ruby.lib        {[ruby.extract_config vendorlibdir ${prefix}/lib/ruby${ruby.prog_suffix}/vendor_ruby/${ruby.api_version}]}

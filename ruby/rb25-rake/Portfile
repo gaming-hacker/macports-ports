@@ -13,3 +13,8 @@ long_description    ${description}
 license             MIT
 maintainers         nomaintainer
 platforms           darwin
+
+# ruby.setup          rake 12.3.0 gem {} rubygems ruby25
+# checksums           rmd160  0431e0934feb4aee7e4b8f49d792c844ac686cf7 \
+# sha256  4ebebe2c58050b29a03c3f33a23f4a19bca16cd39c7723653dc0b68f343b17a4
+#

@@ -64,7 +64,6 @@ array set clist {
     clang   {clang}
     clang50 {macports-clang-5.0}
     clang60 {macports-clang-6.0}
-    gcc6    {macports-gcc-6}
     gcc7    {macports-gcc-7}
     gcc8    {macports-gcc-8}
     llvm    {llvm-gcc-4.2}
