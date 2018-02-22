@@ -2,6 +2,7 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
+PortGroup           compilers 1.0
 
 github.setup        facebookresearch faiss 56383610bcb982d6591e2e2bea3516cb7723e04a
 name                libfaiss
@@ -23,7 +24,11 @@ long_description    Library for efficient similarity search and clustering of \
                     with complete wrappers for Python/numpy. Some of the most \
                     useful algorithms are implemented on the GPU.
 
-depends_build       port:gcc7
+compilers.choose    cxx
+# The Apple native llvm compiler does not support OpenMP.
+compiler.blacklist  llvm-gcc-4.2
+compiler.fallback   macports-gcc-7
+compilers.setup
 
 use_configure       no
 
@@ -31,7 +36,7 @@ pre-build {
     touch ${worksrcpath}/makefile.inc
 }
 
-build.env-append    CC="${prefix}/bin/g++-mp-7"
+build.env-append    CC="${configure.cxx}"
 build.env-append    CFLAGS="-fPIC -m64 -Wall -g -O3 -msse4 -mpopcnt -fopenmp \
                             -Wno-sign-compare -std=c++11 -I/usr/include/malloc/"
 build.env-append    LDFLAGS="-g -fPIC -fopenmp"
