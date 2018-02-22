@@ -14,7 +14,7 @@ master_sites        http://production.cf.rubygems.org/rubygems
 
 
 distname            rubygems-${version}
-dist_subdir         ruby
+dist_subdir         ruby2.5
 
 maintainers         nomaintainer
 description         a package management framework for Ruby
@@ -61,7 +61,7 @@ variant ruby186 conflicts ruby description {add Ruby 1.8.6 support} {
 }
 
 if {![variant_isset ruby186]} {
-    default_variants +ruby
+    default_variants +ruby2.5
 }
 
 # clean up mess from previous portfile that bypassed the destroot
