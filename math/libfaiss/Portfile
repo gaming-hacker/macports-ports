@@ -50,7 +50,9 @@ build.target        libfaiss.a libfaiss.dylib
 destroot.target
 destroot.destdir
 destroot.cmd        mkdir -p ${destroot}${prefix}/lib && \
-                    cp libfaiss.a libfaiss.dylib ${destroot}${prefix}/lib
+                    cp libfaiss.a libfaiss.dylib ${destroot}${prefix}/lib && \
+                    mkdir -p ${destroot}${prefix}/include/faiss && \
+                    cp -R ./*.h ${destroot}${prefix}/include/faiss/
 
 variant openblas description {Use OpenBLAS instead of Apple's Accelerate framework} {
     depends_lib-append  port:openblas
