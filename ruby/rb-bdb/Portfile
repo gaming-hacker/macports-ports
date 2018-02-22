@@ -1,0 +1,39 @@
+PortSystem		1.0
+PortGroup	ruby 1.0
+PortGroup github 1.0
+PortGroup user 1.0
+
+set repo.version 0.6.6
+set repo.owner knu
+set repo.name ruby-bdb
+github.setup    ${repo.owner} ${repo.name} ${repo.version} v
+
+checksums       rmd160 6aa8054e022fa38055fd441de98b65fd392b8dcb \
+  sha256 fcc84f7512fb30cafe98f7a20a8be794b0b4eafc393f4ffe1816dad1222d2a0e
+
+ruby.setup	bdb ${version} extconf.rb {README.en bdb.html bdb.rd docs examples}
+
+description		Ruby interface to the embedded Berkeley DB
+long_description	Ruby BDB is an interface for using Berkeley DB \
+					versions 2 and above. Developers may choose to store \
+					data in any of several different storage structures \
+					to satisfy the requirements of a particular \
+					application. The library includes support for \
+					B+tree, Hashes, and Fixed and Variable-Length \
+					Records.
+categories-append	databases
+license         {Ruby GPL-2}
+
+depends_lib-append		port:db60
+
+configure.args-append	--with-db-lib=${prefix}/lib/db60 \
+						--with-db-include=${prefix}/include/db60
+
+pre-configure {
+	# The trailing space is not a typo
+	reinplace "s|extconf.rb |-rvendor-specific & |" ${worksrcpath}/extconf.rb
+}
+
+test.run			yes
+test.target			test
+livecheck.type  none

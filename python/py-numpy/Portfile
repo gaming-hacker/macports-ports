@@ -14,7 +14,6 @@ maintainers             {michaelld @michaelld} openmaintainer
 description             The core utilities for the scientific library scipy for Python
 long_description        ${description}
 
-<<<<<<< HEAD
 github.setup            numpy numpy 1.14.1 v
 checksums   rmd160 1a7c91947da2482a36d34080d83d9fa1282e2438 \
   sha256 b5be12d706a8af04bd0858d524040a18f3a3ff8ecbe5c2a332e5bb70efe8e65a
@@ -123,10 +122,6 @@ variant."
                             ATLAS=None \
                             LAPACK=/usr/lib \
                             BLAS=/usr/lib
-    }
-
-    platform darwin 8 {
-        patchfiles-append patch-Tiger-without-dflcn-header.diff
     }
 
     post-patch {

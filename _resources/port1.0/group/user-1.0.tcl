@@ -34,6 +34,7 @@ set configure.ccache    no
 set use_parallel_build  yes
 set autoreconf.args     -fvi
 set livecheck.type      none
+set platforms           darwin
 
 set configure.compiler  macports-clang-${user.ver.clang}
 
@@ -48,5 +49,7 @@ set configure.cxxflags "${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c++17 -st
 set configure.cpp      "${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E"
 
 set configure.env ${user.MACROS}
+
+set configure.optflags ${user.CFLAGS}
 
 set user.config.default  "--quiet --disable-option-checking  --enable-shared --enable-static  --enable-silent-rules --enable-fast-install --enable-pic --with-pic --disable-dependency-tracking --enable-libtool-lock --disable-debug --disable-example --enable-simd --enable-asm --enable-libc++ --enable-sse"
