@@ -48,7 +48,7 @@ configure.args          --enable-option-checking \
                         --with-metalink \
                         --without-cares \
                         --with-libiconv-prefix=${prefix} \
-                        --without-libintl-prefix \
+                        --with-libintl-prefix=${prefix} \
                         --with-libunistring-prefix=${prefix} \
                         --without-libpth-prefix \
                         --without-included-regex \
