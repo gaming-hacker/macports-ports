@@ -29,7 +29,7 @@ supported_archs     noarch
 checksums           rmd160  37ce92304515f9d05de4b59c03c69748e453d8cd \
                     sha256  85c45750aef431f2c1326a9f4856eeac4da8aedbc94c6255de6e08e3ea35f316
 
-python.versions     26 27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-scipy \

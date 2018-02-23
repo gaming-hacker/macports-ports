@@ -24,7 +24,7 @@ checksums           md5     54681d38db45332ad5fa38fdba7ddd79 \
 
 patchfiles          patch-pillow-compat.diff
 
-python.versions     26
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:${python.pkgd}/PIL:py${python.version}-Pillow \

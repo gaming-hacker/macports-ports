@@ -13,7 +13,7 @@ long_description        ${description}
 license                 MIT
 homepage                https://pypi.python.org/pypi/Tempita/
 
-python.versions         26 27
+python.versions 27 36
 
 if {${name} eq ${subport}} {
     livecheck.regex         {>Tempita (.+) :}

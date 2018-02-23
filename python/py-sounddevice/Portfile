@@ -21,7 +21,7 @@ distname            sounddevice-${version}
 checksums           rmd160  e34f09c95135dd7563d7297146cebaaa4c2018fd \
                     sha256  1c9e833f8c8ccc67c0291c3448b29e9acc548fe56d15ee6f7fdd7037e00319f8
 
-python.versions     27 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append \

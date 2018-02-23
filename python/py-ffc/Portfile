@@ -25,7 +25,7 @@ long_description    FFC works as a compiler for multilinear forms by generating 
 checksums           rmd160  187cff1cbc258686d8509edf5c152296dca7bbc5 \
                     sha256  f1023bd18b41fa6184770bdf379b205c6357ef23b18c7a3e50773fd706abbd62
 
-python.versions     27
+python.versions 27 36
 python.link_binaries_suffix
 
 configure.cxxflags-append -std=c++11

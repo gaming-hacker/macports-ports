@@ -24,7 +24,7 @@ checksums           rmd160  db7d1e3cd904d01459db3c40bc613cb8738ad114 \
 extract.suffix      .tgz
 
 compilers.choose    cc fc f77 f90
-compilers.setup     require_fortran -clang -llvm -dragonegg
+compilers.setup     require_fortran -clang -llvm 
 
 cmake.out_of_source yes
 

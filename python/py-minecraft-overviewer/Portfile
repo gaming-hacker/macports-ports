@@ -40,7 +40,7 @@ checksums           ${mainfile} \
                     rmd160  018edb6030851a4ae17eba1ec9e0b03933b4922b \
                     sha256  ee26d2d7e7e300f76ba7b796014c04011394d0c4a5ed9a288264a3e443abca50
 
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     build.env-append \

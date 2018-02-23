@@ -23,7 +23,7 @@ checksums           rmd160  a70d0c7fb877f5e5776f7d9eb300783b050cda61 \
                     sha256  3c710a400d9a42ecd8c776d45039d645ed56899db7831975852fd623f79ce46b
 
 #not supporting 3x because py-keyring is broken on python 3.x
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_run         port:py${python.version}-keyring \

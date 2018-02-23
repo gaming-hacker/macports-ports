@@ -23,7 +23,7 @@ distname            Django-${version}
 checksums           rmd160  a7a64a93e56ba5e425f61752801c8083f9b2bff4 \
                     sha256  8918e392530d8fc6965a56af6504229e7924c27265893f3949aa0529cd1d4b99
 
-python.versions     27 36
+python.versions 27 36
 supported_archs     noarch
 
 if {${name} ne ${subport}} {

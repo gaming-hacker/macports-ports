@@ -23,7 +23,7 @@ long_description    The Unified Form Language (UFL) is a domain specific languag
 checksums           rmd160  9a510c16f2e1aa97cdd37e05f28ae4aac3faeefc \
                     sha256  0321918a60809ed168081fd4345343fbb57ee6da333625629b9dc9230ab5c8a3
 
-python.versions     27
+python.versions 27 36
 python.link_binaries_suffix
 
 if {${subport} ne ${name}} {

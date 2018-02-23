@@ -3,7 +3,7 @@ PortGroup               python 1.0
 
 name                    py-formencode
 version                 1.2.4
-python.versions         27
+python.versions 27 36
 maintainers             nomaintainer
 platforms               darwin
 

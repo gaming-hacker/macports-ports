@@ -3,7 +3,7 @@ PortGroup               python 1.0
 
 name                    py-webtest
 version                 1.3.3
-python.versions         27
+python.versions 27 36
 maintainers             nomaintainer
 platforms               darwin
 

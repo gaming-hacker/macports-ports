@@ -39,7 +39,7 @@ if {[string match "*-devel" $subport]} {
                         sha256  51a76474177bb852adce83811cf1c5684109319ef222a50417fd6e5b9bbe77fc
 }
 
-python.versions         27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  bin:hg:mercurial \

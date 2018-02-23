@@ -195,7 +195,7 @@ if {${subport} != ${name}} {
         append long_description " (AND THE FORTRAN COMPILER SELECTED BY THE VARIANT, IF ANY)"
 
         compilers.choose   fc
-        compilers.setup    -dragonegg default_fortran
+        compilers.setup     default_fortran
 
         if {[fortran_variant_isset]} {
             configure.args-delete   --disable-mpi-fortran

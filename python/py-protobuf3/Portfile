@@ -40,7 +40,7 @@ checksums       sha256  3f833c1c367f53803f5f849181af4a4edb20f8dd1fbdced19b5a2d52
 
 platforms       darwin
 
-python.versions 27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools \

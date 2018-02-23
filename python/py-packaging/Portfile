@@ -22,7 +22,7 @@ checksums           md5 53895cdca04ecff80b54128e475b5d3b \
                     rmd160 a6b8e25435ae429add03db68e63e10ffe9d56292 \
                     sha256 5d50835fdf0a7edf0b55e311b7c887786504efea1177abd7e69329a8e5ea619e
 
-python.versions     27 36
+python.versions 27 36
 
 if {$subport ne $name} {
     depends_lib-append  port:py${python.version}-parsing \

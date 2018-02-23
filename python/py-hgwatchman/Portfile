@@ -20,7 +20,7 @@ long_description    ${description}
 checksums           rmd160  9033badbc3c4e003869e4574d7518f2f03a527fe \
                     sha256  7d943e292a12576aaeeafd3d6e75933e989ae4e8865bc96d964db89c0b6d5580
 
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:bin/hg:mercurial \

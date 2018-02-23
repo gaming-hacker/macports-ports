@@ -24,7 +24,7 @@ checksums           md5     3a2b1aca6eb7bd843aef9a8556a191f4 \
 
 patchfiles          setup.py.diff
 
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

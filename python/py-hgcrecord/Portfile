@@ -23,7 +23,7 @@ long_description        The crecord mercurial extension allows you to \
 checksums               rmd160  3dcf9330f80968c897ef4c00674fc618e5ffea29 \
                         sha256  1a30ef2cec4b3129ac3ad57b49296b0783f38fb6fffacc3d9114f56df8301c1d
 
-python.versions         27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib         path:bin/hg:mercurial \

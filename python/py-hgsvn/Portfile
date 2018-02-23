@@ -22,7 +22,7 @@ distname                hgsvn-${version}
 checksums               rmd160  3f6c9b0bbda5c8454478436d0c0589e04d8394e1 \
                         sha256  de45c04a1b3c3e104fcfc99973609239240c3b22789b6e87e29323c7b86c333f
 
-python.versions         27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

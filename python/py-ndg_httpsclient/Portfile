@@ -20,7 +20,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/ndg-httpsclient
 master_sites        pypi:n/ndg-httpsclient
 
-python.versions     27 36
+python.versions 27 36
 
 checksums           rmd160  5f8dc881f7ee19a65f6a194185d76b10d8563781 \
                     sha256  fba4d4798dcac2965874f24afb6631b4326baa4bd02505744d34f690c354856a

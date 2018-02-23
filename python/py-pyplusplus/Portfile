@@ -5,7 +5,7 @@ PortGroup           bitbucket 1.0
 bitbucket.setup     ompl pyplusplus 1.8.0
 name                py-pyplusplus
 epoch               4
-python.versions     27 36
+python.versions 27 36
 categories-append   devel
 maintainers         {mmoll @mamoll} openmaintainer
 license             Boost-1

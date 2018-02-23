@@ -33,7 +33,7 @@ checksums           rmd160  bdd7c0df230c2b2aaa1a9426f5976cc16e6c62cf \
 worksrcdir          ${gname}-${version}
 
 python.default_version  27
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -18,7 +18,7 @@ long_description    PyMC is a python module that implements Bayesian statistical
                     PyMC includes methods for summarizing output, plotting, \
                     goodness-of-fit and convergence diagnostics.
 
-python.versions     27 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     checksums           rmd160  44579893fe1d646470bfbbe3001ab91d69392359 \

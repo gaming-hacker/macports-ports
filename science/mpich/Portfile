@@ -77,7 +77,6 @@ if {[string first "-devel" $subport] > 0} {
 # Sup-ports names and corresponding configure.compiler value
 array set clist {
     clang   {clang}
-    gcc7    {macports-gcc-7}
     gcc8    {macports-gcc-8}
 }
 
@@ -308,7 +307,7 @@ if {${subport} != ${name}} {
         revision                3
 
         compilers.choose   fc f77 f90
-        compilers.setup    -dragonegg default_fortran
+        compilers.setup     default_fortran
 
         if {[fortran_variant_isset]} {
             configure.args-delete   --disable-fortran

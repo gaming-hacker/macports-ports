@@ -16,7 +16,7 @@ categories          python
 platforms           darwin
 license             MIT
 
-python.versions		35 36
+python.versions 27 36
 
 maintainers         openmaintainer @esafak
 description         A tool to manage multiple virtual environments written in pure python
