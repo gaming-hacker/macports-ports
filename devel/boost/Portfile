@@ -155,7 +155,7 @@ pre-destroot {
     system "find ${worksrcpath} -type f -name '*.gch' -exec rm {} \\;"
 }
 
-set pythons_suffixes {26 27 33 34 35 36}
+set pythons_suffixes {27 36}
 
 set pythons_ports {}
 foreach s ${pythons_suffixes} {
@@ -210,11 +210,6 @@ if {![variant_isset debug]} {
 }
 
 default_variants +no_single +no_static
-
-variant debug description {Builds debug versions of the libraries as well} {
-    build.args-delete   variant=release
-    build.args-append   variant=debug,release
-}
 
 variant no_static description {Disable building static libraries} {
     build.args-delete   link=static,shared
@@ -370,16 +365,6 @@ variant universal {
         }
     } else {
         build.args-append   address-model=32
-    }
-}
-
-platform powerpc {
-    build.args-append   --disable-long-double
-}
-
-platform darwin 8 powerpc {
-    if {[variant_isset universal]} {
-        build.args-append   macosx-version=10.4
     }
 }
 
