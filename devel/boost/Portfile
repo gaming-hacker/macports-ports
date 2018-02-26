@@ -4,11 +4,9 @@ PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
 PortGroup       mpi 1.0
 PortGroup       active_variants 1.1
-PortGroup user 1.0
 
 name            boost
 version         1.66.0
-revision        1
 checksums       rmd160  ee5dafdfa49adf50a5333cef1f55dac4f70b4c14 \
                 sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
                 size    85995778
@@ -122,9 +120,7 @@ post-configure {
         set cxx_stdlibflags -stdlib=${configure.cxx_stdlib}
     }
 
-    # see https://trac.macports.org/ticket/55857
-    # see https://svn.boost.org/trac10/ticket/13454
-    write_jam "using darwin : : ${configure.cxx} : <cxxflags>\"${configure.cxxflags} [get_canonical_archflags cxx] ${cxx_stdlibflags}\" ${compileflags} <linkflags>\"${configure.ldflags} ${cxx_stdlibflags}\" : ;"
+    write_jam "using darwin : : ${configure.cxx} : <cxxflags>\"${configure.cxxflags} ${cxx_stdlibflags}\" ${compileflags} <linkflags>\"${configure.ldflags} ${cxx_stdlibflags}\" : ;"
 
 }
 
@@ -132,7 +128,6 @@ build.cmd       ${worksrcpath}/b2
 build.target
 build.args      -d2 \
                 --layout=tagged \
-                --debug-configuration \
                 --user-config=user-config.jam \
                 -sBZIP2_INCLUDE=${prefix}/include \
                 -sBZIP2_LIBPATH=${prefix}/lib \
@@ -145,6 +140,7 @@ build.args      -d2 \
                 threading=single,multi \
                 link=static,shared \
                 runtime-link=shared \
+                macosx-version=10.12 \
                 -j${build.jobs}
 
 destroot.cmd            ${worksrcpath}/bjam
