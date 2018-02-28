@@ -1,19 +1,19 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
-name                mariadb-10.2
+name                mysql55
 set name_mysql      ${name}
-version             10.2.12
-set version_branch  [join [lrange [split ${version} .] 0 1] .]
-# Please set revision_client and revision_server to 0 if you bump version.
-set revision_client 0
+version             5.5.53
+# Set revision_client and revision_server to 0 if you bump version.
+set revision_client 1
 set revision_server 0
+set version_branch  [join [lrange [split ${version} .] 0 1] .]
 categories          databases
 platforms           darwin
 license             GPL-2
 maintainers         {pixilla @pixilla} openmaintainer
-homepage            https://mariadb.org/
+homepage            http://www.mysql.com/
 
 if {$subport eq $name} {
 
@@ -23,33 +23,21 @@ if {$subport eq $name} {
     revision            ${revision_client}
     license             GPL-2
     description         Multithreaded SQL database server
-    long_description    Mariadb is a fork of the MySQL server, a multi-threaded SQL database.
+    long_description    MySQL is an open-source, multi-threaded SQL database.
 
-    master_sites \
-        http://ftp.osuosl.org/pub/mariadb/mariadb-${version}/source/ \
-        http://mirror2.hs-esslingen.de/mariadb/mariadb-${version}/source/ \
-        http://mirror3.layerjet.com/mariadb/mariadb-${version}/source/ \
-        http://ftp.yz.yamagata-u.ac.jp/pub/dbms/mariadb/mariadb-${version}/source/ \
-        http://mirrors.supportex.net/mariadb/mariadb-${version}/source/ \
-        http://mirrors.fe.up.pt/pub/mariadb/mariadb-${version}/source/ \
-        http://gd.tuwien.ac.at/db/mariadb/mariadb-${version}/source/ \
-        http://mirror.aarnet.edu.au/pub/MariaDB/mariadb-${version}/source/ \
-        http://ftp.heanet.ie/mirrors/mariadb/mariadb-${version}/source/ \
-        http://mirror.switch.ch/mirror/mariadb/mariadb-${version}/source/
+    master_sites        mysql:MySQL-${version_branch}
 
-    distname            mariadb-${version}
+    distname            mysql-${version}
     cmake.out_of_source yes
     use_parallel_build  yes
 
     patch.pre_args      -p1
-    patchfiles          patch-cmake-install_layout.cmake.diff \
-                        patch-CMakeLists.txt.diff
+    patchfiles          patch-cmake-install_layout.cmake.diff
 
-    checksums           rmd160  4b81a5650d87dd8cd7917daf8f8e70775e45847f \
-                        sha256  2ab22d7fbacfabc30fe18f71a8afb173250074502d889457e3cde2e203d341ec \
-                        size    72818636
+    checksums           rmd160  b0f4dd9428f7b2a71fd1ae5697231a20b2943c33 \
+                        sha256  a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
 
-    depends_lib-append  port:zlib port:tcp_wrappers port:ncurses port:judy
+    depends_lib-append  port:zlib port:tcp_wrappers
     depends_run-append  port:mysql_select
 
     select.group        mysql
@@ -86,13 +74,21 @@ if {$subport eq $name} {
                         -DWITH_EMBEDDED_SERVER:BOOL=ON \
                         -DWITH_ZLIB:STRING=system \
                         -DWITH_UNIT_TESTS:BOOL=ON \
-                        -DWITHOUT_MROONGA_STORAGE_ENGINE:BOOL=ON \
                         -DENABLE_GCOV:BOOL=OFF \
                         -DENABLE_DTRACE:BOOL=OFF \
                         -DWITH_READLINE:BOOL=ON \
+                        -DWITH_LIBEDIT:BOOL=OFF \
                         -DWITH_LIBWRAP:BOOL=ON \
-                        -DWITH_SSL:STRING=no \
-                        -DMYSQL_MAINTAINER_MODE:STRING=AUTO
+                        -DWITH_SSL:STRING=no
+
+    post-build {
+        set dirs ${cmake.build_dir}
+        foreach dir ${dirs} {
+            reinplace -E {s|-arch [a-z0-9_]+||g} \
+                ${dir}/scripts/mysql_config \
+                ${dir}/scripts/mysqlbug
+        }
+    }
 
     post-destroot {
         # proc portdestroot::destroot_finish fails to find and compress our man pages
@@ -132,7 +128,7 @@ if {$subport eq $name} {
         # reasonable period we need to deactivate older versions of the ${name_mysql}-server.
         if { [file exists ${prefix}/etc/${name_mysql}/macports-default.cnf]
             && ![catch {set vers [lindex [registry_active ${name_mysql}-server] 0]}]
-            && [vercmp [lindex $vers 1] 5.5.24] < 0 } {
+            && [vercmp [lindex $vers 1] 5.5.25] < 0 } {
 
             registry_deactivate_composite ${name_mysql}-server "" [list ports_nodepcheck 1]
         }
@@ -182,16 +178,16 @@ possible to install and have running all the MacPorts mysql ports
 simultaneously.
 "
 
-    livecheck.type      regex
-    livecheck.url       https://downloads.mariadb.org
-    livecheck.regex     "btn-large\" href=\"/mariadb/(${version_branch}\[^/\]+)/\">"
+    livecheck.type          regex
+    livecheck.url           http://dev.mysql.com/downloads/mysql/${version_branch}.html
+    livecheck.regex         "MySQL Community Server (${version_branch}(\.\[0-9.\]+)?)"
 }
 
 subport ${name_mysql}-server {
 
     revision            ${revision_server}
     license             BSD
-    description         (Beta version) Run ${name_mysql} as server
+    description         Run ${name_mysql} as server
     long_description    ${description}
 
     supported_archs     noarch
