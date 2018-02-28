@@ -2,13 +2,14 @@
 
 PortSystem          1.0
 
-name                go
-epoch               2
-version             1.10
+name                go-1.4
+
+version             1.4.3
+revision            1
 categories          lang
-platforms           darwin freebsd linux
+platforms           darwin
 license             BSD
-maintainers         {ciserlohn @ci42} openmaintainer
+maintainers         ciserlohn
 description         compiled, garbage-collected, concurrent programming \
                     language developed by Google Inc.
 long_description    \
@@ -24,18 +25,16 @@ long_description    \
 
 homepage            https://golang.org/
 master_sites        https://storage.googleapis.com/golang/
-distfiles           ${name}${version}.src.tar.gz
-worksrcdir          ${name}
+distfiles           go${version}.src.tar.gz
+worksrcdir          go
 
-checksums           rmd160  41c7ea168609e9487fcfbf57daf839d4d77c74f5 \
-                    sha256  f3de49289405fda5fd1483a8fe6bd2fa5469e005fd567df64485c4fa000c7f24
-
-depends_build       port:go-1.4
+checksums           rmd160  b1fbb2805a777c8107e7c946f36a881303ac5e35 \
+                    sha256  9947fc705b0b841b5938c48b22dc33e9647ec0752bae66e50278df4f23f64959
 
 set GOROOT          ${worksrcpath}
 set GOROOT_FINAL    ${prefix}/lib/${name}
 
-supported_archs    i386 x86_64
+supported_archs     i386 x86_64
 
 switch ${build_arch} {
     i386 {
@@ -51,59 +50,55 @@ switch ${build_arch} {
 
 use_configure       no
 
+if {${os.platform} eq "darwin" && ${os.major} >= 16} {
+    patchfiles-append patch-src-runtime-sys_darwin_386-sierra-clock_gettime.diff
+}
+
 build.dir           ${worksrcpath}/src
 build.cmd           ./make.bash
 build.target
-build.env           GOROOT_BOOTSTRAP=${prefix}/lib/go-1.4 \
-                    GOROOT=${GOROOT} \
+build.env           GOROOT=${GOROOT} \
                     GOARCH=${GOARCH} \
                     GOOS=darwin \
                     GOROOT_FINAL=${GOROOT_FINAL} \
-                    CC=${configure.cc}
+                    CC=${configure.cc} \
+                    GCC=${configure.cc} \
+                    CGO_ENABLED=0
 
 use_parallel_build  no
 
 post-build {
     system "find ${worksrcpath} -type d -name .hg* -print0 | xargs -0 rm -rf"
-    delete ${worksrcpath}/pkg/bootstrap
 }
 
 destroot {
 
     set grfdir ${destroot}${GOROOT_FINAL}
+    set bindir ${grfdir}/bin
     set docdir ${destroot}${prefix}/share/doc/${name}
 
     xinstall -d ${grfdir}
+    xinstall -d ${bindir}
     xinstall -d ${docdir}
 
-    foreach f {api bin lib misc pkg src test} {
-        copy ${worksrcpath}/${f} ${grfdir}
-    }
+    xinstall -m 755 -W ${worksrcpath} \
+        bin/go \
+        ${bindir}
 
-    foreach f {go gofmt} {
-        system -W ${destroot}${prefix}/bin/ "ln -s ../lib/${name}/bin/$f ./$f"
+    foreach f {pkg src} {
+        copy ${worksrcpath}/${f} ${grfdir}
     }
 
     xinstall -m 644 -W ${worksrcpath} \
         AUTHORS \
-        CONTRIBUTING.md \
         CONTRIBUTORS \
         LICENSE \
-        README.md \
+        README \
         PATENTS \
         VERSION \
         ${docdir}
-
-    copy {*}[glob -directory ${worksrcpath}/doc *] ${docdir}
-}
-
-if {${os.platform} eq "darwin" && ${os.major} < 12} {
-    pre-fetch {
-        ui_error "${name} ${version} requires Mac OS X 10.8 or greater."
-        return -code error "incompatible Mac OS X version"
-    }
 }
 
 livecheck.type      regex
 livecheck.url       ${homepage}/dl/
-livecheck.regex     {go([0-9.]+).src.tar.gz}
+livecheck.regex     {go(1\.4\.[0-9.]+).src.tar.gz}
