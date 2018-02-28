@@ -318,10 +318,6 @@ platform darwin {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bc7db7bdadf141040ffa35fe6308b5039f74c7e0
 # error out if trying to build on a new OSX version (> 10.12).
 
 platform darwin {
