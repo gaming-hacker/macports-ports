@@ -40,7 +40,8 @@ depends_lib-append  port:zlib \
                     port:tiff \
                     port:libpng \
                     port:libmng \
-                    path:lib/libjpeg.dylib:jpeg 
+                    path:lib/libjpeg.dylib:jpeg
+
 
 # find a way to specify the OS MINOR version.  For OSX 10.X, this
 # value will be X.  The type is this variable is integer, so we can
@@ -317,6 +318,10 @@ platform darwin {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc7db7bdadf141040ffa35fe6308b5039f74c7e0
 # error out if trying to build on a new OSX version (> 10.12).
 
 platform darwin {
