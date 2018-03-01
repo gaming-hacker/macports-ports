@@ -274,7 +274,7 @@ if {${subport} != ${name}} {
 
     if { [string first gcc $cname] == 0 } {
         append long_description " AND FORTRAN COMPILERS"
-        revision                3
+        revision                4
         configure.args-delete   --disable-fortran
         configure.args-append   --enable-fortran
         select.file             ${filespath}/${name}-${cname}-fortran
