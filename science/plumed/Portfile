@@ -29,14 +29,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  8762d5c2f28c5281da0410691b0ede4575b73c82 \
-                    sha256  1cf9a2fda224b1c12c64b966c81c9a0e52c1468cf35dfbbe7dad51f3e976b102
+sha256  1cf9a2fda224b1c12c64b966c81c9a0e52c1468cf35dfbbe7dad51f3e976b102
 
-# This allows building plumed on machines with old system compilers.
-# Setting this in the Portfile should allow buildbots to build the 
-# correct variant.
-if { ${os.major} < 13 } {
-    default_variants +gcc7
-}
 
 # Disable additional features.
 # --disable-doc:          Do not create documentation, and avoid searching for Doxygen.
