@@ -3,16 +3,8 @@ PortGroup	ruby 1.0
 PortGroup github 1.0
 PortGroup user 1.0
 
-set repo.version 0.6.6
-set repo.owner knu
-set repo.name ruby-bdb
-github.setup    ${repo.owner} ${repo.name} ${repo.version} v
-
-checksums       rmd160 6aa8054e022fa38055fd441de98b65fd392b8dcb \
-  sha256 fcc84f7512fb30cafe98f7a20a8be794b0b4eafc393f4ffe1816dad1222d2a0e
-
-ruby.setup	bdb ${version} extconf.rb {README.en bdb.html bdb.rd docs examples}
-
+ruby.setup		bdb 0.6.5 extconf.rb {README.en bdb.html bdb.rd docs examples}
+maintainers		nomaintainer
 description		Ruby interface to the embedded Berkeley DB
 long_description	Ruby BDB is an interface for using Berkeley DB \
 					versions 2 and above. Developers may choose to store \
@@ -23,6 +15,10 @@ long_description	Ruby BDB is an interface for using Berkeley DB \
 					Records.
 categories-append	databases
 license         {Ruby GPL-2}
+homepage		http://moulon.inra.fr/ruby/${ruby.module}.html
+master_sites	ftp://moulon.inra.fr/pub/ruby/
+checksums		md5 a6b1b04eede935f1de5327e365e350fa \
+				sha1 9a9151801d2a02feb0bba866762634bec860e724
 
 depends_lib-append		port:db60
 
@@ -34,6 +30,4 @@ pre-configure {
 	reinplace "s|extconf.rb |-rvendor-specific & |" ${worksrcpath}/extconf.rb
 }
 
-test.run			yes
-test.target			test
 livecheck.type  none

@@ -2,14 +2,10 @@
 
 PortSystem              1.0
 PortGroup               ruby 1.0
-PortGroup               github 1.0
 PortGroup               active_variants 1.1
 PortGroup user 1.0
 
-github.setup            rmagick rmagick 2-13-3 RMagick_
-version                 [string map {- .} ${github.version}]
-revision                1
-ruby.setup              RMagick ${version} setup.rb {README examples}
+ruby.setup              RMagick 2.13.2 gem {} rubygems
 categories-append       graphics
 platforms               darwin
 maintainers             nomaintainer
@@ -22,9 +18,6 @@ long_description        RMagick is an interface between the Ruby programming \
     fully featured and has good documentation.
 
 homepage                https://rmagick.github.io
-
-checksums               rmd160  84f99ad91fbc6ba4973b4e97e3ca8adbc6a508da \
-                        sha256  cc883db1591c5caea6c7be15841509e65d1231cf5b1adc936b2fe6126ed4bb2f
 
 depends_lib-append      port:ImageMagick
 require_active_variants ImageMagick wmf
