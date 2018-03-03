@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=4:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,8 +25,8 @@ distname            ${python.rootname}-${version}
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}/
 
 checksums           md5     46e5d357f3b5e049bfb421e1473ee44d \
-                    rmd160  209e4cc4c6d3df0648212ed0c1e8d003536bf963 \
-                    sha256  e8fe0d55a8cecb725748c831ffac2873df94c05b2d7eb867ea167c0500bbc6a8
+rmd160  209e4cc4c6d3df0648212ed0c1e8d003536bf963 \
+sha256  e8fe0d55a8cecb725748c831ffac2873df94c05b2d7eb867ea167c0500bbc6a8
 
 
 python.versions     27 36
@@ -40,7 +40,11 @@ if {${name} ne ${subport}} {
 
     livecheck.type  none
 } else {
+<<<<<<< HEAD
     livecheck.type  regex
     livecheck.url   https://pypi.python.org/pypi/${python.rootname}/json
     livecheck.regex "\"${python.rootname}-(\[.\\d\]+)\\${extract.suffix}\""
+=======
+    livecheck.type  pypi
+>>>>>>> 8e4d91d27b641572b7582005386ff6e7e65827ec
 }
