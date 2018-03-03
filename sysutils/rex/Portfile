@@ -7,6 +7,7 @@ name                rex
 perl5.branches  5.26
 perl5.setup         Rex 1.5.0 ../by-authors/id/J/JF/JFRIED
 perl5.link_binaries_suffix
+revision            1
 
 categories          sysutils perl
 platforms           darwin

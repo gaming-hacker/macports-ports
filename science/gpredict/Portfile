@@ -5,6 +5,7 @@ PortGroup           perl5 1.0
 
 name                gpredict
 version             2.2.1
+revision            1
 categories          science
 license             GPL-2+
 platforms           darwin
