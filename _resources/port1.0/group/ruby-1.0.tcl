@@ -1,8 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=4:sts=2
 #
 # Copyright (c) 2002 Apple Computer, Inc.
 # Copyright (c) 2004 Robert Shaw <rshaw@opendarwin.org>
 # Copyright (c) 2006-2013 The MacPorts Project
+# Copyright (c) 2018 github:gaming-hacker
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -73,10 +74,10 @@
 #   > ruby.setup moudle version gem
 #   > destroot.post_args-append -- --with-any-option
 
-options ruby.default_branch
+options ruby.default_branch 2.5
 default ruby.default_branch 2.5
 options ruby.branch ruby.branches
-default ruby.branches {}
+default ruby.branches {2.5}
 options ruby.bin ruby.rdoc ruby.gem ruby.rake ruby.bindir ruby.gemdir ruby.suffix
 options ruby.api_version ruby.lib ruby.archlib
 # ruby.version is obsoleted. use ruby.api_version.
@@ -96,24 +97,10 @@ proc ruby_set_branch {option action args} {
     set ruby.rake           ${prefix}/bin/rake${ruby.branch}
     set ruby.bindir         ${prefix}/libexec/ruby${ruby.branch}
     # gem, rake command for 1.8 from port:rb-rubygems, port:rb-rake
-    if {${ruby.branch} eq "1.8"} {
-        set ruby.gem        ${ruby.bindir}/gem
-        set ruby.rake       ${ruby.bindir}/rake
-    }
     set ruby.suffix         [join [split ${ruby.branch} .] {}]
-    if {${ruby.branch} eq "1.8"} {
-        set ruby.suffix     ""
-    }
     set ruby.prog_suffix    ${ruby.branch}
-    if {${ruby.branch} eq "1.8"} {
-        set ruby.prog_suffix     ""
-    }
     #
     set ruby.api_version ${ruby.branch}.0
-    switch -exact ${ruby.branch} {
-        1.9 {set ruby.api_version 1.9.1}
-        1.8 {set ruby.api_version 1.8}
-    }
     set ruby.gemdir         ${prefix}/lib/ruby${ruby.prog_suffix}/gems/${ruby.api_version}
     # define installation libraries as vendor location
     default ruby.lib        {[ruby.extract_config vendorlibdir ${prefix}/lib/ruby${ruby.prog_suffix}/vendor_ruby/${ruby.api_version}]}
@@ -130,7 +117,7 @@ proc ruby.extract_config {var {default ""}} {
 }
 
 options ruby.arch
-default ruby.arch           {[ruby.extract_config arch "${os.arch}-${os.platform}${os.major}"]}
+default ruby.arch    {[ruby.extract_config arch "${os.arch}-${os.platform}${os.major}"]}
 
 set ruby.module         ""
 set ruby.filename       ""
@@ -144,9 +131,7 @@ set ruby.prog_suffix    ""
 # NOTE: set the value *before ruby.setup* to use ohter name.
 options ruby.config_rubyprog_name
 default ruby.config_rubyprog_name --rubyprog
-
 default ruby.branch         ${ruby.default_branch}
-
 options ruby.link_binaries ruby.link_binaries_suffix
 default ruby.link_binaries yes
 default ruby.link_binaries_suffix {-${ruby.branch}}
@@ -216,13 +201,7 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
     } else {
         switch ${implementation} {
             ruby25 { ruby.branch 2.5 }
-            ruby24 { ruby.branch 2.4 }
-            ruby23 { ruby.branch 2.3 }
-            ruby22 { ruby.branch 2.2 }
-            ruby21 { ruby.branch 2.1 }
-            ruby20 { ruby.branch 2.0 }
-            ruby19 { ruby.branch 1.9 }
-            ruby   { ruby.branch 1.8 }
+            ruby   { ruby.branch 2.5 }
             default {
                 ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
                 return -code error "ruby.setup failed"
@@ -441,14 +420,6 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
         gem {
             use_configure no
             extract.suffix .gem
-
-            if {${ruby.branch} eq "1.8"} {
-                depends_lib-append  port:rb-rubygems
-                if {${ruby.module} ne "rake"} {
-                    depends_build-append    port:rb-rake
-                }
-            }
-
             extract {
                 file mkdir ${worksrcpath}
                 copy ${distpath}/${distname}.gem ${worksrcpath}/${ruby.filename}.gem

@@ -43,11 +43,11 @@ depends_build       port:pkgconfig \
                     port:p${perl_branch}-xml-parser
 
 depends_lib         port:libiconv \
-                    port:libsndfile +no_external_libs \
+                    port:libsndfile \
                     port:libtool \
                     port:gdbm \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
-                    port:gtk3 +quartz \
+                    port:gtk3 \
                     port:dbus \
                     port:fftw-3-single \
                     path:lib/libspeexdsp.dylib:speexDSP \
