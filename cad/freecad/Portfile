@@ -62,7 +62,6 @@ post-patch {
 }
 
 compilers.choose        fc
-<<<<<<< HEAD
 compilers.setup  require_fortran
 configure.args-delete   -DCMAKE_INSTALL_RPATH=${prefix}/lib \
                         -DCMAKE_INSTALL_NAME_DIR=${prefix}/lib
@@ -74,17 +73,6 @@ configure.pre_args-replace \
                         -DCMAKE_INSTALL_NAME_DIR=${prefix}/lib \
                         -DCMAKE_INSTALL_NAME_DIR=${cmake.install_prefix}/lib
 
-=======
-compilers.setup         -dragonegg -g95 require_fortran
-
-cmake.install_prefix    ${prefix}/libexec/${name}
-cmake.install_rpath     ${cmake.install_prefix}/lib
-
-configure.pre_args-replace \
-                        -DCMAKE_INSTALL_NAME_DIR=${prefix}/lib \
-                        -DCMAKE_INSTALL_NAME_DIR=${cmake.install_prefix}/lib
-
->>>>>>> master
 configure.args-append   -DCMAKE_INSTALL_DATADIR=${prefix}/share/${name} \
                         -DCMAKE_INSTALL_DOCDIR=${prefix}/share/doc/${name} \
                         -DCMAKE_FRAMEWORK_PATH=${frameworks_dir} \

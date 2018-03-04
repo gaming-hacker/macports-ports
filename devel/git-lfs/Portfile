@@ -15,19 +15,18 @@ long_description        ${description} is an extension for versioning large file
 homepage                https://git-lfs.github.com/
 license                 MIT
 
-checksums               rmd160  c1afafa33ce02059d08ea4dda07ee0ab170f05c5 \
-                        sha256  59479a00295868f2762098c9b8415ae1c4bc4fad6e9f8923460a68f0692a471c \
+checksums  rmd160  c1afafa33ce02059d08ea4dda07ee0ab170f05c5 \
+sha256  59479a00295868f2762098c9b8415ae1c4bc4fad6e9f8923460a68f0692a471c \
                         size    786914
 
-patchfiles              patch-ronn.diff
 
 depends_build           port:go \
-                        port:rb19-ronn
+                        port:rb-ronn
 depends_run             port:git
 
-post-patch {
-    reinplace "s:@@PREFIX@@:${prefix}:" ${worksrcpath}/script/man
-}
+# post-patch {
+#     reinplace "s:@@PREFIX@@:${prefix}:" ${worksrcpath}/script/man
+# }
 
 use_configure no
 
@@ -37,13 +36,13 @@ build.target
 destroot {
     set bindir ${destroot}${prefix}/bin
     xinstall -m 755 ${worksrcpath}/bin/git-lfs ${bindir}
-
-    set mandir ${destroot}${prefix}/share/man/man1
-    set manfiles [glob ${worksrcpath}/man/*.1]
-    xinstall -m 644 {*}${manfiles} ${mandir}
-
-    set docdir ${destroot}${prefix}/share/doc/${subport}
-    xinstall -d ${docdir}
-    set docfiles [glob ${worksrcpath}/man/*.html]
-    xinstall -m 644 {*}${docfiles} ${docdir}
+#
+#     set mandir ${destroot}${prefix}/share/man/man1
+#     set manfiles [glob ${worksrcpath}/man/*.1]
+#     xinstall -m 644 {*}${manfiles} ${mandir}
+#
+#     set docdir ${destroot}${prefix}/share/doc/${subport}
+#     xinstall -d ${docdir}
+#     set docfiles [glob ${worksrcpath}/man/*.html]
+#     xinstall -m 644 {*}${docfiles} ${docdir}
 }

@@ -1,7 +1,7 @@
 PortSystem          1.0
 PortGroup           ruby 1.0
 
-ruby.setup          mustache 0.10.0 gem
+ruby.setup          mustache 0.12.1 gem {} rubygems
 revision            1
 maintainers         nomaintainer
 description         Logic-less templates, implemented in Ruby.
@@ -13,20 +13,19 @@ license             MIT
 platforms           darwin
 homepage            http://mustache.github.com/
 master_sites        http://rubygems.org/downloads/
-checksums           md5     fa107351a80265149de08e6af9b4f477 \
-                    sha1    1ea270702d50745e0d6431cf212d81d18d0df916 \
-                    rmd160  644455c6a734a0ce205f501e0ec6c3a36360e849
+checksums           rmd160  d02fc0c7f108afb9d4ed0c4fe4c1d151aff9f103 \
+                    sha256  539f8613cf6154aefd290256ad2d5ff09b1c7f6529aca74b2941973bf56a2
 
 post-destroot {
     set gemdir ${destroot}${ruby.gemdir}/gems/${worksrcdir}
-    set mandir ${destroot}${prefix}/share/man/
-    set docdir ${destroot}${prefix}/share/doc/${ruby.module}
-    xinstall -d ${docdir}
-    
-    xinstall ${gemdir}/man/${ruby.module}.1 ${mandir}/man1/
-    xinstall ${gemdir}/man/${ruby.module}.5 ${mandir}/man5/
-    xinstall -W ${gemdir} README.md LICENSE ${docdir}
-    xinstall {*}[glob  ${gemdir}/man/*.html] ${docdir}
+#     set mandir ${destroot}${prefix}/share/man/
+#     set docdir ${destroot}${prefix}/share/doc/${ruby.module}
+#     xinstall -d ${docdir}
+#
+#     xinstall ${gemdir}/man/${ruby.module}.1 ${mandir}/man1/
+#     xinstall ${gemdir}/man/${ruby.module}.5 ${mandir}/man5/
+#     xinstall -W ${gemdir} README.md LICENSE ${docdir}
+#     xinstall {*}[glob  ${gemdir}/man/*.html] ${docdir}
 }
 
 
