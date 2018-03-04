@@ -15,6 +15,4 @@ checksums           rmd160  782464d9532ca5008f2e9a1732d9812230069330 \
 homepage			http://code.whytheluckystiff.net/hpricot/
 platforms           darwin
 
-livecheck.type	regex
-livecheck.regex	"<b>${ruby.module}-(.*)</b>"
-livecheck.url	http://gentoo-portage.com/dev-ruby/${ruby.module}
+livecheck.type	non
