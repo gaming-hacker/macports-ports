@@ -50,6 +50,6 @@ INSTALL="${configure.install}"
 }
 
 # ./configure takes no args
-configure.universal_args ""
-configure.pre_args       ""
-configure.args           ""
+configure.universal_args
+configure.pre_args
+configure.args
