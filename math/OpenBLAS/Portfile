@@ -18,6 +18,7 @@ fetch.type          git
 # for the user processor
 archive_sites
 
+# declare +clang variant
 variant clang description "Use Clang as C/C++ compiler (required for AVX)" {}
 
 universal_variant   no
