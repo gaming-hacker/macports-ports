@@ -1,5 +1,5 @@
 #!/bin/sh
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 # \
 if type -fp port-tclsh >/dev/null; then exec port-tclsh "$0" "$@"; else exec /usr/bin/tclsh "$0" "$@"; fi
 #
