@@ -46,7 +46,7 @@ build.args-append \
     DEFAULT_CC="${configure.cc}" CC="${configure.cc}" \
     DEFAULT_CXX="${configure.cxx}" CXX="${configure.cxx}" \
     LDLIBSXX=-stdlib=${configure.cxx_stdlib} \
-    prefix="${prefix}"
+    prefix="${prefix}" V=1
 
 destroot.args-append \
     DEFAULT_CC="${configure.cc}" CC="${configure.cc}" \
