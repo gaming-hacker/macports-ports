@@ -5,6 +5,9 @@ PortGroup           perl5 1.0
 
 perl5.branches  5.26
 perl5.setup         IPC-Cmd 1.00 ../by-authors/id/B/BI/BINGOS/
+
+perl5.setup         IPC-Cmd 1.00 ../../authors/id/B/BI/BINGOS/
+
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         finding and running system commands made easy

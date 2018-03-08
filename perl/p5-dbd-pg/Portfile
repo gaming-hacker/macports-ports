@@ -4,6 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches  5.26
+
 perl5.setup         DBD-Pg 3.7.4
 license             {Artistic-1 GPL}
 categories          perl databases
@@ -73,5 +74,4 @@ if {![variant_isset postgresql92] && \
     ![variant_isset postgresql95] && \
     ![variant_isset postgresql96]} {
         default_variants    +postgresql96
-}
 }

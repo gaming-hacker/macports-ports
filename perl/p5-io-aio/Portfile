@@ -4,9 +4,13 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 epoch               1
+
 perl5.branches  5.26
 perl5.setup         IO-AIO 4.4 ../by-authors/id/M/ML/MLEHMANN
 license             {Artistic-1 GPL} BSD
+
+perl5.setup         IO-AIO 4.4 ../../authors/id/M/ML/MLEHMANN
+license             {Artistic-1 GPL}
 
 platforms           darwin
 maintainers         nomaintainer
