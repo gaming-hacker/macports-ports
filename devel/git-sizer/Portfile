@@ -1,0 +1,33 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem              1.0
+PortGroup               github 1.0
+
+github.setup            github git-sizer 1.0.0 v
+categories              devel
+platforms               darwin
+supported_archs         noarch
+maintainers             @gerardsoleca openmaintainer
+license                 MIT
+
+description             Compute various size metrics for a Git repository, \
+                        flagging those that might cause problems
+long_description        ${description}
+
+github.tarball_from     releases
+distname                ${name}-${version}-${platforms}-amd64
+
+checksums           rmd160  d1ffb1dde008e8b22167b79dc54a0b5f586ccd32 \
+                    sha256  f3a1dec9bc2fdcdabef23bfa9213272102a1c3873ef644d7d741289f6bc10ef3 \
+                    size    1188103
+
+use_configure no
+build {}
+
+set extract_dir     ${worksrcpath}/${github.author}-${name}-${version}
+use_zip yes
+extract.dir         ${extract_dir}
+
+destroot {
+    xinstall -m 775 ${extract_dir}/git-sizer ${destroot}${prefix}/bin
+}
