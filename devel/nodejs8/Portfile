@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
 
-name                    nodejs9
-version                 9.8.0
+name                    nodejs8
+version                 8.10.0
 
 categories              devel net
 platforms               darwin
@@ -18,14 +18,14 @@ long_description        Node's goal is to provide an easy way to build scalable 
                         Machine or Python's Twisted. Node takes the event model a bit further-it \
                         presents the event loop as a language construct instead of as a library.
 
-conflicts               nodejs4 nodejs5 nodejs6 nodejs7 nodejs8
+conflicts               nodejs4 nodejs5 nodejs6 nodejs7 nodejs9
 
 homepage                http://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  47808ceb60ff6432cb3dd6379c4d306ac9bf7ae6 \
-                        sha256  0706bb49e4fa5fa64c6c51941becb4b3854a6c0335425d7312bc086c37b41eac
+checksums               rmd160  bc968133abcec4b0856033a383e9797cafe1e3b5 \
+                        sha256  b72d4e71618d6bcbd039b487b51fa7543631a4ac3331d7caf69bdf55b5b2901a
 
 distname                node-v${version}
 
@@ -123,6 +123,8 @@ destroot {
 
 # install headers
     xinstall -m 644 -W ${worksrcpath} \
+        src/base-object-inl.h \
+        src/base-object.h \
         src/env-inl.h \
         src/env.h \
         src/handle_wrap.h \
@@ -206,4 +208,4 @@ if {${os.major} < 11} {
 
 livecheck.url       ${homepage}dist/
 livecheck.type      regex
-livecheck.regex     {v(\d+\.\d+\.\d+)}
+livecheck.regex     {v(8\.\d+\.\d+)}
