@@ -53,8 +53,8 @@ post-patch {
                    ${worksrcpath}/deps/cares/gyp_cares \
                    ${worksrcpath}/deps/v8/gypfiles/gyp_v8 \
                    ${worksrcpath}/deps/v8/tools/objdump-v8 \
-                   ${worksrcpath}/deps/v8/tools/mingw-generate-makefiles.sh \
-                   [rec_glob ${worksrcpath} *.py]] {
+    ${worksrcpath}/deps/v8/tools/mingw-generate-makefiles.sh \
+  [rec_glob ${worksrcpath} *.py]] {
         reinplace -q "s|/usr/bin/env python|${configure.python}|" ${f}
     }
     foreach gypfile [rec_glob ${worksrcpath} *.gyp*] {
@@ -64,14 +64,14 @@ post-patch {
     reinplace "s|python|${configure.python}|" ${worksrcpath}/deps/v8/gypfiles/toolchain.gypi
 }
 
-configure.args-append   --without-npm
-configure.args-append   --with-intl=small-icu
-configure.args-append   --shared-openssl
-configure.args-append   --shared-openssl-includes=${prefix}/include/openssl
-configure.args-append   --shared-openssl-libpath=${prefix}/lib
+configure.args-append   --without-npm \
+  --with-intl=small-icu \
+  --shared-openssl \
+  --shared-openssl-includes=${prefix}/include/openssl \
+  --shared-openssl-libpath=${prefix}/lib
 
 # V8 only supports ARM and IA-32 processors
-supported_archs         i386 x86_64
+supported_archs         x86_64
 
 universal_variant       no
 
@@ -80,7 +80,7 @@ configure.ccache        no
 
 test.run                yes
 
-use_parallel_build      no
+use_parallel_build      yes
 
 switch $build_arch {
     i386 {
