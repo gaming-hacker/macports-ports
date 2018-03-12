@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches  5.26
-
 perl5.setup         MHonArc 2.6.19 ../../authors/id/E/EH/EHOOD/
+
 license             GPL
 maintainers         nomaintainer
 supported_archs     noarch
@@ -35,4 +35,5 @@ destroot {
             -docpath ${destroot}${prefix}/share/doc/mhonarc \
             -manpath ${destroot}${prefix}/share/man \
             -perl ${perl5.bin}"
+  }
 }

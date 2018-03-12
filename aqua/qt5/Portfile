@@ -1,0 +1,1800 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+
+name                qt5
+
+categories          aqua
+platforms           macosx
+maintainers         {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
+
+# for OpenSSLException, see source and header files in src/network/ssl of qtbase
+license             {LGPL-3 GPL-3 OpenSSLException}
+
+homepage            http://qt.io
+
+version             5.10.0
+set middle_name     everywhere
+if { ${subport} eq "${name}-qtwebkit" ||
+     ${subport} eq "${name}-qtwebkit-examples" ||
+     ${subport} eq "${name}-qtwebkit-docs" } {
+    version         5.9.1
+    set middle_name opensource
+}
+
+set just_want_qt5_variables yes
+PortGroup qt5 1.0
+unset just_want_qt5_variables
+
+# get Qt's version numbers
+set branch          [join [lrange [split ${version} .] 0 1] .]
+set qt_major        [lindex [split ${version} .] 0]
+
+# see https://wiki.qt.io/New_Features_in_Qt_5.7
+PortGroup           cxx11 1.1
+
+master_sites        \
+    http://download.qt.io/official_releases/qt/${branch}/${version}/submodules
+
+# file sizes are significantly smaller using xz
+if { ${subport} ne ${name} && ${subport} ne "${name}-docs" } {
+    use_xz yes
+}
+
+conflicts qt3 qt3-mac
+# conflict with all other version of qt5
+foreach {qt_test_name qt_test_info} [array get available_qt_versions] {
+    if {${name} ne ${qt_test_name}} {
+        conflicts-append [lindex ${qt_test_info} 0]
+    }
+}
+
+############################################################################### Modules Not Considered
+#
+# No qtactiveqt      (Windows Only)
+# No qtandroidextras (Android Only)
+# No qtwayland       (Linux Only)
+# No qtx11extras     (X11 Only)
+# No qtwinextras     (Windows Only)
+#
+###############################################################################
+
+############################################################################### Finding Dependencies
+#
+# grep -r "%dependencies" *
+# find ./ -name sync.profile
+#
+# grep -r qtCompileTest *
+#
+# find ./ -name config.tests
+#
+# find ./ -name Find\*.cmake
+#
+# grep -r qtHaveModule *
+#
+# grep -r packagesExist *
+#
+# port provides `find ./ -name \*.dylib -exec otool -L {} \; | grep /opt/local/libexec/qt5 | cut -d ' ' -f1` | cut -d : -f2 | sort -u
+# port provides `find ./ -name \*.dylib -exec otool -L {} \; | grep /opt/local/lib/ | cut -d ' ' -f1` | cut -d : -f2 | sort -u
+#
+# http://code.qt.io/cgit/qt/qt5.git/tree/.gitmodules?h=5.10
+#
+###############################################################################
+
+############################################################################### Notes
+#
+# qtconnectivity checks for bluetooth libraries
+#    bluez and bluez_le (Linux Only)
+#
+# qtconnectivity depends on
+#    qtandroidextras    (Android Only)
+#
+# qtserialport depends on
+#    ntddmodm           (Windows Only)
+#
+# qttools depends on
+#    qtactiveqt         (Windows Only)
+#
+# qtwebkit has tests for libraries in:
+#     Tools/qmake/mkspecs/features/configure.prf
+#     Tools/qmake/config.tests/
+#
+###############################################################################
+
+############################################################################### TODO
+#
+# TODO: possible to trim dependencies of qtbase?
+#
+###############################################################################
+
+############################################################################### Module Format
+#
+# "Qt Module Name" {
+#     checksum, rmd160
+#     checksum, sha256
+#     dependencies, build
+#     dependencies, lib
+#     dependencies, Qt module name
+#     Qt components provided
+#     included in "standard" installation of Qt (empty string is no, explanation string is yes)
+#     variant overrides
+#     revision number
+#     license replacement
+# }
+#
+# module info found at http://doc.qt.io/qt-5.10/qtmodules.html
+#
+###############################################################################
+array set modules {
+    qt3d {
+        1b94473f2879a5722aa88c6e6d49d4c1deeb077f
+        12457e7227c793274329371c60b9028ab3e44db837e875e2c460367c1dbd34ab
+        ""
+        "port:assimp"
+        "qtbase qtdeclarative qtimageformats qtgamepad"
+        {"Qt 3D"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtbase {
+        d6f9ab8526ebe50791b9b948930806dc8b3be73b
+        fd5578cd320a13617c12cf2b19439386b203d6d45548e855f94e07be9829f762
+        ""
+        "port:zlib port:libpng port:jpeg port:freetype path:bin/dbus-daemon:dbus port:tiff port:libmng path:lib/pkgconfig/glib-2.0.pc:glib2 port:icu port:pcre2 port:harfbuzz"
+        ""
+        {"Qt Core" "Qt GUI" "Qt Network" "Qt SQL" "Qt Test" "Qt Widgets" "Qt Concurrent" "Qt D-Bus" "Qt OpenGL" "Qt Platform Headers" "Qt Print Support" "Qt XML"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtcanvas3d {
+        dd4d3c00cf8dc8e145623770c6e8a7e41e7ca739
+        d289626f06236f2c0e3065416fd6a8a72b8895cb5253ee2d9b6320df5b452987
+        ""
+        ""
+        "qtdeclarative"
+        {"Qt Canvas 3D"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtcharts {
+        1a308f61bbd6aec4d849969d18d09a3a71cef9df
+        12ce2c4a8467d349ecfdba831cc03c539f2b207aa21082a4e1043dcf8f1b31ef
+        ""
+        ""
+        "qtbase qtdeclarative qtmultimedia"
+        {"Qt Charts"}
+        "GPLv3 license only"
+        "variant overrides: "
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
+    }
+    qtconnectivity {
+        9e71190290667b9aeb17e7464c46a4decfb74670
+        2e3fe2e872449065ec3326955fb97c629106f62b9441e8dfd2e0adfc9fb169a6
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Bluetooth" "Qt NFC"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtdatavis3d {
+        fccf07827153d1432d865dedb9cb1d9018524ba4
+        9206c4d7a093a20b57d0e5013aadd6fc52bccb321eb0d3329efccc44481f6618
+        ""
+        ""
+        "qtbase qtdeclarative qtmultimedia"
+        {"Qt Data Visualization"}
+        "GPLv3 license only"
+        "variant overrides: "
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
+    }
+    qtdeclarative {
+        31620cce613a92d6933c827bd4759443cacb5a39
+        5ccb4dbca5046554037bcffbb05918f6efcff321c44cd1c39b1c47be7e67711e
+        "port:python27"
+        ""
+        "qtbase qtsvg qtxmlpatterns"
+        {"Qt QML" "Qt Quick" "Qt Quick Layouts" "Qt Quick Widgets"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtdoc {
+        304a217c9b6c43e523d6c2cad774f5231d443c5a
+        d6c9b058ce185c6df1c238692746549de889a98864ee5bdcafa95b9bf18ce407
+        ""
+        ""
+        "qtdeclarative qttools sqlite-plugin"
+        {"Qt Reference Documentation"}
+        "requires all documentation"
+        "variant overrides: ~examples ~tests ~debug noarch ~docs"
+        "revision 0"
+        "License: "
+    }
+    qtgamepad {
+        a5300a34821dd0b0fc04d7ca560b4265281ce29f
+        537550f988a71942392b3df21044e4cd566378bad2d9727663c9e8e7743e87e6
+        ""
+        "port:libsdl2"
+        "qtbase qtdeclarative"
+        {"Qt Gamepad"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtgraphicaleffects {
+        b4aeade2f04fcad002612cdcc862a100a8e04a77
+        97b969112f21161fc924c1b1c98f1dad2bf7027e31b27ea9eec532db7b045e30
+        ""
+        ""
+        "qtdeclarative"
+        {"Qt Graphical Effects"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtimageformats {
+        aa80332b81c908c8b04f39b654b3cd2575bf0848
+        91bfb884f965af6d6c187f8ac4f9bb1f9fe0af59cbbe36e035ee5f5510b7f4fc
+        ""
+        "port:jasper port:libmng port:tiff port:webp"
+        "qtbase"
+        {"Qt Image Formats"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtlocation {
+        0a76830417abf3fd8022f2bdd4c7df6ba5e5481b
+        d84dcec7cfbc99a13e048f935783b0c2e1cb540defc82d77ac869a5b76aa85c7
+        ""
+        ""
+        "qtbase qtdeclarative qtquickcontrols qtquickcontrols2 qtserialport"
+        {"Qt Location" "Qt Positioning"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtmacextras {
+        8a048bd355e769d449050e3b532316eb317d6a1d
+        63fd3469c2e003638efb0aecd27ad94ad412123cda6116372c81256986b2c822
+        ""
+        ""
+        "qtbase"
+        {"Qt Mac Extras"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtmultimedia {
+        ac464e9289e75bb72134f452d1aaf10db7cfd316
+        008333fdc3bc2d87977392397d38ebaae1329059997319cb1b0613fb6489806f
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Multimedia" "Qt Multimedia Widgets"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtnetworkauth {
+        13922ff0ee9b8b06e90a6622f1fd260f2c0f6c5f
+        ecdafbe8fabce386f1aab2bcf6a0d9fd6a1a9083b1554645bc45267f7188d8d2
+        ""
+        ""
+        "qtbase"
+        {"Qt Network Authorization"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtpurchasing {
+        6e70230e12a5694d749548b42386049888371fea
+        8c773d399cab724b02cb1d7c9d352b181bb4d6f08bd2672f65da308c18d57d56
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Purchasing"}
+        "in-app purchases is of limited value on desktop"
+        "variant overrides: "
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
+    }
+    qtquickcontrols {
+        07b91a62f8887d2007c1432937e1d3d01f7a1da0
+        a133ef7724d5d2eef4085920d463af78024f327d0ae320f24202a51b554e6129
+        ""
+        ""
+        "qtdeclarative qtgraphicaleffects"
+        {"Qt Quick Controls" "Qt Quick Dialogs" "Qt Quick Extras"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtquickcontrols2 {
+        98d0e5a9cdff2e475d15d7506bc4ff3301c24303
+        818770247a3a211714dfc17f7f5a07c6cf49999ff405d36fd00fab1d5559a1a1
+        ""
+        ""
+        "qtgraphicaleffects qtimageformats"
+        {"Qt Quick Controls 2"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtremoteobjects {
+        39ef0bf0962ed73581b2f878ea290338d94f296e
+        df36a69fdbedf9e3612b60a22222c44a4b227d09be6f543e478dac8ea70f6e05
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Remote Objects"}
+        "technology preview module"
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtscript {
+        697b731696cefc883e4fe8db75baa1e4ab358fe0
+        6cf2f2f09ccafa9c9cd5d16641ae2b75b7f98947de6ec0ec1717489f3a09cafc
+        ""
+        ""
+        "qtbase qttools"
+        {"Qt Script" "Qt Script Tools"}
+        "deprecated in favor QJS* in Qt QML"
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtscxml {
+        e040e15b81ceb53738438818a1c9d74d5ce1b1c6
+        4bbb19d6b169ab04aec62d09ed4324639cda13d2c25cf584c9061c5d9af65890
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt SCXML"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtsensors {
+        540ffd9cc3e87748a30983be9cb27432227eb838
+        cd98c5afb25bdb243b03a8e1da1a9643fbad334549c8128328446d0818fe3971
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Sensors"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtserialbus {
+        4cee157ebd0bd01faae83ca63f6a18aeb0429f0b
+        3f594784d952dd40e6d7740cd6267a9259a877330cecd83feebef81f5200391b
+        ""
+        ""
+        "qtserialport"
+        {"Qt Serial Bus"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtserialport {
+        4812afa01ccf90d0d45d8c69ae383a2fcdbdeb88
+        e580fed9ffd2a978df72775205a96b21d619b5fd5f5754f653864a206e831457
+        ""
+        ""
+        "qtbase"
+        {"Qt Serial Port"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtspeech {
+        171a335f111de39ef484589579aaf7436a102cb9
+        79159e1a9502ccb67145e0f6bdc43e3c2248835ff22be04a10c18db15a845ac1
+        ""
+        ""
+        "qtbase qtdeclarative qtmultimedia"
+        {"Qt Speech"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtsvg {
+        3b14b32963d5aab1764ed3d96e408129261a2119
+        4a2aa7cae70a3156846655422b9ed884d8b08b3707b95858e49c7cf9afe5e7b0
+        ""
+        ""
+        "qtbase"
+        {"Qt SVG"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qttools {
+        3becf8ae2a7e27255a8043fa3768d1f2c6b698e2
+        1ff5dc747b7935de85257673424dfdffb231f3409f09a5f833d37e2f625cfe32
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt Designer" "Qt Help" "Qt UI Tools"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qttranslations {
+        b1241f6cef22688f73a10548dd956090e6b7ede5
+        ec4dbd3601afe06d1814f4bc81af9cffbbe7de2b9f4aef4eb4595b049c8eb9be
+        ""
+        ""
+        "qttools"
+        {"translation files"}
+        ""
+        "variant overrides: ~examples ~tests ~debug noarch ~docs"
+        "revision 0"
+        "License: "
+    }
+    qtvirtualkeyboard {
+        73761a7a6db46bc5a909c7a2374ea6c8848fb4c0
+        2c2ddd65a335ecdd15e9ff1032a1634330e0d2359760f2a968b21dbc9f4e0b57
+        ""
+        "port:hunspell"
+        "qtbase qtdeclarative qtsvg qtmultimedia qtquickcontrols"
+        {"Qt Virtual Keyboard"}
+        "GPLv3 license only"
+        "variant overrides: "
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
+    }
+    qtwebchannel {
+        676da446eef3fd240b00a962cdde0fa077ba8a37
+        f22424dc6235110bb7f587b01ce692738af1497fba2a9739fa90a5e57ba135a3
+        ""
+        ""
+        "qtbase qtdeclarative qtwebsockets"
+        {"Qt WebChannel"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtwebengine {
+        c7f1f40f0bfea822aa2dbbad079dbdf797d0f5b6
+        a8bf5989ef847a249bbc1f391743a36971825b896747d073e30dbcdefc9567f9
+        "port:python27 port:py27-ply port:ninja"
+        ""
+        "qtquickcontrols qtwebchannel qtlocation qttools"
+        {"Qt WebEngine"}
+        "very large and relatively new"
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtwebglplugin {
+        d3fb1ab022bdc870f4d609360112df349039f5c7
+        670a75984698d51e0d1182a999e07d26021b3c01ba0e69ed2c470c4a6959fc41
+        ""
+        ""
+        "qtbase qtwebsockets qtdeclarative"
+        {"QPA plugin for running an application via a browser using streamed WebGL commands"}
+        "technology preview module; GPLv3 license only"
+        "variant overrides: ~docs ~examples"
+        "revision 0"
+        "License: {GPL-3 OpenSSLException}"
+    }
+    qtwebkit {
+        72cab2a8473801dcbbe8fc41ecf8dc45775f8b18
+        28a560becd800a4229bfac317c2e5407cd3cc95308bc4c3ca90dba2577b052cf
+        "port:python27"
+        "port:fontconfig port:icu port:leveldb port:webp port:libxml2 port:libxslt port:zlib port:sqlite3"
+        "qtbase qtdeclarative qtlocation qtmultimedia qtsensors qtwebchannel qtxmlpatterns"
+        {"Qt WebKit" "Qt WebKit Widgets"}
+        "community support only (use Qt WebEngine)"
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtwebkit-examples {
+        21e9ec7d6b6ebe0e96dde0f59324a814b57048bc
+        e4ce4de6b468243abad2baabbe8ddfb05d25b186529bfe88cb8662fc983f54d0
+        ""
+        ""
+        "qtwebkit qtdeclarative qtlocation qttools qtwebchannel qtwebengine"
+        {"examples for Qt WebKit"}
+        "community support only (use Qt WebEngine)"
+        "variant overrides: ++examples ~docs "
+        "revision 1"
+        "License: "
+    }
+    qtwebsockets {
+        e3674dcf35d0165ce0537f328fc3f950c71844d2
+        17ab0fa22007e5485bf98cb5fef5387628274548d5e96923f45d097838f49403
+        ""
+        ""
+        "qtbase qtdeclarative"
+        {"Qt WebSockets"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtwebview {
+        c2a5ec2c4ed37cea238cc86336ce8153f3cc2138
+        aa8f69e507467f8d0c1ccb6f5cb4d8a6b41af2f9f358e1813a4d0875d874a5a4
+        ""
+        ""
+        "qtdeclarative qtwebengine"
+        {"Qt WebView"}
+        "new in 5.6.0; requires qtwebengine"
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+    qtxmlpatterns {
+        08834dd53ccedb25889c58094a68701cd1fdef49
+        b08abca6227e942a128e478b2eb81416c40925418d89064ee151c155e3d203c3
+        ""
+        ""
+        "qtbase"
+        {"Qt XML Patterns"}
+        ""
+        "variant overrides: "
+        "revision 0"
+        "License: "
+    }
+}
+
+############################################################################### SQL Plugin Format
+#
+# {
+#     variant name
+#     dependency, library
+#     include directory
+#     library directory
+#     library name
+#     obsolete? (empty string is no)
+# }
+#
+###############################################################################
+array set sql_plugins {
+    {sqlite SQLite "revision 0"} {
+        {
+            "sqlite3"
+            "port:sqlite3"
+            "${prefix}/include"
+            "${prefix}/lib"
+            "-lsqlite3"
+            ""
+        }
+    }
+    {psql PostgreSQL "revision 0"} {
+        {
+            "postgresql96"
+            "port:postgresql96"
+            "${prefix}/include/postgresql96"
+            "${prefix}/lib/postgresql96"
+            "-lpq"
+            ""
+        }
+        {
+            "postgresql95"
+            "port:postgresql95"
+            "${prefix}/include/postgresql95"
+            "${prefix}/lib/postgresql95"
+            "-lpq"
+            ""
+        }
+        {
+            "postgresql94"
+            "port:postgresql94"
+            "${prefix}/include/postgresql94"
+            "${prefix}/lib/postgresql94"
+            "-lpq"
+            ""
+        }
+        {
+            "postgresql84"
+            "port:postgresql84"
+            "${prefix}/include/postgresql84"
+            "${prefix}/lib/postgresql84"
+            "-lpq"
+            ""
+        }
+    }
+    {mysql MySQL "revision 0"} {
+        {
+            "mariadb55"
+            "port:mariadb"
+            "${prefix}/include/mariadb/mysql"
+            "${prefix}/lib/mariadb/mysql"
+            "-lmysqlclient_r"
+            ""
+        }
+        {
+            "mysql57"
+            "port:mysql57"
+            "${prefix}/include/mysql57/mysql"
+            "${prefix}/lib/mysql57/mysql"
+            "-lmysqlclient_r"
+            ""
+        }
+        {
+            "mysql56"
+            "port:mysql56"
+            "${prefix}/include/mysql56/mysql"
+            "${prefix}/lib/mysql56/mysql"
+            "-lmysqlclient_r"
+            ""
+        }
+    }
+}
+
+# because CPATH is set, pkgconfig does not include ${prefix}/lib and ${prefix}/include even when requested
+# this means that files in ${prefix}/lib and ${prefix}/include are the *last* to be found
+# this causes problems when there are files in ${worksrpath} that are unintentionally found instead
+configure.env-append \
+    PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 \
+    PKG_CONFIG_ALLOW_SYSTEM_LIBS=1
+build.env-append \
+    PKG_CONFIG_ALLOW_SYSTEM_CFLAGS=1 \
+    PKG_CONFIG_ALLOW_SYSTEM_LIBS=1
+
+# Qt 5.9 requires LSCopyDefaultApplicationURLForURL, which was introduced in macOS 10.10
+# see https://developer.apple.com/library/content/documentation/General/Reference/APIDiffsMacOSX10_10SeedDiff/frameworks/CoreServices.html
+if { ${os.major} < 14 } {
+    pre-fetch {
+        ui_error "${subport} requires OS X 10.10 or later"
+        return -code error "incompatible OS version"
+    }
+}
+
+foreach {module module_info} [array get modules] {
+
+    set revision_string [string trim [lindex ${module_info} 8]]
+    set revision_string [string range ${revision_string} 1+[string last " " ${revision_string}] end]
+
+    subport ${name}-${module} {
+
+        distname        ${module}-${middle_name}-src-${version}
+
+        if { ${revision_string} ne "0" } {
+            revision ${revision_string}
+        }
+
+        # see https://bugreports.qt.io/browse/QTBUG-35514
+        build.target
+
+        checksums                              \
+            rmd160  [lindex ${module_info} 0]  \
+            sha256  [lindex ${module_info} 1]
+
+        set license_string [lindex ${module_info} 9]
+        set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
+        set license_string [string trim  ${license_string}]
+
+        if { ${license_string} ne "" } {
+            license {*}${license_string}
+        }
+
+        foreach deps [lindex ${module_info} 2] {
+            depends_build-append [subst ${deps}]
+        }
+
+        foreach deps [lindex ${module_info} 3] {
+            depends_lib-append [subst ${deps}]
+        }
+
+        foreach qtdeps [lindex ${module_info} 4] {
+            if { ${qtdeps} ne "qtbase" } {
+                depends_lib-append port:${name}-${qtdeps}
+            }
+        }
+
+        description       Tools and Module(s) for Qt Tool Kit ${qt_major}
+
+        set modules_provided_list [lindex ${module_info} 5]
+        if { [llength ${modules_provided_list}] == 1 } {
+            set modules_provided_join [lindex ${modules_provided_list} 0]
+        } elseif { [llength ${modules_provided_list}] == 2 } {
+            set modules_provided_join [join ${modules_provided_list} " and "]
+        } else {
+            set modules_provided_join [join [list [join [lrange ${modules_provided_list} 0 end-1] ", "] [lindex ${modules_provided_list} end]] ", and "]
+        }
+
+        long_description  "Tools and Module(s) for Qt Tool Kit ${qt_major}: ${modules_provided_join}"
+
+        if { ${module} eq "qtbase" } {
+            # this subport uses configure script (NOT qmake)
+            PortGroup           qt5 1.0
+
+            if { ${os.platform} ne "darwin" } {
+                pre-fetch {
+                    ui_warn "${subport} is untested on \"${os.platform}\"."
+                }
+            }
+
+            if { [variant_isset universal] } {
+                pre-fetch {
+                    ui_warn "Multiple architectures is not a Reference Configuration for Qt."
+                    ui_warn "See http://doc.qt.io/qt-5/supported-platforms.html#reference-configurations"
+                }
+            }
+
+            # https://codereview.qt-project.org/#/c/141654/
+            patchfiles-append patch-add_sdk.diff
+
+            # undo part of https://codereview.qt-project.org/#/c/140954/
+            # .pc files still needed by some port
+            # see https://github.com/Homebrew/homebrew-core/blob/master/Formula/qt5.rb
+            patchfiles-append patch-pc_files.diff
+
+            # see http://stackoverflow.com/questions/14506151/invalid-symbol-redefinition-in-inline-asm-on-llvm
+            # only runs test code on 32-bit systems
+            patchfiles-append patch-tst_benchlibcallgrind.diff
+
+            # avoid non-standard C++ that Xcode Clang accepts but other compilers do not
+            # see http://lists.llvm.org/pipermail/llvm-bugs/2017-January/053481.html
+            # see https://gcc.gnu.org/bugzilla/show_bug.cgi?id=11764
+            patchfiles-append patch-qualified_reference.diff
+
+            # find the Rez program
+            patchfiles-append patch-find_rez.diff
+            post-patch {
+                reinplace \
+                    "s|__MACPORTS_Rez__|[exec xcrun --find Rez]|g" \
+                    mkspecs/common/mac.conf \
+                    mkspecs/features/mac/rez.prf
+            }
+
+            #-----------------------------------------------------------------------------
+            # qtbase is used for:
+            #    1) building qtbase
+            #    2) building MacPorts projects via qmake
+            #    3) building end-user projects
+            #
+            # 1 & 2 require consistency with the MacPorts environment
+            # 3 requires consistency with the default Qt installation
+            #
+            # 2 can be achieved via environment variables
+            #    (e.g. QMAKE_MACOSX_DEPLOYMENT_TARGET=${macosx_deployment_target})
+            #
+            # the only way 3 can be achieved is if no changes are made to the build system
+            #
+            # the following is an attempt to achieve 1 without destroying 3
+            #-----------------------------------------------------------------------------
+
+            # save default spec files
+            post-extract {
+                copy ${worksrcpath}/mkspecs ${worksrcpath}/mkspecs-save
+            }
+
+            # ensure qmake builds for the correct architecture
+            patchfiles-append patch-qmake_flags.diff
+            post-patch {
+                if {[variant_exists universal] && [variant_isset universal]} {
+                    set arch_replace_cxx [portconfigure::configure_get_universal_cflags]
+                    set arch_replace_ld  [portconfigure::configure_get_universal_ldflags]
+                } else {
+                    set arch_replace_cxx [portconfigure::configure_get_archflags cxx]
+                    set arch_replace_ld  [portconfigure::configure_get_ld_archflags]
+                }
+                reinplace \
+                    "s|__MACPORTS_CXX_ARCH_FLAGS__|${arch_replace_cxx}|g" \
+                    ${worksrcpath}/qmake/Makefile.unix.macos
+                reinplace \
+                    "s|__MACPORTS_LD_ARCH_FLAGS__|${arch_replace_ld}|g" \
+                    ${worksrcpath}/qmake/Makefile.unix.macos
+            }
+
+            # respect MacPorts build variables
+            patchfiles-append patch-mkspecs.diff
+
+            # respect configure.compiler
+            if { ${configure.compiler} eq "clang" } {
+                # let xargs find correct compiler (default behaviour)
+                post-patch {
+                    # let xargs find correct compiler
+                    reinplace \
+                        "s|__MACPORTS_CC__|clang|g" \
+                        ${worksrcpath}/mkspecs/common/clang.conf
+
+                    reinplace \
+                        "s|__MACPORTS_CXX__|clang++|g" \
+                        ${worksrcpath}/mkspecs/common/clang.conf
+                }
+            } else {
+                post-patch {
+                    reinplace \
+                        "s|__MACPORTS_CC__|${configure.cc}|g" \
+                        ${worksrcpath}/mkspecs/common/clang.conf
+
+                    reinplace \
+                        "s|__MACPORTS_CXX__|${configure.cxx}|g" \
+                        ${worksrcpath}/mkspecs/common/clang.conf
+                }
+            }
+
+            if { [string match macports-clang-* ${configure.compiler}] && [vercmp ${xcodeversion} "7.0"] >= 0 } {
+                # non-Xcode clang does not seem to be able to understand tbd files
+                # for an explanation of tbd files, see
+                #    http://stackoverflow.com/questions/31450690/why-xcode-7-shows-tbd-instead-of-dylib
+                # see https://trac.macports.org/ticket/53151
+                pre-fetch {
+                    ui_error "This configuration is known to fail"
+                    ui_error "See https://trac.macports.org/ticket/53151"
+                    ui_error "As a workaround, do not set configure.compiler manually"
+                    return -code error "incompatible configuration"
+                }
+            }
+
+            post-patch {
+                # respect configure.cxx_stdlib
+                reinplace \
+                    "s|__MACPORTS_CXX_STDLIB__|${configure.cxx_stdlib}|g" \
+                    ${worksrcpath}/mkspecs/common/clang-mac.conf
+
+                # respect macosx_deployment_target
+                foreach spec {macx-clang macx-g++ macx-icc} {
+                    reinplace \
+                        "s|__MACPORTS_DEPLOYMENT_TARGET__|${macosx_deployment_target}|g" \
+                        ${worksrcpath}/mkspecs/${spec}/qmake.conf
+                }
+
+                #respect configure.optflags
+                reinplace \
+                    "s|__MACPORTS_OPTFLAGS__|${configure.optflags}|g" \
+                    ${worksrcpath}/mkspecs/common/gcc-base.conf
+            }
+
+            if { [vercmp ${xcodeversion} "7.0"] >= 0 } {
+                # starting with Xcode 7.0, the SDK for build OS version might not be available
+                # see https://trac.macports.org/ticket/53597
+
+                set sdks_dir ${developer_dir}/Platforms/MacOSX.platform/Developer/SDKs
+                if { ![file exists ${sdks_dir}/MacOSX${configure.sdk_version}.sdk] } {
+                    configure.sdk_version
+                }
+            }
+
+            # respect configure.sdk_version
+            post-patch {
+                reinplace \
+                    "s|__MACPORTS_MAC_SDK__|macosx${configure.sdk_version}|g" \
+                    ${worksrcpath}/mkspecs/common/macx.conf
+            }
+
+            # respect configure.universal_archs or build_arch
+            post-patch {
+                if {[variant_exists universal] && [variant_isset universal]} {
+                    set arch_replace ${configure.universal_archs}
+                } else {
+                    set arch_replace ${build_arch}
+                }
+                foreach spec {macx-clang macx-g++ macx-icc} {
+                    reinplace \
+                        "s|__MACPORTS_DEVICE_ARCHS__|${arch_replace}|g" \
+                        ${worksrcpath}/mkspecs/${spec}/qmake.conf
+                }
+            }
+
+            # return modified spec files to the default values
+            post-build {
+                foreach conf {clang.conf macx.conf clang-mac.conf gcc-base.conf} {
+                    move -force ${worksrcpath}/mkspecs-save/common/${conf} ${worksrcpath}/mkspecs/common/${conf}
+                }
+                foreach spec {macx-clang macx-g++ macx-icc} {
+                        move -force ${worksrcpath}/mkspecs-save/${spec}/qmake.conf ${worksrcpath}/mkspecs/${spec}/qmake.conf
+                    }
+                }
+
+            # --prefix is not recognized.
+            configure.pre_args-delete       --prefix=${prefix}
+
+            # --disable-dependency-tracking is not recognized.
+            configure.universal_args-delete --disable-dependency-tracking
+
+            # Installation options:
+            #-extprefix     SYSROOT/PREFIX
+            #-hostprefix    EXTPREFIX
+            #-libexecdir    ARCHDATADIR/libexec
+            #-hostbindir    HOSTPREFIX/bin
+            #-hostlibdir    HOSTPREFIX/lib
+            configure.args-append                      \
+                -prefix         ${qt_dir}              \
+                -bindir         ${qt_bins_dir}         \
+                -headerdir      ${qt_includes_dir}     \
+                -libdir         ${qt_libs_dir}         \
+                -archdatadir    ${qt_archdata_dir}     \
+                -plugindir      ${qt_plugins_dir}      \
+                -importdir      ${qt_imports_dir}      \
+                -qmldir         ${qt_qml_dir}          \
+                -datadir        ${qt_data_dir}         \
+                -docdir         ${qt_docs_dir}         \
+                -translationdir ${qt_translations_dir} \
+                -sysconfdir     ${qt_sysconf_dir}      \
+                -examplesdir    ${qt_examples_dir}     \
+                -testsdir       ${qt_tests_dir}        \
+                -hostdatadir    ${qt_host_data_dir}
+
+            # Configure options:
+            configure.args-append \
+                -release          \
+                -opensource       \
+                -confirm-license  \
+                -shared           \
+                -accessibility
+
+            foreach driver { db2 ibase mysql oci odbc psql sqlite sqlite2 tds } {
+                configure.args-append -no-sql-${driver}
+            }
+
+                configure.args-append "-platform ${qt_qmake_spec}"
+
+            # use -Os instead of -O2
+            configure.args-append -optimize-size
+
+            configure.args-append \
+                -no-testcocoon    \
+                -no-gcov          \
+                -force-pkg-config
+
+            # turn off CFG_CLOEXEC if gnulib is installed
+
+            # Third Party Libraries:
+            configure.args-append   \
+                -system-zlib        \
+                -no-mtdev           \
+                -no-journald        \
+                -no-syslog          \
+                -system-libpng      \
+                -system-libjpeg     \
+                -system-freetype    \
+                -system-harfbuzz    \
+                -no-openssl         \
+                -no-libproxy        \
+                -system-pcre        \
+                --disable-xcb       \
+                -glib               \
+                -no-gtk
+
+            # from the configure script:
+            #     NOTE: -optimized-tools is not useful in -release mode.
+
+            # http://lists.qt-project.org/pipermail/development/2017-January/028392.html
+            # Prefer ICU over iconv
+
+            # Additional options:
+            configure.args-append       \
+                {-make libs}            \
+                {-make tools}           \
+                {-nomake examples}      \
+                {-nomake tests}         \
+                -gui                    \
+                -widgets                \
+                -no-rpath               \
+                -verbose                \
+                -cups                   \
+                -no-iconv               \
+                -no-evdev               \
+                -no-tslib               \
+                -icu                    \
+                -no-fontconfig          \
+                -strip                  \
+                -no-pch                 \
+                -no-ltcg                \
+                -dbus-linked            \
+                -no-use-gold-linker     \
+                -no-separate-debug-info \
+                -no-xcb                 \
+                -no-eglfs               \
+                -no-gbm                 \
+                -no-directfb            \
+                -no-linuxfb             \
+                -no-kms                 \
+                -no-mirclient           \
+                -no-libinput            \
+                -no-system-proxies
+
+            # MacOS/iOS options:
+            configure.args-append    \
+                -framework           \
+                -securetransport
+
+            # do not use ${configure.sdk_version}
+            # SDK is recorded in ${qt_mkspecs_dir}/qdevice.pri
+            # SDK may then be removed if Xcode is updated
+            # see https://trac.macports.org/ticket/54044
+            # see https://trac.macports.org/ticket/55195
+            configure.args-append \
+                -sdk macosx
+
+            # configure options that don't show up in configure --help
+            configure.args-append \
+                -no-libudev       \
+                -no-egl
+
+            # Qt builds part of the system using environment provided my MacPorts.
+            # It builds the rest using its own internal environment.
+            # For consistency, clear MacPorts environment.
+            #configure.cxx_stdlib
+            proc portconfigure::should_add_stdlib {} {return false}
+            configure.sdkroot
+            configure.cc_archflags
+            configure.cxx_archflags
+            configure.objc_archflags
+            configure.objcxx_archflags
+            configure.ld_archflags
+            configure.cppflags
+            configure.cflags
+            configure.cxxflags
+            configure.objcflags
+            configure.objcxxflags
+            configure.ldflags
+            configure.pipe  no
+            configure.march
+            configure.mtune
+            configure.universal_ldflags
+            configure.universal_cflags
+            configure.universal_cxxflags
+            configure.universal_cppflags
+
+            # cofigure script looks for perl but doesn't seem to use it for our configuration
+
+            # configure script uses gawk if it can find it,
+            #    so require it for consistency
+            depends_build-append port:gawk
+
+            # unless overridden, configure script uses gmake if it can find it
+            configure.env-append MAKE=${build.cmd}
+
+            variant tests description {Enable tests} {
+                configure.args-replace {-nomake tests} {-make tests}
+            }
+
+            variant examples description {Build examples} {
+                configure.args-replace {-nomake examples} {-make examples}
+            }
+
+            variant debug description {Build both release and debug libraries} {
+                configure.args-replace -release -debug-and-release
+            }
+
+            variant openssl description {Use OpenSSL instead of Secure Transport} {
+                configure.args-delete -securetransport -no-openssl
+                configure.args-append -openssl-linked
+
+                # see https://trac.macports.org/ticket/51358
+                #     for why not a path dependency
+                depends_lib-append port:openssl
+            }
+            default_variants-append +openssl
+
+        } else {
+            # these subports use qmake
+            PortGroup            qmake5 1.0
+
+            # detremint which variants are to be turned off
+            set request_examples true
+            set request_tests    true
+            set def_var          ""
+
+            if { [lsearch -exact [lindex ${module_info} 7] "~universal"] != -1 } {
+                universal_variant no
+            }
+
+            if { [lsearch -exact [lindex ${module_info} 7] "noarch"] != -1 } {
+                supported_archs   noarch
+                universal_variant no
+            }
+
+            if { [lsearch -exact [lindex ${module_info} 7] "~debug"] != -1 } {
+                qt5.debug_variant no
+            }
+
+            if { [lsearch -exact [lindex ${module_info} 7] "~examples"] != -1 } {
+                set request_examples false
+            }
+
+            if { [lsearch -exact [lindex ${module_info} 7] "~tests"] != -1 } {
+                set request_tests    false
+            }
+
+            if { [lsearch -exact [lindex ${module_info} 7] "++examples"] != -1 } {
+                set request_examples true
+                lappend def_var "+examples"
+            }
+
+            if { ${request_examples} } {
+                variant examples description {Build examples} {}
+            }
+
+            if { ${request_tests} } {
+                variant tests description {Enable tests} {}
+            }
+
+            if { ${def_var} ne "" } {
+                default_variants-append ${def_var}
+            }
+
+            # accommodating variant request varies depending on how qtbase was built
+            pre-configure {
+
+                # determine if qmake builds examples by default (set via variants)
+                if {[active_variants ${name}-qtbase examples ""]} {
+                    set base_examples true
+                } else {
+                    set base_examples false
+                }
+
+                # determine if qmake runs tests by default (set via varians)
+                if {[active_variants ${name}-qtbase tests ""]} {
+                    set base_tests true
+                } else {
+                    set base_tests false
+                }
+
+                # determine if the user wants to build examples
+                if { [variant_exists examples] && [variant_isset examples] } {
+                    set this_examples true
+                } else {
+                    set this_examples false
+                }
+
+                # determine if the user wants to run tests
+                if { [variant_exists tests] && [variant_isset tests] } {
+                    set this_tests true
+                } else {
+                    set this_tests false
+                }
+
+                # determine of qmake's default and user requests are compatible; override qmake if necessary
+                if { ${this_examples} && !${base_examples}  } {
+                    configure.args-append "QT_BUILD_PARTS+=\"examples\""
+                }
+
+                if { !${this_examples} && ${base_examples}  } {
+                    configure.args-append "QT_BUILD_PARTS-=\"examples\""
+                }
+
+                if { ${this_tests} && !${base_tests}  } {
+                    configure.args-append "QT_BUILD_PARTS+=\"tests\""
+                }
+
+                if { !${this_tests} && ${base_tests}  } {
+                    configure.args-append "QT_BUILD_PARTS-=\"tests\""
+                }
+            }
+
+            ###############################################################################
+            # Special Cases
+            ###############################################################################
+
+            # special case
+            if { ${module} eq "qtdoc" } {
+                build.target    docs
+                destroot.target install_docs
+
+                # in the process of building the html files, qtdoc looks for all installed modules
+                #    with no clear way to select only a subset
+                # unless a way is found, ReproducibleBuilds (https://trac.macports.org/wiki/ReproducibleBuilds)
+                #    requires qtdoc depend on all the documentation modules
+                foreach {module_doc module_doc_info} [array get modules] {
+                    if { [lsearch -exact [lindex ${module_doc_info} 7] "~docs"] == -1 } {
+                        depends_lib-append port:${name}-${module_doc}-docs
+                    }
+                }
+            }
+
+            # special case
+            if { ${module} eq "qtquickcontrols2" } {
+                # attempts to link against installed version, which causes an error when upgrading 5.8.0->5.9.1
+                qt5.frameworkpaths-append ${worksrcpath}/lib
+            }
+
+            # special case
+            if { ${module} eq "qtdeclarative" } {
+                # attempts to link against installed version, which causes an error when upgrading 5.9.3->5.10.0
+                qt5.frameworkpaths-append ${worksrcpath}/lib
+            }
+
+            # special case
+            if { ${module} eq "qtlocation" } {
+                # qtlocation uses
+                #    Gypsy (https://gypsy.freedesktop.org/wiki/)
+                #    if they can be found
+                # Ensure that test fails even if software is installed
+                post-patch {
+                    foreach test { gypsy } {
+                        reinplace "s|return 0;|return 0;\\\n#error turn off test|g" ${worksrcpath}/config.tests/${test}/main.cpp
+                    }
+                }
+            }
+
+            # special case
+            if { ${module} eq "qtwebkit" } {
+
+                # use MacPorts icu
+                #
+                # qmake uses pkgconfig to look for icu
+                # this feature does not work without "CONFIG += link_pkgconfig"
+                patchfiles-append patch-icu.diff
+
+                # qtwebkit uses
+                #    glx
+                #    libXcomposite
+                #    libXrender
+                #    if they can be found
+                # Ensure that test fails even if software is installed
+                post-patch {
+                    foreach test { glx libXcomposite libXrender } {
+                        reinplace "s|return 0;|return 0;\\\n#error turn off test|g" ${worksrcpath}/Tools/qmake/config.tests/${test}/${test}.cpp
+                    }
+                }
+            }
+
+            # special case
+            if { ${module} eq "qttools" } {
+                # prevent qttools from opportunistically using qtwebkit if it can be found
+                patchfiles-append patch-no_qtwebkit.diff
+
+                variant qtwebkit description {build with QtWebkit support} {
+                    patchfiles-delete patch-no_qtwebkit.diff
+                    depends_lib-append port:${name}-qtwebkit
+                }
+
+                post-extract {
+                    # these folders are installed and conflict with ${name}-qttools-docs
+                    delete ${worksrcpath}/examples/assistant/simpletextviewer/documentation
+                    delete ${worksrcpath}/examples/help/contextsensitivehelp/docs
+                }
+
+                # see #44934 (and #35067 for the qt4-mac version)
+                set framework_list [split ${qt_frameworks_dir} '/']
+                set qt_list        [split ${qt_dir} '/']
+
+                while {[llength ${qt_list}] && [llength ${framework_list}]} {
+                    set var_qt        [lindex $qt_list        0]
+                    set var_framework [lindex $framework_list 0]
+
+                    if { ${var_qt} ne ${var_framework} } {
+                        break
+                    }
+
+                    # remove first element from list
+                    set qt_list        [lreplace ${qt_list}        0 0]
+                    set framework_list [lreplace ${framework_list} 0 0]
+                }
+                set libreplace [string repeat ../ [llength ${qt_list}]][join ${framework_list} /]
+                if { ${libreplace} ne "lib" } {
+                    patchfiles-append patch-shared.diff
+                    post-patch {
+                        reinplace "s|__MACPORTS_FRAMWORK_DIR__|${libreplace}|g" ${worksrcpath}/src/macdeployqt/shared/shared.cpp
+                    }
+                }
+            }
+
+            # special case
+            if { ${module} eq "qtwebengine" } {
+                # UsingTheRightCompiler (https://trac.macports.org/wiki/UsingTheRightCompiler)
+                build.env-append      CXX=${configure.cxx}
+                build.env-append      CC=${configure.cc}
+                configure.args-append QMAKE_LINK=${configure.cxx}
+
+                # the following libraries, even when available, do not seem to affect the build
+                # so turn them off
+                configure.post_args-append  \
+                    --                      \
+                    -no-pulseaudio          \
+                    -no-alsa                \
+                    -qt-webengine-icu       \
+                    -qt-ffmpeg              \
+                    -qt-opus                \
+                    -qt-webp
+
+            }
+
+            # special case
+            if { ${module} eq "qtvirtualkeyboard" } {
+                # do not opportunistically use xcb
+                patchfiles-append patch-qtvirtualkeyboard_noxcb.diff
+            }
+
+            # special case
+            if { ${module} eq "qtgamepad" } {
+                # /System/Library/Frameworks/GameController.framework is 64-bit only
+                if {![variant_isset universal] && ${build_arch} eq "i386" } {
+                    patchfiles-append patch-qtgamepad_i386.diff
+                } else {
+                    patchfiles-append patch-qtgamepad_64bit.diff
+                }
+            }
+
+            # special case
+            if { ${module} eq "qtmultimedia" } {
+
+                # In the file config.tests/openal/openal.pro, defining HEADER_OPENAL_PREFIX means
+                #    include directives use macOS OpenAL Framework.
+                # In src/multimedia/configure.json, pkgconfg is relied upon, which finds MacPorts openal
+                #    for linking.
+                # We must choose one or the other.
+                # see https://trac.macports.org/ticket/54592
+                patchfiles-append patch-qtmultimedia_no_macports_openal.diff
+
+                variant pulseaudio description {Compile PulseAudio support} {
+                    depends_lib-append port:pulseaudio
+                }
+
+                variant gstreamer description {Compile GStreamer support} {
+                    depends_lib-append port:gstreamer1 port:gstreamer1-gst-plugins-base
+                }
+
+                # for commands must follow -spec set in PortGroup
+                configure.post_args-append --
+                if { ![variant_isset pulseaudio] } {
+                    configure.post_args-append -no-pulseaudio
+                }
+                if { ![variant_isset gstreamer] } {
+                    configure.post_args-append -no-gstreamer
+                }
+            }
+
+            # special case
+            if { ${module} eq "qt3d" } {
+                # the following libraries, even when available, do not seem to affect the build
+                # so turn them off
+                configure.post_args-append  \
+                    --                      \
+                    -system-assimp
+            }
+
+            # special case
+            if { ${module} eq "qtwebkit-examples" && ![variant_isset examples] } {
+                # create a dummy file so the port can be successfully activated
+                post-destroot {
+                    xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
+                    set docfile [open ${destroot}${prefix}/share/doc/${subport}/README.txt "w"]
+                    puts ${docfile} "Without the examples variant, no examples are installed"
+                    puts ${docfile} "${long_description}"
+                    close ${docfile}
+                }
+            }
+
+            # special case
+            if { ${module} eq "qtscript" } {
+                # see https://trac.macports.org/ticket/54453
+                patchfiles-append patch-qtscript_ceil.diff
+            }
+        }
+    }
+
+    if { [lsearch -exact [lindex ${module_info} 7] "~docs"] == -1 } {
+
+        subport ${name}-${module}-docs {
+
+            supported_archs   noarch
+            installs_libs     no
+            universal_variant no
+
+            distname        ${module}-${middle_name}-src-${version}
+
+            if { ${revision_string} ne "0" } {
+                revision ${revision_string}
+            }
+
+            description       Documentation for the port ${name}-${module}
+            long_description  ${description}
+
+            build.target    docs
+            destroot.target install_docs
+
+            checksums                              \
+                rmd160  [lindex ${module_info} 0]  \
+                sha256  [lindex ${module_info} 1]
+
+            depends_build-append            \
+                port:${name}-qttools        \
+                port:${name}-sqlite-plugin
+
+            # depend on the modules for which this subport provides documentation
+            # also have the same build dependencies
+            depends_build-append port:${name}-${module}
+            foreach deps [lindex ${module_info} 2] {
+                depends_build-append [subst ${deps}]
+            }
+
+            PortGroup           qmake5 1.0
+
+            qt5.debug_variant   no
+
+            # special cases
+            if { ${module} eq "qttools" } {
+                post-extract {
+                    # generated makefiles assume full Qt was built locally
+                    xinstall -d -m 0755             ${worksrcpath}/bin/
+                    foreach bin {qdoc qhelpgenerator qtattributionsscanner} {
+                        ln -s ${qt_bins_dir}/${bin} ${worksrcpath}/bin/
+                    }
+                }
+            } elseif { ${module} eq "qtwebengine" } {
+                # UsingTheRightCompiler (https://trac.macports.org/wiki/UsingTheRightCompiler)
+                build.env-append      CXX=${configure.cxx}
+                build.env-append      CC=${configure.cc}
+                configure.args-append QMAKE_LINK=${configure.cxx}
+            } elseif { ${module} eq "qtwebkit" } {
+                post-extract {
+                    # without this file, the makefile ${worksrcpath}/qtwebkit/Source/WebCore/Makefile.WebCore.Target
+                    #    keeps generating itself over and over again
+                    # this file is only created when the library is being built, however
+                    xinstall -d -m 0755 ${worksrcpath}/Source/WebCore/generated
+                    touch ${worksrcpath}/Source/WebCore/generated/InspectorBackendCommands.qrc
+                }
+            }
+        }
+    }
+}
+
+# see http://doc.qt.io/qt-5/sql-driver.html for info on building SQL Database Drivers
+foreach {sql_names sql_info} [array get sql_plugins] {
+    set driver          [lindex ${sql_names} 0]
+    set dbms            [lindex ${sql_names} 1]
+    set revision_string [lindex ${sql_names} 2]
+    set revision_string [string range ${revision_string} 1+[string last " " ${revision_string}] end]
+
+    subport ${name}-${driver}-plugin {
+
+        PortGroup qmake5 1.0
+
+        distname        qtbase-${middle_name}-src-${version}
+
+        if { ${revision_string} ne "0" } {
+            revision ${revision_string}
+        }
+
+        checksums                               \
+            rmd160  [lindex $modules(qtbase) 0] \
+            sha256  [lindex $modules(qtbase) 1]
+
+        description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
+        long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}
+
+        # special case
+        if {${driver} eq "sqlite"} {
+        patchfiles-append patch-sql_plugins.diff
+        }
+
+        # if there is more than one version of the database system, create variants for each version
+        if { [llength ${sql_info}] > 1 } {
+
+            set any_variant_set false
+
+            foreach variant_info ${sql_info} {
+
+                set varName [lindex ${variant_info} 0]
+
+                # find every other variant so it can be marked as conflicting
+                set conflicts_list ""
+                foreach variant_info2 ${sql_info} {
+                    set varName2 [lindex ${variant_info2} 0]
+
+                    if { ${varName} ne ${varName2} } {
+                        lappend conflicts_list ${varName2}
+                    }
+                }
+
+                # get only the numbers from the name
+                regexp {[0-9].} ${varName} varVer
+
+                variant ${varName} conflicts ${conflicts_list} description "use version ${varVer} of ${dbms}" {}
+
+                # check if any variant has been set
+                if { [variant_isset ${varName}] } {
+                    set any_variant_set true
+                }
+            }
+
+            # ensure at least one variant is set
+            if { !${any_variant_set} } {
+                default_variants-append +[lindex [lindex ${sql_info} 0] 0]
+            }
+        }
+
+        # as of Qt 5.8, QMAKE_USE is used to find external libraries
+        set use_name [string toupper ${driver}]
+
+        foreach variant_info ${sql_info} {
+            set varName [lindex ${variant_info} 0]
+
+            if { ( [variant_exists ${varName}] && [variant_isset ${varName}] ) || [llength ${sql_info}]==1 } {
+                depends_lib-append [lindex ${variant_info} 1]
+
+                configure.args-append                                                                \
+                    [subst QMAKE_INCDIR_${use_name}+=\"[lindex ${variant_info} 2]\"]  \
+                    [subst QMAKE_LIBDIR_${use_name}+=\"[lindex ${variant_info} 3]\"]  \
+                    [subst QMAKE_LIBS_${use_name}+=\"[lindex ${variant_info} 4]\"]
+            }
+        }
+
+        # see https://trac.macports.org/ticket/53248
+        # N.B.: changing worksrcdir must come *after* changing qt5.top_level
+        qt5.top_level ${worksrcpath}/src/plugins/sqldrivers
+
+        worksrcdir ${worksrcdir}/src/plugins/sqldrivers/${driver}
+    }
+}
+
+subport ${name}-docs {
+    # meta-port to install documentation for various modules
+
+    #revision 0
+
+    description         Documentation for Qt Tool Kit ${qt_major}
+    long_description    Documentation for Qt Tool Kit ${qt_major}
+
+    master_sites
+    distfiles
+    use_configure     no
+    supported_archs   noarch
+    installs_libs     no
+    universal_variant no
+
+    build {}
+
+    # create a dummy file so the port can be successfully activated
+    destroot {
+        xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
+        set docfile   [open ${destroot}${prefix}/share/doc/${subport}/README.txt "w"]
+        puts ${docfile} "Meta-port for ${name}"
+        puts ${docfile} "${long_description}"
+        close ${docfile}
+    }
+
+    foreach {module module_info} [array get modules] {
+        if { [lindex ${module_info} 6] eq "" } {
+            if { [lsearch -exact [lindex ${module_info} 7] "~docs"] == -1 } {
+                depends_run-append port:${name}-${module}-docs
+            }
+        }
+    }
+}
+
+if { ${subport} eq ${name} } {
+    # the main port is Meta-port to install various modules
+
+    #revision 0
+
+    description         Qt Tool Kit ${qt_major}
+    long_description    Qt Tool Kit: A cross-platform framework \
+        (headers, data, and libraries) for writing \
+        cross-platform GUI-based applications.
+
+    master_sites
+    distfiles
+    use_configure     no
+    supported_archs   noarch
+    installs_libs     no
+    universal_variant no
+
+    build {}
+
+    # create a dummy file so the port can be successfully activated
+    destroot {
+        xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${subport}
+        set docfile   [open ${destroot}${prefix}/share/doc/${subport}/README.txt "w"]
+        puts ${docfile} "Meta-port for ${name}"
+        puts ${docfile} "${long_description}"
+        close ${docfile}
+    }
+
+    foreach {module module_info} [array get modules] {
+        if { [lindex ${module_info} 6] eq "" } {
+            depends_run-append port:${name}-${module}
+        }
+    }
+
+    depends_run-append port:${name}-sqlite-plugin
+}
+
+set python_framework ""
+set depends_check ""
+if { [info exists depends_build] } {
+    set depends_check "${depends_check} ${depends_build}"
+}
+if { [info exists depends_lib] } {
+    set depends_check "${depends_check} ${depends_lib}"
+}
+
+foreach deps ${depends_check} {
+    if { [string first ":python27" ${deps}] >= 0 } {
+        # If Qt components use Python, ensure that MacPorts python27 is used
+        #
+        # a better solution would be to force components to use a specific python program
+        # how to accomplish such a thing is not entirely clear
+        #
+        # see #49838
+        #
+        # version 5.5.1 (at least) of qtwebengine must find a python version in the interval [2.7, 3)
+        #    (see mkspecs/features/functions.prf)
+        # versions 5.5.1 of qtdeclarative and qtwebkit also use python with no way of specifying which one
+        #
+        set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+    }
+}
+if { ${python_framework} ne "" } {
+    configure.env-append PATH=${python_framework}/bin:$env(PATH)
+    build.env-append     PATH=${python_framework}/bin:$env(PATH)
+}
+unset python_framework
+
+post-destroot {
+    # see #44204
+    foreach f [glob -nocomplain -tails -directory ${destroot}${qt_libs_dir} *.framework] {
+        set framework [file rootname ${f}]
+
+        set include_list   [split ${qt_includes_dir}   '/']
+        set framework_list [split ${qt_libs_dir} '/']
+
+        while {[llength ${include_list}] && [llength ${framework_list}]} {
+            set var_include   [lindex $include_list   0]
+            set var_framework [lindex $framework_list 0]
+
+            if { ${var_include} ne ${var_framework} } {
+                break
+            }
+
+            # remove first element from list
+            set include_list   [lreplace ${include_list} 0 0]
+            set framework_list [lreplace ${framework_list} 0 0]
+        }
+
+        xinstall -d -m 0755 ${destroot}${qt_includes_dir}
+        ln -s [string repeat ../ [llength ${include_list}]][join ${framework_list} /]/${f}/Headers ${destroot}${qt_includes_dir}/${framework}
+    }
+
+    # .app and non-.app programs are both put in qt_bins_dir
+    # put a link of any .app programs in the ${qt_apps_dir}
+    if { ${qt_bins_dir} ne ${qt_apps_dir} } {
+        xinstall -d -m 0755 ${destroot}${qt_apps_dir}
+        foreach app [glob -nocomplain -tails -directory ${destroot}${qt_bins_dir} *.app] {
+            ln -s ${qt_bins_dir}/${app} ${destroot}${qt_apps_dir}
+        }
+    }
+
+    # put configuration files in places they will be found automatically
+    if { ${qt_libs_dir} ne "${prefix}/lib" } {
+
+        # put link to pkgconfig files in place where pkgconfig will find it
+        # most Qt 5 pkgconfig files begin with Qt5, so link should not conflict with any other Qt installations
+        #    exceptions: Enginio (new in Qt 5.3, removed in Qt 5.7)
+        xinstall -d -m 0755 ${destroot}${prefix}/lib/pkgconfig
+        foreach pcfile [glob -nocomplain -tails -directory ${destroot}${qt_libs_dir}/pkgconfig *.pc] {
+            ln -s ${qt_libs_dir}/pkgconfig/${pcfile} ${destroot}${prefix}/lib/pkgconfig
+        }
+
+        # put link to cmake files in place where cmake will find it
+        # most Qt 5 cmake directories begin with Qt5, so link should not conflict with any other Qt installations
+        #    exceptions: Enginio (new in Qt 5.3, removed in Qt 5.7)
+        xinstall -d -m 0755 ${destroot}${prefix}/lib/cmake
+        foreach cmakedir [glob -type d -nocomplain -tails -directory ${destroot}${qt_libs_dir}/cmake *] {
+            xinstall -d -m 0755 ${destroot}${prefix}/lib/cmake/${cmakedir}
+            foreach cmakefile [glob -tails -directory ${destroot}${qt_libs_dir}/cmake/${cmakedir} *.cmake] {
+                ln -s ${qt_libs_dir}/cmake/${cmakedir}/${cmakefile} ${destroot}${prefix}/lib/cmake/${cmakedir}/
+            }
+        }
+
+        # if cmake finds configuration files in ${prefix}/lib/cmake, CMAKE_CURRENT_LIST_DIR expands to ${prefix}/lib/cmake/xxx
+        # cmake configuration files actually installed in ${qt_cmake_module_dir}/xxx
+        foreach cmakedir [glob -type d -nocomplain -tails -directory ${destroot}${qt_libs_dir}/cmake *] {
+            foreach cmakefile [glob -nocomplain -directory ${destroot}${qt_libs_dir}/cmake/${cmakedir} *.cmake] {
+                reinplace -q "s|\\\${CMAKE_CURRENT_LIST_DIR}|${qt_cmake_module_dir}/${cmakedir}|g" ${cmakefile}
+            }
+        }
+    }
+}
+
+livecheck.type      regex
+livecheck.url       http://download.qt.io/archive/qt/${branch}/
+livecheck.regex     (\\d+(\\.\\d+)+)
+
+foreach {component component_info} [array get qt5pg::qt5_component_lib] {
+
+    set suffix [lindex ${component_info} 3]
+
+    set qt_version            ${version}
+    set qt_version_introduced [lindex ${component_info} 0]
+    set qt_version_removed    [lindex ${component_info} 1]
+
+    if { [vercmp ${qt_version_removed} ${qt_version}] <= 0 } {
+        subport ${name}-${component}${suffix} {
+            PortGroup obsolete 1.0
+            #revision 0
+        }
+
+        if { ${component} ne "qtquick1" && ${component} ne "qtwebkit-examples" && ${component} ne "qtdoc" && ${suffix} ne "-plugin" } {
+            subport ${name}-${component}${suffix}-docs {
+                PortGroup obsolete 1.0
+                #revision 0
+            }
+        }
+    }
+}
+
+# Qt 5.7 will not work on Mac OS X 10.7
+# Qt 5.8 will not work on Mac OS X 10.8
+# Qt 5.9 will not work on Mac OS X 10.9
+# replace qt5-XYZ port with qt5{6,7,8}-XYZ port
+if { ${os.major} < 14 } {
+
+    if { ${os.major} < 12 } {
+        set qt_replace_version 5.6
+    } elseif { ${os.major} < 13 } {
+        set qt_replace_version 5.7
+    } else {
+        set qt_replace_version 5.8
+    }
+
+    set qt_replace_name qt[join [split ${qt_replace_version} .] ""]
+    set qt_replace_port ${qt_replace_name}[string range ${subport} 3 end]
+
+    set suffix [string range ${subport} [string last - ${subport}] end]
+    if { ${suffix} eq "-docs" } {
+        set component [string range ${subport} 4 end-5]
+    } else {
+        set component [string range ${subport} 4 end]
+    }
+
+    if { ${component} eq "" } {
+        replaced_by      ${qt_replace_port}
+        conflicts-delete ${qt_replace_port}
+    } else {
+        set component_info $qt5pg::qt5_component_lib(${component})
+        set qt_version_introduced [lindex ${component_info} 0]
+        set qt_version_removed    [lindex ${component_info} 1]
+
+        if { [vercmp ${qt_version_introduced} ${qt_replace_version}] <= 0 && [vercmp ${qt_version_removed} ${qt_replace_version}] > 0 } {
+            replaced_by      ${qt_replace_port}
+            conflicts-delete ${qt_replace_port}
+        }
+    }
+}
+
+# see https://trac.macports.org/ticket/53789
+# see https://trac.macports.org/wiki/PortfileRecipes#deactivatehack
+# special case
+if { ${subport} eq "qt5-qtdeclarative" } {
+    pre-activate {
+        if {![catch {set installed [lindex [registry_active qt5-qtquickcontrols] 0]}]} {
+            set _version [lindex $installed 1]
+            if {[vercmp $_version 5.7] < 0} {
+                registry_deactivate_composite qt5-qtquickcontrols "" [list ports_nodepcheck 1]
+            }
+        }
+    }
+}

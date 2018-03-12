@@ -3,9 +3,9 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.setup         Test-Simple 1.302130
 perl5.branches      5.26
-perl5.setup         Test-Simple 1.302133
+perl5.setup         Test-Simple 1.302130
+
 platforms           darwin
 maintainers         {devans @dbevans} openmaintainer
 license             {Artistic-1 GPL}

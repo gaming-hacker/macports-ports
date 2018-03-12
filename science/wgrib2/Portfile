@@ -14,7 +14,7 @@ homepage            http://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/
 master_sites        ftp://ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/ \
                     http://www.ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/
 distname            ${name}.tgz.v${version}
-extract.suffix     
+extract.suffix
 set version_iplib   v3.0.0
 set version_g2clib  1.4.0
 checksums           rmd160  1aaef76c16ff871645da243a5799cae6631faea4 \
@@ -25,7 +25,7 @@ long_description   \
     GRIB-2 can reduce the file size by up to 80% (NAM, JPEG2000 compression).
 
 compilers.choose    fc f77 f90
-compilers.setup     require_fortran -dragonegg -clang -llvm
+compilers.setup     require_fortran -clang -llvm
 
 depends_build       port:gctpc
 depends_lib         port:jasper \
@@ -88,7 +88,7 @@ destroot {
         xinstall -m 755 ${worksrcpath}/aux_progs/${b} ${destroot}${prefix}/bin
     }
     if {[file exist ${lipolate}]} {
-        system "ranlib ${ip}/libipolate.a" 
+        system "ranlib ${ip}/libipolate.a"
         xinstall -m 644 ${lipolate} ${destroot}${prefix}/lib
         xinstall -d -m 755 ${destroot}${prefix}/share/doc/${name}
         xinstall -m 644 ${worksrcpath}/README.ipolates ${destroot}${prefix}/share/doc/${name}
