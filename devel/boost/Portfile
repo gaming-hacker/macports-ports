@@ -10,7 +10,7 @@ name            boost
 version         1.66.0
 
 checksums       rmd160  ee5dafdfa49adf50a5333cef1f55dac4f70b4c14 \
-                sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
+sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
                 size    85995778
 
 license         Boost-1
@@ -293,6 +293,7 @@ if {$subport eq $name} {
             patchfiles-append patch-libs-mpi-build-Jamfile.v2.diff
 
             post-destroot {
+             delete file {*}[glob ${destroot}${prefix}/include/boost/python/numpy*]
                 set site_packages [python_dir]
                 xinstall -d ${destroot}${site_packages}/boost
                 xinstall -m 644 ${worksrcpath}/libs/mpi/build/__init__.py \
@@ -312,8 +313,9 @@ if {$subport eq $name} {
             ${destroot}${prefix}/include \
             ${destroot}${prefix}/lib \
             ${destroot}${prefix}/share
-        file mkdir ${destroot}${prefix}/lib
+          file mkdir ${destroot}${prefix}/lib ${destroot}${prefix}/include/boost/python
         move {*}[glob ${destroot}${prefix}/libboost_numpy*] ${destroot}${prefix}/lib
+ move {*}[glob ${destroot}${prefix}/numpy*] ${destroot}${prefix}/include/boost/python
     }
 }
 
