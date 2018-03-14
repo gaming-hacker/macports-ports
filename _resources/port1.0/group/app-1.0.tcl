@@ -218,18 +218,24 @@ platform macosx {
                 return -code error "app.executable ${app.executable} should not start with \${destroot}"
             }
 
-            # If app.executable is in the destroot, link to it.
+            # If app.executable is in the destroot, write a script to launch it.
             if {[file exists ${destroot}[app._resolve_symlink ${executable} ${destroot}]]} {
-                ln -s ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                set launch_script [open ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name} w]
+                puts ${launch_script} "#!/bin/bash\n${executable}\n"
+                close ${launch_script}
+                system -W ${worksrcpath} "/bin/chmod 755 ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}"
             } elseif {[file exists ${executable}]} {
                 # If app.executable starts with ${workpath} or ${filespath}, copy it.
                 if {[string first ${workpath} ${executable}] == 0 || [string first ${filespath} ${executable}] == 0} {
                     xinstall ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
                 
                 # app.executable refers to a file that exists but does not belong to this port.
-                # Assume it belongs to a dependency and symlink it.
+                # Assume it belongs to a dependency and write a script to launch it.
                 } else {
-                    ln -s ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                    set launch_script [open ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name} w]
+                    puts ${launch_script} "#!/bin/bash\n${executable}\n"
+                    close ${launch_script}
+                    system -W ${worksrcpath} "/bin/chmod 755 ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}"
                 }
             } else {
                 return -code error "app.executable ${app.executable} does not exist"
