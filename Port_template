@@ -38,6 +38,7 @@ use_autoreconf              yes
 autoreconf.args             -fvi
 
 configure.args              ${user.config.default} \
+                            --prefix=${prefix} \
                             --disable-ltdl-install
 
 livecheck.type      none

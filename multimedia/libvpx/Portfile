@@ -77,7 +77,12 @@ configure.args      --enable-vp8 \
                     --disable-install-docs \
                     --disable-debug-libs \
                     --disable-examples \
-                    --disable-unit-tests
+                    --disable-unit-tests \
+                    --enable-vp9-highbitdepth \
+                    --enable-libyuv \
+                    --enable-vp9-temporal-denoising \
+                    --enable-multi-res-encoding \
+                    --enable-coefficient-range-checking
 
 configure.env       LD="${configure.cc}"
 
