@@ -52,6 +52,9 @@ depends_lib-append      port:argon2 \
 #     https://github.com/llvm-project/clang/blob/release_35/lib/CodeGen/CodeGenModule.cpp
 compiler.blacklist-append {clang < 602} macports-clang-3.4 macports-clang-3.3
 
+# XXX: the following line shouldn't be necessary - revisit when libc++ becomes the default and default compiler configurations are updated
+compiler.fallback-append macports-clang-5.0 macports-clang-4.0 macports-clang-3.9
+
 cmake.out_of_source     yes
 configure.pre_args-append \
     -DCMAKE_INSTALL_PREFIX=${applications_dir} \
@@ -65,7 +68,11 @@ if {${configure.cxx_stdlib} eq "libstdc++"} {
     configure.pre_args-append   -DWITH_CXX11=OFF
 }
 
+<<<<<<< HEAD
 if {${os.major} == 12} {
+=======
+if {${os.major} < 12} {
+>>>>>>> b0fa70c537a7e114b788cddf9a2c8a46c6d34182
     # autotype does not compile on 10.7
     configure.pre_args-append   -DWITH_XC_AUTOTYPE=OFF
 }
