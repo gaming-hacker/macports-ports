@@ -88,7 +88,7 @@ patchfiles          patch-libavcodec-audiotoolboxenc.c.diff
 # enable auto configure of asm optimizations
 # requires Xcode 3.1 or better on Leopard
 #
-minimum_xcodeversions {9 3.1}
+minimum_xcodeversions {16 9.0 17 9.0}
 
 if {[lsearch [get_canonical_archs] i386] != -1} {
     # clang-3.1 hits https://trac.macports.org/ticket/30137 (<rdar://problem/11542429>)

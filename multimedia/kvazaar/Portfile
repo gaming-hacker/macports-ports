@@ -7,7 +7,7 @@ PortGroup user 1.0
 name                kvazaar
 github.setup        gaming-hacker kvazaar 75fec2927a4ad8b327f800d5ac30ff3d1f8ceca8
 version             20180414
-revision            0
+
 fetch.type          git
 
 license             LGPL-2.1+
@@ -27,12 +27,12 @@ depends_build       port:pkgconfig \
                     port:gmake
 
 use_configure yes
-
-build.cmd      ./autogen.sh
-build.target ""
-build.args ""
-build.pre_args      {}
-
+# use_build no
+# build.cmd      "./autogen.sh"
+# build.target ""
+# build.args ""
+# build.pre_args      {}
+configure.cmd   ./autogen.sh
 use_autoreconf      yes
 autoreconf.args     -fiv
 
@@ -47,10 +47,7 @@ configure.optflags  -O3 -pipe -m64 -arch x86_64 \
                     -Wno-unknown-warning-option \
                     -Wno-unused-function \
                     -Wno-unused-variable \
-                    -Wno-unused-command-line-argument \
-                    -l1-cache-line-size=64 \
-                    -l1-cache-size=32 \
-                    -l2-cache-size=256
+                    -Wno-unused-command-line-argument
 
 configure.cflags    -std=c11
 configure.cxxflags  -std=c++17
@@ -63,5 +60,4 @@ configure.args      --enable-static \
                     --prefix=${prefix}
 
 test.run            no
-
 livecheck.type      none

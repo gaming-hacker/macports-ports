@@ -52,4 +52,6 @@ set configure.env ${user.MACROS}
 
 set configure.optflags ${user.CFLAGS}
 
+set minimum_xcodeversions {16 9.0 17 9.0}
+
 set user.config.default  "--quiet --disable-option-checking  --enable-shared --enable-static  --enable-silent-rules --enable-fast-install --enable-pic --with-pic --disable-dependency-tracking --enable-libtool-lock --disable-debug --disable-example --enable-simd --enable-asm --enable-libc++ --enable-sse"
