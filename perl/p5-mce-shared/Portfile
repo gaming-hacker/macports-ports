@@ -3,14 +3,9 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-<<<<<<< HEAD
 perl5.branches  5.26
-
-perl5.setup         MCE-Shared 1.835 ../../authors/id/M/MA/MARIOROY
-=======
-perl5.branches      5.26
 perl5.setup         MCE-Shared 1.836 ../../authors/id/M/MA/MARIOROY
->>>>>>> b0fa70c537a7e114b788cddf9a2c8a46c6d34182
+
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         MCE::Shared - MCE extension for sharing data supporting threads and processes
