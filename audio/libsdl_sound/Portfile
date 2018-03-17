@@ -4,7 +4,6 @@ PortSystem      1.0
 
 name            libsdl_sound
 version         1.0.3
-revision        1
 categories      audio devel
 license         LGPL-2.1+
 maintainers     nomaintainer
@@ -33,6 +32,10 @@ depends_lib     port:libsdl \
                 port:flac \
                 path:lib/libspeex.dylib:speex \
                 port:physfs
+
+revision        1
+patchfiles      patch-physfs-renamed-export.diff
+patch.pre_args  -p1
 
 configure.args  --disable-sdltest \
                 --disable-smpegtest \
