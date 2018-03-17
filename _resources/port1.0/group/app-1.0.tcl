@@ -220,22 +220,20 @@ platform macosx {
 
             # If app.executable is in the destroot, write a script to launch it.
             if {[file exists ${destroot}[app._resolve_symlink ${executable} ${destroot}]]} {
-                set launch_script [open ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name} w]
-                puts ${launch_script} "#!/bin/bash\n${executable}\n"
-                close ${launch_script}
-                system -W ${worksrcpath} "/bin/chmod 755 ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}"
+<<<<<<< HEAD
+                set launch_script [open
+                app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
             } elseif {[file exists ${executable}]} {
                 # If app.executable starts with ${workpath} or ${filespath}, copy it.
                 if {[string first ${workpath} ${executable}] == 0 || [string first ${filespath} ${executable}] == 0} {
                     xinstall ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
-                
+
                 # app.executable refers to a file that exists but does not belong to this port.
                 # Assume it belongs to a dependency and write a script to launch it.
                 } else {
-                    set launch_script [open ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name} w]
-                    puts ${launch_script} "#!/bin/bash\n${executable}\n"
-                    close ${launch_script}
-                    system -W ${worksrcpath} "/bin/chmod 755 ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}"
+<<<<<<< HEAD
+                    set launch_script [open
+                    app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
                 }
             } else {
                 return -code error "app.executable ${app.executable} does not exist"
@@ -309,4 +307,19 @@ proc app._resolve_symlink {path destroot} {
     }
 #    ui_debug "In ${destroot}, ${path} is a symlink to ${resolved_path}"
     return [app._resolve_symlink ${resolved_path} ${destroot}]
+}
+
+
+# Write a default launch script for the executable into the bundle,
+# setting the default PATH as would be expected by the binary
+proc app._write_launch_script  {executable app_destination} {
+    global prefix
+    set launch_script [open ${app_destination} w]
+
+    puts ${launch_script} "#!/bin/bash
+export PATH=\"${prefix}/bin:${prefix}/sbin:\$PATH\"
+eval ${executable}
+"
+    close ${launch_script}
+    file attributes ${app_destination} -permissions 0755
 }
