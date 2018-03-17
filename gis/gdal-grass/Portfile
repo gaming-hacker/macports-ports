@@ -29,12 +29,12 @@ configure.args-append   --with-gdal=${prefix}/bin/gdal-config
 configure.args-append   --with-grass=${prefix}/share/grass-7.4.0
 
 variant postgresql96 conflicts postgresql95 {
-  depends_build-append  port:postgresql95
+  depends_build-append  port:postgresql96
   configure.args-append  --with-postgres-includes=${prefix}/include/postgresql96
 }
 
 variant postgresql95 conflicts postgresql96 {
-  depends_build-append  port:postgresql96
+  depends_build-append  port:postgresql95
   configure.args-append  --with-postgres-includes=${prefix}/include/postgresql95
 }
 
@@ -46,7 +46,7 @@ post-configure {
         reinplace -E "s|^(LD_SHARED.*)|\\1 ${configure.universal_cxxflags}|" \
             ${worksrcpath}/Makefile
     }
-            
+
     # Fixes destroot issues
     reinplace -E "s|^(GRASSTABLES_DIR\[^/]*)(.*)|\\1${destroot}\\2|" \
         ${worksrcpath}/Makefile
@@ -55,4 +55,4 @@ post-configure {
     reinplace "s|mkdir|mkdir -p|" ${worksrcpath}/Makefile
 }
 
-build.target    
+build.target

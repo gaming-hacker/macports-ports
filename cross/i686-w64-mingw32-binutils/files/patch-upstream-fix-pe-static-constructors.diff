@@ -1,4 +1,5 @@
-From a985e9b9deabd81e16754584f4397a638e9d3f36 Mon Sep 17 00:00:00 2001
+https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=a985e9b9deabd81e16754584f4397a638e9d3f36
+
 From: Nick Clifton <nickc@redhat.com>
 Date: Mon, 5 Feb 2018 09:12:42 +0000
 Subject: [PATCH] Import patch from mainline to remove PROVODE qualifiers
@@ -12,38 +13,8 @@ Subject: [PATCH] Import patch from mainline to remove PROVODE qualifiers
 	* ld.texinfo (PROVIDE): Add a note about the effect of common
 	symbols.
 ---
- ld/ChangeLog          | 14 ++++++++++++++
- ld/ld.texinfo         |  6 ++++++
- ld/scripttempl/pe.sc  | 24 ++++++++++++++++++++----
- ld/scripttempl/pep.sc | 24 ++++++++++++++++++++----
- 4 files changed, 60 insertions(+), 8 deletions(-)
-
-diff --git a/ld/ChangeLog b/ld/ChangeLog
-index 0f00265..bf129a1 100644
---- a/ld/ChangeLog
-+++ b/ld/ChangeLog
-@@ -1,3 +1,17 @@
-+2018-02-05  Nick Clifton  <nickc@redhat.com>
-+
-+	Import from mainline:
-+
-+	2018-02-03  Nick Clifton  <nickc@redhat.com>
-+
-+	PR 22762
-+	* scripttempl/pe.sc: Remove PROVIDE()s from __CTOR_LIST__ and
-+	__DTOR_LIST__ symbols.  Add a comment explaining why this is
-+	necessary.
-+	* scripttemp/pep.sc: Likewise.
-+	* ld.texinfo (PROVIDE): Add a note about the effect of common
-+	symbols.
-+
- 2018-01-27  Nick Clifton  <nickc@redhat.com>
- 
- 	Back to development.
-diff --git a/ld/ld.texinfo b/ld/ld.texinfo
-index c89915f..764c401 100644
---- a/ld/ld.texinfo
-+++ b/ld/ld.texinfo
+--- ld/ld.texinfo.orig
++++ ld/ld.texinfo
 @@ -4001,6 +4001,12 @@ underscore), the linker will silently use the definition in the program.
  If the program references @samp{etext} but does not define it, the
  linker will use the definition in the linker script.
@@ -57,10 +28,8 @@ index c89915f..764c401 100644
  @node PROVIDE_HIDDEN
  @subsection PROVIDE_HIDDEN
  @cindex PROVIDE_HIDDEN
-diff --git a/ld/scripttempl/pe.sc b/ld/scripttempl/pe.sc
-index c8a45ca..f56d783 100644
---- a/ld/scripttempl/pe.sc
-+++ b/ld/scripttempl/pe.sc
+--- ld/scripttempl/pe.sc.orig
++++ ld/scripttempl/pe.sc
 @@ -98,8 +98,22 @@ SECTIONS
      ${RELOCATING+*(.glue_7t)}
      ${RELOCATING+*(.glue_7)}
@@ -99,10 +68,8 @@ index c8a45ca..f56d783 100644
         LONG (-1);
         KEEP(*(.dtors));
         KEEP(*(.dtor));
-diff --git a/ld/scripttempl/pep.sc b/ld/scripttempl/pep.sc
-index 8daacb2..3c6c84d 100644
---- a/ld/scripttempl/pep.sc
-+++ b/ld/scripttempl/pep.sc
+--- ld/scripttempl/pep.sc.orig
++++ ld/scripttempl/pep.sc
 @@ -99,8 +99,22 @@ SECTIONS
      ${RELOCATING+*(.glue_7)}
      ${CONSTRUCTING+. = ALIGN(8);}
@@ -141,6 +108,3 @@ index 8daacb2..3c6c84d 100644
         LONG (-1); LONG (-1);
         KEEP (*(.dtors));
         KEEP (*(.dtor));
--- 
-2.9.3
-
