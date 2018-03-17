@@ -32,11 +32,11 @@ use_configure yes
 # build.target ""
 # build.args ""
 # build.pre_args      {}
-configure.cmd   ./autogen.sh
+# configure.cmd   ./autogen.sh
 use_autoreconf      yes
 autoreconf.args     -fiv
 
-# pre-configure { system#  -W ${worksrcpath} "./autogen.sh" }
+pre-configure { system#  -W ${worksrcpath} "./autogen.sh" }
 
 configure.optflags  -O3 -pipe -m64 -arch x86_64 \
                     -march=native -mtune=native  \
