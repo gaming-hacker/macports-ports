@@ -18,17 +18,18 @@ long_description    Django is a high-level Python Web framework that \
 
 homepage            http://www.djangoproject.com
 
-checksums           rmd160  86312b2ca1edc6c41bf186a5d36ed7bc841e6044 \
-                    sha256  74077d7309b48b97dacdac2dfb35c968028becf00a7a684e7f29b2af1b980edc
+checksums           rmd160  aea1595dc97ee2c03291a9298c1cb6f9f5a1f574 \
+                    sha256  908572660e67bfc2d472d847c43307f6a87e144d594463ca6f9b456b31f42ed1
 
 python.versions 27 36
 supported_archs     noarch
 
 if {${name} ne ${subport}} {
-    depends_lib-append  port:py${python.version}-setuptools
+    depends_build-append    port:py${python.version}-setuptools
+    depends_run-append      port:py${python.version}-tz
 
     variant bash_completion {
-        depends_run-append path:etc/bash_completion:bash-completion
+        depends_run-append  path:etc/bash_completion:bash-completion
 
         post-patch {
             reinplace "s|django-admin.py|django-admin-${python.branch}.py|g" \
