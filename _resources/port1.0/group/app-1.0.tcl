@@ -1,6 +1,6 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2=4
 #
-# Copyright (c) 2011-2013, 2015-2016 The MacPorts Project
+# Copyright (c) 2011-2013, 2015-2018 The MacPorts Project
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -129,6 +129,28 @@ default app.version {${version}}
 options app.identifier
 default app.identifier {[app.get_default_identifier]}
 
+
+# app.hide_dock_icon: hide the dock icon
+#
+# x11 apps do not receive a proper indication that application has successfully
+# launched, and so the icon keeps bouncing in the dock. Until this is properly
+# fixed, just hide the the dock icon for now
+
+options app.hide_dock_icon
+default app.hide_dock_icon  no
+
+
+# app.use_launch_script: use a bash launch script instead of a symlink to the executable
+#
+# the default behaviour is to symlink the executable into the bundle.
+# However, this has two issues -- it passes -psn to the executable,
+# which some ports can't handle. Also, it doesn't set up the path to ${prefix}/bin. The launch
+# script option solves both these issues.
+
+options app.use_launch_script
+default app.use_launch_script  no
+
+
 proc app.get_default_identifier {} {
     global app.name homepage
     set identifier [split [lindex [split ${homepage} "/"] 2] .]
@@ -218,22 +240,26 @@ platform macosx {
                 return -code error "app.executable ${app.executable} should not start with \${destroot}"
             }
 
-            # If app.executable is in the destroot, write a script to launch it.
+            # If app.executable is in the destroot, use it as the target.
             if {[file exists ${destroot}[app._resolve_symlink ${executable} ${destroot}]]} {
-<<<<<<< HEAD
-                set launch_script [open
-                app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                if {[tbool app.use_launch_script]} then {
+                    app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                } else {
+                    ln -s ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                }
             } elseif {[file exists ${executable}]} {
                 # If app.executable starts with ${workpath} or ${filespath}, copy it.
                 if {[string first ${workpath} ${executable}] == 0 || [string first ${filespath} ${executable}] == 0} {
                     xinstall ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
 
                 # app.executable refers to a file that exists but does not belong to this port.
-                # Assume it belongs to a dependency and write a script to launch it.
+                # Assume it belongs to a dependency and use it as the target.
                 } else {
-<<<<<<< HEAD
-                    set launch_script [open
-                    app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                    if {[tbool app.use_launch_script]} then {
+                        app._write_launch_script ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                    } else {
+                        ln -s ${executable} ${destroot}${applications_dir}/${app.name}.app/Contents/MacOS/${app.name}
+                    }
                 }
             } else {
                 return -code error "app.executable ${app.executable} does not exist"
@@ -252,6 +278,10 @@ platform macosx {
             if {${app.icon} != ""} {
                 puts ${fp} "    <key>CFBundleIconFile</key>
     <string>${app.name}.icns</string>"
+            }
+            if {[tbool app.hide_dock_icon]} {
+                puts ${fp} "    <key>LSUIElement</key>
+    <string>1</string>"
             }
             puts ${fp} "    <key>CFBundleIdentifier</key>
     <string>${app.identifier}</string>
@@ -318,7 +348,7 @@ proc app._write_launch_script  {executable app_destination} {
 
     puts ${launch_script} "#!/bin/bash
 export PATH=\"${prefix}/bin:${prefix}/sbin:\$PATH\"
-eval ${executable}
+exec ${executable}
 "
     close ${launch_script}
     file attributes ${app_destination} -permissions 0755
