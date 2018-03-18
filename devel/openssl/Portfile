@@ -4,8 +4,7 @@ PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                openssl
-epoch               1
-version             1.0.2n
+version             1.1.0g
 
 # Please revbump these ports when updating OpenSSL.
 #  - freeradius (#43461)
@@ -41,13 +40,16 @@ master_sites        ${homepage}/source \
                     ftp://ftp.linux.hr/pub/openssl/source/ \
                     ftp://guest.kuria.katowice.pl/pub/openssl/source/
 
+# checksums           sha1    e8240a8be304d4317a750753321b073c664bfdd4 \
+#                     sha256  de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af
 checksums           sha1    0ca2957869206de193603eca6d89f532f61680b1 \
                     rmd160  90fbf1df8986e04921e14e4c6e408458b5b31f6c \
                     sha256  370babb75f278c39e0c50e8c4e7493bc0f18db6867478341a832a982fd15a8fe
 
-patchfiles          install-headers-HFS+.patch \
-                    parallel-building.patch \
-                    remove-duplicate-bn_print-doc.patch
+# patchfiles          install-headers-HFS+.patch \
+#                     parallel-building.patch \
+#                     remove-duplicate-bn_print-doc.patch
+
 
 configure.ccache    no
 configure.perl      /usr/bin/perl
@@ -57,6 +59,7 @@ configure.args     -L${prefix}/lib \
                   --openssldir=${prefix}/etc/openssl \
                     shared \
                     zlib
+
 # Use SDK if necessary.
 if {${configure.sdkroot} ne ""} {
     configure.args-append   '-isysroot ${configure.sdkroot}' \
@@ -65,9 +68,7 @@ if {${configure.sdkroot} ne ""} {
 
 set merger_arch_compiler no
 array set merger_configure_args {
-    ppc     darwin-ppc-cc
     i386    darwin-i386-cc
-    ppc64   darwin64-ppc-cc
     x86_64  darwin64-x86_64-cc
 }
 platform darwin {
@@ -81,7 +82,7 @@ platform darwin {
     }
 }
 # Don't pass --host to configure.
-array set merger_host {ppc {} i386 {} ppc64 {} x86_64 {}}
+array set merger_host {i386 {} x86_64 {}}
 
 if {![variant_isset universal]
         && [info exists merger_configure_args(${configure.build_arch})]} {
