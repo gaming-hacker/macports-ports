@@ -62,8 +62,12 @@ if {${name} ne ${subport}} {
         port:py${python.version}-protobuf3 \
         port:py${python.version}-numpy \
         port:py${python.version}-mock \
-        port:py${python.version}-enum34 \
         port:py${python.version}-backports.weakref
+
+    if {${python.version} < 34} {
+        depends_lib-append \
+            port:py${python.version}-enum34
+    }
 
     build {
     }
