@@ -38,7 +38,6 @@ if {${subport} eq "${name}"} {
     # incl. those not in MacPorts.
     github.setup    audacity audacity 2.2.2 Audacity-
     checksums       rmd160  c48e8467fc06c1ffb11af2b0fba4ede77b66ee2f \
-
     sha256  7963cedab841aff181ea25b06991ba5ba56249533815ba5cdd82ec1282dbadd8 \
                     size    25941576
     set PPREFIX     ./
