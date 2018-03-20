@@ -56,7 +56,6 @@ post-patch {
     xinstall -m 755 ${filespath}/autogen.sh ${worksrcpath}
 }
 
-
 configure.cmd       ./autogen.sh
 
 # blacklist compilers that do not support C11 (redefinition of typedef ‘GtkSourceTag’ at gtksourceview/gtksourcetag.h:35)

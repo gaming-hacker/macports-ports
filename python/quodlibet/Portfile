@@ -68,7 +68,6 @@ post-patch {
     }
 }
 
-
 post-destroot {
     # icon keeps bouncing in the dock otherwise
     if {![variant_isset quartz]} {
@@ -81,7 +80,6 @@ post-destroot {
 app.icon       quodlibet/images/hicolor/scalable/apps/quodlibet.svg
 
 app.executable "${frameworks_dir}/Python.framework/Versions/2.7/bin/quodlibet"
-
 
 notes "If you want to play mp3 files, don't forget to install gstreamer1-gst-plugins-ugly"
 

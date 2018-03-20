@@ -60,7 +60,6 @@ configure.args  --quiet \
                 --enable-threading=pthreads \
                 CC=clang-mp-${user.ver.clang}
 
-
 default_variants    +haswell
 
 variant haswell description {fourth-generation core successor to the Ivy Bridge} {

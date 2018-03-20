@@ -28,4 +28,3 @@ post-destroot {
 #     xinstall {*}[glob  ${gemdir}/man/*.html] ${docdir}
 }
 
-

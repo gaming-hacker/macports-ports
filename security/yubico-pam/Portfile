@@ -7,7 +7,6 @@ github.setup    Yubico yubico-pam 2.24
 checksums       rmd160  fb2ade875d014e6ca36b2dc42ce0c20aa83eeef2 \
                 sha256  b8f4f358b993f5ab8130d4e98501598712487abf7dbed2f25b408d851dd0bc08
 
-
 # I'm explicitly not marking this openmaintainer
 maintainers     {cal @neverpanic}
 

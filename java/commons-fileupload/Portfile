@@ -44,7 +44,6 @@ destroot	{
 	file copy ${worksrcpath}/dist/docs ${destroot}${prefix}/share/doc/${name}
 }
 
-
 livecheck.type  regex
 livecheck.url   http://commons.apache.org/downloads/download_fileupload.cgi
 livecheck.regex "${name}-(\\d+\\.\\d+(\\.\\d+)?)-src.tar.gz"

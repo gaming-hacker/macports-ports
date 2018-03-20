@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Bob's Audio Processing routines and classes \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.ap 2.0.4 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  caa97ff581775f6e2654a7a64cd4d2c2310be3f8 \
                              sha256  90db1af9f60c404e9c41d5f8502f16bdfb22d1c82904c54f35a6426dfdf6d186
-
-
 
 if {$subport ne $name} {
 
@@ -70,10 +66,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-core \
       port:py${python.version}-bob-sp
 
-
        # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 

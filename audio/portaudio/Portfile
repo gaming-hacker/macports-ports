@@ -45,7 +45,6 @@ configure.args			\
     --without-asihpi		\
     --without-winapi
 
-
 # patch-configure removes -Werror, and adds -DNDEBUG.
 patchfiles          patch-configure \
                     patch-ltmain.sh.diff \

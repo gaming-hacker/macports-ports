@@ -21,7 +21,6 @@ long_description    ${description} \
                     supports several formats including pdb, xtc, trr, dcd, binpos, netcdf, mdcrd, \
                     prmtop, and more. See ${homepage} for more information.
 
-
 supported_archs     noarch
 
 checksums           rmd160  052f054bae9c4fd8cdb4297b0ab9487425838c8e \
@@ -43,5 +42,4 @@ if {${name} ne ${subport}} {
     depends_test-append port:py${python.version}-nose
     test.run            yes
 }
-
 

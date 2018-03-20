@@ -50,7 +50,6 @@ autoreconf.args     -fvi
 patchfiles          patch-configure.ac.diff \
                     patch-acinclude.m4.diff
 
-
 configure.args      --disable-jbig \
                     --with-x=no \
                     --with-docdir=${prefix}/share/doc/${name} \

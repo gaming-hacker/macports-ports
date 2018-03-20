@@ -14,7 +14,6 @@ subport             libgcc-devel { revision 2 }
 version             8-20170604
 # version             8-20180218
 
-
 platforms           darwin
 categories          lang
 maintainers         nomaintainer
@@ -269,7 +268,6 @@ select.group        gcc
 select.file         ${filespath}/mp-${name}
 
 }
-
 
 platform i386 {
     configure.universal_archs i386 x86_64

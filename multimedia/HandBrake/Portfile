@@ -14,7 +14,6 @@ subport HandBrakeCLI {
     categories-delete aqua
 }
 
-
 description         The open source video transcoder
 long_description    HandBrake is a tool for converting video from \
                     nearly any format to a selection of modern, \
@@ -27,7 +26,6 @@ subport HandBrakeCLI {
                                 interface only; install the `HandBrake`
                                 port for the graphical user interface.)}
 }
-
 
 # The MacGui uses NS_ENUM, boolean literals, NSDictionary
 # subscripting, and other modern Objective-C features
@@ -51,7 +49,6 @@ if {${os.platform} eq "darwin" && ${os.major} < $minDarwinVersion} {
     }
 }
 
-
 # TODO: Build correctly for a non-native arch.
 if {${os.arch} ne "i386"
         || [catch {sysctl hw.cpu64bit_capable} isNative64Bit]} {
@@ -62,12 +59,10 @@ if {${os.arch} ne "i386"
     supported_archs i386
 }
 
-
 # +universal would be possible, but not implemented yet
 # see ${worksrcpath}/doc/BUILD-Mac for details
 # TODO: Implement? Is this even worth bothering with?
 universal_variant   no
-
 
 # Autotools: fribidi, libdvdnav, libdvdread, libogg, libvorbis
 # CMake: x265
@@ -97,10 +92,8 @@ subport HandBrake {
 
 # TODO: Sort out depends_skip_archcheck.
 
-
 # Many of the contrib build systems detect CPU features at build time.
 archive_sites
-
 
 # use_bzip2 must come first so master_sites gets the right extract.suffix.
 use_bzip2           yes
@@ -176,13 +169,11 @@ foreach {f - - - -} ${checksums} {
     }
 }
 
-
 extract.only ${distname}${extract.suffix}
 post-extract {
     # Make contrib distfiles available to the build.
     ln -s ${distpath} ${worksrcpath}/download
 }
-
 
 # Patches maintained at https://github.com/larryv/HandBrake.
 patch.pre_args -p1
@@ -203,7 +194,6 @@ patchfiles \
     0014-libvpx-Fix-Clang-cross-building-on-OS-X.patch \
     0015-MP-libvpx-Enable-ccache-if-requested.patch \
     0016-MP-libvpx-Set-build-target-explicitly.patch
-
 
 # Since HandBrake itself is built using Xcode, restrict ourselves to the
 # Xcode-provided compilers.
@@ -231,7 +221,6 @@ configure.args      --arch=${configure.build_arch} \
                     CCACHE=${configure.ccache} \
                     GCC_VERSION=$xcGCCVersion
 
-
 build.type          gnu
 build.dir           ${worksrcpath}/build
 build.target        macosx.gui.build
@@ -251,7 +240,6 @@ subport HandBrakeCLI {
             AUTHORS COPYING CREDITS NEWS THANKS TRANSLATIONS $docDir
     }
 }
-
 
 livecheck.type      regex
 livecheck.url       https://handbrake.fr/downloads.php

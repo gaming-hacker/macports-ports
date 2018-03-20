@@ -90,7 +90,6 @@ checksums-append    bash44-001 \
                     rmd160  b9dedc65d70ca7749ffdb743701487fcb3072033 \
                     sha256  27170d6edfe8819835407fdc08b401d2e161b1400fe9d0c5317a51104c89c11e
 
-
 depends_build           bin:grep:grep \
                         bin:bison:bison
 depends_lib             port:gettext \

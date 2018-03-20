@@ -37,7 +37,6 @@ post-extract {
     system "cd ${worksrcpath}/src/main/java && jar xvf ${worksrcpath}/${name}-${version}-src.jar"
 }
 
-
 depends_build   bin:ant:apache-ant
 depends_lib     port:hamcrest-core
 

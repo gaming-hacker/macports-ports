@@ -148,12 +148,10 @@ variant graphviz description {Support Graphviz} {
     configure.args-replace  --without-gvc --with-gvc
 }
 
-
 variant pango description {Support Pango} {
     depends_lib-append      path:lib/pkgconfig/pango.pc:pango
     configure.args-replace  --without-pango --with-pango
 }
-
 
 variant x11 {
     depends_lib-append      port:xorg-libX11 \

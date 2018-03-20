@@ -4,7 +4,6 @@ PortSystem             1.0
 PortGroup              github 1.0
 PortGroup              elisp 1.0
 
-
 platforms              darwin
 categories             editors
 license                GPL-3+

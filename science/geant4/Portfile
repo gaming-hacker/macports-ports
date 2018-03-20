@@ -135,7 +135,6 @@ foreach {geant.version geant.revision geant.datarevision geant.patchlevel geant.
         description         Data files for Geant${version}
         long_description    ${description}
 
-
         # TODO: use an array (hash) to implement this without if-else
         if {${geant.version} == "10.4" } {
             set geant.data_versions     ${geant.data_versions_10.4}

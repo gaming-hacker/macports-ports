@@ -35,7 +35,6 @@ depends_lib         port:zlib
 
                     configure.pre_args-delete --prefix=${prefix}
 
-
 pre-destroot {
         # Add user and group, these are the users rbldnsd will start as
         addgroup _rbldnsd

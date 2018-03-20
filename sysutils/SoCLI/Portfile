@@ -4,10 +4,8 @@
 PortSystem			1.0
 PortGroup			github 1.0
 
-
 github.setup		gautamkrishnar socli 3.6
 github.tarball_from	releases
-
 
 categories			sysutils
 platforms			darwin
@@ -19,7 +17,6 @@ description			Stack Overflow CLI
 long_description	Stack Overflow command line written in python. \
 					Using SoCLI you can search and browse Stack Overflow \
 					without leaving the terminal
-
 
 homepage			http://www.github.com/gautamkrishnar/socli
 

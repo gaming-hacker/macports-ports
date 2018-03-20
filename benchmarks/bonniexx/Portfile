@@ -34,7 +34,6 @@ patchfiles              patch-Makefile.in \
                         patch-zcav.cpp \
                         patch-zcav_io.cpp
 
-
 pre-patch {
     reinplace "s|/usr/share/|${prefix}/share/|g" ${worksrcpath}/bonnie++.8
 }

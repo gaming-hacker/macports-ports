@@ -277,7 +277,6 @@ platform darwin {
     }
 }
 
-
 # Shameless copy from ipe-tools.
 set python.versions         {27 36}
 # Remove after 07-30-2018.
@@ -374,7 +373,6 @@ post-destroot {
                          ${destroot}${prefix}/share/doc/${name}/examples
     }
 }
-
 
 # When enabling features, make sure to replace the "disable" flags with
 # "enable" flags in order to make the waf build system error out in case

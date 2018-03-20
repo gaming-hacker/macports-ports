@@ -73,7 +73,6 @@ if {${name} ne ${subport}} {
         # accordingly.
         supported_archs         i386 x86_64
 
-
         # force LDFLAGS for correct linking of the linalg module
         # for non-Apple GCC compilers
         patchfiles-append       patch-numpy_linalg_setup.py.diff

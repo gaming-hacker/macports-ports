@@ -47,14 +47,12 @@ platform macosx {
              follow the instructions below substituting the ${name} program \
              path with ${prefix}/bin/pinentry.
 
-
              If you previously had pinentry and gpg-agent installed and would \
              like to switch to ${name}, you will have to set \
              it as your pinentry program in \$HOME/.gnupg/gpg-agent.conf.
 
              Add the following line to the mentioned file:
              pinentry-program ${applications_dir}/${name}.app/Contents/MacOS/${name}
-
 
              Be sure to comment previous \"pinentry-program\" lines, for example:
 
@@ -63,7 +61,6 @@ platform macosx {
              becomes
 
              #pinentry-program SAMPLE
-
 
              Afterwards, run
              killall -HUP gpg-agent

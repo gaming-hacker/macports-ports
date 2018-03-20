@@ -40,7 +40,6 @@ depends_lib         port:perl${perl5.major} \
                     port:rrdtool \
                     port:fping
 
-
 # Set some useful variables
 set nedidir         ${prefix}/share/${name}
 set rrdbin          ${prefix}/bin/rrdtool
@@ -129,7 +128,6 @@ pre-activate {
 notes \
   "**** To complete the NeDi OS X installation ****
 
-
 1) Setup MySQL (for new installs)
 -----------------------------------------------
 -Configure MySQL:
@@ -141,7 +139,6 @@ notes \
 -Set the root MySQL password (replace <mypassword> with your chosen password):
     sudo ${prefix}/lib/mysql5/bin/mysqladmin -u root password <mypassword>
 
-
 2) Install PHP5 with SNMP support and MacPorts Apache
 ------------------------------------------------
     sudo port install php5 +apache2 +mysql5 +snmp
@@ -151,7 +148,6 @@ notes \
 NOTE: Check to make sure the PHP variable \"mysql.default_socket\" is set to path
  ${prefix}/var/run/mysql5/mysqld.sock by viewing the output of this terminal command:
         php -i
-
 
 3) Turn on MacPorts Apache
 ------------------------------------------------
@@ -169,7 +165,6 @@ NOTE: Check to make sure the PHP variable \"mysql.default_socket\" is set to pat
 
 -Start Apache and set it to run at system boot:
     sudo launchctl load -w /Library/LaunchdDaemons/org.macports.apache2.plist
-
 
 4) Configure NeDi, initialize NeDi database, and Login to NeDi
 -----------------------------------------------
@@ -199,7 +194,6 @@ comm <my-community-string> (community string of your Cisco devices)
 -Login to the NeDi web interface: http://localhost/nedi
     Initial user/pass is 'admin'/'admin'
 
-
 5) Discover Your Network with NeDi
 -----------------------------------------------
 -Edit nedi.conf Device Acc. variables: sudo pico ${nedidir}/nedi.conf
@@ -220,7 +214,6 @@ comm <my-community-string>
     NeDi every hour, the cron entry is:
 
 0 * * * * cd ${nedidir} ; ./nedi.pl -pr >> /dev/null 2>&1
-
 
 6) Set NeDi to receive device alerts, syslogs, and SNMP traps.  (optional)
 -----------------------------------------------

@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  API for Database Bindings in Bob \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,18 +29,15 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.db.base 2.0.5 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  a31d1e89841ae1cc35fc11b721802f8a6c59a572 \
                              sha256  40ce2b4d376fb2283d079aec3074d4829f2f8506a9e994b1dfc1988f1972ea10
 
-
 if {$subport ne $name} {
 
     depends_build-append port:pkgconfig
-
 
     depends_lib-append \
       port:blitz \
@@ -70,10 +66,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-io-base \
       port:py${python.version}-sqlalchemy
 
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 

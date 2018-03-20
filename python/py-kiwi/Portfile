@@ -22,7 +22,6 @@ long_description    \
     and easy to maintain. Kiwi is pure Python and should work cross-platform, \
     but is developed on Python 2.4, Linux ix86.
 
-
 homepage            http://www.async.com.br/projects/kiwi
 master_sites        gnome:sources/${real_name}/${branch}/
 distname            ${real_name}-${version}

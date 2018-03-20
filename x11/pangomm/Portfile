@@ -25,7 +25,6 @@ use_xz          yes
 checksums       rmd160  8d48c6f16bf6e6eb6d26303d96d8ff5d620932b2 \
                 sha256  9762ee2a2d5781be6797448d4dd2383ce14907159b30bc12bf6b08e7227be3af
 
-
 depends_build   port:pkgconfig \
                 port:mm-common
 

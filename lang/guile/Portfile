@@ -121,7 +121,6 @@ platform darwin {
     }
 }
 
-
 livecheck.type  regex
 livecheck.url   "http://ftp.gnu.org/pub/gnu/guile/?C=N;O=D"
 livecheck.regex "${name}-(\\d+(?:\\.\\d+)*)${extract.suffix}"

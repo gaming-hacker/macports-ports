@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Bob bindings to libsvm \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.learn.libsvm 2.0.3 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  28a09c8066d699d98e52dc76bd16f684b2dee068 \
                              sha256  605c75a6f414f1e72c9e8410f9aeade0c985fd94c38cbb45d4b1f3adbb8af591
-
-
 
 if {$subport ne $name} {
 
@@ -71,13 +67,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-core \
       port:py${python.version}-bob-io-base
 
-
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -101,5 +92,4 @@ if {$subport ne $name} {
     }
 
 }
-
 

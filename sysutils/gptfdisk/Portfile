@@ -17,7 +17,6 @@ long_description        GPT fdisk (gdisk) is a disk partitioning tool loosely mo
 homepage                http://www.rodsbooks.com/gdisk/
 master_sites            sourceforge:project/gptfdisk/gptfdisk/${version}
 
-
 checksums               md5 07b625a583b66c8c5840be5923f3e3fe \
                         sha1 9a74bbe7805d562316e92417f71e4b03155308e6 \
                         sha256 89fd5aec35c409d610a36cb49c65b442058565ed84042f767bba614b8fc91b5c \

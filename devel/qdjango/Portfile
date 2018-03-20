@@ -15,7 +15,6 @@ long_description \
     QDjango is a cross-platform C++ web development framework built upon Qt. \
     Where possible it tries to follow django's API, hence its name.
 
-
 homepage        https://code.google.com/p/qdjango/
 master_sites    googlecode
 

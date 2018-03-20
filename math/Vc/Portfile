@@ -35,7 +35,6 @@ default configure.post_args {../${worksrcdir}}
 default configure.dir       {${workpath}/build}
 default build.dir           {${workpath}/build}
 
-
 # livecheck isn't that useful as there has been a 0.99.71 release in June 2013 ...
 livecheck.url       ${master_sites}
 livecheck.regex     Vc-(\\d+(\\.\\d+)+)

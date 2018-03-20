@@ -21,7 +21,6 @@ if {${name} ne ${subport}} {
     svn.url             http://panstamp.googlecode.com/svn/trunk/python/pyswap
     svn.revision        714
 
-
     depends_lib	    port:py${python.version}-serial
     
     worksrcdir      pyswap/src

@@ -19,7 +19,6 @@ long_description    \
     Mosquito provides an open-source MQTT v3.1.1 broker (i.e., server) and \
     both  C and C++ client libraries.
 
-
 homepage            https://mosquitto.org
 master_sites        http://mosquitto.org/files/source/
 

@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Support for Matlab(R) I/O for Bob \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.io.matlab 2.0.4 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  c9fe85df2b9d255dd81d7652c9d703dafc506ee6 \
                              sha256  efcffb1309e72a0d330490cf1c484e25e48a80e6495ab01b6c405e7845b2d353
-
-
 
 if {$subport ne $name} {
 
@@ -71,12 +67,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-io-base \
       port:py${python.version}-bob-core
 
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -99,6 +91,4 @@ if {$subport ne $name} {
     }
 
 }
-
-
 

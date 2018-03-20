@@ -27,7 +27,6 @@ if {${perl5.major} ne ""} {
                     port:p${perl5.major}-test-warn \
                     port:p${perl5.major}-version
 
-
 variant postgresql92 conflicts postgresql93 postgresql94 postgresql95 postgresql96 description {build with postgresql92 port} {
     depends_lib-append      port:postgresql92
 

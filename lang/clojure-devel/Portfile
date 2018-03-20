@@ -20,8 +20,6 @@ fetch.type          git
 git.url             git://github.com/richhickey/clojure.git
 git.branch          d548cf2078846ec06336d2357435bb87959281e1
 
-
-
 use_configure       no
 build.cmd           ant
 build.target        jar

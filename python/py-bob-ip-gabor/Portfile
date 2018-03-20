@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Package containing code and bindings for Gabor wavelet transforms \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.ip.gabor 2.0.4 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  9f4a5785e86cf9f863282ef15726b9e09f95ced6 \
                              sha256  1418282f05a4f61bc59caf34540ccfa7614510765d798a77c4203f019c24902f
-
-
 
 if {$subport ne $name} {
 
@@ -72,11 +68,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-io-base\
       port:py${python.version}-bob-sp
 
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -100,5 +93,4 @@ if {$subport ne $name} {
     }
 
 }
-
 

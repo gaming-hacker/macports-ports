@@ -59,7 +59,6 @@ platform darwin {
     }
 }
 
-
 platform puredarwin {
 
     post-patch {

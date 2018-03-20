@@ -33,7 +33,6 @@ configure.args    --enable-static
 
 conflicts-delete  $subport
 
-
 # Usually the port has a different version than the *-devel subports
 # (but right now it doesn't)
 #if {$subport eq $name || $subport eq "gwenhywfar4-gtk"} {

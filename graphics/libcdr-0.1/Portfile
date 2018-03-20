@@ -35,7 +35,6 @@ depends_lib         port:librevenge \
                     port:lcms2 \
                     port:zlib
 
-
 # The packaged glibtool in 0.1.1 doesn't pass --stdlib=libc++ down at link time
 use_autoreconf  yes
 autoreconf.args -fvi

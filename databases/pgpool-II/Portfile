@@ -41,7 +41,6 @@ variant postgresql82 description {uses postgresql82 installation} {
 	configure.env		PATH=$env(PATH):${prefix}/lib/postgresql82/bin
 }
 
-
 variant postgresql83 description {uses postgresql83 installation} {
 	depends_build		port:postgresql83
 	configure.env		PATH=$env(PATH):${prefix}/lib/postgresql83/bin

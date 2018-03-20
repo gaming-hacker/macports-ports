@@ -49,7 +49,6 @@ post-activate {
 	}
 }
 
-
 variant nocm17a { configure.args-append		-nocm17a }
 
 variant noext0  { configure.args-append		-noext0  }

@@ -17,7 +17,6 @@ homepage            https://libproxy.github.io/libproxy
 
 description         A library that provides automatic proxy configuration management.
 
-
 long_description    Libproxy exists to answer the question: Given a \
                     network resource, how do I reach it? It handles all \
                     the details, enabling you to get back to programming.

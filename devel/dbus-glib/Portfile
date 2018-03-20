@@ -34,7 +34,6 @@ configure.args  --disable-gtk-doc \
                 --disable-silent-rules \
                 --disable-tests
 
-
 pre-test {
     if {![variant_isset test]} {
         ui_error "test variant must be activated to enable test support"

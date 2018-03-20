@@ -16,7 +16,6 @@ long_description \
     For information on Mach-O binaries, it is suggested that one uses the command \
     `otool -fv`.
 
-
 homepage            http://www.darwinsys.com/file/
 platforms           darwin
 master_sites        freebsd \

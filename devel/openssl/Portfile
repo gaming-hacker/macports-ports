@@ -52,7 +52,6 @@ checksums           sha1    0ca2957869206de193603eca6d89f532f61680b1 \
 #                     parallel-building.patch \
 #                     remove-duplicate-bn_print-doc.patch
 
-
 configure.ccache    no
 configure.perl      /usr/bin/perl
 configure.cmd       ./Configure

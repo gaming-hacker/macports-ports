@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  This package contains Bob's math functionality. \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,13 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.math 2.0.3 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  52b04f5b4d6c5ce910b898843904dae57eaad049 \
                              sha256  0c12b8f574d6e96221e2f1a25981b03cc920eb13c7f122fb8c703700fc50e9cc
-
 
 if {$subport ne $name} {
 
@@ -69,12 +66,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-core \
       port:py${python.version}-bob-extension
 
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -93,5 +86,4 @@ if {$subport ne $name} {
     }
 
 }
-
 

@@ -25,7 +25,6 @@ post-fetch {
     system -W "${worksrcpath}" "git submodule update --init"
 }
 
-
 depends_lib-append  port:zlib
 
 cmake.out_of_source yes

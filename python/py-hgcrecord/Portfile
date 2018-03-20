@@ -13,7 +13,6 @@ license                 GPL-2
 supported_archs         noarch
 maintainers             nomaintainer
 
-
 if {${subport} eq ${name}} {
     replaced_by         py-hgsubversion
     PortGroup           obsolete 1.0

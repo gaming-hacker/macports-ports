@@ -46,7 +46,6 @@ if {$subport == "py27-gtkspell"} {
     set python.branch dummy
 }
 
-
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin      ${python.prefix}/bin/python${python.branch}
 

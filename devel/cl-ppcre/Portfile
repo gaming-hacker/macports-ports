@@ -32,7 +32,6 @@ variant sbcl description {Compile using Steel Bank Common Lisp} {
         depends_build port:sbcl
 }
 
-
 extract   {}
 use_configure       no
 build     {}

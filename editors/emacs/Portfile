@@ -95,7 +95,6 @@ post-destroot {
     delete ${destroot}${prefix}/share/man/man1/ctags.1.gz
 }
 
-
 variant x11 description {Builds emacs as a X11 program with Lucid widgets} {
     configure.args-delete   --without-x
     configure.args-append   --with-x-toolkit=lucid \
@@ -177,7 +176,6 @@ variant dbus description {Builds emacs with D-Bus support} {
     configure.args-append   --with-dbus
     depends_lib-append      port:dbus
 }
-
 
 if {$subport eq "emacs-app" || $subport eq "emacs-app-devel"} {
     categories-append   aqua

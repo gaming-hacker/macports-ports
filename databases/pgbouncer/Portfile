@@ -18,7 +18,6 @@ long_description	pgbouncer is a PostgreSQL connection pooler. \
 homepage		http://pgbouncer.projects.postgresql.org/
 master_sites		http://pgfoundry.org/frs/download.php/3085/
 
-
 checksums           md5     5083110b5b4f2127234bfc7b1f451f8d \
                     sha1    610198c3f2186d70267275f554e23bd43598e4b5 \
                     rmd160  055796e23dd7029d3f4a2c882cf24399a5481cb1

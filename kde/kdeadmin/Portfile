@@ -22,7 +22,6 @@ use_configure       no
 extract {           file mkdir ${worksrcpath}/${name} }
 build               {}
 
-
 depends_lib-append  port:kcron \
                     port:ksystemlog \
                     port:kuser

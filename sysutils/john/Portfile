@@ -71,7 +71,6 @@ destroot {
     system "chmod -R a+rX ${destroot}${prefix}/share/doc/john"
 }
 
-
 subport john-jumbo {
     conflicts           john \
                         john-devel

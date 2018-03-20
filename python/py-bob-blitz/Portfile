@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Bob Bindings for Blitz++ (a C++ array template library)
 
 long_description             This package contains a set of Pythonic bindings to the popular Blitz/C++ library. \
@@ -26,14 +25,11 @@ long_description             This package contains a set of Pythonic bindings to
 
 github.setup                 bioidiap bob.blitz 2.0.8 v
 
-
 python.versions 27 36
 python.default_version       27
 
-
 checksums                    rmd160  c9e4623287d1ad310ede54cc4da7b1320aadaf26 \
                              sha256  1ddc01ee7e2dc612faf87c11d8ca588d47ba9ccc55d65876fcd5136e8898b71b
-
 
 if {$subport ne $name} {
 
@@ -55,7 +51,6 @@ if {$subport ne $name} {
 
        # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 

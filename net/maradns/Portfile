@@ -78,7 +78,6 @@ post-extract {
 		${worksrcpath}/doc/en/man/mararc.5
 }
 
-
 configure.pre_args
 
 build.args	CPPFLAGS=${configure.cppflags} \

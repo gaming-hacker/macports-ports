@@ -40,7 +40,6 @@ compilers.choose    cc
 mpi.setup
 mpi.enforce_variant hdf5
 
-
 livecheck.type      regex
 livecheck.url       http://ab-initio.mit.edu/wiki/index.php/H5utils
 livecheck.regex     {The latest version is h5utils ([0-9.]+),}

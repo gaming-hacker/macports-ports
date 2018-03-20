@@ -82,7 +82,6 @@ checksums \
 		secretspotwm-default-0.80.tar.gz \
 		    md5 8ff1a55d36a7a32832cd74a1cc4d0976
 
-
 worksrcdir      WindowMaker-extra-${version}
 build { }
 

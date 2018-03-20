@@ -26,7 +26,6 @@ checksums           rmd160  894dbdb9d3fcb1259287639156c1eed192672800 \
 python.default_version  27
 python.versions 27 36
 
-
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools \
                         port:pkgconfig

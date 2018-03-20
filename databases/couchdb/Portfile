@@ -81,7 +81,6 @@ post-activate {
     }
 }
 
-
 notes "
 Run the following command to load the CouchDB launchd plist\
 in order to start the service now and at system startup:

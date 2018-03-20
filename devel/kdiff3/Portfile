@@ -23,7 +23,6 @@ master_sites        sourceforge:project/kdiff3/kdiff3/${version}
 checksums           rmd160 17fc05df3fd8f052e2010834ba8efe2481e4f434 \
                     sha256 802c1ababa02b403a5dca15955c01592997116a24909745016931537210fd668
 
-
 variant kde description {Build the KDE version} {}
 
 if {[variant_isset kde]} {

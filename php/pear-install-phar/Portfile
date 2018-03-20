@@ -12,7 +12,6 @@ master_sites        http://pear.php.net
 
 subport php5-pear {}
 
-
 subport php56-pear {
 
     set php.port        [lindex [split $subport -] 0]

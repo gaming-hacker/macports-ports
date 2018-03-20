@@ -57,7 +57,6 @@ configure.env       PERL_AUTOINSTALL=--skipdeps
 configure.pre_args  Makefile.PL
 configure.args      INSTALLDIRS=vendor
 
-
 configure.cmd       ${prefix}/bin/perl${mp.perl.select}
 post-destroot {
 

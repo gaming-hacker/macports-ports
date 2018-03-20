@@ -29,7 +29,6 @@ checksums           rmd160  7e5f8d48405239076b9ce0dc21978369e36fcd7a \
 depends_build       path:apache2/bin/httpd:apache2
 worksrcdir          ${distname}/native
 
-
 configure.args      --with-apxs=${prefix}/apache2/bin/apxs
 
 set apachedir       apache2
@@ -54,7 +53,6 @@ destroot {
     xinstall -m 644 ${worksrcpath}/../conf/workers.properties.minimal \
         ${destroot}${prefix}/${apachedir}/conf/workers.properties.sample
 }
-
 
 notes "\
 Example file ${prefix}/${apachedir}/conf/workers.properties.sample has been\

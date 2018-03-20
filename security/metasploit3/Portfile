@@ -35,7 +35,6 @@ depends_run         port:ruby \
                     port:rb-rails \
                     port:readline
 
-
 patchfiles          patch-data-msfweb-config-environment.rb \
                     patch-msfcli \
                     patch-msfconsole \

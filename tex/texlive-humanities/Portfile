@@ -27,5 +27,4 @@ depends_lib         port:texlive-latex
 
 texlive.binaries    diadia
 
-
 texlive.texmfport

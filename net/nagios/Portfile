@@ -85,7 +85,6 @@ post-destroot {
     }
 }
 
-
 notes "
 ************************************************************
 The basic steps to complete the installation are below.  But Nagios is\
@@ -96,8 +95,6 @@ to fully understand Nagios.
 
 IMPORTANT: A user and group called 'nagios' has been created and you must run\
        nagios as that user.
-
-
 
 1) Setup Apache's httpd.conf file for Nagios (restart Apache when done)
 
@@ -132,7 +129,6 @@ Alias /nagios \"${prefix}/share/nagios\"
 # End Nagios stuff
 #
 
-
 2) Configure the Nagios sample files in ${prefix}/etc/nagios.
 
 a) First, backup the Nagios sample files.
@@ -152,7 +148,6 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
 
    sudo nagios -v ${prefix}/etc/nagios/nagios.cfg
 
-
 3) Set user 'nagiosadmin' as a \"superuser\" to browse all hosts/services in
    ${prefix}/etc/nagios/cgi.cfg
 
@@ -164,7 +159,6 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    authorized_for_all_service_commands= nagiosadmin
    authorized_for_all_host_commands= nagiosadmin
 
-
 4) Create a 'nagiosadmin' Apache user/password to correspond with the Nagios Apache\
    user created above
 
@@ -174,7 +168,6 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    additional users login names match Nagios contact names to restrict web viewing to your\
    host's by contact.
 
-
 5) Set Nagios to start at system boot, and start Nagios
 
    Run launchctl so Nagios will start at system boot
@@ -183,12 +176,9 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    You may now start Nagios manually with this command (or a reboot):
     sudo ${prefix}/var/nagios/nagios.init start
 
-
 6) You may now login as 'nagiosadmin' to the Nagios web interface at http://localhost/nagios
 
-
 NOTE: The SMTP server Postfix is required to enable Nagios email notifications
-
 
 File Locations:
 

@@ -47,7 +47,6 @@ post-patch {
     reinplace "s|@PREFIX@|${prefix}|g" ${worksrcpath}/dev.mk.in
 }
 
-
 build.target-append ccache.1
 
 conflicts           ccache

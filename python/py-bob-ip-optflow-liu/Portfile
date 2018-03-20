@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Python bindings to the optical flow framework by Ce Liu \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.ip.optflow.liu 2.0.5 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  29b29cdb657b6cc003a5aa945aa47cd8fcc38805 \
                              sha256  b5eedc44bbe0a9a5cef316771f72451e5f41d66a941e0b78c889502de68b412e
-
-
 
 if {$subport ne $name} {
 
@@ -73,12 +69,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-io-video \
       port:py${python.version}-bob-ip-color
 
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -105,7 +97,5 @@ if {$subport ne $name} {
 
     }
 
-
 }
-
 

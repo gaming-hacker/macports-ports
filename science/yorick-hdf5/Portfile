@@ -31,7 +31,6 @@ configure.cmd       ${prefix}/bin/yorick
 configure.pre_args
 configure.args      -batch make.i
 
-
 post-destroot {
     xinstall -d ${destroot}${prefix}/lib/yorick/packages/installed/
     xinstall -m 644 ${worksrcpath}/${uname}.info \

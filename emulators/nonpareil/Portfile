@@ -68,7 +68,6 @@ build.target
 
 destroot.args		prefix=${prefix} destdir=${destroot}
 
-
 post-patch {
 	reinplace s|@PREFIX@|${prefix}|g ${worksrcpath}/src/SConscript
 }

@@ -88,7 +88,6 @@ post-activate {
     }
 }
 
-
 notes "
 Run the following command to load the CouchDB launchd plist\
 in order to start the service now and at system startup:
@@ -100,5 +99,4 @@ livecheck.type          regex
 livecheck.url           "https://git-wip-us.apache.org/repos/asf?p=couchdb.git;a=commit;h=refs/heads/master"
 livecheck.version       ${git.branch}
 livecheck.regex         <tr><td>commit</td><td class="sha1">(\[a-f0-9\]{40})</td></tr>
-
 

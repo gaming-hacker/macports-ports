@@ -67,7 +67,6 @@ if {${name} ne ${subport} || ${DEV_VERSION}} {
                             port:py${python.version}-pkgconfig \
                             port:hdf5
 
-
     post-destroot {
         system -W ${destroot}${prefix} "mkdir -p share/doc/${subport}"
         copy ${worksrcpath}/lzf/LICENSE.txt \

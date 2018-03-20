@@ -33,7 +33,6 @@ platform darwin intel {
         configure.args-append   --build=intel-unknown-darwin
 }
 
-
 configure.args	CPPFLAGS="-I${prefix}/include" LDFLAGS="-L${prefix}/lib" \
 		--disable-shared
 

@@ -39,7 +39,6 @@ configure.args-append   -DUSE_PCH=0 \
                          -DENABLE_ORACLE=0 \
                          ${qt_cmake_defines} .
 
-
 #
 # Postgresql - it should follow qt4-mac variants for this DB
 variant psql83 conflicts psql84 psql90 psql91 \

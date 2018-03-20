@@ -54,7 +54,6 @@ mpi.setup           require_fortran -openmpi -gfortran -clang -llvm
 # FIXME: +gfortran just needs smarter setting of cpp to the one from gcc;
 #clang and llvm only useful with +g95 currently (which is useless)
 
-
 # FIXME: this unnecessarily enforces scalapack also had same C compiler as we are using.
 if {[mpi_variant_isset]} {
     depends_lib-append  port:scalapack
@@ -92,7 +91,6 @@ post-extract {
 }
 
 test.run            yes
-
 
 #depends_build       port:gsed
 pre-test {

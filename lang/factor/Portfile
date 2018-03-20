@@ -64,7 +64,6 @@ destroot {
  	copy ${factor_dir}/misc/vim ${destroot}${prefix}/share/vim/vimfiles 
 }
 
-
 livecheck.type      regex
 livecheck.url       ${homepage}
 livecheck.regex     ${name}-src-(\\d+\\.\\d+)${extract.suffix}

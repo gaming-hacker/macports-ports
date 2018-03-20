@@ -75,7 +75,6 @@ post-patch {
     reinplace "s|Somesite's NRG Home Page|NRG Home Page|g" \
         "${worksrcpath}/examples/Makefile.ops.in"
 
-
 #### Fix paths for proper destrooting ####
     reinplace "s|exec_prefix = @prefix@|exec_prefix = ${destroot}@prefix@|g" \
         ${worksrcpath}/Makefile.in
@@ -142,7 +141,6 @@ have permissions to create graphs when you click an RRD file link.
 
    su  (must be root for this operation)
    find ${prefix}/var/nrg -print | xargs chown <nrg-user>:<nrg-group>
-
 
 #### To use NRG ####
 

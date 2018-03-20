@@ -90,5 +90,4 @@ configure.args              $COMMON_ARGS \
                             --disable-analyzer \
                             --enable-player
 
-
 livecheck.type      none

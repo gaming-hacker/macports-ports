@@ -98,11 +98,9 @@ destroot {
         ${destroot}${prefix}/var/nfsen/fmt
 }
 
-
 notes "
 To complete the nfsen installation follow the steps below. Read the documentation\
 at ${homepage} for operational instructions.
-
 
 1) Install PHP (not covered).
 

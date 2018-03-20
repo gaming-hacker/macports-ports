@@ -24,7 +24,6 @@ master_sites        http://download.linuxaudio.org/lilypond/sources/v${branch}/
 checksums           rmd160  a355201334fd0beac36c96f844c75d8e27b4ea9d \
                     sha256  329d733765b0ba7be1878ae3f457dbbb875cc2840d2b75af4afc48c9454fba07
 
-
 depends_build       port:bison \
                     port:t1utils \
                     port:texi2html \

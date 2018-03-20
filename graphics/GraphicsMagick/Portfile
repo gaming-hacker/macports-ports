@@ -67,7 +67,6 @@ configure.args          --with-jbig=no \
                         --without-umem \
                         --enable-shared=yes
 
-
 post-configure {
     reinplace -E {s|-arch [a-z0-9_]+||g} \
         ${worksrcpath}/magick/GraphicsMagick-config \

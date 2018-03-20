@@ -11,7 +11,6 @@ revision            0
 # This is already a date code, so sticking with dates.
 epoch               20111202
 
-
 python.versions 27 36
 
 PortGroup           qt4 1.0

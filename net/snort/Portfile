@@ -29,7 +29,6 @@ depends_lib      port:daq \
 
 add_users snort group=snort home=${prefix}/var/snort shell=/sbin/nologin realname=Snort\ user
 
-
 set if en1
 startupitem.create  yes
 startupitem.executable ${prefix}/bin/${name} -i ${if} -c ${prefix}/etc/snort/snort.conf -l ${prefix}/var/log/snort -u snort -g snort --pid-path ${prefix}/var/run

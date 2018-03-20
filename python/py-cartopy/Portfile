@@ -58,7 +58,6 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-nose \
                             port:py${python.version}-pep8
 
-
     # Adding documentation
     post-destroot {
         set dest_doc ${destroot}${prefix}/share/doc/${subport}

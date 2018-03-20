@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Image drawing utilities \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,13 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.ip.draw 2.0.3 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  cded496c918b73afd91403487a02ac1078ee85b1 \
                              sha256  ed9cf238d700771a300322ec5e2994c5730bd2704dd7fcfb81ad3c6a0c6fe857
-
 
 if {$subport ne $name} {
 
@@ -68,11 +65,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-extension \
       port:py${python.version}-bob-blitz
 
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -96,5 +90,4 @@ if {$subport ne $name} {
     }
 
 }
-
 

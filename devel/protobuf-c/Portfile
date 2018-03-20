@@ -15,7 +15,6 @@ long_description \
         Library ABI and API compatibility changes are expected until \
         version 1.0 is released.
 
-
 github.setup    protobuf-c protobuf-c ${version} v
 github.tarball_from releases
 homepage        https://github.com/protobuf-c/protobuf-c

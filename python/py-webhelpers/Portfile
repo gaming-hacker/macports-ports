@@ -22,7 +22,6 @@ livecheck.regex         {WebHelpers/(.+)"}
 livecheck.type          regex
 livecheck.url           ${homepage}
 
-
 distname                WebHelpers-${version}
 master_sites            pypi:W/WebHelpers/
 checksums               rmd160  9df2b54f2fefba26aaf668a92ee9c8a94ebe87ac \

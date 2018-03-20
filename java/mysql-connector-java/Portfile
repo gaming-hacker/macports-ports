@@ -33,7 +33,6 @@ depends_lib			bin:java:kaffe \
 					port:junit \
 					port:jakarta-log4j
 
-
 set javaLibs		${prefix}/share/java
 
 use_configure		no

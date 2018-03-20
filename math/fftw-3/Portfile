@@ -66,7 +66,6 @@ variant pfft_patches description {Apply patches recommended for use as dependenc
 # MPICC env var
 mpi.setup
 
-
 configure.args \
     --enable-threads \
     --disable-fortran \

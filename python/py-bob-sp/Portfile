@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Bindings for Bob's signal processing utilities \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,13 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.sp 2.0.4 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  f5c107635e36a199661dff16038fbfef8479b28c \
                              sha256  7299d97e9c46b2e98f44f30da0cbbedbee41d85bcd7435b4e1c1cd811391f772
-
 
 if {$subport ne $name} {
 
@@ -68,12 +65,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-blitz \
       port:py${python.version}-bob-core
 
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -92,6 +85,4 @@ if {$subport ne $name} {
     }
 
 }
-
-
 

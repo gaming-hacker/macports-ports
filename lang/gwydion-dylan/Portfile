@@ -19,7 +19,6 @@ depends_lib                    lib:libgc:boehmgc
 homepage                       http://www.gwydiondylan.org/
 master_sites                   http://www.gwydiondylan.org/downloads/src/tar/
 
-
 patchfiles                     patch-Defaults.in.diff \
                                patch-ltmain.sh.diff \
                                d2c/compiler/main/patch-main.dylan.diff \
@@ -38,7 +37,6 @@ patchfiles                     patch-Defaults.in.diff \
 checksums                      gwydion-dylan-2.3.11.tar.gz md5 0be55ce757671efb415ec6616b6277c4
 platforms                      darwin
 
-
 configure.cppflags             "-Wno-long-double"
 configure.args                 --without-gtk --disable-gtktest --disable-duim \
                                --includedir="${prefix}/include/dylan" \
@@ -46,7 +44,6 @@ configure.args                 --without-gtk --disable-gtktest --disable-duim \
                                --with-gc-prefix=${prefix} --enable-d2c --enable-mindy
 
 build.target                   default
-
 
 variant gtk {
         depends_lib-append     lib:libgtk.2:gtk2 lib:libglib.2:glib2

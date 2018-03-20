@@ -134,7 +134,6 @@ if {[is_sapi_subport]} {
                         patch-${php}-libxml-2.9.diff \
                         patch-${php}-pcre-8.30.diff
 
-
     # https://trac.macports.org/ticket/31590
     # Tested all subports (except oracle) and they built with clang-425.  The reported failure was with Xcode 4.2.
     # Xcode 4.3 may work, but leaving it blacklisted due to lack of testing
@@ -188,7 +187,6 @@ if {[is_sapi_subport]} {
     configure.env-append \
                     PHP_MYSQLND_ENABLED=yes
 
-
     configure.universal_args-delete --disable-dependency-tracking
 
     test.run            yes
@@ -198,7 +196,6 @@ if {[is_sapi_subport]} {
     variant debug description {Enable debug support (useful to analyze a PHP-related core dump)} {
         configure.args-append   --enable-debug
     }
-
 
     if {${subport} ne ${php}} {
         notes-append "If this is your first install, you need to enable ${subport} in your web server."
@@ -278,7 +275,6 @@ PHP ${branch} has reached end-of-life. Please upgrade to PHP ${php.oldest_suppor
 To learn how to update your code, please read the following guide:
 
     http://php.net/manual/en/migration[php.suffix_from_branch ${php.latest_stable_branch}].php
-
 
 "
     }
@@ -517,7 +513,6 @@ subport ${php}-enchant {
             ${destroot}${examplesdir}
     }
 }
-
 
 subport ${php}-exif {
     categories-append       graphics

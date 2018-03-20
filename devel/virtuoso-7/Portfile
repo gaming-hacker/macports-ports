@@ -29,7 +29,6 @@ depends_lib         port:ImageMagick \
                     port:openldap \
                     path:lib/libssl.dylib:openssl
 
-
 configure.args-append   --disable-all-vads \
                         --program-transform-name='s/isql/isql-vt/\;s/isqlw/isqlw-vt/'
 

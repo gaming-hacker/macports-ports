@@ -29,7 +29,6 @@ long_description \
     applications to securely access data without having to store usernames and \
     passwords.
 
-
 if {${name} ne ${subport}} {
     depends_lib-append \
         port:gettext \

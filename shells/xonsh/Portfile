@@ -40,7 +40,6 @@ subport             xonsh-devel {
                         BASHwards-looking shell language and command prompt.
 }
 
-
 variant python34 conflicts python35 python36 description {Use Python 3.4} {
     python.default_version 34
 }

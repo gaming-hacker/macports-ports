@@ -38,7 +38,6 @@ universal_variant no
 
 conflicts-delete  $subport
 
-
 patchfiles        patch-aqbanking-config.cmake.in.diff
 
 subport           aqbanking5-gtk {

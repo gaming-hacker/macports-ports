@@ -53,7 +53,6 @@ configure.post_args ..
 
 build.dir           ${worksrcpath}/build
 
-
 # We force deletion of all residual (previously not properly destrooted) rkward files
 # possibly installed on the buildbots, which otherwise fail for the rkward port
 # [this should be deleted once the buildbots are clean again]:

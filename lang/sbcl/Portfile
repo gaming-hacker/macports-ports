@@ -21,7 +21,6 @@ long_description \
     trades the time for a long initial compilation for blazingly fast loading \
     of its binary runtime fasl representation.
 
-
 homepage        http://www.sbcl.org
 master_sites    sourceforge:project/sbcl/sbcl/${version}:sbcl
 

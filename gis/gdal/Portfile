@@ -248,7 +248,6 @@ variant openjpeg \
     configure.args-append   --with-openjpeg=${prefix}
 }
 
-
 variant xerces description {Enable xerces XML support for GML file format} {
     depends_lib-append      path:include/xercesc/util/XercesVersion.hpp:xercesc3
     configure.args-delete   --without-xerces
@@ -337,7 +336,6 @@ configure.optflags  -DGDAL_COMPILATION
 variant perf description {Optimize for speed} {
     configure.optflags      -O3 -pipe -march=native -DGDAL_COMPILATION
 }
-
 
 default_variants    +expat
 

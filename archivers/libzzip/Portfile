@@ -3,7 +3,6 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-
 github.setup        gdraheim zziplib 0.13.69 v
 name                libzzip
 version             0.13.69
@@ -18,7 +17,6 @@ long_description    The ZZIPlib provides read access on ZIP-archives. The \
                     supported by Zlib. It provides functions that transparently \
                     access files being either real files or zipped files, \
                     both with the same filepath.
-
 
 checksums           rmd160  d401fc327138d5b997c0cd318f808f95cea1f937 \
                     sha256  c5cf1c11a6019862e5b6daea4d7c72124affe687b9637effc7ad3caf2b7b1d96 \

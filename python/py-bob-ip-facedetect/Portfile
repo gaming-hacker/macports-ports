@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Face Detection using a Cascade of Boosted LBP Features \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,13 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.ip.facedetect 2.0.3 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  f7a6e71731c18f085d566212e250ee8e4370fafe \
                              sha256  32b7f03bb4cedca85d806f314509fa5485038a2c69f6e219449866a34d2a98ff
-
 
 if {$subport ne $name} {
 
@@ -76,12 +73,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-ip-color \
       port:py${python.version}-bob-ip-draw
 
-
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
@@ -105,5 +98,4 @@ if {$subport ne $name} {
     }
 
 }
-
 

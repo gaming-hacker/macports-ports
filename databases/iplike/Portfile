@@ -29,7 +29,6 @@ checksums           md5     89a7760f22ccc60a7d07ce85a2cdad55 \
 
 configure.args      --with-pgsql=${prefix}/lib/postgresql90/bin/pg_config
 
-
 post-activate {
         ui_msg "\nNOTE:\n\
                 This package (${name}-${version})will not work until you run\n\

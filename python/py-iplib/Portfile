@@ -14,7 +14,6 @@ long_description	iplib is a Python module useful to convert amongst \
 				many different notations and to manage couples of \
 				address/netmask in the CIDR notation.
 
-
 homepage		http://www.mimante.net/soft/iplib/
 master_sites	${homepage} http://distfiles.macports.org/python/
 distname		iplib-${version}

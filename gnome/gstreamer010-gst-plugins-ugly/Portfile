@@ -28,7 +28,6 @@ use_bzip2           yes
 checksums           rmd160  39fadcf4205bbe0fd2dc079296c816d8668cc59d \
                     sha256  1ca90059275c0f5dca71d4d1601a8f429b7852baed0723e820703b977e2c8df0
 
-
 depends_build       port:pkgconfig
 depends_lib         port:gstreamer010-gst-plugins-base \
                     port:a52dec \

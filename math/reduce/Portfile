@@ -158,7 +158,6 @@ This installs the files that are independent of the Lisp system used.
     }
 }
 
-
 subport reduce-csl {
     license                 {BSD LGPL-2.1}
     revision                1
@@ -212,7 +211,6 @@ This installs the Codemist Standard Lisp version of REDUCE.
     }
 }
 
-
 subport reduce-psl {
     license                 BSD
     revision                0
@@ -252,7 +250,6 @@ This installs the Portable Standard Lisp version of REDUCE.
         reinplace "s|@LIBEXECDIR@|${prefix}/libexec/${name}|g" ${bindir}/redpsl
     }
 }
-
 
 subport reduce-addons {
     license                 GPL

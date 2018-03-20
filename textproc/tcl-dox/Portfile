@@ -20,7 +20,6 @@ checksums       md5     94d0befbb7b7734e17fd37379e649d2f \
 
 depends_build   bin:flex:flex
 
-
 patchfiles \
     patch-0001-require-at-least-one-white-space-and-or-tab-after-a-.diff \
     patch-0002-print-whitespace-after-namespace-declaration.diff \

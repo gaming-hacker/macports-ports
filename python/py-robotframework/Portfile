@@ -28,7 +28,6 @@ universal_variant   yes
 master_sites        pypi:r/robotframework
 distname            ${internal_name}-${version}
 
-
 if {${name} ne ${subport}} {
     post-destroot {
         reinplace "s;${destroot};;" ${destroot}${python.prefix}/bin/pybot
