@@ -38,8 +38,6 @@ use_bzip2           yes
 # Ugly but it works.
 
 
-python.versions 27 36
-
 if {${name} ne ${subport}} {
     depends_lib-append  port:omniORB
 
