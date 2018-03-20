@@ -3,14 +3,14 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        gdraheim zziplib 3d426708328d103156f808e867f836a0aa48da88
+
+github.setup        gdraheim zziplib 0.13.69 v
 name                libzzip
-version             0.13.68
-revision            1
+version             0.13.69
 categories          archivers devel
 platforms           darwin
 license             LGPL
-maintainers         mojca openmaintainer
+maintainers         {@mojca mojca} openmaintainer
 description         library providing read access on ZIP-archives
 
 long_description    The ZZIPlib provides read access on ZIP-archives. The \
@@ -19,15 +19,15 @@ long_description    The ZZIPlib provides read access on ZIP-archives. The \
                     access files being either real files or zipped files, \
                     both with the same filepath.
 
-checksums           rmd160  4a8d36629c6ac3a26da2d9acc5f7d35c425aa05c \
-                    sha256  cc03a0070caaaddbd409ecd2663f5b4ce46340b2e1b95164c7eed4fe0ce300ab \
-                    size    1128542
 
-depends_build-append \
-                    port:pkgconfig \
+checksums           rmd160  d401fc327138d5b997c0cd318f808f95cea1f937 \
+                    sha256  c5cf1c11a6019862e5b6daea4d7c72124affe687b9637effc7ad3caf2b7b1d96 \
+                    size    1132209
+
+depends_build       port:pkgconfig \
                     port:python27
 
-depends_lib-append  port:zlib
+depends_lib         port:zlib
 
 set docdir ${prefix}/share/doc/${name}
 

@@ -1,10 +1,10 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
-
+PortGroup           active_variants 1.1
+PortGroup           cxx11 1.1
 PortGroup           github 1.0
 PortGroup           wxWidgets 1.0
-PortGroup           active_variants 1.1
 
 platform darwin {
     if {${os.major} < 13} {
@@ -27,19 +27,23 @@ long_description    Audacity is a free, easy-to-use, multi-track audio editor an
                     Numerous effects including change the speed or pitch of a recording. \n\
                     And more!
 
-subport             audacity-devel {
+subport audacity-devel {
     long_description A port of the Audacity audio editor aimed at development purposes.
 }
 
 
 if {${subport} eq "${name}"} {
+    conflicts       ${name}-devel
     # get the source tarball from github because it contains all required external libs
     # incl. those not in MacPorts.
     github.setup    audacity audacity 2.2.2 Audacity-
     checksums       rmd160  c48e8467fc06c1ffb11af2b0fba4ede77b66ee2f \
-                    sha256  7963cedab841aff181ea25b06991ba5ba56249533815ba5cdd82ec1282dbadd8
+
+    sha256  7963cedab841aff181ea25b06991ba5ba56249533815ba5cdd82ec1282dbadd8 \
+                    size    25941576
     set PPREFIX     ./
 } else {
+    conflicts       ${name}
     # git describe --tags : Audacity-2.2.2-336-g49eb7ddb6
     github.setup    audacity audacity 49eb7ddb61cf7d2d9468932ac340550ef48a8828
     version         2.2.2.336
@@ -48,7 +52,9 @@ if {${subport} eq "${name}"} {
     fetch.type      git
     distname        audacity-git
     set PPREFIX     devel/
+
     variant wx32 description {Use wxWidgets 3.2 - experimental!} {}
+
     livecheck.type  none
 
     pre-build {
@@ -102,6 +108,8 @@ depends_lib-append  port:freetype \
 depends_lib-append  port:expat \
                     path:lib/libavcodec.dylib:ffmpeg \
                     port:flac \
+                    port:freetype \
+                    port:harfbuzz \
                     port:lame \
                     port:libogg \
                     port:libsndfile \
