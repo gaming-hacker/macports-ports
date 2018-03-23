@@ -7,7 +7,7 @@ name                py-absl
 version             0.1.11
 platforms           darwin
 supported_archs     noarch
-license             Apache 2.0
+license             Apache-2.0
 maintainers         {@emcrisostomo gmail.com:enrico.m.crisostomo} openmaintainer
 
 description         Abseil Python Common Libraries
@@ -29,5 +29,11 @@ if {${name} ne ${subport}} {
     depends_build-append \
         port:py${python.version}-setuptools \
         port:py${python.version}-setuptools_scm
+
+    post-extract  {
+        file attributes ${worksrcpath}/PKG-INFO -permissions a+r
+        file attributes ${worksrcpath}/absl_py.egg-info/PKG-INFO -permissions a+r
+    }
+
     livecheck.type      none
 }
