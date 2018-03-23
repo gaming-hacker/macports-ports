@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
-# Copyright (c) 2013-2014 The MacPorts Project
+# Copyright (c) 2013-2014, 2016-2017 The MacPorts Project
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
