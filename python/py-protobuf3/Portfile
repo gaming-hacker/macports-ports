@@ -44,7 +44,8 @@ python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools \
-                    port:py${python.version}-google-apputils
+                    port:py${python.version}-absl
+
     depends_lib     port:protobuf3-cpp
 
     worksrcdir      ${worksrcdir}/python
