@@ -24,6 +24,7 @@ checksums           rmd160  cdd4fac4aa634be509ef8ee5d1569fc7a7d21c0c \
                     sha256  d0fe12b6bc6a4ba353d19e192d649e184ab7c6f1b38043e8440875f5eec8d811
 
 python.versions     36
+
 supported_archs     noarch
 
 if {${name} ne ${subport}} {
@@ -32,6 +33,7 @@ if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
     # TODO: not sure what exactly is with pyobjc; in trace mode I get some warnings that the package wanted to use it
     depends_lib-append      port:py${python.version}-pyobjc
+
     depends_run             port:py${python.version}-tz
 
     variant bash_completion {
@@ -53,8 +55,6 @@ if {${name} ne ${subport}} {
     python.link_binaries no
     python.move_binaries no
     post-destroot   {
-        # TODO: py-django uses ${subport}, but the two ports conflict at the moment;
-        # not sure if we should use docs/py35-django2 or if the number 2 can be dropped
         xinstall -m 644 -W ${worksrcpath} \
             AUTHORS INSTALL LICENSE README.rst \
             ${destroot}${prefix}/share/doc/${subport}
