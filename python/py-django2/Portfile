@@ -9,9 +9,9 @@ name                py-django2
 categories-append   www
 platforms           darwin
 license             BSD
-# TODO: danchr is maintainer of py-django, so it would make most sense to keep him a maintainer of py-django2 as well
-# but only if he agrees to maintaining it; we need to clarify that first before merging
-maintainers         {danchr @danchr} openmaintainer
+
+# feel free to take over this port
+maintainers         {@mojca mojca} openmaintainer
 
 description         Django is a high-level Python Web framework
 long_description    Django is a high-level Python Web framework that \
