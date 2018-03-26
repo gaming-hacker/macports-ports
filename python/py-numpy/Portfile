@@ -35,11 +35,23 @@ compilers.clear_archflags  no
 python.consistent_destroot yes
 
 if {${name} ne ${subport}} {
-    patchfiles-append   patch-numpy_core_setup.py.diff \
-                        patch-numpy_distutils_fcompiler_gnu.py.diff \
-                        patch-numpy_tests_test_scripts.py.diff
-
-    compilers.setup         require_fortran -clang clang60
+    if {${python.version} == 26 } {
+        github.setup        numpy numpy 1.11.3 v
+        checksums           rmd160 8cc323d5944301aefa1f66f17d4af14c364c6b32 \
+                            sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1 \
+                            size   4387593
+        patchfiles-append   patch-numpy_core_setup.py.26.diff \
+                            patch-numpy_distutils_fcompiler_gnu.py.26.diff \
+                            patch-numpy_tests_test_scripts.py.26.diff \
+                            patch-fcompiler_g95.26.diff
+    } else {
+        patchfiles-append   patch-numpy_core_setup.py.diff \
+                            patch-numpy_distutils_fcompiler_gnu.py.diff \
+                            patch-numpy_tests_test_scripts.py.diff \
+                            patch-fcompiler_g95.diff
+    }
+    compilers.setup         require_fortran -clang -gcc44 -gcc45 \
+                            -gcc46 -gcc47 -gcc48 -g95 -clang37
 
     patchfiles-append       patch-f2py_setup.py.diff
 
@@ -205,5 +217,5 @@ variant."
 
     livecheck.type        none
 } else {
-    livecheck.regex       archive/[join ${github.tag_prefix} ""](\[\\d+(?:\\.\\d+)*"\]+)${extract.suffix}"
+    github.livecheck.regex  {([\d+(?:.\d+)*"]+)}
 }

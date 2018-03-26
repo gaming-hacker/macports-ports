@@ -47,8 +47,8 @@
 #   Add specified variants to the conflicts list of all variants created by this PortGroup.
 #   Useful if another compiler variant is created explicitly in the Portfile. Must come before compilers.setup.
 # compilers.setup {args}
-#   Possible arguments: any compiler variant name with a minus removes it from the list of variants, e.g. -llvm.
-#   -gcc, -dragonegg, -clang remove all compilers of that category. -fortran removes gfortran and g95.
+#   Possible arguments: any compiler variant name with a minus removes it from the list of variants, e.g. -clang.
+#   -gcc, -clang remove all compilers of that category. -fortran removes gfortran and g95.
 #   Blacklisted compilers are automatically removed, as are ones that do not support the compilers in compilers.choose:
 #   e.g. if choose is just f90, clang variants will not be added.
 #   List "default_fortran" to make a Fortran variant be selected by default.
@@ -150,24 +150,7 @@ foreach v ${clang_versions} {
     set cdb(clang$v,f90)      ""
 }
 
-set cdb(llvm,variant)  llvm
-set cdb(llvm,compiler) llvm-gcc-4.2
-set cdb(llvm,descrip)  "Apple native llvm-gcc 4.2"
-set cdb(llvm,depends)  bin:llvm-gcc-4.2:llvm-gcc42
-set cdb(llvm,dependsl) ""
-set cdb(llvm,libfortran) ""
-set cdb(llvm,dependsd) ""
-set cdb(llvm,dependsa) ""
-set cdb(llvm,conflict) ""
-set cdb(llvm,cc)       llvm-gcc-4.2
-set cdb(llvm,cxx)      llvm-g++-4.2
-set cdb(llvm,cpp)      llvm-cpp-4.2
-set cdb(llvm,objc)     llvm-gcc-4.2
-set cdb(llvm,fc)       ""
-set cdb(llvm,f77)      ""
-set cdb(llvm,f90)      ""
-
-# and lastly we add a gfortran and variant for use with clang* and llvm;
+# and lastly we add a gfortran and g95 variant for use with clang*; note that
 # we don't need gfortran when we are in an "only-fortran" mode
 set cdb(gfortran,variant)  gfortran
 set cdb(gfortran,compiler) gfortran
@@ -225,7 +208,7 @@ proc compilers.setup_variants {args} {
                     set i [lsearch -exact $c $clangcomp]
                     set c [lreplace $c $i $i]
                 }
-            } elseif {[string match clang* $variant] || $variant == "llvm"} {
+            } elseif {[string match clang* $variant]} {
                 set i [lsearch -exact $c gfortran]
                 set c [lreplace $c $i $i]
             }
@@ -238,6 +221,8 @@ proc compilers.setup_variants {args} {
                 }
             }
 
+            # TODO: all the compilers are in portconfigure now, so see if below
+            # is even needed now;
             # for each compiler, set the value if not empty; we can't use
             # configure.compiler because of dragonegg and possibly other new
             # compilers that aren't in macports portconfigure.tcl
@@ -505,9 +490,9 @@ proc compilers.setup {args} {
         set add_list {}
         set remove_list ${compilers.variants}
 
-        # if we are only setting fortran compilers, then we are in "only fortran
-        # mode", i.e. we just need +gccXY and +dragoneggXY for the fortran
-        # compilers so we remove +clangXY and +llvm
+        # if we are only setting fortran compilers, then we are in "only
+        # fortran mode", i.e. we just need +gccXY for the fortran compilers so
+        # we remove +clangXY
         if {[compilers.is_fortran_only]} {
             # remove gfortran since that only exists to "complete" clang/llvm
             set remove_list [remove_from_list ${compilers.fortran_variants} gfortran]

@@ -18,7 +18,7 @@ homepage            https://pyscard.sourceforge.io/
 checksums           rmd160  1c8ed2bf25edfe573b59f0010ceca4f5a3fac25b \
                     sha256  2ce5b157e77e1ecb70fdf7f6275f1f701f23fa80918d56d54f8b9ea88a8277ff
 
-python.versions     27 34 35 36
+python.versions     27 36
 
 if {${name} ne ${subport}} {
     depends_build-append \
