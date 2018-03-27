@@ -68,7 +68,8 @@ configure.args \
     --enable-openmp \
     --disable-debug \
     --enable-fma \
-    --enable-fortran
+    --enable-fortran \
+    --disable-docs
 
 configure.cflags-append \
     -fno-common \
@@ -99,6 +100,8 @@ test.run     yes
 test.target  check
 
 use_parallel_build yes
+
+# configure.compiler  macports-clang-${user.ver.clang}
 
 platform darwin {
   if {${os.major} < 10} {
@@ -162,7 +165,7 @@ subport fftw-3-single {
 subport fftw-3-long {
 
 configure.args-delete --enable-sse2 --enable-avx2
-
+configure.cflags-append -march=native -mtune=native
     depends_lib port:fftw-3
 
     pre-configure {
