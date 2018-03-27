@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup			python 1.0
 PortGroup           github 1.0
 
-github.setup        berdario pew 1.1.0
+github.setup        berdario pew 1.1.5
 github.tarball_from releases
 name                py-${github.project}
 
@@ -18,16 +18,16 @@ license             MIT
 
 python.versions 27 36
 
-maintainers         openmaintainer @esafak
+maintainers         openmaintainer {gmail.com:esafak @esafak}
 description         A tool to manage multiple virtual environments written in pure python
 long_description    $description
-checksums           rmd160 2633e21c3d4c6d288c8469603eaed078a7ef93f4 \
-                    sha256 755869c2aeed7ec0ad5d7bff0f2bfb75030b079b4d81691fd313d906bf637d90
+checksums           rmd160 4a132a0f5c552cf76122d432c057a0c294ad6cd5 \
+                    sha256 24b0fe0305a293acf4cc95136e73a313b4a749c5aa5ae2a56b4e384224b2381e
 use_zip             yes
 
-test.run			yes
+test.run            yes
 
 if {${name} ne ${subport}} {
-	depends_lib-append		port:py${python.version}-virtualenv-clone
+    depends_lib-append      port:py${python.version}-virtualenv-clone
+    livecheck.type  none
 }
-
