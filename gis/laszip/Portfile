@@ -11,10 +11,11 @@ revision            1
 name                laszip
 categories          gis
 maintainers         {vince @Veence}
-description         LASzip is a library to handle compressed point cloud data
-
 platforms           darwin
 license             GPL-2+
+
+description         a library to handle compressed point cloud data
+long_description    LASzip is ${description}.
 
 homepage            http://www.laszip.org/
 
