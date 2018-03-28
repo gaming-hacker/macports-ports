@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-awscli
-version             1.14.58
+version             1.14.65
 platforms           darwin
 license             Apache-2
 maintainers         pixilla openmaintainer
@@ -16,11 +16,11 @@ homepage            https://aws.amazon.com/cli/
 master_sites        pypi:a/awscli
 distname            awscli-${version}
 
-checksums           rmd160 1df2f03ae391cd1af16bee2b5aa3e3254269d843 \
-                    sha256 5753c4b1ef06cd27d3a683af4da199b6ac0243316577e51f18bf16e7e19b5136 \
-                    size   588152
+checksums           rmd160 d16049e191d163713b72fdb0692d5124f96710ec \
+                    sha256 65145e71fdee88baa197603ad2e361e387ff22b9c86774276101a9c2e4485324 \
+                    size   588352
 
-python.versions 27 36
+python.versions     27 35 36
 
 if {${name} ne ${subport}} {
 
