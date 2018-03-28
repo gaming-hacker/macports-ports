@@ -23,19 +23,11 @@ distfiles           git-${version}${extract.suffix} \
                     git-manpages-${version}${extract.suffix}
 
 checksums           git-${version}${extract.suffix} \
-<<<<<<< HEAD
-    rmd160  bfc6cbbf54c0c9ea10952005a91f93db141c88be \
-    sha256  5560578bd21468d98637f41515c165d32f69caff0838b8989dee5ce10022c717 \
-    git-manpages-${version}${extract.suffix} \
-    rmd160  e64a6fe167af57b2d1d88f634850d97cb429db0d \
-    sha256  42eee5134cc8b3b64c736025edfbfee86c2ecb76e37980a0aff26c86b5abcb05 \
-=======
                     rmd160  65229a65b041dc7cf0ee028b79f60f0eb424c1db \
                     sha256  d65d99e9e5b081c1f14ea018973806e942a2eb7d0da2ebc01bd2525adee62d48 \
                     git-manpages-${version}${extract.suffix} \
                     rmd160  1b59d8efc8f4286fc317cd38ad6fef9274aef204 \
                     sha256  5f61897e681d5144bd70babf760345637e879a8b6e40ca6f0b76b53554649395 \
->>>>>>> master
 
 perl5.require_variant   yes
 perl5.conflict_variants no

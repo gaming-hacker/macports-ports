@@ -119,7 +119,6 @@ configure.args      --enable-vendor \
                     --default-linker=${configure.cc} \
                     --disable-codegen-tests \
                     --disable-docs \
-
                     --llvm-root=${prefix}/libexec/llvm-6.0 \
                     --release-channel=stable
 

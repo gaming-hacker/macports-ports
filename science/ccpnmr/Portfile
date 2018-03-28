@@ -28,7 +28,7 @@ patchfiles          ccpnmr.patch
 use_configure       no
 
 compilers.choose    cc cxx
-compilers.setup     -clang -gfortran -llvm
+compilers.setup     -clang
 
 set python.branch	${user.ver.python}
 set python.prefix	${frameworks_dir}/Python.framework/Versions/${python.branch}

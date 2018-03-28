@@ -25,7 +25,7 @@ long_description   \
     GRIB-2 can reduce the file size by up to 80% (NAM, JPEG2000 compression).
 
 compilers.choose    fc f77 f90
-compilers.setup     require_fortran -clang -llvm
+compilers.setup     require_fortran -clang
 
 depends_build       port:gctpc
 depends_lib         port:jasper \
