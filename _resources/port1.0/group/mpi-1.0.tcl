@@ -69,25 +69,25 @@ set mpi.fc   mpif90
 set mpi.exec mpiexec
 set mpi.name ""
 
-# set mpidb(mpich,variant)  mpich
-# set mpidb(mpich,descrip)  "MPICH"
-# set mpidb(mpich,name)     mpich
-# set mpidb(mpich,conflict) universal
+set mpidb(mpich,variant)  mpich
+set mpidb(mpich,descrip)  "MPICH"
+set mpidb(mpich,name)     mpich
+set mpidb(mpich,conflict) ""
 
-# set mpidb(mpich_devel,variant)  mpich_devel
-# set mpidb(mpich_devel,descrip)  "MPICH-devel"
-# set mpidb(mpich_devel,name)     mpich-devel
-# set mpidb(mpich_devel,conflict) universal
+set mpidb(mpich_devel,variant)  mpich_devel
+set mpidb(mpich_devel,descrip)  "MPICH-devel"
+set mpidb(mpich_devel,name)     mpich-devel
+set mpidb(mpich_devel,conflict) ""
 
 set mpidb(openmpi,variant)  openmpi
 set mpidb(openmpi,descrip)  "OpenMPI"
 set mpidb(openmpi,name)     openmpi
-set mpidb(openmpi,conflict) universal
+set mpidb(openmpi,conflict) ""
 
-# set mpidb(openmpi_devel,variant)  openmpi_devel
-# set mpidb(openmpi_devel,descrip)  "OpenMPI-devel"
-# set mpidb(openmpi_devel,name)     openmpi-devel
-# set mpidb(openmpi_devel,conflict) universal
+set mpidb(openmpi_devel,variant)  openmpi_devel
+set mpidb(openmpi_devel,descrip)  "OpenMPI-devel"
+set mpidb(openmpi_devel,name)     openmpi-devel
+set mpidb(openmpi_devel,conflict) ""
 
 foreach mpiname [array names mpidb *,variant] {
     lappend mpi.variants $mpidb($mpiname)
@@ -331,7 +331,7 @@ proc mpi.setup {args} {
         # if no fortran variant is set, then we need to remove the fortran
         # variants from the list of variants that shouldn't be blacklisted
         if {$fv eq ""} {
-            set cl [remove_from_list $cl {gfortran g95}]
+            set cl [remove_from_list $cl {gfortran}]
             set cv [c_variant_name]
         }
 

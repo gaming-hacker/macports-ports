@@ -4,9 +4,10 @@ PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                openssl
+<<<<<<< HEAD
 epoch 1
 # version             1.1.0g
-version             1.0.2n
+version             1.0.2o
 
 # Please revbump these ports when updating OpenSSL.
 #  - freeradius (#43461)
@@ -44,13 +45,10 @@ master_sites        ${homepage}/source \
 
 # checksums           sha1    e8240a8be304d4317a750753321b073c664bfdd4 \
 #                     sha256  de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af
-checksums           sha1    0ca2957869206de193603eca6d89f532f61680b1 \
-                    rmd160  90fbf1df8986e04921e14e4c6e408458b5b31f6c \
-                    sha256  370babb75f278c39e0c50e8c4e7493bc0f18db6867478341a832a982fd15a8fe
-
-# patchfiles          install-headers-HFS+.patch \
-#                     parallel-building.patch \
-#                     remove-duplicate-bn_print-doc.patch
+checksums           sha1    a47faaca57b47a0d9d5fb085545857cc92062691 \
+                    rmd160  aac1564f006766e66f5a319def41e5d99122915d \
+                    sha256  ec3f5c9714ba0fd45cb4e087301eb1336c317e0d20b575a125050470e8089e4d \
+                    size    5329472
 
 configure.ccache    no
 configure.perl      /usr/bin/perl
