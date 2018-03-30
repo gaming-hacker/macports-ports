@@ -1,3 +1,6 @@
+Don't try to make the app bundle. It fails if the port isn't already installed,
+and the resulting app bundle isn't installed anywhere.
+https://github.com/Velocidex/c-aff4/issues/17
 --- tools/pmem/Makefile.am.orig	2018-02-12 16:11:48.000000000 -0600
 +++ tools/pmem/Makefile.am	2018-03-28 10:44:16.000000000 -0500
 @@ -63,16 +63,4 @@
