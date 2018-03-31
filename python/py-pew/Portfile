@@ -28,6 +28,8 @@ use_zip             yes
 test.run            yes
 
 if {${name} ne ${subport}} {
-    depends_lib-append      port:py${python.version}-virtualenv-clone
+    depends_lib-append      port:py${python.version}-virtualenv-clone \
+                            port:py${python.version}-virtualenv \
+                            port:py${python.version}-setuptools
     livecheck.type  none
 }
