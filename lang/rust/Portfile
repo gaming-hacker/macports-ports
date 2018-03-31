@@ -29,13 +29,7 @@ homepage            https://www.rust-lang.org/
 depends_build       path:bin/cmake:cmake \
                     bin:python2.7:python27
 
-<<<<<<< HEAD
 depends_lib         port:llvm-6.0
-=======
-# Currently LLVM 4.0 is required, see this issue for LLVM 5.0 support:
-# https://github.com/rust-lang/rust/issues/43370 .
-depends_lib         port:llvm-4.0
->>>>>>> master
 
 master_sites        https://static.rust-lang.org/dist
 
