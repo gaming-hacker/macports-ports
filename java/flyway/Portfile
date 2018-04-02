@@ -24,7 +24,7 @@ distname            ${name}-commandline-${version}
 worksrcdir          ${name}-${version}
 checksums           rmd160 d840fc4583cbef59018f90590f770d6844a7114c \
                     sha256 5b9bf9fcc6d361b1160c90c59a669126687961ef3effe8eae562cdd2ceffb6fe \
-                    size   16021455
+size   16021455
 depends_run         bin:java:kaffe
 
 use_configure       no

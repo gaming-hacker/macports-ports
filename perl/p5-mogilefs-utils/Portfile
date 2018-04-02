@@ -18,7 +18,7 @@ long_description    This package contains two tools to manage MogileFS: mogadm (
 
 checksums           rmd160  730164a55fa4c7084ef1b08738c82e18cf40663e \
                     sha256  a2619add8d42d3209809f1aeeae79ae046ce86c18738adece635d21afc0540a2 \
-                    size    40653
+size    40653
 
 if {${perl5.major} != ""} {
     depends_lib-append \

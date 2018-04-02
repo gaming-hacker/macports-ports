@@ -15,7 +15,7 @@ extract.suffix      .tgz
 
 checksums           rmd160  0e7c682b98a893b73b6df00933d517d7c8189ee4 \
                     sha256  db3ad71428ec6c323d0cbf09016910e5b7edd9b6d3b35443a28ad8c3cce296aa \
-                    size    50385
+size    50385
 
 platforms           darwin
 

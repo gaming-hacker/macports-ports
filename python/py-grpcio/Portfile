@@ -20,21 +20,21 @@ if {${python.version} eq 27} {
 
     checksums           rmd160 bbc2e05b59d7996bbb4fe9f82679c3732566959f \
                         sha256 a1bc37c9910d0fbf4d9e80d5822f92c6e01e28dd1eb01323636ed19666b537cb \
-                        size   1496422
+size   1496422
 } elseif {${python.version} eq 35} {
     master_sites        https://pypi.python.org/packages/92/cb/4a1759a15ad86d735ea3af1077b6800a157e9a8a74f8a1ff0bdd8e10077c
     distname            grpcio-${version}-cp${python.version}-cp${python.version}m-macosx_10_7_intel
 
     checksums           rmd160 bc1e4008084fdd1802b59b69adc5d63f2410bb3a \
                         sha256 d9e3105f6de6cb759b028702bdd21cb36d27e010227669e43c675b9957a3c180 \
-                        size   1663723
+size   1663723
 } elseif {${python.version} eq 36} {
     master_sites        https://pypi.python.org/packages/70/e6/8dcf5585e468a0ec976cbfc6dd5a6ee0853e2bf405b464f81665f531e9ba
     distname            grpcio-${version}-cp${python.version}-cp${python.version}m-macosx_10_11_x86_64
 
     checksums           rmd160 747f98dd0937216fcf6ca59d9f085104263ba3f8 \
                         sha256 1bc36e512741f82c1d73f42df536aa2ab75d840f0d35c149b5d0bee1aed16862 \
-                        size   1489573
+size   1489573
 }
 
 extract.suffix      .whl

@@ -22,7 +22,7 @@ master_sites        ${homepage}public/
 
 checksums           rmd160  259522262be93b4b53e637a62bc679de0355074b \
                     sha256  579e53c00764b78d79e8e388b9202c760a9c9efdaca83b32d948f92e0dfa5fa7 \
-                    size    2730934
+size    2730934
 
 depends_build       port:intltool \
                     port:pkgconfig

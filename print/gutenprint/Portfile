@@ -23,7 +23,7 @@ use_bzip2           yes
 
 checksums           rmd160  9aa7aa406f5ce9ae9147394a115ea8688069e0c7 \
                     sha256  d9a9745d83668096e89e762e380b40629ea2dcb44a1b7027b9068c543cd02742 \
-                    size    6995005
+size    6995005
 
 depends_build       port:pkgconfig
 

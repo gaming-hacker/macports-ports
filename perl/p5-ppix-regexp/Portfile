@@ -21,7 +21,7 @@ long_description \
 
 checksums           rmd160  78d71eee0c4e9edf3de408bc1be44a3383fd769a \
                     sha256  37992de526a368d120506e8c6c0498266e4de81942658cf0af1db89b12302f15 \
-                    size    212535
+size    212535
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-list-moreutils \

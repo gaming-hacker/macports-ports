@@ -20,7 +20,7 @@ long_description    libRETS is RETS client library written in C++ that allows ra
 
 checksums           rmd160  336f0216575e5808860d9384cfba2b7536bc66fa \
                     sha256  f908c879d98c63a20f5419d56c1da307ad73ee60d4f5ed693434e3fb6d09645b \
-                    size    904015
+size    904015
 
 depends_build       port:autoconf \
                     port:automake \

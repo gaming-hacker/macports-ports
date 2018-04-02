@@ -23,7 +23,7 @@ master_sites        http://download.osgeo.org/gdal/${version}
 checksums           md5     c8f2c9f0243ce651404f68d16fa9b499 \
                     rmd160  733e8918561d3d5aead3ce2d98a41c9b636e32f5 \
                     sha256  0eb2b541e87db4c0d1b3cdc61512b88631e6f7d39db5986eeb773aada0a7995f \
-                    size    54973
+size    54973
 
 use_configure       yes
 

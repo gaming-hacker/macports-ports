@@ -43,7 +43,7 @@ ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
 checksums rmd160  4c91430a99b0af72414210cc62b6ca2a1647c9d4 \
 sha256  e8311c2dd536367808a633aa3f4f0f6b1a34d04ed06b3db59c21d43cab41d4ce \
-    size    8611096
+size    8611096
 
 depends_lib   port:bzip2 \
               port:djvulibre \

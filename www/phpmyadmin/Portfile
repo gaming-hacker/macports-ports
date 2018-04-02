@@ -27,7 +27,7 @@ use_xz              yes
 
 checksums           rmd160  a759edf912055aa4027a39b4e478b9073bc81f82 \
                     sha256  f19b503f0afb0dd3389d4bb11dab3f438d36e85eef11a5c400c592fd5f539398 \
-                    size    6370604
+size    6370604
 
 # The php variants deliberately do not conflict
 

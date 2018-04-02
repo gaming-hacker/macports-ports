@@ -24,7 +24,7 @@ use_xz yes
 
 checksums           rmd160  87f0aadaaeb4fd16650b3622a45510bd470c32d1 \
                     sha256  b032e4bcebe2229f87047439979a1246ddcbf599e7e538baa3f2abfac9a003a2 \
-                    size    1281872
+size    1281872
 
 patchfiles          patch-meson-post-install.diff \
                     patch-build-scripts-python3.diff \

@@ -20,7 +20,7 @@ use_xz              yes
 
 checksums           rmd160  4ce820cfa7a718401ce37694915dedbcb528bf55 \
                     sha256  fb9546d5fedbb00de6c6cec3850f2cdfea234af221e645d15721686a8df77ef9 \
-                    size    4443780
+size    4443780
 
 depends_build-append \
                     port:pkgconfig \

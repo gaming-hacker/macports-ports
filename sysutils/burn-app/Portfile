@@ -22,7 +22,7 @@ use_zip         yes
 
 checksums       rmd160  d50980ba43d58fd1d930ec6ed992834f19ac545e \
                 sha256  90f59e140cb25b2cc7919769d023bf98ae1b678619b6719b37e8aeec466d8e94 \
-                size    170724909
+size    170724909
 
 worksrcdir      Source.localized
 xcode.configuration     Release

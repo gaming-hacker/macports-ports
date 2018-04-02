@@ -25,7 +25,7 @@ homepage            https://chrony.tuxfamily.org/
 master_sites        http://download.tuxfamily.org/chrony/
 checksums           rmd160  c25f7e84cd82940631bc0a1c7abfb71e7a797e21 \
                     sha256  329f6718dd8c3ece3eee78be1f4821cbbeb62608e7d23f25da293cfa433c4116 \
-                    size    433882
+size    433882
 
 depends_lib         port:readline
 

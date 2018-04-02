@@ -27,7 +27,7 @@ Provides the release version, which is typically updated every month or so.
     conflicts       uhd-devel
     checksums       rmd160 3d98ef1796cab742498888932ea93016fd68fc43 \
                     sha256 67b47f04892a1919df2401b0bbcba4780e840537289e3493f3e60615fd09f9f9 \
-                    size   9299475
+size   9299475
 
     # set the version override string
 
@@ -51,7 +51,7 @@ Provides the UHD GIT maint or master branch, depending on which is more advanced
     version         20180327
     checksums       rmd160 b9aa7cb070eab27bc47009db9bf6d22a5d9581b4 \
                     sha256 6f285c2dada4e7aff79699b8272f107dd35a76af8d071a3765a7b866b4a9adc4 \
-                    size   9288197
+size   9288197
 
     # overload the github livecheck branch.
     # when master is more advanced, comment this out.

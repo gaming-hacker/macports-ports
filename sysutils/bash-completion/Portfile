@@ -21,7 +21,7 @@ use_xz yes
 
 checksums       rmd160  6ec05ded0b734ebeb9caf7d84bf09d937f923ddb \
                 sha256  c01f5570f5698a0dda8dc9cfb2a83744daa1ec54758373a6e349bd903375f54d \
-                size    286128
+size    286128
 
 depends_run     port:bash
 

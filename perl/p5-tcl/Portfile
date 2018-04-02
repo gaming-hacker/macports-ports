@@ -15,7 +15,7 @@ long_description    ${description}
 
 checksums           rmd160  99b7ca01492896c7c0144a0b6ca3e3da4ab5010e \
                     sha256  1c6d58010747553392fc25d7bf9e9297330a7236846703dce2c8a683ec545684 \
-                    size    158232
+size    158232
 
 if {${perl5.major} != ""} {
     depends_lib-append \

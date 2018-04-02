@@ -18,7 +18,7 @@ homepage            http://www.raceintospace.org
 
 checksums           rmd160  8989a36c664927b057cf789de4a0fab07a8a7876 \
                     sha256  ee106089d90aa53ebbfd9854a6b57883510fc2f58d3b0f481c8ad859b9133faa \
-                    size    63501320
+size    63501320
 
 depends_build-append \
                     port:boost

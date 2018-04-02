@@ -24,7 +24,7 @@ master_sites    sourceforge
 distname        launch4j-${version}-macosx
 extract.suffix  .tgz
 checksums \
-                md5 fbe35ef1200196c121682152f94d157e \
+md5 fbe35ef1200196c121682152f94d157e \
                 sha1 7e9faaa807547c687c141fe082098f94ca2d2bb1 \
                 rmd160 e76310b9a447ab58957205533f2027ac4e5e43b1
 

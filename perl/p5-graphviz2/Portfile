@@ -20,7 +20,7 @@ extract.suffix      .tgz
 
 checksums           rmd160  7e720a1cd2d4b168225856faf5ef70276a805c4c \
                     sha256  37576e30a84bebcf94895505c3ce7507bc50fee4b690179c332d93f5cb16ad8b \
-                    size    232466
+size    232466
 
 if {${perl5.major} != ""} {
     depends_lib-append \

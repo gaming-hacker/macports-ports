@@ -39,7 +39,7 @@ require_active_variants tk x11
 
 checksums           rmd160  2cc9c73c2faabc42fe58689de5fe5c3e357d8ce5 \
                     sha256  5b94adef770613cfb80eb66d3f58aa2960ad954ae5dee215f2d7c85081f3dd9f \
-                    size    3934389
+size    3934389
 
 universal_variant   no
 

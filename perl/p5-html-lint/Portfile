@@ -14,7 +14,7 @@ long_description    HTML::Lint is ${description}.
 
 checksums           rmd160  8c243571a2516abdf67e79ea657e5e2ffbeda7aa \
                     sha256  031dd83b973238bcb49be41081390084ad8633b1c60086965571ca51e2f434dc \
-                    size    30549
+size    30549
 
 if {${perl5.major} != ""} {
     depends_lib-append \

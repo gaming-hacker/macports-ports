@@ -25,7 +25,7 @@ if {${subport} eq ${name}} {
     github.setup    libusb libusb 1.0.22 v
     checksums       rmd160 15d8595131575d3a3479a5fde33aee0e7e58834a \
                     sha256 32fe50b229bc5358b1865dc40cb308c685823b9bbb4069e7ecdb81d8c48b113f \
-                    size   380661
+size   380661
 
     conflicts      libusb-devel
 
@@ -46,7 +46,7 @@ if {${subport} eq ${name}} {
     version        20180324
     checksums      rmd160 15d8595131575d3a3479a5fde33aee0e7e58834a \
                    sha256 32fe50b229bc5358b1865dc40cb308c685823b9bbb4069e7ecdb81d8c48b113f \
-                   size   380661
+size   380661
 
     conflicts      libusb
 

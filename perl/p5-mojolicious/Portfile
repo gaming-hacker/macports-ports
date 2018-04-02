@@ -33,7 +33,7 @@ long_description    The Mojolicious MVC web framework is all about minimalism \
 
 checksums           rmd160  c8a4e57cfd85bf5ac254a4a39a6e64e1260dcbbe \
                     sha256  25d8ab46fd7c340abcbbe740f690c197df6ff40a9c3dddf907629211bf3ad905 \
-                    size    711511
+size    711511
 
 if {${perl5.major} != ""} {
     depends_lib-append \

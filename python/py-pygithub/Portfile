@@ -16,7 +16,7 @@ long_description    ${description}
 
 checksums           rmd160  fd0dccac2cb99524d139281d68508125bf150752 \
                     sha256  58ffb4576917d668213d722953724ee9de5dcce0033847f2ac799e5be46ebdee \
-                    size    2678064
+size    2678064
 
 python.versions 27 36
 

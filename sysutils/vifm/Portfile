@@ -22,7 +22,7 @@ use_bzip2           yes
 
 checksums           rmd160  68bbf929102ceee0590604ab8ee60f0a88529880 \
                     sha256  ab10c99d1e4c24ff8a03c20be1c202cc15874750cc47a1614e6fe4f8d816a7fd \
-                    size    971539
+size    971539
 
 depends_lib         port:libmagic \
                     port:ncurses

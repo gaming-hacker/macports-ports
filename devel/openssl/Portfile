@@ -47,7 +47,7 @@ master_sites        ${homepage}/source \
 checksums           sha1    a47faaca57b47a0d9d5fb085545857cc92062691 \
                     rmd160  aac1564f006766e66f5a319def41e5d99122915d \
                     sha256  ec3f5c9714ba0fd45cb4e087301eb1336c317e0d20b575a125050470e8089e4d \
-                    size    5329472
+size    5329472
 
 configure.ccache    no
 configure.perl      /usr/bin/perl

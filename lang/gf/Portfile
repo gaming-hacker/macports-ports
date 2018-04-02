@@ -14,7 +14,7 @@ master_sites        ${homepage}download/
 
 checksums           rmd160  e7ebabfa02399de300c3cc7fd14b70fb317a8778 \
                     sha256  11bcc828b623e89e1f508d0c85a9d1acc3547b4defdb707b72fc9ce66e74e5ed \
-                    size    46221210
+size    46221210
 
 depends_lib-append \
                     port:hs-alex \

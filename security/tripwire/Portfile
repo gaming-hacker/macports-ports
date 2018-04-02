@@ -16,7 +16,7 @@ long_description    Tripwire software is a tool that checks to see what \
                     has changed on your system. The program monitors key \
                     attributes of files that should not change, \
                     including binary signature, size, expected change of \
-                    size, etc.  Tripwire is originally known as an \
+size, etc.  Tripwire is originally known as an \
                     intrusion detection tool, but can be used for many \
                     other purposes such as integrity assurance, change \
                     management, policy compliance and more.

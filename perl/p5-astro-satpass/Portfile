@@ -20,7 +20,7 @@ homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  f5a70d4b3a783bc9c5710ada053eaf00c0721d3e \
                     sha256  d0b00fd3650ea5a52bd8efdd6ad39ad48bfd9f3ff2f2612a27fe3ab39994da66 \
-                    size    549283
+size    549283
 
 variant script description {Install the deprecated satpass script and optional dependencies} {}
 

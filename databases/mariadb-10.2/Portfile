@@ -47,7 +47,7 @@ if {$subport eq $name} {
 
     checksums           rmd160  4b81a5650d87dd8cd7917daf8f8e70775e45847f \
                         sha256  2ab22d7fbacfabc30fe18f71a8afb173250074502d889457e3cde2e203d341ec \
-                        size    72818636
+size    72818636
 
     depends_lib-append  port:zlib port:tcp_wrappers port:ncurses port:judy
     depends_run-append  port:mysql_select

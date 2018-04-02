@@ -12,7 +12,7 @@ platforms	darwin
 
 long_description  'Libelf' lets you read, modify or create ELF files in an \
 		   architecture-independent way. The library takes care of \
-		   size and endian issues, e.g. you can process a file for \
+size and endian issues, e.g. you can process a file for \
 		   SPARC processors on an Intel-based system.
 
 master_sites	http://www.mr511.de/software

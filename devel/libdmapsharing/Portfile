@@ -21,7 +21,7 @@ platforms           darwin
 
 checksums           rmd160  482bc15201b4b7d880f5f07cb0607ff41201cd6f \
                     sha256  7567888f588d0ee0a017385c09c68ceec0383b3e9b47f0df061a4386a69b1610 \
-                    size    781900
+size    781900
 
 depends_build       port:pkgconfig
 

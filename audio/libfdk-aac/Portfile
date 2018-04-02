@@ -21,7 +21,7 @@ master_sites        sourceforge:project/opencore-amr/fdk-aac
 distname            fdk-aac-${version}
 checksums           rmd160  cd792eac8339d65b6997c8769c8eda4565fb9201 \
                     sha256  aab61b42ac6b5953e94924c73c194f08a86172d63d39c5717f526ca016bed3ad \
-                    size    2091618
+size    2091618
 
 livecheck.type      regex
 livecheck.url       https://sourceforge.net/projects/opencore-amr/files/fdk-aac/

@@ -18,7 +18,7 @@ platforms       darwin
 
 checksums       rmd160 496e8104d1a1de9d593c752c9bd29b36fb6aa4dc \
                 sha256 18aa1938b5e3c27bfe7d7344506d20bab1df22fcc9a9c107c9b8e97ca5f8e5f3 \
-                size   2721144
+size   2721144
 
 patchfiles      patch-src__Makefile.in
 

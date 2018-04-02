@@ -26,7 +26,7 @@ master_sites        ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/
 # See https://trac.macports.org/wiki/PortfileRecipes#stealth-updates
 checksums           rmd160  23383b4052461df43e756af4a1b166a7156f11c6 \
                     sha256  1ab88d4c6bfb617da6b9ce84a02f3427eeded2ee3bbbb769115d25505f08583d \
-                    size    5346266
+size    5346266
 
 description         Molecular graphics visualisation tool
 long_description    Molden is a package for displaying Molecular Density from \

@@ -67,35 +67,35 @@ foreach arch ${architectures} {
 checksums           ${distname}${extract.suffix} \
                     rmd160  e4c92648fbd3499dcc54c6efdce53d5cdde010c4 \
                     sha256  3ea53d45e8d2e9a41afb3340cf54b9745f845b552d802d607707cf04450761ef \
-                    size    67512394
+size    67512394
 
 checksums-append \
                     rust-std-${ruststd_version}-i686-apple-${os.platform}${extract.suffix} \
                     rmd160  2873bd63f74c1d225a0a3392bb8cfa5534679dc1 \
                     sha256  e454d4f5fd1e66f48d6ea8f102a96a15325cf969079f4485aab8e4486b96e2d8 \
-                    size 66640892 \
+size 66640892 \
                     rustc-${rustc_version}-i686-apple-${os.platform}${extract.suffix} \
                     rmd160  e4622e6082c4666e06bc173ee669f8198661d04a \
                     sha256  618b0dea1e1563d22cb58c1d54344c096e7a4e2d138a17413a349a3edc753745 \
-                    size 48081807 \
+size 48081807 \
                     cargo-${cargo_version}-i686-apple-${os.platform}${extract.suffix} \
                     rmd160  17458dce93eb7e644385bd82ecb511311765e5e6 \
                     sha256  6b7a0a97e0d87cca7b7a5e090d168be6cdbb03298381bece33df493447e17e76 \
-                    size    3909191
+size    3909191
 
 checksums-append \
                     rust-std-${ruststd_version}-x86_64-apple-${os.platform}${extract.suffix} \
                     rmd160  5b2d5f9e7ed73112fc970d5d74eef392b5c490a8 \
                     sha256  c2859aeb763edc07ec289a929c66f269373de67908d3a9be069868a8c103c833 \
-                    size 67553850 \
+size 67553850 \
                     rustc-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
                     rmd160  f15d358053c4979a027299c68ba0dd8ca50df444 \
                     sha256  61d8774c6e348addc1e82fe598b5d007f30d3d8992d95f0530048236dedf4e0d \
-                    size 49076336 \
+size 49076336 \
                     cargo-${cargo_version}-x86_64-apple-${os.platform}${extract.suffix} \
                     rmd160  ac5eff8ae2489845f9761c275b03677a50309c1a \
                     sha256  b6f7c662ea75a94f5a5e41c2fee95f09a5ba168429ac8cdd41f6ba2c78d1b07f \
-                    size    4215369
+size    4215369
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} < 11} {

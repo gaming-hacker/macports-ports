@@ -20,7 +20,7 @@ long_description    Timezone Database to be used with PHP's date and time \
 
 checksums           rmd160  f68be86e5565ee2b94d6cde7f58715d9fdeba528 \
                     sha256  70403ae74aa6a8ec50ba24299afda266e252b73da1990d619a2d4d663b274dcc \
-                    size    421147
+size    421147
 
 configure.args-append --enable-timezonedb
 

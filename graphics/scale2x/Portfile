@@ -9,7 +9,7 @@ maintainers      nomaintainer
 description      utility to increase the size of small bitmaps
 long_description \
 	Scale2x is real-time graphics effect able to increase the \
-	size of small bitmaps guessing the missing pixels without \
+size of small bitmaps guessing the missing pixels without \
 	interpolating pixels and blurring the images.
 homepage         http://scale2x.sourceforge.net/
 platforms        darwin

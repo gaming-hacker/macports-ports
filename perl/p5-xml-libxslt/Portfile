@@ -19,7 +19,7 @@ long_description    This module is an interface to the gnome project's \
 
 checksums           rmd160  34a69033d848908ac831cdc3d43dc531f59c56d0 \
                     sha256  2a5e374edaa2e9f9d26b432265bfea9b4bb7a94c9fbfef9047b298fce844d473 \
-                    size    114068
+size    114068
 
 platforms           darwin
 

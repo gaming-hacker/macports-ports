@@ -22,7 +22,7 @@ long_description \
     and ironically, is written mostly in Python.
 checksums               rmd160  cc125343ad114f371a7a86bea53f49ec02fafb35 \
                         sha256  23ed7e2bdbd5b2b0d1a3ee0667af4402d19dcc6561e1f2b31f8b2a6faf946994 \
-                        size    5915531
+size    5915531
 
 patchfiles              src-__init__.py.diff
 

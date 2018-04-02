@@ -67,7 +67,7 @@ subport volk-gnss-sdr-next {
     revision            1
     checksums           rmd160 13c34f43b5c7cb51fd9841b095d6c149a95ec352 \
                         sha256 dc90e4f4c35671373ff6d73bc66c7a10414872d440fb7eafeb630dbfab41fce5 \
-                        size   3748395
+size   3748395
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-devel
 

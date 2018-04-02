@@ -27,7 +27,7 @@ depends_lib     port:libogg
 
 checksums       rmd160  ba4efb81513d0f431d4d04f6a7b2590c80778a43 \
                 sha256  6ed40e0241089a42c48604dc00e362beee00036af2d8b3f46338031c9e0351cb \
-                size    1634357
+size    1634357
 
 patchfiles          patch-docdir.diff
 

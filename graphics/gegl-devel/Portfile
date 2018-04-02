@@ -30,7 +30,7 @@ distname            ${git_name}-${git_commit}
 
 checksums           rmd160  054853a112d26c2937126977906581e88ed163b4 \
                     sha256  951c217311dd2165df3a782ee9dc5bcdda53c8330a9d07a51e07cf40519abb22 \
-                    size    24844879
+size    24844879
 
 depends_build       port:pkgconfig \
                     port:w3m \

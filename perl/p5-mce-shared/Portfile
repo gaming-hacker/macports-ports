@@ -15,7 +15,7 @@ platforms           darwin
 
 checksums           rmd160  031d5bb18f371c22d66074fc813755b903e57cb1 \
                     sha256  b38f4b28f2bcbfaa79a3c6556b39ce4ef464614492439a80af93a9abcf433892 \
-                    size    141447
+size    141447
 
 if {${perl5.major} != ""} {
 # Sereal is loaded automatically if available

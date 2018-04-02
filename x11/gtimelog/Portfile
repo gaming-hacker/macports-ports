@@ -19,7 +19,7 @@ supported_archs     noarch
 
 checksums           rmd160  0e1d328df0b5a8eef25e1946f64c0d6119e1f6e8 \
                     sha256  9e72c5182a866aaa50555e194eb9db83c92c34f6784bfadd5d48401c5e445b42 \
-                    size    285325
+size    285325
 
 test.run            yes
 

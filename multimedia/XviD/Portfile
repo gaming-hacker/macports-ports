@@ -29,7 +29,7 @@ use_bzip2           yes
 
 checksums           rmd160  76619091d1863330691bb2ec5c7d033a763321bf \
                     sha256  7c20f279f9d8e89042e85465d2bcb1b3130ceb1ecec33d5448c4589d78f010b4 \
-                    size    698846
+size    698846
 
 worksrcdir          xvidcore/build/generic
 

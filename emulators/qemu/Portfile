@@ -20,7 +20,7 @@ use_bzip2               yes
 
 checksums               rmd160  d336e58245ee7c6956a0792c5b9393e6e6806b5a \
                         sha256  d9df2213ceed32e91dab7bc9dd19c1af83f91ba72c7aeef7605dfaaf81732ccb \
-                        size    32819412
+size    32819412
 
 # Due to the bundled u-boot sources, the qemu tarball cannot be extracted on
 # a case-insensitive file system. The sources are not used, just shipped along

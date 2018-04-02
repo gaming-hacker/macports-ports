@@ -15,6 +15,6 @@ platforms           darwin
 
 checksums           rmd160  69d3a67aa2ac177ae13e77d48bb011592373ac71 \
                     sha256  e04ed7d42f1ff3150a303805f2689c28f80b92c511784d4641cb7f040d3e8ff6 \
-                    size    64589
+size    64589
 
 supported_archs     noarch

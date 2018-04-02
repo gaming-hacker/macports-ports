@@ -21,7 +21,7 @@ master_sites		macports:pguyot
 distfiles			gcc-${version}.tar.bz2
 worksrcdir			gcc-${gccversion}
 checksums			gcc-${version}.tar.bz2 \
-						md5 8fb231e1d8573b9e14e4d518a1c781a2 \
+md5 8fb231e1d8573b9e14e4d518a1c781a2 \
 						sha1 99334733b0e0b2befd7f5eb9c6fac407a71f563e \
 						rmd160 8d08aa976a84e9058ae95616c25e2c5a00ac9b4c
 

@@ -19,7 +19,7 @@ long_description    ${description}
 
 checksums           rmd160  1d2cf2e25f9d507768cd2d0a88709832b81210a5 \
                     sha256  ec3d6ddde7a46fa507eaa616b94d217296fdc0d8fbf88741367a9821206f28af \
-                    size    55797
+size    55797
 
 if {${perl5.major} != ""} {
     post-destroot {

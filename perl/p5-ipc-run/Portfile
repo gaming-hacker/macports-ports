@@ -15,7 +15,7 @@ supported_archs     noarch
 
 checksums           rmd160  21b668f6c028bad93d9729c8630f0f63d461a3ac \
                     sha256  49a1a8db583cd6119b2eca39f0e5e641b4d28cddd4343c52bb3fd9ec6561a72e \
-                    size    148346
+size    148346
 
 if {${perl5.major} != ""} {
     depends_build-append \

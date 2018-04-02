@@ -23,7 +23,7 @@ master_sites    gnome:sources/${name}/${branch}/
 use_bzip2       yes
 
 checksums \
-    md5 541858188f80090d12a33b5a7c34d42c \
+md5 541858188f80090d12a33b5a7c34d42c \
     sha1 9ce7b1a24a97f275f60b416fae82d81c1010cb65 \
     rmd160 62436da673b9a9e1d27259511401ff69f0397a1a
 

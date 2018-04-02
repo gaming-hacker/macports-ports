@@ -24,7 +24,7 @@ homepage            https://ccache.samba.org/
 
 checksums           rmd160  34491013b577f68ba541c0f6edc91ca58a95b17a \
                     sha256  569556fd54a08676e7ed26e17c3c3b08d7434be1e1c77b987109577660861f9a \
-                    size    347800
+size    347800
 
 # use_autoconf yes and setting autoconf.cmd to a non-default value will modify
 # depends_build, removing autoconf/automake/libtool. Avoid this by doing it

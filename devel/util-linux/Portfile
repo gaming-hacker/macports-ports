@@ -23,7 +23,7 @@ use_xz              yes
 
 checksums           rmd160  4d4296736572333b21c6325e13a6004f5c14f64c \
                     sha256  6c7397abc764e32e8159c2e96042874a190303e77adceb4ac5bd502a272a4734 \
-                    size    4550128
+size    4550128
 
 depends_lib-append  port:gettext \
                     port:ncurses

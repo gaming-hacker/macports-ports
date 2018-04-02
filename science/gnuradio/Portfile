@@ -60,7 +60,7 @@ subport gnuradio-devel {
     checksums \
         rmd160 a89ada7ed0e8419a49fe3735e84232e0f4ce41b3 \
         sha256 bae213791526151aaf46d5e7f0175cfb6fe7cd0a58e31337ed0c96f16a2c5173 \
-        size    4421012
+size    4421012
 
     # set the version override string
 
@@ -82,7 +82,7 @@ subport gnuradio-next {
     checksums \
         rmd160 92a27ac0c237092208f702c914a249b5b121f374 \
         sha256 a04c6f71c6369f0df941da7b92d6f88804b0f05ff8925d82798be8ac107eb046 \
-        size   3621723
+size   3621723
 
     # set the version override string
 

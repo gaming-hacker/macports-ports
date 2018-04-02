@@ -19,7 +19,7 @@ depends_lib         port:go port:docker
 
 checksums           rmd160  a6648b1eec2b4af8b10b30f5c7de1e8729d0b864 \
                     sha256  c3d9046e6c42c7aa7ad8083a8c13a3a894c4f35795b2b499ffa836453160809a \
-                    size    1730156
+size    1730156
 
 use_configure       no
 build.target        build

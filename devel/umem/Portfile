@@ -26,7 +26,7 @@ use_bzip2               yes
 checksums               sha1    cdb2a7d3c29df21fc2ca85bcff6d2367c89c5bbe \
                         rmd160  ddfe124cc5e8494bf73e7bcec2aec09b1bbbe745 \
                         sha256  d6148d236c6e49f0243c712b939f08d654498f3bea80b2319c74247220972cf2 \
-                        size    305999
+size    305999
 
 configure.args          --mandir=${prefix}/share/man
 

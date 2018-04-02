@@ -30,7 +30,7 @@ worksrcdir              ${github.project}-${version}
 
 checksums               rmd160  10d2094e10383ea9ee91ebda65c46d513524f87f \
                         sha256  ce7d8251d4d5b35f602ff521764910964da6d8a67397399855a6e8c5ff5db9bd \
-                        size    4085284
+size    4085284
 
 patchfiles              patch-no-deployqt.diff
 

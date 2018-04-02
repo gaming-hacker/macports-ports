@@ -19,7 +19,7 @@ master_sites        ${homepage}pub/
 
 checksums           rmd160  84dace7d3bf9ec256e38c24fa9130b5635a58e32 \
                     sha256  3170441dc882352ab0275556b6fc889b38b14203d936071b5fa12f39a5c86d47 \
-                    size    183127
+size    183127
 
 depends_lib         port:libre
 

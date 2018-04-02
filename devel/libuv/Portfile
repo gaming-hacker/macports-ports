@@ -33,7 +33,7 @@ subport libuv-devel {
     version         20180329
     checksums       rmd160 8104aab6376bad97d9aa445410de1bd99a13abab \
                     sha256 8ddd41a2bfa4605bdbc1f5aa7e1073f9f82261f8c78ec25323031b52821b0744 \
-                    size   1179157
+size   1179157
 
     long_description    ${long_description} \
         This port is kept up with the libuv GIT 'master' branch, is typically updated weekly to monthly.

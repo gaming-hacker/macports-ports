@@ -19,7 +19,7 @@ long_description    Net::SSH2 is a perl interface to the libssh2 library. \
 
 checksums           rmd160  cd7ab287deb422b5cdaffeac74f38b64d63a861f \
                     sha256  2fc85e1434b8a6e77142d85e3cea5a081ca71da5d02c4212b9970d3a3924baa6 \
-                    size    140601
+size    140601
 
 if {${perl5.major} != ""} {
     depends_lib-append \

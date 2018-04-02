@@ -20,7 +20,7 @@ long_description    The ZZIPlib provides read access on ZIP-archives. The \
 
 checksums           rmd160  d401fc327138d5b997c0cd318f808f95cea1f937 \
                     sha256  c5cf1c11a6019862e5b6daea4d7c72124affe687b9637effc7ad3caf2b7b1d96 \
-                    size    1132209
+size    1132209
 
 depends_build       port:pkgconfig \
                     port:python27

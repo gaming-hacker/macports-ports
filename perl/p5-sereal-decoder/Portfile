@@ -15,7 +15,7 @@ platforms           darwin
 
 checksums           rmd160  ff25c077927436ec294b30f50de2399cf183d56a \
                     sha256  043adad093d1bfdea1e637e1a6fe598291da244d18213e9e5486e313f0c25e9f \
-                    size    494527
+size    494527
 
 use_parallel_build  no
 

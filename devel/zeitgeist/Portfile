@@ -20,7 +20,7 @@ master_sites        http://cgit.freedesktop.org/zeitgeist/zeitgeist/snapshot/
 
 checksums           rmd160  fd76e340913ffe20b99b210ace88049b0838074f \
                     sha256  29078c1e2a92fbb355bd8011052d8a4b82a66ee21fe3d0bd9535b9fc846c087e \
-                    size    305825
+size    305825
 
 depends_build       port:pkgconfig
 

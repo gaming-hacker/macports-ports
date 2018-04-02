@@ -21,7 +21,7 @@ master_sites        gnome:sources/${name}/${branch}/
 
 checksums           rmd160  2cfd795122a58c1c90be532d488c56f54af6371e \
                     sha256  cd3a1ea6ecc268a2497f0cd018e970860de24a6d42086919d6bf6c8e8d53f4fc \
-                    size    712508
+size    712508
 
 use_xz              yes
 

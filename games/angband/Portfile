@@ -23,7 +23,7 @@ master_sites        ${homepage}downloads/${branch}
 
 checksums           rmd160  2d2e797e827b545e2b8d953a65b6a9023e38327d \
                     sha256  30bc0979e0845cdc43de2a8f65c4d54d03d24d402b32b8589fbbc368ccfa0e2a \
-                    size    19933783
+size    19933783
 
 post-patch {
     addgroup games

@@ -35,7 +35,7 @@ master_sites    gnu
 
 checksums       rmd160  5ad7e7417dea2f4c7cc4795b74a58b948d8d93b2 \
                 sha256  52017d33cab5b6a92455a1a904046d075357abf24153470178c0aadca2d479c5 \
-                size    36359351
+size    36359351
 
 # these dependencies are listed under depends_lib rather than depends_build
 # because gdb will link with libraries they provide if installed.

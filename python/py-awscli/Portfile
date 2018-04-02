@@ -18,7 +18,7 @@ distname            awscli-${version}
 
 checksums           rmd160 d16049e191d163713b72fdb0692d5124f96710ec \
                     sha256 65145e71fdee88baa197603ad2e361e387ff22b9c86774276101a9c2e4485324 \
-                    size   588352
+size   588352
 
 python.versions     27 35 36
 

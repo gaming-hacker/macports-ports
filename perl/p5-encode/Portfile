@@ -17,6 +17,6 @@ long_description    The "Encode" module provides the interfaces between \
 
 checksums           rmd160  fba9fe00d3aba86dfdaeb6c3cfa9b071f46539ee \
                     sha256  044d2fc743bdf5ce4509a0e717a7adb31d488dafae63fde794f57a9f47b2ecb7 \
-                    size    2045186
+size    2045186
 
 perl5.link_binaries no

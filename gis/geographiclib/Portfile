@@ -24,7 +24,7 @@ distname            GeographicLib-${version}
 
 checksums           rmd160  50c5c7d1eed519fc065879e2233887baf3228280 \
                     sha256  aec0ab52b6b9c9445d9d0a77e3af52257e21d6e74e94d8c2cb8fa6f11815ee2b \
-                    size    2448498
+size    2448498
 
 depends_build-append    port:doxygen
 

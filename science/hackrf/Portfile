@@ -34,7 +34,7 @@ if {${subport} eq ${name}} {
     version             20180328
     checksums           rmd160 af9e1f8e9bd181ff06043ad358628b438e970324 \
                         sha256 8d0907f3984052e59ab88941351ae9007130930cc31717355565aea0a5172422 \
-                        size   17055472
+size   17055472
 
 }
 

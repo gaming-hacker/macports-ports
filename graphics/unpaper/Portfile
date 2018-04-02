@@ -21,7 +21,7 @@ homepage            https://www.flameeyes.eu/projects/unpaper
 
 checksums           rmd160  29bfd4b927ecd5e56d49b0f8f540d5138544a8a4 \
                     sha256  9421fa66c8506f12dc0cc4c3814f1b41903420f6afeecd0db50fae49fcdb5740 \
-                    size    2704127
+size    2704127
 
 depends_build       port:libxslt \
                     port:netpbm \

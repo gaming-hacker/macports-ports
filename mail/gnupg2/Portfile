@@ -25,7 +25,7 @@ use_bzip2           yes
 
 checksums           rmd160  acce6fa439d0ae3bc3024629674a0996b973bb45 \
                     sha256  3fa189a32d4fb62147874eb1389047c267d9ba088f57ab521cb0df46f08aef57 \
-                    size    6584756
+size    6584756
 
 platform darwin {
     if {![variant_isset pinentry] && ![variant_isset pinentry_mac]} {

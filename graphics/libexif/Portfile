@@ -19,7 +19,7 @@ platforms           darwin
 
 checksums           rmd160  ba695586f061c06572149839a512d644a0a107f4 \
                     sha256  4786ef2e3f903ae64e1c7a7749cb7299718158128bbe2657f1a740b5bca2848a \
-                    size    965391
+size    965391
 
 depends_build       port:pkgconfig
 depends_lib         port:gettext \

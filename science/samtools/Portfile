@@ -18,7 +18,7 @@ long_description        SAM (Sequence Alignment/Map) Tools provide various \
 
 checksums               rmd160  64a9155f127db9902ce96984f1f3561040f5523c \
                         sha256  e7b09673176aa32937abd80f95f432809e722f141b5342186dfef6a53df64ca1 \
-                        size    4276826
+size    4276826
 
 homepage                http://www.htslib.org/
 github.tarball_from     releases

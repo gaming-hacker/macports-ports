@@ -32,7 +32,7 @@ use_bzip2           yes
 
 checksums           rmd160  846802ead708e7840f22d7808d705bd70c259599 \
                     sha256  63ec86477ad3f0f6292325fd89e1d93aea2e2fd490070863f17d48f7cd387011 \
-                    size    974491
+size    974491
 
 destroot.target     install install_rdf
 destroot.destdir    prefix=${destroot}${prefix}

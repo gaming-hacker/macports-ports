@@ -22,7 +22,7 @@ long_description        ${name} can help you prepare your system for Windows \
 
 checksums               rmd160  8b7562d3449c5fe9b2b452042695f6b346896136 \
                         sha256  5b3dbf647fa18cef198fdf8682c3705b877db7d6343ac50d6f715cfe667855c2 \
-                        size    646715
+size    646715
 
 depends_run             path:bin/zenity:zenity \
                         path:bin/wine:wine \

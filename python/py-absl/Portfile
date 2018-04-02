@@ -19,7 +19,7 @@ distname            absl-py-${version}
 
 checksums           rmd160 4d5e2ace99d2947657c9b6b6c8d263c375451ede \
                     sha256 1530c03b3566f24e9fcf20eadd60a792837899aef98e522f998fcebecf5df41b \
-                    size   79995
+size   79995
 
 python.versions     27 35 36
 

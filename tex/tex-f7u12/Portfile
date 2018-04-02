@@ -23,7 +23,7 @@ build               {}
 
 checksums           rmd160  acfd7e2aa608977183ae7855aa3656f297b4b4f3 \
                     sha256  9d6c6a6af885bbae3b4bfa94a5e06d5ec7c4814a0f5fab3d87c5406cf564a27e \
-                    size    2942626
+size    2942626
 
 destroot {
     xinstall -d ${destroot}${texlive_texmfdist}/tex/latex/f7u12/

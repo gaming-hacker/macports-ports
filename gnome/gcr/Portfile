@@ -27,7 +27,7 @@ use_xz              yes
 
 checksums           rmd160  8180637d78b7ca893aff5bca6d6050fb7e14d4be \
                     sha256  15e175d1da7ec486d59749ba34906241c442898118ce224a7b70bf2e849faf0b \
-                    size    1329044
+size    1329044
 
 depends_build       port:pkgconfig \
                     port:intltool \

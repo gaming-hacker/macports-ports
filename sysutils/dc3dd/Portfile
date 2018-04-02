@@ -27,7 +27,7 @@ use_7z              yes
 
 checksums           rmd160  8779a3b7ab9bf927033ca805ada252a913b6b029 \
                     sha256  d26d5c1eaa413a10dfcdb2525a9fd8135902eb0b0a8f4632529fbebb06430d95 \
-                    size    2170938
+size    2170938
 
 post-extract {
     # find . -type f -print0|LC_ALL=C xargs -0 awk 'FNR==1&&/^#!/{sub(/^\.\//,"",FILENAME);print FILENAME}'|pbcopy

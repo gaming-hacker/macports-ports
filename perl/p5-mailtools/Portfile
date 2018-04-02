@@ -22,7 +22,7 @@ long_description    MailTools is a set of Perl modules related to mail \
 
 checksums           rmd160  90d526d2df22a788df8c1184e789cb41aa1dc5cd \
                     sha256  f55606f7a9cc342ee9d5f996e2b6a4c0047e2ee47cd88c3250ecf0d0c5fb3196 \
-                    size    57211
+size    57211
 
 if {${perl5.major} != ""} {
     depends_lib-append \

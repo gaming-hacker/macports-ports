@@ -28,7 +28,7 @@ compilers.choose    cxx fc
 compilers.setup      -gfortran
 
 checksums \
-        md5     5e17dbeaff328ce312ccadccdb669592 \
+md5     5e17dbeaff328ce312ccadccdb669592 \
         sha1    e49295182c7424c644cc618cd205cb27b8909f53 \
         rmd160  aff0765dd4323ff3c7096ac65b4d6197c8b3372d
 

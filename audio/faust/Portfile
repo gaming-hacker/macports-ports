@@ -22,7 +22,7 @@ long_description        Faust is a functional programming language \
 
 checksums               rmd160  6a356de1a359fdc93f5d93405606a69bd3d83ccb \
                         sha256  6de2214316f9137cabf95bf075a599963cfe5305ab83d944e869bec417956f2f \
-                        size    47453689
+size    47453689
 
 set llvm_version        3.4
 if {${os.platform} eq "darwin" && ${os.major} > 14} {

@@ -21,7 +21,7 @@ use_xz              yes
 
 checksums           rmd160  19cfffb0ddf03fee15dbe0d38d0b2561948b32c3 \
                     sha256  a67fdd801f6e4121ae44cfffabc0f35fff487cab173b6c6f052449ad7b5fb820 \
-                    size    4063740
+size    4063740
 
 depends_build       port:pkgconfig \
                     port:gsed

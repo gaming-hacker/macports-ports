@@ -22,6 +22,6 @@ use_bzip2           yes
 
 checksums           rmd160  68213e4397082af113f319333d3441875f705991 \
                     sha256  815b682ac4470cd4b546a3af105702f5fe161dd3926ea8c6df7dd9f13715153a \
-                    size    151927
+size    151927
 
 patchfiles          install_name.patch

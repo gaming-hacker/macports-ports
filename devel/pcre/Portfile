@@ -40,7 +40,7 @@ set sha256(pcre2)   e07d538704aa65e477b6a392b32ff9fc5edf75ab9a40ddfc876186c4ff4d
 set size(pcre2)     1603075
 checksums           rmd160  $rmd160(${subport}) \
                     sha256  $sha256(${subport}) \
-                    size    $size(${subport})
+size    $size(${subport})
 
 patchfiles          no-darwin-pthread-flag.patch
 

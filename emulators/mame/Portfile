@@ -20,7 +20,7 @@ long_description    The purpose of MAME is to preserve decades of software histo
 
 checksums           rmd160  029a2348ce32c0fd6d0047e00f4b07212020809c \
                     sha256  e111a954c6758b89ddbdcd1d46866a5ca88a07ee85f5ffd76241c8148155a686 \
-                    size    126393694
+size    126393694
 
 # Fix true vs. TRUE issue with jpeg port
 patchfiles          patch-rendutil.cpp.diff

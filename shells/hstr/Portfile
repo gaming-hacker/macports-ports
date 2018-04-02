@@ -26,7 +26,7 @@ worksrcdir          ${name}
 
 checksums           rmd160  f6b2663420694b1ed88f493aa8d8ab18939f2027 \
                     sha256  1dc07cf0bdbb5ff36ee85a45f929b56a1f9776e63d51f84fc8067377ced11171 \
-                    size    157278
+size    157278
 
 depends_build-append \
                     port:pkgconfig

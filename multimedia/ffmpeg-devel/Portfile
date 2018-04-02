@@ -51,7 +51,7 @@ homepage            http://www.ffmpeg.org/
 
 checksums           rmd160  36d5e2a4af71da458b5889f33d2cf6c446b6ae4b \
                     sha256  9eb34ede15515cef5de3eb9683dccb17bcee3fafb1bb0f2313d4054298ce0974 \
-                    size    12337115
+size    12337115
 
 depends_build       port:pkgconfig \
                     port:gmake \

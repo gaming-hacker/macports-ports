@@ -21,7 +21,7 @@ long_description                ${name} is an offline copy of the ${description}
 
 checksums                       rmd160  45862f6fd67ab5210edc820bb57528e03f9be218 \
                                 sha256  a1340f662224d3cd092fba4c737e0508a9ea71084b8a5b30e8f39db7f5fad3ac \
-                                size    4849200
+size    4849200
 
 variant tmdocs description {Also install the TeXmacs-formatted documentation} {
     destroot.target-append  install-tm

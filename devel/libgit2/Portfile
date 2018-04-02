@@ -24,7 +24,7 @@ homepage            http://libgit2.github.com/
 
 checksums           rmd160  39ea46693e33c805b2f5de21fc1f6cde1884d998 \
                     sha256  60440169295a6a719164d53b999004e9d90629ff50dffe40fb9e4c4f0717068e \
-                    size    4730780
+size    4730780
 
 depends_build-append \
                     port:pkgconfig

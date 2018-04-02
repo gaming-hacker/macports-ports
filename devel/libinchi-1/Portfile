@@ -25,11 +25,11 @@ distname            INCHI-1-API
 distfiles-append    INCHI-1-DOC.zip
 
 checksums           INCHI-1-API.zip \
-                    md5     7dd26285418528172326aa32f9a19ba3 \
+md5     7dd26285418528172326aa32f9a19ba3 \
                     sha1    9a9ac4b2f0a03638a97ffcd325b52c9992c777af \
                     rmd160  5a808be29e751c706b3ace7dfd8c1c7a0cdfb022 \
                     INCHI-1-DOC.zip \
-                    md5     6a380e9b1ac8b963b66304e1c16a31bb \
+md5     6a380e9b1ac8b963b66304e1c16a31bb \
                     sha1    4f2d2453573dd2ef22a70e190e9e2e90562959a7 \
                     rmd160  1390a48cd691a5b4d00cc74152ac4df6fb4e836b
 

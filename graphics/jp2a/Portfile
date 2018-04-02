@@ -12,7 +12,7 @@ maintainers         nomaintainer
 description         converts JPEG images to ASCII
 long_description    The jp2a program will read JPEG images and print them \
                     in ASCII characters.  Options let you control the output \
-                    size. You know you want it.
+size. You know you want it.
 
 homepage            https://csl.name/jp2a/
 

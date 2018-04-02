@@ -17,7 +17,7 @@ license                 MIT
 
 checksums  rmd160  c1afafa33ce02059d08ea4dda07ee0ab170f05c5 \
 sha256  59479a00295868f2762098c9b8415ae1c4bc4fad6e9f8923460a68f0692a471c \
-                        size    786914
+size    786914
 
 depends_build           port:go \
                         port:rb-ronn

@@ -16,7 +16,7 @@ supported_archs     noarch
 
 checksums           rmd160  2705698e3ee74b1672afe2e7ebd4f8f98c4d914f \
                     sha256  28f806b5412c7908b56cf1673084b8b44ce1cb54c9417d784d91428e1a04096e \
-                    size    22140
+size    22140
 
 if {${perl5.major} != ""} {
     depends_lib-append \

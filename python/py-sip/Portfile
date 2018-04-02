@@ -62,7 +62,7 @@ if {${name} ne ${subport}} {
 
     checksums           rmd160 064948f2cd178191a00fd691f292a85b7360f2a5 \
                         sha256 7eaf7a2ea7d4d38a56dd6d2506574464bddf7cf284c960801679942377c297bc \
-                        size 1024548
+size 1024548
 
     patchfiles          patch-siputils.py.diff \
                         patch-specs_macx-g++.diff \

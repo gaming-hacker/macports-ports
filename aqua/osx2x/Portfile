@@ -30,7 +30,7 @@ distname        ${name}-${my_version}
 worksrcdir      mdales-${name}-${git_hash}
 
 checksums \
-    md5     897cf872c4006d4173b3c6ff046b0c44 \
+md5     897cf872c4006d4173b3c6ff046b0c44 \
     sha1    1014e0ac22b0c00b47dde2b0f7f44eaa676acc7e \
     rmd160  cc2a63b9dbfd9485c039fc989bbab96e6cf919ac
 

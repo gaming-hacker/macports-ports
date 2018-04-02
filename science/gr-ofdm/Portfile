@@ -11,7 +11,7 @@ version             20180306
 revision            1
 checksums           rmd160 ee1f3054e00e57986fa7536d9691018c69e9e68a \
                     sha256 b053745b3590f1842a35c9914b344db295c2a479ce65711cc3112dc848427e7b \
-                    size   3257234
+size   3257234
 
 # allow gr-ofdm to work with both gnuradio and gnuradio-devel ...
 

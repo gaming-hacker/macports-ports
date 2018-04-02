@@ -23,7 +23,7 @@ master_sites        http://www.soest.hawaii.edu/pwessel/dcw \
                     ftp://ftp.soest.hawaii.edu/dcw
 checksums           rmd160  cf71405625f44b807cffc9d361fd3a6e459efda6 \
                     sha256  1395e772c3f2d2900c78260ad4a9df2fecd9216e362ad141762f7499bfeb4f23 \
-                    size    21118460
+size    21118460
 
 use_configure       no
 build {}

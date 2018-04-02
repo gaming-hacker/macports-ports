@@ -32,7 +32,7 @@ extract.suffix      .tgz
 
 checksums           rmd160  abb7eb3ffb1bfcd2c515537d43f4ba240c6f1508 \
                     sha256  9b8d1e2ff75db81da4f290d9c5d356c7dd749e05ce4cb3e9fcd91e284cb024df \
-                    size    1620798
+size    1620798
 
 depends_build       path:bin/pkg-config:pkgconfig \
                     port:autoconf \

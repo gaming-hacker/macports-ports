@@ -19,7 +19,7 @@ homepage            http://www.forensicswiki.org/wiki/AFF
 
 checksums           rmd160  67022394a1a7d743d7ac49a33c2602d850c94176 \
                     sha256  94de9cc8775c239c4e153c575180e144040ad41b61ff75c32f60a0859e4f96de \
-                    size    533572
+size    533572
 
 depends_lib         port:expat \
                     path:lib/libssl.dylib:openssl \

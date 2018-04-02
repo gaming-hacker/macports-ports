@@ -16,7 +16,7 @@ master_sites        ${homepage}
 
 checksums           rmd160  6743d847b3adcc2724799dc6a75c1359ff5a0377 \
                     sha256  bf6891bfc6bf535a1a99a485478f7896ebacbe3bbf545ba551298080a26f01f1 \
-                    size    2675939
+size    2675939
 
 depends_lib         port:jpeg port:openjpeg15 port:freetype port:lame \
                     port:giflib port:python27

@@ -20,7 +20,7 @@ master_sites        ${homepage}pub/
 
 checksums           rmd160  42da362bfe81d5ea8b1b6055d4271ab51b619cf1 \
                     sha256  d9f11da50fd6c9359ab478618b5d3c132474a838fe9f668c249f9d5a07f26662 \
-                    size    584406
+size    584406
 
 depends_lib         port:libre \
                     port:librem \

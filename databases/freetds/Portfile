@@ -29,7 +29,7 @@ use_bzip2           yes
 
 checksums           rmd160  bc839bc1219a7d6a14ab585bafd185cc00c35232 \
                     sha256  21505348f58742a2b283338f3c099f071f9d8dee7c450b59abd93478dfd43845 \
-                    size    2151715
+size    2151715
 
 depends_lib         port:libiconv \
                     port:ncurses \

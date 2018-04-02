@@ -22,7 +22,7 @@ conflicts           ntp openntpd
 master_sites        ftp://ftp.ntpsec.org/pub/releases/
 checksums           rmd160  65e6f3a2339b98ffa0b0cdf7310dd850cd3082a6 \
                     sha256  65333385e56fb571d6a9bae8174a74c805c3ea4e79fbe450db98c3825caafddb \
-                    size    2448580
+size    2448580
 
 depends_build       port:bison
 depends_lib         path:lib/libssl.dylib:openssl port:python${python.version}

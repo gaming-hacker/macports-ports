@@ -27,7 +27,7 @@ distname            ${git_name}-${git_commit}
 
 checksums           rmd160  b9be9b76fee0b281ba95795014903cff6df9c433 \
                     sha256  2b1d440a41a93d5ab16d298aad9d8b10b7ac3f1ede35c90a0ad0418897c10652 \
-                    size    346651
+size    346651
 
 depends_build       port:automake \
                     port:autoconf \

@@ -18,7 +18,7 @@ homepage            http://rakudo.org/
 
 checksums           rmd160  b91e93eb9011bdd4153fc0c7080365b2a180058f \
                     sha256  6481aeaee729fbe2bc40e23e405ed2098c6ceca0e0be247362853475f6a55740 \
-                    size    1571585
+size    1571585
 
 depends_build       port:perl5
 

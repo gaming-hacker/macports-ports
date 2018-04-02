@@ -29,7 +29,7 @@ use_xz              yes
 
 checksums           rmd160  691fd7dbc3faeeea10ec7e18aa1411398abbf6c1 \
                     sha256  a5c20d3a6347533689358f3ea52486409f6dd41d5a69c65eab7570cfaffee8e6 \
-                    size    1390500
+size    1390500
 
 depends_build       port:pkgconfig \
                     port:gtk-doc

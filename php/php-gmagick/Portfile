@@ -18,13 +18,13 @@ if {[vercmp ${php.branch} 7] >= 0} {
     revision        0
     checksums       rmd160  f1130921184a28025640f19d73aa54004a9cb695 \
                     sha256  fbef36c02fe07dd4d7922ec9ce3d5d71b27a2e91dbcc69604230b3d4013bc6a5 \
-                    size    125072
+size    125072
 } else {
     version         1.1.7RC3
     revision        0
     checksums       rmd160  75dc13b0c4822a0e18faa30bdeb7140daa14b494 \
                     sha256  1d2a35811a29e0744e852dda526f30c8a0cba516ef611758dd5bd4837ecba1fd \
-                    size    97860
+size    97860
 }
 
 description     Provides a wrapper to the GraphicsMagick library

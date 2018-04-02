@@ -23,7 +23,7 @@ master_sites      ${homepage}
 distfiles         cdk.tar.gz
 dist_subdir       ${name}/${version}
 checksums \
-    md5 dea61345f17ee4d7aa1f2e50d248696a            \
+md5 dea61345f17ee4d7aa1f2e50d248696a            \
     sha1 6259f67e03f2f790f78e638984e90a0b736f1a04   \
     rmd160 f2d4470d4b0f212a73c55506a678b265033521d3
 

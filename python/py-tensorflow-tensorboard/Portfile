@@ -29,7 +29,7 @@ if {${python.version} < 30} {
     checksums           md5    b7d22b2d8cbb07f7c638cedcbf6c2407 \
                         rmd160 c7fa6e4961ac9a3af9cecc68eccd516745d57f99 \
                         sha256 8a91de3f70dd24f986f51a660b12cbafb8be3c3ba5c9f56504dba4d9fb63acf3 \
-                        size   1673912
+size   1673912
 }
 
 extract.suffix      .whl

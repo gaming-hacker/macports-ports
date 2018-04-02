@@ -29,7 +29,7 @@ homepage                https://www.freecadweb.org
 
 checksums  rmd160  02eee552016fc0664fdeef030569be082d600bad \
     sha256  990aab10320921d14169979b19d349234f7d81de6921c23dbcd6d05be8bfa8a8 \
-    size    111706057
+size    111706057
 
 depends_lib-append      port:python${user.ver.py} \
                         port:boost \

@@ -23,7 +23,7 @@ long_description    A C++ bittorrent library designed to run on anything from em
 
 checksums           rmd160  26a860f4c530d33251ca8bde41fba7837a6b7630 \
                     sha256  c6f9bab82c2c1e00ffdcc65b742c8719ada1ad53e06ef19134965289c7e0dcf9 \
-                    size    2890496
+size    2890496
 
 depends_build       port:pkgconfig \
                     port:autoconf \

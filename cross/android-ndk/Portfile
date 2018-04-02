@@ -27,7 +27,7 @@ worksrcdir          android-ndk-${version}
 
 checksums rmd160  295b861433bd6e9980cf441d718643c19147c173 \
 sha256  9654a692ed97713e35154bfcacb0028fdc368128d636326f9644ed83eec5d88b \
-              size 839630771
+size 839630771
 
 use_configure       no
 build.cmd           true
@@ -50,5 +50,5 @@ set ANDROID_NDK to ${prefix}/share/java/android-ndk-${version}-darwin-x86_64??
 variant devel description {beta version } {
 version     r17-beta1
 checksums sha1 883d7d1be3007637de7f2f2cb1f1bb66193d89e0 \
-    size 679061122
+size 679061122
 }

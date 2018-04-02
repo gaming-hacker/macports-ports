@@ -20,7 +20,7 @@ master_sites        sourceforge:project/dar/dar/${version}
 
 checksums           rmd160  cb2a77e822f60d287fa49de56ccd679dc3da3c6c \
                     sha256  fae049166b2b2a4f9db4fe3e4d135a520a5b93ffeb4089428b60f8c54603c5c5 \
-                    size    1904398
+size    1904398
 
 depends_build       port:doxygen
 

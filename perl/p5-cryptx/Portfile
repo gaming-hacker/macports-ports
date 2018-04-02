@@ -15,4 +15,4 @@ long_description    ${description}
 
 checksums           rmd160  13331eb8406dfae1f3528dc47757ae1e1fda5ee0 \
                     sha256  3ef0d6493f332b6a2e1b0d20eda034d060d66f19f48d47244c788c26dca09d27 \
-                    size    1715341
+size    1715341

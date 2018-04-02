@@ -26,7 +26,7 @@ homepage            http://www.qgis.org/
 
 checksums           rmd160  d3330ae61dc17ff78f19f3c9b8887596091371eb \
                     sha256  c69b3ee709481c0a117aa70933b8c195733578a02da26243f0f9396e970450f5 \
-                    size    111975589
+size    111975589
 
 depends_lib-append  port:libiconv \
                     port:expat \

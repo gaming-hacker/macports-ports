@@ -18,6 +18,6 @@ master_sites        sourceforge:project/ccd2iso/ccd2iso/ccd2iso-${version}
 
 checksums           rmd160  39b3140c123bc82fc01b2222056a03d3fe521626 \
                     sha256  f874b8fe26112db2cdb016d54a9f69cf286387fbd0c8a55882225f78e20700fc \
-                    size    158221
+size    158221
 
 destroot.destdir    prefix=${destroot}${prefix}

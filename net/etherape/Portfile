@@ -20,7 +20,7 @@ platforms           darwin
 
 checksums           rmd160  a346556821241337e73bcc7e113dcbe5a58445f5 \
                     sha256  f8ed6e847f6f34c801a2ceb9d7781edda1d3a270ebc9874a3dd8a37eabd3fa7f \
-                    size    1449612
+size    1449612
 
 depends_build       port:gnome-doc-utils \
                     port:pkgconfig

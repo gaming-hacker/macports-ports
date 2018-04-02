@@ -16,6 +16,6 @@ long_description        ${description}
 
 checksums               rmd160  b9120bc5b10437e0600b3b528cc5332561ccdad9 \
                         sha256  b96a12ce9c25a0a0a37161a2abff37708e92675bc6dc509d77b87ec51759c1c5 \
-                        size    16295
+size    16295
 
 configure.args-append   -DMAN_INSTALL_DIR=share/man

@@ -31,7 +31,7 @@ long_description            Cairo is ${description}. It is designed to produce \
 
 checksums                   rmd160  7c2868a64b146bf5663b7586f59f865cc8c2bf31 \
                             sha256  8c90f00c500b2299c0a323dd9beead2a00353752b2092ead558139bd67f7bf16 \
-                            size    36251896
+size    36251896
 
 depends_build               port:pkgconfig
 

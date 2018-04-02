@@ -8,7 +8,7 @@ crossgcc.setup_libc newlib 1.20.0
 maintainers     nomaintainer
 
 checksums       gcc-${version}.tar.bz2 \
-                md5     cc308a0891e778cfda7a151ab8a6e762 \
+md5     cc308a0891e778cfda7a151ab8a6e762 \
                 rmd160  fc281ade14b47d2a9c2ced4f7082c74bfbae31c1 \
                 sha256  8a9283d7010fb9fe5ece3ca507e0af5c19412626384f8a5e9434251ae100b084 \
                 newlib-${crossgcc.libc_version}.tar.gz \

@@ -19,7 +19,7 @@ long_description        BCFtools implements utilities for variant calling (in \
 
 checksums               rmd160  b0f2b84c0bf617d533f47c27a1f50ab3002e874f \
                         sha256  dd4f63d91b0dffb0f0ce88ac75c2387251930c8063f7799611265083f8d302d1 \
-                        size    3027891
+size    3027891
 
 homepage                http://www.htslib.org/
 github.tarball_from     releases

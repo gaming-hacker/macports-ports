@@ -18,7 +18,7 @@ long_description    ${name} is a ${description}.
 
 checksums           rmd160  164864cd0a94e0c6e8564bb39dddc24f5b773d25 \
                     sha256  617640fe9687e92083f62b8bed5418920c2916ee6da433f7f0d1a63e207938de \
-                    size    1577797
+size    1577797
 
 depends_build       port:scons
 

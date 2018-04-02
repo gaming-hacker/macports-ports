@@ -18,7 +18,7 @@ license             {Artistic-1 GPL}
 
 checksums           rmd160  a025ffc21f006466030c98737d7ef1c3cf722d32 \
                     sha256  2b4f111e9486b230b02bfabbbf50c453f959d18ec17351a930e41f0959b358b7 \
-                    size    174781
+size    174781
 
 extract.suffix      .tgz
 

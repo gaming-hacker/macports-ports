@@ -30,12 +30,12 @@ homepage                https://cantera.github.io/docs/sphinx/html/index.html
 
 checksums               rmd160  010a4eafb7004aa8927d94002dd8f3abd4da252a \
                         sha256  9d383f2d3d88a45a24ba5af12c047c0329f442980ccdb39925082c951f5c33b3 \
-                        size    2474413
+size    2474413
 
 subport cantera-devel {
     checksums           rmd160  1f4d2b090af841bf7314355a802f1c51fc9904f8 \
                         sha256  f80c64c85440c96ca4ece4c87c020284d9025bf60ae5c3a468fd53c9cc15413e \
-                        size    2471445
+size    2471445
 }
 
 python.default_version  27

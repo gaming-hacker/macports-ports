@@ -21,7 +21,7 @@ homepage        http://sourceforge.net/projects/tagtool/
 master_sites    sourceforge
 use_bzip2       yes
 checksums \
-    md5 447b3a505fee68a82f25dcda9377b676 \
+md5 447b3a505fee68a82f25dcda9377b676 \
     sha1 e7ed4ebf8f9881cf38b2340b18e95947f658308e \
     rmd160 9f5ae223580948c403cd44d82ecef0d03040ff09
 

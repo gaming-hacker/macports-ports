@@ -42,11 +42,11 @@ master_sites            ${github.master_sites}:source \
 checksums               ${source_distfile} \
                         rmd160  cf28b08664f8af12806d3e5112f42f90dd54c05e \
                         sha256  0fb5efaea421fc445422c16e74d65249dc956779a5889b60612ea88b862793a3 \
-                        size    2777098 \
+size    2777098 \
                         ${userguide_distfile} \
                         rmd160  6149e7b4677f9acc85c0728c7f512cd454e879a7 \
                         sha256  6c449ec679854666c33064351054b730ef99468617de584939b15ad348b805e6 \
-                        size    719106
+size    719106
 
 post-extract {
     move ${workpath}/${github.author}-${github.project}-[string range ${git.branch} 0 6] ${workpath}/${distname}

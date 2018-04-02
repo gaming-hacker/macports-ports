@@ -20,7 +20,7 @@ long_description    Tahchee is a tool for developers and Web designers that \
 
 checksums           rmd160  2b3007a1da5578b5deedd57b9bcaf2908ab4ce7d \
                     sha256  27b303ff4d8ca894f5169b513702af76b734637debae4e7d227f6ae998ee1670 \
-                    size    141274
+size    141274
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-cheetah

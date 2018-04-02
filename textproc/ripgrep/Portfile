@@ -61,7 +61,7 @@ cargo.crates \
 checksums-append    ${distname}${extract.suffix} \
                     rmd160  d8c6c7c4baa00e5b5430606a2ed99c314dea904f \
                     sha256  454eedb33b2edeeb7b2b044aee42f28287c36ebff3ebbf08f852b95e6e2bc565 \
-                    size    521208
+size    521208
 
 depends_build-append \
                     port:asciidoc \

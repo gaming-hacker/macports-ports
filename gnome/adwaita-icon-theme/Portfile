@@ -21,7 +21,7 @@ use_xz              yes
 
 checksums           rmd160  fb4b84dfd22a468ccb2a00508da6fd14b2b42291 \
                     sha256  7aae8c1dffd6772fd1a21a3d365a0ea28b7c3988bdbbeafbf8742cda68242150 \
-                    size    19992224
+size    19992224
 
 depends_build       port:pkgconfig \
                     port:icon-naming-utils

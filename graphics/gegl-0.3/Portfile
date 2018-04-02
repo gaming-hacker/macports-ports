@@ -30,7 +30,7 @@ distname            ${gname}-${version}
 
 checksums           rmd160  afc256265aa66d64153f0b8d758857d92e15018f \
                     sha256  f8b4a93ad2c5187efcc7d9a665ef626a362587eb701eebccf21b13616791e551 \
-                    size    6675564
+size    6675564
 
 depends_build       port:pkgconfig \
                     port:w3m \

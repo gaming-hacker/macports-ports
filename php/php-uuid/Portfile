@@ -19,7 +19,7 @@ long_description        ${description}
 
 checksums               rmd160  5efc7fad2c43c029fa8a88e17356f3a8af9f5f8f \
                         sha256  63079b6a62a9d43691ecbcd4eb52e5e5fe17b5a3d0f8e46e3c17ff265c06a11f \
-                        size    14900
+size    14900
 
 use_parallel_build      yes
 
