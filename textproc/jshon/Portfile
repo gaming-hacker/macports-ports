@@ -1,4 +1,5 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+PortSystem	1.0
 PortGroup  github 1.0
 
 github.setup    keenerd jshon e9b59a3cbbbf5423e1c4f585ce1d885f83f930c9
