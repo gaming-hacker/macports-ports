@@ -41,9 +41,9 @@ master_sites  http://www.imagemagick.org/download/ \
 ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
 ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
-checksums   rmd160  bdec29a15268770c867262ab55925a347bbb37f0 \
-  sha256  8dee83fe4978a2d07a90c947508d734ddb175eeb299491f8560cea5ac0c26896 \
-  size    8604724
+checksums rmd160  4c91430a99b0af72414210cc62b6ca2a1647c9d4 \
+sha256  e8311c2dd536367808a633aa3f4f0f6b1a34d04ed06b3db59c21d43cab41d4ce \
+    size    8611096
 
 depends_lib   port:bzip2 \
               port:djvulibre \
@@ -65,8 +65,8 @@ depends_lib   port:bzip2 \
               port:openjpeg \
               port:openexr \
               port:libxml2 \
-              port:liblqr
-#               port:libwmf
+              port:liblqr \
+              port:libwmf
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
@@ -97,7 +97,7 @@ configure.args  --enable-shared \
       --with-gslib \
       --with-jbig \
       --with-jpeg \
-      --without-lcms \
+      --with-lcms \
       --with-openjp2 \
       --with-png \
       --with-tiff \

@@ -1,9 +1,12 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts
+
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 set vim_version     8.0
 set snapshot        145
+revision            1
 github.setup        macvim-dev macvim ${snapshot} snapshot-
 name                MacVim
 version             ${vim_version}.snapshot${snapshot}
@@ -17,7 +20,7 @@ long_description \
     better and integrate more seamlessly with the Mac than vim-app.
 
 homepage            https://macvim-dev.github.io/macvim/
- 
+
 checksums           rmd160  1e67df25f101d84b494222fbd0f66df06193828e \
                     sha256  07571dd6cf9e96f6c18238e070577e932baa743b2906ded49b2c4dc3097ff9da \
                     size    19783527
@@ -90,6 +93,10 @@ destroot {
         foreach cmd {vi ex} {
             ln -s ${applications_dir}/MacVim.app/Contents/bin/vim ${destroot}${prefix}/bin/${cmd}
         }
+    # Create a separate dir that can be added to PATH to access non-gui MacVim tools
+    xinstall -d ${destroot}${prefix}/libexec/macvim
+    foreach bin {vim vimdiff view vi ex rvim rview} {
+        ln -s ${applications_dir}/MacVim.app/Contents/bin/mvim ${destroot}${prefix}/libexec/macvim/${bin}
     }
 }
 
