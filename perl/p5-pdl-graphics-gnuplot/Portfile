@@ -15,7 +15,7 @@ description         Gnuplot-based plotting for PDL
 long_description    ${description}
 
 checksums           rmd160  e09c18226c7ac622a6897c8c8c4f95e82f68b221 \
-                    sha256  6f93e19651f8b05cc10a9eddcbc97955188905964ad6b904b3a39fc94b1abe22
+sha256  6f93e19651f8b05cc10a9eddcbc97955188905964ad6b904b3a39fc94b1abe22
 
 if {${perl5.major} != ""} {
 # use Time::HiRes 1.9739+ for Sierra compatibility

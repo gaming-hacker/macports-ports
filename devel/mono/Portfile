@@ -20,7 +20,7 @@ use_bzip2           yes
 universal_variant   no
 
 checksums           rmd160  c34cb00ab4cf8cd5e2804bde952b3f5fde3cdc17 \
-                    sha256  5d8cf153af2948c06bc9fbf5088f6834868e4db8e5f41c7cff76da173732b60d
+sha256  5d8cf153af2948c06bc9fbf5088f6834868e4db8e5f41c7cff76da173732b60d
 
 depends_build       port:coreutils \
                     port:gawk \

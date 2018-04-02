@@ -25,8 +25,8 @@ depends_lib     port:audiofile
 use_bzip2       yes
 
 checksums       md5 8d9aad3d94d15e0d59ba9dc0ea990c6c \
-                sha1 6c343483b3789f439277935eaad7e478bee685ea \
-                rmd160 72597ea46e507008e3a43efaaf5b4b9ef62b896f
+sha1 6c343483b3789f439277935eaad7e478bee685ea \
+rmd160 72597ea46e507008e3a43efaaf5b4b9ef62b896f
 
 configure.args  --enable-ipv6
 

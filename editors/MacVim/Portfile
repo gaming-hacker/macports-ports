@@ -22,7 +22,7 @@ long_description \
 homepage            https://macvim-dev.github.io/macvim/
 
 checksums           rmd160  1e67df25f101d84b494222fbd0f66df06193828e \
-                    sha256  07571dd6cf9e96f6c18238e070577e932baa743b2906ded49b2c4dc3097ff9da \
+sha256  07571dd6cf9e96f6c18238e070577e932baa743b2906ded49b2c4dc3097ff9da \
 size    19783527
 
 depends_build       bin:grep:grep

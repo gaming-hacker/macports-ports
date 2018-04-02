@@ -20,7 +20,7 @@ distname            pypy2-v${version}-src
 bitbucket.tarball_from \
                     downloads
 checksums           rmd160  1672fec524ccc3037069119498ef9027ebc9382a \
-                    sha256  1209f2db718e6afda17528baa5138177a14a0938588a7d3e1b7c722c483079a8
+sha256  1209f2db718e6afda17528baa5138177a14a0938588a7d3e1b7c722c483079a8
 
 depends_build       port:pkgconfig
 depends_lib         port:libffi \
@@ -47,7 +47,7 @@ subport pypy3 {
     distname            pypy3-v${version}-src
 
     checksums           rmd160  6013d3109f2e7d078b960c8743f8885ebdf50bd3 \
-                        sha256  f5548e06e2fc0c24ec8b6e3c5b09f90081818f7caa3e436dc312592611724713 \
+sha256  f5548e06e2fc0c24ec8b6e3c5b09f90081818f7caa3e436dc312592611724713 \
 size    29071765
 
     set pypy_c_name pypy3-c

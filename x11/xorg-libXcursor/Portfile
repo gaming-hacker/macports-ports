@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXcursor-${version}
 checksums           sha1    89870756758439f9216ddf5f2d3dca56570fc6b7 \
-                    rmd160  95c0779a2fc04876fa01e785a30111564bb8e9c4 \
-                    sha256  9bc6acb21ca14da51bda5bc912c8955bc6e5e433f0ab00c5e8bef842596c33df
+rmd160  95c0779a2fc04876fa01e785a30111564bb8e9c4 \
+sha256  9bc6acb21ca14da51bda5bc912c8955bc6e5e433f0ab00c5e8bef842596c33df
 
 use_bzip2   yes
 use_parallel_build      yes

@@ -17,7 +17,7 @@ description         Determine if a given Path resembles a development source tre
 long_description    ${description}
 
 checksums           rmd160  100088c67b5b29d09bcd41f52ee24efabad53c73 \
-                    sha256  37d66bfe205d7916824a46ad6290b8fb170fc602c16f8dc8169576f2ad682949
+sha256  37d66bfe205d7916824a46ad6290b8fb170fc602c16f8dc8169576f2ad682949
 
 if {${perl5.major} != ""} {
     depends_build-append    port:p${perl5.major}-test-fatal

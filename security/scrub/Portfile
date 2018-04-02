@@ -18,4 +18,4 @@ long_description    Scrub writes patterns on special files \
                     or one of several other selectable pattern sequences
 
 checksums           rmd160  caba1d4263143cc07c47a2870cb4a26bfa7b8a93 \
-                    sha256  43d98d3795bc2de7920efe81ef2c5de4e9ed1f903c35c939a7d65adc416d6cb8
+sha256  43d98d3795bc2de7920efe81ef2c5de4e9ed1f903c35c939a7d65adc416d6cb8

@@ -12,6 +12,6 @@ description         PEAR MDB2_Driver_querysim package
 long_description    ${description}
 
 checksums           rmd160  6302d7aacc2f02c751d45b802e2dac301f9f048a \
-                    sha256  26bc83106b27918d61d6b1a0b77d4c61238dd1d91b8658e194aff71a3b535993
+sha256  26bc83106b27918d61d6b1a0b77d4c61238dd1d91b8658e194aff71a3b535993
 
 depends_lib-append  port:pear-MDB2

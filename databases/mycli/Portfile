@@ -17,7 +17,7 @@ long_description    ${description}
 homepage            http://mycli.net
 
 checksums           rmd160  b74171b91014ab750e5eaf43566814912452f6e6 \
-                    sha256  2181153817a3097c6319d61ec616162d04b4f56ebd2673d9bbd1828929592ee6
+sha256  2181153817a3097c6319d61ec616162d04b4f56ebd2673d9bbd1828929592ee6
 
 variant python27 conflicts python34 python35 python36 description "Use Python 2.7" {}
 variant python34 conflicts python27 python35 python36 description "Use Python 3.4" {}

@@ -21,8 +21,8 @@ master_sites            ${homepage}/tarballs/${name}
 worksrcdir              ${name}-${version}/${name}
 
 checksums           sha1    6b197780e11633013bc6026e9f5d1b008c9e8e64 \
-                    rmd160  c98c1ad9cff26b10f5c5c80f38d41178f28a8a4d \
-                    sha256  5c144021828edf10933997f9a085720862f937255d4ca10e60d63a651d3ea493
+rmd160  c98c1ad9cff26b10f5c5c80f38d41178f28a8a4d \
+sha256  5c144021828edf10933997f9a085720862f937255d4ca10e60d63a651d3ea493
 
 platforms               darwin
 

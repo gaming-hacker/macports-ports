@@ -12,4 +12,4 @@ description         PEAR Services_Google package
 long_description    ${description}
 
 checksums           rmd160  4b0598f95fbc52ae1456aca762960be270b847be \
-                    sha256  de1ff3b101235ec1c1771c7781c142b8c41ce436b099b2e56815844afbc70e0c
+sha256  de1ff3b101235ec1c1771c7781c142b8c41ce436b099b2e56815844afbc70e0c

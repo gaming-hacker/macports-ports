@@ -12,7 +12,7 @@ description         A grammar-based, user-friendly config parser
 long_description    ${description}
 
 checksums           rmd160  20c699d62a2fef9f4429a6f1d17fa8109194d225 \
-                    sha256  7a52a3657d96e6f1f529caaa09ec3bf7dd6a245b47875382c323902f6d9590b0
+sha256  7a52a3657d96e6f1f529caaa09ec3bf7dd6a245b47875382c323902f6d9590b0
 
 platforms           darwin
 supported_archs     noarch

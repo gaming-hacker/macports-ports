@@ -24,7 +24,7 @@ homepage            https://hewlettpackard.github.io/netperf/
 master_sites        https://github.com/HewlettPackard/netperf/archive
 
 checksums           rmd160  ea5f83cce4bf03884c3c4ed3278146976627af0a \
-                    sha256  4569bafa4cca3d548eb96a486755af40bd9ceb6ab7c6abd81cc6aa4875007c4e \
+sha256  4569bafa4cca3d548eb96a486755af40bd9ceb6ab7c6abd81cc6aa4875007c4e \
 size    1993943
 
 worksrcdir          netperf-netperf-${version}

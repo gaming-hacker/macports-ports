@@ -23,7 +23,7 @@ homepage            http://www.tddft.org/programs/octopus/wiki/index.php/Libxc
 master_sites        http://www.tddft.org/programs/octopus/download/libxc
 
 checksums           rmd160  28e7d96c49aebfc4d7b7d16edc91565bc2fd8eea \
-                    sha256  2f2b00b77a75c7fe8fe3f3ae70700cf28a09ff8d0ce791e47980ff7f9cde68e7
+sha256  2f2b00b77a75c7fe8fe3f3ae70700cf28a09ff8d0ce791e47980ff7f9cde68e7
 
 compilers.choose    fc
 compilers.setup     require_fortran

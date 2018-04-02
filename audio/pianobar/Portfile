@@ -21,7 +21,7 @@ long_description            pianobar is a console client for the \
                             proxy support for listening outside of USA.
 
 checksums                   rmd160  063b78864e03b098958ec174b06ede5852c978ab \
-                            sha256  fe12e5acd245b6bf83c0721d01d72fa4a450ec54fa6ccfc1542bd0f908ad6534
+sha256  fe12e5acd245b6bf83c0721d01d72fa4a450ec54fa6ccfc1542bd0f908ad6534
 
 depends_build               port:pkgconfig
 

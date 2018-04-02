@@ -22,7 +22,7 @@ master_sites        http://camaya.net/download/
 use_bzip2           yes
 
 checksums           rmd160  d10cebe8962211c4bd070eb847076fc7dc56ccc7 \
-                    sha256  4d9f1eeac97c6563dde11d4bdba346a025ef27908b088b47b5c8d3d03df6ea8a
+sha256  4d9f1eeac97c6563dde11d4bdba346a025ef27908b088b47b5c8d3d03df6ea8a
 
 depends_build       port:pkgconfig
 

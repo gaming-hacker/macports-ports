@@ -19,7 +19,7 @@ homepage            http://www.enderunix.org/aget/
 master_sites        ${homepage}
 
 checksums           rmd160  4a23d722b0e4d6c632c40006aa5e67d5acfd4b88 \
-                    sha256  d17393c7f44aab38028ae71f14b572ba1839b6e085fb2092b6ebe68bc931df4d
+sha256  d17393c7f44aab38028ae71f14b572ba1839b6e085fb2092b6ebe68bc931df4d
 
 patchfiles          patch-Head.c
 

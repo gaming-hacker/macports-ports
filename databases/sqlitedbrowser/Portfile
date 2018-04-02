@@ -21,7 +21,7 @@ distfiles           ${distname}.tar.gz
 worksrcdir          sqlitestudio
 
 checksums           rmd160  0a29e7833ae6f9c45108e74bbd42b4f0ba08c2c4 \
-                    sha256  0ec9b3ca5cc3bf7433d7e19a37fef0254af6a4ffd6059fb61341f906774c9179
+sha256  0ec9b3ca5cc3bf7433d7e19a37fef0254af6a4ffd6059fb61341f906774c9179
 
 configure.cmd       ${qt_qmake_cmd}
 configure.pre_args

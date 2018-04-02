@@ -19,4 +19,4 @@ description         Object and functions to work with ISSN
 long_description    ${description}
 
 checksums           sha256  cb889cae7f2461bb35c3294eaeceb4ee39011974faf7d4dd4effe2c5cc38e5e1 \
-                    rmd160  5a84b048118396880c9229f0a6c128c2ead485fa
+rmd160  5a84b048118396880c9229f0a6c128c2ead485fa

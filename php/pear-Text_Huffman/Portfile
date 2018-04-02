@@ -12,4 +12,4 @@ description         PEAR Text_Huffman package
 long_description    ${description}
 
 checksums           rmd160  48f3a6d458b2765f7b3e25c71a652f427e2de3e9 \
-                    sha256  784f00d5f28d93b2174f2b93bc083c47fe6cf60c5ea3d350e4155fc9c39b0c8b
+sha256  784f00d5f28d93b2174f2b93bc083c47fe6cf60c5ea3d350e4155fc9c39b0c8b

@@ -28,8 +28,8 @@ distname            Python-${version}
 use_xz              yes
 
 checksums           md5 1f6db41ad91d9eb0a6f0c769b8613c5b \
-                    rmd160 816553f988c661cfe31b6e89a513fdfbf87963d5 \
-                    sha256 71ffb26e09e78650e424929b2b457b9c912ac216576e6bd9e7d204ed03296a66
+rmd160 816553f988c661cfe31b6e89a513fdfbf87963d5 \
+sha256 71ffb26e09e78650e424929b2b457b9c912ac216576e6bd9e7d204ed03296a66
 
 patchfiles          patch-Makefile.pre.in.diff \
                     patch-setup.py.diff \

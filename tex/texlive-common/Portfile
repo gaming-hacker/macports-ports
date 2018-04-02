@@ -25,7 +25,7 @@ worksrcdir          ${distname}
 use_xz              yes
 
 checksums           rmd160  6fb366c4bddd6b98840d1e852af123ad25ffeafa \
-                    sha256  feef1314f09f5a13db4cb84803e7f879bb31a8ae50fdd8a89fd92ac1e37cb028
+sha256  feef1314f09f5a13db4cb84803e7f879bb31a8ae50fdd8a89fd92ac1e37cb028
 
 livecheck.type  regex
 livecheck.url   [lindex ${master_sites} 0]

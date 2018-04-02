@@ -20,8 +20,8 @@ use_xz              yes
 homepage            http://supertuxkart.sourceforge.net/
 
 checksums           md5     8de5455b8fdbb92679e302b76c9041cf \
-                    rmd160  4d32b61c99d6043c8007badd21bb79d38216cc4b \
-                    sha256  d8014e7106ba84f98b5ec5f146249dcffc284fc4083f8f237ff420b9e2219cb0
+rmd160  4d32b61c99d6043c8007badd21bb79d38216cc4b \
+sha256  d8014e7106ba84f98b5ec5f146249dcffc284fc4083f8f237ff420b9e2219cb0
 
 master_sites        sourceforge:project/${name}/SuperTuxKart/${version}
 

@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-oracle/releases/download/v${version}
 
 checksums           md5 04a6ab7586dde90865a2a036608f34ca \
-                    sha1 d72df18d19013ec75e188662d584a9aa9ecec1f9 \
-                    rmd160 650c9e9b7f6d1d0ad9d9b81c35aff688efb6d118
+sha1 d72df18d19013ec75e188662d584a9aa9ecec1f9 \
+rmd160 650c9e9b7f6d1d0ad9d9b81c35aff688efb6d118
 
 depends_lib         port:qore \
                     port:oracle-instantclient

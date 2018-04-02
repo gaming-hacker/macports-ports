@@ -19,7 +19,7 @@ master_sites            pypi:l/lmfit/
 distname                lmfit-${version}
 
 checksums               rmd160  3e9c32c8fe88987e35211e4d7ed694eff292dc7d \
-                        sha256  eebc3c34ed9f3e51bdd927559a5482548c423ad5a0690c6fdcc414bfb5be6667
+sha256  eebc3c34ed9f3e51bdd927559a5482548c423ad5a0690c6fdcc414bfb5be6667
 
 python.versions 27 36
 

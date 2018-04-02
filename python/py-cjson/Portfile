@@ -24,7 +24,7 @@ homepage            https://pypi.python.org/pypi/python-cjson/
 master_sites        pypi:p/python-cjson/
 distname            python-cjson-${version}
 checksums           rmd160  335677e39817b89af34aa51b66f4c0eb8269a050 \
-                    sha256  a01fabb7593728c3d851e1cd9a3efbd18f72650a31a5aa8a74018640da3de8b3
+sha256  a01fabb7593728c3d851e1cd9a3efbd18f72650a31a5aa8a74018640da3de8b3
 
 python.versions 27 36
 

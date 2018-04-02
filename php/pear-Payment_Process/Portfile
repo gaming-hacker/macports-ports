@@ -12,7 +12,7 @@ description         PEAR Payment_Process package
 long_description    ${description}
 
 checksums           rmd160  bd1a400b1763f8b1924136ea6f7ee9d261ce488e \
-                    sha256  101479466065eda2516e1d36f80340857059660105ab1837bf007bfa6484581c
+sha256  101479466065eda2516e1d36f80340857059660105ab1837bf007bfa6484581c
 
 depends_lib-append  port:pear-Validate \
                     port:pear-Validate_Finance_CreditCard

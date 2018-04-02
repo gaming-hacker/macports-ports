@@ -18,7 +18,7 @@ long_description    iODBC is the acronym for Independent Open DataBase Connectiv
 platforms           darwin
 
 checksums           rmd160  1eebd33f846f1b03d157b2f1882933998b85dddb \
-                    sha256  b783506aac2df3f1b126b7867464878f5e79985370106019aef15d9dcc4b19c8
+sha256  b783506aac2df3f1b126b7867464878f5e79985370106019aef15d9dcc4b19c8
 
 depends_build-append    port:automake \
                         port:autoconf \

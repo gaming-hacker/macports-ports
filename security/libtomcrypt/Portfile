@@ -23,7 +23,7 @@ github.tarball_from releases
 use_bzip2           yes
 
 checksums           rmd160  742d72d82fea2e6a9865d8c682c10cbaba69ea2f \
-                    sha256  e33b47d77a495091c8703175a25c8228aff043140b2554c08a3c3cd71f79d116
+sha256  e33b47d77a495091c8703175a25c8228aff043140b2554c08a3c3cd71f79d116
 
 worksrcdir          ${name}-${version}
 

@@ -32,7 +32,7 @@ distname            phpBB-${version}
 use_bzip2           yes
 
 checksums           rmd160  78d5ef771aebc7f5df53fbe8d5db65e4273e3ddb \
-                    sha256  bab64dbd79f6f1bf2c0c306b33cea460ffe58c56ff1e81aac87ee10545291302
+sha256  bab64dbd79f6f1bf2c0c306b33cea460ffe58c56ff1e81aac87ee10545291302
 
 variant mysql description {add convenient runtime dependency on PHP's mysql extension} {
     depends_run-append  port:php56-mysql

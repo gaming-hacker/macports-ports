@@ -28,7 +28,7 @@ depends_lib         port:gettext \
                     port:zlib
 
 checksums           rmd160  d8657a70a2068dbb275ef4487cdbe798884f8618 \
-                    sha256  7b253ce2c2307d9383aa88e0199b67d2e0eed6baf8b651a7bd8eb265f79ca3ce
+sha256  7b253ce2c2307d9383aa88e0199b67d2e0eed6baf8b651a7bd8eb265f79ca3ce
 
 worksrcdir          ${distname}/src
 

@@ -18,7 +18,7 @@ description         Community effort to maintain and improve Jedi Academy + Jedi
 long_description    ${description}
 
 checksums           rmd160  f452c78d544f29496c6f7edfd0192ae4f977e4da \
-                    sha256  9bd54dc145b61b5bbfae72f74d3e5504d38db7ce97aa90d2648bd73bfb9c4775
+sha256  9bd54dc145b61b5bbfae72f74d3e5504d38db7ce97aa90d2648bd73bfb9c4775
 
 depends_lib         port:libsdl2 \
                     port:libpng \

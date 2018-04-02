@@ -13,8 +13,8 @@ platforms           darwin
 master_sites        googlecode
 
 checksums           md5 8c5622a65f2f7527c0155a41f4db389c \
-                    sha1 964ed1104a0cbbea8a9a34e88c6e79b546eff1bc \
-                    rmd160 700c155ba56075aa38cd5276cd47ab4af220dec3
+sha1 964ed1104a0cbbea8a9a34e88c6e79b546eff1bc \
+rmd160 700c155ba56075aa38cd5276cd47ab4af220dec3
 
 patchfiles          patch-malloc_check.diff
 

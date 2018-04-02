@@ -31,7 +31,7 @@ master_sites            http://kcat.strangesoft.net/openal-releases
 use_bzip2               yes
 
 checksums               rmd160  6c04d117712bb20ea9670e143a29b0ca738b6040 \
-                        sha256  0e29a162f0841ccb4135ce76e92e8a704589b680a85eddf76f898de5236eb056
+sha256  0e29a162f0841ccb4135ce76e92e8a704589b680a85eddf76f898de5236eb056
 
 depends_build-append    port:pkgconfig
 

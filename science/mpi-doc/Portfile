@@ -23,7 +23,7 @@ master_sites        ${homepage}static/tarballs/${version}/
 distname            mpich-${version}
 
 checksums           rmd160  d7180d5129fe313830504e1d59c3b37831554bee \
-                    sha256  0778679a6b693d7b7caff37ff9d2856dc2bfc51318bf8373859bfa74253da3dc
+sha256  0778679a6b693d7b7caff37ff9d2856dc2bfc51318bf8373859bfa74253da3dc
 
 use_configure       no
 

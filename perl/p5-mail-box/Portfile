@@ -14,7 +14,7 @@ description         Mail::Box - manage a mailbox, a folder with messages
 long_description    ${description}
 
 checksums           rmd160  7de219e37965596c78188c45908e77f4e1cace61 \
-                    sha256  75a4a683d7a6a7fea68057bce180e9da8042e3962d2b1fb49e8cd6b2a32c7b80 \
+sha256  75a4a683d7a6a7fea68057bce180e9da8042e3962d2b1fb49e8cd6b2a32c7b80 \
 size    340343
 
 platforms           darwin

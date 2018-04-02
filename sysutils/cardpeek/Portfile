@@ -22,7 +22,7 @@ homepage        http://pannetrat.com/Cardpeek/
 master_sites    http://downloads.pannetrat.com/install/
 
 checksums       rmd160 0d1118586f85512d4483d6be027921ecc222c1f8 \
-                sha256 9c78dfdf84493c551b49447e4bb46c8d7b33f0785b93893222b70b6115013a85
+sha256 9c78dfdf84493c551b49447e4bb46c8d7b33f0785b93893222b70b6115013a85
 
 depends_build   port:pkgconfig
 

@@ -18,7 +18,7 @@ long_description \
     passwords for credential storage, key derivation, or other applications.
 
 checksums           rmd160  0c92cfd56d82acf295465aeab29917bb8b92ab12 \
-                    sha256  a1a655c5f56688906269b3d476e99f8add90c184cd7674a82c81deaba51ba515
+sha256  a1a655c5f56688906269b3d476e99f8add90c184cd7674a82c81deaba51ba515
 
 use_configure no
 

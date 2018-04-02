@@ -13,7 +13,7 @@ description         Encode::ISO2022 - ISO/IEC 2022 character encoding scheme
 long_description    ${description}
 
 checksums           rmd160  f76818cad20bfd304918155dc64ae3fe1eb50319 \
-                    sha256  0452285a1629f3b5ccf43c5d2854413b1d441c1753d8c6e28b88b8b52d9b4136
+sha256  0452285a1629f3b5ccf43c5d2854413b1d441c1753d8c6e28b88b8b52d9b4136
 
 if {${perl5.major} != ""} {
     depends_lib-append \

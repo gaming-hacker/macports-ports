@@ -23,7 +23,7 @@ homepage            http://oath-toolkit.nongnu.org/
 master_sites        savannah
 
 checksums           rmd160  8751a8a69955f8393833283f7d96eb9767f57627 \
-                    sha256  b03446fa4b549af5ebe4d35d7aba51163442d255660558cd861ebce536824aa0
+sha256  b03446fa4b549af5ebe4d35d7aba51163442d255660558cd861ebce536824aa0
 
 depends_build       port:pkgconfig
 

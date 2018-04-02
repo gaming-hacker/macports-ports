@@ -27,8 +27,8 @@ distname        ${name}-${version}-src
 use_bzip2       yes
 
 checksums       md5     4f786fcf415d2db64681ad487c25f419 \
-                sha1    dd06fe5bff8dfa1940fc80cd2b2f84ce25bea4e7 \
-                rmd160  c98d51f8f2039d54acd4ef5fd95981b6f228c95f
+sha1    dd06fe5bff8dfa1940fc80cd2b2f84ce25bea4e7 \
+rmd160  c98d51f8f2039d54acd4ef5fd95981b6f228c95f
 
 worksrcdir      kdl-${version}
 

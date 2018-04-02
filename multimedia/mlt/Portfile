@@ -26,7 +26,7 @@ master_sites        sourceforge:project/mlt/mlt
 platforms           darwin
 
 checksums           rmd160  647cdad41974b93c5745a358e1129f2ed5f6e577 \
-                    sha256  d3a992f3e67463e68630cb0b455d408a2a12f4da7a19e46807fa08a79f09b2b6
+sha256  d3a992f3e67463e68630cb0b455d408a2a12f4da7a19e46807fa08a79f09b2b6
 
 subport ${name}-qt5 {
     description     ${description} - Qt5 version

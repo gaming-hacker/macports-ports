@@ -20,8 +20,8 @@ homepage            http://www.ndesk.org/DBusSharp
 master_sites        http://www.ndesk.org/archive/dbus-sharp/
 
 checksums           md5     5157ba105c9ac491f6e900bc78d1791f \
-                    sha1    4971a54ea6cbee41266cc89040ca427cfc3f99f0 \
-                    rmd160  1da86c3aabafd128827452f50250e642b4004d0e
+sha1    4971a54ea6cbee41266cc89040ca427cfc3f99f0 \
+rmd160  1da86c3aabafd128827452f50250e642b4004d0e
 
 distname            ndesk-dbus-${version}
 

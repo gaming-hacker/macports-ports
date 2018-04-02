@@ -22,7 +22,7 @@ long_description    Sys::Filesystem is intended to be a \
 platforms           darwin
 
 checksums           rmd160  df77a845f2b12595168ec3931c8b1d3031775df4 \
-                    sha256  9a1d43326226f8aea3359849383784840ef930e5c4efafa4cbd5764d2c7a6afb
+sha256  9a1d43326226f8aea3359849383784840ef930e5c4efafa4cbd5764d2c7a6afb
 
 if {${perl5.major} != ""} {
     depends_lib-append \

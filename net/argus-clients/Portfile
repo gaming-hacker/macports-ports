@@ -26,7 +26,7 @@ master_sites    http://qosient.com/argus/src/ \
                 ftp://qosient.com/pub/argus/src/
 
 checksums       rmd160  1b77ca3d82ff25990322942794df5e12d5a79b37 \
-                sha256  aee8585d50959e00070a382f3121edfaa844a0a51dc0b73edf84c0f4eb8912c9
+sha256  aee8585d50959e00070a382f3121edfaa844a0a51dc0b73edf84c0f4eb8912c9
 
 configure.cflags-append -std=gnu89
 default_variants +sasl

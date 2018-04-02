@@ -22,7 +22,7 @@ platforms           darwin openbsd
 set branch          [join [lrange [split ${version} .] 0 1] .]
 
 checksums           rmd160  d5a1d66caffc02832c446f375a16319779fc5e0b \
-                    sha256  30aa53cd671d673580104f04be3cf81ac1e20a2e8baaf7274498739d59e99de8
+sha256  30aa53cd671d673580104f04be3cf81ac1e20a2e8baaf7274498739d59e99de8
 
 patchfiles-append   patch-Makefile.diff
 platform darwin 8 {

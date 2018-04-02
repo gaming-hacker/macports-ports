@@ -19,8 +19,8 @@ master_sites		http://www.maradns.org/download/${branch}/${version} \
 			sourceforge
 			
 checksums		md5	ee82cb6d4989cee2b9937257dc48c025 \
-			sha1	091964ee898d1ee79e35b9e8bb42ae1df5b076e0 \
-			rmd160	47b4816d125883d0a7d676677102fc906546f2f8
+sha1	091964ee898d1ee79e35b9e8bb42ae1df5b076e0 \
+rmd160	47b4816d125883d0a7d676677102fc906546f2f8
 
 use_bzip2		yes
 

@@ -12,4 +12,4 @@ description         PEAR File_SearchReplace package
 long_description    ${description}
 
 checksums           rmd160  216a77ac03fd734f95f6fad7ef7b037755e9a356 \
-                    sha256  fe783f05fe578337f706ac51e247257d014affbb694aa0daf6972a15b1ded53d
+sha256  fe783f05fe578337f706ac51e247257d014affbb694aa0daf6972a15b1ded53d

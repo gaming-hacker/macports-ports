@@ -13,7 +13,7 @@ description         Return a new instance a component on each request
 long_description    ${description}
 
 checksums           rmd160  6cc57280eb61f45a73c36c79e36058b76c59f186 \
-                    sha256  7f63f930e1e613f15955c9e6d73873675c50c0a3bc2a61a034733361ed26d271
+sha256  7f63f930e1e613f15955c9e6d73873675c50c0a3bc2a61a034733361ed26d271
 
 platforms           darwin
 supported_archs     noarch

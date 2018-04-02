@@ -62,7 +62,7 @@ variant installer description {Use installer, rather than building from source} 
     extract.post_args ${worksrcpath}
     depends_build-delete bin:ant:apache-ant
     checksums           rmd160  10741971d109bb7c941c98e2b099f366cb8b34b6 \
-                        sha256  6e58dad0b8565b95c6fb14b4bfbf570523d1c5290244cfb33822789fa53b1d25
+sha256  6e58dad0b8565b95c6fb14b4bfbf570523d1c5290244cfb33822789fa53b1d25
 
     pre-build {
         xinstall -m 755 -d ${destroot}${prefix}/share/java/${name}

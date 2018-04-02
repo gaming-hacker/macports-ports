@@ -17,8 +17,8 @@ master_sites	sourceforge
 distname        ${name}${version}
 extract.suffix	.tgz
 checksums           md5     2aa665ec99a24711a71980e8cd0d96b6 \
-                    sha1    8b1ce761fea2fcd8b1eb3ffc4c02cd3edcf40deb \
-                    rmd160  5cf58988058cf2044cf746099d0d189d1958950e
+sha1    8b1ce761fea2fcd8b1eb3ffc4c02cd3edcf40deb \
+rmd160  5cf58988058cf2044cf746099d0d189d1958950e
 
 extract.post_args	"| tar -xf - --exclude='*.DS_Store'"
 

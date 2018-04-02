@@ -27,11 +27,11 @@ homepage            http://www.bali-phy.org/
 
 patchfiles          scripts.patch
 checksums           scripts.patch \
-                    rmd160  7a1538fa6e0f92c3d64aecde29d4bf6193fae0c4 \
-                    sha256  2577479293668711fac962243cc7f3b28469e7660bbb243751890576a79c4aeb \
+rmd160  7a1538fa6e0f92c3d64aecde29d4bf6193fae0c4 \
+sha256  2577479293668711fac962243cc7f3b28469e7660bbb243751890576a79c4aeb \
                     BAli-Phy-1ed068ee00.tar.gz \
-                    rmd160  7a1538fa6e0f92c3d64aecde29d4bf6193fae0c4 \
-                    sha256  2577479293668711fac962243cc7f3b28469e7660bbb243751890576a79c4aeb
+rmd160  7a1538fa6e0f92c3d64aecde29d4bf6193fae0c4 \
+sha256  2577479293668711fac962243cc7f3b28469e7660bbb243751890576a79c4aeb
 
 depends_build-append \
                     port:pkgconfig \

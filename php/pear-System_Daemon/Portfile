@@ -12,4 +12,4 @@ description         PEAR System_Daemon package
 long_description    ${description}
 
 checksums           rmd160  ca52db46f8516c7bdb69913686caa2d7b44e3c17 \
-                    sha256  6e57489ed8454544463523cc9e789d0217da73b3799542d4a1e6fe9e1c6ccb31
+sha256  6e57489ed8454544463523cc9e789d0217da73b3799542d4a1e6fe9e1c6ccb31

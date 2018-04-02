@@ -21,8 +21,8 @@ distname        apache-tomcat-${version}-src
 master_sites    apache:tomcat/tomcat-6/v${version}/src/
 
 checksums       md5 7c6bd23abcaa1b91c0fd5061945d97e7 \
-                sha1 307a5e5699904de924e8918527361d680d278bcd \
-                sha256 0392a1d04554c91b8efc3c62becbda634de2031f0366925378047062a2098d30
+sha1 307a5e5699904de924e8918527361d680d278bcd \
+sha256 0392a1d04554c91b8efc3c62becbda634de2031f0366925378047062a2098d30
 
 patchfiles      patch-bin-catalina.sh \
                 patch-build.xml.diff

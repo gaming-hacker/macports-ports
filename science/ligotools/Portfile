@@ -19,7 +19,7 @@ homepage            https://wiki.ligo.org/DASWG/LIGOTools
 master_sites        http://software.ligo.org/lscsoft/source/
 
 checksums           rmd160  a1639a9ea5abf4827e06a6a5ecde3595b3e68303 \
-                    sha256  3a9bd2a7604257a37c595655349f1e3001c7f063b75354526b702b996ee12e72
+sha256  3a9bd2a7604257a37c595655349f1e3001c7f063b75354526b702b996ee12e72
 
 depends_lib         port:tcl
 

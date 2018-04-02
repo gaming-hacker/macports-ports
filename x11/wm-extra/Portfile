@@ -51,37 +51,37 @@ distfiles \
 
 checksums \
 		WindowMaker-extra-latest${extract.suffix} \
-		    md5 07c7700daaaf232bc490f5abaabef085 \
+md5 07c7700daaaf232bc490f5abaabef085 \
 		yd_wm_extras-0.2.tar.gz \
-		    md5 a2aa7a290c077806fd03192fe507f6fe \
+md5 a2aa7a290c077806fd03192fe507f6fe \
 		0ne-default-1.tar.gz \
-		    md5 aa1aed3824217b01c87f3ff58cfbf23e \
+md5 aa1aed3824217b01c87f3ff58cfbf23e \
 		actekchallenge-default-0.1.tar.gz \
-		    md5 c961cb68f22d52548c1572f2624e929e \
+md5 c961cb68f22d52548c1572f2624e929e \
 		afeelingofrain-default-0.3.tar.gz \
-		    md5 588aa39261f54cab6f490e7460d8f431 \
+md5 588aa39261f54cab6f490e7460d8f431 \
 		alphawm-default-0.81.tar.gz \
-		    md5 d9eec2c1fd9a6691896609c203cb0d40 \
+md5 d9eec2c1fd9a6691896609c203cb0d40 \
 		anemexiis-1.0.tar.gz \
-		    md5 b708c8c5b5aea97b7c2fa33b57003465 \
+md5 b708c8c5b5aea97b7c2fa33b57003465 \
 		blaircastlestream-default-1.0.tar.gz \
-		    md5 9e9e7627dc0224f5375f2f16503aa54c \
+md5 9e9e7627dc0224f5375f2f16503aa54c \
 		blueleaves-default.tar.gz \
-		    md5 38aaf05cdeec52d700264f28b78e2544 \
+md5 38aaf05cdeec52d700264f28b78e2544 \
 		bluerose-default-0.3.tar.gz \
-		    md5 899dcb1d60b9d7c82aa41fc23e64af9a \
+md5 899dcb1d60b9d7c82aa41fc23e64af9a \
 		calvinandhobbes-0.60.0.tar.gz \
-		    md5 f8b189ef916b11041f2403eec3155ca4 \
+md5 f8b189ef916b11041f2403eec3155ca4 \
 		chaosoflife-0.5.tar.gz \
-		    md5 f5b86312dbf8033d38f16c23a32f1591 \
+md5 f5b86312dbf8033d38f16c23a32f1591 \
 		eldotsee-0.60.0.tar.gz \
-		    md5 6f3043c430c325cfb97eef73b71f280e \
+md5 6f3043c430c325cfb97eef73b71f280e \
 		explorer-default-0.81.tar.gz \
-		    md5 6db5e40bd4aba0e44dcecd1e6feeb8dd \
+md5 6db5e40bd4aba0e44dcecd1e6feeb8dd \
 		gnusteppenguin-0.60.0.tar.gz \
-		    md5 dc0a20c37869a38048c571e3ffad7d15 \
+md5 dc0a20c37869a38048c571e3ffad7d15 \
 		secretspotwm-default-0.80.tar.gz \
-		    md5 8ff1a55d36a7a32832cd74a1cc4d0976
+md5 8ff1a55d36a7a32832cd74a1cc4d0976
 
 worksrcdir      WindowMaker-extra-${version}
 build { }

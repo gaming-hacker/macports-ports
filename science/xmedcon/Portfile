@@ -16,7 +16,7 @@ platforms           darwin
 master_sites        sourceforge:project/${name}/XMedCon-Source/${version}
 
 checksums           rmd160  cbc4b182bf5ec11d98b49edf3b15b4beac3e1ccb \
-                    sha256  db597526e6afdfa63daf558e1d941af2374c4377c4cdeac02ba378b2c768ce33
+sha256  db597526e6afdfa63daf558e1d941af2374c4377c4cdeac02ba378b2c768ce33
 
 use_parallel_build  yes
 

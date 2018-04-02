@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  786cc761c76d0d0f3c9eeb9da6058f40b820b26d \
-                    sha256  09236d67d679bb477e0af78207235e038e1dec72635f6c7d78f387ddeb602b00
+sha256  09236d67d679bb477e0af78207235e038e1dec72635f6c7d78f387ddeb602b00
 
 # builds on perl5.24 but not perl5.25+
 # still has runtime problems on perl5.22+ but this is apparently expected until

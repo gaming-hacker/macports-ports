@@ -29,7 +29,7 @@ homepage                    http://www.semicomplete.com/projects/xdotool/
 master_sites                googlecode:semicomplete
 
 checksums                   sha1    bf8372b2e76e8ee3884763cee6e8b3f66bf29aa6 \
-                            rmd160  1aebcd835a4741a9e77aa489a3bdce195c582204
+rmd160  1aebcd835a4741a9e77aa489a3bdce195c582204
 
 depends_build               port:pkgconfig \
                             path:bin/perl:perl5

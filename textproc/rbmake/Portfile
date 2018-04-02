@@ -14,8 +14,8 @@ homepage        http://rbmake.sourceforge.net/
 master_sites    sourceforge
 
 checksums       md5 0d9a3769b878c9db630a6d890020ff38 \
-                sha1 5737af7a419e579160bc09544a7944e340a07582 \
-                rmd160 a9731ac79a7f25c7f8e887f656845beb6ba859bb
+sha1 5737af7a419e579160bc09544a7944e340a07582 \
+rmd160 a9731ac79a7f25c7f8e887f656845beb6ba859bb
 
 long_description \
     Rbmake is a "book maker" for the Rocket eBook. It consists of a set of \

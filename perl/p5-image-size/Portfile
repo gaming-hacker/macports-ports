@@ -19,7 +19,7 @@ long_description    Image::Size is a simple library that allows the \
                     formats.
 
 checksums           rmd160  70e06d4c601528809d64a411cf458d7ccea18dc5 \
-                    sha256  53c9b1f86531cde060ee63709d1fda73cabc0cf2d581d29b22b014781b9f026b
+sha256  53c9b1f86531cde060ee63709d1fda73cabc0cf2d581d29b22b014781b9f026b
 
 if {${perl5.major} != ""} {
     depends_build-append \

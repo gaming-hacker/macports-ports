@@ -15,6 +15,6 @@ long_description    Handles the installing and uninstalling of perl \
 platforms           darwin
 
 checksums           rmd160  08e98d5e3298e3c32b8fdb95c1a6e4f5bc614255 \
-                    sha256  35412305cbae979aac3b6e2c70cb301ae461979a1d848a8a043f74518eb96aea
+sha256  35412305cbae979aac3b6e2c70cb301ae461979a1d848a8a043f74518eb96aea
 
 supported_archs     noarch

@@ -14,7 +14,7 @@ description         Shairport Sync is an AirPlay audio player
 long_description    AirTunes emulator. Shairport Sync adds multi-room capability with Audio Synchronisation.
 
 checksums           rmd160  642f43d32f7bae3cddc7038ae9b48456882096c2 \
-                    sha256  99083c7134b1ad99adcdbdcc2d4122ff5e67853a754119d580c5173fbe8bfbc1
+sha256  99083c7134b1ad99adcdbdcc2d4122ff5e67853a754119d580c5173fbe8bfbc1
 
 depends_build       port:pkgconfig \
                     port:autoconf \

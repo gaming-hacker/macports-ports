@@ -16,7 +16,7 @@ long_description    This module will attempt to load find and load a \
 platforms           darwin
 
 checksums           rmd160  c929c5aac0a7f73250fb2f46eb2df8733fa5e89d \
-                    sha256  b8c073686e8bfdb4867a25012d6883a75f454e6a36d77d6be6a6af7a36b947a6
+sha256  b8c073686e8bfdb4867a25012d6883a75f454e6a36d77d6be6a6af7a36b947a6
 
 if {${perl5.major} != ""} {
     depends_lib-append \

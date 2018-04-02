@@ -19,7 +19,7 @@ long_description    Many Perl distributions use a Build.PL file instead of a Mak
                     This module provides a simple, lightweight, drop-in replacement.
 
 checksums           rmd160  ed351a2e2fad790df701b031b66d26eb16779cc7 \
-                    sha256  7d580ff6ace0cbe555bf36b86dc8ea232581530cbeaaea09bccb57b55797f11c
+sha256  7d580ff6ace0cbe555bf36b86dc8ea232581530cbeaaea09bccb57b55797f11c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

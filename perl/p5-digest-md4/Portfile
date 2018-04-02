@@ -19,4 +19,4 @@ long_description    The Digest::MD5 module allows you to use the \
 platforms           darwin
 
 checksums           rmd160  9beaffe33b2a46eef64c453ddd21465b715ca81f \
-                    sha256  665110bba32470f398f311cd6462fd8975d7c83675ff674bc2f6c7b72b0caaa6
+sha256  665110bba32470f398f311cd6462fd8975d7c83675ff674bc2f6c7b72b0caaa6

@@ -21,7 +21,7 @@ master_sites        pypi:g/gmpy2
 distname            gmpy2-${version}
 use_zip             yes
 checksums           rmd160  d7a4f6d8fe370e4565f0af00b903d6b6740e4718 \
-                    sha256  dd233e3288b90f21b0bb384bcc7a7e73557bb112ccf0032ad52aa614eb373d3f
+sha256  dd233e3288b90f21b0bb384bcc7a7e73557bb112ccf0032ad52aa614eb373d3f
 
 python.versions 27 36
 

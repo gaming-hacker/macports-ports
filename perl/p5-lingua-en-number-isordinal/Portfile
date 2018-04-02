@@ -16,7 +16,7 @@ long_description    This module will tell you if a number, either in words or as
 platforms           darwin
 
 checksums           rmd160  97e5a76d39e4202e5ef9534a9859dd5f644a9dbe \
-                    sha256  28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6
+sha256  28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6
 
 if {${perl5.major} != ""} {
     depends_build-append \

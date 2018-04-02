@@ -12,7 +12,7 @@ description         PEAR HTTP_Server package
 long_description    ${description}
 
 checksums           rmd160  72c519f046cf42e02e6ac44e1049c47d3ecde165 \
-                    sha256  565ba282ada7960f021d20083a1b2471e564ddd97efca6b8ede6fa0581b214f3
+sha256  565ba282ada7960f021d20083a1b2471e564ddd97efca6b8ede6fa0581b214f3
 
 depends_lib-append  port:pear-HTTP \
                     port:pear-Net_Server

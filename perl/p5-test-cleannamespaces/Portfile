@@ -20,7 +20,7 @@ long_description    This module lets you check your module's namespaces for \
 supported_archs     noarch
 
 checksums           rmd160  a2ad568d7e8a611c7ef2209d3da01b6842fbef65 \
-                    sha256  862a221994dd413b2f350450f22c96f57cac78784b1aca1a8fc763fc5449aaca
+sha256  862a221994dd413b2f350450f22c96f57cac78784b1aca1a8fc763fc5449aaca
 
 if {${perl5.major} != ""} {
     depends_build-append \

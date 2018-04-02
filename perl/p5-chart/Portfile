@@ -15,7 +15,7 @@ description         Create png/jpeg images with charts
 long_description    ${description}
 
 checksums           rmd160  cd78772b1698d0c263cc50238d7013b424c33147 \
-                    sha256  84bd99a1a0ce72477b15e35881e6120398bb3f553aeeb5e8d72b088520e4f6bf
+sha256  84bd99a1a0ce72477b15e35881e6120398bb3f553aeeb5e8d72b088520e4f6bf
 
 if {${perl5.major} != ""} {
     depends_lib-append \

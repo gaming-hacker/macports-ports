@@ -28,11 +28,11 @@ master_sites        http://jimsun.linxnet.com/downloads/ \
 distfiles-append    mail-cgi.txt:cgi
 
 checksums           ${name}-${version}.tar.gz \
-                    rmd160  be63bd79c3bde406fe9e7fcc5b241fd7b2283ddb \
-                    sha256  c4df11c2eaef313025e326114d9dea4b0f0f9b978880a29d2ecf075774aa7142 \
+rmd160  be63bd79c3bde406fe9e7fcc5b241fd7b2283ddb \
+sha256  c4df11c2eaef313025e326114d9dea4b0f0f9b978880a29d2ecf075774aa7142 \
                     mail-cgi.txt \
-                    rmd160  7e683878f45dd401764a62ab52ad79c5f2f36a97 \
-                    sha256  1bb4fe670fd7b544b9ab0425783573be7a04529fd1f7a6ccd5680fa089bfbb6d
+rmd160  7e683878f45dd401764a62ab52ad79c5f2f36a97 \
+sha256  1bb4fe670fd7b544b9ab0425783573be7a04529fd1f7a6ccd5680fa089bfbb6d
 
 extract.only        ${distname}${extract.suffix}
 platforms           darwin freebsd

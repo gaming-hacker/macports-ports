@@ -19,8 +19,8 @@ homepage        http://sourceforge.net/projects/pwman
 master_sites    sourceforge
 
 checksums       md5     29ddc5028391e224995151b4f959c51a \
-                sha1    3eb443858de5dbed10a642323ac7b1a27d2b5e08 \
-                rmd160  29207d09666f51e241dbb9db04ba6500878471ba
+sha1    3eb443858de5dbed10a642323ac7b1a27d2b5e08 \
+rmd160  29207d09666f51e241dbb9db04ba6500878471ba
 
 depends_lib     port:ncurses \
                 port:libxml2 \

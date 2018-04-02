@@ -27,7 +27,7 @@ distname            ${name}_${branch}-${minor}
 worksrcdir          ${name}_${branch}
 
 checksums           sha1    38f934cae9d0cac1137e51640116f9a750c8d420 \
-                    rmd160  1c7452605afb664f4661cd057ccbb4e0c9230ed7
+rmd160  1c7452605afb664f4661cd057ccbb4e0c9230ed7
 
 configure.args-append --enable-lfs
 

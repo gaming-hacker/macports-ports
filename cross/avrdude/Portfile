@@ -19,7 +19,7 @@ license           GPL-2
 master_sites      http://download.savannah.gnu.org/releases/avrdude/
 
 checksums         rmd160  245c20fa6f6be274093f43fa4932295ea47dafaa \
-                  sha256  0f9f731b6394ca7795b88359689a7fa1fba818c6e1d962513eb28da670e0a196
+sha256  0f9f731b6394ca7795b88359689a7fa1fba818c6e1d962513eb28da670e0a196
 
 depends_lib       port:libusb \
                   port:ncurses \

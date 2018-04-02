@@ -20,7 +20,7 @@ long_description    This module understands the formats used by PostgreSQL \
 platforms           darwin
 
 checksums           rmd160  c9a768edcb351593e597c98e5050ee14d384d7e9 \
-                    sha256  7f862ea5e51bd45bebc6c6f9708497b98964932e5a39ebcafe3402351ce0519b
+sha256  7f862ea5e51bd45bebc6c6f9708497b98964932e5a39ebcafe3402351ce0519b
 
 if {${perl5.major} != ""} {
     depends_build-append \

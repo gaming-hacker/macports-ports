@@ -40,7 +40,7 @@ if {${name} == ${subport}} {
     distfiles           install-pear-nozlib.phar
 
     checksums           rmd160  f0d0388e5fe170557f2815efed7dee7f5b9df073 \
-                        sha256  41f36cc001833ddfbd935f86113bf8c324de4b526ec44321d120bb865715dad9
+sha256  41f36cc001833ddfbd935f86113bf8c324de4b526ec44321d120bb865715dad9
 
     set buildpath       ${worksrcpath}/build
     set libpath         /lib/php/pear

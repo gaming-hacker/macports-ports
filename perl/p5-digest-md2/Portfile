@@ -17,4 +17,4 @@ long_description    The Digest::MD2 module allows you to use the RSA Data Securi
 platforms           darwin
 
 checksums           rmd160  b14389aff5845679e93451b259f1d7686b997e8b \
-                    sha256  d0aabf4834c20ac411bea427c4a308b59a5fcaa327679ef5294c1d68ab71eed3
+sha256  d0aabf4834c20ac411bea427c4a308b59a5fcaa327679ef5294c1d68ab71eed3

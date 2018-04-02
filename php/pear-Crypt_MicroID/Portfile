@@ -12,4 +12,4 @@ description         PEAR Crypt_MicroID package
 long_description    ${description}
 
 checksums           rmd160  91ebbf1f5fbcf9ce83e09b32632aa8ae404325ff \
-                    sha256  8e9196cc686b367a571ba76ac7f065ff339a939586fce816d957ae263b707064
+sha256  8e9196cc686b367a571ba76ac7f065ff339a939586fce816d957ae263b707064

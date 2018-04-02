@@ -7,7 +7,7 @@ PortGroup               github 1.0
 
 github.setup            nomacs nomacs 3.8.0
 checksums               rmd160  d4821805ffe6b30ddefb10fa71e083b1cb27d424 \
-                        sha256  79efe555026a2dff98313112aac3fcd6675533d65495010be74b27bc6c9c8e41
+sha256  79efe555026a2dff98313112aac3fcd6675533d65495010be74b27bc6c9c8e41
 
 name                    nomacs
 license                 GPL-3+

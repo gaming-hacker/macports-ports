@@ -21,7 +21,7 @@ master_sites        googlecode
 extract.suffix      .tgz
 
 checksums           rmd160  a3e560057258d295c0845827c47c5e97f91c4e51 \
-                    sha256  eaa9e52727c8b28dedc87398ed33ffa2340d6d0f3ea9d261749c715cb7a0e9c8
+sha256  eaa9e52727c8b28dedc87398ed33ffa2340d6d0f3ea9d261749c715cb7a0e9c8
 
 # Note this does not depend on MacPorts' perl but the system one for
 # things like Foundation.pm...

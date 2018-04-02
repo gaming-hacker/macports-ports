@@ -15,7 +15,7 @@ description         A Streaming Text Orientated Messaging Protocol Client
 long_description    ${description}
 
 checksums           rmd160  f6e54af2779b4dbb7fd522d1d81504e608f2b91c \
-                    sha256  abe98abbd2ce2fd65cdeca2d6e23277e3bb31fdd0fdc7169d8b5f43f3e36d4eb
+sha256  abe98abbd2ce2fd65cdeca2d6e23277e3bb31fdd0fdc7169d8b5f43f3e36d4eb
 
 if {${perl5.major} != ""} {
     depends_build-append \

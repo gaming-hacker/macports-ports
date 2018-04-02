@@ -22,7 +22,7 @@ platforms               darwin
 master_sites            https://github.com/edyoung/gnofract4d/archive/
 
 checksums               rmd160  e42b53ec651430d88d7479fb8cb2704d0b33ab6d \
-                        sha256  29f05d9b07f7b53bf250b0f81f74b76dbd68efc5d6ba71f4d55ef332f6b6f83d
+sha256  29f05d9b07f7b53bf250b0f81f74b76dbd68efc5d6ba71f4d55ef332f6b6f83d
 
 # Remove next 3 lines with next version update.
 dist_subdir             ${name}/${version}_1

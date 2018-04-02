@@ -5,7 +5,7 @@ PortSystem          1.0
 name                liberation-fonts
 version             2.00.1
 checksums           rmd160  99ee3851f3f1ae9a431541de5765312f01ef19d7 \
-                    sha256  7890278a6cd17873c57d9cd785c2d230d9abdea837e96516019c5885dd271504
+sha256  7890278a6cd17873c57d9cd785c2d230d9abdea837e96516019c5885dd271504
 
 categories          x11 fonts
 platforms           darwin

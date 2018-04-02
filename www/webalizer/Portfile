@@ -24,7 +24,7 @@ distname                ${name}-${version}-src
 worksrcdir              ${name}-${version}
 
 checksums               rmd160  6f1d2ca90d9a891c878e5edb220684869f9fd32c \
-                        sha256  b37524fbd98e97052a80d59f75e69f857468752cf74cc0eb0972e5fab02eb6f7 \
+sha256  b37524fbd98e97052a80d59f75e69f857468752cf74cc0eb0972e5fab02eb6f7 \
 size    308090
 
 depends_lib             port:bzip2 \

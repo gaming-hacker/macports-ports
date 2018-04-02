@@ -18,7 +18,7 @@ long_description    IO::Socket::SSL is a class implementing an object \
                     descendent of IO::Socket::INET.
 
 checksums           rmd160  942d7cbeb58e098bbf9c1b9dc2c2f8cb320dec5e \
-                    sha256  91451ecc28b243a78b438f0a42db24c4b60a86f088879b38e40bdbd697818259 \
+sha256  91451ecc28b243a78b438f0a42db24c4b60a86f088879b38e40bdbd697818259 \
 size    232898
 
 if {${perl5.major} != ""} {

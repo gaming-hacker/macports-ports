@@ -36,7 +36,7 @@ python.versions 27 36
 python.default_version 27
 
 checksums           rmd160 bb99fc946fd6f1b3ffd81cc9ac5508918fc86213 \
-                    sha256 9fb388505b551b057c62a4bf4d5b33b0cb72a593b2d4a5018ac5eced9f0be5a5
+sha256 9fb388505b551b057c62a4bf4d5b33b0cb72a593b2d4a5018ac5eced9f0be5a5
 
 if {${name} ne ${subport}} {
     depends_lib-append port:py${python.version}-setuptools

@@ -27,7 +27,7 @@ master_sites        pypi:p/pystache/
 distname            pystache-${version}
 
 checksums           rmd160  07b303af8cb3841fb1afb1bf73c625cf54b6fe94 \
-                    sha256  f7bbc265fb957b4d6c7c042b336563179444ab313fb93a719759111eabd3b85a
+sha256  f7bbc265fb957b4d6c7c042b336563179444ab313fb93a719759111eabd3b85a
 
 if {${name} ne ${subport}} {
     depends_build-append \

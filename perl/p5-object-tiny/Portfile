@@ -13,7 +13,7 @@ description         A data object with as little code as possible
 long_description    ${description}
 
 checksums           rmd160  2ec68e641d9082f9d07266badd0fa108464f3fd1 \
-                    sha256  b1d6058ce377b74a21f888008ad65aa17427dbec46c9aad3ba1c3fd93864de56
+sha256  b1d6058ce377b74a21f888008ad65aa17427dbec46c9aad3ba1c3fd93864de56
 
 platforms           darwin
 supported_archs     noarch

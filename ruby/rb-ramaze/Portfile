@@ -14,7 +14,7 @@ homepage            http://ramaze.net/
 platforms           darwin
 
 checksums           md5 e97055aa3b8ce4e744dc71fba36368d4 \
-                    rmd160 63858ae528f8493dbc83d2d10fe283b06f857fe7 \
-                    sha1 79b72bb8f37e21ece0847169397ad9619ebbab61
+rmd160 63858ae528f8493dbc83d2d10fe283b06f857fe7 \
+sha1 79b72bb8f37e21ece0847169397ad9619ebbab61
 
 depends_lib         port:rb-innate

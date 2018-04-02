@@ -17,7 +17,7 @@ distname	xproto-${version}
 use_bzip2	yes
 
 checksums           rmd160  27350d33fd2bbc14201231d9fd30629f899b6005 \
-                    sha256  c6f9747da0bd3a95f86b17fb8dd5e717c8f3ab7f0ece3ba1b247899ec1ef7747
+sha256  c6f9747da0bd3a95f86b17fb8dd5e717c8f3ab7f0ece3ba1b247899ec1ef7747
 
 post-destroot {
     set docdir ${prefix}/share/doc/${name}-${version}

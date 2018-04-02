@@ -17,7 +17,7 @@ description         Find a development path somewhere in an upper hierarchy.
 long_description    ${description}
 
 checksums           rmd160  5dad75a1cefa6ba6fb906a5221f85ec7f7f1e827 \
-                    sha256  beb465d3060ad7d71d338d48ade5798a96d3cd2bc40a3d619b940372038808b9
+sha256  beb465d3060ad7d71d338d48ade5798a96d3cd2bc40a3d619b940372038808b9
 
 if {${perl5.major} != ""} {
 

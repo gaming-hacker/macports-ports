@@ -25,7 +25,7 @@ homepage            http://postgis.refractions.net/
 master_sites        http://download.osgeo.org/postgis/source/
 
 checksums           rmd160  825be8892a22c660200bb6005608375cb47c920d \
-                    sha256  4896fdae2f814b88c3ca458b7d01d7eca7e9aca021599c817919f131a1b0d804
+sha256  4896fdae2f814b88c3ca458b7d01d7eca7e9aca021599c817919f131a1b0d804
 
 depends_build \
     port:docbook-xsl \

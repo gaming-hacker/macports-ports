@@ -20,7 +20,7 @@ homepage            http://www.cybernoia.de/software/archivemount.html
 master_sites        http://www.cybernoia.de/software/archivemount/
 
 checksums           rmd160  a2adff75ad47b137c9ffe2e7212380346f0c2f90 \
-                    sha256  47045ca8d4d62fbe0b4248574c65cf90a6d29b488d166aec8c365b6aafe131b6
+sha256  47045ca8d4d62fbe0b4248574c65cf90a6d29b488d166aec8c365b6aafe131b6
 
 patchfiles          patch-archivemount.diff
 

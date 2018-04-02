@@ -15,7 +15,7 @@ categories          devel
 platforms           darwin
 
 checksums           rmd160  ce57274756fd1f51a98798d737071712cdd37787 \
-                    sha256  fac29449fcda4c597712ec1223b2a24c5f1d806ef9afb0c8b04faefb2f94f727 \
+sha256  fac29449fcda4c597712ec1223b2a24c5f1d806ef9afb0c8b04faefb2f94f727 \
 size    6849667
 
 worksrcdir          ${worksrcdir}/cpp

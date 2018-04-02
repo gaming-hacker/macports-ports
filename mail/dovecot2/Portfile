@@ -54,7 +54,7 @@ patch.pre_args      -p1
 patchfiles          patch-doc-example-config-conf.d-10-master.conf.diff
 
 checksums           rmd160  6745d03a4b8d860476e2e7aacf91dd757b906037 \
-                    sha256  ab772b3e214683aba347203c9391295552255c4d69afb324c7b8c8fc5ad6f153
+sha256  ab772b3e214683aba347203c9391295552255c4d69afb324c7b8c8fc5ad6f153
 
 post-patch {
     reinplace "s|@@default_internal_user@@|${default_internal_user}|g" \

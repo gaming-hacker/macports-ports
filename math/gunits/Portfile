@@ -16,7 +16,7 @@ platforms        darwin
 master_sites     gnu:units
 distname         units-${version}
 checksums        rmd160  2d3670658414ae77ae885c133880c515991d28ad \
-                 sha256  138b12c70bffa0e484fdfe579927412b1ac573e8351c17d8938592f9ba9a88f2
+sha256  138b12c70bffa0e484fdfe579927412b1ac573e8351c17d8938592f9ba9a88f2
 
 depends_lib      port:readline
 

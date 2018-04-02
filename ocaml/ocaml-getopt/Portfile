@@ -17,7 +17,7 @@ master_sites        http://alain.frisch.fr/info/
 distname            getopt-${version}
 
 checksums           rmd160  c13cfe1f8940a759a479e56c1cbdb9a110048a1b \
-                    sha256  cb53317e026867e732276feff392031831d7cbed1d4b49a764971d6bab1fff2a
+sha256  cb53317e026867e732276feff392031831d7cbed1d4b49a764971d6bab1fff2a
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

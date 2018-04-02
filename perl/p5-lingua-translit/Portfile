@@ -21,4 +21,4 @@ long_description    Lingua::Translit can be used to convert text from one \
                     transliteration is supported.
 
 checksums           rmd160  eeea175766ffd4e71816ac5c2300c2b7506d2770 \
-                    sha256  113f91d8fc2c630437153a49fb7a52b023af8f6278ed96c070b1f60824b8eae1
+sha256  113f91d8fc2c630437153a49fb7a52b023af8f6278ed96c070b1f60824b8eae1

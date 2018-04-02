@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  af6736f20497170c091985f5766912a24c579941 \
-                    sha256  0734c671c8822bcfd34bd62adeea43c6640bd456196ab523177b7c13144df745
+sha256  0734c671c8822bcfd34bd62adeea43c6640bd456196ab523177b7c13144df745
 
 if {${perl5.major} != ""} {
     # p5-object-hashbase was previously part of p5-test-simple now separate

@@ -28,11 +28,11 @@ patch_sites             sourceforge:project/mspgcc/Patches/${distname}/
 patchfiles              ${name_common}-${version}-${epoch}.patch
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  b5821fafe6920dfd30b73606bbf819b8296dfb4e \
-                        sha256  3c24dde332e33bfe2d5980c726d76224ebf8304278112a07bf701f8d2145d9bc \
+rmd160  b5821fafe6920dfd30b73606bbf819b8296dfb4e \
+sha256  3c24dde332e33bfe2d5980c726d76224ebf8304278112a07bf701f8d2145d9bc \
                         ${name_common}-${version}-${epoch}.patch \
-                        rmd160  84fd86c8cee99575eb7db409d113f1e5bc71d7f2 \
-                        sha256  b70b54df5e00d24a3a5b744545a87ce656bdc88546081c6ffabefbc4d6c42956
+rmd160  84fd86c8cee99575eb7db409d113f1e5bc71d7f2 \
+sha256  b70b54df5e00d24a3a5b744545a87ce656bdc88546081c6ffabefbc4d6c42956
 
 depends_run             port:mspdebug
 

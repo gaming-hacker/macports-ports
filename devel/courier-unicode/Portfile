@@ -6,7 +6,7 @@ PortGroup               cxx11 1.1
 name                    courier-unicode
 version                 2.0
 checksums               rmd160  c175b119bab12a819a5aeccca3c4c003b02a7319 \
-                        sha256  6b46011d465918af7d0ed41fbf21d918449820bd3ef7e651dbc56eb2933a8711
+sha256  6b46011d465918af7d0ed41fbf21d918449820bd3ef7e651dbc56eb2933a8711
 
 categories              devel mail
 license                 GPL-3

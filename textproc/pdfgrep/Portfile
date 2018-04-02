@@ -18,7 +18,7 @@ homepage            https://pdfgrep.org/
 master_sites        https://pdfgrep.org/download/
 
 checksums           rmd160  5c656f03b00e80395d648f804db3fc6d748c701b \
-                    sha256  0370d744b3072d47383dbed2cb9c8b0b64b83c084da5a8961f8d4bc7669e941e
+sha256  0370d744b3072d47383dbed2cb9c8b0b64b83c084da5a8961f8d4bc7669e941e
 
 depends_build       port:pkgconfig
 depends_lib         port:poppler \

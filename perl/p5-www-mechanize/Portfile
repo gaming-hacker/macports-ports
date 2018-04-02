@@ -20,7 +20,7 @@ long_description    WWW::Mechanize, or Mech for short, helps you automate \
                     you have visited, which can be queried and revisited.
 
 checksums           rmd160  65b8d1ae3b5d56b8a8306ba6ff88a53d62a223a6 \
-                    sha256  36d97e778ab911ab5a762d551541686cbf3463c571f474322f7b5da77f50a879 \
+sha256  36d97e778ab911ab5a762d551541686cbf3463c571f474322f7b5da77f50a879 \
 size    170767
 
 if {${perl5.major} != ""} {

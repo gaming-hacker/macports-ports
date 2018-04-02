@@ -15,7 +15,7 @@ long_description    Curses is the interface between Perl and your system's curse
                     (:-) between different curses(3) libraries and operating systems.
 
 checksums           rmd160  4e1cad194f5ea984ee5eaeb2aeb1665f19f1be9a \
-                    sha256  a414795ba031c5918c70279fe534fee594a96ec4b0c78f44ce453090796add64
+sha256  a414795ba031c5918c70279fe534fee594a96ec4b0c78f44ce453090796add64
 
 platforms           darwin
 if {${perl5.major} != ""} {

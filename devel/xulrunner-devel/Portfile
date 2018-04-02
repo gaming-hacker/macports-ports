@@ -29,8 +29,8 @@ dist_subdir     ${component}
 use_bzip2       yes
 
 checksums           md5     a3b387489ba1738ea504e83cb811c82a \
-                    sha1    45ce820989e0bb7b5758f94c087f21d4190c2441 \
-                    rmd160  7179df8c2af30015413db403884a729cde4a650b
+sha1    45ce820989e0bb7b5758f94c087f21d4190c2441 \
+rmd160  7179df8c2af30015413db403884a729cde4a650b
 
 worksrcdir      mozilla-2.0
 

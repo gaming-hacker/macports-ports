@@ -15,7 +15,7 @@ long_description    The primary purpose of File::Tail is reading and analysing l
                     monitoring the logging process with a tool like Tobias Oetiker's MRTG.
 
 checksums           rmd160  0e4657c81a7cdf85e61bb17504e8a4afd0605a95 \
-                    sha256  26d09f81836e43eae40028d5283fe5620fe6fe6278bf3eb8eb600c48ec34afc7
+sha256  26d09f81836e43eae40028d5283fe5620fe6fe6278bf3eb8eb600c48ec34afc7
 
 platforms           darwin
 supported_archs     noarch

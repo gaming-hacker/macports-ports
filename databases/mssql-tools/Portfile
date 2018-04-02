@@ -16,7 +16,7 @@ homepage            https://msdn.microsoft.com/en-us/library/ms162773.aspx
 master_sites        http://download.microsoft.com/download/F/D/1/FD16AA69-F27D-440E-A15A-6C521A1972E6/
 
 checksums           rmd160  0dd2ce7c4c827a050c86f7767607548fe12d1c12 \
-                    sha256  b31cfe98ff3c8f60a98fd02a1ebbe7cf7a2172320239adccd073ad3870786bf9
+sha256  b31cfe98ff3c8f60a98fd02a1ebbe7cf7a2172320239adccd073ad3870786bf9
                     
 depends_run         port:msodbcsql
 

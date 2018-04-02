@@ -16,7 +16,7 @@ homepage            http://librdf.org/bindings/
 master_sites        http://download.librdf.org/source/
 
 checksums           sha1    98c20b64cf5e99cbf29fcb84490e73e2a828213a \
-                    rmd160  0f4ac6f67fd2ddfa842dc82c52e5c380d9fc95d3
+rmd160  0f4ac6f67fd2ddfa842dc82c52e5c380d9fc95d3
  
 depends_lib         port:redland
 

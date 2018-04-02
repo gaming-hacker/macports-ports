@@ -25,7 +25,7 @@ distname                ${name}-${version}
 use_zip                 yes
 
 checksums               sha1    86036eadad8408070791b3da368958239ed8a410 \
-                        rmd160  a086609ba13ae36ec63759cf2f7f474b88c8ccdc
+rmd160  a086609ba13ae36ec63759cf2f7f474b88c8ccdc
 
 depends_run             bin:java:kaffe
 

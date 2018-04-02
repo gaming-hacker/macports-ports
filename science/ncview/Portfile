@@ -25,7 +25,7 @@ homepage                http://meteora.ucsd.edu/~pierce/ncview_home_page.html
 master_sites            ftp://cirrus.ucsd.edu/pub/ncview/
 
 checksums               rmd160  3862bad211f468d121c02a99e72b34bf81bb9cb7 \
-                        sha256  a14c2dddac0fc78dad9e4e7e35e2119562589738f4ded55ff6e0eca04d682c82
+sha256  a14c2dddac0fc78dad9e4e7e35e2119562589738f4ded55ff6e0eca04d682c82
 
 patchfiles              patch-configure.diff
 

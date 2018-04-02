@@ -19,7 +19,7 @@ homepage            http://www.catb.org/~esr/ascii/
 master_sites        ${homepage}
 
 checksums           rmd160  80b0bcfa5a89c04ce3ab4cf2bb0c08ee368c28e1 \
-                    sha256  728422d5f4da61a37a17b4364d06708e543297de0a5f70305243236d80df072d
+sha256  728422d5f4da61a37a17b4364d06708e543297de0a5f70305243236d80df072d
 
 use_configure       no
 

@@ -20,7 +20,7 @@ platforms   darwin
 master_sites    http://static.tobold.org/rc
 
 checksums           rmd160  adf5bb79f4036b79c8359fd6afd40a11fa85ff6a \
-                    sha256  5ed26334dd0c1a616248b15ad7c90ca678ae3066fa02c5ddd0e6936f9af9bfd8
+sha256  5ed26334dd0c1a616248b15ad7c90ca678ae3066fa02c5ddd0e6936f9af9bfd8
 
 patchfiles  Makefile.in.patch
 

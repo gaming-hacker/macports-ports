@@ -22,8 +22,8 @@ distname          ${name}
 dist_subdir       ${name}/${version}
 
 checksums         md5     96a670f18a20740d512534c5b42d9e16 \
-                  sha1    348f34147f1137566e6713e7d56d267404ae09ca \
-                  rmd160  43ed18aa3a9070f5a7f8e8f887bcd868b6e39ad9
+sha1    348f34147f1137566e6713e7d56d267404ae09ca \
+rmd160  43ed18aa3a9070f5a7f8e8f887bcd868b6e39ad9
 
 use_configure     no
 build     { }

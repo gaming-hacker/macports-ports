@@ -19,4 +19,4 @@ long_description    This module provides functions for expressing \
                     3 minutes, and 40 seconds.\"
 
 checksums           rmd160  aa642c91ef52a699ede6c6eeee1a4e4439ffced8 \
-                    sha256  458205b528818e741757b2854afac5f9af257f983000aae0c0b1d04b5a9cbbb8
+sha256  458205b528818e741757b2854afac5f9af257f983000aae0c0b1d04b5a9cbbb8

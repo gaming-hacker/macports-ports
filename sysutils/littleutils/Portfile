@@ -25,7 +25,7 @@ master_sites        sourceforge:project/littleutils/littleutils-source/${version
 use_xz              yes
 
 checksums           rmd160  1d5400fda85a07106d319bf56144cdf7131d304b \
-                    sha256  f846ab6d2793499c99472469a2a74d9e57ee336320700bd540e2bc6ab0ec76da
+sha256  f846ab6d2793499c99472469a2a74d9e57ee336320700bd540e2bc6ab0ec76da
 
 depends_lib         port:bash \
                     port:perl5 \

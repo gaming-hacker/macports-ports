@@ -23,7 +23,7 @@ master_sites        http://www.ring.gr.jp/archives/net/mail/qpopper/ \
 distname            ${name}${version}
 
 checksums           rmd160  5254dd252739b2465795a0161bc2fed82adffbcc \
-                    sha256  1bc21f83cda47e9b2d5d8ceecc49f169e10fdb9b99ddddcd543218fad269b0de
+sha256  1bc21f83cda47e9b2d5d8ceecc49f169e10fdb9b99ddddcd543218fad269b0de
 
 patchfiles          patch-Makefile.in patch-popper-Makefile.in
 

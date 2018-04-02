@@ -17,7 +17,7 @@ long_description    ${description}
 homepage            https://developers.yubico.com/yubikey-manager/
 
 checksums           rmd160  f4a621975f73ed2ec22f95e5813c5307b269dd6f \
-                    sha256  2a14d0f648f323bfcf97076908d2cb8d7070effb5ff4c8222c44cd687e9c0262
+sha256  2a14d0f648f323bfcf97076908d2cb8d7070effb5ff4c8222c44cd687e9c0262
 
 python.default_version 27
 

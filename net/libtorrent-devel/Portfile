@@ -25,7 +25,7 @@ dist_subdir         ${real_name}
 distname            ${real_name}-${version}
 
 checksums           rmd160  f6661b5f56918214788e79b5fa94f579ac8e441d \
-                    sha256  34317d6783b7f8d0805274c9467475b5432a246c0de8e28fc16e3b0b43f35677
+sha256  34317d6783b7f8d0805274c9467475b5432a246c0de8e28fc16e3b0b43f35677
 
 depends_build       port:pkgconfig
 

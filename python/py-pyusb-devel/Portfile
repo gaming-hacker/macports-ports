@@ -19,7 +19,7 @@ long_description    The PyUSB module provides Python with easy access to \
 homepage            https://walac.github.io/pyusb/
 
 checksums           rmd160  2f6ba3c572410110339ef1776786b70d34b8810c \
-                    sha256  c4caba4e049d6d124ea911b89e4c4b781cc516f8b5a6d7fa82e5159bc2224a4d
+sha256  c4caba4e049d6d124ea911b89e4c4b781cc516f8b5a6d7fa82e5159bc2224a4d
 
 python.versions 27 36
 

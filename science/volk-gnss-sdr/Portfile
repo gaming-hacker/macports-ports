@@ -24,7 +24,7 @@ if {${subport} eq "volk-gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -46,7 +46,7 @@ subport volk-gnss-sdr-devel {
     version             20170225
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
 
     # github changed the way tarballs are generated
     # remove this at next update
@@ -66,7 +66,7 @@ subport volk-gnss-sdr-next {
     version             20180313
     revision            1
     checksums           rmd160 13c34f43b5c7cb51fd9841b095d6c149a95ec352 \
-                        sha256 dc90e4f4c35671373ff6d73bc66c7a10414872d440fb7eafeb630dbfab41fce5 \
+sha256 dc90e4f4c35671373ff6d73bc66c7a10414872d440fb7eafeb630dbfab41fce5 \
 size   3748395
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-devel

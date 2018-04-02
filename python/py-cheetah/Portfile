@@ -7,7 +7,7 @@ name                py-cheetah
 
 version             3.1.0
 checksums           rmd160 803f2b0e201b05d51c6cbc145b13ed80760da976 \
-                    sha256 293f8776a5dea7c3dffd26fce8495c2daf912b9cb46cc49c41cb50da597a0ac6 \
+sha256 293f8776a5dea7c3dffd26fce8495c2daf912b9cb46cc49c41cb50da597a0ac6 \
 size   872411
 
 categories-append   www

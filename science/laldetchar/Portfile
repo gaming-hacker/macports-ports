@@ -12,7 +12,7 @@ long_description \
   routines for detectory characterisation.
 
 checksums     rmd160 09eb2b6738c8b1b3c52358e22ca9322d6b83e76f \
-              sha256 b0900de0b9520aae61e1ad5b97d4be46a47cbf1b12485b7fb783d2e0db804e70
+sha256 b0900de0b9520aae61e1ad5b97d4be46a47cbf1b12485b7fb783d2e0db804e70
 
 #depends_build port:help2man
 

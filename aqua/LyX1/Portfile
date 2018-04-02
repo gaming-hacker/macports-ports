@@ -35,7 +35,7 @@ master_sites        http://lyx.cybermirror.org/stable/${branch}.x/ \
 distname            lyx-${version}
 use_bzip2           yes
 checksums           rmd160  b84409c19d320f915c3254d56d8aa0b40e61540d \
-                    sha256  dcfb6fc0f6880e706d45ea16459ed2206265179f3882b4685e4955c18adaf569
+sha256  dcfb6fc0f6880e706d45ea16459ed2206265179f3882b4685e4955c18adaf569
 
 patchfiles          patch-configure.diff
 

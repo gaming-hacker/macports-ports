@@ -19,7 +19,7 @@ maintainers             nomaintainer
 depends_lib-append      path:lib/pkgconfig/glib-2.0.pc:glib2
 
 checksums               rmd160  cfd5f87b26fd284af90ce914af2921800792dfa0 \
-                        sha256  4eac1bce55066a38d9ea6c52a8e8ecc101b79afe75118ecc16852990472c4721
+sha256  4eac1bce55066a38d9ea6c52a8e8ecc101b79afe75118ecc16852990472c4721
 
 use_autoreconf          yes
 

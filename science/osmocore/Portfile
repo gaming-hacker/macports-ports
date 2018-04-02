@@ -15,7 +15,7 @@ platforms           darwin macosx
 github.setup        osmocom libosmocore dbb7659208533966940f2a4b622983163a7ee3d0
 version             20180329
 checksums           rmd160 7a27a12b6bf1c4b38269603b502734a36b68fade \
-                    sha256 692f2dccc7902fa1d67d95514bc9a58ef7fcba0ff571cd4147d868a9d02a2dfc \
+sha256 692f2dccc7902fa1d67d95514bc9a58ef7fcba0ff571cd4147d868a9d02a2dfc \
 size   992665
 
 depends_build-append \

@@ -17,8 +17,8 @@ homepage        http://gtkwave.sourceforge.net
 master_sites    sourceforge:project/gtkwave/gtkwave-${version}
  
 checksums       sha1 8aa13b6ce1c20483562a210beae9078ddd3428a3 \
-                rmd160 acb85f76024b75d2fc5fc9817c07e32c787da47f \
-                sha256 c6e552716876c8b88c8f6e36e3614a8c53a32cef7895e2c1e6e608daf0ee5b7a
+rmd160 acb85f76024b75d2fc5fc9817c07e32c787da47f \
+sha256 c6e552716876c8b88c8f6e36e3614a8c53a32cef7895e2c1e6e608daf0ee5b7a
 
 depends_build   port:pkgconfig
 

@@ -13,4 +13,4 @@ description         PEAR HTML_AJAX package
 long_description    ${description}
 
 checksums           rmd160  2b0d9174fe289af0cd564277b5212513b67121cd \
-                    sha256  a8374fff81f5c04f1ec8d7bf51c1ecce6b9be9fbbb13c1d5e64e60b8e0044bf9
+sha256  a8374fff81f5c04f1ec8d7bf51c1ecce6b9be9fbbb13c1d5e64e60b8e0044bf9

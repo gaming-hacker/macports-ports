@@ -12,7 +12,7 @@ long_description \
   routines for compact binary gravitational wave data analysis.
 
 checksums     rmd160 aa4c392058cf08207a71b62df710c319babceff1 \
-              sha256 cb95e290693df143b4a11f6e08cffd74b29c1beb71790f9d774d4dc159d7ffd1
+sha256 cb95e290693df143b4a11f6e08cffd74b29c1beb71790f9d774d4dc159d7ffd1
 
 depends_lib   port:lal \
               port:lalframe \

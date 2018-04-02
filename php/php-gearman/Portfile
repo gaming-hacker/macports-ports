@@ -17,7 +17,7 @@ description             Library to provide API for communicating with gearmand, 
 long_description        Library to provide API for communicating with gearmand, and writing clients and workers.
 
 checksums               rmd160  8817e87f53cdb3cc21eaf91454dc7f35d6cadc88 \
-                        sha256  c30a68145b4e33f4da929267f7b5296376ca81d76dd801fc77a261696a8a5965
+sha256  c30a68145b4e33f4da929267f7b5296376ca81d76dd801fc77a261696a8a5965
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:gearmand

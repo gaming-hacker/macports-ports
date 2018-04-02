@@ -18,7 +18,7 @@ long_description    Perl bindings to the 2.x series of the Gtk+ graphical user i
 platforms           darwin
 
 checksums           rmd160  1abf38eb39e8f287fdd029f17a4173ed31d61547 \
-                    sha256  ccc85c5dc3c14f915ed1a186d238681d83fef3d17eed1c20001499ff56b6390c
+sha256  ccc85c5dc3c14f915ed1a186d238681d83fef3d17eed1c20001499ff56b6390c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

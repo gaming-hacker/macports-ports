@@ -19,4 +19,4 @@ long_description    This module contains some functions which are useful \
                     the shell or a shell-like object.
 
 checksums           sha1    e60f348200b16d85ccc50780d4d6546485b15bc5 \
-                    rmd160  90d2ad5d4271470fced77567be3b60d0e2e6101f
+rmd160  90d2ad5d4271470fced77567be3b60d0e2e6101f

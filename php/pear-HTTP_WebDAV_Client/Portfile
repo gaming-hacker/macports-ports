@@ -12,6 +12,6 @@ description         PEAR HTTP_WebDAV_Client package
 long_description    ${description}
 
 checksums           rmd160  083d580ac6d687ce682cc59ae5059eb029ffd58c \
-                    sha256  4c2058ab69589bbe20fa97004ac84259e0392975ce31dcdd0cb95ed24d33fde5
+sha256  4c2058ab69589bbe20fa97004ac84259e0392975ce31dcdd0cb95ed24d33fde5
 
 depends_lib-append  port:pear-HTTP_Request

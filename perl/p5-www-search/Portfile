@@ -15,7 +15,7 @@ long_description    WWW::Search is a collection of Perl modules which provide \
 platforms           darwin
 
 checksums           rmd160  309204bf45bab5fa92b0b0acfd309c351dcadd79 \
-                    sha256  0402353b380898b273629d28fde4d8ce90d20adc7651b786899202c4ba51c412
+sha256  0402353b380898b273629d28fde4d8ce90d20adc7651b786899202c4ba51c412
 
 if {${perl5.major} != ""} {
     depends_build-append \

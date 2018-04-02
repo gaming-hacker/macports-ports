@@ -19,7 +19,7 @@ homepage            http://librdf.org/raptor/
 master_sites        http://download.librdf.org/source/
 
 checksums           rmd160  6c3dddc13a14626f3fdece08961ad8756e237c30 \
-                    sha256  ada7f0ba54787b33485d090d3d2680533520cd4426d2f7fb4782dd4a6a1480ed
+sha256  ada7f0ba54787b33485d090d3d2680533520cd4426d2f7fb4782dd4a6a1480ed
 
 depends_lib         port:curl \
                     port:libiconv \

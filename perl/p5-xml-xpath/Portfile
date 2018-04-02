@@ -18,7 +18,7 @@ long_description    This module aims to comply exactly to the XPath \
 platforms           darwin
 
 checksums           rmd160  c4a462d0e4fcbb510d5d143c8c40fb7d45e71ec7 \
-                    sha256  9e6ac67c2cead5f918a060b8b9ccdbdcaa6d610be8517bba42a96cd56748b512
+sha256  9e6ac67c2cead5f918a060b8b9ccdbdcaa6d610be8517bba42a96cd56748b512
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -27,7 +27,7 @@ distname            pa_stable_v[strsed ${version} {g/\./_/}]
 extract.suffix      .tgz
 
 checksums           rmd160  0a290cea8a102a45b2df9b72046b3eed0ab35b4f \
-                    sha256  8fe024a5f0681e112c6979808f684c3516061cc51d3acc0b726af98fc96c8d57
+sha256  8fe024a5f0681e112c6979808f684c3516061cc51d3acc0b726af98fc96c8d57
 
 worksrcdir          ${name}
 

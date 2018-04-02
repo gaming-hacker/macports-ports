@@ -7,7 +7,7 @@ PortGroup   github 1.0
 github.setup    ivmai libatomic_ops 7.6.4 v
 
 checksums       rmd160  a00205679c9124b2fcc13cabf33038da65ce4fb2 \
-  sha256  4dd8faedc526fd73dd4e34855f4551039066b5cb1fdf313023b4fd9d61a2190f
+sha256  4dd8faedc526fd73dd4e34855f4551039066b5cb1fdf313023b4fd9d61a2190f
 
 maintainers         nomaintainer
 

@@ -21,6 +21,6 @@ use_parallel_build  no
 universal_variant   no
 
 checksums           md5     c4ac2052b9e1883822662ecee483c542 \
-                    sha1    8b97931e4f4645da933091ac9d6a4d87fb9b7350 \
-                    rmd160  1c2becdb8d1f05ba397045b413a02b3a026a4047
+sha1    8b97931e4f4645da933091ac9d6a4d87fb9b7350 \
+rmd160  1c2becdb8d1f05ba397045b413a02b3a026a4047
 

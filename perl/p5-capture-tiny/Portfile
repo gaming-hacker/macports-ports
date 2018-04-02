@@ -18,4 +18,4 @@ description         Capture::Tiny - Capture STDOUT and STDERR from Perl, XS \
 long_description    ${description}
 
 checksums           rmd160  bab6cfba27753493a2981aa0f1bdaa4f1c5bfdfc \
-                    sha256  5d7a6a830cf7f2b2960bf8b8afaac16a537ede64f3023827acea5bd24ca77015
+sha256  5d7a6a830cf7f2b2960bf8b8afaac16a537ede64f3023827acea5bd24ca77015

@@ -30,7 +30,7 @@ homepage            http://www.h3dapi.org
 master_sites        ftp://www.h3dapi.org/pub/releases/source
 
 checksums           rmd160  ca60af0fcd89c309cd030ab509a640b28fd6b470 \
-                    sha256  231104455feea6217c103ab0cbb2187e448000e6f02f9a1f2abb0161a13bbbd1
+sha256  231104455feea6217c103ab0cbb2187e448000e6f02f9a1f2abb0161a13bbbd1
 
 cmake.out_of_source yes
 

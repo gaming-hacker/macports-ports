@@ -12,4 +12,4 @@ description         PEAR Net_Dig package
 long_description    ${description}
 
 checksums           rmd160  d18b1d946d48f0e30d9b452a97bbde606e771270 \
-                    sha256  69c40e573545b542145473a79e4803488f3d39f5e7c4e5f539b8975bd9a5044b
+sha256  69c40e573545b542145473a79e4803488f3d39f5e7c4e5f539b8975bd9a5044b

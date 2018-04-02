@@ -12,4 +12,4 @@ description         PEAR PHP_FunctionCallTracer package
 long_description    ${description}
 
 checksums           rmd160  51a306fc63aff9c4367076c93244da34b0b01c13 \
-                    sha256  38c9c2c0f138e68c5f3fd8c1a1feb9c72e0c42016d78c6e405f095ad74f1b826
+sha256  38c9c2c0f138e68c5f3fd8c1a1feb9c72e0c42016d78c6e405f095ad74f1b826

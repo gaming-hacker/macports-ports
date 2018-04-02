@@ -15,6 +15,6 @@ depends_lib-append	port:rb-eventmachine \
 					port:rb-simple_oauth port:rb-http_parser	
 
 checksums			md5     dfb7a7548a0d54f5affc05136a339f58 \
-					sha1    7947e8df96408e1fd535ae82bf632997f7534702 \
-					rmd160  f118795035fe8f326c32939e82a32e315955d744
+sha1    7947e8df96408e1fd535ae82bf632997f7534702 \
+rmd160  f118795035fe8f326c32939e82a32e315955d744
 platforms			darwin

@@ -19,7 +19,7 @@ platforms		darwin
 
 master_sites		http://web.archive.org/web/20070324185351/http://www.zork.org/software/
 checksums		md5 d0151eab37aea456957ceaada5501ae7 \
-			sha256 7decbada52dabb0f7298b36982371c7ba4d817b281797498d0515ec2440b20f9
+sha256 7decbada52dabb0f7298b36982371c7ba4d817b281797498d0515ec2440b20f9
 
 patchfiles		patch-configure.ac.diff
 

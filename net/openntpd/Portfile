@@ -22,7 +22,7 @@ homepage            http://www.openntpd.org/
 master_sites        openbsd:OpenNTPD
 
 checksums           rmd160  8ecaa6139d41cf4ab50cee0aed7beaeb362880c0 \
-                    sha256  7b02691524197e01ba6b1b4b7595b33956e657ba6d5c4cf2fc20ea3f4914c13a
+sha256  7b02691524197e01ba6b1b4b7595b33956e657ba6d5c4cf2fc20ea3f4914c13a
 
 startupitem.create     yes
 startupitem.netchange  yes

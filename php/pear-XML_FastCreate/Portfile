@@ -12,4 +12,4 @@ description         PEAR XML_FastCreate package
 long_description    ${description}
 
 checksums           rmd160  72984a1a35764d3f056f6757c94853840d57f5a8 \
-                    sha256  b9ef5e29420f6707750e5418415614a6f73ee9fb45497aecc3b4a32ea3ef5db6
+sha256  b9ef5e29420f6707750e5418415614a6f73ee9fb45497aecc3b4a32ea3ef5db6

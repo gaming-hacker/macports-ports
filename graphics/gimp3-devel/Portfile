@@ -30,7 +30,7 @@ master_sites        https://git.gnome.org/browse/${git_name}/snapshot/
 distname            ${git_name}-${git_commit}
 
 checksums           rmd160  daf2b0319f58753bc7e3e10d520d941d076755b4 \
-                    sha256  4a94d30de01e46177ea66bb79a36f860e0d8f9220431df082f25464459a8e8a0
+sha256  4a94d30de01e46177ea66bb79a36f860e0d8f9220431df082f25464459a8e8a0
 
 depends_build       port:pkgconfig \
                     port:intltool \

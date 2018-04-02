@@ -13,4 +13,4 @@ description         PEAR Config_Lite package
 long_description    ${description}
 
 checksums           rmd160  eaa01e057593419769999db489317689a5c4d810 \
-                    sha256  cf3f50d628967cdb2e3511d6e02cc52e69ae98302dbf4672da16ac8bf1ef4d39
+sha256  cf3f50d628967cdb2e3511d6e02cc52e69ae98302dbf4672da16ac8bf1ef4d39

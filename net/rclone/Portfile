@@ -17,8 +17,8 @@ long_description \
 license             mit
 
 checksums \
-    rmd160  1d49f60871bc16b2c54519a58ba66efdb92e49be \
-    sha256  e597f865f82b9410c7c41b8f35b7172697b9d64dbcd0d5d9b970bd4281a1287f
+rmd160  1d49f60871bc16b2c54519a58ba66efdb92e49be \
+sha256  e597f865f82b9410c7c41b8f35b7172697b9d64dbcd0d5d9b970bd4281a1287f
 
 set goproj          github.com/${github.author}/${github.project}
 

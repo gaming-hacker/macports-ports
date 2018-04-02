@@ -16,7 +16,7 @@ homepage            https://jcupitt.github.io/libvips/
 github.tarball_from releases
 
 checksums           rmd160  9a2b8a0dae72474018825d75ae78c94992c97948 \
-                    sha256  1ed55f0890a626d7a45c513e4788058d99b45008b793072c3f7e80231a7c7186
+sha256  1ed55f0890a626d7a45c513e4788058d99b45008b793072c3f7e80231a7c7186
 
 configure.args      --disable-update-desktop
 

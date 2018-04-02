@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_Croatia package
 long_description    ${description}
 
 checksums           rmd160  0d14cb875047fcfbe30ce46c010114e2e1039dd8 \
-                    sha256  e92954631596fa6725f82dd819500a6cadab087cc4a783f242a86bdb6586ebc7
+sha256  e92954631596fa6725f82dd819500a6cadab087cc4a783f242a86bdb6586ebc7
 
 depends_lib-append  port:pear-Date_Holidays

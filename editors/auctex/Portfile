@@ -19,7 +19,7 @@ homepage            https://www.gnu.org/software/auctex/
 master_sites        gnu
 
 checksums           rmd160  624696163f7e77fb0836a05aaa698b1ff9fa2c92 \
-                    sha256  741323832188cd45228f34adeaddfac258e83bed882d0ec5ecdadd260bf7798f
+sha256  741323832188cd45228f34adeaddfac258e83bed882d0ec5ecdadd260bf7798f
 
 depends_build-append    port:texlive-latex
 

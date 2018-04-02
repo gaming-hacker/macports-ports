@@ -17,7 +17,7 @@ long_description    Lingon is a graphical interface for creating launchd configu
 
 master_sites    sourceforge:lingon
 checksums       md5 ddd342d070c117314117209296cceb75 \
-                sha1 70ae697e1340e343c97bdab879e66d14c50f945d
+sha1 70ae697e1340e343c97bdab879e66d14c50f945d
 
 use_zip         yes
 distname        ${name}Source-${version}

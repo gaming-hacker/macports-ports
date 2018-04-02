@@ -38,12 +38,12 @@ python.versions 27 36
 
 if {${DEV_VERSION}} {
     checksums \
-        rmd160  d9c175fddcf21edc5ef32a35229ea0e4c1354135 \
-        sha256  49e4ab622b8c8663d04113cb901ea0ae40623367598d14009a87b418ab02675e
+rmd160  d9c175fddcf21edc5ef32a35229ea0e4c1354135 \
+sha256  49e4ab622b8c8663d04113cb901ea0ae40623367598d14009a87b418ab02675e
 } else {
     checksums \
-        rmd160  da8301bc9ae0322b0e91fed7e644d2f1bd4b6dac \
-        sha256  dc63a4681559fa77f90ff370cdd24c8ceaaf9d96549d2f395722a50120cc3523
+rmd160  da8301bc9ae0322b0e91fed7e644d2f1bd4b6dac \
+sha256  dc63a4681559fa77f90ff370cdd24c8ceaaf9d96549d2f395722a50120cc3523
 }
 
 if {${DEV_VERSION}} {

@@ -24,7 +24,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  927ae8b255d5cafecda71da211dc5b9f382608e5 \
-                    sha256  c091449dd0fad7710ddd9c4a06e8b9e15277da306590bc07a3a1afa6b4453c8f
+sha256  c091449dd0fad7710ddd9c4a06e8b9e15277da306590bc07a3a1afa6b4453c8f
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-ipython \

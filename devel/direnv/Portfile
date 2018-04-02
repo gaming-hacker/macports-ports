@@ -19,7 +19,7 @@ if {${name} eq ${subport}} {
 
     github.setup        direnv direnv 2.15.2 v
     checksums           rmd160 7292abf53ddcb9de32dc8cd59016fad23f7a5a6f \
-                        sha256 89a91dd87f9744145636f4089ea34f27e69c436271e83922c795716e1584b6c7
+sha256 89a91dd87f9744145636f4089ea34f27e69c436271e83922c795716e1584b6c7
 
     conflicts           direnv-devel
 
@@ -30,7 +30,7 @@ subport direnv-devel {
     github.setup        direnv direnv 54b2fe5fa6114e3aa5a5156dd61b38d3331c9d3d
     version             20180324
     checksums           rmd160 9e4fa147e6d72969fcfc2b53f70c794fc6a1e2cc \
-                        sha256 6a7c32c065e3f0cc0dcb2523b1cd4de0a0292205554235cc61079eaa3a837ae1 \
+sha256 6a7c32c065e3f0cc0dcb2523b1cd4de0a0292205554235cc61079eaa3a837ae1 \
 size    91328
 
     conflicts           direnv

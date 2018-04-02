@@ -15,7 +15,7 @@ homepage            http://www.fox-toolkit.org/
 master_sites        http://ftp.fox-toolkit.org/pub/
 
 checksums           rmd160  c315fc2ad1ea4350498947ce1b5bb06f400e173b \
-                    sha256  960f16a8a69d41468f841039e83c2f58f3cb32622fc283a69f20381abb355219
+sha256  960f16a8a69d41468f841039e83c2f58f3cb32622fc283a69f20381abb355219
 
 depends_build \
 	port:pkgconfig

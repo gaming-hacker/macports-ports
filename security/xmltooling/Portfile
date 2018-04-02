@@ -22,7 +22,7 @@ master_sites        http://shibboleth.net/downloads/c++-opensaml/2.6.1/
 use_bzip2           yes
 
 checksums           rmd160  eee5add8b411ca152a2a6d8652be5375b2939ebd \
-                    sha256  4c0c4a08b8c55f1210673281f37fc95b6d1d365a8cdc726fd189dea96c45efca
+sha256  4c0c4a08b8c55f1210673281f37fc95b6d1d365a8cdc726fd189dea96c45efca
 
 configure.args      --disable-static \
                     --with-openssl=${prefix} \

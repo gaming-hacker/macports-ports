@@ -25,7 +25,7 @@ long_description    LibreCAD is a free Open Source CAD application for \
 homepage            http://librecad.org/
 
 checksums           rmd160  d5dc079046ac43265b971bd00f85dfae77e14b92 \
-                    sha256  ec13e47f3c960ae716040a16da0b688c58cd85e63f7c17cd44afc5bf73b01b84
+sha256  ec13e47f3c960ae716040a16da0b688c58cd85e63f7c17cd44afc5bf73b01b84
 
 depends_lib-append  port:boost \
                     port:freetype \

@@ -23,7 +23,7 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  6e0ae12cc2b7c9277294c720ebab6502d3fffd29 \
-                    sha256  771c46e8985724d7f5be74f4813bfba0a62cbb48e1c8d0cd27394a6f0ef15bde
+sha256  771c46e8985724d7f5be74f4813bfba0a62cbb48e1c8d0cd27394a6f0ef15bde
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

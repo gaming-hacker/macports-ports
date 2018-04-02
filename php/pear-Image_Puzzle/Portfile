@@ -12,6 +12,6 @@ description         PEAR Image_Puzzle package
 long_description    ${description}
 
 checksums           rmd160  d2cd0f8e660faf0a43e4d11186dbaa3d5905955b \
-                    sha256  ccae88836f5575ec71e264bd103c3a2872475342417ccb7339b694ff1aaa38ad
+sha256  ccae88836f5575ec71e264bd103c3a2872475342417ccb7339b694ff1aaa38ad
 
 depends_lib-append  port:pear-Image_Color2

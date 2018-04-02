@@ -14,7 +14,7 @@ description         Cryptographically-secure, cross-platform replacement for ran
 long_description    ${description}
 
 checksums           rmd160  e34849a6b7c7c91d1e3dd425d9bc9ae1cceecfcb \
-                    sha256  bfa4a4e817eca722067c1ff3da12ab5ab80d6c57daa5e5e7ab9350ca2c71eb35
+sha256  bfa4a4e817eca722067c1ff3da12ab5ab80d6c57daa5e5e7ab9350ca2c71eb35
 
 if {${perl5.major} != ""} {
     depends_build-append \

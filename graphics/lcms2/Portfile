@@ -27,7 +27,7 @@ master_sites            sourceforge:project/lcms/lcms/${version}/ \
                         ${homepage}
 
 checksums               rmd160  0003ffd3561e6ed787be81b5ed7b7af52211fe19 \
-                        sha256  48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
+sha256  48c6fdf98396fa245ed86e622028caf49b96fa22f3e5734f853f806fbc8e7d20
 
 depends_lib             port:jpeg \
                         port:tiff \

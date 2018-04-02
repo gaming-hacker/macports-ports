@@ -12,7 +12,7 @@ long_description \
   routines for simulation gravitational-wave waveforms and noise sources.
 
 checksums     rmd160 433b9339ad38eada0d041aae7dbe89012cb188dc \
-              sha256 84ea0c91daca9fac547b2d3344140c809d940f593b678265b616e7e0d6fc5d07
+sha256 84ea0c91daca9fac547b2d3344140c809d940f593b678265b616e7e0d6fc5d07
 
 depends_build port:help2man
 

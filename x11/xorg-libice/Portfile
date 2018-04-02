@@ -18,8 +18,8 @@ use_bzip2         yes
 use_parallel_build      yes
 
 checksums           sha1    3c3a857a117ce48a1947a16860056e77cd494fdf \
-                    rmd160  933e67f69cef94b03fc96a026222013060323c03 \
-                    sha256  8f7032f2c1c64352b5423f6b48a8ebdc339cc63064af34d66a6c9aa79759e202
+rmd160  933e67f69cef94b03fc96a026222013060323c03 \
+sha256  8f7032f2c1c64352b5423f6b48a8ebdc339cc63064af34d66a6c9aa79759e202
 
 depends_build     port:pkgconfig \
                   port:xorg-xtrans

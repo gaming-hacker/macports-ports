@@ -19,11 +19,11 @@ master_sites    http://www2.research.att.com/~astopen/download/tgz/
 distfiles       ast-ksh.$version.tgz \
                 INIT.$version.tgz
 checksums       ast-ksh.$version.tgz \
-                rmd160  74bf4735182a6b527e3eb5c5ae6d7854ea72d78b \
-                sha256  e6192cfa52a6a9fd20618cbaf3fa81f0cc9fd83525500757e83017275e962851 \
+rmd160  74bf4735182a6b527e3eb5c5ae6d7854ea72d78b \
+sha256  e6192cfa52a6a9fd20618cbaf3fa81f0cc9fd83525500757e83017275e962851 \
                 INIT.$version.tgz \
-                rmd160  48f1830bc85a26125dd986256d38be435668d445 \
-                sha256  c40cf57e9b2186271a9c362a560aa4a6e25ba911a8258ab931d2bbdbce44cfe5
+rmd160  48f1830bc85a26125dd986256d38be435668d445 \
+sha256  c40cf57e9b2186271a9c362a560aa4a6e25ba911a8258ab931d2bbdbce44cfe5
 
 fetch.user      I accept www.opensource.org/licenses/cpl
 fetch.password  .

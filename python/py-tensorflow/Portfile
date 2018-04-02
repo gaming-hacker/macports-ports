@@ -19,19 +19,19 @@ if {${python.version} eq 27} {
     master_sites        https://pypi.python.org/packages/77/7b/ddf9d99ccd3b26e53aebeea7653524c118ba15af95fe2d6b282fe5b2c4af
 
     checksums           rmd160 5dd129ddb67ede1b22b6db4782137ee823937b0d \
-                        sha256 d9c628c857ccd9213d75e0747fcad6ef4d6866a79d1a3987d87a5957c3f0f819 \
+sha256 d9c628c857ccd9213d75e0747fcad6ef4d6866a79d1a3987d87a5957c3f0f819 \
 size   43550478
 } elseif {${python.version} eq 35} {
     master_sites        https://pypi.python.org/packages/96/ce/6b68ae620c45a6721c9adecf8c62ecbf947f6b41677ed0da3739b7e3faff
 
     checksums           rmd160 9708dd29054fc882def6a6fcffbd99945070d336 \
-                        sha256 eaa4af9eb161af500a5e3c65dcc434d63478801539f51cdd8c01572eda9dfa2d \
+sha256 eaa4af9eb161af500a5e3c65dcc434d63478801539f51cdd8c01572eda9dfa2d \
 size   43669899
 } elseif {${python.version} eq 36} {
     master_sites        https://pypi.python.org/packages/23/07/e7bf3270007e85b4eec20d64bd94fff54e1df4d799842694096a5d62d760
 
     checksums           rmd160 fdb8ee04bbe94f7ec9054a1d28b23fe1fab9b4b8 \
-                        sha256 17981691a5711dd8b0479b293229f3a22d2f0503d04c2691a2ef66ee50903257 \
+sha256 17981691a5711dd8b0479b293229f3a22d2f0503d04c2691a2ef66ee50903257 \
 size   43162275
 }
 

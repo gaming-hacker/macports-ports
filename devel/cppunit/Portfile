@@ -27,7 +27,7 @@ homepage            https://www.freedesktop.org/wiki/Software/cppunit/
 master_sites        http://dev-www.libreoffice.org/src/
 
 checksums           rmd160  9d2bec93f3cee98b95430b60d801f5ed886688aa \
-                    sha256  3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
+sha256  3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
 
 configure.args      --disable-dot \
                     --disable-doxygen \

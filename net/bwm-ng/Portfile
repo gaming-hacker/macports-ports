@@ -18,7 +18,7 @@ platforms       darwin
 
 master_sites    ${homepage}/bwm-ng
 checksums       rmd160  9edfb0ef5e7e502bfb23248cf6a32b7e50357e4b \
-                sha256  027cf3c960cd96fc9ffacdf7713df62d0fc55eeef4a1388289f8a62ae5e50df0
+sha256  027cf3c960cd96fc9ffacdf7713df62d0fc55eeef4a1388289f8a62ae5e50df0
 
 depends_lib     port:ncurses
 

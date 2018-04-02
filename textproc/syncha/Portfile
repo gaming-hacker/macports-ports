@@ -16,7 +16,7 @@ license             LGPL
 
 master_sites        ${homepage}
 checksums           rmd160  5e2bdc2ec8ef1784de8c95c1b5fbfca4dac1cacc \
-                    sha256  dc9a49aa8b64166980710df7c68798b91a846dd8c0c9f5de06e0064300a2a06e
+sha256  dc9a49aa8b64166980710df7c68798b91a846dd8c0c9f5de06e0064300a2a06e
 extract.suffix      .tgz
 
 depends_lib         port:lp_solve \

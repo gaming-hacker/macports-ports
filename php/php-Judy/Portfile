@@ -22,7 +22,7 @@ long_description        PHP Judy implements sparse dynamic arrays (a.k.a Judy \
                         scalability, high performance, and memory efficiency.
 
 checksums               rmd160  4d84af4caff979dc34f3e7e7ca4998daa62ea30a \
-                        sha256  6b913af2c44ac84a2224fecf8a81ddcb0c753252cafd153cb0e9d7c33a333118
+sha256  6b913af2c44ac84a2224fecf8a81ddcb0c753252cafd153cb0e9d7c33a333118
 
 depends_lib-append      port:judy
 

@@ -29,8 +29,8 @@ master_sites	http://www.swi-prolog.org/download/devel/src/
 dist_subdir	swi-prolog
 
 checksums       \
-    rmd160  dae29257d5bb6c468afaa706484cff868133bc7d \
-    sha256  c2e01c55a696522b1dea0eb4da7bd9d398f36869af01b688f21246aaf55ef262
+rmd160  dae29257d5bb6c468afaa706484cff868133bc7d \
+sha256  c2e01c55a696522b1dea0eb4da7bd9d398f36869af01b688f21246aaf55ef262
 
 depends_build   \
 	port:gawk	\

@@ -22,7 +22,7 @@ depends_lib         port:gmp \
 master_sites        ${homepage}/nightly/get/c
 
 checksums           rmd160  f3452b3fe12c23eacd1b7cf8b6dc7fc22c53fddc \
-                    sha256  d978030e27369bf698f3816ab70aa9141e9baf81c56cc4f55efbe5489b46b0df
+sha256  d978030e27369bf698f3816ab70aa9141e9baf81c56cc4f55efbe5489b46b0df
 
 test.run            yes
 test.target         check

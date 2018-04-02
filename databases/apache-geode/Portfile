@@ -24,7 +24,7 @@ distname         apache-geode-${version}
 worksrcdir       ${distname}
 
 checksums        rmd160 7a53f6ac32fc60645730d906525b3dc35c5bc62a \
-                 sha256 246a6edea4376c18a0f54de3d4b87efcddf9d27118ddc64a945e6a5014812232
+sha256 246a6edea4376c18a0f54de3d4b87efcddf9d27118ddc64a945e6a5014812232
 
 use_configure    no
 

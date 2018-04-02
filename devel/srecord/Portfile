@@ -37,7 +37,7 @@ homepage            http://srecord.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  895f81d64f3639affbbbcc95846154307686fd5e \
-                    sha256  49a4418733c508c03ad79a29e95acec9a2fbc4c7306131d2a8f5ef32012e67e2
+sha256  49a4418733c508c03ad79a29e95acec9a2fbc4c7306131d2a8f5ef32012e67e2
 
 # remove doc/*.pdf to avoid ghostscript dep
 patchfiles          patch-Makefile.in.diff

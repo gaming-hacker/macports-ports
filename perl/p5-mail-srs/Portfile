@@ -40,7 +40,7 @@ long_description    The Sender Rewriting Scheme preserves .forward \
                     To run this from the build directory, type \"make teach\".
 
 checksums           rmd160  5f91268b1f231050b0b047659c4c4f4e932a1d50 \
-                    sha256  e791844f6152e503a92c2ac6f223f166769316fa768d8ef09378e5470d6b0028
+sha256  e791844f6152e503a92c2ac6f223f166769316fa768d8ef09378e5470d6b0028
 
 platforms           darwin
 

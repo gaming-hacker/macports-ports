@@ -18,7 +18,7 @@ long_description    A plugin for Docker Machine allowing to \
 depends_lib         port:docker-machine
 
 checksums           rmd160  9877664c7a255ca5b03960ae9fd87b3f64aded20 \
-                    sha256  f39cbd40b654d4945c15c2fea04e00f6d0bbec613e1174995d6d27d8651337ea \
+sha256  f39cbd40b654d4945c15c2fea04e00f6d0bbec613e1174995d6d27d8651337ea \
 size    739901
 
 build.target        build

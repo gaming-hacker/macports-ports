@@ -12,6 +12,6 @@ description         PEAR XML_Statistics package
 long_description    ${description}
 
 checksums           rmd160  8fb45ab645270013a2f9fd3db53d5d44cf359c17 \
-                    sha256  bfebc255c49c0d0740b2506b5d5c2403747590f623653643e13c53e282aff0a4
+sha256  bfebc255c49c0d0740b2506b5d5c2403747590f623653643e13c53e282aff0a4
 
 depends_lib-append  port:pear-XML_Parser

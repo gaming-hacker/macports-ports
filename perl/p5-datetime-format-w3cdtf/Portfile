@@ -15,7 +15,7 @@ description         Parse and format W3CDTF datetime strings
 long_description    ${description}
 
 checksums           rmd160  bd92107a5448030f89dc581756842261099e84da \
-                    sha256  69a02b661bbf1daa14a4813cb6786eaa66dbdf2743f0b3f458e30234c3a26268
+sha256  69a02b661bbf1daa14a4813cb6786eaa66dbdf2743f0b3f458e30234c3a26268
 
 if {${perl5.major} != ""} {
     depends_lib-append \

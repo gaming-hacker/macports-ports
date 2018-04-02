@@ -21,7 +21,7 @@ long_description    obs-build is the tool running builds for the openSUSE build 
                     and unrpm.
 
 checksums           rmd160  6515dee5fbb207b389c163fcbb0c6a0e5658123d \
-                    sha256  d176b19ccddc11208e6288bdcf758a81d5a194bea994468400a16823135c18d0
+sha256  d176b19ccddc11208e6288bdcf758a81d5a194bea994468400a16823135c18d0
 
 # the tarball contains file names differing in case only,
 # making it impossible to extract on a case-sensitive filesystem

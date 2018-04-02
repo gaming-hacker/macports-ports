@@ -27,7 +27,7 @@ platforms           darwin
 depends_lib         path:bin/perl:perl5
 
 checksums           rmd160  ec94cfa366427a9b65b664cf1cb0f84c509ef165 \
-                    sha256  1dbdc48d65e150f2dbb43f1e4f4700d94166e053b1c7bbbdedf4ad670283720e
+sha256  1dbdc48d65e150f2dbb43f1e4f4700d94166e053b1c7bbbdedf4ad670283720e
 
 patchfiles          patch-scripts.logwatch.pl.diff \
                     patch-conf.logwatch.conf.diff \

@@ -24,8 +24,8 @@ long_description	GNU libmatheval is comprised of several procedures \
 homepage		https://www.gnu.org/software/libmatheval/
 master_sites	gnu
 checksums           md5     595420ea60f6ddd75623847f46ca45c4 \
-                    rmd160  e48bbe2fdae4237e4e455ea84b10a53874124312 \
-                    sha256  474852d6715ddc3b6969e28de5e1a5fbaff9e8ece6aebb9dc1cc63e9e88e89ab
+rmd160  e48bbe2fdae4237e4e455ea84b10a53874124312 \
+sha256  474852d6715ddc3b6969e28de5e1a5fbaff9e8ece6aebb9dc1cc63e9e88e89ab
 #patchfiles		patch-config.h.in.diff
 
 post-patch {

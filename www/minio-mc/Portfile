@@ -23,8 +23,8 @@ long_description \
 license             Apache-2
 
 checksums \
-    rmd160  518e3b8c0a3883b27e136e7d9ff9e102a4026ca5 \
-    sha256  5f8d9a06670ab5b07285ca70dca7cc91982e99b2434f7493319696b6a2b6c0b7
+rmd160  518e3b8c0a3883b27e136e7d9ff9e102a4026ca5 \
+sha256  5f8d9a06670ab5b07285ca70dca7cc91982e99b2434f7493319696b6a2b6c0b7
 
 set goproj          github.com/${github.author}/${github.project}
 

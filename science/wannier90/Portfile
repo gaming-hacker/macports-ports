@@ -23,7 +23,7 @@ homepage            http://www.wannier.org
 master_sites        ${homepage}/code/
 
 checksums           rmd160  357909e686b4b414d8afd8bb8ef90e71c7519708 \
-                    sha1    17af3f22a2623dc4d2c183dae7a5c63a6f0941bb
+sha1    17af3f22a2623dc4d2c183dae7a5c63a6f0941bb
 
 # fixes dependencies to enable parallel build
 patchfiles          patch-utility-w90pov-Makefile.diff \

@@ -21,8 +21,8 @@ master_sites \
 use_bzip2 yes
 
 checksums           md5     700c6d040d36a569e657a3ba5e1d8b24 \
-                    sha1    c58b7252df481572ec1ccd77b9f1ab561ed89e45 \
-                    rmd160  975942e8974812aae91c45d81eb27522e5aa0a5d
+sha1    c58b7252df481572ec1ccd77b9f1ab561ed89e45 \
+rmd160  975942e8974812aae91c45d81eb27522e5aa0a5d
 
 patchfiles  empty-char-constant.patch allow-overriding-darwin-compiler.patch
 

@@ -17,7 +17,7 @@ long_description    TNEF provides a way to unpack those pesky \
                     attachment instead of being attached seperately.
 
 checksums           rmd160  471dfe4e821843b8a4b29c5c38424b46a232ecc4 \
-                    sha256  f086dc2a4efa5d5b7a03e52de27c98ef8c179afa4a8d3d780e67139dcab4a935
+sha256  f086dc2a4efa5d5b7a03e52de27c98ef8c179afa4a8d3d780e67139dcab4a935
 
 depends_lib         port:gettext
 

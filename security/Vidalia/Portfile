@@ -19,7 +19,7 @@ master_sites        https://www.torproject.org/dist/vidalia/
 distname            vidalia-${version}
 
 checksums           rmd160  26dccaba3be689ab815f35ebc07b060b9581a583 \
-                    sha256  4598fdd9fb8e1d6fcdd02b908f331dba6e34ffdd72046ab94c2ef091a8c18809
+sha256  4598fdd9fb8e1d6fcdd02b908f331dba6e34ffdd72046ab94c2ef091a8c18809
 
 depends_lib-append  port:tor
 

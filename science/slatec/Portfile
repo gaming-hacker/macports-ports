@@ -24,7 +24,7 @@ worksrcdir          src
 patchfiles          patch-slatec4linux.diff
 
 checksums           rmd160  f4393d91e25ecd2ec0cae6b25d4b2829afcd4291 \
-                    sha256  df009d9ef9c18aae06ce68711b1ae108d3533b4f174582c3cbea0915c4fdfe01
+sha256  df009d9ef9c18aae06ce68711b1ae108d3533b4f174582c3cbea0915c4fdfe01
 
 use_configure       no
 

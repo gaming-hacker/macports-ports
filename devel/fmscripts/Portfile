@@ -22,7 +22,7 @@ long_description \
 homepage            http://www.defraine.net/~brunod/fmdiff/
 
 checksums           rmd160  a6b430a9889ea4e1090de9e60dae5ab80d40731b \
-                    sha256  3dfc5a88d073ddca2fb884b974ee49d29a1ba0fc326d300117d4946c709b58af
+sha256  3dfc5a88d073ddca2fb884b974ee49d29a1ba0fc326d300117d4946c709b58af
 
 use_configure       no
 destroot.destdir    DESTDIR=${destroot}${prefix}/bin

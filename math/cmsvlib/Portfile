@@ -18,7 +18,7 @@ homepage http://www.physics.wisc.edu/~craigm/idl/cmsave.html
 master_sites        http://www.physics.wisc.edu/~craigm/idl/down/
 
 checksums           rmd160  0af1c59a4cb297b049f65c18b0c5346712a3c32d \
-                    sha256  9d429bb1aba5bec8be7f529daacfabc1ec4822e5e346aa40b6ed05a686738fbd
+sha256  9d429bb1aba5bec8be7f529daacfabc1ec4822e5e346aa40b6ed05a686738fbd
 
 extract.mkdir       yes
 use_configure       no

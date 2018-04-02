@@ -23,7 +23,7 @@ master_sites        pypi:L/Logbook
 distname            Logbook-${version}
 
 checksums           rmd160  bd08e39a6becdbb4473294fd9c3fc9ee4a9a608c \
-                    sha256  f44562b4ecf529046db0e0a80ee145217c865966834e85479352d986a455488b
+sha256  f44562b4ecf529046db0e0a80ee145217c865966834e85479352d986a455488b
 
 if {${name} ne ${subport}} {
     depends_build-append \

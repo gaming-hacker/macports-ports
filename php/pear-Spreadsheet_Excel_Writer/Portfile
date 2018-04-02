@@ -13,6 +13,6 @@ description         PEAR Spreadsheet_Excel_Writer package
 long_description    ${description}
 
 checksums           rmd160  de38c87d7fcf4b6046416eaa28d73b235a5fe715 \
-                    sha256  b708b9f594f358996a9d7ad32fa15fa5e6a12359f097e2bfa28a1ed50b4532f7
+sha256  b708b9f594f358996a9d7ad32fa15fa5e6a12359f097e2bfa28a1ed50b4532f7
 
 depends_lib-append  port:pear-OLE

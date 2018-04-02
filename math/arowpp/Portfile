@@ -25,7 +25,7 @@ master_sites        googlecode:arowpp
 distname            AROW++-${version}
 
 checksums           rmd160  5f6f3718908d3eb14d359cb41e43e40a65d3f39b \
-                    sha256  cd1637278503d1cc331c9225c4d2472f59bc5f9f9f7031133b484a37b139b344
+sha256  cd1637278503d1cc331c9225c4d2472f59bc5f9f9f7031133b484a37b139b344
 
 post-destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}

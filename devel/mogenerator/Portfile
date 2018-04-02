@@ -23,7 +23,7 @@ long_description    mogenerator is a command-line tool that, given an \
 homepage            http://rentzsch.github.com/mogenerator/
 
 checksums           rmd160  e9ebd5a291604d2ab06d8fe652223652de69463b \
-                    sha256  450d9cb0e35c0f55be194b12c892614f578a51cffc003973f04923fb5c8a36c9
+sha256  450d9cb0e35c0f55be194b12c892614f578a51cffc003973f04923fb5c8a36c9
 
 destroot {
     xinstall ${worksrcpath}/build/Release/mogenerator ${destroot}${prefix}/bin

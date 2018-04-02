@@ -19,7 +19,7 @@ long_description \
     frameworks, mocking libraries and UI validation rules.
 
 checksums   rmd160  79427dbdd8a1c483e5dbe4d28b1c6cbd115d6953 \
-            sha256  aa131cc837ac75d7e0180bbd2b1c29219d5006d3340e691036a8c81b14e30ff0
+sha256  aa131cc837ac75d7e0180bbd2b1c29219d5006d3340e691036a8c81b14e30ff0
 
 depends_build   port:apache-ant
 

@@ -24,7 +24,7 @@ distname            ${_name}-${version}
 master_sites        pypi:${_n}/${_name}/
 
 checksums           rmd160  c26f2cf5c2a422d75e1e0bb60b80d40df11f31fa \
-                    sha256  bc48d3d99e1eaf2e9406c729f8848bfdaf87876cd3560dc3ec6c16714f529586
+sha256  bc48d3d99e1eaf2e9406c729f8848bfdaf87876cd3560dc3ec6c16714f529586
 
 python.versions 27 36
 

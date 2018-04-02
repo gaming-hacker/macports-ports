@@ -21,7 +21,7 @@ master_sites        https://github.com/twisted/constantly/archive
 distname            ${version}
 
 checksums           rmd160  7a9d1776bb3b44b1982ba01ce50f269d67c1e4a7 \
-                    sha256  be63c40ef853ee785045a1d20327d8153db9291f9aaff552796bed5272f9dd60
+sha256  be63c40ef853ee785045a1d20327d8153db9291f9aaff552796bed5272f9dd60
 
 worksrcdir          constantly-${version}
 

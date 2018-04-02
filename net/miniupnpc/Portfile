@@ -17,7 +17,7 @@ homepage            http://miniupnp.free.fr/
 master_sites        http://miniupnp.free.fr/files/download.php?file=${distname}${extract.suffix}&dummy=
 
 checksums           rmd160  9c0702ca2a061850b15b8b31a5cf1d80c14c39d5 \
-                    sha256  cef135ae46c12358a485e809619c01145238aceb10e6e8e2946ae40c4dbe477d
+sha256  cef135ae46c12358a485e809619c01145238aceb10e6e8e2946ae40c4dbe477d
 
 use_configure       no
 

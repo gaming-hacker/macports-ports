@@ -22,7 +22,7 @@ long_description    CoffeeScript is ${description}. Underneath all of \
 homepage            http://coffeescript.org/
 
 checksums           rmd160  22cf20180c06c92f5fdc223180ba94bb96b6ff7b \
-                    sha256  21b6782b23e09e768ff8b440eeddb0c42c7ad94990d120a348bfd4ffaf6511e0
+sha256  21b6782b23e09e768ff8b440eeddb0c42c7ad94990d120a348bfd4ffaf6511e0
 
 depends_lib         path:bin/node:nodejs4
 

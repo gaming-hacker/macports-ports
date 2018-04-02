@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-mysql/releases/download/v${version}
 
 checksums           md5 29800c39a41c90824ef530c551ae4a7e \
-                    sha1 5abf5c0ddea7719bee45dae0cbea76d8afe13dbe \
-                    rmd160 c3459e518186bfc4176cbb8b06adf5d68bcd4943
+sha1 5abf5c0ddea7719bee45dae0cbea76d8afe13dbe \
+rmd160 c3459e518186bfc4176cbb8b06adf5d68bcd4943
 
 variant mariadb conflicts mariadb100 mariadb101 mysql51 mysql55 mysql56 mysql57 percona description {use mariadb} {}
 variant mariadb100 conflicts mariadb mariadb101 mysql51 mysql55 mysql56 mysql57 percona description {use mariadb-10.0} {}

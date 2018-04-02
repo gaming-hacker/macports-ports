@@ -15,7 +15,7 @@ master_sites 	xorg:individual/proto/
 
 distname	kbproto-${version}
 checksums           rmd160  4fa5c2faf7e8558da2bab347c5027cc44fa678f8 \
-                    sha256  f882210b76376e3fa006b11dbd890e56ec0942bc56e65d1249ff4af86f90b857
+sha256  f882210b76376e3fa006b11dbd890e56ec0942bc56e65d1249ff4af86f90b857
 use_bzip2	yes
 
 livecheck.type  regex

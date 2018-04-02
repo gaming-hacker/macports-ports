@@ -12,6 +12,6 @@ description         PEAR Services_Weather package
 long_description    ${description}
 
 checksums           rmd160  0f26eaa6e3e0e6c2e5d5a7fe3bb9b70f7f790093 \
-                    sha256  aaaaca7034efd56be892c36b747bae80566a2cd23c11d4a1d92dd9619ec36da1
+sha256  aaaaca7034efd56be892c36b747bae80566a2cd23c11d4a1d92dd9619ec36da1
 
 depends_lib-append  port:pear-HTTP_Request

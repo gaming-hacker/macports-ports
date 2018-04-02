@@ -26,7 +26,7 @@ long_description        OpenSC provides a set of libraries and utilities to \
 
 github.tarball_from     releases
 checksums               rmd160  884de6844e9510593b85f87e668ccf0c54676913 \
-                        sha256  be73c6816867ab4721e6a9ae7dba8e890c5f169f0a2cbb4bf354e0f30a948300
+sha256  be73c6816867ab4721e6a9ae7dba8e890c5f169f0a2cbb4bf354e0f30a948300
 
 distname                opensc-${version}
 

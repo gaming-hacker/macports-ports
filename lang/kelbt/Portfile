@@ -21,7 +21,7 @@ homepage            http://www.complang.org/kelbt/
 master_sites        ${homepage}
 
 checksums           rmd160  baa8a9d616f2594fe0315c3b059a1286e8ac7ccc \
-                    sha256  000ae8e0906f34de13c3448f2422065e48407b6d85c61bbe51490ffdab0bc565
+sha256  000ae8e0906f34de13c3448f2422065e48407b6d85c61bbe51490ffdab0bc565
 
 patchfiles          invalid_cxx.patch
 

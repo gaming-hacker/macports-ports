@@ -23,8 +23,8 @@ distname        BinClockenSource
 use_zip         yes
 
 checksums       md5 8ef87b0450c10346e8013cae69ceba8b \
-                sha1 05801f4ef3481bda4fda7aaf4772318ff45297cd \
-                rmd160 82468ef839aaaa6f00a6719ffe250b025cff16f5
+sha1 05801f4ef3481bda4fda7aaf4772318ff45297cd \
+rmd160 82468ef839aaaa6f00a6719ffe250b025cff16f5
 
 destroot {
     set appPath ${destroot}${applications_dir}

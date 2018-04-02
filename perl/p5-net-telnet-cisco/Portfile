@@ -16,7 +16,7 @@ long_description    Net::Telnet::Cisco adds additional functionality to \
                     and statistic gathering.
 
 checksums           rmd160  39000a94d37b0f7c3788621c5d1057e652f84cab \
-                    sha256  bd2aa58c474f582c3736f290ce114c9530c26447c1c3d69130fa55259140f6c1
+sha256  bd2aa58c474f582c3736f290ce114c9530c26447c1c3d69130fa55259140f6c1
 
 platforms           darwin
 

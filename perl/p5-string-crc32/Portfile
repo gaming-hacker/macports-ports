@@ -12,6 +12,6 @@ description         Perl interface for cyclic redundency check generation
 long_description    ${description}
 
 checksums           rmd160  0d96fa78a58845a6f763bb731c84680808092d54 \
-                    sha256  70211b836109d99bc1763af3f7033ed74d64db091008202ecfc991007821c555
+sha256  70211b836109d99bc1763af3f7033ed74d64db091008202ecfc991007821c555
 
 platforms           darwin

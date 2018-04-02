@@ -27,7 +27,7 @@ master_sites    http://www.wireshark.org/download/src/ \
 use_bzip2       yes
 
 checksums       rmd160  56f62e9a1bc2dfedcbd1856dd06c42869a2cdde2 \
-                sha256  0a21aa84e78de2ae2f758e5f21edf2ec5c26a372fbfbb30a53a9b67a128e4538
+sha256  0a21aa84e78de2ae2f758e5f21edf2ec5c26a372fbfbb30a53a9b67a128e4538
 
 conflicts       wireshark
 

@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        kde:stable/${name}/
 use_bzip2           yes
 checksums           rmd160  5720d4e18dd7fdcd532e6dc9a2d2fe06116e7fef \
-                    sha256  9f102269dec50641440e23a449df215a0db9efef9a3969939d618c5e78a5010f
+sha256  9f102269dec50641440e23a449df215a0db9efef9a3969939d618c5e78a5010f
 
 livecheck.url       http://kde.mirrors.hoobly.com/stable/qimageblitz/
 livecheck.regex     ${name}-(\\d+(\\.\\d+)+)

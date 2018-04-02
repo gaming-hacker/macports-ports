@@ -12,7 +12,7 @@ long_description    Net::SSLeay Perl module for using OpenSSL
 platforms           darwin
 
 checksums           rmd160  5ec5a7878546fa72b92983d6e9fe4afb88833c77 \
-                    sha256  9d8188b9fb1cae3bd791979c20554925d5e94a138d00414f1a6814549927b0c8 \
+sha256  9d8188b9fb1cae3bd791979c20554925d5e94a138d00414f1a6814549927b0c8 \
 size    418349
 
 if {${perl5.major} != ""} {

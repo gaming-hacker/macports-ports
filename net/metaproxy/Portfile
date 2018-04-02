@@ -21,7 +21,7 @@ homepage            http://www.indexdata.com/metaproxy/
 master_sites        http://ftp.indexdata.com/pub/metaproxy/
 
 checksums           rmd160  2ec31fe8744396877bdb8fd2e32d8bfcb3fbc378 \
-                    sha256  34a8d122db1117e0f534b5a3d487826b4a86d8ca867b3fac15bf8e74c0170fb6
+sha256  34a8d122db1117e0f534b5a3d487826b4a86d8ca867b3fac15bf8e74c0170fb6
 
 # metaproxy links with boost libs
 

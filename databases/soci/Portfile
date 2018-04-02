@@ -24,7 +24,7 @@ homepage                    http://soci.sourceforge.net/
 master_sites                sourceforge:project/soci/soci/soci-${version}
 
 checksums                   rmd160  9dd5f9ac9d5364606f4fc7bc988f6f700a965361 \
-                            sha256  5ee765fdb65e50f2f5109b484417506d5550ba69b51f9a15bdce0f471e550e32
+sha256  5ee765fdb65e50f2f5109b484417506d5550ba69b51f9a15bdce0f471e550e32
 
 configure.args-append       -DWITH_BOOST=OFF \
                             -DWITH_MYSQL=OFF \

@@ -14,8 +14,8 @@ homepage	http://sourceforge.net/projects/tsclient/
 master_sites    sourceforge
 
 checksums       md5     1dc95fbdbcf4344d05114e1f43bf32ea \
-                sha1    75e061ba365a826c1b88623cedf33736578c8a3c \
-                rmd160  b4263f667bdf6c4d1f4d5b10ccb77b3a1c356252
+sha1    75e061ba365a826c1b88623cedf33736578c8a3c \
+rmd160  b4263f667bdf6c4d1f4d5b10ccb77b3a1c356252
 
 depends_build   port:pkgconfig \
                 port:intltool

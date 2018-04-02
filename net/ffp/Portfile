@@ -18,7 +18,7 @@ long_description	ffp is a tool that generates fuzzy fingerprints. \
 homepage		https://www.thc.org/thc-ffp/
 master_sites	https://www.thc.org/releases/
 checksums		md5  e96ab1f681815046c364c8d3d0c1285c \
-				sha1 4dbbf50583e36c1bc940e8525d7d0a0b63892c1b
+sha1 4dbbf50583e36c1bc940e8525d7d0a0b63892c1b
 
 livecheck.type  regex
 livecheck.regex "ffp-(.*?).tar.gz"

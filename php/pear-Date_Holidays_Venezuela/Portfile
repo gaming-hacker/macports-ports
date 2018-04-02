@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_Venezuela package
 long_description    ${description}
 
 checksums           rmd160  bd34588cd427d79a85a8c932738ef335f45a1d36 \
-                    sha256  46bc7727a11d91b2283c61382bf4c97342989defe19cca70b2f6e48845b5342e
+sha256  46bc7727a11d91b2283c61382bf4c97342989defe19cca70b2f6e48845b5342e
 
 depends_lib-append  port:pear-Date_Holidays

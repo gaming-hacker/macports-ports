@@ -29,7 +29,7 @@ depends_lib             port:libao \
                         port:libmad
 
 checksums               sha1    ad35391489a4c5b216740a543f6cb46285f556c7 \
-                        rmd160  1d9b53c03156b44717365c43dd6d95cea7145ca0
+rmd160  1d9b53c03156b44717365c43dd6d95cea7145ca0
 
 patchfiles              patch-Makefile.diff \
                         patch-source-sckif.c.diff

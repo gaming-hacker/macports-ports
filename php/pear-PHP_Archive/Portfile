@@ -12,4 +12,4 @@ description         PEAR PHP_Archive package
 long_description    ${description}
 
 checksums           rmd160  0e2aac15d1d413dc253bea5474234ddcb0bf2606 \
-                    sha256  8501d03ce5306633d00191c4d313bd056c4841c856e3748507885ef238772aef
+sha256  8501d03ce5306633d00191c4d313bd056c4841c856e3748507885ef238772aef

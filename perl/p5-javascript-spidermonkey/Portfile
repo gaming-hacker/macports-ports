@@ -17,7 +17,7 @@ long_description    JavaScript::SpiderMonkey is a Perl Interface to the SpiderMo
                         2) A more Perl-like API
 
 checksums           rmd160  fd489ea2a963c35bb057568beceb2f5f51159939 \
-                    sha256  7bd1879afaf4d73f37adaab6464611a466c1b93d4fe23509d81eedf428809a1a
+sha256  7bd1879afaf4d73f37adaab6464611a466c1b93d4fe23509d81eedf428809a1a
 
 platforms           darwin
 

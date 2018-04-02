@@ -22,7 +22,7 @@ github.tarball_from releases
 distname            syncthing-source-v${version}
 
 checksums           rmd160  215c04472dc4b4b6de2fa5a922f41e959568a0e6 \
-                    sha256  3236a12b3698f6eaef785348a26fea59f87398b2753c414d18844e5f7d7a655b
+sha256  3236a12b3698f6eaef785348a26fea59f87398b2753c414d18844e5f7d7a655b
 
 worksrcdir          src/github.com/syncthing/syncthing
 extract.mkdir       yes

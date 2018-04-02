@@ -26,7 +26,7 @@ master_sites            ftp://ftp.freeradius.org/pub/freeradius/ \
                         ftp://ftp.freeradius.org/pub/freeradius/old
 
 checksums               rmd160  08484efe48c911ca1943d5490d05e0c36cb7bb95 \
-                        sha256  ddba3b682dfba8153b656a090335d4630bbef04c3aa78216630ad0079589d6af
+sha256  ddba3b682dfba8153b656a090335d4630bbef04c3aa78216630ad0079589d6af
 
 depends_lib             port:libtool \
                         port:libpcap \

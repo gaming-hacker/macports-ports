@@ -15,7 +15,7 @@ platforms          darwin
 distname           sml-mode-${version}
 master_sites       http://www.iro.umontreal.ca/~monnier/elisp/
 checksums          rmd160  cc6b8896348ce2c0023adc9edda114379ac7e99e \
-                   sha256  8891ae8215175186f7575ae5a581e06e083f231d3e50731a587e19830653774f
+sha256  8891ae8215175186f7575ae5a581e06e083f231d3e50731a587e19830653774f
 
 supported_archs    noarch
 

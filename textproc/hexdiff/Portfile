@@ -23,8 +23,8 @@ long_description        Visuel Hexdiff is a curses-based application \
                         differences between two binary files
 
 checksums               md5     68dbf4c610f4fd1817401bcf6c671b71 \
-                        sha1    a84948b1d8c26e5a8e14b1a2a6e18f4e05a69f2f \
-                        rmd160  8d8dfd719e1329b9f5ecc3df7fedcf83024baea9
+sha1    a84948b1d8c26e5a8e14b1a2a6e18f4e05a69f2f \
+rmd160  8d8dfd719e1329b9f5ecc3df7fedcf83024baea9
 
 depends_lib             port:ncurses
 

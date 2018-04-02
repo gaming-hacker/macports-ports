@@ -15,7 +15,7 @@ long_description    ${name} is a small command-line program that moves \
                     files or folders to the trash.
 
 checksums           rmd160  85e3cd1e582a95358a7f2e80ef33aa9e3db6b931 \
-                    sha256  2875f834f4bdac3107b0a19e8a370fb6245e31d7326fe4cfca77421e074cb1da
+sha256  2875f834f4bdac3107b0a19e8a370fb6245e31d7326fe4cfca77421e074cb1da
 
 depends_build       bin:pod2man:perl5
 

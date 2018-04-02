@@ -12,6 +12,6 @@ description         PEAR Services_GeoNames package
 long_description    ${description}
 
 checksums           rmd160  568c38a9140b478b369be9622a733570a2f834a4 \
-                    sha256  b7760f4c2ad8fbb1f774314b6bbc1a04d1050dd892128919a0b72972b61d28f3
+sha256  b7760f4c2ad8fbb1f774314b6bbc1a04d1050dd892128919a0b72972b61d28f3
 
 depends_lib-append  port:pear-HTTP_Request2

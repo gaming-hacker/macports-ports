@@ -13,6 +13,6 @@ description         Manipulate Mac OS X pasteboards/clipboards
 long_description    ${name} is a perl module to ${description}.
 
 checksums           rmd160  1bfd070e989cd2326bdf10330b3495afb5ad62ae \
-                    sha256  85b1d5e9630973b997c3c1634e2df964d6a8d6cb57d9abe1f7093385cf26cf54
+sha256  85b1d5e9630973b997c3c1634e2df964d6a8d6cb57d9abe1f7093385cf26cf54
 
 platforms           darwin

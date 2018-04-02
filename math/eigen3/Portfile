@@ -31,8 +31,8 @@ if {${subport} eq ${name}} {
     livecheck.regex     {Eigen (\d+(\.\d+)+) released}
 
     checksums \
-        rmd160  ba7687fbb66abae7ae68769877554d1a6a4004de \
-        sha256  dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
+rmd160  ba7687fbb66abae7ae68769877554d1a6a4004de \
+sha256  dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
 
 } else {
     # No current development version (other than rolling snapshot)
@@ -47,8 +47,8 @@ if {${subport} eq ${name}} {
     
     epoch               2
     checksums \
-        rmd160  ba7687fbb66abae7ae68769877554d1a6a4004de \
-        sha256  dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
+rmd160  ba7687fbb66abae7ae68769877554d1a6a4004de \
+sha256  dd254beb0bafc695d0f62ae1a222ff85b52dbaa3a16f76e781dce22d0d20a4a6
 }
 
 homepage            http://eigen.tuxfamily.org/

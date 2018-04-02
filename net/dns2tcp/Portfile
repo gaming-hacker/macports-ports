@@ -18,6 +18,6 @@ platforms        darwin
 
 master_sites     ${homepage}downloads/
 checksums        rmd160  2838d73800013e7763195e92410a2da2a6336c24 \
-                 sha256  ea9ef59002b86519a43fca320982ae971e2df54cdc54cdb35562c751704278d9
+sha256  ea9ef59002b86519a43fca320982ae971e2df54cdc54cdb35562c751704278d9
 
 configure.args   --mandir=${prefix}/share/man

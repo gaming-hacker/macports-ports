@@ -27,8 +27,8 @@ distname        ${name}-${up_version}
 dist_subdir		${name}/${version}
 master_sites		http://fex.rus.uni-stuttgart.de/download/
 checksums		md5 ea87edf5923f41efbe40dab5b4ef38b0 \
-			sha1 cd0ee8eb2865c3320529b45812f96805c357bc35 \
-			rmd160 2095f4252db0f15f358e969460d61f29d90e8fad
+sha1 cd0ee8eb2865c3320529b45812f96805c357bc35 \
+rmd160 2095f4252db0f15f358e969460d61f29d90e8fad
 
 patchfiles		patch-makeconfig.diff patch-sendfiled.c.diff
 

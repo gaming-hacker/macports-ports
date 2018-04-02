@@ -20,8 +20,8 @@ master_sites        https://dev.yorhel.nl/download/
 depends_lib         port:ncurses
 
 checksums           md5     67239592ac41f42290f52ab89ff198be \
-                    rmd160  948a45d5a5c3607dd3a7ae9236cd369ae24e1205 \
-                    sha1    3233c4185208d9989ac528a94817ed92dd59c773 \
-                    sha256  f4d9285c38292c2de05e444d0ba271cbfe1a705eee37c2b23ea7c448ab37255a
+rmd160  948a45d5a5c3607dd3a7ae9236cd369ae24e1205 \
+sha1    3233c4185208d9989ac528a94817ed92dd59c773 \
+sha256  f4d9285c38292c2de05e444d0ba271cbfe1a705eee37c2b23ea7c448ab37255a
 
 livecheck.regex     ${name}-(\\d\\.\\d+)${extract.suffix}

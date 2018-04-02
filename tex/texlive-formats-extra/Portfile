@@ -14,14 +14,14 @@ description         TeX Live: Additional formats
 long_description    Collected TeX `formats', i.e., large-scale macro packages designed to be dumped into .fmt files -- excluding the most common ones, such as latex and context, which have their own package(s). It also includes the Aleph engine and related Omega formats and packages.
 
 checksums           texlive-formats-extra-44177-run.tar.xz \
-                    rmd160  5f93bef99ab2a21686125b030b13a0c5b7e2d671 \
-                    sha256  898fddaed614f9f1961cfe4d20be1aee3556906979af6fbc83e0893f3e5d2769 \
+rmd160  5f93bef99ab2a21686125b030b13a0c5b7e2d671 \
+sha256  898fddaed614f9f1961cfe4d20be1aee3556906979af6fbc83e0893f3e5d2769 \
                     texlive-formats-extra-44177-doc.tar.xz \
-                    rmd160  809495235a5c2e54f6f0f032dfbcb54f32bf7521 \
-                    sha256  1a028f98dbe0b2e8d2661de628cc8f437fd8228bee4a15f1e43e45b64005d59c \
+rmd160  809495235a5c2e54f6f0f032dfbcb54f32bf7521 \
+sha256  1a028f98dbe0b2e8d2661de628cc8f437fd8228bee4a15f1e43e45b64005d59c \
                     texlive-formats-extra-44177-src.tar.xz \
-                    rmd160  ef38f680d5e8544f4437ab1a8b0579cad10b1a8d \
-                    sha256  e23a2a079895d3baa1faa925df040ac53e533812fd83f1feeb812c8feee9db43
+rmd160  ef38f680d5e8544f4437ab1a8b0579cad10b1a8d \
+sha256  e23a2a079895d3baa1faa925df040ac53e533812fd83f1feeb812c8feee9db43
 
 depends_lib         port:texlive-basic port:texlive-latex
 

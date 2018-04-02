@@ -17,7 +17,7 @@ homepage        http://modplug-xmms.sourceforge.net/
 master_sites    sourceforge:modplug-xmms
 
 checksums       rmd160  81eae38506cfba344af9b01c2336de643adbbbe3 \
-                sha256  457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de
+sha256  457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de
 
 # Teach glibtool about -stdlib=libc++
 use_autoreconf  yes

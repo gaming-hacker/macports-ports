@@ -21,8 +21,8 @@ distname         garmindev-${version}
 patchfiles       GPSMap60CSx+SummitHC.LinuxPPC.diff Disable-DBG.diff
 
 checksums        md5     ff52c697d6e2a720b6b4a9c7544b231d \
-                 sha1    0349f0d9f486de22440d6d028c8e092c32faf83a \
-                 rmd160  f35f4274775bdcac69a1b2973afbde7bec3c78da
+sha1    0349f0d9f486de22440d6d028c8e092c32faf83a \
+rmd160  f35f4274775bdcac69a1b2973afbde7bec3c78da
 
 set drivers_dir  "${applications_dir}/QLandkarte GT.app/Contents/Resources/Drivers"
 

@@ -18,6 +18,6 @@ description         Perl module to generate random strings based
 long_description    ${description}
 
 checksums           rmd160  7744f048bc292a72667055f8e352462586868dac \
-                    sha256  1da4a65e66ab1db23fedca018355b597cf69c94dd73dec657212820055515a5c
+sha256  1da4a65e66ab1db23fedca018355b597cf69c94dd73dec657212820055515a5c
 
 perl5.use_module_build

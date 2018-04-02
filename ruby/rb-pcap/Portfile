@@ -20,7 +20,7 @@ master_sites        http://www.goto.info.waseda.ac.jp/~fukusima/ruby/ \
 worksrcdir          pcap
 patchfiles          patch-Pcap.c.diff
 checksums           md5 bf8024831bfbbf0cfbf7c7ca27c1b16a \
-                    sha1 d098a04e4bb5e414fc10d267b3d6dcf9490bccd3 \
-                    rmd160 6422c9fe0a5a35f5cc1fe6cba418223d0e764766
+sha1 d098a04e4bb5e414fc10d267b3d6dcf9490bccd3 \
+rmd160 6422c9fe0a5a35f5cc1fe6cba418223d0e764766
 
 depends_lib-append  port:libpcap

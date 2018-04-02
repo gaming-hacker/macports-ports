@@ -20,8 +20,8 @@ homepage	http://www.triptico.com/software/grutatxt.html
 master_sites	http://www.triptico.com/download/
 distname	Grutatxt-${version}
 checksums	md5    121d1bab222832ba357aab67bf6e8afe \
-            sha1   41d479603279e335a33975a05072c36d2569900b \
-            rmd160 2359d6358b0453468dca02b26c7ae5d2c60e1bcc
+sha1   41d479603279e335a33975a05072c36d2569900b \
+rmd160 2359d6358b0453468dca02b26c7ae5d2c60e1bcc
 
 depends_lib	bin:perl:perl5
 

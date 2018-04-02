@@ -18,7 +18,7 @@ long_description                ${name} provides ${description}. This includes \
                                 scheduling.
 
 checksums                       rmd160  2acb7d2f778cdce7a949202b376592d14049ca1c \
-                                sha256  c1f2a5da73983efb5a54f86d57ba93713ebed20ff0c72de9b3467f10f2904ee0
+sha256  c1f2a5da73983efb5a54f86d57ba93713ebed20ff0c72de9b3467f10f2904ee0
 
 depends_build-append            port:pkgconfig
 

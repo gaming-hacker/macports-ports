@@ -40,11 +40,11 @@ distfiles               ${distname}${extract.suffix}:src \
                         ${distname}-doc${extract.suffix}:doc
 
 checksums               ${distname}${extract.suffix} \
-                            rmd160  9cc8888760c06757332daa6dfbba4c5235474b5d \
-                            sha256  a80b187b6b770f092ea1f53e89021d06c03d8bbe6a5e996bcca3267de14c5e52 \
+rmd160  9cc8888760c06757332daa6dfbba4c5235474b5d \
+sha256  a80b187b6b770f092ea1f53e89021d06c03d8bbe6a5e996bcca3267de14c5e52 \
                         ${distname}-doc${extract.suffix} \
-                            rmd160  e5b8d4c3343220515c7136a16eceb8c95eb738c4 \
-                            sha256  5229cc93ebe637a07deb5b386b705c37a50f4adfef788b3c0f6647741df4f6bd
+rmd160  e5b8d4c3343220515c7136a16eceb8c95eb738c4 \
+sha256  5229cc93ebe637a07deb5b386b705c37a50f4adfef788b3c0f6647741df4f6bd
 
 patchfiles              prevent-doc-regeneration.patch
 

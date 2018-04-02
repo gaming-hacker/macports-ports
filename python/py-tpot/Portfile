@@ -26,7 +26,7 @@ master_sites        pypi:T/TPOT
 distname            TPOT-${version}
 
 checksums           rmd160  0abaa305a75b1b7aa40c577ab1569ef44b43cc92 \
-                    sha256  0d1340c73367153d6b8c690c4e66be7c45066e5fe41dbb030a4a62a335565497
+sha256  0d1340c73367153d6b8c690c4e66be7c45066e5fe41dbb030a4a62a335565497
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

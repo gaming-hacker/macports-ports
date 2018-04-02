@@ -23,7 +23,7 @@ long_description    Igbinary is a drop in replacement for the standard PHP \
                     serialized data.
 
 checksums           rmd160  e0a783c3ae2d9e9697fe7cf18570e5a244e7ae8c \
-                    sha256  526b21f10b08eb9f6e17a6e92b6675348a5049e6d0f5a4ea0a38f24ec3513d34 \
+sha256  526b21f10b08eb9f6e17a6e92b6675348a5049e6d0f5a4ea0a38f24ec3513d34 \
 size    72129
 
 test.run            yes

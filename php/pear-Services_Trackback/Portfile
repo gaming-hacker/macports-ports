@@ -13,7 +13,7 @@ description         PEAR Services_Trackback package
 long_description    ${description}
 
 checksums           rmd160  eaaab5cdfea11d34ff6e7388e8ee324155a4c373 \
-                    sha256  fe1c7160751fb0012430bad973c0d350d9f0daa103574d59cfa7b5ab075b3201
+sha256  fe1c7160751fb0012430bad973c0d350d9f0daa103574d59cfa7b5ab075b3201
 
 depends_lib-append  port:pear-Var_Dump \
                     port:pear-Net_DNSBL

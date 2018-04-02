@@ -16,7 +16,7 @@ license             BSD
 
 master_sites        http://www.chokkan.org/software/dist/
 checksums           rmd160  555ac00a2d862a154181d4a5b48738351ade861d \
-                    sha256  f3902a21822259663d6d232fba090bbd011456b4c3b069da2cf8fa32961eaa28
+sha256  f3902a21822259663d6d232fba090bbd011456b4c3b069da2cf8fa32961eaa28
 
 depends_lib         port:liblbfgs
 

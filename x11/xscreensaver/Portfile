@@ -16,7 +16,7 @@ long_description    The xscreensaver program waits until the keyboard and \
 homepage            http://www.jwz.org/xscreensaver/
 master_sites        ${homepage}
 checksums           rmd160  1db8aede14b62a65f4d5798e4346335c2dd5b820 \
-                    sha256  4252a6079d2d2f5b342e8bdd172cbad5f0af73daf4e412b61a68344d91ca93bd
+sha256  4252a6079d2d2f5b342e8bdd172cbad5f0af73daf4e412b61a68344d91ca93bd
 
 depends_build       port:pkgconfig port:intltool
 

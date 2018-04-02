@@ -13,6 +13,6 @@ description         PEAR XML_Feed_Parser package
 long_description    ${description}
 
 checksums           rmd160  0049cbe7595b1b492a2f61f0eb535bc93ddf3382 \
-                    sha256  7b30bee6ad076e3a597400834b1a446b90ca62671e882abf596ed9432b931aed
+sha256  7b30bee6ad076e3a597400834b1a446b90ca62671e882abf596ed9432b931aed
 
 depends_lib-append  port:pear-Log

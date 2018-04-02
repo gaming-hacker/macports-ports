@@ -22,7 +22,7 @@ homepage            http://deviousfish.com/Pianod
 master_sites        http://deviousfish.com/Downloads/pianod
 
 checksums           rmd160  386f64cfb322945ebfacae06061941f0aab70336 \
-                    sha256  19733d4937b48707eebcde75775d865d6bf925efa86d8989f0efb2392ab4cdf9
+sha256  19733d4937b48707eebcde75775d865d6bf925efa86d8989f0efb2392ab4cdf9
 
 depends_build       port:pkgconfig
 

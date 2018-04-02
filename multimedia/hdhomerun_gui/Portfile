@@ -28,7 +28,7 @@ patch.args          -p1
 extract.suffix      .tgz
 worksrcdir          hdhomerun_config_gui
 checksums           rmd160  661dc09cc3c705c1b892738d1864b7d0c2bacb37 \
-                    sha256  8d89878eb437e1df93b99268f9dcec00b79374a00f2640f7ec13a31f8d9ea6ae
+sha256  8d89878eb437e1df93b99268f9dcec00b79374a00f2640f7ec13a31f8d9ea6ae
 
 livecheck.type      regex
 livecheck.url       http://www.silicondust.com/support/hdhomerun/downloads/

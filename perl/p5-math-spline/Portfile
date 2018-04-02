@@ -18,4 +18,4 @@ description         Cubic Spline Interpolation of data
 long_description    ${description}
 
 checksums           rmd160  6b3bed34821342af829bc83d5321c0c945823840 \
-                    sha256  cfd7044483f34e6fa64080bf7c4bc10ff6173410c350066fe65e090c3b81b6e9
+sha256  cfd7044483f34e6fa64080bf7c4bc10ff6173410c350066fe65e090c3b81b6e9

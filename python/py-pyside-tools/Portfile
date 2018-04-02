@@ -22,8 +22,8 @@ license             LGPL
 master_sites        https://github.com/PySide/Tools/archive/
 
 checksums           md5     e542b9536bd9d35599ede225c9311cc8 \
-                    rmd160  481654815c8fcdd5b805a155bc2ea9bfcbced9d4 \
-                    sha1    b668d15e8d67e25a653db5abf8f542802e2ee2dd
+rmd160  481654815c8fcdd5b805a155bc2ea9bfcbced9d4 \
+sha1    b668d15e8d67e25a653db5abf8f542802e2ee2dd
 distname            ${version}
 worksrcdir          Tools-${version}
 

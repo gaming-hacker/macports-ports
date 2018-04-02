@@ -12,4 +12,4 @@ description         PEAR Net_Ping package
 long_description    ${description}
 
 checksums           rmd160  99329f55a2af48d7699ca12fc4a59ac2fc7acd15 \
-                    sha256  81a276da44198b71d12b77830b863c80619927ffd17b7a95452f054f45502ec6
+sha256  81a276da44198b71d12b77830b863c80619927ffd17b7a95452f054f45502ec6

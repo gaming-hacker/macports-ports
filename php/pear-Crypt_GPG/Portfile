@@ -12,4 +12,4 @@ description         PEAR Crypt_GPG package
 long_description    ${description}
 
 checksums           rmd160  2896e6f0d4024b9e7795c8dcb8ee99c4b0351db6 \
-                    sha256  67f77bfb9b21dd428587f5bd336e4b9b2e200a1b62160e7ae0d0dfffd1357899
+sha256  67f77bfb9b21dd428587f5bd336e4b9b2e200a1b62160e7ae0d0dfffd1357899

@@ -20,7 +20,7 @@ long_description      Convenient and fast CLI to find duplicate files. Supports 
 
 master_sites          http://www.virkki.com/dupd
 checksums             rmd160 624afff8a1ecf1633a6fea0e49dc99cb37e4efc8 \
-                      sha256 68bce4d5ac0b8a00ac50da65634950eb46fb11a571e546fb543fc6c6bf6b79da
+sha256 68bce4d5ac0b8a00ac50da65634950eb46fb11a571e546fb543fc6c6bf6b79da
 
 destroot.destdir      INSTALL_PREFIX=${destroot}${prefix} \
                       MAN_BASE=${destroot}${prefix}/share/man

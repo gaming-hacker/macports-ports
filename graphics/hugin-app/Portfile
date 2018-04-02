@@ -32,7 +32,7 @@ perl5.branches          5.26
 wxWidgets.use           wxWidgets-3.0-cxx11
 
 checksums               rmd160  2a0cf1af75d384abca0a62d80480fc815f63e0bf \
-                        sha256  86646ea27f32b959d38e7d36270703214b1ae961e379dd64b14d027139cd4609
+sha256  86646ea27f32b959d38e7d36270703214b1ae961e379dd64b14d027139cd4609
 
 # do not assume default values that MacPorts sets
 patchfiles-append       patch-no_default.diff

@@ -24,8 +24,8 @@ long_description \
     but nothing else.
 
 checksums       md5     8bc2d64a7f8897e914f1e1b1f8e7b554 \
-                sha1    e4bbb37601cb6122624b66832dd11deba06656df \
-                rmd160  36ecf7b1d4f0872b0597db09c0410fa429e4bf21
+sha1    e4bbb37601cb6122624b66832dd11deba06656df \
+rmd160  36ecf7b1d4f0872b0597db09c0410fa429e4bf21
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:imlib2

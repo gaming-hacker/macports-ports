@@ -31,7 +31,7 @@ depends_lib         port:crswallow \
                     port:ogmtools
 
 checksums           sha1    ec7b7ce7558e2ef46a2331e76285f1547b0de08d \
-                    rmd160  246780a7a645e2047f04fe5b649cf2c86186960b
+rmd160  246780a7a645e2047f04fe5b649cf2c86186960b
 
 use_configure no
 build {}

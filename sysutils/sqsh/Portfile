@@ -17,7 +17,7 @@ platforms           darwin
 
 master_sites        sourceforge
 checksums           md5     0ad6cc9452d3257866ccde5f14ffa013 \
-                    sha1    8446a3e03457489dddc9ecb79a5e88b0605edad3
+sha1    8446a3e03457489dddc9ecb79a5e88b0605edad3
 
 depends_lib         port:readline port:freetds
 extract.suffix      .tgz

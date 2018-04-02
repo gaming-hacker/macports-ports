@@ -14,6 +14,6 @@ long_description    Minisign is ${description}.
 homepage            https://jedisct1.github.io/minisign/
 
 checksums           rmd160  af3f59cfffa6617cc110d7d3394427f1d3f7f0ee \
-                    sha256  85642005bccd8acbd1a09d6462a7f46836320b9eca8c5583313dddb1cb501325
+sha256  85642005bccd8acbd1a09d6462a7f46836320b9eca8c5583313dddb1cb501325
 
 depends_lib         port:libsodium

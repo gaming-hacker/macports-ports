@@ -19,7 +19,7 @@ homepage            http://liboauth.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  c9f3182e51b48ebae27f577ccb077d8263c52f9a \
-                    sha256  0df60157b052f0e774ade8a8bac59d6e8d4b464058cc55f9208d72e41156811f
+sha256  0df60157b052f0e774ade8a8bac59d6e8d4b464058cc55f9208d72e41156811f
 
 depends_build       port:autoconf \
                     port:libtool \

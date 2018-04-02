@@ -15,7 +15,7 @@ long_description \
 platforms        darwin
 
 checksums        rmd160 0d8b62fc9d3313ea8ff68cc657005f620d04c5ad \
-                 sha256 3b3a33b706075fdc478782fdc65db3e7f9167550f7d71b95e704236a797e7fd3
+sha256 3b3a33b706075fdc478782fdc65db3e7f9167550f7d71b95e704236a797e7fd3
 
 depends_build    port:libtool
 depends_lib      port:gettext

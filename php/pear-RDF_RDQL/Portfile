@@ -12,6 +12,6 @@ description         PEAR RDF_RDQL package
 long_description    ${description}
 
 checksums           rmd160  039592b2b3acb33815eb2d75a443b49a965e9e6c \
-                    sha256  376a0c89799716391358a10b72d6a644735d448dabda7daeecebb9fd5d81cea4
+sha256  376a0c89799716391358a10b72d6a644735d448dabda7daeecebb9fd5d81cea4
 
 depends_lib-append  port:pear-RDF

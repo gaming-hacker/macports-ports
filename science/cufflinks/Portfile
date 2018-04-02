@@ -23,7 +23,7 @@ homepage            http://cufflinks.cbcb.umd.edu/
 master_sites        ${homepage}downloads
 
 checksums           sha1        f6c28d8f98569f8d1eae72ff050ce7d2d06bfba4\
-                    rmd160      b9b3b8ec322e79e0e6f2b4b2f23de27b58ec44f4
+rmd160      b9b3b8ec322e79e0e6f2b4b2f23de27b58ec44f4
 
 depends_lib         port:zlib \
                     port:samtools \

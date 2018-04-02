@@ -21,7 +21,7 @@ homepage            http://becauseinter.net/bournal/
 master_sites        ${homepage}
 
 checksums           sha1    b6483696293bd56e467541201bd1f3fa67d0dfd7 \
-                    rmd160  087c355dca401de8a84cdc7f88359a972bc5e250
+rmd160  087c355dca401de8a84cdc7f88359a972bc5e250
 
 use_configure       no
 

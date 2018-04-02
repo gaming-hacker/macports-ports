@@ -12,7 +12,7 @@ description         PEAR Image_JpegXmpReader package
 long_description    ${description}
 
 checksums           rmd160  0a46e29468b095447c94bc1e77ea16d6d8186828 \
-                    sha256  23be53bdad44a06430124c321a12d6dce92df01cf4668bacbb4c0d156e6b33a1
+sha256  23be53bdad44a06430124c321a12d6dce92df01cf4668bacbb4c0d156e6b33a1
 
 depends_lib-append  port:pear-XML_Parser \
                     port:pear-Image_JpegMarkerReader

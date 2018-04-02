@@ -20,8 +20,8 @@ build           {}
 
 extract.suffix  .tgz
 checksums       md5    a1e71c996bfc875acaa32ea192ef8df8 \
-                sha1   ff91434ce32ba4fcfadb8621896edfd271a9bd21 \
-                sha256 92bdeb4d1ba1a08f8a3aa1a0b10d36a06060c47f16fc523856f3ada598362020
+sha1   ff91434ce32ba4fcfadb8621896edfd271a9bd21 \
+sha256 92bdeb4d1ba1a08f8a3aa1a0b10d36a06060c47f16fc523856f3ada598362020
 
 destroot {
     set sharedir ${destroot}${prefix}/share

@@ -26,8 +26,8 @@ long_description \
     This PHP extension provides basic functions for syntax highlighting.
 
 checksums       md5     327a3ae03e8b6bcfb1c0ca7b3de05f7e \
-                sha1    ee93681959e71f61e52a3c9ee98a47b964a12880 \
-                rmd160  6275bc1790a462487b3d948996162de4217c0038
+sha1    ee93681959e71f61e52a3c9ee98a47b964a12880 \
+rmd160  6275bc1790a462487b3d948996162de4217c0038
 
 if {${name} != ${subport}} {
     depends_lib-append      port:colorer

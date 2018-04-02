@@ -15,7 +15,7 @@ description         A set of tools for converting ttf fonts to/from woff2
 long_description    ${description}
 
 checksums           rmd160  605101b33467667f870ed7ed53888b97481b9a41 \
-                    sha256  8fc1709d629570401c73e9d04901d95f887277cd0ce7c8a23038d3171f215e6e
+sha256  8fc1709d629570401c73e9d04901d95f887277cd0ce7c8a23038d3171f215e6e
 
 depends_lib         port:brotli
 

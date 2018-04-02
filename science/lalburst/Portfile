@@ -12,7 +12,7 @@ long_description \
   routines for burst gravitational wave data analysis.
 
 checksums     rmd160 8a9eebde072ecb0bde64af5f58471b0ebd4269d2 \
-              sha256 2fc15ecd5cf195c2794234977f2c320efbcab2f294a03f8b5eda9ac7edbc93f1
+sha256 2fc15ecd5cf195c2794234977f2c320efbcab2f294a03f8b5eda9ac7edbc93f1
 
 depends_lib   port:lal \
               port:lalmetaio \

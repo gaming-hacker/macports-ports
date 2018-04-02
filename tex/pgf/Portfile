@@ -27,7 +27,7 @@ use_zip             yes
 distname            ${name}_${version}.tds
 
 checksums           rmd160  208d16f9c993c2e6400cf79123c2502c6c4f3a9c \
-                    sha256  a0f374ff2a66e8d24995b571cc74f773fd58f81d63bf719d73af326c280bdb99
+sha256  a0f374ff2a66e8d24995b571cc74f773fd58f81d63bf719d73af326c280bdb99
 
 extract.mkdir       yes
 

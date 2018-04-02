@@ -22,7 +22,7 @@ homepage            http://grass.osgeo.org/
 master_sites        ${homepage}grass[join [lrange [split ${realVersion} .] 0 1] {}]/source/
 
 checksums           rmd160  525d355eeebe3fa27b5700ac36640c7cc5f42f9f \
-                    sha256  cb6fa188e030a3a447fc5451fbe0ecbeb4069ee2fd1bf52ed8e40e9b89e293cc
+sha256  cb6fa188e030a3a447fc5451fbe0ecbeb4069ee2fd1bf52ed8e40e9b89e293cc
 
 depends_build       port:pkgconfig
 depends_lib         port:bzip2 \

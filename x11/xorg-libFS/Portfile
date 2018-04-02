@@ -14,7 +14,7 @@ master_sites    xorg:individual/lib/
 
 distname    libFS-${version}
 checksums           rmd160  b4ab136e2f4f2a3906d5b805072df73654c709e4 \
-                    sha256  2e9d4c07026a7401d4fa4ffae86e6ac7fec83f50f3268fa85f52718e479dc4f3
+sha256  2e9d4c07026a7401d4fa4ffae86e6ac7fec83f50f3268fa85f52718e479dc4f3
 
 use_bzip2   yes
 use_parallel_build      yes

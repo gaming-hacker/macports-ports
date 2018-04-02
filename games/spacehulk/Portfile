@@ -19,8 +19,8 @@ long_description    Space Hulk is a great board game of Games Workshop in \
 homepage            http://r.vinot.free.fr/spacehulk/
 master_sites        ${homepage}
 checksums           md5 43eb76b5a2b59e8af2205bff145cbfb2 \
-                    sha1 0202cf59805be69477b1f19e0248fff8b5da1771 \
-                    rmd160 1b94dcdecc5a9d962d2f2c35b503b29cf8502b9e
+sha1 0202cf59805be69477b1f19e0248fff8b5da1771 \
+rmd160 1b94dcdecc5a9d962d2f2c35b503b29cf8502b9e
 
 depends_lib         port:qt3
 

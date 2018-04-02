@@ -16,8 +16,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           sha1    4a34135ff51c3bc4029d6644e60e03f17ccf8c81 \
-                    rmd160  32d8999cee6c9fe5b3f1a5be7c0d15d875474ff0 \
-                    sha256  83f8e6260435f1df2e2e5036bb3325688b79f0b33069ef445eff5058d127e078
+rmd160  32d8999cee6c9fe5b3f1a5be7c0d15d875474ff0 \
+sha256  83f8e6260435f1df2e2e5036bb3325688b79f0b33069ef445eff5058d127e078
 
 depends_build       port:pkgconfig
 

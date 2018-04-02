@@ -19,7 +19,7 @@ master_sites    http://jackaudio.org/downloads/
 platforms       darwin
 
 checksums       rmd160  075c6ce5342d31e359908c01d7123f20818021aa \
-                sha256  eb42df6065576f08feeeb60cb9355dce4eb53874534ad71534d7aa31bae561d6
+sha256  eb42df6065576f08feeeb60cb9355dce4eb53874534ad71534d7aa31bae561d6
 
 configure.cppflags-append -isystem${prefix}/include/db60
 configure.ldflags-append -L${prefix}/lib/db60

@@ -22,7 +22,7 @@ homepage            http://www.gccxml.org/
 universal_variant   no
 
 checksums           rmd160  69006283aed31f5508cf7032785bba2dfd0b5b3b \
-                    sha256  673d571d9171717598f8f7faf8db677600a96bd9d1f853e1c723f0a3c16cba17
+sha256  673d571d9171717598f8f7faf8db677600a96bd9d1f853e1c723f0a3c16cba17
 
 # gcxxml can be compiled with clang, but can't simulate clang. It should be able
 # to simulate gcc*, but gets confused by header files in /usr/include. The

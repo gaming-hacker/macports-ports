@@ -21,7 +21,7 @@ master_sites        sourceforge:project/bodr/bodr/${version}
 use_bzip2           yes
 
 checksums           rmd160  eb6b2de5adc4fffa1089676a382ae66d78dd3d04 \
-                    sha256  738a0f0e263cdc088581d0a67a0ea16ec586ceb424704d0ff73bdb5da5d4ee81
+sha256  738a0f0e263cdc088581d0a67a0ea16ec586ceb424704d0ff73bdb5da5d4ee81
 
 depends_build       port:libxml2 \
                     port:libxslt

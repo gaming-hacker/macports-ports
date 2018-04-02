@@ -19,7 +19,7 @@ platforms	darwin
 supported_archs	noarch
 distname        ${name}
 checksums	md5 3a4957d0dea86f2e08d22f97e484ae9e			\
-		sha1 ff1493ac5affde0d20b11b0f07b1e9480dccd65e
+sha1 ff1493ac5affde0d20b11b0f07b1e9480dccd65e
 patch		{
 	reinplace "s|include __${name}|include ${prefix}\/etc\/__${name}|g" \
 		${workpath}/${name}

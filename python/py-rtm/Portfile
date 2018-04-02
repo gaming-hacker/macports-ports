@@ -26,7 +26,7 @@ if {${name} ne ${subport}} {
 }
 
 checksums       rmd160 7328c9d118f07fe05b3764d6eb2d7bb5b44728da \
-                sha256 93daee65367d81163903fd1c3697e85709846686202766a328470458fe1b4ec9
+sha256 93daee65367d81163903fd1c3697e85709846686202766a328470458fe1b4ec9
 
 if {${name} eq ${subport}} {
   livecheck.type  regex

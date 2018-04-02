@@ -20,7 +20,7 @@ homepage          https://wiki.ligo.org/DASWG/NDSClient
 master_sites      http://software.ligo.org/lscsoft/source/
 
 checksums         rmd160  46a1c7d6cfe9c3e1c6a7e04c5421efe026edee00 \
-                  sha256  39e9f04b6cb454fe6de992b10e323299bc291ad7685662a9693d1a977368c667
+sha256  39e9f04b6cb454fe6de992b10e323299bc291ad7685662a9693d1a977368c667
 
 depends_build-append \
                   port:pkgconfig \

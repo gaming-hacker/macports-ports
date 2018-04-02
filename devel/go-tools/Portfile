@@ -14,7 +14,7 @@ description         Various packages and tools that support the Go programming l
 long_description    $description
 
 checksums           rmd160  b2203b0bed438f009cfee25f303ed550ecfd2ac5 \
-                    sha256  db2d204f1a117436e5bbc47186978f1c342d25ddc1eebb4c7ef395e0e5bf4417
+sha256  db2d204f1a117436e5bbc47186978f1c342d25ddc1eebb4c7ef395e0e5bf4417
 		    
 depends_build	    port:go
 

@@ -14,6 +14,6 @@ long_description	This package provides Div::Div and Tofu. \
 homepage		http://www2a.biglobe.ne.jp/~seki/ruby/div.en.html
 master_sites	http://www2a.biglobe.ne.jp/~seki/ruby/
 checksums		md5 f68491c21642ab0cfb06eaf5ab6b0700 \
-				rmd160 60c8fcc6675feaf93546f091adc64c103a8ea006 \
-				sha1 22b4517c5101f522b0b801be80220da42423a94a
+rmd160 60c8fcc6675feaf93546f091adc64c103a8ea006 \
+sha1 22b4517c5101f522b0b801be80220da42423a94a
 

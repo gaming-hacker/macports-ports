@@ -26,7 +26,7 @@ master_sites        https://releases.hashicorp.com/${name}/${version}
 distname            ${name}_${version}_darwin_amd64
 
 checksums           rmd160 f819d5f50e93550c21b704f32da17c534442cbc9 \
-                    sha256 0af78baf9b1a249544cc0b17d6b7abb32cc513a554d1f7dcc85c873e2af93586 \
+sha256 0af78baf9b1a249544cc0b17d6b7abb32cc513a554d1f7dcc85c873e2af93586 \
 size   17738450
 
 use_configure       no

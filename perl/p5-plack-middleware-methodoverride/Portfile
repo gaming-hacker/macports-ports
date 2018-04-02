@@ -15,7 +15,7 @@ description         Override REST methods to Plack apps via POST
 long_description    ${description}
 
 checksums           rmd160  2868e773ea5ef1b366d5d2752e941619622d6a01 \
-                    sha256  2b4a6e67006f97a2b4cf7980900f6a8ababb1cf97d6597319f9897ada3c555bc
+sha256  2b4a6e67006f97a2b4cf7980900f6a8ababb1cf97d6597319f9897ada3c555bc
 
 if {${perl5.major} != ""} {
     depends_build-append \

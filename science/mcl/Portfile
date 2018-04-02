@@ -15,7 +15,7 @@ platforms       darwin
 homepage        http://micans.org/mcl/
 master_sites    http://micans.org/mcl/src/
 checksums       rmd160 063e6415a0d23dcdb2fa8663fe62a95ec4f67f5d \
-                sha256 b5786897a8a8ca119eb355a5630806a4da72ea84243dba85b19a86f14757b497
+sha256 b5786897a8a8ca119eb355a5630806a4da72ea84243dba85b19a86f14757b497
 
 patchfiles      patch-src-impala-edge.h.diff
 

@@ -25,7 +25,7 @@ depends_build       port:ocaml-findlib
 depends_lib         port:ocaml
 
 checksums           rmd160  07a2621d5bef6c6509b80d7385393fbcded5139c \
-                    sha256  887aaea9191870bc0f37f945c02ec4c90497d949cd4dedc3d565c3fbec7ad04e
+sha256  887aaea9191870bc0f37f945c02ec4c90497d949cd4dedc3d565c3fbec7ad04e
 
 use_configure       no
 

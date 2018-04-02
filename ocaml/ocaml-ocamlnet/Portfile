@@ -22,7 +22,7 @@ master_sites        http://download.camlcity.org/download/
 distname            ocamlnet-${version}
 
 checksums           rmd160  66a814b7167de880f2dcaaf8ff9c1f1fd3600a49 \
-                    sha256  d3b030715fe2c5f395ff9c08f0a8d3baa8830161300ba29e5aa8fabb92b182c1
+sha256  d3b030715fe2c5f395ff9c08f0a8d3baa8830161300ba29e5aa8fabb92b182c1
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

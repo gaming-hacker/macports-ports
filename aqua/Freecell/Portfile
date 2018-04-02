@@ -19,8 +19,8 @@ master_sites            macports
 use_bzip2               yes
 
 checksums               md5 05c41aa87c3a6c390f83c12db7c4ff3d \
-                        sha1 2e609fe0548f44a316f77f15db39581aad7a587f \
-                        rmd160 0dbb3cbb23730654244091f4683c51a590a373ab
+sha1 2e609fe0548f44a316f77f15db39581aad7a587f \
+rmd160 0dbb3cbb23730654244091f4683c51a590a373ab
 
 post-patch {
     copy ${filespath}/Info-Freecell.plist ${worksrcpath}

@@ -22,7 +22,7 @@ homepage            https://filezilla-project.org/
 master_sites        sourceforge:project/filezilla/FileZilla_Client/${version}
 
 checksums           rmd160  43ceb95ce8239faec8fb9cc4bc7034dd4979ddbd \
-                    sha256  14c568b7e3331b8ae6d2371aeb4f4b43fbf97f057c0af9d75165d0d8d0d2dee5
+sha256  14c568b7e3331b8ae6d2371aeb4f4b43fbf97f057c0af9d75165d0d8d0d2dee5
 
 # wxWidgets-3.0 with support for C++11 on < 10.9
 wxWidgets.use       wxWidgets-3.0-cxx11

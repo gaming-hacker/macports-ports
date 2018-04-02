@@ -25,7 +25,7 @@ master_sites    ${homepage}release/
 distname        ${my_name}-${version}
 
 checksums       rmd160 d4802a090cb4a24eeb0c8ce5690802f596d394c3 \
-                sha256 d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00
+sha256 d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00
 
 minimum_xcodeversions {8 2.4.1}
 

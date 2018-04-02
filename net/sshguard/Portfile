@@ -20,7 +20,7 @@ long_description    Sshguard monitors servers from their logging activity. When 
 homepage            http://www.sshguard.net/
 
 checksums           rmd160  0d9e9f80c52d3d9cdce1191c70e879c19bfe3af5 \
-                    sha256  76a2c6f365e417b1ae1dfc12fd20ac2b7e4d428cab0764eeebac45786840ea6e
+sha256  76a2c6f365e417b1ae1dfc12fd20ac2b7e4d428cab0764eeebac45786840ea6e
 
 use_autoreconf      yes
 

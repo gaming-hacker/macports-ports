@@ -15,7 +15,7 @@ description         Simple Ruby Version Management
 long_description    ${description}
 
 checksums           rmd160  b862f8239984dbb24cf231d3c9d8bdbf03716ff9 \
-                    sha256  12005661df6fece43229d85838a00b08efc762545d9922f6a0449489ecd36ff8
+sha256  12005661df6fece43229d85838a00b08efc762545d9922f6a0449489ecd36ff8
 
 patchfiles          patch-libexec-rbenv-init.diff
 use_configure       no

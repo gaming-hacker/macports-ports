@@ -24,8 +24,8 @@ master_sites            gnu:smalltalk
 distname                smalltalk-${version}
 
 checksums               sha1    9b1602bf29d1483d9200d83419dc3cd0fc0d397b \
-                        rmd160  cc9a593c1773ba66f2f999b1369944eebd722ef9 \
-                        sha256  af964929ba81d133c1fe4a9479fad8c8e21a9449bc2c0b2c48b1e51c8ee43eed \
+rmd160  cc9a593c1773ba66f2f999b1369944eebd722ef9 \
+sha256  af964929ba81d133c1fe4a9479fad8c8e21a9449bc2c0b2c48b1e51c8ee43eed \
 size    5282705
 
 depends_build           port:zip \

@@ -17,6 +17,6 @@ long_description    NEXT.pm adds a pseudoclass named NEXT to any program \
 platforms           darwin
 
 checksums           rmd160  cbb0d855999f9341a2f5795f874e7be73bee219d \
-                    sha256  66598f84060a67dc4d554f8fd684da7942714ad2d37443aff469d761a24eff82
+sha256  66598f84060a67dc4d554f8fd684da7942714ad2d37443aff469d761a24eff82
 
 supported_archs     noarch

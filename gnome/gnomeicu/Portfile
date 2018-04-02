@@ -26,7 +26,7 @@ master_sites            sourceforge
 use_bzip2               yes
 
 checksums               rmd160  5afa16342127b361c38beb55c26b8c2d241c9b6c \
-                        sha256  abbc21cf1e03892d46f03d2feb3e8576f591b71b67f09fc8445cd4b08ca6a90c
+sha256  abbc21cf1e03892d46f03d2feb3e8576f591b71b67f09fc8445cd4b08ca6a90c
 
 depends_build           port:intltool \
                         port:pkgconfig

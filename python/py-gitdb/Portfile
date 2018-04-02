@@ -17,7 +17,7 @@ python.versions 27 36
 python.default_version 27
 
 checksums           rmd160  fbb34a973d62c9f286dc9f994921c3abd16ccb30 \
-                    sha256  0dd221a3e1f94099505e0c38219fb6f2641fc406fbc15c734a0203ff6aaf1c6b
+sha256  0dd221a3e1f94099505e0c38219fb6f2641fc406fbc15c734a0203ff6aaf1c6b
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

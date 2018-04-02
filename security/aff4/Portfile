@@ -17,7 +17,7 @@ long_description    The Advanced Forensics File Format 4 (AFF4) is an open sourc
                     format used for the storage of digital evidence and data.
 
 checksums           rmd160  08295532a5abaa4634e40913af5cf8ed0786f3bf \
-                    sha256  9cf9eebd7146191d59feeac182cc00133921d074702d2d5683895ff0ce0c79bf \
+sha256  9cf9eebd7146191d59feeac182cc00133921d074702d2d5683895ff0ce0c79bf \
 size    667085
 
 depends_lib-append  port:ossp-uuid \

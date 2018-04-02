@@ -18,7 +18,7 @@ platforms           darwin
 master_sites        kde:stable/${version}/src/
 use_xz              yes
 checksums           rmd160  217854ce2004ccf70e0c76b99095a9b4abb96d24 \
-                    sha256  d7dd97ad5ee005fa039696d88ce21a6ede2b5d795001f1d023899f5a848b6e94
+sha256  d7dd97ad5ee005fa039696d88ce21a6ede2b5d795001f1d023899f5a848b6e94
 
 depends_lib-append  port:kdelibs4 \
                     port:libcanberra \

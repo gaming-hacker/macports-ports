@@ -24,7 +24,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  5cf2f6363e89b378be96463dea0e9214fbdd708e \
-                    sha256  545dedd3aaaa355148093c5609f0229aeb121b4852995c2accfa64fe3e0e55cd
+sha256  545dedd3aaaa355148093c5609f0229aeb121b4852995c2accfa64fe3e0e55cd
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-jupyter_client \

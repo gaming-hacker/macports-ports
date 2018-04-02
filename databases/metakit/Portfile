@@ -20,7 +20,7 @@ long_description    Metakit is an efficient embedded database library with a \
 homepage            http://equi4.com/metakit/
 
 checksums           rmd160  822e134600de16f62f5aaba30b33246c964c6e2e \
-                    sha256  09ea3802ab7382d90b6fc67e3607f87194951d91c24444ab1b5eba267d3b9c00
+sha256  09ea3802ab7382d90b6fc67e3607f87194951d91c24444ab1b5eba267d3b9c00
 
 depends_lib         port:tcl
 

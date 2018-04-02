@@ -12,4 +12,4 @@ description         PEAR File_CSV_DataSource package
 long_description    ${description}
 
 checksums           rmd160  676508242170af97905314323b37d122c91d5842 \
-                    sha256  c1372cbaba64af5ede2767cbb50486d6ef520f842327840642453239cde66104
+sha256  c1372cbaba64af5ede2767cbb50486d6ef520f842327840642453239cde66104

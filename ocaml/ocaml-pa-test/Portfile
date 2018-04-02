@@ -17,7 +17,7 @@ long_description    ${description}
 homepage            https://ocaml.janestreet.com/code
 
 checksums           rmd160  308bfadb95989715909cf19def2d307d47448612 \
-                    sha256  9fb585b7313ee9c6af38d94f1b6ee970a0643ef7f676f4812c18c077dec2b4aa
+sha256  9fb585b7313ee9c6af38d94f1b6ee970a0643ef7f676f4812c18c077dec2b4aa
 
 depends_lib         port:ocaml port:ocaml-findlib port:ocaml-type-conv port:ocaml-sexplib port:ocaml-core-kernel
 

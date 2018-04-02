@@ -20,7 +20,7 @@ long_description    MacOSX::File is a collection of Perl modules that \
                     SetFile without calling these binaries.
 
 checksums           rmd160  a7e06d8126cff447cf7f3a422138fa7f6d140a36 \
-                    sha256  0a5a0b5f52446d305f590508e29f59fca90609663a8f4581cb2694165438e903
+sha256  0a5a0b5f52446d305f590508e29f59fca90609663a8f4581cb2694165438e903
 
 platforms           darwin
 supported_archs     i386 ppc

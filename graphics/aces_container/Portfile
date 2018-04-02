@@ -17,7 +17,7 @@ long_description    \
 platforms           darwin
 
 checksums           rmd160  826ac26b8d325d228c36c9210b72d32c94cd3877 \
-                    sha256  71fbab6f87854aadc864b1cf814971a3ca8ddc4e9fcc18778d527308a60e7ede
+sha256  71fbab6f87854aadc864b1cf814971a3ca8ddc4e9fcc18778d527308a60e7ede
 
 # .pc file only installed if pkgconfig present
 depends_build-append port:pkgconfig

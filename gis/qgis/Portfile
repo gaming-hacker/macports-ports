@@ -25,7 +25,7 @@ license             GPL-2+
 homepage            http://www.qgis.org/
 
 checksums           rmd160  1b17a258c053e4114e2569e9465312c55dd0a566 \
-                    sha256  608f82ea128dabaeeba494da465edf4f69aad873d45b6fdbab8f6761de318cb2 \
+sha256  608f82ea128dabaeeba494da465edf4f69aad873d45b6fdbab8f6761de318cb2 \
 size    99355862
 
 depends_lib-append  port:libiconv \

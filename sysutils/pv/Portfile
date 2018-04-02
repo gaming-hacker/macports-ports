@@ -25,8 +25,8 @@ master_sites        http://www.ivarch.com/programs/sources/
 use_bzip2           yes
 
 checksums \
-    rmd160  0372ad902d2dfc8936f02d060e512cd62a766255 \
-    sha256  608ef935f7a377e1439c181c4fc188d247da10d51a19ef79bcdee5043b0973f1
+rmd160  0372ad902d2dfc8936f02d060e512cd62a766255 \
+sha256  608ef935f7a377e1439c181c4fc188d247da10d51a19ef79bcdee5043b0973f1
 
 configure.args      --mandir=${prefix}/share/man \
                     --infodir=${prefix}/share/info

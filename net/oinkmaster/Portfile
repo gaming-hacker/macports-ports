@@ -19,7 +19,7 @@ homepage            http://oinkmaster.sourceforge.net/
 master_sites        sourceforge:project/oinkmaster/oinkmaster/${version}/
 
 checksums           rmd160  a3292cfc2e6b175008a7172be5809ca6e2fc85b7 \
-                    sha256  3d52f0426aa7c81b122cef22b80d708d8bb8337537e48754a065804f46c46162
+sha256  3d52f0426aa7c81b122cef22b80d708d8bb8337537e48754a065804f46c46162
 
 depends_run         port:wget
 

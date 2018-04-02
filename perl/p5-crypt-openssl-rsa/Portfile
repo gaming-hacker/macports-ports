@@ -15,8 +15,8 @@ long_description    Crypt::OpenSSL::RSA provides for decryption, \
 
 platforms           darwin
 checksums           md5 86217a5036fc63779c30420b5fd84129 \
-                    sha1 9978e5fcac15ea691030181d2d12564fa3902e5e \
-                    rmd160 aff5d921deacc73f22351a96af4426c40d698caa
+sha1 9978e5fcac15ea691030181d2d12564fa3902e5e \
+rmd160 aff5d921deacc73f22351a96af4426c40d698caa
 
 if {${perl5.major} != ""} {
     depends_lib-append \

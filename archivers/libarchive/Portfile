@@ -18,7 +18,7 @@ platforms        darwin
 version          3.3.2
 revision         1
 checksums        rmd160  2a50a7ba2a213b0c0c251b20fdee23ebbd3703a5 \
-                 sha256  ed2dbd6954792b2c054ccf8ec4b330a54b85904a80cef477a1c74643ddafa0ce
+sha256  ed2dbd6954792b2c054ccf8ec4b330a54b85904a80cef477a1c74643ddafa0ce
 
 homepage         http://libarchive.org/
 master_sites     ${homepage}downloads/

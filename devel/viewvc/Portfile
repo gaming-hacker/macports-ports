@@ -24,7 +24,7 @@ license             BSD
 patchfiles          patch-viewvc-install.diff
 
 checksums           rmd160  8fcd1cb56542d80180dfb48389573cb28b927dfa \
-                    sha256  013afa8054d1f13f14e715d013c0137b4abe52e3bc330d8d45f9bb6ec93a316a
+sha256  013afa8054d1f13f14e715d013c0137b4abe52e3bc330d8d45f9bb6ec93a316a
 
 # Per website, this doesn't work with any python3
 depends_lib         port:python27

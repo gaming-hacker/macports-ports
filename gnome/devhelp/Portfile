@@ -20,7 +20,7 @@ default master_sites {gnome:sources/${name}/${branch}/}
 use_xz              yes
 
 checksums           rmd160  ac1b639cfdc5a675f5dfa4976673a6a7ca8a6850 \
-                    sha256  10bd468ae2188abd98af9ba7b81aced337d2206e9d843eb44520be5b00d77d8e
+sha256  10bd468ae2188abd98af9ba7b81aced337d2206e9d843eb44520be5b00d77d8e
 
 depends_build       port:pkgconfig
 
@@ -46,7 +46,7 @@ platform darwin {
         version                 3.8.2
         revision                5
         checksums               rmd160  8d855f485742a0bdc766591d36af09bdbea61801 \
-                                sha256  a245b53824c6f2ff89245ff807bb2140bde74951ea6f1d759a0fd0c6959ca9f7
+sha256  a245b53824c6f2ff89245ff807bb2140bde74951ea6f1d759a0fd0c6959ca9f7
 
         depends_build-append    port:intltool \
                                 port:autoconf \

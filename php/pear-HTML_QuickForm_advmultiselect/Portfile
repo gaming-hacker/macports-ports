@@ -12,7 +12,7 @@ description         PEAR HTML_QuickForm_advmultiselect package
 long_description    ${description}
 
 checksums           rmd160  81a4dbe34c762564dab658700d90841712c337c1 \
-                    sha256  5974a7146f30e66cbbec37b1bd820d1010c61a9c627fe6582929a8f6c9cb7ff6
+sha256  5974a7146f30e66cbbec37b1bd820d1010c61a9c627fe6582929a8f6c9cb7ff6
 
 depends_lib-append  port:pear-HTML_Common \
                     port:pear-HTML_QuickForm

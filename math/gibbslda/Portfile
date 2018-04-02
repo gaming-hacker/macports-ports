@@ -21,7 +21,7 @@ license             GPL-2+
 
 master_sites        sourceforge:/project/gibbslda/GibbsLDA%2B%2B/${version}
 checksums           rmd160  9a11c3ee3c9883ffb4a56d350b761864b493d378 \
-                    sha256  4ca7b51bd2f098534f2fdf82c3f861f5d8bf92e29a6b7fbdc50c3c2baeb070ae
+sha256  4ca7b51bd2f098534f2fdf82c3f861f5d8bf92e29a6b7fbdc50c3c2baeb070ae
 
 distname            GibbsLDA++-${version}
 

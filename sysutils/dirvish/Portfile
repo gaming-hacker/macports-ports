@@ -41,7 +41,7 @@ master_sites    ${homepage}
 dist_subdir     ${name}/${version}_1
 
 checksums       rmd160  7af67f7e04142da885a9ce3c5596e9960f192c39 \
-                sha256  6b7f29c3541448db3d317607bda3eb9bac9fb3c51f970611ffe27e9d63507dcd
+sha256  6b7f29c3541448db3d317607bda3eb9bac9fb3c51f970611ffe27e9d63507dcd
 
 extract.suffix  .tgz
 

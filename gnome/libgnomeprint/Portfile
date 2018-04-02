@@ -33,8 +33,8 @@ depends_lib         port:libart_lgpl \
 master_sites        gnome:sources/${name}/${branch}/
 use_bzip2           yes
 checksums           md5     63b05ffb5386e131487c6af30f4c56ac \
-                    sha1    cfb77148923b24b1651982a21b3cb55e312ff6d5 \
-                    rmd160  4f786ad61dc27177c350a5baa27cfc8b1140c32e
+sha1    cfb77148923b24b1651982a21b3cb55e312ff6d5 \
+rmd160  4f786ad61dc27177c350a5baa27cfc8b1140c32e
 
 # missing-stdio: https://bugzilla.gnome.org/show_bug.cgi?id=653388
 # patch-freetype-2.5.1: https://bugzilla.gnome.org/show_bug.cgi?id=719592

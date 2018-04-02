@@ -24,7 +24,7 @@ distname            tomcat-connectors-${version}-src
 master_sites        apache:tomcat/tomcat-connectors/jk
 
 checksums           rmd160  7e5f8d48405239076b9ce0dc21978369e36fcd7a \
-                    sha256  895e347c4dff74049a848603fb29958e6cf429ea0fc708d514b3a8958236705d
+sha256  895e347c4dff74049a848603fb29958e6cf429ea0fc708d514b3a8958236705d
 
 depends_build       path:apache2/bin/httpd:apache2
 worksrcdir          ${distname}/native

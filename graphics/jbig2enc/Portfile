@@ -23,7 +23,7 @@ long_description \
         * Compress multipage documents
 
 checksums           rmd160  dcc754653464f104564cf54da7f917a4e98d06ad \
-                    sha256  81ee5d6fad820080ab07c57c73cc1665a6997d182f8bbb0aec27cd0f2ee6d54f
+sha256  81ee5d6fad820080ab07c57c73cc1665a6997d182f8bbb0aec27cd0f2ee6d54f
 
 depends_lib         port:leptonica
 

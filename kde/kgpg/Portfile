@@ -18,7 +18,7 @@ master_sites        kde:stable/${version}/src
 use_xz              yes
 distname            ${name}-${version}
 checksums           rmd160  fa8227ddaa1396c4f085e67e297654b8e6bb95a1 \
-                    sha256  bc7d37a935c5b1bb6b0f32abc62635d17ac8fbadc2ed6cfd314af71aee2d0c46
+sha256  bc7d37a935c5b1bb6b0f32abc62635d17ac8fbadc2ed6cfd314af71aee2d0c46
 
 #Binaries do not link directly to openssl, nor use the ssl backend of kdelibs4,
 #nor links to libkimap or libmailtransport from kdepimlibs4

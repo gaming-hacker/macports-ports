@@ -22,7 +22,7 @@ homepage            https://code.google.com/p/liblouisxml/
 master_sites        googlecode
 
 checksums           sha1    b3f6a29c5bdde36aeaf18d349159c233e89c1f6c \
-                    rmd160  c0735e6b17861b81d6232687e93b8953c715db2f
+rmd160  c0735e6b17861b81d6232687e93b8953c715db2f
 
 depends_build       port:pkgconfig
 

@@ -26,8 +26,8 @@ long_description \
 #master_sites       pypi:S/Shapely
 
 checksums           md5     4846fc466221356fb6cd6e2eb6714b0f \
-                    rmd160  1acd9df39ac68c4aaf6e93f6fe84b43769222710 \
-                    sha256  03fb8d96671d9260d5029f89ce74afad6d50d4f313116b812519652be66093c3
+rmd160  1acd9df39ac68c4aaf6e93f6fe84b43769222710 \
+sha256  03fb8d96671d9260d5029f89ce74afad6d50d4f313116b812519652be66093c3
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:geos

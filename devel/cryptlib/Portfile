@@ -37,7 +37,7 @@ distname            cl[join [split $version .] ""]
 use_zip             yes
 
 checksums           rmd160  0c51232bba6eac582b16991f6d01518dc8cbf49f \
-                    sha256  aa461b57c703f987a649a3987feb10d088d440f42b3160ef36104058909fec3d \
+sha256  aa461b57c703f987a649a3987feb10d088d440f42b3160ef36104058909fec3d \
 size    5975092
 
 depends_lib         port:zlib

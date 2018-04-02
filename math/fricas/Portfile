@@ -29,9 +29,9 @@ use_bzip2           yes
 worksrcdir          ${name}-${version}
                 
 checksums           rmd160  1ab5c148f0684c946c3b0831a5fe01fc21bbe83a \
-                    sha256  798b123e61f3566e6b1b367c235f5b4599a9c737b938aa71f32d0aabb7db439d \
-                    md5     0d3af65758ce93b1cc52c2511e73e674 \
-                    sha1    8fc3e850a9890eac21cd9f391dd58000b3537067
+sha256  798b123e61f3566e6b1b367c235f5b4599a9c737b938aa71f32d0aabb7db439d \
+md5     0d3af65758ce93b1cc52c2511e73e674 \
+sha1    8fc3e850a9890eac21cd9f391dd58000b3537067
 
 configure.dir       ${workpath}/fricas-build
 configure.cmd       ${worksrcpath}/configure

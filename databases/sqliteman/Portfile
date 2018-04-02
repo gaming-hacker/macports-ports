@@ -21,7 +21,7 @@ homepage	        https://sourceforge.net/p/sqliteman/wiki/Home/
 master_sites        sourceforge:sqliteman
 
 checksums           rmd160 6aa1002c53f7204d2172e88c4a335670f9103135 \
-                    sha256 2f3281f67af464c114acd0a65f05b51672e9f5b39dd52bd2570157e8f274b10f
+sha256 2f3281f67af464c114acd0a65f05b51672e9f5b39dd52bd2570157e8f274b10f
 
 patchfiles          patch-litemanwindow.cpp.diff \
                     patch-cmake_modules_FindQScintilla.cmake.diff

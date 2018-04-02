@@ -23,7 +23,7 @@ long_description \
 master_sites	http://www.ipflow.utc.fr/dynamips
 distname	dynamips-${version}
 checksums	md5 0fe1875bb4e7e3624ca420dd75c85279 \
-		sha1 6f65a2e92f5d27aca9d8608369cb20c9539a8121
+sha1 6f65a2e92f5d27aca9d8608369cb20c9539a8121
 
 depends_lib	port:libelf \
 		port:libpcap

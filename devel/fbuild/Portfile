@@ -19,7 +19,7 @@ long_description    Fbuild is a cross platform multilanguage build \
 python.default_version  36
 
 checksums           rmd160  d7ec3e0e03e6406571492ea420f05f62f7171a8e \
-                    sha256  b43bc0ed127de6182b9d9b2bd09318a00051b2783b60b8e5f54fd4d8a84552e7
+sha256  b43bc0ed127de6182b9d9b2bd09318a00051b2783b60b8e5f54fd4d8a84552e7
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}

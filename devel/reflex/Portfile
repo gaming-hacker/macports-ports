@@ -24,7 +24,7 @@ distname            ${name}-${version_date}
 extract.suffix      .tgz
 
 checksums           rmd160  401bf437eb02175a90a7c1de198c69dd2c2230ff \
-                    sha256  aa36bb397ff717f09773fcaa80ba8b7c68a5b3b10c859d686c4daeb6518b6318
+sha256  aa36bb397ff717f09773fcaa80ba8b7c68a5b3b10c859d686c4daeb6518b6318
 
 test.run            yes
 test.target         bigcheck

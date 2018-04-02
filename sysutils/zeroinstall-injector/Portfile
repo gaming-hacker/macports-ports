@@ -21,8 +21,8 @@ master_sites	sourceforge
 master_sites.mirror_subdir	zero-install
 use_bzip2	yes
 checksums	md5 23e2adf699c52f8cdfbb7ad07d6c5568 \
-		sha1 eabe6d1284522be4a5c2675807646f247a33ffac \
-		rmd160 46ac65794f57146afed45582d4ff43f05ffe5bb9
+sha1 eabe6d1284522be4a5c2675807646f247a33ffac \
+rmd160 46ac65794f57146afed45582d4ff43f05ffe5bb9
 
 depends_lib	path:bin/gpg:gnupg2
 depends_run	bin:sudo:sudo

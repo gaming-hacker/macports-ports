@@ -17,7 +17,7 @@ master_sites        https://gstreamer.freedesktop.org/src/orc/
 use_xz              yes
 
 checksums           rmd160  08b3804a578a6925d12db09c431c217e582cbc45 \
-                    sha256  bfcd7c6563b05672386c4eedfc4c0d4a0a12b4b4775b74ec6deb88fc2bcd83ce
+sha256  bfcd7c6563b05672386c4eedfc4c0d4a0a12b4b4775b74ec6deb88fc2bcd83ce
 
 depends_build       port:coreutils
 

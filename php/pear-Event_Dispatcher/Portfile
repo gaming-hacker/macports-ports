@@ -13,4 +13,4 @@ description         PEAR Event_Dispatcher package
 long_description    ${description}
 
 checksums           rmd160  505c6c953f7c46d48deb9b2ebb43b3f4a76c7d49 \
-                    sha256  4cdf79d32238c9d1fe1f232ecde9232bcf33b9cc8609607a9141f488d2816be4
+sha256  4cdf79d32238c9d1fe1f232ecde9232bcf33b9cc8609607a9141f488d2816be4

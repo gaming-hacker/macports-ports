@@ -19,5 +19,5 @@ master_sites        sourceforge:opennms
 depends_lib         port:rrdtool
 
 checksums           md5     75f9e7566bfde33c77dae16da55e5b32 \
-                    sha1    01dba861943120a811004e40078531d950bfee8b \
-                    rmd160  0b2650bec08418b3ecc328d000d6d6413add9b96
+sha1    01dba861943120a811004e40078531d950bfee8b \
+rmd160  0b2650bec08418b3ecc328d000d6d6413add9b96

@@ -24,7 +24,7 @@ master_sites        pypi:H/HeapDict
 distname            HeapDict-${version}
 
 checksums           rmd160  fd1f3c6947583600edf6666b7c026696a1d9b7f7 \
-                    sha256  40c9e3680616cfdf942f77429a3a9e0a76f31ce965d62f4ffbe63a83a5ef1b5a
+sha256  40c9e3680616cfdf942f77429a3a9e0a76f31ce965d62f4ffbe63a83a5ef1b5a
 
 if {${name} ne ${subport}} {
     depends_build-append \

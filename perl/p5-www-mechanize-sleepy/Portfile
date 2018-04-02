@@ -22,7 +22,7 @@ long_description    Sometimes when testing the behavior of a webserver it is imp
                     WWW::Mechanize.
 
 checksums           rmd160  4f3a6936ad9dbf267135cb752a54f0f2b4248869 \
-                    sha256  490c4ffca395fb523633d9981472d91f5fd2aa671dbbbab0de509c910b7e13bf
+sha256  490c4ffca395fb523633d9981472d91f5fd2aa671dbbbab0de509c910b7e13bf
 
 if {$subport != $name} {
     depends_lib-append  port:p${perl5.major}-www-mechanize

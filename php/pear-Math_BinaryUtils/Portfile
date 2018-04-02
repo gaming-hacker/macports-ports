@@ -12,4 +12,4 @@ description         PEAR Math_BinaryUtils package
 long_description    ${description}
 
 checksums           rmd160  d86e087dfb1e47de669133dd51cdf13ab9fe3cc9 \
-                    sha256  490ab7ab8358d682f748aaa1362285401b83af2289cf0b65d7b4c7182500aa57
+sha256  490ab7ab8358d682f748aaa1362285401b83af2289cf0b65d7b4c7182500aa57

@@ -26,7 +26,7 @@ master_sites            ftp://ftp.inet.no/pub/socks/ \
                         http://dbg.download.sourcemage.org/mirror/
 
 checksums               rmd160  8d48b6efa0d551215943c31dc140a0dccac950b9 \
-                        sha256  baa25750633a7f9f37467ee43afdf7a95c80274394eddd7dcd4e1542aa75caad
+sha256  baa25750633a7f9f37467ee43afdf7a95c80274394eddd7dcd4e1542aa75caad
 
 configure.args          --mandir=${prefix}/share/man \
                         --without-gssapi \

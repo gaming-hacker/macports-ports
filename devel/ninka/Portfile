@@ -22,7 +22,7 @@ use_bzip2           yes
 supported_archs     noarch
 
 checksums           rmd160  84925c82173d54e036b76a6639d018055a033b5c \
-                    sha256  fb9c17bcea2c1c2f77ae0adfe1a95adc7778c55041249fba89f2ad5fb75374fb
+sha256  fb9c17bcea2c1c2f77ae0adfe1a95adc7778c55041249fba89f2ad5fb75374fb
 
 post-extract {
     # Fix incorrect permissions in distfile, and remove backup files that

@@ -19,8 +19,8 @@ homepage            https://www.gnu.org/software/commoncpp/
 master_sites        gnu:commonc++
 
 checksums           md5     4804b184e609154ba2bc0aa9f61dc6ef \
-                    sha1    0d5cec0493944b922f0f44618facec9f236862fb \
-                    rmd160  af613320ec9572d590127f854dc40a9b5240ae16
+sha1    0d5cec0493944b922f0f44618facec9f236862fb \
+rmd160  af613320ec9572d590127f854dc40a9b5240ae16
 
 depends_lib         port:libxml2
 

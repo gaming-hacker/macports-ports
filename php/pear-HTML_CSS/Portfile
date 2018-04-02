@@ -13,6 +13,6 @@ description         PEAR HTML_CSS package
 long_description    ${description}
 
 checksums           rmd160  7152b0947f8e40533d1ccec572746769156707fd \
-                    sha256  661bf9b6e06a70624288403f4a462d872ba4abca22b5c97df62ed0240a1bc782
+sha256  661bf9b6e06a70624288403f4a462d872ba4abca22b5c97df62ed0240a1bc782
 
 depends_lib-append  port:pear-HTML_Common

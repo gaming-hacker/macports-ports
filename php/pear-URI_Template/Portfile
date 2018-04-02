@@ -12,4 +12,4 @@ description         PEAR URI_Template package
 long_description    ${description}
 
 checksums           rmd160  5e63fad452716701c6250685963369897b5559b7 \
-                    sha256  398bea9036e9a93235a642df56bc4f22efb92b09269cd1e8a8730ed25a31b4ff
+sha256  398bea9036e9a93235a642df56bc4f22efb92b09269cd1e8a8730ed25a31b4ff

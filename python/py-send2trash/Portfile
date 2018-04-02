@@ -24,7 +24,7 @@ master_sites        pypi:S/Send2Trash
 distname            Send2Trash-${version}
 
 checksums           rmd160  c21f068e3dc39fbccd5b0e636780257ae5a0205d \
-                    sha256  60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2
+sha256  60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2
 
 if {${name} ne ${subport}} {
     depends_build-append \

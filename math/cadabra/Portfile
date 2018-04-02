@@ -24,7 +24,7 @@ homepage            http://cadabra.phi-sci.com/
 master_sites        ${homepage}
 
 checksums           rmd160  52686bdd7a635a6db30a91add951720f14c1ddc6 \
-                    sha256  075dad3a1a9fd8774473f6d28f036f65629a286304c02f0ac1e10be3cb2ebd12
+sha256  075dad3a1a9fd8774473f6d28f036f65629a286304c02f0ac1e10be3cb2ebd12
 
 depends_build       port:pkgconfig \
                     port:pcrexx

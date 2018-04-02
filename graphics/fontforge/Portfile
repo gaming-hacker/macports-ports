@@ -36,17 +36,17 @@ distfiles-append \
                 cidmaps.tgz:cidmaps \
                 ${docdistfile}:docs
 checksums       ${distname}${extract.suffix} \
-                rmd160  351af6022d1c1c80e61788b699ff882bcde1b55f \
-                sha256  e5cb9e9e64a99d1dfc549950741eb9b44c3162a4c62f71053905c1f2d024295f \
+rmd160  351af6022d1c1c80e61788b699ff882bcde1b55f \
+sha256  e5cb9e9e64a99d1dfc549950741eb9b44c3162a4c62f71053905c1f2d024295f \
                 cidmaps.tgz \
-                rmd160  d194355e61813d31fe4813bdf10a62d66a9f6d04 \
-                sha256  1bf9c7eb8835e6ed94e62cb49f1141bc046c562849e52e6c3c7f1d7cfc95c7b3 \
+rmd160  d194355e61813d31fe4813bdf10a62d66a9f6d04 \
+sha256  1bf9c7eb8835e6ed94e62cb49f1141bc046c562849e52e6c3c7f1d7cfc95c7b3 \
                 ${docdistfile} \
-                rmd160  8afd7d4eb9d590c989f16047e3ff4c926d1eab31 \
-                sha256  a938c08e66c1ff1e853e0833fbde6cb5d92d900f66b1958b6769f5b7d32ad1e7 \
+rmd160  8afd7d4eb9d590c989f16047e3ff4c926d1eab31 \
+sha256  a938c08e66c1ff1e853e0833fbde6cb5d92d900f66b1958b6769f5b7d32ad1e7 \
                 freetype-${ftversion}${extract.suffix} \
-                rmd160  9da7fcde9c42f81c399201d055d85109b2ae7814 \
-                sha256  0c8e242c33c45928de560d7d595db06feb41d1b22167e37260ceabe72f9e992f
+rmd160  9da7fcde9c42f81c399201d055d85109b2ae7814 \
+sha256  0c8e242c33c45928de560d7d595db06feb41d1b22167e37260ceabe72f9e992f
 
 worksrcdir      ${name}-${version}
 extract.only    ${distname}${extract.suffix}

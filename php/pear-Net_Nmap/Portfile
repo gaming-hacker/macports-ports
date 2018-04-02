@@ -12,6 +12,6 @@ description         PEAR Net_Nmap package
 long_description    ${description}
 
 checksums           rmd160  f13e09ef84a180e51c03b235997500ac9ef888a5 \
-                    sha256  0f4efa7784e121d9d508ed4ecf545287e1bdbb9c454a8f31b9712ad0a8995197
+sha256  0f4efa7784e121d9d508ed4ecf545287e1bdbb9c454a8f31b9712ad0a8995197
 
 depends_lib-append  port:pear-XML_Parser

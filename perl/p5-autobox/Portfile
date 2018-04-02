@@ -17,7 +17,7 @@ long_description    The autobox pragma allows methods to be called on \
 platforms           darwin
 
 checksums           rmd160  d56d501e03907126411ca9d8132d5de2719a679e \
-                    sha256  d0b8d0f27f3d1c1e8ef47f806fa06b9c229c3ca84057004fedc35dbbc0341140
+sha256  d0b8d0f27f3d1c1e8ef47f806fa06b9c229c3ca84057004fedc35dbbc0341140
 
 if {${perl5.major} != ""} {
     depends_lib-append \

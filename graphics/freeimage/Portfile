@@ -27,7 +27,7 @@ use_zip             yes
 worksrcdir          FreeImage
 
 checksums           rmd160  c4e87846098327ee346c49ae81b6036f6d9ab36d \
-                    sha256  fbfc65e39b3d4e2cb108c4ffa8c41fd02c07d4d436c594fff8dab1a6d5297f89
+sha256  fbfc65e39b3d4e2cb108c4ffa8c41fd02c07d4d436c594fff8dab1a6d5297f89
 
 post-patch {
     # Libraries extension is ".dylib" on Darwin, not ".so"

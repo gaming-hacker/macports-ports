@@ -45,23 +45,23 @@ extract.only        v${version}.zip \
                     ${nbreader_hash}.zip
 
 checksums           v${version}.zip \
-                    rmd160  e1b1eae2e314510b852ee86f0152fa541b5b4af9 \
-                    sha256  00f4a57cd4140999443833b6bbf446a21ec5660613af5ce101d651a265152051 \
+rmd160  e1b1eae2e314510b852ee86f0152fa541b5b4af9 \
+sha256  00f4a57cd4140999443833b6bbf446a21ec5660613af5ce101d651a265152051 \
                     v${flags_version}.zip \
-                    rmd160  0797467ba23c4c28ff8b13aa40b52bc8bad852a0 \
-                    sha256  be1356988abd183851b754a66a4171e370b952bee2dd3de5fc33f0370e534703 \
+rmd160  0797467ba23c4c28ff8b13aa40b52bc8bad852a0 \
+sha256  be1356988abd183851b754a66a4171e370b952bee2dd3de5fc33f0370e534703 \
                     ${nbreader_hash}.zip \
-                    rmd160  6bd004bdca7944c9ff523e479bd7814bc87aff34 \
-                    sha256  2f9c0c3b45bf04cb5ebc92b146d022b6a6e437258fc4d9936dfcd1a115af3578 \
+rmd160  6bd004bdca7944c9ff523e479bd7814bc87aff34 \
+sha256  2f9c0c3b45bf04cb5ebc92b146d022b6a6e437258fc4d9936dfcd1a115af3578 \
                     terminal.go \
-                    rmd160  ad3f5da181a2fa618e104b1deb79a869a9164cb2 \
-                    sha256  b35ec763e014dcc944989ff5ddea401c754bcc27c011f71012a2454eaca1b11a \
+rmd160  ad3f5da181a2fa618e104b1deb79a869a9164cb2 \
+sha256  b35ec763e014dcc944989ff5ddea401c754bcc27c011f71012a2454eaca1b11a \
                     util_bsd.go \
-                    rmd160  9a75a1dc87ad32232627302e266215cba35766a4 \
-                    sha256  fc3b7bafbded5b824b3b9c5d4c4d6730958cbeb9ae9cd2dde2132d670d2cc3f4 \
+rmd160  9a75a1dc87ad32232627302e266215cba35766a4 \
+sha256  fc3b7bafbded5b824b3b9c5d4c4d6730958cbeb9ae9cd2dde2132d670d2cc3f4 \
                     util.go \
-                    rmd160  6f17dbf32422a7e43d9182137c0ebc2bc9704ef5 \
-                    sha256  c0506e16f0f7ec105437f35f2a7fb6c3b71a28f95102f3b5dec0d22f040cb727
+rmd160  6f17dbf32422a7e43d9182137c0ebc2bc9704ef5 \
+sha256  c0506e16f0f7ec105437f35f2a7fb6c3b71a28f95102f3b5dec0d22f040cb727
 
 depends_build       port:go
 use_configure       no

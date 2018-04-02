@@ -14,8 +14,8 @@ platforms           darwin
 master_sites        sourceforge:tilp
 
 checksums           md5     eaea086a5041bb970977de7e65fd9bfa \
-                    sha1    61d26fb1ad4f76df1f8d46369692792da7f6e5a3 \
-                    rmd160  9bfd4ec998679e06b56b94901fce1ef765aa749e
+sha1    61d26fb1ad4f76df1f8d46369692792da7f6e5a3 \
+rmd160  9bfd4ec998679e06b56b94901fce1ef765aa749e
 
 use_bzip2           yes
 

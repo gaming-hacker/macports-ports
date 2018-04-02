@@ -17,7 +17,7 @@ master_sites        sourceforge:project/fsp/fsplib/${version}
 platforms           darwin
 
 checksums           rmd160  0e3c6aae5a0a1e4dcd5c85fb8963e1eb8ce0c247 \
-                    sha256  43f5d4e1748e8984591b76343014c91e82ff088bfa36dddf3c5940239b9f7c8f
+sha256  43f5d4e1748e8984591b76343014c91e82ff088bfa36dddf3c5940239b9f7c8f
 
 depends_build       port:scons
 

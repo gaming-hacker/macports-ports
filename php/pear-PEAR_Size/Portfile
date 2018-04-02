@@ -12,7 +12,7 @@ description         PEAR PEAR_Size package
 long_description    ${description}
 
 checksums           rmd160  72f8b9345001651fa45ebaf62e2107008c9c1b2c \
-                    sha256  6e23d99dbf2773efd7bbdfdd2bc6dd7983c1a4edebb9896ac9ed7c5db4dd7107
+sha256  6e23d99dbf2773efd7bbdfdd2bc6dd7983c1a4edebb9896ac9ed7c5db4dd7107
 
 depends_lib-append  port:pear-Console_Getargs \
                     port:pear-Console_Table \

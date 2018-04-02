@@ -24,7 +24,7 @@ master_sites        sourceforge
 distname            ots-${version}
 
 checksums           rmd160  e413267fc81ab9bf3da5f3787757ce20c7e0304e \
-                    sha256  ea908d22256166d1200fef55a82dd3ea8e096a249eaaf0b926f3577f1a63e137
+sha256  ea908d22256166d1200fef55a82dd3ea8e096a249eaaf0b926f3577f1a63e137
 
 patchfiles          patch-configure.in.diff
 

@@ -13,4 +13,4 @@ description         PEAR HTML_BBCodeParser package
 long_description    ${description}
 
 checksums           rmd160  ccd839d0150f2feb99f6c41bb928ef2f7f456a82 \
-                    sha256  a3b211b83b681b9b572f7b22241ae9103d99e87cce59102e66903a11878eea3e
+sha256  a3b211b83b681b9b572f7b22241ae9103d99e87cce59102e66903a11878eea3e

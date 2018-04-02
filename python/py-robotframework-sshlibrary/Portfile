@@ -23,7 +23,7 @@ master_sites        pypi:r/robotframework-sshlibrary/
 distname            ${internal_name}-${version}
 
 checksums           rmd160  525b46a58983127c55f2cb667a52ae4893053683 \
-                    sha256  ab1daa49d38934ad57433500c1e177b4f3b3a16f5218a687a6061014343dabcb
+sha256  ab1daa49d38934ad57433500c1e177b4f3b3a16f5218a687a6061014343dabcb
 
 if {${name} ne ${subport}} {
     depends_lib-append	port:py${python.version}-robotframework \

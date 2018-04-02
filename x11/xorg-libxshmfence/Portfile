@@ -15,8 +15,8 @@ master_sites    xorg:individual/lib/
 distname    libxshmfence-${version}
 
 checksums           sha1    a2ebe90e5595afca4db93a4359732af43b2b8c69 \
-                    rmd160  fe4b42d4ee01a993cd653d8f10334069bcc4791c \
-                    sha256  d21b2d1fd78c1efbe1f2c16dae1cb23f8fd231dcf891465b8debe636a9054b0c
+rmd160  fe4b42d4ee01a993cd653d8f10334069bcc4791c \
+sha256  d21b2d1fd78c1efbe1f2c16dae1cb23f8fd231dcf891465b8debe636a9054b0c
 
 use_bzip2   yes
 use_parallel_build      yes

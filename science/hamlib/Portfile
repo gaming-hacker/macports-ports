@@ -18,8 +18,8 @@ homepage            http://hamlib.org/
 master_sites        sourceforge
 
 checksums           md5     451acb9f727ed706ae2f59ee3f0e03c7 \
-                    rmd160  1636e379e35786eb8d2385679fdc387d60817e4c \
-                    sha256  3fec97ea326d02aa8f35834c4af34194a3f544e6212f391397d788c566b44e32
+rmd160  1636e379e35786eb8d2385679fdc387d60817e4c \
+sha256  3fec97ea326d02aa8f35834c4af34194a3f544e6212f391397d788c566b44e32
 
 depends_build       port:pkgconfig
 

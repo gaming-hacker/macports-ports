@@ -18,7 +18,7 @@ homepage            http://mathgl.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  7af75705062a6b9a7c5c46bf95a4cb93e900089b \
-                    sha256  e0334b2454a95642c6925eac68f5dcda2bdff3cc42d63707ee2657d9c1279f35
+sha256  e0334b2454a95642c6925eac68f5dcda2bdff3cc42d63707ee2657d9c1279f35
 
 depends_lib-append  path:lib/libfltk.dylib:fltk \
                     port:giflib \

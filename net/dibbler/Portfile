@@ -20,7 +20,7 @@ homepage            http://klub.com.pl/dhcpv6/
 
 master_sites        http://klub.com.pl/dhcpv6/dibbler/
 checksums           rmd160  5f8a70f46e9497b9cceab6cf04a2e05259ab075e \
-                    sha256  4d29b5436cd97e5e5c7afb2278ec608bf5adb9c451e9628066f2e943164d3f74
+sha256  4d29b5436cd97e5e5c7afb2278ec608bf5adb9c451e9628066f2e943164d3f74
 
 patch.pre_args      -p1
 patchfiles          0-enable-prefix.patch \

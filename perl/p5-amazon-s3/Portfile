@@ -14,7 +14,7 @@ description         A portable client library for working with and \
 long_description    ${description}
 
 checksums           rmd160 19e74c57191bed5ff7c3367b65f3b0961fdea05a \
-                    sha256 77c313d9517026cdccd5ff4e19d302cd7aa2df1f3870e31f0e9f43f69628d908
+sha256 77c313d9517026cdccd5ff4e19d302cd7aa2df1f3870e31f0e9f43f69628d908
 
 platforms           darwin
 supported_archs     noarch

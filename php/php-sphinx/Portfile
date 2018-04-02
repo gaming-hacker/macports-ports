@@ -18,7 +18,7 @@ description             PHP bindings for Sphinx full-text search
 long_description        ${description}
 
 checksums               rmd160  25a917d05086274a83e6b89a40194f703ae64120 \
-                        sha256  d9718365da38f9641917c6ef30f356cc5b807549efd154a033d3e8f9145d618d
+sha256  d9718365da38f9641917c6ef30f356cc5b807549efd154a033d3e8f9145d618d
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:libsphinxclient

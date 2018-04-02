@@ -15,7 +15,7 @@ long_description    This module contains rules for converting HTML into PmWiki m
                     See HTML::WikiConverter for additional usage details.
 
 checksums           rmd160  72c12614eb2b04d74daa395c57dfd3fd66f679a5 \
-                    sha256  01e8c4deffcb7a1e6ce6d476d6b52d316f62539825d6c961784c01ab93ee856d
+sha256  01e8c4deffcb7a1e6ce6d476d6b52d316f62539825d6c961784c01ab93ee856d
 
 platforms           darwin
 supported_archs     noarch

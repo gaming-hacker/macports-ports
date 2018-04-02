@@ -15,7 +15,7 @@ long_description    git-cvs is a tool to incrementally import changesets \
                     from CVS into a Git repository with stable commit hashes.
 
 checksums           rmd160  dcebce5de9d033f49d489677c72d4f7a18ce4540 \
-                    sha256  90a65d396f4410b55daeef8df69100cc9922693d3ba8045b6f48dc5b7a98c696
+sha256  90a65d396f4410b55daeef8df69100cc9922693d3ba8045b6f48dc5b7a98c696
 
 patchfiles          patch-setup.py.diff
 

@@ -14,7 +14,7 @@ platforms           darwin
 master_sites        http://tdc-www.harvard.edu/software/${name}/
 
 checksums           sha256  92aceebb7c4409706bd1d30abe020ab0516a2bf507719e60aede6498ce5e4b7d \
-                    rmd160  0c28945619214b716f36eb4c6a7ebc3a3f68b475
+rmd160  0c28945619214b716f36eb4c6a7ebc3a3f68b475
 
 use_configure       no
 

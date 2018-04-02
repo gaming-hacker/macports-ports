@@ -25,8 +25,8 @@ extract.cmd         tar
 extract.pre_args    -xf
 
 checksums           md5     64b246fb0a4ee47ae37e83d721b205df \
-                    sha1    3f0d95499bd33118bbcf86752a2d524eb2802fa7 \
-                    rmd160  6b03265d2b075e3f85b4c0e93c42bc05d010fc5e
+sha1    3f0d95499bd33118bbcf86752a2d524eb2802fa7 \
+rmd160  6b03265d2b075e3f85b4c0e93c42bc05d010fc5e
 
 depends_lib         port:libpcap
 

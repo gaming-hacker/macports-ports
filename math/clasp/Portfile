@@ -23,7 +23,7 @@ distname            ${name}-${version}-source
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  5b0e9c30e5742729cf84ae79785b202b3ff2aa40 \
-                    sha256  952d1dd7a0f79a846e0c09a4edc8a03b9bf2f9e33cb67a2ef371257d438910f3
+sha256  952d1dd7a0f79a846e0c09a4edc8a03b9bf2f9e33cb67a2ef371257d438910f3
 
 post-destroot {
     xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${name}

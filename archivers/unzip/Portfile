@@ -24,7 +24,7 @@ master_sites        sourceforge:infozip
 distname            ${name}[strsed $version g/\\.//]
 
 checksums           rmd160  48af66606e9472e45fbb94bc4e285da23d1b89ba \
-                    sha256  036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+sha256  036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
 
 # Add Debian patches
 patch.pre_args      -p1

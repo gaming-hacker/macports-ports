@@ -22,4 +22,4 @@ long_description    ${name} provides ${description}. \
                     taintedness of your data, in standard Test::More style.
 
 checksums           sha1    e128816a8a7eb0676e55ae82cc170ca3db50a601 \
-                    rmd160  20383bb673754569641e179bb2be45557ab71e61
+rmd160  20383bb673754569641e179bb2be45557ab71e61

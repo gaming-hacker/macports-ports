@@ -12,7 +12,7 @@ description         PEAR Structures_DataGrid_Renderer_HTMLTable package
 long_description    ${description}
 
 checksums           rmd160  6385d9b18659416f2bcc381bea51c9f8cc8011ae \
-                    sha256  f663caf35fb380af507fa0b7ac3dccd1b31dc0356c7ecf8517d2e0777977616f
+sha256  f663caf35fb380af507fa0b7ac3dccd1b31dc0356c7ecf8517d2e0777977616f
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-Structures_DataGrid_Renderer_Pager \

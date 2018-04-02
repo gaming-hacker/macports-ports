@@ -14,7 +14,7 @@ platforms           darwin
 depends_lib         port:ncurses
 
 checksums           rmd160  9afe79a1fa3e947c5e1277e0b25a8122202a5a38 \
-                    sha256  9eda01bb66ce7bceb12dc115de3b96974a58b29a58b68084197dcfd9e7964c12
+sha256  9eda01bb66ce7bceb12dc115de3b96974a58b29a58b68084197dcfd9e7964c12
 
 use_configure       no
 

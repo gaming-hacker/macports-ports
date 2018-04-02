@@ -39,8 +39,8 @@ universal_variant   no
 
 if {${name} ne ${subport}} {
     checksums \
-        rmd160  e230ce207106cf50fe83aebae46eb635ebb69baa \
-        sha256  6d1962aa5cac21a499e4d5fbea40a872f2b30517f7134af7d3b6be4f75ad8319
+rmd160  e230ce207106cf50fe83aebae46eb635ebb69baa \
+sha256  6d1962aa5cac21a499e4d5fbea40a872f2b30517f7134af7d3b6be4f75ad8319
 
     conflicts           py${python.version}-spyder-devel
     

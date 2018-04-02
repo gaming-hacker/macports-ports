@@ -15,7 +15,7 @@ description         Portable NetBSD make
 long_description    bmake is the portable version of NetBSD make.
 
 checksums           rmd160  5153b1c47243d19917481b6a1558a8ad29eb57c6 \
-                    sha256  c379ed09ee64277a11296fa93545abf963a059c98630ddfc47dcef9572391a9d
+sha256  c379ed09ee64277a11296fa93545abf963a059c98630ddfc47dcef9572391a9d
 
 worksrcdir          ${name}
 

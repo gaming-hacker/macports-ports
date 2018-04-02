@@ -13,4 +13,4 @@ description         PEAR Math_Stats package
 long_description    ${description}
 
 checksums           rmd160  b527bc9e442729eca76fa0eafd077bcf20bce9d0 \
-                    sha256  a3ae797517d5cd63f94e0ca13aafaa628bea4436fd01b01e7a8e3f2a4b4734ca
+sha256  a3ae797517d5cd63f94e0ca13aafaa628bea4436fd01b01e7a8e3f2a4b4734ca

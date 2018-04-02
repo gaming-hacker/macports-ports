@@ -20,7 +20,7 @@ homepage            https://www.nlnetlabs.nl/projects/nsd/
 master_sites        https://www.nlnetlabs.nl/downloads/nsd/
 
 checksums           rmd160  f9ac08d67c2fb05c395e78ddd8b270efb0182257 \
-                    sha256  8a97f61d7bbb98a2ce04dc4425596f9023677a5f1c5ea743ff408d487f82f713
+sha256  8a97f61d7bbb98a2ce04dc4425596f9023677a5f1c5ea743ff408d487f82f713
 
 depends_lib         port:libevent \
                     path:lib/libssl.dylib:openssl

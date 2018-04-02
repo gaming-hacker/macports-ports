@@ -27,7 +27,7 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  8380cc1ffb21850a36920a3199a1a53f0d1f05a1 \
-                    sha256  02c50746b134fa1b1aae41fcc314d7c6f1919b3d48bcdea01bf11769f83f72e8
+sha256  02c50746b134fa1b1aae41fcc314d7c6f1919b3d48bcdea01bf11769f83f72e8
 
 depends_build       port:asciidoc \
                     port:pkgconfig

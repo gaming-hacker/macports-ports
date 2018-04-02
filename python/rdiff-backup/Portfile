@@ -19,7 +19,7 @@ master_sites        savannah
 distname            rdiff-backup-${version}
 
 checksums           rmd160  f7fb7a894afe17b495611a3738c85263ae72b2b5 \
-                    sha256  0d91a85b40949116fa8aaf15da165c34a2d15449b3cbe01c8026391310ac95db
+sha256  0d91a85b40949116fa8aaf15da165c34a2d15449b3cbe01c8026391310ac95db
 
 python.default_version  27
 

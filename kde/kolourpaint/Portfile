@@ -17,7 +17,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 distname            kolourpaint-${version}
 checksums           rmd160  7e1fb9111bbe44e57439d221493d9165c594275e \
-                    sha256  b0141d7447d6c9a52f8f65a098c6487501d9f5bcd092d5216115a0c6bae4c64d
+sha256  b0141d7447d6c9a52f8f65a098c6487501d9f5bcd092d5216115a0c6bae4c64d
 
 depends_lib-append  port:kdelibs4 \
                     port:oxygen-icons \

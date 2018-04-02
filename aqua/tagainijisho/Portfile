@@ -30,7 +30,7 @@ homepage            http://www.tagaini.net/
 github.tarball_from releases
 
 checksums           rmd160  eda4b6c645ffce4298da6890260a246747bf3612 \
-                    sha256  6fe3c579ec1cea6c41393ac9a82dd12d0e240032d2bb7837a90e470f480aaf4e \
+sha256  6fe3c579ec1cea6c41393ac9a82dd12d0e240032d2bb7837a90e470f480aaf4e \
 size    24816175
 
 patchfiles          patch-CMakeLists.txt.diff \

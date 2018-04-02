@@ -12,6 +12,6 @@ description         PEAR HTML_QuickForm_DHTMLRulesTableless package
 long_description    ${description}
 
 checksums           rmd160  a47f27ed60d1441f3b2baa2e4f3da275218ee5b2 \
-                    sha256  77686a3d2096e8ef8bf39e0f653e724e83e0da2d5fa8975feb329aebf987eaf8
+sha256  77686a3d2096e8ef8bf39e0f653e724e83e0da2d5fa8975feb329aebf987eaf8
 
 depends_lib-append  port:pear-HTML_QuickForm_Renderer_Tableless

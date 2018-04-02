@@ -26,7 +26,7 @@ if {${name} != ${subport}} {
     master_sites                http://git.php.net/?p=php/gtk-src.git\;a=snapshot\;h=${git.branch}\;sf=txz\;dummy=
 
     checksums                   rmd160  b12ccdb5ce3f9779885b769a7f43b47f3392d2ec \
-                                sha256  f7455985446918fe8c55ae5b4432e775466605f1c17e686917449ac81a8ee923
+sha256  f7455985446918fe8c55ae5b4432e775466605f1c17e686917449ac81a8ee923
 
     depends_build-append        port:pkgconfig
 

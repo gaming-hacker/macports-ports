@@ -12,4 +12,4 @@ description         PEAR Gtk2_PHPConfig package
 long_description    ${description}
 
 checksums           rmd160  677af66da1dbd88f1dc05475b5ebac5aa6cc84a3 \
-                    sha256  df3b600a0d37bf75d5216002564fc76d762a70c947d6869a873db1b6485ff672
+sha256  df3b600a0d37bf75d5216002564fc76d762a70c947d6869a873db1b6485ff672

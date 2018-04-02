@@ -14,7 +14,7 @@ description         display PostgreSQL performance info like `top'
 long_description    ${description}
 
 checksums           rmd160  990eb9f7780ff5a2ea974fd4fee82be45d52c2d9 \
-                    sha256  48f90f454febbf0bc1beb1c70a6a7b96077baf5db410d297ff219a6eaadacc0b
+sha256  48f90f454febbf0bc1beb1c70a6a7b96077baf5db410d297ff219a6eaadacc0b
 
 platforms           darwin
 supported_archs     noarch

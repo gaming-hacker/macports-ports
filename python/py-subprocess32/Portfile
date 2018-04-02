@@ -22,7 +22,7 @@ long_description    This is a backport of the subprocess standard library \
 python.versions 27 36
 
 checksums           rmd160  a8ce558aba656369fc2096fdccefb1b2966ce198 \
-                    sha256  90efe090295ad0f3a9115ff10183f669739101bd42547787ad8a7ec88eaf5a91
+sha256  90efe090295ad0f3a9115ff10183f669739101bd42547787ad8a7ec88eaf5a91
 
 if {${name} ne ${subport}} {
   livecheck.type    none

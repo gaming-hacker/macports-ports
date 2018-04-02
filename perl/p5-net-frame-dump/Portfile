@@ -20,7 +20,7 @@ long_description    Net::Frame::Dump is the base class for all dump modules. \
                     Net::Frame::Dump::Writer for specific usage.
 
 checksums           rmd160  918d8954f7e073f63d7121827e07ee360b233da4 \
-                    sha256  6eef12772208a8992fce3b9718509b9369aa8ba623958692ba8e633085fc9226
+sha256  6eef12772208a8992fce3b9718509b9369aa8ba623958692ba8e633085fc9226
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -18,7 +18,7 @@ homepage            https://ssdeep-project.github.io/ssdeep/
 github.tarball_from releases
 
 checksums           rmd160  250f44f1cfd08787d56f604e69f1768b092461df \
-                    sha256  ff2eabc78106f009b4fb2def2d76fb0ca9e12acf624cbbfad9b3eb390d931313
+sha256  ff2eabc78106f009b4fb2def2d76fb0ca9e12acf624cbbfad9b3eb390d931313
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

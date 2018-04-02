@@ -15,8 +15,8 @@ homepage        http://www.xfce.org/
 master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 0067054e6f1f90a13f90faadfca1e89e \
-                sha1 cba7b81f8269f30dd6412d133767b6044c470f2c \
-                sha256 d0fd329273ff6ac98885eade4c3d8c87a4dd0816f713646130808bfa90b87173
+sha1 cba7b81f8269f30dd6412d133767b6044c470f2c \
+sha256 d0fd329273ff6ac98885eade4c3d8c87a4dd0816f713646130808bfa90b87173
 
 depends_build   port:intltool \
                 port:pkgconfig

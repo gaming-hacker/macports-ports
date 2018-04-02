@@ -21,7 +21,7 @@ master_sites        sourceforge
 distname            Supybot-${version}
 
 checksums           rmd160  19fe768a0d814e902467f7e5aee31c04a3ab0024 \
-                    sha256  c4fccaccb53226a5bede1eaa5ea941a8aa53196ce5278a697daf37bd554372fb
+sha256  c4fccaccb53226a5bede1eaa5ea941a8aa53196ce5278a697daf37bd554372fb
 
 python.default_version  27
 

@@ -12,4 +12,4 @@ description         PEAR Net_Traceroute package
 long_description    ${description}
 
 checksums           rmd160  ee6c4702838b3e371fdec152564d3c1854cd94d5 \
-                    sha256  4e486fd6566aa3207b8644589886b8e52f0475da63aceb0da1aeb924bf668f06
+sha256  4e486fd6566aa3207b8644589886b8e52f0475da63aceb0da1aeb924bf668f06

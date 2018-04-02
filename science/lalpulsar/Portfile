@@ -12,7 +12,7 @@ long_description \
   routines for continuous wave gravitational data analysis.
 
 checksums     rmd160 0e432cbc211dea519503fa9ed7e02c1bf986b818 \
-              sha256 ed7c2537db74c24cb5e22bbd72ba6906e4c85a4c649a3e88441fddc55ce1462c
+sha256 ed7c2537db74c24cb5e22bbd72ba6906e4c85a4c649a3e88441fddc55ce1462c
 
 depends_lib   port:gsl \
               port:libomp \

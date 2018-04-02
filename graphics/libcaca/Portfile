@@ -23,8 +23,8 @@ if {${name} eq ${subport}} {
     github.setup    cacalabs libcaca 0.99.beta19 v
     revision        6
     checksums       \
-        rmd160 8623dbfe2584d6e5c633aa140f30139a13a59128 \
-        sha256 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
+rmd160 8623dbfe2584d6e5c633aa140f30139a13a59128 \
+sha256 128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
 
     long_description ${long_description} ${subport} \
 provides the release version.
@@ -38,8 +38,8 @@ subport libcaca-devel {
     github.setup    cacalabs libcaca da28e9684ef445ac8d42745644336b8a75c01855
     version         20171001
     checksums       \
-        rmd160 7792b69abda5a088f37cb06c98b0c46e2132b56e \
-        sha256 9d13896fcb29db7352ecd159e98d52335e91eddd665043ffca2c2ef0efdfc3b0
+rmd160 7792b69abda5a088f37cb06c98b0c46e2132b56e \
+sha256 9d13896fcb29db7352ecd159e98d52335e91eddd665043ffca2c2ef0efdfc3b0
 
     conflicts       libcaca
     long_description ${long_description} ${subport} \

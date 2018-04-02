@@ -23,7 +23,7 @@ homepage                http://www.catb.org/${name}/
 master_sites            savannah
 
 checksums               rmd160  7aeacd58b7374b392e691fc470dc9a644169ba8a \
-                        sha256  68e0dbecfb5831997f8b3d6ba48aed812eb465d8c0089420ab68f9ce4d85e77a
+sha256  68e0dbecfb5831997f8b3d6ba48aed812eb465d8c0089420ab68f9ce4d85e77a
 
 depends_lib-append      port:ncurses
 depends_build-append    port:scons port:pkgconfig

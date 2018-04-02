@@ -15,6 +15,6 @@ homepage            http://lloyd.github.com/yajl/
 platforms           darwin
 
 checksums           rmd160  df525cb99a1e6f1786c8f8f047127cad1b4eb80a \
-                    sha256  510a13e0be57cd4ba99e60ac806a3635854af51316d3131d3742a90298ccde38
+sha256  510a13e0be57cd4ba99e60ac806a3635854af51316d3131d3742a90298ccde38
 
 cmake.out_of_source yes

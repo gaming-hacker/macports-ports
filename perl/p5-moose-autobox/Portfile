@@ -18,7 +18,7 @@ long_description    Moose::Autobox provides an implementation of \
                     SCALAR, ARRAY, HASH & CODE for use with autobox.
 
 checksums           rmd160  16258023f8ba0cba4ac798c4f380674bbda4933d \
-                    sha256  92401da4cf484eb7188ec196b68186efa782a102b451ea156cd8b8772e687055
+sha256  92401da4cf484eb7188ec196b68186efa782a102b451ea156cd8b8772e687055
 
 if {${perl5.major} != ""} {
     depends_build-append \

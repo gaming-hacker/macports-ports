@@ -19,7 +19,7 @@ description         Perl interface to GNU gettext
 long_description    ${description}
 
 checksums           rmd160  0f5efafdfa6ede6b766cbb5dac12c980b3566068 \
-                    sha256  909d47954697e7c04218f972915b787bd1244d75e3bd01620bc167d5bbc49c15
+sha256  909d47954697e7c04218f972915b787bd1244d75e3bd01620bc167d5bbc49c15
 
 if {${perl5.major} != ""} {
     depends_lib-append \

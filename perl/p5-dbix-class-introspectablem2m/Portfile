@@ -19,7 +19,7 @@ long_description    Because the many-to-many relationships are not real relation
 platforms           darwin
 
 checksums           rmd160  d57890bd4683bd6fe217168738c1b6033c1371b7 \
-                    sha256  c6baafb4241693fdb34b29ebd906993add364bf31aafa4462f3e062204cc87f0
+sha256  c6baafb4241693fdb34b29ebd906993add364bf31aafa4462f3e062204cc87f0
 
 if {${perl5.major} != ""} {
     depends_lib-append \

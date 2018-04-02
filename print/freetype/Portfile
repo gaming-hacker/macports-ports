@@ -37,11 +37,11 @@ distfiles               ${distname}${extract.suffix}:source \
                         ${docdistname}${extract.suffix}:docs
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  518184d2be032b9807345367265cc7cd49df0da5 \
-                        sha256  a3c603ed84c3c2495f9c9331fe6bba3bb0ee65e06ec331e0a0fb52158291b40b \
+rmd160  518184d2be032b9807345367265cc7cd49df0da5 \
+sha256  a3c603ed84c3c2495f9c9331fe6bba3bb0ee65e06ec331e0a0fb52158291b40b \
                         ${docdistname}${extract.suffix} \
-                        rmd160  ad81e3ca016e583a949cbb9bd4ce40bc0493fa79 \
-                        sha256  427ba04d11f450df4bac4c95fec247be1b835ccdcf85d8b081f3f39d31811154
+rmd160  ad81e3ca016e583a949cbb9bd4ce40bc0493fa79 \
+sha256  427ba04d11f450df4bac4c95fec247be1b835ccdcf85d8b081f3f39d31811154
 
 patchfiles \
     patch-src_base_ftrfork.c.diff \

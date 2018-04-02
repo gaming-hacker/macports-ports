@@ -12,7 +12,7 @@ description         Perl module to parse, manipulate and lookup IP network block
 long_description    Net::Netmask is a module to parse, manipulate and lookup IP network blocks
 
 checksums           rmd160  bd45252584c870075d57aed1e1aa0fde2f85eecb \
-                    sha256  07099c1ff4de752e6f5420b32de12e4338b05bbb252e53c782b740173ba31533
+sha256  07099c1ff4de752e6f5420b32de12e4338b05bbb252e53c782b740173ba31533
 
 platforms           darwin
 

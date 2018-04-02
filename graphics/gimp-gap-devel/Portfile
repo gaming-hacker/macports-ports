@@ -33,7 +33,7 @@ master_sites    https://git.gnome.org/browse/${git_name}/snapshot/
 distname        ${git_name}-${git_commit}
 
 checksums       rmd160  efb79db1b5527ecbe52aca6b0d79b429132fdfa2 \
-                sha256  adbe097ce6089f7b595014b617ce448f2a3355cce264028794be15093139ee90 \
+sha256  adbe097ce6089f7b595014b617ce448f2a3355cce264028794be15093139ee90 \
 size    13417307
 
 post-extract    {

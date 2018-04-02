@@ -17,7 +17,7 @@ homepage            http://banshee.fm/
 master_sites        http://download.banshee.fm/taglib-sharp/${version}
 
 checksums           sha1    97beb1473d2fc730fc0289fe54d94ff64070fa82 \
-                    rmd160  25cd15206d2090602131341ae0103af3052a2f94
+rmd160  25cd15206d2090602131341ae0103af3052a2f94
 
 depends_lib         port:mono
 

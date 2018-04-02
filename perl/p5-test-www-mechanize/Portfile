@@ -12,7 +12,7 @@ description         Testing-specific WWW::Mechanize subclass
 long_description    ${description}
 
 checksums           rmd160  ad74af09ca3ce6e676399eae2200ace476e7f2a3 \
-                    sha256  99d19cd14870870f96796079213da201ac33e41cf8f0d24ed8a59512527721b4
+sha256  99d19cd14870870f96796079213da201ac33e41cf8f0d24ed8a59512527721b4
 
 platforms           darwin
 supported_archs     noarch

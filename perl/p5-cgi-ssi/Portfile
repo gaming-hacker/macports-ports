@@ -16,7 +16,7 @@ description         CGI::SSI - Use SSI from CGI scripts
 long_description    ${description}
 
 checksums           rmd160  d4492b2d9f51bb6d4b61d4ce4469793b53b13ab3 \
-                    sha256  162ba39a723b09cff925e5e61604e3614bdb19363f2bb434cf33187e6b472e2c
+sha256  162ba39a723b09cff925e5e61604e3614bdb19363f2bb434cf33187e6b472e2c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

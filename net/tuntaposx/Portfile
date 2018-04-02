@@ -20,7 +20,7 @@ distname            tuntap_${version}_src
 worksrcdir          tuntap
 
 checksums           rmd160  bfdd394e10a982728c4867b2536b337ab78831e1 \
-                    sha256  f01fe7a3dd0f2f64c13606ff0230696d3995f2eeae19f0cdeb778650db9f37ba
+sha256  f01fe7a3dd0f2f64c13606ff0230696d3995f2eeae19f0cdeb778650db9f37ba
 
 destroot.violate_mtree  yes
 destroot.args       BASE=${destroot}${prefix}

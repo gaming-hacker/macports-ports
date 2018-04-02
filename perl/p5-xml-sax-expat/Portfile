@@ -17,7 +17,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  3c0a5975bcd3eed1a588edb7dce8f724d1e1bc6d \
-                    sha256  4c016213d0ce7db2c494e30086b59917b302db8c292dcd21f39deebd9780c83f
+sha256  4c016213d0ce7db2c494e30086b59917b302db8c292dcd21f39deebd9780c83f
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -19,7 +19,7 @@ long_description        Legit is a complementary command-line interface for Git,
 homepage                http://www.git-legit.org/
 
 checksums               rmd160  fdab3f398cb879839b7f88dc2d02d7cce175e322 \
-                        sha256  c1cc4d15180ef899c4b03865612e1d7eec3aa5472c2eab6525a627ffd94f8020 \
+sha256  c1cc4d15180ef899c4b03865612e1d7eec3aa5472c2eab6525a627ffd94f8020 \
 size    16050
 
 python.default_version  36

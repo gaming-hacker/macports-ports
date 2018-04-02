@@ -27,7 +27,7 @@ use_xz              yes
 distname            ${gname}-${version}
 
 checksums           rmd160  462d7de4d474ded7450f5a2890ef506d56a9347b \
-                    sha256  afa6dc283582ffec15c3374790bcbcb5fb422bd38356d72deeef35bf7f9a1f04
+sha256  afa6dc283582ffec15c3374790bcbcb5fb422bd38356d72deeef35bf7f9a1f04
 
 depends_build       port:pkgconfig \
                     port:gtk-doc \

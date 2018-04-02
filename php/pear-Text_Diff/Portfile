@@ -12,4 +12,4 @@ description         PEAR Text_Diff package
 long_description    ${description}
 
 checksums           rmd160  ac1e5b27191a36bb208666ddd6cbdf7f077c5594 \
-                    sha256  1afe6bf3f27b6aab7288f51fef14f282b7df6f2ec986e45dee5ef512c76ea180
+sha256  1afe6bf3f27b6aab7288f51fef14f282b7df6f2ec986e45dee5ef512c76ea180

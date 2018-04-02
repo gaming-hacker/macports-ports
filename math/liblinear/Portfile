@@ -21,7 +21,7 @@ license             BSD
 
 master_sites        ${homepage}
 checksums           rmd160  35a5dc7179a0d5198609ae9c478d848816b27928 \
-                    sha256  ebc71999224f5779574b11e248f1e2ef647b5d839c0380c1c5a4ac8789aa95a9
+sha256  ebc71999224f5779574b11e248f1e2ef647b5d839c0380c1c5a4ac8789aa95a9
 
 patchfiles          patch-Makefile.diff
 

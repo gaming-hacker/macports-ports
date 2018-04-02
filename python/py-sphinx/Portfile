@@ -25,8 +25,8 @@ master_sites        pypi:S/Sphinx/
 distname            Sphinx-${version}
 
 checksums           md5 21a08e994e6a289ed14eecefde2b4f2f \
-                    rmd160 52672d0ea78f6c5e51f1527775e05883e37f589f \
-                    sha256 5a1c9a0fec678c24b9a2f5afba240c04668edb7f45c67ce2ed008996b3f21ae2
+rmd160 52672d0ea78f6c5e51f1527775e05883e37f589f \
+sha256 5a1c9a0fec678c24b9a2f5afba240c04668edb7f45c67ce2ed008996b3f21ae2
 
 python.versions 27 36
 

@@ -18,7 +18,7 @@ homepage      http://spiff.rit.edu/match/
 master_sites  ${homepage}
 
 checksums     rmd160 ab87f5ca2921f8ba9bcb09c798ed31afc42a308d \
-              sha256 f865e91e7c9b26147ca0215db559df1f17354e374d81627975cd98cc5020eff8
+sha256 f865e91e7c9b26147ca0215db559df1f17354e374d81627975cd98cc5020eff8
 
 livecheck.type   regex
 livecheck.url    ${master_sites}

@@ -34,7 +34,7 @@ homepage          https://www.gnu.org/software/mdk/mdk.html
 master_sites      gnu:mdk/v${version}/
 
 checksums           rmd160  2747c8a2d06369e66183e63b53a0074f53081ee6 \
-                    sha256  6c265ddd7436925208513b155e7955e5a88c158cddda72c32714ccf5f3e74430
+sha256  6c265ddd7436925208513b155e7955e5a88c158cddda72c32714ccf5f3e74430
 
 depends_build       port:bison \
                     port:intltool \

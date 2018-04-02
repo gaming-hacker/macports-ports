@@ -18,7 +18,7 @@ description         Powerline is a statusline plugin for vim, and provides \
 long_description    ${description}
 
 checksums           rmd160  90c33fffc03fcc4e631d13bc98722edd23adced3 \
-                    sha256  3d30d0064e08fc8cc397ae52f5a48729dada3c3002d1eb99dd6869ccc065b57b
+sha256  3d30d0064e08fc8cc397ae52f5a48729dada3c3002d1eb99dd6869ccc065b57b
 
 python.versions 27 36
 

@@ -13,7 +13,7 @@ description         PEAR pearweb_election package
 long_description    ${description}
 
 checksums           rmd160  4b4a014a0dc6b0b76fd0bda8fa793a42da0d3550 \
-                    sha256  1a5bece7dc91a12538bdba99195364b237a9d8cafbbf8662bf7ef01700b70225
+sha256  1a5bece7dc91a12538bdba99195364b237a9d8cafbbf8662bf7ef01700b70225
 
 depends_lib-append  port:pear-pearweb \
                     port:pear-Text_Wiki

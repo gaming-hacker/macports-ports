@@ -27,8 +27,8 @@ homepage		http://www.macsword.com/
 master_sites	macports
 use_bzip2       yes
 checksums		md5 2c6be1d86186a1a0fc770159f6a96066 \
-				sha1 258251d39fd18aa3a52f6c546e387873256c445e \
-				rmd160 4a24eb4e8ac3cf81fced81318f1a14dd45a3f13f
+sha1 258251d39fd18aa3a52f6c546e387873256c445e \
+rmd160 4a24eb4e8ac3cf81fced81318f1a14dd45a3f13f
 
 supported_archs i386 ppc
 

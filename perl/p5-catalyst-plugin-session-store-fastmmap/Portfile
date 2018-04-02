@@ -13,7 +13,7 @@ description         FastMmap session storage backend.
 long_description    ${description}
 
 checksums           rmd160  efd18bcae26fbc9fec9f97263906cd3c3ec642b1 \
-                    sha256  baeb7fd7bf905be74631c88760fd8a2980ceea95627993399581643ef6377274
+sha256  baeb7fd7bf905be74631c88760fd8a2980ceea95627993399581643ef6377274
 
 supported_archs     noarch
 

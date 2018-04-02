@@ -19,8 +19,8 @@ distname		${name}
 worksrcdir		${name}${major}
 
 checksums		md5     cf423b971ebc95813faebc895d04bae2 \
-				sha1    76eaf995fe2d6c9343077173580d71ab1ab50576 \
-				rmd160  8f9eeb926dae002b6deeb3df9e3c6aa72fc2c994
+sha1    76eaf995fe2d6c9343077173580d71ab1ab50576 \
+rmd160  8f9eeb926dae002b6deeb3df9e3c6aa72fc2c994
 
 depends_run		path:bin/perl:perl5
 

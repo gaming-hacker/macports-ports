@@ -13,4 +13,4 @@ description         PEAR Net_Server package
 long_description    ${description}
 
 checksums           rmd160  fe33f572120cb846dfce77a70a8ee071c4c882c3 \
-                    sha256  794f88a2ad5d5dd58d4e7ef42d4ee5eb1582a3a75538f66af2fa4a1125bb91bd
+sha256  794f88a2ad5d5dd58d4e7ef42d4ee5eb1582a3a75538f66af2fa4a1125bb91bd

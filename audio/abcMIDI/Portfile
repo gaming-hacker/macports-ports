@@ -17,7 +17,7 @@ homepage            https://ifdo.ca/~seymour/runabc/top.html
 master_sites        https://ifdo.ca/~seymour/runabc/
 
 checksums           rmd160  2c1d2df7c65854442aa47649c93487d779579d86 \
-                    sha256  84700fe038e0e86432f38b237905667ecb8731960c623bf13d6c4b50d3b6e29c
+sha256  84700fe038e0e86432f38b237905667ecb8731960c623bf13d6c4b50d3b6e29c
 
 patchfiles          patch-makefile.diff
 

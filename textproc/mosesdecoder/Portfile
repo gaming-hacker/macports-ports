@@ -23,7 +23,7 @@ platforms           darwin
 license             LGPL
 
 checksums           rmd160  f64d5bc5012cde499569b7b6f2bf1c8877bd91cf \
-                    sha256  bd7db39e836668fff7e75ff6256fb643e21f9fb768e88a6eb7482190d7310939
+sha256  bd7db39e836668fff7e75ff6256fb643e21f9fb768e88a6eb7482190d7310939
 
 depends_lib         port:boost \
                     port:zlib

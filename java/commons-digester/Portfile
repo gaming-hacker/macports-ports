@@ -19,8 +19,8 @@ distname			${name}-${version}-src
 master_sites		apache:commons/digester/source/
 
 checksums           md5     75b3e880807844aba1695984587f97f3 \
-                    sha1    6d6c978f00e7e12d24b5bb4548f66b7d2fad32f8 \
-                    rmd160  08fdd7adf26303f8325c5afd4b6a54cb1776f07f
+sha1    6d6c978f00e7e12d24b5bb4548f66b7d2fad32f8 \
+rmd160  08fdd7adf26303f8325c5afd4b6a54cb1776f07f
 
 depends_build		bin:ant:apache-ant
 depends_lib			bin:java:kaffe \

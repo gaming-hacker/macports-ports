@@ -25,7 +25,7 @@ distname        tDOM-${version}
 extract.suffix  .tgz
 
 checksums       rmd160  df52d8b7c3ac9134dae20a3bcaa21e0e512e3289 \
-                sha256  496d5950907dd70db61bc20c55a05a5521363ce3c076e2fdd97270181bc720b9
+sha256  496d5950907dd70db61bc20c55a05a5521363ce3c076e2fdd97270181bc720b9
 
 depends_lib     port:tcl
 

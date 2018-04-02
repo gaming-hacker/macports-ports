@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-openldap/releases/download/v${version}
 
 checksums           md5 472584cbf156f0692bae2b953ad7280b \
-                    sha1 f10325ce5d5eee2ca8b25cf295230410dfc61ea2 \
-                    rmd160 34ef15f2f54808e3b72b708e55b76892db8f87a2
+sha1 f10325ce5d5eee2ca8b25cf295230410dfc61ea2 \
+rmd160 34ef15f2f54808e3b72b708e55b76892db8f87a2
 
 depends_lib         port:qore \
                     port:openldap

@@ -22,7 +22,7 @@ homepage            https://wiki.gnome.org/Projects/GnomeDocUtils
 master_sites        gnome:sources/${name}/${branch}/
 
 checksums           rmd160  64fcdf0166c213b6bf5c872f583546b3a9a17bf4 \
-                    sha256  cb0639ffa9550b6ddf3b62f3b1add92fb92ab4690d351f2353cffe668be8c4a6
+sha256  cb0639ffa9550b6ddf3b62f3b1add92fb92ab4690d351f2353cffe668be8c4a6
 
 use_xz              yes
 

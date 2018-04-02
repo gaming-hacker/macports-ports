@@ -35,7 +35,7 @@ distname                ${name}_v[strsed ${version} {g/[.]/-/}]
 worksrcdir              ${name}-v[strsed ${version} {g/[.]/-/}]
 
 checksums               md5     9697fead17eac6025151cd2e1fca1518 \
-                        sha1    860f366f87e5103109e72724ce096ce8559c2d3d
+sha1    860f366f87e5103109e72724ce096ce8559c2d3d
 
 patchfiles              patch-Mac_XCode-2_2_OIS_xcodeproj_project.pbxproj.diff \
                         patch-demos_OISConsole.cpp.diff \

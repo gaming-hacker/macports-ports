@@ -17,7 +17,7 @@ homepage            http://www.quietsche-entchen.de/cgi-bin/wiki.cgi/proxies/Tcp
 master_sites        http://www.quietsche-entchen.de/download/
 
 checksums           sha1    81039e5eb1e6a9dfac267c77840a9e2c9a9a98f9 \
-                    rmd160  f4a622a6e94de7cbc08828a8fc7ef5f73ca58ebd
+rmd160  f4a622a6e94de7cbc08828a8fc7ef5f73ca58ebd
 
 patchfiles          patch-tcpproxy.diff
 

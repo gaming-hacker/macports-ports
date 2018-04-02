@@ -59,7 +59,7 @@ if {(${subport} eq ${name}) || (${subport} eq "lib${name}")} {
     use_xz              yes
 
     checksums           rmd160  4434e91384520fe1fe129a52f5d66d61e4404a9a \
-                        sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
+sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
 
     if {[info exist ::env(MACPORTS_COMPRESS_WORKDIR)] && $::env(MACPORTS_COMPRESS_WORKDIR)} {
         # Enable HFS compression.

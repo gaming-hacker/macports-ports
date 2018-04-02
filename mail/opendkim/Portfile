@@ -21,7 +21,7 @@ depends_lib         path:lib/libssl.dylib:openssl \
                     port:unbound
 
 checksums           rmd160  c6553757ae9675434e647f3cc1e6357bc60c7d2a \
-                    sha256  43a0ba57bf942095fe159d0748d8933c6b1dd1117caf0273fa9a0003215e681b
+sha256  43a0ba57bf942095fe159d0748d8933c6b1dd1117caf0273fa9a0003215e681b
 
 post-patch {
     reinplace "s|/var/|${prefix}/var/|g" \

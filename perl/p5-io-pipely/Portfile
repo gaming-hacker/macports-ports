@@ -13,7 +13,7 @@ description         Portably create pipe() or pipe-like handles, one way or anot
 long_description    ${description}
 
 checksums           rmd160 493850e1501cd25a6105ea489a37420e7cf66200 \
-                    sha256 e33b6cf5cb2b46ee308513f51e623987a50a89901e81bf19701dce35179f2e74
+sha256 e33b6cf5cb2b46ee308513f51e623987a50a89901e81bf19701dce35179f2e74
 
 platforms           darwin
 supported_archs     noarch

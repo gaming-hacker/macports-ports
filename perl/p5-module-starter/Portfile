@@ -13,7 +13,7 @@ description         Module::Starter is a simple starter kit for any module
 long_description    ${description}
 
 checksums           rmd160  a5bfe9de66d89323905267a24ad846811e031169 \
-                    sha256  80299e53b7e4db4840dd7174740ea60a679cbb38a5e17d256a0f82fd9b3b8ae5
+sha256  80299e53b7e4db4840dd7174740ea60a679cbb38a5e17d256a0f82fd9b3b8ae5
 
 platforms           darwin
 

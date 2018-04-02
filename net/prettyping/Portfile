@@ -23,7 +23,7 @@ long_description    prettyping is a wrapper around the standard ping tool \
 homepage            https://denilsonsa.github.io/prettyping/
 
 checksums           rmd160  199a0f4558b666791ece9ef80e81bb87c1eb5afc \
-                    sha256  4526d1fe920f05f952e3ebb83b89f7e134e0d202b14bbfc237ecfdd6076559d2
+sha256  4526d1fe920f05f952e3ebb83b89f7e134e0d202b14bbfc237ecfdd6076559d2
 
 use_configure       no
 

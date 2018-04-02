@@ -12,4 +12,4 @@ description         PEAR Net_GameServerQuery package
 long_description    ${description}
 
 checksums           rmd160  af220b8e124e6442d136d0b902f22c6c12ac86f2 \
-                    sha256  4706581dff4cf94c4389832b2c817fdff96c236ceedfbfd248595f066012ea91
+sha256  4706581dff4cf94c4389832b2c817fdff96c236ceedfbfd248595f066012ea91

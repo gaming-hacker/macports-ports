@@ -12,4 +12,4 @@ description         PEAR Services_urlTea package
 long_description    ${description}
 
 checksums           rmd160  7bc4999a968433a33f759ff3795bc4b8394ae20c \
-                    sha256  7e936891808d4174fd6d7a943e11b17bd12a34ecce1e8b95785e8afbd1ac4cba
+sha256  7e936891808d4174fd6d7a943e11b17bd12a34ecce1e8b95785e8afbd1ac4cba

@@ -19,4 +19,4 @@ long_description    AppConfig is a bundle of Perl5 modules for reading \
                     command line arguments and CGI script parameters.
 
 checksums           rmd160  fc6522138f002d0b7e20c771486e20fdd8529fb7 \
-                    sha256  1177027025ecb09ee64d9f9f255615c04db5e14f7536c344af632032eb887b0f
+sha256  1177027025ecb09ee64d9f9f255615c04db5e14f7536c344af632032eb887b0f

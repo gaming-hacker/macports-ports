@@ -22,7 +22,7 @@ homepage            https://dun.github.io/munge/
 
 platforms           darwin
 checksums           rmd160 0bc366a2d0a49875e7cf35ea2aebeef33490ed0c \
-                    sha256 23585c1da3f4ea7c2882511c0a08220a2be13d9c03e54486bb8546791fa6c89b
+sha256 23585c1da3f4ea7c2882511c0a08220a2be13d9c03e54486bb8546791fa6c89b
 
 # We can either use OpenSSL or libgcrypt.  Let's default to OpenSSL.
 depends_lib-append  path:lib/libssl.dylib:openssl

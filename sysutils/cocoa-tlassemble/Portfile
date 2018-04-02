@@ -12,7 +12,7 @@ description         tlassemble is a simple Mac OS X command line utility \
 long_description    ${description}
 
 checksums           rmd160  7e88fc766401a3dc415e8b8780932828c6e3293e \
-                    sha256  bbc263cd66665d388825b665b5c6990121de69cabbc62a586e63c4d852d96927
+sha256  bbc263cd66665d388825b665b5c6990121de69cabbc62a586e63c4d852d96927
 
 platforms           macosx
 license             BSD

@@ -60,20 +60,20 @@ distfiles                   ${wine_distfile}:winesource \
                             ${wine_mono_distfile}:winemono
 
 checksums                   ${wine_distfile} \
-                            rmd160  1a5d1650ce60663b210f835f8403a0d4f6e0729a \
-                            sha256  a483247ac93f325d623a463438590b7355ec26c670af15d356b0ce6c46398e93 \
+rmd160  1a5d1650ce60663b210f835f8403a0d4f6e0729a \
+sha256  a483247ac93f325d623a463438590b7355ec26c670af15d356b0ce6c46398e93 \
 size    19932472 \
                             ${wine_gecko_distfile} \
-                            rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
-                            sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
+rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
+sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
 size    49266176 \
                             ${wine_gecko64_distfile} \
-                            rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
-                            sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
+rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
+sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
 size    50806272 \
                             ${wine_mono_distfile} \
-                            rmd160  3e2932960dabff8283f02b32dc573b0dda6adfac \
-                            sha256  2c8d5db7f833c3413b2519991f5af1f433d59a927564ec6f38a3f1f8b2c629aa \
+rmd160  3e2932960dabff8283f02b32dc573b0dda6adfac \
+sha256  2c8d5db7f833c3413b2519991f5af1f433d59a927564ec6f38a3f1f8b2c629aa \
 size    56470528
 
 # Note: Most of the X11 libs are dlopen()'d

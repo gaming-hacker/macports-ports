@@ -23,7 +23,7 @@ master_sites        pypi:p/pyviennacl/
 distname            pyviennacl-${version}
 
 checksums           rmd160  b92ca4bbcb19fb763dff779f8912568dca297e7e \
-                    sha256  cc56a018a047c1a4e05fb03a8df5251ab5d87c1cb0bbf5daf86283879cb55743
+sha256  cc56a018a047c1a4e05fb03a8df5251ab5d87c1cb0bbf5daf86283879cb55743
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy

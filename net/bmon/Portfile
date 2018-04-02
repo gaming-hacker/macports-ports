@@ -17,7 +17,7 @@ long_description        bmon is a bandwidth monitor with multiple modes and \
 github.tarball_from     releases
 
 checksums               rmd160  9f8639ef55c77f1085169d40c02f5702ac30cfc4 \
-                        sha256  02fdc312b8ceeb5786b28bf905f54328f414040ff42f45c83007f24b76cc9f7a
+sha256  02fdc312b8ceeb5786b28bf905f54328f414040ff42f45c83007f24b76cc9f7a
 
 depends_build           port:pkgconfig
 

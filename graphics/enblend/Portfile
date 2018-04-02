@@ -20,7 +20,7 @@ platforms       darwin
 distname        enblend-enfuse-${version}
 
 checksums       rmd160  e90f84f5cf27b0da277edd70f6e1e7c2eec24f9b \
-                sha256  ef026e7722a44a958beec9e2c9ca5086058f11017f9e0227f8d0f1fce438bf21
+sha256  ef026e7722a44a958beec9e2c9ca5086058f11017f9e0227f8d0f1fce438bf21
 
 depends_build   port:pkgconfig port:help2man
 

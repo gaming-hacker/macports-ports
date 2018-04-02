@@ -21,7 +21,7 @@ license             LGPL
 
 master_sites        http://sourceforge.net/projects/irstlm/files/irstlm/irstlm-5.80/
 checksums           rmd160  08b9506e2dc388217e33070ebc1b06d7667d3d5c \
-                    sha256  500c64e90cae73c2f06ed34ad078423cc100f4e16e6dd98a9e466b17367d31e7
+sha256  500c64e90cae73c2f06ed34ad078423cc100f4e16e6dd98a9e466b17367d31e7
 extract.suffix      .tgz
 
 depends_lib         port:zlib

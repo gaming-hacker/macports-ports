@@ -15,7 +15,7 @@ description         A postmodern object system for Perl 5
 long_description    ${description}
 
 checksums           rmd160  4cc42d4a8abdc8efcd527f1c5c737d2d1a160d47 \
-                    sha256  af0905b69f18c27de1177c9bc7778ee495d4ec91be1f223e8ca8333af4de08c5 \
+sha256  af0905b69f18c27de1177c9bc7778ee495d4ec91be1f223e8ca8333af4de08c5 \
 size    822342
 
 if {${perl5.major} != ""} {

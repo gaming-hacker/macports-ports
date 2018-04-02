@@ -22,7 +22,7 @@ platforms        darwin
 
 master_sites     sourceforge:project/${name}/${name}/${name}-${version}
 checksums        md5 ee60188bea597680bd39e435a8c73ff9 \
-                 sha1 ac99979e99ae3b3edba547dd23d54c8f5fb3c6f5
+sha1 ac99979e99ae3b3edba547dd23d54c8f5fb3c6f5
 
 depends_lib      port:ncurses
 

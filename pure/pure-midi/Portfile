@@ -16,7 +16,7 @@ long_description                ${name} provides ${description} using the \
                                 PortMidi library.
 
 checksums                       rmd160  ff045d5e0d07f0c7e343fda53fce62262a0962cc \
-                                sha256  817ae9fa5f443a8c478a6770f36091e3cf99f3515c74e00d09ca958dead1e7eb
+sha256  817ae9fa5f443a8c478a6770f36091e3cf99f3515c74e00d09ca958dead1e7eb
 
 depends_build-append            port:pkgconfig
 

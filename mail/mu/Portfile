@@ -21,7 +21,7 @@ platforms           darwin
 homepage            http://www.djcbsoftware.nl/code/mu/
 
 checksums           rmd160  4928dbb7effc924da85b8df0da92f46412a6c9e7 \
-                    sha256  3eed4e1139d296089dcf685d6b4e8a5abe43e0f9cbae6663694250ab889f1291
+sha256  3eed4e1139d296089dcf685d6b4e8a5abe43e0f9cbae6663694250ab889f1291
 
 depends_build       port:pkgconfig
 depends_lib         port:gmime port:xapian-core port:guile
@@ -52,7 +52,7 @@ subport mu-devel {
     revision        0
 
     checksums       rmd160  9346720e099fb4845e67382512af5c388c4a0364 \
-                    sha256  3c368489f7e1bdd777496be8f7996149b43728fbb00ce54acaa229e90f124d80
+sha256  3c368489f7e1bdd777496be8f7996149b43728fbb00ce54acaa229e90f124d80
 
     post-extract    {
         # set the displayed version to a 6-character string since most releases

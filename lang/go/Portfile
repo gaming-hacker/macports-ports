@@ -29,7 +29,7 @@ distfiles           ${name}${version}.src.tar.gz
 worksrcdir          ${name}
 
 checksums           rmd160  f89ea80d180768c9944c3697599512fb714662df \
-                    sha256  589449ff6c3ccbff1d391d4e7ab5bb5d5643a5a41a04c99315e55c16bbf73ddc
+sha256  589449ff6c3ccbff1d391d4e7ab5bb5d5643a5a41a04c99315e55c16bbf73ddc
 
 depends_build       port:go-1.4
 

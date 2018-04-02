@@ -24,7 +24,7 @@ master_sites    http://download.mono-project.com/sources/${name}/
 use_bzip2       yes
 
 checksums       rmd160  140fc14d73c7dd474d21ef22c382daf724e26510 \
-                sha256  3c24199e1de00860bffcfa0ff0859abe8ee38cacdcbffff0c6854042d8ea2f2c
+sha256  3c24199e1de00860bffcfa0ff0859abe8ee38cacdcbffff0c6854042d8ea2f2c
 
 depends_build   port:pkgconfig
 

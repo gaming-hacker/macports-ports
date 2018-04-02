@@ -12,4 +12,4 @@ description         PEAR Services_Ebay package
 long_description    ${description}
 
 checksums           rmd160  83879eb5042365bf8197e90a692fbafae4e880f0 \
-                    sha256  148360e119c25282a4822f9223dc8953ee6fae765b6a5bc0bd3ce046d07eafb5
+sha256  148360e119c25282a4822f9223dc8953ee6fae765b6a5bc0bd3ce046d07eafb5

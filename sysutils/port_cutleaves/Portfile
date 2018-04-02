@@ -20,4 +20,4 @@ livecheck.type      none
 master_sites        macports
 
 checksums           rmd160  56724b9c532330b1ef8783445880282d9a40510b \
-                    sha256  a7f1b8e217f0222e9298fba60821f14bb8f7bb622f448188e70f0f8fc1614344
+sha256  a7f1b8e217f0222e9298fba60821f14bb8f7bb622f448188e70f0f8fc1614344

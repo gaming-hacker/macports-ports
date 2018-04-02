@@ -12,6 +12,6 @@ description         PEAR DB_ldap2 package
 long_description    ${description}
 
 checksums           rmd160  4fbadbf79f3ef077cb40e18ab103fa85180afb74 \
-                    sha256  928866f0ce9ea94ec057c36cc0793de39554a9a89dfc60c36022a1b54237a759
+sha256  928866f0ce9ea94ec057c36cc0793de39554a9a89dfc60c36022a1b54237a759
 
 depends_lib-append  port:pear-DB

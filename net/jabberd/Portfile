@@ -22,7 +22,7 @@ github.tarball_from releases
 use_xz          yes
 
 checksums       rmd160  210d2b28b635797831a271a3dd5deddd9042cd4c \
-                sha256  9a17fae72460dd4454814edb48a7a1af7071cf331dabc2b0b6029661a36bb671
+sha256  9a17fae72460dd4454814edb48a7a1af7071cf331dabc2b0b6029661a36bb671
 
 depends_build   port:libudns
 

@@ -26,7 +26,7 @@ extract.suffix      .tgz
 master_sites        https://web.archive.org/web/20150506155753/http://dist.codehaus.org/gant/distributions/
 
 checksums           rmd160  8ed15ba3b3306263c1c32c408ac72174cbd6a76f \
-                    sha256  33042f2e221a8407103a04b63232c18ce34902637e268aa02a4b4b7bafa90a19
+sha256  33042f2e221a8407103a04b63232c18ce34902637e268aa02a4b4b7bafa90a19
 
 post-extract {
     foreach f [glob -directory ${worksrcpath} README* conf/* lib/*] {

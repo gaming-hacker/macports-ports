@@ -693,8 +693,8 @@ foreach {module module_info} [array get modules] {
         build.target
 
         checksums                              \
-            rmd160  [lindex ${module_info} 0]  \
-            sha256  [lindex ${module_info} 1]
+rmd160  [lindex ${module_info} 0]  \
+sha256  [lindex ${module_info} 1]
 
         set license_string [lindex ${module_info} 9]
         set license_string [string range ${license_string} 1+[string first ":" ${license_string}] end]
@@ -1420,8 +1420,8 @@ foreach {module module_info} [array get modules] {
             destroot.target install_docs
 
             checksums                              \
-                rmd160  [lindex ${module_info} 0]  \
-                sha256  [lindex ${module_info} 1]
+rmd160  [lindex ${module_info} 0]  \
+sha256  [lindex ${module_info} 1]
 
             depends_build-append            \
                 port:${name}-qttools        \
@@ -1483,8 +1483,8 @@ foreach {sql_names sql_info} [array get sql_plugins] {
         }
 
         checksums                               \
-            rmd160  [lindex $modules(qtbase) 0] \
-            sha256  [lindex $modules(qtbase) 1]
+rmd160  [lindex $modules(qtbase) 0] \
+sha256  [lindex $modules(qtbase) 1]
 
         description       ${dbms} Database Driver for Qt Tool Kit ${qt_major}
         long_description  ${dbms} Database Driver for Qt Tool Kit ${qt_major}

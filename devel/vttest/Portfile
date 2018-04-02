@@ -15,7 +15,7 @@ master_sites        ftp://invisible-island.net/vttest/
 extract.suffix      .tgz
 
 checksums           rmd160  fdf7cfcbcb56d7880185272a75a6b3084cc80e4d \
-                    sha256  0168aa34061d4470a68b0dd0781a2a9e2bbfb1493e540c99f615b867a11cbf83
+sha256  0168aa34061d4470a68b0dd0781a2a9e2bbfb1493e540c99f615b867a11cbf83
 
 livecheck.url       http://invisible-island.net/vttest/CHANGES
 livecheck.regex     ^(20\\d\\d\\d\\d\\d\\d)

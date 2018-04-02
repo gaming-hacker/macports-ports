@@ -19,7 +19,7 @@ homepage            http://pangopdf.sourceforge.net
 master_sites        sourceforge:project/pangopdf/pangoxsl/${version}
 
 checksums           rmd160  a0a94bf5c7011f4d82d0bb72e7628d440ddac372 \
-                    sha256  16554a407f1c56a42514afd979ff797a25c9bf67c51c985d9edc126747298df1
+sha256  16554a407f1c56a42514afd979ff797a25c9bf67c51c985d9edc126747298df1
 
 depends_build       port:pkgconfig
 

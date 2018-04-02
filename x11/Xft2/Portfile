@@ -26,8 +26,8 @@ use_bzip2			yes
 use_parallel_build		yes
 
 checksums           sha1    e025d790a7b6c4d283a78d8df06615cb10278e2d \
-                    rmd160  538536c5b10e2ae7696a2183a25bc3b59b5442b3 \
-                    sha256  f5a3c824761df351ca91827ac221090943ef28b248573486050de89f4bfcdc4c
+rmd160  538536c5b10e2ae7696a2183a25bc3b59b5442b3 \
+sha256  f5a3c824761df351ca91827ac221090943ef28b248573486050de89f4bfcdc4c
 
 depends_build \
 	port:pkgconfig

@@ -18,7 +18,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 distname            libksane-${version}
 checksums           rmd160  3b35271fa72ac5df833507364fb4814e7d5f6d57 \
-                    sha256  3a8ae92b21bba11aa3ac2b8a8d4e4aff30de526e0f966b6ae52f57972148cda2
+sha256  3a8ae92b21bba11aa3ac2b8a8d4e4aff30de526e0f966b6ae52f57972148cda2
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

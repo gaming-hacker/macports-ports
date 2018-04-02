@@ -18,8 +18,8 @@ long_description    MAPM is a set of functions that allow the user \
 homepage    http://www.tc.umn.edu/~ringx004/mapm-main.html
 master_sites    http://www.tc.umn.edu/~ringx004
 checksums    md5 a92ff86b6240f78f882661e0b1c11920 \
-             sha1 99dab13404ee30e7a830204da0a66cbae265a8b5 \
-             rmd160 f4e39962410ea4f9a0d85a3e07b7421e9795d6cb
+sha1 99dab13404ee30e7a830204da0a66cbae265a8b5 \
+rmd160 f4e39962410ea4f9a0d85a3e07b7421e9795d6cb
 
 use_configure    no
 use_parallel_build  yes

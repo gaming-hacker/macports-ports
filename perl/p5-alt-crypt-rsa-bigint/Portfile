@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  4ff8a777e99205d82de7e5e6c06f162fb219305e \
-                    sha256  76f434cab36999cdf09811345bb39d6b7cbed7e085b02338328c7f46e08b38f3
+sha256  76f434cab36999cdf09811345bb39d6b7cbed7e085b02338328c7f46e08b38f3
 
 if {${perl5.major} != ""} {
     conflicts       p${perl5.major}-crypt-rsa

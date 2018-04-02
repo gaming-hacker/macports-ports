@@ -42,17 +42,17 @@ master_sites	${homepage}/distrib/:sources				\
 		${homepage}/distrib/acl2-sources/books:nonstd
 
 checksums	acl2-${version}.tar.gz					\
-                    md5     a2738f4582d14f74664c93dad93ac055		\
-                    sha1    d4052a49a3c2112eeb04cf97570e2caea8df38dd	\
-                    rmd160  167b61cd8a812de804225096f4f3f04b87ba84cb	\
+md5     a2738f4582d14f74664c93dad93ac055		\
+sha1    d4052a49a3c2112eeb04cf97570e2caea8df38dd	\
+rmd160  167b61cd8a812de804225096f4f3f04b87ba84cb	\
 		workshops-${version}.tar.gz 				\
-                    md5     5ae8123cadfe323c3088a3666112ce07		\
-                    sha1    b3a10d4cd876cb6ccde96920f0103ec0d89f7e2f	\
-                    rmd160  63401f257b8b61564ed660681f82776c762d43da	\
+md5     5ae8123cadfe323c3088a3666112ce07		\
+sha1    b3a10d4cd876cb6ccde96920f0103ec0d89f7e2f	\
+rmd160  63401f257b8b61564ed660681f82776c762d43da	\
 		nonstd-${version}.tar.gz				\
-                    md5     7de68f04ee468e25b24a230507cdb663		\
-                    sha1    71e1da0cf417ef85f1002279b67227d729822a6e	\
-                    rmd160  caa90d4a742fb1df8ddeb24686bc49a2d79754ab
+md5     7de68f04ee468e25b24a230507cdb663		\
+sha1    71e1da0cf417ef85f1002279b67227d729822a6e	\
+rmd160  caa90d4a742fb1df8ddeb24686bc49a2d79754ab
 
 # ACL2 is distributed without a version number attached to the files.
 # So we can't tell if we have the latest version of a file by looking

@@ -20,7 +20,7 @@ platforms           darwin
 master_sites        http://dl.suckless.org/${name}/
 
 checksums           rmd160  02c94f3009e9fe69b12087d5884186b07bf89790 \
-                    sha256  faee4c7a62c38fc9791eff1ad06787c3c9b2b79f338806827f5152a7bc54951d
+sha256  faee4c7a62c38fc9791eff1ad06787c3c9b2b79f338806827f5152a7bc54951d
                     
 depends_build-append \
                     port:pkgconfig

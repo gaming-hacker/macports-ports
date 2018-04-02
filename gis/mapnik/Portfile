@@ -34,7 +34,7 @@ distname            mapnik-v${version}
 use_bzip2           yes
 
 checksums           rmd160  75c5560c3cadfb5b33c0ea2d41c8974c218aa44c \
-                    sha256  5bf17afaf456e63021a4c948e25cf5e756782ef369226441a1e436adc3e790e9
+sha256  5bf17afaf456e63021a4c948e25cf5e756782ef369226441a1e436adc3e790e9
 
 depends_build-append \
                     port:pkgconfig

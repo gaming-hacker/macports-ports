@@ -15,7 +15,7 @@ description         Perl JSON Web Token (JWT) implementation.
 long_description    ${description}
 
 checksums           rmd160 58e7b62016412247b38360ec820fccabff314fdf \
-                    sha256 77c182a98528f1714d82afc548d5b3b4dc93e67069128bb9b9413f24cf07248b
+sha256 77c182a98528f1714d82afc548d5b3b4dc93e67069128bb9b9413f24cf07248b
 
 if {${perl5.major} != ""} {
     depends_build-append \

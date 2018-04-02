@@ -23,7 +23,7 @@ universal_variant   no
 master_sites        https://www.adebenham.com/files/mtp
 
 checksums           rmd160  2fb67b80a95445369412166cdfbe5b88b1a74f24 \
-                    sha256  1baf357de16995a5f0b5bc1b6833517a77456481d861cdba70f1ce1316ce4c1d
+sha256  1baf357de16995a5f0b5bc1b6833517a77456481d861cdba70f1ce1316ce4c1d
 
 patchfiles          patch-mtpfs.h.diff
 post-patch {

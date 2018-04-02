@@ -22,7 +22,7 @@ long_description    Allows php applications to communicate with any Stomp compli
 homepage            http://www.php.net/stomp
 
 checksums           rmd160  7f7f8b757409e48360c578db7db0fc562b3fbd36 \
-                    sha256  7a7d748c6327ef8c6853dcadaedd41b4366ff821b401b11fab7b915cb5246575
+sha256  7a7d748c6327ef8c6853dcadaedd41b4366ff821b401b11fab7b915cb5246575
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:${php}-openssl

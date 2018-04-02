@@ -25,7 +25,7 @@ if {${subport} eq "${name}-devel"} {
     use_xz          yes
 
     checksums       rmd160  bdf712bed088fc497f14b625cd5dc48f4b8d7b3f \
-                    sha256  48f76e626e2235bd4b64aeea9bbbcb803eb8966a6d020d0ab8ddbe81930e98d8
+sha256  48f76e626e2235bd4b64aeea9bbbcb803eb8966a6d020d0ab8ddbe81930e98d8
 }
 
 supported_archs     noarch

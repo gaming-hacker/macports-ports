@@ -17,7 +17,7 @@ extract.suffix          .tgz
 platforms               darwin freebsd
 
 checksums               rmd160  d91b0301b75343772641646314d012001f8a2b34 \
-                        sha256  f269bbc43735d2e5f038bc9af0fe481f1ebedd552c0798ffcf78298f8e4b359b
+sha256  f269bbc43735d2e5f038bc9af0fe481f1ebedd552c0798ffcf78298f8e4b359b
 
 description             Mock Object library for PHPUnit
 long_description \

@@ -24,7 +24,7 @@ distname                ${version}
 worksrcdir              ${real_name}-${distname}
 
 checksums               rmd160  e1c2936e459aa21c7461090639fc5cfe60e9de44 \
-                        sha256  e0a05914d65922f696d122ff1d383f40e9984ac7b6efaf52d9d6132c5582e6ce
+sha256  e0a05914d65922f696d122ff1d383f40e9984ac7b6efaf52d9d6132c5582e6ce
 
 patchfiles              patch-setup.py.diff
 

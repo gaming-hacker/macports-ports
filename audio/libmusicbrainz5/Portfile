@@ -25,7 +25,7 @@ homepage            http://musicbrainz.org/doc/libmusicbrainz
 platforms           darwin
 
 checksums           rmd160  c7a0508df35ee88961d2d726a6a574cdb7c4549b \
-                    sha256  f37a34d30f1462bfdd19d8342325c869056f0f8649b182019a88b6c084266d16
+sha256  f37a34d30f1462bfdd19d8342325c869056f0f8649b182019a88b6c084266d16
 
 depends_build-append    port:pkgconfig
 depends_lib-append  port:neon

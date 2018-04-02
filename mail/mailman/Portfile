@@ -25,7 +25,7 @@ depends_lib         port:python27 \
 master_sites        gnu
 extract.suffix      .tgz
 checksums           rmd160  05c8ca110d42ec6a7fdecfef8a90029477791754 \
-                    sha256  240177e1ef561ede88d7b48283c3835f39bbd0b1ae19100d3520cbe43058339f
+sha256  240177e1ef561ede88d7b48283c3835f39bbd0b1ae19100d3520cbe43058339f
 
 # Create a startupitem
 startupitem.create  yes

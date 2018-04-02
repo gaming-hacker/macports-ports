@@ -19,7 +19,7 @@ distname		netclasses-${version}
 use_bzip2		yes
 
 checksums		rmd160  73d1a89841cacd2b357bf72c8002c5551fff6b47 \
-				sha256  6ef5879cd847da85e7a4dad9bfb74b08d41df60dc7fcbf01d689faad1aaced26
+sha256  6ef5879cd847da85e7a4dad9bfb74b08d41df60dc7fcbf01d689faad1aaced26
 
 depends_build		port:gnustep-make-cocoa
 

@@ -25,7 +25,7 @@ master_sites        http://download.osgeo.org/postgis/source
 distname            postgis-${version}
 
 checksums           rmd160  0c0d4ca47a9a0cddfdc3127558d19a5a193d8c68 \
-                    sha256  ea5374c5db6b645ba5628ddcb08f71d3b3d90a464d366b4e1d20d5a268bde4b9
+sha256  ea5374c5db6b645ba5628ddcb08f71d3b3d90a464d366b4e1d20d5a268bde4b9
 
 depends_build       port:autoconf \
                     port:automake \

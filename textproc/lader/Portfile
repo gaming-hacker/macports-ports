@@ -24,7 +24,7 @@ license             EPL-1
 
 master_sites        ${homepage}download/
 checksums           rmd160  2bd6188a2ee367c446852fac8984e781ab83607b \
-                    sha256  9605ed69530b234345caafe2d94d94627c55d8315c4684e3a5e9713b289abac1
+sha256  9605ed69530b234345caafe2d94d94627c55d8315c4684e3a5e9713b289abac1
 
 depends_lib         port:boost
 

@@ -16,8 +16,8 @@ homepage            https://github.com/boto/${python.rootname}
 master_sites        pypi:s/${python.rootname}
 distname            ${python.rootname}-${version}
 checksums           md5     b7437bbbd3195e916f9e992b78721067 \
-                    rmd160  854b382b07989da817d022d52fe417dfaccf277b \
-                    sha256  90dc18e028989c609146e241ea153250be451e05ecc0c2832565231dacdf59c1 \
+rmd160  854b382b07989da817d022d52fe417dfaccf277b \
+sha256  90dc18e028989c609146e241ea153250be451e05ecc0c2832565231dacdf59c1 \
 size    103335
 
 python.versions 27 36

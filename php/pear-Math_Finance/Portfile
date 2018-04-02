@@ -12,6 +12,6 @@ description         PEAR Math_Finance package
 long_description    ${description}
 
 checksums           rmd160  6dcbfbe1e028a24db34f93d65e44a5e25c375570 \
-                    sha256  a35d8f1ea40d639fae12c1766b6974c32bcfc1156931e56b2bba4db12f3fc7d3
+sha256  a35d8f1ea40d639fae12c1766b6974c32bcfc1156931e56b2bba4db12f3fc7d3
 
 depends_lib-append  port:pear-Math_Numerical_RootFinding

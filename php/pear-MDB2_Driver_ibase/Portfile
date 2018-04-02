@@ -12,6 +12,6 @@ description         PEAR MDB2_Driver_ibase package
 long_description    ${description}
 
 checksums           rmd160  41100b8eb44fa938718732be5d5f4b5ab5e2b844 \
-                    sha256  e8631f85337da0eee3070a8817661d9c9ba57d44ad3195545f9554e7374a1547
+sha256  e8631f85337da0eee3070a8817661d9c9ba57d44ad3195545f9554e7374a1547
 
 depends_lib-append  port:pear-MDB2

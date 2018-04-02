@@ -15,4 +15,4 @@ long_description    This extension aims to provide an simple and optimized \
                     event loop for a broad class of applications.
 
 checksums           rmd160  3ffeb130301c903126605686211b2577a85e761b \
-                    sha256  4fb5362415b650b5ae7152ca41c0fac3f010979fb3573a2e0218579eeacb2ec5
+sha256  4fb5362415b650b5ae7152ca41c0fac3f010979fb3573a2e0218579eeacb2ec5

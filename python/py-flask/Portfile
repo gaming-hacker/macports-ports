@@ -22,7 +22,7 @@ master_sites        pypi:F/Flask/
 default distname    {Flask-${version}}
 
 checksums           rmd160  d62ed9207085d74a6583a5a3b2b47700c7bef00b \
-                    sha256  49f44461237b69ecd901cc7ce66feea0319b9158743dd27a2899962ab214dac1
+sha256  49f44461237b69ecd901cc7ce66feea0319b9158743dd27a2899962ab214dac1
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

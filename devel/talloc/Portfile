@@ -20,7 +20,7 @@ homepage            https://talloc.samba.org/
 master_sites        https://www.samba.org/ftp/talloc/
 
 checksums           rmd160  87ee29aafe57689320e68ae8b80fe9e3e2c3b0c6 \
-                    sha256  987c0cf6815e948d20caaca04eba9b823e67773f361ffafe676e24b953cc604b
+sha256  987c0cf6815e948d20caaca04eba9b823e67773f361ffafe676e24b953cc604b
 
 post-patch {
     # PG waf does not allow setting location of ./waf

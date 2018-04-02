@@ -12,6 +12,6 @@ description         PEAR XML_Wddx package
 long_description    ${description}
 
 checksums           rmd160  9a13624a63347984f00f993fdba56fb6d0046a80 \
-                    sha256  a74fd6d5e78926a088e023b87f5cb00223be930fb864e336170d69db45cf7467
+sha256  a74fd6d5e78926a088e023b87f5cb00223be930fb864e336170d69db45cf7467
 
 depends_lib-append  port:pear-XML_Parser

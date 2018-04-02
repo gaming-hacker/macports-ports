@@ -18,7 +18,7 @@ homepage        http://links.twibright.com/
 master_sites    http://links.twibright.com/download/
 
 checksums       rmd160  a1240a32e90bd0ab2e047f74ea5bfd0f3a33bbac \
-                sha256  f70d0678ef1c5550953bdc27b12e72d5de86e53b05dd59b0fc7f07c507f244b8
+sha256  f70d0678ef1c5550953bdc27b12e72d5de86e53b05dd59b0fc7f07c507f244b8
 
 maintainers     nomaintainer
 use_bzip2       yes

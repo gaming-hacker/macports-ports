@@ -26,9 +26,9 @@ distfiles		magic-${version}${extract.suffix}
 
 checksums	\
 			magic-7.5.134.tgz \
-				md5  6cdb6a54d26f861ebcfe0b53128ab9ab \
-				sha1  bc277b5a85a2c57eaeda0bb44c354069136b6fe1 \
-				rmd160  f0511f96c0e64ac3d5e74d1690d015636a96c4c2
+md5  6cdb6a54d26f861ebcfe0b53128ab9ab \
+sha1  bc277b5a85a2c57eaeda0bb44c354069136b6fe1 \
+rmd160  f0511f96c0e64ac3d5e74d1690d015636a96c4c2
 
 configure.args --with-interpreter=no --without-x
 

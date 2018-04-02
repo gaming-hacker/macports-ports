@@ -24,7 +24,7 @@ homepage            http://dyncall.org/
 master_sites        ${homepage}r${version}
 
 checksums           rmd160  e085e463c06997eaecd408d33a091311cc63c199 \
-                    sha256  8a7628fd00b4e0acc952c5d9d03035de90f349d4d4dfdad4c48a037f2a0979f9
+sha256  8a7628fd00b4e0acc952c5d9d03035de90f349d4d4dfdad4c48a037f2a0979f9
 
 cmake.out_of_source yes
 

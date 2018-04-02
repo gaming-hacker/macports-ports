@@ -22,7 +22,7 @@ homepage            http://latex-mk.sourceforge.net/
 master_sites        sourceforge
 
 checksums           md5     88307abfefec86bdf51fcacd47374586 \
-                    sha1    e7bc1a422a88525332d275b40fc1516861bce91a
+sha1    e7bc1a422a88525332d275b40fc1516861bce91a
 
 depends_lib         bin:latex:texlive-latex
 

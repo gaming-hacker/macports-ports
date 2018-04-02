@@ -20,4 +20,4 @@ long_description    ArpSpyX will passively sniff your network for ARP packets \
 homepage            http://www.thebends.org/~allen/arpspyx/
 
 checksums           rmd160  a96bc9cba19b78dd0ac10a324cf7aaeece08e0ab \
-                    sha256  ebfba67ca04256e62f0d928ec0eb459911de69df1faaf8fb44694ee909424aba
+sha256  ebfba67ca04256e62f0d928ec0eb459911de69df1faaf8fb44694ee909424aba

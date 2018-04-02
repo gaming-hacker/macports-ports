@@ -15,7 +15,7 @@ homepage            http://mod-qos.sourceforge.net/index.html
 master_sites        sourceforge:project/mod-qos/
 
 checksums           rmd160  770c9b305f6450dff9a3874d3350cba11a1b470d \
-                    sha256  7cbc349958f58dde6f693c0463bbcbcd7dd4692cb3677cf83b9a10c29619f0d2
+sha256  7cbc349958f58dde6f693c0463bbcbcd7dd4692cb3677cf83b9a10c29619f0d2
 
 depends_build       port:autoconf \
                     port:automake

@@ -15,4 +15,4 @@ description         Configuration using Java style properties
 long_description    ${description}
 
 checksums           rmd160  8036ce3d30cd93c9cbabedb510d269ce535812e9 \
-                    sha256  5d04395be7e14e970a03ea952fb7629ae304d97c031f90cc1c29bd0a6a62fc40
+sha256  5d04395be7e14e970a03ea952fb7629ae304d97c031f90cc1c29bd0a6a62fc40

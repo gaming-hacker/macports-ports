@@ -16,7 +16,7 @@ homepage            http://www.percona.com/software/percona-toolkit
 master_sites        https://www.percona.com/downloads/percona-toolkit/$version/tarball
 
 checksums           rmd160  03181ed37d2348a830acd93fab0b579631ab42e3 \
-                    sha256  8439be616ee43b22ba7526135719ef6f40af6621327acc30b84be5f18cd426b1
+sha256  8439be616ee43b22ba7526135719ef6f40af6621327acc30b84be5f18cd426b1
 
 set mp.perl.versions {
     5.26

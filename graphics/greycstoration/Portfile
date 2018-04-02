@@ -21,8 +21,8 @@ use_bzip2        yes
 
 distname         GREYCstoration-${version}
 checksums        md5 9acb29050f479b6d4e59bb1096a87451 \
-                 sha1 2bfa17573b60a1477c99f34cfb8400d9b78aa9c2 \
-                 rmd160 b3cb5d0638952c601b70158ee3e63b45feb5fb07
+sha1 2bfa17573b60a1477c99f34cfb8400d9b78aa9c2 \
+rmd160 b3cb5d0638952c601b70158ee3e63b45feb5fb07
 
 use_configure   no
 

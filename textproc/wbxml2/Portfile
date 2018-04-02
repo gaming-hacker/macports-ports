@@ -19,7 +19,7 @@ distname            libwbxml-${version}
 use_bzip2           yes
 
 checksums           rmd160  349efb4961074f500399a1a7f7170d21b2d257d4 \
-                    sha256  2f5ffe6f59986b34f9032bfbf013e32cabf426e654c160d208a99dc1b6284d29
+sha256  2f5ffe6f59986b34f9032bfbf013e32cabf426e654c160d208a99dc1b6284d29
 
 patchfiles          patch-cmake-CMakeLists.txt.diff \
                     patch-src-CMakeLists.txt.diff

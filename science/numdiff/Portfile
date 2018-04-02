@@ -21,7 +21,7 @@ platforms           darwin
 master_sites        http://savannah.nongnu.org/download/numdiff/
 
 checksums           rmd160  f6fb3a6bc046861f02575ce1cf55b12e19ed99f4 \
-                    sha256  87284a117944723eebbf077f857a0a114d818f8b5b54d289d59e73581194f5ef
+sha256  87284a117944723eebbf077f857a0a114d818f8b5b54d289d59e73581194f5ef
 
 depends_lib         port:gmp
 

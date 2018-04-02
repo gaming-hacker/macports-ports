@@ -32,7 +32,7 @@ master_sites        pypi:${_n}/${_name}/
 distname            ${_name}-${version}
 
 checksums           rmd160  29390df455c6b3cbc5e6ce84c57ad3c0f3873487 \
-                    sha256  52dc7ae13a8e81d78afbc0f13e88ecbdf969673923425a4d65021ae241d99b91
+sha256  52dc7ae13a8e81d78afbc0f13e88ecbdf969673923425a4d65021ae241d99b91
 
 patchfiles          patch-comparsion-error.diff
 

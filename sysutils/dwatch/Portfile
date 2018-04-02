@@ -17,8 +17,8 @@ homepage            http://siag.nu/dwatch
 master_sites        http://siag.nu/pub/dwatch
 
 checksums           md5    25c06240cb5ab8126badc8a78dcd2b79 \
-                    sha1   d1588364fcbad85b7ba81fa027199e983de55435 \
-                    rmd160 54e28a0c1862372fc455fd5ff71aca82495dacac
+sha1   d1588364fcbad85b7ba81fa027199e983de55435 \
+rmd160 54e28a0c1862372fc455fd5ff71aca82495dacac
 
 patchfiles          patch-Makefile.diff \
                     patch-dwatch.c.diff

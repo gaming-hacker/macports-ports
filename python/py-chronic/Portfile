@@ -20,7 +20,7 @@ python.versions 27 36
 
 if { $subport ne $name } {
     checksums           rmd160  4320705a0656fad02dfa4a73bdc044bbb1c593f2 \
-                        sha256  098a3bb7e5b9140ecad4a49fa4fadaa5c9b937fa8abd901133294bf85a2579cd
+sha256  098a3bb7e5b9140ecad4a49fa4fadaa5c9b937fa8abd901133294bf85a2579cd
 
     livecheck.type      none
 }

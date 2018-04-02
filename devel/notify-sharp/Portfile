@@ -17,7 +17,7 @@ homepage            http://www.ndesk.org/NotifySharp
 master_sites        freebsd
 
 checksums           rmd160  35ae85d2f23a641988f7325edd343764c8f5e038 \
-                    sha256  bb6649ad2e4bdd217f1dfbde3e550c2b8c1800641dbd0b66cef78155bfb86fcc
+sha256  bb6649ad2e4bdd217f1dfbde3e550c2b8c1800641dbd0b66cef78155bfb86fcc
 
 depends_build       port:pkgconfig
 

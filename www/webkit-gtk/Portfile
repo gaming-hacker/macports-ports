@@ -29,7 +29,7 @@ distname            webkitgtk-${version}
 dist_subdir         webkit-gtk
 
 checksums           rmd160  e1f72498f911465f5ba152313dd9c62ae8d5eee6 \
-                    sha256  588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7
+sha256  588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7
 
 depends_build       port:pkgconfig \
                     port:gtk-doc \

@@ -12,4 +12,4 @@ description         PEAR File_Mogile package
 long_description    ${description}
 
 checksums           rmd160  39cdca1c1638f933b5e9955305f45a999455b80d \
-                    sha256  e609a95b17c669934810cd9b1baa439019057e853bb1ef13317fced9393f5389
+sha256  e609a95b17c669934810cd9b1baa439019057e853bb1ef13317fced9393f5389

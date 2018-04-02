@@ -24,7 +24,7 @@ homepage            http://programming.nu/
 platforms           darwin
 
 checksums           rmd160  f2a7ef7366d577bbc91307f95e013c3d2401c1f2 \
-                    sha256  9230551a2c15fe29703d409cef124a531995dc271ef7ec99919e731172c87532 \
+sha256  9230551a2c15fe29703d409cef124a531995dc271ef7ec99919e731172c87532 \
 size    994256
 
 # error: instance variables may not be placed in class extension

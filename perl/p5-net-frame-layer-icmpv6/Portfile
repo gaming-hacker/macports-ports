@@ -19,7 +19,7 @@ long_description    This modules implements the encoding and decoding of \
                     for other attributes and methods.
 
 checksums           rmd160  7d640faa8fa4240363b487e508635487a05b8a17 \
-                    sha256  15e49630ed90804c37b388a8b061367b3be564e389ceeb72e0dd071425c7e790
+sha256  15e49630ed90804c37b388a8b061367b3be564e389ceeb72e0dd071425c7e790
 
 if {${perl5.major} != ""} {
     depends_lib-append \

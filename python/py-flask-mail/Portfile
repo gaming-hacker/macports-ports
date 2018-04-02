@@ -21,7 +21,7 @@ supported_archs     noarch
 homepage            http://pythonhosted.org/Flask-Mail/
 
 checksums           rmd160  4428a70c792d942f41ea2fdef3f515444f473705 \
-                    sha256  3f5c2a7218bca5328a70c8cc4f1da2c09a14e6fc9a375485303dd92bf5883938
+sha256  3f5c2a7218bca5328a70c8cc4f1da2c09a14e6fc9a375485303dd92bf5883938
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \

@@ -23,7 +23,7 @@ dist_subdir         ${name}/${version}
 use_zip             yes
 
 checksums           rmd160  73889dec7306cd3d435fe85e531fe2d81309ae4f \
-                    sha256  9a2a3a8dcc7bdac58fca88fde21bd9676b2fb4c31a178b2da74a7a3227bee0bd
+sha256  9a2a3a8dcc7bdac58fca88fde21bd9676b2fb4c31a178b2da74a7a3227bee0bd
 
 build.dir           ${worksrcpath}/Source/PBTOMAKE
 

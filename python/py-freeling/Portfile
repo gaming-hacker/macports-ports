@@ -24,7 +24,7 @@ distname            freeling-${version}
 dist_subdir         freeling
 
 checksums           rmd160  85be3adcf20690040d2d3e5927c9ea02b896a652 \
-                    sha256  e98471ceb3f58afbe70369584d8d316323d13fcc51d09b2fd7f431a3220982ba
+sha256  e98471ceb3f58afbe70369584d8d316323d13fcc51d09b2fd7f431a3220982ba
 
 if {${name} ne ${subport}} {
     depends_build-append \

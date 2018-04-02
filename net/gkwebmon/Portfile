@@ -16,8 +16,8 @@ platforms               darwin
 master_sites            sourceforge
 
 checksums               md5     22ffd3d96c1a04383daa3ce98d0e1364 \
-                        sha1    f1586c1562172522977cb4ca0fc1097d33d28959 \
-                        rmd160  7112dc753002033e28752752fa6ba350401468b4
+sha1    f1586c1562172522977cb4ca0fc1097d33d28959 \
+rmd160  7112dc753002033e28752752fa6ba350401468b4
 
 extract.suffix		.tgz
 

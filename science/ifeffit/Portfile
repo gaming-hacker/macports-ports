@@ -20,7 +20,7 @@ long_description    ${description} \
 homepage            http://cars.uchicago.edu/ifeffit
 
 checksums           rmd160  7b09aa5722a4aa638364c35e15d64b857cdb822b \
-                    sha256  79fa938643a1417c5b01be4b6196bd0ea6bf40685448ba98546c7989b0f48a48
+sha256  79fa938643a1417c5b01be4b6196bd0ea6bf40685448ba98546c7989b0f48a48
 
 depends_lib         port:pgplot \
                     port:libpng \

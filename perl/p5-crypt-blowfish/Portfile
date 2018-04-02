@@ -17,7 +17,7 @@ long_description    This is Crypt::Blowfish, an XS-based \
 platforms           darwin
 
 checksums           rmd160  720210138a50fad986a6a42a274a28a020aaa2ed \
-                    sha256  46b3431ffb6bf5b9cb359f79565d48407e652ad2b04fdf5ca62a69e7197a67b1
+sha256  46b3431ffb6bf5b9cb359f79565d48407e652ad2b04fdf5ca62a69e7197a67b1
 
 if {${perl5.major} != ""} {
     depends_build-append \

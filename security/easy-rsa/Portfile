@@ -16,7 +16,7 @@ distfiles           EasyRSA-${version}.tgz
 github.tarball_from releases
 
 checksums           rmd160  529ca599f2463a2e7228743e476a84f5f4d628a1 \
-                    sha256  dbdaf5b9444b99e0c5221fd4bcf15384c62380c1b63cea23d42239414d7b2d4e
+sha256  dbdaf5b9444b99e0c5221fd4bcf15384c62380c1b63cea23d42239414d7b2d4e
 
 worksrcdir          EasyRSA-${version}
 

@@ -18,7 +18,7 @@ long_description \
     ansible-lint checks playbooks for practices and behaviour that could potentially be improved
 
 checksums           rmd160  41da918b12b7d3ef9ae7cbee6e07ec653458771b \
-                    sha256  5ef527543ec8a6060da93aa4efcdeb360564242495d0a6e15fcbde071fa5decc
+sha256  5ef527543ec8a6060da93aa4efcdeb360564242495d0a6e15fcbde071fa5decc
 
 depends_run-append  path:bin/ansible:py27-ansible
 

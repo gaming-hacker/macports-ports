@@ -18,7 +18,7 @@ license             {BSD LGPL GPL}
 
 master_sites        http://alaginrc.nict.go.jp/opinion/src/
 checksums           rmd160  abbfb97605e4316349f279332d3785af3c39d9a0 \
-                    sha256  09c0a2ca339bc5b50afccecbf0b130aec9d15445155ee36fa6605a02952db3cb
+sha256  09c0a2ca339bc5b50afccecbf0b130aec9d15445155ee36fa6605a02952db3cb
 
 patchfiles          patch-extract.sh.diff \
                     patch-makemdl.sh.diff \

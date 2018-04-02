@@ -20,7 +20,7 @@ homepage            http://www.indexdata.com/yazpp/
 master_sites        http://ftp.indexdata.com/pub/yazpp/
 
 checksums           rmd160  b88b81a72d5273aae05c9ee77ca11ea83ac07383 \
-                    sha256  802537484d4247706f31c121df78b29fc2f26126995963102e19ef378f3c39d2
+sha256  802537484d4247706f31c121df78b29fc2f26126995963102e19ef378f3c39d2
 
 depends_lib         port:yaz
 

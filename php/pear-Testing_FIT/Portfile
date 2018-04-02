@@ -12,4 +12,4 @@ description         PEAR Testing_FIT package
 long_description    ${description}
 
 checksums           rmd160  9990f209d0e33127dea827e8235ac04c7a4fb23a \
-                    sha256  0171b171479ecd56a60ad5d1d0251c8d660afee7df2674fa111e70b2032911dd
+sha256  0171b171479ecd56a60ad5d1d0251c8d660afee7df2674fa111e70b2032911dd

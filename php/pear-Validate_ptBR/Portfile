@@ -12,4 +12,4 @@ description         PEAR Validate_ptBR package
 long_description    ${description}
 
 checksums           rmd160  4e012f121790377296dd76da9ce93ce7e2c13666 \
-                    sha256  4888346c216d71841172c4790e1d2dbe69ea31bff59159277bde5de0622056c2
+sha256  4888346c216d71841172c4790e1d2dbe69ea31bff59159277bde5de0622056c2

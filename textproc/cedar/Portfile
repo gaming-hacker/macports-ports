@@ -23,7 +23,7 @@ license             {GPL-2 LGPL-2.1 BSD}
 
 master_sites        ${homepage}
 checksums           rmd160  28b16f4ebf3e6d79a82896a36450b0191bae5c26 \
-                    sha256  200a31b0a82ac0e6756a09959e8e380afd35d3d175c88fb54c966099995f933a
+sha256  200a31b0a82ac0e6756a09959e8e380afd35d3d175c88fb54c966099995f933a
 
 post-destroot {
     # install additional documents.

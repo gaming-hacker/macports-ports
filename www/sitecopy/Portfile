@@ -14,8 +14,8 @@ long_description    sitecopy allows you to easily maintain remote Web sites. The
 homepage            http://www.manyfish.co.uk/sitecopy
 master_sites        ${homepage}
 checksums           md5     b3aeb5a5f00af3db90b408e8c32a6c01 \
-                    sha1    2de3679d98c31331f48ff10e824c615a180f2d3b \
-                    rmd160  9e1bb73272e88aa06ebf12323080f23dfe8f7ad8
+sha1    2de3679d98c31331f48ff10e824c615a180f2d3b \
+rmd160  9e1bb73272e88aa06ebf12323080f23dfe8f7ad8
 
 depends_build       port:pkgconfig
 depends_lib         port:neon

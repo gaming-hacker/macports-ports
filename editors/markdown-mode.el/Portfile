@@ -15,7 +15,7 @@ github.setup           jrblevin markdown-mode 2.3 v
 name                   markdown-mode.el
 epoch                  1
 checksums              rmd160  3f53e748765f978de86eff6ec83013ecb5dd499e \
-                       sha256  a8de02e2d2b58ade8fba91b1a89e02461b6e942fc17d0e5b1163cbbf3213bf14
+sha256  a8de02e2d2b58ade8fba91b1a89e02461b6e942fc17d0e5b1163cbbf3213bf14
 
 depends_lib-append     path:${emacs_binary}:${emacs_binary_provider}
 

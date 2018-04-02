@@ -20,7 +20,7 @@ description         Wangle is a framework providing a set of common \
 long_description    ${description}
 
 checksums           rmd160  4ccf688627bc6333b6ada3c2db87f8f80493946e \
-                    sha256  661a1999208b49a0e6bf335ac863533102b70b4e7ae3413911120b89b6caedb2
+sha256  661a1999208b49a0e6bf335ac863533102b70b4e7ae3413911120b89b6caedb2
 
 worksrcdir          ${worksrcdir}/wangle
 

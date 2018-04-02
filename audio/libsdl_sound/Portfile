@@ -21,9 +21,9 @@ master_sites    http://icculus.org/SDL_sound/downloads/
 distname        SDL_sound-${version}
 
 checksums           md5     aa09cd52df85d29bee87a664424c94b5 \
-                    sha1    1984bc20b2c756dc71107a5a0a8cebfe07e58cb1 \
-                    rmd160  8e56daa71f827a4a22e7071a4e4f37c21dd96105 \
-                    sha256  3999fd0bbb485289a52be14b2f68b571cb84e380cc43387eadf778f64c79e6df \
+sha1    1984bc20b2c756dc71107a5a0a8cebfe07e58cb1 \
+rmd160  8e56daa71f827a4a22e7071a4e4f37c21dd96105 \
+sha256  3999fd0bbb485289a52be14b2f68b571cb84e380cc43387eadf778f64c79e6df \
 size    1127100
 
 depends_lib     port:libsdl \

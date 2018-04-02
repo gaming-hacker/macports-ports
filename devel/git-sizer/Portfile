@@ -22,7 +22,7 @@ long_description        Compute various size metrics for a Git repository, \
 github.tarball_from     tags
 
 checksums               rmd160  1280b3cc17db70f79851dfb36c854cbbb7a43b0d \
-                        sha256  39fd8cdf799c4ccd0d636574e3879fa618ccfe6753e9df24c745331052a47c4d \
+sha256  39fd8cdf799c4ccd0d636574e3879fa618ccfe6753e9df24c745331052a47c4d \
 size    101963
 
 depends_build           port:go

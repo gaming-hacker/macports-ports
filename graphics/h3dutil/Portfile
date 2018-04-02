@@ -20,7 +20,7 @@ homepage            http://www.h3dapi.org/
 master_sites        ftp://www.h3dapi.org/pub/releases/source/
 
 checksums           rmd160  46b21c38b7cac27262e9ebd9cc3ae67b7a55cc7f \
-                    sha256  0ea04e813a6fd87dc244013c6104d22da92d1771d1cb4f134716be98462a4fb2
+sha256  0ea04e813a6fd87dc244013c6104d22da92d1771d1cb4f134716be98462a4fb2
 
 depends_lib         port:dcmtk \
                     port:freeimage \

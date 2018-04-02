@@ -12,4 +12,4 @@ description         PEAR Math_Quaternion package
 long_description    ${description}
 
 checksums           rmd160  80bd19ce42cc11ac3300b7f72757fa3d55ef2398 \
-                    sha256  2733ded737ae06a29a88db565836a25a23aeab6bad4770c43c75f12c90dd38f4
+sha256  2733ded737ae06a29a88db565836a25a23aeab6bad4770c43c75f12c90dd38f4

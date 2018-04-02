@@ -28,7 +28,7 @@ distname                ${name}${my_version}-dist
 extract.suffix          -all${extract.suffix}
 
 checksums               rmd160  f22d2dc27fcb54187ec6bec11e100483c009a054 \
-                        sha256  f6950c669d04e34bc8ba4f424c780a71b9b0d2503fb683a7ca0b8f10349661b1
+sha256  f6950c669d04e34bc8ba4f424c780a71b9b0d2503fb683a7ca0b8f10349661b1
 
 depends_lib             port:ncurses
 

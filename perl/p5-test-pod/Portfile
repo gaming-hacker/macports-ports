@@ -14,7 +14,7 @@ description         check for POD errors in files
 long_description    ${description}
 
 checksums           rmd160  0dd15f2e6c50759a643bf0cacd6a48c1a552dd44 \
-                    sha256  c1a1d3cedf4a579e3aad89c36f9878a8542b6656dbe71f1581420f49582d7efb
+sha256  c1a1d3cedf4a579e3aad89c36f9878a8542b6656dbe71f1581420f49582d7efb
 
 platforms           darwin
 

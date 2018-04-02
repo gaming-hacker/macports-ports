@@ -20,7 +20,7 @@ homepage            http://www.pstoedit.net/
 master_sites        sourceforge:project/pstoedit/pstoedit/${version}
 
 checksums           rmd160  b41a02485ebba3861681d280407a788a59538d15 \
-                    sha256  06b86113f7847cbcfd4e0623921a8763143bbcaef9f9098e6def650d1ff8138c
+sha256  06b86113f7847cbcfd4e0623921a8763143bbcaef9f9098e6def650d1ff8138c
 
 depends_build       port:pkgconfig
 

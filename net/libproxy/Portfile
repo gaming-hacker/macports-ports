@@ -22,7 +22,7 @@ long_description    Libproxy exists to answer the question: Given a \
                     the details, enabling you to get back to programming.
 
 checksums           rmd160  67300e2554c8e51ab1ca815b41ddcfdf523a56c4 \
-                    sha256  7a1eaecbbd483ea21330aec126033032ef79743351cb967183c332dd46524f81
+sha256  7a1eaecbbd483ea21330aec126033032ef79743351cb967183c332dd46524f81
 
 patchfiles          patch-libproxy-cmake.diff \
                     patch-libproxy-test-CMakeLists.txt.diff \

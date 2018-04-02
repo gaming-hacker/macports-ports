@@ -14,7 +14,7 @@ platforms        darwin
 master_sites     ${homepage}
 distname         awk
 checksums        rmd160  3872ef2407a4ad57f55c45dc60fc917eca7a614e \
-                 sha256  8dc092165c5a4e1449f964286483d06d0dbfba4b0bd003cb5dab30de8f6d9b83
+sha256  8dc092165c5a4e1449f964286483d06d0dbfba4b0bd003cb5dab30de8f6d9b83
 dist_subdir      ${name}/${version}
 
 extract.mkdir    yes

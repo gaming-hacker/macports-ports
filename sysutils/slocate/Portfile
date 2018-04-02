@@ -23,8 +23,8 @@ master_sites        http://slackware.mirrors.tds.net/pub/slackware/slackware_sou
     http://slackware.mirrors.pair.com/slackware_source/a/slocate/
 
 checksums           md5 908e6949d959ae7b686c10bb76b35bf3 \
-                    sha1 e427552664385b86931b7626c26bd95ae5f9f085 \
-                    rmd160 d3b1e818cc35ce8e87ec1b0764f6b2145a319e13
+sha1 e427552664385b86931b7626c26bd95ae5f9f085 \
+rmd160 d3b1e818cc35ce8e87ec1b0764f6b2145a319e13
 patchfiles          patch-Makefile \
                     patch-src-Makefile \
                     patch-src-conf.c \

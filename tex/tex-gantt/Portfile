@@ -24,7 +24,7 @@ depends_lib         bin:tex:texlive
 use_configure       no
 
 checksums           sha1    e57dd3118e2acd8bdb8a834c8bc68671aee573e0 \
-                    rmd160  a434294dde507cb5b59edc99c338cb715586be8b
+rmd160  a434294dde507cb5b59edc99c338cb715586be8b
 
 extract {
     file copy ${distpath}/${distname}.sty ${workpath}

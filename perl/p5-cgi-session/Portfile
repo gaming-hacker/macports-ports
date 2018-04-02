@@ -15,7 +15,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  1937f19e8d247369826254da3e69459a0fda5efd \
-                    sha256  46756461c24ce7666b8108ddb96dbab612699df3012c80ef11016619fe1554f7
+sha256  46756461c24ce7666b8108ddb96dbab612699df3012c80ef11016619fe1554f7
 
 if {${perl5.major} != ""} {
     perl5.use_module_build

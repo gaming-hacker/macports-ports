@@ -28,7 +28,7 @@ platforms           darwin
 master_sites        http://archives.eyrie.org/software/kerberos/ \
                     http://archives.eyrie.org/software/ARCHIVE/wallet/
 checksums           rmd160 188b3561fcffe99342fcfb1312b58df3f3d919b5 \
-                    sha256 676d3d6e407509fc9da1dd87d98fadc71920dabfbc4bdeb8cde5e2bc937268b8
+sha256 676d3d6e407509fc9da1dd87d98fadc71920dabfbc4bdeb8cde5e2bc937268b8
 
 # Start with the dependencies we know we need
 depends_lib-append  port:kerberos5 \

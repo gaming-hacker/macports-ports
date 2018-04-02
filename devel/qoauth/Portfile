@@ -23,6 +23,6 @@ distname            ${name}-${version}-src
 use_bzip2           yes
 
 checksums           rmd160 f6cb736a4c4ca036f7bb3bc840243cf005febd3b \
-                    sha256 b8579a77cecb07928e557c4a019db902a0f040b22f7926f147299e87ac5a54fd
+sha256 b8579a77cecb07928e557c4a019db902a0f040b22f7926f147299e87ac5a54fd
 
 patchfiles          patch-src-src.pro.diff

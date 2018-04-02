@@ -21,7 +21,7 @@ master_sites        https://www.kraxel.org/releases/fbida/
 distname            fbida-${version}
 
 checksums           rmd160  9efb457253558b7cd10e8cddbdef24585c0726f7 \
-                    sha256  95b7c01556cb6ef9819f358b314ddfeb8a4cbe862b521a3ed62f03d163154438 \
+sha256  95b7c01556cb6ef9819f358b314ddfeb8a4cbe862b521a3ed62f03d163154438 \
 size    296826
 
 patchfiles          patch-cflags.diff \

@@ -25,7 +25,7 @@ long_description    Livestreamer is a command-line utility that pipes video stre
 homepage            http://docs.livestreamer.io/
 
 checksums           rmd160  51b79cff3a59ccc20f360176f857a969ab5e050e \
-                    sha256  a16a91122c4ccae92b8bfca7be65dbe08caa2c2460a160d73cda51d62c69281d
+sha256  a16a91122c4ccae92b8bfca7be65dbe08caa2c2460a160d73cda51d62c69281d
 
 python.default_version  34
 

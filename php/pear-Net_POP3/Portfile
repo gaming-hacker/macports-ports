@@ -12,6 +12,6 @@ description         PEAR Net_POP3 package
 long_description    ${description}
 
 checksums           rmd160  b9f3f2aab75df9e1cf131333dbff852451e8f5de \
-                    sha256  766d6d539c6c6b1dd448f1dd479b77266338f2ea1fd712af551dfe8e7cedf726
+sha256  766d6d539c6c6b1dd448f1dd479b77266338f2ea1fd712af551dfe8e7cedf726
 
 depends_lib-append  port:pear-Net_Socket

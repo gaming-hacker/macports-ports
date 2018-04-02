@@ -29,7 +29,7 @@ platforms           darwin freebsd
 
 master_sites        http://www.yersinia.net/download/
 checksums           rmd160  976c1c500667f93d08630a4bd516917e104b2081 \
-                    sha256  042abc466c5b470b97079e0049b4029a8cbb75d583cfbfb756fca76e460d40b4
+sha256  042abc466c5b470b97079e0049b4029a8cbb75d583cfbfb756fca76e460d40b4
 
 extract.mkdir       yes
 

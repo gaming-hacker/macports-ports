@@ -37,7 +37,7 @@ long_description    SQLite Database Browser is a visual tool used to create, des
 homepage            http://sqlitebrowser.org
 
 checksums           rmd160  96624d2a492fb8b81c8f91d41c2d988a16a18bd0 \
-                    sha256  ea30e8912972b14991827388dc6b99e82772637a46e0b132430504dd262df08d
+sha256  ea30e8912972b14991827388dc6b99e82772637a46e0b132430504dd262df08d
 
 universal_variant   no
 

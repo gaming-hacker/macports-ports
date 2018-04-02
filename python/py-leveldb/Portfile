@@ -19,7 +19,7 @@ homepage            https://code.google.com/p/py-leveldb/
 master_sites        pypi:l/${real_name}/
 
 checksums           rmd160  53323e06519ff4907e9b20cb10b12d05f8c04bc6 \
-                    sha256  9ffc9b68c8c0e0a996e2409e4a95ef1fbb4dcf0f6040b21b9153cbd57c90e079
+sha256  9ffc9b68c8c0e0a996e2409e4a95ef1fbb4dcf0f6040b21b9153cbd57c90e079
 
 distname            ${real_name}-${version}
 

@@ -26,8 +26,8 @@ master_sites        http://download.savannah.gnu.org/releases/dwarf-ng \
                     http://www.autistici.org/0xFE/software/releases/dwarf-ng
 
 checksums           md5     c67148b14cec1712732e0aa30e478726 \
-                    sha1    19a69424bd208741a325a4fc0e791a516c3bc8bc \
-                    rmd160  255040679c50046e6c1ecf5f3c806c886b3db573
+sha1    19a69424bd208741a325a4fc0e791a516c3bc8bc \
+rmd160  255040679c50046e6c1ecf5f3c806c886b3db573
 
 use_autoreconf      yes
 autoreconf.cmd      ./autogen.sh

@@ -19,7 +19,7 @@ long_description    This module allows you to tie Perl associative arrays (hashe
                     associative array, from which individual fields can be set or retrieved.
 
 checksums           rmd160  1cd36982507017641b1a7d8f78fe1f0c38be4c4f \
-                    sha256  28e726eef081036ae04cadd068feb2dce34fa3cd3b6397991ebddb1a907ca422
+sha256  28e726eef081036ae04cadd068feb2dce34fa3cd3b6397991ebddb1a907ca422
 
 platforms           darwin
 

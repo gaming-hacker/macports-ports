@@ -19,7 +19,7 @@ license			 BSD
 
 master_sites     http://downloads.us.xiph.org/releases/celt/
 checksums        rmd160  ae5fadd3e0ef6e0fad66fdb3dc81ce390ca76ca2 \
-                 sha256  7e64815d4a8a009d0280ecd235ebd917da3abdcfd8f7d0812218c085f9480836
+sha256  7e64815d4a8a009d0280ecd235ebd917da3abdcfd8f7d0812218c085f9480836
 
 depends_lib      port:libogg
 

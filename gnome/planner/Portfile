@@ -22,7 +22,7 @@ homepage        https://wiki.gnome.org/Apps/Planner
 platforms       darwin
 master_sites    gnome:sources/${name}/${branch}/
 checksums       rmd160 edfb1df0158695d918a6848b7e62ebed8830a210 \
-                sha256 130d29e6d6b8c1994017deba2acca05a4bf83ba1e169635ec8c5c7878abe0696
+sha256 130d29e6d6b8c1994017deba2acca05a4bf83ba1e169635ec8c5c7878abe0696
 
 distname        planner-${version}
 use_xz          yes

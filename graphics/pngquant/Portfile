@@ -23,7 +23,7 @@ use_bzip2           yes
 distfiles           ${name}-${version}-src${extract.suffix}
 
 checksums           rmd160  f76bf91ed33b00eb5f5daf1e3b03ffe1170d5707 \
-                    sha256  ef41138ff320495c785155eb9f774ae6e1d41978b3e490854e6a8c46c0b032e2
+sha256  ef41138ff320495c785155eb9f774ae6e1d41978b3e490854e6a8c46c0b032e2
 
 depends_lib         port:libpng \
                     port:zlib

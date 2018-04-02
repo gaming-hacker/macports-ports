@@ -31,7 +31,7 @@ master_sites        pypi:R/Routes
 distname            Routes-${version}
 
 checksums           rmd160  1d3216bf7593c630503895db9eddacc3df869950 \
-                    sha256  26ee43340fca5a32769ffe0c58edcb396ccce6bc1dfa689ddf844d50877355fd
+sha256  26ee43340fca5a32769ffe0c58edcb396ccce6bc1dfa689ddf844d50877355fd
 
 if {${name} ne ${subport}} {
     depends_build-append \

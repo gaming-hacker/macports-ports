@@ -20,7 +20,7 @@ platforms           darwin
 master_sites        ${homepage}/sources/
 use_xz              yes
 checksums           rmd160  35001be139d698ff9d22227d7282aad1c3359503 \
-                    sha256  ad6d1d0ba40b153c155d5b26425e88531b24bb9969bac0341040e48cbb77c391 \
+sha256  ad6d1d0ba40b153c155d5b26425e88531b24bb9969bac0341040e48cbb77c391 \
 size    4682788
 
 set version_ruby    2.5

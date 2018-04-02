@@ -20,7 +20,7 @@ master_sites        http://dl.exactcode.de/oss/exact-image/
 use_bzip2           yes
 
 checksums           rmd160  2ce154670bdb8fd3436cdbf1139b769d63ddc60a \
-                    sha256  665b205740b17b4162fae73aa36eb7046f28bb216d612461ca0499ff47a566ba
+sha256  665b205740b17b4162fae73aa36eb7046f28bb216d612461ca0499ff47a566ba
 
 depends_build       port:pkgconfig
 depends_lib         port:antigraingeometry \

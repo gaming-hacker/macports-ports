@@ -24,7 +24,7 @@ homepage            http://www.tddft.org/programs/APE
 master_sites        ${homepage}/sites/default/files
 
 checksums           rmd160  8f2b77ccc94772148893f341a8489a2d9f132db8 \
-                    sha256  91c09e1d5ddcfb1d421a0d1d416c760de10afbf7f54e6ba1ad767661e1671357
+sha256  91c09e1d5ddcfb1d421a0d1d416c760de10afbf7f54e6ba1ad767661e1671357
 
 depends_lib         port:libxc port:gsl
 

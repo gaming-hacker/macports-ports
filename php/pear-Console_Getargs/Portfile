@@ -13,4 +13,4 @@ description         PEAR Console_Getargs package
 long_description    ${description}
 
 checksums           rmd160  450674d3feb156d9b4ae4f0aa8b0b72fee676132 \
-                    sha256  f2a2be1c3dfead4328a85dafc6236d945a927ceeaa05e0ec21d8af43a2e918ea
+sha256  f2a2be1c3dfead4328a85dafc6236d945a927ceeaa05e0ec21d8af43a2e918ea

@@ -12,7 +12,7 @@ long_description \
   routines for gravitational wave data analysis.
 
 checksums     rmd160 423c095afc6090aab7d3bf708f710652c87274de \
-              sha256 464601c529f5607c251a54843e749bc9bd962055cc04ba21fdf6150e392a0ba2
+sha256 464601c529f5607c251a54843e749bc9bd962055cc04ba21fdf6150e392a0ba2
 
 depends_lib   port:gsl \
               port:fftw-3 \

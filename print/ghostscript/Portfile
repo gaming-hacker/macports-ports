@@ -33,17 +33,17 @@ patchfiles-append   patch-base_unixinst.mak.diff
 patchfiles-append   gs_restrict-C99.patch
 
 checksums           ${distname}.tar.gz \
-                    rmd160  e5ecbd1cb6777fb0968f0967d3d4b30da2fefddd \
-                    sha256  f65964807a3c97a2c0810d4b9806585367e73129e57ae33378cea18e07a1ed9b \
+rmd160  e5ecbd1cb6777fb0968f0967d3d4b30da2fefddd \
+sha256  f65964807a3c97a2c0810d4b9806585367e73129e57ae33378cea18e07a1ed9b \
                     ghostscript-fonts-other-6.0.tar.gz \
-                    rmd160  ab60dbf71e7d91283a106c3df381cadfe173082f \
-                    sha256  4fa051e341167008d37fe34c19d241060cd17b13909932cd7ca7fe759243c2de \
+rmd160  ab60dbf71e7d91283a106c3df381cadfe173082f \
+sha256  4fa051e341167008d37fe34c19d241060cd17b13909932cd7ca7fe759243c2de \
                     ghostscript-fonts-std-8.11.tar.gz \
-                    rmd160  10a19a10d0388bc084a7c1d3da845068d7169054 \
-                    sha256  0eb6f356119f2e49b2563210852e17f57f9dcc5755f350a69a46a0d641a0c401 \
+rmd160  10a19a10d0388bc084a7c1d3da845068d7169054 \
+sha256  0eb6f356119f2e49b2563210852e17f57f9dcc5755f350a69a46a0d641a0c401 \
                     ${mappingresources_commit}.zip \
-                    rmd160  3481a028bc1fa65ad42ed2b442b35072b99d8490 \
-                    sha256  1c97e565f5659224e6dcd404c17a3590b59c5e54e58e6c05253e0ac14905091c
+rmd160  3481a028bc1fa65ad42ed2b442b35072b99d8490 \
+sha256  1c97e565f5659224e6dcd404c17a3590b59c5e54e58e6c05253e0ac14905091c
 
 depends_lib         port:expat \
                     port:fontconfig \

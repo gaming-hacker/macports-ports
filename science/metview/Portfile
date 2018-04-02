@@ -17,7 +17,7 @@ homepage            http://software.ecmwf.int/wiki/display/METV/Metview
 master_sites        https://software.ecmwf.int/wiki/download/attachments/3964985/
 distname            Metview-${version}-Source
 checksums           rmd160  69b536fb3e911540273e2729d2d4d582170f2482 \
-                    sha256  30adcd1ced59f19755ccb594bee725756633b9137f5e5c0890e408550da37cd5
+sha256  30adcd1ced59f19755ccb594bee725756633b9137f5e5c0890e408550da37cd5
 long_description \
     Metview is a meteorological workstation application designed to be \
     a complete working environment for both the operational and research meteorologist. \

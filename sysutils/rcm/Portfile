@@ -18,4 +18,4 @@ homepage            https://thoughtbot.github.io/rcm/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  27ddc40aff4f9d14a5d5e0a9fc27d9afd6dccd7a \
-                    sha256  9c8f92dba63ab9cb8a6b3d0ccf7ed8edf3f0fb388b044584d74778145fae7f8f
+sha256  9c8f92dba63ab9cb8a6b3d0ccf7ed8edf3f0fb388b044584d74778145fae7f8f

@@ -28,7 +28,7 @@ homepage            http://www.opengatecollaboration.org
 platforms           darwin
 
 checksums           rmd160  8e5316fa5984541c6afa11f6194b970cdf74ab9b \
-                    sha256  4fcab7083b675804397fdf91e4a79ebcb185dbb3a7ff98c8430e8a8ec0d57911
+sha256  4fcab7083b675804397fdf91e4a79ebcb185dbb3a7ff98c8430e8a8ec0d57911
 
 # TODO: take this data from a geant4 portgroup
 set geant.data_versions_10.1 {

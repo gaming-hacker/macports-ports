@@ -23,7 +23,7 @@ master_sites            http://cran.rstudio.com/bin/macosx/ \
 distname                Mac-GUI-${version}
 
 checksums               rmd160  5ea4a9c722b1ca465bca1cc67f5d4b14370682e2 \
-                        sha256  7dff17659a69e3c492fdfc3fb765e3c9537157d50b6886236bee7ad873eb416d
+sha256  7dff17659a69e3c492fdfc3fb765e3c9537157d50b6886236bee7ad873eb416d
 
 post-patch {
     reinplace "s|/Library/Frameworks/R.framework|${frameworks_dir}/R.framework|g" \

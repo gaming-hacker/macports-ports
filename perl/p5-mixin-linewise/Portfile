@@ -18,7 +18,7 @@ description         Mixin::Linewise - Write your linewise code for handles, this
 long_description    ${description}
 
 checksums           rmd160  50dc35f6ac73042ac87eeeaf2c937127d73648ec \
-                    sha256  7df20678474c0973930a472b0c55e3f8e85b7790b68ab18ef618f9c453c8aef2
+sha256  7df20678474c0973930a472b0c55e3f8e85b7790b68ab18ef618f9c453c8aef2
 
 if {${perl5.major} != ""} {
     depends_lib-append \

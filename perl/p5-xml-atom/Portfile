@@ -15,7 +15,7 @@ long_description    Atom is a syndication, API, and archiving format \
                     the feed format as well as a client for the API.
 
 checksums           rmd160  a2a44790837616a485cb142975abb1821a9cc550 \
-                    sha256  c61b46b89ddcff43d202573943a35088d899af879cd4d8ff3caf121ebc9b48f1
+sha256  c61b46b89ddcff43d202573943a35088d899af879cd4d8ff3caf121ebc9b48f1
 
 platforms           darwin
 

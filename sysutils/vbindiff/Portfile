@@ -20,7 +20,7 @@ license         GPL-2+
 master_sites    ${homepage}
 
 checksums       md5 dbda80ef580e1a0975ef50b9aaa5210e \
-                sha1 0e8c63debafe3d5bb8741e0254c95457d78c7f2d \
-                rmd160 156fa68891d4aa9c0280177c70e1a3d53b912d13
+sha1 0e8c63debafe3d5bb8741e0254c95457d78c7f2d \
+rmd160 156fa68891d4aa9c0280177c70e1a3d53b912d13
 
 depends_lib     port:ncurses

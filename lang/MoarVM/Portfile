@@ -17,7 +17,7 @@ homepage            http://moarvm.org/
 master_sites        http://moarvm.org/releases/
 
 checksums           rmd160  02d09a00127d312102d091b4c88e59ae7b9a94e9 \
-                    sha256  100b18435bb82e479f08a53346950c08b7e7f89272f6c9d0ece048682ba82912 \
+sha256  100b18435bb82e479f08a53346950c08b7e7f89272f6c9d0ece048682ba82912 \
 size    4859280
 
 # TODO: https://github.com/MoarVM/MoarVM/issues/321

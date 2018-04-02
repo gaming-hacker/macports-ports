@@ -23,7 +23,7 @@ depends_lib-append  port:argp-standalone
 use_configure       no
 
 checksums           rmd160  d91b9213bb7aa804f4429bede5837373cbf66aba \
-                    sha256  b24e609ff580fb20b2058d6da4e12743050be5655d769a31dcea6e9e50f6e623
+sha256  b24e609ff580fb20b2058d6da4e12743050be5655d769a31dcea6e9e50f6e623
 
 destroot {
     # The Makefile doesn't have an "install" target, so copy the files manually

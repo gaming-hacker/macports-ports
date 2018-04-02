@@ -24,7 +24,7 @@ master_sites        debian:e/${gname}
 distname            ${gname}_${version}.orig
 
 checksums           rmd160  81039845501756e58afc780ceca0378e03b6da12 \
-                    sha256  419ab2de80e6b201455775a939c158259af90695e59474a4a7bb3cd522a7193b
+sha256  419ab2de80e6b201455775a939c158259af90695e59474a4a7bb3cd522a7193b
 
 worksrcdir          Epsilon-${version}
 

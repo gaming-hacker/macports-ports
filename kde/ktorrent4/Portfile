@@ -20,7 +20,7 @@ homepage            https://www.kde.org/applications/internet/ktorrent/
 master_sites        https://github.com/KDE/ktorrent/archive/
 
 checksums           rmd160  29a3bea31c787ce6bf22a705830f57119c888ab3 \
-                    sha256  b88a9cd5f0bad5a53fc50396e5e6a5c2f0ca9f02ccf3ffb93ff42484abccee91
+sha256  b88a9cd5f0bad5a53fc50396e5e6a5c2f0ca9f02ccf3ffb93ff42484abccee91
 
 distfiles           v${version}${extract.suffix}
 

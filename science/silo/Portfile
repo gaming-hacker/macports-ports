@@ -20,7 +20,7 @@ depends_lib         port:zlib
 master_sites        https://wci.llnl.gov/content/assets/docs/simulation/computer-codes/silo/silo-${version}/
 distname            ${name}-${version}-bsd
 checksums           rmd160  f15098dfc58f86146bf87fc651bd6580aca71178 \
-                    sha256  4b901dfc1eb4656e83419a6fde15a2f6c6a31df84edfad7f1dc296e01b20140e
+sha256  4b901dfc1eb4656e83419a6fde15a2f6c6a31df84edfad7f1dc296e01b20140e
 
 compilers.choose    fc f77 f90
 compilers.setup

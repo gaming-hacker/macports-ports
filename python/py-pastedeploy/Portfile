@@ -22,7 +22,7 @@ master_sites        pypi:P/PasteDeploy/
 distname            PasteDeploy-${version}
 
 checksums           rmd160  e81b3ab8118bee9b9e06072ba1b804494c85b30e \
-                    sha256  d5858f89a255e6294e63ed46b73613c56e3b9a2d82a42f1df4d06c8421a9e3cb
+sha256  d5858f89a255e6294e63ed46b73613c56e3b9a2d82a42f1df4d06c8421a9e3cb
 
 if {${name} ne ${subport}} {
     depends_build-append \

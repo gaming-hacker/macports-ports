@@ -12,4 +12,4 @@ description         PEAR HTML_Template_Sigma package
 long_description    ${description}
 
 checksums           rmd160  c3f52676c0ac841f5de902ea326a1625dc733a33 \
-                    sha256  b8b5e9b08b29a13dd317fdf9d121d70020809962a7aacf24d0e0bc06a05e222e
+sha256  b8b5e9b08b29a13dd317fdf9d121d70020809962a7aacf24d0e0bc06a05e222e

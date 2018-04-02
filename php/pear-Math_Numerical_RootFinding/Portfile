@@ -13,4 +13,4 @@ description         PEAR Math_Numerical_RootFinding package
 long_description    ${description}
 
 checksums           rmd160  302336ff369cbea22ab3258d8aa612621ac5c073 \
-                    sha256  d318a614978e4218b682306afab05dcdedaf17842a12837d9c6ea455286493e1
+sha256  d318a614978e4218b682306afab05dcdedaf17842a12837d9c6ea455286493e1

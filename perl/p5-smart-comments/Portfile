@@ -19,7 +19,7 @@ long_description    Smart comments provide an easy way to insert debugging and t
                     turns them back into regular comments.
 
 checksums           rmd160  cf8ab47134e650170e642d23789359b1358c9ae1 \
-                    sha256  dcf8a312134a7c6b82926a0115d93b692472a662d28cdc3a9bdf28984ada9ee3
+sha256  dcf8a312134a7c6b82926a0115d93b692472a662d28cdc3a9bdf28984ada9ee3
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-text-balanced \

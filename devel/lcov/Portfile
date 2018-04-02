@@ -42,9 +42,9 @@ post-destroot   {
         }
 }
 checksums       md5     27c003662136063c8dfe479242eff0b5 \
-                rmd160  a67ba7b37e12a561139d45db0e9837d07bd8c98c \
-                sha1    f23baf68b45d0187138514f416e4ee383c5f3f0e \
-                sha256  44972c878482cc06a05fe78eaa3645cbfcbad6634615c3309858b207965d8a23
+rmd160  a67ba7b37e12a561139d45db0e9837d07bd8c98c \
+sha1    f23baf68b45d0187138514f416e4ee383c5f3f0e \
+sha256  44972c878482cc06a05fe78eaa3645cbfcbad6634615c3309858b207965d8a23
 
 livecheck.type  regex
 livecheck.url   ${homepage}

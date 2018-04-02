@@ -29,7 +29,7 @@ distname            [strsed ${distname} {g/-//}]
 use_bzip2           yes
 
 checksums           rmd160  a683f9c163a6c343bde53ffde99dbecce4e41b02 \
-                    sha256  6980e75cf0d677fd52c116e2e0dfd3884e360970c88c8356a114338500d5bee7
+sha256  6980e75cf0d677fd52c116e2e0dfd3884e360970c88c8356a114338500d5bee7
 
 worksrcdir          ${name}[strsed ${milestone} {g/\./-/}]
 

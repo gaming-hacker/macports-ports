@@ -26,7 +26,7 @@ homepage            http://libevent.org
 dist_subdir         libevent
 
 checksums           rmd160  5813137c24a6581fb530858e6c45ce48c6a9edbe \
-                    sha256  92fa504d8f275b7aaceab87f65f0e039c08b1e511acda04cf3822a6e534ab879
+sha256  92fa504d8f275b7aaceab87f65f0e039c08b1e511acda04cf3822a6e534ab879
 
 post-extract {
     move ${worksrcpath}/configure.in ${worksrcpath}/configure.ac

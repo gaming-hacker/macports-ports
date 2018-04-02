@@ -18,8 +18,8 @@ long_description \
 master_sites    http://www.ryandesign.com/macports/distfiles/mpeg4ip/
 
 checksums       md5 f53b06c62e914ab724bda9d9af041e08 \
-                sha1 1271de695ed65284d9c39aa91bf26c5494603fd3 \
-                rmd160 fee5c21c17a470e6de349e07d233a1eb46b2064a
+sha1 1271de695ed65284d9c39aa91bf26c5494603fd3 \
+rmd160 fee5c21c17a470e6de349e07d233a1eb46b2064a
 
 depends_build   port:libtool \
                 port:automake \

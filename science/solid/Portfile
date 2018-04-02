@@ -13,7 +13,7 @@ long_description    ${description}
 homepage            http://www.dtecta.com/
 master_sites        http://www.dtecta.com/files/
 checksums           rmd160  3040717b9e890bde74c71f4f0c8c4bcc8b8c666e \
-                    sha256  7f78cffd83bbed93b0ec4421866ebd97d16db74a8068b25e45df231a49cc7d04
+sha256  7f78cffd83bbed93b0ec4421866ebd97d16db74a8068b25e45df231a49cc7d04
 use_zip             yes
 patchfiles          patch-configure.ac.diff patch-GLUT.diff
 

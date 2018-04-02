@@ -14,7 +14,7 @@ long_description    Text::Quoted examines the structure of some text which may \
                     text into a nested data structure.
 
 checksums           rmd160  c4d248d6345b8c7926159d30a1cdcf462decae50 \
-                    sha256  446c3e8da7e65f7988cd36e9da1159614eb0b337d6c4c0dec8f6df7673b96c5f
+sha256  446c3e8da7e65f7988cd36e9da1159614eb0b337d6c4c0dec8f6df7673b96c5f
 
 platforms           darwin
 

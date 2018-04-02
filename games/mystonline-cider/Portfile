@@ -23,8 +23,8 @@ description                 Myst Online: URU Live Again
 long_description            ${description} (MO:ULagain) running via the Cider wrapper from GameTap
 
 checksums                   md5     3b3b5af000b32a4415e6aa7d944083fb \
-                            sha1    253e14987a9375d66f92373b11e2dda43872b2a8 \
-                            rmd160  c156b0edd20a691248269f6e3ab9996fddae74c8
+sha1    253e14987a9375d66f92373b11e2dda43872b2a8 \
+rmd160  c156b0edd20a691248269f6e3ab9996fddae74c8
 
 depends_run                 port:mystonline-bootstrap
 

@@ -24,7 +24,7 @@ distname            ${name}_${version}.orig
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  44bfa4889a56d1f0dce1c8551a8af0c14b49bed8 \
-                    sha256  4eca1287b95093ac4697e6ebf7312308d54af90630db151669c5f328e0bef122
+sha256  4eca1287b95093ac4697e6ebf7312308d54af90630db151669c5f328e0bef122
 
 depends_run         port:coreutils \
                     port:tmux

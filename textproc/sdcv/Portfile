@@ -19,7 +19,7 @@ long_description        ${name} is a console version of the StarDict program.
 homepage                https://dushistov.github.io/sdcv/
 
 checksums               rmd160  5145330726694e93dd0845c4f02b6e3b3b4cf383 \
-                        sha256  52251c254a3c528d7358460dddcf70a26c5d2fe5b0c1f8849e0a09bd4b79bc81 \
+sha256  52251c254a3c528d7358460dddcf70a26c5d2fe5b0c1f8849e0a09bd4b79bc81 \
 size    61572
 
 depends_build-append    port:pkgconfig

@@ -28,8 +28,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           md5     a02c49efe783c4e31d6bbd805a37adec \
-                    sha1    3a64499d0a60f144128020b1d000868465d39499 \
-                    rmd160  52fbdea9892c3fc9187474b255163ef40a416f16
+sha1    3a64499d0a60f144128020b1d000868465d39499 \
+rmd160  52fbdea9892c3fc9187474b255163ef40a416f16
 
 if {$subport ne $name} {
     livecheck.type  none

@@ -22,4 +22,4 @@ distname            gviz_api_py-${version}
 worksrcdir          google-visualization-python
 
 checksums           rmd160  0a62befabc5c987103c3c6ec9172d8555a462b81 \
-                    sha256  e62ec8d187e0aff6cdf514ebb31c50b5ca15072797943c9574b1ea07226c619f
+sha256  e62ec8d187e0aff6cdf514ebb31c50b5ca15072797943c9574b1ea07226c619f

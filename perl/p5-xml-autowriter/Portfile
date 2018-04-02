@@ -23,8 +23,8 @@ patchfiles		patch-Makefile.PL.diff
 supported_archs noarch
 
 checksums           md5     b18624c8168e0a38daf39c7c6919ff24 \
-                    sha1    9ee99f5e168cbe39109e19136fd3fbdf0fb4910a \
-                    rmd160  dca751c46fbb9726c9d58aa9179784b314b0c41c
+sha1    9ee99f5e168cbe39109e19136fd3fbdf0fb4910a \
+rmd160  dca751c46fbb9726c9d58aa9179784b314b0c41c
 }
 
 configure.env PERL_USE_UNSAFE_INC=1

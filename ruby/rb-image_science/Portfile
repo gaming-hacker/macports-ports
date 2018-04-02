@@ -8,8 +8,8 @@ maintainers			nomaintainer
 description			Ruby library that generates thumbnails
 long_description	${description}
 checksums			md5     b03791c25b4ef5ee0323a23ca15aae09 \
-					sha1    cc6670364f63bd1ee13bb39eaf2f7176c1097c69 \
-					rmd160  b673d11645a90f67bf33cf6c5a54dbc5435d199f
+sha1    cc6670364f63bd1ee13bb39eaf2f7176c1097c69 \
+rmd160  b673d11645a90f67bf33cf6c5a54dbc5435d199f
 platforms           darwin
 
 depends_run-append  port:freeimage \

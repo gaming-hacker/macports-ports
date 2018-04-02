@@ -13,4 +13,4 @@ description         PEAR Net_CheckIP2 package
 long_description    ${description}
 
 checksums           rmd160  23bbb6afaed71a8f582a4b318388b87a44801fbd \
-                    sha256  0093fc965eeb7ca68b9a4083ef296dfd4fa6cdf48af5aa92658bba3bd9c963a4
+sha256  0093fc965eeb7ca68b9a4083ef296dfd4fa6cdf48af5aa92658bba3bd9c963a4

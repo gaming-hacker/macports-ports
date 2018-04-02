@@ -26,8 +26,8 @@ master_sites    googlecode:mypeb
 distname        ${php.rootname}-${version}
 
 checksums       md5     5ccde4b9e8bcd0dc0a420e290941703a \
-                sha1    c9c940b79d8b739af95a456a2ad90f93d8ef6982 \
-                rmd160  169f7d6bfcb855c45c132db1091fad428f739a30
+sha1    c9c940b79d8b739af95a456a2ad90f93d8ef6982 \
+rmd160  169f7d6bfcb855c45c132db1091fad428f739a30
 
 if {${name} ne ${subport}} {
     depends_build-append    port:erlang

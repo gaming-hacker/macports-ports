@@ -16,7 +16,7 @@ homepage	http://cadabra.phi-sci.com/
 master_sites	${homepage}
 
 checksums	rmd160 6d97669e9c5741d00b56bdbf692993c638b4a405 \
-		sha256 f228e6666e328a44472a3b8755aba317d38330af322023ce404146d504544f73
+sha256 f228e6666e328a44472a3b8755aba317d38330af322023ce404146d504544f73
 
 depends_build	port:pkgconfig port:libtool
 depends_lib	port:libsigcxx2

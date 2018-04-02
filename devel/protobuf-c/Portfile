@@ -22,7 +22,7 @@ homepage        https://github.com/protobuf-c/protobuf-c
 master_sites    https://github.com/protobuf-c/protobuf-c/releases/download/v${version}
 
 checksums       sha1    20bfcf3663ae56b125a5bfc3b4dca8c7f0ef1e48 \
-                sha256  9a973fc04aac003f9cf2b5a90ac4b8fa294cacb4e3f0796d3b5a789a5ad46c07
+sha256  9a973fc04aac003f9cf2b5a90ac4b8fa294cacb4e3f0796d3b5a789a5ad46c07
 
 platforms	darwin
 

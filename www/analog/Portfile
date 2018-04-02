@@ -22,7 +22,7 @@ distname            analog-src-[string range [subst [regsub -all {\.} "${version
 use_zip             yes
 
 checksums           rmd160  01391b8674284c63571653eb6efd49a5d506663c \
-                    sha256  0cb14aa9b9b3e204656fcb61fef5ecefc63b54eca8772a358ab7ea6a1eb443fd
+sha256  0cb14aa9b9b3e204656fcb61fef5ecefc63b54eca8772a358ab7ea6a1eb443fd
 
 # Note, it'd be nice to use an already-installed version of jpeg and libpng
 # as well, but analog currently doesn't have a HAVE_ define for them, just

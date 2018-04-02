@@ -30,7 +30,7 @@ master_sites        pypi:P/Pygments
 distname            Pygments-${version}
 
 checksums           rmd160  8c676e2a67d76148573abcd44a927e6d762abb6b \
-                    sha256  dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc
+sha256  dbae1046def0efb574852fab9e90209b23f556367b5a320c0bcb871c77c3e8cc
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

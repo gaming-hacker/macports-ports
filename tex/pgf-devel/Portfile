@@ -26,7 +26,7 @@ use_zip         yes
 extract.mkdir   yes
 
 checksums       rmd160  0064c6768e8a6bfb06bdf20e27f333d8f771bea8 \
-                sha256  2460196db3fd4e9a3dd159e4a8a2dd6b4cdb2872879be6212b4b600a7385a118
+sha256  2460196db3fd4e9a3dd159e4a8a2dd6b4cdb2872879be6212b4b600a7385a118
 
 livecheck.type  regex
 livecheck.url   ${homepage}

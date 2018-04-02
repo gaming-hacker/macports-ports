@@ -12,4 +12,4 @@ description         PEAR Gtk2_VarDump package
 long_description    ${description}
 
 checksums           rmd160  2e0759e386cd54c8dfd2f319ba0fc15570096855 \
-                    sha256  4bfe1cc1c6dba037c278dec7e749d3f38167b60e5439896bfc0307f1f6fc34c9
+sha256  4bfe1cc1c6dba037c278dec7e749d3f38167b60e5439896bfc0307f1f6fc34c9

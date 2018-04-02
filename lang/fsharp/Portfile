@@ -24,7 +24,7 @@ use_zip             yes
 
 master_sites        ftp://ftp.research.microsoft.com/downloads/6f48a466-4294-4973-9e15-25e0ddff422f
 checksums           md5 d51c93d29599540a957f94ff387e65fa \
-                    sha1 655a790fd98f7b68c19722b0a29e9d1048c39e0f
+sha1 655a790fd98f7b68c19722b0a29e9d1048c39e0f
 
 depends_lib         port:mono
 

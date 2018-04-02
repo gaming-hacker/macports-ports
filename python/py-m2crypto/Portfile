@@ -18,8 +18,8 @@ homepage           https://pypi.python.org/pypi/${python.rootname}
 master_sites       pypi:m/${python.rootname}/
 distname           M2Crypto-${version}
 checksums          md5     cced2e2273dbb4a6094c96ae20d1b9e4 \
-                   rmd160  1cbdfd7312b28468d7568f227bd35dc4ec0e61a1 \
-                   sha256  a0fea2c5ab913e42864d1ccbaee5878c23886368b606e923609fda4ce37d26c0
+rmd160  1cbdfd7312b28468d7568f227bd35dc4ec0e61a1 \
+sha256  a0fea2c5ab913e42864d1ccbaee5878c23886368b606e923609fda4ce37d26c0
 
 python.versions 27 36
 

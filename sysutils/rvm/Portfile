@@ -16,7 +16,7 @@ homepage            http://rvm.sourceforge.net/
 master_sites        sourceforge:project/rvm/rvm/${version}
 
 checksums           rmd160  d05dddc4fb9b7299aa2da71eb01de6a4a5f66de3 \
-                    sha256  7a0c126b9e6e01b406c5900d890ed901c7a7cb00bf40e419e4aa49e39bd2303e
+sha256  7a0c126b9e6e01b406c5900d890ed901c7a7cb00bf40e419e4aa49e39bd2303e
 
 distfiles           ${name}_${version}${extract.suffix}
 

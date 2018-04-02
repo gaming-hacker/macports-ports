@@ -17,7 +17,7 @@ long_description        This package implements the System V poll(2) system \
                         call for Unix-like systems that do not support poll.
 
 checksums               rmd160 7a093fb4043d3dd10ea3ac823ae0a7cc7a5bb647 \
-                        sha256 ea8a3607c2c652dadae7b25fda430fb4360bf27f855876bb1db447bdc727da75
+sha256 ea8a3607c2c652dadae7b25fda430fb4360bf27f855876bb1db447bdc727da75
 
 platform darwin {
     patchfiles          patch-Makefile.diff

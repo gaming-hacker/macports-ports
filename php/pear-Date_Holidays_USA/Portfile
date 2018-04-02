@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_USA package
 long_description    ${description}
 
 checksums           rmd160  bf80340876edaecebf69c06ce579f9acc223b450 \
-                    sha256  5191c518642aaa2b7a8ba52ee69b156668f5570a909cc4e0a228650b7956ff37
+sha256  5191c518642aaa2b7a8ba52ee69b156668f5570a909cc4e0a228650b7956ff37
 
 depends_lib-append  port:pear-Date_Holidays

@@ -16,8 +16,8 @@ use_zip             yes
 master_sites        http://www.apache.org/dist/maven/source/
 extract.suffix      -src${extract.suffix}
 checksums           md5     ae62c0c7f811f3f7fc60ad91a8b0b822 \
-                    rmd160  21f093f0115f81c5530145fe52c6094c606d2ddf \
-                    sha256  3b838f089adff04f59e54d3e453d4d9e364d927fd258e53fa029388f3abd71b4
+rmd160  21f093f0115f81c5530145fe52c6094c606d2ddf \
+sha256  3b838f089adff04f59e54d3e453d4d9e364d927fd258e53fa029388f3abd71b4
 
 use_configure       no
 

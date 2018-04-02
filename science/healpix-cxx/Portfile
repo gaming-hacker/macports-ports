@@ -19,7 +19,7 @@ master_sites        sourceforge:project/healpix/Healpix_${branch}/
 distname            healpix_cxx-${version}
 
 checksums           rmd160  6b2971e96d3bfe98423bb069d244f1d764fd81a0 \
-                    sha256  4b7f3d355c8121fb7b0902757cb943fed18e5df9797ba473c69ed4483dc87ae6
+sha256  4b7f3d355c8121fb7b0902757cb943fed18e5df9797ba473c69ed4483dc87ae6
 
 depends_build       port:pkgconfig
 depends_lib         port:cfitsio

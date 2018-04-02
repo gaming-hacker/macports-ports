@@ -28,7 +28,7 @@ long_description    \
 homepage        http://common-lisp.net/project/slime/
 
 checksums           rmd160  308cc4e10821a99757a7d4e72f3ed22d63e67c48 \
-                    sha256  f7b0b8d79ae5650d7b62d368af2ea83296208f43efb3b1ead2dd1b13e2473efd
+sha256  f7b0b8d79ae5650d7b62d368af2ea83296208f43efb3b1ead2dd1b13e2473efd
 
 use_configure   no
 depends_lib     port:emacs

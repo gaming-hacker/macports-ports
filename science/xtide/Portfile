@@ -34,7 +34,7 @@ if {${name} eq ${subport}} {
     master_sites-append https://src.fedoraproject.org/repo/pkgs/${name}/${distfiles}/59de866e0684e123419d7a1c97ea23a5/
 
     checksums           rmd160  a4924c09f452e63da12012781bea7607f9178ec4 \
-                        sha256  e5c4afbb17269fdde296e853f2cb84845ed1c1bb1932f780047ad71d623bc681
+sha256  e5c4afbb17269fdde296e853f2cb84845ed1c1bb1932f780047ad71d623bc681
 
     depends_lib         port:libpng \
                         port:libtcd
@@ -84,7 +84,7 @@ subport ${name}-wvs {
     distname            wvs
 
     checksums           rmd160  0e83b847efc635f18bd96cc5a29149d5af41dc4d \
-                        sha256  4e996ce2e608d612ba78e35cdf50c2c73b01fce06bd5b561a7fe957ea75d6d75
+sha256  4e996ce2e608d612ba78e35cdf50c2c73b01fce06bd5b561a7fe957ea75d6d75
 
     use_configure       no
 
@@ -116,7 +116,7 @@ subport ${name}-data {
     master_sites-append https://src.fedoraproject.org/repo/pkgs/${name}/${distfiles}/f9a8c5414aa14bd6b08d1be4e6a3eea7/
 
     checksums           rmd160  4837e9824199002da3daec891d720214580b1420 \
-                        sha256  7e5da40c19fd4f5d0897d6a7f68bc4b66a3eb7c3852135c8a6c4c56b82c01cdd
+sha256  7e5da40c19fd4f5d0897d6a7f68bc4b66a3eb7c3852135c8a6c4c56b82c01cdd
 
     use_configure       no
 

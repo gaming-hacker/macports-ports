@@ -19,7 +19,7 @@ homepage        http://ngspice.sourceforge.net/
 master_sites    sourceforge:project/ngspice/ng-spice-rework/${version}
 
 checksums       rmd160  a500dba09b711c2a1df93e1a55e6431832c61e25 \
-                sha256  0c08c7d57a2e21cf164496f3237f66f139e0c78e38345fbe295217afaf150695
+sha256  0c08c7d57a2e21cf164496f3237f66f139e0c78e38345fbe295217afaf150695
 
 set docdir      ${prefix}/share/doc/${name}
 
@@ -74,7 +74,7 @@ subport ngspice-docs {
     extract.only
  
     checksums           rmd160  79603e1db19d357f98cd7e7b5560a7c00736131e \
-                        sha256  da71dfa6b2806acbad54f0980e50f1aea46fa0a6c3ddbd1824cae465d784284c
+sha256  da71dfa6b2806acbad54f0980e50f1aea46fa0a6c3ddbd1824cae465d784284c
     
     use_configure       no
 

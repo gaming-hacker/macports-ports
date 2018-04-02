@@ -12,6 +12,6 @@ description         PEAR HTML_Select_Common package
 long_description    ${description}
 
 checksums           rmd160  d7115f34949b009052bea950ec847fab61ddcbb3 \
-                    sha256  6d6131641e61ff3b916e09d7c1cc040eeb379b172b675a3a227ba20d462c9881
+sha256  6d6131641e61ff3b916e09d7c1cc040eeb379b172b675a3a227ba20d462c9881
 
 depends_lib-append  port:pear-I18N

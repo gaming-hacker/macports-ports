@@ -21,7 +21,7 @@ long_description \
 master_sites        http://downloads.sourceforge.net/qjackctl
 
 checksums           rmd160  d8746505931b81658b4a8ec05b28857634b7f8a9 \
-                    sha256  c50da569ec8466ac6cc72c65e2d8212eb9c40149daed0a10fb7795ff9ddc4ab7
+sha256  c50da569ec8466ac6cc72c65e2d8212eb9c40149daed0a10fb7795ff9ddc4ab7
 
 depends_lib-append  port:jack
 

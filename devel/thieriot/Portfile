@@ -22,7 +22,7 @@ depends_lib         port:p${perl5.major}-yaml \
                     port:p${perl5.major}-libwww-perl
 
 checksums           rmd160  6447c8b916fd3b8891e50dea8a7a236a6017a538 \
-                    sha256  7dc3fc909ddeb6eb71e21b082a2b8b270fcaa94b80dd35cda9286e81d5a63062
+sha256  7dc3fc909ddeb6eb71e21b082a2b8b270fcaa94b80dd35cda9286e81d5a63062
 
 use_configure       no
 supported_archs     noarch

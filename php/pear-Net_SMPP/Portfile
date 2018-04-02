@@ -13,4 +13,4 @@ description         PEAR Net_SMPP package
 long_description    ${description}
 
 checksums           rmd160  980e15311f8bc8c0abbf06e5d294bd5c62e964bb \
-                    sha256  c1c720712483c82b2e955b808e26b59170144940eb01a12e5144802904c90640
+sha256  c1c720712483c82b2e955b808e26b59170144940eb01a12e5144802904c90640

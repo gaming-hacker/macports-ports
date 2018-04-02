@@ -23,6 +23,6 @@ long_description    IO::Interface adds methods to IO::Socket objects that \
                     Net::Interface, but might compile and run on more platforms.
 
 checksums           rmd160  9437908763a989cbd72493fb3239a207f602df36 \
-                    sha256  e63e81c52eb1e0e60ec2d983f5552d2493e117179925c96757f23c4bd9fa713a
+sha256  e63e81c52eb1e0e60ec2d983f5552d2493e117179925c96757f23c4bd9fa713a
 
 perl5.use_module_build

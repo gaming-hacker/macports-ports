@@ -15,7 +15,7 @@ description         Simple and dumb file system watcher
 long_description    ${description}
 
 checksums           rmd160  9237a6907d5089e7d5953fbd2fd7765b7cbf1998 \
-                    sha256  ade3d3db882ce2137e527201893d4b8c12b2dbd15009bb89c31cb91ba6495ba2 \
+sha256  ade3d3db882ce2137e527201893d4b8c12b2dbd15009bb89c31cb91ba6495ba2 \
 size    13086
 
 if {${perl5.major} != ""} {

@@ -17,13 +17,13 @@ if {[vercmp ${php.branch} 5.4] >= 0} {
     version         0.14.0
     revision        0
     checksums       rmd160  fc7847e434cb44c0372dee024469b6f46ef3a2eb \
-                    sha256  9703a9913a301fcb1c39a547740d07fb36d205d7c2eac01acb8a3aff74a0aea5
+sha256  9703a9913a301fcb1c39a547740d07fb36d205d7c2eac01acb8a3aff74a0aea5
 } else {
     # https://bugs.php.net/73791
     version         0.13.0
     revision        0
     checksums       rmd160  c5d5760fa7f4e9b1af8e2087327ce504e1c6ac9f \
-                    sha256  f61fe6501b6f30cf5628b7fd0e2c41185bb9bfac96b765c8b967a8ba01f7bf8b
+sha256  f61fe6501b6f30cf5628b7fd0e2c41185bb9bfac96b765c8b967a8ba01f7bf8b
 }
 
 description         Dump the internal representation of PHP scripts

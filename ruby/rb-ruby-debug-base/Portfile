@@ -18,5 +18,5 @@ long_description  Ruby debugger core API written in C. Use this if you want to \
 homepage          https://github.com/ruby-debug/
 
 checksums         md5 9ba1ffabdf823225397834f3b64b83d5 \
-                  sha1 96138d1287846f4ae23515de304f386f79c953c8 \
-                  rmd160 ef1e4da6b3474fd1e883c90e72b3afe3ec6bf0c9
+sha1 96138d1287846f4ae23515de304f386f79c953c8 \
+rmd160 ef1e4da6b3474fd1e883c90e72b3afe3ec6bf0c9

@@ -21,7 +21,7 @@ description                     a Pd plugin loader which lets you run Faust \
 long_description                ${name} provides ${description}.
 
 checksums                       rmd160  65aa3cbe2ddc70d5cdbce9379c32e001f7c0ea1b \
-                                sha256  e3286dfd1ccdc93fa81bc45ed593b7c466badf7e8b989b1aaf2a38cdbd417dc2
+sha256  e3286dfd1ccdc93fa81bc45ed593b7c466badf7e8b989b1aaf2a38cdbd417dc2
 
 use_configure                   no
 

@@ -21,7 +21,7 @@ master_sites        ${homepage}
 distname            org-${version}
 
 checksums           rmd160  be570b401922dc5f6dfe8fa6cdbcb865fb8951f3 \
-                    sha256  49037eb347f7269753c27465290b45946b99bbb515638657df16d4451697d462
+sha256  49037eb347f7269753c27465290b45946b99bbb515638657df16d4451697d462
 
 depends_lib         path:${emacs_binary}:${emacs_binary_provider}
 depends_build       port:texinfo

@@ -22,7 +22,7 @@ depends_run         port:php71 \
                     port:postfix
 
 checksums           rmd160  09ff3cb15b118d0b70594b35ba45c6823b4e3461 \
-                    sha256  36eaed433c673382fb5d513bc3b0d2685bf3169ead6065293d3a0f8f6d262aa4
+sha256  36eaed433c673382fb5d513bc3b0d2685bf3169ead6065293d3a0f8f6d262aa4
 
 use_configure       no
 

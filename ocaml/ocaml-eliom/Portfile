@@ -19,7 +19,7 @@ long_description    \
 homepage            http://ocsigen.org/eliom/
 master_sites        http://ocsigen.org/download/
 checksums           rmd160  b8e32940187d03b6dac2c0bcc98d0c27f45c6a52 \
-                    sha256  bfca844180ec19dcd0f6eec39ed118e15919bd7990c142126242443c905b1caf
+sha256  bfca844180ec19dcd0f6eec39ed118e15919bd7990c142126242443c905b1caf
 
 distname            eliom-${version}
 

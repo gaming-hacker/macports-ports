@@ -20,8 +20,8 @@ homepage            https://pypi.python.org/pypi/ntplib
 master_sites        pypi:n/ntplib/
 distname            ntplib-${version}
 checksums           md5   991a5df0d198f701028001002dc34f2b \
-                    sha1   909c867883206bac642dfa45aa11bd9848d0f5b0 \
-                    rmd160   6497a5859a0083d6852a0d4cd2132da86ab5bc26
+sha1   909c867883206bac642dfa45aa11bd9848d0f5b0 \
+rmd160   6497a5859a0083d6852a0d4cd2132da86ab5bc26
 
 if {${name} ne ${subport}} {
     livecheck.type      none

@@ -14,14 +14,14 @@ description         TeX Live: Arabic
 long_description    Support for Arabic and Persian.
 
 checksums           texlive-lang-arabic-44413-run.tar.xz \
-                    rmd160  64a140230f449ae5f8ac3765e3550f3a361516d5 \
-                    sha256  3cddbaf484a51467fd880c05bf1480993dd78af1a5d1c0697ba606df2fdeda60 \
+rmd160  64a140230f449ae5f8ac3765e3550f3a361516d5 \
+sha256  3cddbaf484a51467fd880c05bf1480993dd78af1a5d1c0697ba606df2fdeda60 \
                     texlive-lang-arabic-44413-doc.tar.xz \
-                    rmd160  cd6a87da0161a4938be2660aa2acf0ac61af17fd \
-                    sha256  b655a707e5e1eee5de64a9a6b0de9f93fef84fec49a19134c2ce497d480c05ba \
+rmd160  cd6a87da0161a4938be2660aa2acf0ac61af17fd \
+sha256  b655a707e5e1eee5de64a9a6b0de9f93fef84fec49a19134c2ce497d480c05ba \
                     texlive-lang-arabic-44413-src.tar.xz \
-                    rmd160  0d28b58e875116643be6be3dfcd4e95ffabb392c \
-                    sha256  c96ed9f70a92dc7d2037392bb099fbc31cdacf3680450e5991204f9da9f1ba36
+rmd160  0d28b58e875116643be6be3dfcd4e95ffabb392c \
+sha256  c96ed9f70a92dc7d2037392bb099fbc31cdacf3680450e5991204f9da9f1ba36
 
 depends_lib         port:texlive-basic
 

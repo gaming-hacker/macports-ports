@@ -22,7 +22,7 @@ long_description \
 homepage            http://www.fauskes.net/code/dot2tex/documentation/#the-dot2texi-latex-package
 master_sites        googlecode:dot2tex
 checksums           rmd160  053f8db5f6f579f1850f02b9afc269986ee43ef5 \
-                    sha256  ce5af84973286889ea19d5f898153414ed33c5500e6812fb6a7f87f652694ebd
+sha256  ce5af84973286889ea19d5f898153414ed33c5500e6812fb6a7f87f652694ebd
                     
 use_zip             yes
 extract.mkdir       yes

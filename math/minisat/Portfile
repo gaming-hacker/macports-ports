@@ -22,7 +22,7 @@ patchfiles          patch-friend-declaration.diff \
                     patch-utils-System.cc.diff
 
 checksums           rmd160  169ec9116befa9067db9076d26309f7e9ab408dd \
-                    sha256  92957d851cdc3baddfe07b5fc80ed5a0237c489d0c52ae72f62844b3b46d7808
+sha256  92957d851cdc3baddfe07b5fc80ed5a0237c489d0c52ae72f62844b3b46d7808
 
 depends_lib         port:zlib
 

@@ -13,6 +13,6 @@ description         PEAR HTTP_Header package
 long_description    ${description}
 
 checksums           rmd160  f1116dfd17e434f5acd154a5f3284d36a41716f8 \
-                    sha256  4c9ae365b9c5b9f562d5a6897547b2db6c5e01d904283cffbf6371ff57fae14e
+sha256  4c9ae365b9c5b9f562d5a6897547b2db6c5e01d904283cffbf6371ff57fae14e
 
 depends_lib-append  port:pear-HTTP

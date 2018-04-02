@@ -29,7 +29,7 @@ depends_run          path:bin/gpg:gnupg2
 master_sites         pypi:p/python-gnupg
 distname             python-gnupg-${version}
 checksums            rmd160  fe08a67d68e1c828e6f587d8aef1dc3b2c0a9432 \
-                     sha256  ef47b02eaf41dee3cf4b02ddf83130827318de9fe3eae89d01a3f05859e20e1a
+sha256  ef47b02eaf41dee3cf4b02ddf83130827318de9fe3eae89d01a3f05859e20e1a
 
 # See https://bitbucket.org/vinay.sajip/python-gnupg/pull-requests/19
 patchfiles           patch-gnupg.py.diff

@@ -15,7 +15,7 @@ long_description    This module provides an XPath engine, that can be \
 platforms           darwin
 
 checksums           md5 d840cbefa57c23041f0bed14940a6b22 \
-                    sha1 165a7cd7f8ee140e32d6ba4ec2077e77d7fd0f68 \
-                    rmd160 e5093d8732fc2bf6ed23044f41d36d4703bcf701
+sha1 165a7cd7f8ee140e32d6ba4ec2077e77d7fd0f68 \
+rmd160 e5093d8732fc2bf6ed23044f41d36d4703bcf701
 
 supported_archs     noarch

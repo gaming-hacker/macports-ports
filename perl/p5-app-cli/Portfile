@@ -13,7 +13,7 @@ long_description    App::CLI provides a simple interface for dispatching \
                     command line applications.
 
 checksums           rmd160  8ba5d3150b2ed7c198ff470f7cc71b23068ae766 \
-                    sha256  636f7975513e8c4fbf4158bccae2d71cf1405b4dac6395566e4cc5ce346b643f
+sha256  636f7975513e8c4fbf4158bccae2d71cf1405b4dac6395566e4cc5ce346b643f
 
 platforms           darwin
 supported_archs     noarch

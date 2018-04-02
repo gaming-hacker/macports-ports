@@ -26,7 +26,7 @@ master_sites        https://fastdl.mongodb.org/src
 distname            ${name}-src-r${version}
 
 checksums           rmd160  a75b79fb08b5f5c0e091b06023a0043d585da8b2 \
-                    sha256  f1dcdd2073e6edb722675373995bfa93da6cc047b690b7b8100d95745584a1d3 \
+sha256  f1dcdd2073e6edb722675373995bfa93da6cc047b690b7b8100d95745584a1d3 \
 size    40331092
 
 depends_build       port:scons \

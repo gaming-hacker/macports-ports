@@ -16,7 +16,7 @@ platforms        darwin
 license          MIT
 master_sites     https://dl.suckless.org/tools/
 checksums        rmd160 9d6def21ef5edd4280aa59c3a2bc64d5a8dd6cd3 \
-                 sha256 b9d9e1eae25e63071960e921af8b217ab1abe64210bd290994aca178a8dc68d2 \
+sha256 b9d9e1eae25e63071960e921af8b217ab1abe64210bd290994aca178a8dc68d2 \
 size   12326
 
 patchfiles       patch-Makefile \

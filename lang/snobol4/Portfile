@@ -18,8 +18,8 @@ long_description    SNOBOL4 (StriNg Oriented and symBOlic Language) is \
                     Bell Telephone Laboratories, Inc. (BTL) in the 1970's.
 
 checksums           md5     5265d1e21b8d1963e0c7fe830c3d5172 \
-                    sha1    651191778e049255886165b88b6c7c8c80ed9ae6 \
-                    rmd160  b53b6cfe985f402143b91e0c7cdd1b7316700b7e
+sha1    651191778e049255886165b88b6c7c8c80ed9ae6 \
+rmd160  b53b6cfe985f402143b91e0c7cdd1b7316700b7e
 
 configure.args      --mandir=${prefix}/share/man
 

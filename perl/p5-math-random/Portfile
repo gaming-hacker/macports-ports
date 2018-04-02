@@ -17,4 +17,4 @@ description         Perl extension for Random Number Generators
 long_description    ${description}
 
 checksums           rmd160  08cf461515a073815aca7bba56d8482f6d72e248 \
-                    sha256  be0522328811d96de505d9ebac3d096359026fa8d5c38f7bb999a78ec5bc254c
+sha256  be0522328811d96de505d9ebac3d096359026fa8d5c38f7bb999a78ec5bc254c

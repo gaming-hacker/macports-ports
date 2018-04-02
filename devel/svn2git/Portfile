@@ -16,7 +16,7 @@ description         converts a Subversion repository into one or more Git reposi
 long_description    svn2git provides the svn-all-fast-export program which ${description}.
 
 checksums           rmd160  794b8880c1b1e6fb63cbc924a2cb2507a97d8dde \
-                    sha256  977177d96f75f8ac2f8858d0283ba19463ab3f191bb5ff1d6881e8c4b50dc0ee
+sha256  977177d96f75f8ac2f8858d0283ba19463ab3f191bb5ff1d6881e8c4b50dc0ee
 
 depends_lib-append  port:apr \
                     port:subversion

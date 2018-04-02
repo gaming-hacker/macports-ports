@@ -12,4 +12,4 @@ description         PEAR Gtk2_ScrollingLabel package
 long_description    ${description}
 
 checksums           rmd160  86787bab64bc32bb26f97eb9422d4d33e82fc622 \
-                    sha256  158a0fb5ea4a93fd96f4ea450f904040113bbe9c19e983a0331b670d842feaec
+sha256  158a0fb5ea4a93fd96f4ea450f904040113bbe9c19e983a0331b670d842feaec

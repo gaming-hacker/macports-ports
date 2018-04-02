@@ -21,7 +21,7 @@ if {${name} ne ${subport}} {
     distname            ${php.pecl.name}-${version}
 
     checksums           rmd160  09773bed91dd5f0aa7c34be6b4a50172a1635176 \
-                        sha256  ea38bfeb20c1ae46477db4bd5ae1ddf97b7b75abfba8c624e44dfb73643ad9ca
+sha256  ea38bfeb20c1ae46477db4bd5ae1ddf97b7b75abfba8c624e44dfb73643ad9ca
 
     configure.args      --enable-taint
 

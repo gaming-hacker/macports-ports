@@ -18,7 +18,7 @@ homepage            http://redis.io/
 master_sites        http://download.redis.io/releases/
 
 checksums           rmd160  7d380171e14d6fdfc9880dc3ede90a180dc58f61 \
-                    sha256  769b5d69ec237c3e0481a262ff5306ce30db9b5c8ceb14d1023491ca7be5f6fa
+sha256  769b5d69ec237c3e0481a262ff5306ce30db9b5c8ceb14d1023491ca7be5f6fa
 
 patchfiles          patch-redis.conf.diff
 

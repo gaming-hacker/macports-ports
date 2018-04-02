@@ -25,7 +25,7 @@ long_description    \
 homepage            https://processing.org
 
 checksums           rmd160  36cc1304a0b926583ec43dee9f3f0e8033f67874 \
-                    sha256  b20fba338dd632dfae84e298cf21d2ea71ed8b1ce370ce4a73d22470c8b814ad
+sha256  b20fba338dd632dfae84e298cf21d2ea71ed8b1ce370ce4a73d22470c8b814ad
 
 depends_build       port:apache-ant
 

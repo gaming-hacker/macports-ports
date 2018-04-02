@@ -14,7 +14,7 @@ long_description    This module implements many useful functions \
                     for creating and manipulating iterator objects.
 
 checksums           rmd160  338cfb14c29db003689fcb9fe72e6199cb1b3d28 \
-                    sha256  6182e488f1f1961d8653d6bb3ecb1222776ff2835b51ac120918c5238c1eb563
+sha256  6182e488f1f1961d8653d6bb3ecb1222776ff2835b51ac120918c5238c1eb563
 
 platforms           darwin
 supported_archs     noarch

@@ -23,7 +23,7 @@ long_description \
 master_sites        ftp://sources.redhat.com/pub/docbook-tools/new-trials/SOURCES/
 
 checksums           rmd160  710fe047ea8a794cc6c0d944521184375a666e6b \
-                    sha256  48faab8ee8a7605c9342fb7b906e0815e3cee84a489182af38e8f7c0df2e92e9
+sha256  48faab8ee8a7605c9342fb7b906e0815e3cee84a489182af38e8f7c0df2e92e9
 
 conflicts           docbook2X
 

@@ -28,7 +28,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  837ae8246892162f5886b2ee477ea0f9f7899bba \
-                    sha256  8f494b26ab584c24c156a569fabe16424b482907cc6f8cfdf6c40619498d1dd8
+sha256  8f494b26ab584c24c156a569fabe16424b482907cc6f8cfdf6c40619498d1dd8
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-logilab-common

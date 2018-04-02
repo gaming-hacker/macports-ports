@@ -20,7 +20,7 @@ long_description        ${name} is an application for notetaking, sketching, \
                         other applications such as Jarnal, Gournal, and NoteLab.
 
 checksums               rmd160  36a0b2bb848d4801e2b00cf2cd58c8f847488c5d \
-                        sha256  b25898dbd7a149507f37a16769202d69fbebd4a000d766923bbd32c5c7462826 \
+sha256  b25898dbd7a149507f37a16769202d69fbebd4a000d766923bbd32c5c7462826 \
 size    646082
 
 depends_build           port:pkgconfig

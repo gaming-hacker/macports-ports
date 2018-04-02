@@ -12,4 +12,4 @@ description         PEAR Crypt_RSA package
 long_description    ${description}
 
 checksums           rmd160  e9da83a1f79620e8ad6c8854c130e8b58824c717 \
-                    sha256  dc8c0a2a9cb6849e0f0e3a4cbde8b4cc18680647652f755717a318bcd32808d4
+sha256  dc8c0a2a9cb6849e0f0e3a4cbde8b4cc18680647652f755717a318bcd32808d4

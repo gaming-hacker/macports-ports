@@ -19,7 +19,7 @@ homepage		https://www.ntop.org/
 master_sites		sourceforge:project/ntop/ntop/Stable/
 
 checksums		rmd160  6ca48ded21538e7af895b25da935a3069378de70 \
-			sha256  7e8e84cb14d2173beaca4d4cb991a14d84a4bef84ec37b2276bc363f45c52ef8
+sha256  7e8e84cb14d2173beaca4d4cb991a14d84a4bef84ec37b2276bc363f45c52ef8
 
 depends_build		port:gawk \
 			port:automake \

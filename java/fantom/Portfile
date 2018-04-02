@@ -23,7 +23,7 @@ master_sites        googlecode:fan
 use_zip             yes
 
 checksums           rmd160  8c476f4b6d73bc675303ff3b8ec91e8ffd054818 \
-                    sha256  b8f45d0f7a2bd92910e7da4e45fb2f8bc8ff61e60da4b950e427f827d288d7ee
+sha256  b8f45d0f7a2bd92910e7da4e45fb2f8bc8ff61e60da4b950e427f827d288d7ee
 
 depends_build       bin:java:kaffe
 

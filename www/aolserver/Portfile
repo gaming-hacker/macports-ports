@@ -18,8 +18,8 @@ license          AOLserver Public License
 master_sites     sourceforge
 distname         ${name}-${version}-src
 checksums        md5    d7aa89d6b864d75460fafd2f26553fec \
-                 sha1   9b37a883b34902d80bf042a1bd8d274f585fe843 \
-                 rmd160 c35faa53ecae93e494f4c44dc1bf3594391562ce
+sha1   9b37a883b34902d80bf042a1bd8d274f585fe843 \
+rmd160 c35faa53ecae93e494f4c44dc1bf3594391562ce
 
 # Requires tcl +threads, see ticket #126
 depends_lib      port:tcl

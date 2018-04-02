@@ -20,7 +20,7 @@ homepage            http://znc.in/
 master_sites        ${homepage}releases/archive/
 
 checksums           rmd160  40080869f8c95324d64a007bb99ba8bb637f4814 \
-                    sha256  2f0225d49c53a01f8d94feea4619a6fe92857792bb3401a4eb1edd65f0342aca
+sha256  2f0225d49c53a01f8d94feea4619a6fe92857792bb3401a4eb1edd65f0342aca
 
 universal_variant   no
 

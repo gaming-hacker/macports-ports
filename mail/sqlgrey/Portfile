@@ -16,7 +16,7 @@ homepage            http://sqlgrey.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  0404df3987ceb4732e73fee09388454995754c1c \
-                    sha256  c109aab28c9dcf798beb708d1efa37facfb3dfacd0f15fa87b5f6c1f023d2068
+sha256  c109aab28c9dcf798beb708d1efa37facfb3dfacd0f15fa87b5f6c1f023d2068
 
 perl5.require_variant   yes
 perl5.conflict_variants yes

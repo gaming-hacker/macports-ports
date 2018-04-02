@@ -25,7 +25,7 @@ long_description    WARNING: this is ALPHA code. More features to be added \
                     failure.
 
 checksums           sha1    73e71b35eb6d083ed5087f7aeedfc7d85afb1324 \
-                    rmd160  3a39d21d66e5669daf14a98f3bc62531ee1c5567
+rmd160  3a39d21d66e5669daf14a98f3bc62531ee1c5567
 
 if {${perl5.major} != ""} {
     depends_lib-append \

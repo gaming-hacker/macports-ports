@@ -18,7 +18,7 @@ homepage            https://www.gnu.org/software/diffutils/
 master_sites        gnu
 
 checksums           rmd160  28159a202787e8f4e132de81c269b7a816da34c0 \
-                    sha256  d621e8bdd4b573918c8145f7ae61817d1be9deb4c8d2328a65cea8e11d783bd6
+sha256  d621e8bdd4b573918c8145f7ae61817d1be9deb4c8d2328a65cea8e11d783bd6
 
 use_xz              yes
 

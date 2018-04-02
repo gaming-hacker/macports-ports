@@ -12,6 +12,6 @@ description         PEAR File_Infopath package
 long_description    ${description}
 
 checksums           rmd160  49a36d5a74c99a442e8796aedc974cc5828cefad \
-                    sha256  a535dc42e0a6dfc57def65630bea37834de64d40dd44090d6e807dab26c47382
+sha256  a535dc42e0a6dfc57def65630bea37834de64d40dd44090d6e807dab26c47382
 
 depends_lib-append  port:pear-File_Cabinet

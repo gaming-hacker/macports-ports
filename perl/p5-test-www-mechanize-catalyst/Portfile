@@ -15,7 +15,7 @@ long_description    Test::WWW::Mechanize is a subclass of WWW::Mechanize \
 platforms           darwin
 
 checksums           rmd160  94e920eb44daa1e320dbd2e2abcac240c3c3f746 \
-                    sha256  9b827d9a42c5cdedbd694e614e56b452d20d6450778f837efccd8ea87276105a
+sha256  9b827d9a42c5cdedbd694e614e56b452d20d6450778f837efccd8ea87276105a
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -17,7 +17,7 @@ description         Use Cpanel::JSON::XS with a fallback to JSON::XS and JSON::P
 long_description    ${description}
 
 checksums           rmd160  1b2877b9d53f2c664f10c2466a15ab279e69bb0f \
-                    sha256  60ac9aa33c7d5cbccc308f864a84a7612afdfcda79ac930ddd42e95f3a014543 \
+sha256  60ac9aa33c7d5cbccc308f864a84a7612afdfcda79ac930ddd42e95f3a014543 \
 size    14057
 
 if {${perl5.major} != ""} {

@@ -28,7 +28,7 @@ distname            hibernate-release-${version}
 extract.suffix      .tgz
 
 checksums           sha1    00352cfed902453b3d489ef53c6e6e4db6ab77eb \
-                    rmd160  f2842b5494b6eeac417c01c891091bfb5c6294bb 
+rmd160  f2842b5494b6eeac417c01c891091bfb5c6294bb 
 
 use_configure       no
 

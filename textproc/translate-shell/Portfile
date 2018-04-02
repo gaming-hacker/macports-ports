@@ -18,7 +18,7 @@ license             public-domain
 homepage            http://www.soimort.org/translate-shell/
 
 checksums           rmd160  baf28edaa59b8501537d96175f80a327493aea2a \
-                    sha256  9bfd8a33029e9b764381e8673639628de01d9dac0a3a0934dcf24b5553d56143
+sha256  9bfd8a33029e9b764381e8673639628de01d9dac0a3a0934dcf24b5553d56143
 
 depends_build       port:gawk
 

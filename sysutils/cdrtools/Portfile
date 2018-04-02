@@ -21,7 +21,7 @@ maintainers         nomaintainer
 master_sites        sourceforge:project/cdrtools
 
 checksums           rmd160  3696b1bc502905cbe7c06e492b42d2ffe2dba982 \
-                    sha256  ed282eb6276c4154ce6a0b5dee0bdb81940d0cbbfc7d03f769c4735ef5f5860f
+sha256  ed282eb6276c4154ce6a0b5dee0bdb81940d0cbbfc7d03f769c4735ef5f5860f
 
 use_bzip2           yes
 

@@ -16,7 +16,7 @@ long_description    This module automatically inserts data from a previous \
                     into the form tags.
 
 checksums           rmd160 bd0a1a460a54cf9325a315dce0e858e978cdd399 \
-                    sha256 d3af183cc8327614f1192929f4f0919b6e9725fc19c6f3730ce556a8daea6cf6
+sha256 d3af183cc8327614f1192929f4f0919b6e9725fc19c6f3730ce556a8daea6cf6
 
 platforms           darwin
 supported_archs     noarch

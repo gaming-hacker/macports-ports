@@ -33,7 +33,7 @@ dist_subdir         ${name}/${version}_1
 extract.suffix      .tgz
 
 checksums           rmd160  68b5c4df1c7664b81217a076b431a953e1d3e0a9 \
-                    sha256  97e458626da9d9307a0189a20574fe671e384cf5143f5fa5c5ed4faf753f3fed
+sha256  97e458626da9d9307a0189a20574fe671e384cf5143f5fa5c5ed4faf753f3fed
 
 worksrcdir          lanhep${short_version}
 

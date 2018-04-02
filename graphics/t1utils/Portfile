@@ -22,7 +22,7 @@ homepage        http://www.lcdf.org/~eddietwo/type/
 master_sites    ${homepage}
 
 checksums       rmd160  922d63805ae4c943118709353f20fc9ce45190bb \
-                sha256  fc5edd7e829902b3b685886382fed690d533681c0ab218a387c9e47606623427
+sha256  fc5edd7e829902b3b685886382fed690d533681c0ab218a387c9e47606623427
 
 configure.args  --mandir=${prefix}/share/man
 

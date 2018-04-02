@@ -17,7 +17,7 @@ description         A thin layer of graphic data types
 long_description    ${description}
 
 checksums           rmd160  2d0ba5a4d85c46f9fa454c55e564a036f5e9e823 \
-                    sha256  ef1eb4c7bbc14323b9fe6cb20efeffa6414228af81d26c90d8ed7c39fab5b48c \
+sha256  ef1eb4c7bbc14323b9fe6cb20efeffa6414228af81d26c90d8ed7c39fab5b48c \
 size    157278
 
 depends_build-append \

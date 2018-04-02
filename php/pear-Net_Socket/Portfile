@@ -13,4 +13,4 @@ description         PEAR Net_Socket package
 long_description    ${description}
 
 checksums           rmd160  0f8ab230aecc11eb1194fd755cd18618847ff464 \
-                    sha256  1dbdc01324cd3a07b49796884baa08831bedf222854f3a70e8df1cfc868ab942
+sha256  1dbdc01324cd3a07b49796884baa08831bedf222854f3a70e8df1cfc868ab942

@@ -16,7 +16,7 @@ long_description	Clam AntiVirus is a GPL anti-virus toolkit for UNIX. The \
 homepage		http://www.clamav.net
 master_sites		http://www.clamav.net/downloads/production
 checksums	rmd160	5925f4727c98d328f7f12267bb1af11fc368f9d8 \
-		sha256	d72ac3273bde8d2e5e28ec9978373ee3ab4529fd868bc3fc4d2d2671228f2461
+sha256	d72ac3273bde8d2e5e28ec9978373ee3ab4529fd868bc3fc4d2d2671228f2461
 
 platforms	   	darwin
 

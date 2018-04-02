@@ -15,4 +15,4 @@ description         A small tool to do the statistics legwork on benchmarks
 long_description    ${description}
 
 checksums           rmd160  625d78eea43dccd89c5ae635a75e468f81b0a04c \
-                    sha256  ad73993469df4a61c904cf22c7772bcfeb68bf0723aab2e162eaed48e1fbec61
+sha256  ad73993469df4a61c904cf22c7772bcfeb68bf0723aab2e162eaed48e1fbec61

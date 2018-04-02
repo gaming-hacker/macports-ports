@@ -14,7 +14,7 @@ description         display MySQL server performance info like `top'
 long_description    ${description}
 
 checksums           rmd160  b6160f2c4e4c391c6e02ca4af3b2799d56021f69 \
-                    sha256  095c1dbfe6efdd2bdd68bbd00250263e98d4cb2175e29456c137946ae5171b03
+sha256  095c1dbfe6efdd2bdd68bbd00250263e98d4cb2175e29456c137946ae5171b03
 
 platforms           darwin
 supported_archs     noarch

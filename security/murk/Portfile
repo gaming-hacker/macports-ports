@@ -19,7 +19,7 @@ homepage            http://murk.sourceforge.net/
 master_sites        sourceforge:project/murk/murk/${version}
 
 checksums           rmd160  02d4f8784bca9896605df53746516d2c7a7c4015 \
-                    sha256  0d9a53efe8ab62eea8e1deb0b6c0f3e605573b23a6f1eda4cb71aa3f921a6ea8
+sha256  0d9a53efe8ab62eea8e1deb0b6c0f3e605573b23a6f1eda4cb71aa3f921a6ea8
 
 use_bzip2           yes
 

@@ -18,7 +18,7 @@ long_description    This module provides perl access to Glib and GLibs GObject \
                     and a powerful signal system.
 
 checksums           rmd160  034614467d3a1d4e4277de1fa8dbd7367a7ee707 \
-                    sha256  020d0308220cb6e03a086bd45d33dd8fe03b265c502bfc2b4e58f2dbe64c365f
+sha256  020d0308220cb6e03a086bd45d33dd8fe03b265c502bfc2b4e58f2dbe64c365f
 
 if {${perl5.major} != ""} {
     depends_lib-append \

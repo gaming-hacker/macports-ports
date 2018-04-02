@@ -32,7 +32,7 @@ github.tarball_from     releases
 distname                ${name}-${version}
 
 checksums               rmd160  68f52aafe4b378fbafe7bb43fdee5612f1acd666 \
-                        sha256  442de3ccc98f55e7c04a7470771bd8d92e49a43f897964cc5b191c6b7a2b9dc2 \
+sha256  442de3ccc98f55e7c04a7470771bd8d92e49a43f897964cc5b191c6b7a2b9dc2 \
 size    1516318
 
 set llvm_version        3.4

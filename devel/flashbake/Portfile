@@ -16,7 +16,7 @@ long_description  Scripts to gather information for including in \
   simpler for non-technical projects.
 
 checksums         rmd160  da641383d4a2d40db8aea34f73ad43b12fd3f1ef \
-                  sha256  85703dc8c7685715f9441245f272224fb97ca74d0c6a968baa584a774a1816aa
+sha256  85703dc8c7685715f9441245f272224fb97ca74d0c6a968baa584a774a1816aa
 
 python.default_version 27
 

@@ -18,8 +18,8 @@ master_sites    sourceforge:project/motif/Motif%20${version}%20Source%20Code
 distname        motif-${version}
 
 checksums       md5    7572140bb52ba21ec2f0c85b2605e2b1 \
-                sha1   ca9d8d67544434c5883d8d0fb684a48f8b0108bd \
-                rmd160 a4c10db68d880d3096c97cc1c995351616a90a57
+sha1   ca9d8d67544434c5883d8d0fb684a48f8b0108bd \
+rmd160 a4c10db68d880d3096c97cc1c995351616a90a57
 
 depends_build \
 	port:pkgconfig \

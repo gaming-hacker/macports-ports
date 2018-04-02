@@ -31,7 +31,7 @@ use_bzip2               yes
 distname                pdftools.${name}-${version}
 
 checksums               sha1    efca128a0eba06922cc8c82133dcdd1fb0ef2311 \
-                        rmd160  ca57353efdc5b21362edf105938d56ecf09d4c2c
+rmd160  ca57353efdc5b21362edf105938d56ecf09d4c2c
 
 python.default_version  27
 

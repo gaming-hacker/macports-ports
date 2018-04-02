@@ -16,8 +16,8 @@ long_description    This module exports a method that is useful \
 platforms           darwin
 
 checksums           md5 aebd79da361b676a7ecd3245fc3d1b3f \
-                    sha1 d7d3f27b3d7af789ea58e1acdf0ea9da3251d239 \
-                    rmd160 114b60a66db59d536a84c6ce3b801c1c6e71e296
+sha1 d7d3f27b3d7af789ea58e1acdf0ea9da3251d239 \
+rmd160 114b60a66db59d536a84c6ce3b801c1c6e71e296
 
 supported_archs     noarch
 

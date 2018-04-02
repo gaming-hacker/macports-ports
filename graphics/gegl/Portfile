@@ -27,7 +27,7 @@ master_sites        https://git.gnome.org/browse/${git_name}/snapshot/
 distname            ${git_name}-${git_commit}
  
 checksums           rmd160  3005242c48a3ad069ff34ee6c9cf91976112e035 \
-                    sha256  30bd5828f4be7b8347aa9b8ab870125ca331f0788d7c38f995b412974044c187 \
+sha256  30bd5828f4be7b8347aa9b8ab870125ca331f0788d7c38f995b412974044c187 \
 size    8816280
 
 depends_build       port:autoconf \

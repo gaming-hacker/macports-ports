@@ -19,7 +19,7 @@ master_sites        https://github.com/twisted/incremental/archive
 distname            incremental-${version}
 
 checksums           rmd160  d43e1e373acf42abcaaef8ffde8f77bf5a48abb5 \
-                    sha256  7be9a13ebb2ad1dd1ed3ecf547c3fa6e1154bb793418c6cc504b9b6039b0045a
+sha256  7be9a13ebb2ad1dd1ed3ecf547c3fa6e1154bb793418c6cc504b9b6039b0045a
 
 worksrcdir          incremental-incremental-${version}
 

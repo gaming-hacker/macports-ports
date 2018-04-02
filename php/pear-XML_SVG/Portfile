@@ -13,4 +13,4 @@ description         PEAR XML_SVG package
 long_description    ${description}
 
 checksums           rmd160  055caf38451e8615309035cfded361f543353bf1 \
-                    sha256  50f48e23b784a83e3ebfe6f07749067523101c4d74d51745532d6387702b5c1a
+sha256  50f48e23b784a83e3ebfe6f07749067523101c4d74d51745532d6387702b5c1a

@@ -12,6 +12,6 @@ description         PEAR Net_Sieve package
 long_description    ${description}
 
 checksums           rmd160  57744fb3264f3e062b36a480b7a00ac28fa3cd6a \
-                    sha256  dd2bca102e9cbc8dad42d32f6799894e065e91eacb0d186546abf3de644d776c
+sha256  dd2bca102e9cbc8dad42d32f6799894e065e91eacb0d186546abf3de644d776c
 
 depends_lib-append  port:pear-Net_Socket

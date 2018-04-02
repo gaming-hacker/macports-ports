@@ -21,7 +21,7 @@ master_sites        http://code.breakfastquay.com/attachments/download/${downloa
 use_bzip2           yes
 
 checksums           rmd160  21178218aeffb0a0827ba8c4fd32e95f5a08b295 \
-                    sha256  ff0c63b0b5ce41f937a8a3bc560f27918c5fe0b90c6bc1cb70829b86ada82b75
+sha256  ff0c63b0b5ce41f937a8a3bc560f27918c5fe0b90c6bc1cb70829b86ada82b75
 
 depends_lib         port:libsndfile
 

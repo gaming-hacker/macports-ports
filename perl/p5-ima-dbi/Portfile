@@ -20,7 +20,7 @@ long_description      Ima::DBI attempts to organize and facilitate caching \
 platforms             darwin
 
 checksums             rmd160  5b903ab5a35b45c0684ad0a3e65f605e2dd1e18e \
-                      sha256  8b481ceedbf0ae4a83effb80581550008bfdd3885ef01145e3733c7097c00a08
+sha256  8b481ceedbf0ae4a83effb80581550008bfdd3885ef01145e3733c7097c00a08
 
 if {${perl5.major} != ""} {
 depends_lib-append    port:p${perl5.major}-dbi \

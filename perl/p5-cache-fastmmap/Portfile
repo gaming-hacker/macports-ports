@@ -13,4 +13,4 @@ description         Uses an mmap'ed file to act as a shared memory interprocess 
 long_description    ${description}
 
 checksums           rmd160  41a7df1b7a6a495a7e7a8c3c7a29a5354e3bc528 \
-                    sha256  28e9ae034ad37f36a3a644266c9b5993385ca9c9a14fb0a058288dbd289fc100
+sha256  28e9ae034ad37f36a3a644266c9b5993385ca9c9a14fb0a058288dbd289fc100

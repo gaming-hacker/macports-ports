@@ -26,7 +26,7 @@ homepage            http://www.xcrysden.org/
 master_sites        ${homepage}/download
 
 checksums           rmd160  2473752e074b2877df890b232cdc7bd02580a9e5 \
-                    sha1    388cf837aa757e612f36a12eb7fb592c36cfd6f3
+sha1    388cf837aa757e612f36a12eb7fb592c36cfd6f3
 
 compilers.choose    fc
 compilers.setup     require_fortran

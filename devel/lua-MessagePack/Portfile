@@ -13,7 +13,7 @@ description         MessagePack for Lua
 long_description    A Lua implementation of MessagePack, a binary-based efficient data interchange format.
 
 checksums           rmd160  45b040eebd8575481d0cadc4490097d1db1c97fa \
-                    sha256  0f447a3bcbce594d357716daa9e7810922d7f08534d01231ebbb71bc835771c9
+sha256  0f447a3bcbce594d357716daa9e7810922d7f08534d01231ebbb71bc835771c9
 
 depends_build       port:pkgconfig
 depends_lib         port:lua

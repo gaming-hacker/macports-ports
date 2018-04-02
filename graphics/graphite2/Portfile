@@ -22,7 +22,7 @@ master_sites        sourceforge:project/silgraphite/graphite2
 extract.suffix      .tgz
 
 checksums           rmd160  cc69347fcc1a7cb2b332377e51d652ccac5d712c \
-                    sha256  ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
+sha256  ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
 
 patchfiles          patch-src-CMakeLists.txt.diff \
                     patch-src-Face.cpp.diff

@@ -21,9 +21,9 @@ master_sites        http://rsync.samba.org/ftp/rsync/ \
                     http://rsync.samba.org/ftp/rsync/src/
 
 checksums           md5     1581a588fde9d89f6bc6201e8129afaf \
-                    sha1    82e7829c0b3cefbd33c233005341e2073c425629 \
-                    rmd160  95a040e0c32e09d01f37fc7d2defd2c41a184db6 \
-                    sha256  55cc554efec5fdaad70de921cd5a5eeb6c29a95524c715f3bbf849235b0800c0
+sha1    82e7829c0b3cefbd33c233005341e2073c425629 \
+rmd160  95a040e0c32e09d01f37fc7d2defd2c41a184db6 \
+sha256  55cc554efec5fdaad70de921cd5a5eeb6c29a95524c715f3bbf849235b0800c0
 
 depends_lib         port:popt port:libiconv
 

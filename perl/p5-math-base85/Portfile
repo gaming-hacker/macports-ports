@@ -18,7 +18,7 @@ long_description    Math::Base85 ${description}, via strings and \
                     or RFC 1924.
 
 checksums           rmd160  7ca3949086588cdad286f0f222ea601440eb96a7 \
-                    sha256  9ea858600f925e1ffc7f0a863b7835892d9899fcf44b3e5090eca3a469b98b0d
+sha256  9ea858600f925e1ffc7f0a863b7835892d9899fcf44b3e5090eca3a469b98b0d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

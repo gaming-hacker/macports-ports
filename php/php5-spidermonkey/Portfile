@@ -16,8 +16,8 @@ long_description        The ${name} extension embeds Mozilla's JavaScript engine
                         Spidermonkey in PHP.
                         
 checksums               md5 4f4a9d3558d1354e728ab168e11c35c5 \
-                        sha1 dd3f922452519f042227684bfee79af6d2a30324 \
-                        rmd160 059761f39d3e5fe2a0aba55e897fb1b6399bc3f4
+sha1 dd3f922452519f042227684bfee79af6d2a30324 \
+rmd160 059761f39d3e5fe2a0aba55e897fb1b6399bc3f4
 
 depends_lib-append      port:spidermonkey
 

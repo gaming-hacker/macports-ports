@@ -23,4 +23,4 @@ long_description    PatchReader is a set of utilities for reading in, \
                     some places to output a patch as HTML).
 
 checksums           sha1    b9e6ab2db9338fd04cd876f170fd5d2ca017571f \
-                    rmd160  f931d1699dcd55186dd10c066cb7e02fb4173627
+rmd160  f931d1699dcd55186dd10c066cb7e02fb4173627

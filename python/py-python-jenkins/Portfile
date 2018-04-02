@@ -17,7 +17,7 @@ master_sites        pypi:p/python-jenkins
 distname            python-jenkins-0.3.4
 
 checksums           rmd160  ea6783913bd173fc6c1f7ea030969ddcb02d7aac \
-                    sha256  c1bc6eca5bb211d35d9efab0a536a068581743919f998f25eab34852c6a46494
+sha256  c1bc6eca5bb211d35d9efab0a536a068581743919f998f25eab34852c6a46494
 
 python.versions 27 36
 

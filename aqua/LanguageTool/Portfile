@@ -18,7 +18,7 @@ supported_archs     noarch
 master_sites        https://languagetool.org/download/
 
 checksums           rmd160  490eb4f30147a3563bf6527cb17ea6cc3fb5f6db \
-                    sha256  350ae3584d72dfc769f63adbf46a438e3a66ad86c9cdd4dd0c3e3c44ed38b31e
+sha256  350ae3584d72dfc769f63adbf46a438e3a66ad86c9cdd4dd0c3e3c44ed38b31e
 
 depends_run         bin:java:kaffe
 

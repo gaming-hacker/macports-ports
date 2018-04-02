@@ -12,4 +12,4 @@ description         PEAR XML_fo2pdf package
 long_description    ${description}
 
 checksums           rmd160  bb486615caafc3b0c53d8728bc40b9b2c46ed595 \
-                    sha256  f37b4b2e5eb8662e74ce653004a0502c67bb8f0e0552929ee2451cbc1c69a1e4
+sha256  f37b4b2e5eb8662e74ce653004a0502c67bb8f0e0552929ee2451cbc1c69a1e4

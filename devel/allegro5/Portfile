@@ -37,7 +37,7 @@ long_description \
 
 if {${name} eq ${subport}} {
     checksums           rmd160  83f9984ce79d3cf571e9c2fc64ff6489ce9e9165 \
-                        sha256  668c0e88aec6690f250aa95ae1927154de75a99b7318500bc9b248e639a46ebd
+sha256  668c0e88aec6690f250aa95ae1927154de75a99b7318500bc9b248e639a46ebd
 
     depends_build-append \
                     port:libxslt \

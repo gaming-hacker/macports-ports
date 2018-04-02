@@ -17,7 +17,7 @@ description         a reusable property proxy API
 long_description    ${description}
 
 checksums           rmd160  7012fc74961c31ce47f360e0e175d48679d71c59 \
-                    sha256  6b4e785adcc8378148c7ad06aa82e71e1d45c7ea5dbebea9ea9a38fee14e62e7
+sha256  6b4e785adcc8378148c7ad06aa82e71e1d45c7ea5dbebea9ea9a38fee14e62e7
 
 if {${name} ne ${subport}} {
     configure.args  --enable-propro

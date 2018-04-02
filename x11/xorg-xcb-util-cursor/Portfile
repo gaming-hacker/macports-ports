@@ -14,7 +14,7 @@ master_sites	 ${homepage}/dist/
 
 distname	xcb-util-cursor-${version}
 checksums           rmd160  29ad840667af37c00b06fbf4ccea215dbe8df2d8 \
-                    sha256  05a10a0706a1a789a078be297b5fb663f66a71fb7f7f1b99658264c35926394f
+sha256  05a10a0706a1a789a078be297b5fb663f66a71fb7f7f1b99658264c35926394f
 use_bzip2	yes
 use_parallel_build yes
 

@@ -13,7 +13,7 @@ description             Parse and format MySQL dates and times
 long_description        ${description}
 
 checksums               rmd160  7678356aa18dac1e9155f4281e19afca307459b8 \
-                        sha256  9818d4162ec9cec6139ba97b39e0489d217581a1d43fbb713f3beffe80f98f1d
+sha256  9818d4162ec9cec6139ba97b39e0489d217581a1d43fbb713f3beffe80f98f1d
 
 if {${perl5.major} != ""} {
     depends_build-append \

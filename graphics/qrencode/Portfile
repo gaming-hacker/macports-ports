@@ -18,7 +18,7 @@ platforms               darwin
 use_bzip2               yes
 
 checksums               rmd160  de7bc930a80ceee0896ad27da35b7c3cb2df1635 \
-                        sha256  c90035e16921117d4086a7fdee65aab85be32beb4a376f6b664b8a425d327d0b
+sha256  c90035e16921117d4086a7fdee65aab85be32beb4a376f6b664b8a425d327d0b
 
 depends_build           port:pkgconfig
 depends_lib             port:libpng

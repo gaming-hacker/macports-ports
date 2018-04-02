@@ -16,7 +16,7 @@ homepage            http://invisible-island.net/xterm/
 master_sites        ftp://invisible-island.net/xterm/ \
                     http://invisible-island.net/datafiles/release/
 checksums           rmd160  6344e06f06db6ae11b4dc330b2c5e8f3ffb99d2a \
-                    sha256  7aeef9f29f6b95e09f481173c8c3053357bf5ffe162585647f690fd1707556df
+sha256  7aeef9f29f6b95e09f481173c8c3053357bf5ffe162585647f690fd1707556df
 extract.suffix      .tgz
 
 depends_build \

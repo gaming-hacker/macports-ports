@@ -13,4 +13,4 @@ description         PEAR Validate_Finance_CreditCard package
 long_description    ${description}
 
 checksums           rmd160  4f88198618c383b7016cd3eb64f0e12ec6565322 \
-                    sha256  bd66a752e33f972ea8d04850ac884f9c830d3cbc404c8b41522a0e2dbc5c7e0e
+sha256  bd66a752e33f972ea8d04850ac884f9c830d3cbc404c8b41522a0e2dbc5c7e0e

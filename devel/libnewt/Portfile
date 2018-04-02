@@ -23,7 +23,7 @@ master_sites        http://releases.pagure.org/newt/
 distname            newt-${version}
 
 checksums           rmd160  bfc6d83430ce692ad48eb7a5ce8296569bfdd9f8 \
-                    sha256  8d66ba6beffc3f786d4ccfee9d2b43d93484680ef8db9397a4fb70b5adbb6dbc
+sha256  8d66ba6beffc3f786d4ccfee9d2b43d93484680ef8db9397a4fb70b5adbb6dbc
 
 depends_lib         port:gettext \
                     port:popt \

@@ -14,7 +14,7 @@ homepage            http://fmv.jku.at/picosat/
 master_sites        ${homepage}
 
 checksums           rmd160  dba1b18d018f414c372dd7123a99f6d0d70716d2 \
-                    sha256  edb3184a04766933b092713d0ae5782e4a3da31498629f8bb2b31234a563e817
+sha256  edb3184a04766933b092713d0ae5782e4a3da31498629f8bb2b31234a563e817
 
 installs_libs       yes
 

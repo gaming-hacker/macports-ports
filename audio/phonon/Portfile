@@ -13,7 +13,7 @@ master_sites        kde:stable/${name}/${version}
 use_xz              yes
 distname            phonon-${version}
 checksums           rmd160 d38d582aabb45e175e12aeeacac9b08e0ccab6db \
-                    sha256 e2c10ecc7d2f3d3a0f80a63def789a875420b3d90062c26718dcfdaab8a5d03f
+sha256 e2c10ecc7d2f3d3a0f80a63def789a875420b3d90062c26718dcfdaab8a5d03f
 
 variant demos description {Build the demos} {
     configure.args-append   -DPHONON_BUILD_DEMOS:BOOL=ON

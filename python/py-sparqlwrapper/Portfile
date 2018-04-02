@@ -21,7 +21,7 @@ long_description    This is a wrapper around a SPARQL service. It helps in \
 homepage            https://rdflib.github.io/sparqlwrapper
 
 checksums           rmd160  8bc26ea28dd6ea3021cee49f3eb9e695aace8ab2 \
-                    sha256  9d5aa9cfb8d393ee64a60b72417d8aa8e6fa0c162b2104af9be7ba83bc2a95ec \
+sha256  9d5aa9cfb8d393ee64a60b72417d8aa8e6fa0c162b2104af9be7ba83bc2a95ec \
 size    32977
 
 if {${name} ne ${subport}} {

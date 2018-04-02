@@ -13,6 +13,6 @@ description         PEAR XML_Tree package
 long_description    ${description}
 
 checksums           rmd160  e6efc633c99fca182ca3590b3b843167a0b01f97 \
-                    sha256  7442449b8ab1ad0989a48ba7ad4790b5b14be239b3b85e003d8570a753990a31
+sha256  7442449b8ab1ad0989a48ba7ad4790b5b14be239b3b85e003d8570a753990a31
 
 depends_lib-append  port:pear-XML_Parser

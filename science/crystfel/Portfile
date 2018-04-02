@@ -21,7 +21,7 @@ homepage            http://www.desy.de/~twhite/crystfel/
 master_sites        ${homepage}
 
 checksums           rmd160  df8dcdabb4fd8deb76ab4e6e96fd663702bfe0d8 \
-                    sha256  31d0aa28c6c7ee550498dd9c3e736a0ac7c8c0c7529bf7bb7ca1c27ba7e9e105
+sha256  31d0aa28c6c7ee550498dd9c3e736a0ac7c8c0c7529bf7bb7ca1c27ba7e9e105
 
 depends_build       port:pkgconfig
 

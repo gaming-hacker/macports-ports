@@ -24,8 +24,8 @@ homepage            https://diffoscope.org/
 master_sites        pypi:d/diffoscope
 
 checksums           md5     5cfe73c90bc7c14e0659500762e3f96b \
-                    rmd160  8846e501845cc2c29565de329293765719ae49d4 \
-                    sha256  d1507e40bc7a920cbfb9df6f69029e84ad084d9804733af923587c10b7110f42 \
+rmd160  8846e501845cc2c29565de329293765719ae49d4 \
+sha256  d1507e40bc7a920cbfb9df6f69029e84ad084d9804733af923587c10b7110f42 \
 size    9443404
 
 python.default_version 36

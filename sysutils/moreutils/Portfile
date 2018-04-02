@@ -33,7 +33,7 @@ homepage                http://joeyh.name/code/moreutils
 master_sites            freebsd
 
 checksums               rmd160  99d0d5c10def89b4769acc32d1e783be88296750 \
-                        sha256  9ddf9d74983bbca869de96210c81b95ef747d817bce67505f9804a90b9ce83bd \
+sha256  9ddf9d74983bbca869de96210c81b95ef747d817bce67505f9804a90b9ce83bd \
 size    92303
 
 # set pbranch to desired perl version

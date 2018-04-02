@@ -26,7 +26,7 @@ homepage                http://lgames.sourceforge.net/index.php?project=LBreakou
 master_sites            sourceforge:project/lgames/lbreakout2/${branch}
 
 checksums               rmd160  24b4717b642c5e544c1917dc86de61f2fcfde392 \
-                        sha256  85a1364510535d8e066b9a25466c667c3da32463e03daf4c998f117afbddef0e
+sha256  85a1364510535d8e066b9a25466c667c3da32463e03daf4c998f117afbddef0e
 
 depends_lib             port:libsdl \
                         port:libsdl_mixer \

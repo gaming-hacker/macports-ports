@@ -22,8 +22,8 @@ homepage                https://web.archive.org/web/20150910223552/http://kirk.w
 master_sites            http://kirk.webfinish.com/xlsx2csv/
 
 checksums               md5     46735abccbcab2669eff465e50177e6f \
-                        sha1    4fe04e26e58e05b50ae2c84626f6328e3caa3192 \
-                        rmd160  885977d4df6b2a07228fa65a35198697ab5325d6
+sha1    4fe04e26e58e05b50ae2c84626f6328e3caa3192 \
+rmd160  885977d4df6b2a07228fa65a35198697ab5325d6
 
 depends_lib             port:libxslt \
                         port:gsed \

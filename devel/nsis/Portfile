@@ -26,11 +26,11 @@ distfiles-append    nsis-${version}.zip
 extract.only-delete nsis-${version}.zip
 
 checksums           nsis-${version}-src.tar.bz2 \
-                    rmd160  b97f524fcda4dc333d73593c41130db5f8dddde1 \
-                    sha256  abae7f4488bc6de7a4dd760d5f0e7cd3aad7747d4d7cd85786697c8991695eaa \
+rmd160  b97f524fcda4dc333d73593c41130db5f8dddde1 \
+sha256  abae7f4488bc6de7a4dd760d5f0e7cd3aad7747d4d7cd85786697c8991695eaa \
                     nsis-${version}.zip \
-                    rmd160  806e501feff324f94e6d16e442cbaf6de4404837 \
-                    sha256  b53a79078f2c6abf21f11d9fe68807f35b228393eb17a0cd3873614190116ba7
+rmd160  806e501feff324f94e6d16e442cbaf6de4404837 \
+sha256  b53a79078f2c6abf21f11d9fe68807f35b228393eb17a0cd3873614190116ba7
 
 depends_build       port:scons
 

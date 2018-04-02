@@ -22,8 +22,8 @@ homepage	http://simh.trailing-edge.com
 master_sites	http://simh.trailing-edge.com/sources/
 
 checksums	md5     e15f65a82e21ea49e14b438326d93d5c		\
-		sha1    5eac2f8e50be11600727983e05072690a7066702	\
-		rmd160  f085c52ec92425f84f65b3f3605cb7aba8be7b32
+sha1    5eac2f8e50be11600727983e05072690a7066702	\
+rmd160  f085c52ec92425f84f65b3f3605cb7aba8be7b32
 
 use_zip		yes
 distname	${name}${version}

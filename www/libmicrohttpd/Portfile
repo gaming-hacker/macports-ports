@@ -19,7 +19,7 @@ platforms           darwin
 depends_lib         port:gnutls port:libgcrypt port:libgpg-error
 
 checksums           rmd160  b6a394cad5a977886807af0d5a8c2f96617653bf \
-                    sha256  9b9ccd7d0b11b0e179f1f58dc2caa3e0c62c8609e1e1dc7dcaadf941b67d923c
+sha256  9b9ccd7d0b11b0e179f1f58dc2caa3e0c62c8609e1e1dc7dcaadf941b67d923c
 
 configure.args-append   --disable-spdy
 

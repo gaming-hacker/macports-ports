@@ -21,7 +21,7 @@ use_bzip2       yes
 master_sites    https://build.funtoo.org/distfiles/keychain/
 
 checksums       rmd160  a51ac9c66ffd9c11e871d5f1d182c2671ea6ea95 \
-                sha256  16f5949b606691dea6e1832a77e697b8c0b2a536abfbd29e3a3f47222259c3b2 \
+sha256  16f5949b606691dea6e1832a77e697b8c0b2a536abfbd29e3a3f47222259c3b2 \
 size    34869
 
 # Patch keychain's path to pick up any MacPorts binaries, such as

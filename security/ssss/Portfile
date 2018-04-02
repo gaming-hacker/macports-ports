@@ -20,7 +20,7 @@ long_description    Shamir's Secret Sharing is an algorithm in cryptography. It 
                     original secret.
 
 checksums           rmd160 52db3ea26b68202e17057f30934c83dcf666ed0d \
-                    sha256 d936cd1bd36ca0d5fe0f0e9401d5f3d1f2ea458bd218b6245c7b80de10661a53
+sha256 d936cd1bd36ca0d5fe0f0e9401d5f3d1f2ea458bd218b6245c7b80de10661a53
 
 depends_build       port:autoconf \
                     port:automake \

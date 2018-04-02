@@ -16,7 +16,7 @@ long_description    The `IO::Tee' constructor, given a list of output \
                     handles originally passed to the constructor.
 
 checksums           rmd160  6d7ed7990fd2bcaea6e1a50fb51e5295f100ea58 \
-                    sha256  c63dcd109b268962f867407da2654282e3c85113dc7e9655fe8a62331d490c12
+sha256  c63dcd109b268962f867407da2654282e3c85113dc7e9655fe8a62331d490c12
 
 platforms           darwin
 supported_archs     noarch

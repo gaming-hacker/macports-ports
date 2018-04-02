@@ -12,4 +12,4 @@ description         PEAR Net_MAC package
 long_description    ${description}
 
 checksums           rmd160  5f7d2c0af30d4938f9b68ad785c316d5ee4f0c79 \
-                    sha256  46ed5fab8b1f1591d230522367f607edf8e40d4679abda214316709f47f7b033
+sha256  46ed5fab8b1f1591d230522367f607edf8e40d4679abda214316709f47f7b033

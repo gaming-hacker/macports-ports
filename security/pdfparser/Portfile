@@ -21,7 +21,7 @@ distname            pdf-parser_V${my_version}
 use_zip             yes
 
 checksums           rmd160  e07067992f3f12966565b75d60e7cc8fd8a615ec \
-                    sha256  1416624938359fdd375108d922350d1b7b0e41b3a40a48f778d6d72d8a405de6
+sha256  1416624938359fdd375108d922350d1b7b0e41b3a40a48f778d6d72d8a405de6
 
 extract.mkdir       yes
 

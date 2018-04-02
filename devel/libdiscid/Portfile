@@ -18,7 +18,7 @@ homepage            http://musicbrainz.org/doc/libdiscid
 master_sites        http://ftp.musicbrainz.org/pub/musicbrainz/libdiscid/
 
 checksums           rmd160  f5e73d00adccab87037786b9c22dff98f9cb6705 \
-                    sha256  aceb2bd1a8d15d69b2962dec7c51983af32ece318cbbeb1c43c39802922f6dd5
+sha256  aceb2bd1a8d15d69b2962dec7c51983af32ece318cbbeb1c43c39802922f6dd5
 
 livecheck.type      regex
 livecheck.url       [lindex ${master_sites} 0]

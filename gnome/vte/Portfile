@@ -24,7 +24,7 @@ master_sites        gnome:sources/$name/$branch/
 use_xz              yes
 
 checksums           rmd160  09b8819048e70fd089fa82115e27aedc063bdd50 \
-                    sha256  d5ae72dddd57af493afa10ca2a290f284e588021b0bd8aaaa63dbb75de7c0567 \
+sha256  d5ae72dddd57af493afa10ca2a290f284e588021b0bd8aaaa63dbb75de7c0567 \
 size    1010936
 
 depends_build       port:pkgconfig \
@@ -85,7 +85,7 @@ platform darwin {
         version             0.43.0
         revision            3
         checksums           rmd160  d9a1eb6d6d5cbb39e04f625d22e43315500750b8 \
-                            sha256  2f10ae4148633e9ee458639f72cf2929703d413b95eee416fd6f03db8c4d4ab9
+sha256  2f10ae4148633e9ee458639f72cf2929703d413b95eee416fd6f03db8c4d4ab9
         patchfiles          patch-src-Makefile.am-0.43.0.diff \
                             patch-src-pty.cc-0.43.0.diff \
                             patch-src-vteutils.cc-0.43.0.diff

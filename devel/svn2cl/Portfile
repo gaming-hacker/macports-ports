@@ -18,7 +18,7 @@ homepage            http://arthurdejong.org/svn2cl/
 master_sites        ${homepage}
 
 checksums           rmd160  f537577a831586f0bca977997dc78c0b1288df81 \
-                    sha256  a1beb1ee03c7247c2f89792ac5bf91cb4e5ee9bdee839e2208ec9f3aacd738f2
+sha256  a1beb1ee03c7247c2f89792ac5bf91cb4e5ee9bdee839e2208ec9f3aacd738f2
 
 depends_run         bin:xsltproc:libxslt
 

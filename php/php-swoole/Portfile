@@ -17,13 +17,13 @@ if {[vercmp ${php.branch} 7] >= 0} {
     version             2.1.1
     revision            0
     checksums           rmd160  2da9460a8b9b3d51f0501293d25015915db231a4 \
-                        sha256  2f0503dd6f4b46a542cfa4553eb3aab12b8d2b81a63825a45ec84d7f66946d16 \
+sha256  2f0503dd6f4b46a542cfa4553eb3aab12b8d2b81a63825a45ec84d7f66946d16 \
 size    810507
 } else {
     version             1.10.2
     revision            0
     checksums           rmd160  5207d7ceae0009b16290670d28b7febd354a93be \
-                        sha256  3c6e1158d6a0d78ec6b0f7969555c3c9cc4714afaf6acb13bb798b8b2b460959 \
+sha256  3c6e1158d6a0d78ec6b0f7969555c3c9cc4714afaf6acb13bb798b8b2b460959 \
 size    727770
 }
 

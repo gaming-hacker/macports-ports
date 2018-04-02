@@ -21,8 +21,8 @@ master_sites      sourceforge:gcutils
 distname          gcutils-v${version}
 
 checksums         md5 6346fa146abb63d2a817757c842894ca \
-                  sha1 f4e76bc81e9583cfc683e09f7c552ed779bc1c8e \
-                  rmd160 ab4878e438298ee98bc7983823be31904e1376f6
+sha1 f4e76bc81e9583cfc683e09f7c552ed779bc1c8e \
+rmd160 ab4878e438298ee98bc7983823be31904e1376f6
 
 depends_lib       port:git \
                   port:cvsps

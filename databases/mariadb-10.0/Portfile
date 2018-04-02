@@ -46,7 +46,7 @@ if {$subport eq $name} {
                         patch-CMakeLists.txt.diff
 
     checksums           rmd160  79cdce650892d6c77c214c30e8fc20f1c35ab725 \
-                        sha256  e3e3d583c51761aee2fcd0e51bfa7d592c1299cf5eb977e61ea9dc72932e8870
+sha256  e3e3d583c51761aee2fcd0e51bfa7d592c1299cf5eb977e61ea9dc72932e8870
 
     depends_lib-append  port:zlib port:tcp_wrappers port:ncurses port:judy
     depends_run-append  port:mysql_select

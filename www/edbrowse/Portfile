@@ -37,7 +37,7 @@ use_zip             yes
 dist_subdir			${name}-1
 
 checksums           rmd160  42503f7f851b987f10a21d068b0f324d1fcac738 \
-                    sha256  58089879c31b571792f76fc53c41374fcbe8386ea82fe451737ae72e8a78e826
+sha256  58089879c31b571792f76fc53c41374fcbe8386ea82fe451737ae72e8a78e826
 
 patchfiles          patch-makefile.diff
 post-patch {

@@ -19,7 +19,7 @@ long_description    A nilsimsa signature is a statistic of n-gram occurance \
                     nilsimsa implementation in C by cmeclax.
 
 checksums           rmd160  e744cecf7780468e4a7309990e506596cd873150 \
-                    sha256  cd3762cd76803729fd42022d382bc93b26f9b14aed9732eef85b44a9576d2d1e
+sha256  cd3762cd76803729fd42022d382bc93b26f9b14aed9732eef85b44a9576d2d1e
 
 if {${perl5.major} != ""} {
     patchfiles      patch-Nilsimsa-pm.diff

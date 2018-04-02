@@ -26,7 +26,7 @@ distname            pymunk-${version}
 use_zip             yes
 
 checksums           rmd160  2c96284897bdc0f9ca58f4484732fb4a8924888c \
-                    sha256  7102b1a63d4eeb9eb459d4733663bc0af4ea59f664e3fac2228c704ec6768937
+sha256  7102b1a63d4eeb9eb459d4733663bc0af4ea59f664e3fac2228c704ec6768937
 
 patchfiles          patch-setup.py.diff \
                     patch-pymunkoptions-__init__.py.diff

@@ -12,4 +12,4 @@ description         PEAR Validate_LU package
 long_description    ${description}
 
 checksums           rmd160  45fd246adead2e13aef4e9058c0b4fd796b36edd \
-                    sha256  62bdf2ea9333c34951023376e7f669c8d63e5df154c2912cc5e45cc1ce5b276f
+sha256  62bdf2ea9333c34951023376e7f669c8d63e5df154c2912cc5e45cc1ce5b276f

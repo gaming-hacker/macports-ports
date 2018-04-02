@@ -17,7 +17,7 @@ platforms        darwin
 
 master_sites     sourceforge:project/${name}/${name}/${version}
 checksums        md5 b89ccfa6df5f059355951dbf69fc163c \
-                 sha1 30bbd674dcdf134a58b34e75f87ed05bd716d484
+sha1 30bbd674dcdf134a58b34e75f87ed05bd716d484
 
 depends_lib      port:libpng
 

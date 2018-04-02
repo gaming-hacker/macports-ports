@@ -20,6 +20,6 @@ long_description    File::Temp can be used to create and open temporary files \
 platforms           darwin
 
 checksums           rmd160  689b20459f3d1181077cb6f0fa53948b61ea6878 \
-                    sha256  13415323e48f7c9f34efdedf3d35141a7c3435e2beb8c6b922229dc317d321ac
+sha256  13415323e48f7c9f34efdedf3d35141a7c3435e2beb8c6b922229dc317d321ac
 
 supported_archs     noarch

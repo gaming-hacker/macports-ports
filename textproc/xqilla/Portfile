@@ -20,7 +20,7 @@ master_sites    sourceforge:project/xqilla/xqilla/${version}
 distname        XQilla-${version}
 
 checksums       rmd160  32886123cf910c7d031b526ea010336b465bc80a \
-                sha256  60e163cbbbe2900f999ee863bfa5a63d913b1d6e2ea17376302d565d2e9e1bc7
+sha256  60e163cbbbe2900f999ee863bfa5a63d913b1d6e2ea17376302d565d2e9e1bc7
 
 depends_lib \
     port:xercesc3 \

@@ -22,7 +22,7 @@ distname            ${name}-${version}-stable
 extract.suffix      .tgz
 
 checksums           rmd160  020aca9b77d959115fb4bb44aa87bbcdfed49a8b\
-                    sha256  5d4944ed6e60b08d05b4e396b10dc7deee7968895984f4892fd17159780f5b02
+sha256  5d4944ed6e60b08d05b4e396b10dc7deee7968895984f4892fd17159780f5b02
 
 use_parallel_build  yes
 

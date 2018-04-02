@@ -11,7 +11,7 @@ homepage	https://www.gnu.org/software/cflow/
 master_sites	gnu:cflow
 use_xz		yes
 checksums           rmd160  4af71d61f18a159a5736c623bc35cd0456350358 \
-                    sha256  a33a89303b4cfbf7135589f15123f451ee79f69260f0c7f32d387b40e4967dfe
+sha256  a33a89303b4cfbf7135589f15123f451ee79f69260f0c7f32d387b40e4967dfe
 
 depends_lib	port:gettext port:libiconv
 

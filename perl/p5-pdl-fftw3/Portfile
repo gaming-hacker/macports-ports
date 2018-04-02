@@ -16,7 +16,7 @@ homepage            https://metacpan.org/release/${perl5.module}
 platforms           darwin
 
 checksums           rmd160  3f672296056f8d3f349f4118e6887b1f37c2b74f \
-                    sha256  2a4639514b96edb400018ed5266e4cdb8f1ab3ce37e3c55176bacc3197873ebb
+sha256  2a4639514b96edb400018ed5266e4cdb8f1ab3ce37e3c55176bacc3197873ebb
 
 if {${perl5.major} != ""} {
 # Alien::FFTW3 has gone AWOL from CPAN/MetaCPAN so don't depend on it

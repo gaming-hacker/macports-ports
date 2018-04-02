@@ -41,7 +41,7 @@ if {$subport eq $name} {
     patchfiles          patch-cmake-install_layout.cmake.diff
 
     checksums           rmd160  f8470414a56cd59b6b846f65cde43d68a62814d2 \
-                        sha256  d94d73bf12459c57fcc8fa8018d7a08775d45ba718999a4ef0a09f543c654778
+sha256  d94d73bf12459c57fcc8fa8018d7a08775d45ba718999a4ef0a09f543c654778
 
     depends_lib-append  port:zlib port:tcp_wrappers
     depends_run-append  port:mysql_select

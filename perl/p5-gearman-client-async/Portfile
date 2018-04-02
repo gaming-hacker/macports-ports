@@ -16,7 +16,7 @@ description         Asynchronous client module for Gearman for Danga::Socket app
 long_description    ${description}
 
 checksums           md5 71dcadfb434202dbdf4798f2ec93b32f \
-                    sha1 10e41caf43a81f14bd8f61a2750b6687c8d60e8a
+sha1 10e41caf43a81f14bd8f61a2750b6687c8d60e8a
 
 if {${perl5.major} != ""} {
     depends_build-append \

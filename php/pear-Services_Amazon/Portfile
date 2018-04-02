@@ -12,7 +12,7 @@ description         PEAR Services_Amazon package
 long_description    ${description}
 
 checksums           rmd160  1b13be44cd00a50e0376f879fdf58e12fa5a3e31 \
-                    sha256  0ada054e624c409e764a0993d81bd31e329ce9a09822a1b5ebffccdb1435615f
+sha256  0ada054e624c409e764a0993d81bd31e329ce9a09822a1b5ebffccdb1435615f
 
 depends_lib-append  port:pear-HTTP_Request \
                     port:pear-XML_Serializer

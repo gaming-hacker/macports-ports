@@ -14,7 +14,7 @@ description         Parse human-readable date/time text
 long_description    ${description}
 
 checksums           rmd160  27caf0000bb140959256e5eb04b4bb529b3df713 \
-                    sha256  6cb12b20037f18f1b0ddebb124134fc19d7e0d9c3cb2a169f515082bed9e5a30 \
+sha256  6cb12b20037f18f1b0ddebb124134fc19d7e0d9c3cb2a169f515082bed9e5a30 \
 size    63619
 
 if {${name} ne ${subport}} {

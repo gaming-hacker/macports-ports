@@ -3,10 +3,12 @@
 PortSystem              1.0
 PortGroup               xcodeversion 1.0
 PortGroup user 1.0
-PortGroup githut 1.0
+PortGroup github 1.0
 
-name                    gaming-hacker zlib 5a6113d8efc5265ee3ddc9db1cca361dcd6a61c4
+name zlib
+github.setup   gaming-hacker $name 5a6113d8efc5265ee3ddc9db1cca361dcd6a61c4
 version                 1.2.12
+distname   $name-$version
 categories              archivers
 maintainers             ryandesign openmaintainer
 license                 zlib
@@ -21,8 +23,8 @@ long_description        zlib is designed to be a free, general-purpose, \
                         and operating system.
 
 master_sites            ${homepage}
-use_xz                  yes
-
+# use_xz                  yes
+fetch.type          git
 # checksums               rmd160  3f3ecd35efa6d41ba7b90e5f6e872e2ee8e42044 \
 #                         sha256  4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066
 #

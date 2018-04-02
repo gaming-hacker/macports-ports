@@ -21,7 +21,7 @@ distname            jdk-7-icedtea-plugs-${version}
 
 master_sites        http://www.intricatesoftware.com/distfiles/
 checksums           md5     86e575da6209157b484d0e91e41cffc8 \
-                    sha256  016d64416bdfe1d66901d169b2d7eaaf40a1ef00aa1d9643bf5130399619d9a0 
+sha256  016d64416bdfe1d66901d169b2d7eaaf40a1ef00aa1d9643bf5130399619d9a0 
                     
 use_configure        no
 

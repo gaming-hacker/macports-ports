@@ -14,7 +14,7 @@ long_description    AppConfig::Std is a subclass of Andy Wardley's \
                     arguments for tool scripts.
 
 checksums           rmd160  8dcda94883f6c8b6aed95a543dae5a6037677e85 \
-                    sha256  2b887c1264565bff92fe7cae5046b987fe0f8cb1dd317b9e0ba18e5f2240a06a
+sha256  2b887c1264565bff92fe7cae5046b987fe0f8cb1dd317b9e0ba18e5f2240a06a
 
 platforms           darwin
 supported_archs     noarch

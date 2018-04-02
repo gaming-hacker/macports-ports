@@ -12,4 +12,4 @@ description         PEAR Crypt_XXTEA package
 long_description    ${description}
 
 checksums           rmd160  49c46c821aa1be12cd260a439f0ea1b8bb110a31 \
-                    sha256  65ba8a111a8bea0c7ed0aaa3540fde8cf0ba37ea4262987770dbb1f6ab7b0bdf
+sha256  65ba8a111a8bea0c7ed0aaa3540fde8cf0ba37ea4262987770dbb1f6ab7b0bdf

@@ -26,7 +26,7 @@ homepage                https://www.keepassx.org
 master_sites            ${homepage}/releases/${version}
 
 checksums               rmd160  340c2de991bd9e3bb33940d49c97fada00aa61a3 \
-                        sha256  23ffb4ae360c58aa139943442d175bc6b8f08e6a876ae76c4543ab983a6647c5
+sha256  23ffb4ae360c58aa139943442d175bc6b8f08e6a876ae76c4543ab983a6647c5
 
 depends_lib-append      port:libgcrypt \
                         port:zlib

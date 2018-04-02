@@ -26,7 +26,7 @@ long_description        ${name} is a high-performance 3D graphics toolkit useful
 homepage                http://www.openscenegraph.org/
 
 checksums               rmd160  4bc2df26b579e4a52f6e18090adf2294ab6b48f8 \
-                        sha256  6b6e57329b3c4968f4d360504d942b3f51a2c4d20ffc3665499f076c247f63c0
+sha256  6b6e57329b3c4968f4d360504d942b3f51a2c4d20ffc3665499f076c247f63c0
 
 depends_build-append    port:pkgconfig
 

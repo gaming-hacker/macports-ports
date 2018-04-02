@@ -20,8 +20,8 @@ platforms       darwin
 master_sites    sourceforge:project/heirloom/heirloom-mailx/${version}
 use_bzip2       yes
 checksums       md5 0c93759e34200eb56a0e7c464680a54a \
-                sha1 b1e105adf9d36269daf317dedf68b6e4cca404a7 \
-                rmd160 8244d04d0a0058fdbe9867ca503c7cda8d580154
+sha1 b1e105adf9d36269daf317dedf68b6e4cca404a7 \
+rmd160 8244d04d0a0058fdbe9867ca503c7cda8d580154
 
 depends_lib     port:kerberos5 \
                 port:libiconv \

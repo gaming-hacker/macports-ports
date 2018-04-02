@@ -23,8 +23,8 @@ master_sites     ${homepage}ftp/ggi/v2.2/ \
 distname         ${name}-${version}.src
 use_bzip2        yes
 checksums        md5 51d92ea810dad5360f6f0d02dd8b84a4 \
-                 sha1 aa439b21fb040b5b52ae18099a0c3cb02e50110f \
-                 rmd160 e76d22f06231e0aa1f752e33951802f243b7f0aa
+sha1 aa439b21fb040b5b52ae18099a0c3cb02e50110f \
+rmd160 e76d22f06231e0aa1f752e33951802f243b7f0aa
 
 worksrcdir       ${name}-${version}
 

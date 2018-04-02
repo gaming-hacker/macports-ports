@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXxf86misc-${version}
 checksums           md5     6bc0bf78909fd71021c466c793d4385c \
-                    sha1    4d1923ee60a47609c0e751b9b6bb9536b3b933df \
-                    rmd160  8b5848583554b1da94e32e21a2cb39622daa3543
+sha1    4d1923ee60a47609c0e751b9b6bb9536b3b933df \
+rmd160  8b5848583554b1da94e32e21a2cb39622daa3543
 
 use_bzip2   yes
 use_parallel_build      yes

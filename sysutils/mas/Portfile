@@ -33,8 +33,8 @@ xcode.build.settings    CODE_SIGN_IDENTITY=
 xcode.destroot.settings CODE_SIGN_IDENTITY=
 
 checksums           md5     5023e0df2ed1ad5d8c23303e8b06f6f9 \
-                    sha1    1996da34ca1238d6da1c95c45d38873074c30050 \
-                    sha256  f9933c6044519e1eda37d3ebae3211e4b574a30d6357543bdb10192147e32501
+sha1    1996da34ca1238d6da1c95c45d38873074c30050 \
+sha256  f9933c6044519e1eda37d3ebae3211e4b574a30d6357543bdb10192147e32501
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}

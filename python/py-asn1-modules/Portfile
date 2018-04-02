@@ -24,8 +24,8 @@ master_sites        pypi:p/pyasn1-modules/
 distname            pyasn1-modules-${version}
 
 checksums           md5     9e92623a86709a77d43d406612ad7389 \
-                    rmd160  4d9f6e67020b5be843ffb611195e7249bb171e6b \
-                    sha256  794dbcef4b7124b8271f12eb7eea0d37b466012f11ce023f91e2e2082df11c7e
+rmd160  4d9f6e67020b5be843ffb611195e7249bb171e6b \
+sha256  794dbcef4b7124b8271f12eb7eea0d37b466012f11ce023f91e2e2082df11c7e
 
 if {${name} ne ${subport}} {
     post-destroot {

@@ -23,7 +23,7 @@ master_sites        pypi:t/tox/
 distname            tox-${version}
 
 checksums           rmd160  89a1a09d8e0631a217388a8f98b1e61f8e393b2c \
-                    sha256  9c3bdc06fe411d24015e8bbbab9d03dc5243a970154496aac13f9283682435f9
+sha256  9c3bdc06fe411d24015e8bbbab9d03dc5243a970154496aac13f9283682435f9
 
 python.versions 27 36
 

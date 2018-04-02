@@ -23,9 +23,9 @@ dist_subdir     go
 
 # peco
 checksums       peco-${version}.tar.gz \
-                    md5 42804cb50a16a40524de7dc0e1fa8746 \
-                    sha1 f499d639ea09ac375410748b96344a5e18d9cfed \
-                    sha256 4553ce77c6c7fb218b1ff513ec052badb946482833c3ea88c47ae788e4a48a9e
+md5 42804cb50a16a40524de7dc0e1fa8746 \
+sha1 f499d639ea09ac375410748b96344a5e18d9cfed \
+sha256 4553ce77c6c7fb218b1ff513ec052badb946482833c3ea88c47ae788e4a48a9e
 
 # utility for go-vendoring codes
 set go.vendors {}
@@ -71,37 +71,37 @@ go.vendors-append   github.com/davecgh/go-spew    346938d642f2ec3594ed81d8744619
                     github.com/stretchr/testify   18a02ba4a312f95da08ff4cfc0055750ce50ae9e
 
 checksums-append    davecgh-go-spew-${go-spew.version}.tar.gz \
-                        md5 40113f77febc1bdf8207c2c8c9f67293 \
-                        sha1 b02ca0e6655fe8db4658ac265df87ae8cb52a44a \
-                        sha256 81515ee3b5afb35147ab25a534cbf5fd18e27281f54cf8c1ee8d6545ef8ff820 \
+md5 40113f77febc1bdf8207c2c8c9f67293 \
+sha1 b02ca0e6655fe8db4658ac265df87ae8cb52a44a \
+sha256 81515ee3b5afb35147ab25a534cbf5fd18e27281f54cf8c1ee8d6545ef8ff820 \
                     google-btree-${btree.version}.tar.gz \
-                        md5 68ec2402eb1ccb68ff1f231c7bc15ac5 \
-                        sha1 9b7ba01bf1abe50342d88a0d3cf66f7f6cfafe46 \
-                        sha256 3c5559d88337ac1a34b43b23363a96630b1cd34eb234a2cb44f532cebb894743 \
+md5 68ec2402eb1ccb68ff1f231c7bc15ac5 \
+sha1 9b7ba01bf1abe50342d88a0d3cf66f7f6cfafe46 \
+sha256 3c5559d88337ac1a34b43b23363a96630b1cd34eb234a2cb44f532cebb894743 \
                     jessevdk-go-flags-${go-flags.version}.tar.gz \
-                        md5 c6710dfa23916db4e22c8a8a81016bc3 \
-                        sha1 56bf799a5070466d2818e5369480a9a434d06e98 \
-                        sha256 364bc7a9704c3de622caec67da953a0633dec6386297afa2b90b9b255c026bc7 \
+md5 c6710dfa23916db4e22c8a8a81016bc3 \
+sha1 56bf799a5070466d2818e5369480a9a434d06e98 \
+sha256 364bc7a9704c3de622caec67da953a0633dec6386297afa2b90b9b255c026bc7 \
                     lestrrat-go-pdebug-${go-pdebug.version}.tar.gz \
-                        md5 a7a00fd430599d9af79ae9958492a3ab \
-                        sha1 b6f890f2690012c5ac973f1a5bc3ffc64b9d9912 \
-                        sha256 7c1574a70158def432a1a3d6306592e2b89cc1668467e599cd71f818b6084bcf \
+md5 a7a00fd430599d9af79ae9958492a3ab \
+sha1 b6f890f2690012c5ac973f1a5bc3ffc64b9d9912 \
+sha256 7c1574a70158def432a1a3d6306592e2b89cc1668467e599cd71f818b6084bcf \
                     mattn-go-runewidth-${go-runewidth.version}.tar.gz \
-                        md5 e11a6a8f6d7b2a7bade05375ad199cca \
-                        sha1 8f12ee73a43b40fa903f98fcffb4bedcc8dc52da \
-                        sha256 4c3a2f1d5a44b54442bed374b41b18f37983f2dce7637289f498d79b115d8018 \
+md5 e11a6a8f6d7b2a7bade05375ad199cca \
+sha1 8f12ee73a43b40fa903f98fcffb4bedcc8dc52da \
+sha256 4c3a2f1d5a44b54442bed374b41b18f37983f2dce7637289f498d79b115d8018 \
                     nsf-termbox-go-${termbox-go.version}.tar.gz \
-                        md5 8eb4914b69384658a7c1f8a0797a11b0 \
-                        sha1 a40cf4da7a7f6eb543ba30558abce5d45503f794 \
-                        sha256 a9a4d39c6aef0aed62015ee01a85e1e4059aec4cdef9bc7ee978386eade92583 \
+md5 8eb4914b69384658a7c1f8a0797a11b0 \
+sha1 a40cf4da7a7f6eb543ba30558abce5d45503f794 \
+sha256 a9a4d39c6aef0aed62015ee01a85e1e4059aec4cdef9bc7ee978386eade92583 \
                     pkg-errors-${errors.version}.tar.gz \
-                        md5 7d63087f27182aacb966cdfa9d2f4e17 \
-                        sha1 1840a1704460959adc3b44d82f3c07f214d85fe2 \
-                        sha256 4ba9cfcd163ddba8c52f10f6934f4767d2f727a3b4c5f66384252a46992507df \
+md5 7d63087f27182aacb966cdfa9d2f4e17 \
+sha1 1840a1704460959adc3b44d82f3c07f214d85fe2 \
+sha256 4ba9cfcd163ddba8c52f10f6934f4767d2f727a3b4c5f66384252a46992507df \
                     stretchr-testify-${testify.version}.tar.gz \
-                        md5 657d01f1005dd842e9c6c8a0a921beb8 \
-                        sha1 144550c2cffa1936c9ecd669aca103c9072f3710 \
-                        sha256 1a362b9430d82e3e28b4525bdfa45515e26642b046f8c81f6c114b346d415d55
+md5 657d01f1005dd842e9c6c8a0a921beb8 \
+sha1 144550c2cffa1936c9ecd669aca103c9072f3710 \
+sha256 1a362b9430d82e3e28b4525bdfa45515e26642b046f8c81f6c114b346d415d55
 
 # setup build sources as gopath style:
 #   workpath/

@@ -14,4 +14,4 @@ long_description    ${description}
 platforms           darwin
 
 checksums           md5 2ffb6803ce08e4fc64ee33b54243e6d9 \
-                    sha1 14b0e207246bee8f275f9c741999e14c75899e8e
+sha1 14b0e207246bee8f275f9c741999e14c75899e8e

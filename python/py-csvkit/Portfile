@@ -24,8 +24,8 @@ homepage            https://pypi.python.org/pypi/$base_name
 master_sites        pypi:c/$base_name
 
 checksums           md5     846c2e9b2ae4e948299258f3e0f534f2 \
-                    rmd160  606c600968196dfadb37260a6e7834a1ef4767b8 \
-                    sha256  5a897f87c920dec3e7debc31102dfe774a8d704641bfafa98e04729bd4d26e17
+rmd160  606c600968196dfadb37260a6e7834a1ef4767b8 \
+sha256  5a897f87c920dec3e7debc31102dfe774a8d704641bfafa98e04729bd4d26e17
 
 distname            $base_name-${version}
 

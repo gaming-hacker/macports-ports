@@ -27,7 +27,7 @@ if {${name} ne ${subport}} {
                         port:memprof_select
 
     checksums           rmd160  ee8a5fe8f626b716d9be4824cee06cfa41c0a127 \
-                        sha256  0a80bf391b0c7d4882004349b7ed2f80b997e3df04bf0540aab27f9a6f8d4ff0
+sha256  0a80bf391b0c7d4882004349b7ed2f80b997e3df04bf0540aab27f9a6f8d4ff0
 
     select.group        memprof
     select.file         ${filespath}/py${python.version}-memprof

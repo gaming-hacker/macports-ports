@@ -21,7 +21,7 @@ master_sites        ${homepage}/releases/
 platforms           darwin
 
 checksums           rmd160  112e58d903f168232b6a2673802b83ce687eb46c \
-                    sha256  45c47fd4d0aa77464a75cdca011143fea3ef795c4753f6e860057da5fb8bd599
+sha256  45c47fd4d0aa77464a75cdca011143fea3ef795c4753f6e860057da5fb8bd599
 
 depends_build       port:pkgconfig \
                     port:mm-common

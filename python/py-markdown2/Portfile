@@ -16,4 +16,4 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  440500f7701d725c2f0c464a69cdf4de536102c1 \
-                    sha256  333ca67f3ac3c8d47283906228a6c893b877b197686eedd6706c3438f9766ec7
+sha256  333ca67f3ac3c8d47283906228a6c893b877b197686eedd6706c3438f9766ec7

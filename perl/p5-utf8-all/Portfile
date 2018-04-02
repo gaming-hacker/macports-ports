@@ -14,7 +14,7 @@ description         Turn on Unicode - all of it
 long_description    ${description}
 
 checksums           rmd160  245249a9b859755871ce03878cc31106ef315965 \
-                    sha256  9233465d41174077ccdbc04f751ab7d68c8d19114e36cd02f2c5fdc2bc3937b7 \
+sha256  9233465d41174077ccdbc04f751ab7d68c8d19114e36cd02f2c5fdc2bc3937b7 \
 size    27272
 
 if {${perl5.major} != ""} {

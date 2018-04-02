@@ -23,8 +23,8 @@ master_sites            ${homepage}/software/
 distname                ${name}-src-${version}
 
 checksums               md5     65c90fb5150d7176b65b793f0faa7377 \
-                        sha1    cb718587e5fda99ca8b36801c57ea794d07bf211 \
-                        rmd160  07db2a2eb21b2138298ef07da0f81b4973dc3a4b
+sha1    cb718587e5fda99ca8b36801c57ea794d07bf211 \
+rmd160  07db2a2eb21b2138298ef07da0f81b4973dc3a4b
 
 depends_lib             port:gd2
 

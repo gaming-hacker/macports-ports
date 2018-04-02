@@ -20,7 +20,7 @@ license             GPL-2+
 worksrcdir          ${name}
 
 checksums           rmd160  e6dbe27c664fe4b32a7ff8d066f2d6185da97145 \
-                    sha256  d192c3611f1c13ec259bd2930f1d8eae93d310f129c7e059e1b765fd0565b21f
+sha256  d192c3611f1c13ec259bd2930f1d8eae93d310f129c7e059e1b765fd0565b21f
 
 default_variants    +giza
 

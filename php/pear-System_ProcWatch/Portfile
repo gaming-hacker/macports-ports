@@ -12,4 +12,4 @@ description         PEAR System_ProcWatch package
 long_description    ${description}
 
 checksums           rmd160  c8f682bd50e2d787b1374624a6b500818c6c39bb \
-                    sha256  7a2b614b0a934cbcceda53f5edb6c34550944ccfb4d0cd1238d5df6ae0c64620
+sha256  7a2b614b0a934cbcceda53f5edb6c34550944ccfb4d0cd1238d5df6ae0c64620

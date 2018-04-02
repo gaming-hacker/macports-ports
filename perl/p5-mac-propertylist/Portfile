@@ -15,7 +15,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  ca1c6102f6f0614f71a0050dc1475ea6685b11a5 \
-                    sha256  ad47f2cb0d22798ff412415a6ea8150bb44400d3e53369aecbbe49fb860eeb76 \
+sha256  ad47f2cb0d22798ff412415a6ea8150bb44400d3e53369aecbbe49fb860eeb76 \
 size    38201
 
 if {${perl5.major} != ""} {

@@ -24,7 +24,7 @@ master_sites    gnupg
 use_bzip2       yes
 
 checksums       rmd160  e0bed861b328fe411faa74daca0db388fb5aed88 \
-                sha256  c8064cae7558144b13ef0eb87093412380efa16c4ee30ad12ecb54886a524c07
+sha256  c8064cae7558144b13ef0eb87093412380efa16c4ee30ad12ecb54886a524c07
 
 depends_lib     port:libgpg-error
 

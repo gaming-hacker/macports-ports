@@ -46,7 +46,7 @@ foreach python_version ${python_versions} {
         master_sites    https://dbus.freedesktop.org/releases/dbus-python/
 
         checksums       rmd160  05e7ac1d0f3dd49a097b126a04456cf2c8d5db7c \
-                        sha256  e2f1d6871f74fba23652e51d10873e54f71adab0525833c19bad9e99b1b2f9cc
+sha256  e2f1d6871f74fba23652e51d10873e54f71adab0525833c19bad9e99b1b2f9cc
 
         livecheck.type  regex
         livecheck.url   ${master_sites}?C=M&O=D

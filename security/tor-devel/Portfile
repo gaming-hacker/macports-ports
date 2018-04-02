@@ -24,7 +24,7 @@ master_sites        https://dist.torproject.org/
 distname            tor-${version}
 
 checksums           rmd160  e2afe5a7cde0a952a0446e4198178407776203fd \
-                    sha256  07b1dd0189a9b03534f1cc18939283de2d5c6ff45a3da214c3637bce14b36f87
+sha256  07b1dd0189a9b03534f1cc18939283de2d5c6ff45a3da214c3637bce14b36f87
 
 depends_lib         port:libevent \
                     path:lib/libssl.dylib:openssl \

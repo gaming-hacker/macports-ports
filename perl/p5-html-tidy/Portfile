@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  3bd30628494b72286cd27342e2bd888347e5f4dc \
-                    sha256  bcfbf65d687f8e672cf60c9821bcd65d5e8c72a78272b67bb0ac1c699a13d7c7
+sha256  bcfbf65d687f8e672cf60c9821bcd65d5e8c72a78272b67bb0ac1c699a13d7c7
 
 if {${perl5.major} != ""} {
     depends_build-append \

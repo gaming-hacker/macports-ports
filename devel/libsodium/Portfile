@@ -20,7 +20,7 @@ long_description    libsodium is a library for network communication, \
                     encryption, decryption, signatures, etc.
 
 checksums           rmd160  5d43fdb512fd5ed02510f4f26849466a72e242a5 \
-                    sha256  eeadc7e1e1bcef09680fb4837d448fbdf57224978f865ac1c16745868fbd0533
+sha256  eeadc7e1e1bcef09680fb4837d448fbdf57224978f865ac1c16745868fbd0533
 
 depends_build-append \
                     port:pkgconfig

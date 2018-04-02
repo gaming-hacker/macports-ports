@@ -22,7 +22,7 @@ master_sites        gnome:sources/$name/$branch/
 use_xz              yes
 
 checksums           rmd160  bf0751a3f01c36716403c54c436b6e685c6a1b44 \
-                    sha256  b25b963d9d1ce076b489ef1e85c6540166f2312c77132f4ec0ecc90f3da8f1e1 \
+sha256  b25b963d9d1ce076b489ef1e85c6540166f2312c77132f4ec0ecc90f3da8f1e1 \
 size    26134776
 
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2

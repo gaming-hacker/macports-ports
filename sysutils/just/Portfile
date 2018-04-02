@@ -16,7 +16,7 @@ long_description    just is a simple tool which allows you to easily save \
                     and run project specific commands.
 
 checksums           rmd160 d57a533c7386740f653c6653983ae7b123cf7d99 \
-                    sha256 7e36c5a8ea3bb4d1f2d8e22ec2df19ff6e61da27edaae56265905e1c26f8dcda
+sha256 7e36c5a8ea3bb4d1f2d8e22ec2df19ff6e61da27edaae56265905e1c26f8dcda
 
 homepage            https://github.com/casey/just
 depends_run         port:gmake

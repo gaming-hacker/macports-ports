@@ -27,7 +27,7 @@ homepage            http://mlterm.sourceforge.net/
 master_sites        sourceforge:project/mlterm/01release/mlterm-${version}
 
 checksums           rmd160  f7d4fd18d290108eb828370f782590cbf285dab8 \
-                    sha256  30278fc4b43bf66eebd8ff728f943674554e7593a3989d0f3ea68c4b34270399
+sha256  30278fc4b43bf66eebd8ff728f943674554e7593a3989d0f3ea68c4b34270399
 
 depends_build       port:pkgconfig
 

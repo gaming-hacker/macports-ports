@@ -24,7 +24,7 @@ master_sites        pypi:c/configobj/
 distname            configobj-${version}
 
 checksums           rmd160  9b7dd0b9e08477914da104585369921c549eec01 \
-                    sha256  a2f5650770e1c87fb335af19a9b7eb73fc05ccf22144eb68db7d00cd2bcb0902
+sha256  a2f5650770e1c87fb335af19a9b7eb73fc05ccf22144eb68db7d00cd2bcb0902
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

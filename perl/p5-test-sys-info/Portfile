@@ -15,7 +15,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  4aced1c53654e68d36bdfc63a4b225d6614bd029 \
-                    sha256  e397d79c5a9c34730df191867cb87b52b5a579fcdc7c6b69183ac86a0f891c3f
+sha256  e397d79c5a9c34730df191867cb87b52b5a579fcdc7c6b69183ac86a0f891c3f
 
 if {${perl5.major} != ""} {
     patchfiles      patch-default-inc-excludes-dot.diff

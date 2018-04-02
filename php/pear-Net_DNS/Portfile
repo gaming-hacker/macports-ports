@@ -13,4 +13,4 @@ description         PEAR Net_DNS package
 long_description    ${description}
 
 checksums           rmd160  2bf09d23ddb8e268d1216b7454748930570d0445 \
-                    sha256  eeb03694774690bae89433b9a728ce8dfe064c2519f231fadc4ad6b3fe3cd6a3
+sha256  eeb03694774690bae89433b9a728ce8dfe064c2519f231fadc4ad6b3fe3cd6a3

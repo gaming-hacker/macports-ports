@@ -17,8 +17,8 @@ long_description    Solve the problem of harmonic inversion: given a discrete-ti
 homepage            http://ab-initio.mit.edu/wiki/index.php/Harminv
 master_sites        http://ab-initio.mit.edu/harminv
 checksums           md5     b95e24a9bc7e07d3d2202d1605e9e86f \
-                    sha1    521fcca261bf91f45741b607aa2b244c7a1e0aff \
-                    rmd160  3813c438339bb1fc048d62bb9d012df43535aecb
+sha1    521fcca261bf91f45741b607aa2b244c7a1e0aff \
+rmd160  3813c438339bb1fc048d62bb9d012df43535aecb
 depends_lib         port:guile
 
 configure.args-append   --mandir="${prefix}/share/man"

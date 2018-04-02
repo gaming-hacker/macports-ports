@@ -19,8 +19,8 @@ homepage            http://www.subdownloader.net/
 master_sites        http://code.launchpad.net/${name}/trunk/${branch}/+download/
 
 checksums           md5     eff9ef5b0f027ff913798cdc41f5ce47 \
-                    sha1    bd4ba869e1fb7ea7a705e5bf2c5270da99722f04 \
-                    rmd160  54d4f0d2e3a533733a9f119c2618542552ddef41
+sha1    bd4ba869e1fb7ea7a705e5bf2c5270da99722f04 \
+rmd160  54d4f0d2e3a533733a9f119c2618542552ddef41
 
 worksrcdir          ${name}
 

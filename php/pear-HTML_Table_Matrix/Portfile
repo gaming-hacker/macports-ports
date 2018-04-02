@@ -12,6 +12,6 @@ description         PEAR HTML_Table_Matrix package
 long_description    ${description}
 
 checksums           rmd160  69f3282e517ca78529212d534f32f1a52bcda91b \
-                    sha256  de42a803e9d6cae65fc5368f23d223c57af7f39f40ed13017469b48fa0b03cf9
+sha256  de42a803e9d6cae65fc5368f23d223c57af7f39f40ed13017469b48fa0b03cf9
 
 depends_lib-append  port:pear-HTML_Table

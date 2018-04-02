@@ -14,7 +14,7 @@ long_description    ${description}
 
 master_sites        macports_distfiles:mecab
 checksums           rmd160  0fb41c1a8bbc15da0283f649a17fd227fde3756f \
-                    sha256  71fe5559c5bd2a13ea9929190a8f9f5ee4c63987108081bd7332ca1bbbb616c9
+sha256  71fe5559c5bd2a13ea9929190a8f9f5ee4c63987108081bd7332ca1bbbb616c9
 
 homepage            http://taku910.github.io/mecab/
 platforms           darwin

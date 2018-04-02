@@ -13,7 +13,7 @@ homepage            http://birdfont.org
 license             GPL-3
 
 checksums           rmd160  358f540c4fb6d8862ab416e8529e2dde6009c6d5 \
-                    sha256  f1432dba6c19ee9f8d26b6680af7f6601254430d175ce4046176c90a15a29194
+sha256  f1432dba6c19ee9f8d26b6680af7f6601254430d175ce4046176c90a15a29194
 
 platforms           darwin
 

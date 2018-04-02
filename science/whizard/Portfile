@@ -30,7 +30,7 @@ homepage            http://whizard.hepforge.org/
 master_sites        http://www.hepforge.org/archive/whizard/
 
 checksums           rmd160  1991bb95765129daa801e01adfdee8567061add1 \
-                    sha256  2c731eb7c8990fb8f9a2d477479bd2f720fb905ac320a1561d8ada33009e0734
+sha256  2c731eb7c8990fb8f9a2d477479bd2f720fb905ac320a1561d8ada33009e0734
 
 depends_build       port:ocaml
 

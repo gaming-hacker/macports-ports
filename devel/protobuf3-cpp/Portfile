@@ -43,7 +43,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
 }
 
 checksums       rmd160  21375095e562cfee25ba68d68e481cf608ac9a9a \
-                sha256  c28dba8782da2cfea1e11c61d335958c31a9c1bc553063546af9cbe98f204092
+sha256  c28dba8782da2cfea1e11c61d335958c31a9c1bc553063546af9cbe98f204092
 
 platforms       darwin
 

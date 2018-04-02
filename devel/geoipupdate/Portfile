@@ -16,7 +16,7 @@ homepage        http://dev.maxmind.com/geoip/geoipupdate/
 github.tarball_from releases
 
 checksums   rmd160  c525fef9d7c9323786867865f76ed01053d5956c \
-        sha256  4f71e911774c4fd32e217889c242d2c311fa5ffd3df56be48a2d1aedfe2e671c
+sha256  4f71e911774c4fd32e217889c242d2c311fa5ffd3df56be48a2d1aedfe2e671c
 
 platforms   darwin
 

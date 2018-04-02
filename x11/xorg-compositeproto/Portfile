@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	compositeproto-${version}
 checksums           md5     98482f65ba1e74a08bf5b056a4031ef0 \
-                    sha1    aa7b5abcfd5bbfad7cb681ce89dc1d6e381e3044 \
-                    rmd160  198d51821a3862718c656d8ccf3a8305e834f1c9
+sha1    aa7b5abcfd5bbfad7cb681ce89dc1d6e381e3044 \
+rmd160  198d51821a3862718c656d8ccf3a8305e834f1c9
 use_bzip2	yes
 
 livecheck.type  regex

@@ -17,7 +17,7 @@ homepage            http://palmkit.sourceforge.net/
 master_sites        ${homepage}
 
 checksums           sha1    c63fdc780ff214c324c2c519219694fe68da90bf \
-                    rmd160  c836b42009a819ea12b4c8148eacc27fc0012b7b
+rmd160  c836b42009a819ea12b4c8148eacc27fc0012b7b
 
 worksrcdir          ${distname}/src
 

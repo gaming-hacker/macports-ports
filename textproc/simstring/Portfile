@@ -22,7 +22,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  b583d69175504f70b7d761d9365b8a274628431a \
-                    sha256  298e292c597f21fd4d3e7a4e6478f9b73f46d04372b78c6ea0a901ecfeb52d2d
+sha256  298e292c597f21fd4d3e7a4e6478f9b73f46d04372b78c6ea0a901ecfeb52d2d
 
 if {[string match *clang* ${configure.cxx}] && ${configure.cxx_stdlib} == "libc++"} {
     # https://github.com/chokkan/simstring/issues/16

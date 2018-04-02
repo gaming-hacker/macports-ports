@@ -15,7 +15,7 @@ long_description    The signify utility creates and verifies cryptographic \
 homepage            http://man.openbsd.org/signify.1
 
 checksums           rmd160  6deae9019c38e6a0845692349b17780f931b00db \
-                    sha256  d41c7812bbc14acf52fa5f3f2531714c8f3754651147884147c8a98a2369b267
+sha256  d41c7812bbc14acf52fa5f3f2531714c8f3754651147884147c8a98a2369b267
 
 variant universal   {}
 

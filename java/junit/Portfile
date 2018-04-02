@@ -25,8 +25,8 @@ distname        ${name}${version}
 use_zip         yes
 
 checksums       md5     2e59ed558001fd3b10d2146189167ff5 \
-                sha1    98c8c625e999f0c7463397a684a5c47a0ea106e3 \
-                rmd160  4f87024e91b7252af89ad925db5cda0e17128525
+sha1    98c8c625e999f0c7463397a684a5c47a0ea106e3 \
+rmd160  4f87024e91b7252af89ad925db5cda0e17128525
 
 patchfiles      patch-build.xml.diff \
                 patch-src-main-java-org-junit-matchers-package-info.java.diff \

@@ -21,7 +21,7 @@ license             CPL-1
 
 master_sites        http://mallet.cs.umass.edu/dist/
 checksums           rmd160  083f76b447521dbaa1d3b5747278a41e9b9ba741 \
-                    sha256  bf34241b0589be2d28d57a4b369b4d722f273591cb28bf428d0167f58f91f161
+sha256  bf34241b0589be2d28d57a4b369b4d722f273591cb28bf428d0167f58f91f161
 
 patchfiles          patch-mallet.diff
 

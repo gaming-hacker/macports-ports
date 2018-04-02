@@ -35,7 +35,7 @@ homepage        http://www.cgsecurity.org/wiki/TestDisk
 master_sites    http://www.cgsecurity.org/
 
 checksums           rmd160  56ff652a9ddf1c2b5cf96493e9aed8e7f7942d1f \
-                    sha256  00bb3b6b22e6aba88580eeb887037aef026968c21a87b5f906c6652cbee3442d
+sha256  00bb3b6b22e6aba88580eeb887037aef026968c21a87b5f906c6652cbee3442d
 
 configure.cppflags-append   -I${prefix}/include/ossp
 

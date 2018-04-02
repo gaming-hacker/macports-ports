@@ -15,12 +15,12 @@ if {[vercmp ${php.branch} 7] >= 0} {
     version         2.0.0
     revision        0
     checksums       rmd160  57a3441c78769d652b19dbc14ecb959183cb7adb \
-                    sha256  95a59ea0dc3fc172805a6acd8327b122dd159b0a85b253826166457a05efa411
+sha256  95a59ea0dc3fc172805a6acd8327b122dd159b0a85b253826166457a05efa411
 } else {
     version         1.1.2
     revision        0
     checksums       rmd160  6c760c788040e84cd1dedeb118062552ba83397f \
-                    sha256  d35a49672e72d0e03751385e0b8fed02aededcacc5e3ec27c98a5849720483a7
+sha256  d35a49672e72d0e03751385e0b8fed02aededcacc5e3ec27c98a5849720483a7
 }
 
 description         a reusable persistent handle and resource factory API

@@ -19,4 +19,4 @@ long_description    This extension provides a PHP API to Douglas Crockford’s \
                     jsmin method for minifying and uglifying JavaScript.
 
 checksums           rmd160  d05f3499f3e338d6573bf7dd1901c728b1f80722 \
-                    sha256  0ce689c6c605bad2440f0627364603a051168a6b4dd13f9d4c3020cd0a607efa
+sha256  0ce689c6c605bad2440f0627364603a051168a6b4dd13f9d4c3020cd0a607efa

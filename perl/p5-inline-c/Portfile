@@ -14,7 +14,7 @@ long_description    Inline::C is a module that allows you to write Perl subrouti
 platforms           darwin
 
 checksums           rmd160  17ba6f8492fff788756451929968c395c551465a \
-                    sha256  9a7804d85c01a386073d2176582b0262b6374c5c0341049da3ef84c6f53efbc7
+sha256  9a7804d85c01a386073d2176582b0262b6374c5c0341049da3ef84c6f53efbc7
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -16,8 +16,8 @@ long_description    ${description}
 homepage            http://libquicktime.sourceforge.net/
 master_sites        sourceforge
 checksums           md5     81cfcebad9b7ee7e7cfbefc861d6d61b \
-                    sha1    7008b2dc27b9b40965bd2df42d39ff4cb8b6305e \
-                    rmd160  4daed02aa99903218af6844e879334cd1ae9e018
+sha1    7008b2dc27b9b40965bd2df42d39ff4cb8b6305e \
+rmd160  4daed02aa99903218af6844e879334cd1ae9e018
 
 depends_lib         port:gettext port:jpeg port:libiconv port:libpng port:zlib \
                     path:lib/libavcodec.dylib:ffmpeg port:faac port:faad2 \

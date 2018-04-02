@@ -21,7 +21,7 @@ long_description    ${description} A CUDF \
 master_sites        https://gforge.inria.fr/frs/download.php/33593/
 
 checksums           rmd160  dd9c5097a627856e0e74fe3052c2f5ee1fd1bec5 \
-                    sha256  92c8a9ed730bbac73f3513abab41127d966c9b9202ab2aaffcd02358c030a701
+sha256  92c8a9ed730bbac73f3513abab41127d966c9b9202ab2aaffcd02358c030a701
 
 worksrcdir          cudf-${version}
 

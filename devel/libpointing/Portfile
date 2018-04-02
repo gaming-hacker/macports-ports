@@ -23,7 +23,7 @@ distname            ${name}-mac-${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  7319611b11625f0730090fbd512b3ca372f49ce7 \
-                    sha256  29f12da75727d1b03ff952a2754ce79b88aec39b5e03a52d3b0ff7440f08f147
+sha256  29f12da75727d1b03ff952a2754ce79b88aec39b5e03a52d3b0ff7440f08f147
 
 patchfiles          patch-Makefile.diff
 

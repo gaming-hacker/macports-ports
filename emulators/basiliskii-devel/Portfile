@@ -6,7 +6,7 @@ PortGroup               github 1.0
 github.setup            cebix macemu 62eaaee1b26f94ace4cc61a474487dddabc5aad4
 version                 20171230
 checksums               rmd160  a8db8702c9e511aa8b040af3356551158388f21c \
-                        sha256  47ce44a41514f1aa035e399acfcc093b0c0274ca8a9a10cb7e7c0e313db673c7
+sha256  47ce44a41514f1aa035e399acfcc093b0c0274ca8a9a10cb7e7c0e313db673c7
 
 # we need a name here as the github-supplied name is not correct for this port
 name                    basiliskii-devel

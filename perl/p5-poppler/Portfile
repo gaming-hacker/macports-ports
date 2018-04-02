@@ -15,7 +15,7 @@ description         Perl bindings for the poppler library
 long_description    ${description}
 
 checksums           rmd160  09c14794efee274cfb1a62a071bdcf587edea4e8 \
-                    sha256  a64570f5a4671ea7c96f83c4a49eb903829bfd2b819d30aef4cae99210542a03
+sha256  a64570f5a4671ea7c96f83c4a49eb903829bfd2b819d30aef4cae99210542a03
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -16,7 +16,7 @@ long_description    ${description}
 
 homepage            https://janestreet.github.io/
 checksums           rmd160  1536821814f6ba4f9c365ac531d98bf1010aba83 \
-                    sha256  ba6950937ffec21152215b169b265b5d7e7a437149957b32d99a95187e33607a
+sha256  ba6950937ffec21152215b169b265b5d7e7a437149957b32d99a95187e33607a
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

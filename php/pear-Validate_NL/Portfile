@@ -12,4 +12,4 @@ description         PEAR Validate_NL package
 long_description    ${description}
 
 checksums           rmd160  8d64bd847b44f841238f9ba634850276c0da834d \
-                    sha256  b00ccde740975cbcced4daff0ee4d6b24aab2fd113b8861fe548e01bb96bc2d1
+sha256  b00ccde740975cbcced4daff0ee4d6b24aab2fd113b8861fe548e01bb96bc2d1

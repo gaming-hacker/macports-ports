@@ -16,7 +16,7 @@ long_description    This is an implementation of Term::ReadLine using the \
 platforms           darwin
 
 checksums           rmd160  14ab8dc5dd211c5ceb3d793b92940253e6416478 \
-                    sha256  575d32d4ab67cd656f314e8d0ee3d45d2491078f3b2421e520c4273e92eb9125
+sha256  575d32d4ab67cd656f314e8d0ee3d45d2491078f3b2421e520c4273e92eb9125
 
 if {${perl5.major} != ""} {
     depends_lib-append \

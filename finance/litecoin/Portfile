@@ -37,8 +37,8 @@ depends_lib-append  port:boost \
                     port:qrencode
 
 checksums           md5     76929547d8ff674d2e55e3cfc407fb8c \
-                    sha1    b0f0f500d95df1f9bd2b002231bf2bbfc7626663 \
-                    rmd160  1b15d2a2e4d0797c8038e6dd8dd7cae1816e1a48
+sha1    b0f0f500d95df1f9bd2b002231bf2bbfc7626663 \
+rmd160  1b15d2a2e4d0797c8038e6dd8dd7cae1816e1a48
 
 # This is necessary for version 0.8.5.1 due to a stealth update
 dist_subdir         ${name}/${version}_1

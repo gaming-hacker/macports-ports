@@ -14,7 +14,7 @@ homepage            http://www.nessie.de/mroth/lunit/
 
 master_sites        http://www.nessie.de/mroth/lunit/
 checksums           md5 1510d14d3149a2d0050a220dbc797424 \
-                    sha1 b8c052bc68bb2c05ece4c406b7a7c31c61a611b9
+sha1 b8c052bc68bb2c05ece4c406b7a7c31c61a611b9
 distname            lunit-${version}alpha
 
 depends_lib         port:lua

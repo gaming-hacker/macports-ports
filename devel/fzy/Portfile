@@ -15,7 +15,7 @@ long_description    fzy tries to find the result the user intended. It does \
                     different parts of the path.
 
 checksums           sha256 f5e122251d41527007c0675276f414534337b5814d1bb6d23587f7a3dcc91de4 \
-                    rmd160 e278ef08985c476c7c70c6f870ea301abaecc6c9
+rmd160 e278ef08985c476c7c70c6f870ea301abaecc6c9
 
 use_configure       no
 build.args-append   CC="${configure.cc} [get_canonical_archflags cc]"

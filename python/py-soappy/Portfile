@@ -19,7 +19,7 @@ homepage        http://pywebsvcs.sourceforge.net/
 master_sites    sourceforge:pywebsvcs
 distname        SOAPpy-${version}
 checksums       sha1 59c91688f23de3b738bf504351bca89aab5cc203 \
-                sha256 42c8cb3e42b439bc36b6ba3f090ddb72a214ca9264a2babf102c98731dea8e6a
+sha256 42c8cb3e42b439bc36b6ba3f090ddb72a214ca9264a2babf102c98731dea8e6a
 
 patchfiles      patch-remove-import-of-nested-scopes-from-future.diff
 

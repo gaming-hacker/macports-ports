@@ -16,7 +16,7 @@ supported_archs     noarch
 perl5.use_module_build
 
 checksums           rmd160  07dfcaf2a1749a71c702fb5e1a8614c8be1cc330 \
-                    sha256  8f506b69e59bceebf11f2c65ac8f5a3b3c12ea70bead7970c8c5716713db36fc
+sha256  8f506b69e59bceebf11f2c65ac8f5a3b3c12ea70bead7970c8c5716713db36fc
 
 if {${perl5.major} != ""} {
     depends_lib-append \

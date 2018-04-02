@@ -17,4 +17,4 @@ homepage            https://www.gnu.org/software/${name}/
 master_sites        gnu
 
 checksums           rmd160  6070448ad95b10cfed2cc45878bca7b950103c3a \
-                    sha256  eebb52171a4353aaad01921384098cf54eb96ebfaf99660e017f6d9fc96657a6
+sha256  eebb52171a4353aaad01921384098cf54eb96ebfaf99660e017f6d9fc96657a6

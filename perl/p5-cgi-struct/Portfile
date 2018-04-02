@@ -17,7 +17,7 @@ description         Build structures from CGI data
 long_description    ${description}
 
 checksums           rmd160 31719247981e6dda3f56818b97a613dff9934e1f \
-                    sha256 d13d8da7fdcd6d906054e4760fc28a718aec91bd3cf067a58927fb7cb1c09d6c
+sha256 d13d8da7fdcd6d906054e4760fc28a718aec91bd3cf067a58927fb7cb1c09d6c
 
 if {${perl5.major} != ""} {
     depends_build-append \

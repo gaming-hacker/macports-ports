@@ -18,7 +18,7 @@ master_sites    sourceforge
 use_bzip2 yes
 
 checksums       rmd160  9e341f86573d80dd2b390d79cf82f239ecd279ff \
-                sha256  44f14591fcf21294387215dd7562f3fb4bec2f42f476cf32420a6bbabb2bd2b5
+sha256  44f14591fcf21294387215dd7562f3fb4bec2f42f476cf32420a6bbabb2bd2b5
 
 depends_build   port:bmake \
                 port:bison \

@@ -24,7 +24,7 @@ homepage            http://ab-initio.mit.edu/wiki/index.php/H5utils
 master_sites        http://ab-initio.mit.edu/h5utils/
 
 checksums           sha1    1bd8ef8c50221da35aafb5424de9b5f177250d2d \
-                    rmd160  f7d1d1b9254e5946c382fad2bd5ffc41e238860d
+rmd160  f7d1d1b9254e5946c382fad2bd5ffc41e238860d
 
 depends_lib         port:hdf5 \
                     port:libpng \

@@ -20,7 +20,7 @@ master_sites        http://nlp.stanford.edu/software
 use_zip             yes
 distname            ${name}-full-2015-04-20
 checksums           rmd160  1266f8e9d67ea724272f25076c34ddeac116f0b5 \
-                    sha256  dbad96205d64bd0d259b1fc99318ac0ff90452380a1159d22d4e7b5e9bd790b5
+sha256  dbad96205d64bd0d259b1fc99318ac0ff90452380a1159d22d4e7b5e9bd790b5
 
 use_configure       no
 supported_archs     noarch

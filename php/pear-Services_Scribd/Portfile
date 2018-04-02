@@ -12,6 +12,6 @@ description         PEAR Services_Scribd package
 long_description    ${description}
 
 checksums           rmd160  c74cb4a5eeabd086ea048413dd4642e180366cd1 \
-                    sha256  642a2ad170e30b9ee76b3c641082107f7703c8aa338cdebfdde20b8dc0d411ab
+sha256  642a2ad170e30b9ee76b3c641082107f7703c8aa338cdebfdde20b8dc0d411ab
 
 depends_lib-append  port:pear-HTTP_Request2

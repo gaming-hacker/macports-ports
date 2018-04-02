@@ -12,7 +12,7 @@ if {${name} eq ${subport}} {
     github.setup    weechat weechat 1.9.1 v
 
     checksums       rmd160  d06d3a53c554bbeb5056780962bed821c29c406c \
-                    sha256  f5571251e185afc71cac985e1f7a9e59585de24fb91cf57092d01c4a8a284c48
+sha256  f5571251e185afc71cac985e1f7a9e59585de24fb91cf57092d01c4a8a284c48
 }
 
 subport weechat-devel {
@@ -21,7 +21,7 @@ subport weechat-devel {
 
     conflicts       weechat
     checksums       rmd160  10d8d30f0e24d31e6f5260ab6d8bd41ce9449844 \
-                    sha256  7c3a0dcc02d8e045642d490100bb19a4b1b0c6a46c6be06f791b0ffbe3e4f8db
+sha256  7c3a0dcc02d8e045642d490100bb19a4b1b0c6a46c6be06f791b0ffbe3e4f8db
 }
 
 homepage            https://weechat.org/

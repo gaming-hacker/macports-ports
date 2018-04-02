@@ -15,7 +15,7 @@ description         identify the dependencies of a distribution
 long_description    ${description}
 
 checksums           rmd160  93a0303186226d25e35135f34132572b694ad395 \
-                    sha256  ff7d78a42f5410ec019442cf54360d61cb97355deb045f116a76e3a4c8a3a0a7
+sha256  ff7d78a42f5410ec019442cf54360d61cb97355deb045f116a76e3a4c8a3a0a7
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-class-accessor-chained \

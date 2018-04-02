@@ -26,7 +26,7 @@ master_sites    ${homepage}download/ \
 distname        ${my_name}-${version}
 
 checksums           rmd160  5b5a836c1b51fac18ca36aa36d9ed4b37e551044 \
-                    sha256  c0f892943208266f9b6543b3ae308fab6284c5c90e627931446fb49b4221a072
+sha256  c0f892943208266f9b6543b3ae308fab6284c5c90e627931446fb49b4221a072
 
 set docdir ${prefix}/share/doc/${name}
 

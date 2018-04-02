@@ -17,4 +17,4 @@ homepage            https://code.google.com/p/liblouis/
 master_sites        googlecode
 
 checksums           sha1    9993449b1ca4d13fb20832dff5553bee78606a4d \
-                    rmd160  3dc8f0f06312ef3217ab47238ab5e09494da9bdd
+rmd160  3dc8f0f06312ef3217ab47238ab5e09494da9bdd

@@ -17,7 +17,7 @@ license             BSD
 homepage            http://chapel.cray.com/
 
 checksums           rmd160  ed4a788016dc6e015176c9e8a79eaffdbfb7747f \
-                    sha256  5474ef5e20ab3b46804ce9c35524b1b8995e7845603e99a0525bca8199c62d4b
+sha256  5474ef5e20ab3b46804ce9c35524b1b8995e7845603e99a0525bca8199c62d4b
 
 use_configure       no
 use_parallel_build  no

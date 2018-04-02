@@ -12,4 +12,4 @@ description         PEAR Mail_Mbox package
 long_description    ${description}
 
 checksums           rmd160  7d206f867843b1bbc77122012cfe4e9db2fac182 \
-                    sha256  1e3a6cc0f7665e090c26b9ad4aca9fa6a24b248347dc6982991bfcb27a4a12eb
+sha256  1e3a6cc0f7665e090c26b9ad4aca9fa6a24b248347dc6982991bfcb27a4a12eb

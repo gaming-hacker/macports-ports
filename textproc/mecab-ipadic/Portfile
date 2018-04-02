@@ -35,7 +35,7 @@ dist_subdir         mecab
 
 master_sites        macports_distfiles:mecab
 checksums           rmd160  8c774433a555e4947a6af80c436e9b40631bda45 \
-                    sha256  b62f527d881c504576baed9c6ef6561554658b175ce6ae0096a60307e49e3523
+sha256  b62f527d881c504576baed9c6ef6561554658b175ce6ae0096a60307e49e3523
 
 depends_lib         port:mecab-base
 

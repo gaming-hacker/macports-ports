@@ -19,7 +19,7 @@ description         This library provides objects and helper methods to help \
 long_description    ${description}
 
 checksums           rmd160  578f438cafd1aaae94f0f5e965c642bb007a8869 \
-                    sha256  8bf5998c75e5d28d51728a2a78b164be2b315e4804868c3e7dc2acbd989b19fa
+sha256  8bf5998c75e5d28d51728a2a78b164be2b315e4804868c3e7dc2acbd989b19fa
 
 depends_build       port:pkgconfig \
                     port:gtk-doc \

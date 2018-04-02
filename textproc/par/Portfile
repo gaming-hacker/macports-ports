@@ -18,7 +18,7 @@ master_sites        ${homepage}
 distname            [string totitle $name][string map {. {}} $version]
 
 checksums           rmd160  253070f319a7f3b3a6f0dad5797882efdbf597bc \
-                    sha256  33dcdae905f4b4267b4dc1f3efb032d79705ca8d2122e17efdecfd8162067082
+sha256  33dcdae905f4b4267b4dc1f3efb032d79705ca8d2122e17efdecfd8162067082
 
 patchfiles          patch-nbspace.diff \
                     patch-ptrdiffwarn.diff \

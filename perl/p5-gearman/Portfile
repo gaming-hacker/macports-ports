@@ -16,7 +16,7 @@ long_description    ${description}
 homepage            https://metacpan.org/release/Gearman
 
 checksums           rmd160  8380dbfeffa8202071a0052836e1c62e24a93d1a \
-                    sha256  64e64f8d400d572815edbb44d116c6ddc42d5d13133d9072f187b45ddea6de2a \
+sha256  64e64f8d400d572815edbb44d116c6ddc42d5d13133d9072f187b45ddea6de2a \
 size    48590
 
 if {${perl5.major} != ""} {

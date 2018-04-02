@@ -12,4 +12,4 @@ description         PEAR Net_Ident package
 long_description    ${description}
 
 checksums           rmd160  24454e1c165aa8b44582d25b9328f712ed7e9b7f \
-                    sha256  f9a35f7af4ada17e5958ffb5dd554a9bf15ae1edc14c2b19bdd4091c11d4ecdc
+sha256  f9a35f7af4ada17e5958ffb5dd554a9bf15ae1edc14c2b19bdd4091c11d4ecdc

@@ -37,8 +37,8 @@ post-build {
 
 master_sites    http://rabbit-shockers.org/download/
 checksums		md5 d9e757a3506cf74d64c577fe9165c644 \
-				rmd160 332d534ace3d57cce04062b55284d7810cc4efd1 \
-				sha1 0dca3bce250aa7d58c46964d75d2c8b59843eb1b
+rmd160 332d534ace3d57cce04062b55284d7810cc4efd1 \
+sha1 0dca3bce250aa7d58c46964d75d2c8b59843eb1b
 
 livecheck.type	regex
 livecheck.url	http://raa.ruby-lang.org/project/rabbit/

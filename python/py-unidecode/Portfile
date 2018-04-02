@@ -26,7 +26,7 @@ homepage            https://pypi.python.org/pypi/$realName/
 master_sites        pypi:u/$realName
 distname            Unidecode-${version}
 checksums           rmd160  43424072a59c6cbb88e3915cc1942bed33eeb6d5 \
-                    sha256  ed4418b4b1b190487753f1cca6299e8076079258647284414e6d607d1f8a00e0
+sha256  ed4418b4b1b190487753f1cca6299e8076079258647284414e6d607d1f8a00e0
 
 python.versions 27 36
 

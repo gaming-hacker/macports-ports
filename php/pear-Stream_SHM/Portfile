@@ -12,4 +12,4 @@ description         PEAR Stream_SHM package
 long_description    ${description}
 
 checksums           rmd160  54b45602cdea9d2e1d0873571d15873e9a758bcf \
-                    sha256  eb98c6f5fb47695ea5b742ee88cac23947cf1f195f6c4a866c8a0490b0962622
+sha256  eb98c6f5fb47695ea5b742ee88cac23947cf1f195f6c4a866c8a0490b0962622

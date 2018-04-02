@@ -20,7 +20,7 @@ extract.suffix      .tgz
 worksrcdir          ${name}
 
 checksums           rmd160  3b0c0acccaed1f7989d0a4915154dd5ea48e86c0 \
-                    sha256  dd86ebc421215a7b44095dc13b056921ba81e61b9f6f4cdab08ca135d02afb77
+sha256  dd86ebc421215a7b44095dc13b056921ba81e61b9f6f4cdab08ca135d02afb77
 
 post-extract {
     file attributes ${worksrcpath}/Build.sh -permissions a+x

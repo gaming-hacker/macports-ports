@@ -16,8 +16,8 @@ platforms           darwin
 master_sites        sourceforge:nslu
 distname            ${name}-11
 checksums           md5 e135bc8a390b65573bbc8ff4628e490c \
-                    sha1 cddfd7c4bc75fc59c5f8cf8c276741bfe3a87e7f \
-                    rmd160 4c79044eaa81e00bde722dc1ec091a7103ca5ef1
+sha1 cddfd7c4bc75fc59c5f8cf8c276741bfe3a87e7f \
+rmd160 4c79044eaa81e00bde722dc1ec091a7103ca5ef1
 
 depends_lib         port:libpcap
 

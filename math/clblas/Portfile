@@ -17,7 +17,7 @@ description         A software library containing BLAS functions written in Open
 long_description    ${description}
 
 checksums           rmd160  f9e1ab41a1975cd236e7cd4a0b0f14cdcb7e3336 \
-                    sha256  69b08331459acb273305c287c6bd67345df9807d2f50e9eca933abac1cc12442
+sha256  69b08331459acb273305c287c6bd67345df9807d2f50e9eca933abac1cc12442
 
 worksrcdir          ${distname}/src
 

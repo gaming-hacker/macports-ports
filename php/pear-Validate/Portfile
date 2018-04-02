@@ -13,4 +13,4 @@ description         PEAR Validate package
 long_description    ${description}
 
 checksums           rmd160  3b719cb5ec50b7a0abffb50f29d19b14f705cfb4 \
-                    sha256  2ce4913df22dc08470af053cf8123ccfb699639e21b52b03a301c7af764192a4
+sha256  2ce4913df22dc08470af053cf8123ccfb699639e21b52b03a301c7af764192a4

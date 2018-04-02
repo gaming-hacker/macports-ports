@@ -12,4 +12,4 @@ description         PEAR Sabre_VObject package
 long_description    ${description}
 
 checksums           rmd160  6b45b33f172747269df49fdcd1a637dd0666c007 \
-                    sha256  be01baec0249b8ef92898d12ef45ba000f2d7b175c591aa356d36d784b409dea
+sha256  be01baec0249b8ef92898d12ef45ba000f2d7b175c591aa356d36d784b409dea

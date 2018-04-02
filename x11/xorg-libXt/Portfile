@@ -20,7 +20,7 @@ master_sites    xorg:individual/lib/
 distname    libXt-${version}
 
 checksums           rmd160  232d6f5396ac60a94c6cc20aa333a68469a90910 \
-                    sha256  46eeb6be780211fdd98c5109286618f6707712235fdd19df4ce1e6954f349f1a
+sha256  46eeb6be780211fdd98c5109286618f6707712235fdd19df4ce1e6954f349f1a
 
 use_bzip2   yes
 use_parallel_build      yes

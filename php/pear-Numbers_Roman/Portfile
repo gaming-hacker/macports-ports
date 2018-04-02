@@ -12,4 +12,4 @@ description         PEAR Numbers_Roman package
 long_description    ${description}
 
 checksums           rmd160  0ff09482e79415a31a54fb7db663d3b2fad92239 \
-                    sha256  788f8d3152dec07ff91fd3db49801ee3345fdfa8128f40517c15268270fd24d9
+sha256  788f8d3152dec07ff91fd3db49801ee3345fdfa8128f40517c15268270fd24d9

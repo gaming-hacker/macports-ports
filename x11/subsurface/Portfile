@@ -17,7 +17,7 @@ long_description        ${description}
 
 homepage                http://subsurface.hohndel.org/
 checksums               rmd160  049ce041fa50be02752e8b097c3d5adca2e9ff6f \
-                        sha256  d9db76238435fc0dcb24e4957a33aed6aa8e50496b121009327ab48abfa14954
+sha256  d9db76238435fc0dcb24e4957a33aed6aa8e50496b121009327ab48abfa14954
 
 patchfiles              Makefile.patch
 

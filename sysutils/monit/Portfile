@@ -24,7 +24,7 @@ homepage            https://mmonit.com/monit/
 master_sites        ${homepage}dist/
 
 checksums           rmd160 a0e8aedcc73d36354b1362cb1e30e71ac9114f62 \
-                    sha256 f71a22cfb6bd91ff46496e72e1d1b1021ecd651e7748131ce0f995cc37ff0b42
+sha256 f71a22cfb6bd91ff46496e72e1d1b1021ecd651e7748131ce0f995cc37ff0b42
 
 depends_build       bin:flex:flex bin:bison:bison
 depends_lib         path:lib/libssl.dylib:openssl

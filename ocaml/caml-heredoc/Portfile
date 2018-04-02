@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        http://www.eleves.ens.fr/home/frisch/info/
 
 checksums           md5 b1032fcbb61c42cf0600083181c0a84e \
-                    sha1 cb102e7adf0b2539c86a026f8111f36f2aaa9007
+sha1 cb102e7adf0b2539c86a026f8111f36f2aaa9007
 distfiles           HereDoc-${version}.tar.gz
 worksrcdir          HereDoc
 

@@ -37,7 +37,7 @@ if {${subport} eq "${name}"} {
     # incl. those not in MacPorts.
     github.setup    audacity audacity 2.2.2 Audacity-
     checksums       rmd160  c48e8467fc06c1ffb11af2b0fba4ede77b66ee2f \
-    sha256  7963cedab841aff181ea25b06991ba5ba56249533815ba5cdd82ec1282dbadd8 \
+sha256  7963cedab841aff181ea25b06991ba5ba56249533815ba5cdd82ec1282dbadd8 \
 size    25941576
     set PPREFIX     ./
 } else {
@@ -50,7 +50,7 @@ size    25941576
     # fetch.type    git
     # distname      audacity-git
     checksums       rmd160  43b66fdbe873d5f64059f5b58b20b676d9540d20 \
-                    sha256  9231238cfe468b7b0531853564cfc19dea635f50b1acd5c9b468c5795d6e767b \
+sha256  9231238cfe468b7b0531853564cfc19dea635f50b1acd5c9b468c5795d6e767b \
 size    26049423
     set PPREFIX     devel/
 

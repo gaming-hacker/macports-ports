@@ -12,4 +12,4 @@ description         PEAR Net_SMS package
 long_description    ${description}
 
 checksums           rmd160  d3287e965d74d36383c1118e4502575a89b4188f \
-                    sha256  0a1d9223045f3ce213644df37d029459771f841ad49da85f3b33d17319f2b4cf
+sha256  0a1d9223045f3ce213644df37d029459771f841ad49da85f3b33d17319f2b4cf

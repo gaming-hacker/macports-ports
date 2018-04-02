@@ -20,7 +20,7 @@ homepage            http://dvisvgm.bplaced.net/
 github.tarball_from releases
 
 checksums           rmd160  a6b6bae339fb915b2c5f585b4f176a93fd901fc3 \
-                    sha256  5399f9ac2b254bc8a5c4862bc2126f2e8c6caec243c3205c0223564371100129
+sha256  5399f9ac2b254bc8a5c4862bc2126f2e8c6caec243c3205c0223564371100129
 
 depends_build       port:pkgconfig
 

@@ -21,7 +21,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  94e4b6cc38619abf512245fd62bb22950724a9a2 \
-                    sha256  28b453fe49c49d7dfaf07c85c01d7495913f93ab64a0b223c117eb17d1cb8ad1
+sha256  28b453fe49c49d7dfaf07c85c01d7495913f93ab64a0b223c117eb17d1cb8ad1
 
 depends_build       port:pkgconfig \
                     port:docbook-xsl \

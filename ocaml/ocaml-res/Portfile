@@ -14,7 +14,7 @@ long_description    ${description}
 homepage            https://bitbucket.org/mmottl/res/
 master_sites        https://bitbucket.org/mmottl/res/downloads/
 checksums           rmd160  e724aa2280654ae8391c437c985994c6d19d1259 \
-                    sha256  bac9fddebca10e5cdb364babc49e62df0f6289cdadf3cef2810d9b4b81e23bd1
+sha256  bac9fddebca10e5cdb364babc49e62df0f6289cdadf3cef2810d9b4b81e23bd1
 
 distname            res-${version}
 

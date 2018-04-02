@@ -24,9 +24,9 @@ master_sites    sourceforge:${my_name}
 distname        ${my_name}-${version}
 
 checksums \
-    md5 088def25efe04dcdd1f8369d8926ab34 \
-	sha1 b5cbc52a7ceed2fd5c4f5081f5747130b2d0fe01 \
-	rmd160 9eabed2b4b5585a55062b4a82c8c6aee1b01e3b7
+md5 088def25efe04dcdd1f8369d8926ab34 \
+sha1 b5cbc52a7ceed2fd5c4f5081f5747130b2d0fe01 \
+rmd160 9eabed2b4b5585a55062b4a82c8c6aee1b01e3b7
 
 depends_lib	\
 	port:gettext \

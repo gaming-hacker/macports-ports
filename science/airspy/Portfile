@@ -9,7 +9,7 @@ name                airspy
 github.setup        airspy airspyone_host eee8452caf92ff53077ea1a855e67dba4769ab8d
 version             20180225
 checksums           rmd160 d8abd56bc88f315f381874e49b7c6aefaf3e4eac \
-                    sha256 c88fc6951d1ecf3b98dc99dd9f5e695c396fac0ad6a4ef077b73a8297feb64d1
+sha256 c88fc6951d1ecf3b98dc99dd9f5e695c396fac0ad6a4ef077b73a8297feb64d1
 
 homepage            http://www.airspy.com/
 

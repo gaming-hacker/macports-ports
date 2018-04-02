@@ -14,8 +14,8 @@ platforms           darwin
 master_sites        sourceforge:savonet
 
 checksums           md5 27b35769a3e407c2ce0aa6eb81551909 \
-                    sha1 af5ea968a2c933b69c557748ad237e5b30087e50 \
-                    rmd160 f963e6ec83ddcfef2f898b78f83327867d1ce394
+sha1 af5ea968a2c933b69c557748ad237e5b30087e50 \
+rmd160 f963e6ec83ddcfef2f898b78f83327867d1ce394
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib

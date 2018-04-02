@@ -16,8 +16,8 @@ master_sites            http://files.luaforge.net/releases/luash/luash/luash${ve
 distname                ${name}
 dist_subdir             ${name}/${version}
 checksums               md5     67bbb8985166579686361fe840e016c0 \
-                        sha1    ef1d56843f19a29b96f6d5ce8f983b54074b955f \
-                        rmd160  165d88850e8d068d7586f1785b36dd20c9c8ce37
+sha1    ef1d56843f19a29b96f6d5ce8f983b54074b955f \
+rmd160  165d88850e8d068d7586f1785b36dd20c9c8ce37
 
 use_bzip2               yes
 

@@ -18,7 +18,7 @@ long_description    vcsh allows you to have several git repositories, all mainta
                     configs you want to use on which machine.
 
 checksums           rmd160  492a49150523305b050bd5b19aa02d2d0f82bf67 \
-                    sha256  7ceb18c8faf2146b690ffa3b26a1b307c1d1acbccbc5824230949f85248d30a2
+sha256  7ceb18c8faf2146b690ffa3b26a1b307c1d1acbccbc5824230949f85248d30a2
 
 supported_archs     noarch
 

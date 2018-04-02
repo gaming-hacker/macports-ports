@@ -21,8 +21,8 @@ homepage            http://pathalizer.sourceforge.net/
 master_sites        sourceforge:project/pathalizer/pathalizer/${version}
 
 checksums           md5     7ef23977fc246dcdf332e4eec3111037 \
-                    rmd160  d57da4a5487496487bc7fdeba2ff634ee906fa17 \
-                    sha256  a64841b58d81a9736f47c796c9e9157189eb57204306291f64937c586783c25d
+rmd160  d57da4a5487496487bc7fdeba2ff634ee906fa17 \
+sha256  a64841b58d81a9736f47c796c9e9157189eb57204306291f64937c586783c25d
 
 depends_run         port:ghostscript \
                     path:bin/dot:graphviz \

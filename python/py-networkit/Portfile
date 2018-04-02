@@ -26,7 +26,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  0cd8edf8fdd8ee978e23d3ce778421c677bfff8f \
-                    sha256  d2f7862970d376da916a4f87bf6d90e080dcbb37ab74a30dc6b3924b3b7b0475
+sha256  d2f7862970d376da916a4f87bf6d90e080dcbb37ab74a30dc6b3924b3b7b0475
 
 if {${name} ne ${subport}} {
     compiler.whitelist  macports-gcc-${user.ver.gcc} macports-clang-${user.ver.clang}

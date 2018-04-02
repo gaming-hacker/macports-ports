@@ -16,7 +16,7 @@ long_description    Adds a pager method to your class that can query \
 platforms           darwin
 
 checksums           rmd160  e65041ea1b133eae17b8372d84d3c0e8970de8d4 \
-                    sha256  13629f4159e5e3dd28ce5522cce50310ba41d1c36c4f9610a04a031077ed5b5b
+sha256  13629f4159e5e3dd28ce5522cce50310ba41d1c36c4f9610a04a031077ed5b5b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

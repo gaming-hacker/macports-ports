@@ -14,7 +14,7 @@ long_description    Part of the NfSen project, the nfdump tools are \
                     command-line programs to collect and process netflow data.
 
 checksums           rmd160  5f12b04ba2bc4b4debaa36a25c8e3e1331423727 \
-                    sha256  81ceb967e878606441c024b8ae5c9e6beaba5213450cc18dc3f02c1b26e5054c
+sha256  81ceb967e878606441c024b8ae5c9e6beaba5213450cc18dc3f02c1b26e5054c
 
 depends_lib         port:rrdtool
 

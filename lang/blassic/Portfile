@@ -29,8 +29,8 @@ depends_lib             port:ncurses
 extract.suffix          .tgz
 
 checksums               md5     f4d66a339c55cb08fdc00cd9db8001c2 \
-                        sha1    6bb8237c96cb84df8eae8754ca621a76e1d0956f \
-                        rmd160  006df2c2ca25499050a2f7c9e711f07e57475fb2
+sha1    6bb8237c96cb84df8eae8754ca621a76e1d0956f \
+rmd160  006df2c2ca25499050a2f7c9e711f07e57475fb2
 
 configure.args          --disable-graphics
 

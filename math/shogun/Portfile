@@ -29,7 +29,7 @@ master_sites        ${homepage}/archives/shogun/releases/${branch}/sources/
 use_bzip2           yes
 
 checksums           rmd160  5fece569be7d95bbe9ad406f1b5e10f06f4ac20e \
-                    sha256  6c47941a98d506d7b1e21d5bfd511f8684a2e1f371accd4756cdc8821916a63b
+sha256  6c47941a98d506d7b1e21d5bfd511f8684a2e1f371accd4756cdc8821916a63b
 
 worksrcdir          ${name}-${version}/src
 

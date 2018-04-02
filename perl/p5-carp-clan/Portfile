@@ -19,7 +19,7 @@ long_description    This module reports errors from the perspective of the \
 platforms           darwin
 
 checksums           rmd160  5bb184cf42b0d3a1d4f1d3f308f83ac1688b299f \
-                    sha256  ea4ac8f611354756d43cb369880032901e9cc4cc7e0bebb7b647186dac00c9d4
+sha256  ea4ac8f611354756d43cb369880032901e9cc4cc7e0bebb7b647186dac00c9d4
 
 if {${perl5.major} != ""} {
     depends_lib-append \

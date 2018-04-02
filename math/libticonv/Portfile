@@ -16,8 +16,8 @@ master_sites        sourceforge:tilp
 use_bzip2           yes
 
 checksums           md5     c669598f9917a8f98b26eed1fa27242f \
-                    sha1    54ea00bf8123e1d8ea33d2a1adec3ffaf99317a0 \
-                    rmd160  5077248d2e878473d19999f0211b04d8f44a4f80
+sha1    54ea00bf8123e1d8ea33d2a1adec3ffaf99317a0 \
+rmd160  5077248d2e878473d19999f0211b04d8f44a4f80
 
 depends_build       port:pkgconfig \
                     bin:grep:grep

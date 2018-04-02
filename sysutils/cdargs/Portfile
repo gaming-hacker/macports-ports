@@ -23,8 +23,8 @@ platforms       darwin
 master_sites    http://www.skamphausen.de/downloads/cdargs/
 
 checksums       md5 50be618d67f0b9f2439526193c69c567 \
-                sha1 20017d09d3259fcd1385754554a3e17a1c975f9b \
-                rmd160 44cbe35281ab29fa48149792c34afa61d117e33d
+sha1 20017d09d3259fcd1385754554a3e17a1c975f9b \
+rmd160 44cbe35281ab29fa48149792c34afa61d117e33d
 
 configure.args  --mandir=${prefix}/share/man
 

@@ -22,8 +22,8 @@ homepage        https://launchpad.net/python-mode/
 master_sites    sourceforge:${my_name}
 
 checksums       md5 57fde95d350e010b5a00d98b8ce4a066 \
-                sha1 974a7714000238bd0423c5598d781c9987929b83 \
-                rmd160 6f2abe80b7eae9123da10a3c0f447f7792caedb6
+sha1 974a7714000238bd0423c5598d781c9987929b83 \
+rmd160 6f2abe80b7eae9123da10a3c0f447f7792caedb6
 
 distname        ${my_name}-${version}
 

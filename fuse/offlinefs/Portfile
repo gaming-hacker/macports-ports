@@ -24,7 +24,7 @@ master_sites        sourceforge:offlinefs
 license             GPL-2
 
 checksums           rmd160  a56cc9459ae5d261608bc2373baa73bc3063af4a \
-                    sha256  36913bb52e23be7c033949894677ae94f40df1e25f56e14458bd63b83d7f1156
+sha256  36913bb52e23be7c033949894677ae94f40df1e25f56e14458bd63b83d7f1156
 livecheck.distname  offlinefs
 
 use_autoreconf      yes

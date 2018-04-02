@@ -12,7 +12,7 @@ long_description \
   routines for accessing XML files using libxml2.
 
 checksums     rmd160 378d3a703929683ad23bde7ab1461d211e822018 \
-              sha256 5509bcc9cbce0b497036d3fc87628d1cbaa9f33af20cf33609cabd9c6ee398f1
+sha256 5509bcc9cbce0b497036d3fc87628d1cbaa9f33af20cf33609cabd9c6ee398f1
 
 depends_lib   port:lal \
               port:libxml2 \

@@ -22,7 +22,7 @@ master_sites            https://bitbucket.org/cthedot/cssutils/downloads/
 distname                cssutils-${version}
 
 checksums               rmd160  ca6af81a4bc73354056a78f0a5644371bd8fa199 \
-                        sha256  a2fcf06467553038e98fea9cfe36af2bf14063eb147a70958cfcaa8f5786acaf
+sha256  a2fcf06467553038e98fea9cfe36af2bf14063eb147a70958cfcaa8f5786acaf
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

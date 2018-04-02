@@ -26,4 +26,4 @@ long_description    ${name} is ${description}. \
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  03fd1500d596aae4229b5e88b79037fecf5e7c32 \
-                    sha256  62cb4079a0dadd232a859e577e97e50e9718ccfcc5983c4d9c4c32cac7a9bafa
+sha256  62cb4079a0dadd232a859e577e97e50e9718ccfcc5983c4d9c4c32cac7a9bafa

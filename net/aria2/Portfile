@@ -17,7 +17,7 @@ long_description    aria2 is a download utility with resuming and segmented \
 use_xz              yes
 
 checksums           rmd160  0cd40f58a09530b6ea679eaabdd61a29e2a5ec81 \
-                    sha256  2539e4844f55a1f1f5c46ad42744335266053a69162e964d9a2d80a362c75e1b
+sha256  2539e4844f55a1f1f5c46ad42744335266053a69162e964d9a2d80a362c75e1b
 
 depends_build-append    port:pkgconfig
 depends_lib-append      port:gettext port:libiconv port:gnutls port:libxml2

@@ -18,7 +18,7 @@ long_description    This module converts between JSON \
                     http://www.crockford.com/JSON/.
 
 checksums           rmd160  3733e22f34e55d0f15e351158d3edb2807480c44 \
-                    sha256  e277d9385633574923f48c297e1b8acad3170c69fa590e31fa466040fc6f8f5a
+sha256  e277d9385633574923f48c297e1b8acad3170c69fa590e31fa466040fc6f8f5a
 
 if {${perl5.major} != ""} {
     depends_lib-append \

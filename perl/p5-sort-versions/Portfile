@@ -18,6 +18,6 @@ long_description    Sort::Versions allows easy sorting of mixed non-numeric and 
 platforms           darwin
 
 checksums           rmd160  05467a8e7eed92f8d1e218c6883907060ca1e11a \
-                    sha256  bf5f3307406ebe2581237f025982e8c84f6f6625dd774e457c03f8994efd2eaa
+sha256  bf5f3307406ebe2581237f025982e8c84f6f6625dd774e457c03f8994efd2eaa
 
 supported_archs     noarch

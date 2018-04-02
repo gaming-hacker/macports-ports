@@ -26,7 +26,7 @@ master_sites        sourceforge:impressive
 
 distname            Impressive-${version}
 checksums           rmd160  6a9b78569ca45953cff0bd591ba8214bb7a85b14 \
-                    sha256  593f616eb72a18a826bc7687c9952a2ae5dded5483d2688bab5b5ca68caf792c
+sha256  593f616eb72a18a826bc7687c9952a2ae5dded5483d2688bab5b5ca68caf792c
 
 python.default_version 27
 

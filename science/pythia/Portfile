@@ -26,7 +26,7 @@ distname            ${name}${my_version}
 extract.suffix      .tgz
 
 checksums           rmd160  9189d5ade9328206ea5a7d872871d1f590258e2e \
-                    sha256  6dfb623346bb5313d9fe527ce95c3daf26f5d6a595bea84b898d28edd8bd28f7
+sha256  6dfb623346bb5313d9fe527ce95c3daf26f5d6a595bea84b898d28edd8bd28f7
 
 universal_variant   no
 

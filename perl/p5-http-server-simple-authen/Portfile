@@ -14,7 +14,7 @@ description         Authentication plugin for HTTP::Server::Simple
 long_description    ${description}
 
 checksums           rmd160 b5204e9ff907463b381d7efe4afc7454f4c54fcf \
-                    sha256 2dddc8ab9dc8986980151e4ba836a6bbf091f45cf195be1768ebdb4a993ed59b
+sha256 2dddc8ab9dc8986980151e4ba836a6bbf091f45cf195be1768ebdb4a993ed59b
 
 platforms           darwin
 supported_archs     noarch

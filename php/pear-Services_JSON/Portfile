@@ -12,4 +12,4 @@ description         PEAR Services_JSON package
 long_description    ${description}
 
 checksums           rmd160  c5c91b1d5647a3cd8c886cc147df21f0fccf9a30 \
-                    sha256  007bfa934b9dc866f2b558355097372e1542bdfd5a7e3f39e3d7b94cc6cae1c3
+sha256  007bfa934b9dc866f2b558355097372e1542bdfd5a7e3f39e3d7b94cc6cae1c3

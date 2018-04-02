@@ -16,4 +16,4 @@ master_sites        https://www.spice-space.org/download/releases/
 use_bzip2           yes
 
 checksums           rmd160  75aa35e13a8e5d0dc852901d88680833767ab0b3 \
-                    sha256  89ee11b202d2268e061788e6ace114e1ff18c7620ae64d1ca3aba252ee7c9933
+sha256  89ee11b202d2268e061788e6ace114e1ff18c7620ae64d1ca3aba252ee7c9933

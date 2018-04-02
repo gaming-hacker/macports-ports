@@ -13,7 +13,7 @@ long_description    MIME::Charset provides information about character \
                     sets used for MIME messages on the Internet.
 
 checksums           rmd160  9838e4164e48b968c3ba3b212c9b07a26bd8a984 \
-                    sha256  878c779c0256c591666bd06c0cde4c0d7820eeeb98fd1183082aee9a1e7b1d13
+sha256  878c779c0256c591666bd06c0cde4c0d7820eeeb98fd1183082aee9a1e7b1d13
 
 platforms           darwin
 

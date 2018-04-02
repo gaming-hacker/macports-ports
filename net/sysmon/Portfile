@@ -17,8 +17,8 @@ long_description        Sysmon is a network monitoring tool designed to \
 homepage        http://www.sysmon.org
 master_sites    ftp://puck.nether.net/pub/jared/
 checksums	md5	52783d22d9e26fa2a2fe0f0d81e7b447 \
-		sha1	9802be83f1b88577fcdaad9b9447ce9fe48163a5 \
-		rmd160	77a276a3964f4830dc4351c19741be724e95ec42
+sha1	9802be83f1b88577fcdaad9b9447ce9fe48163a5 \
+rmd160	77a276a3964f4830dc4351c19741be724e95ec42
 
 platforms       darwin
 

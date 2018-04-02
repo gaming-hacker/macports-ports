@@ -20,7 +20,7 @@ long_description    This module was inspired by the excellent DBIx::Abstract. \
 platforms           darwin
 
 checksums           rmd160  90adb2be6f40c374e863a9e9bfeca4583920f2aa \
-                    sha256  9f44afe031a0cc63a6ccabaa46ba7ec58ef4db940559cee7fbc2dfbbf37bccab \
+sha256  9f44afe031a0cc63a6ccabaa46ba7ec58ef4db940559cee7fbc2dfbbf37bccab \
 size    98176
 
 if {${perl5.major} != ""} {

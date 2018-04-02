@@ -12,4 +12,4 @@ description         PEAR Net_GeoIP package
 long_description    ${description}
 
 checksums           rmd160  21780d11b4e7565595c12bd73ef57be46b70d605 \
-                    sha256  16b7b1dddcc30de145a4bd7302eec2762266b17c5ccdb6e8a6503bf03926b9c2
+sha256  16b7b1dddcc30de145a4bd7302eec2762266b17c5ccdb6e8a6503bf03926b9c2

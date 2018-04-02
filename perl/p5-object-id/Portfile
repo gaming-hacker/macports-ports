@@ -17,7 +17,7 @@ description         Object::ID - A unique identifier for any object
 long_description    ${description}
 
 checksums           sha1 30e867fc25e38422fe8293f623a6f4463bc0c575 \
-                    rmd160 b9ce42f82144016e149741e04b7321bcd75c3f07
+rmd160 b9ce42f82144016e149741e04b7321bcd75c3f07
 
 if {${perl5.major} != ""} {
     depends_build-append \

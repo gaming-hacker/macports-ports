@@ -28,7 +28,7 @@ long_description    Mercurial is a fast, lightweight Source Control Management \
 homepage            http://www.mercurial-scm.org
 platforms           darwin
 checksums           rmd160  5dbe7f98426d71e8ce60c5d026a71e28686f43da \
-                    sha256  e14e42cc72f1650501784b9f3c571cb862b5f3f5825dd398e1349b1c709531dc
+sha256  e14e42cc72f1650501784b9f3c571cb862b5f3f5825dd398e1349b1c709531dc
 
 depends_build       port:py27-docutils
 
@@ -51,7 +51,7 @@ subport mercurial-devel {
 
     conflicts           mercurial
     checksums           rmd160  6035b11e2e037b824b61231a49e8a53f1a69d3a9 \
-                        sha256  0812e74014fdc15b4f0b61e1528c30461bd6efc2f64e40059d047139faffe838
+sha256  0812e74014fdc15b4f0b61e1528c30461bd6efc2f64e40059d047139faffe838
 }
 
 # chg is not installed by default yet

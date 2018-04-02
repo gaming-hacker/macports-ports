@@ -20,8 +20,8 @@ master_sites	http://opensword.org/Downloads/
 distname		Pixen-r${version}
 
 checksums		md5 0c1c0fc53aa085c5d53cdbe0aa3eda1c \
-				sha1 0bc101c5390a2be2f921114ed64788f0398fb6b1 \
-				rmd160 62155331f4afbf903a7ba0d23da1cbb74a3b698a
+sha1 0bc101c5390a2be2f921114ed64788f0398fb6b1 \
+rmd160 62155331f4afbf903a7ba0d23da1cbb74a3b698a
 
 worksrcdir      Sources
 

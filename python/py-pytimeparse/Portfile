@@ -17,7 +17,7 @@ homepage            https://pypi.python.org/pypi/$base_name
 master_sites        pypi:p/$base_name
 
 checksums           rmd160  e6a4d1ecc57fd4b50f86fe7199ec8b393c4d4acd \
-                    sha256  74c52ae0db8a1d9055b9159bf09023ad5fba828b87ec47c0a9aed8129159ab46
+sha256  74c52ae0db8a1d9055b9159bf09023ad5fba828b87ec47c0a9aed8129159ab46
 
 if {${name} ne ${subport}} {
     depends_build-append \

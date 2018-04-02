@@ -13,8 +13,8 @@ dist_subdir     hyperestraier
 distname        hyperestraier-${version}
 worksrcdir      hyperestraier-${version}/rubynative
 checksums       md5 847aefb9e23266545280378d797f3981 \
-                sha1 21c3f325f42019fef096172105c2fc16f3e72fc0 \
-                rmd160 8af0af25df6d5bd45a09e9abfbb26300339b5a2c
+sha1 21c3f325f42019fef096172105c2fc16f3e72fc0 \
+rmd160 8af0af25df6d5bd45a09e9abfbb26300339b5a2c
 
 categories      ruby textproc
 depends_lib     port:ruby port:hyperestraier

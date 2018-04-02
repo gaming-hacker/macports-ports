@@ -31,7 +31,7 @@ depends_lib-append  port:qwt52 \
                     port:libGLU
 
 checksums           rmd160  c03e673dcaf994b838f402a9e0b0b4ac51be2beb \
-                    sha256  2f586e81333eb1ecc186a9163203da1376a972017503e3ac9e4a6552ac6f6219
+sha256  2f586e81333eb1ecc186a9163203da1376a972017503e3ac9e4a6552ac6f6219
 
 universal_variant   no
 

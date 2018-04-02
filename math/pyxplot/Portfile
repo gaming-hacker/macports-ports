@@ -21,7 +21,7 @@ master_sites        ${homepage}/src/
 distname            ${name}_${version}
 
 checksums           rmd160 d4eb39acfa22868f28ad93665cec5303bc567c8e \
-                    sha256 1c592a0bc77caec445a8d72534471c01d66ca1806309e6c983847c2e0b95e689
+sha256 1c592a0bc77caec445a8d72534471c01d66ca1806309e6c983847c2e0b95e689
 
 worksrcdir          ${name}-${version}
 

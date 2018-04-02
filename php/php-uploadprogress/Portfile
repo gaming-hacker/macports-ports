@@ -22,7 +22,7 @@ long_description \
     still have issues.
 
 checksums       rmd160  41eca2504c467a3bacc716db06ff8e42501586a8 \
-                sha256  30588b4589543bcf6371532546b1a8cee9da1086c206aca9f96ea1bd486bbab2
+sha256  30588b4589543bcf6371532546b1a8cee9da1086c206aca9f96ea1bd486bbab2
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:${php}-apache2handler

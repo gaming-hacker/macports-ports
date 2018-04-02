@@ -18,7 +18,7 @@ description         Search for regular expressions as defined in Unicode \
 long_description    ${description}, http://www.unicode.org/reports/tr18/
 
 checksums           rmd160  bae8e6dd69d1fd59f9639b015e35e18a3b59717b \
-                    sha256  62ad78e93c116e108b5f5ec92d0251258fa23e6559e93d37a9519bf0c890a229
+sha256  62ad78e93c116e108b5f5ec92d0251258fa23e6559e93d37a9519bf0c890a229
 
 homepage            http://www.lightboxtechnologies.com/lightgrep-engine/
 

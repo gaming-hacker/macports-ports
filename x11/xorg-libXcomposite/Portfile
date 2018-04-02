@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXcomposite-${version}
 checksums           md5     f7a218dcbf6f0848599c6c36fc65c51a \
-                    sha1    75fd0b996e56e12db1d84e9b63549c5c3f2631ca \
-                    rmd160  eb648bea6e2850ced618e95f1e49bd32b139efe8
+sha1    75fd0b996e56e12db1d84e9b63549c5c3f2631ca \
+rmd160  eb648bea6e2850ced618e95f1e49bd32b139efe8
 
 use_bzip2   yes
 use_parallel_build      yes

@@ -25,7 +25,7 @@ long_description \
     scripts, cron jobs, terminals without Xsupport, etc.
 
 checksums               rmd160  fff40705c38d7415be1fce6e2d23a4ecd0b034fd \
-                        sha256  2fc0ffb965a8dc8f1e4a89cbe834c0ae7b9c22f559ebafc84c7874ad1866559a \
+sha256  2fc0ffb965a8dc8f1e4a89cbe834c0ae7b9c22f559ebafc84c7874ad1866559a \
 size    2080228
 
 configure.args          --enable-option-checking \

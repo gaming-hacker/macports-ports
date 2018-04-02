@@ -21,8 +21,8 @@ distname            STDINCHI-1-API
 use_zip             yes
 
 checksums           md5     aa8bab9424a4c9683b63706c18d55479 \
-                    sha1    8545bc26004db435edc56e58c2f74d9b424c0e26 \
-                    rmd160  02381c995b837a9bfe2eceadf3b5b9f5d7328360
+sha1    8545bc26004db435edc56e58c2f74d9b424c0e26 \
+rmd160  02381c995b837a9bfe2eceadf3b5b9f5d7328360
 
 use_configure       no
 build.args          -C STDINCHI/gcc_makefile/ -f makefile

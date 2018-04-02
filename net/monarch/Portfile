@@ -18,7 +18,7 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           rmd160  e7d3454eb778aa39883035d26a905e151e2dc71f \
-                    sha256  6f65d13b354a9a2faf0dbf689fac47225cac0ad635999905e55d0dd11e6bdf21
+sha256  6f65d13b354a9a2faf0dbf689fac47225cac0ad635999905e55d0dd11e6bdf21
 
 depends_lib-append  path:bin/mysql_config5:mysql5 \
                     port:nagios \

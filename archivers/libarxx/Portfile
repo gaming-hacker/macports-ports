@@ -20,8 +20,8 @@ master_sites	sourceforge
 use_bzip2		yes
 
 checksums		md5     3cf0be1546c5594649ec32c24ddc00c3 \
-				sha1    cbc3f8a528b1b738a90fced19e71e22fe9b8f358 \
-				rmd160  846df5dfa3030c8b5124364f9db7c4325ef3d141
+sha1    cbc3f8a528b1b738a90fced19e71e22fe9b8f358 \
+rmd160  846df5dfa3030c8b5124364f9db7c4325ef3d141
 
 depends_lib		port:zlib \
 				port:bzip2

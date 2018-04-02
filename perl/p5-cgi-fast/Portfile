@@ -20,7 +20,7 @@ long_description    CGI::Fast is a subclass of the CGI object created by CGI.pm.
                     see large performance improvements.
 
 checksums           rmd160  162b7c844b57afdd070c6b0a954a513402d7f6b6 \
-                    sha256  792f21fc3b94380e37c99faa7901ecedf01d6855191000d1ffb2a7003813b1d4
+sha256  792f21fc3b94380e37c99faa7901ecedf01d6855191000d1ffb2a7003813b1d4
 
 if {${perl5.major} != ""} {
     depends_lib-append \

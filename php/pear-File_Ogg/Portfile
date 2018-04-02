@@ -12,4 +12,4 @@ description         PEAR File_Ogg package
 long_description    ${description}
 
 checksums           rmd160  b3ebe79001ed2cd28e18688e36941b93118f13ad \
-                    sha256  d98e0abaebd79bbcf9be3b4dd46df7a4069471cd483875841d10c24c16f547b7
+sha256  d98e0abaebd79bbcf9be3b4dd46df7a4069471cd483875841d10c24c16f547b7

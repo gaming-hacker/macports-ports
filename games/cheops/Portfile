@@ -23,6 +23,6 @@ master_sites        https://files.nothingisreal.com/software/cheops/
 use_bzip2           yes
 
 checksums           rmd160  ae12b6d6d9981e7fc2e2258b96ba3c9fefc2e891 \
-                    sha256  a3ce2e94f73068159827a1ec93703b5075c7edfdf5b0c1aba4d71b3e43fe984e
+sha256  a3ce2e94f73068159827a1ec93703b5075c7edfdf5b0c1aba4d71b3e43fe984e
 
 configure.args      --disable-silent-rules

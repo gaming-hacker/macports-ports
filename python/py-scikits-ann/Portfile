@@ -21,8 +21,8 @@ master_sites        pypi:s/scikits.ann/
 distname            scikits.ann-${version}.dev-r803
 
 checksums           md5     a0380cdc31fd705c15eb50f483bbe5fb \
-                    sha1    731113c04686b5178cae58df90e7f7b511206305 \
-                    rmd160  b51135fd25cdcd3b4d229186153589f08e8dfa36
+sha1    731113c04686b5178cae58df90e7f7b511206305 \
+rmd160  b51135fd25cdcd3b4d229186153589f08e8dfa36
 
 python.versions 27 36
 

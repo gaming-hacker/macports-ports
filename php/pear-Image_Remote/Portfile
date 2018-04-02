@@ -12,4 +12,4 @@ description         PEAR Image_Remote package
 long_description    ${description}
 
 checksums           rmd160  442450c3d3c204c0833d199fd6498cbab979bac9 \
-                    sha256  068122191eb638e9ead3d4bdc3b8c8a069798e544d7386f34ceb17c42a2e0c79
+sha256  068122191eb638e9ead3d4bdc3b8c8a069798e544d7386f34ceb17c42a2e0c79

@@ -19,7 +19,7 @@ homepage            http://minidlna.sourceforge.net/
 master_sites        sourceforge:minidlna
 
 checksums           rmd160  6a86c63ca1186105ef4cdc5e98d06e95d536d1b8 \
-                    sha256  8477ad0416bb2af5cd8da6dde6c07ffe1a413492b7fe40a362bc8587be15ab9b
+sha256  8477ad0416bb2af5cd8da6dde6c07ffe1a413492b7fe40a362bc8587be15ab9b
 
 depends_lib         path:lib/libavcodec.dylib:ffmpeg \
                     port:flac \

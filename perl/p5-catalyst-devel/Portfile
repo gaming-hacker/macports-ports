@@ -17,7 +17,7 @@ long_description    The Catalyst::Devel package includes a variety of \
 platforms           darwin
 
 checksums           rmd160  16c35f2b0879ccf6b503c67e62589e3e2de58d32 \
-                    sha256  bce371ba801c7d79eff3257e0af907cf62f140de968f0d63bf55be37d702a58a
+sha256  bce371ba801c7d79eff3257e0af907cf62f140de968f0d63bf55be37d702a58a
 
 if {${perl5.major} != ""} {
     depends_build-append \

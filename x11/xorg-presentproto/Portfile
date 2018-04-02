@@ -15,8 +15,8 @@ master_sites	xorg:individual/proto/
 
 distname	presentproto-${version}
 checksums           sha1    432371cdc464881029c3f39f9bf81cc80a484e54 \
-                    rmd160  93700b9828658624d74f751939d7deea062c7363 \
-                    sha256  812c7d48721f909a0f7a2cb1e91f6eead76159a36c4712f4579ca587552839ce
+rmd160  93700b9828658624d74f751939d7deea062c7363 \
+sha256  812c7d48721f909a0f7a2cb1e91f6eead76159a36c4712f4579ca587552839ce
 use_bzip2	yes
 
 livecheck.type  regex

@@ -23,7 +23,7 @@ long_description \
     geocoder, geocoder.us, Virtual Earth, and GeoNames.
 
 checksums           rmd160  ccc44f7883f44cb43be8ec7235a77162eecce56f \
-                    sha256  1b3e2fc98d19a718c6b95911c065b96339346c8c5994ad9dcf04e49945d23487 \
+sha256  1b3e2fc98d19a718c6b95911c065b96339346c8c5994ad9dcf04e49945d23487 \
 size    73376
 
 python.versions 27 36

@@ -26,4 +26,4 @@ long_description    Asciidoctor is a fast text processor and publishing \
                     and released under the MIT license.
 homepage            http://asciidoctor.org/
 checksums           rmd160  d96d9cf2f714734eec0e206bfdabddd4971e26dd \
-                    sha256  c4371c419306d69152809eb896c291ca09969dc26ca34be36f4eab82914fceca
+sha256  c4371c419306d69152809eb896c291ca09969dc26ca34be36f4eab82914fceca

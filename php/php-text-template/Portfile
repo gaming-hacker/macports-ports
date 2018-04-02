@@ -16,7 +16,7 @@ distname                ${cap_name}-${version}
 extract.suffix          .tgz
 platforms               darwin freebsd
 checksums               rmd160  6a627a1cb7637d7921b3114baaece377b6b0483c \
-                        sha256  905e9ed8f26cbe41b3c6ab5d0a8f760aee83c5abbccba48d27aa2975decf937b
+sha256  905e9ed8f26cbe41b3c6ab5d0a8f760aee83c5abbccba48d27aa2975decf937b
 description             simple template engine for PHP
 long_description \
     ${description}

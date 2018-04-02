@@ -28,5 +28,5 @@ destroot	{
 	xinstall -m 0444 ${worksrcpath}/endian.1 ${destroot}${prefix}/share/man/man1
 }
 checksums	md5 83407de0ce534c2be774caca4ae9230c \
-		sha1 e983fba4bb564d834d0147d08e439eacdb5a3fa5 \
-		rmd160 275bfdad00049030016c4828b121acfecd935ae1
+sha1 e983fba4bb564d834d0147d08e439eacdb5a3fa5 \
+rmd160 275bfdad00049030016c4828b121acfecd935ae1

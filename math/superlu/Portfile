@@ -18,7 +18,7 @@ homepage            http://crd.lbl.gov/~xiaoye/SuperLU
 master_sites        ${homepage}
 
 checksums           rmd160  2aae43b29da1301e70625d79d41453e5d5ed04e2 \
-                    sha256  28fb66d6107ee66248d5cf508c79de03d0621852a0ddeba7301801d3d859f463
+sha256  28fb66d6107ee66248d5cf508c79de03d0621852a0ddeba7301801d3d859f463
 
 distname            ${name}_${version}
 worksrcdir          SuperLU_${version}

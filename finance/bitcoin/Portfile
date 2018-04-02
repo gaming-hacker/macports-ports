@@ -21,7 +21,7 @@ homepage                https://bitcoin.org/
 master_sites            ${homepage}bin/bitcoin-core-${version}/
 
 checksums           rmd160  a11078445daad75bbe2032da307d292670eece55 \
-                    sha256  34de2dbe058c1f8b6464494468ebe2ff0422614203d292da1c6458d6f87342b4
+sha256  34de2dbe058c1f8b6464494468ebe2ff0422614203d292da1c6458d6f87342b4
 
 depends_build           port:libtool		\
                         port:pkgconfig		\

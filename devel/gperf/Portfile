@@ -17,8 +17,8 @@ homepage        https://www.gnu.org/software/gperf/gperf.html
 master_sites    gnu
 
 checksums       md5     9e251c0a618ad0824b51117d5d9db87e \
-                sha1    e3c0618c2d2e5586eda9498c867d5e4858a3b0e2 \
-                rmd160  0bccbfd60ef68a93b407d9ce157748475775e74b
+sha1    e3c0618c2d2e5586eda9498c867d5e4858a3b0e2 \
+rmd160  0bccbfd60ef68a93b407d9ce157748475775e74b
 
 installs_libs   no
 

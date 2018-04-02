@@ -22,7 +22,7 @@ long_description        Aspell is a spell checker designed to eventually replace
 master_sites	        gnu freebsd
 
 checksums               rmd160  6d4e29228e5c47cd4dbd780a73dbc1d2222e8266 \
-                        sha256  f52583a83a63633701c5f71db3dc40aab87b7f76b29723aeb27941eff42df6e1
+sha256  f52583a83a63633701c5f71db3dc40aab87b7f76b29723aeb27941eff42df6e1
 
 depends_lib             port:gettext port:texinfo port:ncurses
 # texinfo is also used in post-activate

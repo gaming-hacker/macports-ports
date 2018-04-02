@@ -24,7 +24,7 @@ master_sites            sourceforge:project/xine/xine-ui/${version}
 use_xz                  yes
 
 checksums               sha1    abbdb331898c14025ee6b132f63ab7d3c1b5b31e \
-                        rmd160  b5d27f112d2ebb861d18be684c17c5fe0e7b7fbd
+rmd160  b5d27f112d2ebb861d18be684c17c5fe0e7b7fbd
 
 depends_build           port:pkgconfig
 

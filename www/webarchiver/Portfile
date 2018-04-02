@@ -17,7 +17,7 @@ long_description \
     webarchiver is compatible with Mac OS X 10.4 (Safari 2.0).
 
 checksums       rmd160  55b138ce9ffe1e51099a64e41f13615775c524f8 \
-                sha256  1fd992ea04ddaf5c999fec01187483d838b99ea43f8f46a50f8c173a1d631617
+sha256  1fd992ea04ddaf5c999fec01187483d838b99ea43f8f46a50f8c173a1d631617
 
 destroot {
     xinstall ${worksrcpath}/build/Release/webarchiver ${destroot}${prefix}/bin

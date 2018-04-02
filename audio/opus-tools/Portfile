@@ -25,7 +25,7 @@ depends_lib     port:libopus port:libogg port:flac
 depends_build   port:pkgconfig
 
 checksums           rmd160  74eb1bbd31f1cc6a9ad706069f6341bc5d807762 \
-                    sha256  a2357532d19471b70666e0e0ec17d514246d8b3cb2eb168f68bb0f6fd372b28c
+sha256  a2357532d19471b70666e0e0ec17d514246d8b3cb2eb168f68bb0f6fd372b28c
 
 compiler.blacklist  gcc-4.0 *gcc-4.2 {clang < 300}
 

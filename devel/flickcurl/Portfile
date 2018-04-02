@@ -21,8 +21,8 @@ homepage        http://librdf.org/flickcurl/
 master_sites    http://download.dajobe.org/flickcurl/
 
 checksums       md5     7013a36656400dac398748a374c9104f \
-                sha1    547480030ce4f777bb35d98b43fe15ee3eeae0e0 \
-                rmd160  63aea2ef81b2a846a9ee63db99d08a08b8f2d1dd
+sha1    547480030ce4f777bb35d98b43fe15ee3eeae0e0 \
+rmd160  63aea2ef81b2a846a9ee63db99d08a08b8f2d1dd
 
 depends_build   port:pkgconfig
 depends_lib     port:curl \

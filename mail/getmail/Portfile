@@ -20,7 +20,7 @@ supported_archs     noarch
 homepage            http://pyropus.ca/software/getmail/
 master_sites        ${homepage}old-versions/
 checksums           rmd160  1ef1b1234f5bf435ea3acb5d7a10292befca1b61 \
-                    sha256  e0382ee59f1ec6ac2d6f01b71ca71db0826db0d267704b2bc2d97b9beda28350
+sha256  e0382ee59f1ec6ac2d6f01b71ca71db0826db0d267704b2bc2d97b9beda28350
 dist_subdir         ${name}
 patchfiles          patch-setup.py.diff
 

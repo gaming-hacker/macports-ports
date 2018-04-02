@@ -23,8 +23,8 @@ distname    webkitgtk-${version}
 dist_subdir webkit-gtk
 
 checksums           sha1    3b9ddbdc61e38b5c8fdd108e891b7db5fb12d55a \
-                    rmd160  19643cac3f53928757a7c3fe8ea33f144a581456 \
-                    sha256  bd1550b7f6e1a55f803efe7d64438163ff6c04f02186002cb81d0c090aac734f
+rmd160  19643cac3f53928757a7c3fe8ea33f144a581456 \
+sha256  bd1550b7f6e1a55f803efe7d64438163ff6c04f02186002cb81d0c090aac734f
 
 depends_lib \
         path:lib/pkgconfig/glib-2.0.pc:glib2 \

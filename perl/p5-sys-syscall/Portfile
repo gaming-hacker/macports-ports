@@ -17,4 +17,4 @@ description         Access system calls that Perl does not provide access to
 long_description    ${description}
 
 checksums           rmd160 84d6b4ee1174e074c8c93c21920f7c566600a417 \
-                    sha256 1e45f80c03b64faf2511ddd4053a04e7a8bcf653f1b9f67e4841c346002613e5
+sha256 1e45f80c03b64faf2511ddd4053a04e7a8bcf653f1b9f67e4841c346002613e5

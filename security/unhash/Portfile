@@ -16,8 +16,8 @@ long_description    UnHash is a program that tries a brute force attack \
 homepage            http://www.dxp2532.info/
 master_sites        ${homepage}/tools/
 checksums           md5     b0cce452ec2eb64c4e0a8ec1b04a32d5 \
-                    sha1    ea9638aa3e8969a674d3e3f67144bd47cfeffa53 \
-                    rmd160  4f6a896783073249b5b3b8021f61b57943146d93
+sha1    ea9638aa3e8969a674d3e3f67144bd47cfeffa53 \
+rmd160  4f6a896783073249b5b3b8021f61b57943146d93
 use_bzip2           yes
 
 depends_lib         path:lib/libssl.dylib:openssl

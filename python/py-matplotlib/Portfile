@@ -30,7 +30,7 @@ long_description    Matplotlib strives to produce publication quality 2D \
 homepage            http://matplotlib.org/
 
 checksums           rmd160  d2592fcf950dc098aa7e4c8135cdb67e7eaa2320 \
-                    sha256  5fc6217c88d832ac2433c16872328be6f14d342cb1090fcdedc2a4b28d40d47f
+sha256  5fc6217c88d832ac2433c16872328be6f14d342cb1090fcdedc2a4b28d40d47f
 
 if {${name} ne ${subport}} {
     depends_build-append \

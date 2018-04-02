@@ -12,4 +12,4 @@ description         PEAR PEAR_Delegator package
 long_description    ${description}
 
 checksums           rmd160  625cdc08321b0ba65c2c81aac3c94f75676da5ec \
-                    sha256  315cfbcf13adb8418425d1f504fd1a2d05e3ff8d847dcca2b1b8e62686f36fc0
+sha256  315cfbcf13adb8418425d1f504fd1a2d05e3ff8d847dcca2b1b8e62686f36fc0

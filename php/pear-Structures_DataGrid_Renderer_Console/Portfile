@@ -12,7 +12,7 @@ description         PEAR Structures_DataGrid_Renderer_Console package
 long_description    ${description}
 
 checksums           rmd160  b42e510234860b778eccc6a7d4d0fa6286022048 \
-                    sha256  da9017dee74628342c3daf617d5676681139348ea1c0c75e4e92218adea1ba10
+sha256  da9017dee74628342c3daf617d5676681139348ea1c0c75e4e92218adea1ba10
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-Console_Table

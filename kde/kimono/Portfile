@@ -20,7 +20,7 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  1a6c75c7c1d93a44bdceeb4539947873b5378dd5 \
-                    sha256  4e9e322a82d26fa9860dde38d9cc1a3e618aeced8762731d178ce1694cb7c19e
+sha256  4e9e322a82d26fa9860dde38d9cc1a3e618aeced8762731d178ce1694cb7c19e
 
 #Binaries do not link directly to openssl, nor use the ssl backend of kdelibs4,
 #nor links to libkimap or libmailtransport from kdepimlibs4

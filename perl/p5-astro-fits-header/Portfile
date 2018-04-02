@@ -20,7 +20,7 @@ long_description    The Astro::FITS::Header module can work with FITS Header blo
 platforms           darwin
 
 checksums           rmd160  b22bd854b91f059f7db59aceadf1a6240719cd6f \
-                    sha256  530d59ef0c0935f9862d187187a2d7583b12c639bb67db14f983322b161892d9
+sha256  530d59ef0c0935f9862d187187a2d7583b12c639bb67db14f983322b161892d9
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-astro-fits-cfitsio

@@ -16,7 +16,7 @@ depends_build       port:go
 depends_run         path:bin/gpg:gnupg2
 
 checksums           rmd160  7f9ecb009c41e5f7df881275227fb42571359c82 \
-                    sha256  9a9b6a5c2872e52663e04f6cd70a8f8479775aaccf896fbfca89b6df3ff4cabd
+sha256  9a9b6a5c2872e52663e04f6cd70a8f8479775aaccf896fbfca89b6df3ff4cabd
 
 use_configure       no
 

@@ -15,7 +15,7 @@ long_description \
     Use vim as a pager, for example as a replacement for less.
 
 checksums       rmd160  fc6e37da8b053cd6195215960118f3c755c16f60 \
-                sha256  ae824388315a7decf4265a24560494eb38692aae08edf18d237d7ac347bc3f1d
+sha256  ae824388315a7decf4265a24560494eb38692aae08edf18d237d7ac347bc3f1d
 
 depends_run     bin:vim:vim
 

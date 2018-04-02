@@ -34,7 +34,7 @@ long_description    Email::Abstract provides module writers with the ability \
                     picked up and used.
 
 checksums           rmd160  89a6f46bad7f35a1a24757f4baac9951eeef6d94 \
-                    sha256  fc7169acb6c43df7f005e7ef6ad08ee8ca6eb6796b5d1604593c997337cc8240
+sha256  fc7169acb6c43df7f005e7ef6ad08ee8ca6eb6796b5d1604593c997337cc8240
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-email-simple \

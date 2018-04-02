@@ -19,7 +19,7 @@ homepage            http://0x2a.at/site/projects/djvu2pdf/
 master_sites        ${homepage}
 
 checksums           sha1    eb34c8a6381673e531fbbd21619606e20fdb1d97 \
-                    rmd160  ab22a263df9f99b40cb3b896520e332d9b2b97ce
+rmd160  ab22a263df9f99b40cb3b896520e332d9b2b97ce
 
 depends_run         port:djvulibre \
                     port:ghostscript

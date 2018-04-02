@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	applewmproto-${version}
 checksums           md5     c1d50749c3ac5215a1a9425818e856c1 \
-                    sha1    71dd2374e745a7db7ae0e94410e55ba721683d10 \
-                    rmd160  b6ba0eb3e12d783d73d18934587acd1b11fb3989
+sha1    71dd2374e745a7db7ae0e94410e55ba721683d10 \
+rmd160  b6ba0eb3e12d783d73d18934587acd1b11fb3989
 use_bzip2	yes
 
 livecheck.type  regex

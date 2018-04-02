@@ -20,7 +20,7 @@ homepage        http://www.ece.uvic.ca/~mdadams/jasper/
 master_sites    ${homepage}software/
 
 checksums       rmd160 0b2b51b22b7421773255955de6bad27f9b434712 \
-                sha256 2a1f61e55afe8b4ce8115e1508c5d7cb314d56dfcc2dd323f90c072f88ccf57b
+sha256 2a1f61e55afe8b4ce8115e1508c5d7cb314d56dfcc2dd323f90c072f88ccf57b
 
 depends_lib     port:jpeg
 

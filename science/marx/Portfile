@@ -23,7 +23,7 @@ homepage            http://space.mit.edu/cxc/marx/
 master_sites        ftp://space.mit.edu/pub/cxc/marx/v5.3
 
 checksums           rmd160  658fd94bb01afe91ba843a03f56e1ca1a9993faf \
-                    sha256  24aa3734740336f05fef6eb52e1e543965e695e88e148345423f547bcce98b61
+sha256  24aa3734740336f05fef6eb52e1e543965e695e88e148345423f547bcce98b61
 
 distname            marx-dist-${version}
 worksrcdir          marx-${version}

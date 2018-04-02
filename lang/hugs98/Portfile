@@ -19,8 +19,8 @@ homepage            http://www.haskell.org/hugs/
 master_sites        http://cvs.haskell.org/Hugs/downloads/2006-09/
 
 checksums           md5     e03e0ad79750d037237c47ebe33fa20e \
-                    sha1    1464a80c715bc5f786ea5a4e4257b2ff0dc7e1e9 \
-                    rmd160  4a7e744360a29fbf94f5ac86ea559e80f12205a5
+sha1    1464a80c715bc5f786ea5a4e4257b2ff0dc7e1e9 \
+rmd160  4a7e744360a29fbf94f5ac86ea559e80f12205a5
 patchfiles          patch-configure.ac.diff
 
 depends_lib         port:libedit port:xorg-libX11

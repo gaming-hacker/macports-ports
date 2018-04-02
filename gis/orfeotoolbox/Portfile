@@ -30,7 +30,7 @@ distname            OTB-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  90ee3e47a79e2bee9525c1a9cbfa050a78e1c360 \
-                    sha256  9875484139b785163c0f0e19e76d458f598fd076b80d0d0aa0e3b59cafcad98e
+sha256  9875484139b785163c0f0e19e76d458f598fd076b80d0d0aa0e3b59cafcad98e
 
 depends_lib-append  port:tiff \
                     port:jpeg \

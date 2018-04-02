@@ -33,7 +33,7 @@ python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  f5c107635e36a199661dff16038fbfef8479b28c \
-                             sha256  7299d97e9c46b2e98f44f30da0cbbedbee41d85bcd7435b4e1c1cd811391f772
+sha256  7299d97e9c46b2e98f44f30da0cbbedbee41d85bcd7435b4e1c1cd811391f772
 
 if {$subport ne $name} {
 

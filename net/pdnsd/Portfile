@@ -17,7 +17,7 @@ homepage            http://members.home.nl/p.a.rombouts/pdnsd/
 master_sites        http://members.home.nl/p.a.rombouts/pdnsd/releases/
 distname            pdnsd-${version}-par
 checksums           rmd160  3ca151bac64c1d5ea3c4d400ab8a3993e6370145 \
-                    sha256  bb5835d0caa8c4b31679d6fd6a1a090b71bdf70950db3b1d0cea9cf9cb7e2a7b
+sha256  bb5835d0caa8c4b31679d6fd6a1a090b71bdf70950db3b1d0cea9cf9cb7e2a7b
 
 worksrcdir          ${name}-${version}
 

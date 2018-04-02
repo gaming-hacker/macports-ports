@@ -15,7 +15,7 @@ description             a Pure interface to the C++ dictionary containers
 long_description        ${name} provides ${description}.
 
 checksums               rmd160  edd27eea378ae97f444909e271307b5c30e313ad \
-                        sha256  5b894ae6dc574c7022258e2732bea649c82c959ec4d0be13fb5a3e8ba8488f28
+sha256  5b894ae6dc574c7022258e2732bea649c82c959ec4d0be13fb5a3e8ba8488f28
 
 depends_build-append    port:pkgconfig
 

@@ -19,7 +19,7 @@ depends_build       port:ocaml-camlp4
 depends_lib         port:ocaml port:ocaml-findlib port:ocaml-pcre port:libiconv
 
 checksums           rmd160  3044869456e099d755ace144266eed7aaeda4f22 \
-                    sha256  cfd4d224ec0b776ce462c5ba5cb6e4eae8cf397ede6d3b91add44a05a6520f49
+sha256  cfd4d224ec0b776ce462c5ba5cb6e4eae8cf397ede6d3b91add44a05a6520f49
 
 patchfiles          patch-setup.ml.diff
 post-patch {

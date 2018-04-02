@@ -19,7 +19,7 @@ master_sites        http://tecnocode.co.uk/downloads/${name}/
 use_xz              yes
 
 checksums           rmd160  6149afac719bc09e376ced421ee3fdc20ed8c0d7 \
-                    sha256  a6a34a011db142a98473b492039c84468d575f416689484f1f82a84927f17798
+sha256  a6a34a011db142a98473b492039c84468d575f416689484f1f82a84927f17798
 
 depends_build       port:pkgconfig
 

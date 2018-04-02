@@ -18,8 +18,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5 026ac9690fca1843e35d382ce3df1077 \
-                    sha1 9d6eb1e0532af58c2f15beaff531817b7f062f29 \
-                    rmd160 da311611120d8b60670ea7f38171f4ac96a2368f
+sha1 9d6eb1e0532af58c2f15beaff531817b7f062f29 \
+rmd160 da311611120d8b60670ea7f38171f4ac96a2368f
 
 depends_lib         port:libxml2 \
                     port:boost

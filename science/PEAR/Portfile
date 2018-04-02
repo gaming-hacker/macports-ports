@@ -20,7 +20,7 @@ master_sites        http://sco.h-its.org/exelixis/web/software/pear/files/
 distname            pear-${version}
 
 checksums           rmd160  c9703233b188527dcd281f6a2cc5f924a3a3828a \
-                    sha256  0fff7401d63141d9235aa28174113f346a039743c0c679b435f5230a32b28728
+sha256  0fff7401d63141d9235aa28174113f346a039743c0c679b435f5230a32b28728
 
 depends_lib         port:bzip2 \
                     port:zlib

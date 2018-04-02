@@ -12,4 +12,4 @@ description         PEAR Math_Polynomial package
 long_description    ${description}
 
 checksums           rmd160  f020c121a02c1ca41a4e112b5ec2dde151d26a26 \
-                    sha256  9d7d89c0059417133eab25ff4906e639dfa581a5fa46df51d24851bd12a1d265
+sha256  9d7d89c0059417133eab25ff4906e639dfa581a5fa46df51d24851bd12a1d265

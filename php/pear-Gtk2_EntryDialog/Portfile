@@ -13,4 +13,4 @@ description         PEAR Gtk2_EntryDialog package
 long_description    ${description}
 
 checksums           rmd160  8dc422bafaeefe37dadd752f5e4f8ba413eb9de4 \
-                    sha256  16b18fe137455f5e71c4e5bb0759e819e1302624fce2ebe622f8f78881b76c4f
+sha256  16b18fe137455f5e71c4e5bb0759e819e1302624fce2ebe622f8f78881b76c4f

@@ -23,7 +23,7 @@ master_sites        sourceforge:project/regina-rexx/regina-rexx/${version}/
 distname            Regina-REXX-${version}
 
 checksums           rmd160  45666e3304ad482cc543054ca9b6dcbbaee6d66d \
-                    sha256  5d13df26987e27f25e7779a2efa87a5775213beeda449a9efac59b57a5d5f3ee
+sha256  5d13df26987e27f25e7779a2efa87a5775213beeda449a9efac59b57a5d5f3ee
 
 patchfiles          patch-configure.diff
 

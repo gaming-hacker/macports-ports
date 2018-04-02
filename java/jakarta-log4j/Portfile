@@ -22,8 +22,8 @@ distname	apache-log4j-${version}
 master_sites	apache:logging/log4j/${version}
 
 checksums	md5     8e331a930d0b56280a1c66a00621b3a3 \
-		sha1    5d0547046eceedcd4bd9e816a93540dbf8f4ca93 \
-		rmd160  b80cd2d55e10322e7903ffb355d36c93daceece6
+sha1    5d0547046eceedcd4bd9e816a93540dbf8f4ca93 \
+rmd160  b80cd2d55e10322e7903ffb355d36c93daceece6
 
 depends_build	port:apache-ant \
 		bin:javac:kaffe

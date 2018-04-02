@@ -23,7 +23,7 @@ homepage            https://github.com/ludwigschwardt/python-gnureadline
 #distname            ${python.rootname}-${version}
 
 checksums           rmd160  e3b7deebaffdea0a35720bf3b49c1c94f73d13bf \
-                    sha256  2853f006fca2532ea48a9fadf594590b7b3bc43f494ad5c4d53652961eb38519
+sha256  2853f006fca2532ea48a9fadf594590b7b3bc43f494ad5c4d53652961eb38519
 
 if {${name} ne ${subport}} {
     depends_build-append \

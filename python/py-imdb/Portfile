@@ -20,7 +20,7 @@ master_sites        sourceforge:imdbpy
 distname            IMDbPY-${version}
 
 checksums           rmd160  7641b6743fdc82dc01d673a6fe8be737000b4b16 \
-                    sha256  38973f80f794238fded6ca1794d4832c9c039d33664f0da27fc5adf595c2588f
+sha256  38973f80f794238fded6ca1794d4832c9c039d33664f0da27fc5adf595c2588f
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

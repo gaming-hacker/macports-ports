@@ -13,4 +13,4 @@ description         PEAR MIME_Type package
 long_description    ${description}
 
 checksums           rmd160  63b9807797fb5aa51cb19bdeb3adabcfd44a1401 \
-                    sha256  7e2446c91e04ba90dcc7cc8ba37c25c06ed4ee74b761db0ee202435facbfc46d
+sha256  7e2446c91e04ba90dcc7cc8ba37c25c06ed4ee74b761db0ee202435facbfc46d

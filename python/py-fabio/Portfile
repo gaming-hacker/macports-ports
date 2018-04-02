@@ -24,7 +24,7 @@ long_description \
 distname            fabio-${version}
 
 checksums           rmd160  346d9401c75ff63d71f606ba2938d444c5aa8c2a \
-                    sha256  477fd1fb2325da12f09fe9d59ebab2d010e94908f6a48b4ff3dc755b21e5aeea
+sha256  477fd1fb2325da12f09fe9d59ebab2d010e94908f6a48b4ff3dc755b21e5aeea
 
 universal_variant   no
 

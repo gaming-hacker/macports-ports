@@ -14,4 +14,4 @@ homepage            http://quotatool.ekenberg.se/
 master_sites        http://quotatool.ekenberg.se/
 
 checksums           rmd160 6202d7ec898de8f799e1ac1830fb8c1005d15f8e \
-                    sha256 e53adc480d54ae873d160dc0e88d78095f95d9131e528749fd982245513ea090
+sha256 e53adc480d54ae873d160dc0e88d78095f95d9131e528749fd982245513ea090

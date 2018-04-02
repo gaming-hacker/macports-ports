@@ -19,7 +19,7 @@ long_description    This module sends commands directly to a Selenium \
                     can automatically control any supported browser.
 
 checksums           rmd160  debdaff541c13aa8936069ad37c17511206474cf \
-                    sha256  ea93d97f6c0be0232f8b07ac0584dc3cd13e7a191dd03cca639ade02f44b3b69
+sha256  ea93d97f6c0be0232f8b07ac0584dc3cd13e7a191dd03cca639ade02f44b3b69
 
 platforms           darwin
 supported_archs     noarch

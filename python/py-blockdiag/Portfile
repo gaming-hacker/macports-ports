@@ -24,7 +24,7 @@ master_sites        pypi:b/blockdiag/
 distname            blockdiag-${version}
 
 checksums           rmd160  2fd5990df67e1a02ccd797e6a04e2c8c136ecd70 \
-                    sha256  5ea3501fca0ca40fbacccc6f4ca177750e4b610009e021faa4868c0f6480ae8b
+sha256  5ea3501fca0ca40fbacccc6f4ca177750e4b610009e021faa4868c0f6480ae8b
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

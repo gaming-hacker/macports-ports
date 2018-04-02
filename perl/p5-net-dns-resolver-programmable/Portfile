@@ -21,7 +21,7 @@ long_description    Net::DNS::Resolver::Programmable is a \
                     generating them on the fly.
 
 checksums           rmd160  890fa87a7b719ce698895edaec12f36bac2c32ca \
-                    sha256  8080a2ab776629585911af1179bdb7c4dc2bebfd4b5efd77b11d1dac62454bf8
+sha256  8080a2ab776629585911af1179bdb7c4dc2bebfd4b5efd77b11d1dac62454bf8
 
 if {${perl5.major} != ""} {
     depends_lib-append \

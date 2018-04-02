@@ -15,7 +15,7 @@ description         PEAR TCPDF package
 long_description    ${description}
 
 checksums           rmd160  c903048f7e00510ec00b261aa66863e7beb82382 \
-                    sha256  6e68203e18c4375295afc950a52200206cc02d60e34b48c58aac1da0f2578a3a \
+sha256  6e68203e18c4375295afc950a52200206cc02d60e34b48c58aac1da0f2578a3a \
 size    17007737
 
 use_configure       no

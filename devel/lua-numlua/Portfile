@@ -22,8 +22,8 @@ distfiles               ${archive_hash}.zip
 worksrcdir              numlua-${archive_hash}
 
 checksums               md5     acfce2eb1c0c5f1942b3a9917893c17c \
-                        sha1    2fe543baedc9e62112a2df7b0dfbf8e8b304658d \
-                        rmd160  df58135379ce8f01e0b454a8073257a01f23a03e
+sha1    2fe543baedc9e62112a2df7b0dfbf8e8b304658d \
+rmd160  df58135379ce8f01e0b454a8073257a01f23a03e
 
 use_configure           no
 

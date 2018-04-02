@@ -15,7 +15,7 @@ long_description    This module contains rules for converting HTML into Kwiki ma
                     See HTML::WikiConverter for additional usage details.
 
 checksums           rmd160  363347a089357c6e4c34297968678a3876101ce8 \
-                    sha256  9e148809d7e1b91d80caa4f848932de5852ed2c687cada349c2f3db7f9fec011
+sha256  9e148809d7e1b91d80caa4f848932de5852ed2c687cada349c2f3db7f9fec011
 
 platforms           darwin
 supported_archs     noarch

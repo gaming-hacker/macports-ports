@@ -17,7 +17,7 @@ long_description        ${name} provides ${description}. This module allows \
                         interpreter, and invoke Pure callbacks from Tcl/Tk.
 
 checksums               rmd160  c56c84d90a988ca3b68391d09908a5f401344e22 \
-                        sha256  3b6e97e2d723d5a05bf25f4ac62068ac17a1fd81db03e1986366097bf071a516
+sha256  3b6e97e2d723d5a05bf25f4ac62068ac17a1fd81db03e1986366097bf071a516
 
 depends_build-append    port:pkgconfig
 

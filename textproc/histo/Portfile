@@ -15,7 +15,7 @@ platforms           darwin
 license             MIT
 
 checksums           rmd160  ad044b5aa11230e9184ee21538735168e4221fdf \
-                    sha256  1e9d3ab4492a43c8989d306f4032d55329a7d03f20a5dd344ff7c71c5886ae00
+sha256  1e9d3ab4492a43c8989d306f4032d55329a7d03f20a5dd344ff7c71c5886ae00
 
 dist_subdir   ${name}/${version}_1
 

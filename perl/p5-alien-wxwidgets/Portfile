@@ -19,7 +19,7 @@ description         Alien::wxWidgets - building, finding and using wxWidgets bin
 long_description    ${description}
 
 checksums           rmd160  d3f3bd5f0cc3815ea7e80939506bfc7c16c01a48 \
-                    sha256  53224e4bbbefff4cf7b63ed9a62963893b9ffd4965d70d96710348f8676de249
+sha256  53224e4bbbefff4cf7b63ed9a62963893b9ffd4965d70d96710348f8676de249
 
 if {${perl5.major} != ""} {
     wxWidgets.use       wxWidgets-3.0

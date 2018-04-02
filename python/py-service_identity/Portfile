@@ -26,7 +26,7 @@ master_sites        pypi:de/2a/cab6e30be82c8fcd2339ef618036720eda954cf05daef514e
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  8e2d4645170c5d47251c182cc77351004c3635de \
-                    sha256  4001fbb3da19e0df22c47a06d29681a398473af4aa9d745eca525b3b2c2302ab
+sha256  4001fbb3da19e0df22c47a06d29681a398473af4aa9d745eca525b3b2c2302ab
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools

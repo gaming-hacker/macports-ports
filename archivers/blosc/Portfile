@@ -25,4 +25,4 @@ long_description    Blosc is a high performance compressor optimized \
 homepage            http://www.blosc.org/
 
 checksums           rmd160  25039b2408d0da47a7eb720f3229c942e9d53f51 \
-                    sha256  4b732a98ef5e42cebd1acca6928b058dc6200551e5cf1a39810fb2abdea0f2b2
+sha256  4b732a98ef5e42cebd1acca6928b058dc6200551e5cf1a39810fb2abdea0f2b2

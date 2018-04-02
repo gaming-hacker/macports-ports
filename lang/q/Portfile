@@ -39,9 +39,9 @@ depends_lib \
     port:zlib
 
 checksums \
-    md5 18ca956aad555b54efacc0de5b2d79bd \
-    sha1 f255c80cee5b09d62b38e72785d12649901c0933 \
-    rmd160 61a7eba9857ae2c7c553625a423c62fd737836e4
+md5 18ca956aad555b54efacc0de5b2d79bd \
+sha1 f255c80cee5b09d62b38e72785d12649901c0933 \
+rmd160 61a7eba9857ae2c7c553625a423c62fd737836e4
 
 patchfiles \
     patch-readline-6.3.diff \

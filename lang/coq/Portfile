@@ -22,7 +22,7 @@ depends_lib         port:ocaml \
 depends_build       port:ocaml-findlib
 
 checksums           rmd160  470a033efe6777085ca2df848c393046a90b9296 \
-                    sha256  3ae6a5c6dee2e12abb8aaf9a75543fab75418ded9ac046c04bf19d37e1b80450
+sha256  3ae6a5c6dee2e12abb8aaf9a75543fab75418ded9ac046c04bf19d37e1b80450
 
 configure.pre_args  -prefix ${prefix}
 configure.args      -emacslib ${prefix}/share/emacs/site-lisp/ \

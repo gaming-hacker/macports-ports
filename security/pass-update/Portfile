@@ -15,7 +15,7 @@ license             GPL-2+
 depends_lib         port:pass
 
 checksums           rmd160  f669bf26394e0711a4ad9dff7c121b72241ff00e \
-                    sha256  e3d15bdc1d9dc239aa71c17236934ce1510c859a467fe7f7b4591e59dfe3705c
+sha256  e3d15bdc1d9dc239aa71c17236934ce1510c859a467fe7f7b4591e59dfe3705c
 
 # uses gnu install for destroot
 depends_build-append port:coreutils

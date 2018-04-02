@@ -26,8 +26,8 @@ master_sites        ${homepage}ftp/python/${version}/
 distname            Python-${version}
 use_xz              yes
 checksums           md5 9f49654a4d6f733ff3284ab9d227e9fd \
-                    rmd160 213ced5e09552468b1efc855727b743a3ab30e8b \
-                    sha256 f434053ba1b5c8a5cc597e966ead3c5143012af827fd3f0697d21450bb8d87a6
+rmd160 213ced5e09552468b1efc855727b743a3ab30e8b \
+sha256 f434053ba1b5c8a5cc597e966ead3c5143012af827fd3f0697d21450bb8d87a6
 
 patchfiles          patch-setup.py.diff \
                     patch-Lib-cgi.py.diff \

@@ -21,8 +21,8 @@ long_description    RubyGems is the Ruby standard for publishing and \
                     managing third party libraries.
 
 checksums           md5     e85cfadd025ff6ab689375adbf344bbe \
-                    sha1    68ad2970963db9893b76acc8777be72a77c4bee4 \
-                    rmd160  2ea8e16d1535216045798258603d5f2f9e3dbfea
+sha1    68ad2970963db9893b76acc8777be72a77c4bee4 \
+rmd160  2ea8e16d1535216045798258603d5f2f9e3dbfea
 
 patchfiles          patch-lib_rubygems_commands_setup_command.rb.diff
 

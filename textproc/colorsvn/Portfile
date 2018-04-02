@@ -20,7 +20,7 @@ homepage            http://colorsvn.tigris.org
 master_sites        http://colorsvn.tigris.org/files/documents/4414/49311
 
 checksums           rmd160  45cdbf3c4af5a54e78de6971c3428d9196615cf7 \
-                    sha256  db58d5b8f60f6d4def14f8f102ff137b87401257680c1acf2bce5680b801394e
+sha256  db58d5b8f60f6d4def14f8f102ff137b87401257680c1acf2bce5680b801394e
 
 post-patch {
     reinplace {/^confdir=/s|/etc|$(sysconfdir)|} $worksrcpath/Makefile.in

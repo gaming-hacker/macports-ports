@@ -22,7 +22,7 @@ supported_archs     noarch
 master_sites        ${homepage}
 
 checksums           rmd160  8811f2e373c887a55d9c51d2849499a8b10481d4 \
-                    sha256  43ffe3bd19cafbc4f24c53c6d80810297ebfbf9a72b693e58e59775813ee66ec
+sha256  43ffe3bd19cafbc4f24c53c6d80810297ebfbf9a72b693e58e59775813ee66ec
 
 # Per docs, this doesn't work with any python3
 # The latest version supposedly works with python3 - need to test

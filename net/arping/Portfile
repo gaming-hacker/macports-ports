@@ -15,7 +15,7 @@ long_description    Arping is a util to find out if a specific IP address on \
 homepage            http://www.habets.pp.se/synscan/programs.php?prog=arping
 master_sites        http://www.habets.pp.se/synscan/files/
 checksums           rmd160  d15907115377633e0d852c1b257141cfd2d51bc5 \
-                    sha256  36e97b58076dcd478cf732682e828ec00026dd8ec8f63201d147960be25e6616
+sha256  36e97b58076dcd478cf732682e828ec00026dd8ec8f63201d147960be25e6616
 
 depends_lib         port:libnet11 \
                     lib:libpcap.DP:libpcap

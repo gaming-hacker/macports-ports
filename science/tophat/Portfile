@@ -20,7 +20,7 @@ homepage            http://ccb.jhu.edu/software/tophat/
 master_sites        ${homepage}downloads/
 
 checksums           sha1        0e697b16c64fa12180b93ecf87fdf25f722973a5 \
-                    rmd160      da62ddc6b2bf8deeda19a95965b1ff2cfd4b95b2
+rmd160      da62ddc6b2bf8deeda19a95965b1ff2cfd4b95b2
 
 use_parallel_build  no
 

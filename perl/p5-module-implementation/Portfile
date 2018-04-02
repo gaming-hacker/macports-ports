@@ -20,7 +20,7 @@ long_description    This module abstracts out the process of choosing one of sev
                     case of needing to provide multiple implementations.
 
 checksums           rmd160  5163bc0a3d166559ca51460cac909d7b885becfe \
-                    sha256  c15f1a12f0c2130c9efff3c2e1afe5887b08ccd033bd132186d1e7d5087fd66d
+sha256  c15f1a12f0c2130c9efff3c2e1afe5887b08ccd033bd132186d1e7d5087fd66d
 
 if {${perl5.major} != ""} {
     depends_build-append    port:p${perl5.major}-test-requires \

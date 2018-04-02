@@ -20,7 +20,7 @@ master_sites        pypi:p/pylibmc/
 distname            pylibmc-${version}
 
 checksums           rmd160  24ff2977e97eef5446dbc491ada668baa02c5ff3 \
-                    sha256  ecba261859c3e1ba3365389cb4f4dfffb7e02120a9f57a288cacf2f42c45cdd6
+sha256  ecba261859c3e1ba3365389cb4f4dfffb7e02120a9f57a288cacf2f42c45cdd6
 
 python.versions 27 36
 

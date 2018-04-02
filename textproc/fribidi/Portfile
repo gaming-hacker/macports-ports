@@ -20,7 +20,7 @@ long_description \
 homepage        http://fribidi.org/
 
 checksums       sha256  281298e666b2ba2a42931686a6dcc3b7dbfa2187e4c9b8c40ce9eab61ad0c387 \
-                rmd160  49a000ea0ca7f93328f063ff26488a45a59e897a
+rmd160  49a000ea0ca7f93328f063ff26488a45a59e897a
 
 depends_build   port:pkgconfig
 

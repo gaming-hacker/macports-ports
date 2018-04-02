@@ -14,7 +14,7 @@ homepage            http://extunix.forge.ocamlcore.org/
 master_sites        https://forge.ocamlcore.org/frs/download.php/1403/
 
 checksums           rmd160  77a41cf683358f3fc3790f1a6dc00b8c13af0572 \
-                    sha256  1d9cd1c05d0a8d23b85dbc05bc4aa003c6693d266b3611a4fe56f4beebb723ee
+sha256  1d9cd1c05d0a8d23b85dbc05bc4aa003c6693d266b3611a4fe56f4beebb723ee
 
 use_oasis           yes
 use_oasis_doc       yes

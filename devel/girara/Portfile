@@ -27,7 +27,7 @@ homepage            http://pwmt.org/projects/${name}/
 master_sites        ${homepage}download/
 
 checksums           rmd160  24ac2ce791459c879353e58edc047f903b2c12c0 \
-                    sha256  98e6a343298ae46869c990bc6e0732555e19af2e386cdc1a911f109b1c5c32e5
+sha256  98e6a343298ae46869c990bc6e0732555e19af2e386cdc1a911f109b1c5c32e5
 
 depends_build       port:pkgconfig
 

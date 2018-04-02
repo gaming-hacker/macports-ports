@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        kde:stable/${version}/src/
 use_xz              yes
 checksums           rmd160  79b4f37c1f435c6a31120377d64f88fccb82c725 \
-                    sha256  cd2cb429d1d643b5ff0e384cf3a89e4fa29a2b7dd8cdfae0da5793758d87cc06
+sha256  cd2cb429d1d643b5ff0e384cf3a89e4fa29a2b7dd8cdfae0da5793758d87cc06
 
 depends_lib-append  port:kdelibs4 \
                     port:libmusicbrainz3

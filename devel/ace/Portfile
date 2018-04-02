@@ -39,7 +39,7 @@ patchfiles          patch-ace-config.h.diff \
                     patch-include-makeinclude-platform_macros.GNU.diff
 
 checksums           rmd160  e4f4645f8561e180811950ea0261eba625e1e51c \
-                    sha256  004198f7a07fc2938986399d654547ff3811936b16202fdab59b3beb365dd82f
+sha256  004198f7a07fc2938986399d654547ff3811936b16202fdab59b3beb365dd82f
 
 set os.name "sierra"
 array set os.names {

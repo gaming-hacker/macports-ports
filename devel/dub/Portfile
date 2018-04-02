@@ -18,7 +18,7 @@ depends_lib         port:dmd \
                     port:dmd-tools
 
 checksums           rmd160  d6b6e0654db3d1f63d1aaa360c87fad6f3db774a \
-                    sha256  d68f7130291261dbe3585d24481f201f593c176859d67a32177eaff1b475dfa2
+sha256  d68f7130291261dbe3585d24481f201f593c176859d67a32177eaff1b475dfa2
 
 use_configure       no
 

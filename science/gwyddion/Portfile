@@ -21,7 +21,7 @@ use_xz              yes
 use_parallel_build  yes
 
 checksums           sha256  a511b528bfc0fbd53d0d867ece37ce4bf84c0989f75e535631ce60cff77b48ad \
-                    rmd160  4f4e53e625aff385ee226ac392c420e614236657
+rmd160  4f4e53e625aff385ee226ac392c420e614236657
 
 depends_build       port:pkgconfig
 

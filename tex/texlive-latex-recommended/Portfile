@@ -14,14 +14,14 @@ description         TeX Live: LaTeX recommended packages
 long_description    A collection of recommended add-on packages for LaTeX which have widespread use.
 
 checksums           texlive-latex-recommended-44369-run.tar.xz \
-                    rmd160  73017bb87029f72b832ab118710dc3666691f3b8 \
-                    sha256  aaad6f30466731f8c1bfc0e42c285f99be62b1b4faddfb98f78508a0e47a6346 \
+rmd160  73017bb87029f72b832ab118710dc3666691f3b8 \
+sha256  aaad6f30466731f8c1bfc0e42c285f99be62b1b4faddfb98f78508a0e47a6346 \
                     texlive-latex-recommended-44369-doc.tar.xz \
-                    rmd160  1078dc9cd1a4a4adc27411c0d12f917cc8ca0afe \
-                    sha256  d699a8d0faaa88ff34db6153724033a097a3a6e41fb808e4d9f61e1d5a36882d \
+rmd160  1078dc9cd1a4a4adc27411c0d12f917cc8ca0afe \
+sha256  d699a8d0faaa88ff34db6153724033a097a3a6e41fb808e4d9f61e1d5a36882d \
                     texlive-latex-recommended-44369-src.tar.xz \
-                    rmd160  2f09f22400870e06a3238dad2ce23ff304462ab2 \
-                    sha256  9abf98b5fe8dcb77ffac69b1bcc87106d89efef3d0bfa01fb327ed143de9cd4c
+rmd160  2f09f22400870e06a3238dad2ce23ff304462ab2 \
+sha256  9abf98b5fe8dcb77ffac69b1bcc87106d89efef3d0bfa01fb327ed143de9cd4c
 
 depends_lib         port:texlive-latex
 

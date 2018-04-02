@@ -14,8 +14,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-yaml/releases/download/v${version}
 
 checksums           md5 54865478262f13fd541be96381c867f1 \
-                    sha1 49002afeec542abdefcea3555b365eb86ee5f112 \
-                    rmd160 be376d01dccb818237702fb89edd4b24ce335be0
+sha1 49002afeec542abdefcea3555b365eb86ee5f112 \
+rmd160 be376d01dccb818237702fb89edd4b24ce335be0
 
 depends_lib         port:qore \
                     port:libyaml

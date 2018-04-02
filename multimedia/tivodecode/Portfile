@@ -21,7 +21,7 @@ long_description	This software converts a .TiVo file (produced   \
 homepage	http://tivodecode.sourceforge.net/
 master_sites	sourceforge:${name}
 checksums	md5 cf82385db3e0d708ebdbe5055b8ae7ee \
-		sha1 efabe4aee461e6da90ddc52abe9ae025c4185032
+sha1 efabe4aee461e6da90ddc52abe9ae025c4185032
 
 use_configure	yes
 configure.args	--datadir=${prefix}/share

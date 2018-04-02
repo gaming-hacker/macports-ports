@@ -26,8 +26,8 @@ set curl_distfile               ${distfiles}
 distfiles                       ${curl_distfile}:curl
 
 checksums                       ${curl_distfile} \
-                                rmd160  e499482a354d862c82aa4ddd1f7e149f0b61cbf2 \
-                                sha256  e44eaabdf916407585bf5c7939ff1161e6242b6b015d3f2f5b758b2a330461fc \
+rmd160  e499482a354d862c82aa4ddd1f7e149f0b61cbf2 \
+sha256  e44eaabdf916407585bf5c7939ff1161e6242b6b015d3f2f5b758b2a330461fc \
 size    2318988
 
 if {${name} eq ${subport}} {
@@ -238,8 +238,8 @@ subport curl-ca-bundle {
     distfiles-append            ${certdata_distfile}:certdata
 
     checksums-append            ${certdata_distfile} \
-                                rmd160  534aab36b62694cac4b7b10c6f5acf9ed9803354 \
-                                sha256  f8eb21750d06183174abed84da8e9c99f18a0c785775ff3d0a7762d36d8fc74e \
+rmd160  534aab36b62694cac4b7b10c6f5acf9ed9803354 \
+sha256  f8eb21750d06183174abed84da8e9c99f18a0c785775ff3d0a7762d36d8fc74e \
 size    194520
 
     extract.only                ${curl_distfile}

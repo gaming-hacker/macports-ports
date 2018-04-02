@@ -24,7 +24,7 @@ use_xz              yes
 distname            ${name}-library-${version}
 
 checksums           rmd160  f7b2ebdc8635c9568abc9826b2a23f8c607c6d35 \
-                    sha256  b5c036a3d2fc2fe5f2d57dcd4d7c523a6df146ab7b44bc789f42004b058d72fd
+sha256  b5c036a3d2fc2fe5f2d57dcd4d7c523a6df146ab7b44bc789f42004b058d72fd
 
 use_configure       no
 

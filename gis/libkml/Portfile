@@ -25,8 +25,8 @@ master_sites            googlecode
 # https://github.com/libkml/libkml
 
 checksums               md5     25d534437f971bf55a945608e39fea79 \
-                        sha1    3fa5acdc2b2185d7f0316d205002b7162f079894 \
-                        rmd160  f73ed3ce47d38c5d45bd04c9498a847b24c572da
+sha1    3fa5acdc2b2185d7f0316d205002b7162f079894 \
+rmd160  f73ed3ce47d38c5d45bd04c9498a847b24c572da
 
 # If curl is found, the networking examples will be built. There is no
 # configure flag to turn this off, but the examples are not installed.

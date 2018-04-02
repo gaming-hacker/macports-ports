@@ -32,11 +32,11 @@ distfiles       ${distname}.tar.gz:nsf \
                 tcl${tclv}-src.tar.gz:tcl
 
 checksums       ${distname}.tar.gz \
-                    sha1    00ed655eac33a85128094f9049166eea37569b68 \
-                    rmd160  7e2c738765c61cb73f1f80d070e2581cc27e1a62 \
+sha1    00ed655eac33a85128094f9049166eea37569b68 \
+rmd160  7e2c738765c61cb73f1f80d070e2581cc27e1a62 \
                 tcl${tclv}-src.tar.gz \
-                    sha1    169dd1589cad62c9fac4257c113db245da502cd0 \
-                    rmd160  2386a69eb841f8af51c1b124f68e0b812a225cca
+sha1    169dd1589cad62c9fac4257c113db245da502cd0 \
+rmd160  2386a69eb841f8af51c1b124f68e0b812a225cca
 
 depends_lib     port:tcl
 

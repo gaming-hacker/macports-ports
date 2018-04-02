@@ -20,8 +20,8 @@ use_bzip2           yes
 master_sites        https://mesa.freedesktop.org/archive/demos/${version}/
 
 checksums           sha1    468a8f24938ab07e2e31828cf961515371d45b56 \
-                    rmd160  97b6a484fdbd94421519fca6001db12fb3f8f3e5 \
-                    sha256  c173154bbd0d5fb53d732471984def42fb1b14ac85fcb834138fb9518b3e0bef
+rmd160  97b6a484fdbd94421519fca6001db12fb3f8f3e5 \
+sha256  c173154bbd0d5fb53d732471984def42fb1b14ac85fcb834138fb9518b3e0bef
 
 depends_lib \
 	port:mesa

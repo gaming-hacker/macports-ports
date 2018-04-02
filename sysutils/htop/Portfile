@@ -5,7 +5,7 @@ PortGroup           github 1.0
 
 github.setup        hishamhm htop 2.1.0
 checksums           rmd160  4d0e8c70a5089349722e3d209c2478f571064dec \
-                    sha256  e4c4d5a602134c07fc953521db2ec32bb151d31126f94a5aadeae3bc01eb900a \
+sha256  e4c4d5a602134c07fc953521db2ec32bb151d31126f94a5aadeae3bc01eb900a \
 size    160429
 
 epoch               1

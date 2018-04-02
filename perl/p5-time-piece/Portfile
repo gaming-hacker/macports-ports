@@ -14,7 +14,7 @@ description         Object-oriented time objects
 long_description    ${description}
 
 checksums           rmd160  eb515d0844bf4e66f10cf52a3b6808a55aa9b07c \
-                    sha256  d7485ea520f913c932032a37ea1d4611ac34bbfbef10a00d392748f744adeabd \
+sha256  d7485ea520f913c932032a37ea1d4611ac34bbfbef10a00d392748f744adeabd \
 size    34475
 
 platforms           darwin

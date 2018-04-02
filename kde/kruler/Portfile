@@ -19,7 +19,7 @@ use_xz              yes
 distname            kruler-${version}
 
 checksums           rmd160  49ec0c5edbe3b859f0f3146732ab9500abe84f69 \
-                    sha256  4424d0743e2e8309c2febf2a2a2b42b0e4930e5dbad9471385e48357e3236521
+sha256  4424d0743e2e8309c2febf2a2a2b42b0e4930e5dbad9471385e48357e3236521
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

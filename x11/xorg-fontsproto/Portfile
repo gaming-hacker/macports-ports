@@ -15,8 +15,8 @@ master_sites	 xorg:individual/proto/
 
 distname	fontsproto-${version}
 checksums           sha1    28c108bd6438c332122c10871c1fc6415591755f \
-                    rmd160  caa89b1818cc4ee5bd202faa25224aa6c89db1ed \
-                    sha256  259046b0dd9130825c4a4c479ba3591d6d0f17a33f54e294b56478729a6e5ab8
+rmd160  caa89b1818cc4ee5bd202faa25224aa6c89db1ed \
+sha256  259046b0dd9130825c4a4c479ba3591d6d0f17a33f54e294b56478729a6e5ab8
 use_bzip2	yes
 
 configure.args \

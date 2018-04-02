@@ -25,8 +25,8 @@ extract.suffix  .jar
 extract.only
 
 checksums       md5     ee7dc3fb20cf3e9efd871e297c0d532b \
-                sha1    a571944d1c199ca7da187e163f0af3183e2a3be5 \
-                rmd160  67b48edfa6c7b96351413268fa9ae5f4bd7717d1
+sha1    a571944d1c199ca7da187e163f0af3183e2a3be5 \
+rmd160  67b48edfa6c7b96351413268fa9ae5f4bd7717d1
 
 use_configure   no
 

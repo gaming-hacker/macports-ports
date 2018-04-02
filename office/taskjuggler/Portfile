@@ -21,7 +21,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  ce4ccc93c137edb2d8a7b5bf002ffb4b050f5c0d \
-                    sha256  42f2e81470be9b2486fc074ba6ff04180258f462fed5c46cba871b7518cd0465
+sha256  42f2e81470be9b2486fc074ba6ff04180258f462fed5c46cba871b7518cd0465
 
 depends_lib         port:ruby${ruby.suffix} \
                     port:rb${ruby.suffix}-mail \

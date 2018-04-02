@@ -12,4 +12,4 @@ description         PEAR Message package
 long_description    ${description}
 
 checksums           rmd160  c167cf9ac61256af6fa29d2eab23caf842cffe79 \
-                    sha256  b455d2755a234e2483bb155b2ac3a4d5f471a77c37bbac0279b121c39c82bcd7
+sha256  b455d2755a234e2483bb155b2ac3a4d5f471a77c37bbac0279b121c39c82bcd7

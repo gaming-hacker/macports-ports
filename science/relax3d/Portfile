@@ -24,7 +24,7 @@ master_sites        ${homepage}/macports
 use_bzip2           yes
 
 checksums           rmd160  10603dd3ecb0fa4ba743dc75db6accc566327caf \
-                    sha256  ed9ad14472c4bf794c2023f480c32bb09f96cc23f46cf6efc2a066ae7f2cf2ce
+sha256  ed9ad14472c4bf794c2023f480c32bb09f96cc23f46cf6efc2a066ae7f2cf2ce
 
 depends_lib-append  port:fftw-3-single \
                     port:gmt4 \

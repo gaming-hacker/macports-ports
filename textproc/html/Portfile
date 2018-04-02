@@ -17,8 +17,8 @@ long_description SGML DTDs for HTML level 0, 1, 2, 3.2, and 4.0 as \
 master_sites    freebsd
 
 checksums	md5 57a45bf82f0a3694d59d889b0d0ad71c \
-		sha1 621c8b602f4190bc33007d32b91b8db977ab3641 \
-		rmd160 24f90ce8caec8137b03e31faef54a482e1a5f0cb
+sha1 621c8b602f4190bc33007d32b91b8db977ab3641 \
+rmd160 24f90ce8caec8137b03e31faef54a482e1a5f0cb
 
 depends_run	bin:mkcatalog:mkcatalog
 

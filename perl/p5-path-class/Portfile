@@ -16,6 +16,6 @@ long_description    Path::Class is a module for manipulation of file and \
 platforms           darwin
 
 checksums           rmd160  9e75acb15e00ae7b2a3e5e3c8dde584f08faba7b \
-                    sha256  654781948602386f2cb2e4473a739f17dc6953d92aabc2498a4ca2561bc248ce
+sha256  654781948602386f2cb2e4473a739f17dc6953d92aabc2498a4ca2561bc248ce
 
 perl5.use_module_build

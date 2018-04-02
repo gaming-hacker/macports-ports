@@ -19,4 +19,4 @@ use_configure       no
 destroot.args       PREFIX=${prefix}
 
 checksums           rmd160  cf4fc695b8f3ef9a4878919ea1dad8c53e81481a \
-                    sha256  687a6bffd89d29959d876d363e04ab1e8c33766ed8db5afc76f1267d8a298366
+sha256  687a6bffd89d29959d876d363e04ab1e8c33766ed8db5afc76f1267d8a298366

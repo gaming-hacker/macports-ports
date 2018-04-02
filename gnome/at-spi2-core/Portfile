@@ -8,7 +8,7 @@ name                at-spi2-core
 version             2.26.2
 
 checksums           rmd160  8b4da05431a7c764701a36d8be4753ff0dc17574 \
-                    sha256  c80e0cdf5e3d713400315b63c7deffa561032a6c37289211d8afcfaa267c2615
+sha256  c80e0cdf5e3d713400315b63c7deffa561032a6c37289211d8afcfaa267c2615
 
 license             LGPL
 set branch          [join [lrange [split ${version} .] 0 1] .]

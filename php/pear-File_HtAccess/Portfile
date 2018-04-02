@@ -12,4 +12,4 @@ description         PEAR File_HtAccess package
 long_description    ${description}
 
 checksums           rmd160  c9382ca0ca5f5018109604c9f75ad6faa3fe4e1a \
-                    sha256  a62a04f6dab62f45a24feb7d0ad3f8e2616cb8e8765e684a6a8c07a4cb1e4885
+sha256  a62a04f6dab62f45a24feb7d0ad3f8e2616cb8e8765e684a6a8c07a4cb1e4885

@@ -22,7 +22,7 @@ universal_variant   no
 use_zip             yes
 distfiles           dmd.${version}.osx${extract.suffix}
 checksums           rmd160 9f8cc6bb1b4171271cd5a8013cdbc85f63ca93cb \
-                    sha256 e0d87d264e06155b695436bfc38df87cf133f2c63c279906ec648f24f6bb2207
+sha256 e0d87d264e06155b695436bfc38df87cf133f2c63c279906ec648f24f6bb2207
 
 worksrcdir          dmd2
 

@@ -29,7 +29,7 @@ if {${name} ne ${subport}} {
     destroot.cmd       "${python.bin} setup.py"
 
     checksums       rmd160  89c76e1ae105c5d9ef06c08247726dfa400fcdfe \
-                    sha256  98a7d249136e845eb5469866657160f623d0a44f602e59bc907a12a3bf665172
+sha256  98a7d249136e845eb5469866657160f623d0a44f602e59bc907a12a3bf665172
 
     depends_build-append port:py${python.version}-setuptools
 

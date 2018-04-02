@@ -27,7 +27,7 @@ master_sites        pypi:K/Kivy
 distname            Kivy-${version}
 
 checksums           rmd160  84d7dfada32d47f16068cd27605d81e183d1b014 \
-                    sha256  28c180fd5e4538858f0d2b3dde53c123d3a898d3ac7fba512bf3b83d0dfc248d
+sha256  28c180fd5e4538858f0d2b3dde53c123d3a898d3ac7fba512bf3b83d0dfc248d
 
 if {${name} ne ${subport}} {
     depends_build-append \

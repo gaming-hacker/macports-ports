@@ -29,7 +29,7 @@ distname            ${name}[strsed ${version} {g/\.//}]
 worksrcdir          ${name}
 
 checksums           rmd160  5a99607ec1ac01286d8e36d9d9f01ce35622f07b \
-                    sha256  a556ac7ea1965545dcb4d41cfef8e4915eeb8c0faa1b52f7ff70870f8bb5734c
+sha256  a556ac7ea1965545dcb4d41cfef8e4915eeb8c0faa1b52f7ff70870f8bb5734c
 
 patchfiles          patch-configure.diff patch-Makefile.in.diff
 

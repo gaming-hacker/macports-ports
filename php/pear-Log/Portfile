@@ -13,4 +13,4 @@ description         PEAR Log package
 long_description    ${description}
 
 checksums           rmd160  7bce5ab93fad45abbc6fbe56773a4929d960d518 \
-                    sha256  7db9d8dae364e3cde16de2087a371eb862479f33d32631db947620b20d2306c0
+sha256  7db9d8dae364e3cde16de2087a371eb862479f33d32631db947620b20d2306c0

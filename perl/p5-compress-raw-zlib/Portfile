@@ -15,6 +15,6 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  f55d8564c46e45a3792254acf609d35d7d6a0aa6 \
-                    sha256  361e4ec3c43ea6fe51fc6687d1bae61a49a28a7709b0e2686df4ea6a228082aa
+sha256  361e4ec3c43ea6fe51fc6687d1bae61a49a28a7709b0e2686df4ea6a228082aa
 
 # builds using embedded zlib source, no external dependency required

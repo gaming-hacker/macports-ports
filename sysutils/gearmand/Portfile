@@ -26,7 +26,7 @@ homepage            http://gearman.org/
 github.tarball_from releases
 
 checksums           rmd160  2bbe1042932dd763fcc68f4c8e6227d6a53be7e0 \
-                    sha256  d789fa24996075a64c5af5fd2adef10b13f77d71f7d44edd68db482b349c962c
+sha256  d789fa24996075a64c5af5fd2adef10b13f77d71f7d44edd68db482b349c962c
 
 depends_build       port:pkgconfig
 

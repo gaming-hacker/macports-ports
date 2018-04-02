@@ -23,8 +23,8 @@ long_description    QtPy (pronounced 'cutie pie') is a small abstraction layer \
                     QtGui and QtWidgets).
 
 checksums \
-    rmd160  58ba77ba2348a7c6f2e4657ebdd95ccedb38458b \
-    sha256  e31301aa4329760a4dbd71f8bfd53dff61cdc28daaf9e131a7090f4476fa9e55
+rmd160  58ba77ba2348a7c6f2e4657ebdd95ccedb38458b \
+sha256  e31301aa4329760a4dbd71f8bfd53dff61cdc28daaf9e131a7090f4476fa9e55
 
 python.versions 27 36
 

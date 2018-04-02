@@ -12,6 +12,6 @@ description         PEAR Text_Wiki_Doku package
 long_description    ${description}
 
 checksums           rmd160  373343710b9f5242aa7ea74daef6ed84c99e4b23 \
-                    sha256  6856e3b3342576e1f249366fa03470030167f42b670b574474b7aa43035736a3
+sha256  6856e3b3342576e1f249366fa03470030167f42b670b574474b7aa43035736a3
 
 depends_lib-append  port:pear-Text_Wiki

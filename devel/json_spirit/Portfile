@@ -28,7 +28,7 @@ distname            ${name}_v${version}
 use_zip             yes
 
 checksums           sha1    abc23f20d04a5d52ef3dc3accd8046474f68105f \
-                    rmd160  fe9ee702ce9b4f6164d3d9b8f67ba7c6dfb9d7fd
+rmd160  fe9ee702ce9b4f6164d3d9b8f67ba7c6dfb9d7fd
 
 patchfiles          patch-CMakeLists.diff
 

@@ -18,7 +18,7 @@ description             efficiently schedule I/O, time and signal based events
 long_description        PECL extension to ${description} using libevent.
 
 checksums               rmd160  befad4cbddda6e2553201da6c2ecd3f37892d33c \
-                        sha256  10e37f2b1c47475be891ef84b4282b5739d9aa8a1facd0c0141ee0edc3048435
+sha256  10e37f2b1c47475be891ef84b4282b5739d9aa8a1facd0c0141ee0edc3048435
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:libevent \

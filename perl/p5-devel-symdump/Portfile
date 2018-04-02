@@ -15,6 +15,6 @@ long_description    A convenient way to inspect perl's symbol table and \
 platforms           darwin
 
 checksums           rmd160  9949dab5ae7d7ff9826e80d33f8adc5e7e0e6196 \
-                    sha256  826f81a107f5592a2516766ed43beb47e10cc83edc9ea48090b02a36040776c0
+sha256  826f81a107f5592a2516766ed43beb47e10cc83edc9ea48090b02a36040776c0
 
 supported_archs     noarch

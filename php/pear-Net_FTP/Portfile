@@ -12,4 +12,4 @@ description         PEAR Net_FTP package
 long_description    ${description}
 
 checksums           rmd160  8b47a4fd17b251c954c455045bae95a7ac323efd \
-                    sha256  0bd47f1b57b4da01cd6fc7dfcc74bcaff1b1fca30cbe9590122b4120c5741c92
+sha256  0bd47f1b57b4da01cd6fc7dfcc74bcaff1b1fca30cbe9590122b4120c5741c92

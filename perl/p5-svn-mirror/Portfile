@@ -13,8 +13,8 @@ license			{Artistic-1 GPL}
 long_description	${description}
 
 checksums	md5	15c81a0958ae94e11fcb0dbb62548c98 \
-		sha1	ce78647269f5c984aea444dc503e3f8dec6f4866 \
-		rmd160	4912cfcb93d1b1e91fc11e3ab5134d4096a44b5d
+sha1	ce78647269f5c984aea444dc503e3f8dec6f4866 \
+rmd160	4912cfcb93d1b1e91fc11e3ab5134d4096a44b5d
 
 platforms		darwin
 

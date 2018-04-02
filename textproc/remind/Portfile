@@ -17,7 +17,7 @@ homepage            https://www.roaringpenguin.com/products/remind
 master_sites        https://www.roaringpenguin.com/files/download/
 
 checksums           rmd160  645f4cee9c7ee45a02228a1a055fc86762dc4927 \
-                    sha256  8adab4c0b30a556c34223094c5c74779164d5f3b8be66b8039f44b577e678ec1
+sha256  8adab4c0b30a556c34223094c5c74779164d5f3b8be66b8039f44b577e678ec1
 
 patchfiles          patch-remove-apple-nag.patch
 livecheck.type      regex

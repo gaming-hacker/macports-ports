@@ -19,8 +19,8 @@ distname            json-wheel-${version}
 use_bzip2           yes
 
 checksums           md5 8685ecee7a7416c77c14fbdf05c5a06e \
-                    sha1 dea8a5b3bd580c39f3cfb3139aeca4fef653aa31 \
-                    rmd160 cd31f74e67c4241dbb3e3b792440d02ea45b739b
+sha1 dea8a5b3bd580c39f3cfb3139aeca4fef653aa31 \
+rmd160 cd31f74e67c4241dbb3e3b792440d02ea45b739b
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

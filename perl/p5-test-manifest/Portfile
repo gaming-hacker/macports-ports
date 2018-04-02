@@ -12,7 +12,7 @@ description         interact with a t/test_manifest file
 long_description    ${description}
 
 checksums           rmd160  983f5523a1a68d9f1f286a8cb0bad54872c9d8e6 \
-                    sha256  064783ceaf7dd569a5724d40900a3f9d92168ee4c613f7a3cb99a99aa8283396
+sha256  064783ceaf7dd569a5724d40900a3f9d92168ee4c613f7a3cb99a99aa8283396
 
 platforms           darwin
 

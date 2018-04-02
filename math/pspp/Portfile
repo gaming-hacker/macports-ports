@@ -22,7 +22,7 @@ platforms               darwin
 master_sites            gnu
 
 checksums           rmd160  0e6abd9b6e57c20bfad1d418500330f38b50818c \
-                    sha256  ba281a2e5d7d40e22f36f07f434a4fbc5be49c6d15740b121c299d024aae1ae5
+sha256  ba281a2e5d7d40e22f36f07f434a4fbc5be49c6d15740b121c299d024aae1ae5
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:fontconfig \

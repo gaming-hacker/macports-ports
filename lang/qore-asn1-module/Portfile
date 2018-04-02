@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        sourceforge:qore
 
 checksums           md5 723f44b4f55bf12f71ae01f94606c435 \
-                    sha1 c754b6344f7989265f594f6640caa4bcad2477ac \
-                    rmd160 6d96555be5029a91378a4a34f999570cf02b62ac
+sha1 c754b6344f7989265f594f6640caa4bcad2477ac \
+rmd160 6d96555be5029a91378a4a34f999570cf02b62ac
 
 depends_lib         port:qore \
                     path:lib/libssl.dylib:openssl

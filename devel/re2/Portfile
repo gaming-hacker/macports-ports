@@ -19,17 +19,17 @@ license             BSD
 
 master_sites        googlecode
 checksums           rmd160  33f49bba5e7f25076f2531af8ce3cc4a0e3916b8 \
-                    sha256  0bffd1a57de2f4b218ca0f77d8850bfd59c82944a98256c6edba25260e0196a7
+sha256  0bffd1a57de2f4b218ca0f77d8850bfd59c82944a98256c6edba25260e0196a7
 
 platform darwin {
     if {${os.major} <= 10} {
         version     20131024
         checksums   rmd160  a96947ba23872a197ce279e33eeb45e955ac0bf6 \
-                    sha256  4cbf7a98e79ba0c3f83b865049bcf3c6d60593b1a7accb60e8e10745a97cd62b
+sha256  4cbf7a98e79ba0c3f83b865049bcf3c6d60593b1a7accb60e8e10745a97cd62b
     } elseif {${os.major} < 13} {
         version     20130622
         checksums   rmd160  4327e5f8c84c92b04de59a05fa4f4adb0fc7f8cb \
-                    sha256  eee28bac36d47df9b0b62cf0959cb919fc23389431e26d5ee44b42c35e36fb0d
+sha256  eee28bac36d47df9b0b62cf0959cb919fc23389431e26d5ee44b42c35e36fb0d
     }
 }
 

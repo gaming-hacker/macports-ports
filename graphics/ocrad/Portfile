@@ -19,7 +19,7 @@ homepage            https://www.gnu.org/software/ocrad/ocrad.html
 master_sites        gnu
 
 checksums           rmd160  56d89bed3fee679f642f94d66288e9633441e1d6 \
-                    sha256  c383d37869baa0990d38d38836d4d567e9e2862aa0cd704868b62dafeac18e3c \
+sha256  c383d37869baa0990d38d38836d4d567e9e2862aa0cd704868b62dafeac18e3c \
 size    91450
 
 depends_extract     bin:lzip:lzip

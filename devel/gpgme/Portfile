@@ -22,7 +22,7 @@ master_sites        gnupg
 use_bzip2           yes
 
 checksums           rmd160  9e6d0cef086b47f697a17384082f0c9f2f95c412 \
-                    sha256  1a8fed1197c3b99c35f403066bb344a26224d292afc048cfdfc4ccd5690a0693
+sha256  1a8fed1197c3b99c35f403066bb344a26224d292afc048cfdfc4ccd5690a0693
 
 depends_build       port:pkgconfig
 

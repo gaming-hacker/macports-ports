@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        http://codezen.org/static/
 
 checksums           md5 7836cf54cbb0af48d3d68a8aa86432b7 \
-                    sha1 e86e0980cee126a6eeff5ef4c8effba41ff3245b
+sha1 e86e0980cee126a6eeff5ef4c8effba41ff3245b
 
 python.default_version  26
 

@@ -17,7 +17,7 @@ platforms        darwin
 license          MIT
 master_sites     sourceforge:ctrio
 checksums        rmd160 ce7aaa21611d5cc4c1d888d557bc0a13ad6b0e53 \
-                 sha256 84d0e74f5b25f0b6c7d9b264ef41f98908e65a5056d4e75c5ef0e05d6a69fc0a
+sha256 84d0e74f5b25f0b6c7d9b264ef41f98908e65a5056d4e75c5ef0e05d6a69fc0a
 
 patchfiles       patch-Makefile.in
 

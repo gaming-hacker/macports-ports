@@ -18,8 +18,8 @@ homepage        http://www.boost.org
 master_sites    sourceforge:project/boost/boost-build/${version}
 use_bzip2       yes
 checksums       md5 38a40f1c0c2d6eb4f14aa4cf52e9236a \
-                sha1 cd3c06b7b0bcb12ccc9d5e374966ddff5984412a \
-                rmd160 de52a80c55d3ba8e38e199bfbb7c512642471e4e
+sha1 cd3c06b7b0bcb12ccc9d5e374966ddff5984412a \
+rmd160 de52a80c55d3ba8e38e199bfbb7c512642471e4e
 platforms       darwin
 
 patchfiles      patch-tools-darwin.jam.diff

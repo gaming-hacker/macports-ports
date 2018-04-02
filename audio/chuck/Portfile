@@ -27,7 +27,7 @@ master_sites        ${homepage}release/files/
 extract.suffix      .tgz
 
 checksums           rmd160  733ea2c6963edad668972d6c9a8c976bcf04f1c5 \
-                    sha256  e900b8545ffcb69c6d49354b18c43a9f9b8f789d3ae822f34b408eaee8d3e70b
+sha256  e900b8545ffcb69c6d49354b18c43a9f9b8f789d3ae822f34b408eaee8d3e70b
 
 depends_build       port:bison \
                     port:flex

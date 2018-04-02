@@ -27,7 +27,7 @@ homepage            http://fping.org/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  313e61d4a57669ceeb5544ae62a63972d7dbde22 \
-                    sha256  67eb4152b98ad34f99d2eec4e1098a0bb52caf13c0c89cd147349d08190fe8ce
+sha256  67eb4152b98ad34f99d2eec4e1098a0bb52caf13c0c89cd147349d08190fe8ce
 
 configure.args      --enable-ipv4 \
                     --enable-ipv6

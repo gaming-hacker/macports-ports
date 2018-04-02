@@ -24,7 +24,7 @@ long_description        Moodle is a course management system (CMS) - a free, Ope
                         single-teacher site to a 40,000-student University.
 
 checksums               rmd160  6087f94e27290753e23d5e43bb0a033bd006fda3 \
-                        sha256  6760dc478253718cfa92a71fae100fd8918e40c9e3e73fe623502a40bcc25c32
+sha256  6760dc478253718cfa92a71fae100fd8918e40c9e3e73fe623502a40bcc25c32
 
 depends_lib             port:php5-web
 

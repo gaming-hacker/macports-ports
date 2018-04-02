@@ -16,7 +16,7 @@ description         a C-language AMQP client library for use with RabbitMQ
 long_description    RabbitMQ-C is ${description}.
 
 checksums           rmd160  c40ffa006fbaaeb51d43b48a8d1740df61bfb92d \
-                    sha256  f254878644486b4a0f7ad52884120cea1270e520399e26ad6c250967d26c9a0b
+sha256  f254878644486b4a0f7ad52884120cea1270e520399e26ad6c250967d26c9a0b
 
 depends_build-append \
                     port:xmlto

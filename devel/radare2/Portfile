@@ -17,7 +17,7 @@ depends_lib         port:capstone \
                     port:libzip
 
 checksums           rmd160  18bc72880fe3c8e83d5cfe0b268cfac491470fa2 \
- sha256  62e4a8c8758e21d6e502bc8f45e15dec5256bf8c724bbc4aa63c75dbdc1c9cfe
+sha256  62e4a8c8758e21d6e502bc8f45e15dec5256bf8c724bbc4aa63c75dbdc1c9cfe
 
 configure.args-append \
                     --with-syscapstone \

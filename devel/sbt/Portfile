@@ -23,9 +23,9 @@ distname        ${name}-launch
 dist_subdir     ${name}/${version}
 
 checksums       md5    b754ce37fb1e4fd2dd5fb3eff7809881 \
-                sha1   7dcb7b28b20cdceaeb6c71a412912b8fb32654f0 \
-                rmd160 447d33fa0a91ea23cf84a9da1e9cbed39be60b48 \
-                sha256 f2fc15f4e68317003f1bd302d5e26561c1259884d4a33c06df922c4511bc7564
+sha1   7dcb7b28b20cdceaeb6c71a412912b8fb32654f0 \
+rmd160 447d33fa0a91ea23cf84a9da1e9cbed39be60b48 \
+sha256 f2fc15f4e68317003f1bd302d5e26561c1259884d4a33c06df922c4511bc7564
 
 depends_build   bin:java:kaffe
 

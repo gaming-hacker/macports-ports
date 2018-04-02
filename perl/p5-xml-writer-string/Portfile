@@ -17,7 +17,7 @@ description         Module to capture output from XML::Writer
 long_description    ${description}
 
 checksums           sha256 31901cc85c6f771d34cb9814587296d99461f14eedebb4ed83b8b17b2b6d0ba6 \
-                    rmd160 9eeede901d28bb69f2d976376240349f0364a59e
+rmd160 9eeede901d28bb69f2d976376240349f0364a59e
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-xml-writer

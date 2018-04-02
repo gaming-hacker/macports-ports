@@ -13,6 +13,6 @@ description         This is a Perl extension for normalizing line endings.
 long_description    ${description}
 
 checksums           rmd160  92e58536357a8c71ddccf0f3d3be172e96d9faae \
-                    sha256  cecccbfe4545b1965d112a86298dffe50d6806180090c6bec7d757b68fb85eb9
+sha256  cecccbfe4545b1965d112a86298dffe50d6806180090c6bec7d757b68fb85eb9
 
 platforms           darwin

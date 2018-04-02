@@ -22,7 +22,7 @@ use_zip                 yes
 distname                Argyll_V${version}_src
 
 checksums               rmd160  7bca351653d754aa4c71ef1c801f6097856d3e53 \
-                        sha256  5492896c040b406892864c467466ad6b50eb62954b5874ef0eb9174d1764ff41
+sha256  5492896c040b406892864c467466ad6b50eb62954b5874ef0eb9174d1764ff41
 
 worksrcdir              Argyll_V${version}
 

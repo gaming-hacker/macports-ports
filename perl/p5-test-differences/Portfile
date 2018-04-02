@@ -20,7 +20,7 @@ long_description    When the code you're testing returns multiple lines, \
 platforms           darwin
 
 checksums           rmd160  0fed75879a6b144d0afad15f755c9aa7609247f3 \
-                    sha256  9f459dd9c2302a0a73e2f5528a0ce7d09d6766f073187ae2c69e603adf2eb276
+sha256  9f459dd9c2302a0a73e2f5528a0ce7d09d6766f073187ae2c69e603adf2eb276
 
 if {${perl5.major} != ""} {
     depends_lib-append \

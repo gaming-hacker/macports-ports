@@ -16,4 +16,4 @@ long_description    This module is optionally used by Type::Tiny to provide \
                     faster, C-based implementations of some type constraints.
 
 checksums           rmd160  8547a8bc48985db598a48a1297c0247fa26a3dd4 \
-                    sha256  a93ed33fd21646548ab5cdb0de647cc574ad3e41b414af7980526e8612cacb16
+sha256  a93ed33fd21646548ab5cdb0de647cc574ad3e41b414af7980526e8612cacb16

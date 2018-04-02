@@ -13,4 +13,4 @@ description         PEAR Structures_Form package
 long_description    ${description}
 
 checksums           rmd160  3496c78f9c3241067482f3549a699f19b64d1931 \
-                    sha256  9871ca743b57d28e68c8b847d8ce015f3551d97815309c897d24e0e6ff27b51b
+sha256  9871ca743b57d28e68c8b847d8ce015f3551d97815309c897d24e0e6ff27b51b

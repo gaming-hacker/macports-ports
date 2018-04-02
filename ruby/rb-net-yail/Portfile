@@ -14,5 +14,5 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           md5 4db4b5cee2cb6c7dbb142cc979080c7d \
-                    sha1 214e0fb58805a5f359dad9fef5c6648f0413288b \
-                    rmd160 9a5dac1bba9bf6caa7a363a53227d2a20613c1de
+sha1 214e0fb58805a5f359dad9fef5c6648f0413288b \
+rmd160 9a5dac1bba9bf6caa7a363a53227d2a20613c1de

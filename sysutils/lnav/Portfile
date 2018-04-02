@@ -28,7 +28,7 @@ depends_lib         port:curl \
                     path:lib/libssl.dylib:openssl
 
 checksums           rmd160  9aa5556c9957f04f438ac33a65aaa0da897ae111 \
-                    sha256  80776cc4c79d6ae5d41c7fdec7385bd4fd340dadf0e919835d8a05d002930780
+sha256  80776cc4c79d6ae5d41c7fdec7385bd4fd340dadf0e919835d8a05d002930780
 
 configure.args      --disable-silent-rules \
                     --disable-static \

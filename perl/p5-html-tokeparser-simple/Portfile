@@ -16,7 +16,7 @@ long_description            HTML::TokeParser::Simple is a subclass of \
                             method calls to work with the tokens.
 
 checksums                   rmd160  a092fd49c6023fbacfb37824f7056a4978890b26 \
-                            sha256  ed11135c6839e6e0eaf96952e6ac353a2f22ebb40a721659671e5d2dcc0e4a9d
+sha256  ed11135c6839e6e0eaf96952e6ac353a2f22ebb40a721659671e5d2dcc0e4a9d
 
 if {${perl5.major} != ""} {
 depends_lib-append          port:p${perl5.major}-html-parser

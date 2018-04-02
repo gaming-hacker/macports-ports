@@ -21,7 +21,7 @@ long_description    The Monotone::AutomateStdio class gives a Perl developer \
                     access or alternatively as one large string.
 
 checksums           rmd160  b4aa8f60ae3037b3ad255e680966d9cdbfb43ee8 \
-                    sha256  237d95dc2714d7df07086f31a0492059a83b9b79032d477584f620d8b165f2a3
+sha256  237d95dc2714d7df07086f31a0492059a83b9b79032d477584f620d8b165f2a3
 
 if {${perl5.major} != ""} {
     depends_run     port:monotone

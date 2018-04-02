@@ -29,8 +29,8 @@ distname         ${name}-${version}-source
 use_bzip2        yes
 
 checksums        md5     658385d63e81bfd0989f8f9b8a956c2c \
-                 sha1    3cb291a1cc018b4d6ac75675b8346e94316c941c \
-                 rmd160  bfea331f8047514229350eda9d71bba607e5010e
+sha1    3cb291a1cc018b4d6ac75675b8346e94316c941c \
+rmd160  bfea331f8047514229350eda9d71bba607e5010e
 
 worksrcdir       ${name}-${version}
 

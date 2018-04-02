@@ -14,5 +14,5 @@ platforms           darwin
 homepage            https://github.com/ahoward/lockfile
 
 checksums           md5     53a63206bbaefb7106db5a74a5adf148 \
-                    sha1    828710234b7ccc87744e9386749b8e2d0657ff41 \
-                    rmd160  fe2ffc3f245b2af75c581038af85e72f79d0cfcf
+sha1    828710234b7ccc87744e9386749b8e2d0657ff41 \
+rmd160  fe2ffc3f245b2af75c581038af85e72f79d0cfcf

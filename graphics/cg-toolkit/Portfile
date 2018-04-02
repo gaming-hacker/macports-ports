@@ -30,8 +30,8 @@ master_sites    http://developer.download.nvidia.com/cg/Cg_${branch}
 distname        Cg-${branch}_April${year}
 use_dmg         yes
 checksums       md5    9a8f7201f2b0149748814e012dff4aab \
-                sha1   106adb0926bc491012adc9cba1847b19a701c087 \
-                sha256 85c7a0de82252b703191fee5fe7b29f60d357924dc7b8ca59c2badeac7af407d
+sha1   106adb0926bc491012adc9cba1847b19a701c087 \
+sha256 85c7a0de82252b703191fee5fe7b29f60d357924dc7b8ca59c2badeac7af407d
 
 use_configure   no
 build           {}

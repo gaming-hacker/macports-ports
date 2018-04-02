@@ -16,7 +16,7 @@ distname                ${cap_name}-${version}
 extract.suffix          .tgz
 platforms               darwin freebsd
 checksums               rmd160  245d5f25b0373cbaeaa9be7a62c32a52fc8baf53 \
-                        sha256  e33bf29710944edc2ea53765551565848533ab9caf75c3c06666e5de6d1ac05f
+sha256  e33bf29710944edc2ea53765551565848533ab9caf75c3c06666e5de6d1ac05f
 description             code coverage information for PHP
 long_description \
     PHP_CodeCoverage is a library that provides collection, processing, and rendering \

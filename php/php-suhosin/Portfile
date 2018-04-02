@@ -13,8 +13,8 @@ php.branches        5.6
 
 version         0.9.38
 checksums       sha1    20af6379c0ff9879c5ed69452a6c38b7b3e76748 \
-                rmd160  7bcf2dcc9b50605ea5cbb772302963ebbbdf0dc1 \
-                sha256  c02d76c4e7ce777910a37c18181cb67fd9e90efe0107feab3de3131b5f89bcea \
+rmd160  7bcf2dcc9b50605ea5cbb772302963ebbbdf0dc1 \
+sha256  c02d76c4e7ce777910a37c18181cb67fd9e90efe0107feab3de3131b5f89bcea \
 size    122800
 
 description         Advanced protection extension for PHP

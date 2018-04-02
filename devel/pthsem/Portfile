@@ -28,8 +28,8 @@ master_sites        http://www.auto.tuwien.ac.at/~mkoegler/pth
 distname            ${name}_${version}
 
 checksums           md5     9144b26dcc27e67498d63dd5456f934c \
-                    sha1    261d3e3a0b6371c4442397c6667393e6b973e14f \
-                    rmd160  84ee773b88d61bcef58690973c4f873fd7ac34f4
+sha1    261d3e3a0b6371c4442397c6667393e6b973e14f \
+rmd160  84ee773b88d61bcef58690973c4f873fd7ac34f4
 
 worksrcdir          ${name}-${version}
 

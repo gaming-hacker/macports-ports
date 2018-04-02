@@ -12,4 +12,4 @@ description         PEAR Validate_IR package
 long_description    ${description}
 
 checksums           rmd160  51c7d258f126a10ebb1cd051eacff002070cba88 \
-                    sha256  a5f91eded5edc5f2e75d7e8ad8cfcb8852f9ba3c5efd48d7bb256537bc9c09de
+sha256  a5f91eded5edc5f2e75d7e8ad8cfcb8852f9ba3c5efd48d7bb256537bc9c09de

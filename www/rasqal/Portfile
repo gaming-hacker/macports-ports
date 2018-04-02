@@ -17,7 +17,7 @@ homepage            http://librdf.org/rasqal/
 master_sites        http://download.librdf.org/source/
 
 checksums           rmd160  50f8c44966a43648dbfed3ab96c3a5033880763f \
-                    sha256  8b218dc51b77b99f33103a9251218a4439748f73ee30fa8ee549ab6d150e7c53
+sha256  8b218dc51b77b99f33103a9251218a4439748f73ee30fa8ee549ab6d150e7c53
 
 depends_build       port:pkgconfig
 

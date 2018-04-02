@@ -14,7 +14,7 @@ description         Config::INI - simple .ini-file format
 long_description    ${description}
 
 checksums           rmd160  b0d6a3cbbc418fdda92aa321e87b309b13e1cb22 \
-                    sha256  628bf76d5b91f89dde22d4813ec033026ebf71b772bb61ccda909da00c869732
+sha256  628bf76d5b91f89dde22d4813ec033026ebf71b772bb61ccda909da00c869732
 
 platforms           darwin
 supported_archs     noarch

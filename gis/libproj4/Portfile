@@ -17,8 +17,8 @@ long_description    a comprehensive library of cartographic projection functions
 distname            ${name}.${version}
 worksrcdir          ${name}
 checksums           md5     fd3f085f5f772be6f0831c538ae4f70e \
-                    sha1    d66bc9de0a5612c5efe9172c76e11a9b1a655d61 \
-                    rmd160  97d82a408e9e8fd1994477a9591bf6b6bfda3a76
+sha1    d66bc9de0a5612c5efe9172c76e11a9b1a655d61 \
+rmd160  97d82a408e9e8fd1994477a9591bf6b6bfda3a76
 
 use_bzip2           yes
 

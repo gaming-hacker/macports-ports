@@ -12,7 +12,7 @@ description         PEAR Services_oEmbed package
 long_description    ${description}
 
 checksums           rmd160  2e4ba96ec05acc86db35928513fcda4c72822dd1 \
-                    sha256  85b93a8d9348f305aa147a8fdbb6cc84aa9b6ccbe2d4d2839f8870ed2e54c3d3
+sha256  85b93a8d9348f305aa147a8fdbb6cc84aa9b6ccbe2d4d2839f8870ed2e54c3d3
 
 depends_lib-append  port:pear-Validate \
                     port:pear-Net_URL2

@@ -22,7 +22,7 @@ distfiles       GIMPskel.zip
 use_zip         yes
 
 checksums       sha1    e923c2b145814db35a747ef947ba1ce7da32edbc \
-                rmd160  c61d0e566d87c772b98cf7d8d8338994c4ce23d9
+rmd160  c61d0e566d87c772b98cf7d8d8338994c4ce23d9
 
 worksrcdir      GIMPskel/ScriptExecCocoa
 

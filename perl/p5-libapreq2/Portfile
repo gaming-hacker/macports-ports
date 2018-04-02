@@ -21,7 +21,7 @@ homepage            https://metacpan.org/release/${perl5.module}
 platforms           darwin
 
 checksums           rmd160  8d7d2573624193b6dfbbe354b3771012257c1578 \
-                    sha256  5731e6833b32d88e4a5c690e45ddf20fcf969ce3da666c5627d775e92da0cf6e
+sha256  5731e6833b32d88e4a5c690e45ddf20fcf969ce3da666c5627d775e92da0cf6e
 
 if {[variant_isset apache22]} {
     set apachectl   ${prefix}/apache2/bin/apachectl

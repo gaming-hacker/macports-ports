@@ -19,7 +19,7 @@ homepage        http://jcoppens.com/soft/linsmith/index.en.php
 master_sites    sourceforge
 
 checksums       rmd160  96275c487b2d2c34a16c3afd374d69bc1b99c0c5 \
-                sha256  76739c0cdc13f193793842ea4ddd027a27143a6672994de485b9902c32a41aa3
+sha256  76739c0cdc13f193793842ea4ddd027a27143a6672994de485b9902c32a41aa3
 
 depends_build   port:pkgconfig
 

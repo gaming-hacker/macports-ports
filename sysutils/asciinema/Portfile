@@ -26,7 +26,7 @@ python.default_version \
 depends_lib         port:py${python.version}-setuptools
 
 checksums           rmd160  04cd2a136da1c341f4b492ed89cc49b488951ea2 \
-                    sha256  30170e44781d50b4bbcd2a19d0d874617a5bacb9b18f421cd0e5e308c627a577
+sha256  30170e44781d50b4bbcd2a19d0d874617a5bacb9b18f421cd0e5e308c627a577
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}

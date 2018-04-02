@@ -13,4 +13,4 @@ description         PEAR File_Fstab package
 long_description    ${description}
 
 checksums           rmd160  9f619dc5767a7ce75f84e64c78d6120130fd02ed \
-                    sha256  f4a359b1d0426aae0c2ea0775101905e0be020a66ca3acae0f7864dbf3a7ff17
+sha256  f4a359b1d0426aae0c2ea0775101905e0be020a66ca3acae0f7864dbf3a7ff17

@@ -20,7 +20,7 @@ homepage            https://notmuchmail.org/
 master_sites        ${homepage}releases/
 
 checksums           rmd160  20480d005ddd382176e6a08b43408c9b8538dd0b \
-                    sha256  d3e894ed2ad9d721a442663f07a6f2a241dc98be7cc4af681f16edf88e0d76df
+sha256  d3e894ed2ad9d721a442663f07a6f2a241dc98be7cc4af681f16edf88e0d76df
 
 depends_build       port:pkgconfig
 

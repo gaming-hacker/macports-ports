@@ -15,7 +15,7 @@ homepage            http://forge.ocamlcore.org/projects/ocamlmod/
 master_sites        http://forge.ocamlcore.org/frs/download.php/1350/
 
 checksums           rmd160  e90ad510bede108dced576ef4ffaf9eed49f5d58 \
-                    sha256  a329a0919fa18128b48fd00897204d2aecec0c946c1956541589f807203f6f86
+sha256  a329a0919fa18128b48fd00897204d2aecec0c946c1956541589f807203f6f86
 
 depends_lib         port:ocaml port:ocaml-findlib port:ocaml-ounit
 

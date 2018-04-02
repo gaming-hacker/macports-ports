@@ -22,7 +22,7 @@ long_description    ${description}
 homepage            https://github.com/jupyter/testpath
 
 checksums           rmd160  ac46cf531469e50c353a17f6617b43901f532f35 \
-                    sha256  7d653012f011595c527d0a978f24b5a7c0b476d0b384af8f239166baf436c4d2
+sha256  7d653012f011595c527d0a978f24b5a7c0b476d0b384af8f239166baf436c4d2
 
 if {${name} ne ${subport}} {
     post-extract {

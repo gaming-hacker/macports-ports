@@ -21,7 +21,7 @@ master_sites            ${homepage}rar/
 distname                ${my_name}-${version}
 
 checksums               rmd160  51a2dfb80322164f50ca3007f2a1f2908b57226a \
-                        sha256  ce048094764b2377dd60802359c74f03528b6d7defd808cd584443c5fd2de948
+sha256  ce048094764b2377dd60802359c74f03528b6d7defd808cd584443c5fd2de948
 
 patchfiles              patch-makefile.unix.diff
 

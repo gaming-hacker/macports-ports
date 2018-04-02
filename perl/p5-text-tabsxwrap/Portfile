@@ -32,4 +32,4 @@ long_description    Text::Tabs performs the same job that the unix expand(1) \
                     paragraphs. It uses Text::Wrap::wrap() to do the work.
 
 checksums           rmd160  0a614c6af79316a81fd8a713f49a477c573bc2e3 \
-                    sha256  b9cb056fffb737b9c12862099b952bf4ab4b1f599fd34935356ae57dab6f655f
+sha256  b9cb056fffb737b9c12862099b952bf4ab4b1f599fd34935356ae57dab6f655f

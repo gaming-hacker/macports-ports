@@ -24,7 +24,7 @@ long_description    Snowball is a language in which stemming algorithms can \
 homepage            http://snowballstem.org/
 
 checksums           rmd160  576e781bcb8f1e1eca462bcb544d7fe3be92daae \
-                    sha256  9114126684b75b9aaaa27bf596968e8d4d77d8080c7898d34e2e8ea00cf8c80d
+sha256  9114126684b75b9aaaa27bf596968e8d4d77d8080c7898d34e2e8ea00cf8c80d
 
 use_configure       no
 

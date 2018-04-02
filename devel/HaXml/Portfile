@@ -24,8 +24,8 @@ homepage            http://projects.haskell.org/${name}
 master_sites        ${homepage}
 
 checksums           md5     9635c348e70c0446e74783e7c267050c \
-                    sha1    85500aff02672f261dce4a9b21463368c164de97 \
-                    rmd160  5298987b9ac73d56d8111e55105168cc3c63bef8
+sha1    85500aff02672f261dce4a9b21463368c164de97 \
+rmd160  5298987b9ac73d56d8111e55105168cc3c63bef8
 
 depends_lib         port:ghc \
                     port:hs-polyparse

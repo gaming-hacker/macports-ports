@@ -16,8 +16,8 @@ platforms        darwin
 master_sites     sourceforge
 use_bzip2        yes
 checksums        md5 6204c7a1339433ab32456ccd62126ea9 \
-                 sha1 c7ad9bfd9af60daee606c870d12d3a58dcff1e80 \
-                 rmd160 d15715b792585cf69916f6a8af8b6c6b06dffde8
+sha1 c7ad9bfd9af60daee606c870d12d3a58dcff1e80 \
+rmd160 d15715b792585cf69916f6a8af8b6c6b06dffde8
 depends_lib      port:zlib port:gettext
 configure.args   --mandir=${prefix}/share/man \
                  --enable-threads \

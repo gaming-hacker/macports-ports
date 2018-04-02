@@ -22,7 +22,7 @@ long_description    OLL is a library supporting several for online-learning \
 master_sites        googlecode
 
 checksums           sha1    a44e72eeec19616bf20fe6ae7f1af628bc4ba57b \
-                    rmd160  f6bb2fe73fcec008eb1a551f22bde4dcc406988b
+rmd160  f6bb2fe73fcec008eb1a551f22bde4dcc406988b
 
 livecheck.type      regex
 livecheck.url       ${homepage}downloads/list

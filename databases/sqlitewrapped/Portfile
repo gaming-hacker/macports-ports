@@ -20,7 +20,7 @@ homepage            http://www.alhem.net/project/sqlite/index.html
 
 master_sites        http://www.alhem.net/project/sqlite
 checksums           md5 a6709476d04dd89acb2b16332e4fdf37 \
-                    sha1 d95614429d2397477445013ed3c0b3e1947ee883
+sha1 d95614429d2397477445013ed3c0b3e1947ee883
 
 # build without the SysLog feature at the moment, if there are requests add variant
 patchfiles          patch-Makefile.diff

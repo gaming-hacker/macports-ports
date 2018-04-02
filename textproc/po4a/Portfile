@@ -23,7 +23,7 @@ homepage            http://po4a.alioth.debian.org/
 master_sites        https://alioth.debian.org/frs/download.php/file/${download_id}/
 
 checksums           rmd160  3d8189eedb234c1cfcb76e652aa883e0092ec467 \
-                    sha256  60a243da3ae372f019cd71483d46c898897f8692958403dfc2c8001c713e6fcf \
+sha256  60a243da3ae372f019cd71483d46c898897f8692958403dfc2c8001c713e6fcf \
 size    2530727
 
 # TODO: check and fix dependencies

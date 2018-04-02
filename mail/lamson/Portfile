@@ -33,7 +33,7 @@ homepage            https://pypi.python.org/pypi/lamson
 master_sites        https://pypi.python.org/packages/source/l/${name}
 
 checksums           rmd160  8d521cd5f6cd3d689b192b8cae4ec9a3c75a529d \
-                    sha256  253edf385ae54606579b6b717adf5edcd9df47f9a1d488aa61b9e9f42587d37d
+sha256  253edf385ae54606579b6b717adf5edcd9df47f9a1d488aa61b9e9f42587d37d
 
 depends_lib-append  port:py${python.version}-chardet \
                     port:py${python.version}-jinja2 \

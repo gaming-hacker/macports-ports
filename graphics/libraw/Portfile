@@ -22,14 +22,14 @@ distfiles-append \
 
 checksums \
     LibRaw-${version}${extract.suffix} \
-        rmd160  5ebd40cbee268c18692a5e6f4daaf05c6d2e3c58 \
-        sha256  56aca4fd97038923d57d2d17d90aa11d827f1f3d3f1d97e9f5a0d52ff87420e2 \
+rmd160  5ebd40cbee268c18692a5e6f4daaf05c6d2e3c58 \
+sha256  56aca4fd97038923d57d2d17d90aa11d827f1f3d3f1d97e9f5a0d52ff87420e2 \
     LibRaw-demosaic-pack-GPL2-${version}${extract.suffix} \
-        rmd160  b86ee8d0e790b2976f90ac7adecf8df4a3d92cd4 \
-        sha256  0b24bcf7bbb5d13fde58bb071f94dc9354be09bc44b2bba0698493065e99f8da \
+rmd160  b86ee8d0e790b2976f90ac7adecf8df4a3d92cd4 \
+sha256  0b24bcf7bbb5d13fde58bb071f94dc9354be09bc44b2bba0698493065e99f8da \
     LibRaw-demosaic-pack-GPL3-${version}${extract.suffix} \
-        rmd160  a83d4886ea3455425ec305160c04baf7a617db60 \
-        sha256  ffd6916cd66c8101e4e6b589799f256c897748d2fd2486aa34c3705146dbc701
+rmd160  a83d4886ea3455425ec305160c04baf7a617db60 \
+sha256  ffd6916cd66c8101e4e6b589799f256c897748d2fd2486aa34c3705146dbc701
 
 depends_build    port:pkgconfig
 

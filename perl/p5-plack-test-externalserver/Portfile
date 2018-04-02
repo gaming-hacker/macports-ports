@@ -18,7 +18,7 @@ description         Plack::Test::ExternalServer - Run HTTP tests on external liv
 long_description    ${description}
 
 checksums           rmd160  3d84e418303df04878f275cf743ccca17ada7e3f \
-                    sha256  5baf5c57fe0c06412deec9c5abe7952ab8a04f8c47b4bbd8e9e9982268903ed0
+sha256  5baf5c57fe0c06412deec9c5abe7952ab8a04f8c47b4bbd8e9e9982268903ed0
 
 if {${perl5.major} != ""} {
     depends_build-append \

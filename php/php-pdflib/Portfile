@@ -18,7 +18,7 @@ description                 PHP bindings for pdflib
 long_description            ${description}
 
 checksums                   rmd160  55a13e9601b3eba90d39a8364b5242623d159720 \
-                            sha256  abb231d5986bf46cdb430b2dfb9918237038ed1c0330f0ce99c77525ef393e14
+sha256  abb231d5986bf46cdb430b2dfb9918237038ed1c0330f0ce99c77525ef393e14
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:pdflib

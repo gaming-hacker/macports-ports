@@ -17,8 +17,8 @@ platforms           darwin
 homepage            http://www.rfc20.org/rubymail/
 
 checksums           md5     c94a6595a71aec61da5723699caea38c \
-                    sha1    0c946e2e7daf5468a338ce42177f52bd4f89eb82 \
-                    rmd160  9a6069172ac6bed7355c0f4b4325ec8cea4582bc
+sha1    0c946e2e7daf5468a338ce42177f52bd4f89eb82 \
+rmd160  9a6069172ac6bed7355c0f4b4325ec8cea4582bc
 
 test.run            yes
 test.cmd            ${ruby.bin} tests/runtests.rb

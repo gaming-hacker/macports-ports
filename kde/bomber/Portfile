@@ -21,7 +21,7 @@ master_sites        kde:stable/${version}/src
 use_xz              yes
 distname            ${name}-${version}
 checksums           rmd160  8ca6987731603c880bdac37ea113359ae4ac60c2 \
-                    sha256  9e0a121206e59a038984242c614283b13f011adb5a9b210d9622426f9db87c25
+sha256  9e0a121206e59a038984242c614283b13f011adb5a9b210d9622426f9db87c25
 
 depends_lib-append  port:kdelibs4 \
                     port:libkdegames

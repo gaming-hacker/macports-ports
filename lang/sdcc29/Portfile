@@ -18,8 +18,8 @@ long_description    SDCC is a freeware, retargettable, optimizing ANSI C \
 homepage            http://sdcc.sourceforge.net/
 master_sites        sourceforge
 checksums           md5     a6151ed328fd3bc48305ffbc628dc122 \
-                    sha1    03308a233a67e7fdce3f7e4972acb8731ae42666 \
-                    rmd160  38f23365b676132651f0322779bff498eb7e2b8d
+sha1    03308a233a67e7fdce3f7e4972acb8731ae42666 \
+rmd160  38f23365b676132651f0322779bff498eb7e2b8d
 
 dist_subdir		    sdcc
 

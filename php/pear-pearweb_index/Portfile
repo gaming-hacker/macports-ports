@@ -13,7 +13,7 @@ description         PEAR pearweb_index package
 long_description    ${description}
 
 checksums           rmd160  1070cdf3cd93bce6d40f8002782a869d38d26f59 \
-                    sha256  7b07407402d65522a12b7fae00947d5dee8e15e15c5961ee4cd13c5fa48b9f31
+sha256  7b07407402d65522a12b7fae00947d5dee8e15e15c5961ee4cd13c5fa48b9f31
 
 depends_lib-append  port:pear-pearweb_qa \
                     port:pear-pearweb_pepr \

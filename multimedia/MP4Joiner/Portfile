@@ -20,7 +20,7 @@ master_sites        sourceforge:project/mp4joiner/MP4Joiner/${version}/
 use_bzip2           yes
 
 checksums           rmd160  b219127b0e30ff99d039a868b0751b763452ea4f \
-                    sha256  39428a63bb234c90800a261b3c1a7a19d887045bf8611ec185c1c7bdabfcaddf
+sha256  39428a63bb234c90800a261b3c1a7a19d887045bf8611ec185c1c7bdabfcaddf
 
 wxWidgets.use       wxWidgets-3.0
 

@@ -16,7 +16,7 @@ long_description    The RPC::XML package is an implementation of the \
                     XML-RPC standard.
 
 checksums           rmd160  faa9a679854a3dacd504e809a2ed64fa4e113c61 \
-                    sha256  ea0d7ca87aab70c12817df5893f6bfe0492ce63f6e0e63c0b452e375344c7ef7
+sha256  ea0d7ca87aab70c12817df5893f6bfe0492ce63f6e0e63c0b452e375344c7ef7
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -28,7 +28,7 @@ master_sites            sourceforge:project/reduce-algebra/Snapshot_${version_da
 distname                reduce-src-${version_dashes}
 use_bzip2               yes
 checksums               rmd160  b08512ea6bc8900a3a557c85d0576be640489202 \
-                        sha256  b15debc944475d4daee1bcbdbaff415693522306785507f2d3110d75df6e7006
+sha256  b15debc944475d4daee1bcbdbaff415693522306785507f2d3110d75df6e7006
 
 depends_lib-append \
     port:libedit\

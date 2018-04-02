@@ -6,7 +6,7 @@ PortGroup           github 1.0
 github.setup        jonas tig 2.3.3 tig-
 github.tarball_from releases
 checksums           rmd160  a640bed8ad0ef8b4bb30cea35bbe3558973684a0 \
-                    sha256  d39d10c5a6db7b7663d51eff8ac2eaf075e319f5edabe09cb63a2b1b24846bea
+sha256  d39d10c5a6db7b7663d51eff8ac2eaf075e319f5edabe09cb63a2b1b24846bea
 
 categories          devel
 maintainers         {cal @neverpanic} \

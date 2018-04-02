@@ -12,4 +12,4 @@ description         PEAR File_Passwd package
 long_description    ${description}
 
 checksums           rmd160  e8fa23c5f2addc436626d8a730fa3fa0cac7b851 \
-                    sha256  64cf846ab3739caa6f0abdb399847a637082a5c754010a7948a9bfeb5fbfb5a2
+sha256  64cf846ab3739caa6f0abdb399847a637082a5c754010a7948a9bfeb5fbfb5a2

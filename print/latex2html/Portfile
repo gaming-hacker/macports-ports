@@ -22,7 +22,7 @@ homepage                https://www.ctan.org/pkg/${name}
 master_sites            http://ctan.sharelatex.com/tex-archive/support/${name}
 
 checksums               rmd160  da3d0c0c297113fc0f4b9f22a0cf62dff626f03c \
-                        sha256  4b8c21ef292817c85ba553f560129723bcae4ee9a6ec7a22ce2289329db7c1ef
+sha256  4b8c21ef292817c85ba553f560129723bcae4ee9a6ec7a22ce2289329db7c1ef
 
 depends_lib             bin:latex:texlive-latex \
                         port:ghostscript \

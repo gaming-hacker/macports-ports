@@ -13,4 +13,4 @@ description         PEAR PHP_Compat package
 long_description    ${description}
 
 checksums           rmd160  e25b00fecd5fb1e75e0820aa898f308b99fd949a \
-                    sha256  dfc3dac4f67924312fc1a0f6b08a768348e9bdf3a4000d930c043325ce005c5b
+sha256  dfc3dac4f67924312fc1a0f6b08a768348e9bdf3a4000d930c043325ce005c5b

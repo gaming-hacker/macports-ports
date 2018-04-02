@@ -23,7 +23,7 @@ distname            nkf-${nkf_ver}
 worksrcdir          ${distname}/NKF.mod
 
 checksums           rmd160  792a1b41bc65af3bd2109e6d849810ac5c9497b3 \
-                    sha256  b4175070825deb3e98577186502a8408c05921b0c8ff52e772219f9d2ece89cb
+sha256  b4175070825deb3e98577186502a8408c05921b0c8ff52e772219f9d2ece89cb
 
 livecheck.type      regex
 livecheck.version   ${nkf_ver}

@@ -21,7 +21,7 @@ master_sites   sourceforge:project/aterm/aterm/${version} \
                ftp://ftp.afterstep.org/apps/aterm/
 use_bzip2      yes
 checksums      md5 c2eede028e1011e0ec7035cf319c9b5a \
-               sha1 a975753b415306a0734efc3773de8a86129bb54b
+sha1 a975753b415306a0734efc3773de8a86129bb54b
 
 depends_build       port:xorg-libXt
 

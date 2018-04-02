@@ -54,7 +54,7 @@ if {$subport eq $name || $subport eq "aqbanking5-gtk"} {
     set release         208
 
     checksums           rmd160  3b02780312d1fc021b8cce739902292d183207d3 \
-                        sha256  0652706a487d594640a7d544271976261165bf269d90dc70447b38b363e54b22  
+sha256  0652706a487d594640a7d544271976261165bf269d90dc70447b38b363e54b22  
 
     if {$subport eq $name} {
         depends_lib-append port:gwenhywfar4
@@ -67,7 +67,7 @@ if {[string match "*-devel" $subport]} {
     set release         215
 
     checksums           rmd160  3923a8b166a7a67c239fa7ddce3196657a04dd39 \
-                        sha256  f9420d8b34c2eee703a7d26dd71a849700fdb2d7372b7649a3488b5a69f55565
+sha256  f9420d8b34c2eee703a7d26dd71a849700fdb2d7372b7649a3488b5a69f55565
 
     if {$subport eq "aqbanking5-devel"} {
         depends_lib-append  port:gwenhywfar4-devel

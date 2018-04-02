@@ -27,7 +27,7 @@ master_sites        ${homepage}ftp/
 use_xz              yes
 
 checksums           rmd160  92fed815e710165d4283155d34dd4fcf32f20355 \
-                    sha256  de7aee451afaa1aa391f7076b5f602922c2da0e05524a8d8fea413eda83cc78b
+sha256  de7aee451afaa1aa391f7076b5f602922c2da0e05524a8d8fea413eda83cc78b
 
 depends_build       port:autoconf \
                     port:automake

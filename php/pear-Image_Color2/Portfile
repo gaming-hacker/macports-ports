@@ -13,4 +13,4 @@ description         PEAR Image_Color2 package
 long_description    ${description}
 
 checksums           rmd160  e9fa4a769214e458d1e1e1fcf1356fca4ec762c6 \
-                    sha256  09c83b2524ef8816c723c1635bc2d53bba81de9eb73cd2bec86c274d58c617e0
+sha256  09c83b2524ef8816c723c1635bc2d53bba81de9eb73cd2bec86c274d58c617e0

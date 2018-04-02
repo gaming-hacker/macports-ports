@@ -21,7 +21,7 @@ homepage            http://curlftpfs.sourceforge.net/
 master_sites        sourceforge:project/curlftpfs/curlftpfs/${version}
 
 checksums           rmd160  16740731fc75b4249a8fddcae355ad1a9d408061 \
-                    sha256  4eb44739c7078ba0edde177bdd266c4cfb7c621075f47f64c85a06b12b3c6958
+sha256  4eb44739c7078ba0edde177bdd266c4cfb7c621075f47f64c85a06b12b3c6958
 
 depends_build       port:pkgconfig
 depends_lib         port:curl port:osxfuse path:lib/pkgconfig/glib-2.0.pc:glib2 port:gettext port:libiconv port:zlib

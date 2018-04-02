@@ -12,4 +12,4 @@ description         PEAR Services_YouTube package
 long_description    ${description}
 
 checksums           rmd160  3c4b6fe7a1305a488cdcb48d805b9f482cb299dd \
-                    sha256  deea369b7ee8fe9961cf3ab630da74cb0ad06b3da01d25d8dac0ed8f71f9fb52
+sha256  deea369b7ee8fe9961cf3ab630da74cb0ad06b3da01d25d8dac0ed8f71f9fb52

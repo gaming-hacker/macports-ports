@@ -24,8 +24,8 @@ homepage        http://docbook.sourceforge.net/
 use_zip         yes
 
 checksums       md5     38a3361334ac3d135a851bcfa77beb0e \
-                sha1    8d2fa4a376f2caa018f668831279eacd03b4568e \
-                rmd160  c05c6e020b19e83c1fb4350953a1e1a193919832
+sha1    8d2fa4a376f2caa018f668831279eacd03b4568e \
+rmd160  c05c6e020b19e83c1fb4350953a1e1a193919832
 
 use_configure   no
 build           {}

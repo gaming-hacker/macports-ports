@@ -20,5 +20,5 @@ long_description    \
     the bro tool, see also port py-brotli for python modules.
 
 checksums           rmd160  559f44f571ccd4deebc700fa72bdddfce48c0b6d \
-                    sha256  83dd67f447388caca07525ae0eb7a46891e312a7d3dab3a0a578d32d207e0694 \
+sha256  83dd67f447388caca07525ae0eb7a46891e312a7d3dab3a0a578d32d207e0694 \
 size    23815022

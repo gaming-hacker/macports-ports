@@ -20,7 +20,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  a7bbeb9d6b6a4b87eedbc048ea605d7b3ba9314b \
-                    sha256  a15b7ec19644eec8d40ce11286bbca28ac188202b47e2b9fc593ab0974e9c784
+sha256  a15b7ec19644eec8d40ce11286bbca28ac188202b47e2b9fc593ab0974e9c784
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -79,7 +79,7 @@ platform darwin {
         version                 3.8.2
         revision                7
         checksums               rmd160  2aacd8b02f456e345b9f23ff6114d341bbf0013a \
-                                sha256  ae89d6902ed243304d2cbf2fa361f6dd0cb3401fdaf726e6fdd4acc09197d50a
+sha256  ae89d6902ed243304d2cbf2fa361f6dd0cb3401fdaf726e6fdd4acc09197d50a
         depends_lib-append      path:lib/pkgconfig/webkitgtk-3.0.pc:webkit-gtk3-2.0 \
                                 port:libwnck3 \
                                 port:nss

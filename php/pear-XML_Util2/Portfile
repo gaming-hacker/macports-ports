@@ -13,4 +13,4 @@ description         PEAR XML_Util2 package
 long_description    ${description}
 
 checksums           rmd160  bd8edc33b8b3e244ccb53a58e7d2fae54c84c97e \
-                    sha256  085d64bd4be6d07e9c93cffc8a6706de5c49d9dc049fb0f8d1ee98827026e4f1
+sha256  085d64bd4be6d07e9c93cffc8a6706de5c49d9dc049fb0f8d1ee98827026e4f1

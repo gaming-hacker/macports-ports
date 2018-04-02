@@ -16,7 +16,7 @@ homepage            https://dnscap.dns-oarc.net/
 master_sites        ${homepage}
 
 checksums           sha1    b034dcb8aeb6ecbf5c3d12e3dc82dcee40a6e382 \
-                    rmd160  5bdb8851fda74904347106fcc0a9c9dfa719f63c
+rmd160  5bdb8851fda74904347106fcc0a9c9dfa719f63c
 
 patchfiles          patch-dump_dns.c.diff
 

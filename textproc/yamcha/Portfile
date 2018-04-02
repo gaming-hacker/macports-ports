@@ -22,7 +22,7 @@ homepage            http://www.chasen.org/~taku/software/yamcha/
 master_sites        ${homepage}src/
 
 checksums           sha1    4ee6d8150557761f86fcb8af118636b7c23920c0 \
-                    rmd160  ac21fa16a45efa40775d426cd6229f612a7aa21e
+rmd160  ac21fa16a45efa40775d426cd6229f612a7aa21e
 
 depends_lib         port:perl5 \
                     port:TinySVM

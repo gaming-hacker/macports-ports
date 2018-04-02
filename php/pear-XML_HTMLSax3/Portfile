@@ -13,4 +13,4 @@ description         PEAR XML_HTMLSax3 package
 long_description    ${description}
 
 checksums           rmd160  0ebda60c3ef8575dc97dce92f8bb636ba20ff398 \
-                    sha256  86c6182b3be32fbb2b75c8ddd1560810f56b14b591a71ad0444793100a1e98dd
+sha256  86c6182b3be32fbb2b75c8ddd1560810f56b14b591a71ad0444793100a1e98dd

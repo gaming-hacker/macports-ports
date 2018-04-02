@@ -21,7 +21,7 @@ homepage            http://www.ossp.org/pkg/tool/iselect/
 master_sites        ftp://ftp.ossp.org/pkg/tool/iselect
 
 checksums           rmd160  cc836e69d61e5a32903b113836de29669aab8055 \
-                    sha256  5b75fc5fa5407e85fa77d2a299c4e7628c0213116809f343946e62a8a25c5b1b
+sha256  5b75fc5fa5407e85fa77d2a299c4e7628c0213116809f343946e62a8a25c5b1b
 
 depends_lib         port:ncurses
 

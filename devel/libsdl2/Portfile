@@ -23,7 +23,7 @@ master_sites    ${homepage}release/
 distname        ${my_name}-${version}
 
 checksums       rmd160 131abebf4e693df09b7ee09cba89809b539f7fe5 \
-                sha256 edc77c57308661d576e843344d8638e025a7818bff73f8fbfab09c3c5fd092ec
+sha256 edc77c57308661d576e843344d8638e025a7818bff73f8fbfab09c3c5fd092ec
 
 configure.args  --without-x
 build.args      V=1

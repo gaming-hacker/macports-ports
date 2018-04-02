@@ -13,7 +13,7 @@ description         Compare perl data structures
 long_description    ${description}
 
 checksums           rmd160  a4865e56a35079c6eef5631b1e4633c0812c62b5 \
-                    sha256  1d4b36db545fa9fbacd8c012618f6a7846238ee12ab627a2764cfaf45ad4ea73
+sha256  1d4b36db545fa9fbacd8c012618f6a7846238ee12ab627a2764cfaf45ad4ea73
 
 platforms           darwin
 supported_archs     noarch

@@ -15,7 +15,7 @@ long_description    This module is for reading record-oriented data \
 platforms           darwin
 
 checksums           rmd160  b62b9adfd9e38323ceb5b3c9f9bd7e542864cbb2 \
-                    sha256  da3b81414c63f8d9218d116745a88b948c46c98b187634f629892e54001bc35a
+sha256  da3b81414c63f8d9218d116745a88b948c46c98b187634f629892e54001bc35a
 
 if {${perl5.major} != ""} {
     depends_build-append \

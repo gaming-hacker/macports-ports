@@ -27,8 +27,8 @@ homepage         http://ctags.sourceforge.net/
 platforms        darwin freebsd
 master_sites     sourceforge
 checksums           md5     c00f82ecdcc357434731913e5b48630d \
-                    sha1    482da1ecd182ab39bbdc09f2f02c9fba8cd20030 \
-                    rmd160  191495869fbfa2f77a9619a4920eba26d02eface
+sha1    482da1ecd182ab39bbdc09f2f02c9fba8cd20030 \
+rmd160  191495869fbfa2f77a9619a4920eba26d02eface
 
 patchfiles          patch-php.c.diff
 

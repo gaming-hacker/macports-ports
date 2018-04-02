@@ -18,7 +18,7 @@ homepage            https://tinyca.alioth.debian.org
 master_sites        macports_distfiles:${name}
 
 checksums           rmd160  db384b635030164b0c32a4a814c170002105a375 \
-                    sha256  4227af38fee310741da29ff0681bba55f547548d98b6a5e61b3f768588de47dd
+sha256  4227af38fee310741da29ff0681bba55f547548d98b6a5e61b3f768588de47dd
 
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:zip \

@@ -23,8 +23,8 @@ md5 and sha-1.
 
 checksums \
 md5     f91c74f9ccab2b574a98be5bc31eb280 \
-    sha1    d6f324e70a42a8bbf7a5458521257225afcf0caf \
-    rmd160  4b3e8f601687e791aed62c90cbf5850ea714129b
+sha1    d6f324e70a42a8bbf7a5458521257225afcf0caf \
+rmd160  4b3e8f601687e791aed62c90cbf5850ea714129b
 
 patchfiles \
     patch-autotools-namespace-stomping.diff

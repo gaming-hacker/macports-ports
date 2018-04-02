@@ -16,7 +16,7 @@ long_description    Python module interface to the cURL library which is a \
                     many protocols.
 platforms           darwin
 checksums           rmd160  786b6e0461051eae67bdcded046095895ea2a6a2 \
-                    sha256  52ffab110e32348d775f241c973eb56f96b08eedbc110d77d257cdb0a24ab7ba
+sha256  52ffab110e32348d775f241c973eb56f96b08eedbc110d77d257cdb0a24ab7ba
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:curl

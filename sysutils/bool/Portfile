@@ -18,7 +18,7 @@ platforms       darwin
 master_sites    gnu
 use_xz          yes
 checksums       rmd160  793769777395560fd44017933f905ad9cee5daac \
-                sha256  dc75d36344c93c49eac3196f7543ed67f3bde9e0bdebdb5677099455f3ab2dbb
+sha256  dc75d36344c93c49eac3196f7543ed67f3bde9e0bdebdb5677099455f3ab2dbb
 
 configure.args  --mandir=${prefix}/share/man
 

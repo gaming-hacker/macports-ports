@@ -12,7 +12,7 @@ description         PEAR Services_Digg2 package
 long_description    ${description}
 
 checksums           rmd160  3b24bbc41c16f1a86507b5a3c397d6f2e885b79d \
-                    sha256  bae091080b38cd67d5e5ec9e262f47aba9ef93315d39b65d98bc624c4cc75757
+sha256  bae091080b38cd67d5e5ec9e262f47aba9ef93315d39b65d98bc624c4cc75757
 
 depends_lib-append  port:pear-HTTP_Request2 \
                     port:pear-HTTP_OAuth

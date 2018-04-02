@@ -22,7 +22,7 @@ homepage                    http://cppcheck.sourceforge.net/
 master_sites                sourceforge:project/cppcheck/cppcheck/${version}
 
 checksums                   rmd160  d8b2a54386bd278cd38136c23818b4a89137786b \
-                            sha256  7164a0fc15839957c69f1cf48d714a8ea346005ef6cc413f4f6a41f173ce4c7a
+sha256  7164a0fc15839957c69f1cf48d714a8ea346005ef6cc413f4f6a41f173ce4c7a
 
 depends_build               port:libxslt \
                             port:docbook-xsl

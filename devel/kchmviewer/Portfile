@@ -26,7 +26,7 @@ distname            ${name}-${version}
 master_sites        sourceforge:project/${name}/${name}/${version}
 
 checksums           rmd160  3b072a3225c5a4c796a9406232c3f696285d9aa4 \
-                    sha256  27cbac45c786b1718550a87e6f86010e161302b426c6396ff2a3091b913b17dd
+sha256  27cbac45c786b1718550a87e6f86010e161302b426c6396ff2a3091b913b17dd
 
 depends_build-append \
                     port:dos2unix

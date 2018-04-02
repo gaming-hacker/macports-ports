@@ -16,7 +16,7 @@ long_description    Mail::MboxParser attempts to provide a simplified \
                     access to standard UNIX-mailboxes.
 
 checksums           rmd160  fdbd521b41d28062d7710859a074453699524582 \
-                    sha256  33f025e9b10956b9a58ef01774b92b790aacca5fb00b1c755ada77ad4e5c7d3b
+sha256  33f025e9b10956b9a58ef01774b92b790aacca5fb00b1c755ada77ad4e5c7d3b
 
 if {${perl5.major} != ""} {
     patchfiles          fix-spelling-error-in-manpage.patch \

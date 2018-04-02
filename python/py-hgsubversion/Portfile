@@ -18,7 +18,7 @@ description             hgsubversion is a Mercurial extension for \
 long_description        ${description}
 
 checksums               rmd160  0de8e0e6259333b4d0f0ee687f60202ca5d054a8 \
-                        sha256  289e6bbf2dac465b7e8e83a199c69a998b30830a8bea33a7cedb5303e5568964
+sha256  289e6bbf2dac465b7e8e83a199c69a998b30830a8bea33a7cedb5303e5568964
 
 # can't set python.versions before adding custom subports
 subport py-hgsubversion-devel {}
@@ -31,7 +31,7 @@ if {[string match "*-devel" $subport]} {
     revision            0
 
     checksums           rmd160  2b1ba2d8a5dcab2e8f0d67d307d34b39d3adc946 \
-                        sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
+sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
 }
 
 python.versions 27 36

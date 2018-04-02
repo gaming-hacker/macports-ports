@@ -26,7 +26,7 @@ use_zip             yes
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  a464ef9b3dc774be8d13c0578c15c17dfd392eb0 \
-                    sha256  dc972e06094b9af5b855b3df4a646395e43d1c9d0d39ed345b7393560d0b9173
+sha256  dc972e06094b9af5b855b3df4a646395e43d1c9d0d39ed345b7393560d0b9173
 
 if {${name} ne ${subport}} {
     livecheck.type      none

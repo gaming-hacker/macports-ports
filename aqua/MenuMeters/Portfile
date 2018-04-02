@@ -21,7 +21,7 @@ long_description    The MenuMeters monitors are true SystemUIServer plugins     
                     across logins and restarts.
 
 checksums           rmd160  80e7fe3437aa2e9d1e62e632bc4e2e0092773252 \
-                    sha256  d559d74d5018bd4e395636030f3946072f2945dbf6f5ab8ebf06e81420e3538e
+sha256  d559d74d5018bd4e395636030f3946072f2945dbf6f5ab8ebf06e81420e3538e
 
 patchfiles          patch-MenuMeters.xcodeproj-project.pbxproj.diff
 

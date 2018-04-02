@@ -35,7 +35,7 @@ if {${name} ne ${subport}} {
 }
 
 checksums           rmd160  47b2285eb5fe9ff01f50d71e57da896110865af2 \
-                    sha256  292ee62bd50633af4d460d722c77e8c31647e936ae68e3c000e229312163becd
+sha256  292ee62bd50633af4d460d722c77e8c31647e936ae68e3c000e229312163becd
 
 livecheck.type      regex
 livecheck.url       ${master_sites}

@@ -20,7 +20,7 @@ long_description    The Enthought Tool Suite includes a set of packages\
 platforms           darwin
 
 checksums           rmd160  004958cc00d28caf83045497c813880cdbf7f1ee \
-                    sha256  eb80e3ba421de2c3665a7f83bd3e3588d291013b3dd1d46e816124d62a53e163
+sha256  eb80e3ba421de2c3665a7f83bd3e3588d291013b3dd1d46e816124d62a53e163
 
 python.versions 27 36
 

@@ -20,8 +20,8 @@ homepage            http://pycurl.sourceforge.net/
 master_sites        ${homepage}/download
 distname            pycurl-${version}
 checksums           md5     919d58fe37e69fe87ce4534d8b6a1c7b \
-                    sha1    3fb59eca1461331bb9e9e8d6fe3b23eda961a416 \
-                    rmd160  dab547b3db67ed30cafb556a1a383f567064de49
+sha1    3fb59eca1461331bb9e9e8d6fe3b23eda961a416 \
+rmd160  dab547b3db67ed30cafb556a1a383f567064de49
 
 python.versions 27 36
 

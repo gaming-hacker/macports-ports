@@ -21,7 +21,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  99875fb7dafb5c4afbc7ac339a943e37b1ff3e57 \
-                    sha256  b029c05619f888821b4eb150c8f73feb83cca893129655057137d2b8da4cae18 \
+sha256  b029c05619f888821b4eb150c8f73feb83cca893129655057137d2b8da4cae18 \
 size    322091
 
 patchfiles          patch-configure.ac.diff \

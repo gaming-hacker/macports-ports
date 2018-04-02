@@ -13,6 +13,6 @@ description         PEAR Text_CAPTCHA package
 long_description    ${description}
 
 checksums           rmd160  54c384f749d7b198e40918b2c0b4f5fe532d8d15 \
-                    sha256  a097d273a06be16c1f0d09ec938718fc7ef1e64bdd6d1c59393cff5412e64a4a
+sha256  a097d273a06be16c1f0d09ec938718fc7ef1e64bdd6d1c59393cff5412e64a4a
 
 depends_lib-append  port:pear-Text_Password

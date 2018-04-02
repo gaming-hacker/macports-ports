@@ -23,7 +23,7 @@ master_sites        http://www.bennewitz.com/bluefish/stable/source/ \
                     sourceforge:project/bluefish/bluefish/${version}
 
 checksums           rmd160  98f9e1442882dd8342895ef43f636ff6b5dce623 \
-                    sha256  afeca12b693bb58e30c2199e6a21cc06da02d88e0ac9d08b7a231a9c8e7c3eb2
+sha256  afeca12b693bb58e30c2199e6a21cc06da02d88e0ac9d08b7a231a9c8e7c3eb2
 
 use_bzip2           yes
 

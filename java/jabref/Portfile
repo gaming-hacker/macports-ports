@@ -20,7 +20,7 @@ distname            JabRef-${version}-src
 master_sites        sourceforge:project/jabref/jabref/${version}
 
 checksums           rmd160  7144b51058f69953ef0440900f38311a7a4a916c \
-                    sha256  09b57afcfeb1730b58a887dc28f0f4c803e9c00fade1f57245ab70e2a98ce6ad
+sha256  09b57afcfeb1730b58a887dc28f0f4c803e9c00fade1f57245ab70e2a98ce6ad
 
 worksrcdir          ${name}-${version}
 

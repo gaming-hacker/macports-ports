@@ -23,7 +23,7 @@ license             BSD
 
 master_sites        ${homepage}
 checksums           rmd160  8ca5a2db7a1e81e6871a72799e1bd35bf0731ec1 \
-                    sha256  4726101734acde4e2300f2a63991b76bbcf00d2b1897bd15277c9c9ebdfb654a
+sha256  4726101734acde4e2300f2a63991b76bbcf00d2b1897bd15277c9c9ebdfb654a
 
 use_configure       no
 

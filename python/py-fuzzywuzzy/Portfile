@@ -21,7 +21,7 @@ long_description    Fuzzy string matching like a boss. It uses Levenshtein \
                     in a simple-to-use package.
 
 checksums           rmd160  49889258ea7832e5f1c1506e69caf29a855eed05 \
-                    sha256  1bde112698d7cf905521f6054441e0e65e4e9df888ed9a01081a371a99586392
+sha256  1bde112698d7cf905521f6054441e0e65e4e9df888ed9a01081a371a99586392
 
 if {${name} ne ${subport}} {
     depends_build-append \

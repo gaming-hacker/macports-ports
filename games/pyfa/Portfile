@@ -28,7 +28,7 @@ depends_run-append  port:py${python.version}-dateutil \
                     port:py${python.version}-wxpython-3.0
 
 checksums           rmd160  cec83b490c6c96d89017e8be8abd7c194010707e \
-                    sha256  f024e0710255b42152f744a5c4d9c553ac4a9ed5571deee0f51e1ee73cb74770
+sha256  f024e0710255b42152f744a5c4d9c553ac4a9ed5571deee0f51e1ee73cb74770
 
 build { }
 

@@ -12,4 +12,4 @@ description         PEAR Science_Chemistry package
 long_description    ${description}
 
 checksums           rmd160  6abc849ead9550a6d19130ccf3f1b2630ff6585f \
-                    sha256  21312a41f7ddd48a888ee704f6db3fc733dac84d795538ff8e480383f78a3579
+sha256  21312a41f7ddd48a888ee704f6db3fc733dac84d795538ff8e480383f78a3579

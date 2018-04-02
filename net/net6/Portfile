@@ -20,7 +20,7 @@ master_sites            http://releases.0x539.de/${name}/ \
                         http://gentoo.osuosl.org/distfiles/
 
 checksums               rmd160  c1445cdf2e7a34d0639d7bb410404d83ab972d27 \
-                        sha256  155dd82cbe1f8354205c79ab2bb54af4957047422250482596a34b0e0cc61e21
+sha256  155dd82cbe1f8354205c79ab2bb54af4957047422250482596a34b0e0cc61e21
 
 depends_build           port:pkgconfig
 

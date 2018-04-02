@@ -28,16 +28,16 @@ master_sites    ftp://ftp.distributed.net/pub/dcti/v${branch}/ \
 platform i386 {
     distname        ${name}${minor}-macosx-x86
     checksums       md5 ff9cd03f6b41dcb4dc1609189b8844f5 \
-                    sha1 63f327ab925c1cda0ccdba66472cec8ec1c279ae \
-                    rmd160 c8bf288464dca88968f39c936aa8ddf3c5a88824
+sha1 63f327ab925c1cda0ccdba66472cec8ec1c279ae \
+rmd160 c8bf288464dca88968f39c936aa8ddf3c5a88824
     worksrcdir      ${name}511-macosx-x86
 }
 
 platform powerpc {
     distname        ${name}${minor}-macosx-ppc
     checksums       md5 d0c9f31951c9767ae83cfa2646c5eb98 \
-                    sha1 7c7bf07f415d367428487b24019c1a84498f8a34 \
-                    rmd160 bebfa883f3c136e45714fe8a77e4577527e8b2ab
+sha1 7c7bf07f415d367428487b24019c1a84498f8a34 \
+rmd160 bebfa883f3c136e45714fe8a77e4577527e8b2ab
     worksrcdir      ${name}511-macosx-ppc
 }
 

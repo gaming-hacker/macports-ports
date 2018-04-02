@@ -16,7 +16,7 @@ long_description    Colm is a programming language designed for the analysis \
 homepage            http://www.colm.net/open-source/colm/
 master_sites        http://www.colm.net/files/colm/
 checksums           rmd160  aaafc4a52a83dbbbff9cb22eced7a680f99a5fcb \
-                    sha256  acacb5acaf42596b631a572ff86b084962d4d5b479fd59d7d0cd5ca9d111ba9e
+sha256  acacb5acaf42596b631a572ff86b084962d4d5b479fd59d7d0cd5ca9d111ba9e
 
 test.run            yes
 test.dir            ${worksrcpath}/test

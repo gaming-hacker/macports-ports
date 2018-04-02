@@ -20,8 +20,8 @@ homepage        http://sourceforge.net/projects/gplcver
 platforms       darwin
 master_sites    sourceforge:project/gplcver/gplcver/${version}
 checksums       md5    857a15a9ebc8ef63ece01502509cbeb7 \
-				sha1   946bb35b6279646c6e10c309922ed17deb2aca8a \
-				rmd160 5af004b345142ac5400c9defc7125bbe127d2c49
+sha1   946bb35b6279646c6e10c309922ed17deb2aca8a \
+rmd160 5af004b345142ac5400c9defc7125bbe127d2c49
 use_bzip2       yes
 distname        ${name}-${version}.src
 

@@ -21,7 +21,7 @@ homepage            http://libtorrent.rakshasa.no/
 master_sites        ${homepage}downloads/
 
 checksums           rmd160  090e6af9b4318a6176064159f6a8f70ab708c7fe \
-                    sha256  ed2f2dea16c29cac63fa2724f6658786d955f975861fa6811bcf1597ff8a5e4f
+sha256  ed2f2dea16c29cac63fa2724f6658786d955f975861fa6811bcf1597ff8a5e4f
 
 depends_build       port:pkgconfig
 

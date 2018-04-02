@@ -15,8 +15,8 @@ platforms           darwin
 
 master_sites        http://www.verilog.net
 checksums           md5     493ac8a83f92018649a0bdc50d65c24b \
-                    sha1    79a05739977f98ab85678a7af16a189695dbd02d \
-                    rmd160  177ee8bd4a3ea53f367f307476117de4bb7c1bb9
+sha1    79a05739977f98ab85678a7af16a189695dbd02d \
+rmd160  177ee8bd4a3ea53f367f307476117de4bb7c1bb9
 
 use_parallel_build  no
 

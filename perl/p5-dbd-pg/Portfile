@@ -16,7 +16,7 @@ long_description    DBD::Pg is a Perl module which works with the DBI \
 platforms           darwin
 
 checksums           rmd160  ca702e850204138e2894b1f482174c078850d5de \
- sha256  9ffa9c4e9d1d6b1483ec3259114b95998fd7e4a4168931c903b5ad5fd7a6783e \
+sha256  9ffa9c4e9d1d6b1483ec3259114b95998fd7e4a4168931c903b5ad5fd7a6783e \
 size    261212
 
 if {${perl5.major} ne ""} {

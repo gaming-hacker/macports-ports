@@ -15,7 +15,7 @@ homepage            https://www.flyn.org/projects/${name}/
 master_sites        ${homepage}
 
 checksums           rmd160  bd910ee0ef617a86ab1fb9318d90f6f1d620896d \
-                    sha256  f296a5ba02eae36a41381d19d5d08f2b9b7657091db9674f82121cd26c2893a1 \
+sha256  f296a5ba02eae36a41381d19d5d08f2b9b7657091db9674f82121cd26c2893a1 \
 size    446135
 
 depends_build       port:pkgconfig

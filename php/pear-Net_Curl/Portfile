@@ -12,4 +12,4 @@ description         PEAR Net_Curl package
 long_description    ${description}
 
 checksums           rmd160  b15aef95cdc8f34d76b111e9621975aac04070c8 \
-                    sha256  97185c4c0e138091228a3ef97c9e26986e4e09dd8008a54acd8ae1f6311b3040
+sha256  97185c4c0e138091228a3ef97c9e26986e4e09dd8008a54acd8ae1f6311b3040

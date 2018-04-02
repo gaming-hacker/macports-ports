@@ -21,7 +21,7 @@ master_sites        ${homepage}
 use_xz              yes
 
 checksums           rmd160  fd730c5ce969b53e3b5d250f58308ea9b58fd936 \
-                    sha256  4b6f566dd1a8badac68c4353c7dd0f4de17f8627b85a7a70d5eb1ae3b540ec3f
+sha256  4b6f566dd1a8badac68c4353c7dd0f4de17f8627b85a7a70d5eb1ae3b540ec3f
 
 depends_build       port:pkgconfig \
                     port:intltool \

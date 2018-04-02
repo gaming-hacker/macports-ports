@@ -20,7 +20,7 @@ long_description    ${description}
 homepage            http://binwalk.org
 
 checksums           rmd160  272e9b9aae95cca266376d069d3e7a87207e6eb3 \
-                    sha256  ae9c17b76fc5a318a5feea37d4fa082a9a897a38ffbe8f585eef5c8d6cbb046b
+sha256  ae9c17b76fc5a318a5feea37d4fa082a9a897a38ffbe8f585eef5c8d6cbb046b
 
 depends_lib-append  port:py${python.default_version}-setuptools \
                     port:py${python.default_version}-liblzma

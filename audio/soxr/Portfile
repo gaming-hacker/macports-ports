@@ -29,7 +29,7 @@ long_description    The SoX Resampler library `libsoxr' performs \
 homepage            http://sourceforge.net/projects/soxr/
 
 checksums           rmd160  11aea28f2a944982bcd42b1724150e1bf3d80779 \
-                    sha256  b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889 \
+sha256  b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889 \
 size    94384
 
 configure.args-append \

@@ -16,6 +16,6 @@ platforms           darwin
 extract.suffix      .tgz
 
 checksums           rmd160  4a83a51799cf8956d514d9f1e3fea71a02142d93 \
-                    sha256  5239cc5f644a50b0de9ffeaa51fa9991eb06ecb1bf4678873e3ab89af9c0daf3
+sha256  5239cc5f644a50b0de9ffeaa51fa9991eb06ecb1bf4678873e3ab89af9c0daf3
 
 supported_archs     noarch

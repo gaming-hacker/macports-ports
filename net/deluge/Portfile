@@ -22,7 +22,7 @@ master_sites        http://download.deluge-torrent.org/source/
 use_bzip2           yes
 
 checksums           rmd160  42bce46edd8f21c4fe1c00bbc1ccb49f89582f38 \
-                    sha256  dcf823131be56c2180814e8def11496aaaf700710b5694867ba9f057615ac790
+sha256  dcf823131be56c2180814e8def11496aaaf700710b5694867ba9f057615ac790
 
 depends_build-append \
                     port:intltool

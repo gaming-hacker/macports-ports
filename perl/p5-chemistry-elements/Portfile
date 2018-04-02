@@ -19,4 +19,4 @@ description         Perl extension for working with Chemical Elements
 long_description    ${description}
 
 checksums           rmd160  0b5d832b3799dfd64eb338660a60ba9a6649eba8 \
-                    sha256  27c95f718b0335b7a920bf9aacf5017c39cca9dca26392c6d22412cced89e72c
+sha256  27c95f718b0335b7a920bf9aacf5017c39cca9dca26392c6d22412cced89e72c

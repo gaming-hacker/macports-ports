@@ -16,4 +16,4 @@ description         HTML::SimpleParse - a bare-bones HTML parser
 long_description    ${description}
 
 checksums           rmd160  97e26d2e8fe5da6b897a9ced6815ebaf03792242 \
-                    sha256  c103a19cf99801489ce23e4da86a5f9df79f032f1f1c71b8130d0d3ff96e6304
+sha256  c103a19cf99801489ce23e4da86a5f9df79f032f1f1c71b8130d0d3ff96e6304

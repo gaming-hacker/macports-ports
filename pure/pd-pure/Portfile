@@ -15,7 +15,7 @@ description                     a Pd plugin loader which lets you run Pure scrip
 long_description                ${name} provides ${description}.
 
 checksums                       rmd160  5f62d0f63561df8a6f7d23359cca839b52aab6ea \
-                                sha256  59849c78a0592d5c0e0d4254d7ccfdc46169bd44f28c5cd6f2348e58ddad9009
+sha256  59849c78a0592d5c0e0d4254d7ccfdc46169bd44f28c5cd6f2348e58ddad9009
 
 depends_build-append            port:pkgconfig
 

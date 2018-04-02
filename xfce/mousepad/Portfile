@@ -15,8 +15,8 @@ homepage        http://www.xfce.org/
 master_sites    http://archive.xfce.org/src/apps/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 f55314c5dda6323883241e6cf01550a7 \
-                sha1 ebadaadc02184b01230666dc12f8ab90032876f9 \
-                sha256 60114431eac8db6bb6ce18bd38f1630cccb684375b97a445a1b6fd619848d132
+sha1 ebadaadc02184b01230666dc12f8ab90032876f9 \
+sha256 60114431eac8db6bb6ce18bd38f1630cccb684375b97a445a1b6fd619848d132
 
 depends_build   port:intltool port:pkgconfig
 depends_lib     port:gtk2 port:gtksourceview2 \

@@ -24,8 +24,8 @@ distname            objconv
 use_zip             yes
 
 checksums \
-    rmd160  db584d81f2c695c6e0d15190ce2cfaf9d45918f9 \
-    sha256  1aa3171a8f0ebba7902b413857b178df2b079cbc31bfb95b196ba7a685c227ba
+rmd160  db584d81f2c695c6e0d15190ce2cfaf9d45918f9 \
+sha256  1aa3171a8f0ebba7902b413857b178df2b079cbc31bfb95b196ba7a685c227ba
 
 post-extract {
     system -W ${workpath} "unzip -d ${name} source.zip"

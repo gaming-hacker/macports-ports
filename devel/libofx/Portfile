@@ -22,8 +22,8 @@ license                 GPL-2+
 master_sites            sourceforge
 
 checksums               md5     2ea3adcec51e6dc90555a52a7ab621c9 \
-                        sha1    b8ea875cee16953166449de8ddd1b69fb181f61b \
-                        rmd160  c3df97d1004e3218ddac45f049e29c890c5bafd2
+sha1    b8ea875cee16953166449de8ddd1b69fb181f61b \
+rmd160  c3df97d1004e3218ddac45f049e29c890c5bafd2
 
 depends_build           path:bin/pkg-config:pkgconfig
 depends_lib             port:opensp

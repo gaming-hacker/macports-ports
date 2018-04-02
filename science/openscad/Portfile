@@ -38,7 +38,7 @@ master_sites        http://files.openscad.org
 distfiles           ${distname}.src${extract.suffix}
 
 checksums           rmd160  323eda5bd96b2093d4fbb2274763f7a0ae4eb7f4 \
-                    sha256  5d2a7d83c32f4201ee0d17445a36baccaebc0bc7facd009fc8dd86ee537c5a36
+sha256  5d2a7d83c32f4201ee0d17445a36baccaebc0bc7facd009fc8dd86ee537c5a36
 
 depends_build-append \
                     port:bison \

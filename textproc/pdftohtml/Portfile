@@ -15,8 +15,8 @@ long_description    ${description}
 homepage            http://pdftohtml.sourceforge.net/
 master_sites        sourceforge
 checksums           md5 2d82996faaf2b9439f8395743c1c163d \
-                    sha1 409572da65cf5234d026a5b199a81a26e75ca4d8 \
-                    rmd160 8e948507b4899462de6ff34afd26fcb4bf0b3511
+sha1 409572da65cf5234d026a5b199a81a26e75ca4d8 \
+rmd160 8e948507b4899462de6ff34afd26fcb4bf0b3511
 
 use_configure       no
 

@@ -19,7 +19,7 @@ homepage            http://jflex.de/
 master_sites        sourceforge
 
 checksums           sha1    282cf480497ff2219326a2805a68e88a24221b09 \
-                    rmd160  96b9b18770ba808cd43ed2fda96f69234b82dbcf
+rmd160  96b9b18770ba808cd43ed2fda96f69234b82dbcf
 
 use_configure       no
 

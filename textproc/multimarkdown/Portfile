@@ -29,7 +29,7 @@ homepage            http://fletcherpenney.net/multimarkdown/
 platforms           darwin
 
 checksums           rmd160  a404166520c54ad7b99cacc6b4d9b744b336861e \
-                    sha256  48c21bea3ad8db5033c4a56cc9230bb22586d4cd732c151a53cd43aca2b4bc48
+sha256  48c21bea3ad8db5033c4a56cc9230bb22586d4cd732c151a53cd43aca2b4bc48
 
 depends_lib-append  port:curl
 

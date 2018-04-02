@@ -13,7 +13,7 @@ description         PEAR Net_DNSBL package
 long_description    ${description}
 
 checksums           rmd160  b91f1b32d71f4e29de9c3a6d61888f55a0e9bac6 \
-                    sha256  6a9a468e291103143ba51c3c2b75f5fc017af528a411ede6fbce9b1d0d09c566
+sha256  6a9a468e291103143ba51c3c2b75f5fc017af528a411ede6fbce9b1d0d09c566
 
 depends_lib-append  port:pear-Cache_Lite \
                     port:pear-Net_DNS \

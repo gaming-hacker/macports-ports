@@ -18,6 +18,6 @@ depends_lib		port:zlib \
 depends_build		port:pkgconfig
 
 checksums		sha1 ccf475e7eb71dd96640757e5ab53e07bcb771ce1 \
-			rmd160 ceddf9f5b7b227f97ef268bcf11efc91e21afc4b
+rmd160 ceddf9f5b7b227f97ef268bcf11efc91e21afc4b
 
 configure.args		--disable-java

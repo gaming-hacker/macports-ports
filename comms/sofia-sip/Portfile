@@ -21,8 +21,8 @@ long_description \
                 other real-time and person-to-person communication services.
 
 checksums       md5     f3582c62080eeecd3fa4cd5d4ccb4225 \
-                sha1    fe11c98fae19cbdbd7e55876c5553c1f9a0c561d \
-                rmd160  0d398a03b8ca227c84d0909bb6f3d4fa1011cb08
+sha1    fe11c98fae19cbdbd7e55876c5553c1f9a0c561d \
+rmd160  0d398a03b8ca227c84d0909bb6f3d4fa1011cb08
 
 depends_build   port:pkgconfig \
                 port:doxygen \

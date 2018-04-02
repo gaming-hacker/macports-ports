@@ -20,7 +20,7 @@ long_description    A unique flat-file database module, written in pure perl. Tr
 platforms           darwin
 
 checksums           rmd160  1b173615f2ba28413b5f50cf5e8bf90401ef1206 \
-                    sha256  d07512ba92c894b06162c3c8299b225b2feec5c65043478959c7c5956234ec1e
+sha256  d07512ba92c894b06162c3c8299b225b2feec5c65043478959c7c5956234ec1e
 
 if {${perl5.major} != ""} {
     depends_build-append \

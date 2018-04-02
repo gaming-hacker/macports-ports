@@ -25,7 +25,7 @@ master_sites        sourceforge:sunwait4windows
 distname            ${name}[string map {. -} ${version}]
 
 checksums           rmd160  3ba0d5ab15ce346633d04cb8929cf432f71a7ca5 \
-                    sha256  839ac6853f21073fa85619fac049d416619e2e6bac7a966df02e1045df13f625
+sha256  839ac6853f21073fa85619fac049d416619e2e6bac7a966df02e1045df13f625
 
 extract.cmd         cat
 extract.pre_args 

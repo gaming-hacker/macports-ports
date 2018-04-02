@@ -17,7 +17,7 @@ distname        gdb-${version}
 use_xz          yes
 
 checksums       rmd160  2d218e845614b7a0fb0777273309e8ad1b7bbcba \
-                sha256  f6a24ffe4917e67014ef9273eb8b547cb96a13e5ca74895b06d683b391f3f4ee
+sha256  f6a24ffe4917e67014ef9273eb8b547cb96a13e5ca74895b06d683b391f3f4ee
 depends_run     bin:avarice:avarice
 
 # without --disable-nls the build process breaks

@@ -26,7 +26,7 @@ master_sites        pypi:m/meta/
 distname            meta-${version}
 
 checksums           rmd160  894cd7c3c91b923e7d61b6b485278702566a587e \
-                    sha256  58d2c012beea9f2aaea82fbf67d0d6b3124e66c79cbc31829beb2005c3372885
+sha256  58d2c012beea9f2aaea82fbf67d0d6b3124e66c79cbc31829beb2005c3372885
 
 if {${name} ne ${subport}} {
     conflicts           py${python.version}-meta-devel

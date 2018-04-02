@@ -13,6 +13,6 @@ description         PEAR HTML_QuickForm2 package
 long_description    ${description}
 
 checksums           rmd160  6a1480f8f4ac09862ceb49130a727eb94310e211 \
-                    sha256  164ddf3f70ae9f2275614616ac4e471e2d4a1f83d70d2d73950fb2ae25571402
+sha256  164ddf3f70ae9f2275614616ac4e471e2d4a1f83d70d2d73950fb2ae25571402
 
 depends_lib-append  port:pear-HTML_Common2

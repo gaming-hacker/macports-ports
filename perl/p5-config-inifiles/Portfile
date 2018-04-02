@@ -11,7 +11,7 @@ description         A module for reading .ini-style configuration files.
 long_description    ${description}
 
 checksums           rmd160  bacfb248944650b28008cee00927e324d6a2cbad \
-                    sha256  414a19f98cc745769ce762aefce01fa52d031bc244403cd32fd1f6257f2dedc2 \
+sha256  414a19f98cc745769ce762aefce01fa52d031bc244403cd32fd1f6257f2dedc2 \
 size    65502
 
 platforms           darwin

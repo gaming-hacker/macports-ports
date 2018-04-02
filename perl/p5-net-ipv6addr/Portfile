@@ -19,7 +19,7 @@ long_description    Net::IPv6Addr provides ${description} in all formats \
                     are inclined to play with DNS records.
 
 checksums           rmd160  b07bccd44e78f64a4124b3ed35fe67b29226bca5 \
-                    sha256  84d86116b9a5c2a1b8dfe3f5a5dceb257b2e462c480ee261974a812e1cb521c0
+sha256  84d86116b9a5c2a1b8dfe3f5a5dceb257b2e462c480ee261974a812e1cb521c0
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -21,8 +21,8 @@ distname            PRICE-${version}
 master_sites        sourceforge:price
 
 checksums           md5     139a1e739e1df73d08a1c1ec31316180 \
-                    sha1    954417f69696345acb7615ea2f72030512a360dd \
-                    rmd160  2d8087fe5e11245905bbe42aa5619b5d466403e1
+sha1    954417f69696345acb7615ea2f72030512a360dd \
+rmd160  2d8087fe5e11245905bbe42aa5619b5d466403e1
 
 livecheck.type      sourceforge
 livecheck.regex     PRICE-((\\d+(\\.)*)+)\\.tar\\.gz

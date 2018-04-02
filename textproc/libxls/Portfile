@@ -20,6 +20,6 @@ use_zip             yes
 worksrcdir          ${name}
 
 checksums           rmd160  43fb5d07c5b8338d700fce66b68775ea805df483 \
-                    sha256  d3baea458a511d9b587a367528fa2a7fef410113ac9f6359834469b8f8d10dbd
+sha256  d3baea458a511d9b587a367528fa2a7fef410113ac9f6359834469b8f8d10dbd
 
 livecheck.regex     ${name}-(\\d+\\.\\d+\\.\\d+)${extract.suffix}

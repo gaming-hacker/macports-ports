@@ -38,7 +38,7 @@ long_description \
     compatible.
 
 checksums           rmd160  6fb90ce7190190998ff4c579934b76de270db271 \
-                    sha256  3b609b7feba5230e8f6dd8d245ddbefac324c5a6ae4186947670d9ac2cd25573
+sha256  3b609b7feba5230e8f6dd8d245ddbefac324c5a6ae4186947670d9ac2cd25573
 
 variant pfft_patches description {Apply patches recommended for use as dependency of pfft port} {
     if {![mpi_variant_isset]} {

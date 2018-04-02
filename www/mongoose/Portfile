@@ -19,7 +19,7 @@ master_sites    googlecode
 extract.suffix  .tgz
 
 checksums       rmd160  1e11c3d3015f316ad8e5722874035604be9e3a4c \
-                sha256  018a7201e4d548e11a30b97f78ce1a02414a2f462bd12957b2247fdd7e865e22
+sha256  018a7201e4d548e11a30b97f78ce1a02414a2f462bd12957b2247fdd7e865e22
 
 worksrcdir      ${name}
 

@@ -24,7 +24,7 @@ master_sites        ${homepage}downloads
 use_xz              yes
 
 checksums           rmd160  a8629b5baa71bb124f61bfcb8f38abbdc7c54ab3 \
-                    sha256  eb9e56bbb5b2893601d100d0e0293983049b302c5ab61bfb544ad0ee2cc1f2df
+sha256  eb9e56bbb5b2893601d100d0e0293983049b302c5ab61bfb544ad0ee2cc1f2df
 
 depends_build       port:pkgconfig
 depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2

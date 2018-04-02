@@ -24,7 +24,7 @@ homepage            http://maude.cs.uiuc.edu/
 master_sites        ${homepage}download/current/
 
 checksums           sha1    3f1ec2f39a22942bb096102d1d8d6eed4510483e \
-                    rmd160  a9387701016e04ba4a256c3db8c9f10195147183
+rmd160  a9387701016e04ba4a256c3db8c9f10195147183
 
 depends_build       port:bison \
                     port:flex

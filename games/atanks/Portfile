@@ -19,7 +19,7 @@ homepage                http://atanks.sourceforge.net/
 master_sites            sourceforge:project/${name}/${name}/${name}-${version}
 
 checksums               sha1    b5c692839015992e55bb9c9eb94d75739dcb4081 \
-                        rmd160  542cc069a850eb2a28cc6df320da62c9d6461f94
+rmd160  542cc069a850eb2a28cc6df320da62c9d6461f94
 
 depends_lib             port:allegro
 

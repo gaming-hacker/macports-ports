@@ -14,8 +14,8 @@ long_description	${description}
 homepage		http://www.sha-bang.de/index.php?page=13_eso
 master_sites	http://www.sha-bang.de/12_eso/
 checksums           md5     ebc4e31c1e76cd433bbee734b95c967b \
-                    sha1    ed4dec1a36d39c44084e3292e6d08226f31e2c3e \
-                    rmd160  35cbc417dbe90054b6dc5cc83031bdd273a30ad7
+sha1    ed4dec1a36d39c44084e3292e6d08226f31e2c3e \
+rmd160  35cbc417dbe90054b6dc5cc83031bdd273a30ad7
 extract.suffix	.tgz
 
 use_configure		no

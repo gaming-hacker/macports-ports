@@ -14,7 +14,7 @@ description         A pure-Python implementation of immutable URLs
 long_description    Hyperlink is a pure-Python package and requires nothing but Python.
 
 checksums           rmd160  a5dcd8871c5040925dd05189b90ec99cdf70f8cd \
-                    sha256  14fb17a1d714a55ed596ce724a408d0c81d28b4efceb2bf0767a94c02f7c5f1c
+sha256  14fb17a1d714a55ed596ce724a408d0c81d28b4efceb2bf0767a94c02f7c5f1c
 
 python.versions 27 36
 

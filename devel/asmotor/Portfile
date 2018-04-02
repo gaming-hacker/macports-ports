@@ -26,7 +26,7 @@ distname            ${name}-${version}-src
 use_bzip2           yes
 
 checksums           sha1    e76057443e0b771892c159227ecc34da2203c2f6 \
-                    rmd160  bd36cd2c317a59106b084be0cf9670ce26bc526d
+rmd160  bd36cd2c317a59106b084be0cf9670ce26bc526d
 
 depends_build       port:scons
 

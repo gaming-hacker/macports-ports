@@ -14,14 +14,14 @@ description         TeX Live: Czech/Slovak
 long_description    Support for Czech/Slovak.
 
 checksums           texlive-lang-czechslovak-44347-run.tar.xz \
-                    rmd160  c1c883e60910b0ee3784083c94b3957547c37489 \
-                    sha256  3846b2949be385cd06e6f186a0db345356933a1fff9b29199b7d265916743e09 \
+rmd160  c1c883e60910b0ee3784083c94b3957547c37489 \
+sha256  3846b2949be385cd06e6f186a0db345356933a1fff9b29199b7d265916743e09 \
                     texlive-lang-czechslovak-44347-doc.tar.xz \
-                    rmd160  712130f5dc024462b2e5afa95ee5e49c0b190d25 \
-                    sha256  c635784821fb6f74a5a293d55237eba08b4bde63dd9b915380e0a88135d05f08 \
+rmd160  712130f5dc024462b2e5afa95ee5e49c0b190d25 \
+sha256  c635784821fb6f74a5a293d55237eba08b4bde63dd9b915380e0a88135d05f08 \
                     texlive-lang-czechslovak-44347-src.tar.xz \
-                    rmd160  216feb9ece16c5d7139282dfbabe83f3b4c748f4 \
-                    sha256  310ed2656c40bbd36b9a98cbb6428b3ed33726cb78e7351db28551d616b14851
+rmd160  216feb9ece16c5d7139282dfbabe83f3b4c748f4 \
+sha256  310ed2656c40bbd36b9a98cbb6428b3ed33726cb78e7351db28551d616b14851
 
 depends_lib         port:texlive-basic port:texlive-latex
 

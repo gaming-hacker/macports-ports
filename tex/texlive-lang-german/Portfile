@@ -14,14 +14,14 @@ description         TeX Live: German
 long_description    Support for German.
 
 checksums           texlive-lang-german-44401-run.tar.xz \
-                    rmd160  2494e76bca577d2616828d4cc18b7a5c2fa91454 \
-                    sha256  b85cff369b4a70a26b3e5de234879fcbc977d10e45bcc5a714e8f3356d26f382 \
+rmd160  2494e76bca577d2616828d4cc18b7a5c2fa91454 \
+sha256  b85cff369b4a70a26b3e5de234879fcbc977d10e45bcc5a714e8f3356d26f382 \
                     texlive-lang-german-44401-doc.tar.xz \
-                    rmd160  d766399fc17f8c14f02115c75a9f1d29dd018a6c \
-                    sha256  6331f6f973e8b9357aed2b520f619975da20252fcd35e2979c55b41d9036685d \
+rmd160  d766399fc17f8c14f02115c75a9f1d29dd018a6c \
+sha256  6331f6f973e8b9357aed2b520f619975da20252fcd35e2979c55b41d9036685d \
                     texlive-lang-german-44401-src.tar.xz \
-                    rmd160  5ee155c57d4ea01ea44d2f39275e24c1274924c8 \
-                    sha256  a28c574c8874fb49200e98efe4b7730f6164ea558218c3fd4379b67b2919c21d
+rmd160  5ee155c57d4ea01ea44d2f39275e24c1274924c8 \
+sha256  a28c574c8874fb49200e98efe4b7730f6164ea558218c3fd4379b67b2919c21d
 
 depends_lib         port:texlive-basic
 

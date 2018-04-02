@@ -30,11 +30,11 @@ distfiles-append        ${waf_distfile}:waf
 extract.only-delete     ${waf_distfile}
 
 checksums               ${mpv_distfile} \
-                        rmd160  9218deaee02382a74af81f1f08d3a088ca2c4ae4 \
-                        sha256  069875c74ce60f5db337aa4040416795c421a8b94641a886652516585d150eb1 \
+rmd160  9218deaee02382a74af81f1f08d3a088ca2c4ae4 \
+sha256  069875c74ce60f5db337aa4040416795c421a8b94641a886652516585d150eb1 \
                         ${waf_distfile} \
-                        rmd160  d1a5d0e0f42a0101f5832abb33cd71018505405f \
-                        sha256  167dc42bab6d5bd823b798af195420319cb5c9b571e00db7d83df2a0fe1f4dbf
+rmd160  d1a5d0e0f42a0101f5832abb33cd71018505405f \
+sha256  167dc42bab6d5bd823b798af195420319cb5c9b571e00db7d83df2a0fe1f4dbf
 
 installs_libs           no
 

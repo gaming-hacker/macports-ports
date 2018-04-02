@@ -27,7 +27,7 @@ homepage                http://ds9.si.edu/
 master_sites            ${homepage}/download/source
 distname                ${name}.${version}
 checksums               sha256  63818177d1acc28d3a4ee196cf4485e769235cd8b07b256974a0c643d481c189 \
-                        rmd160  f6e5199db5ba5b0c1a49a9a547d6261953297a88
+rmd160  f6e5199db5ba5b0c1a49a9a547d6261953297a88
 
 depends_lib             port:fontconfig \
                         port:freetype \

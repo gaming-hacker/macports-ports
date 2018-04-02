@@ -26,7 +26,7 @@ distname        ${my_name}-${version}
 python.versions 27 36
 
 checksums       rmd160 17c8a1f8b6f13c355b347e97c2b0e82abe1f89df \
-                sha256 410bcd1d6409026fbaa65d9ed33bf6dd8b1e94a499e32168acfc7b332e4095c0
+sha256 410bcd1d6409026fbaa65d9ed33bf6dd8b1e94a499e32168acfc7b332e4095c0
 
 post-destroot {
     if {${name} ne ${subport}} {

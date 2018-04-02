@@ -20,7 +20,7 @@ long_description    Gyoto aims at providing a framework for computing orbits \
 homepage            http://gyoto.obspm.fr
 
 checksums           rmd160  db4745d6cefcd4718442beca9c718583e737d73b \
-                    sha256  790868d1b3cb4344d2b980a82192421f355b279f7bbe1de8f8bf217179ef291e
+sha256  790868d1b3cb4344d2b980a82192421f355b279f7bbe1de8f8bf217179ef291e
 
 depends_build       port:LORENE \
                     port:pkgconfig

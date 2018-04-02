@@ -30,7 +30,7 @@ long_description \
     for accessing netCDF data.
 
 checksums           rmd160  e09445545d8a835e3df78f63a2a0e725616a259f \
-                    sha256  c4f2fc229c03c0b4f633838d9000070e9468a7108bb70e9838e9510aeb0b93a6
+sha256  c4f2fc229c03c0b4f633838d9000070e9468a7108bb70e9838e9510aeb0b93a6
 
 compilers.choose    f77 f90 fc
 mpi.setup           require_fortran

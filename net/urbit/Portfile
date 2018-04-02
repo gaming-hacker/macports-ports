@@ -14,7 +14,7 @@ long_description    Urbit is ${description}, built on a clean-slate system softw
 homepage            https://www.urbit.org/
 
 checksums           rmd160  1022acd07349c8fc3320ac6d84e07e5e9aa3ac07 \
-                    sha256  455adbda42fe453cba9f854aa1d1b2e6bc0cabbb7c07a2fef9aa7244f2ef7ffc
+sha256  455adbda42fe453cba9f854aa1d1b2e6bc0cabbb7c07a2fef9aa7244f2ef7ffc
 
 depends_lib         port:gmp \
                     port:libsigsegv \

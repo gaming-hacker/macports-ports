@@ -16,7 +16,7 @@ long_description    BinHex is a format used by Macintosh for transporting Mac fi
 platforms           darwin
 
 checksums           rmd160  90e90a5ed3d18579a2a30c99889db630b7ae6ce7 \
-                    sha256  513591b4be46bd7eb91e83197721b4a045a9753a3dd2f11de82c9d3013226397
+sha256  513591b4be46bd7eb91e83197721b4a045a9753a3dd2f11de82c9d3013226397
 
 if {${perl5.major} != ""} {
     depends_build-append \

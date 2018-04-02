@@ -6,7 +6,7 @@ name            am-utils
 version         6.1.5
 revision        1
 checksums       rmd160  ab1485aaa65c522cc5db7c7917ec59d3b47e0803 \
-                sha256  d070682af75effd6b49ed3e893603039ecd0a013a49d8d09375187676d645178
+sha256  d070682af75effd6b49ed3e893603039ecd0a013a49d8d09375187676d645178
 
 categories      sysutils
 platforms       darwin

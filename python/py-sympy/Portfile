@@ -31,7 +31,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  cbbddba9a18146124a5374eafda37c9817baa304 \
-                    sha256  ac5b57691bc43919dcc21167660a57cc51797c28a4301a6144eff07b751216a4
+sha256  ac5b57691bc43919dcc21167660a57cc51797c28a4301a6144eff07b751216a4
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-mpmath

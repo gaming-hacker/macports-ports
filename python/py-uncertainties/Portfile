@@ -17,7 +17,7 @@ long_description        The uncertainties package transparently handles\
 platforms               darwin
 
 checksums               rmd160  a8805a0554d7ca6417775f4863e7277f81094a30 \
-                        sha256  2a769626f977b7a76a44292d5fce8e938ba082e7d1f3325199762d5f671a35af
+sha256  2a769626f977b7a76a44292d5fce8e938ba082e7d1f3325199762d5f671a35af
 
 python.versions 27 36
 

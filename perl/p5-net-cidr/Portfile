@@ -16,6 +16,6 @@ long_description    The Net::CIDR package contains functions that \
 platforms           darwin
 
 checksums           rmd160  9444521c43ba77b46c8e27e1a817032afca081e8 \
-                    sha256  c3df7ea8d42b2d8ec328c187329c5f8c4db6a2470873f61e3d0dd91430ef1427
+sha256  c3df7ea8d42b2d8ec328c187329c5f8c4db6a2470873f61e3d0dd91430ef1427
 
 supported_archs     noarch

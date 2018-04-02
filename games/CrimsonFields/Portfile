@@ -23,8 +23,8 @@ distname            crimson-${version}
 use_bzip2           yes
 
 checksums           md5     9e71bc8c12ddadf42136a3e07ae86a2c \
-                    sha1    f71b1fc5eecd262d1e7bdafd259f3b061e6c9477 \
-                    rmd160  21a008cfca5afce0df2349ec87bf1550fbb25d3a
+sha1    f71b1fc5eecd262d1e7bdafd259f3b061e6c9477 \
+rmd160  21a008cfca5afce0df2349ec87bf1550fbb25d3a
 
 depends_lib         port:libsdl \
                     port:libsdl_mixer \

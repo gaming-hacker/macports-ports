@@ -20,8 +20,8 @@ long_description        XSel is a ${description}. Normally this is only \
                         pasting it with the middle mouse button.
 
 checksums               md5     75983f143ce83dc259796c6eaf85c8f5 \
-                        sha1    e48df89d7ce7e1256b0c7464393533a0c296eca1 \
-                        rmd160  53fc7fe06e4e4ebe3c47a3a97408876cd0c5faed
+sha1    e48df89d7ce7e1256b0c7464393533a0c296eca1 \
+rmd160  53fc7fe06e4e4ebe3c47a3a97408876cd0c5faed
 
 depends_lib             port:xorg-libX11
 

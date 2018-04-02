@@ -12,4 +12,4 @@ description         PEAR XML_XSLT_Wrapper package
 long_description    ${description}
 
 checksums           rmd160  ebf32af78ce8ef033ecda13ecf670982029715d5 \
-                    sha256  40822e40d2fb7f8318bd5eb297220affdd080eeba692f82c8207b279e12b5029
+sha256  40822e40d2fb7f8318bd5eb297220affdd080eeba692f82c8207b279e12b5029

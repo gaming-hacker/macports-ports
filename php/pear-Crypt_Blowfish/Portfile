@@ -12,4 +12,4 @@ description         PEAR Crypt_Blowfish package
 long_description    ${description}
 
 checksums           rmd160  aeab23fcd0afa28fe4976e1656ecde437933a0af \
-                    sha256  ad6f8984f83317b901a47c1c715ab88d477d5257c8f31a660cd0ac2aae566fe8
+sha256  ad6f8984f83317b901a47c1c715ab88d477d5257c8f31a660cd0ac2aae566fe8

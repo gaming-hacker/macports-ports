@@ -15,7 +15,7 @@ long_description    Generic non-JVM producer and consumer for Apache Kafka >=0.8
 homepage            https://github.com/edenhill/librdkafka
 
 checksums           sha256 8996fb63d72ed0f14372bac131fcce56d0a3060f5f0081cb5538c2f5d0494985 \
-                    rmd160 25bf021cb5aa500047cb8b8cddbc9e8c67ac44fe
+rmd160 25bf021cb5aa500047cb8b8cddbc9e8c67ac44fe
 
 configure.args      --enable-json
 

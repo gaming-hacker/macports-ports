@@ -12,4 +12,4 @@ description         PEAR File_Bittorrent2 package
 long_description    ${description}
 
 checksums           rmd160  9e50a536ef6aeff2087a293f1cd281bbbeb73e35 \
-                    sha256  674d354ca7a03de5f2020ad9ec2779f1a17c5c6e38d002964f7dfc0684a656eb
+sha256  674d354ca7a03de5f2020ad9ec2779f1a17c5c6e38d002964f7dfc0684a656eb

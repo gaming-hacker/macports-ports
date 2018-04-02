@@ -28,8 +28,8 @@ platform darwin 10 {
 
 version             2.11.2
 checksums \
-    rmd160 87319adda4d467a99bbab9e5676dffc560f9d708 \
-    sha256 3fd56f5614265f883121b924006c15a8cc16420106a2d7c97bcea9b9e91aa460
+rmd160 87319adda4d467a99bbab9e5676dffc560f9d708 \
+sha256 3fd56f5614265f883121b924006c15a8cc16420106a2d7c97bcea9b9e91aa460
 
 global sdrplay_lib
 set sdrplay_lib "libmirsdrapi-rsp.dylib"

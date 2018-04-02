@@ -34,7 +34,7 @@ distname        apache-maven-${version}-bin
 worksrcdir      apache-maven-${version}
 
 checksums       rmd160 4d6124a0dc34ea2c0692103dc7113c681ede8a25 \
-                sha256 b52956373fab1dd4277926507ab189fb797b3bc51a2a267a193c931fffad8408 \
+sha256 b52956373fab1dd4277926507ab189fb797b3bc51a2a267a193c931fffad8408 \
 size   8799579
 
 depends_run     port:maven_select \

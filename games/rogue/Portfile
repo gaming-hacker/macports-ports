@@ -22,7 +22,7 @@ homepage            https://web.archive.org/web/20160706144207/http://rogue.rogu
 master_sites        https://web.archive.org/web/20151019212622/http://rogue.rogueforge.net/files/rogue5.4/
 
 checksums           md5     033288f46444b06814c81ea69d96e075 \
-                    sha1    aef9e589c4f31eb6d3eeb9d543ab8787b00fb022
+sha1    aef9e589c4f31eb6d3eeb9d543ab8787b00fb022
 
 distname            ${name}${version}-src
 

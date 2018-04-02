@@ -25,7 +25,7 @@ homepage            http://gpredict.oz9aec.net/
 master_sites        sourceforge:project/gpredict/Gpredict/${version}
 
 checksums           rmd160  a9f99c6284a8f9facd16b53a98f12949020c7512 \
-                    sha256  e759c4bae0b17b202a7c0f8281ff016f819b502780d3e77b46fe8767e7498e43
+sha256  e759c4bae0b17b202a7c0f8281ff016f819b502780d3e77b46fe8767e7498e43
 
 use_bzip2           yes
 

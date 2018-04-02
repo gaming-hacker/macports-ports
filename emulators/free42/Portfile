@@ -24,8 +24,8 @@ master_sites            http://thomasokken.com/free42/upstream:upstream
 distname                ${name}-macports-${version}
 distfiles               ${distname}.tgz:upstream
 checksums               ${distname}.tgz \
-                        rmd160  16b8b3b2833db2a419ea058b35409444298c480b \
-                        sha256  fcb69c991544ffc4696ed09e58c4309bad4758c5f9dddf73ac00c83041f18e15 \
+rmd160  16b8b3b2833db2a419ea058b35409444298c480b \
+sha256  fcb69c991544ffc4696ed09e58c4309bad4758c5f9dddf73ac00c83041f18e15 \
 size    9069325
 
 extract.only            ${distname}.tgz
@@ -44,8 +44,8 @@ variant logo description {Use skin with logo} {
     master_sites-append http://thomasokken.com/free42/skins/desktop:logo
     distfiles-append    ${logo}:logo
     checksums-append    ${logo} \
-                        rmd160  b98c2789f6cb2a47d0b23d56ebb7a5012965f9a0 \
-                        sha256  94ccfb5d581362f4f12300d909fde53545776c0f48c8507703628aa7cba43eee
+rmd160  b98c2789f6cb2a47d0b23d56ebb7a5012965f9a0 \
+sha256  94ccfb5d581362f4f12300d909fde53545776c0f48c8507703628aa7cba43eee
 
     post-extract {
         copy -force ${distpath}/${logo} ${worksrcpath}/skins/${logo}

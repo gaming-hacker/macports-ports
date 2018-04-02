@@ -17,7 +17,7 @@ distname            ${name}-experimental-${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  1e7edec2ea07fc44484de707a1d1e78b247c1345 \
-                    sha256  7a0cad5263cd0ca50d1f4aacb4b35f56b9223627a43f495fef3ebf85152184ea
+sha256  7a0cad5263cd0ca50d1f4aacb4b35f56b9223627a43f495fef3ebf85152184ea
 
 depends_build       port:pkgconfig
 

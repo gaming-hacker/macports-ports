@@ -19,7 +19,7 @@ license             unknown
 
 master_sites        ${homepage}
 checksums           rmd160  8779f4d129cb56f202d755dc3cf11ab30c10bb9f \
-                    sha256  226cb9849777bafe09587badde89f96578c445ef08ed6c00a451c2088071b237
+sha256  226cb9849777bafe09587badde89f96578c445ef08ed6c00a451c2088071b237
 
 distname            lda-${version}
 

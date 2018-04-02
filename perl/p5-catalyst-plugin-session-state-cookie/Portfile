@@ -19,7 +19,7 @@ long_description    In order for Catalyst::Plugin::Session to work the \
 platforms           darwin
 
 checksums           rmd160  be13439d71318779d4539708d5005b5662df8d9d \
-                    sha256  4beb19bbe1407f654b059ad5d7ab8c4d64da1ea35fddf705bba22777ad5b7de7
+sha256  4beb19bbe1407f654b059ad5d7ab8c4d64da1ea35fddf705bba22777ad5b7de7
 
 if {${perl5.major} != ""} {
     depends_lib-append \

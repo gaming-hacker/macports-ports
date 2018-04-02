@@ -32,11 +32,11 @@ distfiles           ${dfile_gmt_gpl} \
                     ${dfile_gmt_nogpl}
 
 checksums           ${dfile_gmt_gpl} \
-                    rmd160  e735cbaabea5011cb1b1ad37437f9d19415482c3 \
-                    sha256  f0646402858559ea07a3d51f5029a0b43e7af7547ab79c3064cce3f899ad6626 \
+rmd160  e735cbaabea5011cb1b1ad37437f9d19415482c3 \
+sha256  f0646402858559ea07a3d51f5029a0b43e7af7547ab79c3064cce3f899ad6626 \
                     ${dfile_gmt_nogpl} \
-                    rmd160  367777c4dc7debb18b973762d850bdc15acb6af1 \
-                    sha256  ba3c8f819cf24dbfad80d757caaf87caad50f4cb4080ab859d2c329fa49c6b50
+rmd160  367777c4dc7debb18b973762d850bdc15acb6af1 \
+sha256  ba3c8f819cf24dbfad80d757caaf87caad50f4cb4080ab859d2c329fa49c6b50
 
 depends_lib         port:ghostscript \
                     port:gshhg-gmt \

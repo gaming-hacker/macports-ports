@@ -13,4 +13,4 @@ description         PEAR Structures_LinkedList package
 long_description    ${description}
 
 checksums           rmd160  4fe6890510f1913c9aff3205a8c4e85ebb7bad53 \
-                    sha256  26e16610444ff6d09f847e68b0e38c522ff96eb64a4b2f07c91742a213ade692
+sha256  26e16610444ff6d09f847e68b0e38c522ff96eb64a4b2f07c91742a213ade692

@@ -20,7 +20,7 @@ master_sites		http://www.network-weathermap.com/files
 use_zip			yes
 distfiles		php-weathermap-${version}${extract.suffix}
 checksums		md5 221f64506abc4d6572774b3fd3d2e2a7 \
-			rmd160 76181bfbf6850157265d1851897ada95007c1898
+rmd160 76181bfbf6850157265d1851897ada95007c1898
 worksrcdir		weathermap
 
 depends_lib		path:bin/perl:perl5 \

@@ -23,7 +23,7 @@ supported_archs     noarch
 maintainers         fusion.gat.com:smithsp openmaintainer
 
 checksums           rmd160  91f221b6f24b4707d94b3bd95e6e72830ff6e706 \
-                    sha256  b194e71f2d830d747015cd47b9fc79776e4933406894645f6c7fc76f45738753
+sha256  b194e71f2d830d747015cd47b9fc79776e4933406894645f6c7fc76f45738753
 
 python.versions 27 36
 

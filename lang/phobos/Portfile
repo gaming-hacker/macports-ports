@@ -16,7 +16,7 @@ long_description \
 homepage            http://dlang.org/
 
 checksums           rmd160  d2c4fb5d43077c936df1c67f4e26ce779e594f39 \
-                    sha256  bbb9f07a0d61d121bb4c2ff11efb244462089f4550c4ce8b33f74319532e0c6e
+sha256  bbb9f07a0d61d121bb4c2ff11efb244462089f4550c4ce8b33f74319532e0c6e
 
 depends_lib         port:druntime
 

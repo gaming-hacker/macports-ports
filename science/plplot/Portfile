@@ -15,7 +15,7 @@ license         LGPL
 description     Scientific plotting package, double precision version
 master_sites    sourceforge
 checksums       rmd160  7fdc90f73538a43baebf5da1a74c00f188784b4b \
-                sha256  8dc5da5ef80e4e19993d4c3ef2a84a24cc0e44a5dade83201fca7160a6d352ce
+sha256  8dc5da5ef80e4e19993d4c3ef2a84a24cc0e44a5dade83201fca7160a6d352ce
 homepage        http://plplot.sourceforge.net/
 set description_base "PLplot is a cross-platform software package for \
 creating scientific plots. To help accomplish that task it is organized as a \

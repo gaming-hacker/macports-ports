@@ -13,4 +13,4 @@ description         PEAR Graph package
 long_description    ${description}
 
 checksums           rmd160  19f922de6d705f1e2600492b18dd6d072e5547ad \
-                    sha256  6792b0ba3d72850397ad5518174308f424c2559c982402fdb7614194cd47c4cd
+sha256  6792b0ba3d72850397ad5518174308f424c2559c982402fdb7614194cd47c4cd

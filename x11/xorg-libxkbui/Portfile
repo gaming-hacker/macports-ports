@@ -15,8 +15,8 @@ master_sites        xorg:individual/lib/
 
 distname            libxkbui-${version}
 checksums           md5     1143e456f7429e18e88f2eadb2f2b6b1 \
-                    sha1    bd6f1d6fa390d3fee118f9d5b15e156315576b9f \
-                    rmd160  ff356dea1c93a1a94bab4df80b66f9304d827b2a
+sha1    bd6f1d6fa390d3fee118f9d5b15e156315576b9f \
+rmd160  ff356dea1c93a1a94bab4df80b66f9304d827b2a
 
 use_bzip2           yes
 use_parallel_build  yes

@@ -17,7 +17,7 @@ description         Perl module to compile other modules
 long_description    ${description}
 
 checksums           rmd160  4e5713ae7718f33de5cf6dfdea299f3731639d90 \
-                    sha256  224205297e1d85e4c7821e551d94fa76c43f9b89a0c6fbb0b4a741ced5d896cb
+sha256  224205297e1d85e4c7821e551d94fa76c43f9b89a0c6fbb0b4a741ced5d896cb
 
 if {${perl5.major} != ""} {
     depends_lib-append \

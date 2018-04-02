@@ -18,7 +18,7 @@ description         Read Outlook .msg files
 long_description    ${description}
 
 checksums           rmd160  53ef0db5c6eb49717dcfbba5d0cf62c1c1843180 \
-                    sha256  cb2b1545e28ceb58817cebde98fcb0142ca1610e6bd5064891d42285ab7f6139
+sha256  cb2b1545e28ceb58817cebde98fcb0142ca1610e6bd5064891d42285ab7f6139
 
 if {${perl5.major} != ""} {
     depends_lib-append \

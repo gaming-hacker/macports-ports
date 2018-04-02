@@ -25,7 +25,7 @@ master_sites        pypi:F/Fabric
 distname            Fabric-${version}
 
 checksums           rmd160  5c2fcf085385dd5ae935ddf6bf14e8ce54ef99d8 \
-                    sha256  81572002a562b26df657ca10d06b5bcfc6fd56b53374037392c83d4a2158208f
+sha256  81572002a562b26df657ca10d06b5bcfc6fd56b53374037392c83d4a2158208f
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

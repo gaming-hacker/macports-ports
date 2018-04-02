@@ -15,7 +15,7 @@ description         Epoxy is a library for handling OpenGL function \
 long_description    ${description}
 
 checksums           rmd160  8a9046eb8ab604e0c22746e4155a0ce7d1a0b9b2 \
-                    sha256  2219e63b061349eca326b112dabfefd18dccd3f781a92cd75bd97e7770c6c639 \
+sha256  2219e63b061349eca326b112dabfefd18dccd3f781a92cd75bd97e7770c6c639 \
 size    326412
 
 # Yes, mesa and xorg-libX11 are *build* dependencies.  The library will function correctly

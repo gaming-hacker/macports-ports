@@ -21,7 +21,7 @@ homepage      https://www.lsc-group.phys.uwm.edu/daswg/projects/lalsuite.html
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160  05d3ccf9e77e95b12008510099e0352584e69582 \
-              sha256  47015eba574e9b31ae78ca8e73936204a419c803b256200460a0651995a0a273
+sha256  47015eba574e9b31ae78ca8e73936204a419c803b256200460a0651995a0a273
 
 depends_build-append \
               port:pkgconfig \

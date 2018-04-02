@@ -19,7 +19,7 @@ distname            lpeg-${version}
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  fb6d1613b668edbddfbffd378642827f0c1626ee \
-                    sha256  6aad270b91d1b1c6fd75f68e162329a04a644e50e917d55f46cc8384b7120004
+sha256  6aad270b91d1b1c6fd75f68e162329a04a644e50e917d55f46cc8384b7120004
 
 depends_build       port:pkgconfig
 depends_lib         port:lua

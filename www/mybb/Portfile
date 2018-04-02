@@ -28,7 +28,7 @@ distname            ${name}_[string map {. ""} [subst [regsub {\.(\d+)$} ${versi
 use_zip             yes
 
 checksums           rmd160  6cb5038bfabf823b6222da7713503d84ad7d4f05 \
-                    sha256  1f83c892f3b4b47ed3b244177ee4e4e5a5633f8008d92596373820bae7e23a5f
+sha256  1f83c892f3b4b47ed3b244177ee4e4e5a5633f8008d92596373820bae7e23a5f
 
 extract.mkdir       yes
 

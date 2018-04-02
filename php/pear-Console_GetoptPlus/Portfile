@@ -12,4 +12,4 @@ description         PEAR Console_GetoptPlus package
 long_description    ${description}
 
 checksums           rmd160  7c827dcd9f444aaafbdb95397f17fbba84390799 \
-                    sha256  47f692419ab606a720cacbedc327fd2dcb2bd1136d2c6b48c91b8fdcb428afea
+sha256  47f692419ab606a720cacbedc327fd2dcb2bd1136d2c6b48c91b8fdcb428afea

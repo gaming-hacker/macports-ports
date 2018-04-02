@@ -23,8 +23,8 @@ homepage            http://www.nongnu.org/color-theme/
 
 master_sites        http://www.very-clever.com/download/nongnu/color-theme/
 checksums           md5     a4de73c236a6af11ab378bfe18dabcca                \
-                    sha1    047d6cb207fdef66b25343479ebe09a1ed3954b5        \
-                    rmd160  82a2c75a65f50f9c5e6d5193c3f768824c6c1549
+sha1    047d6cb207fdef66b25343479ebe09a1ed3954b5        \
+rmd160  82a2c75a65f50f9c5e6d5193c3f768824c6c1549
 
 depends_lib         port:emacs
 

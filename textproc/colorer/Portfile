@@ -24,8 +24,8 @@ distname        Colorer-${version}
 use_zip         yes
 
 checksums       md5     075ede3afc260766fe13c71850a5e6c0 \
-                sha1    53cd454779621c09954ce70b6d06a4e1903ed6af \
-                rmd160  87c9ad2b99343c19e74211e658eb73ebcf0bcea9
+sha1    53cd454779621c09954ce70b6d06a4e1903ed6af \
+rmd160  87c9ad2b99343c19e74211e658eb73ebcf0bcea9
 
 post-extract {
     copy \

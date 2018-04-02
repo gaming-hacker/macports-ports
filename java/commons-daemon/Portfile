@@ -19,7 +19,7 @@ distname			${name}-${version}-src
 master_sites		apache:commons/daemon/source/
 
 checksums           rmd160  975d28ee016928842693e68d61e82cb5700975cf \
-                    sha256  2b60b28523cbd28497a02a298a341c51cabbe45983ec9e93616e6c91fbb5280c
+sha256  2b60b28523cbd28497a02a298a341c51cabbe45983ec9e93616e6c91fbb5280c
 
 patchfiles			patch-native-dso-dyld.c \
 					patch-configure.diff

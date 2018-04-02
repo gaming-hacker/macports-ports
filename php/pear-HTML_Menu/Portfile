@@ -13,4 +13,4 @@ description         PEAR HTML_Menu package
 long_description    ${description}
 
 checksums           rmd160  a9d523007a3cb1bb7db465303b3d2998d34769e3 \
-                    sha256  61d8747a5b13e3dbcd355c9446f46aefa22d09c9d78880e27eeb7bf8201892b8
+sha256  61d8747a5b13e3dbcd355c9446f46aefa22d09c9d78880e27eeb7bf8201892b8

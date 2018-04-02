@@ -26,7 +26,7 @@ distname            ${gname}-${version}
 use_xz              yes
 
 checksums           rmd160  7b6dcf07ceadf87f46366ccafb864486bf90c925 \
-                    sha256  51081ae3d37975dae33d3f6a40621d85cb68f4b36ae3835eec1513482aacfb39
+sha256  51081ae3d37975dae33d3f6a40621d85cb68f4b36ae3835eec1513482aacfb39
 
 depends_build       port:pkgconfig
 

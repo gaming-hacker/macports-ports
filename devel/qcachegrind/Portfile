@@ -19,8 +19,8 @@ distname            kcachegrind-${version}
 extract.suffix      .tar.gz
 
 checksums \
-    rmd160 a7d0ca0677e455720ad876e449cc7a003183d44d \
-    sha256 0bf6efb647d500bf09bbbab617d30a8a2a0a2cbf87fd1f2a1375d774c005b379
+rmd160 a7d0ca0677e455720ad876e449cc7a003183d44d \
+sha256 0bf6efb647d500bf09bbbab617d30a8a2a0a2cbf87fd1f2a1375d774c005b379
                     
 depends_lib         port:qt4-mac
 

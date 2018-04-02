@@ -12,6 +12,6 @@ description         PEAR MDB2_Driver_odbc package
 long_description    ${description}
 
 checksums           rmd160  434835574cdcb97970108305475dbc0b6098f8ab \
-                    sha256  e670e506dad75e219acc123d28c0a91797b5169bdcb3697dd4c9f797358c4387
+sha256  e670e506dad75e219acc123d28c0a91797b5169bdcb3697dd4c9f797358c4387
 
 depends_lib-append  port:pear-MDB2

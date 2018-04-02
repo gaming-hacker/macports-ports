@@ -17,7 +17,7 @@ long_description                ${name} provides ${description}. \
                                 hosts in the Pure programming language.
 
 checksums                       rmd160  5de09b800a4febae8bee8b0e701573a8e5ae7a0e \
-                                sha256  af20982fe43e8dce62d50bf7a78e461ab36c308325b123cddbababf0d3beaf9f
+sha256  af20982fe43e8dce62d50bf7a78e461ab36c308325b123cddbababf0d3beaf9f
 
 depends_build-append            port:pkgconfig
 

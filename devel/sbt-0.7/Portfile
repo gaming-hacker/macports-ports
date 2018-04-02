@@ -21,7 +21,7 @@ master_sites        googlecode:${project_name}
 distname            sbt-launch-${version}
 
 checksums           sha1    6b5ba879e80a0464c9eaae786bef494e448e6df7 \
-                    rmd160  0b5257cc9a746036d6dbc18bc00014191421ecb7
+rmd160  0b5257cc9a746036d6dbc18bc00014191421ecb7
 
 depends_build       bin:java:kaffe
 

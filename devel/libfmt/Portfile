@@ -19,7 +19,7 @@ long_description    \
     It can be used as a safe alternative to printf or as a fast alternative to C++ IOStreams.
 
 checksums           rmd160  cae7445443637ce7887bb6b2ef8136d7f57ded1b \
-                    sha256  4c322d3976cb4de91263fbcc1e8ddeffa6c5f32049b3ca2f740ba6a053df7052
+sha256  4c322d3976cb4de91263fbcc1e8ddeffa6c5f32049b3ca2f740ba6a053df7052
 
 configure.args-append \
     -DBUILD_SHARED_LIBS=ON

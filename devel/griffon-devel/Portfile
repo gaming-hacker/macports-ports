@@ -26,8 +26,8 @@ master_sites        http://dist.codehaus.org/griffon/griffon/${branch}.x/
 extract.suffix      .tgz
 
 checksums           md5     63d375d43d4205fead67ac62156f0c6a \
-                    sha1    d3fbf2579ec568fe4e73602bb0b297b5f97378c0 \
-                    rmd160  64683017fba794aadc9bdc171182a13bec3a1c83
+sha1    d3fbf2579ec568fe4e73602bb0b297b5f97378c0 \
+rmd160  64683017fba794aadc9bdc171182a13bec3a1c83
 
 worksrcdir          .
 set workTarget      ""

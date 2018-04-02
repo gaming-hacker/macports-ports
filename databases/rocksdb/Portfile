@@ -18,7 +18,7 @@ long_description    ${description}
 homepage            http://rocksdb.org/
 
 checksums           rmd160  0389fd163977edf437d92b5c8405f023b8f91d11 \
-                    sha256  6bc1cd4f6bc191fde8f69a3ddc4222a3ddfecf3d19d2b03089311952b8753e1a
+sha256  6bc1cd4f6bc191fde8f69a3ddc4222a3ddfecf3d19d2b03089311952b8753e1a
 
 depends_lib-append  port:gflags \
                     port:zlib \

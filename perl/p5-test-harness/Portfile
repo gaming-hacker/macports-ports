@@ -17,7 +17,7 @@ long_description    You can write test scripts without knowing the exact output 
                     performance statistics that are computed by the Benchmark module.
 
 checksums           rmd160  8923a7f261caba687a37da7d2957932016490404 \
-                    sha256  0fd90d4efea82d6e262e6933759e85d27cbcfa4091b14bf4042ae20bab528e53 \
+sha256  0fd90d4efea82d6e262e6933759e85d27cbcfa4091b14bf4042ae20bab528e53 \
 size    213232
 
 ## Test-Harness includes the 'prove' binary, which is used to run tests.  Sigh.

@@ -15,7 +15,7 @@ homepage            http://sdl.perl.org/
 platforms           darwin
 
 checksums           rmd160  4936af7a072f848d24c5e9299f67624602080d1e \
-                    sha256  e08aa73550b3f8d32ced0941c3c629f01c4ba4d480fc269e57f3fa6f8df86631
+sha256  e08aa73550b3f8d32ced0941c3c629f01c4ba4d480fc269e57f3fa6f8df86631
 
 if {${perl5.major} != ""} {
     depends_build-append \

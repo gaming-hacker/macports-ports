@@ -22,8 +22,8 @@ homepage            http://www.informatik-vollmer.de/software/latex2man.php
 
 master_sites        http://www.informatik-vollmer.de/software
 checksums           md5     3507109dcaabaabe81dc427811a29eb9 \
-                    sha1    e9b10025255510e4e8af066777c959b599131098 \
-                    rmd160  75090f62f12a0a14166514c4854a21567320ae50
+sha1    e9b10025255510e4e8af066777c959b599131098 \
+rmd160  75090f62f12a0a14166514c4854a21567320ae50
 
 depends_lib         bin:tex:texlive \
                     path:bin/perl:perl5

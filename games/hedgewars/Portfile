@@ -20,7 +20,7 @@ use_bzip2               yes
 distname                ${name}-src-${version}
 
 checksums               rmd160  25919e6d8d170d2873e32ebacbe3811526edbd10 \
-                        sha256  da2e4908042be56d1c0f3cb80a355bde7f0a49f675b050a03228cc3fb22aae89 \
+sha256  da2e4908042be56d1c0f3cb80a355bde7f0a49f675b050a03228cc3fb22aae89 \
 size    173042171
 
 depends_build-append    port:pkgconfig \

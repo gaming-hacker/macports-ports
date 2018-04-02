@@ -22,8 +22,8 @@ master_sites        sourceforge:bashdb
 distname            pydb-${version}
 
 checksums           md5  86ab5dcd4f1c81192aeb7e0828371b6c \
-                    sha1 9e6242c051089e53f3da4fcecba469c2d868de55 \
-                    rmd160 afc83ea56149c3b1fba84089386b6974f01b1344
+sha1 9e6242c051089e53f3da4fcecba469c2d868de55 \
+rmd160 afc83ea56149c3b1fba84089386b6974f01b1344
 
 patchfiles          patch-Makefile.in.diff
 

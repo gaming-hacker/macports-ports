@@ -23,7 +23,7 @@ long_description    ${description} \
                     experts and novices alike.
 
 checksums           rmd160  f6ff3a17f00c79642381d9aa17811b01057039fd \
-                    sha256  d9c0edd484eccfff3ea84462985887bc458317037b4669dac8af47ef4af79342
+sha256  d9c0edd484eccfff3ea84462985887bc458317037b4669dac8af47ef4af79342
 
 python.versions     34 35 36
 

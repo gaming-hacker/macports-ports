@@ -16,8 +16,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5  5b8a4d149fe8ce095ab8115f2e49beba \
-                    sha1  1722b189b2d530d313e990a21d94c39749edeb7e \
-                    rmd160  f4ab1763f84ecd95656a85d100fb9d63b53f5868
+sha1  1722b189b2d530d313e990a21d94c39749edeb7e \
+rmd160  f4ab1763f84ecd95656a85d100fb9d63b53f5868
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

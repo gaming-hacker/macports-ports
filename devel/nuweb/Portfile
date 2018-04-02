@@ -18,7 +18,7 @@ master_sites        sourceforge:project/${name}/
 patchfiles          patch-Makefile.diff
 
 checksums           rmd160  0c32ae064d742ff32bde14ab4a6a269c52772b84 \
-                    sha256  fe909b703c707c04f778c3d3d2f1eed2e10034f7025d292dd9ae041feb88a160
+sha256  fe909b703c707c04f778c3d3d2f1eed2e10034f7025d292dd9ae041feb88a160
 
 use_configure       no
 

@@ -21,4 +21,4 @@ homepage            http://toxygen.net/6tunnel/
 master_sites        ${homepage}
 
 checksums           rmd160  98d3929b5b132d3003d3ac5a85f94cd417a278cd \
-                    sha256  80dbe91bb92282c3c5e98dec871dcd1738ae824e532f9fd6db0d6ebd469d79bf
+sha256  80dbe91bb92282c3c5e98dec871dcd1738ae824e532f9fd6db0d6ebd469d79bf

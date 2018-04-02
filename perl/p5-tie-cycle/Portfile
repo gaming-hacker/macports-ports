@@ -17,4 +17,4 @@ description         Cycle through a list of values via a scalar.
 long_description    ${description}
 
 checksums           rmd160  0e97d2ed8d7d74c8f423211acca6048d00bb5c42 \
-                    sha256  f330d821694af9b269b6083570d5c10ea22e6eb3b21841048ce28252b1c03d45
+sha256  f330d821694af9b269b6083570d5c10ea22e6eb3b21841048ce28252b1c03d45

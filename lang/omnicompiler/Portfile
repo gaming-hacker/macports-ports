@@ -29,7 +29,7 @@ supported_archs     x86_64
 master_sites        ${homepage}/download/stable/
 
 checksums           rmd160  5a0fe2b1f74c8692a13665e7d00a2ef770b3f96c \
-                    sha256  12d479a30c99deb341a9b773d5a5dcb9340bd1504640d87375441df49b7af4fb
+sha256  12d479a30c99deb341a9b773d5a5dcb9340bd1504640d87375441df49b7af4fb
 use_bzip2           yes
 
 compilers.choose    cc fc

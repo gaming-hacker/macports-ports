@@ -20,7 +20,7 @@ homepage            http://muttprint.sourceforge.net
 master_sites        sourceforge:project/muttprint/muttprint/muttprint-${version}
 
 checksums           rmd160  cb6f40c892de0142584969e7b0ca60b4f3fed140 \
-                    sha256  a2672950739c26c83777b6842e3500e145e8bcdd8552ec14e2d90ab4d43c2bc8
+sha256  a2672950739c26c83777b6842e3500e145e8bcdd8552ec14e2d90ab4d43c2bc8
 
 depends_lib         port:dialog \
                     port:p${perl5.major}-text-iconv

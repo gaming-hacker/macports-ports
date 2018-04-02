@@ -18,7 +18,7 @@ distname            TermReadKey-${perl5.moduleversion}
 homepage            http://search.cpan.org/~jstowe/${distname}
 
 checksums           rmd160  c09b5024af5af4b39d73c690002280fe81ebd24c \
-                    sha256  4a9383cf2e0e0194668fe2bd546e894ffad41d556b41d2f2f577c8db682db241
+sha256  4a9383cf2e0e0194668fe2bd546e894ffad41d556b41d2f2f577c8db682db241
 
 use_parallel_build  no
 

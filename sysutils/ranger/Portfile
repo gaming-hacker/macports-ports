@@ -21,7 +21,7 @@ supported_archs     noarch
 homepage            https://ranger.github.io
 
 checksums           rmd160  6e782e3023d86fba95a157bade1c2591f495c245 \
-                    sha256  8df52717d2e5a20850e377d30d9444c5e6de07a408e0a5cf9604283e39992c41
+sha256  8df52717d2e5a20850e377d30d9444c5e6de07a408e0a5cf9604283e39992c41
 
 post-destroot {
     ln -s "${python.prefix}/share/man/man1/${name}.1" "${destroot}${prefix}/share/man/man1/${name}.1"

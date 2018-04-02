@@ -18,7 +18,7 @@ master_sites        pypi:w/${real_name}
 distname            wheel-${version}
 
 checksums           rmd160  453380b92f6eb93104c365c1d16ae2808c0d96c8 \
-                    sha256  1ae8153bed701cb062913b72429bcf854ba824f973735427681882a688cb55ce
+sha256  1ae8153bed701cb062913b72429bcf854ba824f973735427681882a688cb55ce
 
 python.versions 27 36
 

@@ -12,4 +12,4 @@ description         PEAR I18Nv2 package
 long_description    ${description}
 
 checksums           rmd160  351fa25868e71dbb7c0d19612797bada2625b557 \
-                    sha256  7f8214915a24b9fa1d310ea4bfeafda723ac88ed39a561bebff0dab8c263409e
+sha256  7f8214915a24b9fa1d310ea4bfeafda723ac88ed39a561bebff0dab8c263409e

@@ -20,7 +20,7 @@ master_sites        pypi:m/${real_name}
 distname            ${real_name}-${version}
 
 checksums           rmd160  84da6140aaf3e677e86014a4e87c83ada39776ec \
-                    sha256  ab7fc4c9afd28b3aaf575aca5bb07005d228a0cad5b1787a521ffca63cfe4317
+sha256  ab7fc4c9afd28b3aaf575aca5bb07005d228a0cad5b1787a521ffca63cfe4317
 
 python.versions 27 36
 

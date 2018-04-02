@@ -25,11 +25,11 @@ long_description \
     conversion.
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  35fc57cc9366bf09d9bbf6763d80d4a59ea14c2d \
-                        sha256  ccf536620a45458d26ba83887a983b96827001e92a13847b45e4925cc8913178 \
+rmd160  35fc57cc9366bf09d9bbf6763d80d4a59ea14c2d \
+sha256  ccf536620a45458d26ba83887a983b96827001e92a13847b45e4925cc8913178 \
                         ${cp932fix_patchfile} \
-                        rmd160  62852bd1cd22f0be0280c4f64bd6d256b4b00917 \
-                        sha256  7ac7133de0549316a98504ec1b50c751de69f8df91f99a92465a9eeb187f0147
+rmd160  62852bd1cd22f0be0280c4f64bd6d256b4b00917 \
+sha256  7ac7133de0549316a98504ec1b50c751de69f8df91f99a92465a9eeb187f0147
 
 depends_build           port:gperf
 

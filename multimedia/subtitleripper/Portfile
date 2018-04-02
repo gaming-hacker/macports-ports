@@ -21,7 +21,7 @@ extract.suffix      .tgz
 worksrcdir          ${name}
 
 checksums           sha1    d93ff3578dd5f722c8f4ef16bc0903eec5781a0d \
-                    rmd160  141355960773ab2dfe3782522858273d197cf797
+rmd160  141355960773ab2dfe3782522858273d197cf797
 
 depends_lib         port:netpbm \
                     port:libpng \

@@ -29,7 +29,7 @@ distname            webkitgtk-${version}
 dist_subdir         webkit-gtk
 
 checksums           rmd160  3fea1696539ba305367e36af803ce1a934b99b0d \
-                    sha256  2edbcbd5105046aea55af9671c4de8deedb5b0e3567c618034d440a760675556
+sha256  2edbcbd5105046aea55af9671c4de8deedb5b0e3567c618034d440a760675556
 
 # don't overwrite build dependencies provided by cmake portgroup
 depends_build-append \

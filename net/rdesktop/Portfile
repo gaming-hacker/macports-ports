@@ -43,8 +43,8 @@ configure.args      --mandir=${prefix}/share/man \
 build.target        rdesktop
 
 checksums \
-    rmd160  c278b54be54f434d79e0f07a9cdc2cca62286103 \
-    sha256  88b20156b34eff5f1b453f7c724e0a3ff9370a599e69c01dc2bf0b5e650eece4
+rmd160  c278b54be54f434d79e0f07a9cdc2cca62286103 \
+sha256  88b20156b34eff5f1b453f7c724e0a3ff9370a599e69c01dc2bf0b5e650eece4
 
 variant w2k_license_hack description {will announce the client as Windows 2000 machine} {
     patchfiles patch-licence.c

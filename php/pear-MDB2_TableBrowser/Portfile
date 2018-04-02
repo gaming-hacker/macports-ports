@@ -12,4 +12,4 @@ description         PEAR MDB2_TableBrowser package
 long_description    ${description}
 
 checksums           rmd160  4278b3c0ef66c55845c0191acca2987027d50edd \
-                    sha256  cbf245264aee6484a066d96a81d027089650c04c8e531e13afcc823f79ae8ae0
+sha256  cbf245264aee6484a066d96a81d027089650c04c8e531e13afcc823f79ae8ae0

@@ -18,7 +18,7 @@ master_sites        ${homepage}/zip/
 use_bzip2           yes
 
 checksums           rmd160  9b188a5223b80c8b1d927d648e8f8c67d1d46fb7 \
-                    sha256  a582810384a0c1e870dcd2ca157ba4b5120f898ceb2fd370cfed4f86fc87311e
+sha256  a582810384a0c1e870dcd2ca157ba4b5120f898ceb2fd370cfed4f86fc87311e
 
 depends_build       port:boost \
                     port:cctools \

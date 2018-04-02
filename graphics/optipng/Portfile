@@ -22,7 +22,7 @@ homepage        http://optipng.sourceforge.net/
 master_sites    sourceforge:project/${name}/OptiPNG/${name}-${version}
 
 checksums       rmd160  bd6df4ef9f258474f352820eec545f482c7194cd \
-                sha256  4f32f233cef870b3f95d3ad6428bfe4224ef34908f1b42b0badf858216654452 \
+sha256  4f32f233cef870b3f95d3ad6428bfe4224ef34908f1b42b0badf858216654452 \
 size    2329555
 
 # Doesn't depend on libpng or zlib since it uses its own, modified versions.

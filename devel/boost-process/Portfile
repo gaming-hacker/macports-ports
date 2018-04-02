@@ -20,7 +20,7 @@ long_description    Boost.Process (not an official Boost library) is a C++ libra
 homepage            http://www.highscore.de/boost/process${version}/
 
 checksums           rmd160  d22ea439488203e5ba1c562cd02f48a345884575 \
-                    sha256  626407a0cde0861727afbdc727bd18ec4fa1b19776ffeedf710984f63735be3a
+sha256  626407a0cde0861727afbdc727bd18ec4fa1b19776ffeedf710984f63735be3a
 
 depends_lib         port:boost
 

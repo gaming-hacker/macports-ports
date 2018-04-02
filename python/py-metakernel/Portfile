@@ -16,7 +16,7 @@ long_description    ${description} which includes core magic functions (includin
 platforms           darwin
 
 checksums           rmd160  63d8bab762baf792a5a97f3ea8e3dc051bc7d27c \
-                    sha256  1ebe1bfc83a7112d30992e799d39783e47ae1fd0d77c188b8667bec97a0a0465
+sha256  1ebe1bfc83a7112d30992e799d39783e47ae1fd0d77c188b8667bec97a0a0465
 
 python.versions 27 36
 

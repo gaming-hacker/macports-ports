@@ -18,6 +18,6 @@ homepage            https://github.com/mp3butcher/Cal3D
 master_sites        http://download.gna.org/cal3d/sources/
 
 checksums           rmd160  309ee70ff378f679f87934c29308284c435fba79 \
-                    sha256  fc4a6fe311004987377ec80b804a04aab44c32085fd974d275aa9d0b14144b06
+sha256  fc4a6fe311004987377ec80b804a04aab44c32085fd974d275aa9d0b14144b06
 
 configure.args      --enable-static

@@ -28,8 +28,8 @@ patchfiles              ignore-linkforshared-python_devel_m4.diff \
                         GLU-test-configure_ac.diff
 
 checksums               ${name}-release-${version}-sources.tar.gz \
-                        rmd160  fc83de42ae54163a90c04f9eb5e0a03a02ddac59 \
-                        sha256  b2c5f9457a023a229708bb788aee6f712428c911e199f32fb07f3a83d6c8b60b
+rmd160  fc83de42ae54163a90c04f9eb5e0a03a02ddac59 \
+sha256  b2c5f9457a023a229708bb788aee6f712428c911e199f32fb07f3a83d6c8b60b
 
 depends_build-append    port:pkgconfig \
                         port:bison \

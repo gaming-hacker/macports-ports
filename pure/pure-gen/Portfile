@@ -14,7 +14,7 @@ description                     a Pure C bindings generator
 long_description                ${name} is ${description}.
 
 checksums                       rmd160  2e44c832698148f6bf00a29115ce1d6c10b123ab \
-                                sha256  84840910c80f6f8deafa289f5ddd512c22382084607f79109c3a2baaf378a2f2
+sha256  84840910c80f6f8deafa289f5ddd512c22382084607f79109c3a2baaf378a2f2
 
 depends_build-append            path:bin/ghc:ghc \
                                 port:hs-language-c

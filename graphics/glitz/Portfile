@@ -24,8 +24,8 @@ master_sites    http://cairographics.org/snapshots/
 depends_lib     port:mesa
 
 checksums       md5 c507f140ecccc06aed8888c958edda4c \
-                sha1 81604bf02ceda85ea32b52423f78a883aaec6dc6 \
-                rmd160 547ef1be273856942e0fa36c097c4acb367336b2
+sha1 81604bf02ceda85ea32b52423f78a883aaec6dc6 \
+rmd160 547ef1be273856942e0fa36c097c4acb367336b2
 
 minimum_xcodeversions {9 3.1}
 

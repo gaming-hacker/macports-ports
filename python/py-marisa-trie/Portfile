@@ -23,7 +23,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            marisa-trie-${version}
 
 checksums           rmd160  f99bef06c05002252dedf4ff0de7f293a1b32ef3 \
-                    sha256  2a2258eacca9966325f9019378fc4621891f2482bc63e6441f70599595ed97d8
+sha256  2a2258eacca9966325f9019378fc4621891f2482bc63e6441f70599595ed97d8
 
 if {${name} ne ${subport}} {
     depends_build-append \

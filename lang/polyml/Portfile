@@ -17,7 +17,7 @@ master_sites        sourceforge
 
 distname            ${name}.${version}
 checksums           rmd160  3f345e665fb880d02a086179f31944c04f5df79b \
-                    sha256  73fd2be89f7e3ff0567e27ef525ef788775d9f963d6db54069cb34d53040a682
+sha256  73fd2be89f7e3ff0567e27ef525ef788775d9f963d6db54069cb34d53040a682
 patchfiles          patch-libpolyml-x86asm.asm.diff
 
 depends_lib         port:gmp

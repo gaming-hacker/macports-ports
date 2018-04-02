@@ -22,4 +22,4 @@ long_description    Perl extension for Munkres' solution to \
                     matrix is converted to square matrix by padding necessary zeros.
 
 checksums           rmd160 96fb0117e82251398e551704ffaa83b6f1de824e \
-                    sha256 196bcda3984b179cedd847a7c16666b4f9741c07f611a65490d9e7f4b7a55626
+sha256 196bcda3984b179cedd847a7c16666b4f9741c07f611a65490d9e7f4b7a55626

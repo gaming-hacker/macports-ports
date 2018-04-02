@@ -21,7 +21,7 @@ platforms           darwin
 master_sites        sourceforge:project/faac/faac-src/faac-${branch}/
 
 checksums           rmd160  5281fe9d905e7b749086232b5c6ced8c32d8d5c3 \
-                    sha256  d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
+sha256  d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
 
 # error: use of undeclared identifier 'bit_SSE2'
 compiler.blacklist-append   {clang < 500}

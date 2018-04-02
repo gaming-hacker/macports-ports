@@ -20,7 +20,7 @@ master_sites    https://archive.apache.org/dist/serf/
 distname        serf-${version}
 use_bzip2       yes
 checksums       sha1   1d45425ca324336ce2f4ae7d7b4cfbc5567c5446 \
-                sha256 e0500be065dbbce490449837bb2ab624e46d64fc0b090474d9acaa87c82b2590
+sha256 e0500be065dbbce490449837bb2ab624e46d64fc0b090474d9acaa87c82b2590
 
 patchfiles      patch-SConstruct.diff
 

@@ -18,7 +18,7 @@ description         Standard PHP Library, Types Addon
 long_description    SPL Types is a collection of special typehandling classes.
 
 checksums           rmd160  340e17da428e3ae410046c97d7650afa0da81b3a \
-                    sha256  b44101401b2664822fd17e6f491d912203496108ff9d0b86b043bff67c5f724f
+sha256  b44101401b2664822fd17e6f491d912203496108ff9d0b86b043bff67c5f724f
 
 use_parallel_build  yes
 

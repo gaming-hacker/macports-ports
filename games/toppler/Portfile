@@ -22,7 +22,7 @@ homepage            http://toppler.sourceforge.net/
 master_sites        sourceforge:project/toppler/toppler/${version}/
 
 checksums           rmd160  45691ff9057e22e6aeea413fc77e27561bc46b95 \
-                    sha256  7dbc2905389c2adba0f8c459f3319cf04045ba53ed407e273a50a3a67564cc45
+sha256  7dbc2905389c2adba0f8c459f3319cf04045ba53ed407e273a50a3a67564cc45
 
 depends_lib         port:gettext \
                     port:libiconv \

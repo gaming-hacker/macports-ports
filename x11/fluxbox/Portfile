@@ -21,7 +21,7 @@ master_sites    sourceforge:project/fluxbox/fluxbox/${version}/
 use_bzip2	yes
 
 checksums       rmd160  efb8d458edf2b429fb2999eb184ab3aed6a54f7a \
-                sha256  d47a58edba857f3c36bf8430bbd17834693ad0e6aa431d3507039f022af7aee8
+sha256  d47a58edba857f3c36bf8430bbd17834693ad0e6aa431d3507039f022af7aee8
 
 use_parallel_build yes
 

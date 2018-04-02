@@ -14,14 +14,14 @@ description         TeX Live: Chinese
 long_description    Support for Chinese\; additional packages in collection-langcjk.
 
 checksums           texlive-lang-chinese-44333-run.tar.xz \
-                    rmd160  5bb658f85ea91cbeb7612b140bb5b80dc1dc01ec \
-                    sha256  ec6fd45e3440fa4746dde92539232a309189e59cd656c18f1882d60daab8268d \
+rmd160  5bb658f85ea91cbeb7612b140bb5b80dc1dc01ec \
+sha256  ec6fd45e3440fa4746dde92539232a309189e59cd656c18f1882d60daab8268d \
                     texlive-lang-chinese-44333-doc.tar.xz \
-                    rmd160  d556b85ded750ab49985b9cb57c21b8766b44744 \
-                    sha256  3bbbde18d2eb5b67c8d30f301cd4f740bde267bb190fdac7d5b9b90875330105 \
+rmd160  d556b85ded750ab49985b9cb57c21b8766b44744 \
+sha256  3bbbde18d2eb5b67c8d30f301cd4f740bde267bb190fdac7d5b9b90875330105 \
                     texlive-lang-chinese-44333-src.tar.xz \
-                    rmd160  3db435d7b2df1d4fd3357975e7f3b06c6242c535 \
-                    sha256  82ba6ebcbfe7e2a5d33c087d71d733d7a33dab943072576bffe957f82a135605
+rmd160  3db435d7b2df1d4fd3357975e7f3b06c6242c535 \
+sha256  82ba6ebcbfe7e2a5d33c087d71d733d7a33dab943072576bffe957f82a135605
 
 depends_lib         port:texlive-lang-cjk
 

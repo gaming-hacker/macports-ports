@@ -12,4 +12,4 @@ description         PEAR Math_Fraction package
 long_description    ${description}
 
 checksums           rmd160  05ce3a01755f0c6f3fe1a2da379fc106ddf090b3 \
-                    sha256  00109cc650596dae902a62cc5d018e1ddb4b6458d803a4271308566dff87d855
+sha256  00109cc650596dae902a62cc5d018e1ddb4b6458d803a4271308566dff87d855

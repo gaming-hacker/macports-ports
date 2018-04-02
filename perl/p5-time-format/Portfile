@@ -14,6 +14,6 @@ description         Easy-to-use date/time formatting
 long_description    ${description}
 
 checksums           rmd160  879a8a1b466b4e2c83af6bdb3fa505142969a77e \
-                    sha256  ef96ba090268a568367c83ecdcac349b0cfe164329bc34de9fbcc2dbe66b8c9e
+sha256  ef96ba090268a568367c83ecdcac349b0cfe164329bc34de9fbcc2dbe66b8c9e
 
 supported_archs     noarch

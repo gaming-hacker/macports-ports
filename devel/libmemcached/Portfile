@@ -28,7 +28,7 @@ homepage            http://libmemcached.org/
 master_sites        http://launchpad.net/${name}/${branch}/${version}/+download/
 
 checksums           rmd160  647ea760191755da4832f1a4c78847a330e5b515 \
-                    sha256  e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82 \
+sha256  e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82 \
 size    1039649
 
 # Uses umem.h if present.

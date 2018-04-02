@@ -20,8 +20,8 @@ homepage            http://tasktools.org/projects/tasksh.html
 master_sites        http://taskwarrior.org/download/
 
 checksums           sha1    5fb9209ec1cafbbde4aa165f41ffb3aeba6faca8 \
-                    rmd160  5268c813965f67ebcc9441d0686a9f9a21be8057 \
-                    sha256  9accc81f5ae3a985e33be728d56aba0401889d21f856cd94734d73c221bf8652
+rmd160  5268c813965f67ebcc9441d0686a9f9a21be8057 \
+sha256  9accc81f5ae3a985e33be728d56aba0401889d21f856cd94734d73c221bf8652
 
 patchfiles          patch-readline.diff
 

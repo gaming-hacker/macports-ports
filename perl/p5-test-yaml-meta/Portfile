@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  c6f0989d2709504d74415c8e46e1585718a76585 \
-                    sha256  0e7a3ba51d87596a97e389edc4b1a0685d0dac52d859ef3825244015462d80d7
+sha256  0e7a3ba51d87596a97e389edc4b1a0685d0dac52d859ef3825244015462d80d7
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-test-yaml-valid \

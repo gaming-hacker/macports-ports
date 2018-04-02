@@ -25,7 +25,7 @@ long_description    ${description} \
                     missing from dcraw such as meta-data decoding and easy thumbnail extraction.
 
 checksums           rmd160  01f611f395c03a235e2ae49fb69d736231e3f125 \
-                    sha256  d15e86141add6a652f316ab8884895d8399d37c17510b34f61e266f906a99683
+sha256  d15e86141add6a652f316ab8884895d8399d37c17510b34f61e266f906a99683
 
 use_bzip2           yes
 

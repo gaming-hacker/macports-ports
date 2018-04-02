@@ -27,7 +27,7 @@ license             cpl ibmpl
 master_sites        sourceforge:project/sleuthkit/sleuthkit/${version}
 
 checksums           rmd160  223c6ffe22259ca057b6d9634813536e7ccd9dba \
-                    sha256  67f9d2a31a8884d58698d6122fc1a1bfa9bf238582bde2b49228ec9b899f0327
+sha256  67f9d2a31a8884d58698d6122fc1a1bfa9bf238582bde2b49228ec9b899f0327
 
 perl5.branches      5.26
 depends_build       port:file \

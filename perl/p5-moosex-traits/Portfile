@@ -14,7 +14,7 @@ description         automatically apply roles at object creation time
 long_description    ${description}
 
 checksums           rmd160  9122ca2e4c755b4595d1ca1ad732da754d687b91 \
-                    sha256  74afe0c4faf4e3b97c57f289437caa60becca34cd5821f489dd4cc9da4fbe29a
+sha256  74afe0c4faf4e3b97c57f289437caa60becca34cd5821f489dd4cc9da4fbe29a
 
 if {${perl5.major} != ""} {
     depends_build-append  \

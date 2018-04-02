@@ -12,7 +12,7 @@ description         PEAR XML_Indexing package
 long_description    ${description}
 
 checksums           rmd160  6db043c2889d1b33f9357e1cacfe113cab7eac49 \
-                    sha256  09ff332c4949297bc5a1fb211df84923c4b451bc22e98de1457ee5161182a12a
+sha256  09ff332c4949297bc5a1fb211df84923c4b451bc22e98de1457ee5161182a12a
 
 depends_lib-append  port:pear-File \
                     port:pear-XML_XPath \

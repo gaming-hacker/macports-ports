@@ -19,7 +19,7 @@ long_description    This module is for manipulating data as hierarchical \
                     which have the advantage of being native to perl.
 
 checksums           rmd160  9c66074546e600bb230f0a06d6f7670b87e8da07 \
-                    sha256  4ab122508d2fb86d171a15f4006e5cf896d5facfa65219c0b243a89906258e59
+sha256  4ab122508d2fb86d171a15f4006e5cf896d5facfa65219c0b243a89906258e59
 
 if {${perl5.major} != ""} {
     depends_lib-append \

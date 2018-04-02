@@ -30,7 +30,7 @@ homepage            http://procode.org/stgit/
 master_sites        http://repo.or.cz/stgit.git/snapshot/
 
 checksums           rmd160  60261f23324c1bb6c5165cc23a9280850ef23c34 \
-                    sha256  467e2271fb48d73733aa756ed68e53525bce7c4d52a12901f3fca310ba17e310
+sha256  467e2271fb48d73733aa756ed68e53525bce7c4d52a12901f3fca310ba17e310
 
 distname            48e5cef14cea5c810833d119900cd484c2a6ca85
 worksrcdir          stgit-48e5cef

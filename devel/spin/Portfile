@@ -20,8 +20,8 @@ long_description \
 homepage        http://spinroot.com
 master_sites    http://spinroot.com/spin/Src/
 checksums           md5     17eb7f14df3616e25635691967786996 \
-                    sha1    9f562f330851da47518f4405b1778b044d655b9c \
-                    rmd160  6d7eac3f6c44ef1e3232ddc032920dc8399e95d4
+sha1    9f562f330851da47518f4405b1778b044d655b9c \
+rmd160  6d7eac3f6c44ef1e3232ddc032920dc8399e95d4
 depends_lib     port:tk port:tcl
 worksrcdir      Spin/Src${version}
 use_configure   no

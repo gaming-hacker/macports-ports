@@ -34,17 +34,17 @@ distfiles       ${name}-${version}-source${extract.suffix}:sbcl
 worksrcdir      ${name}-${version}
 
 checksums       ${name}-${version}-source${extract.suffix} \
-    rmd160  e9f8b6e9bf07ea5f4ff7c40df8448a0ab73bf4d9 \
-    sha256  4411b01329d4dd531c8a0cb4036462fb4fd5f6e7abe2d521c6aa2a3adefb8678 
+rmd160  e9f8b6e9bf07ea5f4ff7c40df8448a0ab73bf4d9 \
+sha256  4411b01329d4dd531c8a0cb4036462fb4fd5f6e7abe2d521c6aa2a3adefb8678 
 
 platform powerpc {
     set bootversion 1.0.47
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_powerpc
     distfiles-append    ${name}-${bootversion}-powerpc-darwin-binary${extract.suffix}:sbcl_powerpc
     checksums-append    ${name}-${bootversion}-powerpc-darwin-binary${extract.suffix} \
-                        md5     02747afc7631a7ccdeede4b52b78072d \
-                        sha1    93df00b3120810a086d37666c1ccdeabc8daeb49 \
-                        rmd160  85c76296a1c62db5affdff7e72e61e558bb5c819
+md5     02747afc7631a7ccdeede4b52b78072d \
+sha1    93df00b3120810a086d37666c1ccdeabc8daeb49 \
+rmd160  85c76296a1c62db5affdff7e72e61e558bb5c819
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-powerpc-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-powerpc-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }
@@ -54,9 +54,9 @@ platform i386 {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_i386
     distfiles-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix}:sbcl_i386
     checksums-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix} \
-                        md5     941351112392a77dd62bdcb9fb62e4e4 \
-                        sha1    8ea71938c40a6dccfe2d43a86e9b115f4428a218 \
-                        rmd160  97c92e16426fb4e7eb9e649e21714c342703d17b
+md5     941351112392a77dd62bdcb9fb62e4e4 \
+sha1    8ea71938c40a6dccfe2d43a86e9b115f4428a218 \
+rmd160  97c92e16426fb4e7eb9e649e21714c342703d17b
 
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-x86-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-x86-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "

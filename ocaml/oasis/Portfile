@@ -19,7 +19,7 @@ homepage            http://oasis.forge.ocamlcore.org/index.php
 master_sites        https://forge.ocamlcore.org/frs/download.php/1355/
 
 checksums           rmd160  483a27e3437a3043279b08859dc640e4c26cae3d \
-                    sha256  12ca49699dceba687cd150a5b5e66246450d2e06e47578a701c140195ce256d3
+sha256  12ca49699dceba687cd150a5b5e66246450d2e06e47578a701c140195ce256d3
 depends_lib         port:ocaml \
                     port:ocaml-findlib \
                     port:ocaml-odn \

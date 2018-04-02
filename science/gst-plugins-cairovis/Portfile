@@ -17,7 +17,7 @@ long_description \
   Gstreamer pipelines using Cairo graphics.
 
 checksums             rmd160  856faa59e69402bb128b9499ca9415bdda1c1138 \
-                      sha256  23ccf026aa8ab9c9f8a7f411aadd61ae6c5762bd3a0431810573af4a6f811697
+sha256  23ccf026aa8ab9c9f8a7f411aadd61ae6c5762bd3a0431810573af4a6f811697
 
 depends_build         port:pkgconfig
 

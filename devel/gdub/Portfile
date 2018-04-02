@@ -20,7 +20,7 @@ long_description    gdub (gw on the command line) is a gradle / gradlew wrapper.
 homepage            http://www.gdub.rocks/
 
 checksums           rmd160  fa612e31fd2f32e429225338ff5361184b82b318 \
-                    sha256  76d9a81ba295cf8a4024bde845cd8e36bb01e3465ed09221fb69d7627150afbc
+sha256  76d9a81ba295cf8a4024bde845cd8e36bb01e3465ed09221fb69d7627150afbc
 
 use_configure       no
 build {}

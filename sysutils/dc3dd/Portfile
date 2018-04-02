@@ -26,7 +26,7 @@ master_sites        sourceforge:project/dc3dd/dc3dd/${version}/dc3dd%20${version
 use_7z              yes
 
 checksums           rmd160  8779a3b7ab9bf927033ca805ada252a913b6b029 \
-                    sha256  d26d5c1eaa413a10dfcdb2525a9fd8135902eb0b0a8f4632529fbebb06430d95 \
+sha256  d26d5c1eaa413a10dfcdb2525a9fd8135902eb0b0a8f4632529fbebb06430d95 \
 size    2170938
 
 post-extract {

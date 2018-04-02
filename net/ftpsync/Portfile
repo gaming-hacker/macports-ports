@@ -17,7 +17,7 @@ homepage            https://www.clazzes.org/projects/ftpsync/
 master_sites        http://download.clazzes.org/ftpsync/
 
 checksums           rmd160  3e0f3eda07b26a427ec7e87194fd56ee51d7ae66 \
-                    sha256  9e750833a37dd37cdb320f8baa1347810ae35da0497dace0a9bf68182e447faf
+sha256  9e750833a37dd37cdb320f8baa1347810ae35da0497dace0a9bf68182e447faf
 
 supported_archs     noarch
 

@@ -19,7 +19,7 @@ master_sites    http://pyyaml.org/download/libyaml
 distname        ${dname}-${version}
 
 checksums       rmd160  e41df050417f2640f7ba0ee905c0b4cc3eb603f3 \
-                sha256  8088e457264a98ba451a90b8661fcb4f9d6f478f7265d48322a196cec2480729
+sha256  8088e457264a98ba451a90b8661fcb4f9d6f478f7265d48322a196cec2480729
 
 patchfiles      yosemite-libtool.patch
 

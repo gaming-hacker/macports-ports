@@ -19,7 +19,7 @@ depends_lib         port:rust
 depends_build       port:cargo
 
 checksums           rmd160  7072507edf67ba93ce554792574270a8853c1a53 \
-                    sha256  b6ee99363dc5c30d9f87bf6802d37b43d3e9be3b5b328540c812df29aee14204
+sha256  b6ee99363dc5c30d9f87bf6802d37b43d3e9be3b5b328540c812df29aee14204
 
 use_configure       no
 

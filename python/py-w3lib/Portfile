@@ -17,7 +17,7 @@ master_sites        pypi:w/w3lib/
 distname            w3lib-${version}
 
 checksums           rmd160  969f9692ba05ebbd3e28ac851a6f6414e421bf9e \
-                    sha256  c48731d5d73cde86f9c3c2bd6898d165f670120427353a7c8f9d6c685561d3c4
+sha256  c48731d5d73cde86f9c3c2bd6898d165f670120427353a7c8f9d6c685561d3c4
 
 python.versions 27 36
 

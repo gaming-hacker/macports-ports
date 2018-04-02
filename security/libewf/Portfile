@@ -21,7 +21,7 @@ long_description    Libewf is a library for support of the Expert Witness \
 master_sites        https://googledrive.com/host/0B3fBvzttpiiSMTdoaVExWWNsRjg/
 
 checksums           rmd160  bd86f502d9e196dde0de81753595b7b34daa545f \
-                    sha256  d14030ce6122727935fbd676d0876808da1e112721f3cb108564a4d9bf73da71
+sha256  d14030ce6122727935fbd676d0876808da1e112721f3cb108564a4d9bf73da71
 
 depends_build       port:pkgconfig
 

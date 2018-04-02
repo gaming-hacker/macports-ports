@@ -26,4 +26,4 @@ master_sites        ${homepage}
 extract.suffix      .tgz
 
 checksums           sha1    80075e93bc18d9ec650cad064ee46fa267b7c418 \
-                    rmd160  d946bb096eca7858894502249f56f720d4bda5da
+rmd160  d946bb096eca7858894502249f56f720d4bda5da

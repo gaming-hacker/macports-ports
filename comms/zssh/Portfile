@@ -21,8 +21,8 @@ homepage                http://zssh.sourceforge.net/
 extract.suffix          .tgz
 
 checksums               md5     9f140ec2705a96d6a936b7dca0e8dd13 \
-                        sha1    68dc9b8572646ef63909b3855e7990d75f49926c \
-                        rmd160  87f3c69d6497a90fc89bc423de932915ee667efa
+sha1    68dc9b8572646ef63909b3855e7990d75f49926c \
+rmd160  87f3c69d6497a90fc89bc423de932915ee667efa
 
 depends_lib             port:readline
 

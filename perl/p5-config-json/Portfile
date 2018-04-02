@@ -18,7 +18,7 @@ long_description    This package works with config files in JSON format. \
                     comments in the files.
 
 checksums           rmd160  d4d785bdf07b0349246149672b41a9bdf69c55b9 \
-                    sha256  fdbd4008ef8fb50b4cf26c6c45cc38c2597ddd54aec3b3145bbabb5cc25af930
+sha256  fdbd4008ef8fb50b4cf26c6c45cc38c2597ddd54aec3b3145bbabb5cc25af930
 
 if {${perl5.major} != ""} {
     depends_build-append \

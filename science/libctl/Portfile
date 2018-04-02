@@ -22,8 +22,8 @@ homepage            http://ab-initio.mit.edu/wiki/index.php/Libctl
 master_sites        http://ab-initio.mit.edu/libctl/
 
 checksums           md5     5fd7634dc9ae8e7fa70a68473b9cbb68 \
-                    sha1    d7f860313d5cc226c51f868bbe9bb930d143ab9c \
-                    rmd160  2390548f7a30e709e22b3ee12f21ec9f7e45def7
+sha1    d7f860313d5cc226c51f868bbe9bb930d143ab9c \
+rmd160  2390548f7a30e709e22b3ee12f21ec9f7e45def7
 
 depends_lib         port:guile
 

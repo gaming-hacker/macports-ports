@@ -26,7 +26,7 @@ homepage            http://fallabs.com/${name}/
 master_sites        http://fallabs.com/${name}/pkg/
 
 checksums           rmd160  3bc2feb6e01310764c422cc93d9a98ced1da2cfb \
-                    sha256  812a2d3f29c351db4c6f1ff29d94d7135f9e601d7cc1872ec1d7eed381d0d23c
+sha256  812a2d3f29c351db4c6f1ff29d94d7135f9e601d7cc1872ec1d7eed381d0d23c
 
 dist_subdir         ${name}/${version}_${revision}
 

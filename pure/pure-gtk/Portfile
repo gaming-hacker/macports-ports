@@ -17,7 +17,7 @@ long_description                ${name} is ${description}. The bindings \
                                 pango libraries, each in their own Pure module
 
 checksums                       rmd160  1049f145b30fa3371a957abe86756e17c19a05f2 \
-                                sha256  e659ff1bc5809ce35b810f8ac3fb7e8cadaaef13996537d8632e2f86ed76d203
+sha256  e659ff1bc5809ce35b810f8ac3fb7e8cadaaef13996537d8632e2f86ed76d203
 
 depends_build-append            port:pkgconfig
 

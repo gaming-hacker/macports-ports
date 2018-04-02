@@ -27,7 +27,7 @@ master_sites        pypi:10/f7/3b302ff34045f25065091d40e074479d6893882faef135c96
 distname            cffi-${version}
 
 checksums           rmd160  d2dc3bae37502af50f756b2705d388777e7a541d \
-                    sha256  e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4
+sha256  e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4
 
 if {${name} ne ${subport}} {
     patchfiles-append   patch-setup.py.diff

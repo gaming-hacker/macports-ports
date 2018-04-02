@@ -25,7 +25,7 @@ master_sites        https://github.com/${name}/${name}/archive/
 worksrcdir          ${name}-${name}-${version}
 
 checksums           rmd160  899cddfe2d5ae1e6ef38ba06bdb10046e4f1d94e \
-                    sha256  6bba8b28a50dc3b8afacd357aca57a658cf5b8d90a57d38f357d7e2eafcf09bb
+sha256  6bba8b28a50dc3b8afacd357aca57a658cf5b8d90a57d38f357d7e2eafcf09bb
 
 depends_lib         port:armadillo \
                     port:boost \

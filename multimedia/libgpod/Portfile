@@ -22,7 +22,7 @@ master_sites        sourceforge:project/gtkpod/libgpod/libgpod-${branch}
 use_bzip2           yes
 
 checksums           rmd160  96a2b0e48c0af6ecc62fc4aba4e38e8d0579c6cd \
-                    sha256  638a7959d04e95f1e62abad02bd33702e4e8dfef98485ac7d9d50395c37e955d
+sha256  638a7959d04e95f1e62abad02bd33702e4e8dfef98485ac7d9d50395c37e955d
 
 depends_build       port:pkgconfig \
                     port:intltool \

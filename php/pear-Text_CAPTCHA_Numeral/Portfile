@@ -13,4 +13,4 @@ description         PEAR Text_CAPTCHA_Numeral package
 long_description    ${description}
 
 checksums           rmd160  10eb646e7ab6f1bb3d3ae88fef10840cf8442fbc \
-                    sha256  79cfccb597005f09cb8129399616b0b2d400f8994e084387f3bb4e481c005aec
+sha256  79cfccb597005f09cb8129399616b0b2d400f8994e084387f3bb4e481c005aec

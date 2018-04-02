@@ -23,8 +23,8 @@ master_sites        http://enet.bespin.org/download/
 distname            enet-${version}
 
 checksums           md5     892fa7318812658e4485019d55abeea0 \
-                    sha1    8ad77779415309b0eb343012b4442a20b418a3ab \
-                    rmd160  998a71dfeb6b26d75f5094bf375224eb9fc011b9
+sha1    8ad77779415309b0eb343012b4442a20b418a3ab \
+rmd160  998a71dfeb6b26d75f5094bf375224eb9fc011b9
 
 use_parallel_build  yes
 

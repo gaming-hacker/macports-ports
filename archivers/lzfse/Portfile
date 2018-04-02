@@ -19,4 +19,4 @@ long_description \
     compression and decompression speed compared to deflate using zlib.
 
 checksums           rmd160  f915129068fafc0502d378b2d67951e986a10b19 \
-                    sha256  2697f24b0857fb85ea2880623b687516f7cb08d8e46e959ea0a964f564d2e491
+sha256  2697f24b0857fb85ea2880623b687516f7cb08d8e46e959ea0a964f564d2e491

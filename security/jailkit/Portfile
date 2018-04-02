@@ -19,7 +19,7 @@ homepage            https://olivier.sessink.nl/jailkit/
 master_sites        ${homepage}
 
 checksums           rmd160  7b4b5bcf018ee677a0f837fada4a179c2544c4df \
-                    sha256  5db1d130b144c49136450369da55ab9d8c4861da3351bb4e11ab1e0921764cba
+sha256  5db1d130b144c49136450369da55ab9d8c4861da3351bb4e11ab1e0921764cba
 
 use_bzip2           yes
 patchfiles          patch-Makefile.in.diff

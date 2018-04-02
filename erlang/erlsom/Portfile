@@ -16,8 +16,8 @@ homepage            http://erlsom.sourceforge.net/
 master_sites        sourceforge:project/erlsom/erlsom/erlsom-${version}/
 
 checksums           md5     b58aa0da4267544e2bcba45185f7cb10 \
-                    sha1    1d6e6e2514f4ccf3ec1fe3a3c188b57c8d26e4c6 \
-                    rmd160  7ff62b83af6daedeed3eb0802a39a909099288d8
+sha1    1d6e6e2514f4ccf3ec1fe3a3c188b57c8d26e4c6 \
+rmd160  7ff62b83af6daedeed3eb0802a39a909099288d8
 
 depends_build       port:erlang
 depends_lib         port:libtool

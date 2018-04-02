@@ -16,7 +16,7 @@ description         Perl extension for Visualize your data in Scalable Vector \
 long_description    ${description}
 
 checksums           rmd160  8559e0f48ed1be1484721f27eba44ec280def403 \
-                    sha256  02aa78f5f4912837d56ad885730377c17f3154823296e99fbc0d529a0d483dac
+sha256  02aa78f5f4912837d56ad885730377c17f3154823296e99fbc0d529a0d483dac
 
 if {${perl5.major} != ""} {
     depends_lib-append \

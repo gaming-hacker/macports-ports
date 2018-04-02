@@ -13,4 +13,4 @@ description         PEAR Image_XBM package
 long_description    ${description}
 
 checksums           rmd160  6457aca44f507be4b4bfcbfbcbc76fef8b009b21 \
-                    sha256  7200a2ae53b602fbae3b3a7a98c0fb6d48b4e51ca9e3b9790fb6789094998f1a
+sha256  7200a2ae53b602fbae3b3a7a98c0fb6d48b4e51ca9e3b9790fb6789094998f1a

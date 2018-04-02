@@ -33,8 +33,8 @@ distname            ${name}-${base_version}
 master_sites        http://www.mpfr.org/${distname}
 use_xz              yes
 checksums           ${distname}${extract.suffix} \
-                        rmd160  6b0949bafae2337effe919c927f1d4ab9b11f863 \
-                        sha256  7a62ac1a04408614fccdc506e4844b10cf0ad2c2b1677097f8f35d3a1344a950
+rmd160  6b0949bafae2337effe919c927f1d4ab9b11f863 \
+sha256  7a62ac1a04408614fccdc506e4844b10cf0ad2c2b1677097f8f35d3a1344a950
 
 # Upstream patch names are not qualified with the base version.
 dist_subdir         ${name}/${base_version}

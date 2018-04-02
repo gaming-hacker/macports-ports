@@ -25,7 +25,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  8438e67bd6f1180eb21fc8f7f4fb2536a29c4bd5 \
-                    sha256  f7ebcb846962ee40374db2d9014a89bea9c983ae63c1877957c3a0a756974796
+sha256  f7ebcb846962ee40374db2d9014a89bea9c983ae63c1877957c3a0a756974796
 
 if {${name} ne ${subport}} {
     conflicts               py${python.version}-bson

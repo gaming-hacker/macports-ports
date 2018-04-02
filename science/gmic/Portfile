@@ -30,7 +30,7 @@ use_parallel_build  no
 distfiles           ${name}_${version}${extract.suffix}
 
 checksums           rmd160  8a1116ae2b742e0ea1145c3fba10767ab35b2439 \
-                    sha256  3c05754568127d20d0ab3b50e49e00d3c89b26078a15725d0bfb8b1ed50f4c45
+sha256  3c05754568127d20d0ab3b50e49e00d3c89b26078a15725d0bfb8b1ed50f4c45
 
 depends_build-append \
                     port:pkgconfig

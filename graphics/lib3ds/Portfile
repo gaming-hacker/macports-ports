@@ -18,7 +18,7 @@ homepage            http://$name.sourceforge.net
 master_sites        sourceforge
 
 checksums           md5 5b8e4ccf089ed45752333ea6cf0dd19a \
-                    sha1 a232b290dbeb13c6e7f22c22d75fe804fb2c4755 \
-                    rmd160 7c25e4de6eff415c8f087492a30d9979df185ac5
+sha1 a232b290dbeb13c6e7f22c22d75fe804fb2c4755 \
+rmd160 7c25e4de6eff415c8f087492a30d9979df185ac5
 
 use_zip             yes

@@ -27,8 +27,8 @@ platforms       darwin
 build.type      gnu
 
 checksums       md5 f13df3fdee98f6ceb5519d1a71cdf87f \
-                sha1 32ce278d51ea6def910f213d13901ab01c6f0ad6 \
-                rmd160 44e8e803bd9a46fabc5748ee9621a55ed475d863
+sha1 32ce278d51ea6def910f213d13901ab01c6f0ad6 \
+rmd160 44e8e803bd9a46fabc5748ee9621a55ed475d863
 
 configure.args  --mandir=${prefix}/share/man \
                 --with-html-dir=${prefix}/share/doc

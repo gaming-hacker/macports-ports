@@ -17,7 +17,7 @@ homepage        http://gobby.0x539.de/trac/wiki/Infinote/Libinfinity
 master_sites    http://releases.0x539.de/libinfinity/
 
 checksums       rmd160  c36895b04fc5be315f4f110438d14bcde2fbfb69 \
-                sha256  04004fc1097e0e45945180f844b1f7cef62db18390d752c8abca78253192f6c4
+sha256  04004fc1097e0e45945180f844b1f7cef62db18390d752c8abca78253192f6c4
 
 depends_build   port:pkgconfig
 

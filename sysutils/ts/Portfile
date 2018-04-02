@@ -28,7 +28,7 @@ homepage            http://vicerveza.homeunix.net/~viric/soft/ts/
 master_sites        ${homepage}
 
 checksums           rmd160  263e62f159260828d4d449b3ac42517e8f32a814 \
-                    sha256  4f53e34fff0bb24caaa44cdf7598fd02f3e5fa7cacaea43fa0d081d03ffbb395
+sha256  4f53e34fff0bb24caaa44cdf7598fd02f3e5fa7cacaea43fa0d081d03ffbb395
 
 patchfiles          patch-Makefile.diff
 

@@ -30,7 +30,7 @@ homepage            http://acsc.cs.utexas.edu/cpabe/
 master_sites        ${homepage}
 
 checksums           sha1    3781df5b3c8f900120dfa124345c66d35bfdd234 \
-                    rmd160  43fcb2b12e8cc219f5a1753ea627bca3307d8f20
+rmd160  43fcb2b12e8cc219f5a1753ea627bca3307d8f20
 
 depends_build       port:pkgconfig
 depends_lib         port:pbc \

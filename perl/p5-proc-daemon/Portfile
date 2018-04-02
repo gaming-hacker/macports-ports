@@ -19,7 +19,7 @@ long_description    This module can be used by a Perl program to initialize \
                     (alive or dead) and you can kill the daemon.
 
 checksums           sha256  34c0b85b7948b431cbabc97cee580835e515ccf43badbd8339eb109474089b69 \
-                    rmd160  a4222dde2215f7b2e2f1f36fa6e334244e6a921e
+rmd160  a4222dde2215f7b2e2f1f36fa6e334244e6a921e
 
 if {${perl5.major} != ""} {
     depends_lib-append \

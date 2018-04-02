@@ -18,7 +18,7 @@ description             PHP bindings for Subversion
 long_description        ${description}
 
 checksums               rmd160  fb7a7c33ab6609c0802055332a725f72931e3e55 \
-                        sha256  8ccf1dd78b92649486d1875102ecb899c1e4e5ddf674f2d87adf611c16295089
+sha256  8ccf1dd78b92649486d1875102ecb899c1e4e5ddf674f2d87adf611c16295089
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:subversion

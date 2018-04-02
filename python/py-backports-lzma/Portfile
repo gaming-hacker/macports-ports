@@ -25,7 +25,7 @@ master_sites        pypi:b/backports.lzma
 distname            backports.lzma-${version}
 
 checksums           rmd160  f4eb3f816bc0c81ee954074d5ef1363f14949115 \
-                    sha256  783029053a3b5eb8490fabff29773840dbf378e23a21fde3b720a90eaebeb9b8
+sha256  783029053a3b5eb8490fabff29773840dbf378e23a21fde3b720a90eaebeb9b8
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-backports \

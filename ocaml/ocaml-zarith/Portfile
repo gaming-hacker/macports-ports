@@ -20,7 +20,7 @@ distname            zarith-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  b0c858cb3757ce9bbd8f191b90ffeb76e81c5aa1 \
-                    sha256  23b6c140aad25385bb0b862b9b9fe8a5c6e6f608d0fac7a688aaede5ea876650
+sha256  23b6c140aad25385bb0b862b9b9fe8a5c6e6f608d0fac7a688aaede5ea876650
 
 depends_lib         port:ocaml port:ocaml-findlib port:gmp
 

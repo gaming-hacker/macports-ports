@@ -16,7 +16,7 @@ long_description    This store plugins makes delegating session storage to \
 platforms           darwin
 
 checksums           rmd160  6891c1cea4911950f686348efbf0552ad0a83684 \
-                    sha256  cdcbc2c1c93627fe9cbc2619a7a7b8e39db0c3cb41822c8ffba9b98cc09b9483
+sha256  cdcbc2c1c93627fe9cbc2619a7a7b8e39db0c3cb41822c8ffba9b98cc09b9483
 
 if {${perl5.major} != ""} {
     depends_lib-append \

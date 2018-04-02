@@ -16,4 +16,4 @@ description         CGI::FastTemplate - Perl extension for managing templates, a
 long_description    ${description}
 
 checksums           rmd160  75d431d6a49c776c198a38216c356d91aa284bc0 \
-                    sha256  7d9d6b57bef2c3a33142c4cf0ca07d8801575e53b7f054b83df9f616bd2a7773
+sha256  7d9d6b57bef2c3a33142c4cf0ca07d8801575e53b7f054b83df9f616bd2a7773

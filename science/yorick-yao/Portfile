@@ -18,7 +18,7 @@ long_description    Yao is a monte-carlo simulation package for adaptive \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  367af012dfca0b98a556f1ab5793e2ba735d17f6 \
-                    sha256  cd0e3bebc2027acab1beb8dec38437430db59769af37c27504504e1fe7f102ef
+sha256  cd0e3bebc2027acab1beb8dec38437430db59769af37c27504504e1fe7f102ef
 
 depends_lib-append  path:bin/yorick:yorick \
                     port:yorick-imutil \

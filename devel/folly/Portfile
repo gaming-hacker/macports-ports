@@ -16,7 +16,7 @@ description         An open-source C++ library developed and used at Facebook.
 long_description    ${description}
 
 checksums           rmd160  5dc40b05e7c9852001546e9f5e9737e26b197494 \
-                    sha256  8e58e5841890bcd999971663754f4f1c064acf0acb2c2efaddbd4488d2497f95
+sha256  8e58e5841890bcd999971663754f4f1c064acf0acb2c2efaddbd4488d2497f95
 
 use_autoreconf      yes
 

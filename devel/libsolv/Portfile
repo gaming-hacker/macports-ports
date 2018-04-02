@@ -7,7 +7,7 @@ PortGroup           cmake 1.0
 github.setup        openSUSE libsolv 0.6.30
 
 checksums           rmd160  01eb6030abec8711fea4a6139c96b79fe1ae673d \
-                    sha256  a80a4575d0365aed7ffc3017d12dd97dc9ddab2f54e26ab934271eb86e431d54
+sha256  a80a4575d0365aed7ffc3017d12dd97dc9ddab2f54e26ab934271eb86e431d54
 
 maintainers         cal {ijackson @JacksonIsaac} openmaintainer
 categories          devel math

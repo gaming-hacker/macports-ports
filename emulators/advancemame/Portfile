@@ -16,7 +16,7 @@ platforms		darwin
 master_sites		sourceforge:project/advancemame/advancemame/${version}
 
 checksums		sha1    b75589e970fa4e507eb443673fd04a7b57d6d468 \
-			rmd160  0ea5a51b0eeefccbd077873731f7995a7becdac7
+rmd160  0ea5a51b0eeefccbd077873731f7995a7becdac7
 
 depends_lib		port:libsdl port:freetype \
 			port:zlib port:expat

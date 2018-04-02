@@ -24,7 +24,7 @@ distname                ${name}_[string map {. _} ${version}]
 use_zip                 yes
 
 checksums               rmd160  ec30c8b4d8b11b7996dafdd3c91d6e281985db1f \
-                        sha256  3cb9e71f17eb756fbcf738e6d5084d47b3b122b68b66d42d6769105cb18a79be
+sha256  3cb9e71f17eb756fbcf738e6d5084d47b3b122b68b66d42d6769105cb18a79be
 
 worksrcdir              ${name}
 cmake.out_of_source     yes

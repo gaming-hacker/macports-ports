@@ -20,7 +20,7 @@ long_description    This class may be used for sending email messages for \
                     appended to the message or added as an attachment.
 
 checksums           rmd160  01bf37b24f202abc8acdc85e3aba440cc7af53af \
-                    sha256  1c230d09536870261a75e0d005e4510f6b38f16994b494064d48312f3e852e17
+sha256  1c230d09536870261a75e0d005e4510f6b38f16994b494064d48312f3e852e17
 
 platforms           darwin
 

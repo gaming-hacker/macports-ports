@@ -18,8 +18,8 @@ platforms           darwin
 master_sites        http://www.rkeene.org/files/oss/libopennet/
 
 checksums           md5     621294efc0d2d1a839d6262359b46f9c \
-                    sha1    d15c698498401ec6036646eaf19914117d6f5c56 \
-                    rmd160  551d6ce9ad7a262eeb7855e365c7f736f8763ee5
+sha1    d15c698498401ec6036646eaf19914117d6f5c56 \
+rmd160  551d6ce9ad7a262eeb7855e365c7f736f8763ee5
 
 patchfiles          patch-Makefile
 

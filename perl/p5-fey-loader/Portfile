@@ -14,7 +14,7 @@ description         Fey::Loader - Load your schema definition from a DBMS
 long_description    ${description}
 
 checksums           rmd160  0dffd3d97bb57d90ab152747a5a86eed19607386 \
-                    sha256  fc672a42f3e453186b67657e4acaaa0825083d40266c47bb14a643163a938660
+sha256  fc672a42f3e453186b67657e4acaaa0825083d40266c47bb14a643163a938660
 
 if {${perl5.major} != ""} {
     depends_build-append \

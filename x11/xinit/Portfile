@@ -17,8 +17,8 @@ homepage            https://www.x.org
 master_sites        xorg:individual/app/
 
 checksums           sha1    de3469080d73ced1f7d7a1803e813bc6ea352072 \
-                    rmd160  ee5b21766556c4a16e2538700b432a11890d7829 \
-                    sha256  75d88d7397a07e01db253163b7c7a00b249b3d30e99489f2734cac9a0c7902b3
+rmd160  ee5b21766556c4a16e2538700b432a11890d7829 \
+sha256  75d88d7397a07e01db253163b7c7a00b249b3d30e99489f2734cac9a0c7902b3
 
 use_bzip2           yes
 use_parallel_build  yes

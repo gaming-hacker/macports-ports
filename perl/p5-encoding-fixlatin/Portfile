@@ -18,4 +18,4 @@ description         Encoding::FixLatin - takes mixed encoding input and produces
 long_description    ${description}
 
 checksums           rmd160  b5d1f6a62d4dd1f76ac3d90c70873a7b8884c428 \
-                    sha256  da072e5b1c5f66567a2d106bb9c80a166c054527c32350e149a09a5d3f4e8b78
+sha256  da072e5b1c5f66567a2d106bb9c80a166c054527c32350e149a09a5d3f4e8b78

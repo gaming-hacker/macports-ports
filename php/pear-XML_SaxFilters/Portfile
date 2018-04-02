@@ -12,6 +12,6 @@ description         PEAR XML_SaxFilters package
 long_description    ${description}
 
 checksums           rmd160  2680fd5df192931c162003a6aa076b4dc605a533 \
-                    sha256  f1fd2c90990295295f01b2fd7dd5023612cddec2fe8f56f6b772f92b0031a93a
+sha256  f1fd2c90990295295f01b2fd7dd5023612cddec2fe8f56f6b772f92b0031a93a
 
 depends_lib-append  port:pear-XML_HTMLSax

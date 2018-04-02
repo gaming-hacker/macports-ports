@@ -27,7 +27,7 @@ distfiles           seqan-src-${version}${extract.suffix}
 distname            seqan-seqan-v${version}
 
 checksums           rmd160  c8f7ba426d96339bfa96ae735f0a2cae219e0020 \
-                    sha256  6add074932c2723ef1fb658c88f906bdd6ced1fc34cb16a7410251ffc4cb8cc8
+sha256  6add074932c2723ef1fb658c88f906bdd6ced1fc34cb16a7410251ffc4cb8cc8
 
 # llvm-gcc42 is broken and won't be fixed anymore, see: https://trac.macports.org/ticket/40713
 # For OpenMP only the apple clang version really needs to be blacklisted.

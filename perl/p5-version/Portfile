@@ -19,4 +19,4 @@ long_description    Version objects were added to Perl in 5.10. \
 platforms           darwin
 
 checksums           rmd160  59a8897451ac84b1be9aacf790ad51a16250b4b1 \
-                    sha256  54175c7ead4e2259c2fb2b83440b821e4287842067227e48fb899b5cae52237b
+sha256  54175c7ead4e2259c2fb2b83440b821e4287842067227e48fb899b5cae52237b

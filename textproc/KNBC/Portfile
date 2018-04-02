@@ -19,7 +19,7 @@ license             Permissive
 
 master_sites        ${homepage}
 checksums           rmd160  95d2c0104a0a6be7896c322b564daf006d63dfd5 \
-                    sha256  eae5f629335f0a8f5651653429c3a491d9d9c221b2bbfa3b3289028c9a146747
+sha256  eae5f629335f0a8f5651653429c3a491d9d9c221b2bbfa3b3289028c9a146747
 
 distname            ${name}_v${version}
 use_bzip2           yes

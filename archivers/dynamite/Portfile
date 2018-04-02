@@ -19,8 +19,8 @@ master_sites	sourceforge:project/synce/Dynamite/${version}
 distname		${my_name}-${version}
 
 checksums		md5     238bf243dba2166a2e0e141b18065235 \
-				sha1    ccb8ffe59d93ddf18cc5c823e7a23a83b2d50362 \
-				rmd160  6b0e2633e49a4e50647e60dff73d616c7d04efda
+sha1    ccb8ffe59d93ddf18cc5c823e7a23a83b2d50362 \
+rmd160  6b0e2633e49a4e50647e60dff73d616c7d04efda
 
 post-destroot {
 	set docdir ${prefix}/share/doc/${name}

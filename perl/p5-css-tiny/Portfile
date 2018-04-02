@@ -17,4 +17,4 @@ description         CSS::Tiny - Read/Write .css files with as little code as pos
 long_description    ${description}
 
 checksums           rmd160  5ad05e5d2ddb2f2e4cb25e72322fd4cc9882cc1e \
-                    sha256  68f49de6a41c153ddc735da81c6b4dd5dd26e15c2b3f7968286d6c1429b152fa
+sha256  68f49de6a41c153ddc735da81c6b4dd5dd26e15c2b3f7968286d6c1429b152fa

@@ -22,7 +22,7 @@ use_configure	    no
 supported_archs     noarch
 
 checksums           rmd160  98e603df02e85047ddbab9885e7d033cfc6c1ee0 \
-                    sha256  01b1ade8811dd40018da23481c91a0c501fc339d6495bd65eb139c7ab31122f5
+sha256  01b1ade8811dd40018da23481c91a0c501fc339d6495bd65eb139c7ab31122f5
 
 build {}
 

@@ -28,7 +28,7 @@ if {${name} ne ${subport}} {
     depends_run-append      port:py${python.version}-setuptools
 
     checksums               rmd160  cdf6eaf626d01224c202ae8a03644ee3234e59e9 \
-                            sha256  05b81801249543c3921ac9e031048f153cddb67deb9964577be96e9bfff9830a
+sha256  05b81801249543c3921ac9e031048f153cddb67deb9964577be96e9bfff9830a
 
     livecheck.type          none
 }

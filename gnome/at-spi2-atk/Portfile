@@ -7,7 +7,7 @@ name                at-spi2-atk
 version             2.26.2
 
 checksums           rmd160  cccbc8cb2750ca1cf7e7a0d96d6c3118f68b38b9 \
-                    sha256  61891f0abae1689f6617a963105a3f1dcdab5970c4a36ded9c79a7a544b16a6e \
+sha256  61891f0abae1689f6617a963105a3f1dcdab5970c4a36ded9c79a7a544b16a6e \
 size    322800
 
 license             LGPL

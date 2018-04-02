@@ -20,8 +20,8 @@ homepage            http://hmmer.org/
 platforms           darwin
 master_sites        http://eddylab.org/software/hmmer3/${version}/
 checksums           md5     c8c141018bc0ccd7fc37b33f2b945d5f \
-                    sha1    6f2f289e5baa808d22909eb122a9d067e301d0c7 \
-                    rmd160  df4d2e9af1409d81e7ac66efb0d530b18180c070
+sha1    6f2f289e5baa808d22909eb122a9d067e301d0c7 \
+rmd160  df4d2e9af1409d81e7ac66efb0d530b18180c070
 use_parallel_build  no
 livecheck.type      regex
 livecheck.url       ${homepage}/download.html

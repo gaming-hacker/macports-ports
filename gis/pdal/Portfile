@@ -25,7 +25,7 @@ master_sites        http://download.osgeo.org/pdal
 distname            PDAL-${version}-src
 
 checksums           rmd160  41875e22a158dfcef5a066e6d19e7ab1aac80f43 \
-                    sha256  61f328691699f4fdd28486489b1e679fc3b83bb75300d3075f69fe1092e63efc
+sha256  61f328691699f4fdd28486489b1e679fc3b83bb75300d3075f69fe1092e63efc
 
 depends_lib-append  port:geos \
                     port:gdal \

@@ -23,7 +23,7 @@ long_description     The Mozart system is a development platform focused on open
 master_sites           ${homepage}/download/mozart-ftp/store/${version}-${urldate}-tar/
 distname               mozart-${version}.${tardate}-doc
 checksums              md5 6c019af10d968f18cf2d296ac5d6b65e \
-                       sha1 308fdd1d835f5197795f31232ed2374b646bf26a
+sha1 308fdd1d835f5197795f31232ed2374b646bf26a
 
 worksrcdir             mozart
 

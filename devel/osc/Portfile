@@ -22,7 +22,7 @@ long_description    osc is a subversion-like client written in Python. \
 homepage            https://en.opensuse.org/openSUSE:OSC
 
 checksums           rmd160  c3915c31af985c645f902e9f9be840c24c0d297d \
-                    sha256  668d319c5ead8d879120c27638925e7476ccafa1144c047b56ccef10b0dd2689 \
+sha256  668d319c5ead8d879120c27638925e7476ccafa1144c047b56ccef10b0dd2689 \
 size    340944
 
 patchfiles          patch-config.diff \

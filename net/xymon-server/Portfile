@@ -27,7 +27,7 @@ distname                ${shortname}-${version}
 dist_subdir             ${shortname}
 
 checksums               sha256  cbd0586c77378c92d9866497c8e5ddc64ec9973e4078e44860f572258f8521c5 \
-                        rmd160  c43ac804be298dca61d0f310bd599caea0b804de
+rmd160  c43ac804be298dca61d0f310bd599caea0b804de
 
 depends_lib             port:rrdtool \
                         port:fping \

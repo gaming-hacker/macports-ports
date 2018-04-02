@@ -15,7 +15,7 @@ homepage            http://radare.org
 master_sites        http://radare.org/get/
 
 checksums           rmd160  743ac6a7834dad24245daaca8bc4328371481ded \
-                    sha256  35517455b4869138328513aa24518b46debca67cf969f227336af264b8811c19
+sha256  35517455b4869138328513aa24518b46debca67cf969f227336af264b8811c19
 
 depends_build       port:pkgconfig
 

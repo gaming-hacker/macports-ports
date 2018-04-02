@@ -15,7 +15,7 @@ long_description    ${description}
 use_parallel_build  no
 
 checksums           rmd160  a4407d6189cbb36f5ff1cbe01307822f5748b6b3 \
-                    sha256  ba4df5f9b0db6c9d86a6c5cf9861cf00d17b18e77cfa028e7a9157c0015a5aa3
+sha256  ba4df5f9b0db6c9d86a6c5cf9861cf00d17b18e77cfa028e7a9157c0015a5aa3
 
 if {${perl5.major} != ""} {
     patchfiles      patch-FileList-Makefile.PL.diff

@@ -72,8 +72,8 @@ depends_lib			port:qmail-spamcontrol \
 master_sites		        sourceforge
 				
 checksums			md5 273c2c25906aed5206e97b01a2593aa6 \
-				sha1 ce62415fbd338b80f1962a477d94276f622756d0 \
-				rmd160 57142cca0617bd95ef2e5f4aa74ab5fa0844d6df
+sha1 ce62415fbd338b80f1962a477d94276f622756d0 \
+rmd160 57142cca0617bd95ef2e5f4aa74ab5fa0844d6df
 
 patchfiles			patch-configure.diff
 

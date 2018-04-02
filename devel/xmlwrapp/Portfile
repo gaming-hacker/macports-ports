@@ -28,7 +28,7 @@ depends_lib         port:boost \
                     port:zlib
 
 checksums           rmd160  9c547cec156098a1c1277cefdbf66b10f6f1311d \
-                    sha256  79c198eef6b9191e7f9019586b48e14d57f1aaadd9b672a494aa9d67636f9993 \
+sha256  79c198eef6b9191e7f9019586b48e14d57f1aaadd9b672a494aa9d67636f9993 \
 size    1470707
 
 configure.args      --disable-docs \

@@ -25,7 +25,7 @@ github.tarball_from releases
 distfiles           ${name}-${version}-full${extract.suffix}
 
 checksums           rmd160  332a32fb0e10750540592eb125b3f31843702333 \
-                    sha256  4c23c9fc72398014bd39327c2f7efd3a301884567d4cb2a89105c984d4d633ba
+sha256  4c23c9fc72398014bd39327c2f7efd3a301884567d4cb2a89105c984d4d633ba
 
 # Force buildbot to skip this since julia builds its own blas; see #45101
 archive_sites

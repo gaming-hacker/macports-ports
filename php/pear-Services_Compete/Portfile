@@ -12,6 +12,6 @@ description         PEAR Services_Compete package
 long_description    ${description}
 
 checksums           rmd160  ece8e9b7cfb4ca2554f800cd47ba4533c0cb4427 \
-                    sha256  0dc357a297090e68f9e85a084566cfa465328580831f4a6a79df00db8cf6f24a
+sha256  0dc357a297090e68f9e85a084566cfa465328580831f4a6a79df00db8cf6f24a
 
 depends_lib-append  port:pear-HTTP_Request

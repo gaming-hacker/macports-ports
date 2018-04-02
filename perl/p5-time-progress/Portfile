@@ -16,4 +16,4 @@ description         Elapsed and estimated finish time reporting
 long_description    ${description}
 
 checksums           rmd160  e519d7156c63d3b0e3f785aff10408ec05f90265 \
-                    sha256  7ca23fd6372c0765b201f354c5185924cb2fadf119bd31626163a2b691abce9e
+sha256  7ca23fd6372c0765b201f354c5185924cb2fadf119bd31626163a2b691abce9e

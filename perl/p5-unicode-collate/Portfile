@@ -16,4 +16,4 @@ long_description    This module is an implementation of Unicode Technical \
                     (a.k.a. UCA).
 
 checksums           rmd160  f409e2d1fbd2c55f6a0d6f608de2fca50cba8875 \
-                    sha256  ddfbb8a08b60024f83136acc9027143df91a7d115120961686082aa5c964fbb6
+sha256  ddfbb8a08b60024f83136acc9027143df91a7d115120961686082aa5c964fbb6

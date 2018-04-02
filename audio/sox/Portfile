@@ -23,7 +23,7 @@ homepage         http://sox.sourceforge.net/
 master_sites     sourceforge:project/sox/sox/${version}
 use_bzip2        yes
 checksums        sha1    dc9668256b9d81ef25d672f14f12ec026b0b4087 \
-                 rmd160  738ac41a07f74f66e27cd642f786cc5815ca87ff
+rmd160  738ac41a07f74f66e27cd642f786cc5815ca87ff
 
 depends_build	\
 		port:pkgconfig

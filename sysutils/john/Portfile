@@ -21,7 +21,7 @@ master_sites        http://www.openwall.com/${name}/j/
 use_xz              yes
 
 checksums           rmd160  fda9971cd78bdf2b5154586efde2504c9a5974a4 \
-                    sha256  952cf68369fb5b27f2d112ce7ca1eb16b975c85cbce8c658abb8bc5a20e1b266
+sha256  952cf68369fb5b27f2d112ce7ca1eb16b975c85cbce8c658abb8bc5a20e1b266
 
 patchfiles          patch-src-params.h.diff
 
@@ -84,7 +84,7 @@ subport john-jumbo {
     distname            ${name}-${version}-jumbo-${jumbo_patchlvl}
 
     checksums           rmd160  2ed5b5b5e55eefadf2e2eb8d28d15cfc27c82655 \
-                        sha256  bac93d025995a051f055adbd7ce2f1975676cac6c74a6c7a3ee4cfdd9c160923
+sha256  bac93d025995a051f055adbd7ce2f1975676cac6c74a6c7a3ee4cfdd9c160923
 
     use_configure       yes
     configure.dir       ${worksrcpath}/src

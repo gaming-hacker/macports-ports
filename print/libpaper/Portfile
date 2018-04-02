@@ -24,7 +24,7 @@ distname        ${name}_${realversion}
 worksrcdir      ${name}-${realversion}
 
 checksums       rmd160  9d13d787009f693a2158dd3824bed381c99a5455 \
-                sha256  e29deda4cd7350189c71af0925cbf4a4473f9841d1419a922e1e8ff1954db1f2
+sha256  e29deda4cd7350189c71af0925cbf4a4473f9841d1419a922e1e8ff1954db1f2
 
 post-patch {
     set fd [open [file join ${worksrcpath}/lib paperspecs] a 0644]

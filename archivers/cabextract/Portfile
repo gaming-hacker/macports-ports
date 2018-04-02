@@ -20,7 +20,7 @@ homepage            https://www.cabextract.org.uk
 master_sites        ${homepage}
 
 checksums           rmd160  6b693c30aa4d6821b5e83b63a8dc9d58968268b7 \
-                    sha256  cee661b56555350d26943c5e127fc75dd290b7f75689d5ebc1f04957c4af55fb
+sha256  cee661b56555350d26943c5e127fc75dd290b7f75689d5ebc1f04957c4af55fb
 
 use_parallel_build  yes
 

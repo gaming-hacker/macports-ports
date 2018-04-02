@@ -19,7 +19,7 @@ distname            ${name}
 use_zip             yes
 
 checksums           rmd160  ccd16eefd29dc6c32df0a2ff87bf0d7cec58eb0c \
-                    sha256  5dff29c58b428fa00cd36b1220e2d71b9882a658fdec1aa094fb7e6e482d6765
+sha256  5dff29c58b428fa00cd36b1220e2d71b9882a658fdec1aa094fb7e6e482d6765
 
 extract.mkdir       yes
 

@@ -12,7 +12,7 @@ description         PEAR Mail_Queue package
 long_description    ${description}
 
 checksums           rmd160  f4416ff30008a72f722ded60bdf2cad8c6aa59e3 \
-                    sha256  f36827500f5e506644cbd932fb8d78172de12e7c05d8bd96b9eabd29554a1125
+sha256  f36827500f5e506644cbd932fb8d78172de12e7c05d8bd96b9eabd29554a1125
 
 depends_lib-append  port:pear-Mail \
                     port:pear-Mail_Mime

@@ -20,5 +20,5 @@ homepage	http://www.cs.columbia.edu/irt/software/rtptools/
 master_sites	http://www.cs.columbia.edu/irt/software/rtptools/download/
 
 checksums \
-	rmd160 9fd771df2b98231a194370b2685cb2beaf6de77b \
-	sha256 2c76b2a423fb943820c91194372133a44cbdc456ebf69c51616ec50eeb068c28
+rmd160 9fd771df2b98231a194370b2685cb2beaf6de77b \
+sha256 2c76b2a423fb943820c91194372133a44cbdc456ebf69c51616ec50eeb068c28

@@ -24,7 +24,7 @@ homepage            http://elixir-lang.org/
 depends_lib         port:erlang
 
 checksums           rmd160  1b57627cb3e7f73873dd64517e0a931885dd63ae \
-                    sha256  7da14b211d4337622da6007dbf676adc5893b2e22ad28ac65f542016b3099819
+sha256  7da14b211d4337622da6007dbf676adc5893b2e22ad28ac65f542016b3099819
 
 # bin/mix
 conflicts           arb

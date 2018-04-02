@@ -18,7 +18,7 @@ description         Pod Object Model
 long_description    ${description}
 
 checksums           rmd160  25a9006d132a0b48418841c5a9db649f6585750a \
-                    sha256  1b50fba9bbdde3ead192beeba0eaddd0c614e3afb1743fa6fff805f57c56f7f4
+sha256  1b50fba9bbdde3ead192beeba0eaddd0c614e3afb1743fa6fff805f57c56f7f4
 
 if {${perl5.major} != ""} {
     depends_build-append \

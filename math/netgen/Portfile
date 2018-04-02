@@ -23,7 +23,7 @@ homepage            http://www.hpfem.jku.at/netgen/
 master_sites        sourceforge:project/netgen-mesher/netgen-mesher/${branch}/
 
 checksums           rmd160  1516ded2576a1ff31bc848e3af966aa444cb84ea \
-                    sha256  cb97f79d8f4d55c00506ab334867285cde10873c8a8dc783522b47d2bc128bf9
+sha256  cb97f79d8f4d55c00506ab334867285cde10873c8a8dc783522b47d2bc128bf9
 
 compilers.choose    cc cxx
 compilers.setup

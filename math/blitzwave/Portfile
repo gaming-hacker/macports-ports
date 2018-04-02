@@ -21,7 +21,7 @@ long_description    blitzwave is a ${description}. blitzwave is heavily \
 homepage            https://oschulz.github.io/blitzwave/
 
 checksums           rmd160  4123a45ea934e11eb093e455660e0c6bc4f2509c \
-                    sha256  daacce4f65c9c569e83ff5312d0910f2b269a67883883d359ea017b6b7132cb8
+sha256  daacce4f65c9c569e83ff5312d0910f2b269a67883883d359ea017b6b7132cb8
 
 depends_lib         port:blitz
 

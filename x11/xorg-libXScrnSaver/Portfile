@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXScrnSaver-${version}
 checksums           sha1    7b8298eec371c33a71232e3653370a98f03c6c88 \
-                    rmd160  b0d007fe39d64eafa4cabb0276d49c0f04e04e89 \
-                    sha256  8ff1efa7341c7f34bcf9b17c89648d6325ddaae22e3904e091794e0b4426ce1d
+rmd160  b0d007fe39d64eafa4cabb0276d49c0f04e04e89 \
+sha256  8ff1efa7341c7f34bcf9b17c89648d6325ddaae22e3904e091794e0b4426ce1d
 
 use_bzip2   yes
 use_parallel_build      yes

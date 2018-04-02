@@ -14,14 +14,14 @@ description         TeX Live: Cyrillic
 long_description    Support for Cyrillic scripts (Bulgarian, Russian, Serbian, Ukrainian), even if Latin alphabets may also be used.
 
 checksums           texlive-lang-cyrillic-44401-run.tar.xz \
-                    rmd160  925dfd5937f2ffe78646884b0c40c323e22f0b95 \
-                    sha256  7e0dede12deabeb96ac6dbc624c9de7d8126054c9f58147ae4d295bdfdf882d3 \
+rmd160  925dfd5937f2ffe78646884b0c40c323e22f0b95 \
+sha256  7e0dede12deabeb96ac6dbc624c9de7d8126054c9f58147ae4d295bdfdf882d3 \
                     texlive-lang-cyrillic-44401-doc.tar.xz \
-                    rmd160  bd3ca48aab70e27bf57450002099c3d3f9caf5f8 \
-                    sha256  c484eb5f5444c32b42f167bba0c94dc96fe94a00ea67f3151028684f06ad793c \
+rmd160  bd3ca48aab70e27bf57450002099c3d3f9caf5f8 \
+sha256  c484eb5f5444c32b42f167bba0c94dc96fe94a00ea67f3151028684f06ad793c \
                     texlive-lang-cyrillic-44401-src.tar.xz \
-                    rmd160  c13c8b1230af53371c1d7984dda223a22b2fc1f4 \
-                    sha256  ccc0d5e08a1a15a7de9cb566ac9fd96397dc9c1f2ce77ed3290a86681024f62f
+rmd160  c13c8b1230af53371c1d7984dda223a22b2fc1f4 \
+sha256  ccc0d5e08a1a15a7de9cb566ac9fd96397dc9c1f2ce77ed3290a86681024f62f
 
 depends_lib         port:texlive-basic port:texlive-latex
 

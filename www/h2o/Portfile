@@ -19,7 +19,7 @@ long_description    H2O is a new generation HTTP server that provides quicker \
 homepage            https://h2o.examp1e.net/
 
 checksums           rmd160  f661be3fd7974128f63d8a0183e3a828039f5253 \
-                    sha256  b4d5d8726829b5bc3dc8fcee0394b6c7e720e3423cc816784bbe5142aabb014f
+sha256  b4d5d8726829b5bc3dc8fcee0394b6c7e720e3423cc816784bbe5142aabb014f
 
 depends_build-append \
                     port:pkgconfig

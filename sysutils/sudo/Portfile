@@ -23,7 +23,7 @@ master_sites        ${homepage}dist/ \
                     ${homepage}dist/OLD/
 
 checksums           rmd160  e9ddbd31a2d9669691f71ce8fd9aec675af9107f \
-                    sha256  7256cb27c20883b14360eddbd17f98922073d104b214cf65aeacf1d9c9b9fd02
+sha256  7256cb27c20883b14360eddbd17f98922073d104b214cf65aeacf1d9c9b9fd02
 
 patchfiles          patch-sudoers.in.diff
 

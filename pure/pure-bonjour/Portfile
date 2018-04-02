@@ -15,7 +15,7 @@ description                     an interface to Bonjour which enables you to \
 long_description                ${name} provides ${description}.
 
 checksums                       rmd160  2a7af3ed1aaa92ce47978354b43a98473120493b \
-                                sha256  ff9e43a4e64c26d509505ee59081603a7553dd516b9317944b83d34e4904719b
+sha256  ff9e43a4e64c26d509505ee59081603a7553dd516b9317944b83d34e4904719b
 
 depends_build-append            port:pkgconfig
 

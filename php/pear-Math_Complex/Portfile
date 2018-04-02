@@ -12,6 +12,6 @@ description         PEAR Math_Complex package
 long_description    ${description}
 
 checksums           rmd160  6de69cee647f010370b2265b527cfe42d670acc2 \
-                    sha256  5fd23f54ebe5530064871821865e452aa5966ac1b7819b901a31d77b4ca7488c
+sha256  5fd23f54ebe5530064871821865e452aa5966ac1b7819b901a31d77b4ca7488c
 
 depends_lib-append  port:pear-Math_TrigOp

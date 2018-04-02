@@ -16,7 +16,7 @@ description         HTTP::Daemon - a simple HTTP server class
 long_description    ${description}
 
 checksums           rmd160  426d00f81025ed56e861384a8722163589814a66 \
-                    sha256  43fd867742701a3f9fcc7bd59838ab72c6490c0ebaf66901068ec6997514adc2
+sha256  43fd867742701a3f9fcc7bd59838ab72c6490c0ebaf66901068ec6997514adc2
 
 if {${perl5.major} != ""} {
     depends_lib-append \

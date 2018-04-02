@@ -13,4 +13,4 @@ description         PEAR MDB2 package
 long_description    ${description}
 
 checksums           rmd160  d1e1b7f06d4fe997d3ee6c3831353c1d77fd488f \
-                    sha256  890356688565b76f0d756496409d04629950f32f4bdf01f0d5edb4a3e9a036fb
+sha256  890356688565b76f0d756496409d04629950f32f4bdf01f0d5edb4a3e9a036fb

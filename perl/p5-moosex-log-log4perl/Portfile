@@ -15,7 +15,7 @@ description         A Logging Role for Moose based on Log::Log4perl
 long_description    ${description}
 
 checksums           rmd160  f7cb1d6d13617d67a5cbe6651eb3cf6179f33f01 \
-                    sha256  da0be319762066ef0546f54ecf42b0da6d2463a932a55e06e6161678e21078d3
+sha256  da0be319762066ef0546f54ecf42b0da6d2463a932a55e06e6161678e21078d3
 
 if {${perl5.major} != ""} {
     depends_lib-append \

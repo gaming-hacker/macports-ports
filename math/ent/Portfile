@@ -24,8 +24,8 @@ use_zip             yes
 extract.mkdir       yes
 
 checksums           md5     8104a83af1ea5b280da96c92da18eae4 \
-                    sha1    0f2f12dc67d1f02f77776709cf5fc5eee1d1b2e2 \
-                    rmd160  b21b8401fdbd2aac189fe4a442a1164b172407f8
+sha1    0f2f12dc67d1f02f77776709cf5fc5eee1d1b2e2 \
+rmd160  b21b8401fdbd2aac189fe4a442a1164b172407f8
 
 variant universal {}
 

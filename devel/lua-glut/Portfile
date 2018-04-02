@@ -19,8 +19,8 @@ depends_lib             port:lua
 use_configure		no
 
 checksums               md5 9b0ae78d829af770dab2b88c9190c90c \
-                        sha1 3e1dc986d2ead5a96073451d2d78c8df2fbb4e4b \
-			rmd160 4de4335353d1712bf22b1ed187ef8d35f3b869b3
+sha1 3e1dc986d2ead5a96073451d2d78c8df2fbb4e4b \
+rmd160 4de4335353d1712bf22b1ed187ef8d35f3b869b3
 
 patchfiles              patch-Makefile
 

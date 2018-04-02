@@ -17,7 +17,7 @@ master_sites        http://mcabber.com/files/
 use_bzip2           yes
 
 checksums           rmd160  9fad19bf2f530e88268c2c011818f2eca20ca58a \
-                    sha256  63b6bc003fcceba4dc4b273ed1c71643c4f8d95e8696543d53f64a7672b1ce0a
+sha256  63b6bc003fcceba4dc4b273ed1c71643c4f8d95e8696543d53f64a7672b1ce0a
 
 depends_lib         port:libiconv \
                     port:ncurses \

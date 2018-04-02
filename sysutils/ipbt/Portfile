@@ -23,7 +23,7 @@ master_sites        ${homepage}
 depends_lib         port:ncurses
 
 checksums           rmd160  67a06a1b34184c7e0cd21b8aaacd4e01e2fabd57 \
-                    sha256  237394f7074a8e540495bdcb8b82b5a932f8597505e2ee3ba3d96b0671cfeae3
+sha256  237394f7074a8e540495bdcb8b82b5a932f8597505e2ee3ba3d96b0671cfeae3
 
 configure.args-append   --without-ncursesw
 

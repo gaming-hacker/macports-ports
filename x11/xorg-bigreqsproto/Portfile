@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	bigreqsproto-${version}
 checksums           sha1    ef1765eeb5e9e38d080225fe6a64ed7cd2984b46 \
-                    rmd160  3bff3c4c05a0061e492181d4e687469e590b3900 \
-                    sha256  462116ab44e41d8121bfde947321950370b285a5316612b8fce8334d50751b1e
+rmd160  3bff3c4c05a0061e492181d4e687469e590b3900 \
+sha256  462116ab44e41d8121bfde947321950370b285a5316612b8fce8334d50751b1e
 use_bzip2	yes
 
 configure.args \

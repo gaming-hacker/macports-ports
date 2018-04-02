@@ -30,7 +30,7 @@ distname            ${gh_project}-${gh_commit}
 worksrcdir          ${gh_user}-${distname}
 
 checksums           rmd160  6a729f6a659123f4366ffec240fc2e9b9b43d55c \
-                    sha256  1fe7053182a27e34c706fc2b5d1f85f5f6f0c3a7427c94e15870dc602e44941f
+sha256  1fe7053182a27e34c706fc2b5d1f85f5f6f0c3a7427c94e15870dc602e44941f
 
 supported_archs     noarch
 

@@ -23,7 +23,7 @@ master_sites        http://download.pureftpd.org/pub/pure-ftpd/misc/libpuzzle/re
 use_bzip2           yes
 
 checksums           rmd160  444a66e045790e5f7ffe471e35b9cb40982fac6e \
-                    sha256  ba628268df6956366cbd44ae48c3f1bab41e70b4737041a1f33dac9832c44781
+sha256  ba628268df6956366cbd44ae48c3f1bab41e70b4737041a1f33dac9832c44781
 
 depends_lib         port:gd2
 

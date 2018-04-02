@@ -16,7 +16,7 @@ master_sites        https://forge.ocamlcore.org/frs/download.php/1051/
 distname            bisect-${version}
 
 checksums           rmd160  686ef54ce96b2b34bc0e679f74587d9efb3de043 \
-                    sha256  e0655cda0fc952eb4bc05a7df0f37a042c616c398b413bf6ba6e520c60168f4d
+sha256  e0655cda0fc952eb4bc05a7df0f37a042c616c398b413bf6ba6e520c60168f4d
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib

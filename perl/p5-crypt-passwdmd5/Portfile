@@ -15,7 +15,7 @@ long_description    The unix_md5_crypt() provides a crypt()-compatible \
                     implementation found on FreeBSD 2.2-RELEASE.
 
 checksums           rmd160 404e85c40c4da1f19f17a38b412b84aebb54779b \
-                    sha256 b77d6aeea25301af7be679f7452e894ca88af9710bffd6e01d665a141c391948
+sha256 b77d6aeea25301af7be679f7452e894ca88af9710bffd6e01d665a141c391948
 
 extract.suffix      .tgz
 

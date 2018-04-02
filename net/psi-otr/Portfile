@@ -19,8 +19,8 @@ homepage        http://www.tfh-berlin.de/~s30935/
 master_sites    http://www.tfh-berlin.de/~s30935/files/
 
 checksums		md5     134c1c21e9e1bcb1e2a2e159bf895359 \
-                sha1    6fcc76f40ee25c284c7c812ce86586c5e624c5d8 \
-                rmd160  86eb4db5f6cc96e23bad81f63b6d745cf0beca3e
+sha1    6fcc76f40ee25c284c7c812ce86586c5e624c5d8 \
+rmd160  86eb4db5f6cc96e23bad81f63b6d745cf0beca3e
 
 depends_lib     port:psi \
                 port:libotr

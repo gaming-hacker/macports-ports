@@ -17,8 +17,8 @@ platforms               darwin
 maintainers             nomaintainer
 master_sites            ${homepage}download/server/sources/
 checksums               md5     d897102ee2cfea52d9c6e6444fb30503 \
-                        sha1    46ebc36c160e572493bb611a9fa40a7c8e8703eb \
-                        rmd160  f47a0cceef7ee6d14939699af5500089687a3a96
+sha1    46ebc36c160e572493bb611a9fa40a7c8e8703eb \
+rmd160  f47a0cceef7ee6d14939699af5500089687a3a96
 patchfiles              patch-server.h.diff
 use_bzip2               yes
 use_parallel_build      yes

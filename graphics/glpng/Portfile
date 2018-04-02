@@ -24,7 +24,7 @@ long_description            ${name} is a library for OpenGL to load PNG \
                             graphics files as an OpenGL texture
 
 checksums                   rmd160  6bc8459aedfa83e42cc93967c8531ecda45140bf \
-                            sha256  64bca46b92d932f41e13b623bb8995c2117c8bb6b11ecbb3ade2247a255b1acd \
+sha256  64bca46b92d932f41e13b623bb8995c2117c8bb6b11ecbb3ade2247a255b1acd \
 size    41033
 
 depends_lib                 port:libpng \

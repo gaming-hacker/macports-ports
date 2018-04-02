@@ -16,7 +16,7 @@ long_description    Use this module to establish an interactive command-line ses
                     generic call to your session object.
 
 checksums           rmd160  0d5fea6e17a2de3dd9fe16989dfb3200c02555b2 \
-                    sha256  a3480b8efce65fd23bc34ac1413fbfb9cdfd381e39f468730b733cdee4e899c7
+sha256  a3480b8efce65fd23bc34ac1413fbfb9cdfd381e39f468730b733cdee4e899c7
 
 platforms           darwin
 

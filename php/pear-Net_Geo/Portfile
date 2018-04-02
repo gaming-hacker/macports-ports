@@ -12,7 +12,7 @@ description         PEAR Net_Geo package
 long_description    ${description}
 
 checksums           rmd160  1e3297d866b0cd40de33ba164e89fc06fec4ff43 \
-                    sha256  a031dbc31a897403322ddabedfd0d5aff296fbf94bcd328fc4794b5a55bb1339
+sha256  a031dbc31a897403322ddabedfd0d5aff296fbf94bcd328fc4794b5a55bb1339
 
 depends_lib-append  port:pear-Cache \
                     port:pear-XML_Serializer

@@ -27,7 +27,7 @@ homepage            http://www.gdal.org/
 master_sites        http://download.osgeo.org/gdal/${version}/
 
 checksums           rmd160  4fe078373c85e1f269e1821d3420a147dd29a909 \
-                    sha256  52f01bda8968643633016769607e6082a8ba1c746fadc2c1abe12cf7dc8f61dd
+sha256  52f01bda8968643633016769607e6082a8ba1c746fadc2c1abe12cf7dc8f61dd
 
 compilers.choose    cc cxx
 mpi.setup

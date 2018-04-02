@@ -17,7 +17,7 @@ long_description    ack is a tool like grep, designed for programmers with large
 homepage            https://beyondgrep.com/
 
 checksums           rmd160  75ec69671ca8de7fd6a10fcfc81649bb41b9c8bb \
-                    sha256  02c441dbbc86bf69c792ae92dc92419a0448c31f69d9703dd1530425c36e0f6c
+sha256  02c441dbbc86bf69c792ae92dc92419a0448c31f69d9703dd1530425c36e0f6c
 
 depends_lib-append  port:p${perl5.major}-file-next
 

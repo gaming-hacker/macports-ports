@@ -16,4 +16,4 @@ long_description    PadWalker is a module which allows you to inspect \
 platforms           darwin
 
 checksums           rmd160  3fa0aedb3bcb38a79a060c2f5ce0acc063d824e5 \
-                    sha256  2a6c44fb600861e54568e74081a8d1f121f0060076069ceab34b1ae89d6588cf
+sha256  2a6c44fb600861e54568e74081a8d1f121f0060076069ceab34b1ae89d6588cf

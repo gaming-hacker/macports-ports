@@ -23,7 +23,7 @@ homepage                http://www.clex.sk/
 master_sites            ${homepage}download/
 
 checksums               rmd160  c7fa2bbc07507e236fc77ab2878a723aeed8c5b0 \
-                        sha256  71d5339044edb0234246b3078f4bf90e6c6ca91e78d7c93c998e3ea2d951d36a
+sha256  71d5339044edb0234246b3078f4bf90e6c6ca91e78d7c93c998e3ea2d951d36a
 
 depends_lib             port:ncurses
 

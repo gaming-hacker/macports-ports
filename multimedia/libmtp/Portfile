@@ -18,7 +18,7 @@ depends_build       port:pkgconfig
 depends_lib         port:libiconv port:libusb
 
 checksums           rmd160  5b450b0a7c643ca6022ff899053666a91e96eeba \
-                    sha256  3817d3e296be8f1bc527385585780e70984e8e0d6a0d00349240d67e3df412e8
+sha256  3817d3e296be8f1bc527385585780e70984e8e0d6a0d00349240d67e3df412e8
 
 # Avoid opportunistic use of libgcrypt and subsequent build failure due to duplicate symbols.
 configure.args-append --disable-mtpz

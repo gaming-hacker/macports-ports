@@ -19,7 +19,7 @@ homepage            http://www.cduce.org/download.html
 master_sites        http://www.cduce.org/download/
 
 checksums           rmd160  4219fce15e357bf6edaa6efad04902a84082c3b9 \
-                    sha256  a01ff3223b295c5b24ee414bb9e9add14357ccf364addcfa734d91a02f9f543a
+sha256  a01ff3223b295c5b24ee414bb9e9add14357ccf364addcfa734d91a02f9f543a
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib

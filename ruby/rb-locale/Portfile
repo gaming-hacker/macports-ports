@@ -12,6 +12,6 @@ license				Ruby
 platforms           darwin
 
 checksums           md5     fe22631008433d76073db219eff0451d \
-                    sha1    088699f0e2ecd3962420c733fd80a4d490f770c7 \
-                    rmd160  058774857a2a5ebc244d672a9cefc0d309085f75
+sha1    088699f0e2ecd3962420c733fd80a4d490f770c7 \
+rmd160  058774857a2a5ebc244d672a9cefc0d309085f75
 

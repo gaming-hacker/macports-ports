@@ -15,7 +15,7 @@ long_description    This module provide a convenient way to create directories \
                     subtree from the filesystem.
 
 checksums           rmd160  43475b12933241b144d6d571c511d92d51f67d3f \
-                    sha256  1570f3c1cdf93c50f65c2072e8f20ee121550771dfb7f6e563f503a2a7050744
+sha256  1570f3c1cdf93c50f65c2072e8f20ee121550771dfb7f6e563f503a2a7050744
 
 platforms           darwin
 supported_archs     noarch

@@ -29,7 +29,7 @@ homepage            http://duplicity.nongnu.org/
 master_sites        https://launchpad.net/duplicity/${stable_series}/${version}/+download
 
 checksums           rmd160  8f3736b5957aa28d3ea63e0c8d8d7dd84c376d31 \
-                    sha256  7a3eb74a2a36b004b10add2970b37cfbac0bd693d79513e6311c8e4b8c3dd73e
+sha256  7a3eb74a2a36b004b10add2970b37cfbac0bd693d79513e6311c8e4b8c3dd73e
 
 python.default_version 27
 

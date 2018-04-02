@@ -18,7 +18,7 @@ master_sites        pypi:m/mimeparse
 distname            mimeparse-${version}
 
 checksums           rmd160  4ca6689b4002371b87b4e992d9f5fd6c43023e9e \
-                    sha256  534ff6feefe1cd03984f444e6415aacc79c0a85f3b868ec41a2fd5003004c31e
+sha256  534ff6feefe1cd03984f444e6415aacc79c0a85f3b868ec41a2fd5003004c31e
 
 livecheck.type      regex
 livecheck.regex     {mimeparse-(\d+(?:\.\d+)*)}

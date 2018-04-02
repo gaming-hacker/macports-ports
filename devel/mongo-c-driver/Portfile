@@ -16,7 +16,7 @@ long_description    ${name} is a ${description}.
 github.tarball_from releases
 
 checksums           rmd160  92273dbd3ef7d75491c2d6e0628488aa8244548a \
-                    sha256  c2c94ef63aaa09efabcbadc4ac3c8740faa102266bdd2559d550f1955b824398 \
+sha256  c2c94ef63aaa09efabcbadc4ac3c8740faa102266bdd2559d550f1955b824398 \
 size    7716783
 
 depends_build       port:pkgconfig

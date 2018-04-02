@@ -18,7 +18,7 @@ homepage            http://ftp.netbsd.org/pub/NetBSD/misc/dholland/
 master_sites        ${homepage}
 
 checksums           rmd160 2eb9e53caf7d18673ed5d4098bdf85058734d382 \
-                    sha256 6c2153019e6214397294fc40528785e2b8432a4c889a21c41b3f8fc078e74bc0
+sha256 6c2153019e6214397294fc40528785e2b8432a4c889a21c41b3f8fc078e74bc0
 
 use_configure       no
 build.type          bsd

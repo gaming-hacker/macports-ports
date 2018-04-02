@@ -15,7 +15,7 @@ description         Arbitrary size integer math package
 long_description    ${description}
 
 checksums           rmd160  076305b93f279e70c51161dd672900163cbc848a \
-                    sha256  d4bfa5ad0127b6360ad29971da6fa08bcfb56a471d55db3c7419d05f8a947b8d
+sha256  d4bfa5ad0127b6360ad29971da6fa08bcfb56a471d55db3c7419d05f8a947b8d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

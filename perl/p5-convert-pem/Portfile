@@ -14,7 +14,7 @@ description         Read/write encrypted ASN.1 PEM files
 long_description    ${description}
 
 checksums           rmd160  9bb9713bc5dde93422ff05089d849dc51ad7191b \
-                    sha256  070ef357af0394d776647ca4b9dd992395617e49f0a5f393c85a29733f100b52
+sha256  070ef357af0394d776647ca4b9dd992395617e49f0a5f393c85a29733f100b52
 
 platforms           darwin
 

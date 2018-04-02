@@ -19,7 +19,7 @@ long_description    Module::Install is a package for writing installers \
 platforms           darwin
 
 checksums           rmd160  7237f169aa408462e9028c1cafb31a771808618c \
-                    sha256  1a53a78ddf3ab9e3c03fc5e354b436319a944cba4281baf0b904fa932a13011b
+sha256  1a53a78ddf3ab9e3c03fc5e354b436319a944cba4281baf0b904fa932a13011b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

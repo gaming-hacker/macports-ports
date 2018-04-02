@@ -13,4 +13,4 @@ description         PEAR XML_svg2image package
 long_description    ${description}
 
 checksums           rmd160  73e0b1109f58717e8d1aec15856a3a7cf634684f \
-                    sha256  347a8bdba63a2bf2b0fd35186f0a6f57a982aaaa4f78108fe062bc7e8e39d4a0
+sha256  347a8bdba63a2bf2b0fd35186f0a6f57a982aaaa4f78108fe062bc7e8e39d4a0

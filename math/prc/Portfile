@@ -27,7 +27,7 @@ extract.suffix      .tgz
 distfiles           ${name}-${version}-src${extract.suffix}
 
 checksums           rmd160  1a79a72cf7329a6cb4433d2cf67c4ce123f1b605 \
-                    sha256  2ad9dcd0621a7262b5754426a62cd630dfbf14b04481fde116fa169d89249394
+sha256  2ad9dcd0621a7262b5754426a62cd630dfbf14b04481fde116fa169d89249394
 
 patchfiles          patch-configure.diff \
                     patch-Makefile.in.diff

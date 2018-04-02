@@ -22,7 +22,7 @@ homepage        http://www.dest-unreach.org/socat/
 master_sites    http://www.dest-unreach.org/socat/download/
 
 checksums       rmd160  765c88c8cfdcda48bec5093b812cabfce99f25b5 \
-                sha256  e3561f808739383eb10fada1e5d4f26883f0311b34fd0af7837d0c95ef379251
+sha256  e3561f808739383eb10fada1e5d4f26883f0311b34fd0af7837d0c95ef379251
 
 use_bzip2 yes
 

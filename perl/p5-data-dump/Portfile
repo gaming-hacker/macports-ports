@@ -20,6 +20,6 @@ long_description    This module provides a single function called dump() \
 platforms           darwin
 
 checksums           rmd160  8312001d8aa36563a43267650c59fc17af2af76c \
-                    sha256  af53b05ef1387b4cab4427e6789179283e4f0da8cf036e8db516ddb344512b65
+sha256  af53b05ef1387b4cab4427e6789179283e4f0da8cf036e8db516ddb344512b65
 
 supported_archs     noarch

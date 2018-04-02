@@ -15,7 +15,7 @@ platforms           darwin
 master_sites        savannah:linphone/3.5.x/sources/
 			
 checksums           md5     4be6e940372dba1f6793aef849c1ff0d \
-                    sha1    d0dde9d421b7cf6893c8e5acb969d5bd4a04a231
+sha1    d0dde9d421b7cf6893c8e5acb969d5bd4a04a231
 
 depends_build       port:intltool \
                     port:pkgconfig

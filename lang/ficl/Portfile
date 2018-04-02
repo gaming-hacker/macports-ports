@@ -19,7 +19,7 @@ long_description        Ficl is a programming language interpreter designed \
                         macro, and development prototyping language.
 
 checksums               rmd160  742ce10df29866028d7d1f5dbd23cdd0fd7fd1fe \
-                        sha256  4daf74f3d3d6f8b86ea7cb47bc24931d50b4809b50ba34ca32e0ca1e972bd3a3
+sha256  4daf74f3d3d6f8b86ea7cb47bc24931d50b4809b50ba34ca32e0ca1e972bd3a3
 
 use_configure           no
 

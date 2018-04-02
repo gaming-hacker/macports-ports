@@ -15,7 +15,7 @@ long_description    This module allows code attributes of methods to be \
 platforms           darwin
 
 checksums           rmd160  e5034527a444816f55379d91fd88e16fd48eae4e \
-                    sha256  93616ee3862145e9622283e85ebf587ba7c81620fcdd77a4e26dd47538080df2
+sha256  93616ee3862145e9622283e85ebf587ba7c81620fcdd77a4e26dd47538080df2
 
 if {${perl5.major} != ""} {
     depends_build-append \

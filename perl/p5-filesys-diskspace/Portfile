@@ -18,7 +18,7 @@ long_description    This routine displays information on a file system such \
                     ways. If all fails, it croaks.
 
 checksums           rmd160  3af50a43330e451e6333a896ec19135c061cc9be \
-                    sha256  9bc3e3384840df7d4ebdfd563f59b7a7f2bb4d47990ceab699bc16a4abb374c0
+sha256  9bc3e3384840df7d4ebdfd563f59b7a7f2bb4d47990ceab699bc16a4abb374c0
 
 platforms           darwin
 supported_archs     noarch

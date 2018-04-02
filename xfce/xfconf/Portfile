@@ -17,7 +17,7 @@ master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 
 checksums       rmd160  13ed038c0f23d35f70f894d137f0a304f08dd851 \
-                sha256  35f48564e5694faa54fdc180cd3268e16fc2352946a89a3c2fc12cbe400ada36 \
+sha256  35f48564e5694faa54fdc180cd3268e16fc2352946a89a3c2fc12cbe400ada36 \
 size    564131
 
 depends_build   port:xfce4-dev-tools port:intltool port:pkgconfig

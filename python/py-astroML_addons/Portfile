@@ -32,8 +32,8 @@ master_sites        pypi:[string index ${realname} 0]/${realname}
 distname            ${realname}-${version}
 
 checksums           md5     9efd34f180766fbb3c58f989fd87e254 \
-                    sha1    a2dfd11a9dbaf52f6b88cd8e5ed8ce579a87cb4f \
-                    rmd160  b4d642a073c846bd66c902ada33079afd2abdd70
+sha1    a2dfd11a9dbaf52f6b88cd8e5ed8ce579a87cb4f \
+rmd160  b4d642a073c846bd66c902ada33079afd2abdd70
 
 if {${name} eq ${subport}} {
     livecheck.type      regex

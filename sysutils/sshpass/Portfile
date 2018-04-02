@@ -31,4 +31,4 @@ homepage            http://sourceforge.net/projects/sshpass/
 master_sites        sourceforge:project/${name}/${name}/${version}
 
 checksums           rmd160  4759f5b23506537bf95619dd023cdc3178fc3ff3 \
-                    sha256  c6324fcee608b99a58f9870157dfa754837f8c48be3df0f5e2f3accf145dee60
+sha256  c6324fcee608b99a58f9870157dfa754837f8c48be3df0f5e2f3accf145dee60

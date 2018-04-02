@@ -19,7 +19,7 @@ long_description    The Spreadsheet::WriteExcel module can be used to create a \
 platforms           darwin
 
 checksums           rmd160  b037bf975956da4fe0d1ded784cf27c028ec4ea8 \
-                    sha256  e356aad6866cf135731268ee0e979a197443c15a04878e9cf3e80d022ad6c07e
+sha256  e356aad6866cf135731268ee0e979a197443c15a04878e9cf3e80d022ad6c07e
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-parse-recdescent

@@ -18,7 +18,7 @@ long_description    Xgrid is Apple's solution for running jobs \
                     script or within an interactive Python session.
 
 checksums           rmd160  254a41fe143b5b7ce53c11dd7f2c0bd3d961e0ff \
-                    sha256  6147735a7db386fecf4cbb0cac7f1800ddba30fcb025e55c1c70a41cb9837a1f
+sha256  6147735a7db386fecf4cbb0cac7f1800ddba30fcb025e55c1c70a41cb9837a1f
 
 supported_archs     noarch
 

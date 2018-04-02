@@ -16,7 +16,7 @@ homepage            http://www.bioinformatics.org/
 master_sites        ${homepage}ghemical/download/current/
 
 checksums           rmd160  6cb835c13801fc8aac6a1fd458a64b7b880e705f \
-                    sha256  b461a31065d6912d190f78ad0041218009f44a5acdb5757545bd4a8bd6b509aa
+sha256  b461a31065d6912d190f78ad0041218009f44a5acdb5757545bd4a8bd6b509aa
 
 depends_lib         port:mesa port:libGLU
 

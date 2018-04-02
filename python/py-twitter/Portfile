@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-twitter
 version             1.0
 checksums           rmd160  eab833550adab1fe2680e5e100cec9571c60a510 \
-                    sha256  e54e730bc40b969f35ed6ddfb310eac7256a2caac335a8971a46ae56beb7c814
+sha256  e54e730bc40b969f35ed6ddfb310eac7256a2caac335a8971a46ae56beb7c814
 
 license             Apache-2
 categories-append   devel

@@ -24,7 +24,7 @@ use_zip             yes
 
 master_sites        http://mirrors.ctan.org/support/
 checksums           rmd160  b454aff091554594d652a61e2251c341d372280e \
-                    sha256  3671a28417b11b3350d8b3798cee948d2d63c1e0f3dcd0a6aedb3f4682c644de
+sha256  3671a28417b11b3350d8b3798cee948d2d63c1e0f3dcd0a6aedb3f4682c644de
 
 depends_run         port:ghostscript \
                     bin:perl:perl5

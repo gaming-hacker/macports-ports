@@ -23,8 +23,8 @@ long_description \
     of password security.
 
 checksums       md5     7cfe9df99f546cf6bd55b535d71e3b1f \
-                sha1    aa1554747ef2d1c96e4a47fdb0057828661a918a \
-                rmd160  335b1cecb0ccd958fa01c499a636e0e22a5a46ea
+sha1    aa1554747ef2d1c96e4a47fdb0057828661a918a \
+rmd160  335b1cecb0ccd958fa01c499a636e0e22a5a46ea
 
 if {${name} != ${subport}} {
     depends_lib-append  port:cracklib

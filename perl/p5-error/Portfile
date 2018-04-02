@@ -17,7 +17,7 @@ long_description    The Error package provides two interfaces.  Firstly \
 platforms           darwin
 
 checksums           rmd160  7aab586b849b12d075a2e65e0f0002e9ae66c43e \
-                    sha256  6c9f474ad3d4fe0cabff6b6be532cb1dd348245986d4a6b600ad921d5cfdefaf
+sha256  6c9f474ad3d4fe0cabff6b6be532cb1dd348245986d4a6b600ad921d5cfdefaf
 
 supported_archs noarch
 

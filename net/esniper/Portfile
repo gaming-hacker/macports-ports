@@ -17,7 +17,7 @@ distname            esniper-[strsed ${version} {g/[.]/-/}]
 extract.suffix      .tgz
 
 checksums           rmd160  5489e2d8a6fffe1ebc52e289218d25b3cc8565af \
-                    sha256  c9b8b10aefe5c397d7dee4c569f87f227c6710de528b1dc402379e5b4f1793dd
+sha256  c9b8b10aefe5c397d7dee4c569f87f227c6710de528b1dc402379e5b4f1793dd
 
 depends_lib         port:curl \
                     port:zlib \

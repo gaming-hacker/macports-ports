@@ -36,6 +36,6 @@ depends_build-append    port:coreutils \
                         port:pkgconfig
 
 checksums           rmd160  e70a02cad479997cdf88a1e41962237d09a3d7b0 \
-                    sha256  02d6ebc6143c6a6812883f90fa1c4cbce3cc0e558d8d030051de2742bc73e892
+sha256  02d6ebc6143c6a6812883f90fa1c4cbce3cc0e558d8d030051de2742bc73e892
 
 configure.install   ${prefix}/bin/ginstall

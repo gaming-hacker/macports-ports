@@ -15,5 +15,5 @@ homepage            http://getsprockets.org/
 platforms           darwin
 
 checksums           md5     a54bcecfdee14e22d7ded2d39cb75727 \
-                    sha1    94e677b5c9e9682961bc1e3ed8bb88706d487c52 \
-                    rmd160  4cbe35ebbb362a8f61cbd8e843df2679e928d042
+sha1    94e677b5c9e9682961bc1e3ed8bb88706d487c52 \
+rmd160  4cbe35ebbb362a8f61cbd8e843df2679e928d042

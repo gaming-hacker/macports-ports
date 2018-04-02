@@ -25,7 +25,7 @@ long_description \
   (http://www.ivoa.net/documents/Notes/VOEventTransport).
 
 checksums           rmd160  44e739113d5bd6ef24992f906ab810c88730ee08 \
-                    sha256  5e34b56d64c2d3ba97d653b652495ddf5e9c7740dc5bc18c57168edded81e8a3
+sha256  5e34b56d64c2d3ba97d653b652495ddf5e9c7740dc5bc18c57168edded81e8a3
 
 if {${subport} ne ${name}} {
     livecheck.type  none

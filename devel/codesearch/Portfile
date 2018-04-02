@@ -19,8 +19,8 @@ long_description \
 license             BSD
 
 checksums \
-    rmd160  f87db6cc7d131a25096c74434474ff924f34dca7 \
-    sha256  9db1fa9f7f984cd9a03e593d32855ed76da56ac3525284894a70becd1467a54c
+rmd160  f87db6cc7d131a25096c74434474ff924f34dca7 \
+sha256  9db1fa9f7f984cd9a03e593d32855ed76da56ac3525284894a70becd1467a54c
 
 platforms           darwin
 

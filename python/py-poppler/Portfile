@@ -16,8 +16,8 @@ long_description    Python bindings for the Poppler PDF rendering library (libpo
 python.versions 27 36
 
 checksums           md5 1a89e5ed3042afc81bbd4d02e0cf640a \
-                    rmd160 d6c196d6bbbaa9ef96c2ea3a38eb6a89308bab15 \
-                    sha256 322f183d24798a056f3005d1ab8e3ac27d8cfbbf0982725b323bbfec1bab5355
+rmd160 d6c196d6bbbaa9ef96c2ea3a38eb6a89308bab15 \
+sha256 322f183d24798a056f3005d1ab8e3ac27d8cfbbf0982725b323bbfec1bab5355
 
 homepage            https://launchpad.net/poppler-python
 master_sites        ${homepage}/trunk/development/+download/

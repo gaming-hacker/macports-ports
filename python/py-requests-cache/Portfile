@@ -19,7 +19,7 @@ description         Transparent persistent cache for py-requests
 long_description    ${description}
 
 checksums           rmd160  0d615eb226d8bd15ab39103f33e1bf4e55362578 \
-                    sha256  a1fee454493bedcfbc2c4b0bbf7b117ff7ef0362b0a2b808d1c0a8f8a0004bf5
+sha256  a1fee454493bedcfbc2c4b0bbf7b117ff7ef0362b0a2b808d1c0a8f8a0004bf5
 
 if {${name} ne ${subport}} {
     depends_lib-append \

@@ -9,7 +9,7 @@ github.setup        balint256 gr-baz 86eafcdbcb8e9259cc9c92f0862259a59f764899
 version             20180318
 revision            1
 checksums           rmd160 69b7e9d64c4bb3cf31ae44cfed187af2fcb4d11d \
-                    sha256 687a4dca5a59344adb90f6eb2a693c12a00aa67fed2212e04527d236c93cd8df \
+sha256 687a4dca5a59344adb90f6eb2a693c12a00aa67fed2212e04527d236c93cd8df \
 size   510717
 
 # allow gr-baz to work with both gnuradio and gnuradio-devel ...

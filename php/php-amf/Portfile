@@ -23,8 +23,8 @@ long_description \
     version 0 and 3.
 
 checksums       md5     c5899ca580f19ef7f057b6ea41c2d236 \
-                sha1    f2f40d4ddc4416fa09f17e94ed037f907fd87ec4 \
-                rmd160  d55426eb9da3513058fc58db51f5ba35cff831a9
+sha1    f2f40d4ddc4416fa09f17e94ed037f907fd87ec4 \
+rmd160  d55426eb9da3513058fc58db51f5ba35cff831a9
 
 if {${name} ne ${subport}} {
     post-extract {

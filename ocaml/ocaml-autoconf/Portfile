@@ -15,8 +15,8 @@ homepage            http://forge.ocamlcore.org/projects/ocaml-autoconf
 master_sites        http://forge.ocamlcore.org/frs/download.php/282/
 
 checksums           md5     059bb775f8379afae8941bec30e6bcf2 \
-                    sha1    43241406dcea1377a8fc18be8c03d03dd0ff6d61 \
-                    rmd160  9d892f016c4aef45d90ed532ab7fbbd877f16f98
+sha1    43241406dcea1377a8fc18be8c03d03dd0ff6d61 \
+rmd160  9d892f016c4aef45d90ed532ab7fbbd877f16f98
 
 supported_archs     noarch
 

@@ -14,6 +14,6 @@ platforms       darwin
 master_sites    ${homepage}download/
 distname        ScrollZ-${version}
 checksums       rmd160 ee01bb42c10a12d8677c8c9a7ad2ee8489f5fd9f \
-                sha256 22535bcc54ad752107ab181775d90d9cf1b37648f500d627f428388a9d3710e6
+sha256 22535bcc54ad752107ab181775d90d9cf1b37648f500d627f428388a9d3710e6
 patchfiles      patch-Makefile.in
 worksrcdir      ScrollZ-ScrollZ-${version}

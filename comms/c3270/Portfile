@@ -28,9 +28,9 @@ depends_lib         path:lib/libssl.dylib:openssl  \
 distfiles           suite3270-${version}-src.tgz
 dist_subdir         x3270
 checksums           md5     e8106ab4240d996bd2cea53df14634ae \
-                    sha1    e911b66fc73048b8d99bbc1c27a88b27d6fdd1b6 \
-                    rmd160  64dafc97841c773b5236c2aeebca62882203d089 \
-                    sha256  e22f40360170acf70b6de521173c633072582315b4879aef276fb8c97102e848
+sha1    e911b66fc73048b8d99bbc1c27a88b27d6fdd1b6 \
+rmd160  64dafc97841c773b5236c2aeebca62882203d089 \
+sha256  e22f40360170acf70b6de521173c633072582315b4879aef276fb8c97102e848
 
 worksrcdir          ${name}-${branch}
 configure.args      --disable-apl \

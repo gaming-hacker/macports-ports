@@ -21,7 +21,7 @@ long_description \
     class inheritance at runtime.
 
 checksums       rmd160  9987e9eb7bd9d1787aa54304e76e8a8b9f59b245 \
-                sha256  89d7324b164b739b53d5290c7ec99d8e05522e76db0885bda4b4a693113b4a28
+sha256  89d7324b164b739b53d5290c7ec99d8e05522e76db0885bda4b4a693113b4a28
 
 if {${name} != ${subport}} {
     use_parallel_build  yes

@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        ${homepage}release/
 
 checksums           rmd160  966b95adee5c405dc7e631f73b43ced849ee1e80 \
-                    sha256  798b3536a29832ce0cbb07fafb1ce5097c95e308a6f592d14052e1ef1505fe79
+sha256  798b3536a29832ce0cbb07fafb1ce5097c95e308a6f592d14052e1ef1505fe79
 
 depends_lib         port:libpcap \
                     port:libsmi \

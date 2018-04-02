@@ -13,7 +13,7 @@ description         Simple data types for common serialisation formats
 long_description    ${description}
 
 checksums           rmd160 6166d0657c07880473268b2cfd9b406009759a4c \
-                    sha256 7ad3347849d8a3da6470135018d6af5fd8e58b4057cd568c3813695f2a04730d
+sha256 7ad3347849d8a3da6470135018d6af5fd8e58b4057cd568c3813695f2a04730d
 
 platforms           darwin
 supported_archs     noarch

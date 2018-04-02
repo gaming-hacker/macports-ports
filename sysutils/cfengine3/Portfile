@@ -24,8 +24,8 @@ master_sites        ${homepage}source-code/download?file=${distfiles}&dummy=
 distname            cfengine-${version}
 
 checksums           md5     37221270db925e6073bbade5db643a49 \
-                    sha1    83d6eb3e8c8ed16bf6364a41d216cf96499749c6 \
-                    rmd160  b1c2bfa74c517efd9d26445ff148b8a93cb173b8
+sha1    83d6eb3e8c8ed16bf6364a41d216cf96499749c6 \
+rmd160  b1c2bfa74c517efd9d26445ff148b8a93cb173b8
                     
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:pcre \

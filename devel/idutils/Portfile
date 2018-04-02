@@ -33,7 +33,7 @@ master_sites     gnu
 use_xz              yes
 
 checksums           rmd160  9b136e5bedf04183a631c1c7642c7982deb5016d \
-                    sha256  8181f43a4fb62f6f0ccf3b84dbe9bec71ecabd6dfdcf49c6b5584521c888aac2
+sha256  8181f43a4fb62f6f0ccf3b84dbe9bec71ecabd6dfdcf49c6b5584521c888aac2
 
 patchfiles          patch-lisp-idutils.el.diff
 

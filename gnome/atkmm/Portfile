@@ -23,7 +23,7 @@ use_xz              yes
 dist_subdir         ${name}/${version}_${revision}
 
 checksums           rmd160  1659add6db907c53827334848ec4679dca9d6da7 \
-                    sha256  ff95385759e2af23828d4056356f25376cfabc41e690ac1df055371537e458bd
+sha256  ff95385759e2af23828d4056356f25376cfabc41e690ac1df055371537e458bd
 
 depends_build       port:pkgconfig \
                     port:mm-common

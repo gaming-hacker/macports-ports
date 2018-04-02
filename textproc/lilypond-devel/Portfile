@@ -24,7 +24,7 @@ platforms           darwin
 master_sites        http://download.linuxaudio.org/lilypond/sources/v${branch}/
 distname            ${my_name}-${version}
 checksums           rmd160  f0d923cec535cf8a133f2c801082db6120f01ad6 \
-                    sha256  3679db30a3f74ce8668691952fb0dd58d8ad6bad099017e815ca3e4312261453
+sha256  3679db30a3f74ce8668691952fb0dd58d8ad6bad099017e815ca3e4312261453
 
 depends_build       port:t1utils \
                     port:bison \

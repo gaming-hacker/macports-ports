@@ -12,7 +12,7 @@ description         PEAR HTTP_SessionServer package
 long_description    ${description}
 
 checksums           rmd160  c4141a866a24a0bc42e0e5e842fa67e6bfb375f3 \
-                    sha256  3fc6ae6c54a439502fc4c84128e45a5ea8836473ce686834546fd8029c4bee50
+sha256  3fc6ae6c54a439502fc4c84128e45a5ea8836473ce686834546fd8029c4bee50
 
 depends_lib-append  port:pear-Net_Server \
                     port:pear-Net_Socket

@@ -31,7 +31,7 @@ distname            ${name}-sp-${version}
 use_bzip2           yes
 worksrcdir          ${name}-sp-${version}
 checksums           rmd160  fdfbb3b1ca4f9aa5c1f414e991d6e2f8c3320a59 \
-                    sha256  1121e3b726b844d829ad86f2047be62da4284ce965ac184de2f81903f16b98e4
+sha256  1121e3b726b844d829ad86f2047be62da4284ce965ac184de2f81903f16b98e4
 
 require_active_variants curl ssl
 

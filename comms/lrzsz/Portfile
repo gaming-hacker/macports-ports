@@ -19,8 +19,8 @@ homepage            https://ohse.de/uwe/software/lrzsz.html
 master_sites        https://ohse.de/uwe/releases/
 
 checksums           md5     b5ce6a74abc9b9eb2af94dffdfd372a4 \
-                    sha1    451e6a1813dfb71a412c973acd1b88b9ee3f28c4 \
-                    rmd160  1b1776143afaff8bc7447ce998f9d3a958d51f25
+sha1    451e6a1813dfb71a412c973acd1b88b9ee3f28c4 \
+rmd160  1b1776143afaff8bc7447ce998f9d3a958d51f25
 
 configure.args      --program-transform-name=s/l// \
                     --infodir=${prefix}/share/info \

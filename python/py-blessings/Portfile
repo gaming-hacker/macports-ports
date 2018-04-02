@@ -19,7 +19,7 @@ homepage            https://github.com/erikrose/blessings
 master_sites        pypi:b/${real_name}/
 distname            ${real_name}-${version}
 checksums           rmd160  56381887db40a66014ea3ce6ae2d9490c0669be4 \
-                    sha256  74919575885552e14bc24a68f8b539690bd1b5629180faa830b1a25b8c7fb6ea \
+sha256  74919575885552e14bc24a68f8b539690bd1b5629180faa830b1a25b8c7fb6ea \
 size    20122
 
 if {${name} ne ${subport}} {

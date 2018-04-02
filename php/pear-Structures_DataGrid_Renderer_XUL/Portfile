@@ -12,6 +12,6 @@ description         PEAR Structures_DataGrid_Renderer_XUL package
 long_description    ${description}
 
 checksums           rmd160  0fe3b8e0d256f24c2345e9402d387582f2ed392f \
-                    sha256  5bd8f6fc117f67e16230d51bfc583f627d5bd1fa3b22025e5be721cc365baad6
+sha256  5bd8f6fc117f67e16230d51bfc583f627d5bd1fa3b22025e5be721cc365baad6
 
 depends_lib-append  port:pear-Structures_DataGrid

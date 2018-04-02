@@ -24,7 +24,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            PyNaCl-${version}
 
 checksums           rmd160  13166aecf61c866786a9add9e3be4fc127be833a \
-                    sha256  e0d38fa0a75f65f556fb912f2c6790d1fa29b7dd27a1d9cc5591b281321eaaa9
+sha256  e0d38fa0a75f65f556fb912f2c6790d1fa29b7dd27a1d9cc5591b281321eaaa9
 
 platform darwin 11 {
     # default clang version cannot build this port, see https://trac.macports.org/ticket/54407

@@ -27,8 +27,8 @@ master_sites    ftp://ftp.cs.wisc.edu/markhill/DineroIV
 distname        d4-${version}
 
 checksums           md5     69284e64ff7b4040fb898d93401606a8 \
-                    sha1    5d332f2b9f8251cd6ed6b4966e640f7001f99354 \
-                    rmd160  8b78d08e274cf0da7c434d53f87e0c0fe21589cb
+sha1    5d332f2b9f8251cd6ed6b4966e640f7001f99354 \
+rmd160  8b78d08e274cf0da7c434d53f87e0c0fe21589cb
 
 patchfiles      patch-misc_c.diff
 

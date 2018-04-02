@@ -28,7 +28,7 @@ homepage            http://razor.sourceforge.net/
 master_sites        sourceforge:razor
 
 checksums           rmd160  204fc2b68ca6f01329676a62b36ca87be659565d \
-                    sha256  1e9eb8e4d562de79f01e059a7885e5e2a87f47688f146310a0400893edf3077c
+sha256  1e9eb8e4d562de79f01e059a7885e5e2a87f47688f146310a0400893edf3077c
 
 platforms           darwin
 

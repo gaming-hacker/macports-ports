@@ -18,8 +18,8 @@ master_sites        ${homepage}
 distname            inifiles-${version}
 
 checksums           md5     9deb802bdf98f5ead88598752d9ea5ac \
-                    sha1    215120d4957c2a1fabb869804ae1360aaf32f6ac \
-                    rmd160  977a0e72b7c247bedc83f87136572cca4b53bfe6
+sha1    215120d4957c2a1fabb869804ae1360aaf32f6ac \
+rmd160  977a0e72b7c247bedc83f87136572cca4b53bfe6
 
 depends_lib         port:ocaml port:ocaml-pcre
 

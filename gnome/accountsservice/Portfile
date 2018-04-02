@@ -25,7 +25,7 @@ master_sites        https://www.freedesktop.org/software/accountsservice/
 use_xz              yes
 
 checksums           rmd160  72b3025468b855d50517729530a92e5cb31ca82e \
-                    sha256  e56494c2f18627900b57234e5628923cc16a37bf8fd16b06c46118d6ae9c007e
+sha256  e56494c2f18627900b57234e5628923cc16a37bf8fd16b06c46118d6ae9c007e
 
 depends_build       port:pkgconfig \
                     port:intltool \

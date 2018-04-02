@@ -14,8 +14,8 @@ master_sites	 ${homepage}/dist/
 
 distname	xcb-util-keysyms-${version}
 checksums           sha1    ff02ee8ac22c53848af50c0a6a6b00feb002c1cb \
-                    rmd160  e0e8f78434f21e15d389c45b51bf3c024d026874 \
-                    sha256  0ef8490ff1dede52b7de533158547f8b454b241aa3e4dcca369507f66f216dd9
+rmd160  e0e8f78434f21e15d389c45b51bf3c024d026874 \
+sha256  0ef8490ff1dede52b7de533158547f8b454b241aa3e4dcca369507f66f216dd9
 use_bzip2	yes
 use_parallel_build yes
 

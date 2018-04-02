@@ -14,7 +14,7 @@ description         Converts a markdown file including reStructuredText (rst) ma
 long_description    M2R converts a markdown file including reStructuredText (rst) markups to a valid rst format.
 
 checksums           rmd160  747d308e83a8d178a8bb074fb2d7fa8967b257b9 \
-                    sha256  4c7a92f111ac842b9c4d3719b8d785b26cb1cf6e81ec0940f8fe0ccc078e6925
+sha256  4c7a92f111ac842b9c4d3719b8d785b26cb1cf6e81ec0940f8fe0ccc078e6925
 
 master_sites        ${homepage}/archive
 distname            v${version}

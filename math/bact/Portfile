@@ -20,7 +20,7 @@ homepage            http://chasen.org/~taku/software/bact/
 master_sites        ${homepage}
 
 checksums           sha1    cdc8815e9258868699d98449598058011e993218 \
-                    rmd160  b78eae7179833accd683dccab6a148058b5f47ab
+rmd160  b78eae7179833accd683dccab6a148058b5f47ab
 
 use_configure       no
 

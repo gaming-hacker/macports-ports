@@ -18,8 +18,8 @@ homepage		http://commons.apache.org/logging/
 distname		${name}-${version}-src
 master_sites		apache:commons/logging/source/
 checksums		md5 e5cfa8cca13152d7545fde6b1783c60a \
-				sha1 9f5197e32d8b94dfecbb13d4099063b7b2743c96 \
-				rmd160 ddf1c4efe66f13b53341ba78d0b4ba6991e5f16d
+sha1 9f5197e32d8b94dfecbb13d4099063b7b2743c96 \
+rmd160 ddf1c4efe66f13b53341ba78d0b4ba6991e5f16d
 
 depends_build		bin:ant:apache-ant \
 				port:junit

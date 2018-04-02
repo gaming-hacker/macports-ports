@@ -23,7 +23,7 @@ homepage            https://pypi.python.org/pypi/$base_name
 master_sites        pypi:l/$base_name
 
 checksums           rmd160  5d9701a4ef7ac3e32bd9275e0dd2906aa0b6a624 \
-                    sha256  076d1603b5281488285718ce1a5ce78cf1027fe1e76adf9c548caf83c519b988
+sha256  076d1603b5281488285718ce1a5ce78cf1027fe1e76adf9c548caf83c519b988
 
 distname            $base_name-${version}
 

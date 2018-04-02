@@ -12,4 +12,4 @@ description         PEAR Translation package
 long_description    ${description}
 
 checksums           rmd160  d80670b5ebe8403bf9465ecf35568295304c0598 \
-                    sha256  cd4c8f21d71abfef46d86be1dea8953b7ab4e18acff945b79711916eb201ffb5
+sha256  cd4c8f21d71abfef46d86be1dea8953b7ab4e18acff945b79711916eb201ffb5

@@ -18,8 +18,8 @@ long_description    This rewrites all the given strings using the rules \
 platforms           darwin
 
 checksums           md5 7135a69bd8cf74cf17dba857b2372d16 \
-                    sha1 c218c11dcb406e5ca9931e5ddbde5cbeb4f008e3 \
-                    rmd160 bd148887912e6764230e0747f6892de2b07a6920
+sha1 c218c11dcb406e5ca9931e5ddbde5cbeb4f008e3 \
+rmd160 bd148887912e6764230e0747f6892de2b07a6920
 
 if {${perl5.major} != ""} {
     depends_lib-append \

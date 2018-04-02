@@ -33,7 +33,7 @@ master_sites        ${homepage}/files/v${branch}/
 distname            ParaView-v${version}
 
 checksums           sha256  390d0f5dc66bf432e202a39b1f34193af4bf8aad2355338fa5e2778ea07a80e4 \
-                    rmd160  3c37c50a0af0e49f9ac961d5a64783b8d0a529a1
+rmd160  3c37c50a0af0e49f9ac961d5a64783b8d0a529a1
 
 #:info:build ld: file not found: @rpath/libIceTMPI.dylib for architecture x86_64
 # https://github.com/OpenFOAM/ThirdParty-dev/

@@ -16,4 +16,4 @@ description         Easily timeout long running operations
 long_description    ${description}
 
 checksums           rmd160 8f71922616274259617b3da9722f395ad4622e14 \
-                    sha256 9396da698fd452d9ce60d642cda2108f11f20ed76c8961779ae11b897ae815d2
+sha256 9396da698fd452d9ce60d642cda2108f11f20ed76c8961779ae11b897ae815d2

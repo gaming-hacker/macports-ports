@@ -24,7 +24,7 @@ long_description \
 github.tarball_from releases
 
 checksums           rmd160  b2f729d25a2a90c886daa5bfb6d516ff31e8e6ef \
-                    sha256  1f02c58cc14e899a77970d3ad97afe4e3a765e6b602b3f3d38fbc5039d466288
+sha256  1f02c58cc14e899a77970d3ad97afe4e3a765e6b602b3f3d38fbc5039d466288
 
 # autoreconf to reconfigure for intltool; use package's autogen script to avoid
 # conflict with gettext

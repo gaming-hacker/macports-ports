@@ -13,7 +13,7 @@ description         helper for the incredibly lazy
 long_description    ${description}
 
 checksums           rmd160  5bd74eff32ee23ed1f4c2a4a417f573f5c39c1b6 \
-                    sha256  9312eb4c022ae2990d394c4f4902683b853d5456a40004dbd1829640f913cbba
+sha256  9312eb4c022ae2990d394c4f4902683b853d5456a40004dbd1829640f913cbba
 
 platforms           darwin
 supported_archs     noarch

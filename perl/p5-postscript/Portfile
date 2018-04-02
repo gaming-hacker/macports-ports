@@ -17,4 +17,4 @@ description         Perl extension for building an object that may be used to \
 long_description    ${description}
 
 checksums           rmd160  18afab857301bc0c743966f636ea52db0b197352 \
-                    sha256  64aa477ebf153710e4cd1251a0fa6f964ac34fcd3d9993e299e28064f9eec589
+sha256  64aa477ebf153710e4cd1251a0fa6f964ac34fcd3d9993e299e28064f9eec589

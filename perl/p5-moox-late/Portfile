@@ -19,7 +19,7 @@ description         MooX::late - easily translate Moose code to Moo
 long_description    ${description}
 
 checksums           rmd160  b88e7059de1246ee997a071f23acb38ec9187705 \
-                    sha256  175326af3076fa8698669f289fad1322724978cddaf40ea04e600fcd7f6afbbf
+sha256  175326af3076fa8698669f289fad1322724978cddaf40ea04e600fcd7f6afbbf
 
 if {${perl5.major} != ""} {
     depends_build-append  \

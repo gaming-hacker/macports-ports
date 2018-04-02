@@ -17,7 +17,7 @@ worksrcdir          ${name}-${version}
 github.tarball_from releases
 
 checksums           rmd160  772e2c9260542e087015c429b388fe428ef699b6 \
-                    sha256  7c4176a3cdf6b1b26afe6af38059275529de62412b169adc1256c78753ab0b9e
+sha256  7c4176a3cdf6b1b26afe6af38059275529de62412b169adc1256c78753ab0b9e
 
 depends_build       port:pkgconfig
 

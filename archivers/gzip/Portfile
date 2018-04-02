@@ -20,7 +20,7 @@ homepage            http://www.gzip.org/
 master_sites        gnu
 
 checksums           rmd160  c0cdc920d71f049ff70c54b1386f4b62d3b422c7 \
-                    sha256  5d2d3a3432ef32f24cdb060d278834507b481a75adeca18850c73592f778f6ad
+sha256  5d2d3a3432ef32f24cdb060d278834507b481a75adeca18850c73592f778f6ad
 
 depends_build       port:texinfo
 

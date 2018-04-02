@@ -12,6 +12,6 @@ description         PEAR PHP_DocBlockGenerator package
 long_description    ${description}
 
 checksums           rmd160  0028d086125ce8fc9a09a8b14f777f9d5d9711ea \
-                    sha256  d3879cd021dbf7489d5184cd6c0a2f3cc049d0935d50c86f9a6cf4d0eb4df085
+sha256  d3879cd021dbf7489d5184cd6c0a2f3cc049d0935d50c86f9a6cf4d0eb4df085
 
 depends_lib-append  port:pear-PHP_CompatInfo

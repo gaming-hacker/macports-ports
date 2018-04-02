@@ -17,8 +17,8 @@ homepage	http://pmk.sourceforge.net/
 
 master_sites	sourceforge
 checksums	md5     0a82cca7cb4912eed6eea133ce7b399b \
-		sha1    0c3392226a89aac264afda0252d0e0a719c85564 \
-		rmd160  ea93ac1f71404cf7e42a6659f299d458c54aad6f
+sha1    0c3392226a89aac264afda0252d0e0a719c85564 \
+rmd160  ea93ac1f71404cf7e42a6659f299d458c54aad6f
 
 patchfiles	patch-detect_cpu_asm.s.diff patch-pmkcfg.sh
 

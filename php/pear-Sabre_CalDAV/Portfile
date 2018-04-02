@@ -12,4 +12,4 @@ description         PEAR Sabre_CalDAV package
 long_description    ${description}
 
 checksums           rmd160  2c0e33fa3cfdde36a7cd74fda73df47236623e98 \
-                    sha256  43e607c5013a62f50b3f35fd5170b29cdb35bf6c1d04f14b51719cede60d614f
+sha256  43e607c5013a62f50b3f35fd5170b29cdb35bf6c1d04f14b51719cede60d614f

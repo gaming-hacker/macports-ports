@@ -13,4 +13,4 @@ description         PEAR Crypt_CHAP package
 long_description    ${description}
 
 checksums           rmd160  9dd0c361e892068bfc492b598a0802eb3d5215d8 \
-                    sha256  12b971b4ab3f7dc20bb7f8bdc5f420de10fe6ce7222f7715b3b6a074d1f76233
+sha256  12b971b4ab3f7dc20bb7f8bdc5f420de10fe6ce7222f7715b3b6a074d1f76233

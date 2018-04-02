@@ -14,7 +14,7 @@ long_description    A perl extension and command-line utility for renaming \
                     files, based on Larry Wall's 'rename' script
 
 checksums           rmd160  262181499b36d07a8f7725776a1c721842cfb9bb \
-                    sha256  5eee75ea92a987930c5bec4a631ee0201f23c77908ba322e553df80845efc6b1
+sha256  5eee75ea92a987930c5bec4a631ee0201f23c77908ba322e553df80845efc6b1
 
 platforms           darwin
 supported_archs     noarch

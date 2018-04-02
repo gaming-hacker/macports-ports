@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-pgsql/releases/download/v${version}
 
 checksums           md5 72ebf879ae0b2fed8fc760bbc22547fb \
-                    sha1 f6cd34f84e8fdeb567b3107e79d1d7a6cf34c7b8 \
-                    rmd160 70164da5f1c79548a1f295515349ddb65fc0f2bd
+sha1 f6cd34f84e8fdeb567b3107e79d1d7a6cf34c7b8 \
+rmd160 70164da5f1c79548a1f295515349ddb65fc0f2bd
 
 variant postgresql83 conflicts postgresql84 postgresql90 postgresql91 postgresql92 postgresql93 postgresql94 postgresql95 postgresql96 description {Enable PostgreSQL Driver version 8.3} {}
 variant postgresql84 conflicts postgresql83 postgresql90 postgresql91 postgresql92 postgresql93 postgresql94 postgresql95 postgresql96 description {Enable PostgreSQL Driver version 8.4} {}

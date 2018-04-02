@@ -18,7 +18,7 @@ homepage            http://xonclock.sourceforge.net/
 master_sites        sourceforge:project/xonclock/xonclock/xonclock-${version}
 
 checksums           rmd160  ab8bc3f44e4a65254b4531f53c5bb239b47167c0 \
-                    sha256  f230eaa0b5a0da891ca984af9682953c1edf47d81c27c563352cc2416057780b
+sha256  f230eaa0b5a0da891ca984af9682953c1edf47d81c27c563352cc2416057780b
 
 depends_build       port:pkgconfig
 

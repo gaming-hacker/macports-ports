@@ -23,7 +23,7 @@ long_description    The Open Lighting Architecture (OLA) provides a plugin \
 homepage            http://www.openlighting.org/ola/
 
 checksums           rmd160  b60d96f7c1504e5045ee333c39bef30185f12134 \
-                    sha256  26a8302b5134c370541e59eabff0145dcf7127cda761890df10aa80dfe223af0
+sha256  26a8302b5134c370541e59eabff0145dcf7127cda761890df10aa80dfe223af0
 
 github.tarball_from releases
 

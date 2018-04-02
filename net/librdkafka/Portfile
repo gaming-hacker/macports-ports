@@ -14,7 +14,7 @@ long_description    Full Apache Kafka protocol support, including producer and c
 homepage            https://github.com/edenhill/librdkafka
 
 checksums           sha256 79587c89a571b9db30635d9a4a55de624891ec34bcc1e5e5fd8736f05b17efa2 \
-                    rmd160 a624b87d5da3eb3bdb0182ebccf9376ee99f4773
+rmd160 a624b87d5da3eb3bdb0182ebccf9376ee99f4773
 
 configure.args      --enable-ssl --enable-sasl
 

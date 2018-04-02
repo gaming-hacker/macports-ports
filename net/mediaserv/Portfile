@@ -27,7 +27,7 @@ homepage            http://mediautils.garage.maemo.org/mediaserv.html
 master_sites        https://garage.maemo.org/frs/download.php/2632
 
 checksums           rmd160  78e824cd8b28effc58543e75aaf63e2cdc958941 \
-                    sha256  4c5ed56e63752adb21e136c4ae0de2a3ed712aaa6f77f08984eed261ed26ecea
+sha256  4c5ed56e63752adb21e136c4ae0de2a3ed712aaa6f77f08984eed261ed26ecea
 
 worksrcdir          ${name}
 

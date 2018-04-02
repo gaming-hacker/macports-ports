@@ -17,7 +17,7 @@ description         Facebook's branch of Apache Thrift, including a new C++ serv
 long_description    ${description}
 
 checksums           rmd160  522bbeaacfeda93ebfd0337f601981f69dffa888 \
-                    sha256  075a42ae1610ba2257f246f9a8cb482565e48fd2c94cfd3d230814a210e37c68
+sha256  075a42ae1610ba2257f246f9a8cb482565e48fd2c94cfd3d230814a210e37c68
 
 use_autoreconf      yes
 

@@ -14,7 +14,7 @@ description         A library for concise, idiomatic Python expression of finite
 long_description    Automat is a library for concise, idiomatic Python expression of finite-state automata (particularly deterministic finite-state transducers).
 
 checksums           rmd160  50c2605faa5ed82c540e38be79c5e9ebc061d1d8 \
-                    sha256  3c1fd04ecf08ac87b4dd3feae409542e9bf7827257097b2b6ed5692f69d6f6a8
+sha256  3c1fd04ecf08ac87b4dd3feae409542e9bf7827257097b2b6ed5692f69d6f6a8
 
 master_sites        pypi:A/${github.project}
 

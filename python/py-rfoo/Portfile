@@ -25,8 +25,8 @@ master_sites        googlecode:${real_name}
 distname            ${real_name}-${version}
 
 checksums           md5     def659ff85f14de51b455e88510b7f4b \
-                    sha1    4ecfda81525e48662c7dd8c97dd1816c7ed2a530 \
-                    rmd160  456e89ae1ef07f96750874ec6e94938e21c03cb6
+sha1    4ecfda81525e48662c7dd8c97dd1816c7ed2a530 \
+rmd160  456e89ae1ef07f96750874ec6e94938e21c03cb6
 
 python.versions 27 36
 

@@ -12,7 +12,7 @@ description         PEAR Gtk_MDB_Designer package
 long_description    ${description}
 
 checksums           rmd160  f414cbbb356bf5b5525c61a08126cec86f5dabba \
-                    sha256  dd2696643265579b5a16f823d70ddabd6d95ee0d2748237e97dbb8bbe6d5354c
+sha256  dd2696643265579b5a16f823d70ddabd6d95ee0d2748237e97dbb8bbe6d5354c
 
 depends_lib-append  port:pear-MDB \
                     port:pear-XML_Parser

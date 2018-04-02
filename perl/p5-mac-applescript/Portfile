@@ -18,6 +18,6 @@ long_description    Simple interface to the OSA scripting stuff. Returns undef o
                     the AppleScript command.
 
 checksums           rmd160  6be9c674149e5647299f0523839d6db6f8b2b323 \
-                    sha256  384c348f925af452165a11c0d52fb99e7b311808f97b57c89914059224983c31
+sha256  384c348f925af452165a11c0d52fb99e7b311808f97b57c89914059224983c31
 
 platforms           darwin

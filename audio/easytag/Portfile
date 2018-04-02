@@ -19,7 +19,7 @@ long_description    EasyTAG is a GTK3 utility for viewing and editing tags \
 master_sites        gnome:sources/${name}/${branch}
 
 checksums           rmd160  fb5684d904efeb8902bf4ec212f75cbba5e77dd1 \
-                    sha256  fc51ee92a705e3c5979dff1655f7496effb68b98f1ada0547e8cbbc033b67dd5
+sha256  fc51ee92a705e3c5979dff1655f7496effb68b98f1ada0547e8cbbc033b67dd5
 
 use_xz              yes
 

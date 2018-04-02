@@ -20,7 +20,7 @@ dist_subdir     gdb
 use_xz          yes
 
 checksums       rmd160  abdaaf9e8b05774e3a3b571f8326484dfda6c867 \
-                sha256  9b315651a16528f7af8c7d8284699fb0c965df316cc7339bb0b7bae335848392
+sha256  9b315651a16528f7af8c7d8284699fb0c965df316cc7339bb0b7bae335848392
 
 set crossgdb-target     arm-none-eabi
 

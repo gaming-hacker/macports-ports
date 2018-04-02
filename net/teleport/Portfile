@@ -17,7 +17,7 @@ long_description    Teleport is a modern SSH server and CA for managing clusters
 license             Apache-2
 
 checksums           rmd160  2777027623fa93b2259587dc57f2531e2aad7816 \
-                    sha256  2cc8c70d7fb4abe8955617f9aa466248bfa1d32f6739b16a7a68c5823f651c39
+sha256  2cc8c70d7fb4abe8955617f9aa466248bfa1d32f6739b16a7a68c5823f651c39
 
 depends_lib         port:go port:zip
 platforms           darwin

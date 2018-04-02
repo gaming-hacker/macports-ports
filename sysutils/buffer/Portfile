@@ -26,8 +26,8 @@ extract.suffix          .tgz
 use_configure           no
 
 checksums               md5     ef1f84473adb3bc2870dd5b0ad4ea82a \
-                        sha1    acb7c516c8fc41d7356db673057e34506fab7c23 \
-                        rmd160  f520d63aa3da22b505f8ecbcb779e6c59508918a
+sha1    acb7c516c8fc41d7356db673057e34506fab7c23 \
+rmd160  f520d63aa3da22b505f8ecbcb779e6c59508918a
 
 patchfiles              buffer-patch
 

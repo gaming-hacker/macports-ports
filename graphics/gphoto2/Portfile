@@ -19,7 +19,7 @@ master_sites        sourceforge:project/gphoto/gphoto/${version}
 use_bzip2           yes
 
 checksums           rmd160  a7248452ee8233081c5b9d149d2fbcd3d05bd9c1 \
-                    sha256  ae571a227983dc9997876702a73af5431d41f287ea0f483cda897c57a6084a77 \
+sha256  ae571a227983dc9997876702a73af5431d41f287ea0f483cda897c57a6084a77 \
 size    790513
 
 depends_build       port:pkgconfig

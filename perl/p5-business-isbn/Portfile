@@ -14,7 +14,7 @@ long_description    This package provides the Perl modules Business::ISBN, \
                     International Standard Book Numbers.
 
 checksums           rmd160  17884380289a4fb0f655ca3af4ea7e26699cedc8 \
-                    sha256  31754acd57bf0c3d4762003d784bce4a0af6832a725336e219fb2988b6fb831e
+sha256  31754acd57bf0c3d4762003d784bce4a0af6832a725336e219fb2988b6fb831e
 
 platforms           darwin
 supported_archs     noarch

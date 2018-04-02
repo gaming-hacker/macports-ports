@@ -16,7 +16,7 @@ description         Deprecated support for HTTP/1.0 in libwww-perl
 long_description    ${description}
 
 checksums           rmd160  aa3dfdb5bcc9473636506e4447444233d6d63572 \
-                    sha256  f3ffa911f9d59181f1717910ea26620905c298b74dc30f7d4e5139ee3020b8d3
+sha256  f3ffa911f9d59181f1717910ea26620905c298b74dc30f7d4e5139ee3020b8d3
 
 if {${perl5.major} != ""} {
     depends_lib-append \

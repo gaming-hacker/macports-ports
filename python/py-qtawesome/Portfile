@@ -17,8 +17,8 @@ long_description    QtAwesome enables iconic fonts such as Font Awesome and \
                     Elusive Icons in PyQt and PySide applications.
 
 checksums \
-    rmd160  fc9bf62858ec1a08ea9bdf385d7ed3f63a7348db \
-    sha256  d7626cb3986dc62e98d3522216f94a059b9f3f98751a799888bd4697d41e099a
+rmd160  fc9bf62858ec1a08ea9bdf385d7ed3f63a7348db \
+sha256  d7626cb3986dc62e98d3522216f94a059b9f3f98751a799888bd4697d41e099a
 
 python.versions 27 36
 

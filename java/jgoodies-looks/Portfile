@@ -16,7 +16,7 @@ homepage                http://www.jgoodies.com/freeware/looks/
 master_sites            http://www.jgoodies.com/download/libraries/looks/
 distname                ${name}-2_5_2
 checksums               sha1 3c18092020e78989c054fac4870046eff8f29c73 \
-                        sha256 edd0670c972715c0951094bdeac88047c8836097aea1e78c720d2fe78e8dbbbd
+sha256 edd0670c972715c0951094bdeac88047c8836097aea1e78c720d2fe78e8dbbbd
 use_zip                 yes
 
 depends_lib             bin:java:kaffe \

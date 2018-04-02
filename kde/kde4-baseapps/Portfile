@@ -23,7 +23,7 @@ distname            kde-baseapps-${version}
 license_noconflict  openssl
 
 checksums           rmd160  318ac5cae826538ae6e4fcb805ece512f537378a \
-                    sha256  125baf42a7ab8c255b5829d12837f54c1791498f79593a9b09a9e55344ade6db
+sha256  125baf42a7ab8c255b5829d12837f54c1791498f79593a9b09a9e55344ade6db
 
 depends_lib-append  port:kdelibs4 \
                     port:kfilemetadata \

@@ -14,7 +14,7 @@ master_sites	 xorg:individual/lib/
 
 distname	libXrandr-${version}
 checksums           rmd160  5900e620d33406c022ade7ebc2866c10c9b118ac \
-                    sha256  1ff9e7fa0e4adea912b16a5f0cfa7c1d35b0dcda0e216831f7715c8a3abcf51a
+sha256  1ff9e7fa0e4adea912b16a5f0cfa7c1d35b0dcda0e216831f7715c8a3abcf51a
 use_bzip2	yes
 use_parallel_build      yes
 

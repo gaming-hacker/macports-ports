@@ -16,8 +16,8 @@ master_sites	${homepage}dist/source/ \
 				${homepage}dist/source/archive/
 
 checksums       md5     0ad116194e3101fb08fab8f6f00cc58f \
-                sha1    affa11961f93aefef5f9df3173260c269df247c9 \
-                rmd160  f677cdfaf6510d9117288edda75f28a86bff7d36
+sha1    affa11961f93aefef5f9df3173260c269df247c9 \
+rmd160  f677cdfaf6510d9117288edda75f28a86bff7d36
 
 depends_build	bin:ant:apache-ant
 depends_lib		bin:java:kaffe

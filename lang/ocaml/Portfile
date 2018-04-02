@@ -20,7 +20,7 @@ license             {QPL LGPL}
 homepage            http://www.ocaml.org/
 master_sites        http://caml.inria.fr/pub/distrib/ocaml-${major_vers}/
 checksums           rmd160  d54f32412a47988eb6d5bf8521237277bce8af2d \
-                    sha256  04a527ba14b4d7d1b2ea7b2ae21aefecfa8d304399db94f35a96df1459e02ef9
+sha256  04a527ba14b4d7d1b2ea7b2ae21aefecfa8d304399db94f35a96df1459e02ef9
 
 long_description    OCaml, originally named Objective Caml, is an industrial strength \
                     programming language in the ML family, supporting \

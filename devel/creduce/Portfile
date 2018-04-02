@@ -50,7 +50,7 @@ depends_skip_archcheck  clang-${llvm_version} \
 
 master_sites            ${homepage}/
 checksums               rmd160  8c4cf6231983bf22790bab0a0cf5443924673ca3 \
-                        sha256  36dca859c97a988e71b1a08e0cbd5849e4da051d248c5e483494194c4a231a41
+sha256  36dca859c97a988e71b1a08e0cbd5849e4da051d248c5e483494194c4a231a41
 
 configure.perl          ${prefix}/bin/perl${perl5.major}
 configure.args          --libexecdir=${prefix}/libexec/${name} \

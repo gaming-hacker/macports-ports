@@ -23,7 +23,7 @@ depends_lib-append  port:docbook-xsl-ns
 
 use_bzip2           yes
 checksums           rmd160  80e40bf5d29347070283bd89a063bce177e494e9 \
-                    sha256  82afe6c24cf574f242c1fa85a5daff8c3631cc9b4cbcb80379dce6f364b4bbd4
+sha256  82afe6c24cf574f242c1fa85a5daff8c3631cc9b4cbcb80379dce6f364b4bbd4
 
 master_sites        sourceforge:oscaf
 

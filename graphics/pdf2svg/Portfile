@@ -15,7 +15,7 @@ homepage            http://www.cityinthesky.co.uk/opensource/pdf2svg
 platforms           darwin
 
 checksums           rmd160  dfe9aaf5acb0d084e9050cd7d9a7fd5550ee53de \
-                    sha256  7fb6aeee889b1c7a47312d12ab092e5ec905e2269b088fb5cb5f7ecc8604ad31
+sha256  7fb6aeee889b1c7a47312d12ab092e5ec905e2269b088fb5cb5f7ecc8604ad31
 
 depends_build       port:pkgconfig
 depends_lib         port:gtk2 \

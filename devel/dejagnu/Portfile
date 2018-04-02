@@ -23,4 +23,4 @@ depends_run         bin:expect:expect
 
 master_sites        gnu
 checksums           rmd160  7ba9f04f86cc3cca094c505caddeb316a30b3409 \
-                    sha256  00b64a618e2b6b581b16eb9131ee80f721baa2669fa0cdee93c500d1a652d763
+sha256  00b64a618e2b6b581b16eb9131ee80f721baa2669fa0cdee93c500d1a652d763

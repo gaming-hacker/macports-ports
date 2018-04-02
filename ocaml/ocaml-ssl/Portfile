@@ -18,7 +18,7 @@ master_sites        sourceforge:project/savonet/ocaml-ssl/${version}
 distname            ocaml-ssl-${version}
 
 checksums           rmd160  cc80ecedbb11fe131ee2251574a626479f51ce2e \
-                    sha256  83bc8f5b2a4b9943c64bdfa66123ae1f099b36d76b8a98a0b7b99cdd94a47787
+sha256  83bc8f5b2a4b9943c64bdfa66123ae1f099b36d76b8a98a0b7b99cdd94a47787
 
 depends_lib         port:ocaml port:ocaml-findlib
 

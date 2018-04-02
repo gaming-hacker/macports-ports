@@ -16,7 +16,7 @@ long_description    ${name} is a script for managing file archives of various \
 master_sites        http://download.savannah.gnu.org/releases/atool/
 
 checksums           rmd160  ca067ba295ff2ad11dc1c9147a13f8a1becaf078 \
-                    sha256  aaf60095884abb872e25f8e919a8a63d0dabaeca46faeba87d12812d6efc703b
+sha256  aaf60095884abb872e25f8e919a8a63d0dabaeca46faeba87d12812d6efc703b
 
 post-patch {
     # /usr/bin/sed does not work, use ${prefix}/bin/gsed instead

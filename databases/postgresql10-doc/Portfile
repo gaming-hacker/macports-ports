@@ -23,7 +23,7 @@ distname            postgresql-${version}
 set rname           postgresql10
 
 checksums           rmd160  4f9f08c957c1c2e5feb9bfc6231c9722fdffe0d2 \
-                    sha256  6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
+sha256  6ea268780ee35e88c65cdb0af7955ad90b7d0ef34573867f223f14e43467931a
 
 use_bzip2           yes
 dist_subdir         ${rname}

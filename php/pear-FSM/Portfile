@@ -12,4 +12,4 @@ description         PEAR FSM package
 long_description    ${description}
 
 checksums           rmd160  209b22782bb13ad741f5a4a9626b2822f6b86e07 \
-                    sha256  0415e50c8614d9c5bd8710e7faacc4c7407168d9074ed3f237b0cdd7e9ff272d
+sha256  0415e50c8614d9c5bd8710e7faacc4c7407168d9074ed3f237b0cdd7e9ff272d

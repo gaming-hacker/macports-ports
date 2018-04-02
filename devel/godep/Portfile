@@ -14,7 +14,7 @@ description         Dependency tool for go
 long_description    $description
 
 checksums           rmd160  c071dc3c1dca0490a8f9f0403a056a9d1c989352 \
-                    sha256  8db44a46c70a2b5fa8f4dc6e39f57a87107f006d9ed6c52c27371d60abd8eedf
+sha256  8db44a46c70a2b5fa8f4dc6e39f57a87107f006d9ed6c52c27371d60abd8eedf
 
 depends_build       port:go
 depends_lib         port:go-tools

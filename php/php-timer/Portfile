@@ -16,7 +16,7 @@ distname                ${cap_name}-${version}
 extract.suffix          .tgz
 platforms               darwin freebsd
 checksums               rmd160  11ce7b395234b2f1e0c9f7107067f2b2d3354c9d \
-                        sha256  f51965eea8ec722843f0a10cd4b9c35aaecf0a816ac80929dbab87c8a6d8692b
+sha256  f51965eea8ec722843f0a10cd4b9c35aaecf0a816ac80929dbab87c8a6d8692b
 description             utility class for timing in PHP
 long_description \
     ${description}

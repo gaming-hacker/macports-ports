@@ -15,7 +15,7 @@ long_description    This module contains rules for converting HTML into XWiki ma
                     See HTML::WikiConverter for additional usage details.
 
 checksums           rmd160  1f717328157e59c14d13e04de2926a30b6f95528 \
-                    sha256  7965db577c3e7f3f350d776dc75b32632fe8102a5acf7c6886be48396b261c66
+sha256  7965db577c3e7f3f350d776dc75b32632fe8102a5acf7c6886be48396b261c66
 
 platforms           darwin
 supported_archs     noarch

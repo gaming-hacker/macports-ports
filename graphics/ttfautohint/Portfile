@@ -18,7 +18,7 @@ license            {freetype GPL-2}
 master_sites       sourceforge:project/freetype/ttfautohint/${version}
 
 checksums          rmd160 73f74ddab855cbe3b82d27216eabc410b07c4d9b \
-                   sha256 3db94821e4edb3900b6533733d06731eb667f1e9c144bb70d1339de7ef4007f2
+sha256 3db94821e4edb3900b6533733d06731eb667f1e9c144bb70d1339de7ef4007f2
 
 depends_build      port:pkgconfig
 

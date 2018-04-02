@@ -16,7 +16,7 @@ long_description    Opensource tool that aims to create a complete cross-platfor
                     various BIOSes.
 
 checksums           rmd160  8cc7d90a90ea4a57e7f5562699049d6bfb9d9359 \
-                    sha256  6231364e7e278b2a75889b1b9764689e9361487c152621746061a6c8e5e8a658
+sha256  6231364e7e278b2a75889b1b9764689e9361487c152621746061a6c8e5e8a658
 
 depends_build       port:pkgconfig
 

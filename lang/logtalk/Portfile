@@ -30,7 +30,7 @@ homepage            http://logtalk.org/
 master_sites        ${homepage}files/
 
 checksums           rmd160  daac2430f678823e9f19130c5052544a2d0a9c4c \
-                    sha256  6951fd46dfaa8438e8fa54e68ebecfd8feae53acaabba1852d4e17fc0e1aa94e
+sha256  6951fd46dfaa8438e8fa54e68ebecfd8feae53acaabba1852d4e17fc0e1aa94e
 
 use_bzip2           yes
 

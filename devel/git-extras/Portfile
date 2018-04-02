@@ -16,7 +16,7 @@ long_description        \
 license                 MIT
 
 checksums               rmd160  eaf2c577c9614069f9f88f38c5deda3d69ce2b44 \
-                        sha256  6028688cffb65af40d6c8ce5a5d2f9c4fa35e084acaf640473c40496641ab234
+sha256  6028688cffb65af40d6c8ce5a5d2f9c4fa35e084acaf640473c40496641ab234
 
 use_configure           no
 

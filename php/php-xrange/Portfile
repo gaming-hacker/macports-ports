@@ -22,7 +22,7 @@ long_description \
     provide an alternative for all numeric iteration and looping.
 
 checksums       rmd160  07439763a6b7cea81fa1f47d1062da81bc6efc3a \
-                sha256  612849c8e6d5587183a3fb1e39bb5e4a061fe911d5bd3f9b08f6796ee1f4c112
+sha256  612849c8e6d5587183a3fb1e39bb5e4a061fe911d5bd3f9b08f6796ee1f4c112
 
 if {${name} ne ${subport}} {
     use_parallel_build  yes

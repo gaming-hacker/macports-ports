@@ -16,7 +16,7 @@ long_description \
     and modeling power, with safety and programmer productivity.
 homepage            http://dlang.org/
 checksums           rmd160  e92fcfa89d769a90c8e05bce4bd334cb03efa02c \
-                    sha256  e9d20ed4926ad981a9ec3c457fd60dbe0a4e0ed4ce25dab8ca14c93bf988092a
+sha256  e9d20ed4926ad981a9ec3c457fd60dbe0a4e0ed4ce25dab8ca14c93bf988092a
 post-patch {
     reinplace "s|/etc|${prefix}/etc/${name}|" ${worksrcpath}/docs/man/man1/${name}.1
     reinplace "s|/etc|${prefix}/etc/${name}|" ${worksrcpath}/docs/man/man5/${name}.conf.5

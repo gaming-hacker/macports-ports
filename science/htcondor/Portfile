@@ -78,7 +78,7 @@ variant kerberos description {enable Kerberos5 support} {
 }
 
 checksums               rmd160  84293176b8a3ffa9a09e1543295e1b1089126a3a \
-                        sha256  3b8234ace974952a13c5f133c86fd6eb454924564ceb8665123bb7b5357cc820
+sha256  3b8234ace974952a13c5f133c86fd6eb454924564ceb8665123bb7b5357cc820
 
 depends_build-append    port:fig2dev \
                         port:latex2html

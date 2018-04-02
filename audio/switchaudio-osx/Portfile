@@ -14,7 +14,7 @@ description             A command-line utility to switch the audio source on Mac
 long_description        ${description}
 
 checksums               rmd160  3ed089efb7dfbe09f12aedbfca2ce293f0529938 \
-                        sha256  8c50d0c9d5d4818be36f98cd0000790d2e2f2ed28577a9ef69024568f57e86ac
+sha256  8c50d0c9d5d4818be36f98cd0000790d2e2f2ed28577a9ef69024568f57e86ac
 
 xcode.project           AudioSwitcher.xcodeproj
 xcode.configuration     Release

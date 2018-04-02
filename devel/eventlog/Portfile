@@ -17,7 +17,7 @@ homepage		http://www.balabit.com/products/syslog_ng/
 master_sites		http://www.balabit.com/downloads/files/eventlog/${branch}
 
 checksums		rmd160  26210a235a2d823b9b2b50ed675c7c0c743a260f \
-			sha256  494dac8e01dc5ce323df2ad554d94874938dab51aa025987677b2bc6906a9c66
+sha256  494dac8e01dc5ce323df2ad554d94874938dab51aa025987677b2bc6906a9c66
 
 distfiles		${name}_${version}${extract.suffix}
 

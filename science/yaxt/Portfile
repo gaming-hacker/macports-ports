@@ -18,7 +18,7 @@ homepage            https://www.dkrz.de/redmine/projects/${name}
 master_sites        https://www.dkrz.de/redmine/attachments/download/465
 use_xz              yes
 checksums           rmd160  d9f9bce5841621563c524b3899e5973810b407ee \
-                    sha256  0688b627f1a0aa2407311f3eb962c57e6f040badec6d42587a56341d50ef11da
+sha256  0688b627f1a0aa2407311f3eb962c57e6f040badec6d42587a56341d50ef11da
 
 mpi.setup           require -clang
 

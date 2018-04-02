@@ -20,7 +20,7 @@ depends_lib-append  port:gnutls \
 depends_run         port:vpnc-scripts
 
 checksums           rmd160  2ee0a3bf301b3c9af6bb3b7663875afea6f0a307 \
-                    sha256  7377a5e3de6e5b0764723d66fbd0a1d8b380ddbb5b3862714197a4ba47ee8982
+sha256  7377a5e3de6e5b0764723d66fbd0a1d8b380ddbb5b3862714197a4ba47ee8982
 
 patchfiles          patch-common_h.diff
 

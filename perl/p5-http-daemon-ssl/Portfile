@@ -17,7 +17,7 @@ long_description    HTTP::Daemon::SSL is a descendant of HTTP::Daemon that \
                     to connect to it without using SSL.
 
 checksums           rmd160  39e795194acf15d1be48b9187f735a85a1608623 \
-                    sha256  7eae05422d934c8492dfd3505b774fd6590c99808ce8beb6c57efd261e5dc22e
+sha256  7eae05422d934c8492dfd3505b774fd6590c99808ce8beb6c57efd261e5dc22e
 
 platforms           darwin
 supported_archs     noarch

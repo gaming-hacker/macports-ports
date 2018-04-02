@@ -16,7 +16,7 @@ platforms           darwin
 homepage            http://nanoc.stoneship.org/
 master_sites        http://rubygems.org/downloads/
 checksums           md5     940c80e92c05e318c0746769fc3969c2 \
-                    sha1    6a31449e1eb8980835ce050ca6d7355cb0025889 \
-                    rmd160  36e5a39da86ece0ed96052f20410b702988c2d9d
+sha1    6a31449e1eb8980835ce050ca6d7355cb0025889 \
+rmd160  36e5a39da86ece0ed96052f20410b702988c2d9d
 
 depends_run-append  port:rb-nanoc3

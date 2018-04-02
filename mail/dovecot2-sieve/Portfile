@@ -33,7 +33,7 @@ master_sites        http://pigeonhole.dovecot.org/releases/${dovecot2}
 distname            dovecot-${dovecot2}-pigeonhole-${version}
 
 checksums           rmd160  8149f94a0dc3421b025d43180d6a4c5e9b1b3eff \
-                    sha256  56356d14b10c45aa472074e85bfc582c2f08a15a43ecf24f481df39b206efad2
+sha256  56356d14b10c45aa472074e85bfc582c2f08a15a43ecf24f481df39b206efad2
 
 depends_build       port:libtool port:autoconf port:automake
 depends_lib         port:dovecot2

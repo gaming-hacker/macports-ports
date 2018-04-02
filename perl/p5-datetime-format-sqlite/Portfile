@@ -14,8 +14,8 @@ description         Parse and format SQLite dates and times
 long_description    ${description}
 
 checksums           md5     9cc9cc861407a1bbc696226605279842 \
-                    sha1    a04f88268e2c3cddbdc33d4d2082779014b88ea4 \
-                    rmd160  acb1ceccca1b0eaa0a809c4f810ea30bd41346f7
+sha1    a04f88268e2c3cddbdc33d4d2082779014b88ea4 \
+rmd160  acb1ceccca1b0eaa0a809c4f810ea30bd41346f7
 
 if {${perl5.major} != ""} {
     depends_lib-append \

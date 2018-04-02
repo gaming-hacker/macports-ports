@@ -14,8 +14,8 @@ long_description \
 homepage            http://www.jnickelsen.de/socket/
 master_sites        ${homepage}
 checksums           md5     cab42be83b4c0aa42819cc95734c0c58 \
-                    sha1    52562b2600f7b214e8200db0ef43a395b7a6ccd7 \
-                    rmd160  f1fc8dd7574bc161b74f55a1e9c4893f43a451cc
+sha1    52562b2600f7b214e8200db0ef43a395b7a6ccd7 \
+rmd160  f1fc8dd7574bc161b74f55a1e9c4893f43a451cc
 
 use_configure       no
 patchfiles          patch-Makefile.diff

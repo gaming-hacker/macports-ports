@@ -24,8 +24,8 @@ homepage      http://bazaar-vcs.org/
 master_sites  https://launchpad.net/${name}/${branch}/${version}/+download/
 
 checksums     md5     28c86653d0df10d202c6b842deb0ea35\
-              rmd160  794dbc585fd1acc711b59016d0b2c3dfe97927d7 \
-              sha256  0994797182eb828867eee81cccc79480bd2946c99304266bc427b902cf91dab0
+rmd160  794dbc585fd1acc711b59016d0b2c3dfe97927d7 \
+sha256  0994797182eb828867eee81cccc79480bd2946c99304266bc427b902cf91dab0
 
 python.default_version  27
 

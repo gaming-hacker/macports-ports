@@ -21,7 +21,7 @@ master_sites        http://www.acpica.org/download/
 distname            acpica-unix-${version}
 
 checksums           sha1   af77be2a7640c44e885c55083ae6faaa0ce8c248 \
-                    rmd160 c4b132f99c1d330a11705945259e024b5203c1a9 
+rmd160 c4b132f99c1d330a11705945259e024b5203c1a9 
 
 depends_build       port:bison
 

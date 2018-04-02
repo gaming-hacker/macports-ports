@@ -23,7 +23,7 @@ master_sites        sourceforge:project/neurosuite/sources/
 distname            ndmanager-${version}
 
 checksums           rmd160  015a1b50e2d698d0a2668349bbabb31b72ef6552 \
-                    sha256  d2be3043854e15e878af87124f1e0611b64b48f004ac975a97e1d9d0d4b767a6
+sha256  d2be3043854e15e878af87124f1e0611b64b48f004ac975a97e1d9d0d4b767a6
 
 depends_lib         port:kdelibs4 \
                     port:libklustersshared

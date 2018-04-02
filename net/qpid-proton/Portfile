@@ -24,7 +24,7 @@ github.setup        apache qpid-proton 0.21.0
 PortGroup           cmake 1.0
 
 checksums           rmd160  8828d18e9c3f664e38012f496e80e20a2aee8cb1 \
-                    sha256  26524227525c7bcec0817cdc5ce83aeb0729412aec0408431ebafc103c23572b
+sha256  26524227525c7bcec0817cdc5ce83aeb0729412aec0408431ebafc103c23572b
 
 cmake.out_of_source yes
 configure.args-append \

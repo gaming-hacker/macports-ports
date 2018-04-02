@@ -22,7 +22,7 @@ long_description    Perl OpenGL (a.k.a. POGL) is a perl5 interface to \
 platforms           darwin
 
 checksums           rmd160  84eee832fed158d7bb4d303fbaf0022de792779a \
-                    sha256  b20e2af4404b4901ab35bba6ad5e3a8aa60bff72413c99288f01018c4cf874e0
+sha256  b20e2af4404b4901ab35bba6ad5e3a8aa60bff72413c99288f01018c4cf874e0
 
 # to correctly configure supported OpenGL capabilities, the port must be able
 # to query the display on the target machine during the configure phase

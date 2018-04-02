@@ -12,7 +12,7 @@ description         PEAR HTML_QuickForm_Livesearch package
 long_description    ${description}
 
 checksums           rmd160  e1ab738537709896293407ff531cc98bce4e0588 \
-                    sha256  6003968b0ed14b1d5a4e6fc5730967329ea9576615492e7063d5f87c44e82930
+sha256  6003968b0ed14b1d5a4e6fc5730967329ea9576615492e7063d5f87c44e82930
 
 depends_lib-append  port:pear-HTML_QuickForm \
                     port:pear-HTML_AJAX

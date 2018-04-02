@@ -18,7 +18,7 @@ description             MAME emulator as a library
 long_description        libmame is the MAME emulator as a library
 
 checksums               rmd160  32731fcc116b08b7d8b2f56abf220a41c6c34458 \
-                        sha256  02dba073fc12a0f554e3a49442b4870dc18a4814d05264fbef748ad07a43c227
+sha256  02dba073fc12a0f554e3a49442b4870dc18a4814d05264fbef748ad07a43c227
 
 universal_variant       no
 

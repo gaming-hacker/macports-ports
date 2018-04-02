@@ -17,7 +17,7 @@ long_description    ${name} is a common library for routines used in TuxMath \
                     and Tux Typing.
 
 checksums           rmd160  8a4d193bc77c210f043caef513b40dab689d87dd \
-                    sha256  3885aa7cb4108986e5336ced048c4a3542976443f65960bbfe8f7dd919aa761b
+sha256  3885aa7cb4108986e5336ced048c4a3542976443f65960bbfe8f7dd919aa761b
 
 depends_build       port:pkgconfig
 depends_lib         port:libsdl \

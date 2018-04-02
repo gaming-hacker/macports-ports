@@ -27,7 +27,7 @@ use_zip             yes
 extract.suffix      .jar
 
 checksums           sha1    54544a2f212cc5cc96868efe7ea8973be3f778fb \
-                    rmd160  15480082329e9b9cc8d7ea81dc84cd3922dfbefc
+rmd160  15480082329e9b9cc8d7ea81dc84cd3922dfbefc
 
 depends_lib         bin:java:kaffe
 

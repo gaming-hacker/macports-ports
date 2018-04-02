@@ -19,7 +19,7 @@ long_description \
     smooth contours with constant curvature at the spline joins.
 
 checksums       sha256  86633d1c1256f40ef761e375bfc9a7d0c536a2a212763fe1827332e1243bbc39 \
-                rmd160  8b5cf432a7329fe20438f58d7c173bd275983c8b
+rmd160  8b5cf432a7329fe20438f58d7c173bd275983c8b
 
 use_autoreconf  yes
 

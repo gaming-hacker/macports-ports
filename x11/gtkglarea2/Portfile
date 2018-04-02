@@ -26,7 +26,7 @@ distname                ${gname}-${version}
 use_xz                  yes
 
 checksums               rmd160  4672718ad1eb96317c0f98ff52d6b64bc3b90c2a \
-                        sha256  8e1e545877d2f5139300b54c2e3bcd70acf7d80a78421a894192186a64db82de
+sha256  8e1e545877d2f5139300b54c2e3bcd70acf7d80a78421a894192186a64db82de
 
 depends_build           port:pkgconfig
 depends_lib             port:mesa \

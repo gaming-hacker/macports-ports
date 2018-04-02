@@ -21,7 +21,7 @@ long_description        WebDot is a CGI program that converts a graph \
                         an image that can be included on a web page
 
 checksums               rmd160  7c3c493b889ed21676bbe72a0955449b0461903e \
-                        sha256  f11567ae7a696b82c7d7d9f366827e641b2bc5a50695a3076b53e01b6902113e
+sha256  f11567ae7a696b82c7d7d9f366827e641b2bc5a50695a3076b53e01b6902113e
 
 depends_build           port:pkgconfig
 

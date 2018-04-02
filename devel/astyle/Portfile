@@ -20,7 +20,7 @@ homepage            http://astyle.sourceforge.net
 master_sites        sourceforge:project/astyle/astyle/astyle%20${version}
 distname            ${name}_${version}_macosx
 checksums           rmd160  d153c0004c7a5d44dc68f235b5baa36e988afab3 \
-                    sha256  de66da286dee2b9de1dc1c05092cbf5368c0889f25d1e2ee8b51766aff8e4baf
+sha256  de66da286dee2b9de1dc1c05092cbf5368c0889f25d1e2ee8b51766aff8e4baf
 
 worksrcdir          ${name}/build/mac
 

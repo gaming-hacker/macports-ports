@@ -20,7 +20,7 @@ homepage            http://entrproject.org
 master_sites        ${homepage}/code
 
 checksums           rmd160  51b2450b98fcad0b3bfbd5a3b99167189dc07f50 \
-                    sha256  02d78f18ae530e64bfbb9d8e0250962f85946e10850dd065899d03af15f26876
+sha256  02d78f18ae530e64bfbb9d8e0250962f85946e10850dd065899d03af15f26876
 
 worksrcdir          eradman-entr-332fd96a324a
 

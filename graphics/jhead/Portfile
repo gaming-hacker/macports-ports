@@ -23,7 +23,7 @@ long_description	${name} is used to display and manipulate data contained in \
 homepage		http://www.sentex.net/~mwandel/${name}/
 master_sites	${homepage}
 checksums	rmd160 34bcaed29b3907edb16b5cc9099776ac5fc2c937 \
-		sha256 88cc01da018e242fe2e05db73f91b6288106858dd70f27506c4989a575d2895e
+sha256 88cc01da018e242fe2e05db73f91b6288106858dd70f27506c4989a575d2895e
 
 use_configure	no
 

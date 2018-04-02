@@ -19,7 +19,7 @@ long_description    The Point Cloud Library (PCL) is a standalone, large scale, 
 homepage            http://pointclouds.org
 
 checksums           rmd160  66e3e08beb98664d069dbcee5d22cf7895bbd5e0 \
-                    sha256  3e764a290f4a7241904a23a81851a018e5b9bb5daaaa0dbd5596e3b43820b2e9
+sha256  3e764a290f4a7241904a23a81851a018e5b9bb5daaaa0dbd5596e3b43820b2e9
 
 depends_lib         port:boost \
                     port:eigen3 \

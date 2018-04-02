@@ -12,4 +12,4 @@ description         PEAR ScriptReorganizer package
 long_description    ${description}
 
 checksums           rmd160  1f8f29bdc882745475aaadfe6d534cd831de83d5 \
-                    sha256  d8a69cdf8ea7e892395dda32d90adbc1de30a242f67b5538bfd4ce32b9de6b7f
+sha256  d8a69cdf8ea7e892395dda32d90adbc1de30a242f67b5538bfd4ce32b9de6b7f

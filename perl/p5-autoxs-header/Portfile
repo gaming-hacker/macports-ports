@@ -16,6 +16,6 @@ long_description    This module is a simple container for the newest \
 platforms           darwin
 
 checksums           rmd160  c8a262740ef22b468a0a377fe572b1f6a968259d \
-                    sha256  5338602d189316a50e1980a5370e7a29999aed3ffd6381ec794eda20d163ba6f
+sha256  5338602d189316a50e1980a5370e7a29999aed3ffd6381ec794eda20d163ba6f
 
 supported_archs     noarch

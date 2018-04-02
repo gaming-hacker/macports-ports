@@ -18,7 +18,7 @@ license             LGPL-3+
 
 master_sites        ${homepage}
 checksums           rmd160  1d66e9c18ca8892366c57b9755a3b899a5ab3223 \
-                    sha256  982e8df505fb410db7bace7e1aebc03fe5a8132538973e1382c922edbec906f6
+sha256  982e8df505fb410db7bace7e1aebc03fe5a8132538973e1382c922edbec906f6
 
 mpi.setup           require
 

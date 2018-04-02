@@ -23,8 +23,8 @@ master_sites    gnome:sources/${name}/${branch}/
 use_bzip2       yes
 
 checksums       md5     a05fab03eeef10a47dd156b758982f2e \
-                sha1    0dc634e7dd979fd218f378902c0ca1af80738961 \
-                rmd160  6a5952bea02dfc96782b6f1129fe765f5313a75b
+sha1    0dc634e7dd979fd218f378902c0ca1af80738961 \
+rmd160  6a5952bea02dfc96782b6f1129fe765f5313a75b
 
 depends_build   port:pkgconfig \
                 port:intltool \

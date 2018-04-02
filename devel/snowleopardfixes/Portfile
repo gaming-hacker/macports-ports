@@ -14,7 +14,7 @@ description         A library to replace common functions missing from SnowLeopa
 long_description    ${description}
 
 checksums           rmd160  43303d2c290455488a806b05fe22647b8b070e63 \
-                    sha256  b73fdaed13fb50a437cd5cbe530096f9afb921820ce1dcd292bc367470888b46
+sha256  b73fdaed13fb50a437cd5cbe530096f9afb921820ce1dcd292bc367470888b46
 
 use_configure       no
 

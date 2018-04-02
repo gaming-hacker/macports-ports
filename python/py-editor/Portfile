@@ -24,7 +24,7 @@ master_sites        pypi:p/python-editor
 distname            python-editor-${version}
 
 checksums           rmd160  0fc050d9a7049274753f66b7f9d33a1a3e0a4945 \
-                    sha256  a3c066acee22a1c94f63938341d4fb374e3fdd69366ed6603d7b24bed1efc565
+sha256  a3c066acee22a1c94f63938341d4fb374e3fdd69366ed6603d7b24bed1efc565
 
 if {${name} ne ${subport}} {
     depends_build-append \

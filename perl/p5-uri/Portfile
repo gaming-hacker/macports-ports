@@ -18,7 +18,7 @@ long_description    This package contains the URI.pm module with friends. The mo
                     Identifier references as specified in RFC 2396 and updated by RFC 2732.
 
 checksums           rmd160  7abfc92bb0caab80fe9a1bc176cd907c76688974 \
-                    sha256  cca7ab4a6f63f3ccaacae0f2e1337e8edf84137e73f18548ec7d659f23efe413 \
+sha256  cca7ab4a6f63f3ccaacae0f2e1337e8edf84137e73f18548ec7d659f23efe413 \
 size    106930
 
 if {${perl5.major} != ""} {

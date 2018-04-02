@@ -25,7 +25,7 @@ master_sites        ${homepage}/files/rpm/rpm-${branch}/
 distname            rpm-${version}-0.${date}
 extract.suffix      .src.rpm
 checksums           rmd160  1b4af6831b864e485e6f9d9bee2c99f294e62cd8 \
-                    sha256  d4ae5e9ed5df8ab9931b660f491418d20ab5c4d72eb17ed9055b80b71ef6c4ee
+sha256  d4ae5e9ed5df8ab9931b660f491418d20ab5c4d72eb17ed9055b80b71ef6c4ee
 worksrcdir          rpm-${version}
 
 patchfiles          patch-rpmuuid.c.diff

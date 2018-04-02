@@ -20,7 +20,7 @@ description             Pycairo is set of Python bindings for the cairo graphics
 long_description        ${description}
 
 checksums               rmd160  16ce1ad969a9fb06f8f28a7b07495b738d1af22f \
-                        sha256  9cfd69b782400048df819298f889b4ea924e16edadcaf94bb3b19c02b798df2d
+sha256  9cfd69b782400048df819298f889b4ea924e16edadcaf94bb3b19c02b798df2d
 
 python.versions 27 36
 

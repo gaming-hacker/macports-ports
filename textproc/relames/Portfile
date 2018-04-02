@@ -23,8 +23,8 @@ distname              ${name}.${version}
 use_zip               yes
 fetch.ignore_sslcert  yes
 checksums             md5 b2481ed4a4d9f6187713a01632688007 \
-                      sha1 d348479df721ffc36a02113c7600bcb6d6b75961 \
-                      rmd160 3c34c405cbcc61d1fcae510c79261996ed55683a
+sha1 d348479df721ffc36a02113c7600bcb6d6b75961 \
+rmd160 3c34c405cbcc61d1fcae510c79261996ed55683a
 worksrcdir            ${name}-${version}
 
 depends_run           bin:java:kaffe

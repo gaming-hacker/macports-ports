@@ -16,7 +16,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  faa0d09e0d0ca27c9675cceca7796ab2319e4027 \
-                    sha256  003969a61cf6c06e513538a35fa8a696fb90137fa848fd972dfab4e34ddeda7c \
+sha256  003969a61cf6c06e513538a35fa8a696fb90137fa848fd972dfab4e34ddeda7c \
 size    449467
 
 patchfiles          patch-wscript.diff

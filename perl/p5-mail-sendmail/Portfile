@@ -18,7 +18,7 @@ long_description    Simple platform independent e-mail from your perl \
                     intended to be very easy to setup and use.
 
 checksums           rmd160  29b3c2e19497cf62b0d0f80b35911678a37f9ec3 \
-                    sha256  5b8a98cb5cc39d80441a38aab010885ddf80e6fcd8e6e0314392cb23e7c268e4
+sha256  5b8a98cb5cc39d80441a38aab010885ddf80e6fcd8e6e0314392cb23e7c268e4
 
 platforms           darwin
 supported_archs     noarch

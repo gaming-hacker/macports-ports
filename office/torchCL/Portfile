@@ -20,7 +20,7 @@ homepage            http://torch.wbpsystems.com/cl.php
 master_sites        https://mytorch.net/CL/
 
 checksums           rmd160  25f34d30fdd1364546a9a3a4b038a4a95faf06a4 \
-                    sha256  023712d65e0779447062d760c61cd1ece9297a32c6cb837a9ebdd098959cd35a
+sha256  023712d65e0779447062d760c61cd1ece9297a32c6cb837a9ebdd098959cd35a
 
 python.default_version          27
 

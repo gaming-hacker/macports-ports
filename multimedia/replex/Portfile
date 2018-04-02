@@ -21,8 +21,8 @@ long_description    Replex was created to remultiplex transport stream (TS)\
                     DVD (with dvdauthor).
 
 checksums           md5 de02c1b55bc7863f811adffe611f1c71 \
-                    sha1 594a5195d65059f26203ac25ad2f332d3c34c1ae \
-                    rmd160 9b29af523b82e008981169497956e5a590d5c268
+sha1 594a5195d65059f26203ac25ad2f332d3c34c1ae \
+rmd160 9b29af523b82e008981169497956e5a590d5c268
 
 patchfiles          patch-replex.c.diff
 

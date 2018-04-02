@@ -30,9 +30,9 @@ long_description \
 homepage        http://samba.org/rsync/
 master_sites    http://rsync.samba.org/ftp/rsync/old-previews/
 checksums \
-  md5 54bfda1a6d8a0c275920bca22fb0c68f \
-  sha1 4a5b9728239e65935be0cae322941bd1a37aea06 \
-  rmd160 bdcf2e3e6644f6166424e7016670c284c7027e64
+md5 54bfda1a6d8a0c275920bca22fb0c68f \
+sha1 4a5b9728239e65935be0cae322941bd1a37aea06 \
+rmd160 bdcf2e3e6644f6166424e7016670c284c7027e64
 
 distname        rsync-${version}
 

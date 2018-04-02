@@ -18,7 +18,7 @@ homepage            http://gpsim.sourceforge.net/
 master_sites        sourceforge:project/gpsim/gpsim/${branch}.0
 
 checksums           rmd160  e84db6f55320e98dc37796e582949617c3547555 \
-                    sha256  9ed078038da80dab117e803467d3df3818fa84af7a4a289aaac295913a30615d
+sha256  9ed078038da80dab117e803467d3df3818fa84af7a4a289aaac295913a30615d
 
 depends_build       port:gputils \
                     port:pkgconfig

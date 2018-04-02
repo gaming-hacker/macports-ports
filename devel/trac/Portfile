@@ -23,9 +23,9 @@ master_sites	https://download.edgewall.org/trac/ \
 distname	Trac-${version}
 
 checksums	md5	38cb5480c35616d8ecb3f0968e454536 \
-		sha1	815b4574c7eec8915f8b42b76d5f23a220951937 \
-		rmd160	3567871baf50ea2d70ea29f83592545d29496c3f \
-		sha256	5ddeca9d2d47093f5791ef7e38ec9aff9c911258b8ba94c85a32ccd9274fc3b6
+sha1	815b4574c7eec8915f8b42b76d5f23a220951937 \
+rmd160	3567871baf50ea2d70ea29f83592545d29496c3f \
+sha256	5ddeca9d2d47093f5791ef7e38ec9aff9c911258b8ba94c85a32ccd9274fc3b6
 
 variant python27 description {Use Python 2.7} {}
 

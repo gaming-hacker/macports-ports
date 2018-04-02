@@ -23,7 +23,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  43fdf0fe29c8d6c516a26d00f77e66f475c934b7 \
-                    sha256  a0a875f3d502f41f4a24444aa98fbf076a6bf36e2a0b3b4481b22e1c4a3acdc2
+sha256  a0a875f3d502f41f4a24444aa98fbf076a6bf36e2a0b3b4481b22e1c4a3acdc2
 
 if {${name} ne ${subport}} {
     patchfiles-append   patch-ffi_Makefile.osx.diff

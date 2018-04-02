@@ -15,7 +15,7 @@ long_description    This module is a simple visitor implementation \
 platforms           darwin
 
 checksums           rmd160  a237c27ecf1ff91c8a23f1d575fb7b2def2c1b8a \
-                    sha256  8ea24abcc3659e760aa94aee2ba7dd54cacaf20302705524143f39554009ed54
+sha256  8ea24abcc3659e760aa94aee2ba7dd54cacaf20302705524143f39554009ed54
 
 if {${perl5.major} != ""} {
     depends_build-append \

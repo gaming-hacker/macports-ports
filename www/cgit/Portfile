@@ -30,12 +30,12 @@ set git_distfile    ${git_distname}${extract.suffix}
 distfiles       ${cgit_distfile}:cgit ${git_distfile}:git
 
 checksums           ${cgit_distfile} \
-                    rmd160  9ad96a56d17ae060b73e8d576d0c065aa590fcfb \
-                    sha256  0889af29be15fc981481caa09579f982b9740fe9fd2860ab87dff286f4635890 \
+rmd160  9ad96a56d17ae060b73e8d576d0c065aa590fcfb \
+sha256  0889af29be15fc981481caa09579f982b9740fe9fd2860ab87dff286f4635890 \
 size    86268 \
                     ${git_distfile} \
-                    rmd160  dc2c45d6763732129fb8e383877ee434972f79e8 \
-                    sha256  7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b \
+rmd160  dc2c45d6763732129fb8e383877ee434972f79e8 \
+sha256  7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b \
 size    4197984
 
 depends_lib     port:git \

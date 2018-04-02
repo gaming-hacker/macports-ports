@@ -24,8 +24,8 @@ homepage            http://projects.puppetlabs.com/projects/puppet
 master_sites        http://puppetlabs.com/downloads/puppet/
 
 checksums           md5     6dfbeb7810524c97747f45aa194b506f \
-                    sha1    c9822c9e239557de1a7c7a97f1f72a9616f244fe \
-                    rmd160  fcccf9b793aa3bf47ca677e72f4b10687766612d
+sha1    c9822c9e239557de1a7c7a97f1f72a9616f244fe \
+rmd160  fcccf9b793aa3bf47ca677e72f4b10687766612d
 
 depends_lib         port:ruby \
                     port:facter

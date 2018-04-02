@@ -20,7 +20,7 @@ homepage	http://dvdauthor.sourceforge.net/
 master_sites	sourceforge:project/dvdauthor/dvdauthor/${version}
 
 checksums	rmd160  71bdee2048a45ea15b7d0e62e75675f9132006ca \
-		sha256  501fb11b09c6eb9c5a229dcb400bd81e408cc78d34eab6749970685023c51fe9
+sha256  501fb11b09c6eb9c5a229dcb400bd81e408cc78d34eab6749970685023c51fe9
 
 depends_lib 	port:libdvdread \
 		port:libxml2 \

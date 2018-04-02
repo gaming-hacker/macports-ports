@@ -17,8 +17,8 @@ distname                ${name}-${version}-gnu
 worksrcdir              ${name}-${version}
 
 checksums           md5     4d0aab6fc0d81c6d40309560aa1301cd \
-                    sha1    98e923fff04cafad24d6416e014a019f3161eacc \
-                    rmd160  326e529b58f76b04515d2f3728977eca64feb797
+sha1    98e923fff04cafad24d6416e014a019f3161eacc \
+rmd160  326e529b58f76b04515d2f3728977eca64feb797
 
 configure.args-append  --with-oracle-headers-path=${prefix}/lib/oracle/sdk/include/ \
                        --with-oracle-lib-path=${prefix}/lib/oracle/

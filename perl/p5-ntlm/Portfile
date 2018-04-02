@@ -17,7 +17,7 @@ description         A perl NTLM authentication module
 long_description    ${description}
 
 checksums           rmd160  42fb64b80207aed722e6789416db911b05ef3cfc \
-                    sha256  c823e30cda76bc15636e584302c960e2b5eeef9517c2448f7454498893151f85
+sha256  c823e30cda76bc15636e584302c960e2b5eeef9517c2448f7454498893151f85
 
 if {${perl5.major} != ""} {
     depends_lib-append \

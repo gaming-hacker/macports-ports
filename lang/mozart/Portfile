@@ -27,8 +27,8 @@ depends_run          bin:wish:tk
 master_sites         sourceforge:project/mozart-oz/v1/${version}-${urldate}-tar/
 distname             ${name}-${version}.${tardate}-src
 checksums            md5 d34156dce23a84925f7eae121feb3afe \
-                     sha1 5a12a1d66c871f01dc1223aa614d4e0bf7717b3f \
-                     rmd160 090c0af3cba9db422c58c37d5fa3e703c8cc82d7
+sha1 5a12a1d66c871f01dc1223aa614d4e0bf7717b3f \
+rmd160 090c0af3cba9db422c58c37d5fa3e703c8cc82d7
 
 patchfiles           patch-share-bin-oz.in \
                      patch-platform_dss_configure.ac \

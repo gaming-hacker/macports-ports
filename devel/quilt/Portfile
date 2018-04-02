@@ -18,7 +18,7 @@ homepage            http://savannah.nongnu.org/projects/quilt/
 
 master_sites        savannah
 checksums           rmd160 6284dd9f2c8cdca10b44e3cc5258cd300d3e1a61 \
-                    sha256 f6cbc788e5cbbb381a3c6eab5b9efce67c776a8662a7795c7432fd27aa096819
+sha256 f6cbc788e5cbbb381a3c6eab5b9efce67c776a8662a7795c7432fd27aa096819
 
 depends_lib         port:gsed \
                     port:getopt \

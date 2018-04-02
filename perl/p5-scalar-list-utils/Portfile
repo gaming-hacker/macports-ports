@@ -15,7 +15,7 @@ long_description    ${description}
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  de8875ac997c65e6b60799ce36d81975966f4a23 \
-                    sha256  06aab9c693380190e53be09be7daed20c5d6278f71956989c24cca7782013675 \
+sha256  06aab9c693380190e53be09be7daed20c5d6278f71956989c24cca7782013675 \
 size    96244
 
 platforms           darwin

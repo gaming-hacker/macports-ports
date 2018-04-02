@@ -23,7 +23,7 @@ homepage            http://research.wand.net.nz/software/libwandio.php
 master_sites        http://research.wand.net.nz/software/wandio/
 
 checksums           rmd160  377e8aab1072ee6ec437ef7ac7c4b6f9c9a2df49 \
-                    sha256  0fe4ae99ad7224f11a9c988be151cbdc12c6dc15872b67f101764d6f3fc70629
+sha256  0fe4ae99ad7224f11a9c988be151cbdc12c6dc15872b67f101764d6f3fc70629
 
 depends_lib-append  port:bzip2 \
                     port:curl \

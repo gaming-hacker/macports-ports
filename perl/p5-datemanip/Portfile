@@ -22,7 +22,7 @@ long_description    This is a set of routines designed to make any common\
                     times are all easily done.
 
 checksums           rmd160  9afec2cf787e6c0774620fb1a843769531f65085 \
-                    sha256  39458c602915b9eba4c1760ed42184ab0326fadd40ab66f086bc27b0ae279364 \
+sha256  39458c602915b9eba4c1760ed42184ab0326fadd40ab66f086bc27b0ae279364 \
 size    1819230
 
 if {${perl5.major} != ""} {

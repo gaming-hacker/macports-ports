@@ -20,7 +20,7 @@ homepage            https://lib.filezilla-project.org/
 master_sites        http://download.filezilla-project.org/libfilezilla/
 
 checksums           rmd160  d4624f9fffce6104a5a61f62bba82a18cf7fdeba \
-                    sha256  60efc9455e022785d432f7a76390dd2d1d92101a65aef1f176a382d604a978bd
+sha256  60efc9455e022785d432f7a76390dd2d1d92101a65aef1f176a382d604a978bd
 
 depends_build       port:pkgconfig \
                     port:cppunit \

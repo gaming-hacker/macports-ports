@@ -21,7 +21,7 @@ conflicts			grails
 distname			grails-${version}
 master_sites		http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/
 checksums           md5     db6be38e3b233d0903e44d1b1c66ac00 \
-                    sha1    190d5a508916e4eacaf43101363fc6c2f731ff9b
+sha1    190d5a508916e4eacaf43101363fc6c2f731ff9b
 
 worksrcdir			grails-${version}
 set workTarget		""

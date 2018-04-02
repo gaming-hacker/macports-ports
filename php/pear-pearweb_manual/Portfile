@@ -13,7 +13,7 @@ description         PEAR pearweb_manual package
 long_description    ${description}
 
 checksums           rmd160  14097a527d71c89e9bf86ca1e018f7b63902f827 \
-                    sha256  0669108c5bf5b3d6f9eb857b1a3f0107f75f2ed1af0d3ff49ac474553b2d4b50
+sha256  0669108c5bf5b3d6f9eb857b1a3f0107f75f2ed1af0d3ff49ac474553b2d4b50
 
 depends_lib-append  port:pear-pearweb \
                     port:pear-VFS \

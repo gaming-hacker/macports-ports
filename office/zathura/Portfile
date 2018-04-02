@@ -26,7 +26,7 @@ homepage            http://pwmt.org/projects/zathura/
 master_sites        ${homepage}download/
 
 checksums           rmd160  94b1ddf760883b3a8edb02bc57963537815aaccd \
-                    sha256  22afff89f4093f22fb82188417ff9bfa9695b19a4fe894dca05b7c821b390ff0
+sha256  22afff89f4093f22fb82188417ff9bfa9695b19a4fe894dca05b7c821b390ff0
 
 depends_build       port:pkgconfig
 

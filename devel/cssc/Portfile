@@ -20,7 +20,7 @@ master_sites        gnu
 distname            CSSC-${version}
 
 checksums           rmd160  6619af3566de003ed171bd9f3f2a0c216f47e99a \
-                    sha256  30146f96c26c2a4c6b742bc8a498993ec6ea9f289becaaf566866488600b2994
+sha256  30146f96c26c2a4c6b742bc8a498993ec6ea9f289becaaf566866488600b2994
 
 patchfiles          patch-config.h.diff \
                     patch-src-version.cc.in.diff

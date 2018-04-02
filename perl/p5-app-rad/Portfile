@@ -21,4 +21,4 @@ long_description    App::Rad aims to be a simple yet powerful framework for \
                     common command-line tasks.
 
 checksums           rmd160 c36d179100d8936fd0c35589010ba3b44950a7e1 \
-                    sha256 287028adb3b651841008620c6138c46a8fbd813fa9f70127efad00a2993457d6
+sha256 287028adb3b651841008620c6138c46a8fbd813fa9f70127efad00a2993457d6

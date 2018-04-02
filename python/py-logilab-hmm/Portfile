@@ -22,8 +22,8 @@ livecheck.type      regex
 livecheck.regex     {logilab-hmm-(\d+(?:\.\d+)*)\.tar\.gz}
 
 checksums           md5     81f63768df022714e66f6d471245800a \
-                    sha1    6be2012ab3b7ed6ceac42b48a821f6e194c71f6f \
-                    rmd160  b62f3ac49e4d2681138e55490430c4bdfdf418f6
+sha1    6be2012ab3b7ed6ceac42b48a821f6e194c71f6f \
+rmd160  b62f3ac49e4d2681138e55490430c4bdfdf418f6
 
 python.versions 27 36
 

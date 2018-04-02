@@ -16,5 +16,5 @@ maintainers         geeklair.net:dluke openmaintainer
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  95ada91b3d1b730935b5929aa8febdddd3efa9d2 \
-                    sha256  25724cc54c59a3bfabadec95e72db292c98676bf3632497384e8dc6277936e11 \
+sha256  25724cc54c59a3bfabadec95e72db292c98676bf3632497384e8dc6277936e11 \
 size    119509

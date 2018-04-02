@@ -23,7 +23,7 @@ use_bzip2               yes
 use_parallel_build      yes
 
 checksums               sha1    418a38978bf8ebf4d8d7eb518dbcea9a01887217 \
-                        rmd160  45c7b659c87ca361e2a1f28537a041bd04c9422b
+rmd160  45c7b659c87ca361e2a1f28537a041bd04c9422b
 
 depends_lib             port:boost
 

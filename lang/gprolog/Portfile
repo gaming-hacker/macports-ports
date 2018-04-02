@@ -28,8 +28,8 @@ homepage	http://gprolog.inria.fr/
 master_sites	http://www.gprolog.org/
 
 checksums	\
-	sha1    658b0efa5d916510dcddbbd980d90bc4d43a6e58 \
-	rmd160  081ad0e6a2edd47de63db79ab1dc65a0e0d341da
+sha1    658b0efa5d916510dcddbbd980d90bc4d43a6e58 \
+rmd160  081ad0e6a2edd47de63db79ab1dc65a0e0d341da
 
 worksrcdir 	${name}-${version}/src
 

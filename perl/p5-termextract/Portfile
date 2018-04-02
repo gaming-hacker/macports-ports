@@ -18,7 +18,7 @@ license             Permissive
 
 master_sites        http://gensen.dl.itc.u-tokyo.ac.jp/soft/
 checksums           rmd160  3e0a959facb94021f6c02deb87759097773c2ce5 \
-                    sha256  5810ac304cd646efd39b5a4db2b52090fb7f300160589373afc091dbacd3285b
+sha256  5810ac304cd646efd39b5a4db2b52090fb7f300160589373afc091dbacd3285b
 
 distname            ${perl5.module}-[strsed ${perl5.moduleversion} {g/\./_/}]
 

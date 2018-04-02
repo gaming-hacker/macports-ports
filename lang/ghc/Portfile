@@ -39,11 +39,11 @@ distfiles       ${name}-${version}-src${extract.suffix} \
                 ${name}-${version}-testsuite${extract.suffix}
 
 checksums       ghc-7.8.3-src.tar.bz2 \
-                rmd160  464d31d924a8c1e23e94b3cae810c4e41dad4b75 \
-                sha256  2358826f8424bf571dcc313bd882422fe108a340d6e37db4339ff6d5d6ac3f37 \
+rmd160  464d31d924a8c1e23e94b3cae810c4e41dad4b75 \
+sha256  2358826f8424bf571dcc313bd882422fe108a340d6e37db4339ff6d5d6ac3f37 \
                 ghc-7.8.3-testsuite.tar.bz2 \
-                rmd160  abc39b71e2f3926b80c681428c447f39599d7d83 \
-                sha256  9cfef874adf5b895701ae52e507f07049a64246af120ac15200e7bf612521122
+rmd160  abc39b71e2f3926b80c681428c447f39599d7d83 \
+sha256  9cfef874adf5b895701ae52e507f07049a64246af120ac15200e7bf612521122
 
 depends_build   port:ghc-bootstrap \
                 port:libxslt

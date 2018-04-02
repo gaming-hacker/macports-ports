@@ -19,7 +19,7 @@ homepage            http://www.mrtg.org/
 master_sites        http://oss.oetiker.ch/mrtg/pub/
 
 checksums           rmd160  cea76ad3685375770520ebbccd0ad4b6adafff1f \
-                    sha256  5efa7fae8040159208472e5f889be5b41d8c8a2ea6b31616f0f75cc7f48d2365
+sha256  5efa7fae8040159208472e5f889be5b41d8c8a2ea6b31616f0f75cc7f48d2365
 
 depends_build       bin:perl:perl5
 

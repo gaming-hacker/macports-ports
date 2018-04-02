@@ -32,7 +32,7 @@ master_sites      sourceforge \
 use_bzip2         yes
 
 checksums         rmd160  f7bc0779687b288b076dcc52cc7988e244c4dbd4 \
-                  sha256  50b89367246ec2d51e9765bd6bd8c669e35ceb4ac5ab92636f76758a9f3f7fd1
+sha256  50b89367246ec2d51e9765bd6bd8c669e35ceb4ac5ab92636f76758a9f3f7fd1
 
 # We'll install gnucash's libraries in a separate subdir of
 # ${prefix}/lib, because gnucash sets DYLD_LIBRARY_PATH at runtime in
@@ -188,7 +188,7 @@ subport gnucash-devel {
     revision          0
 
     checksums           rmd160  6227bc00052b67ca7c609f56ef1b772ce64448fc \
-                        sha256  baa6bae13918da62be58fe09d904ccf38893607e57dae4eba53db4ff96ab61b3
+sha256  baa6bae13918da62be58fe09d904ccf38893607e57dae4eba53db4ff96ab61b3
 
     patchfiles        patch-devel-src_bin_environment.in.diff \
                       patch-devel-src_core-utils_gnc-path.c.diff

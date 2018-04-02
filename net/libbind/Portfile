@@ -23,4 +23,4 @@ homepage            http://www.isc.org/software/libbind/60
 master_sites        ftp://ftp.isc.org/isc/libbind/${version}/
 
 checksums           sha1 4664646238cd3602df168da1e9bc9591d3f566b2    \
-                    rmd160 bfafac89a455a05202763f6e10f292978085d811
+rmd160 bfafac89a455a05202763f6e10f292978085d811

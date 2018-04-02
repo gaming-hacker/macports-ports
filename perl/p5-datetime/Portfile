@@ -17,7 +17,7 @@ long_description    DateTime is a class for the representation of \
 platforms           darwin
 
 checksums           rmd160  b28e53578d21c4b83912697b7d4dfe55aa5f0072 \
-                    sha256  5005446eabed6ac96c93e40d284987f0fd1bbfd41a1a7dd5e2abe646dfd68c3e \
+sha256  5005446eabed6ac96c93e40d284987f0fd1bbfd41a1a7dd5e2abe646dfd68c3e \
 size    241461
 
 if {${perl5.major} != ""} {

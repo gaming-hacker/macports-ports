@@ -14,7 +14,7 @@ long_description    URI::Fetch is a class to intelligently fetch syndication fee
 platforms           darwin
 
 checksums           rmd160  2760d29016eb125e3760355c1c876df099d2a298 \
-                    sha256  0db061a05dc2b950d3468ddb2e8435ff0e891c1c2da618150a42835371ec8667
+sha256  0db061a05dc2b950d3468ddb2e8435ff0e891c1c2da618150a42835371ec8667
 
 if {${perl5.major} != ""} {
     depends_build-append \

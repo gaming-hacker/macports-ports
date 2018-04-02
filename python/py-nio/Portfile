@@ -26,8 +26,8 @@ distname            PyNIO-${version}
 master_sites        "https://www.earthsystemgrid.org/download/fileDownload.htm?logicalFileId=e328ec94-306e-11df-8e89-00c0f03d5b7c&dummy="
 
 checksums           md5     c881b552cf914549f46d65a61f2d8cb0 \
-                    sha1    288b70d83828e1cb99d3d7c61bd32b5c406c8b1a \
-                    rmd160  b33d00041783ba259ae95f772c7fde0cf37d7303
+sha1    288b70d83828e1cb99d3d7c61bd32b5c406c8b1a \
+rmd160  b33d00041783ba259ae95f772c7fde0cf37d7303
 
 python.versions 27 36
 

@@ -30,8 +30,8 @@ homepage            http://openil.sourceforge.net/
 master_sites        sourceforge:project/openil/DevIL/${version}
 distname            DevIL-${version}
 checksums           md5     7918f215524589435e5ec2e8736d5e1d \
-                    sha1    bc27e3e830ba666a3af03548789700d10561fcb1 \
-                    rmd160  a3cdb14fcca5e75ada240a53cbdc3e749a759da5
+sha1    bc27e3e830ba666a3af03548789700d10561fcb1 \
+rmd160  a3cdb14fcca5e75ada240a53cbdc3e749a759da5
 worksrcdir          devil-${version}
 
 depends_lib         port:lcms \

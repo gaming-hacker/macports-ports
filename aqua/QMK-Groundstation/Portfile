@@ -17,8 +17,8 @@ distname            ${name}-v${version}
 extract.suffix      .tgz
 
 checksums           md5     9b131ccbaebf6bfdd6c5aaf3094b0328 \
-                    sha1    ced3a82e50fd2c69abbda23d3d091e5d158e7f1f \
-                    rmd160  10de4f90afa99abbfa2638d8e09fa005a50a1579
+sha1    ced3a82e50fd2c69abbda23d3d091e5d158e7f1f \
+rmd160  10de4f90afa99abbfa2638d8e09fa005a50a1579
 
 worksrcdir          ${name}_${version}
 

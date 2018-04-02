@@ -22,7 +22,7 @@ distname            LabJackPython-4-24-2014
 supported_archs     noarch
 
 checksums           rmd160  b979efbf55b6d6bd36bac1a3181c46688a501fad \
-                    sha256  19251b028ff1185854f556cfecc8cbab0d5dcfb8e3a0ea54ca6e21dc9f9a78d6
+sha256  19251b028ff1185854f556cfecc8cbab0d5dcfb8e3a0ea54ca6e21dc9f9a78d6
 
 use_zip             yes
 

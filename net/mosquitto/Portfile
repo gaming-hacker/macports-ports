@@ -23,7 +23,7 @@ homepage            https://mosquitto.org
 master_sites        http://mosquitto.org/files/source/
 
 checksums           rmd160  d2438c8c3b2005265def411826961f94c9413b52 \
-                    sha256  7d3b3e245a3b4ec94b05678c8199c806359737949f4cfe0bf936184f6ca89a83 \
+sha256  7d3b3e245a3b4ec94b05678c8199c806359737949f4cfe0bf936184f6ca89a83 \
 size    368961
 
 depends_lib         path:lib/libcares.dylib:c-ares \

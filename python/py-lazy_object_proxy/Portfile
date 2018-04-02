@@ -22,7 +22,7 @@ master_sites        pypi:l/lazy-object-proxy
 distname            lazy-object-proxy-${version}
 
 checksums           rmd160  cd76b5b288f3ce07d97c29cbd7efc0c33afc3461 \
-                    sha256  eb91be369f945f10d3a49f5f9be8b3d0b93a4c2be8f8a5b83b0571b8123e0a7a
+sha256  eb91be369f945f10d3a49f5f9be8b3d0b93a4c2be8f8a5b83b0571b8123e0a7a
 
 if {${name} ne ${subport}} {
     depends_build-append \

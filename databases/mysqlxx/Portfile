@@ -15,8 +15,8 @@ homepage	http://tangentsoft.net/mysql++/
 master_sites	http://tangentsoft.net/mysql++/releases/
 distname	mysql++-${version}
 checksums	md5 b977bbf671df08661c15cde051db1513 \
-		sha1 060d81dcf284732a4dc3f74b305f48ec8d12150f \
-		rmd160 686fc71773c3d828ed01374ba383e2d58ea5f370
+sha1 060d81dcf284732a4dc3f74b305f48ec8d12150f \
+rmd160 686fc71773c3d828ed01374ba383e2d58ea5f370
 
 depends_lib	port:gettext \
 		port:zlib

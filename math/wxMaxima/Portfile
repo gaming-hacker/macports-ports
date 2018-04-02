@@ -18,7 +18,7 @@ homepage        http://wxmaxima.sourceforge.net/
 master_sites    sourceforge:project/[string tolower ${name}]/${name}/${version}
 livecheck.regex (?:[string tolower ${name}]|${name})-(\[a-z0-9.\]+)${extract.suffix}
 checksums       rmd160  04295f10ccd074d7069d00b1a0fe41884817687c \
-                sha256  0005029798703470333309fda29c731e79c85de1c7fc09b16cb87045a03aa4ba
+sha256  0005029798703470333309fda29c731e79c85de1c7fc09b16cb87045a03aa4ba
 
 # Upstream changed the distname's spelling some time after 13.x.
 distname        wxmaxima-${version}

@@ -17,14 +17,14 @@ license             LGPL-2.1+
 # current version
 version             2.2.2
 checksums           rmd160  1299dac3a5c218b6aebd7471c6562a9ad7825edc \
-                    sha256  3d9b94183b19f04dd4317da87beedafd1c947142f3d861ca1f0224e7a75127ee
+sha256  3d9b94183b19f04dd4317da87beedafd1c947142f3d861ca1f0224e7a75127ee
 
 # previous version of guile that works well on PPC - was last at rev 1
 platform darwin powerpc {
     version             2.0.14
     revision            1
     checksums           rmd160  754aaf1bf3c6bed9afdde49c5154b87047408a1e \
-                        sha256  8aeb2f353881282fe01694cce76bb72f7ffdd296a12c7a1a39255c27b0dfe5f1
+sha256  8aeb2f353881282fe01694cce76bb72f7ffdd296a12c7a1a39255c27b0dfe5f1
 }
 
 # Failed to destroot guile:

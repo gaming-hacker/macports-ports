@@ -21,7 +21,7 @@ long_description    NFO Viewer is a simple viewer for NFO files, which are \
 homepage            https://otsaloma.io/nfoview/
 
 checksums           rmd160  3a31aa059ecaf905cf524dbb7799e87a35f22afe \
-                    sha256  2350dffc65d1c8b9818ed9a3d57998fa49614312df4686a0a1627770bbd72f17 \
+sha256  2350dffc65d1c8b9818ed9a3d57998fa49614312df4686a0a1627770bbd72f17 \
 size    83361
 
 python.default_version 36

@@ -14,6 +14,6 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  f7533ce6d63aabbb33a270f337a550694f203641 \
-                    sha256  6348ba03ff04d22330f05397d55ed26d4e40e921efcc207fa15fcbba87dcba1a
+sha256  6348ba03ff04d22330f05397d55ed26d4e40e921efcc207fa15fcbba87dcba1a
 
 # builds using embedded copy of libyaml source, no dependencies required

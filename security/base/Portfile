@@ -16,7 +16,7 @@ homepage            http://base.professionallyevil.com
 master_sites        sourceforge:secureideas
 
 checksums           rmd160  e66552039a806d09db40f1e7f363b2cd68cde064 \
-                    sha256  23910f5277ceb43398442074e444182941bf7f6da85efd84ecdd0cf62c4b8935
+sha256  23910f5277ceb43398442074e444182941bf7f6da85efd84ecdd0cf62c4b8935
 
 depends_run         port:gd2 \
                     port:adodb \

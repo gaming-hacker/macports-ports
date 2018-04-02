@@ -12,6 +12,6 @@ description         PEAR Net_UserAgent_Mobile_GPS package
 long_description    ${description}
 
 checksums           rmd160  07c8b141ffa2134226f19010889d5fadfaa99c61 \
-                    sha256  0818f7f14a8e075827fa14e44eab1a2794a7d3b75e7436238adb20755823b4b6
+sha256  0818f7f14a8e075827fa14e44eab1a2794a7d3b75e7436238adb20755823b4b6
 
 depends_lib-append  port:pear-Net_UserAgent_Mobile

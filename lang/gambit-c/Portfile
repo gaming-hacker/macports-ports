@@ -34,7 +34,7 @@ distname                gambit-v[strsed ${version} {g/\./_/}]-devel
 extract.suffix          .tgz
 
 checksums               rmd160  7e5651a91aafcbcbd4d551df87587fc0f56ea466 \
-                        sha256  5f765463e37e52a083f141d5b581ff1dd40aeeee43aa9b1cee5b9b46c017b31c
+sha256  5f765463e37e52a083f141d5b581ff1dd40aeeee43aa9b1cee5b9b46c017b31c
 
 # https://trac.macports.org/ticket/46013
 compiler.blacklist {clang < 600} *llvm-gcc-4.2

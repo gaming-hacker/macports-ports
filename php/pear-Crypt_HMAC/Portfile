@@ -12,4 +12,4 @@ description         PEAR Crypt_HMAC package
 long_description    ${description}
 
 checksums           rmd160  5a5eff1b901b851b54ca6a3c0538aa3305a408c9 \
-                    sha256  46cb241e3f53e329dbf0b224d7059a253ee9cf0d2702154fd1171d690b7aeed4
+sha256  46cb241e3f53e329dbf0b224d7059a253ee9cf0d2702154fd1171d690b7aeed4

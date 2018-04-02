@@ -20,7 +20,7 @@ long_description    XQF is a game server browser and launcher for \
                     etc.
 
 checksums           rmd160  bdeeebe3439038cc1c3afda2aed65efff3dabeb6 \
-                    sha256  25a47bae28ae22acce9839bacd39cf0b2e1b00feb1a9be9eab65740f2ad8ecfb
+sha256  25a47bae28ae22acce9839bacd39cf0b2e1b00feb1a9be9eab65740f2ad8ecfb
 
 depends_build       port:pkgconfig \
                     port:autoconf \

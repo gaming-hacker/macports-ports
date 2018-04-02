@@ -22,7 +22,7 @@ long_description    The Darwin Build Scripts are a collection of tools that assi
 homepage            https://macosforge.github.io/darwinbuild/
 
 checksums           rmd160  07fc93baeb10209b21d9aff843877556ba8b8f4f \
-                    sha256  2bb2e1458b6b9e3e6a189fb48e3cc0b72b7cb253607366b9ab6b92cdbac1e62b
+sha256  2bb2e1458b6b9e3e6a189fb48e3cc0b72b7cb253607366b9ab6b92cdbac1e62b
 
 # fix a 64 -> 32 bit implicit integer cast
 patchfiles-append   patch-darwinxref-plugins-register-64bit.diff

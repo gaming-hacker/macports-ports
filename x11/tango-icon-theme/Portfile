@@ -19,8 +19,8 @@ homepage        http://tango.freedesktop.org/Tango_Icon_Library
 master_sites    http://tango.freedesktop.org/releases/
 
 checksums           md5     b7b9b16480afb781a4c13f8bceb8688b \
-                    sha1    2cce3c86b8df05784a301564221661d909d58a10 \
-                    rmd160  6aecee3212d66f91bd57a3260d25c3ba5c49f847
+sha1    2cce3c86b8df05784a301564221661d909d58a10 \
+rmd160  6aecee3212d66f91bd57a3260d25c3ba5c49f847
 
 depends_build \
                 port:pkgconfig \

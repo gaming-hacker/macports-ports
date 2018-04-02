@@ -12,6 +12,6 @@ description         PEAR Services_Yahoo_JP package
 long_description    ${description}
 
 checksums           rmd160  a4af12486640801ca161e10c556c8a16be2381b1 \
-                    sha256  f7287650ac6b01705a05b4de8b0411af5fc612df13f43423445cef9826d421b7
+sha256  f7287650ac6b01705a05b4de8b0411af5fc612df13f43423445cef9826d421b7
 
 depends_lib-append  port:pear-Services_Yahoo

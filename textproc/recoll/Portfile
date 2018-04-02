@@ -19,7 +19,7 @@ homepage            http://www.lesbonscomptes.com/${name}
 master_sites        ${homepage}
 
 checksums           rmd160  ac53ac320a6126e895104a78d1cd9b0baeeae283 \
-                    sha256  66f039f08b149d5e4840664d4a636f6b55145b02072f87aab83282ebe0cd593a
+sha256  66f039f08b149d5e4840664d4a636f6b55145b02072f87aab83282ebe0cd593a
 
 depends_build       port:bison
 

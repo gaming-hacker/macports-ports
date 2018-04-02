@@ -17,8 +17,8 @@ master_sites        googlecode
 use_bzip2           yes
 
 checksums           md5     355c8e23157b4248e9de241393addb1f \
-                    sha1    2e5a3de3ad7f0070f81ffd122c275b9729833ddc \
-                    rmd160  072240b32ea1b485108a4bf422dcbdcb94eeb6ef
+sha1    2e5a3de3ad7f0070f81ffd122c275b9729833ddc \
+rmd160  072240b32ea1b485108a4bf422dcbdcb94eeb6ef
 
 use_configure       no
 

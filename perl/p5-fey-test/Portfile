@@ -17,7 +17,7 @@ long_description    This module is only useful for testing p5-fey and any \
                     explicitly.
 
 checksums           rmd160  28cb1e6c717f0acf869d8f9302aa4ef6a042fef7 \
-                    sha256  9d048678b0ce4ae784e761444858b33adbd214a03c774a7d20d54aec2900ae0d
+sha256  9d048678b0ce4ae784e761444858b33adbd214a03c774a7d20d54aec2900ae0d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

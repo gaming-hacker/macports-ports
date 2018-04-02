@@ -19,7 +19,7 @@ long_description    Pygit2 is a set of Python bindings to the libgit2 shared \
                     library, libgit2 implements the core of Git.
 
 checksums           rmd160  8eb7da0d01c4690c9a78d68f0d3218b5416521f4 \
-                    sha256  b40164b3a12d6e9e850713e4b97c1f923bbeb168c6b98dfab87bcb6f467ba671 \
+sha256  b40164b3a12d6e9e850713e4b97c1f923bbeb168c6b98dfab87bcb6f467ba671 \
 size    467840
 
 python.versions 27 36

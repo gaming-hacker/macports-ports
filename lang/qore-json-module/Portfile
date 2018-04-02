@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-json/releases/download/v${version}
 
 checksums           md5 c0d413a589e8b8033d3d2f4a3e3181fa \
-                    sha1 d57041166648d8a6b2083e129e5bde6cda8a870d \
-                    rmd160 3e230f7c9e0fed96db0ad707a24af74c514a0411
+sha1 d57041166648d8a6b2083e129e5bde6cda8a870d \
+rmd160 3e230f7c9e0fed96db0ad707a24af74c514a0411
 
 depends_lib         port:qore \
                     path:lib/libssl.dylib:openssl

@@ -16,7 +16,7 @@ long_description    Clam AntiVirus is an anti-virus toolkit for UNIX. \
 platforms           darwin
 
 checksums           md5     737ea1c041d9312cdcfe5b85eb45428e \
-                    sha1    ee5fe9ae950c7c420ca58760f66b2be5f700e20c
+sha1    ee5fe9ae950c7c420ca58760f66b2be5f700e20c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

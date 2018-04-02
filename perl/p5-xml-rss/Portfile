@@ -19,7 +19,7 @@ long_description    This module was created to help those who need to manage \
 platforms           darwin
 
 checksums           rmd160  facde6a8b7f15328bedcd8723953a189c2548c88 \
-                    sha256  4b3359878bb1a2bc06dae7ed17b00143a2b89c814b8b12f6e2780f35b1528677 \
+sha256  4b3359878bb1a2bc06dae7ed17b00143a2b89c814b8b12f6e2780f35b1528677 \
 size    130871
 
 if {${perl5.major} != ""} {

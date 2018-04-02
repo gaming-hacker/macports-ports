@@ -23,7 +23,7 @@ homepage            http://www.semicomplete.com/projects/grok/
 master_sites        http://semicomplete.googlecode.com/files/
 
 checksums           rmd160  99a79d67fbb5c163df58d68ce7b1903e7766c3e6 \
-                    sha256  3362857a03115029df76c3a3f0587b2ed1f9977f963bb1bd701e2bf59ad701c8
+sha256  3362857a03115029df76c3a3f0587b2ed1f9977f963bb1bd701e2bf59ad701c8
 
 depends_build       port:bison \
                     port:flex \

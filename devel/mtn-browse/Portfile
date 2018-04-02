@@ -24,7 +24,7 @@ homepage            http://www.coosoft.plus.com/software.html
 master_sites        sourceforge:mtn-browse
 
 checksums           rmd160  abdfef1bc211c8ff02666c13d7ac93dd7bb3cad7 \
-                    sha256  c14ffaf742ccdc47dad7ad98f2bf93cf01f6a00bfce6ce4c020227b41006a90d
+sha256  c14ffaf742ccdc47dad7ad98f2bf93cf01f6a00bfce6ce4c020227b41006a90d
 
 depends_lib         port:p${perl5.major}-gnome2 \
                     port:p${perl5.major}-gtk2-gladexml \

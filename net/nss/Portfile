@@ -30,7 +30,7 @@ master_sites        https://ftp.mozilla.org/pub/mozilla.org/security/nss/release
                     ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/${my_release}/src/
 
 checksums           rmd160  fedc797df5be2dce8ef391197e0c27d2dbe6fe07 \
-                    sha256  a33cc7b8299b5ce3acf03f617c7896932ae26927ff9fb7c71c1b69a200c30095 \
+sha256  a33cc7b8299b5ce3acf03f617c7896932ae26927ff9fb7c71c1b69a200c30095 \
 size    23025578
 
 depends_lib     port:nspr \

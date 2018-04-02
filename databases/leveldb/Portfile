@@ -23,7 +23,7 @@ description         A fast and lightweight key/value database library by Google
 long_description    A fast and lightweight key/value database library by Google
 
 checksums           rmd160  dd72b89d356031709df9a41da2c31ea2e093361d \
-                    sha256  154d804980d92b08d08dafff8e937ad79a45ef0fe87c9f5d69ea74690f85a933 \
+sha256  154d804980d92b08d08dafff8e937ad79a45ef0fe87c9f5d69ea74690f85a933 \
 size    223200
 
 depends_lib         port:snappy \

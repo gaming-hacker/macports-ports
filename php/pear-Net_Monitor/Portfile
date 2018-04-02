@@ -12,4 +12,4 @@ description         PEAR Net_Monitor package
 long_description    ${description}
 
 checksums           rmd160  e981db2be6d79ecf13243acece2567d71d1d9f9e \
-                    sha256  4d8f86ffdc97ec52bf73a2996fb0d231aa3d88c3b9f589037d786556a8adf430
+sha256  4d8f86ffdc97ec52bf73a2996fb0d231aa3d88c3b9f589037d786556a8adf430

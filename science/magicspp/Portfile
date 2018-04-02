@@ -21,7 +21,7 @@ homepage            http://software.ecmwf.int/wiki/display/MAGP/Magics
 master_sites        https://software.ecmwf.int/wiki/download/attachments/3473464/
 distname            Magics-${version}-Source
 checksums           rmd160  61cf8e0f7256e6f48457213da967de06298a1eae \
-                    sha256  38487562e83c0470f94d9c7fb9418cbadf92f1e643033237baba2abdc77e6238
+sha256  38487562e83c0470f94d9c7fb9418cbadf92f1e643033237baba2abdc77e6238
 long_description \
     Magics++ is the latest generation of the ECMWF's Meteorological plotting \
     software MAGICS (Meteorological Applications Graphics Integrated Colour System) \

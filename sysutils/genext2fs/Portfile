@@ -13,5 +13,5 @@ homepage            http://genext2fs.sourceforge.net/
 master_sites        sourceforge
 
 checksums           md5     b7b6361bcce2cedff1ae437fadafe53b \
-                    sha1    9ace486ee1bad0a49b02194515e42573036f7392 \
-                    rmd160  f5440c283118a8c727ea6512356edeb44b561dd4
+sha1    9ace486ee1bad0a49b02194515e42573036f7392 \
+rmd160  f5440c283118a8c727ea6512356edeb44b561dd4

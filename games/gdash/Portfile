@@ -19,7 +19,7 @@ long_description    ${name} is an ${description}.
 bitbucket.tarball_from  downloads
 
 checksums           rmd160  bbd4a7486d04294b0ded8bac51567949e360b1b6 \
-                    sha256  7d4bc188d26b6cfce2c94c17dada22282a7108482c5a0f87d37f6ac6db76298e \
+sha256  7d4bc188d26b6cfce2c94c17dada22282a7108482c5a0f87d37f6ac6db76298e \
 size    6218089
 
 depends_build       port:pkgconfig

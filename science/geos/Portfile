@@ -24,7 +24,7 @@ master_sites        http://download.osgeo.org/geos/
 use_bzip2           yes
 
 checksums           rmd160  6efa217f1bfe5bb4a3de82e1899a97b3a8c90b9e \
-                    sha256  045a13df84d605a866602f6020fc6cbf8bf4c42fb50de237a08926e1d7d7652a
+sha256  045a13df84d605a866602f6020fc6cbf8bf4c42fb50de237a08926e1d7d7652a
 
 compiler.blacklist  llvm-gcc-4.2 macports-llvm-gcc-4.2
 

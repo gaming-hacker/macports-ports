@@ -27,7 +27,7 @@ livecheck.name              geomview
 livecheck.distname          ${name}
 
 checksums                   rmd160  5e95e2c308bc8019d0588ab689bbbc05371e7469 \
-                            sha256  6514f66d157a0ae33d00f17ff6f7cecb844e605c424dce6d22f2fe62c4b939f4
+sha256  6514f66d157a0ae33d00f17ff6f7cecb844e605c424dce6d22f2fe62c4b939f4
 
 patchfiles                  patch-wrappers.c.diff
 depends_lib                 port:geomview \

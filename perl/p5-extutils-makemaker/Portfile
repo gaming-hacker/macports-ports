@@ -14,7 +14,7 @@ long_description    This utility is designed to write a Makefile for an \
 platforms           darwin
 
 checksums           rmd160  631856e14797c64b150d49da0cf64f3363e03a57 \
-                    sha256  95f1eb44de480d00b28d031b574ec868f7aeeee199eb5abe5666f6bcbbf68480 \
+sha256  95f1eb44de480d00b28d031b574ec868f7aeeee199eb5abe5666f6bcbbf68480 \
 size    471349
 
 perl5.link_binaries no

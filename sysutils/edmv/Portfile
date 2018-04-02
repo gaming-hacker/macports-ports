@@ -17,7 +17,7 @@ long_description        edmv allows you to interactively rename files with the \
                         editor of your choice.
 
 checksums               rmd160  ceefdd6db98ecb69a612d368de3f8d6577e1e066 \
-                        sha256  8fbe7efc519f291f936aa001f3960dec56b6149c8fed06402a504ae993d1ce31
+sha256  8fbe7efc519f291f936aa001f3960dec56b6149c8fed06402a504ae993d1ce31
 
 python.default_version  35
 homepage                https://github.com/casey/edmv

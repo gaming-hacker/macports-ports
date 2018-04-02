@@ -18,8 +18,8 @@ long_description \
 homepage        http://www.zorba-xquery.com/
 
 checksums       md5     68435be7b5be3c7006d524d14f3f7801 \
-                sha1    6df7b12072359878052253f8ccc783fa72d751fc \
-                rmd160  2dd8ebb5f312e4bf431a2e1bbc342ddfa3f9c518
+sha1    6df7b12072359878052253f8ccc783fa72d751fc \
+rmd160  2dd8ebb5f312e4bf431a2e1bbc342ddfa3f9c518
 
 depends_lib-append \
     port:zorba

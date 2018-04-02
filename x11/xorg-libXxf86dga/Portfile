@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXxf86dga-${version}
 checksums           sha1    51f2fc8d5d5fb398cf3c66735789feadb9aaeba9 \
-                    rmd160  e34a3a3c1e15d2de2eb8e698fc5c244718b08700 \
-                    sha256  8eecd4b6c1df9a3704c04733c2f4fa93ef469b55028af5510b25818e2456c77e
+rmd160  e34a3a3c1e15d2de2eb8e698fc5c244718b08700 \
+sha256  8eecd4b6c1df9a3704c04733c2f4fa93ef469b55028af5510b25818e2456c77e
 
 use_bzip2   yes
 use_parallel_build      yes

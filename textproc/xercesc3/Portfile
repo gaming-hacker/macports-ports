@@ -27,7 +27,7 @@ configure.args      --disable-silent-rules \
                     --enable-msgloader-icu \
                     --with-icu=${prefix}
 checksums           rmd160  f84f162e1c2aec468815b9e63d7a8626483a67b9 \
-                    sha256  a36b6e162913ec218cfb84772d2535d43c3365355a601d45d4b8ce11f0ece0da
+sha256  a36b6e162913ec218cfb84772d2535d43c3365355a601d45d4b8ce11f0ece0da
 
 platforms           darwin
 

@@ -18,7 +18,7 @@ description             PHP bindings for libssh2
 long_description        ${description}
 
 checksums               rmd160  2f1464dfa7c5d3d114f4354a10ba03958e3f2a6f \
-                        sha256  cb2cb8ab840b5b36bcd8a8df06ea4a970a61e4cb3980f3c0ac5c913522e6c1be
+sha256  cb2cb8ab840b5b36bcd8a8df06ea4a970a61e4cb3980f3c0ac5c913522e6c1be
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:libssh2

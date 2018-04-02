@@ -19,7 +19,7 @@ license             {GPL-2 LGPL-2.1}
 
 master_sites        ${homepage}
 checksums           rmd160  45230dbbbd50adc8e862e635570eb11048859add \
-                    sha256  6015dca576f65550fa073ebe45b62a51fa4c2180604a076b1bc98078ac9f8799
+sha256  6015dca576f65550fa073ebe45b62a51fa4c2180604a076b1bc98078ac9f8799
 
 distname            opal-${version}
 

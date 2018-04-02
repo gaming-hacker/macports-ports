@@ -21,7 +21,7 @@ long_description    This package provides script level access to the Bonjour \
                     service name resolution, and service registration.
 
 checksums           rmd160  f7e080c9d5d1800e98174d8184e9a8257f3b0a56 \
-                    sha256  c2daee6da55c6d8e703a3c6f204a4b3b366bc968dd1fac8055fc8154de777df4
+sha256  c2daee6da55c6d8e703a3c6f204a4b3b366bc968dd1fac8055fc8154de777df4
 
 depends_build       port:tcllib
 depends_lib         port:tcl

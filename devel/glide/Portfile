@@ -19,7 +19,7 @@ depends_build       port:go
 use_configure       no
 
 checksums           rmd160  f31c2c0a192484b0c44245d002a06efbb382123c \
-                    sha256  6092afe0fdfe6c362e68ad6224bef2b133ac288c6a9ba6b3138efddfa6deb2ad
+sha256  6092afe0fdfe6c362e68ad6224bef2b133ac288c6a9ba6b3138efddfa6deb2ad
 
 worksrcdir          ${workpath}/src/github.com/Masterminds/glide
 post-extract {

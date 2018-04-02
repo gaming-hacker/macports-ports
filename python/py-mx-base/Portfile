@@ -23,7 +23,7 @@ master_sites        http://www.egenix.com/files/python/
 distname            egenix-mx-base-${version}
 
 checksums           rmd160  a405fddd6cbe7b936ad87482083276b7f3700db5 \
-                    sha256  0da55233e45bc3f88870e62e60a79c2c86bad4098b8128343fd7be877f44a3c0
+sha256  0da55233e45bc3f88870e62e60a79c2c86bad4098b8128343fd7be877f44a3c0
 
 python.versions 27 36
 python.default_version 27

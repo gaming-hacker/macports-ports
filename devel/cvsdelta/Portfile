@@ -19,7 +19,7 @@ long_description \
 homepage        http://cvsdelta.sourceforge.net
 master_sites	sourceforge
 checksums	sha1 8fbc7ad84da4c6a2f86041ea7c50b64cf147bbfd \
-		rmd160 b6689a4f8aabaebfcab68d39f8daf6ca62d46482
+rmd160 b6689a4f8aabaebfcab68d39f8daf6ca62d46482
 
 use_configure   no
 destroot {

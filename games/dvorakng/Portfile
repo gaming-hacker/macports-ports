@@ -16,8 +16,8 @@ master_sites        http://www.free.of.pl/n/nopik/
 use_bzip2           yes 
 
 checksums           md5 677b38d63103d405b47751ead03c5e63 \
-                    sha1 caede2cb699e5a30a1a306e6a3ecfa9d7d97a4f9 \
-                    rmd160 0e482a7af4f4983653b79b6c0cd109217e088959
+sha1 caede2cb699e5a30a1a306e6a3ecfa9d7d97a4f9 \
+rmd160 0e482a7af4f4983653b79b6c0cd109217e088959
 
 depends_lib         port:ncurses
 

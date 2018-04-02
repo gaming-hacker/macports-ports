@@ -29,7 +29,7 @@ depends_lib-append              port:jpeg \
                                 port:xrender
 
 checksums                       rmd160  aaa4f74933966ad409b3eda8e2356cb093353eaa \
-                                sha256  2ceace773af4770f1cc753a8ba21e875db1ec17c3ffd98efbf48aefee3ef417d
+sha256  2ceace773af4770f1cc753a8ba21e875db1ec17c3ffd98efbf48aefee3ef417d
 
 post-patch {
     reinplace "s|@VERSION@|${version}|" ${worksrcpath}/packaging/osx/Info.plist.in

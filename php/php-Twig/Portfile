@@ -21,6 +21,6 @@ long_description    Enhances the performance of the Twig runtime engine.
 homepage            https://twig.sensiolabs.org
 
 checksums           rmd160  340c869fbb55bb1280e0d43c1d11a20fe901e2b4 \
-                    sha256  b06a14be0dd0c414f1bbb28b99ef0a3d448dfb04553c6c2ac3798977d7b5ddbf
+sha256  b06a14be0dd0c414f1bbb28b99ef0a3d448dfb04553c6c2ac3798977d7b5ddbf
 
 use_parallel_build  yes

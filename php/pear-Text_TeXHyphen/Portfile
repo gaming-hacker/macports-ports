@@ -12,4 +12,4 @@ description         PEAR Text_TeXHyphen package
 long_description    ${description}
 
 checksums           rmd160  d08ae7c4b7616548831580d603514750c01ee334 \
-                    sha256  f4837b0dbe563a7c6ed2b8835b05ec9118998a65fedf7dcbd50b96a263b2056d
+sha256  f4837b0dbe563a7c6ed2b8835b05ec9118998a65fedf7dcbd50b96a263b2056d

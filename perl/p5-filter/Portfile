@@ -16,4 +16,4 @@ homepage            https://metacpan.org/release/${perl5.module}
 platforms           darwin
 
 checksums           rmd160  94b27bd1bf6d00cc9da50a26fc3e433bc2a6dfeb \
-                    sha256  6de91cb4cbfe08d0ccffbca39aed57f9237be602b8183f13fd163fc8cb657f3d
+sha256  6de91cb4cbfe08d0ccffbca39aed57f9237be602b8183f13fd163fc8cb657f3d

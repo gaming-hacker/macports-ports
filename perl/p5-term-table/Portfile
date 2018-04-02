@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  9d9bc5db8071e6a524a6a3d45d9febf8a23edf89 \
-                    sha256  4db6118fbf862bd32a8402e1ee28ce2044d0e0887ef29b726e917ab4258a063a
+sha256  4db6118fbf862bd32a8402e1ee28ce2044d0e0887ef29b726e917ab4258a063a
 
 if {${perl5.major} != ""} {
 # requires Test2::Tools::Tiny (from Test::Simple) version 1.302072

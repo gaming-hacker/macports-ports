@@ -12,4 +12,4 @@ description         PEAR Payment_DTA package
 long_description    ${description}
 
 checksums           rmd160  0d10dfaf4eb5777bc5c15a966f7007dc83c0f9dd \
-                    sha256  6d59be00f039439e3f248ef6302a061e534b4d392bfc47a54faef5071ba4aad4
+sha256  6d59be00f039439e3f248ef6302a061e534b4d392bfc47a54faef5071ba4aad4

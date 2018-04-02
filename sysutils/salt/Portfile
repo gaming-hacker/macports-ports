@@ -26,7 +26,7 @@ if {$subport eq $name} {
     categories              sysutils python
 
     checksums           rmd160  ddb1cbf6f26890360cc06592bb4ba17decf4b772 \
-                        sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
+sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
 
     notes    "Salt startupitems are installed by subports salt-minion, salt-master, salt-syndic, salt-api."
 

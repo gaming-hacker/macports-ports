@@ -17,7 +17,7 @@ master_sites        ftp://bourbon.usc.edu/pub/tgif/
 distname            tgif-QPL-${version}
 
 checksums           rmd160  e1d29c6a83f16e8d0204ecdb3bbb986bcb703260 \
-                    sha256  2f24e9fecafae6e671739bd80691a06c9d032bdd1973ca164823e72ab1c567ba
+sha256  2f24e9fecafae6e671739bd80691a06c9d032bdd1973ca164823e72ab1c567ba
 
 use_xmkmf           yes
 patchfiles          patch-Tgif.tmpl patch-Imakefile

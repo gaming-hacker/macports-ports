@@ -13,6 +13,6 @@ description         control over the flow of time
 long_description    ${description}
 
 checksums           rmd160  3adc06745c96083193cfb4f1b6320000933f3211 \
-                    sha256  df532cc935564b4305b2be5b30b8d0eb94e53a37cc093a9af8dd247fc703e7ff
+sha256  df532cc935564b4305b2be5b30b8d0eb94e53a37cc093a9af8dd247fc703e7ff
 
 universal_variant   no

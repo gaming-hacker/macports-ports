@@ -17,9 +17,9 @@ extract.suffix  .tgz
 worksrcdir      ${name}-${version}/src
 platforms       darwin
 checksums \
-    md5 9e8d506af9a9428dac09e8cd7bda7c1e \
-    sha1 00e6a4a8a331ccfde951966526c63b0f37c7d8f3 \
-    rmd160 f39fe98e3e215816b0af2089ab7ac460df5701b8
+md5 9e8d506af9a9428dac09e8cd7bda7c1e \
+sha1 00e6a4a8a331ccfde951966526c63b0f37c7d8f3 \
+rmd160 f39fe98e3e215816b0af2089ab7ac460df5701b8
 
 patchfiles-append patch-makefile.diff patch-glui.diff patch-glui_filebrowser.diff
 

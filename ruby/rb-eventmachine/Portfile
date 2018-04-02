@@ -22,6 +22,6 @@ homepage		    http://rubyeventmachine.com/
 categories-append   devel
 platforms           darwin
 checksums           md5     1379ea93ad77132fb3756b492025f172 \
-                    sha1    d9b3ec65e3e94e461ed2d53c01a2b9ab62fe6a07 \
-                    rmd160  625b4917e84d55fec468a810e9ee0bb5273387f0
+sha1    d9b3ec65e3e94e461ed2d53c01a2b9ab62fe6a07 \
+rmd160  625b4917e84d55fec468a810e9ee0bb5273387f0
 

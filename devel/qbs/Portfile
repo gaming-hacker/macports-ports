@@ -20,7 +20,7 @@ distname            qbs-src-${version}
 master_sites        https://download.qt.io/official_releases/qbs/${version}/
 
 checksums           rmd160  e04bc49e9fbfe91a717b92c1bea64ce7bf2699bf \
-                    sha256  38afae3b697b96e07d53cfc64dd03533fddec052ecdc08d8e7779440c36c3ecd
+sha256  38afae3b697b96e07d53cfc64dd03533fddec052ecdc08d8e7779440c36c3ecd
 
 qt5.depends_component qtscript
 

@@ -19,7 +19,7 @@ description         MooseX::Types::LaxNum - A LaxNum type which provides the loo
 long_description    ${description}
 
 checksums           rmd160 b5d10250c7397ff895a30955fec1fdaf73a4735f \
-                    sha256 48114404429e4d010e5bdf315d88cc2898d158c196a2567bc8e3805a9948b18f
+sha256 48114404429e4d010e5bdf315d88cc2898d158c196a2567bc8e3805a9948b18f
 
 if {${perl5.major} != ""} {
 depends_build-append \

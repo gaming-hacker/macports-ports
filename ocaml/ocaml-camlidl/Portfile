@@ -24,7 +24,7 @@ distname            ${realname}-${version}
 depends_build       port:ocaml
   
 checksums           rmd160 2b103dc407986fc29501fd2b2b41ec212b28dd10 \
-                    sha256 857ed5bd3b2f99c62813070e1a5b4b6375e837c6815f4ad956baeb6f8c660311
+sha256 857ed5bd3b2f99c62813070e1a5b4b6375e837c6815f4ad956baeb6f8c660311
 
 # disable warnings so that it build with OCaml 4.03
 # Gentoo fix:

@@ -13,6 +13,6 @@ description         PEAR HTTP_OAuth package
 long_description    ${description}
 
 checksums           rmd160  311382156cfc47cc05a107e2bad3e95f65b4bf63 \
-                    sha256  a121ba020eaf64396a0912ef23bd1689e7c9be54467399a3c19ba1bd8add2131
+sha256  a121ba020eaf64396a0912ef23bd1689e7c9be54467399a3c19ba1bd8add2131
 
 depends_lib-append  port:pear-HTTP_Request2

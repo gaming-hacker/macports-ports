@@ -21,8 +21,8 @@ long_description        ${description} Sourced from cplusplus.com and \
 platforms               darwin
 
 checksums \
-    rmd160  b0cd05b22836092ea419aae721666c65cb421364 \
-    sha256  8d4dd5b73dfe3a84a80bfd138ba5ccd3c07d7d7d8b5c98daac4ff715f02d6db8
+rmd160  b0cd05b22836092ea419aae721666c65cb421364 \
+sha256  8d4dd5b73dfe3a84a80bfd138ba5ccd3c07d7d7d8b5c98daac4ff715f02d6db8
 
 depends_lib-append \
     port:py${python.default_version}-beautifulsoup4 \

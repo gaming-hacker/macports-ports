@@ -12,6 +12,6 @@ description         PEAR DB_odbtp package
 long_description    ${description}
 
 checksums           rmd160  d495df5d4746e6fae166eea3253e76925bb37026 \
-                    sha256  0b412ee54bbdfae6329008b3cca6c64da03b777dbcba830fef3a28ec64f741cd
+sha256  0b412ee54bbdfae6329008b3cca6c64da03b777dbcba830fef3a28ec64f741cd
 
 depends_lib-append  port:pear-DB

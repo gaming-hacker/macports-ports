@@ -21,7 +21,7 @@ homepage            http://uncrustify.sourceforge.net/
 master_sites        sourceforge:project/uncrustify/uncrustify/uncrustify-${version}
 
 checksums           rmd160  8c0721f03a80858b27df9796353d2246eb4047e0 \
-                    sha256  b797ce656af925c708c464883b7718c557ab9d687ce5dc6cc9ebce32a8639279
+sha256  b797ce656af925c708c464883b7718c557ab9d687ce5dc6cc9ebce32a8639279
 
 extract.mkdir       yes
 

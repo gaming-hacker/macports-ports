@@ -18,7 +18,7 @@ long_description    FVWM 2.x is an extremely powerful ICCCM-compliant multiple \
                     virtual desktop window manager for the X Window system.
 
 checksums           rmd160  fc9bc32eebafe9bbf813ccfb218b001587e272d7 \
-                    sha256  01654d5abdcde6dac131cae9befe5cf6f01f9f7524d097c3b0f316e39f84ef73
+sha256  01654d5abdcde6dac131cae9befe5cf6f01f9f7524d097c3b0f316e39f84ef73
 
 depends_build-append    port:pkgconfig \
                         port:libxslt

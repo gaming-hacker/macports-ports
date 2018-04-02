@@ -18,7 +18,7 @@ master_sites        http://ftp.stack.nl/pub/users/dimitri/ \
 distfiles           Doxygen-${version}.dmg
 
 checksums           rmd160  75b2a8a44f619b402c66352afd2ecd8974d00c7d \
-                    sha256  3fa2327580ddbfdbcfd2925c63a1b1e4ae05227b2771542a555d546da64ea517
+sha256  3fa2327580ddbfdbcfd2925c63a1b1e4ae05227b2771542a555d546da64ea517
 
 use_configure       no
 supported_archs     noarch

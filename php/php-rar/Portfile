@@ -20,7 +20,7 @@ long_description    ${description}
 homepage            http://www.php.net/rar
 
 checksums           rmd160  f5e499ee75d435272410468292e129370602004c \
-                    sha256  37841aea7c91afe2a250afc28bcdc7d6807f8aa3a2411a1c121f17252f66f21d
+sha256  37841aea7c91afe2a250afc28bcdc7d6807f8aa3a2411a1c121f17252f66f21d
 
 patchfiles          patch-config.m4.diff
 

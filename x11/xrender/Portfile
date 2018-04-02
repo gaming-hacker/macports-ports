@@ -18,7 +18,7 @@ distname			${my_name}-${version}
 use_bzip2			yes
 
 checksums           rmd160  1b6641020018942209d48a85b103b8df9c6c4f9e \
-                    sha256  c06d5979f86e64cabbde57c223938db0b939dff49fdb5a793a1d3d0396650949
+sha256  c06d5979f86e64cabbde57c223938db0b939dff49fdb5a793a1d3d0396650949
 
 depends_build \
 	port:pkgconfig

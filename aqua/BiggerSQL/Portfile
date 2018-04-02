@@ -29,8 +29,8 @@ master_sites    ${homepage}
 use_dmg			yes
 
 checksums		md5     9fcaec183ecf9f147c9b902ce65af793 \
-				sha1    e0d4c44874b46ecea48cd2559e2fd19cfb36bf3e \
-				rmd160  33d11bc835d2c74eddfc9fb4898c1bcb4b959d51
+sha1    e0d4c44874b46ecea48cd2559e2fd19cfb36bf3e \
+rmd160  33d11bc835d2c74eddfc9fb4898c1bcb4b959d51
 
 worksrcdir		${worksrcdir}/${name} Source
 

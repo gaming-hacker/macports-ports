@@ -17,7 +17,7 @@ homepage            http://jmvdveer.home.xs4all.nl/algol.html
 master_sites        http://jmvdveer.home.xs4all.nl/
 
 checksums           rmd160  7dec7b8e81efae5261c8b1fd0abaa1ca18e5faf0 \
-                    sha256  bd499f90576a8d86008316f55e026e08abe2c9bda930e7a00cd0bec5b2b2dc44
+sha256  bd499f90576a8d86008316f55e026e08abe2c9bda930e7a00cd0bec5b2b2dc44
 
 depends_lib         port:gsl port:readline port:ncurses
 

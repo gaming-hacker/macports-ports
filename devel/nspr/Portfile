@@ -18,7 +18,7 @@ master_sites        http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${vers
                     ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${version}/src/
 
 checksums           rmd160  b29350e8e4a551e5c680562c3c98219f19567738 \
-                    sha256  2ed95917fa2277910d1d1cf36030607dccc0ba522bba08e2af13c113dcd8f729 \
+sha256  2ed95917fa2277910d1d1cf36030607dccc0ba522bba08e2af13c113dcd8f729 \
 size    1139967
 
 worksrcdir          ${worksrcdir}/nspr

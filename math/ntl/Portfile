@@ -17,8 +17,8 @@ long_description NTL is a high-performance, portable C++ library providing\
 homepage		http://shoup.net/ntl/
 master_sites    ${homepage}
 checksums       md5 0aac5c680eee09a19732e1601b237a0b \
-                sha1 0250461a5e205663f7e446211c9571b6aad249e9 \
-                rmd160 5657f4f3b18281787b85f561b184c757254f656f
+sha1 0250461a5e205663f7e446211c9571b6aad249e9 \
+rmd160 5657f4f3b18281787b85f561b184c757254f656f
 
 depends_build   path:bin/perl:perl5
 

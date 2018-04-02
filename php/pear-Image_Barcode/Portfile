@@ -12,4 +12,4 @@ description         PEAR Image_Barcode package
 long_description    ${description}
 
 checksums           rmd160  45f6b0975d053155455778e9e3e25da2d573cca5 \
-                    sha256  6a41007d81bf9f64faa40c5b769d9205eae718d68cbef384cc920fa5183a7ca8
+sha256  6a41007d81bf9f64faa40c5b769d9205eae718d68cbef384cc920fa5183a7ca8

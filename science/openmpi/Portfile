@@ -27,7 +27,7 @@ master_sites        http://www.open-mpi.org/software/${subdir} \
                     http://icl.cs.utk.edu/open-mpi/${subdir}
 
 checksums           rmd160  8f6c2e503235f2ce227dd31db4ecf810eb468d0c \
-                    sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
+sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
 use_bzip2           yes
 
 livecheck.type      regex
@@ -49,7 +49,7 @@ if {[string first "-devel" $subport] > 0} {
                         http://www.open-mpi.de/nightly/master
 
     checksums           rmd160  4e7144ec561ebef4c6e230459d082f960b7784e0 \
-                        sha256  33ecc0fbf17048c873db23c52a8a7ccb5209ab45782fe1426db0611271431f9c
+sha256  33ecc0fbf17048c873db23c52a8a7ccb5209ab45782fe1426db0611271431f9c
 
     livecheck.version   ${newrev}-${tag}
     livecheck.url       [lindex ${master_sites} 0]

@@ -21,7 +21,7 @@ long_description                ${name} provides ${description}. It goes \
                                 languages other than C.
 
 checksums                       rmd160  4158804882b58a00738a65f0f6f4d8b08bf6eeaa \
-                                sha256  0331f48efaae40af21b23cf286fd7eac0ea0a249d08fd97bf23246929c0ea71a
+sha256  0331f48efaae40af21b23cf286fd7eac0ea0a249d08fd97bf23246929c0ea71a
 
 depends_build-append            port:pkgconfig
 

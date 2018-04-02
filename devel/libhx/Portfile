@@ -33,7 +33,7 @@ distname            libHX-${version}
 use_xz              yes
 
 checksums           rmd160  2c704f7b9a1723d0a2bf5baab545d95109ea2a4d \
-                    sha256  68287508eda091d822f2599aadab4eb362f8be4349d471b7c39ac209fcaecb4e
+sha256  68287508eda091d822f2599aadab4eb362f8be4349d471b7c39ac209fcaecb4e
 
 patchfiles          patch-src-Makefile.in.diff
 

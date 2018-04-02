@@ -19,8 +19,8 @@ platforms               darwin
 master_sites            sourceforge:php-mode
 distname                php-mode-${version}
 checksums               md5     6ddad6d150c946846a65bcecfb2cc1a0 \
-                        sha1    e559396eb0e4e47c1de8022612e820ee3e86892e \
-                        rmd160  012155b894cb8eedf83aa5f7a061c2377bb574c5
+sha1    e559396eb0e4e47c1de8022612e820ee3e86892e \
+rmd160  012155b894cb8eedf83aa5f7a061c2377bb574c5
 
 # We want emacs from MacPorts since this will install stuff in emacs' site-lisp and we want
 # it to go into ${prefix}'s site-lisp.

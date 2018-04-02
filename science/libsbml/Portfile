@@ -25,7 +25,7 @@ patchfiles          patch-python-mp.diff
 distname            libSBML-${version}-Source
 
 checksums           rmd160  e331901fdc87a733cdc113e83b1d3eaa27a76538 \
-                    sha256  4a2114ce1b48ff19f9be088ce75be57d54c262541a464775929e1cc66e9c943b
+sha256  4a2114ce1b48ff19f9be088ce75be57d54c262541a464775929e1cc66e9c943b
 
 depends_lib-append  port:bzip2 \
                     port:zlib \

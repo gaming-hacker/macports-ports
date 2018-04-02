@@ -26,11 +26,11 @@ distfiles-append \
                 ${name}-doc-${version}${extract.suffix}
 
 checksums       ${distname}${extract.suffix} \
-                rmd160  425ca8723443bcd45c23d33df26e13b930b2ce42 \
-                sha256  316524ea444e53208a2fb90eeb676af755da96e1417835ba5f5eb719c81fa371 \
+rmd160  425ca8723443bcd45c23d33df26e13b930b2ce42 \
+sha256  316524ea444e53208a2fb90eeb676af755da96e1417835ba5f5eb719c81fa371 \
                 ${name}-doc-${version}${extract.suffix} \
-                rmd160  f0937514b2eaff60cdeca60b7dc1e86b07bf1e09 \
-                sha256  9bc38a3015717279a3a0620efb2d4bcace430077241ae2b0da609ba67d8340bc
+rmd160  f0937514b2eaff60cdeca60b7dc1e86b07bf1e09 \
+sha256  9bc38a3015717279a3a0620efb2d4bcace430077241ae2b0da609ba67d8340bc
 
 supported_archs noarch
 use_configure   no

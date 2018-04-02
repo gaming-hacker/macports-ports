@@ -21,7 +21,7 @@ long_description    \
     (definition lists, link notation, etc.).
 
 checksums           rmd160  2b9b7cce3a81dd20971823cb401f5894e3498c92 \
-                    sha256  82df6fd4a3aa91734866710d2811a6387e50a7513fc528ce6c7d95ee7ad7f41e
+sha256  82df6fd4a3aa91734866710d2811a6387e50a7513fc528ce6c7d95ee7ad7f41e
 
 depends_run-append  port:rb-mustache \
                     port:rb-rdiscount \

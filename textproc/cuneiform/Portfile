@@ -26,7 +26,7 @@ distname                ${name}-linux-${version}
 use_bzip2               yes
 
 checksums               sha1    b78ebcf987c4792c360f23bdbe054d554ce2251c \
-                        rmd160  bc23f83103316ce635635899cf6d4d797edefc45
+rmd160  bc23f83103316ce635635899cf6d4d797edefc45
 
 depends_lib             port:ImageMagick
 

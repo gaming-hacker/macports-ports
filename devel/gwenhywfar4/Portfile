@@ -41,7 +41,7 @@ conflicts-delete  $subport
     set release             206
 
     checksums           rmd160  1e0ed3b99e05afe15988987cc165c42edc35b7cf \
-                        sha256  6915bba42d8b7f0213cee186a944296e5e5e97cdbde5b539a924261af03086ca
+sha256  6915bba42d8b7f0213cee186a944296e5e5e97cdbde5b539a924261af03086ca
 #}
 
 subport gwenhywfar4-gtk {}

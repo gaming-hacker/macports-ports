@@ -21,8 +21,8 @@ master_sites    ftp://space.mit.edu/pub/davis/${name}/
 use_bzip2       yes
 
 checksums       md5 4c42abfc8d3ace1b0e0062ea021a5917 \
-                sha1 de9fe30ae405c32f8424f10571839519a25f3043 \
-                rmd160 759525e5c914f474d7188890cec65bca1fe1b024
+sha1 de9fe30ae405c32f8424f10571839519a25f3043 \
+rmd160 759525e5c914f474d7188890cec65bca1fe1b024
 
 depends_lib     port:slang2
 

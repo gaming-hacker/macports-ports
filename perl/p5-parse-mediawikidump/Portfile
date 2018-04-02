@@ -18,8 +18,8 @@ long_description    Parse::MediaWikiDump is a collection of classes for processi
 platforms           darwin
 
 checksums           md5     557853120891228cfc541080725bbcc5 \
-                    sha1    da33c873909174b3811dfb51c50226c10adc4dec \
-                    rmd160  2c8671d7850f28e1e000d5e9deb444db5cdccb75
+sha1    da33c873909174b3811dfb51c50226c10adc4dec \
+rmd160  2c8671d7850f28e1e000d5e9deb444db5cdccb75
 
 if {${perl5.major} != ""} {
     depends_lib-append \

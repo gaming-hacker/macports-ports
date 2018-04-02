@@ -21,7 +21,7 @@ distname            Keka-${version}-source
 use_7z              yes
 
 checksums           rmd160  39b2ede991526940dc9169d1aaef17541ac4e1e9 \
-                    sha256  2f52bbb095baa858b3273d851de5cc25a4470351bdfe675b2d5b997e3145c2c4
+sha256  2f52bbb095baa858b3273d851de5cc25a4470351bdfe675b2d5b997e3145c2c4
 
 depends_lib         port:p7zip
 

@@ -22,8 +22,8 @@ master_sites \
 	http://mirror.ifarchive.org/if-archive/programming/adrift/ \
 	http://www.ifarchive.org/if-archive/programming/adrift/
 checksums		md5	5312c6d43e72c9b2800742b272901f9d \
-			sha1	9890691b1bb640baa1d4d74df9d4f990f3804273 \
-			rmd160	e1def469fa1696658cc783cb0ded7244a6e05b77
+sha1	9890691b1bb640baa1d4d74df9d4f990f3804273 \
+rmd160	e1def469fa1696658cc783cb0ded7244a6e05b77
 
 use_configure		no
 build.target		scare

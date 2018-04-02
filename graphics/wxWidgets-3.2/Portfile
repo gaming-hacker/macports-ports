@@ -29,7 +29,7 @@ long_description    wxWidgets ${branch} is an open-source cross-platform C++ \
 homepage            http://www.wxwidgets.org/
 
 checksums           rmd160  2fa5164dad43063274e72cc13626fdb90107a8a7 \
-                    sha256  8268f9ee24f37556b5ee6642801b121a85e053390eeab07ffc250a49dbc346cc \
+sha256  8268f9ee24f37556b5ee6642801b121a85e053390eeab07ffc250a49dbc346cc \
 size    20042631
 
 dist_subdir         wxWidgets/${version}

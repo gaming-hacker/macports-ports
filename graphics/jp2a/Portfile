@@ -17,7 +17,7 @@ size. You know you want it.
 homepage            https://csl.name/jp2a/
 
 checksums           rmd160 ee67953048f08ff025795530d7ba19ad048d5550 \
-                    sha256 9474fa924cbb48fba6ba69f2127c9dca3d22239699eeba75faf2fd40f8b47438
+sha256 9474fa924cbb48fba6ba69f2127c9dca3d22239699eeba75faf2fd40f8b47438
 
 depends_lib         port:curl port:jpeg port:ncurses
 

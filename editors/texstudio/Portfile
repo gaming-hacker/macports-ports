@@ -18,7 +18,7 @@ long_description        TeXstudio is a TeX editor forked off Texmaker.
 homepage                https://www.texstudio.org/
 
 checksums               rmd160  27e6edcd4d27b24d5b98e7339d1504b2bad6265d \
-                        sha256  e61e6d1436c394c5e99ed78e03da060147cc1e7318faad3a8cc47aeebdb78e0d
+sha256  e61e6d1436c394c5e99ed78e03da060147cc1e7318faad3a8cc47aeebdb78e0d
 
 depends_lib-append      port:poppler-qt5 port:qt5-qtbase port:qt5-qtsvg port:qt5-qtscript
 

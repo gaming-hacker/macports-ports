@@ -17,6 +17,6 @@ long_description    Digest::SHA is a complete implementation of the NIST Secure 
 platforms           darwin
 
 checksums           rmd160  76f594d9ed6200dd6aed839983b78875787fb468 \
-                    sha256  2d5292d3dd1c1a463ca6efefad016e256d28a1338f203d639b903617183302cb
+sha256  2d5292d3dd1c1a463ca6efefad016e256d28a1338f203d639b903617183302cb
 
 perl5.link_binaries no

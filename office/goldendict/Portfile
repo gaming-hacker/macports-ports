@@ -26,7 +26,7 @@ long_description    A feature-rich dictionary lookup program, \
 homepage            http://goldendict.org/
 
 checksums           rmd160  ae6b9d180492bb5beca70ae5dc23ea0a407fcb1f \
-                    sha256  e735cd74030b34accf20cece78dd2363222067cd5d8e593f70117751199fd36d
+sha256  e735cd74030b34accf20cece78dd2363222067cd5d8e593f70117751199fd36d
 
 depends_lib-append  port:bzip2 \
                     port:eb \

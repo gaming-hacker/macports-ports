@@ -20,4 +20,4 @@ master_sites        sourceforge:project/fann/fann/${version}
 distname            FANN-${version}-Source
 
 checksums           rmd160  fb8513adb3ceaa11b9f2b51035fd6d3ece8a3e6f \
-                    sha256  3d6ee056dab91f3b34a3f233de6a15331737848a4cbdb4e0552123d95eed4485
+sha256  3d6ee056dab91f3b34a3f233de6a15331737848a4cbdb4e0552123d95eed4485

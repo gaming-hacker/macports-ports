@@ -24,4 +24,4 @@ long_description    poker-eval is a C library to evaluate poker hands. \
 homepage            http://pokersource.sourceforge.net
 
 checksums           rmd160  ff21dfe78459541079a92a903e03bb451485fab9 \
-                    sha256  746a0bab6613d8fcaa0906b4beee3511c93d58ad96f91085403f6446cc7ff13d
+sha256  746a0bab6613d8fcaa0906b4beee3511c93d58ad96f91085403f6446cc7ff13d

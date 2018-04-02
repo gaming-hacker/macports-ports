@@ -20,7 +20,7 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160 fd620488c6ab61a41db3e76108779a7a8e39dee2 \
-                    sha256 36573c2dc74f0da872b02a3ccf1f1419d6b992dd4703dc866e5a289d36397ac7
+sha256 36573c2dc74f0da872b02a3ccf1f1419d6b992dd4703dc866e5a289d36397ac7
 
 if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] } { default_variants +python27 }
 

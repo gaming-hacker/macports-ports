@@ -31,7 +31,7 @@ master_sites                http://ftp.debian.org/debian/pool/main/w/${name}/
 use_xz                      yes
 
 checksums                   rmd160  2bbd3bf634f61f45e3920915fce727860d445fc4 \
-                            sha256  4d789c403bfb5833c8ae168a5f31be70e34b045bd5d95a54c82a27b0ff135723 \
+sha256  4d789c403bfb5833c8ae168a5f31be70e34b045bd5d95a54c82a27b0ff135723 \
 size    82728
 
 distfiles                   ${name}_${version}${extract.suffix}

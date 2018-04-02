@@ -18,7 +18,7 @@ supported_archs     noarch
 depends_run         port:git
 
 checksums           rmd160  04e622b53a3a1b3e9b0862fc9d2c1c7c11e8f4e7 \
-                    sha256  6c42187e5ba2c86fbef2145926c77778a89ba4e9442e26742a0a767e2b3c978f
+sha256  6c42187e5ba2c86fbef2145926c77778a89ba4e9442e26742a0a767e2b3c978f
 
 use_configure       no
 

@@ -15,7 +15,7 @@ homepage            https://grothoff.org/christian/doodle/
 master_sites        ${homepage}download/
 
 checksums           rmd160  d7b6da74efcb199fb779c023cae6f6492dd678d2 \
-                    sha256  72f84625fcf4f799ce70f0fef6364bc26433682f03c73ab64e947ec80e2edd2b
+sha256  72f84625fcf4f799ce70f0fef6364bc26433682f03c73ab64e947ec80e2edd2b
 
 depends_lib         port:libextractor
 

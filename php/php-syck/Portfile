@@ -22,8 +22,8 @@ long_description        Syck is a parser for YAML -- this package installs \
                         interface to the libsyck C library.
 
 checksums               md5     cbbe638b431f74eec71c76588cd14f7e \
-                        sha1    c015f8527a6dea2644c122f085a2598939f63920 \
-                        rmd160  b1f3c8a0e537feedd2a383b11a98afc97f666231
+sha1    c015f8527a6dea2644c122f085a2598939f63920 \
+rmd160  b1f3c8a0e537feedd2a383b11a98afc97f666231
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:syck \

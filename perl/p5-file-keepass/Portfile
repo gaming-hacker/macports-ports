@@ -16,7 +16,7 @@ description         Interface to KeePass V1 and V2 database files
 long_description    ${description}
 
 checksums           rmd160  8dc0a95fea15dd47421713ead87a8065aacff385 \
-                    sha256  c30c688027a52ff4f58cd69d6d8ef35472a7cf106d4ce94eb73a796ba7c7ffa7
+sha256  c30c688027a52ff4f58cd69d6d8ef35472a7cf106d4ce94eb73a796ba7c7ffa7
 
 if {${perl5.major} != ""} {
     depends_run-append \

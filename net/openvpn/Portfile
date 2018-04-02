@@ -23,7 +23,7 @@ configure.args    --mandir=${prefix}/share/man \
                   --with-lzo-lib=${prefix}/lib
 
 checksums         rmd160  ffcb1746590bdd4dab6777856a6caf8c129d57de \
-                  sha256  22072a24bcaef8038a1e84363f3e209f65eb7c7ab37741752172a334acb31fb8
+sha256  22072a24bcaef8038a1e84363f3e209f65eb7c7ab37741752172a334acb31fb8
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/${name}

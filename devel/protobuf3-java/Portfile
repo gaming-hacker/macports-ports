@@ -32,7 +32,7 @@ distname        protobuf-java-${version}
 worksrcdir      protobuf-${version}/java
 
 checksums       rmd160  8855fef36d1df4c796e0ea23805664a2eda9b3e8 \
-                sha256  7c61081cc2346542070cd35db7d15c7f24aeeefcd3afac08ec88fec03c45d698
+sha256  7c61081cc2346542070cd35db7d15c7f24aeeefcd3afac08ec88fec03c45d698
 
 platforms       darwin
 

@@ -26,7 +26,7 @@ homepage                http://lgames.sourceforge.net/index.php?project=LTris
 master_sites            sourceforge:project/lgames/ltris
 
 checksums               rmd160  8ff370b5d7edf25acc431e33be0aa33766d44879 \
-                        sha256  b4d2888bc50bb2ad9dd59f97c15fbfaee96c54d86c834f1231cd6e8af66bf52c
+sha256  b4d2888bc50bb2ad9dd59f97c15fbfaee96c54d86c834f1231cd6e8af66bf52c
 
 depends_lib             port:libsdl \
                         port:libsdl_mixer \

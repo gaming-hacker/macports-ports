@@ -19,7 +19,7 @@ homepage            http://mblab.wustl.edu
 master_sites        http://mblab.wustl.edu/software/download/
 
 checksums           rmd160  2f1572e4d9996760b48284fc5f2a589c56008a5d \
-                    sha256  5cce1df4a08ab5fa5d81e572c876ed2bd02041f5ac3cea73d3f7eee87c7c1d9c
+sha256  5cce1df4a08ab5fa5d81e572c876ed2bd02041f5ac3cea73d3f7eee87c7c1d9c
 
 platforms           darwin
 

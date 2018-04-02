@@ -27,11 +27,11 @@ distfiles           ${distname}.tar.gz:togl \
                     tcl${tclv}-src.tar.gz:tcl
 
 checksums           ${distname}.tar.gz \
-                    rmd160  48efbcd465372db291c91a132b1f60e81b60b1ac \
-                    sha256  56b7580e3001cc4d334ff31bf6b9d730d05abb2faba7a3dbbc1c959ff7f7bcaf \
+rmd160  48efbcd465372db291c91a132b1f60e81b60b1ac \
+sha256  56b7580e3001cc4d334ff31bf6b9d730d05abb2faba7a3dbbc1c959ff7f7bcaf \
                     tcl${tclv}-src.tar.gz \
-                    rmd160  fbb181d26bb28fe9413bc2e07f333571b8e7e190 \
-                    sha256  16ee769248e64ba1cae6b4834fcc4e4edd7470d881410e8d58f7dd1434343514
+rmd160  fbb181d26bb28fe9413bc2e07f333571b8e7e190 \
+sha256  16ee769248e64ba1cae6b4834fcc4e4edd7470d881410e8d58f7dd1434343514
 
 depends_lib         port:tcl port:tk port:xorg-libXmu port:mesa
 

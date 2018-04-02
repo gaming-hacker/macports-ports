@@ -22,8 +22,8 @@ homepage            http://pybtex.sourceforge.net/
 master_sites        pypi:p/pybtex/
 distname            pybtex-${version}
 checksums           md5 951c4f913fb9c20362ece9cdf7cb3a3c \
-                    sha1 f2e73e91cdd352fcd77fef69639c3fa28392039e \
-                    rmd160 fdf2a521929d01ead2b6e00409efb7b909e7ec40
+sha1 f2e73e91cdd352fcd77fef69639c3fa28392039e \
+rmd160 fdf2a521929d01ead2b6e00409efb7b909e7ec40
 
 use_bzip2           yes
 

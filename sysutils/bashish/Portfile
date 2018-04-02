@@ -20,7 +20,7 @@ homepage            http://bashish.sourceforge.net/
 master_sites        sourceforge
 
 checksums           sha1    532ed2a1c1bacafb459c2c7dedf720e9047bd716 \
-                    rmd160  d1cae1490ed4b667bec8b21f2cfb3875394ec8cf
+rmd160  d1cae1490ed4b667bec8b21f2cfb3875394ec8cf
 
 depends_lib         port:dialog
 

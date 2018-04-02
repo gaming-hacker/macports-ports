@@ -33,7 +33,7 @@ extract.suffix      .tgz
 distname            ${name}_${version}
 
 checksums           rmd160  f2b271569cb22fc8897485394339e545c0d9518a \
-                    sha1    d7f6f350c275bb36bbea43882f0a7079083cc53d
+sha1    d7f6f350c275bb36bbea43882f0a7079083cc53d
 
 use_configure       no
 worksrcdir          FEAST/${version}/src

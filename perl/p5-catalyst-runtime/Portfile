@@ -17,7 +17,7 @@ long_description    Catalyst is a modern framework for making web \
 platforms           darwin
 
 checksums           rmd160  0568e42a204f89218056dd333eda001e775e4804 \
-                    sha256  fe12d82c4e0704d1f15946651554ca069abccb6afbe5d9de315e97d90c0c92a3 \
+sha256  fe12d82c4e0704d1f15946651554ca069abccb6afbe5d9de315e97d90c0c92a3 \
 size    394823
 
 if {${perl5.major} != ""} {

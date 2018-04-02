@@ -16,7 +16,7 @@ description         Temporary changing working directory (chdir)
 long_description    ${description}
 
 checksums           sha256  7afc7ca2b9502e440241938ad97a3e7ebd550180ebd6142e1db394186b268e77 \
-                    rmd160  2adb76dc1107b4eae567a26caf4bf8653874e678
+rmd160  2adb76dc1107b4eae567a26caf4bf8653874e678
 
 if {${perl5.major} != ""} {
     depends_build-append \

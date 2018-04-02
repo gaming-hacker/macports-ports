@@ -18,7 +18,7 @@ long_description    The TLDR pages are a community effort to simplify \
 homepage            http://tldr-pages.github.io
 
 checksums           rmd160  29020d3f0fe5a34a7b976af67ad9c1ee868a2d0a \
-                    sha256  fa65b9d49ec94034195b1cb985e4238cbc2ce34352d4be8772c0f058b89b41a4
+sha256  fa65b9d49ec94034195b1cb985e4238cbc2ce34352d4be8772c0f058b89b41a4
 
 patchfiles          patch-Makefile.diff
 

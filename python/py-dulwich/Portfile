@@ -19,7 +19,7 @@ long_description    Simple Pure-Python implementation of the Git file \
 homepage            https://www.dulwich.io
 
 checksums           rmd160  d0ea2c75af99b08cb871b0dbf606e055953ed6e7 \
-                    sha256  3d887e029dc65c3131b448c29ff8f75bf5773a73dbd22c6063c7582518ff7d4f \
+sha256  3d887e029dc65c3131b448c29ff8f75bf5773a73dbd22c6063c7582518ff7d4f \
 size    329833
 
 python.versions 27 36

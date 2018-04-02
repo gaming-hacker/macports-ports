@@ -12,4 +12,4 @@ description         PEAR Sabre package
 long_description    ${description}
 
 checksums           rmd160  ab6f370e3414e66300452fa4d026e3d27d30caee \
-                    sha256  00b0abc078f9caa60e608fbeb91f5f8bff42a5f602513e5cf0a1171de2362e32
+sha256  00b0abc078f9caa60e608fbeb91f5f8bff42a5f602513e5cf0a1171de2362e32

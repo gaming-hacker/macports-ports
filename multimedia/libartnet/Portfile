@@ -13,8 +13,8 @@ long_description    ${description}
 homepage            http://www.nomis52.net/data/artnet/libartnet/
 master_sites        http://www.nomis52.net/data/artnet/libartnet/
 checksums           md5     7a25f43396ab02ac0ee4737849c27b30 \
-                    rmd160  4b60669059fdfcbbf045643697e7e4859ba9445f \
-                    sha256  cb384b4883f1a42b37d24cbcf98a7fda40e0043f24c541c8292a94ae73ba08c7
+rmd160  4b60669059fdfcbbf045643697e7e4859ba9445f \
+sha256  cb384b4883f1a42b37d24cbcf98a7fda40e0043f24c541c8292a94ae73ba08c7
 
 patchfiles          patch-artnet-Makefile.in.diff patch-artnet-misc.c.diff
 

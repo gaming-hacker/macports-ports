@@ -25,8 +25,8 @@ platforms       darwin
 build.type      gnu
 
 checksums       md5 792b6ce058e4b9db44279409dbc662a3\
-                sha1 dce8c3de03c186796e66c965da9be7af91125d3a\
-                rmd160 cecb601fd04fcbbab03bb9d49a15a0f80adcd92d
+sha1 dce8c3de03c186796e66c965da9be7af91125d3a\
+rmd160 cecb601fd04fcbbab03bb9d49a15a0f80adcd92d
 
 configure.args  --without-mysql \
                 --without-sqlite \

@@ -26,8 +26,8 @@ long_description        ${name} is a terrain database creation tool that can \
                         professional flight simulator applications.
 
 checksums               md5     e084fec6150c31b01412dfb4d2a9959f \
-                        sha1    632e352f53b9c62a3df733e507aae5286b673840 \
-                        rmd160  ccf764c679c36cb4ae4cd3f2e1efeeac3074dcaa
+sha1    632e352f53b9c62a3df733e507aae5286b673840 \
+rmd160  ccf764c679c36cb4ae4cd3f2e1efeeac3074dcaa
 
 patchfiles              patch-CMakeLists.txt.diff
 

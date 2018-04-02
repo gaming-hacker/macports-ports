@@ -18,9 +18,9 @@ master_sites \
     ftp://ftp.math.utah.edu/pub/misc/
 
 checksums \
-    md5 4c37a5fa90a4598f109e36047e3a9010 \
-    sha1 37344520373639cd7a9fb69465114218044ff7b0 \
-    rmd160 dc87032458df1106a48df6dc017138202c886f45
+md5 4c37a5fa90a4598f109e36047e3a9010 \
+sha1 37344520373639cd7a9fb69465114218044ff7b0 \
+rmd160 dc87032458df1106a48df6dc017138202c886f45
 
 description \
     convert text file line endings between DOS, Mac and UNIX standards

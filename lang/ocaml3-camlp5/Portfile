@@ -24,7 +24,7 @@ homepage            http://pauillac.inria.fr/~ddr/camlp5/
 master_sites        ${homepage}distrib/src/
 
 checksums           rmd160  fefa727e756266d3b0697df494042c327f32294d \
-                    sha256  763f89ee6cde4ca063a50708c3fe252d55ea9f8037e3ae9801690411ea6180c5
+sha256  763f89ee6cde4ca063a50708c3fe252d55ea9f8037e3ae9801690411ea6180c5
 
 distname            camlp5-${version}
 

@@ -13,7 +13,7 @@ description         Unicode::LineBreak - UAX #14 Unicode Line Breaking Algorithm
 long_description    ${description}
 
 checksums           rmd160  191a92b461fe32f80377efef5ac6659df0a0a52b \
-                    sha256  860c92ff3e710f0a1ca3e7067dba3734540dfb5cb932936536225f7ffca571b1 \
+sha256  860c92ff3e710f0a1ca3e7067dba3734540dfb5cb932936536225f7ffca571b1 \
 size    248257
 
 if {$subport != $name} {

@@ -17,11 +17,11 @@ set gradssrc        ${name}-${version}-src${extract.suffix}
 set gradsdata       data2${extract.suffix}
 distfiles           ${gradssrc}:src ${gradsdata}:data
 checksums           ${gradssrc} \
-                    rmd160  7aaad3c846e63f4b36abd1fe73fd91c1bcb11728 \
-                    sha256  1cb8cdb29da218bca5d4e2931eb2bc0c2e8a290b29540132ac1f2ad088857689 \
+rmd160  7aaad3c846e63f4b36abd1fe73fd91c1bcb11728 \
+sha256  1cb8cdb29da218bca5d4e2931eb2bc0c2e8a290b29540132ac1f2ad088857689 \
                     ${gradsdata} \
-                    rmd160 98637dd79e49335e0d986429549fbce2b81afc7a \
-                    sha256 55419fe15478d8213031bb1bfa7adec96984379373ec751cbe37d4bb22f6ce18
+rmd160 98637dd79e49335e0d986429549fbce2b81afc7a \
+sha256 55419fe15478d8213031bb1bfa7adec96984379373ec751cbe37d4bb22f6ce18
 set url http://cola.gmu.edu/grads/
 homepage            ${url}
 long_description   \

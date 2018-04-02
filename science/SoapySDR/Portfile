@@ -16,4 +16,4 @@ long_description    SoapySDR is an open-source generalized C/C++ API and runtime
 homepage            https://github.com/pothosware/SoapySDR/wiki
 
 checksums           rmd160 26d9595e3091e8781497879fe0ede47852dde003 \
-                    sha256 90eec0c9d63c73f18b1000fc8470c10a37eeeb020e9350d2f3aae845d6cf28dd
+sha256 90eec0c9d63c73f18b1000fc8470c10a37eeeb020e9350d2f3aae845d6cf28dd

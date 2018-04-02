@@ -18,7 +18,7 @@ master_sites	sourceforge:project/hte/ht-source
 
 use_bzip2	yes
 checksums	rmd160  665e20a70a4735acf2102521b49074f94a28fba6 \
-		sha256  31f5e8e2ca7f85d40bb18ef518bf1a105a6f602918a0755bc649f3f407b75d70
+sha256  31f5e8e2ca7f85d40bb18ef518bf1a105a6f602918a0755bc649f3f407b75d70
 
 depends_lib	port:ncurses port:lzo2 port:xorg-libX11
 

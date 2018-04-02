@@ -20,7 +20,7 @@ homepage	 	http://fallabs.com/qdbm/index.html
 master_sites    http://fallabs.com/qdbm/
 
 checksums           sha1    8c2ab938c2dad8067c29b0aa93efc6389f0e7076 \
-                    rmd160  84c812eaa0ddde822dd37515de67287098bd3a4b
+rmd160  84c812eaa0ddde822dd37515de67287098bd3a4b
 
 depends_lib		port:libiconv port:zlib
 

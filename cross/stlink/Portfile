@@ -15,7 +15,7 @@ long_description    Open source version of the STMicroelectronics Stlink Tools. 
                     Provides the following tools: st-flash, st-info, st-term, st-util.
 
 checksums           rmd160  1fffecc282c328e1a3b493f0ff49830f83af5afa \
-                    sha256  2c392d3005f6b3059c4e4e11a1eaf2451d41130de2c7dac9192d3a8dd61c4eb5
+sha256  2c392d3005f6b3059c4e4e11a1eaf2451d41130de2c7dac9192d3a8dd61c4eb5
 
 depends_lib-append  path:lib/libusb-1.0.dylib:libusb
 

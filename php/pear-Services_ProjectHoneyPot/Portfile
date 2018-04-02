@@ -13,7 +13,7 @@ description         PEAR Services_ProjectHoneyPot package
 long_description    ${description}
 
 checksums           rmd160  ed67518189e979f651899c2c31864a577fc8080d \
-                    sha256  c61f013da4a191890309e5e24998c3f754bd77679f43d3fae2dd1a7759df1b46
+sha256  c61f013da4a191890309e5e24998c3f754bd77679f43d3fae2dd1a7759df1b46
 
 depends_lib-append  port:pear-Net_CheckIP2 \
                     port:pear-Net_DNS2

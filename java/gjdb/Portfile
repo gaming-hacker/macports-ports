@@ -26,8 +26,8 @@ platforms           darwin
 master_sites        http://www.cs.berkeley.edu/~hilfingr/gjdb/
 
 checksums           md5 47af5b3b95a286860dd950cb133aae58 \
-                    rmd160 07d0478bea87712420091a1b1dfdcefe91d759dc \
-                    sha1 b0886f4af850799a4751f08612e0a8d115a7ad63
+rmd160 07d0478bea87712420091a1b1dfdcefe91d759dc \
+sha1 b0886f4af850799a4751f08612e0a8d115a7ad63
 
 build.target
 extract.suffix      .tgz

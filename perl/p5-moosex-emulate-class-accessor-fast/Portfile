@@ -17,8 +17,8 @@ long_description    This module attempts to emulate the behavior of \
 platforms           darwin
 
 checksums           md5 edb0d626207e7db61154b5cc65112638 \
-                    sha1 ef19e4ac9af934321f9a34b67acf1d4d98e8bd84 \
-                    rmd160 b49cf954f80b3743bee590a1cba65b4eb42ee682
+sha1 ef19e4ac9af934321f9a34b67acf1d4d98e8bd84 \
+rmd160 b49cf954f80b3743bee590a1cba65b4eb42ee682
 
 if {${perl5.major} != ""} {
     depends_lib-append \

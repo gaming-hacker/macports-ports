@@ -12,6 +12,6 @@ description         PEAR PEAR_PackageUpdate_Gtk2 package
 long_description    ${description}
 
 checksums           rmd160  cf7db88d89a292be28fe2a74be8fbbea76e9bbe0 \
-                    sha256  7caaf16263856fe17e73cf895b30b10bf4abb1df6a3c988e4d148d22dff363eb
+sha256  7caaf16263856fe17e73cf895b30b10bf4abb1df6a3c988e4d148d22dff363eb
 
 depends_lib-append  port:pear-PEAR_PackageUpdate

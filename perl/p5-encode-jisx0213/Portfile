@@ -13,7 +13,7 @@ description         Encode::JISX0213 - JIS X 0213 encodings
 long_description    ${description}
 
 checksums           rmd160  d798dfd449b9a0b68d56dc7cfd917cfbf79c5a33 \
-                    sha256  5d0b1376717c6f0af1bc5b867899d398c404a14a247cb7a81ded5924e9f830f8
+sha256  5d0b1376717c6f0af1bc5b867899d398c404a14a247cb7a81ded5924e9f830f8
 
 if {${perl5.major} != ""} {
     depends_lib-append \

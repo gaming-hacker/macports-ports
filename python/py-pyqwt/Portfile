@@ -25,7 +25,7 @@ distname            PyQwt-${version}
 dist_subdir         python
 
 checksums           rmd160 e4c8a63d623d974cd500e29fbc62255746ca7feb \
-                    sha256 98a8c7e0c76d07701c11dffb77793b05f071b664a8b520d6e97054a98179e70b
+sha256 98a8c7e0c76d07701c11dffb77793b05f071b664a8b520d6e97054a98179e70b
 
 # PyQwt's Python scripts are not compatible with Python 3.4+, and
 # there are many changes required to make it compatible.

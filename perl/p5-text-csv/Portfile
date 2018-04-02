@@ -17,7 +17,7 @@ long_description    Text::CSV provides facilities for the composition and \
 platforms           darwin
 
 checksums           rmd160  a538f3742926ea34d223f0841b524d4ed635ccaa \
-                    sha256  7e0a11d9c1129a55b68a26aa4b37c894279df255aa63ec8341d514ab848dbf61
+sha256  7e0a11d9c1129a55b68a26aa4b37c894279df255aa63ec8341d514ab848dbf61
 
 if {${perl5.major} != ""} {
     depends_lib-append \

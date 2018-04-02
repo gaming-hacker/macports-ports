@@ -12,4 +12,4 @@ description         PEAR PHP_Shell package
 long_description    ${description}
 
 checksums           rmd160  2d5a89845e4bcbaa9903cc7c1a360d11192227ed \
-                    sha256  d17c4986ebb5124a056c314d08be98f6b8b23ce1859b8683f105db4be76c02b5
+sha256  d17c4986ebb5124a056c314d08be98f6b8b23ce1859b8683f105db4be76c02b5

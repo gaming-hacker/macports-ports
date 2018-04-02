@@ -12,7 +12,7 @@ description         PEAR XML_XUL package
 long_description    ${description}
 
 checksums           rmd160  527424453d6253dbbc47abda3a55f16f67f6ccad \
-                    sha256  b9509b9c7576350d8f79013bd930e342917303ef5f84a05f457100c4328558e5
+sha256  b9509b9c7576350d8f79013bd930e342917303ef5f84a05f457100c4328558e5
 
 depends_lib-append  port:pear-XML_Util2 \
                     port:pear-XML_Parser2

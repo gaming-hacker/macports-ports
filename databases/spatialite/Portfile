@@ -25,7 +25,7 @@ master_sites        http://www.gaia-gis.it/gaia-sins/
 distname            libspatialite-${version}a
 
 checksums           rmd160  ee8d9f3f69f1c70f041b418e0e51a05ec40a5be7 \
-                    sha256  88900030a4762904a7880273f292e5e8ca6b15b7c6c3fb88ffa9e67ee8a5a499
+sha256  88900030a4762904a7880273f292e5e8ca6b15b7c6c3fb88ffa9e67ee8a5a499
 
 depends_build       port:pkgconfig
 depends_lib         port:sqlite3 \

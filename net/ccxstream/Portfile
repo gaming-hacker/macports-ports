@@ -18,7 +18,7 @@ long_description    Server to stream music and video files from your \
 homepage            http://buffalo.nas-central.org/wiki/Ccxstream_-_Xbox_Media_Stream_Protocol
 
 checksums           rmd160  01676289efe8181cb1c7c9c1340205c7adb97b3c \
-                    sha256  2dec31ba4a176c921a653c0949a53c2d3497e047737724350897fd2534db18fe
+sha256  2dec31ba4a176c921a653c0949a53c2d3497e047737724350897fd2534db18fe
 
 master_sites        sourceforge:xbplayer
 

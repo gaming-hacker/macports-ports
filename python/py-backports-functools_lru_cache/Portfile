@@ -24,7 +24,7 @@ master_sites        pypi:b/backports.functools_lru_cache
 distname            backports.functools_lru_cache-${version}
 
 checksums           rmd160  7cb67361aed652c6d3f6b472da850bba1e4dda0f \
-                    sha256  1c20e07f1a8a36a19d5d258b6b076e588d78d8fc7c2c4487ffe3a280f55a7bd1
+sha256  1c20e07f1a8a36a19d5d258b6b076e588d78d8fc7c2c4487ffe3a280f55a7bd1
 
 if {${name} ne ${subport}} {
     depends_build-append \

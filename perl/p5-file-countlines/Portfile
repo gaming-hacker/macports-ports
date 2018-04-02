@@ -20,4 +20,4 @@ description         File::CountLines - efficiently count the number of line brea
 long_description    ${description}
 
 checksums           rmd160 0618d4103e6e5295d8afe90fe4e2dadf87cf5db3 \
-                    sha256 cfd97cce7c9613e4e569d47874a2b5704f1be9eced2f0739c870725694382a62
+sha256 cfd97cce7c9613e4e569d47874a2b5704f1be9eced2f0739c870725694382a62

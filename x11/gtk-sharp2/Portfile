@@ -22,8 +22,8 @@ master_sites    http://download.mono-project.com/sources/${my_name}${branch}/
 distname        ${my_name}-${version}
 
 checksums       md5     c278da6a472c6c13b698af012f543c64 \
-                sha1    1ef391896e57f2445b7a1ca1b640d74d533e2158 \
-                rmd160  f3106eb2fa764e9db9324e6d6653445b2f598efa
+sha1    1ef391896e57f2445b7a1ca1b640d74d533e2158 \
+rmd160  f3106eb2fa764e9db9324e6d6653445b2f598efa
 
 use_bzip2       yes
 

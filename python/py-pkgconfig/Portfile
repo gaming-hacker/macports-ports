@@ -20,8 +20,8 @@ long_description        ${description} It can be used to check if a package\
                         output to build extensions with setup.py.
 
 checksums \
-    rmd160  3e0396838a04166e50be9c01c88a5b963dbf0cd5 \
-    sha256  03dd0cd84255b1b00b316b3db37e9b129a5621fc9c0d931b942678997fc73f93
+rmd160  3e0396838a04166e50be9c01c88a5b963dbf0cd5 \
+sha256  03dd0cd84255b1b00b316b3db37e9b129a5621fc9c0d931b942678997fc73f93
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-nose

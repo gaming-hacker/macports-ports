@@ -16,7 +16,7 @@ master_sites	sourceforge
 use_bzip2	yes
 
 checksums	sha1    2e61bbf550767793b20bffc544b625fc4e889f44 \
-		rmd160  5bfdc5561c281f5d506151ec17552b03e6a411ab
+rmd160  5bfdc5561c281f5d506151ec17552b03e6a411ab
 
 configure.args	--with-sbr-static --without-testmodule
 

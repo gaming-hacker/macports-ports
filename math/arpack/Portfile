@@ -20,7 +20,7 @@ long_description    ARPACK is a collection of Fortran77 subroutines designed to 
 worksrcdir          ${name}-ng-${version}
 
 checksums           rmd160  0f410dda5090944d9c4941e9d94051ed7dae05c1 \
-                    sha256  1b269940669e271c66314ef951e09c72c5e9ba0bd12a43a3325f9635275be40d
+sha256  1b269940669e271c66314ef951e09c72c5e9ba0bd12a43a3325f9635275be40d
 
 mpi.setup           require_fortran
 

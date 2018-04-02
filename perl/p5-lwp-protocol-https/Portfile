@@ -19,7 +19,7 @@ long_description    The LWP::Protocol::https module used to be bundled with p5-l
                     underlying modules to install.
 
 checksums           rmd160  6b515401aa1bcf6148cb0dc6992898eb8629fd6c \
-                    sha256  522cc946cf84a1776304a5737a54b8822ec9e79b264d0ba0722a70473dbfb9e7
+sha256  522cc946cf84a1776304a5737a54b8822ec9e79b264d0ba0722a70473dbfb9e7
 
 if {${perl5.major} != ""} {
     depends_lib-append \

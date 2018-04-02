@@ -7,7 +7,7 @@ name                    x2goclient
 version                 4.1.1.1
 revision                0
 checksums               sha256  e3fa40cc13d779b230d44087f7515ad57cd1cbd030c3430b1c222cb481e5f44b \
-                        rmd160  ef734c57bd780e1d05637216e595a84fd3a77006 \
+rmd160  ef734c57bd780e1d05637216e595a84fd3a77006 \
 size    2749650
 
 categories              aqua net

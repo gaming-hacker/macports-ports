@@ -18,7 +18,7 @@ long_description    Stubby is the name given to a mode of using getdns which \
 homepage            https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby
 
 checksums           rmd160  d2dde4b3b88a5c16a70aa8a2b25400f56a43e299 \
-                    sha256  40a1d665b90b60fa0c3d92a398db25c4081852cefedfe5edb182c2ff1c8d5a43
+sha256  40a1d665b90b60fa0c3d92a398db25c4081852cefedfe5edb182c2ff1c8d5a43
 
 depends_lib         port:getdns \
                     port:libyaml

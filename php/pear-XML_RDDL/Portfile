@@ -12,6 +12,6 @@ description         PEAR XML_RDDL package
 long_description    ${description}
 
 checksums           rmd160  bbcbfa1ebba50fd363523f2e84e7e60ed324daf9 \
-                    sha256  14cdd2f205303b444b40c57c23cb1faffc2b9a96298c6cb97d91aecd67b1f7c7
+sha256  14cdd2f205303b444b40c57c23cb1faffc2b9a96298c6cb97d91aecd67b1f7c7
 
 depends_lib-append  port:pear-XML_Parser

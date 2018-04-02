@@ -44,7 +44,7 @@ depends_lib         port:bzip2 \
 distname            BackupPC-${version}
 
 checksums           rmd160  f9160354a47ea04cfd0da1bcd400850615af9e07 \
-                    sha256  fbade2c8d8039297e826a75d2c39d5ac9a6f66e0c84c0cf8c4cef0bcf64d2152
+sha256  fbade2c8d8039297e826a75d2c39d5ac9a6f66e0c84c0cf8c4cef0bcf64d2152
 
 configure.args      --batch \
                     --backuppc-user=backuppc \

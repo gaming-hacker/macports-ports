@@ -24,7 +24,7 @@ homepage        http://www.claws-mail.org/
 master_sites    ${homepage}releases/
 
 checksums           rmd160  2a1f1e29e1d2d12a674cda42189292ef98f97492 \
-                    sha256  c212133d3d962129d8c7995c1c7d973faef2a8914481c0c74578217bf4c897ab
+sha256  c212133d3d962129d8c7995c1c7d973faef2a8914481c0c74578217bf4c897ab
 
 use_xz          yes
 

@@ -15,7 +15,7 @@ long_description    ${description}
 homepage            https://atom.io
 
 checksums           rmd160  71582bbac0b54afdd5ec3a85039d3d607f71d106 \
-                    sha256  37f75657f5c9f755debe754fcd429a412a627cabcde0789868ca1180af47dfbf
+sha256  37f75657f5c9f755debe754fcd429a412a627cabcde0789868ca1180af47dfbf
 
 patchfiles          patch-install-prefix.diff
 

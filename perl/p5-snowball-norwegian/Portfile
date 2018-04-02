@@ -19,7 +19,7 @@ homepage            https://metacpan.org/release/${perl5.module}
 platforms           darwin
 
 checksums           md5 24197e600ea4d9b5bb5ca9c175f14676 \
-                    sha1 641791649dca1946f0758fdebea8f8c4e9efb453 \
-                    rmd160 9b9f3e7cfc59a70d754cc9b2447bfd72eeea98c3
+sha1 641791649dca1946f0758fdebea8f8c4e9efb453 \
+rmd160 9b9f3e7cfc59a70d754cc9b2447bfd72eeea98c3
 
 perl5.use_module_build

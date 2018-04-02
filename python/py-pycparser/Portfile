@@ -28,7 +28,7 @@ master_sites        pypi:p/pycparser/
 distname            pycparser-${version}
 
 checksums           rmd160  a8ea47d6601a7511e95f64e799f4c02c2e9b5323 \
-                    sha256  99a8ca03e29851d96616ad0404b4aad7d9ee16f25c9f9708a11faf2810f7b226
+sha256  99a8ca03e29851d96616ad0404b4aad7d9ee16f25c9f9708a11faf2810f7b226
 
 if {${name} ne ${subport}} {
     livecheck.type      none

@@ -22,11 +22,11 @@ distfiles           whatcheck.tar.bz2:whatcheck \
                     dsspcmbi.zip:dsspcmbi
 
 checksums           whatcheck.tar.bz2 \
-                    sha1    1ea39eb695218643f26e80315a8d560f57b91de5 \
-                    rmd160  a6d6a0abe2fc378ae795675719f36a7f4d79817e \
+sha1    1ea39eb695218643f26e80315a8d560f57b91de5 \
+rmd160  a6d6a0abe2fc378ae795675719f36a7f4d79817e \
                     dsspcmbi.zip \
-                    sha1    880538dd36cc29918584f92dbc4e094c76ca3959 \
-                    rmd160  e18d010308ae2252135c72988247518cf44a8841
+sha1    880538dd36cc29918584f92dbc4e094c76ca3959 \
+rmd160  e18d010308ae2252135c72988247518cf44a8841
 
 dist_subdir         ${name}/${version}
 worksrcdir          ${name}

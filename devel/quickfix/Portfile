@@ -21,7 +21,7 @@ master_sites        sourceforge:project/quickfix/quickfix/${version}
 worksrcdir          ${name}
 
 checksums           rmd160  369d5bf7044fa4c90d2d74e4470e50c0ad82951b \
-                    sha256  f6e8bdb004eaf45e50f63005b8c2611cb0afd42cf70f110f600c852aa572342d
+sha256  f6e8bdb004eaf45e50f63005b8c2611cb0afd42cf70f110f600c852aa572342d
 
 depends_lib         port:libxml2
 

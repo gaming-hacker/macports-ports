@@ -19,7 +19,7 @@ long_description    Read, write and analyze MD trajectories with only a few line
 supported_archs     i386 x86_64
 
 checksums           rmd160  58a3684fdf7a81813699aa281c411c04b130b91b \
-                    sha256  e93db244035b7551488cea24d96dd813e67ce655461fc50f53c4d8a9cd8bd7ca
+sha256  e93db244035b7551488cea24d96dd813e67ce655461fc50f53c4d8a9cd8bd7ca
 
 python.versions 27 36
 

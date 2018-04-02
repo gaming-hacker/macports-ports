@@ -12,4 +12,4 @@ description         PEAR Net_Wifi package
 long_description    ${description}
 
 checksums           rmd160  2cb4edf95a0d5dd0ee26e8ddb47d1368e895b4bc \
-                    sha256  0e19dd8d70f0822e00a07e734f0cf5fa2e7ab20940b272fc1ee788efed61bcfe
+sha256  0e19dd8d70f0822e00a07e734f0cf5fa2e7ab20940b272fc1ee788efed61bcfe

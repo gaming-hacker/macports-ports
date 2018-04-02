@@ -22,7 +22,7 @@ homepage            https://gnp.github.io/psh/
 master_sites        https://github.com/gnp/psh/archive/
 
 checksums           rmd160  3fa91de47e19bb395b7e3e4a90bd245e7d3f7384 \
-                    sha256  c8414c4381a6a715800a7b59c39276d1f19087bf2e0b6a9b950af4feaf7701a8
+sha256  c8414c4381a6a715800a7b59c39276d1f19087bf2e0b6a9b950af4feaf7701a8
 
 worksrcdir          psh-psh-${version}
 

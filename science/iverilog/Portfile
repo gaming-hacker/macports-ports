@@ -29,7 +29,7 @@ master_sites        ftp://ftp.icarus.com/pub/eda/verilog/v${branch}/
 distname            verilog-${version}
 
 checksums           rmd160  77c933b712ab027b13a81e3eead7ee4f565741b7 \
-                    sha256  fdaa75dfe7c58cbc471fc12710ee49b3f32fd6cc055d9181b5190cbcbbd6cada
+sha256  fdaa75dfe7c58cbc471fc12710ee49b3f32fd6cc055d9181b5190cbcbbd6cada
 
 depends_lib         port:bzip2 \
                     port:readline \

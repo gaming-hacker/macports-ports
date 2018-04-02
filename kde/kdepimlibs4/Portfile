@@ -18,7 +18,7 @@ use_xz              yes
 distname            kdepimlibs-${version}
 
 checksums           rmd160  95af39ad4848fe48efbd4e3be8b4b0767530ec60 \
-                    sha256  65edb1bec191be1b6f8450dc71eadae734f4ab0585aab0a885207390399868d7
+sha256  65edb1bec191be1b6f8450dc71eadae734f4ab0585aab0a885207390399868d7
 
 #The only binaries linking to openssl (through QtNetwork) are libkimap.dylib
 #and libmailtransport.dylib, which are purely LPGL, thus not conflicting with

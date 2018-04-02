@@ -17,7 +17,7 @@ long_description    ${description}
 extract.suffix      .tgz
 
 checksums           rmd160  c52f2e0bcaa8e2420778567c8cf3f5bff6832ea6 \
-                    sha256  92aea50421712fcbc36a26e1d60855aa100d446b28d54fe2488a0fa3d67748bb
+sha256  92aea50421712fcbc36a26e1d60855aa100d446b28d54fe2488a0fa3d67748bb
 
 platforms           darwin
 supported_archs     noarch

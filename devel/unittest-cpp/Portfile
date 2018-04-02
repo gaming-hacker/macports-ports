@@ -17,4 +17,4 @@ long_description        UnitTest++ is a lightweight unit testing framework for C
 github.tarball_from     releases
 
 checksums               rmd160  cbd4071442622eec6b9246fba84c351290f854d8 \
-                        sha256  5b00a217f90fe262d91d09405ef5a8b5d28063da2f701cc58af48d560c4792af
+sha256  5b00a217f90fe262d91d09405ef5a8b5d28063da2f701cc58af48d560c4792af

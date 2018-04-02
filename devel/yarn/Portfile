@@ -27,7 +27,7 @@ homepage            https://yarnpkg.com/
 github.tarball_from releases
 distname            ${name}-${git.branch}
 checksums           rmd160  c12e5ecb934b5292748c35761424debdeb07032a \
-                    sha256  cd31657232cf48d57fdbff55f38bfa058d2fb4950450bd34af72dac796af4de1
+sha256  cd31657232cf48d57fdbff55f38bfa058d2fb4950450bd34af72dac796af4de1
 
 depends_run         path:bin/node:nodejs6
 

@@ -26,7 +26,7 @@ if { ${name} ne ${subport} } {
                         port:py${python.version}-six
 
     checksums           rmd160  78afc9dcb259f5390da761bdb500e8244ec5af3f \
-                        sha256  9fb72b95a9d86148acf4a2c5d585fbffc101926347ebf0aa91d4475c0b375ceb
+sha256  9fb72b95a9d86148acf4a2c5d585fbffc101926347ebf0aa91d4475c0b375ceb
 
     livecheck.type      none
 }

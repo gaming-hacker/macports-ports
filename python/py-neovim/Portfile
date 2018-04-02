@@ -31,7 +31,7 @@ if { ${name} ne ${subport} } {
     }
 
     checksums           rmd160  de9fcf0868ce1eb5fa1a83c5563484febf2e4724 \
-                        sha256  ddf7c6753a75d7388d178331a07c81f1accdd5b374deccef98b641798c6496ab
+sha256  ddf7c6753a75d7388d178331a07c81f1accdd5b374deccef98b641798c6496ab
 
     livecheck.type      none
 }

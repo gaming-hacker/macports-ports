@@ -21,8 +21,8 @@ master_sites		https://msv.dev.java.net/files/documents/61/116917/
 distfiles		${name}.${version}.zip
 fetch.ignore_sslcert	yes
 checksums		md5 15e61067d38b7015601832e9f4555502 \
-			sha1 f70186b2997469def7f0fb1a6a67212192c5ab62 \
-			rmd160 cc80709d8a8a173fb954b26a57e4de1b43c82c1b
+sha1 f70186b2997469def7f0fb1a6a67212192c5ab62 \
+rmd160 cc80709d8a8a173fb954b26a57e4de1b43c82c1b
 
 use_zip			yes
 

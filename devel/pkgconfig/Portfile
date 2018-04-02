@@ -22,7 +22,7 @@ long_description    The pkg-config program is used to retrieve information \
                     used to compile and link against one or more libraries.
 
 checksums           rmd160  31e6a17810893d95fd33967c2e433beb2175cd8a \
-                    sha256  6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
+sha256  6fc69c01688c9458a57eb9a1664c9aba372ccda420a02bf4429fe610e7e7d591
 
 depends_lib         port:libiconv
 

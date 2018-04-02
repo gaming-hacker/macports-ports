@@ -16,7 +16,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  ba5dde51bd5672dfe9117f85808ad4f91ba142d5 \
-                    sha256  6f28e141c7e2fbc455621bc809d6e7d84a3640cc77568b07798ae3933107e44f
+sha256  6f28e141c7e2fbc455621bc809d6e7d84a3640cc77568b07798ae3933107e44f
 
 variant db48 conflicts db51 db52 db53 description {Build with Berkeley DB 4.8} {}
 variant db51 conflicts db48 db52 db53 description {Build with Berkeley DB 5.1} {}

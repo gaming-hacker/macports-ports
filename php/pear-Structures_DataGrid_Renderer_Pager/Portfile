@@ -13,7 +13,7 @@ description         PEAR Structures_DataGrid_Renderer_Pager package
 long_description    ${description}
 
 checksums           rmd160  c84e37207965b08cb4c97c41f957e11cab35ec77 \
-                    sha256  224dfbc7865c8e757bbc081423a3fa05ed80795d9fae34a4396d3fcaf272e783
+sha256  224dfbc7865c8e757bbc081423a3fa05ed80795d9fae34a4396d3fcaf272e783
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-Pager

@@ -19,7 +19,7 @@ long_description        This extension implements a Z39.50 client \
                         for PHP using the YAZ toolkit.
 
 checksums               rmd160  a9702ad81085f955af793e1c9e246d30537cf3a1 \
-                        sha256  3a88d7d5c9a3ba3399afeb3a8da32d0c5ff16e69f13a25cbaa2a669d805bb28e
+sha256  3a88d7d5c9a3ba3399afeb3a8da32d0c5ff16e69f13a25cbaa2a669d805bb28e
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:re2c port:yaz

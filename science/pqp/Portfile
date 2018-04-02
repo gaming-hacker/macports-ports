@@ -16,8 +16,8 @@ platforms           darwin
 master_sites        http://gamma.cs.unc.edu/software/downloads/SSV/
 
 checksums           md5     f710e24a62db763d61d08667439d46fd \
-                    sha1    995a9e9e9aa9a54ad2d5abadb9ef143123d4d0ef \
-                    rmd160  cd823db9b6be5208b100b8e55ff7831c9aa24371
+sha1    995a9e9e9aa9a54ad2d5abadb9ef143123d4d0ef \
+rmd160  cd823db9b6be5208b100b8e55ff7831c9aa24371
 worksrcdir          ${distname}/PQP_v${version}/src
 
 patchfiles          patch-src-PQP_Compile.h.diff

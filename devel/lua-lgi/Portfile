@@ -19,7 +19,7 @@ long_description    LGI is gobject-introspection based dynamic Lua binding to \
                     libraries directly from Lua.
 
 checksums           rmd160  44f9157cc16bcad65233e62f9896c337336e5696 \
-                    sha256  68927380f6ed5b7d00284d9b9dc269704ee5d11c40ec76b6bd6056eb595c1578
+sha256  68927380f6ed5b7d00284d9b9dc269704ee5d11c40ec76b6bd6056eb595c1578
 
 depends_build-append \
                     port:pkgconfig

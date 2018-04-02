@@ -24,7 +24,7 @@ perl5.branches          5.26
 perl5.create_variants   ${perl5.branches}
 
 checksums               rmd160  9a4b489979fa62c064e8af35c9c968e86d596257 \
-                        sha256  21a9ca143a43534e1b3a067e94f6c36c93106be4496740220479e1c5c24b5f7a
+sha256  21a9ca143a43534e1b3a067e94f6c36c93106be4496740220479e1c5c24b5f7a
 
 depends_lib-append      port:p${perl5.major}-getopt-long
 depends_run-append      port:git

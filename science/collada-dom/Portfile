@@ -22,7 +22,7 @@ homepage        http://collada.org/mediawiki/index.php/Portal:COLLADA_DOM
 master_sites    sourceforge:project/collada-dom/Collada%20DOM/Collada%20DOM%20${branch}
 
 checksums       rmd160  e8ddb9430d667856eb0fbf69106cd877784f42f1 \
-                sha256  5ca2d12f744bdceff0066ed3067b3b23d6859581fb0d657f98ba4487d8fa3896
+sha256  5ca2d12f744bdceff0066ed3067b3b23d6859581fb0d657f98ba4487d8fa3896
 
 extract.suffix .tgz
 

@@ -34,8 +34,8 @@ master_sites    http://www.mplayerhq.hu/MPlayer/releases/ \
 use_xz          yes
 
 checksums           sha1    11db20434a4e1aabb9c52f7712241dae1b3730e3 \
-                    rmd160  b6688b186f41267ca3cec59c67afe34396c51ade \
-                    sha256  3ad0846c92d89ab2e4e6fb83bf991ea677e7aa2ea775845814cbceb608b09843
+rmd160  b6688b186f41267ca3cec59c67afe34396c51ade \
+sha256  3ad0846c92d89ab2e4e6fb83bf991ea677e7aa2ea775845814cbceb608b09843
 
 # Do not use the following environment variables, otherwise the build phase
 # will fail.

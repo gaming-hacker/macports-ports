@@ -19,7 +19,7 @@ homepage            https://pypi.python.org/pypi/Flask-MongoAlchemy
 master_sites        pypi:F/${real_name}/
 distname            ${real_name}-${version}
 checksums           rmd160  35d2413179befa42bf644418f0fa192cd445997a \
-                    sha256  4468cef1b2119971d721162133d8f15314b92439b812b3f4d1d2e0d32dbae03c
+sha256  4468cef1b2119971d721162133d8f15314b92439b812b3f4d1d2e0d32dbae03c
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-flask \

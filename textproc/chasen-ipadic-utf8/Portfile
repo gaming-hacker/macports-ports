@@ -21,7 +21,7 @@ distname            ${dicname}-${version}
 master_sites        sourceforge_jp:${dicname}/24435
 
 checksums           rmd160  5e37c750801df63439032be4954c4b63a44012cb \
-                    sha256  ba2744cc16142159b330075e13eed4565908915ac95a790d38dea540e0963c1c
+sha256  ba2744cc16142159b330075e13eed4565908915ac95a790d38dea540e0963c1c
 
 depends_build       port:nkf
 depends_lib         port:chasen-base

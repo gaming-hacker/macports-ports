@@ -14,7 +14,7 @@ distname                mediawiki.el
 master_sites            https://launchpadlibrarian.net/127264410/
 
 checksums           rmd160  35b75da2e09931bfd0b4b0746a599c6fac60a024 \
-                    sha256  9ebc5c1156af54bb533eae7273ef567c2f0cadbe870be9b4759ea70a214ff351
+sha256  9ebc5c1156af54bb533eae7273ef567c2f0cadbe870be9b4759ea70a214ff351
 extract.suffix
 use_configure       no
 

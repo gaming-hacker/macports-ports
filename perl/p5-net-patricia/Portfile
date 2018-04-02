@@ -18,7 +18,7 @@ description         Patricia Trie perl module for fast IP address lookups
 long_description    ${description}
 
 checksums           rmd160  e16e5731e2911fa6770285977b6385bd77323e63 \
-                    sha256  70835a926e1c5a8d0324c72fffee82eeb7ec6c141dee04fd446820b64f71c552
+sha256  70835a926e1c5a8d0324c72fffee82eeb7ec6c141dee04fd446820b64f71c552
 
 if {${perl5.major} != ""} {
 depends_lib-append  port:p${perl5.major}-socket6

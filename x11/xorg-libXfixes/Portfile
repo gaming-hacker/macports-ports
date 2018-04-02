@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXfixes-${version}
 checksums           sha1    ca86342d129c02435a9ee46e38fdf1a04d6b4b91 \
-                    rmd160  06d1b4b5f0137081dbede802688172c3f07d9d02 \
-                    sha256  de1cd33aff226e08cefd0e6759341c2c8e8c9faf8ce9ac6ec38d43e287b22ad6
+rmd160  06d1b4b5f0137081dbede802688172c3f07d9d02 \
+sha256  de1cd33aff226e08cefd0e6759341c2c8e8c9faf8ce9ac6ec38d43e287b22ad6
 
 use_bzip2   yes
 use_parallel_build      yes

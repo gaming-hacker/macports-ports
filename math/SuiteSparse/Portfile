@@ -26,7 +26,7 @@ distname            SuiteSparse-${version}
 worksrcdir          ${name}
 
 checksums           rmd160  9a2fa65845564efad79311f2ff8573217bd79f0d \
-                    sha256  e8023850bc30742e20a3623fabda02421cb5774b980e3e7c9c6d9e7e864946bd
+sha256  e8023850bc30742e20a3623fabda02421cb5774b980e3e7c9c6d9e7e864946bd
 
 # fix Mac configuration file
 

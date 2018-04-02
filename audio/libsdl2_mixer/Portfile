@@ -20,7 +20,7 @@ master_sites    ${homepage}release/
 distname        ${my_name}-${version}
 
 checksums       rmd160 f748e93033cf5e2fb9fbd8bed86459a7b4d40c76 \
-                sha256 4e615e27efca4f439df9af6aa2c6de84150d17cbfd12174b54868c12f19c83bb
+sha256 4e615e27efca4f439df9af6aa2c6de84150d17cbfd12174b54868c12f19c83bb
 
 depends_build   port:pkgconfig
 depends_lib     port:libsdl2 \

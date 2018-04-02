@@ -12,6 +12,6 @@ description         PEAR Numbers_Words package
 long_description    ${description}
 
 checksums           rmd160  541976d5413a7ac52fde640d6cfa149994980761 \
-                    sha256  93aa2b8d370a9d87d1ae2595b4f1b7b78c18e0f06cd94a6eda042b6bbeb14838
+sha256  93aa2b8d370a9d87d1ae2595b4f1b7b78c18e0f06cd94a6eda042b6bbeb14838
 
 depends_lib-append  port:pear-Math_BigInteger

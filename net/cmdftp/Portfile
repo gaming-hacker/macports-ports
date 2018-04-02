@@ -23,6 +23,6 @@ platforms        darwin
 master_sites     http://download.savannah.nongnu.org/releases/cmdftp/ \
                  http://download-mirror.savannah.nongnu.org/releases/cmdftp/
 checksums        rmd160  1d846e243e8c3cf19fb2e7641f1f3bb8426a9c27 \
-                 sha256  e769f06bf81473edd88ab006bb38607f5dec0e277306b612dd80d4d4c655b45d
+sha256  e769f06bf81473edd88ab006bb38607f5dec0e277306b612dd80d4d4c655b45d
 patchfiles       patch-configure.diff
 configure.args   --mandir=${prefix}/share/man

@@ -12,7 +12,7 @@ description         PEAR Net_Dict package
 long_description    ${description}
 
 checksums           rmd160  4fe94607f2c3de022885764ccdf9e46cbe9b524c \
-                    sha256  8080ae780c242c1b0c61d9a5845b8e4235cd399f7d3a7ae07d3a2588d46c6330
+sha256  8080ae780c242c1b0c61d9a5845b8e4235cd399f7d3a7ae07d3a2588d46c6330
 
 depends_lib-append  port:pear-Net_Socket \
                     port:pear-Cache

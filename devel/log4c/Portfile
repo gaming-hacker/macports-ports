@@ -20,6 +20,6 @@ homepage            http://log4c.sourceforge.net/
 master_sites        sourceforge:project/log4c/log4c/${version}/
 
 checksums           rmd160  4911410e8c51f3c794838606313bfe0bab920272 \
-                    sha256  5991020192f52cc40fa852fbf6bbf5bd5db5d5d00aa9905c67f6f0eadeed48ea
+sha256  5991020192f52cc40fa852fbf6bbf5bd5db5d5d00aa9905c67f6f0eadeed48ea
 
 depends_lib         port:expat

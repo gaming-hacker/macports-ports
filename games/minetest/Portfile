@@ -22,11 +22,11 @@ master_sites            ${github.master_sites}:main \
                         ${game_mastersite}:game
 
 checksums               ${main_distfile} \
-                        rmd160  3a7659f763f8b71b1b1d5aa8e505ccff4f811980 \
-                        sha256  e3550ed945d380fa72a951af008d49df538d5c6baa7726eca5109a79374156bb \
+rmd160  3a7659f763f8b71b1b1d5aa8e505ccff4f811980 \
+sha256  e3550ed945d380fa72a951af008d49df538d5c6baa7726eca5109a79374156bb \
                         ${game_distfile} \
-                        rmd160  b48784ac006f82c3e6ca91667a4d1fe7d98f604d \
-                        sha256  ea914555949b4faccda5e13143cb021d2f9a5fa19abd1f5e4b7b65004cbd2b5a
+rmd160  b48784ac006f82c3e6ca91667a4d1fe7d98f604d \
+sha256  ea914555949b4faccda5e13143cb021d2f9a5fa19abd1f5e4b7b65004cbd2b5a
 
 # rename directory - had to steal this out of the github portgroup
 post-extract {

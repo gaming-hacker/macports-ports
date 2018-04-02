@@ -15,7 +15,7 @@ long_description    Crypt::OpenSSL::Random provides the ability to seed and quer
 platforms           darwin
 
 checksums           rmd160  64d68cd1db9659e6f10783ee6d1d06d7b8632abb \
-                    sha256  bb8c81c6a39b9b13a22d818ee9a746242f136f0fadceb6b9776ae615e7524c7a
+sha256  bb8c81c6a39b9b13a22d818ee9a746242f136f0fadceb6b9776ae615e7524c7a
 
 if {${perl5.major} != ""} {
     depends_lib-append \

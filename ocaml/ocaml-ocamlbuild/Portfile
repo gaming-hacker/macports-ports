@@ -20,7 +20,7 @@ long_description    \
 platforms           darwin
 
 checksums           rmd160  b626410cfc5c9e2b91edf92d4a5d69892ccfd85a \
-                    sha256  273eaccd9fb77c215e7e5cd44f530a0905f53f4ad94ef1e486297cd2fa2c0a02
+sha256  273eaccd9fb77c215e7e5cd44f530a0905f53f4ad94ef1e486297cd2fa2c0a02
 
 configure.pre_args
 configure.args      OCAMLBUILD_PREFIX=${prefix} \

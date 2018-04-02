@@ -20,7 +20,7 @@ homepage            https://bellard.org/bpg/
 master_sites        ${homepage}
 
 checksums           rmd160  9d2602b5871f9b86f321e8971de16b97c5c94a98 \
-                    sha256  05035862ff4ffca0280261871486f44e74c4af4337c931e0858483551e6efe25
+sha256  05035862ff4ffca0280261871486f44e74c4af4337c931e0858483551e6efe25
 
 depends_build       port:pkgconfig
 

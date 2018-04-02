@@ -8,7 +8,7 @@ github.setup        logrotate logrotate 3.12.2
 github.tarball_from releases
 use_xz              yes
 checksums           rmd160  b02ec912c7c2be7593bb156a07aaba8c34f92b74 \
-                    sha256  70c2037f654c5e2c6c3b386212049272a036b7dd37f36a486f01c7df20765551
+sha256  70c2037f654c5e2c6c3b386212049272a036b7dd37f36a486f01c7df20765551
 categories          sysutils
 platforms           darwin
 license             GPL-2

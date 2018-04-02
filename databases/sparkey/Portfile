@@ -17,6 +17,6 @@ license             Apache-2
 depends_lib         port:snappy
 
 checksums           rmd160  013016a5ac351c8817a6b6bb24fd85015db2c12d \
-                    sha256  9f4369e0d958f9d01f0165a424673c35b67d16db51fea49a118607a2e5307143
+sha256  9f4369e0d958f9d01f0165a424673c35b67d16db51fea49a118607a2e5307143
 
 use_autoreconf      yes

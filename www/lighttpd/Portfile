@@ -23,7 +23,7 @@ master_sites                http://download.lighttpd.net/lighttpd/releases-${bra
 use_xz                      yes
 
 checksums                   rmd160  4a16f922b283612276a40fee2b809418f9bfa733 \
-                            sha256  0f8ad5aac7529d7b948b9d7e8cd0b4a9e177309d85d6bf6516e28e6e40d74f36 \
+sha256  0f8ad5aac7529d7b948b9d7e8cd0b4a9e177309d85d6bf6516e28e6e40d74f36 \
 size    708396
 
 depends_build-append        port:pkgconfig

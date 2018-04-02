@@ -21,7 +21,7 @@ long_description    ${description} \
 homepage            http://threadingbuildingblocks.org/
 
 checksums           rmd160  4f3d06526e4bd6ce6954480e39a153b3b0db24cc \
-                    sha256  1ecc7eda046e54a2985f2d333a706ee6528472772bb7b5979b739b6f45638510
+sha256  1ecc7eda046e54a2985f2d333a706ee6528472772bb7b5979b739b6f45638510
 
 use_configure       no
 

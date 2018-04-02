@@ -23,7 +23,7 @@ master_sites        http://ftp.gnome.org/pub/GNOME/teams/releng/tarballs-needing
 distname            mozjs-${version}gnome1
 
 checksums           rmd160  65e4ffaedab76dc5a74020e0156d35536e5acb5a \
-                    sha256  31697943b1dbbb51ba9aee35b8269a353c487d7af4d336010b90054dc4f9b0af
+sha256  31697943b1dbbb51ba9aee35b8269a353c487d7af4d336010b90054dc4f9b0af
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \

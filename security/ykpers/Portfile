@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        https://developers.yubico.com/yubikey-personalization/Releases/
 
 checksums           rmd160  8b515ceccba4fbd8a01f91b54d3ac5c049503a5a \
-                    sha256  9ffdb938121a867aa0b350b49daff5807884c2268dfe6d245d133474cd9c5256
+sha256  9ffdb938121a867aa0b350b49daff5807884c2268dfe6d245d133474cd9c5256
 
 depends_lib         port:libyubikey
 

@@ -32,7 +32,7 @@ long_description                libQGLViewer is a C++ library based on Qt that e
 master_sites                    ${homepage}src/
 
 checksums                       rmd160  242c5d3ac42ac878cc1ad0b5b7eaa5f434ef9e89 \
-                                sha256  53daefd7981a3ff7719ee55c368226807791d916ed988dde0aa0eac89686389d
+sha256  53daefd7981a3ff7719ee55c368226807791d916ed988dde0aa0eac89686389d
 
 patchfiles                      patch-QGLViewer.pro.diff \
                                 patch-examples.pri.diff  \

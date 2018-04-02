@@ -16,7 +16,7 @@ master_sites        https://people.freedesktop.org/~mccann/dist/
 use_bzip2           yes
 
 checksums           rmd160  68c5bea866c8db3854a4172860bdbb9dc7e4cccc \
-                    sha256  cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14
+sha256  cb518b20eef05ec2e82dda1fa89a292c1760dc023aba91b8aa69bafac85e8a14
 
 depends_build       port:pkgconfig \
                     port:intltool \

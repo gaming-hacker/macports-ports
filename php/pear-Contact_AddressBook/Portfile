@@ -12,7 +12,7 @@ description         PEAR Contact_AddressBook package
 long_description    ${description}
 
 checksums           rmd160  2cee2163518910a5edc1f9e34676cee7c77ba6f6 \
-                    sha256  932011f3c06e65ac861d1c7617567c5acda1366aa286e51d52d8d99d10bc8ee8
+sha256  932011f3c06e65ac861d1c7617567c5acda1366aa286e51d52d8d99d10bc8ee8
 
 depends_lib-append  port:pear-File \
                     port:pear-Net_UserAgent_Detect

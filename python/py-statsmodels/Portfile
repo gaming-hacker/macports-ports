@@ -27,7 +27,7 @@ master_sites        pypi:s/statsmodels/
 distname            statsmodels-${version}
 
 checksums           rmd160  9e4226caca648f5398a74776822701c42b09da05 \
-                    sha256  26431ab706fbae896db7870a0892743bfbb9f5c83231644692166a31d2d86048
+sha256  26431ab706fbae896db7870a0892743bfbb9f5c83231644692166a31d2d86048
 
 if {${name} ne ${subport}} {
     depends_build-append \

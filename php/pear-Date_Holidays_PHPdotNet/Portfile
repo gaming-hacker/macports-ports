@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_PHPdotNet package
 long_description    ${description}
 
 checksums           rmd160  64a62dc6505e3c3184da246481a7db4629106584 \
-                    sha256  fc47cd41f5d74f12af7ba6821840c583722743b4dcb29106ea322cf0911c516a
+sha256  fc47cd41f5d74f12af7ba6821840c583722743b4dcb29106ea322cf0911c516a
 
 depends_lib-append  port:pear-Date_Holidays

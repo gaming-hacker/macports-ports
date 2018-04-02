@@ -12,6 +12,6 @@ description         PEAR Services_UseKetchup package
 long_description    ${description}
 
 checksums           rmd160  f9ced1796e746770262e120ee50c60527a2628d4 \
-                    sha256  ef9d65e4d2c08b2ad5a7c868aec260a5f8113a2f512e1340318f10169c2c0a67
+sha256  ef9d65e4d2c08b2ad5a7c868aec260a5f8113a2f512e1340318f10169c2c0a67
 
 depends_lib-append  port:pear-HTTP_Request2

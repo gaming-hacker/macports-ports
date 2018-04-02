@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        https://github.com/mmottl/pcre-ocaml/releases/download/v${version}/
 
 checksums           rmd160  d4e6b89a92753465352f1a42e1ba90dcdca90eff \
-                    sha256  6495ecf25ed6a69fd14fda472f9fac9853dde2aee9944f6b6c0111d458c1039b
+sha256  6495ecf25ed6a69fd14fda472f9fac9853dde2aee9944f6b6c0111d458c1039b
 
 distname            pcre-ocaml-${version}
 

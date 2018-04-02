@@ -22,7 +22,7 @@ homepage            http://www.opencsg.org/
 master_sites        ${homepage}
 
 checksums           rmd160  d2bf9fad3691b0ddb41369d526379303121ffca6 \
-                    sha256  d952ec5d3a2e46a30019c210963fcddff66813efc9c29603b72f9553adff4afb
+sha256  d952ec5d3a2e46a30019c210963fcddff66813efc9c29603b72f9553adff4afb
 
 depends_lib-append  port:glew
 

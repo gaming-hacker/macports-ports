@@ -18,7 +18,7 @@ long_description    The Unicode consortium provides a file containing \
                     can access these data easily.
 
 checksums           rmd160  4c41e61f971b9ba0b04110a627996418585e05f0 \
-                    sha256  2d1e6dc720bed950c0219435df804bc0b90b3e89667986b20477fc79a2b0bca9
+sha256  2d1e6dc720bed950c0219435df804bc0b90b3e89667986b20477fc79a2b0bca9
 
 use_autoreconf      yes
 

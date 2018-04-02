@@ -23,7 +23,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  af4bf6b671f609dc1540de00d3e400d6ee2b365f \
-                    sha256  e974bc3a01260715145083c49dc28d365bb43f961ee7f6a2850c10562dbe6c5d
+sha256  e974bc3a01260715145083c49dc28d365bb43f961ee7f6a2850c10562dbe6c5d
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -18,7 +18,7 @@ description             object-oriented binding to libev
 long_description        PHP extension providing an object-oriented binding to the libev event-loop library.
 
 checksums               rmd160  d28bb3b506a419f20abcc4210776faa78d9c89e3 \
-                        sha256  c4bff3c324447d6e10e8fa5d3236bc86dec5c79ac6b528d08fe62c7dbd7378e3
+sha256  c4bff3c324447d6e10e8fa5d3236bc86dec5c79ac6b528d08fe62c7dbd7378e3
 
 use_parallel_build      yes
 

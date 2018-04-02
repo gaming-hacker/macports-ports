@@ -15,7 +15,7 @@ description         This is a Perl extension interface to expat.
 long_description    A perl module for parsing XML documents using expat.
 
 checksums           rmd160  59c4f47030ef7d753ddf51e604c0fa505243c8f2 \
-                    sha256  1ae9d07ee9c35326b3d9aad56eae71a6730a73a116b9fe9e8a4758b7cc033216
+sha256  1ae9d07ee9c35326b3d9aad56eae71a6730a73a116b9fe9e8a4758b7cc033216
 
 if {${perl5.major} != ""} {
     depends_lib-append \

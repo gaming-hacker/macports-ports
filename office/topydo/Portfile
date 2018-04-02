@@ -21,7 +21,7 @@ long_description \
     creation date and use relative dates).
 
 checksums           rmd160  c113b9d4a5660eae9f2d3f2a03267c9741d26762 \
-                    sha256  d600d84a7107147454a6de23a1ddddc2a0b6e5a9028c56647f5729f3c36664d3
+sha256  d600d84a7107147454a6de23a1ddddc2a0b6e5a9028c56647f5729f3c36664d3
 
 python.default_version  36
 

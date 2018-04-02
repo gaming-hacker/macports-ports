@@ -25,9 +25,9 @@ long_description \
     Detex ${description}.
 
 checksums \
-    md5 7a96b647f43bb077323cde92faa1e893 \
-    sha1 57691f8e4dd52cbf632f38abebfd8c3725de019b \
-    rmd160 983ea90de9e3559317baf4a71de0e8de47863b7d
+md5 7a96b647f43bb077323cde92faa1e893 \
+sha1 57691f8e4dd52cbf632f38abebfd8c3725de019b \
+rmd160 983ea90de9e3559317baf4a71de0e8de47863b7d
 
 patchfiles \
     patch-Makefile.diff

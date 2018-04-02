@@ -26,7 +26,7 @@ master_sites        pypi:t/tables/ \
                     http://sourceforge.net/projects/pytables/files/pytables/${version}
 
 checksums           rmd160  bf652291d53a7a2078be2f774f0fe67dda5eb1cc \
-                    sha256  fdbbea4edb6bad0ac0e53fc7bc6970e78e12eef4944aa4146bcdcb573201676c
+sha256  fdbbea4edb6bad0ac0e53fc7bc6970e78e12eef4944aa4146bcdcb573201676c
 
 distname            ${realname}-${version}
 

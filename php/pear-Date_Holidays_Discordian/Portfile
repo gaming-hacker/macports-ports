@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_Discordian package
 long_description    ${description}
 
 checksums           rmd160  4d3486ef0ac75ee79af8f5dd906a18200d088821 \
-                    sha256  8243f408fe23947f3a1ce2dcf3180894bacc8d611397bb8a03ad0ba1a80c2401
+sha256  8243f408fe23947f3a1ce2dcf3180894bacc8d611397bb8a03ad0ba1a80c2401
 
 depends_lib-append  port:pear-Date_Holidays

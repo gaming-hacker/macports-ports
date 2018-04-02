@@ -17,7 +17,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 
 checksums           rmd160  fddf656b6add580592b0f26546e2c24f9358b494 \
-                    sha256  ea9a1aee409e0d7e97bc69a0c595cdcc93053ff7c6a92d427ca37fea6e93ddec
+sha256  ea9a1aee409e0d7e97bc69a0c595cdcc93053ff7c6a92d427ca37fea6e93ddec
 
 depends_lib-append  port:kdelibs4 \
                     port:falcon

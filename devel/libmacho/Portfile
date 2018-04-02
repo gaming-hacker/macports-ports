@@ -19,7 +19,7 @@ master_sites            http://opensource.apple.com/tarballs/cctools/
 distname                cctools-${version}
 
 checksums               rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
-                        sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
+sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
 
 use_configure           no
 

@@ -19,7 +19,7 @@ master_sites        sourceforge:project/nsrlquery/nsrllookup/${branch}
 use_bzip2           yes
 
 checksums           rmd160  8d07f29938cc9d2ae7a6d7c66327d30f71a08831 \
-                    sha256  610f055c0795c7b23cf05e32cc98bbfb417983f55a9538f21a8ccf8edae7dab7
+sha256  610f055c0795c7b23cf05e32cc98bbfb417983f55a9538f21a8ccf8edae7dab7
 
 configure.args      --disable-silent-rules
 

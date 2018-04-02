@@ -16,7 +16,7 @@ homepage            http://www.opus-codec.org
 master_sites        https://archive.mozilla.org/pub/opus/
 
 checksums           rmd160  b9fcc6fd243b45c853aa64137f006d71d0c7cc2b \
-                    sha256  48e03526ba87ef9cf5f1c47b5ebe3aa195bd89b912a57060c36184a6cd19412f
+sha256  48e03526ba87ef9cf5f1c47b5ebe3aa195bd89b912a57060c36184a6cd19412f
 
 depends_build       port:pkgconfig
 

@@ -16,4 +16,4 @@ description         Python bindings for Sundown, a markdown parsing library
 long_description    ${description}
 
 checksums           rmd160  8b9b989deb11215f665101bfe1907330fa1e4baf \
-                    sha256  5d9997ea8d30fa9705889715cd5aa02663c44b97c19147a2cb147ad4d1c00c46
+sha256  5d9997ea8d30fa9705889715cd5aa02663c44b97c19147a2cb147ad4d1c00c46

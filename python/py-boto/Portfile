@@ -24,7 +24,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  2ae400bf8f00712f3167df69e0c92c38b43676dc \
-                    sha256  053d64727b3bd7d24a64163d28feaa044257c5f49343f2c6cdd991c9fd4aab3b
+sha256  053d64727b3bd7d24a64163d28feaa044257c5f49343f2c6cdd991c9fd4aab3b
 
 if {${name} ne ${subport}} {
     post-destroot {

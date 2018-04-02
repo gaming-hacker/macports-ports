@@ -15,6 +15,6 @@ long_description    This module provide functions to access and \
                     extract various kind of meta information from JPEG image files.
 
 checksums           rmd160  cf3203f35cd6315cb5502c3de6b20dca4decf6be \
-                    sha256  42e744ea3467d81ef470f1b098edc77b653789e7ac33455041ee8d6976ccf4e7
+sha256  42e744ea3467d81ef470f1b098edc77b653789e7ac33455041ee8d6976ccf4e7
 
 supported_archs     noarch

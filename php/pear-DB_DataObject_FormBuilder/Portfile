@@ -12,7 +12,7 @@ description         PEAR DB_DataObject_FormBuilder package
 long_description    ${description}
 
 checksums           rmd160  ed52b193816ca8be4b2841e8c92d2c02d280bc54 \
-                    sha256  078de1cdded673e100b0e7785fc5da2609f89a725676057581240446aa6fdb81
+sha256  078de1cdded673e100b0e7785fc5da2609f89a725676057581240446aa6fdb81
 
 depends_lib-append  port:pear-DB_DataObject \
                     port:pear-HTML_QuickForm

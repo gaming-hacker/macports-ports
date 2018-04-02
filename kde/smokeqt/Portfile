@@ -22,7 +22,7 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  17898f7b22691f53201f4094f95b67e455991614 \
-                    sha256  2939d6377ee22e64d28be7c7705ebda088a7f65efb2246d4114c41bb4276b909
+sha256  2939d6377ee22e64d28be7c7705ebda088a7f65efb2246d4114c41bb4276b909
 
 #Binaries do not link to openssl
 license_noconflict  openssl

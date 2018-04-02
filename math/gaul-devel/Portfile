@@ -22,8 +22,8 @@ master_sites						sourceforge:gaul
 distname								${name}-${version}-${revision}
 
 checksums								md5			3a832c882b0df0f5c46f733d360fd7bb \
-												sha1		2ec57a5bce2ff7fc9f9c3453b2ea2d3aec248350 \
-												rmd160	efd4f1dad25bbe487e1e8bd56cb499a07c92a1e7
+sha1		2ec57a5bce2ff7fc9f9c3453b2ea2d3aec248350 \
+rmd160	efd4f1dad25bbe487e1e8bd56cb499a07c92a1e7
 
 # Finds out the number of CPU on the machine
 

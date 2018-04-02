@@ -42,14 +42,14 @@ distfiles           otp_src_${version}${extract.suffix}                    \
                     otp_doc_html_${version}${extract.suffix}
 
 checksums           otp_src_20.3.tar.gz \
-                    rmd160  769c8e98a8e1f55a5e999e90dba154b2a4ebb9bd \
-                    sha256  4e19e6c403d5255531c0b870f19511c8b8e3b080618e4f9efcb44d905935b2a1 \
+rmd160  769c8e98a8e1f55a5e999e90dba154b2a4ebb9bd \
+sha256  4e19e6c403d5255531c0b870f19511c8b8e3b080618e4f9efcb44d905935b2a1 \
                     otp_doc_man_20.3.tar.gz \
-                    rmd160  63780bb536982954386942eadb44474b87c14016 \
-                    sha256  17e0b2f94f11576a12526614a906ecad629b8804c25e6c18523f7c4346607112 \
+rmd160  63780bb536982954386942eadb44474b87c14016 \
+sha256  17e0b2f94f11576a12526614a906ecad629b8804c25e6c18523f7c4346607112 \
                     otp_doc_html_20.3.tar.gz \
-                    rmd160  224d21e43818fa12b079ecbf10dbf0f3bcfd1957 \
-                    sha256  8099b62e9fa24b3f90eaeda151fa23ae729c8297e7d3fd8adaca865b35a3125d
+rmd160  224d21e43818fa12b079ecbf10dbf0f3bcfd1957 \
+sha256  8099b62e9fa24b3f90eaeda151fa23ae729c8297e7d3fd8adaca865b35a3125d
 
 pre-patch           { file rename ${workpath}/otp_src_${version} ${workpath}/${name}-${version} }
 

@@ -23,6 +23,6 @@ long_description    Net::Ping::External is a module which interfaces \
 platforms           darwin
 
 checksums           rmd160  cc10a4b7264d880954f96c8838533b2cd8a3134e \
-                    sha256  aad917fc678e774670b2b94072fd368d97fc09537f2cc802ea2b51398dec04fb
+sha256  aad917fc678e774670b2b94072fd368d97fc09537f2cc802ea2b51398dec04fb
 
 supported_archs     noarch

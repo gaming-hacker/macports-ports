@@ -20,8 +20,8 @@ use_bzip2       yes
 distname        $my_name-$version
 
 checksums       md5     a17ad952813ed86f520de8e07194a2bf \
-                sha1    de7e66aff141c4c64bc25cdb85193fab0899b983 \
-                rmd160  92d6536ed28ae760ea1519fea68565d29249dd33
+sha1    de7e66aff141c4c64bc25cdb85193fab0899b983 \
+rmd160  92d6536ed28ae760ea1519fea68565d29249dd33
 
 depends_build   port:pkgconfig
 

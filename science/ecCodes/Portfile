@@ -16,7 +16,7 @@ homepage            https://software.ecmwf.int/wiki/display/ECC
 master_sites        https://software.ecmwf.int/wiki/download/attachments/45757960
 distname            eccodes-${version}-Source
 checksums           rmd160  033a0089d295727357b4cf15fb1859f567d41050 \
-                    sha256  0a069ff616661e07ddfd3de60c53ae6c38738dc126476735d6b8e2b6475bf15f
+sha256  0a069ff616661e07ddfd3de60c53ae6c38738dc126476735d6b8e2b6475bf15f
 long_description \
     ecCodes is a package developed by ECMWF which provides an application programming interface and \
     a set of tools for decoding and encoding messages in the following formats: \

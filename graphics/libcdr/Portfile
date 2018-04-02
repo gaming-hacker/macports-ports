@@ -22,7 +22,7 @@ long_description \
 use_xz          yes
 
 checksums       sha256  4c8a6586920f7b040ce51fa375eb87507291e0de4f568469db25f52915bc1135 \
-                rmd160  c1fe5b74634385fc9c5ab71d45b1dd063469ded9
+rmd160  c1fe5b74634385fc9c5ab71d45b1dd063469ded9
 
 depends_build   port:pkgconfig
 

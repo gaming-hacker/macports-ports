@@ -22,7 +22,7 @@ long_description    This is a file system for converting flac files \
 homepage            https://khenriks.github.io/${name}/
 
 checksums           rmd160 1992a61ba191dc8e73f5fcf29ef1a2aae040587c \
-                    sha256 a47b5e351b7660e6f535a3c5b489c5a8191209957f8c0b8d066a5c221e8ecf92
+sha256 a47b5e351b7660e6f535a3c5b489c5a8191209957f8c0b8d066a5c221e8ecf92
 
 depends_build       port:pkgconfig
 

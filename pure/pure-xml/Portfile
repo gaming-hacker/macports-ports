@@ -15,7 +15,7 @@ long_description                ${name} is an interface to the libxml2 and \
                                 libxslt libraries for Pure.
 
 checksums                       rmd160  bdc802ca8c028d249f642811a4beea4a18afe34a \
-                                sha256  e862dec060917a285bc3befc90f4eb70b6cc33136fb524ad3aa173714a35b0f7
+sha256  e862dec060917a285bc3befc90f4eb70b6cc33136fb524ad3aa173714a35b0f7
 
 depends_build-append            port:pkgconfig
 

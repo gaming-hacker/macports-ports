@@ -25,4 +25,4 @@ long_description    IO gives support for \
                     IO::Poll
 
 checksums           rmd160  29b0d8eaafe87dfeb021862dfe97df58ebb833bb \
-                    sha256  89790db8b9281235dc995c1a85d532042ff68a90e1504abd39d463f05623e7b5
+sha256  89790db8b9281235dc995c1a85d532042ff68a90e1504abd39d463f05623e7b5

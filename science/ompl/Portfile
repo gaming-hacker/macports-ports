@@ -19,7 +19,7 @@ license             BSD
 master_sites        https://bitbucket.org/ompl/ompl/downloads
 distname            ${name}-${version}-Source
 checksums           rmd160  4b15e973c0e57067ec139d10bdae3a1a5f66e21d \
-                    sha256  c33e04089f7513780f4e87b6507182d5224cd604b0a4f4546ebb9f4a124c8f49
+sha256  c33e04089f7513780f4e87b6507182d5224cd604b0a4f4546ebb9f4a124c8f49
 depends_build-append port:pkgconfig
 depends_lib-append  port:boost port:ode port:flann port:triangle port:eigen3
 
@@ -56,7 +56,7 @@ http://ompl.kavrakilab.org/license.html#ricelicense"
         -DASSIMP_LIBRARIES=assimp -DASSIMP_INCLUDE_DIRS=${prefix}/include
     distname            omplapp-${version}-Source
     checksums           rmd160  9ae22006af015e03c412b0d08b0de0e86ccc4961 \
-                        sha256  d4920b476d19260fc887294259f0e068c776062898abf349ba848b9178ee6a39
+sha256  d4920b476d19260fc887294259f0e068c776062898abf349ba848b9178ee6a39
     notes "
     If you intend to use ompl_webapp, you need to first launch the redis server:
 

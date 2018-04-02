@@ -14,9 +14,9 @@ long_description    OpenGL Mathematics (GLM) is a header only C++ \
                     on the OpenGL Shading Language (GLSL) specification.
 homepage            http://glm.g-truc.net/
 checksums           md5     2d29bda96636d3fa9da1cad086b2d4ba \
-                    sha1    60a11f90381a3948b24e9e6e613e37f57c8738d0 \
-                    rmd160  6d92f09fb69df1190983b9450a3265733b6dc249 \
-                    sha256  f45ec3db6b5ee8d85e60dfc11c18bd3827562e3fdf828a447ea3627493aa136c
+sha1    60a11f90381a3948b24e9e6e613e37f57c8738d0 \
+rmd160  6d92f09fb69df1190983b9450a3265733b6dc249 \
+sha256  f45ec3db6b5ee8d85e60dfc11c18bd3827562e3fdf828a447ea3627493aa136c
 use_configure       no
 build {}
 destroot {

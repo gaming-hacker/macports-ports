@@ -16,7 +16,7 @@ description         List::AllUtils - mixes List::Utils and List::MoreUtils
 long_description    ${description}
 
 checksums           rmd160  60ccee5c70899881e807db2f84f849400f55d41e \
-                    sha256  e45aa65927ae1975a000cc2fed14274627fa5e2bd09bab826a5f2c41d17ef6cd
+sha256  e45aa65927ae1975a000cc2fed14274627fa5e2bd09bab826a5f2c41d17ef6cd
 
 if {${perl5.major} != ""} {
     depends_lib-append  \

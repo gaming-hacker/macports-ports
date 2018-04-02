@@ -12,8 +12,8 @@ long_description	Hoe is a simple rake/rubygems helper for project \
 homepage            http://www.zenspider.com/projects/hoe.html
 license				MIT
 checksums			md5 739d4ede50ba5bf9fabb03cef59c3737 \
-					sha1 d858ebf485f98d260a54ba27755d7892b3947641 \
-					rmd160 4610dbe1ffa0f4018248875f4524f9ee0bd5a668
+sha1 d858ebf485f98d260a54ba27755d7892b3947641 \
+rmd160 4610dbe1ffa0f4018248875f4524f9ee0bd5a668
 platforms           darwin
 
 depends_lib-append  port:rb-rake

@@ -30,7 +30,7 @@ depends_lib         port:dovecot2
 depends_build       port:autoconf port:automake port:gawk
 
 checksums           rmd160  a8bf7d2ff075c9632f17d5722ff4da65ba8cc1dc \
-                    sha256  914a967a8e62b7b3dff9f02fe835fc1dc853079f6254038bc9b157ecc0fd3527
+sha256  914a967a8e62b7b3dff9f02fe835fc1dc853079f6254038bc9b157ecc0fd3527
 
 pre-configure {
     system "cd ${worksrcpath} && ./autogen.sh"

@@ -15,7 +15,7 @@ description         MooseX::StrictConstructor - Make your object constructors bl
 long_description    ${description}
 
 checksums           rmd160  fad49f93cf159ab2c362627aec59cd7162778fe2 \
-                    sha256  c72a5ae9583706ccdec71d401dcb3054013a7536b750df1436613d858ea2920d
+sha256  c72a5ae9583706ccdec71d401dcb3054013a7536b750df1436613d858ea2920d
 
 if {${perl5.major} != ""} {
     depends_build-append \

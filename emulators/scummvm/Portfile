@@ -29,7 +29,7 @@ if {${subport} eq ${name}} {
     master_sites        http://scummvm.org/frs/${name}/${version}
     use_bzip2           yes
     checksums           sha256  46482e9f4eccd8590a86c70b024bdd0b319af8cbe8b7abaef592a9c52abbe1dc \
-                        rmd160  669f1e8c342e874d2478593898cb6840531eff01
+rmd160  669f1e8c342e874d2478593898cb6840531eff01
 
 } else {
 
@@ -42,7 +42,7 @@ if {${subport} eq ${name}} {
     github.setup        scummvm scummvm 3f7fcaec5f36b9eeeeb895f3ec078fb8e60068ca
     version             20180214
     checksums           rmd160  68402c98495c7630fbd107a61455fd7d4ff643f7 \
-                        sha256  5158d956e7308d8ca4d4beb156f240009fe83247ce920c9d9c9d470c533468c6
+sha256  5158d956e7308d8ca4d4beb156f240009fe83247ce920c9d9c9d470c533468c6
 }
 
 patchfiles-append   patch-scummvm-sdl2indet.diff

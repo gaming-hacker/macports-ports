@@ -17,7 +17,7 @@ long_description    Devel::OverloadInfo returns information about overloaded \
 platforms           darwin
 
 checksums           rmd160  2a7aeadd8744f038c441e057a9558f3e108a0209 \
-                    sha256  8bfde2ffa47c9946f8adc8cfc445c2f97b8d1cdd678111bee9f444e82f7aa6e7 \
+sha256  8bfde2ffa47c9946f8adc8cfc445c2f97b8d1cdd678111bee9f444e82f7aa6e7 \
 size    12449
 
 if {${perl5.major} != ""} {

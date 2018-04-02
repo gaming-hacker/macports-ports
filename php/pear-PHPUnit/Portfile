@@ -12,4 +12,4 @@ description         PEAR PHPUnit package
 long_description    ${description}
 
 checksums           rmd160  eb158046c24b37c958a0d0512f845013a339aeaf \
-                    sha256  74295279f94a5a4e26fcdb3db2a7efe79ec1dfb0fdce8867eb4177f75403e045
+sha256  74295279f94a5a4e26fcdb3db2a7efe79ec1dfb0fdce8867eb4177f75403e045

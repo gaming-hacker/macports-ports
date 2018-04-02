@@ -17,7 +17,7 @@ long_description    ${description} It uses Gtk+ 3.x for the frontend and ngspice
 platforms           darwin
 
 checksums           rmd160  7a5c06c6d7f260143ea0bbd9f92759beacde920d \
-                    sha256  d22ab0dc9f3717759983966ea3f7a8cd266e343fab47236ec4d841660bd72fa1
+sha256  d22ab0dc9f3717759983966ea3f7a8cd266e343fab47236ec4d841660bd72fa1
 
 # be careful not to overwrite build dependencies
 # declared by the waf port group

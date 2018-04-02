@@ -17,4 +17,4 @@ description         Perl extension for simple genrating of unique id's
 long_description    ${description}
 
 checksums           rmd160  8174480840118af9cf74f57578b48ae299ede14d \
-                    sha256  b6919ba49b9fe98bfdf3e8accae7b9b7f78dc9e71ebbd0b7fef7a45d99324ccb
+sha256  b6919ba49b9fe98bfdf3e8accae7b9b7f78dc9e71ebbd0b7fef7a45d99324ccb

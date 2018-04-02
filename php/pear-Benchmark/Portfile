@@ -12,4 +12,4 @@ description         PEAR Benchmark package
 long_description    ${description}
 
 checksums           rmd160  69f325561c3aee44bda742457ac3c0dd175d612e \
-                    sha256  b68c6ca9bfb3ba79e095117ff5e3e674ed9583692f4722b0196e8b3874a9c468
+sha256  b68c6ca9bfb3ba79e095117ff5e3e674ed9583692f4722b0196e8b3874a9c468

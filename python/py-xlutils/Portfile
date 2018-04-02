@@ -18,7 +18,7 @@ homepage            http://www.python-excel.org
 master_sites        pypi:x/xlutils/
 distname            xlutils-${version}
 checksums           rmd160  2cd03a91e3ffdbdfeb5374199894a416b67f54d4 \
-                    sha256  cdbde90603d626a45bf36d45368e5b83484b545d230fc91f10fad89b2d766384
+sha256  cdbde90603d626a45bf36d45368e5b83484b545d230fc91f10fad89b2d766384
 
 python.versions 27 36
 

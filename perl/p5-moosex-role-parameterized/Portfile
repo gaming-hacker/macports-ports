@@ -16,7 +16,7 @@ description         MooseX::Role::Parameterized - roles with composition paramet
 long_description    ${description}
 
 checksums           rmd160  5582381b499130cb3a08fc6dfd9c1523d4ff5dae \
-                    sha256  4846c12f7cd304419c983eb3654d303462d06a3a5f941e21c76957806c119d5e
+sha256  4846c12f7cd304419c983eb3654d303462d06a3a5f941e21c76957806c119d5e
 
 if {${perl5.major} != ""} {
     depends_build-append \

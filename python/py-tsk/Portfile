@@ -22,7 +22,7 @@ distname            pytsk-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  ae38d154d53a97e12520357ec295e32426834e6c \
-                    sha256  73e5b811611ac57fc8081c67f9f011c5fee23e85d2ee07a0de2ea5d91ff22dc0
+sha256  73e5b811611ac57fc8081c67f9f011c5fee23e85d2ee07a0de2ea5d91ff22dc0
 
 depends_lib-append  port:sleuthkit \
                     port:talloc

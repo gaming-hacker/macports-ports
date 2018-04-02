@@ -14,7 +14,7 @@ long_description    Template::Timer provides inline timings of the \
                     template processing througout your code.
 
 checksums           rmd160  23f4259205563cf4c0133d0c6853127386ff628d \
-                    sha256  b7314cb365209d93557b8054e0311ae8c3cb5d1c9d228d1eb3e3fc193a5b77b4
+sha256  b7314cb365209d93557b8054e0311ae8c3cb5d1c9d228d1eb3e3fc193a5b77b4
 
 platforms           darwin
 supported_archs     noarch

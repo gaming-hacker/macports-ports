@@ -12,6 +12,6 @@ description         PEAR File_DNS package
 long_description    ${description}
 
 checksums           rmd160  1c7ed91961e9d5a1ade1663af2ca68635554eb34 \
-                    sha256  8b13a6b6c3d72a4df30a6fd024f2e2d526beec0c119037403a4aecdfe5de51cb
+sha256  8b13a6b6c3d72a4df30a6fd024f2e2d526beec0c119037403a4aecdfe5de51cb
 
 depends_lib-append  port:pear-File

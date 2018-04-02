@@ -20,7 +20,7 @@ long_description                ${name} provides ${description}. \
                                 Gnumeric scripting plugins.
 
 checksums                       rmd160  478dcac5325fcabe502ec263bcc7ab5fcf7bafff \
-                                sha256  420265821f42f836ee714141e819c21091dd29839f8c72e7fff4aed8dd11b470
+sha256  420265821f42f836ee714141e819c21091dd29839f8c72e7fff4aed8dd11b470
 
 depends_build-append            port:pkgconfig
 

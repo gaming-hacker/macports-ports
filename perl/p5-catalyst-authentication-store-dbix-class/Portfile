@@ -16,7 +16,7 @@ long_description    The Catalyst::Authentication::Store::DBIx::Class class \
 platforms           darwin
 
 checksums           rmd160  079ddad5008789b9f3cd2e63caad5ed53d1f2b58 \
-                    sha256  7c579f2595285e64c3dcb5540334aa9a002443e1d4c8c83ab4493b90cc51b244
+sha256  7c579f2595285e64c3dcb5540334aa9a002443e1d4c8c83ab4493b90cc51b244
 
 if {${perl5.major} != ""} {
     depends_lib-append \

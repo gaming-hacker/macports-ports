@@ -17,7 +17,7 @@ long_description    The Cryptokit library for Objective Caml provides a \
 homepage            http://pauillac.inria.fr/~xleroy/software.html
 master_sites        https://forge.ocamlcore.org/frs/download.php/1229/
 checksums           rmd160  f161aefe0cfb0b706a926015566e4d5c0f8dd6fa \
-                    sha256  d3177e79e425b119b80acc63a85114a12e4c617f16803a69c080f460c4f037f1
+sha256  d3177e79e425b119b80acc63a85114a12e4c617f16803a69c080f460c4f037f1
 
 distname            cryptokit-${version}
 

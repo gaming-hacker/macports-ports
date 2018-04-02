@@ -21,7 +21,7 @@ distname            ${name}-${version}-${os.platform}-${configure.build_arch}
 worksrcdir          ${name}
 
 checksums           rmd160  2c7b9ad300383b609cedd7b345c1db19cbbe9403 \
-                    sha256  8a79546675927c63c7eded127382f1d35af66cd0ac1d3c14571441aaab1792fd
+sha256  8a79546675927c63c7eded127382f1d35af66cd0ac1d3c14571441aaab1792fd
 
 python.default_version 27
 

@@ -22,7 +22,7 @@ master_sites        http://www.clindberg.org/projects
 distname            ${name}-${version}.s
 worksrcdir          ${name}-${version}
 checksums           rmd160 2c789a7f9d618fc5ad92909d23dbe522d4a53965 \
-                    sha256 80e02a66840bd410a55f04e3c53eeae45027afce6e57a2d0d014671a0fb0550b
+sha256 80e02a66840bd410a55f04e3c53eeae45027afce6e57a2d0d014671a0fb0550b
 
 post-destroot     {
     move ${destroot}${applications_dir}/openman ${destroot}${prefix}/bin

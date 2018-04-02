@@ -13,4 +13,4 @@ description         PEAR XML_RPC package
 long_description    ${description}
 
 checksums           rmd160  b3faf847875d8e6813f10c5020fbb6670a762b26 \
-                    sha256  80e244582cd2d948f73142a0a43984a50fe916262825e70cb98ee95380026650
+sha256  80e244582cd2d948f73142a0a43984a50fe916262825e70cb98ee95380026650

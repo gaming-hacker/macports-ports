@@ -29,7 +29,7 @@ master_sites  http://software.ligo.org/lscsoft/source/lalsuite/
 use_xz        yes
 
 checksums     rmd160 6f6f445f3501871dbdf3beb2250fd1e50eaa26b9 \
-              sha256 2b997406b7bca358295e6d060919346fd5281ec0217a357c91849012bc2c9973
+sha256 2b997406b7bca358295e6d060919346fd5281ec0217a357c91849012bc2c9973
 
 set v                 27
 set pythonversion     [string range ${v} 0 end-1].[string index ${v} end]

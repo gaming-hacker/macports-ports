@@ -13,7 +13,7 @@ description         Override subroutines in a module for unit testing
 long_description    ${description}
 
 checksums           rmd160  4401fd6872bf5dc393738da3de59873881ded831 \
-                    sha256  7473742a0d600eb11766752c79a966570755168105ee4d4e33d90466b7339053
+sha256  7473742a0d600eb11766752c79a966570755168105ee4d4e33d90466b7339053
 
 platforms           darwin
 

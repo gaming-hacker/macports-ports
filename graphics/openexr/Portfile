@@ -15,7 +15,7 @@ homepage        http://www.openexr.com
 platforms       darwin
 master_sites    http://savannah.nongnu.org/download/openexr
 checksums       rmd160  a825ed42e731da3bc39f25ce2a310712a5b0f956 \
-                sha256  36a012f6c43213f840ce29a8b182700f6cf6b214bea0d5735594136b44914231
+sha256  36a012f6c43213f840ce29a8b182700f6cf6b214bea0d5735594136b44914231
 
 # avoid dependency on port:cctools
 configure.env-append NM=${prefix}/bin/nm
@@ -69,8 +69,8 @@ subport ilmbase {
     revision    0
     distname    ilmbase-${version}
     checksums   \
-        rmd160  b1adb0c96eff6b3554ddaf8f8bafe2cba8c114e3 \
-        sha256  ecf815b60695555c1fbc73679e84c7c9902f4e8faa6e8000d2f905b8b86cedc7
+rmd160  b1adb0c96eff6b3554ddaf8f8bafe2cba8c114e3 \
+sha256  ecf815b60695555c1fbc73679e84c7c9902f4e8faa6e8000d2f905b8b86cedc7
 
     # Bitrotted ucontext usage is buggy, don't bother with it.
     patchfiles-append patch-configure.diff
@@ -84,8 +84,8 @@ foreach pver ${python_versions} {
         revision    2
         distname    pyilmbase-${version}
         checksums                \
-            rmd160  9a6b711a2842b1e0124a43fc1c2148a2e7802710 \
-            sha256  68c968fec5c40930a2c692ccc88990faa50320ed74b88553a3632d7d02c87e1a
+rmd160  9a6b711a2842b1e0124a43fc1c2148a2e7802710 \
+sha256  68c968fec5c40930a2c692ccc88990faa50320ed74b88553a3632d7d02c87e1a
 
         # so long as boost can only be installed with one version of python at a time,
         #    conflict with all other pyilmbase ports
@@ -115,7 +115,7 @@ subport openexr_viewers {
     revision    0
     distname    openexr_viewers-${version}
     checksums   rmd160  5f3edc7a0c706faa75a9cd205c0ac85e988c6e09 \
-                sha256  f73fe2e4d19e8fc9317d6c34f156598ad43497bb9549f03feacb8ba095dd04e9
+sha256  f73fe2e4d19e8fc9317d6c34f156598ad43497bb9549f03feacb8ba095dd04e9
 
     depends_lib-append  \
         port:openexr                \

@@ -14,8 +14,8 @@ master_sites    xorg:individual/lib/
 
 distname    libXext-${version}
 checksums           sha1    43abab84101159563e68d9923353cc0b3af44f07 \
-                    rmd160  f8a0205ad002c993009ec5cb321e546277eb0823 \
-                    sha256  b518d4d332231f313371fdefac59e3776f4f0823bcb23cf7c7305bfb57b16e35
+rmd160  f8a0205ad002c993009ec5cb321e546277eb0823 \
+sha256  b518d4d332231f313371fdefac59e3776f4f0823bcb23cf7c7305bfb57b16e35
 use_bzip2   yes
 use_parallel_build      yes
 

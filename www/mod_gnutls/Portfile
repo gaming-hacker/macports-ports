@@ -22,7 +22,7 @@ homepage            https://mod.gnutls.org
 master_sites        ${homepage}/downloads/
 
 checksums           rmd160  66a1709e29fda9ca40e6bf0e0689f32ea1f7bcbd \
-                    sha256  3517dddef04e0cb64c4805799d1b749bb6273f99c3ac33634677210fbe60292b
+sha256  3517dddef04e0cb64c4805799d1b749bb6273f99c3ac33634677210fbe60292b
 
 depends_build       port:pkgconfig
 
@@ -36,7 +36,7 @@ if {[variant_isset apache22]} {
     version         0.6
     revision        2
     checksums       rmd160  252d4b1ec3a18931ef51a5ded3e8426f415150f4 \
-                    sha256  5fb2c79fd64f55faabde50c6ba3ef7b959825c8a6130152d00ca18f6d99bc041
+sha256  5fb2c79fd64f55faabde50c6ba3ef7b959825c8a6130152d00ca18f6d99bc041
 
     patchfiles      patch-src_Makefile.am.diff
 

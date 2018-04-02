@@ -13,4 +13,4 @@ description         PEAR HTTP_Upload package
 long_description    ${description}
 
 checksums           rmd160  ee1918a36175d9b0569039845210e01ff3884c7e \
-                    sha256  186574771c325530e4b8081bcd318f2bf6c93d20e27fa1037ac40959b3677200
+sha256  186574771c325530e4b8081bcd318f2bf6c93d20e27fa1037ac40959b3677200

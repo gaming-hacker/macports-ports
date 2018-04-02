@@ -24,7 +24,7 @@ homepage            http://potrace.sourceforge.net/
 master_sites        sourceforge:project/potrace/${version}/
 
 checksums           rmd160  3693c10fae055c36b9728a21f3d2739a3fa8df74 \
-                    sha256  a9b33904ace328340c850a01458199e0064e03ccaaa731bc869a842b1b8d529d
+sha256  a9b33904ace328340c850a01458199e0064e03ccaaa731bc869a842b1b8d529d
 
 depends_lib         port:zlib
 

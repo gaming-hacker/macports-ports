@@ -17,9 +17,9 @@ master_sites      ${homepage}assets/2007/2/23/
 distname          lighttpd-${version}
 worksrcdir        lighttpd-1.5.0
 checksums         ${distname}.tar.gz \
-                    md5 529909adbafee7e2c26bb427226f1457 \
-                    sha1 afe4ce968fc898404cd9e61e8e48b2ea3f6db5ca \
-                    rmd160 fc3bb80265e0090fce622822d4658568a5aa536c
+md5 529909adbafee7e2c26bb427226f1457 \
+sha1 afe4ce968fc898404cd9e61e8e48b2ea3f6db5ca \
+rmd160 fc3bb80265e0090fce622822d4658568a5aa536c
 depends_build     port:pkgconfig
 depends_lib       port:pcre \
                   port:zlib \

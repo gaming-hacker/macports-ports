@@ -16,7 +16,7 @@ long_description    ${description}
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  6c38bb83464a36546e22629675f881d42dbda4bd \
-                    sha256  17aa3aaab2f381bbcaffdc370002eaf28f2c341b538068d6586b2276a76464a1
+sha256  17aa3aaab2f381bbcaffdc370002eaf28f2c341b538068d6586b2276a76464a1
 
 if {${perl5.major} != ""} {
     depends_build-append \

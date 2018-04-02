@@ -12,6 +12,6 @@ description         PEAR CodeGen_PECL package
 long_description    ${description}
 
 checksums           rmd160  0761115161d32240c2a85a2400dc7d4845b3e729 \
-                    sha256  bbf20363beb2a2cae920b174cfae6297140d3cc536ea3dd00258f59340af1600
+sha256  bbf20363beb2a2cae920b174cfae6297140d3cc536ea3dd00258f59340af1600
 
 depends_lib-append  port:pear-CodeGen

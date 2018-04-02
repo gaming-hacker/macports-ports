@@ -30,7 +30,7 @@ distname                EO-${version}
 use_zip                 yes
 worksrcdir              eo
 checksums               rmd160  d0882988b4e6debbe059bfd4183ced54bf0f2d1d \
-                        sha256  230886e0c857a8497b2e1c892ff2bfa1d9d4115199d9267b3bdb89ff0f846850
+sha256  230886e0c857a8497b2e1c892ff2bfa1d9d4115199d9267b3bdb89ff0f846850
 
 depends_lib             port:gnuplot
 #TODO: Add support for mpi, openmp, boost

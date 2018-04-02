@@ -29,7 +29,7 @@ homepage                http://www.web-polygraph.org/
 master_sites            ${homepage}downloads/srcs/
 
 checksums               sha1    965af2502bfb68fe2a9f078fec9db2540de6cc76 \
-                        rmd160  7f1c40274d9aeac18caefc919416f57a473b7c5d
+rmd160  7f1c40274d9aeac18caefc919416f57a473b7c5d
 
 depends_lib             port:ncurses \
                         path:lib/libssl.dylib:openssl

@@ -23,6 +23,6 @@ homepage            http://surblhost.sourceforge.net/
 master_sites        sourceforge:project/surblhost/surblhost/${version}/
 
 checksums           rmd160  a762f7988b3e280a1127185f1293d8493f5df193 \
-                    sha256  159a54f2cee90c14e65a6138f09d129800b7b3826f3d2cb692c6fc06369b63a8
+sha256  159a54f2cee90c14e65a6138f09d129800b7b3826f3d2cb692c6fc06369b63a8
 
 patchfiles          patch-surblhost.c.diff

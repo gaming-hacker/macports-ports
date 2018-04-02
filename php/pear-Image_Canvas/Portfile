@@ -13,6 +13,6 @@ description         PEAR Image_Canvas package
 long_description    ${description}
 
 checksums           rmd160  e35d94f90e1f1a9cdd25458478009a7dbebafaaf \
-                    sha256  a4a837029a7ee403c970ac44a8617a67ec951c34173d0bdfa20ac940c31d131f
+sha256  a4a837029a7ee403c970ac44a8617a67ec951c34173d0bdfa20ac940c31d131f
 
 depends_lib-append  port:pear-Image_Color

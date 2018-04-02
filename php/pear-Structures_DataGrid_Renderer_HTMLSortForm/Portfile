@@ -12,7 +12,7 @@ description         PEAR Structures_DataGrid_Renderer_HTMLSortForm package
 long_description    ${description}
 
 checksums           rmd160  08eb1b7346a985be441962ab5bad31ed578eb810 \
-                    sha256  29253214efa23b9e3bf8ad737cd725b3dbb2745f43a54b4508855e5e45ace8f3
+sha256  29253214efa23b9e3bf8ad737cd725b3dbb2745f43a54b4508855e5e45ace8f3
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-HTML_QuickForm

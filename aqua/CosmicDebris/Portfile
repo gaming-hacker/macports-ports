@@ -23,8 +23,8 @@ distname            ${name}Source
 use_zip             yes
 
 checksums           md5     bcbfb5768bf689a6f668583a5bc64c61 \
-                    sha1    9d6462b3866cba3449848ffd632f36052bea9251 \
-                    rmd160  5849aa4da016cd954818d8bcffa079815ba2c37c
+sha1    9d6462b3866cba3449848ffd632f36052bea9251 \
+rmd160  5849aa4da016cd954818d8bcffa079815ba2c37c
 
 # current version uses NSMailDelivery which is not available in 64-bit
 supported_archs     i386 ppc

@@ -12,6 +12,6 @@ description         PEAR MDB2_Driver_mysql package
 long_description    ${description}
 
 checksums           rmd160  0be1f58a1ae7b0483791a91123a7d46a174b6504 \
-                    sha256  341f876e5acfc2e373746899fab6d538169aba67b323688d7c638561954b74ea
+sha256  341f876e5acfc2e373746899fab6d538169aba67b323688d7c638561954b74ea
 
 depends_lib-append  port:pear-MDB2

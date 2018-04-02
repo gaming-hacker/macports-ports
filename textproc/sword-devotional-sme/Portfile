@@ -20,7 +20,7 @@ master_sites	http://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/
 dist_subdir		sword/${distname}-${version}
 use_zip			yes
 checksums		rmd160 3ad927f77d7f4ab902c527b342a7397a5c20f4ef \
-				sha256 d670d3428be14f3997a829fc44ebc48a764042f7a6ac5ac17df767a3abf98230
+sha256 d670d3428be14f3997a829fc44ebc48a764042f7a6ac5ac17df767a3abf98230
 depends_lib		lib:libsword:sword
 use_configure	no
 build			{}

@@ -18,7 +18,7 @@ extract.suffix
 set version_iplib   v3.0.0
 set version_g2clib  1.4.0
 checksums           rmd160  1aaef76c16ff871645da243a5799cae6631faea4 \
-                    sha256  d7f1a4f9872922c62b3c7818c022465532cca1f5666b75d3ac5735f0b2747793
+sha256  d7f1a4f9872922c62b3c7818c022465532cca1f5666b75d3ac5735f0b2747793
 long_description   \
     wgrib2 is a swiss army knife for grib2 files. \
     GRIB-2 has arrived and has begun replacing the the older standard GRIB-1. \

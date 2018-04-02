@@ -21,7 +21,7 @@ homepage            https://code.google.com/p/reaver-wps/
 master_sites        googlecode:reaver-wps
 
 checksums           rmd160  190f4481987c57d3ee956e5800287d5a69fd0516 \
-                    sha256  add3050a4a05fe0ab6bfb291ee2de8e9b8a85f1e64ced93ee27a75744954b22d
+sha256  add3050a4a05fe0ab6bfb291ee2de8e9b8a85f1e64ced93ee27a75744954b22d
 
 depends_lib         port:libpcap \
                     port:sqlite3

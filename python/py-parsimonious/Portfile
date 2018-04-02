@@ -23,7 +23,7 @@ long_description    Parsimonious aims to be the fastest arbitrary-lookahead \
                     you feed it a simplified sort of EBNF notation.
 
 checksums           rmd160  76298d13ac82492edb8a0bfb8ce855befa2a0fc0 \
-                    sha256  bda3155ba24fe5e254ee86851942f66cb823d1c3bba683b5efe6b6fe643924d0
+sha256  bda3155ba24fe5e254ee86851942f66cb823d1c3bba683b5efe6b6fe643924d0
 
 if {${name} ne ${subport}} {
     depends_build-append \

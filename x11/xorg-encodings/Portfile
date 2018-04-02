@@ -19,8 +19,8 @@ distname            ${my_name}-${version}
 use_bzip2           yes
 
 checksums           md5     0f2d6546d514c5cc4ecf78a60657a5c1 \
-                    sha1    24ace2470403f85a0d393769204029bd8247992a \
-                    rmd160  ba753c09d1caa912f86da49b25bc9fb5e145c63a
+sha1    24ace2470403f85a0d393769204029bd8247992a \
+rmd160  ba753c09d1caa912f86da49b25bc9fb5e145c63a
 
 depends_build       port:mkfontscale bin:gzip:gzip
 

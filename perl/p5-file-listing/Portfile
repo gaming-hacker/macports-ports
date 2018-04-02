@@ -17,7 +17,7 @@ description         File::Listing - parse directory listing
 long_description    ${description}
 
 checksums           rmd160  f19e7c2f3189205c9c7b8885fbe91dcc1854904e \
-                    sha256  1e0050fcd6789a2179ec0db282bf1e90fb92be35d1171588bd9c47d52d959cf5
+sha256  1e0050fcd6789a2179ec0db282bf1e90fb92be35d1171588bd9c47d52d959cf5
 
 if {${perl5.major} != ""} {
     depends_lib-append \

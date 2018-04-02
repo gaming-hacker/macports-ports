@@ -12,7 +12,7 @@ description         PEAR XML_GRDDL package
 long_description    ${description}
 
 checksums           rmd160  7c605b0f79f94e881a48339ff6f8e9eee0739969 \
-                    sha256  2394be7145bbbf36a447e3c29930732b4b8ac0cd795b6485984fc7f002435ca7
+sha256  2394be7145bbbf36a447e3c29930732b4b8ac0cd795b6485984fc7f002435ca7
 
 depends_lib-append  port:pear-HTTP_Request2 \
                     port:pear-Net_URL2 \

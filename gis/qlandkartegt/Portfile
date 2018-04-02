@@ -22,7 +22,7 @@ homepage         http://www.qlandkarte.org/
 master_sites     sourceforge:project/qlandkartegt/qlandkartegt/QLandkarteGT%20${version}
 
 checksums        rmd160  df5f6f9e3cdf000ba9fc312d56ece7338dacf13e \
-                 sha256  9e0605ab8f4cbd27741b507f252f08370e9ccca4e05ec35878256c59b22a9be7
+sha256  9e0605ab8f4cbd27741b507f252f08370e9ccca4e05ec35878256c59b22a9be7
 
 depends_lib      port:libexif \
                  port:gdal \

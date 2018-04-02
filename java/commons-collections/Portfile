@@ -19,8 +19,8 @@ homepage		http://commons.apache.org/collections/
 distfiles		${distname}-src${extract.suffix}
 master_sites		apache:commons/collections/source/
 checksums		md5 031ce05872ddb0462f0dcce1e5babbe9 \
-			sha1 6925f4a487d58538a4d3ef11d63aefdd66ee2405 \
-			rmd160 850b2b710fb7811b71b0c347396ba55df3dc8e34
+sha1 6925f4a487d58538a4d3ef11d63aefdd66ee2405 \
+rmd160 850b2b710fb7811b71b0c347396ba55df3dc8e34
 
 worksrcdir		${name}-${version}-src
 

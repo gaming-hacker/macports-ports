@@ -19,7 +19,7 @@ homepage            http://apan.sourceforge.net
 master_sites        sourceforge:project/apan/apan/${version}
 
 checksums           rmd160  ab859f575799a6049a47afe5ffff9ed1f754ec43 \
-                    sha256  4b41e6750c161a492e4f56c2ac864c67418110cdf9f5188d94855bd5366827e3
+sha256  4b41e6750c161a492e4f56c2ac864c67418110cdf9f5188d94855bd5366827e3
 
 worksrcdir          apan-sql
 

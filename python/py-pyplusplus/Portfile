@@ -15,7 +15,7 @@ long_description    ${description}
 platforms           darwin
 supported_archs     noarch
 checksums           rmd160  e5ab5c318ce783475b90ac492283970d946b05f1 \
-                    sha256  5d2880dde8c5fa7720da2a7a03816d7ce594aa11548f77f5388d82636a4ec9fb
+sha256  5d2880dde8c5fa7720da2a7a03816d7ce594aa11548f77f5388d82636a4ec9fb
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-setuptools port:py${python.version}-pygccxml

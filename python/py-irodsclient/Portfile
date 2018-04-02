@@ -22,7 +22,7 @@ long_description    \
     agencies worldwide. This Python packages provides an client API.
 
 checksums           rmd160  130845a646344298b059a077a31b214399225e07 \
-                    sha256  972149fd44ea5cd2de600c61a7403f0525fe9300bb847f76f91f6a7154568ed6
+sha256  972149fd44ea5cd2de600c61a7403f0525fe9300bb847f76f91f6a7154568ed6
 
 python.versions 27 36
 

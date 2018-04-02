@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        http://ncmpcpp.rybczak.net/stable/
 use_bzip2           yes
 checksums           rmd160  28bc52b0fcc4bff9bd8ab006a9572985d9feeba5 \
-                    sha256  4df9570a1db4ba2dc9b759aab88b283c00806fb5d2bce5f5d27a2eb10e6888ff
+sha256  4df9570a1db4ba2dc9b759aab88b283c00806fb5d2bce5f5d27a2eb10e6888ff
 
 depends_build       port:pkgconfig
 

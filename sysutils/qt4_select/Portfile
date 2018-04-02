@@ -20,8 +20,8 @@ homepage                http://svn.macports.org/repository/macports/contrib/sele
 master_sites            ${homepage}
 distname                select-${version}
 checksums               md5     b24cecd12fc5567e544b25c5df34a255 \
-                        sha1    4aa312d7e0b9ede1ef015fcd941ff53a0329127a \
-                        rmd160  f121d366cdecc7d5331040abfd153334399d80d5
+sha1    4aa312d7e0b9ede1ef015fcd941ff53a0329127a \
+rmd160  f121d366cdecc7d5331040abfd153334399d80d5
 
 patchfiles              patch-select.sh.diff
 

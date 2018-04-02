@@ -14,8 +14,8 @@ master_sites        sourceforge:project/cell-id
 
 use_zip             yes
 checksums           md5     bb9244c90f995bc46ccbfb9dd1cf93da \
-                    sha1    170341e4198252a389062ec9ef8b397bee7d2c22 \
-                    rmd160  48910433b65dc926a68b1fed2d7470d62414b512
+sha1    170341e4198252a389062ec9ef8b397bee7d2c22 \
+rmd160  48910433b65dc926a68b1fed2d7470d62414b512
 
 depends_build       port:pkgconfig
 depends_lib         port:cell-id \

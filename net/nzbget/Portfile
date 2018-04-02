@@ -5,7 +5,7 @@ PortSystem          1.0
 name                nzbget
 version             15.0
 checksums           sha256  3ef13f3e5917e4cda19c4fc0cd37e79967a19b4e3448c239ff24e37712a6cc0a \
-                    rmd160  bc21c44bd7488b3a5c2606a24e42cd12d184a336
+rmd160  bc21c44bd7488b3a5c2606a24e42cd12d184a336
 
 categories          net
 maintainers         nomaintainer

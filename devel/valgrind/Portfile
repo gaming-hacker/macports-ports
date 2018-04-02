@@ -72,8 +72,8 @@ if {$subport eq $name} {
     conflicts           valgrind-devel
 
     checksums           md5     817dd08f1e8a66336b9ff206400a5369 \
-                        sha256  d76680ef03f00cd5e970bbdcd4e57fb1f6df7d2e2c071635ef2be74790190c3b \
-                        rmd160  809dcd3c656633cb9e1153eec491dce7d3e532c0
+sha256  d76680ef03f00cd5e970bbdcd4e57fb1f6df7d2e2c071635ef2be74790190c3b \
+rmd160  809dcd3c656633cb9e1153eec491dce7d3e532c0
 
     use_bzip2           yes
 

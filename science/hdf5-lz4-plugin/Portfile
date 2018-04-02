@@ -21,8 +21,8 @@ version             20130903
 revision            5
 
 checksums \
-    rmd160  03229c8803b5ba198cca61bab8788353d0cc00a2 \
-    sha256  fda27a3a8698ef53be8cefdb3caa05640c0996f7e16f34365f525e0434218aac
+rmd160  03229c8803b5ba198cca61bab8788353d0cc00a2 \
+sha256  fda27a3a8698ef53be8cefdb3caa05640c0996f7e16f34365f525e0434218aac
 
 depends_lib         port:hdf5 \
                     port:lz4

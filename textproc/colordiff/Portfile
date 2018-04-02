@@ -22,7 +22,7 @@ homepage        https://www.colordiff.org
 master_sites    ${homepage}
 
 checksums       rmd160  cf2e1cb9f7defc544c543d537bed42191b8f7e5c \
-                sha256  29cfecd8854d6e19c96182ee13706b84622d7b256077df19fbd6a5452c30d6e0
+sha256  29cfecd8854d6e19c96182ee13706b84622d7b256077df19fbd6a5452c30d6e0
 
 patchfiles      patch-Makefile.diff
 

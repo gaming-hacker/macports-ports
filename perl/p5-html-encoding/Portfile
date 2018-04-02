@@ -14,7 +14,7 @@ description         Determine the encoding of HTML/XML/XHTML documents
 long_description    ${description}
 
 checksums           rmd160  568d0d6b46778644802b9e4f5ac4642a4ad1c419 \
-                    sha256  008981f868a151be41cdfded28daa37f7029b51e57c75c976b24ead91f401a68
+sha256  008981f868a151be41cdfded28daa37f7029b51e57c75c976b24ead91f401a68
 
 platforms           darwin
 supported_archs     noarch

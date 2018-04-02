@@ -12,4 +12,4 @@ description         PEAR XML_CSSML package
 long_description    ${description}
 
 checksums           rmd160  1c0e8866f53d4a5176636d3fe1a4425d0d1f539f \
-                    sha256  078d47102c6281dabb4dfa5949f36c792520ac568e23dca6dcc05eedf16f9f35
+sha256  078d47102c6281dabb4dfa5949f36c792520ac568e23dca6dcc05eedf16f9f35

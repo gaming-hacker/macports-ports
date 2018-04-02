@@ -27,7 +27,7 @@ platforms           darwin
 master_sites        sourceforge:project/etch/etch/${version}
 
 checksums           rmd160  c93fdb584928b25433c99b1fde430eef2b6f8deb \
-                    sha256  38a39c27edeaef03aa2f72417a481717030b34e7990d723ea1299a7bc6eac540
+sha256  38a39c27edeaef03aa2f72417a481717030b34e7990d723ea1299a7bc6eac540
 
 depends_build       port:rb-rake
 depends_run         port:facter

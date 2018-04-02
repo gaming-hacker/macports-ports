@@ -16,7 +16,7 @@ description         Interface to the wxWidgets cross-platform GUI toolkit
 long_description    ${description}
 
 checksums           rmd160  5abb796f4998bc2cf49380271060082cbd4d4c16 \
-                    sha256  1cfdb6535a0f4676e6f1aab2c9d8e16d577be3eb3b7cc04c8074d685e6651b70
+sha256  1cfdb6535a0f4676e6f1aab2c9d8e16d577be3eb3b7cc04c8074d685e6651b70
 
 if {${perl5.major} != ""} {
     wxWidgets.use   wxWidgets-3.0

@@ -12,5 +12,5 @@ homepage            http://flori.github.com/term-ansicolor
 platforms           darwin
 
 checksums           md5 19e0fd34944da6c58769d43d030a0c6c \
-                    rmd160 d637b212c193168263516fdbf99cc44b2422c90c \
-                    sha1 13164176e602bbc3d8fc83d969762bde1e3f89f8
+rmd160 d637b212c193168263516fdbf99cc44b2422c90c \
+sha1 13164176e602bbc3d8fc83d969762bde1e3f89f8

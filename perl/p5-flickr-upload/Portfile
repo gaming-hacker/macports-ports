@@ -18,7 +18,7 @@ long_description    Flickr::Upload provides an object-oriented wrapper \
                     Flickr.com.
 
 checksums           rmd160  e3b40e6eb19760fd46cd2d5ee5821004a96f8f06 \
-                    sha256  ba61987e0e3a20f0fea0120113b01e89b05432edbc976fa6153be4b8de312c6c
+sha256  ba61987e0e3a20f0fea0120113b01e89b05432edbc976fa6153be4b8de312c6c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

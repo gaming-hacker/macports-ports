@@ -14,7 +14,7 @@ description         Encode/decode Perl utf-8 strings into TeX
 long_description    ${description}
 
 checksums           rmd160  9ce9a6d18638250c467fbd190a7f114fa8724dc3 \
-                    sha256  9b492afd9014d15b7bc98387af0cb040b4764a3c6b5448c1dadb8c198c01fedc
+sha256  9b492afd9014d15b7bc98387af0cb040b4764a3c6b5448c1dadb8c198c01fedc
 
 if {${perl5.major} != ""} {
     depends_run-append \

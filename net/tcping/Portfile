@@ -17,7 +17,7 @@ homepage		http://www.vanheusden.com/tcping/
 master_sites	${homepage}
 extract.suffix	.tgz
 checksums		rmd160 30a7810d41ea07a50f9704d75b487881e1ca4140 \
-				sha256 976c41fb6ded7bf07cca31d83863fc134838bc9f1283faf88df86bdef5f18abc
+sha256 976c41fb6ded7bf07cca31d83863fc134838bc9f1283faf88df86bdef5f18abc
 
 use_configure	no
 

@@ -25,7 +25,7 @@ distname            ${version}
 set worksrcdir      ${internal_name}-${version}
 
 checksums           rmd160  3a73c9b167ec9252197c3614d675753c51ebfbf2 \
-                    sha256  cff84f0c44ec8fdffece600ce3b52a9f1252d4f63dc367d42a56c38ade3c8bce
+sha256  cff84f0c44ec8fdffece600ce3b52a9f1252d4f63dc367d42a56c38ade3c8bce
 
 if {${name} ne ${subport}} {
     depends_lib-append	port:py${python.version}-robotframework

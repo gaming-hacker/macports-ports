@@ -17,7 +17,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 
 checksums           rmd160  cfcd5da56ccb4b6850efe0adbdb7cc9c6a6655bd \
-                    sha256  c31cfe513bef799461b7521d32a0768667295728aaec745fd504bc29cabaadce
+sha256  c31cfe513bef799461b7521d32a0768667295728aaec745fd504bc29cabaadce
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

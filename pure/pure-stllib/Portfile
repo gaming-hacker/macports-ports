@@ -15,7 +15,7 @@ description             a Pure interface to some C++ container types
 long_description        ${name} provides ${description}.
 
 checksums               rmd160  55d6c5920923472570185324feea6fa6d71c7ce7 \
-                        sha256  1d550764fc2f8ba6ddbd1fbd3da2d6965b69e2c992747265d9ebe4f16aa5e455
+sha256  1d550764fc2f8ba6ddbd1fbd3da2d6965b69e2c992747265d9ebe4f16aa5e455
 
 depends_build-append    port:pkgconfig
 

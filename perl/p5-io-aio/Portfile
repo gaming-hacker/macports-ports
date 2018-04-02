@@ -19,7 +19,7 @@ description         Asynchronous Input/Output
 long_description    ${description}
 
 checksums           rmd160  4986ab70e43a8929785ae13ad0d8c096b6983d36 \
-                    sha256  b44ca75f5bc02211b7d317cad167932b4653847851cb06086de567225e75d5e8 \
+sha256  b44ca75f5bc02211b7d317cad167932b4653847851cb06086de567225e75d5e8 \
 size    166897
 
 if {${perl5.major} != ""} {

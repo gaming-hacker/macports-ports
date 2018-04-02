@@ -21,7 +21,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  70a77e53014a96df9e645c324e0b9a57042e7bb4 \
-                    sha256  87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c \
+sha256  87bc4ef307604f1ce4f09f6e5c9996ef8d37ca5e0a3bf76f6b27d71844adb40c \
 size    1531200
 
 depends_build       port:pkgconfig \
@@ -70,7 +70,7 @@ platform darwin {
         version         3.8.5
         revision        2
         checksums       rmd160  21889d886fa262e536929ecb6905cfcd3f50a462 \
-                        sha256  34d6fbc33bda4c7bba8aa52343ebe1eb8afe1033097c10a2d9979c0a99593e5d
+sha256  34d6fbc33bda4c7bba8aa52343ebe1eb8afe1033097c10a2d9979c0a99593e5d
         depends_build-append \
                         port:autoconf \
                         port:automake \

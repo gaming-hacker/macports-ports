@@ -29,7 +29,7 @@ long_description    This module is an extremely light-weight subset of Moose \
                     inflation capabilities described in \"MOO AND MOOSE\".
 
 checksums           rmd160  c32e47e0ffa57232077070a62773ebd239c72c51 \
-                    sha256  f8bbb625f8e963eabe05cff9048fdd72bdd26777404ff2c40bc690f558be91e1
+sha256  f8bbb625f8e963eabe05cff9048fdd72bdd26777404ff2c40bc690f558be91e1
 
 if {${perl5.major} != ""} {
     depends_lib-append \

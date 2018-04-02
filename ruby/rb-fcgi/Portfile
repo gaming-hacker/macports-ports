@@ -14,8 +14,8 @@ long_description	FastCGI is a language independent, scalable, open \
 homepage            https://github.com/alphallc/ruby-fcgi-ng
 categories-append	www
 checksums           md5     a93eee7bb92ea535d0f304b1099545f7 \
-                    sha1    16ef71a7639c06ebf56af1990ea2e0beda63316b \
-                    rmd160  25707cceb2795be9740add51b6a9ca4463166eee
+sha1    16ef71a7639c06ebf56af1990ea2e0beda63316b \
+rmd160  25707cceb2795be9740add51b6a9ca4463166eee
 platforms		darwin
 
 depends_lib-append	lib:libfcgi.2:fcgi

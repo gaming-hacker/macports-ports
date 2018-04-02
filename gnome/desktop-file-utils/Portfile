@@ -20,7 +20,7 @@ master_sites    https://www.freedesktop.org/software/desktop-file-utils/releases
 use_xz          yes
 
 checksums       rmd160  308058ff58db3a8a4ac28bf4b0d57df2dfede7bf \
-                sha256  6c094031bdec46c9f621708f919084e1cb5294e2c5b1e4c883b3e70cb8903385
+sha256  6c094031bdec46c9f621708f919084e1cb5294e2c5b1e4c883b3e70cb8903385
 
 depends_build   port:pkgconfig
 depends_lib     path:lib/pkgconfig/glib-2.0.pc:glib2 \

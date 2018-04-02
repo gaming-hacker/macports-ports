@@ -19,6 +19,6 @@ distname            ${github.tag_prefix}${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  54a34a1fe87c76a74569faeec076ad44a806739d \
-                    sha256  b7bc3062e463800b7718789708defa379da41934231d6cb171defc0eae188b08
+sha256  b7bc3062e463800b7718789708defa379da41934231d6cb171defc0eae188b08
 
 destroot.target-append install-config

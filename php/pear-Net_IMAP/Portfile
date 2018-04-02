@@ -13,6 +13,6 @@ description         PEAR Net_IMAP package
 long_description    ${description}
 
 checksums           rmd160  d6d0649365fdc88297a13b4ba559f28b8c9a7c7d \
-                    sha256  168328c83116ba2d6891e54cf2b8de55a18f7d1a8831fa6e8ac5f6ef9cc2b5fd
+sha256  168328c83116ba2d6891e54cf2b8de55a18f7d1a8831fa6e8ac5f6ef9cc2b5fd
 
 depends_lib-append  port:pear-Net_Socket

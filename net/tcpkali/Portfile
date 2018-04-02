@@ -16,6 +16,6 @@ long_description    tcpkali is a program that generates lots of network load \
                     to stress-test TCP and WebSocket servers.
 
 checksums           rmd160  6eff445e1cc7d69271cf10e7789e100a2f936a60 \
-                    sha256  c917e2384b171d4c8906192266376cab6b1f9191810a4f209d7371639e3f2185
+sha256  c917e2384b171d4c8906192266376cab6b1f9191810a4f209d7371639e3f2185
 
 depends_lib         port:ncurses

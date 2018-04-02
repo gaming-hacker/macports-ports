@@ -27,7 +27,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  39c21d70a99c055ab45d8c41bee4cca723bda818 \
-                    sha256  77ff3730198d6a17b3c1f05579ebe570b579efb35f6d7e13dba3b1368d068b35
+sha256  77ff3730198d6a17b3c1f05579ebe570b579efb35f6d7e13dba3b1368d068b35
 
 if {${name} ne ${subport}} {
     # celery depends on pkg_resources from setuptools

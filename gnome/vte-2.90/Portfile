@@ -27,7 +27,7 @@ use_xz              yes
 distname            ${gname}-${version}
 
 checksums           rmd160  0f948d580cf9cdd040c881c26230198b4c85aff5 \
-                    sha256  54e5b07be3c0f7b158302f54ee79d4de1cb002f4259b6642b79b1e0e314a959c
+sha256  54e5b07be3c0f7b158302f54ee79d4de1cb002f4259b6642b79b1e0e314a959c
 
 depends_build       port:pkgconfig \
                     port:intltool \

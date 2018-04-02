@@ -21,7 +21,7 @@ platforms           darwin
 homepage            http://pdl.perl.org/
 
 checksums           rmd160  a9616fd7c8461832cd8fe194427ee4b5424eb885 \
-                    sha256  af3ce01f093a08ee814d942b448d5c8d9daafb83d89c8933c4a22c5355233805
+sha256  af3ce01f093a08ee814d942b448d5c8d9daafb83d89c8933c4a22c5355233805
 
 #
 # support options

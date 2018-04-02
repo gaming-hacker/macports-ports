@@ -15,7 +15,7 @@ description         Console multi-IM client.
 long_description    Console client for ICQ/Yahoo/IRC/LiveJournal.
 
 checksums           sha1    46fbac7a55f33b0d4f42568cca21ed83770650e5 \
-                    rmd160  2514c871388edb98b4a8957f965ccee3450b968f
+rmd160  2514c871388edb98b4a8957f965ccee3450b968f
 
 homepage            https://www.centerim.org/
 master_sites        ${homepage}download/releases/

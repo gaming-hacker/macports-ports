@@ -27,7 +27,7 @@ master_sites        sourceforge:project/mpg123/mpg123/${version} \
 use_bzip2           yes
 
 checksums           rmd160  c22ec77cf8c69925d36546f3bc971edc713c197c \
-                    sha256  6c1337aee2e4bf993299851c70b7db11faec785303cfca3a5c3eb5f329ba7023 \
+sha256  6c1337aee2e4bf993299851c70b7db11faec785303cfca3a5c3eb5f329ba7023 \
 size    921219
 
 depends_lib         port:libtool

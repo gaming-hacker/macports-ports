@@ -22,7 +22,7 @@ long_description    The inspiration has come from the email package in \
 homepage            http://icalendar.readthedocs.org/
 
 checksums           rmd160  4dfd631b54acebd0943cb2d4b10e6d423c9b8c0d \
-                    sha256  1e9fbef0c823477a600cb5656c060775b190f121a80cfc30ea4627740ec56334
+sha256  1e9fbef0c823477a600cb5656c060775b190f121a80cfc30ea4627740ec56334
 
 python.versions 27 36
 

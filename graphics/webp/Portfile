@@ -28,7 +28,7 @@ homepage                https://developers.google.com/speed/webp/
 master_sites            http://downloads.webmproject.org/releases/webp/
 
 checksums               rmd160  b62cebd64addd74c2e7f42a56bc48feb370cbc94 \
-                        sha256  06503c782d9f151baa325591c3579c68ed700ffc62d4f5a32feead0ff017d8ab \
+sha256  06503c782d9f151baa325591c3579c68ed700ffc62d4f5a32feead0ff017d8ab \
 size    3990217
 
 depends_lib             port:giflib \

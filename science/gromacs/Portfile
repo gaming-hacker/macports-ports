@@ -33,8 +33,8 @@ master_sites        http://ftp.gromacs.org/pub/gromacs
 
 # md5 published at http://www.gromacs.org/Downloads
 checksums           rmd160  10d8808e8c5b04702d83f385f78c0d9effdfa266 \
-                    sha256  57db26c6d9af84710a1e0c47a1f5bf63a22641456448dcd2eeb556ebd14e0b7c \
-                    md5     f41807e5b2911ccb547a3fd11f105d47
+sha256  57db26c6d9af84710a1e0c47a1f5bf63a22641456448dcd2eeb556ebd14e0b7c \
+md5     f41807e5b2911ccb547a3fd11f105d47
 
 depends_build-append \
                     port:pkgconfig

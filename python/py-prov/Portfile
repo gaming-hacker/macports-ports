@@ -26,8 +26,8 @@ master_sites        pypi:${_n}/${_name}/
 distname            ${_name}-${version}
 
 checksums           md5     f5326dbd21e99288b464b53f3d64717d \
-                    rmd160  94a123bbfd873d8acf5b564a41c0aeb472f6abdb \
-                    sha256  7a2d72b0df43cd9c6e374d815c8ce3cd5ca371d54f98f837853ac9fcc98aee4c
+rmd160  94a123bbfd873d8acf5b564a41c0aeb472f6abdb \
+sha256  7a2d72b0df43cd9c6e374d815c8ce3cd5ca371d54f98f837853ac9fcc98aee4c
 
 python.versions 27 36
 

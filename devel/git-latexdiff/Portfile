@@ -22,7 +22,7 @@ master_sites        https://gitlab.com/${name}/${name}/repository/archive.tar.gz
 distname            ${name}-v${version}-2bd0dcbf2a14de7c311382ed03eb24bac661ac69
 
 checksums           rmd160  29b61b526bbed34d32ed8d945c3e569a36d10fc7 \
-                    sha256  76b19b623749025bde0617776237dbd6763a21d19cd6b6b353765846dac766ec
+sha256  76b19b623749025bde0617776237dbd6763a21d19cd6b6b353765846dac766ec
 
 depends_build-append \
                     port:asciidoc

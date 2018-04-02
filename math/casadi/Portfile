@@ -17,4 +17,4 @@ long_description    CasADi is a symbolic framework for numeric optimization impl
                     such as SUNDIALS, IPOPT etc. It can be used from C++, Python or Matlab/Octave.
 
 checksums           sha256  1c7e665cf9b4a8b6e1d2e04f961529d7a619ee49df8182106219f6a2cd04b27b \
-                    rmd160  eadf2d412c271adcb237a9ad66c624a15e918bc6
+rmd160  eadf2d412c271adcb237a9ad66c624a15e918bc6

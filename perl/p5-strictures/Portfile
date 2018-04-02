@@ -13,7 +13,7 @@ description         strictures - turn on strict and make all warnings fatal.
 long_description    ${description}
 
 checksums           rmd160  a593fef6223922c278da45444ccb8940bcb6addc \
-                    sha256  27f8ea096a521e9754d36ea32889c2cda28346d04e3e399e7ea118d182dbaf22
+sha256  27f8ea096a521e9754d36ea32889c2cda28346d04e3e399e7ea118d182dbaf22
 
 if {${perl5.major} != ""} {
     depends_lib-append \

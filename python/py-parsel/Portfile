@@ -18,7 +18,7 @@ master_sites        pypi:p/${real_name}/
 distname            ${real_name}-${version}
 
 checksums           rmd160  ce416b7984076472b7a2902504f9b35f9adf8712 \
-                    sha256  2f3a6813a0ff39b6ca2530b9c1ad25d83e3a33808d93dd21fbf114c6232a16a8 \
+sha256  2f3a6813a0ff39b6ca2530b9c1ad25d83e3a33808d93dd21fbf114c6232a16a8 \
 size    36480
 
 if {${name} ne ${subport}} {

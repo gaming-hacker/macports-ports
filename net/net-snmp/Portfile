@@ -24,7 +24,7 @@ long_description        This is net-snmp, a derivative of CMU's SNMP \
                         command using SNMP, a Tk/perl MIB browser.
 
 checksums               rmd160  c5cf54d5723ee417e07f1f9fa3936aef505104a2 \
-                        sha256  12ef89613c7707dc96d13335f153c1921efc9d61d3708ef09f3fc4a7014fb4f0
+sha256  12ef89613c7707dc96d13335f153c1921efc9d61d3708ef09f3fc4a7014fb4f0
 
 perl5.branches          5.26
 

@@ -14,7 +14,7 @@ description         Implements a flat filesystem
 long_description    ${description}
 
 checksums           sha1    09d9bef3425ef9bec75b5fb7a664e2e33052707e \
-                    rmd160  36847040787880043b569b2fac86509eb094b7a0
+rmd160  36847040787880043b569b2fac86509eb094b7a0
 
 if {${perl5.major} != ""} {
     depends_build-append \

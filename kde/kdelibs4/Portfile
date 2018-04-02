@@ -18,7 +18,7 @@ use_xz              yes
 distname            kdelibs-${version}
 
 checksums           rmd160  f0dd628eec72c52f4dd8426a2de47d75e629ff31 \
-                    sha256  f8206da1106184ef0bd031b82701c4910b8dade331c4cdaf1cd9c6c5208cfd9e
+sha256  f8206da1106184ef0bd031b82701c4910b8dade331c4cdaf1cd9c6c5208cfd9e
 
 #No binary links to openssl libraries, apart from libkio.dylib at
 #runtime if required. As libkio.dylib code is purely LGPL, there is no

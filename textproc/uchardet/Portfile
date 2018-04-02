@@ -25,4 +25,4 @@ master_sites        https://www.freedesktop.org/software/uchardet/releases/
 use_xz              yes
 
 checksums           rmd160  a5d5a632f7bb0e3c214531b9a52a07f6b8f80571 \
-                    sha256  8351328cdfbcb2432e63938721dd781eb8c11ebc56e3a89d0f84576b96002c61
+sha256  8351328cdfbcb2432e63938721dd781eb8c11ebc56e3a89d0f84576b96002c61

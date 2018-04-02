@@ -10,12 +10,12 @@ revision        3
 maintainers     nomaintainer
 
 checksums       gcc-${version}.tar.bz2 \
-                rmd160  7ae3413ca7e90bb21e65e637c02ddf2b675b45f4 \
-                sha256  608df76dec2d34de6558249d8af4cbee21eceddbcb580d666f7a5a583ca3303a \
+rmd160  7ae3413ca7e90bb21e65e637c02ddf2b675b45f4 \
+sha256  608df76dec2d34de6558249d8af4cbee21eceddbcb580d666f7a5a583ca3303a \
                 newlib-${crossgcc.libc_version}.tar.gz \
-                sha1    be1f1960bce564130a0cf9598e388fcc437169dc \
-                rmd160  fc2beafe309701e02da3d2dff737236f67c0de4d \
-                sha256  5b76a9b97c9464209772ed25ce55181a7bb144a66e5669aaec945aa64da3189b
+sha1    be1f1960bce564130a0cf9598e388fcc437169dc \
+rmd160  fc2beafe309701e02da3d2dff737236f67c0de4d \
+sha256  5b76a9b97c9464209772ed25ce55181a7bb144a66e5669aaec945aa64da3189b
 
 patchfiles      patch-enable-with-multilib-list-for-arm.diff
 patch.pre_args  -p1

@@ -20,7 +20,7 @@ long_description    LuaHPDF is a Lua module that lets you programmatically creat
                     links.
 
 checksums           rmd160  ee7d234de41de41b3c8de2e10a5cff3de920a817 \
-                    sha256  2b01967287b83f9efd35d5a317b0838a609f55e07419f58aad74be7399bcc2ea
+sha256  2b01967287b83f9efd35d5a317b0838a609f55e07419f58aad74be7399bcc2ea
 
 depends_lib         port:lua \
                     port:libharu \

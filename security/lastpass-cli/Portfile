@@ -21,7 +21,7 @@ depends_lib-append  port:curl \
                     path:lib/libssl.dylib:openssl
 
 checksums           rmd160  28f974b97d1697b9c3651121fc370567e0ccc7a1 \
-                    sha256  f398255eac07d692a724c0246844f860e7512db816657121279dd44d6f6a184c \
+sha256  f398255eac07d692a724c0246844f860e7512db816657121279dd44d6f6a184c \
 size    114003
 
 if {${subport} eq ${name}} {

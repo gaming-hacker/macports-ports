@@ -26,7 +26,7 @@ homepage            http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
 master_sites        http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/
 
 checksums           rmd160  2c4a54bcd3179a609842cde1908dbd232a770495 \
-                    sha256  76faebe03f6c963127dbb73c13eab58c9a3faeae48779f049066a21c087c5db2
+sha256  76faebe03f6c963127dbb73c13eab58c9a3faeae48779f049066a21c087c5db2
 
 compilers.choose    cc cxx cpp
 compilers.setup
@@ -34,7 +34,7 @@ compilers.setup
 patch.pre_args      -p1
 patchfiles-append   remove_home_dir.patch \
                     cmake64.patch \
-                    sharedprefix.patch \
+sharedprefix.patch \
                     missing_includes.patch \
                     cmake_tls.patch \
                     gkl.patch \

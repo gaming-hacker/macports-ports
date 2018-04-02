@@ -17,7 +17,7 @@ long_description    Ethereum is a public, blockchain-based distributed \
 homepage            https://geth.ethereum.org/
 
 checksums           rmd160  516ba93add884fad6194bc4726214080c0ebfcd7 \
-                    sha256  95db57b811a676d820ab2ad7d3cbc3da40481724ec35e5171309c3f67e5f2d15
+sha256  95db57b811a676d820ab2ad7d3cbc3da40481724ec35e5171309c3f67e5f2d15
 
 depends_build       port:go
 

@@ -12,7 +12,7 @@ description         PEAR Validate_ZA package
 long_description    ${description}
 
 checksums           rmd160  3aed5c2859663ac4c855804df85928d90ca9c8a4 \
-                    sha256  5d7d955ad15a995384e3fffb46c2f0ec9475994fa0f82411995d1549c964d4fd
+sha256  5d7d955ad15a995384e3fffb46c2f0ec9475994fa0f82411995d1549c964d4fd
 
 depends_lib-append  port:pear-Validate \
                     port:pear-Validate_Finance_CreditCard

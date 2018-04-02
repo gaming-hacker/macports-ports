@@ -19,7 +19,7 @@ depends_lib         port:kdelibs4 \
                     port:kdepimlibs4
 
 checksums           rmd160  39344ae0934271669092bc4df826f73c69304360 \
-                    sha256  97838dc3cb07210c96154958237e216ad05cffa334f5e549d8619b4c70961986
+sha256  97838dc3cb07210c96154958237e216ad05cffa334f5e549d8619b4c70961986
 
 patchfiles          workaround-qfontmetrics-bug.patch
 patch.dir           ${workpath}/${distname}

@@ -16,7 +16,7 @@ platforms           darwin
 bitbucket.tarball_from  downloads
 
 checksums           rmd160  49b2edbfd47c62bdb58130de63f160514be19579 \
-                    sha256  ec38751b3b555d3a26f0c7445f2d2cd9d7c3a3502237519a206a50cb58df56ec
+sha256  ec38751b3b555d3a26f0c7445f2d2cd9d7c3a3502237519a206a50cb58df56ec
 
 depends_lib-append  port:gdal \
                     port:hdf5

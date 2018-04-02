@@ -20,7 +20,7 @@ long_description    The kick library provides containers with better \
                     any existing project.
 
 checksums           rmd160 8d156432356464f98ead6e704b329a805b8c8255 \
-                    sha256 59e155c3bc9cbf616c3c4b7f172aa487b4bbfba453f4d305129874bcddbda5ee
+sha256 59e155c3bc9cbf616c3c4b7f172aa487b4bbfba453f4d305129874bcddbda5ee
 
 use_configure       no
 

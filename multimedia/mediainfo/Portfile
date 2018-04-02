@@ -6,7 +6,7 @@ PortGroup           github 1.0
 # normally update mediainfolib port at the same time
 github.setup        MediaArea MediaInfo 18.03.1 v
 checksums           rmd160  6c9ccfaf199f9555d0e0d455454ce539bd5a65be \
-                    sha256  e2141b648c042ee1f10e637332a44c1910efa28e5d527bd426f808be515dddb9 \
+sha256  e2141b648c042ee1f10e637332a44c1910efa28e5d527bd426f808be515dddb9 \
 size    2395722
 
 name                mediainfo

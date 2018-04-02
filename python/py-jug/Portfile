@@ -22,7 +22,7 @@ master_sites        pypi:J/Jug
 distname            Jug-${version}
 
 checksums           rmd160  676c79923820aa20192e5a0ba4c8a4a0c6989f0b \
-                    sha256  982e18c4b837dd7828e718bb252b4ba78da3e2dfe65d1d92b85e03e9c9e0146a
+sha256  982e18c4b837dd7828e718bb252b4ba78da3e2dfe65d1d92b85e03e9c9e0146a
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

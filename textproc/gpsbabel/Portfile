@@ -31,7 +31,7 @@ depends_lib-append  port:expat \
                     port:libusb-compat
 
 checksums           rmd160  b38b81b38cd50cc4d1c36faa962afb02edb72cd3 \
-                    sha256  fbec8cc36ff4b361e3eada286d3018d34579f919ac5398988e5e85061153fa22
+sha256  fbec8cc36ff4b361e3eada286d3018d34579f919ac5398988e5e85061153fa22
 
 if {${subport} eq ${name}} {
 

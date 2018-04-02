@@ -23,7 +23,7 @@ depends_lib         port:p${perl5.major}-ipc-run \
                     port:p${perl5.major}-lwp-useragent-determined
 
 checksums           rmd160  8fdfc7cf23bf0b8788a919f26b8ffd2dd7e8c17b \
-                    sha256  3f12562e2b37bebf0e5ead2d2d3fdeb4faa3a34055fd3dd08cb7f0114bac0582
+sha256  3f12562e2b37bebf0e5ead2d2d3fdeb4faa3a34055fd3dd08cb7f0114bac0582
 
 use_configure       no
 supported_archs     noarch

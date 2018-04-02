@@ -20,7 +20,7 @@ master_sites        https://dl.matroska.org/downloads/${name}/
 use_xz              yes
 
 checksums           rmd160  90ff1b6e965ec596e8ce6ffcbc61a30e4c3f432f \
-                    sha256  d8c72b20d4c5bf888776884b0854f95e74139b5267494fae1f395f7212d7c992 \
+sha256  d8c72b20d4c5bf888776884b0854f95e74139b5267494fae1f395f7212d7c992 \
 size    286284
 
 depends_build       port:pkgconfig

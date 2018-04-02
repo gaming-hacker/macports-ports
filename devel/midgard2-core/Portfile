@@ -20,7 +20,7 @@ homepage    http://www.midgard-project.org/
 master_sites    https://github.com/midgardproject/midgard-core/downloads
 
 checksums   rmd160  615a6fec3d070ab7c12bcf4640e6026eb354089c \
-            sha256  7c1d17e061df8f3b39fd8944ab97ab7220219b470f7874e74471702d2caca2cb
+sha256  7c1d17e061df8f3b39fd8944ab97ab7220219b470f7874e74471702d2caca2cb
 
 depends_build  port:pkgconfig
 

@@ -17,4 +17,4 @@ long_description    This module automagically generates accessor/mutators \
                     an exercise in cutting and pasting.
 
 checksums           rmd160  2216a8a21676fe2c6272057dd66af27903082b8e \
-                    sha256  bf12a3e5de5a2c6e8a447b364f4f5a050bf74624c56e315022ae7992ff2f411c
+sha256  bf12a3e5de5a2c6e8a447b364f4f5a050bf74624c56e315022ae7992ff2f411c

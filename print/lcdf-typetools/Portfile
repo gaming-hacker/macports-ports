@@ -20,7 +20,7 @@ installs_libs       no
 
 master_sites        ${homepage}
 checksums           rmd160  af05bd8394b910b0a1ceb22628223ad093b785be \
-                    sha256  46be885f4623e2e595f786c70e03264b680066de57789833db541f947a8edfdb
+sha256  46be885f4623e2e595f786c70e03264b680066de57789833db541f947a8edfdb
 
 patch.pre_args      -p1
 

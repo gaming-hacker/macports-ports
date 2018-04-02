@@ -23,7 +23,7 @@ livecheck.name              geomview
 livecheck.distname          ${name}
 
 checksums                   rmd160  70b6dfe6820603d712925660a004b4a04e7ebecf \
-                            sha256  d5db45414887e09144299d16e39ca01d141effceae4373ab77d5e8103cdd1c5a
+sha256  d5db45414887e09144299d16e39ca01d141effceae4373ab77d5e8103cdd1c5a
 
 depends_lib                 port:geomview \
                             port:tk

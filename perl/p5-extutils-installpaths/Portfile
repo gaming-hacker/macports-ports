@@ -15,7 +15,7 @@ description         ExtUtils::InstallPaths - Build.PL install path logic made ea
 long_description    This module tries to make install path resolution as easy as possible.
 
 checksums           rmd160  4bbda966a73d1084df4f6302eca43f4e7a6a8406 \
-                    sha256  7609fa048cdcf1451cad5b1d7d494f30e3d5bad0672d15404f1ea60e1df0067c
+sha256  7609fa048cdcf1451cad5b1d7d494f30e3d5bad0672d15404f1ea60e1df0067c
 
 if {${perl5.major} != ""} {
     depends_build-append \

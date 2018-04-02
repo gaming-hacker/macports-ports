@@ -19,7 +19,7 @@ distname	WiRouter_KeyRec_${version}
 master_sites	http://tools.salvatorefresta.net/
 
 checksums       rmd160  4a0040ffee261b54dc09967754f551dee8a7731a \
-                sha256  3e59138f35502b32b47bd91fe18c0c232921c08d32525a2ae3c14daec09058d4
+sha256  3e59138f35502b32b47bd91fe18c0c232921c08d32525a2ae3c14daec09058d4
 
 use_zip		yes
 

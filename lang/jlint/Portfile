@@ -19,7 +19,7 @@ homepage            http://www.garret.ru/lang.html
 master_sites        http://www.garret.ru/
 
 checksums           rmd160  6a093175ab3968bc9c5bae0f0f4e2948b761b87a \
-                    sha256  1bc44eddffb10eb781edf21af49359f7effd5a5f7c6ea856db0672cf0b084da8
+sha256  1bc44eddffb10eb781edf21af49359f7effd5a5f7c6ea856db0672cf0b084da8
 
 worksrcdir          ${name}
 

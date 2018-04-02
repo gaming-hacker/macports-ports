@@ -18,7 +18,7 @@ long_description    IO::All combines all of the best Perl IO modules into a sing
                     And that object can do it all!
 
 checksums           rmd160  71fe53106f2d7e5db8ff7354225202df5b25fa4d \
-                    sha256  54e21d250c0229127e30b77a3461e10077854ec244f26fb670f1b445ed4c4d5b
+sha256  54e21d250c0229127e30b77a3461e10077854ec244f26fb670f1b445ed4c4d5b
 
 if {${perl5.major} != ""} {
     depends_build-append \

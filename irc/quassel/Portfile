@@ -16,7 +16,7 @@ homepage        http://quassel-irc.org
 master_sites    ${homepage}/pub
 
 checksums       rmd160  f7282c07716342b235ab506722c17675854569fb \
-                sha256  93e4e54cb3743cbe2e5684c2fcba94fd2bc2cd739f7672dee14341b49c29444d
+sha256  93e4e54cb3743cbe2e5684c2fcba94fd2bc2cd739f7672dee14341b49c29444d
 
 depends_lib-append \
                 port:qt5-qtscript \

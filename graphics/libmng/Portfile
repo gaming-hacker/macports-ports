@@ -19,7 +19,7 @@ homepage                http://libmng.sourceforge.net/
 master_sites            sourceforge:project/libmng/libmng-devel/${version}
 
 checksums               rmd160  c978990189bf8fd925b4dbe76c7a0eac0b7e7434 \
-                        sha256  cf112a1fb02f5b1c0fce5cab11ea8243852c139e669c44014125874b14b7dfaa
+sha256  cf112a1fb02f5b1c0fce5cab11ea8243852c139e669c44014125874b14b7dfaa
 
 depends_lib             port:jpeg \
                         port:lcms2 \

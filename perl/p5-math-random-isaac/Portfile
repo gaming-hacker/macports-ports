@@ -15,8 +15,8 @@ description         Perl interface to the ISAAC PRNG algorithm
 long_description    ${description}
 
 checksums           md5     46110b9a7bb96fe641bdfaf35bdafec5 \
-                    sha1    0d2e423559ed28d842e6907e3944d6c5b6f2705f \
-                    rmd160  6a77fc0f57b92e9331c233a0f59d77acae7d8fe0
+sha1    0d2e423559ed28d842e6907e3944d6c5b6f2705f \
+rmd160  6a77fc0f57b92e9331c233a0f59d77acae7d8fe0
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -17,7 +17,7 @@ platforms           darwin
 license             MIT
 
 checksums           rmd160  3fc1f7e7f3b46100a1ca856a082b5975ab4ceda2 \
-                    sha256  ba6d8ef191c34c289f34645462ecfb8209099ad88a7a45788004841776de0a9f
+sha256  ba6d8ef191c34c289f34645462ecfb8209099ad88a7a45788004841776de0a9f
 
 depends_build       port:libtool  \
                     port:autoconf \

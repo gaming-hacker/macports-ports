@@ -16,7 +16,7 @@ long_description    The Static::Simple plugin is designed to make serving \
 platforms           darwin
 
 checksums           rmd160  23bcc157b478c79949d0ae48c02a7d0efc987459 \
-                    sha256  36b7338f96bef4f2685f7a4555b1519793ae7783bd3d6d22c97f3b718f309454 \
+sha256  36b7338f96bef4f2685f7a4555b1519793ae7783bd3d6d22c97f3b718f309454 \
 size    44538
 
 if {${perl5.major} != ""} {

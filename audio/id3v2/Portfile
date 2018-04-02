@@ -16,7 +16,7 @@ platforms		darwin
 master_sites	sourceforge
 
 checksums		sha1    8f42153b2f53098c221da2e8fe42170e727cd9ad \
-				rmd160  084f90bea49cc8fb93acb5f78bb55602c5358ac5
+rmd160  084f90bea49cc8fb93acb5f78bb55602c5358ac5
 
 depends_lib		port:id3lib
 

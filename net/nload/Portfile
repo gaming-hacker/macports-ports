@@ -21,7 +21,7 @@ platforms               darwin
 master_sites            sourceforge
 
 checksums               rmd160  77eb199ee73fdc45b25b0e246c2ba73fa6efe779 \
-                        sha256  c1c051e7155e26243d569be5d99c744d8620e65fa8a7e05efcf84d01d9d469e5
+sha256  c1c051e7155e26243d569be5d99c744d8620e65fa8a7e05efcf84d01d9d469e5
 
 depends_lib             port:ncurses
 

@@ -11,8 +11,8 @@ long_description  Eases web-request routing, handling, and response as a \
                   with specific emphasis on enabling easy unit/integration \
                   testing that doesn't require a browser.
 checksums           md5     a2764a85d8d34385467d8f9df7362471 \
-                    sha1    02b9aec25f90e6237487aa981d993760ce4a3869 \
-                    rmd160  d7e78b64a5c3ec616a11dd08a96a33de91bf936b
+sha1    02b9aec25f90e6237487aa981d993760ce4a3869 \
+rmd160  d7e78b64a5c3ec616a11dd08a96a33de91bf936b
 platforms         darwin
 
 depends_lib-append  port:rb-activesupport

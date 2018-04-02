@@ -17,7 +17,7 @@ long_description    ${description} by Philip Mak.
 homepage            http://perfectmaildir.home-dn.net/
 master_sites        ${homepage}/${name}/
 checksums           rmd160  f076ea65732d1c49996f68c19956aa33b2eaaed3 \
-                    sha256  e053602aacffee6f871d0610c0b6329bb8af6c915e4a6d80fde880b052ee7109
+sha256  e053602aacffee6f871d0610c0b6329bb8af6c915e4a6d80fde880b052ee7109
 
 distfiles           ${name}.pl
 

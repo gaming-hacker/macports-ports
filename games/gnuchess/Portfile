@@ -22,4 +22,4 @@ master_sites    gnu:chess
 depends_lib-append      port:readline port:ncurses
 
 checksums           rmd160  582178de6fd7a1392379fce2c43d389715678543 \
-                    sha256  9a99e963355706cab32099d140b698eda9de164ebce40a5420b1b9772dd04802
+sha256  9a99e963355706cab32099d140b698eda9de164ebce40a5420b1b9772dd04802

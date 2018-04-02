@@ -18,4 +18,4 @@ long_description    The "mro" namespace provides several utilities for \
 platforms           darwin
 
 checksums           rmd160  20f2dc8b5d617278ca8f31a983ba12fff741fdea \
-                    sha256  8a2c3b6ccc19328d5579d02a7d91285e2afd85d801f49d423a8eb16f323da4f8
+sha256  8a2c3b6ccc19328d5579d02a7d91285e2afd85d801f49d423a8eb16f323da4f8

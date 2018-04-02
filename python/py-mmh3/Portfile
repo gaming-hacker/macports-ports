@@ -24,7 +24,7 @@ python.versions 27 36
 
 if {${name} ne ${subport}} {
     checksums           rmd160  108cd84049528834dc857e2119d2427946b028f3 \
-                        sha256  ecadc3557c093211a70b49814cf91d6833fff403edf2d8405645e227262de928
+sha256  ecadc3557c093211a70b49814cf91d6833fff403edf2d8405645e227262de928
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}
         xinstall -d ${destroot}${docdir}

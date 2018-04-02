@@ -19,8 +19,8 @@ platforms           darwin
 worksrcdir          ${perl5.module}
 
 checksums           md5 5361e137e56d037c5e796926ecb5300b \
-                    sha1 2a1dd4f650764f6cfc654e528a579293422073c0 \
-                    rmd160 ed2e37427166fa9666d91fcf5f316086146c2319
+sha1 2a1dd4f650764f6cfc654e528a579293422073c0 \
+rmd160 ed2e37427166fa9666d91fcf5f316086146c2319
 
 if {${perl5.major} != ""} {
     depends_lib-append \

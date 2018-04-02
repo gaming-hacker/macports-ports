@@ -12,4 +12,4 @@ description         PEAR Validate_UK package
 long_description    ${description}
 
 checksums           rmd160  b5e5723a13f25a51de6e0b19e942e32244dc5f7f \
-                    sha256  cf95e7d8c76b91de5d79b3d5476bb733ccf4ee3e6cf282836c0f6bcd1eb55ea7
+sha256  cf95e7d8c76b91de5d79b3d5476bb733ccf4ee3e6cf282836c0f6bcd1eb55ea7

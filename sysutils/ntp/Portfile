@@ -16,8 +16,8 @@ homepage	http://www.ntp.org/
 master_sites	https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-[join [lrange [split ${version} .] 0 1] .]/
 
 checksums	md5	00950ca2855579541896513e78295361 \
-		rmd160	ceceb7622ac6868b2518127f64b3d24032f7da1c \
-		sha256	f14a39f753688252d683ff907035ffff106ba8d3db21309b742e09b5c3cd278e
+rmd160	ceceb7622ac6868b2518127f64b3d24032f7da1c \
+sha256	f14a39f753688252d683ff907035ffff106ba8d3db21309b742e09b5c3cd278e
 
 platforms	darwin
 

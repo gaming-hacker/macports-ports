@@ -18,7 +18,7 @@ description         Handles LZF compression / decompression.
 long_description    ${description}
 
 checksums           rmd160  5b1350856f2834164f731e66c73b3fe80407505a \
-                    sha256  2205f167bc423341b8b198592951f72e4f6c294cc10fe11d8504d829bac92063
+sha256  2205f167bc423341b8b198592951f72e4f6c294cc10fe11d8504d829bac92063
 
 distname            LZF-${version}
 

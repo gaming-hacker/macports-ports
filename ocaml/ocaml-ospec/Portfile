@@ -18,7 +18,7 @@ homepage            http://forge.ocamlcore.org/projects/ospec/
 master_sites        http://forge.ocamlcore.org/frs/download.php/1220/
 distname            ospec-${version}
 checksums           rmd160  e5e3cd5d4379d861879251befbd9aa999bbfa02a \
-                    sha256  92638a9e351010d9f20da0d3b4031f2d18e2d582deba75baa35201c386c13011
+sha256  92638a9e351010d9f20da0d3b4031f2d18e2d582deba75baa35201c386c13011
 
 depends_lib         port:ocaml port:ocaml-findlib
 

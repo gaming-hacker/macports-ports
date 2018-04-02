@@ -26,8 +26,8 @@ use_zip             yes
 extract.mkdir       yes
 use_configure       no
 checksums           md5     289ff708bd8dd649f3f0e1944fa0ef30 \
-                    sha1    6c2f2e96eb68edd7b95e2c1832515a2428d702a3 \
-                    rmd160  77c687209207a0aff94215f37a6161cc690dc772
+sha1    6c2f2e96eb68edd7b95e2c1832515a2428d702a3 \
+rmd160  77c687209207a0aff94215f37a6161cc690dc772
 
 build {}
 

@@ -17,8 +17,8 @@ platforms           darwin
 master_sites        sourceforge:teg
 
 checksums           md5 1ec1ac9bd023b329b1e4a32bb48c9132 \
-                    sha1 29fe2fa895617d6d6fe9528bf56b43d22bd454f5 \
-                    rmd160 2069bb40936fbd87dcf04be145890d0ccb53f6d3
+sha1 29fe2fa895617d6d6fe9528bf56b43d22bd454f5 \
+rmd160 2069bb40936fbd87dcf04be145890d0ccb53f6d3
 
 depends_build       port:pkgconfig \
                     port:intltool \

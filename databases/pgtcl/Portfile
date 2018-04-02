@@ -12,8 +12,8 @@ homepage		http://pgtcl.projects.postgresql.org/
 master_sites		http://pgfoundry.org/frs/download.php/338/
 platforms		darwin
 checksums		md5 6eed1c338fc3bb7a844797c92b79b936 \
-			sha1 8d2be537c123100ab4f1a6ddc11684fd4e0ccd23 \
-			rmd160  f198066c538a9566f9044e8899423ee31e123349
+sha1 8d2be537c123100ab4f1a6ddc11684fd4e0ccd23 \
+rmd160  f198066c538a9566f9044e8899423ee31e123349
 worksrcdir              ${name}${version}
 
 configure.env           PATH=$env(PATH):${prefix}/lib/postgresql83/bin

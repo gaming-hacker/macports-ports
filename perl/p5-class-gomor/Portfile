@@ -18,4 +18,4 @@ long_description    Class::Gomor is ${description}. This one adds \
                     is to check for attributes existence, and definedness.
 
 checksums           rmd160  60b38d1eab158a7db8ce738f783268bfad537537 \
-                    sha256  47db3cea9ce9ffa98bf9c74557fd32cf700791ab537020c958ac30b4a9ff200b
+sha256  47db3cea9ce9ffa98bf9c74557fd32cf700791ab537020c958ac30b4a9ff200b

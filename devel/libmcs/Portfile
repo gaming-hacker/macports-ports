@@ -28,7 +28,7 @@ use_bzip2               yes
 extract.suffix          .tbz2
 
 checksums               rmd160  049dc27eccf6bbd423f08234399b200c9e942f4d \
-                        sha256  e4b0ce2c0f1d15a780418e53ea2b7a8d0e924219c6798c6ca4ad4ff1727fd5ce
+sha256  e4b0ce2c0f1d15a780418e53ea2b7a8d0e924219c6798c6ca4ad4ff1727fd5ce
 
 patchfiles \
     patch-m4-buildsys.m4.diff

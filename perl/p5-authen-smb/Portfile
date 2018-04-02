@@ -14,7 +14,7 @@ long_description    Authen::Smb is a module which allows you to authenticate a u
                     against an NT domain directly from Perl.
 
 checksums           rmd160  80949c7fe6ad94db91a6c364925a983f063e6fc0 \
-                    sha256  e0b664ef8744c6fba0af1f44b6154a0fd723cc92d3e13f1ec3620b5637a208bc
+sha256  e0b664ef8744c6fba0af1f44b6154a0fd723cc92d3e13f1ec3620b5637a208bc
 
 platforms           darwin
 

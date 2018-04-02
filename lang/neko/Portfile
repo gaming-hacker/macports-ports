@@ -25,7 +25,7 @@ homepage            http://nekovm.org/
 master_sites        http://nekovm.org/_media/${distfiles}?id=download&cache=cache&dummy=
 
 checksums           rmd160  363d49f75fcc48dce4576df5c4c8ee06292996e0 \
-                    sha256  3cfcc73a665559df97126b172510ccff934325d6703d76c74fc8cc66f8112725
+sha256  3cfcc73a665559df97126b172510ccff934325d6703d76c74fc8cc66f8112725
 
 depends_build       port:boehmgc
 

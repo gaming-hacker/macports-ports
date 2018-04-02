@@ -15,7 +15,7 @@ description         Perl Module to parse Windows Registry
 long_description    ${description}
 
 checksums           rmd160  949c1e9481610ca546891f5779eb9ed714069a04 \
-                    sha256  3dd7c07d42333a69ea487076571aca73bed6d0aa98d80b561a86b13716747f8a
+sha256  3dd7c07d42333a69ea487076571aca73bed6d0aa98d80b561a86b13716747f8a
 
 if {${perl5.major} != ""} {
 # use Encode 2.85+ for CVE-2016-1238 security fixes

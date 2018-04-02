@@ -20,7 +20,7 @@ homepage            http://monkey.org/~jose/wiki/doku.php?id=wiki:duckytool
 distname            ducky-${version}
 master_sites        http://monkey.org/~jose/software/ducky/
 checksums           md5 e0d0675ef1bf822e96e38d8fa1eaf98c\
-                    sha1 269c828ae75b0ea532b2dfbf4fbbcd0198316660
+sha1 269c828ae75b0ea532b2dfbf4fbbcd0198316660
 
 python.default_version 27
 

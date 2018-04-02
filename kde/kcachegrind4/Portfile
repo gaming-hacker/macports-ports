@@ -20,7 +20,7 @@ distname            kcachegrind-${version}
 use_xz              yes
 
 checksums           rmd160  b0188e11e8846a87bc7c444a1207a199fb4df77d \
-                    sha256  a67917ae2540101b0ab0be618ead7aa4619b1808ec1ebd74358739f8fffea424
+sha256  a67917ae2540101b0ab0be618ead7aa4619b1808ec1ebd74358739f8fffea424
 
 patchfiles-append   patch-CMake-icons.diff
 

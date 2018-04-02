@@ -11,8 +11,8 @@ long_description	rflickr is a Ruby implementation of the Flickr API. It \
 					object mappings. rflickr features result caching to \
 					improve performance.
 checksums			md5 d925c9b6197004ab9e916a435e638034 \
-					sha1 17fc920e1f1563cee7fd20e9945a61d29cefd02e \
-					rmd160 0beabdd6a00422f74654da887023211aa27d70ec
+sha1 17fc920e1f1563cee7fd20e9945a61d29cefd02e \
+rmd160 0beabdd6a00422f74654da887023211aa27d70ec
 platforms			darwin
 
 depends_lib-append \

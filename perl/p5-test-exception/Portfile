@@ -17,7 +17,7 @@ long_description    This module provides a few convenience methods for \
 platforms           darwin
 
 checksums           rmd160  b73ac3858566b3fddbfda2979ec91120858d8d3d \
-                    sha256  156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533
+sha256  156b13f07764f766d8b45a43728f2439af81a3512625438deab783b7883eb533
 
 if {${perl5.major} != ""} {
     depends_lib-append \

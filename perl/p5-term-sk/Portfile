@@ -18,4 +18,4 @@ description         Term::Sk - Perl extension for displaying a progress indicato
 long_description    ${description}
 
 checksums           rmd160  04d098b9fa59eece82ac361c2f9c87db8f279a33 \
-                    sha256  f2e491796061205b08688802b287792d7d803b08972339fb1070ba05612af885
+sha256  f2e491796061205b08688802b287792d7d803b08972339fb1070ba05612af885

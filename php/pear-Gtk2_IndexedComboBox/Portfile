@@ -13,4 +13,4 @@ description         PEAR Gtk2_IndexedComboBox package
 long_description    ${description}
 
 checksums           rmd160  a73170c29a35717c9bec406e9913040af957c31f \
-                    sha256  85a230fc8169b05fc5cdb674566afab664d3d732aa557bd0f538686ce2017e39
+sha256  85a230fc8169b05fc5cdb674566afab664d3d732aa557bd0f538686ce2017e39

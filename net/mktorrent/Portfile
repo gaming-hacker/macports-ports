@@ -15,7 +15,7 @@ maintainers         {snc @nerdling} openmaintainer
 platforms           freebsd darwin
 
 checksums           rmd160  2bb093c6f536939d57e229ac71b2a83e2142b125 \
-                    sha256  62ce1af3fc11c80749ae49e17fdfa749a3decd03915f836df8c11a11fe2614ee
+sha256  62ce1af3fc11c80749ae49e17fdfa749a3decd03915f836df8c11a11fe2614ee
 
 use_configure       no
 build.args-append   CC=${configure.cc}

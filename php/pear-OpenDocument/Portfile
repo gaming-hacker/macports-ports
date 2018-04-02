@@ -12,4 +12,4 @@ description         PEAR OpenDocument package
 long_description    ${description}
 
 checksums           rmd160  851b551f1b5b3c84e084c67b4760ea61b9fa45a0 \
-                    sha256  84e0d9f53660a6a959d71ed75697ef4d5c895288c4550e37c602f465cd539de6
+sha256  84e0d9f53660a6a959d71ed75697ef4d5c895288c4550e37c602f465cd539de6

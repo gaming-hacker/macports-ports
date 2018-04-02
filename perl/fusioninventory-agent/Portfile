@@ -31,7 +31,7 @@ long_description    Perl application that runs an agent connecting to a \
 homepage            http://www.fusioninventory.org/overview/
 
 checksums           rmd160  9874df7b115471d1cde9aeeac42f27610f8f98a5 \
-                    sha256  543d96fa61b8f2a2bc599fe9f694f19d1f2094dc5506bc514d00b8a445bc5401
+sha256  543d96fa61b8f2a2bc599fe9f694f19d1f2094dc5506bc514d00b8a445bc5401
 
 depends_build-append \
                     port:p${perl5.major}-http-proxy \

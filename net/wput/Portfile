@@ -17,8 +17,8 @@ homepage            http://wput.sourceforge.net/
 master_sites        sourceforge
 extract.suffix      .tgz
 checksums           md5     a14c4c13d91d04d6119bdc977e8a8bdf \
-                    sha1    c058f76395672d1fbbb839c958d6537e82fc88b7 \
-                    rmd160  a3a62556ca258048ff5110ecdec199c98107766f
+sha1    c058f76395672d1fbbb839c958d6537e82fc88b7 \
+rmd160  a3a62556ca258048ff5110ecdec199c98107766f
 patchfiles          patch-src-ftplib.h patch-src-socketlib.c \
                     patch-src-Makefile.in
 

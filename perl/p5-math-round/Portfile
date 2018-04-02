@@ -16,4 +16,4 @@ description         Perl extension for rounding numbers
 long_description    ${description}
 
 checksums           rmd160  c352b5b1b091534b435dfb555d5ea156b4b0806b \
-                    sha256  73a7329a86e54a5c29a440382e5803095b58f33129e61a1df0093b4824de9327
+sha256  73a7329a86e54a5c29a440382e5803095b58f33129e61a1df0093b4824de9327

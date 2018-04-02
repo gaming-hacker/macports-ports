@@ -15,7 +15,7 @@ description         Provide commonly requested regular expressions
 long_description    ${description}
 
 checksums           rmd160  645334d98e66d64e1f2bfbb61ce3756775f519ce \
-                    sha256  ee07853aee06f310e040b6bf1a0199a18d81896d3219b9b35c9630d0eb69089b
+sha256  ee07853aee06f310e040b6bf1a0199a18d81896d3219b9b35c9630d0eb69089b
 
 if {${perl5.major} != ""} {
     depends_build-append \

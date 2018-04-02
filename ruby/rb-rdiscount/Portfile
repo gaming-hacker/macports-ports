@@ -15,7 +15,7 @@ homepage            https://github.com/davidfstr/rdiscount
 platforms           darwin
 license             BSD
 checksums           rmd160  767848f4ea6e1fc4b1aa477a1319a70d7280c3c0 \
-                    sha256  a085178fc7d6372222af192bdc8aa8b6b24c8014f0c2a3c227a1c173f104d4df
+sha256  a085178fc7d6372222af192bdc8aa8b6b24c8014f0c2a3c227a1c173f104d4df
 
 post-destroot {
     set gemdir ${destroot}${ruby.gemdir}/gems/${worksrcdir}

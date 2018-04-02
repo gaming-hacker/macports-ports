@@ -41,7 +41,7 @@ homepage            https://ccrma.stanford.edu/software/stk/
 master_sites        ${homepage}release/
 
 checksums           rmd160  a37dcae6792f395f6c74491dfeb9fa02224927e3 \
-                    sha256  619f1a0dee852bb2b2f37730e2632d83b7e0e3ea13b4e8a3166bf11191956ee3
+sha256  619f1a0dee852bb2b2f37730e2632d83b7e0e3ea13b4e8a3166bf11191956ee3
 
 set rawwave_path    ${prefix}/share/stk/rawwaves/
 

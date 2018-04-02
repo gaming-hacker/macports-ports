@@ -18,9 +18,9 @@ long_description    ${description}\
     a project is as simple as bundle install.
 
 checksums           md5     250ac082e64245f439c76b2c641e85b5 \
-                    rmd160  5b42f41957bcdd6b3758f094594957c453d4562e \
-                    sha1    bca8cd6a0d44524c55a04256307da33e6fe37d5f \
-                    sha256  42b8e0f57093e1d10c15542f956a871446b759e7969d99f91caf3b6731c156e8
+rmd160  5b42f41957bcdd6b3758f094594957c453d4562e \
+sha1    bca8cd6a0d44524c55a04256307da33e6fe37d5f \
+sha256  42b8e0f57093e1d10c15542f956a871446b759e7969d99f91caf3b6731c156e8
 
 post-destroot {
 	# bundler expects tne name of gem command is "gem",

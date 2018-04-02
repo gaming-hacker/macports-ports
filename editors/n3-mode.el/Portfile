@@ -15,7 +15,7 @@ homepage               https://github.com/kurtjx/n3-mode-for-emacs
 platforms              darwin
 
 checksums           rmd160  9b8659daf292ec900f8c81afb56d5a6e1d92d306 \
-                    sha256  9d55d474470175203899ae8757eb4c0d81d787bdf99e43842d57b5c97d62a33d
+sha256  9d55d474470175203899ae8757eb4c0d81d787bdf99e43842d57b5c97d62a33d
 
 depends_lib port:emacs
 

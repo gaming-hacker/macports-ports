@@ -24,7 +24,7 @@ homepage            http://xrootd.org/
 master_sites        ${homepage}download/v${version}
 
 checksums           rmd160  0b9976c5b773e8df9b6fc9db81571a200ca4a70f \
-                    sha256  edee2673d941daf7a6e5c963d339d4a69b4db5c4b6f77b4548b3129b42198029
+sha256  edee2673d941daf7a6e5c963d339d4a69b4db5c4b6f77b4548b3129b42198029
 
 depends_lib         port:python27 \
                     port:swig \

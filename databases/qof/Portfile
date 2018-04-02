@@ -18,7 +18,7 @@ distname            ${name}_${version}.orig
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  e020e9843ae59cf3d8a9946ea9241921d852234f \
-                    sha256  2cecb942bb42fc77c42417cf9118512c73911c16ccea6e72ab28b8bdf60a4e2e
+sha256  2cecb942bb42fc77c42417cf9118512c73911c16ccea6e72ab28b8bdf60a4e2e
 
 depends_build       port:pkgconfig
 

@@ -16,7 +16,7 @@ long_description    This is the Perl API for memcached, a distributed \
                     memory cache daemon.
 
 checksums           rmd160 cfb766f09f3e2663ad6bea6fb20723e2be0dde24 \
-                    sha256 31b3c51ec0eaaf03002e2cc8e3d7d5cbe61919cfdada61c008eb9853acac42a9
+sha256 31b3c51ec0eaaf03002e2cc8e3d7d5cbe61919cfdada61c008eb9853acac42a9
 
 if {${perl5.major} != ""} {
     depends_lib-append \

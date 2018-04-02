@@ -13,7 +13,7 @@ description         Address lookup tool for Notmuch in C using GLib and libnotmu
 long_description    ${description}
 
 checksums           rmd160  55222d0857ec2da40201401d3757dc1e0aea4748 \
-                    sha256  6c587a68f4c807b20873cbaf237916680f00340db5bc174c0faa48597f549baf
+sha256  6c587a68f4c807b20873cbaf237916680f00340db5bc174c0faa48597f549baf
 
 depends_build       port:pkgconfig
 

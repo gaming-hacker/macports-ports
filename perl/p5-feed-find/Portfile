@@ -15,8 +15,8 @@ long_description    Feed::Find is a class to perform autodiscovery of syndicatio
 platforms           darwin
 
 checksums           md5     9235e3ca061d0beb9cf23cb579522669 \
-                    sha1    bbdeb7e00d0c5471795a0447ca74aa9bf1f0d6b8 \
-                    rmd160  d87b031feb65f875dd9f2d1b9989be56fdbb6e3c
+sha1    bbdeb7e00d0c5471795a0447ca74aa9bf1f0d6b8 \
+rmd160  d87b031feb65f875dd9f2d1b9989be56fdbb6e3c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

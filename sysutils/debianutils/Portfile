@@ -31,7 +31,7 @@ worksrcdir          ${name}-${version}
 use_xz yes
 
 checksums           rmd160  95a3e86b58684b03158b0923c5df3f7c86daed33 \
-                    sha256  afa95bbe6b6fd3ef3c0c838b2d7232f09fabeff593ca4b5583cffa6748567ee2
+sha256  afa95bbe6b6fd3ef3c0c838b2d7232f09fabeff593ca4b5583cffa6748567ee2
 
 build.target run-parts tempfile
 

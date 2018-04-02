@@ -23,7 +23,7 @@ livecheck.regex     nagios-(\[0-9.\]+)${extract.suffix}
 
 master_sites        sourceforge:project/nagios/nagios-4.x/nagios-${version}
 checksums       rmd160 bddc8310f82351923288620dc635c535d2ac2a32 \
-                sha256 c90b7812d9e343db12be19a572e15c415c5d6353a91c5e226e432c2d4aaa44f1
+sha256 c90b7812d9e343db12be19a572e15c415c5d6353a91c5e226e432c2d4aaa44f1
 
 depends_build       port:gd2
 depends_lib         path:lib/libssl.dylib:openssl \

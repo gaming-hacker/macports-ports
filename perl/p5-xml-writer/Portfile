@@ -19,6 +19,6 @@ long_description    A helper module for Perl programs that write an XML \
 platforms           darwin
 
 checksums           rmd160  e9c7cca7d1c30173b100c747123bd98cfe42c70a \
-                    sha256  e080522c6ce050397af482665f3965a93c5d16f5e81d93f6e2fe98084ed15fbe
+sha256  e080522c6ce050397af482665f3965a93c5d16f5e81d93f6e2fe98084ed15fbe
 
 supported_archs     noarch

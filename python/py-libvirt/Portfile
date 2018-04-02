@@ -21,7 +21,7 @@ distname            libvirt-python-${version}
 master_sites        ${homepage}sources/python
 
 checksums           rmd160  e42219ddd3b9127657d9519511f5181097e9a152 \
-                    sha256  dec2a33d68779672b4688b296d6de18c9c41b89d8c74c9d3dc887e366587b8c7 \
+sha256  dec2a33d68779672b4688b296d6de18c9c41b89d8c74c9d3dc887e366587b8c7 \
 size    186312
 
 python.default_version  27

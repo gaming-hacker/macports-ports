@@ -19,7 +19,7 @@ homepage                    https://pypi.python.org/pypi/pyquery
 master_sites                pypi:p/pyquery
 distname                    pyquery-${version}
 checksums                   rmd160  bce4fef874ecdefcb98b1af3d15e4972e613e068 \
-                            sha256  1c39f786c42430279eadf787f1ef06873f15c9acba2698c23dfd925ac7b169d7
+sha256  1c39f786c42430279eadf787f1ef06873f15c9acba2698c23dfd925ac7b169d7
 
 python.versions 27 36
 

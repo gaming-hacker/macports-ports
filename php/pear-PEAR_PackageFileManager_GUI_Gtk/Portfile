@@ -12,7 +12,7 @@ description         PEAR PEAR_PackageFileManager_GUI_Gtk package
 long_description    ${description}
 
 checksums           rmd160  12135ef3e2803f059090fbfdf5ae84cfb1b7704b \
-                    sha256  49ee6733d45328480997441348c9e423d26ab8992bf0dd1eb4a669b99bf4a05b
+sha256  49ee6733d45328480997441348c9e423d26ab8992bf0dd1eb4a669b99bf4a05b
 
 depends_lib-append  port:pear-PEAR_PackageFileManager \
                     port:pear-Gtk_FileDrop

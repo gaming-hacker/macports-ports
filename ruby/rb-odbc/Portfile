@@ -15,7 +15,7 @@ platforms               darwin
 depends_lib-append      port:libiodbc
 
 checksums               md5 9114b037077c76a028463a180c251be9 \
-                        sha256 c6e61a32793239121dbcac84c4c11b5a5b4d8d70d7d54bfc640d053ee8f4a717
+sha256 c6e61a32793239121dbcac84c4c11b5a5b4d8d70d7d54bfc640d053ee8f4a717
 
 configure.pre_args-append   -Cext
 build.pre_args-append       -Cext

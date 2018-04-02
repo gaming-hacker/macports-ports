@@ -26,8 +26,8 @@ extract.suffix      .tgz
 worksrcdir          SVDLIBC
 
 checksums           md5     1b644ab4a3df72d6d0a1aeccb93ac503 \
-                    sha1    9243fbc0516af42b020423442212a025b3406dac \
-                    rmd160  3ef133f8ccd9cb1659c11c7692e148709aca7431
+sha1    9243fbc0516af42b020423442212a025b3406dac \
+rmd160  3ef133f8ccd9cb1659c11c7692e148709aca7431
 
 use_configure       no
 

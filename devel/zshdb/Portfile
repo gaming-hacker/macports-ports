@@ -23,7 +23,7 @@ supported_archs     noarch
 depends_lib         port:zsh
 
 checksums           rmd160  bcf5317b33ec7026a91261fd2fa76d9b2397f0a3 \
-                    sha256  bc583778abfbfcb5fceb93e8635a9f473b2fc6ba6a7e22bee0c58e02977acb69
+sha256  bc583778abfbfcb5fceb93e8635a9f473b2fc6ba6a7e22bee0c58e02977acb69
 
 use_autoreconf      yes
 

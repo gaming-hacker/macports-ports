@@ -19,7 +19,7 @@ description         Rex Deployment & Configuration Management
 long_description    ${description}
 
 checksums           rmd160 28c5933ea8902b3b2b7a63b23024dbda0ed9d187 \
-                    sha256 c042a0ed4920070d4508b6e7d2c36d28b3a5691938f2e0a0d7717977b44b82d0
+sha256 c042a0ed4920070d4508b6e7d2c36d28b3a5691938f2e0a0d7717977b44b82d0
 
 if {${perl5.major} != ""} {
     depends_build-append \

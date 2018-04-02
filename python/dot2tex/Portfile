@@ -15,7 +15,7 @@ long_description \
    output from Graphviz to a series of PSTricks or PGF/TikZ commands.
 
 checksums           rmd160  494a020addde7f21208af9c15af28c663d837bcf \
-                    sha256  0ea4813c44d7b24aed1ac0c1fb82a4584bbd1ad8a812cc3a0d820284491eda4e
+sha256  0ea4813c44d7b24aed1ac0c1fb82a4584bbd1ad8a812cc3a0d820284491eda4e
 
 depends_run         bin:dot:graphviz bin:latex:texlive bin:pdflatex:texlive
 

@@ -22,7 +22,7 @@ homepage            https://code.google.com/p/pdfrw
 master_sites        googlecode:pdfrw
 distname            pdfrw_${version}
 checksums           rmd160  108ebcbc7c422b663aa917306a6c6bd3f066f679 \
-                    sha256  4dbb4017b179f1ecee947501d178a90e1ff0aaf6444ef24b5a630ee68e884919
+sha256  4dbb4017b179f1ecee947501d178a90e1ff0aaf6444ef24b5a630ee68e884919
 
 python.versions 27 36
 

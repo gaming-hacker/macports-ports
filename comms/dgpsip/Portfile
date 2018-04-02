@@ -33,8 +33,8 @@ platforms	darwin freebsd
 master_sites	http://www.wsrcc.com/wolfgang/ftp/
 
 checksums	md5     e39129c4d0e1f253dd661bee6049860a \
-		sha1    11dc3fb3cbcd1e98f39d0b7459a7d68fecbde86d \
-		rmd160  f93440288a8d16f907e38522eac454c0dae3cf18
+sha1    11dc3fb3cbcd1e98f39d0b7459a7d68fecbde86d \
+rmd160  f93440288a8d16f907e38522eac454c0dae3cf18
 
 configure.args	--mandir=${prefix}/share/man
 

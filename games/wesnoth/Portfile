@@ -28,7 +28,7 @@ long_description        Battle for Wesnoth is a fantasy turn-based strategy \
                         next campaign.
 
 checksums               rmd160  8a097e8b711e428799ebc0b95e8d771d83035db6 \
-                        sha256  a50f384cead15f68f31cfa1a311e76a12098428702cb674d3521eb169eb92e4e
+sha256  a50f384cead15f68f31cfa1a311e76a12098428702cb674d3521eb169eb92e4e
 
 depends_build-append    port:pkgconfig
 

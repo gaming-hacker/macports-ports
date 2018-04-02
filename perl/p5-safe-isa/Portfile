@@ -18,4 +18,4 @@ description         Safe::Isa - Call isa, can, does and DOES safely on things th
 long_description    ${description}
 
 checksums           rmd160  6c3cf0c0e81581b8f4b23bbfd9313336739ee831 \
-                    sha256  7db6d7d9be58d41ef8cd91bd86ffa025bce5ad4a59f265575c6315dc39242723
+sha256  7db6d7d9be58d41ef8cd91bd86ffa025bce5ad4a59f265575c6315dc39242723

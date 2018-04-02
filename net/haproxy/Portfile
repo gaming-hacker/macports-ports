@@ -25,7 +25,7 @@ homepage            http://www.haproxy.org/
 master_sites        ${homepage}download/${branch}/src/
 
 checksums           rmd160  79c2483955d7ce46dbbcdf98cc4d5f72bca8fd95 \
-                    sha256  3dc7f65c4ed6ac1420dfd01896833e0f765f72471fbfa316a195793272e58b4a
+sha256  3dc7f65c4ed6ac1420dfd01896833e0f765f72471fbfa316a195793272e58b4a
 
 depends_lib         port:pcre
 

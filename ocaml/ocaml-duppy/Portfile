@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        sourceforge:savonet
 
 checksums           rmd160  bf829a7c54f214e4bd8144f5fcb49fee0e1ad27e \
-                    sha256  edf1c4eb3d182765375435f42b1bd71c1e8ce00fff52328c1c47b3502b17cd28
+sha256  edf1c4eb3d182765375435f42b1bd71c1e8ce00fff52328c1c47b3502b17cd28
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

@@ -19,7 +19,7 @@ long_description    \
 homepage            https://developers.yubico.com/yubico-piv-tool
 
 checksums           rmd160  f8fa09980d0f30016daf3a8a906a598844f229f0 \
-                    sha256  e4dcfa3110bb28a0ddbfb313716a9eae8f70fdcb0c4e2c0c37ba98dfd4359136
+sha256  e4dcfa3110bb28a0ddbfb313716a9eae8f70fdcb0c4e2c0c37ba98dfd4359136
 
 depends_build       port:check port:gengetopt port:help2man port:pkgconfig
 depends_lib         path:lib/libssl.dylib:openssl

@@ -32,7 +32,7 @@ homepage            http://www.awstats.org
 master_sites        sourceforge:project/awstats/AWStats/${version}/
 
 checksums           rmd160  62e7b046d1c9e40c91889a9109a59fbebb27a506 \
-                    sha256  4045501319bf99e223bdb492a68a8f08b8e814b0f144a008726d7bd59114167a
+sha256  4045501319bf99e223bdb492a68a8f08b8e814b0f144a008726d7bd59114167a
 
 depends_lib         path:bin/perl:perl5 port:apache2
 

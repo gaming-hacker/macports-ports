@@ -19,7 +19,7 @@ supported_archs     noarch
 license             BSD
 
 checksums           rmd160  49e3b005326bb5f35dbe3d606678aafce7e4ec03 \
-                    sha256  8ebe5afe20d54423c55d3374abc2a90de29a765daeca937eec29c0e3e055f853
+sha256  8ebe5afe20d54423c55d3374abc2a90de29a765daeca937eec29c0e3e055f853
 
 python.versions 27 36
 

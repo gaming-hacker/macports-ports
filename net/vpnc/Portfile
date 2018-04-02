@@ -23,7 +23,7 @@ platforms           darwin
 master_sites        http://www.unix-ag.uni-kl.de/~massar/vpnc/
 
 checksums           sha1 321527194e937371c83b5e7c38e46fca4f109304 \
-                    rmd160 6f3926901e75dc98762f6ef45782930f2fb76a2f
+rmd160 6f3926901e75dc98762f6ef45782930f2fb76a2f
 
 depends_lib         port:libgcrypt \
                     port:libgpg-error

@@ -13,4 +13,4 @@ description         PEAR MP3_Id package
 long_description    ${description}
 
 checksums           rmd160  5328ca1aa74ca93d35c614458cb28a1bfeaade72 \
-                    sha256  7c13f7a79c7f558130be0e01c82fde879baa612569e6d333f4c9331fa1358e7f
+sha256  7c13f7a79c7f558130be0e01c82fde879baa612569e6d333f4c9331fa1358e7f

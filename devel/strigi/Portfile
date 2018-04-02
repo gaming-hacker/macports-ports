@@ -36,7 +36,7 @@ depends_lib-append \
                 port:zlib
 
 checksums       rmd160  34cbbe98e7a371467b115b18586baf299340d1b8 \
-                sha256  43e461a625acdefa59bf58cc9d10aebda9eba920dfbe800fc77e6dcbf1eff989
+sha256  43e461a625acdefa59bf58cc9d10aebda9eba920dfbe800fc77e6dcbf1eff989
 
 patchfiles      patch-libstreamanalyzer-plugins-endplugins-ffmpegendanalyzer.cpp.diff \
                 patch-strigidaemon-bin-daemon-xesam-xesamsearch.h.diff

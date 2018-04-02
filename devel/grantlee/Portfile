@@ -16,7 +16,7 @@ homepage            http://www.grantlee.org/
 master_sites        http://downloads.grantlee.org/
 
 checksums           rmd160  ac66592b4ecae569e60fc2aee1cda754eb624e3d \
-                    sha256  fb7ebcc9beb5f74077a5e2fb4e9893d280dd3346e7f5f58155f0dcc9a2e25f30
+sha256  fb7ebcc9beb5f74077a5e2fb4e9893d280dd3346e7f5f58155f0dcc9a2e25f30
 
 patch.pre_args      -p1
 patchfiles          util-path.patch \

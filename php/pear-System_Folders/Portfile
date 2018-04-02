@@ -12,6 +12,6 @@ description         PEAR System_Folders package
 long_description    ${description}
 
 checksums           rmd160  a92c6e260cfc6eeb4251d8a14263666ed892fb96 \
-                    sha256  e1af1eb46334c02f31eaf2db68a6fb5fd85c7853c19c7a94491f7c0632270edc
+sha256  e1af1eb46334c02f31eaf2db68a6fb5fd85c7853c19c7a94491f7c0632270edc
 
 depends_lib-append  port:pear-Config

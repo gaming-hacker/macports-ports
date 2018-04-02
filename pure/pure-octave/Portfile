@@ -15,7 +15,7 @@ description                     an interface to run Octave commands from Pure
 long_description                ${name} is ${description}.
 
 checksums                       rmd160  2112a7b78a6256f027ee3b305c977f53638a950c \
-                                sha256  d09a3b546f02fe3fe1abaf719cf2dc19849731051e4658b59c577fdff6af2162
+sha256  d09a3b546f02fe3fe1abaf719cf2dc19849731051e4658b59c577fdff6af2162
 
 depends_build-append            port:pkgconfig
 

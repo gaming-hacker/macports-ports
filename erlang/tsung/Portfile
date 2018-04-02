@@ -24,7 +24,7 @@ homepage            http://tsung.erlang-projects.org/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  edfd8d6731c4b54d992e88f12285d52fb206f6b5 \
-                    sha256  6394445860ef34faedf8c46da95a3cb206bc17301145bc920151107ffa2ce52a
+sha256  6394445860ef34faedf8c46da95a3cb206bc17301145bc920151107ffa2ce52a
 
 depends_lib         port:erlang \
                     port:mochiweb \

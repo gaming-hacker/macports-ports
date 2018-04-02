@@ -19,4 +19,4 @@ master_sites            ${homepage}
 distname                ${real_name}-${version}
 
 checksums               rmd160  d7d609fc617b34453a698947c76ddc0d0e84a2f1 \
-                        sha256  5b57e6cbbbea62e73d914b127538676ee8526d4a32ea36e3fdc85e60effc8f3b
+sha256  5b57e6cbbbea62e73d914b127538676ee8526d4a32ea36e3fdc85e60effc8f3b

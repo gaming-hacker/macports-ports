@@ -19,7 +19,7 @@ homepage            http://www.catb.org/~esr/cupl/
 master_sites        ${homepage}
 
 checksums           rmd160  8457c2f76cc21fa9e5df2f365d71c760540f41bf \
-                    sha256  1e2f78023c68706336f6666ba25e6e0f97ac81ee7b14155afb3d9a475577ea24
+sha256  1e2f78023c68706336f6666ba25e6e0f97ac81ee7b14155afb3d9a475577ea24
 
 use_configure       no
 

@@ -18,8 +18,8 @@ homepage        http://www.rkeene.org/oss/dact/
 master_sites    http://www.rkeene.org/files/oss/dact/release/
 
 checksums           md5     60d6ea03a08d14108ee155d2fbf1eadc \
-                    sha1    f0ff1ff8a3eae9e15eeb3c9b567c7cd7f829eaac \
-                    rmd160  2f79cb5a1baa64767253b499b6f0121c8f5a3857
+sha1    f0ff1ff8a3eae9e15eeb3c9b567c7cd7f829eaac \
+rmd160  2f79cb5a1baa64767253b499b6f0121c8f5a3857
 
 depends_lib     port:libmcrypt \
                 port:zlib \

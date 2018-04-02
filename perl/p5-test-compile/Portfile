@@ -14,7 +14,7 @@ description         Check whether Perl files compile correctly
 long_description    ${description}
 
 checksums           rmd160  1c231c38fe571b0ab825a4c2c96c7bd53797905e \
-                    sha256  77527e9477ac5260443c756367a7f7bc3d8f6c6ebbc561b0b2fb3f79303bad33
+sha256  77527e9477ac5260443c756367a7f7bc3d8f6c6ebbc561b0b2fb3f79303bad33
 
 platforms           darwin
 supported_archs     noarch

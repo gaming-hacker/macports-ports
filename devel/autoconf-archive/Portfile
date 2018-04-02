@@ -26,7 +26,7 @@ master_sites        gnu
 use_xz              yes
 
 checksums           rmd160  91c296ccf8cb1f97b1a38358ed3425307331b7a4 \
-                    sha256  6175f90d9fa64c4d939bdbb3e8511ae0ee2134863a2c7bf8d9733819efa6e159
+sha256  6175f90d9fa64c4d939bdbb3e8511ae0ee2134863a2c7bf8d9733819efa6e159
 
 # deactivate versions of gnome-common < 3.18.0 when updating
 # to avoid collisions on activation

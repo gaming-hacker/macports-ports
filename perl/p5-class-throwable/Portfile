@@ -20,6 +20,6 @@ long_description    This module implements a minimal lightweight exception \
 platforms           darwin
 
 checksums           rmd160  80031a66cb4679f02de9de89ecc9d30e22c1b2e0 \
-                    sha256  dc9a11e0dab56dc220dea8c94fe3c47db5e7dd7c1ed04dc8178aa5bb7bfbbcce
+sha256  dc9a11e0dab56dc220dea8c94fe3c47db5e7dd7c1ed04dc8178aa5bb7bfbbcce
 
 supported_archs     noarch

@@ -21,7 +21,7 @@ long_description    WWW::WolframAlpha provides an object-oriented Perl \
                     http://products.wolframalpha.com/developers/ for details.
 
 checksums           rmd160  b1a1f2da5b79544c5bc9ca4780ecb4d5143ef83b \
-                    sha256  668b53e61202894038e9ac2e632810b42d916fbc0c4205dd6d00a0ad61d08eb1
+sha256  668b53e61202894038e9ac2e632810b42d916fbc0c4205dd6d00a0ad61d08eb1
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-libwww-perl \

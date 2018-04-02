@@ -16,7 +16,7 @@ long_description    This module provide a small, fast utility for working with f
 platforms           darwin
 
 checksums           rmd160  3a5d27a5b6655b2b9903995d7182dda6b58b190f \
-                    sha256  c69f1dcfeb4aa004086deb9bc14c7d79f45798b947f1efbd634a3442e267aaef
+sha256  c69f1dcfeb4aa004086deb9bc14c7d79f45798b947f1efbd634a3442e267aaef
 
 if {${perl5.major} != ""} {
     depends_build-append \

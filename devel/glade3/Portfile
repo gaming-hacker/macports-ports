@@ -19,7 +19,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  169269ce403fdd538c803d6c73112770cd6731d2 \
-                    sha256  aaeeebffaeb3068fb23757a2eede46adeb4c7cecc740feed7654e065491f5449
+sha256  aaeeebffaeb3068fb23757a2eede46adeb4c7cecc740feed7654e065491f5449
 
 depends_skip_archcheck devhelp
 

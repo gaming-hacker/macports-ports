@@ -21,8 +21,8 @@ homepage                    http://pslib.sourceforge.net/
 master_sites                sourceforge:project/pslib/pslib/${version} 
 
 checksums                   md5    03f39393628a6d758799b9f845047e27  \
-                            sha1   2ad904b650b7d55b7c12be0c99f77073770ece56  \
-                            rmd160 8400b078bd643325109e988df7971e0eb164f492 
+sha1   2ad904b650b7d55b7c12be0c99f77073770ece56  \
+rmd160 8400b078bd643325109e988df7971e0eb164f492 
 
 depends_lib                 port:libpng \
                             port:jpeg \

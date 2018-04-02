@@ -12,7 +12,7 @@ description         PEAR HTML_QuickForm_CAPTCHA package
 long_description    ${description}
 
 checksums           rmd160  0e893ed936471146de9d3d190baf3e106196070d \
-                    sha256  9a5c6c420f35b2dddf9186b4006e5ebd039d2ded7f019ae1b3cb22f5f3198300
+sha256  9a5c6c420f35b2dddf9186b4006e5ebd039d2ded7f019ae1b3cb22f5f3198300
 
 depends_lib-append  port:pear-Text_CAPTCHA \
                     port:pear-HTML_QuickForm

@@ -19,7 +19,7 @@ description         Graphics::GnuplotIF - A dynamic Perl interface to gnuplot.
 long_description    ${description}
 
 checksums           rmd160  fd2fb5cf68f8192587f427f902882fc4b1983f0e \
-                    sha256  821b186065767c8fd40d0d1af570be9537aafda55fcfc2c307b50aa9f8ac61e3
+sha256  821b186065767c8fd40d0d1af570be9537aafda55fcfc2c307b50aa9f8ac61e3
 
 if {${perl5.major} != ""} {
     require_active_variants gnuplot wxwidgets

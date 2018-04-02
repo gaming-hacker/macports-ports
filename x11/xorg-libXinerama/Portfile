@@ -14,8 +14,8 @@ master_sites	 xorg:individual/lib/
 
 distname	libXinerama-${version}
 checksums           sha1    6a3956d73f7457ef0b4db12806d99c6918e328e3 \
-                    rmd160  cb33f9ed40d138411ad31377619bee9a3686fdea \
-                    sha256  7a45699f1773095a3f821e491cbd5e10c887c5a5fce5d8d3fced15c2ff7698e2
+rmd160  cb33f9ed40d138411ad31377619bee9a3686fdea \
+sha256  7a45699f1773095a3f821e491cbd5e10c887c5a5fce5d8d3fced15c2ff7698e2
 use_bzip2	yes
 use_parallel_build      yes
 

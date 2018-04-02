@@ -12,7 +12,7 @@ description         PEAR Structures_DataGrid_DataSource_CSV package
 long_description    ${description}
 
 checksums           rmd160  0bf13989a455db144b1b6336e96c9071681e8744 \
-                    sha256  80efb59327a3f26cd3916e684aa7262f34bd3274d00906949ff0da9fa72ea7d5
+sha256  80efb59327a3f26cd3916e684aa7262f34bd3274d00906949ff0da9fa72ea7d5
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-Structures_DataGrid_DataSource_Array

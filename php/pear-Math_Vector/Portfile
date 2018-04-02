@@ -13,4 +13,4 @@ description         PEAR Math_Vector package
 long_description    ${description}
 
 checksums           rmd160  19d55ccf4df20e2fda3362c62ddedf752d3e912c \
-                    sha256  22d63a276bebeeff9e9df7d4106ecfb375e71923f1dd70028cb7ed34bcf3e925
+sha256  22d63a276bebeeff9e9df7d4106ecfb375e71923f1dd70028cb7ed34bcf3e925

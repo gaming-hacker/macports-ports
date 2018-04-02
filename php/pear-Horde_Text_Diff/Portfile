@@ -13,4 +13,4 @@ description         PEAR Horde_Text_Diff package
 long_description    ${description}
 
 checksums           rmd160  83a5f7bdae27c4a6ff1cd570b31ed3049a4f7fff \
-                    sha256  62bea455fae291bb87d347e5caa39b2460c3042475cacb89a619e9e9c6bd0a25
+sha256  62bea455fae291bb87d347e5caa39b2460c3042475cacb89a619e9e9c6bd0a25

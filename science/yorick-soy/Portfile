@@ -17,7 +17,7 @@ long_description    Sparse Operations with Yorick is a plugin for Yorick (an \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  95fc7d4dddc706e852be93e49fa08040cdc1a6ec \
-                    sha256  555563db50c88b96b490ddb51fe5be72e874ca5363d3aa2cbf05804cb52c0622
+sha256  555563db50c88b96b490ddb51fe5be72e874ca5363d3aa2cbf05804cb52c0622
 
 depends_lib-append  path:bin/yorick:yorick
 

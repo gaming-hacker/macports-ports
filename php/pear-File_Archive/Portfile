@@ -12,6 +12,6 @@ description         PEAR File_Archive package
 long_description    ${description}
 
 checksums           rmd160  9b8c2a35ab587dfb127d1329d30c9b499f4d0f2e \
-                    sha256  d739ca1d3cc52f7e5b8c46cfe2233afb11dee0e145e57754c0eaba50ffb8bde1
+sha256  d739ca1d3cc52f7e5b8c46cfe2233afb11dee0e145e57754c0eaba50ffb8bde1
 
 depends_lib-append  port:pear-MIME_Type

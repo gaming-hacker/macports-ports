@@ -29,11 +29,11 @@ depends_lib     port:libevent port:ncurses
 if {${subport} eq ${name}} {
     github.tarball_from     releases
     checksums               rmd160  32aa9e62fe5a0a6a11c4b3877a4e8e07381201f9 \
-                            sha256  b17cd170a94d7b58c0698752e1f4f263ab6dc47425230df7e53a6435cc7cd7e8
+sha256  b17cd170a94d7b58c0698752e1f4f263ab6dc47425230df7e53a6435cc7cd7e8
 }
 subport tmux-devel {
     checksums               rmd160  f692436a326a3aced7348c0c5854d8d044992e4f \
-                            sha256  39e6861b7e55e6b483506affc90f39c5656981ac11f7b98fbc50d9aa763eaf0d
+sha256  39e6861b7e55e6b483506affc90f39c5656981ac11f7b98fbc50d9aa763eaf0d
 
     use_autoreconf          yes
     autoreconf.cmd          ./autogen.sh

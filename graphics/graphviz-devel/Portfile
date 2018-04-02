@@ -31,7 +31,7 @@ long_description                Graphviz is ${description}. Graph visualization 
                                 variety of visual and text formats.
 
 checksums                       rmd160  f5680f1d6b1e67af9e874732cd0c60465b23d587 \
-                                sha256  d06e76d2f8a97cbd63927191a0be6d0b35525832b89de59baafe48d6400f0699 \
+sha256  d06e76d2f8a97cbd63927191a0be6d0b35525832b89de59baafe48d6400f0699 \
 size    25589016
 
 # graphviz needs Xcode 3.1+ to avoid the libGL error when building the smyrna variant

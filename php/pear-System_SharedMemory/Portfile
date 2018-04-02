@@ -12,4 +12,4 @@ description         PEAR System_SharedMemory package
 long_description    ${description}
 
 checksums           rmd160  79c4baca0b00f6156338b6f01b74eb3dbacdf6ef \
-                    sha256  2444ee5dddfc8e915e591492576c2a7b2af8725c9f4299b786bb880623d54552
+sha256  2444ee5dddfc8e915e591492576c2a7b2af8725c9f4299b786bb880623d54552

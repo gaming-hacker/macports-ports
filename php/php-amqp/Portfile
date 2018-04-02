@@ -23,7 +23,7 @@ long_description    This extension can communicate with any AMQP spec 0-9-1 \
                     consume from any queue.
 
 checksums           rmd160  14e0ad1abba8871bbba7a43fc6779dd4978ad3b1 \
-                    sha256  c79e52db33bf907dad7da8f350dbdf2937b0679a3dc44fb2a941efb6d4808da9 \
+sha256  c79e52db33bf907dad7da8f350dbdf2937b0679a3dc44fb2a941efb6d4808da9 \
 size    101342
 
 depends_lib-append  port:rabbitmq-c

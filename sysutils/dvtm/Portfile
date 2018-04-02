@@ -22,7 +22,7 @@ homepage                http://brain-dump.org/projects/dvtm/
 master_sites            ${homepage}
 
 checksums               rmd160  36f14f5e7da72aeee7ca412d905d7d50047208d4 \
-                        sha256  7750872578e259d86c79277c19f3715c1fd3ff8d4f6c300ff8e12b270db86651
+sha256  7750872578e259d86c79277c19f3715c1fd3ff8d4f6c300ff8e12b270db86651
 
 depends_lib             port:ncurses
 

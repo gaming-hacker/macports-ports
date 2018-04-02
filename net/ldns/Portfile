@@ -36,7 +36,7 @@ homepage            http://www.nlnetlabs.nl/projects/ldns/
 master_sites        http://www.nlnetlabs.nl/downloads/ldns/
 
 checksums           rmd160  b0dfb70085258e69dda0fc343f0eece6df52e0a1 \
-                    sha256  c19f5b1b4fb374cfe34f4845ea11b1e0551ddc67803bd6ddd5d2a20f0997a6cc
+sha256  c19f5b1b4fb374cfe34f4845ea11b1e0551ddc67803bd6ddd5d2a20f0997a6cc
 
 depends_build       bin:glibtool:libtool
 depends_lib         path:lib/libssl.dylib:openssl

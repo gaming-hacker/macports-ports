@@ -18,7 +18,7 @@ homepage        http://www.vanheusden.com/andatool/
 master_sites    ${homepage}
 
 checksums       rmd160  451ff667748b3963df0f65f5d1b57e98a356810a \
-                sha256  3bc399e1afae6648fa9596a01f5e42888439f7bfa3af319358b4928aed0e8051
+sha256  3bc399e1afae6648fa9596a01f5e42888439f7bfa3af319358b4928aed0e8051
 extract.suffix  .tgz
 
 depends_lib     port:ncurses

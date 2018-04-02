@@ -18,6 +18,6 @@ long_description    This is not an interface (like Digest::MD5) but a Perl \
 platforms           darwin
 
 checksums           rmd160  31dfb73a8e5742d5ba9cb3fedc969fd152bb216c \
-                    sha256  7100cba1710f45fb0e907d8b1a7bd8caef35c64acd31d7f225aff5affeecd9b1
+sha256  7100cba1710f45fb0e907d8b1a7bd8caef35c64acd31d7f225aff5affeecd9b1
 
 supported_archs     noarch

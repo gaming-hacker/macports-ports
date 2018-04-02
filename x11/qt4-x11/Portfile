@@ -27,9 +27,9 @@ master_sites        trolltech
 distname            qt-x11-opensource-src-${version}
 
 checksums           \
-    md5    376c003317c4417326ba2116370227d0          \
-    sha1   a883e913e69a418e3cfcfecefe4f82c4e091c4bd  \
-    rmd160 49de53663a86785f88236bdeca6db8ee96a37db8
+md5    376c003317c4417326ba2116370227d0          \
+sha1   a883e913e69a418e3cfcfecefe4f82c4e091c4bd  \
+rmd160 49de53663a86785f88236bdeca6db8ee96a37db8
 
 depends_build       port:pkgconfig port:${select_port}
 

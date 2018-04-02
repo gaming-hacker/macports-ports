@@ -16,7 +16,7 @@ homepage            http://yaws.hyber.org/
 master_sites        http://yaws.hyber.org/download/
 
 checksums           rmd160  a28395dba23c1a2d1ce69e3ba41dfb6a38cfad62 \
-                    sha256  da6677c315aadc7c64c970ef74eaa29f61eba886c7d30c61806651ac38c1e6c5
+sha256  da6677c315aadc7c64c970ef74eaa29f61eba886c7d30c61806651ac38c1e6c5
 
 depends_build       port:erlang
 

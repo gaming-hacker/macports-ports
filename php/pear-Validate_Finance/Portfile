@@ -13,6 +13,6 @@ description         PEAR Validate_Finance package
 long_description    ${description}
 
 checksums           rmd160  7904af8356d092b5948c4caa44e70846926e383d \
-                    sha256  7f31dce1fa7bcc100c490060179090380da3b8466448a5cd266f1874ed336788
+sha256  7f31dce1fa7bcc100c490060179090380da3b8466448a5cd266f1874ed336788
 
 depends_lib-append  port:pear-Validate

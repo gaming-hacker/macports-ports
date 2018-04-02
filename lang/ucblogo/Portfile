@@ -14,8 +14,8 @@ homepage         http://www.cs.berkeley.edu/~bh/logo.html
 license          GPL-2
 master_sites     ftp://ftp.cs.berkeley.edu/pub/ucblogo/
 checksums        md5    36a56765b18136c817880c5381af196b \
-                 sha1   ad62c689c264b1aeb7bd58dd9c08ca602bade8f1 \
-                 rmd160 7cd9ec8eeff00fb3440f5036d57a9b29383ab310
+sha1   ad62c689c264b1aeb7bd58dd9c08ca602bade8f1 \
+rmd160 7cd9ec8eeff00fb3440f5036d57a9b29383ab310
 
 fetch.use_epsv   no
 

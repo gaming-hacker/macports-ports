@@ -21,7 +21,7 @@ long_description    POVRAY is a 'free' and popular Ray Tracer available for \
 homepage            http://www.povray.org/
 
 checksums           rmd160  e60baea42f8041b4647bc874021e2ff1f9c3300d \
-                    sha256  33335f90394d3a3e2e108a69ac367ec7a75b2699ea48bb59fa197be5c22f4810
+sha256  33335f90394d3a3e2e108a69ac367ec7a75b2699ea48bb59fa197be5c22f4810
 
 depends_build       port:autoconf \
                     port:automake \

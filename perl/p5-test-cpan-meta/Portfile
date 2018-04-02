@@ -16,4 +16,4 @@ description         Validate your CPAN META.yml files
 long_description    ${description}
 
 checksums           rmd160  8db2f2f5456c52e5ce048d89bf695daecc0d46f1 \
-                    sha256  f55b4f9cf6bc396d0fe8027267685cb2ac4affce897d0967a317fac6db5a8db5
+sha256  f55b4f9cf6bc396d0fe8027267685cb2ac4affce897d0967a317fac6db5a8db5

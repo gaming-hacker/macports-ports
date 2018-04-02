@@ -19,4 +19,4 @@ description         File monitoring interface
 long_description    ${description}
 
 checksums           rmd160 54aea6514a497df14d9aad9aa4591752b95a54d7 \
-                    sha256 32e3df1cef2ba4932c3e0e6f7baedb01d3dd472aebc238cdadbd6635414ffaef
+sha256 32e3df1cef2ba4932c3e0e6f7baedb01d3dd472aebc238cdadbd6635414ffaef

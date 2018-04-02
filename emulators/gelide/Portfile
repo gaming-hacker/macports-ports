@@ -33,7 +33,7 @@ depends_lib             port:desktop-file-utils \
                         port:libxml2
 
 checksums               rmd160  85e68e55b6985910deefb159f64eed637131c2bd \
-                        sha256  74901f9a31962ac2c3b7ef5264b164aa07e8a8cfc990cce1787040f2ca0cb211
+sha256  74901f9a31962ac2c3b7ef5264b164aa07e8a8cfc990cce1787040f2ca0cb211
 
 patchfiles              patch-autogen.sh.diff \
                         patch-docdir.diff

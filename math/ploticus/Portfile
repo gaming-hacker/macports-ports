@@ -24,8 +24,8 @@ master_sites     sourceforge
 distname         pl[join [split ${version} .] {}]src
 
 checksums        md5     ed68bd653488bbe86301077e12d3265a \
-                 sha1    f12aa6d5d2d0d284f69b589263f0ee39ed8e0317 \
-                 rmd160  25dfca2d40d7da44235292587aaf7e3b47cac12c
+sha1    f12aa6d5d2d0d284f69b589263f0ee39ed8e0317 \
+rmd160  25dfca2d40d7da44235292587aaf7e3b47cac12c
 
 depends_lib      port:xorg-libX11 port:libpng port:zlib \
                  port:gd2 port:jpeg port:freetype

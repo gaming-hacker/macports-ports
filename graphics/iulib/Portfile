@@ -17,7 +17,7 @@ long_description    ${name} is a library of image understanding-related \
                     mathematical morphology, and machine learning algorithms.
 
 checksums           rmd160  65fc45ab177bc74fd839f6ccb72fb4616289697a \
-                    sha256  dae24fd427ae7e1c514b37054341823499b719418c5717691477623b731d72ed
+sha256  dae24fd427ae7e1c514b37054341823499b719418c5717691477623b731d72ed
 
 depends_build       port:scons
 

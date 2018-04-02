@@ -16,7 +16,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  fd34447fa5597880a2643551a3d63039ef6f456c \
-                    sha256  7df547ceb8e45d40f75e481a868f389aaed5641c2cf4e133146ccea4b8facec6
+sha256  7df547ceb8e45d40f75e481a868f389aaed5641c2cf4e133146ccea4b8facec6
 
 variant gnupg1 description {Use old gnupg v1 rather than default gnupg v2} {}
 

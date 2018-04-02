@@ -17,9 +17,9 @@ platforms           darwin
 homepage            http://libcec.pulse-eight.com/
 
 checksums           md5     a1a314b9451a381107d9921ab0ba429b \
-                    sha1    def30d8c40537f5accdb2ad3e68823099af94645 \
-                    rmd160  5aabb1c647244b070064f9dc3f16b7b64e997ca5 \
-                    sha256  6a67dac0345e125011cc708070fbe6c018d68de94a9726ead34c0c2ab94e943e
+sha1    def30d8c40537f5accdb2ad3e68823099af94645 \
+rmd160  5aabb1c647244b070064f9dc3f16b7b64e997ca5 \
+sha256  6a67dac0345e125011cc708070fbe6c018d68de94a9726ead34c0c2ab94e943e
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig \

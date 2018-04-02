@@ -22,7 +22,7 @@ long_description    The RPM Package Manager (RPM) is a powerful command line dri
 homepage            http://rpm5.org
 master_sites        ${homepage}/files/${name}/${name}-4.4
 checksums           rmd160  4abae3d8262a71eb3136c7817c5ae95bd8cd48e5 \
-                    sha256  1da0dd4fd6743db9a5cb89d04e2ee192130a7ac861d0344589c712f2faeb74fa
+sha256  1da0dd4fd6743db9a5cb89d04e2ee192130a7ac861d0344589c712f2faeb74fa
 
 depends_build       port:perl${perl5.major} \
                     port:python27

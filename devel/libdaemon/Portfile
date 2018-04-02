@@ -21,8 +21,8 @@ homepage        http://0pointer.de/lennart/projects/libdaemon/
 master_sites    ${homepage}
 
 checksums           md5     509dc27107c21bcd9fbf2f95f5669563 \
-                    sha1    78a4db58cf3a7a8906c35592434e37680ca83b8f \
-                    rmd160  952ae993fecfe3ec765dfa43b2690a83f1a5c939
+sha1    78a4db58cf3a7a8906c35592434e37680ca83b8f \
+rmd160  952ae993fecfe3ec765dfa43b2690a83f1a5c939
 
 depends_build   port:pkgconfig
 

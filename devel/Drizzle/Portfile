@@ -26,7 +26,7 @@ extract.suffix              .jar
 extract.only
 
 checksums                   rmd160  d343759590a826344f44d3999fed990e12cb380a \
-                            sha256  32ce0e9bceea7cf55c6a381a10b3942e5f3904f7aa08ea6735c1413386ef4667
+sha256  32ce0e9bceea7cf55c6a381a10b3942e5f3904f7aa08ea6735c1413386ef4667
 
 extract.mkdir               yes
 

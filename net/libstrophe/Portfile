@@ -17,7 +17,7 @@ long_description   libstrophe is a lightweight XMPP client library written in C.
                    based platforms.
 
 checksums          rmd160  ad91c0a0c2eb2726efd854dd696eb086204c608b \
-                   sha256  b15427e9fdac36a72144ffe7bfc4c501e9cf3ccd97ed9afafe575fa10b2e95d7
+sha256  b15427e9fdac36a72144ffe7bfc4c501e9cf3ccd97ed9afafe575fa10b2e95d7
 
 depends_build      port:m4 \
                    port:pkgconfig

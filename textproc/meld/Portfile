@@ -26,7 +26,7 @@ master_sites            gnome:sources/${name}/[join [lrange [split $version .] 0
 use_xz                  yes
 
 checksums               rmd160  04a24763fd112b787824145cd18eff48faeb63bc \
-                        sha256  848158b1e5c7473b9da3ddc16e057aad8951ec82979beb5914b8b4acdf97223e
+sha256  848158b1e5c7473b9da3ddc16e057aad8951ec82979beb5914b8b4acdf97223e
 
 python.versions         36
 python.default_version  36

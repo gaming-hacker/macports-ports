@@ -28,7 +28,7 @@ long_description    This ports bundles most of the functionality for audacious. 
 master_sites        http://distfiles.audacious-media-player.org
 use_bzip2           yes
 checksums           rmd160  a9599198be430218fcfda4184222df7fcaf8398e \
-                    sha256  8179b80fffc893d4a2533fc7b7c4800981bc9ab3c6d1742a4c832fd6176ca24a
+sha256  8179b80fffc893d4a2533fc7b7c4800981bc9ab3c6d1742a4c832fd6176ca24a
 
 universal_variant   no
 

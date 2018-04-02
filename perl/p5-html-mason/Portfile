@@ -21,7 +21,7 @@ long_description    Mason is a tool for building, serving and managing \
 platforms           darwin
 
 checksums           rmd160  5aaee5513fb83f3dfd7c003c28b27dd1d1ec6ee7 \
-                    sha256  81dc9b199f0f3b3473c97ba0ebee4b9535cd633d4e9c1ca3818615dc03dff948
+sha256  81dc9b199f0f3b3473c97ba0ebee4b9535cd633d4e9c1ca3818615dc03dff948
 
 if {${perl5.major} != ""} {
     depends_build-append \

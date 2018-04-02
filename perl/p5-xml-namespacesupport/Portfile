@@ -14,4 +14,4 @@ description         Simple generic namespace support class
 long_description    ${description}
 
 checksums           rmd160  1031c3ee62fb85c54a07ca0164827aa805a758a0 \
-                    sha256  47e995859f8dd0413aa3f22d350c4a62da652e854267aa0586ae544ae2bae5ef
+sha256  47e995859f8dd0413aa3f22d350c4a62da652e854267aa0586ae544ae2bae5ef

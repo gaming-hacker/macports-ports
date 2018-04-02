@@ -23,8 +23,8 @@ if {${name} eq ${subport}} {
     github.setup    gnuradio volk 1.4 v
     revision        1
     checksums       \
-        rmd160 cf9e7a2a6d981871cc3321135f2f97fa872da94f \
-        sha256 369dffa2ad16c0439f72bdb6d948d91a66cc274388e3bb343e1c19348dcb0ead \
+rmd160 cf9e7a2a6d981871cc3321135f2f97fa872da94f \
+sha256 369dffa2ad16c0439f72bdb6d948d91a66cc274388e3bb343e1c19348dcb0ead \
 size   233428
 
     # bump the epoch because I moved the version from 20150707 to 1.0.1
@@ -40,8 +40,8 @@ subport volk-devel {
     github.setup    gnuradio volk da56e316ca095a09b53ce308a79b522bcb4a6504
     version         20180327
     checksums       \
-        rmd160 93d2b7dcedef2a44f71eb6f93ad8c9fc0404f789 \
-        sha256 71eee34af56ad2815d44adefc563f7d147409add7a36ec5b5031e5e554a7af01 \
+rmd160 93d2b7dcedef2a44f71eb6f93ad8c9fc0404f789 \
+sha256 71eee34af56ad2815d44adefc563f7d147409add7a36ec5b5031e5e554a7af01 \
 size   233415
 
     conflicts       volk

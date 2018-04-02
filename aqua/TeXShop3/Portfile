@@ -32,7 +32,7 @@ set propername      TeXShop
 dist_subdir         TeXShop/${version}_${revision}
 
 checksums           rmd160  c545b10305bb7c5f3d63d38e4766a529b5ebd421 \
-                    sha256  4cc7da95c370af72a204f225ade65d1c8bd57d30546285c2c77b3602989c47eb
+sha256  4cc7da95c370af72a204f225ade65d1c8bd57d30546285c2c77b3602989c47eb
 
 minimum_xcodeversions       {16 9}
 

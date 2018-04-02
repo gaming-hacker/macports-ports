@@ -19,7 +19,7 @@ long_description    Django is a high-level Python Web framework that \
 homepage            http://www.djangoproject.com
 
 checksums           rmd160  aea1595dc97ee2c03291a9298c1cb6f9f5a1f574 \
-                    sha256  908572660e67bfc2d472d847c43307f6a87e144d594463ca6f9b456b31f42ed1
+sha256  908572660e67bfc2d472d847c43307f6a87e144d594463ca6f9b456b31f42ed1
 
 python.versions 27 36
 supported_archs     noarch

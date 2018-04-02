@@ -16,7 +16,7 @@ distname            camldbm-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  0691f84ac43c97fddaf796c04729baa8bcb280ca \
-                    sha256  19741fa7827c306ae43b18170b01f5547326ec7ea6c2f4bd80c93439b5ff538f
+sha256  19741fa7827c306ae43b18170b01f5547326ec7ea6c2f4bd80c93439b5ff538f
 
 depends_lib         port:ocaml port:gdbm
 

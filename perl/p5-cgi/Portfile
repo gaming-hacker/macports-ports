@@ -19,7 +19,7 @@ long_description    ${description} CGI is considered to be a legacy \
 platforms           darwin
 
 checksums           rmd160  f7ea91ba7e41a808a420f54908a80ebc51be25ff \
-                    sha256  8c58f4a529bb92a914b22b7e64c5e31185c9854a4070a6dfad44fe5cc248e7d4
+sha256  8c58f4a529bb92a914b22b7e64c5e31185c9854a4070a6dfad44fe5cc248e7d4
 
 if {${perl5.major} != ""} {
     depends_build-append \

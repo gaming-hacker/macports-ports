@@ -31,7 +31,7 @@ master_sites            sourceforge:project/${name}/${name}${branch}/${version} 
                         ftp://ftp.simplesystems.org/pub/libpng/png/src/${name}${branch}/
 
 checksums               rmd160  cc14798ac8ab2a69f2ca6153c3b52452a972b9ae \
-                        sha256  2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6 \
+sha256  2f1e960d92ce3b3abd03d06dfec9637dfbd22febf107a536b44f7a47c60659f6 \
 size    997968
 
 depends_lib             port:zlib

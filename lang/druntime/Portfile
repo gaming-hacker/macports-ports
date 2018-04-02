@@ -18,7 +18,7 @@ long_description \
 homepage            http://dlang.org/
 
 checksums           rmd160  5015a150c876a813557348caa7fd28a417c5272f \
-                    sha256  6cc1f93d0ad551026db6a0c4229d81806787ba2bca34518fd558ee8bda9e8bbd
+sha256  6cc1f93d0ad551026db6a0c4229d81806787ba2bca34518fd558ee8bda9e8bbd
 
 depends_lib         port:dmd
 

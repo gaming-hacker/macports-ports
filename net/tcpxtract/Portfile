@@ -34,8 +34,8 @@ homepage                http://tcpxtract.sourceforge.net/
 master_sites            sourceforge
 
 checksums               md5     1d8fe172d4590c33a157798e08dc0ccd \
-                        sha1    48fce86ac87e5467cb671236a7247474f69bac9d \
-                        rmd160  0577bdaa1ab57457c805fb49376aa305ae4d9457
+sha1    48fce86ac87e5467cb671236a7247474f69bac9d \
+rmd160  0577bdaa1ab57457c805fb49376aa305ae4d9457
 
 depends_build           port:flex
 depends_lib             port:libpcap

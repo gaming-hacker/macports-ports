@@ -19,7 +19,7 @@ platforms           darwin
 universal_variant   no
 
 checksums           rmd160  84b1721dae083b15a5b337ea6dd41ad36b772d6f \
-                    sha256  78caafaae2c543ceb5c55918104a3d65b8e0f94ebeed71b8f0f500c89afa690e
+sha256  78caafaae2c543ceb5c55918104a3d65b8e0f94ebeed71b8f0f500c89afa690e
 
 mpi.setup
 
@@ -71,7 +71,7 @@ subport petsc-devel {
     revision            5
 
     checksums           rmd160  d67afbc8fd5ec371cd1debfff4b9c0bb41f04a78 \
-                        sha256  88beb37f34b5f997d47ff0950bc1b89a41035de05b292873d215e7fd78824f56
+sha256  88beb37f34b5f997d47ff0950bc1b89a41035de05b292873d215e7fd78824f56
 }
 
 notes               "Add the following line to your .bash_profile if you plan to use\

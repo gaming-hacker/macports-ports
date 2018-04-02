@@ -38,7 +38,7 @@ depends_lib         port:emacs
 depends_build       port:texinfo
 
 checksums           rmd160  ea212acd00c18b9a8c3a8b1aa4b1c5727ea3a55c \
-                    sha256  c71a46fcd9ae4d68d9fa970d175ff84cd85780dc3f9aec603688deff252aedb8
+sha256  c71a46fcd9ae4d68d9fa970d175ff84cd85780dc3f9aec603688deff252aedb8
 
 configure.pre_args  --prefix=${destroot}${prefix}
 

@@ -19,7 +19,7 @@ homepage            https://clojure.org
 platforms           darwin
 master_sites        http://central.maven.org/maven2/org/${name}/${name}/${version}
 checksums           rmd160  e447a3e7e81ace291b3c75ecca4742ed98f5f8e5 \
-                    sha256  d53393fbf07e33496cfcdabc1583683b446068cc5397c0b5488495ef4a0237da
+sha256  d53393fbf07e33496cfcdabc1583683b446068cc5397c0b5488495ef4a0237da
 
 use_zip             yes
 

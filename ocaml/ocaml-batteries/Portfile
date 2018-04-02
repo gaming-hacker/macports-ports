@@ -21,7 +21,7 @@ platforms           darwin
 distname            batteries-${version}
 
 checksums           rmd160  eb57d6497d190c991aafb03ef305f86b748a72b0 \
-                    sha256  7a7139ffa0c0da356a3be63a1024eb15f15eaf6d396b999565e77f77ca789c7c
+sha256  7a7139ffa0c0da356a3be63a1024eb15f15eaf6d396b999565e77f77ca789c7c
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

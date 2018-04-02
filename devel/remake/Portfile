@@ -22,8 +22,8 @@ homepage        http://bashdb.sourceforge.net/remake/
 master_sites    sourceforge:bashdb
 
 checksums       sha1    b48d98a6a3650cadbb791e416361a2a7ade9a7bd \
-                rmd160  6a209cb73020d27fbce85e27980aa3d8ca3d87bb \
-                sha256  55df3b2586ab90ac0983a049f1911c4a1d9b68f7715c69768fbb0405e96a0e7b \
+rmd160  6a209cb73020d27fbce85e27980aa3d8ca3d87bb \
+sha256  55df3b2586ab90ac0983a049f1911c4a1d9b68f7715c69768fbb0405e96a0e7b \
 size    1508613
 
 distname        ${name}-${makeversion}+dbg-${dbgversion}

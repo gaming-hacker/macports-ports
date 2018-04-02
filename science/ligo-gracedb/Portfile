@@ -28,7 +28,7 @@ homepage      https://www.lsc-group.phys.uwm.edu/daswg/projects/gracedb.html
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160 13f6352f9459afb647d43933f59e4c27a1e6d6d2 \
-              sha256 3c494fdd892c879a28853972b3fb786bed9e6508a9a2820cf4ec8fd36bdbe635
+sha256 3c494fdd892c879a28853972b3fb786bed9e6508a9a2820cf4ec8fd36bdbe635
 
 python.default_version  27
 

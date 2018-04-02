@@ -13,7 +13,7 @@ homepage            https://github.com/manveru/innate
 platforms           darwin
 
 checksums           md5 78e30a90c4126c7a40e8df1159f9616b \
-                    rmd160 f45ff1a5c3789d74e63c46f759916569f47cf787 \
-                    sha1 0e4400f8aaa525eb9558e912c094e950b4da89e0
+rmd160 f45ff1a5c3789d74e63c46f759916569f47cf787 \
+sha1 0e4400f8aaa525eb9558e912c094e950b4da89e0
 
 depends_lib         port:rb-rack

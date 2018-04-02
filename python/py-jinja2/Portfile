@@ -24,8 +24,8 @@ master_sites        pypi:J/Jinja2
 distname            Jinja2-${version}
 
 checksums           md5 61ef1117f945486472850819b8d1eb3d \
-                    rmd160 552a79aaea2fa3e5b5211f89260fc8416cc28ce4 \
-                    sha256 f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4
+rmd160 552a79aaea2fa3e5b5211f89260fc8416cc28ce4 \
+sha256 f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4
 
 python.versions 27 36
 

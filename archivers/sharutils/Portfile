@@ -27,7 +27,7 @@ depends_lib			port:gettext \
 					port:libiconv
 
 checksums			sha1    9c50b2c36c84c9c26deb34ba2d8bb2521d00ce5b \
-					rmd160  2ec3138af63aa7b62288f4b8768bf72b885d3eb2
+rmd160  2ec3138af63aa7b62288f4b8768bf72b885d3eb2
 
 post-destroot {
 	set docdir ${prefix}/share/doc/${name}

@@ -27,9 +27,9 @@ distname            ruby-${version}
 dist_subdir         ruby25
 
 checksums           md5 63a6cd49546783d62de25a0ffc4aecc3 \
-                    rmd160 e09d8b3f89d3b494231026cf1295c5bf5da794e5 \
-                    sha1 827b9a3bcffa86d1fc9ed96d403cb9dc37731688 \
-                    sha256 d87eb3021f71d4f62e5a5329628ac9a6665902173296e551667edd94362325cc
+rmd160 e09d8b3f89d3b494231026cf1295c5bf5da794e5 \
+sha1 827b9a3bcffa86d1fc9ed96d403cb9dc37731688 \
+sha256 d87eb3021f71d4f62e5a5329628ac9a6665902173296e551667edd94362325cc
 
 use_parallel_build  no
 

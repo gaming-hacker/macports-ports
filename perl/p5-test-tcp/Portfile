@@ -16,7 +16,7 @@ description         Test::TCP - for testing TCP/IP programs
 long_description    ${description}
 
 checksums           rmd160  652364f21e57ace33ccc73f5a521fc8c7d3ca45d \
-                    sha256  dd012d9d596b2a4e26feb5e017ed8035bf779f636da78b8ae4f5f581e9fc5091
+sha256  dd012d9d596b2a4e26feb5e017ed8035bf779f636da78b8ae4f5f581e9fc5091
 
 if {${perl5.major} != ""} {
 # use Time::HiRes 1.9739+ for Sierra compatibility

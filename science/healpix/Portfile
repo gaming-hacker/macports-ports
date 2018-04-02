@@ -19,8 +19,8 @@ distname            Healpix_${version}
 worksrcdir          Healpix_${base_version}
 
 checksums           md5     c0dc75e57f237b634fec97df55997918 \
-                    sha1    6815ba67a0fd20c97e635340bfcbddcbf533bd59 \
-                    rmd160  456183f75c2900431e3d1ebf214fa9f5fe7824db
+sha1    6815ba67a0fd20c97e635340bfcbddcbf533bd59 \
+rmd160  456183f75c2900431e3d1ebf214fa9f5fe7824db
 
 if {${name} == ${subport}} {
     supported_archs noarch

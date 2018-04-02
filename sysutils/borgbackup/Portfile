@@ -24,7 +24,7 @@ homepage            https://borgbackup.github.io/
 master_sites        pypi:b/borgbackup
 
 checksums           rmd160  cd2391b7a3d6fe1c9e096047063caea76739cd46 \
-                    sha256  fc6efd2d19454625532e0defac90cd8e8737665e10ae59edb15356ee5a99d291
+sha256  fc6efd2d19454625532e0defac90cd8e8737665e10ae59edb15356ee5a99d291
 
 # borgbackup requires Python 3 >= 3.4.0
 python.default_version  35

@@ -20,7 +20,7 @@ long_description    BerkeleyGW is a set of computer codes that calculate the qua
 homepage            http://www.berkeleygw.org
 
 checksums           rmd160  26933a24c10ba03457c667bc5f2d3ca21df2a436 \
-                    sha256  1305dc8587af666fe437bc2561a9106b2b0bcdbe91980b8f1ae7bbd491ce1e25
+sha256  1305dc8587af666fe437bc2561a9106b2b0bcdbe91980b8f1ae7bbd491ce1e25
 
 master_sites        https://berkeley.box.com/shared/static
 distfiles           829s6ha4popx1g4cslpklzh5znf2v6la.gz

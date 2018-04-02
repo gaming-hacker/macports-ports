@@ -33,7 +33,7 @@ python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  2eea3680e535fd69981969685ea7dbeb16f4f906 \
-                             sha256  6b6a04d3290e5c3456ae5b2ac050c82f915e42023ac336f3267172a465dd9639
+sha256  6b6a04d3290e5c3456ae5b2ac050c82f915e42023ac336f3267172a465dd9639
 
 depends_build-append port:pkgconfig
 

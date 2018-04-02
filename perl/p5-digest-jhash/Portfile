@@ -14,4 +14,4 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  01427042e4fbc6552f358fd2dc4bd8a03e4bfaf7 \
-                    sha256  c746cf0a861a004090263cd54d7728d0c7595a0cf90cbbfd8409b396ee3b0063
+sha256  c746cf0a861a004090263cd54d7728d0c7595a0cf90cbbfd8409b396ee3b0063

@@ -23,8 +23,8 @@ master_sites	http://www.germane-software.com/archives/
 distname		${ruby.module}_${version}
 extract.suffix	.tgz
 checksums		md5 a4d98da886615708301510bde942d785 \
-				sha1 726fe5490433af2548a37577f6fa24b122052532 \
-				rmd160 79397a7a2ad04bc87f19941eac1ef7d1b19ec592
+sha1 726fe5490433af2548a37577f6fa24b122052532 \
+rmd160 79397a7a2ad04bc87f19941eac1ef7d1b19ec592
 platforms		darwin
 
 post-extract	{ system "ln -s bin/install.rb ${worksrcpath}/install.rb" }

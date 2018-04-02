@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	xcmiscproto-${version}
 checksums           sha1    59ae9ec6414964440bf654b207618e5dd66a32fb \
-                    rmd160  06890647d88499b9533669837c0091e424b06ba2 \
-                    sha256  b13236869372256c36db79ae39d54214172677fb79e9cdc555dceec80bd9d2df
+rmd160  06890647d88499b9533669837c0091e424b06ba2 \
+sha256  b13236869372256c36db79ae39d54214172677fb79e9cdc555dceec80bd9d2df
 use_bzip2	yes
 
 configure.args \

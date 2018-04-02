@@ -22,7 +22,7 @@ homepage            http://www.tddft.org/programs/octopus
 master_sites        ${homepage}/download/${version}
 
 checksums           rmd160  695a22404ab2ce0efbd5555be1077f61ff0d430c \
-                    sha256  f5589f14ff30d5a960af697fb4ab71daf4f3e2d19dd6e5229cd2b62f0eaeff0f
+sha256  f5589f14ff30d5a960af697fb4ab71daf4f3e2d19dd6e5229cd2b62f0eaeff0f
 
 # clang38: errors on operate.o
 compiler.blacklist  macports-clang-3.8

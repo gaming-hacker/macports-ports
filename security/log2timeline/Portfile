@@ -25,7 +25,7 @@ extract.suffix      .tgz
 distname            ${name}_${version}
 
 checksums           rmd160  c9dad4035bad1dbbf87e82f123aa014f03aa647f \
-                    sha256  3d2ad0ac52bc7d902bdc7c7ce5f27e2d5a283fedb41327b75609e5ef3be01afc
+sha256  3d2ad0ac52bc7d902bdc7c7ce5f27e2d5a283fedb41327b75609e5ef3be01afc
 
 supported_archs     noarch
 

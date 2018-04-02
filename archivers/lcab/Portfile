@@ -21,8 +21,8 @@ distname        ${name}_${version}.orig
 worksrcdir      ${name}-${version}
 
 checksums       md5 9403e08f53fcf262e25641a9b900d4de \
-                sha1 3e5a1f23f0ea1c991e80322592e3ede9f38ecd94 \
-                rmd160 2b6978175248ac048613e4414acc121df103de7a
+sha1 3e5a1f23f0ea1c991e80322592e3ede9f38ecd94 \
+rmd160 2b6978175248ac048613e4414acc121df103de7a
 
 post-destroot {
 	xinstall -m 0444 ${worksrcpath}/lcab.1 ${destroot}${prefix}/share/man/man1

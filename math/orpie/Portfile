@@ -22,7 +22,7 @@ homepage            http://pessimization.com/software/orpie/
 master_sites        ${homepage}
 
 checksums           rmd160 61ee7019ec5d141aade27d1c78770c2b11803085 \
-                    sha256 de557fc7f608c6cb1f44a965d3ae07fc6baf2b02a0d7994b89d6a0e0d87d3d6d
+sha256 de557fc7f608c6cb1f44a965d3ae07fc6baf2b02a0d7994b89d6a0e0d87d3d6d
 
 depends_build       port:ocaml \
                     port:ocaml-camlp4

@@ -14,9 +14,9 @@ homepage                http://www.openvas.org/
 master_sites            http://wald.intevation.org/frs/download.php/${download_id}
 
 checksums \
-    md5     1ab804e599705543fb96a8c04777b46a \
-    sha1    cb157534cdbee31e54348de3fe2df73ea9490f19 \
-    rmd160  6e2b625f5c7361dfa294165976157e3777ec0359
+md5     1ab804e599705543fb96a8c04777b46a \
+sha1    cb157534cdbee31e54348de3fe2df73ea9490f19 \
+rmd160  6e2b625f5c7361dfa294165976157e3777ec0359
 
 description \
     Open Vulnerability Assessment System client

@@ -23,7 +23,7 @@ long_description \
 homepage            http://txt2tags.org/
 
 checksums           rmd160  82188a5ad5ea71bd81c8af570d90819b25a43685 \
-                    sha256  5f206d4f9dd0e2345b3f8a2cef8ddf0c697a2c3bea40963dbabe4cdb3e554b20
+sha256  5f206d4f9dd0e2345b3f8a2cef8ddf0c697a2c3bea40963dbabe4cdb3e554b20
 
 use_configure       no
 depends_lib         port:python27

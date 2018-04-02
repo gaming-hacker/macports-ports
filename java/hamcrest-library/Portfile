@@ -25,8 +25,8 @@ distname        ${my_name}-${version}
 extract.suffix  .tgz
 
 checksums       md5     b4bd43f44d082d77daf7ec564d304cdf \
-                sha1    236b0e01ed002f5c889eb3152e34677363ea1e83 \
-                rmd160  6e6c747a467c0864a625048cd516b37153cd3a72
+sha1    236b0e01ed002f5c889eb3152e34677363ea1e83 \
+rmd160  6e6c747a467c0864a625048cd516b37153cd3a72
 
 patchfiles      patch-build.xml.diff
 

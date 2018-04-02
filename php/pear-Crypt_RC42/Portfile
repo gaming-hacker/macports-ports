@@ -12,4 +12,4 @@ description         PEAR Crypt_RC42 package
 long_description    ${description}
 
 checksums           rmd160  77e19b5ed4dd02eaf3352250cd32b2c806a9efd4 \
-                    sha256  5a2f55e45da1a9aadadc385dead16aae8255558accef93561989213b33658228
+sha256  5a2f55e45da1a9aadadc385dead16aae8255558accef93561989213b33658228

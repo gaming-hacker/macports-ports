@@ -14,7 +14,7 @@ description         Perl module to read Mozilla URL history files
 long_description    ${description}
 
 checksums           rmd160  e33f35b08b0b11856949c232a74f4d78dffcc6c9 \
-                    sha256  d045004777c656d1c530334123a24a43738273a2a059f51d605e45c6ba9ff721
+sha256  d045004777c656d1c530334123a24a43738273a2a059f51d605e45c6ba9ff721
 
 if {${perl5.major} != ""} {
     depends_lib-append \

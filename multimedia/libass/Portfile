@@ -27,7 +27,7 @@ configure.args  --enable-fontconfig \
                 --disable-silent-rules
 
 checksums           rmd160  0266c988fec11e2fbaa17b63e7cdb498022b65a2 \
-                    sha256  d6c5878ecc52b0617d802bc6c2c2fdf9b9c6d1d785a5d2b46c6f20b864fa1a66
+sha256  d6c5878ecc52b0617d802bc6c2c2fdf9b9c6d1d785a5d2b46c6f20b864fa1a66
 
 if {[variant_isset universal]} {
     # Needed by configure to correctly set the yasm build flags.

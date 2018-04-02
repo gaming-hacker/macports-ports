@@ -17,8 +17,8 @@ homepage            http://www.turbogears.org/
 master_sites
 distname            RuleDispatch-${version}
 checksums           md5     fc716f2e2d6247fb8e3b50f0e6476bcd \
-                    sha1    009fe952a3d469d31a656083ef951a61efa52dd6 \
-                    rmd160  e109c1df8f164993c3236af60397d61029040259
+sha1    009fe952a3d469d31a656083ef951a61efa52dd6 \
+rmd160  e109c1df8f164993c3236af60397d61029040259
 dist_subdir         python
 
 python.versions 27 36

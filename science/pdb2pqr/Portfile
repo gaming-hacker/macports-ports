@@ -17,7 +17,7 @@ platforms           darwin
 master_sites        sourceforge:project/pdb2pqr/pdb2pqr/pdb2pqr-${version}/
 distfiles           ${name}-src-${version}.tar.gz
 checksums           md5     e4d50d3057778f051f49cc385909b293 \
-                    sha1    77285efe9b78c8bd2df61b977eed8cca71df7ace
+sha1    77285efe9b78c8bd2df61b977eed8cca71df7ace
 
 python.default_version  27
 

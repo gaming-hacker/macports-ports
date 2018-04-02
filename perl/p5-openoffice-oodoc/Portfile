@@ -16,7 +16,7 @@ description         The Open OpenDocument Connector
 long_description    ${description}
 
 checksums           rmd160  d2ac27c2579af423f04133739a7fb8d9421eb32c \
-                    sha256  c11448970693c42a8b9e93da48cac913516ce33a9d44a6468400f7ad8791dab6
+sha256  c11448970693c42a8b9e93da48cac913516ce33a9d44a6468400f7ad8791dab6
 
 if {${perl5.major} != ""} {
     depends_run-append \

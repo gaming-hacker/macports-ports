@@ -20,7 +20,7 @@ homepage            http://gerbv.geda-project.org
 master_sites        sourceforge:project/gerbv/gerbv/gerbv-${version}
 
 checksums           rmd160  5f5596689bb7356a35dab19d5c0f51e6ec989212 \
-                    sha256  5c55425c3493bc8407949be8b4e572434a6b378f5727cc0dcef97dc2e7574dd0
+sha256  5c55425c3493bc8407949be8b4e572434a6b378f5727cc0dcef97dc2e7574dd0
 
 depends_build       port:pkgconfig
 depends_lib         port:gtk2 \

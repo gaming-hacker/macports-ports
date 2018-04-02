@@ -16,7 +16,7 @@ depends_lib port:xorg-libsm \
             port:xorg-libX11
 master_sites      ${homepage}/downloads
 checksums         md5    ec421e3a7b8445563c35bd818d551966         \
-                  sha1   4eb7870b87aeff4b1cced80a8dcb543ab13e19a8 \
-                  rmd160 c8d19bdc1e8d206f074daae1ffe713d5b6672906
+sha1   4eb7870b87aeff4b1cced80a8dcb543ab13e19a8 \
+rmd160 c8d19bdc1e8d206f074daae1ffe713d5b6672906
 
 configure.args    --x-includes=${prefix}/include --x-libraries=${prefix}/lib

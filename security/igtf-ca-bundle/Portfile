@@ -28,7 +28,7 @@ master_sites        http://dist.eugridpma.info/distribution/igtf/${version} \
 distname            igtf-policy-installation-bundle-${version}
 
 checksums           rmd160  386253b0798d813e4efe57837f8198e622e7e478 \
-                    sha256  2984602337008886a2cc048ac83058574bcb8c4df62be3da8d253901e01ca583
+sha256  2984602337008886a2cc048ac83058574bcb8c4df62be3da8d253901e01ca583
 
 depends_run         port:fetch-crl
 

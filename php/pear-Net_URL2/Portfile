@@ -13,4 +13,4 @@ description         PEAR Net_URL2 package
 long_description    ${description}
 
 checksums           rmd160  bd7d2d8d2db2802537183bf5077cb41e077e3bb1 \
-                    sha256  175a7950b54262ed09db607d39d4e450898c1ed3324f8524bb35097278d53f25
+sha256  175a7950b54262ed09db607d39d4e450898c1ed3324f8524bb35097278d53f25

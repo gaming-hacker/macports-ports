@@ -22,7 +22,7 @@ homepage            http://oss.oetiker.ch/smokeping/
 master_sites        http://oss.oetiker.ch/smokeping/pub/
 
 checksums           rmd160  80722b7b30fa6ce589cc330fe8c657fc85cebc69 \
-                    sha256  f2b3c386e95a74af2b1e7aec6410d0a58852339f00e9963f3c770cfd85ba30dd
+sha256  f2b3c386e95a74af2b1e7aec6410d0a58852339f00e9963f3c770cfd85ba30dd
 
 patchfiles          patch-etc-config.dist.diff \
                     patch-bin-smokeping.diff \

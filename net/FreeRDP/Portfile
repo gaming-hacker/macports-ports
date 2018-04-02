@@ -18,7 +18,7 @@ long_description    FreeRDP is a free implementation of the Remote Desktop Proto
 homepage            http://www.freerdp.com
 
 checksums           rmd160  0b787dc5ea4fb45e8efe55e04a5bc4629012c732 \
-                    sha256  20df57a6aa39207c8bf0c913c08117408401e8848644654726fa87a022c9b96b
+sha256  20df57a6aa39207c8bf0c913c08117408401e8848644654726fa87a022c9b96b
 
 depends_build-append \
                     port:pkgconfig \

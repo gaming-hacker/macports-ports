@@ -20,8 +20,8 @@ master_sites        pypi:p/pyrant/
 distname            pyrant-${version}
 
 checksums           md5     e59b3a21771e138b82c6a9a69ae57219 \
-                    sha1    5d834ea145728bdd4f818f81213bcfcf4f6f610d \
-                    rmd160  65ada9a56e12d7065be2c017e93d1afa45be281a
+sha1    5d834ea145728bdd4f818f81213bcfcf4f6f610d \
+rmd160  65ada9a56e12d7065be2c017e93d1afa45be281a
 
 python.versions 27 36
 

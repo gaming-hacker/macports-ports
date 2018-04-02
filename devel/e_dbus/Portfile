@@ -20,7 +20,7 @@ master_sites            http://download.enlightenment.org/releases/
 use_bzip2               yes
 
 checksums               rmd160  b1f4b4129fb9d70ea61c64713a41f244a14530a1 \
-                        sha256  b93f778a4bf50ce044b4798e08a03f62e9b890c47305f9d5839989481f38ddd4
+sha256  b93f778a4bf50ce044b4798e08a03f62e9b890c47305f9d5839989481f38ddd4
 
 depends_build           port:pkgconfig
 depends_lib             port:ecore \

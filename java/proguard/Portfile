@@ -23,7 +23,7 @@ homepage        http://proguard.sourceforge.net/
 master_sites    sourceforge
 distname        ${name}${version}
 checksums           rmd160  5e4dea659fa4376ce9029f51063b3f3542957786 \
-                    sha256  b7e4e63bd7e232d2b00a962f39da04e504502f0853b69161948de24caf401364
+sha256  b7e4e63bd7e232d2b00a962f39da04e504502f0853b69161948de24caf401364
 
 depends_lib     bin:java:kaffe
 

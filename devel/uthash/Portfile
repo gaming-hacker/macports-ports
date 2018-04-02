@@ -14,7 +14,7 @@ long_description    ${description}
 homepage            http://uthash.sourceforge.net/
 
 checksums           rmd160  0102456187b0987f5cde9d6a599950847738bd4a \
-                    sha256  ace59b3a534e4616ad2a64ce8d2de855a1909e9850e9232ebe15685dcd06ef3c
+sha256  ace59b3a534e4616ad2a64ce8d2de855a1909e9850e9232ebe15685dcd06ef3c
 
 use_configure       no
 

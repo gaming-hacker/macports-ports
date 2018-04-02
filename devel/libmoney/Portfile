@@ -16,5 +16,5 @@ platforms     	darwin
 master_sites  	${homepage}releases
 use_bzip2      	yes
 checksums     	md5 c65627935135b20b7fe12ac1beea8ccf			\
-		sha1 7450fa1873d38f7272db09eb69673b9b217d086f
+sha1 7450fa1873d38f7272db09eb69673b9b217d086f
 configure.args	--mandir=${prefix}/share/man --infodir=${prefix}/share/info

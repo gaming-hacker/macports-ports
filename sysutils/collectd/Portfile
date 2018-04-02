@@ -21,8 +21,8 @@ master_sites        http://collectd.org/files/
 use_bzip2 yes
 
 checksums           sha1    b27074fc363d942c8aee2f05baed0395a20c86d0 \
-                    sha256  9d20a0221569a8d6b80bbc52b86e5e84965f5bafdbf5dfc3790e0fed0763e592 \
-                    rmd160  81860b4fba7cf05b8eca19913ffe05d06b37e1a2 \
+sha256  9d20a0221569a8d6b80bbc52b86e5e84965f5bafdbf5dfc3790e0fed0763e592 \
+rmd160  81860b4fba7cf05b8eca19913ffe05d06b37e1a2 \
 size    1798777
 
 depends_build       port:pkgconfig

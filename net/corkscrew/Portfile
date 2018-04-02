@@ -14,8 +14,8 @@ homepage            https://web.archive.org/web/20160706023057/http://www.agroma
 master_sites        https://web.archive.org/web/20150315012206/http://www.agroman.net/corkscrew/
 
 checksums           md5     35df77e7f0e59c0ec4f80313be52c10a \
-                    rmd160  c7b4ae4cc4df4b33f8ae9be19305004fd0ae20a0 \
-                    sha256  0d0fcbb41cba4a81c4ab494459472086f377f9edb78a2e2238ed19b58956b0be \
+rmd160  c7b4ae4cc4df4b33f8ae9be19305004fd0ae20a0 \
+sha256  0d0fcbb41cba4a81c4ab494459472086f377f9edb78a2e2238ed19b58956b0be \
 size    56749
 
 post-destroot {

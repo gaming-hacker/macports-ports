@@ -30,7 +30,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  5e213c1ed1ed454bf41996069d0602dff629acf2 \
-                    sha256  e2467e9312c2fa191687b89ff4bc2ad8843be4af6fb4dc95a7cc5f7d7a327b18
+sha256  e2467e9312c2fa191687b89ff4bc2ad8843be4af6fb4dc95a7cc5f7d7a327b18
 
 if {${name} ne ${subport}} {
     livecheck.type      none

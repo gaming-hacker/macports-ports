@@ -22,7 +22,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  f7970ea298fda983561cfeb0f4d516f75d9181d9 \
-                    sha256  7751752e87618a63092eeee39b8688f3455daadf038c729c9ac8ca198c34a46b \
+sha256  7751752e87618a63092eeee39b8688f3455daadf038c729c9ac8ca198c34a46b \
 size    15906880
 
 depends_build       port:pkgconfig \

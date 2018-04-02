@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  2a887eff48412550fe3741e45b8d1cf804f29f82 \
-                    sha256  8948fa682607ebbeb0fad5abf12aab4085deb4388a4dec06a65896dc340fd07f
+sha256  8948fa682607ebbeb0fad5abf12aab4085deb4388a4dec06a65896dc340fd07f
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-dbi

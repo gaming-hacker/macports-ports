@@ -14,7 +14,7 @@ long_description    Module::Find lets you find and use modules in categories.
 platforms           darwin
 
 checksums           rmd160  e4e8974a491cc8a516da4cb4e57476f9270235c5 \
-                    sha256  4a47862072ca4962fa69796907476049dc60176003e946cf4b68a6b669f18568
+sha256  4a47862072ca4962fa69796907476049dc60176003e946cf4b68a6b669f18568
 
 if {${perl5.major} != ""} {
     depends_lib-append \

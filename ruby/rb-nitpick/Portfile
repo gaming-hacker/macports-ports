@@ -14,5 +14,5 @@ platforms           darwin
 depends_lib-append  port:rb-trollop port:rb-parsetree
 
 checksums           md5 1e6558d01177cea8bcea89f90ad89d69 \
-                    rmd160 309df8567923d7ca23844218c67f27d29ce6271b \
-                    sha1 eb392ea67ce586e03cc2dfcb40cc9565020c2d6e
+rmd160 309df8567923d7ca23844218c67f27d29ce6271b \
+sha1 eb392ea67ce586e03cc2dfcb40cc9565020c2d6e

@@ -20,7 +20,7 @@ use_bzip2           yes
 extract.suffix      .tbz
 
 checksums           rmd160  8a1417d6a64899e406859cfb72cea41f7591d3f7 \
-                    sha256  b5d99f7a53d184fd1e8405f8f57a1c4407530bd5f6a4f75edaf0ae1482ee6f0d
+sha256  b5d99f7a53d184fd1e8405f8f57a1c4407530bd5f6a4f75edaf0ae1482ee6f0d
 
 use_oasis           yes
 

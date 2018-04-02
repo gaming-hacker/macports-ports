@@ -26,7 +26,7 @@ worksrcdir          ${real_name}-${version}
 distfiles           ${real_name}-${version}${extract.suffix}
 
 checksums           rmd160  ce71bc8d05ddcc3ddd3bd6056c4d9b1f28219f8c \
-                    sha256  61a9117487758c34f5752f5a35cf96ba0f67792f3e2e8eda19d9888077ad9e79
+sha256  61a9117487758c34f5752f5a35cf96ba0f67792f3e2e8eda19d9888077ad9e79
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

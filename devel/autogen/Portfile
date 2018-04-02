@@ -21,7 +21,7 @@ master_sites        gnu:autogen/rel${version}
 use_xz              yes
 
 checksums           rmd160  6392c2137786ab9ac781100579f1cf5f6af99fd5 \
-                    sha256  be3ba62e883185b6ee8475edae97d7197d701d6b9ad9c3d2df53697110c1bfd8
+sha256  be3ba62e883185b6ee8475edae97d7197d701d6b9ad9c3d2df53697110c1bfd8
 
 depends_build       port:pkgconfig
 

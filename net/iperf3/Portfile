@@ -19,7 +19,7 @@ long_description    ${name} is a tool for active measurements of the maximum \
 conflicts           ${name}-devel
 
 checksums           rmd160  f2e3512c38dd508f92dfc35d59a6c9d58d0c8c3d \
-                    sha256  2f7b2fe2bf7ea2212ef11b3d58cb02aa8b325429124db5956452c9bff8d43046
+sha256  2f7b2fe2bf7ea2212ef11b3d58cb02aa8b325429124db5956452c9bff8d43046
 
 depends_lib-append  path:lib/libssl.dylib:openssl
 
@@ -38,7 +38,7 @@ subport ${name}-devel {
     version             20180323
 
     checksums           rmd160  ccd1246fa2cff704f3b71f667e30fed336622891 \
-                        sha256  48fa6d02db5e82da71e5cecf61c9a3ff45d055a7328b5173a374963befe7e75c
+sha256  48fa6d02db5e82da71e5cecf61c9a3ff45d055a7328b5173a374963befe7e75c
 
     conflicts           ${name}
 

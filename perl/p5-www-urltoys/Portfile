@@ -24,7 +24,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  fe3e805fc7319b100ab29056cac3c02d312d1e5b \
-                    sha256  4b3c64e8eb5ca9ea328b31865a229b903d1d0a56907b57b51490e5f1afc75abc
+sha256  4b3c64e8eb5ca9ea328b31865a229b903d1d0a56907b57b51490e5f1afc75abc
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-libwww-perl

@@ -28,7 +28,7 @@ homepage            http://icps.u-strasbg.fr/~bastoul/development/openscop/
 master_sites        http://icps.u-strasbg.fr/~bastoul/development/openscop/docs/
 
 checksums           rmd160  30f7e93c95a43fb8df4924b71c7a3ff2d5af2a46 \
-                    sha256  c884314b604579a1dd3e2843e0c8f1bad5f12c8f7d1d7bebb185c14aa15bb3eb
+sha256  c884314b604579a1dd3e2843e0c8f1bad5f12c8f7d1d7bebb185c14aa15bb3eb
 
 distname            osl-${version}
 

@@ -24,8 +24,8 @@ master_sites		googlecode:${name}
 dist_subdir		${name}
 distname		${name}-${version}-bundle
 checksums		md5 5b9de0d8916d54add7bc8ae80cee539f \
-			sha1 efb78dd59bb27114da41d23fba5c3ddc8d0a2102 \
-			rmd160 3bb9b1f12c1c471d3f40abd7047807637148b4bf
+sha1 efb78dd59bb27114da41d23fba5c3ddc8d0a2102 \
+rmd160 3bb9b1f12c1c471d3f40abd7047807637148b4bf
 extract.cmd		jar
 extract.pre_args	xf
 extract.post_args

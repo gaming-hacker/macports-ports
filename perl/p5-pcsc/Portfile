@@ -20,7 +20,7 @@ homepage            http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
 master_sites        ${homepage}
 
 checksums           rmd160  2de4973023785845f4362d5eaed8b69b0712452d \
-                    sha256  2722b7e5543e4faf3ba1ec6b29a7dfec6d92be1edec09d0a3191992d4d88c69d
+sha256  2722b7e5543e4faf3ba1ec6b29a7dfec6d92be1edec09d0a3191992d4d88c69d
 
 livecheck.type      regex
 livecheck.url       ${master_sites}

@@ -28,8 +28,8 @@ master_sites            https://github.com/pmougin/F-Script/zipball/v${version}:
 distfiles               pmougin-F-Script-v2.1-0-g25c850c.zip:fscript
 
 checksums               pmougin-F-Script-v2.1-0-g25c850c.zip \
-                        sha1    5f1afa244f41ab372953a616d27a72a1573f4a15 \
-                        rmd160  aa38b5e587bd3c0a8aeb1a8df8a38445d0036952
+sha1    5f1afa244f41ab372953a616d27a72a1573f4a15 \
+rmd160  aa38b5e587bd3c0a8aeb1a8df8a38445d0036952
 
 use_zip                 yes
 
@@ -85,8 +85,8 @@ variant injection_service description "Enable F-Script injection service" {
     distfiles-append        F-ScriptInjectionService.zip:injection_service
 
     checksums-append        F-ScriptInjectionService.zip \
-                            sha1   58436fe48375abdfed6251a2fc2ee2b2a39d6bf1 \
-                            rmd160 dd7dbf0580584f14742c5e38a5f59df4bbb5c951
+sha1   58436fe48375abdfed6251a2fc2ee2b2a39d6bf1 \
+rmd160 dd7dbf0580584f14742c5e38a5f59df4bbb5c951
 
     destroot.violate_mtree  yes
 }

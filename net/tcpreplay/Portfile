@@ -23,8 +23,8 @@ long_description    \
 homepage            http://tcpreplay.synfin.net
 master_sites        sourceforge
 checksums           md5 22725feb9b2590809f9350308ec65180 \
-                    sha1 9e4cca81cfbfb919f8759e1a27ce1b3b963ff3b8 \
-                    rmd160 672812755ff39b284044b08cba32c574ab2b7e70
+sha1 9e4cca81cfbfb919f8759e1a27ce1b3b963ff3b8 \
+rmd160 672812755ff39b284044b08cba32c574ab2b7e70
 
 # TODO use libpcapnav
 # libdnet is required for fragroute support

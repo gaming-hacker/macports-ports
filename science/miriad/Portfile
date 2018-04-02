@@ -30,7 +30,7 @@ license          GPL-2+
 
 master_sites     ${homepage}
 checksums        rmd160  f715f3b7afae75c8707733c23d023ce0566a51de \
-                 sha256  dadb1df981a4d636e82cdda3bb5bfe1caa7c733e7f997ea0fd5e769b93a10eb9
+sha256  dadb1df981a4d636e82cdda3bb5bfe1caa7c733e7f997ea0fd5e769b93a10eb9
 
 # Telescope/buffer size selection.
 

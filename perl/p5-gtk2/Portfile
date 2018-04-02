@@ -19,7 +19,7 @@ long_description    Perl bindings to the 2.x series of the Gtk+ graphical user \
                     C, yet remaining very close in spirit to original API.
 
 checksums           rmd160  414d12f4dfcb7e8f404e4b8a26bb5bef0ca345b1 \
-                    sha256  a2ed6902f7f29f7c8dddbe58119589f433252a12132c295c54afbac587cc8480
+sha256  a2ed6902f7f29f7c8dddbe58119589f433252a12132c295c54afbac587cc8480
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -17,7 +17,7 @@ long_description    ${name} is a command-line script that uploads videos to \
                     YouTube.
 
 checksums           rmd160  f8c72d83736e54765afd72e60124e340b2cb9754 \
-                    sha256  86fe582ceaac9e5de0bdba2e95afad3b7a9dd4dc9f17295d70bc164e68f8aef3
+sha256  86fe582ceaac9e5de0bdba2e95afad3b7a9dd4dc9f17295d70bc164e68f8aef3
 
 post-destroot {
     set docdir ${prefix}/share/doc/${subport}/

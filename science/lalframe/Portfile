@@ -12,7 +12,7 @@ long_description \
   routines for reading and writing frame files.
 
 checksums     rmd160 09d210e2dd379ec6bf9de2051bf3b1ffe957e256 \
-              sha256 cbb6ed39abb5a02d792523fc53208330cf8adf02bc4290cac635d42577acb5b1
+sha256 cbb6ed39abb5a02d792523fc53208330cf8adf02bc4290cac635d42577acb5b1
 
 depends_lib   port:lal \
               port:libframe \

@@ -25,7 +25,7 @@ master_sites        ftp://ftp.invisible-island.net/dialog/ \
 extract.suffix      .tgz
 
 checksums           rmd160  2919ba951f2ea424c8158bf675e39ecd954b27f3 \
-                    sha256  20139442119e2eff5c35236e8e5e313c901539008d9cccf8c8ab3851b41267e6
+sha256  20139442119e2eff5c35236e8e5e313c901539008d9cccf8c8ab3851b41267e6
 
 depends_lib         port:ncurses
 

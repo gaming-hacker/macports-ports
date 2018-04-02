@@ -26,11 +26,11 @@ master_sites        ${url}/1114:espresso ${url}/1115:examples
 distfiles           qe-${version}${extract.suffix}:espresso \
                     qe-${version}-examples${extract.suffix}:examples
 checksums           qe-${version}${extract.suffix} \
-    rmd160  43b37a7f4bc22c2c02fad6d3c3d259a348d516aa \
-    sha256  c5b7db155e01ebfba2c7977df94bd6e70ca8fe9fb51fb08aa2a8a3ef4398325d \
+rmd160  43b37a7f4bc22c2c02fad6d3c3d259a348d516aa \
+sha256  c5b7db155e01ebfba2c7977df94bd6e70ca8fe9fb51fb08aa2a8a3ef4398325d \
     qe-${version}-examples${extract.suffix} \
-    rmd160  ab9d1411fe1349380dbd9f2494172d7248b2f425 \
-    sha256  b98a99edde9bbe199469e9d354206383ea3e8a5b0cc90efbbfe40fae040fc225
+rmd160  ab9d1411fe1349380dbd9f2494172d7248b2f425 \
+sha256  b98a99edde9bbe199469e9d354206383ea3e8a5b0cc90efbbfe40fae040fc225
 
 depends_lib-append  port:fftw-3
 

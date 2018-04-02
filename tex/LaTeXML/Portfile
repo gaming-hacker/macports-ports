@@ -28,7 +28,7 @@ supported_archs     noarch
 
 master_sites        ${homepage}/releases/
 checksums           rmd160 6dbf960277cdcf30605ce93335e3383673c1ff66 \
-                    sha256 3d41a3012760d31d721b569d8c1b430cde1df2b68fcc3c66f41ec640965caabf
+sha256 3d41a3012760d31d721b569d8c1b430cde1df2b68fcc3c66f41ec640965caabf
 # Use:
 # openssl rmd160 LaTeXML-0.8.2.tar.gz
 # openssl sha256 LaTeXML-0.8.2.tar.gz

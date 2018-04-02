@@ -12,7 +12,7 @@ description         Helper to provide a simple authentication scaffold for a Cat
 long_description    ${description}
 
 checksums           rmd160  f226ca8c55711b1ea8c995beff617bca4e46fbc2 \
-                    sha256  9cc5da87a56a278cd1336124fa55eb598b2303e3a8e22825a3fd126bf4458d25
+sha256  9cc5da87a56a278cd1336124fa55eb598b2303e3a8e22825a3fd126bf4458d25
 
 platforms           darwin
 supported_archs     noarch

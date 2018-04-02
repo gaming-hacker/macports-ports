@@ -26,8 +26,8 @@ homepage            https://code.google.com/p/crswallow/
 master_sites        googlecode
 
 checksums           md5     f1a751c0ea8891ec1682d4ea209fc3b0 \
-                    sha1    96701106de01db3e4b46e799ff23b8537019410c \
-                    rmd160  781d40d2fd00eafdbe9076ec9dfbf40670beef2e
+sha1    96701106de01db3e4b46e799ff23b8537019410c \
+rmd160  781d40d2fd00eafdbe9076ec9dfbf40670beef2e
 
 worksrcdir          ${name}
 

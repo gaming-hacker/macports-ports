@@ -15,7 +15,7 @@ homepage            http://www.thp.uni-duisburg.de/pstree/
 master_sites        ftp://ftp.thp.uni-duisburg.de/pub/source/
 
 checksums           rmd160  74bd6cd2fa22e0bde2f3e4936c1b6ed4d767b6df \
-                    sha256  7c9bc3b43ee6f93a9bc054eeff1e79d30a01cac13df810e2953e3fc24ad8479f
+sha256  7c9bc3b43ee6f93a9bc054eeff1e79d30a01cac13df810e2953e3fc24ad8479f
 
 installs_libs       no
 

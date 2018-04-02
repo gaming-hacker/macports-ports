@@ -27,8 +27,8 @@ master_sites    gnu:clisp/release/${version}    \
                 sourceforge
 
 checksums           md5     1962b99d5e530390ec3829236d168649 \
-                    sha1    7e8d585ef8d0d6349ffe581d1ac08681e6e670d4 \
-                    rmd160  bfb81abf942b07bbb8d83505f287d546b1bbdacc
+sha1    7e8d585ef8d0d6349ffe581d1ac08681e6e670d4 \
+rmd160  bfb81abf942b07bbb8d83505f287d546b1bbdacc
 
 depends_lib     port:readline   \
                 port:gettext    \

@@ -19,7 +19,7 @@ license             BSD
 platforms           darwin
 homepage            http://pythonhosted.org/Flask-WTF
 checksums           rmd160  bbaa7fa699c7f367d91d30184ed31ae4c26d0140 \
-                    sha256  0b8dc762cec2c85c9af18748e986daa52ee7600528a015e47f4b576c276bed68
+sha256  0b8dc762cec2c85c9af18748e986daa52ee7600528a015e47f4b576c276bed68
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

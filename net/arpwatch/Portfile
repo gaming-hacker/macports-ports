@@ -18,7 +18,7 @@ homepage          http://online.securityfocus.com/tools/142
 master_sites      ftp://ftp.ee.lbl.gov
 
 checksums         sha1 9dffaec0f132e5bb7aedfc840c5c67068bfbce69 \
-		  rmd160 a27ee53275dcec3cafb85eb3df2451d42ec32b0c
+rmd160 a27ee53275dcec3cafb85eb3df2451d42ec32b0c
 
 livecheck.url	  "http://www.freebsd.org/cgi/ports.cgi?query=${name}&stype=all"
 livecheck.regex	  ">${name}-(.*?)<"

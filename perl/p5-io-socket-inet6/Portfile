@@ -19,7 +19,7 @@ long_description    IO::Socket::INET6 provides an object \
                     IO::Socket.
 
 checksums           rmd160  6623f70c3fbcc5c798bd3270fb1bf0d0ab385aaf \
-                    sha256  85e020fa179284125fc1d08e60a9022af3ec1271077fe14b133c1785cdbf1ebb
+sha256  85e020fa179284125fc1d08e60a9022af3ec1271077fe14b133c1785cdbf1ebb
 
 if {${perl5.major} != ""} {
 

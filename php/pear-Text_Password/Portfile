@@ -13,4 +13,4 @@ description         PEAR Text_Password package
 long_description    ${description}
 
 checksums           rmd160  14583471fa27add3afb00f434f092f636a5e259f \
-                    sha256  018f64dd1527e6dfbd52ca86c25decfe01b1e6e86892ef0f7f171764eb850c87
+sha256  018f64dd1527e6dfbd52ca86c25decfe01b1e6e86892ef0f7f171764eb850c87

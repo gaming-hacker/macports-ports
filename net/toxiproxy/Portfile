@@ -21,7 +21,7 @@ depends_build       port:go
 use_configure       no
 
 checksums           rmd160  3b77a1fa1ca0b922140155b222ece12075f9a375 \
-                    sha256  a56767e7209bd97675800c91c5b4d51c39992fe0811cf2a6cbfa7f1313ebde34
+sha256  a56767e7209bd97675800c91c5b4d51c39992fe0811cf2a6cbfa7f1313ebde34
 
 post-extract {
     xinstall -d ${worksrcpath}/src/github.com/${github.author}/

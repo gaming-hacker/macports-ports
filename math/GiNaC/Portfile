@@ -25,7 +25,7 @@ homepage        http://www.ginac.de/
 master_sites    ${homepage}
 
 checksums       rmd160  9f4f8fa14078777ce10fabe13d98387ab0808539 \
-                sha256  d60413a2dc4e65b3832491fdcdb03897e673f8ff69885f015e74a6e9c7d978ef
+sha256  d60413a2dc4e65b3832491fdcdb03897e673f8ff69885f015e74a6e9c7d978ef
 
 depends_build   port:pkgconfig
 depends_lib     port:readline \

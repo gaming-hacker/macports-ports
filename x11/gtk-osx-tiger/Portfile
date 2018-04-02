@@ -17,8 +17,8 @@ distname            56577-gtk-osx-theme
 worksrcdir          OSX-theme
 
 checksums           md5 44e64082569351b7782658d8b358de79 \
-                    sha1 1fca810834e78ec3a78f91b3de6a96b32eb753ea \
-                    rmd160 367818153eac0b16cce0c03a8fccd2767504063d
+sha1 1fca810834e78ec3a78f91b3de6a96b32eb753ea \
+rmd160 367818153eac0b16cce0c03a8fccd2767504063d
 
 depends_lib         port:gtk2
 

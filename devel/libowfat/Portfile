@@ -11,8 +11,8 @@ long_description	reimplementation of the libdjb under GPL
 homepage		http://www.fefe.de/libowfat/
 master_sites		http://dl.fefe.de/
 checksums		md5     6bbee9a86506419657d87123b7a6f2c1 \
-			sha1    6bbe997ae1bbe94b784ab50a3d44b63a2e08d857 \
-			rmd160  3e8826e10a3f46520bdfa9602edb2741728aa370
+sha1    6bbe997ae1bbe94b784ab50a3d44b63a2e08d857 \
+rmd160  3e8826e10a3f46520bdfa9602edb2741728aa370
 use_bzip2		yes
 patchfiles		patch-GNUmakefile
 use_configure	no

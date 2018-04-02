@@ -27,7 +27,7 @@ homepage	http://www.nongnu.org/${name}/
 master_sites	http://savannah.nongnu.org/download/${name}/
 
 checksums	sha1 e32430de49c4ab5d501653c03dd19dfb623cb08b \
-		rmd160 ae2fc0cd7ef561944cf7aea0623875a7148771ce
+rmd160 ae2fc0cd7ef561944cf7aea0623875a7148771ce
 
 depends_lib \
 	port:xorg-libXinerama \

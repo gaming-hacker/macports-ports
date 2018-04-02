@@ -20,7 +20,7 @@ long_description    ${description}
 use_xz              yes
 
 checksums           rmd160  83c295f3a2cb5f0fa3f84fc67c39dccbbcf57abc \
-                    sha256  ec6676d0c63f7feac7801a1fe18dd7abe9044b39c3882fc99b9afef39bdf1d30
+sha256  ec6676d0c63f7feac7801a1fe18dd7abe9044b39c3882fc99b9afef39bdf1d30
 
 depends_build       port:icu \
                     port:pkgconfig

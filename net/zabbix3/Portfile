@@ -32,8 +32,8 @@ dist_subdir         zabbix3
 conflicts           zabbix zabbix2
 
 checksums \
-    rmd160  93377b78a411e15389c44dd99f88e262d039e7d1 \
-    sha256  ae0f5c7da3886aa3184a1c39ba455e801cdc4356ba16bf68339aee0947366289
+rmd160  93377b78a411e15389c44dd99f88e262d039e7d1 \
+sha256  ae0f5c7da3886aa3184a1c39ba455e801cdc4356ba16bf68339aee0947366289
 
 patchfiles          log_and_pid_locations.patch
 

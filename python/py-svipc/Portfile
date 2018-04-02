@@ -19,7 +19,7 @@ long_description    This plug-in for python and yorick gives access to the \
 homepage            https://github.com/mdcb/yp-svipc
 
 checksums           rmd160  5faa9b3943e638bdae084018316ddfe50d1c9aa4 \
-                    sha256  9f879670ecb4df71f1851cd3ac0250fdd2317baeb25e200f924037cc120dd1e3
+sha256  9f879670ecb4df71f1851cd3ac0250fdd2317baeb25e200f924037cc120dd1e3
 
 python.versions 27 36
 

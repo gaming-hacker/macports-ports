@@ -15,8 +15,8 @@ homepage        http://www.cs.caltech.edu/~mvanier/hacking/gnushogi/gnushogi.htm
 master_sites    http://www.cs.caltech.edu/~mvanier/hacking/gnushogi/
 patchfiles      patch-gnushogi_gnushogi.h.diff
 checksums       md5 a18eae93afc89bfd368ed5f6768be791 \
-                sha1 6135ec3eb84917d0dc2cab9ac982818ed41aad87 \
-                rmd160 b177d2843f42490d33665f3a167068c64bc64214
+sha1 6135ec3eb84917d0dc2cab9ac982818ed41aad87 \
+rmd160 b177d2843f42490d33665f3a167068c64bc64214
 
 depends_lib     port:xorg-libXaw \
                 port:ncurses

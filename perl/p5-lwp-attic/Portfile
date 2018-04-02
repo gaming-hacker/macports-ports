@@ -20,6 +20,6 @@ long_description    The LWP-attic distribution contains old and deprecated modul
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  17997deb945a642cd2aab6bb2af77341507072c3 \
-                    sha256  4328943d5ab3cfa53301554c54ca19bf50cd3aabed1feab4f7485c2b413345c0
+sha256  4328943d5ab3cfa53301554c54ca19bf50cd3aabed1feab4f7485c2b413345c0
 
 supported_archs     noarch

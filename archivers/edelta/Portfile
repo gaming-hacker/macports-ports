@@ -20,8 +20,8 @@ homepage                        http://www.diku.dk/hjemmesider/ansatte/jacobg/ed
 master_sites                    ${homepage}
 
 checksums                       md5     f0306c9bca4518d86a08d8a4f98a9ca8 \
-                                sha1    bcf24ff68c67da47484beb9f4869c726b9f06dc2 \
-                                rmd160  1a7b676fe53b8ae079afd95109d4c98c82840ae7
+sha1    bcf24ff68c67da47484beb9f4869c726b9f06dc2 \
+rmd160  1a7b676fe53b8ae079afd95109d4c98c82840ae7
 
 depends_lib                     port:zlib
 

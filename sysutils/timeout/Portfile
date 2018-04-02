@@ -21,7 +21,7 @@ distname            tct-${version}
 dist_subdir         tct
 
 checksums           sha1    6ca3e507cbd9845593c93f4f5768f2e64e77a60a \
-                    rmd160  40a40256f0afc30a712d3e2f43771a67d7bc7808
+rmd160  40a40256f0afc30a712d3e2f43771a67d7bc7808
 
 use_configure       no
 

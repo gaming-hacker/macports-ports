@@ -19,7 +19,7 @@ license         {GPL-3+ OpenSSLException}
 depends_lib     path:lib/libssl.dylib:openssl
 
 checksums       rmd160  87fb645587956a80727330dd287643cc62691004 \
-                sha256  9f3c62742fe7f7555e2d3d38d9b87346470a7f5106bdc6e76bcb4cd7f5df0d0e
+sha256  9f3c62742fe7f7555e2d3d38d9b87346470a7f5106bdc6e76bcb4cd7f5df0d0e
 
 patchfiles      patch-Makefile.diff
 

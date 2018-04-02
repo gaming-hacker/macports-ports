@@ -30,7 +30,7 @@ distname        ${my_name}-[join [split ${version} .] _]
 extract.suffix              .tgz
 distfiles                   ${distname}-src${extract.suffix}
 checksums                   rmd160  df06e7b18a87e383d3762564f2e9a59fd75865f9 \
-                            sha256  2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
+sha256  2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
 
 worksrcdir      ${name}/source
 set docdir      ${prefix}/share/doc/${name}
@@ -50,7 +50,7 @@ subport ${name}-docs {
     use_zip             yes
     distfiles               ${distname}-docs${extract.suffix}
     checksums               rmd160  64c9385c43f994d283a38980c77638dc061bfe84 \
-                            sha256  dc17983debc1f23f1bd1ac1ba053f2df5b07858f5af9bd48eeb3b8044c8d3146
+sha256  dc17983debc1f23f1bd1ac1ba053f2df5b07858f5af9bd48eeb3b8044c8d3146
 
     extract.dir         ${worksrcpath}/doc/html
 

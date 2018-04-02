@@ -16,7 +16,7 @@ long_description    This module allows you to validate XML documents against a \
                     XML Schema recommendation, but a useful subset.
 
 checksums           rmd160  78d40b544152fbfc185b5caa6bae7b2d8bdd2c27 \
-                    sha256  6142679580150a891f7d32232b5e31e2b4e5e53e8a6fa9cbeecb5c23814f1422
+sha256  6142679580150a891f7d32232b5e31e2b4e5e53e8a6fa9cbeecb5c23814f1422
 
 platforms           darwin
 

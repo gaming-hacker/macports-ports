@@ -24,7 +24,7 @@ use_zip				yes
 worksrcdir			UnicodeConverter
 
 checksums			sha1    606f0cea9bdeb47e65229f34c0c139a9ad72e807 \
-					rmd160  d48b4ac4f2e19393e027b302f8eb044c36c13436
+rmd160  d48b4ac4f2e19393e027b302f8eb044c36c13436
 
 depends_lib			bin:java:kaffe
 

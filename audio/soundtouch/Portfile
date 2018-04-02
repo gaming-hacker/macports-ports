@@ -23,7 +23,7 @@ homepage            http://www.surina.net/soundtouch/
 master_sites        ${homepage}
 
 checksums           rmd160  de9e1b3abc2c48722e229a8bb6d68c840d8099b0 \
-                    sha256  d224f7d1421b5f8e74a74c85741345bd9802618a40ae30ce5b427a5705c89d25 \
+sha256  d224f7d1421b5f8e74a74c85741345bd9802618a40ae30ce5b427a5705c89d25 \
 size    455148
 
 worksrcdir          ${name}

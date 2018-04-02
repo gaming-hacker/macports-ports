@@ -16,8 +16,8 @@ master_sites	 ${homepage}/dist/
 
 distname	xcb-proto-${version}
 checksums           sha1    e93da374ecef9359370edc0160bcb8b2a2f7d9f6 \
-                    rmd160  95e933656e7f8a59347296d75255e42e6f4a932a \
-                    sha256  5922aba4c664ab7899a29d92ea91a87aa4c1fc7eb5ee550325c3216c480a4906
+rmd160  95e933656e7f8a59347296d75255e42e6f4a932a \
+sha256  5922aba4c664ab7899a29d92ea91a87aa4c1fc7eb5ee550325c3216c480a4906
 
 use_bzip2	yes
 

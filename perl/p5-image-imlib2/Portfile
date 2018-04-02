@@ -24,7 +24,7 @@ long_description    Image::Imlib2 is a Perl port of Imlib2, a graphics library t
 platforms           darwin
 
 checksums           rmd160  0fe0e43733aef6e8e9c824756b0e0c0dc91d68a7 \
-                    sha256  97648385da1e9452fa9ee48f570020b45e449e5f11615320f39cb0b5c00951b0
+sha256  97648385da1e9452fa9ee48f570020b45e449e5f11615320f39cb0b5c00951b0
 
 if {${perl5.major} != ""} {
     perl5.use_module_build

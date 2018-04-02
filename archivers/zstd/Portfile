@@ -16,7 +16,7 @@ long_description    Zstd, short for Zstandard, is a fast lossless compression \
                     zlib-level and better compression ratios.
 
 checksums           rmd160  d75657f500f4610805b131e0de339733ba3991f0 \
-                    sha256  19d6ea91151f5d747743502e2d5ffa130e2fc1b3f1b516781ec56d93f4e2e1b9
+sha256  19d6ea91151f5d747743502e2d5ffa130e2fc1b3f1b516781ec56d93f4e2e1b9
 
 post-patch {
     reinplace -W ${worksrcpath} "s/-Wvla //g" lib/Makefile programs/Makefile tests/Makefile tests/fuzz/Makefile

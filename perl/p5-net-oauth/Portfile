@@ -16,8 +16,8 @@ description         OAuth protocol support
 long_description    ${description}.
 
 checksums           md5     336d7fb22e945f014e1bce0f49fcfad9 \
-                    sha1    8222036a9faf68baed2ea0549a738bcbc8db1269 \
-                    rmd160  223a7bc41fc12c69cbd30305c2e48bbef4162c86
+sha1    8222036a9faf68baed2ea0549a738bcbc8db1269 \
+rmd160  223a7bc41fc12c69cbd30305c2e48bbef4162c86
 
 if {${perl5.major} != ""} {
     depends_build-append \

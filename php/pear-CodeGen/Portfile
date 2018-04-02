@@ -13,4 +13,4 @@ description         PEAR CodeGen package
 long_description    ${description}
 
 checksums           rmd160  214c00c639c065ccea862001cfa81de6edb2a82f \
-                    sha256  4b20f07494efb716d4f8b01635c3d50f96b83d0e90371c15b5767665439dc613
+sha256  4b20f07494efb716d4f8b01635c3d50f96b83d0e90371c15b5767665439dc613

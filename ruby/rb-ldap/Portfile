@@ -11,8 +11,8 @@ long_description    This module provides the interface to LDAP libraries such as
                     Directory SDK, OpenLDAP and wldap32.dll.
 use_bzip2           yes
 checksums           md5 83240451aa43de447d48035dc2d10dee \
-                    sha1 2e00866df43b2def8a0ad40dfd27df14fcf51b72 \
-                    rmd160 8ab52b76fa81a489133bdb32d7e6f5dc766a6b80
+sha1 2e00866df43b2def8a0ad40dfd27df14fcf51b72 \
+rmd160 8ab52b76fa81a489133bdb32d7e6f5dc766a6b80
 homepage            http://ruby-ldap.sourceforge.net/
 categories-append   databases
 license             BSD

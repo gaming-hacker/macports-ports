@@ -20,7 +20,7 @@ master_sites     http://downloads.us.xiph.org/releases/icecast/
 distname         icecast-${version}
 
 checksums       rmd160  ecf6d75c722766782c8f61b9a206bb35f8dcfcff \
-                sha256  aa1ae2fa364454ccec61a9247949d19959cb0ce1b044a79151bf8657fd673f4f
+sha256  aa1ae2fa364454ccec61a9247949d19959cb0ce1b044a79151bf8657fd673f4f
 
 livecheck.name   icecast
 

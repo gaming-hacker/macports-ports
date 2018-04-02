@@ -16,7 +16,7 @@ long_description        ${description}
 
 github.setup            numpy numpy 1.14.2 v
 checksums               rmd160 49474afe20ac6b476eff79f00dc356d3f990e803 \
-                        sha256 96efaecc43b180a17503d6c7732d35f927422e831e62f6fee8b8c663f44fdacc \
+sha256 96efaecc43b180a17503d6c7732d35f927422e831e62f6fee8b8c663f44fdacc \
 size   4278107
 
 if {${name} ne ${subport}} {
@@ -38,7 +38,7 @@ if {${name} ne ${subport}} {
     if {${python.version} == 26 } {
         github.setup        numpy numpy 1.11.3 v
         checksums           rmd160 8cc323d5944301aefa1f66f17d4af14c364c6b32 \
-                            sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1 \
+sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1 \
 size   4387593
         patchfiles-append   patch-numpy_core_setup.py.26.diff \
                             patch-numpy_distutils_fcompiler_gnu.py.26.diff \

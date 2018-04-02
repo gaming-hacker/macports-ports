@@ -18,4 +18,4 @@ long_description    ${description} \
                     This package provides some functions to control UPnP media devices.
 
 checksums           sha256  cf323b34adb07c4cf79443bbebbafca11e213f1c7a50b5fac5e572909598821b \
-                    rmd160  cc59ecb86c25d2d941fb8d2ecfc8973a2846e88e
+rmd160  cc59ecb86c25d2d941fb8d2ecfc8973a2846e88e

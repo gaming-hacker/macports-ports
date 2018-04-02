@@ -12,4 +12,4 @@ description         PEAR Validate_NZ package
 long_description    ${description}
 
 checksums           rmd160  69b76252cc063ed66034a7429bf65b1c6e666d2e \
-                    sha256  4648b452f444fd5c25b66c6dc66ee42dd56a3b96044b6002c6fcb6233b469dbe
+sha256  4648b452f444fd5c25b66c6dc66ee42dd56a3b96044b6002c6fcb6233b469dbe

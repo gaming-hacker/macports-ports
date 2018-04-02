@@ -21,7 +21,7 @@ homepage            http://liblqr.wikidot.com/en:start
 master_sites        http://liblqr.wikidot.com/local--files/en:download-page/
 
 checksums           sha256  173a822efd207d72cda7d7f4e951c5000f31b10209366ff7f0f5972f7f9ff137 \
-                    rmd160  e69cf09ffeca3b426d5905a4a26b289c383e5260
+rmd160  e69cf09ffeca3b426d5905a4a26b289c383e5260
 
 use_bzip2           yes
 worksrcdir          ${name}-${version}

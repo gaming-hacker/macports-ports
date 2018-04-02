@@ -27,7 +27,7 @@ if {${name} ne ${subport}} {
     compilers.enforce_fortran  port:py${python.version}-numpy
 
     checksums       rmd160  b4eac13ae502bb3e8ec3f314deb73750edcb6a8a \
-                    sha256  9c33a3430e8d55dbe0beaa79394e866f9115c4ec84615e24dabc154334538a6a
+sha256  9c33a3430e8d55dbe0beaa79394e866f9115c4ec84615e24dabc154334538a6a
 
     compilers.choose   fc f77 f90
     compilers.setup    require_fortran 

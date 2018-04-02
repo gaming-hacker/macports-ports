@@ -12,4 +12,4 @@ description         PEAR Math_RPN package
 long_description    ${description}
 
 checksums           rmd160  26b374e4e55ca646f1effa0bde87b943ba21dcc1 \
-                    sha256  9a573237af095d43d08bc40cd92a775ed4023cf799c35dd302e9afd659a76242
+sha256  9a573237af095d43d08bc40cd92a775ed4023cf799c35dd302e9afd659a76242

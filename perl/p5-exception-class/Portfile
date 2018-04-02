@@ -18,7 +18,7 @@ long_description    Exception::Class allows you to declare exception \
 platforms           darwin
 
 checksums           rmd160  50a6f22adb13caeb53c80d94e9fecc7300790b7d \
-                    sha256  33f3fbf8b138d3b04ea4ec0ba83fb0df6ba898806bcf4ef393d4cafc1a23ee0d
+sha256  33f3fbf8b138d3b04ea4ec0ba83fb0df6ba898806bcf4ef393d4cafc1a23ee0d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

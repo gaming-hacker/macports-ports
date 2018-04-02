@@ -14,8 +14,8 @@ description                 a fine-grained html-filter, xss-blocker and mailto-o
 long_description            HTML::TagFilter is ${description}.
 
 checksums                   md5     e61d2f180e3ba55e5d71293d472ffebb \
-                            sha1    beeef9bf587a0aebbe620bcc4cfd1aa63a6c7195 \
-                            rmd160  285c5f731d37dc6199a5fcc8a485aa96f381a705
+sha1    beeef9bf587a0aebbe620bcc4cfd1aa63a6c7195 \
+rmd160  285c5f731d37dc6199a5fcc8a485aa96f381a705
 
 if {${perl5.major} != ""} {
 depends_lib-append          port:p${perl5.major}-html-parser

@@ -107,7 +107,7 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  ae098ee9a8c2aee503d6c174f9d21bd30cc9c4e5 \
-                        sha256  7f28caafbae93fb81ec3cf17c1a2929313f5b5d79adf9adee6c443cf3826e16d
+sha256  7f28caafbae93fb81ec3cf17c1a2929313f5b5d79adf9adee6c443cf3826e16d
     configure.ldflags-delete -lmatheval
     depends_lib-delete       port:libmatheval
 # plumed 2.5 supports python. However, I disable it here since it is

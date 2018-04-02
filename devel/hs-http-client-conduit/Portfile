@@ -6,7 +6,7 @@ PortGroup           haskell 1.0
 haskell.setup       http-client-conduit 0.2.0.0
 revision            3
 checksums           rmd160  d90164480f5f49aebd8c8d076464093bef0e362f \
-                    sha256  3ec0c89fc75d617ab3af17b77e5294fdac4b5c2cc7fc6c0b0ad1e1a26b3d64dd
+sha256  3ec0c89fc75d617ab3af17b77e5294fdac4b5c2cc7fc6c0b0ad1e1a26b3d64dd
 
 maintainers         cal openmaintainer
 platforms           darwin

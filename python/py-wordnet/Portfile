@@ -25,9 +25,9 @@ if {${name} ne ${subport}} {
     distfiles		pywordnet-${version}${extract.suffix}:source \
                     WordNet-1.7.1${extract.suffix}:data
     checksums		pywordnet-${version}${extract.suffix} \
-                        md5 791c796699d4c2cd6bd37ec32a232561 \
+md5 791c796699d4c2cd6bd37ec32a232561 \
                     WordNet-1.7.1${extract.suffix} \
-                        md5 5c8e569339cf7d8e727d884234365508
+md5 5c8e569339cf7d8e727d884234365508
     patchfiles		patch-wordnet.py.diff
     
     worksrcdir		pywordnet-${version}

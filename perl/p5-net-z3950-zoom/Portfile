@@ -17,7 +17,7 @@ long_description    This module provides a nice, Perlish implementation of the \
                     The older Net::Z3950 API is also included.
 
 checksums           sha1    2f22a3deb98d6fe974490820e792aa597df64849 \
-                    rmd160  b01bd9065825b3f254129d434cb4ff72fd43adbc
+rmd160  b01bd9065825b3f254129d434cb4ff72fd43adbc
 
 if {${perl5.major} != ""} {
     depends_lib-append \

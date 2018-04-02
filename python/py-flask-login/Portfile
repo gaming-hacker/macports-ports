@@ -18,7 +18,7 @@ long_description    Flask-Login provides user session management for Flask. It \
 homepage            https://flask-login.readthedocs.org/
 
 checksums           rmd160  894e04b4360905f00442d6e37c5906f4efc1d372 \
-                    sha256  5d48a082b1d2cfd82a2d4e367b38696f7bb050855bf43a0be24fbd236ba3eace
+sha256  5d48a082b1d2cfd82a2d4e367b38696f7bb050855bf43a0be24fbd236ba3eace
 
 if {${name} ne ${subport}} {
     depends_build-append \

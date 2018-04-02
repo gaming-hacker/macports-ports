@@ -18,7 +18,7 @@ long_description        This extension provides several commands to mutate histo
                         and deal with issues it may raise.
 
 checksums               rmd160  bce2d7752ff1576f8cfdbda510354b1ad5071260 \
-                        sha256  d128fed52389113fe602414cd18abb7ce662757ff46ef951aad567478f90cdb2
+sha256  d128fed52389113fe602414cd18abb7ce662757ff46ef951aad567478f90cdb2
 
 # can't set python.versions before adding custom subports
 subport py-hgevolve-devel {}
@@ -32,7 +32,7 @@ if {[string match "*-devel" $subport]} {
     revision            0
 
     checksums           rmd160  14207d4765010436eaeab650c4d01c8f99fdcb8c \
-                        sha256  3d7422407599f035257505c1491f68d10a54565dd93918798f623529476307db
+sha256  3d7422407599f035257505c1491f68d10a54565dd93918798f623529476307db
 }
 
 python.versions 27 36

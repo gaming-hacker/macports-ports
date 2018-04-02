@@ -22,7 +22,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  bbd8ef2535df567549c3cca4a768acb988ad4aac \
-                    sha256  338aed9695c432b7c9b8a271dabb521e3e7e2c96b11f7b4e60552f1c8408a8f0 \
+sha256  338aed9695c432b7c9b8a271dabb521e3e7e2c96b11f7b4e60552f1c8408a8f0 \
 size    97720
 
 if {${name} ne ${subport}} {

@@ -21,7 +21,7 @@ master_sites        http://www.collaboration-world.com/pantomime.data/releases/S
 distfiles           Pantomime-${version}${extract.suffix}
 
 checksums           md5 2f3ddc10177013960e732cd35fd9373e \
-                    sha1 b8e7caa2d1f51a3387ed0fb96b5140a24ef33aea
+sha1 b8e7caa2d1f51a3387ed0fb96b5140a24ef33aea
 
 worksrcdir          Pantomime
 

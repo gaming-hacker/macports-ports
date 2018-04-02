@@ -22,7 +22,7 @@ homepage            http://www.luarocks.org/
 depends_lib         port:lua
 
 checksums           rmd160  20e6cd57acc5bd0e51d8a77246741b8ab4a40feb \
-                    sha256  f5cf36a87bf32b2bed2997d19b042b146a9dda4b134181aa9853b384c3ced3c7
+sha256  f5cf36a87bf32b2bed2997d19b042b146a9dda4b134181aa9853b384c3ced3c7
 
 configure.args      --with-lua=${prefix} \
                     --rocks-tree=${prefix}/share/${name}

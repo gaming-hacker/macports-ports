@@ -17,7 +17,7 @@ long_description    Bit::Vector is an efficient C library which allows \
 platforms           darwin
 
 checksums           rmd160  f486a050b737451cf363c8f602fd67f0bcff8a10 \
-                    sha256  3c6daa671fecfbc35f92a9385b563d65f50dfc6bdc8b4805f9ef46c0d035a926
+sha256  3c6daa671fecfbc35f92a9385b563d65f50dfc6bdc8b4805f9ef46c0d035a926
 
 if {${perl5.major} != ""} {
     depends_lib-append \

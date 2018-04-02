@@ -12,4 +12,4 @@ description         PEAR System_Socket package
 long_description    ${description}
 
 checksums           rmd160  41587e48bf89a9d9522b459afa6bd70cf6b20dbe \
-                    sha256  4654975f9883d9e669dcb21c6cc7123dc28827256f0c13dc18e9267da9580a2b
+sha256  4654975f9883d9e669dcb21c6cc7123dc28827256f0c13dc18e9267da9580a2b

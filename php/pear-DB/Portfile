@@ -13,4 +13,4 @@ description         PEAR DB package
 long_description    ${description}
 
 checksums           rmd160  4d6cdc4703c9b6cb9b4a536613373ba59322c69e \
-                    sha256  a574483fd5c4440a4bf08018e8bcdde7f4619e9b964de2b357bd60733ec5919c
+sha256  a574483fd5c4440a4bf08018e8bcdde7f4619e9b964de2b357bd60733ec5919c

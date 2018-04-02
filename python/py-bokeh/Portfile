@@ -26,7 +26,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  5059a467f908b7d3356c8de86cbee94fb001ffc6 \
-                    sha256  2891b883b30107dc610a7e963a21222f1fd096844d157c09db115179cfab6513
+sha256  2891b883b30107dc610a7e963a21222f1fd096844d157c09db115179cfab6513
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-six \

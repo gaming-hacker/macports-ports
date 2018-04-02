@@ -25,7 +25,7 @@ homepage            http://sqlmap.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  5a6a737157cda4ffe9c6fd326d9fa39f0a0bfe59 \
-                    sha256  9c76666d0555620329d949aca87571825adb8fcda9cd564e6410e1d2b6228c55
+sha256  9c76666d0555620329d949aca87571825adb8fcda9cd564e6410e1d2b6228c55
 
 worksrcdir          ${name}
 python.link_binaries no

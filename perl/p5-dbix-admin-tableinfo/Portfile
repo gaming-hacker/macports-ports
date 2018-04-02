@@ -16,7 +16,7 @@ platforms           darwin
 extract.suffix      .tgz
 
 checksums           rmd160  b82782dc4e16d8ad70a36a2e4f95cbc9828ccfdd \
-                    sha256  a852530f95957a43aa794f2edf5f3fe4ecec35bd20150c38136d4c23d85328b6
+sha256  a852530f95957a43aa794f2edf5f3fe4ecec35bd20150c38136d4c23d85328b6
 
 if {${perl5.major} != ""} {
    depends_build-append \

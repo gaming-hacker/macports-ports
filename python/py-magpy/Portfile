@@ -14,7 +14,7 @@ description         Geomagnetic analysis tools.
 long_description    ${description}
 
 checksums           rmd160  a18dcb5c64357ff790feab45215b25c3e91525e7 \
-                    sha256  a479e9805b2e97cfdd5f60454ced9cb7e7862ba20471ac8b42b033956cc8c4e3
+sha256  a479e9805b2e97cfdd5f60454ced9cb7e7862ba20471ac8b42b033956cc8c4e3
 
 python.versions 27 36
 

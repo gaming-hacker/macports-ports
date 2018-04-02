@@ -19,7 +19,7 @@ master_sites    gnu
 use_xz          yes
 
 checksums       rmd160  6eaaac1245c653628fd57f07df25b3a60e842891 \
-                sha256  db625c7ab3bb3ee757b3926a5cfa8d9e1c3991ad24707a83dde8a5ef2bf7a07e
+sha256  db625c7ab3bb3ee757b3926a5cfa8d9e1c3991ad24707a83dde8a5ef2bf7a07e
 
 # Ensure system version of grep is used instead of a possibly broken MacPorts version.
 configure.env   PATH=/usr/bin:$env(PATH)

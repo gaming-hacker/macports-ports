@@ -24,7 +24,7 @@ master_sites        pypi:K/Keras
 distname            Keras-${version}
 
 checksums           rmd160  3cdf3a9756801b25163b879154806fd0955ec8c3 \
-                    sha256  907ad29add1fff27342a9f4fe3e60003d450d3af41a38f22f629c7736fc8399d
+sha256  907ad29add1fff27342a9f4fe3e60003d450d3af41a38f22f629c7736fc8399d
 
 if {${name} ne ${subport}} {
     depends_build-append \

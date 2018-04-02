@@ -16,4 +16,4 @@ description         temporary buffer to save bytes
 long_description    ${description}
 
 checksums           rmd160  db02eb938b5c9d23ff08e0b92d2ab3b04dee6d1f \
-                    sha256  9b2d4390b5de6b0cf4558e4ad04317a73c5e13dd19af29149c4e47c37fb2423b
+sha256  9b2d4390b5de6b0cf4558e4ad04317a73c5e13dd19af29149c4e47c37fb2423b

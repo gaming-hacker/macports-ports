@@ -12,4 +12,4 @@ description         PEAR Structures_BibTex package
 long_description    ${description}
 
 checksums           rmd160  78fad3645ba65e5562a5117e0722368313ec5c43 \
-                    sha256  82eb0ec8c7da005565ae6150dd0c4c0ce6cca50a97ee37c54987cf6e21510b91
+sha256  82eb0ec8c7da005565ae6150dd0c4c0ce6cca50a97ee37c54987cf6e21510b91

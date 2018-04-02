@@ -17,7 +17,7 @@ master_sites        http://apps.jcns.fz-juelich.de/src/libcerf \
                     http://apps.jcns.fz-juelich.de/src/libcerf/old
 
 checksums           rmd160  bdb15425d53147004c10338f2b8fc3017b7a56c6 \
-                    sha256  e36dc147e7fff81143074a21550c259b5aac1b99fc314fc0ae33294231ca5c86
+sha256  e36dc147e7fff81143074a21550c259b5aac1b99fc314fc0ae33294231ca5c86
 extract.suffix      .tgz
 
 livecheck.type      regex

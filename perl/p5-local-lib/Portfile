@@ -14,7 +14,7 @@ description         Create and use a local lib/ for perl modules with PERL5LIB
 long_description    ${description}
 
 checksums           rmd160  e478c23762a3a2a271ee01bab4b4b7b5b457f73e \
-                    sha256  2e9b917bd48a0615e42633b2a327494e04610d8f710765b9493d306cead98a05
+sha256  2e9b917bd48a0615e42633b2a327494e04610d8f710765b9493d306cead98a05
 
 platforms           darwin
 

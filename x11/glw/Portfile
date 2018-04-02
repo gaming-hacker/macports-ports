@@ -26,7 +26,7 @@ dist_subdir         mesa
 use_bzip2           yes
 
 checksums           sha1    21de672a1cbe307135d7f172dc6952041a38e1c7 \
-                    rmd160  d06c95bc36304b8ef72211b5defd3ac338fe7956
+rmd160  d06c95bc36304b8ef72211b5defd3ac338fe7956
 
 depends_build       port:pkgconfig
 

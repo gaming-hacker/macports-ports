@@ -18,7 +18,7 @@ long_description    \
 homepage            http://ocaml-safepass.forge.ocamlcore.org/
 master_sites        http://forge.ocamlcore.org/frs/download.php/1035/
 checksums           rmd160  e83a0adebf306361d441fb8c1e403c9427779ca5 \
-                    sha256  daebb86ad960e46610fdfb17894ee8164640d0467b6eb15752b0e5315d58d375
+sha256  daebb86ad960e46610fdfb17894ee8164640d0467b6eb15752b0e5315d58d375
 
 extract.suffix      .tgz
 

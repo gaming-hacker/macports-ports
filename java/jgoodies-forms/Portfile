@@ -17,7 +17,7 @@ homepage                http://www.jgoodies.com/freeware/forms/
 master_sites            http://www.jgoodies.com/download/libraries/forms/
 distname                ${name}-1_6_0
 checksums               sha1 a78396323a1866d5eeb48bcf3b22a3d8696a8f30 \
-                        sha256 5d38b462de4cee37d00a3fa656247bb530dc9c2d83068827e0c1d258933a1b29
+sha256 5d38b462de4cee37d00a3fa656247bb530dc9c2d83068827e0c1d258933a1b29
 use_zip                 yes
 
 depends_lib             bin:java:kaffe \

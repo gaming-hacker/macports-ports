@@ -13,4 +13,4 @@ description         PEAR HTML_Common2 package
 long_description    ${description}
 
 checksums           rmd160  deab8b94f9f33dbfff7fa7762f29aaf51863fdb0 \
-                    sha256  a86e9b8f149b0f6aed0b67b4e65ebf76fe17d8e51d04d619523ce27c5b6c85e5
+sha256  a86e9b8f149b0f6aed0b67b4e65ebf76fe17d8e51d04d619523ce27c5b6c85e5

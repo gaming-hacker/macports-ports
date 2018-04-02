@@ -30,9 +30,9 @@ master_sites \
 distfiles ${name}src-${version}${extract.suffix}
 
 checksums \
-    md5 55c102408da8085aa56984af4151eb9c \
-    sha1 5bcfa0e8cc192afc5a54aab0bd4c1812dafa7b45 \
-    rmd160 011e723a956f2fb9029357d00ddb705c350309af
+md5 55c102408da8085aa56984af4151eb9c \
+sha1 5bcfa0e8cc192afc5a54aab0bd4c1812dafa7b45 \
+rmd160 011e723a956f2fb9029357d00ddb705c350309af
 
 depends_lib port:readline port:ncurses
 

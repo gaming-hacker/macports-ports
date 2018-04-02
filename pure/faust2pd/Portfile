@@ -19,7 +19,7 @@ description                     a utility to generate Pd GUI patches from Faust 
 long_description                ${name} is ${description}.
 
 checksums                       rmd160  cddc64a42ed718dbdeddef4c7ec196294e20e8ef \
-                                sha256  6538f85f913d11441a6746d2f352b3e14ea2012ab3c77658a5500ffc641c20e6
+sha256  6538f85f913d11441a6746d2f352b3e14ea2012ab3c77658a5500ffc641c20e6
 
 use_configure                   no
 

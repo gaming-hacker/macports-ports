@@ -22,7 +22,7 @@ long_description        Imagick is a native PHP extension for creating and \
                         modifying images using the ImageMagick API
 
 checksums               rmd160  1a0a9f607917c4e80fd2c06cccb91386a1ba2c2e \
-                        sha256  1f3c5b5eeaa02800ad22f506cd100e8889a66b2ec937e192eaaa30d74562567c
+sha256  1f3c5b5eeaa02800ad22f506cd100e8889a66b2ec937e192eaaa30d74562567c
 
 if {${name} ne ${subport}} {
     depends_build-append \

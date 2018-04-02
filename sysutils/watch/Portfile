@@ -20,7 +20,7 @@ distname        procps-ng-${version}
 use_xz yes
 
 checksums       rmd160  c8a82895668a23521847416ff9cb661ca7f3a7d4 \
-                sha256  e9493169a2d2adc0bc045538707310c8e877b385e4e296143b62607d2bb044ed
+sha256  e9493169a2d2adc0bc045538707310c8e877b385e4e296143b62607d2bb044ed
 
 depends_lib     port:ncurses
 

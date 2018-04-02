@@ -17,7 +17,7 @@ long_description                ${name} provides ${description} which lets \
                                 and commercial database systems from Pure
 
 checksums                       rmd160  df385eaf018e087c31336d3ddf9eb1152f6cb95b \
-                                sha256  1907e9ebca11cc68762cf7046084b31e9e2bf056df85c40ccbcbe9f02221ff8d
+sha256  1907e9ebca11cc68762cf7046084b31e9e2bf056df85c40ccbcbe9f02221ff8d
 
 depends_build-append            port:pkgconfig
 

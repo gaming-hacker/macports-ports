@@ -35,8 +35,8 @@ license                 {MIT NCSA}
         revision                0
         name                    ${name}
         checksums \
-            rmd160  d5f737202375c175bac691bb3b603b48f6f09d6b \
-            sha256  2c70c90611b7363d08aae137cb5979934f4c010c13e6c9a2de232251d73a5d72
+rmd160  d5f737202375c175bac691bb3b603b48f6f09d6b \
+sha256  2c70c90611b7363d08aae137cb5979934f4c010c13e6c9a2de232251d73a5d72
 
         livecheck.url \
             http://llvm.org/viewvc/llvm-project/openmp/trunk/?view=log

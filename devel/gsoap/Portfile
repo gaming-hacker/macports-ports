@@ -27,7 +27,7 @@ distname            ${name}_${version}
 worksrcdir          ${name}-${branch}
 
 checksums           rmd160  09ad6c28b926bc2e323df9d5458299dec9461553 \
-                    sha256  975eca5b1a9109abe9527ed105e41b21d40ae01e2c2d2daf4bfdb9f4921234b4
+sha256  975eca5b1a9109abe9527ed105e41b21d40ae01e2c2d2daf4bfdb9f4921234b4
 
 depends_lib         path:lib/libssl.dylib:openssl
 

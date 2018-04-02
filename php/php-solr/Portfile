@@ -20,7 +20,7 @@ long_description        ${name} is an extremely fast, light-weight, feature-rich
                         and efficiently with Apache Solr server instances.
 
 checksums               rmd160  e4f025a3833b53dae8e066c4604c37026310d6c1 \
-                        sha256  22865dafb76fc5839e84a5bd423bb37d5062883e5dfc4d064b43129ac9f2752c
+sha256  22865dafb76fc5839e84a5bd423bb37d5062883e5dfc4d064b43129ac9f2752c
 
 if {${name} ne ${subport}} {
     depends_build-append    port:curl \

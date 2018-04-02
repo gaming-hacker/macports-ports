@@ -16,6 +16,6 @@ long_description    Compress::Raw::Bzip2 provides an interface to the \
 platforms           darwin
 
 checksums           rmd160  fe01383d82f38975c99f5f0411be253a947f12ce \
-                    sha256  44a1e55136da21ff5ab028b5e9de696dab2fbc771a75cbd44127ff121ce6b22c
+sha256  44a1e55136da21ff5ab028b5e9de696dab2fbc771a75cbd44127ff121ce6b22c
 
 # builds using embedded bzip2 source, no external dependency required

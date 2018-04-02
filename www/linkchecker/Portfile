@@ -30,7 +30,7 @@ master_sites        https://pypi.python.org/packages/source/L/LinkChecker
 distname            LinkChecker-${version}
 
 checksums           rmd160  0d757f00fb8c124ec6ff14a9f1205655165e18d6 \
-                    sha256  ee0aa60de440fdcf8587ddebf1f691bc777a32d8d4f119beed63f405dc56176d
+sha256  ee0aa60de440fdcf8587ddebf1f691bc777a32d8d4f119beed63f405dc56176d
 
 python.default_version  27
 

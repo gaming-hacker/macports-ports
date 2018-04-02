@@ -27,7 +27,7 @@ master_sites        https://www.spice-space.org/download/gtk/
 use_bzip2           yes
 
 checksums           rmd160  3c238174b293d09be175839630bcc730682f0b78 \
-                    sha256  e9720e01165f8451c9f3f58ad50e3afb990993b81cc2db86b3661b7ac5b976ee
+sha256  e9720e01165f8451c9f3f58ad50e3afb990993b81cc2db86b3661b7ac5b976ee
 
 depends_build-append \
                     port:pkgconfig \

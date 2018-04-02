@@ -16,7 +16,7 @@ description         GimpLensfun is a GIMP plugin to correct lens distortion
 long_description    ${description} using the lensfun library and database.
 
 checksums           rmd160  529285a05fed3c3fd5669d22a9686cad31564227 \
-                    sha256  00c83de0b35c84f8ff85862badabafe581812b85513d35d31f46d0271b7bc1b4
+sha256  00c83de0b35c84f8ff85862badabafe581812b85513d35d31f46d0271b7bc1b4
 
 depends_build       port:pkgconfig
 

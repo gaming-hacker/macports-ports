@@ -18,8 +18,8 @@ platforms           darwin
 distname            ${realname}-${version}
 master_sites        https://sourcesup.renater.fr/frs/download.php/file/3668/
 checksums           md5     8e941ac5bb3930919697d9a781738d9c \
-                    sha1    31a4b3d7469e82fc24c363d7cd1b20d425976294 \
-                    rmd160  0259d428336f5717307468f8e4ebd57351bacc19
+sha1    31a4b3d7469e82fc24c363d7cd1b20d425976294 \
+rmd160  0259d428336f5717307468f8e4ebd57351bacc19
                     
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

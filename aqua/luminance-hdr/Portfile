@@ -38,8 +38,8 @@ depends_lib-append     \
     port:qt5-qttools
 
 checksums \
-    rmd160  41fbd29ececa8f8de89dccabd6b48a66cc870307 \
-    sha256  14014eadab099944f051dd99447f6f47d455ffb0e4e0272d93a8e71fd96ad401
+rmd160  41fbd29ececa8f8de89dccabd6b48a66cc870307 \
+sha256  14014eadab099944f051dd99447f6f47d455ffb0e4e0272d93a8e71fd96ad401
 
 cmake.out_of_source yes
 

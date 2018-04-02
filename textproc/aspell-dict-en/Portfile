@@ -18,7 +18,7 @@ master_sites        gnu:aspell/dict/en
 
 distname            aspell6-en-${version}-0
 checksums           rmd160 6566cb9938410ff9387485794c8ce6e8b834d931 \
-                    sha256 09b562b02195e7facd31d65241050be7ac6f78654128ab41650511bf42dd5b7c
+sha256 09b562b02195e7facd31d65241050be7ac6f78654128ab41650511bf42dd5b7c
 
 use_bzip2           yes
 

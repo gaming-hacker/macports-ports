@@ -6,7 +6,7 @@ PortGroup           cxx11 1.0
 
 github.setup        google guetzli 1.0.1 v
 checksums           rmd160  4a427f59e47dfea2cb9d278fcd9ede76b42368a7 \
-                    sha256  6bcf54cdcccef1a32be553def5fe59cce2b06a21341dea29506130f7de2c552c
+sha256  6bcf54cdcccef1a32be553def5fe59cce2b06a21341dea29506130f7de2c552c
 
 description         JPEG encoder that aims for excellent compression density at high visual quality
 long_description    Guetzli is a ${description}.  Guetzli-generated images are typically \

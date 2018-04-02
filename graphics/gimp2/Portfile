@@ -28,7 +28,7 @@ distname            gimp-${version}
 use_bzip2           yes
 
 checksums           rmd160  67fb5ba3958c18725ff50ecb41df750c5476c80d \
-                    sha256  9187a35cc52b110d78124d7b27b68a68ade14a794c2721314bac6134d2a5638a
+sha256  9187a35cc52b110d78124d7b27b68a68ade14a794c2721314bac6134d2a5638a
 
 set perl_version    5.26
 

@@ -22,7 +22,7 @@ long_description    This collection of BSD Make directives can be used to   \
                     with ONSGMLS.
 
 checksums           rmd160  db48c5610a99ba001a2be009cf8c9c549d8da197 \
-                    sha256  269030428efec1a554f7ce038820f218e09523d771875c2ed6b6e7cd0288f4fd
+sha256  269030428efec1a554f7ce038820f218e09523d771875c2ed6b6e7cd0288f4fd
 
 github.tarball_from releases
 use_xz              yes

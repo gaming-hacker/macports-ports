@@ -17,7 +17,7 @@ long_description    This package provides ISBN data used by the \
                     Business::ISBN code.
 
 checksums           rmd160  8c4923b439f68bc81160b9a99b3167b50c8fba6b \
-                    sha256  c756048c9b2b76ae5a7b9f1e1f6c59af670ff89b1fa574d4c3d7e4c9659685c9
+sha256  c756048c9b2b76ae5a7b9f1e1f6c59af670ff89b1fa574d4c3d7e4c9659685c9
 
 platforms           darwin
 supported_archs     noarch

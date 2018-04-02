@@ -20,7 +20,7 @@ long_description    Authenticate against the Yubico server via the Web API in Pe
                     the API and ID, you need to provide those details to the module to work.
 
 checksums           rmd160  5c8985507ab51312c8a96ee9055d9b2e5e05927b \
-                    sha256  a76bcae93b52f8909097c7c3f42687511ce3d68d9fea2357697b0e69b93f5b40
+sha256  a76bcae93b52f8909097c7c3f42687511ce3d68d9fea2357697b0e69b93f5b40
 
 if {${perl5.major} != ""} {
     depends_lib-append \

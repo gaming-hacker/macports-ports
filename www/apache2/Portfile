@@ -22,7 +22,7 @@ use_bzip2           yes
 use_parallel_build  yes
 
 checksums           rmd160  5c8758954913c09549a01e40a7a5e59b54705f8e \
-                    sha256  de02511859b00d17845b9abdd1f975d5ccb5d0b280c567da5bf2ad4b70846f05
+sha256  de02511859b00d17845b9abdd1f975d5ccb5d0b280c567da5bf2ad4b70846f05
 
 depends_lib         port:apr \
                     port:apr-util \

@@ -17,7 +17,7 @@ homepage            http://bcrypt.sourceforge.net/
 master_sites        sourceforge:project/bcrypt/bcrypt/${version}
 
 checksums           rmd160  c043a25169b09e7b07c2e00db0d4ca2c3b3d13be \
-                    sha256  b9c1a7c0996a305465135b90123b0c63adbb5fa7c47a24b3f347deb2696d417d
+sha256  b9c1a7c0996a305465135b90123b0c63adbb5fa7c47a24b3f347deb2696d417d
 
 depends_lib         port:zlib
 

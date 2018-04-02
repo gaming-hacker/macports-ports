@@ -12,4 +12,4 @@ description         PEAR MP3_IDv2 package
 long_description    ${description}
 
 checksums           rmd160  2cc43112da6274c8aa5a53f45a49c4bd659d6de0 \
-                    sha256  763a772a48fef4b9e9987ec9a394385a20c0fffe5b652e39b80cc61bb453159f
+sha256  763a772a48fef4b9e9987ec9a394385a20c0fffe5b652e39b80cc61bb453159f

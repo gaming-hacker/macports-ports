@@ -21,7 +21,7 @@ description             fast, stable PHP opcode cacher
 long_description        ${name} is a ${description}.
 
 checksums               rmd160  1f5edb382b52d9e12bf1c6a9cb34870dcb8cb155 \
-                        sha256  7d12a3cbd5f729b70f9226ac19406d11219f1c5f5e82b3bbb43ea9460cbf6cbd
+sha256  7d12a3cbd5f729b70f9226ac19406d11219f1c5f5e82b3bbb43ea9460cbf6cbd
 
 if {${name} ne ${subport}} {
     conflicts           ${php}-APC ${php}-APCu ${php}-eaccelerator

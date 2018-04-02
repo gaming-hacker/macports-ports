@@ -20,7 +20,7 @@ long_description        Evas is a hardware-accelerated canvas API for \
                         or graphics hardware are too slow.
 
 checksums               rmd160  54201a7a577a956dcfad9c3943b9726a77ad7333 \
-                        sha256  0f2a30b4f2dcd0d39507aca51399fa5574723b0bd031d3cec66181810bb4e70d
+sha256  0f2a30b4f2dcd0d39507aca51399fa5574723b0bd031d3cec66181810bb4e70d
 
 homepage                http://trac.enlightenment.org/e/wiki/Evas
 master_sites            http://download.enlightenment.org/releases/

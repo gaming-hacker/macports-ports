@@ -20,7 +20,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  3377943e821c64f35cc5d4c3863ae7277b1ac0e6 \
-                    sha256  8616b77c239aaa731312609f192c9b2c71d54b2cae42ff23efa23b5b3188778e
+sha256  8616b77c239aaa731312609f192c9b2c71d54b2cae42ff23efa23b5b3188778e
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -67,7 +67,7 @@ platform darwin {
         # version 3.17.3+ requires webkit2gtk-4.0 >= 2.7.1
         version             3.17.2
         checksums           rmd160  38ef9ea1773b01a4407808be798cc9752457b9ff \
-                            sha256  0626f7a954d7969e058474a9d5e05977eb886703c76aaba7a48cb7cd236fcd27
+sha256  0626f7a954d7969e058474a9d5e05977eb886703c76aaba7a48cb7cd236fcd27
         depends_lib-append  path:lib/pkgconfig/webkitgtk-3.0.pc:webkit-gtk3-2.0
         livecheck.type      none
     } else {

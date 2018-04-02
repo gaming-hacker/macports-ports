@@ -21,7 +21,7 @@ master_sites            googlecode
 use_zip                 yes
 
 checksums               sha1    550ac190c771ec9162b374f1c429baa230837f1d \
-                        rmd160  0f0c74f4d2a778acdbeb49d97ec83f6c45bbca7b
+rmd160  0f0c74f4d2a778acdbeb49d97ec83f6c45bbca7b
 
 depends_run             bin:java:kaffe
 

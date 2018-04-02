@@ -12,7 +12,7 @@ description         PEAR System_Mount package
 long_description    ${description}
 
 checksums           rmd160  97f7870400344122c09eee39b0f5d91e2d8d4c6a \
-                    sha256  8bcced8046d65ab9ce7bd09b3bcf8d39c00a5fdc00a6235fd3565528c457b558
+sha256  8bcced8046d65ab9ce7bd09b3bcf8d39c00a5fdc00a6235fd3565528c457b558
 
 depends_lib-append  port:pear-File_Fstab \
                     port:pear-System_Command

@@ -13,7 +13,7 @@ description         HTTP Basic and Digest authentication for Catalyst.
 long_description    ${description}
 
 checksums           rmd160  3c3d95a0ff1b981e8c6c53b50b650bc3adc406a7 \
-                    sha256  6fa1816dee644b0db5ea0cc15c5e711dc2ced2083625abce7096521f1d65a529
+sha256  6fa1816dee644b0db5ea0cc15c5e711dc2ced2083625abce7096521f1d65a529
 
 supported_archs     noarch
 

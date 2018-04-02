@@ -23,7 +23,7 @@ distname            krusader-${version}
 use_bzip2           yes
 
 checksums           rmd160  569cf99ab8d2f23d888e922dc4c996d16ef1f0bc \
-                    sha256  ca43ddeef91e2821142b723d13c0be4bf0d138a9718cccd914cecb675cc97dae
+sha256  ca43ddeef91e2821142b723d13c0be4bf0d138a9718cccd914cecb675cc97dae
 
 if {![variant_isset docs]} {
     patchfiles-append   patch-CMakeLists.diff

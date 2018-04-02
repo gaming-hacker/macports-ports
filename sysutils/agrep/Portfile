@@ -19,7 +19,7 @@ homepage            http://netbsd.org
 master_sites        ftp://ftp.cs.arizona.edu/agrep/
 
 checksums           rmd160  818f69f751943ddd8d6b2410b95bac1667985d0a \
-                    sha256  31275a2fee28fb8966e1978d26fe8113b61ce49b39e68ddf4cad3964db72d5f8
+sha256  31275a2fee28fb8966e1978d26fe8113b61ce49b39e68ddf4cad3964db72d5f8
 
 extract.suffix      .tar.Z
 

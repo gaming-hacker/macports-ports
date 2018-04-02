@@ -20,7 +20,7 @@ homepage            https://wiki.gnome.org/Apps/Xchat-Gnome
 master_sites        gnome:sources/${name}/${branch}/
 
 checksums           rmd160  ff2228aa5258a2c5a3bd7c391e83a15b2f030aff \
-                    sha256  6234f14ddc7323faaa4f10f890786a0f69da00774855412a4382b11a6158cf4b
+sha256  6234f14ddc7323faaa4f10f890786a0f69da00774855412a4382b11a6158cf4b
 
 use_bzip2           yes
 

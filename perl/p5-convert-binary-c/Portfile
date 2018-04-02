@@ -15,6 +15,6 @@ description         Perl extension for Binary Data Conversion using C Types
 long_description    ${description}
 
 checksums           rmd160  8c8c972d19a605ca3262afb4160ff5da0287ae3b \
-                    sha256  24008c3f89117005d308bb2fd2317db6d086a265be6e98855109bbc12a52f2ea
+sha256  24008c3f89117005d308bb2fd2317db6d086a265be6e98855109bbc12a52f2ea
 
 use_parallel_build  no

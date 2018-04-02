@@ -24,7 +24,7 @@ distname        texshopsource[strsed ${version} {g/\.//}]
 worksrcdir      texshopsource-${version}
 
 checksums       rmd160  cd02b93bafa72de885338d32e98c61de39e11aa6 \
-                sha256  cd8f9fd827d9b080423da0f1d9664bdbfdfebb4525bbb7542ee54c44e2f9ce19
+sha256  cd8f9fd827d9b080423da0f1d9664bdbfdfebb4525bbb7542ee54c44e2f9ce19
 
 # force 32-bit, ticket #20291
 supported_archs i386 ppc

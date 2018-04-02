@@ -23,7 +23,7 @@ master_sites        ${homepage}/src/ \
                     ftp://mama.indstate.edu/linux/tree/old/
 extract.suffix      .tgz
 checksums           rmd160  238a8d89b3a993679dad68fef871b3d7d0011354 \
-                    sha256  6957c20e82561ac4231638996e74f4cfa4e6faabc5a2f511f0b4e3940e8f7b12
+sha256  6957c20e82561ac4231638996e74f4cfa4e6faabc5a2f511f0b4e3940e8f7b12
 
 patchfiles          patch-Makefile.diff
 

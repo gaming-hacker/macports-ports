@@ -32,7 +32,7 @@ long_description        Utility for encrypting and decrypting files and streams.
 master_sites            sourceforge:project/ccrypt/ccrypt/${version}
 
 checksums               rmd160  b3b07d2e788f8ba04712879150b609a8c55f0dc5 \
-                        sha256  87d66da2170facabf6f2fc073586ae2c7320d4689980cfca415c74688e499ba0
+sha256  87d66da2170facabf6f2fc073586ae2c7320d4689980cfca415c74688e499ba0
 
 depends_lib             port:gettext
 

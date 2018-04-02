@@ -59,8 +59,8 @@ cargo.crates \
     winapi-x86_64-pc-windows-gnu    0.4.0  712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  d8c6c7c4baa00e5b5430606a2ed99c314dea904f \
-                    sha256  454eedb33b2edeeb7b2b044aee42f28287c36ebff3ebbf08f852b95e6e2bc565 \
+rmd160  d8c6c7c4baa00e5b5430606a2ed99c314dea904f \
+sha256  454eedb33b2edeeb7b2b044aee42f28287c36ebff3ebbf08f852b95e6e2bc565 \
 size    521208
 
 depends_build-append \

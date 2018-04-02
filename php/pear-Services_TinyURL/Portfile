@@ -12,4 +12,4 @@ description         PEAR Services_TinyURL package
 long_description    ${description}
 
 checksums           rmd160  0d59daf3955847ff1a7a37742cc60e751e2c042d \
-                    sha256  f7c07f8016edd37cef9e87465b6ab9cefafec83c5d3d04ecda5427d52eb56500
+sha256  f7c07f8016edd37cef9e87465b6ab9cefafec83c5d3d04ecda5427d52eb56500

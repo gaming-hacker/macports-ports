@@ -30,8 +30,8 @@ distname        ${my_name}-${version}
 use_bzip2       yes
 
 checksums       md5     bb8e10a218fac793a52d404d14adedcb \
-                sha1    abedf091bef0c7e65162111baf068dcb739ffcd3 \
-                rmd160  a5e22b89559a0f6e6aebc6e95c86faa511b561fc
+sha1    abedf091bef0c7e65162111baf068dcb739ffcd3 \
+rmd160  a5e22b89559a0f6e6aebc6e95c86faa511b561fc
 
 depends_build   port:pkgconfig bin:flex:flex bin:bison:bison
 

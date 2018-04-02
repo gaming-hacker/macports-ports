@@ -18,8 +18,8 @@ homepage        http://www.springsource.org/about
 distname        spring-framework-${full_version}-with-docs
 master_sites    http://s3.amazonaws.com/dist.springframework.org/release/SPR
 checksums       md5 a092c72d730e049f18123f2ec090df5c \
-                sha1 115fcdc3a7f0917a9cdaa44207a7d5b0373b3122 \
-                rmd160 fed31138af34415522a52241232f2813cb875957
+sha1 115fcdc3a7f0917a9cdaa44207a7d5b0373b3122 \
+rmd160 fed31138af34415522a52241232f2813cb875957
 
 use_zip         yes
 

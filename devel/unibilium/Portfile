@@ -18,7 +18,7 @@ long_description \
     thread-safe.
 
 checksums           rmd160  85817faa6df4d8afad85764020e7aec19ece9f9a \
-                    sha256  006d2e6765fe3c6b508affc51ea11b7afb6622683a61a36ed9ef8be0b6ffb1ac
+sha256  006d2e6765fe3c6b508affc51ea11b7afb6622683a61a36ed9ef8be0b6ffb1ac
 
 depends_build       port:libtool
 

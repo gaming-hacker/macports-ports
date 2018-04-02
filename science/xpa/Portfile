@@ -25,7 +25,7 @@ homepage            http://hea-www.harvard.edu/saord/xpa/
 master_sites        http://hea-www.harvard.edu/saord/download/xpa/
 
 checksums           rmd160  7e2cbba7565bbbdf0d1e0bd3dd2e45c756fa0458 \
-                    sha256  ac0e041f9115757fbcbfeb377cb5833544815a70f2b46f6edfbf6d1239ae690a
+sha256  ac0e041f9115757fbcbfeb377cb5833544815a70f2b46f6edfbf6d1239ae690a
 
 patchfiles          patch-Makefile.in.diff
 

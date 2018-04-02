@@ -12,4 +12,4 @@ description         PEAR DB_Pager package
 long_description    ${description}
 
 checksums           rmd160  22310bdfaedcc1484c0e719f143552792cfcc11c \
-                    sha256  f254749a82b56e83760093023ccda2f0a6a0c0ffee0b50840e6a2a58f324a405
+sha256  f254749a82b56e83760093023ccda2f0a6a0c0ffee0b50840e6a2a58f324a405

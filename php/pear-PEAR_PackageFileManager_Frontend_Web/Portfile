@@ -12,7 +12,7 @@ description         PEAR PEAR_PackageFileManager_Frontend_Web package
 long_description    ${description}
 
 checksums           rmd160  83c7f43cc950e70a25a1608d5fb0a320a6e4ae4b \
-                    sha256  eebd93a6abbdd0f7717160bf392e53f9b376e85d246ac83fc410c74544fb707b
+sha256  eebd93a6abbdd0f7717160bf392e53f9b376e85d246ac83fc410c74544fb707b
 
 depends_lib-append  port:pear-PEAR_PackageFileManager_Frontend \
                     port:pear-HTML_QuickForm \

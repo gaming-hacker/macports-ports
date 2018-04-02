@@ -20,7 +20,7 @@ long_description A port of DrPetter's sfxr with a native Mac UI. \
 homepage         http://thirdcog.eu/apps/cfxr
 
 checksums        rmd160  8b9e33d4d7cf262a6e44565e9829730f294e7f8d \
-                 sha256  3049b9dd92496bd7511c31130c4a3b494508889cb05f6084bd3554369f3eb6a9
+sha256  3049b9dd92496bd7511c31130c4a3b494508889cb05f6084bd3554369f3eb6a9
 
 post-patch {
         reinplace "s|/Library/Frameworks/SDL.framework|${frameworks_dir}/SDL.framework|g" \

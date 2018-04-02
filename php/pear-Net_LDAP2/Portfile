@@ -12,4 +12,4 @@ description         PEAR Net_LDAP2 package
 long_description    ${description}
 
 checksums           rmd160  d7cda8cdf0efffc1faa4f807fb95a13b4dd9e15e \
-                    sha256  79553eb2abd9b8261343d2e4cc5a05712d7192dad1211d1f489c7077890e0740
+sha256  79553eb2abd9b8261343d2e4cc5a05712d7192dad1211d1f489c7077890e0740

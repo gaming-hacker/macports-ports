@@ -22,4 +22,4 @@ long_description    A Unicode::String object represents a sequence of \
 platforms           darwin
 
 checksums           rmd160  9e41594482075b87fc23dd8e5a294f5a7f29c3d6 \
-                    sha256  894a110ece479546af8afec0972eec7320c86c4dea4e6b354dff3c7526ba9b68
+sha256  894a110ece479546af8afec0972eec7320c86c4dea4e6b354dff3c7526ba9b68

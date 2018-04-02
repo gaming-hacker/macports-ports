@@ -29,12 +29,12 @@ distfiles			gcc-${version}.tar.bz2:gcc newlib-${newlibversion}.tar.gz:newlib
 worksrcdir			gcc-${version}
 checksums			gcc-${version}.tar.bz2 \
 md5 4a21ac777d4b5617283ce488b808da7b \
-						sha1 97b290fdc572c8e490b3b39f243e69bacad23c2b \
-						rmd160 b15003368cedc7964f6ceaee0c39ddc43a46c442 \
+sha1 97b290fdc572c8e490b3b39f243e69bacad23c2b \
+rmd160 b15003368cedc7964f6ceaee0c39ddc43a46c442 \
 					newlib-${newlibversion}.tar.gz \
 md5 4020004b1b7a56ca4cf7f6d35b40a4cb \
-						sha1 f6860b36e48fb831a30bab491230bbc7ce2669a2 \
-						rmd160 e57cbb5b3f007ec26a4ec62f5652e23523357001
+sha1 f6860b36e48fb831a30bab491230bbc7ce2669a2 \
+rmd160 e57cbb5b3f007ec26a4ec62f5652e23523357001
 patchfiles			patch-gcc-Makefile.in
 
 # All cross ports violate the mtree layout.

@@ -19,7 +19,7 @@ long_description    This is pragma to change Perl 5's standard method \
 platforms           darwin
 
 checksums           rmd160  5e6950083b236a7ad531f1b697bf6b1e25486d78 \
-                    sha256  aeff5d1361980e7d6e878059c6c3d1db4d52687528cb0ea650cbce24c14c61b0
+sha256  aeff5d1361980e7d6e878059c6c3d1db4d52687528cb0ea650cbce24c14c61b0
 
 if {${perl5.major} != ""} {
     depends_lib-append  \

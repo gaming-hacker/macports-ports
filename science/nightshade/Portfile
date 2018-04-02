@@ -16,8 +16,8 @@ homepage                http://nightshadesoftware.org/
 platforms               darwin
 master_sites            ${homepage}downloads/
 checksums               md5 67381c00bd98d3d1bfce92638a7e9507 \
-                        sha1 ca0ce4a2cf0f5b5343e0915d948407a125b96758 \
-                        rmd160 daee89bebbbac6f9980b4e6c0e55b2725a8b60ce
+sha1 ca0ce4a2cf0f5b5343e0915d948407a125b96758 \
+rmd160 daee89bebbbac6f9980b4e6c0e55b2725a8b60ce
 depends_lib             port:libsdl_mixer \
                         port:libsdl_pango
 use_autoreconf          yes

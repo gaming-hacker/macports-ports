@@ -19,7 +19,7 @@ long_description    \
     as client or server.
 
 checksums           rmd160  79089070ba8cede8e125a214ddd41f2f0cf5e170 \
-                    sha256  52904d4be01a659cef886bf42fa740743f50b45b896eed55d39e9137b25b7ea6 \
+sha256  52904d4be01a659cef886bf42fa740743f50b45b896eed55d39e9137b25b7ea6 \
 size    3777268
 
 depends_lib-append  path:lib/libssl.dylib:openssl \

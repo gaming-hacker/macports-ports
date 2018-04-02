@@ -14,7 +14,7 @@ description         Extracts embedded tests and code examples from POD
 long_description    ${description}
 
 checksums           sha1    53ed2833ed06e8132ca0158a0038701ec72c29d2 \
-                    rmd160  aeb4d5c44ccf8a99ab4f622aa30f450600ac79bf
+rmd160  aeb4d5c44ccf8a99ab4f622aa30f450600ac79bf
 
 if {${perl5.major} != ""} {
     patchfiles      patch-default-inc-excludes-dot.diff

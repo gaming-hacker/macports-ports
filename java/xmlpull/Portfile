@@ -23,7 +23,7 @@ homepage		http://www.xmlpull.org/
 master_sites	${homepage}v1/download/
 distfiles		${name}_${version_us}_src.tgz
 checksums		md5 34c8a093e5678dd633411dfea88f8558 \
-                sha1 cc20f5952d85a2c138e702650c29c79c6b556c6c
+sha1 cc20f5952d85a2c138e702650c29c79c6b556c6c
 
 worksrcdir		${name}_${version_us}
 

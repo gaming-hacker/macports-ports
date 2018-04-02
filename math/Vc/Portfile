@@ -27,7 +27,7 @@ homepage            http://code.compeng.uni-frankfurt.de/projects/vc
 master_sites        http://code.compeng.uni-frankfurt.de/attachments/download/183/
 
 checksums           rmd160  0878034cd1b78ad0429974c81502d2912c6f3e1b \
-                    sha256  a4e5c5d7b51b4b04e6ef87e28a5b8b0108c9788739b044f96fb64f274d249063
+sha256  a4e5c5d7b51b4b04e6ef87e28a5b8b0108c9788739b044f96fb64f274d249063
 
 post-extract        { file mkdir ${workpath}/build }
 # standard post-arg, where to find the primary CMakeLists.txt file.

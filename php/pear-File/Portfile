@@ -13,4 +13,4 @@ description         PEAR File package
 long_description    ${description}
 
 checksums           rmd160  e0dd95820617b8d8de307a77bcd45f51b963fddf \
-                    sha256  f9b7e03dced7c7b6575531fbc73bc479ae4849d80c764862eeeec9b90f74a4d0
+sha256  f9b7e03dced7c7b6575531fbc73bc479ae4849d80c764862eeeec9b90f74a4d0

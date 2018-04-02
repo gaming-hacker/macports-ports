@@ -16,5 +16,5 @@ depends_lib-append  port:rb-term-ansicolor port:rb-treetop port:rb-polyglot \
                     port:rb-diff-lcs port:rb-builder
 
 checksums           md5 1c78cebc78ec1a47791ea109a4d5d1b8 \
-                    rmd160 ed7b0903acc778852a8b5ce1e9ee75cf49a53179 \
-                    sha1 b17c309fb3ea1506f62212235d007f02e9584960
+rmd160 ed7b0903acc778852a8b5ce1e9ee75cf49a53179 \
+sha1 b17c309fb3ea1506f62212235d007f02e9584960

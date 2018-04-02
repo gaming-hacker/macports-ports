@@ -23,7 +23,7 @@ long_description    The findlib library provides a scheme to manage reusable \
 homepage            http://projects.camlcity.org/projects/findlib.html
 master_sites        http://download.camlcity.org/download/
 checksums           rmd160  ab81e1521fe51ab69427d791347ad21ad404855a \
-                    sha256  6e4065e5d79d31176ec213ff94599c4eae17c3904c2896e845d0379a99f1bdf8
+sha256  6e4065e5d79d31176ec213ff94599c4eae17c3904c2896e845d0379a99f1bdf8
 
 livecheck.type      regex
 livecheck.regex     "findlib-(.*?).tar.gz"

@@ -17,7 +17,7 @@ description         Efficient binary-decimal and decimal-binary conversion \
 long_description    ${description}
 
 checksums           rmd160  4be1196beea017be75823b16841384a9f6e71c00 \
-                    sha256  4246c5eb4a1fa15ed551f9188303aac86421464f7b29b434c17ed3d035871e50
+sha256  4246c5eb4a1fa15ed551f9188303aac86421464f7b29b434c17ed3d035871e50
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON

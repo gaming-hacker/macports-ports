@@ -20,7 +20,7 @@ platforms           darwin
 master_sites        http://www.freedink.org/snapshots/
 
 checksums           rmd160  30d3c50d42278df0b65f724a1e395bfcf9f28934 \
-                    sha256  f5540b147da014cf12cd0b2705282a5c838722ef3c1ca8340fff3a3436550669 \
+sha256  f5540b147da014cf12cd0b2705282a5c838722ef3c1ca8340fff3a3436550669 \
 size    24341482
 
 use_configure       no

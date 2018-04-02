@@ -23,7 +23,7 @@ github.tarball_from releases
 distname            gource-${version}
 
 checksums           rmd160  e5381f5220431bd9353666226e3521298e6b5ab6 \
-                    sha256  f2b16083a01b897b6c062b363793028fb9e01cd6f888d91772ee06e56ce398d2
+sha256  f2b16083a01b897b6c062b363793028fb9e01cd6f888d91772ee06e56ce398d2
 
 depends_build       port:glm \
                     port:pkgconfig

@@ -23,7 +23,7 @@ homepage        http://www.crosswire.org/${name}/index.jsp
 master_sites    http://www.crosswire.org/ftpmirror/pub/${name}/source/v${branch}/
 
 checksums       rmd160  55a0b741a97e58f29cfa5eca4572719660447393 \
-                sha256  995da8cf5a207c1f09809bf4b9db0bd7d267da5fcdb9d6666c9b313edd9d213d
+sha256  995da8cf5a207c1f09809bf4b9db0bd7d267da5fcdb9d6666c9b313edd9d213d
 
 depends_build   port:autoconf \
                 port:automake \

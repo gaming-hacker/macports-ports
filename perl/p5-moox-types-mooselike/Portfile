@@ -18,7 +18,7 @@ description         MooX::Types::MooseLike - some Moosish types and a type build
 long_description    ${description}
 
 checksums           rmd160  a3b7bdec1eca334893c14460d5a172e88e8fa3d4 \
-                    sha256  1d3780aa9bea430afbe65aa8c76e718f1045ce788aadda4116f59d3b7a7ad2b4
+sha256  1d3780aa9bea430afbe65aa8c76e718f1045ce788aadda4116f59d3b7a7ad2b4
 
 if {${perl5.major} != ""} {
     depends_build-append \

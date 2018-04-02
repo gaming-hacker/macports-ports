@@ -15,7 +15,7 @@ description         Arbitrary size rational numbers math package
 long_description    ${description}
 
 checksums           rmd160  0b2d4fd095b40854852748659ec783975b0c5035 \
-                    sha256  b893dfe2caf27b233a3678abc39176e706a9b518e8937bc496e46e125e960e22
+sha256  b893dfe2caf27b233a3678abc39176e706a9b518e8937bc496e46e125e960e22
 
 if {${perl5.major} != ""} {
     depends_lib-append \

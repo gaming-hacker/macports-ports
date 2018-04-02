@@ -18,4 +18,4 @@ long_description    This module provides a fairly low level interface to the BSD
                     changes on sockets, files, processes and signals.
 
 checksums           rmd160 c3110d99a29057e33d341b0c532c4331ee52ffe2 \
-                    sha256 444f8e859a0f82afecb368762f7d868fc37144f70d1cae2910e8cb22a19c6274
+sha256 444f8e859a0f82afecb368762f7d868fc37144f70d1cae2910e8cb22a19c6274

@@ -23,7 +23,7 @@ homepage            https://getdnsapi.net/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  6224a8d5b06be78c4aa73eb6c39c7127a5814412 \
-                    sha256  245233dc780f615b6ab1472f2b9cdcd957a451a736f3036717d0da466ab1c51e
+sha256  245233dc780f615b6ab1472f2b9cdcd957a451a736f3036717d0da466ab1c51e
 
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:libevent \

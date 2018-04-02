@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  a4d3a028ecea2b65b3a0ddae7c0206fe2ebb9e0b \
-                    sha256  df0bfbaf150fb31abb3b57636b7c1b9832f5c0b2d03e37d2e2e74c080278da59
+sha256  df0bfbaf150fb31abb3b57636b7c1b9832f5c0b2d03e37d2e2e74c080278da59
 
 if {${perl5.major} != ""} {
 # Use latest ExtUtils::MakeMaker requires 7.1101+

@@ -28,7 +28,7 @@ homepage                    http://tclreadline.sourceforge.net/
 master_sites                sourceforge
 
 checksums                   sha1    3b44f92ce1921ebccebab9b44d7cda6992cf8923 \
-                            rmd160  9967f7d7aa18fcd822f5701306f3a75a6001fdc5
+rmd160  9967f7d7aa18fcd822f5701306f3a75a6001fdc5
 
 depends_lib                 port:readline \
                             port:tcl

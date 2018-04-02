@@ -14,7 +14,7 @@ long_description    smlr reduces the size of a text input based on \
     specified parameters. It makes your string smaller, if it's too big.
 
 checksums           sha256  4641de211cd5d7ab7df5508568cf885920dce0046900c73656f5a5d6a81e7982 \
-                    rmd160  95a6d0a71604993b31bbb4c468299e176ad028d2
+rmd160  95a6d0a71604993b31bbb4c468299e176ad028d2
 
 patchfiles          patch-Makefile.diff
 

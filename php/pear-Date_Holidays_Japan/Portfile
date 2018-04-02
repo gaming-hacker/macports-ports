@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_Japan package
 long_description    ${description}
 
 checksums           rmd160  2aa35bd2bff29111c613f6837aa5fb375c62af6f \
-                    sha256  15bca75113c19f2659f09b9c09d8641717c47735ddc875442bd3d30d02f3793a
+sha256  15bca75113c19f2659f09b9c09d8641717c47735ddc875442bd3d30d02f3793a
 
 depends_lib-append  port:pear-Date_Holidays

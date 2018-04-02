@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        kde:stable/${version}/src/
 use_xz              yes
 checksums           rmd160  7988b5884b7e98f1c1ab1aeabd734d0d0b6a1559 \
-                    sha256  03f517c9b389ebd8a0bd153c5c0400682c34089ce102e92e4f4cad46c606bb09
+sha256  03f517c9b389ebd8a0bd153c5c0400682c34089ce102e92e4f4cad46c606bb09
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

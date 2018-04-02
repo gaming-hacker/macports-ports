@@ -13,4 +13,4 @@ description         PEAR Pager package
 long_description    ${description}
 
 checksums           rmd160  31701ba7173ceee40cef049b8a96bb583beb138a \
-                    sha256  4325e159159731cb21a4282d014c3f7a6b89968f5e3403a7a7fcd7598e218209
+sha256  4325e159159731cb21a4282d014c3f7a6b89968f5e3403a7a7fcd7598e218209

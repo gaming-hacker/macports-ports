@@ -20,4 +20,4 @@ long_description    Class::Data::Inheritable is for creating \
                     by your subclasses and can be overriden.
 
 checksums           rmd160  c6b0677b90b72527ea728a7cd58ce4176548ce99 \
-                    sha256  9967feceea15227e442ec818723163eb6d73b8947e31f16ab806f6e2391af14a
+sha256  9967feceea15227e442ec818723163eb6d73b8947e31f16ab806f6e2391af14a

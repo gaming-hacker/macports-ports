@@ -19,7 +19,7 @@ master_sites     http://zsync.moria.org.uk/download/
 use_bzip2        yes
 
 checksums           sha1    5e69f084c8adaad6a677b68f7388ae0f9507617a \
-                    rmd160  3a7ce9f72cde7960cb3c9ede629bae23fca40153 \
-                    sha256  0b9d53433387aa4f04634a6c63a5efa8203070f2298af72a705f9be3dda65af2
+rmd160  3a7ce9f72cde7960cb3c9ede629bae23fca40153 \
+sha256  0b9d53433387aa4f04634a6c63a5efa8203070f2298af72a705f9be3dda65af2
 
 livecheck.url   http://zsync.moria.org.uk/downloads

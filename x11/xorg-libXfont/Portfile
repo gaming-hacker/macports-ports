@@ -14,8 +14,8 @@ master_sites	 xorg:individual/lib/
 
 distname	libXfont-${version}
 checksums           sha1    a9470774f271622c1b425826d1c8836ed96e4a96 \
-                    rmd160  959e3f80160e22111505146ea8f2554a76034095 \
-                    sha256  02945ea68da447102f3e6c2b896c1d2061fd115de99404facc2aca3ad7010d71
+rmd160  959e3f80160e22111505146ea8f2554a76034095 \
+sha256  02945ea68da447102f3e6c2b896c1d2061fd115de99404facc2aca3ad7010d71
 use_bzip2	yes
 
 use_parallel_build  yes

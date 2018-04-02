@@ -24,7 +24,7 @@ homepage            http://www.ggobi.org/
 master_sites        http://www.ggobi.org/downloads/
 
 checksums           rmd160  26c9dff129041c479598bf6461d3b60123c625d1 \
-                    sha256  9f47ccfdbae7ae22c0096e9a171a523505e031f68dfaf705799cb87d42d73dcc
+sha256  9f47ccfdbae7ae22c0096e9a171a523505e031f68dfaf705799cb87d42d73dcc
 
 use_bzip2           yes
 

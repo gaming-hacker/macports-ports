@@ -41,8 +41,8 @@ master_sites \
 distname                ${name}-${version}
 
 checksums \
-    rmd160  236beec5b0ac04f238cd82ca8f06e9e8855fb1bc \
-    sha256  63c373929f610653f10cbb8218ec643804eec6f842d3889d2b46a227da1ed530
+rmd160  236beec5b0ac04f238cd82ca8f06e9e8855fb1bc \
+sha256  63c373929f610653f10cbb8218ec643804eec6f842d3889d2b46a227da1ed530
 
 cmake.out_of_source     yes
 

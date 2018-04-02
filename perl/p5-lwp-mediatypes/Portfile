@@ -16,4 +16,4 @@ description         Media types and mailcap processing
 long_description    ${description}
 
 checksums           rmd160  a99f980361c58b1fbf5f130964a213076a32c1fe \
-                    sha256  18790b0cc5f0a51468495c3847b16738f785a2d460403595001e0b932e5db676
+sha256  18790b0cc5f0a51468495c3847b16738f785a2d460403595001e0b932e5db676

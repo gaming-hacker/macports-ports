@@ -23,7 +23,7 @@ homepage            https://www.gnu.org/software/libunistring/
 master_sites        gnu
 
 checksums           rmd160  9543eaac46d5d4880e6da6f02e93f04decce735d \
-                    sha256  f5e90c08f9e5427ca3a2c0c53f19aa38b25c500913510ad25afef86448bea84a
+sha256  f5e90c08f9e5427ca3a2c0c53f19aa38b25c500913510ad25afef86448bea84a
 
 depends_build       bin:perl:perl5 \
                     port:texinfo

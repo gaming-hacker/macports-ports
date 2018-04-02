@@ -14,7 +14,7 @@ description         PEAR pearweb package
 long_description    ${description}
 
 checksums           rmd160  2213f25fbb35535ba113094cbe320c4ba30b434d \
-                    sha256  b68539af11876b073846d04594ebf54eda1eb025f16980ac2d5df081a5fb60ee
+sha256  b68539af11876b073846d04594ebf54eda1eb025f16980ac2d5df081a5fb60ee
 
 depends_lib-append  port:pear-HTTP_Request2 \
                     port:pear-Date \

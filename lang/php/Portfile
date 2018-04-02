@@ -63,7 +63,7 @@ switch ${subport_branch} {
         version         5.6.35
         use_xz          yes
         checksums       rmd160  ad2b1112d47806ba79e58e14cf267917c83174a6 \
-                        sha256  9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2 \
+sha256  9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2 \
 size    12466396
     }
     7.2 {
@@ -71,7 +71,7 @@ size    12466396
         version         7.2.4
         use_xz          yes
         checksums       rmd160  de455d3e460799a84fa45ad5b6f5358e53e50de1 \
-                        sha256  7916b1bd148ddfd46d7f8f9a517d4b09cd8a8ad9248734e7c8dd91ef17057a88 \
+sha256  7916b1bd148ddfd46d7f8f9a517d4b09cd8a8ad9248734e7c8dd91ef17057a88 \
 size    12031892
     }
     7.3 {
@@ -84,7 +84,7 @@ size    12031892
         master_sites    https://downloads.php.net/~pollita/
         use_xz          yes
         checksums       rmd160  0 \
-                        sha256  0 \
+sha256  0 \
 size    0
         livecheck.url   ${homepage}
         livecheck.regex php-([strsed ${subport_branch} {g/\\./\\./}](?:\\.\[0-9.\]+)*(?:(?:alpha|beta|RC)\\d+|-latest))\\.tar

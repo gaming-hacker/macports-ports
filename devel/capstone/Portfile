@@ -17,7 +17,7 @@ long_description    Capstone is a multi-arch, multi-platform disassembly framewo
 homepage            http://www.capstone-engine.org/
 
 checksums           rmd160  3aeacc48bf80c26a1eb20a168640d730ccdea56c \
-                    sha256  ae79c37767d8f38e7a7f95d4db2bd3e92624559ab628da496f77dcd1dea11f85
+sha256  ae79c37767d8f38e7a7f95d4db2bd3e92624559ab628da496f77dcd1dea11f85
 
 patch.pre_args      -p1
 patchfiles          patch-Makefile.diff

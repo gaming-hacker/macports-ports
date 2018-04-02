@@ -20,7 +20,7 @@ homepage            http://www.xom.nu/
 master_sites        http://www.cafeconleche.org/XOM/
 
 checksums           rmd160  6ad38c341c631651b94dc8750ecc65f26b27acce \
-                    sha256  d8d58d26cba76f6f9e1a65ab537f759f662d1f4441e9a94b6687e23fdb76f879
+sha256  d8d58d26cba76f6f9e1a65ab537f759f662d1f4441e9a94b6687e23fdb76f879
 
 depends_build       bin:ant:apache-ant
 

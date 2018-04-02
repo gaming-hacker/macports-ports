@@ -15,7 +15,7 @@ description         MogileFS (distributed filesystem) server
 long_description    ${description}
 
 checksums           rmd160  ca73a6acb31911e5ec940e80c5082bd315b00973 \
-                    sha256  d755bb3a0390537051382406726df96c6bac983de074aa8212dcde1cb3363a30 \
+sha256  d755bb3a0390537051382406726df96c6bac983de074aa8212dcde1cb3363a30 \
 size    202285
 
 if {${perl5.major} != ""} {

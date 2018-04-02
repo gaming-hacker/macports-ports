@@ -13,4 +13,4 @@ description         PEAR XML_XPath package
 long_description    ${description}
 
 checksums           rmd160  1be1d8d71de709038f12cb83fc7356b523dcf063 \
-                    sha256  85b3e3583cc8ba5a0bb1c4210a8742410433925ab754774f2f4e19a5d42c5bf1
+sha256  85b3e3583cc8ba5a0bb1c4210a8742410433925ab754774f2f4e19a5d42c5bf1

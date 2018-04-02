@@ -13,6 +13,6 @@ description         PEAR LiveUser package
 long_description    ${description}
 
 checksums           rmd160  fa08add042741bf9518f8b346d781a445eedbdb1 \
-                    sha256  9686f338130fe0f61d0b98ef0c48c9804bd3d507171425eb92902e509276eff5
+sha256  9686f338130fe0f61d0b98ef0c48c9804bd3d507171425eb92902e509276eff5
 
 depends_lib-append  port:pear-Event_Dispatcher

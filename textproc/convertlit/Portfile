@@ -24,7 +24,7 @@ distname                ${name}${my_version}src
 use_zip                 yes
 
 checksums               sha1    0fa9aead468bd8640c49374d46d78d2a3e79489f \
-                        rmd160  6104a7d951ed60ea73705e401be8b55633ea2d47
+rmd160  6104a7d951ed60ea73705e401be8b55633ea2d47
 
 depends_lib             port:libtommath
 

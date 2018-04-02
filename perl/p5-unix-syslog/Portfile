@@ -14,6 +14,6 @@ description         Access to the Unix system logger via Perl's XSUBs
 long_description    ${description}
 
 checksums           rmd160  d5b54dcf7e283a86095b2d65c15495a1f6f5eb35 \
-                    sha256  08d268384365dec42a8e9e2dd2c39b87f8afe2d5bacc48e2e93ad8379169e4bd
+sha256  08d268384365dec42a8e9e2dd2c39b87f8afe2d5bacc48e2e93ad8379169e4bd
 
 platforms           darwin

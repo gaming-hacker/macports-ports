@@ -12,4 +12,4 @@ description         PEAR DB_NestedSet package
 long_description    ${description}
 
 checksums           rmd160  6df04d30f7e46cc5ce34fe27e4b3aa7cee1a317c \
-                    sha256  b11318cf7d58f1725d0fbe7e5795293c89307e90e66133e2b56b589abf73c5a5
+sha256  b11318cf7d58f1725d0fbe7e5795293c89307e90e66133e2b56b589abf73c5a5

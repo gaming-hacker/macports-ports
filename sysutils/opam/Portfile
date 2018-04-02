@@ -17,7 +17,7 @@ long_description    OPAM is a package manager for OCaml that can install \
 
 distname            opam-full-${version}
 checksums           rmd160  b11c80a506c261d62010bdd9fdaf0b74a1b85299 \
-                    sha256  473c3c6c5d01e3c53269db7aee1f4d04e61308a660bbabc6450a854e0f2fbe42
+sha256  473c3c6c5d01e3c53269db7aee1f4d04e61308a660bbabc6450a854e0f2fbe42
 
 depends_build       port:ocaml
 

@@ -18,7 +18,7 @@ description         Plack::Middleware::ReverseProxy (no description available)
 long_description    ${description}
 
 checksums           rmd160 4d03a2e851760e2284166b20b02362d4f1ab482a \
-                    sha256 2e695c3905814b3b3f07bfa47bd05cd157afaab6211f207f872573e31b63bafe
+sha256 2e695c3905814b3b3f07bfa47bd05cd157afaab6211f207f872573e31b63bafe
 
 if {${perl5.major} != ""} {
     depends_lib-append \

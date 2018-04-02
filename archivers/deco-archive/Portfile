@@ -16,7 +16,7 @@ homepage            http://hartlich.com/deco/archive/
 master_sites        ${homepage}download/
 
 checksums           rmd160  09482ab28c92e09161160f5240d0c967435074cd \
-                    sha256  128253a1b232ac10993d7a20b6cb31dfc1f4ad9d9015b0483a33fb6ea558844d
+sha256  128253a1b232ac10993d7a20b6cb31dfc1f4ad9d9015b0483a33fb6ea558844d
 
 pre-fetch {
     if {[info command macports_version] ne "macports_version" || [vercmp [macports_version] "2.3.3"] <= 0} {

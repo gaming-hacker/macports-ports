@@ -20,4 +20,4 @@ homepage            http://tidyp.com/
 github.tarball_from downloads
 
 checksums           rmd160  9dd2ad63ec373e862960e91a6e418635d4fb5310 \
-                    sha256  20b0fad32c63575bd4685ed09b8c5ca222bbc7b15284210d4b576d0223f0b338
+sha256  20b0fad32c63575bd4685ed09b8c5ca222bbc7b15284210d4b576d0223f0b338

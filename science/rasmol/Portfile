@@ -15,8 +15,8 @@ distname            RasMol_${version}
 master_sites        ${homepage}software/ \
                     http://www.bernstein-plus-sons.com/software/
 checksums           md5 80e4514c2522101a65fa109b85f748d5 \
-                    sha1 2e8d15f430971379ad5d1930f3ecd4c0f7ede3f5 \
-                    rmd160 c8480e36ca758601cc2341049ff2ca72ee64c629
+sha1 2e8d15f430971379ad5d1930f3ecd4c0f7ede3f5 \
+rmd160 c8480e36ca758601cc2341049ff2ca72ee64c629
 
 depends_lib         port:xorg-libXi
 

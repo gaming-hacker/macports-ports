@@ -12,7 +12,7 @@ description         PEAR Structures_DataGrid_DataSource_RSS package
 long_description    ${description}
 
 checksums           rmd160  73c10ef9aadd2d4b2e03ea529f38b5afc46d0689 \
-                    sha256  3c7a8ab3b01cabab1c3ff664ffa4b09a90cf52fa5e9459db31189642ca99d1c2
+sha256  3c7a8ab3b01cabab1c3ff664ffa4b09a90cf52fa5e9459db31189642ca99d1c2
 
 depends_lib-append  port:pear-Structures_DataGrid \
                     port:pear-Structures_DataGrid_DataSource_Array \

@@ -22,7 +22,7 @@ platforms           darwin
 master_sites        http://forge.ocamlcore.org/frs/download.php/1289/
 
 checksums           rmd160  b0edb9ef3ed4624ca9b9b9bfc4b10b0b796b8688 \
-                    sha256  cc7c2d74d56f5cddf191a835fcd0827a5c0913598f8547f1bd3961089fde6447
+sha256  cc7c2d74d56f5cddf191a835fcd0827a5c0913598f8547f1bd3961089fde6447
 
 depends_lib         port:ocaml-batteries \
                     port:ocaml-ounit \

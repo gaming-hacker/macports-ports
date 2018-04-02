@@ -12,6 +12,6 @@ description         PEAR Services_ReCaptcha package
 long_description    ${description}
 
 checksums           rmd160  136a98302ed0a9e05ff53fd9d13731cdcaa53171 \
-                    sha256  ec559345e21e670513c0e68869184fd260833b9013354cc356b8ec58e93216e1
+sha256  ec559345e21e670513c0e68869184fd260833b9013354cc356b8ec58e93216e1
 
 depends_lib-append  port:pear-HTTP_Request2

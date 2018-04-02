@@ -16,7 +16,7 @@ long_description    tag is a tool to manipulate tags on files starting with Mac 
 	                all files that have been tagged with a given set of tags.
 
 checksums           rmd160  5ffedefc6d2db22384740fa6b445a9f478b6c837 \
-                    sha256  439d1e063b7955bc3206b619bb04f465267ccc6b7da7a2e4c4ab61a05614068b
+sha256  439d1e063b7955bc3206b619bb04f465267ccc6b7da7a2e4c4ab61a05614068b
 
 use_configure       no
 

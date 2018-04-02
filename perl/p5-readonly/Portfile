@@ -16,7 +16,7 @@ long_description    This is a facility for creating non-modifiable variables. \
                     This is useful for configuration files, headers, etc.
 
 checksums           rmd160  c4e188f045a13d9b8df42d28f411d0db64c800e0 \
-                    sha256  4b23542491af010d44a5c7c861244738acc74ababae6b8838d354dfb19462b5e
+sha256  4b23542491af010d44a5c7c861244738acc74ababae6b8838d354dfb19462b5e
 
 if {${perl5.major} != ""} {
     depends_build-append \

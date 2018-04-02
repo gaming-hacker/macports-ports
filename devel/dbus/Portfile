@@ -19,7 +19,7 @@ homepage        https://www.freedesktop.org/wiki/Software/dbus/
 master_sites    https://dbus.freedesktop.org/releases/dbus/
 
 checksums       rmd160  c032fedc852a1a6fccb11cea1f41c49df7466d8b \
-                sha256  272bb5091770b047c8188b926d5e6038fa4fe6745488b2add96b23e2d9a83d88
+sha256  272bb5091770b047c8188b926d5e6038fa4fe6745488b2add96b23e2d9a83d88
 
 # See r68276
 # For configure

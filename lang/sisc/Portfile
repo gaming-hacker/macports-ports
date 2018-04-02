@@ -11,7 +11,7 @@ homepage	http://sisc.sourceforge.net/
 master_sites	sourceforge
 distfiles	${name}-${version}.jar
 checksums	md5 dda7b8bc5d998f1c37ef221c15ed0836 \
-		sha1 3301ede761cbb8841f457c50ea5ffccf02014777
+sha1 3301ede761cbb8841f457c50ea5ffccf02014777
 worksrcdir	${name}
 use_zip		yes
 use_configure	no

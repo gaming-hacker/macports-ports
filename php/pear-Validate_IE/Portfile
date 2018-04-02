@@ -12,6 +12,6 @@ description         PEAR Validate_IE package
 long_description    ${description}
 
 checksums           rmd160  cea46371dd7ef6445830aa533e1ad88628fa0a9d \
-                    sha256  8f3f2b26d816a68517f5808468151e17fd32766347f4d504f530dccd1397c98a
+sha256  8f3f2b26d816a68517f5808468151e17fd32766347f4d504f530dccd1397c98a
 
 depends_lib-append  port:pear-Validate_Finance

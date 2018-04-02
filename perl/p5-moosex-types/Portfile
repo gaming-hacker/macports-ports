@@ -20,7 +20,7 @@ long_description    The types provided with Moose are by design global. \
 platforms           darwin
 
 checksums           rmd160  52385404ad88f73be25922de03d15136ecd59b64 \
-                    sha256  9cd87b3492cbf0be9d2df9317b2adf9fc30663770e69906654bea3f41b17cb08
+sha256  9cd87b3492cbf0be9d2df9317b2adf9fc30663770e69906654bea3f41b17cb08
 
 if {${perl5.major} != ""} {
     depends_build-append \

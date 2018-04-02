@@ -19,7 +19,7 @@ long_description    This class facilitates building frameworks of several classe
 platforms           darwin
 
 checksums           rmd160  c474ae6d86e4a9727abbc4968d4d708851f3ae4c \
-                    sha256  f5d495b1dfb826d5c0c45d03b4d0e6b6047cbb06cdbf6be15fd4dc902aeeb70b
+sha256  f5d495b1dfb826d5c0c45d03b4d0e6b6047cbb06cdbf6be15fd4dc902aeeb70b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

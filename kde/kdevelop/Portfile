@@ -26,7 +26,7 @@ homepage            http://www.kdevelop.org/
 master_sites        kde:stable/kdevelop/${version}/
 
 checksums           rmd160  047f2d2203f25a66a69e7f5b38a2a70cb2005966 \
-                    sha256  cdef56196364eb97a4d9f15b6d47e12d893ef0bfa7100855f532ba7a9ff69130
+sha256  cdef56196364eb97a4d9f15b6d47e12d893ef0bfa7100855f532ba7a9ff69130
 
 use_xz              yes
 

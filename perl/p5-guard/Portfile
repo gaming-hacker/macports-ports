@@ -16,4 +16,4 @@ long_description    This module implements so-called \"guards\". A guard is some
 platforms           darwin
 
 checksums           rmd160  5e7f3369547370463d6545a83ca31c09452a0402 \
-                    sha256  34c4ddf91fc93d1090d86da14df706d175b1610c67372c01e12ce9555d4dd1dc
+sha256  34c4ddf91fc93d1090d86da14df706d175b1610c67372c01e12ce9555d4dd1dc

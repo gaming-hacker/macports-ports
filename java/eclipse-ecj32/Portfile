@@ -23,8 +23,8 @@ master_sites            http://download.eclipse.org/eclipse/downloads/drops/R-${
                         http://archive.eclipse.org/eclipse/downloads/drops/R-${version}
 
 checksums               md5 f9d7b548658c84231b00fada8d4b4f1b \
-                        sha1 50f6b20a1542176e46d48fa522b9f24b2399878b \
-                        rmd160 f49f0b5a24a509e46ecd44da82d79f98f4391c34
+sha1 50f6b20a1542176e46d48fa522b9f24b2399878b \
+rmd160 f49f0b5a24a509e46ecd44da82d79f98f4391c34
 
 depends_build           port:apache-ant
 depends_lib             bin:java:kaffe

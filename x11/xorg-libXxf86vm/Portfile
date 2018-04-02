@@ -14,8 +14,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXxf86vm-${version}
 checksums           sha1    78ef18ca2be157131899e01c62679e247409a13f \
-                    rmd160  d16754b856d26ded7ccfa12af1e88c489834ad9f \
-                    sha256  afee27f93c5f31c0ad582852c0fb36d50e4de7cd585fcf655e278a633d85cd57
+rmd160  d16754b856d26ded7ccfa12af1e88c489834ad9f \
+sha256  afee27f93c5f31c0ad582852c0fb36d50e4de7cd585fcf655e278a633d85cd57
 
 use_bzip2   yes
 use_parallel_build      yes

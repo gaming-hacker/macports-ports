@@ -69,7 +69,7 @@ subport ${realname}-avh {
 
     distfiles           ${distname}${extract.suffix}
     checksums           rmd160  53fcf8b2f0a1a96783b015eba95d9f60ae9ddeb5 \
-                        sha256  25b8b5f5a5429ff1392510ba1a988e6e0091c5e817b49fcfbef60c057f09738d
+sha256  25b8b5f5a5429ff1392510ba1a988e6e0091c5e817b49fcfbef60c057f09738d
 
     destroot.destdir    prefix=${destroot}${prefix}
 }

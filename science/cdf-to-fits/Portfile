@@ -23,8 +23,8 @@ extract.post_args
 universal_variant       no
 
 checksums               md5 d805504740ec92c40a85b712fe57b168 \
-                        sha1 c2a6802b4819f4f39a6f24ecd940c9841e19fa16 \
-                        rmd160 091fa81c6bc92a875134e041aa2da6152dfb754b
+sha1 c2a6802b4819f4f39a6f24ecd940c9841e19fa16 \
+rmd160 091fa81c6bc92a875134e041aa2da6152dfb754b
 
 depends_lib             port:cfitsio \
                         port:cdf

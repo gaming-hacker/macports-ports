@@ -12,4 +12,4 @@ description         PEAR PEAR_Command_Packaging package
 long_description    ${description}
 
 checksums           rmd160  c126c57a797ecfc4bcede255fd6ca34590a8e530 \
-                    sha256  8115af8f2b7d120456e97dac3bd284a5b512d48d1ab8494a4942e566d6cfb0e2
+sha256  8115af8f2b7d120456e97dac3bd284a5b512d48d1ab8494a4942e566d6cfb0e2

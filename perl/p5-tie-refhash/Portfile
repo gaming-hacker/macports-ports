@@ -20,6 +20,6 @@ long_description    This module provides the ability to use references as \
 platforms           darwin
 
 checksums           rmd160  ee3c957e9ff72e6d1cbfb03e182e2f9bcdaa7d80 \
-                    sha256  b0b80ef571e7dadb726b8214f7352a932a8fa82af29072895aa1aadc89f48bec
+sha256  b0b80ef571e7dadb726b8214f7352a932a8fa82af29072895aa1aadc89f48bec
 
 supported_archs     noarch

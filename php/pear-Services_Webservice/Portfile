@@ -12,4 +12,4 @@ description         PEAR Services_Webservice package
 long_description    ${description}
 
 checksums           rmd160  21bf6ab1cd39ebbf1f2cd6a788ff8cdbbe66b956 \
-                    sha256  8fc3a298c19d718f6e6ee19bb6f2f3f4b9c968e683d0dc33c6ba33ed7b1161e7
+sha256  8fc3a298c19d718f6e6ee19bb6f2f3f4b9c968e683d0dc33c6ba33ed7b1161e7

@@ -12,6 +12,6 @@ description         PEAR Services_W3C_HTMLValidator package
 long_description    ${description}
 
 checksums           rmd160  e3b386c50537a3096bfcf395e2fbefd2f7948a15 \
-                    sha256  68403ae6160eccce03a4c18e6ff157e37f759c37731141cede72ce02a8ce0814
+sha256  68403ae6160eccce03a4c18e6ff157e37f759c37731141cede72ce02a8ce0814
 
 depends_lib-append  port:pear-HTTP_Request2

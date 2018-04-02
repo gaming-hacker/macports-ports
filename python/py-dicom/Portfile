@@ -22,8 +22,8 @@ long_description    pydicom is a pure python package for working with DICOM \
                     requirements.
 
 checksums \
-    rmd160  dfcbce2681e92b0da9c29973d6e08a6c3a2effc0 \
-    sha256  2d7f1460c61a8cd85c59096dfe7aa1a292a4d33298e446e6015d32c9ba9ad845
+rmd160  dfcbce2681e92b0da9c29973d6e08a6c3a2effc0 \
+sha256  2d7f1460c61a8cd85c59096dfe7aa1a292a4d33298e446e6015d32c9ba9ad845
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-numpy

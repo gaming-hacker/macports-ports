@@ -18,8 +18,8 @@ homepage           http://id3lib.sourceforge.net/
 master_sites       freebsd sourceforge
 
 checksums          md5     19f27ddd2dda4b2d26a559a4f0f402a7 \
-                   sha1    c92c880da41d1ec0b242745a901702ae87970838 \
-                   rmd160  bfa2499ec649ed40815ad0a370c78eb1517952c4
+sha1    c92c880da41d1ec0b242745a901702ae87970838 \
+rmd160  bfa2499ec649ed40815ad0a370c78eb1517952c4
 
 depends_lib        port:libiconv \
                    port:zlib

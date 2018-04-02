@@ -12,6 +12,6 @@ description         PEAR Structures_DataGrid_DataSource_PDO package
 long_description    ${description}
 
 checksums           rmd160  f5d468988e864062f0f58041dd06333de8ac037a \
-                    sha256  5d5cc75e0a16dc2022045cc225e1f3ec546d2edf8d82c4347040f07a99c3d391
+sha256  5d5cc75e0a16dc2022045cc225e1f3ec546d2edf8d82c4347040f07a99c3d391
 
 depends_lib-append  port:pear-Structures_DataGrid

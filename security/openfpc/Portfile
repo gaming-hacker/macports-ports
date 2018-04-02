@@ -24,8 +24,8 @@ master_sites        googlecode
 extract.suffix      .tgz
 
 checksums           md5     4ff90b078354c814740680792645b54d \
-                    sha1    717b350f4b9b89cc18aa67131f5a3ca8f4fcbbfb \
-                    rmd160  c69ef174061329b2a1710fc8c49170b45471f5f0
+sha1    717b350f4b9b89cc18aa67131f5a3ca8f4fcbbfb \
+rmd160  c69ef174061329b2a1710fc8c49170b45471f5f0
                     
 depends_lib         path:bin/perl:perl5
 #depends_run         port:tcpdump

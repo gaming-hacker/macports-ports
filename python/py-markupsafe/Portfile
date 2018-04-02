@@ -22,7 +22,7 @@ master_sites        pypi:M/MarkupSafe
 distname            MarkupSafe-${version}
 
 checksums           rmd160  8d1dd780a46a18b6f6bad78bf92eeca2d06a1f54 \
-                    sha256  a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
+sha256  a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

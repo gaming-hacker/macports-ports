@@ -25,7 +25,7 @@ master_sites        ${homepage}
 use_xz              yes
 
 checksums           rmd160  233eb8ebfd5bb15eba152553424ef0622602430b \
-                    sha256  1d3d3f372d0888018b950ee19704c298b5d02e2c287ca2d5f1a785a078b6038f
+sha256  1d3d3f372d0888018b950ee19704c298b5d02e2c287ca2d5f1a785a078b6038f
 
 perl5.require_variant   yes
 perl5.conflict_variants yes

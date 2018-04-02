@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  2fb22dcb29adf070c7e3f17dffab1a10e7231942 \
-                    sha256  8b186079202064fb3dcc25cf7290aa3f5d551d98d1b86d5844706a760c1f56d4 \
+sha256  8b186079202064fb3dcc25cf7290aa3f5d551d98d1b86d5844706a760c1f56d4 \
 size    3754
 
 supported_archs     noarch

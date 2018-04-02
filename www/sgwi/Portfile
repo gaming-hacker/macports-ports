@@ -24,7 +24,7 @@ depends_run         port:php5-web \
                     port:sqlgrey
 
 checksums           sha1    998d1644c29553c88ddb76dabf84baa79a753527 \
-                    rmd160  18ee684ebbc3558696da66ea10187212a97193ca
+rmd160  18ee684ebbc3558696da66ea10187212a97193ca
 
 use_configure       no
 

@@ -20,7 +20,7 @@ long_description \
     interface with USB and Bluetooth HID-Class devices.
 
 checksums           rmd160  aa84a33aa09fb4b82f59e2e40d58c80ac37a5bfc \
-                    sha256  32ea444bdd6c6a8a940bfa3287a2dc8c291a141fdc78cd638b37b546b44d95be
+sha256  32ea444bdd6c6a8a940bfa3287a2dc8c291a141fdc78cd638b37b546b44d95be
 
 use_autoreconf yes
 

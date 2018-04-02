@@ -25,7 +25,7 @@ patchfiles          patch-powerpc.diff \
                     patch-makefile-qmake-workaround.diff 
 
 checksums           rmd160  9c8a5d878a594e4f87d3c1a392674148076061ee \
-                    sha256  8446f3cd692238421a342f12baa365528445637bffb96899f319fe762fda7c21
+sha256  8446f3cd692238421a342f12baa365528445637bffb96899f319fe762fda7c21
 
 depends_lib-append \
     port:djvulibre

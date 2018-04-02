@@ -12,4 +12,4 @@ description         PEAR Validate_US package
 long_description    ${description}
 
 checksums           rmd160  aa4f2b3489042e185dcabe44f44292df2c8d06fb \
-                    sha256  cc17982523c2107dfb7a68ca775f2a8a55b0ae58cf4a1076dea349b128d593e0
+sha256  cc17982523c2107dfb7a68ca775f2a8a55b0ae58cf4a1076dea349b128d593e0

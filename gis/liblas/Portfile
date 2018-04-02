@@ -24,7 +24,7 @@ homepage            http://www.liblas.org/index.html
 master_sites        http://download.osgeo.org/liblas
 
 checksums           rmd160  b397a8a1a108ea694f6fccbe8463636cff9a04d9 \
-                    sha256  9adb4a98c63b461ed2bc82e214ae522cbd809cff578f28511122efe6c7ea4e76
+sha256  9adb4a98c63b461ed2bc82e214ae522cbd809cff578f28511122efe6c7ea4e76
 
 distname            libLAS-${version}
 

@@ -23,6 +23,6 @@ long_description    It is simple to use, memory efficient and fast. \
                     the input record separator string on a per file basis.
 
 checksums           rmd160  7583d56b7d475585c1bc02ff3be976e5f6ccb4db \
-                    sha256  82b261af87507cc3e7e66899c457104ebc8d1c09fb85c53f67c1f90f70f18d6e
+sha256  82b261af87507cc3e7e66899c457104ebc8d1c09fb85c53f67c1f90f70f18d6e
 
 supported_archs     noarch

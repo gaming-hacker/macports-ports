@@ -27,7 +27,7 @@ distname            jruby-src-${version}
 worksrcdir          jruby-${version}
                     
 checksums           rmd160  884b17ef595159c2e4c84cb355b0ec61f215ee6a \
-                    sha256  b6d35ff087843f4c835b49897c7e1cc8f76fb8f0e45b38b408fe9d1eb337edf7
+sha256  b6d35ff087843f4c835b49897c7e1cc8f76fb8f0e45b38b408fe9d1eb337edf7
                     
 depends_build       port:apache-ant
 depends_lib         bin:java:kaffe

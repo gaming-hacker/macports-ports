@@ -19,7 +19,7 @@ master_sites        http://www.cl.ecei.tohoku.ac.jp/stmap/dist/
 
 depends_lib         port:boost port:cabocha
 checksums           rmd160  9c0cd435c7b0a3704472a53129d5ccc56bf57836 \
-                    sha256  8bff5d1c31b7fabb4e7cd36ac358487faaf7ac04320fb76674997844b2912b91
+sha256  8bff5d1c31b7fabb4e7cd36ac358487faaf7ac04320fb76674997844b2912b91
 
 patchfiles          patch-configure.diff \
                     patch-src_Makefile.in.diff

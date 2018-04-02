@@ -15,5 +15,5 @@ platforms           darwin
 depends_lib-append  port:rb-polyglot
 
 checksums           md5 3bbf34b6eefd0549409cdb11ac000cbe \
-                    rmd160 4d069acb745d67cf47c444c986fe8a50d87000bb \
-                    sha1 389f1312ab8a117ddd8181ca921217002e0c4273
+rmd160 4d069acb745d67cf47c444c986fe8a50d87000bb \
+sha1 389f1312ab8a117ddd8181ca921217002e0c4273

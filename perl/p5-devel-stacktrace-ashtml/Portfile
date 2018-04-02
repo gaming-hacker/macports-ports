@@ -16,7 +16,7 @@ description         Displays stack trace in HTML
 long_description    ${description}
 
 checksums           rmd160  14a33069c9d2827178eb5d87ba9c9fede8468504 \
-                    sha256  6283dbe2197e2f20009cc4b449997742169cdd951bfc44cbc6e62c2a962d3147
+sha256  6283dbe2197e2f20009cc4b449997742169cdd951bfc44cbc6e62c2a962d3147
 
 if {${perl5.major} != ""} {
     depends_lib-append \

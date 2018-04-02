@@ -26,7 +26,7 @@ master_sites        pypi:p/pbr
 distname            pbr-${version}
 
 checksums           rmd160  775a794b5f5d9a8011875a677409f8c442b519dc \
-                    sha256  568f988af109114fbfa0525dcb6836b069838360d11732736ecc82e4c15d5c12
+sha256  568f988af109114fbfa0525dcb6836b069838360d11732736ecc82e4c15d5c12
 
 python.versions 27 36
 

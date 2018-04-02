@@ -15,7 +15,7 @@ long_description    ${description}
 homepage        http://michael.toren.net/code/tcptraceroute/
 master_sites    ${homepage}
 checksums       md5 65d1001509f971ea986fcbc2dd009643 \
-                sha1 78847ef4ba7031cee660c540593256fd384a1a62
+sha1 78847ef4ba7031cee660c540593256fd384a1a62
 
 depends_lib     port:libnet11 port:libpcap
 

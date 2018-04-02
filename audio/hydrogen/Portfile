@@ -19,8 +19,8 @@ long_description    ${description} \
                     intuitive pattern-based drum programming.
 
 checksums           md5     69b0e35a5bba8151347c5e6ec9e8e4f3 \
-                    sha1    e988710f82af858c0c688cb1d1e19d789fca49ef \
-                    rmd160  9f1514462eaa756fe0a3e8fed3ff647a32ad033d
+sha1    e988710f82af858c0c688cb1d1e19d789fca49ef \
+rmd160  9f1514462eaa756fe0a3e8fed3ff647a32ad033d
 
 depends_build-append port:scons
 

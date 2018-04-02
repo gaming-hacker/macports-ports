@@ -15,4 +15,4 @@ long_description    This contains XS performance enhancers for \
 platforms           darwin
 
 checksums           rmd160  8034cbcc2439ef5d53c7e86db17a93c0bc77b6c7 \
-                    sha256  a81489bb1d84a18ca0199b7f3d332c1586cadb03365cb8f2dd7d77d8ab88bcc6
+sha256  a81489bb1d84a18ca0199b7f3d332c1586cadb03365cb8f2dd7d77d8ab88bcc6

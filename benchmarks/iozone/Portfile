@@ -21,7 +21,7 @@ homepage         http://www.iozone.org/
 master_sites     ${homepage}src/current/
 distname         ${name}[string map {. _} ${version}]
 checksums        rmd160 ee2eb61524b11c487f2c79aa8a240763280c222d \
-                 sha256 e195883aa8dacfedda181aed91d4faa817c86e01858cfa1159ec3be0db4bdb26
+sha256 e195883aa8dacfedda181aed91d4faa817c86e01858cfa1159ec3be0db4bdb26
 
 extract.suffix   .tar
 extract.cmd      cat

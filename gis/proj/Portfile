@@ -19,11 +19,11 @@ homepage            http://trac.osgeo.org/proj/
 master_sites        http://download.osgeo.org/proj/
 distfiles-append    ${name}-datumgrid-${datumgrid_version}.zip
 checksums           ${name}-${version}.tar.gz \
-                        rmd160  6d0f26a8f5a10ecafb28f902f56b81faf55ab568 \
-                        sha256  b30df08d736e69744cb255828721abb545b494d6032c13a96520f3219a444cd2 \
+rmd160  6d0f26a8f5a10ecafb28f902f56b81faf55ab568 \
+sha256  b30df08d736e69744cb255828721abb545b494d6032c13a96520f3219a444cd2 \
                     proj-datumgrid-${datumgrid_version}.zip \
-                        rmd160  6d5369c4b76e9b99f7840aeac6d59e4da8e16c84 \
-                        sha256  ffcad4453fac3b4a13ca678ef343e688496e18019f35709ef03c5f200e9fb85a
+rmd160  6d5369c4b76e9b99f7840aeac6d59e4da8e16c84 \
+sha256  ffcad4453fac3b4a13ca678ef343e688496e18019f35709ef03c5f200e9fb85a
 
 extract.only        ${name}-${version}.tar.gz
 

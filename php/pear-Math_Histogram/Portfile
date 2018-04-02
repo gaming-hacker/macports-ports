@@ -12,6 +12,6 @@ description         PEAR Math_Histogram package
 long_description    ${description}
 
 checksums           rmd160  127b0db93f626a22ec568ce7ed970cc9e2e30489 \
-                    sha256  7609bd2ba87731c2076a45b961860ff5c80d1bb27eaf8d0cbf038629d75507b3
+sha256  7609bd2ba87731c2076a45b961860ff5c80d1bb27eaf8d0cbf038629d75507b3
 
 depends_lib-append  port:pear-Math_Stats

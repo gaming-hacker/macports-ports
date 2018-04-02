@@ -21,7 +21,7 @@ long_description \
         It could also prove useful in many other similar tasks.
 
 checksums           rmd160  7903716b827cc5fef7fe3d67a94d2f41bd5f1201 \
-                    sha256  e7a77e8315f00f344600f8567c344723426dbf9c306826ffdffd92298e58d555
+sha256  e7a77e8315f00f344600f8567c344723426dbf9c306826ffdffd92298e58d555
 
 use_configure       no
 

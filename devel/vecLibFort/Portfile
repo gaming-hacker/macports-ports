@@ -16,7 +16,7 @@ long_description \
     FORTRAN code compiled with modern compilers such as GNU Fortran.
 
 checksums           rmd160  e6271804608ef6fa0dfb67397d1dec2fc86b0671 \
-                    sha256  47ffed7fc41e5ea2263c3343c3fb5199fb1fefae2351f945897124d5c9eaef51
+sha256  47ffed7fc41e5ea2263c3343c3fb5199fb1fefae2351f945897124d5c9eaef51
 
 patchfiles          patch-Makefile.diff
 

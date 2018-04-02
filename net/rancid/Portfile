@@ -20,7 +20,7 @@ homepage            http://www.shrubbery.net/rancid
 master_sites        ftp://ftp.shrubbery.net/pub/rancid/
 
 checksums           rmd160  dda06111afbd28fc2ee06780fb1ac451f0d62732 \
-                    sha256  9c6befff78d49d8d0757a2b57b6cfdfef55cadcbc1fa6fbe1ab9424335d51f7b \
+sha256  9c6befff78d49d8d0757a2b57b6cfdfef55cadcbc1fa6fbe1ab9424335d51f7b \
 size    503424
 
 perl5.branches      5.26

@@ -49,7 +49,7 @@ if {${name} == ${subport}} {
     use_bzip2           yes
 
     checksums           rmd160  a49d044f6935199a71f6bdf94fd9082f9888d2d6 \
-                        sha256  ff0f8916d039120554d9d73c7cae1863d6161933374374ec2f5313892046d45a
+sha256  ff0f8916d039120554d9d73c7cae1863d6161933374374ec2f5313892046d45a
 
     depends_lib-append          port:curl \
                                 port:libidl \
@@ -214,7 +214,7 @@ subport virtualbox-guest-additions {
     distfiles               VBoxGuestAdditions_${version}.iso
 
     checksums               rmd160  335365fbe7406aa0a0d3c0b886f0330b611b6ece \
-                            sha256  cf2b0722da984a5f41a7814ee288262cbdf4c785630b2a7726c3daa6c5caa0c5
+sha256  cf2b0722da984a5f41a7814ee288262cbdf4c785630b2a7726c3daa6c5caa0c5
 
     depends_run             port:virtualbox
 
@@ -271,7 +271,7 @@ subport virtualbox-extension-pack {
     distname            ${name_extpack}-${version}
 
     checksums           rmd160  b41596eba7d8b402e0030eaa651898cacc8b1d3b \
-                        sha256  8f88b1ebe69b770103e9151bebf6681c5e049eb5fac45ae8d52c43440aa0fa0d
+sha256  8f88b1ebe69b770103e9151bebf6681c5e049eb5fac45ae8d52c43440aa0fa0d
 
     worksrcdir          ${name_extpack}
     extract.suffix      .vbox-extpack

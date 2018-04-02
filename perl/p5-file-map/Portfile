@@ -15,7 +15,7 @@ description         Perl module for memory mapping made simple and safe
 long_description    ${description}
 
 checksums           rmd160  430f908469638d7bb038cfb3ef0135fdb847dae2 \
-                    sha256  1f7429f1e1356ec1f10c97c2999d0d7247a55bf299b0f4bdfe97948d4727aae4
+sha256  1f7429f1e1356ec1f10c97c2999d0d7247a55bf299b0f4bdfe97948d4727aae4
 
 if {${perl5.major} != ""} {
     depends_build-append \

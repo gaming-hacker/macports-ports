@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	scrnsaverproto-${version}
 checksums           sha1    640a2cbef5893aacda74799e6fa4d973e629b753 \
-                    rmd160  7822f18bef696129485d86c83824e35f6ffbc0fa \
-                    sha256  8bb70a8da164930cceaeb4c74180291660533ad3cc45377b30a795d1b85bcd65
+rmd160  7822f18bef696129485d86c83824e35f6ffbc0fa \
+sha256  8bb70a8da164930cceaeb4c74180291660533ad3cc45377b30a795d1b85bcd65
 use_bzip2	yes
 
 configure.args \

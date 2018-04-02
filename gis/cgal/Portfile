@@ -29,7 +29,7 @@ use_xz              yes
 homepage            http://www.cgal.org/
 
 checksums           rmd160  e02ac3845bb60b4048ef5e2ff2e1862ccd14ef63 \
-                    sha256  27a7762e5430f5392a1fe12a3a4abdfe667605c40224de1c6599f49d66cfbdd2
+sha256  27a7762e5430f5392a1fe12a3a4abdfe667605c40224de1c6599f49d66cfbdd2
 
 worksrcdir          CGAL-${version}
 depends_lib-append  port:boost \

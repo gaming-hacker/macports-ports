@@ -16,6 +16,6 @@ long_description    The exportable subroutines of Lingua::EN::Inflect \
 platforms           darwin
 
 checksums           rmd160  88bb10dd11b8c90b84677b2a133471f1c9b74eb9 \
-                    sha256  fcef4b67b04cc39e427b2d70e7c5b24195edd0ed88dd705a08ecd5cd830b0d49
+sha256  fcef4b67b04cc39e427b2d70e7c5b24195edd0ed88dd705a08ecd5cd830b0d49
 
 supported_archs     noarch

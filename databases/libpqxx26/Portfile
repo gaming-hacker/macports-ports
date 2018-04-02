@@ -34,8 +34,8 @@ distname        libpqxx-${version}
 
 checksums \
 md5 0b0c64af41dfdeea8556dc359994e1cb \
-    sha1 8be9dcd0375337b170d5c94370fa896911d361f1 \
-    rmd160 c456b5a3ed3c96963aad334d3504ed0443a8f63e
+sha1 8be9dcd0375337b170d5c94370fa896911d361f1 \
+rmd160 c456b5a3ed3c96963aad334d3504ed0443a8f63e
 
 set server      postgresql83
 

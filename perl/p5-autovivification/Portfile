@@ -26,4 +26,4 @@ long_description    When an undefined variable is dereferenced, it gets silently
                     optionally throws a warning or an error when it would have happened.
 
 checksums           rmd160  c5092ec8f3a85ac713e6a7aa6353d9e59af57893 \
-                    sha256  2d99975685242980d0a9904f639144c059d6ece15899efde4acb742d3253f105
+sha256  2d99975685242980d0a9904f639144c059d6ece15899efde4acb742d3253f105

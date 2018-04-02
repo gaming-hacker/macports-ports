@@ -18,7 +18,7 @@ long_description    A trait is a type definition that can be used for normal\
 platforms           darwin
 
 checksums           rmd160  7bfc711e951867ed112d798f4d204f5ace39c335 \
-                    sha256  e87de459f1ec7c57813b84b6e395a98afed5660a0920b2829b2af7699a35c5e0
+sha256  e87de459f1ec7c57813b84b6e395a98afed5660a0920b2829b2af7699a35c5e0
 
 python.versions 27 36
 

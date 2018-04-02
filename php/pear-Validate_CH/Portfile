@@ -12,6 +12,6 @@ description         PEAR Validate_CH package
 long_description    ${description}
 
 checksums           rmd160  b150a5b920f6b2229bc3c6b844576ea42fc6cc4a \
-                    sha256  16f37242b6907b24a1fdf81fead8f25f4b0f6be6a998465b5ae663abc52ef3cf
+sha256  16f37242b6907b24a1fdf81fead8f25f4b0f6be6a998465b5ae663abc52ef3cf
 
 depends_lib-append  port:pear-Validate

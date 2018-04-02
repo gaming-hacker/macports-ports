@@ -12,6 +12,6 @@ description         PEAR Net_SMTP package
 long_description    ${description}
 
 checksums           rmd160  ce02c57345f7ba7c1d97de97d32f158833d5c937 \
-                    sha256  d99892a64184f85e1ecb5a05fa3cdb07b898f65ad811ad676b61591e00e6d545
+sha256  d99892a64184f85e1ecb5a05fa3cdb07b898f65ad811ad676b61591e00e6d545
 
 depends_lib-append  port:pear-Net_Socket

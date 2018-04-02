@@ -17,7 +17,7 @@ homepage            https://github.com/josegonzalez/python-github-backup
 master_sites        pypi:${_n}/${name}
 
 checksums           rmd160  908bed9d654168c3033ff89174130a3f52838cae \
-                    sha256  e36a6405102b1db83b4341cf2767c4f5b900200ac058f8fa47df1cb7898289b2
+sha256  e36a6405102b1db83b4341cf2767c4f5b900200ac058f8fa47df1cb7898289b2
 
 python.default_version  27
 

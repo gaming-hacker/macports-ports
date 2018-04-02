@@ -31,7 +31,7 @@ distname            Gauche-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  88f44c10badc4d4be463ee0c84a0b4065d53dc00 \
-                    sha256  7b18bcd70beaced1e004594be46c8cff95795318f6f5830dd2a8a700410fc149
+sha256  7b18bcd70beaced1e004594be46c8cff95795318f6f5830dd2a8a700410fc149
 
 depends_lib         port:gdbm \
                     port:libiconv \

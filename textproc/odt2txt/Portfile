@@ -15,7 +15,7 @@ description                 converts OpenOffice.org ODF text documents (.odt \
 long_description            ${name} ${description}
 
 checksums                   rmd160  3d6fe00959df15c696cfe0cda429c42255af0b54 \
-                            sha256  d3508b8819fb682f6a1a59e4d358858f0219a36ee5cf87bdb649448d6d318a24
+sha256  d3508b8819fb682f6a1a59e4d358858f0219a36ee5cf87bdb649448d6d318a24
 
 depends_lib                 port:libiconv \
                             port:zlib

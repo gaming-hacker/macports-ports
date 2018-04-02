@@ -18,8 +18,8 @@ homepage        http://chasen.org/~taku/software/darts/
 master_sites    http://chasen.org/~taku/software/darts/src/
 patchfiles      patch-configure.diff
 checksums       md5 2149e32b8e33cf38864f7fc25a6532fb \
-                sha1 14a20a36ded935bef2752a726e027baece7bc801 \
-                rmd160 16b82a9ca2861bdda2a0f96cdf1f7ee8030408b7
+sha1 14a20a36ded935bef2752a726e027baece7bc801 \
+rmd160 16b82a9ca2861bdda2a0f96cdf1f7ee8030408b7
 
 conflicts       darts-clone
 

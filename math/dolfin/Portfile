@@ -16,7 +16,7 @@ description         DOLFIN is a part of FEniCS
 long_description    DOLFIN is a library that functions as the main user interface of FEniCS
 
 checksums           rmd160  4a8f9c21a947b204338c9cf17f2cbe642f64190e \
-                    sha256  0db95c8f193fd56d741cb90682e0a6a21e366c4f48d33e1eb501d2f98aa1a05b
+sha256  0db95c8f193fd56d741cb90682e0a6a21e366c4f48d33e1eb501d2f98aa1a05b
 
 mpi.setup           require
 

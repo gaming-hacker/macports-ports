@@ -12,7 +12,7 @@ description         PEAR HTML_Progress2 package
 long_description    ${description}
 
 checksums           rmd160  54ee1ede072f36cf0a46fa67d3089143eb2d73a2 \
-                    sha256  d5e3a23ff0af290dea9e1f9ffedce2c653cfe2ceae5c08f62b42aea9e38c4cf1
+sha256  d5e3a23ff0af290dea9e1f9ffedce2c653cfe2ceae5c08f62b42aea9e38c4cf1
 
 depends_lib-append  port:pear-HTML_Common \
                     port:pear-Event_Dispatcher \

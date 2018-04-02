@@ -15,7 +15,7 @@ long_description    This plug-in gives read/write access to files saved in the \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  a0a9c9ae31a84c49905fecb82a26b9e7fba3a49b \
-                    sha256  98d5b208f3c26cf2efe7d4c55dd2996abb475a960d1b1d4d0dfd047900cc0ac0
+sha256  98d5b208f3c26cf2efe7d4c55dd2996abb475a960d1b1d4d0dfd047900cc0ac0
 
 depends_lib-append  path:bin/yorick:yorick
 

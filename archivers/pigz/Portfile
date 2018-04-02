@@ -20,7 +20,7 @@ homepage            http://www.zlib.net/pigz/
 master_sites        ${homepage}
 
 checksums           rmd160  99ffd6ca6acbf29c436d80e814a144dfd1bd3337 \
-                    sha256  a4f816222a7b4269bd232680590b579ccc72591f1bb5adafcd7208ca77e14f73
+sha256  a4f816222a7b4269bd232680590b579ccc72591f1bb5adafcd7208ca77e14f73
 
 depends_lib         port:zlib
 

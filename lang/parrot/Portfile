@@ -21,7 +21,7 @@ homepage                http://www.parrot.org/
 master_sites            http://ftp.parrot.org/releases/supported/${version}/
 
 checksums               rmd160  2423a39f5b37394c78262872d5ae50d0c2d6cde5 \
-                        sha256  1a8e9e203ad8ac92c89422603d1603fa821e957aa3a9ae57420c737d93c55213
+sha256  1a8e9e203ad8ac92c89422603d1603fa821e957aa3a9ae57420c737d93c55213
 
 depends_build           bin:perl:perl5 \
                         port:pkgconfig

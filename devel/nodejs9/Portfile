@@ -25,7 +25,7 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  8ab2244183d5e70b0ec69f2cbdb4a694a8977d88 \
-                        sha256  c93b7e20021aabbd8c0ee856ac22e93670e0ff5868e07337bae86ac456df2df2
+sha256  c93b7e20021aabbd8c0ee856ac22e93670e0ff5868e07337bae86ac456df2df2
 
 distname                node-v${version}
 

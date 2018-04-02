@@ -21,7 +21,7 @@ subport gr-lora-BastilleResearch {
     version      20170713
     revision     3
     checksums    rmd160 99f82eb4e57eb59c863598b6a5e58f3632edc769 \
-                 sha256 e1958cfe15e5ff3542e4df3dc7e626751321957cd2ff0122723d6a86d845cf6c
+sha256 e1958cfe15e5ff3542e4df3dc7e626751321957cd2ff0122723d6a86d845cf6c
 
     conflicts gr-lora-rpp0
 
@@ -33,7 +33,7 @@ subport gr-lora-rpp0 {
     version      20180131
     revision     1
     checksums    rmd160 d19e3caa76e92920dba65ffc05207210bdab8b41 \
-                 sha256 584edfd5cac322eeca2651260a7cfd32ca7bd1fefc8480957b912649edfadb69
+sha256 584edfd5cac322eeca2651260a7cfd32ca7bd1fefc8480957b912649edfadb69
 
     conflicts gr-lora-BastilleResearch
 

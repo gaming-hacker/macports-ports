@@ -12,4 +12,4 @@ description         PEAR DB_Sqlite_Tools package
 long_description    ${description}
 
 checksums           rmd160  76ebac5344afd4792a672c59a688b7d0940726b7 \
-                    sha256  ca82ed2c7b5df5a6ef4e7fa46f19c66f2c9a9faca89bb96d5426911958ed936c
+sha256  ca82ed2c7b5df5a6ef4e7fa46f19c66f2c9a9faca89bb96d5426911958ed936c

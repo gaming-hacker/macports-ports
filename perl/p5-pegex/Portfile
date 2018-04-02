@@ -15,7 +15,7 @@ long_description    Pegex is an Acmeist parser framework. It allows you to easil
 platforms           darwin
 
 checksums           rmd160  2380e1ad56c5c373e661c5adcb20fd0ac04c861f \
-                    sha256  27e00264bdafb9c2109212b9654542032617fecf7b7814915d2bdac198f067cd
+sha256  27e00264bdafb9c2109212b9654542032617fecf7b7814915d2bdac198f067cd
 
 if {${perl5.major} != ""} {
     depends_build-append \

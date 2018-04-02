@@ -14,7 +14,7 @@ long_description    This module provides perl routines that simplify a sockets \
                     connection to and an IMAP conversation with an IMAP server.
 
 checksums           rmd160  012e016a5a9d1c121ed3a827f7c2d23b07c4a642 \
-                    sha256  b541fdb47d5bca93048bcee69f42ad2cc96af635557ba6a9db1d8f049a434ea3
+sha256  b541fdb47d5bca93048bcee69f42ad2cc96af635557ba6a9db1d8f049a434ea3
 
 platforms           darwin
 supported_archs     noarch

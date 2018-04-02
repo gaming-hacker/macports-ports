@@ -27,8 +27,8 @@ distname            ${name}-${version}-src
 worksrcdir          ${name}-${version}
 
 checksums           md5     d2b56a1671d2ca63480e38acd9629ea7 \
-                    sha1    096a179035c0ee12b9570627caccfa181db55b58 \
-                    rmd160  a690633f92abf34b314d339fa10ebf839af1cf4c
+sha1    096a179035c0ee12b9570627caccfa181db55b58 \
+rmd160  a690633f92abf34b314d339fa10ebf839af1cf4c
 
 depends_build       bin:ant:apache-ant
 

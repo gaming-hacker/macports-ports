@@ -52,7 +52,7 @@ master_sites        http://www.ffmpeg.org/releases/
 use_xz              yes
 
 checksums           rmd160  97751ae03808242ced7cc9495f999a3b1760325c \
-                    sha256  2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740 \
+sha256  2b92e9578ef8b3e49eeab229e69305f5f4cbc1fdaa22e927fc7fca18acccd740 \
 size    8478376
 
 # root directory of extracted tarball is owned by root and has permissions 700

@@ -16,8 +16,8 @@ master_sites        https://github.com/qorelanguage/qore/releases/download/relea
 conflicts           qore-devel
 
 checksums           md5 e32d4d33cd5a1da69aaa54b20e08521b \
-                    sha1 54a64b41e89c4594b18da88adb6156198d2b2797 \
-                    rmd160 96643169b278e347c24b7b77a7c45ef2f26f17b4
+sha1 54a64b41e89c4594b18da88adb6156198d2b2797 \
+rmd160 96643169b278e347c24b7b77a7c45ef2f26f17b4
 
 depends_build       port:flex \
                     port:bison

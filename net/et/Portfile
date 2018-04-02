@@ -15,7 +15,7 @@ description         a remote shell that automatically reconnects without interru
 long_description    Eternal Terminal (ET) is ${description}.
 
 checksums           rmd160  2306b55ed46a4c3b28160b8b3f90f5d763b1c222 \
-                    sha256  2fa5bfc92455bcf61accf31e6e2e8c2a13971196a90d25e8fbff13483586f0d4
+sha256  2fa5bfc92455bcf61accf31e6e2e8c2a13971196a90d25e8fbff13483586f0d4
 
 depends_lib         port:gflags \
                     port:google-glog \

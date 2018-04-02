@@ -20,6 +20,6 @@ homepage            http://www.bpfh.net/computing/software/LJ::Simple/
 master_sites        http://www.bpfh.net/computing/software/LJ::Simple/
 
 checksums           rmd160  ef34850ef0766ed44a89d24225bd530009e3911c \
-                    sha256  ce5da5c3815cd4e4f661a5dc368f8b496a7cb631aaedc30113fdafc1f711fa09
+sha256  ce5da5c3815cd4e4f661a5dc368f8b496a7cb631aaedc30113fdafc1f711fa09
 
 supported_archs     noarch

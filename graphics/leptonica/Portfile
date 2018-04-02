@@ -18,7 +18,7 @@ homepage            http://www.leptonica.com/
 master_sites        http://www.leptonica.com/source/
 
 checksums           rmd160  006ced964c7d9125c5b728bf8b717849c7dda21a \
-                    sha256  a00f8fb06829ca6c8262bec8f78a6f985e049786f7c872a37b72fd7051ea087a
+sha256  a00f8fb06829ca6c8262bec8f78a6f985e049786f7c872a37b72fd7051ea087a
 
 # fstatat series:
 #   - https://github.com/DanBloomberg/leptonica/issues/327

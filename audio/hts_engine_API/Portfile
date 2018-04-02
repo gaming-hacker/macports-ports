@@ -18,7 +18,7 @@ license             BSD
 
 master_sites        sourceforge:hts-engine
 checksums           rmd160  1a80e6023d4d62e700a58d8be51f967cb3fab12d \
-                    sha256  b35a9c7c6868e15be0fbfb91c7a3696cf623d82f2d2058d2fa4362c289b62895
+sha256  b35a9c7c6868e15be0fbfb91c7a3696cf623d82f2d2058d2fa4362c289b62895
 
 if {[variant_isset universal]} {
     use_autoreconf  yes

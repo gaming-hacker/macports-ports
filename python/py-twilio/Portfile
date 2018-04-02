@@ -17,7 +17,7 @@ long_description    ${description}
 homepage            https://www.twilio.com/docs/libraries/python
 
 checksums           rmd160  5a40920604502c2543a7ace037da6df6e1d27cad \
-                    sha256  c3c23e3989d290b8bdd71436b217764a8ed40d3e1e640c4c949702c7a91da7d0
+sha256  c3c23e3989d290b8bdd71436b217764a8ed40d3e1e640c4c949702c7a91da7d0
 
 if {${name} ne ${subport}} {
     depends_lib-append \

@@ -17,7 +17,7 @@ long_description \
     graphical output based on it.
 
 checksums               rmd160  103b5beb7a5dad6a6b0085e836c74dc147bc7e58 \
-                        sha256  21435530b25374378d6be735b5a8c1418fa59438234fe4d63055a85df90a13a4
+sha256  21435530b25374378d6be735b5a8c1418fa59438234fe4d63055a85df90a13a4
 
 universal_variant       no
 

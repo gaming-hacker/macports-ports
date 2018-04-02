@@ -12,4 +12,4 @@ description         PEAR Mail_IMAP package
 long_description    ${description}
 
 checksums           rmd160  a50c0c43a349f96b91480f1c93d6524ad42b3312 \
-                    sha256  bc3d8333426c86c18b532c300ea2c1417343d32429c1a0df36067dd4bf4a1e3b
+sha256  bc3d8333426c86c18b532c300ea2c1417343d32429c1a0df36067dd4bf4a1e3b

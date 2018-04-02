@@ -22,7 +22,7 @@ long_description        The following tools for the Ipe extensible drawing \
 homepage                http://ipe.otfried.org/
 
 checksums               sha1    a650856f7123fe68499f20bbe66695cb040306f7 \
-                        rmd160  9ee6d4eb84455d55a36d24e2233de9f6a25a21f7
+rmd160  9ee6d4eb84455d55a36d24e2233de9f6a25a21f7
 
 patchfiles              patch-svgtoipe-svgtoipe.py.diff
 post-patch {

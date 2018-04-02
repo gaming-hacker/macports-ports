@@ -15,4 +15,4 @@ long_description    This is a Perl5 extension interface to the RIPEMD-160 \
 platforms           darwin
 
 checksums           rmd160  486d3e97554886773b6cae4282eccdc42bcbe4bd \
-                    sha256  ea64a1e9eb42f3d79855a392e7cca6b86e8e0bcc9aabcc5efa5fa32415b67dba
+sha256  ea64a1e9eb42f3d79855a392e7cca6b86e8e0bcc9aabcc5efa5fa32415b67dba

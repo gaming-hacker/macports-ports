@@ -21,8 +21,8 @@ long_description \
 		and encrypting and decrypting PDF files.
 
 checksums           md5     7a75ef56f227b78ae62d6e38d4b6b1da \
-                    sha1    ba7aed11cf21a2c218df2e3979be5eb90992dcbe \
-                    rmd160  0669d4a93c20fcd899d15ff42cb1b8b908f28e3b
+sha1    ba7aed11cf21a2c218df2e3979be5eb90992dcbe \
+rmd160  0669d4a93c20fcd899d15ff42cb1b8b908f28e3b
 
 homepage        http://pybrary.net/pyPdf/
 master_sites    ${homepage}

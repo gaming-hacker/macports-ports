@@ -22,6 +22,6 @@ long_description    Module Getopt::Long implements an extended getopt function \
                     double dash `--'.
 
 checksums           rmd160  8afcdc2569d02f3e9be026839425f7ff4c86d7d5 \
-                    sha256  20881adb2b73e83825f9a0a3b141db11b3a555e1d3775b13d81d0481623e4b67
+sha256  20881adb2b73e83825f9a0a3b141db11b3a555e1d3775b13d81d0481623e4b67
 
 supported_archs     noarch

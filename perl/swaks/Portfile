@@ -23,7 +23,7 @@ long_description \
     variables, configuration files, and command line.}
 
 checksums           rmd160  31b52e046ac4529056e66c6a8bcf1a2ac44c7a8f \
-                    sha256  0b0967256dca82776f610f1db862bc47644b236f325fa48cbdb2651babd41f7c
+sha256  0b0967256dca82776f610f1db862bc47644b236f325fa48cbdb2651babd41f7c
 
 supported_archs     noarch
 use_configure       no

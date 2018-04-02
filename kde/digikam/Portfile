@@ -20,7 +20,7 @@ homepage            http://www.digikam.org/
 master_sites        kde:stable/digikam/
 
 checksums           rmd160  72e680f932aca65fe0d59a5c313b1d7950ec29ef \
-                    sha256  fa24591d183e1a782e053bfca43bb91149465d0f5e49926c7d6dd16f6321f07f
+sha256  fa24591d183e1a782e053bfca43bb91149465d0f5e49926c7d6dd16f6321f07f
 
 use_bzip2           yes
 

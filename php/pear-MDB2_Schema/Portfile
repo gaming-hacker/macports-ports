@@ -13,7 +13,7 @@ description         PEAR MDB2_Schema package
 long_description    ${description}
 
 checksums           rmd160  56b0dde941839c73b8fa86b40fa99dbb6ccfb0be \
-                    sha256  fd53acf10a5f9ee31c653299c379e5cff38a4411e33ebaeeffeb3a0d53324b7e
+sha256  fd53acf10a5f9ee31c653299c379e5cff38a4411e33ebaeeffeb3a0d53324b7e
 
 depends_lib-append  port:pear-MDB2 \
                     port:pear-XML_Parser

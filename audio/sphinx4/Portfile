@@ -16,8 +16,8 @@ master_sites    sourceforge:cmusphinx
 use_zip         yes
 supported_archs noarch
 checksums       md5     68ebf4701893247043559a3a8ebff277 \
-                sha1    6f68bddb81a2472ce01c26ada301690f8ad6acae \
-                rmd160  56894d6112a1ed2fa7923059296a2ea6b5fdd419
+sha1    6f68bddb81a2472ce01c26ada301690f8ad6acae \
+rmd160  56894d6112a1ed2fa7923059296a2ea6b5fdd419
 patchfiles      jsapi.sh.diff
 pre-build       { system "cd ${worksrcpath}/lib; echo y | sh jsapi.sh"}
 

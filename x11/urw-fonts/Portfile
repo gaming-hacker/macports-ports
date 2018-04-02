@@ -20,8 +20,8 @@ master_sites    macports \
                 ftp://ftp.gnome.ru/fonts/urw/release/
 use_bzip2       yes
 checksums       md5 51c6c2690593cd9bd92f197a6f2ff8bd \
-                sha1 465fd5faab9ba9e7590f1bf761015862eb09748d \
-                rmd160 52bddb1e267e6aa3cace9197293718e4919384bd
+sha1 465fd5faab9ba9e7590f1bf761015862eb09748d \
+rmd160 52bddb1e267e6aa3cace9197293718e4919384bd
 
 depends_run     port:fontconfig
 

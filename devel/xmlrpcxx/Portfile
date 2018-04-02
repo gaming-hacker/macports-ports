@@ -19,7 +19,7 @@ platforms          darwin
 master_sites       sourceforge:xmlrpcpp
 distname           xmlrpc++${version}
 checksums          md5 d88f0f9c36d938316d672d16f6c37d7e \
-                   sha1 e0d853d5c84fa9d20566a4da25fa168b6181137c
+sha1 e0d853d5c84fa9d20566a4da25fa168b6181137c
 
 patchfiles         Validator.patch \
                    VirtualWarnings.patch

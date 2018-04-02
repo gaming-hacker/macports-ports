@@ -15,8 +15,8 @@ depends_build       port:tokyocabinet
 master_sites        sourceforge:tokyocabinet
 
 checksums           md5 b87d892620df55e1088b6b8e22d87ad5 \
-                    sha1 d7e98944fbdc0753477c0d430a056de2fac07695 \
-                    rmd160 f354be0d0929860062812278f5f178aae64d2a36
+sha1 d7e98944fbdc0753477c0d430a056de2fac07695 \
+rmd160 f354be0d0929860062812278f5f178aae64d2a36
 
 set javahome        /System/Library/Frameworks/JavaVM.framework
 

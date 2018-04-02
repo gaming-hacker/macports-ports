@@ -74,26 +74,26 @@ if { $use_signed_kext } {
 }
 
 checksums           osxfuse-431bdc5.tar.gz \
-                    rmd160  71feaf83788bc2d1a862dd603993dab06f18e0e4 \
-                    sha256  4e93768fd8276bf458c237ee298db659e412cff26362ee13a0789000e387f7b5 \
+rmd160  71feaf83788bc2d1a862dd603993dab06f18e0e4 \
+sha256  4e93768fd8276bf458c237ee298db659e412cff26362ee13a0789000e387f7b5 \
                     kext-0a73539.tar.gz \
-                    rmd160  8e05632c0e27528845115c51cddcc074b0555720 \
-                    sha256  48bf4a9a6befed3a710f3254f5572891e7c5e6b2e637e2ee70a222882864bedf \
+rmd160  8e05632c0e27528845115c51cddcc074b0555720 \
+sha256  48bf4a9a6befed3a710f3254f5572891e7c5e6b2e637e2ee70a222882864bedf \
                     framework-e1df643.tar.gz \
-                    rmd160  6b929ca95d19636a84c3c6805b6bb4afad7af0c1 \
-                    sha256  7a9946a7bd5b29e0c826be267ccdbcce98f8c2946b8aea355ed9257d28c359a9 \
+rmd160  6b929ca95d19636a84c3c6805b6bb4afad7af0c1 \
+sha256  7a9946a7bd5b29e0c826be267ccdbcce98f8c2946b8aea355ed9257d28c359a9 \
                     prefpane-8a65eb2.tar.gz \
-                    rmd160  cdf12079ce6ed657b11814c5d1aba1f698f210eb \
-                    sha256  45510edfbfbc8d430fa06f8bc3f4f1d5db943c84c2e93445fa64224f742d4124 \
+rmd160  cdf12079ce6ed657b11814c5d1aba1f698f210eb \
+sha256  45510edfbfbc8d430fa06f8bc3f4f1d5db943c84c2e93445fa64224f742d4124 \
                     fuse-559738e.tar.gz \
-                    rmd160  97ebdbf37f84035400666f7252c67313700db494 \
-                    sha256  32818f955c7179987bee8b4187e23a00763d43e19759190956b92740b673cb94 \
+rmd160  97ebdbf37f84035400666f7252c67313700db494 \
+sha256  32818f955c7179987bee8b4187e23a00763d43e19759190956b92740b673cb94 \
                     support-19b4e8b.tar.gz \
-                    rmd160  26028986b1dac72789be9bf760f40afe00e79a1a \
-                    sha256  5a606d9f9d3a652d20c4e23efca5638edde0b70c24d0a85ec21fc1ddd0395da9 \
+rmd160  26028986b1dac72789be9bf760f40afe00e79a1a \
+sha256  5a606d9f9d3a652d20c4e23efca5638edde0b70c24d0a85ec21fc1ddd0395da9 \
                     osxfuse-3.7.1.dmg \
-                    rmd160  b63fdf2dae4dbe8f95e52b38f2f310fbb7c7164f \
-                    sha256  0982bca1661d1b8df1c310e828984b25c11dfdc623a79566bfa6283779fad24c
+rmd160  b63fdf2dae4dbe8f95e52b38f2f310fbb7c7164f \
+sha256  0982bca1661d1b8df1c310e828984b25c11dfdc623a79566bfa6283779fad24c
 
 # extract phase will just extract the dmg; post-extract will expand
 # the tarballs

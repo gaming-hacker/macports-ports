@@ -20,7 +20,7 @@ homepage            http://telepathy.freedesktop.org/wiki
 master_sites        http://telepathy.freedesktop.org/releases/${name}/
 
 checksums           rmd160  97d979a4874be5385792b0d45d27dc16d0e88bfd \
-                    sha256  21bad30be7ebc4ba667d53d92cd1cec1be23114103f2149404d9740721693d4f
+sha256  21bad30be7ebc4ba667d53d92cd1cec1be23114103f2149404d9740721693d4f
 
 cmake.out_of_source yes
 

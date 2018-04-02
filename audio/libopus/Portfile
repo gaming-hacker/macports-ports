@@ -28,7 +28,7 @@ platform i386 {
 }
 
 checksums       rmd160  c440d6936e4a3e0d837f7a94159d830ce60e9313 \
-                sha256  cfafd339ccd9c5ef8d6ab15d7e1a412c054bf4cb4ecbbbcc78c12ef2def70732
+sha256  cfafd339ccd9c5ef8d6ab15d7e1a412c054bf4cb4ecbbbcc78c12ef2def70732
 
 distname        opus-${version}
 

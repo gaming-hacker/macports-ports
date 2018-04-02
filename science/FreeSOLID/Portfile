@@ -19,7 +19,7 @@ homepage            https://sourceforge.net/projects/freesolid/
 master_sites        sourceforge:freesolid
 
 checksums           rmd160  0f7134913dc5a74d7a8508f43d98e5d4006b3603 \
-                    sha256  89edc6afdd9d60c8020b2b865b61558c86a8928dc6f1773b9f4708b5c28eb873
+sha256  89edc6afdd9d60c8020b2b865b61558c86a8928dc6f1773b9f4708b5c28eb873
 
 use_zip             yes
 

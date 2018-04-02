@@ -20,8 +20,8 @@ master_sites	sourceforge:cocoadialog
 extract.suffix	.tgz
 distname		${name}-src-${version}
 checksums		md5 c6d9b49a1aee3cea16d0f6da7f37cedf \
-				sha1 d04fd9bf821cfdf85b8a6cbcce5872290a4a14b3 \
-				rmd160 326929352d81807ab3362cc806972ee4e1de9e47
+sha1 d04fd9bf821cfdf85b8a6cbcce5872290a4a14b3 \
+rmd160 326929352d81807ab3362cc806972ee4e1de9e47
 
 patchfiles      patch-CDControl.h patch-CDControl.m \
                 patch-AppController.h patch-AppController.m \

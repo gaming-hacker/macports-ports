@@ -13,7 +13,7 @@ long_description    cuetools is a set of utilities for working with cue \
                     files and toc files
 
 checksums           rmd160  9b3ee1b756544b408f9dcf537240d33f23c25063 \
-                    sha256  9dcaeac8817e8d5bc6819e7e404175aac3a53be3c3dae9725e791b4890bd0ad4
+sha256  9dcaeac8817e8d5bc6819e7e404175aac3a53be3c3dae9725e791b4890bd0ad4
 
 use_autoreconf      yes
 

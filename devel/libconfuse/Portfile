@@ -15,7 +15,7 @@ distname                confuse-${version}
 use_xz                  yes
 
 checksums               rmd160  c6e48ac6034ba84320205402ddd1a11455e94e39 \
-                        sha256  23c63272baf2ef4e2cbbafad2cf57de7eb81f006ec347c00b954819824add25e
+sha256  23c63272baf2ef4e2cbbafad2cf57de7eb81f006ec347c00b954819824add25e
 
 depends_build           port:pkgconfig
 

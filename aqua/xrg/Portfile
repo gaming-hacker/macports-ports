@@ -32,7 +32,7 @@ pre-fetch {
 }
 
 checksums           rmd160  f2ce37dffca36c8cda899ae4fa9201336cc1fdf9 \
-                    sha256  97b24ae17fb60b7c4149731574f9afd313373c928efdd00f33b5b77f5cf94ca6
+sha256  97b24ae17fb60b7c4149731574f9afd313373c928efdd00f33b5b77f5cf94ca6
 
 patch.pre_args-append -b
 patchfiles          patch-XRG.xcodeproj-project.pbxproj.diff

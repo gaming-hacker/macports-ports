@@ -12,6 +12,6 @@ description         PEAR Services_DynDNS package
 long_description    ${description}
 
 checksums           rmd160  5ed2ed1f3c5f1bf95cdb5441ea64f013e233ef96 \
-                    sha256  878041c54e58af4c6e5da53537c090ba4fcc836e49d6388b10c7483db61d2cf9
+sha256  878041c54e58af4c6e5da53537c090ba4fcc836e49d6388b10c7483db61d2cf9
 
 depends_lib-append  port:pear-HTTP_Request

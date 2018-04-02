@@ -27,8 +27,8 @@ master_sites    gnome:sources/${name}/${branch}/
 use_bzip2       yes
 
 checksums       md5 08559ff3c67fd95d57b0c5e91a6b4302 \
-                sha1 dbac185c65696381ef188de1f98b348b530e22f9 \
-                rmd160 ed40181ffc9d6646630c1db64532217acf7dd036
+sha1 dbac185c65696381ef188de1f98b348b530e22f9 \
+rmd160 ed40181ffc9d6646630c1db64532217acf7dd036
 
 patchfiles      patch-Makefile.in patch-art_config.h yosemite-libtool.patch
 

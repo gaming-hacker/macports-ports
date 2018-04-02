@@ -20,7 +20,7 @@ description         A Python Parser
 long_description    ${description}
 
 checksums           rmd160  ef873c7fcad445fb00c4653c89de5436320fc087 \
-                    sha256  8dff84ba22159e797eacdd01f0ed60c402f198f6ef0246573356711f5d2de4fd
+sha256  8dff84ba22159e797eacdd01f0ed60c402f198f6ef0246573356711f5d2de4fd
 
 if {${name} ne ${subport}} {
     depends_build-append \

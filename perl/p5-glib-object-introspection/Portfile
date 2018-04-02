@@ -17,7 +17,7 @@ long_description    This module uses the gobject-introspection and libffi projec
                     Examples include gtk+, webkit, libsoup and many more.
 
 checksums           rmd160  d0d125afa75bd72c902515554cce434af85efcfd \
-                    sha256  093c47141db683bf8dcbf1c3e7b2ece2b2b5488739197b8b623f50838eb7e734
+sha256  093c47141db683bf8dcbf1c3e7b2ece2b2b5488739197b8b623f50838eb7e734
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -21,7 +21,7 @@ distname            ${name}-${version}-bin
 master_sites        https://services.gradle.org/distributions
 
 checksums           rmd160  ffd24cc3c370785ce7b2b037500b4c9adf639e48 \
-                    sha256  98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915
+sha256  98bd5fd2b30e070517e03c51cbb32beee3e2ee1a84003a5a5d748996d4b1b915
 
 worksrcdir          ${name}-${version}
 

@@ -29,7 +29,7 @@ master_sites        pypi:c/construct/
 distname            construct-${version}
 
 checksums           rmd160  2e2ad50091f2bb194ba6ffb2ffdfda908f863d47 \
-                    sha256  9a5dbd459e26933bd572389d99c26a0db180b3e2f5fd06950a38b1944cff2548
+sha256  9a5dbd459e26933bd572389d99c26a0db180b3e2f5fd06950a38b1944cff2548
 
 if {${name} ne ${subport}} {
     depends_build-append \

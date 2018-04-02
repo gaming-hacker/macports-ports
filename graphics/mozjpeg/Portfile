@@ -22,7 +22,7 @@ long_description \
     greater reductions have been observed.
 
 checksums           rmd160  0cb0bee3f7cad277387c3f2e7d977ae3bcb16907 \
-                    sha256  87f1d340fe97e1493ba26ea368353d97a45c18df8d245dca44be35bdbf84fa0e
+sha256  87f1d340fe97e1493ba26ea368353d97a45c18df8d245dca44be35bdbf84fa0e
 
 depends_build       port:pkgconfig \
                     port:nasm

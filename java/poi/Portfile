@@ -22,7 +22,7 @@ distname            poi-bin-3.8-20120326
 worksrcdir          ${name}-${version}
 
 checksums           sha1    65569f306c54a215431e8143a7a444314ce11788 \
-                    rmd160  7ecea4da4dd9b4824c857abd9ed4e2ded86d7555
+rmd160  7ecea4da4dd9b4824c857abd9ed4e2ded86d7555
 
 use_configure       no
 

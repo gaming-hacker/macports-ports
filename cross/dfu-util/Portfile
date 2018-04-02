@@ -17,7 +17,7 @@ homepage            http://dfu-util.sourceforge.net/
 master_sites        ${homepage}releases/
 
 checksums           rmd160  44d39b0fdcca5b675a61be56bcccd85881c1244a \
-                    sha256  36428c6a6cb3088cad5a3592933385253da5f29f2effa61518ee5991ea38f833
+sha256  36428c6a6cb3088cad5a3592933385253da5f29f2effa61518ee5991ea38f833
 
 depends_build       port:pkgconfig
 

@@ -17,7 +17,7 @@ license             {GPL-2 LGPL-2.1} BSD
 
 master_sites        ${homepage}
 checksums           rmd160  e0dac81be9a63dabfefa531b6c1b4a7b15a512ca \
-                    sha256  b2bee57febae51d25464c1305320a6b75d94c9c6dbe7264699106c631071691e
+sha256  b2bee57febae51d25464c1305320a6b75d94c9c6dbe7264699106c631071691e
 
 post-destroot {
     set docdir ${prefix}/share/doc/${name}

@@ -22,7 +22,7 @@ homepage            http://pemail.sourceforge.net
 master_sites        sourceforge
 
 checksums           rmd160  c306823b850bafdbbba3513c3c986835d479a0bf \
-                    sha256  da06564bf93e5ee497d5fd221d90c639a5f2d6aaec8c55742e0258de50a77c05
+sha256  da06564bf93e5ee497d5fd221d90c639a5f2d6aaec8c55742e0258de50a77c05
 
 perl5.branches      5.26
 

@@ -12,7 +12,7 @@ description         PEAR Image_GIS package
 long_description    ${description}
 
 checksums           rmd160  b49ed3d509b008b4ce34dc878d547f478991db70 \
-                    sha256  8e41f359297184aaa18f2477c75a230c64fd10df239513b7f2cbfef282f61f90
+sha256  8e41f359297184aaa18f2477c75a230c64fd10df239513b7f2cbfef282f61f90
 
 depends_lib-append  port:pear-Cache_Lite \
                     port:pear-Image_Color \

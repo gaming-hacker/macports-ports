@@ -13,6 +13,6 @@ description         PEAR Gtk_FileDrop package
 long_description    ${description}
 
 checksums           rmd160  073f06fea69958d6ecef623f6f064be6be4f1ea7 \
-                    sha256  f75cd3941dca2ba97f95ca702d34d9429a6027c5dea1055d4bb3c9f28af333cb
+sha256  f75cd3941dca2ba97f95ca702d34d9429a6027c5dea1055d4bb3c9f28af333cb
 
 depends_lib-append  port:pear-MIME_Type

@@ -21,7 +21,7 @@ use_bzip2           yes
 depends_lib         port:perl5
 
 checksums           rmd160  f4e200c219737e28a9df751dd3b9da7985c8ce12 \
-                    sha256  6389ad5318247ea28a8e9ddc9e69bc2713ae5c19e3783edda81da54ff6356497
+sha256  6389ad5318247ea28a8e9ddc9e69bc2713ae5c19e3783edda81da54ff6356497
 
 post-patch {
     set perl_bin ${prefix}/bin/perl

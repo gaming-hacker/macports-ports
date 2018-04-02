@@ -28,8 +28,8 @@ distname            npm-${version}
 extract.suffix      .tgz
 
 checksums           sha1    5e4bfb8c2e7ada01dd41ec0555d13dd0f446ddb2 \
-                    rmd160  ebbd804bf552f89c2a616cfe6fc3cb7aa06e315f \
-                    sha256  3f32536d67eba5bd9929b3b1fe8c54f5cd18d76173e3bc52c151c31a0ea1c946
+rmd160  ebbd804bf552f89c2a616cfe6fc3cb7aa06e315f \
+sha256  3f32536d67eba5bd9929b3b1fe8c54f5cd18d76173e3bc52c151c31a0ea1c946
 
 worksrcdir          "package"
 

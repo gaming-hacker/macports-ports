@@ -18,7 +18,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  93cc2f8303b468c78ade108a76270118afb45986 \
-                    sha256  a8a63e37fa802e8258be99983916cde4512581dc8062de50e73d66af6e2d8535
+sha256  a8a63e37fa802e8258be99983916cde4512581dc8062de50e73d66af6e2d8535
 
 if {${perl5.major} != ""} {
 #   the following build dependencies are optional test dependencies

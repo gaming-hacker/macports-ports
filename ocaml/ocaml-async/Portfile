@@ -15,7 +15,7 @@ description         Jane Street Capital's asynchronous execution library
 long_description    ${description}
 homepage            https://ocaml.janestreet.com/code
 checksums           rmd160  b381890310332d70e05cdabcd223f33507ddb1a2 \
-                    sha256  9e981e11bcf974dfba7c524896ef398c55efd84cbd391febc908d5265c419dde
+sha256  9e981e11bcf974dfba7c524896ef398c55efd84cbd391febc908d5265c419dde
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

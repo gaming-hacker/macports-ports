@@ -19,7 +19,7 @@ homepage            https://soc-extras.lip6.fr/en/alliance-abstract-en/
 master_sites        ftp://asim.lip6.fr/pub/alliance/distribution/latest
 
 checksums           sha1    a1a9f84b5120ea262c989fcf42a6131ee54d5ec7 \
-                    rmd160  be9554ae1c84c1f6d4cd49bf19e2fe997d9ec27b
+rmd160  be9554ae1c84c1f6d4cd49bf19e2fe997d9ec27b
 
 depends_lib         port:xpm \
                     port:openmotif

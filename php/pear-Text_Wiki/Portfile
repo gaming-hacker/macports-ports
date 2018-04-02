@@ -13,4 +13,4 @@ description         PEAR Text_Wiki package
 long_description    ${description}
 
 checksums           rmd160  47139071da7499f45714512cb587a7b5d641bdc7 \
-                    sha256  88f68d4623c42c53594c0dcb93057185ac6109f8e2c506dda82115de9ef77694
+sha256  88f68d4623c42c53594c0dcb93057185ac6109f8e2c506dda82115de9ef77694

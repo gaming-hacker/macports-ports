@@ -14,8 +14,8 @@ platforms           darwin
 master_sites        ${homepage}
 
 checksums           md5 9175a7463936fe89e2e22c8ae2f5e020 \
-                    sha1 d39fedfb817203b70854aaff3a9e7fb2f2f317d2 \
-                    rmd160 c7e05994c9012f4774c1de6eaea7ee3225c63336
+sha1 d39fedfb817203b70854aaff3a9e7fb2f2f317d2 \
+rmd160 c7e05994c9012f4774c1de6eaea7ee3225c63336
 
 depends_lib         port:readline \
                     port:libxml2 \

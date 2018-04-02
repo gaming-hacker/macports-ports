@@ -21,8 +21,8 @@ homepage			http://jakarta.apache.org/bcel/
 master_sites		http://archive.apache.org/dist/jakarta/bcel/source/
 
 checksums           md5     905b7e718e30e7ca726530ecf106e532 \
-                    sha1    3b3d451664855b0c9aae15dd05b69bf1063d8a1d \
-                    rmd160  824286886500f837c869ea6344e8362edbe10636
+sha1    3b3d451664855b0c9aae15dd05b69bf1063d8a1d \
+rmd160  824286886500f837c869ea6344e8362edbe10636
 
 distname			bcel-${version}-src
 depends_build		bin:ant:apache-ant

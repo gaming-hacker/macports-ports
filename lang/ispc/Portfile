@@ -15,7 +15,7 @@ long_description \
     with extensions for single program, multiple data programming. 
 homepage            http://${name}.github.com
 checksums           rmd160  07ab58ef9675d042d8b5fcd74a0b33d9edc943cf \
-                    sha256  4e3d835c57d7a4be52af5c5a8afa99c83d5416e14fc8aaaa9e6408eed9b4e025
+sha256  4e3d835c57d7a4be52af5c5a8afa99c83d5416e14fc8aaaa9e6408eed9b4e025
 
 set llvm_version    3.9
 

@@ -22,8 +22,8 @@ homepage            http://www.nongnu.org/renameutils/
 master_sites        http://ftp.twaren.net/Unix/NonGNU/renameutils/
 
 checksums           md5     29ae736e593c9ccbf666bef66a9af64f \
-                    sha1    df9a324a914bd8b745a09bead94fd87b53657294 \
-                    rmd160  f9c19427de0e9fded2a112abe4db20ac4ccffaee
+sha1    df9a324a914bd8b745a09bead94fd87b53657294 \
+rmd160  f9c19427de0e9fded2a112abe4db20ac4ccffaee
 
 depends_lib         port:readline \
                     port:gettext \

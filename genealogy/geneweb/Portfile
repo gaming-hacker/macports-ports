@@ -17,8 +17,8 @@ master_sites		http://cristal.inria.fr/~ddr/GeneWeb/ftp/Src \
 			ftp://ftp.inria.fr/INRIA/Projects/cristal/${name}/Src
 distfiles		${name}-${version}.tgz
 checksums		md5 e8c6c789a9dd2f9155bf6eefa8786d01 \
-			sha1 e040496b3ce106cc7a508360cd0e4268bcb3e7b1 \
-			rmd160 fd284630e11957cf1265bfce9207e46d449a83ec
+sha1 e040496b3ce106cc7a508360cd0e4268bcb3e7b1 \
+rmd160 fd284630e11957cf1265bfce9207e46d449a83ec
 platforms		darwin
 
 depends_build		port:ocaml \

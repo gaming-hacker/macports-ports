@@ -15,8 +15,8 @@ long_description	uSTL (micro-STL) is a partial implementation of the STL \
 homepage		http://ustl.sourceforge.net/
 master_sites	sourceforge
 checksums		md5 df48fd261e38ccb906c08bcb393af877 \
-			sha1 8e31aa4c0b1d6ca640444678a8f7d0d3cc464015 \
-			rmd160 0dd0fd1d2236ad86f8a20e220b0efeda48fa02bb
+sha1 8e31aa4c0b1d6ca640444678a8f7d0d3cc464015 \
+rmd160 0dd0fd1d2236ad86f8a20e220b0efeda48fa02bb
 use_bzip2		yes
 
 depends_build		port:gsed

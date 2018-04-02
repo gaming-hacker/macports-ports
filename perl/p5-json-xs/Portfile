@@ -18,7 +18,7 @@ long_description    This module converts Perl data structures to JSON and \
                     it was written in C.
 
 checksums           rmd160  e0a40a2900af4eac2b1312ca31028396d080306d \
-                    sha256  65d8836bd8ea6f0b7bffc70b2212156adc3e2ffa587e27e548d576893f097c2c
+sha256  65d8836bd8ea6f0b7bffc70b2212156adc3e2ffa587e27e548d576893f097c2c
 
 platforms           darwin
 

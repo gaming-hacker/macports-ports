@@ -19,8 +19,8 @@ master_sites        freebsd
 worksrcdir          ${name}
 
 checksums           md5    6b5917ad6136fdd8295d2d1299db10d5 \
-                    sha1   9e3fb51b6324f5aca7664fb8165f61a52bd5bd61 \
-                    rmd160 5d14c616c805cef7d369b6fcb6c0377ba1d8ef1d
+sha1   9e3fb51b6324f5aca7664fb8165f61a52bd5bd61 \
+rmd160 5d14c616c805cef7d369b6fcb6c0377ba1d8ef1d
 
 use_configure       no
 

@@ -19,7 +19,7 @@ long_description \
 homepage            http://dlang.org/
 
 checksums           rmd160  c33faef0b94dc50fd057ac00234500b27e276f2a \
-                    sha256  b11d874298977f1d906928f87142f28e8ad170603fd8eec707c6e99c29f64009
+sha256  b11d874298977f1d906928f87142f28e8ad170603fd8eec707c6e99c29f64009
 
 depends_lib         port:phobos \
                     port:curl

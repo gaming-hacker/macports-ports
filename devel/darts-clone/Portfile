@@ -17,7 +17,7 @@ long_description    Darts-clone is a clone of Darts (Double-ARray Trie System), 
 master_sites        googlecode
 
 checksums           rmd160  63394a517df0942ebb1022255b7d48da9ce72553 \
-                    sha256  e91a7da66d1997670c8900d224a7ebc3bf512be92311296bc040d33556db18b7
+sha256  e91a7da66d1997670c8900d224a7ebc3bf512be92311296bc040d33556db18b7
 
 conflicts           darts
 

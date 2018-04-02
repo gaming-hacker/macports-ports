@@ -18,7 +18,7 @@ autoconf.dir        ${worksrcpath}/gnu
 configure.dir       ${autoconf.dir}
 
 checksums           rmd160  80f8a1a8cd203f73def8e957d96563a4dba80153 \
-                    sha256  589e4c9bccc8669e7b6d8d6fcd64e01f6a2c21fe10aad56a83304ecc3b96a7db
+sha256  589e4c9bccc8669e7b6d8d6fcd64e01f6a2c21fe10aad56a83304ecc3b96a7db
 
 patchfiles          patch-configure.in patch-environ.c \
                     patch-makefile.in patch-postproc.c \

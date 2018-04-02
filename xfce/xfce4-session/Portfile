@@ -16,8 +16,8 @@ homepage        http://www.xfce.org/
 master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 d75b257bc0954c238d3c82ce498525aa \
-                sha1 c5785f863682f3173100f90946d558f1ebb6df98 \
-                sha256 68c85453b097d3ada573dcb7e72acd06e0fc34531996122c10d20096405b7b06
+sha1 c5785f863682f3173100f90946d558f1ebb6df98 \
+sha256 68c85453b097d3ada573dcb7e72acd06e0fc34531996122c10d20096405b7b06
 
 patchfiles      patch-sleep.diff patch-launchd.diff
 use_autoconf    yes

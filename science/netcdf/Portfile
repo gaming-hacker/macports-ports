@@ -24,7 +24,7 @@ long_description \
 homepage                    http://www.unidata.ucar.edu/software/netcdf/
 
 checksums           rmd160  dbae2d5a99c918bc5adfc0e247a672b1b6730162 \
-                    sha256  c4f1a18d8c813d00aa06bbe72f585c303b8d56595a4e991d271254ee9fa76786
+sha256  c4f1a18d8c813d00aa06bbe72f585c303b8d56595a4e991d271254ee9fa76786
 
 compilers.choose            cc cpp
 mpi.setup

@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  0bd6b14e593e11e56e551494f26e8932cd0c2d22 \
-                    sha256  45bf540ab2138ed3ff93afc205b0516dc75755b86acdcc5e75c41347833c293d
+sha256  45bf540ab2138ed3ff93afc205b0516dc75755b86acdcc5e75c41347833c293d
 
 if {${perl5.major} != ""} {
 # use Time::HiRes 1.9739+ for Sierra compatibility

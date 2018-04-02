@@ -13,4 +13,4 @@ description         PEAR Crypt_DiffieHellman package
 long_description    ${description}
 
 checksums           rmd160  c9372009b57fdd7d67cf979e48550756bec914fe \
-                    sha256  759e48846b8ba5b8ee101aa8d4e3e6a42e54860eaa45290233de3131556068a3
+sha256  759e48846b8ba5b8ee101aa8d4e3e6a42e54860eaa45290233de3131556068a3

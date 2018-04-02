@@ -20,7 +20,7 @@ master_sites        ${homepage}
 extract.suffix      .tar.bz2
 
 checksums           rmd160  4ba568d2c900500b6c2ee0df07abc0ee30cfe0e5 \
-                    sha256  ff4e087c76700aa5a25dd7d0bc4f55bb4a5e71cd4f0d6b5301babe0b434f86fc
+sha256  ff4e087c76700aa5a25dd7d0bc4f55bb4a5e71cd4f0d6b5301babe0b434f86fc
 
 perl5.branches      5.26
 depends_lib         port:p${perl5.major}-pcsc

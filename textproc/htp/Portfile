@@ -19,8 +19,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5 8f5a720601e8406147fa146cfca77f34 \
-                    sha1 f2d421f27611d7bc9e7dda5a16f4efb129309b20 \
-                    rmd160 ff565a36fb4eacb87d6a8e915a892516ca884f21
+sha1 f2d421f27611d7bc9e7dda5a16f4efb129309b20 \
+rmd160 ff565a36fb4eacb87d6a8e915a892516ca884f21
 
 patchfiles          patch-Makefile.config.diff \
                     patch-src-os.h.diff

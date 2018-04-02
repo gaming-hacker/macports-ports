@@ -17,7 +17,7 @@ long_description    The Net::DSN::SEC suite provides the resource records \
                     RSA and DSA crypto routines are supported.
 
 checksums           rmd160  751976c1bbde63bdb79966aeaf123d8bab332a64 \
-                    sha256  fde199f4691b73ecef2fb7cc4f995a25c1492ea66a4b7623c8dd307e29fe06f5 \
+sha256  fde199f4691b73ecef2fb7cc4f995a25c1492ea66a4b7623c8dd307e29fe06f5 \
 size    41471
 
 platforms           darwin

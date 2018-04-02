@@ -18,7 +18,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  18a339ea95dd38812c342e2b18d3f7edb7318c70 \
-                    sha256  bd8c2482af65e3e9296faa393ee86c1f21e753d631ade03bf265a68eee439904 \
+sha256  bd8c2482af65e3e9296faa393ee86c1f21e753d631ade03bf265a68eee439904 \
 size    370756
 
 depends_build-append  port:pkgconfig

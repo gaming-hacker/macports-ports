@@ -18,7 +18,7 @@ platforms           darwin
 master_sites        ${homepage}download/release/
 
 checksums           rmd160  36bf86a35a8e20c19bae6225cadbc885db0016db \
-                    sha256  013a47a7f94a2435845338a9a06043cc58662f61faff005514902cf38dedee83
+sha256  013a47a7f94a2435845338a9a06043cc58662f61faff005514902cf38dedee83
 
 compilers.choose    cc cxx
 mpi.setup

@@ -31,7 +31,7 @@ use_bzip2           yes
 distname            shogun-${version}
 
 checksums           rmd160  b6f63baeee7040ada85feb33374010a525384104 \
-                    sha256  ab39d3cc27fc1ddf6128f6e3fc60217e73a843b51c20f5d3ceb69e6565a43695
+sha256  ab39d3cc27fc1ddf6128f6e3fc60217e73a843b51c20f5d3ceb69e6565a43695
 
 universal_variant   no
 

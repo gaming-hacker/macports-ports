@@ -18,7 +18,7 @@ long_description   \
     server that can run PSGI applications.
 
 checksums          rmd160 1874616a33627687325f0483b60506e860a8ff53 \
-                   sha256 5f7ccb8453043b97278492a757328116e11e0352f2854a28a9c634e6e9131dba
+sha256 5f7ccb8453043b97278492a757328116e11e0352f2854a28a9c634e6e9131dba
 
 if {${perl5.major} != ""} {
     depends_lib-append \

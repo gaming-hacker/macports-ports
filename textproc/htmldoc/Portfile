@@ -17,7 +17,7 @@ long_description \
     or PDF files with an optional table of contents.
 
 checksums           rmd160  bfcb1cbb69cdf93a59b143f2c9945c1a25d63d77 \
-                    sha256  a6e7ca3b61d68d989414805586f86ffa19db1cecdf2960226938df2c0ab454c1
+sha256  a6e7ca3b61d68d989414805586f86ffa19db1cecdf2960226938df2c0ab454c1
 
 depends_lib         port:jpeg port:libpng port:zlib
 

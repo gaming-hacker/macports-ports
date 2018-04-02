@@ -12,4 +12,4 @@ description         PEAR Genealogy_Gedcom package
 long_description    ${description}
 
 checksums           rmd160  ebadc54e8fd78422b2672e27a0ecf14af048b45a \
-                    sha256  070b8f39c399734a145ac6104cff027bb9ac21ab5c17e0e50578e2f31ce82b39
+sha256  070b8f39c399734a145ac6104cff027bb9ac21ab5c17e0e50578e2f31ce82b39

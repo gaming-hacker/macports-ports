@@ -18,7 +18,7 @@ use_xz              yes
 distname            svgpart-${version}
 
 checksums           rmd160  d03a3b902fd893dde859361568cf9ed2abf72d4b \
-                    sha256  c69914e61548e1d6940d754de067021c2b844440c35a5c217b0d5b23957a49ae
+sha256  c69914e61548e1d6940d754de067021c2b844440c35a5c217b0d5b23957a49ae
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

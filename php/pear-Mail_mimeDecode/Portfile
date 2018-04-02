@@ -12,6 +12,6 @@ description         PEAR Mail_mimeDecode package
 long_description    ${description}
 
 checksums           rmd160  2e40ea946a9a6c12e7744270d48d7e19319fba3a \
-                    sha256  e58d162b326ce7687f0e23790124511d56b521a2b465d5481385a5a857c16188
+sha256  e58d162b326ce7687f0e23790124511d56b521a2b465d5481385a5a857c16188
 
 depends_lib-append  port:pear-Mail_Mime

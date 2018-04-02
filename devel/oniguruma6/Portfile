@@ -17,7 +17,7 @@ long_description    Oniguruma is a regular expressions library in which \
                     expression. Supports Unicode Porperty/Script.
 
 checksums           rmd160  f372d4c3dc7cea841d7c3fcd3320dd50224e76b5 \
-                    sha256  6f6b15e65375217fcf767b8730d3b7e3e72a3e5c3cb6c58b771c3f7ded602d3e
+sha256  6f6b15e65375217fcf767b8730d3b7e3e72a3e5c3cb6c58b771c3f7ded602d3e
 
 conflicts           oniguruma5
 

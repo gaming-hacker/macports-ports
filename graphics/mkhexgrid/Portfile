@@ -27,7 +27,7 @@ distname            ${name}-${version}.src
 worksrcdir          ${name}-${version}
 use_bzip2           yes
 checksums           rmd160  81afd57bd41307369c9f305d600308ff3236eadd \
-                    sha256  122609261cc91c2063ab5315d4316a27c9a0ab164f663a6cb781dd87310be3dc
+sha256  122609261cc91c2063ab5315d4316a27c9a0ab164f663a6cb781dd87310be3dc
 
 use_configure       no
 

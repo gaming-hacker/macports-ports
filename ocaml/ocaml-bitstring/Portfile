@@ -21,8 +21,8 @@ homepage        https://code.google.com/p/bitstring/
 master_sites    googlecode:bitstring
 
 checksums           md5     88ad0ee29af8b077e63896da23ec9054 \
-                    sha1    49b5ec677e251672686dd2886219bb7da30fda86 \
-                    rmd160  47af0dfd6617a8054252208807649f188e083b55
+sha1    49b5ec677e251672686dd2886219bb7da30fda86 \
+rmd160  47af0dfd6617a8054252208807649f188e083b55
 
 patchfiles      patch-Makefile.in-ocamlfind.diff \
                 patch-Makefile.in-top_srcdir.diff

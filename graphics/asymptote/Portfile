@@ -21,7 +21,7 @@ license_noconflict  libpaper
 platforms           darwin
 
 checksums           rmd160  19d05fcbf275456c86f5a1d47a657000c5c6f6b8 \
-                    sha256  1a719bce493f9e0af81996fc2013018e30b1b16cdf6ad54e73e02b1e32b1074b
+sha256  1a719bce493f9e0af81996fc2013018e30b1b16cdf6ad54e73e02b1e32b1074b
 
 post-extract {
     reinplace "s|\\\[${version}git\\\]|\\\[${version}\\\]|" ${worksrcpath}/configure.ac

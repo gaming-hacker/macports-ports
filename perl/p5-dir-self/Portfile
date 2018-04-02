@@ -16,6 +16,6 @@ long_description    Perl has two pseudo-constants describing the current locatio
 platforms           darwin
 
 checksums           rmd160  699a8000f5df05c86920b7bbd3e2521851ad555d \
-                    sha256  e251a51abc7d9ba3e708f73c2aa208e09d47a0c528d6254710fa78cc8d6885b5
+sha256  e251a51abc7d9ba3e708f73c2aa208e09d47a0c528d6254710fa78cc8d6885b5
 
 supported_archs     noarch

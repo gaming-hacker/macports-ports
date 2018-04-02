@@ -20,6 +20,6 @@ long_description                ${name} is ${description}. It provides most \
                                 if the host system supports them.
 
 checksums                       rmd160  cdf1d97b23872a3a9bdba1036260de74801d4f44 \
-                                sha256  4f2769618ae5818cf6005bb08bcf02fe359a2e31998d12dc0c72f0494e9c0420
+sha256  4f2769618ae5818cf6005bb08bcf02fe359a2e31998d12dc0c72f0494e9c0420
 
 depends_build-append            port:pkgconfig

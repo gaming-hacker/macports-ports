@@ -23,7 +23,7 @@ distname                ${name}-${version}-bin
 master_sites            apache:ant/
 master_sites.mirror_subdir        binaries
 checksums               rmd160 e627aa699f3ed4399c4871126c6f5d6ef17d4b9f \
-                        sha512 91992ae8ed122be8d5a6cc423149a8d0cef4e49ada60691c4802eab44bf65dc4d14b9cdfde61b3d4b705a24c7cdc8ab62502f93b4b8a1cbf0b3ffa580ff23738
+sha512 91992ae8ed122be8d5a6cc423149a8d0cef4e49ada60691c4802eab44bf65dc4d14b9cdfde61b3d4b705a24c7cdc8ab62502f93b4b8a1cbf0b3ffa580ff23738
 
 worksrcdir              ${name}-${version}
 set workTarget          ""
@@ -42,8 +42,8 @@ variant source description "build from source; not recommended" {
         distname                        ${name}-${version}-src
         master_sites.mirror_subdir      source
         checksums                       md5    6413ed1cee16372d0fa215ffacca48b7 \
-                                        sha1   5f0d4f059cf7dc2620cde59e9c209663e99cad54 \
-                                        sha512 5a557e06b71c69ca61bbb4d2709edb41405cb22258a158f5645cf43b1087a692a0cc9829e356238c660ed9cd917ce3ce6d8accb1775b1642545c932a49676459
+sha1   5f0d4f059cf7dc2620cde59e9c209663e99cad54 \
+sha512 5a557e06b71c69ca61bbb4d2709edb41405cb22258a158f5645cf43b1087a692a0cc9829e356238c660ed9cd917ce3ce6d8accb1775b1642545c932a49676459
         set workTarget                  /${name}
 
         build.cmd                       ./build.sh

@@ -24,6 +24,6 @@ depends_lib-append  port:py${python.version}-click \
                     port:httpie
 
 checksums           rmd160  811ccb468355ddc101686c9a42cf135ceac8663f \
-                    sha256  eca9621af715fe76ff20861f7b0c1ef3b31a14ed305dfc2f2cc1592fa0c5795e
+sha256  eca9621af715fe76ff20861f7b0c1ef3b31a14ed305dfc2f2cc1592fa0c5795e
 
 python.link_binaries_suffix

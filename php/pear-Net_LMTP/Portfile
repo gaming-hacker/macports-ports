@@ -12,6 +12,6 @@ description         PEAR Net_LMTP package
 long_description    ${description}
 
 checksums           rmd160  852ca535da008743da3080159a2af5df550f274a \
-                    sha256  08d23ef8176d7ac49b30efd3476df563e769d1c6ee94a5b460a4d06069860bac
+sha256  08d23ef8176d7ac49b30efd3476df563e769d1c6ee94a5b460a4d06069860bac
 
 depends_lib-append  port:pear-Net_Socket

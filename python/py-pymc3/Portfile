@@ -23,7 +23,7 @@ python.versions 27 36
 
 if {${name} ne ${subport}} {
     checksums           rmd160  f78fbfd4f89c453573dd75bb45a1daad00921a7d \
-                        sha256  2b1223e024203f50b3286716b90d57722653abe33b80269745f4fa1767925522
+sha256  2b1223e024203f50b3286716b90d57722653abe33b80269745f4fa1767925522
 
     depends_lib-append  port:py${python.version}-numpy \
                         port:py${python.version}-scipy \

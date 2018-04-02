@@ -21,7 +21,7 @@ license             LGPL-3+
 
 master_sites        sourceforge:project/cutter/cutter/${version}
 checksums           rmd160  e744ea0374222c32b7ba5d92ae4279908ba35216 \
-                    sha256  b917a5b67b1d5f24458db5ab177dc11d23b47f04f9cb7eef757f456483c629c6
+sha256  b917a5b67b1d5f24458db5ab177dc11d23b47f04f9cb7eef757f456483c629c6
 
 depends_build       port:intltool \
                     port:pkgconfig \

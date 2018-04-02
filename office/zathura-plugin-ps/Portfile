@@ -20,7 +20,7 @@ master_sites        http://pwmt.org/projects/zathura-ps/download/
 distname            zathura-ps-${version}
 
 checksums           rmd160  7081371b2f6349de7d24b9d90ad3460f67eeba7c \
-                    sha256  a9eef74b12aec87ac2c4309f12d0f9c83b228fe64a788ee46b2c3a7c91779aa3
+sha256  a9eef74b12aec87ac2c4309f12d0f9c83b228fe64a788ee46b2c3a7c91779aa3
 
 patch.pre_args      -p1
 patchfiles          patch-Makefile.diff \

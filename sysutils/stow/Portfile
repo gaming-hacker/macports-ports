@@ -24,7 +24,7 @@ homepage            https://www.gnu.org/software/stow/stow.html
 master_sites        gnu
 
 checksums           rmd160  c8f64c35d81dca28030d5a731f3597f262ce33bd \
-                    sha256  e2f77649301b215b9adbc2f074523bedebad366812690b9dc94457af5cf273df
+sha256  e2f77649301b215b9adbc2f074523bedebad366812690b9dc94457af5cf273df
 
 perl5.branches      5.26
 

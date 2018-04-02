@@ -19,7 +19,7 @@ long_description \
 depends_lib     port:erlang
 
 checksums       rmd160  deffa504702f58ecb9dd0de2149d50b374356bde \
-                sha256  4f76cbc1bb81ed1f99e6993589568bb9711584de48c679d9f967975e0dcd7d7c
+sha256  4f76cbc1bb81ed1f99e6993589568bb9711584de48c679d9f967975e0dcd7d7c
 
 use_configure no
 build.target-append edoc

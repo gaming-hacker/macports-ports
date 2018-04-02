@@ -18,7 +18,7 @@ long_description    MooseX::MarkAsMethods allows one to easily mark certain func
 platforms           darwin
 
 checksums           rmd160  17f4b18310f264d89ba9049b17eabd489ad626c8 \
-                    sha256  c9ecc13376d0ff7dba481977337c33ea74e5d266a428b6af31552a2919ef7ef8
+sha256  c9ecc13376d0ff7dba481977337c33ea74e5d266a428b6af31552a2919ef7ef8
 
 if {${perl5.major} != ""} {
     depends_lib-append \

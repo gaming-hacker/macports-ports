@@ -15,8 +15,8 @@ homepage        http://www.xfce.org/
 master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 3eb9ff3862d773287f56f142ab7ec361 \
-                sha1 507a66ed160e44078f81051878c8644d5a5f344e \
-                sha256 04becef105c19d0266cfe8dbf42619e7233c3b9fa99b43dbfc9c6a5959501f81
+sha1 507a66ed160e44078f81051878c8644d5a5f344e \
+sha256 04becef105c19d0266cfe8dbf42619e7233c3b9fa99b43dbfc9c6a5959501f81
 
 depends_build   port:intltool port:xfce4-dev-tools port:pkgconfig
 depends_lib     port:libxfce4ui port:exo port:libwnck port:xorg-libXrandr

@@ -17,7 +17,7 @@ homepage            https://www.kde.org
 master_sites        kde:stable/${version}/src/
 use_xz              yes
 checksums           rmd160  f91dbcb28427bae4d53a29e1457ccaf915eab924 \
-                    sha256  fd7a96ea3c6acbe23b3a43d6052471ed197008b9c424b41cfced27a74cd179e1
+sha256  fd7a96ea3c6acbe23b3a43d6052471ed197008b9c424b41cfced27a74cd179e1
 
 depends_lib-append  port:kdelibs4 \
                     port:nepomuk-core

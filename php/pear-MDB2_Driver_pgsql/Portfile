@@ -12,6 +12,6 @@ description         PEAR MDB2_Driver_pgsql package
 long_description    ${description}
 
 checksums           rmd160  5b219703cccae801d6bf77fbbb4209c82a691a6c \
-                    sha256  b5bbe7dd75b21903f10be7783252c1d83d04ad0e9a201a1b7ee6b43d344e7938
+sha256  b5bbe7dd75b21903f10be7783252c1d83d04ad0e9a201a1b7ee6b43d344e7938
 
 depends_lib-append  port:pear-MDB2

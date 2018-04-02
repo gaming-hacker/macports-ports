@@ -22,7 +22,7 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  887659ca51d67afeeb439631c2f26fd4b45bbad0 \
-                    sha256  92ecb797728d30518a8270e15652c958dd0d9091eada1eae2806c3ec8069577d
+sha256  92ecb797728d30518a8270e15652c958dd0d9091eada1eae2806c3ec8069577d
 
 depends_lib-append  port:kdelibs4 \
                     port:kdepimlibs4 \

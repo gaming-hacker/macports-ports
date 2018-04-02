@@ -14,8 +14,8 @@ master_sites	xorg:individual/lib/
 
 distname	libXmu-${version}
 checksums           sha1    7e6aeef726743d21aa272c424e7d7996e92599eb \
-                    rmd160  8f4224ddacffaf0fbe1d6340fc846dfd3b1563b1 \
-                    sha256  756edc7c383254eef8b4e1b733c3bf1dc061b523c9f9833ac7058378b8349d0b
+rmd160  8f4224ddacffaf0fbe1d6340fc846dfd3b1563b1 \
+sha256  756edc7c383254eef8b4e1b733c3bf1dc061b523c9f9833ac7058378b8349d0b
 use_bzip2	yes
 use_parallel_build      yes
 

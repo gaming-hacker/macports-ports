@@ -24,7 +24,7 @@ distname            gmsh-${version}-source
 extract.suffix      .tgz
 
 checksums           rmd160  d71b848eb36f079c7b11f3f88b19748436b3a340 \
-                    sha256  199e27cba3258976eddfd7767560ec52382702076bca5d4bcf067124e6f6624b
+sha256  199e27cba3258976eddfd7767560ec52382702076bca5d4bcf067124e6f6624b
 
 patchfiles          patch-CMakeLists.txt.diff
 

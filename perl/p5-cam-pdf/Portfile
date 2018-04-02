@@ -18,7 +18,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  dbf72f375ce57845f012bcf24443b888266b83d8 \
-                    sha256  e76afc7f38a624924a77c5c988c36c9e388bfa7716e75cd397fef8e1b42ebb89
+sha256  e76afc7f38a624924a77c5c988c36c9e388bfa7716e75cd397fef8e1b42ebb89
 
 if {${perl5.major} != ""} {
     patchfiles      patch-lib-CAM-PDF.pm

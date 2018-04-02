@@ -12,6 +12,6 @@ description         PEAR Text_Wiki_Tiki package
 long_description    ${description}
 
 checksums           rmd160  fcc1cdde920ed8b0fade9332dfae6c36faa356ed \
-                    sha256  2f0de62e5a28739e8ddc7875ad6364e0bcdb4fc4c95c4ebfcbb698fd4072ed04
+sha256  2f0de62e5a28739e8ddc7875ad6364e0bcdb4fc4c95c4ebfcbb698fd4072ed04
 
 depends_lib-append  port:pear-Text_Wiki

@@ -22,7 +22,7 @@ extract.suffix      .src.tar.gz
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  b5d2dfd16457cf5282b1c7d8008c145666771ee9 \
-                    sha256  833bf095a1f9c2be435fddbb3ffe10dadfad1853127b97892f1a81c884d4fe1d
+sha256  833bf095a1f9c2be435fddbb3ffe10dadfad1853127b97892f1a81c884d4fe1d
 
 depends_build       port:pkgconfig
 

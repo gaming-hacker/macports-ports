@@ -12,4 +12,4 @@ description         PEAR I18N_UnicodeNormalizer package
 long_description    ${description}
 
 checksums           rmd160  e998497670f415fdc5a395403e53614a71ad057d \
-                    sha256  2d331932e6735faea8e128eebcc47d3137fdebd2ca178335a142d06cb95d433b
+sha256  2d331932e6735faea8e128eebcc47d3137fdebd2ca178335a142d06cb95d433b

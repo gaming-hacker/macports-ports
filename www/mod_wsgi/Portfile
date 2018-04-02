@@ -23,7 +23,7 @@ depends_lib         port:apache2 \
                     port:python27
 
 checksums           rmd160  bd2354c24e35081ec7caa5404eba1f08f4d3b8c4 \
-                    sha256  c261f26245f08999065fe952f6dbf9e731e23a5a2c756038d8352789c8669fd9
+sha256  c261f26245f08999065fe952f6dbf9e731e23a5a2c756038d8352789c8669fd9
 
 if {[variant_isset apache22]} {
     set apxs        ${prefix}/apache22/bin/apxs

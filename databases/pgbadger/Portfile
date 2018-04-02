@@ -20,7 +20,7 @@ supported_archs     noarch
 homepage            https://dalibo.github.io/${name}/
 
 checksums           rmd160  8112cdd2c54b931766f51390ef96eee1b440ad4f \
-                    sha256  b07982588875a34b3ab6861663332e6e337937f0bab5f8e080f415736c28c0d5 \
+sha256  b07982588875a34b3ab6861663332e6e337937f0bab5f8e080f415736c28c0d5 \
 size    745247
 
 perl5.branches      5.26

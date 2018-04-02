@@ -19,4 +19,4 @@ description         Math::Combinatorics - Perform combinations and permutations 
 long_description    ${description}
 
 checksums           rmd160 4f3ef7507e268d0094e5b20af9f274b4dfcf1283 \
-                    sha256 6ef15a1003fe4d7f49d54380b5d7995f5950d799e46aad285d758a12e36da647
+sha256 6ef15a1003fe4d7f49d54380b5d7995f5950d799e46aad285d758a12e36da647

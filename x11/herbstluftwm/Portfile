@@ -25,7 +25,7 @@ homepage                http://wwwcip.cs.fau.de/~re06huxa/herbstluftwm/
 master_sites            ${homepage}/tarballs/
 
 checksums               rmd160  dd6303e34c5ac72b712dce375922289844919f40 \
-                        sha256  a89f5c397aee7f1aa3b39dd53bc67e282679f02f1c0bf3c33c41a608e217f0ac
+sha256  a89f5c397aee7f1aa3b39dd53bc67e282679f02f1c0bf3c33c41a608e217f0ac
 
 livecheck.type          regex
 livecheck.url           ${master_sites}

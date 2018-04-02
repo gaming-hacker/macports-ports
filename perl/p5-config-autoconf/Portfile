@@ -15,7 +15,7 @@ description         A module to implement some AutoConf macros in pure perl.
 long_description    ${description}
 
 checksums           sha256  4b3cd1e1a698ba9e5660c047f0a4fe192723d4bc9f768fdea511c2fc73ea6940 \
-                    rmd160  5fba5b914c346cd27d06e728d8e8cf8bc31c06d4
+rmd160  5fba5b914c346cd27d06e728d8e8cf8bc31c06d4
 
 if {${perl5.major} != ""} {
     depends_lib-append \

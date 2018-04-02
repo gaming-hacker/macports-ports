@@ -22,7 +22,7 @@ master_sites        ${homepage}/releases/
 extract.suffix      .tgz
 
 checksums           rmd160  802ec272b5447a6a551de4fe191b409e79612cc6 \
-                    sha256  543b68638e739be5c3e818c3958c3b124ac0ccb8be62ba274b4241dbdec00e7f
+sha256  543b68638e739be5c3e818c3958c3b124ac0ccb8be62ba274b4241dbdec00e7f
 
 depends_build       port:gmake
 

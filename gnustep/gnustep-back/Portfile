@@ -23,8 +23,8 @@ depends_lib     port:gnustep-gui \
                 port:Xft2
 
 checksums           md5     314c753ae922082345cf3a288440fa5a \
-                    sha1    04059fc2da1c767be5a1a8c57915b9e1a7bc3a08 \
-                    rmd160  b17eef44a252785adb955fee911711ce23d04031
+sha1    04059fc2da1c767be5a1a8c57915b9e1a7bc3a08 \
+rmd160  b17eef44a252785adb955fee911711ce23d04031
 
 use_configure   yes
 configure.args  --enable-graphics=art \

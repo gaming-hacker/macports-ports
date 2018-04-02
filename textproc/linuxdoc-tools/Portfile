@@ -21,7 +21,7 @@ distname        ${name}_${version}
 worksrcdir      ${name}-${version}
 
 checksums       rmd160  5ea6dc61b48f34a8940dc853ce64300a1d79cb2a \
-                sha256  605f97ced9db6deb8e3aa0ee65372204eea81adbe6314f053229d16ff0622fa3
+sha256  605f97ced9db6deb8e3aa0ee65372204eea81adbe6314f053229d16ff0622fa3
 
 depends_build   bin:latex:texlive port:flex
 depends_lib     port:gawk port:opensp port:texinfo

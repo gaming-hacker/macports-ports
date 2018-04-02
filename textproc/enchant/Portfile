@@ -21,8 +21,8 @@ homepage            http://www.abisource.com/enchant/
 master_sites        http://www.abisource.com/downloads/${name}/${version}/
 
 checksums           md5     de11011aff801dc61042828041fb59c7 \
-                    sha1    321f9cf0abfa1937401676ce60976d8779c39536 \
-                    rmd160  a992034355bb36b9acabdbd400c9f4a3b996cce6
+sha1    321f9cf0abfa1937401676ce60976d8779c39536 \
+rmd160  a992034355bb36b9acabdbd400c9f4a3b996cce6
 
 patch.pre_args      -p1
 

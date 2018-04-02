@@ -28,7 +28,7 @@ depends_run         port:p${perl5.major}-libwww-perl \
                     port:p${perl5.major}-tk
 
 checksums           rmd160  5e96efc1c8a6a792b4333b5e4c4218506870c74b \
-                    sha256  19fe2202c18ad65a05d7b90ef642103e9db8e6993fe76d87c7c7cc3586e4fd20
+sha256  19fe2202c18ad65a05d7b90ef642103e9db8e6993fe76d87c7c7cc3586e4fd20
 
 use_configure       no
 

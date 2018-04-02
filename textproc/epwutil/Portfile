@@ -20,7 +20,7 @@ homepage            http://openlab.jp/edict/
 master_sites        http://openlab.jp/edict/epwutil/
 
 checksums           rmd160  7f00f92fc116c17b2364cac7a1ba9b6d10a92682 \
-                    sha256  a45c4998a7b4fc0c3c9ad5eeadc24faa3517432bec46d9980b0fe691504ae9fb
+sha256  a45c4998a7b4fc0c3c9ad5eeadc24faa3517432bec46d9980b0fe691504ae9fb
 
 use_configure       no
 

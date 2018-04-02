@@ -12,4 +12,4 @@ description         PEAR Net_NNTP package
 long_description    ${description}
 
 checksums           rmd160  46ad34f94e71cc8c3ca0164f3b18c988304e1942 \
-                    sha256  fbe84ce6308d525e34dcda6fda9b9a6c53f5743b27a5f06cea95cbf932163cac
+sha256  fbe84ce6308d525e34dcda6fda9b9a6c53f5743b27a5f06cea95cbf932163cac

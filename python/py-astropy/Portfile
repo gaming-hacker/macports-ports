@@ -20,8 +20,8 @@ homepage            http://www.astropy.org
 master_sites        pypi:a/astropy/
 distname            astropy-${version}
 checksums           md5     f7754aff4a4b9bbaa08a0913c6a03464 \
-                    rmd160  f70a3856af8d173e011a8d51b90cc12858820306 \
-                    sha256  fdfc0248f6250798ed6d1327be609cb901db89ae01fc768cfbc9e263bdf56f4f
+rmd160  f70a3856af8d173e011a8d51b90cc12858820306 \
+sha256  fdfc0248f6250798ed6d1327be609cb901db89ae01fc768cfbc9e263bdf56f4f
 
 python.versions 27 36
 

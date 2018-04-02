@@ -29,7 +29,7 @@ master_sites        http://download.savannah.gnu.org/releases/gchemutils/${major
 use_xz              yes
 
 checksums           sha256  add1433fcaa9861b59426d8db236e51047752b47fd788575ee0fe2dc3af3926e \
-                    rmd160  096bf5606326ee894885a81a0160b9600a1f4477
+rmd160  096bf5606326ee894885a81a0160b9600a1f4477
 
 depends_build       port:pkgconfig \
                     port:intltool \

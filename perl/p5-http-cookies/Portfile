@@ -15,7 +15,7 @@ description         HTTP::Cookies - HTTP cookie jars
 long_description    ${description}
 
 checksums           rmd160  3ad2cca6826e9ad762ce017de699eefa9651fdb4 \
-                    sha256  0cc7f079079dcad8293fea36875ef58dd1bfd75ce1a6c244cd73ed9523eb13d4
+sha256  0cc7f079079dcad8293fea36875ef58dd1bfd75ce1a6c244cd73ed9523eb13d4
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -12,4 +12,4 @@ description         PEAR Image_Transform package
 long_description    ${description}
 
 checksums           rmd160  f2958938084a26a82116b4d5377899af1b18999c \
-                    sha256  2ee9b5a783e33f357440d2a5821644a285dee774617e34ec2282fb0aed0d7f84
+sha256  2ee9b5a783e33f357440d2a5821644a285dee774617e34ec2282fb0aed0d7f84

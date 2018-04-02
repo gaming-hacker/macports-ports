@@ -16,8 +16,8 @@ homepage        http://www.xfce.org/
 master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 165b4e380eb02e33d6c67774b38f16b1 \
-                sha1 5c3ea9faaa9b45a40ca7ecfff447cdca192534f6 \
-                sha256 29f4cbe2869ae32a6775877ed6bfc4ded7000f013ff7eb70b2639c49f415cc3a
+sha1 5c3ea9faaa9b45a40ca7ecfff447cdca192534f6 \
+sha256 29f4cbe2869ae32a6775877ed6bfc4ded7000f013ff7eb70b2639c49f415cc3a
 
 patchfiles      patch-stacking4nonX11.diff
 

@@ -27,7 +27,7 @@ depends_lib         port:lua-luasocket \
                     port:libidn
 
 checksums           rmd160  adee85a03e80b8953c55ec6dc5e89773c342bc5a \
-                    sha256  4836eefed4d9bbb632cba24ac5bd8e9bc7c029a79d06084b00ffc70858d1662f
+sha256  4836eefed4d9bbb632cba24ac5bd8e9bc7c029a79d06084b00ffc70858d1662f
 
 configure.cflags-append  -fPIC
 configure.ldflags-append -bundle -undefined dynamic_lookup

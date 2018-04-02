@@ -18,7 +18,7 @@ long_description    ${name} provides an easy way to obtain a connected DBI \
                     within your Dancer application.
 
 checksums           rmd160  bc8dfd9c37aa304379b55486010f0e9f2cd5563d \
-                    sha256  8c72371cb07093725e4bee7b3100030e7414cfa97a9655abd1a975866cf825f2
+sha256  8c72371cb07093725e4bee7b3100030e7414cfa97a9655abd1a975866cf825f2
 
 if {${perl5.major} != ""} {
     depends_build-append \

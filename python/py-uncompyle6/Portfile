@@ -16,7 +16,7 @@ description         A Python decompiler, disassembler and cross-version bytecode
 long_description    ${description}
 
 checksums           rmd160  904a11055e532210c87742cee80ad5dd072ddcd4 \
-                    sha256  bf288ef2b44ef7ecf6536ab9afe226bb2e13cdffc4acf02763cbf9ab1b7d3abd
+sha256  bf288ef2b44ef7ecf6536ab9afe226bb2e13cdffc4acf02763cbf9ab1b7d3abd
 
 python.versions 27 36
 

@@ -14,7 +14,7 @@ description         MooseX::Singleton - turn your Moose class into a singleton
 long_description    ${description}
 
 checksums           rmd160  3ac3bf477e10c0c2653ee0829608ef88b19c8742 \
-                    sha256  6584b2f31b1d3eb6dd7e23128738e73f6c015b152138b0a8157d3d0d59d06541
+sha256  6584b2f31b1d3eb6dd7e23128738e73f6c015b152138b0a8157d3d0d59d06541
 
 if {${perl5.major} != ""} {
     depends_build-append \

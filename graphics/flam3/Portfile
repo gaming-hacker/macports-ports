@@ -21,7 +21,7 @@ platforms           darwin
 master_sites        googlecode
 
 checksums           rmd160  2e834147deb2edc0ee26054cb4fc8b502bce4986 \
-                    sha256  70810049604527a689ba172670c152b463273255e46f0f04091c867399859aa7
+sha256  70810049604527a689ba172670c152b463273255e46f0f04091c867399859aa7
 
 depends_lib         port:libpng \
                     port:jpeg \

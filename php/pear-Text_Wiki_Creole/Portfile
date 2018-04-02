@@ -12,6 +12,6 @@ description         PEAR Text_Wiki_Creole package
 long_description    ${description}
 
 checksums           rmd160  66b27fab0283c9d3cac8dd37aa486799bf2f0f25 \
-                    sha256  a3d7318687a4e2c364d8b253211ddacdc1e8b902d021aa354d13be7d7dfca679
+sha256  a3d7318687a4e2c364d8b253211ddacdc1e8b902d021aa354d13be7d7dfca679
 
 depends_lib-append  port:pear-Text_Wiki

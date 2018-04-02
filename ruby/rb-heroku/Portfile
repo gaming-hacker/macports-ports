@@ -13,7 +13,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           md5 ed7ce98e32911896c7284acd1289dc9d \
-                    rmd160 016733957049f3d670b4ed8fb379ac90f5f132cc \
-                    sha1 ac51d3f20b5fa3ec6930bb281d3c68cfc431151c
+rmd160 016733957049f3d670b4ed8fb379ac90f5f132cc \
+sha1 ac51d3f20b5fa3ec6930bb281d3c68cfc431151c
 
 depends_lib-append  port:rb-rest-client port:rb-launchy port:rb-json

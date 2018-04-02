@@ -16,8 +16,8 @@ homepage            http://shakespearelang.sourceforge.net/
 platforms           darwin
 master_sites        ${homepage}download/
 checksums           md5 c31de8415af80819eb944a1cecadddde \
-                    sha1 17adea7bbf5e1de1a29e71b19e5271f186e9698d \
-                    rmd160 0225bced2f236fc5c1850cd9fe5c48fc1c75aa1c
+sha1 17adea7bbf5e1de1a29e71b19e5271f186e9698d \
+rmd160 0225bced2f236fc5c1850cd9fe5c48fc1c75aa1c
 depends_build       port:bison port:flex
 use_configure       no
 

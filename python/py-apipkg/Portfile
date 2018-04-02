@@ -20,7 +20,7 @@ master_sites        https://pypi.io/packages/source/[string index ${python.rootn
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  ab2a3843243c828c9b3f823fdef616be039a9159 \
-                    sha256  2e38399dbe842891fe85392601aab8f40a8f4cc5a9053c326de35a1cc0297ac6
+sha256  2e38399dbe842891fe85392601aab8f40a8f4cc5a9053c326de35a1cc0297ac6
 
 python.versions 27 36
 

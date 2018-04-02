@@ -13,4 +13,4 @@ description         PEAR RDF package
 long_description    ${description}
 
 checksums           rmd160  06e2cf9a9a83baf4c46b5bbc9f88782a0d474a6a \
-                    sha256  585f724c3d534b554a0128806d59cd7c0d092dc4facd42dc4e940eec030df265
+sha256  585f724c3d534b554a0128806d59cd7c0d092dc4facd42dc4e940eec030df265

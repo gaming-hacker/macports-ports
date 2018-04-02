@@ -48,7 +48,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            greenlet-${version}
 
 checksums           rmd160  e4dfd568ec416e78738d953cd992f6d4052cdb2a \
-                    sha256  0fef83d43bf87a5196c91e73cb9772f945a4caaff91242766c5916d1dd1381e4
+sha256  0fef83d43bf87a5196c91e73cb9772f945a4caaff91242766c5916d1dd1381e4
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -21,7 +21,7 @@ license             Apache-2
 
 master_sites        apache:${name}/${version}
 checksums           rmd160  545417d7257b42500268475da9d87e28f163b29d \
-                    sha256  d7a0f2c58ee464a9011b0fc189f79abd7863111ce2b3635bdadb282112cc240f
+sha256  d7a0f2c58ee464a9011b0fc189f79abd7863111ce2b3635bdadb282112cc240f
 
 distname            ${name}-distribution-${version}
 

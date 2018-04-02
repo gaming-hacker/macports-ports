@@ -23,8 +23,8 @@ homepage        http://www.openslp.org/
 master_sites    sourceforge
 
 checksums       md5 ff9999d1b44017281dd00ed2c4d32330 \
-                sha1 47ab19154084d2b467f09525f5351e9ab7193cf9 \
-                rmd160 a31d516ba784ad893a740946082fe5e0f15a37ea
+sha1 47ab19154084d2b467f09525f5351e9ab7193cf9 \
+rmd160 a31d516ba784ad893a740946082fe5e0f15a37ea
 
 depends_build   port:libtool
 depends_lib     path:lib/libssl.dylib:openssl

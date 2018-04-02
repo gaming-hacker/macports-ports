@@ -18,7 +18,7 @@ master_sites        sourceforge:project/pserv/pserv/${version}
 extract.suffix      .tar.Z
 
 checksums           rmd160  15ee471e2c0bc0aeb897dbe2eab5271928de8fbd \
-                    sha256  6a37e3056504db4e5623ce59fda95a759f7692f67dcb174ceb32d340b3441977
+sha256  6a37e3056504db4e5623ce59fda95a759f7692f67dcb174ceb32d340b3441977
 
 patchfiles          patch-main.h \
                     patch-pserv.conf

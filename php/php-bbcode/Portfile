@@ -25,7 +25,7 @@ long_description \
     string this is in order to ensure HTML Validity in all case.
 
 checksums       rmd160  2006e5ef2a1531d714fada2deb9f3abcd9641b8e \
-                sha256  c588adbc08b0d5b0df68d14e719202d3d4c22a8a0201b786927bec471ed61da7
+sha256  c588adbc08b0d5b0df68d14e719202d3d4c22a8a0201b786927bec471ed61da7
 
 use_parallel_build yes
 

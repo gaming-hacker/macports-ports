@@ -22,7 +22,7 @@ long_description \
                 Downloads map data from a number of websites, including openstreetmap.org.
 
 checksums       rmd160  c7c48f36a4f9ad3a070324f154da0264d415f80b \
-                sha256  669ae7975c67908288272e67e73487fc5faf60e67f5915fd25e18a41d2a51c4a
+sha256  669ae7975c67908288272e67e73487fc5faf60e67f5915fd25e18a41d2a51c4a
 
 depends_build   port:pkgconfig \
                 port:autoconf \

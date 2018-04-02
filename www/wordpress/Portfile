@@ -18,7 +18,7 @@ homepage                https://wordpress.org/
 master_sites            ${homepage}
 
 checksums               rmd160  964706415b71fc7ff1db1ccbc4980720eeba7497 \
-                        sha256  1f6e9d16cb6b3cd77b754ad806ee67cd4b58a4c15b3a7ddf30b4237e359a437b
+sha256  1f6e9d16cb6b3cd77b754ad806ee67cd4b58a4c15b3a7ddf30b4237e359a437b
 
 worksrcdir              ${name}
 

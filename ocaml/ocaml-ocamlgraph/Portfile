@@ -20,7 +20,7 @@ platforms           darwin
 master_sites        http://ocamlgraph.lri.fr/download/
 
 checksums           sha1    ff864aaae11f7355685f37815194ca58d3fcac01 \
-                    rmd160  b201425faa695d39724ab53026469c4663576188
+rmd160  b201425faa695d39724ab53026469c4663576188
 
 livecheck.url       http://ocamlgraph.lri.fr/
 livecheck.type      regex

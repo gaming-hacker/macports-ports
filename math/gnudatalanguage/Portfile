@@ -31,8 +31,8 @@ distfiles           ${gdlsrc}:gdl
 worksrcdir          gdl-${version}
 
 checksums           ${gdlsrc} \
-                    rmd160  ad8382265146592e23bbae42e339d871d9e3a983 \
-                    sha256  2b5945d06e4d95f01cb70a3c432ac2fa4c81e1b3ac7c02687a6704ab042a7e21
+rmd160  ad8382265146592e23bbae42e339d871d9e3a983 \
+sha256  2b5945d06e4d95f01cb70a3c432ac2fa4c81e1b3ac7c02687a6704ab042a7e21
 
 depends_build-append        port:pkgconfig
 depends_lib                 port:zlib \
@@ -179,8 +179,8 @@ variant gshhs description {build with support for GSHHS} {
     distfiles-append        ${gshhsdata}:gshhs
     checksums-append \
                     ${gshhsdata} \
-                    rmd160  1022a97fa324eaa4e5e4617fea25c8aaf1bec95c \
-                    sha256  28600e8f7a08645aab43079326df6504212ec5ccb2b4bcf3b5f4f12ed60e82bc
+rmd160  1022a97fa324eaa4e5e4617fea25c8aaf1bec95c \
+sha256  28600e8f7a08645aab43079326df6504212ec5ccb2b4bcf3b5f4f12ed60e82bc
     extract.only    ${gdlsrc}
     post-extract {
         system "cd ${workpath}; \

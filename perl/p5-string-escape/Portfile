@@ -16,4 +16,4 @@ long_description    ${description}
 supported_archs     noarch
 
 checksums           rmd160  dafd6e667401bc93e9f3208684c47356e41bf02f \
-                    sha256  fd645f8b336224d20a85ae7fb1a384576eac329f7adc3923c3241e828e3b9a8a
+sha256  fd645f8b336224d20a85ae7fb1a384576eac329f7adc3923c3241e828e3b9a8a

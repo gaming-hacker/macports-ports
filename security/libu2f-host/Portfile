@@ -23,7 +23,7 @@ master_sites        https://developers.yubico.com/${name}/Releases/
 use_xz              yes
 
 checksums           rmd160  1d8f0a24304e980f81f230740f3de7837b9a5d97 \
-                    sha256  6043ec020d96358a4887a3ff09492c4f9f6b5bccc48dcdd8f28b15b1c6157a6f
+sha256  6043ec020d96358a4887a3ff09492c4f9f6b5bccc48dcdd8f28b15b1c6157a6f
 
 depends_build       port:pkgconfig
 depends_lib         port:json-c \

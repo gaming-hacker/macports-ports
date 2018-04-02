@@ -19,7 +19,7 @@ description         ExtUtils::XSpp (no description available)
 long_description    ${description}
 
 checksums           rmd160  dc1a4b6be084fd39c2b720661a1f5b1c79f8145b \
-                    sha256  9176ad646729e3bd27cf7abf114bedd3424bff1ba61185cfc7d54f3a9223a8ff
+sha256  9176ad646729e3bd27cf7abf114bedd3424bff1ba61185cfc7d54f3a9223a8ff
 
 if {${perl5.major} != ""} {
     depends_build-append \

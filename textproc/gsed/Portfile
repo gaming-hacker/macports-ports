@@ -26,7 +26,7 @@ distname        ${my_name}-${version}
 use_xz          yes
 
 checksums       rmd160  5eb9b1adee939572cca4d353a83e6e35f9423bfb \
-                sha256  7aad73c8839c2bdadca9476f884d2953cdace9567ecd0d90f9959f229d146b40
+sha256  7aad73c8839c2bdadca9476f884d2953cdace9567ecd0d90f9959f229d146b40
 
 depends_lib     port:gettext \
                 port:libiconv

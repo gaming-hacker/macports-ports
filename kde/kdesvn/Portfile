@@ -21,7 +21,7 @@ master_sites        ${homepage}downloads/
 use_bzip2           yes
 
 checksums           rmd160  a34bf878cb6483b4865716fe4d645cc6f89d9ec3 \
-                    sha256  05686f246b76810f90a9f80f1d45cdccf812b42e18fa10a16b14e7d27d370f96
+sha256  05686f246b76810f90a9f80f1d45cdccf812b42e18fa10a16b14e7d27d370f96
 
 depends_lib-append  port:kdelibs4 \
                     port:kde4-runtime \

@@ -17,7 +17,7 @@ master_sites    http://archive.xfce.org/src/xfce/thunar/${branch}/
 use_bzip2       yes
 
 checksums       rmd160  191cd85bf3c1afd0c92846b1c6da348044a97c34 \
-                sha256  fb22091f07ec6de2c9d9d89c61289d2bc3436b36c8c53ccbc9c32ca8a99f2086 \
+sha256  fb22091f07ec6de2c9d9d89c61289d2bc3436b36c8c53ccbc9c32ca8a99f2086 \
 size    1929112
 
 configure.args  --enable-dbus --enable-startup-notification \

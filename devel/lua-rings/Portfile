@@ -17,8 +17,8 @@ long_description    Rings is a library which provides a way to create new Lua st
 
 depends_lib         port:lua
 checksums           md5     cba2e8a961fa4f76ebf4972c6044e824 \
-                    sha1    788234fb446ee2415fd4be894eb4ad65ef9b2662 \
-                    rmd160  3ff0989ec77c39f3711e97af2886e548254f6af1
+sha1    788234fb446ee2415fd4be894eb4ad65ef9b2662 \
+rmd160  3ff0989ec77c39f3711e97af2886e548254f6af1
 
 # package configure script is not from autotools and only searches for lua binary prefix
 # we patch it and force it to ${prefix}

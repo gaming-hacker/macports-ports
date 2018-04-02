@@ -21,6 +21,6 @@ long_description    The Devel::StackTrace module contains two classes, \
 platforms           darwin
 
 checksums           rmd160  4067cda1000e0e77df4ae6dcb24d3fd915413b69 \
-                    sha256  7618cd4ebe24e254c17085f4b418784ab503cb4cb3baf8f48a7be894e59ba848
+sha256  7618cd4ebe24e254c17085f4b418784ab503cb4cb3baf8f48a7be894e59ba848
 
 supported_archs     noarch

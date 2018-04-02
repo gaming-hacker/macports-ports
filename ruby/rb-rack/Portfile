@@ -15,5 +15,5 @@ homepage            http://rack.github.com/
 platforms           darwin
 
 checksums           md5 22268803c9b8b785ed30fcee5bce3ce7 \
-                    rmd160 8b4448492f2fb2288df7249cb9e96f57f71ac75f \
-                    sha1 49ae682c029daa5007e7fe7f47096c8788743c8e
+rmd160 8b4448492f2fb2288df7249cb9e96f57f71ac75f \
+sha1 49ae682c029daa5007e7fe7f47096c8788743c8e

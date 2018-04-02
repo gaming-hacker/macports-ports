@@ -22,7 +22,7 @@ master_sites        ${homepage} \
                     http://download.openpkg.org/components/cache/libedit/
 
 checksums           rmd160 6a463e0df6a5655cef466c7823ba521c65f9fe2a \
-                    sha256 91f2d90fbd2a048ff6dad7131d9a39e690fd8a8fd982a353f1333dd4017dd4be
+sha256 91f2d90fbd2a048ff6dad7131d9a39e690fd8a8fd982a353f1333dd4017dd4be
 
 depends_lib         port:ncurses
 

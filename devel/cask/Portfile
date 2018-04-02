@@ -19,7 +19,7 @@ license             GPL-3+
 maintainers         {@amake madlon-kay.com:aaron+macports} openmaintainer
 
 checksums           rmd160  80e41fcaa636736bd7c329b2e7f57224dff4eef8 \
-                    sha256  914335db499cc7093f599f0f3eb6662c80bbf5eb7d4cd459ccaafc3d8f2be2f1
+sha256  914335db499cc7093f599f0f3eb6662c80bbf5eb7d4cd459ccaafc3d8f2be2f1
 
 python.default_version 27
 

@@ -18,8 +18,8 @@ maintainers     toby
 
 master_sites    sourceforge
 checksums       md5 48266ba28a8b8f619a66950bced7dbb7 \
-                sha1 b2703230ef43c8a58e9b82227b3cddcd93d2cafa \
-                rmd160 9e5127fdbfed0c8982350069fcd904274e121580
+sha1 b2703230ef43c8a58e9b82227b3cddcd93d2cafa \
+rmd160 9e5127fdbfed0c8982350069fcd904274e121580
 
 patchfiles      patch-arRsync.xcodeproj__project.pbxproj \
                 patch-mainUIController.m \

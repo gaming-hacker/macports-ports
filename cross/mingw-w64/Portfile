@@ -18,7 +18,7 @@ long_description    Mingw-w64 is an advancement of the original mingw.org projec
 homepage            http://mingw-w64.sourceforge.net/
 
 checksums           rmd160  8bdde810be33c7b5412812f69479b87dadcf7f64 \
-                    sha256  325d71fb4a62c81fdb36cf3dbc7d2c816df1a821b818fab80a9959a80b6e1df6
+sha256  325d71fb4a62c81fdb36cf3dbc7d2c816df1a821b818fab80a9959a80b6e1df6
 
 # needs an out-of-source build
 configure.dir       ${workpath}/build

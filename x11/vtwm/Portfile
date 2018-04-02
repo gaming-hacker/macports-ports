@@ -12,8 +12,8 @@ platforms	darwin
 homepage	ftp://ftp.visi.com/users/hawkeyd/X/
 master_sites	${homepage}
 checksums           md5     e6116c0d7ca973488b39e8964e4153f0 \
-                    sha1    5d983007a5b4b0be6796232efe97527b3af16429 \
-                    rmd160  a72c51ad3a4e80b1d9ba9bdaa7ea3ea8a89aa3d0
+sha1    5d983007a5b4b0be6796232efe97527b3af16429 \
+rmd160  a72c51ad3a4e80b1d9ba9bdaa7ea3ea8a89aa3d0
 use_xmkmf	yes
 patchfiles	patch-gram.y
 

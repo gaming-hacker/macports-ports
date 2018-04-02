@@ -23,7 +23,7 @@ long_description    The mr(1) command can checkout, update, or perform other act
 homepage            http://myrepos.branchable.com/
 
 checksums           rmd160  384627c616559acedfc9ea8bdd458c45b176c05a \
-                    sha256  fafabe64ccbd80b2ad942404c60b0f05dbad56de930e09185321408bf11d7e26
+sha256  fafabe64ccbd80b2ad942404c60b0f05dbad56de930e09185321408bf11d7e26
 
 supported_archs     noarch
 use_configure       no

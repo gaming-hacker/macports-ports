@@ -19,7 +19,7 @@ platforms           darwin
 
 master_sites        ${homepage}
 checksums           rmd160  e5eea84e187fe52a1f839b3375140275202350f5 \
-                    sha256  331006f0bcee593af3f4faaaf1de8db825e2aa60449be1c961916b37d562e147
+sha256  331006f0bcee593af3f4faaaf1de8db825e2aa60449be1c961916b37d562e147
 
 use_autoconf        yes
 

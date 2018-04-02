@@ -12,6 +12,6 @@ description         PEAR SOAP_Interop package
 long_description    ${description}
 
 checksums           rmd160  fd0dc5bfe52457def4cb9f7de41fd2cb07747da1 \
-                    sha256  86473f584dedacd0ec9e664bab0c366d68a86a24a6f9bdfb044d1cbc58c621dc
+sha256  86473f584dedacd0ec9e664bab0c366d68a86a24a6f9bdfb044d1cbc58c621dc
 
 depends_lib-append  port:pear-SOAP

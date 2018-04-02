@@ -26,7 +26,7 @@ long_description        Gramps is a genealogy program to store, edit, \
 homepage                https://www.gramps-project.org/
 
 checksums               rmd160  c8f41d39e16665ae4327dfacfe154ec451285e79 \
-                        sha256  924bd2418ebd6676ea61b639ae4bc5a21b12ac7044a9b5a669eea4ed373a97af \
+sha256  924bd2418ebd6676ea61b639ae4bc5a21b12ac7044a9b5a669eea4ed373a97af \
 size    18704782
 
 depends_build-append    port:intltool

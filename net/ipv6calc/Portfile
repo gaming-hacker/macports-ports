@@ -24,7 +24,7 @@ homepage            http://www.deepspace6.net/projects/ipv6calc.html
 master_sites        ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/
 
 checksums           rmd160  44071e7718b1608ff1404f4597468f3f0029b226 \
-                    sha256  74b0455e61834843bf8a5e7e0e0f39dd2b148114ff896d590eb2d826714594bd \
+sha256  74b0455e61834843bf8a5e7e0e0f39dd2b148114ff896d590eb2d826714594bd \
 size    1342987
 
 patchfiles          patch-man__Makefile.in-add-prefix-variable.diff \

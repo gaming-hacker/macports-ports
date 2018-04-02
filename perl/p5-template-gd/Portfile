@@ -15,7 +15,7 @@ long_description    The Template-GD distribution provides a number of Template T
                     turn provide an interface to Thomas Boutell's GD graphics library.
 
 checksums           rmd160  50c3bfddb800681b17d0497a8246e6981440952e \
-                    sha256  98523c8192f2e8184042e5a2e172bd767ac289dd2e480f35f680dce32160905b
+sha256  98523c8192f2e8184042e5a2e172bd767ac289dd2e480f35f680dce32160905b
 
 platforms           darwin
 supported_archs     noarch

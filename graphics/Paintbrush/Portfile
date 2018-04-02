@@ -18,8 +18,8 @@ homepage            http://paintbrush.sourceforge.net/
 master_sites        sourceforge:paintbrush
 distname            paintbrush-${version}-source
 checksums           md5 1e1d271eeca6a5790e1451ae191338ad \
-                    sha1 10485b6b33b72dc81b9954d9265a3a657a177b77 \
-                    rmd160 e4fc68079738d3f422634da1def84bf91cb12b3e
+sha1 10485b6b33b72dc81b9954d9265a3a657a177b77 \
+rmd160 e4fc68079738d3f422634da1def84bf91cb12b3e
 
 extract.mkdir       yes
 xcode.project       Paintbrush2.xcodeproj

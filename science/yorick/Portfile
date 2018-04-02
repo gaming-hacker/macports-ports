@@ -17,7 +17,7 @@ long_description    An interpreted programming language for numerical \
 homepage            http://yorick.github.com/
 
 checksums           rmd160  187dcd51f7f68eb76419c3be3e7177d03f329cb9 \
-                    sha256  ca20061944033974227ebdafdcea0d510153f7e992e90ca276773e1a5291807d
+sha256  ca20061944033974227ebdafdcea0d510153f7e992e90ca276773e1a5291807d
 
 depends_lib         port:xorg-libX11
 

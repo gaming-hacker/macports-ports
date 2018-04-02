@@ -21,7 +21,7 @@ master_sites        https://bitbucket.org/mmottl/postgresql-ocaml/downloads/
 distname            postgresql-ocaml-${version}
 
 checksums           rmd160  c896128f9edd39e45b39201742bb1d8d52562bc6 \
-                    sha256  ec52fd469cf06aabd67d79cadedc153492d4b398351d10ee01b532d377403840
+sha256  ec52fd469cf06aabd67d79cadedc153492d4b398351d10ee01b532d377403840
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib \

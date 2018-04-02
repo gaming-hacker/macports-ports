@@ -18,7 +18,7 @@ description         cli for speedtest.net
 long_description    command line interface for testing internet bandwidth using speedtest.net
 
 checksums           rmd160  be11832a9fdca8e9ee3d43609b46bb61594e0d75 \
-                    sha256  cdd4ed4e7cf960e230df4cd3ef8b9bf938f2dd6335cba6c8ae080e9771431c2a \
+sha256  cdd4ed4e7cf960e230df4cd3ef8b9bf938f2dd6335cba6c8ae080e9771431c2a \
 size    23655
 
 depends_build-append \

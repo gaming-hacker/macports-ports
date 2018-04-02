@@ -12,4 +12,4 @@ description         PEAR HTML_Crypt package
 long_description    ${description}
 
 checksums           rmd160  d637bac6d264fbd410d56a254a7bd226712d39f7 \
-                    sha256  4f56d149bcd8f19e765ae23e63e7cdc9ec9823c51bdc823f84ace3f31fac07ae
+sha256  4f56d149bcd8f19e765ae23e63e7cdc9ec9823c51bdc823f84ace3f31fac07ae

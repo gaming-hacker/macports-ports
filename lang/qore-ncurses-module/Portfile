@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        sourceforge:qore
 
 checksums           md5 b2325c2ff8778ae51c5dabffe30bcd1c \
-                    sha1 e562ef797c1ef9c8edfb6795662ec3f0aa1c6e7b \
-                    rmd160 1f019d0b9004d5a990abf5a541c17016d4d7147e
+sha1 e562ef797c1ef9c8edfb6795662ec3f0aa1c6e7b \
+rmd160 1f019d0b9004d5a990abf5a541c17016d4d7147e
 
 depends_lib         port:qore \
                     port:ncurses

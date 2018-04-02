@@ -7,7 +7,7 @@ PortGroup           github 1.0
 github.setup        gerbilvis gerbil 94f704447b5ce2dcd77019a641d96382dcb174a7
 version             2017-02-19-94f7044
 checksums           rmd160  0f56728d486d366ab9bac90bc4057007a5b4bca2 \
-                    sha256  a7fb37313dbacac0fb580296183aa92563bfaa39e11a518965e58320c16270c0 \
+sha256  a7fb37313dbacac0fb580296183aa92563bfaa39e11a518965e58320c16270c0 \
 size    2304146
 
 categories          science

@@ -24,7 +24,7 @@ homepage      https://www.lsc-group.phys.uwm.edu/daswg/projects/glue.html
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160 71dceed13de28e620ed8e08c86ecf96e1bc05413 \
-              sha256 ef0052467457bc20f92045dfb7f6d33c440d9bddde2120a31c54465bbe16ed09
+sha256 ef0052467457bc20f92045dfb7f6d33c440d9bddde2120a31c54465bbe16ed09
 
 python.default_version  27
 

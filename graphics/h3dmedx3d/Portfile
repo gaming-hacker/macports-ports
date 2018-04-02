@@ -17,7 +17,7 @@ homepage            http://www.h3dapi.org
 master_sites        ftp://www.h3dapi.org/pub/releases/source
 
 checksums           rmd160  be169a9c2344f90aee5d35ef77c55a49e2a1713f \
-                    sha256  97e9bf56b91a1e77ee8f2d737bdae601d02bac54a1bbc57a7d0f280841db9b01
+sha256  97e9bf56b91a1e77ee8f2d737bdae601d02bac54a1bbc57a7d0f280841db9b01
 
 depends_lib         port:h3dapi
 

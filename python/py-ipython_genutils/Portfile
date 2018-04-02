@@ -23,7 +23,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  238484bee4bec1775816b14a81192739bb80bbe9 \
-                    sha256  eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8
+sha256  eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8
 
 if {${name} ne ${subport}} {
     livecheck.type      none

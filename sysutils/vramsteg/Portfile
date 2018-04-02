@@ -19,7 +19,7 @@ homepage        http://tasktools.org/projects/vramsteg.html
 master_sites    http://tasktools.org/download/
 
 checksums       rmd160  240427649114ecc16b46afe30e902f0b4892b682 \
-                sha256  9cc82eb195e4673d9ee6151373746bd22513033e96411ffc1d250920801f7037
+sha256  9cc82eb195e4673d9ee6151373746bd22513033e96411ffc1d250920801f7037
 
 cmake.out_of_source yes
 

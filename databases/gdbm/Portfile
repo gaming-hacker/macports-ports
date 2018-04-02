@@ -22,7 +22,7 @@ depends_lib         port:gettext \
 
 master_sites        gnu
 checksums           rmd160  c42b51b1cc9170ff6bae8bc0a0961a0e8c6d8d22 \
-                    sha256  cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
+sha256  cdceff00ffe014495bed3aed71c7910aa88bf29379f795abc0f46d4ee5f8bc5f
 
 # Don't link using "-flat_namespace -undefined suppress" on Yosemite and
 # later (#45709).

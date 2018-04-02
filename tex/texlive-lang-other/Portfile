@@ -14,14 +14,14 @@ description         TeX Live: Other languages
 long_description    Support for languages not otherwise listed, including Indic, Thai, Vietnamese, Hebrew, Indonesian, African languages, and plenty more.  The split is made simply on the basis of the size of the support, to keep both collection sizes and the number of collections reasonable.
 
 checksums           texlive-lang-other-44414-run.tar.xz \
-                    rmd160  09283622c0bf7ae4195f515f536de9fb8e8066e0 \
-                    sha256  ec3154746d15e7123243c0157c7424e33e48c8647a20f782b7e152d77ab063d1 \
+rmd160  09283622c0bf7ae4195f515f536de9fb8e8066e0 \
+sha256  ec3154746d15e7123243c0157c7424e33e48c8647a20f782b7e152d77ab063d1 \
                     texlive-lang-other-44414-doc.tar.xz \
-                    rmd160  059abb7060effd4c1c997c38bb4c840c4c664d38 \
-                    sha256  7bd8c6e60333e95966da70ac20e55bb8397bac60ae65c9e3c225a6d59a608116 \
+rmd160  059abb7060effd4c1c997c38bb4c840c4c664d38 \
+sha256  7bd8c6e60333e95966da70ac20e55bb8397bac60ae65c9e3c225a6d59a608116 \
                     texlive-lang-other-44414-src.tar.xz \
-                    rmd160  df86097a7a364be234fdf8dc5d0cda2d7373e94b \
-                    sha256  84889c920a6e3dbb189dc3555fb62ef0c754851a9665d164aa277534e9faca69
+rmd160  df86097a7a364be234fdf8dc5d0cda2d7373e94b \
+sha256  84889c920a6e3dbb189dc3555fb62ef0c754851a9665d164aa277534e9faca69
 
 depends_lib         port:texlive-basic
 

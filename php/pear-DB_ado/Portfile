@@ -12,6 +12,6 @@ description         PEAR DB_ado package
 long_description    ${description}
 
 checksums           rmd160  4387e8afa72bd3651d20abdca934d60f90cbbac6 \
-                    sha256  0eb5ede5d8b814a96f085103e282a64afd73842448217a691b5767715d680401
+sha256  0eb5ede5d8b814a96f085103e282a64afd73842448217a691b5767715d680401
 
 depends_lib-append  port:pear-DB

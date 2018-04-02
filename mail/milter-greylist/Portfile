@@ -19,8 +19,8 @@ master_sites    https://ftp.espci.fr/pub/milter-greylist/ \
 extract.suffix	.tgz
 
 checksums	md5	8872008db2fc6b93dd9ab8576383fec2 \
-		sha1	c274969bcd599c6bc7100ffc6f107db493ee0a05 \
-		rmd160	5d00a5df1cf4360e990859801ef09062493c8164
+sha1	c274969bcd599c6bc7100ffc6f107db493ee0a05 \
+rmd160	5d00a5df1cf4360e990859801ef09062493c8164
 
 depends_lib	port:libmilter
 

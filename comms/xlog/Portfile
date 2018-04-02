@@ -17,7 +17,7 @@ homepage            http://www.nongnu.org/xlog/
 master_sites        https://download.savannah.gnu.org/releases/xlog/
 
 checksums           rmd160  a1a78a90c74d7f73ea680fe80a324eaea3e36e95 \
-                    sha256  0f22ebae56f7d0ef0cac6ae7047ec3fe6b330dc68dd7b25ed2c23fdc1c52a10f
+sha256  0f22ebae56f7d0ef0cac6ae7047ec3fe6b330dc68dd7b25ed2c23fdc1c52a10f
 
 patchfiles          patch-configure.diff
 

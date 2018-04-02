@@ -21,7 +21,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  7fb334aead52ddd9baead32cee73ecd4cecc2ca7 \
-                    sha256  9caf7ad954a4367ee64c53ed996d807c3bdaece13fe2e2587457e06bfa35d89b
+sha256  9caf7ad954a4367ee64c53ed996d807c3bdaece13fe2e2587457e06bfa35d89b
 
 depends_lib         port:zlib port:minizip
 

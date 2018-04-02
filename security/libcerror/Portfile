@@ -17,7 +17,7 @@ distname            ${name}-alpha-${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  3c6ee66ec457e33702ddc03f44f183e27b8b62f9 \
-                    sha256  2598b91ac654e1d21f8043d3700f5fe654401df01df270b38f2eeefae4807449
+sha256  2598b91ac654e1d21f8043d3700f5fe654401df01df270b38f2eeefae4807449
 
 depends_build       port:pkgconfig
 

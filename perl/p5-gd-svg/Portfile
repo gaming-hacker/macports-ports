@@ -16,7 +16,7 @@ description         Perl extension for Seamlessly enabling SVG output from \
 long_description    ${description}
 
 checksums           rmd160  b38cfec7b83f024f11cb3b1d41f2ddfad82fd588 \
-                    sha256  aee397906a94cf6a478defff9f4939dbf8293a62ee382360c77e3e209170012b
+sha256  aee397906a94cf6a478defff9f4939dbf8293a62ee382360c77e3e209170012b
 
 platforms           darwin
 supported_archs     noarch

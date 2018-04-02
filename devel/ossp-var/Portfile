@@ -14,7 +14,7 @@ homepage		http://www.ossp.org/pkg/lib/var/
 master_sites	ftp://ftp.ossp.org/pkg/lib/var/ freebsd
 distname		var-${version}
 checksums           rmd160  e810dd1e232f460cba9a6fcc3f9caf7bff683d75 \
-                    sha256  93d41599b3224a4c212c52aea3e6126226029ba7d4fa58781b89465e23e11921
+sha256  93d41599b3224a4c212c52aea3e6126226029ba7d4fa58781b89465e23e11921
 
 configure.args	--mandir=${prefix}/share/man
 

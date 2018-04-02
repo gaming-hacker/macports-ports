@@ -17,7 +17,7 @@ long_description    This distribution enables the framework for abstracting comm
 platforms           darwin
 
 checksums           rmd160  7a22be1a840a99d2d03eb7665c72359fc6de55e1 \
-                    sha256  4085971d5663e97e6feec623e58d7cd818909086cb7047505c6915d359442fa5
+sha256  4085971d5663e97e6feec623e58d7cd818909086cb7047505c6915d359442fa5
 
 if {${perl5.major} != ""} {
     depends_lib-append \

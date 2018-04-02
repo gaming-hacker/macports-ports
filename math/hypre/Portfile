@@ -16,7 +16,7 @@ long_description    hypre is a library for solving large, sparse linear \
                     systems of equations on massively parallel computers.
 
 checksums           rmd160  e5728eab52dd5907473de790e3360c86b5ac2d7e \
-                    sha256  f2f39ab69c1a5f35edabba36e8ff18d0fce7e15f4e78c41ee6c6de9476902bea \
+sha256  f2f39ab69c1a5f35edabba36e8ff18d0fce7e15f4e78c41ee6c6de9476902bea \
 size    7314626
 
 worksrcdir          ${distname}/src

@@ -13,7 +13,7 @@ description         PEAR PHP_CompatInfo package
 long_description    ${description}
 
 checksums           rmd160  1172f6b7955806b9222c5cd089818a01c5201cb2 \
-                    sha256  3d25a64e1f2b3b7617ea5a5580fb05820762b356d7f31cb3ae112c98179ee80c
+sha256  3d25a64e1f2b3b7617ea5a5580fb05820762b356d7f31cb3ae112c98179ee80c
 
 depends_lib-append  port:pear-Console_Table \
                     port:pear-Console_GetArgs \

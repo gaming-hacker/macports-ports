@@ -14,7 +14,7 @@ homepage            http://www.five-ten-sg.com/libpst/
 master_sites        http://www.five-ten-sg.com/libpst/packages/
 
 checksums           rmd160  b0873c3098ef82236f3a3db1ad95ced45dec9cf6 \
-                    sha256  7e898ea37078321db8aa3dd49a39769285c5e033fc96ec62b0c54433d453ac1a
+sha256  7e898ea37078321db8aa3dd49a39769285c5e033fc96ec62b0c54433d453ac1a
 
 depends_build       port:pkgconfig
 depends_lib         port:libiconv \

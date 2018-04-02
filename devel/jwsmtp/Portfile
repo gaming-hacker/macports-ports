@@ -19,6 +19,6 @@ platforms       darwin
 master_sites    sourceforge
 
 checksums       md5     8f634f3be6118dc5fb2f43fb5e25af36 \
-                sha1    5aa8ad36a44a2bdaccadaccc060dda0f18ef6910 \
-                rmd160  448d73424bd9464e51d921c47dadcb5e309c4e0f
+sha1    5aa8ad36a44a2bdaccadaccc060dda0f18ef6910 \
+rmd160  448d73424bd9464e51d921c47dadcb5e309c4e0f
 

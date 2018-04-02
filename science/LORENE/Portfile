@@ -28,7 +28,7 @@ distname            lorene
 distfiles           ${distname}_${version}+dfsg.orig.tar.xz
 use_xz              yes
 checksums           rmd160  36346f8d7a50acee20a5b81051af2e7fe5f188c1 \
-                    sha256  ef797abc51ed8ae27c200f5b71fd0a3824d1fa310392dac57067de2e423222ed
+sha256  ef797abc51ed8ae27c200f5b71fd0a3824d1fa310392dac57067de2e423222ed
 worksrcdir          ${distname}-${version}+dfsg
 
 depends_lib         port:gsl \

@@ -14,7 +14,7 @@ long_description    ${description}. For development of new Alien:: modules, cons
 platforms           darwin
 
 checksums           rmd160  4fc02a2c1f191b4c4ec96ae0fc350a5034a2ea05 \
-                    sha256  a7e7515aaa5b10df4a98a105fc50348b46591ae21fe55cdeb56bac7405158e59 \
+sha256  a7e7515aaa5b10df4a98a105fc50348b46591ae21fe55cdeb56bac7405158e59 \
 size    63338
 
 if {${perl5.major} != ""} {

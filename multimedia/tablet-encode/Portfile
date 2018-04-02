@@ -19,7 +19,7 @@ homepage            http://mediautils.garage.maemo.org/tablet-encode.html
 master_sites        https://garage.maemo.org/frs/download.php/6892
 
 checksums           rmd160  71aa43d56df5c70484dda3dd882033e8639ae8e0 \
-                    sha256  ce1f413c111429db14f41ca611297896357065d0934b7dce9e341a77e178f557
+sha256  ce1f413c111429db14f41ca611297896357065d0934b7dce9e341a77e178f557
 
 perl5.branches      5.26
 

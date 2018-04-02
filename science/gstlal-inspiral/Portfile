@@ -22,7 +22,7 @@ homepage      https://www.lsc-group.phys.uwm.edu/daswg/projects/gstlal.html
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160 4e6a85cd11cc5bea4341b182ec927748c6aa6b88 \
-              sha256 1738edc1cde2d11f3f8831e34106d86c837381f55a42e5e213ee0827c984b16b
+sha256 1738edc1cde2d11f3f8831e34106d86c837381f55a42e5e213ee0827c984b16b
 
 #depends_build port:pkgconfig
 

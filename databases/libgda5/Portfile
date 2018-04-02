@@ -24,7 +24,7 @@ master_sites        gnome:sources/${gname}/${branch}/
 use_xz              yes
 
 checksums           rmd160  6e39fb20c046ff98d0bb6a347785535b9267aa1d \
-                    sha256  2cee38dd583ccbaa5bdf6c01ca5f88cc08758b9b144938a51a478eb2684b765e
+sha256  2cee38dd583ccbaa5bdf6c01ca5f88cc08758b9b144938a51a478eb2684b765e
 
 depends_build       port:pkgconfig \
                     port:intltool \

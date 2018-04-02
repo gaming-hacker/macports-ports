@@ -24,7 +24,7 @@ master_sites        ${homepage}
 distname            ${my_name}-${version}
 
 checksums           rmd160 2cbc9bd66e0dbe20d81d371fc560f52a5d8323b9 \
-                    sha256 96e94af7dd7031d8d6dd6e2a8e0de593b511c211a86e28a9c9621c275ac8bacb
+sha256 96e94af7dd7031d8d6dd6e2a8e0de593b511c211a86e28a9c9621c275ac8bacb
 
 if {${name} ne ${subport}} {
     post-destroot {

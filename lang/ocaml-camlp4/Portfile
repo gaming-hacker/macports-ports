@@ -25,7 +25,7 @@ long_description    \
 platforms           darwin
 
 checksums           rmd160  39daba906c2c3cfcc4f22f0de1f2f43e508b86e2 \
-                    sha256  a21d17cdc007ee76a67d5a9b2cc5851a5e7e9fcc5d8bccf8855b6ac2e7c2aa25
+sha256  a21d17cdc007ee76a67d5a9b2cc5851a5e7e9fcc5d8bccf8855b6ac2e7c2aa25
 
 configure.pre_args  --bindir=${prefix}/bin --libdir=${prefix}/lib/ocaml --pkgdir=${ocamlfind_dir}
 

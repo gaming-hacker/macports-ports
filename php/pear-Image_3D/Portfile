@@ -12,4 +12,4 @@ description         PEAR Image_3D package
 long_description    ${description}
 
 checksums           rmd160  8400ffb2818d795ccdab30e4f0a4c224ed2d6080 \
-                    sha256  394bbacae27c82a300032344b426e90ffdcf7a3e12699e92492c3daf3d69d47a
+sha256  394bbacae27c82a300032344b426e90ffdcf7a3e12699e92492c3daf3d69d47a

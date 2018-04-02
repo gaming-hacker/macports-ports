@@ -19,7 +19,7 @@ description         Data::Perl - Base classes wrapping fundamental Perl data typ
 long_description    ${description}
 
 checksums           rmd160  078d40fd49ccd79e8afeb58856414f98fc2271fc \
-                    sha256  b62b2225870c2c3b16fb78c429f8729ddb8ed0e342f4209ec3c261b764c36f8b
+sha256  b62b2225870c2c3b16fb78c429f8729ddb8ed0e342f4209ec3c261b764c36f8b
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-class-method-modifiers \

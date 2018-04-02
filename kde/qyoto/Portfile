@@ -22,7 +22,7 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  bb4a45a312a894583cd1479b45141184f305bce8 \
-                    sha256  44a6e2eacc4645cc0e217812948518860661dc52215af005726cc40ab96ddc46
+sha256  44a6e2eacc4645cc0e217812948518860661dc52215af005726cc40ab96ddc46
 
 depends_lib-append  port:kdelibs4 \
                     port:smokekde \

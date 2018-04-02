@@ -23,7 +23,7 @@ master_sites        pypi:p/python-geohash/
 distname            python-geohash-${version}
 
 checksums           rmd160  e490fb2bc77ad5160a642d54d69555eb9bfbfd6f \
-                    sha256  05a21fcf4eda1a5eddbd291890ade23fc5ddaa6bb98f2ee23d2d384ed14f086d
+sha256  05a21fcf4eda1a5eddbd291890ade23fc5ddaa6bb98f2ee23d2d384ed14f086d
 
 if {${name} ne ${subport}} {
     livecheck.type      none

@@ -18,7 +18,7 @@ long_description    A Perl program for converting mail or news messages into \
 platforms           darwin
 
 checksums           rmd160  6c2edc1574a423719b77acfbbcc378ea79711d9d \
-                    sha256  f8bf2874e6ea37830b0d5155fb99acf788005877df7573f1276344e947da8352
+sha256  f8bf2874e6ea37830b0d5155fb99acf788005877df7573f1276344e947da8352
 
 homepage            http://www.mhonarc.org/
 

@@ -14,7 +14,7 @@ platforms	darwin
 
 master_sites	gnu
 checksums           rmd160  4c21b871c4a8c486783184a4400dce8bfd6757a8 \
-                    sha256  93ef7a2d8bc3b50cd2e228cfe27e296ee14accadf8533bad9b2beee88a96e8fa
+sha256  93ef7a2d8bc3b50cd2e228cfe27e296ee14accadf8533bad9b2beee88a96e8fa
 
 depends_lib	port:gettext port:libiconv port:libgsasl port:gdbm
 

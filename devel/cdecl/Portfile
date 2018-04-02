@@ -18,7 +18,7 @@ long_description    cdecl (see-deh-kull) is a program for composing \
                     or standard input.
 
 checksums           rmd160  b4d00ee81161100168927ca1f39ce8af0d148600 \
-                    sha256  435b09f2fdfb2f11ed4d64b87cc890cd9717a27efaeac1f34e00d3aa1ec35176 \
+sha256  435b09f2fdfb2f11ed4d64b87cc890cd9717a27efaeac1f34e00d3aa1ec35176 \
 size    269175
 
 depends_build-append    port:autoconf \

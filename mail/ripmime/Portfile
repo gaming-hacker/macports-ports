@@ -17,7 +17,7 @@ homepage            http://www.pldaniels.com/ripmime/
 master_sites        ${homepage}
 
 checksums           rmd160  312f6ca37e73a5a024dd8cf07e6b969b6d7a952d \
-                    sha256  896115488a7b7cad3b80f2718695b0c7b7c89fc0d456b09125c37f5a5734406a
+sha256  896115488a7b7cad3b80f2718695b0c7b7c89fc0d456b09125c37f5a5734406a
 
 depends_lib         port:libiconv
 

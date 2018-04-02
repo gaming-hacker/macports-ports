@@ -25,7 +25,7 @@ homepage            http://xjack.org/retail/
 master_sites        ${homepage}download/
 
 checksums           rmd160  271f532a965d7173ad5090e69c60861888eb657b \
-                    sha256  056d9f3852a05399d478f4852e4a82b1165aa433341f39228decdd82ed58fcce
+sha256  056d9f3852a05399d478f4852e4a82b1165aa433341f39228decdd82ed58fcce
 
 patchfiles          patch-src-Makefile.in.diff
 

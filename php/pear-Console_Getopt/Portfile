@@ -13,4 +13,4 @@ description         PEAR Console_Getopt package
 long_description    ${description}
 
 checksums           rmd160  aae10ad272bf2a66bc80d899f60cb8e630f90d16 \
-                    sha256  9381ad3f8e48574c38917b55caae2cd20cf152af8e65a31d09931fad829161c4
+sha256  9381ad3f8e48574c38917b55caae2cd20cf152af8e65a31d09931fad829161c4

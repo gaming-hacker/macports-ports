@@ -13,7 +13,7 @@ description         PEAR PEAR_PackageFileManager_Frontend package
 long_description    ${description}
 
 checksums           rmd160  3b841f5421a5d73bb015919664f63bce7c2a10c4 \
-                    sha256  a1149a617a7803e32e521d05cde14ce7ce60d1a089bfe47650191e6a0a4e53c3
+sha256  a1149a617a7803e32e521d05cde14ce7ce60d1a089bfe47650191e6a0a4e53c3
 
 depends_lib-append  port:pear-PEAR_PackageFileManager \
                     port:pear-Config

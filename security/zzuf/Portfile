@@ -21,4 +21,4 @@ github.tarball_from releases
 use_bzip2           yes
 
 checksums           rmd160  c6c3c7dc39719ebde7a4c97b4d22f3226536b7a7 \
-                    sha256  04353d94c68391b3945199f100ab47fc5ff7815db1e92581a600d4175e3a6872
+sha256  04353d94c68391b3945199f100ab47fc5ff7815db1e92581a600d4175e3a6872

@@ -16,8 +16,8 @@ platforms		darwin
 
 use_xz		yes
 checksums \
-	rmd160 c5b68045102773c86e65b87c3a99879e4e360188 \
-	sha256 beda669de952875699ad99b27781eebd9393e6becd41961f87278f6682f3b903
+rmd160 c5b68045102773c86e65b87c3a99879e4e360188 \
+sha256 beda669de952875699ad99b27781eebd9393e6becd41961f87278f6682f3b903
 use_configure		yes
 
 configure.args-append	--with-etcdir=${prefix}/etc

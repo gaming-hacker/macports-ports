@@ -18,7 +18,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  0272ac79d16963e322e3e7cc414e1d5ca69dcd51 \
-                    sha256  acebabf9081afc4856cda7c4b241c922b2082c25bfd19e8b8a924e959490c655
+sha256  acebabf9081afc4856cda7c4b241c922b2082c25bfd19e8b8a924e959490c655
 
 if {${name} ne ${subport}} {
     livecheck.type  none

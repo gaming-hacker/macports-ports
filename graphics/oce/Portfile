@@ -16,7 +16,7 @@ description                 Open CASCADE Community Edition
 long_description            ${description}
 
 checksums                   rmd160  0894502fe6dec7dc6be566dddc00bc0914e0b9a9 \
-                            sha256  e73f1cb3bfd087abb903296944ea159d51266748a6b05162d0ee927ec3bb40cf
+sha256  e73f1cb3bfd087abb903296944ea159d51266748a6b05162d0ee927ec3bb40cf
 
 depends_lib-append          port:freetype
 

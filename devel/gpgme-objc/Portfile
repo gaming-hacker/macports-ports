@@ -23,7 +23,7 @@ extract.suffix      .tgz
 distname            ${rname}-${version}
 dist_subdir         macgpg
 checksums           md5 9f6fc9eb6d36c298c045178703041314            \
-                    sha1 ff02efeac01253c9df797ec314ef0e4fc537964e
+sha1 ff02efeac01253c9df797ec314ef0e4fc537964e
 
 patchfiles          patch-GPGME.xcode-project.pbxproj.diff
 

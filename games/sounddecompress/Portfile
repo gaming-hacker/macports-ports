@@ -34,8 +34,8 @@ distname                    ${name}_v[strsed ${version} {g/\.//}]
 use_bzip2                   yes
 
 checksums                   md5     8a3dace5f7158e65e81fcc337c4b8082 \
-                            sha1    724358f43d38009512d6d03f0b1e28b07efccc4d \
-                            rmd160  4adab63b65699aae5fc0e7941da94cc23718f728
+sha1    724358f43d38009512d6d03f0b1e28b07efccc4d \
+rmd160  4adab63b65699aae5fc0e7941da94cc23718f728
 
 depends_lib                 port:libhsplasma \
                             port:sox

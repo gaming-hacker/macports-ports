@@ -9,7 +9,7 @@ name                x265
 version             2.6
 
 checksums           rmd160  9bffc2a99c576a99a49d2ce8d8dd690c375a3972 \
-                    sha256  1bf0036415996af841884802161065b9e6be74f5f6808ac04831363e2549cdbf \
+sha256  1bf0036415996af841884802161065b9e6be74f5f6808ac04831363e2549cdbf \
 size    1271976
 
 categories          multimedia

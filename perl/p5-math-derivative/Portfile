@@ -16,7 +16,7 @@ description         1st and 2nd order differentiation of data
 long_description    ${description}
 
 checksums           rmd160  248511c1a60e98f48f9c7f541023d780be0a343e \
-                    sha256  14c0b3fa05dcb74a44a9de6b4b08c3e58e672826b5f8e47535325b64f6ee69e6
+sha256  14c0b3fa05dcb74a44a9de6b4b08c3e58e672826b5f8e47535325b64f6ee69e6
 
 if {${perl5.major} != ""} {
     depends_build-append \

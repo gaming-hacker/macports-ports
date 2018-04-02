@@ -21,7 +21,7 @@ distfiles           phpStylist-${version}.zip
 use_zip             yes
 
 checksums           sha1    a2eb56b0166c4075572664cdcad8957973f08725 \
-                    rmd160  c9fec853c35f7e5a2993a27bcea88040b80f2814
+rmd160  c9fec853c35f7e5a2993a27bcea88040b80f2814
 
 extract.mkdir       yes
 

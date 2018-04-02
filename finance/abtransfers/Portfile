@@ -49,8 +49,8 @@ destroot {
 }
 
 checksums           md5     bc38d7ee81f1d0456872c384f2890cd8 \
-                    sha1    90163670a917d8e2476151450f42863c0e56ed8d \
-                    rmd160  927c10b91b778649febcf947471149f4e336e584
+sha1    90163670a917d8e2476151450f42863c0e56ed8d \
+rmd160  927c10b91b778649febcf947471149f4e336e584
 
 depends_lib-append  path:lib/libaqbanking.dylib:aqbanking5
 

@@ -12,7 +12,7 @@ description         PEAR CodeGen_MySQL_Plugin package
 long_description    ${description}
 
 checksums           rmd160  0bf4b3faf79cc3cfb3f7442fdff42ba072561fa2 \
-                    sha256  bc0c3dd658437c67efc77bb61100c201fcd5b1bbaef75f953dafddfe0825e471
+sha256  bc0c3dd658437c67efc77bb61100c201fcd5b1bbaef75f953dafddfe0825e471
 
 depends_lib-append  port:pear-CodeGen \
                     port:pear-CodeGen_MySQL

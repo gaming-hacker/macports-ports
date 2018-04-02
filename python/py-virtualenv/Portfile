@@ -20,8 +20,8 @@ homepage            https://pypi.python.org/pypi/${python.rootname}
 master_sites        pypi:v/${python.rootname}
 distname            ${python.rootname}-${version}
 checksums           md5     44e19f4134906fe2d75124427dc9b716 \
-                    rmd160  7060dfd74d078b7e6f49bdeb7c23df083f438760 \
-                    sha256  02f8102c2436bb03b3ee6dede1919d1dac8a427541652e5ec95171ec8adbc93a
+rmd160  7060dfd74d078b7e6f49bdeb7c23df083f438760 \
+sha256  02f8102c2436bb03b3ee6dede1919d1dac8a427541652e5ec95171ec8adbc93a
 
 python.versions 27 36
 

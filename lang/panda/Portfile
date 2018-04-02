@@ -12,7 +12,7 @@ license             Artistic-2
 platforms           darwin
 
 checksums           rmd160  3822231cf9077afecbca73087bf5bf08ec53c862 \
-                    sha256  736b2350441b40b6ef09512370b190e7ff16acca1f697746819964678cb447f6
+sha256  736b2350441b40b6ef09512370b190e7ff16acca1f697746819964678cb447f6
 
 # probably also MoarVM, nqp
 depends_build       port:git \

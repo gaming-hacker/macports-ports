@@ -17,7 +17,7 @@ description         FreezeGun is a library that allows your python tests \
 long_description    ${description}
 
 checksums           rmd160  0efb9548a1f5c66fb77cea94e3da3d1bf07d582a \
-                    sha256  795418513664081d41c1d74ff9551bf03286d863da1634d4a3f897da06f57865
+sha256  795418513664081d41c1d74ff9551bf03286d863da1634d4a3f897da06f57865
 
 python.versions 27 36
 

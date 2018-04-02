@@ -13,7 +13,7 @@ description         Open an HTML file with automatic charset detection
 long_description    ${description}
 
 checksums           rmd160 5578d0c7fb28f889586e1c91290b12c43e4a68ce \
-                    sha256 ea78d2d743794adc028bc9589538eb867174b4e165d7d8b5f63486e6b828e7e0
+sha256 ea78d2d743794adc028bc9589538eb867174b4e165d7d8b5f63486e6b828e7e0
 
 platforms           darwin
 supported_archs     noarch

@@ -22,7 +22,7 @@ homepage                http://mspdebug.sourceforge.net/
 master_sites            sourceforge
 
 checksums               rmd160  64f8735ca4fc6c9a0dbd4948eda0cf6b6b32f65a \
-                        sha256  e5fe5b098c5d0ee1d9766be5531126eca4690c76d59e57112b5f3332b9da3a54
+sha256  e5fe5b098c5d0ee1d9766be5531126eca4690c76d59e57112b5f3332b9da3a54
 
 depends_lib             port:libusb-compat
 

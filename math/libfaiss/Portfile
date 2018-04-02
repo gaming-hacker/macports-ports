@@ -8,7 +8,7 @@ github.setup        facebookresearch faiss 56383610bcb982d6591e2e2bea3516cb7723e
 name                libfaiss
 version             20180214
 checksums           rmd160  e699f7ec89d8c6d5c4957022d26d162ab3b85d62 \
-                    sha256  6ef05ff911e68bb4ff3f209d2abb3a2e57d36f308176e1555266ecd055c565bf
+sha256  6ef05ff911e68bb4ff3f209d2abb3a2e57d36f308176e1555266ecd055c565bf
 categories          math
 license             BSD
 platforms           darwin

@@ -27,8 +27,8 @@ depends_lib         port:gd2 port:radlib path:lib/libssl.dylib:openssl port:libp
                     port:sqlite3 port:curl port:gawk
 
 checksums           md5     a296932574ffb4a3855e505a73daf9c5 \
-                    sha1    f9a09e20633ce0af455df7c91f415db110e243f0 \
-                    rmd160  dd9908ae142c134f4f28dd97acb782c3bfacb4b5
+sha1    f9a09e20633ce0af455df7c91f415db110e243f0 \
+rmd160  dd9908ae142c134f4f28dd97acb782c3bfacb4b5
 
 destroot.violate_mtree
 

@@ -21,7 +21,7 @@ long_description \
 homepage            http://appkido.com/
 
 checksums           rmd160  1846701bae455bd635efe6dc025032f1fc47211e \
-                    sha256  5ed3f3d14d90c6c68059acb688c2d2a44a2eb78581a420951da7861a935db18d
+sha256  5ed3f3d14d90c6c68059acb688c2d2a44a2eb78581a420951da7861a935db18d
 
 build.dir           ${worksrcpath}/src
 

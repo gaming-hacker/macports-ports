@@ -17,7 +17,7 @@ description         Tuned OpenCL BLAS
 long_description    ${description}
 
 checksums           rmd160  ffa7089b36d355cb50c16dae3908bae05bfe8b33 \
-                    sha256  031cb45948ab8a65d445f4da51df0b0c55c96aaee46c246f405540cf966b1f18
+sha256  031cb45948ab8a65d445f4da51df0b0c55c96aaee46c246f405540cf966b1f18
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON \

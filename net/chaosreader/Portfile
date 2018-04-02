@@ -30,8 +30,8 @@ extract.suffix
 extract.only
 
 checksums           md5     ef307a4aa11964dc2558248847219ae9 \
-                    sha1    83277753ee1f1a3bf7cecf82415f381eeffbdd26 \
-                    rmd160  3a915f380d8ca6a6c5f24695c18c0dac9f64bba8
+sha1    83277753ee1f1a3bf7cecf82415f381eeffbdd26 \
+rmd160  3a915f380d8ca6a6c5f24695c18c0dac9f64bba8
 
 supported_archs     noarch
 

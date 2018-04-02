@@ -18,7 +18,7 @@ homepage            https://nice.freedesktop.org/wiki/
 master_sites        https://nice.freedesktop.org/releases/
 
 checksums           rmd160  e1e0bd020518852fbd78c2bd32dccb11592ed585 \
-                    sha256  be120ba95d4490436f0da077ffa8f767bf727b82decf2bf499e39becc027809c
+sha256  be120ba95d4490436f0da077ffa8f767bf727b82decf2bf499e39becc027809c
 
 depends_build       port:pkgconfig
 

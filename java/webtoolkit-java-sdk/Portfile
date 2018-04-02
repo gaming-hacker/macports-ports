@@ -21,7 +21,7 @@ distname                gwt-${version}
 use_zip                 yes
 
 checksums               rmd160  30b41cd4249cd7dcd6b9ac37f4405103ddee2fb1 \
-                        sha256  970701dacc55170088f5eb327137cb4a7581ebb4734188dfcc2fad9941745d1b
+sha256  970701dacc55170088f5eb327137cb4a7581ebb4734188dfcc2fad9941745d1b
 
 use_configure           no
 

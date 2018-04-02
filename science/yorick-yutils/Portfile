@@ -19,7 +19,7 @@ long_description    Yutils is a must-have collection of interpreted routines \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  d4ce6f26cabd2b0f356a039c328dd8c1613840bd \
-                    sha256  d99b2a9e8a937eecfd80221323e6dbc7a44ce658ebbc1191bfe91491b91e7653
+sha256  d99b2a9e8a937eecfd80221323e6dbc7a44ce658ebbc1191bfe91491b91e7653
 
 depends_lib-append  port:yorick
 

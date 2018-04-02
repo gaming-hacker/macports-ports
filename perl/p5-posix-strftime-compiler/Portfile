@@ -20,6 +20,6 @@ long_description \
     useful when you want to write loggers, servers and portable applications.
 
 checksums           rmd160  094789055f621778c5605417313f43ef104d0f0d \
-                    sha256  26582bdd78b254bcc1c56d0b770fa280e8b8f70957c84dc44572ba4cacb0ac11
+sha256  26582bdd78b254bcc1c56d0b770fa280e8b8f70957c84dc44572ba4cacb0ac11
 
 perl5.use_module_build

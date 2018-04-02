@@ -16,7 +16,7 @@ description         Hiredis is a minimalistic C client library for the Redis dat
 long_description    ${description}
 
 checksums           rmd160  56595fa744ea3855e45943e114d80908c9e85e06 \
-                    sha256  b83303b2adba85b9d384d5db124f89ca02550ee58ecfed2502c75d06068f7406
+sha256  b83303b2adba85b9d384d5db124f89ca02550ee58ecfed2502c75d06068f7406
 
 use_configure       no
 

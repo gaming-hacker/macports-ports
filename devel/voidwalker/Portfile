@@ -22,7 +22,7 @@ python.default_version 27
 depends_lib-append  port:FlowUI
 
 checksums           rmd160  ef0dd9383b34d0a0b0a637edc36055666f2ffab7 \
-                    sha256  1bafb20064f2071b5df82a18e9feabdf1200f8395de6afa5bf10722676009390
+sha256  1bafb20064f2071b5df82a18e9feabdf1200f8395de6afa5bf10722676009390
 
  notes              "Add the following line to your ~/.gdbinit to have it loaded\
 automatically whenever GDB is launched:

@@ -18,7 +18,7 @@ homepage            http://www.fatalmind.com/software/hatools/
 master_sites        ${homepage}
 
 checksums           rmd160  fa6b953789869f2746f5b4001ca58cd942757bd6 \
-                    sha256  4bad4723056f87f30633a4702b96be3b2e0d1218b7b96a79c71f42ca3f5dd109
+sha256  4bad4723056f87f30633a4702b96be3b2e0d1218b7b96a79c71f42ca3f5dd109
 
 livecheck.type      regex
 livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}

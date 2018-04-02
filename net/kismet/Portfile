@@ -26,7 +26,7 @@ homepage            https://www.kismetwireless.net/
 master_sites        ${homepage}code
 
 checksums           rmd160  5c4ab94b58c3ded97f4751fd0436c019073910d4 \
-                    sha256  99e76f8f7684199b9176a7a2f6b1bb5c637d89f6906d6de279794fb1fb22cde1
+sha256  99e76f8f7684199b9176a7a2f6b1bb5c637d89f6906d6de279794fb1fb22cde1
 
 depends_lib         port:libpcap port:ncurses
 

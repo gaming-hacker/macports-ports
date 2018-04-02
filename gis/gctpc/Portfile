@@ -21,7 +21,7 @@ extract.suffix      .tar.Z
 worksrcdir          ${name}/source
 
 checksums           rmd160  dabacf08b0c977cfa537b0c7aa28cdd6c5d3eb83 \
-                    sha256  217eae42f580175a04bae11b87afc59fde4f770aeccc16c90ef9f826a94fa66b
+sha256  217eae42f580175a04bae11b87afc59fde4f770aeccc16c90ef9f826a94fa66b
 
 patch.dir           ${workpath}/${name}
 patchfiles          patch-test-test_proj-Makefile.diff

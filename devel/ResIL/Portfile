@@ -29,7 +29,7 @@ master_sites        sourceforge:project/resil
 use_zip             yes
 
 checksums           rmd160  7a0e5a15df4af3db735234db8789909f2097deac \
-                    sha256  83f522170a3838f108e6d9e95989948f898df764c0838f614c8c18e6e8e8e918
+sha256  83f522170a3838f108e6d9e95989948f898df764c0838f614c8c18e6e8e8e918
 
 depends_lib         port:lcms \
                     port:libmng \

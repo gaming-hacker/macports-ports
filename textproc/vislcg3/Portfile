@@ -29,8 +29,8 @@ homepage                http://beta.visl.sdu.dk/constraint_grammar.html
 master_sites            http://beta.visl.sdu.dk/download/vislcg3/
 
 checksums               md5    3875d7d36bedebe17317e32442c18b80 \
-                        sha1   8718fee3e8e9bb2edd58c11175b23661539309c1 \
-                        rmd160 fb0576a1f142bd47dfd35fb665408fe5dc9058e4
+sha1   8718fee3e8e9bb2edd58c11175b23661539309c1 \
+rmd160 fb0576a1f142bd47dfd35fb665408fe5dc9058e4
 
 depends_build           port:pkgconfig port:autoconf port:automake
 depends_lib             port:icu

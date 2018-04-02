@@ -15,8 +15,8 @@ master_sites 	xorg:individual/proto/
 
 distname	recordproto-${version}
 checksums           sha1    1f48c4b0004d8b133efd0498e8d88d68d3b9199c \
-                    rmd160  7cf5ab53e3c06fcb917d67fdbfe235be5b019b23 \
-                    sha256  a777548d2e92aa259f1528de3c4a36d15e07a4650d0976573a8e2ff5437e7370
+rmd160  7cf5ab53e3c06fcb917d67fdbfe235be5b019b23 \
+sha256  a777548d2e92aa259f1528de3c4a36d15e07a4650d0976573a8e2ff5437e7370
 use_bzip2	yes
 
 configure.args \

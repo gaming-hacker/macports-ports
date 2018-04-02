@@ -27,7 +27,7 @@ master_sites        sourceforge:project/ofset/drgeo/${version}/
 distname            drgeo-${version}
 
 checksums           rmd160  94859c622cf9a48f6134d7e348e6f5e94a43ed6c \
-                    sha256  8c93bb637c11ca1647f90e0d97ea03d5938efddc36c2d73b40f15ff8df672216
+sha256  8c93bb637c11ca1647f90e0d97ea03d5938efddc36c2d73b40f15ff8df672216
 
 depends_build       port:pkgconfig
 depends_lib         port:guile18 \

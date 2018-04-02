@@ -16,8 +16,8 @@ long_description \
 homepage    http://www.holdorf.dk/software/downloads/
 master_sites    ${homepage}
 checksums   md5 686e70d857d9f0f34f20ed4205912da5 \
-            sha1 c3faad544315fe9a69725ec119cc1e1749920fff \
-            rmd160 fd27e891346b386b0785d840924552280bcba8ae
+sha1 c3faad544315fe9a69725ec119cc1e1749920fff \
+rmd160 fd27e891346b386b0785d840924552280bcba8ae
 depends_lib port:libpcap port:libnet
 worksrcdir  ${name}
 patchfiles  patch-Makefile.diff

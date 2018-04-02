@@ -18,8 +18,8 @@ long_description    XML-Parser-EasyTree adds a new "built-in" style called "Easy
 platforms           darwin
 
 checksums           md5 f5221737a572a97b3187dade3a1f4191\
-                    sha1 c431d0d0e732812b287fcb2332abb428c5f97193\
-                    rmd160 5e4da0aabd14244d900d6a17d059f8315c407dfd
+sha1 c431d0d0e732812b287fcb2332abb428c5f97193\
+rmd160 5e4da0aabd14244d900d6a17d059f8315c407dfd
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -12,6 +12,6 @@ description         PEAR Services_Blogging package
 long_description    ${description}
 
 checksums           rmd160  87832c1ffba9cd3762321d913832bf0f8cba4cce \
-                    sha256  9df4cd052c20192d72cc0783c6248a035c1468a84c727117f34f7358944a974c
+sha256  9df4cd052c20192d72cc0783c6248a035c1468a84c727117f34f7358944a974c
 
 depends_lib-append  port:pear-XML_RPC

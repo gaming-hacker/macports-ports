@@ -20,7 +20,7 @@ long_description    Gitinspector is a statistical analysis tool for git \
                     analysis.
 
 checksums           rmd160  f0dcdeaa93f37b55735c984771cf7107ef7019e5 \
-                    sha256  0129e587023fa6522d9a5d784a2dd0084c3d8c95e4a6d9a658ab0077bb19d52c
+sha256  0129e587023fa6522d9a5d784a2dd0084c3d8c95e4a6d9a658ab0077bb19d52c
 
 depends_build       port:py${python.version}-setuptools
 depends_run         port:git

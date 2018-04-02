@@ -19,7 +19,7 @@ platforms           darwin
 homepage            http://lzone.de/${name}/
 
 checksums           rmd160  d170dc31827b3d4fa10f2917d15574f156b14be2 \
-                    sha256  936f754f2c069582c40d1694cf255fc3ba71c87b1c53394bc438da8ae6ae8d56 \
+sha256  936f754f2c069582c40d1694cf255fc3ba71c87b1c53394bc438da8ae6ae8d56 \
 size    1528142
 
 depends_build       port:pkgconfig \

@@ -13,7 +13,7 @@ license			{Artistic-1 GPL}
 long_description	$description
 
 checksums           rmd160  097dea7937299d727929010833c22fe4a2749b48 \
-                    sha256  f0374db84731c204b86c1d5b90975fef0d30a86bd9def919343e554e31a9dbbf
+sha256  f0374db84731c204b86c1d5b90975fef0d30a86bd9def919343e554e31a9dbbf
 
 platforms		darwin
 

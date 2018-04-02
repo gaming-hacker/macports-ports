@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                signing-party
 version             2.7
 checksums           rmd160  40ad3c463b027bb347ca8c16f6b049bf119c9eeb \
-                    sha256  41641cbf3fb5c8d91da678e4aa64a3f1d76f906490a17cb0b9671edbf7a3d37e \
+sha256  41641cbf3fb5c8d91da678e4aa64a3f1d76f906490a17cb0b9671edbf7a3d37e \
 size    201320
 
 categories          mail security

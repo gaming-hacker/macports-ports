@@ -17,7 +17,7 @@ long_description    The HTTP-Message distribution contains classes useful for re
                     representing requests, responses and the headers contained within them.
 
 checksums           rmd160  dc5cfd6e117b4975f9bcceec7b21eb618660ea8d \
-                    sha256  46790ae127946d5cfea5a1e05c1b9f4a045a7c5094fe81f086bbf3341290ebd0 \
+sha256  46790ae127946d5cfea5a1e05c1b9f4a045a7c5094fe81f086bbf3341290ebd0 \
 size    79196
 
 if {${perl5.major} != ""} {

@@ -20,8 +20,8 @@ homepage            https://xml2rfc.tools.ietf.org/
 master_sites        pypi:x/xml2rfc
 
 checksums           md5     4af51a8da20ab5759e03616cd2260838 \
-                    rmd160  276b4f6ac8fa1656271ae89abc717c0019b1599c \
-                    sha256  10dcd32a234a4f54598aa4e284c87ba6e0e60c1daa2f4f88e048c5ce785ba166
+rmd160  276b4f6ac8fa1656271ae89abc717c0019b1599c \
+sha256  10dcd32a234a4f54598aa4e284c87ba6e0e60c1daa2f4f88e048c5ce785ba166
 
 python.default_version  36
 

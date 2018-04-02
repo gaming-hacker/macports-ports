@@ -22,8 +22,8 @@ distname            Rabbyt-${version}
 use_zip             yes
 
 checksums           md5     bb603a5cb02f3a8bb2e674f60e62de2c \
-                    sha1    decb2b398b90592b94a509520eb11645acb132b5 \
-                    rmd160  c5affa8472ecde15f3c59860332f5dae9d09ac6a
+sha1    decb2b398b90592b94a509520eb11645acb132b5 \
+rmd160  c5affa8472ecde15f3c59860332f5dae9d09ac6a
 
 python.versions 27 36
 

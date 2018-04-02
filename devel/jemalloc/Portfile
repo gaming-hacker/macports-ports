@@ -19,7 +19,7 @@ homepage            http://jemalloc.net
 use_bzip2           yes
 
 checksums           rmd160  f3e6fdbd4b5a00fde7de6a2d77c716a085b09943 \
-                    sha256  4814781d395b0ef093b21a08e8e6e0bd3dab8762f9935bbfb71679b0dea7c3e9
+sha256  4814781d395b0ef093b21a08e8e6e0bd3dab8762f9935bbfb71679b0dea7c3e9
 
 github.tarball_from releases
 

@@ -13,8 +13,8 @@ license           LGPL-2.1+
 homepage          http://ktoblzcheck.sourceforge.net/
 master_sites      sourceforge
 checksums         md5     fc5f561d268e4962c95d6a88889104f2 \
-                  sha1    bf099879916d22c9334ef94b4e782afecd319226 \
-                  rmd160  91dcaa2f896f4bce1b4a1e075aa41ccd7b66bd84
+sha1    bf099879916d22c9334ef94b4e782afecd319226 \
+rmd160  91dcaa2f896f4bce1b4a1e075aa41ccd7b66bd84
 
 depends_lib       port:python27
 patchfiles        patch-src_python_ktoblzcheck.py.diff

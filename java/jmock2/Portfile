@@ -19,12 +19,12 @@ distfiles		jmock-${version}-jars.zip \
 			jmock-${version}-javadoc.zip
 checksums		jmock-${version}-jars.zip \
 md5 bc0e1a180a036217373b00f9a8914758 \
-				sha1 3644908178f75fbd493fffa9926a0cb03677d415 \
-				rmd160 2ef79aa199ee2621c7caf9a58bd7ec4d31fa33e5 \
+sha1 3644908178f75fbd493fffa9926a0cb03677d415 \
+rmd160 2ef79aa199ee2621c7caf9a58bd7ec4d31fa33e5 \
 			jmock-${version}-javadoc.zip \
 md5 00dc417d78c8768e51188e3a3997d567 \
-				sha1 7d8b8ef1967c09db6bf9a45c27a8357966334cbc \
-				rmd160 339968bc118da26f237ceecfe687b7861bcf2cbb
+sha1 7d8b8ef1967c09db6bf9a45c27a8357966334cbc \
+rmd160 339968bc118da26f237ceecfe687b7861bcf2cbb
 use_zip			yes
 
 worksrcdir		jmock-${version}

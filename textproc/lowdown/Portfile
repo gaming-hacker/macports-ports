@@ -18,8 +18,8 @@ maintainers		{stare.cz:hans @janstary}
 platforms		openbsd darwin linux
 
 checksums \
-	rmd160 bb93c94c974d8f68b2912f840829fc05e665a314 \
-	sha256 9e3796c7f819a3d28a8e304eac60da62e98fa996cae4131da971d8deaea44766
+rmd160 bb93c94c974d8f68b2912f840829fc05e665a314 \
+sha256 9e3796c7f819a3d28a8e304eac60da62e98fa996cae4131da971d8deaea44766
 
 patchfiles		Makefile.patch configure.patch
 

@@ -24,7 +24,7 @@ master_sites        https://oligarchy.co.uk/xapian/${version}/
 use_xz              yes
 
 checksums           rmd160  ca44355b068fba91c24267d830bbefb54c4358df \
-                    sha256  85b5f952de9df925fd13e00f6e82484162fd506d38745613a50b0a2064c6b02b
+sha256  85b5f952de9df925fd13e00f6e82484162fd506d38745613a50b0a2064c6b02b
 
 # TODO: Fix xapian-config to not require the .la file
 # /opt/local/bin/xapian-config --ltlibs --cxxflags

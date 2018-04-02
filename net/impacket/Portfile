@@ -28,5 +28,5 @@ license             Apache-1.1
 homepage            http://corelabs.coresecurity.com/index.php?module=Wiki&action=view&type=tool&name=Impacket
 
 checksums           rmd160  3f23cb6bd617a484e3e66a4b4bcef979ba1c0475 \
-                    sha256  55077e258472c5fe6b37cd08a3cedfb178db4d679bd13d5d071875f93ad02f6d
+sha256  55077e258472c5fe6b37cd08a3cedfb178db4d679bd13d5d071875f93ad02f6d
 

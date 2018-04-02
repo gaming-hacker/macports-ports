@@ -24,7 +24,7 @@ master_sites        https://downloads.powerdns.com/releases/
 use_bzip2           yes
 
 checksums           rmd160  783f102e8ebc6b380e2b3c53fa6137043be4ef68 \
-                    sha256  9c6ff00f0e26044b0c81f1a8304743b4fc0f6699a356fce28cc8c2e6aaf16513
+sha256  9c6ff00f0e26044b0c81f1a8304743b4fc0f6699a356fce28cc8c2e6aaf16513
 
 depends_build       port:pkgconfig
 

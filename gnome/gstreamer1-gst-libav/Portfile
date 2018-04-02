@@ -27,7 +27,7 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  5b9e1eb2a27fe66907419c32e4b1b714e07e9683 \
-                    sha256  2a56aa5d2d8cd912f2bce17f174713d2c417ca298f1f9c28ee66d4aa1e1d9e62
+sha256  2a56aa5d2d8cd912f2bce17f174713d2c417ca298f1f9c28ee66d4aa1e1d9e62
 
 depends_build       port:pkgconfig \
                     port:yasm

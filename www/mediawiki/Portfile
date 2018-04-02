@@ -21,7 +21,7 @@ homepage            http://www.mediawiki.org
 master_sites        http://download.wikimedia.org/mediawiki/${branch}/
 
 checksums           rmd160  7d3c986c9b0697f6550e461f2e7291b6270fc6e2 \
-                    sha256  b99637ec5fdc78307aa745395170e56908a09dd816498736f5007294868344de
+sha256  b99637ec5fdc78307aa745395170e56908a09dd816498736f5007294868344de
 
 depends_run         port:php5-web port:php5-intl port:php5-dba \
                     port:php5-mbstring port:ImageMagick

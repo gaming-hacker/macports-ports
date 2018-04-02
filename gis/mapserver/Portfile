@@ -18,7 +18,7 @@ homepage            http://mapserver.org
 master_sites        http://download.osgeo.org/mapserver
 
 checksums           rmd160  690374d43a1b733c3b7acd73c37099d95554c599 \
-                    sha256  237d83f84042fef8a63c590256aaa3bc1400668a470b52252fae197d9689e41c
+sha256  237d83f84042fef8a63c590256aaa3bc1400668a470b52252fae197d9689e41c
 
 depends_build       port:pkgconfig
 

@@ -36,7 +36,7 @@ if {${subport} eq ${name}} {
     distfiles           ${distname}-src${extract.suffix}
     worksrcdir          ${distname}-src/
     checksums           rmd160  5fd3e33dd0e9014811936a125d8f1b64607b2914 \
-                        sha256  e511f9d26828a2b71b64cdfc6674e6e847543b2da73961ab882acca36c7c01a6
+sha256  e511f9d26828a2b71b64cdfc6674e6e847543b2da73961ab882acca36c7c01a6
 
     conflicts           ${name}-devel
     

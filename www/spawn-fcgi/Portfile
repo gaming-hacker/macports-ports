@@ -17,7 +17,7 @@ description         Program to spawn fast-cgi processes
 long_description    ${description}
 
 checksums           rmd160  6f0c9da33b75fa21f2272005a6a408a1d6a04242 \
-                    sha256  ab327462cb99894a3699f874425a421d934f957cb24221f00bb888108d9dd09e
+sha256  ab327462cb99894a3699f874425a421d934f957cb24221f00bb888108d9dd09e
 
 use_parallel_build  yes
 

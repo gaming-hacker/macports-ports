@@ -23,7 +23,7 @@ master_sites        googlecode:crfpp
 dist_subdir         crfpp
 distname            CRF++-${version}
 checksums           rmd160  238859d6f474582781c06ae2e4a1a1638dd56b60 \
-                    sha256  93282ce93d7541eb073d2f7fd18f75e9e2dcb212357467037890545daa5216a9
+sha256  93282ce93d7541eb073d2f7fd18f75e9e2dcb212357467037890545daa5216a9
 
 conflicts           crfpp
 

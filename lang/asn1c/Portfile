@@ -16,7 +16,7 @@ long_description    The asn1c is a Free ASN.1 to C compiler. It supports a \
 homepage            http://lionet.info/asn1c/
 master_sites        http://lionet.info/soft/
 checksums           rmd160  d6f1836a1de65d4924d6530471cc984ade57d4dc \
-                    sha256  8007440b647ef2dd9fb73d931c33ac11764e6afb2437dbe638bb4e5fc82386b9
+sha256  8007440b647ef2dd9fb73d931c33ac11764e6afb2437dbe638bb4e5fc82386b9
 
 configure.args      --mandir=${prefix}/share/man
 

@@ -18,7 +18,7 @@ homepage            http://www.vanheusden.com/httping/
 master_sites        ${homepage}
 
 checksums           rmd160  f0154ece513637c3334dc2852a9435292996f00a \
-                    sha256  3e895a0a6d7bd79de25a255a1376d4da88eb09c34efdd0476ab5a907e75bfaf8
+sha256  3e895a0a6d7bd79de25a255a1376d4da88eb09c34efdd0476ab5a907e75bfaf8
 
 depends_lib         port:fftw-3 \
                     port:gettext \

@@ -17,7 +17,7 @@ long_description    ${name} is a library for registering global keyboard \
                     System.
 
 checksums           rmd160  5540b349f193c49413e5e443c40dec2291a715c9 \
-                    sha256  3c4636965a228902ef70fb8df34e3cc11036b82c2c3be45819d0780f34345b7b
+sha256  3c4636965a228902ef70fb8df34e3cc11036b82c2c3be45819d0780f34345b7b
 
 depends_build       port:pkgconfig \
                     port:autoconf \

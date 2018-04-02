@@ -19,7 +19,7 @@ platforms           darwin
 master_sites        http://shibboleth.net/downloads/log4shib/${version}/
 
 checksums           rmd160  c8c06cf9ba347510a377a3867ffd7a6acc6859cc \
-                    sha256  b34cc90f50962cc245a238b472f72852732d32a9caf9a10e0244d0e70a311d6d
+sha256  b34cc90f50962cc245a238b472f72852732d32a9caf9a10e0244d0e70a311d6d
 
 configure.args      --disable-doxygen \
                     --disable-dot \

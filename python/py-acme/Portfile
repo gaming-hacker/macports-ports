@@ -20,7 +20,7 @@ master_sites        pypi:a/acme
 python.versions 27 36
 
 checksums           rmd160  62bfaf65bfa1971446e585f7a7dac234b2e5e400 \
-                    sha256  0ecd0ea369f53d5bc744d6e72717f9af2e1ceb558d109dbd433148851027adb4
+sha256  0ecd0ea369f53d5bc744d6e72717f9af2e1ceb558d109dbd433148851027adb4
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -17,7 +17,7 @@ long_description    ${description}. \
                     \nThis port does not install the Web PVR Manager (get_iplayer.cgi).
 
 checksums           rmd160  04cd41dfe065bec4ef09c2e9d0d973e1100967f1 \
-                    sha256  d95cfc14e3681c197df121159af1c2fd107758ce8ede62773ebc2cdcde32eab7
+sha256  d95cfc14e3681c197df121159af1c2fd107758ce8ede62773ebc2cdcde32eab7
 
 perl5.branches      5.26
 
