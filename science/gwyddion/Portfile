@@ -8,7 +8,7 @@ revision            1
 categories          science x11
 platforms           darwin
 license             gpl-2
-maintainers         rowue gwyddion.net:yeti
+maintainers         {rowue @rowue} gwyddion.net:yeti
 description         Software for SPM Analysis
 
 long_description \
