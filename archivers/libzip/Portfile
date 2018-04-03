@@ -5,7 +5,7 @@ PortGroup           cmake 1.1
 PortGroup github 1.0
 
 name libzip
-github.setup   gaming-hacker $name 5a6113d8efc5265ee3ddc9db1cca361dcd6a61c4
+github.setup   gaming-hacker $name d6b4a1c3940bc6526797e4ab8533b3824c37cc56
 version                 1.5.1
 distname   $name-$version
 categories          archivers
