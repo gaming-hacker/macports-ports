@@ -2,13 +2,9 @@
 
 PortSystem          1.0
 PortGroup           cmake 1.1
-PortGroup github 1.0
-PortGroup user 1.0
 
-name libzip
-github.setup   gaming-hacker $name d6b4a1c3940bc6526797e4ab8533b3824c37cc56
-version                 1.5.1
-distname   $name-$version
+name                libzip
+version             1.3.2
 categories          archivers
 license             BSD
 platforms           darwin
@@ -20,15 +16,50 @@ long_description    This is a C library for reading, creating, and modifying zip
                     closing the archive can be reverted.
 homepage            https://libzip.org/
 master_sites        ${homepage}download/
-fetch.type          git
+use_xz              yes
 
-depends_build-append \
-                    port:coreutils
-depends_lib-append  port:bzip2 \
-                    port:zlib
+checksums           rmd160  ade49a6cfddc190bd2613d3e06714b124c9bd938 \
+                    sha256  6277845010dbc20e281a77e637c97765c1323d67df4d456fd942f525ea86e185
 
-configure.args-append \
-                    -DENABLE_COMMONCRYPTO:Bool=OFF \
-                    -DENABLE_GNUTLS:Bool=OFF \
-                    -DENABLE_OPENSSL:Bool=OFF
-destroot.destdir        prefix=${destroot}${prefix}
+depends_build       port:coreutils
+depends_lib         port:zlib
+
+test.run            yes
+test.target         check
+
+livecheck.type      regex
+livecheck.regex     ${name}-(\[0-9.\]+)\\.tar
+
+
+# PortSystem          1.0
+# PortGroup           cmake 1.1
+# PortGroup github 1.0
+# PortGroup user 1.0
+#
+# name libzip
+# github.setup   gaming-hacker $name d6b4a1c3940bc6526797e4ab8533b3824c37cc56
+# version                 1.5.1
+# distname   $name-$version
+# categories          archivers
+# license             BSD
+# platforms           darwin
+# maintainers         nomaintainer
+# description         libzip is a C library for reading, creating, and modifying zip archives.
+# long_description    This is a C library for reading, creating, and modifying zip archives.\
+#                     Files can be added from data buffers, files, or compressed data  \
+#                     copied directly from other zip archives. Changes made without \
+#                     closing the archive can be reverted.
+# homepage            https://libzip.org/
+# master_sites        ${homepage}download/
+# fetch.type          git
+#
+# depends_build-append \
+#                     port:coreutils
+# depends_lib-append  port:bzip2 \
+#                     port:zlib
+#
+# configure.args-append \
+#                     -DENABLE_COMMONCRYPTO:Bool=OFF \
+#                     -DENABLE_GNUTLS:Bool=OFF \
+#                     -DENABLE_OPENSSL:Bool=OFF
+# destroot.destdir        prefix=${destroot}${prefix}
