@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    This module was written to improve a core component of the \
                     need wrapping in a nice Python interface.
 
 checksums           rmd160  211776f660dcc86c0af81044402bedd0f287ec73 \
-                    sha256  b759a384cd1c6bf50476803f0277cd6e7a1fdaaee922c7952641bce8c8336678 \
-                    size    52225
+sha256  b759a384cd1c6bf50476803f0277cd6e7a1fdaaee922c7952641bce8c8336678 \
+size    52225
 
 python.versions     36
 python.link_binaries_suffix

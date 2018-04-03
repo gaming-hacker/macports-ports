@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ long_description    The Unified Form Language (UFL) is a domain specific languag
                     notation close to mathematical notation.
 
 checksums           rmd160  3bfdb103cdb94bc336f900eac10ea8b35413a4bc \
-                    sha256  80032ee069923137badd8f5cd345db0aa36e9f3232c720072c4f1dfe8b6cf71c \
-                    size    312004
+sha256  80032ee069923137badd8f5cd345db0aa36e9f3232c720072c4f1dfe8b6cf71c \
+size    312004
 
 python.versions     36
 python.link_binaries_suffix

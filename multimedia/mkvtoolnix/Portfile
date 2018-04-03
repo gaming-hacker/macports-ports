@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.0
@@ -20,8 +20,8 @@ platforms           darwin
 master_sites        ${homepage}/sources/
 use_xz              yes
 checksums           rmd160  e0c6f0855356956b92622d2e1ac499606b2d52d3 \
-                    sha256  88c5074d6731b65d5c2ddd02113ae064373eb83ef3e6e00a04876f88c0be7f67 \
-                    size    4714712
+sha256  88c5074d6731b65d5c2ddd02113ae064373eb83ef3e6e00a04876f88c0be7f67 \
+size    4714712
 
 set version_ruby    2.4
 set version_ruby_mp [join [split $version_ruby "."] ""]

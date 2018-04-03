@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,8 +23,8 @@ long_description    FFC works as a compiler for multilinear forms by generating 
                     code is as efficient as hand-optimized code.
 
 checksums           rmd160  529e8b202dfe892b35e9b63a4ce276e5c97063ee \
-                    sha256  f0a742e1195cf59eb10f1cce5680484bdf735777caac9ab460849659f11aa067 \
-                    size    1377601
+sha256  f0a742e1195cf59eb10f1cce5680484bdf735777caac9ab460849659f11aa067 \
+size    1377601
 
 python.versions     36
 python.link_binaries_suffix

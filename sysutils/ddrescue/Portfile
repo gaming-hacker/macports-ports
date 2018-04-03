@@ -20,7 +20,7 @@ master_sites    gnu:ddrescue
 use_lzip        yes
 
 checksums       rmd160  2286697f04da9d1d11027fc29967eaee700179a0 \
-                sha256  a9ae2dd44592bf386c9c156a5dacaeeb901573c9867ada3608f887d401338d8d \
-                size    82451
+sha256  a9ae2dd44592bf386c9c156a5dacaeeb901573c9867ada3608f887d401338d8d \
+size    82451
 
 configure.args  CXX=${configure.cxx}

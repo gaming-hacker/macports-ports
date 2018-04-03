@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -9,8 +9,8 @@ PortGroup           cxx11 1.1
 github.setup        bastibl gr-ieee802-15-4 e8ecdc6ce196350ff5a666b8115a274874300102
 version             20180323
 checksums           rmd160 e57c56f838c2904d396899602366ef022af361ca \
-                    sha256 fb26c02fe90c2b71d2ca40c616987c74ab5af69fd4b3f41941b8ed27d80da38a \
-                    size   210392
+sha256 fb26c02fe90c2b71d2ca40c616987c74ab5af69fd4b3f41941b8ed27d80da38a \
+size   210392
 
 # allow gr-ieee802-15-4 to work with both gnuradio and gnuradio-devel ...
 

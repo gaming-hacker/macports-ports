@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -13,8 +13,8 @@ github.setup        osmocom gr-osmosdr c653754dde5e2cf682965e939cc016fbddbd45e4
 version             20170611
 revision            6
 checksums           rmd160 df896579fe78ef676cde24e350d712015b25375a \
-                    sha256 95f513c549374cb70fa565c890b02ab50afe0d775cbc1f4b5ec1654b67f20854 \
-                    size   272083
+sha256 95f513c549374cb70fa565c890b02ab50afe0d775cbc1f4b5ec1654b67f20854 \
+size   272083
 
 # stealth update equivalent when moving to GitHub
 # remove on next update

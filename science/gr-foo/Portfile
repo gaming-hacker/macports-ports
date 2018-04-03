@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -9,8 +9,8 @@ PortGroup           cxx11 1.1
 github.setup        bastibl gr-foo cb74ba2be81096213c4b981d43131e42e77ed815
 version             20180327
 checksums           rmd160 a451a023768b3458c46c143382226fdc52ce86f2 \
-                    sha256 ba8345a5075205c589319c33373b1ada0fffb5acf9689feb2a498e44747c7f0a \
-                    size   107411
+sha256 ba8345a5075205c589319c33373b1ada0fffb5acf9689feb2a498e44747c7f0a \
+size   107411
 
 # allow gr-foo to work with both gnuradio and gnuradio-devel ...
 
