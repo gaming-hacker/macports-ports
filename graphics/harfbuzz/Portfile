@@ -32,7 +32,7 @@ configure.args      --disable-silent-rules \
                     ac_cv_prog_AWK=/usr/bin/awk
 
 if {${name} eq ${subport}} {
-    revision        0
+    revision        1
     
     depends_lib-append \
                     path:lib/pkgconfig/cairo.pc:cairo \
@@ -45,6 +45,7 @@ if {${name} eq ${subport}} {
                     --with-freetype \
                     --with-glib \
                     --with-graphite2 \
+                    --with-coretext \
                     --without-icu
     
     post-destroot {
