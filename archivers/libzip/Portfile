@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup github 1.0
+PortGroup user 1.0
 
 name libzip
 github.setup   gaming-hacker $name d6b4a1c3940bc6526797e4ab8533b3824c37cc56
@@ -19,14 +20,7 @@ long_description    This is a C library for reading, creating, and modifying zip
                     closing the archive can be reverted.
 homepage            https://libzip.org/
 master_sites        ${homepage}download/
-use_xz              yes
-
-checksums           rmd160  ade49a6cfddc190bd2613d3e06714b124c9bd938 \
-sha256  6277845010dbc20e281a77e637c97765c1323d67df4d456fd942f525ea86e185
-#1.5.0 old
-# checksums           rmd160  9d25c8160247af0e45c087ac2cc35c52879dfaec \
-#                     sha256  5ddb9b41d31b2f99ad4d512003c610ae2db70e222833aba6f9332d5b48a153d9 \
-#                     size    695660
+fetch.type          git
 
 depends_build-append \
                     port:coreutils
@@ -37,9 +31,4 @@ configure.args-append \
                     -DENABLE_COMMONCRYPTO:Bool=OFF \
                     -DENABLE_GNUTLS:Bool=OFF \
                     -DENABLE_OPENSSL:Bool=OFF
-
-test.run            yes
-test.target         check
-
-# livecheck.type      regex
-# livecheck.regex     ${name}-(\[0-9.\]+)\\.tar
+destroot.destdir        prefix=${destroot}${prefix}
