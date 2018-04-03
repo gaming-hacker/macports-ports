@@ -63,7 +63,7 @@ switch ${subport_branch} {
         version         5.6.35
         use_xz          yes
         checksums       rmd160  ad2b1112d47806ba79e58e14cf267917c83174a6 \
-sha256  9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2 \
+ sha256  9985cb64cb8224c289effff5b34f670d14f838175f76daea0507d643eec650d2 \
 size    12466396
     }
     7.2 {

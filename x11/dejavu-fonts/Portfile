@@ -53,3 +53,5 @@ post-destroot {
 post-activate {
     system "${prefix}/bin/fc-cache -fv ${prefix}/share/fonts"
 }
+
+livecheck.regex      /${name}-(\[0-9.\]+)${extract.suffix}

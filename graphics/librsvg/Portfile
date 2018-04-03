@@ -26,7 +26,6 @@ sha256  0c550a0bffef768a436286116c03d9f6cd3f97f5021c13e7f093b550fac12562 \
 size    6054020
 
 depends_build       port:pkgconfig \
-                    port:gtk-doc \
                     port:cargo \
                     port:rust
 
