@@ -21,16 +21,10 @@ sha256  3dfff1b1f877d6093b0094cc3f25d0de0105351714bd4bf2b5f82e1fd7b5f0e2
 
 patchfiles          patch-setup.py.diff
 
-variant python27 conflicts python34 python35 python36 description "Use Python 2.7" {}
-variant python34 conflicts python27 python35 python36 description "Use Python 3.4" {}
-variant python35 conflicts python27 python34 python36 description "Use Python 3.5" {}
-variant python36 conflicts python27 python34 python35 description "Use Python 3.6" {}
+variant python27 conflicts python36 description "Use Python 2.7" {}
+variant python36 conflicts python27 description "Use Python 3.6" {}
 
-if {[variant_isset python34]} {
-    python.default_version 34
-} elseif {[variant_isset python35]} {
-    python.default_version 35
-} elseif {[variant_isset python36]} {
+if {[variant_isset python36]} {
     python.default_version 36
 } else {
     default_variants +python27
