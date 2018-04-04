@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  3f9a52e5ae7f17a4bd5d51232f00c497f6c7e6f9 \
-                    sha256  8d4e862c53871f5bc36f0cea651bc725f17cfe813575fc865bb7f12488320227 \
-                    size    443625
+sha256  8d4e862c53871f5bc36f0cea651bc725f17cfe813575fc865bb7f12488320227 \
+size    443625
 
 python.versions     27 35 36
 
