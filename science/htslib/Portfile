@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ long_description        HTSlib is an implementation of a unified C library for \
                         is the core library used by SAMtools and BCFtools.
 
 checksums               rmd160  7c86b2875e55b95be2d35e5c096c933616d0404f \
-                        sha256  c0ef1eec954a98cc708e9f99f6037db85db45670b52b6ab37abcc89b6c057ca1 \
-                        size    1154934
+sha256  c0ef1eec954a98cc708e9f99f6037db85db45670b52b6ab37abcc89b6c057ca1 \
+size    1154934
 
 homepage                http://www.htslib.org/
 github.tarball_from     releases

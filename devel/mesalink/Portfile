@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    MesaLink is a memory-safe and OpenSSL-compatible TLS \
                     library written in Rust.
 
 checksums           rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
-                    sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
-                    size    132238
+sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
+size    132238
 
 cargo.crates \
     aho-corasick             0.6.4  d6531d44de723825aa81398a6415283229725a00fa30713812ab9323faa82fc4 \
@@ -73,9 +73,9 @@ cargo.crates_github \
     enum_to_str_derive  kevinis/enum_to_str_derive   master    35a1c87b4746525dbadda438d1f37f59d414e450  f63ab650488f2b3b6f08357d9739f8fb8822b270723d40d4be7cecee58695ac1
 
 checksums-append    mesalink-0.6.0.tar.gz \
-                    rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
-                    sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
-                    size    132238 \
+rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
+sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
+size    132238 \
 
 use_autoreconf yes
 use_configure yes
