@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,7 +17,7 @@ long_description    ${description}
 homepage            http://pgcli.com
 
 checksums           rmd160  922f2cf729ab173edef221f39005d9e2d4d1c81c \
-                    sha256  e42291b45e762176218e2e937e7d1603f6f8eb32d17fd97907bb625d003e93dd
+sha256  e42291b45e762176218e2e937e7d1603f6f8eb32d17fd97907bb625d003e93dd
 
 variant python27 conflicts python34 python35 python36 description "Use Python 2.7" {}
 variant python34 conflicts python27 python35 python36 description "Use Python 3.4" {}

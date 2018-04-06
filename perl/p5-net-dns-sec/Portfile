@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -17,8 +17,8 @@ long_description    The Net::DSN::SEC suite provides the resource records \
                     RSA and DSA crypto routines are supported.
 
 checksums           rmd160  ba6cb28d87c75d79cef13bb5b3e6971fe6c8cdaf \
-                    sha256  39e92aae3d354007583843aa6b24ab74e8725c09ba952a87084529b5229aee94 \
-                    size    41644
+sha256  39e92aae3d354007583843aa6b24ab74e8725c09ba952a87084529b5229aee94 \
+size    41644
 
 platforms           darwin
 supported_archs     noarch

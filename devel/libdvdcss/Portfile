@@ -23,7 +23,7 @@ checksums           rmd160  a90a9b40bf1313fe8d3561b39183a34f1ff3844d \
 sha256  2089375984800df29a4817b37f3123c1706723342d6dab4d0a8b75c25c2c845a
 =======
 checksums           rmd160  745fd7ae3b2313a35b08b42040d0c020e3037501 \
-                    sha256  78c2ed77ec9c0d8fbed7bf7d3abc82068b8864be494cfad165821377ff3f2575
+sha256  78c2ed77ec9c0d8fbed7bf7d3abc82068b8864be494cfad165821377ff3f2575
 >>>>>>> master
 
 configure.args      --disable-doc

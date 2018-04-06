@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,7 +23,7 @@ master_sites        pypi:N/Nuitka
 distname            Nuitka-${version}
 
 checksums           rmd160  69063a264e6f8180ad0f3302872763abf0eeb50d \
-                    sha256  e722a9b255b3b7d992e01a7a83e791f4593b416f33c8e3b391398ee9c6e50f6f
+sha256  e722a9b255b3b7d992e01a7a83e791f4593b416f33c8e3b391398ee9c6e50f6f
 
 if {${name} ne ${subport}} {
 

@@ -19,8 +19,8 @@ long_description  Alternative Python bindings for Subversion, split out \
 homepage          https://www.samba.org/~jelmer/subvertpy/
 
 checksums         rmd160  d22bfd0a6df77ff001705613c923c99f8f2267ae \
-                  sha256  3199ab7cd9b5a09d8d3d9618ef3b2b85a863d8edc33f84ec343239372d4437b4 \
-                  size    119119
+sha256  3199ab7cd9b5a09d8d3d9618ef3b2b85a863d8edc33f84ec343239372d4437b4 \
+size    119119
 
 if {${name} ne ${subport}} {
     depends_lib-append   port:subversion
