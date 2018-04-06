@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
 PortGroup               bitbucket 1.0
 
-bitbucket.setup         durin42 hgsubversion 1.9
+bitbucket.setup         durin42 hgsubversion 1.9.1
 name                    py-hgsubversion
 
 categories-append       devel
@@ -17,8 +17,9 @@ description             hgsubversion is a Mercurial extension for \
                         working with Subversion (svn) repositories.
 long_description        ${description}
 
-checksums               rmd160  0de8e0e6259333b4d0f0ee687f60202ca5d054a8 \
-sha256  289e6bbf2dac465b7e8e83a199c69a998b30830a8bea33a7cedb5303e5568964
+checksums               rmd160  76d1c0fe3ccf768d0664e673f1826d55ba4b25f5 \
+                        sha256  d79f499ee7e4fd295ba6a3857cb4c5d3f3c1eb4786819b3759412b7f17320f74 \
+                        size    303749
 
 # can't set python.versions before adding custom subports
 subport py-hgsubversion-devel {}
@@ -31,14 +32,15 @@ if {[string match "*-devel" $subport]} {
     revision            0
 
     checksums           rmd160  2b1ba2d8a5dcab2e8f0d67d307d34b39d3adc946 \
-sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
+                        sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
 }
 
-python.versions 27 36
+python.versions         27
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:bin/hg:mercurial \
                         port:subversion-python${python.version}bindings
+
 
     conflicts           py${python.version}-hgsubversion-devel
     if {[string match "*-devel" $subport]} {

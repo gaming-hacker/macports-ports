@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem        1.0
 PortGroup         python 1.0
 
 name              py-httplib2
-set realversion   0.10.3
+set realversion   0.11.3
 version           2-${realversion}
 categories-append devel net
 license           MIT
@@ -19,10 +19,11 @@ homepage          https://pypi.python.org/pypi/${python.rootname}/
 master_sites      pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname          ${python.rootname}-${realversion}
 
-python.versions 27 36
+python.versions   26 27 33 34 35 36
 
-checksums         rmd160 11438da47881a68c5b22cfa772e89c19565c894a \
-sha256 e404d3b7bd86c1bc931906098e7c1305d6a3a6dcef141b8bb1059903abb3ceeb
+checksums         rmd160  c8c524c2fd7edca575db197da82b71c23c7f128c \
+                  sha256  e71daed9a0e6373642db61166fa70beecc9bf04383477f84671348c02a04cbdf \
+                  size    215815
 
 if {${name} ne ${subport}} {
   # Extracted files do not have correct 'group' and 'other' permissions.

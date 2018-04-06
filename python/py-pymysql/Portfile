@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ version             0.8.0
 license             MIT
 platforms           darwin
 supported_archs     noarch
-maintainers         gmail.com:xeron.oskom openmaintainer
+maintainers         {@xeron gmail.com:xeron.oskom} openmaintainer
 description         Pure-Python MySQL client library
 long_description    ${description}
 
@@ -19,7 +19,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            PyMySQL-${version}
 
 checksums           rmd160  6bb48cc4b0028666b94bfedb36f3841bb9f34a10 \
-sha256  32da4a66397077d42908e449688f2ec71c2b18892a6cd04f03ab2aa828a70f40
+                    sha256  32da4a66397077d42908e449688f2ec71c2b18892a6cd04f03ab2aa828a70f40
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

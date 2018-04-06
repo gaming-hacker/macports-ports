@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ version             1.0.5
 license             PSF
 platforms           darwin
 supported_archs     noarch
-maintainers         gmail.com:xeron.oskom openmaintainer
+maintainers         {@xeron gmail.com:xeron.oskom} openmaintainer
 description         Backport of Python 3 csv module
 long_description    ${description}
 
@@ -19,7 +19,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  11a1fd6073140587e811a7536fd3553b0c63b31b \
-sha256  8c421385cbc6042ba90c68c871c5afc13672acaf91e1508546d6cda6725ebfc6
+                    sha256  8c421385cbc6042ba90c68c871c5afc13672acaf91e1508546d6cda6725ebfc6
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-nuitka
-version             0.5.29.2
+version             0.5.29.3
 revision            0
 categories-append   devel
 platforms           darwin
-license             Apache
+license             Apache-2
 
-python.versions 27 36
+python.versions     27 34 35 36
 
 maintainers         stromnov openmaintainer
 
@@ -22,10 +22,25 @@ master_sites        pypi:N/Nuitka
 
 distname            Nuitka-${version}
 
-checksums           rmd160  98e142238018fad380a9c89c3d717e3ad723ed89 \
-sha256  43723bc5b921fb48c09ae7f86bc20ee4317094b036c92a75be3c9af9a31bcae6
+checksums           rmd160  69063a264e6f8180ad0f3302872763abf0eeb50d \
+                    sha256  e722a9b255b3b7d992e01a7a83e791f4593b416f33c8e3b391398ee9c6e50f6f
 
 if {${name} ne ${subport}} {
+
+    depends_build-append \
+                    port:py${python.version}-setuptools
+
+    # Fix permissions
+    post-extract {
+        fs-traverse item ${worksrcpath} {
+            if {[file isdirectory ${item}]} {
+                file attributes ${item} -permissions a+rx
+            } elseif {[file isfile ${item}]} {
+                file attributes ${item} -permissions a+r
+            }
+        }
+    }
+
     livecheck.type      none
 } else {
     livecheck.name      Nuitka
