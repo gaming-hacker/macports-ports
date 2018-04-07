@@ -37,7 +37,7 @@ extract.suffix      .whl
 extract {
 }
 
-python.versions     27 35 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
 

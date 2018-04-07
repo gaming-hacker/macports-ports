@@ -14,7 +14,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/certbot-nginx
 master_sites        pypi:c/certbot-nginx
 
-python.versions     27
+python.versions 27 36
 
 checksums           rmd160  c80c3405392e6567ec42ce3d19051a3c050a4c4c \
 sha256  cadf14e4bd504d9ce5987a5ec6dbd8e136638e55303ad5dc81dcb723ddd64324

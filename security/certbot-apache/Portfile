@@ -14,7 +14,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/certbot-apache
 master_sites        pypi:c/certbot-apache
 
-python.versions     27
+python.versions 27 36
 
 checksums           rmd160  89135ed6d26cd61d1cbb706e6abe5ae0fc4e94e0 \
 sha256  6b7acec243e224de5268d46c2597277586dffa55e838c252b6931c30d549028e

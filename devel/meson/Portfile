@@ -28,7 +28,7 @@ size    1163209
 
 # as of verison 0.45.0,requires python 3.5 or better
 
-python.versions         36
+python.versions 27 36
 python.default_version  36
 python.link_binaries    no
 

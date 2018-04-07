@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -19,8 +19,8 @@ long_description    DateTime::Locale is primarily a factory for the \
 platforms           darwin
 
 checksums           rmd160  10a39dc22b62b7bd7e899507d9a1276d71c656c5 \
-                    sha256  f47e9ac0c48cf362cd676bed50ce6ddae309e71be625185f16925bf93da45732 \
-                    size    1303661
+sha256  f47e9ac0c48cf362cd676bed50ce6ddae309e71be625185f16925bf93da45732 \
+size    1303661
 
 if {${perl5.major} != ""} {
     depends_build-append \

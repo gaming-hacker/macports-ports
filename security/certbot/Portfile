@@ -17,7 +17,7 @@ homepage            https://certbot.eff.org/
 checksums           rmd160  4a213878617f7c9a625e2959712f16cc16399c5c \
 sha256  afa8d30a0ccbb17f55334253dce468819e5211adba306ea4fc8bb058d79e9cff
 
-python.versions     27
+python.versions 27 36
 
 depends_lib         port:py${python.version}-acme \
                     port:py${python.version}-configargparse \
