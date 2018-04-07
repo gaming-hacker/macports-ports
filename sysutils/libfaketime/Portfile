@@ -10,7 +10,7 @@ sha256  ee2234335b3d730fdf6898d8dba9195d9ab3068c29af25270be03682d24a424f
 
 categories          sysutils
 platforms           darwin
-maintainers         code-wizards.com:wolf openmaintainer
+maintainers         nomaintainer
 license             GPL-2
 
 description         libfaketime modifies the system time for a single application
