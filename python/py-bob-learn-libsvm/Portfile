@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                   1.0
 PortGroup                    python 1.0
 PortGroup                    github 1.0
-PortGroup                    active_variants 1.1 
+PortGroup                    active_variants 1.1
 PortGroup                    compiler_blacklist_versions 1.0
 
 name                         py-bob-learn-libsvm
 version                      2.0.3
-revision                     7
+revision                     8
 license                      BSD
 homepage                     http://idiap.github.com/bob/
 
@@ -17,6 +17,7 @@ platforms                    darwin
 maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
+
 
 description                  Bob bindings to libsvm \
                              Bob is a signal-processing and machine learning toolbox
@@ -29,11 +30,14 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.learn.libsvm 2.0.3 v
 
-python.versions 27 36
+
+python.versions              27 34
 python.default_version       27
 
 checksums                    rmd160  28a09c8066d699d98e52dc76bd16f684b2dee068 \
-sha256  605c75a6f414f1e72c9e8410f9aeade0c985fd94c38cbb45d4b1f3adbb8af591
+                             sha256  605c75a6f414f1e72c9e8410f9aeade0c985fd94c38cbb45d4b1f3adbb8af591
+
+
 
 if {$subport ne $name} {
 
@@ -67,14 +71,19 @@ if {$subport ne $name} {
       port:py${python.version}-bob-core \
       port:py${python.version}-bob-io-base
 
-          # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)       
+
+
+
+
+          # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)
        compiler.blacklist  *gcc* {clang < 300}
+
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 
     post-destroot {
         set filename ${destroot}${python.pkgd}/bob/__init__.py
-        if {[file exists $filename] == 1} {      
+        if {[file exists $filename] == 1} {
           file delete $filename
           file delete ${destroot}${python.pkgd}/bob/__init__.pyc
 
@@ -92,4 +101,3 @@ if {$subport ne $name} {
     }
 
 }
-
