@@ -13,7 +13,6 @@ description         HTTP/2-based RPC framework
 long_description    ${description}
 
 homepage            https://grpc.io/
-<<<<<<< HEAD
 
 if {${python.version} eq 27} {
     master_sites        https://pypi.python.org/packages/63/92/f562c3276a2cd5e4cca91e6f395fd504c56c74147856529575b1129b4535
@@ -29,7 +28,7 @@ distname            ${python.rootname}-${version}
 checksums           rmd160 ecbc517bdf994012605b9d698ef45fd94d68aab8 \
 sha256 03265472d39bf26f124c3ef68446f7873c8260893e6ae65b323a5b51ed52e580 \
 size   13987692
-
+}
 python.versions 27 36
 
 if {${name} ne ${subport}} {
@@ -41,8 +40,7 @@ if {${name} ne ${subport}} {
         port:py${python.version}-six \
         port:py${python.version}-wheel
 
-    build {
-    }
+    build {}
 
     destroot.cmd        pip-${python.branch}
     destroot.args       \
