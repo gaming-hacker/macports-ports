@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                   1.0
 PortGroup                    python 1.0
@@ -35,7 +35,7 @@ python.versions              27 34
 python.default_version       27
 
 checksums                    rmd160  bcd2cdfa1d49d1dbcb50deff8462d22bf67ffa2b \
-                             sha256  27fcdc4ff4019b71f9ed679d59c1b3ef45c49fddf3b7495f1a8fb0b68749ddf5
+sha256  27fcdc4ff4019b71f9ed679d59c1b3ef45c49fddf3b7495f1a8fb0b68749ddf5
 
 
 if {$subport ne $name} {

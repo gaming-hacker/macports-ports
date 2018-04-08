@@ -17,8 +17,8 @@ long_description    Ragel compiles finite state machines from regular \
 homepage            http://www.colm.net/open-source/ragel/
 master_sites        http://www.colm.net/files/ragel/
 checksums           rmd160  e37a0f83d3acbb77c7d7ea115f2faf0f2478724b \
-                    sha256  5f156edb65d20b856d638dd9ee2dfb43285914d9aa2b6ec779dac0270cd56c3f \
-                    size    1232993
+sha256  5f156edb65d20b856d638dd9ee2dfb43285914d9aa2b6ec779dac0270cd56c3f \
+size    1232993
 
 depends_build       port:bison
 

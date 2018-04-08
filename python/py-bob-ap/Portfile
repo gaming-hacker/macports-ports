@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                   1.0
 PortGroup                    python 1.0
@@ -35,7 +35,7 @@ python.versions              27 34
 python.default_version       27
 
 checksums                    rmd160  caa97ff581775f6e2654a7a64cd4d2c2310be3f8 \
-                             sha256  90db1af9f60c404e9c41d5f8502f16bdfb22d1c82904c54f35a6426dfdf6d186
+sha256  90db1af9f60c404e9c41d5f8502f16bdfb22d1c82904c54f35a6426dfdf6d186
 
 
 

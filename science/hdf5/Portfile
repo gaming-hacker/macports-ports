@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -26,8 +26,8 @@ platforms           darwin
 master_sites \
     https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${shortversion}/hdf5-${version}/src
 checksums           rmd160  1df1af071878997f04655212fa67360990861f5a \
-                    sha256  1cad5b7bfdf128dfc53cd16fba48f6e7ae4e93c75c371d9ec8dfc4df0c1fcb71 \
-                    size    8609163
+sha256  1cad5b7bfdf128dfc53cd16fba48f6e7ae4e93c75c371d9ec8dfc4df0c1fcb71 \
+size    8609163
 mpi.setup           -gcc44 -gcc45
 
 use_bzip2           yes

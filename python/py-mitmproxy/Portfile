@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,9 +25,9 @@ long_description    \
 homepage            http://mitmproxy.org/
 
 checksums           md5     68f0f26d94d91a55ac97167f1b1cbdd3 \
-                    rmd160  8d80373b525fe6e3e23484945c7cdcd53a6b1f15 \
-                    sha256  9d13eb829024957c74cb262b06d9a2ecfa3bbc53383812166ba77a0b3eb2c6a1 \
-                    size    27147580
+rmd160  8d80373b525fe6e3e23484945c7cdcd53a6b1f15 \
+sha256  9d13eb829024957c74cb262b06d9a2ecfa3bbc53383812166ba77a0b3eb2c6a1 \
+size    27147580
 
 python.versions     36
 
