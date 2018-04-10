@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -15,7 +15,7 @@ long_description    Compress::Raw::Bzip2 provides an interface to the \
 platforms           darwin
 
 checksums           rmd160  7a8055be8ae41e7b05066ae016a7755ed595aa24 \
-                    sha256  8692b5c9db91954408e24e805fbfda222879da80d89d9410791421e3e5bc3520 \
-                    size    137537
+sha256  8692b5c9db91954408e24e805fbfda222879da80d89d9410791421e3e5bc3520 \
+size    137537
 
 # builds using embedded bzip2 source, no external dependency required
