@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ if {${subport} eq ${name}} {
 
     github.setup    libuv libuv 1.20.0 v
     checksums       rmd160 2ba3740c0998dc192f99412b203ce4a77773beef \
-                    sha256 2a210273f7ea1d255f069a53296e57921c0db0ab5ba0ec0705c33f739514823d \
-                    size   1180332
+sha256 2a210273f7ea1d255f069a53296e57921c0db0ab5ba0ec0705c33f739514823d \
+size   1180332
 
     conflicts       libuv-devel
 
@@ -32,8 +32,8 @@ subport libuv-devel {
     github.setup    libuv libuv 9afb013574e9a988e6fb3365c164fd8250dbaaa6
     version         20180410
     checksums       rmd160 9f59d37d6c15adcc2e0eb0f1fa5c69a978ce9979 \
-                    sha256 693f2021278338c3b7076fe7321394a95c3567a226808fd6e61c97839a786178 \
-                    size   1179949
+sha256 693f2021278338c3b7076fe7321394a95c3567a226808fd6e61c97839a786178 \
+size   1179949
 
     long_description    ${long_description} \
         This port is kept up with the libuv GIT 'master' branch, is typically updated weekly to monthly.
