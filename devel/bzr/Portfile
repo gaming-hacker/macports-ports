@@ -4,7 +4,7 @@ PortGroup     python 1.0
 
 name          bzr
 version       2.6.0
-revision      1
+revision      2
 set branch    [join [lrange [split ${version} .] 0 1] .]
 categories    devel python
 platforms     darwin
@@ -30,7 +30,8 @@ sha256  0994797182eb828867eee81cccc79480bd2946c99304266bc427b902cf91dab0
 python.default_version  27
 
 patchfiles    patch-setup.py.diff \
-              patch-lazy-regex.diff
+              patch-lazy-regex.diff \
+              patch-CVE-2017-14176.diff
 
 depends_lib-append  port:py${python.version}-paramiko \
                     port:py${python.version}-crypto \
