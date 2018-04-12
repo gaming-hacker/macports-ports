@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        ptrkrysik gr-gsm e24860f9c018b761d3380d9ceaea0dff46ead6f4
 version             20180406
 checksums           rmd160 ea2541592ffc6fb315b842b9e5b565a7102404bd \
-                    sha256 6f3abdce6e85b8330d56a297751216332164d22f447c8143046d19554698e177 \
-                    size   382921
+sha256 6f3abdce6e85b8330d56a297751216332164d22f447c8143046d19554698e177 \
+size   382921
 
 # overload the github livecheck branch.
 # when master is more advanced, comment this out.
