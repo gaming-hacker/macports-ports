@@ -28,8 +28,8 @@ master_sites	http://www.swi-prolog.org/download/devel/src/
 dist_subdir	swi-prolog
 
 checksums       \
-    rmd160  2ab40b552a17cce6912babcfb996aa3de48ef2d1 \
-    sha256  cd4d769e8edb26e512f3e89cf9d6064464f8d3766915b857c06289f871c79b3d
+rmd160  2ab40b552a17cce6912babcfb996aa3de48ef2d1 \
+sha256  cd4d769e8edb26e512f3e89cf9d6064464f8d3766915b857c06289f871c79b3d
 
 
 depends_build   \

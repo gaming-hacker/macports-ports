@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ maintainers         {gmail.com:benjamin.redelings @bredelings} openmaintainer
 homepage            http://www.bali-phy.org/
 
 checksums           rmd160  60c6b2da4f196f68b958e3360f9415fb689729bc \
-                    sha256  4cdfb16b50c4a06e1cf6691d22cc3a5401e0cdb55dbb0ff379c779eb660e060d \
-                    size    12455696
+sha256  4cdfb16b50c4a06e1cf6691d22cc3a5401e0cdb55dbb0ff379c779eb660e060d \
+size    12455696
 
 depends_build-append \
                     port:pkgconfig \
