@@ -6,8 +6,11 @@ PortGroup           compiler_blacklist_versions 1.0
 
 name                hashcat
 version             4.1.1
-github.setup        gaming-hacker hashcat v 4.1.1
+github.setup        gaming-hacker hashcat bde4f7a09273c529784c8b5019c48a2977d42468
 fetch.type          git
+github.version      ${version}
+git.branch          master
+distname            ${name}-${github.version}
 
 categories          security develop
 license             BSD
@@ -26,12 +29,11 @@ compiler.blacklist-append gcc
 
 configure.compiler  macports-clang-6.0
 
-build.cmd           ${prefix}/bin/gmake -j8
-build.target-delete all
+build.cmd           ${prefix}/bin/gmake
+build.target-delete -w all
 
 # build.type          gnu
 # build.type          xcode
-# build.type          gcc
 
 use_configure   no
 use_autoreconf  no
