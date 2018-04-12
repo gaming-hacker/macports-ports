@@ -18,7 +18,7 @@ long_description	\
     filter content via hooks, remove noise (always-changing website parts), \
     etc.
 
-homepage            http://thpinfo.com/2008/urlwatch/
+homepage            https://thp.io/2008/urlwatch/
 master_sites        ${homepage}
 distname            urlwatch-${version}
 
@@ -28,19 +28,17 @@ sha256  006f04c124cf3dace3d071921e5ed452f6fbd463495bc8aa7879b915407c88f6
 
 livecheck.type      regex
 livecheck.url       ${homepage}
-livecheck.regex     "Current version: (\\d+(?:\\.\\d+)*)"
+livecheck.regex     "urlwatch-(\\d+(?:\\.\\d+)*)"
 
 python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools
 
-    if { ${python.version} < 32 } {
-        depends_lib-append    port:py${python.version}-futures
-    }
-
     pre-configure {
         if { ${python.version} >= 30 } {
+            # convert to python3 using versioned 2to3-3.x as installed by python3x
+            reinplace "s|^2to3|${prefix}/bin/2to3-${python.branch}|" ${worksrcpath}/convert-to-python3.sh
             system "cd ${worksrcpath} && ${worksrcpath}/convert-to-python3.sh"
         }
     }

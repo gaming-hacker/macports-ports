@@ -30,7 +30,8 @@ sha256  fcc37309eab7cd0cbbb26cfd6a54303fbb80a00a58ab295d1e665bc69189c364
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-cython
-    depends_lib-append  port:py${python.version}-setuptools
+    depends_lib-append  port:py${python.version}-setuptools \
+                        port:py${python.version}-pytest-runner
 
     # Fix permissions
     post-extract {
