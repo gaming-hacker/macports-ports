@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       pure 1.0
@@ -21,7 +21,7 @@ long_description                ${name} provides ${description}. It goes \
                                 languages other than C.
 
 checksums                       rmd160  6415156f0d78090ab7c2410e3d9672fd0fdeec9b \
-                                sha256  333323da8f758df7cc2696307bf7a1898de6d98be6130484c0f15862e3227280
+sha256  333323da8f758df7cc2696307bf7a1898de6d98be6130484c0f15862e3227280
 
 depends_build-append            port:pkgconfig
 

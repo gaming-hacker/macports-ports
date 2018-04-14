@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -29,11 +29,11 @@ depends_lib     port:libevent port:ncurses
 if {${subport} eq ${name}} {
     github.tarball_from     releases
     checksums               rmd160  0f36f35969fb61b8d2771845deba2596b047b7b7 \
-                            sha256  9ded7d100313f6bc5a87404a4048b3745d61f2332f99ec1400a7c4ed9485d452
+sha256  9ded7d100313f6bc5a87404a4048b3745d61f2332f99ec1400a7c4ed9485d452
 }
 subport tmux-devel {
     checksums               rmd160  c87897da9756c0332d535b0a38ae8215c62e3ad4 \
-                            sha256  4fc00c214492aa7f472f27f827e1988f315e22981185282cad03d03179f7231f
+sha256  4fc00c214492aa7f472f27f827e1988f315e22981185282cad03d03179f7231f
 
     use_autoreconf          yes
     autoreconf.cmd          ./autogen.sh

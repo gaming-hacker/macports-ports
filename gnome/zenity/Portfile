@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  1a8af7436ab698db73c0f542d731619d31fdbbca \
-                    sha256  db179354721fb4e2d5c418e0dc41f09c831a6b2dd440e33f7743dfc266de8a6b \
-                    size    4458404
+sha256  db179354721fb4e2d5c418e0dc41f09c831a6b2dd440e33f7743dfc266de8a6b \
+size    4458404
 
 depends_build       port:pkgconfig \
                     port:yelp-tools \

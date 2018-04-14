@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -29,8 +29,8 @@ long_description            Glib is a library which includes support routines \
 master_sites                gnome:sources/${my_name}/${branch}/
 
 checksums                   rmd160  da4e45bf52d28b610a71bed8b4331bfb0b5c8d56 \
-                            sha256  40ef3f44f2c651c7a31aedee44259809b6f03d3d20be44545cd7d177221c0b8d \
-                            size    8028716
+sha256  40ef3f44f2c651c7a31aedee44259809b6f03d3d20be44545cd7d177221c0b8d \
+size    8028716
 
 patchfiles                  gcocoanotificationbackend.patch \
                             libintl.patch \
