@@ -10,7 +10,7 @@ revision            1
 categories          math
 platforms           darwin
 license             GPL-2+
-maintainers         gmail.com:jjstickel
+maintainers         {gmail.com:jjstickel @jjstickel}
 
 description         Qalculate! is a multi-purpose desktop calculator
 long_description    Qalculate! is a multi-purpose desktop calculator. \
