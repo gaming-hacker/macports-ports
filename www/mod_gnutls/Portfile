@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ homepage            https://mod.gnutls.org
 master_sites        ${homepage}/downloads/
 
 checksums           rmd160  d4c6e4eec5de32441236c73ef9714d5e5c8eb458 \
-                    sha256  f2dbd0d9a329568a166a1fc1eafc81ab955bdebd36b9546a9466f248c3adcdf7
+sha256  f2dbd0d9a329568a166a1fc1eafc81ab955bdebd36b9546a9466f248c3adcdf7
 
 depends_build       port:pkgconfig
 
@@ -36,7 +36,7 @@ if {[variant_isset apache22]} {
     version         0.6
     revision        2
     checksums       rmd160  252d4b1ec3a18931ef51a5ded3e8426f415150f4 \
-                    sha256  5fb2c79fd64f55faabde50c6ba3ef7b959825c8a6130152d00ca18f6d99bc041
+sha256  5fb2c79fd64f55faabde50c6ba3ef7b959825c8a6130152d00ca18f6d99bc041
 
     patchfiles      patch-src_Makefile.am.diff
 
