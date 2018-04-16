@@ -6,7 +6,7 @@ PortGroup user 1.0
 
 ruby.setup		cmdparse 3.0.3 gem {} rubygems
 
-maintainers		kimuraw openmaintainer
+maintainers		{kimuraw @kimuraw} openmaintainer
 description		cmdparse - advanced command line parser supporting commands
 long_description	This library, cmdparse, can be used to create such a \
 				command line interface. Internally it uses optparse or any \

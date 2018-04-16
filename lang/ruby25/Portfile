@@ -6,7 +6,7 @@ PortGroup           select 1.0
 name                ruby25
 version             2.5.1
 categories          lang ruby
-maintainers         kimuraw openmaintainer
+maintainers         {kimuraw @kimuraw} openmaintainer
 platforms           darwin
 
 description         Powerful and clean object-oriented scripting language
