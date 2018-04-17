@@ -22,7 +22,7 @@ if {$subport eq $name} {
 
     github.setup            saltstack salt ${version} v
 
-    python.versions         27 34 35 36
+python.versions 27 36
     categories              sysutils python
 
     checksums           rmd160  ddb1cbf6f26890360cc06592bb4ba17decf4b772 \

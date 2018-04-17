@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD MIT
 supported_archs     noarch
 
-python.versions     26 27 34 35 36
+python.versions 27 36
 
 maintainers         stromnov openmaintainer
 
@@ -36,7 +36,7 @@ master_sites        pypi:B/Beaker
 distname            Beaker-${version}
 
 checksums           rmd160  2977e5b4b3a0d321c921d85700ea89b9d49d3e1c \
-                    sha256  32276ed686ab7203baf60520452903e35d1c3515f632683ea4a5881c8cd55921
+sha256  32276ed686ab7203baf60520452903e35d1c3515f632683ea4a5881c8cd55921
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools
