@@ -1,10 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
 PortSystem 1.0
 
 name            serf1
-version         1.3.8
+version         1.3.9
 categories      www
-maintainers     blair
+maintainers     {blair @blair}
 license         Apache-2
 description     C-based HTTP client library
 
@@ -19,18 +20,17 @@ homepage        https://serf.apache.org
 master_sites    https://archive.apache.org/dist/serf/
 distname        serf-${version}
 use_bzip2       yes
-checksums       sha1   1d45425ca324336ce2f4ae7d7b4cfbc5567c5446 \
-sha256 e0500be065dbbce490449837bb2ab624e46d64fc0b090474d9acaa87c82b2590
+
+checksums       rmd160  4bbc773841eb2bd83a7c12170937b403201dd83b \
+                sha256  549c2d21c577a8a9c0450facb5cca809f26591f048e466552240947bdf7a87cc \
+                size    145132
 
 patchfiles      patch-SConstruct.diff
 
 platforms       darwin
 
 depends_build   port:scons
-depends_lib     port:apr \
-                port:apr-util \
-                path:lib/libssl.dylib:openssl \
-                port:zlib
+depends_lib     port:apr port:apr-util path:lib/libssl.dylib:openssl port:zlib
 
 use_configure   no
 
@@ -55,7 +55,7 @@ build.target    APR=${prefix} \
 
 destroot.cmd        ${build.cmd}
 destroot.args       --install-sandbox=${destroot}
-destroot.destdir
+destroot.destdir    
 
 post-destroot {
     set sharedir ${destroot}${prefix}/share

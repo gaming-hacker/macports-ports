@@ -1,11 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup           app 1.0
 
-github.setup        qalculate qalculate-gtk 2.2.0 v
-revision            1
+github.setup        qalculate qalculate-gtk 2.4.0 v
 
 categories          math
 platforms           darwin
@@ -21,8 +19,10 @@ long_description    Qalculate! is a multi-purpose desktop calculator. \
 
 github.tarball_from releases
 
-checksums           rmd160  02eddc27611d49fb8f8a8c47a6e91224d5657d91 \
-sha256  d597a4f8cbee0cc5c17e6190fa34e97715d3144fbb15655cbc4ce18180e11571
+checksums           rmd160  3d50790c96057b8c58ad293b4e60c95198b9f03e \
+                    sha256  6a9521d1c5a602285bfff5f38328125f73d88f6625ef1fef9dc2f12592b55bad \
+                    size    2346368
+
 
 # autoreconf to reconfigure for intltool
 use_autoreconf      yes
@@ -35,15 +35,5 @@ depends_build-append \
 depends_lib-append \
                     port:libqalculate \
                     port:gtk3
-
-app.icon            data/qalculate.png
-# generate simple generic launch script that doesn't pass -psn
-post-extract {
-    set exe [open ${worksrcpath}/${app.name} w]
-    puts ${exe} "#!/bin/bash\n${prefix}/bin/${name}\n"
-    close ${exe}
-    system "chmod 755 ${worksrcpath}/${app.name}"
-}
-app.executable      ${worksrcpath}/${app.name}
 
 notes-append "Graphical plotting is enabled by installing gnuplot.\n"

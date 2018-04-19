@@ -10,7 +10,7 @@ version             0.9.9
 python.versions 27 36
 platforms           darwin
 license             MIT BSD
-maintainers         eborisch \
+maintainers         {eborisch @eborisch} \
                     openmaintainer
 supported_archs     noarch
 

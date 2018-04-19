@@ -71,17 +71,14 @@ proc perl5.create_variants {branches} {
     global name perl5.major perl5.default_variant perl5.variant perl5.set_default_variant perl5.conflict_variants perl5.require_variant perl5.variants
     set perl5.variants [perl5.get_variant_names ${branches}]
     foreach branch ${branches} {
-        set index [lsearch ${branches} ${branch}]
+        set index [lsearch -exact ${branches} ${branch}]
         set variant [lindex ${perl5.variants} ${index}]
 # Add conflicts
-        set conflicts {}
+        set filtered {}
         if {${perl5.conflict_variants}} {
             set filtered [lreplace ${perl5.variants} ${index} ${index}]
-            if {$filtered ne ""} {
-                set conflicts "conflicts {$filtered}"
-            }
         }
-        eval "variant ${variant} ${conflicts} description Use MacPorts perl${branch} {}"
+        variant ${variant} conflicts {*}${filtered} description "Use MacPorts perl${branch}" {}
         if {[variant_isset ${variant}]} {
             perl5.variant ${variant}
         }
@@ -95,7 +92,7 @@ proc perl5.create_variants {branches} {
     }
 # Set perl version and deps
     foreach branch ${branches} {
-        set index [lsearch ${branches} ${branch}]
+        set index [lsearch -exact ${branches} ${branch}]
         set variant [lindex ${perl5.variants} ${index}]
         if {[variant_isset ${variant}]} {
             perl5.major ${branch}
