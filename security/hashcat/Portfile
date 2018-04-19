@@ -27,17 +27,35 @@ homepage            https://hashcat.net/hashcat/
 
 compiler.blacklist-append gcc
 
-configure.compiler  macports-clang-6.0
+build.cmd           make
+build.target
 
-build.cmd           ${prefix}/bin/gmake
-build.target-delete -w all
-
-# build.type          gnu
-# build.type          xcode
-
+use_parallel_build yes
 use_configure   no
 use_autoreconf  no
 use_automake    no
 
-depends_build       port:gmake
+variant xcode description {use xcode clang compiler} {
+build.type xcode
+}
+
+variant gcc description {use whatever gcc is first in your env} {
+build.type gnu
+}
+
+variant clang description {use whatever clang is first in your env} { build.type clang
+}
+variant clang6 description {use macports-clang-6.0} {
+configure.compiler  macports-clang-6.0
+build.type clang
+}
+
+variant gmake description {use gmake instead of make} {
+depends_build-append       port:gmake
+build.cmd           gmake
+}
+
+default_variants +clang6 +gmake
+
+destroot.env-append     PREFIX=${prefix}
 

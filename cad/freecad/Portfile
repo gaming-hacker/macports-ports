@@ -62,7 +62,7 @@ post-patch {
 }
 
 compilers.choose        fc
-compilers.setup         require_fortran -g95
+compilers.setup         require_fortran
 
 cmake.install_prefix    ${prefix}/libexec/${name}
 cmake.install_rpath     ${cmake.install_prefix}/lib
