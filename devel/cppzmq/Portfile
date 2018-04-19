@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ if {${subport} eq ${name}} {
 
     github.setup    zeromq cppzmq 4.2.3 v
     checksums       rmd160 2018c5ef1e282cdd8f271c7435b4f60c497291f5 \
-                    sha256 8986a12bf838ba952a0048264a5a3dbc160d140ebdc476db979b3d2407e412f1 \
-                    size   10907
+sha256 8986a12bf838ba952a0048264a5a3dbc160d140ebdc476db979b3d2407e412f1 \
+size   10907
 
     # bump the epoch because I moved the version from 20170720 to 4.2.2
 
@@ -38,8 +38,8 @@ if {${subport} eq ${name}} {
     github.setup    zeromq cppzmq fdc145a09e15aea93736b5a4e1bca3803e12dc48
     version         20180417
     checksums       rmd160 f2e0b53238bfd39e9479e88cd4f047d0edd6e9e3 \
-                    sha256 8444863b0cf32cc49d82e9b769ac1367a8847bd9ba98511991d72acd0fa66f7e \
-                    size   18809
+sha256 8444863b0cf32cc49d82e9b769ac1367a8847bd9ba98511991d72acd0fa66f7e \
+size   18809
 
     conflicts       ${name}
     long_description ${description}: \

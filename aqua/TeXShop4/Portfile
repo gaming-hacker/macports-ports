@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -31,7 +31,7 @@ set propername      TeXShop
 #dist_subdir         TeXShop/${version}_${revision}
 
 checksums           rmd160  a0b94228661eff1bf73a86316264a224c49cd3f0 \
-                    sha256  32fb7d7735213198b92b59228f75062c8a46307e277b1e7e79fc86a08ee9df5b
+sha256  32fb7d7735213198b92b59228f75062c8a46307e277b1e7e79fc86a08ee9df5b
 
 minimum_xcodeversions       {13 6.2}
 

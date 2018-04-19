@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    \
 homepage            http://gittup.org/tup/
 
 checksums           rmd160  ea0e95f3ed2869a813a183a14df50f460302a494 \
-                    sha256  10715a665621a961eb7c4a6bc7491cc349f88bd49500cfc4a47b9ed8835e70c0 \
-                    size    4004646
+sha256  10715a665621a961eb7c4a6bc7491cc349f88bd49500cfc4a47b9ed8835e70c0 \
+size    4004646
 
 depends_build       port:pkgconfig
 

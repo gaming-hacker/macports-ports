@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     26 27 33 34 35 36
+python.versions 27 36
 
 maintainers         stromnov openmaintainer
 
@@ -28,7 +28,7 @@ master_sites        pypi:C/Cython
 distname            Cython-${version}
 
 checksums           rmd160  7dfeace8945ba24df7155731d8024f9d82d49975 \
-                    sha256  634e2f10fc8d026c633cffacb45cd8f4582149fa68e1428124e762dbc566e68a
+sha256  634e2f10fc8d026c633cffacb45cd8f4582149fa68e1428124e762dbc566e68a
 
 if {${name} ne ${subport}} {
     depends_build-append \

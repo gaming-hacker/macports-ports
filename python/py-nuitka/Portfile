@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     27 34 35 36
+python.versions 27 36
 
 maintainers         stromnov openmaintainer
 
@@ -23,7 +23,7 @@ master_sites        pypi:N/Nuitka
 distname            Nuitka-${version}
 
 checksums           rmd160  b308d6f4dc63e0156379ca3e4a2ac9cabd2c83cc \
-                    sha256  ef06729327ea6fabd597fd889696b77de301fab856b5b3d945d0a0b897c38a37
+sha256  ef06729327ea6fabd597fd889696b77de301fab856b5b3d945d0a0b897c38a37
 
 if {${name} ne ${subport}} {
 
