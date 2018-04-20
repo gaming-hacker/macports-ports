@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -34,13 +34,13 @@ distfiles               ${distname}${extract.suffix}:source \
                         ${docdistname}${extract.suffix}:docs
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  4b31c73b38d1f03c431b12408f800569e0724cc4 \
-                        sha256  e5435f02e02d2b87bb8e4efdcaa14b1f78c9cf3ab1ed80f94b6382fb6acc7d78 \
-                        size    1886443 \
+rmd160  4b31c73b38d1f03c431b12408f800569e0724cc4 \
+sha256  e5435f02e02d2b87bb8e4efdcaa14b1f78c9cf3ab1ed80f94b6382fb6acc7d78 \
+size    1886443 \
                         ${docdistname}${extract.suffix} \
-                        rmd160  5ef58133218fa1ba8106cdaada4a3e6f56c793ad \
-                        sha256  e6251ab44adcb075c7ca4205163c43b6539cbe5265b8a24ec0afa07f8b9213f3 \
-                        size    2128376
+rmd160  5ef58133218fa1ba8106cdaada4a3e6f56c793ad \
+sha256  e6251ab44adcb075c7ca4205163c43b6539cbe5265b8a24ec0afa07f8b9213f3 \
+size    2128376
 
 patchfiles \
     patch-src_base_ftrfork.c.diff \
