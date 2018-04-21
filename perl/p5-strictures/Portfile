@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -12,8 +12,8 @@ description         strictures - turn on strict and make all warnings fatal.
 long_description    ${description}
 
 checksums           rmd160  38b03c8732febb3c0aac12da5a0afc7147bfb980 \
-                    sha256  960bdb9f82c8f09caebc417bce3fdf75b27de81f4408d0ba0b0a6d61ab86dd99 \
-                    size    15716
+sha256  960bdb9f82c8f09caebc417bce3fdf75b27de81f4408d0ba0b0a6d61ab86dd99 \
+size    15716
 
 if {${perl5.major} != ""} {
     depends_lib-append \

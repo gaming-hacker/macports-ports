@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ description         Perl interface and general command line utility to read, wri
 long_description    ${description}
 
 checksums           rmd160  76cba028aba5da1c818502a1e5e5deb7e5aebb10 \
-                    sha256  8455d5fb8d005f09d5b6e4df28ecf0945c09619f6eacd3a8bafe6505b38747c0 \
-                    size    4387592
+sha256  8455d5fb8d005f09d5b6e4df28ecf0945c09619f6eacd3a8bafe6505b38747c0 \
+size    4387592
 
 homepage            http://exiftool.sourceforge.net/
 master_sites        sourceforge:project/exiftool/

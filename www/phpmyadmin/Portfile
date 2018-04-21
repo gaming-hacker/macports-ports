@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ distname            ${my_name}-${version}-all-languages
 use_xz              yes
 
 checksums           rmd160  37737d8a1b7ce42e9d3b0d8f752bd0168d2b394a \
-                    sha256  36b586d310374a062244adb919d847379aebf4c41ba0e5d11d6ed3186fa052d5 \
-                    size    5926908
+sha256  36b586d310374a062244adb919d847379aebf4c41ba0e5d11d6ed3186fa052d5 \
+size    5926908
 
 # The php variants deliberately do not conflict
 
