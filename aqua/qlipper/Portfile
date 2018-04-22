@@ -21,4 +21,5 @@ size    101398
 qt5.depends_component   qtbase \
                         qttools
 
+# on next rev change to use cmake.install_prefix ${applications_dir}
 configure.args-append   -DCMAKE_INSTALL_PREFIX=${applications_dir}
