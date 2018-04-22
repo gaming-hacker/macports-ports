@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -15,8 +15,8 @@ long_description    This module copies and moves directories recursively \
 platforms           darwin
 
 checksums           rmd160  a04450269b4d707bec1deee6de8db581a64eb2b2 \
-                    sha256  b89f690a3c38a5f0282c5537a9a34f25a03ac967898e673e68d1e6af489e83c2 \
-                    size    19298
+sha256  b89f690a3c38a5f0282c5537a9a34f25a03ac967898e673e68d1e6af489e83c2 \
+size    19298
 
 if {${perl5.major} != ""} {
     depends_build-append \
