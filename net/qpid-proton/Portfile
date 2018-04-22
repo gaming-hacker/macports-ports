@@ -28,6 +28,8 @@ sha256  6d4683e17078361e91bc33e18d99b4c047593ab75269833aca110893910df17b
 
 patchfiles          patch-libressl.diff
 
+patchfiles          patch-libressl.diff
+
 cmake.out_of_source yes
 configure.args-append \
                     -DSASL_IMPL=none \

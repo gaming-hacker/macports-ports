@@ -32,6 +32,8 @@ size    2318988
 
 patchfiles                      patch-ssl.diff
 
+patchfiles                      patch-ssl.diff
+
 if {${name} eq ${subport}} {
     PortGroup                   muniversal 1.0
 
