@@ -20,4 +20,4 @@ sha256  24353a253a6c811b26f05aedbda10a50503cde7cb989c6b51a05e201788a85dd
 depends_lib         port:gflags \
                     port:google-glog \
                     port:libsodium \
-                    port:protobuf-cpp
+                    port:protobuf3-cpp

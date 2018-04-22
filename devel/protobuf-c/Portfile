@@ -26,7 +26,7 @@ sha256  9a973fc04aac003f9cf2b5a90ac4b8fa294cacb4e3f0796d3b5a789a5ad46c07
 
 platforms	darwin
 
-depends_lib	port:protobuf-cpp
+depends_lib	port:protobuf3-cpp
 depends_build   port:pkgconfig
 
 test.run	yes

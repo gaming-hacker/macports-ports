@@ -22,7 +22,7 @@ sha256  3fae039f041bc024c966c3f6e99395602cbcd5a29a540f6f4336b6007f8d79b6
 
 depends_lib-append  port:google-glog \
                     port:gflags \
-                    port:protobuf-cpp \
+                    port:protobuf3-cpp \
                     port:leveldb \
                     port:snappy \
                     port:lmdb \
@@ -124,7 +124,7 @@ variant python27 description {Install Python 2.7 interface} {
                     port:py27-networkx \
                     port:py27-nose \
                     port:py27-pandas \
-                    port:py27-protobuf \
+                    port:py27-protobuf3 \
                     port:py27-gflags \
                     port:py27-leveldb \
                     port:py27-dateutil \
