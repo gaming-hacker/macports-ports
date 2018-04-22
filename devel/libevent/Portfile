@@ -25,9 +25,6 @@ sha256  d53e88f2b31fbccab93f6b1e54fe7f4c1d536b6d8250c95cd42dbc14f958baeb
 
 depends_lib         path:lib/libssl.dylib:openssl
 
-patchfiles          patch-libressl.diff
-patch.pre_args      -p1
-
 use_autoreconf      yes
 
 test.run            yes
