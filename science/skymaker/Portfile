@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ long_description   \
 homepage            http://www.astromatic.net/software/skymaker/
 master_sites        http://www.astromatic.net/download/skymaker/
 checksums           md5     61c9c5297a5d48c8bad7f6f700ebadaa \
-                    sha1    0e11eb66f5d23f12cf6dc967ef4ade5328a662ca \
-                    rmd160  207fe8140b1aba1ad21b2d0a053013a529915f2a
+sha1    0e11eb66f5d23f12cf6dc967ef4ade5328a662ca \
+rmd160  207fe8140b1aba1ad21b2d0a053013a529915f2a
 
 depends_lib         port:fftw-3-single
 universal_variant   no
