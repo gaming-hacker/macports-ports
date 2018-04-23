@@ -33,11 +33,13 @@ sha256  3f32536d67eba5bd9929b3b1fe8c54f5cd18d76173e3bc52c151c31a0ea1c946
 
 worksrcdir          "package"
 
-depends_lib         path:bin/node:nodejs6
+depends_lib         path:bin/node:nodejs8
 
 platform darwin {
     if {${os.major} < 11} {
-        depends_lib-replace path:bin/node:nodejs6 path:bin/node:nodejs4
+        depends_lib-replace path:bin/node:nodejs8 path:bin/node:nodejs4
+    } elseif {${os.major} < 13} {
+        depends_lib-replace path:bin/node:nodejs8 path:bin/node:nodejs6
     }
 }
 
