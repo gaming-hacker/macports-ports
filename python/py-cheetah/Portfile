@@ -13,7 +13,7 @@ size   872411
 categories-append   www
 platforms           darwin
 license             MIT
-maintainers         {@emcrisostomo gmail.com:enrico.m.crisostomo} {michaelld @michaelld} openmaintainer
+maintainers         {emcrisostomo @emcrisostomo} {michaelld @michaelld} openmaintainer
 
 description         Cheetah is a Python-powered template engine and \
                     code generator
