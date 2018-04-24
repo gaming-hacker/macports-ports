@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            npm-${version}
 extract.suffix      .tgz
 
 checksums           sha1    f5518c860ab91586db2a24aad4de1433cda108d9 \
-                    rmd160  2ad2c402cfcf1b21ee1e80fba4d767837b64485c \
-                    sha256  689ac0dbbbf372a8f9be5a25584044606c715eb5f552cdd4372fbe58afaf6334
+rmd160  2ad2c402cfcf1b21ee1e80fba4d767837b64485c \
+sha256  689ac0dbbbf372a8f9be5a25584044606c715eb5f552cdd4372fbe58afaf6334
 
 worksrcdir          "package"
 

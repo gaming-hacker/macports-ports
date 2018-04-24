@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/ndg-httpsclient
 master_sites        pypi:n/ndg-httpsclient
 
-python.versions     27 34 35 36
+python.versions 27 36
 
 checksums           rmd160  58d1e060ed8b12f3574ab7302f6e46c3715d862c \
-                    sha256  c009f5430790936b3a97eaf9f968516664d97e146ab2bda991f0caadb7cc088b \
-                    size    24254
+sha256  c009f5430790936b3a97eaf9f968516664d97e146ab2bda991f0caadb7cc088b \
+size    24254
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-asn1 \
