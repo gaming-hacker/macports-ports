@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
 
-name                    nodejs9
-version                 9.11.1
+name                    nodejs10
+version                 10.0.0
 
 categories              devel net
 platforms               darwin
@@ -18,21 +18,21 @@ long_description        Node's goal is to provide an easy way to build scalable 
                         Machine or Python's Twisted. Node takes the event model a bit further-it \
                         presents the event loop as a language construct instead of as a library.
 
-conflicts               nodejs4 nodejs5 nodejs6 nodejs7 nodejs8 nodejs10
+conflicts               nodejs4 nodejs5 nodejs6 nodejs7 nodejs8 nodejs9
 
 homepage                http://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  ff0959b3badd2a9fe168dc32eaec299fc9bf080a \
-sha256  23dc3d133924f5c7453c479d5eceb3b6af932415cb67d99798c313573d9b9d4c
+checksums               rmd160  d2767744a29993147467da2f1a11fd2bfb2bad16 \
+                        sha256  e239109020755db8a58e6bcb8b9375439e31cf3bbe92d0670a320a47a4e8ab50
 
 distname                node-v${version}
 
 depends_build           port:pkgconfig
 
-depends_lib             port:python27 \
-                        path:lib/libssl.dylib:openssl
+depends_lib             port:python27
+#                        path:lib/libssl.dylib:openssl
 
 proc rec_glob {basedir pattern} {
     set files [glob -directory $basedir -nocomplain -type f $pattern]
@@ -53,7 +53,6 @@ post-patch {
                    ${worksrcpath}/deps/cares/gyp_cares \
                    ${worksrcpath}/deps/v8/gypfiles/gyp_v8 \
                    ${worksrcpath}/deps/v8/tools/objdump-v8 \
-                   ${worksrcpath}/deps/v8/tools/mingw-generate-makefiles.sh \
                    [rec_glob ${worksrcpath} *.py]] {
         reinplace -q "s|/usr/bin/env python|${configure.python}|" ${f}
     }
@@ -66,9 +65,9 @@ post-patch {
 
 configure.args-append   --without-npm
 configure.args-append   --with-intl=small-icu
-configure.args-append   --shared-openssl
-configure.args-append   --shared-openssl-includes=${prefix}/include/openssl
-configure.args-append   --shared-openssl-libpath=${prefix}/lib
+#configure.args-append   --shared-openssl
+#configure.args-append   --shared-openssl-includes=${prefix}/include/openssl
+#configure.args-append   --shared-openssl-libpath=${prefix}/lib
 
 # V8 only supports ARM and IA-32 processors
 supported_archs         i386 x86_64
@@ -156,7 +155,6 @@ destroot {
         src/util-inl.h \
         src/util.h \
         src/v8abbr.h \
-        deps/v8/include/v8-debug.h \
         deps/v8/include/v8-profiler.h \
         deps/v8/include/v8-testing.h \
         deps/v8/include/v8.h \
@@ -206,4 +204,4 @@ if {${os.major} < 11} {
 
 livecheck.url       ${homepage}dist/
 livecheck.type      regex
-livecheck.regex     {v(9\.\d+\.\d+)}
+livecheck.regex     {v(\d+\.\d+\.\d+)}
