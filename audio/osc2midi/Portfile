@@ -1,0 +1,31 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem              1.0
+PortGroup               cmake 1.1
+PortGroup               github 1.0
+
+github.setup            ssj71 OSC2MIDI 0.2.3
+master_sites            https://github.com/ssj71/OSC2MIDI/archive/
+distname                v${version}
+worksrcdir              OSC2MIDI-${version}
+
+name                    osc2midi
+
+checksums               rmd160  bb21f73f654b192d31d4c8781134ae5ec826c99d \
+                        sha256  94d1da7138fdedd60b496fbf599e6b7d05fdab800fd5d39786719a391ab567d5 \
+                        size    50171
+
+maintainers             {ryandesign @ryandesign} {gmail.com:aggraef @agraef}
+
+categories              audio
+description             OSC to JACK MIDI bridge
+long_description        This is a flexible OSC to JACK MIDI (and back) Bridge \
+                        written in C for Linux. It was designed to be configurable \
+                        so that any combination of MIDI and OSC client or host \
+                        can work perfectly with it.
+
+platforms               darwin
+license                 GPL-3
+
+depends_lib-append      port:jack \
+                        port:liblo
