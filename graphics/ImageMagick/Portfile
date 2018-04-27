@@ -64,6 +64,7 @@ depends_lib   port:bzip2 \
               port:libtool \
               port:openjpeg \
               port:openexr \
+              port:expat \
               port:libxml2 \
               port:liblqr \
               port:libwmf

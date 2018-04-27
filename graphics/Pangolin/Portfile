@@ -7,7 +7,7 @@ PortGroup           github 1.0
 PortGroup user 1.0
 
 github.setup        stevenlovegrove Pangolin 0.5 v
-revision            1
+revision            2
 categories          graphics
 platforms           darwin
 license             MIT
