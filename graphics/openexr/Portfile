@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -15,8 +15,8 @@ homepage        http://www.openexr.com
 platforms       darwin
 master_sites    http://savannah.nongnu.org/download/openexr
 checksums       rmd160  eb2fbbefe1399d87a4a60807cb7386ed3b300eaa \
-                sha256  8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd \
-                size    18176639
+sha256  8f9a5af6131583404261931d9a5c83de0a425cb4b8b25ddab2b169fbf113aecd \
+size    18176639
 
 # avoid dependency on port:cctools
 configure.env-append NM=${prefix}/bin/nm
@@ -70,9 +70,9 @@ subport ilmbase {
     #revision    0
     distname    ilmbase-${version}
     checksums   \
-        rmd160  0abe57b5c8a82e20be500a490d335816f654625c \
-        sha256  cac206e63be68136ef556c2b555df659f45098c159ce24804e9d5e9e0286609e \
-        size    573073
+rmd160  0abe57b5c8a82e20be500a490d335816f654625c \
+sha256  cac206e63be68136ef556c2b555df659f45098c159ce24804e9d5e9e0286609e \
+size    573073
 
     # Bitrotted ucontext usage is buggy, don't bother with it.
     patchfiles-append patch-configure.diff
@@ -86,9 +86,9 @@ foreach pver ${python_versions} {
         #revision    0
         distname    pyilmbase-${version}
         checksums                \
-            rmd160  85bc89933a8ccd1c0866256d1a32b3dd95e7605c \
-            sha256  613912a92ccb4073d448f4615eb29b454025a2f5fea1c01bf14f9ac7be71726d \
-            size    497218
+rmd160  85bc89933a8ccd1c0866256d1a32b3dd95e7605c \
+sha256  613912a92ccb4073d448f4615eb29b454025a2f5fea1c01bf14f9ac7be71726d \
+size    497218
 
         # so long as boost can only be installed with one version of python at a time,
         #    conflict with all other pyilmbase ports
@@ -118,8 +118,8 @@ subport openexr_viewers {
     #revision    0
     distname    openexr_viewers-${version}
     checksums   rmd160  df9c5971a4401394f3fb3a8e33a0c2412fac1b48 \
-                sha256  486e11de8c87582b8180c77fc9b28431d007025072ae018fd33b932b1717bdc7 \
-                size    515124
+sha256  486e11de8c87582b8180c77fc9b28431d007025072ae018fd33b932b1717bdc7 \
+size    515124
 
     depends_lib-append  \
         port:openexr                \

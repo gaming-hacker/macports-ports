@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ long_description    fd is a simple, fast and user-friendly alternative to find. 
                     for 80% of the use cases.
 
 checksums           fd-${version}.tar.gz \
-                    rmd160  5e44970aeef6b6b84b4f7975caef6a20a6bb8d31 \
-                    sha256  e6ba21e66a295b9fb69bfc9a361813b3c7d73b8d29dc819d37d21af750814ee9 \
-                    size    49655
+rmd160  5e44970aeef6b6b84b4f7975caef6a20a6bb8d31 \
+sha256  e6ba21e66a295b9fb69bfc9a361813b3c7d73b8d29dc819d37d21af750814ee9 \
+size    49655
 
 cargo.crates \
     aho-corasick                     0.6.4  d6531d44de723825aa81398a6415283229725a00fa30713812ab9323faa82fc4 \

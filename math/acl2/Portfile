@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -42,9 +42,9 @@ homepage            http://www.cs.utexas.edu/users/moore/acl2/${shortversion}
 distfiles           ${name}-${version}${extract.suffix}
 
 checksums           md5     d343b03e94f1f15368355dd9309cf9a0 \
-                    sha1    9e94663075aa5d87913a4129979f176316a83c8b \
-                    rmd160  a013826458b0004b980283ad9b43d65748c87bc1 \
-                    sha256  e44bc2f6bcd605b2f7b766f2112ef178c325cf2e6b438bcc77d7e2deb8195756 \
+sha1    9e94663075aa5d87913a4129979f176316a83c8b \
+rmd160  a013826458b0004b980283ad9b43d65748c87bc1 \
+sha256  e44bc2f6bcd605b2f7b766f2112ef178c325cf2e6b438bcc77d7e2deb8195756 \
 
 use_configure           no
 
