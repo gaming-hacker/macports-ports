@@ -4,14 +4,18 @@ Last-Update: 2011-12-07
 
 --- include/pa_win_ds.h
 +++ include/pa_win_ds.h
-@@ -86,6 +86,21 @@
+@@ -84,11 +84,26 @@
+     */
+     PaWinWaveFormatChannelMask channelMask;
  
- }PaWinDirectSoundStreamInfo;
+-}PaWinDirectSoundStreamInfo;
++ }PaWinDirectSoundStreamInfo;
  
 +/** Retrieve the GUID of the input device.
-+
+ 
 + @param stream The stream to query.
-+
+ 
+-#ifdef __cplusplus
 + @return A pointer to the GUID, or NULL if none.
 +*/
 +LPGUID PaWinDS_GetStreamInputGUID( PaStream* s );
@@ -23,9 +27,13 @@ Last-Update: 2011-12-07
 + @return A pointer to the GUID, or NULL if none.
 +*/
 +LPGUID PaWinDS_GetStreamOutputGUID( PaStream* s );
++
++
++ #ifdef __cplusplus
+ }
+ #endif /* __cplusplus */
  
- 
- #ifdef __cplusplus
+
 --- include/portaudio.h
 +++ include/portaudio.h
 @@ -1146,6 +1146,15 @@
