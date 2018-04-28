@@ -58,25 +58,22 @@ configure.args      --mandir=${prefix}/share/man \
 configure.ldflags-append \
                     -lintl
 
-#PYTHON_CFLAGS=`${PYTHON}-config --cflags`
-#PYTHON_LIBS=`${PYTHON}-config --ldflags`
-
 variant python26 conflicts python27 description {Enable Python support (Python 2.6)} {
+    depends_lib-append      port:python26 \
+                            port:py26-pygtk
     configure.args-delete   --disable-python-scripting \
                             --disable-python-extension
-    configure.env-append    PYTHON=${prefix}/bin/python2.6 \
-                            PYTHON_CFLAGS="-I${frameworks_dir}/Python.framework/Versions/2.6/include/python2.6 -I${frameworks_dir}/Python.framework/Versions/2.6/include/python2.6 -fno-strict-aliasing -fno-common -dynamic -pipe -Os -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes" \
-                            PYTHON_LIBS="-L${frameworks_dir}/Python.framework/Versions/2.6/lib/python2.6/config -lpython2.6 -ldl -framework CoreFoundation"
-    destroot.args-append    PYTHON=${prefix}/bin/python2.6 PYTHONPREFIX=${frameworks_dir}/Python.framework/Versions/2.6
-    depends_lib-append      port:python26
+    configure.python        ${prefix}/bin/python2.6
+    configure.pkg_config_path \
+                            "${frameworks_dir}/Python.framework/Versions/2.6/lib/pkgconfig"
 }
 
 variant python27 conflicts python26 description {Enable Python support (Python 2.7)} {
+    depends_lib-append      port:python27 \
+                            port:py27-pygtk
     configure.args-delete   --disable-python-scripting \
                             --disable-python-extension
-    configure.env-append    PYTHON=${prefix}/bin/python2.7 \
-                            PYTHON_CFLAGS="-I${frameworks_dir}/Python.framework/Versions/2.7/include/python2.7 -I${frameworks_dir}/Python.framework/Versions/2.7/include/python2.7 -fno-strict-aliasing -fno-common -dynamic -pipe -Os -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes" \
-                            PYTHON_LIBS="-L${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/config -lpython2.7 -ldl -framework CoreFoundation"
-    destroot.args-append    PYTHON=${prefix}/bin/python2.7 PYTHONPREFIX=${frameworks_dir}/Python.framework/Versions/2.7
-    depends_lib-append      port:python27
+    configure.python        ${prefix}/bin/python2.7
+    configure.pkg_config_path \
+                            "${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig"
 }
