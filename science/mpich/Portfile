@@ -74,7 +74,7 @@ sha256  5d408e31917c5249bf5e35d1341afc34928e15483473dbb4e066b76c951125cf
 # As MPICH creates compiler wrappers, there are lots of
 # variants for what compiler the user would like to wrap.
 
-# Sup-ports names and corresponding configure.compiler value
+# Subport names and corresponding configure.compiler value
 array set clist {
     clang   {clang}
     gcc8    {macports-gcc-8}
