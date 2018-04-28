@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    The Cryptokit library for OCaml provides a \
                     applications.
 
 checksums           rmd160  882ea0cc12086fb4aee50003c78b09d99fce450d \
-                    sha256  8d43d072a3986af7464a6b23e2da12cb1e192eb68e0c387530afac50f6c5889e \
-                    size 165774
+sha256  8d43d072a3986af7464a6b23e2da12cb1e192eb68e0c387530afac50f6c5889e \
+size 165774
 
 patchfiles          setup-ml.diff
 

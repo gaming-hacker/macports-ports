@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,7 +24,7 @@ homepage            http://xrootd.org/
 master_sites        ${homepage}download/v${version}
 
 checksums           rmd160  924853c8f581bd4e94fa2b032bf6506e014c4ce9 \
-                    sha256  9cd30a343758b8f50aea4916fa7bd37de3c37c5b670fe059ae77a8b2bbabf299
+sha256  9cd30a343758b8f50aea4916fa7bd37de3c37c5b670fe059ae77a8b2bbabf299
 
 depends_lib         port:python27 \
                     port:swig \
