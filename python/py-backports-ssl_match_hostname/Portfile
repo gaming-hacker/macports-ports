@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ license             PSF
 supported_archs     noarch
 
 # do not add subports for python > 3.4
-python.versions     27 33 34
+python.versions 27 36
 
 maintainers         stromnov openmaintainer
 
@@ -25,7 +25,7 @@ master_sites        pypi:b/backports.ssl_match_hostname/
 distname            backports.ssl_match_hostname-${version}
 
 checksums           rmd160  3e7112fd62bcef2bb526b7c60e782aa75ee5daac \
-                    sha256  502ad98707319f4a51fa2ca1c677bd659008d27ded9f6380c79e8932e38dcdf2
+sha256  502ad98707319f4a51fa2ca1c677bd659008d27ded9f6380c79e8932e38dcdf2
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-backports \
