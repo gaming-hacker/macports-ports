@@ -27,16 +27,10 @@ homepage            https://pypi.python.org/pypi/${realname}
 master_sites        pypi:a/${realname}
 distname            ${realname}-${version}
 
-<<<<<<< HEAD
-checksums           md5     4167555f521ddd69b66f13819604f3db \
-rmd160  175a0f1fc4a79073bca99ab3a87f87f07aa54af9 \
-sha256  d0a7cdc397e46be0d91a968acb3f561cc1b9244f5df94a2514cf32acfc8a2e94
-=======
 checksums           md5     9d0dfe251d003edb8f6a95dc4929b7b7 \
 rmd160  98c2eeb12ae464628d0b1e2ae5ba090be11ee94b \
 sha256  2284d4ae2052fedb9f466c09728e30d2e231cfded5ffd7b1a20c34123fdc4ba4 \
 size    109415
->>>>>>> 76b459de5731fb73115eeccc3c8fd0a2e093f4d8
 
 python.versions 27 36
 
