@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        ${name} is a high-performance 3D graphics toolkit useful
 homepage                http://www.openscenegraph.org/
 
 checksums               rmd160  b66d56772840a4db97a567f959eb178b2301e8fa \
-                        sha256  9ac3a4e902486c694f35f9d6e3032b8eb5df63b16bd7c0003e7531ca5a6ff150 \
-                        size    5788749
+sha256  9ac3a4e902486c694f35f9d6e3032b8eb5df63b16bd7c0003e7531ca5a6ff150 \
+size    5788749
 
 depends_build-append    port:pkgconfig
 

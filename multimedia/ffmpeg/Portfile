@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcodeversion 1.0
@@ -52,8 +52,8 @@ master_sites        http://www.ffmpeg.org/releases/
 use_xz              yes
 
 checksums           rmd160  905285cf32e1b00d320c51c0a94cbd670fab6649 \
-                    sha256  ed945daf40b124e77a685893cc025d086f638bc703183460aff49508edb3a43f \
-                    size    8656948
+sha256  ed945daf40b124e77a685893cc025d086f638bc703183460aff49508edb3a43f \
+size    8656948
 
 depends_build       port:pkgconfig \
                     port:gmake \
