@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description \
 license             mit
 
 checksums \
-    rmd160  2b95bce1586da3aec5cd8ac267f72be60586e8a8 \
-    sha256  2dba19ffd56054888c78e7f14d6862eb591f631d7b7f14b177158a38394b5631
+rmd160  2b95bce1586da3aec5cd8ac267f72be60586e8a8 \
+sha256  2dba19ffd56054888c78e7f14d6862eb591f631d7b7f14b177158a38394b5631
 
 set goproj          github.com/${github.author}/${github.project}
 

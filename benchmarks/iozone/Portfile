@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -21,7 +21,7 @@ homepage         http://www.iozone.org/
 master_sites     ${homepage}src/current/
 distname         ${name}[string map {. _} ${version}]
 checksums        rmd160 de4df28bf10fdbbfd152ada837fdae5f5cab7d81 \
-                 sha256 47517c0dcb4cab80b5ff46dd72ecd60e806ba36b751d9d2faabeb6734b1235b7
+sha256 47517c0dcb4cab80b5ff46dd72ecd60e806ba36b751d9d2faabeb6734b1235b7
 
 extract.suffix   .tar
 extract.cmd      cat

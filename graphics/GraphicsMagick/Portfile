@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -23,8 +23,8 @@ master_sites            sourceforge:project/graphicsmagick/graphicsmagick/${vers
                         ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/${branch}/
 
 checksums               rmd160  59ecf7531ddb04e833923c0373ceb932b6b5900f \
-                        sha256  e18df46a6934c8c12bfe274d09f28b822f291877f9c81bd9a506f879a7610cd4 \
-                        size    5462424
+sha256  e18df46a6934c8c12bfe274d09f28b822f291877f9c81bd9a506f879a7610cd4 \
+size    5462424
 
 depends_lib             port:libxml2 \
                         port:bzip2 \

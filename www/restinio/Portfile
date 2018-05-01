@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -22,7 +22,7 @@ long_description            RESTinio is a header-only C++14 library that gives y
                             HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                             primarily for asynchronous processing of HTTP-requests.
 checksums                   rmd160  25472318f996b53032397064b80e7fa80231d42b \
-                            sha256  c94b16faa285e344af0234508a84c587eb3c35bd28bca285531d6be63066d5c4
+sha256  c94b16faa285e344af0234508a84c587eb3c35bd28bca285531d6be63066d5c4
 homepage                    https://stiffstream.com/en/products/restinio.html
                     
 extract.suffix              .tar.gz
@@ -94,7 +94,7 @@ subport http-parser {
                             It does not make any syscalls nor allocations, it does not buffer data, it can be interrupted at anytime. \
                             Depending on your architecture, it only requires about 40 bytes of data per message stream (in a web server that is per connection).
     checksums               rmd160  c2b861bdc2faa06c5a18bbf7c689205cee5e73fe \
-                            sha256  51615f68b8d67eadfd2482decc63b3e55d749ce0055502bbb5b0032726d22d96
+sha256  51615f68b8d67eadfd2482decc63b3e55d749ce0055502bbb5b0032726d22d96
     github.master_sites     https://github.com/${github.author}/${github.project}/archive/
     depends_build
     depends_lib
@@ -127,7 +127,7 @@ subport asio {
     long_description            Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a \
                                 consistent asynchronous model using a modern C++ approach.
     checksums                   rmd160  6cec8bc795c0611975bc93f63ca3faf375180f67 \
-                                sha256  fa8c3a16dc2163f5b3451f2a14ce95277c971f46700497d4e94af6059c00dc06
+sha256  fa8c3a16dc2163f5b3451f2a14ce95277c971f46700497d4e94af6059c00dc06
     depends_build               path:bin/autoconf:autoconf path:bin/automake:automake
     depends_lib                 port:boost
         

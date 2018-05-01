@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.0
@@ -19,8 +19,8 @@ homepage            http://dar.sourceforge.net/
 master_sites        sourceforge:project/dar/dar/${version}
 
 checksums           rmd160  65957277353f0719563005f3879478e9bbbf790b \
-                    sha256  58d860299e0b2ee61cf1cac549f1e7b228060aed3ee5575c2e9c88324504e0c0 \
-                    size    1905085
+sha256  58d860299e0b2ee61cf1cac549f1e7b228060aed3ee5575c2e9c88324504e0c0 \
+size    1905085
 
 depends_build       port:doxygen
 

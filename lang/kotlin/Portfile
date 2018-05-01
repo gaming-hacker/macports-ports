@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ long_description    Kotlin is a pragmatic programming language for JVM \
 homepage            https://kotlinlang.org/
 
 checksums           rmd160  4579229c820604e471b7d01c3c0e027496808365 \
-                    sha256  af872772f268da5ca79d263b2943f1d694d475dddb80b6d408e9548805ed265c
+sha256  af872772f268da5ca79d263b2943f1d694d475dddb80b6d408e9548805ed265c
 
 depends_run         bin:java:kaffe
 
