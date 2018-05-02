@@ -1,6 +1,6 @@
---- configure.orig	2018-04-30 08:47:33.000000000 +1000
-+++ configure	2018-05-03 00:56:16.000000000 +1000
-@@ -6121,47 +6121,9 @@
+--- configure.orig	2018-05-02 00:03:54.000000000 -0500
++++ configure	2018-05-02 00:04:44.000000000 -0500
+@@ -6121,46 +6121,9 @@
  
          if test "${enable_universalsdk}"
          then
@@ -44,10 +44,9 @@
 -               as_fn_error $? "proper usage is --with-universal-arch=32-bit|64-bit|all|intel|3-way" "$LINENO" 5
 -               ;;
 -            esac
--
 +            UNIVERSAL_ARCH_FLAGS="__UNIVERSAL_ARCHFLAGS__"
 +            ARCH_RUN_32BIT=""
 +            LIPO_32BIT_FLAGS=""
+ 
              if test "${UNIVERSALSDK}" != "/"
              then
-                 CFLAGS="${UNIVERSAL_ARCH_FLAGS} -isysroot ${UNIVERSALSDK} ${CFLAGS}"
