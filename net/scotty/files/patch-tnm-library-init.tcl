@@ -1,4 +1,6 @@
---- tnm/library/init.tcl.org	2006-05-06 12:29:49.000000000 -0700
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 +++ tnm/library/init.tcl	2006-05-06 12:30:53.000000000 -0700
 @@ -166,6 +166,9 @@
  lappend tnm(mibs) TUBS-IBR-NFS-MIB TUBS-IBR-PROC-MIB

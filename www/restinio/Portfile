@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem                  1.0
 
 name
@@ -24,7 +24,7 @@ subport restinio {
                                 HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                                 primarily for asynchronous processing of HTTP-requests.
     checksums                   rmd160  89e93f388e26ae02c4e0d36130668fe493591995 \
-                                sha256  8c180348fb9fa90688b1c67351d336c6627b0d1ab8ab084d00658a44a280031a
+sha256  8c180348fb9fa90688b1c67351d336c6627b0d1ab8ab084d00658a44a280031a
     homepage                    https://stiffstream.com/en/products/restinio.html
 
     patchfiles                  patch-CMakeLists.txt.diff \
@@ -78,7 +78,7 @@ subport http-parser {
                                 It does not make any syscalls nor allocations, it does not buffer data, it can be interrupted at anytime. \
                                 Depending on your architecture, it only requires about 40 bytes of data per message stream (in a web server that is per connection).
     checksums                   rmd160  8ebe6c4b7ea28b40c31b1ef1abbfd7a89f57f7fb \
-                                sha256  6d6a66251dd4236c6e15565849777230f5bc78a92e16eb2d40cec1f7c0f5bbe3
+sha256  6d6a66251dd4236c6e15565849777230f5bc78a92e16eb2d40cec1f7c0f5bbe3
     homepage                    https://github.com/nodejs/http-parser
 
     patchfiles                  patch-http-parser-Makefile.diff
@@ -107,7 +107,7 @@ subport asio {
     homepage                    http://www.think-async.com
 
     checksums                   rmd160  08cb85fcc1d7c26fa2805d1b6a0f718d8fefb090 \
-                                sha256  657bf83c883d429259d02a5efe010b63cbb571dc344fd13560151fc2a6b5292c
+sha256  657bf83c883d429259d02a5efe010b63cbb571dc344fd13560151fc2a6b5292c
     depends_build               path:bin/autoconf:autoconf path:bin/automake:automake
     depends_lib                 port:boost
 
