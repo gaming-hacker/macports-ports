@@ -30,7 +30,7 @@ sha256  a31613a1faf2aac69533f9c3b371f8352dd98224b9b91023f8a6d5ce082eb79f
 depends_build       port:flex \
                     port:bison \
                     port:asciidoc \
-                    port:docbook-xsl \
+                    port:docbook-xsl-nons \
                     port:libxslt
 
 # these are build dependencies only (used to generate files)

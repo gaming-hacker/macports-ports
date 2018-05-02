@@ -15,9 +15,9 @@ sha1 3301ede761cbb8841f457c50ea5ffccf02014777
 worksrcdir	${name}
 use_zip		yes
 use_configure	no
-depends_build	bin:ant:apache-ant path:${prefix}/share/xsl:docbook-xsl
+depends_build	bin:ant:apache-ant port:docbook-xsl-nons
 pre-build	{
-	reinplace "s|/usr/share/xml/docbook/stylesheet/nwalsh/html|${prefix}/share/xsl/docbook-xsl/html|" ${worksrcpath}/build.xml
+	reinplace "s|/usr/share/xml/docbook/stylesheet/nwalsh/html|${prefix}/share/xsl/docbook-xsl-nons/html|" ${worksrcpath}/build.xml
 }
 build.cmd	ant
 build.target	full-dist

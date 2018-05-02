@@ -18,6 +18,6 @@ sha256  7da27f9b03b5d0bab1ef6efe74ec197bf408b9a9cbff5268a4546cac28bb9ac5
 use_autoreconf      yes
 depends_build-append    port:asciidoc \
                         port:libxslt \
-                        port:docbook-xsl
+                        port:docbook-xsl-nons
 
 configure.args-append	--enable-static=no
