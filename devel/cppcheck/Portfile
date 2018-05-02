@@ -1,10 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                  1.0
 PortGroup                   cxx11 1.0
 
 name                        cppcheck
 version                     1.83
+revision                    1
 categories                  devel
 license                     GPL-3
 platforms                   darwin
@@ -22,11 +23,11 @@ homepage                    http://cppcheck.sourceforge.net/
 master_sites                sourceforge:project/cppcheck/cppcheck/${version}
 
 checksums                   rmd160  e832b14859bac928025c8369b0f53e750853ad63 \
-sha256  db297f390af0a09c3cdbb5bd31d2c17852291da71e8af3337586859712909aac \
-size    2085396
+                            sha256  db297f390af0a09c3cdbb5bd31d2c17852291da71e8af3337586859712909aac \
+                            size    2085396
 
 depends_build               port:libxslt \
-                            port:docbook-xsl-nons
+                            port:docbook-xsl
 
 depends_lib                 port:pcre
 
@@ -36,7 +37,7 @@ variant universal {}
 
 build.args                  CXX="${configure.cxx} [get_canonical_archflags cxx]" \
                             HAVE_RULES=yes CFGDIR=${prefix}/share/cppcheck \
-                            DB2MAN=${prefix}/share/xsl/docbook-xsl-nons/manpages/docbook.xsl
+                            DB2MAN=${prefix}/share/xsl/docbook-xsl/manpages/docbook.xsl
 build.target                all man
 
 test.run                    yes
@@ -58,9 +59,9 @@ post-destroot {
 }
 
 post-activate {
-    foreach f [glob -directory ${worksrcpath}/cfg *] {
-        if {![file exists ${prefix}/share/cppcheck/[file tail $f]]} {
-        copy ${prefix}/share/cppcheck/[file tail $f].dist ${prefix}/share/cppcheck/[file tail $f]
+    foreach f [glob -directory ${prefix}/share/cppcheck *.dist] {
+        if {![file exists [file rootname $f]]} {
+        copy $f [file rootname $f]
         }
     }
 }
