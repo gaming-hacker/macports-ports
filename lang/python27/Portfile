@@ -40,7 +40,7 @@ patchfiles          patch-Makefile.pre.in.diff \
 
 depends_build       port:pkgconfig
 depends_lib         port:bzip2 \
-                    port:db48 \
+                    port:db60 \
                     port:expat \
                     port:gettext \
                     port:libedit \
@@ -57,8 +57,8 @@ configure.args      --enable-framework=${frameworks_dir} \
                     --with-system-expat \
                     --with-system-ffi
 
-configure.cppflags-append -I${prefix}/include/db48
-configure.ldflags-append -L${prefix}/lib/db48
+configure.cppflags-append -I${prefix}/include/db60
+configure.ldflags-append -L${prefix}/lib/db60
 
 configure.ccache    no
 
