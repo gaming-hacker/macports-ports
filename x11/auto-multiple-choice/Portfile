@@ -45,7 +45,7 @@ sha256  edf1d4919a90c8481a5c915317cf211fdcfc53eba80922a7cec2375429bacb00
 }
 
 master_sites            https://gitlab.com/jojo_boulix/auto-multiple-choice/repository/archive.tar.gz?ref=${gitlab.commit}&dummy=
-distname                ${gitlab.project}-${gitlab.commit}
+distname                ${gitlab.project}-${gitlab.commit}-${gitlab.commit}
 version                 1.3.0.${amc_revision}
 
 depends_build-append    \
