@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -10,8 +10,8 @@ maintainers         {michaelld @michaelld} openmaintainer
 github.setup        osmocom rtl-sdr a854ae8b48d42e8dad514c75d3a4c6cfb62707da
 version             20180501
 checksums           rmd160 9f2105a9ace1e9deee0d302d29e681cb50607ccd \
-                    sha256 cde33e5ba879a400ee57d7c7040f18fa1cdcecec1f4cc2a70d3ede27f899a5e8 \
-                    size   120988
+sha256 cde33e5ba879a400ee57d7c7040f18fa1cdcecec1f4cc2a70d3ede27f899a5e8 \
+size   120988
 
 categories          science comms
 platforms           darwin

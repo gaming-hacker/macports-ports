@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -13,8 +13,8 @@ master_sites        kde:stable/${name}/${version}
 use_xz              yes
 distname            phonon-${version}
 checksums           rmd160 e495a1d1ea53a6d0c6cb218b7a11175a9d507377 \
-                    sha256 e5a98df31aeffc22493afc8d6adbca5d6f0c27cc2eed73b3be05195321e08db7 \
-                    size   322100
+sha256 e5a98df31aeffc22493afc8d6adbca5d6f0c27cc2eed73b3be05195321e08db7 \
+size   322100
 
 variant demos description {Build the demos} {
     configure.args-append   -DPHONON_BUILD_DEMOS:BOOL=ON
