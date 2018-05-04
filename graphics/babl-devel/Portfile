@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -26,8 +26,8 @@ master_sites        https://git.gnome.org/browse/${git_name}/snapshot/
 distname            ${git_name}-${git_commit}
 
 checksums           rmd160  c03ec1dcadecd60f036bb5d4f1ece7ec57d76fa3 \
-                    sha256  52e43015eb29503a45896a1408ab05d7e123584f75c62f5a4c1212c046f77f79 \
-                    size    348370
+sha256  52e43015eb29503a45896a1408ab05d7e123584f75c62f5a4c1212c046f77f79 \
+size    348370
 
 depends_build       port:automake \
                     port:autoconf \

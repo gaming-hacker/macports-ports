@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ long_description    RACER = Rust Auto-Complete-er. A utility intended to \
 depends_lib         port:rust
 
 checksums           racer-${version}${extract.suffix} \
-                    rmd160  7072507edf67ba93ce554792574270a8853c1a53 \
-                    sha256  b6ee99363dc5c30d9f87bf6802d37b43d3e9be3b5b328540c812df29aee14204 \
-                    size    151442
+rmd160  7072507edf67ba93ce554792574270a8853c1a53 \
+sha256  b6ee99363dc5c30d9f87bf6802d37b43d3e9be3b5b328540c812df29aee14204 \
+size    151442
 
 destroot {
     copy ${worksrcpath}/target/[cargo.rust_platform]/release/racer ${destroot}${prefix}/bin/
