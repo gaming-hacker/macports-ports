@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup           cargo 1.0
+PortGroup           cargo_fetch 1.0
 
 github.setup        mesalock-linux mesalink 0.6.0 v
 categories          devel security
@@ -19,6 +19,11 @@ long_description    MesaLink is a memory-safe and OpenSSL-compatible TLS \
 checksums           rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
 sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
 size    132238
+
+supported_archs     x86_64
+
+# find files in the correct location when CARGO_BUILD_TARGET is set
+patchfiles-append   patch-configure.diff
 
 cargo.crates \
     aho-corasick             0.6.4  d6531d44de723825aa81398a6415283229725a00fa30713812ab9323faa82fc4 \
@@ -78,18 +83,6 @@ sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
 size    132238 \
 
 use_autoreconf yes
-use_configure yes
-
-build.cmd           make
-build.target        all
-build.pre_args
-build.args
-
-# cargo port group overrides the destroot phase,
-# restore the default
-destroot {
-    do-destroot
-}
 
 # Release 0.6.1 is broken as it does not contain Cargo.lock
 # https://github.com/mesalock-linux/mesalink/issues/10
