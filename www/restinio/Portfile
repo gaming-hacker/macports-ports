@@ -4,23 +4,22 @@ PortGroup                   github 1.0
 PortGroup                   cmake 1.1
 PortGroup                   compiler_blacklist_versions 1.0
 
-github.setup                Stiffstream restinio 0.4.5 v.
+github.setup                Stiffstream restinio 0.4.5.1 v.
 categories                  www devel
 platforms                   darwin
 license                     BSD
 maintainers                 @Lord-Kamina
 description                 Header-only C++14 library that gives you an embedded HTTP/Websocket server.
-depends_build-append        port:boost port:openssl port:pcre port:zlib bin:doxygen:doxygen
+depends_build-append        port:boost port:openssl port:pcre port:zlib port:doxygen
 depends_lib-append          port:asio \
                             port:http-parser \
-                            path:include/fmt/format.h:libfmt \
-                            path:include/fmt/ostream.h:libfmt \
-                            path:include/fmt/time.h:libfmt
+                            port:libfmt
 long_description            RESTinio is a header-only C++14 library that gives you an embedded \
                             HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                             primarily for asynchronous processing of HTTP-requests.
-checksums                   rmd160  89e93f388e26ae02c4e0d36130668fe493591995 \
-                            sha256  8c180348fb9fa90688b1c67351d336c6627b0d1ab8ab084d00658a44a280031a
+checksums                   rmd160  4c774beb80732e3c9addb408f845b2a40a5e2d42 \
+                            sha256  a36bcb45e188253f5841e455cdb95e7eb1c9e4f884c744a4a8fb74f197c903ef \
+                            size    429217
 homepage                    https://stiffstream.com/en/products/restinio.html
 
 patchfiles                  patch-CMakeLists.txt.diff \

@@ -14,15 +14,18 @@ categories                  devel
 platforms                   darwin
 
 checksums                   rmd160  08cb85fcc1d7c26fa2805d1b6a0f718d8fefb090 \
-                            sha256  657bf83c883d429259d02a5efe010b63cbb571dc344fd13560151fc2a6b5292c
-depends_build               path:bin/autoconf:autoconf path:bin/automake:automake
-depends_lib                 port:boost
+                            sha256  657bf83c883d429259d02a5efe010b63cbb571dc344fd13560151fc2a6b5292c \
+                            size    1195583
 
-patchfiles
 use_autoconf                yes
 autoconf.dir                ${worksrcpath}/${github.project}
 configure.dir               ${worksrcpath}/${github.project}
 autoconf.cmd                ./autogen.sh
+
+depends_build               port:autoconf port:automake
+depends_lib                 port:boost
+
+patchfiles
 configure.cmd               ./configure
 configure.cxxflags-append   -std=gnu++14
 configure.args              --prefix=${prefix}
