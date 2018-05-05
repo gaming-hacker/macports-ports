@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -22,8 +22,8 @@ long_description \
 homepage        https://transmissionbt.com
 
 checksums           rmd160  be98df0828b1b7ac5668f6d6c65c70c9cea9a05f \
-                    sha256  aadf9bdcf07e8065f7160d3012cce36b6f0c9eeca4773dbd90fb1902fe487c4c \
-                    size    6342235
+sha256  aadf9bdcf07e8065f7160d3012cce36b6f0c9eeca4773dbd90fb1902fe487c4c \
+size    6342235
 
 patchfiles      patch-xcodebuild.diff patch-sparkle.diff \
                 patch-disable-sparkle-menu.diff

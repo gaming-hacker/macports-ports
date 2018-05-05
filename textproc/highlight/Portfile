@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -17,7 +17,7 @@ master_sites        ${homepage}/zip/
 use_bzip2           yes
 
 checksums           rmd160  73d53b819e16a9796af44fe346f464d7743c3ee9 \
-                    sha256  db957ebd73048dcb46347f44a1fe8a949fda40b5ecb360bf0df2da0d8d92e902
+sha256  db957ebd73048dcb46347f44a1fe8a949fda40b5ecb360bf0df2da0d8d92e902
 
 depends_build       port:boost \
                     port:cctools \
