@@ -5,6 +5,7 @@ PortGroup           python 1.0
 
 name                certbot-apache
 version             0.24.0
+revision            1
 categories          security
 license             Apache-2
 maintainers         {mps @Schamschula} openmaintainer
@@ -21,7 +22,7 @@ sha256  686c6c0af5ae8d06e37cc762de7ffa0dc5c3b1ba06ff7653ef61713fa016f891
 
 depends_lib-append  port:certbot \
                     port:py${python.version}-acme \
-                    port:py${python.version}-python-augeas05 \
+                    port:py${python.version}-python-augeas \
                     port:py${python.version}-setuptools \
                     port:py${python.version}-zopecomponent \
                     port:py${python.version}-zopeinterface \
