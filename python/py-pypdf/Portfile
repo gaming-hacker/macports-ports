@@ -27,7 +27,7 @@ homepage        http://pybrary.net/pyPdf/
 master_sites    ${homepage}
 distname        pyPdf-${version}
 
-python.versions 26 27
+python.versions 27
 
 if {${name} ne ${subport}} {
     patchfiles	patch-pyPdf-pdf.py.diff
