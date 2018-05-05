@@ -1,131 +1,65 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 PortSystem                  1.0
+PortGroup                   github 1.0
+PortGroup                   cmake 1.1
+PortGroup                   compiler_blacklist_versions 1.0
 
-name
+github.setup                Stiffstream restinio 0.4.5 v.
+categories                  www devel
+platforms                   darwin
+license                     BSD
+maintainers                 @Lord-Kamina
+description                 Header-only C++14 library that gives you an embedded HTTP/Websocket server.
+depends_build-append        port:boost port:openssl port:pcre port:zlib bin:doxygen:doxygen
+depends_lib-append          port:asio \
+                            port:http-parser \
+                            path:include/fmt/format.h:libfmt \
+                            path:include/fmt/ostream.h:libfmt \
+                            path:include/fmt/time.h:libfmt
+long_description            RESTinio is a header-only C++14 library that gives you an embedded \
+                            HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
+                            primarily for asynchronous processing of HTTP-requests.
+checksums                   rmd160  89e93f388e26ae02c4e0d36130668fe493591995 \
+                            sha256  8c180348fb9fa90688b1c67351d336c6627b0d1ab8ab084d00658a44a280031a
+homepage                    https://stiffstream.com/en/products/restinio.html
 
-subport restinio {
-    PortGroup                   github 1.0
-    PortGroup                   cmake 1.1
-    PortGroup                   compiler_blacklist_versions 1.0
+patchfiles                  patch-CMakeLists.txt.diff \
+                            patch-Doxyfile.diff
 
-    github.setup                Stiffstream restinio 0.4.5 v.
-    categories                  www devel
-    platforms                   darwin
-    license                     BSD
-    maintainers                 @Lord-Kamina
-    description                 Header-only C++14 library that gives you an embedded HTTP/Websocket server.
-    depends_build-append        port:boost port:openssl port:pcre port:zlib bin:doxygen:doxygen
-    depends_lib-append          port:asio \
-                                port:http-parser \
-                                path:include/fmt/format.h:libfmt \
-                                path:include/fmt/ostream.h:libfmt \
-                                path:include/fmt/time.h:libfmt
-    long_description            RESTinio is a header-only C++14 library that gives you an embedded \
-                                HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
-                                primarily for asynchronous processing of HTTP-requests.
-    checksums                   rmd160  89e93f388e26ae02c4e0d36130668fe493591995 \
-                                sha256  8c180348fb9fa90688b1c67351d336c6627b0d1ab8ab084d00658a44a280031a
-    homepage                    https://stiffstream.com/en/products/restinio.html
+cmake.source_dir            ${worksrcpath}/dev
+cmake.build_type            Release
 
-    patchfiles                  patch-CMakeLists.txt.diff \
-                                patch-Doxyfile.diff
+configure.env-append        ASIO_STANDALONE=1 \
+                            ASIO_HAS_STD_CHRONO=1 \
+                            ASIO_DISABLE_STD_STRING_VIEW=1 \
+                            FMT_HEADER_ONLY=1 \
+                            RAPIDJSON_HAS_STDSTRING=1 \
+                            RAPIDJSON_HAS_CXX11_RVALUE_REFS=1
+configure.pre_args-delete   -DCMAKE_POLICY_DEFAULT_CMP0025=NEW
+configure.optflags-delete   -Os
+cmake.generator             Unix Makefiles
+compiler.blacklist          *gcc-3.* *gcc-4.* {*gcc-5.[0-3]} \
+                            {clang < 800} macports-clang-3.4 macports-clang-3.5 macports-clang-3.6 macports-clang-3.7
 
-    cmake.source_dir            ${worksrcpath}/dev
-    cmake.build_type            Release
+destroot {
+    set components { . impl path2regex router third_party/optional-lite third_party/string-view-lite transforms utils utils/impl websocket websocket/impl }
+    set files { }
+    set instdir "${destroot}${prefix}/include/${github.project}"
 
-    configure.env-append        ASIO_STANDALONE=1 \
-                                ASIO_HAS_STD_CHRONO=1 \
-                                ASIO_DISABLE_STD_STRING_VIEW=1 \
-                                FMT_HEADER_ONLY=1 \
-    configure.pre_args-delete   -DCMAKE_POLICY_DEFAULT_CMP0025=NEW
-    configure.optflags-delete   -Os
-    cmake.generator             Unix Makefiles
-    compiler.blacklist          *gcc-3.* *gcc-4.* {*gcc-5.[0-3]} \
-                                {clang < 800} macports-clang-3.4 macports-clang-3.5 macports-clang-3.6 macports-clang-3.7
-
-    destroot {
-        set components { . impl path2regex router third_party/optional-lite third_party/string-view-lite transforms utils utils/impl websocket websocket/impl }
-        set files { }
-        set instdir "${destroot}${prefix}/include/${github.project}"
-
-        foreach i ${components} {
-            lappend files {*}[glob -tails -directory ${worksrcpath}/dev/${github.project}/ ${i}/*{.hpp,.inl}]
-            xinstall -m 755 -d ${instdir}/${i}
-        }
-        foreach x ${files} {
-            xinstall -m 644 "${worksrcpath}/dev/${github.project}/${x}" "${instdir}/${x}"
-        }
-        set docdir "${destroot}${prefix}/share/doc/${github.project}"
-        xinstall -m 755 -d "${docdir}/html/search"
-        system -W ${worksrcpath}/dev "${prefix}/bin/doxygen ${worksrcpath}/dev/Doxyfile"
-        xinstall -m 644 "${worksrcpath}/README.md" "${docdir}"
-        xinstall -m 644 "${worksrcpath}/LICENSE" "${docdir}"
-        xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/*.*" "${docdir}/html"]
-        xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/search/*.*" "${docdir}/html/search"]
+    foreach i ${components} {
+        lappend files {*}[glob -tails -directory ${worksrcpath}/dev/${github.project}/ ${i}/*{.hpp,.inl}]
+        xinstall -m 755 -d ${instdir}/${i}
     }
-}
-
-subport http-parser {
-    PortGroup                   github 1.0
-
-    github.setup                nodejs http-parser 2.8.1 v
-    categories                  www devel
-    platforms                   darwin
-    license                     MIT
-    description                 http request/response parser for C.
-    long_description            This is a parser for HTTP messages written in C. It parses both requests and responses. \
-                                The parser is designed to be used in performance HTTP applications. \
-                                It does not make any syscalls nor allocations, it does not buffer data, it can be interrupted at anytime. \
-                                Depending on your architecture, it only requires about 40 bytes of data per message stream (in a web server that is per connection).
-    checksums                   rmd160  8ebe6c4b7ea28b40c31b1ef1abbfd7a89f57f7fb \
-                                sha256  6d6a66251dd4236c6e15565849777230f5bc78a92e16eb2d40cec1f7c0f5bbe3
-    homepage                    https://github.com/nodejs/http-parser
-
-    patchfiles                  patch-http-parser-Makefile.diff
-
-    use_autoconf                no
-    use_configure               no
-    configure.cflags            -DHTTP_PARSER_STRICT=0 DESTDIR=${prefix}
-
-    build.target                ""
-    build.env-append            PREFIX=${prefix}
-    build.dir                   ${worksrcpath}
-
-    destroot.env-append         PREFIX=${prefix}
-    destroot.target             install
-}
-
-subport asio {
-    PortGroup                   github 1.0
-
-    github.setup                chriskohlhoff asio 1.12.0 asio-
-    git.branch                  [strsed [join ${github.tag_prefix}]${github.version}[join ${github.tag_suffix}] {g/\./-/}]
-    license                     Boost-1
-    description                 Asio C++ Library.
-    long_description            Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a \
-                                consistent asynchronous model using a modern C++ approach.
-    homepage                    http://www.think-async.com
-
-    checksums                   rmd160  08cb85fcc1d7c26fa2805d1b6a0f718d8fefb090 \
-                                sha256  657bf83c883d429259d02a5efe010b63cbb571dc344fd13560151fc2a6b5292c
-    depends_build               path:bin/autoconf:autoconf path:bin/automake:automake
-    depends_lib                 port:boost
-
-    patchfiles
-    use_autoconf                yes
-    autoconf.dir                ${worksrcpath}/${github.project}
-    configure.dir               ${worksrcpath}/${github.project}
-    autoconf.cmd                ./autogen.sh
-    configure.cmd               ./configure
-    configure.cxxflags-append   -std=gnu++14
-    configure.args              --prefix=${prefix}
-
-    configure.env-append        ASIO_STANDALONE=1 \
-                                ASIO_HAS_STD_CHRONO=1 \
-                                ASIO_DISABLE_STD_STRING_VIEW=1
-    build.dir                   ${worksrcpath}/${github.project}
-
-    destroot.target             install
+    foreach x ${files} {
+        xinstall -m 644 "${worksrcpath}/dev/${github.project}/${x}" "${instdir}/${x}"
+    }
+    set docdir "${destroot}${prefix}/share/doc/${github.project}"
+    xinstall -m 755 -d "${docdir}/html/search"
+    system -W ${worksrcpath}/dev "${prefix}/bin/doxygen ${worksrcpath}/dev/Doxyfile"
+    xinstall -m 644 "${worksrcpath}/README.md" "${docdir}"
+    xinstall -m 644 "${worksrcpath}/LICENSE" "${docdir}"
+    xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/*.*" "${docdir}/html"]
+    xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/search/*.*" "${docdir}/html/search"]
 }
 
 build.post_args-delete      VERBOSE=ON
