@@ -19,11 +19,8 @@ use_zip		yes
 distfiles	${name}.${version}${extract.suffix}
 checksums	md5 038df4ac53780074e6e642a6e928f4fb
 
-post-extract	{
-	file rename ${workpath}/daaplib.${version}/daaplib/src ${worksrcpath}
-	file rename ${workpath}/daaplib.${version}/daaplib/include \
-		${workpath}/include
-}
+distname        ${name}.${version}
+worksrcdir      ${worksrcdir}/daaplib/src
 
 configure	{
 	reinplace "s|/usr/local|${destroot}${prefix}|g" ${worksrcpath}/makefile
