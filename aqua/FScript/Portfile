@@ -28,14 +28,11 @@ master_sites            https://github.com/pmougin/F-Script/zipball/v${version}:
 distfiles               pmougin-F-Script-v2.1-0-g25c850c.zip:fscript
 
 checksums               pmougin-F-Script-v2.1-0-g25c850c.zip \
-                        sha1    5f1afa244f41ab372953a616d27a72a1573f4a15 \
-                        rmd160  aa38b5e587bd3c0a8aeb1a8df8a38445d0036952
+                        rmd160  825e5389a66316a5b36bef9aecf87ae57975d801 \
+                        sha256  2569ee82787677ffa4033a1d72045d9b75105a7f4394d464e070ebc746898710 \
+                        size    1271044
 
 use_zip                 yes
-
-post-extract {
-    file rename [glob ${workpath}/pmougin-F-Script-*] ${worksrcpath}
-}
 
 patchfiles              patch-FScript.xcodeproj-project.pbxproj.diff
 
