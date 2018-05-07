@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -30,8 +30,8 @@ use_bzip2               yes
 distname                pdftools.${name}-${version}
 
 checksums               rmd160  897068423034fc1a1ddbff7f15c304f39113020a \
-                        sha256  aa720f31350355bb9152bf69cb1eb79a7e82197d2c4e9f10503b1de1b8c232c5 \
-                        size    178517
+sha256  aa720f31350355bb9152bf69cb1eb79a7e82197d2c4e9f10503b1de1b8c232c5 \
+size    178517
 
 python.default_version  27
 

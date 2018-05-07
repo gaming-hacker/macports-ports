@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -29,8 +29,8 @@ master_sites        https://git.gnome.org/browse/${git_name}/snapshot/
 distname            ${git_name}-${git_commit}
 
 checksums           rmd160  2c08444f13a3aa4d68ceddbc42abb0502325a872 \
-                    sha256  403267ffd43d2d3987a3eef951a875c6d97bb369b47b21af11804af8a6de0260 \
-                    size    24913435
+sha256  403267ffd43d2d3987a3eef951a875c6d97bb369b47b21af11804af8a6de0260 \
+size    24913435
 
 depends_build       port:pkgconfig \
                     port:w3m \

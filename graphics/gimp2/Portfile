@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ distname            gimp-${version}
 use_bzip2           yes
 
 checksums           rmd160  719e57056b64de9d17962a05e08765786b553760 \
-                    sha256  7fcc96fb88cb0a0595d2610f63a15dec245bb37bf9db527d37a24fb75e547de2 \
-                    size    30694779
+sha256  7fcc96fb88cb0a0595d2610f63a15dec245bb37bf9db527d37a24fb75e547de2 \
+size    30694779
 
 set perl_version    5.26
 
