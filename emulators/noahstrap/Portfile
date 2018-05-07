@@ -3,11 +3,7 @@
 PortSystem              1.0
 PortGroup               GitHub 1.0
 
-github.setup            linux-noah noah 0.5.1
-
-PortGroup               cmake 1.0
-
-cmake.out_of_source     yes
+github.setup            linux-noah noahstrap 2.0.0
 
 categories              emulators
 maintainers             nomaintainer
@@ -15,9 +11,9 @@ platforms               darwin
 # others do not make sense at this point
 supported_archs         x86_64
 
-description             Linux ABI implementation for OSX
+description             Bootstrap a Linux ABI implementation for OSX
 
-homepage                http://github.com/linux-noah/noah
+homepage                http://github.com/linux-noah/noahstrap
 
 long_description        Noah is a Darwin subsystem for Linux, or \"Bash on Ubuntu on Mac OS X\". Noah is implemented as a hypervisor that traps linux system calls and translates them into Darwin's system calls. Noah also has an interpreter of ELF files so that binary executables of Linux run directly and flawlessly without any modifications. \
 \
@@ -27,5 +23,18 @@ long_description        Noah is a Darwin subsystem for Linux, or \"Bash on Ubunt
 
 license                 Dual MIT/GPL
 
-checksums               rmd160  acfb387976bd21a0b2a02a1490a4ef1891d73103 \
-                        sha256  6a2ecba330aa6b3aacc7a2799f4d4a2fbdb5413dd3a8aa9553d3bcd1a81424c0
+checksums               rmd160 7eb7168d4211255e3ff6e603b68d36a1746ecda8 \
+                        sha256  616a05c9eb3c12bfcfe12933652a27663c56c46fe91b5d799061742e0973f3fe
+
+use_configure           no
+
+build                   {
+                               reinplace "s|gtar|gnutar|g" ${worksrcpath}/noahstrap
+                        }
+
+destroot                {
+                                xinstall -m 555 ${worksrcpath}/noahstrap ${destroot}${prefix}/bin/noahstrap
+                        }
+
+depends_lib             port:pv \
+                        port:gnutar
