@@ -24,11 +24,6 @@ worksrcdir          ${name}_${version}
 
 depends_lib-append  port:qwt52
 
-post-extract {
-    # rename worksrcdir to remove a space
-    file rename "${workpath}/${name} ${version}" ${workpath}/${worksrcdir}
-}
-
 post-patch {
     # make sure ${prefix}/include and ${prefix}/include/qwt are in
     # 'qmake's INCLUDEPATH
@@ -46,7 +41,7 @@ post-build {
 }
 
 destroot {
-       	set appPath ${destroot}${applications_dir}
-       	xinstall -d -m 755 ${appPath}
-       	file copy ${worksrcpath}/build/Release/${name}.app ${appPath}/${name}.app
+        set appPath ${destroot}${applications_dir}
+        xinstall -d -m 755 ${appPath}
+        file copy ${worksrcpath}/build/Release/${name}.app ${appPath}/${name}.app
 }
