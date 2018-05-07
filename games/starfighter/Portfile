@@ -28,10 +28,6 @@ master_sites            http://www.sourcefiles.org/Games/Arcade/
 checksums               md5     6a4b704dbc83c7403842b936f95ee958
 patchfiles              patch-makefile.diff
 
-post-extract {
-    file rename ${workpath}/starfighter-1.1 ${worksrcpath}
-}
-
 depends_lib             port:libsdl \
                         port:libsdl_mixer \
                         port:libsdl_image
