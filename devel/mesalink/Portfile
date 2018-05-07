@@ -25,6 +25,11 @@ supported_archs     x86_64
 # find files in the correct location when CARGO_BUILD_TARGET is set
 patchfiles-append   patch-configure.diff
 
+supported_archs     x86_64
+
+# find files in the correct location when CARGO_BUILD_TARGET is set
+patchfiles-append   patch-configure.diff
+
 cargo.crates \
     aho-corasick             0.6.4  d6531d44de723825aa81398a6415283229725a00fa30713812ab9323faa82fc4 \
     arrayvec                 0.4.7  a1e964f9e24d588183fcb43503abda40d288c8657dfc27311516ce2f05675aef \
