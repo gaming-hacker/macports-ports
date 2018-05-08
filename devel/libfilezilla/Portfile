@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -20,8 +20,8 @@ homepage            https://lib.filezilla-project.org/
 master_sites        http://download.filezilla-project.org/libfilezilla/
 
 checksums           rmd160  7129ed27d845fbfbdc4f0964abfbb73ce306557c \
-                    sha256  778c166fde3a87e04a0524a4bf92c3eea1f0836c20119dd0859c9cd9380c86ec \
-                    size    398156
+sha256  778c166fde3a87e04a0524a4bf92c3eea1f0836c20119dd0859c9cd9380c86ec \
+size    398156
 
 depends_build       port:pkgconfig \
                     port:cppunit \

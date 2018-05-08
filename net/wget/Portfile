@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -24,8 +24,8 @@ long_description \
     scripts, cron jobs, terminals without Xsupport, etc.
 
 checksums               rmd160  8da0bc988f14e340d00c02b589b86f454cb8cb04 \
-                        sha256  29fbe6f3d5408430c572a63fe32bd43d5860f32691173dfd84edc06869edca75 \
-                        size    2204066
+sha256  29fbe6f3d5408430c572a63fe32bd43d5860f32691173dfd84edc06869edca75 \
+size    2204066
 
 configure.args          --enable-option-checking \
                         --disable-silent-rules \

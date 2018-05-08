@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ extract.suffix      .tgz
 worksrcdir          ${name}
 
 checksums           rmd160  2f34967291af6708ed56a7fbd6a692f91ea71d8e \
-                    sha256  0f5aad093c60bd79b8da22e8a560dd27f737d4847c4c7e12d99f153d1490d282 \
-                    size    158947
+sha256  0f5aad093c60bd79b8da22e8a560dd27f737d4847c4c7e12d99f153d1490d282 \
+size    158947
 
 depends_build-append \
                     port:pkgconfig

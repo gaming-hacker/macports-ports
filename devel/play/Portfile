@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ homepage            http://www.playframework.org/
 master_sites        https://github.com/playframework/play/tarball/${version}
 
 checksums           rmd160  b389bcb65ea5c0fdc701d84d42692e920a651343 \
-                    sha256  b2261eb5daccedfc030452891950f2e7ca332a25fa47dc76587336515324cc4d \
-                    size    78540697
+sha256  b2261eb5daccedfc030452891950f2e7ca332a25fa47dc76587336515324cc4d \
+size    78540697
 
 depends_build       port:apache-ant
 

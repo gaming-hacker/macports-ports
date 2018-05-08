@@ -19,8 +19,8 @@ long_description    ${description} Oracle's Java Application Bundler is compatib
 homepage            https://bitbucket.org/infinitekind/appbundler
 
 checksums           rmd160  adea8254a88ac267c05680f5eb4b45cb25f82728 \
-                    sha256  18dba3115286e10524a7d75b2f2287babb0867afefced55b219b5ec851e38423 \
-                    size    150159
+sha256  18dba3115286e10524a7d75b2f2287babb0867afefced55b219b5ec851e38423 \
+size    150159
 
 worksrcdir          ${name}~svn
 

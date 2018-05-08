@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ master_sites                ${homepage}dist/krb5/${branch}/
 distname                    krb5-${version}
 
 checksums                   rmd160  26a423032841a67974d377ad65d7361b51aa7058 \
-                            sha256  214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117 \
-                            size    9477480
+sha256  214ffe394e3ad0c730564074ec44f1da119159d94281bbec541dc29168d21117 \
+size    9477480
 
 depends_build               port:python27
 
