@@ -25,13 +25,6 @@ size    34774
 
 python.default_version 27
 
-post-extract {
-    # MobileDevice needs to be built in a directory named "MobileDevice"
-    if {![file exists ${worksrcpath}]} {
-        move [glob ${workpath}/${name}-*] ${worksrcpath}
-    }
-}
-
 patchfiles            patch-setup.py-fix-name-and-version.diff
 post-patch {
     reinplace "s#@VERSION@#${version}#" ${worksrcpath}/setup.py
