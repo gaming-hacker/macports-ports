@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tqdm
-version             4.23.0
+version             4.23.2
 revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 27 36
+python.versions     27 34 35 36
 
 maintainers         stromnov openmaintainer
 
@@ -23,8 +23,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  a5d0c322be9a5fcc05ffc4000688d4705dce42da \
-sha256  fe3d218d5b61993d415aa2a9db6dd64c0e4cefb90164ebb197ef3b1d99f531dc
+checksums           rmd160  365334d41a9eddbe13c315f5a6d79036e41c2bd1 \
+                    sha256  75efcd98827971f96aa9b270e73ccedf1d275b781a9149a0846a7728010d045e \
+                    size    99257
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools
