@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -31,11 +31,11 @@ distfiles           ${dfile_gmt_gpl} \
                     ${dfile_gmt_nogpl}
 
 checksums           ${dfile_gmt_gpl} \
-rmd160  dceda9c1c82d056ffd20ac8dffbc4e6096f96050 \
-sha256  d69c4e2075f16fb7c153ba77429a7b60e45c44583ebefd7aae63ae05439d1d41 \
+                    rmd160  dceda9c1c82d056ffd20ac8dffbc4e6096f96050 \
+                    sha256  d69c4e2075f16fb7c153ba77429a7b60e45c44583ebefd7aae63ae05439d1d41 \
                     ${dfile_gmt_nogpl} \
-rmd160  fc558deaffade58c08cd5a3c764a7298c6ec35e0 \
-sha256  abbe5e4a60c9d5307873533662be6a841163ce3ca2ca58a16e4000add22b9e3c
+                    rmd160  fc558deaffade58c08cd5a3c764a7298c6ec35e0 \
+                    sha256  abbe5e4a60c9d5307873533662be6a841163ce3ca2ca58a16e4000add22b9e3c
 
 depends_lib         port:ghostscript \
                     port:gshhg-gmt \

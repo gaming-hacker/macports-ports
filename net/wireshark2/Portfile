@@ -32,7 +32,7 @@ rmd160  4d58798dfbb5a6567a731e0d6308e1dca3c859ee \
 sha1    25ba24628acfc12d7541298255f50e8034e694b7 \
 size    28851192
 
-conflicts           wireshark-devel wireshark wireshark22
+conflicts           wireshark-devel wireshark wireshark22 wireshark24
 
 depends_build-append \
                     port:pkgconfig
