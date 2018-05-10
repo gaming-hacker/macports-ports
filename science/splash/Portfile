@@ -25,7 +25,7 @@ default_variants    +giza
 
 use_configure       no
 
-compilers.setup     require_fortran -g95 -gcc44 -clang
+compilers.setup     require_fortran
 
 build.cmd           make
 build.args          SYSTEM=gfortran CC=${configure.cc} FC=${configure.fc} PREFIX=${prefix}

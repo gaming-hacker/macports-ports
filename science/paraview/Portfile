@@ -72,23 +72,7 @@ pre-configure {
 
 # Some cmake tests will fail with "error: unrecognized option '-arch'" from gcc 4.6 and earlier.
 compilers.choose    fc
-mpi.setup           default -gcc44 -gcc45 -gcc46
-
-# no compilers.choose cc cxx because:
-# gcc6,7 C compiler fails with:
-#:info:build In file included from /usr/include/dispatch/dispatch.h:51:0,
-#:info:build                  from /System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:15,
-#:info:build                  from /System/Library/Frameworks/CoreFoundation.framework/Headers/CFPropertyList.h:13,
-#:info:build                  from /System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:55,
-#:info:build                  from /System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:19,
-#:info:build                  from /opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/ParaView-v5.0.1-source/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftmac.c:100,
-#:info:build                  from /opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/ParaView-v5.0.1-source/VTK/ThirdParty/freetype/vtkfreetype/src/base/ftbase.c:38:
-#:info:build /usr/include/dispatch/object.h:143:15: error: expected identifier or '(' before '^' token
-#:info:build  typedef void (^dispatch_block_t)(void);
-#:info:build                ^
-#:info:build /usr/include/dispatch/object.h:362:3: error: unknown type name 'dispatch_block_t'
-#:info:build    dispatch_block_t notification_block);
-#:info:build    ^~~~~~~~~~~~~~~~
+mpi.setup           default
 
 # I do not understand why, but the default "destroot" makes a mess of things;
 # even setting full path of MACOSX_APP_INSTALL_PREFIX above and an empty
@@ -96,10 +80,6 @@ mpi.setup           default -gcc44 -gcc45 -gcc46
 destroot {
     system "cd ${build.dir} && make install"
 }
-
-# Error using default destroot is:
-#Warning: Error determining file type of `/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js': lstat(/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js):no such file or directory
-#Warning: A file belonging to the `paraview' port is missing or unreadable. Consider reinstalling it.
 
 
 # other pythons?
