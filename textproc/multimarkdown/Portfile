@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -29,8 +29,8 @@ homepage            http://fletcherpenney.net/multimarkdown/
 platforms           darwin
 
 checksums           rmd160  afe688fe78a7d692de8fc8b8082a55c42fa48c4d \
-                    sha256  39ed22302a99a41059ffd8fae9bd971ece848d3b733941ce21b1e17577a4451e \
-                    size    3144821
+sha256  39ed22302a99a41059ffd8fae9bd971ece848d3b733941ce21b1e17577a4451e \
+size    3144821
 
 depends_lib-append  port:curl
 
