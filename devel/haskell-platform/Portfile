@@ -27,10 +27,8 @@ if {$subport == $name} {
 
     depends_run     port:ghc
 
-    fetch {}
-    checksum {}
-    extract {}
     configure {}
+    distfiles
     build {}
     destroot {
         xinstall -d ${destroot}${prefix}/share/doc/${name}
