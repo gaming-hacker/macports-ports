@@ -12,7 +12,7 @@ sha256  70c2037f654c5e2c6c3b386212049272a036b7dd37f36a486f01c7df20765551
 categories          sysutils
 platforms           darwin
 license             GPL-2
-maintainers         pixilla openmaintainer
+maintainers         {pixilla @pixilla} openmaintainer
 
 description         Rotates, compresses, and mails system logs
 
