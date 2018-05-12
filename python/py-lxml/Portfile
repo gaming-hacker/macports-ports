@@ -11,7 +11,7 @@ license             BSD
 
 python.versions 27 36
 
-maintainers         petr openmaintainer
+maintainers         {petr @petrrr} openmaintainer
 
 description         Powerful and Pythonic XML processing library
 

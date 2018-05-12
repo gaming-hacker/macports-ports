@@ -33,9 +33,7 @@ size   1673912
 }
 
 extract.suffix      .whl
-
-extract {
-}
+extract.only
 
 python.versions 27 36
 

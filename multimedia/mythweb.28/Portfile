@@ -16,7 +16,7 @@ sha256  5691a175c87307694bddb744058b53b92d1f41b69da7db48721c69c4f00936bc
 categories          multimedia www
 platforms           darwin
 license             GPL-2 LGPL-2.1
-maintainers         ctreleaven openmaintainer
+maintainers         {ctreleaven @ctreleaven} openmaintainer
 supported_archs     noarch
 conflicts           mythweb.25 mythweb.26 mythweb.27
 

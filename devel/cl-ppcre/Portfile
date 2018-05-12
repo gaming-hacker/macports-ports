@@ -1,10 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem         1.0
-PortGroup github 1.0
 
-github.setup       edicl cl-ppcre d01bbf70cdf1f15ee3734fe80572276caa482e77
-version 20171222
+name               cl-ppcre
+version            1.3.2
 categories         devel
 maintainers        pobox.com:rlonstein
 
@@ -13,31 +12,30 @@ description        Portable Perl-compatible regular expressions for Common Lisp
 long_description   CL-PPCRE is a fast, portable, thread-safe regular expression library \
                    for Common Lisp compatible with Perl under a BSD license.
 
-# homepage           http://weitz.de/cl-ppcre/
+homepage           http://weitz.de/cl-ppcre/
 platforms          darwin
-fetch.type          git
-# master_sites       http://weitz.de/files/
+master_sites       http://weitz.de/files/
 
-# distfiles          ${name}${extract.suffix}
+distfiles          ${name}${extract.suffix}
 
-# checksums          md5 ac562357e1b23ee27362c196e4c03a09 \
-#                    sha1 72ee5b283def4e70055a6958ac75b73049b1370f \
-#                    rmd160 b47adf04cc555a4fe60e3410d41874f5ac30fe70
+checksums          md5 23ceea63cb306ead203f5c4f41a4f1d2 \
+                   sha1 4e2fb7e7bf732cbb07b0a87bab5b5d107b48ff69 \
+                   rmd160 2b308153af31386bcd566e9cd2e63ac509b76e8a
 
 universal_variant  no
 
-# variant asdf_binary_locations description {Keep compiled Lisp files organized} {
-#         depends_lib port:asdf-binary-locations
-# }
+variant asdf_binary_locations description {Keep compiled Lisp files organized} {
+        depends_lib port:asdf-binary-locations
+}
 
 variant sbcl description {Compile using Steel Bank Common Lisp} {
         depends_build port:sbcl
 }
 
-extract   {}
+extract.only
 use_configure       no
 build     {}
-#
+
 set destroot-lisp "${destroot}${prefix}/share/common-lisp/"
 set lisp-system-path "#p\"${prefix}/share/common-lisp/systems/\""
 

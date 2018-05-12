@@ -38,9 +38,7 @@ size   43162275
 distname            tensorflow-${version}-cp${python.version}-cp${python.version}m-macosx_10_11_x86_64
 
 extract.suffix      .whl
-
-extract {
-}
+extract.only
 
 python.versions 27 36
 
