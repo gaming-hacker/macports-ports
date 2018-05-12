@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    git-cola is a powerful Git GUI with a slick and \
                     intuitive user interface.
 
 checksums           rmd160  0ea666f81054289dc0e98c7a38547b73143e96da \
-                    sha256  d8a5ee637aea00965121cd4f2388319983bcd05ae7149069a6d553268149350b \
-                    size    1180032
+sha256  d8a5ee637aea00965121cd4f2388319983bcd05ae7149069a6d553268149350b \
+size    1180032
 
 depends_build       port:py36-sphinx
 depends_lib         port:git \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -26,7 +26,7 @@ homepage        http://www.gnucash.org/
 master_sites    sourceforge:gnucash
 
 checksums       rmd160  697c12a5e6a3779f72b28e483f502922822b1826 \
-                sha256  52852ed90ccdf27b76deb1b4095b9e457c807c5598a2eea31e00560bb0c3531c
+sha256  52852ed90ccdf27b76deb1b4095b9e457c807c5598a2eea31e00560bb0c3531c
 
 depends_lib     bin:scrollkeeper-config:rarian \
                 port:libxml2 \

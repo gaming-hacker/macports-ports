@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -20,7 +20,7 @@ master_sites     ftp://ftp.invisible-island.net/byacc/
 extract.suffix   .tgz
 
 checksums        rmd160 7ee821fef5e840aff2e2a64fd9b414c31ba72481 \
-                 sha256 d0940dbffbc7e9c9dd4985c25349c390beede84ae1d9fe86b71c0aa659a6d693
+sha256 d0940dbffbc7e9c9dd4985c25349c390beede84ae1d9fe86b71c0aa659a6d693
 
 configure.args   --mandir=${prefix}/share/man \
                  --program-prefix=b
