@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
 
 name                libressl-devel
-version             2.7.2
+version             2.7.3
 distname            libressl-${version}
 
 categories          security devel
@@ -23,8 +23,8 @@ homepage            https://www.libressl.org
 conflicts           openssl libressl
 
 master_sites        openbsd:LibreSSL
-checksums           rmd160 71b2479da15af6800dc0bd18141e3fe211e96828 \
-sha256 917a8779c342177ff3751a2bf955d0262d1d8916a4b408930c45cef326700995
+checksums           rmd160 54394d02692a63ec51445a7ea7eab37dabe931f5 \
+                    sha256 16c70d8fe1de6e9bedea0d67804b55f3894717693a05ed45e15e0e2f939c2795
 
 patchfiles \
     openssldir-cert.pem.patch
