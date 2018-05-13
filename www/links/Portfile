@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ homepage        http://links.twibright.com/
 master_sites    http://links.twibright.com/download/
 
 checksums       rmd160  e1fa96766e914d6205a32664e33cff94f719f8ce \
-                sha256  82f03038d5e050a65681b9888762af41c40fd42dec7e59a8d630bfb0ee134a3f \
-                size    6697222
+sha256  82f03038d5e050a65681b9888762af41c40fd42dec7e59a8d630bfb0ee134a3f \
+size    6697222
 
 maintainers     nomaintainer
 use_bzip2       yes
