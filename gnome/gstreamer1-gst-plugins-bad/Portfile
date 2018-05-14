@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ distname            ${my_name}-${version}
 use_xz              yes
 
 checksums           rmd160  79038b5f324be30a9817edfaeb2f1a7b5ef422e2 \
-                    sha256  ed5e2badb6f2858f60017b93334d91fe58a0e3f85ed2f37f2e931416fafb4f9f \
-                    size    4650112
+sha256  ed5e2badb6f2858f60017b93334d91fe58a0e3f85ed2f37f2e931416fafb4f9f \
+size    4650112
 
 depends_build       port:pkgconfig
 depends_lib         port:gstreamer1-gst-plugins-base \

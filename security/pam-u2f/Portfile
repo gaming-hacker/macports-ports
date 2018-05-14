@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        https://developers.yubico.com/pam-u2f/Releases/
 distname            pam_u2f-${version}
 
 checksums           rmd160  14abf99e7643a3d05417a6679148652111ee7def \
-                    sha256  101409455aa3257c8bb0968508a90f7ae58166e8ccb1d097e5fe9b541259ed3a \
-                    size    375181
+sha256  101409455aa3257c8bb0968508a90f7ae58166e8ccb1d097e5fe9b541259ed3a \
+size    375181
 
 depends_build       port:pkgconfig
 depends_lib         port:libu2f-host port:libu2f-server

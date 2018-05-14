@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Stubby is the name given to a mode of using getdns which \
 homepage            https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby
 
 checksums           rmd160  03986bd49e7ead24f16e84135b841d448bcc0e31 \
-                    sha256  a0ad8683a97a27557ec26888dab166bd6ddb25afb736dedf0b9ceaa3fea738be \
-                    size    49345
+sha256  a0ad8683a97a27557ec26888dab166bd6ddb25afb736dedf0b9ceaa3fea738be \
+size    49345
 
 depends_lib         port:getdns \
                     port:libyaml

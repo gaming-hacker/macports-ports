@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ platforms           darwin
 worksrcdir          ${name}_beta
 
 checksums           rmd160  8bf4bce18229a7ebff47e7fe50493738ae818085 \
-                    sha256  dd1edcfcf2d9db7b5722de4f1da36ae45703bf05917af657ab6f7491be7fa52e \
-                    size    48054
+sha256  dd1edcfcf2d9db7b5722de4f1da36ae45703bf05917af657ab6f7491be7fa52e \
+size    48054
 
 use_configure       no
 build.target        generic
