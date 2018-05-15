@@ -4,17 +4,15 @@ PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           github 1.0
 PortGroup           cxx11 1.1
-PortGroup           python 1.0
 
 github.setup        MITHaystack digital_rf 2.6.0
-maintainers         @MITHaystack {mit.edu:rvolz @ryanvolz} {mit.edu:swoboj @jswoboda}
+maintainers         {mit.edu:rvolz @ryanvolz} {mit.edu:swoboj @jswoboda} openmaintainer
 description         Read, write, and interact with data in the Digital RF and Digital Metadata formats.
-long_description    Tools to store RF and metadata for scientific engineering research projects.
+long_description    The Digital RF project encompasses a standardized HDF5 format for reading and writing of radio frequency data and the software for doing so. The format is designed to be self-documenting for data archive and to allow rapid random access for data processing. For details on the format, refer to the 'documents' directory in the source tree.
 categories          science
 license             BSD
 platforms           darwin
 dist_subdir         digital_rf
-homepage            https://github.com/MITHaystack/digital_rf
 
 checksums           rmd160  f095ff1a80f7175f57a45048c826fe68b6dd56e9 \
                     sha256  6468418a06c269964c9a5c5f145f7bfebf951226e3a85977226c7967fa50e691 \
@@ -44,22 +42,7 @@ depends_lib-append port:py27-numpy \
 
 # CMAKE configuration
 configure.args-append \
-    -DDRF_INSTALL_PREFIX_PYTHON=${python.prefix}\
+    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/2.7\
     -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin
-
-use_configure \
-  yes
-
-build.target \
-  all
-build.cmd \
-  make
-destroot.cmd \
-  make
-destroot.target \
-  install
-
-destroot.destdir \
-  DESTDIR=${destroot}
