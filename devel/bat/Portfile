@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         A cat(1) clone with syntax highlighting and Git integration.
 long_description    ${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  593538a86aea52995b2210bfd9dc935e208a0e5d \
-                    sha256  44ded52ff2ec64d10f2c162e54170385c1fd5e8e1300b5f391c0cecdd5d3bdb2 \
-                    size    337992
+rmd160  593538a86aea52995b2210bfd9dc935e208a0e5d \
+sha256  44ded52ff2ec64d10f2c162e54170385c1fd5e8e1300b5f391c0cecdd5d3bdb2 \
+size    337992
 
 # For crate:onig_sys
 depends_build       port:cmake
@@ -96,7 +96,7 @@ cargo.crates \
     serde                           1.0.51  21924cc18e5281f232a17c040355fac97732b42cf019c24996a1642bcb169cdb \
     serde_derive                    1.0.51  9c624a90bec6fe9bc60d275d7af71c72c26b24cd6c6776d8e344dc4044caa3e2 \
     serde_json                      1.0.17  f3ad6d546e765177cf3dded3c2e424a8040f870083a0e64064746b958ece9cb1 \
-    shared_child                     0.3.2  bcd5e483b3475af9bc2a35311c2f3bbf0bd98fde91410ab15a0d4ba3c3127b4e \
+shared_child                     0.3.2  bcd5e483b3475af9bc2a35311c2f3bbf0bd98fde91410ab15a0d4ba3c3127b4e \
     smallvec                         0.6.1  03dab98ab5ded3a8b43b2c80751194608d0b2aa0f1d46cf95d1c35e192844aa7 \
     stable_deref_trait               1.0.0  15132e0e364248108c5e2c02e3ab539be8d6f5d52a01ca9bbf27ed657316f02b \
     strsim                           0.7.0  bb4f380125926a99e52bc279241539c018323fab05ad6368b56f93d9369ff550 \
