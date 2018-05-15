@@ -29,8 +29,8 @@ rmd160  d339eeb8a892e3aaf53209483f61cfbc39bd1d64
 
 use_configure       no
 
+extract.mkdir       yes
 extract {
-    file mkdir ${worksrcpath}
     copy ${distpath}/${distfiles} ${worksrcpath}
 }
 

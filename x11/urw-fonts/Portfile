@@ -25,10 +25,7 @@ rmd160 52bddb1e267e6aa3cace9197293718e4919384bd
 
 depends_run     port:fontconfig
 
-extract.dir     ${worksrcpath}
-pre-extract {
-    file mkdir ${worksrcpath}
-}
+extract.mkdir   yes
 
 use_configure   no
 

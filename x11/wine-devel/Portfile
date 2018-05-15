@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                  1.0
 PortGroup                   muniversal 1.0
@@ -14,7 +14,7 @@ PortGroup                   compiler_blacklist_versions 1.0
 name                        wine-devel
 conflicts                   wine wine-crossover
 set my_name                 wine
-version                     3.7
+version                     3.8
 set branch                  [lindex [split ${version} .] 0].x
 license                     LGPL-2.1+
 categories                  x11
@@ -59,21 +59,21 @@ distfiles                   ${wine_distfile}:winesource \
                             ${wine_mono_distfile}:winemono
 
 checksums                   ${wine_distfile} \
-rmd160  86abc20925afa2e5a63b66fcfff135dc6d31ee70 \
-sha256  76c73760d72497c59e81dfd7c5def450171bd59e9cff3df0a42454e0c7fc2bb7 \
-size    20454036 \
+                            rmd160  4152473ee02bfb6d3b8fb7a90faeaaa7b104fdde \
+                            sha256  02b00c6c948b3bab717e1b1e2075a5406b14d138bd2e01fdb1268a93d1c20d51 \
+                            size    20473392 \
                             ${wine_gecko_distfile} \
-rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
-sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
-size    49266176 \
+                            rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
+                            sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
+                            size    49266176 \
                             ${wine_gecko64_distfile} \
-rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
-sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
-size    50806272 \
+                            rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
+                            sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
+                            size    50806272 \
                             ${wine_mono_distfile} \
-rmd160  3e2932960dabff8283f02b32dc573b0dda6adfac \
-sha256  2c8d5db7f833c3413b2519991f5af1f433d59a927564ec6f38a3f1f8b2c629aa \
-size    56470528
+                            rmd160  3e2932960dabff8283f02b32dc573b0dda6adfac \
+                            sha256  2c8d5db7f833c3413b2519991f5af1f433d59a927564ec6f38a3f1f8b2c629aa \
+                            size    56470528
 
 # Note: Most of the X11 libs are dlopen()'d
 depends_lib                 port:fontconfig \
