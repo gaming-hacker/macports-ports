@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -20,8 +20,8 @@ homepage        https://www.nano-editor.org
 master_sites    ${homepage}dist/v[strsed ${version} {/\.[0-9]*$//}]/ gnu
 
 checksums       rmd160  18c6c8a1f88e3e8c274ba5dbc5fb4df62095d1b9 \
-                sha256  9c7e1fe68a125a5f6e9a1118bb4928184124381dc80646714c86874964d92217 \
-                size    2913055
+sha256  9c7e1fe68a125a5f6e9a1118bb4928184124381dc80646714c86874964d92217 \
+size    2913055
 
 depends_lib     port:gettext \
                 port:libiconv \
