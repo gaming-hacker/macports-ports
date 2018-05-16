@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -52,7 +52,7 @@ if {(${subport} eq ${name}) || (${subport} eq "lib${name}")} {
     use_xz              yes
 
     checksums           rmd160  4434e91384520fe1fe129a52f5d66d61e4404a9a \
-sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
+                        sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
 
     # Enable HFS compression of the workdir if the compress_workdir PortGroup is installed
     if {[file exists ${filespath}/../../../_resources/port1.0/group/compress_workdir-1.0.tcl]} {
@@ -153,21 +153,16 @@ sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
                         no-sparkle.patch \
                         patch-vlc-no-O4.diff \
                         patch-soundfont-path.diff
-    if {[tbool use_ffmpeg_VLC]} {
-        patchfiles-append \
-                        patch-ffmpegVLC.diff
-    } else {
-        # FFMpeg 3 compatibility (see attributions in the patchfile)
-        patchfiles-append \
+    # FFMpeg 3 compatibility (see attributions in the patchfile)
+    patchfiles-append \
                         patch-ffmpeg3-compat.diff
-        platform darwin {
-            patchfiles-append \
-                        patch-vda-ffmpeg34+.diff
-        }
-        # FFMpeg 4 compatibility (by RJVB)
+    platform darwin {
         patchfiles-append \
-                        patch-ffmpeg4-compat.diff
+                        patch-vda-ffmpeg34+.diff
     }
+    # FFMpeg 4 compatibility (by RJVB)
+    patchfiles-append \
+                        patch-ffmpeg4-compat.diff
 
     post-patch {
         if {[string match *clang* ${configure.cxx}] && ${configure.cxx_stdlib} == "libc++"} {
@@ -176,35 +171,6 @@ sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
         }
 
         reinplace "s|@PREFIX@|${prefix}|g" ${worksrcpath}/modules/codec/fluidsynth.c
-
-        if {[tbool use_ffmpeg_VLC]} {
-            # patch source using ffmpeg to use the correct header file locations
-            foreach dir {libavcodec libavformat libavresample libavutil libpostproc libswresample libswscale} {
-                foreach module {access codec/avcodec demux/avformat hw/vdpau packetizer video_chroma} {
-                    foreach cf [glob -nocomplain ${worksrcpath}/modules/${module}/*.c] {
-                        reinplace "s|${dir}/|${dir}-VLC/|g" ${cf}
-                    }
-                    foreach cf [glob -nocomplain ${worksrcpath}/modules/${module}/*.h] {
-                        reinplace "s|${dir}/|${dir}-VLC/|g" ${cf}
-                    }
-                }
-                reinplace "s|${dir}/|${dir}-VLC/|g" ${worksrcpath}/configure.ac ${worksrcpath}/configure
-            }
-            reinplace "s|postproc/|postproc-VLC/|g" ${worksrcpath}/configure.ac ${worksrcpath}/configure
-            reinplace "s|libpostproc/|libpostproc-VLC/|g" ${worksrcpath}/modules/video_filter/postproc.c
-            reinplace "s|HAVE_LIBAVUTIL_AV|HAVE_LIBAVUTIL_VLC_AV|g" \
-                ${worksrcpath}/modules/codec/avcodec/avcommon.h \
-                ${worksrcpath}/modules/codec/avcodec/avcommon_compat.h
-            reinplace "s|HAVE_LIBAVFORMAT_AV|HAVE_LIBAVFORMAT_VLC_AV|g" \
-                ${worksrcpath}/modules/codec/avcodec/avcommon.h \
-                ${worksrcpath}/modules/codec/avcodec/avcommon_compat.h
-            reinplace "s|HAVE_LIBAVCODEC_AV|HAVE_LIBAVCODEC_VLC_AV|g" \
-                ${worksrcpath}/modules/codec/avcodec/avcommon.h \
-                ${worksrcpath}/modules/codec/avcodec/avcommon_compat.h
-            reinplace "s|HAVE_LIBSWSCALE_SW|HAVE_LIBSWSCALE_VLC_SW|g" \
-                ${worksrcpath}/modules/codec/avcodec/avcommon.h \
-                ${worksrcpath}/modules/codec/avcodec/avcommon_compat.h
-        }
     }
 
     # do autoreconf only the first time around
