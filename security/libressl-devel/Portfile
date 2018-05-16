@@ -24,11 +24,8 @@ conflicts           openssl libressl
 
 master_sites        openbsd:LibreSSL
 checksums           rmd160 54394d02692a63ec51445a7ea7eab37dabe931f5 \
-<<<<<<< HEAD
 sha256 16c70d8fe1de6e9bedea0d67804b55f3894717693a05ed45e15e0e2f939c2795
-=======
-sha256 16c70d8fe1de6e9bedea0d67804b55f3894717693a05ed45e15e0e2f939c2795
->>>>>>> master
+
 
 patchfiles \
     openssldir-cert.pem.patch

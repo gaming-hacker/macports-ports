@@ -30,11 +30,11 @@ configure.ldflags-delete -L${prefix}/lib
 
 
 # CMAKE configuration
-configure.args-append \
-    -DDRF_INSTALL_PREFIX_PYTHON=${python.prefix}\
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
-    -DDRF_DATA_PREFIX_PYTHON=${prefix} \
-    -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin
+# configure.args-append \
+#     -DDRF_INSTALL_PREFIX_PYTHON=${python.prefix}\
+#     -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
+#     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
+#     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin
 
 use_configure \
   yes
