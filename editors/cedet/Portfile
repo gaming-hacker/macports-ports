@@ -31,7 +31,7 @@ use_configure   no
 use_parallel_build  no
 
 destroot {
-    set lispdir $prefix/share/emacs/site-lisp
+    set lispdir ${prefix}/share/emacs/site-lisp
 
     set packages {
         common
@@ -48,8 +48,8 @@ destroot {
         global  destroot worksrcpath
         upvar   lispdir lispdir
 
-        xinstall -d $destroot$lispdir/$package_dir
-        foreach f [glob -directory $worksrcpath/$package_dir *] {
+        xinstall -d ${destroot}$lispdir/$package_dir
+        foreach f [glob -directory ${worksrcpath}/$package_dir *] {
             if {[file isdirectory $f]} {
                 set p [file tail $f]
 
@@ -60,7 +60,7 @@ destroot {
                 set ext [file extension $f]
 
                 if {$ext eq ".el" || $ext eq ".elc"} {
-                    xinstall -m 644 $f $destroot$lispdir/$package_dir
+                    xinstall -m 644 $f ${destroot}$lispdir/$package_dir
                 }
             }
         }

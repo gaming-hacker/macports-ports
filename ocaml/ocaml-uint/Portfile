@@ -21,7 +21,7 @@ use_oasis           yes
 use_oasis_doc       yes
 
 patch {
-    reinplace "s|\$prefix/include|${destroot}\$prefix/include|g" ${worksrcpath}/setup.ml
+    reinplace "s|\${prefix}/include|${destroot}\${prefix}/include|g" ${worksrcpath}/setup.ml
 }
 
 configure.args-append "--override docdir ${destroot}${prefix}/share/doc/${name}"
