@@ -25,4 +25,4 @@ rmd160 b5cb87cfa5affbd7290484a610607adcfa9148ee
 depends_lib	port:libxslt port:docbook-xsl-nons port:docbook-xml
 use_configure	no
 use_parallel_build	no
-destroot.args 	PREFIX=$destroot$prefix _MANDIR=$destroot$prefix/share/man
+destroot.args 	PREFIX=${destroot}${prefix} _MANDIR=${destroot}${prefix}/share/man

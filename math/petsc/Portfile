@@ -75,7 +75,7 @@ sha256  88beb37f34b5f997d47ff0950bc1b89a41035de05b292873d215e7fd78824f56
 }
 
 notes               "Add the following line to your .bash_profile if you plan to use\
-                    the PETSC makefile rules in $prefix/lib/petsc/conf: \n\
+                    the PETSC makefile rules in ${prefix}/lib/petsc/conf: \n\
                     \texport PETSC_DIR=${prefix}/lib/${name}"
 
 configure.args      --prefix=${prefix}/lib/${name} \
