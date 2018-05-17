@@ -20,7 +20,7 @@ rmd160  07981887169663e48b5a50693b81cd7a9c6a634f \
 sha256  56074379574a1148c570d9794ef34932f06acb4d79395e9f1d175e53ff5acef3
 
 depends_build-append \
-                    path:bin/pkg-config:pkgconfig
+                    port:pkgconfig
 
 cmake.out_of_source yes
 

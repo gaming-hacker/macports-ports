@@ -30,8 +30,8 @@ rmd160 e0f70ca4d867cf6cdbb452bd0f0860ef1f5a9f39 \
 sha1 ae5c39be11aeb19898cd3f968580eafc623830b7
 use_bzip2	yes
 
+depends_build	port:gettext port:pkgconfig
 depends_lib	path:lib/pkgconfig/glib-2.0.pc:glib2 port:ncurses
-depends_build	port:gettext bin:pkg-config:pkgconfig
 
 configure.pre_args
 configure.env-append PREFIX=${prefix}

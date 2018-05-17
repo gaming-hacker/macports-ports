@@ -23,7 +23,7 @@ sha256 126646eb7f819a61172750c4f1998b773bcf3d6d6b2605f5853a5afd8e02fd9b
 
 python.default_version  27
 
-depends_lib-append port:ligo-common \
+depends_lib-append port:py${python.version}-ligo-common \
                    port:glue \
                    port:py${python.version}-m2crypto
 

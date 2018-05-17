@@ -38,7 +38,7 @@ sha256  167dc42bab6d5bd823b798af195420319cb5c9b571e00db7d83df2a0fe1f4dbf
 
 installs_libs           no
 
-depends_build           path:bin/pkg-config:pkgconfig
+depends_build           port:pkgconfig
 depends_lib             path:lib/libavcodec.dylib:ffmpeg \
                         path:bin/perl:perl5 \
                         port:libiconv \

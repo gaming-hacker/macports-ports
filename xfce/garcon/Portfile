@@ -20,5 +20,5 @@ sha256 787dc859713b6518992d760d4b858fb02e8a30705e6f6e871d7a14cc97bca972
 
 configure.args  --mandir=${prefix}/share/man
 
-depends_build   path:bin/pkg-config:pkgconfig port:intltool
+depends_build   port:intltool port:pkgconfig
 depends_lib     port:libxfce4util port:gtk2

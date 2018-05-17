@@ -27,7 +27,7 @@ python.versions 27 36
 if {${name} ne ${subport}} {
     patch	{
         file delete ${worksrcpath}/generic.py
-        file copy ${portpath}/files/setup.py ${worksrcpath}
+        file copy ${filespath}/setup.py ${worksrcpath}
         reinplace "s|PORTVERSION|${version}|g" ${worksrcpath}/setup.py
     }
 

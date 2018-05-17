@@ -22,7 +22,7 @@ rmd160  5aabb1c647244b070064f9dc3f16b7b64e997ca5 \
 sha256  6a67dac0345e125011cc708070fbe6c018d68de94a9726ead34c0c2ab94e943e
 
 depends_build-append \
-                    path:bin/pkg-config:pkgconfig \
+                    port:pkgconfig \
                     port:swig-python
 
 depends_lib         port:ncurses \
