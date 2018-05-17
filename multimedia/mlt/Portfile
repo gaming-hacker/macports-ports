@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -26,8 +26,8 @@ homepage            http://www.mltframework.org/
 platforms           darwin
 
 checksums           rmd160  5aa9892ea06b2bf0e9abced6d69cf9005f05fa49 \
-                    sha256  54d6c28c8eae23b77c57bc59eec441ac073c56d029f59132cce647a8ace9b0dc \
-                    size    1380452
+sha256  54d6c28c8eae23b77c57bc59eec441ac073c56d029f59132cce647a8ace9b0dc \
+size    1380452
 
 subport ${name}-qt5 {
     description     ${description} - Qt5 version

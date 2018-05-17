@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    \
     as client or server.
 
 checksums           rmd160  9fced325670a8aec052d15a6c2f8cb23c6191f92 \
-                    sha256  33ab15c3807a4dab8b05b28f7052c37cf9e38acf0f55f87a38dcce0000d3a3d3 \
-                    size    7482525
+sha256  33ab15c3807a4dab8b05b28f7052c37cf9e38acf0f55f87a38dcce0000d3a3d3 \
+size    7482525
 
 depends_lib-append  path:lib/libssl.dylib:openssl \
                     port:zlib

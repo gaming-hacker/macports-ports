@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,11 +25,11 @@ distname            ${python.rootname}-${version}
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}/
 
 checksums           md5     a0a4922839f6309135e4122975ed4a96 \
-                    rmd160  f913f1edd73207c46f3bf4638dbd764175bfdd0c \
-                    sha256  b7d5465c6174fe86dba498ececb175f93a6097ffb7cc91946405e1f05b848371 \
-                    size    15711
+rmd160  f913f1edd73207c46f3bf4638dbd764175bfdd0c \
+sha256  b7d5465c6174fe86dba498ececb175f93a6097ffb7cc91946405e1f05b848371 \
+size    15711
 
-python.versions     35 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,11 +23,11 @@ long_description    \
     cuts down boilerplate code when testing libraries for asyncio.
 
 checksums           md5     aeeba4e854c918fe91d1a2c9a35d1101 \
-                    rmd160  9b6545da9e008b9ad23b047632e2eaa7d2cb7acc \
-                    sha256  94faa71985921b279b2e4f4ae004891e9b5566cd602a7eb2250f4dc6f2933206 \
-                    size    49263
+rmd160  9b6545da9e008b9ad23b047632e2eaa7d2cb7acc \
+sha256  94faa71985921b279b2e4f4ae004891e9b5566cd602a7eb2250f4dc6f2933206 \
+size    49263
 
-python.versions     36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

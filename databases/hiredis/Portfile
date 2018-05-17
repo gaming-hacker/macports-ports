@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ description         Hiredis is a minimalistic C client library for the Redis dat
 long_description    ${description}
 
 checksums           rmd160  f461cba002bbecba9fee6691f45493ef8c3e6460 \
-                    sha256  da93bcb49209b757e8a57cfe7cd9319066ecebe7b6d80d9ce466434cc5995999 \
-                    size    58315
+sha256  da93bcb49209b757e8a57cfe7cd9319066ecebe7b6d80d9ce466434cc5995999 \
+size    58315
 
 patchfiles          cp.patch \
                     install_name.patch
