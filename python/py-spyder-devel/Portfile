@@ -43,58 +43,43 @@ checksums           rmd160  a698ca83df7b795b0cee61406eb112e1256b639e \
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder
 
-    # Bare minimum
-    depends_lib-append  \
+    depends_lib-append \
         port:py${python.version}-chardet \
-        port:py${python.version}-codestyle \
         port:py${python.version}-cloudpickle \
-        port:py${python.version}-path \
+        port:py${python.version}-codestyle \
+        port:py${python.version}-jedi \
+        port:py${python.version}-nbconvert \
+        port:py${python.version}-numpydoc \
         port:py${python.version}-pickleshare \
+        port:py${python.version}-psutil \
+        port:py${python.version}-pyflakes \
+        port:py${python.version}-pygments \
+        port:py${python.version}-pylint \
         port:py${python.version}-pyqt5 \
         port:py${python.version}-qtawesome \
+        port:py${python.version}-qtconsole \
         port:py${python.version}-qtpy \
+        port:py${python.version}-rope \
         port:py${python.version}-sphinx \
         port:py${python.version}-zmq
 
     require_active_variants py${python.version}-pyqt5 webengine
     require_active_variants py${python.version}-qtpy qt5
 
-    variant tiny description "
-        Remove all optional dependencies for quickest install. Dependencies\
-        are detected/enabled at runtime and may be installed separately.
-    " conflicts small {}
-
-    variant small description "
-        Remove most optional dependencies for quicker install. Dependencies\
-        are detected/enabled at runtime and may be installed separately.
-    " conflicts tiny {}
+    variant small description "Remove all optional dependencies." {}
 
     variant no_anti_alias description "Use non-anti-aliased fonts in editor." {
         patchfiles-append   no_AA.diff
     }
 
-    # These add very little to the install time
-    if {![ variant_isset tiny ]} {
+    if {![ variant_isset small ]} {
         depends_lib-append \
-            port:py${python.version}-pylint \
-            path:${python.pkgd}/pep8:py${python.version}-pep8 \
-            port:py${python.version}-pyflakes \
-            port:py${python.version}-rope \
-            port:py${python.version}-psutil \
-            port:py${python.version}-jedi
-    }
-
-    # These add substantially to the install time
-    if {![ variant_isset small ] &&
-        ![ variant_isset tiny  ] } {
-        depends_lib-append \
-            path:${python.pkgd}/h5py/__init__.py:py${python.version}-h5py \
-            port:py${python.version}-qtconsole \
             port:py${python.version}-matplotlib \
             port:py${python.version}-scipy \
-            port:py${python.version}-nbconvert \
+            port:py${python.version}-numpy \
             port:py${python.version}-pandas \
-            port:py${python.version}-sympy
+            port:py${python.version}-sympy \
+            port:py${python.version}-cython
     }
 
     variant docs description "Include offline Python and Qt documentation." {
