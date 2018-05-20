@@ -6,7 +6,7 @@ PortGroup           python 1.0
 PortGroup           active_variants 1.1
 PortGroup           select 1.0
 
-github.setup        spyder-ide spyder 3.2.8 v
+github.setup        spyder-ide spyder 5a9f81a1000cf5b7800fcc001e7ffe81b3ad32be
 name                py-spyder-devel
 # Preference on mailing list is to use small numbers for epoch.
 # This is already a date code, so sticking with dates.
@@ -37,9 +37,9 @@ supported_archs     noarch
 #pyNN-scipy doesn't build universal
 universal_variant   no
 
-checksums           rmd160  a698ca83df7b795b0cee61406eb112e1256b639e \
-                    sha256  508e473c64fec5197761d368a5dbfafd187b38e8e668df8bb2e1430b3b3eb61f \
-                    size    4913127
+checksums           rmd160  2718414d07115a3d672dcc7edfe365de8b285c0b \
+                    sha256  59059efa7e10ad7d1a008d3e836ad34f4edf2b5f8be5c5c68853cfbaedc15e1d \
+                    size    4703231
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder
