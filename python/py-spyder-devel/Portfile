@@ -2,16 +2,14 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
+PortGroup           python 1.0
 PortGroup           active_variants 1.1
 
 github.setup        spyder-ide spyder 3.2.8 v
 name                py-spyder-devel
-revision            0
 # Preference on mailing list is to use small numbers for epoch.
 # This is already a date code, so sticking with dates.
 epoch               20161005
-
-PortGroup           python 1.0
 
 python.versions     27 35 36
 
@@ -38,39 +36,12 @@ supported_archs     noarch
 #pyNN-scipy doesn't build universal
 universal_variant   no
 
+checksums           rmd160  a698ca83df7b795b0cee61406eb112e1256b639e \
+                    sha256  508e473c64fec5197761d368a5dbfafd187b38e8e668df8bb2e1430b3b3eb61f \
+                    size    4913127
+
 if {${name} ne ${subport}} {
-    checksums \
-        rmd160  a698ca83df7b795b0cee61406eb112e1256b639e \
-        sha256  508e473c64fec5197761d368a5dbfafd187b38e8e668df8bb2e1430b3b3eb61f
-
-    conflicts           py${python.version}-spyder
-
-    # Will *work* with either/both under the hood, but for dependencies,
-    # provide variants to determine what we label depends_lib.
-
-    # Set the pylint executable name
-    set LINT_BIN_NAME   pylint-${python.branch}
-    set WINPDB_BIN_NAME winpdb-${python.branch}
-    patchfiles          spyderlib_baseconfig.py.diff \
-                        spyderlib_plugins_editor.py.diff \
-                        spyderlib_start_app.py.diff \
-                        spyderlib_spyder.py.diff \
-                        spyderlib_utils_programs.py.diff
-
-    post-patch {
-        reinplace "s|@@WINPDB_BIN_NAME@@|${WINPDB_BIN_NAME}|g" \
-            ${worksrcpath}/spyder/plugins/editor.py
-        reinplace "s|\"assistant\"|\"Assistant\"|g" \
-            ${worksrcpath}/spyder/app/mainwindow.py
-        reinplace "s|\"linguist\"|\"Linguist\"|g" \
-            ${worksrcpath}/spyder/app/mainwindow.py
-        reinplace "s|\"designer\"|\"Designer\"|g" \
-            ${worksrcpath}/spyder/app/mainwindow.py
-        reinplace "s|@@PREFIX@@|${prefix}|g" \
-            ${worksrcpath}/spyder/app/mainwindow.py
-        reinplace "s|@@APPS_DIR@@|${applications_dir}/Qt5|g" \
-            ${worksrcpath}/spyder/utils/programs.py
-    }
+    conflicts       py${python.version}-spyder
 
     # Bare minimum
     depends_lib-append  \
@@ -88,20 +59,17 @@ if {${name} ne ${subport}} {
     require_active_variants py${python.version}-pyqt5 webengine
     require_active_variants py${python.version}-qtpy qt5
 
-    depends_build-append \
-        port:GraphicsMagick
-    
-    variant tiny description {
+    variant tiny description "
         Remove all optional dependencies for quickest install. Dependencies\
         are detected/enabled at runtime and may be installed separately.
-    } conflicts small {}
+    " conflicts small {}
 
-    variant small description {
+    variant small description "
         Remove most optional dependencies for quicker install. Dependencies\
         are detected/enabled at runtime and may be installed separately.
-    } conflicts tiny {}
-    
-    variant no_anti_alias description {Use non-anti-aliased fonts in editor.} {
+    " conflicts tiny {}
+
+    variant no_anti_alias description "Use non-anti-aliased fonts in editor." {
         patchfiles-append   no_AA.diff
     }
 
@@ -129,32 +97,45 @@ if {${name} ne ${subport}} {
             port:py${python.version}-sympy
     }
 
-    variant docs description {Include python and Qt offline documentation.} {
-        depends_lib-append  port:qt5-docs
-        depends_lib-append  port:py${python.version}-htmldocs
+    variant docs description "Include offline Python and Qt documentation." {
+        depends_lib-append  \
+            port:qt5-docs \
+            port:py${python.version}-htmldocs
     }
 
-    variant pil description {
-           Support image objects in editor through PIL or Pillow (many dependencies.)
-    } {
+    variant pil description "Support image objects in editor through PIL or Pillow." {
         depends_lib-append \
             path:${python.pkgd}/PIL:py${python.version}-Pillow
     }
 
-    post-extract {
-      fs-traverse f ${worksrcpath} {
-        touch $f
-      }
+    set LINT_BIN_NAME      pylint-${python.branch}
+    set WINPDB_BIN_NAME    winpdb-${python.branch}
+    patchfiles             spyderlib_baseconfig.py.diff \
+                           spyderlib_plugins_editor.py.diff \
+                           spyderlib_start_app.py.diff \
+                           spyderlib_spyder.py.diff \
+                           spyderlib_utils_programs.py.diff
+
+    post-patch {
+        reinplace "s|@@WINPDB_BIN_NAME@@|${WINPDB_BIN_NAME}|g" \
+            ${worksrcpath}/spyder/plugins/editor.py
+        reinplace "s|\"assistant\"|\"Assistant\"|g" \
+            ${worksrcpath}/spyder/app/mainwindow.py
+        reinplace "s|\"linguist\"|\"Linguist\"|g" \
+            ${worksrcpath}/spyder/app/mainwindow.py
+        reinplace "s|\"designer\"|\"Designer\"|g" \
+            ${worksrcpath}/spyder/app/mainwindow.py
+        reinplace "s|@@PREFIX@@|${prefix}|g" \
+            ${worksrcpath}/spyder/app/mainwindow.py
+        reinplace "s|@@APPS_DIR@@|${applications_dir}/Qt5|g" \
+            ${worksrcpath}/spyder/utils/programs.py
     }
-    
+
     post-destroot {
         if {${python.version} == ${python.default_version}} {
           ln -s ${python.prefix}/bin/spyder ${destroot}${prefix}/bin/
         }
 
-        system -W ${destroot}${prefix} \
-            "find . -name *.png -print0 | xargs -0 gm mogrify -strip"
-        
         delete \
           ${destroot}${prefix}/bin/spyder_win_post_install.py-${python.branch}
         delete ${destroot}${python.prefix}/bin/spyder_win_post_install.py
@@ -169,7 +150,7 @@ if {${name} ne ${subport}} {
     } else {
         set EXENAME   "'spyder-${python.branch}'"
     }
-    
+
     notes \
 "
 ##############################################################
