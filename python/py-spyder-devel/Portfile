@@ -148,9 +148,11 @@ if {${name} ne ${subport}} {
           ${destroot}${prefix}/bin/spyder_win_post_install.py-${python.branch}
         delete ${destroot}${python.prefix}/bin/spyder_win_post_install.py
 
-        file mkdir ${destroot}${prefix}/share/doc/${subport}
-        copy ${worksrcpath}/LICENSE \
-            ${destroot}${prefix}/share/doc/${subport}
+        set docdir ${prefix}/share/doc/${subport}
+        xinstall -d ${destroot}${docdir}
+        xinstall -m 0644 -W ${worksrcpath} AUTHORS Announcements.md LICENSE \
+            CHANGELOG.md CONTRIBUTING.md README.md RELEASE.md TROUBLESHOOTING.md \
+            ${destroot}${docdir}
     }
 
     select.group    spyder
