@@ -74,6 +74,9 @@ if {${name} ne ${subport}} {
         depends_lib-append         port:py${python.version}-pyqt4 \
                                    port:qt4-mac-sqlite3-plugin
         require_active_variants    py${python.version}-qtpy "" qt5
+        # make sure that py-pyqt4 is used when also py-pyqt5 is installed
+        patchfiles-append          patch-scripts_spyder-qt4.diff \
+                                   patch-scripts_spyder3-qt4.diff
     }
 
     if {![ variant_isset pyqt4 ]} {
@@ -83,7 +86,7 @@ if {${name} ne ${subport}} {
     variant small description "Remove all optional dependencies." {}
 
     variant no_anti_alias description "Use non-anti-aliased fonts in editor." {
-        patchfiles-append   no_AA.diff
+        patchfiles-append    patch-spyder_utils_syntaxhighlighters.py.diff
     }
 
     if {![ variant_isset small ]} {
@@ -108,13 +111,12 @@ if {${name} ne ${subport}} {
             path:${python.pkgd}/PIL:py${python.version}-Pillow
     }
 
-    set LINT_BIN_NAME      pylint-${python.branch}
     set WINPDB_BIN_NAME    winpdb-${python.branch}
-    patchfiles             spyderlib_baseconfig.py.diff \
-                           spyderlib_plugins_editor.py.diff \
-                           spyderlib_start_app.py.diff \
-                           spyderlib_spyder.py.diff \
-                           spyderlib_utils_programs.py.diff
+    patchfiles-append      patch-spyder_config_base.py.diff \
+                           patch-spyder_plugins_editor.py.diff \
+                           patch-spyder_app_start.py.diff \
+                           patch-spyder_app_mainwindow.py.diff \
+                           patch-spyder_utils_programs.py.diff
 
     post-patch {
         reinplace "s|@@WINPDB_BIN_NAME@@|${WINPDB_BIN_NAME}|g" \
@@ -127,8 +129,14 @@ if {${name} ne ${subport}} {
             ${worksrcpath}/spyder/app/mainwindow.py
         reinplace "s|@@PREFIX@@|${prefix}|g" \
             ${worksrcpath}/spyder/app/mainwindow.py
-        reinplace "s|@@APPS_DIR@@|${applications_dir}/Qt5|g" \
-            ${worksrcpath}/spyder/utils/programs.py
+
+        if {[ variant_isset pyqt4 ]} {
+            reinplace "s|@@APPS_DIR@@|${applications_dir}/Qt4|g" \
+                ${worksrcpath}/spyder/utils/programs.py
+            } else {
+            reinplace "s|@@APPS_DIR@@|${applications_dir}/Qt5|g" \
+                ${worksrcpath}/spyder/utils/programs.py
+            }
     }
 
     post-destroot {
