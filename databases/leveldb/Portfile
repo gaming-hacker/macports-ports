@@ -34,6 +34,10 @@ depends_lib         port:snappy
 patchfiles          install_name.patch \
                     patch-build_detect_platform.diff
 
+# see https://trac.macports.org/ticket/56164
+# see https://trac.macports.org/ticket/56508
+patchfiles-append   patch-no_gperftools.diff
+
 use_configure       no
 
 if {[string match *clang* ${configure.cxx}]} {
@@ -69,5 +73,3 @@ destroot {
     copy {*}[glob ${worksrcpath}/out-shared/libleveldb*.dylib] ${destroot}${prefix}/lib
     xinstall -m 0644 {*}[glob ${worksrcpath}/out-static/lib*.a] ${destroot}${prefix}/lib
 }
-
-destroot.args-append -f Makefile-Install
