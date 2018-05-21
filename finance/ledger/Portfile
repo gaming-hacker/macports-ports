@@ -20,8 +20,8 @@ maintainers         nomaintainer
 platforms           darwin
 
 checksums           rmd160  521cba111fb3fd3a5c586568497a6c661e8b4d48 \
-                    sha256  3ec4914f2a25b2de8faf867a561b87e4550c75ac69c9400fd6fae2e2a7361b13 \
-                    size    842440
+sha256  3ec4914f2a25b2de8faf867a561b87e4550c75ac69c9400fd6fae2e2a7361b13 \
+size    842440
 
 depends_lib-append  port:boost \
                     port:python27 \

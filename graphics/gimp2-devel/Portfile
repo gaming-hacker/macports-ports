@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -29,8 +29,8 @@ master_sites        https://git.gnome.org/browse/${git_name}/snapshot/
 distname            ${git_name}-${git_commit}
 
 checksums           rmd160  2b01d11f09cd68899ee938a51eaaf0a2731ff826 \
-                    sha256  221e7012a565bd0c26e232c776956d645caa7ccb263e7a314230db8e78c707b2 \
-                    size    90783650
+sha256  221e7012a565bd0c26e232c776956d645caa7ccb263e7a314230db8e78c707b2 \
+size    90783650
 
 set perl_version    5.26
 

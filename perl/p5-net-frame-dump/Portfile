@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -18,8 +18,8 @@ long_description    Net::Frame::Dump is the base class for all dump modules. \
                     Net::Frame::Dump::Writer for specific usage.
 
 checksums           rmd160  e0c1e71f67ae029b222fd3f15596b36e115a49f2 \
-                    sha256  46b0b23f70baba4f7881a3dd8846e74534ab75725927368195e22d11bebb93d6 \
-                    size    19354
+sha256  46b0b23f70baba4f7881a3dd8846e74534ab75725927368195e22d11bebb93d6 \
+size    19354
 
 if {${perl5.major} != ""} {
     depends_lib-append \

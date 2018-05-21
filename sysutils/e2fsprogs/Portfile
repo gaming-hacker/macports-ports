@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -20,8 +20,8 @@ homepage                    http://e2fsprogs.sourceforge.net/
 master_sites                sourceforge:project/e2fsprogs/e2fsprogs/v${version}
 
 checksums                   rmd160  96e6df94f809056b20c78e258244ea3e620134d1 \
-                            sha256  e5c05a5ba4a9a1766f4b500ad7ef3220843860bfa64ebdda1b462b23bcb37f68 \
-                            size    7562398
+sha256  e5c05a5ba4a9a1766f4b500ad7ef3220843860bfa64ebdda1b462b23bcb37f68 \
+size    7562398
 
 depends_build               port:pkgconfig
 depends_lib                 port:gettext

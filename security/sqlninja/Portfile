@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,13 +22,13 @@ master_sites        sourceforge
 extract.suffix      .tgz
 
 checksums           rmd160 1313f381e302da64cb6f9a9b1ec86bd842412129 \
-                    sha256 7f8e9103d3fe58eb6e6f1476474589f7e5ca501703a82ae5299bd7a708342bc5
+sha256 7f8e9103d3fe58eb6e6f1476474589f7e5ca501703a82ae5299bd7a708342bc5
 
 subport ${name}-devel {
     version         0.2.999-alpha1
     revision        0
     checksums       rmd160 68a5ccbf3e301ca12b970c485b0ee2a309336caa \
-                    sha256 cd1e51434fdbe8900fbfb117b753e390415a1821b0b917812f1f6040ab55f9d6
+sha256 cd1e51434fdbe8900fbfb117b753e390415a1821b0b917812f1f6040ab55f9d6
 }
 
 set perl_version    5.26

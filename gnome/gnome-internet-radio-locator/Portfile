@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  4e8ac0c666b134bc9212f6509f297c86304a5a78 \
-                    sha256  0613024d38540c7d995227d137a8c60bdfd02a2aa381d6b36c410a00b130a221 \
-                    size    540516
+sha256  0613024d38540c7d995227d137a8c60bdfd02a2aa381d6b36c410a00b130a221 \
+size    540516
 
 depends_build       port:autoconf \
                     port:automake \

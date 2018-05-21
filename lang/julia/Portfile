@@ -13,7 +13,7 @@ license             MIT
 homepage            http://julialang.org
 
 compilers.choose    fc f77 f90
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 
 description         The Julia Language: A fresh approach to technical computing.
 long_description    Julia is a high-level, high-performance dynamic programming \

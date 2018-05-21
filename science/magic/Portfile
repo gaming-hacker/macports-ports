@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -38,8 +38,8 @@ depends_lib         port:blt \
 require_active_variants tk x11
 
 checksums           rmd160  4717581c193aefb210394d5705726906f2eb2d9c \
-                    sha256  93fb1b74b8532a6d21e2727451979394aa62a0c63cc4dc3c5280a8df569625dd \
-                    size    3935715
+sha256  93fb1b74b8532a6d21e2727451979394aa62a0c63cc4dc3c5280a8df569625dd \
+size    3935715
 
 universal_variant   no
 

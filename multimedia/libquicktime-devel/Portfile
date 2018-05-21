@@ -21,8 +21,8 @@ distname            libquicktime-git-${git_commit_hash}
 use_zip             yes
 
 checksums           rmd160  8f31d460dde8c5f933c75c26bdbbe4162aa9dc70 \
-                    sha256  bd0f6d2363b00c0ec9cf5e1c93de598935ec4e16f4d22826df46143b7736e0ca \
-                    size    820698
+sha256  bd0f6d2363b00c0ec9cf5e1c93de598935ec4e16f4d22826df46143b7736e0ca \
+size    820698
 
 depends_build       port:pkgconfig
 

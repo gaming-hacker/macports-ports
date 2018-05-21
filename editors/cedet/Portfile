@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -22,7 +22,7 @@ homepage        http://cedet.sourceforge.net/
 master_sites    sourceforge:project/cedet/cedet
 
 checksums       rmd160  4995ba86c3e0516a3391dad6d1c45ca7e80145e3 \
-                sha256  42c0650fa1d0c9a428d186b421f0057294bcfaec09c8b7bb4a0128ce2fe54b5c
+sha256  42c0650fa1d0c9a428d186b421f0057294bcfaec09c8b7bb4a0128ce2fe54b5c
 
 depends_lib     port:emacs
 
