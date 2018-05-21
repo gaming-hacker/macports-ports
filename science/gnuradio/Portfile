@@ -65,7 +65,7 @@ size   4431156
     # set the version override string
 
     set GR_VERSION_INFO "devel-git-[string range ${github.version} 0 7](${version})"
- 
+
 }
 
 subport gnuradio-next {

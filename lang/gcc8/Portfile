@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -6,14 +6,11 @@ PortGroup compiler_blacklist_versions 1.0
 
 epoch               1
 name                gcc8
-revision            2
-subport             libgcc-devel { revision 3 }
-
 # This is the last version that builds; see
 # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=82092
 version             8-20170604
-# version             8-20180218
-
+revision            2
+subport             libgcc-devel { revision 3 }
 platforms           darwin
 categories          lang
 maintainers         nomaintainer
@@ -33,9 +30,7 @@ distname            gcc-${version}
 use_xz              yes
 
 checksums           rmd160  5ca2b4868ba36a195f17fbacab881e04a97ae3c7 \
-sha256  b07104e99b0b2f613395b74260b05adb1c2f59b9549713a07a63425ecb33e411
-# checksums rmd160  9fde2d2db45860a9b8ab9605b373f4080d4dff09 \
-# sha256  4f447cb13dd26971b78863c800eac104ae7f19c4748df11b8f237b10d8367637
+                    sha256  b07104e99b0b2f613395b74260b05adb1c2f59b9549713a07a63425ecb33e411
 
 depends_lib         port:cctools \
                     port:gmp \
@@ -129,6 +124,9 @@ pre-configure {
     # TODO: Remove when base automatically creates configure.dir (2.2.1?).
     file mkdir ${configure.dir}
 }
+
+# http://trac.macports.org/ticket/29067
+compiler.blacklist-append gcc-4.0
 
 # http://trac.macports.org/ticket/29104
 compiler.blacklist-append {llvm-gcc-4.2 < 2336.1}
@@ -269,6 +267,9 @@ select.file         ${filespath}/mp-${name}
 
 }
 
+platform powerpc {
+    configure.universal_archs ppc ppc64
+}
 platform i386 {
     configure.universal_archs i386 x86_64
 }

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
 
 name                    py-lmfit
-version                 0.9.9
+version                 0.9.10
 categories-append       math
 license                 BSD
 maintainers             {gmail.com:jjstickel @jjstickel} openmaintainer
@@ -18,11 +18,11 @@ homepage                https://lmfit.github.io/lmfit-py/
 master_sites            pypi:l/lmfit/
 distname                lmfit-${version}
 
-checksums               rmd160  b2891fa6b125ea11e88769dc31704e681cde91a8 \
-sha256  eee9fa534dc3c494a4d7dd3e0cd243792bbc6cb409805440282a4b5fdab50ea1 \
-size    1574912
+checksums               rmd160  d6280d2da50a2ada0f44e1d4715e526383320c7c \
+                        sha256  72ff4abdeb7b97ad8434ed3796783425750ce6286e032a265ae44ade05d92eae \
+                        size    1590006
 
-python.versions 27 36
+python.versions         27 34 35 36
 
 if {$subport ne $name} {
     depends_build-append       port:py${python.version}-setuptools
@@ -32,8 +32,23 @@ if {$subport ne $name} {
                                port:py${python.version}-six \
                                port:py${python.version}-asteval
 
+    depends_test-append        port:py${python.version}-pytest
+    test.run                   yes
+    test.cmd                   py.test-${python.branch}
+    test.target
+    test.env                   PYTHONPATH=${worksrcpath}/build/lib
+
     notes-append "If py${python.version}-uncertainties is also installed, propagation of uncertainties to constrained parameters will be enabled."
     notes-append "If upgrading from 0.8.x, any scripts using lmfit must be changed https://lmfit.github.io/lmfit-py/whatsnew.html#whatsnew-090-label"
+    livecheck.type      none
+
+    post-destroot {
+       xinstall -m 755 -d ${destroot}${prefix}/share/doc/${subport}
+       xinstall -m 644 -W ${worksrcpath} README.rst LICENSE THANKS.txt \
+          ${destroot}${prefix}/share/doc/${subport}
+       xinstall -m 644 {*}[glob ${worksrcpath}/examples/*] \
+          ${destroot}${prefix}/share/doc/${subport}/examples
+       }
 } else {
     livecheck.type      pypi
 }

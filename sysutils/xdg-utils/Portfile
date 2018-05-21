@@ -25,6 +25,8 @@ size    297170
 depends_build       port:w3m \
                     port:xmlto
 
+license_noconflict  w3m
+
 livecheck.type      regex
 livecheck.url       [lindex ${master_sites} 0]
 livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)"
