@@ -22,7 +22,7 @@ size    790060
 patchfiles              patch-ronn.diff
 
 depends_build           port:go \
-                        port:rb19-ronn
+                        port:rb-ronn
 depends_run             port:git
 
 post-patch {
