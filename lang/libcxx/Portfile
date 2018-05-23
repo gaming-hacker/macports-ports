@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               compiler_blacklist_versions 1.0
 
 name                    libcxx
@@ -36,11 +38,11 @@ distfiles               ${libcxxabi_distname}${extract.suffix} \
                         ${libcxx_distname}${extract.suffix}
 
 checksums               ${libcxxabi_distname}${extract.suffix} \
-                        rmd160  93f0cf438a5168e225e11c23a0cda6695fe3b518 \
-                        sha256  91c6d9c5426306ce28d0627d6a4448e7d164d6a3f64b01cb1d196003b16d641b \
+rmd160  93f0cf438a5168e225e11c23a0cda6695fe3b518 \
+sha256  91c6d9c5426306ce28d0627d6a4448e7d164d6a3f64b01cb1d196003b16d641b \
                         ${libcxx_distname}${extract.suffix} \
-                        rmd160  5d311ab0546181cf3084c520826786a7a9681a95 \
-                        sha256  70931a87bde9d358af6cb7869e7535ec6b015f7e6df64def6d2ecdd954040dd9
+rmd160  5d311ab0546181cf3084c520826786a7a9681a95 \
+sha256  70931a87bde9d358af6cb7869e7535ec6b015f7e6df64def6d2ecdd954040dd9
 
 if {[tbool use_cmake]} {
     revision            [expr ${revision} + 1]
@@ -48,8 +50,8 @@ if {[tbool use_cmake]} {
     distfiles-append    llvm-${version}.src${extract.suffix}
     worksrcdir          llvm-${version}.src
     checksums-append    llvm-${version}.src${extract.suffix} \
-                        rmd160  3cffa52b8842dd5858caa4cf7a998059486e462c \
-                        sha256  1ff53c915b4e761ef400b803f07261ade637b0c269d99569f18040f3dcee4408
+rmd160  3cffa52b8842dd5858caa4cf7a998059486e462c \
+sha256  1ff53c915b4e761ef400b803f07261ade637b0c269d99569f18040f3dcee4408
 
     # these are used during the build but not linked to by the resulting libraries
     depends_build-append \

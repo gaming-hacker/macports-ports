@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    GDAL is a translator library for raster geospatial \
 homepage            http://www.gdal.org/
 
 checksums           rmd160  eb822afdcffce6f0c1f3f059c37f29a95d40d7c4 \
-                    sha256  60325d2cfbcad85a5096172eb2ef45f3ad45b3199de1d48274606619de4f1cc7 \
-                    size    21378413
+sha256  60325d2cfbcad85a5096172eb2ef45f3ad45b3199de1d48274606619de4f1cc7 \
+size    21378413
 
 worksrcdir          ${worksrcpath}/gdal
 patchfiles          patch-gdalwarpkernel_opencl_h.diff \
