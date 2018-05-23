@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        ${description}
 homepage                http://plantuml.com/
 
 checksums               rmd160  48858945917cc16899e4e08f247cdbd28cd3843c \
-                        sha256  69e23ed8a8cffbfea6ea3dc5815cfbed6a8e364117eb1ed7fe5e4c5db0d4bd5c \
-                        size    4394080
+sha256  69e23ed8a8cffbfea6ea3dc5815cfbed6a8e364117eb1ed7fe5e4c5db0d4bd5c \
+size    4394080
 
 depends_build           bin:ant:apache-ant
 depends_lib             bin:java:kaffe

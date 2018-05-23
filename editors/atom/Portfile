@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    ${description}
 homepage            https://atom.io
 
 checksums           rmd160  6b8c1dbb6dded48f0b501b0b38e709a2476ee7f3 \
-                    sha256  291a6eae98bb6f22c2b6c423926a309f4e88c9a577bfb6045441b9a07c53e129 \
-                    size    9593415
+sha256  291a6eae98bb6f22c2b6c423926a309f4e88c9a577bfb6045441b9a07c53e129 \
+size    9593415
 
 patchfiles          patch-install-prefix.diff
 
