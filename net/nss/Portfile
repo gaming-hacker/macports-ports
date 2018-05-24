@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -30,8 +30,8 @@ master_sites        https://ftp.mozilla.org/pub/mozilla.org/security/nss/release
                     ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/${my_release}/src/
 
 checksums           rmd160  e0b4ac0fa2b24546176501436680194d9a1aeba6 \
-                    sha256  097b30e436479ad737b3703b25b6198b6513e202731085c6f097d8853dd20405 \
-                    size    23034142
+sha256  097b30e436479ad737b3703b25b6198b6513e202731085c6f097d8853dd20405 \
+size    23034142
 
 depends_lib     port:nspr \
                 port:zlib \

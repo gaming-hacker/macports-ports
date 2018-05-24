@@ -5,7 +5,7 @@ PortGroup               compiler_blacklist_versions 1.0
 
 name                    libcxx
 epoch                   1
-version                 6.0.0
+version                 5.0.1
 categories              lang
 platforms               darwin
 license                 MIT NCSA

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ platforms           darwin macosx
 github.setup        osmocom libosmocore dfd85137cf18243240d5f3c4300ca5b33f26e362
 version             20180524
 checksums           rmd160 81cdbb963a7dbd81c1816d18768c6185497c4f1b \
-                    sha256 ccd8f9b953a20e94289ac2358d1f23f289b0d4beabc251bd2f1d368080d174b7 \
-                    size   1011797
+sha256 ccd8f9b953a20e94289ac2358d1f23f289b0d4beabc251bd2f1d368080d174b7 \
+size   1011797
 
 depends_build-append \
     port:automake \

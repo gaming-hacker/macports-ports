@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,10 +15,10 @@ description         A configurable sidebar enabled Sphinx theme
 long_description    ${description}
 
 checksums           rmd160  028e309cdaa93308e9227ea26bf8852fed447de5 \
-                    sha256  d1ad082998f091b2fb6cee244c9733650a36daade2daea597278653b8035b42d \
-                    size    19870
+sha256  d1ad082998f091b2fb6cee244c9733650a36daade2daea597278653b8035b42d \
+size    19870
 
-python.versions     27 34 35 36
+python.versions 27 36
 
 if {$subport ne $name} {
     depends_build   port:py${python.version}-setuptools
