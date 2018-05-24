@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ if {${subport} eq ${name}} {
     # release
     github.setup    open-source-parsers jsoncpp 1.8.4
     checksums       rmd160 46ddb792a25c1ac62967adef604d760e68c084f9 \
-sha256 9c2370371a76337e4afe3128cceec943620f97d12c720c3046f39eae6f85f4cd
+                    sha256 9c2370371a76337e4afe3128cceec943620f97d12c720c3046f39eae6f85f4cd
 
     conflicts       jsoncpp-devel
 
@@ -30,11 +30,11 @@ sha256 9c2370371a76337e4afe3128cceec943620f97d12c720c3046f39eae6f85f4cd
 
     # devel
 
-    github.setup    open-source-parsers jsoncpp 768e31fc68a898d4eefa3cb45ea09df105895df7
-    version         20180513
-    checksums       rmd160 c8219c84f8a42a119ccd1ca144bad9cec8ae0e0c \
-sha256 21d7e62d59b246f54f5d3462f8079fd93d0f75545cdfb85de37b3c44e1925ad6 \
-size   201603
+    github.setup    open-source-parsers jsoncpp cfab607c0d6d4f4cab7bdde69769964c558913cb
+    version         20180522
+    checksums       rmd160 e7573b1259e672214845b9893b4a04ce5e5b5bf6 \
+                    sha256 5812171a4ee1661abfd711349d7c11115ea973d74dafcf903759f8342a107005 \
+                    size   202184
 
     conflicts       jsoncpp
     long_description ${description}: \
