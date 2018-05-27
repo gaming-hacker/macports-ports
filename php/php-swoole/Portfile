@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -17,14 +17,14 @@ if {[vercmp ${php.branch} 7] >= 0} {
     version             2.2.0
     revision            0
     checksums           rmd160  964b4fa107c8946996c0d9eccbfc783441c004e4 \
-                        sha256  04d519569e94a642ee80dd30eaa4a85b4ed54a526d488c63e384633186f29bc4 \
-                        size    853688
+sha256  04d519569e94a642ee80dd30eaa4a85b4ed54a526d488c63e384633186f29bc4 \
+size    853688
 } else {
     version             1.10.5
     revision            0
     checksums           rmd160  48b8c3bf5999e5365b3e804440464114500120ed \
-                        sha256  5c1dc0b82772ca1c352de4ddf20deeb35f06e4c5a01beba5a446d78a1f747bd2 \
-                        size    730797
+sha256  5c1dc0b82772ca1c352de4ddf20deeb35f06e4c5a01beba5a446d78a1f747bd2 \
+size    730797
 }
 
 description             an event-driven asynchronous & concurrent & coroutine networking engine with high performance for PHP

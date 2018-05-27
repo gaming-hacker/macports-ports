@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 ################################################################
 # The developer of whois is hostile toward bug reports. Do     #
@@ -31,8 +31,8 @@ master_sites                http://ftp.debian.org/debian/pool/main/w/${name}/
 use_xz                      yes
 
 checksums                   rmd160  8e7a79964f4acfd364d37f71e1f1fe6d9b1e80cd \
-                            sha256  ef4ead31306a388d9c8c83d67f56c94ed8b4c85e94f60baea2f5b1660445893e \
-                            size    82920
+sha256  ef4ead31306a388d9c8c83d67f56c94ed8b4c85e94f60baea2f5b1660445893e \
+size    82920
 
 distfiles                   ${name}_${version}${extract.suffix}
 

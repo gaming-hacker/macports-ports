@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,9 +17,9 @@ homepage            http://open-jtalk.sourceforge.net/
 master_sites        sourceforge:project/open-jtalk/Open%20JTalk/open_jtalk-${version}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  a691be8f39dc84c71cfcd1c2f9d1fd17669ccab3 \
-                    sha256  5b77ee729e546ca6a22d0b08cda0923fb4225fa782b26c2511b66cc644c14b7d \
-                    size    14950692
+rmd160  a691be8f39dc84c71cfcd1c2f9d1fd17669ccab3 \
+sha256  5b77ee729e546ca6a22d0b08cda0923fb4225fa782b26c2511b66cc644c14b7d \
+size    14950692
 
 depends_build       port:hts_engine_API
 
@@ -62,13 +62,13 @@ variant voice description {Add HTS voices and a demo script} {
                         sourceforge:project/mmdagent/MMDAgent_Example/${voice_mei}/:mei
 
     checksums-append    ${voice_nitech_dist} \
-                        rmd160  0cbb453a8af84e30f840d174cd13ed30dcd9fe7d \
-                        sha256  2e555c88482267b2931c7dbc7ecc0e3df140d6f68fc913aa4822f336c9e0adfc \
-                        size    818909 \
+rmd160  0cbb453a8af84e30f840d174cd13ed30dcd9fe7d \
+sha256  2e555c88482267b2931c7dbc7ecc0e3df140d6f68fc913aa4822f336c9e0adfc \
+size    818909 \
                         ${voice_mei_dist} \
-                        rmd160  86b5094e994b9bd2e05116a8dd159fbaadb95396 \
-                        sha256  5b560e8c23c5acaf67688e6e25788db2c0bb230aff0635b7c75a82a87c7f6dba \
-                        size    12650627
+rmd160  86b5094e994b9bd2e05116a8dd159fbaadb95396 \
+sha256  5b560e8c23c5acaf67688e6e25788db2c0bb230aff0635b7c75a82a87c7f6dba \
+size    12650627
     extract.only-delete ${voice_mei_dist}
 
     post-extract {

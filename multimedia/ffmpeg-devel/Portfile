@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcodeversion 1.0
@@ -50,8 +50,8 @@ platforms           darwin
 homepage            http://www.ffmpeg.org/
 
 checksums           rmd160  34a48e5b8219929ab506139ffc31db834bfbbe20 \
-                    sha256  34a960286e979d0e8ea7ab54e5b34992c396cced22fb28941fef48be27ed57f0 \
-                    size    12554797
+sha256  34a960286e979d0e8ea7ab54e5b34992c396cced22fb28941fef48be27ed57f0 \
+size    12554797
 
 depends_build       port:pkgconfig \
                     port:gmake \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup               github 1.0
@@ -40,13 +40,13 @@ master_sites            ${github.master_sites}:source \
                         ${github.homepage}/tarball/${userguide_commit}:userguide
 
 checksums               ${source_distfile} \
-                        rmd160  5905bed477b0812f8c3884174043fb533e0ad2cc \
-                        sha256  35b3562affe0881aaed74a2fc10c164851249373d9fd66a874c6645fe83fcbd7 \
-                        size    2783392 \
+rmd160  5905bed477b0812f8c3884174043fb533e0ad2cc \
+sha256  35b3562affe0881aaed74a2fc10c164851249373d9fd66a874c6645fe83fcbd7 \
+size    2783392 \
                         ${userguide_distfile} \
-                        rmd160  79ced0de9bfa0853d70ae1aef88020f78800652d \
-                        sha256  acf34f29905f065ef2ed81dd0a5e8da471c5c6d06225bf5ebb59cbab033ff5bb \
-                        size    722310
+rmd160  79ced0de9bfa0853d70ae1aef88020f78800652d \
+sha256  acf34f29905f065ef2ed81dd0a5e8da471c5c6d06225bf5ebb59cbab033ff5bb \
+size    722310
 
 post-extract {
     move ${workpath}/${github.author}-${github.project}-[string range ${git.branch} 0 6] ${workpath}/${distname}
