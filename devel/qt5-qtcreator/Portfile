@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -6,7 +6,7 @@ PortGroup           cxx11  1.1
 
 name                qt5-qtcreator
 
-version             4.5.0
+version             4.6.1
 #revision            0
 categories          devel aqua
 platforms           darwin
@@ -21,8 +21,9 @@ homepage            http://qt-project.org/wiki/Category:Tools::QtCreator
 distname            qt-creator-opensource-src-${version}
 master_sites        https://download.qt.io/official_releases/qtcreator/[join [lrange [split ${version} .] 0 1] .]/${version}/
 
-checksums           rmd160  5be314ead3322f1df86189a93a47ba06901a5d0d \
-sha256  1292e91a18cd1f06e29f698d50a732a37e8f6f74b1bbe2199c94f7446c37fd48
+checksums           rmd160  51481dd2be8e45f57da8e6df3bcba7053471c585 \
+                    sha256  50fb0e0bae85f2aa6027c0d18ca187afb448c33a2e5b390c20a0d2c5160d7cbe \
+                    size    30871753
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} < 12} {
@@ -185,6 +186,5 @@ subport ${name}-docs {
     }
 }
 
-livecheck.type      regex
-livecheck.url       http://www.qt.io/download-open-source/
-livecheck.regex     qt-creator-opensource-src-(\[a-z0-9.\]+)${extract.suffix}
+livecheck.url       https://download.qt.io/official_releases/qtcreator/[join [lrange [split ${version} .] 0 1] .]/
+livecheck.regex     href="(\[a-z0-9.\]+)/"
