@@ -2,6 +2,7 @@
 PortSystem	1.0
 PortGroup           cmake 1.0
 PortGroup           bitbucket 1.0
+PortGroup           cxx11 1.1
 
 bitbucket.setup     chchrsc kealib 1.4.7
 revision            1
@@ -22,7 +23,10 @@ sha256  ec38751b3b555d3a26f0c7445f2d2cd9d7c3a3502237519a206a50cb58df56ec
 depends_lib-append  port:gdal \
                     port:hdf5
 
-worksrcdir              ${worksrcdir}/trunk
+worksrcdir          ${worksrcdir}/trunk
+
+configure.cxxflags-append   -std=c++11
+configure.ldflags-append    -std=c++11
 
 configure.args-append   -DGDAL_INCLUDE_DIR=${prefix} \
                         -DGDAL_LIB_PATH=${prefix} \
