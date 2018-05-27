@@ -8,6 +8,7 @@ name                gimp2
 conflicts           gimp2-devel gimp3-devel
 # please remember to update the gimp metapackage to match
 version             2.10.2
+revision            1
 license             GPL-3+
 categories          graphics
 maintainers         {devans @dbevans}
@@ -47,7 +48,6 @@ depends_lib         port:desktop-file-utils \
                     port:gdk-pixbuf2 \
                     port:glib-networking \
                     port:gtk2 \
-                    port:gvfs \
                     port:fontconfig \
                     port:freetype \
                     port:tiff \
@@ -78,6 +78,8 @@ depends_lib         port:desktop-file-utils \
                     port:xorg-libXext \
                     port:xorg-libXfixes
 
+depends_run         port:gvfs
+
 # libgimpwidgets/gimpwidgetsmarshal.h can be referenced by a parallel
 # build before it is created
 use_parallel_build  no
@@ -90,7 +92,8 @@ compiler.blacklist-append  *gcc-3.* *gcc-4.* {clang < 700}
 
 patchfiles          patch-configure.ac.diff \
                     patch-etc-gimprc.in.diff \
-                    patch-app-widgets-gimpcriticaldialog.c.diff
+                    patch-app-widgets-gimpcriticaldialog.c.diff \
+                    patch-quartz-32bit.diff
 
 use_autoreconf      yes
 autoreconf.args     -fvi
@@ -149,6 +152,8 @@ variant quartz {
                           port:xorg-libXext \
                           port:xorg-libXfixes \
                           port:xpm
+    # gvfs does not build when gtk is installed with +quartz variant
+    depends_run-delete    port:gvfs
     depends_lib-append    port:gtk-osx-application-gtk2
     configure.args-delete --with-x \
                           --x-includes=${prefix}/include \
