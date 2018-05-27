@@ -10,7 +10,7 @@ name                ffmpeg
 conflicts           ffmpeg-devel
 epoch               1
 version             4.0
-revision            1
+revision            2
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} openmaintainer
@@ -68,7 +68,6 @@ depends_lib         port:lame \
                     port:libvorbis \
                     port:libopus \
                     port:libogg \
-                    port:librsvg \
                     port:libtheora \
                     port:libmodplug \
                     port:libass \
@@ -123,7 +122,6 @@ configure.args      --enable-swscale \
                     --enable-libmp3lame \
                     --enable-libvorbis \
                     --enable-libopus \
-                    --enable-librsvg \
                     --enable-libtheora \
                     --enable-libopenjpeg \
                     --enable-libmodplug \
@@ -319,6 +317,11 @@ variant jack description {Enable jack library and indev support} {
     depends_lib-append      port:jack
     configure.args-delete   --disable-libjack \
                             --disable-indev=jack
+}
+
+variant librsvg description {Enable librsvg support} {
+    depends_lib-append      port:librsvg
+    configure.args-append   --enable-librsvg
 }
 
 variant gpl2 description {Enable GPL code, license will be GPL-2+} {
