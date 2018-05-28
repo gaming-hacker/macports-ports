@@ -25,7 +25,8 @@ size    182232
 
 depends_lib         port:libsndfile
 
-patchfiles          patch-Makefile.osx.diff
+patchfiles          patch-Makefile.osx.diff \
+                    patch-vectorops-snowleopard.diff
 
 # error: unrecognized command line option "-mfpmath=sse"
 supported_archs     i386 x86_64
