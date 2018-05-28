@@ -9,7 +9,7 @@ license         Apache-2
 platforms       darwin
 maintainers     {ryandesign @ryandesign} openmaintainer
 
-php.branches    5.6
+php.branches 5.6 7.2
 php.pecl        yes
 
 description     Mongo Database Driver

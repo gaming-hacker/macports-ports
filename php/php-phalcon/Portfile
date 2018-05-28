@@ -9,7 +9,7 @@ platforms               darwin
 maintainers             {ryandesign @ryandesign} openmaintainer
 license                 BSD
 
-php.branches            5.6 7.2
+php.branches 5.6 7.2
 
 if {[vercmp ${php.branch} 5.5] >= 0} {
     github.setup        phalcon cphalcon 3.3.2 v
