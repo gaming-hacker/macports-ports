@@ -6,7 +6,7 @@ ruby.setup		flexmock 1.3.3 gem {} rubygems
 
 categories-append	devel
 platforms			darwin
-maintainers			{internode.on.net:arsptr @randomphrase}
+maintainers			nomaintainer
 
 description			FlexMock is a flexible mocking library for use in unit testing and behavior specification.
 long_description	FlexMock is a flexible mocking library for use in unit testing and behavior specification. \
