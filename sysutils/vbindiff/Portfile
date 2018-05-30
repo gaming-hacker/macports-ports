@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 
@@ -18,9 +18,8 @@ platforms       darwin
 license         GPL-2+
 master_sites    ${homepage}
 
-checksums       md5     bbde86b790d6a912e3ba11d6cd8b1a2a \
-sha1    cbd4651f604ad18cf8d9122b3c2719d0173218f7 \
-rmd160  1b3ae423e27a61118c72612af72905b9f8f3ba83 \
-sha256  f04da97de993caf8b068dcb57f9de5a4e7e9641dc6c47f79b60b8138259133b8
+checksums       rmd160  1b3ae423e27a61118c72612af72905b9f8f3ba83 \
+                sha256  f04da97de993caf8b068dcb57f9de5a4e7e9641dc6c47f79b60b8138259133b8 \
+                size    128406
 
 depends_lib     port:ncurses
