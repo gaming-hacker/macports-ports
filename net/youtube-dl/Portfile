@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            https://rg3.github.io/youtube-dl/
 master_sites        https://yt-dl.org/downloads/${version}
 
 checksums           rmd160  7b9dcc12884d582c8fc10bbaf4f1f6c80e297add \
-                    sha256  6f70ac76ceb0132755dbf0722c2b77a945a70f2841673f06a9a55fe4309018a1 \
-                    size    2972589
+sha256  6f70ac76ceb0132755dbf0722c2b77a945a70f2841673f06a9a55fe4309018a1 \
+size    2972589
 
 depends_build       bin:zip:zip
 

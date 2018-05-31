@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -18,10 +18,10 @@ long_description    pyre2 is a Python extension that wraps Google's RE2 regular 
                     Python's built-in re module with compatible interfaces.
 
 checksums           rmd160  89241df1d53076189327e53d0e99efa62091956d \
-                    sha256  b332f9fb53318fc8410e047e29b0a0c6952fd1c1eebf8ee06f72e2f637c909dc \
-                    size    11291
+sha256  b332f9fb53318fc8410e047e29b0a0c6952fd1c1eebf8ee06f72e2f637c909dc \
+size    11291
 
-python.versions     27
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:re2
