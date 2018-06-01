@@ -13,10 +13,11 @@ long_description \
 	be the best yacc variant available. In contrast \
 	to bison, it is written to avoid dependencies \
 	upon a particular compiler.
-homepage         http://invisible-island.net/byacc/
+homepage         https://invisible-island.net/byacc/
 platforms        darwin
 
-master_sites     ftp://ftp.invisible-island.net/byacc/
+master_sites     ftp://ftp.invisible-island.net/byacc/ \
+                 https://invisible-island.net/datafiles/release/
 extract.suffix   .tgz
 
 checksums        rmd160 7ee821fef5e840aff2e2a64fd9b414c31ba72481 \
