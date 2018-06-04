@@ -191,18 +191,8 @@ variant dbus description {Builds emacs with D-Bus support} {
 if {$subport eq "emacs-app" || $subport eq "emacs-app-devel"} {
     categories-append   aqua
 
-    if {$subport eq "emacs-app"} {
-        patchfiles-append   patch-src_emacs.c.diff
-    } elseif {$subport eq "emacs-app-devel"} {
-        patchfiles-append   patch-devel-src_emacs.c.diff
-    }
-
-    post-patch {
-        reinplace "s|__PREFIX__|${prefix}|" ${worksrcpath}/src/emacs.c
-    }
-
     configure.args-append --with-ns
-    configure.args-delete --without-x
+    configure.args-delete --without-ns --without-x
 
     universal_variant   no
 
@@ -228,12 +218,6 @@ if {$subport eq "emacs-app" || $subport eq "emacs-app-devel"} {
         # http://sakito.jp/emacs/emacs24.html
         depends_build-append port:autoconf port:automake port:libtool
         build.target        bootstrap
-    }
-
-    variant multicolor_font description {Apply multicolor font patch} {
-        # Revert "Disable multicolor fonts on OS X..."
-        # This reverts commit 9344612d3cd164317170b6189ec43175757e4231.
-        patchfiles-append   patch-enable-multicolor-fonts.diff
     }
 
     variant imagemagick description {Use ImageMagick} {
