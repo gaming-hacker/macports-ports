@@ -407,9 +407,9 @@ variant jwt description {Add JWT (Javascript Web Token) support to server using 
     set jwt_distname     ${jwt_filename}-${jwt_version}
     distfiles-append     v${jwt_version}.tar.gz:jwt_module
     checksums-append        v${jwt_version}.tar.gz \
-                            rmd160  7c87e95adcf654f2684e5ce1c932ce56b32b403c \
-                            sha256  2ff4f6ee29cfb708ce215f2f110aa360ba5823ad0355033d7ec2ec39610d5087 \
-                            size    13681
+rmd160  7c87e95adcf654f2684e5ce1c932ce56b32b403c \
+sha256  2ff4f6ee29cfb708ce215f2f110aa360ba5823ad0355033d7ec2ec39610d5087 \
+size    13681
     configure.args-append   --add-dynamic-module=${workpath}/${jwt_distname}
     depends_lib-append      port:libjwt
 }

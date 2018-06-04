@@ -58,8 +58,8 @@ distname         httpd-${version}
 use_bzip2        yes
 
 checksums        md5    e3c47076885cfb60ba08e79aba83a416 \
-                 sha1   0183866df73c7877ba9275a075a2ece7a67f6c95 \
-                 sha256 811d17169961012bf0faf10b9fe07353078eb0e0d824fc9fa0470e21c3277560
+sha1   0183866df73c7877ba9275a075a2ece7a67f6c95 \
+sha256 811d17169961012bf0faf10b9fe07353078eb0e0d824fc9fa0470e21c3277560
 
 depends_lib      port:apr0 \
                  port:apr-util0 \

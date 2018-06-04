@@ -23,8 +23,8 @@ sha256  6f70ac76ceb0132755dbf0722c2b77a945a70f2841673f06a9a55fe4309018a1 \
 size    2972589
 =======
 checksums           rmd160  47e72757e219ee7272d8503c5a9f996a19ffae9a \
-                    sha256  ffc1b49de4f61f3926d169da3e0e869eef03573757c27d3b410bf65674999de7 \
-                    size    2967612
+sha256  ffc1b49de4f61f3926d169da3e0e869eef03573757c27d3b410bf65674999de7 \
+size    2967612
 >>>>>>> master
 
 depends_build       bin:zip:zip

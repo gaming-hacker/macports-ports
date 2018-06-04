@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -53,8 +53,8 @@ homepage            https://www.gnu.org/software/bison
 master_sites        gnu
 use_xz              yes
 checksums           rmd160  f13012d77dfddc8c5ed0c717f9006049ae17b8af \
-                    sha256  075cef2e814642e30e10e8155e93022e4a91ca38a65aa1d5467d4e969f97f338 \
-                    size    1954868
+sha256  075cef2e814642e30e10e8155e93022e4a91ca38a65aa1d5467d4e969f97f338 \
+size    1954868
 
 configure.args      --disable-silent-rules
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            ${name}_mac64
 use_zip             yes
 
 checksums           rmd160  63179c3f4417f562b943b06f6739115dfe37a521 \
-                    sha256  8a98819f27b12db041268fa12201dcd3d4683c8cf0f5e91dc69e7c8001b0100c \
-                    size    5653388
+sha256  8a98819f27b12db041268fa12201dcd3d4683c8cf0f5e91dc69e7c8001b0100c \
+size    5653388
 
 extract.mkdir       yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,8 +25,8 @@ patchfiles          patch-python-mp.diff
 distname            libSBML-${version}-Source
 
 checksums           rmd160  67f35b4b5eaf049c34e53ddc22fac1cbf449c86f \
-                    sha256  d2160c06c8b5f849913165c468a87b23960c24cf6f6309e9c0022cd86d2f7ee4 \
-                    size    17257347
+sha256  d2160c06c8b5f849913165c468a87b23960c24cf6f6309e9c0022cd86d2f7ee4 \
+size    17257347
 
 depends_lib-append  port:bzip2 \
                     port:zlib \
