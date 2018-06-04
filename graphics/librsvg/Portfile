@@ -39,6 +39,10 @@ depends_lib         path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:vala \
                     port:cargo
 
+license_noconflict  gobject-introspection \
+                    rust \
+                    vala
+
 set pyversion 2.7
 depends_run         port:python[join [split ${pyversion} "."] ""]
 

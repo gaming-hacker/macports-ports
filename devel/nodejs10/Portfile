@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
 
 name                    nodejs10
-version                 10.1.0
+version                 10.3.0
 
 categories              devel net
 platforms               darwin
@@ -14,9 +14,9 @@ maintainers             {ciserlohn @ci42}
 description             Evented I/O for V8 JavaScript
 
 long_description        Node's goal is to provide an easy way to build scalable network programs in JavaScript. \
-Node is similar in design to and influenced by systems like Ruby's Event \
- Machine or Python's Twisted. Node takes the event model a bit further-it \
-presents the event loop as a language construct instead of as a library.
+                        Node is similar in design to and influenced by systems like Ruby's Event \
+                        Machine or Python's Twisted. Node takes the event model a bit further-it \
+                        presents the event loop as a language construct instead of as a library.
 
 conflicts               nodejs4 nodejs5 nodejs6 nodejs7 nodejs8 nodejs9
 
@@ -24,15 +24,15 @@ homepage                http://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums  rmd160  0017e7323c2b55e4a1769e04db1276f47354e3ff \
-sha256  a6671055b4085795f5427f42349eae14c5dfe7692c923dffb7635b9f62cc7902
+checksums               rmd160  6d193924289326c1a5e68d9ac2a4282327c12e3f \
+                        sha256  cb90e9bde8e655eeb152ebdbe1b72e7d2443e3ae2d5f9ac4acd69e7c22671f31 \
 
 distname                node-v${version}
 
 depends_build           port:pkgconfig
 
 depends_lib             port:python27
-#                         path:lib/libssl.dylib:openssl
+#                        path:lib/libssl.dylib:openssl
 
 proc rec_glob {basedir pattern} {
     set files [glob -directory $basedir -nocomplain -type f $pattern]
@@ -44,8 +44,7 @@ proc rec_glob {basedir pattern} {
 
 configure.python ${prefix}/bin/python2.7
 
-patchfiles              patch-common.gypi.diff \
-                        patch-tools-gyp-pylib-gyp-generator-make.py.diff
+patchfiles              patch-common.gypi.diff
 
 post-patch {
     foreach f [concat ${worksrcpath}/configure \
@@ -65,9 +64,9 @@ post-patch {
 
 configure.args-append   --without-npm
 configure.args-append   --with-intl=small-icu
-# configure.args-append   --shared-openssl
-# configure.args-append   --shared-openssl-includes=${prefix}/include/openssl
-# configure.args-append   --shared-openssl-libpath=${prefix}/lib
+#configure.args-append   --shared-openssl
+#configure.args-append   --shared-openssl-includes=${prefix}/include/openssl
+#configure.args-append   --shared-openssl-libpath=${prefix}/lib
 
 # V8 only supports ARM and IA-32 processors
 supported_archs         i386 x86_64
@@ -79,7 +78,7 @@ configure.ccache        no
 
 test.run                yes
 
-use_parallel_build      yes
+use_parallel_build      no
 
 switch $build_arch {
     i386 {
@@ -116,12 +115,12 @@ destroot {
     xinstall -d ${docdir}
 
 # install binaries
-    xinstall -m 0755 -W ${worksrcpath} \
+    xinstall -m 755 -W ${worksrcpath} \
         out/Release/node \
         ${bindir}
 
 # install headers
-    xinstall -m 0644 -W ${worksrcpath} \
+    xinstall -m 644 -W ${worksrcpath} \
         src/env-inl.h \
         src/env.h \
         src/handle_wrap.h \
