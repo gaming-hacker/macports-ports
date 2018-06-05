@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             MIT
 supported_archs     i386 x86_64
 
-python.versions     26 27 33 34 35 36
+python.versions 27 36
 
 maintainers         stromnov openmaintainer
 
@@ -27,8 +27,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  d9be5eef5cfc7450c27be037c359712887e94a00 \
-                    sha256  5eeec334778cbad059b54fc468b0690db6794fe12a1dada7b70924d1c9ffbeac \
-                    size    4597499
+sha256  5eeec334778cbad059b54fc468b0690db6794fe12a1dada7b70924d1c9ffbeac \
+size    4597499
 
 if {${name} ne ${subport}} {
     depends_build-append \
