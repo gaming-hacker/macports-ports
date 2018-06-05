@@ -12,7 +12,7 @@ size    2304146
 
 categories          science
 license             GPL-3
-maintainers         cal openmaintainer
+maintainers         {cal @neverpanic} openmaintainer
 platforms           darwin
 description         Hyperspectral Image Visualization & Analysis Framework
 long_description    \

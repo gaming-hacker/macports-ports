@@ -20,3 +20,5 @@ size    3326827
 
 depends_build           port:gengetopt port:help2man port:pkgconfig
 depends_lib             port:openssl
+
+configure.args          --disable-silent-rules

@@ -11,7 +11,7 @@ sha256  2745472970e81e390d250374fcfb0a1e96544f549c8b1edad9145aa42dfab858
 
 epoch           1
 categories      editors aqua
-maintainers     cal openmaintainer
+maintainers     {cal @neverpanic} openmaintainer
 license         BSD
 
 long_description \n\

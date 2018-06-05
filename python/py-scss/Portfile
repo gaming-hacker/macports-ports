@@ -10,7 +10,7 @@ sha256  56fdd2155b654ce87dcfa173f1806a0dbae68687c942bc82aa08019e00b79d12
 name                py-scss
 license             MIT
 categories-append   www devel
-maintainers         cal openmaintainer
+maintainers         {cal @neverpanic} openmaintainer
 
 description         SCSS compiler for Python
 long_description \

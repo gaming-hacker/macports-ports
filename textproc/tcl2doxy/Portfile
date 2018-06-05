@@ -10,7 +10,7 @@ sha256  f230d9099941b3cc907313df9af1b87674ec09a823654a57c1d7548331c596f5
 categories          textproc
 platforms           darwin
 license             BSD
-maintainers         cal openmaintainer
+maintainers         {cal @neverpanic} openmaintainer
 supported_archs     noarch
 
 description         \

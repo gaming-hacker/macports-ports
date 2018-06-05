@@ -9,7 +9,7 @@ sha256  7a8fd50e0bd46c8705aa4e0fcbc36d01d528cc92a96d71e1c00e1fb2e6484db2
 
 categories          tex print
 platforms           darwin
-maintainers         cal openmaintainer
+maintainers         {cal @neverpanic} openmaintainer
 supported_archs     noarch
 license             GPL-2+
 

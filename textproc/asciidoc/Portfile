@@ -10,7 +10,7 @@ rmd160  f19936593e3bed2755d77d38dd78a4769f77c7fa
 
 categories          textproc
 license             GPL-2+
-maintainers         cal openmaintainer
+maintainers         {cal @neverpanic} openmaintainer
 description         Formatter/translator for text files to numerous formats
 long_description \
     AsciiDoc is a text document format for writing short documents, \
