@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  active_variants 1.1
@@ -41,8 +41,8 @@ if {$subport eq $name || $subport eq "emacs-app"} {
     revision        0
 
     checksums       rmd160  f13fe104345738c853bcce2e3e061dbfb8692bc5 \
-                    sha256  760382d5e8cdc5d0d079e8f754bce1136fbe1473be24bb885669b0e38fc56aa3 \
-                    size    65007481
+sha256  760382d5e8cdc5d0d079e8f754bce1136fbe1473be24bb885669b0e38fc56aa3 \
+size    65007481
 
     # our dbus is autolaunched by launchd, so disable the check that it's running
     patchfiles      patch-src_dbusbind.c.diff \
