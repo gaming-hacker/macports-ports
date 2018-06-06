@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
 name                yubikey-manager
-github.setup        Yubico yubikey-manager 0.6.0 yubikey-manager-
+github.setup        Yubico yubikey-manager 0.7.0 yubikey-manager-
 categories          security python
 platforms           darwin
 license             BSD
@@ -16,10 +16,11 @@ long_description    ${description}
 
 homepage            https://developers.yubico.com/yubikey-manager/
 
-checksums           rmd160  f4a621975f73ed2ec22f95e5813c5307b269dd6f \
-sha256  2a14d0f648f323bfcf97076908d2cb8d7070effb5ff4c8222c44cd687e9c0262
+checksums           rmd160  ecc8dce9bc431f48c06af25d709f11981e5b4da2 \
+                    sha256  cce5851801d5c34a23ba667c1ab6855410e2036b5488650d9ea1cf5130133478 \
+                    size    91905
 
-python.default_version 27
+python.default_version 36
 
 depends_build-append \
     port:py${python.version}-setuptools
@@ -31,7 +32,7 @@ depends_lib-append \
     port:py${python.version}-click \
     port:py${python.version}-cryptography \
     port:py${python.version}-openssl \
-    port:py${python.version}-enum34
+    port:py${python.version}-fido2
 
 depends_run-append \
     port:ykpers \
