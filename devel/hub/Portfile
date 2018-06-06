@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    \
 homepage            https://hub.github.com/
 
 checksums           rmd160  4e2eeff2123dba624d2f1a57267d3afcdafcf4ca \
-                    sha256  a9380cf0cb098cd1ca61bdef5e6f548396b0c86ea5a8a47b538d96cd1e667a4d \
-                    size    979159
+sha256  a9380cf0cb098cd1ca61bdef5e6f548396b0c86ea5a8a47b538d96cd1e667a4d \
+size    979159
 
 depends_build-append \
                     port:go

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -21,8 +21,8 @@ long_description    ${description} \
 homepage            http://threadingbuildingblocks.org/
 
 checksums           rmd160  81980d3913f8a81723cc2782c89e0c5c473171d4 \
-                    sha256  457f507e0b8eabd1d86560b119bc0c7f66b31aacc73667a7766eca550fee5462 \
-                    size    2917546
+sha256  457f507e0b8eabd1d86560b119bc0c7f66b31aacc73667a7766eca550fee5462 \
+size    2917546
 
 use_configure       no
 
