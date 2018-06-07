@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 set real_name       acme
 name                py-${real_name}
-version             0.24.0
+version             0.25.0
 worksrcdir          ${real_name}-${version}
 distfiles           ${real_name}-${version}${extract.suffix}
 categories-append   security
@@ -17,10 +17,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/acme
 master_sites        pypi:a/acme
 
-python.versions 27 36
+python.versions     27
 
-checksums           rmd160  288d439a94d473b06a9bfc5b18f3c9fe175d3bd6 \
-sha256  d655e0627c0830114ab3f6732d8bf2f4a2c36f602e0cde10988684e229b501cb
+checksums           rmd160  3346d41fe2f2529f1362ea0b649d015928c397a7 \
+                    sha256  78c72b37d9ebc16ceb21df7f6b1037e80297abd61d0555c9d11f219a7118cef2 \
+                    size    82481
 
 if {${name} ne ${subport}} {
     depends_build-append \
