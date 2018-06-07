@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,7 +25,7 @@ distname            ${name}-${version_date}
 extract.suffix      .tgz
 
 checksums           rmd160  401bf437eb02175a90a7c1de198c69dd2c2230ff \
-                    sha256  aa36bb397ff717f09773fcaa80ba8b7c68a5b3b10c859d686c4daeb6518b6318
+sha256  aa36bb397ff717f09773fcaa80ba8b7c68a5b3b10c859d686c4daeb6518b6318
 
 test.run            yes
 test.target         bigcheck

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/certbot-apache
 master_sites        pypi:c/certbot-apache
 
-python.versions     27
+python.versions 27 36
 
 checksums           rmd160  42b882d74cd9db6207b71251fc427e4947c4cded \
-                    sha256  ca660d10e1945a78e0a00fd2be330be5acef97f215d3b03cb72cb0a996d63a64 \
-                    size    161178
+sha256  ca660d10e1945a78e0a00fd2be330be5acef97f215d3b03cb72cb0a996d63a64 \
+size    161178
 
 depends_lib-append  port:certbot \
                     port:py${python.version}-acme \
