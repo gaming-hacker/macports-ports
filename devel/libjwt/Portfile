@@ -4,6 +4,10 @@
 # This Port will be updated as soon as the 'ngx-http-auth-jwt-module' project (https://github.com/TeslaGov/ngx-http-auth-jwt-module)
 # officially supports 1.9.
 
+# Please do not update this Port to version 1.9 of libjwt.  1.8 is presently a dependency for the 'jwt' variant of the nginx port.
+# This Port will be updated as soon as the 'ngx-http-auth-jwt-module' project (https://github.com/TeslaGov/ngx-http-auth-jwt-module)
+# officially supports 1.9.
+
 PortSystem          1.0
 PortGroup           github 1.0
 
