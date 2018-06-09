@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               perl5 1.0
@@ -24,8 +24,8 @@ long_description        This is net-snmp, a derivative of CMU's SNMP \
                         command using SNMP, a Tk/perl MIB browser.
 
 checksums               rmd160  c5cf54d5723ee417e07f1f9fa3936aef505104a2 \
-                        sha256  12ef89613c7707dc96d13335f153c1921efc9d61d3708ef09f3fc4a7014fb4f0 \
-                        size    6382428
+sha256  12ef89613c7707dc96d13335f153c1921efc9d61d3708ef09f3fc4a7014fb4f0 \
+size    6382428
 
 perl5.branches          5.26
 

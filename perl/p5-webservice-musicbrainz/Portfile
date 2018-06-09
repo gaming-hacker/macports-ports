@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -24,8 +24,8 @@ long_description    \
     (https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2).
 
 checksums           rmd160  807198e39be094ae56a9af85d734fc0db8b4b72b \
-                    sha256  6ac02bbccf2801552131083982edc2a26338bcd47a8edacb3cda4ca9641f5fa0 \
-                    size    9937
+sha256  6ac02bbccf2801552131083982edc2a26338bcd47a8edacb3cda4ca9641f5fa0 \
+size    9937
 
 if {${perl5.major} != ""} {
     depends_lib-append \

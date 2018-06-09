@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            http://www.pstoedit.net/
 master_sites        sourceforge:project/pstoedit/pstoedit/${version}
 
 checksums           rmd160  a031f60c395aea11dd98dd32f9c81b5de9efe69b \
-                    sha256  ad31d13bf4dd1b9e2590dccdbe9e4abe74727aaa16376be85cd5d854f79bf290 \
-                    size    1276849
+sha256  ad31d13bf4dd1b9e2590dccdbe9e4abe74727aaa16376be85cd5d854f79bf290 \
+size    1276849
 
 depends_build       port:pkgconfig \
                     port:texlive-bin-extra
