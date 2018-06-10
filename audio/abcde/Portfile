@@ -1,10 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               perl5 1.0
 
 name                    abcde
 version                 2.9.1
+revision                1
 categories              audio
 platforms               darwin
 maintainers             eclipsed.net:gr openmaintainer
@@ -21,8 +22,8 @@ homepage                https://abcde.einval.com/
 master_sites            ${homepage}download/
 
 checksums               rmd160  f3a2d81e3d3454221cd88c4bbebb56dc0c7a260b \
-sha256  70ec6e06b791115fbe88dee313f58f691f9b559ee992f2af5ed64fe6ad2e55d7 \
-size    159563
+                        sha256  70ec6e06b791115fbe88dee313f58f691f9b559ee992f2af5ed64fe6ad2e55d7 \
+                        size    159563
 
 perl5.branches          5.26
 
@@ -33,9 +34,9 @@ depends_lib             port:vorbis-tools \
                         port:cdparanoia \
                         port:id3v2 \
                         port:normalize \
-                        port:p5-digest-sha \
-                        port:p5-musicbrainz-discid \
-                        port:p5-webservice-musicbrainz
+                        port:p${perl5.major}-digest-sha \
+                        port:p${perl5.major}-musicbrainz-discid \
+                        port:p${perl5.major}-webservice-musicbrainz
 
 patchfiles              patch-Makefile-fixpaths.diff
 
