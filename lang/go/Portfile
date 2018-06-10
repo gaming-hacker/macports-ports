@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ distfiles           ${name}${version}.src.tar.gz
 worksrcdir          ${name}
 
 checksums           rmd160  e006f8c2b654e3161ed99420fda79ec2ec3052f5 \
-                    sha256  567b1cc66c9704d1c019c50bef946272e911ec6baf244310f87f4e678be155f2 \
-                    size    18323736
+sha256  567b1cc66c9704d1c019c50bef946272e911ec6baf244310f87f4e678be155f2 \
+size    18323736
 
 depends_build       port:go-1.4
 
