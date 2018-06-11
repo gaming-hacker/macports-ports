@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -9,27 +9,27 @@ platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             Apache-2
 
-php.branches 5.6 7.2
+php.branches        5.3 5.4 5.5 5.6 7.0 7.1 7.2
 php.pecl            yes
 
 if {[vercmp ${php.branch} 5.5] >= 0} {
-    version         1.4.3
+    version         1.4.4
     revision        0
-    checksums       rmd160  a6f890be3ec6e0b5598d167aa5e0f1c53a1ecadb \
-sha256  633485d2dd3f608143d0716f7ebf352a32d94b16eb7947a2bb851b29bad3e912 \
-size    1042883
+    checksums       rmd160  2a33990f648422f63e08651f5158949cb128e55a \
+                    sha256  13acc8dbc08ecb18689e021f89f74ec3a99fe2298322bba8a230f9f516c1b9eb \
+                    size    1043458
 } elseif {[vercmp ${php.branch} 5.4] >= 0} {
     version         1.2.11
     revision        0
     checksums       rmd160  dc35e448324877d8c56be9c6bb1a3f8fa8b9ccc7 \
-sha256  bac347be2277dd64b1b6f414234a6057eccf2d208409ce60973107a41267df49 \
-size    786669
+                    sha256  bac347be2277dd64b1b6f414234a6057eccf2d208409ce60973107a41267df49 \
+                    size    786669
 } else {
     version         1.1.0
     revision        0
     checksums       rmd160  63ac89588ee5912177fdb73b959b86d6dab8596e \
-sha256  33b92909c2f9584d8c6cfd0bd0438092f0d09a019241ef100813203620612b71 \
-size    630585
+                    sha256  33b92909c2f9584d8c6cfd0bd0438092f0d09a019241ef100813203620612b71 \
+                    size    630585
 }
 
 description         MongoDB Database Driver
