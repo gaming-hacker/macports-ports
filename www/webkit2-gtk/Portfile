@@ -12,7 +12,7 @@ PortGroup           cxx11 1.1
 
 name                webkit2-gtk
 conflicts           webkit2-gtk-devel
-version             2.18.0
+version             2.20.3
 description         Apple's WebKit2 HTML rendering library for GTK+3
 long_description    ${description}
 maintainers         {jeremyhu @jeremyhu} {devans @dbevans}
@@ -27,8 +27,9 @@ distname            webkitgtk-${version}
 
 dist_subdir         webkit-gtk
 
-checksums           rmd160  786ffab37419fb68f83b20059fca98fd9fdf6cc1 \
-                    sha256  b583e46a3de36a3e80ba33b084ead60512a2046aca01ff61e50e519436e5038d
+checksums           rmd160  6bc2c007fe00f696c6014d72137280835c117765 \
+                    sha256  579b307d78fa16a73f112790178022166d7ad17d4147492ced9b9fba48f20dd8 \
+                    size    16623456
 
 # don't overwrite build dependencies provided by cmake portgroup
 depends_build-append \
@@ -65,21 +66,20 @@ depends_lib         port:atk \
                     port:libxslt \
                     port:sqlite3 \
                     port:webp \
+                    port:woff2 \
                     port:zlib
 
 # PR-152650-2.patch: WIP to re-enable gtk-doc support
 # PR-153138.patch: https://bugs.webkit.org/show_bug.cgi?id=153138
 # PR-157554.patch: https://bugs.webkit.org/show_bug.cgi?id=157554
 # PR-157574.patch: https://bugs.webkit.org/show_bug.cgi?id=157574
-# PR-176870.patch: https://bugs.webkit.org/show_bug.cgi?id=176870 (already landed in trunk)
+# patch-disable-mach-exceptions.diff no longer needed after https://github.com/WebKit/webkit/commit/ebd290d9fba427a15c6fd8227e022fbc72cc8765
+# patch-fix-include-path.diff seems no longer necessary after https://github.com/WebKit/webkit/commit/1f8841aad73175256656a31d7d43fff1e069ba73
 patchfiles-append \
     PR-152650-2.patch \
     PR-153138.patch \
     PR-157574.patch \
-    PR-176870.patch \
-    patch-disable-mach-exceptions.diff \
-    patch-bundle-link-webcore.diff \
-    patch-fix-include-path.diff
+    patch-bundle-link-webcore.diff
     
 # Source/WTF/wtf/RAMSize.cpp has changed, and the Darwin parts were
 # stripped out. Replace it with the previous version
@@ -125,15 +125,15 @@ post-configure {
 
     # https://bugs.webkit.org/show_bug.cgi?id=153176
     reinplace {s|\.\./\.\./lib/libWTFGTK\.a||} \
-        ${build.dir}/Source/WebKit/CMakeFiles/WebKit2.dir/link.txt
-    reinplace {s|\.\./\.\./lib/libbmalloc\.a||} \
+        ${build.dir}/Source/WebKit/CMakeFiles/WebKit.dir/link.txt
+    # reinplace {s|\.\./\.\./lib/libbmalloc\.a||} \
         ${build.dir}/Source/JavaScriptCore/CMakeFiles/JavaScriptCore.dir/link.txt
     # DatabaseProcess is renamed to StorageProcess
     # https://bugs.webkit.org/show_bug.cgi?id=174879
+    # testb3 is enabled in developer mode only after https://github.com/WebKit/webkit/commit/e276ecde58923cb70dcfbc52544c6b81b661dac4
     reinplace {s|[\./]*\.\./lib/lib[^\.]*\.a||g} \
         ${build.dir}/Source/JavaScriptCore/CMakeFiles/LLIntOffsetsExtractor.dir/link.txt \
         ${build.dir}/Source/JavaScriptCore/shell/CMakeFiles/jsc.dir/link.txt \
-        ${build.dir}/Source/JavaScriptCore/shell/CMakeFiles/testb3.dir/link.txt \
         ${build.dir}/Source/WebKit/CMakeFiles/StorageProcess.dir/link.txt \
         ${build.dir}/Source/WebKit/CMakeFiles/NetworkProcess.dir/link.txt \
         ${build.dir}/Source/WebKit/CMakeFiles/webkit2gtkinjectedbundle.dir/link.txt \
