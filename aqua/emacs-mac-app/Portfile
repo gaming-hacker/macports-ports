@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           bitbucket 1.0
@@ -22,8 +22,8 @@ platforms           darwin
 license             GPL-3+
 
 checksums           rmd160  d4dcd1b65869690b0272f036470339cf42443e43 \
-                    sha256  5d6607b4321b4030e53538dcead66315ad63f0ae6bc1ce29f5797e1c952b67a2 \
-                    size    41586056
+sha256  5d6607b4321b4030e53538dcead66315ad63f0ae6bc1ce29f5797e1c952b67a2 \
+size    41586056
 
 depends_lib         port:ncurses \
                     port:libxml2 \

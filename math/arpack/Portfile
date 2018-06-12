@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -20,8 +20,8 @@ long_description    ARPACK is a collection of Fortran77 subroutines designed to 
 worksrcdir          ${name}-ng-${version}
 
 checksums           rmd160  be1bce05e52aa0387d6cd29d265a9fcab60f2ba5 \
-                    sha256  e8fa6ae6fb1157065e892a65d7879cdd7ddfcae1df3020a4b9b6652914bfb18a \
-                    size    984817
+sha256  e8fa6ae6fb1157065e892a65d7879cdd7ddfcae1df3020a4b9b6652914bfb18a \
+size    984817
 
 mpi.setup           require_fortran
 

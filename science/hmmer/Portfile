@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                hmmer
 version             3.2
@@ -19,10 +21,10 @@ homepage            http://hmmer.org/
 platforms           darwin
 master_sites        http://eddylab.org/software/hmmer/
 checksums           md5     1ea32beceb662a3715b3d5162ea7edad \
-                    sha1    cf5c385e1a9840210e7ee49ea549215060b621f6 \
-                    rmd160  781a8bcf80ca827991e377073d1fed140e73d2e1 \
-                    sha256  9af6eb81470f61d76db703040e9ce59539314590d6df4e65cc0611b6f9267a44 \
-                    size    7669162
+sha1    cf5c385e1a9840210e7ee49ea549215060b621f6 \
+rmd160  781a8bcf80ca827991e377073d1fed140e73d2e1 \
+sha256  9af6eb81470f61d76db703040e9ce59539314590d6df4e65cc0611b6f9267a44 \
+size    7669162
 
 livecheck.type      regex
 livecheck.url       ${homepage}/download.html

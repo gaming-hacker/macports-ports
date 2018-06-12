@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem                  1.0
 PortGroup                   github 1.0
 PortGroup                   cmake 1.1
@@ -18,8 +18,8 @@ long_description            RESTinio is a header-only C++14 library that gives y
                             HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                             primarily for asynchronous processing of HTTP-requests.
 checksums                   rmd160  4c774beb80732e3c9addb408f845b2a40a5e2d42 \
-                            sha256  a36bcb45e188253f5841e455cdb95e7eb1c9e4f884c744a4a8fb74f197c903ef \
-                            size    429217
+sha256  a36bcb45e188253f5841e455cdb95e7eb1c9e4f884c744a4a8fb74f197c903ef \
+size    429217
 homepage                    https://stiffstream.com/en/products/restinio.html
 
 patchfiles                  patch-CMakeLists.txt.diff \

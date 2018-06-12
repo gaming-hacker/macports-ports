@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ categories-append   science
 platforms           darwin
 license             BSD
 
-python.versions     27 34 35 36
+python.versions 27 36
 
 maintainers         {mmoll @mamoll} openmaintainer
 
@@ -26,8 +26,8 @@ master_sites        pypi:t/tables/ \
                     http://sourceforge.net/projects/pytables/files/pytables/${version}
 
 checksums           rmd160  13463f4273584a3d43e9e6641cebf504db30682e \
-                    sha256  b6aafe47154e2140c0a91bb38ebdb6ba67a24dd86263f1c294af8c11cb7deed4 \
-                    size    4624822
+sha256  b6aafe47154e2140c0a91bb38ebdb6ba67a24dd86263f1c294af8c11cb7deed4 \
+size    4624822
 
 distname            ${realname}-${version}
 
