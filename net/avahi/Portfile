@@ -92,16 +92,16 @@ configure.cppflags-append   -L${prefix}/lib -D__APPLE_USE_RFC_2292
 set daemon_uniquename   org.freedesktop.avahi-daemon
 set dnsconfd_uniquename org.freedesktop.avahi-dnsconfd
 
-startupitem.type    launchd
-startupitem.create  no
-startupitems        name        avahi-daemon \
-                    location    LaunchDaemons \
-                    uniquename  ${daemon_uniquename} \
-                    plist       ${daemon_uniquename}.plist \
-                    name        avahi-dnsconfd \
-                    location    LaunchDaemons \
-                    uniquename  ${dnsconfd_uniquename} \
-                    plist       ${dnsconfd_uniquename}.plist
+# startupitem.type    launchd
+# startupitem.create  no
+# startupitems        name        avahi-daemon \
+#                     location    LaunchDaemons \
+#                     uniquename  ${daemon_uniquename} \
+#                     plist       ${daemon_uniquename}.plist \
+#                     name        avahi-dnsconfd \
+#                     location    LaunchDaemons \
+#                     uniquename  ${dnsconfd_uniquename} \
+#                     plist       ${dnsconfd_uniquename}.plist
 
 post-destroot {
     foreach uniquename "${daemon_uniquename} ${dnsconfd_uniquename}" {
