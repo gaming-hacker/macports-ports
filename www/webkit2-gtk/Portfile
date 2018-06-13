@@ -79,7 +79,9 @@ patchfiles-append \
     PR-152650-2.patch \
     PR-153138.patch \
     PR-157574.patch \
-    patch-bundle-link-webcore.diff
+    patch-bundle-link-webcore.diff \
+    patch-enable-plugin-architecture-unix.diff \
+    patch-name-conflicts.diff
     
 # Source/WTF/wtf/RAMSize.cpp has changed, and the Darwin parts were
 # stripped out. Replace it with the previous version
