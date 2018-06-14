@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,11 +17,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/acme
 master_sites        pypi:a/acme
 
-python.versions     27 36
+python.versions 27 36
 
 checksums           rmd160  1be55e9b1fe2e1173b7c2eb80f9ed597a285c813 \
-                    sha256  47b5f3f73d69b7b1d13f918aa2cd75a8093069a68becf4af38e428e4613b2734 \
-                    size    79987
+sha256  47b5f3f73d69b7b1d13f918aa2cd75a8093069a68becf4af38e428e4613b2734 \
+size    79987
 
 if {${name} ne ${subport}} {
     depends_build-append \

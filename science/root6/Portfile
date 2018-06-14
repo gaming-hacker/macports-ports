@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ livecheck.version   6-14-00
 set version_major   [lindex [split ${version} .] 0]
 
 checksums           rmd160  21bc1ba4ee5009c2360bce2ff51d711639e1800a \
-                    sha256  76caa9ca40e9f1e04940e6f53451c34cf6ab6b1cc5acc7d4af6ca1c6ddb08a21 \
-                    size    162466807
+sha256  76caa9ca40e9f1e04940e6f53451c34cf6ab6b1cc5acc7d4af6ca1c6ddb08a21 \
+size    162466807
 
 name                root${version_major}
 categories          science

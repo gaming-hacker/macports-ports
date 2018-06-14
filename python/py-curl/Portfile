@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,11 +19,11 @@ homepage            http://pycurl.io/
 master_sites        https://dl.bintray.com/pycurl/pycurl
 distname            pycurl-${version}
 checksums           md5     89311d1b3bb42a5dbb88609fdbdee6de \
-                    rmd160  d6f40fc0f1e3f69bead2c2b9daf71a7195635f2c \
-                    sha256  0f0cdfc7a92d4f2a5c44226162434e34f7d6967d3af416a6f1448649c09a25a4 \
-                    size    214212
+rmd160  d6f40fc0f1e3f69bead2c2b9daf71a7195635f2c \
+sha256  0f0cdfc7a92d4f2a5c44226162434e34f7d6967d3af416a6f1448649c09a25a4 \
+size    214212
 
-python.versions     27 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_test-append \

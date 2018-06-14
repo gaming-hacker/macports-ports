@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # Based on Portfile for kde-cmake-extra-modules
 
@@ -29,8 +29,8 @@ if {${subport} eq "${name}-devel"} {
     use_xz          yes
 
     checksums       rmd160  5525340b79b1d8f477258adad392ad680a0d7358 \
-                    sha256  2627faa0186e9b463d978e842bf6df1e7d27e7e9d487793f6709e82a1c0729a8 \
-                    size    586888
+sha256  2627faa0186e9b463d978e842bf6df1e7d27e7e9d487793f6709e82a1c0729a8 \
+size    586888
 }
 
 categories          kde kf5 devel

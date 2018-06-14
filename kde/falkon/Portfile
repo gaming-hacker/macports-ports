@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 universal_variant   no
@@ -29,8 +29,8 @@ distname            ${name}-${version}
 use_xz              yes
 
 checksums           rmd160  b08e743b5fee34bde105b11cceecb8cf24aa5e39 \
-                    sha256  7b6ed54986543dd5462602943fb824df12f15d2061996310c4c4b891433f1a83 \
-                    size    2219444
+sha256  7b6ed54986543dd5462602943fb824df12f15d2061996310c4c4b891433f1a83 \
+size    2219444
 
 qt5.depends_build_component     qttools
 qt5.depends_component           qtwebengine

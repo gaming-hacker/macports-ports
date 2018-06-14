@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -25,8 +25,8 @@ if {${subport} eq "${name}-devel"} {
     use_xz          yes
 
     checksums       rmd160  0e88ac8fa8461da338aa79d1c71b0cef3a971c58 \
-                    sha256  976d8bd15a0b929376bfaef34602a0fb9614229851c46fac3c4b28938f682195 \
-                    size    317188
+sha256  976d8bd15a0b929376bfaef34602a0fb9614229851c46fac3c4b28938f682195 \
+size    317188
 }
 
 supported_archs     noarch
