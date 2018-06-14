@@ -11,9 +11,11 @@ set kf5.branch      5.47
 
 if {${subport} eq "${name}-devel"} {
     fetch.type      git
-    git.url         https://anongit.kde.org/extra-cmake-modules.git
-    git.branch      404cf4056ed6986406f90847687f9427d568d141
-    version         5.47.0
+    git.url         git://anongit.kde.org/extra-cmake-modules
+#    v5.47.0-3-g06fa81a
+    git.branch      06fa81af7f2e4fc12871426a7a493116883378b4
+    version         5.47.3
+    distname        ECM-5.1x.git
 } else {
     version         ${kf5.branch}.0
     set branch      [join [lrange [split ${version} .] 0 1] .]
@@ -38,7 +40,7 @@ long_description    Extra CMake Modules, or ECM, aims to augment CMake with addi
                     they are moved upstream to CMake and a place for modules that, for \
                     whatever reason, are not a good fit for CMake itself.
 platforms           darwin
-homepage            https://projects.kde.org/projects/kdesupport/${ECM}
+homepage            http://projects.kde.org/projects/kdesupport/${ECM}
 
 patchfiles-append   patch-BUNDLEDIR.diff
 
@@ -87,9 +89,6 @@ if {[variant_isset docs]} {
     }
 }
 
-# FIXME: this livecheck is only going to work for the current x.yy branch
-# (new branches have been published about once a month)
-# Would it be better to look for latest git 'vx.yy' tag?
 livecheck.type      regex
-livecheck.url       https://download.kde.org/stable/frameworks/${kf5.branch}
+livecheck.url       http://download.kde.org/stable/frameworks/${kf5.branch}
 livecheck.regex     ${ECM}-(5+(\\.\\d+)+)
