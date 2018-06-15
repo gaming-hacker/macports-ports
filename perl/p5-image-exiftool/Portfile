@@ -5,6 +5,8 @@ PortGroup           perl5 1.0
 
 perl5.branches      5.26
 perl5.setup         Image-ExifTool 11.00
+perl5.link_binaries_suffix
+revision            1
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 platforms           darwin
