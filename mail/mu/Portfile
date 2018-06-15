@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,7 +21,7 @@ platforms           darwin
 homepage            http://www.djcbsoftware.nl/code/mu/
 
 checksums           rmd160  4928dbb7effc924da85b8df0da92f46412a6c9e7 \
-                    sha256  3eed4e1139d296089dcf685d6b4e8a5abe43e0f9cbae6663694250ab889f1291
+sha256  3eed4e1139d296089dcf685d6b4e8a5abe43e0f9cbae6663694250ab889f1291
 
 depends_build       port:pkgconfig
 depends_lib         port:gmime port:xapian-core port:guile
@@ -52,8 +52,8 @@ subport mu-devel {
     revision        1
 
     checksums       rmd160  8cbdfb35c945face4ac1e96fa445a609098f0780 \
-                    sha256  a681346cbb72fd185f4e975b574ba8210278bd19d1c0d609a23311bfae084593 \
-                    size    2290803
+sha256  a681346cbb72fd185f4e975b574ba8210278bd19d1c0d609a23311bfae084593 \
+size    2290803
 
     post-extract    {
         # set the displayed version to a 6-character string since most releases
