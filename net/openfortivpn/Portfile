@@ -1,0 +1,29 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+PortSystem          1.0
+PortGroup           github 1.0
+
+github.setup        adrienverge openfortivpn 1.6.0 v
+github.tarball_from tags
+
+categories          net
+platforms           darwin
+license             GPL-3
+
+maintainers         @millerdev
+description         Client for PPP+SSL VPN tunnel services.
+long_description    openfortivpn is a client for PPP+SSL VPN tunnel services. \
+                    It spawns a pppd process and operates the communication \
+                    between the gateway and this process. It is compatible \
+                    with Fortinet VPNs.
+
+depends_build       port:autoconf \
+                    port:automake \
+                    port:pkgconfig
+depends_lib         port:openssl
+
+configure.cmd       ./autogen.sh && ./configure
+configure.pkg_config    ${prefix}/bin/pkg-config
+
+checksums           size    55622 \
+                    rmd160  348ac6ee8db8e5cf1a4cc493889e3ac3e717274e \
+                    sha256  18390e7822d562c5dcc8caa1094fdfb47ceb975f46dee862470e72e428ca75b0
