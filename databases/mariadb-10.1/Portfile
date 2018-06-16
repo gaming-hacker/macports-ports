@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -46,8 +46,8 @@ if {$subport eq $name} {
                         patch-CMakeLists.txt.diff
 
     checksums           rmd160  12729deb32211e6de058c77c535949f35fc67e35 \
-                        sha256  ab7641c2fe4e5289da6141766a9c3350e013def56fafd6f1377080bc8048b2e6 \
-                        size    67982786
+sha256  ab7641c2fe4e5289da6141766a9c3350e013def56fafd6f1377080bc8048b2e6 \
+size    67982786
 
     depends_lib-append  port:zlib port:tcp_wrappers port:ncurses port:judy
     depends_run-append  port:mysql_select

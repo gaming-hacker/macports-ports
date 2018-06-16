@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,8 +20,8 @@ long_description \
     parses a Perl script, and navigable in much the same way.
 
 checksums           rmd160  4f12fe1296b323f6243ef5b38842bf06b06f2a25 \
-                    sha256  885e172bbfde54c240bdfd6013fc6e1b76bdd19c211901d2128f3873938ff377 \
-                    size    218790
+sha256  885e172bbfde54c240bdfd6013fc6e1b76bdd19c211901d2128f3873938ff377 \
+size    218790
 
 if {${perl5.major} != ""} {
     depends_lib-append  port:p${perl5.major}-list-moreutils \
