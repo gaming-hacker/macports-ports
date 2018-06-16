@@ -1,12 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 epoch               1
-
-perl5.branches  5.26
-
+perl5.branches      5.26
+# Later versions require PPIx::QuoteLike which is not in macports
 perl5.setup         Perl-Critic 1.130
 revision            1
 license             {Artistic-1 GPL}
@@ -19,7 +18,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  f112d7d10baad80f02f235f04f798f0cde9e448a \
-sha256  0662e8f02dd78e39ee9d5b01bdf5376a7cc70ce2b0edc9ca015be35e6cb61df6
+                    sha256  0662e8f02dd78e39ee9d5b01bdf5376a7cc70ce2b0edc9ca015be35e6cb61df6
 
 if {${perl5.major} != ""} {
 depends_build-append  port:p${perl5.major}-test-deep
