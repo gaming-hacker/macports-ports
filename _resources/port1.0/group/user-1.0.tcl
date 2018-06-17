@@ -10,7 +10,7 @@ set user.ver.python 2.7
 set user.ver.py     27
 set user.arch       x86_64
 set user.ghub       gaming-hacker
-set user.ver.intel  2018.2.164
+set user.ver.intel  2018.3.185
 set user.intel.root /opt/intel/compilers_and_libraries_${user.ver.intel}/mac
 set user.tbb.inc    ${user.intel.root}/tbb/inc
 set user.tbb.lib    ${user.intel.root}/tbb/lib
