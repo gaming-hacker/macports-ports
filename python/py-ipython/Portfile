@@ -14,7 +14,11 @@ supported_archs     noarch
 
 python.versions 27 36
 
+<<<<<<< HEAD
 maintainers         {aronnax @lpsinger} {sean @seanfarley} {stromnov @stromnov} openmaintainer
+=======
+maintainers         {aronnax @lpsinger} {sean @seanfarley} stromnov openmaintainer
+>>>>>>> d0a5ece2e038685af8de6ec92d5f591c1ce80b4e
 
 description         An enhanced interactive Python shell.
 long_description    ${description}
