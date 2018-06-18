@@ -18,7 +18,7 @@ long_description    PETSc is a suite of data structures and routines for the sca
                     differential equations. It employs the MPI standard for all \
                     message-passing communication.
 
-maintainers         sean openmaintainer
+maintainers         {sean @seanfarley} openmaintainer
 
 checksums           rmd160  e112564d569bcb89cd53ae3b9a26092b4896571c \
 sha256  fb78b50c596c3ba6a097751dd9a379e7acaf57edd36311a3afa94caa4312ee08

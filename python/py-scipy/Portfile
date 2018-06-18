@@ -14,7 +14,7 @@ size   17978853
 name                    py-scipy
 platforms               darwin
 license                 BSD
-maintainers             sean {michaelld @michaelld} openmaintainer
+maintainers             {sean @seanfarley} {michaelld @michaelld} openmaintainer
 description             An opensource library of scientific tools for Python
 long_description        ${description}
 

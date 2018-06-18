@@ -20,7 +20,7 @@ sha256  f1596ed84982869f9f756eed062e4461094b8c1272eb63d0194beec452ad7f7c \
 size    531468
 
 # For crate:onig_sys
-depends_build       port:cmake
+depends_build       path:bin/cmake:cmake
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/${name} ${destroot}${prefix}/bin/

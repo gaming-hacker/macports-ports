@@ -34,6 +34,9 @@ size    4284267
 # https://trac.macports.org/ticket/56666
 patchfiles-append   patch-setupinfo-remove-xcrun-call.diff
 
+# https://trac.macports.org/ticket/56666
+patchfiles-append   patch-setupinfo-remove-xcrun-call.diff
+
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools
