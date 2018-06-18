@@ -305,8 +305,8 @@ variant http description {Build with HTTP Server library support} {
 }
 
 variant vc description {Build with Vc library support} {
-    ui_msg "Vc support is currently disabled by upstream"
-#   configure.args-replace  -Dvc=OFF -Dvc=ON
+    depends_lib-append      port:Vc
+    configure.args-replace  -Dvc=OFF -Dvc=ON
 }
 
 variant debug description {Enable a debug build} {

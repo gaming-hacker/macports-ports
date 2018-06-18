@@ -29,8 +29,6 @@ sha256  9d1c0a994f25a5025cede5e1d3a687ec98cd4949bfb2aae13f2a873a13259cb2
 patchfiles          patch-configure.diff \
                     patch-example.diff
 
-conflicts           crfpp-devel
-
 depends_build       port:nkf
 
 post-destroot {
