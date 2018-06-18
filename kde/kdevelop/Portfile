@@ -30,7 +30,7 @@ sha256  cdef56196364eb97a4d9f15b6d47e12d893ef0bfa7100855f532ba7a9ff69130
 
 use_xz              yes
 
-depends_run-append  port:cmake
+depends_run-append  path:bin/cmake:cmake
 
 depends_lib-append  port:kdelibs4 \
                     port:kdevplatform \

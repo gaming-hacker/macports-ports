@@ -29,7 +29,7 @@ sha256  0ef58192fa66e9401dce91bc8a5602e16397529464e2bb027af62ed6f19d7a2c
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools \
-                        port:cmake
+                        path:bin/cmake:cmake
 
     depends_lib-append  port:libdynd \
                         port:py${python.version}-numpy \

@@ -31,7 +31,7 @@ rmd160  ccf764c679c36cb4ae4cd3f2e1efeeac3074dcaa
 
 patchfiles              patch-CMakeLists.txt.diff
 
-depends_build           port:cmake
+depends_build           path:bin/cmake:cmake
 
 depends_lib             port:OpenSceneGraph
 
