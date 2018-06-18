@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,9 +14,9 @@ long_description    ${description}.
 homepage            https://tectonic-typesetting.github.io/
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  243618a042ee7e781adfbd3539671256b056807c \
-                    sha256  931e4e6cb09a3bc7f3b7798deb699b3e940d6ae71b04d5e10b2a0977e4be423d \
-                    size    1361189
+rmd160  243618a042ee7e781adfbd3539671256b056807c \
+sha256  931e4e6cb09a3bc7f3b7798deb699b3e940d6ae71b04d5e10b2a0977e4be423d \
+size    1361189
 
 depends_build       port:pkgconfig
 
@@ -72,7 +72,7 @@ cargo.crates \
     log                              0.3.9  e19e8d5c34a3e0e2223db8e060f9e8264aeeb5c5fc64a4ee9965c062211c024b \
     log                              0.4.2  6fddaa003a65722a7fb9e26b0ce95921fe4ba590542ced664d8ce2fa26f9f3ac \
     matches                          0.1.6  100aabe6b8ff4e4a7e32c1c13523379802df0772b82466207ac25b013f193376 \
-    md-5                             0.7.0  9402eaae33a9e144ce18ef488a0e4ca19869673c7bcdbbfe2030fdc3f84211cd \
+md-5                             0.7.0  9402eaae33a9e144ce18ef488a0e4ca19869673c7bcdbbfe2030fdc3f84211cd \
     memchr                           2.0.1  796fba70e76612589ed2ce7f45282f5af869e0fdd7cc6199fa1aa1f1d591ba9d \
     mime                             0.2.6  ba626b8a6de5da682e1caa06bdb42a335aee5a84db8e5046a3e8ab17ba0a3ae0 \
     miniz-sys                       0.1.10  609ce024854aeb19a0ef7567d348aaa5a746b32fb72e336df7fcc16869d7e2b4 \
@@ -103,7 +103,7 @@ cargo.crates \
     security-framework-sys          0.1.16  5421621e836278a0b139268f36eee0dc7e389b784dc3f79d8f11aabadf41bead \
     serde                           1.0.66  e9a2d9a9ac5120e0f768801ca2b58ad6eec929dc9d1d616c162f208869c2ce95 \
     serde_derive                    1.0.66  0a90213fa7e0f5eac3f7afe2d5ff6b088af515052cc7303bd68c7e3b91a3fb79 \
-    sha2                             0.7.1  9eb6be24e4c23a84d7184280d2722f7f2731fcdd4a9d886efbfe4413e4847ea0 \
+sha2                             0.7.1  9eb6be24e4c23a84d7184280d2722f7f2731fcdd4a9d886efbfe4413e4847ea0 \
     shell32-sys                      0.1.2  9ee04b46101f57121c9da2b151988283b6beb79b34f5bb29a58ee48cb695122c \
     strsim                           0.7.0  bb4f380125926a99e52bc279241539c018323fab05ad6368b56f93d9369ff550 \
     syn                             0.14.2  c67da57e61ebc7b7b6fff56bb34440ca3a83db037320b0507af4c10368deda7d \

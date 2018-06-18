@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        Nuand bladeRF 821f879439af4c3234b2a7f9c2abbef2c0dd9bb0
 version             20180606
 checksums           rmd160 c31b04470bf5e7ca7c496acf910dadc5910546e0 \
-                    sha256 5acbf50cfd6da552d2c8f8608a88f9fac82115f55e2a0c876ebefeee588ac723 \
-                    size   1734507
+sha256 5acbf50cfd6da552d2c8f8608a88f9fac82115f55e2a0c876ebefeee588ac723 \
+size   1734507
 
 categories          science comms
 maintainers         {michaelld @michaelld} openmaintainer

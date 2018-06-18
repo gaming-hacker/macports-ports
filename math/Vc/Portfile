@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -24,5 +24,5 @@ long_description    Vc is a free software library to ease explicit vectorization
 platforms           darwin
 
 checksums           rmd160  abb533dc9dfdcb0285e0f5438fc67f5724d3fb1f \
-                    sha256  08c629d2e14bfb8e4f1a10f09535e4a3c755292503c971ab46637d2986bdb4fe \
-                    size    781361
+sha256  08c629d2e14bfb8e4f1a10f09535e4a3c755292503c971ab46637d2986bdb4fe \
+size    781361

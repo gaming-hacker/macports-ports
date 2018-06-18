@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -22,8 +22,8 @@ homepage            https://filezilla-project.org/
 master_sites        https://dl3.cdn.filezilla-project.org/client
 
 checksums           rmd160  9a05ce162806c96f9ff2402111a2d9ded5d114c5 \
-                    sha256  637ea551a442e22d8ee862b0f035077d37ba823a4372e8d0fcbd5b0e378bea80 \
-                    size    4869893
+sha256  637ea551a442e22d8ee862b0f035077d37ba823a4372e8d0fcbd5b0e378bea80 \
+size    4869893
 
 
 # wxWidgets-3.0 with support for C++11 on < 10.9

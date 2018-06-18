@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ homepage            https://jcupitt.github.io/libvips/
 github.tarball_from releases
 
 checksums           rmd160  80770fe6e1a52c9d334736597b749fea60e043f0 \
-                    sha256  4631a080c92b2b371379252e451818604858942b754c924b09843a7f528a8af4
+sha256  4631a080c92b2b371379252e451818604858942b754c924b09843a7f528a8af4
 
 depends_build       port:gtk-doc \
                     port:pkgconfig
