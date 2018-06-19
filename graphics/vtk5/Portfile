@@ -38,7 +38,6 @@ checksums           vtk-${version}${extract.suffix} \
                     sha1    deb834f46b3f7fc3e122ddff45e2354d69d2adc3 \
                     rmd160  3b0b138bf45743e925a905fb2eccb6b3ab3dada4
 
-
 depends_build-append    port:readline
 
 patchfiles          patch-tiff-inline.diff legacy.patch

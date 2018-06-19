@@ -110,7 +110,6 @@ configure.args    -DENABLE_BINRELOC=OFF \
                   -DWITH_PYTHON=ON
 configure.perl    ${perl5.bin}
 
-
 post-destroot {
     file delete ${destroot}${prefix}/lib/libgwengui-gtk3.dylib
     file delete ${destroot}${prefix}/share/glib-2.0/schemas/gschemas.compiled

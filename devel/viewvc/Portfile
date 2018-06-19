@@ -39,7 +39,6 @@ build               {}
 
 destroot.cmd        ./viewvc-install --prefix=${prefix}/share/${name} --destdir=${destroot} --clean-mode=true
 
-
 variant cvs description {Enable cvs repositories} {
     depends_lib-append  port:cvs \
                         port:rcs

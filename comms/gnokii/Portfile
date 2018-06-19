@@ -68,7 +68,6 @@ post-activate {
     }
 }
 
-
 platform macosx {
     configure.ldflags-append -framework CoreFoundation
     

@@ -30,7 +30,6 @@ configure.args      --disable-static \
                     --with-xerces=${prefix} \
                     --with-xmlsec=${prefix}
 
-
 livecheck.type      regex
 livecheck.url       http://shibboleth.net/downloads/c++-opensaml/latest/
 livecheck.regex     ${name}-(\\d+\\.\\d+(\\.\\d+)?)

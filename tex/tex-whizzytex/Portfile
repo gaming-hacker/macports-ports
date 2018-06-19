@@ -24,7 +24,6 @@ configure.pre_args  -prefix ${prefix}
 
 depends_lib         bin:tex:texlive
 
-
 checksums           md5     240d4ccb54b167f3baf55313411d6b92 \
                     sha1    c01e0dc5886631250c786251c009324064dfde97 \
                     rmd160  017cbdfa178216ec5f97ef0a4848813ac35550e1

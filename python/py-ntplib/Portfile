@@ -16,7 +16,6 @@ long_description    This module offers a simple interface to query NTP \
                     text (mode, leap indicator, ...). Since it's pure \
                     work on any platform with a decent Python implementation.
 
-
 homepage            https://pypi.python.org/pypi/ntplib
 master_sites        pypi:n/ntplib/
 distname            ntplib-${version}

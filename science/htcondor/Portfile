@@ -81,7 +81,6 @@ variant kerberos description {enable Kerberos5 support} {
     configure.args-replace -DWITH_KRB5:BOOL="0" -DWITH_KRB5:BOOL="1"
 }
 
-
 checksums               rmd160  8b29509fb553454f5d67f67cb59db1d80d50f43c \
                         sha256  65cb1b12f8cb972a3d245f6cea7ec0509cd86d07368dc3dc0dcd7679238cb3b4
 

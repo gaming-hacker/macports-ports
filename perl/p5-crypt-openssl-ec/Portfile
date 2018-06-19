@@ -20,7 +20,6 @@ if {${perl5.major} != ""} {
                     path:lib/libssl.dylib:openssl \
                     port:p${perl5.major}-crypt-openssl-bignum
 
-
     configure.env-append \
                     OPENSSL_PREFIX=${prefix}
 }

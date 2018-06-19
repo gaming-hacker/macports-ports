@@ -112,7 +112,6 @@ post-configure {
 
 cmake.out_of_source     yes
 
-
 post-destroot {
     if {[variant_isset python27]} {
         file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/${pyver}/lib/python${pyver}/site-packages

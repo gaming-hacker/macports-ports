@@ -54,7 +54,6 @@ variant autoactivate description automatically activate the character mappings {
 	## used in post-activate (below)
 }
 
-
 post-activate {
 	if {[variant_isset autoactivate]} {
 		system "cat ${prefix}/share/xpdf/${name}/add-to-xpdfrc >> ${prefix}/etc/xpdfrc"

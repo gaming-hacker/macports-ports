@@ -204,7 +204,6 @@ variant dv requires mencoder_extras \
 variant twolame requires mencoder_extras \
     description {deprecated: use +mencoder_extras instead} {}
 
-
 variant speex \
     description {Enable Speex playback} {
     depends_lib-append      path:lib/libspeex.dylib:speex

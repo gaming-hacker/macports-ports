@@ -107,7 +107,6 @@ proc haskell_platform_tool {pkgname pkgversion pkgrevision {block {}}} {
     }]
 }
 
-
 #################################
 # Additional Platform Libraries #
 #################################

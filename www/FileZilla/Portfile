@@ -25,7 +25,6 @@ checksums           rmd160  9a05ce162806c96f9ff2402111a2d9ded5d114c5 \
                     sha256  637ea551a442e22d8ee862b0f035077d37ba823a4372e8d0fcbd5b0e378bea80 \
                     size    4869893
 
-
 # wxWidgets-3.0 with support for C++11 on < 10.9
 wxWidgets.use       wxWidgets-3.0-cxx11
 

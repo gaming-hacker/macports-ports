@@ -40,12 +40,10 @@ depends_lib-append      port:qca-ossl \
                         port:qca
 }
 
-
 # variant ipv6 description {Add ipv6 support} { 
 # 
 # patchfiles-append      patch-src-src.pro.diff 
 # }
-
 
 variant plugins description {Build with experimental Plugin Support} {
 

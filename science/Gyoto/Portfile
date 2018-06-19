@@ -49,7 +49,6 @@ configure.args      --with-yorick=${prefix}/bin/yorick \
 
 build.args-append   Y_CFLAGS="${configure.cxxflags}" Y_CPPFLAGS="${configure.cppflags}" CC="${configure.cc}" COPT_DEFAULT="" Y_LDFLAGS="${configure.ldflags}"
 
-
 test.target         check check-lorene
 test.run            yes
 

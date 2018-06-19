@@ -208,7 +208,6 @@ if {[variant_isset universal]} {
     }
 }
 
-
 # work around bug in texlive makefiles where $OBJC is not recorded
 # during configure phase
 build.env                   OBJC=${configure.objc} \
@@ -227,7 +226,6 @@ if {[string match *clang* ${configure.cxx}]} {
     configure.cxxflags-append -std=c++11
     configure.cxxflags-append -Wno-reserved-user-defined-literal
 }
-
 
 post-destroot   {
     # Anything that gets installed into texmf-dist will be installed

@@ -68,7 +68,6 @@ destroot {		xinstall -m 755 -v -W ${worksrcpath}/src \
 			file copy ${worksrcpath}/doc/sendfiled.8 ${destroot}${prefix}/share/man/man8
 			}
 
-
 post-destroot {		system "cd '${destroot}${prefix}/bin' && ln -s utf7encode utf7decode"
 			xinstall -m 755 -d ${destroot}${prefix}/var/spool/sendfile
 			xinstall -m 700 -d ${destroot}${prefix}/var/spool/sendfile/LOG

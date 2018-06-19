@@ -14,7 +14,6 @@ long_description    Stuff is a program that generates artificial but \
     realistic catalogs of astronomical sources. These catalogs can be loaded \
     in SkyMaker to generate image simulations.
 
-
 homepage            http://www.astromatic.net/software/stuff/
 master_sites        http://www.astromatic.net/download/stuff/
 checksums           md5     df7884d80257836f5e40d1b5654ec9b1 \

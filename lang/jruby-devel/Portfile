@@ -54,7 +54,6 @@ variant nailgun description "include Nailgun support" {
 
 variant default_ruby description "build without j prefix" {}
 
-
 destroot {
     # Create the target java directory exists
     xinstall -m 755 -d ${destroot}${prefix}/share/java/${name}

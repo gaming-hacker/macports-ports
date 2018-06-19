@@ -36,7 +36,6 @@ depends_lib-append  path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:gstreamer1 \
                     port:libxml2
 
-
 variant python27 description {Build using Python 2.7} {
         depends_build-append port:python27
         configure.python ${prefix}/bin/python2.7

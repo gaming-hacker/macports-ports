@@ -18,7 +18,6 @@ long_description    TeX Live is an easy way to get up and running with TeX. \
     This is a metaport that installs collections of TeX Live packages.      \
     See the variants list for options about which collections to install.
 
-
 homepage        https://www.tug.org/texlive/
 platforms       darwin
 supported_archs noarch
@@ -186,7 +185,6 @@ if {![variant_isset minimal]
     && ![variant_isset full]} {
     default_variants-append    +medium
 }
-
 
 livecheck.type      regex
 livecheck.url       ${homepage}

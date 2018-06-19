@@ -123,7 +123,6 @@ platform darwin powerpc {
     }
 }
 
-
 if {${subport} eq "wxPython-3.0"} {
     master_sites            sourceforge:project/wxwindows/${version} \
                             http://biolpc22.york.ac.uk/pub/${version}/ \

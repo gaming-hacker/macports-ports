@@ -40,5 +40,3 @@ destroot {
         file copy ${worksrcpath}/libpsi-otr.bundle ${destroot}${applications_dir}/psi.app/Contents/Resources/plugins
 }
 
-
-

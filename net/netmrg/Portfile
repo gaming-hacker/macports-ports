@@ -69,13 +69,11 @@ Full information at http://wiki.netmrg.net/wiki/Users_Manual.
    Set the root MySQL password:
    	Follow the instructions that were given after you executed 'mysql_install_db' above.
 
-
 2) Install PHP 4 or 5 (not covered)
 
    Set mysql.default_socket path to ${prefix}/var/run/mysql5/mysqld.sock in the PHP file:
 
         ./phpx/lib/php.ini (in /usr/local, ${prefix}, or /Library depending on PHP package)
-
 
 3) Setup the NetMRG database
 	mysql5 -u root -p
@@ -95,10 +93,8 @@ Full information at http://wiki.netmrg.net/wiki/Users_Manual.
    Set permissions on the NetMRG database
 	grant all on netmrg.* to netmrg@localhost identified by 'mynetmrg-password';
 
-
 4) Set a symlink from the NetMRG web frontend to your Apache root directory
 	sudo ln -s ${prefix}/var/www/netmrg/webfiles /<Apache Doc Root>/netmrg
-
 
 5) Edit the NetMRG preferences file ${prefix}/etc/netmrg.xml
 
@@ -124,17 +120,13 @@ Full information at http://wiki.netmrg.net/wiki/Users_Manual.
 
         */5 * * * *  ${prefix}/bin/netmrg-gatherer
 
-
 7) Point your web browser to http:/loalhost/netmrg and login to NetMRG
 
 	The default user/pass is admin/nimda
 
-
-
 	******************************************************************
 	**** 	    Graphing an Ethernet Switch - Quickstart          ****
 	******************************************************************
-
 
 1) Define a custom graph template for your Ethernet switches
 
@@ -148,7 +140,6 @@ Comment:        Interface: %ifDescr% - %ifAlias% (ifAlias is optional)
 Vert label:     bytes / sec
 
 Click 'Save Changes'.
-
 
 2) Monitor an Ethernet switch via SNMP
 
@@ -174,7 +165,6 @@ click the checkbox beside each interface you want to graph, and then click the
 
 Click Admin -> Cisco Switches -> Switch A and notice that the interface(s)
 you selected are now listed as sub-devices of Switch-A.
-
 
 3) View your graphs
 

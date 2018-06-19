@@ -30,7 +30,6 @@ checksums           rmd160  31ba07ccc6d793962d444205907a89df0c56b961 \
 
 python.versions     27
 
-
 post-destroot {
     if {${name} ne ${subport}} {
         xinstall -m 644 -W ${worksrcpath} \

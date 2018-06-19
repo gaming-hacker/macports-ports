@@ -84,7 +84,6 @@ snmptt setup:
 -Use snmpttconvertmib to build an ${prefix}/etc/snmptt.conf file with translations from
  MIB files for your devices as described in the documentation.
 
-
 snmptrapd setup:
 
 -Edit your snmptrapd.conf (you may use the snmpconf utility) and make sure that

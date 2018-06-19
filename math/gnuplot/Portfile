@@ -121,7 +121,6 @@ variant qt5 conflicts qt description "Enable qt terminal with Qt 5" {
     configure.args-replace      --without-qt --with-qt=qt5
 }
 
-
 # Ideally one would enable just PMB by default, but '--with-bitmap-terminals'
 # enables lots of other obsolete terminals which clutter the output of 'set term'.
 variant old_bitmap_terminals description "Enable PBM (Portable Bit Map) and other older bitmap terminals" {

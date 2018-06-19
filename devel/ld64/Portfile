@@ -36,7 +36,6 @@ checksums           dyld-421.2.tar.gz \
                     rmd160  16e57faf2b1d3f3808fb8e4b167cf23a14f106b0 \
                     sha256  175d89c419e99d49a7a5f7e4196d3cef4c9e19cc17a425c332e86df6b516f7d7
 
-
 subport ld64-97 {
     # XCode 3.2.6
     version             97.17

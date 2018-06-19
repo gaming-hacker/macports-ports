@@ -13,7 +13,6 @@ categories          gis
 license             MIT BSD
 platforms           darwin
 
-
 maintainers         {vince @Veence} openmaintainer
 
 description         GDAL - Geospatial Data Abstraction Library
@@ -349,7 +348,6 @@ variant proj4 description {Use Proj4 4.9 instead of Proj4 5+} {
 variant perf description {Optimize for speed} {
     configure.optflags      -O3 -pipe -march=native -DGDAL_COMPILATION
 }
-
 
 set jpeg2k 0
 foreach jpeg2kVariant {jasper openjpeg ecw} {

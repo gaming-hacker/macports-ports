@@ -40,4 +40,3 @@ use_parallel_build  no
 
 destroot.target     findlib_install
 
-

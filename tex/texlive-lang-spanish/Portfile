@@ -30,5 +30,4 @@ texlive.languages      \
     {galician loadhyph-gl.tex 2 2 {} {hyph-gl.pat.txt} {} {} } \
     {spanish loadhyph-es.tex 2 2 {espanol} {hyph-es.pat.txt} {} {} }
 
-
 texlive.texmfport

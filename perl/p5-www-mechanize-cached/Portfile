@@ -26,7 +26,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test-requiresinternet \
                     port:p${perl5.major}-yaml-libyaml
 
-
     depends_lib-append \
                     port:p${perl5.major}-cache-cache \
                     port:p${perl5.major}-chi \

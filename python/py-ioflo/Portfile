@@ -32,7 +32,6 @@ long_description    IoFlo is a magically powerful open interoperable software \
 
 homepage            http://ioflo.com
 
-
 python.versions 27 34 35 36
 python.default_version 27
 

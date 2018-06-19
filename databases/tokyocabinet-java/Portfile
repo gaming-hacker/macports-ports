@@ -20,7 +20,6 @@ checksums           md5 b87d892620df55e1088b6b8e22d87ad5 \
 
 set javahome        /System/Library/Frameworks/JavaVM.framework
 
-
 ## patch ##
 patch.args          -p1
 patchfiles          patch-Makefile.in.diff

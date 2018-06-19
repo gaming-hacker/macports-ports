@@ -62,7 +62,6 @@ subport             libftdi1 {
     checksums           rmd160  c7160d343c6098eb1f26f54d37b221113985e4e3 \
                         sha256  ec36fb49080f834690c24008328a5ef42d3cf584ef4060f3a35aa4681cb31b74
 
-
     patchfiles          patch-python-CMakeLists.txt.diff \
                         patch-test-CMakeLists.txt.diff
 

@@ -3,7 +3,6 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-
 set package.name    lib_mysqludf_preg
 set mysql.name      mysql55
 github.setup        mysqludf ${package.name} 1.1 ${package.name}-

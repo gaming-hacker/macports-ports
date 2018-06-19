@@ -1684,7 +1684,6 @@ p5-yaml-syck					1.300.0_1
 p5-yaml-tiny					1.730.0_1
 p5-zeromq					0.230.0_3
 
-
 # MAUSOLEUM (separate section for special ports)
 foreach branch $defaultBranches {
     subport subversion-perlbindings-$branch {

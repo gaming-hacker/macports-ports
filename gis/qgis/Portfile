@@ -112,7 +112,6 @@ depends_run-append      port:py27-psycopg2 \
                         port:py27-spatialite \
                         port:py27-requests
 
-
 pre-configure {
                         reinplace -E "s|Versions/Current|Versions/2.7|" \
                         ${worksrcpath}/cmake/FindPythonLibrary.cmake

@@ -28,7 +28,6 @@ post-patch {
 depends_run         port:bash \
                     port:git
 
-
 use_configure no
 build {}
 

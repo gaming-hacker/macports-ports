@@ -32,7 +32,6 @@ depends_lib-append port:ncurses \
                    port:gnutls \
                    port:python34
 
-
 # allow build to find libreadline
 patchfiles-append  patch-configure-macports-path.diff
 post-patch {
@@ -43,7 +42,6 @@ post-patch {
 configure.args-append  \
                    PYTHON_FRAMEWORK=${frameworks_dir}/Python.framework \
                    PYTHON=${prefix}/bin/python3.4
-
 
 variant notifications description {Enable terminal-notifier for notifications} {
     depends_lib-append     port:terminal-notifier

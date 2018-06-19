@@ -23,7 +23,6 @@ checksums           md5     48597dc17906e478292040dae2df5596 \
                     rmd160  06d84c11af473fee0e6816c8fb2b692df8e811fa \
                     sha256  980b8091d935484dde5907ff1631f624c5c0b99f5c1790c6c7879bb1f4d51009
 
-
 python.versions     27 34 35 36
 
 if {${name} ne ${subport}} {

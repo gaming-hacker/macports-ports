@@ -373,7 +373,6 @@ if {${subport} eq "llvm-${llvm_version}"} {
         }
     }
 
-
     post-patch {
         reinplace "s|@CLANG_FORMAT_PATH@|${prefix}/bin/clang-format-${suffix}|g" \
             ${worksrcpath}/tools/clang/tools/clang-format/clang-format-bbedit.applescript \

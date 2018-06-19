@@ -159,7 +159,6 @@ pre-configure {
 configure {
     system -W ${worksrcpath} "./Configure -v << EOF
 
-
 y
 ${destroot}${prefix}
 
@@ -180,7 +179,6 @@ y
 y
 ${worksrcpath} ${prefix}/lib/hdfeos5/lib ${prefix}/lib/proj5/lib ${prefix}/lib
 ${prefix}/include/freetype2 ${prefix}/include/udunits2 ${prefix}/lib/hdfeos5/include ${prefix}/lib/proj5/include ${prefix}/include
-
 
 EOF"
 }

@@ -26,7 +26,6 @@ subport audacity-devel {
     long_description A port of the Audacity audio editor aimed at development purposes.
 }
 
-
 if {${subport} eq "${name}"} {
     conflicts       ${name}-devel
     # get the source tarball from github because it contains all required external libs

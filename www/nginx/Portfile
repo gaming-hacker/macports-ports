@@ -65,7 +65,6 @@ proc nginx_set_portfile_var {var_name new_value} {
     set portfile_var   $new_value
 }
 
-
 configure.args-append \
                     --with-cc-opt=\"${configure.cppflags} ${configure.cflags}\" \
                     --with-ld-opt=\"${configure.ldflags}\" \
@@ -261,7 +260,6 @@ variant upload description {Enable Valery Kholodkov's upload module (http://grid
     # Patch nginx_upload_module.c with fixed version from https://github.com/TimothyKlim/nginx-upload-module.
     patchfiles-append       patch-nginx_upload_module.tmp-ngx_http_upload_module.c.diff
 
-
     nginx_set_portfile_var  nginx_upload_mod_dirname    "${upload_distname}"
 
     pre-fetch {
@@ -414,7 +412,6 @@ variant jwt description {Add JWT (Javascript Web Token) support to server using 
     configure.args-append   --add-dynamic-module=${workpath}/${jwt_distname}
     depends_lib-append      port:libjwt
 }
-
 
 livecheck.type      regexm
 livecheck.url       ${homepage}

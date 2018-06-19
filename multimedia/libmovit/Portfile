@@ -64,7 +64,6 @@ post-destroot {
 
 livecheck.regex     "movit-(\\d+(?:\\.\\d+)*)${extract.suffix}"
 
-
 variant installdemo description "Install Demo Application" {
 
     patchfiles-append \

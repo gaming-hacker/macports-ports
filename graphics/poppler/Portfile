@@ -83,7 +83,6 @@ if {${subport} ne ${name}} {
         system -W ${workpath} "${prefix}/bin/git clone --depth=1 http://anongit.freedesktop.org/git/poppler/test"
     }
 
-
 # currently poppler only provides unit tests for the Qt wrappers
 
     test.run    yes

@@ -13,7 +13,6 @@ maintainers         {sean @seanfarley} openmaintainer
 description         Utility methods for Mercurial extensions
 long_description    ${description}
 
-
 platforms           darwin
 
 checksums           rmd160  0df6f84b26d18c9173d759445e4a29a266b70b33 \

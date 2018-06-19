@@ -12,7 +12,6 @@ long_description \
 	Extract files from InstallShield-style cabinet files (usually named \
 	data1.cab, data1.hdr, data2.cab, etc), versions 5 and later
 
-
 homepage			http://synce.sourceforge.net/synce/unshield.php
 master_sites		sourceforge:synce
 

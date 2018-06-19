@@ -60,7 +60,6 @@ pre-patch {
     }
 }
 
-
 pre-configure {
     if {[mpi_variant_isset]} {
         configure.args-delete --without-mpicc

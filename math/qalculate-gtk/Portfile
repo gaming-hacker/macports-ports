@@ -23,7 +23,6 @@ checksums           rmd160  3d50790c96057b8c58ad293b4e60c95198b9f03e \
                     sha256  6a9521d1c5a602285bfff5f38328125f73d88f6625ef1fef9dc2f12592b55bad \
                     size    2346368
 
-
 # autoreconf to reconfigure for intltool
 use_autoreconf      yes
 autoreconf.args     -fvi

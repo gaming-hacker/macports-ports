@@ -70,7 +70,6 @@ if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     }
 }
 
-
 if {${name} ne ${subport}} {
     universal_variant  no
     depends_build-append port:pkgconfig

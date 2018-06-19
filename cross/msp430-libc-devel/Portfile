@@ -24,10 +24,8 @@ platforms               darwin
 homepage                http://mspgcc.sourceforge.net/
 master_sites            sourceforge:project/mspgcc/${name_package}/
 
-
 depends_lib             port:msp430mcu-devel
 depends_build           port:gettext port:msp430-gcc-devel
-
 
 # installs deliberately files outside regular tree:
 destroot.violate_mtree  yes

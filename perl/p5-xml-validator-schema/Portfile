@@ -24,7 +24,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-xml-sax-expat \
                     port:p${perl5.major}-xml-sax-writer
 
-
     depends_lib-append \
                     port:p${perl5.major}-tree-dag_node \
                     port:p${perl5.major}-xml-filter-buffertext \

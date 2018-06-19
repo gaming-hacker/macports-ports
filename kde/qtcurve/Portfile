@@ -18,7 +18,6 @@ if {${subport} eq "${name}-gtk2"} {
 }
 epoch               2
 
-
 description         A set of widget styles for Qt4/KDE4, Qt5/KF5 and/or GTk2 based apps.
 
 categories          kde

@@ -20,7 +20,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test-fatal \
                     port:p${perl5.major}-test-needs
 
-
     depends_lib-append \
                     port:p${perl5.major}-namespace-clean \
                     port:p${perl5.major}-test-deep \

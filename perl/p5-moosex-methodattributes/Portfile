@@ -22,7 +22,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test-fatal \
                     port:p${perl5.major}-test-requires
 
-
     depends_lib-append \
                     port:p${perl5.major}-moose \
                     port:p${perl5.major}-moosex-types \

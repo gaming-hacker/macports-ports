@@ -12,7 +12,6 @@ description         Python API for instapaper.com
 long_description    Instapaper is a simple web app for saving pages for reading \
                     later. This library provides an API for the web service.
 
-
 platforms           darwin
 supported_archs     noarch
 

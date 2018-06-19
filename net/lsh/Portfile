@@ -35,7 +35,6 @@ depends_lib         lib:liboop:liboop       lib:libgmp:gmp \
 set defaultcflags       "-I${prefix}/include"
 set defaultconfigureargs    "--disable-datafellows-workarounds --with-include-path=${prefix}/include --with-lib-path=${prefix}/lib --with-tcpwrappers --with-pam --disable-kerberos"
 
-
 platform darwin {
     post-extract {
         system "mkdir -p ${workpath}/paminclude"

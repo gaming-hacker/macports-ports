@@ -116,7 +116,6 @@ notes "
             Options ExecCGI
         </Directory>
 
-
 2) Setup postfix so Argus can send mail via the command-line
 ----------------------------------------------
     cd ${prefix}/etc/postfix
@@ -137,19 +136,16 @@ Test postfix by sending a test email from a terminal window.
 NOTE: Make sure the SMTP server of the receiving domain will relay
       mail from your Argus workstation.
 
-
 2) Setup the Argus config files
 ----------------------------------------------
 -Remove the suffix \".example\" from the files config and user in
  ${argus_data_dir} and customize them.  Also see ${prefix}/share/${name}/examples.
-
 
 3) Make the Argus files owned by the Apache user/group (default is \"www\")
 ----------------------------------------------
 -Execute this terminal command:
     sudo chown -R <apache-user>:<apache-group> ${prefix}/share/${name}/
     sudo chown -R <apache-user>:<apache-group> ${argus_data_dir}/
-
 
 4) Rename config.example and user.example to config and user and customize them.
 ----------------------------------------------
@@ -213,7 +209,6 @@ NOTE: Unlike C or Perl, you cannot place the opening \{ on a different line,
 
 -Rename config.example to config and customize it with your login passwords.
 
-
 5) Start argusd.
 ----------------------------------------------
 
@@ -231,7 +226,6 @@ NOTE: Unlike C or Perl, you cannot place the opening \{ on a different line,
         but the impatient may use argusctl:
 
     argusctl hup
-
 
 6) Login to the Argus web interface to monitor your services.
 ----------------------------------------------

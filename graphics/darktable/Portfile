@@ -139,7 +139,6 @@ if {![variant_isset clang39]} {
     default_variants    +clang40
 }
 
-
 notes "
 Online documentation for ${name} is at:
 http://www.darktable.org/usermanual/index.html.php

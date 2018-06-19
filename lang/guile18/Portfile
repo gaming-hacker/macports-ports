@@ -133,8 +133,6 @@ post-destroot {
         ln -s ${libsubdir}/$f ${destroot}${prefix}/lib
     }
 
-
-
     # Remove conflicting files and rename to make guile18 installable
     # with guile 2.0. Update internal paths and links.
     file delete ${destroot}${prefix}/share/${name}/1.6/ice-9/and-let\*.scm

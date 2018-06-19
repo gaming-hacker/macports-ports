@@ -52,7 +52,6 @@ extract {
     file copy ${distpath}/preprocessor-v2-bin-${preprocversion}.jar  ${workpath}
 }
 
-
 destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/java
     xinstall -m 755 -d ${destroot}${prefix}/share/java/${name}

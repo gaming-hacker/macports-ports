@@ -12,7 +12,6 @@ revision            2
 homepage            http://rubygems.org/
 master_sites        http://production.cf.rubygems.org/rubygems
 
-
 distname            rubygems-${version}
 dist_subdir         ruby
 
@@ -26,7 +25,6 @@ checksums           md5     e85cfadd025ff6ab689375adbf344bbe \
                     rmd160  2ea8e16d1535216045798258603d5f2f9e3dbfea
 
 patchfiles          patch-lib_rubygems_commands_setup_command.rb.diff
-
 
 extract.suffix      .tgz
 platforms           darwin

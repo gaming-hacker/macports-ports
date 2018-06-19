@@ -34,7 +34,6 @@ checksums       md5     bedcdb3a0ed85986d40044c87f23477c \
 
 python.versions 26 27 33 34 35 36
 
-
 if {${name} ne ${subport}} {
     livecheck.type     none
 } else {

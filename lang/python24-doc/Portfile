@@ -57,7 +57,6 @@ destroot {
 		cp -r * ${destroot}${framewdir}/Versions/2.4/Resources/English.ljproj/Documentation"
 }
 
-
 # delete symlinks without version suffix, use python_select instead to choose version
 
 platform puredarwin {

@@ -32,7 +32,6 @@ checksums       \
     sha256  b5b32a0f3497578db0349bd73920c612b852c50dfa44d2e577a9c3f45812e406 \
     size    16872465
 
-
 depends_build   \
 	port:gawk	\
 	port:pkgconfig

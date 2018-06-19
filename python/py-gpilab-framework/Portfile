@@ -51,7 +51,6 @@ if {${name} ne ${subport} } {
                             
     livecheck.type          none
 
-
     post-patch {
         reinplace \
            -E "s^/usr/bin/env python3?^${prefix}/bin/python${python.branch}^" \

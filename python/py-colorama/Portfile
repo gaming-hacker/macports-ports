@@ -21,7 +21,6 @@ homepage            https://code.google.com/p/colorama/
 master_sites        pypi:c/colorama/
 python.versions     26 27 33 34 35 36
 
-
 if {${name} ne ${subport}} {
     distname            colorama-${version}
 

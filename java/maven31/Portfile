@@ -98,7 +98,6 @@ notes \
 "To make maven $version the default, please run
 \tsudo port select --set ${select.group} $name"
 
-
 livecheck.type  regex
 livecheck.url   ${homepage}docs/history.html
 livecheck.regex >(3\\.1\\.\[0-9.\]+)</

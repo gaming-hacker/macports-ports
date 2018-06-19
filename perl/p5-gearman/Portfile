@@ -37,6 +37,5 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-time-hires \
                     port:p${perl5.major}-version
 
-
     supported_archs noarch
 }

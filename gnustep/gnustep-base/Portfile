@@ -67,7 +67,6 @@ startupitem.stop    \
     "kill -9 `cat ${my_pid}` && \\" \
     "rm -f ${my_pid}"
 
-
 if { ![variant_isset ffcall] } {
     default_variants +ffi
 }

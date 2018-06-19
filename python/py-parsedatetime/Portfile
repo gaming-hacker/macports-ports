@@ -26,6 +26,5 @@ if {${name} ne ${subport}} {
     test.run        yes
     test.env        PYTHONPATH=[glob -nocomplain ${worksrcpath}/build/lib*]
 
-
     livecheck.type  none
 }

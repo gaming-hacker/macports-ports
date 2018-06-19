@@ -28,7 +28,6 @@ checksums           rmd160  74458f72159ab630309fd27345e6cc500912c6c6 \
                     sha256  8a0a7176c9d9cf3fcf0c9fcd3d4d4f70c9c09248b41017b0a77e4fb932e6ff5c \
                     size    1837003
 
-
 # autoreconf to reconfigure for intltool; use package's autogen script to avoid
 # conflict with gettext
 use_autoreconf      yes

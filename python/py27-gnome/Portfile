@@ -36,7 +36,6 @@ depends_lib     port:libgnomeui \
                 port:libbonobo \
                 port:libbonoboui
 
-
 set python.branch   2.7
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin      ${python.prefix}/bin/python${python.branch}

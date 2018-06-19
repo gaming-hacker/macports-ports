@@ -18,7 +18,6 @@ extract.only            ${distfiles}
 # Set the correct version
 version                 ${version}-20120911
 
-
 maintainers             {g5pw @g5pw}
 
 description             ${description} This is the development version.

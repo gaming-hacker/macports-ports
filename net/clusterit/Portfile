@@ -25,5 +25,4 @@ depends_lib         port:xorg-libX11 \
 configure.args	--mandir='\${prefix}/share/man' \
 				--infodir='\${prefix}/share/info'
 
-
 # vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4

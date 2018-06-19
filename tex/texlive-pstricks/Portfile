@@ -27,5 +27,4 @@ depends_lib         port:texlive-basic port:texlive-plain-generic
 
 texlive.binaries    pedigree ps4pdf pst2pdf
 
-
 texlive.texmfport

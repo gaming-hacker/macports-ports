@@ -26,7 +26,6 @@ checksums           rmd160  462baeb3b221d23e7fa9711eaeff22724e9d7091 \
 depends_lib         path:${emacs_binary}:${emacs_binary_provider}
 depends_build       port:texinfo
 
-
 configure {
     system -W ${worksrcpath} "make local.mk"
     reinplace "s|EMACS	= emacs|EMACS	= ${emacs_binary}|g" ${worksrcpath}/local.mk

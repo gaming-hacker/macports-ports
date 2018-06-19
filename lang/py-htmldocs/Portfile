@@ -87,4 +87,3 @@ if {${name} != ${subport}} {
     livecheck.type      none
 }
 
-

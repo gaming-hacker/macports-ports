@@ -44,7 +44,6 @@ if {${perl5.major} != ""} {
                     port:xorg-libice \
                     port:xorg-libX11
 
-
     patchfiles      patch-Makefile.PL.diff \
                     patch-utils-Makefile.macosx.diff
 

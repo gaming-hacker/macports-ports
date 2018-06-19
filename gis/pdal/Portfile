@@ -35,7 +35,6 @@ depends_lib-append  port:geos \
                     port:curl \
                     port:laszip
 
-
 # Python stuff
 set python_suffixes {27 35 36}
 

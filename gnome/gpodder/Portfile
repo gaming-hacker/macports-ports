@@ -22,7 +22,6 @@ distfiles           ${version}.tar.gz
 checksums           rmd160  a104f2f22e80c7f693b784bb190706ac3ff6d43d \
                     sha256  5ae1c6d4337834fd29697250dffd439bd3f234a6878ef461b53cd218898b5e72
 
-
 depends_build       port:help2man\
                     port:intltool
 

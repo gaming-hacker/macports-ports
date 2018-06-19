@@ -36,7 +36,6 @@ configure.args      --enable-fuse=no \
 ##                  --with-ssl=${prefix} \
 ##                  --with-zlib=${prefix}
 
-
 variant s3 description {Enable the use of Amazon's S3 service} {
     depends_lib-append      port:curl
 
@@ -44,7 +43,6 @@ variant s3 description {Enable the use of Amazon's S3 service} {
                             --with-curl=${prefix}/lib
     configure.args-delete   --enable-s3=no
 }
-
 
 ## untested....
 ## variant fuse description {Access AFF data through FUSE} {

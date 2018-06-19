@@ -15,7 +15,6 @@ long_description	\
   schema-sensitive editing of XML documents using RELAX NG Compact \
   Syntax.
 
-
 homepage	    http://www.thaiopensource.com/nxml-mode/
 master_sites	http://www.thaiopensource.com/download/
 checksums	    sha1 5d21ca111957f86c9c237af9161f7ca482a1ef9f

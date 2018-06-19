@@ -32,7 +32,6 @@ depends_lib			port:pcre
 
 worksrcdir			${distname}/jakarta-tomcat-connectors/jk/native2
 
-
 # Try to determine a reasonable JAVA_HOME value
 if { [llength [array get env "JAVA_HOME"]] > 0 } {
 	set javahome $env(JAVA_HOME)
@@ -51,7 +50,6 @@ if { ![file isdirectory ${javahome}] } {
 	    error "This port needs a reasonable value for JAVA_HOME, but couldn't automatically determine one: please set the environment variable."
     }
 }
-
 
 post-patch {
 	# Clean up the the buildconf script
@@ -98,7 +96,6 @@ destroot {
 	xinstall -m 644 ${worksrcpath}/../conf/workers2.properties.minimal \
 		${destroot}${prefix}/apache2/conf/workers2.properties.sample
 }
-
 
 post-install {
 	ui_msg "#"

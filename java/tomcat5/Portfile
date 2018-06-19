@@ -196,7 +196,6 @@ destroot {
         ${destroot}${prefix}/share/doc/${name}
 }
 
-
 post-install {
     ui_msg "#"
     ui_msg "# Configuration files in ${prefix}/${home}/conf have been"

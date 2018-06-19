@@ -141,7 +141,6 @@ post-destroot {
         }
     }
 
-
     set fpath ${worksrcpath}/${rtpath}
     file copy ${fpath}/README.txt ${fpath}/../LICENSE.txt \
         ${fpath}/../www ${instdest}/share/doc/libomp/

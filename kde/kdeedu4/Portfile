@@ -13,12 +13,10 @@ long_description    ${description}. This includes programs such as Marble and Ka
 platforms           darwin
 homepage            https://www.kde.org
 
-
 distfiles
 use_configure       no
 extract {           file mkdir ${worksrcpath}/${name} }
 build               {}
-
 
 depends_lib-append  port:libkdeedu\
                     port:blinken\

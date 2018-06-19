@@ -131,7 +131,6 @@ configure.args-append \
     -DUUID_INCLUDE_DIR:PATH=${prefix}/include/uuid \
     -DUUID_LIBRARY:FILEPATH=${prefix}/lib/libuuid.dylib
 
-
 post-destroot {
     # For some reason, cmake does not install into the CMAKE_INSTALL_NAME_DIR
     move ${destroot}${prefix}/lib/${itkName}       ${destroot}${itkLibPath}
@@ -169,7 +168,6 @@ post-destroot {
         }
     }
 }
-
 
 # -----------------------------------------------------------------------------
 # VARIANTS
@@ -277,13 +275,11 @@ variant brainweb description "provide ITK BrainWeb data in ${itkDataPath}" {
     }
 }
 
-
 ##// Directory with data taken from http://public.kitware.com/pub/itk/Data/HealthyVolunteersMRIDatabase/
 ##ITK_MRI_UNC_DATABASE_DATA_ROOT:PATH=ITK_MRI_UNC_DATABASE_DATA_ROOT-NOTFOUND
 #http://public.kitware.com/pub/itk/Data/HealthyVolunteersMRIDatabase/Brain_MRA_From_UNC_Collection.zip
 #http://public.kitware.com/pub/itk/Data/HealthyVolunteersMRIDatabase/LICENSE.txt
 # During install, use a message to echo the LICENSE.txt file
-
 
 ##// Directory with data taken from http://www.osirix-viewer.com/Downloads.html
 ##ITK_OSIRIX_DATA_ROOT:PATH=ITK_OSIRIX_DATA_ROOT-NOTFOUND
@@ -292,7 +288,6 @@ variant brainweb description "provide ITK BrainWeb data in ${itkDataPath}" {
 #http://prdownloads.sourceforge.net/osirix/PET-CT.zip?download
 # More datasets available from:
 #http://pubimage.hcuge.ch:8080/
-
 
 # Notes on RPATH settings for the shared dylib build and install:
 #
@@ -327,7 +322,6 @@ variant shared description "build shared libraries" {
         -DCMAKE_INSTALL_RPATH:STRING=${itkLibPath}
 }
 
-
 proc resetLibLinks { inputPath } {
     # The example and testing binaries are built, but they are not "installed".
     # All their rpath settings point to the build.dir, so they must be
@@ -348,7 +342,6 @@ proc resetLibLinks { inputPath } {
         }
     }
 }
-
 
 variant examples description "provide ITK examples in ${itkExamplePath}" {
     configure.args-delete \
@@ -387,7 +380,6 @@ variant examples description "provide ITK examples in ${itkExamplePath}" {
     }
 }
 
-
 variant testing description "provide ITK testing in ${itkTestingPath}" {
     configure.args-delete \
         -DBUILD_TESTING:BOOL=OFF
@@ -425,9 +417,7 @@ variant testing description "provide ITK testing in ${itkTestingPath}" {
     }
 }
 
-
 # --- external languages support
-
 
 # Some of the wrapper libs are built, but they are not "installed".
 # All their rpath settings point to the build.dir, so they must be
@@ -446,7 +436,6 @@ proc resetWrapLibs { filepattern } {
         }
     }
 }
-
 
 variant wrap requires shared description "USE_WRAP_ITK for external language support (includes shared)" {
     depends_lib-append \
@@ -566,16 +555,10 @@ variant wrap requires shared description "USE_WRAP_ITK for external language sup
  #WRAP_vector_double               OFF
  #WRAP_vector_float                ON
 
-
-
-
-
-
 # -----------------------------------------------------------------------------
 # The USE_WRAP_ITK will configure a default tcl and java wrapping.  Only enable
 # and modify the variants below to provide version specific language
 # wrappers.  Each of these variants should require the wrap variant.
-
 
 proc setPython { {major 2} {minor 6} } {
     global pyVer python pyPort pyBin pyLib pyInc pyFrame pySite
@@ -680,7 +663,6 @@ variant python25 requires wrap conflicts python24 description "python 2.5 wrappe
 #    }
 #}
 
-
 #variant java requires wrap description "provide java wrapper" {
 #    configure.args-append \
 #        # The following variables are defined automatically by cmake:
@@ -695,7 +677,6 @@ variant python25 requires wrap conflicts python24 description "python 2.5 wrappe
 #        #-DJAVA_RUNTIME                    /usr/bin/java
 #}
 
-
 #variant tcl requires wrap description "tcl wrapper (MacPorts tcl/tk)" {
 #    depends_lib-append \
 #        port:tcl \
@@ -707,9 +688,6 @@ variant python25 requires wrap conflicts python24 description "python 2.5 wrappe
 #        -DTK_INCLUDE_PATH:PATH=${prefix}/include \
 #        -DTK_LIBRARY:FILEPATH=${prefix}/lib/libtk.dylib
 #}
-
-
-
 
 # -----------------------------------------------------------------------------
 # Additional possibilities for variants, not yet evaluated.
@@ -740,8 +718,6 @@ variant python25 requires wrap conflicts python24 description "python 2.5 wrappe
 #ITK_USE_SYSTEM_VXL:BOOL=OFF
 #// Use the system's zlib library.
 #ITK_USE_SYSTEM_ZLIB:BOOL=OFF
-
-
 
 # -----------------------------------------------------------------------------
 #livecheck.type      sourceforge

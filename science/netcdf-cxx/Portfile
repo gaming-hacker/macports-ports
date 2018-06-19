@@ -33,7 +33,6 @@ mpi.setup
 
 mpi.enforce_variant         hdf5
 
-
 depends_lib         port:netcdf
 
 configure.cppflags-append   -DNDEBUG

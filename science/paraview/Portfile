@@ -101,7 +101,6 @@ destroot {
 #Warning: Error determining file type of `/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js': lstat(/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js):no such file or directory
 #Warning: A file belonging to the `paraview' port is missing or unreadable. Consider reinstalling it.
 
-
 # other pythons?
 variant python27 conflicts python36 description {Add Python 2.7 support.} {
     depends_lib-append  port:py27-matplotlib

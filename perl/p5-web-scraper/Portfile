@@ -41,6 +41,5 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-xml-xpathengine \
                     port:p${perl5.major}-yaml
 
-
     supported_archs noarch
 }

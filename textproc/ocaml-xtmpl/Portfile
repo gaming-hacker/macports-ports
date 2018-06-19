@@ -21,7 +21,6 @@ checksums           rmd160  ee488e0eae0b2a0f7d56621b91ba6f3fa487556e \
 
 depends_lib         port:ocaml port:ocaml-findlib port:ocaml-xmlm
 
-
 configure {
     reinplace "s|ocamlfind|${ocamlfind_wrapper}|g" ${worksrcpath}/Makefile
 }

@@ -117,7 +117,6 @@ destroot {
     xinstall -m 0644 {*}[glob ${worksrcpath}/docs/*.txt] ${destroot}${prefix}/share/doc/${name}
 }
 
-
 livecheck.type      regex
 livecheck.url       ${homepage}documentation/RELNOTES.html
 livecheck.regex     "imap-(\\d{4}.?) "

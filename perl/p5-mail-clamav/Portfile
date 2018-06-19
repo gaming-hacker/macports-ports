@@ -22,7 +22,6 @@ if {${perl5.major} != ""} {
                     port:clamav \
                     port:p${perl5.major}-inline-c
 
-
     patchfiles      patch-Makefile.PL.diff  \
                     patch-ClamAV.pm.diff
 

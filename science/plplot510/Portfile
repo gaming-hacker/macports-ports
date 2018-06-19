@@ -296,7 +296,6 @@ variant wxwidgets description {Add support for wxWidgets} {
                             -Dwxwidgets_LINK_FLAGS=-lplplotd
 }
 
-
 variant x11 {
     depends_lib-append      path:lib/pkgconfig/pango.pc:pango \
                             port:tk

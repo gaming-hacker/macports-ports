@@ -393,7 +393,6 @@ To learn how to update your code, please read the following guide:
 
     http://php.net/manual/en/migration[php.suffix_from_branch ${php.latest_stable_branch}].php
 
-
 "
     }
     

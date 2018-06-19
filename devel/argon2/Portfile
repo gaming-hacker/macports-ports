@@ -33,7 +33,6 @@ destroot.env-append CC=${configure.cc} \
                     CFLAGS='${configure.cflags} [get_canonical_archflags cc]' \
                     LDFLAGS='${configure.ldflags} [get_canonical_archflags ld]'
 
-
 test.run            yes
 test.env-append     CC=${configure.cc} \
                     CFLAGS='${configure.cflags} [get_canonical_archflags cc]' \

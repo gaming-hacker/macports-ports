@@ -27,7 +27,6 @@ checksums	    md5     f8f3648632a6fbc97952b56fd0bf3309		\
                     sha1    451b5ecb9301a5d3055c5f0d2758f2b87564651a	\
                     rmd160  b67f81d2356a3641ab743542e64aa92358cea8f4
 
-
 use_bzip2	    yes
 use_parallel_build  no
 use_configure	    yes

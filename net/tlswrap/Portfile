@@ -34,7 +34,6 @@ post-destroot {
     }
 }
 
-
 livecheck.type      regex
 livecheck.url       ${homepage}
 livecheck.regex     {TLSWrap v(\d+\.\d+)}

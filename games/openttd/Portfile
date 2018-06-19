@@ -9,7 +9,6 @@ platforms           macosx
 
 maintainers         {cal @neverpanic} openmaintainer
 
-
 if {${name} eq ${subport}} {
     version             1.7.2
     checksums           rmd160  b70a88051b06765ba6ce0b35040dab0abf4a2ff5 \

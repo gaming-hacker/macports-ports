@@ -25,7 +25,6 @@ long_description    A typical use would be generating a customized PowerPoint \
                     simply to automate the production of a slide or two that\
                     would be tedious to get right by hand.
 
-
 checksums \
     rmd160  8348a1a53251c89007c528ea052903e3f8afe34f \
     sha256  98dbf49b76be6f375ee5575a767b380f3c7a1d7406581047218f1cfbbfea8197 \

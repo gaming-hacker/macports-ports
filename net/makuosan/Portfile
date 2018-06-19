@@ -36,7 +36,6 @@ checksums \
 depends_lib \
     path:lib/libssl.dylib:openssl
 
-
 variant server description {add a startup item} {
     set pidfile       ${prefix}/var/run/${name}.pid
     set makuosan_sbin ${prefix}/sbin/${name}

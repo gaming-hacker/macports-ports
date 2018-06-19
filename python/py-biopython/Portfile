@@ -23,7 +23,6 @@ checksums           md5     966ac542f39809c37852410a95f641fb \
                     sha256  4f1770a29a5b18fcaca759bbc888083cdde2b301f073439ff640570d4a93e033 \
                     size    16031832
 
-
 python.versions 27 34 35 36
 
 if { ${name} ne ${subport} } {

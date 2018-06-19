@@ -44,6 +44,5 @@ pre-activate {
     } 
 }
 
-
 livecheck.url       ${kde4.mirror}
 livecheck.regex     (\\d+(\\.\\d+)+)

@@ -21,7 +21,6 @@ description             wrapper around PHP's tokenizer extension
 long_description \
     ${description}
 
-
 php.branches            5.3 5.4 5.5
 
 php.build_dirs

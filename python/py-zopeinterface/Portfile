@@ -20,7 +20,6 @@ distname            zope.interface-${version}
 checksums           rmd160  801180e784ce314af6ffcbbafcb36b138901496a \
                     sha256  350e3615d70a96678c3170eb5c96d4f72b8e7738861afbf030967d52c05722fe
 
-
 if {${name} ne ${subport}} {
 
     depends_build   port:py${python.version}-setuptools

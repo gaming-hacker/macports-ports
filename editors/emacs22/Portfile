@@ -44,7 +44,6 @@ configure.args  --without-x \
 
 depends_lib     port:ncurses
 
-
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/emacs/${version}/leim
     # avoid conflict with ctags installed by the ctags port

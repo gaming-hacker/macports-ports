@@ -27,7 +27,6 @@ configure.args-append \
 
 build.env-append    HOST_CC=${configure.cc}
 
-
 variant openssl description {Use OpenSSL library} {
     depends_lib-append \
                     path:lib/libssl.dylib:openssl

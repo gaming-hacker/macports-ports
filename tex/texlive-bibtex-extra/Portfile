@@ -27,5 +27,4 @@ depends_lib         port:texlive-latex
 
 texlive.binaries    bbl2bib bib2gls bibdoiadd bibexport bibmradd biburl2doi bibzbladd convertgls2bib listbib ltx2crossrefxml multibibliography urlbst
 
-
 texlive.texmfport

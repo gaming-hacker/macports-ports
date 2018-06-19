@@ -43,7 +43,6 @@ platform darwin 8 {
 version             0.8.0
 revision            655
 
-
 build.post_args-append \
                     PREFIX=${prefix}
 if {[info exists build_arch]} {

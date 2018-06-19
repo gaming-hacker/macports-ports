@@ -25,7 +25,6 @@ checksums           md5     73844a1bce1f9ff546d49be291658e85 \
                     sha1    723ec603c2d2371172cce3a9096adc46469a6ad7 \
                     rmd160  1b40870e2b028ecda156e1899378fb89e6214809
 
-
 use_zip			yes
 distname		${name}Source-${version}
 worksrcdir      ${name}Source

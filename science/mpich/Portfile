@@ -294,7 +294,6 @@ if {${subport} != ${name}} {
         } {}
         default_variants-append     +fortran
 
-
         if {[ variant_isset tuned ] && ${os.major} >= 14} {
             if {![ file exists ${prefix}/bin/clang ]} {
                 pre-configure {

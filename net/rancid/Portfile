@@ -59,7 +59,6 @@ make sure it isn't world readable, and edit it according to your needs.
 
 See the README file in ${prefix}/share/rancid for more information.
 
-
 To use the optional looking glass service to run status check commands\
 (show ip route, show run, etc) against your devices from a web form,\
 perform these steps:
@@ -84,13 +83,11 @@ perform these steps:
    Set the file permissions.  The rancid-user should also be the Apache user.
 	sudo chown -R <rancid-user>:<rancid-user> <Apache-docroot>/lg
 
-
 2) To enable the cgi's in this directory to run, set this line in your httpd.conf:
 
 	<Directory /Library/WebServer/Documents/lg>
    		Options ExecCGI
 	</Directory>
-
 
 3) Goto url http://localhost/lg with a web browser to use the looking glass.
 

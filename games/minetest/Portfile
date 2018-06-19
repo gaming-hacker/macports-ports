@@ -36,7 +36,6 @@ post-extract {
     }
 }
 
-
 license                 GPL-2.1+
 categories              games
 platforms               darwin

@@ -42,5 +42,4 @@ destroot {
     }
 }
 
-
 livecheck.type     none

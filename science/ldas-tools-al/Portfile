@@ -23,7 +23,6 @@ depends_lib    path:lib/libssl.dylib:openssl \
                port:zlib \
                port:bzip2
 
-
 configure.args PYTHON=false \
                --disable-warnings-as-errors \
                --disable-silent-rules \
