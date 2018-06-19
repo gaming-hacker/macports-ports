@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           github 1.0
 
@@ -21,5 +21,5 @@ depends_lib         port:openssl
 use_autoreconf      yes
 
 checksums           rmd160  caea968dff62e21f720a538f5bc7b049f659fa6c \
-                    sha256  db694b53fd534158bdb150ac8ab67a9a8622ed21849d09f52f9c1396d0b7de3e \
-                    size    61236
+sha256  db694b53fd534158bdb150ac8ab67a9a8622ed21849d09f52f9c1396d0b7de3e \
+size    61236
