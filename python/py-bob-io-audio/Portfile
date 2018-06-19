@@ -18,7 +18,6 @@ maintainers                  idiap.ch:andre.anjos \
                              idiap.ch:laurent.el-shafey \
                              idiap.ch:tiago.pereira
 
-
 description                  Support for Audio I/O for Bob using SoX \
                              Bob is a signal-processing and machine learning toolbox
 
@@ -30,14 +29,11 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.io.audio 2.0.0 v
 
-
 python.versions 27 36
 python.default_version       27
 
 checksums                    rmd160  427c3e439f19bcad72471d86acda6d1de3bf55f7 \
 sha256  0fbe3810c2b1e967a6f2d18e2b42bad98e9ed90fe9681116ed2a573b424e8cf9
-
-
 
 if {$subport ne $name} {
 
@@ -60,11 +56,8 @@ if {$subport ne $name} {
       port:py${python.version}-bob-io-base \
       port:py${python.version}-bob-io-matlab
 
-
-
           # blacklist older compilers that don't support -std=c++0x (10.6 and earlier)
        compiler.blacklist  *gcc* {clang < 300}
-
 
     #WORKAROUND TO AVOID CONFLICTS WITH ANOTHER BOB PACKAGES (DELETING THE ROOT __INIT_FILES)
 

@@ -88,8 +88,6 @@ patchfiles-append \
 patchfiles-append \
     patch-ramsize.diff
 
-
-
 # Build out-of-tree
 configure.post_args     ../${worksrcdir}
 default configure.dir   {${workpath}/build}

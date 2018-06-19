@@ -128,7 +128,6 @@ http://www.bro.org/sphinx/quickstart/index.html
   # ln -s ${prefix}/Library/LaunchDaemons/org.macports.bro.plist /Library/LaunchDaemons/
   # launchctl load -w /Library/LaunchDaemons/org.macports.bro.plist
 
-
 **** UPGRADING ****
 
 Paths have been changed to respect macports hierarchy

@@ -41,7 +41,6 @@ if {${name} ne ${subport}} {
     depends_lib-append  path:bin/hg:mercurial \
                         port:subversion-python${python.version}bindings
 
-
     conflicts           py${python.version}-hgsubversion-devel
     if {[string match "*-devel" $subport]} {
         conflicts       py${python.version}-hgsubversion

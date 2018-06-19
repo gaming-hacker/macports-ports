@@ -152,7 +152,6 @@ configure.args      --enable-swscale \
                     --enable-shared --enable-pthreads \
                     --cc=${configure.cc}
 
-
 platform darwin {
     # disable asm on Tiger
     # libblueray doesn't build on Tiger so disable for now (#39442)

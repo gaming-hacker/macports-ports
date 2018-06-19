@@ -33,7 +33,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test-output \
                     port:p${perl5.major}-test-warnings
 
-
     depends_lib-append \
                     port:p${perl5.major}-getopt-long \
                     port:p${perl5.major}-html-form \

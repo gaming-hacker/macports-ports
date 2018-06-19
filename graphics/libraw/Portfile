@@ -35,7 +35,6 @@ rmd160  a83d4886ea3455425ec305160c04baf7a617db60 \
 sha256  ffd6916cd66c8101e4e6b589799f256c897748d2fd2486aa34c3705146dbc701 \
 size    39002
 
-
 depends_build       port:pkgconfig
 
 depends_lib         port:jasper \

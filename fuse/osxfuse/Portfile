@@ -162,7 +162,6 @@ destroot.target -a install
 destroot.args   -v 5 --build-directory="${workpath}"
 destroot.destdir -- "${destroot}${prefix}"
 
-
 # On Mavericks and Yosemite, replace the kext we just built with the
 # one from the binary distribution. This works around OS X's
 # unwillingness to load an unsigned kext (and our inability to sign

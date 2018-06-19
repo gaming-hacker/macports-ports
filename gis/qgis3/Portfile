@@ -163,7 +163,6 @@ foreach pyver ${python_suffixes} {
                                     port:py${pyver}-jinja2 \
                                     port:py${pyver}-pygments
 
-
             configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python${pyversion}
             configure.args-append   -DWITH_BINDINGS=ON
             configure.args-append   -DPYUIC_PROGRAM=${prefix}/bin/pyuic5-${pyversion}

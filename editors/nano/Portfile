@@ -37,7 +37,6 @@ use_parallel_build  yes
 
 set docdir      ${prefix}/share/doc/${name}
 
-
 post-destroot {
     xinstall -d $destroot$docdir/html
     xinstall -m 644 -W $worksrcpath AUTHORS COPYING ChangeLog INSTALL NEWS \

@@ -72,7 +72,6 @@ if {${name} ne ${subport}} {
         reinplace "s|@@MACPORTS_EXTRAARG@@|${extraargs}|g" setup.py
     }
 
-
     destroot.cmd-append    --cpp_implementation
 
     test.run        yes

@@ -31,7 +31,6 @@ destroot.target     op=install
 destroot.args-append \
                     --prefix=${prefix}
 
-
 livecheck.type      regex
 livecheck.url       ${master_sites}
 livecheck.regex     "${name}-(\[\\d\]+)${extract.suffix}"

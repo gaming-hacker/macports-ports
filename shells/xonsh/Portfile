@@ -39,7 +39,6 @@ subport             xonsh-devel {
     revision        1
 }
 
-
 variant python34 conflicts python35 python36 description {Use Python 3.4} {
     python.default_version 34
 }

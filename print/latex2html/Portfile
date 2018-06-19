@@ -77,7 +77,6 @@ post-destroot {
 
 texlive.use_mktexlsr yes
 
-
 livecheck.type          regex
 livecheck.url           [lindex ${master_sites} 0]
 livecheck.regex         ${name}-(\\d+(?:\\.\\d+)*)${extract.suffix}

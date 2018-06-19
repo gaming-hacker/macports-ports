@@ -27,8 +27,6 @@ configure.ldflags-delete -L${prefix}/lib
 # dependencies
 # depends_lib-append port:py27-numpy \
 
-
-
 # CMAKE configuration
 # configure.args-append \
 #     -DDRF_INSTALL_PREFIX_PYTHON=${python.prefix}\

@@ -23,7 +23,6 @@ checksums       sha256  3ee7b49b67cf721185e92280a8496ca588ae0bdabbd0d1ab14fb2a8c
 rmd160  6e655d39991822a35d85a3718fcde5cf24c0bcde \
 size    123177
 
-
 use_autoreconf  yes
 depends_lib     port:protobuf3-cpp
 depends_build-append port:pkgconfig

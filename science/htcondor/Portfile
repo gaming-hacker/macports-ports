@@ -41,7 +41,6 @@ set pythons_suffixes {27 36}
 
 default_variants +python27
 
-
 set pythons_ports {}
 foreach s ${pythons_suffixes} {
     lappend pythons_ports python${s}

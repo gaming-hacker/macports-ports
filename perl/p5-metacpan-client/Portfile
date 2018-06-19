@@ -35,6 +35,5 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-type-tiny \
                     port:p${perl5.major}-uri
 
-
     supported_archs noarch
 }

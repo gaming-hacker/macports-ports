@@ -290,7 +290,6 @@ if { ${name} ne ${subport} } {
 
     Server=x.x.x.x
 
-
 2) Set zabbix_agentd to run at system boot
 
      sudo port load zabbix3-agent
@@ -313,7 +312,6 @@ if { ${name} ne ${subport} } {
 
     sudo port install mysql5-server
 
-
 2) Setup the ZABBIX database
 
     Follow the directions at :
@@ -322,7 +320,6 @@ if { ${name} ne ${subport} } {
 
     The *.sql files it refers to are in ${prefix}/share/zabbix/scripts/
     ** NOTE THAT THESE ARE FOR YOUR SELECTED DATABASE VARIANT!!! **
-
 
 3) Edit the sample .conf file ${prefix}/etc/zabbix3/zabbix_server.conf
    (rename & omit .sample)
@@ -335,12 +332,10 @@ if { ${name} ne ${subport} } {
     DBSocket=<location for your active mysql5\[15\] server socket>
       Typically ${prefix}/var/run/mysql\[51|55\]/mysqld.sock
 
-
 4) Set a symbolic link in your Apache document root pointing to the PHP
    frontend files
 
     sudo ln -s ${prefix}/share/zabbix/frontends/php <Apache-docroot>/zabbix
-
 
 5) Set zabbix_server to run at system boot (also starts it immediately):
 
@@ -349,11 +344,9 @@ if { ${name} ne ${subport} } {
  !! Note: Your shared memory will likely need to be increased  !!
  !!     ( see http://support.apple.com/kb/HT4022 )             !!
 
-
 6) A Win32 agent is in ${prefix}/share/zabbix/zabbix_agent_win32 for\
    installation on Windows NT 4.0, Windows 2000, and Windows XP.  See\
    the ReadMe.txt for instructions.
-
 
 7) Enable your desired php version in httpd.conf and make sure the following
    are set in the associated php.ini:
@@ -366,17 +359,13 @@ if { ${name} ne ${subport} } {
    And for php56:
     always_populate_raw_post_data = -1
 
-
 8) Open http://localhost/zabbix/ in your browser and walk through the setup,
    then login with default user 'Admin' and password 'zabbix'.
 
-
 9) Read the fine manual at http://www.zabbix.com/documentation/
-
 
 #### End ZABBIX3 local server installation section   ####
 ####                                                 ####
-
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! ZABBIX2 -> ZABBIX3 Server Upgrade process !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -397,7 +386,6 @@ if { ${name} ne ${subport} } {
 !!    http://www.zabbix.com/documentation/3.4/manual/installation/upgrade !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!  ALWAYS BACK UP YOUR DATABASE BEFORE UPGRADING (between unload/load)!  !!

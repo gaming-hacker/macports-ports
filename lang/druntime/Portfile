@@ -60,5 +60,4 @@ destroot {
     file copy ${worksrcpath}/benchmark ${destroot}${prefix}/share/${name}
 }
 
-
 github.livecheck.regex  {([^"-]+)}

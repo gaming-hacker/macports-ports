@@ -81,7 +81,6 @@ destroot {
     system "cd ${build.dir} && make install"
 }
 
-
 # other pythons?
 variant python27 conflicts python36 description {Add Python 2.7 support.} {
     depends_lib-append  port:py27-matplotlib

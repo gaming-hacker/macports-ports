@@ -296,7 +296,6 @@ variant python27 description {Add Python 2.7 bindings.} {
                             -DPYTHON2_PACKAGES_PATH=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
 }
 
-
 set pythonversions {3.4 3.5 3.6}
 foreach pdv ${pythonversions} {
     set pv [join [lrange [split ${pdv} .] 0 1] ""]

@@ -157,7 +157,6 @@ if {[tbool use_cmake]} {
     }
 }
 
-
 if {${os.major} < 11 || [variant_isset replacemnt_libcxx] || [variant_isset runtime]} {
     supported_archs i386 x86_64 ppc
 

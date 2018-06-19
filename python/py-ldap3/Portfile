@@ -28,7 +28,6 @@ rmd160  376faff81a59ac52703ea032b8d763ddd41876ba \
 sha256  55078bbc981f715a8867b4c040402627fdfccf5664e0277a621416559748e384 \
 size    349672
 
-
 python.versions 27 36
 
 if {${name} ne ${subport}} {

@@ -23,7 +23,6 @@ long_description \
 homepage        http://spimsimulator.sourceforge.net
 platforms       darwin
 
-
 fetch.type      svn
 svn.revision    643
 svn.url         https://svn.code.sf.net/p/spimsimulator/code

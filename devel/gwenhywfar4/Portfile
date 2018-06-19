@@ -32,7 +32,6 @@ configure.args    --enable-static
 
 conflicts-delete  $subport
 
-
 # Usually the port has a different version than the *-devel subports
 # (but right now it doesn't)
 #if {$subport eq $name || $subport eq "gwenhywfar4-gtk"} {
@@ -76,7 +75,6 @@ if {$subport == "gwenhywfar4-gtk3" || $subport == "gwenhywfar4-gtk3-devel"} {
     depends_lib-append      port:gtk3
     configure.args-append   --with-guis="gtk3 cpp" --disable-qt4
 }
-
 
 # Allow gtk3 version to replace any gtk2 version if it is installed
 # This will conflicts during gnucash upgrade.

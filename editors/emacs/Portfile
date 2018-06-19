@@ -95,7 +95,6 @@ post-destroot {
     delete ${destroot}${prefix}/share/man/man1/ctags.1.gz
 }
 
-
 variant x11 description {Builds emacs as a X11 program with Lucid widgets} {
     configure.args-delete   --without-x
     configure.args-append   --with-x-toolkit=lucid \

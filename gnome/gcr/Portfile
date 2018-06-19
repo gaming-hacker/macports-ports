@@ -83,7 +83,6 @@ if {![variant_isset quartz]} {
     default_variants-append +x11
 }
 
-
 pre-activate {
     if {![catch {set installed [lindex [registry_active gnome-keyring] 0]}]} {
         set _version [lindex $installed 1]
