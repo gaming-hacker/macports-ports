@@ -1,31 +1,21 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 
 name            maxima
 version         5.41.0
-revision        0
 categories      math
 maintainers     mareimbrium.org:kuba openmaintainer
 platforms       darwin
 license         GPL-2+
 description     The Maxima computer algebra system
-long_description \
-        Maxima is a system for the manipulation of symbolic \
-        and numerical expressions, including differentiation, \
-        integration, Taylor series, Laplace transforms, ordinary \
-        differential equations, systems of linear equations, \
-        polynomials, and sets, lists, vectors, matrices, and \
-        tensors. Maxima yields high precision numeric results \
-        by using exact fractions, arbitrary precision integers, \
-        and variable precision floating point numbers. Maxima \
-        can plot functions and data in two and three dimensions.
-
 homepage        http://maxima.sourceforge.net/
 
-variant devel description {Get a development version with git.} {}
+subport maxima-devel {
+    conflicts   maxima
+    long_description ${description}: \n\
+                Provides the development version, which is typically updated every week.
 
-if {[variant_exists devel] && [variant_isset devel]} {
     # git describe --tags : branch-5_41-base-415-g7e71fc4
     version     5.41post
     fetch.type  git
@@ -38,13 +28,27 @@ if {[variant_exists devel] && [variant_isset devel]} {
     }
     
     livecheck.type  none
-} else {
+}
+
+if {${subport} eq ${name}} {
+    conflicts   maxima-devel
+    long_description \
+                Maxima is a system for the manipulation of symbolic \
+                and numerical expressions, including differentiation, \
+                integration, Taylor series, Laplace transforms, ordinary \
+                differential equations, systems of linear equations, \
+                polynomials, and sets, lists, vectors, matrices, and \
+                tensors. Maxima yields high precision numeric results \
+                by using exact fractions, arbitrary precision integers, \
+                and variable precision floating point numbers. Maxima \
+                can plot functions and data in two and three dimensions.
+
     # get the source tarball from sourceforge.
     master_sites    sourceforge
 
-    checksums   md5     972c51384d7895c88d78eb045c6aedb2 \
-sha256  daf8254600f4c7d9f079a0084178aaf036bd97a63b1e77b945f4120d7e401674 \
-rmd160  e58cedfa395ac5cb4715d1b60ed7cf6ae48979cf
+    checksums   size    41540226 \
+                sha256  daf8254600f4c7d9f079a0084178aaf036bd97a63b1e77b945f4120d7e401674 \
+                rmd160  e58cedfa395ac5cb4715d1b60ed7cf6ae48979cf
 
     livecheck.regex     {<title>.*/Maxima-source/(.*)-source/maxima.*</title>}
 }
