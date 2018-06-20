@@ -37,9 +37,7 @@ subport maxima-devel {
     git.url     https://git.code.sf.net/p/maxima/code
     git.branch  7e71fc4b6a95cab6418227754f01fc44ac845da1
 
-    pre-configure {
-        system -W ${worksrcpath} "./bootstrap"
-    }
+    use_autoreconf  yes
 
     livecheck.type  none
 }
