@@ -18,10 +18,10 @@ long_description \
         tensors. Maxima yields high precision numeric results \
         by using exact fractions, arbitrary precision integers, \
         and variable precision floating point numbers. Maxima \
-        can plot functions and data in two and three dimensions. \n\
-        Maxima includes the following commands: \n\
+        can plot functions and data in two and three dimensions. \
+        Maxima includes the following commands: \
         * \"rmaxima\" is a front end which provides advanced line-editing \
-        facilities via rlwrap. \n\
+        facilities via rlwrap. \
         * \"xmaxima\" is a graphical interface for maxima, written in Tcl/Tk.
 
 homepage        http://maxima.sourceforge.net/
