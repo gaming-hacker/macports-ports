@@ -9,42 +9,46 @@ maintainers     mareimbrium.org:kuba openmaintainer
 platforms       darwin
 license         GPL-2+
 description     The Maxima computer algebra system
+long_description \
+        Maxima is a system for the manipulation of symbolic \
+        and numerical expressions, including differentiation, \
+        integration, Taylor series, Laplace transforms, ordinary \
+        differential equations, systems of linear equations, \
+        polynomials, and sets, lists, vectors, matrices, and \
+        tensors. Maxima yields high precision numeric results \
+        by using exact fractions, arbitrary precision integers, \
+        and variable precision floating point numbers. Maxima \
+        can plot functions and data in two and three dimensions. \n\
+        Maxima includes the following commands: \n\
+        * \"rmaxima\" is a front end which provides advanced line-editing \
+        facilities via rlwrap. \n\
+        * \"xmaxima\" is a graphical interface for maxima, written in Tcl/Tk.
+
 homepage        http://maxima.sourceforge.net/
 
 subport maxima-devel {
     conflicts   maxima
-    long_description ${description}: \n\
-                Provides the development version, which is typically updated every week.
 
     # git describe --tags : branch-5_41-base-415-g7e71fc4
+    # Date:  Fri Jun 15 17:26:53 2018 -0500
+    # commit 7e71fc4b6a95cab6418227754f01fc44ac845da1
     version     5.41post
     fetch.type  git
     git.url     https://git.code.sf.net/p/maxima/code
     git.branch  7e71fc4b6a95cab6418227754f01fc44ac845da1
 
-    post-fetch {
-        system -W ${worksrcpath} "git describe --tags"
+    pre-configure {
         system -W ${worksrcpath} "./bootstrap"
     }
-    
+
     livecheck.type  none
 }
 
 if {${subport} eq ${name}} {
     conflicts   maxima-devel
-    long_description \
-                Maxima is a system for the manipulation of symbolic \
-                and numerical expressions, including differentiation, \
-                integration, Taylor series, Laplace transforms, ordinary \
-                differential equations, systems of linear equations, \
-                polynomials, and sets, lists, vectors, matrices, and \
-                tensors. Maxima yields high precision numeric results \
-                by using exact fractions, arbitrary precision integers, \
-                and variable precision floating point numbers. Maxima \
-                can plot functions and data in two and three dimensions.
 
     # get the source tarball from sourceforge.
-    master_sites    sourceforge
+    master_sites    sourceforge:project/maxima/Maxima-source/${version}-source
 
     checksums   size    41540226 \
                 sha256  daf8254600f4c7d9f079a0084178aaf036bd97a63b1e77b945f4120d7e401674 \
@@ -114,11 +118,3 @@ variant printable_doc description {Build printable documentation} {
                         ${destroot}${prefix}/share/${name}/${version}/doc/pdf
     }
 }
-
-notes   "
-    Maxima includes the following commands: \n\
-    * \"rmaxima\" is a front end which provides advanced line-editing facilities via rlwrap. \n\
-    * \"xmaxima\" is a graphical interface for maxima, written in Tcl/Tk. \n\n\
-    You can display the installed version with the next command: \n\
-    \"maxima --version\"
-"
