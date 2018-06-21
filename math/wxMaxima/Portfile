@@ -5,20 +5,21 @@ PortGroup           wxWidgets 1.0
 
 name                wxMaxima
 version             18.02.0
+revision            0
 maintainers         nomaintainer
-license             GPL-2
+license             gpl
 # openssl is a dependency of curl in cmake
 license_noconflict  openssl
 platforms           darwin
 categories          math aqua
-description         Graphical user interface for Maxima based on wxWidgets
+description         Graphical user interface for Maxima
+long_description    wxMaxima is a cross platform GUI for the computer algebra \
+                    system maxima based on wxWidgets.
 homepage            http://andrejv.github.io/wxmaxima/
 
-subport wxMaxima-devel {
-    conflicts       wxMaxima
-    long_description ${description}: \n\
-                    Provides the development version, which is typically updated every day.
+variant devel description {Get a development version with git.} {}
 
+if {[variant_exists devel] && [variant_isset devel]} {
     # git describe --tags : Version-16.12.x-1834-gb32fed0
     version     18.02post
     fetch.type  git
@@ -31,18 +32,12 @@ subport wxMaxima-devel {
 
     patchfiles      patch-devel-src_Dirstructure.cpp.diff
     post-patch {
-        reinplace -W ${worksrcpath} "s|@@PREFIX@@|${prefix}|g" \
+        reinplace -W ${worksrcpath} "s|/OPT/LOCAL|${prefix}|g" \
                                     src/Dirstructure.cpp
     }
 
     livecheck.type  none
-}
-
-if {${subport} eq ${name}} {
-    conflicts       wxMaxima-devel
-    long_description ${description}: \n\
-                    Provides the release version, which is typically updated every four months.
-
+} else {
     # get the source tarball from github.
     PortGroup       github 1.0
 
@@ -53,7 +48,7 @@ if {${subport} eq ${name}} {
 
     patchfiles      patch-src_Dirstructure.cpp.diff
     post-patch {
-        reinplace -W ${worksrcpath} "s|@@PREFIX@@|${prefix}|g" \
+        reinplace -W ${worksrcpath} "s|/OPT/LOCAL|${prefix}|g" \
                                     src/Dirstructure.cpp
     }
     
@@ -75,7 +70,7 @@ depends_lib         port:${wxWidgets.port}
 
 depends_build       port:cmake
 
-depends_run         bin:maxima:maxima
+depends_run         port:maxima
 
 patch.pre_args      -Np0
 
