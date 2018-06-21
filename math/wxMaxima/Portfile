@@ -31,7 +31,7 @@ if {[variant_exists devel] && [variant_isset devel]} {
 
     patchfiles      patch-devel-src_Dirstructure.cpp.diff
     post-patch {
-        reinplace -W ${worksrcpath} "s|/OPT/LOCAL|${prefix}|g" \
+        reinplace -W ${worksrcpath} "s|@@PREFIX@@|${prefix}|g" \
                                     src/Dirstructure.cpp
     }
 
@@ -47,7 +47,7 @@ if {[variant_exists devel] && [variant_isset devel]} {
 
     patchfiles      patch-src_Dirstructure.cpp.diff
     post-patch {
-        reinplace -W ${worksrcpath} "s|/OPT/LOCAL|${prefix}|g" \
+        reinplace -W ${worksrcpath} "s|@@PREFIX@@|${prefix}|g" \
                                     src/Dirstructure.cpp
     }
     
