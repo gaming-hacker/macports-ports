@@ -11,14 +11,14 @@ license             GPL-2
 license_noconflict  openssl
 platforms           darwin
 categories          math aqua
-description         Graphical user interface for Maxima
-long_description    wxMaxima is a cross platform GUI for the computer algebra \
-                    system maxima based on wxWidgets.
+description         Graphical user interface for Maxima based on wxWidgets
 homepage            http://andrejv.github.io/wxmaxima/
 
-variant devel description {Get a development version with git.} {}
+subport wxMaxima-devel {
+    conflicts       wxMaxima
+    long_description ${description}: \n\
+                    Provides the development version, which is typically updated every day.
 
-if {[variant_exists devel] && [variant_isset devel]} {
     # git describe --tags : Version-16.12.x-1834-gb32fed0
     version     18.02post
     fetch.type  git
@@ -36,7 +36,13 @@ if {[variant_exists devel] && [variant_isset devel]} {
     }
 
     livecheck.type  none
-} else {
+}
+
+if {${subport} eq ${name}} {
+    conflicts       wxMaxima-devel
+    long_description ${description}: \n\
+                    Provides the release version, which is typically updated every four months.
+
     # get the source tarball from github.
     PortGroup       github 1.0
 
@@ -69,7 +75,7 @@ depends_lib         port:${wxWidgets.port}
 
 depends_build       port:cmake
 
-depends_run         port:maxima
+depends_run         bin:maxima:maxima
 
 patch.pre_args      -Np0
 
