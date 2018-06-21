@@ -5,7 +5,6 @@ PortGroup           wxWidgets 1.0
 
 name                wxMaxima
 version             18.02.0
-revision            0
 maintainers         nomaintainer
 license             gpl
 # openssl is a dependency of curl in cmake
