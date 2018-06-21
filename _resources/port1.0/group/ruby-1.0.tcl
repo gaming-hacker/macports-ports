@@ -50,7 +50,7 @@
 # options:
 #   ruby.branches: the ruby versions supported by this module.
 #        this introduces subports such as rb23-, rb22-, ...
-#   ruby.branch: select ruby version. 2.5, ... 2.0, 1.9 or 1.8.
+#   ruby.branch: select ruby version. 2.5
 #   ruby.link_binaries: whether generate suffixed symlink under ${prefix}/bin
 #        or not.
 #   ruby.link_binaries_suffix: suffix of commands from rb-foo under
