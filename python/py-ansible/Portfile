@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-ansible
-version             2.5.4
+version             2.5.5
 revision            1
 license             GPL-3+
 
@@ -13,16 +13,16 @@ categories-append   sysutils
 platforms           darwin
 supported_archs     noarch
 
-maintainers         {adfernandes @adfernandes} blair gmail.com:pedro.salgado
+maintainers         {adfernandes @adfernandes} {blair @blair} {gmail.com:pedro.salgado @steenzout}
 
 master_sites        pypi:a/ansible
 homepage            https://github.com/ansible/ansible
 description         SSH-based configuration management and deployment system
 
 distname            ansible-${version}
-checksums           rmd160  b079086f1f6e3a5c4e153ef4e251faceeffb9521 \
-sha256  33a76684c47d1857d6e917af4f2eafac87521161f8181037edaa159a60deaeb3 \
-size    10146881
+checksums           rmd160  7f355fc30714fef769a0be50e2173b97cb410f26 \
+                    sha256  d7e5aae60c0e76c824bf8a410fe247b5c4afcfaee272f6283b4f996d237e365a \
+                    size    10150862
 
 conflicts           ansible
 
@@ -34,7 +34,7 @@ long_description \
     be written in any language and are transferred to managed machines \
     automatically.
 
-python.versions 27 36
+python.versions 27 35 36
 
 if {${name} ne ${subport}} {
     patch {

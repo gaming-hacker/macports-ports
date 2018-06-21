@@ -24,5 +24,5 @@ sha256  9b9ccd7d0b11b0e179f1f58dc2caa3e0c62c8609e1e1dc7dcaadf941b67d923c
 configure.args-append   --disable-spdy
 
 livecheck.type      regex
-livecheck.url       http://ftp.gnu.org/gnu/libmicrohttpd/
+livecheck.url       https://ftp.gnu.org/gnu/libmicrohttpd/
 livecheck.regex     "${name}-(\\d+\\.\\d+(\\.\\d+)?)"

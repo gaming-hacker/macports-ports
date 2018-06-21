@@ -22,4 +22,4 @@ sha256 18a13c954f7297978e7bf1a0cdadde7c531e519d61a045dae304e054f3b2df03
 configure.args	 --enable-mt --mandir=${prefix}/share/man
 
 livecheck.name   libosip2
-livecheck.url    http://ftp.gnu.org/gnu/osip/
+livecheck.url    https://ftp.gnu.org/gnu/osip/

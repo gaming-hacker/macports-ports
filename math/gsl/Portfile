@@ -72,5 +72,5 @@ if {[variant_isset doc_python27] || [variant_isset doc_python36] } {
 }
 
 livecheck.type  regex
-livecheck.url   http://ftp.gnu.org/gnu/gsl/
+livecheck.url   https://ftp.gnu.org/gnu/gsl/
 livecheck.regex ${name}-(\[\\d.\]+)${extract.suffix}
