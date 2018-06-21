@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            password-store-${version}
 use_xz              yes
 
 checksums           rmd160  69f8482fa565f3b5990de74cbf4429b20addd577 \
-                    sha256  4768c5e1965c4d2aeb28818681e484fb105b6f46cbd75a97608615c4ec6980ea \
-                    size    63620
+sha256  4768c5e1965c4d2aeb28818681e484fb105b6f46cbd75a97608615c4ec6980ea \
+size    63620
 
 patchfiles          patch-getopt-path.diff
 

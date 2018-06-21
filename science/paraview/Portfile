@@ -32,8 +32,8 @@ master_sites        ${homepage}/files/v${branch}/
 distname            ParaView-v${version}
 
 checksums           sha256  1b619e326ff574de808732ca9a7447e4cd14e94ae6568f55b6581896cd569dff \
-                    rmd160  3d8b47989bba8664aa781425731088754c0cd35d \
-                    size    51414419
+rmd160  3d8b47989bba8664aa781425731088754c0cd35d \
+size    51414419
 
 depends_build-append    port:readline \
     port:netcdf \

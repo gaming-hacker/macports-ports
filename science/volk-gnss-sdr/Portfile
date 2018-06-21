@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {${subport} eq "volk-gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -46,7 +46,7 @@ subport volk-gnss-sdr-devel {
     version             20170225
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
 
     # github changed the way tarballs are generated
     # remove this at next update
@@ -65,8 +65,8 @@ subport volk-gnss-sdr-next {
     github.setup        gnss-sdr gnss-sdr 6bb284b9bb25745a1d746022d88c8a2e68ae70af
     version             20180620
     checksums           rmd160 b51233a41e3ed27f76d9b54b4a958f910c048c8d\
-                        sha256 9ee45e270150efb07641bf309ddb553136421dd4313d17bd993334bf7c28be4d\
-                        size   3422155
+sha256 9ee45e270150efb07641bf309ddb553136421dd4313d17bd993334bf7c28be4d\
+size   3422155
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-devel
 
