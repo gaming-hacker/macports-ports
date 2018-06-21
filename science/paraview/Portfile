@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-2:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -72,7 +72,7 @@ pre-configure {
 
 # Some cmake tests will fail with "error: unrecognized option '-arch'" from gcc 4.6 and earlier.
 compilers.choose    fc
-mpi.setup           default -gcc44 -gcc45 -gcc46
+mpi.setup           default
 
 # no compilers.choose cc cxx because:
 # gcc6,7 C compiler fails with:
