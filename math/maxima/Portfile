@@ -26,6 +26,12 @@ long_description \
 
 homepage        http://maxima.sourceforge.net/
 
+depends_lib     port:sbcl
+depends_build   port:texinfo
+depends_run     port:rlwrap \
+                port:recode \
+                port:gnuplot
+
 subport maxima-devel {
     conflicts   maxima
 
@@ -54,12 +60,6 @@ rmd160  e58cedfa395ac5cb4715d1b60ed7cf6ae48979cf
 
     livecheck.regex     {<title>.*/Maxima-source/(.*)-source/maxima.*</title>}
 }
-
-depends_lib     port:sbcl
-depends_build   port:texinfo
-depends_run     port:rlwrap \
-                port:recode \
-                port:gnuplot
 
 patchfiles      src_maxima.in.patch
 
