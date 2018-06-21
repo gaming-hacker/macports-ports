@@ -22,10 +22,10 @@ subport wxMaxima-devel {
                     Provides the development version, which is typically updated every day.
 
     # git describe --tags : Version-16.12.x-1834-gb32fed0
-    version         18.02post
-    fetch.type      git
-    git.url         https://github.com/andrejv/wxmaxima
-    git.branch      b32fed0d535c05d589d1f573d2c0f4f839180d18
+    version     18.02post
+    fetch.type  git
+    git.url     https://github.com/andrejv/wxmaxima
+    git.branch  b32fed0d535c05d589d1f573d2c0f4f839180d18
 
     post-fetch {
         system -W ${worksrcpath} "git describe --tags"
