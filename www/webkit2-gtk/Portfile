@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 # We have an umbrella radar tracking webkit-gtk issues on OS X.  Please relate
 # any future issues with this tracker.
@@ -28,8 +28,8 @@ distname            webkitgtk-${version}
 dist_subdir         webkit-gtk
 
 checksums           rmd160  6bc2c007fe00f696c6014d72137280835c117765 \
-sha256  579b307d78fa16a73f112790178022166d7ad17d4147492ced9b9fba48f20dd8 \
-size    16623456
+                    sha256  579b307d78fa16a73f112790178022166d7ad17d4147492ced9b9fba48f20dd8 \
+                    size    16623456
 
 # don't overwrite build dependencies provided by cmake portgroup
 depends_build-append \
@@ -71,10 +71,9 @@ depends_lib         port:atk \
 
 # PR-152650-2.patch: WIP to re-enable gtk-doc support
 # PR-153138.patch: https://bugs.webkit.org/show_bug.cgi?id=153138
-# PR-157554.patch: https://bugs.webkit.org/show_bug.cgi?id=157554
 # PR-157574.patch: https://bugs.webkit.org/show_bug.cgi?id=157574
-# patch-disable-mach-exceptions.diff no longer needed after https://github.com/WebKit/webkit/commit/ebd290d9fba427a15c6fd8227e022fbc72cc8765
-# patch-fix-include-path.diff seems no longer necessary after https://github.com/WebKit/webkit/commit/1f8841aad73175256656a31d7d43fff1e069ba73
+# patch-name-conflicts.diff: avoid conflicts between Style in /usr/include/MacTypes.h
+#                            and WebCore::Style
 patchfiles-append \
     PR-152650-2.patch \
     PR-153138.patch \
@@ -87,6 +86,8 @@ patchfiles-append \
 # stripped out. Replace it with the previous version
 patchfiles-append \
     patch-ramsize.diff
+
+
 
 # Build out-of-tree
 configure.post_args     ../${worksrcdir}
@@ -120,17 +121,9 @@ pre-configure {
 }
 
 post-configure {
-    # Source/WebKit2 is renamed to Source/WebKit
-    # https://github.com/WebKit/webkit/commit/7f8a4a6dab6e75a624a97e5ce47de5626476b67d
-
     # https://bugs.webkit.org/show_bug.cgi?id=153176
     reinplace {s|\.\./\.\./lib/libWTFGTK\.a||} \
         ${build.dir}/Source/WebKit/CMakeFiles/WebKit.dir/link.txt
-    # reinplace {s|\.\./\.\./lib/libbmalloc\.a||} \
-        ${build.dir}/Source/JavaScriptCore/CMakeFiles/JavaScriptCore.dir/link.txt
-    # DatabaseProcess is renamed to StorageProcess
-    # https://bugs.webkit.org/show_bug.cgi?id=174879
-    # testb3 is enabled in developer mode only after https://github.com/WebKit/webkit/commit/e276ecde58923cb70dcfbc52544c6b81b661dac4
     reinplace {s|[\./]*\.\./lib/lib[^\.]*\.a||g} \
         ${build.dir}/Source/JavaScriptCore/CMakeFiles/LLIntOffsetsExtractor.dir/link.txt \
         ${build.dir}/Source/JavaScriptCore/shell/CMakeFiles/jsc.dir/link.txt \
@@ -187,30 +180,31 @@ if {${os.platform} eq "darwin" && ${os.major} <= 13} {
     # the unix version does not, and seems to build OK so use that
     # the ifdefs were too cumbersome to sort out, so for now I just stripped those out and left
     # the unix build behind - FIXME: sort the ifdefs out
+    # https://bugs.webkit.org/show_bug.cgi?id=157554
     patchfiles-append   patch-WTF-wtf-Randomdevice.diff
 
     # add dep for newer ruby and spec this for build
     # https://trac.macports.org/ticket/52016
     depends_build-append    port:ruby24
     configure.args-append   -DRUBY_EXECUTABLE=${prefix}/bin/ruby2.4
+    
+    if { ${os.major} < 11 } {
+        # disabling JIT fixes the following build error on 10.6.8
+        # offlineasm: No magic values found. Skipping assembly file generation.
+        configure.args-append -DENABLE_JIT=OFF
+    }
 
     # fix missing PRId64 definitions on systems
     # that don't define __STDC_FORMAT_MACROS by default
     # https://bugs.webkit.org/show_bug.cgi?id=156596
     # https://trac.macports.org/ticket/52016
     patchfiles-append patch-snowleopard-cmakelists-stdcformatmacros.diff
-
-    # fix a Cursor name collision with Carbon API
-    # https://trac.macports.org/ticket/52016
-    if {[variant_isset x11]} {
-        patchfiles-append patch-snowleopard-npruntime-redefine-cursor.diff
-    }
     
     # special case: fix build on 10.6 with macports-libstdc++
     # contents of snowmath.h should someday become part of gcc6 cmath
     if { ${configure.cxx_stdlib} eq "macports-libstdc++"  && ${os.major} < 11 } {
         configure.cxxflags-append -D_GLIBCXX_USE_C99_MATH_TR1=1
-        configure.cxxflags-append -include ${portpath}/${filesdir}/snowmath.h
+        configure.cxxflags-append -include ${filespath}/snowmath.h
     }
 }
 
