@@ -34,7 +34,7 @@ depends_build       port:gawk \
                     port:pkgconfig
 
 depends_lib         port:beecrypt \
-                    port:db60 \
+                    port:db62 \
                     port:expat \
                     port:gettext \
                     port:libiconv \
@@ -99,8 +99,8 @@ configure.args-append       --disable-openmp \
                             --with-syck=internal
 configure.cppflags-append   -I${prefix}/include/ossp \
                             -I${prefix}/include/xar
-configure.cppflags-append   -I${prefix}/include/db60
-configure.ldflags-append    -L${prefix}/lib/db60
+configure.cppflags-append   -I${prefix}/include/db62
+configure.ldflags-append    -L${prefix}/lib/db62
 
 post-extract {
     system -W ${workpath} "${portutil::autoconf::tar_command} -xzf rpm-${version}.tar.gz"

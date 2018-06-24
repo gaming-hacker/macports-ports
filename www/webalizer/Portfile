@@ -72,9 +72,9 @@ variant largefile conflicts no_largefile description {Add support for large file
 
 variant dns conflicts no_dns description {Enable DNS/GeoDB lookup code} {
     configure.args-delete   --disable-dns
-    configure.args-append   --with-db=${prefix}/include/db60 \
-                            --with-dblib=${prefix}/lib/db60
-    depends_lib-append      port:db60
+    configure.args-append   --with-db=${prefix}/include/db62 \
+                            --with-dblib=${prefix}/lib/db62
+    depends_lib-append      port:db62
 }
 
 # Delete the below after 1/17/2019

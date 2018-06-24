@@ -37,7 +37,7 @@ sha256 989e51194c6adadbd156da3288e37bad847b93b3b876502e83033b70493af392
 
 platforms       darwin
 
-depends_lib     port:db60-java \
+depends_lib     port:db62-java \
                 port:zeroc-ice35
 depends_build   port:apache-ant \
                 port:jgoodies-common \
@@ -57,15 +57,15 @@ post-patch {
 
 use_configure   no
 
-set classpath ${prefix}/lib/db60/db.jar:${prefix}/share/java/jgoodies-common.jar:${prefix}/share/java/jgoodies-forms.jar:${prefix}/share/java/jgoodies-looks.jar:${prefix}/share/java/proguard.jar
+set classpath ${prefix}/lib/db62/db.jar:${prefix}/share/java/jgoodies-common.jar:${prefix}/share/java/jgoodies-forms.jar:${prefix}/share/java/jgoodies-looks.jar:${prefix}/share/java/proguard.jar
 
 build.dir       ${worksrcpath}/java
-build.env       JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home CLASSPATH=${classpath} ANT_OPTS="-Djava.awt.headless=true -Xmx512m" ICE_HOME=${prefix}
+build.env       JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home CLASSPATH=${classpath} ANT_OPTS="-Djava.awt.headless=true -Xmx512m" ICE_HOME=${prefix}
 build.cmd       ant
 build.target    clean all
 
 test.run        yes
-test.env        JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home CLASSPATH=${classpath} ANT_OPTS="-Xmx512m -Djava.awt.headless=true" ICE_HOME=${prefix} DYLD_LIBRARY_PATH=${prefix}/lib/db60 USE_BIN_DIST=yes
+test.env        JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home CLASSPATH=${classpath} ANT_OPTS="-Xmx512m -Djava.awt.headless=true" ICE_HOME=${prefix} DYLD_LIBRARY_PATH=${prefix}/lib/db62 USE_BIN_DIST=yes
 test.cmd        python
 test.target     allTests.py --debug --env
 

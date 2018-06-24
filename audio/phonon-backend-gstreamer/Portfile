@@ -42,21 +42,6 @@ subport ${name}-qt5 {
     }
 }
 
-if {${subport} ne "${name}-qt5"} {
-    PortGroup       qt4 1.0
-    PortGroup       cmake 1.0
-    categories      audio kde kde4
-    long_description    A GStreamer backend for the Phonon multimedia library.
-    depends_lib-append  port:phonon port:automoc
-
-    configure.args-append -DPhonon_DIR=${qt_cmake_module_dir}/phonon
-    post-destroot {
-        if {[file exists ${qt_plugins_dir}] && ![file exists ${qt_plugins_dir}/phonon_backend]} {
-            xinstall -m 755 -d ${destroot}${qt_plugins_dir}
-            ln -s ${prefix}/lib/kde4/plugins/phonon_backend ${destroot}${qt_plugins_dir}
-        }
-    }
-}
 
 livecheck.type	    regex
 livecheck.url	    http://www.gtlib.gatech.edu/pub/kde/stable/phonon/${name}/

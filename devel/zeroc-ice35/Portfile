@@ -52,7 +52,7 @@ patchfiles      patch-ice.cpp.config.Make.rules.diff \
 patch.pre_args  -p1
 platforms       darwin
 
-depends_lib     port:db60 \
+depends_lib     port:db62 \
                 port:expat \
                 port:libiconv \
                 port:mcpp \

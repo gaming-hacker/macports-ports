@@ -66,7 +66,7 @@ size	8369823
     depends_lib     port:apr \
                     port:apr-util \
                     port:cyrus-sasl2 \
-                    port:db60 \
+                    port:db62 \
                     port:expat \
                     port:gettext \
                     port:libcomerr \
@@ -82,7 +82,7 @@ size	8369823
 
     depends_build   port:swig
 
-    configure.args  --with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db60:db-6.0 \
+    configure.args  --with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db62:db-6.2 \
                     --with-apr=${prefix}/bin/apr-1-config \
                     --with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
                     --mandir=\\\${prefix}/share/man \
@@ -111,8 +111,8 @@ size	8369823
     }
 
     variant no_bdb description {Build without support for BerkeleyDB repositories} {
-        depends_lib-delete      port:db60
-        configure.args-delete   --with-berkeley-db=:${prefix}/include/db60:${prefix}/lib/db60:db-6.0
+        depends_lib-delete      port:db62
+        configure.args-delete   --with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db62:db-6.2
         configure.args-append   --without-berkeley-db
     }
 

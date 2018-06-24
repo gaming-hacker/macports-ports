@@ -1,6 +1,8 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup qt5 1.0
+PortGroup cmake 1.0
 
 name                phonon
 version             4.10.1
@@ -20,56 +22,7 @@ variant demos description {Build the demos} {
     configure.args-append   -DPHONON_BUILD_DEMOS:BOOL=ON
 }
 
-subport ${name}-qt5 {
-    PortGroup           qt5 1.0
-    PortGroup           cmake 1.1
-    categories          audio kde kf5
-    long_description    Phonon is a multimedia, multi-platform sound \
-        framework for the application developer. This is the  Phonon 4\
-        transitional library for Qt5 (API compatible with regular Phonon4)
-
-    qt5.depends_component \
-                            qtdeclarative qttools
-
-    depends_build-append    port:kde-extra-cmake-modules
-    configure.args-append   -DPHONON_BUILD_PHONON4QT5:BOOL=ON
-
-    set LPH libphonon4qt5
-    post-destroot {
-
-        if {[variant_isset demos]} {
-            set demos_dest_dir ${destroot}${prefix}/share/examples/phonon4qt5
-            xinstall -m 775 -d ${demos_dest_dir}
-            copy ${workpath}/build/demos/simpleplayer/simpleplayer.app ${demos_dest_dir}
-            copy ${workpath}/build/demos/metadatareader/metadatareader.app ${demos_dest_dir}
-            copy ${workpath}/build/demos/phota/phota.app ${demos_dest_dir}
-            copy ${workpath}/build/demos/simplecapture/simplecapture.app ${demos_dest_dir}
-        }
-
-        # fix library and plugin self-names
-        system "install_name_tool -id ${prefix}/lib/${LPH}.4.dylib ${destroot}${prefix}/lib/${LPH}.dylib"
-        system "install_name_tool -id ${prefix}/lib/${LPH}experimental.4.dylib ${destroot}${prefix}/lib/${LPH}experimental.dylib"
-
-        # fix use of libphonon4qt5
-        system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-            ${destroot}${prefix}/lib/${LPH}experimental.dylib"
-        system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-            ${destroot}${qt_plugins_dir}/designer/phononwidgets.dylib"
-        system "install_name_tool -id phononwidgets.dylib ${destroot}${qt_plugins_dir}/designer/phononwidgets.dylib"
-        if {[variant_isset demos]} {
-            system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/simpleplayer.app/Contents/MacOS/simpleplayer"
-            system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/metadatareader.app/Contents/MacOS/metadatareader"
-            system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/phota.app/Contents/MacOS/phota"
-            system "install_name_tool -change lib/${LPH}.4.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/simplecapture.app/Contents/MacOS/simplecapture"
-        }
-    }
-}
-
-default_variants    +compversion440
+# default_variants    +compversion440
 
 # fix use of CMAKE_INSTALL_NAME to be an absolute path
 # (RJVB: why is this necessary?)
@@ -95,66 +48,6 @@ if {![variant_isset pulseaudio]} {
         -DPULSEAUDIO_INCLUDE_DIR= \
         -DPULSEAUDIO_LIBRARY= \
         -DPULSEAUDIO_MAINLOOP_LIBRARY=
-}
-
-if {${subport} ne "${name}-qt5"} {
-    PortGroup           qt4 1.0
-    PortGroup           cmake 1.1
-    categories          audio kde kde4
-    long_description    Phonon is a multimedia, multi-platform sound \
-        framework for the application developer.
-    # do we really depend on port:automoc, because cmake prints
-    # -- Using CMake automoc builtin
-    depends_build-append    port:automoc
-
-    variant compversion440 description {Build libraries with compatibility version 4.4.0 for existing Qt4 installs expecting that} {
-        # fix the library compatibility version to be 4.4.0
-        patchfiles-append   patch-CMakeLists.txt.diff
-    }
-
-    set LPH libphonon
-    post-destroot {
-
-        global demos_dest_dir
-        if {[variant_isset demos]} {
-            set demos_dest_dir ${destroot}${prefix}/share/examples/phonon
-            xinstall -m 775 -d ${demos_dest_dir}
-            copy ${workpath}/build/demos/simpleplayer/simpleplayer ${demos_dest_dir}
-            copy ${workpath}/build/demos/metadatareader/metadatareader ${demos_dest_dir}
-            copy ${workpath}/build/demos/phota/phota ${demos_dest_dir}
-            copy ${workpath}/build/demos/simplecapture/simplecapture ${demos_dest_dir}
-        }
-
-        if {[variant_isset compversion440]} {
-            # link major library version name
-            ln -s ${prefix}/lib/${LPH}.dylib ${destroot}${prefix}/lib/${LPH}.4.dylib
-            ln -s ${prefix}/lib/${LPH}experimental.dylib ${destroot}${prefix}/lib/${LPH}experimental.4.dylib
-
-            set DLVERS  4.4.0
-        } else {
-            set DLVERS  4
-        }
-
-        # fix library and plugin self-names
-        system "install_name_tool -id ${prefix}/lib/${LPH}.4.dylib ${destroot}${prefix}/lib/${LPH}.dylib"
-        system "install_name_tool -id ${prefix}/lib/${LPH}experimental.4.dylib ${destroot}${prefix}/lib/${LPH}experimental.dylib"
-
-        # fix use of libphonon
-        system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-            ${destroot}${prefix}/lib/${LPH}experimental.dylib"
-        system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-            ${destroot}${qt_plugins_dir}/designer/libphononwidgets.dylib"
-        if {[variant_isset demos]} {
-            system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/simpleplayer"
-            system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/metadatareader"
-            system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/phota"
-            system "install_name_tool -change lib/${LPH}.${DLVERS}.dylib ${prefix}/lib/${LPH}.4.dylib \
-                ${demos_dest_dir}/simplecapture"
-        }
-    }
 }
 
 cmake.out_of_source         yes

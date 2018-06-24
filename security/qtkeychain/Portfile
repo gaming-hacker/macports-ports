@@ -19,7 +19,7 @@ use_parallel_build  no
 checksums           rmd160  bd836da78724c75a4eb169018b3df6dd32f1f625 \
 sha256  be986d0f1a24b7eac8eddce94bb820652fcdcf6fb9b590441743a510abcc4739
 
-foreach qt_major {4 5} {
+foreach qt_major {5} {
     subport ${name}-qt${qt_major} {
         PortGroup qt${qt_major} 1.0
 

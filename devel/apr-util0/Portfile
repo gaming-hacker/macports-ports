@@ -25,11 +25,11 @@ use_bzip2       yes
 checksums       sha1   5ffcdd98ebbc7e7d9da5029cf7fac2744901bb50 \
 rmd160 2f03d05f9a0a32158f31a820b75eca5dd3fbb60c
 
-depends_lib     port:apr0 port:expat port:libiconv port:db60
+depends_lib     port:apr0 port:expat port:libiconv port:db62
 
 configure.args  --with-apr=${prefix}/bin/apr-config --with-expat=${prefix} \
                 --with-iconv=${prefix} \
-                --with-berkeley-db=${prefix}/include:${prefix}/lib/db60 \
+                --with-berkeley-db=${prefix}/include:${prefix}/lib/db62 \
                 --without-mysql --without-pgsql
 
 test.run        yes
@@ -41,8 +41,8 @@ post-destroot {
 }
 
 variant no_bdb {
-    depends_lib-delete          port:db60
-    configure.args-delete       --with-berkeley-db=${prefix}/include:${prefix}/lib/db60
+    depends_lib-delete          port:db62
+    configure.args-delete       --with-berkeley-db=${prefix}/include:${prefix}/lib/db62
     configure.args-append       --without-berkeley-db
 }
 
@@ -54,7 +54,7 @@ variant openldap {
 }
 
 #pre-configure {
-#    reinplace "s|^Libs: |Libs: -L${prefix}/lib/db60 |" $worksrcpath/apr-util.pc.in
+#    reinplace "s|^Libs: |Libs: -L${prefix}/lib/db62 |" $worksrcpath/apr-util.pc.in
 #}
 
 livecheck.type  none

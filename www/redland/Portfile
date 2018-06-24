@@ -51,76 +51,26 @@ post-configure {
 test.run            yes
 test.target         check
 
-if {![variant_isset db44] && ![variant_isset db47]} {
-    default_variants +db60
-}
+ default_variants +db62
 
-variant db44 conflicts db46 db47 db60 {
+
+variant db62  {
     configure.args-delete   --with-bdb=no
     configure.args-append   --with-bdb=${prefix} \
-                            --with-bdb-include=${prefix}/include/db44 \
-                            --with-bdb-lib=${prefix}/lib/db44
-    depends_lib-append      port:db44
+                            --with-bdb-include=${prefix}/include/db62 \
+                            --with-bdb-lib=${prefix}/lib/db62
+    depends_lib-append      port:db62
 }
 
-variant db46 conflicts db44 db47 db60 {
-    configure.args-delete   --with-bdb=no
-    configure.args-append   --with-bdb=${prefix} \
-                            --with-bdb-include=${prefix}/include/db46 \
-                            --with-bdb-lib=${prefix}/lib/db46
-    depends_lib-append      port:db46
-}
-
-variant db47 conflicts db44 db46 db60 {
-    configure.args-delete   --with-bdb=no
-    configure.args-append   --with-bdb=${prefix} \
-                            --with-bdb-include=${prefix}/include/db47 \
-                            --with-bdb-lib=${prefix}/lib/db47
-    depends_lib-append      port:db47
-}
-
-variant db60 conflicts db44 db46 db47 {
-    configure.args-delete   --with-bdb=no
-    configure.args-append   --with-bdb=${prefix} \
-                            --with-bdb-include=${prefix}/include/db460 \
-                            --with-bdb-lib=${prefix}/lib/db60
-    depends_lib-append      port:db60
-}
-
-variant mysql4 conflicts mysql5 {
+variant mysql57 {
     configure.args-delete --with-mysql=no
-    depends_lib-append port:mysql4
+    configure.args-append --with-mysql=${prefix}/bin/mysql_config57
+    depends_lib-append path:bin/mysql_config5:mysql57
 }
 
-variant mysql5 conflicts mysql4 {
-    configure.args-delete --with-mysql=no
-    configure.args-append --with-mysql=${prefix}/bin/mysql_config5
-    depends_lib-append path:bin/mysql_config5:mysql5
-}
-
-variant postgresql7 conflicts postgresql80 postgresql81 postgresql82 postgresql83 {
+variant postgresq11 conflicts  {
     configure.args-delete --with-postgresql=no
-    depends_lib-append port:postgresql7
-}
-
-variant postgresql80 conflicts postgresql7 postgresql81 postgresql82 postgresql83 {
-    configure.args-delete --with-postgresql=no
-    depends_lib-append port:postgresql80
-}
-
-variant postgresql81 conflicts postgresql7 postgresql80 postgresql82 postgresql83 {
-    configure.args-delete --with-postgresql=no
-    depends_lib-append port:postgresql81
-}
-
-variant postgresql82 conflicts postgresql7 postgresql80 postgresql81 postgresql83 {
-    configure.args-delete --with-postgresql=no
-    depends_lib-append port:postgresql82
-}
-
-variant postgresql83 conflicts postgresql7 postgresql80 postgresql81 postgresql82 {
-    configure.args-delete --with-postgresql=no
-    depends_lib-append port:postgresql83
+    depends_lib-append port:postgresql11
 }
 
 variant sqlite3 {

@@ -97,7 +97,7 @@ variant vala description {Build vala bindings and extensions} {
 }
 
 default_variants    +vala
-        
+
 variant mysql5 \
     description {support for current MySQL 5.x} {
     depends_lib-append  path:bin/mysql_config5:mysql5
@@ -108,56 +108,17 @@ variant mysql5 \
     configure.cppflags-append   "-I${prefix}/include/mysql5/mysql"
 }
 
-variant postgresql92 conflicts postgresql93 postgresql94 postgresql95 postgresql96 \
-    description {support for PostgreSQL 9.2.x} {
+variant postgresql11  \
+    description {support for PostgreSQL 11.0.x} {
     configure.cppflags-append   "-I${prefix}/include/postgresql92"
-    depends_lib-append  port:postgresql92
+    depends_lib-append  port:postgresql11
     configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql92
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql11
 }
 
-variant postgresql93 conflicts postgresql92 postgresql94 postgresql95 postgresql96 \
-    description {support for PostgreSQL 9.3.x} {
-    configure.cppflags-append   "-I${prefix}/include/postgresql93"
-    depends_lib-append  port:postgresql93
-    configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql93
-}
-
-variant postgresql94 conflicts postgresql92 postgresql93 postgresql95 postgresql96 \
-    description {support for PostgreSQL 9.4.x} {
-    configure.cppflags-append   "-I${prefix}/include/postgresql94"
-    depends_lib-append  port:postgresql94
-    configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql94
-}
-
-variant postgresql95 conflicts postgresql92 postgresql93 postgresql94 postgresql96 \
-    description {support for PostgreSQL 9.5.x} {
-    configure.cppflags-append   "-I${prefix}/include/postgresql95"
-    depends_lib-append  port:postgresql95
-    configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql95
-}
-
-variant postgresql96 conflicts postgresql92 postgresql93 postgresql94 postgresql95 \
-    description {support for PostgreSQL 9.6.x} {
-    configure.cppflags-append   "-I${prefix}/include/postgresql96"
-    depends_lib-append  port:postgresql96
-    configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql96
-}
-
-if {![variant_isset postgresql92] && \
-    ![variant_isset postgresql93] && \
-    ![variant_isset postgresql94] && \
-    ![variant_isset postgresql95] } {
-    default_variants +postgresql96
-}
-
-variant db53 conflicts db60 \
-    description {support for Berkeley DB 5.3.x} {
-    set db_version 53
+variant db62 \
+    description {support for Berkeley DB 6.2.x} {
+    set db_version 62
     depends_lib-append  port:db${db_version}
     configure.cppflags-append "-I${prefix}/include/db${db_version}"
     configure.args-delete   --with-bdb=no
@@ -165,19 +126,7 @@ variant db53 conflicts db60 \
                             --with-bdb-libdir-name=lib/db${db_version}
 }
 
-variant db60 conflicts db53 \
-    description {support for Berkeley DB 6.0.x} {
-    set db_version 60
-    depends_lib-append  port:db${db_version}
-    configure.cppflags-append "-I${prefix}/include/db${db_version}"
-    configure.args-delete   --with-bdb=no
-    configure.args-append   --with-bdb=${prefix} \
-                            --with-bdb-libdir-name=lib/db${db_version}
-}
-
-if {![variant_isset db53]} {
-    default_variants +db60
-}
+default_variants +db62
 
 variant quartz {}
 
