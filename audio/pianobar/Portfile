@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -20,8 +20,8 @@ long_description            pianobar is a console client for the \
                             proxy support for listening outside of USA.
 
 checksums                   rmd160  b52dcb4aa987392d925c51af84f052b26b91fe71 \
-                            sha256  a708c6a6eac1c5db1f87a2e2fe9f96a39359ee8ab8e9702892a98fe98bf9ff06 \
-                            size    55424
+sha256  a708c6a6eac1c5db1f87a2e2fe9f96a39359ee8ab8e9702892a98fe98bf9ff06 \
+size    55424
 
 depends_build               port:pkgconfig
 

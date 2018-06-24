@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ distname            WireGuard-${version}
 use_xz              yes
 
 checksums           rmd160  fea2eea47173a33ea3c87e8862adc38dd46b7997 \
-                    sha256  b4db98ea751c8e667454f98ea1c15d704a784fe1bc093b03bd64575418a7c242 \
-                    size    270920
+sha256  b4db98ea751c8e667454f98ea1c15d704a784fe1bc093b03bd64575418a7c242 \
+size    270920
 
 depends_run         port:bash \
                     port:wireguard-go

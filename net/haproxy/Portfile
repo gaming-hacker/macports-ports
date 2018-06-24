@@ -30,8 +30,8 @@ sha256  bcc05ab824bd2f89b8b21ac05459c0a0a0e02247b57ffe441d52cfe771daea92 \
 size    2054534
 =======
 checksums           rmd160  7d3edc4128309f52daa739e52d6719855bc3bd08 \
-                    sha256  c93bd1a2d4595810a38315de9687b813bf7df790bd807faf8982a13596b0bc60 \
-                    size    2058928
+sha256  c93bd1a2d4595810a38315de9687b813bf7df790bd807faf8982a13596b0bc60 \
+size    2058928
 >>>>>>> 3ae2eed614697c3f42833b9e500ffcda6411a267
 
 depends_lib         path:lib/libssl.dylib:openssl \

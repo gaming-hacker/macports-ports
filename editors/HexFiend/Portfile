@@ -12,8 +12,8 @@ sha256  2745472970e81e390d250374fcfb0a1e96544f549c8b1edad9145aa42dfab858
 =======
 github.setup    ridiculousfish HexFiend 2.9.0 v
 checksums       rmd160  ba4276249a262c1b808baafe3aa580ecfa75f224 \
-                sha256  158d398c7f723a1b1e622cabac7dd80b5556a64c8b649ab88e9989f45d2a39cc \
-                size    3474321
+sha256  158d398c7f723a1b1e622cabac7dd80b5556a64c8b649ab88e9989f45d2a39cc \
+size    3474321
 >>>>>>> 3ae2eed614697c3f42833b9e500ffcda6411a267
 
 epoch           1

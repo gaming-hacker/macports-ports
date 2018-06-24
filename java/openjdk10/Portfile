@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -25,8 +25,8 @@ master_sites     https://download.java.net/java/GA/jdk10/${version}/fb4372174a71
 distname         openjdk-${version}_osx-x64_bin
 
 checksums        rmd160  00a1a8a0e63901ecdea7d013f8307ea601e83a55 \
-                 sha256  650e06c203a9d2752d686dc62206580afdc909af924b7ea8573b1c671e182ab0 \
-                 size    200863681
+sha256  650e06c203a9d2752d686dc62206580afdc909af924b7ea8573b1c671e182ab0 \
+size    200863681
 
 worksrcdir       jdk-${version}.jdk
 
