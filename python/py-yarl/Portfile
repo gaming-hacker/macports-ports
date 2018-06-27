@@ -5,6 +5,7 @@ PortGroup           python 1.0
 
 name                py-yarl
 version             1.2.6
+revision            1
 categories-append   devel
 platforms           darwin
 license             Apache-2
@@ -27,8 +28,8 @@ checksums           rmd160  b0f0a7cdf55a7188de0a962d8393f895c234b517 \
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools
-    depends_lib         port:py${python.version}-idna
-    depends_lib         port:py${python.version}-multidict
+    depends_lib         port:py${python.version}-idna \
+                        port:py${python.version}-multidict
 } else {
     livecheck.type      pypi
 }
