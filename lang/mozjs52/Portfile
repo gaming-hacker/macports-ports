@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -23,8 +23,8 @@ distname            mozjs-${version}gnome1
 use_xz              yes
 
 checksums           rmd160  b8815d4e62c36c41dc4e568d44a7430a4da2c86e \
-sha256  786647e0ee743ab8ebd67d307ab406f93d50363ead7d7d05e29eeb113ebbf525 \
-size    24712740
+                    sha256  786647e0ee743ab8ebd67d307ab406f93d50363ead7d7d05e29eeb113ebbf525 \
+                    size    24712740
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \
@@ -38,7 +38,13 @@ depends_lib         port:icu \
 # When modifying this blacklist, also update the gjs blacklist.
 # Requires clang-3.6 or equivalent
 # While clang-602.0.53 (Xcode 6.4) is based on 3.6, it apparently doesn't pass the configure check
-compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 700} macports-clang-3.3 macports-clang-3.4
+compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 700} macports-clang-3.3 macports-clang-3.4 macports-clang-3.5
+compiler.fallback-append macports-clang-5.0 macports-clang-4.0 macports-clang-3.9 macports-clang-3.8 macports-clang-3.7
+
+if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
+    depends_build-append port:cctools
+    configure.env-append AR=${prefix}/bin/ar
+}
 
 extract.mkdir       yes
 

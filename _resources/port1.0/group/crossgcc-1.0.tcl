@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 #
 # This PortGroup automatically sets all the fields of the various cross gcc
 # ports (e.g. arm-none-eabi-gcc).
@@ -22,23 +22,31 @@ default crossgcc.languages {{c c++}}
 
 array set crossgcc.versions_info {
     7.1.0 {bzip2 {
-rmd160  a228dc45a09eda91b1a201d234f9013b3009b461
-sha256  8a8136c235f64c6fef69cac0d73a46a1a09bb250776a050aec8f9fc880bebc17
+        rmd160  a228dc45a09eda91b1a201d234f9013b3009b461
+        sha256  8a8136c235f64c6fef69cac0d73a46a1a09bb250776a050aec8f9fc880bebc17 \
+        size    84303533
     }}
     7.2.0 {xz {
-rmd160  fa8eed36c78cf135f9cc88e60845996b5cfaba52
-sha256  1cf7adf8ff4b5aa49041c8734bbcf1ad18cc4c94d0029aae0f4e48841088479a
+        rmd160  fa8eed36c78cf135f9cc88e60845996b5cfaba52
+        sha256  1cf7adf8ff4b5aa49041c8734bbcf1ad18cc4c94d0029aae0f4e48841088479a \
+        size    62312628
     }}
     7.3.0 {xz {
-rmd160  31f6934a0e0c0ca84b6668110f9afdb91c1f9023 \
-sha256  832ca6ae04636adbb430e865a1451adf6979ab44ca1c8374f61fba65645ce15c
+        rmd160  31f6934a0e0c0ca84b6668110f9afdb91c1f9023 \
+        sha256  832ca6ae04636adbb430e865a1451adf6979ab44ca1c8374f61fba65645ce15c \
+        size    62462388
+    }}
+    8.1.0 {xz {
+        rmd160  de00e96f3d70b6a08215930a6884672e56975d05 \
+        sha256  1d1866f992626e61349a1ccd0b8d5253816222cdc13390dcfaa74b093aa2b153 \
+        size    63372320
     }}
 }
 
 array set newlib.versions_info {
     3.0.0 {gz {
-rmd160  505d486c9c658d10ed3b1af13459b2f289680b1f \
-sha256  c8566335ee74e5fcaeb8595b4ebd0400c4b043d6acb3263ecb1314f8f5501332
+        rmd160  505d486c9c658d10ed3b1af13459b2f289680b1f \
+        sha256  c8566335ee74e5fcaeb8595b4ebd0400c4b043d6acb3263ecb1314f8f5501332
     }}
 }
 

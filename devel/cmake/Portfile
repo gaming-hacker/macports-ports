@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -39,8 +39,8 @@ if {${subport} eq ${name}} {
 
     version         ${branch}.4
     checksums       rmd160 6182b0a029c127db27bd88208bbb7f94923ecb2d \
-sha256 8f864e9f78917de3e1483e256270daabc4a321741592c5b36af028e72bff87f5 \
-size   7955301
+                    sha256 8f864e9f78917de3e1483e256270daabc4a321741592c5b36af028e72bff87f5 \
+                    size   7955301
 
     master_sites    ${homepage}/files/v${branch}/
     conflicts       cmake-devel
@@ -54,7 +54,8 @@ size   7955301
         patch-Modules-noArchCheck.release.diff \
         patch-CMakeFindFrameworks.cmake.release.diff \
         patch-Source_CMakeVersionCompute.cmake.release.diff \
-        patch-Source_CMakeLists.txt.release.diff
+        patch-Source_CMakeLists.txt.release.diff \
+        patch-Source_Modules_FindLibUV.cmake.release.diff
 
     livecheck.type  regex
     livecheck.regex ${name}-(\[0-9.\]+)${extract.suffix}
@@ -64,11 +65,11 @@ size   7955301
 
     # devel
 
-    version         20180616
-    set commit      63fbff548e9bb3227943b2e94e700257d343d2c3
-    checksums       rmd160 f5f467926c21ab4631e523ee947f1e5c2925ae54\
-sha256 524642a2c3ceddbd5a0f724cdef7ef57f306cfa84c44fcbd6e02535f7248b00a\
-size   6283769
+    version         20180625
+    set commit      d45d5e28ec1d662de3602562e033967481cd0c40
+    checksums       rmd160 acd127e376627238aaeb64388f4da3274006e090\
+                    sha256 7260bac6d2e548054853a69bc9e951c6cfe793b77c4be461289a0b83f9ffa987\
+                    size   6310393
 
     use_bzip2       yes
     master_sites    https://gitlab.kitware.com/cmake/cmake/repository/archive${extract.suffix}?ref=${commit}&
@@ -87,7 +88,8 @@ size   6283769
         patch-Modules-noArchCheck.devel.diff \
         patch-CMakeFindFrameworks.cmake.devel.diff \
         patch-Source_CMakeVersionCompute.cmake.devel.diff \
-        patch-Source_CMakeLists.txt.devel.diff
+        patch-Source_CMakeLists.txt.devel.diff \
+        patch-Source_Modules_FindLibUV.cmake.devel.diff
 
     livecheck.type  regex
     livecheck.regex /cmake/cmake/commit/(\[0-9a-g\]+)
@@ -106,9 +108,6 @@ depends_lib-append  port:curl \
 # allow use of libuv or libuv-devel;
 # system libuv is the default as of 20160830 (g320f5)
 depends_lib-append  path:lib/pkgconfig/libuv.pc:libuv
-
-# common patchfiles
-patchfiles-append   patch-Source_Modules_FindLibUV.cmake.diff
 
 configure.env-append \
                     CMAKE_PREFIX_PATH=${prefix} \
