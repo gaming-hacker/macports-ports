@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,8 +6,8 @@ PortGroup           bitbucket 1.0
 
 bitbucket.setup     ruamel yaml 0.15.41
 checksums           rmd160 878c958c89e6d1196b7af59bff025173a5bba953 \
-                    sha256 1716914bf9c0e9c78bbc4b0161d872f5ba1c81be8c4e4dc8a28aeb555399d828 \
-                    size   362123
+sha256 1716914bf9c0e9c78bbc4b0161d872f5ba1c81be8c4e4dc8a28aeb555399d828 \
+size   362123
 
 name                py-ruamel-yaml
 license             MIT
@@ -20,7 +20,7 @@ long_description    ${description}. \
 
 homepage            http://yaml.readthedocs.io/
 
-python.versions     27 36
+python.versions 27 36
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

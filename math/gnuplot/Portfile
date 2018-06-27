@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive         1.0
@@ -30,8 +30,8 @@ master_sites        sourceforge:project/gnuplot/gnuplot/${version}
 dist_subdir         ${name}/${version}
 
 checksums           rmd160  fcf8e239cb40b9bd0e4bf19b3da398e81b4abec5 \
-                    sha256  1515f000bd373aaa53b16183f274189d4f5e0ae47d22f434857933d16a4770cb \
-                    size    5292321
+sha256  1515f000bd373aaa53b16183f274189d4f5e0ae47d22f434857933d16a4770cb \
+size    5292321
 
 depends_build       port:pkgconfig
 

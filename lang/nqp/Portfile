@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ license             Artistic-2
 platforms           darwin
 
 checksums           rmd160  539c4b2afedec3f5c52a92f366dc7439c9c5f1fc \
-                    sha256  f6d5b67267a6356bde6e44203b6463b75f5a89dbf4c6dd71f1e29637fd0b0fa7 \
-                    size    3792244
+sha256  f6d5b67267a6356bde6e44203b6463b75f5a89dbf4c6dd71f1e29637fd0b0fa7 \
+size    3792244
 
 depends_build       port:perl5
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 # We have an umbrella radar tracking webkit-gtk issues on OS X.  Please relate
 # any future issues with this tracker.
@@ -28,8 +28,8 @@ distname            webkitgtk-${version}
 dist_subdir         webkit-gtk
 
 checksums           rmd160  3fb83eb97d9516d2a69140e1c3bd0d8e50e42b4a \
-                    sha256  59f4359ace702ecaa92b975666c1bcde3858258909b047e7675ce3807efdd1e7 \
-                    size    16873972
+sha256  59f4359ace702ecaa92b975666c1bcde3858258909b047e7675ce3807efdd1e7 \
+size    16873972
 
 depends_build-append \
                     port:gperf \

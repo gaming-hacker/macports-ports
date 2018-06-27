@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ homepage            https://www.haproxy.org/
 master_sites        ${homepage}download/${branch}/src/
 
 checksums           rmd160  9c423bf35f423989e267ea5a3841be1c0542584b \
-                    sha256  b4b403ceb5efe3c65c6d86e1a44fc0953189f12cdf0bd884e5df04bbabb27947 \
-                    size    2058936
+sha256  b4b403ceb5efe3c65c6d86e1a44fc0953189f12cdf0bd884e5df04bbabb27947 \
+size    2058936
 
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:pcre \

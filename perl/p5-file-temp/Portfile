@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -19,7 +19,7 @@ long_description    File::Temp can be used to create and open temporary files \
 platforms           darwin
 
 checksums           rmd160  0792e360ba023ebbaefa635019d2eedf2ff5a5aa \
-                    sha256  65e992d9e3093e8a66221f6a292d04431b05c91c29cdd86b5f7b5952f1bd8294 \
-                    size    76929
+sha256  65e992d9e3093e8a66221f6a292d04431b05c91c29cdd86b5f7b5952f1bd8294 \
+size    76929
 
 supported_archs     noarch

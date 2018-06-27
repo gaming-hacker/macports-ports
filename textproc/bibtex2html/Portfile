@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            https://www.lri.fr/~filliatr/bibtex2html/
 master_sites        http://www.lri.fr/~filliatr/ftp/bibtex2html
 
 checksums           rmd160  63bec08dcbdb531b4fd233575dd156520ffbfd3c \
-                    sha256  d224dadd97f50199a358794e659596a3b3c38c7dc23e86885d7b664789ceff1d \
-                    size    93073
+sha256  d224dadd97f50199a358794e659596a3b3c38c7dc23e86885d7b664789ceff1d \
+size    93073
 
 patchfiles          patch-aux2bib.1.diff
 

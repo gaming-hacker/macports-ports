@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -23,8 +23,8 @@ master_sites        https://repo1.maven.org/maven2/org/flywaydb/flyway-commandli
 distname            ${name}-commandline-${version}
 worksrcdir          ${name}-${version}
 checksums           rmd160 c33b6497e4399b9d6199ef5b03cdec3437d1aca7 \
-                    sha256 9502535ae954df39307cbf4f1f107b747fb70edd4b3ef86015ce94c56e96d922 \
-                    size   16281110
+sha256 9502535ae954df39307cbf4f1f107b747fb70edd4b3ef86015ce94c56e96d922 \
+size   16281110
 depends_run         bin:java:kaffe
 
 use_configure       no

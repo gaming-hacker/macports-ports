@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -47,7 +47,7 @@ version             4.19.10
 set branch          [join [lrange [split ${version} .] 0 1] .]
 set patch           [lindex [split ${version} .] 2]
 
-python.versions     27 34 35 36
+python.versions 27 36
 python.default_version 27
 
 if {${name} ne ${subport}} {
@@ -62,8 +62,8 @@ if {${name} ne ${subport}} {
 
     revision            1
     checksums           rmd160 2c028d9a8220a4365084836975a08921b1df7ebc \
-                        sha256 31ac7d48be8fd2df5f3bdb712f66a7d9a858cc1f6cb35fc95d829e0a69c3dd48 \
-                        size 1032653
+sha256 31ac7d48be8fd2df5f3bdb712f66a7d9a858cc1f6cb35fc95d829e0a69c3dd48 \
+size 1032653
 
     patchfiles          patch-siputils.py.diff \
                         patch-specs_macx-g++.diff \
