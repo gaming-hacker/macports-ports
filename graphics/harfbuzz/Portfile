@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -19,8 +19,8 @@ master_sites        https://www.freedesktop.org/software/harfbuzz/release/
 use_bzip2           yes
 
 checksums           rmd160  0fc64230010ea43fe11be33bddce4d4b67bc314c \
-                    sha256  6e1a56db1b8335cb8f7cb625536d6443fc34801ae419d66e445efea885a62128 \
-                    size    3791280
+sha256  6e1a56db1b8335cb8f7cb625536d6443fc34801ae419d66e445efea885a62128 \
+size    3791280
 
 depends_build       port:pkgconfig
 

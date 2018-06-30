@@ -240,7 +240,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-python.versions 27 36
+python.versions 27 36 37
         depends_lib-append port:python[option python.default_version]
     }
 }
