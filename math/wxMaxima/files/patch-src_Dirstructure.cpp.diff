@@ -15,7 +15,7 @@
 +      wxExecute(wxT("which maxima"), output, (wxEXEC_SYNC | wxEXEC_NOEVENTS));
 +      if(output.GetCount() > 0)
 +      {
-+        wxFileName fullpath = wxFileName::wxFileName(output[0] ,wxPATH_NATIVE);
++        wxFileName fullpath(output[0] ,wxPATH_NATIVE);
 +        return fullpath.GetPath();
 +      }
 +    }

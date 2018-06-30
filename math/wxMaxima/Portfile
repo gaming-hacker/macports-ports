@@ -1,9 +1,8 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-
-PortSystem	1.0
+PortSystem          1.0
 
 PortGroup           active_variants 1.1
 PortGroup           wxWidgets 1.0
+PortGroup           github 1.0
 
 name                wxMaxima
 version             18.02.0
@@ -18,18 +17,15 @@ homepage            http://andrejv.github.io/wxmaxima/
 
 subport wxMaxima-devel {
     conflicts       wxMaxima
-    long_description ${description}: \n\
+    long_description ${description}: \
                     Provides the development version, which is typically updated every day.
 
     # git describe --tags : Version-16.12.x-1834-gb32fed0
-    version     18.02post
-    fetch.type  git
-    git.url     https://github.com/andrejv/wxmaxima
-    git.branch  b32fed0d535c05d589d1f573d2c0f4f839180d18
-
-    post-fetch {
-        system -W ${worksrcpath} "git describe --tags"
-    }
+    github.setup    andrejv wxmaxima b32fed0d535c05d589d1f573d2c0f4f839180d18
+    checksums       rmd160  86fcf85ddae42e84884a708d55acff393152ed23 \
+                    sha256  e34256294c51a37d80947b92d3cd979456bf0c8ae53a21ce6cbab63d99143bf2 \
+                    size    12739940
+    version         18.02-dev-20180616
 
     patchfiles      patch-devel-src_Dirstructure.cpp.diff
     post-patch {
@@ -42,16 +38,14 @@ subport wxMaxima-devel {
 
 if {${subport} eq ${name}} {
     conflicts       wxMaxima-devel
-    long_description ${description}: \n\
+    long_description ${description}: \
                     Provides the release version, which is typically updated every four months.
 
     # get the source tarball from github.
-    PortGroup       github 1.0
-
     github.setup    andrejv wxmaxima 18.02.0 Version-
     checksums       rmd160  d1017d56bfd76e9c51dcc3230be89ebca1724560 \
-sha256  77f0414be54d8ea15acedfc3cedf72a57cc2b3ba5d4835a53f3009e050c05483 \
-size    10131293
+                    sha256  77f0414be54d8ea15acedfc3cedf72a57cc2b3ba5d4835a53f3009e050c05483 \
+                    size    10131293
 
     patchfiles      patch-src_Dirstructure.cpp.diff
     post-patch {
@@ -100,7 +94,7 @@ notes "
     you should enter the command \n\
     \"open -a ${applications_dir}/wxMaxima.app\" \n\
     on Terminal.app in order to launch wxMaxima. \n\
-    Because you must let wxMaxima know the path to softwares \n\
+    Because you must let wxMaxima know the path to software \n\
     installed with MacPorts. \n\n\
     On the other hand, \n\
     when you launch directly wxMaxima on the Finder, \n\
