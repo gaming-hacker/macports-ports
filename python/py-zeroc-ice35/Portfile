@@ -42,7 +42,7 @@ patch.pre_args  -p1
 
 platforms       darwin
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:zeroc-ice35

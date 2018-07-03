@@ -22,7 +22,7 @@ checksums           md5     8d64926345608ed4721bed7e92db2ae8 \
 sha1    358a8927611b167bfbbd068789235ba2891eb13b \
 rmd160  0cbea977af22611131dd09423a5f7dbb1b9e5a03
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_lib         port:py${python.version}-scipy

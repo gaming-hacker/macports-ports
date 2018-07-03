@@ -23,7 +23,7 @@ homepage            http://www.djangoproject.com
 checksums           rmd160  cdd4fac4aa634be509ef8ee5d1569fc7a7d21c0c \
 sha256  d0fe12b6bc6a4ba353d19e192d649e184ab7c6f1b38043e8440875f5eec8d811
 
-python.versions 27 36
+python.versions 27 36 37
 
 supported_archs     noarch
 

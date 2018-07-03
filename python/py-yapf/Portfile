@@ -20,7 +20,7 @@ supported_archs     noarch
 checksums           rmd160  513668fb0d10adfa78c28fd5dc60b4f6e6066c4b \
 sha256  6a42aae3447d5bcb85d4cac96ce330a034306d9427914dc5123c87616683c0ff
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_run     port:yapf_select

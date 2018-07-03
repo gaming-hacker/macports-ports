@@ -22,7 +22,7 @@ long_description    ${description} It allows you to send User Notifications to \
 checksums           rmd160  bab6264960fc968e2b8e5a50597da38d0897ace2 \
 sha256  9711901d92099dd2e453cdd2c2a746b6bba73c1ad8de46257e64109c4dba2a58
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_build       port:py${python.version}-setuptools

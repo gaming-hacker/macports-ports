@@ -21,7 +21,7 @@ distname            jsbeautifier-${version}
 checksums           rmd160  be3413dce3822903c6f685f8cea4d88143a154db \
 sha256  78eb1e5c8535484f0d0b588aca38da3fb5e0e34de2d1ab53c077e71c55757473
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -28,7 +28,7 @@ use_bzip2           yes
 checksums           rmd160  5a4c088b2639eb844f57caaa646a611375078621 \
 sha256  0da1a7e35d5fcae37bc9c7978970b5feb3bc82822155b8654ec63925c05af75c
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append    \

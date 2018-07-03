@@ -25,7 +25,7 @@ distname            ${realname}-${version}
 checksums           rmd160  315bdf74c211fad5372c1eb43751eff3609d3d27 \
 sha256  04837bf0b1313e57d50076f228463262b9982c410b973eb184c033528f83d523
 
-python.versions 27 36
+python.versions 27 36 37
 
 patchfiles          patch-pysam-remove-RPATH.diff
 

@@ -20,7 +20,7 @@ master_sites        pypi:s/sphinx_rtd_theme
 checksums           rmd160  aa0a05b7af5eae51427840fe83eeff5e01859dc6 \
 sha256  2df74b8ff6fae6965c527e97cca6c6c944886aae474b490e17f92adfbe843417
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_build   port:py${python.version}-setuptools

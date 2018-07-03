@@ -23,7 +23,7 @@ checksums           md5     d54c2571fdb82642fcce27f5a88f33d3 \
 rmd160  0fc1b310f3bafbf2f75f22a9b4d6a32706cd2e0e \
 sha256  c35f4433c14ddfcaf2407cc815385f3d85396727e9a1e660cf66a7c4f5dd1067
 
-python.versions 27 36
+python.versions 27 36 37
 
 build.args-append   --use-system-cfitsio \
                     --use-system-expat \

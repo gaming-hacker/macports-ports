@@ -26,7 +26,7 @@ checksums       md5 ac744ea6952b68d5f2b6d02a6d8e836c \
 rmd160 ac95b8c2afa5076746227a6d1ae9c200d14d5757 \
 sha256 751021819bdc0cbe5cbd51904abb6ff9e9aee5b0e8955af02284d0e77d6c9ec2
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     patchfiles  patch-config_darwin.py.diff \

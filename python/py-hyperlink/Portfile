@@ -16,7 +16,7 @@ long_description    Hyperlink is a pure-Python package and requires nothing but 
 checksums           rmd160  a5dcd8871c5040925dd05189b90ec99cdf70f8cd \
 sha256  14fb17a1d714a55ed596ce724a408d0c81d28b4efceb2bf0767a94c02f7c5f1c
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 

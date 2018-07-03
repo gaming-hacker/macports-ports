@@ -18,7 +18,7 @@ checksums           rmd160  3048162883cdacbbdc5f9acf18172a2a5e233f9b \
 sha256  bd005a8939034a7e30d8415287f42852a3c5e6a158051e4ae6f2c78115ee505a \
 size    1160652
 
-python.versions 27 36
+python.versions 27 36 37
 
 depends_lib         port:py${python.version}-acme \
                     port:py${python.version}-configargparse \

@@ -24,7 +24,7 @@ checksums           rmd160  3bfdb103cdb94bc336f900eac10ea8b35413a4bc \
 sha256  80032ee069923137badd8f5cd345db0aa36e9f3232c720072c4f1dfe8b6cf71c \
 size    312004
 
-python.versions 27 36
+python.versions 27 36 37
 python.link_binaries_suffix
 
 if {${subport} ne ${name}} {

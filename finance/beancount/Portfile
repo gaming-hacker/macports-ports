@@ -14,7 +14,7 @@ platforms           darwin
 maintainers         {blair @blair} openmaintainer
 supported_archs     noarch
 
-python.versions 27 36
+python.versions 27 36 37
 
 description         Double-Entry Accounting from Text Files
 long_description    A double-entry bookkeeping computer language that lets \

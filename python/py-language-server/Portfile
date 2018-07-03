@@ -20,7 +20,7 @@ checksums           rmd160  3f9a52e5ae7f17a4bd5d51232f00c497f6c7e6f9 \
 sha256  8d4e862c53871f5bc36f0cea651bc725f17cfe813575fc865bb7f12488320227 \
 size    443625
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-future \

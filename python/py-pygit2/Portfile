@@ -21,7 +21,7 @@ checksums           rmd160  e2eb875d563c86d2ab77b0b2a404339052719f54 \
 sha256  b3834a00bf2aca0d70cefa76e573f1ba1284b259080f0443f7347d98e0839076 \
 size    488555
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:libgit2 \

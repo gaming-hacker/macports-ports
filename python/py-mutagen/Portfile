@@ -25,7 +25,7 @@ homepage        http://mutagen.readthedocs.io
 master_sites    https://github.com/quodlibet/mutagen/releases/download/release-${version}/
 checksums           rmd160  cc0637f35bdfb217617bdad5a0190e44726a6ba7 \
 sha256  23990f70ae678c7b8df3fd59e2adbefa5fe392c36da8c71d2254b21c6cd78766
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} eq ${subport}} {
     livecheck.type		regex

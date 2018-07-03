@@ -34,7 +34,7 @@ set DEV_VERSION     0
 subport                 py27-h5py-devel {set DEV_VERSION 27}
 subport                 py36-h5py-devel {set DEV_VERSION 36}
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${DEV_VERSION}} {
     checksums \

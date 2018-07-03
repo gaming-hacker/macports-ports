@@ -23,7 +23,7 @@ distname            cx_Freeze-${version}
 checksums           rmd160  bf969fb2ad526aa15d5be90d0875bd5d51fd3ce8 \
 sha256  253466f0acde1661d67aead4fe2493ffd496e0b17b63baf95e06d0f28b4c7d7d
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     livecheck.type  none

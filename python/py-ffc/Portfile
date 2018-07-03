@@ -26,7 +26,7 @@ checksums           rmd160  529e8b202dfe892b35e9b63a4ce276e5c97063ee \
 sha256  f0a742e1195cf59eb10f1cce5680484bdf735777caac9ab460849659f11aa067 \
 size    1377601
 
-python.versions 27 36
+python.versions 27 36 37
 python.link_binaries_suffix
 
 configure.cxxflags-append -std=c++11

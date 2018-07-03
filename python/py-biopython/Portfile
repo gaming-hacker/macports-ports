@@ -23,7 +23,7 @@ rmd160  e50679e4b915f3c42f4af83228c72c123c1c54d7 \
 sha256  4f1770a29a5b18fcaca759bbc888083cdde2b301f073439ff640570d4a93e033 \
 size    16031832
 
-python.versions 27 36
+python.versions 27 36 37
 
 if { ${name} ne ${subport} } {
     depends_lib-append  port:py${python.version}-numpy

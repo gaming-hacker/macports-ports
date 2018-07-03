@@ -26,7 +26,7 @@ checksums           md5     e2cf031a18616c26cdd7d0a4615ef8d8 \
 sha1    f60213b5c01e133b3c06a9698b34484fe1948f2e \
 rmd160  c7e23f95fdfd4af7c5df960e23641fc1d6a784ba
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     use_zip             yes

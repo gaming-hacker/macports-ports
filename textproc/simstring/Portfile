@@ -41,7 +41,7 @@ autoconf.cmd        ./autogen.sh
 subport py27-simstring {
     PortGroup           python 1.0
     name                py-simstring
-python.versions 27 36
+python.versions 27 36 37
     categories-append   textproc math
     description         SimString Python module
     long_description    ${description}

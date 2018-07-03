@@ -29,7 +29,7 @@ md5 2ace3a8077e4b456e74fc2be870c71f1 \
 sha1 be2cdbe1322e381fd4f333d570462a3767bfeb7c \
 rmd160 dd32d7bca2acbd3295a407a7d3f5e40c994821d3
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build port:py${python.version}-setuptools

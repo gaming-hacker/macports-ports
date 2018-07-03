@@ -22,7 +22,7 @@ checksums       md5    3999a7680f4d3c4d3bddfc45edf65788 \
 sha1   f1d584bc3b0d15eb27606ca1a6c364dc44fee345 \
 sha256 39596f4884ed689cdb5a4e210e421724302a566c7ba756cc4d46bbfeb0c8326b
 
-python.versions 27 36
+python.versions 27 36 37
 
 set cxx_stdlibflags {}
 if {[string match *clang* ${configure.cxx}]} {

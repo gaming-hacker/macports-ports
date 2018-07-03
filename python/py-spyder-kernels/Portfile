@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     27 35 36
+python.versions 27 36 37
 
 maintainers         {gmail.com:ottenr.work @reneeotten} openmaintainer
 
@@ -22,8 +22,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            spyder-kernels-${version}
 
 checksums           rmd160  9b1ab80765feda538fb596a8d716d668756724be \
-                    sha256  d96c6d1d8e0a855f0baee5241fce1f6fbd3e92e170b3a298aa19ea64b98ac9b1 \
-                    size    35864
+sha256  d96c6d1d8e0a855f0baee5241fce1f6fbd3e92e170b3a298aa19ea64b98ac9b1 \
+size    35864
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

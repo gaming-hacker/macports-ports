@@ -18,7 +18,7 @@ sha256  3c1fd04ecf08ac87b4dd3feae409542e9bf7827257097b2b6ed5692f69d6f6a8
 
 master_sites        pypi:A/${github.project}
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 

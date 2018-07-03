@@ -21,4 +21,4 @@ master_sites        https://python.ca/scgi/releases/
 
 checksums           rmd160 8214b939d52c6ba7e4392c70efa829d05941fc25
 
-python.versions 27 36
+python.versions 27 36 37

@@ -26,7 +26,7 @@ supported_archs     noarch
 checksums           rmd160  385490c6c9c2e38738a3e64226c2316aad8c2dc2 \
 sha256  eb78ec5fd33b2fd8cb371bd073e2900950dbdaf2c5c8ce4d462439fcb9978d96
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 

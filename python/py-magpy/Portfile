@@ -18,7 +18,7 @@ sha256  0eb24b95b58f7fb7832d381b442892cd68588d3ee0641b3738eadd38a0a689c1 \
 size    8164771
 
 # python3 versions are currently broken
-python.versions 27 36
+python.versions 27 36 37
 
 # TODO:
 # - add a port py-autobahn

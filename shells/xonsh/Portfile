@@ -25,7 +25,7 @@ checksums           rmd160  b100745701df0223bc58b8fe802ceaa2b9c46d1c \
 sha256  69145be48d3dd1776cc3c06843547060b57e111efc169433484a2604bac12659 \
 size    1874438
 
-python.versions 27 36
+python.versions 27 36 37
 
 depends_lib-append  port:py${python.version}-prompt_toolkit \
                     port:py${python.version}-pygments \

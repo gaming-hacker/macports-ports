@@ -25,7 +25,7 @@ checksums           md5     f93f17211c7763d8631e0d10f37471b0 \
 sha1    c646429d44b9824aa0d78e11ff22172f93e0a0f1 \
 rmd160  3f86eb15b9c30256a6793b6943f74a5e28a4c23a
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_lib-append  port:libsndfile \

@@ -9,7 +9,7 @@ revision            1
 license             PSF
 maintainers         {aronnax @lpsinger} openmaintainer
 # do not add subports for python > 3.4
-python.versions 27 36
+python.versions 27 36 37
 
 description         New features in the unittest library
 

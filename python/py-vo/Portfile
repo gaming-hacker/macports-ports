@@ -20,7 +20,7 @@ epoch               1
 checksums           rmd160  f6b0e93be7497f95edd8e203512bf12767b0503b \
 sha256  fa3a4a743201d7f7960241c0ae32abb4582147fc343c38accc6ec73123397ee1
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-astropy-helpers

@@ -24,7 +24,7 @@ checksums           md5     9f5acfd87d04432bf8df5f9710a17358 \
 rmd160  1032e5f5da257211c69705f1468bb00b864a287b \
 sha256  25c9d2667d512f8fc4410465fdd2e868377ca07eb3d56e2b6e534a86281d64d3
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-setuptools port:enchant

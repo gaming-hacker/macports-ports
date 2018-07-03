@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -39,8 +39,8 @@ if {${subport} eq ${name}} {
 
     version         ${branch}.4
     checksums       rmd160 6182b0a029c127db27bd88208bbb7f94923ecb2d \
-                    sha256 8f864e9f78917de3e1483e256270daabc4a321741592c5b36af028e72bff87f5 \
-                    size   7955301
+sha256 8f864e9f78917de3e1483e256270daabc4a321741592c5b36af028e72bff87f5 \
+size   7955301
 
     master_sites    ${homepage}/files/v${branch}/
     conflicts       cmake-devel
@@ -68,8 +68,8 @@ if {${subport} eq ${name}} {
     version         20180702
     set commit      8ad33961582bd0a70bf8226558c28fb3829b99a7
     checksums       rmd160 a7923d5c22ea37d8a74a773723dbcd1116f657d7\
-                    sha256 5aec54242ab7af7b6f5a79458b34298f314d83e7249010e52593336119b57607\
-                    size   6312815
+sha256 5aec54242ab7af7b6f5a79458b34298f314d83e7249010e52593336119b57607\
+size   6312815
 
     use_bzip2       yes
     master_sites    https://gitlab.kitware.com/cmake/cmake/repository/archive${extract.suffix}?ref=${commit}&

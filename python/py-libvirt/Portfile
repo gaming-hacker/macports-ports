@@ -25,7 +25,7 @@ sha256  dec2a33d68779672b4688b296d6de18c9c41b89d8c74c9d3dc887e366587b8c7 \
 size    186312
 
 python.default_version  27
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools \

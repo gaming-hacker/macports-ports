@@ -16,7 +16,7 @@ long_description    This package facilitates the creation and rendering of graph
 checksums           rmd160  e2b00b1e11f656a889f5c83865d5c8206a1343c0 \
 sha256  3ccd64c56069bacec2d7616ddcf24f89fd49a3895fd382edbd06ee17bc39e211
 
-python.versions 27 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 
