@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -19,10 +19,10 @@ master_sites            pypi:l/lmfit/
 distname                lmfit-${version}
 
 checksums               rmd160  fe1c29354627524f769cde7f03517dad45d7cacb \
-sha256  f635c69fa67cd4d3daa1148f449abc2ff1e19adf5761b3eac7d314224d7506e2 \
-size    1600601
+                        sha256  f635c69fa67cd4d3daa1148f449abc2ff1e19adf5761b3eac7d314224d7506e2 \
+                        size    1600601
 
-python.versions 27 36
+python.versions         27 34 35 36
 
 if {$subport ne $name} {
     depends_build-append       port:py${python.version}-setuptools
