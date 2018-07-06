@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup           cxx11 1.1
 
 name                qscintilla
 
-version             2.10.6
-checksums           rmd160 8e5572c8b3fa797e5d42b83753eede70e39200f1 \
-sha256 31b8adcbf79c1a1a65d05dd4d481d47deb2996471b2ef7c21e79b53b764bcb0e \
-size   2734679
+version             2.10.7
+checksums           rmd160 163f7e78b3ee0ae582ec96d5707de20a3025b3fc \
+                    sha256 670458de71dd4205e92d8f3b7bad9f667afece925703cde9df6d04bc23331a1a \
+                    size   2734778
 
 categories          devel
 license             GPL-3
@@ -31,10 +31,13 @@ long_description    QScintilla is a port to Qt of Neil Hodgson's Scintilla C++ e
 distname            QScintilla_gpl-${version}
 master_sites        sourceforge:pyqt
 
-foreach qt_major {5} {
+foreach qt_major {4 5} {
     subport ${name}-qt${qt_major} {
+        if {${qt_major} eq 4} {
+            PortGroup qmake 1.0
+        } else {
             PortGroup qmake${qt_major} 1.0
-
+        }
 
         worksrcdir ${worksrcdir}/Qt4Qt5
 
@@ -58,7 +61,11 @@ foreach qt_major {5} {
     }
 
     subport ${name}-designer-qt${qt_major} {
+        if {${qt_major} eq 4} {
+            PortGroup qmake 1.0
+        } else {
             PortGroup qmake${qt_major} 1.0
+        }
 
         description       Qt Designer plugin for Qt${qt_major} QScintilla
         long_description  ${description}
@@ -67,11 +74,18 @@ foreach qt_major {5} {
 
         patchfiles-append   patch-add_debug.diff
 
-        qt${qt_major}.depends_component qttools
-      if {[variant_isset debug]} {
-          require_active_variants ${name}-qt${qt_major} debug
-      }
-
+        if {${qt_major} eq 4} {
+            if {[variant_isset debug]} {
+                configure.args-append CONFIG+="debug_and_release build_all"
+            } else {
+                configure.args-append CONFIG+=release
+            }
+        } else {
+            qt${qt_major}.depends_component qttools
+            if {[variant_isset debug]} {
+                require_active_variants ${name}-qt${qt_major} debug
+            }
+        }
 
         depends_lib-append        \
             port:${name}-qt${qt_major}
@@ -91,11 +105,15 @@ foreach qt_major {5} {
         }
     }
 
-    set python_versions {27 36 37}
+    set python_versions {27 34 35 36}
 
     foreach pver ${python_versions} {
         subport py${pver}-${name}-qt${qt_major} {
+            if {${qt_major} eq 4} {
+                PortGroup qt4 1.0
+            } else {
                 PortGroup qmake${qt_major} 1.0
+            }
             categories-append   python
             description         Python bindings for Qt${qt_major} QScintilla
             long_description    Python bindings for Qt${qt_major} QScintilla, \
@@ -112,6 +130,14 @@ foreach qt_major {5} {
                 port:py${pver}-sip              \
                 port:py${pver}-pyqt${qt_major}
 
+            if {${qt_major} eq 4} {
+                pre-configure {
+                    set cache [open "${configure.dir}/.qmake.cache" w 0644]
+                    puts ${cache} "CONFIG += ${qt_arch_types}"
+                    close ${cache}
+                }
+            }
+
             set python_ver_dot [join [split ${pver} ""] "."]
 
             configure.python ${prefix}/bin/python${python_ver_dot}
@@ -126,7 +152,15 @@ foreach qt_major {5} {
                 --qmake=${qt_qmake_cmd}                    \
                 --no-dist-info
 
+            if {${qt_major} eq 4} {
+                configure.args-append \
+                    --pyqt-sipdir=${prefix}/share/py${pver}-sip/PyQt4
+
+                configure.args-append \
+                    --spec=${qt_qmake_spec}
+            } else {
                 qt5.spec_cmd --spec=
+            }
 
             # --disable-dependency-tracking is not recognized
             configure.universal_args-delete --disable-dependency-tracking
@@ -153,13 +187,19 @@ if {${subport} eq ${name}} {
         system "echo $name is a stub port > ${destroot}${prefix}/share/doc/${subport}/README"
     }
 
+    variant qt4 description "build Qt4 version of ${name}" {
+        depends_lib-append \
+            port:qscintilla-qt4 \
+            port:qscintilla-designer-qt4
+    }
+
     variant qt5 description "build Qt5 version of ${name}" {
         depends_lib-append \
             port:qscintilla-qt5 \
             port:qscintilla-designer-qt5
     }
 
-    default_variants +qt5
+    default_variants +qt4
 }
 
 livecheck.type      regex

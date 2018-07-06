@@ -5,11 +5,13 @@ PortGroup           compilers 1.0
 
 name                libxc
 version             2.2.3
-# We cannot use the 3.0.x series until ape, octopus, abinit, and atompaw can use it. octopus can, maybe others?
+# HORTON cannot use version 3 yet. There is also libxc4 port.
 categories          science
 platforms           darwin
 license             LGPL-3+
 maintainers         {dstrubbe @dstrubbe}
+
+conflicts           libxc4
 
 description         exchange-correlation functionals for DFT
 
@@ -27,8 +29,7 @@ sha256  2f2b00b77a75c7fe8fe3f3ae70700cf28a09ff8d0ce791e47980ff7f9cde68e7
 
 compilers.choose    fc
 compilers.setup     require_fortran
-
-use_parallel_build  yes
+# g95 gives seg fault running tests
 
 universal_variant   no
 

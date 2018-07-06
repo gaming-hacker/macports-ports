@@ -19,7 +19,7 @@
 #   Useful if another compiler variant is created explicitly in the Portfile. Must come before compilers.setup.
 # compilers.setup {args}
 #   Possible arguments: any compiler variant name with a minus removes it from the list of variants, e.g. -clang.
-#   -gcc, -clang remove all compilers of that category. -fortran removes gfortran.
+#   -gcc, -clang remove all compilers of that category. -fortran removes gfortran and g95.
 #   Blacklisted compilers are automatically removed, as are ones that do not support the compilers in compilers.choose:
 #   e.g. if choose is just f90, clang variants will not be added.
 #   List "default_fortran" to make a Fortran variant be selected by default.
@@ -53,9 +53,10 @@ PortGroup active_variants 1.1
 
 options compilers.variants compilers.gcc_variants compilers.clear_archflags
 default compilers.variants {}
-default compilers.fortran_variants {}
-default compilers.gcc_variants {8}
-default compilers.clang_variants {60}
+default compilers.my_fortran_variants {}
+default compilers.all_fortran_variants {}
+default compilers.gcc_variants {}
+default compilers.clang_variants {}
 default compilers.require_fortran 0
 default compilers.default_fortran 0
 default compilers.setup_done 0
@@ -131,7 +132,7 @@ foreach v ${clang_versions} {
     set cdb(clang$v,f90)      ""
 }
 
-# and lastly we add a gfortran variant for use with clang*; note that
+# and lastly we add a gfortran and g95 variant for use with clang*; note that
 # we don't need gfortran when we are in an "only-fortran" mode
 set cdb(gfortran,variant)  gfortran
 set cdb(gfortran,compiler) gfortran
@@ -156,7 +157,8 @@ foreach cname [array names cdb *,variant] {
 
 foreach variant ${compilers.variants} {
     if {$cdb($variant,f77) ne ""} {
-        lappend compilers.fortran_variants $variant
+        lappend compilers.all_fortran_variants $variant
+        lappend compilers.my_fortran_variants $variant
     }
 }
 
@@ -168,13 +170,13 @@ proc compilers.set_variants_conflict {args} {
 
 proc compilers.setup_variants {variants} {
     global cdb compilers.variants compilers.clang_variants compilers.gcc_variants
-    global compilers.fortran_variants compilers.list
+    global compilers.my_fortran_variants compilers.list
     global compilers.variants_conflict
     global compilers.clear_archflags
 
     foreach variant $variants {
         if {$cdb($variant,f77) ne ""} {
-            lappend compilers.fortran_variants $variant
+            lappend compilers.my_fortran_variants $variant
         }
 
         if {[variant_exists $variant]} {
@@ -184,7 +186,7 @@ proc compilers.setup_variants {variants} {
             set c [lreplace ${compilers.variants} $i $i]
 
             # Fortran compilers do not conflict with C compilers.
-            # thus clang does not conflict gfortran
+            # thus clang does not conflict with gfortran
             if {$variant eq "gfortran"} {
                 foreach clangcomp ${compilers.clang_variants} {
                     set i [lsearch -exact $c $clangcomp]
@@ -239,7 +241,7 @@ proc compilers.setup_variants {variants} {
 }
 
 proc c_active_variant_name {depspec} {
-    global compilers.variants compilers.fortran_variants
+    global compilers.variants
     set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach c $c_list {
@@ -256,7 +258,7 @@ proc c_active_variant_name {depspec} {
 }
 
 proc c_variant_name {} {
-    global compilers.variants compilers.fortran_variants
+    global compilers.variants
     set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach cc $c_list {
@@ -273,12 +275,15 @@ proc c_variant_isset {} {
 }
 
 proc fortran_active_variant_name {depspec} {
-    global compilers.fortran_variants
+#note: this list of variants is NOT reduced by an characteristics of the current port
+#(unlike compilers.my_fortran_variants), since it needs to apply to another port.
+    global compilers.all_fortran_variants
 
-    foreach fc ${compilers.fortran_variants} {
+    foreach fc ${compilers.all_fortran_variants} {
         if {![catch {set result [active_variants $depspec $fc ""]}]} {
             if {$result} {
                 return $fc
+                ui_err "$depsec +fc"
             }
         } else {
             ui_warn "fortran_active_variant_name: \[active_variants $depspec $fc \"\"\] fails."
@@ -299,9 +304,9 @@ proc fortran_compiler_name {variant} {
 }
 
 proc fortran_variant_name {} {
-    global compilers.fortran_variants variations
+    global compilers.my_fortran_variants variations
 
-    foreach fc ${compilers.fortran_variants} {
+    foreach fc ${compilers.my_fortran_variants} {
         # we need to check the default_variants so we can't use variant_isset
         if {[info exists variations($fc)] && $variations($fc) eq "+"} {
             return $fc
@@ -492,7 +497,7 @@ proc compilers.action_enforce_some_f {ports} {
 
 proc compilers.setup {args} {
     global cdb compilers.variants compilers.clang_variants compilers.gcc_variants \
-        compilers.fortran_variants compilers.require_fortran compilers.default_fortran \
+        compilers.my_fortran_variants compilers.require_fortran compilers.default_fortran \
         compilers.setup_done compilers.list compilers.gcc_default compiler.blacklist
 
     if {!${compilers.setup_done}} {
@@ -504,7 +509,7 @@ proc compilers.setup {args} {
         # we remove +clangXY
         if {[compilers.is_fortran_only]} {
             # remove gfortran since that only exists to "complete" clang/llvm
-            set remove_list [remove_from_list ${compilers.fortran_variants} gfortran]
+            set remove_list [remove_from_list ${compilers.my_fortran_variants} gfortran]
         } elseif {[compilers.is_c_only]} {
             # remove gfortran since those are purely for fortran
             set remove_list [remove_from_list ${compilers.variants} {gfortran}]
@@ -577,11 +582,11 @@ proc compilers.setup {args} {
         }
 
         set compilers.variants [lsort [concat [remove_from_list $remove_list $duplicates] $add_list]]
-        # also update compilers.fortran_variants
-        set compilers.fortran_variants {}
+        # also update compilers.my_fortran_variants
+        set compilers.my_fortran_variants {}
         foreach variant ${compilers.variants} {
             if {$cdb($variant,f77) ne ""} {
-                lappend compilers.fortran_variants $variant
+                lappend compilers.my_fortran_variants $variant
             }
         }
         compilers.setup_variants ${compilers.variants}
