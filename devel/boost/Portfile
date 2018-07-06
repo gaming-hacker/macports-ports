@@ -1,16 +1,19 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
 PortGroup       mpi 1.0
-PortGroup       active_variants 1.1
 PortGroup       cxx11 1.1
+PortGroup       active_variants 1.1
 
 name            boost
+
 version         1.66.0
+# Revision is set below in the `if {$subport eq $name} { ... }` statement
+# The boost-numpy subport has its own revision number
 checksums       rmd160  ee5dafdfa49adf50a5333cef1f55dac4f70b4c14 \
-sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
-size    85995778
+                sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
+                size    85995778
 
 license         Boost-1
 categories      devel
@@ -128,7 +131,9 @@ post-configure {
         set cxx_stdlibflags -stdlib=${configure.cxx_stdlib}
     }
 
-    write_jam "using darwin : : ${configure.cxx} : <cxxflags>\"${configure.cxxflags} ${cxx_stdlibflags}\" ${compileflags} <linkflags>\"${configure.ldflags} ${cxx_stdlibflags}\" : ;"
+    # see https://trac.macports.org/ticket/55857
+    # see https://svn.boost.org/trac10/ticket/13454
+    write_jam "using darwin : : ${configure.cxx} : <cxxflags>\"${configure.cxxflags} [get_canonical_archflags cxx] ${cxx_stdlibflags}\" ${compileflags} <linkflags>\"${configure.ldflags} ${cxx_stdlibflags}\" : ;"
 
 }
 
@@ -136,6 +141,7 @@ build.cmd       ${worksrcpath}/b2
 build.target
 build.args      -d2 \
                 --layout=tagged \
+                --debug-configuration \
                 --user-config=user-config.jam \
                 -sBZIP2_INCLUDE=${prefix}/include \
                 -sBZIP2_LIBPATH=${prefix}/lib \
@@ -148,7 +154,6 @@ build.args      -d2 \
                 threading=single,multi \
                 link=static,shared \
                 runtime-link=shared \
-                macosx-version=10.12 \
                 -j${build.jobs}
 
 destroot.cmd            ${worksrcpath}/bjam
@@ -159,7 +164,25 @@ pre-destroot {
     system "find ${worksrcpath} -type f -name '*.gch' -exec rm {} \\;"
 }
 
-set pythons_suffixes {27 36}
+post-destroot {
+    set docdir ${prefix}/share/doc/${name}
+    xinstall -d ${destroot}${docdir}
+    set l [expr [string length ${worksrcpath}] + 1]
+    fs-traverse f [glob -directory ${worksrcpath} *] {
+        set dest ${destroot}${docdir}/[string range ${f} ${l} end]
+        if {[file isdirectory ${f}]} {
+            if {[file tail ${f}] eq "example"} {
+                copy ${f} ${dest}
+                continue
+            }
+            xinstall -d ${dest}
+        } elseif {[lsearch -exact {css htm html png svg} [string range [file extension ${f}] 1 end]] != -1} {
+            xinstall -m 644 ${f} ${dest}
+        }
+    }
+}
+
+set pythons_suffixes {26 27 33 34 35 36 37}
 
 set pythons_ports {}
 foreach s ${pythons_suffixes} {
@@ -215,6 +238,11 @@ if {![variant_isset debug]} {
 
 default_variants +no_single +no_static
 
+variant debug description {Builds debug versions of the libraries as well} {
+    build.args-delete   variant=release
+    build.args-append   variant=debug,release
+}
+
 variant no_static description {Disable building static libraries} {
     build.args-delete   link=static,shared
     build.args-append   link=shared
@@ -225,22 +253,8 @@ variant no_single description {Disable building single-threaded libraries} {
     build.args-append   threading=multi
 }
 
-variant regex_match_extra description \
-        "Enable access to extended capture information of submatches in Boost.Regex" {
-    notes-append "
-You enabled the +regex_match_extra variant\; see the following page for an\
-exhaustive list of the consequences of this feature:
-
-http://www.boost.org/doc/libs/${distver}/libs/regex/doc/html/boost_regex/ref/sub_match.html
-"
-
-    post-patch {
-        reinplace {/#define BOOST_REGEX_MATCH_EXTRA/s:^// ::} \
-            ${worksrcpath}/boost/regex/user.hpp
-    }
-}
-
 subport boost-numpy {
+    revision 0
     description Boost.Numpy library
     long_description ${description}
     depends_lib port:boost
@@ -250,26 +264,39 @@ subport boost-numpy {
             require_active_variants boost python${s}
         }
     }
+    if {[variant_isset no_static]} {
+        require_active_variants boost no_static
+    } else {
+        require_active_variants boost "" no_static
+    }
+    if {[variant_isset no_single]} {
+        require_active_variants boost no_single
+    } else {
+        require_active_variants boost "" no_single
+    }
 }
 
 if {$subport eq $name} {
+    revision 3
     patchfiles-append patch-disable-numpy-extension.diff
-    post-destroot {
-        set docdir ${prefix}/share/doc/${name}
-        xinstall -d ${destroot}${docdir}
-        set l [expr [string length ${worksrcpath}] + 1]
-        fs-traverse f [glob -directory ${worksrcpath} *] {
-            set dest ${destroot}${docdir}/[string range ${f} ${l} end]
-            if {[file isdirectory ${f}]} {
-                if {[file tail ${f}] eq "example"} {
-                    copy ${f} ${dest}
-                    continue
-                }
-                xinstall -d ${dest}
-            } elseif {[lsearch -exact {css htm html png svg} [string range [file extension ${f}] 1 end]] != -1} {
-                xinstall -m 644 ${f} ${dest}
-            }
+
+    variant regex_match_extra description \
+        "Enable access to extended capture information of submatches in Boost.Regex" {
+        notes-append "
+        You enabled the +regex_match_extra variant\; see the following page for an\
+        exhaustive list of the consequences of this feature:
+
+    http://www.boost.org/doc/libs/${distver}/libs/regex/doc/html/boost_regex/ref/sub_match.html
+"
+
+        post-patch {
+            reinplace {/#define BOOST_REGEX_MATCH_EXTRA/s:^// ::} \
+                ${worksrcpath}/boost/regex/user.hpp
         }
+    }
+
+    post-destroot {
+        delete file {*}[glob ${destroot}${prefix}/include/boost/python/numpy*]
     }
 
     if {[mpi_variant_isset]} {
@@ -292,7 +319,6 @@ if {$subport eq $name} {
             patchfiles-append patch-libs-mpi-build-Jamfile.v2.diff
 
             post-destroot {
-             delete file {*}[glob ${destroot}${prefix}/include/boost/python/numpy*]
                 set site_packages [python_dir]
                 xinstall -d ${destroot}${site_packages}/boost
                 xinstall -m 644 ${worksrcpath}/libs/mpi/build/__init__.py \
@@ -305,17 +331,26 @@ if {$subport eq $name} {
 
         }
     }
+
+    livecheck.type  regex
+    livecheck.url   http://www.boost.org/users/download/
+    livecheck.regex Version (\\d+\\.\\d+\\.\\d+)</span>
 } else {
     post-destroot {
         move {*}[glob ${destroot}${prefix}/lib/libboost_numpy*] ${destroot}${prefix}
-        delete ${destroot}${prefix}/Library \
+        move {*}[glob ${destroot}${prefix}/include/boost/python/numpy*] ${destroot}${prefix}
+        # if an mpi variant *and* a python variant is selected, then a binary
+        # python module called mpi.so gets installed, so delete ${frameworks_dir}
+        delete ${destroot}${prefix}${frameworks_dir} \
             ${destroot}${prefix}/include \
             ${destroot}${prefix}/lib \
             ${destroot}${prefix}/share
-          file mkdir ${destroot}${prefix}/lib ${destroot}${prefix}/include/boost/python
+        file mkdir ${destroot}${prefix}/lib ${destroot}${prefix}/include/boost/python
         move {*}[glob ${destroot}${prefix}/libboost_numpy*] ${destroot}${prefix}/lib
- move {*}[glob ${destroot}${prefix}/numpy*] ${destroot}${prefix}/include/boost/python
+        move {*}[glob ${destroot}${prefix}/numpy*] ${destroot}${prefix}/include/boost/python
     }
+
+    livecheck.type  none
 }
 
 if {![variant_isset universal]} {
@@ -374,6 +409,12 @@ variant universal {
     }
 }
 
-livecheck.type  regex
-livecheck.url   http://www.boost.org/users/download/
-livecheck.regex Version (\\d+\\.\\d+\\.\\d+)</span>
+platform powerpc {
+    build.args-append   --disable-long-double
+}
+
+platform darwin 8 powerpc {
+    if {[variant_isset universal]} {
+        build.args-append   macosx-version=10.4
+    }
+}
