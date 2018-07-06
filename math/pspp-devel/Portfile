@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -45,7 +45,7 @@ depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
 depends_build-append    port:pkgconfig
 
 checksums           rmd160  8716102b1645fe441dd7031cad5916491d9b6130 \
-                    sha256  cf1ad4df0462fe093a5afa50f74cccb3be431cc2931ac1b222bea536ca75f3ef
+sha256  cf1ad4df0462fe093a5afa50f74cccb3be431cc2931ac1b222bea536ca75f3ef
 
 post-extract {
     if {[variant_isset gui]} {

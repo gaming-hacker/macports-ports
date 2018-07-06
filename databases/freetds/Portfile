@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ master_sites        ftp://ftp.freetds.org/pub/${name}/stable/
 use_bzip2           yes
 
 checksums           rmd160  e1441c5b7d8b32ccb3a9e4bb6651c63699562980 \
-                    sha256  8b747585bc25037edd2c74e89bc784f43956b711904e00f6ccd09822493f5427 \
-                    size    2153283
+sha256  8b747585bc25037edd2c74e89bc784f43956b711904e00f6ccd09822493f5427 \
+size    2153283
 
 depends_lib         port:libiconv \
                     port:ncurses \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -23,8 +23,8 @@ homepage            http://www.tddft.org/programs/libxc/
 master_sites        http://www.tddft.org/programs/octopus/download/libxc/${version}
 
 checksums           rmd160  474bff5212bf70e75ad0030c3d2dfb9b3109d495 \
-                    sha256  02e49e9ba7d21d18df17e9e57eae861e6ce05e65e966e1e832475aa09e344256 \
-                    size    15601356
+sha256  02e49e9ba7d21d18df17e9e57eae861e6ce05e65e966e1e832475aa09e344256 \
+size    15601356
 
 distname            libxc-${version}
 

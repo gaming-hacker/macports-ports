@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  f225ddd0ef3429684246df5d4db1717d44162dd4 \
-                    sha256  90f7cad08ca5f8591db251233a7f559197d186a1b4df7efdb6d263c43a39489d \
-                    size    62368247
+sha256  90f7cad08ca5f8591db251233a7f559197d186a1b4df7efdb6d263c43a39489d \
+size    62368247
 
 # Disable additional features.
 # --disable-doc:          Do not create documentation, and avoid searching for Doxygen.
@@ -113,8 +113,8 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  df647cdc23c98778570aad4468f8b9e4fd0eed37 \
-                        sha256  1b96b5b413e440684520a0acb6a2dc1300fd06d020d09b7a07090bc5dfb82d63 \
-                        size    64982448
+sha256  1b96b5b413e440684520a0acb6a2dc1300fd06d020d09b7a07090bc5dfb82d63 \
+size    64982448
     configure.ldflags-delete -lmatheval
     depends_lib-delete       port:libmatheval
 # plumed 2.5 supports python. However, I disable it here since it is

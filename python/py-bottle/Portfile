@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,11 +27,11 @@ homepage            http://bottlepy.org/
 master_sites        pypi:${_n}/${_name}/
 distname            ${_name}-${version}
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 checksums           rmd160  9acefd4abaaaeed1ca3cb90ec3e4d2d1df68e40b \
-                    sha256  39b751aee0b167be8dffb63ca81b735bbf1dd0905b3bc42761efedee8f123355 \
-                    size    70870
+sha256  39b751aee0b167be8dffb63ca81b735bbf1dd0905b3bc42761efedee8f123355 \
+size    70870
 
 # https://github.com/bottlepy/bottle/pull/795
 patchfiles-append   patch-fix-tests.diff

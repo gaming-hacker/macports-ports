@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -22,9 +22,9 @@ homepage            http://www.wannier.org
 master_sites        ${homepage}/code/
 
 checksums           rmd160  a650304810c8cf35a2942d074657d749e11d28a7 \
-                    sha1    40cf6607b5a8b960482251ba747382fbe0106f59 \
-                    sha256  ee90108d4bc4aa6a1cf16d72abebcb3087cf6c1007d22dda269eb7e7076bddca \
-                    size    57264711
+sha1    40cf6607b5a8b960482251ba747382fbe0106f59 \
+sha256  ee90108d4bc4aa6a1cf16d72abebcb3087cf6c1007d22dda269eb7e7076bddca \
+size    57264711
 
 configure {
     file copy ${worksrcpath}/config/make.inc.macosx ${worksrcpath}/make.inc

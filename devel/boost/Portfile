@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -12,8 +12,8 @@ version         1.66.0
 # Revision is set below in the `if {$subport eq $name} { ... }` statement
 # The boost-numpy subport has its own revision number
 checksums       rmd160  ee5dafdfa49adf50a5333cef1f55dac4f70b4c14 \
-                sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
-                size    85995778
+sha256  5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9 \
+size    85995778
 
 license         Boost-1
 categories      devel
