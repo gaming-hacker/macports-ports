@@ -29,7 +29,7 @@ size    15601356
 distname            libxc-${version}
 
 compilers.choose    fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 # g95 cannot handle F2003 here
 
 universal_variant   no

@@ -32,7 +32,7 @@ configure.args      --with-libxc-prefix=${prefix}
 configure.optflags-append  -ffree-line-length-none
 
 compilers.choose    fc cc cpp
-compilers.setup     require_fortran -g95 -clang
+compilers.setup     require_fortran -clang
 
 # g95 is disabled because of constructs regarded as illegal by this compiler.
 # :info:build In file mesh_ape.f90:58
