@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -25,8 +25,8 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  2f3ccbf42e373a9049ca7cd7074526e4039c5d10 \
-                        sha256  1960742a836db36ad1aaf3cc024e79aa067adb8460f981c7ae8409390afc7e8f \
-                        size    19741864
+sha256  1960742a836db36ad1aaf3cc024e79aa067adb8460f981c7ae8409390afc7e8f \
+size    19741864
 
 distname                node-v${version}
 
