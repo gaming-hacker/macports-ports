@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    qemu
 version                 2.12.0
@@ -20,8 +22,8 @@ master_sites            https://download.qemu.org/
 use_bzip2               yes
 
 checksums               rmd160  6d1bb9ef49ef58aad4b72a0bea9dd8b56929b37c \
-                        sha256  c9f4a147bc915d24df9784affc611a115f42d24720a89210b479f1ba7a3f679c \
-                        size    41196232
+sha256  c9f4a147bc915d24df9784affc611a115f42d24720a89210b479f1ba7a3f679c \
+size    41196232
 
 patchfiles              patch-configure.diff
 patch.pre_args          -p1

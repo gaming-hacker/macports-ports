@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -25,8 +25,8 @@ long_description    Rebar3 will: respect and enforce standard Erlang/OTP \
                     documentation as a bug.
 
 checksums           rmd160  42c4fc6dae8170951c8b18491fd54ed6ad703348 \
-                    sha256  8eff331236428782aee7c68a4c666c8daa546981684da59b93e5282bc1b657fd \
-                    size    289029
+sha256  8eff331236428782aee7c68a4c666c8daa546981684da59b93e5282bc1b657fd \
+size    289029
 
 depends_lib         port:erlang
 

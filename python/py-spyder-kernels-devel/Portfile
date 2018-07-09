@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     27 35 36
+python.versions 27 36 37
 
 maintainers         {gmail.com:ottenr.work @reneeotten} openmaintainer
 
@@ -22,8 +22,8 @@ master_sites        pypi:s/spyder-kernels
 distname            spyder-kernels-${version}
 
 checksums           rmd160  ed9295929fb6cbe7c2c36526766d2a2a9a0c25e0 \
-                    sha256  ce4950684a3b82cd995700e2623c8749d1194823f990d6ed24711e7db4cf202a \
-                    size    35936
+sha256  ce4950684a3b82cd995700e2623c8749d1194823f990d6ed24711e7db4cf202a \
+size    35936
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder-kernels
