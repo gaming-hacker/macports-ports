@@ -22,5 +22,5 @@ sha256  30e84ac4b31d40b66293f7b1221331c5a50561a39d580d85004d9c1fff991751
 #since, per CPAN, this is offically an "UNAUTHORIZED RELEASE," livecheck needs to be handled specially
 
 livecheck.type      regex
-livecheck.url       http://search.cpan.org/~tyemq/
+livecheck.url       https://cpan.metacpan.org/authors/id/T/TY/TYEMQ
 livecheck.regex     "${perl5.module}-(\\d+(?:\\.\\d+)*)"
