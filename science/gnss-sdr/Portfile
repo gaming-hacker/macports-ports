@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {${subport} eq "gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            8
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -50,7 +50,7 @@ subport gnss-sdr-devel {
     version             20170225
     revision            8
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
 
     # github changed the way tarballs are generated
     # remove this at next update
@@ -73,8 +73,8 @@ subport gnss-sdr-next {
     github.setup        gnss-sdr gnss-sdr 879478bd13b6b0845e77cfee28202ef87fb30180
     version             20180708
     checksums           rmd160 607f23e87facd40cf055321a43d100fb1313fdc5\
-                        sha256 870f7175a254633d413c128bf494f142dad21055533cda5a442faea2afef828d\
-                        size   3448578
+sha256 870f7175a254633d413c128bf494f142dad21055533cda5a442faea2afef828d\
+size   3448578
 
     conflicts           gnss-sdr gnss-sdr-devel
 
