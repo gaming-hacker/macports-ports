@@ -1,0 +1,274 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           muniversal 1.0
+
+name                OpenBLAS
+categories          math science
+license             BSD
+maintainers         {nicos @NicosPavlov} {michaelld @michaelld} openmaintainer
+description         OpenBLAS is an optimized BLAS library based on GotoBLAS2
+long_description    ${description}
+platforms           darwin
+
+# Prevent precompiled binaries to let compilation optimise the library
+# for the user processor
+archive_sites
+
+subport OpenBLAS-devel {}
+if {[string first "-devel" $subport] > 0} {
+
+    github.setup    xianyi OpenBLAS 4dd70d98d7481e8a355fd4f43e6630e29a31927a
+    version         20180704
+    checksums       rmd160 4a734b21bf08c138e73e9b25fa094b8c3ac3dd95\
+                    sha256 659a6ad5fb88f2f0e2c8aa26e1497d74763277f71756123877302f4e41cc2407\
+                    size   11816439
+
+    name            ${github.project}-devel
+    conflicts       OpenBLAS
+
+    patchfiles      patch-libnoarch.devel.diff \
+                    patch-linkLib.devel.diff
+
+    github.livecheck.branch develop
+
+} else {
+
+    github.setup    xianyi OpenBLAS 0.3.1 v
+checksums           rmd160 ce8a4c0501b468ce847c60259e5f7c2c782bea9e \
+                    sha256 39f9231746231c4dd7deefdd17d49cd87d27a12fb607eeee7d19f8c61e38c1d3 \
+                    size   11814036
+
+    conflicts       OpenBLAS-devel
+
+    patchfiles      patch-libnoarch.release.diff \
+                    patch-linkLib.release.diff
+
+}
+
+# declare +clang variant
+
+variant clang description "Use Clang as C/C++ compiler (required for AVX)" {}
+
+# default to +clang if the processor has avx instructions
+if {![catch {sysctl hw.optional.avx1_0} has_avx] && $has_avx == 1 &&
+    ![variant_isset clang]} {
+    default_variants +clang
+}
+
+# it is OK to use -clang, so don't check for that condition here
+
+# declare +gcc* variants
+
+set GCC_VERSIONS_NO_DOT {45 46 47 48 49 5 6 7 8}
+
+foreach this_gcc_version_no_dot ${GCC_VERSIONS_NO_DOT} {
+    set ndx [lsearch -exact ${this_gcc_version_no_dot} ${this_gcc_version_no_dot}]
+    set this_conflicts [lreplace ${this_gcc_version_no_dot} ${ndx} ${ndx}]
+    if {[variant_isset clang]} {
+        set this_description "Use gcc${this_gcc_version_no_dot} as Fortran compiler"
+    } else {
+        set this_description "Use gcc${this_gcc_version_no_dot} for the compiler suite"
+    }
+    variant gcc${this_gcc_version_no_dot} \
+        conflicts {*}${this_conflicts} \
+        description ${this_description} {}
+}
+
+# set default +gcc* variant: default to +gcc6 if not other +gcc*
+# variant is selected. this variant is used for Fortran, no matter
+# whether +clang is selected or not. if +clang is not selected or
+# -clang is selected, then use the selected +gcc* variant for the
+# compiler suite.
+
+set GCC_VER_NO_DOT 0
+foreach this_gcc_version_no_dot ${GCC_VERSIONS_NO_DOT} {
+    if {[variant_isset gcc${this_gcc_version_no_dot}]} {
+        set GCC_VER_NO_DOT ${this_gcc_version_no_dot}
+        break
+    }
+}
+
+if {${GCC_VER_NO_DOT} == 0} {
+    default_variants +gcc6
+}
+
+# make sure -gcc6 was not selected alone
+
+set GCC_VER_NO_DOT 0
+foreach this_gcc_version_no_dot ${GCC_VERSIONS_NO_DOT} {
+    if {[variant_isset gcc${this_gcc_version_no_dot}]} {
+        set GCC_VER_NO_DOT ${this_gcc_version_no_dot}
+        break
+    }
+}
+
+if {${GCC_VER_NO_DOT} == 0} {
+    ui_error "\n\nYou must select a Fortran compiler variant; you cannot select -gcc6 alone.\n"
+    return -code error "Invalid variant selection."
+}
+
+set GCC_VER_DOT [join [split ${GCC_VER_NO_DOT} ""] "."]
+
+# set compilers to use
+
+if {[variant_isset clang]} {
+
+    # use selected +gcc* for Fortran only
+    depends_build-append    port:gcc${GCC_VER_NO_DOT}
+    # add libgcc as a runtime dependency
+    depends_lib-append      port:libgcc
+
+    configure.fc            ${prefix}/bin/gfortran-mp-${GCC_VER_DOT}
+
+    if {[vercmp $xcodeversion 5.0] >= 0} {
+        configure.compiler      clang
+    } else {
+        # Xcode's clang < 5.0 does not support avx
+
+        #Use a compiler depending on system
+        if {${configure.cxx_stdlib} eq "libc++"} {
+            configure.compiler      macports-clang-3.7
+        } else {
+            configure.compiler      macports-clang-3.4
+        }
+    }
+} else {
+
+    # use selected +gcc* for the whole compiler suite
+    configure.compiler  macports-gcc-${GCC_VER_DOT}
+
+}
+
+variant lapack description "Add Lapack/CLapack support to the library" { }
+default_variants-append +lapack
+
+use_configure       no
+
+pre-build {
+    if {[variant_isset universal]} {
+        foreach arch ${universal_archs_to_use} {
+            set makeINC [open ${worksrcpath}-${arch}/Makefile.rule "w"]
+            puts $makeINC "VERSION = 1"
+            puts $makeINC "LIBNAMESUFFIX = "
+
+            puts $makeINC "CC = ${configure.cc}"
+            puts $makeINC "FC = ${configure.fc}"
+
+            if {${arch} eq "x86_64" || ${arch} eq "ppc64"} {
+                puts $makeINC "BINARY = 64"
+            } else {
+                puts $makeINC "BINARY = 32"
+            }
+            if {![variant_isset clang]} {
+                 puts $makeINC "COMMON_OPT = -O3"
+            } else {
+                #Ensure to use the AVX-capable assembler
+                puts $makeINC "COMMON_OPT = -O3"
+            }
+            puts $makeINC "COMMON_PROF = -pg"
+
+            if {![variant_isset lapack]} {
+                puts $makeINC "NO_LAPACK = 1"
+            }
+            if {![variant_isset clang]} {
+                puts $makeINC "NO_AVX = 1"
+            }
+            close $makeINC
+        }
+    } else {
+        set makeINC [open ${worksrcpath}/Makefile.rule "w"]
+        puts $makeINC "VERSION = 1"
+        puts $makeINC "LIBNAMESUFFIX = "
+
+        puts $makeINC "CC = ${configure.cc}"
+        puts $makeINC "FC = ${configure.fc}"
+
+        if {${build_arch} eq "x86_64" || ${build_arch} eq "ppc64"} {
+            puts $makeINC "BINARY = 64"
+        } else {
+            puts $makeINC "BINARY = 32"
+        }
+        if {![variant_isset clang]} {
+            puts $makeINC "COMMON_OPT = -O3"
+        } else {
+            #Ensure to use the AVX-capable assembler
+            puts $makeINC "COMMON_OPT = -O3"
+        }
+        puts $makeINC "COMMON_PROF = -pg"
+
+        if {![variant_isset lapack]} {
+            puts $makeINC "NO_LAPACK = 1"
+        }
+        if {![variant_isset clang]} {
+            if { ![catch {sysctl hw.optional.avx1_0} has_avx] && $has_avx == 1 } {
+                ui_msg "Warning: the chosen compiler cannot handle advanced optimisation instructions."
+                ui_msg "         AVX instructions are disabled."
+            }
+            puts $makeINC "NO_AVX = 1"
+        }
+        close $makeINC
+    }
+}
+# Using system ones as default is set to bin/gcc-ar which does not
+# exist, and using gcc-mp ones end up in an error about a missing
+# plugin. (see ticket #38551 for example)
+build.args          "AR=/usr/bin/ar RANLIB=/usr/bin/ranlib"
+destroot.args       "PREFIX=${prefix}"
+
+if {[variant_isset universal]} {
+    merger-post-destroot {
+        foreach arch ${universal_archs_to_use} {
+            if {${arch} ne ${build_arch}} {
+                # openblas.pc records the processor name, which is different for 32-bit and 64-bit architectures
+                # see https://github.com/xianyi/OpenBLAS/commit/eb9b021d3890429a41823dc3d90eb0d11c0a6d6d
+                delete ${destroot}-${arch}${prefix}/lib/pkgconfig/openblas.pc
+            }
+            move ${destroot}-${arch}${prefix}/include/cblas.h \
+                ${destroot}-${arch}${prefix}/include/cblas_openblas.h
+            #Correct library name
+            system "install_name_tool -id \
+                ${prefix}/lib/libopenblas-r1.dylib \
+                ${destroot}-${arch}${prefix}/lib/libopenblas-r1.dylib"
+            delete file ${destroot}-${arch}/${prefix}/lib/cmake
+            if {[variant_isset lapack]} {
+                #Install lapacke headers too
+                set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
+                                     grep -i lapacke]
+                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
+                    ${destroot}-${arch}${prefix}/include/lapacke_config.h
+                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
+                    ${destroot}-${arch}${prefix}/include/lapacke_mangling.h
+                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
+                    ${destroot}-${arch}${prefix}/include/lapacke_utils.h
+                xinstall -m 755 ${worksrcpath}-${arch}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
+                    ${destroot}-${arch}${prefix}/include/lapacke.h
+            }
+        }
+    }
+} else {
+    post-destroot {
+        #Avoid conflict with Atlas
+        move ${destroot}${prefix}/include/cblas.h \
+            ${destroot}${prefix}/include/cblas_openblas.h
+        #Correct library name
+        system "install_name_tool -id \
+            ${prefix}/lib/libopenblas-r1.dylib \
+            ${destroot}${prefix}/lib/libopenblas-r1.dylib"
+        delete file ${destroot}/${prefix}/lib/cmake
+        if {[variant_isset lapack]} {
+            #Install lapacke headers too
+            set LAPACKE_DIR [exec /bin/ls ${worksrcpath}/lapack-netlib | \
+                                 grep -i lapacke]
+            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_config.h \
+                ${destroot}${prefix}/include/lapacke_config.h
+            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_mangling.h \
+                ${destroot}${prefix}/include/lapacke_mangling.h
+            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke_utils.h \
+                ${destroot}${prefix}/include/lapacke_utils.h
+            xinstall -m 755 ${worksrcpath}/lapack-netlib/${LAPACKE_DIR}/include/lapacke.h \
+                ${destroot}${prefix}/include/lapacke.h
+        }
+    }
+}

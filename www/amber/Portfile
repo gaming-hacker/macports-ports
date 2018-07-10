@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ depends_lib         port:crystal \
                     port:shards
 
 checksums           rmd160  ac486ad4b362a777a8cee86a9903a17098ed8654 \
-sha256  d2706633fccfbce4102077b7455595d0935f5a542d85c68b744eb129edd64c6b \
-size    177801
+                    sha256  d2706633fccfbce4102077b7455595d0935f5a542d85c68b744eb129edd64c6b \
+                    size    177801
 
 pre-fetch {
   if {${os.major} < 16} {
