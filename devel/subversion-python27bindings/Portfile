@@ -29,7 +29,7 @@ dist_subdir		subversion
 
 depends_lib		port:expat \
 			port:apr port:apr-util \
-			port:db46 port:subversion \
+			port:db62 port:subversion \
 			port:python27 \
 			port:sqlite3 \
 			port:gettext port:libiconv \
@@ -47,7 +47,7 @@ post-patch {
 		${worksrcpath}/subversion/bindings/swig/python/libsvn_swig_py27
 }
 
-configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
+configure.args		--with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db62:db-6.2 \
 			--with-apr=${prefix}/bin/apr-1-config \
 			--with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
 			--mandir=\\\${prefix}/share/man \
@@ -89,8 +89,8 @@ post-configure {	reinplace "s|need_relink=yes|need_relink=no|g" \
 			}
 
 variant no_bdb description {Build without support for BerkeleyDB repositories} {
-			depends_lib-delete	port:db46
-			configure.args-delete 	--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6
+			depends_lib-delete	port:db62
+			configure.args-delete 	--with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db62:db-6.2
 			configure.args-append	--without-berkeley-db
 			}
 
