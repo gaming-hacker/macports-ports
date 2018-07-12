@@ -18,8 +18,8 @@ long_description    k6 is a modern load testing tool, building on Load Impact's 
 homepage            https://k6.io/
 
 checksums           rmd160  9a0c45b2fcefd8dd527618bba9d2bf168671f153 \
-                    sha256  573a9d868a55a6a0fa1a850a46be33dfbac5b99eab1f60b4aa126b980e52d94d \
-                    size    4997379
+sha256  573a9d868a55a6a0fa1a850a46be33dfbac5b99eab1f60b4aa126b980e52d94d \
+size    4997379
 
 set goproj          github.com/${github.author}/${github.project}
 

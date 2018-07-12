@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            http://www.pdflib.com/download/free-software/pdflib-lite-7/
 master_sites        http://distcache.freebsd.org/local-distfiles/ale/
 distname            PDFlib-Lite-${version}
 checksums           rmd160 daf4dea4e049bea4963dcc7d3dc0eabec47ca89b \
-                    sha256 e5fb30678165d28b2bf066f78d5f5787e73a2a28d4902b63e3e07ce1678616c9 \
-                    size   8179201
+sha256 e5fb30678165d28b2bf066f78d5f5787e73a2a28d4902b63e3e07ce1678616c9 \
+size   8179201
 
 patchfiles          patch-configure.diff \
                     patch-perl_Makefile.diff \
