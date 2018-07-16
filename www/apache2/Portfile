@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           apache2 1.0
@@ -22,8 +22,8 @@ use_bzip2           yes
 use_parallel_build  yes
 
 checksums           rmd160  80470d5ad344eba9b0260a9ff901c4a78def0abd \
-                    sha256  fa53c95631febb08a9de41fd2864cfff815cf62d9306723ab0d4b8d7aa1638f0 \
-                    size    6942969
+sha256  fa53c95631febb08a9de41fd2864cfff815cf62d9306723ab0d4b8d7aa1638f0 \
+size    6942969
 
 depends_lib         port:apr \
                     port:apr-util \

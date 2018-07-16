@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -22,8 +22,8 @@ use_zip                 yes
 distname                Argyll_V${version}_src
 
 checksums               rmd160  c6fd956ae9e5171b88e1cb5c8576b1deb42c60aa \
-                        sha256  7d6542c16118bb93ba252d72bc9562bf2b01d3ae62cc0583cf4331e766b3a512 \
-                        size    13606682
+sha256  7d6542c16118bb93ba252d72bc9562bf2b01d3ae62cc0583cf4331e766b3a512 \
+size    13606682
 
 worksrcdir              Argyll_V${version}
 

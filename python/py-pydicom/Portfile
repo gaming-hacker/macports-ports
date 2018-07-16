@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 github.setup        pydicom pydicom 1.1.0 v
 name                py-pydicom
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 platforms           darwin
 license             MIT BSD
 maintainers         {eborisch @eborisch} \
@@ -24,8 +24,8 @@ long_description    pydicom is a pure python package for working with DICOM \
 homepage            https://pydicom.github.io/pydicom/stable/index.html
 
 checksums \
-    rmd160  887175a897de8901ea92eb38ecd9cb1abf79f725 \
-    sha256  f03726c1768b419b3b4f5845e4b302a8c37f84cf8b32fe84356302fcc89c97cf
+rmd160  887175a897de8901ea92eb38ecd9cb1abf79f725 \
+sha256  f03726c1768b419b3b4f5845e4b302a8c37f84cf8b32fe84356302fcc89c97cf
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-numpy

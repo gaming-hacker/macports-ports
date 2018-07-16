@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -18,8 +18,8 @@ long_description        This extension provides several commands to mutate histo
                         and deal with issues it may raise.
 
 checksums               rmd160  10993de9d59d7328f2ac740951071ca8f5457233 \
-                        sha256  204acd838e4e74587971e4dff07937ce63b3872fe7111ca6aae3d3ca34d35415 \
-                        size    697570
+sha256  204acd838e4e74587971e4dff07937ce63b3872fe7111ca6aae3d3ca34d35415 \
+size    697570
 
 # can't set python.versions before adding custom subports
 subport py-hgevolve-devel {}
@@ -33,11 +33,11 @@ if {[string match "*-devel" $subport]} {
     revision            0
 
     checksums           rmd160  7a5bf35def6225460176a8f746e78e77bb2fb723 \
-                        sha256  5819c049bc0b1853aefb4d475c369795d2612528bc6d3e9ffd494e4e5fd4374c \
-                        size    715088
+sha256  5819c049bc0b1853aefb4d475c369795d2612528bc6d3e9ffd494e4e5fd4374c \
+size    715088
 }
 
-python.versions         27
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_lib         path:bin/hg:mercurial

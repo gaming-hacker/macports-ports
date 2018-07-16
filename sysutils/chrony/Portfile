@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ homepage            https://chrony.tuxfamily.org/
 
 master_sites        https://download.tuxfamily.org/chrony/
 checksums           rmd160  57a6c5ec90f5553fe71ff93efa83034abc079e40 \
-                    sha256  0d1fb2d5875032f2d5a86f3770374c87ee4c941916f64171e81f7684f2a73128 \
-                    size    443571
+sha256  0d1fb2d5875032f2d5a86f3770374c87ee4c941916f64171e81f7684f2a73128 \
+size    443571
 
 default_variants    +libedit +nettle
 

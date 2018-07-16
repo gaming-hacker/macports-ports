@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -32,8 +32,8 @@ long_description    The Mojolicious MVC web framework is all about minimalism \
                     and much more for you to discover.
 
 checksums           rmd160  6a86943a62797251dd5822a525d498a9a442ec9a \
-                    sha256  4c4c9c05131fcd175cd6370e15d2586baec1a3ec882cb6971e1f5f52b5e0d785 \
-                    size    725095
+sha256  4c4c9c05131fcd175cd6370e15d2586baec1a3ec882cb6971e1f5f52b5e0d785 \
+size    725095
 
 if {${perl5.major} != ""} {
     depends_lib-append \

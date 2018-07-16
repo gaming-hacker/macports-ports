@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            http://aircrack-ng.org/
 master_sites        http://download.aircrack-ng.org/
 
 checksums           rmd160  a752c474271eeecaa02ad9250924a5da774d142e \
-                    sha256  8ae08a7c28741f6ace2769267112053366550e7f746477081188ad38410383ca \
-                    size    4501507
+sha256  8ae08a7c28741f6ace2769267112053366550e7f746477081188ad38410383ca \
+size    4501507
 
 depends_build       port:autoconf \
                     port:automake \

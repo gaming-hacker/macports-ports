@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -26,9 +26,9 @@ if {${subport} eq ${name}} {
 
     github.setup    gnuradio gnuradio 3.7.13.4 v
     checksums \
-        rmd160 150f8ccb6f724e2bdced377f56d36c3810649992 \
-        sha256 44c987c941b69fcf77d4e9fa7f8039eb8bf82591e8184c431f44351abe6bba3e \
-        size   4431335
+rmd160 150f8ccb6f724e2bdced377f56d36c3810649992 \
+sha256 44c987c941b69fcf77d4e9fa7f8039eb8bf82591e8184c431f44351abe6bba3e \
+size   4431335
 
     long_description    ${description}: \
         This port is kept up with the GNU Radio release, currently ${version}, which is typically updated every few months.
@@ -57,9 +57,9 @@ subport gnuradio-devel {
     github.setup        gnuradio gnuradio efdc8e84ca893d2314758d5b9eeef7cedb1c8c83
     version             20180712
     checksums \
-        rmd160 208b212fd530c82107eea9f1ed129f0736cc3bc3 \
-        sha256 1eae77c2c01fe3226d5a6eafd53bbc108d6426077da7b0822ef13d34969365a1 \
-        size   4422939
+rmd160 208b212fd530c82107eea9f1ed129f0736cc3bc3 \
+sha256 1eae77c2c01fe3226d5a6eafd53bbc108d6426077da7b0822ef13d34969365a1 \
+size   4422939
 
     # set the version override string
 
@@ -78,9 +78,9 @@ subport gnuradio-next {
     github.setup        gnuradio gnuradio 89736b31397330861dcaa550b7891ce6e7a5536f
     version             20180713
     checksums \
-        rmd160 f804bcd315d3ffe63275600708a3fae1d5b20746 \
-        sha256 b612a0c85ccaffe01fd9d8b9fa48178f8b18d429ab7e0779076b39cafc892648 \
-        size   3628589
+rmd160 f804bcd315d3ffe63275600708a3fae1d5b20746 \
+sha256 b612a0c85ccaffe01fd9d8b9fa48178f8b18d429ab7e0779076b39cafc892648 \
+size   3628589
 
     # set the version override string
 
