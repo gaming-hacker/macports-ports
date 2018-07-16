@@ -108,8 +108,8 @@ rmd160  aff2b600dd6d77317cc2b8d1e88f6673b6e661f0 \
 sha256  4fec236f3fbd3d0c47b893fdfa9122142a474f6ef66c20ffb6c0f4864dd591b6 \
 size    1557
 
-depends_build           bin:grep:grep \
-                        bin:bison:bison
+depends_build           bin:bison:bison
+
 depends_lib             port:gettext \
                         port:ncurses
 

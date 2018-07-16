@@ -20,7 +20,6 @@ rmd160  9bfd4ec998679e06b56b94901fce1ef765aa749e
 use_bzip2           yes
 
 depends_build       port:pkgconfig \
-                    bin:grep:grep \
                     bin:groff:groff
 
 depends_lib         port:libiconv \

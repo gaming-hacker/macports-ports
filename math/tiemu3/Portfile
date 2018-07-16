@@ -23,7 +23,6 @@ sha1    a682026f49d85829f7db07edc8bfa372c6617ce1 \
 rmd160  88bc445977f5301bb6c57b19df3e982b5f703068
 
 depends_build       port:pkgconfig \
-                    bin:grep:grep \
                     bin:groff:groff
 
 depends_lib         port:libiconv \
