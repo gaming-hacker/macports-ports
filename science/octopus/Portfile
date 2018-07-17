@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -22,8 +22,8 @@ homepage            http://www.tddft.org/programs/octopus
 master_sites        ${homepage}/download/${version}
 
 checksums           rmd160  967ab8a9d1a7c1e45703eaa7c012d9519def0d13 \
-                    sha256  0aca270e22895fa2d1c5b8034389e21ff22697aed28e4a6be36f11e943bda0df \
-                    size    49312804
+sha256  0aca270e22895fa2d1c5b8034389e21ff22697aed28e4a6be36f11e943bda0df \
+size    49312804
 
 compilers.choose    fc cc cxx
 mpi.setup           require_fortran -g95 -clang

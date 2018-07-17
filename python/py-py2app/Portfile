@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ master_sites        pypi:p/py2app/
 distname            py2app-${version}
 
 checksums           md5 8fa1acfb3e3c2fbf9a396ae5b1f45869 \
-                    rmd160 be46a56dd572460a85ddc1b96d2ecc00d319e6f3 \
-                    sha256 4dadf15d078a1748acba483c1abbb69a144a059e0c335a5e2a17b070d4cc938a
+rmd160 be46a56dd572460a85ddc1b96d2ecc00d319e6f3 \
+sha256 4dadf15d078a1748acba483c1abbb69a144a059e0c335a5e2a17b070d4cc938a
 
-python.versions     27 33 34 35 36 37
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-macholib

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   graphics math
 platforms           darwin
 license             {PSF BSD}
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 maintainers         {sean @seanfarley} openmaintainer
 
@@ -30,8 +30,8 @@ long_description    Matplotlib strives to produce publication quality 2D \
 homepage            http://matplotlib.org/
 
 checksums           rmd160  94ea2604a9473aba40a065027caf06d42e775e6e \
-                    sha256  bf08dc0347ddcdce02dca22c20f89d760a459bcb6ba793fa002b6b8925f66c68 \
-                    size    36595100
+sha256  bf08dc0347ddcdce02dca22c20f89d760a459bcb6ba793fa002b6b8925f66c68 \
+size    36595100
 
 if {${name} ne ${subport}} {
     depends_build-append \
