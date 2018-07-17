@@ -26,7 +26,7 @@ sha256  0aca270e22895fa2d1c5b8034389e21ff22697aed28e4a6be36f11e943bda0df \
 size    49312804
 
 compilers.choose    fc cc cxx
-mpi.setup           require_fortran -g95 -clang
+mpi.setup           require_fortran -clang
 #-clang33 -clang34 -clang38
 # not clear if clang33 and clang34 work; clang38 gives cxx11 error as does default clang.
 # clang fails in tests, relating to pseudopotentials and XML
@@ -126,7 +126,7 @@ variant scalapack description {Build with ScaLAPACK for parallel linear algebra}
         ui_error "+scalapack requires an MPI variant. Choose +mpich, +mpich_devel, +openmpi, or +openmpi_devel."
         return -code error "+scalapack requires an MPI variant."
     }
-    
+
     mpi.setup               require
     # FIXME: this unnecessarily enforces scalapack had same C compiler as we are using.
     # also, if +scalapack but no MPI is used, an internal error from active_variants
