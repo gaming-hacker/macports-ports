@@ -32,7 +32,9 @@ checksums           rmd160  e9c73530d44894bcf30bd8a61857f3405c2faa67 \
 sha256  b84b9dc4447fea02beed25c3075b9cbd9f5d7ec40f7896f1fff121b81763b2fd \
 size    4705672
 
-depends_build       port:go
+depends_build       port:go \
+                    port:pkgconfig
+
 depends_lib         path:lib/libssl.dylib:openssl
 
 use_configure       no

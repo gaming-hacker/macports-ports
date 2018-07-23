@@ -230,6 +230,7 @@ py-tvdb                 1.9_1       26
 py-tvnamer              2.3_1       26
 py-uncertainties        2.4.6.1_1   26 33
 py-unidecode            0.04.20     33 34
+py-urwid                2.0.1_1     26 33
 py-virtualenv           15.1.0_1    26 33
 py-visa                 1.4_1       26
 py-vobject              0.8.1c_1    26
@@ -237,11 +238,16 @@ py-watchdog             0.7.1_1     33
 py-webkitgtk            1.1.8_8     26
 py-w3lib                1.9.0_1     33
 py-xhtml2pdf            0.0.6_2     26
+py-yaml                 3.13        26 33
 
 if {${subport} ne ${name}} {
     PortGroup obsolete 1.0
 } else {
-    maintainers         {larryv @larryv} openmaintainer
+    # Please do not assume maintainership of this metaport; it is
+    # intentionally nomaintainer to encourage contributors to add or
+    # remove entries as necessary (#56816). Feel free to contact @larryv
+    # for technical assistance.
+    maintainers         nomaintainer
     supported_archs     noarch
     universal_variant   no
     description         Metaport containing obsolete Python subports

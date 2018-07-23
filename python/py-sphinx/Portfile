@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-sphinx
-version             1.7.4
+version             1.7.6
 categories-append   textproc devel
 license             BSD
 maintainers         {jmr @jmroot} openmaintainer
@@ -24,10 +24,10 @@ homepage            http://sphinx-doc.org/
 master_sites        pypi:S/Sphinx/
 distname            Sphinx-${version}
 
-checksums           rmd160 a05ba966e79e0312e037380eb89363767ca11442 \
-sha256 e9b1a75a3eae05dded19c80eb17325be675e0698975baae976df603b6ed1eb10
+checksums           rmd160 ec3c0ca4039f124214ec733532adda9254fe95d9 \
+                    sha256 217ad9ece2156ed9f8af12b5d2c82a499ddf2c70a33c5f81864a08d8c67b9efc
 
-python.versions 27 36 37
+python.versions     27 34 35 36
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-docutils \

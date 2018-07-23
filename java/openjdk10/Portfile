@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem       1.0
 
 name             openjdk10
-version          10.0.1
+version          10.0.2
 
 categories       java devel
 maintainers      {breun.nl:nils @breun} openmaintainer
@@ -11,7 +11,7 @@ platforms        darwin
 license          GPL-2
 supported_archs  x86_64
 
-description      OpenJDK -- Open Java Development Kit
+description      Open Java Development Kit 10
 
 long_description Production-ready, free and open-source build of the Java \
                  Development Kit, an implementation of the Java Standard \
@@ -21,12 +21,12 @@ long_description Production-ready, free and open-source build of the Java \
                  compiler. 
 
 homepage         http://jdk.java.net/10/
-master_sites     https://download.java.net/java/GA/jdk10/${version}/fb4372174a714e6b8c52526dc134031e/10/
+master_sites     https://download.java.net/java/GA/jdk10/${version}/19aef61b38124481863b1413dce1855f/13/
 distname         openjdk-${version}_osx-x64_bin
 
-checksums        rmd160  00a1a8a0e63901ecdea7d013f8307ea601e83a55 \
-sha256  650e06c203a9d2752d686dc62206580afdc909af924b7ea8573b1c671e182ab0 \
-size    200863681
+checksums        rmd160  d29498411adc487bf8191adbc4276c72602022cf \
+                 sha256  77ea7675ee29b85aa7df138014790f91047bfdafbc997cb41a1030a0417356d7 \
+                 size    200916897
 
 worksrcdir       jdk-${version}.jdk
 
