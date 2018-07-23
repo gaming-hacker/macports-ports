@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            http://www.astropy.org
 master_sites        pypi:a/astropy/
 distname            astropy-${version}
 checksums           md5     d54c2571fdb82642fcce27f5a88f33d3 \
-                    rmd160  0fc1b310f3bafbf2f75f22a9b4d6a32706cd2e0e \
-                    sha256  c35f4433c14ddfcaf2407cc815385f3d85396727e9a1e660cf66a7c4f5dd1067
+rmd160  0fc1b310f3bafbf2f75f22a9b4d6a32706cd2e0e \
+sha256  c35f4433c14ddfcaf2407cc815385f3d85396727e9a1e660cf66a7c4f5dd1067
 
-python.versions     27 33 34 35 36
+python.versions 27 36 37
 
 build.args-append   --use-system-cfitsio \
                     --use-system-expat \
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
         distname            astropy-${version}
 
         checksums           md5     044da9f6aba1dac3864a5ab95c9c11d0 \
-                            rmd160  989ab80ebe9bf1f81b71ebc65f2251ec7cdcaa14 \
-                            sha256  5c132d528fd431eb77fd73c172dfa3ec295f2ce0a98c075786908086cda8616d
+rmd160  989ab80ebe9bf1f81b71ebc65f2251ec7cdcaa14 \
+sha256  5c132d528fd431eb77fd73c172dfa3ec295f2ce0a98c075786908086cda8616d
     }
 
     depends_lib-append  port:cfitsio \

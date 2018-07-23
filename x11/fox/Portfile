@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ homepage            http://www.fox-toolkit.org
 master_sites        ${homepage}/ftp
 
 checksums           rmd160  c315fc2ad1ea4350498947ce1b5bb06f400e173b \
-                    sha256  960f16a8a69d41468f841039e83c2f58f3cb32622fc283a69f20381abb355219
+sha256  960f16a8a69d41468f841039e83c2f58f3cb32622fc283a69f20381abb355219
 
 depends_build       port:pkgconfig
 

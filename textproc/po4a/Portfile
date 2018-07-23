@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ homepage            https://po4a.org/
 github.tarball_from releases
 
 checksums           rmd160  f82979c9140d01fcebb044d10ac201dcc47e2ed5 \
-                    sha256  596f7621697f9dd12709958c229e256b56683d25997ac73c9625a2cc0c603d51 \
-                    size    2686485
+sha256  596f7621697f9dd12709958c229e256b56683d25997ac73c9625a2cc0c603d51 \
+size    2686485
 
 # TODO: check and fix dependencies
 depends_lib-append  port:perl${perl5.major} \

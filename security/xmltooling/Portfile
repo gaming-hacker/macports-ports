@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ master_sites        http://shibboleth.net/downloads/c++-opensaml/3.0.0/
 use_bzip2           yes
 
 checksums           rmd160  2c948c688d4bcc28737be679e603ff01d381eb89 \
-                    sha256  5709cf30c9d7cfc786599ac2433653fac8cc64d425781068af86019c8ce8d689 \
+sha256  5709cf30c9d7cfc786599ac2433653fac8cc64d425781068af86019c8ce8d689 \
 
 configure.args      --disable-static \
                     --with-xmlsec

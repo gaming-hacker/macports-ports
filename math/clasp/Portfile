@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ distname            ${name}-${version}-source
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  a09294bad38cb27eb095d98dc91be93319f701b2 \
-                    sha256  5e4a4588ec48bbf54becc619397e07c7c0293e41e2d70f11170fc6b3773fe9cb \
-                    size    826644
+sha256  5e4a4588ec48bbf54becc619397e07c7c0293e41e2d70f11170fc6b3773fe9cb \
+size    826644
 
 post-destroot {
     xinstall -d -m 0755 ${destroot}${prefix}/share/doc/${name}

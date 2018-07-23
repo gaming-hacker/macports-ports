@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -28,8 +28,8 @@ homepage                https://developers.google.com/speed/webp/
 master_sites            http://downloads.webmproject.org/releases/webp/
 
 checksums               rmd160  ede348e5f06913f1b876e7704ea626807f637755 \
-                        sha256  84259c4388f18637af3c5a6361536d754a5394492f91be1abc2e981d4983225b \
-                        size    4023549
+sha256  84259c4388f18637af3c5a6361536d754a5394492f91be1abc2e981d4983225b \
+size    4023549
 
 depends_lib             port:giflib \
                         port:jpeg \

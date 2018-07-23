@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             python 1.0
@@ -24,7 +24,7 @@ if {${subport} eq ${name}} {
 
     github.setup    pybombs pybombs 2.3.2 v
     checksums       rmd160 a19b3071d02d705872c9b0cbdecd5bf6f16a88a2 \
-                    sha256 88c8ad3550df8990e2f56857c7cb27f15eadcbcfc35a59ffd1f4a6dbf7639af6
+sha256 88c8ad3550df8990e2f56857c7cb27f15eadcbcfc35a59ffd1f4a6dbf7639af6
 
     worksrcdir      gnuradio-pybombs-1cbd8cd
     conflicts       ${name}-devel
@@ -39,8 +39,8 @@ if {${subport} eq ${name}} {
     github.setup    pybombs pybombs f8a198a3aa8abb4c68aba3158c2c6f82013d05db
     version         20180716
     checksums       rmd160 f9efec2366262ca770ac1de462bd984fe00984a2 \
-                    sha256 aca748892855f02660a3b7bdad667a15e9f58b2aeb548d0f89a942daa8a637ae \
-                    size   98541
+sha256 aca748892855f02660a3b7bdad667a15e9f58b2aeb548d0f89a942daa8a637ae \
+size   98541
 
     worksrcdir      gnuradio-${github.project}-[string range ${github.version} 0 6]
     long_description    ${long_description} \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cxx11 1.1
@@ -7,8 +7,8 @@ name                qscintilla
 
 version             2.10.7
 checksums           rmd160 163f7e78b3ee0ae582ec96d5707de20a3025b3fc \
-                    sha256 670458de71dd4205e92d8f3b7bad9f667afece925703cde9df6d04bc23331a1a \
-                    size   2734778
+sha256 670458de71dd4205e92d8f3b7bad9f667afece925703cde9df6d04bc23331a1a \
+size   2734778
 
 categories          devel
 license             GPL-3

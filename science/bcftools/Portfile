@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ long_description        BCFtools implements utilities for variant calling (in \
                         Perl-based tools from vcftools.
 
 checksums               rmd160  59b9997aaa509ba84c41b7e78821f31eca8d90dc \
-                        sha256  6f36d0e6f16ec4acf88649fb1565d443acf0ba40f25a9afd87f14d14d13070c8 \
-                        size    3134355
+sha256  6f36d0e6f16ec4acf88649fb1565d443acf0ba40f25a9afd87f14d14d13070c8 \
+size    3134355
 
 homepage                http://www.htslib.org/
 github.tarball_from     releases
