@@ -27,6 +27,10 @@ checksums           rmd160  211776f660dcc86c0af81044402bedd0f287ec73 \
 python.versions     36
 python.link_binaries_suffix
 
+if {${name} ne ${subport}} {
+    depends_build-append port:py${python.version}-setuptools
+}
+
 if {${subport} ne ${name}} {
     livecheck.type  none
 }
