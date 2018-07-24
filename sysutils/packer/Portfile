@@ -1,0 +1,48 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                packer
+version             1.2.5
+
+categories          sysutils
+license             MPL-2
+maintainers         {newtonne @newtonne} openmaintainer
+platforms           darwin
+supported_archs     x86_64
+
+description         A tool for creating identical machine images for multiple \
+                    platforms from a single source configuration.
+
+long_description    ${description} \
+                    Packer is lightweight, runs on every major operating \
+                    system, and is highly performant, creating machine images \
+                    for multiple platforms in parallel. Packer comes out of \
+                    the box with support for many platforms, the full list of \
+                    which can be found at \
+                    https://www.packer.io/docs/builders/index.html.
+
+homepage            https://www.packer.io
+
+master_sites        https://releases.hashicorp.com/${name}/${version}
+distname            ${name}_${version}_darwin_amd64
+
+checksums           rmd160 449e45525cbbc99e9d781bece632f968fcf70f99 \
+                    sha256 3d546eff8179fc0de94ad736718fdaebdfc506536203eade732d9d218fbb347c \
+                    size   19352311
+
+use_configure       no
+use_zip             yes
+extract.mkdir       yes
+
+# The default build is a binary install.
+build {
+}
+
+destroot {
+    file copy ${worksrcpath}/packer ${destroot}${prefix}/bin
+}
+
+livecheck.type      regex
+livecheck.url       https://releases.hashicorp.com/packer/
+livecheck.regex     >packer_(\\d+(\\.\\d+)+)<
