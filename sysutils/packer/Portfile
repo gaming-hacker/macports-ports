@@ -1,9 +1,9 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
+PortGroup           github 1.0
 
-name                packer
-version             1.2.5
+github.setup        hashicorp packer 1.2.5 v
 
 categories          sysutils
 license             MPL-2
@@ -24,25 +24,22 @@ long_description    ${description} \
 
 homepage            https://www.packer.io
 
-master_sites        https://releases.hashicorp.com/${name}/${version}
-distname            ${name}_${version}_darwin_amd64
-
-checksums           rmd160 449e45525cbbc99e9d781bece632f968fcf70f99 \
-                    sha256 3d546eff8179fc0de94ad736718fdaebdfc506536203eade732d9d218fbb347c \
-                    size   19352311
+fetch.type          git
+git.url             https://github.com/hashicorp/packer.git
 
 use_configure       no
-use_zip             yes
-extract.mkdir       yes
 
-# The default build is a binary install.
-build {
-}
+worksrcdir          ${distname}/src/github.com/hashicorp/packer
+
+depends_build       port:go
+
+build.env           GOPATH=${workpath}/${distname} \
+                    XC_ARCH=amd64 \
+                    XC_OS=darwin
+
+build.target        releasebin
 
 destroot {
-    file copy ${worksrcpath}/packer ${destroot}${prefix}/bin
+    xinstall -d ${destroot}${prefix}/bin
+    xinstall -m 755 ${worksrcpath}/bin/${name} ${destroot}${prefix}/bin/${name}
 }
-
-livecheck.type      regex
-livecheck.url       https://releases.hashicorp.com/packer/
-livecheck.regex     >packer_(\\d+(\\.\\d+)+)<
