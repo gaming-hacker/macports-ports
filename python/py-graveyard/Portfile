@@ -62,6 +62,7 @@ py-backports-ssl_match_hostname \
                         3.5.0.1_1   33
 py-backports_abc        0.5_1       33
 py-backports.weakref    1.0.post1   34
+py-bdist_mpkg           0.5.0_1     26 33
 py-biggles              1.6.7_2     26
 py-bitarray             0.8.1_1     26 32 33
 py-blockcanvas          4.0.3_1     26
