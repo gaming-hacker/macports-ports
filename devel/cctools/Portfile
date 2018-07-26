@@ -1,10 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-PortSystem	1.0
+PortSystem              1.0
 
 name                    cctools
 # Xcode 8.1
 version                 895
-revision                4
+revision                5
 set ld64_version        274.1
 categories              devel
 platforms               darwin
@@ -23,11 +22,11 @@ master_sites            http://opensource.apple.com/tarballs/${name} \
 distfiles               ld64-${ld64_version}.tar.gz ${name}-${version}.tar.gz
 
 checksums               ld64-274.1.tar.gz \
-rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
-sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
+                        rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
+                        sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
                         cctools-895.tar.gz \
-rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
-sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
+                        rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
+                        sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
 
 patchfiles \
     cctools-829-lto.patch \
@@ -45,14 +44,14 @@ if {${os.major} < 11} {
     patchfiles-append snowleopard-strnlen.patch
 }
 
-set all_llvm_variants {llvm39 llvm40 llvm50 llvm60 llvmdev}
+set all_llvm_variants {llvm39 llvm40 llvm50 llvmdev}
 if {${os.major} < 12} {
     lappend all_llvm_variants llvm34
 }
 if {${os.major} < 14} {
     lappend all_llvm_variants llvm37
 }
-array set llvm_variant_version {llvm34 3.4 llvm37 3.7 llvm39 3.9 llvm40 4.0 llvm50 5.0 llvm60 6.0 llvmdev devel}
+array set llvm_variant_version {llvm34 3.4 llvm37 3.7 llvm39 3.9 llvm40 4.0 llvm50 5.0 llvmdev devel}
 set llvm_version {}
 
 foreach variantname $all_llvm_variants {
@@ -95,21 +94,25 @@ if { ![some_llvm_variant_set] && ![variant_isset xcode] } {
 
 }
 
-variant xcode description "Use Xcode supplied toolkit" { }
-if {[variant_isset xcode]} {
+variant xcode description "Use Xcode supplied toolkit" {
+   supported_archs noarch
    patchfiles
    distfiles
    build { }
-   pre-destroot { }
-   post-destroot { }
    destroot {
        set xcode_cmds {bitcode-strip nm nm-classic as ar otool ranlib lipo libtool segedit strip size size-classic strings}
        foreach xcode_cmd $xcode_cmds {
            set mp_cmd ${destroot}${prefix}/bin/${xcode_cmd}
-           # Create scripts that use xcrun to run the Xcode provided commands
-           system "echo '#!/bin/bash' > ${mp_cmd}"
-           system "echo 'xcrun ${xcode_cmd} \"\$\@\"' >> ${mp_cmd}"
-           system "echo 'exit \$\?' >> ${mp_cmd}"
+           # Create script that uses xcrun to run the Xcode provided command
+           system "echo '#!/bin/bash'                                          > ${mp_cmd}"
+           system "echo 'if \[\[ \-x \/usr\/bin\/xcrun \]\] \; then'          >> ${mp_cmd}"
+           system "echo '  exec \/usr\/bin\/xcrun ${xcode_cmd} \"\$\{\@\}\"'  >> ${mp_cmd}"
+           system "echo 'elif \[\[ \-x \/usr\/bin\/${xcode_cmd} \]\] \; then' >> ${mp_cmd}"
+           system "echo '  exec \/usr\/bin/${xcode_cmd} \"\$\{\@\}\"'         >> ${mp_cmd}"
+           system "echo 'else'                                                >> ${mp_cmd}"
+           system "echo '  exec ${xcode_cmd} \"\$\{\@\}\"'                    >> ${mp_cmd}"
+           system "echo 'fi'                                                  >> ${mp_cmd}"
+           # make executable
            system "chmod +x ${mp_cmd}"
      }
    }
@@ -164,7 +167,7 @@ use_configure   no
 use_parallel_build  yes
 
 # https://trac.macports.org/ticket/43745
-configure.cflags-append -std=gnu99
+configure.cflags-append -std=gnu99 
 
 build.target    all
 

@@ -1,10 +1,7 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-
-PortSystem	1.0
+PortSystem 1.0
 
 name			subversion-rubybindings
-version			1.10.0
-revision		1
+version			1.10.2
 categories		devel ruby
 platforms		darwin
 maintainers		{geeklair.net:dluke @danielluke} {blair @blair}
@@ -19,11 +16,11 @@ long_description	Subversion (svn) is a version control system designed to be \
 homepage		http://subversion.apache.org/
 master_sites		apache:subversion
 use_bzip2		yes
-checksums	sha1	345bc84edc5fe72f70997d247230fd8d3a18d83b \
-rmd160	ccde1df065be6c997967830053a03b6bdc68503e \
-sha256	2cf23f3abb837dea0585a6b0ebd70e80e01f95bddef7c1aa097c18e3eaa6b584 \
-size	8369823
-
+checksums	sha1	bc52ef2e671f821998ac9a5f7ebecbbcaaef83b8 \
+		rmd160	0bbd621bb7c61f62c6072c65e3d26de4ce273a5d \
+		sha256	5b35e3a858d948de9e8892bf494893c9f7886782f6abbe166c0487c19cf6ed88 \
+		size	8369762
+		
 distname		subversion-${version}
 dist_subdir		subversion
 
@@ -32,7 +29,7 @@ test.target		check-swig-rb
 
 depends_lib		port:expat \
 			port:apr port:apr-util \
-			port:db62 port:subversion \
+			port:db46 port:subversion \
 			port:ruby port:sqlite3 \
 			port:gettext port:libiconv \
 			port:serf1 port:cyrus-sasl2 \
@@ -43,7 +40,7 @@ depends_lib		port:expat \
 depends_build		port:swig
 
 configure.env		RUBY=${prefix}/bin/ruby1.8
-configure.args		--with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db62:db-6.2 \
+configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
 			--with-apr=${prefix}/bin/apr-1-config \
 			--with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
 			--mandir=\\\${prefix}/share/man \
@@ -76,8 +73,8 @@ post-configure {	reinplace "s|need_relink=yes|need_relink=no|g" \
 			}
 
 variant no_bdb description {Build without support for BerkeleyDB repositories} {
-		        depends_lib-delete      port:db62
-                        configure.args-delete   --with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db62:db-6.2
+		        depends_lib-delete      port:db46
+                        configure.args-delete   --with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6
                         configure.args-append   --without-berkeley-db
                         }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 
@@ -38,7 +38,17 @@ subport cquery-devel {
     conflicts   ${name}
 }
 
-cmake.build_type    Release
+depends_lib                 port:clang-6.0
+
+cmake.build_type            release
+
+set llvm_path               ${prefix}/libexec/llvm-6.0
+
+configure.pre_args-delete   -DCMAKE_INSTALL_NAME_DIR="${prefix}/lib"
+configure.pre_args-replace  -DCMAKE_MODULE_PATH="${prefix}/share/cmake/Modules" -DCMAKE_MODULE_PATH="${llvm_path}/cmake/llvm\;${llvm_path}/cmake/clang"
+configure.pre_args-replace  -DCMAKE_PREFIX_PATH="${prefix}/share/cmake/Modules" -DCMAKE_PREFIX_PATH="${llvm_path}"
+
+configure.args-append       -DSYSTEM_CLANG=ON
 
 if {${subport} eq "cquery-devel"} {
     minimum_xcodeversions {16 8.3}
