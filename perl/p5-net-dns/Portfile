@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup perl5     1.0
@@ -15,8 +15,8 @@ long_description    Net::DNS is a DNS resolver implemented in Perl.  It \
 platforms           darwin
 
 checksums           rmd160  294c6eb8c05d97571c217a8f5a75e91a8f1f03a2 \
-                    sha256  9a79fd8fea1a708726c18d193ae4437479206ccb20ffa7f0971371e172e2c2e0 \
-                    size    251924
+sha256  9a79fd8fea1a708726c18d193ae4437479206ccb20ffa7f0971371e172e2c2e0 \
+size    251924
 
 if {${perl5.major} != ""} {
     depends_lib-append \

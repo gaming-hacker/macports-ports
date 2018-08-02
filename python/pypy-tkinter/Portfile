@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # Please remember to keep this file in sync with the pypy port!
 
@@ -41,16 +41,16 @@ build.post_args
 distname            pypy2-v${version}-src
 
 checksums           rmd160  4a9568322ac0b8e1c53be81861c7474c1d1926e6 \
-                    sha256  6097ec5ee23d0d34d8cd27a1072bed041c8a080ad48731190a03a2223029212d \
-                    size    19741694
+sha256  6097ec5ee23d0d34d8cd27a1072bed041c8a080ad48731190a03a2223029212d \
+size    19741694
 
 subport pypy3-tkinter {
     build.cmd           ${prefix}/bin/${pypy_version}
     distname            ${pypy_version}-v${version}-src
 
     checksums           rmd160  18f1511e9bcbcd6911e44aefa73e874cda09d4e4 \
-                        sha256  ed8005202b46d6fc6831df1d13a4613bc40084bfa42f275068edadf8954034a3 \
-                        size    22648140
+sha256  ed8005202b46d6fc6831df1d13a4613bc40084bfa42f275068edadf8954034a3 \
+size    22648140
 }
 
 post-patch {

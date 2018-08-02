@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -18,8 +18,8 @@ long_description    This package contains classes needed to predict \
 homepage            https://metacpan.org/release/WYANT/${perl5.module}-${perl5.moduleversion}
 
 checksums           rmd160  2aa0c62498fa5c51f25b98cc9f720e96841540a5 \
-                    sha256  0ba004fda68a901019950fb9273a6e4ced73f9b2e18ba8664ba224297eb132bb \
-                    size    507747
+sha256  0ba004fda68a901019950fb9273a6e4ced73f9b2e18ba8664ba224297eb132bb \
+size    507747
 
 variant script description {Install the deprecated satpass script and optional dependencies} {}
 

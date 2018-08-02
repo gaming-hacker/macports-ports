@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ platforms           darwin
 homepage            http://lzone.de/${name}/
 
 checksums           rmd160  5243af4e4e1c17cc2fc5b2dae08fa258331943a4 \
-                    sha256  3bfb31d54455538d58257c52e63fe6fc0772ea1c63c32dfc43e929546f1ff118 \
-                    size    1533532
+sha256  3bfb31d54455538d58257c52e63fe6fc0772ea1c63c32dfc43e929546f1ff118 \
+size    1533532
 
 depends_build       port:pkgconfig \
                     port:intltool \

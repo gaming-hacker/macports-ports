@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -22,8 +22,8 @@ Provides the release version, which is typically updated every month or so.
     github.setup    EttusResearch uhd 3.13.0.0 v
     conflicts       uhd-devel uhd-39lts
     checksums       rmd160 912d5abc155d45fec259598c1af62019fcbde2c6 \
-                    sha256 7f04ddd331ad27556399470075275573dcfa00abaeb97b3f33d43c330c3b29cf \
-                    size   9409461
+sha256 7f04ddd331ad27556399470075275573dcfa00abaeb97b3f33d43c330c3b29cf \
+size   9409461
 
     # set the version override string
 
@@ -51,8 +51,8 @@ Provides UHD 3.9 Long-Term Service \(LTS\) branch. This branch is not updated ex
     github.setup    EttusResearch uhd UHD-3.9.LTS
     version         3.9-LTS
     checksums       rmd160 0765543ffdc36df568012640422fda8c70809f62 \
-                    sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
-                    size   2463897
+sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
+size   2463897
 
     # set the version override string
 
@@ -75,8 +75,8 @@ Provides the UHD GIT maint or master branch, depending on which is more advanced
     github.setup    EttusResearch uhd f114cfa0ddf70228d10462758c2b8e878c993f5d
     version         20180724
     checksums       rmd160 1d4a30c4024b8ef7266ddcee0bbb3374515b0bf1 \
-                    sha256 61bfbd6abbfe8b33556d58c0a93bc1ec0b44e43c24c1d3c39241557cd77129e5 \
-                    size   9409482
+sha256 61bfbd6abbfe8b33556d58c0a93bc1ec0b44e43c24c1d3c39241557cd77129e5 \
+size   9409482
 
     # overload the github livecheck branch.
     # when master is more advanced, comment this out.
