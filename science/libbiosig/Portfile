@@ -5,6 +5,7 @@ PortGroup           cmake 1.0
 
 name                libbiosig
 version             1.8.4
+revision            1
 categories          science
 platforms           darwin
 license             GPL-3
@@ -26,7 +27,7 @@ sha256  76145dabbf0dd5904e6645ed739284982064f68399e46e472e26c3fbd4c85348
 
 depends_build-append \
                     port:gawk
-depends_lib         port:SuiteSparse \
+depends_lib         port:SuiteSparse_CHOLMOD \
                     port:zlib \
                     port:libiconv
 
