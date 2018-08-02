@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        https://download.clojure.org/install/
 distname            clojure-tools-${version}
 worksrcdir          clojure-tools
 checksums           rmd160  972256d736e684c86be0d72506ce0ce49dd7c983 \
-                    sha256  9f49ceefb34b9d0effcc410578d4985779f4f2d136fc33ae6cb08684eeb2409c \
-                    size    19518898
+sha256  9f49ceefb34b9d0effcc410578d4985779f4f2d136fc33ae6cb08684eeb2409c \
+size    19518898
 use_configure       no
 build               {}
 

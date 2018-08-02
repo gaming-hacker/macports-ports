@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -19,8 +19,8 @@ homepage            http://ddclient.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  e0b0f8ee11700f04022f322a2163d9fde9487b31 \
-                    sha256  debd5fec69eeb65e2331b86f5280f382416d97ed103839a65c201eef8e6d1fc9 \
-                    size    54516
+sha256  debd5fec69eeb65e2331b86f5280f382416d97ed103839a65c201eef8e6d1fc9 \
+size    54516
 
 depends_lib         port:p${perl5.major}-io-socket-ssl
 depends_run         port:perl${perl5.major} \

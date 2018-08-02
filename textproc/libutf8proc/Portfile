@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    ${description}
 homepage            https://julialang.org/utf8proc/
 
 checksums           rmd160  789d5b6db0e97c6ed27f578c4f5454d7cc06022e \
-                    sha256  679d2d229991b0723325e58365025e9537a63c7ad83019ffcb4e1b2f7139fc93 \
-                    size    156361
+sha256  679d2d229991b0723325e58365025e9537a63c7ad83019ffcb4e1b2f7139fc93 \
+size    156361
 
 use_configure       no
 

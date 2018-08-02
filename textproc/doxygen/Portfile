@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.0
@@ -35,9 +35,9 @@ master_sites            http://ftp.stack.nl/pub/users/dimitri/ \
 distfiles               ${distname}.src${extract.suffix}
 
 checksums               ${distname}.src${extract.suffix} \
-                        rmd160  e8d806ff3efa4e7e954209d466f2d81b258bdbbf \
-                        sha256  d1757e02755ef6f56fd45f1f4398598b920381948d6fcfa58f5ca6aa56f59d4d \
-                        size    4877980
+rmd160  e8d806ff3efa4e7e954209d466f2d81b258bdbbf \
+sha256  d1757e02755ef6f56fd45f1f4398598b920381948d6fcfa58f5ca6aa56f59d4d \
+size    4877980
 
 installs_libs           no
 

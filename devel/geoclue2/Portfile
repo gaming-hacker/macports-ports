@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -24,8 +24,8 @@ distname            ${gname}-${version}
 use_xz              yes
 
 checksums           rmd160  28692a7cb1bbc9198777c6708b1d39096103f3e7 \
-                    sha256  01397ff7e4acaf0503eacd51aae3d70df0ddc7553bb822f172e4f1409713f31d \
-                    size    372884
+sha256  01397ff7e4acaf0503eacd51aae3d70df0ddc7553bb822f172e4f1409713f31d \
+size    372884
 
 depends_build       port:intltool \
                     port:pkgconfig \

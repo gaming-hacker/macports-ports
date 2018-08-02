@@ -32,8 +32,8 @@ checksums           rmd160  e02ac3845bb60b4048ef5e2ff2e1862ccd14ef63 \
 sha256  27a7762e5430f5392a1fe12a3a4abdfe667605c40224de1c6599f49d66cfbdd2
 =======
 checksums           rmd160  f3c53f6ebc4035a0654ef6507fd05a67e2047f01 \
-                    sha256  442ef4fffb2ad6e4141e5a7902993ae6a4e73f7cb641fae1010bb586f6ca5e3f \
-                    size    14959704
+sha256  442ef4fffb2ad6e4141e5a7902993ae6a4e73f7cb641fae1010bb586f6ca5e3f \
+size    14959704
 >>>>>>> 94303f36a5b343359df0b0f0e696a5f75b361876
 
 worksrcdir          CGAL-${version}
