@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-flask
 version             0.12.2
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             BSD
@@ -20,7 +20,7 @@ master_sites        pypi:F/Flask/
 default distname    {Flask-${version}}
 
 checksums           rmd160  d62ed9207085d74a6583a5a3b2b47700c7bef00b \
-                    sha256  49f44461237b69ecd901cc7ce66feea0319b9158743dd27a2899962ab214dac1
+sha256  49f44461237b69ecd901cc7ce66feea0319b9158743dd27a2899962ab214dac1
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

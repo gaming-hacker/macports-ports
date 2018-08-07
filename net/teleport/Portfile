@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    Teleport is a modern SSH server and CA for managing clusters
 license             Apache-2
 
 checksums           rmd160  a40b888fbdad44d29603b19580f108469a2eecc7 \
-                    sha256  76c67de3aff2dfcf6a876ee8184887cb499d7142e1dd61012c9c3ab8bd30ce51 \
-                    size    18226276
+sha256  76c67de3aff2dfcf6a876ee8184887cb499d7142e1dd61012c9c3ab8bd30ce51 \
+size    18226276
 
 depends_lib         port:go port:zip
 platforms           darwin

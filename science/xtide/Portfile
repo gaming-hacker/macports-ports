@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  compiler_blacklist_versions 1.0
@@ -34,7 +34,7 @@ if {${name} eq ${subport}} {
     master_sites-append https://src.fedoraproject.org/repo/pkgs/${name}/${distfiles}/59de866e0684e123419d7a1c97ea23a5/
 
     checksums           rmd160  a4924c09f452e63da12012781bea7607f9178ec4 \
-                        sha256  e5c4afbb17269fdde296e853f2cb84845ed1c1bb1932f780047ad71d623bc681
+sha256  e5c4afbb17269fdde296e853f2cb84845ed1c1bb1932f780047ad71d623bc681
 
     depends_lib         port:libpng \
                         port:libtcd
@@ -84,7 +84,7 @@ subport ${name}-wvs {
     distname            wvs
 
     checksums           rmd160  0e83b847efc635f18bd96cc5a29149d5af41dc4d \
-                        sha256  4e996ce2e608d612ba78e35cdf50c2c73b01fce06bd5b561a7fe957ea75d6d75
+sha256  4e996ce2e608d612ba78e35cdf50c2c73b01fce06bd5b561a7fe957ea75d6d75
 
     use_configure       no
 
@@ -116,8 +116,8 @@ subport ${name}-data {
     master_sites-append https://src.fedoraproject.org/repo/pkgs/${name}/${distfiles}/sha512/c252c99b85e2bf87e11f6334339d1919d9e63b797ba25b08189b8d2dfe98a352550d14ffc54c253c09845f2bce02981b8049c95654b14c34a77d687f4aeed27f
 
     checksums           rmd160  61ac5640c463376517d0d2f20c0be3037ac815ef \
-                        sha256  59566acd8083fed0bde18294d3344331797fed068352a53d6580673cb246b1fc \
-                        size    545679
+sha256  59566acd8083fed0bde18294d3344331797fed068352a53d6580673cb246b1fc \
+size    545679
 
     use_configure       no
 

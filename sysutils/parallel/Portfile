@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ use_bzip2           yes
 depends_lib         port:perl5
 
 checksums           rmd160  af620353e3c6c7192a9a2feb729663a54864fb3b \
-                    sha256  cf0d421cd78c58741395f94f568c33a0fe409bd5f4bd45f1ae804ec2d32dc318 \
-                    size    1761384
+sha256  cf0d421cd78c58741395f94f568c33a0fe409bd5f4bd45f1ae804ec2d32dc318 \
+size    1761384
 
 post-patch {
     set perl_bin ${prefix}/bin/perl

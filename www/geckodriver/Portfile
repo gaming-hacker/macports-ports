@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    ${description} Proxy for using W3C \
                     Gecko-based browsers.
 
 checksums           ${name}-${version}${extract.suffix} \
-    rmd160  0c1c9a8bdb0995617408a4c44082c43217a0d642 \
-    sha256  1c93107a5bfbf5db3e5ccd169679278a53ae2c59248e7a62e71fb891d0b65cb5 \
-    size    61795
+rmd160  0c1c9a8bdb0995617408a4c44082c43217a0d642 \
+sha256  1c93107a5bfbf5db3e5ccd169679278a53ae2c59248e7a62e71fb891d0b65cb5 \
+size    61795
 
 depends_build       port:rust port:cargo
 

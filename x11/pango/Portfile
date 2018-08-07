@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -12,8 +12,8 @@ set my_name             pango
 epoch                   1
 version                 1.42.3
 checksums               rmd160  fd3d66bc688db47e7f056793b939589fb7c3a7c5 \
-                        sha256  fb3d875305d5143f02cde5c72fec3903e60dc35844759dc14b2df4955b5dde3a \
-                        size    833264
+sha256  fb3d875305d5143f02cde5c72fec3903e60dc35844759dc14b2df4955b5dde3a \
+size    833264
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 categories              x11

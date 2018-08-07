@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cxx11 1.1
@@ -20,8 +20,8 @@ homepage                https://bitcoin.org/
 master_sites            ${homepage}bin/bitcoin-core-${version}/
 
 checksums           rmd160  b90eed8529a4a5b10f3f06d24c4cadb9767582f9 \
-                    sha256  1910c58b7d8e13acbd05b0e8fd9b4b61cbac5776f058ee10bc80c1d2a7c707d8 \
-                    size    7019310
+sha256  1910c58b7d8e13acbd05b0e8fd9b4b61cbac5776f058ee10bc80c1d2a7c707d8 \
+size    7019310
 
 depends_build           port:libtool		\
                         port:pkgconfig		\

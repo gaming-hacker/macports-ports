@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -30,8 +30,8 @@ distname            gcc-${version}
 use_xz              yes
 
 checksums           rmd160  4fba19867980d04bed1e62d46d4787c99f4fd13d \
-                    sha256  196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080 \
-                    size    63460876
+sha256  196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080 \
+size    63460876
 
 depends_lib         port:cctools \
                     port:gmp \
