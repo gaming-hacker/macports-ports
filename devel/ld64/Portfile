@@ -157,7 +157,7 @@ subport ld64-236 {
 subport ld64-latest {
     # XCode 8.2.1
     version             274.2
-    revision            3
+    revision            2
 
     # https://trac.macports.org/ticket/43737
     # https://trac.macports.org/ticket/50130
@@ -180,13 +180,13 @@ subport ld64-latest {
         PR-33746767.patch \
         PR-29723629.patch \
         PR-30596832.patch
-        
+
 
     # TAPI fixes:
-    
-    # only +llvm37 is presently known to work with tapi-1.30 code base 
+
+    # only +llvm37 is presently known to work with tapi-1.30 code base
     # llvm34 fails, llvm39 fails, llvm40 fails, llvm50 fails
-    default_variants +llvm37
+    default_variants +llvm60
 
     # patch out missing definitions for TVOS and WATCHOS not in llvm-3.7 include files
     post-extract {
@@ -276,14 +276,14 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm37 llvm39 llvm40 llvm50 llvmdev}
+    set all_llvm_variants {llvm60}
     if {${os.major} < 10} {
-        lappend all_llvm_variants llvm33
+        lappend all_llvm_variants llvm60
     }
     if {${os.major} < 12} {
-        lappend all_llvm_variants llvm34
+        lappend all_llvm_variants llvm60
     }
-    array set llvm_variant_version {llvm33 3.3 llvm34 3.4 llvm37 3.7 llvm39 3.9 llvm40 4.0 llvm50 5.0 llvmdev devel}
+    array set llvm_variant_version {llvm60 6.0}
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
@@ -308,20 +308,20 @@ if {${subport} eq ${name}} {
     # dependency cycle as llvm requires apple-gcc42 and ld64 to build correctly.  Users
     # wanting LTO support in ld64 on Tiger can install the +llvm variant after llvm
     # has been installed.
-    
+
     if {![some_llvm_variant_set]} {
         if {${os.major} == 12 || ${os.major} == 13} {
             # Using llvm-3.7 to break a dependency cycle (https://trac.macports.org/ticket/53138)
-            default_variants +llvm37
+            default_variants +llvm60
         } elseif {${os.major} == 10 || ${os.major} == 11} {
-            default_variants +llvm34
+            default_variants +llvm60
         } elseif {${os.major} == 9} {
             # Using llvm-3.3 to break dependency cycle (https://trac.macports.org/ticket/52091)
-            default_variants +llvm33
+            default_variants +llvm60
         }
 
         if {![some_llvm_variant_set] && ${os.major} >= 9} {
-            default_variants +llvm50
+            default_variants +llvm60
         }
 
         if {![some_llvm_variant_set] && ${os.major} >= 9} {
@@ -412,7 +412,7 @@ if {${subport} eq ${name}} {
 
         # On Leopard, we want to make sure we pick up our newer libunwind (in libc++abi.dylib) instead of the one in libgcc_s.10.5.dylib
         if {${configure.cxx_stdlib} eq "libc++"} {
-            configure.ldflags-append -lc++abi
+            configure.ldflags-append -lc++abi --system-libs --cppflags
         }
     }
 
