@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -17,13 +17,13 @@ long_description \
 
 homepage        http://simpy.readthedocs.org
 
-python.versions 27 36 37
+python.versions 27 34 35 36
 
 if {${name} ne ${subport}} {
     depends_build-append       port:py${python.version}-setuptools
 
     checksums           rmd160  2c9ec3ca81b7893e12181291920a1cd0b75a95b9 \
-sha256  32f100aa12a0e76826110489d8b4a61ef4f04452c5a0141775ef2cf1ceb1d249
+                        sha256  32f100aa12a0e76826110489d8b4a61ef4f04452c5a0141775ef2cf1ceb1d249
 
     variant docs description {Install Sphinx-generated docs} {
         depends_build-append       port:py${python.version}-sphinx

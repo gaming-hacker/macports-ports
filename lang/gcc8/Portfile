@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -30,8 +30,8 @@ distname            gcc-${version}
 use_xz              yes
 
 checksums           rmd160  4fba19867980d04bed1e62d46d4787c99f4fd13d \
-sha256  196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080 \
-size    63460876
+                    sha256  196c3c04ba2613f893283977e6011b2345d1cd1af9abeac58e916b1aab3e0080 \
+                    size    63460876
 
 depends_lib         port:cctools \
                     port:gmp \
@@ -167,6 +167,14 @@ if {${subport} eq "libgcc8"} {
                 registry_deactivate_composite libgcc "" [list ports_nodepcheck 1]
             }
         }
+        if {![catch {set installed [lindex [registry_active libgcc-devel] 0]}]} {
+            # Extract the epoch of the installed libgcc-devel
+            set _epoch [lindex $installed 5]
+            # If < 2 need to deactivate
+            if {[vercmp $_epoch 2] < 0} {
+                registry_deactivate_composite libgcc-devel "" [list ports_nodepcheck 1]
+            }
+        }
     }
 
     # http://trac.macports.org/ticket/35770
@@ -253,7 +261,7 @@ if {${subport} eq "libgcc8"} {
     
 } else {
     
-    depends_run-append      port:gcc_select port:libgcc8
+    depends_run-append      port:gcc_select
     depends_lib-append      path:lib/libgcc/libgcc_s.1.dylib:libgcc  
 
     post-destroot {
@@ -319,5 +327,5 @@ configure.universal_ldflags
 configure.universal_args
 
 livecheck.type      regex
-livecheck.url       ftp://gcc.gnu.org/pub/gcc/snapshots/
-livecheck.regex     LATEST-${major} -> (${major}-\[0-9\]+)
+livecheck.url       https://ftp.gnu.org/gnu/gcc/
+livecheck.regex     gcc-(${major}\\.\[0-9.\]+)/

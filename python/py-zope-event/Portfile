@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-zope-event
 set real_name       zope.event
 version             4.3.0
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 maintainers         nomaintainer
 platforms           darwin
 description         Very basic event publishing system
@@ -25,7 +25,7 @@ master_sites        pypi:z/${real_name}
 distname            ${real_name}-${version}
 
 checksums           rmd160  0bd1386ed321fb425c37d735bc20f632e883a5f8 \
-sha256  e0ecea24247a837c71c106b0341a7a997e3653da820d21ef6c08b32548f733e7
+                    sha256  e0ecea24247a837c71c106b0341a7a997e3653da820d21ef6c08b32548f733e7
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

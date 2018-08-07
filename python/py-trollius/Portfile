@@ -29,6 +29,7 @@ sha256  b35b9a9079c3c06a04cedf27dd833982b5d58401722da63d2c7c6384063a6924
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools
+    depends_lib-append  port:py${python.version}-six
 
     if {${subport} eq "py27-trollius"} {
         depends_lib-append  port:py${python.version}-futures
