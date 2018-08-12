@@ -20,9 +20,12 @@ array set replacements {
 proc unknown args {
     upvar 1 replacements replacements
     set replaced_series [lassign $args superport version_string]
-    lassign [split $version_string _] ver rev
+    lassign [split $version_string _] ver rev epo
     if {$rev eq ""} {
         set rev 0
+    }
+    if {$epo eq ""} {
+        set epo 0
     }
     foreach series $replaced_series {
         regsub ^py- $superport py${series}- replaced
@@ -30,16 +33,17 @@ proc unknown args {
         subport $replaced {
             version $ver
             revision $rev
+            epoch $epo
             replaced_by $replacement
         }
     }
 }
 
 # Please keep the list of ports sorted in alphabetical order. When adding a port
-# to the list, the version_revision listed must be greater than it was before,
+# to the list, the version_revision_epoch listed must be greater than it was before,
 # otherwise the port is not considered outdated and replacement does not occur.
 
-# SUPERPORT             VERSION_REV REPLACED BRANCHES
+# SUPERPORT             VER_REV_EPO REPLACED BRANCHES
 py-acor                 1.1.1_1     26 33
 py-acora                2.1_1       33
 py-alabaster            0.7.6_1     26 33
