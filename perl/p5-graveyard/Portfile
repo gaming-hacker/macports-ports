@@ -18,9 +18,12 @@ proc unknown args {
         lappend args {*}$defaultBranches
     }
     set replaced_branches [lassign $args superport version_string]
-    lassign [split $version_string _] ver rev
+    lassign [split $version_string _] ver rev epo
     if {$rev eq ""} {
         set rev 0
+    }
+    if {$epo eq ""} {
+        set epo 0
     }
     foreach branch $replaced_branches {
         regsub ^p5- $superport p${branch}- replaced
@@ -28,6 +31,7 @@ proc unknown args {
         subport $replaced {
             version $ver
             revision $rev
+            epoch $epo
             replaced_by $replacement
         }
     }
@@ -63,7 +67,7 @@ proc unknown args {
 
 #                                                               REPLACED BRANCHES
 #                                                               (optional, defaults to
-# SUPERPORT                                     VERSION_REV     "5.24")
+# SUPERPORT                                     VER_REV_EPO     "5.24")
 p5-acme-lolcat					0.0.5_4
 p5-algorithm-annotate				0.100.0_4
 p5-algorithm-c3					0.100.0_1
