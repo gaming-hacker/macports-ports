@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
-PortSystem	1.0
+PortSystem              1.0
 
 name                    cctools
 # Xcode 8.1
 version                 895
-revision                5
+revision                6
 set ld64_version        274.1
 categories              devel
 platforms               darwin
@@ -24,11 +24,11 @@ master_sites            http://opensource.apple.com/tarballs/${name} \
 distfiles               ld64-${ld64_version}.tar.gz ${name}-${version}.tar.gz
 
 checksums               ld64-274.1.tar.gz \
-rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
-sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
+                        rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
+                        sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
                         cctools-895.tar.gz \
-rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
-sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
+                        rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
+                        sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
 
 patchfiles \
     cctools-829-lto.patch \
@@ -62,6 +62,19 @@ foreach variantname $all_llvm_variants {
         set llvm_version        $this_llvm_version
         depends_lib-append      port:llvm-${this_llvm_version}
     "
+}
+
+# Disable all llvm variants on Xcode 9 systems, to force use of xcode variant
+# base has variant_set, but no variant_unset, so emulate it.
+global variations
+if {[vercmp $xcodeversion 9.0] >= 0} {
+    foreach variantname $all_llvm_variants {
+        if {[variant_isset ${variantname}]} {
+            ui_msg "Forcibly disabling variant ${variantname}"
+            default_variants -${variantname}
+            set variations(${variantname}) -
+        }
+    } 
 }
 
 proc some_llvm_variant_set {} {

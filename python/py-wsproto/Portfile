@@ -5,6 +5,7 @@ PortGroup           python 1.0
 
 name                py-wsproto
 version             0.11.0
+revision            1
 
 categories-append   net www
 platforms           darwin
@@ -28,6 +29,8 @@ sha256  02f214f6bb43cda62a511e2e8f1d5fa4703ed83d376d18d042bd2bbf2e995824
 python.versions 27 36 37
 
 if {${name} ne ${subport}} {
+    patchfiles              pr54.patch
+
     depends_build-append    port:py${python.version}-setuptools
 
     depends_lib-append      port:py${python.version}-h11

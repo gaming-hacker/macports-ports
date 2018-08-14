@@ -31,6 +31,7 @@ sha256  0da1a7e35d5fcae37bc9c7978970b5feb3bc82822155b8654ec63925c05af75c
 python.versions 27 36 37
 
 if {${name} ne ${subport}} {
+    # uses "from pkg_resources import load_entry_point"
     depends_lib-append    \
         port:py${python.version}-setuptools \
         port:py${python.version}-zopeinterface \
@@ -48,10 +49,6 @@ if {${name} ne ${subport}} {
             file delete -force $cachefile
         }
     }
-
-    # uses from "pkg_resources import load_entry_point"
-    depends_run-append \
-        port:py${python.version}-setuptools
 
     # see https://trac.macports.org/ticket/54627
     depends_run-append \

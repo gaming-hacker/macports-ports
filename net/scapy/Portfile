@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem            1.0
 PortGroup             python 1.0
@@ -6,7 +6,7 @@ PortGroup             github 1.0
 
 name                  scapy
 
-python.versions 27 36 37
+python.versions        27
 python.default_version 27
 
 categories            net security python
@@ -35,8 +35,8 @@ if {${subport} eq ${name}} {
 
     github.setup    secdev ${name} 2.4.0 v
     checksums       rmd160 544c57cca1ead4f116e8d6f61323f08c007e226f \
-sha256 445c2d8c966ddfbc541784e8d1b53182a7a4f8ee56ff88980488ae4d802c98e8 \
-size   3181887
+                    sha256 445c2d8c966ddfbc541784e8d1b53182a7a4f8ee56ff88980488ae4d802c98e8 \
+                    size   3181887
 
     conflicts       ${name}-devel
 
@@ -47,11 +47,11 @@ size   3181887
 
 } else {
 
-    github.setup    secdev scapy b730e4927102d8236bef8ae21766d9becf9da7e0
-    version         20180806
-    checksums       rmd160 7c96a498401ba60d67e9003eb3fec7e3a5a24fa8\
-sha256 402ada3f4d01457b10dff08002e726dfb72df5b6c9d6d8eb4da494b742bb81be\
-size   3264576
+    github.setup    secdev scapy 6dcd172b9d7f5871fc429b8ad98322fc36603a51
+    version         20180809
+    checksums       rmd160 273e68dbf0a7b360fe5d933c215615f691ed502c\
+                    sha256 28eda5ef01792d1a3396fb38befc244bc97a3a6762d3881921302488eed740d9\
+                    size   3261047
 
     long_description    ${long_description} \
         This port is kept up with the ${name} GIT 'master' branch, is typically updated weekly to monthly.
