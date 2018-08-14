@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -24,8 +24,8 @@ homepage	http://www.hdfgroup.org/doc_resource/SZIP/
 master_sites	http://www.hdfgroup.org/ftp/lib-external/szip/${version}/src/
 
 checksums           rmd160  3e6baaab7bf96fbc538154de59bba3902193ebab \
-                    sha256  21ee958b4f2d4be2c9cabfa5e1a94877043609ce86fde5f286f105f7ff84d412 \
-                    size    415774
+sha256  21ee958b4f2d4be2c9cabfa5e1a94877043609ce86fde5f286f105f7ff84d412 \
+size    415774
 
 configure.args	--disable-encoding
 

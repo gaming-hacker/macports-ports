@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,8 +26,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  335759fbba33f217662cd6cfd67c62d258298e18 \
-                    sha256  54def8f93ab4858e2ed6499e2731c4393c1e94993696c944bd755a7a0879146d \
-                    size    18031748
+sha256  54def8f93ab4858e2ed6499e2731c4393c1e94993696c944bd755a7a0879146d \
+size    18031748
 
 # set pbranch to desired perl version
 # currently 5.26 (#55208)

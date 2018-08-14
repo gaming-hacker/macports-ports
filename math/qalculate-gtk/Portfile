@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    Qalculate! is a multi-purpose desktop calculator. \
 github.tarball_from releases
 
 checksums           rmd160  14bb87733f8cfa7acfa3079f4de390335a2387ca \
-                    sha256  54f12b79a569973ade2c3fd5fea0b4c4077af65ef8b14388ff335f2589790c18 \
-                    size    2619516
+sha256  54f12b79a569973ade2c3fd5fea0b4c4077af65ef8b14388ff335f2589790c18 \
+size    2619516
 
 # autoreconf to reconfigure for intltool
 use_autoreconf      yes

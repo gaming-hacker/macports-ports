@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ homepage            https://yarnpkg.com/
 github.tarball_from releases
 distname            ${name}-${git.branch}
 checksums           rmd160  b3fbe6787a6ef3b4b73b8d07a60a2700e4fe8463 \
-                    sha256  7667eb715077b4bad8e2a832e7084e0e6f1ba54d7280dc573c8f7031a7fb093e \
-                    size    937393
+sha256  7667eb715077b4bad8e2a832e7084e0e6f1ba54d7280dc573c8f7031a7fb093e \
+size    937393
 
 depends_run         path:bin/node:nodejs6
 

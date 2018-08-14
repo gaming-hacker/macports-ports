@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup cxx11 1.1
@@ -33,8 +33,8 @@ master_sites    https://mirror.aarnet.edu.au/pub/squid/squid/ \
 distname        squid-${version}
 use_xz          yes
 checksums       md5 2cf3f5f183d04322d798f98ea5ead43f \
-                sha1 77fd6f06e6028780faf85ba7e7e9aef0922e9dc0 \
-                rmd160 74764965cb2e403b390ace00f7b86721ee04033f
+sha1 77fd6f06e6028780faf85ba7e7e9aef0922e9dc0 \
+rmd160 74764965cb2e403b390ace00f7b86721ee04033f
 
 patchfiles      patch-cf.data.pre.diff \
                 patch-compat_types.h.diff \

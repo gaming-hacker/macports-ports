@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   mpi 1.0
@@ -24,8 +24,8 @@ long_description \
 homepage                    http://www.unidata.ucar.edu/software/netcdf/
 
 checksums           rmd160  33803fb0ad7fbb4da272f606e728d0120572a9ad \
-                    sha256  240708c8c35dd698081c6d1d4bcea3026f6e4f1779e77f2f02e537603dbdc50e \
-                    size    18203153
+sha256  240708c8c35dd698081c6d1d4bcea3026f6e4f1779e77f2f02e537603dbdc50e \
+size    18203153
 
 compilers.choose            cc cpp
 mpi.setup

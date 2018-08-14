@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ platforms           darwin
 
 github.tarball_from releases
 checksums           rmd160  f7e9a7987dcec4a0fb96c01e3010aca61659f16c \
-                    sha256  aa65403e3ac7c3aba17ca60f28db17b9c76d988b66b91789b8e8c145ae9922f1 \
-                    size    1264090
+sha256  aa65403e3ac7c3aba17ca60f28db17b9c76d988b66b91789b8e8c145ae9922f1 \
+size    1264090
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ homepage            https://www.flyn.org/projects/${name}/
 master_sites        ${homepage}
 
 checksums           rmd160  490f208e6c8a80479e7347966b7720dfc75af6a0 \
-                    sha256  f9fcd690ac4c3c80544713c1d82daa065022f230f1f4bf7a993f2f851ee2641d \
-                    size    448930
+sha256  f9fcd690ac4c3c80544713c1d82daa065022f230f1f4bf7a993f2f851ee2641d \
+size    448930
 
 depends_build       port:pkgconfig
 

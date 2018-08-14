@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,8 +11,8 @@ if {${subport} eq ${name}} {
     github.setup    ivmai libatomic_ops 7.6.6 v
 
     checksums       rmd160  e14870bd44058ff16a464483285e05eec6aefccd \
-                    sha256  f7bdea1b787a31421cd76b3db56abf63cd85b8e7111649948358a1e98f2e23c2 \
-                    size    137298
+sha256  f7bdea1b787a31421cd76b3db56abf63cd85b8e7111649948358a1e98f2e23c2 \
+size    137298
 } else {
     # remove after Feb. 16, 2019
     replaced_by     libatomic_ops

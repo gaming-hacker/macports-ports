@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -17,8 +17,8 @@ description         A real-time MVC web framework emphasizing minimalism and sim
 long_description    ${description}
 
 checksums           rmd160  7e8ca7e1d29ff6a7d3fd294c6791da1c0fe92ad3 \
-                    sha256  00c30fc566fee0823af0a75bdf4f170531655df14beca6d51f0e453a43aaad5d \
-                    size    747195
+sha256  00c30fc566fee0823af0a75bdf4f170531655df14beca6d51f0e453a43aaad5d \
+size    747195
 
 if {${perl5.major} != ""} {
     depends_lib-append \

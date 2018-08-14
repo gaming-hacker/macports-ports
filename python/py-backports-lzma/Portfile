@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27
+python.versions 27 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,8 +25,8 @@ master_sites        pypi:b/backports.lzma
 distname            backports.lzma-${version}
 
 checksums           rmd160  529d6ea19e369aa83802c6ea9c8a5969904fd673 \
-                    sha256  50829db66f0445442f6c796bba0ca62d1f87f54760c4682b6d1489e729a43744 \
-                    size    42552
+sha256  50829db66f0445442f6c796bba0ca62d1f87f54760c4682b6d1489e729a43744 \
+size    42552
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-backports \

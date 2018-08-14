@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.0
@@ -15,8 +15,8 @@ homepage            https://software.ecmwf.int/wiki/display/ECC
 master_sites        https://software.ecmwf.int/wiki/download/attachments/45757960
 distname            eccodes-${version}-Source
 checksums           rmd160  d01584b9e499f01ed94ee147d672b2d460702aad \
-                    sha256  36e6e73d654027b31c323b0eddd15e4d1f011ad81e79e9c71146ba96293d712a \
-                    size    10114210
+sha256  36e6e73d654027b31c323b0eddd15e4d1f011ad81e79e9c71146ba96293d712a \
+size    10114210
 long_description \
     ecCodes is a package developed by ECMWF which provides an application programming interface and \
     a set of tools for decoding and encoding messages in the following formats: \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -38,12 +38,12 @@ subport                 py34-h5py-devel {set DEV_VERSION 34}
 subport                 py35-h5py-devel {set DEV_VERSION 35}
 subport                 py36-h5py-devel {set DEV_VERSION 36}
 
-python.versions         27 34 35 36 37
+python.versions 27 36 37
 python.default_version  27
 
 checksums \
-    rmd160  d2989e082842e6c14d9a34bb4e92ec862bd7585b \
-    sha256  4d494a2b03e190029f265c60a84baf48cbe3e1d161bf75c84d16de1e06f52be9
+rmd160  d2989e082842e6c14d9a34bb4e92ec862bd7585b \
+sha256  4d494a2b03e190029f265c60a84baf48cbe3e1d161bf75c84d16de1e06f52be9
 
 if {${DEV_VERSION}} {
     # Dropping -devel versions; mature & stable

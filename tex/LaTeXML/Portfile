@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -6,8 +6,8 @@ PortGroup           texlive 1.0
 name                LaTeXML
 version             0.8.3
 checksums           rmd160  27cd0fa18dbb99daf524a57128183c4df7cf3f01 \
-                    sha256  28a57369b65b85d09c1a2516e69d26bbbe102ab790cae5e2fc9709b26185f62f \
-                    size    10704659
+sha256  28a57369b65b85d09c1a2516e69d26bbbe102ab790cae5e2fc9709b26185f62f \
+size    10704659
 
 license             public-domain
 maintainers         {nist.gov:bruce.miller @brucemiller}
