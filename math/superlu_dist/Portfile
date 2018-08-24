@@ -45,4 +45,4 @@ variant longindex description {Build with 64 ints} {
     configure.cflags-append     -DXSDK_INDEX_SIZE=64
 }
 
-livecheck.type      none
+livecheck.regex     {superlu_dist_(\d+(?:\.\d+)*)}
