@@ -36,4 +36,4 @@ configure.args-append \
                     -DUSE_XSDK_DEFAULTS=ON \
                     -DXSDK_ENABLE_Fortran=OFF
 
-livecheck.type      none
+livecheck.regex     {superlu_(\d+(?:\.\d+)*)}
