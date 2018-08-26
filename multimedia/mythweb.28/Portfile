@@ -4,21 +4,21 @@ PortSystem          1.0
 PortGroup           github 1.0
 
 # set fullhash      ed8d6a1c9621c612fb3e69d85c78614cdf0996fa
-set shorthash       ed8d6a1c
+set shorthash       6a6eb1a
 github.setup        MythTV mythweb ${shorthash}
-set majorversion    .28
+set majorversion    29
 set minorversion    .1
 name                mythweb${majorversion}
-version             0${majorversion}${minorversion}-Fixes-20170719
+version             ${majorversion}${minorversion}-Fixes-20180522
 revision            2
-checksums           rmd160  87d3dca327aa5ece6cb546bc94a0433e8ecb3de4 \
-                    sha256  5691a175c87307694bddb744058b53b92d1f41b69da7db48721c69c4f00936bc
+checksums           rmd160  fa90a953b30248c6f249b84a110dd77e1a7ccefc \
+                    sha256  5f0208d4b9cbefea74fa674515d14eeffac06cfc0b118d9649253e2d17c445d3
 categories          multimedia www
 platforms           darwin
 license             GPL-2 LGPL-2.1
 maintainers         {ctreleaven @ctreleaven} openmaintainer
 supported_archs     noarch
-conflicts           mythweb.25 mythweb.26 mythweb.27
+conflicts           mythweb.25 mythweb.26 mythweb.27 mythweb.28
 
 description         control your Myth system via a web browser
 long_description    MythWeb provides a frontend to MythTV using a web browser. \
