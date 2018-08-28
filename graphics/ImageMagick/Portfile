@@ -10,6 +10,7 @@ PortGroup user 1.0
 
 name                        ImageMagick
 version                     7.0.7-32
+# version                     7.0.8-10
 revision 0
 set reasonable_version      [lindex [split ${version} -] 0]
 homepage                    http://www.imagemagick.org/
@@ -44,6 +45,9 @@ ftp://sunsite.icm.edu.pl/packages/ImageMagick
 checksums rmd160  2cd547ab2c5d0ad45aca6d77ff652d1c3336f005 \
 sha256  6267b33cfba2caae0e72e91548f2e0a3030861acb337d39e5344a0d8dd991152 \
 size    8609452
+# checksums  rmd160  9e5339d7e4f2dbc42090cd8394bca5b97dc485ba \
+# sha256  d5309031d59130befa283266011efaab15b1e113f1a218a4ba24c821cd906472 \
+# size    8635496
 
 depends_lib   port:bzip2 \
               port:djvulibre \
@@ -129,7 +133,8 @@ configure.args  --enable-shared \
       --without-autotrace \
       --disable-option-checking \
       --disable-maintainer-mode \
-      --enable-fast-install \                        --with-sysroot=${prefix}/libexec/llvm-${user.ver.clang}/c++/v1
+      --enable-fast-install
+#       --with-sysroot=${prefix}/libexec/llvm-${user.ver.clang}/c++/v1
 
 # On case-insensitive filesystems, ImageMagick finds cryptlib's libcl and
 # tries to use it as if it were Apple's OpenCL, which fails; see #23354.
