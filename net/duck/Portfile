@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://duck.sh/
 master_sites        https://dist.duck.sh/
 
 checksums           rmd160  c6fbabc435b721944411ff499efc1bf12c2eacb5 \
-                    sha256  59b508b36f63938fa070347bde15bac1c4ca8f1f8c37c004e9145cb53bd5c70e \
-                    size    92402196
+sha256  59b508b36f63938fa070347bde15bac1c4ca8f1f8c37c004e9145cb53bd5c70e \
+size    92402196
 
 use_configure       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -19,8 +19,8 @@ homepage        http://ngspice.sourceforge.net/
 master_sites    sourceforge:project/ngspice/ng-spice-rework/${version}
 
 checksums       rmd160  2925b2af9dec0b1fcfeff6a4c9b9a9746d8bc08e \
-                sha256  94804fa78c8db2f90f088902e8c27f7b732a66767a58c70f37612bff5a16df66 \
-                size    6737636
+sha256  94804fa78c8db2f90f088902e8c27f7b732a66767a58c70f37612bff5a16df66 \
+size    6737636
 
 set docdir      ${prefix}/share/doc/${name}
 
@@ -75,8 +75,8 @@ subport ngspice-docs {
     extract.only
  
     checksums           rmd160  42278f891baea9cfd21cc419b417e47e08d6805e \
-                        sha256  af11dd48b59a7dc9b5126ce5fec4e71d7dd1f7e93e21f16bb6f6636197c62a56 \
-                        size    3390805
+sha256  af11dd48b59a7dc9b5126ce5fec4e71d7dd1f7e93e21f16bb6f6636197c62a56 \
+size    3390805
     
     use_configure       no
 

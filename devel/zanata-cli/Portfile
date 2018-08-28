@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ master_sites        https://search.maven.org/remotecontent?filepath=org/zanata/z
 extract.suffix      -dist.tar.gz
 
 checksums           rmd160  1f01429d77caead2b97e769e4e27aa4ff08a4ac4 \
-                    sha256  da2eaa8d57e8530b223622cc9319143be50e79b95f4c998d8110836acf2a89b6 \
-                    size    16985655
+sha256  da2eaa8d57e8530b223622cc9319143be50e79b95f4c998d8110836acf2a89b6 \
+size    16985655
 
 depends_run         bin:java:kaffe
 

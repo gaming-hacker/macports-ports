@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt5 1.0
@@ -17,7 +17,7 @@ set pluginsrev      1
 set metarev         0
 github.setup        MythTV mythtv ${shorthash}
 checksums           rmd160  62efbd440a1e8c50a8d496535f64ccd12a6a844f \
-                    sha256  25d67dda2e5c052a89b6bcc80cabb1ca3e670bbecdff3494b83dc8bd5ed498ff
+sha256  25d67dda2e5c052a89b6bcc80cabb1ca3e670bbecdff3494b83dc8bd5ed498ff
 
 name                mythtv${majorversion}
 categories          multimedia

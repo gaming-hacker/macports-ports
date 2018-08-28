@@ -22,8 +22,8 @@ homepage            http://aa-project.sourceforge.net/aalib/
 master_sites        sourceforge:aa-project freebsd
 
 checksums           rmd160  a10bcab16d3aa0e60facca3e989f6a51846885f6 \
-                    sha256  fbddda9230cf6ee2a4f5706b4b11e2190ae45f5eda1f0409dc4f99b35e0a70ee \
-                    size    391028
+sha256  fbddda9230cf6ee2a4f5706b4b11e2190ae45f5eda1f0409dc4f99b35e0a70ee \
+size    391028
 
 platforms           darwin
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ installs_libs       no
 supported_archs     noarch
 
 checksums           rmd160  412f84d32c12ff8af7730614ad89dc860f22dd66 \
-                    sha256  d732db60c5f35f7c898668e59633a9913b4b5db1a0ea6872e94ee2ce8bb667de \
-                    size    546110
+sha256  d732db60c5f35f7c898668e59633a9913b4b5db1a0ea6872e94ee2ce8bb667de \
+size    546110
 
 set python_branch   3.7
 set python_version  [string map {. ""} ${python_branch}]

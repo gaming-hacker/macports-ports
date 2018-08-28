@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           rmd160  8685af4c399fbb6a1fc4262e84d9713ba600dfa7 \
-                    sha256  839498aa46b496492a5c65cd42cd2e86e0da88149b0672e90cb91648f8cd5b01 \
-                    size    169159
+sha256  839498aa46b496492a5c65cd42cd2e86e0da88149b0672e90cb91648f8cd5b01 \
+size    169159
 
 depends_build       port:pkgconfig
 

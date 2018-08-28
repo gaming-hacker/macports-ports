@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel textproc
 platforms           darwin
 license             BSD
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,7 +23,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  24b6bebf87f98c2b9d0804c32f2a0fcb57ffcb48 \
-                    sha256  bc10c33bfdcaa4e749b779f62f60d6e12f8215c46a292d05e486b869ae306619
+sha256  bc10c33bfdcaa4e749b779f62f60d6e12f8215c46a292d05e486b869ae306619
 
 if {${name} ne ${subport}} {
     depends_build-append \

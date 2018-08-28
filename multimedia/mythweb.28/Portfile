@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,7 +12,7 @@ name                mythweb${majorversion}
 version             ${majorversion}${minorversion}-Fixes-20180522
 revision            2
 checksums           rmd160  fa90a953b30248c6f249b84a110dd77e1a7ccefc \
-                    sha256  5f0208d4b9cbefea74fa674515d14eeffac06cfc0b118d9649253e2d17c445d3
+sha256  5f0208d4b9cbefea74fa674515d14eeffac06cfc0b118d9649253e2d17c445d3
 categories          multimedia www
 platforms           darwin
 license             GPL-2 LGPL-2.1

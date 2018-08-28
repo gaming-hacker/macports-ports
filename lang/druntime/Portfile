@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description \
 homepage            http://dlang.org/
 
 checksums           rmd160  57cfb6b3f23ed5a46792c80a6276040120b30f6e \
-                    sha256  ba9d5b93ee75053f5e9fd59fa0cc055433756fa528b153a8a0de9458da3a4000 \
-                    size    1591470
+sha256  ba9d5b93ee75053f5e9fd59fa0cc055433756fa528b153a8a0de9458da3a4000 \
+size    1591470
 
 depends_lib         port:dmd
 

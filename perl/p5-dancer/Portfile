@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 PortGroup          perl5 1.0
@@ -20,8 +20,8 @@ long_description \
     support, templates for views and layouts, etc.
 
 checksums           rmd160  c64c2132b56440872548aec16528fc3e5a598520 \
-                    sha256  85915e6d36449e74adffadd8d7bb9c0c776daf301774b10e1a7076233c9b3f6c \
-                    size    390941
+sha256  85915e6d36449e74adffadd8d7bb9c0c776daf301774b10e1a7076233c9b3f6c \
+size    390941
 
 if {${perl5.major} != ""} {
     depends_build-append \

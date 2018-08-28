@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  github 1.0
@@ -46,8 +46,8 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
 use_autoreconf  yes
 
 checksums       rmd160  b8b80a6c7150ead6acde8285b4462957cf2c2cd3 \
-                sha256  b3732e471a9bb7950f090fd0457ebd2536a9ba0891b7f3785919c654fe2a2529 \
-                size    4450975
+sha256  b3732e471a9bb7950f090fd0457ebd2536a9ba0891b7f3785919c654fe2a2529 \
+size    4450975
 
 platforms       darwin
 

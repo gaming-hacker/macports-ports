@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -32,10 +32,10 @@ distname            ${_name}-${version}
 master_sites        pypi:${_n}/${_name}/
 
 checksums           rmd160  4533c09c33394ca31ab081ed09f370dfac415882 \
-                    sha256  7253265f7abd8b313e3892944044a365e3f4ac3fcdcfb4298f55ee9ddf188ba0 \
-                    size    140608
+sha256  7253265f7abd8b313e3892944044a365e3f4ac3fcdcfb4298f55ee9ddf188ba0 \
+size    140608
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     # apply upstream patches so that flake8 works with latest versions of

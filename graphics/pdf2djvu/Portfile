@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ github.tarball_from releases
 use_xz              yes
 
 checksums           rmd160  79681b300ec3e829bd9f4cb458cbddeabbbc5b37 \
-                    sha256  76479a86fdb6457ffc415e79561e9ea3a4027f1faffb9080445873b3c97bdb08 \
-                    size    291944
+sha256  76479a86fdb6457ffc415e79561e9ea3a4027f1faffb9080445873b3c97bdb08 \
+size    291944
 
 depends_build       port:pkgconfig \
                     port:gsed

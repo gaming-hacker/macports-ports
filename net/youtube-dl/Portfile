@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                youtube-dl
 version             2018.08.22
 checksums           rmd160  0d10c6acb556f99832178e75ad1433d9955a52ca \
-                    sha256  8042a70478eb62276eb752ab9196f9827b5a5f639307aa4a721d715a0b51c71b \
-                    size    3025389
+sha256  8042a70478eb62276eb752ab9196f9827b5a5f639307aa4a721d715a0b51c71b \
+size    3025389
 
 categories          net
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -22,8 +22,8 @@ master_sites            googlecode
 use_zip                 yes
 
 checksums               rmd160  feb04a4bfd85a05a801c77753855c2bedaa4ed2e \
-                        sha256  4eb8be8c4132560c97629d106194ae99cf191df0055ff5e35954b1b3bde6b432 \
-                        size    1447051
+sha256  4eb8be8c4132560c97629d106194ae99cf191df0055ff5e35954b1b3bde6b432 \
+size    1447051
 
 depends_run             bin:java:kaffe
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    \
     geared towards motion picture production with an emphasis on visual effects and computer animation.
 
 checksums           rmd160  6337c94fbc47b85d5aae898f50c034b31a7f42b7 \
-                    sha256  ab02cc5ded1492ddd1c5320fe3578a53206f54222970c7b41a6a3167ff453d0c \
-                    size    13827571
+sha256  ab02cc5ded1492ddd1c5320fe3578a53206f54222970c7b41a6a3167ff453d0c \
+size    13827571
 
 # see https://github.com/imageworks/OpenColorIO/commit/c43cc918c3e79e324f11ca47e95bfe36e9e0dd15
 patchfiles-append   patch-upstream.diff

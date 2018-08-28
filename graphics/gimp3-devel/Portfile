@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -32,8 +32,8 @@ distname            ${git_name}-${git_commit}
 use_bzip2           yes
 
 checksums           rmd160  24bc2bba7fe10d4df61c169899b6defb9071d9ea \
-                    sha256  b0a7e3f552529ee3db08c85291d065aa752ba7b78ecba67060b8006fdff040da \
-                    size    28685067
+sha256  b0a7e3f552529ee3db08c85291d065aa752ba7b78ecba67060b8006fdff040da \
+size    28685067
 
 set perl_version    5.26
 

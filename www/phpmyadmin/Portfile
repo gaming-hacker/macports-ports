@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                phpmyadmin
 set my_name         phpMyAdmin
 version             4.8.3
 checksums           rmd160  92848d08d04dbdd588a63bc554716d4d2685bfe5 \
-                    sha256  95f2692094d31c2c323d4767023583ab112ad54fff9e3af372710fcb676151af \
-                    size    5996528
+sha256  95f2692094d31c2c323d4767023583ab112ad54fff9e3af372710fcb676151af \
+size    5996528
 
 categories          www php databases
 platforms           darwin freebsd

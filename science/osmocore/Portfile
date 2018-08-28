@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ if {${subport} eq ${name}} {
     # release
     github.setup    osmocom libosmocore 0.12.1
     checksums       rmd160 ecbe62d6de2c27d5e3264918d8703f9d49973109 \
-                    sha256 b738ae043f838c6d8cb3a6239ba7506ea73dd350078510de8e563511d60a3688 \
-                    size   1050188
+sha256 b738ae043f838c6d8cb3a6239ba7506ea73dd350078510de8e563511d60a3688 \
+size   1050188
 
 } else {
 
@@ -31,8 +31,8 @@ if {${subport} eq ${name}} {
     github.setup    osmocom libosmocore b8a91625dd974f596214646da345d9d649f4dae3
     version         20180823
     checksums       rmd160 8279e9aecc2a5b675b335aacaff804b48fb1d6dc \
-                    sha256 f9e0870851a1111532f3c11a66052a519c5f8ec341004724de5c3f5d4554e511 \
-                    size   1057958
+sha256 f9e0870851a1111532f3c11a66052a519c5f8ec341004724de5c3f5d4554e511 \
+size   1057958
 
 }
 

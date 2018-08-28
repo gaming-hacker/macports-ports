@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               java 1.0
 
 name                    apache-ant
@@ -23,8 +25,8 @@ master_sites            apache:ant/
 master_sites.mirror_subdir        binaries
 # Remember also to update the checksums in the source variant below.
 checksums               rmd160  bc2823d7ce5a83ff3078f6997c147efe33872643 \
-                        sha256  3f762e16c4b5446e64869d146efe76be865a1d83062eede2d0a8fc11d1e20b2d \
-                        size    4730768
+sha256  3f762e16c4b5446e64869d146efe76be865a1d83062eede2d0a8fc11d1e20b2d \
+size    4730768
 
 worksrcdir              ${name}-${version}
 set workTarget          ""
@@ -43,8 +45,8 @@ variant source description "build from source; not recommended" {
         distname                        ${name}-${version}-src
         master_sites.mirror_subdir      source
         checksums                       rmd160  3f03bfeed5c95136b2aa5a5df87680c9803fe002 \
-                                        sha256  71a5cdd45a54901b6321d5a140d882f7580c38f766a4e4959bcc36555da9f3ac \
-                                        size    4465063
+sha256  71a5cdd45a54901b6321d5a140d882f7580c38f766a4e4959bcc36555da9f3ac \
+size    4465063
         set workTarget                  /${name}
 
         build.cmd                       ./build.sh

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -46,8 +46,8 @@ foreach python_version ${python_versions} {
         master_sites    https://dbus.freedesktop.org/releases/dbus-python/
 
         checksums       rmd160  9d862706609cdac377ee0f42b500e2cd277bfe92 \
-                        sha256  abf12bbb765e300bf8e2a1b2f32f85949eab06998dbda127952c31cb63957b6f \
-                        size    787426
+sha256  abf12bbb765e300bf8e2a1b2f32f85949eab06998dbda127952c31cb63957b6f \
+size    787426
 
         livecheck.type  regex
         livecheck.url   ${master_sites}?C=M&O=D

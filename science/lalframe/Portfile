@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -12,7 +12,7 @@ long_description \
   routines for reading and writing frame files.
 
 checksums     rmd160 09d210e2dd379ec6bf9de2051bf3b1ffe957e256 \
-              sha256 cbb6ed39abb5a02d792523fc53208330cf8adf02bc4290cac635d42577acb5b1
+sha256 cbb6ed39abb5a02d792523fc53208330cf8adf02bc4290cac635d42577acb5b1
 
 depends_lib   port:lal \
               port:libframe \

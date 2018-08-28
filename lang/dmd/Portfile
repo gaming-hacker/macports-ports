@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description \
     and modeling power, with safety and programmer productivity.
 homepage            http://dlang.org/
 checksums           rmd160  9df047d5b36592465305beea8deb540f2297573a \
-                    sha256  8be8348a1b3be276b8b6435c982a3b72f5c36a22739c31c57ae0e0067be38b63 \
-                    size    3120815
+sha256  8be8348a1b3be276b8b6435c982a3b72f5c36a22739c31c57ae0e0067be38b63 \
+size    3120815
 post-patch {
     reinplace "s|/etc|${prefix}/etc/${name}|" ${worksrcpath}/docs/man/man5/${name}.conf.5
 }

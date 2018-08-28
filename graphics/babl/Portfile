@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -22,8 +22,8 @@ master_sites        gimp:${name}/${branch}/
 use_bzip2           yes
 
 checksums           rmd160  1a87b265df5e552e9e59b818e9d5364643044934 \
-                    sha256  8ad26ca717ec3c74e261f454dd6bb316333a39fd1f87db4ac44706a860dc4d28 \
-                    size    673080
+sha256  8ad26ca717ec3c74e261f454dd6bb316333a39fd1f87db4ac44706a860dc4d28 \
+size    673080
 
 # In 0.1.12, i386 fails to compile with SL's gcc-4.2:
 #    babl-cpuaccel.c:169: error: ‘asm’ operand has impossible constraints

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup python    1.0
@@ -21,10 +21,10 @@ supported_archs     noarch
 installs_libs       no
 
 checksums           rmd160  5975fedfb9ab9affee0ade1952f09de13393de57 \
-                    sha256  4dcba81bc253a730932d87b10f2992cc3ab5978d7382cee36bc662d8d1bca48c \
-                    size    172848
+sha256  4dcba81bc253a730932d87b10f2992cc3ab5978d7382cee36bc662d8d1bca48c \
+size    172848
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -28,8 +28,8 @@ distname            ${git_name}-${git_commit}
 use_bzip2           yes
 
 checksums           rmd160  c6bbb0a7004b5269c9ba702f0d6883fc4dac3293 \
-                    sha256  16bc2b8a17b7593730605842206744b7d70b526f3944af747b8604949709d1ed \
-                    size    305752
+sha256  16bc2b8a17b7593730605842206744b7d70b526f3944af747b8604949709d1ed \
+size    305752
 
 depends_build       port:automake \
                     port:autoconf \

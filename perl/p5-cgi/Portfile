@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -16,8 +16,8 @@ long_description    ${description} CGI is considered to be a legacy \
 platforms           darwin
 
 checksums           rmd160  923123fce2e0bc3c8b16fe3bd31936944fb8ffec \
-                    sha256  10efff3061b3c31a33b3cc59f955aef9c88d57d12dbac46389758cef92f24f56 \
-                    size    200642
+sha256  10efff3061b3c31a33b3cc59f955aef9c88d57d12dbac46389758cef92f24f56 \
+size    200642
 
 if {${perl5.major} != ""} {
     depends_build-append \

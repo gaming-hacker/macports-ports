@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -13,7 +13,7 @@ long_description \
   data analysis.
 
 checksums     rmd160 f949c757be02f30f204ee2ab3b0a847f9ae67c70 \
-              sha256 e384f21f788c8c0521e3f9d50cc40e9e7d333f63cebbdac73b206658c45ffffe
+sha256 e384f21f788c8c0521e3f9d50cc40e9e7d333f63cebbdac73b206658c45ffffe
 
 depends_lib   port:lal \
               port:lalmetaio \

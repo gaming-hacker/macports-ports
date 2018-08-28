@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -28,7 +28,7 @@ master_sites        http://www.open-mpi.org/software/${subdir} \
                     http://icl.cs.utk.edu/open-mpi/${subdir}
 
 checksums           rmd160  8f6c2e503235f2ce227dd31db4ecf810eb468d0c \
-                    sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
+sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
 use_bzip2           yes
 
 livecheck.type      regex
@@ -48,7 +48,7 @@ if {[string first "-devel" $subport] > 0} {
                         http://www.open-mpi.de/nightly/v${branch}.x
 
     checksums           rmd160  73a09f4df8017a63c53ca7996c1575c9f0e461eb \
-                        sha256  ea03b0078611046d10cb7b6154d3bed0c86c5e5a6c9eb582f2dd1fd34f19b3dd
+sha256  ea03b0078611046d10cb7b6154d3bed0c86c5e5a6c9eb582f2dd1fd34f19b3dd
 
     livecheck.version   ${base}
     livecheck.url       [lindex ${master_sites} 0]
