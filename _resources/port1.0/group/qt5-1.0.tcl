@@ -8,11 +8,6 @@
 global available_qt_versions
 array set available_qt_versions {
     qt5  {qt5-qtbase  5.11}
-    qt59 {qt59-qtbase 5.9}
-    qt58 {qt58-qtbase 5.8}
-    qt57 {qt57-qtbase 5.7}
-    qt56 {qt56-qtbase 5.6}
-    qt55 {qt55-qtbase 5.5}
 }
 #qt5-kde {qt5-kde 5.8}
 
@@ -23,115 +18,7 @@ array set available_qt_versions {
 
 proc qt5.get_default_name {} {
     global os.major
-
-    # see https://doc.qt.io/qt-5/supported-platforms-and-configurations.html
-    # for older versions, see https://web.archive.org/web/*/http://doc.qt.io/qt-5/supported-platforms-and-configurations.html
-    if { ${os.major} <= 7 } {
-        #
-        # Qt 5 does not support ppc
-        # see http://doc.qt.io/qt-5/osx-requirements.html
-        #
-        return qt55
-        #
-    } elseif { ${os.major} <= 9 } {
-        #
-        # Mac OS X Tiger (10.4)
-        # Mac OS X Leopard (10.5)
-        #
-        # never supported by Qt 5
-        #
-        return qt55
-        #
-    } elseif { ${os.major} == 10 } {
-        #
-        # Mac OS X Snow Leopard (10.6)
-        #
-        #     Qt 5.3: Deployment only
-        # Qt 5.0-5.2: Occasionally tested
-        #
-        return qt55
-        #
-    } elseif { ${os.major} == 11 } {
-        #
-        # Mac OS X Lion (10.7)
-        #
-        # Qt 5.7:  Not Supported and is known not to work
-        # Qt 5.6:  Deployment only but seems to work (except QtWebEngine)
-        # Qt 5.5:  Occasionally tested
-        # Qt 5.4:  Supported
-        #
-        return qt56
-        #
-    } elseif { ${os.major} == 12 } {
-        #
-        # OS X Mountain Lion (10.8)
-        #
-        # Qt 5.8:  Not Supported
-        # Qt 5.7:  Supported (except QtWebEngine)
-        # Qt 5.6:  Supported
-        #
-        return qt57
-        #
-    } elseif { ${os.major} == 13 } {
-        #
-        # OS X Mavericks (10.9)
-        #
-        # Qt 5.9:  Not Supported
-        # Qt 5.8:  Supported
-        # Qt 5.7:  Supported
-        # Qt 5.6:  Supported
-        #
-        return qt58
-        #
-    } elseif { ${os.major} == 14 } {
-        #
-        # OS X Yosemite (10.10)
-        #
-        # Qt 5.10: Not Supported and QtWebEngine fails
-        # Qt 5.9:  Supported
-        # Qt 5.8:  Supported
-        # Qt 5.7:  Supported
-        # Qt 5.6:  Supported
-        #
-        return qt59
-        #
-    } elseif { ${os.major} == 15 } {
-        #
-        # OS X El Capitan (10.11)
-        #
-        # Qt 5.10: Supported
-        # Qt 5.9:  Supported
-        # Qt 5.8:  Supported
-        # Qt 5.7:  Supported
-        # Qt 5.6:  Supported
-        #
-        return qt5
-        #
-    } elseif { ${os.major} == 16 } {
-        #
-        # macOS Sierra (10.12)
-        #
-        # Qt 5.10: Supported
-        # Qt 5.9:  Supported
-        # Qt 5.8:  Supported
-        # Qt 5.7:  Not Supported but seems to work
-        #
-        return qt5
-        #
-    } elseif { ${os.major} == 17 } {
-        #
-        # macOS High Sierra (10.13)
-        #
-        # Qt 5.10: Supported
-        #
-        return qt5
-        #
-    } else {
-        #
-        # macOS ??? (???)
-        #
-        return qt5
-    }
+    return qt5
 }
 
 global qt5.name qt5.base_port qt5.version

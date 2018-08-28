@@ -14,13 +14,6 @@ license             {LGPL-3 GPL-3 OpenSSLException}
 homepage            https://www.qt.io
 
 version             5.11.1
-set middle_name     everywhere
-if { ${subport} eq "${name}-qtwebkit" ||
-     ${subport} eq "${name}-qtwebkit-examples" ||
-     ${subport} eq "${name}-qtwebkit-docs" } {
-    version         5.9.1
-    set middle_name opensource
-}
 
 set just_want_qt5_variables yes
 PortGroup qt5 1.0
