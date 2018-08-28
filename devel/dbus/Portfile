@@ -53,16 +53,16 @@ if {[getuid] != 0} {
 set daemon_uniquename   org.freedesktop.dbus-system
 set agent_uniquename    org.freedesktop.dbus-session
 
-startupitem.type    launchd
-startupitem.create  no
-startupitems        name        dbus-system \
-                    location    LaunchDaemons \
-                    uniquename  ${daemon_uniquename} \
-                    plist       ${daemon_uniquename}.plist \
-                    name        dbus-session \
-                    location    LaunchAgents \
-                    uniquename  ${agent_uniquename} \
-                    plist       ${agent_uniquename}.plist
+# startupitem.type    launchd
+# startupitem.create  no
+# startupitems        name        dbus-system \
+#                     location    LaunchDaemons \
+#                     uniquename  ${daemon_uniquename} \
+#                     plist       ${daemon_uniquename}.plist \
+#                     name        dbus-session \
+#                     location    LaunchAgents \
+#                     uniquename  ${agent_uniquename} \
+#                     plist       ${agent_uniquename}.plist
 
 depends_lib     port:expat
 
