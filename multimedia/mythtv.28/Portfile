@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           qt5 1.0
@@ -7,17 +7,17 @@ PortGroup           github 1.0
 PortGroup           active_variants 1.1
 PortGroup           conflicts_build 1.0
 
-set shorthash       8238e839
+set shorthash       e5fc66e822
 # set fullhash      8238e839c90de35f7c64380d2c4e360192862a34
-set majorversion    .28
-set minorversion    .2
-set lastcommit      20180201
+set majorversion    29
+set minorversion    .1
+set lastcommit      20180820
 set corerev         2
 set pluginsrev      1
 set metarev         0
 github.setup        MythTV mythtv ${shorthash}
-checksums           rmd160  0f468b5e0502afe2672f2e41df5f40cbdb2d43d4 \
-sha256  09d3736e9fe0fb191cc7d0339d4c972e6dc8b297941491281e1e86f9652b13a0
+checksums           rmd160  62efbd440a1e8c50a8d496535f64ccd12a6a844f \
+                    sha256  25d67dda2e5c052a89b6bcc80cabb1ca3e670bbecdff3494b83dc8bd5ed498ff
 
 name                mythtv${majorversion}
 categories          multimedia
@@ -30,7 +30,7 @@ homepage            https://www.mythtv.org/
 universal_variant   no
 
 livecheck.version   ${majorversion}${minorversion}
-livecheck.regex     "archive/v(0${majorversion}\[\\.\\d\]?)${extract.suffix}"
+livecheck.regex     "archive/v(${majorversion}\[\\.\\d\]?)${extract.suffix}"
 
 set nick            mythtv
 set mythtvhomedir   ${prefix}/var/mythtvuser
@@ -40,8 +40,8 @@ set mythtvpidfile   ${mythtvrundir}/${nick}
 set plistdir        ${prefix}/Library/LaunchDaemons
 set plistlabel      org.mythtv.mythbackend
 set plistfile       org.mythtv.mythbackend.plist
-set mythverstring   v0${majorversion}${minorversion}-${shorthash}-MacPorts
-set mythbranch      fixes/0${majorversion}
+set mythverstring   v${majorversion}${minorversion}-${shorthash}-MacPorts
+set mythbranch      fixes/${majorversion}
 set applescripts    {Myth_Frontend Myth_Filldatabase Myth_Setup Myth_Stop_Start}
 set mysqlver        mariadb
 set pythonbranch    2.7
@@ -65,7 +65,7 @@ if {$subport eq "mythtv-core${majorversion}"} {
     PortGroup           compiler_blacklist_versions 1.0
     revision            ${corerev}
     name                mythtv-core${majorversion}
-    version             0${majorversion}${minorversion}-Fixes-${lastcommit}
+    version             ${majorversion}${minorversion}-Fixes-${lastcommit}
 
     description         personal video recorder (PVR) and media centre system
     long_description    The ultimate Digital Video Recorder and home media \
@@ -108,11 +108,12 @@ if {$subport eq "mythtv-core${majorversion}"} {
     depends_build-append \
                         port:yasm
     
-    conflicts           mythtv-core.25 mythtv-core.26 mythtv-core.27
+    conflicts           mythtv-core.25 mythtv-core.26 mythtv-core.27 mythtv-core.28
     conflicts_build     hdhomerun
 
     depends_run         port:logrotate \
-                        port:dejavu-fonts
+                        port:dejavu-fonts \
+			            port:liberation-fonts
 
     require_active_variants \
                         qt5-mysql-plugin mariadb55 mysql56
@@ -144,8 +145,6 @@ if {$subport eq "mythtv-core${majorversion}"} {
     
     # revert rpath linking stuff as it is non-functional in MacPorts
     patchfiles-append   patch-rpath_linking.diff
-    # report a couple more items of interest
-    patchfiles-append   patch-configure_verbosity.diff
     # If MacPorts libdvdnav is installed, Myth #Includes an old version of libmythdvdnav ?!?
     # occurs following ffmpeg re-sync, see https://github.com/MythTV/mythtv/commit/4f02b2f98a60940449bca05eab67ac764fc1e1e7#diff-282748943dcb8e362702042df95a1d98
     patchfiles-append   patch-dvdnav_include_path.diff
@@ -284,7 +283,7 @@ if {$subport eq "mythtv-core${majorversion}"} {
                         --enable-libcrypto \
                         --enable-libmp3lame \
                         --enable-libass \
-                        --enable-libx264 --enable-libfaac --enable-nonfree \
+                        --enable-libx264 --enable-nonfree \
                         --enable-libx265 \
                         --enable-securetransport \
                         --enable-vbox \
@@ -522,7 +521,7 @@ if {$subport eq "mythtv-core${majorversion}"} {
 
 if {$subport eq "mythtv-plugins${majorversion}"} {
     name                mythtv-plugins${majorversion}
-    version             0${majorversion}${minorversion}-Fixes-${lastcommit}
+    version             ${majorversion}${minorversion}-Fixes-${lastcommit}
     revision            ${pluginsrev}
     description         MythTV plugins for slideshows, music and weather
     long_description    ${description}  \
@@ -638,7 +637,7 @@ if {$subport eq "mythtv-plugins${majorversion}"} {
 }
 
 if {$subport eq "mythtv${majorversion}"} {
-    version             0${majorversion}${minorversion}-Fixes-${lastcommit}
+    version             ${majorversion}${minorversion}-Fixes-${lastcommit}
     revision            ${metarev}
     description         installs complete MythTV system
     long_description    \
