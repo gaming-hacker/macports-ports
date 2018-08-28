@@ -1,15 +1,15 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pandas
-version             0.23.1
+version             0.23.4
 categories-append   science
 license             BSD
 platforms           darwin
 
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,9 +22,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  b64137192f901592c65a5d37102077fdd6ea1052 \
-sha256  50b52af2af2e15f4aeb2fe196da073a8c131fa02e433e105d95ce40016df5690 \
-size    13108845
+checksums           rmd160  57efaf345b3ce33099c9d56ecd973ca7d39bc345 \
+                    sha256  5b24ca47acf69222e82530e89111dd9d14f9b970ab2cd3a1c2c78f0c4fbba4f4 \
+                    size    10490077
 
 if {${name} ne ${subport}} {
     depends_build-append \

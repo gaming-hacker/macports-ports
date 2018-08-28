@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem  1.0
 
 name            nagios
-version         4.3.4
+version         4.4.2
 categories      net
 license         GPL-2
 maintainers     nomaintainer
@@ -22,8 +22,9 @@ homepage        http://nagios.org
 livecheck.regex     nagios-(\[0-9.\]+)${extract.suffix}
 
 master_sites        sourceforge:project/nagios/nagios-4.x/nagios-${version}
-checksums       rmd160 bddc8310f82351923288620dc635c535d2ac2a32 \
-sha256 c90b7812d9e343db12be19a572e15c415c5d6353a91c5e226e432c2d4aaa44f1
+checksums           rmd160  2ac285175c098d88e06dcf3ce1cc8c1630236291 \
+                    sha256  3418923f326aa86dc8c84cfd0df788fa495a90d772f8071acf40fdbef0736853\
+                    size    11301454
 
 depends_build       port:gd2
 depends_lib         path:lib/libssl.dylib:openssl \
@@ -65,9 +66,6 @@ post-patch {
 
     reinplace "s|daemon-init \$(DESTDIR)\$(INIT_DIR)/nagios|daemon-init \$(DESTDIR)\$(INIT_DIR)/nagios.init|g" \
         "${worksrcpath}/Makefile.in"
-
-    reinplace "s|NagiosLockDir=/var/lock/subsys|NagiosLockDir=${prefix}/var/nagios|g" \
-        ${worksrcpath}/daemon-init.in
 }
 
 add_users nagios group=nagios
@@ -85,6 +83,7 @@ post-destroot {
     }
 }
 
+
 notes "
 ************************************************************
 The basic steps to complete the installation are below.  But Nagios is\
@@ -95,6 +94,8 @@ to fully understand Nagios.
 
 IMPORTANT: A user and group called 'nagios' has been created and you must run\
        nagios as that user.
+
+
 
 1) Setup Apache's httpd.conf file for Nagios (restart Apache when done)
 
@@ -129,6 +130,7 @@ Alias /nagios \"${prefix}/share/nagios\"
 # End Nagios stuff
 #
 
+
 2) Configure the Nagios sample files in ${prefix}/etc/nagios.
 
 a) First, backup the Nagios sample files.
@@ -148,6 +150,7 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
 
    sudo nagios -v ${prefix}/etc/nagios/nagios.cfg
 
+
 3) Set user 'nagiosadmin' as a \"superuser\" to browse all hosts/services in
    ${prefix}/etc/nagios/cgi.cfg
 
@@ -159,6 +162,7 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    authorized_for_all_service_commands= nagiosadmin
    authorized_for_all_host_commands= nagiosadmin
 
+
 4) Create a 'nagiosadmin' Apache user/password to correspond with the Nagios Apache\
    user created above
 
@@ -168,6 +172,7 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    additional users login names match Nagios contact names to restrict web viewing to your\
    host's by contact.
 
+
 5) Set Nagios to start at system boot, and start Nagios
 
    Run launchctl so Nagios will start at system boot
@@ -176,9 +181,12 @@ c) Configure the default commands.cfg file to your requirements.  Then test\
    You may now start Nagios manually with this command (or a reboot):
     sudo ${prefix}/var/nagios/nagios.init start
 
+
 6) You may now login as 'nagiosadmin' to the Nagios web interface at http://localhost/nagios
 
+
 NOTE: The SMTP server Postfix is required to enable Nagios email notifications
+
 
 File Locations:
 

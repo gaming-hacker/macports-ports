@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                rancid
-version             3.7
+version             3.8
 categories          net
 license             BSD-old
 maintainers         nomaintainer
@@ -19,9 +19,9 @@ long_description    Rancid maintains a CVS/SVN/git repository of router and \
 homepage            http://www.shrubbery.net/rancid
 master_sites        ftp://ftp.shrubbery.net/pub/rancid/
 
-checksums           rmd160  dda06111afbd28fc2ee06780fb1ac451f0d62732 \
-sha256  9c6befff78d49d8d0757a2b57b6cfdfef55cadcbc1fa6fbe1ab9424335d51f7b \
-size    503424
+checksums           rmd160  456fb1a9a262dd61c15f7351040940fdfffac8e2 \
+                    sha256  cecdeed2379c832fb5988f4dc8c45fbbbb382723882a9ffea577e54f5ab8cc5f \
+                    size    523950
 
 perl5.branches      5.26
 depends_lib-append  port:perl${perl5.major} \
@@ -29,7 +29,8 @@ depends_lib-append  port:perl${perl5.major} \
                     path:lib/libssl.dylib:openssl
 
 patchfiles          patch-etc-Makefile.am.diff \
-                    patch-bin-Makefile.in.diff
+                    patch-bin-Makefile.in.diff \
+                    patch-bin-fxlogin.in.diff
 
 post-patch {
 # Set path for lg.conf.sample so Looking Glass will work
@@ -59,6 +60,7 @@ make sure it isn't world readable, and edit it according to your needs.
 
 See the README file in ${prefix}/share/rancid for more information.
 
+
 To use the optional looking glass service to run status check commands\
 (show ip route, show run, etc) against your devices from a web form,\
 perform these steps:
@@ -83,11 +85,13 @@ perform these steps:
    Set the file permissions.  The rancid-user should also be the Apache user.
 	sudo chown -R <rancid-user>:<rancid-user> <Apache-docroot>/lg
 
+
 2) To enable the cgi's in this directory to run, set this line in your httpd.conf:
 
 	<Directory /Library/WebServer/Documents/lg>
    		Options ExecCGI
 	</Directory>
+
 
 3) Goto url http://localhost/lg with a web browser to use the looking glass.
 

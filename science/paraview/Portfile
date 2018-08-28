@@ -1,14 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-2:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 PortGroup           cmake 1.0
-PortGroup           qt4 1.0
+PortGroup           qt5 1.0
 PortGroup           mpi 1.0
 
 name                paraview
-version             5.5.0
-revision            1
+version             5.5.2
 
 categories          science graphics
 platforms           darwin
@@ -32,13 +31,15 @@ master_sites        ${homepage}/files/v${branch}/
 
 distname            ParaView-v${version}
 
-checksums           sha256  1b619e326ff574de808732ca9a7447e4cd14e94ae6568f55b6581896cd569dff \
-rmd160  3d8b47989bba8664aa781425731088754c0cd35d \
-size    51414419
+checksums           sha256  64561f34c4402b88f3cb20a956842394dde5838efd7ebb301157a837114a0e2d \
+                    rmd160  b8bb2f50615e9db85dc986e108531ffffad1c96e \
+                    size    51418473
 
 depends_build-append    port:readline \
     port:netcdf \
-    port:qt4-mac-sqlite3-plugin port:qt5-qttools
+    port:qt5-sqlite-plugin port:qt5-qttools 
+
+patchfiles patch-incomplete-types.patch
 
 cmake.out_of_source yes
 
@@ -55,7 +56,11 @@ configure.args-delete \
 configure.args-append \
     -DBUILD_TESTING:BOOL=OFF \
     -DMACOSX_APP_INSTALL_PREFIX=${destroot}${applications_dir} \
-    -DBUILD_SHARED_LIBS:BOOL=ON
+    -DBUILD_SHARED_LIBS:BOOL=ON \
+    -DPARAVIEW_QT_VERSION=5 \
+    -DQt5_DIR=${qt_dir} \
+    -DQT_HELP_GENERATOR=${qt_bins_dir}/qhelpgenerator \
+    -DQT_XMLPATTERNS_EXECUTABLE=${qt_bins_dir}/xmlpatterns
 
 pre-configure {
     configure.args-append -DCMAKE_CXX_COMPILER=${configure.cxx} \
@@ -73,7 +78,7 @@ pre-configure {
 
 # Some cmake tests will fail with "error: unrecognized option '-arch'" from gcc 4.6 and earlier.
 compilers.choose    fc
-mpi.setup           default
+mpi.setup           default -gcc44 -gcc45 -gcc46
 
 # no compilers.choose cc cxx because:
 # gcc6,7 C compiler fails with:
@@ -101,6 +106,7 @@ destroot {
 # Error using default destroot is:
 #Warning: Error determining file type of `/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js': lstat(/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/destroot/opt/local/var/macports/build/_Users_dstrubbe_Software_MacPorts_macports-trunk_dports_science_paraview/paraview/work/build/CMakeFiles/__macos_install/bin/paraview.app/Contents/www/lib/widgets/vtkweb-widgets.js):no such file or directory
 #Warning: A file belonging to the `paraview' port is missing or unreadable. Consider reinstalling it.
+
 
 # other pythons?
 variant python27 conflicts python36 description {Add Python 2.7 support.} {

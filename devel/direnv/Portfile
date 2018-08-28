@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ if {${name} eq ${subport}} {
 
     github.setup        direnv direnv 2.17.0 v
     checksums           rmd160 58a963b1af1de56536708d354abc78824e54e811 \
-sha256 74632f5c46faf1f57239c755b3783a7ce8b75d6808f1c348482ab5995083aee2 \
-size   92933
+                        sha256 74632f5c46faf1f57239c755b3783a7ce8b75d6808f1c348482ab5995083aee2 \
+                        size   92933
 
     conflicts           direnv-devel
 
@@ -32,11 +32,11 @@ size   92933
 
 subport direnv-devel {
 
-    github.setup        direnv direnv 51b0874b09f8a04f504ef834ee955498fe4e951e
-    version             20180731
-    checksums           rmd160 0f8ea8bcf0e249b62c35f3b23fc67db1bcbe3b71 \
-sha256 c816ede8ebf115883e04a8f3b409da5d3f0f48e3d5ef6fd9877ba203c0fb5270 \
-size   94274
+    github.setup        direnv direnv ead4788db4255b32a663fdfdd2a9376198ee3901
+    version             20180820
+    checksums           rmd160 0df3c4a4a7c2b3041a11bace18c08e9d0fd101fa \
+                        sha256 781fd5a5b76c306fcf61b031f4bcdb79a963e8e43d0368fc141b396396d2eaa0 \
+                        size   94400
 
     conflicts           direnv
     long_description ${long_description}: \

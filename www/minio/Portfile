@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
 # UPDATE THESE IN SYNC!
-set version         2018-08-02T23-11-36Z
-set commit          a091b1a3eefbaea07499bef9a5462280ec9d2a7a
+set version         2018-08-21T00-37-20Z
+set commit          2d84b02bc429ad059a060001bccd712491e6e6a3
 
 set relversion      [regsub {(T..)-(..)-(..Z)} $version {\1:\2:\3}]
 # This is not used for fetching, but is compiled into the executable
@@ -25,9 +25,9 @@ long_description \
 license             Apache-2
 
 checksums \
-rmd160  8f909fa5da03fced934a5976404e2a275b3007f6 \
-sha256  30232073454b84f6c9b3a3966b61ae42be629260eb04f602a99bc6a6c34baaf6 \
-size    8379698
+    rmd160  f49607eb41c9d19e3d877d31e988b37ac59e19fb \
+    sha256  50bb559f1c46031e6bbee8151488ea4ca7db88335982abfcf0628c954247aa03 \
+    size    8734825
 
 set goproj          github.com/${github.author}/${github.project}
 

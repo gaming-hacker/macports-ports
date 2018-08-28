@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://cisofy.com/lynis/
 master_sites        https://downloads.cisofy.com/${name}
 
 checksums           rmd160 4dba3f3d3bd5038a139ec3428340ff97bd3c1d6e \
-sha256 6b254cf2975eed6db9c39960e7c07e8ff4ddf61f974274980aa62a74745020e4 \
-size   274658
+                    sha256 6b254cf2975eed6db9c39960e7c07e8ff4ddf61f974274980aa62a74745020e4 \
+                    size   274658
 
 use_configure       no
 
@@ -39,7 +39,7 @@ build {}
 set target_dir ${prefix}/etc/${name}
 
 pre-destroot {
-    reinplace -E "s|(t.+_TARGETS=.+) \.(.*)\"|\\1 .\\2 ${target_dir}\\2\"|g" \
+    reinplace -E "s|(t.+_TARGETS=)\".+ \.(.*)\"|\\1\"${target_dir}\\2\"|g" \
         ${worksrcpath}/lynis \
         ${worksrcpath}/include/functions
 }
@@ -69,13 +69,3 @@ destroot {
 livecheck.type      regex
 livecheck.url       ${master_sites}
 livecheck.regex     >${name}-(\\d+(\\.\\d+)+)${extract.suffix}<
-
-notes "
-You are urged not to store custom profiles and plugins within the
-${prefix}/etc/${name} directory as this content is wiped during
-upgrades and uninstallation.
-
-Instead, use any of the directories that lynis searches within by
-default, or use the command line options to specify custom paths.
-See `man lynis`.
-"

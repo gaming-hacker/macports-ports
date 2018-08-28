@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem                  1.0
 PortGroup                   muniversal 1.0
@@ -14,7 +14,8 @@ PortGroup                   compiler_blacklist_versions 1.0
 name                        wine-devel
 conflicts                   wine wine-crossover
 set my_name                 wine
-version                     3.13
+version                     3.14
+revision                    1
 set branch                  [lindex [split ${version} .] 0].x
 license                     LGPL-2.1+
 categories                  x11
@@ -59,21 +60,21 @@ distfiles                   ${wine_distfile}:winesource \
                             ${wine_mono_distfile}:winemono
 
 checksums                   ${wine_distfile} \
-rmd160  beecc07593cef11234e8203900eff56a395602b3 \
-sha256  0785d74852232c1f6e07ac081875e92219a4428ddcc8931632fcf1924941bbd4 \
-size    20551460 \
+                            rmd160  00bc0fa75ef6be64621dde79c90cbd06544aa120 \
+                            sha256  47896634c255c202d04b85f884b4f1bceb02e1d7bb2ff257b6bc8d69d4b0b005 \
+                            size    20583696 \
                             ${wine_gecko_distfile} \
-rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
-sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
-size    49266176 \
+                            rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
+                            sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
+                            size    49266176 \
                             ${wine_gecko64_distfile} \
-rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
-sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
-size    50806272 \
+                            rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
+                            sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
+                            size    50806272 \
                             ${wine_mono_distfile} \
-rmd160  1c4aca42bfff33ca7fc485442820c84665a3e581 \
-sha256  d24a8017371c7e8224a1778bb43a113ed7ed9720efd9d0cda175d42db6106d3a \
-size    56470528
+                            rmd160  1c4aca42bfff33ca7fc485442820c84665a3e581 \
+                            sha256  d24a8017371c7e8224a1778bb43a113ed7ed9720efd9d0cda175d42db6106d3a \
+                            size    56470528
 
 # Note: Most of the X11 libs are dlopen()'d
 depends_lib                 port:fontconfig \
@@ -254,7 +255,7 @@ if {[variant_isset universal]} {
                                 macports-clang-3.6 \
                                 macports-clang-3.7
     compiler.fallback-append    macports-clang-5.0 \
-                                macports-clang-3.8
+                                macports-clang-3.9
 
     if {${os.platform} eq "darwin" && [vercmp ${macosx_version} 10.7] < 0} {
         # clang-5.0 on Mac OS X 10.6 emits objects that cannot be read by cctools from Xcode.
@@ -273,6 +274,18 @@ platform darwin {
     depends_lib-delete          port:gnutls
     configure.args-delete       --with-gnutls
     configure.args-append       --without-gnutls
+
+    # Vulkan is supported on macOS through MoltenVK since Wine 3.13, but because
+    # it uses Metal it only works on 64-bit, and because it only builds with
+    # Xcode 9 or later it requires Sierra or later.
+    if {${os.major} >= 16 && [variant_exists universal] && [variant_isset universal]} {
+        depends_lib-append                      port:MoltenVK
+        depends_skip_archcheck-append           MoltenVK
+        lappend merger_configure_args(x86_64)   --with-vulkan
+        lappend merger_configure_args(i386)     --without-vulkan
+    } else {
+        configure.args-append   --without-vulkan
+    }
 
     if {${os.major} < 10} {
         configure.args-delete   --with-opencl

@@ -142,9 +142,8 @@ sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
 
     depends_lib-append  port:lua
 
-    # VLC doesn't currently build for me using port:clang-3.8
     compiler.blacklist-append \
-                        gcc-4.2 llvm-gcc-4.2 macports-clang-3.8 {clang < 300}
+                        gcc-4.2 llvm-gcc-4.2 {clang < 300}
 
     patchfiles          buildfix-package.mak.patch \
                         patch-configure.ac.diff \

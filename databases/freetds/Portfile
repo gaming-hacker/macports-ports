@@ -1,10 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                freetds
 epoch               1
-version             1.00.94
+version             1.00.96
+checksums           rmd160  28d6153e55c9d37c98c403bfb8d983c1a077b5e4 \
+                    sha256  4f15dee0c19ce52432b10802550a43008f24a6cb5d16b90cc684bc146018b48d \
+                    size    2153921
+
 categories          databases
 platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -26,10 +30,6 @@ long_description    FreeTDS is an open source implementation of the TDS (Tabular
 homepage            http://www.freetds.org/
 master_sites        ftp://ftp.freetds.org/pub/${name}/stable/
 use_bzip2           yes
-
-checksums           rmd160  81912f07f661aaa570b681d861e2ed4ac67a4dd9 \
-sha256  5fcf59a554eb3e72a09cc49c8dba5db8ad6dced07315ed775c4b8b2b81b603e4 \
-size    2152992
 
 depends_lib         port:libiconv \
                     port:ncurses \

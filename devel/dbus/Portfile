@@ -1,11 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
 
 name            dbus
-version         1.12.8
-revision        2
+version         1.12.10
 maintainers     {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 categories      devel
 platforms       darwin
@@ -18,9 +17,9 @@ long_description \
 homepage        https://www.freedesktop.org/wiki/Software/dbus/
 master_sites    https://dbus.freedesktop.org/releases/dbus/
 
-checksums       rmd160  25cf65e6d282c843932b54b8bb75ab598699d149 \
-sha256  e2dc99e7338303393b6663a98320aba6a63421bcdaaf571c8022f815e5896eb3 \
-size    2071751
+checksums       rmd160  6d19c3e0efe030a450b7faceb57c9fa8279ecaec \
+                sha256  4b693d24976258c3f2fa9cc33ad9288c5fbfa7a16481dbd9a8a429f7aa8cdcf7 \
+                size    2073510
 
 # See r68276
 # For configure
@@ -54,16 +53,16 @@ if {[getuid] != 0} {
 set daemon_uniquename   org.freedesktop.dbus-system
 set agent_uniquename    org.freedesktop.dbus-session
 
-# startupitem.type    launchd
-# startupitem.create  no
-# startupitems        name        dbus-system \
-#                     location    LaunchDaemons \
-#                     uniquename  ${daemon_uniquename} \
-#                     plist       ${daemon_uniquename}.plist \
-#                     name        dbus-session \
-#                     location    LaunchAgents \
-#                     uniquename  ${agent_uniquename} \
-#                     plist       ${agent_uniquename}.plist
+startupitem.type    launchd
+startupitem.create  no
+startupitems        name        dbus-system \
+                    location    LaunchDaemons \
+                    uniquename  ${daemon_uniquename} \
+                    plist       ${daemon_uniquename}.plist \
+                    name        dbus-session \
+                    location    LaunchAgents \
+                    uniquename  ${agent_uniquename} \
+                    plist       ${agent_uniquename}.plist
 
 depends_lib     port:expat
 

@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pytest
-version             3.7.1
+version             3.7.2
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,9 +24,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  184a2446c82f9925f257a263796158bf88024b39 \
-sha256  86a8dbf407e437351cef4dba46736e9c5a6e3c3ac71b2e942209748e76ff2086 \
-size    845094
+checksums           rmd160  507f75890f2168b2b50b25f0ce34525a04ad3f96 \
+                    sha256  3459a123ad5532852d36f6f4501dfe1acf4af1dd9541834a164666aa40395b02 \
+                    size    847992
 
 if {${name} ne ${subport}} {
     depends_build-append \

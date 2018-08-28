@@ -1,32 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-#
-# Copyright (c) 2011-2016 The MacPorts Project
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are
-# met:
-#
-# 1. Redistributions of source code must retain the above copyright
-#    notice, this list of conditions and the following disclaimer.
-# 2. Redistributions in binary form must reproduce the above copyright
-#    notice, this list of conditions and the following disclaimer in the
-#    documentation and/or other materials provided with the distribution.
-# 3. Neither the name of The MacPorts Project nor the names of its
-#    contributors may be used to endorse or promote products derived from
-#    this software without specific prior written permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 # Usage:
 # name should be of the form py-foo for modules
@@ -49,7 +21,7 @@ categories      python
 
 use_configure   no
 # we want the default universal variant added despite not using configure
-universal_variant  no
+universal_variant yes
 
 build.target    build
 
@@ -240,7 +212,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-python.versions 27 36 37
+        python.versions ${python.default_version}
         depends_lib-append port:python[option python.default_version]
     }
 }
@@ -267,10 +239,20 @@ proc python_get_defaults {var} {
         prefix {
             global build_arch frameworks_dir
             set ret "${frameworks_dir}/Python.framework/Versions/${python.branch}"
+            if {${python.version} == 25 || (${python.version} == 24 &&
+                ![file isfile ${ret}/include/python${python.branch}/Python.h] &&
+                ([file isfile ${prefix}/include/python${python.branch}/Python.h]
+                || [string match *64* $build_arch]))} {
+                set ret $prefix
+            }
             return $ret
         }
         bin {
-          return "${python.prefix}/bin/python${python.branch}"
+            if {${python.version} != 24} {
+                return "${python.prefix}/bin/python${python.branch}"
+            } else {
+                return "${prefix}/bin/python${python.branch}"
+            }
         }
         include {
             set inc_dir "${python.prefix}/include/python${python.branch}"
@@ -291,22 +273,46 @@ proc python_get_defaults {var} {
             }
         }
         lib {
-              return "${python.prefix}/Python"
+            if {${python.version} != 24 && ${python.version} != 25} {
+                return "${python.prefix}/Python"
+            } else {
+                return "${prefix}/lib/libpython${python.branch}.dylib"
+            }
         }
         pkgd {
-              return "${python.prefix}/lib/python${python.branch}/site-packages"
+            if {${python.version} != 24} {
+                return "${python.prefix}/lib/python${python.branch}/site-packages"
+            } else {
+                return "${prefix}/lib/python${python.branch}/site-packages"
+            }
         }
         setup_args {
+            if {${python.version} != 24} {
                 return "--no-user-cfg"
+            } else {
+                return ""
+            }
         }
         setup_prefix {
+            if {${python.version} != 24} {
                 return "${python.prefix}"
+            } else {
+                return "${prefix}"
+            }
         }
         link_binaries {
+            if {${python.version} != 24 && ${python.version} != 25} {
                 return yes
+            } else {
+                return no
+            }
         }
         move_binaries {
+            if {${python.version} == 24 || ${python.version} == 25} {
+                return yes
+            } else {
                 return no
+            }
         }
         binary_suffix {
             if {[string match py-* [option name]]} {

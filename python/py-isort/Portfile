@@ -5,6 +5,7 @@ PortGroup           python 1.0
 
 name                py-isort
 version             4.3.4
+revision            1
 categories-append   devel
 platforms           darwin
 license             MIT
@@ -32,8 +33,8 @@ sha256  b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8 \
 size    56070
 
 if {${name} ne ${subport}} {
-    depends_build-append \
-                        port:py${python.version}-setuptools
+    depends_lib-append \
+                    port:py${python.version}-setuptools
 
     livecheck.type  none
 } else {

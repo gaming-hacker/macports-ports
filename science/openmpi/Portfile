@@ -1,10 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           select 1.0
 PortGroup           compilers 1.0
 PortGroup           muniversal 1.0
+
 name                openmpi
 version             3.0.0
 set branch          [join [lrange [split ${version} .] 0 1] .]
@@ -27,7 +28,7 @@ master_sites        http://www.open-mpi.org/software/${subdir} \
                     http://icl.cs.utk.edu/open-mpi/${subdir}
 
 checksums           rmd160  8f6c2e503235f2ce227dd31db4ecf810eb468d0c \
-sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
+                    sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
 use_bzip2           yes
 
 livecheck.type      regex
@@ -36,24 +37,22 @@ livecheck.regex     Open MPI v(\[0-9\.\]+) released
 
 if {[string first "-devel" $subport] > 0} {
     name                openmpi-devel
-    version             1.10.99
-    # openmpi switched to git and reset their revision number;
-    # remove this when for next release
-    set base            32546
-    set tag             g4bc08d6
-    set newrev          4366
-    revision            [expr {$base + $newrev + 2}]
-    distname            openmpi-dev-${newrev}-${tag}
+    version             3.0.99
+    revision            0
 
-    master_sites        http://www.open-mpi.org/nightly/master \
-                        http://www.open-mpi.de/nightly/master
+    set base            201803180305
+    set tag             ecbdf17
+    distname            openmpi-v${branch}.x-${base}-${tag}
 
-    checksums           rmd160  4e7144ec561ebef4c6e230459d082f960b7784e0 \
-sha256  33ecc0fbf17048c873db23c52a8a7ccb5209ab45782fe1426db0611271431f9c
+    master_sites        http://www.open-mpi.org/nightly/v${branch}.x \
+                        http://www.open-mpi.de/nightly/v${branch}.x
 
-    livecheck.version   ${newrev}-${tag}
+    checksums           rmd160  73a09f4df8017a63c53ca7996c1575c9f0e461eb \
+                        sha256  ea03b0078611046d10cb7b6154d3bed0c86c5e5a6c9eb582f2dd1fd34f19b3dd
+
+    livecheck.version   ${base}
     livecheck.url       [lindex ${master_sites} 0]
-    livecheck.regex     <strong>master-(\[0-9\]+-\[0-9a-f\]+)
+    livecheck.regex     nightly/open-mpi/v${branch}.x/openmpi-v${branch}.x-(\[0-9\]+-\[0-9a-f\]+)
 }
 
 # As OpenMPI creates compiler wrappers, there are lots of
@@ -62,11 +61,23 @@ sha256  33ecc0fbf17048c873db23c52a8a7ccb5209ab45782fe1426db0611271431f9c
 # Sup-ports names and corresponding configure.compiler value
 array set clist {
     clang   {clang}
+    clang33 {macports-clang-3.3}
+    clang34 {macports-clang-3.4}
+    clang37 {macports-clang-3.7}
+    clang39 {macports-clang-3.9}
+    clang40 {macports-clang-4.0}
     clang50 {macports-clang-5.0}
     clang60 {macports-clang-6.0}
+    gcc43   {macports-gcc-4.3}
+    gcc44   {macports-gcc-4.4}
+    gcc45   {macports-gcc-4.5}
+    gcc46   {macports-gcc-4.6}
+    gcc47   {macports-gcc-4.7}
+    gcc48   {macports-gcc-4.8}
+    gcc49   {macports-gcc-4.9}
+    gcc5    {macports-gcc-5}
+    gcc6    {macports-gcc-6}
     gcc7    {macports-gcc-7}
-    gcc8    {macports-gcc-8}
-    llvm    {llvm-gcc-4.2}
 }
 
 foreach key [array name clist] {
@@ -183,19 +194,11 @@ if {${subport} != ${name}} {
             Stub : fortran always enabled for gcc-based version
         } {}
         default_variants-append     +fortran
-    } elseif { [string first dragon $cname] == 0 } {
-        configure.args-delete   --disable-mpi-fortran
-        configure.args-append   --enable-mpi-fortran
-        select.file             ${filespath}/${name}-${cname}-fortran
-        variant fortran description {
-            Stub : fortran always enabled for dragonegg-based version
-        } {}
-        default_variants-append     +fortran
     } else {
         append long_description " (AND THE FORTRAN COMPILER SELECTED BY THE VARIANT, IF ANY)"
 
         compilers.choose   fc
-        compilers.setup     default_fortran
+        compilers.setup    default_fortran
 
         if {[fortran_variant_isset]} {
             configure.args-delete   --disable-mpi-fortran

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 #
 # This portgroup defines standard settings when using Qt5.
 #
@@ -7,7 +7,12 @@
 
 global available_qt_versions
 array set available_qt_versions {
-    qt5  {qt5-qtbase  5.10}
+    qt5  {qt5-qtbase  5.11}
+    qt59 {qt59-qtbase 5.9}
+    qt58 {qt58-qtbase 5.8}
+    qt57 {qt57-qtbase 5.7}
+    qt56 {qt56-qtbase 5.6}
+    qt55 {qt55-qtbase 5.5}
 }
 #qt5-kde {qt5-kde 5.8}
 
@@ -19,7 +24,90 @@ array set available_qt_versions {
 proc qt5.get_default_name {} {
     global os.major
 
-    if { ${os.major} == 16 } {
+    # see https://doc.qt.io/qt-5/supported-platforms-and-configurations.html
+    # for older versions, see https://web.archive.org/web/*/http://doc.qt.io/qt-5/supported-platforms-and-configurations.html
+    if { ${os.major} <= 7 } {
+        #
+        # Qt 5 does not support ppc
+        # see http://doc.qt.io/qt-5/osx-requirements.html
+        #
+        return qt55
+        #
+    } elseif { ${os.major} <= 9 } {
+        #
+        # Mac OS X Tiger (10.4)
+        # Mac OS X Leopard (10.5)
+        #
+        # never supported by Qt 5
+        #
+        return qt55
+        #
+    } elseif { ${os.major} == 10 } {
+        #
+        # Mac OS X Snow Leopard (10.6)
+        #
+        #     Qt 5.3: Deployment only
+        # Qt 5.0-5.2: Occasionally tested
+        #
+        return qt55
+        #
+    } elseif { ${os.major} == 11 } {
+        #
+        # Mac OS X Lion (10.7)
+        #
+        # Qt 5.7:  Not Supported and is known not to work
+        # Qt 5.6:  Deployment only but seems to work (except QtWebEngine)
+        # Qt 5.5:  Occasionally tested
+        # Qt 5.4:  Supported
+        #
+        return qt56
+        #
+    } elseif { ${os.major} == 12 } {
+        #
+        # OS X Mountain Lion (10.8)
+        #
+        # Qt 5.8:  Not Supported
+        # Qt 5.7:  Supported (except QtWebEngine)
+        # Qt 5.6:  Supported
+        #
+        return qt57
+        #
+    } elseif { ${os.major} == 13 } {
+        #
+        # OS X Mavericks (10.9)
+        #
+        # Qt 5.9:  Not Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt58
+        #
+    } elseif { ${os.major} == 14 } {
+        #
+        # OS X Yosemite (10.10)
+        #
+        # Qt 5.10: Not Supported and QtWebEngine fails
+        # Qt 5.9:  Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt59
+        #
+    } elseif { ${os.major} == 15 } {
+        #
+        # OS X El Capitan (10.11)
+        #
+        # Qt 5.10: Supported
+        # Qt 5.9:  Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt5
+        #
+    } elseif { ${os.major} == 16 } {
         #
         # macOS Sierra (10.12)
         #
@@ -39,6 +127,9 @@ proc qt5.get_default_name {} {
         return qt5
         #
     } else {
+        #
+        # macOS ??? (???)
+        #
         return qt5
     }
 }
@@ -500,12 +591,63 @@ global qt_qmake_spec_32
 global qt_qmake_spec_64
 compiler.blacklist-append *gcc*
 
- # see https://bugreports.qt.io/browse/QTBUG-58401
-default supported_archs {"x86_64"}
+if {[vercmp ${qt5.version} 5.10]>=0} {
+    # see https://bugreports.qt.io/browse/QTBUG-58401
+    default supported_archs {"x86_64"}
+} else {
+    # no PPC support in Qt 5
+    #     see http://lists.qt-project.org/pipermail/interest/2012-December/005038.html
+    default supported_archs {"i386 x86_64"}
+}
 
-set qt_qmake_spec_32 macx-clang
-set qt_qmake_spec_64 macx-clang
-destroot.env-append INSTALL_ROOT=${destroot}
+if {[vercmp ${qt5.version} 5.9]>=0} {
+    # in version 5.9, QT changed how it handles multiple architectures
+    # see http://web.archive.org/web/20170621174843/http://doc.qt.io/qt-5/osx.html
+
+    set qt_qmake_spec_32 macx-clang
+    set qt_qmake_spec_64 macx-clang
+
+    destroot.env-append INSTALL_ROOT=${destroot}
+} else {
+    # no universal binary support in Qt 5 versions < 5.9
+    #     see http://lists.qt-project.org/pipermail/interest/2012-December/005038.html
+    #     and https://bugreports.qt.io/browse/QTBUG-24952
+    # override universal_setup found in portutil.tcl so it uses muniversal PortGroup
+    # see https://trac.macports.org/ticket/51643
+    proc universal_setup {args} {
+        if {[variant_exists universal]} {
+            ui_debug "universal variant already exists, so not adding the default one"
+        } elseif {[exists universal_variant] && ![option universal_variant]} {
+            ui_debug "universal_variant is false, so not adding the default universal variant"
+        } elseif {[exists use_xmkmf] && [option use_xmkmf]} {
+            ui_debug "using xmkmf, so not adding the default universal variant"
+        } elseif {![exists os.universal_supported] || ![option os.universal_supported]} {
+            ui_debug "OS doesn't support universal builds, so not adding the default universal variant"
+        } elseif {[llength [option supported_archs]] == 1} {
+            ui_debug "only one arch supported, so not adding the default universal variant"
+        } else {
+            ui_debug "adding universal variant via PortGroup muniversal"
+            uplevel "PortGroup muniversal 1.0"
+            uplevel "default universal_archs_supported {\"i386 x86_64\"}"
+        }
+    }
+
+    # standard destroot environment
+    pre-destroot {
+        global merger_destroot_env
+        if { ![option universal_variant] || ![variant_isset universal] } {
+            destroot.env-append \
+                INSTALL_ROOT=${destroot}
+        } else {
+            foreach arch ${configure.universal_archs} {
+                lappend merger_destroot_env($arch) INSTALL_ROOT=${workpath}/destroot-${arch}
+            }
+        }
+    }
+
+    set qt_qmake_spec_32 macx-clang-32
+    set qt_qmake_spec_64 macx-clang
+}
 
 default qt_qmake_spec {[qt5pg::get_default_spec]}
 
@@ -539,8 +681,8 @@ if {!${private_building_qt5}} {
 
         if { [variant_exists qt5kde] && [variant_isset qt5kde] } {
             if { ${qt5.base_port} ne "qt5-kde" } {
-            ui_error "qt5 PortGroup: Qt is installed but not qt5-kde, as is required by this variant"
-            ui_error "qt5 PortGroup: please run `sudo port uninstall --follow-dependents ${qt5.base_port} and try again"
+                ui_error "qt5 PortGroup: Qt is installed but not qt5-kde, as is required by this variant"
+                ui_error "qt5 PortGroup: please run `sudo port uninstall --follow-dependents ${qt5.base_port} and try again"
                 return -code error "improper Qt installed"
             }
         } else {
