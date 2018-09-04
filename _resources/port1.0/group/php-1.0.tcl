@@ -73,9 +73,7 @@ default php._bundled            {[string equal ${name} "php"]}
 
 
 proc php._set_branches {option action args} {
-    if {"set" != ${action}} {
-        return
-    }
+    if {"set" != ${action}} {  return }
 
     # Sort the values so we can use lindex 0 and end to get the min and max branches respectively.
     option ${option} [lsort -command vercmp [option ${option}]]

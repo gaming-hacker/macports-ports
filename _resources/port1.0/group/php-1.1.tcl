@@ -90,9 +90,7 @@ proc php._set_name {option action args} {
         return
     }
 
-    if {[regexp {^php\d+-} ${args}]} {
-php.branches 5.6 7.2 7.3
-    }
+    if {[regexp {^php\d+-} ${args}]} { php.branches 5.6 7.2 7.3 }
 }
 
 
@@ -115,9 +113,7 @@ default php.default_branch      {[expr {${php.latest_stable_branch} in ${php.bra
 option_proc php.default_branch  php._set_default_branch
 
 proc php._set_default_branch {option action args} {
-    if {"set" ne ${action}} {
-        return
-    }
+    if {"set" ne ${action}} { return }
 
     global name subport php.rootname
 
