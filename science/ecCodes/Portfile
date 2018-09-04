@@ -27,7 +27,7 @@ long_description \
 if [fortran_variant_isset] {
     compilers.choose    fc f77 f90
 }
-compilers.setup     -clang -gfortran -gcc44 -gcc45 -gcc46
+compilers.setup     -clang -gfortran
 
 depends_build-append \
                     bin:bison:bison \
@@ -64,9 +64,6 @@ configure.args-append \
                     -DZLIB_INCLUDE_DIR=${prefix}/include \
                     -DZLIB_LIBRARY=${prefix}/lib/libz.dylib
 
-if {[variant_isset g95]} {
-    configure.args-append   -DBUILD_SHARED_LIBS=OFF
-}
 
 # Delete the following line. See #52233
 # include( "/opt/local/bin/python2.7-config" OPTIONAL )

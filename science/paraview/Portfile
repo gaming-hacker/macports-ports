@@ -37,7 +37,7 @@ size    51418473
 
 depends_build-append    port:readline \
     port:netcdf \
-    port:qt5-sqlite-plugin port:qt5-qttools 
+    port:qt5-sqlite-plugin port:qt5-qttools
 
 patchfiles patch-incomplete-types.patch
 
@@ -78,7 +78,7 @@ pre-configure {
 
 # Some cmake tests will fail with "error: unrecognized option '-arch'" from gcc 4.6 and earlier.
 compilers.choose    fc
-mpi.setup           default -gcc44 -gcc45 -gcc46
+mpi.setup           default
 
 # no compilers.choose cc cxx because:
 # gcc6,7 C compiler fails with:

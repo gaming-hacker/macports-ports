@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           compilers 1.0
-PortGroup           active_variants 1.1 
+PortGroup           active_variants 1.1
 
 name                gildas
 version             201808b
@@ -60,7 +60,7 @@ require_active_variants gtk2 x11 quartz
 compilers.enforce_some_fortran cfitsio
 
 compilers.choose    fc
-compilers.setup     -g95 -gcc44 -gcc45 -gcc46 require_fortran
+compilers.setup     require_fortran
 configure.python    ${prefix}/bin/python2.7
 
 post-extract {
@@ -108,5 +108,5 @@ destroot {
 
     # delete broken module
     delete ${destroot}${prefix}/lib/gildas/x86_64-darwin-gfortran/python/pyclassfiller
-    
+
 }

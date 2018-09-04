@@ -26,7 +26,7 @@ sha256  173539b05a9bb0ede83b9f5d42bc499e8a802b0c59af5b2a21eaf94f4fc0e47c \
 size    49317986
 
 compilers.choose    fc cc cxx
-mpi.setup           require_fortran -g95 -clang -gfortran
+mpi.setup           require_fortran -clang -gfortran
 #-clang33 -clang34 -clang38
 # not clear if clang33 and clang34 work; clang38 gives cxx11 error as does default clang.
 # clang fails in tests, relating to pseudopotentials and XML

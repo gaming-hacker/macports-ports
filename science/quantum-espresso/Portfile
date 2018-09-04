@@ -38,7 +38,7 @@ patchfiles          \
 
 compilers.choose    cc fc
 # g95 is not compatible with OpenMP
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran
 
 configure.optflags  -O3
 

@@ -25,8 +25,7 @@ python.versions 27 36 37
 python.add_archflags    no
 universal_variant       no
 
-compilers.setup         require_fortran -clang -gcc44 -gcc45 -gcc46 \
-                        -gcc47 -gcc48 -g95 clang37
+compilers.setup         require_fortran
 
 if {${name} ne ${subport}} {
 

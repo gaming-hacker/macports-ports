@@ -34,7 +34,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 
 depends_build-append \
                     port:flex \
@@ -78,7 +78,7 @@ patchfiles          patch-CMakeLists.txt.diff
 configure.args-append   -DBOOST_ROOT=${prefix} \
                         -DCMAKE_Fortran_COMPILER=${configure.fc} \
                         -DENABLE_CAIRO=ON \
-                        -DENABLE_FORTRAN=OFF \
+                        -DENABLE_FORTRAN=ON \
                         -DENABLE_GEOTIFF=ON \
                         -DENABLE_LARGE_FILE_SUPPORT=ON \
                         -DENABLE_NETCDF=ON \

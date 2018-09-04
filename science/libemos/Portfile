@@ -23,7 +23,7 @@ long_description \
     and BUFR & CREX encoding/decoding routines.
 
 compilers.choose    fc f77 f90
-compilers.setup     -clang -g95
+compilers.setup     -clang
 cmake.out_of_source yes
 
 patchfiles          patch-libemos-dp-CMakeLists.txt.diff \
@@ -41,7 +41,7 @@ compilers.enforce_fortran \
                     port:fftw-3
 
 if {![fortran_variant_isset]} {
-    default_variants    +gcc7
+    default_variants    +gcc8
 }
 
 configure.args-append \
