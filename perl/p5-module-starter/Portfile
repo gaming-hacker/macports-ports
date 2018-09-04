@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-b asic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-b asic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -6,14 +6,14 @@ PortGroup           perl5 1.0
 perl5.branches      5.26
 perl5.setup         Module-Starter 1.75
 license             {Artistic-1 GPL}
-maintainers         {devclue.com:blair @blairc} openmaintainer
+maintainers         nomaintainer
 
 description         Module::Starter is a simple starter kit for any module
 long_description    ${description}
 
 checksums           rmd160  2b60698d9dcf628e10c7d6868add22c1953a9dd2 \
-sha256  b0c5c8d5425cd4ffe666a9cf9bd9b10f12222a737b6511ce78f99fda34ed8ce0 \
-size    61736
+                    sha256  b0c5c8d5425cd4ffe666a9cf9bd9b10f12222a737b6511ce78f99fda34ed8ce0 \
+                    size    61736
 
 platforms           darwin
 

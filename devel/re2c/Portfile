@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        skvadrik re2c 1.1
+github.setup        skvadrik re2c 1.1.1
 categories          devel
 platforms           darwin
 license             public-domain
@@ -20,9 +20,9 @@ long_description    re2c is a tool for generating C-based recognizers from \
 homepage            http://re2c.org/
 github.tarball_from releases
 
-checksums           rmd160  4037a4ea9bb01882c395b018cda75739f552da12 \
-sha256  925d1ebc65c16ba17f59e438621c145330c952a02a4bb2d333a428c56e94d8a7 \
-size    5901198
+checksums           rmd160  dafab7c2320266aa34eed66aa33f5e76074c010b \
+                    sha256  856597337ea00b24ce91f549f79e6eece1b92ba5f8b63292cad66c14ac7451cf \
+                    size    5907416
 
 configure.args      --disable-silent-rules
 

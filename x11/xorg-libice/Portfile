@@ -3,6 +3,7 @@ PortSystem	1.0
 
 name              xorg-libice
 version           1.0.9
+revision          1
 categories        x11 devel
 license           X11
 maintainers       {jeremyhu @jeremyhu} openmaintainer
@@ -24,7 +25,7 @@ sha256  8f7032f2c1c64352b5423f6b48a8ebdc339cc63064af34d66a6c9aa79759e202
 depends_build     port:pkgconfig \
                   port:xorg-xtrans
 
-depends_lib       port:xorg-xproto
+depends_lib       port:xorg-xorgproto
 
 configure.args \
 	--without-xmlto \

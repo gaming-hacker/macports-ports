@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-py2app
-version             0.14
+version             0.16
 categories-append   devel
 license             {MIT PSF}
 maintainers         {jmr @jmroot} openmaintainer
@@ -20,11 +20,10 @@ homepage            https://wiki.python.org/moin/MacPython/py2app
 master_sites        pypi:p/py2app/
 distname            py2app-${version}
 
-checksums           md5 8fa1acfb3e3c2fbf9a396ae5b1f45869 \
-rmd160 be46a56dd572460a85ddc1b96d2ecc00d319e6f3 \
-sha256 4dadf15d078a1748acba483c1abbb69a144a059e0c335a5e2a17b070d4cc938a
+checksums           rmd160 3e77d8f429f2ffef0320a49bc0981463ebb46d51 \
+                    sha256 536f3c0bf4045b8d0fc32fcfbb57fb0b34fb56e2f243afe3f65164f83352656b
 
-python.versions 27 36 37
+python.versions     27 33 34 35 36 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-macholib
@@ -32,7 +31,7 @@ if {$subport ne $name} {
     post-destroot {
         xinstall -m 755 -d ${destroot}${prefix}/share/doc/${subport} \
         ${destroot}${prefix}/share/examples/${subport}
-        xinstall -m 644 -W ${worksrcpath} LICENSE.txt README.txt \
+        xinstall -m 644 -W ${worksrcpath} LICENSE.txt README.rst \
         ${destroot}${prefix}/share/doc/${subport}
         file copy {*}[glob ${worksrcpath}/examples/*] \
         ${destroot}${prefix}/share/examples/${subport}

@@ -4,7 +4,7 @@ PortSystem          1.0
 
 name                fonttosfnt
 version             1.0.5
-revision            1
+revision            2
 categories          x11 graphics
 maintainers         {jeremyhu @jeremyhu} openmaintainer
 license             X11
@@ -24,7 +24,7 @@ sha256  c80a5ff516aa06da2e90df044b8e28715f7d9e451feac8030951d9ff828d8503 \
 size    141446
 
 depends_build       port:pkgconfig \
-                    port:xorg-xproto
+                    port:xorg-xorgproto
 
 depends_lib         port:xorg-libfontenc port:freetype
 
