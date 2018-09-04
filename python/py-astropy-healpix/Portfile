@@ -20,9 +20,11 @@ sha256  79cbc8c27f65603e8d365d339530b20fa48941b7c37b69774f5afa9251daf9b0
 if {${name} ne ${subport}} {
     depends_lib-append \
                     port:py${python.version}-astropy \
+                    port:py${python.version}-cython \
                     port:py${python.version}-numpy
 
     depends_build-append \
+                    port:py${python.version}-astropy-helpers \
                     port:py${python.version}-setuptools
 
     livecheck.type  none
