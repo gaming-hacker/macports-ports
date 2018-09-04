@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -15,8 +15,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  5dc2a1539abdec339026139882f975e29b5161a8 \
-                    sha256  ea7a069dcd05cfb86b533e44cab842a8657c95a86052c3bbb00c45013617216a \
-                    size    183202
+sha256  ea7a069dcd05cfb86b533e44cab842a8657c95a86052c3bbb00c45013617216a \
+size    183202
 
 if {${perl5.major} != ""} {
 # Sereal is loaded automatically if available

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,11 +25,11 @@ homepage            https://pypi.python.org/pypi/${python.rootname}/
 master_sites        pypi:t/${python.rootname}
 distname            ${python.rootname}-${version}
 checksums           rmd160  104c60a95f09e7ebc036e2426184af97e67f320d \
-                    sha256  4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d \
-                    size    71799
+sha256  4027c5f6127a6267a435201981ba156de91ad0d1d98e9ddc2aa173453453492d \
+size    71799
 
 # do not add subports for python 3.5 and later; module is in stdlib.
-python.versions     27 34
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

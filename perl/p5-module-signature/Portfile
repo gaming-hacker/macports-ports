@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -14,8 +14,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  c5eb3ded80b2fff32ffa2e0319431780bcca9232 \
-                    sha256  a2284c7599776305cc213f4514ea101277a28abe06b03e8a0c5bdfeb06d86833 \
-                    size    82117
+sha256  a2284c7599776305cc213f4514ea101277a28abe06b03e8a0c5bdfeb06d86833 \
+size    82117
 
 variant gnupg1 description {Use old gnupg v1 rather than default gnupg v2} {}
 

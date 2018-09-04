@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 PortGroup          python 1.0
@@ -21,10 +21,10 @@ homepage           http://www.dnspython.org/
 master_sites       ${homepage}kits/${version}
 distname           dnspython-${version}
 
-python.versions    27 34 35 36 37
+python.versions 27 36 37
 
 checksums          rmd160 b3bf88a627850d29b5da6e67d5f2e9643283bc65 \
-                   sha256 11598ae5735746e63921f8eebdfdee4a2e7d0ba842ebd57ba02682d4aed8244b
+sha256 11598ae5735746e63921f8eebdfdee4a2e7d0ba842ebd57ba02682d4aed8244b
 
 if {${name} ne ${subport}} {
   depends_build-append port:py${python.version}-setuptools

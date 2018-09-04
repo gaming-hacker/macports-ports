@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ long_description    QtPy (pronounced 'cutie pie') is a small abstraction layer \
                     QtGui and QtWidgets).
 
 checksums           rmd160  ca11f9509244a1593431611f13c6ab3077a0cf97 \
-                    sha256  707f23e1636af51fb0d3a2049538bf55590038f29070eddee0516461c2de06f2 \
-                    size    31714
+sha256  707f23e1636af51fb0d3a2049538bf55590038f29070eddee0516461c2de06f2 \
+size    31714
 
-python.versions     27 34 35 36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     livecheck.type  none

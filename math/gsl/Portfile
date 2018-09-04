@@ -26,8 +26,8 @@ sha256  4d46d07b946e7b31c19bbf33dda6204d7bedc2f5462a1bae1d4013426cd1ce9b
 =======
 
 checksums           rmd160  2ec06d425adf5992191ff1c0dd992f3bae3af064 \
-                    sha256  0460ad7c2542caaddc6729762952d345374784100223995eb14d614861f2258d \
-                    size    7303881
+sha256  0460ad7c2542caaddc6729762952d345374784100223995eb14d614861f2258d \
+size    7303881
 
 platforms           darwin
 

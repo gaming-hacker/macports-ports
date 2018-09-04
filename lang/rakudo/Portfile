@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ homepage            http://rakudo.org/
 # master_sites      http://rakudo.org/downloads/rakudo/
 
 checksums           rmd160  4d5e278d45eda07a5067324e27b9ebfa7edc1ca9 \
-                    sha256  d1faad9abb720a10c74e5674d80a15c9fd90639e6aa2be5c1a679b2eccf46ced \
-                    size    1620984
+sha256  d1faad9abb720a10c74e5674d80a15c9fd90639e6aa2be5c1a679b2eccf46ced \
+size    1620984
 
 depends_build       port:perl5
 

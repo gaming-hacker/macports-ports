@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -31,8 +31,8 @@ distname            xcircuit-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  adf5b80bf5fa129fe89c0c32696992208e206e74 \
-                    sha256  eaa6c15ec18067f6628b50835a3169530b798396d02a0ac9c0f24c4b33f3a539 \
-                    size    1612833
+sha256  eaa6c15ec18067f6628b50835a3169530b798396d02a0ac9c0f24c4b33f3a539 \
+size    1612833
 
 depends_build       port:autoconf \
                     port:automake \

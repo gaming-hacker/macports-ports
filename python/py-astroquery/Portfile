@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ license             BSD
 
 homepage            https://astroquery.readthedocs.io/
 checksums           rmd160  79dde9110e38e90ed5af3557431afdd511864a7d \
-                    sha256  043c6862026348873729e559a9eb2c53cedb3d86a629b3bc7e674366f3e64606 \
-                    size    3102926
+sha256  043c6862026348873729e559a9eb2c53cedb3d86a629b3bc7e674366f3e64606 \
+size    3102926
 
-python.versions     27 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 

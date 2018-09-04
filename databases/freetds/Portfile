@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                freetds
 epoch               1
 version             1.00.97
 checksums           rmd160  c64a221033695271ab52848cd08a6387be456ef9 \
-                    sha256  0d030d0aa3aafca1c018395e14a4fff2f6663732dfb2620c991492356048ab1c \
-                    size    2153152
+sha256  0d030d0aa3aafca1c018395e14a4fff2f6663732dfb2620c991492356048ab1c \
+size    2153152
 
 categories          databases
 platforms           darwin

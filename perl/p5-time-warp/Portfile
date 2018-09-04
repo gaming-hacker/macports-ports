@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -12,7 +12,7 @@ description         control over the flow of time
 long_description    ${description}
 
 checksums           rmd160  98cae38335f99526a682b24953b3cdb1347fd623 \
-                    sha256  1eda73bf0c3ec3b0a124ede31bddc45573f5fd09a39f8d85a6fe941336c07c3d \
-                    size    4534
+sha256  1eda73bf0c3ec3b0a124ede31bddc45573f5fd09a39f8d85a6fe941336c07c3d \
+size    4534
 
 universal_variant   no

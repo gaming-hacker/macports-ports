@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -34,13 +34,13 @@ distfiles               ${distname}${extract.suffix}:source \
                         ${docdistname}${extract.suffix}:docs
 
 checksums               ${distname}${extract.suffix} \
-                        rmd160  c01d82acf7062b07146f61f43a8d17d5805b9471 \
-                        sha256  db8d87ea720ea9d5edc5388fc7a0497bb11ba9fe972245e0f7f4c7e8b1e1e84d \
-                        size    1926385 \
+rmd160  c01d82acf7062b07146f61f43a8d17d5805b9471 \
+sha256  db8d87ea720ea9d5edc5388fc7a0497bb11ba9fe972245e0f7f4c7e8b1e1e84d \
+size    1926385 \
                         ${docdistname}${extract.suffix} \
-                        rmd160  44d57b5e54ad1792565b36f9324944035beabb8b \
-                        sha256  aa2f835ef8f50072630ddc48b9eb65f1f456014ffa3b5adddcb6bf390a3c5828 \
-                        size    2130292
+rmd160  44d57b5e54ad1792565b36f9324944035beabb8b \
+sha256  aa2f835ef8f50072630ddc48b9eb65f1f456014ffa3b5adddcb6bf390a3c5828 \
+size    2130292
 
 patchfiles \
     freetype-config-no-pkg-config.patch \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        ${homepage}dist/ \
                     ${homepage}dist/OLD/
 
 checksums           rmd160  eadd93cb795ecbbf878e62662952b59f25a9bcbd \
-                    sha256  9dcf0f61f663b4051d4b37a57f2da9d2800182b8c19205edde616fc9d935dc41 \
-                    size    3189660
+sha256  9dcf0f61f663b4051d4b37a57f2da9d2800182b8c19205edde616fc9d935dc41 \
+size    3189660
 
 patchfiles          patch-sudoers.in.diff
 

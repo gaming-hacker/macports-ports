@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -31,8 +31,8 @@ use_parallel_build  no
 distfiles           ${name}_${version}${extract.suffix}
 
 checksums           rmd160  ceb7378dfc435cdd653526a31fa1fa307bd64ab3 \
-                    sha256  86fe671879725863acecc207bdb86c4428635cd1a20d6043618864cf4c366113 \
-                    size    3723069
+sha256  86fe671879725863acecc207bdb86c4428635cd1a20d6043618864cf4c366113 \
+size    3723069
 
 depends_build-append \
                     port:pkgconfig

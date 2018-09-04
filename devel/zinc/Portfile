@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       github 1.0
 
 github.setup    typesafehub zinc 0.3.15 v
@@ -19,8 +21,8 @@ build           {}
 
 extract.suffix  .tgz
 checksums       rmd160  0b17dc840a84705bbc05be467d406f6a52d48ac7 \
-                sha256  5ec4df3fa2cbb271d65a5b478c940a9da6ef4902aa8c9d41a76dd253e3334ca7 \
-                size    24682167
+sha256  5ec4df3fa2cbb271d65a5b478c940a9da6ef4902aa8c9d41a76dd253e3334ca7 \
+size    24682167
 
 destroot {
     set sharedir ${destroot}${prefix}/share

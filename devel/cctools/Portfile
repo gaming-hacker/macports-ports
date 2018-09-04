@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -24,11 +24,11 @@ master_sites            http://opensource.apple.com/tarballs/${name} \
 distfiles               ld64-${ld64_version}.tar.gz ${name}-${version}.tar.gz
 
 checksums               ld64-274.1.tar.gz \
-                        rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
-                        sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
+rmd160  c86030f9d6d44a6a53d262952d9508b5eff46353 \
+sha256  6cbe886717de833789fa562ec4889ebf9136ae5f7573d17d39836d3f5755b7ab \
                         cctools-895.tar.gz \
-                        rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
-                        sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
+rmd160  e46dd79bd87c727f1326c569d0b8e9eadcc57495 \
+sha256  ce66034fa35117f9ae76bbb7dd72d8068c405778fa42e877e8a13237a10c5cb7
 
 patchfiles              cctools-829-lto.patch \
                         PR-37520.patch \

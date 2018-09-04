@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,12 +22,12 @@ long_description    Meson  is  a  build system designed to optimize programmer p
                     as user friendly as possible.
 
 checksums           rmd160  61f9437b9c405be9d6dd4fe53d2ad5657fa14909 \
-                    sha256  92d8afd921751261e36151643464efd3394162f69efbe8cd53e0a66b1cf395eb \
-                    size    1267981
+sha256  92d8afd921751261e36151643464efd3394162f69efbe8cd53e0a66b1cf395eb \
+size    1267981
 
 # as of verison 0.45.0,requires python 3.5 or better
 
-python.versions         37
+python.versions 27 36 37
 python.default_version  37
 python.link_binaries    no
 

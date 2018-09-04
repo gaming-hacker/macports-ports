@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -30,8 +30,8 @@ distname            scribus-${version}
 use_7z              yes
 
 checksums           rmd160  64af5755f7a2cc4bc7da157555cce9c5b3186732 \
-                    sha256  c756037464cfc1f760ddad0cce5cc323d4091e65cd119dd1d69ad16be32b7d6c \
-                    size    53538127
+sha256  c756037464cfc1f760ddad0cce5cc323d4091e65cd119dd1d69ad16be32b7d6c \
+size    53538127
 
 # Builds forever with llvm-gcc-4.2. https://trac.macports.org/ticket/30835
 compiler.blacklist-append   llvm-gcc-4.2
