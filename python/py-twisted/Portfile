@@ -5,7 +5,7 @@ PortGroup  python 1.0
 
 name                py-twisted
 version             18.7.0
-#revision            0
+revision            1
 categories-append   devel net
 license             MIT
 platforms           darwin
@@ -39,6 +39,8 @@ if {${name} ne ${subport}} {
         port:py${python.version}-incremental \
         port:py${python.version}-hyperlink \
         port:py${python.version}-constantly
+    depends_run-append \
+        port:py${python.version}-hamcrest
 
     post-destroot {
         # update the plugin cache
