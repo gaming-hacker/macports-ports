@@ -1,0 +1,34 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           github 1.0
+
+name                istioctl
+
+github.setup        istio istio 1.0.1
+categories          sysutils
+platforms           darwin
+supported_archs     x86_64
+license             Apache-2
+
+maintainers         {vmware.com:nnikolay} openmaintainer
+
+description         Istion configuration utility
+long_description    Create, list, modify, and delete configuration \
+                    resources in the Istio system.
+
+github.tarball_from releases
+distname            ${github.project}-${github.version}-osx
+worksrcdir          ${github.project}-${github.version}
+checksums           rmd160  32c00715a25292ee902abee774290767d9cfb9de \
+                    sha256  777fc7fec4d8e28fc7328a5ae375e2052248ae98c5af1d1592f4715c21571199 \
+                    size    14758080
+
+use_configure       no
+
+build {
+}
+
+destroot {
+    xinstall ${distpath}/${distfiles} ${destroot}${prefix}/bin/istioctl
+}
