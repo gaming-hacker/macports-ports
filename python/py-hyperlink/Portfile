@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ description         A pure-Python implementation of immutable URLs
 long_description    Hyperlink is a pure-Python package and requires nothing but Python.
 
 checksums           rmd160  37d28a4e6010402c81a7410f1bc71d0108f415c8 \
-                    sha256  ae22e87975614b3f5bba1703ea9a135b246d803db98462096ef5fa30d005b98e \
-                    size    99973
+sha256  ae22e87975614b3f5bba1703ea9a135b246d803db98462096ef5fa30d005b98e \
+size    99973
 
-python.versions 27 34 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
 

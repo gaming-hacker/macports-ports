@@ -13,7 +13,7 @@ license             MIT
 <<<<<<< HEAD
 python.versions 27 36 37
 =======
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 >>>>>>> dab9cd7a5802079fb2cb303fd5a889c6db7ec9a4
 
 maintainers         {stromnov @stromnov} openmaintainer
