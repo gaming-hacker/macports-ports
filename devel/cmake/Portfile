@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -39,8 +39,8 @@ if {${subport} eq ${name}} {
 
     version         ${branch}.1
     checksums       rmd160 f413aa86873dc420884a251d40d63aca488e2b8a \
-sha256 c53d5c2ce81d7a957ee83e3e635c8cda5dfe20c9d501a4828ee28e1615e57ab2 \
-size   8090272
+                    sha256 c53d5c2ce81d7a957ee83e3e635c8cda5dfe20c9d501a4828ee28e1615e57ab2 \
+                    size   8090272
 
     master_sites    ${homepage}/files/v${branch}/
     conflicts       cmake-devel
@@ -64,11 +64,11 @@ size   8090272
 
     # devel
 
-    version         20180825
-    set commit      a175ade62da2c6fc7645fe6c8e4b9050091f02f2
-    checksums       rmd160 10d73f38afd127c5d2ab7701dc7054f63b31eed1 \
-sha256 ce7c456801bd76203c0a32283e9034a451327afb83415708d6bd8558bea6daa6 \
-size   6372225
+    version         20180905
+    set commit      b0f769ad2da5162f7f65e13061b18b4538f06d9a
+    checksums       rmd160 7ae67ec27a4b9c430cf3c0be532955fde9d3955d \
+                    sha256 02279ada372ed1fe71523f69ba44e1f8990a22adcbae5c396d06bcfa48a5bac0 \
+                    size   6439877
 
     use_bzip2       yes
     master_sites    https://gitlab.kitware.com/cmake/cmake/repository/archive${extract.suffix}?ref=${commit}&
@@ -91,7 +91,7 @@ size   6372225
         patch-Source_Modules_FindLibUV.cmake.devel.diff
 
     livecheck.type  regex
-    livecheck.regex /cmake/cmake/commit/(\[0-9a-g\]+)
+    livecheck.regex data-clipboard-text=\"(\[0-9a-g\]+)\"
     livecheck.version ${commit}
     livecheck.url   https://gitlab.kitware.com/cmake/cmake/tree/master
 

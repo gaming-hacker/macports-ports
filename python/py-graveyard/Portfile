@@ -306,6 +306,7 @@ py-pyfsevents           0.2b1_1     26
 py-pygeocoder           1.1.4_1     26
 py-pyglet               1.2.4_1     26
 py-pygments             2.2.0_2     26 33
+py-pygmsh               4.3.6       34
 py-pygooglechart        0.4.0_1     26
 py-pygraphviz           1.1_1       26
 py-pygraph-core         1.8.0_1     26
@@ -360,6 +361,7 @@ py-rabbyt               0.8.3_1     26
 py-raven                5.32.0_1    33
 py-rdflib               4.2.2_1     26 33 34
 py-redis                2.10.6_1    26 33
+py-reproject            0.4         34
 py-requests             2.16.5_1    26
 py-requests-unixsocket  0.1.5_1     26
 py-restkit              4.2.2_1     26
