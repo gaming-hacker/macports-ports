@@ -5,6 +5,7 @@ PortGroup           python 1.0
 
 name                borgbackup
 version             1.1.7
+revision            1
 categories          sysutils
 platforms           darwin
 license             BSD
@@ -68,6 +69,10 @@ post-destroot {
     xinstall -d ${destroot}${zsh_compl_path}
     xinstall -m 0644 ${worksrcpath}/scripts/shell_completions/zsh/_borg \
         ${destroot}${zsh_compl_path}
+}
+
+variant fuse description {FUSE support} {
+    depends_lib-append      port:py${python.version}-llfuse
 }
 
 livecheck.type      pypi
