@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 
 name                istioctl
 
-github.setup        istio istio 1.0.1
+github.setup        istio istio 1.0.2
 categories          sysutils
 platforms           darwin
 supported_archs     x86_64
@@ -20,9 +20,9 @@ long_description    Create, list, modify, and delete configuration \
 github.tarball_from releases
 distname            ${github.project}-${github.version}-osx
 worksrcdir          ${github.project}-${github.version}
-checksums           rmd160  32c00715a25292ee902abee774290767d9cfb9de \
-sha256  777fc7fec4d8e28fc7328a5ae375e2052248ae98c5af1d1592f4715c21571199 \
-size    14758080
+checksums           rmd160  be74ba1082e1dab889b745463ee26d2f4fe62b06 \
+                    sha256  bbe709c37ea97a0d623e19547ece302fdf30527a628bda4a5731adc7b011dbce \
+                    size    14759446
 
 use_configure       no
 
@@ -30,5 +30,5 @@ build {
 }
 
 destroot {
-    xinstall ${distpath}/${distfiles} ${destroot}${prefix}/bin/istioctl
+    xinstall ${worksrcpath}/bin/istioctl ${destroot}${prefix}/bin/istioctl
 }
