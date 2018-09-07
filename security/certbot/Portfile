@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,10 +15,10 @@ platforms           darwin
 homepage            https://certbot.eff.org/
 
 checksums           rmd160  6d082a82feeb5cfbce8a50e3fddcb41e2e2a005b \
-                    sha256  83f6c5df460ba15c17db8519cd215c2d1cd7e2863913e629b918268f765d3226 \
-                    size    1240408
+sha256  83f6c5df460ba15c17db8519cd215c2d1cd7e2863913e629b918268f765d3226 \
+size    1240408
 
-python.versions     27 36 37
+python.versions 27 36 37
 
 depends_lib         port:py${python.version}-acme \
                     port:py${python.version}-configargparse \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        ${homepage}public/ \
                     http://mirror.sobukus.de/files/src/live555/
 
 checksums           rmd160  b8549697c7910de3b1985a2261f9acd811cdd74d \
-                    sha256  8aded57f30bcb2f8880203a4a787c3f88d22a0936aa2b877cdcbd13db7e3b3c8 \
-                    size    634169
+sha256  8aded57f30bcb2f8880203a4a787c3f88d22a0936aa2b877cdcbd13db7e3b3c8 \
+size    634169
 
 distname            live.${version}
 worksrcdir          live
