@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -20,8 +20,8 @@ homepage            http://pari.math.u-bordeaux.fr/
 master_sites        ${homepage}pub/pari/unix/
 
 checksums           rmd160  52f78622efe6079254a9b8a916239f41bf478fad \
-                    sha256  3835caccaa3e0c64764521032d89efeb8773cce841f6655fec6d58e790f4c9a1 \
-                    size    4419112
+sha256  3835caccaa3e0c64764521032d89efeb8773cce841f6655fec6d58e790f4c9a1 \
+size    4419112
 
 depends_lib         port:gmp \
                     port:ncurses \

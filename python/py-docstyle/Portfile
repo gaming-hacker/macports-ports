@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,10 +20,10 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  c00ec73c5b83c9c7879df2c13208ab0a6a9fc409 \
-                    sha256  b1e02323f8c73923d7738179c1d2fe3497693a3daa71fae8b5aed7fc80d3f9fa \
-                    size    55773
+sha256  b1e02323f8c73923d7738179c1d2fe3497693a3daa71fae8b5aed7fc80d3f9fa \
+size    55773
 
-python.versions     27 35 36 37
+python.versions 27 36 37
 
 if {${subport} ne ${name}} {
     depends_lib-append \
