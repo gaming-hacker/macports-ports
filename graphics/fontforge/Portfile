@@ -8,7 +8,6 @@ github.setup        fontforge fontforge 20170731
 github.tarball_from releases
 use_xz              yes
 distname            ${name}-dist-${version}
-#revision            1
 categories          graphics fonts
 platforms           darwin
 maintainers         nomaintainer
@@ -50,11 +49,13 @@ depends_lib         port:freetype \
                     port:zlib \
                     port:libspiro \
                     port:pango \
-                    port:cairo
+                    port:cairo \
+                    port:potrace
 
 configure.args      --mandir=${prefix}/share/man \
                     --disable-python-scripting \
                     --disable-python-extension \
+                    --without-libzmq \
                     --without-x
 
 configure.ldflags-append \
@@ -67,6 +68,32 @@ variant python27 description {Enable Python support (Python 2.7)} {
     configure.python        ${prefix}/bin/python2.7
     configure.pkg_config_path \
                             "${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig"
+}
+
+variant gui description {Enable GUI support} {
+    depends_lib-append      port:xorg-libXi
+    configure.args-replace  --without-x --with-x
+}
+
+post-destroot {
+    delete ${destroot}${prefix}/share/fontforge/osx/FontForge.app
+}
+
+notes "
+*******
+*******   macOS app bundles are available here:
+*******   https://dl.bintray.com/fontforge/fontforge/
+*******
+"
+
+if {[variant_isset gui]} {
+    notes-append "
+*******
+*******   To make the GUI work, you have to open a font when launching
+*******   fontforge for the first time
+*******   e.g.: ${prefix}/bin/fontforge some-font-file.otf
+*******
+"
 }
 
 default_variants    +python27
