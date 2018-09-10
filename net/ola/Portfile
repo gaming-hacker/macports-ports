@@ -8,10 +8,7 @@ revision            1
 categories          net comms
 platforms           darwin
 license             GPL-2+ LGPL-2.1+
-maintainers         {gmail.com:nomis52 @nomis52} \
-                    {p3k.org:interface @p3k} \
-                    {pjnewman.co.uk:bugs @peternewman} \
-                    openmaintainer
+maintainers         nomaintainer
 
 description         An open framework for DMX512 lighting control
 

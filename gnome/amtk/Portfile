@@ -14,8 +14,7 @@ long_description    ${description} Amtk is an acronym for Actions, Menus \
                     based on GAction. It is suitable for both a traditional UI \
                     or a modern UI with a GtkHeaderBar.
 
-# {devans @dbevans} -- feel free to add yourself if you wish
-maintainers         {kencu @kencu} openmaintainer
+maintainers         {kencu @kencu} {devans @dbevans} openmaintainer
 categories          gnome
 platforms           darwin
 homepage            https://gitlab.gnome.org/GNOME/${name}
@@ -29,23 +28,12 @@ size    368524
 
 depends_build       port:pkgconfig
 
-depends_lib-append  port:gtk3
+depends_lib         port:gtk3
 
 gobject_introspection yes
 
 configure.args-append \
                     --disable-dependency-tracking \
                     --disable-silent-rules
-
-# gobject-introspection uses g-ir-scanner, which uses $CC from env
-if {[variant_isset universal]} {
-    foreach arch ${configure.universal_archs} {
-        lappend merger_build_env(${arch})  CC='${configure.cc} -arch ${arch}'
-        lappend merger_destroot_env(${arch})  CC='${configure.cc} -arch ${arch}'
-    }
-} else {
-    build.env-append       CC="${configure.cc} ${configure.cc_archflags}"
-    destroot.env-append    CC="${configure.cc} ${configure.cc_archflags}"
-}
 
 livecheck.type      gnome

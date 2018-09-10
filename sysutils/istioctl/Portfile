@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,22 +13,32 @@ license             Apache-2
 
 maintainers         {vmware.com:nnikolay} openmaintainer
 
-description         Istion configuration utility
+description         Istio configuration utility
 long_description    Create, list, modify, and delete configuration \
                     resources in the Istio system.
 
-github.tarball_from releases
-distname            ${github.project}-${github.version}-osx
-worksrcdir          ${github.project}-${github.version}
-checksums           rmd160  be74ba1082e1dab889b745463ee26d2f4fe62b06 \
-sha256  bbe709c37ea97a0d623e19547ece302fdf30527a628bda4a5731adc7b011dbce \
-size    14759446
+set goproj          istio.io/${github.project}
 
+depends_build       port:go
 use_configure       no
+worksrcdir          src/${goproj}
 
-build {
+checksums           rmd160  b6c61241b682a1b7f5676de60f3a4387bc057967 \
+                    sha256  12dc01cff8ebb335a08c62c9da95f9c71364d9dfab9c0c0baa5245f17202b057 \
+                    size    18824606
+
+post-extract {
+    xinstall -d ${workpath}/src/istio.io
+    move ${workpath}/${github.project}-${github.version} \
+        ${worksrcpath}
 }
 
+build {
+    system -W ${worksrcpath} "GOPATH=${workpath} \
+      TAG=${github.version} make istioctl"
+}
+
+
 destroot {
-    xinstall ${worksrcpath}/bin/istioctl ${destroot}${prefix}/bin/istioctl
+    xinstall ${workpath}/out/darwin_amd64/release/istioctl ${destroot}${prefix}/bin/istioctl
 }
