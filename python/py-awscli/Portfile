@@ -53,6 +53,7 @@ if {${name} ne ${subport}} {
              ${worksrcpath}/${subport}
     }
 
+<<<<<<< HEAD
     variant bash_completion {
         post-destroot {
             set bash_compl_path ${prefix}/etc/bash_completion.d
@@ -60,6 +61,14 @@ if {${name} ne ${subport}} {
             xinstall -m 0644 ${worksrcpath}/bin/aws_bash_completer \
                 ${destroot}${bash_compl_path}/aws_bash_completer
         }
+=======
+    post-destroot {
+        # bash completion
+        set bash_compl_path ${prefix}/etc/bash_completion.d
+        xinstall -d ${destroot}${bash_compl_path}
+        xinstall -m 0644 ${worksrcpath}/bin/aws_bash_completer \
+            ${destroot}${bash_compl_path}/aws_bash_completer-${python.branch}
+>>>>>>> deaae00b18dc89a875b31393d671ac3ab7c89c9b
     }
 
     variant zsh_completion {
