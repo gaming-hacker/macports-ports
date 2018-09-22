@@ -23,6 +23,7 @@ checksums           rmd160  d34d4c5e987ffeda3e72edf6cc89fcef4c2629e9 \
                     size    17921685
 
 mpi.setup           default
+compilers.clear_archflags no
 
 use_parallel_build  no
 
@@ -35,6 +36,8 @@ depends_build-append \
 patchfiles-append   patch-sundials.py.diff
 # see https://bitbucket.org/petsc/petsc/commits/0425e358a93e3df180e109da13d1c846f016d85b
 patchfiles-append   patch-superlu_dist.diff
+# in serial mode, MUMPS requires Metis
+patchfiles-append   patch-mumps.py.diff
 post-patch {
     reinplace -W ${worksrcpath} "s,#!/usr/bin/env python,#!${prefix}/bin/python2.7," configure
 }
@@ -58,19 +61,6 @@ pre-configure {
     }
 
     configure.universal_args-delete --disable-dependency-tracking
-
-    if {![variant_isset universal]} {
-        # base does not quite handle Fortran flags correctly
-        if {${build_arch} eq "x86_64" || ${build_arch} eq "ppc64"} {
-            configure.fc_archflags   -m64
-            configure.f90_archflags  -m64
-            configure.fflags-append  -m64
-        } else {
-            configure.fc_archflags   -m32
-            configure.fflags-append  -m32
-            configure.f90_archflags  -m32
-        }
-    }
 }
 
 post-build {
@@ -207,11 +197,20 @@ variant superlu description {Build with SuperLU interface for a serial direct so
     configure.args-append --with-superlu-dir=${prefix}
 }
 
+if {[mpi_variant_isset]} {
 variant mumps description {Build with MUMPS interface for a parallel direct solver} requires parmetis {
     depends_lib-append    port:mumps
     configure.args-append --with-scalapack-dir=${prefix} \
                           --with-mumps-dir=${prefix}
     mpi.enforce_variant   mumps
+}
+} else {
+variant mumps description {Build with MUMPS interface for a direct solver} requires metis {
+    depends_lib-append    port:mumps
+    configure.args-append --with-mumps-dir=${prefix} \
+                          --with-mumps-serial
+    mpi.enforce_variant   mumps
+}
 }
 
 variant superlu_dist description {Build with SuperLU_DIST interface for a parallel direct solver} requires parmetis {
@@ -233,12 +232,15 @@ variant hypre description {Build with HYPRE interface for a sparse parallel solv
     mpi.enforce_variant   hypre
 }
 
-variant parmetis description {Build with ParMetis interface for parallel graph partitioning} {
-    depends_lib-append    port:metis \
-                          port:parmetis
-    configure.args-append --with-metis-dir=${prefix} \
-                          --with-parmetis-dir=${prefix}
+variant parmetis description {Build with ParMetis interface for parallel graph partitioning} requires metis {
+    depends_lib-append    port:parmetis
+    configure.args-append --with-metis-dir=${prefix}
     mpi.enforce_variant   parmetis
+}
+
+variant metis description {Build with Metis interface for graph partitioning} {
+    depends_lib-append    port:metis
+    configure.args-append --with-metis-dir=${prefix}
 }
 
 variant hdf5 description {Build with HDF5 interface for parallel file io} {
