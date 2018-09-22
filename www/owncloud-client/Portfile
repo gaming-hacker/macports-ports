@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -9,8 +9,8 @@ set build_id 10650
 name                    owncloud-client
 version                 2.5.0
 checksums               rmd160  82ef6817a9740de0c9c433b44d2eebd5cf805432 \
-                        sha256  bf982cbf9a5d7a0a66e0d5c3b949f7456a5904251b02234038367977ea4ad972 \
-                        size    16651172
+sha256  bf982cbf9a5d7a0a66e0d5c3b949f7456a5904251b02234038367977ea4ad972 \
+size    16651172
 
 categories              www aqua
 maintainers             {yan12125 @yan12125} openmaintainer

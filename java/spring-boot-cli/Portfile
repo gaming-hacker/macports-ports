@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -29,8 +29,8 @@ master_sites    https://repo.spring.io/release/org/springframework/boot/${name}/
 distname        ${name}-${version}.RELEASE-bin
 
 checksums       rmd160  50f0c1dc2d42593805ad17a861efb23e302cec1d \
-                sha256  6336b903cc21c49506a1e58544e84a5b4857dd85fae567a7c994ce43cf80947d \
-                size    9118621
+sha256  6336b903cc21c49506a1e58544e84a5b4857dd85fae567a7c994ce43cf80947d \
+size    9118621
 
 worksrcdir      spring-${version}.RELEASE
 

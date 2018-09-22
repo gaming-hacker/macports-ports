@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -6,7 +6,7 @@ PortGroup       python 1.0
 name            py-selenium
 set real_name   selenium
 version         3.14.0
-python.versions 27
+python.versions 27 36 37
 license         Apache-2
 maintainers     {dstrubbe @dstrubbe} openmaintainer
 platforms       darwin
@@ -22,8 +22,8 @@ homepage            https://code.google.com/p/selenium/
 master_sites        pypi:s/${real_name}/
 distname            ${real_name}-${version}
 checksums           rmd160  a921de170edfae132422bf74b1fa7d3d35547646 \
-                    sha256  f9ca21919b564a0a86012cd2177923e3a7f37c4a574207086e710192452a7c40 \
-                    size    848711
+sha256  f9ca21919b564a0a86012cd2177923e3a7f37c4a574207086e710192452a7c40 \
+size    848711
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

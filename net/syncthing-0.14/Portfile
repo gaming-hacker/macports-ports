@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ github.tarball_from releases
 distname            syncthing-source-v${version}
 
 checksums           rmd160  3f2a4aeb7209c852c610f2fc0ecf6b44e3fa4171 \
-                    sha256  a5cc5b98a47ffae2bae12573ce6ab1695cb459274b620e574282ff1dff37527a \
-                    size    10714641
+sha256  a5cc5b98a47ffae2bae12573ce6ab1695cb459274b620e574282ff1dff37527a \
+size    10714641
 
 worksrcdir          src/github.com/syncthing/syncthing
 extract.mkdir       yes

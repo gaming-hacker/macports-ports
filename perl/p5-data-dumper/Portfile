@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,5 +20,5 @@ long_description    Given a list of scalars or reference variables, writes \
                     original reference structure.
 
 checksums           rmd160  65bf72cfe6e50fe9dcc7aa98604b76cd778ea691 \
-                    sha256  a95a3037163817221021ac145500968be44dc155c261f4097136392c0a9fecd9 \
-                    size    110199
+sha256  a95a3037163817221021ac145500968be44dc155c261f4097136392c0a9fecd9 \
+size    110199

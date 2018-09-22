@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -6,8 +6,8 @@ name                    quickascii
 version                 1.0.5
 revision                1
 checksums               rmd160  689e3bcdeb2b8808da62d1efc14904e3158f4c98 \
-                        sha256  de23e0fbe932aa2cfd3886b1cf629eebdc5c1d34d32ac4284453191d58b5e092 \
-                        size    24338
+sha256  de23e0fbe932aa2cfd3886b1cf629eebdc5c1d34d32ac4284453191d58b5e092 \
+size    24338
 
 maintainers             {ryandesign @ryandesign} openmaintainer
 platforms               macosx

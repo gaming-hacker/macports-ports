@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -24,8 +24,8 @@ homepage            https://mosquitto.org
 master_sites        http://mosquitto.org/files/source/
 
 checksums           rmd160  c29581d6154627ecb9f8fdea3fd2851c4b72f6a4 \
-                    sha256  8557bc7ae34dfaf32a0fb56d2491b7a7f731269c88337227233013502df4d5b0 \
-                    size    430066
+sha256  8557bc7ae34dfaf32a0fb56d2491b7a7f731269c88337227233013502df4d5b0 \
+size    430066
 
 depends_lib         port:c-ares \
                     port:libwebsockets \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 
 name                zabbix3
@@ -32,9 +32,9 @@ dist_subdir         zabbix3
 conflicts           zabbix zabbix2
 
 checksums \
-    rmd160  1e2afd7a4ca348354d8c05466b9f4035af177125 \
-    sha256  7443873cc970672d3c884230d3aeb082f2d8afcc2b757506c2d684ffdd12d77e \
-    size    17476022
+rmd160  1e2afd7a4ca348354d8c05466b9f4035af177125 \
+sha256  7443873cc970672d3c884230d3aeb082f2d8afcc2b757506c2d684ffdd12d77e \
+size    17476022
 
 patchfiles          log_and_pid_locations.patch
 

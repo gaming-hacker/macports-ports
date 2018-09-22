@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        ftp://ftp.invisible-island.net/xterm/ \
                     https://invisible-mirror.net/archives/xterm/
 
 checksums           rmd160  2b2acab00d926fbc952779f40f394f7063418504 \
-                    sha256  a9b51c2c0154ad2f5f5b1d8a2348a6ebd4f845e7d277664d66604183522c0607 \
-                    size    1337426
+sha256  a9b51c2c0154ad2f5f5b1d8a2348a6ebd4f845e7d277664d66604183522c0607 \
+size    1337426
 
 extract.suffix      .tgz
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -30,8 +30,8 @@ long_description    mkcert is a simple tool for making locally-trusted \
                     certificates.
 
 checksums           rmd160  58f43d2362a1a19feb03dfaa15983616276b91da \
-                    sha256  4a7a4c364bd51cd1de0b173c4d5848587febaba2ff0cbde1949ca0c4d9aa8685 \
-                    size    374301
+sha256  4a7a4c364bd51cd1de0b173c4d5848587febaba2ff0cbde1949ca0c4d9aa8685 \
+size    374301
 
 depends_build       port:go
 use_configure       no

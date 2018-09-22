@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -25,8 +25,8 @@ master_sites        http://download.osgeo.org/geos/
 use_bzip2           yes
 
 checksums           rmd160  3e3ea84b5b7e81f7e0c483bdbe3d7ad9417e2da9 \
-                    sha256  4fbf41a792fd74293ab59e0a980e8654cd411a9d45416d66eaa12d53d1393fd7 \
-                    size    2028814
+sha256  4fbf41a792fd74293ab59e0a980e8654cd411a9d45416d66eaa12d53d1393fd7 \
+size    2028814
 
 compiler.blacklist  llvm-gcc-4.2 macports-llvm-gcc-4.2
 

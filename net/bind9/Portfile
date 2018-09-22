@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			bind9
 version			9.12.2-P2
@@ -24,10 +26,10 @@ distname		bind-${version}
 master_sites		isc:${name}/${version}
 
 checksums	md5	022fd0b03f34b359e9b79c67b1a887a8 \
-		sha1	2f18c562201b7a1288d21a2427718bacbc988eb1 \
-		rmd160	2bd96c309584b61fcc885f7fdde665b1040da7ae \
-		sha256	87027826e98bab90ead31f45ce7653cb3116ebe64ab8202a08b6b64531df693e \
-		size	9422128
+sha1	2f18c562201b7a1288d21a2427718bacbc988eb1 \
+rmd160	2bd96c309584b61fcc885f7fdde665b1040da7ae \
+sha256	87027826e98bab90ead31f45ce7653cb3116ebe64ab8202a08b6b64531df693e \
+size	9422128
 
 depends_lib		path:lib/libssl.dylib:openssl port:libxml2
 

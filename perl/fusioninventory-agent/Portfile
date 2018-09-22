@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -34,8 +34,8 @@ homepage            http://www.fusioninventory.org/overview/
 master_sites        https://github.com/fusioninventory/fusioninventory-agent/releases/download/${version}/
 
 checksums           rmd160  86b0520638fc3c1d0caf012550275432f796a402 \
-                    sha256  aa72f0ff89178e9fff3271b15e1eceeffe1cc7cb34085a9c8fe1160262949606 \
-                    size    2566207
+sha256  aa72f0ff89178e9fff3271b15e1eceeffe1cc7cb34085a9c8fe1160262949606 \
+size    2566207
 
 depends_build-append \
                     port:p${perl5.major}-http-proxy \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -30,8 +30,8 @@ if {${subport} eq ${name}} {
     version             3.17
     revision            2
     checksums           rmd160 7aeacd58b7374b392e691fc470dc9a644169ba8a \
-                        sha256 68e0dbecfb5831997f8b3d6ba48aed812eb465d8c0089420ab68f9ce4d85e77a \
-                        size   8755304
+sha256 68e0dbecfb5831997f8b3d6ba48aed812eb465d8c0089420ab68f9ce4d85e77a \
+size   8755304
 
     master_sites        savannah
 
@@ -80,8 +80,8 @@ if {${subport} eq ${name}} {
     version             20180919
     set commit          bbc75abc4f34b5bca4c0842986dffbf952d0077a
     checksums           rmd160 aee030971a9fb559f5285a61fab536ac906fdc3a \
-                        sha256 e603aefd549f2a93576f1fbc39491073c32052955258eb180d9505654c7ece3a \
-                        size   9770512
+sha256 e603aefd549f2a93576f1fbc39491073c32052955258eb180d9505654c7ece3a \
+size   9770512
 
     master_sites        http://git.savannah.gnu.org/cgit/gpsd.git/snapshot
     distname            ${name}-${commit}

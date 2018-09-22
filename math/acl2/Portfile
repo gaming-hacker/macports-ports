@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,10 +8,10 @@ version             8.1
 set shortversion    v8-1
 
 checksums           md5     94892c1a269587237cc540a1053cd13d \
-                    sha1    95b9501e89e23be9491616e52c36de48e7c46915 \
-                    rmd160  f9a4cf4b0b8e17592e391851f9b6b9a6fbc4829d \
-                    sha256  7d73f81c979ca3ec67d7c151cc344ab0a768b280f03f608770c3fad081ac80ea \
-                    size    78539182
+sha1    95b9501e89e23be9491616e52c36de48e7c46915 \
+rmd160  f9a4cf4b0b8e17592e391851f9b6b9a6fbc4829d \
+sha256  7d73f81c979ca3ec67d7c151cc344ab0a768b280f03f608770c3fad081ac80ea \
+size    78539182
 
 github.setup        acl2-devel ${name}-devel ${version}
 github.tarball_from releases

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     36 37
+python.versions 27 36 37
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -25,8 +25,8 @@ master_sites        pypi:a/aiohttp
 distname            aiohttp-${version}
 
 checksums           rmd160  895f522e176e08f39f172ef636325362dd3a1e78 \
-                    sha256  51afec6ffa50a9da4cdef188971a802beb1ca8e8edb40fa429e5e529db3475fa \
-                    size    822110
+sha256  51afec6ffa50a9da4cdef188971a802beb1ca8e8edb40fa429e5e529db3475fa \
+size    822110
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
