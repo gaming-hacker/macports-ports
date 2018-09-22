@@ -37,7 +37,8 @@ patchfiles          patch-Makefile.pre.in.diff \
                     patch-Lib-ctypes-macholib-dyld.py.diff \
                     patch-configure.diff \
                     patch-libedit.diff \
-                    enable-loadable-sqlite-extensions.patch
+                    enable-loadable-sqlite-extensions.patch \
+                    uuid-64bit.patch
 
 depends_build       port:pkgconfig
 depends_lib         port:bzip2 \

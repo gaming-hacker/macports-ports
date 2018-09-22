@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
 
-github.setup        xonsh xonsh 0.7.7
+github.setup        xonsh xonsh 0.7.9
 github.tarball_from tags
 categories          shells
 platforms           darwin
@@ -21,11 +21,11 @@ long_description    ${description} \
                     macOS, and Windows. Xonsh is meant for the daily use of \
                     experts and novices alike.
 
-checksums           rmd160  279212f66dde25ffc4f01cdaaf6fed697f5cb4d7 \
-sha256  37bac988d42cc79429b4654704a645da50e7d719072c1fb72c8cc9c47b1480b0 \
-size    1949914
+checksums           rmd160  376c32098a43b02f3175b5c72e34017abd8556a5 \
+                    sha256  a83d21e5a8cfabb5a978b72869bba64425073ba3bac75a1fc28e3674819d0aca \
+                    size    1954560
 
-python.versions 27 36 37
+python.versions     34 35 36
 
 depends_lib-append  port:py${python.version}-prompt_toolkit \
                     port:py${python.version}-pygments \

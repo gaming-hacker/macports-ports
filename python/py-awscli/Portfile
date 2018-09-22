@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ master_sites        pypi:a/awscli
 distname            awscli-${version}
 
 checksums           rmd160 41a691db4389b5fadfea6a6dfe53b19217934dc1 \
-sha256 0c471b208505ac0dbc967ba2e485fe278ca376005aa8d92909ef8f160731f4e8 \
-size   593977
+                    sha256 0c471b208505ac0dbc967ba2e485fe278ca376005aa8d92909ef8f160731f4e8 \
+                    size   593977
 
-python.versions 27 36 37
+python.versions     27 35 36
 
 if {${name} ne ${subport}} {
 
@@ -53,14 +53,12 @@ if {${name} ne ${subport}} {
              ${worksrcpath}/${subport}
     }
 
-    variant bash_completion {
     post-destroot {
         # bash completion
         set bash_compl_path ${prefix}/etc/bash_completion.d
         xinstall -d ${destroot}${bash_compl_path}
         xinstall -m 0644 ${worksrcpath}/bin/aws_bash_completer \
             ${destroot}${bash_compl_path}/aws_bash_completer-${python.branch}
-            }
     }
 
     variant zsh_completion {

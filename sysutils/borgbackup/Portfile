@@ -37,6 +37,7 @@ depends_build-append    port:py${python.version}-setuptools_scm \
                         port:py${python.version}-sphinx_rtd_theme
 depends_lib-append      path:lib/libssl.dylib:openssl \
                         port:lz4 \
+                        port:py${python.version}-llfuse \
                         port:py${python.version}-msgpack \
                         port:py${python.version}-setuptools
 

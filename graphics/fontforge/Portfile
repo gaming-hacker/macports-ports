@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    FontForge allows you to edit outline and bitmap fonts.  You 
 homepage            http://fontforge.github.io/
 
 checksums           rmd160  af473f403999937dd95715bdfd98f582d05c94cd \
-sha256  840adefbedd1717e6b70b33ad1e7f2b116678fa6a3d52d45316793b9fd808822 \
-size    13985256
+                    sha256  840adefbedd1717e6b70b33ad1e7f2b116678fa6a3d52d45316793b9fd808822 \
+                    size    13985256
 
 worksrcdir          ${name}-2.0.${version}
 
@@ -37,20 +37,20 @@ if {${os.platform} eq "darwin" && ${os.major} > 9} {
 
 depends_build       port:pkgconfig
 
-depends_lib         port:freetype \
+depends_lib         path:lib/pkgconfig/cairo.pc:cairo \
+                    port:freetype \
                     port:gettext \
                     port:giflib \
                     port:jpeg \
                     port:libiconv \
                     port:libpng \
+                    port:libspiro \
                     port:libuninameslist \
                     port:libxml2 \
+                    path:lib/pkgconfig/pango.pc:pango \
+                    port:potrace \
                     port:tiff \
-                    port:zlib \
-                    port:libspiro \
-                    port:pango \
-                    port:cairo \
-                    port:potrace
+                    port:zlib
 
 configure.args      --mandir=${prefix}/share/man \
                     --disable-python-scripting \
@@ -80,19 +80,17 @@ post-destroot {
 }
 
 notes "
-*******
-*******   macOS app bundles are available here:
-*******   https://dl.bintray.com/fontforge/fontforge/
-*******
+macOS app bundles are available here:
+
+    https://dl.bintray.com/fontforge/fontforge/
 "
 
 if {[variant_isset gui]} {
     notes-append "
-*******
-*******   To make the GUI work, you have to open a font when launching
-*******   fontforge for the first time
-*******   e.g.: ${prefix}/bin/fontforge some-font-file.otf
-*******
+To make the GUI work, you have to open a font when launching fontforge for the\
+first time, e.g.:
+
+    ${prefix}/bin/fontforge some-font-file.otf
 "
 }
 
