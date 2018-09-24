@@ -1,44 +1,51 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
 PortSystem                  1.0
+
 PortGroup                   github 1.0
 PortGroup                   cmake 1.1
+PortGroup                   cxx11 1.1
 PortGroup                   compiler_blacklist_versions 1.0
 
-github.setup                Stiffstream restinio 0.4.5.1 v.
+github.setup                Stiffstream restinio 0.4.8 v.
 categories                  www devel
 platforms                   darwin
 license                     BSD
-maintainers                 @Lord-Kamina
+maintainers                 {gmail.com:g.litenstein @Lord-Kamina} openmaintainer
+homepage                    https://stiffstream.com/en/products/restinio.html
 description                 Header-only C++14 library that gives you an embedded HTTP/Websocket server.
-depends_build-append        port:boost port:openssl port:pcre port:zlib port:doxygen
-depends_lib-append          port:asio \
-                            port:http-parser \
-                            port:libfmt
 long_description            RESTinio is a header-only C++14 library that gives you an embedded \
                             HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                             primarily for asynchronous processing of HTTP-requests.
-checksums                   rmd160  4c774beb80732e3c9addb408f845b2a40a5e2d42 \
-sha256  a36bcb45e188253f5841e455cdb95e7eb1c9e4f884c744a4a8fb74f197c903ef \
-size    429217
-homepage                    https://stiffstream.com/en/products/restinio.html
+checksums                   rmd160  15b3c324ca28abd62bb4877dd2ce315461d062aa \
+                            sha256  454352bde5f01de5f903322ed55bb39c67616312bffeb1cf7c8f1c85bee502b3 \
+                            size    459870
 
-patchfiles                  patch-CMakeLists.txt.diff \
-                            patch-Doxyfile.diff
+depends_build-append        port:boost \
+                            port:openssl \
+                            port:pcre \
+                            port:zlib \
+                            port:doxygen
+depends_lib-append          port:asio \
+                            port:http-parser \
+                            port:libfmt
+
+patchfiles                  patch-CMakeLists.txt.diff
 
 cmake.source_dir            ${worksrcpath}/dev
 cmake.build_type            Release
+cmake.generator             Unix Makefiles
 
 configure.env-append        ASIO_STANDALONE=1 \
                             ASIO_HAS_STD_CHRONO=1 \
                             ASIO_DISABLE_STD_STRING_VIEW=1 \
                             FMT_HEADER_ONLY=1 \
-                            RAPIDJSON_HAS_STDSTRING=1 \
-                            RAPIDJSON_HAS_CXX11_RVALUE_REFS=1
 configure.pre_args-delete   -DCMAKE_POLICY_DEFAULT_CMP0025=NEW
 configure.optflags-delete   -Os
-cmake.generator             Unix Makefiles
-compiler.blacklist          *gcc-3.* *gcc-4.* {*gcc-5.[0-3]} \
+compiler.blacklist-append   *gcc-3.* *gcc-4.* {*gcc-5.[0-3]} \
                             {clang < 800} macports-clang-3.4 macports-clang-3.5 macports-clang-3.6 macports-clang-3.7
+
+build.post_args-delete      VERBOSE=ON
 
 destroot {
     set components { . impl path2regex router third_party/optional-lite third_party/string-view-lite transforms utils utils/impl websocket websocket/impl }
@@ -60,5 +67,3 @@ destroot {
     xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/*.*" "${docdir}/html"]
     xinstall -m 644 {*}[glob "${worksrcpath}/dev/doc/html/search/*.*" "${docdir}/html/search"]
 }
-
-build.post_args-delete      VERBOSE=ON
