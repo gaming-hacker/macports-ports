@@ -519,6 +519,7 @@ proc trimroot {root path} {
     if {[llength $acc] == 0} {
         return ""
     } else {
-        return [file join {*}$acc]
+#         return [file join {*}$acc]
+      return [eval [subst -nobackslashes -nocommands {file join $acc}]]
     }
 }

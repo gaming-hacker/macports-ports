@@ -192,6 +192,25 @@ proc wxWidgets._set {option action args} {
         # wxWidgets-2.8 fails to build with clang
         compiler.blacklist  *clang*
 
+       pre-fetch {
+            # 10.8 (or later) -or- 10.7 with Xcode 4.4 (or later)
+            if {${os.major} >= 12 || [vercmp $xcodeversion 4.4] >= 0} {
+                ui_error "${wxWidgets.port} cannot be built on macOS >= 10.7 with Xcode >= 4.4; please use port wxWidgets-3.0 or wxgtk-2.8 instead"
+                return -code return "wxWidgets-2.8 cannot be built on macOS >= 10.7 with Xcode >= 4.4; please use port wxWidgets-3.0 or wxgtk-2.8 instead"
+            } else {
+                # 10.7
+                if {${os.major} == 11} {
+                    if {[vercmp $xcodeversion 4.3] < 0} {
+                        set sdks_dir "${developer_dir}/SDKs"
+                    } else {
+                        set sdks_dir "${developer_dir}/Platforms/MacOSX.platform/Developer/SDKs"
+                    }
+                    wxWidgets.sdk "${sdks_dir}/MacOSX10.6.sdk"
+                    wxWidgets.macosx_version_min "10.6"
+                }
+            }
+        }
+
     } elseif {${args} eq "wxGTK-2.8"} {
         wxWidgets.name      "wxGTK"
         wxWidgets.version   "2.8"

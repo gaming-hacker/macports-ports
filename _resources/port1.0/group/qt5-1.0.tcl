@@ -484,11 +484,7 @@ if {[vercmp ${qt5.version} 5.10]>=0} {
 } else {
     # no PPC support in Qt 5
     #     see http://lists.qt-project.org/pipermail/interest/2012-December/005038.html
-    if {[vercmp [macports_version] 2.5.3] <= 0} {
-        default supported_archs {"i386 x86_64"}
-    } else {
-        default supported_archs "i386 x86_64"
-    }
+    default supported_archs {"i386 x86_64"}
 }
 
 if {[vercmp ${qt5.version} 5.9]>=0} {
@@ -604,7 +600,7 @@ proc eval_variants {variations} {
 
 namespace eval qt5pg {
     proc register_dependents {} {
-        global qt5_private_components qt5_private_build_components qt5_private_runtime_components qt5.name
+        global qt5_private_components qt5_private_build_components qt5.name
 
         if { ![exists qt5_private_components] } {
             # no Qt components have been requested
@@ -615,10 +611,10 @@ namespace eval qt5pg {
             # qt5.depends_build_component has never been called
             set qt5_private_build_components ""
         }
-        if { ![exists qt5_private_runtime_components] } {
-            # qt5.depends_build_component has never been called
-            set qt5_private_runtime_components ""
-        }
+#         if { ![exists qt5_private_runtime_components] } {
+#             # qt5.depends_build_component has never been called
+#             set qt5_private_runtime_components ""
+#         }
 
         if { [variant_exists qt5kde] && [variant_isset qt5kde] } {
             set qt_kde_name qt5-kde
@@ -653,20 +649,20 @@ namespace eval qt5pg {
                     }
                 }
             }
-            foreach component ${qt5_private_runtime_components} {
-                switch -exact ${component} {
-                    qtwebkit -
-                    qtwebengine -
-                    qtwebview -
-                    qtenginio {
-                        # these components are subports
-                        depends_build-append port:${qt_kde_name}-${component}
-                    }
-                    default {
-                        # qt5-kde provides all components except those above
-                    }
-                }
-            }
+#             foreach component ${qt5_private_runtime_components} {
+#                 switch -exact ${component} {
+#                     qtwebkit -
+#                     qtwebengine -
+#                     qtwebview -
+#                     qtenginio {
+#                         # these components are subports
+#                         depends_build-append port:${qt_kde_name}-${component}
+#                     }
+#                     default {
+#                         # qt5-kde provides all components except those above
+#                     }
+#                 }
+#             }
         } else {
             # ![variant_isset qt5kde]
             foreach component "qtbase ${qt5_private_components}" {
@@ -689,15 +685,15 @@ namespace eval qt5pg {
                     return -code error "unknown component ${component}"
                 }
             }
-            foreach component ${qt5_private_runtime_components} {
-                if { [info exists qt5pg::qt5_component_lib(${component})] } {
-                    set component_info $qt5pg::qt5_component_lib(${component})
-                    set path           [lindex ${component_info} 2]
-                    depends_run-append path:${path}:${qt5.name}-${component}
-                } else {
-                    return -code error "unknown component ${component}"
-                }
-            }
+ #            foreach component ${qt5_private_runtime_components} {
+#                 if { [info exists qt5pg::qt5_component_lib(${component})] } {
+#                     set component_info $qt5pg::qt5_component_lib(${component})
+#                     set path           [lindex ${component_info} 2]
+#                     depends_run-append path:${path}:${qt5.name}-${component}
+#                 } else {
+#                     return -code error "unknown component ${component}"
+#                 }
+#             }
         }
     }
 }

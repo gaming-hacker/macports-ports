@@ -15,7 +15,7 @@ default bitbucket.homepage {https://bitbucket.org/${bitbucket.author}/${bitbucke
 
 # Later code assumes that bitbucket.master_sites is a simple string, not a list.
 default bitbucket.master_sites {${bitbucket.homepage}/get}
-default bitbucket.tarball_from tags
+default bitbucket.tarball_from {tags}
 
 default master_sites {${bitbucket.master_sites}}
 
@@ -28,7 +28,7 @@ proc handle_tarball_from {option action args} {
     if {[string equal ${action} "set"] && ${args} eq "downloads"} {
         bitbucket.tarball_from ${args}
         bitbucket.master_sites https://bitbucket.org/${bitbucket.author}/${bitbucket.project}/downloads
-        default livecheck.url {${bitbucket.master_sites}}
+        default livecheck.url ${bitbucket.master_sites}
         default distname {${bitbucket.project}-${bitbucket.version}}
     }
 }
@@ -54,9 +54,10 @@ proc bitbucket.setup {bb_author bb_project bb_version {bb_tag_prefix ""}} {
     bitbucket.version       ${bb_version}
     bitbucket.tag_prefix    ${bb_tag_prefix}
 
-    if {!([info exists PortInfo(name)] && (${PortInfo(name)} ne ${bitbucket.project}))} {
-        name                ${bitbucket.project}
-    }
+#     if {!([info exists PortInfo(name)] && (${PortInfo(name)} ne ${bitbucket.project}))} {
+#         name                ${bitbucket.project}
+#     }
+    name                    ${bitbucket.project}
     version                 ${bitbucket.version}
     homepage                ${bitbucket.homepage}
     hg.url                  ${bitbucket.homepage}
@@ -67,9 +68,10 @@ proc bitbucket.setup {bb_author bb_project bb_version {bb_tag_prefix ""}} {
     post-extract {
         # It is assumed that bitbucket.master_sites is a simple string, not a list.
         # Here be dragons.
+        #             ${bitbucket.master_sites} in ${master_sites} && \
         if {![file exists ${worksrcpath}] && \
             ${fetch.type} eq "standard" && \
-            ${bitbucket.master_sites} in ${master_sites} && \
+            [lsearch -exact ${master_sites} ${bitbucket.master_sites}] != -1 && \
             [llength ${distfiles}] > 0 && \
             [llength [glob -nocomplain ${workpath}/*]] > 0} {
             move [glob ${workpath}/*] ${worksrcpath}

@@ -1,4 +1,33 @@
-# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+#
+# Copyright (c) 2010-2014 The MacPorts Project
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+# 3. Neither the name of Apple Computer, Inc. nor the names of its
+#    contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
 #
 # Usage:
 # PortGroup     kde4 1.1
@@ -26,6 +55,16 @@ depends_build-append    port:automoc
 # PortGroup overrides depends_lib, removing "port:phonon" to prevent a
 # cyclic dependency
 depends_lib-append      port:phonon
+
+# set compiler to Apple's GCC 4.2
+switch ${os.platform}_${os.major} {
+    darwin_8 {
+	    configure.compiler	apple-gcc-4.2
+    }
+    darwin_9 {
+	    configure.compiler  gcc-4.2
+    }
+}
 
 # Install the kdelibs headerfiles in their own directory to prevent clashes with KF5 headers
 set kde4.include_prefix KDE4
@@ -58,7 +97,7 @@ configure.args-append   -DBUILD_doc=OFF \
 
 # explicitly define certain headers and libraries, to avoid
 # conflicts with those installed into system paths by the user.
-configure.args-append   -DDOCBOOKXSL_DIR=${prefix}/share/xsl/docbook-xsl-nons \
+configure.args-append   -DDOCBOOKXSL_DIR=${prefix}/share/xsl/docbook-xsl \
                         -DGETTEXT_INCLUDE_DIR=${prefix}/include \
                         -DGETTEXT_LIBRARY=${prefix}/lib/libgettextlib.dylib \
                         -DGIF_INCLUDE_DIR=${prefix}/include \
@@ -90,11 +129,14 @@ configure.args-append   -DDOCBOOKXSL_DIR=${prefix}/share/xsl/docbook-xsl-nons \
                         -DTIFF_INCLUDE_DIR=${prefix}/include \
                         -DTIFF_LIBRARY=${prefix}/lib/libtiff.dylib
 
-# see https://trac.macports.org/ticket/55104
-if { ${os.platform} eq "darwin" && ${os.major} >= 17 } {
-    configure.cxxflags-append -D__KDE_HAVE_GCC_VISIBILITY
-}
-
+# These two can be removed (see #46240):
+#                        -DQCA2_INCLUDE_DIR=${prefix}/include/QtCrypto \
+#                        -DQCA2_LIBRARIES=${prefix}/lib/libqca.dylib \
+# These ones are obsolete, as purely based on mysql5 paths (see #49296):
+#                        -DMYSQLD_EXECUTABLE=${prefix}/libexec/mysqld \
+#                        -DMYSQL_INCLUDE_DIR=${prefix}/include/mysql5/mysql \
+#                        -DMYSQL_LIB_DIR=${prefix}/lib/mysql5/mysql \
+#                        -DMYSQLCONFIG_EXECUTABLE=${prefix}/bin/mysql_config5 \
 
 # standard variant for building documentation
 variant docs description "Build documentation" {

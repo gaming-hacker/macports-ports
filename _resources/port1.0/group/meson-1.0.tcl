@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=24
 #
 # Copyright (c) 2017 The MacPorts Project
 #
@@ -54,7 +54,7 @@ depends_skip_archcheck-append \
 
 # TODO: --buildtype=plain tells Meson not to add its own flags to the command line. This gives the packager total control on used flags.
 default configure.cmd       {${prefix}/bin/meson}
-default configure.post_args {[meson::get_post_args]}
+default configure.post_args {"${configure.dir} ${build_dir}"}
 configure.universal_args-delete \
                             --disable-dependency-tracking
 
@@ -65,14 +65,3 @@ default build.target        ""
 # remove DESTDIR= from arguments, but rather take it from environmental variable
 destroot.env-append         DESTDIR=${destroot}
 default destroot.post_args  ""
-
-namespace eval meson {
-    proc get_post_args {} {
-        global configure.dir build_dir muniversal.current_arch
-        if {[info exists muniversal.current_arch]} {
-            return "${configure.dir} ${build_dir}-${muniversal.current_arch}"
-        } else {
-            return "${configure.dir} ${build_dir}"
-        }
-    }
-}

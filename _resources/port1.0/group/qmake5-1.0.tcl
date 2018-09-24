@@ -1,5 +1,34 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
+# Copyright (c) 2013-2017 The MacPorts Project
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+# 3. Neither the name of Apple Computer, Inc. nor the names of its
+#    contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+#
 # This portgroup defines standard settings when using qmake.
 #
 # Usage:
@@ -15,11 +44,7 @@ default qt5.top_level {${configure.dir}}
 default qt5.cxxflags {}
 default qt5.ldflags {}
 default qt5.frameworkpaths {}
-if {[vercmp [macports_version] 2.5.3] <= 0} {
-    default qt5.spec_cmd {"-spec "}
-} else {
-    default qt5.spec_cmd "-spec "
-}
+default qt5.spec_cmd {"-spec "}
 
 # with the -r option, the examples do not install correctly (no source code)
 #     the install_sources target is not created in the Makefile(s)
@@ -39,8 +64,8 @@ pre-configure {
         } else {
             if {[variant_exists universal] && [variant_isset universal]} {
                 global merger_configure_args
-                lappend merger_configure_args(i386)   {*}${qt5.spec_cmd}${qt_qmake_spec_32}
-                lappend merger_configure_args(x86_64) {*}${qt5.spec_cmd}${qt_qmake_spec_64}
+                eval lappend merger_configure_args(i386)   ${qt5.spec_cmd}${qt_qmake_spec_32}
+                eval lappend merger_configure_args(x86_64) ${qt5.spec_cmd}${qt_qmake_spec_64}
             } else {
                 configure.args-append "${qt5.spec_cmd}${qt_qmake_spec}"
             }
@@ -194,13 +219,13 @@ pre-configure {
     # determine of qmake's default and user requests are compatible; override qmake if necessary
     if { ${this_debug} && !${base_debug}  } {
         puts ${cache} "QT_CONFIG+=debug_and_release build_all debug"
-        puts ${cache} "CONFIG+=debug_and_release build_all"
+        puts ${cache} "CONFIG+=debug"
         puts ${cache} "CONFIG-=release"
     }
 
     if { !${this_debug} && ${base_debug}  } {
         puts ${cache} "QT_CONFIG-=debug_and_release build_all debug"
-        puts ${cache} "CONFIG-=debug debug_and_release build_all"
+        puts ${cache} "CONFIG-=debug"
         puts ${cache} "CONFIG+=release"
     }
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
-# This portgroup provides access to many missing library functions for 
+# This portgroup provides access to many missing library functions for
 # Snow Leopard (Mac OS X 10.6.8) and earlier.
 # adding the header is sometimes needed, but sometimes incompatible
 
@@ -15,7 +15,7 @@ proc add_libsnowleopardfixes {} {
     configure.ldflags-append   -lsnowleopardfixes
 
     if {${snowleopard_fixes.addheader} eq "yes"} {
-        configure.cppflags-append -include ${prefix}/include/snowleopardfixes.h
+        configure.cxxflags-append -include ${prefix}/include/snowleopardfixes.h
     }
 }
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts
 #
 # This PortGroup builds PHP extensions. Set name and version as for a normal
 # standalone port, then set php.branches and optionally any other php options,
@@ -425,7 +425,7 @@ proc php.add_port_code {} {
         }
 
         foreach extension [concat ${php.extensions} ${php.extensions.zend}] {
-            if {${extension} ni ${installed_extensions}} {
+         if {-1 == [lsearch -exact ${installed_extensions} ${extension}]} {
                 ui_error "Cannot list extension \"${extension}\" in ${php.extension_ini} because the port only installed the extensions \"[join ${installed_extensions} "\", \""]\""
                 return -code error "invalid extension name"
             }

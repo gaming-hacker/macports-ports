@@ -31,7 +31,7 @@
 #
 
 options waf.python
-default waf.python {${prefix}/bin/python2.7}
+default waf.python ${prefix}/bin/python2.7
 
 depends_build-append    port:python27
 
