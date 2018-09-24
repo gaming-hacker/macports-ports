@@ -25,7 +25,8 @@ sha256  ad31d13bf4dd1b9e2590dccdbe9e4abe74727aaa16376be85cd5d854f79bf290 \
 size    1276849
 
 depends_build       port:pkgconfig \
-                    port:texlive-bin-extra
+                    bin:latex2man:texlive-bin-extra \
+                    bin:pdflatex:texlive-latex
 
 depends_lib         port:ImageMagick \
                     port:plotutils
