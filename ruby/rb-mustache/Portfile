@@ -15,7 +15,7 @@ platforms           darwin
 homepage            http://mustache.github.com/
 master_sites        http://rubygems.org/downloads/
 checksums           rmd160  d02fc0c7f108afb9d4ed0c4fe4c1d151aff9f103 \
- sha256  539f8613cf6154aefd290256ad2d5ff09b1c7f6529aca74b2941973bf56a2c52 \
+sha256  539f8613cf6154aefd290256ad2d5ff09b1c7f6529aca74b2941973bf56a2c52 \
 size    37376
 
 post-destroot {
