@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    Shards is a dependency manager for the Crystal Programming L
 depends_lib         port:crystal
 
 checksums           rmd160  db63f5b70ebb6a3235125c3e83a155fa708c25be \
-                    sha256  f289f27f35889bee74a005554229871307ed2fd42893e20a0c303c4c62555dea \
-                    size    31414
+sha256  f289f27f35889bee74a005554229871307ed2fd42893e20a0c303c4c62555dea \
+size    31414
 
 pre-fetch {
   if {${os.major} < 16} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 master_sites        pypi:s/sphinx_rtd_theme
 
 checksums           rmd160  2043293f5d351df1cc2eed714b0ad158da5c437c \
-                    sha256  3b49758a64f8a1ebd8a33cb6cc9093c3935a908b716edfaa5772fd86aac27ef6 \
-                    size    5388144
+sha256  3b49758a64f8a1ebd8a33cb6cc9093c3935a908b716edfaa5772fd86aac27ef6 \
+size    5388144
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 if {$subport ne $name} {
     depends_build   port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,14 +25,14 @@ long_description    \
 homepage            http://mitmproxy.org/
 
 checksums           md5     d9f58513ab46777b60c15bff52a2239b \
-                    rmd160  6532da521d55dffa508123831113b41252c03c3e \
-                    sha256  313c6aa2e801b3743a1fad57fdf6f1e8b001ea3a7a7744394fc48cc3f9512553 \
-                    size    27132072
+rmd160  6532da521d55dffa508123831113b41252c03c3e \
+sha256  313c6aa2e801b3743a1fad57fdf6f1e8b001ea3a7a7744394fc48cc3f9512553 \
+size    27132072
 
 # https://github.com/mitmproxy/mitmproxy/issues/3316
 patchfiles          update-certs.patch
 
-python.versions     36
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

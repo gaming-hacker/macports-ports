@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       github 1.0
@@ -12,8 +12,8 @@ version                         20180424
 name                            rapidjson-devel
 
 checksums                       rmd160  a0211ac1dc84270169b59c584894a0f49d0030a8 \
-                                sha256  4133516f8fd578053f478f3b6211ebcfb03056bdd59d6c6d0312c393f467cf37 \
-                                size    1049113
+sha256  4133516f8fd578053f478f3b6211ebcfb03056bdd59d6c6d0312c393f467cf37 \
+size    1049113
 
 
 license                         MIT
