@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # This PortGroup builds PHP extensions. Set name and version as for a normal
 # standalone port, then set php.branches and optionally any other php options,
@@ -90,7 +90,9 @@ proc php._set_name {option action args} {
         return
     }
 
-    if {[regexp {^php\d+-} ${args}]} { php.branches 5.6 7.2 7.3 }
+    if {[regexp {^php\d+-} ${args}]} {
+php.branches 5.6 7.2 7.3
+    }
 }
 
 
@@ -113,7 +115,9 @@ default php.default_branch      {[expr {${php.latest_stable_branch} in ${php.bra
 option_proc php.default_branch  php._set_default_branch
 
 proc php._set_default_branch {option action args} {
-    if {"set" ne ${action}} { return }
+    if {"set" ne ${action}} {
+        return
+    }
 
     global name subport php.rootname
 
@@ -425,7 +429,7 @@ proc php.add_port_code {} {
         }
 
         foreach extension [concat ${php.extensions} ${php.extensions.zend}] {
-         if {-1 == [lsearch -exact ${installed_extensions} ${extension}]} {
+            if {${extension} ni ${installed_extensions}} {
                 ui_error "Cannot list extension \"${extension}\" in ${php.extension_ini} because the port only installed the extensions \"[join ${installed_extensions} "\", \""]\""
                 return -code error "invalid extension name"
             }

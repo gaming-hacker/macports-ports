@@ -1,6 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-
-PortSystem	1.0
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 #
 # Usage:
 # PortGroup     cmake 1.0
@@ -50,10 +48,10 @@ default configure.args {[list \
                     -DCMAKE_COLOR_MAKEFILE=ON \
                    {-DCMAKE_CXX_COMPILER="$CXX"} \
                     -DCMAKE_FIND_FRAMEWORK=LAST \
-                    -DCMAKE_INSTALL_NAME_DIR=${prefix}/lib \
-                    -DCMAKE_INSTALL_RPATH=${prefix}/lib \
+                    -DCMAKE_INSTALL_NAME_DIR=${cmake.install_prefix}/lib \
+                    -DCMAKE_INSTALL_RPATH=${cmake.install_prefix}/lib \
                     -DCMAKE_MODULE_PATH=${cmake_share_module_dir} \
-                    -DCMAKE_SYSTEM_PREFIX_PATH="${prefix}\;/usr" \
+                    -DCMAKE_SYSTEM_PREFIX_PATH="${cmake.install_prefix}\;${prefix}\;/usr" \
                     -DCMAKE_VERBOSE_MAKEFILE=ON \
                     -DCMAKE_POLICY_DEFAULT_CMP0025=NEW \
                     -Wno-dev

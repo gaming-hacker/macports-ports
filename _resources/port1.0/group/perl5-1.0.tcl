@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+
 # portfile configuration options
 # perl5.branches: the major perl versions supported by this module. A
 #   subport will be created for each. e.g. p5.12-foo, p5.10-foo, ...
@@ -19,7 +20,7 @@ proc perl5_get_default_branch {} {
         set ret 5.26
     }
     # if the above default is not supported by this module, use the latest it does support
-    if {[info exists perl5.branches] && [lsearch -exact ${perl5.branches} $ret] == -1} {
+    if {[info exists perl5.branches] && $ret ni ${perl5.branches}} {
 #         set ret [lindex ${perl5.branches} end]
         set ret 5.26
     }
@@ -61,7 +62,7 @@ default perl5.require_variant {false}
 # Get variant names from branches
 proc perl5.get_variant_names {branches} {
     set ret {}
-   foreach branch ${branches} {
+    foreach branch ${branches} {
         lappend ret "perl[string map {. _} ${branch}]"
     }
     return $ret
@@ -74,14 +75,11 @@ proc perl5.create_variants {branches} {
         set index [lsearch -exact ${branches} ${branch}]
         set variant [lindex ${perl5.variants} ${index}]
 # Add conflicts
-        set conflicts {}
+        set filtered {}
         if {${perl5.conflict_variants}} {
             set filtered [lreplace ${perl5.variants} ${index} ${index}]
-            if {$filtered ne ""} {
-                set conflicts "conflicts {$filtered}"
-            }
         }
-        eval "variant ${variant} ${conflicts} description Use MacPorts perl${branch} {}"
+        variant ${variant} conflicts {*}${filtered} description "Use MacPorts perl${branch}" {}
         if {[variant_isset ${variant}]} {
             perl5.variant ${variant}
         }
@@ -195,7 +193,11 @@ proc perl5.setup {module vers {cpandir ""}} {
         configure.cmd       ${perl5.bin}
         configure.env       PERL_AUTOINSTALL=--skipdeps
         configure.pre_args  Makefile.PL
-        default configure.args {"INSTALLDIRS=vendor CC=\"${configure.cc}\" LD=\"${configure.cc}\""}default configure.args {"--installdirs=vendor --config cc=\"${configure.cc}\" --config ld=\"${configure.cc}\""}
+        if {[vercmp [macports_version] 2.5.3] <= 0} {
+            default configure.args {"INSTALLDIRS=vendor CC=\"${configure.cc}\" LD=\"${configure.cc}\""}
+        } else {
+            default configure.args {INSTALLDIRS=vendor CC=\"${configure.cc}\" LD=\"${configure.cc}\"}
+        }
 
         # CCFLAGS can be passed in to "configure" but it's not necessarily inherited.
         # LDFLAGS can't be passed in (or if it can, it's not easy to figure out how).
@@ -234,7 +236,7 @@ proc perl5.setup {module vers {cpandir ""}} {
 
     if {${perl5.use_search_cpan_org}} {
         livecheck.url       http://search.cpan.org/dist/${perl5.module}/
-        livecheck.regex     >[quotemeta ${perl5.module}]-(\[^"\]+?)<
+        livecheck.regex     >[quotemeta ${perl5.module}]-(\[^"\ \]+?)<
     } else {
         livecheck.url       https://fastapi.metacpan.org/v1/release/${perl5.module}/
         livecheck.regex     \"name\" : \"[quotemeta ${perl5.module}]-(\[^"\]+?)\"
@@ -254,7 +256,11 @@ proc perl5.use_module_build {} {
     depends_lib-append  port:p${perl5.major}-module-build
 
     configure.pre_args  Build.PL
-    default configure.args {"--installdirs=vendor --config cc=\"${configure.cc}\" --config ld=\"${configure.cc}\""}
+    if {[vercmp [macports_version] 2.5.3] <= 0} {
+        default configure.args {"--installdirs=vendor --config cc=\"${configure.cc}\" --config ld=\"${configure.cc}\""}
+    } else {
+        default configure.args {--installdirs=vendor --config cc=\"${configure.cc}\" --config ld=\"${configure.cc}\"}
+    }
 
     build.cmd           ${perl5.bin}
     build.pre_args      Build

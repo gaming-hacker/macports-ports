@@ -8,6 +8,11 @@
 global available_qt_versions
 array set available_qt_versions {
     qt5  {qt5-qtbase  5.11}
+    qt59 {qt59-qtbase 5.9}
+    qt58 {qt58-qtbase 5.8}
+    qt57 {qt57-qtbase 5.7}
+    qt56 {qt56-qtbase 5.6}
+    qt55 {qt55-qtbase 5.5}
 }
 #qt5-kde {qt5-kde 5.8}
 
@@ -18,7 +23,115 @@ array set available_qt_versions {
 
 proc qt5.get_default_name {} {
     global os.major
-    return qt5
+
+    # see https://doc.qt.io/qt-5/supported-platforms-and-configurations.html
+    # for older versions, see https://web.archive.org/web/*/http://doc.qt.io/qt-5/supported-platforms-and-configurations.html
+    if { ${os.major} <= 7 } {
+        #
+        # Qt 5 does not support ppc
+        # see http://doc.qt.io/qt-5/osx-requirements.html
+        #
+        return qt55
+        #
+    } elseif { ${os.major} <= 9 } {
+        #
+        # Mac OS X Tiger (10.4)
+        # Mac OS X Leopard (10.5)
+        #
+        # never supported by Qt 5
+        #
+        return qt55
+        #
+    } elseif { ${os.major} == 10 } {
+        #
+        # Mac OS X Snow Leopard (10.6)
+        #
+        #     Qt 5.3: Deployment only
+        # Qt 5.0-5.2: Occasionally tested
+        #
+        return qt55
+        #
+    } elseif { ${os.major} == 11 } {
+        #
+        # Mac OS X Lion (10.7)
+        #
+        # Qt 5.7:  Not Supported and is known not to work
+        # Qt 5.6:  Deployment only but seems to work (except QtWebEngine)
+        # Qt 5.5:  Occasionally tested
+        # Qt 5.4:  Supported
+        #
+        return qt56
+        #
+    } elseif { ${os.major} == 12 } {
+        #
+        # OS X Mountain Lion (10.8)
+        #
+        # Qt 5.8:  Not Supported
+        # Qt 5.7:  Supported (except QtWebEngine)
+        # Qt 5.6:  Supported
+        #
+        return qt57
+        #
+    } elseif { ${os.major} == 13 } {
+        #
+        # OS X Mavericks (10.9)
+        #
+        # Qt 5.9:  Not Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt58
+        #
+    } elseif { ${os.major} == 14 } {
+        #
+        # OS X Yosemite (10.10)
+        #
+        # Qt 5.10: Not Supported and QtWebEngine fails
+        # Qt 5.9:  Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt59
+        #
+    } elseif { ${os.major} == 15 } {
+        #
+        # OS X El Capitan (10.11)
+        #
+        # Qt 5.10: Supported
+        # Qt 5.9:  Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Supported
+        # Qt 5.6:  Supported
+        #
+        return qt5
+        #
+    } elseif { ${os.major} == 16 } {
+        #
+        # macOS Sierra (10.12)
+        #
+        # Qt 5.10: Supported
+        # Qt 5.9:  Supported
+        # Qt 5.8:  Supported
+        # Qt 5.7:  Not Supported but seems to work
+        #
+        return qt5
+        #
+    } elseif { ${os.major} == 17 } {
+        #
+        # macOS High Sierra (10.13)
+        #
+        # Qt 5.10: Supported
+        #
+        return qt5
+        #
+    } else {
+        #
+        # macOS ??? (???)
+        #
+        return qt5
+    }
 }
 
 global qt5.name qt5.base_port qt5.version
@@ -484,7 +597,11 @@ if {[vercmp ${qt5.version} 5.10]>=0} {
 } else {
     # no PPC support in Qt 5
     #     see http://lists.qt-project.org/pipermail/interest/2012-December/005038.html
-    default supported_archs {"i386 x86_64"}
+    if {[vercmp [macports_version] 2.5.3] <= 0} {
+        default supported_archs {"i386 x86_64"}
+    } else {
+        default supported_archs "i386 x86_64"
+    }
 }
 
 if {[vercmp ${qt5.version} 5.9]>=0} {
@@ -600,7 +717,7 @@ proc eval_variants {variations} {
 
 namespace eval qt5pg {
     proc register_dependents {} {
-        global qt5_private_components qt5_private_build_components qt5.name
+        global qt5_private_components qt5_private_build_components qt5_private_runtime_components qt5.name
 
         if { ![exists qt5_private_components] } {
             # no Qt components have been requested
@@ -611,10 +728,10 @@ namespace eval qt5pg {
             # qt5.depends_build_component has never been called
             set qt5_private_build_components ""
         }
-#         if { ![exists qt5_private_runtime_components] } {
-#             # qt5.depends_build_component has never been called
-#             set qt5_private_runtime_components ""
-#         }
+        if { ![exists qt5_private_runtime_components] } {
+            # qt5.depends_build_component has never been called
+            set qt5_private_runtime_components ""
+        }
 
         if { [variant_exists qt5kde] && [variant_isset qt5kde] } {
             set qt_kde_name qt5-kde
@@ -649,20 +766,20 @@ namespace eval qt5pg {
                     }
                 }
             }
-#             foreach component ${qt5_private_runtime_components} {
-#                 switch -exact ${component} {
-#                     qtwebkit -
-#                     qtwebengine -
-#                     qtwebview -
-#                     qtenginio {
-#                         # these components are subports
-#                         depends_build-append port:${qt_kde_name}-${component}
-#                     }
-#                     default {
-#                         # qt5-kde provides all components except those above
-#                     }
-#                 }
-#             }
+            foreach component ${qt5_private_runtime_components} {
+                switch -exact ${component} {
+                    qtwebkit -
+                    qtwebengine -
+                    qtwebview -
+                    qtenginio {
+                        # these components are subports
+                        depends_build-append port:${qt_kde_name}-${component}
+                    }
+                    default {
+                        # qt5-kde provides all components except those above
+                    }
+                }
+            }
         } else {
             # ![variant_isset qt5kde]
             foreach component "qtbase ${qt5_private_components}" {
@@ -685,15 +802,15 @@ namespace eval qt5pg {
                     return -code error "unknown component ${component}"
                 }
             }
- #            foreach component ${qt5_private_runtime_components} {
-#                 if { [info exists qt5pg::qt5_component_lib(${component})] } {
-#                     set component_info $qt5pg::qt5_component_lib(${component})
-#                     set path           [lindex ${component_info} 2]
-#                     depends_run-append path:${path}:${qt5.name}-${component}
-#                 } else {
-#                     return -code error "unknown component ${component}"
-#                 }
-#             }
+            foreach component ${qt5_private_runtime_components} {
+                if { [info exists qt5pg::qt5_component_lib(${component})] } {
+                    set component_info $qt5pg::qt5_component_lib(${component})
+                    set path           [lindex ${component_info} 2]
+                    depends_run-append path:${path}:${qt5.name}-${component}
+                } else {
+                    return -code error "unknown component ${component}"
+                }
+            }
         }
     }
 }

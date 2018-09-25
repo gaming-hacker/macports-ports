@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ long_description    QtAwesome enables iconic fonts such as Font Awesome and \
                     Elusive Icons in PyQt and PySide applications.
 
 checksums           rmd160  47e208109d0e9f3ec4a374a1d750cf4877596a7b \
-                    sha256  2d643926392d0dc96a76b2818efa45b55882a9325741ab59889328aab70e038a \
-                    size    633293
+sha256  2d643926392d0dc96a76b2818efa45b55882a9325741ab59889328aab70e038a \
+size    633293
 
-python.versions     27 34 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     livecheck.type  none

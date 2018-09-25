@@ -192,7 +192,7 @@ proc wxWidgets._set {option action args} {
         # wxWidgets-2.8 fails to build with clang
         compiler.blacklist  *clang*
 
-       pre-fetch {
+        pre-fetch {
             # 10.8 (or later) -or- 10.7 with Xcode 4.4 (or later)
             if {${os.major} >= 12 || [vercmp $xcodeversion 4.4] >= 0} {
                 ui_error "${wxWidgets.port} cannot be built on macOS >= 10.7 with Xcode >= 4.4; please use port wxWidgets-3.0 or wxgtk-2.8 instead"
@@ -210,7 +210,6 @@ proc wxWidgets._set {option action args} {
                 }
             }
         }
-
     } elseif {${args} eq "wxGTK-2.8"} {
         wxWidgets.name      "wxGTK"
         wxWidgets.version   "2.8"

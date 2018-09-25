@@ -1,35 +1,22 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+
 PortGroup           active_variants 1.1
 PortGroup           cxx11 1.1
 PortGroup           github 1.0
 PortGroup           wxWidgets 1.0
 
-platform darwin {
-    if {${os.major} < 13} {
-        PortGroup   cxx11 1.1
-    }
-}
-
 name                audacity
 
 description         A Free, Cross-Platform Digital Audio Editor.
 long_description    Audacity is a free, easy-to-use, multi-track audio editor and recorder \
-                    for Windows, Mac OS X, GNU/Linux and other operating systems. The interface is translated \
-                    into many languages. You can use Audacity to: \n\
-                    Record live audio. \n\
-                    Record computer playback on any Windows Vista or later machine. \n\
-                    Convert tapes and records into digital recordings or CDs. \n\
-                    Edit WAV, AIFF, FLAC, MP2, MP3 or Ogg Vorbis sound files. \n\
-                    AC3, M4A/M4R (AAC), WMA and other formats supported using optional libraries. \n\
-                    Cut, copy, splice or mix sounds together. \n\
-                    Numerous effects including change the speed or pitch of a recording. \n\
-                    And more!
+                    for Windows, Mac OS X, GNU/Linux and other operating systems. The interface
 
 subport audacity-devel {
     long_description A port of the Audacity audio editor aimed at development purposes.
 }
+
 
 if {${subport} eq "${name}"} {
     conflicts       ${name}-devel
@@ -70,7 +57,7 @@ platforms           darwin
 license             GPL-2+
 # openssl is a dependency of curl in cmake
 license_noconflict  openssl
-maintainers         gmail.com:rjvbertin openmaintainer
+maintainers         {gmail.com:rjvbertin @RJVB} openmaintainer
 universal_variant   no
 use_parallel_build  yes
 
@@ -104,8 +91,8 @@ depends_lib-append  port:freetype \
                     port:libmad \
                     port:soundtouch \
                     port:soxr \
-                    port:twolame
-depends_lib-append  port:expat \
+                    port:twolame \
+                    port:expat \
                     path:lib/libavcodec.dylib:ffmpeg \
                     port:flac \
                     port:lame \

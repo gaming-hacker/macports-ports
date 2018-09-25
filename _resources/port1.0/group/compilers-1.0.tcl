@@ -70,9 +70,9 @@ default compilers.clear_archflags yes
 # also set a default gcc version
 if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
     # see https://trac.macports.org/ticket/54215#comment:36
-    set compilers.gcc_default gcc8
+    set compilers.gcc_default gcc6
 } else {
-    set compilers.gcc_default gcc8
+    set compilers.gcc_default gcc7
 }
 
 set compilers.list {cc cxx cpp objc fc f77 f90}
@@ -88,7 +88,7 @@ foreach v ${gcc_versions} {
     lappend compilers.gcc_variants gcc$v
     set cdb(gcc$v,variant)  gcc$v
     set cdb(gcc$v,compiler) macports-gcc-$version
-    set cdb(gcc$v,descrip)  "Alexander gcc $version"
+    set cdb(gcc$v,descrip)  "MacPorts gcc $version"
     set cdb(gcc$v,depends)  port:gcc$v
     set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc"
     set cdb(gcc$v,libfortran) ${prefix}/lib/gcc$v/libgfortran.dylib
@@ -115,7 +115,7 @@ foreach v ${clang_versions} {
     lappend compilers.clang_variants clang$v
     set cdb(clang$v,variant)  clang$v
     set cdb(clang$v,compiler) macports-clang-$version
-    set cdb(clang$v,descrip)  "Alexander clang $version"
+    set cdb(clang$v,descrip)  "MacPorts clang $version"
     set cdb(clang$v,depends)  port:clang-$version
     set cdb(clang$v,dependsl) ""
     set cdb(clang$v,libfortran) ""
@@ -195,6 +195,8 @@ proc compilers.setup_variants {variants} {
             } elseif {[string match clang* $variant]} {
                 set i [lsearch -exact $c gfortran]
                 set c [lreplace $c $i $i]
+                # set i [lsearch -exact $c g95]
+#                 set c [lreplace $c $i $i]
             }
 
             # only add conflicts from the compiler database (set above) if we
@@ -250,7 +252,7 @@ foreach variant ${compilers.gcc_variants} {
 
 proc c_active_variant_name {depspec} {
     global compilers.variants
-    set c_list [remove_from_list ${compilers.variants} {gfortran }]
+    set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach c $c_list {
         if {![catch {set result [active_variants $depspec $c ""]}]} {
@@ -267,7 +269,7 @@ proc c_active_variant_name {depspec} {
 
 proc c_variant_name {} {
     global compilers.variants
-    set c_list [remove_from_list ${compilers.variants} {gfortran }]
+    set c_list [remove_from_list ${compilers.variants} {gfortran}]
 
     foreach cc $c_list {
         if {[variant_isset $cc]} {
@@ -410,7 +412,9 @@ proc compilers.is_fortran_only {} {
     global compilers.list
 
     foreach c {cc cxx cpp objc} {
-        if {$c in ${compilers.list}} { return 0 }
+        if {$c in ${compilers.list}} {
+            return 0
+        }
     }
 
     return 1
@@ -420,7 +424,9 @@ proc compilers.is_c_only {} {
     global compilers.list
 
     foreach c {f77 f90 fc} {
-        if {$c in ${compilers.list}} { return 0 }
+        if {$c in ${compilers.list}} {
+            return 0
+        }
     }
 
     return 1
@@ -514,8 +520,8 @@ proc compilers.setup {args} {
             # remove gfortran since that only exists to "complete" clang/llvm
             set remove_list [remove_from_list ${compilers.my_fortran_variants} gfortran]
         } elseif {[compilers.is_c_only]} {
-            # remove gfortran and g95 since those are purely for fortran
-            set remove_list [remove_from_list ${compilers.variants} {gfortran }]
+            # remove gfortran since those are purely for fortran
+            set remove_list [remove_from_list ${compilers.variants} {gfortran}]
         }
 
         foreach v $args {
@@ -537,7 +543,7 @@ proc compilers.setup {args} {
                 fortran {
                     # here we just check gfortran, not every fortran
                     # compatible variant since it makes more sense to specify
-                    # 'fortran' to mean add just the +gfortran and variants
+                    # 'fortran' to mean add just the +gfortran  variants
                     set ${mode}_list [${mode}_from_list [set ${mode}_list] {gfortran}]
 
                 }
@@ -602,7 +608,7 @@ proc compilers.setup {args} {
                 lappend ordered_variants $v
             }
         }
-        lappend ordered_variants {}
+#         lappend ordered_variants {g95}
 
         if {${compilers.default_fortran} && ![fortran_variant_isset]} {
             foreach fv $ordered_variants {
