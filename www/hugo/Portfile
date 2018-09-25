@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,8 +13,8 @@ description         A Fast and Flexible Static Site Generator built with love in
 long_description    ${description}
 
 checksums           rmd160  0a797ec25eee8031c9a3b569b2c6909008f220ea \
-                    sha256  c563aa8e1616af1a7b9a1f5a03b0e7749a708d18a06cad1a6a9334dbd6234ef8 \
-                    size    19727317
+sha256  c563aa8e1616af1a7b9a1f5a03b0e7749a708d18a06cad1a6a9334dbd6234ef8 \
+size    19727317
 
 depends_build-append port:git \
                     port:go
