@@ -5,14 +5,10 @@ PortGroup           github 1.0
 
 github.setup        sleuthkit sleuthkit 4.6.2 sleuthkit-
 
-checksums           rmd160  e993cb5cc1a8bd730a846c72ca73078e54e94248 \
-<<<<<<< HEAD
+checksums  rmd160  e993cb5cc1a8bd730a846c72ca73078e54e94248 \
 sha256  40cd4c2feded02707dccb85a92bdc9e5b3cd70269aa4c46bee27b7567bad163d \
 size    9128884
-=======
-                    sha256  40cd4c2feded02707dccb85a92bdc9e5b3cd70269aa4c46bee27b7567bad163d \
-                    size    9128884
->>>>>>> 1e4dcb1fcc756be43003fd3eb614404a63d1ccde
+
 
 categories          sysutils
 maintainers         nomaintainer

@@ -50,8 +50,7 @@ size   4387593
                             patch-numpy_tests_test_scripts.py.diff \
                             patch-fcompiler_g95.diff
     }
-    compilers.setup         require_fortran -clang -gcc44 -gcc45 \
-                            -gcc46 -gcc47 -gcc48 -g95 clang37
+    compilers.setup         require_fortran -clang
 
     patchfiles-append       patch-f2py_setup.py.diff
 
