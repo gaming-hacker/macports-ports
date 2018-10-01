@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-numba
-version             0.39.0
+version             0.40.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  ca9d02348334c8ec0d6a48bdb4455d33babedbb1 \
-sha256  07749d1ddac8c4c0ce8b22bf3dec52ef2fd4922174c71447126807f5f8dc2bae \
-size    1408098
+checksums           rmd160  41ff309245925d2dd088992f07eae2d4d24e63ba \
+                    sha256  2510fbeee71c07bbd0987d4fbbcb8fa6b02f95da8a81ebc0e31b825dda198f45 \
+                    size    1491069
 
 variant tbb description "Add support for TBB" {
     depends_lib-append  port:tbb

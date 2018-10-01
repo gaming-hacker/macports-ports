@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-openpyxl
-version             2.5.7
+version             2.5.8
 revision            0
 categories-append   textproc
 platforms           darwin
 license             mit
 supported_archs     noarch
 
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  2a33d365b45c82eca212384e1e8150f21d03d8d8 \
-sha256  d3da4d6a78077d6f9fb1a1ec12d4aa500f7caa4661b8528538503b24ed72d632 \
-size    174051
+checksums           rmd160  6933aec3bd157bfeca7191c8ca3c23de3b5ba1dc \
+                    sha256  22904d7bdfaaab33d65d50a0915a65eeb2f29c85d9ec53081563850678a29927 \
+                    size    1949915
 
 if {${name} ne ${subport}} {
     depends_build-append \
