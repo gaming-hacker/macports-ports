@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -24,8 +24,8 @@ conflicts           openssl libressl
 
 master_sites        openbsd:LibreSSL
 checksums           rmd160 fcc1241815c094f0e16dd5cd2e4de90e18eb0689 \
-                    sha256 334bf7050f1db4087feebb30571ec13d9fa975bf05d6003ce3ab6d7d2452cf42 \
-                    size   3375642
+sha256 334bf7050f1db4087feebb30571ec13d9fa975bf05d6003ce3ab6d7d2452cf42 \
+size   3375642
 
 patchfiles \
     openssldir-cert.pem.patch

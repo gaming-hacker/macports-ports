@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           github 1.0
 
 github.setup        scanny python-pptx 0.6.15 v
 name                py-pptx
-python.versions     27 34 35 36
+python.versions 27 36 37
 python.default_version 27
 platforms           darwin
 license             MIT
@@ -28,9 +28,9 @@ long_description    A typical use would be generating a customized PowerPoint \
 
 
 checksums \
-    rmd160  c690c1211eb0fb06c8963c0b91bb9747b623584c \
-    sha256  b5061a4b4f46bf9f12034515ca11a330e5550d55e93bf18a2b27a3862d0dbe44 \
-    size    48871428
+rmd160  c690c1211eb0fb06c8963c0b91bb9747b623584c \
+sha256  b5061a4b4f46bf9f12034515ca11a330e5550d55e93bf18a2b27a3862d0dbe44 \
+size    48871428
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

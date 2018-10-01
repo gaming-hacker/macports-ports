@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
@@ -10,8 +10,8 @@ conflicts                   glib2-devel
 set my_name                 glib
 version                     2.58.1
 checksums                   rmd160  7951a41129225b9d38d7df72069f73560a9e86a0 \
-                            sha256  97d6a9d926b6aa3dfaadad3077cfb43eec74432ab455dff14250c769d526d7d6 \
-                            size    4906444
+sha256  97d6a9d926b6aa3dfaadad3077cfb43eec74432ab455dff14250c769d526d7d6 \
+size    4906444
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 categories                  devel

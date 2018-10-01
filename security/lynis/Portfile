@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://cisofy.com/lynis/
 master_sites        https://downloads.cisofy.com/${name}
 
 checksums           rmd160  f6cea7178c6e4fc5e25103778beb408211304a9f \
-                    sha256  8fc68ef7f643327cbe0eb3616015d59225649ee4eccc2a632707857a573eb468 \
-                    size    276156
+sha256  8fc68ef7f643327cbe0eb3616015d59225649ee4eccc2a632707857a573eb468 \
+size    276156
 
 use_configure       no
 

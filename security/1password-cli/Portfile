@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ master_sites        https://cache.agilebits.com/dist/1P/op/pkg/v${version}/
 distfiles           ${archive}${version}${extract.suffix}
 
 checksums           rmd160  8ff2613eb74d60ecf098a0b26fea3afb699c081f \
-                    sha256  93c8bae059e784fc2409c07e09b53648bd449feca3af1bfec4260e9ae9648830 \
-                    size    3617724
+sha256  93c8bae059e784fc2409c07e09b53648bd449feca3af1bfec4260e9ae9648830 \
+size    3617724
 
 # Pre-built binary
 use_configure       no
