@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ homepage            http://homebank.free.fr/
 master_sites        ${homepage}public/
 
 checksums           rmd160  9cbf989cc082ebdf38ae50802c9b403a347bf740 \
-                    sha256  7fe1dd487bca1115e59d7668aeb4de32eb8ce1964f74d24ceb28694736597744 \
-                    size    2599945
+sha256  7fe1dd487bca1115e59d7668aeb4de32eb8ce1964f74d24ceb28694736597744 \
+size    2599945
 
 depends_build       port:intltool \
                     port:pkgconfig

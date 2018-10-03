@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -7,8 +7,8 @@ PortGroup           cxx11 1.1
 name                dar
 version             2.5.17
 checksums           rmd160  6f0f71ea4ce25baba1b05a0f8fbde167473e3dc5 \
-                    sha256  7bf4a5f3f9ac78a5b5cd37d7e94cd3299239f26fdc5404b53f36f1036da286df \
-                    size    1905938
+sha256  7bf4a5f3f9ac78a5b5cd37d7e94cd3299239f26fdc5404b53f36f1036da286df \
+size    1905938
 
 categories          archivers
 platforms           darwin
