@@ -1,4 +1,4 @@
-# -*- mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
+# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -24,9 +24,9 @@ distname                libxml2-${version}
 dist_subdir             libxml2
 
 checksums               rmd160  f596599cbcac6d3175482177c3320a56e68b49a2 \
-sha256  f63c5e7d30362ed28b38bfa1ac6313f9a80230720b7fb6c80575eeab3ff5900c
+                        sha256  f63c5e7d30362ed28b38bfa1ac6313f9a80230720b7fb6c80575eeab3ff5900c
 
-python.versions 27 36 37
+python.versions         27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:libxml2

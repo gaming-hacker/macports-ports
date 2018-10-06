@@ -1,11 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
 
 name                mosquitto
 version             1.5.3
-revision            0
 
 categories          net devel
 platforms           darwin
@@ -24,8 +23,8 @@ homepage            https://mosquitto.org
 master_sites        http://mosquitto.org/files/source/
 
 checksums           rmd160  91b6695d40742db02d6243716e494ae1044dc3ca \
-sha256  3081a998d303a883b1cd064009beabc88aa9159e26f5258a4ae6007160491d10 \
-size    425844
+                    sha256  3081a998d303a883b1cd064009beabc88aa9159e26f5258a4ae6007160491d10 \
+                    size    425844
 
 depends_lib         port:c-ares \
                     port:libwebsockets \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {${subport} eq "gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            9
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -50,8 +50,8 @@ subport gnss-sdr-devel {
     version             20180828
     revision            1
     checksums           rmd160 6dd660cfeace4f70ecf9c08995d8469bd7c1b77d \
-sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
-size   3311359
+                        sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
+                        size   3311359
 
     conflicts           gnss-sdr gnss-sdr-next
 
@@ -70,11 +70,11 @@ subport gnss-sdr-next {
         This port is kept up with the GNSS-SDR GIT next branch, which is typically updated daily to weekly.  This version of GNSS-SDR generally contains fixes and new features that will be incorporated in an upcoming release, and compiles against the gnuradio-next port, which represents GNU Radio GIT next branch.  This port may or not compile or function correctly, as it represents a work in progress.  If it does not work, check back in a few days.  Or try deactivating the currently active gnss-sdr and gnuradio ports, cleaning any current builds, and trying again.
 
     name                gnss-sdr-next
-    github.setup        gnss-sdr gnss-sdr b1f106be7e26cace31f11d391b581827e9965a21
-    version             20180917
-    checksums           rmd160 043774531259ba6a777e81203fdc6ba332da741e \
-sha256 de4e525e5766d42f1c38caccc5b56bcd786298611101ab356289bf3efdffe01f \
-size   3521744
+    github.setup        gnss-sdr gnss-sdr cc5fdf390781f4cd22b04383d399fda0fc11f722
+    version             20181003
+    checksums           rmd160 acf6f8e44a740a388282606c564f8d79f72f4961 \
+                        sha256 0fbd5818806afaef8258f0f6d525820874d779456c5ada1b88efaec8d624ac4e \
+                        size   3522541
 
     conflicts           gnss-sdr gnss-sdr-devel
 

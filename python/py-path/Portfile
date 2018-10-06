@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-path
-version             11.3.0
+version             11.5.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions 27 36 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}.
 
 distname            ${python.rootname}.py-${version}
 
-checksums           rmd160  583e969ad5f5678680b5b803da9b84b526f29a9f \
-sha256  57febc9af44cf550d6ae24a665d7a043d944cae8580a8109b991e0bd2767a4d9 \
-size    39768
+checksums           rmd160  9627b9736deac5de213ddfb8562979b9403ee5e8 \
+                    sha256  b6687a532a735a2d79a13e92bdb31cb0971abe936ea0fa78bcb47faf4372b3cb \
+                    size    40489
 
 if {${name} ne ${subport}} {
     depends_build-append \

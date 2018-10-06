@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -6,8 +6,7 @@ PortGroup           active_variants 1.1
 
 name                libgda5
 set gname           libgda
-version             5.2.4
-revision            12
+version             5.2.5
 license             {GPL-2 LGPL}
 set branch          [join [lrange [split ${version} .] 0 1] .]
 description         GDA provides uniform access to different kinds of data sources.
@@ -23,8 +22,9 @@ master_sites        gnome:sources/${gname}/${branch}/
 
 use_xz              yes
 
-checksums           rmd160  6e39fb20c046ff98d0bb6a347785535b9267aa1d \
-sha256  2cee38dd583ccbaa5bdf6c01ca5f88cc08758b9b144938a51a478eb2684b765e
+checksums           rmd160  73af280cd7459afe9b94e49faa5a1fec4d9c4c58 \
+                    sha256  e3d2e4c28c08a22efd520767fa9d16e92cc1821f693261d7cb2892cc23ec90c8 \
+                    size    12786512
 
 depends_build       port:pkgconfig \
                     port:intltool \
@@ -56,7 +56,7 @@ gobject_introspection yes
 patchfiles          patch-configure.ac.diff \
                     patch-bdb.diff \
                     patch-use-embedded-sqlite3.diff \
-                    UTF-8.patch
+                    macos-issue-142.patch
 
 # reconfigure using upstream autogen.sh for intltool 0.51 compatibility
 
@@ -97,7 +97,7 @@ variant vala description {Build vala bindings and extensions} {
 }
 
 default_variants    +vala
-
+        
 variant mysql5 \
     description {support for current MySQL 5.x} {
     depends_lib-append  path:bin/mysql_config5:mysql5
@@ -108,17 +108,56 @@ variant mysql5 \
     configure.cppflags-append   "-I${prefix}/include/mysql5/mysql"
 }
 
-variant postgresql11  \
-    description {support for PostgreSQL 11.0.x} {
+variant postgresql92 conflicts postgresql93 postgresql94 postgresql95 postgresql96 \
+    description {support for PostgreSQL 9.2.x} {
     configure.cppflags-append   "-I${prefix}/include/postgresql92"
-    depends_lib-append  port:postgresql11
+    depends_lib-append  port:postgresql92
     configure.args-delete   --with-postgres=no
-    configure.args-append   --with-postgres=${prefix}/lib/postgresql11
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql92
 }
 
-variant db62 \
-    description {support for Berkeley DB 6.2.x} {
-    set db_version 62
+variant postgresql93 conflicts postgresql92 postgresql94 postgresql95 postgresql96 \
+    description {support for PostgreSQL 9.3.x} {
+    configure.cppflags-append   "-I${prefix}/include/postgresql93"
+    depends_lib-append  port:postgresql93
+    configure.args-delete   --with-postgres=no
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql93
+}
+
+variant postgresql94 conflicts postgresql92 postgresql93 postgresql95 postgresql96 \
+    description {support for PostgreSQL 9.4.x} {
+    configure.cppflags-append   "-I${prefix}/include/postgresql94"
+    depends_lib-append  port:postgresql94
+    configure.args-delete   --with-postgres=no
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql94
+}
+
+variant postgresql95 conflicts postgresql92 postgresql93 postgresql94 postgresql96 \
+    description {support for PostgreSQL 9.5.x} {
+    configure.cppflags-append   "-I${prefix}/include/postgresql95"
+    depends_lib-append  port:postgresql95
+    configure.args-delete   --with-postgres=no
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql95
+}
+
+variant postgresql96 conflicts postgresql92 postgresql93 postgresql94 postgresql95 \
+    description {support for PostgreSQL 9.6.x} {
+    configure.cppflags-append   "-I${prefix}/include/postgresql96"
+    depends_lib-append  port:postgresql96
+    configure.args-delete   --with-postgres=no
+    configure.args-append   --with-postgres=${prefix}/lib/postgresql96
+}
+
+if {![variant_isset postgresql92] && \
+    ![variant_isset postgresql93] && \
+    ![variant_isset postgresql94] && \
+    ![variant_isset postgresql95] } {
+    default_variants +postgresql96
+}
+
+variant db53 conflicts db60 \
+    description {support for Berkeley DB 5.3.x} {
+    set db_version 53
     depends_lib-append  port:db${db_version}
     configure.cppflags-append "-I${prefix}/include/db${db_version}"
     configure.args-delete   --with-bdb=no
@@ -126,7 +165,19 @@ variant db62 \
                             --with-bdb-libdir-name=lib/db${db_version}
 }
 
-default_variants +db62
+variant db60 conflicts db53 \
+    description {support for Berkeley DB 6.0.x} {
+    set db_version 60
+    depends_lib-append  port:db${db_version}
+    configure.cppflags-append "-I${prefix}/include/db${db_version}"
+    configure.args-delete   --with-bdb=no
+    configure.args-append   --with-bdb=${prefix} \
+                            --with-bdb-libdir-name=lib/db${db_version}
+}
+
+if {![variant_isset db53]} {
+    default_variants +db60
+}
 
 variant quartz {}
 

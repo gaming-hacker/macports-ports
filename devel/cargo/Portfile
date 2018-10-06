@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 name                cargo
@@ -38,9 +38,9 @@ if {${subport} ne "${name}-bootstrap"} {
                     port:rust
 
     checksums       ${distname}${extract.suffix} \
-rmd160  f003d60b85384433bbdd16acc03fbfc92193d4dd \
-sha256  40bd6c7d634885121abcdbdf1ea9e95177c1b22c6b49ed65543284188fbd701c \
-size    729008
+                    rmd160  f003d60b85384433bbdd16acc03fbfc92193d4dd \
+                    sha256  40bd6c7d634885121abcdbdf1ea9e95177c1b22c6b49ed65543284188fbd701c \
+                    size    729008
 
     # use DYLD_FALLBACK_LIBRARY_PATH instead of DYLD_LIBRARY_PATH
     # without this change, --target and CARGO_BUILD_TARGET fail
@@ -124,15 +124,15 @@ size    729008
 
     checksums-append \
         ${name}-${version}-i686-apple-darwin${extract.suffix} \
-rmd160  17458dce93eb7e644385bd82ecb511311765e5e6 \
-sha256  6b7a0a97e0d87cca7b7a5e090d168be6cdbb03298381bece33df493447e17e76 \
-size    3909191
+                    rmd160  17458dce93eb7e644385bd82ecb511311765e5e6 \
+                    sha256  6b7a0a97e0d87cca7b7a5e090d168be6cdbb03298381bece33df493447e17e76 \
+                    size    3909191
 
     checksums-append \
         ${name}-${version}-x86_64-apple-darwin${extract.suffix} \
-rmd160  ac5eff8ae2489845f9761c275b03677a50309c1a \
-sha256  b6f7c662ea75a94f5a5e41c2fee95f09a5ba168429ac8cdd41f6ba2c78d1b07f \
-size    4215369
+                    rmd160  ac5eff8ae2489845f9761c275b03677a50309c1a \
+                    sha256  b6f7c662ea75a94f5a5e41c2fee95f09a5ba168429ac8cdd41f6ba2c78d1b07f \
+                    size    4215369
 
     if {![variant_isset universal]} {
         set rust_platform [cargo.rust_platform ${build_arch}]
@@ -167,9 +167,7 @@ size    4215369
     }
 }
 
-subport ${name}-bootstrap {
-    revision        0
-}
+subport ${name}-bootstrap {}
 
 subport ${name}-stage1 {}
 
