@@ -5,6 +5,7 @@ PortGroup               php 1.1
 
 name                    php-uuid
 version                 1.0.4
+revision                1
 categories-append       net www
 platforms               darwin
 maintainers             {pixilla @pixilla}
@@ -24,3 +25,10 @@ size    14900
 use_parallel_build      yes
 
 patchfiles              patch-osx_build.diff
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                        port:libuuid
+
+    configure.args      --with-uuid=${prefix}
+}
