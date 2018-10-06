@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -22,13 +22,13 @@ distfiles           git-${version}${extract.suffix} \
                     git-manpages-${version}${extract.suffix}
 
 checksums           git-${version}${extract.suffix} \
-                    rmd160  f03b87ab8ad24e9c7ceb346f25da1ea6621f59e4 \
-                    sha256  345056aa9b8084280b1b9fe1374d232dec05a34e8849028a20bfdb56e920dbb5 \
-                    size    5227908 \
+rmd160  f03b87ab8ad24e9c7ceb346f25da1ea6621f59e4 \
+sha256  345056aa9b8084280b1b9fe1374d232dec05a34e8849028a20bfdb56e920dbb5 \
+size    5227908 \
                     git-manpages-${version}${extract.suffix} \
-                    rmd160  c8b980adb1ddefc064b9aa6075a1e6b524124d86 \
-                    sha256  27af909c7a43ffc8b1736af19a6a68d8a5b177963ec4ddd2b2f9f0ed53bcc6ee \
-                    size    431852
+rmd160  c8b980adb1ddefc064b9aa6075a1e6b524124d86 \
+sha256  27af909c7a43ffc8b1736af19a6a68d8a5b177963ec4ddd2b2f9f0ed53bcc6ee \
+size    431852
 
 perl5.require_variant   yes
 perl5.conflict_variants no
@@ -145,9 +145,9 @@ variant pcre {
 variant doc description {Install HTML and plaintext documentation} {
     distfiles-append        git-htmldocs-${version}${extract.suffix}
     checksums-append        git-htmldocs-${version}${extract.suffix} \
-                            rmd160  d956f14e3d5f3b1bca0fdeb71e7f1e0adb74b168 \
-                            sha256  7252eb32735ca60f86d0a2081891c8cc5937a2e03373c92e8eaf657029776482 \
-                            size    1222052
+rmd160  d956f14e3d5f3b1bca0fdeb71e7f1e0adb74b168 \
+sha256  7252eb32735ca60f86d0a2081891c8cc5937a2e03373c92e8eaf657029776482 \
+size    1222052
 
     patchfiles-append       git-subtree.html.diff
 

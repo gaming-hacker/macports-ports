@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ master_sites        pypi:w/${real_name}
 distname            wheel-${version}
 
 checksums           rmd160  c73fb5935bd2168d8ba711b0840e14fabf0f5490 \
-                    sha256  d215f4520a1ba1851a3c00ba2b4122665cd3d6b0834d2ba2816198b1e3024a0e \
-                    size    17635
+sha256  d215f4520a1ba1851a3c00ba2b4122665cd3d6b0834d2ba2816198b1e3024a0e \
+size    17635
 
-python.versions     27 35 36 37
+python.versions 27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

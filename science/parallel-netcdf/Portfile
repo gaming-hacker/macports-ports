@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               mpi 1.0
@@ -25,8 +25,8 @@ homepage                http://cucis.ece.northwestern.edu/projects/PnetCDF
 master_sites            http://cucis.ece.northwestern.edu/projects/PnetCDF/Release/
 
 checksums               rmd160  4de992174820518019392150d976d7f7eb81375e \
-                        sha256  ed189228b933cfeac3b7b4f8944eb00e4ff2b72cf143365b1a77890980663a09 \
-                        size    2089202
+sha256  ed189228b933cfeac3b7b4f8944eb00e4ff2b72cf143365b1a77890980663a09 \
+size    2089202
 
 mpi.setup               require -gcc7 -gfortran
 

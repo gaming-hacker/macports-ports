@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup muniversal 1.0
 
 name			clamav
@@ -15,8 +17,8 @@ long_description	Clam AntiVirus is a GPL anti-virus toolkit for UNIX. The \
 homepage		http://www.clamav.net
 master_sites		http://www.clamav.net/downloads/production
 checksums	rmd160	53ef5ac3d157859496f3f0a4cc34bb01bb318474 \
-		sha256	4a2e4f0cd41e62adb5a713b4a1857c49145cd09a69957e6d946ecad575206dd6 \
-		size	15926420
+sha256	4a2e4f0cd41e62adb5a713b4a1857c49145cd09a69957e6d946ecad575206dd6 \
+size	15926420
 
 platforms	   	darwin
 

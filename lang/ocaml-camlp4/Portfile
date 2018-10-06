@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ocaml 1.0
@@ -25,8 +25,8 @@ long_description    \
 platforms           darwin
 
 checksums           rmd160  0debc3445734399aabe6542c9832390d8d4c0383 \
-                    sha256  1d3b47fab296a195d897989c4beeb72136bb815dce033dfc136b6544118c97be \
-                    size    648864
+sha256  1d3b47fab296a195d897989c4beeb72136bb815dce033dfc136b6544118c97be \
+size    648864
 
 configure.pre_args  --bindir=${prefix}/bin --libdir=${prefix}/lib/ocaml --pkgdir=${ocamlfind_dir}
 

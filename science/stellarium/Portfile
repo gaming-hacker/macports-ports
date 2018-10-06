@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,8 +26,8 @@ if {${name} eq ${subport}} {
     conflicts       stellarium-devel stellarium-qt4
     github.setup    Stellarium stellarium 0.18.2 v
     checksums       rmd160  7eb375e9c1cfa57e81bf35ce40c36fe3a81f95b5 \
-                    sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
-                    size    265610764
+sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
+size    265610764
 
 } else {
 
@@ -40,8 +40,8 @@ if {${name} eq ${subport}} {
     github.setup    Stellarium stellarium 23071b96bfbebc6381539c213632281533e2f5b0
     version         20181003
     checksums       rmd160 4d7322f5822ea596ba821e3717771fd16e99a9a4 \
-                    sha256 4e4df037a92fd947519b1b65c3aeb8e65f29627d00a4fc23d6eeaf9805272f36 \
-                    size   266306444
+sha256 4e4df037a92fd947519b1b65c3aeb8e65f29627d00a4fc23d6eeaf9805272f36 \
+size   266306444
 
 }
 
