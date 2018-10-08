@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.ip.color 2.0.4 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  00d27bc6f15f2ccb26b184b3d4cf21037cdc63ad \
 sha256  ddd68b15251a7f811cb6e8f3f0ab3ba5b78c12b7e91163d70d56a06a3eba6608

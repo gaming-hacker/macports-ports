@@ -2,7 +2,7 @@
 
 PortSystem	1.0
 
-name			subversion-python27bindings
+name			subversion-python37bindings
 version			1.9.7
 categories		devel python
 platforms		darwin
@@ -29,7 +29,7 @@ dist_subdir		subversion
 depends_lib		port:expat \
 			port:apr port:apr-util \
 			port:db46 port:subversion \
-			port:python27 \
+			port:python37 \
 			port:sqlite3 \
 			port:gettext port:libiconv \
 			port:serf1 port:cyrus-sasl2 \
@@ -40,10 +40,10 @@ depends_lib		port:expat \
 depends_build		port:swig
 
 post-patch {
-	system "export LANG=C; cd ${worksrcpath}; find build* Makefile.in subversion/bindings/swig/python -type f -print0 | xargs -0 sed -i -e 's/libsvn_swig_py/libsvn_swig_py27/g'"
+	system "export LANG=C; cd ${worksrcpath}; find build* Makefile.in subversion/bindings/swig/python -type f -print0 | xargs -0 sed -i -e 's/libsvn_swig_py/libsvn_swig_py37/g'"
 	file rename \
 		${worksrcpath}/subversion/bindings/swig/python/libsvn_swig_py \
-		${worksrcpath}/subversion/bindings/swig/python/libsvn_swig_py27
+		${worksrcpath}/subversion/bindings/swig/python/libsvn_swig_py37
 }
 
 configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
@@ -55,10 +55,10 @@ configure.args		--with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db
 			--with-libmagic=${prefix} \
 			--without-gnome-keyring
 
-configure.env		ac_cv_path_PYTHON=${prefix}/bin/python2.7 \
-			ac_cv_python_includes=-I${frameworks_dir}/Python.framework/Versions/2.7/include/python2.7 \
-			ac_cv_python_link="${configure.cc} -L${prefix}/lib -bundle -undefined dynamic_lookup ${frameworks_dir}/Python.framework/Versions/2.7/Python" \
-			ac_cv_python_libs="-L${prefix}/lib -bundle -undefined dynamic_lookup ${frameworks_dir}/Python.framework/Versions/2.7/Python" \
+configure.env		ac_cv_path_PYTHON=${prefix}/bin/python3.7 \
+			ac_cv_python_includes=-I${frameworks_dir}/Python.framework/Versions/3.7/include/python3.7 \
+			ac_cv_python_link="${configure.cc} -L${prefix}/lib -bundle -undefined dynamic_lookup ${frameworks_dir}/Python.framework/Versions/3.7/Python" \
+			ac_cv_python_libs="-L${prefix}/lib -bundle -undefined dynamic_lookup ${frameworks_dir}/Python.framework/Versions/3.7/Python" \
 			ac_cv_python_compile=${configure.cc}
 
 use_parallel_build      yes
@@ -94,7 +94,7 @@ variant no_bdb description {Build without support for BerkeleyDB repositories} {
 			}
 
 post-destroot {
-		set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
+		set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7
 
 		xinstall -m 755 -d ${destroot}${PYTHON_PATH}/site-packages
 		xinstall -m 755 ${filespath}/svn-python.pth \
@@ -103,7 +103,7 @@ post-destroot {
 			${destroot}${PYTHON_PATH}/site-packages/svn-python.pth
 
 		file rename "${destroot}${prefix}/lib/svn-python" \
-			"${destroot}${prefix}/lib/svn-python2.7"
+			"${destroot}${prefix}/lib/svn-python3.7"
 		}
 
 # CarbonCore/MacTypes.h: No such file or directory

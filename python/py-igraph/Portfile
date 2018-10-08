@@ -9,7 +9,7 @@ categories-append   math
 platforms           darwin
 license             GPL-2+
 
-python.versions 27 36 37
+python.versions 37
 
 maintainers         {snc @nerdling} openmaintainer
 

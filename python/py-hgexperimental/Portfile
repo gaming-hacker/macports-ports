@@ -21,17 +21,17 @@ long_description    ${description}
 checksums           rmd160  39c43b4a1ac0635867de8d0c8bc04f0676bb492c \
 sha256  d28de8ed29f4ad6a4b680a9f05c21898fa17a8016cecda72d326fe741f92958d
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         bin:cargo:cargo
     depends_lib-append  path:bin/hg:mercurial \
-                        port:py27-cython \
+                        port:py37-cython \
                         port:lz4
 
     post-destroot {
-        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
 
         # conflicts with hg and is not needed
         delete {*}[glob ${sp}/hgext3rd/__init__.py*]

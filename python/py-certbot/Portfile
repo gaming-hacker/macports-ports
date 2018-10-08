@@ -13,6 +13,6 @@ license             Apache-2
 maintainers         {mps @Schamschula}
 homepage            https://letsencrypt.org/
 
-subport py27-certbot {
+subport py37-certbot {
     replaced_by     certbot
 }

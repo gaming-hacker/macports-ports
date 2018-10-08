@@ -48,14 +48,14 @@ configure.args      --disable-fatal-warnings \
                     --disable-libusb \
                     --disable-osc
 
-variant python27 description {Enable the Python 2.7 API} {
-    depends_lib-append      port:python27 port:py27-protobuf3
+variant python37 description {Enable the Python 3.7 API} {
+    depends_lib-append      port:python37 port:py37-protobuf3
     configure.args-append   --enable-python-libs
-    configure.python        ${prefix}/bin/python2.7
+    configure.python        ${prefix}/bin/python3.7
 }
 
-variant rdm_tests requires python27 description {Enable the RDM Tests} {
-    depends_lib-append      port:py27-numpy
+variant rdm_tests requires python37 description {Enable the RDM Tests} {
+    depends_lib-append      port:py37-numpy
     configure.args-append   --enable-rdm-tests
 }
 
@@ -84,7 +84,7 @@ variant osc description {Build with OSC support} {
     configure.args-delete   --disable-osc
 }
 
-default_variants    +http +libusb +osc +python27
+default_variants    +http +libusb +osc +python37
 if {![variant_isset libftdi1]} {
     default_variants-append +libftdi0
 }

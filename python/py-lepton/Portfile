@@ -17,7 +17,7 @@ long_description \
    with OpenGL (via pyglet, PyOpenGL, wxPython, etc), or with pygame by \
    selecting the appropriate renderer.
 
-python.versions 27 36 37
+python.versions 37
 
 platforms           darwin
 

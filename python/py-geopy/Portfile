@@ -28,7 +28,7 @@ checksums           rmd160  29c4d477f7240c80500705c6a035509f6ed0218a \
 sha256  9faac0c73aa34f11579a1cae90d262f4043ce74d3c4131210326a3c3b1b56632 \
 size    236619
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-geographiclib \

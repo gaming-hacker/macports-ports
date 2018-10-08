@@ -35,7 +35,7 @@ master_sites        pypi:${_n}/${_name}/
 checksums           rmd160  097cdb2f7be28792abcf1673314c68d1af9edb4b \
 sha256  5671f88c8dd8aecaac650761d18f74a2789b88a9337eb7433abe92a5e0be6780
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-cherrypy3

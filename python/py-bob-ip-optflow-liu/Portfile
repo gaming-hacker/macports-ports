@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.ip.optflow.liu 2.0.5 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  29b29cdb657b6cc003a5aa945aa47cd8fcc38805 \
 sha256  b5eedc44bbe0a9a5cef316771f72451e5f41d66a941e0b78c889502de68b412e

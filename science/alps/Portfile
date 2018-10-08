@@ -127,7 +127,7 @@ foreach s ${pythons_suffixes} {
     "
 }
 
-set selected_version python27
+set selected_version python37
 foreach s ${pythons_suffixes} {
     if {[variant_isset python${s}]} {
         set selected_version python${s}

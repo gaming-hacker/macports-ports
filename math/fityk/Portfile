@@ -42,7 +42,7 @@ depends_lib         port:boost \
                     port:xylib \
                     port:lua \
                     port:zlib \
-                    port:python27 \
+                    port:python37 \
                     port:${wxWidgets.port}
 
 depends_run         port:gnuplot
@@ -50,10 +50,10 @@ depends_run         port:gnuplot
 configure.args-append --with-wxdir=${wxWidgets.wxdir}
 
 variant docs description {Build and install documentation} {
-    depends_build-append port:py27-sphinx
+    depends_build-append port:py37-sphinx
     # TODO: use a python PortGroup and variable
     pre-build {
-        reinplace "s|sphinx-build|${frameworks_dir}/Python.framework/Versions/2.7/bin/sphinx-build|" ${worksrcpath}/doc/Makefile
+        reinplace "s|sphinx-build|${frameworks_dir}/Python.framework/Versions/3.7/bin/sphinx-build|" ${worksrcpath}/doc/Makefile
         system -W ${worksrcpath}/doc make
     }
 }

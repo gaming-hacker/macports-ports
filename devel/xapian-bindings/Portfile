@@ -38,10 +38,10 @@ variant php description {build php bindings} {
     configure.args-replace  --without-php --with-php
 }
 
-variant python27 description {build python 2.7 bindings} {
-    depends_lib-append      port:python27
+variant python37 description {build python 3.7 bindings} {
+    depends_lib-append      port:python37
 
-    configure.python        ${prefix}/bin/python2.7
+    configure.python        ${prefix}/bin/python3.7
     configure.args-replace  --without-python --with-python
 }
 

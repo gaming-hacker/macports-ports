@@ -19,7 +19,7 @@ long_description    pyobfuscate is a source code obfuscator: It makes \
                     Python source code hard to read for humans, while \
                     still being executable for the Python interpreter.
 
-python.default_version  27
+python.default_version 37
 
 checksums           rmd160  2dffbe40b64a5fcbb0374a8ff34074b24a0d8c50 \
 sha256  191091b082a6a04245fc606187036ab36d9f95557137149879abac9780fa3de4

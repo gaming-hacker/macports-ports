@@ -20,7 +20,7 @@ bitbucket.tarball_from \
                     downloads
 
 depends_build       port:pkgconfig \
-                    port:py27-docutils
+                    port:py37-docutils
 depends_lib         port:libffi \
                     port:sqlite3 \
                     port:bzip2 \
@@ -67,7 +67,7 @@ size    22648140
 }
 
 if {$subport == ${name}} {
-    set python.branch 2.7
+    set python.branch 3.7
     set pypy_c_name pypy-c
 
     depends_run-append port:python2_select
@@ -142,8 +142,8 @@ if {$subport ne $name} {
         build.cmd       ${prefix}/lib/pypy-bootstrap/bin/pypy
     } else {
         # fall back to good old CPython...
-        depends_build-append port:python27
-        build.cmd       ${prefix}/bin/python2.7
+        depends_build-append port:python37
+        build.cmd       ${prefix}/bin/python3.7
     }
 }
 

@@ -25,7 +25,7 @@ sha256  fb78b50c596c3ba6a097751dd9a379e7acaf57edd36311a3afa94caa4312ee08
 
 mpi.setup           require
 
-python.versions 27 36 37
+python.versions 37
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc

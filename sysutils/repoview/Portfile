@@ -20,10 +20,10 @@ sha1 92d4e421775f0616ea90b7307776b50c222e479f \
 rmd160 4b68b84095104a8e5ff6657c76e9ff8d63fc5b9a
 patchfiles		patch-repoview.py
 
-depends_run		port:python27 port:yum port:py27-kid
+depends_run		port:python37 port:yum port:py37-kid
 
 post-patch {
-	reinplace "s|/usr/bin/python|${prefix}/bin/python2.7|g" ${worksrcpath}/repoview.py
+	reinplace "s|/usr/bin/python|${prefix}/bin/python3.7|g" ${worksrcpath}/repoview.py
 	reinplace "s|/usr/share/repoview|${prefix}/share/repoview|g" ${worksrcpath}/repoview.py
 	reinplace "s|'./templates'|'${prefix}/share/repoview/templates'|g" ${worksrcpath}/repoview.py
 }

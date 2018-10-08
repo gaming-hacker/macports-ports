@@ -26,8 +26,8 @@ depends_lib         port:boost \
                     port:fftw-3-single \
                     port:libsamplerate \
                     port:libsndfile \
-                    port:python27 \
-                    port:py27-pyqt4
+                    port:python37 \
+                    port:py37-pyqt4
 
 depends_run         path:lib/libavcodec.dylib:ffmpeg
 
@@ -35,4 +35,4 @@ patchfiles          patch-CMakeLists.txt.diff
 
 cmake.out_of_source yes
 
-configure.args      -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python2.7
+configure.args      -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.7

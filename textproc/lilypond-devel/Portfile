@@ -51,9 +51,9 @@ depends_lib         port:fontconfig \
                     port:texlive-metapost \
                     port:dblatex \
                     port:libtool \
-                    port:python27
+                    port:python37
 
-configure.python    ${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+configure.python    ${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7
 
 patchfiles          patch-scripts-build-mf2pt1.pl.diff
 post-patch {

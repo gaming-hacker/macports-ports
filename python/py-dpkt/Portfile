@@ -21,7 +21,7 @@ master_sites            pypi:d/dpkt
 checksums               rmd160  cb26e932fe407834370629f6857aab8295131e2b \
 sha256  d99525e534266818ecd122052f4086c684a88491c8073a848193bbf13ed69800
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     livecheck.type      none

@@ -234,28 +234,28 @@ default_variants +docs +examples +libusb +manual +test +manpages +gpsd
 
 # select Python to use; default to 2.7
 
-variant python27 conflicts python34 python35 python36 description {Build using Python 2.7} {}
-variant python34 conflicts python27 python35 python36 description {Build using Python 3.4} {}
-variant python35 conflicts python27 python34 python36 description {Build using Python 3.5} {}
-variant python36 conflicts python27 python34 python35 description {Build using Python 3.6} {}
+variant python37 conflicts python34 python35 python36 description {Build using Python 3.7} {}
+variant python34 conflicts python37 python35 python36 description {Build using Python 3.4} {}
+variant python35 conflicts python37 python34 python36 description {Build using Python 3.5} {}
+variant python36 conflicts python37 python34 python35 description {Build using Python 3.6} {}
 
-if {![variant_isset python27] &&
+if {![variant_isset python37] &&
     ![variant_isset python34] &&
     ![variant_isset python35] &&
     ![variant_isset python36]} {
-    default_variants +python27
+    default_variants +python37
 }
 
-if {![variant_isset python27] &&
+if {![variant_isset python37] &&
     ![variant_isset python34] &&
     ![variant_isset python35] &&
     ![variant_isset python36]} {
-    ui_error "\n\nYou must select one of the variants +python27 , +python34 , +python35, or +python36 .\n"
+    ui_error "\n\nYou must select one of the variants +python37 , +python34 , +python35, or +python36 .\n"
     return -code error "Invalid variant selection"
 }
 
 set PythonVersionNoDot ""
-if {[variant_isset python27]} {
+if {[variant_isset python37]} {
     set PythonVersionNoDot "27"
 } elseif {[variant_isset python34]} {
     set PythonVersionNoDot "34"

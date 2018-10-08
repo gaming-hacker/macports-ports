@@ -16,7 +16,7 @@ long_description    This Python module returns a tzinfo object with the local \
 platforms           darwin
 license             MIT
 
-python.versions 27 36 37
+python.versions 37
 
 checksums           rmd160  7b36602b2940534e97c3aeb67065a4b9446a8b46 \
 sha256  498469a5c544ea85a85f25a4b6896221b9ebb0fe4b6c139a12e2b6a2a466da89

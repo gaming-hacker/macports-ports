@@ -10,7 +10,7 @@ set python_versions {27 34 35 36 37}
 
 # this default version should stay synchronized with python_get_default_version
 #    in the python PortGroup
-set python_default_version 27
+set python.default_version 37
 
 maintainers     {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
 license         MIT
@@ -78,7 +78,7 @@ size    787426
 
         pre-configure {
             # determine any abiflags; works for Python 3+ only; will
-            # catch for Python 2.7 and we know there are no flags.
+            # catch for Python 3.7 and we know there are no flags.
             if {[catch {set abiflags [exec ${python_config} --abiflags]}]} {
                 set abiflags ""
             }

@@ -22,7 +22,7 @@ long_description    DNSViz is a tool suite for measurement, diagnostic, and \
 checksums           rmd160 d9bd064eed67e89e3a941f2113062f9576ffe839 \
 sha256 b94f06afb78754ef70597b214a3bd29c0d2f1fd1478ddc8bdd35edc372703ce2
 
-python.default_version  27
+python.default_version 37
 
 depends_build       path:bin/dot:graphviz
 

@@ -53,8 +53,8 @@ depends_lib         port:desktop-file-utils \
                     port:aspell \
                     port:gtkspell2 \
                     port:potrace \
-                    port:py27-lxml \
-                    port:py27-numpy
+                    port:py37-lxml \
+                    port:py37-numpy
 
 pre-fetch {
     ui_msg "--->  Fetching source from bzr repository: this may take a while"
@@ -64,12 +64,12 @@ patchfiles          patch-use-configured-perl.diff
 
 post-patch {
     reinplace "s|@@MP_PERL@@|${prefix}/bin/perl${perl_version}|" ${worksrcpath}/Makefile.am
-    reinplace "s|\"python-interpreter\", \"python\"|\"python-interpreter\", \"python2.7\"|g" ${worksrcpath}/src/extension/implementation/script.cpp
+    reinplace "s|\"python-interpreter\", \"python\"|\"python-interpreter\", \"python3.7\"|g" ${worksrcpath}/src/extension/implementation/script.cpp
     reinplace "s|^#include \"Object.h\"|#include \"${prefix}/include/poppler/Object.h\"|" ${worksrcpath}/src/extension/internal/pdfinput/pdf-parser.h
     reinplace "s|^#include \"Object.h\"|#include \"${prefix}/include/poppler/Object.h\"|" ${worksrcpath}/src/extension/internal/pdfinput/pdf-parser.cpp
 }
 
-# py27-numpy is currently not universal (#48263).
+# py37-numpy is currently not universal (#48263).
 
 universal_variant no
 
@@ -83,7 +83,7 @@ platform darwin {
 
 configure.cmd       ./autogen.sh && ./configure
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 configure.args      --without-gnome-vfs \
                     --enable-lcms \

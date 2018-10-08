@@ -73,7 +73,7 @@ depends_build       port:autoconf \
                     path:bin/cmake:cmake \
                     port:libtool \
                     port:pkgconfig \
-                   {bin:python2(\.(4|5|6|7))?:python27} \
+                   {bin:python2(\.(4|5|6|7))?:python37} \
                     port:yasm
 
 # bzip2: freetype

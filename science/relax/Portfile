@@ -24,7 +24,7 @@ sha256  6791520ce38c949de214b8b0260f1cccdad11de61598934c57869f86d4463316
 
 use_bzip2           yes
 
-python.default_version 27
+python.default_version 37
 
 depends_build-append \
                     port:scons

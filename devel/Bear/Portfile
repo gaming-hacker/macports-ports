@@ -21,10 +21,10 @@ long_description    ${description} \
     available then it is easy to re-run the compilation with different \
     programs.
 
-depends_lib-append  port:python27
+depends_lib-append  port:python37
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|g" \
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|g" \
         ${worksrcpath}/bear/main.py.in
 }
 

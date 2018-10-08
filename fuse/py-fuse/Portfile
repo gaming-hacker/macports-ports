@@ -20,7 +20,7 @@ platforms           darwin
 checksums           rmd160  c0acad069284e3adba7db8aaf957c7d228c488fc \
 sha256  e61f453aac7c4e7db8afefb1df0665949111e6685a20fad28876dc64ed5fe699
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:pkgconfig

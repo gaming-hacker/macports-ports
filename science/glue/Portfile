@@ -29,7 +29,7 @@ checksums     rmd160 1df76f5f46646a09d649d94c77b4b46af5cbec28 \
 sha256 3d48ce049ff9369cd890428312a2fc68d6ac8324448b8b8a8ef8baf497e68339 \
 size 2535460
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append port:py${python.version}-numpy \
                    port:py${python.version}-pyrxp \

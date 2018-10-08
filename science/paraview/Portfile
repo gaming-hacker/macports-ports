@@ -109,15 +109,15 @@ destroot {
 
 
 # other pythons?
-variant python27 conflicts python36 description {Add Python 2.7 support.} {
-    depends_lib-append  port:py27-matplotlib
+variant python37 conflicts python36 description {Add Python 3.7 support.} {
+    depends_lib-append  port:py37-matplotlib
     configure.args-append \
         -DPARAVIEW_ENABLE_PYTHON:BOOL=ON \
-        -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
-        -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/Headers/ \
-        -DPYTHON_LIBRARY=${prefix}/lib/libpython2.7.dylib
+        -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
+        -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/3.7/Headers/ \
+        -DPYTHON_LIBRARY=${prefix}/lib/libpython3.7.dylib
 }
-variant python36 conflicts python27 description {Add Python 3.6 support.} {
+variant python36 conflicts python37 description {Add Python 3.6 support.} {
     depends_lib-append  port:py36-matplotlib
     configure.args-append \
         -DPARAVIEW_ENABLE_PYTHON:BOOL=ON \
@@ -127,7 +127,7 @@ variant python36 conflicts python27 description {Add Python 3.6 support.} {
         -DVTK_PYTHON_VERSION=3
 }
 
-if {[variant_isset python27] || [variant_isset python36]} {
+if {[variant_isset python37] || [variant_isset python36]} {
     notes-append\
         "\n Currently Paraview installs as an app, including the Python modules. To use with MacPorts Python, add ${applications_dir}/paraview.app/Contents/Python/:${applications_dir}/paraview.app/Contents/Libraries/ to PYTHONPATH and ${applications_dir}/paraview.app/Contents/Libraries/ to DYLD_LIBRARY_PATH. Also, simultaneous use of independent vtk libraries, e.g. with Mayavi, may result in segfault."
 }

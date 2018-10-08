@@ -21,7 +21,7 @@ long_description    The BEDTools utilities allow one to address common genomics 
 checksums           rmd160  2a0fc10ce07f6228ee006e297577560bc24e35af \
 sha256  eb7028247d0e4732f113076fdbd580b8601365f7830cf19649d4d3116af08dfd
 
-depends_build       port:py27-sphinx
+depends_build       port:py37-sphinx
 
 depends_lib         port:zlib
 

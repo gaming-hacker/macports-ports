@@ -21,10 +21,10 @@ sha1 b4964ea3caf039954467374ffd7769cc6875c70a \
 rmd160 aa6021d6cc3e01f8b7dde108a966210dd7480509
 patchfiles		patch-prefix.diff patch-sqlite.diff
 
-depends_run		port:python27 port:yum
-depends_test	port:py27-checker
+depends_run		port:python37 port:yum
+depends_test	port:py37-checker
 
-set python.bin	${prefix}/bin/python2.7
+set python.bin	${prefix}/bin/python3.7
 
 patch {
 		foreach patch $patchfiles {

@@ -23,7 +23,7 @@ distname            py2app-${version}
 checksums           rmd160 4844d4c413f9146936ea6b1399732c036dac8337 \
 sha256 d0d36cbfef887dfd1c3488d23e5aaf743a65038ddfdf3c2b1343daec80e2da25
 
-python.versions 27 36 37
+python.versions 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-macholib

@@ -28,7 +28,7 @@ checksums       md5     e4d51fa6770efb75bb8c74c0e52486da \
 sha1    1706e8f62065eb503d1f8c45c0c671f027c93666 \
 rmd160  dfdbc865fdffe7aa8f572f1a378ac9ef15462186
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-testtools    

@@ -44,12 +44,12 @@ configure.args      --enable-compile-warnings=no \
 
 # one each of python2 python3 allowed
 
-variant python27 description {Build Python2 bindings using Python 2.7} {
-    depends_lib-append      port:py27-gobject3
-    configure.env-append    PYTHON2_PATH=${prefix}/bin/python2.7
+variant python37 description {Build Python2 bindings using Python 3.7} {
+    depends_lib-append      port:py37-gobject3
+    configure.env-append    PYTHON2_PATH=${prefix}/bin/python3.7
 }
 
-default_variants +python27
+default_variants +python37
 
 variant python35 conflicts python36 description {Build Python3 bindings using Python 3.5} {
     depends_lib-append      port:py35-gobject3

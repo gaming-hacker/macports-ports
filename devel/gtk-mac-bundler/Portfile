@@ -44,11 +44,11 @@ build {}
 # DEPLOYMENT
 #-----------
 pre-destroot {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|g" ${worksrcpath}/gtk-mac-bundler.in
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|g" ${worksrcpath}/gtk-mac-bundler.in
     reinplace "s|@PATH@|${frameworks_dir}/Python.framework/Version/2.7/lib/site-packages|g" ${worksrcpath}/gtk-mac-bundler.in
     reinplace "s|\${env:JHBUILD_PREFIX}|${prefix}|g" ${worksrcpath}/examples/gtk3-demo.bundle
-    xinstall -m 755 -d ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
-    copy ${worksrcpath}/bundler ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/
+    xinstall -m 755 -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7
+    copy ${worksrcpath}/bundler ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/
     file mkdir ${destroot}${prefix}/share/${name}
     copy ${worksrcpath}/examples ${destroot}${prefix}/share/${name}
 }

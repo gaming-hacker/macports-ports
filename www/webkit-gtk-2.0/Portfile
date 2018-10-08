@@ -236,9 +236,9 @@ default_variants +video
 
 platform darwin {
     if {${os.major} < 10} {
-        depends_build-append      port:python27
+        depends_build-append      port:python37
         # https://trac.macports.org/ticket/35793
-        configure.python          ${prefix}/bin/python2.7
+        configure.python          ${prefix}/bin/python3.7
 
         # https://trac.macports.org/ticket/38682
         configure.optflags-append -fno-blocks

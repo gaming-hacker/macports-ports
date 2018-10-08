@@ -35,7 +35,7 @@ checksums           rmd160  4533c09c33394ca31ab081ed09f370dfac415882 \
 sha256  7253265f7abd8b313e3892944044a365e3f4ac3fcdcfb4298f55ee9ddf188ba0 \
 size    140608
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     # apply upstream patches so that flake8 works with latest versions of
@@ -50,7 +50,7 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-codestyle \
                             port:py${python.version}-flake8-mccabe
 
-    # Additional dependencies for Python 2.7
+    # Additional dependencies for Python 3.7
     if { ${python.version} < 30 } {
         depends_lib-append  port:py${python.version}-configparser \
                             port:py${python.version}-enum34

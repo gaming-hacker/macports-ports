@@ -82,15 +82,8 @@ depends_skip_archcheck-append \
                     port:texlive-latex-recommended
 
 post-destroot {
-    set python.branch ""
-    if {[variant_isset python27]} {
-        set python.branch   2.7
-    } elseif {[variant_isset python35]} {
-        set python.branch   3.5
-    } elseif {[variant_isset python36]} {
-        set python.branch   3.6
-    }
-    if {${python.branch} != ""} { 
+    set python.branch 3.7
+    if {${python.branch} != ""} {
         set python.bin      ${prefix}/bin/python${python.branch}
         reinplace "s|#!/usr/bin/env python|#!${python.bin}|" \
             {*}[glob -directory ${destroot}${prefix}/share/${name}/GUI *.py]
@@ -109,25 +102,25 @@ post-deactivate {
 
 # asymptote's GUI needs either pyXY-pil or pyXY-Pillow
 # https://trac.macports.org/ticket/44284
-variant python27 conflicts python35 python36 description {Enable xasy GUI using Python 2.7} {
+variant python37 conflicts python35 python36 description {Enable xasy GUI using Python 3.7} {
     set python.version  27
     set python.branch   "[string range ${python.version} 0 end-1].[string index ${python.version} end]"
 
     depends_lib-append  port:py${python.version}-tkinter \
                         path:${frameworks_dir}/Python.framework/Versions/${python.branch}/lib/python${python.branch}/site-packages/PIL:py${python.version}-Pillow
 }
-variant python35 conflicts python27 python36 description {Enable xasy GUI using Python 3.5} {
+variant python35 conflicts python37 python36 description {Enable xasy GUI using Python 3.5} {
     set python.version  35
     depends_lib-append  port:py${python.version}-tkinter \
                         port:py${python.version}-Pillow
 }
-variant python36 conflicts python27 python35 description {Enable xasy GUI using Python 3.6} {
+variant python36 conflicts python37 python35 description {Enable xasy GUI using Python 3.6} {
     set python.version  36
     depends_lib-append  port:py${python.version}-tkinter \
                         port:py${python.version}-Pillow
 }
 
-if {![variant_isset python27] && ![variant_isset python35]} {
+if {![variant_isset python37] && ![variant_isset python35]} {
     default_variants +python36
 }
 

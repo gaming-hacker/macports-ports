@@ -47,8 +47,8 @@ size   8755304
     # can't use it until the port is split up between the C/C++ and
     # Python code.
 
-    depends_run             port:python27
-    configure.python        ${prefix}/bin/python2.7
+    depends_run             port:python37
+    configure.python        ${prefix}/bin/python3.7
 
     post-destroot {
         reinplace "s|#!/usr/bin/env python|#!${configure.python}|" \
@@ -104,7 +104,7 @@ size   9770512
         variant ${p} description "Build ${name} to use Python ${v}" conflicts {*}${c} ""
     }
 
-    # default to +python27
+    # default to +python37
     set selected_python_ver_no_dot "27"
     foreach s ${pythons_suffixes} {
         if {[variant_isset python${s}]} {
@@ -113,7 +113,7 @@ size   9770512
     }
     default_variants +python${selected_python_ver_no_dot}
 
-    # make sure -python27 isn't specified alone
+    # make sure -python37 isn't specified alone
     set selected_python_ver_no_dot ""
     foreach s ${pythons_suffixes} {
         if {[variant_isset python${s}]} {
@@ -121,7 +121,7 @@ size   9770512
         }
     }
     if {${selected_python_ver_no_dot} eq ""} {
-        ui_error "\n\nYou must select one of the Python variants: +python27, +python34, +python35, +python36, or +python37.\n"
+        ui_error "\n\nYou must select one of the Python variants: +python37, +python34, +python35, +python36, or +python37.\n"
     return -code error "Invalid Python variant selection"
     }
 
@@ -260,7 +260,7 @@ variant dbus description {Include support for DBUS} {
 
 variant xgps \
 description {Include xgps/xgpsspeed X11 clients (dependency-intensive)} {
-    depends_run-append      port:py27-cairo port:py27-gobject3 port:gtk3
+    depends_run-append      port:py37-cairo port:py37-gobject3 port:gtk3
     build.args-delete       xgps=no
     build.args-append       xgps=yes
     test.args-delete        xgps=no

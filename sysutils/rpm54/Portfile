@@ -43,7 +43,7 @@ depends_lib         port:beecrypt \
                     port:ossp-uuid \
                     port:pcre \
                     port:popt \
-                    port:python27 \
+                    port:python37 \
                     port:readline \
                     port:sqlite3 \
                     port:xar \
@@ -92,7 +92,7 @@ configure.args      --disable-nls \
 
 configure.env       PERL=${perl5.bin} \
                     __PERL=${perl5.bin} \
-                    __PYTHON=${prefix}/bin/python2.7
+                    __PYTHON=${prefix}/bin/python3.7
 
 configure.args-append       --disable-openmp \
                             --with-lua=internal \

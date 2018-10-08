@@ -280,7 +280,7 @@ platform darwin {
 set python.versions         {27 36}
 # Remove after 07-30-2018.
 dict set python.legacy_versions 35 36
-set python.default_version  27
+set python.default_version 37
 set python.version          ""
 
 # Create python variants.
@@ -520,10 +520,10 @@ variant debug description {Compile with debugging symbols} {
 }
 
 variant printable_doc description {Generate printable documents (PDF help)} {
-    # py27-pdfrw and py27-Pillow are needed by rst2pdf.
+    # py37-pdfrw and py37-Pillow are needed by rst2pdf.
     depends_build-append    port:rst2pdf \
-                            port:py27-pdfrw \
-                            port:py27-Pillow
+                            port:py37-pdfrw \
+                            port:py37-Pillow
     configure.args-replace  --disable-pdf-build \
                             --enable-pdf-build
 }

@@ -22,4 +22,4 @@ master_sites            pypi:p/pygeocoder/
 
 checksums               rmd160 6faf5e1a1bdaece5df41c8c97bb70385cc55121f
 
-python.versions 27 36 37
+python.versions 37

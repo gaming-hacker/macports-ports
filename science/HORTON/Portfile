@@ -21,7 +21,7 @@ homepage            https://theochem.github.io/horton/
 checksums           rmd160  68cf1658bf7de122923fc3949fb861a6896ab8be \
 sha256  e6410d00a012ab6bbeb18bd04d111e26cdcfc86171c092f50d0ad430e372c907
 
-python.default_version      27
+python.default_version 37
 
 depends_lib-append  path:lib/libopenblas.dylib:OpenBLAS \
                     port:libint \
@@ -49,7 +49,7 @@ post-destroot {
 }
 
 pre-activate {
-    if {![active_variants py27-numpy openblas]} {
-        notes {In order to have CHOLESKY work properly, please install numpy +openblas manually with the following command: sudo port -n upgrade --enforce-variants py27-numpy +openblas}
+    if {![active_variants py37-numpy openblas]} {
+        notes {In order to have CHOLESKY work properly, please install numpy +openblas manually with the following command: sudo port -n upgrade --enforce-variants py37-numpy +openblas}
     }
 }

@@ -76,15 +76,15 @@ variant qt5 description {Enable Qt5 widget} conflicts qt4 {
     #configure.args-append  -Denable-json-sample=OFF
 }
 
-variant python27 description {Enable python 2.7 interface} {
+variant python37 description {Enable python 3.7 interface} {
     depends_build-append port:swig-python
 
     depends_lib-append  \
-        port:python27   \
-        port:py27-numpy
+        port:python37   \
+        port:py37-numpy
 
     configure.args-replace -Denable-python=OFF -Denable-python=ON
-    configure.args-append  -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    configure.args-append  -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
 }
 
 #currently broken

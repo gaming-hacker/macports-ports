@@ -22,7 +22,7 @@ size    3865822
 
 # doesn't build with libressl as of 2016-09-05
 depends_lib-append  port:boost \
-                    port:python27 \
+                    port:python37 \
                     port:gflags \
                     port:google-glog \
                     port:double-conversion \

@@ -52,8 +52,8 @@ post-patch {
     if {[variant_isset python26]} {
         reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/2.6|" \
                             ${worksrcpath}/cmake/modules/python.cmake
-    } elseif {[variant_isset python27]} {
-        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/2.7|" \
+    } elseif {[variant_isset python37]} {
+        reinplace "s|\${CMAKE_INSTALL_EXEC_PREFIX}|${frameworks_dir}/Python.framework/Versions/3.7|" \
                             ${worksrcpath}/cmake/modules/python.cmake
     }
 }
@@ -170,7 +170,7 @@ subport ${name}-single {
     configure.args-append   -DPL_DOUBLE=OFF
 }
 
-if {[variant_isset py27_pyqt4]} {
+if {[variant_isset py37_pyqt4]} {
     default_variants +qt4
 }
 
@@ -214,7 +214,7 @@ variant java description {Add support for Java} {
     configure.args-append   -DENABLE_java=ON
 }
 
-variant python26 conflicts python27 description {Add support for python26} {
+variant python26 conflicts python37 description {Add support for python26} {
     depends_lib-append      port:python26 \
                             port:py26-numpy \
                             port:swig-python
@@ -223,18 +223,18 @@ variant python26 conflicts python27 description {Add support for python26} {
                             -DHAVE_NUMPY:BOOL=ON \
                             -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/2.6/Headers
 }
-variant python27 conflicts python26 description {Add support for python27} {
-    depends_lib-append      port:python27 \
-                            port:py27-numpy \
+variant python37 conflicts python26 description {Add support for python37} {
+    depends_lib-append      port:python37 \
+                            port:py37-numpy \
                             port:swig-python
     configure.args-delete   -DENABLE_python=OFF
     configure.args-append   -DENABLE_python=ON \
                             -DHAVE_NUMPY:BOOL=ON \
-                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/2.7/Headers
+                            -DPYTHON_INCLUDE_PATH=${frameworks_dir}/Python.framework/Versions/3.7/Headers
 }
 
-variant py27_pyqt4 requires python27 description {Add support for pyQT4 using python27} {
-    depends_lib-append      port:py27-pyqt4
+variant py37_pyqt4 requires python37 description {Add support for pyQT4 using python37} {
+    depends_lib-append      port:py37-pyqt4
     configure.args-delete   -DENABLE_pyqt4=OFF
     configure.args-append   -DENABLE_pyqt4=ON
 }

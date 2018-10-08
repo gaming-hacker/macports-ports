@@ -37,7 +37,7 @@ post-destroot {
 }
 
 variant tor description {Add support for using the TOR anonymising network} {
-    depends_run-append  bin:tor:tor port:py27-dpkt
+    depends_run-append  bin:tor:tor port:py37-dpkt
     
     post-destroot {
         xinstall -W ${worksrcpath} dsocks.sh dsocks-torify.sh tor-dns-proxy.py ${destroot}${prefix}/bin

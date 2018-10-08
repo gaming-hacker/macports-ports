@@ -43,8 +43,8 @@ patchfiles          patch-admin-Makefile.def.diff \
 
 depends_lib         port:gtk2 \
                     port:libpng \
-                    port:python27 \
-                    port:py27-numpy
+                    port:python37 \
+                    port:py37-numpy
 
 depends_build       port:cfitsio \
                     port:pkgconfig \
@@ -61,7 +61,7 @@ compilers.enforce_some_fortran cfitsio
 
 compilers.choose    fc
 compilers.setup     require_fortran
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 post-extract {
     if {![gcc_variant_isset]} {

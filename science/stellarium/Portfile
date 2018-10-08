@@ -57,7 +57,7 @@ depends_lib-append \
     path:lib/libgps.dylib:gpsd \
     port:gettext \
     port:doxygen \
-    port:python27
+    port:python37
 
 # for libqcocoa.dylib (if not above)
 
@@ -81,7 +81,7 @@ if {![tbool configure.ccache]} {
 
 configure.args-append \
     -DMP_APPLICATIONS_DIR=${applications_dir} \
-    -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
 
 # This post-destroot phase is similar to the 'make macosx_bundle' target,
 # but it does not copy libraries into the bundle and does not require perl as

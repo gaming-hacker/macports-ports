@@ -30,11 +30,11 @@ sha256  f1dcdd2073e6edb722675373995bfa93da6cc047b690b7b8100d95745584a1d3 \
 size    40331092
 
 depends_build       port:scons \
-                    port:py27-yaml \
-                    port:py27-typing \
-                    port:py27-regex \
-                    port:py27-cheetah \
-                    port:py27-setuptools
+                    port:py37-yaml \
+                    port:py37-typing \
+                    port:py37-regex \
+                    port:py37-cheetah \
+                    port:py37-setuptools
 
 depends_lib         port:libpcap \
                     path:lib/libssl.dylib:openssl

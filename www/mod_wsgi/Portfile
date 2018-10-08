@@ -20,7 +20,7 @@ long_description    The mod_wsgi module is written in C code directly \
 homepage            http://www.modwsgi.org/
 
 depends_lib         port:apache2 \
-                    port:python27
+                    port:python37
 
 checksums           rmd160  bd2354c24e35081ec7caa5404eba1f08f4d3b8c4 \
 sha256  c261f26245f08999065fe952f6dbf9e731e23a5a2c756038d8352789c8669fd9
@@ -42,7 +42,7 @@ variant apache22 description "use apache22 instead of apache2" {
 
 configure.args      --disable-framework \
                     --with-apxs=${apxs} \
-                    --with-python=${prefix}/bin/python2.7
+                    --with-python=${prefix}/bin/python3.7
 
 pre-destroot {
     xinstall -d -m 755 ${mdir}

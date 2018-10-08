@@ -66,9 +66,9 @@ configure.args-append \
 
 
 # Delete the following line. See #52233
-# include( "/opt/local/bin/python2.7-config" OPTIONAL )
+# include( "/opt/local/bin/python3.7-config" OPTIONAL )
 post-configure {
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         system "ed - ${build.dir}/eccodes-config.cmake.tpls < ${filespath}/eccodes-config.cmake.tpls.ed"
     }
 }
@@ -77,8 +77,8 @@ post-destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
     xinstall -m 644 {*}[glob ${worksrcpath}/html/*.html] \
         ${destroot}${prefix}/share/doc/${name}
-    if {[variant_isset python27]} {
-        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+    if {[variant_isset python37]} {
+        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
         xinstall -m 755 -d ${sp}
         foreach p {gribapi eccodes} {
             xinstall -m 755 -d ${sp}/${p}
@@ -93,12 +93,12 @@ if {[fortran_variant_isset]} {
     configure.args-append   -DENABLE_FORTRAN=ON
 }
 
-variant python27 description {Add support for python27} {
-    depends_lib-append      port:py27-numpy
+variant python37 description {Add support for python37} {
+    depends_lib-append      port:py37-numpy
     configure.args-delete   -DENABLE_PYTHON=OFF
     configure.args-append   -DENABLE_PYTHON=ON \
-                            -DPYTHON_CONFIG=${prefix}/bin/python2.7-config \
-                            -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+                            -DPYTHON_CONFIG=${prefix}/bin/python3.7-config \
+                            -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
 }
 
 variant openmp description {Add support for OpenMP} {

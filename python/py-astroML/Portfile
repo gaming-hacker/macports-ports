@@ -15,7 +15,7 @@ platforms           darwin
 supported_archs     noarch
 maintainers         {aronnax @lpsinger} openmaintainer
 
-python.versions 27 36 37
+python.versions 37
 
 description         tools for machine learning and data mining in astronomy
 

@@ -29,8 +29,8 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                 bioidiap bob.io.audio 2.0.0 v
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  427c3e439f19bcad72471d86acda6d1de3bf55f7 \
 sha256  0fbe3810c2b1e967a6f2d18e2b42bad98e9ed90fe9681116ed2a573b424e8cf9

@@ -29,7 +29,7 @@ sha256  e0a05914d65922f696d122ff1d383f40e9984ac7b6efaf52d9d6132c5582e6ce
 patchfiles              patch-setup.py.diff
 
 # Possibly other versions works as well, please test and patch
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-virtualenv \

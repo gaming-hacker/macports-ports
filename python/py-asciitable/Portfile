@@ -8,12 +8,12 @@ name                py-asciitable
 version             0.8.0
 revision            2
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     replaced_by     py${python.version}-astropy
 }
 
 subport py26-asciitable {
-    replaced_by     py27-astropy
+    replaced_by     py37-astropy
 }

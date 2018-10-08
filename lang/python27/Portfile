@@ -3,9 +3,9 @@
 PortSystem          1.0
 PortGroup           select 1.0
 
-name                python27
+name                python37
 epoch               2
-# Remember to keep py27-tkinter and py27-gdbm's versions sync'd with this
+# Remember to keep py37-tkinter and py37-gdbm's versions sync'd with this
 version             2.7.15
 revision            1
 
@@ -135,7 +135,7 @@ platform darwin {
 
         # Without this, LINKFORSHARED is set to
         # ... $(PYTHONFRAMEWORKDIR)/Versions/$(VERSION)/$(PYTHONFRAMEWORK)
-        # (this becomes Python.framework/Versions/2.7/Python) which doesn't
+        # (this becomes Python.framework/Versions/3.7/Python) which doesn't
         # quite work (see ticket #15099); instead we mirror the behavior of
         # `python-config --ldflags` here.
         reinplace {s|^\(LINKFORSHARED=\).*$|\1 -L$(LIBPL) -lpython$(VERSION) $(LIBS) $(SYSLIBS)|} \

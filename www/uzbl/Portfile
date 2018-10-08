@@ -25,12 +25,12 @@ depends_lib         port:gtk2 \
                     path:lib/pkgconfig/webkit-1.0.pc:webkit-gtk \
                     port:libsoup
 
-depends_run         port:python27
+depends_run         port:python37
 
 post-patch {
     foreach f [concat [glob ${worksrcpath}/bin/*] [glob ${worksrcpath}/examples/data/scripts/*]] {
         if {[file isfile ${f}]} {
-            reinplace -E "s|#!/usr/bin/env python2?|#!${prefix}/bin/python2.7|g" ${f}
+            reinplace -E "s|#!/usr/bin/env python2?|#!${prefix}/bin/python3.7|g" ${f}
         }
     }
 }

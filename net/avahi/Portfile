@@ -158,15 +158,15 @@ variant qt4 description {Build with Qt4} {
     configure.args-delete   --disable-qt4
 }
 
-# just use python27 with no python variants
+# just use python37 with no python variants
 
-configure.python        ${prefix}/bin/python2.7
+configure.python        ${prefix}/bin/python3.7
 
-depends_lib-append      port:dbus-python27 \
-                        port:py27-gdbm
+depends_lib-append      port:dbus-python37 \
+                        port:py37-gdbm
 
-depends_lib-append      port:py27-gobject3
-configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig
+depends_lib-append      port:py37-gobject3
+configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig
 
 # see https://trac.macports.org/ticket/55054
 pre-configure {
@@ -175,7 +175,7 @@ pre-configure {
 }
 
 if [variant_isset gtk] {
-    depends_lib-append      port:py27-pygtk
+    depends_lib-append      port:py37-pygtk
     configure.args-delete   --disable-pygtk
 }
 

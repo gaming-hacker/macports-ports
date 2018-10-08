@@ -17,7 +17,7 @@ long_description    (void)walker is a toolbox for GDB which provides utilities \
 platforms           darwin
 license             GPL-3
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append  port:FlowUI
 

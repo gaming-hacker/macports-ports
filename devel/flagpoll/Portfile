@@ -27,4 +27,4 @@ fetch.ignore_sslcert    yes
 
 destroot.destdir        --prefix=${destroot}${prefix}
 
-python.default_version  27
+python.default_version 37

@@ -25,12 +25,12 @@ size    4528350
 configure.ldflags-delete -L${prefix}/lib
 
 # dependencies
-# depends_lib-append port:py27-numpy \
+# depends_lib-append port:py37-numpy \
 
 # CMAKE configuration
 # configure.args-append \
 #     -DDRF_INSTALL_PREFIX_PYTHON=${python.prefix}\
-#     -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
+#     -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7\
 #     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
 #     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin
 

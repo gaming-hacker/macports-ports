@@ -23,7 +23,7 @@ size    303749
 
 # can't set python.versions before adding custom subports
 subport py-hgsubversion-devel {}
-subport py27-hgsubversion-devel {}
+subport py37-hgsubversion-devel {}
 
 if {[string match "*-devel" $subport]} {
     bitbucket.setup     seanfarley hgsubversion 704c4eced477
@@ -35,7 +35,7 @@ if {[string match "*-devel" $subport]} {
 sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
 }
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:bin/hg:mercurial \

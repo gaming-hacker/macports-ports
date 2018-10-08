@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.db.iris 2.0.4 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  b262d9d14a5f6395c54152c10db256b4a8458231 \
 sha256  b376e13b5024aa9dd3a127b44e515729856156f401d07d279b2d299792e4ab54

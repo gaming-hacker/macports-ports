@@ -29,7 +29,7 @@ sha256  ed9ad14472c4bf794c2023f480c32bb09f96cc23f46cf6efc2a066ae7f2cf2ce
 depends_lib-append  port:fftw-3-single \
                     port:gmt4 \
                     port:proj4 \
-                    port:python27
+                    port:python37
 
 # gmt4 is not universal
 universal_variant   no

@@ -42,10 +42,10 @@ size    4877980
 installs_libs           no
 
 depends_build-append    bin:perl:perl5 \
-                        bin:python2.7:python27 \
+                        bin:python3.7:python37 \
                         port:flex \
                         port:bison
-license_noconflict      perl5 python27
+license_noconflict      perl5 python37
 
 depends_lib             port:libpng \
                         port:libiconv

@@ -41,13 +41,13 @@ use_xz        yes
 depends_build-append \
               port:pkgconfig \
               port:swig \
-              port:python27
+              port:python37
 
 # Choose a compiler that supports OpenMP.
 compiler.whitelist macports-clang-6.0 macports-clang-5.0 macports-clang-4.0 macports-clang-7.0 macports-clang-3.9
 compiler.fallback  macports-clang-6.0
 
-set default_pythonarg PYTHON=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+set default_pythonarg PYTHON=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7
 configure.args-append \
                --mandir=${prefix}/share/man \
                --disable-silent-rules \
@@ -73,7 +73,7 @@ foreach v {27 35 36 37} {
                           ${pythonversion} bindings, modules, and scripts.
 
     depends_build-append  port:swig-python
-    depends_build-replace port:python27 port:python${v}
+    depends_build-replace port:python37 port:python${v}
     depends_lib-strsed    g/port:lal/port:py${v}-lal/
     depends_lib-append    port:${name} port:py${v}-numpy
 
@@ -98,8 +98,8 @@ foreach v {27 35 36 37} {
       # (duplicate of SWIG headers in ${prefix}/include)
       file delete -force ${destroot}${pythonhome}/include
 
-      # Create symbolic links in ${prefix}/bin to Python 2.7 scripts
-      if {${subport} eq "py27-${name}"} {
+      # Create symbolic links in ${prefix}/bin to Python 3.7 scripts
+      if {${subport} eq "py37-${name}"} {
         foreach script [glob -tails -nocomplain -directory ${destroot}${pythonhome}/bin *] {
           file link -symbolic ${destroot}${prefix}/bin/${script} ../Library/Frameworks/Python.framework/Versions/${pythonversion}/bin/${script}
         }

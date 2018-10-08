@@ -2,7 +2,7 @@
 
 PortSystem 1.0
 
-name            py27-gnome
+name            py37-gnome
 set my_name     gnome-python
 version         2.28.1
 revision        7
@@ -26,17 +26,17 @@ rmd160  92d6536ed28ae760ea1519fea68565d29249dd33
 depends_build   port:pkgconfig
 
 depends_lib     port:libgnomeui \
-                port:py27-pygtk \
-                port:py27-orbit \
+                port:py37-pygtk \
+                port:py37-orbit \
                 port:libgnome \
-                port:python27 \
+                port:python37 \
                 port:libgnomecanvas \
                 port:gnome-vfs \
                 port:gconf \
                 port:libbonobo \
                 port:libbonoboui
 
-set python.branch   2.7
+set python.branch 3.7
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin      ${python.prefix}/bin/python${python.branch}
 

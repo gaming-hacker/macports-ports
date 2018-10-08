@@ -30,8 +30,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.core 2.1.0 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 
 checksums                    rmd160  ec5320857149ad95c4e952c874c7f328efa52591 \

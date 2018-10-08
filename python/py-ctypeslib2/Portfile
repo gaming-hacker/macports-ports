@@ -5,8 +5,8 @@ PortGroup               python 1.0
 PortGroup               github 1.0
 github.setup            trolldbois ctypeslib 2.2.1
 name                    py-ctypeslib2
-python.versions 27 36 37
-python.default_version  27
+python.versions 37
+python.default_version 37
 platforms               darwin
 license                 MIT
 maintainers             {eborisch @eborisch} \

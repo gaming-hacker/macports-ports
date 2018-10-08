@@ -30,7 +30,7 @@ size    181344
 
 depends_lib         port:bash \
                     port:perl5 \
-                    port:python27 \
+                    port:python37 \
                     port:gettext \
                     port:gifsicle \
                     port:pngcrush \
@@ -44,6 +44,6 @@ depends_lib         port:bash \
                     port:p7zip \
                     port:xz
 
-configure.env       PROGPYTHON=${prefix}/bin/python2.7
+configure.env       PROGPYTHON=${prefix}/bin/python3.7
 
 livecheck.regex     /${name}-(\[0-9.\]+)${extract.suffix}

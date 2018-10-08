@@ -35,9 +35,9 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-test-number-delta
 
     depends_lib-append \
-                    port:python27 \
+                    port:python37 \
                     port:p${perl5.major}-inline
 
     configure.env-append \
-                    INLINE_PYTHON_EXECUTABLE="${prefix}/bin/python2.7"
+                    INLINE_PYTHON_EXECUTABLE="${prefix}/bin/python3.7"
 }

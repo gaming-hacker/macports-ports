@@ -20,7 +20,7 @@ distname        pida-${version}
 checksums       sha1    c2ba4fb5e3220d0b8fd5d33f418164b05e840e34 \
 rmd160  3c622c53e622938b163a5304306821ed90c3404a
 
-python.default_version 27
+python.default_version 37
 
 depends_build   port:py${python.version}-setuptools \
                 port:pkgconfig

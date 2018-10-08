@@ -179,13 +179,13 @@ variant perl description {Include PERL 5 language bindings} {
 #    }
 #}
 
-variant python27 description {Include Python 2.7 language bindings} {
-    depends_lib-append          port:python27
+variant python37 description {Include Python 3.7 language bindings} {
+    depends_lib-append          port:python37
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python2.7
+    configure.python            ${prefix}/bin/python3.7
 }
 
 variant ruby description {Include Ruby language bindings} {

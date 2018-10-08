@@ -58,7 +58,7 @@ pre-configure {
         reinplace "s|/opt/local|${prefix}|g" ${worksrcpath}/mkMacDist.sh
     }
 
-    if {![variant_isset python27]} {
+    if {![variant_isset python37]} {
         reinplace "s|CONFIG+=python| |g" \
             ${worksrcpath}/config.pri
     }
@@ -73,15 +73,15 @@ post-destroot {
     #Put the application to the right folder
     move ${destroot}${prefix}/bin/scidavis.app ${destroot}${applications_dir}/scidavis.app
 
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         move ${destroot}/opt/etc/scidavisrc.py ${destroot}${prefix}/etc/scidavisrc.py
     }
 }
 
-variant python27 description "add support for python scripting" {
-    depends_lib-append port:python27 \
-                       port:py27-sip \
-                       port:py27-pyqt4
+variant python37 description "add support for python scripting" {
+    depends_lib-append port:python37 \
+                       port:py37-sip \
+                       port:py37-pyqt4
 }
 
 livecheck.type      sourceforge

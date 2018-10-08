@@ -59,13 +59,13 @@ configure.ldflags-delete -L${prefix}/lib
 # specify the Python dependencies
 
 depends_lib-append \
-    port:python27
+    port:python37
 
 # specify the Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7 \
-    -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/Headers \
-    -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/2.7/Python \
-    -DGR_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages \
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7 \
+    -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/3.7/Headers \
+    -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/3.7/Python \
+    -DGR_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages \
     -DCMAKE_MODULES_DIR=share/cmake

@@ -35,7 +35,7 @@ extract.mkdir             yes
 
 use_configure             no
 
-depends_build-append      bin:python:python27
+depends_build-append      bin:python:python37
 depends_build-append      bin:bash:bash
 depends_build-append      bin:zip:zip
 depends_build-append      bin:git:git

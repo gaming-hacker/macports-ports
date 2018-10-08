@@ -24,7 +24,7 @@ supported_archs     noarch
 checksums           rmd160  19587bc3370400be35db2c84cf20db73cdfd5535 \
 sha256  3f43a65cbfed489387c8feee00db2c9dbad5e96ce2b0be9d7f8df21a85f531cc
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

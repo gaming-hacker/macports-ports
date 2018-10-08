@@ -22,7 +22,7 @@ set user.ipp.lib    ${user.intel.root}/ipp/lib
 set user.daal.inc   ${user.intel.root}/daal/inc
 set user.daal.lib   ${user.intel.root}/daal/lib
 
-set user.CFLAGS "-O3 -pipe -m64 -arch x86_64 -fopenmp -march=native -mtune=native -mmacosx-version-min=10.12 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2"
+set user.CFLAGS "-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.12 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2"
 
 set user.WNO "-Wno-unknown-warning-option -Wno-unused-function -Wno-unused-variable -Wno-unused-command-line-argument -Wno-ignored-optimization-argument"
 

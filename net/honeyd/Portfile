@@ -25,19 +25,19 @@ depends_lib       port:libevent1 \
 		  port:libdnet \
 		  port:libpcap \
 		  port:pcre \
-		  port:py27-libdnet \
-		  port:py27-pylibpcap
+		  port:py37-libdnet \
+		  port:py37-pylibpcap
 
 patchfiles        configure.patch dpkt_Makefile.patch
 platform darwin {
     patchfiles-append   darwin_rlimit.patch
 }
 post-patch {
-    reinplace "s|__PYTHON__|${prefix}/bin/python2.7|" ${worksrcpath}/dpkt/Makefile
+    reinplace "s|__PYTHON__|${prefix}/bin/python3.7|" ${worksrcpath}/dpkt/Makefile
 }
 
 configure.args	  --with-python
-configure.env     PATH_PYTHON=${prefix}/bin/python2.7 \
+configure.env     PATH_PYTHON=${prefix}/bin/python3.7 \
                   EVENTINC="-I${prefix}/include/libevent1" \
                   EVENTLIB="-L${prefix}/lib/libevent1 -levent"
 

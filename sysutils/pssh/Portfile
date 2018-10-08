@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                pssh
-python.default_version 27
+python.default_version 37
 version             2.3.1
 revision            1
 categories          sysutils net

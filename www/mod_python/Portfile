@@ -59,8 +59,8 @@ if {$subport ne $name} {
     ${httpd_conf}"
 } else {
     # mod_python used to be for python 2.4
-    replaced_by         mod_python27
-    depends_lib         port:mod_python27
+    replaced_by         mod_python37
+    depends_lib         port:mod_python37
     use_configure       no
     build               {}
     destroot {
@@ -74,15 +74,15 @@ if {$subport ne $name} {
     livecheck.regex     mod_python-(\[0-9\\.\]+)\\.tgz
 }
 
-subport mod_python27 {
+subport mod_python37 {
     conflicts       mod_python26
     revision        0
-    depends_lib-append  port:python27
-    configure.args-append   --with-python=${prefix}/bin/python2.7
+    depends_lib-append  port:python37
+    configure.args-append   --with-python=${prefix}/bin/python3.7
 }
 
 subport mod_python26 {
-    conflicts       mod_python27
+    conflicts       mod_python37
     revision        0
     depends_lib-append  port:python26
     configure.args-append   --with-python=${prefix}/bin/python2.6

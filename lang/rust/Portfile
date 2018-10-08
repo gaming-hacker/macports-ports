@@ -28,7 +28,7 @@ set llvm_version    7.0
 
 # can use cmake or cmake-devel; default to cmake.
 depends_build       path:bin/cmake:cmake \
-                    bin:python2.7:python27
+                    bin:python3.7:python37
 
 depends_lib         port:llvm-${llvm_version}
 

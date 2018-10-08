@@ -73,8 +73,8 @@ destroot {
 
 platform darwin {
     if {${os.major} < 10} {
-        depends_build-append    port:python27
-        configure.python        ${prefix}/bin/python2.7
+        depends_build-append    port:python37
+        configure.python        ${prefix}/bin/python3.7
     }
     
     if {${os.major} == 8} {

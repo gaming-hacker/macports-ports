@@ -30,13 +30,13 @@ universal_variant   no
 
 use_autoreconf      yes
 
-depends_lib         port:python27 \
+depends_lib         port:python37 \
                     port:yasm
 
 patchfiles          patch-docdir.diff
 
 configure.args      --with-yasm=${prefix}/bin/yasm \
-                    --with-python=${frameworks_dir}/Python.framework/Versions/2.7/bin/python \
+                    --with-python=${frameworks_dir}/Python.framework/Versions/3.7/bin/python \
                     --enable-shared
 
 post-destroot {
@@ -46,8 +46,8 @@ post-destroot {
     }
 }
 
-variant docs description {Compile HTML documentation (uses py27-sphinx)} {
-    depends_build-append        port:py27-sphinx
+variant docs description {Compile HTML documentation (uses py37-sphinx)} {
+    depends_build-append        port:py37-sphinx
     configure.args-append       --with-sphinx-build=${prefix}/bin/sphinx-build-2.7
 
     build.target-append         html

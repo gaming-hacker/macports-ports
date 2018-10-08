@@ -9,4 +9,4 @@ version             3.10.2
 revision            1
 maintainers         inaf.it:stefano.covino openmaintainer
 
-python.versions 27 36 37
+python.versions 37

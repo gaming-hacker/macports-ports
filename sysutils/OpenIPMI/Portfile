@@ -60,7 +60,7 @@ configure.args      --with-poptlibs=-lpopt \
 variant python description "Build python bindings" {
     configure.args-delete --with-swig=no --with-python=no
     depends_lib-append      port:swig-python \
-                            port:py27-tkinter \
+                            port:py37-tkinter \
                             port:tix
 }
 

@@ -43,10 +43,10 @@ perl5.branches      5.26
 
 depends_lib         port:gettext \
                     port:perl${perl5.major} \
-                    port:python27 \
+                    port:python37 \
                     port:zlib
 
-set python_bin      ${prefix}/bin/python2.7
+set python_bin      ${prefix}/bin/python3.7
 
 configure.args      --disable-apache \
                     --disable-java \
@@ -58,7 +58,7 @@ configure.args      --disable-apache \
                     --mandir=${prefix}/share/man
 
 pre-configure   {
-    set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
+    set PYTHON_PATH ${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7
 
     reinplace "s|PYTHON_SITE=`.*|PYTHON_SITE=${PYTHON_PATH}/site-packages|g" \
         ${worksrcpath}/configure

@@ -55,33 +55,7 @@ configure.args-append \
 # OpenColorIO intentially installs Python module in lib
 # see https://github.com/imageworks/OpenColorIO/blob/15e96c1f579d3640947a5fcb5ec831383cc3956e/src/pyglue/CMakeLists.txt#L85
 
-variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python27
-    configure.args-append \
-        -DPYTHON=${prefix}/bin/python2.7
-    post-destroot {
-        xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
-        ln -s \
-            ${prefix}/lib/python2.7/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
-    }
-}
-
-variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 {
-    depends_lib-append port:python36
-    configure.args-append \
-        -DPYTHON=${prefix}/bin/python3.6
-    post-destroot {
-        xinstall -d -m 0755 \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.6/lib/python3.6/site-packages
-        ln -s \
-            ${prefix}/lib/python3.6/site-packages/PyOpenColorIO.so \
-            ${destroot}${frameworks_dir}/Python.framework/Versions/3.6/lib/python3.6/site-packages/
-    }
-}
-
-variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 {
+variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
     depends_lib-append port:python37
     configure.args-append \
         -DPYTHON=${prefix}/bin/python3.7
@@ -94,13 +68,39 @@ variant python37 description {Build the Python 3.7 bindings} conflicts python27 
     }
 }
 
-if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {
+variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
+    depends_lib-append port:python36
+    configure.args-append \
+        -DPYTHON=${prefix}/bin/python3.6
+    post-destroot {
+        xinstall -d -m 0755 \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.6/lib/python3.6/site-packages
+        ln -s \
+            ${prefix}/lib/python3.6/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.6/lib/python3.6/site-packages/
+    }
+}
+
+variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
+    depends_lib-append port:python37
+    configure.args-append \
+        -DPYTHON=${prefix}/bin/python3.7
+    post-destroot {
+        xinstall -d -m 0755 \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
+        ln -s \
+            ${prefix}/lib/python3.7/site-packages/PyOpenColorIO.so \
+            ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages/
+    }
+}
+
+if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append \
         -DOCIO_BUILD_PYGLUE=OFF
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }
 
 # make neither x11 nor quartz default since openimageio depends on opencolorio

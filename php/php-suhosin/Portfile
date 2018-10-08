@@ -9,7 +9,7 @@ platforms           darwin freebsd
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             PHP-3.01
 
-php.branches 5.6 7.2 7.3
+php.branches 7.3
 
 version         0.9.38
 checksums       sha1    20af6379c0ff9879c5ed69452a6c38b7b3e76748 \

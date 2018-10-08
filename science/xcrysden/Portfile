@@ -11,7 +11,7 @@ categories          science
 platforms           darwin
 license             GPL-2+
 
-# depends on mesa->py27-xml2->python27->openssl, but nothing from openssl is actually used in XCrySDen
+# depends on mesa->py37-xml2->python37->openssl, but nothing from openssl is actually used in XCrySDen
 license_noconflict  openssl
 
 maintainers         {dstrubbe @dstrubbe}

@@ -16,7 +16,7 @@ long_description \
 
 homepage        https://docs.python.org/library/tkinter.html
 
-python.versions 27 36 37
+python.versions 37
 
 set extract_files "Modules/_tkinter.c Modules/tkappinit.c"
 set module_name Tkinter
@@ -30,7 +30,7 @@ rmd160 42edf7c9f2f64b77ab173de30ea453257c2c06b3 \
 sha256 cae7bb995006ea5b703d9d28446f694894c441fe4bfb95d561c0ac908cd06e41
     use_xz      yes
 }
-subport py27-tkinter {
+subport py37-tkinter {
     maintainers {jmr @jmroot} openmaintainer
     version     2.7.15
     revision    0

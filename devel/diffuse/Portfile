@@ -25,19 +25,14 @@ use_bzip2           yes
 
 set pythonexec ""
 
-variant python26 conflicts python27 description {Use python26} {
-    depends_lib-append    port:py26-pygtk
-    set pythonexec        ${prefix}/bin/python2.6
+
+variant python37 description {Use python37} {
+    depends_lib-append    port:py37-pygtk
+    set pythonexec        ${prefix}/bin/python3.7
 }
 
-variant python27 conflicts python26 description {Use python27} {
-    depends_lib-append    port:py27-pygtk
-    set pythonexec        ${prefix}/bin/python2.7
-}
+default_variants +python37
 
-if {![variant_isset python26]} {
-    default_variants +python27
-}
 
 use_configure       no
 

@@ -21,9 +21,9 @@ checksums           rmd160  4f678fe63c3a748a7640d234938b70e0de2e63f2 \
 sha256  5ba143b8aee8469a6a3a70bac8f99d862e02f049fc27dd84b8989234798dcfa5 \
 size    41788
 
-# git depends on python27; using the same to reduce dependencies,
+# git depends on python37; using the same to reduce dependencies,
 # although python3x would be supported
-python.default_version 27
+python.default_version 37
 
 depends_run-append  port:git
 depends_lib-append  port:py${python.version}-pygit2 \

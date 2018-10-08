@@ -19,7 +19,7 @@ depends_build       port:spidermonkey
 master_sites        sourceforge
 checksums           md5 c7980d19a3f0087b4f04708c244f2a97
 
-python.default_version  27
+python.default_version 37
 python.move_binaries    no
 
 post-extract {

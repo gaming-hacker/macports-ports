@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.db.base 2.0.5 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  a31d1e89841ae1cc35fc11b721802f8a6c59a572 \
 sha256  40ce2b4d376fb2283d079aec3074d4829f2f8506a9e994b1dfc1988f1972ea10

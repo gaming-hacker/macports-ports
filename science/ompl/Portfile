@@ -33,7 +33,7 @@ configure.args-append   -DOMPL_BUILD_DEMOS=OFF \
 # somewhat dependent on compiler and/or boost version, so we can't
 # pre-generate them and make them available as an extra download.
 post-configure {
-    if {[variant_isset python27] || [variant_isset python34] || [variant_isset python35] || [variant_isset python36] || [variant_isset python37]} {
+    if {[variant_isset python37] || [variant_isset python34] || [variant_isset python35] || [variant_isset python36] || [variant_isset python37]} {
         # enable parallel build on at most 2 cores. Generating the bindings
         # uses large amounts of memory, so don't use more cores.
         if { ${use_parallel_build} } { set cj "-j 2" } else { set cj "" }
@@ -144,7 +144,7 @@ foreach s ${pythons_suffixes} {
 }
 
 # enable one python variant so that the python bindings can be compiled
-set selected_python python27
+set selected_python python37
 foreach s ${pythons_suffixes} {
     if {[variant_isset python${s}]} {
         set selected_python python${s}

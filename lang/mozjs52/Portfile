@@ -28,7 +28,7 @@ size    24712740
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \
-                    port:python27
+                    port:python37
 
 depends_lib         port:icu \
                     port:nspr \
@@ -54,7 +54,7 @@ post-patch {
 }
 
 configure.perl      /usr/bin/perl
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 configure.env-append \
                     SHELL=/bin/bash

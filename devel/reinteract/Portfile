@@ -4,7 +4,7 @@ PortGroup python 1.0
 
 name			reinteract
 version			0.5.10
-python.default_version		27
+python.default_version 37
 categories		devel
 license			BSD
 platforms		darwin

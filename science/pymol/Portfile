@@ -27,11 +27,11 @@ size    10515229
 compilers.choose    cc cxx
 compilers.setup
 
-variant python27 conflicts python34 python35 python36 python37 description {Use Python 2.7} {}
-variant python34 conflicts python27 python35 python36 python37 description {Use Python 3.4} {}
-variant python35 conflicts python27 python34 python36 python37 description {Use Python 3.5} {}
-variant python36 conflicts python27 python34 python35 python37 description {Use Python 3.6} {}
-variant python37 conflicts python27 python34 python35 python36 description {Use Python 3.7} {}
+variant python37 conflicts python34 python35 python36 python37 description {Use Python 3.7} {}
+variant python34 conflicts python37 python35 python36 python37 description {Use Python 3.4} {}
+variant python35 conflicts python37 python34 python36 python37 description {Use Python 3.5} {}
+variant python36 conflicts python37 python34 python35 python37 description {Use Python 3.6} {}
+variant python37 conflicts python37 python34 python35 python36 description {Use Python 3.7} {}
 
 if {[variant_isset python34]} {
     python.default_version 34
@@ -42,8 +42,8 @@ if {[variant_isset python34]} {
 } elseif {[variant_isset python37]} {
     python.default_version 37
 } else {
-    default_variants +python27
-    python.default_version 27
+    default_variants +python37
+    python.default_version 37
 }
 python.link_binaries no
 

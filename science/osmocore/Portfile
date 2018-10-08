@@ -45,7 +45,7 @@ depends_build-append \
 
 depends_lib-append \
     port:gnutls \
-    port:python27 \
+    port:python37 \
     port:talloc
 
 # fix use of Python2
@@ -54,7 +54,7 @@ patchfiles-append patch-fix-python.diff
 patch.pre_args -p1
 
 post-patch {
-    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7|g" \
+    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7|g" \
         ${worksrcpath}/include/Makefile.am \
         ${worksrcpath}/src/gsm/Makefile.am \
         ${worksrcpath}/tests/Makefile.am \

@@ -3,8 +3,8 @@
 PortSystem          1.0
 name                py-htmldocs
 PortGroup           python 1.0
-python.versions 27 36 37
-python.default_version 27
+python.versions 37
+python.default_version 37
 version             1.0
 set base_rev        2
 revision            ${base_rev}

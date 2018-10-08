@@ -64,11 +64,11 @@ cmake.out_of_source yes
 configure.args-append \
                     -DENABLE_CCACHE=NO \
                     -DPythonModular=ON \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python27
+                    port:python37
 
 depends_lib-append  port:hdf5 \
                     port:json-c \
@@ -86,10 +86,10 @@ depends_lib-append  port:hdf5 \
                     port:xz \
                     port:protobuf3-cpp
 
-variant python27 description {Build the Python 2.7 API}  {
+variant python37 description {Build the Python 3.7 API}  {
     depends_lib-append  port:swig-python \
-                        port:python27 \
-                        port:py27-numpy
+                        port:python37 \
+                        port:py37-numpy
     configure.args-append \
                         -DPythonModular=ON
 }

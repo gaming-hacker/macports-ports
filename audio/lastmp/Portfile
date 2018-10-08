@@ -21,7 +21,7 @@ checksums       md5 0da502e0ecbbaef373c9849e33187367 \
 sha1 98fb020a54f8e49b16090fb1af07912a12351d8f \
 rmd160 c6a06aa3931b823ee8de2e863812b1a8542ffa47
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-mpdclient2 \
                     port:lastfmsubmitd

@@ -38,16 +38,10 @@ post-destroot {
 	file copy ${worksrcpath}/www ${destroot}${prefix}/share/doc/${name}
 }
 
-variant python26 description {Use python 2.6} { 
-	python.default_version 26 
-	test.cmd ${python.bin} 
+variant python37 description {Use python 3.7} {
+	python.default_version 37
+	test.cmd ${python.bin}
 }
- 
-variant python27 description {Use python 2.7} { 
-	python.default_version 27 
-	test.cmd ${python.bin} 
-} 
 
-if {![variant_isset python26]} { 
-	default_variants +python27 
-}
+default_variants +python37
+

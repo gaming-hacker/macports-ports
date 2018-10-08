@@ -93,10 +93,10 @@ variant perl description {Enable Perl scripting} {
     depends_lib-append      path:bin/perl:perl5.26
 }
 
-variant python27 description {Enable Python scripting} {
-    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python2.7
+variant python37 description {Enable Python scripting} {
+    configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python3.7
     patchfiles-append       patch-python.diff
-    depends_lib-append      port:python27
+    depends_lib-append      port:python37
 
     use_autoconf yes
     # Overwriting autoconf.cmd above removes dependency, add it again

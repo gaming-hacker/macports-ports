@@ -27,10 +27,10 @@ checksums           rmd160  8fcd1cb56542d80180dfb48389573cb28b927dfa \
 sha256  013afa8054d1f13f14e715d013c0137b4abe52e3bc330d8d45f9bb6ec93a316a
 
 # Per website, this doesn't work with any python3
-depends_lib         port:python27
+depends_lib         port:python37
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|" ${worksrcpath}/viewvc-install
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|" ${worksrcpath}/viewvc-install
 }
 
 use_configure       no
@@ -44,8 +44,8 @@ variant cvs description {Enable cvs repositories} {
                         port:rcs
 }
 variant subversion description {Enable subversion repositories} {
-    depends_lib-append  port:py27-pysvn \
-                        port:subversion-python27bindings
+    depends_lib-append  port:py37-pysvn \
+                        port:subversion-python37bindings
 }
 
 default_variants +cvs +subversion

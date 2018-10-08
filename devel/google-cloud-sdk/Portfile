@@ -24,7 +24,7 @@ checksums           rmd160  3b5ed9231fb93df7992c939be5405a2d74f30a0c \
 sha256  0640c8f19f7d41a62af4695d335c9b36e6648ef2c18b7406678243dc108f6fef \
 size    17136568
 
-python.default_version 27
+python.default_version 37
 
 post-patch {
     reinplace "s|\"disable_updater\": false|\"disable_updater\": true|" ${worksrcpath}/lib/googlecloudsdk/core/config.json

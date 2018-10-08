@@ -26,10 +26,10 @@ rmd160 d570cdda7a5c69cc0a3a3ea37711388944d88ce2
 use_bzip2	yes
 patchfiles	patch-prefix.diff
 
-depends_lib	path:lib/python2.7/site-packages/rpm/__init__.py:rpm port:python27
+depends_lib	path:lib/python3.7/site-packages/rpm/__init__.py:rpm port:python37
 ### by default, it will run --shell interface.
 ### to run it with --gui, you will need:
-#depends_run	port:py27-pygtk
+#depends_run	port:py37-pygtk
 
 patch {
 		foreach patch $patchfiles {
@@ -40,9 +40,9 @@ patch {
 
 use_configure	no
 
-build.args-append	PYTHON="${prefix}/bin/python2.7"
-destroot.args-append	PYTHON="${prefix}/bin/python2.7"
-test.args-append	PYTHON="${prefix}/bin/python2.7"
+build.args-append	PYTHON="${prefix}/bin/python3.7"
+destroot.args-append	PYTHON="${prefix}/bin/python3.7"
+test.args-append	PYTHON="${prefix}/bin/python3.7"
 
 post-destroot {
 	destroot.keepdirs ${destroot}${prefix}/etc/smart/channels \

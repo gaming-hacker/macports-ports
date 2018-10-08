@@ -32,8 +32,8 @@ long_description    IoFlo is a magically powerful open interoperable software \
 
 homepage            http://ioflo.com
 
-python.versions 27 36 37
-python.default_version 27
+python.versions 37
+python.default_version 37
 
 checksums           rmd160 bb99fc946fd6f1b3ffd81cc9ac5508918fc86213 \
 sha256 9fb388505b551b057c62a4bf4d5b33b0cb72a593b2d4a5018ac5eced9f0be5a5

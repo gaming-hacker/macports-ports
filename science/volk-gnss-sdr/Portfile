@@ -88,9 +88,9 @@ depends_build-append port:pkgconfig
 depends_lib-append \
     path:lib/libvolk.dylib:volk \
     port:orc \
-    port:python27 \
-    port:py27-mako \
-    port:py27-six \
+    port:python37 \
+    port:py37-mako \
+    port:py37-six \
     port:boost
 
 # do VPATH (out of source tree) build
@@ -109,7 +109,7 @@ configure.ldflags-delete -L${prefix}/lib
 # specify the Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7
 
 # specify where to install cmake files
 

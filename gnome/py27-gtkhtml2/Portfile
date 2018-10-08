@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 
-name                py27-gtkhtml2
+name                py37-gtkhtml2
 version             2.25.3
 revision            2
 
@@ -30,14 +30,14 @@ rmd160  e09bc0152512e2caa61626a7dc788d7336f24e46
 use_bzip2           yes
 
 depends_build       port:pkgconfig
-depends_lib         port:py27-pygtk\
+depends_lib         port:py37-pygtk\
 					port:libgtkhtml
 
 patchfiles          patch-configure.diff
 
 configure.args-append   --disable-allbindings --enable-gtkhtml2
 
-set python.branch   2.7
+set python.branch 3.7
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin      ${python.prefix}/bin/python${python.branch}
 

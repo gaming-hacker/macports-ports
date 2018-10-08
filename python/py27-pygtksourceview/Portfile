@@ -2,7 +2,7 @@
 
 PortSystem      1.0
 
-name            py27-pygtksourceview
+name            py37-pygtksourceview
 version         2.10.1
 revision        4
 set branch      [join [lrange [split ${version} .] 0 1] .]
@@ -25,14 +25,14 @@ depends_build   port:pkgconfig \
                 port:libxslt \
                 port:docbook-xsl-nons
 
-depends_lib     port:py27-gobject \
-                port:py27-pygtk \
+depends_lib     port:py37-gobject \
+                port:py37-pygtk \
                 port:gtksourceview2
 
-configure.python    ${prefix}/bin/python2.7
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/2.7
+configure.python    ${prefix}/bin/python3.7
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.7
 configure.pre_args  --prefix=${python_prefix}
-configure.args      --includedir=${python_prefix}/include/python2.7
+configure.args      --includedir=${python_prefix}/include/python3.7
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig:${prefix}/lib/pkgconfig
 
 platform darwin 9 {

@@ -51,11 +51,11 @@ configure.args      --disable-silent-rules \
                     --disable-gnome \
                     --disable-python
 
-variant python27 description {Enable support for Python widgets using Python 2.7} {
+variant python37 description {Enable support for Python widgets using Python 3.7} {
     configure.args-replace    --disable-python --enable-python
-    configure.python          ${prefix}/bin/python2.7
-    depends_lib-append        port:py27-pygtk
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/2.7
+    configure.python          ${prefix}/bin/python3.7
+    depends_lib-append        port:py37-pygtk
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
@@ -80,7 +80,7 @@ if {![variant_isset quartz]} {
     require_active_variants gtk2 x11
 }
 
-default_variants +python27
+default_variants +python37
 if {![variant_isset quartz]} {
     default_variants-append +gnome
 }

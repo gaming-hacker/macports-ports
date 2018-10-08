@@ -22,7 +22,7 @@ checksums           rmd160  24b2a77156eb4bb77da56e4d078c48b7aac5fa9a \
 sha256  0886227f54515e592aaa2e5a553332c73962917f2831f1b0f9b9f4380a4b9807 \
 size    48018
 
-python.versions 27 36 37
+python.versions 37
 
 if {$subport ne $name} {
     depends_lib-append  port:py${python.version}-parsing \

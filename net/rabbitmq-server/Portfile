@@ -33,19 +33,19 @@ depends_lib         port:erlang
 depends_build       port:libxslt
 
 platform darwin 8 {
-    depends_build-append port:py27-simplejson
-    build.args      PYTHON=${prefix}/bin/python2.7
+    depends_build-append port:py37-simplejson
+    build.args      PYTHON=${prefix}/bin/python3.7
 }
 
 platform darwin 9 {
-    depends_build-append port:py27-simplejson
-    build.args      PYTHON=${prefix}/bin/python2.7
+    depends_build-append port:py37-simplejson
+    build.args      PYTHON=${prefix}/bin/python3.7
 }
 
 # no need for simplejson on Snow Leopard or higher
 if {${os.major} > 9 && ${os.platform} eq "darwin"} {
     # python3.X doesn't work
-    build.args      PYTHON=python2.7
+    build.args      PYTHON=python3.7
 }
 
 set serveruser      rabbitmq

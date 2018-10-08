@@ -29,7 +29,7 @@ master_sites        https://engineering.purdue.edu/kak/dist
 checksums           rmd160  c4dd203a2e09ebb9e69ddd94814ad3c82279c674 \
 sha256  daedd1081ed7040684ca97f5749947ef7b86eaabae27e7a9b69bfd613d22751a
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build-append     port:py${python.version}-setuptools

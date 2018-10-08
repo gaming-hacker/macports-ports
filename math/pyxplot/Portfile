@@ -32,7 +32,7 @@ depends_lib-append  port:cfitsio \
                     port:gv \
                     port:ImageMagick \
                     port:libpng \
-                    port:python27 \
+                    port:python37 \
                     port:readline \
                     port:texlive-bin \
                     port:texlive-latex \

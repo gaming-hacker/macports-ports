@@ -21,7 +21,7 @@ homepage           https://code.google.com/p/closure-linter/
 master_sites       googlecode:closure-linter
 distname           closure_linter-${version}
 
-python.default_version 27
+python.default_version 37
 
 depends_build      port:py${python.version}-setuptools
 depends_lib-append port:py${python.version}-gflags

@@ -54,22 +54,22 @@ configure.cmd       ./autogen.sh
 configure.ldflags-delete "-L${prefix}/lib"
 configure.cppflags-delete "-I${prefix}/include"
 
-variant python27 conflicts python26 \
-description {Build Bindings for Python 2.7} {}
+variant python37 conflicts python26 \
+description {Build Bindings for Python 3.7} {}
 
-variant python26 conflicts python27 \
+variant python26 conflicts python37 \
 description {Build Bindings for Python 2.6} {}
 
-# default to python27 bindings
-if {![variant_isset python27] && ![variant_isset python26]} {
-    default_variants +python27
+# default to python37 bindings
+if {![variant_isset python37] && ![variant_isset python26]} {
+    default_variants +python37
 }
 
-# allow for -python27 to disable all Python support
+# allow for -python37 to disable all Python support
 
 set python.branch ""
-if {[variant_isset python27]} {
-    set python.branch 2.7
+if {[variant_isset python37]} {
+    set python.branch 3.7
 } elseif {[variant_isset python26]} {
     set python.branch 2.6
 }

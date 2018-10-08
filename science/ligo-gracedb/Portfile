@@ -31,7 +31,7 @@ checksums     rmd160  3d0d34fb23a47fccb219521615c4bb6a0cb4a5ed \
 sha256  57cac6843dd67fa45924eb899046407f6129db6439caaf673bc01058a1feabdd \
 size    2189424
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append port:py${python.version}-ligo-common \
                    port:py${python.version}-m2crypto \

@@ -30,8 +30,8 @@ depends_lib         port:assimp2 \
                     port:libgeotiff \
                     port:netcdf \
                     port:proj4 \
-                    port:py27-numpy \
-                    port:py27-scipy \
+                    port:py37-numpy \
+                    port:py37-scipy \
                     port:qt4-mac \
                     port:udunits2
 

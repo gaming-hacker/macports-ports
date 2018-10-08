@@ -20,7 +20,7 @@ supported_archs     noarch
 
 #master_sites        googlecode:harstorage
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     fetch.type          hg

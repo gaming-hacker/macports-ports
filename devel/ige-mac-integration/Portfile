@@ -36,7 +36,7 @@ post-configure {
 
 depends_build   port:pkgconfig
 
-depends_lib     port:py27-pygtk
+depends_lib     port:py37-pygtk
 
 pre-configure {
     if {![file exists ${prefix}/lib/pkgconfig/gdk-quartz-2.0.pc]} {
@@ -53,7 +53,7 @@ pre-configure {
     }
 }
 
-configure.python ${prefix}/bin/python2.7
+configure.python ${prefix}/bin/python3.7
 
 livecheck.type  regex
 livecheck.url   ${master_sites}

@@ -54,20 +54,20 @@ depends_lib   port:openmpi-${clangver} \
               port:libframe \
               port:metaio \
               port:libxml2 \
-              port:lal port:py27-lal \
-              port:lalframe port:py27-lalframe \
-              port:lalmetaio port:py27-lalmetaio \
-              port:lalxml port:py27-lalxml \
-              port:lalsimulation port:py27-lalsimulation \
-              port:lalburst port:py27-lalburst \
-              port:lalinspiral port:py27-lalinspiral \
-              port:lalpulsar port:py27-lalpulsar \
-              port:lalinference port:py27-lalinference \
-              port:lalstochastic port:py27-lalstochastic \
+              port:lal port:py37-lal \
+              port:lalframe port:py37-lalframe \
+              port:lalmetaio port:py37-lalmetaio \
+              port:lalxml port:py37-lalxml \
+              port:lalsimulation port:py37-lalsimulation \
+              port:lalburst port:py37-lalburst \
+              port:lalinspiral port:py37-lalinspiral \
+              port:lalpulsar port:py37-lalpulsar \
+              port:lalinference port:py37-lalinference \
+              port:lalstochastic port:py37-lalstochastic \
               port:glue \
-              port:python27 \
-              port:py27-numpy \
-              port:py27-h5py
+              port:python37 \
+              port:py37-numpy \
+              port:py37-h5py
 
 configure.args   --mandir=${prefix}/share/man \
                  --disable-silent-rules \
@@ -88,7 +88,7 @@ test.target   check
 #  require_active_variants lalpulsar lalxml
 #  require_active_variants lalinference lalxml
 #  depends_lib-append    port:libxml2 \
-#                        port:py27-lalxml
+#                        port:py37-lalxml
 #  configure.args-append --enable-lalxml
 #}
 #default_variants +lalxml

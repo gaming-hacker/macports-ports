@@ -23,7 +23,7 @@ size    697570
 
 # can't set python.versions before adding custom subports
 subport py-hgevolve-devel {}
-subport py27-hgevolve-devel {}
+subport py37-hgevolve-devel {}
 
 if {[string match "*-devel" $subport]} {
     bitbucket.setup     marmoute mutable-history 1fa3bf6e9e93
@@ -37,7 +37,7 @@ sha256  5819c049bc0b1853aefb4d475c369795d2612528bc6d3e9ffd494e4e5fd4374c \
 size    715088
 }
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib         path:bin/hg:mercurial

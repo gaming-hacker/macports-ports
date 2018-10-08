@@ -26,7 +26,7 @@ distname                ${real_name}-${version}
 checksums               rmd160  9dd60a1d68d497e6b0cb604857f316a62042a247 \
 sha256  319a599236b0843a36c17749c0041c18a07ef28dbe9539064fd7c0fff972567c
 
-python.versions 27 36 37
+python.versions 37
 python.link_binaries    no
 python.move_binaries    no
 

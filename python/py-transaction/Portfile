@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-transaction
 set real_name       transaction
 version             1.2.0
-python.versions 27 36 37
+python.versions 37
 categories-append   databases
 maintainers         nomaintainer
 license             ZPL-2.1

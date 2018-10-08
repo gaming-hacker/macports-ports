@@ -27,12 +27,12 @@ depends_lib-append  path:bin/yorick:yorick \
 depends_run         port:yorick-yutils \
                     port:yorick-soy \
                     port:yorick-svipc \
-                    port:py27-pygtk
+                    port:py37-pygtk
 
 universal_variant   no
 
 post-patch {
-    reinplace "s|#!/usr/bin/env python2|#!${prefix}/bin/python2.7|" \
+    reinplace "s|#!/usr/bin/env python2|#!${prefix}/bin/python3.7|" \
         ${worksrcpath}/${uname}.py
 }
 

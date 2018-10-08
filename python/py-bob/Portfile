@@ -28,8 +28,8 @@ long_description             Bob is a signal-processing and machine learning too
 
 github.setup                idiap bob 2.1.0 v
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  465ac53ed7893cc82201928337ef1e2db60bdded \
 sha256  5946ad6f9332afd3d597fcb4dfab9026245448b6775f29d0f57b7ded083edd73

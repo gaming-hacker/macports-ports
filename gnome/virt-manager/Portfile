@@ -33,7 +33,7 @@ size    2796831
 
 platforms           darwin
 
-python.default_version  27
+python.default_version 37
 
 post-patch {
     reinplace -W ${worksrcpath} "s|/usr/bin/env python2|${python.bin}|" \

@@ -29,5 +29,5 @@ distname        ccm-${version}
 checksums       md5 f60e8a1dfaaa0e767e19af05e0c8db05 \
 sha256 8d46669127b4fbd517bc06488e1215475e3850fc97f565c092aa964ecb7674e9
 
-python.default_version  27
+python.default_version 37
 depends_lib-append      port:py${python.version}-yaml

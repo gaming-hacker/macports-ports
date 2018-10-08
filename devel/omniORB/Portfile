@@ -45,27 +45,17 @@ if {${build_arch} eq "x86_64" && ${os.platform} eq "darwin"} {
 # force a global variable
 set python_framework []
 
-variant python27 conflicts python36 description {Build Python 2.7 IDL support} {
-    configure.python            ${prefix}/bin/python2.7
-    set python_framework        ${frameworks_dir}/Python.framework/Versions/2.7/lib
-    depends_lib-append          port:python27
+variant python37 description {Build Python 3.7 IDL support} {
+    configure.python            ${prefix}/bin/python3.7
+    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.7/lib
+    depends_lib-append          port:python37
     configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 
-    notes "Install py27-omniORBpy for omniORBpy."
+    notes "Install py37-omniORBpy for omniORBpy."
 }
 
-variant python36 conflicts python27 description {Build Python 3.6 IDL support} {
-    configure.python            ${prefix}/bin/python3.6
-    set python_framework        ${frameworks_dir}/Python.framework/Versions/3.6/lib
-    depends_lib-append          port:python36
-    configure.pkg_config_path   ${python_framework}/lib/pkgconfig
+    default_variants +python37
 
-    notes "Install py36-omniORBpy for omniORBpy."
-}
-
-if {![variant_isset python27]} {
-    default_variants +python36
-}
 
 variant ssl description {Enable SSL support} {
     configure.args-append   --with-openssl
@@ -73,7 +63,7 @@ variant ssl description {Enable SSL support} {
 }
 
 post-destroot {
-    if {[variant_isset python36]} {
+    if {[variant_isset python37]} {
         # omniORB installs into /opt/local/lib/python3.6/site-packages/
         # but omniORBpy installs into /opt/local/Library/Frameworks/Python.framework/Versions/X.Y/
         # so adjust locations for this package

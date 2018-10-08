@@ -21,7 +21,7 @@ master_sites            pypi:r/repoze.who.plugins.sa/
 
 checksums               rmd160 7b786c87f8fed24e90d5ccbbac29d55930475c25
 
-python.versions 27 36 37
+python.versions 37
 
 if {$subport ne $name} {
     depends_build-append    port:py${python.version}-setuptools

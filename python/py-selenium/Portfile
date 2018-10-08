@@ -6,7 +6,7 @@ PortGroup       python 1.0
 name            py-selenium
 set real_name   selenium
 version         3.14.0
-python.versions 27 36 37
+python.versions 37
 license         Apache-2
 maintainers     {dstrubbe @dstrubbe} openmaintainer
 platforms       darwin

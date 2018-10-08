@@ -24,7 +24,7 @@ rmd160  09b4cdaf4c9ab128660a27685746d799c0d8b1b8
 
 patchfiles          setup.py.diff
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

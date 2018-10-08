@@ -117,16 +117,16 @@ if {![variant_isset universal]} {
 select.group        postgresql
 select.file         ${filespath}/${name}
 
-variant python requires python27 description {add support for python} {
+variant python requires python37 description {add support for python} {
 }
 
-variant python27 conflicts python3 description {add support for python 2.7} {
-    depends_lib-append      port:python27
+variant python37 conflicts python3 description {add support for python 3.7} {
+    depends_lib-append      port:python37
     configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python2.7
+    configure.python        ${prefix}/bin/python3.7
 }
 
-variant python3 conflicts python27 description {add support for python 3.x} {
+variant python3 conflicts python37 description {add support for python 3.x} {
     depends_lib-append      port:python36
     configure.args-append   --with-python
     configure.python        ${prefix}/bin/python3.6

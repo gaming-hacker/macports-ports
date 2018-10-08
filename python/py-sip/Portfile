@@ -55,8 +55,8 @@ epoch               1
 set branch          [join [lrange [split ${version} .] 0 1] .]
 set patch           [lindex [split ${version} .] 2]
 
-python.versions 27 36 37
-python.default_version 27
+python.versions 37
+python.default_version 37
 
 if {${name} ne ${subport}} {
 

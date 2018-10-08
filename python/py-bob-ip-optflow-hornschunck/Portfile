@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.ip.optflow.hornschunck 2.0.6 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  64b5db989230bd6c6fc02008a4589fcf57c8d634 \
 sha256  837f8324e8da6e9f962df65036aae44afd65555751e22dd92921f13fab08dfc0

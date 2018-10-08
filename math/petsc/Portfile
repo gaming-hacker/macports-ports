@@ -29,7 +29,7 @@ use_parallel_build  no
 
 depends_build-append \
                     port:sowing \
-                    port:python27 \
+                    port:python37 \
                     port:c2html
 
 # Sundials requires SuiteSparse
@@ -39,7 +39,7 @@ patchfiles-append   patch-superlu_dist.diff
 # in serial mode, MUMPS requires Metis
 patchfiles-append   patch-mumps.py.diff
 post-patch {
-    reinplace -W ${worksrcpath} "s,#!/usr/bin/env python,#!${prefix}/bin/python2.7," configure
+    reinplace -W ${worksrcpath} "s,#!/usr/bin/env python,#!${prefix}/bin/python3.7," configure
 }
 
 pre-configure {

@@ -39,7 +39,7 @@ variant personal \
 
 set pythons_suffixes {27 36}
 
-default_variants +python27
+default_variants +python37
 
 set pythons_ports {}
 foreach s ${pythons_suffixes} {

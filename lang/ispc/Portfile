@@ -21,7 +21,7 @@ set llvm_version    3.9
 
 depends_build       port:bison \
                     port:flex \
-                    port:python27
+                    port:python37
 depends_lib         port:clang-${llvm_version}
 
 use_configure       no
@@ -35,7 +35,7 @@ post-patch {
 }
 
 build.args          LLVM_CONFIG=${prefix}/bin/llvm-config-mp-${llvm_version} \
-                    PYTHON=${prefix}/bin/python2.7 \
+                    PYTHON=${prefix}/bin/python3.7 \
                     CLANG=${configure.cc}\
                     CXX=${configure.cxx} \
                     OPT="${configure.cxxflags} -fvisibility=hidden" \
@@ -61,7 +61,7 @@ destroot {
 }
 
 variant doc description {build and install documentation} {
-    depends_build-append    port:py27-docutils
+    depends_build-append    port:py37-docutils
 }
 
 livecheck.type      regex

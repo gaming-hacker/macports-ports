@@ -25,8 +25,8 @@ long_description             This package contains a set of Pythonic bindings to
 
 github.setup                 bioidiap bob.blitz 2.0.8 v
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  c9e4623287d1ad310ede54cc4da7b1320aadaf26 \
 sha256  1ddc01ee7e2dc612faf87c11d8ca588d47ba9ccc55d65876fcd5136e8898b71b

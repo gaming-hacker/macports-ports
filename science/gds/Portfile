@@ -31,8 +31,8 @@ depends_build-append \
               port:swig \
               port:swig-python
 
-depends_lib   port:python27 \
-              port:py27-numpy \
+depends_lib   port:python37 \
+              port:py37-numpy \
               port:curl \
               port:expat \
               port:fftw-3 \
@@ -58,7 +58,7 @@ destroot.post_args      ${destroot.destdir}
 # Use the --without-sasl option since the macports version of sasl2
 # leads to a 5 minute latency for each socket connection.
 
-configure.python ${prefix}/bin/python2.7
+configure.python ${prefix}/bin/python3.7
 configure.args --enable-dtt \
                --enable-python \
                --enable-root-objects \
@@ -78,13 +78,13 @@ if {${os.platform} eq "darwin" && ${os.major} >= 17 } {
 
     depends_lib-append      port:root6
 
-    require_active_variants root6 python27
+    require_active_variants root6 python37
 } else {
     configure.env           CXXFLAGS='-std=c++11'
 
     depends_lib-append  port:root5
 
-    require_active_variants root5 python27
+    require_active_variants root5 python37
 }
 
 livecheck.type   regex

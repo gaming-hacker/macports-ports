@@ -21,7 +21,7 @@ homepage            https://www.github.com/steenzout/python-${real_name}/
 checksums           sha256 0513135f4b13c9bb3d1297e0de02ccf77db258bc7d493b44dbe07e868f1ed42a \
 rmd160 168a81a270feb979da9df562e78283fc581b2642
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append port:${real_name}_select \

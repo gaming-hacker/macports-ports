@@ -33,23 +33,23 @@ post-destroot {
 
 ## https://code.google.com/p/libevt/wiki/Testing
 
-default_variants +debug +python27
+default_variants +debug +python37
 
 variant debug description {Enable verbose and debug output} {
     configure.args-append --enable-verbose-output --enable-debug-output
 }
 
-variant python27 description {Python Bindings using Python 2.7} {
+variant python37 description {Python Bindings using Python 3.7} {
     ## Enforce the right python config
-    configure.env       PYTHON_CONFIG=${prefix}/bin/python2.7-config PYTHON_VERSION=2.7
+    configure.env       PYTHON_CONFIG=${prefix}/bin/python3.7-config PYTHON_VERSION=2.7
 
-    depends_lib-append port:python27
+    depends_lib-append port:python37
     configure.args-append --enable-python \
-        --with-pyprefix=`${prefix}/bin/python2.7-config --prefix`
+        --with-pyprefix=`${prefix}/bin/python3.7-config --prefix`
     post-destroot {
-        xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+        xinstall -d ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages/
         foreach file [glob -nocomplain -directory ${destroot}/Library/Python/2.7/site-packages *] {
-            move ${file} ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
+            move ${file} ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages/
         }
     }
 }

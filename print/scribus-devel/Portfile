@@ -61,7 +61,7 @@ depends_lib-append \
                     port:libxml2 \
                     port:podofo \
                     port:poppler \
-                    port:python27 \
+                    port:python37 \
                     port:qt5-qttools \
                     port:qt5-qttranslations \
                     port:tiff \
@@ -76,8 +76,8 @@ configure.args-append \
                     -DWITH_BOOST=YES \
                     -DWANT_GRAPHICSMAGICK=NO \
                     -DWANT_NOOSG=YES \
-                    -DPYTHON_LIBRARY="${prefix}/lib/libpython2.7.dylib" \
-                    -DPYTHON_INCLUDE_DIR="${PyFRM}/2.7/include/python2.7"
+                    -DPYTHON_LIBRARY="${prefix}/lib/libpython3.7.dylib" \
+                    -DPYTHON_INCLUDE_DIR="${PyFRM}/2.7/include/python3.7"
 
 variant bitmap description {Input filters for most GraphicsMagick bitmap formats} {
     configure.args-delete   -DWANT_GRAPHICSMAGICK=NO

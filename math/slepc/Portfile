@@ -39,7 +39,7 @@ use_parallel_build  no
 
 depends_build-append \
                     port:sowing \
-                    port:python27
+                    port:python37
 
 configure.pre_args  --prefix=${prefix}/lib/slepc
 if {![variant_isset universal]} {

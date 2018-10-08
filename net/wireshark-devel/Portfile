@@ -117,21 +117,21 @@ variant libsmi {
         configure.args-append --with-libsmi
 }
 
-variant python27 description {use python27 for the experimental python interface} {
-        configure.python        ${prefix}/bin/python2.7
-        depends_lib-append      port:python27
+variant python37 description {use python37 for the experimental python interface} {
+        configure.python        ${prefix}/bin/python3.7
+        depends_lib-append      port:python37
 }
 
 pre-configure {
-        if {[variant_isset python27]} {
+        if {[variant_isset python37]} {
                 configure.args-append   --with-python
                 configure.args-delete   --without-python
-                reinplace "s|python-config|python2.7-config|g" ${worksrcpath}/configure
+                reinplace "s|python-config|python3.7-config|g" ${worksrcpath}/configure
         }
 }
 
 pre-destroot {
-        if {[variant_isset python27]} {
+        if {[variant_isset python37]} {
                  reinplace "s|libwireshark.dylib|${prefix}/lib/libwireshark.dylib|g" ${worksrcpath}/epan/wspython/wspy_libws.py
         }
 }

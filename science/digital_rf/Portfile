@@ -28,30 +28,30 @@ size    4537334
 configure.ldflags-delete    -L${prefix}/lib
 
 depends_build-append \
-                    port:py27-pkgconfig
+                    port:py37-pkgconfig
 
 depends_lib-append  port:hdf5 \
-                    port:py27-mako \
-                    port:py27-numpy
+                    port:py37-mako \
+                    port:py37-numpy
 
 depends_run-append  port:boost \
                     port:gnutls \
-                    port:py27-dateutil \
-                    port:py27-h5py \
-                    port:py27-matplotlib \
-                    port:py27-packaging \
-                    port:py27-pandas \
-                    port:py27-scipy \
-                    port:py27-six \
-                    port:py27-tz \
-                    port:py27-watchdog
+                    port:py37-dateutil \
+                    port:py37-h5py \
+                    port:py37-matplotlib \
+                    port:py37-packaging \
+                    port:py37-pandas \
+                    port:py37-scipy \
+                    port:py37-six \
+                    port:py37-tz \
+                    port:py37-watchdog
 
 depends_run-append  path:lib/libgnuradio-runtime.dylib:gnuradio \
                     path:lib/libuhd.dylib:uhd
 
 # CMAKE configuration
 configure.args-append \
-    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/2.7\
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7\
+    -DDRF_INSTALL_PREFIX_PYTHON=${frameworks_dir}/Python.framework/Versions/3.7\
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7\
     -DDRF_DATA_PREFIX_PYTHON=${prefix} \
     -DDRF_SCRIPT_PREFIX_PYTHON=${prefix}/bin

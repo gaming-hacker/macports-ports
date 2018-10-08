@@ -9,12 +9,12 @@ name                py-pyfits
 version             3.3
 revision            5
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     replaced_by     py${python.version}-astropy
 }
 
 subport py26-pyfits {
-    replaced_by     py27-astropy
+    replaced_by     py37-astropy
 }

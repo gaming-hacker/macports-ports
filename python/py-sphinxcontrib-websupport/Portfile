@@ -22,7 +22,7 @@ distname            ${python.rootname}-${version}
 checksums           rmd160 9a1ccc7e60fd28f3f642cc9d3963ed9a6055ce20 \
 sha256 9de47f375baf1ea07cdb3436ff39d7a9c76042c10a769c52353ec46e4e8fc3b9
 
-python.versions 27 36 37
+python.versions 37
 
 if {$subport ne $name} {
     depends_build   port:py${python.version}-setuptools

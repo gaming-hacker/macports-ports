@@ -21,7 +21,7 @@ sha256  7caa581155c3433716b7e6aba71fe1378cd7d92f4155c266d60e5cffb64e9603 \
 size    3119615
 
 
-python.versions 27 36 37
+python.versions 37
 
 if {${os.major} <= 14 && ${os.platform} eq "darwin"} {
     version         5.9.2
@@ -44,7 +44,7 @@ if {${name} ne ${subport}} {
                         port:dbus-python${python.version}
 
     if {${python.version} == 27} {
-        depends_lib-append port:py27-enum34
+        depends_lib-append port:py37-enum34
     }
 
     use_configure       yes

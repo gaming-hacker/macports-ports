@@ -2,7 +2,7 @@
 
 PortSystem 1.0
 
-name            py27-osmgpsmap
+name            py37-osmgpsmap
 version         0.7.3
 revision        4
 categories      python graphics
@@ -22,14 +22,14 @@ sha256  fcd0339a5922bdbbb9c934aa3c2fb9a2b8d04487d037e36cbf308dc83a02a9cf
 depends_build   port:pkgconfig
 
 depends_lib     port:osm-gps-map-gtk2 \
-                port:py27-pygtk
+                port:py37-pygtk
 
 patchfiles      patch-osmgpsmapmodule.c.diff
 
 use_autoreconf  yes
 
-configure.python            ${prefix}/bin/python2.7
-set python_framework        ${frameworks_dir}/Python.framework/Versions/2.7
+configure.python            ${prefix}/bin/python3.7
+set python_framework        ${frameworks_dir}/Python.framework/Versions/3.7
 configure.pkg_config_path   ${python_framework}/lib/pkgconfig
 
 prefix          ${python_framework}

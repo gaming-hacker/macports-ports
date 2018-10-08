@@ -55,7 +55,7 @@ size   519697
         configure.args-append \
             -DHAS_MONGODB=TRUE
 
-        depends_lib-append port:py27-pymongo
+        depends_lib-append port:py37-pymongo
 
     } else {
 
@@ -113,15 +113,15 @@ configure.ldflags-delete -L${prefix}/lib
 
 # specify the Python dependencies
 
-depends_lib-append port:python27
+depends_lib-append port:python37
 
 # specify that Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7 \
-    -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/Headers \
-    -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/2.7/Python \
-    -DGR_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages \
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7 \
+    -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/3.7/Headers \
+    -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/3.7/Python \
+    -DGR_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages \
     -DCMAKE_MODULES_DIR=${prefix}/share/cmake
 
 # use C++11

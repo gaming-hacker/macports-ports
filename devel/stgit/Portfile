@@ -37,7 +37,7 @@ worksrcdir          stgit-48e5cef
 
 depends_run         port:git
 
-python.default_version  27
+python.default_version 37
 
 patch.pre_args      -p1
 
@@ -52,7 +52,7 @@ set stgdocs         "${worksrcpath}/Documentation/\[a-z\]*.txt"
 set stgman          ""
 
 post-build {
-    system -W ${worksrcpath} "PYTHON=${prefix}/bin/python2.7 make all"
+    system -W ${worksrcpath} "PYTHON=${prefix}/bin/python3.7 make all"
 }
 
 post-destroot {
@@ -77,7 +77,7 @@ variant html_man_docs \
     lappend stgman ${worksrcpath}/Documentation/*.1
     depends_build-append    port:asciidoc port:xmlto
     post-build {
-        system -W ${worksrcpath} "PYTHON=${prefix}/bin/python2.7 make all doc"
+        system -W ${worksrcpath} "PYTHON=${prefix}/bin/python3.7 make all doc"
     }
 }
 

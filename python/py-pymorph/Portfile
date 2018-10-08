@@ -10,5 +10,5 @@ revision            1
 license             BSD
 categories          python
 
-subport py26-pymorph "replaced_by py27-scikit-image"
+subport py26-pymorph "replaced_by py37-scikit-image"
 # remove after August 24, 2019

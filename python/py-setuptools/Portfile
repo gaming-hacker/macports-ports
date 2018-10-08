@@ -29,7 +29,7 @@ use_zip             yes
 checksums           rmd160 7f88949f7df7c20e2cb4f0b39ca1451cbd241b71 \
 sha256 65898ab8a1d1e205e37f6567d07d67560e9466dab02f66e1453c804f057ddb48
 
-python.versions 27 36 37
+python.versions 37
 python.link_binaries no
 
 if {$subport ne $name} {

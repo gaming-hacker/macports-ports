@@ -21,7 +21,7 @@ checksums           md5     f28d902df9044f0bf86a35a4bd2ec092 \
 rmd160  f543e7e6aec6621145de3a455437a01ec8a22446 \
 sha256  c559f6a5bf51e869325b36bd83c14cccd7dec1c6e7599e797f9ba27a72d339c0
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

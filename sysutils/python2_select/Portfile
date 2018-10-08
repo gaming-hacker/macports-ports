@@ -44,14 +44,14 @@ platform darwin {
         } elseif {${os.major} == 11} {
             list python25-apple \
                  python26-apple \
-                 python27-apple
+                 python37-apple
         } elseif {${os.major} == 12 || ${os.major} == 13} {
             list {python25-apple.mtln python25-apple} \
                  {python26-apple.mtln python26-apple} \
-                 {python27-apple.mtln python27-apple}
+                 {python37-apple.mtln python37-apple}
         } elseif {${os.major} >= 14} {
             list {python26-apple.mtln python26-apple} \
-                 {python27-apple.mtln python27-apple}
+                 {python37-apple.mtln python37-apple}
         }
     ]
     foreach python $apple_pythons {

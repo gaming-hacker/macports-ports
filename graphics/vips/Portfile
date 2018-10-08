@@ -58,15 +58,15 @@ proc install_pygi {pyver} {
     xinstall ${worksrcpath}/python/packages/gi/overrides/Vips.py ${destdir}
     system "${prefix}/bin/python${pyver} -m compileall ${destdir}"
 }
-variant python27 description {Install Python 2.7 interface} {
-    depends_lib-append      port:py27-gobject3
+variant python37 description {Install Python 3.7 interface} {
+    depends_lib-append      port:py37-gobject3
     post-destroot {
         install_pygi        2.7
     }
     # Include vips7 legacy API
     configure.args-append   --enable-pyvips7 \
-                            am_cv_python_pyexecdir='${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages'
-    configure.env-append    PYTHON='${prefix}/bin/python2.7'
+                            am_cv_python_pyexecdir='${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages'
+    configure.env-append    PYTHON='${prefix}/bin/python3.7'
 }
 variant python34 description {Install Python 3.4 interface} {
     depends_lib-append      port:py34-gobject3
@@ -86,4 +86,4 @@ variant python36 description {Install Python 3.6 interface} {
         install_pygi        3.6
     }
 }
-default_variants    +python27
+default_variants    +python37

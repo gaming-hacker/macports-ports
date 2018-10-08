@@ -35,7 +35,7 @@ checksums           rmd160  52756ddc8f5b15f49571b532733bdf39e9497048 \
 sha256  3dc408887b2dde75fc2146f7af456f048de2ce08e5f259cc53892ad3456f8cec
 
 # COT can be installed against Python 2.6, 2.7, 3.3, or 3.4
-python.default_version  27
+python.default_version 37
 
 depends_build-append \
                     port:py${python.version}-setuptools

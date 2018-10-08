@@ -84,7 +84,7 @@ if {![catch {set wxw_stdlib [active_variants ${wxWidgets.port} stdlib]} err]} {
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python27
+                    port:python37
 depends_lib-append  port:freetype \
                     port:harfbuzz \
                     port:libid3tag \
@@ -190,7 +190,7 @@ build.args-append   V=1 VERBOSE=1
 # with everything defined/declared as intended we can now
 # handle the post-patch step with its reinplace statements.
 post-patch {
-    set python_bin ${prefix}/bin/python2.7
+    set python_bin ${prefix}/bin/python3.7
     reinplace -W ${worksrcpath} "s|@@PYTHON@@|${python_bin}|g" \
                                 lib-src/lv2/build \
                                 lib-src/lv2/configure

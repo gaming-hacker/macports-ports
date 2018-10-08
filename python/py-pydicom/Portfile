@@ -5,7 +5,7 @@ PortGroup           python 1.0
 PortGroup           github 1.0
 github.setup        pydicom pydicom 1.1.0 v
 name                py-pydicom
-python.versions 27 36 37
+python.versions 37
 platforms           darwin
 license             MIT BSD
 maintainers         {eborisch @eborisch} \
@@ -45,7 +45,7 @@ if {${name} ne ${subport}} {
     post-extract {
         reinplace s/sphinx-build/sphinx-build-${python.branch}/ \
             doc/Makefile
-        if {${subport} eq "py27-pydicom"} {
+        if {${subport} eq "py37-pydicom"} {
             reinplace {s/print(\(.*\), end=.*/print \1,/} \
                 examples/input_output/plot_read_dicom_directory.py
         }
@@ -69,10 +69,10 @@ if {${name} ne ${subport}} {
         }
     }
 
-    if {${subport} eq "py27-pydicom"} {
+    if {${subport} eq "py37-pydicom"} {
         # Backwards compatibility for upgraders
         notes \
-"pydicom >= 1.0 changed the library name. Install py27-dicom for backward\
+"pydicom >= 1.0 changed the library name. Install py37-dicom for backward\
 compatibility if required. (Can be installed without conflict.) See\
 https://pydicom.github.io/pydicom/stable/transition_to_pydicom1.html\
 for more information."

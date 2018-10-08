@@ -17,7 +17,7 @@ if {${name} eq ${subport}} {
     PortGroup           obsolete 1.0
 }
 
-subport py27-hgsvn {
-    replaced_by         py27-hgsubversion
+subport py37-hgsvn {
+    replaced_by         py37-hgsubversion
     PortGroup           obsolete 1.0
 }

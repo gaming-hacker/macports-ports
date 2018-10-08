@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             PSF
 
-python.versions 27 36 37
+python.versions 37
 
 maintainers         {gmail.com:ottenr.work @reneeotten} openmaintainer
 

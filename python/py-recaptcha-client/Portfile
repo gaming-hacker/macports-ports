@@ -10,5 +10,5 @@ categories-append    python graphics
 revision             1
 license              MIT
 
-subport py26-recaptcha-client "replaced_by py27-recaptcha"
+subport py26-recaptcha-client "replaced_by py37-recaptcha"
 # remove after August 22, 2019

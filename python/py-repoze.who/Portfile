@@ -20,7 +20,7 @@ master_sites        pypi:r/repoze.who/
 
 checksums           rmd160 cbf710cbe264b8380f6d4ff06b95d7dc1539831c
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

@@ -88,7 +88,7 @@ foreach v {27} {
                               -C ${worksrcpath}/swig/python
 
     post-destroot {
-      if {${subport} eq "py27-${name}"} {
+      if {${subport} eq "py37-${name}"} {
         foreach script [glob -tails -nocomplain -directory ${destroot}${python.prefix}/bin *] {
           file link -symbolic ${destroot}${prefix}/bin/${script} ../Library/Frameworks/Python.framework/Versions/${python.version}/bin/${script}
         }

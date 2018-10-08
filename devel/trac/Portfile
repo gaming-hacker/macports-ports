@@ -29,10 +29,10 @@ rmd160	2d11d3a371142b17dce5c510e5056755b4607558 \
 sha256	f373114d0be88f216c47ca31185238780cde898cd7256526a501e95007dd9f90 \
 size	6297767
 
-variant python27 description {Use Python 2.7} {}
+variant python37 description {Use Python 3.7} {}
 
-default_variants +python27
-python.default_version 27
+default_variants +python37
+python.default_version 37
 
 depends_lib	port:py${python.version}-pygments port:py${python.version}-genshi \
 		port:py${python.version}-babel port:py${python.version}-sqlite

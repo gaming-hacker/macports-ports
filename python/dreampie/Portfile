@@ -5,7 +5,7 @@ PortGroup           github 1.0
 PortGroup           python 1.0
 
 github.setup        noamraph dreampie 1.2.1
-python.default_version 27
+python.default_version 37
 
 maintainers         g5pw openmaintainer
 

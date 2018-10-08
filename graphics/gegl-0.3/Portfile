@@ -35,7 +35,7 @@ size    6707964
 
 depends_build       port:pkgconfig \
                     port:w3m \
-                    port:python27
+                    port:python37
 
 depends_lib         port:babl \
                     port:gdk-pixbuf2 \
@@ -80,7 +80,7 @@ compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 use_autoreconf      yes
 autoreconf.args     -fvi
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 configure.args      --disable-docs \
                     --disable-silent-rules \

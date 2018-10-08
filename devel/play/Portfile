@@ -33,10 +33,10 @@ size    78540697
 
 depends_build       port:apache-ant
 
-depends_lib         port:python27
+depends_lib         port:python37
 
 post-patch {
-    reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|" ${worksrcpath}/play
+    reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|" ${worksrcpath}/play
 }
 
 use_configure       no

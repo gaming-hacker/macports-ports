@@ -33,13 +33,13 @@ homepage                http://www.h5py.org
 # Support for -devel
 set DEV_VERSION     0
 
-subport                 py27-h5py-devel {set DEV_VERSION 27}
+subport                 py37-h5py-devel {set DEV_VERSION 27}
 subport                 py34-h5py-devel {set DEV_VERSION 34}
 subport                 py35-h5py-devel {set DEV_VERSION 35}
 subport                 py36-h5py-devel {set DEV_VERSION 36}
 
-python.versions 27 36 37
-python.default_version  27
+python.versions 37
+python.default_version 37
 
 checksums \
 rmd160  d2989e082842e6c14d9a34bb4e92ec862bd7585b \

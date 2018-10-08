@@ -30,7 +30,7 @@ depends_run	bin:sudo:sudo
 set python.branch	2.x
 set python.bin		${prefix}/bin/python
 
-variant python26 conflicts python27 description "use python 2.6" {
+variant python26 conflicts python37 description "use python 2.6" {
 depends_lib-append	port:python26
 depends_run-append	port:py26-pygtk
 
@@ -38,16 +38,16 @@ set python.branch	2.6
 set python.bin		${prefix}/bin/python${python.branch}
 }
 
-variant python27 conflicts python26 description "use python 2.7" {
-depends_lib-append	port:python27
-depends_run-append	port:py27-pygtk
+variant python37 conflicts python26 description "use python 3.7" {
+depends_lib-append	port:python37
+depends_run-append	port:py37-pygtk
 
-set python.branch	2.7
+set python.branch 3.7
 set python.bin		${prefix}/bin/python${python.branch}
 }
 
 if {![variant_isset python26]} {
-	default_variants +python27
+	default_variants +python37
 }
 
 post-patch   {

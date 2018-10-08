@@ -35,7 +35,7 @@ depends_lib         port:bison \
                     port:libpcap \
                     path:lib/libssl.dylib:openssl \
                     port:perl5 \
-                    port:python27 \
+                    port:python37 \
                     port:readline \
                     port:zlib
 
@@ -60,9 +60,9 @@ post-destroot {
     move ${destroot}${prefix}/etc/bro/networks.cfg ${destroot}${prefix}/share/examples/${name}/
     move ${destroot}${prefix}/etc/bro/broctl.cfg ${destroot}${prefix}/share/examples/${name}/
 
-    reinplace "s|/usr/bin/python|${prefix}/bin/python2.7|" ${destroot}${prefix}/bin/broctl
+    reinplace "s|/usr/bin/python|${prefix}/bin/python3.7|" ${destroot}${prefix}/bin/broctl
 
-    reinplace "s|/usr/bin/python|${prefix}/bin/python2.7|" ${destroot}${prefix}/bin/trace-summary
+    reinplace "s|/usr/bin/python|${prefix}/bin/python3.7|" ${destroot}${prefix}/bin/trace-summary
 
     xinstall -d ${destroot}${prefix}/Library/LaunchDaemons/
     copy ${filespath}/org.macports.bro.plist ${destroot}${prefix}/Library/LaunchDaemons/

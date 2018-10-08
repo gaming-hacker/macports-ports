@@ -31,7 +31,7 @@ if {${name} ne ${subport}} {
    }
 }
 
-python.versions 27 36 37
+python.versions 37
 
 livecheck.type      regex
 livecheck.url       [lindex ${master_sites} 0]

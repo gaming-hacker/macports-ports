@@ -24,7 +24,7 @@ rmd160  75b415a1865f1be8c606c50ec4ab0cd6a73d311c \
 sha256  f5d37d20632ba74bd0b12a85179c12f64a9ea037ffc916d8a2de3be4f4656c76 \
 size    8040822
 
-python.versions 27 36 37
+python.versions 37
 
 build.args-append   --use-system-cfitsio \
                     --use-system-expat \

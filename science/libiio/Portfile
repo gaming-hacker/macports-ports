@@ -28,7 +28,7 @@ depends_lib-append port:libxml2 \
     port:avahi port:xz port:zlib port:libiconv
 
 depends_build-append port:pkgconfig \
-    port:python27 port:doxygen
+    port:python37 port:doxygen
 
 # patch to fix install directory of the framework
 
@@ -52,7 +52,7 @@ configure.args-append \
     -DLIBLZMA_LIBRARY:FILEPATH=${prefix}/lib/liblzma.dylib \
     -DLIBUSB_INCLUDE_DIR:PATH=${prefix}/include \
     -DLIBUSB_LIBRARIES:FILEPATH=${prefix}/lib/libusb-1.0.dylib \
-    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python2.7 \
+    -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python3.7 \
     -DZLIB_INCLUDE_DIR:PATH=${prefix}/include \
     -DZLIB_LIBRARY_RELEASE:FILEPATH=${prefix}/lib/libz.dylib \
     -DOSX_PACKAGE=OFF \
@@ -60,9 +60,9 @@ configure.args-append \
 
 post-destroot {
     # move Python install to frameworks_dir for Python
-    set py_install_dir ${frameworks_dir}/Python.framework/Versions/2.7/lib
+    set py_install_dir ${frameworks_dir}/Python.framework/Versions/3.7/lib
     xinstall -m 755 -d ${destroot}${py_install_dir}
-    move ${destroot}${prefix}/lib/python2.7 ${destroot}${py_install_dir}
+    move ${destroot}${prefix}/lib/python3.7 ${destroot}${py_install_dir}
 
     # link from iio.framework to normal
     set iio_framework_version 0.15

@@ -35,16 +35,16 @@ depends_lib         port:bzip2 \
                     port:liblas\
                     path:lib/pkgconfig/cairo.pc:cairo \
                     port:readline \
-                    port:python27 \
-                    port:py27-pillow \
-                    port:py27-numpy
+                    port:python37 \
+                    port:py37-pillow \
+                    port:py37-numpy
 
 patchfiles          patch-configure.diff \
                     patch-Install_make.diff \
                     patch-libraster_gdal_c.diff
 
 post-patch {
-    set python_bin ${prefix}/bin/python2.7
+    set python_bin ${prefix}/bin/python3.7
     fs-traverse f ${worksrcpath} {
         if {[file extension ${f}] eq ".py"} {
             reinplace -q "s|/usr/bin/env python|${python_bin}|" ${f}
@@ -114,7 +114,7 @@ variant gui description {Builds with WxPython GUI} {
     wxWidgets.use       wxPython-3.0
 
     depends_lib-append      port:${wxWidgets.port} \
-                            port:py27-${wxWidgets.port}
+                            port:py37-${wxWidgets.port}
 
     configure.args-append   --with-wxwidgets=${wxWidgets.wxconfig}
 }

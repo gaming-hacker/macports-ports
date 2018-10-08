@@ -24,7 +24,7 @@ sha256  9ffc9b68c8c0e0a996e2409e4a95ef1fbb4dcf0f6040b21b9153cbd57c90e079
 
 distname            ${real_name}-${version}
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
 

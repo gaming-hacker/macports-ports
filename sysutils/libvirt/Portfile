@@ -25,7 +25,7 @@ size    14813352
 
 depends_build       port:pkgconfig \
                     port:bash-completion \
-                    port:python27 \
+                    port:python37 \
                     port:perl5
 
 depends_lib         port:curl \
@@ -38,7 +38,7 @@ depends_lib         port:curl \
 compiler.blacklist-append apple-gcc* gcc-3.3 gcc-4.* *llvm-gcc-4.2 macports-gcc-4.3
 
 # libvirt build scripts work with python 2.x only
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 configure.perl      ${prefix}/bin/perl5
 
 configure.args      --disable-silent-rules \

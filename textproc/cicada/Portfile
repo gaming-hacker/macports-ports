@@ -26,8 +26,8 @@ depends_lib         port:expgram \
                     port:boost \
                     port:icu
 
-depends_build       port:py27-docutils \
-                    port:py27-pygments
+depends_build       port:py37-docutils \
+                    port:py37-pygments
 
 patchfiles          patch-samples.diff
 

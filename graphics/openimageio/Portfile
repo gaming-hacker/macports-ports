@@ -52,15 +52,15 @@ depends_lib-append \
 #    -DUSE_QT=OFF
 qt5.depends_component qtbase
 
-variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python27
+variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
+    depends_lib-append port:python37
     configure.args-append \
         -DPYTHON_VERSION=2.7 \
-        -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
-    require_active_variants boost python27
+        -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
+    require_active_variants boost python37
 }
 
-variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 {
+variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
     depends_lib-append port:python36
     configure.args-append \
         -DPYTHON_VERSION=3.6 \
@@ -68,7 +68,7 @@ variant python36 description {Build the Python 3.6 bindings} conflicts python27 
     require_active_variants boost python36
 }
 
-variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 {
+variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
     depends_lib-append port:python37
     configure.args-append \
         -DPYTHON_VERSION=3.7 \
@@ -76,13 +76,13 @@ variant python37 description {Build the Python 3.7 bindings} conflicts python27 
     require_active_variants boost python37
 }
 
-if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append \
         -DUSE_PYTHON=OFF
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }
 
 #configure.args-append \

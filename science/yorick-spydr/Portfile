@@ -29,11 +29,11 @@ sha256  1f4d662c35966d87916a238bb66d4f13319f39e109d72a879055a044fa32c087
 depends_lib         path:bin/yorick:yorick
 
 depends_run         port:yorick-yao \
-                    port:py27-pygtk \
+                    port:py37-pygtk \
                     port:zenity
 
 post-patch {
-    reinplace "s|#!/usr/bin/env python2|#!${prefix}/bin/python2.7|" \
+    reinplace "s|#!/usr/bin/env python2|#!${prefix}/bin/python3.7|" \
         ${worksrcpath}/${uname}.py
 }
 

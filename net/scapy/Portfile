@@ -6,8 +6,8 @@ PortGroup             github 1.0
 
 name                  scapy
 
-python.versions 27 36 37
-python.default_version 27
+python.versions 37
+python.default_version 37
 
 categories            net security python
 license               GPL-2

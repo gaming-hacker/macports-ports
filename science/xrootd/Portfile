@@ -27,7 +27,7 @@ checksums           rmd160  de74bf73ae986e23ce24bf1cc973ee46fda702da \
 sha256  f148d55b16525567c0f893edf9bb2975f7c09f87f0599463e19e1b456a9d95ba \
 size    2390944
 
-depends_lib         port:python27 \
+depends_lib         port:python37 \
                     port:swig \
                     port:zlib
 

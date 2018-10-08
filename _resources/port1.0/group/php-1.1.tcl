@@ -91,7 +91,7 @@ proc php._set_name {option action args} {
     }
 
     if {[regexp {^php\d+-} ${args}]} {
-php.branches 5.6 7.2 7.3
+php.branches 7.3
     }
 }
 

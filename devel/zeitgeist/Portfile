@@ -29,13 +29,13 @@ depends_lib         port:gtk3 \
                     port:dbus \
                     port:json-glib \
                     port:telepathy-glib \
-                    port:py27-rdflib \
+                    port:py37-rdflib \
                     port:raptor2 \
                     port:vala
 
 gobject_introspection yes
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 patchfiles          patch-configure.ac.diff \
                     patch-python_Makefile.am.diff

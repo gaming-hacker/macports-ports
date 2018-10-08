@@ -38,7 +38,7 @@ sha256  f80c64c85440c96ca4ece4c87c020284d9025bf60ae5c3a468fd53c9cc15413e \
 size    2471445
 }
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append      port:eigen3 \
                         port:gtest \

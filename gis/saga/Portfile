@@ -71,12 +71,12 @@ variant gui description "build the GUI interface" {
     configure.args-delete   --disable-gui
 }
 
-variant python27 description "build Python 2.7 bindings" {
-    depends_lib-append      port:python27\
+variant python37 description "build Python 3.7 bindings" {
+    depends_lib-append      port:python37\
                             port:swig-python
     
     configure.args-append   --enable-python
-    configure.env-append    PYTHON="${prefix}/bin/python2.7"
+    configure.env-append    PYTHON="${prefix}/bin/python3.7"
     configure.env-append    PYTHON_VERSION="2.7"
 }
 
@@ -99,10 +99,10 @@ if {![variant_isset postgresql10] && ![variant_isset postgresql96]} {
 }
 
 post-destroot {
-    if {[variant_isset python27]} {
-        file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
-        file rename ${destroot}${prefix}/lib/python2.7/site-packages \
-        ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+    if {[variant_isset python37]} {
+        file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7
+        file rename ${destroot}${prefix}/lib/python3.7/site-packages \
+        ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
     }
 }
 

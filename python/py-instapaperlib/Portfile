@@ -24,4 +24,4 @@ checksums           md5 c6f4c0cfeed03a5b417fa07f9e89d35d
 livecheck.type      regex
 livecheck.regex     {<h1>instapaperlib ([0-9.]+)</h1>}
 
-python.versions 27 36 37
+python.versions 37

@@ -25,7 +25,7 @@ rmd160  4aeb1cf41978671524bb1c4be4b11e25bda6c1ae
 
 patchfiles          patch-pillow-compat.diff
 
-python.versions 27 36 37
+python.versions 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:${python.pkgd}/PIL:py${python.version}-Pillow \

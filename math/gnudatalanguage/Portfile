@@ -124,7 +124,7 @@ post-destroot {
     xinstall -m 644 -W ${worksrcpath} COPYING ChangeLog HACKING NEWS MAP_INSTALL TODO \
         ${destroot}${prefix}/share/doc/${name}
     file copy ${worksrcpath}/testsuite ${destroot}${prefix}/share/${name}/
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         xinstall -m 644 ${worksrcpath}/PYTHON.txt ${destroot}${prefix}/share/doc/${name}
         file copy ${worksrcpath}/src/py ${destroot}${prefix}/share/${name}/
     }
@@ -157,14 +157,14 @@ variant wxWidgets description {deprecated compatibility variant} {
 #    #configure.env-append    LDFLAGS=\"-Wl,-dylib_file,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib\"
 }
 
-if {[variant_isset python27]} {
+if {[variant_isset python37]} {
     configure.args-delete   -DPYTHON=OFF
     configure.args-append   -DPYTHON=ON
 }
 
-variant python27 description {build with support for calling Python (2.7) from GDL (using numpy)} {
-    depends_lib-append      port:py27-numpy
-    configure.args-append   -DPYTHONDIR=${frameworks_dir}/Python.framework/Versions/2.7 \
+variant python37 description {build with support for calling Python (2.7) from GDL (using numpy)} {
+    depends_lib-append      port:py37-numpy
+    configure.args-append   -DPYTHONDIR=${frameworks_dir}/Python.framework/Versions/3.7 \
                             -DPYTHONVERSION=2.7
 }
 

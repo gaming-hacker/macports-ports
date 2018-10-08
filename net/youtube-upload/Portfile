@@ -31,18 +31,18 @@ post-destroot {
     copy ${worksrcpath}/examples ${destroot}${docdir}
 }
 
-if {![variant_isset python26] && ![variant_isset python27]} {
-    default_variants +python27
+if {![variant_isset python26] && ![variant_isset python37]} {
+    default_variants +python37
 }
 
-variant python26 conflicts python27 description {Use python26} {}
+variant python26 conflicts python37 description {Use python26} {}
 if {[variant_isset python26]} {
     python.default_version  26
 }
 
-variant python27 conflicts python26 description {Use python27} {}
-if {[variant_isset python27]} {
-    python.default_version  27
+variant python37 conflicts python26 description {Use python37} {}
+if {[variant_isset python37]} {
+    python.default_version 37
 }
 
 depends_lib-append  port:py${python.version}-curl \

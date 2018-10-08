@@ -21,7 +21,7 @@ homepage            https://thinkle.github.io/gourmet/
 checksums           rmd160  df9b633c051c84423d4da88156b7d0cba16eaff7 \
 sha256  21e51301d7a4078995ebe7343dd8a669646c1c22028713e5ecfc069045a97ea4
 
-python.default_version  27
+python.default_version 37
 
 depends_build       port:py${python.version}-distutils-extra \
                     port:intltool

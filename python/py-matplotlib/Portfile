@@ -11,7 +11,7 @@ categories-append   graphics math
 platforms           darwin
 license             {PSF BSD}
 
-python.versions 27 36 37
+python.versions 37
 
 maintainers         {sean @seanfarley} openmaintainer
 
@@ -51,9 +51,9 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-kiwisolver
 
     if {${python.version} == 27} {
-        depends_lib-append port:py27-functools32 \
-                           port:py27-subprocess32 \
-                           port:py27-backports-functools_lru_cache
+        depends_lib-append port:py37-functools32 \
+                           port:py37-subprocess32 \
+                           port:py37-backports-functools_lru_cache
     }
 
     patchfiles-append   patch-setup.cfg.diff \

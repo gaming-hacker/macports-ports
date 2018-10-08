@@ -137,7 +137,7 @@ foreach s ${pythons_suffixes} {
     }
 }
 if {!${any_python}} {
-    default_variants +python27
+    default_variants +python37
 }
 
 pre-fetch {

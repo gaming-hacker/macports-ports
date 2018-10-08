@@ -33,7 +33,7 @@ master_sites       http://software.ligo.org/lscsoft/source/
 checksums          rmd160 c4d383064c922ffc16fd9ce046fcece34127c31c \
 sha256 531538893707ed1b7d8e8abb3bc1a71b91094c1b5f05da07940aae8ac2daa9e0
 
-python.default_version 27
+python.default_version 37
 
 depends_build      port:pkgconfig
 

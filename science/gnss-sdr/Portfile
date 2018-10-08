@@ -171,7 +171,7 @@ configure.args-append \
 # specify the Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7
 
 # enable default variants: all except +docs, +debug, and +universal
 # do not enable +docs because it requires a non-standard variant for doxygen.

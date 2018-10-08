@@ -10,7 +10,7 @@ license             BSD PHP-3.01
 platforms           darwin freebsd openbsd
 maintainers         {pixilla @pixilla} openmaintainer
 
-php.branches 5.6 7.2 7.3
+php.branches 7.3
 php.pecl            yes
 
 description         PHP serializer.

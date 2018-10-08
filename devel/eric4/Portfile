@@ -26,14 +26,14 @@ master_sites    sourceforge:project/eric-ide/${name}/stable/${version}/
 checksums       rmd160  0b01bb4c46c4ac959b5f45f037caeece624c504d \
 sha256  7032ff5758455b89fe733b41956e8ea60e215c4381603e897116cd15bb29da65
 
-depends_lib     port:python27 \
-                port:py27-pyqt4 \
-                port:py27-qscintilla-qt4 \
-                port:py27-pysvn \
-                port:py27-rope \
-                port:py27-pylint \
-                port:py27-cx_Freeze \
-                port:py27-enchant
+depends_lib     port:python37 \
+                port:py37-pyqt4 \
+                port:py37-qscintilla-qt4 \
+                port:py37-pysvn \
+                port:py37-rope \
+                port:py37-pylint \
+                port:py37-cx_Freeze \
+                port:py37-enchant
 
 patchfiles      patch-install.py.diff
 
@@ -48,7 +48,7 @@ build {
 }
 
 destroot {
-    system -W ${worksrcpath} "${prefix}/bin/python2.7 install.py -b '${prefix}/bin' -i '${destroot}'"
+    system -W ${worksrcpath} "${prefix}/bin/python3.7 install.py -b '${prefix}/bin' -i '${destroot}'"
 }
 
 livecheck.type  regex

@@ -27,9 +27,9 @@ checksums       md5     574593815e75ee6e98062c75d6d1581f \
 sha1    f9877ce9672ed3c3d001b86924f1b6514a79efc9 \
 rmd160  55aa1c3ac0739d398d8e9bbda93ef36f7c659360
 
-subport py27-orbit {
+subport py37-orbit {
     set pyversion 2.7
-    depends_lib-append  port:python27
+    depends_lib-append  port:python37
 }
 subport py26-orbit {
     set pyversion 2.6
@@ -62,8 +62,8 @@ if {$subport ne $name} {
 
     # py-orbit was previously for python 2.4
     revision            1
-    replaced_by         py27-orbit
-    depends_lib         port:py27-orbit
+    replaced_by         py37-orbit
+    depends_lib         port:py37-orbit
     supported_archs     noarch
     use_configure       no
     build               {}

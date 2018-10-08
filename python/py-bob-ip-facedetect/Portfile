@@ -31,8 +31,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.ip.facedetect 2.0.3 v
 
 
-python.versions 27 36 37
-python.default_version       27
+python.versions 37
+python.default_version 37
 
 checksums                    rmd160  f7a6e71731c18f085d566212e250ee8e4370fafe \
 sha256  32b7f03bb4cedca85d806f314509fa5485038a2c69f6e219449866a34d2a98ff

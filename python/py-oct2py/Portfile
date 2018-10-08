@@ -6,8 +6,8 @@ PortGroup           python 1.0
 
 name                py-oct2py
 
-python.versions 27 36 37
-python.default_version 27
+python.versions 37
+python.default_version 37
 
 github.setup        blink1073 oct2py 4.0.6 v
 revision            1

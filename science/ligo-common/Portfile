@@ -2,7 +2,7 @@
 
 PortSystem    1.0
 
-replaced_by   py27-ligo-common
+replaced_by   py37-ligo-common
 PortGroup     obsolete 1.0
 
 name          ligo-common
