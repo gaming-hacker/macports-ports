@@ -29,6 +29,10 @@ sha256  494d64ffa7069498a97b909a0e65a35a213989e0184f1ea15332933a90d43445 \
 size    3571750
 
 if {${name} eq ${subport}} {
+    use_autoreconf          yes
+    autoreconf.cmd          ./autogen.sh
+    autoreconf.args
+
     depends_build-append    port:pkgconfig \
                             port:autoconf \
                             port:automake \
@@ -39,10 +43,6 @@ if {${name} eq ${subport}} {
                             port:libpng \
                             port:leptonica \
                             port:jpeg
-
-    use_autoreconf          yes
-    autoreconf.cmd          ./autogen.sh
-    autoreconf.args
 
     patchfiles              patch-fix-library-name.diff \
                             patch-fix-mtree-violation-by-cmake-files.diff

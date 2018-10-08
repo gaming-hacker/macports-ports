@@ -7,7 +7,8 @@ version             2017-08-04
 set git_version     91edd6e
 categories          x11 fonts
 maintainers         {@lemzwerg gnu.org:wl} openmaintainer
-license             AGPL-3-with-embedded-font-exception
+# the actual license is AGPL 3 with embedded font exception
+license             AGPL-3
 platforms           darwin
 supported_archs     noarch
 
