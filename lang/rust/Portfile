@@ -17,18 +17,14 @@ description         A safe, concurrent, practical language
 long_description    Rust is a curly-brace, block-structured expression \
                     language. It visually resembles the C language \
                     family, but differs significantly in syntactic and \
-                    semantic details. Its design is oriented toward \
-                    concerns of \"programming in the large\", that is, of \
-                    creating and maintaining boundaries -- both abstract \
-                    and operational -- that preserve large-system \
-                    integrity, availability and concurrency.
+                    semantic details. Its design is oriented toward
 
 homepage            https://www.rust-lang.org/
 
 set ruststd_version 1.28.0
 set rustc_version   1.28.0
 set cargo_version   0.29.0
-set llvm_version    6.0
+set llvm_version    7.0
 
 # can use cmake or cmake-devel; default to cmake.
 depends_build       path:bin/cmake:cmake \

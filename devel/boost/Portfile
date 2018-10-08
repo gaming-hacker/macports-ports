@@ -9,6 +9,7 @@ PortGroup       active_variants 1.1
 name            boost
 
 version         1.66.0
+revision 1
 # Revision is set below in the `if {$subport eq $name} { ... }` statement
 # The boost-numpy subport has its own revision number
 checksums       rmd160  ee5dafdfa49adf50a5333cef1f55dac4f70b4c14 \
@@ -182,7 +183,7 @@ post-destroot {
     }
 }
 
-set pythons_suffixes {26 27 33 34 35 36 37}
+set pythons_suffixes {37}
 
 set pythons_ports {}
 foreach s ${pythons_suffixes} {

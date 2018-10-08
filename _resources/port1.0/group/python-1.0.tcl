@@ -55,22 +55,23 @@ default python.consistent_destroot yes
 
 proc python_get_version {} {
     if {[string match py-* [option name]]} {
-        return [string range [option subport] 2 3]
+        return [string range [option subport] 3]
     } else {
         return [option python.default_version]
     }
 }
 proc python_get_default_version {} {
     global python.versions
-    if {[info exists python.versions]} {
-        if {27 in ${python.versions}} {
-            return 27
-        } else {
-            return [lindex ${python.versions} end]
-        }
-    } else {
-        return 27
-    }
+#     if {[info exists python.versions]} {
+#         if {27 in ${python.versions}} {
+#             return 27
+#         } else {
+#             return [lindex ${python.versions} end]
+#         }
+#     } else {
+#         return 27
+#     }
+    return 37
 }
 
 proc python_set_versions {option action args} {
@@ -212,7 +213,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-python.versions 27 36 37
+python.versions 37
         depends_lib-append port:python[option python.default_version]
     }
 }

@@ -48,7 +48,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                         that can be built using the Clang frontend as a \
                         library to parse C/C++ code.
 
-    depends_lib         port:libxml2 port:libomp port:llvm-${llvm_version} port:python27
+    depends_lib         port:libxml2 port:libomp port:llvm-${llvm_version} port:python37
     depends_run         port:clang_select port:ld64
     depends_skip_archcheck-append ld64 subversion
 
@@ -70,7 +70,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
     description         the LLVM debugger
     long_description    Lldb is the "LLVM native" debugger.
 
-    depends_lib         port:libxml2 port:libomp port:llvm-${llvm_version} port:python27 \
+    depends_lib         port:libxml2 port:libomp port:llvm-${llvm_version} port:python37 \
                         port:ncurses
     depends_build-append port:swig-python port:doxygen
 
@@ -97,6 +97,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
 #default_variants-append +debug
 
 version                 ${llvm_version}.0
+revision 1
 epoch                   1
 master_sites            http://llvm.org/releases/${version}
 #master_sites            http://prereleases.llvm.org/${llvm_version}.0/rc2
@@ -176,7 +177,7 @@ if {${subport} eq "clang-${llvm_version}"} {
         #configure.cxxflags-append -DSVN_REVISION='"${svn.revision}"'
 
         post-patch {
-            reinplace "1 i \\                             
+            reinplace "1 i \\
                 #define SVN_REVISION \"${svn.revision}\"
             " ${worksrcpath}/tools/clang/lib/Basic/Version.cpp
         }
@@ -201,7 +202,7 @@ if {${subport} eq "lldb-${llvm_version}"} {
         #configure.cxxflags-append -DSVN_REVISION='"${svn.revision}"'
 
         post-patch {
-            reinplace "1 i \\                             
+            reinplace "1 i \\
                 #define SVN_REVISION \"${svn.revision}\"
             " ${worksrcpath}/tools/clang/lib/Basic/Version.cpp
         }
@@ -292,8 +293,8 @@ if {${subport} eq "llvm-${llvm_version}"} {
         -DLLVM_BUILD_RUNTIME=ON \
         -DLIBCXX_ENABLE_SHARED=OFF \
         -DLIBCXX_INSTALL_LIBRARY=OFF \
-        -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
-        -DPYTHON_INCLUDE_DIR=${prefix}/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+        -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
+        -DPYTHON_INCLUDE_DIR=${prefix}/Library/Frameworks/Python.framework/Versions/3.7/include/python3.7
 }
 
 # llvm-3.5 and later requires a C++11 runtime
@@ -578,7 +579,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/ccc-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/libexec/c++-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-build/bin/scan-build
-            reinplace "s|/usr/bin/env python|${prefix}/bin/python2.7|g" \
+            reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|g" \
                 ${worksrcpath}/tools/clang/tools/scan-build/bin/set-xcode-analyzer \
                 ${worksrcpath}/tools/clang/tools/scan-view/bin/scan-view
         }
@@ -593,7 +594,7 @@ if {${subport} eq "llvm-${llvm_version}"} {
                 ${worksrcpath}/tools/clang/lib/Frontend/InitHeaderSearch.cpp
             reinplace "s|@@MACPORTS_HOST_NAME@@|${build_arch}-apple-darwin${os.major}|g" \
                 ${worksrcpath}/tools/clang/lib/Frontend/InitHeaderSearch.cpp
-            reinplace "s|@@MACPORTS_libstdc++@@|${prefix}/lib/libgcc/libstdc++.6.dylib|g" \
+            reinplace "s|@@MACPORTS_libstdc++@@|${prefix}/lib/libgcc/libstdc++.8.dylib|g" \
                 ${worksrcpath}/tools/clang/lib/Driver/ToolChains/Darwin.cpp
 
             # GCC was built for ${build_arch}-apple-darwin${os.major}

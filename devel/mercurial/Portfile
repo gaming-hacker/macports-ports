@@ -33,13 +33,13 @@ checksums           rmd160  a9dd32a52d7b46f81d27d89625004b8f09c83552 \
 sha256  89fa8ecbc8aa6e48e98f9803a1683ba91367124295dba2407b28c34ca621108d \
 size    6407380
 
-depends_build       port:py27-docutils
+depends_build       port:py37-docutils
 
 depends_run         path:share/curl/curl-ca-bundle.crt:curl-ca-bundle
 
 patchfiles          patch-setup.py.diff
 
-python.default_version 27
+python.default_version 37
 
 conflicts           mercurial-devel
 
@@ -64,8 +64,8 @@ post-build {
     system -W ${worksrcpath}/contrib/chg "${build.cmd} CC=\"${configure.cc} \
         [get_canonical_archflags]\" CFLAGS=\"${configure.cflags}\" \
         HGPATH=${prefix}/bin/hg \
-        PYTHON=${prefix}/bin/python2.7 HG=${prefix}/bin/hg \
-        HGEXTDIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/hgext"
+        PYTHON=${prefix}/bin/python3.7 HG=${prefix}/bin/hg \
+        HGEXTDIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages/hgext"
 }
 
 post-destroot {

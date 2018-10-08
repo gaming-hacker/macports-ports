@@ -8,7 +8,7 @@ name                itstool
 # 2.0.4 crashes due to improper libxml2 memory management issues
 # upstream looking to 2.0.5 for a (yet undetermined) fix
 version             2.0.2
-revision            3
+revision            4
 epoch               1
 license             GPL-3+
 set branch          [join [lrange [split ${version} .] 0 1] .]
@@ -34,11 +34,11 @@ installs_libs       no
 
 depends_build       port:gawk
 
-depends_lib         port:py27-libxml2
+depends_lib         port:py37-libxml2
 
 patchfiles          patch-configure.diff
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 livecheck.type      regex
 livecheck.url       http://itstool.org/download/

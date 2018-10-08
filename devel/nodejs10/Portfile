@@ -5,7 +5,7 @@ PortGroup               compiler_blacklist_versions 1.0
 
 name                    nodejs10
 version                 10.11.0
-
+revision 1
 categories              devel net
 platforms               darwin
 license                 {MIT BSD}
@@ -32,7 +32,7 @@ distname                node-v${version}
 
 depends_build           port:pkgconfig
 
-depends_lib             port:python27
+depends_lib             port:python37
 #                        path:lib/libssl.dylib:openssl
 
 proc rec_glob {basedir pattern} {
@@ -43,7 +43,7 @@ proc rec_glob {basedir pattern} {
     return $files
 }
 
-configure.python ${prefix}/bin/python2.7
+configure.python ${prefix}/bin/python3.7
 
 patchfiles              patch-common.gypi.diff
 

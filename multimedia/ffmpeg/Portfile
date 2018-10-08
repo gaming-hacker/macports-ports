@@ -102,7 +102,7 @@ platform darwin powerpc {
     # https://trac.macports.org/ticket/55124
     # requires newer compiler than gcc4.2 to build
     compiler.blacklist
-    compiler.whitelist    macports-gcc-6
+    compiler.whitelist    macports-gcc-8
     universal_variant     no
 }
 
