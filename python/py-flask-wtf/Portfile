@@ -7,7 +7,7 @@ PortGroup           github 1.0
 github.setup        lepture flask-wtf 0.12 v
 name                py-flask-wtf
 set real_name       Flask-WTF
-python.versions 37
+python.version 37
 categories-append   www
 maintainers         nomaintainer
 description         Flask simple integration with WTForms

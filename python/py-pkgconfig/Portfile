@@ -6,7 +6,7 @@ PortGroup               github 1.0
 
 github.setup            matze pkgconfig 1.4.0 v
 name                    py-pkgconfig
-python.versions 37
+python.version 37
 python.default_version 37
 platforms               darwin
 license                 MIT

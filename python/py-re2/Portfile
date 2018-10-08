@@ -21,7 +21,7 @@ checksums           rmd160  89241df1d53076189327e53d0e99efa62091956d \
 sha256  b332f9fb53318fc8410e047e29b0a0c6952fd1c1eebf8ee06f72e2f637c909dc \
 size    11291
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:re2

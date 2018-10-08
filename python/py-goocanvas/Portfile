@@ -9,7 +9,7 @@ license                 GPL-2+
 version                 0.14.1
 revision                6
 
-python.versions 37
+python.version 37
 
 categories              python gnome
 platforms               darwin

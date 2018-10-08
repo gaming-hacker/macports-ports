@@ -213,7 +213,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-python.versions 37
+python.version 37
         depends_lib-append port:python[option python.default_version]
     }
 }
@@ -246,20 +246,10 @@ proc python_get_defaults {var} {
         prefix {
             global build_arch frameworks_dir
             set ret "${frameworks_dir}/Python.framework/Versions/${python.branch}"
-            if {${python.version} == 25 || (${python.version} == 24 &&
-                ![file isfile ${ret}/include/python${python.branch}/Python.h] &&
-                ([file isfile ${prefix}/include/python${python.branch}/Python.h]
-                || [string match *64* $build_arch]))} {
-                set ret $prefix
-            }
             return $ret
         }
         bin {
-            if {${python.version} != 24} {
                 return "${python.prefix}/bin/python${python.branch}"
-            } else {
-                return "${prefix}/bin/python${python.branch}"
-            }
         }
         include {
             set inc_dir "${python.prefix}/include/python${python.branch}"
@@ -269,57 +259,29 @@ proc python_get_defaults {var} {
                 # look for "${inc_dir}*" and pick the first one found;
                 # make assumptions if none are found
                 if {[catch {set inc_dirs [glob ${inc_dir}*]}]} {
-                    if {${python.version} < 30} {
-                        return ${inc_dir}
-                    } else {
                         return ${inc_dir}m
-                    }
                 } else {
                     return [lindex ${inc_dirs} 0]
                 }
             }
         }
         lib {
-            if {${python.version} != 24 && ${python.version} != 25} {
                 return "${python.prefix}/Python"
-            } else {
-                return "${prefix}/lib/libpython${python.branch}.dylib"
-            }
         }
         pkgd {
-            if {${python.version} != 24} {
                 return "${python.prefix}/lib/python${python.branch}/site-packages"
-            } else {
-                return "${prefix}/lib/python${python.branch}/site-packages"
-            }
         }
         setup_args {
-            if {${python.version} != 24} {
                 return "--no-user-cfg"
-            } else {
-                return ""
-            }
         }
         setup_prefix {
-            if {${python.version} != 24} {
                 return "${python.prefix}"
-            } else {
-                return "${prefix}"
-            }
         }
         link_binaries {
-            if {${python.version} != 24 && ${python.version} != 25} {
                 return yes
-            } else {
-                return no
-            }
         }
         move_binaries {
-            if {${python.version} == 24 || ${python.version} == 25} {
-                return yes
-            } else {
-                return no
-            }
+              return yes
         }
         binary_suffix {
             if {[string match py-* [option name]]} {

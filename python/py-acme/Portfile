@@ -17,7 +17,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/acme
 master_sites        pypi:a/acme
 
-python.versions 37
+python.version 37
 
 checksums           rmd160  fbdc950e06528312edc5c3f9af0017ecb605f445 \
 sha256  31a7b9023ce183616e6ebd5d783e842c3d68696ff70db59a06db9feea8f54f90 \

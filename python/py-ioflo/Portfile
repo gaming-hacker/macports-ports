@@ -32,7 +32,7 @@ long_description    IoFlo is a magically powerful open interoperable software \
 
 homepage            http://ioflo.com
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums           rmd160 bb99fc946fd6f1b3ffd81cc9ac5508918fc86213 \

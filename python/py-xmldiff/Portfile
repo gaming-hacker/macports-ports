@@ -23,7 +23,7 @@ use_zip             yes
 checksums           rmd160  c562cdf65947100217efbd06a12e0d6cac63152c \
 sha256  edeb13ae5d2cc1de72b58bc989f10dc006db5acc19d42f4b05309b14bc99bbe0
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     post-destroot	{

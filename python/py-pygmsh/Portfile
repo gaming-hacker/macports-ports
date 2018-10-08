@@ -20,7 +20,7 @@ long_description    ${description} with the versatility of Python and to provide
                     create complex geometries more easily.
 categories-append   science
 
-python.versions 37
+python.version 37
 
 platforms           darwin
 

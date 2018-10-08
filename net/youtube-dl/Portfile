@@ -69,33 +69,13 @@ variant ffmpeg description {Add ffmpeg dependency, used to extract audio} {
 
 default_variants    +ffmpeg
 
-variant python37 conflicts python35 python36 python37 description {Use Python 3.7} {
+variant python37 description {Use Python 3.7} {
     depends_run-append      port:python37
     depends_build-append    port:python37
     configure.python        ${prefix}/bin/python3.7
 }
 
-variant python35 conflicts python37 python36 python37 description {Use Python 3.5} {
-    depends_run-append      port:python35
-    depends_build-append    port:python35
-    configure.python        ${prefix}/bin/python3.5
-}
 
-variant python36 conflicts python37 python35 python37 description {Use Python 3.6} {
-    depends_run-append      port:python36
-    depends_build-append    port:python36
-    configure.python        ${prefix}/bin/python3.6
-}
-
-variant python37 conflicts python37 python35 python36 description {Use Python 3.7} {
-    depends_run-append      port:python37
-    depends_build-append    port:python37
-    configure.python        ${prefix}/bin/python3.7
-}
-
-if {![variant_isset python37] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python37
-}
 
 livecheck.type      regex
 livecheck.url       ${homepage}update/LATEST_VERSION

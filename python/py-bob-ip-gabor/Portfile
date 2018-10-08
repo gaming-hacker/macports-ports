@@ -31,7 +31,7 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.ip.gabor 2.0.4 v
 
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums                    rmd160  9f4a5785e86cf9f863282ef15726b9e09f95ced6 \

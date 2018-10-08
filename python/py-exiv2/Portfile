@@ -27,7 +27,7 @@ use_bzip2       yes
 checksums       rmd160  cbc53e6f45b0f4251b90bfb6ffab8c659463ac5d \
 sha256  0abc117c6afa71f54266cb91979a5227f60361db1fcfdb68ae9615398d7a2127
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 if {$subport ne $name} {

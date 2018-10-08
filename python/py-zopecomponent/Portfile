@@ -17,7 +17,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/zope.component
 master_sites        pypi:z/zope.component
 
-python.versions 37
+python.version 37
 
 checksums           rmd160  4379ba35f5aa2198dba102f750b53189198d6deb \
 sha256  1b29aa65413f6dda29e64e2352a6aa13d9ba70078f6b91f328573488788d531c

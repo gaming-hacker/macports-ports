@@ -29,7 +29,7 @@ homepage            http://www.cheetahtemplate.org/
 master_sites        pypi:C/Cheetah3/
 distname            Cheetah3-${version}
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
 

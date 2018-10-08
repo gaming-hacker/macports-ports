@@ -21,7 +21,7 @@ maintainers         nomaintainer
 
 # do not add subports for python > 3.4
 # (note that replacement for 34 does not work either)
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib

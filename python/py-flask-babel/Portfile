@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-flask-babel
 set real_name       Flask-Babel
 version             0.8
-python.versions 37
+python.version 37
 categories-append   www
 maintainers         nomaintainer
 description         Adds i18n/l10n support to Flask applications

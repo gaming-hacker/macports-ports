@@ -21,23 +21,7 @@ checksums               rmd160  10993de9d59d7328f2ac740951071ca8f5457233 \
 sha256  204acd838e4e74587971e4dff07937ce63b3872fe7111ca6aae3d3ca34d35415 \
 size    697570
 
-# can't set python.versions before adding custom subports
-subport py-hgevolve-devel {}
-subport py37-hgevolve-devel {}
-
-if {[string match "*-devel" $subport]} {
-    bitbucket.setup     marmoute mutable-history 1fa3bf6e9e93
-    bitbucket.livecheck default
-    name                py-hgevolve-devel
-    version             8.0.99
-    revision            0
-
-    checksums           rmd160  7a5bf35def6225460176a8f746e78e77bb2fb723 \
-sha256  5819c049bc0b1853aefb4d475c369795d2612528bc6d3e9ffd494e4e5fd4374c \
-size    715088
-}
-
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib         path:bin/hg:mercurial

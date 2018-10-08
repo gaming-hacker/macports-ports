@@ -5,7 +5,7 @@ PortGroup           python 1.0
 name                py-pinocchio
 set real_name       pinocchio
 version             0.3.1
-python.versions 37
+python.version 37
 categories-append   devel
 platforms           darwin
 license             MIT

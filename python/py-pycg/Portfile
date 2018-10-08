@@ -16,7 +16,7 @@ long_description \
 
 homepage        https://launchpad.net/pycg
 
-python.versions 37
+python.version 37
 
 patchfiles      patch-darwin.conf.in.diff \
                 patch-swig-files.diff

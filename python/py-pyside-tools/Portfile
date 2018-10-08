@@ -10,7 +10,7 @@ set realname        pyside-tools
 name                py-${realname}
 version             0.2.15
 revision            1
-python.versions 37
+python.version 37
 python.default_version 37
 categories-append   devel
 maintainers         openmaintainer {mmoll @mamoll}

@@ -32,7 +32,7 @@ sha1    7ea9f45f43e9019b1ee9c1049b2773b0b9e6c54f \
 rmd160  047ca8213ae50c4a46d20a3a8eff4f3a4749c6dc \
 sha256  f36dcf8e6a4270c86b521ab4868fd762a7ec217195e126a8ccb028a82cf55466
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

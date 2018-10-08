@@ -31,7 +31,7 @@ sha256  41a206ae34814f87ec2496ed2bc38513942f527d0638308f576c8af843e49088
 
 mpi.setup           require
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -25,7 +25,7 @@ distname            aniso8601-${version}
 checksums           rmd160  6f7b46f5323c325830dc604f950def2bdaa759d9 \
 sha256  c3b5246f5601b6ae5671911bc4ee5b3e3fe94752e8afab5ce074d8b1232952f1
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

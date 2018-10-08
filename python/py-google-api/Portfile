@@ -7,7 +7,7 @@ name                py-google-api
 set realname        google-api-python-client
 version             1.6.1
 
-python.versions 37
+python.version 37
 
 categories-append   www devel
 maintainers         nomaintainer

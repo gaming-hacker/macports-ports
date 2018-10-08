@@ -18,7 +18,7 @@ supported_archs     noarch
 checksums           rmd160  4faf179cbacc7b586392ce063c53b6eb6f6bd97f \
 sha256  f25f01b8117e16591edbd719bfcdefb1fce64b4cae0df77ecbb881165988f8a4
 
-python.versions 37
+python.version 37
 
 if {$subport ne $name} {
     livecheck.type  none

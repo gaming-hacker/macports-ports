@@ -6,7 +6,7 @@ PortGroup           python 1.0
 
 github.setup        sivel speedtest-cli 2.0.2 v
 
-python.versions 37
+python.version 37
 python.default_version 36
 
 categories          net

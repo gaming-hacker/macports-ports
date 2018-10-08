@@ -25,7 +25,7 @@ sha1    c2af433be838b17aa7d91f8b02cf595d0449a0e6 \
 rmd160  8e36fc2f39c1c2c4b2772cedf2e0b7ea765a2eab
 distname            ${real_name}-${version}
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

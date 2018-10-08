@@ -3,20 +3,12 @@
 PortSystem          1.0
 name                py-htmldocs
 PortGroup           python 1.0
-python.versions 37
+python.version 37
 python.default_version 37
 version             1.0
 set base_rev        2
 revision            ${base_rev}
 license             {PSF}
-
-if {$subport != $name} {
-    if {${python.version} == 27} { version 2.7.14 }
-    if {${python.version} == 34} { version 3.4.8 }
-    # 3.5.5 version is MIA on master site
-    if {${python.version} == 35} { version 3.5.5rc1 }
-    if {${python.version} == 36} { version 3.6.5 }
-}
 
 categories          lang
 platforms           darwin
@@ -44,29 +36,10 @@ if {${name} != ${subport}} {
     depends_lib-delete  port:python${python.version}
     notes               ${long_description}
 
-    if {${python.version} == 27} {
-      checksums \
-rmd160  007b0c3d18313c97fa95cb091ef9031ffac27fae \
-sha256  624ef76fd4c94631f2c5ebf890dd44930f2fbcae4176c4879f457d5abfe3d483
-    }
-    
-    if {${python.version} == 34} {
-      checksums \
-rmd160  dd6bdec0ca44b4d00728043b5122548843b16cfb \
-sha256  62e810fba6cbb757216e556421c84142d51148b5bf7dc54c2b07478fc4e5661f
-    }
-
-    if {${python.version} == 35} {
-      checksums \
-rmd160  e45652b8422c961a0a7fef5594199d4f9eb5f0d9 \
-sha256  484bd6e282978b6feee2b9ed5277869be80ea52326c3913f69710c056a3803c9
-    }
-
-    if {${python.version} == 36} {
       checksums \
 rmd160  8afebdcd10c0aafa051b0875fb810170c6db2b28 \
 sha256  bb239691e3ace920e1692eef48c8d8e567407b30434afe462bc6ebdb6544d9d2
-    }
+
 
     dist_subdir         ${name}/${revision}
 
@@ -77,9 +50,9 @@ sha256  bb239691e3ace920e1692eef48c8d8e567407b30434afe462bc6ebdb6544d9d2
             ${destroot}${prefix}/share/doc/python${python.version}-doc
         file mkdir ${destroot}${prefix}/share/doc
         file copy ${workpath}/${extractname} ${destdocdir}
-        system "chmod -R a+rX ${destdocdir}" 
+        system "chmod -R a+rX ${destdocdir}"
     }
-    
+
     livecheck.url       https://www.python.org/ftp/python/doc/
     livecheck.type      regex
     livecheck.regex     ([string map {. \\.} ${python.branch}.\[0-9ap\]+])

@@ -11,7 +11,7 @@ categories-append   graphics math
 platforms           darwin
 license             {PSF BSD}
 
-python.versions 37
+python.version 37
 
 maintainers         {sean @seanfarley} openmaintainer
 

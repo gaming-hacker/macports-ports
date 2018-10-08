@@ -19,7 +19,7 @@ distname            websocket_client-${version}
 checksums           rmd160 599b4eeef57ad46039e780f664460ff767b30d26 \
 sha256 18f1170e6a1b5463986739d9fd45c4308b0d025c1b2f9b88788d8f69e8a5eb4a
 
-python.versions 37
+python.version 37
 
 if {${subport} ne ${name}} {
     depends_build   port:py${python.version}-setuptools

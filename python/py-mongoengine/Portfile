@@ -21,7 +21,7 @@ long_description    \
 
 homepage            http://mongoengine.org/
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

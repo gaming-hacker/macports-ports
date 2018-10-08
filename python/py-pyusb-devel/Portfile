@@ -21,7 +21,7 @@ homepage            https://walac.github.io/pyusb/
 checksums           rmd160  2f6ba3c572410110339ef1776786b70d34b8810c \
 sha256  c4caba4e049d6d124ea911b89e4c4b781cc516f8b5a6d7fa82e5159bc2224a4d
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     conflicts           py${python.version}-pyusb

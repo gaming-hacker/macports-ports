@@ -23,15 +23,8 @@ checksums           rmd160  255991dff0f61d6c287e399f4b6487e5386ccf8c \
 sha256  4879ce9ff3320f5344b910ee1c46ed5e366edc2272620cf17d8e762724d7df1e \
 size    1554776
 
-if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} { default_variants +python37 }
+default_variants +python37
 
-if {![variant_isset python37] && ![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
-    error "You must select one of the python variants."
-}
-
-if {[variant_isset python37]} { set PythonVersion   2.7 }
-if {[variant_isset python35]} { set PythonVersion   3.5 }
-if {[variant_isset python36]} { set PythonVersion   3.6 }
 if {[variant_isset python37]} { set PythonVersion   3.7 }
 set PythonBranch    [join [lrange [split ${PythonVersion} .] 0 1] ""]
 
@@ -69,17 +62,4 @@ pre-destroot {
     xinstall -d ${destroot}${prefix}/lib/python${PythonVersion}/site-packages/
 }
 
-variant python37 conflicts python35 python36 python37 description {Build using Python 3.7} {
-    configure.env-append   PYTHON_EXTRA_LDFLAGS="-u _PyMac_Error ${frameworks_dir}/Python.framework/Versions/${PythonVersion}/Python"
-}
-
-variant python35 conflicts python37 python36 python37 description {Build using Python 3.5 - obsolete} {
-    ui_error "Please do not install this variant since it has been replaced by the python37 variant."
-    return -code error
-
-    # remove after 08/25/2019
-}
-
-variant python36 conflicts python37 python35 python37 description {Build using Python 3.6} {}
-
-variant python37 conflicts python37 python35 python36 description {Build using Python 3.7} {}
+variant python37 description {Build using Python 3.7} {}

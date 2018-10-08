@@ -5,7 +5,7 @@ PortGroup           github 1.0
 
 github.setup        bear parsedatetime 2.4 v
 name                py-${name}
-python.versions 37
+python.version 37
 platforms           darwin
 supported_archs     noarch
 license             Apache-2

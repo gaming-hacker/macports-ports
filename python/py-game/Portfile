@@ -24,7 +24,7 @@ distname        pygame-${version}
 checksums       rmd160 8ff2ae8d1846cf7df237cf2350b1652be097d337 \
 sha256 700d1781c999af25d11bfd1f3e158ebb660f72ebccb2040ecafe5069d0b2c0b6
 
-python.versions 37
+python.version 37
 
 if {$subport ne $name} {
     patchfiles  patch-config_darwin.py.diff \

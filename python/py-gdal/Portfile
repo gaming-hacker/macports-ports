@@ -26,7 +26,7 @@ checksums           rmd160  8946d47a5c08d1bc7281e6f1cd275e47a8aad307 \
 sha256  511f4f0630ce06604f400a3a6c113a7871afa3446805651d854961e1fd54b6be \
 size    557233
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append     port:gdal \

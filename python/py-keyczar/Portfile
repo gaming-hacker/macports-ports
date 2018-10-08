@@ -21,7 +21,7 @@ long_description    Keyczar is an open source cryptographic toolkit designed \
                     authentication and encryption with both symmetric and \
                     asymmetric keys.
 
-python.versions 37
+python.version 37
 
 platforms           darwin
 supported_archs     noarch

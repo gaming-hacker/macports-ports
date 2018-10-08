@@ -6,7 +6,7 @@ PortGroup github 1.0
 
 github.setup        lpsinger pygcn 0.1.16 v
 name                py-gcn
-python.versions 37
+python.version 37
 categories-append   science
 license             GPL-2+
 platforms           darwin

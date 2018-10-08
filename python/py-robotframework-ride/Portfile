@@ -19,7 +19,7 @@ long_description    ${description}
 homepage            https://code.google.com/p/${internal_name}
 
 platforms           darwin
-python.versions 37
+python.version 37
 
 master_sites        pypi:r/${internal_name}
 distname            ${internal_name}-${version}

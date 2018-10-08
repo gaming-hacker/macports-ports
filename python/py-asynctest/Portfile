@@ -27,7 +27,7 @@ rmd160  9479ddef1f940efd4b0711ebec31eb89dea78e80 \
 sha256  7cf6f736e73664c679d7b0bc0aa84de703944a07044e6763dcce880484011519 \
 size    49667
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -21,7 +21,7 @@ sha1    47d943c3cd9432ac8ad237621803ba06ef5a3474 \
 rmd160  6d7ed5c7a83680542509aa26cf5165673871db78
 distname            python-${realname}-${version}
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 if {${name} ne ${subport}} {

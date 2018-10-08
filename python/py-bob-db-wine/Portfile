@@ -31,7 +31,7 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.db.wine 2.0.3 v
 
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums                    rmd160  92fdbec48799a939a981785e323bfa458fa4ef99 \

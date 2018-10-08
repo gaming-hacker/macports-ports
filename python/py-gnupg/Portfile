@@ -22,7 +22,7 @@ categories-append    crypto security
 platforms            darwin
 maintainers          {@F30 f30.me:f30} openmaintainer
 
-python.versions 37
+python.version 37
 depends_run          bin:gpg:gnupg2
 
 master_sites         pypi:p/python-gnupg

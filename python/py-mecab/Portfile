@@ -5,7 +5,7 @@ PortGroup           python 1.0
 
 name                py-mecab
 version             0.996
-python.versions 37
+python.version 37
 categories-append   textproc japanese
 maintainers         nomaintainer
 

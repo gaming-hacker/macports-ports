@@ -38,7 +38,7 @@ subport                 py34-h5py-devel {set DEV_VERSION 34}
 subport                 py35-h5py-devel {set DEV_VERSION 35}
 subport                 py36-h5py-devel {set DEV_VERSION 36}
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums \

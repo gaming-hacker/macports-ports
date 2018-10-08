@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             MPL-2
 
-python.versions 37
+python.version 37
 
 maintainers         {khindenburg @kurthindenburg} openmaintainer
 

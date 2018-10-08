@@ -22,7 +22,7 @@ distname           Pycluster-${version}
 checksums           md5     39e995256456ddec1f15ad31882fc338 \
 sha1    c53596e8bd8f64f24ddc9cb0c3fda2855e104d8f
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy

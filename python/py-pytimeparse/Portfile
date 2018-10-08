@@ -6,7 +6,7 @@ PortGroup           python 1.0
 set base_name       pytimeparse
 name                py-$base_name
 version             1.1.6
-python.versions 37
+python.version 37
 platforms           darwin
 maintainers         openmaintainer {gmail.com:esafak @esafak}
 license             MIT

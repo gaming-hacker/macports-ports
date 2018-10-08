@@ -22,7 +22,7 @@ sha256  5ef527543ec8a6060da93aa4efcdeb360564242495d0a6e15fcbde071fa5decc
 
 depends_run-append  path:bin/ansible:py37-ansible
 
-python.versions 37
+python.version 37
 python.default_version 37
 python.link_binaries_suffix
 

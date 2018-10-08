@@ -35,7 +35,7 @@ checksums           rmd160  4533c09c33394ca31ab081ed09f370dfac415882 \
 sha256  7253265f7abd8b313e3892944044a365e3f4ac3fcdcfb4298f55ee9ddf188ba0 \
 size    140608
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     # apply upstream patches so that flake8 works with latest versions of

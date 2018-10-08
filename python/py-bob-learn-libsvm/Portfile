@@ -31,7 +31,7 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.learn.libsvm 2.0.3 v
 
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums                    rmd160  28a09c8066d699d98e52dc76bd16f684b2dee068 \

@@ -14,22 +14,15 @@ long_description    ${description}
 
 homepage            https://grpc.io/
 
-if {${python.version} eq 27} {
-    master_sites        https://pypi.python.org/packages/63/92/f562c3276a2cd5e4cca91e6f395fd504c56c74147856529575b1129b4535
-    distname            grpcio-${version}-cp${python.version}-cp${python.version}m-macosx_10_11_x86_64
+python.version 37
 
-    checksums           rmd160 bbc2e05b59d7996bbb4fe9f82679c3732566959f \
-sha256 a1bc37c9910d0fbf4d9e80d5822f92c6e01e28dd1eb01323636ed19666b537cb \
-size   1496422
-} elseif {${python.version} eq 36} {
 master_sites        pypi:g/grpcio
 distname            ${python.rootname}-${version}
 
 checksums           rmd160 ecbc517bdf994012605b9d698ef45fd94d68aab8 \
 sha256 03265472d39bf26f124c3ef68446f7873c8260893e6ae65b323a5b51ed52e580 \
 size   13987692
-}
-python.versions 37
+
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -6,7 +6,7 @@ PortGroup           python 1.0
 set base_name       agate-excel
 name                py-agate-excel
 version             0.2.1
-python.versions 37
+python.version 37
 platforms           darwin
 maintainers         {gmail.com:esafak @esafak} openmaintainer
 license             MIT

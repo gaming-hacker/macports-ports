@@ -18,7 +18,7 @@ long_description    PyMC3 is a Python package for Bayesian statistical modeling 
                     Its flexibility and extensibility make it applicable to a large \
                     suite of problems.
 
-python.versions 37
+python.version 37
 
 checksums           rmd160  f7c2ce63b47e18079660f603869a645cf82f091e \
 sha256  11dec661fba8279991322b954845d8cc1953a2d761244560cbe3b862008a49c5 \

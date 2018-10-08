@@ -20,7 +20,7 @@ checksums           rmd160  7470cda265dad97983179750b691963d8e724f71 \
 sha256  2018f233568227f9af8c366f93e243a157b742f3baf5b649ecc9750ac0ee1ff7
 
 platforms           darwin
-python.versions 37
+python.version 37
 python.default_version 37
 
 universal_variant   yes

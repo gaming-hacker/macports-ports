@@ -16,7 +16,7 @@ long_description \
 
 homepage        https://docs.python.org/library/tkinter.html
 
-python.versions 37
+python.version 37
 
 set extract_files "Modules/_tkinter.c Modules/tkappinit.c"
 set module_name Tkinter

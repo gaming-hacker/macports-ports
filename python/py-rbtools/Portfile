@@ -5,7 +5,7 @@ PortGroup       python 1.0
 name            py-rbtools
 set cap_name    RBTools
 version         0.4.3
-python.versions 37
+python.version 37
 set branch      [join [lrange [split ${version} .] 0 1] .] 
 categories-append     devel
 maintainers     nomaintainer

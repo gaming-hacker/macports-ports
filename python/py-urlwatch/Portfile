@@ -30,7 +30,7 @@ livecheck.type      regex
 livecheck.url       ${homepage}
 livecheck.regex     "urlwatch-(\\d+(?:\\.\\d+)*)"
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools

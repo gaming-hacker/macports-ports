@@ -24,7 +24,7 @@ distname            pymetar-${version}
 checksums           rmd160  80439b52519facd9b9714cdd5410d02eac6836ee \
 sha256  331978d9c54d49948e3817a782b857f247db6c279b8bb5bebd4f5b1a4bb503ea
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     livecheck.type  none

@@ -25,7 +25,7 @@ long_description             This package contains a set of Pythonic bindings to
 
 github.setup                 bioidiap bob.blitz 2.0.8 v
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums                    rmd160  c9e4623287d1ad310ede54cc4da7b1320aadaf26 \

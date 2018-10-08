@@ -277,11 +277,11 @@ platform darwin {
 
 
 # Shameless copy from ipe-tools.
-set python.versions         {27 36}
+set python.versions         {37}
 # Remove after 07-30-2018.
-dict set python.legacy_versions 35 36
+# dict set python.legacy_versions 35 36
 set python.default_version 37
-set python.version          ""
+set python.version          37
 
 # Create python variants.
 foreach ver ${python.versions} {
@@ -304,22 +304,22 @@ foreach ver ${python.versions} {
 }
 
 # Create legacy python variants, mapping to the replacement version.
-dict for {legacy_ver replace_ver} ${python.legacy_versions} {
-    set variant_line {variant python${legacy_ver} description }
-    append variant_line " {Legacy variant for python${legacy_ver} mapping to python${replace_ver}}"
-    append variant_line " requires python${replace_ver}"
-
-    foreach over ${python.versions} {
-        if {${legacy_ver} == ${over} || ${replace_ver} == ${over}} {
-            continue
-        }
-
-        append variant_line " conflicts python${over}"
-    }
-
-    append variant_line " { }"
-    eval $variant_line
-}
+# dict for {legacy_ver replace_ver} ${python.legacy_versions} {
+#     set variant_line {variant python${legacy_ver} description }
+#     append variant_line " {Legacy variant for python${legacy_ver} mapping to python${replace_ver}}"
+#     append variant_line " requires python${replace_ver}"
+#
+#     foreach over ${python.versions} {
+#         if {${legacy_ver} == ${over} || ${replace_ver} == ${over}} {
+#             continue
+#         }
+#
+#         append variant_line " conflicts python${over}"
+#     }
+#
+#     append variant_line " { }"
+#     eval $variant_line
+# }
 
 # Set default python variant.
 set variant_none true

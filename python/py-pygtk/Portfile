@@ -9,7 +9,7 @@ version         2.24.0
 revision        3
 set branch      [join [lrange [split ${version} .] 0 1] .]
 
-python.versions 37
+python.version 37
 
 categories-append \
                 x11

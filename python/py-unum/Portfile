@@ -23,7 +23,7 @@ distname		Unum-${version}
 checksums		md5 45fc2f8fdec624fbd7cb88b20b744778
 use_zip			yes
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     test.run		yes

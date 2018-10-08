@@ -18,7 +18,7 @@ long_description    Matplotlib basemap is a matplotlib toolkit python library \
 checksums           rmd160  d2ce2ff9989b51bec0bc61103ceef7d83d85ce90 \
 sha256  3368f53d5b8b3b9cc4c070b0e5a3a16c1b804be217819318cbf68eafc2b6f986
 
-python.versions 37
+python.version 37
 
 build.env-append    GEOS_DIR="${prefix}"
 destroot.env-append GEOS_DIR="${prefix}"

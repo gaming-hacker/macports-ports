@@ -21,7 +21,7 @@ distname            envoy-${version}
 checksums           rmd160  7bbdd7a17697411c1dfc75ace83c72051889d1b4 \
 sha256  22b02009cfda2cf2cdb94a75a15ac3fd910aea8685c53e8e03715c7e9d8e8bde
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -11,7 +11,7 @@ platforms           darwin
 license             GPL-2+
 supported_archs     noarch
 
-python.versions 37
+python.version 37
 
 maintainers         {blair @blair} {stromnov @stromnov} openmaintainer
 
@@ -42,19 +42,6 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-astroid \
                         port:py${python.version}-isort \
                         port:py${python.version}-flake8-mccabe
-
-    if {${python.version} eq 27} {
-        version             1.9.2
-        distname            ${python.rootname}-${version}
-        checksums           rmd160  9b682e1380ad5eea89fa6ffbc3fc61548ac52f20 \
-sha256  fff220bcb996b4f7e2b0f6812fd81507b72ca4d8c4d05daf2655c333800cb9b3 \
-size    516869
-
-        depends_lib-append  port:py${python.version}-configparser \
-                            port:py${python.version}-backports-functools_lru_cache \
-                            port:py${python.version}-singledispatch \
-                            port:py${python.version}-six
-    }
 
     depends_run-append  port:pylint_select
 

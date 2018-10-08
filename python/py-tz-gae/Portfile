@@ -19,7 +19,7 @@ homepage        https://code.google.com/p/gae-pytz/
 master_sites    pypi:g/${real_name}
 distname        ${real_name}-${version}
 
-python.versions 37
+python.version 37
 
 checksums       rmd160  f704e2c99016d115d27f03fd47c5cb89721fc9d4 \
 sha256  d6e214fdc071c9a22234aed92ea763889501d0c000ee202b8a5493ef4390843b

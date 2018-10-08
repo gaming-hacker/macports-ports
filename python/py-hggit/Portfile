@@ -27,34 +27,13 @@ checksums               rmd160  8e959fc098ebad1a128d250df9c795d22a144b48 \
 sha256  3965d98ba529aee4dadc2d4fd411d09c22a74ae90a2ee31fcaa9d15b36f659ac \
 size    127871
 
-# can't set python.versions before adding custom subports
-subport py-hggit-devel {}
-subport py37-hggit-devel {}
+python.version 37
 
-if {[string match "*-devel" $subport]} {
-    bitbucket.setup     durin42 hg-git bbad9283f80f
-    bitbucket.livecheck default
-    name                py-hggit-devel
-    version             0.8.99
-    revision            25
-
-    checksums           rmd160  f03d0d0b1ea998f0da253d750410432f728a21c6 \
-sha256  2d4cd719481107d33033fe0c9ff6ab69225cee543c0b00e1daf36faa22fb805d \
-size    136696
-}
-
-python.versions 37
-
-if {${name} ne ${subport}} {
     depends_lib-append  bin:hg:mercurial \
                         bin:dulwich-2.7:py${python.version}-dulwich
 
-    conflicts           py${python.version}-hggit-devel
-    if {[string match "*-devel" $subport]} {
-        conflicts       py${python.version}-hggit
-    } else {
+
         livecheck.type      none
-    }
 
     notes               "
 To enable hggit, add the following to your ~/.hgrc:
@@ -62,4 +41,3 @@ To enable hggit, add the following to your ~/.hgrc:
 \[extensions\]
 hggit =
 "
-}

@@ -16,7 +16,7 @@ long_description    ${description}
 checksums           rmd160  c5ed26ded8fbb89ee8030a2588a040a1bbdcbc07 \
 sha256  73529b1886319f4f51761a6d6c2182083b89c8ea891abc93de3c6a4bc106e483
 
-python.versions 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

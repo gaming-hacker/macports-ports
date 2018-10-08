@@ -27,7 +27,7 @@ long_description             This package is part of the signal-processing and m
 
 github.setup                 bioidiap bob.extension 2.0.11 v
 
-python.versions 37
+python.version 37
 python.default_version 37
 
 checksums                    rmd160  7ad4763c1bd1da168cfee7d4fcda6a365f68687d \
