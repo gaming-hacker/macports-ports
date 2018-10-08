@@ -70,17 +70,4 @@ pre-destroot {
     xinstall -d ${destroot}${prefix}/lib/python${PythonVersion}/site-packages/
 }
 
-variant python37 conflicts python35 python36 python37 description {Build using Python 3.7} {
-    configure.env-append   PYTHON_EXTRA_LDFLAGS="-u _PyMac_Error ${frameworks_dir}/Python.framework/Versions/${PythonVersion}/Python"
-}
-
-variant python35 conflicts python37 python36 python37 description {Build using Python 3.5 - obsolete} {
-    ui_error "Please do not install this variant since it has been replaced by the python37 variant."
-    return -code error
-
-    # remove after 08/25/2019
-}
-
-variant python36 conflicts python37 python35 python37 description {Build using Python 3.6} {}
-
-variant python37 conflicts python37 python35 python36 description {Build using Python 3.7} {}
+variant python37 description {Build using Python 3.7} {}
