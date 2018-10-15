@@ -21,10 +21,6 @@ checksums               rmd160  1f041e6bee9645e21ce92becddda3ecfe10c1512 \
 sha256  b14503707c75af80edb470602538c1b11d8ba57bc5120d64e2de75c1d93bacf2 \
 size    742402
 
-# can't set python.versions before adding custom subports
-subport py-hgevolve-devel {}
-subport py37-hgevolve-devel {}
-
 if {[string match "*-devel" $subport]} {
     bitbucket.setup     marmoute mutable-history 45d4b49d81d9
     bitbucket.livecheck default

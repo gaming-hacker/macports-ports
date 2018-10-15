@@ -28,8 +28,6 @@ sha256  66a589baa5c6734320f2737c486abfabfd9bb2bf96bedbfe991f0a5bec1160d2 \
 size    136783
 
 # can't set python.versions before adding custom subports
-subport py-hggit-devel {}
-subport py37-hggit-devel {}
 
 if {[string match "*-devel" $subport]} {
     bitbucket.setup     durin42 hg-git c651bb6fcf33
