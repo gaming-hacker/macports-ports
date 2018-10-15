@@ -27,7 +27,8 @@ configure.args      --disable-silent-rules \
                     --without-python
 
 checksums           rmd160  3a50239fd977952bf8c8e3d5886d38377c85a53f \
-                    sha256  d529c2e9dfe1db32826717aed80553a99ba31aeb82cee88f93e31a984b372489
+                    sha256  d529c2e9dfe1db32826717aed80553a99ba31aeb82cee88f93e31a984b372489 \
+                    size    3508060
                     
 test.run            yes
 test.target         check
