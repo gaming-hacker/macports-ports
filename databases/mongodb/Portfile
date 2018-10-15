@@ -1,9 +1,8 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           conflicts_build 1.0
-PortGroup           cxx11 1.0
 PortGroup           xcodeversion 1.0
 
 # When updating mongodb to a new version, update mongo-tools to the
@@ -11,7 +10,11 @@ PortGroup           xcodeversion 1.0
 
 name                mongodb
 epoch               1
-version             3.7.2
+version             4.0.3
+checksums           rmd160  2be3bda0a81696c996380159860f1de81d1b6148 \
+                    sha256  fbbe840e62376fe850775e98eb10fdf40594a023ecf308abec6dcec44d2bce0c \
+                    size    49435646
+
 license             {AGPL-3 OpenSSLException}
 categories          databases
 maintainers         {ryandesign @ryandesign}
@@ -25,21 +28,19 @@ homepage            https://www.mongodb.com/community
 master_sites        https://fastdl.mongodb.org/src
 distname            ${name}-src-r${version}
 
-checksums           rmd160  a75b79fb08b5f5c0e091b06023a0043d585da8b2 \
-sha256  f1dcdd2073e6edb722675373995bfa93da6cc047b690b7b8100d95745584a1d3 \
-size    40331092
-
 depends_build       port:scons \
-                    port:py37-yaml \
-                    port:py37-typing \
-                    port:py37-regex \
-                    port:py37-cheetah \
-                    port:py37-setuptools
+                    port:py27-yaml \
+                    port:py27-typing \
+                    port:py27-regex \
+                    port:py27-cheetah \
+                    port:py27-setuptools
 
 depends_lib         port:libpcap \
                     path:lib/libssl.dylib:openssl
 
 license_noconflict  scons
+
+patchfiles-append   case-sensitive.patch
 
 use_configure       no
 
@@ -49,7 +50,9 @@ use_configure       no
 # other ports to use; and the only C++ libraries mongodb uses (boost,
 # pcre, snappy) are bundled.
 configure.cxx_stdlib libc++
+PortGroup           cxx11 1.1
 
+# This matches a version check of __apple_build_version__ in SConstruct.
 compiler.blacklist-append *gcc* {clang < 802.0.42} macports-clang-3.3 macports-clang-3.4 macports-clang-3.7
 
 # TODO: fix me
@@ -70,7 +73,7 @@ if {${configure.sdkroot} ne ""} {
 }
 
 build.cmd           ${prefix}/bin/scons
-build.target        all mongobridge
+build.target        core mongobridge
 build.args          CC="${configure.cc}" \
                     CCFLAGS="${configure.cflags}" \
                     CPPPATH="${prefix}/include" \
@@ -102,7 +105,7 @@ add_users           ${mongouser} group=${mongouser} realname=MongoDB\ Server
 post-destroot {
     xinstall -W ${worksrcpath} mongobridge ${destroot}${prefix}/bin
 
-    xinstall -m 755 -o ${mongouser} -g ${mongouser} -d \
+    xinstall -m 0755 -o ${mongouser} -g ${mongouser} -d \
         ${destroot}${dbdir} \
         ${destroot}${logdir}
     destroot.keepdirs-append  \
@@ -119,6 +122,13 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
     pre-fetch {
         ui_error "${name} @${version} requires OS X 10.7 or greater."
         return -code error "incompatible OS X version"
+    }
+}
+
+if {${os.platform} eq "darwin" && ${os.major} > 16} {
+    notes-append {
+        Warning: mongodb may lose data if it crashes on macOS 10.13 or greater.\
+        See https://jira.mongodb.org/browse/WT-4018.
     }
 }
 

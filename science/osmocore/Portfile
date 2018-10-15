@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,17 +22,17 @@ if {${subport} eq ${name}} {
     # release
     github.setup    osmocom libosmocore 0.12.1
     checksums       rmd160 ecbe62d6de2c27d5e3264918d8703f9d49973109 \
-sha256 b738ae043f838c6d8cb3a6239ba7506ea73dd350078510de8e563511d60a3688 \
-size   1050188
+                    sha256 b738ae043f838c6d8cb3a6239ba7506ea73dd350078510de8e563511d60a3688 \
+                    size   1050188
 
 } else {
 
     # devel
-    github.setup    osmocom libosmocore ea6f519ff84c31acd2689e92adb4dc1688dd9a7a
-    version         20181001
-    checksums       rmd160 6e98150ad420226dafc8236fa6ad5a4dac6073fa \
-sha256 465908011946f48d169d0b2ca95cc75bcf922b23b4e041bcc834fb188dbf49f0 \
-size   1069776
+    github.setup    osmocom libosmocore 0903fce28be85f28b1c9e803df8cec69fefa2de9
+    version         20181007
+    checksums       rmd160 bd8529aa731db4d7c6c1e5c7880059499163fc62 \
+                    sha256 dbf14fb4f7dafc559801281e04023ddb6c426fccd6efb7fd9f28ad46f94e8d03 \
+                    size   1069944
 
 }
 
@@ -45,7 +45,7 @@ depends_build-append \
 
 depends_lib-append \
     port:gnutls \
-    port:python37 \
+    port:python27 \
     port:talloc
 
 # fix use of Python2
@@ -54,7 +54,7 @@ patchfiles-append patch-fix-python.diff
 patch.pre_args -p1
 
 post-patch {
-    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/3.7/bin/python3.7|g" \
+    reinplace "s|@PYTHON_EXECUTABLE@|${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7|g" \
         ${worksrcpath}/include/Makefile.am \
         ${worksrcpath}/src/gsm/Makefile.am \
         ${worksrcpath}/tests/Makefile.am \

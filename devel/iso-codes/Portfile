@@ -24,9 +24,9 @@ sha256  21cd73a4c6f95d9474ebfcffd4e065223857720f24858e564f4409b19f7f0d90 \
 size    3480200
 
 depends_build       port:gettext \
-                    port:python36
+                    port:python37
 
-build.env           PATH=${frameworks_dir}/Python.framework/Versions/3.6/bin:$env(PATH)
+build.env           PATH=${frameworks_dir}/Python.framework/Versions/3.7/bin:$env(PATH)
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}

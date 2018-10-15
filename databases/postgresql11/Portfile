@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -7,7 +7,7 @@ PortGroup muniversal 1.0
 
 #remember to update the -doc and -server as well
 name                postgresql11
-version             11beta4
+version             11rc1
 
 categories          databases
 platforms           darwin
@@ -25,9 +25,9 @@ master_sites        http://ftp3.de.postgresql.org/pub/Mirrors/ftp.postgresql.org
             postgresql:source/v${version}/
 distname            postgresql-${version}
 
-checksums           rmd160  6715ab0761297de29f1db42be5d6632416e9b0ab \
-sha256  bb0b21f7f551cf5b3e13c05fdf8266fd0ce14db1f62e9c8d21b395ddbaf68fe4 \
-size    21143836
+checksums           rmd160  4534882f648a2d29ba1fa22eadb38becb1c6abd0 \
+                    sha256  608c35369b79a40239663c4213267fd08d3184c3a2cd4d6ff71103ca61930609 \
+                    size    21193201
 
 use_bzip2           yes
 
@@ -117,19 +117,19 @@ if {![variant_isset universal]} {
 select.group        postgresql
 select.file         ${filespath}/${name}
 
-variant python requires python37 description {add support for python} {
+variant python requires python27 description {add support for python} {
 }
 
-variant python37 conflicts python3 description {add support for python 3.7} {
+variant python27 conflicts python3 description {add support for python 2.7} {
+    depends_lib-append      port:python27
+    configure.args-append   --with-python
+    configure.python        ${prefix}/bin/python2.7
+}
+
+variant python3 conflicts python27 description {add support for python 3.x} {
     depends_lib-append      port:python37
     configure.args-append   --with-python
     configure.python        ${prefix}/bin/python3.7
-}
-
-variant python3 conflicts python37 description {add support for python 3.x} {
-    depends_lib-append      port:python36
-    configure.args-append   --with-python
-    configure.python        ${prefix}/bin/python3.6
 }
 
 variant perl description {add Perl support} {

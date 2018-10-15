@@ -1,13 +1,13 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-rasa-nlu
-version             0.13.6
-checksums           rmd160  67fcf1752891844ade4b0cdb3d5f1e6de90a1184 \
-sha256  a5aac6ea83567f093b8bcd47f72bbb4e4c082da470a5e6cfb56996a8f0898758 \
-size    108051
+version             0.13.7
+checksums           rmd160  012063ecb903138c984c87aed3861b3ca32005b0 \
+                    sha256  8c62ad16e9111cc9b95d99bc400f4440d5bcffd6a1b78b90cddc133576b535ff \
+                    size    108079
 
 categories-append   devel
 platforms           darwin
@@ -24,7 +24,7 @@ homepage            https://github.com/RasaHQ/rasa_nlu
 master_sites        pypi:r/${python.rootname}
 distname            ${python.rootname}-${version}
 
-python.version 37
+python.versions     36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

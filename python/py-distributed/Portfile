@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-distributed
-version             1.23.2
+version             1.23.3
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  58a1744a2d08702a287ed07aa1f0ea06b115ecbb \
-sha256  803af56bdc755bcb351bd93b25c4f4ded48d684aa9e591d877f751080ad2f898 \
-size    515222
+checksums           rmd160  4446d0de797c4fe7bc8bee8b7b7f3f9541bb4790 \
+                    sha256  2d48a4de280fd7243ca76f9b12db5fe2486fc89dcdb510c77fa51f51733a04cc \
+                    size    515993
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           bitbucket 1.0
 
-bitbucket.setup     Mekk mercurial_keyring 1.1.9
+bitbucket.setup     Mekk mercurial_keyring 1.2.0
 name                py-mercurial_keyring
 
 categories-append   devel
@@ -19,12 +19,12 @@ long_description \
 
 platforms           darwin
 
-checksums           rmd160  beb8844547b20613f22846f792e748fe0745066f \
-sha256  e749782fd9b5e09f4c28693bc3cd830163d6fde9bce12bd66c585c8753581072 \
-size    18715
+checksums           rmd160  9be023041af0f0774ffe79e2788cf3f0afd17b90 \
+                    sha256  bc7526b30ff5745d404ad7c15f9ba3441642c548fee8dd211b952b3258e882fb \
+                    size    19898
 
 #not supporting 3x because py-keyring is broken on python 3.x
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
     depends_run         port:py${python.version}-keyring \
