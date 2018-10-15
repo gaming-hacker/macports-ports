@@ -18,11 +18,17 @@ autoreconf.env      AUTOMAKE="automake --foreign"
 depends_build-append    port:pkgconfig
 depends_lib-append  port:pcre
 
+patch.pre_args      -p1
+patchfiles-append   patch-container-of-uses.diff
+
 configure.args      --disable-silent-rules \
                     --with-pcre \
                     --without-python
 
 checksums           rmd160  3a50239fd977952bf8c8e3d5886d38377c85a53f \
                     sha256  d529c2e9dfe1db32826717aed80553a99ba31aeb82cee88f93e31a984b372489
+                    
+test.run            yes
+test.target         check
 
 github.livecheck.regex  {([^"rb-]+)}
