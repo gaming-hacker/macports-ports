@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -12,7 +12,7 @@ name                qrupdate
 version             1.1.2
 revision            6
 checksums           rmd160 9d23b2d13278c335f6208ebb6775df4b4049785c \
-                    sha256 e2a1c711dc8ebc418e21195833814cb2f84b878b90a2774365f0166402308e08
+sha256 e2a1c711dc8ebc418e21195833814cb2f84b878b90a2774365f0166402308e08
 
 # upstream follows a weird folder naming policy, we need last two digits of version separated by a dot
 set branch          [join [lrange [split ${version} .] 1 2] .]

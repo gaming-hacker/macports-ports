@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
 name                        e2fsprogs
 version                     1.44.4
 checksums                   rmd160  8e8fee42b7d0637371f3f9f47398d82e3bc50ad5 \
-                            sha256  dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2 \
-                            size    7596925
+sha256  dd707688f0fc353941931c20081f26ec8e54b0bc1ac3f7601f479f9c7675dcb2 \
+size    7596925
 
 categories                  sysutils
 platforms                   darwin

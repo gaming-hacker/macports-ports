@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -41,13 +41,13 @@ master_sites            ${github.master_sites}:source \
                         ${github.homepage}/tarball/${userguide_commit}:userguide
 
 checksums               ${source_distfile} \
-                        rmd160  b8d8e1a773d7e9dd5eba9c97a05fde367ed13681 \
-                        sha256  09bbc638f7e29f1d3118406cd267e17fcf7d7f27b52875fdae7e44541fe1ce16 \
-                        size    2821634 \
+rmd160  b8d8e1a773d7e9dd5eba9c97a05fde367ed13681 \
+sha256  09bbc638f7e29f1d3118406cd267e17fcf7d7f27b52875fdae7e44541fe1ce16 \
+size    2821634 \
                         ${userguide_distfile} \
-                        rmd160  5ee192f111207d716e8002f2388e69f8e0e5cd57 \
-                        sha256  1f844c9eb6975a48dc8fd15fbaee67f8a5f0dc0a1293c297fc8d9a87b30a5687 \
-                        size    1206800
+rmd160  5ee192f111207d716e8002f2388e69f8e0e5cd57 \
+sha256  1f844c9eb6975a48dc8fd15fbaee67f8a5f0dc0a1293c297fc8d9a87b30a5687 \
+size    1206800
 
 post-extract {
     move ${workpath}/${github.author}-${github.project}-[string range ${git.branch} 0 6] ${workpath}/${distname}
@@ -301,7 +301,7 @@ patchfiles-append       patch-python.diff
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     # the system python is too old to run scripts
     depends_build-append \
-                        port:python27
+                        port:python37
     configure.python    ${prefix}/bin/python2.7
 } else {
     configure.python    /usr/bin/python

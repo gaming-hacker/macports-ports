@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -18,12 +18,12 @@ description             hgsubversion is a Mercurial extension for \
 long_description        ${description}
 
 checksums               rmd160  63318040765bbf016275dc98d2b65db70d03b897 \
-                        sha256  da3b4d0450579233bcec55c3b3c365e260d4b48bb53ad35ccc3ab3d0200a3383 \
-                        size    304824
+sha256  da3b4d0450579233bcec55c3b3c365e260d4b48bb53ad35ccc3ab3d0200a3383 \
+size    304824
 
 # can't set python.versions before adding custom subports
 subport py-hgsubversion-devel {}
-subport py27-hgsubversion-devel {}
+subport py37-hgsubversion-devel {}
 
 if {[string match "*-devel" $subport]} {
     bitbucket.setup     seanfarley hgsubversion 704c4eced477
@@ -32,10 +32,10 @@ if {[string match "*-devel" $subport]} {
     revision            0
 
     checksums           rmd160  2b1ba2d8a5dcab2e8f0d67d307d34b39d3adc946 \
-                        sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
+sha256  620e213da296a181f89d1268a86251c04789141ec3fb5dc8b0fc158d378f8ac9
 }
 
-python.versions         27
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:bin/hg:mercurial \

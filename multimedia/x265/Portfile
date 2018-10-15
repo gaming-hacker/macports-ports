@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -9,8 +9,8 @@ name                x265
 version             2.9
 
 checksums           rmd160  ea6772ec426c141eb1756cdf6bb2def3d6319f47 \
-                    sha256  ebae687c84a39f54b995417c52a2fdde65a4e2e7ebac5730d251471304b91024 \
-                    size    1385848
+sha256  ebae687c84a39f54b995417c52a2fdde65a4e2e7ebac5730d251471304b91024 \
+size    1385848
 
 categories          multimedia
 platforms           darwin

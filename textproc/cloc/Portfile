@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    cloc counts blank lines, comment lines, and physical \
                     differences in blank, comment, and source lines.
 
 checksums           rmd160  cba37e0852ce7e3ce4ae3fa39acfc25623905050 \
-                    sha256  4317933344b2d2fa0de6f9abac74c19f51ec4f047aa45fa3fe1872f61f2eb0ec \
-                    size    451931
+sha256  4317933344b2d2fa0de6f9abac74c19f51ec4f047aa45fa3fe1872f61f2eb0ec \
+size    451931
 
 depends_run-append  port:perl${perl5.major} \
                     port:p${perl5.major}-algorithm-diff \

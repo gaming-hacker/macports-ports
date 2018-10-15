@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 PortGroup         perl5 1.0
@@ -36,8 +36,8 @@ use_bzip2         yes
 distname          ${name}-${version}
 worksrcdir        ${name}-${version}
 checksums           rmd160  0ad1a6b4cd5b53b7487e238c15cc1c29f53545df \
-                    sha256  8396ed8d2a88ac358ecf458c253cf38f55a13aaba7958e4fde3dd85c222e393f \
-                    size    13440713
+sha256  8396ed8d2a88ac358ecf458c253cf38f55a13aaba7958e4fde3dd85c222e393f \
+size    13440713
 
 post-patch {
     # gnc-fq-dump needs to be patched to use MacPorts perl.

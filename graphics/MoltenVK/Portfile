@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -18,41 +18,41 @@ set submodules {
                     LunarG VulkanSamples e268a7b7bf799b92410f35f6fea29cedb021bac1 VulkanSamples
 }
 checksums           ${distfiles} \
-                    rmd160  07a259e0dcc23deac2ff7d39916de9c2dfc85b9e \
-                    sha256  56af1848c37c129fb96d0e59e859220ffaa58be4606b50cc09d34d50a073b6d3 \
-                    size    1141917 \
+rmd160  07a259e0dcc23deac2ff7d39916de9c2dfc85b9e \
+sha256  56af1848c37c129fb96d0e59e859220ffaa58be4606b50cc09d34d50a073b6d3 \
+size    1141917 \
                     cereal-51cbda5f30e56c801c07fe3d3aba5d7fb9e6cca4.tar.gz \
-                    rmd160  33a8f9bd682f36387d3d589410113c6dd1e18bc4 \
-                    sha256  26361b539fe50eee308b564faa2742166d2922a7ab0bd4870ac55708581228c8 \
-                    size    336138 \
+rmd160  33a8f9bd682f36387d3d589410113c6dd1e18bc4 \
+sha256  26361b539fe50eee308b564faa2742166d2922a7ab0bd4870ac55708581228c8 \
+size    336138 \
                     Vulkan-Headers-2fd5a24ec4a6df303b2155b3f85b6b8c1d56f6c0.tar.gz \
-                    rmd160  78c61b819d0b84bafad24dbec5fb37a7a30eaf70 \
-                    sha256  073451c821f00509ef1f18b3d672b2ef595bcd49844e0b180e0f2045f9a2f166 \
-                    size    514785 \
+rmd160  78c61b819d0b84bafad24dbec5fb37a7a30eaf70 \
+sha256  073451c821f00509ef1f18b3d672b2ef595bcd49844e0b180e0f2045f9a2f166 \
+size    514785 \
                     SPIRV-Cross-c9210427b9ab547d41f1af804dedae581b382965.tar.gz \
-                    rmd160  2f573b05d34ad8da30ca2402e932898176d464a0 \
-                    sha256  a213c578f1f98083bb797cebeb03374a5638e5d4d2cb018c3b35b02309cb763b \
-                    size    583729 \
+rmd160  2f573b05d34ad8da30ca2402e932898176d464a0 \
+sha256  a213c578f1f98083bb797cebeb03374a5638e5d4d2cb018c3b35b02309cb763b \
+size    583729 \
                     glslang-91ac4290bcf2cb930b4fb0981f09c00c0b6797e1.tar.gz \
-                    rmd160  bc157c49372082268d579199117ada445df81b99 \
-                    sha256  d865468a711ad235dbd71f4f0f37ecbe4d10bddfe727abac0b25f9b9611d865b \
-                    size    2423190 \
+rmd160  bc157c49372082268d579199117ada445df81b99 \
+sha256  d865468a711ad235dbd71f4f0f37ecbe4d10bddfe727abac0b25f9b9611d865b \
+size    2423190 \
                     SPIRV-Tools-9bfe0eb25e3dfdf4f3fd86ab6c0cda009c9bd661.tar.gz \
-                    rmd160  adbc43257c914ac860c7e6c3d4b12882356bc289 \
-                    sha256  a1fe809e23fa17bff58ef8ff575701838e4046c05fe460cdc2a68c8e6d3d55d9 \
-                    size    1364467 \
+rmd160  adbc43257c914ac860c7e6c3d4b12882356bc289 \
+sha256  a1fe809e23fa17bff58ef8ff575701838e4046c05fe460cdc2a68c8e6d3d55d9 \
+size    1364467 \
                     SPIRV-Headers-d5b2e1255f706ce1f88812217e9a554f299848af.tar.gz \
-                    rmd160  f10705d841455bbd7962975a9710c0140f8f7e33 \
-                    sha256  ac0dba40509922b3284b90fc896eb1a480d32a503635ea702b003bdff89729e1 \
-                    size    291263 \
+rmd160  f10705d841455bbd7962975a9710c0140f8f7e33 \
+sha256  ac0dba40509922b3284b90fc896eb1a480d32a503635ea702b003bdff89729e1 \
+size    291263 \
                     Vulkan-Tools-f2c941819838c349fe0cc8eb2dddac294fe012e9.tar.gz \
-                    rmd160  5334ec6fe468b53b221c0d464bf1275f0dd8ce6d \
-                    sha256  fa0665e1f5938053eb5fc3c4af1ccf491d7311978461266dc8b3ac54071b936a \
-                    size    342507 \
+rmd160  5334ec6fe468b53b221c0d464bf1275f0dd8ce6d \
+sha256  fa0665e1f5938053eb5fc3c4af1ccf491d7311978461266dc8b3ac54071b936a \
+size    342507 \
                     VulkanSamples-e268a7b7bf799b92410f35f6fea29cedb021bac1.tar.gz \
-                    rmd160  4ecde32c42e4f3f57e629975b27ec657cdfb6092 \
-                    sha256  80559b35e6f0dde88f404ece50578954da0cd937fab82a7d008f08e773f6b601 \
-                    size    3921408
+rmd160  4ecde32c42e4f3f57e629975b27ec657cdfb6092 \
+sha256  80559b35e6f0dde88f404ece50578954da0cd937fab82a7d008f08e773f6b601 \
+size    3921408
 
 categories          graphics
 maintainers         {ryandesign @ryandesign} openmaintainer

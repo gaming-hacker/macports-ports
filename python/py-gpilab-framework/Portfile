@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -8,7 +8,7 @@ PortGroup               select 1.0
 github.setup            gpilab framework 1.0.5 v
 name                    py-gpilab-framework
 revision                1
-python.versions         35 36 37
+python.version 37
 python.default_version  37
 supported_archs         noarch
 platforms               darwin
@@ -27,9 +27,9 @@ long_description        This is the GPI Framework project. The framework \
 homepage                http://gpilab.com
 
 checksums \
-    rmd160  5978096574f142adb13a8998c3f84308140f57c2 \
-    sha256  9778c8a52ef45533eed5ce8e25c2b38bd49cdc858ee17b4a638e968a73646d9b \
-    size    4114430
+rmd160  5978096574f142adb13a8998c3f84308140f57c2 \
+sha256  9778c8a52ef45533eed5ce8e25c2b38bd49cdc858ee17b4a638e968a73646d9b \
+size    4114430
 
 patchfiles                  mainWindow.py.diff \
                             canvasGraph.py.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -31,8 +31,8 @@ master_sites        http://www.iram.fr/~gildas/dist/ \
 distname            ${name}-src-${my_version}
 
 checksums           rmd160  a69c59e2688afffd2ed31a055ec09ecde5eed076 \
-                    sha256  47788ebd53b2d3c3e59d39ec91a548d94f325ef1755f24f24e5db54ffcc1a4e0 \
-                    size    32223343
+sha256  47788ebd53b2d3c3e59d39ec91a548d94f325ef1755f24f24e5db54ffcc1a4e0 \
+size    32223343
 
 patch.pre_args      -p1
 patchfiles          patch-admin-Makefile.def.diff \
@@ -43,8 +43,8 @@ patchfiles          patch-admin-Makefile.def.diff \
 
 depends_lib         port:gtk2 \
                     port:libpng \
-                    port:python27 \
-                    port:py27-numpy
+                    port:python37 \
+                    port:py37-numpy
 
 depends_build       port:cfitsio \
                     port:pkgconfig \

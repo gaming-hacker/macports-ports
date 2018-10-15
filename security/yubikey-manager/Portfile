@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,8 +17,8 @@ long_description    ${description}
 homepage            https://developers.yubico.com/yubikey-manager/
 
 checksums           rmd160  7eede7f4afcc9773d559e2c063af7011edadea4a \
-                    sha256  412d9d86ba0ffa1e9ddc96b2d79fb2d0c31597e4457f63711302c44082628905 \
-                    size    96666
+sha256  412d9d86ba0ffa1e9ddc96b2d79fb2d0c31597e4457f63711302c44082628905 \
+size    96666
 
 python.default_version 36
 

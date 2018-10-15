@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     34 35 36 37
+python.version 37
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -23,8 +23,8 @@ master_sites        pypi:m/multidict
 distname            multidict-${version}
 
 checksums           rmd160  ebcf37b418a14cd2f591b4885f7cd73e9688f2ac \
-                    sha256  3c11e92c3dfc321014e22fb442bc9eb70e01af30d6ce442026b0c35723448c66 \
-                    size    118428
+sha256  3c11e92c3dfc321014e22fb442bc9eb70e01af30d6ce442026b0c35723448c66 \
+size    118428
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

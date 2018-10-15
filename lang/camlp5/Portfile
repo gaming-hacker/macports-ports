@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    Camlp5 is a preprocessor and pretty-printer for \
 homepage            https://camlp5.github.io/
 
 checksums           rmd160  78fa5f468ed394f37bfaeb9290273c6297ec7e97 \
-                    sha256  b4da6d3b2bb96174785460955f7b182c1d641f71dba457686f78c03aae83cd03 \
-                    size    813575
+sha256  b4da6d3b2bb96174785460955f7b182c1d641f71dba457686f78c03aae83cd03 \
+size    813575
 
 depends_build       port:ocaml
 

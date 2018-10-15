@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -16,8 +16,8 @@ master_sites        https://www.musicpd.org/download/${name}/${branch}/
 platforms           darwin
 use_xz              yes
 checksums           rmd160  bb5d7471b7e8b5c45de6ea24a5b119b905f3da73 \
-                    sha256  085c85f4c68e4d4c643faa140bf3f118f191011ccc395a37f4be70c56ec001ac \
-                    size    225240
+sha256  085c85f4c68e4d4c643faa140bf3f118f191011ccc395a37f4be70c56ec001ac \
+size    225240
 depends_build-append \
                     port:pkgconfig
 depends_lib-append  path:lib/pkgconfig/glib-2.0.pc:glib2 \

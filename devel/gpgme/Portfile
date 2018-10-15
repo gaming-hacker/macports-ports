@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -23,8 +23,8 @@ master_sites        gnupg
 use_bzip2           yes
 
 checksums           rmd160  f0b2b86876d622d377874e922c3eb8777818e5d3 \
-                    sha256  b4dc951c3743a60e2e120a77892e9e864fb936b2e58e7c77e8581f4d050e8cd8 \
-                    size    1658803
+sha256  b4dc951c3743a60e2e120a77892e9e864fb936b2e58e7c77e8581f4d050e8cd8 \
+size    1658803
 
 depends_build       port:pkgconfig
 
