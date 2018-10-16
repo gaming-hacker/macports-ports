@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,11 +19,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/${real_name}
 master_sites        pypi:z/${real_name}
 
-python.versions     27 36 37
+python.version 37
 
 checksums           rmd160  4e290f17acf3282134a6e6a6dbb9602235de3d05 \
-                    sha256  2ddef5a7ecfff132a2dd796253366ecf9748a446e30f1a0b3a636aec9d9c05c5 \
-                    size    20056
+sha256  2ddef5a7ecfff132a2dd796253366ecf9748a446e30f1a0b3a636aec9d9c05c5 \
+size    20056
 
 if {${name} ne ${subport}} {
      depends_lib-append  \
