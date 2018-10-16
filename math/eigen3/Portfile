@@ -19,21 +19,21 @@ use_bzip2           yes
 
 depends_build-append    port:pkgconfig
 
-if {${subport} eq ${name}} {
-    bitbucket.setup     eigen eigen 3.3.5
-    revision            1
-    conflicts           eigen3-devel
-
-    livecheck.url       http://eigen.tuxfamily.org
-    livecheck.regex     {Eigen (\d+(\.\d+)+) released}
-
-    checksums \
-rmd160  4e245efd8785b1fad25b213a51e552097e185e10 \
-sha256  7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2 \
-size    1663467
-
-    patchfiles          GMMT_BLAS.patch
-}
+# if {${subport} eq ${name}} {
+#     bitbucket.setup     eigen eigen 3.3.5
+#     revision            1
+#     conflicts           eigen3-devel
+#
+#     livecheck.url       http://eigen.tuxfamily.org
+#     livecheck.regex     {Eigen (\d+(\.\d+)+) released}
+#
+#     checksums \
+# rmd160  4e245efd8785b1fad25b213a51e552097e185e10 \
+# sha256  7352bff3ea299e4c7d7fbe31c504f8eb9149d7e685dec5a12fbaa26379f603e2 \
+# size    1663467
+#
+#     patchfiles          GMMT_BLAS.patch
+# }
 
 subport eigen3-devel {
     # No current development version (other than rolling snapshot)

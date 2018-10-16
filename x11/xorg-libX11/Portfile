@@ -15,9 +15,9 @@ master_sites     xorg:individual/lib/
 
 distname    libX11-${version}
 checksums           sha1    5076f7853713d7db958a05f6fd1c18f7e111a0ad \
-rmd160  2d42cfb246dfbf0f6aeaddebd79bd79f8423f687 \
+ rmd160  2d42cfb246dfbf0f6aeaddebd79bd79f8423f687 \
 sha256  910e9e30efba4ad3672ca277741c2728aebffa7bc526f04dcfa74df2e52a1348 \
-size    2290260
+ size    2290260
 
 use_bzip2   yes
 use_parallel_build      yes
@@ -30,7 +30,7 @@ depends_build   port:pkgconfig \
 depends_lib     port:xorg-libXdmcp \
                 port:xorg-libXau \
                 port:xorg-libxcb \
-                port:xorg-xorgproto 
+                port:xorg-xorgproto
 
 configure.env-append RAWCPP=${configure.cpp}
 

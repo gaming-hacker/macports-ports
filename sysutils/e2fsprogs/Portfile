@@ -38,31 +38,31 @@ configure.args-append       --enable-bsd-shlibs
 # Enable verbose build messages
 build.args-append           V=1
 
-if {${subport} eq ${name}} {
-    revision                    0
-
-    universal_variant           no
-
-    configure.args-append       --disable-libuuid \
-                                --disable-uuidd
-
-    depends_lib-append          port:ossp-uuid \
-                                port:libcomerr
-
-    patchfiles-append           patch-Makefile.in-remove-included-libcomerr.diff
-
-    pre-build {
-        ln -fs ${prefix}/bin/compile_et ${worksrcpath}/lib/et/compile_et
-        ln -fs ${prefix}/lib/libcom_err.1.1.dylib ${worksrcpath}/lib/libcom_err.dylib
-    }
-
-    destroot.target-append      install-libs
-
-    livecheck.type              regex
-    livecheck.regex             ${name}-(\[0-9.\]+)\\.tar
-} else {
-    livecheck.type              none
-}
+# if {${subport} eq ${name}} {
+#     revision                    0
+#
+#     universal_variant           no
+#
+#     configure.args-append       --disable-libuuid \
+#                                 --disable-uuidd
+#
+#     depends_lib-append          port:ossp-uuid \
+#                                 port:libcomerr
+#
+#     patchfiles-append           patch-Makefile.in-remove-included-libcomerr.diff
+#
+#     pre-build {
+#         ln -fs ${prefix}/bin/compile_et ${worksrcpath}/lib/et/compile_et
+#         ln -fs ${prefix}/lib/libcom_err.1.1.dylib ${worksrcpath}/lib/libcom_err.dylib
+#     }
+#
+#     destroot.target-append      install-libs
+#
+#     livecheck.type              regex
+#     livecheck.regex             ${name}-(\[0-9.\]+)\\.tar
+# } else {
+#     livecheck.type              none
+# }
 
 subport libcomerr {
     revision                    0

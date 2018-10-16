@@ -105,7 +105,7 @@ foreach v ${gcc_versions} {
     set cdb(gcc$v,f90)      ${prefix}/bin/gfortran-mp-$version
 }
 
-set clang_versions {60}
+set clang_versions {70}
 foreach v ${clang_versions} {
     # if the string is more than one character insert a '.' into it: e.g 33 -> 3.3
     set version $v
@@ -213,7 +213,7 @@ proc compilers.setup_variants {variants} {
                 depends_lib-delete     $cdb($variant,dependsd)
                 depends_skip_archcheck $cdb($variant,dependsa)
 
-                set compilers.libfortran $cdb($variant,libfortran)
+                set compilers.slibfortran $cdb($variant,libfortran)
             "
             # TODO: all the compilers are in portconfigure now, so see if below
             # is even needed now;

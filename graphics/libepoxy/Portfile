@@ -44,19 +44,10 @@ configure.cmd       ./autogen.sh
 configure.args      --disable-silent-rules \
                     --enable-glx
 
-variant python37 conflicts python36 python37 description {build with python 3.7} {
-    depends_build-append    port:python37
-    configure.python        ${prefix}/bin/python2.7
-}
-variant python36 conflicts python37 python37 description {build with python 3.6} {
-    depends_build-append    port:python36
-    configure.python        ${prefix}/bin/python3.6
-}
-variant python37 conflicts python37 python36 description {build with python 3.7} {
+variant python37 description {build with python 3.7} {
     depends_build-append    port:python37
     configure.python        ${prefix}/bin/python3.7
 }
 
-if {![variant_isset python37] && ![variant_isset python37]} {
-    default_variants-append +python36
-}
+ default_variants-append +python37
+

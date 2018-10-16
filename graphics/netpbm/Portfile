@@ -46,7 +46,7 @@ sha256  09bbc638f7e29f1d3118406cd267e17fcf7d7f27b52875fdae7e44541fe1ce16 \
 size    2821634 \
                         ${userguide_distfile} \
 rmd160  5ee192f111207d716e8002f2388e69f8e0e5cd57 \
-sha256  1f844c9eb6975a48dc8fd15fbaee67f8a5f0dc0a1293c297fc8d9a87b30a5687 \
+sha256  1f844c9eb6975a48dc8fd15fbaee67f8a5f0dc0a1293c297fc8d9a87b30a5687\
 size    1206800
 
 post-extract {
