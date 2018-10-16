@@ -26,7 +26,7 @@ sha256  d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
 # error: use of undeclared identifier 'bit_SSE2'
 compiler.blacklist-append   {clang < 500}
 # error: cpuid.h: No such file or directory
-compiler.blacklist-append   *gcc-4.0 *gcc-4.2
+compiler.blacklist-append   *gcc-3* *gcc-4.0 *gcc-4.2
 
 livecheck.url       http://sourceforge.net/projects/${name}/files/${name}-src/
 livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)"

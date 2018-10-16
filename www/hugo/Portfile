@@ -18,10 +18,7 @@ size    19736463
 
 depends_build-append port:git
 
-universal_variant   no
-
-build.env           GOARCH=${goarch} \
-                    GOOS=${goos}
+build.env-append    GO111MODULE=on
 
 destroot {
     xinstall -d ${destroot}${prefix}/bin

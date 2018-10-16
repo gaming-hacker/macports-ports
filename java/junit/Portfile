@@ -29,9 +29,10 @@ sha256  59721f0805e223d84b90677887d9ff567dc534d7c502ca903c0c2b17f05c116a \
 size    314932
 
 use_configure   no
+# don't extract anything
+extract.only
 
 build {}
-extract {}
 
 set javadir     ${prefix}/share/java
 
