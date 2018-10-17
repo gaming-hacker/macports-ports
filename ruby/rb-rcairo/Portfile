@@ -25,5 +25,6 @@ sha256 dbc159b1cc183ec8cf701ba17f00fd1d265b5e1937c20f5aef7615399a8bf7a8
 configure.cmd   ${ruby.bin} -rubygems ext/cairo/extconf.rb
 depends_lib-append		path:lib/pkgconfig/cairo.pc:cairo \
 						port:rb-pkg-config
-configure.env-append 	PKG_CONFIG=${prefix}/bin/pkg-config
+configure.env-append 	PKG_CONFIG=${prefix}/bin/pkg-config \
+						PKG_CONFIG_PATH=${prefix}/lib/pkgconfig:${prefix}/share/pkgconfig
 configure.args-append	--vendor

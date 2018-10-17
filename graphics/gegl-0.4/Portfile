@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -7,7 +7,7 @@ PortGroup           gobject_introspection 1.0
 
 name                gegl-0.4
 set gname           gegl
-version             0.4.8
+version             0.4.10
 set branch          [join [lrange [split ${version} .] 0 1] .]
 conflicts           gegl-devel
 license             {GPL-3+ LGPL-3+}
@@ -28,13 +28,13 @@ use_bzip2           yes
 
 distname            ${gname}-${version}
 
-checksums           rmd160  1e774d1f55a27f6c98bbbb05d0716a96a8916f61 \
-sha256  719468eec56ac5b191626a0cb6238f3abe9117e80594890c246acdc89183ae49 \
-size    7017022
+checksums           rmd160  39d130bd9e14534bcec06d83abc2005883463cad \
+                    sha256  1c419659bde1aa8bb7845231a7132bd7dcdaa4ed724adf676b07478b41f0c5d3 \
+                    size    7066737
 
 depends_build       port:pkgconfig \
                     port:w3m \
-                    port:python37
+                    port:python27
 
 depends_lib         port:babl \
                     port:gdk-pixbuf2 \
@@ -74,7 +74,7 @@ compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 use_autoreconf      yes
 autoreconf.args     -fvi
 
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 
 configure.args      --disable-docs \
                     --disable-silent-rules \
