@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ long_description    ${description}
 homepage            https://beautifier.io/
 
 checksums           rmd160  4724a7bf1cd2a8d0ea5fc70b59aec7b300ce243a \
-                    sha256  69041b577d833290775c05234337b4a7bb8d7804c91c94e66856c9b80ac08491 \
-                    size    1017091
+sha256  69041b577d833290775c05234337b4a7bb8d7804c91c94e66856c9b80ac08491 \
+size    1017091
 
-python.versions     27 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

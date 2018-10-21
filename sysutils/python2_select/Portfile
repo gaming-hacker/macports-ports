@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -44,16 +44,16 @@ platform darwin {
         } elseif {${os.major} == 11} {
             list python25-apple \
                  python26-apple \
-                 python27-apple
+                 python37-apple
         } elseif {${os.major} == 12 || ${os.major} == 13} {
             list {python25-apple.mtln python25-apple} \
                  {python26-apple.mtln python26-apple} \
-                 {python27-apple.mtln python27-apple}
+                 {python37-apple.mtln python37-apple}
         } elseif {${os.major} == 14 || ${os.major} == 15 || ${os.major} == 16} {
             list {python26-apple.mtln python26-apple} \
-                 {python27-apple.mtln python27-apple}
+                 {python37-apple.mtln python37-apple}
         } elseif {${os.major} >= 17} {
-            list {python27-apple.mtln python27-apple}
+            list {python37-apple.mtln python37-apple}
         }
     ]
     foreach python $apple_pythons {

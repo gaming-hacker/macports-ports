@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -27,9 +27,9 @@ distname            ruby-${version}
 dist_subdir         ruby25
 
 checksums           md5 49aea0bf56d25351ccaf938c642400df \
-                    rmd160 c711c721143ece0f412676e573f09c13f1218b6a \
-                    sha1 d47ede7dab79de25fcc274dfcad0f92f389a4313 \
-                    sha256 228a787ba68a7b20ac6e1d5af3d176d36e8ed600eb754d6325da341c3088ed76
+rmd160 c711c721143ece0f412676e573f09c13f1218b6a \
+sha1 d47ede7dab79de25fcc274dfcad0f92f389a4313 \
+sha256 228a787ba68a7b20ac6e1d5af3d176d36e8ed600eb754d6325da341c3088ed76
 
 use_parallel_build  no
 

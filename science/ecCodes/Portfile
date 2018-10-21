@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.0
@@ -15,8 +15,8 @@ homepage            https://confluence.ecmwf.int/display/ECC
 master_sites        https://confluence.ecmwf.int/download/attachments/45757960
 distname            eccodes-${version}-Source
 checksums           rmd160  744e99d73ce3016eb44e64b7baefadd6d69523e8 \
-                    sha256  ff04eb1fa4c363438bbbd6d75b66b4237c7397f8b0bd311d9243b6b2dcfc09d6 \
-                    size    9969914
+sha256  ff04eb1fa4c363438bbbd6d75b66b4237c7397f8b0bd311d9243b6b2dcfc09d6 \
+size    9969914
 long_description \
     ecCodes is a package developed by ECMWF which provides an application programming interface and \
     a set of tools for decoding and encoding messages in the following formats: \
@@ -67,7 +67,7 @@ if {[variant_isset g95]} {
 # Delete the following line. See #52233
 # include( "/opt/local/bin/python2.7-config" OPTIONAL )
 post-configure {
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         system "ed - ${build.dir}/eccodes-config.cmake.tpls < ${filespath}/eccodes-config.cmake.tpls.ed"
     }
 }
@@ -76,8 +76,8 @@ post-destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
     xinstall -m 644 {*}[glob ${worksrcpath}/html/*.html] \
         ${destroot}${prefix}/share/doc/${name}
-    if {[variant_isset python27]} {
-        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+    if {[variant_isset python37]} {
+        set sp ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
         xinstall -m 755 -d ${sp}
         foreach p {gribapi eccodes} {
             xinstall -m 755 -d ${sp}/${p}
@@ -92,8 +92,8 @@ if {[fortran_variant_isset]} {
     configure.args-append   -DENABLE_FORTRAN=ON
 }
 
-variant python27 description {Add support for python27} {
-    depends_lib-append      port:py27-numpy
+variant python37 description {Add support for python37} {
+    depends_lib-append      port:py37-numpy
     configure.args-delete   -DENABLE_PYTHON=OFF
     configure.args-append   -DENABLE_PYTHON=ON \
                             -DPYTHON_CONFIG=${prefix}/bin/python2.7-config \

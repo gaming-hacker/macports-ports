@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                    1.0
 PortGroup           python    1.0
@@ -21,13 +21,13 @@ long_description    ${description}
 homepage            https://www.tensorflow.org/
 
 checksums           rmd160  2d04a8f1c0b0796d4a817f82f5743929bc9a6fb9 \
-                    sha256  55833b40782b636994ef85a875306fc5a4301335342af58eaeb6c37971c68f26 \
-                    size    25030426
+sha256  55833b40782b636994ef85a875306fc5a4301335342af58eaeb6c37971c68f26 \
+size    25030426
 
 variant native description {Build from source for best native platform support} { }
 
 # tensorflow does not yet support python 3.7 or newer..
-python.versions     27 35 36
+python.version 37
 
 if {${name} ne ${subport}} {
 

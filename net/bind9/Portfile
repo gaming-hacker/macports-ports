@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			bind9
 version			9.12.3
@@ -24,8 +26,8 @@ distname		bind-${version}
 master_sites		isc:${name}/${version}
 
 checksums	rmd160	bbfc7901afad2f2bcfa1d0515fd4eac01539da5e \
-		sha256	0e80762631258e1c193552efa7c56c05ec5e8c2f98e4b2a3b91a61fd8d96b938 \
-		size	8616664
+sha256	0e80762631258e1c193552efa7c56c05ec5e8c2f98e4b2a3b91a61fd8d96b938 \
+size	8616664
 
 depends_lib		path:lib/libssl.dylib:openssl port:libxml2
 
@@ -104,10 +106,10 @@ notes "******************************************************
 * logging into a directory where this new user can write files.
 ******************************************************"
 
-variant python27 description {Build python27 module} {
-	depends_lib-append port:python27 \
-			port:py27-configargparse \
-			port:py27-ply
+variant python37 description {Build python37 module} {
+	depends_lib-append port:python37 \
+			port:py37-configargparse \
+			port:py37-ply
 	configure.args-append --with-python=${prefix}/bin/python2.7
 }
 

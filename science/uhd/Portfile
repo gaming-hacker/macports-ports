@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,8 +24,8 @@ Provides the release version, which is typically updated every month or so.
     revision        1
     conflicts       uhd-devel uhd-39lts
     checksums       rmd160 0bfeca743efa675241625531b7cada6bdf763a64 \
-                    sha256 6ea0ca6229fcf18ea0ce1269dffcf8cc4b385037cdd65b5d282a8179d3eea916 \
-                    size   9419596
+sha256 6ea0ca6229fcf18ea0ce1269dffcf8cc4b385037cdd65b5d282a8179d3eea916 \
+size   9419596
 
     # set the version override string
 
@@ -64,8 +64,8 @@ Provides UHD 3.9 Long-Term Service \(LTS\) branch. This branch is not updated ex
     github.setup    EttusResearch uhd UHD-3.9.LTS
     version         3.9-LTS
     checksums       rmd160 0765543ffdc36df568012640422fda8c70809f62 \
-                    sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
-                    size   2463897
+sha256 a6b4055c5d2d007c978c6577d87151ce9d505d6f5c116f0d20f176497424147e \
+size   2463897
 
     # set the version override string
 
@@ -88,8 +88,8 @@ Provides the UHD GIT maint or master branch, depending on which is more advanced
     github.setup    EttusResearch uhd 71300593e5c0c6af4116d8706c9762f808dbf441
     version         20181010
     checksums       rmd160 6740cce9de8de0c2780ea7b129b9665b56dffcf6 \
-                    sha256 f52f88d54efc5f8657b29163d11ea0a8f406dee806ffba8d30c8bb887d20a91a \
-                    size   11598736
+sha256 f52f88d54efc5f8657b29163d11ea0a8f406dee806ffba8d30c8bb887d20a91a \
+size   11598736
 
     # set the version override string
 
@@ -234,28 +234,28 @@ default_variants +docs +examples +libusb +manual +test +manpages +gpsd
 
 # select Python to use; default to 2.7
 
-variant python27 conflicts python34 python35 python36 description {Build using Python 2.7} {}
-variant python34 conflicts python27 python35 python36 description {Build using Python 3.4} {}
-variant python35 conflicts python27 python34 python36 description {Build using Python 3.5} {}
-variant python36 conflicts python27 python34 python35 description {Build using Python 3.6} {}
+variant python37 conflicts python34 python35 python36 description {Build using Python 3.7} {}
+variant python34 conflicts python37 python35 python36 description {Build using Python 3.4} {}
+variant python35 conflicts python37 python34 python36 description {Build using Python 3.5} {}
+variant python36 conflicts python37 python34 python35 description {Build using Python 3.6} {}
 
-if {![variant_isset python27] &&
+if {![variant_isset python37] &&
     ![variant_isset python34] &&
     ![variant_isset python35] &&
     ![variant_isset python36]} {
-    default_variants +python27
+    default_variants +python37
 }
 
-if {![variant_isset python27] &&
+if {![variant_isset python37] &&
     ![variant_isset python34] &&
     ![variant_isset python35] &&
     ![variant_isset python36]} {
-    ui_error "\n\nYou must select one of the variants +python27 , +python34 , +python35, or +python36 .\n"
+    ui_error "\n\nYou must select one of the variants +python37 , +python34 , +python35, or +python36 .\n"
     return -code error "Invalid variant selection"
 }
 
 set PythonVersionNoDot ""
-if {[variant_isset python27]} {
+if {[variant_isset python37]} {
     set PythonVersionNoDot "27"
 } elseif {[variant_isset python34]} {
     set PythonVersionNoDot "34"

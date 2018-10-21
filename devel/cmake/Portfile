@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -39,8 +39,8 @@ if {${subport} eq ${name}} {
 
     version         ${branch}.3
     checksums       rmd160 e964e54a5776dccee8cc3f786c2b050ca30172bb \
-                    sha256 acbf13af31a741794106b76e5d22448b004a66485fc99f6d7df4d22e99da164a \
-                    size   8388552
+sha256 acbf13af31a741794106b76e5d22448b004a66485fc99f6d7df4d22e99da164a \
+size   8388552
 
     master_sites    ${homepage}/files/v${branch}/
     conflicts       cmake-devel
@@ -67,8 +67,8 @@ if {${subport} eq ${name}} {
     version         20181018
     set commit      1771ec85b6475c10566026ad7813eb74f732d507
     checksums       rmd160 6aff6aea73dee9db6d7fe4101480449bb75fc85a \
-                    sha256 d3d2d80d116479f4ab0a195e162440f9c829acfc01a9ce0e945ebe2f149e99e8 \
-                    size   6462875
+sha256 d3d2d80d116479f4ab0a195e162440f9c829acfc01a9ce0e945ebe2f149e99e8 \
+size   6462875
 
     use_bzip2       yes
     master_sites    https://gitlab.kitware.com/cmake/cmake/repository/archive${extract.suffix}?ref=${commit}&
@@ -201,7 +201,7 @@ post-patch {
     # used, because the PYTHON_EXECUTABLE is used only when building
     # docs -- so, when not building docs its setting makes no difference.
 
-    if {[variant_isset python27]} {
+    if {[variant_isset python37]} {
         set PYTHON_VERSION_WITH_DOT "2.7"
     } elseif {[variant_isset python34]} {
         set PYTHON_VERSION_WITH_DOT "3.4"
@@ -280,35 +280,35 @@ variant docs description {Build documentation: HTML and manpages} {
         --sphinx-html
 }
 
-variant python27 conflicts python34 python35 python36 requires docs \
-    description {Build documentation using Sphinx from Python 2.7} {
-    depends_build-append port:py27-sphinx
+variant python37 conflicts python34 python35 python36 requires docs \
+    description {Build documentation using Sphinx from Python 3.7} {
+    depends_build-append port:py37-sphinx
     configure.args-append \
         --sphinx-build=${prefix}/bin/sphinx-build-2.7
 }
 
-variant python34 conflicts python27 python35 python36 python37 requires docs \
+variant python34 conflicts python37 python35 python36 python37 requires docs \
     description {Build documentation using Sphinx from Python 3.4} {
     depends_build-append port:py34-sphinx
     configure.args-append \
         --sphinx-build=${prefix}/bin/sphinx-build-3.4
 }
 
-variant python35 conflicts python27 python34 python36 python37 requires docs \
+variant python35 conflicts python37 python34 python36 python37 requires docs \
     description {Build documentation using Sphinx from Python 3.5} {
     depends_build-append port:py35-sphinx
     configure.args-append \
         --sphinx-build=${prefix}/bin/sphinx-build-3.5
 }
 
-variant python36 conflicts python27 python34 python35 python37 requires docs \
+variant python36 conflicts python37 python34 python35 python37 requires docs \
     description {Build documentation using Sphinx from Python 3.6} {
     depends_build-append port:py36-sphinx
     configure.args-append \
         --sphinx-build=${prefix}/bin/sphinx-build-3.6
 }
 
-variant python37 conflicts python27 python34 python35 python36 requires docs \
+variant python37 conflicts python37 python34 python35 python36 requires docs \
     description {Build documentation using Sphinx from Python 3.7} {
     depends_build-append port:py37-sphinx
     configure.args-append \
@@ -316,20 +316,20 @@ variant python37 conflicts python27 python34 python35 python36 requires docs \
 }
 
 if {[variant_isset docs]} {
-    if {![variant_isset python27] &&
+    if {![variant_isset python37] &&
         ![variant_isset python34] &&
         ![variant_isset python35] &&
         ![variant_isset python36] &&
         ![variant_isset python37]} {
-        default_variants +python27
+        default_variants +python37
     }
 
-    if {![variant_isset python27] &&
+    if {![variant_isset python37] &&
         ![variant_isset python34] &&
         ![variant_isset python35] &&
         ![variant_isset python36] &&
         ![variant_isset python37]} {
-        ui_error "\n\nYou must select either the +python27, +python34, +python35, +python36, or +python37 variant when using variant +docs.\n"
+        ui_error "\n\nYou must select either the +python37, +python34, +python35, +python36, or +python37 variant when using variant +docs.\n"
         return -code error "Invalid variant selection"
     }
 }
