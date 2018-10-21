@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {${subport} eq "volk-gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -45,8 +45,8 @@ subport volk-gnss-sdr-devel {
     github.setup        gnss-sdr gnss-sdr c224817e9ce2bbac8f81a48168757d316cfd1694
     version             20180828
     checksums           rmd160 6dd660cfeace4f70ecf9c08995d8469bd7c1b77d \
-sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
-size   3311359
+                        sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
+                        size   3311359
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-next
 
@@ -57,11 +57,11 @@ subport volk-gnss-sdr-next {
         This port is kept up with the VOLK-GNSS-SDR GIT next branch, which is typically updated daily to weekly.  This version of VOLK-GNSS-SDR generally contains fixes and new features that will be incorporated in an upcoming release, and compiles against the gnss-sdr-next and gnuradio-next ports.  This port may or not compile or function correctly, as it represents a work in progress.  If it does not work, check back in a few days.  Or try deactivating the currently active gnss-sdr and gnuradio ports, cleaning any current builds, and trying again.
 
     name                volk-gnss-sdr-next
-    github.setup        gnss-sdr gnss-sdr f0d43999bbc5ff5029668884c22a650e15b16e6b
-    version             20181009
-    checksums           rmd160 25bd67e47a5c8dd5e2f9dea277a34576494adf99 \
-sha256 ea1ada07007acc94f0a9c566778ee18d945b0d8576d879822a936400dcf33934 \
-size   3533993
+    github.setup        gnss-sdr gnss-sdr 28d669e5b946c45d0e282a68181a1121340cceba
+    version             20181018
+    checksums           rmd160 28b0a99a3bf211ccabeb5585d1fa9c1eb6224d1d \
+                        sha256 999d8bc8fc04f4d0a7a19a22cbcb67a7e0047dac6f90a72223903018c66361aa \
+                        size   3545479
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-devel
 
@@ -88,9 +88,9 @@ depends_build-append port:pkgconfig
 depends_lib-append \
     path:lib/libvolk.dylib:volk \
     port:orc \
-    port:python37 \
-    port:py37-mako \
-    port:py37-six \
+    port:python27 \
+    port:py27-mako \
+    port:py27-six \
     port:boost
 
 # do VPATH (out of source tree) build
@@ -109,7 +109,7 @@ configure.ldflags-delete -L${prefix}/lib
 # specify the Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python2.7
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
 
 # specify where to install cmake files
 

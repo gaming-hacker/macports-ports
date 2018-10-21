@@ -43,7 +43,7 @@ sha256  5d2a7d83c32f4201ee0d17445a36baccaebc0bc7facd009fc8dd86ee537c5a36
 depends_build-append \
                     port:bison \
                     port:flex \
-                    port:eigen3
+                    path:include/eigen3/Eigen/Eigen:eigen3
 
 depends_lib-append  port:boost \
                     port:cgal \

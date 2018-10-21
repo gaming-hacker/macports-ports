@@ -1,12 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
-PortSystem          1.0
-PortGroup           python 1.0
-PortGroup           cxx11  1.0
-PortGroup           github 1.0
+PortSystem                    1.0
+PortGroup           python    1.0
+PortGroup           cxx11     1.1
+PortGroup           github    1.0
+PortGroup           compilers 1.0
 
 name                py-tensorflow
 version             1.11.0
+revision            1
 github.setup        tensorflow tensorflow ${version} v
 platforms           darwin
 supported_archs     x86_64
@@ -19,13 +21,13 @@ long_description    ${description}
 homepage            https://www.tensorflow.org/
 
 checksums           rmd160  2d04a8f1c0b0796d4a817f82f5743929bc9a6fb9 \
-sha256  55833b40782b636994ef85a875306fc5a4301335342af58eaeb6c37971c68f26 \
-size    25030426
+                    sha256  55833b40782b636994ef85a875306fc5a4301335342af58eaeb6c37971c68f26 \
+                    size    25030426
 
 variant native description {Build from source for best native platform support} { }
 
 # tensorflow does not yet support python 3.7 or newer..
-python.version 37
+python.versions     27 35 36
 
 if {${name} ne ${subport}} {
 
@@ -40,6 +42,9 @@ if {${name} ne ${subport}} {
         port:py${python.version}-protobuf3 \
         port:py${python.version}-numpy \
         port:py${python.version}-mock \
+        port:py${python.version}-gast \
+        port:py${python.version}-astor \
+        port:py${python.version}-termcolor \
         port:py${python.version}-keras
     if {${python.version} < 34} {
         depends_lib-append \
@@ -76,11 +81,18 @@ if {${name} ne ${subport}} {
     set macos_minor_v [expr [lindex [split ${os.version} "."] 0] - 4]
     set install_whlfile ${workpath}/tensorflow-${version}-cp${python.version}-cp${python.version}m-macosx_10_${macos_minor_v}_x86_64.whl
 
-    destroot.cmd        pip-${python.branch}
-    destroot.args       \
-        --no-cache-dir \
-        --no-dependencies \
-        --root ${destroot} \
+    #pre-destroot {
+    #    # Need to deactivate first
+    #    if {![catch {set installed [lindex [registry_active ${subport}] 0]}]} {
+    #        registry_deactivate_composite ${subport} "" [list ports_nodepcheck 1]
+    #    }
+    #}
+
+    destroot.cmd  pip-${python.branch}
+    destroot.args           \
+        --no-cache-dir      \
+        --no-dependencies   \
+        --root ${destroot}  \
         ${install_whlfile}
     destroot.post_args
 

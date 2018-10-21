@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           select 1.0
 
 name                python2_select
 version             0.0
-revision            2
+revision            3
 categories          sysutils
 platforms           darwin
 supported_archs     noarch
 license             BSD
-maintainers         nomaintainer
+maintainers         {yan12125 @yan12125} openmaintainer
 
 description         Common files for selecting default Python 2 version
 long_description    This port installs files that allow 'port select' \
@@ -44,14 +44,16 @@ platform darwin {
         } elseif {${os.major} == 11} {
             list python25-apple \
                  python26-apple \
-                 python37-apple
+                 python27-apple
         } elseif {${os.major} == 12 || ${os.major} == 13} {
             list {python25-apple.mtln python25-apple} \
                  {python26-apple.mtln python26-apple} \
-                 {python37-apple.mtln python37-apple}
-        } elseif {${os.major} >= 14} {
+                 {python27-apple.mtln python27-apple}
+        } elseif {${os.major} == 14 || ${os.major} == 15 || ${os.major} == 16} {
             list {python26-apple.mtln python26-apple} \
-                 {python37-apple.mtln python37-apple}
+                 {python27-apple.mtln python27-apple}
+        } elseif {${os.major} >= 17} {
+            list {python27-apple.mtln python27-apple}
         }
     ]
     foreach python $apple_pythons {
