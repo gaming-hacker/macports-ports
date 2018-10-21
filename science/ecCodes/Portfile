@@ -27,7 +27,7 @@ long_description \
 if [fortran_variant_isset] {
     compilers.choose    cc fc f77 f90
 }
-compilers.setup     -clang33 -clang34
+compilers.setup
 
 depends_build-append \
                     bin:bison:bison \

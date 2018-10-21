@@ -25,7 +25,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    cxx fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 compilers.enforce_fortran \
                     port:ecCodes
 

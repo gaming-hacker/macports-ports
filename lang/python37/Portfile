@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
-PortGroup select 1.0
+# PortGroup select 1.0
 
 name                python37
 
@@ -46,8 +46,8 @@ depends_lib         port:bzip2 \
                     port:sqlite3 \
                     port:xz \
                     port:zlib
-depends_run         port:python_select \
-                    port:python3_select
+# depends_run         port:python_select \
+#                     port:python3_select
 
 # blacklist llvm-gcc-4.2 compiler known to produce bad code
 compiler.blacklist  *llvm-gcc-4.2
@@ -84,8 +84,8 @@ test.target         test
 destroot.target     frameworkinstall maninstall
 
 set pythonNoDot python[string map {. {}} $branch]
-select.entries      [list python python-$pythonNoDot $pythonNoDot] \
-                    [list python3 python3-$pythonNoDot $pythonNoDot]
+# select.entries      [list python python-$pythonNoDot $pythonNoDot] \
+#                     [list python3 python3-$pythonNoDot $pythonNoDot]
 
 platform darwin {
     set framewpath  ${frameworks_dir}/Python.framework

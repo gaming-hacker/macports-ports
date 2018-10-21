@@ -36,7 +36,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    cxx fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 
 depends_build-append \
                     port:flex \
@@ -107,7 +107,7 @@ post-configure {
 cmake.out_of_source     yes
 
 post-destroot {
-    if {[variant_isset python37] || [variant_isset python36]} {
+    if {[variant_isset python37]} {
         file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/${pyver}/lib/python${pyver}/site-packages
         file rename ${destroot}${prefix}/lib/python${pyver}/site-packages/Magics ${destroot}${frameworks_dir}/Python.framework/Versions/${pyver}/lib/python${pyver}/site-packages
     }
@@ -117,25 +117,17 @@ if {[fortran_variant_isset]} {
     configure.args-delete   -DENABLE_FORTRAN=OFF
 }
 
+set pyver 3.7
+
 if {[variant_isset python37]} {
-    set pyver 2.7
-} elseif {[variant_isset python36]} {
-    set pyver 3.6
-}
-if {[variant_isset python37] || [variant_isset python36]} {
     configure.args-delete   -DENABLE_PYTHON=OFF
     configure.args-append   -DENABLE_PYTHON=ON
     configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python${pyver}
 }
 
-variant python37 conflicts python36 description {Add support for python37} {
+variant python36 description {Add support for python37} {
     depends_build-append    port:swig-python
     depends_lib-append      port:py37-numpy port:py37-jinja2
-}
-
-variant python36 conflicts python37 description {Add support for python36} {
-    depends_build-append    port:swig-python
-    depends_lib-append      port:py36-numpy port:py36-jinja2
 }
 
 variant metview description {Add support for MetView} {

@@ -68,16 +68,16 @@ if {${subport} eq ${name}} {
     livecheck.type  none
 }
 
-subport libbson {
-    homepage        http://mongoc.org/${subport}/${version}/
-
-    description     library for using BSON documents
-
-    long_description \
-                    ${subport} is a library providing useful routines related \
-                    to building, parsing, and iterating BSON documents.
-
-    configure.args-append \
-                    -DENABLE_BSON=ON \
-                    -DENABLE_MONGOC=OFF
-}
+# subport libbson {
+#     homepage        http://mongoc.org/${subport}/${version}/
+#
+#     description     library for using BSON documents
+#
+#     long_description \
+#                     ${subport} is a library providing useful routines related \
+#                     to building, parsing, and iterating BSON documents.
+#
+#     configure.args-append \
+#                     -DENABLE_BSON=ON \
+#                     -DENABLE_MONGOC=OFF
+# }

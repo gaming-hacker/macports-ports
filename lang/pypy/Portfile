@@ -48,7 +48,7 @@ array set module_scripts {
 }
 
 subport pypy3 {
-    set python.branch 3.5
+    set python.branch 3.7
     set pypy_c_name pypy3-c
 
     set module_scripts(venv) venv

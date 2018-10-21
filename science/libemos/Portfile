@@ -23,7 +23,7 @@ long_description \
     and BUFR & CREX encoding/decoding routines.
 
 compilers.choose    cc fc f77 f90
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran
 cmake.out_of_source yes
 
 patchfiles          patch-libemos-dp-CMakeLists.txt.diff \

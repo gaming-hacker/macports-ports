@@ -12,7 +12,7 @@ categories          science
 description         The netCDF Operators
 
 compilers.choose    cc cxx
-compilers.setup     -clang33 -clang34
+compilers.setup
 
 checksums           rmd160  5f9a327b430c2ac945ecf5b3e47061f157d50837 \
 sha256  ae6cc2363b947bdcd9c06379f1b0cf029a1f97f58a9450d0f68b09b07d5eff90 \
