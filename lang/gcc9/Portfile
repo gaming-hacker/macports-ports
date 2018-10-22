@@ -49,12 +49,12 @@ set major           [lindex [split ${version} .-] 0]
 
 platform darwin {
     configure.pre_args-append --build=${build_arch}-apple-darwin${os.major}
+#     patchfiles-append         patch-float128.diff
 }
 
 configure.dir       ${workpath}/build
 configure.cmd       ${worksrcpath}/configure
-configure.args      --enable-languages=c,c++,lto,fortran \
-                    --enable-checking=release \
+configure.args      --enable-languages=c,c++,objc,obj-c++,lto,fortran \
                     --libdir=${prefix}/lib/${name} \
                     --includedir=${prefix}/include/${name} \
                     --infodir=${prefix}/share/info \
@@ -199,6 +199,15 @@ if {${subport} eq "libgcc-devel"} {
 
     post-destroot {
         file mkdir ${destroot}${prefix}/lib/libgcc.merged
+
+        file delete ${destroot}${prefix}/share/info/dir
+
+        foreach file [glob ${destroot}${prefix}/share/{info,man/man7}/*] {
+            set extension [file extension ${file}]
+            set newfile [regsub "${extension}$" ${file} "-mp-${major}${extension}"]
+
+            file rename ${file} ${newfile}
+        }
 
         # Note that we really don't want to include libgcc_ext.10.[45].dylib here, but install_name_tool
         # doesn't know how to change the id of stubs, and it's easier than recreating them for each
