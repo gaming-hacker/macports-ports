@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,9 +15,9 @@ description         A cat(1) clone with syntax highlighting and Git integration.
 long_description    ${description}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  70e096e07602ccf97c72dab98b4945152acb8a74 \
-                    sha256  f73feab56722ac97fb0adcfcad10147317bf57424e5060b0c8a6df33c4184bf1 \
-                    size    754203
+rmd160  70e096e07602ccf97c72dab98b4945152acb8a74 \
+sha256  f73feab56722ac97fb0adcfcad10147317bf57424e5060b0c8a6df33c4184bf1 \
+size    754203
 
 # For crate:onig_sys
 depends_build       path:bin/cmake:cmake

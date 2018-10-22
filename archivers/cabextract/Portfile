@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                cabextract
 version             1.8
 checksums           rmd160  7a6f9eb0f65941230aaf0ad0beb5ad9b44a894bd \
-                    sha256  082b8ec149babc9ae10b5d6568eb764c67e75c3cfc379b1211b88b980febebd7 \
-                    size    289256
+sha256  082b8ec149babc9ae10b5d6568eb764c67e75c3cfc379b1211b88b980febebd7 \
+size    289256
 
 categories          archivers compression sysutils
 platforms           darwin
