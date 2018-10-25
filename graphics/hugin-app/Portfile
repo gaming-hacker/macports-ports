@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -33,8 +33,8 @@ perl5.branches          5.26
 wxWidgets.use           wxWidgets-3.0-cxx11
 
 checksums               rmd160  0302957e8ed250c277f9b78d9604609c9919e8b9 \
-                        sha256  d3af0d066ac50e3bb243a175a64ecda136d87178419457e8822e11bcf0e565cb \
-                        size    9838518
+sha256  d3af0d066ac50e3bb243a175a64ecda136d87178419457e8822e11bcf0e565cb \
+size    9838518
 
 linalg.setup            noveclibfort
 
@@ -145,7 +145,7 @@ foreach s ${pythons_suffixes} {
     }
 }
 if {!${any_python}} {
-    default_variants +python27
+    default_variants +python37
 }
 
 pre-fetch {

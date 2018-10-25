@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -9,7 +9,7 @@ platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             PHP-3.01
 
-php.branches        5.3 5.4 5.5 5.6 7.0 7.1 7.2
+php.branches 7.3
 php.pecl            yes
 
 description         A PECL Timezone Database.
@@ -21,8 +21,8 @@ if {[vercmp ${php.branch} 5.2] >= 0} {
     version         2018.6
     revision        0
     checksums       rmd160  bd9fda2e506b936e6ac4bbfb0d43a32debb77a50 \
-                    sha256  c0def0fa908d7fdc846072343944c72dbeafe227f29bb26650bfb91fa24a0820 \
-                    size    417826
+sha256  c0def0fa908d7fdc846072343944c72dbeafe227f29bb26650bfb91fa24a0820 \
+size    417826
 }
 
 configure.args-append --enable-timezonedb

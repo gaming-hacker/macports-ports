@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -20,8 +20,8 @@ long_description        ${name} is a high-performance 3D graphics toolkit useful
 homepage                http://www.openscenegraph.org/
 
 checksums               rmd160  3382878e705826a44257b72463576ec67a6f23eb \
-                        sha256  16748a4610cc5756e3091aaee1774b7a6fcf39e93e06ce041ce60f0a1b00fa50 \
-                        size    5784932
+sha256  16748a4610cc5756e3091aaee1774b7a6fcf39e93e06ce041ce60f0a1b00fa50 \
+size    5784932
 
 # respect MacPors compiler flags
 # see https://trac.macports.org/ticket/45287

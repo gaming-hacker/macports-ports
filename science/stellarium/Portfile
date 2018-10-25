@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,8 +26,8 @@ if {${name} eq ${subport}} {
     conflicts       stellarium-devel stellarium-qt4
     github.setup    Stellarium stellarium 0.18.2 v
     checksums       rmd160  7eb375e9c1cfa57e81bf35ce40c36fe3a81f95b5 \
-                    sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
-                    size    265610764
+sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
+size    265610764
 
 } else {
 
@@ -40,8 +40,8 @@ if {${name} eq ${subport}} {
     github.setup    Stellarium stellarium 07fa5c0000b18c31d0f3e501fb26ef1e5f0b7fd1
     version         20181025
     checksums       rmd160 4595bc98c0e0802886ac33f05c18a7104e5fe1c4 \
-                    sha256 85bcffbf2cd17253698e1dfff2510777c66918a27129ecdb0480313ca1a8763e \
-                    size   294549481
+sha256 85bcffbf2cd17253698e1dfff2510777c66918a27129ecdb0480313ca1a8763e \
+size   294549481
 
 }
 
@@ -57,7 +57,7 @@ depends_lib-append \
     path:lib/libgps.dylib:gpsd \
     port:gettext \
     port:doxygen \
-    port:python27
+    port:python37
 
 # for libqcocoa.dylib (if not above)
 

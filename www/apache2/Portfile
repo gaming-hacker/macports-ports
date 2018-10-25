@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           apache2 1.0
@@ -6,8 +6,8 @@ PortGroup           apache2 1.0
 name                apache2
 version             2.4.37
 checksums           rmd160  2f81b55c14f3bc3b2e46a9b841c798071983deb5 \
-                    sha256  3498dc5c6772fac2eb7307dc7963122ffe243b5e806e0be4fb51974ff759d726 \
-                    size    7031632
+sha256  3498dc5c6772fac2eb7307dc7963122ffe243b5e806e0be4fb51974ff759d726 \
+size    7031632
 
 categories          www
 maintainers         {ryandesign @ryandesign} {mps @Schamschula} {pixilla @pixilla} openmaintainer

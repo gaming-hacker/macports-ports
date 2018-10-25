@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ use_zip             yes
 distname            zopfli-${version}
 
 checksums           rmd160  63545b71612e385da2cb018e81b281d89e129c10 \
-                    sha256  95cdbadb8732ef0881aa310079e324c22a800d59ddd44456a1cddb1d42744b62 \
-                    size    75793
+sha256  95cdbadb8732ef0881aa310079e324c22a800d59ddd44456a1cddb1d42744b62 \
+size    75793
 
-python.versions     27 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
