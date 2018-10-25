@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,9 +25,9 @@ if {${subport} eq ${name}} {
     github.setup    csete gqrx 2.11.5 v
     revision        1
     checksums       \
-rmd160 b22320ee122d428ff7accc3053796d8ff303ae63 \
-sha256 e3e98ac8d0cccdb26122a0b8030e40bae99fe76ab188918bbcc9e2cc5639ea37 \
-size   1329109
+        rmd160 b22320ee122d428ff7accc3053796d8ff303ae63 \
+        sha256 e3e98ac8d0cccdb26122a0b8030e40bae99fe76ab188918bbcc9e2cc5639ea37 \
+        size   1329109
 
     patchfiles-append   patch-gqrx.pro.release.diff
 
@@ -42,11 +42,11 @@ provides the release version, which is typically updated every month or so.
 
 subport gqrx-devel {
 
-    github.setup        csete gqrx a8e98683aa05c5e554eb689994f87879a7abcfe3
-    version             20180605
-    checksums           rmd160 c9b7289435de3f8195043c7ec0261400d86642d2 \
-sha256 6f6cbe6ab75ed3da3ac6f1a7e70b44a06d40a06d2ce4696ada345b6984442967 \
-size   1329080
+    github.setup        csete gqrx 94aeaf7f899c43ab6519e5dea9c6bec847cfc334
+    version             20181020
+    checksums           rmd160 85f0fc510d250bfd5e939d2abdffbfc25a545c0f \
+                        sha256 aa5d7b285cb1e18cc38d3eb2a8cfb81fa21f47922ad94385224efb45db7dd446 \
+                        size   1329118
 
     patchfiles-append   patch-gqrx.pro.devel.diff
 
