@@ -9,8 +9,7 @@ PortGroup user 1.0
 # PHP Warning:  Version warning: Imagick was compiled against Image Magick version XXXX but version YYYY is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
 
 name                        ImageMagick
-# version                     7.0.7-32
-version                     7.0.8-12
+version                     7.0.8-14
 revision 0
 set reasonable_version      [lindex [split ${version} -] 0]
 homepage                    http://www.imagemagick.org/
@@ -23,34 +22,19 @@ use_parallel_build          yes
 
 description                 Tools and libraries to manipulate images in many formats
 
-long_description            ImageMagick is a robust collection of tools and \
-                            libraries to create, edit and compose bitmap images \
-                            in a wide variety of formats. You can crop, resize, \
-                            rotate, sharpen, color reduce or add effects or text \
-                            or straight or curved lines to an image or image \
-                            sequence and save your completed work in the same or \
-                            differing image format. You can even create images \
-                            from scratch. Image processing operations are \
-                            available from the command line as well as through \
-                            C, Ch, C++, Java, Perl, PHP, Python, Ruby and Tcl/Tk \
-                            programming interfaces. Over 90 image formats are \
-                            supported, including GIF, JPEG, JPEG 2000, PNG, PDF, \
-                            PhotoCD and TIFF.
+long_description            ImageMagick is a robust collection of tools
 
 master_sites  http://www.imagemagick.org/download/ \
               http://mirror.checkdomain.de/imagemagick/ \                      ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/imagemagick.org/ \
 ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
 ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
-checksums  rmd160  2b6aef8dc171b90242b58fee7a7d9d1084b809b5 \
-sha256  48df5877fe85603940310fe5c811a89af416882b60379918a95dcd4de6582b55 \
-size    8630340
-# checksums rmd160  2cd547ab2c5d0ad45aca6d77ff652d1c3336f005 \
-# sha256  6267b33cfba2caae0e72e91548f2e0a3030861acb337d39e5344a0d8dd991152 \
-# size    8609452
-# checksums  rmd160  9e5339d7e4f2dbc42090cd8394bca5b97dc485ba \
-# sha256  d5309031d59130befa283266011efaab15b1e113f1a218a4ba24c821cd906472 \
-# size    8635496
+checksums           rmd160  69499a7773a2cf1a5c0a9cf623bd17fcc6c138d8 \
+sha256  70c3d8c800cfd0282c0e0d9930b83f472f9593a882adc77532aa82c0d7ca0bb1 \
+size    8634400
+# checksums  rmd160  2b6aef8dc171b90242b58fee7a7d9d1084b809b5 \
+# sha256  48df5877fe85603940310fe5c811a89af416882b60379918a95dcd4de6582b55 \
+# size    8630340
 
 depends_lib   port:bzip2 \
               port:djvulibre \
@@ -170,7 +154,7 @@ variant x11 {
 }
 
 # default_variants            +x11 +lqr +wmf +rsvg
-default_variants            -x11
+# default_variants            -x11
 
 livecheck.version           ${reasonable_version}
 livecheck.type              regex
