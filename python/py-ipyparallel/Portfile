@@ -25,8 +25,8 @@ distname            ${python.rootname}-${version}
 
 
 checksums           rmd160  0da450bb765556c5d4bbf514f8c526f3d7aed54d \
-                    sha256  1e3bd58434c5d31f852ffd1af907a6485b5857966c770eac02fb0111720027cd \
-                    size    2371030
+sha256  1e3bd58434c5d31f852ffd1af907a6485b5857966c770eac02fb0111720027cd \
+size    2371030
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

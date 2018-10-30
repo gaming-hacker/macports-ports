@@ -75,16 +75,9 @@ if {$subport ne $name} {
 }
 
 subport mod_python37 {
-    conflicts       mod_python26
+    conflicts       mod_python37
     revision        0
     depends_lib-append  port:python37
     configure.args-append   --with-python=${prefix}/bin/python3.7
-}
-
-subport mod_python26 {
-    conflicts       mod_python37
-    revision        0
-    depends_lib-append  port:python26
-    configure.args-append   --with-python=${prefix}/bin/python2.6
 }
 

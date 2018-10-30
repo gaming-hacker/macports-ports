@@ -31,11 +31,6 @@ subport py37-libdnet {
     set python.prefix  ${frameworks_dir}/Python.framework/Versions/3.7
     depends_lib-append  port:python37
 }
-subport py26-libdnet {
-    set python.bin	${prefix}/bin/python2.6
-    set python.prefix  ${frameworks_dir}/Python.framework/Versions/2.6
-    depends_lib-append  port:python26
-}
 
 if {$subport ne $name} {
     depends_lib-append		port:libdnet

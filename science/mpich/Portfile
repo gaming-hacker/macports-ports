@@ -79,19 +79,8 @@ size    22784014
 # Subport names and corresponding configure.compiler value
 array set clist {
     clang   {clang}
-    clang37 {macports-clang-3.7}
-    clang39 {macports-clang-3.9}
-    clang40 {macports-clang-4.0}
-    clang50 {macports-clang-5.0}
-    clang60 {macports-clang-6.0}
     clang70 {macports-clang-7.0}
-    gcc44   {macports-gcc-4.4}
-    gcc48   {macports-gcc-4.8}
-    gcc49   {macports-gcc-4.9}
-    gcc5    {macports-gcc-5}
-    gcc6    {macports-gcc-6}
-    gcc7    {macports-gcc-7}
-    gcc8    {macports-gcc-8}
+    gcc9    {macports-gcc-9}
 }
 
 foreach key [array name clist] {

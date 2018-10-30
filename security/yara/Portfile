@@ -55,7 +55,7 @@ if {${subport} eq ${name}} {
     test.target         check
 }
 
-set python.versions {27 34 35}
+set python.versions {37}
 
 foreach v ${python.versions} {
     set python.version         ${v}

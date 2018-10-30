@@ -70,15 +70,15 @@ default compilers.clear_archflags no
 # also set a default gcc version
 if {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
     # see https://trac.macports.org/ticket/54215#comment:36
-    set compilers.gcc_default gcc8
+    set compilers.gcc_default gcc9
 } else {
-    set compilers.gcc_default gcc8
+    set compilers.gcc_default gcc9
 }
 
 set compilers.list {cc cxx cpp objc fc f77 f90}
 
 # build database of gcc compiler attributes
-set gcc_versions {8}
+set gcc_versions {9}
 foreach v ${gcc_versions} {
     # if the string is more than one character insert a '.' into it: e.g 49 -> 4.9
     set version $v

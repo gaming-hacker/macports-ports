@@ -52,7 +52,7 @@ build.args-append   Y_CFLAGS="${configure.cxxflags}" Y_CPPFLAGS="${configure.cpp
 test.target         check check-lorene
 test.run            yes
 
-compilers.setup     -gcc 
+compilers.setup     -gcc
 compilers.enforce_c lorene
 
 if {![catch {set result [active_variants boost openmpi {}]}]} {
@@ -65,13 +65,7 @@ if {![catch {set result [active_variants boost openmpi {}]}]} {
   }
 }
 
-subport py33-gyoto {
-    PortGroup    obsolete 1.0
-    revision     3
-    replaced_by  py34-gyoto
-}
-
-foreach nodot [list 27 34 35 36] wdot [list 2.7 3.4 3.5 3.6] {
+foreach nodot [list 37] wdot [list 3.7] {
     subport py${nodot}-gyoto {
         depends_build-append port:doxygen port:swig-python
         depends_lib-append   port:python${nodot} port:py${nodot}-numpy \
@@ -142,7 +136,7 @@ if {[string match libc++ ${configure.cxx_stdlib}]} {
         notes "
 For multi-processing, wrap gyoto in mpirun-openmpi-${mpi_suffix}, e.g.:
   $ mpirun-openmpi-${mpi_suffix} gyoto -P4 in.xml out.fits
-"    
+"
     }
 
     variant mpich conflicts openmpi \
@@ -170,7 +164,7 @@ For multi-processing, wrap gyoto in mpirun-openmpi-${mpi_suffix}, e.g.:
 | For multi-processing, wrap gyoto in mpirun-mpich-${mpi_suffix}, e.g.:
 |   $ mpirun-mpich-${mpi_suffix} gyoto -P4 in.xml out.fits
 +--------------------------------------------------------------------------
-"    
+"
     }
 
 } else {
