@@ -3,9 +3,10 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           python 1.0
+PortGroup user 1.0
+python.version ${user.py.nodot}
 
 github.setup        noamraph dreampie 1.2.1
-python.default_version 37
 
 maintainers         g5pw openmaintainer
 

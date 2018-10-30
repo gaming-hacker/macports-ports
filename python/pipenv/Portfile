@@ -2,6 +2,8 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
+PortGroup user 1.0
+python.version ${user.py.nodot}
 
 name                pipenv
 version             2018.10.13
@@ -21,13 +23,6 @@ long_description    ${description} \
                     all packaging worlds (bundler, composer, npm, \
                     cargo, yarn, etc.) to the Python world. Windows is \
                     a first-class citizen, in our world. \
-                    \
-                    \n\nIt automatically creates and manages a virtualenv \
-                    for your projects, as well as adds/removes \
-                    packages from your Pipfile as you \
-                    install/uninstall packages. It also generates the \
-                    ever-important Pipfile.lock, which is used to \
-                    produce deterministic builds.
 
 homepage            http://pipenv.org/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
@@ -37,8 +32,6 @@ distname            ${python.rootname}-${version}
 checksums           rmd160  24df5d001bf64c919af63120a998f1777bbd0fff \
 sha256  a785235bf2ddf65ea8a91531b3372471d9ad86036335dba8bd63f20c00a68e63 \
 size    6524582
-
-python.default_version 37
 
 depends_lib-append \
     port:py${python.version}-pip \
@@ -53,17 +46,6 @@ post-destroot {
     xinstall -m 644 \
         ${destroot}${python.pkgd}/${name}/${name}.1 \
         ${destroot}${prefix}/share/man/man1
-}
-
-if {${python.version} < 34} {
-    depends_lib-append \
-        port:py${python.version}-pathlib
-}
-
-if {${python.version} < 30} {
-    depends_lib-append \
-        port:py${python.version}-requests \
-        port:py${python.version}-ordereddict
 }
 
 test.run            yes

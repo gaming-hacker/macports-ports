@@ -5,6 +5,7 @@ PortGroup                    python 1.0
 PortGroup                    github 1.0
 PortGroup                    active_variants 1.1
 PortGroup                    compiler_blacklist_versions 1.0
+PortGroup user 1.0
 
 name                         py-bob-math
 version                      2.0.3
@@ -31,8 +32,8 @@ long_description             Bob is a signal-processing and machine learning too
 github.setup                 bioidiap bob.math 2.0.3 v
 
 
-python.version 37
-python.default_version 37
+python.version ${user.py.nodot}
+python.default_version ${user.py.nodot}
 
 checksums                    rmd160  52b04f5b4d6c5ce910b898843904dae57eaad049 \
 sha256  0c12b8f574d6e96221e2f1a25981b03cc920eb13c7f122fb8c703700fc50e9cc

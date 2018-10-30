@@ -2,14 +2,14 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
+PortGroup user 1.0
+python.version ${user.py.nodot}
 
 name                py-aiorpcX
 version             0.8.2
 categories-append   devel
 platforms           darwin
 license             MIT
-
-python.version 37
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 

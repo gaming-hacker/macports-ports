@@ -2,6 +2,9 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
+PortGroup           python 1.0
+PortGroup user 1.0
+python.version ${user.py.nodot}
 
 github.setup        kjellmf dot2tex 2.9.0
 categories          graphics print python
@@ -19,9 +22,7 @@ sha256  0ea4813c44d7b24aed1ac0c1fb82a4584bbd1ad8a812cc3a0d820284491eda4e
 
 depends_run         bin:dot:graphviz bin:latex:texlive bin:pdflatex:texlive
 
-PortGroup           python 1.0
 
-python.default_version 37
 depends_lib-append      port:py${python.version}-parsing
 
 post-extract {

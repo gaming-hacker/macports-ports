@@ -5,6 +5,8 @@ PortGroup               python 1.0
 PortGroup               active_variants 1.1
 PortGroup               github 1.0
 PortGroup               compilers 1.0
+PortGroup user 1.0
+python.version ${user.py.nodot}
 
 github.setup            scipy scipy 1.1.0 v
 revision                1
@@ -20,8 +22,6 @@ description             An opensource library of scientific tools for Python
 long_description        ${description}
 
 homepage                https://www.scipy.org/
-
-python.version 37
 
 python.add_archflags    no
 universal_variant       no
