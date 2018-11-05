@@ -245,7 +245,6 @@ subport curl-ca-bundle {
     distfiles-append            ${certdata_distfile}:certdata
 
     checksums-append            ${certdata_distfile} \
-
 rmd160  14db32f6ecd8a8eb3ee22703057426c5d1d14992 \
 sha256  b5b644548d33cb849121818deba39211ba4ac263d7e82e904d8e630806073a6d \
 size    190775

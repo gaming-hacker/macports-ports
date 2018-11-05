@@ -30,7 +30,7 @@ use_configure       no
 compilers.choose    cc cxx
 compilers.setup     -clang
 
-set python.branch	${user.ver.python}
+set python.branch	${user.py.nodot}
 set python.prefix	${frameworks_dir}/Python.framework/Versions/${python.branch}
 set python.bin	${python.prefix}/bin/python${python.branch}
 set python.pkgd	${python.prefix}/lib/python${python.branch}/site-packages
