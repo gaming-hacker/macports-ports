@@ -5,6 +5,7 @@ PortGroup           perl5 1.0
 
 perl5.branches      5.26
 perl5.setup         Tcl 1.27
+revision            1
 
 platforms           darwin
 maintainers         {@mojca mojca} openmaintainer
@@ -23,7 +24,9 @@ if {${perl5.major} != ""} {
     depends_lib-append \
                     port:tcl
     configure.args-append \
-                    --nousestub
+                    --tclsh ${prefix}/bin/tclsh \
+                    --tclconfig ${prefix}/lib/tclConfig.sh \
+                    --nousestubs
 
     livecheck.type  none
 }
