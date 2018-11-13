@@ -21,8 +21,7 @@ sha256  d5346a362b104ccc858c4b79938727d56c4654b103c268e54cf3aa56d0b55b39 \
 size    2841686
 
 # C99 required
-mpi.setup             require_fortran \
-                      -gcc44
+mpi.setup             require_fortran
 
 # most of the patches are from Gentoo
 #    https://gitweb.gentoo.org/repo/gentoo.git/tree/sci-libs/gerris/gerris-20131206-r1.ebuild

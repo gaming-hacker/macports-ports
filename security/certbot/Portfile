@@ -42,20 +42,10 @@ post-patch {
     reinplace "s|/var/lib/|${prefix}/var/db/|" ${worksrcpath}/certbot/constants.py
 }
 
-variant python37 conflicts python36 python37 description {Use Python 3.7} {
-    python.default_version 37
-
-    depends_lib-append  port:py${python.version}-python2-pythondialog
-}
-
-variant python36 conflicts python37 python37 description {Use Python 3.6} {
-    python.default_version 36
-}
-
-variant python37 conflicts python37 python36 description {Use Python 3.7} {
+variant python37 description {Use Python 3.7} {
     python.default_version 37
 }
 
-if {![variant_isset python36] && ![variant_isset python37]} {
+if { ![variant_isset python37]} {
     default_variants +python37
 }

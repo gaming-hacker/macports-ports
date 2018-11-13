@@ -74,33 +74,19 @@ variant petsc description {Use PETSc linear solver} {
     }
 }
 
-variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python37
-    post-patch {
-        reinplace "s|__MACPORTS_PYTHON_VERSION__|2.7|g" ${worksrcpath}/CMakeLists.txt
-    }
-}
-
-variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
-    depends_lib-append port:python36
-    post-patch {
-        reinplace "s|__MACPORTS_PYTHON_VERSION__|3.6|g" ${worksrcpath}/CMakeLists.txt
-    }
-}
-
-variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
+variant python37 description {Build the Python 3.7 bindings} {
     depends_lib-append port:python37
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|3.7|g" ${worksrcpath}/CMakeLists.txt
     }
 }
 
-if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] } {
     configure.args-append \
         -DENABLE_PYTHON=OFF
 }
 
-if {![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37]} {
     default_variants +python37
 }
 

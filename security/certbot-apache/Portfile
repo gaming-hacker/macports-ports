@@ -29,21 +29,12 @@ depends_lib-append  port:certbot \
                     port:py${python.version}-zopeinterface \
                     port:py${python.version}-mock
 
-variant python37 conflicts python36 python37 description {Use Python 3.7} {
-    python.default_version     27
-    require_active_variants    certbot python37
-}
 
-variant python36 conflicts python37 python37 description {Use Python 3.6} {
-    python.default_version     36
-    require_active_variants    certbot python36
-}
-
-variant python37 conflicts python37 python36 description {Use Python 3.7} {
+variant python37 description {Use Python 3.7} {
     python.default_version     37
     require_active_variants    certbot python37
 }
 
-if {![variant_isset python36] && ![variant_isset python37]} {
+if { ![variant_isset python37]} {
     default_variants +python37
 }
