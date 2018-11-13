@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             active_variants 1.1
@@ -18,8 +18,8 @@ master_sites          sourceforge:tkimg/tkimg/[join [lrange [split ${version} .]
 distname              Img-Source-${version}
 
 checksums             rmd160  0a3cb000acb2488b540fe74a0b540e99a1390d92 \
-                      sha256  5e513e0913e1f36f6802abf60cf9b8bfd6810bcc4b5a27c340e53bb4d12ab2ee \
-                      size    7259144
+sha256  5e513e0913e1f36f6802abf60cf9b8bfd6810bcc4b5a27c340e53bb4d12ab2ee \
+size    7259144
 
 # ensure tkimg works when tk is installed +quartz
 patchfiles-append     patch-quartz.diff

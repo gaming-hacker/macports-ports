@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                gphoto2
 version             2.5.20
 checksums           rmd160  d928bfdfeae7a6790f7ed98203cf493fc03ce9b3 \
-                    sha256  a36f03b50a8f040f185cbc757f957f03dc05a9210907199e6919ef3f970248f6 \
-                    size    790065
+sha256  a36f03b50a8f040f185cbc757f957f03dc05a9210907199e6919ef3f970248f6 \
+size    790065
 
 categories          graphics
 platforms           darwin

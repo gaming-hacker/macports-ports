@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    GPXSee is a Qt-based GPS log file viewer and analyzer \
 homepage            https://www.gpxsee.org/
 
 checksums           rmd160  aea3dcc8c8ced4c8939405d0eb3b23caaafb1d28 \
-                    sha256  dfd32c79ef75b57107ce6d9107413e7850fdef4e8f5246a35aeb15ede8437dd3 \
-                    size    3861604
+sha256  dfd32c79ef75b57107ce6d9107413e7850fdef4e8f5246a35aeb15ede8437dd3 \
+size    3861604
 
 patchfiles          patch-src_GUI_app_cpp.diff
 

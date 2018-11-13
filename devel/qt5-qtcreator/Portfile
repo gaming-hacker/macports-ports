@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -21,8 +21,8 @@ distname            qt-creator-opensource-src-${version}
 master_sites        https://download.qt.io/official_releases/qtcreator/[join [lrange [split ${version} .] 0 1] .]/${version}/
 
 checksums           rmd160  b8b5ddf178196e401d4ca7b241310115eaba2059 \
-                    sha256  f749bf54d652b9cd8c11d242c5da2dc3eb758c496fa7312c7810b7fe3f93aae7 \
-                    size    31535544
+sha256  f749bf54d652b9cd8c11d242c5da2dc3eb758c496fa7312c7810b7fe3f93aae7 \
+size    31535544
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} < 12} {
@@ -55,8 +55,8 @@ if { ${subport} eq ${name}  } {
                            port:clang-6.0
     configure.args-append  "LLVM_INSTALL_DIR=${prefix}/libexec/llvm-6.0"
 
-    depends_build-append port:python27
-    set python_framework ${frameworks_dir}/Python.framework/Versions/2.7
+    depends_build-append port:python37
+    set python_framework ${frameworks_dir}/Python.framework/Versions/3.7
     configure.env-append PATH=${python_framework}/bin:$env(PATH)
     build.env-append     PATH=${python_framework}/bin:$env(PATH)
 

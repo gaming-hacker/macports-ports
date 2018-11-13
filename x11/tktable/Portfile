@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        sourceforge
 distname            Tktable${version}
 checksums           rmd160  b326a472584a6965328f3f27dc98f69ddbdd45f9 \
-                    sha256  c335117fa1be45fe4d3032e96fd4b4641fff6a4f8467878608dabed11198a4cb \
-                    size    284135
+sha256  c335117fa1be45fe4d3032e96fd4b4641fff6a4f8467878608dabed11198a4cb \
+size    284135
 
 # ensure correct libraries are found during testing
 # see https://trac.macports.org/ticket/38238

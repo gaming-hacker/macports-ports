@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ long_description    Django is a high-level Python Web framework that \
 
 homepage            http://www.djangoproject.com
 
-python.versions     27 35 36 37
+python.version 37
 supported_archs     noarch
 
 if {${name} ne ${subport}} {
@@ -26,14 +26,14 @@ if {${name} ne ${subport}} {
         github.setup    django django 1.11.16
 
         checksums       rmd160  b6f63b057d8b3a693748be5db7191df1cadbe29f \
-                        sha256  bc2963c402806f23040f1d73cbefe2e038d68f53e52f8be0f6cc1774e7341b4f \
-                        size    7894144
+sha256  bc2963c402806f23040f1d73cbefe2e038d68f53e52f8be0f6cc1774e7341b4f \
+size    7894144
 
         github.livecheck.regex  {(1\..+?)}
     } else {
         checksums       rmd160  3ac8c0219cab687a6564d3dd011cce34eff119b0 \
-                        sha256  3a6ae0dde2fe9c659f11c71270fede9b5d625f85b3c0fb51efb4ff9733787e6a \
-                        size    8654948
+sha256  3a6ae0dde2fe9c659f11c71270fede9b5d625f85b3c0fb51efb4ff9733787e6a \
+size    8654948
 
         livecheck.type  none
     }

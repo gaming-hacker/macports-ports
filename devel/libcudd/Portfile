@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        ftp://vlsi.colorado.edu/pub/
 distname            cudd-${version}
 
 checksums           rmd160  2f7b1dc3118925de268a1f1396ba4e66b65c54e4 \
-                    sha256  4f3bc49b35564af94b17135d8cb8c4063fb049cfaa442f80dc40ba73c6345a85 \
-                    size    1053054
+sha256  4f3bc49b35564af94b17135d8cb8c4063fb049cfaa442f80dc40ba73c6345a85 \
+size    1053054
 
 patchfiles          patch-Makefile.diff \
                     patch-cudd-cudd.h.diff \

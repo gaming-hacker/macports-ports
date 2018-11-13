@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -17,8 +17,8 @@ long_description    The command-line utility dvisvgm is a tool for TeX/LaTeX use
 github.tarball_from releases
 
 checksums           rmd160  bb854e937a58b5016b0dfc8db61ba22abcaa35a2 \
-                    sha256  bda5e875f810be08e4d26add9c4ea191f53aa9ae14cd2c1fa130e0c8922ab0c4 \
-                    size    2911596
+sha256  bda5e875f810be08e4d26add9c4ea191f53aa9ae14cd2c1fa130e0c8922ab0c4 \
+size    2911596
 
 depends_build       port:asciidoc \
                     port:pkgconfig

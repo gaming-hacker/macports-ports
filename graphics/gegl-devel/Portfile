@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -32,12 +32,12 @@ distname            ${git_name}-${git_commit}
 use_bzip2           yes
 
 checksums           rmd160  c59a4e783dbde73acbfc1e900a8874ae8de92868 \
-                    sha256  24b2d92b56197954896d36cfbf4119703d62ce603dfca5138f2884c66da4863a \
-                    size    24091368
+sha256  24b2d92b56197954896d36cfbf4119703d62ce603dfca5138f2884c66da4863a \
+size    24091368
 
 depends_build       port:pkgconfig \
                     port:w3m \
-                    port:python27
+                    port:python37
 
 depends_lib         port:babl-devel \
                     port:gdk-pixbuf2 \

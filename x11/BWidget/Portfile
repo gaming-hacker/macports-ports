@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ master_sites        sourceforge:project/tcllib/${name}/${version}
 distname            ${lcname}-${version}
 
 checksums           rmd160  5299011d18c6e765535e4219a80f10014480f9af \
-                    sha256  2f682da93e07ff8cadd6c0580e7d4de3c8828134eab662dbe3d0e6ffc9443263 \
-                    size    254905
+sha256  2f682da93e07ff8cadd6c0580e7d4de3c8828134eab662dbe3d0e6ffc9443263 \
+size    254905
 
 depends_lib         port:tk
 

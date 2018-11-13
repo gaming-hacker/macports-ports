@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   gis
 platforms           darwin
 license             BSD
 
-python.versions     27 34 35 36 37
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -26,8 +26,8 @@ master_sites        pypi:F/Fiona
 distname            Fiona-${version}
 
 checksums           rmd160  98489729c89d2a97a590ac616edc9353fe114615 \
-                    sha256  20141a9ece06daa7bb4333fba640c2fe39a49f8aca5492d1da8595d41e91844a \
-                    size    1382681
+sha256  20141a9ece06daa7bb4333fba640c2fe39a49f8aca5492d1da8595d41e91844a \
+size    1382681
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   devel sysutils
 platforms           darwin
 license             MIT
 
-python.versions     27 34 35 36 37
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -30,8 +30,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  eff2a72893d108b50f2053b0e12c2e14e684a26e \
-                    sha256  6e265c8f3da00b015d24b842bfeb111f856b13d24f2c57036582568dc650d6c3 \
-                    size    422742
+sha256  6e265c8f3da00b015d24b842bfeb111f856b13d24f2c57036582568dc650d6c3 \
+size    422742
 
 if {${name} ne ${subport}} {
     livecheck.type      none

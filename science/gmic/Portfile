@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -32,8 +32,8 @@ use_parallel_build  no
 distfiles           ${name}_${version}${extract.suffix}
 
 checksums           rmd160  185c8fb68fbfbd7a7eb8fa7473a3f48fe4b790ec \
-                    sha256  446b465d2ff7314add634115f6bffecd136ad96759eb92f76c03f231f44188d6 \
-                    size    3809170
+sha256  446b465d2ff7314add634115f6bffecd136ad96759eb92f76c03f231f44188d6 \
+size    3809170
 
 depends_lib         port:curl \
                     path:lib/libavcodec.dylib:ffmpeg \

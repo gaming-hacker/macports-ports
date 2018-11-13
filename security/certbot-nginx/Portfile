@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -15,11 +15,11 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/certbot-nginx
 master_sites        pypi:c/certbot-nginx
 
-python.versions     27 36 37
+python.version 37
 
 checksums           rmd160  b301697132cf1770c0a1df4cd71db4dad3159849 \
-                    sha256  426fb403b0a7b203629f4e350a862cbc3bc1f69936fdab8ec7eafe0d8a3b5ddb \
-                    size    78413
+sha256  426fb403b0a7b203629f4e350a862cbc3bc1f69936fdab8ec7eafe0d8a3b5ddb \
+size    78413
 
 depends_lib-append  port:certbot \
                     port:py${python.version}-acme \
@@ -29,21 +29,21 @@ depends_lib-append  port:certbot \
                     port:py${python.version}-zopeinterface \
                     port:py${python.version}-mock
 
-variant python27 conflicts python36 python37 description {Use Python 2.7} {
+variant python37 conflicts python36 python37 description {Use Python 3.7} {
     python.default_version     27
-    require_active_variants    certbot python27
+    require_active_variants    certbot python37
 }
 
-variant python36 conflicts python27 python37 description {Use Python 3.6} {
+variant python36 conflicts python37 python37 description {Use Python 3.6} {
     python.default_version     36
     require_active_variants    certbot python36
 }
 
-variant python37 conflicts python27 python36 description {Use Python 3.7} {
+variant python37 conflicts python37 python36 description {Use Python 3.7} {
     python.default_version     37
     require_active_variants    certbot python37
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }

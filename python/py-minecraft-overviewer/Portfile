@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -31,15 +31,15 @@ master_sites-append pypi:P/${libname}:pil
 distfiles-append    ${libfile}:pil
 
 checksums           ${mainfile} \
-                    rmd160  34c15fdf63966ef982cb4114d2e7443bc7f7be64 \
-                    sha256  2ce43b27322fcf9344c053e610dd93576422e3f1c36d5845e8281161ddd7cd7e \
-                    size    2951400 \
+rmd160  34c15fdf63966ef982cb4114d2e7443bc7f7be64 \
+sha256  2ce43b27322fcf9344c053e610dd93576422e3f1c36d5845e8281161ddd7cd7e \
+size    2951400 \
                     ${libfile} \
-                    rmd160  5442d263857277761830878b8aa109038a23f2b2 \
-                    sha256  2ea3517cd5779843de8a759c2349a3cd8d3893e03ab47053b66d5ec6f8bc4f93 \
-                    size    15553718
+rmd160  5442d263857277761830878b8aa109038a23f2b2 \
+sha256  2ea3517cd5779843de8a759c2349a3cd8d3893e03ab47053b66d5ec6f8bc4f93 \
+size    15553718
 
-python.versions     27
+python.version 37
 
 if {${name} ne ${subport}} {
     build.env-append \

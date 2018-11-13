@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    OpenImageIO is a library for reading and writing images, and
 platforms           darwin
 
 checksums           rmd160  6c166776639c1f41eab2c67c933130b100fda811 \
-                    sha256  a67bb2800805bce10c055bc3f5ed32ce31498381fc1cf8e42e24d4193f3f935f \
-                    size    27821011
+sha256  a67bb2800805bce10c055bc3f5ed32ce31498381fc1cf8e42e24d4193f3f935f \
+size    27821011
 
 github.master_sites ${github.homepage}/archive
 distname            Release-${version}
@@ -52,16 +52,16 @@ depends_lib-append \
 #    -DUSE_QT=OFF
 qt5.depends_component qtbase
 
-variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python27
+variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
+    depends_lib-append port:python37
     configure.args-append \
         -DPYTHON_VERSION=2.7 \
         -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
-        -DPYTHON_SITE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
-    require_active_variants boost python27
+        -DPYTHON_SITE_DIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7
+    require_active_variants boost python37
 }
 
-variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 {
+variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
     depends_lib-append port:python36
     configure.args-append \
         -DPYTHON_VERSION=3.6 \
@@ -70,7 +70,7 @@ variant python36 description {Build the Python 3.6 bindings} conflicts python27 
     require_active_variants boost python36
 }
 
-variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 {
+variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
     depends_lib-append port:python37
     configure.args-append \
         -DPYTHON_VERSION=3.7 \
@@ -79,13 +79,13 @@ variant python37 description {Build the Python 3.7 bindings} conflicts python27 
     require_active_variants boost python37
 }
 
-if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append \
         -DUSE_PYTHON=OFF
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }
 
 #configure.args-append \

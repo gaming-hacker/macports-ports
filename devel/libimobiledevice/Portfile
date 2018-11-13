@@ -52,8 +52,8 @@ subport libimobiledevice-devel {
     revision        0
 
     checksums       rmd160  8ea7c0da17f775b35d1356763533d57e4e82ef64 \
-                    sha256  3b2e20a5689032a44dde60ac05a7d9e50ecff69b5a79414ad540bb9aa8436105 \
-                    size    236074
+sha256  3b2e20a5689032a44dde60ac05a7d9e50ecff69b5a79414ad540bb9aa8436105 \
+size    236074
 
     depends_lib-delete port:libusbmuxd
     depends_lib-append port:libusbmuxd-devel

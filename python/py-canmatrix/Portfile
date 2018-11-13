@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,11 +18,11 @@ long_description    Canmatrix implements a "Python Can Matrix Object" which desc
                     Canmatrix also includes two Tools (canconvert and cancompare) for converting and comparing \
                     CAN databases.
 
-python.versions     27 36 37
+python.version 37
 
 checksums           rmd160  a73bf7be09a7ede94e4301b868e56d79b7b98650 \
-                    sha256  086303b0ef4d3da4eeb86b61813f60b902254945ea4a44cf833b10c0ab7cfafe \
-                    size    832836
+sha256  086303b0ef4d3da4eeb86b61813f60b902254945ea4a44cf833b10c0ab7cfafe \
+size    832836
 
 if {${name} ne ${subport}} {
 

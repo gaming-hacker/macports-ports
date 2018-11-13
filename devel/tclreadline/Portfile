@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -24,8 +24,8 @@ long_description            The tclreadline package makes the GNU Readline \
 
 
 checksums                   rmd160  7973aa63fa521c8437b43712ce1798c9f66b050b \
-                            sha256  d702e3b8acfebd588b93348e220fc98f4181346c7f9a56ea7aeda334f107bbc5 \
-                            size    153243
+sha256  d702e3b8acfebd588b93348e220fc98f4181346c7f9a56ea7aeda334f107bbc5 \
+size    153243
 
 depends_lib                 port:readline \
                             port:tcl

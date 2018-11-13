@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -19,8 +19,8 @@ long_description    This class is the base class for all time zone \
 platforms           darwin
 
 checksums           rmd160  70bf37d7c8d3a5e0d5f30af11f5bd5b25215b4f8 \
-                    sha256  54d685f79df1033c259502cd9c22b1a9d37b627bf815faecebaa27f8e1079e1e \
-                    size    954717
+sha256  54d685f79df1033c259502cd9c22b1a9d37b627bf815faecebaa27f8e1079e1e \
+size    954717
 
 if {${perl5.major} != ""} {
     depends_build-append \

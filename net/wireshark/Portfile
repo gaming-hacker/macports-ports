@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name		wireshark
 version		1.12.8
 revision	5
@@ -18,8 +20,8 @@ master_sites	http://www.wireshark.org/download/src/			\
 		http://www.wireshark.org/download/src/all-versions/
 
 checksums           md5	    988a4595a4a87dafb3c4870ea40e89b5 \
-                    sha1    d8c23120525a2f3505e822b7684e7367bcd0ba70 \
-                    rmd160  bf87fd1e3404d04f6123d09798b46ea5b2af49e9
+sha1    d8c23120525a2f3505e822b7684e7367bcd0ba70 \
+rmd160  bf87fd1e3404d04f6123d09798b46ea5b2af49e9
 
 use_bzip2	yes
 
@@ -75,7 +77,7 @@ if {![variant_isset qt] && ![variant_isset gtk3]} {
 ## if {[variant_isset no_python]} {
 ## } elseif {[variant_isset python25]} {
 ## } elseif {[variant_isset python26]} {
-## } elseif {[variant_isset python27]} {
+## } elseif {[variant_isset python37]} {
 ## } else {
 ## 	default_variants +no_python
 ## }
@@ -147,22 +149,22 @@ variant geoip {
 }
 
 ## 1.10.0 doesn't include python options in configure
-## variant python25 description {use python25 for the experimental python interface} conflicts no_python python26 python27 {
+## variant python25 description {use python25 for the experimental python interface} conflicts no_python python26 python37 {
 ## 	configure.args-append	--with-python=${prefix}
 ## 	depends_lib-append	port:python25
 ## }
 ## 
-## variant python26 description {use python26 for the experimental python interface} conflicts no_python python25 python27 {
+## variant python26 description {use python26 for the experimental python interface} conflicts no_python python25 python37 {
 ## 	configure.args-append	--with-python=${prefix}
 ## 	depends_lib-append	port:python26
 ## }
 ## 
-## variant python27 description {use python27 for the experimental python interface} conflicts no_python python25 python26 {
+## variant python37 description {use python37 for the experimental python interface} conflicts no_python python25 python26 {
 ## 	configure.args-append	--with-python=${prefix}/lib/wireshark/python/${version}
-## 	depends_lib-append	port:python27
+## 	depends_lib-append	port:python37
 ## }
 ## 
-## variant no_python description {do not build python interface} conflicts python25 python26 python27 {
+## variant no_python description {do not build python interface} conflicts python25 python26 python37 {
 ## 	configure.args-append	--without-python
 ## }
 

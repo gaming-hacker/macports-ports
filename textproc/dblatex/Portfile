@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -32,7 +32,7 @@ homepage            http://dblatex.sourceforge.net
 master_sites        sourceforge:project/dblatex/dblatex/dblatex-${version}
 
 checksums           sha256  6fd696b740e0044ae1caf843d225d98c01b6ed916550384544e7e31c0c6a2cfa \
-                    rmd160  b113dc1a04180704e36558039ef1cc9d13900105
+rmd160  b113dc1a04180704e36558039ef1cc9d13900105
 
 use_bzip2           yes
 
@@ -45,7 +45,7 @@ depends_lib         port:texlive-latex-extra \
                     port:docbook-xsl-nons
 
 python.link_binaries no
-python.default_version 27
+python.default_version 37
 
 # this gets assigned before python.bin is set to the version selected by the variant
 #destroot.cmd        ${python.bin} setup.py

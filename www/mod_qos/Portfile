@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ homepage            http://mod-qos.sourceforge.net/index.html
 master_sites        sourceforge:project/mod-qos/
 
 checksums           rmd160  cd72739976c2c1201302c247a5c202c264623a78 \
-                    sha256  bf3d22b4d6927423b2686c1db45b442999ecc342beaf43e7c1328707376c269c \
-                    size    1249886
+sha256  bf3d22b4d6927423b2686c1db45b442999ecc342beaf43e7c1328707376c269c \
+size    1249886
 
 depends_build       port:autoconf \
                     port:automake

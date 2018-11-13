@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,7 +14,7 @@ name                py-spyder-devel
 # This is already a date code, so sticking with dates.
 epoch               20161005
 
-python.versions     27 35 36 37
+python.version 37
 
 categories-append   devel
 platforms           darwin
@@ -40,8 +40,8 @@ supported_archs     noarch
 universal_variant   no
 
 checksums           rmd160  c0f453e8990166f81833cbf9d60c63d64921bb7d \
-                    sha256  ea57863ac778ac4c6771a5be9705297c4807131e25268e3922b5dc2f3d4e52a3 \
-                    size    4069105
+sha256  ea57863ac778ac4c6771a5be9705297c4807131e25268e3922b5dc2f3d4e52a3 \
+size    4069105
 
 if {${name} ne ${subport}} {
     require_active_variants py${python.version}-pyqt5 webengine

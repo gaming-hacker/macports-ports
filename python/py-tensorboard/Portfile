@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,21 +20,21 @@ if {${python.version} < 30} {
     master_sites        https://files.pythonhosted.org/packages/0b/af/fda67f0a88e31cfabab58421dc1b6025cc1f8fd5c17f24fee5fe9a38eb57/
     distname            tensorboard-${version}-py2-none-any
     checksums           rmd160  7bb0f410a635eb2b011520842d8b35ff29134509 \
-                        sha256  537603db949e10d2f5f201d88b073f3f8fb4e4c311d5541e1d4518aa59aa8daa \
-                        size    3046073
+sha256  537603db949e10d2f5f201d88b073f3f8fb4e4c311d5541e1d4518aa59aa8daa \
+size    3046073
 } else {
     master_sites        https://files.pythonhosted.org/packages/e0/d0/65fe48383146199f16dbd5999ef226b87bce63ad5cd73c840cf722637969/
     distname            tensorboard-${version}-py3-none-any
     checksums           rmd160  7ad47aad8032a2c12076e236adbe2de0631e6845 \
-                        sha256  ca275a7e39797946930d7d4460999369b73968e8191f2256e23bfb7924004d59 \
-                        size    3046073
+sha256  ca275a7e39797946930d7d4460999369b73968e8191f2256e23bfb7924004d59 \
+size    3046073
 }
 
 extract.suffix      .whl
 extract.only
 
 # add 37 when py-tensorflow supports it
-python.versions     27 35 36
+python.version 37
 
 if {${name} ne ${subport}} {
 

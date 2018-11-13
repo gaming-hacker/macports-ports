@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,10 +15,10 @@ platforms           darwin
 homepage            https://certbot.eff.org/
 
 checksums           rmd160  dd5a266ea7066537f71ff5150c7a50dfd82405f9 \
-                    sha256  f6d2ebec913281f4665c343014ce7e38eae753a0b1c78f79fc0f4496922817f2 \
-                    size    1253650
+sha256  f6d2ebec913281f4665c343014ce7e38eae753a0b1c78f79fc0f4496922817f2 \
+size    1253650
 
-python.versions     27 36 37
+python.version 37
 
 depends_lib         port:py${python.version}-acme \
                     port:py${python.version}-configargparse \
@@ -42,20 +42,20 @@ post-patch {
     reinplace "s|/var/lib/|${prefix}/var/db/|" ${worksrcpath}/certbot/constants.py
 }
 
-variant python27 conflicts python36 python37 description {Use Python 2.7} {
-    python.default_version 27
+variant python37 conflicts python36 python37 description {Use Python 3.7} {
+    python.default_version 37
 
     depends_lib-append  port:py${python.version}-python2-pythondialog
 }
 
-variant python36 conflicts python27 python37 description {Use Python 3.6} {
+variant python36 conflicts python37 python37 description {Use Python 3.6} {
     python.default_version 36
 }
 
-variant python37 conflicts python27 python36 description {Use Python 3.7} {
+variant python37 conflicts python37 python36 description {Use Python 3.7} {
     python.default_version 37
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 
@@ -43,8 +43,8 @@ if {${subport} eq ${name}} {
     master_sites https://github.com/AdoptOpenJDK/openjdk${major}-binaries/releases/download/jdk${version}-b${build}/
     
     checksums    rmd160  625de009ff2a8a31d72774a863ae6dc6a17fbc96 \
-                 sha256  cde59e884c473c3be52400bfad14b3ea1d8c42c994649f064ef335a727a36594 \
-                 size    75821422
+sha256  cde59e884c473c3be52400bfad14b3ea1d8c42c994649f064ef335a727a36594 \
+size    75821422
 
     distname     OpenJDK${major}U-jdk_x64_mac_hotspot_${version}b${build}
     worksrcdir   jdk${version}-b${build}
@@ -55,8 +55,8 @@ if {${subport} eq ${name}} {
     master_sites https://download.java.net/java/GA/jdk${major}/${version}/19aef61b38124481863b1413dce1855f/${build}/
 
     checksums    rmd160  d29498411adc487bf8191adbc4276c72602022cf \
-                 sha256  77ea7675ee29b85aa7df138014790f91047bfdafbc997cb41a1030a0417356d7 \
-                 size    200916897
+sha256  77ea7675ee29b85aa7df138014790f91047bfdafbc997cb41a1030a0417356d7 \
+size    200916897
 
     distname     openjdk-${version}_osx-x64_bin
     worksrcdir   jdk-${version}.jdk
@@ -74,8 +74,8 @@ if {${subport} eq ${name}} {
     master_sites https://github.com/AdoptOpenJDK/openjdk${major}-binaries/releases/download/jdk-${version}%2B${build}/
 
     checksums    rmd160  e579e79d76ba1692a1ac5ea59ea0ffa9a3a1daa3 \
-                 sha256  e219e7e2d586ed09ae65f4ec390fca5d5f0c37a61b47677648610194daf1aaa7 \
-                 size    189911499
+sha256  e219e7e2d586ed09ae65f4ec390fca5d5f0c37a61b47677648610194daf1aaa7 \
+size    189911499
 
     distname     OpenJDK${major}U-jdk_x64_mac_hotspot_${version}_${build}
     worksrcdir   jdk-${version}+${build}

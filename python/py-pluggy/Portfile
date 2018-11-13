@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ master_sites        pypi:p/pluggy
 distname            pluggy-${version}
 
 checksums           rmd160  de415ba98b96592a6a92f6423d31bb42e387b064 \
-                    sha256  447ba94990e8014ee25ec853339faf7b0fc8050cdc3289d4d71f7f410fb90095 \
-                    size    53259
+sha256  447ba94990e8014ee25ec853339faf7b0fc8050cdc3289d4d71f7f410fb90095 \
+size    53259
 
-python.versions     27 34 35 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

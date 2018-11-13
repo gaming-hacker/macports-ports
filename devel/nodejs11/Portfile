@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -25,14 +25,14 @@ master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
 checksums               rmd160  e54592ded389c46687afc20306a484ba465db043 \
-                        sha256  50279fb2cfea1eefc7d1a3ce5c4fecdd16131a4397867d1af839d47cda556d0a \
-                        size    20207100
+sha256  50279fb2cfea1eefc7d1a3ce5c4fecdd16131a4397867d1af839d47cda556d0a \
+size    20207100
 
 distname                node-v${version}
 
 depends_build           port:pkgconfig
 
-depends_lib             port:python27
+depends_lib             port:python37
 #                        path:lib/libssl.dylib:openssl
 
 proc rec_glob {basedir pattern} {

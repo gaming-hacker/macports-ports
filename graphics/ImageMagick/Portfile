@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   conflicts_build 1.0
@@ -43,8 +43,8 @@ master_sites                http://www.imagemagick.org/download/ \
                             ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
 checksums                   rmd160  d01d39b0da259c1296acaa37867f1a428928b72e \
-                            sha256  62f25d46bfbcffe00b84e167994d593868a9a47d4defc489a429cae1d6aab9f7 \
-                            size    8919136
+sha256  62f25d46bfbcffe00b84e167994d593868a9a47d4defc489a429cae1d6aab9f7 \
+size    8919136
 
 depends_lib                 port:bzip2 \
                             port:djvulibre \

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           legacysupport 1.0
 
 name                jabber
@@ -20,8 +22,8 @@ master_sites        https://download.jabberd.org/jabberd14/ \
 distname            jabberd14-${version}
 
 checksums           md5 597c7ee14518ba22b1cee883b4737d87 \
-                    sha1 8b7ba77c9e02e9de7125e898900ff0ba5d65986e \
-                    rmd160 0d3df653b6362f8e580c59ae1b4c9c6467b0bee5
+sha1 8b7ba77c9e02e9de7125e898900ff0ba5d65986e \
+rmd160 0d3df653b6362f8e580c59ae1b4c9c6467b0bee5
 
 depends_build       port:pkgconfig
 

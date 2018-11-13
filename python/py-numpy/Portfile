@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -15,8 +15,8 @@ long_description        ${description}
 
 github.setup            numpy numpy 1.15.4 v
 checksums               rmd160 98553651755714052a834f4d5fb70ff365dd6693 \
-                        sha256 16618e1ce2147a99f1a381e111bf821f45b0aa645814f963d11fba5acec4cb9e \
-                        size   4418653
+sha256 16618e1ce2147a99f1a381e111bf821f45b0aa645814f963d11fba5acec4cb9e \
+size   4418653
 
 if {${name} ne ${subport}} {
     # the python PortGroup puts compiler names in build.env and destroot.env
@@ -25,7 +25,7 @@ if {${name} ne ${subport}} {
     pre-destroot { set_compilers }
 }
 
-python.versions         26 27 33 34 35 36 37
+python.version 37
 
 # http://trac.macports.org/ticket/34562
 python.consistent_destroot yes
@@ -38,8 +38,8 @@ if {${name} ne ${subport}} {
     if {${python.version} == 26 || ${python.version} == 33} {
         github.setup        numpy numpy 1.11.3 v
         checksums           rmd160 8cc323d5944301aefa1f66f17d4af14c364c6b32 \
-                            sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1 \
-                            size   4387593
+sha256 dbdda9104c7dbc2d8ae691367a2bb1815a62598c5278097b4eee035b85abf6a1 \
+size   4387593
         patchfiles-append   patch-numpy_core_setup.py.26.diff \
                             patch-numpy_distutils_fcompiler_gnu.py.26.diff \
                             patch-numpy_tests_test_scripts.py.26.diff \

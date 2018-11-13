@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ categories-append   devel
 platforms           darwin
 license             BSD
 
-python.versions     27 34 35 36 37
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,8 +24,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  fea1b17f78f5bcca1d888b5e4583bdc26d46784f \
-                    sha256  e85b410885addaeb31a867eabcefc9ef4a7e904ad45eac9e60a763a54b244626 \
-                    size    468551
+sha256  e85b410885addaeb31a867eabcefc9ef4a7e904ad45eac9e60a763a54b244626 \
+size    468551
 
 platform macosx {
     if {${os.major} < 11} {

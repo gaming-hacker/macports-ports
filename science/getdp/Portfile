@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             cmake          1.1
@@ -24,8 +24,8 @@ extract.suffix        .tgz
 distname              ${name}-${version}-source
 
 checksums             rmd160  beb60412b5a973ac51ad4e322323d052f4dda290 \
-                      sha256  3f2080b7125ce6faae92fd4fce295c061ece2ff93aed7aca71665db6f236e9d9 \
-                      size    1991983
+sha256  3f2080b7125ce6faae92fd4fce295c061ece2ff93aed7aca71665db6f236e9d9 \
+size    1991983
 
 mpi.setup             require_fortran
 
@@ -74,34 +74,34 @@ variant petsc description {Use PETSc linear solver} {
     }
 }
 
-variant python27 description {Build the Python 2.7 bindings} conflicts python36 python37 {
-    depends_lib-append port:python27
+variant python37 description {Build the Python 3.7 bindings} conflicts python36 python37 {
+    depends_lib-append port:python37
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|2.7|g" ${worksrcpath}/CMakeLists.txt
     }
 }
 
-variant python36 description {Build the Python 3.6 bindings} conflicts python27 python37 {
+variant python36 description {Build the Python 3.6 bindings} conflicts python37 python37 {
     depends_lib-append port:python36
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|3.6|g" ${worksrcpath}/CMakeLists.txt
     }
 }
 
-variant python37 description {Build the Python 3.7 bindings} conflicts python27 python36 {
+variant python37 description {Build the Python 3.7 bindings} conflicts python37 python36 {
     depends_lib-append port:python37
     post-patch {
         reinplace "s|__MACPORTS_PYTHON_VERSION__|3.7|g" ${worksrcpath}/CMakeLists.txt
     }
 }
 
-if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append \
         -DENABLE_PYTHON=OFF
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+    default_variants +python37
 }
 
 variant gmsh description {Enable Gmsh functions (for field interpolation)} {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ description         A graph coloring algorithm package
 long_description    ${description}
 
 checksums           rmd160  d442046a293857d7d746c79d7d3b74c3918b117d \
-                    sha256  c522c5b69896aab39aa5a81399372a19a6b03fc6200d2d5d677d9a22fe31029a \
-                    size    2514234
+sha256  c522c5b69896aab39aa5a81399372a19a6b03fc6200d2d5d677d9a22fe31029a \
+size    2514234
 
 mpi.setup           require require_fortran
 

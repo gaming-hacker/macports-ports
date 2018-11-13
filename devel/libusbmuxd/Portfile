@@ -37,8 +37,8 @@ subport libusbmuxd-devel {
     version         20181021
 
     checksums       rmd160  69c7fd4d9bb2cee5436b32f5358cadd997fce239 \
-                    sha256  a5b13ecaad58896b1d111c24b8cb0d2490d328d201d89f405e9a4f02722b9846 \
-                    size    38676
+sha256  a5b13ecaad58896b1d111c24b8cb0d2490d328d201d89f405e9a4f02722b9846 \
+size    38676
 
     conflicts       libusbmuxd
 }

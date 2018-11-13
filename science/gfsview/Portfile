@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 PortGroup             mpi 1.0
@@ -17,8 +17,8 @@ distname              ${name}-snapshot-${snapshot}
 master_sites          http://gerris.dalembert.upmc.fr/gerris/tarballs/
 
 checksums             rmd160  0eaa794d67f3f215283fc0c7b68cff16942bef55 \
-                      sha256  60440319e506d78f7bb5ebf63383f541e30d5e99ad05ea175876fb346e0766d9 \
-                      size    707424
+sha256  60440319e506d78f7bb5ebf63383f541e30d5e99ad05ea175876fb346e0766d9 \
+size    707424
 
 depends_build         port:pkgconfig
 

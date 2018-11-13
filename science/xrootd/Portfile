@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -38,10 +38,10 @@ platforms           darwin
 homepage            http://xrootd.org/
 
 checksums           rmd160  e70ccbaacaa8eb5cebbec9f399cc7d161fffbbf2 \
-                    sha256  db93951032748257d0effb3be9110884ced91a51d0577d42194e588318052a04 \
-                    size    2426210
+sha256  db93951032748257d0effb3be9110884ced91a51d0577d42194e588318052a04 \
+size    2426210
 
-depends_lib         port:python27 \
+depends_lib         port:python37 \
                     port:swig \
                     port:zlib
 
