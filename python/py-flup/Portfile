@@ -28,6 +28,9 @@ python.version 37
 python.default_version 37
 
 if {${name} ne ${subport}} {
+    depends_build-append \
+                    port:py${python.version}-setuptools
+
     post-destroot   {
         set docdir ${prefix}/share/doc/${subport}
         xinstall -d ${destroot}${docdir}
