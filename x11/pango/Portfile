@@ -11,7 +11,6 @@ conflicts               pango-devel
 set my_name             pango
 epoch                   1
 version                 1.42.4
-revision                1
 checksums               rmd160  e91880e0e9a459bbc2c280ac747ab31f80352000 \
                         sha256  1d2b74cd63e8bd41961f2f8d952355aa0f9be6002b52c8aa7699d9f5da597c9d \
                         size    833876
@@ -68,13 +67,6 @@ platform macosx {
 
     if {[variant_isset quartz]} {
         require_active_variants path:lib/pkgconfig/cairo.pc:cairo quartz
-        # This fixes a font-size problem in gtk3 for MacOS HiDPI (Retina) Displays
-        # For discussion, see https://bugzilla.gnome.org/show_bug.cgi?id=787867
-        # This might be removed with gtk3 3.24.1
-        # The patch is taken from homebrew
-        # See https://github.com/Homebrew/homebrew-core/blob/master/Formula/pango.rb
-        patch.pre_args -p1
-        patchfiles pango_font_size.patch
     }
 }
 
