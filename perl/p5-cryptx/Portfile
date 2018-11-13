@@ -14,5 +14,5 @@ description         Crypto toolkit (self-contained no external libraries needed)
 long_description    ${description}
 
 checksums           rmd160  47480a88a56bafd04580a04223ef042d34471429 \
-                    sha256  026db0c97284fddcb01f2aff7197c3c2d73a0a5a004289a782c7158d41295543 \
-                    size    1600185
+sha256  026db0c97284fddcb01f2aff7197c3c2d73a0a5a004289a782c7158d41295543 \
+size    1600185
