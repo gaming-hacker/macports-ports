@@ -56,7 +56,7 @@ use_autoreconf              yes
 # remove ${prefix}/lib from configure.ldflags to allow linking against its own libs first
 # adding ${worksrcpath}/lib is not necessary and pollutes krb5-config --libs and pkg-config files
 configure.ldflags-delete    -L${prefix}/lib
-configure.python            ${prefix}/bin/python2.7
+configure.python            ${prefix}/bin/python3.7
 configure.args              --mandir=${prefix}/share/man \
                             --with-system-et \
                             --without-system-db \
@@ -77,7 +77,7 @@ compiler.blacklist-append   {clang <= 318.0.61}
 # i386 linking fails on Snow Leopard with gcc-4.2 from Xcode 3.2.6
 if {[string match *gcc-4.2 ${configure.compiler}] &&
     ($build_arch eq "i386" || ([variant_isset universal] && "i386" in $universal_archs))} {
-    configure.optflags -O2
+    configure.optflags -O3
 }
 
 post-configure {
