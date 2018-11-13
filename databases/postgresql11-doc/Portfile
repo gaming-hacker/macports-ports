@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem 1.0
 
 name                postgresql11-doc
 conflicts           postgresql93-doc postgresql94-doc postgresql95-doc \
     postgresql96-doc postgresql10-doc
-version             11rc1
+version             11.1
 categories          databases
 platforms           darwin
 maintainers         {jwa @jyrkiwahlstedt}
@@ -22,9 +22,9 @@ master_sites        postgresql:source/v${version}
 distname            postgresql-${version}
 set rname           postgresql11
 
-checksums           rmd160  4534882f648a2d29ba1fa22eadb38becb1c6abd0 \
-sha256  608c35369b79a40239663c4213267fd08d3184c3a2cd4d6ff71103ca61930609 \
-size    21193201
+checksums           rmd160  76ad4f0e433e42ea824809878423871e9b4fa4e0 \
+                    sha256  90815e812874831e9a4bf6e1136bf73bc2c5a0464ef142e2dfea40cda206db08 \
+                    size    21263173
 
 use_bzip2           yes
 dist_subdir         ${rname}

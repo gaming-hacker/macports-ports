@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -32,7 +32,7 @@ homepage            http://dblatex.sourceforge.net
 master_sites        sourceforge:project/dblatex/dblatex/dblatex-${version}
 
 checksums           sha256  6fd696b740e0044ae1caf843d225d98c01b6ed916550384544e7e31c0c6a2cfa \
-rmd160  b113dc1a04180704e36558039ef1cc9d13900105
+                    rmd160  b113dc1a04180704e36558039ef1cc9d13900105
 
 use_bzip2           yes
 
@@ -45,7 +45,7 @@ depends_lib         port:texlive-latex-extra \
                     port:docbook-xsl-nons
 
 python.link_binaries no
-python.default_version 37
+python.default_version 27
 
 # this gets assigned before python.bin is set to the version selected by the variant
 #destroot.cmd        ${python.bin} setup.py
@@ -59,46 +59,60 @@ set dblatex.mactex_bin ""
 set dblatex.temp       ""
 
 variant mactex description {Allow dblatex to use MacTeX or another\
-    external TeXLive installation instead of MacPorts texlive tools.  To\
-    install the mactex variant the path to the TeX distribution's binary\
-    directory (for example /Library/TeX/texbin) must be added to binpath\
-    in macports.conf *before* installing this port.} {
+    external TeXLive installation instead of MacPorts TeXLive tools.\
+    To install the 'mactex' variant the path to the TeX distribution's\
+    binary directory (for example '/Library/TeX/texbin') must be added\
+    to 'binpath' in 'macports.conf' *before* installing this port.} {
 
     # Find the binary directory of the external TeX distribution by
     # searching the kpsewhich program in the path.  We assume that all
     # other binaries of the distribution are in this directory, too.
-    set dblatex.temp {*}[auto_execok kpsewhich]
+    if {[auto_execok kpsewhich] ne ""} {
+        set dblatex.temp {*}[auto_execok kpsewhich]
+    }
     set dblatex.mactex_bin \
         [file dirname [file normalize ${dblatex.temp}]]
     if {${dblatex.mactex_bin} eq "."} {
-        return -code error "Cannot find MacTeX or external TeXLive\
-            installation; aborting.  Have you added the path to your\
-            TeX distribution's binary directory to binpath in\
-            macports.conf?"
-    }
-    if {${dblatex.mactex_bin} eq \
-            [file dirname [file normalize "${prefix}/bin/kpsewhich"]]} {
-        return -code error "Variant mactex doesn't work with installed\
-             macports texlive packages.  Either uninstall them or don't\
-             use the mactex variant of dblatex."
+        pre-fetch {
+            return -code error "Cannot find MacTeX or external TeXLive\
+                installation; aborting.  Have you added the path to\
+                your TeX distribution's binary directory to 'binpath'\
+                in 'macports.conf'?"
+        }
+    } elseif {${dblatex.mactex_bin} eq \
+                  [file dirname [file normalize "${prefix}/bin/kpsewhich"]]} {
+        pre-fetch {
+            return -code error "Variant 'mactex' doesn't work with\
+                installed MacPorts TeXLive packages.  Either\
+                uninstall them or don't use the 'mactex' variant of\
+                dblatex."
+        }
+    } else {
+        set dblatex.texmflocal \
+            [exec ${dblatex.mactex_bin}/kpsewhich --expand-var='\$TEXMFLOCAL']
+        regsub -all {'} ${dblatex.texmflocal} "" dblatex.texmflocal
     }
 
-    set dblatex.texmflocal \
-        [exec ${dblatex.mactex_bin}/kpsewhich --expand-var='\$TEXMFLOCAL']
-    regsub -all {'} ${dblatex.texmflocal} "" dblatex.texmflocal
+    # Make 'port notes dblatex +mactex' work even if neither the package
+    # nor an external TeXLive is installed.
+    if {${dblatex.texmflocal} eq ""} {
+        notes "The 'mactex' variant will install styles into your\
+            TeXLive's texmf-local tree (which is outside MacPorts'\
+            common directory structure)."
+    } else {
+        notes "\
+The 'mactex' variant will install styles into your TeXLive's texmf-local\
+tree at
+
+    ${dblatex.texmflocal}
+
+(which is outside MacPorts' common directory structure)."
+    }
 
     depends_lib-delete \
                     port:texlive-latex-extra \
                     port:texlive-latex-recommended \
                     port:texlive-math-science
-
-    notes "\
-The mactex variant will install styles into your TeXLive's texmf-local
-tree at
-
-    ${dblatex.texmflocal}
-
-(which is outside MacPort's common directory structure)."
 
     # AND, since we're installing files outside MacPorts' normal
     # directories...

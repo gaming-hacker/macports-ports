@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pytest
-version             3.8.2
+version             3.10.1
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,9 +24,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  394d93f3186b92e10219ebd56a26c9420c4f0ff5 \
-sha256  9332147e9af2dcf46cd7ceb14d5acadb6564744ddff1fe8c17f0ce60ece7d9a2 \
-size    869668
+checksums           rmd160  72615fa1809e8d78786af81487371bb6ec28b52b \
+                    sha256  e246cf173c01169b9617fc07264b7b1316e78d7a650055235d6d897bc80d9660 \
+                    size    892420
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -49,7 +49,7 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-pathlib2
     }
 
-    patchfiles-append   patch-setup.py.diff
+    patchfiles-append   patch-setup.cfg.diff
 
     livecheck.type      none
 }

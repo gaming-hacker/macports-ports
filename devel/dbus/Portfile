@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -18,8 +18,8 @@ homepage        https://www.freedesktop.org/wiki/Software/dbus/
 master_sites    https://dbus.freedesktop.org/releases/dbus/
 
 checksums       rmd160  6d19c3e0efe030a450b7faceb57c9fa8279ecaec \
-sha256  4b693d24976258c3f2fa9cc33ad9288c5fbfa7a16481dbd9a8a429f7aa8cdcf7 \
-size    2073510
+                sha256  4b693d24976258c3f2fa9cc33ad9288c5fbfa7a16481dbd9a8a429f7aa8cdcf7 \
+                size    2073510
 
 # See r68276
 # For configure
@@ -53,16 +53,16 @@ if {[getuid] != 0} {
 set daemon_uniquename   org.freedesktop.dbus-system
 set agent_uniquename    org.freedesktop.dbus-session
 
-# startupitem.type    launchd
-# startupitem.create  no
-# startupitems        name        dbus-system \
-#                     location    LaunchDaemons \
-#                     uniquename  ${daemon_uniquename} \
-#                     plist       ${daemon_uniquename}.plist \
-#                     name        dbus-session \
-#                     location    LaunchAgents \
-#                     uniquename  ${agent_uniquename} \
-#                     plist       ${agent_uniquename}.plist
+startupitem.type    launchd
+startupitem.create  no
+startupitems        name        dbus-system \
+                    location    LaunchDaemons \
+                    uniquename  ${daemon_uniquename} \
+                    plist       ${daemon_uniquename}.plist \
+                    name        dbus-session \
+                    location    LaunchAgents \
+                    uniquename  ${agent_uniquename} \
+                    plist       ${agent_uniquename}.plist
 
 depends_lib     port:expat
 
@@ -167,9 +167,9 @@ variant test description {enable tests (Only Works if dbus is Already Installed)
 
     configure.args-replace  --disable-tests --enable-tests
     configure.args-append   --without-dbus-glib
-    depends_build-append      port:glib2
-    depends_build-append      port:python37 port:dbus-python37 port:py37-gobject port:dbus-python
-    configure.python        ${prefix}/bin/python3.7
+    depends_build-append    path:lib/pkgconfig/glib-2.0.pc:glib2
+    depends_build-append      port:python27 port:dbus-python27 port:py27-gobject port:dbus-python
+    configure.python        ${prefix}/bin/python2.7
 }
 
 set cross_opts  "ac_cv_have_abstract_sockets=no"

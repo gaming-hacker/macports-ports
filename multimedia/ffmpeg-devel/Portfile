@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           xcodeversion 1.0
@@ -7,11 +7,10 @@ PortGroup           compiler_blacklist_versions 1.0
 PortGroup           active_variants 1.1
 PortGroup           github 1.0
 
-github.setup        FFmpeg FFmpeg 50df4c958b641e3ee3114e1eb659a151d34d2ac1
+github.setup        FFmpeg FFmpeg 07bc603757caa5d2054c56629bb93d7a177e8e88
 name                ffmpeg-devel
 conflicts           ffmpeg
-version             20180523
-revision            1
+version             20181108
 license             LGPL-2.1+
 categories          multimedia
 maintainers         {devans @dbevans} {jeremyhu @jeremyhu} openmaintainer
@@ -50,9 +49,9 @@ long_description    FFmpeg is a complete solution to record, convert and \
 platforms           darwin
 homepage            http://www.ffmpeg.org/
 
-checksums           rmd160  34a48e5b8219929ab506139ffc31db834bfbbe20 \
-sha256  34a960286e979d0e8ea7ab54e5b34992c396cced22fb28941fef48be27ed57f0 \
-size    12554797
+checksums           rmd160  5b1244c053d13fcd79de846864eca6ce5363d1b3 \
+                    sha256  08731ce1eb0b108acef9246ca4e7f5b432f83a718caaac9acc8acff990d7919b \
+                    size    12753153
 
 depends_build       port:pkgconfig \
                     port:gmake \
@@ -83,8 +82,7 @@ depends_lib         port:lame \
                     port:xz \
                     port:zlib
 
-patchfiles          patch-libavcodec-audiotoolboxenc.c.diff \
-                    patch-libavformat-mxfenc.c-parens-around-initializer-df3d962d2e736c0748b91a3c8c701d7cb96154a8.diff
+patchfiles          patch-libavcodec-audiotoolboxenc.c.diff
 
 #
 # enable auto configure of asm optimizations
@@ -104,11 +102,6 @@ platform darwin powerpc {
     compiler.blacklist
     compiler.whitelist    macports-gcc-6
     universal_variant     no
-}
-
-# _Nullable not available with clang < 700.
-if {[vercmp ${xcodeversion} 7.0] < 0} {
-    patchfiles-append   patch-libavcodec-videotoolboxenc.c-drop-Nullable.diff
 }
 
 # The old ffmpeg port was GPL-2+ as base and had a no_gpl variant, so this keeps us consistent
@@ -152,6 +145,7 @@ configure.args      --enable-swscale \
                     --mandir=${prefix}/share/man \
                     --enable-shared --enable-pthreads \
                     --cc=${configure.cc}
+
 
 platform darwin {
     # disable asm on Tiger

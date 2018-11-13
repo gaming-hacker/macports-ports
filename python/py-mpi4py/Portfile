@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,11 +27,11 @@ long_description    \
 maintainers         {sean @seanfarley} openmaintainer
 
 checksums           rmd160  b77ebcb1cb61c7cfd534bd2454b8109a53fdee7e \
-sha256  41a206ae34814f87ec2496ed2bc38513942f527d0638308f576c8af843e49088
+                    sha256  41a206ae34814f87ec2496ed2bc38513942f527d0638308f576c8af843e49088
 
 mpi.setup           require
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

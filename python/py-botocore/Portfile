@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-botocore
-version             1.10.16
+version             1.12.42
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
@@ -19,17 +19,18 @@ homepage            https://github.com/boto/botocore
 master_sites        pypi:b/botocore
 distname            ${python.rootname}-${version}
 
-checksums           rmd160 ed17047d07f069796a38a45e590398ba12a82443 \
-sha256 ddab94a9affd702884a8941ffd413e577e2f2941652c4c20f99a81dcb8548dce \
-size   4363163
+checksums           rmd160  9ca7f2aad18f4653c439303b60030eece5cff18d \
+                    sha256  0e495bcf2e474b82da7938b35ad2f71e28384c246b47ca131779f736621da504 \
+                    size    4928041
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
     depends_lib-append      port:py${python.version}-dateutil \
                             port:py${python.version}-docutils \
-                            port:py${python.version}-jmespath
+                            port:py${python.version}-jmespath \
+                            port:py${python.version}-urllib3
 
     test.run            yes
     livecheck.type      none

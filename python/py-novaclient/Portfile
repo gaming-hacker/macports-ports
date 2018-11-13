@@ -25,6 +25,8 @@ sha256 73fc8169d58e910340aae1ac5370c3b63a9943f748e2a20e4a1dfd7277525c86
 python.version 37
 
 if {$subport ne $name} {
+    depends_build    port:py${python.version}-pbr
+
     depends_lib      port:py${python.version}-prettytable \
                      port:py${python.version}-httplib2 \
                      port:py${python.version}-simplejson \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -20,7 +20,7 @@ long_description        PHP is a widely-used general-purpose scripting \
                         scripting.
 
 # The list of PHP branches this port provides.
-php.branches 7.3
+php.branches            5.2 5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3
 
 # Fix for users specifying the subport name with the wrong case.
 set subport             [string tolower ${subport}]
@@ -66,14 +66,14 @@ switch ${subport_branch} {
         set suhosin_patch_version   5.2.16-0.9.7
         set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
         checksums       ${distname}${extract.suffix} \
-md5     b27947f3045220faf16e4d9158cbfe13 \
-rmd160  567fa8d718b93fb83a89494c83a8bec224ac99e9 \
-sha256  e81beb13ec242ab700e56f366e9da52fd6cf18961d155b23304ca870e53f116c \
-size    9092312 \
+                        md5     b27947f3045220faf16e4d9158cbfe13 \
+                        rmd160  567fa8d718b93fb83a89494c83a8bec224ac99e9 \
+                        sha256  e81beb13ec242ab700e56f366e9da52fd6cf18961d155b23304ca870e53f116c \
+                        size    9092312 \
                         ${suhosin_patch} \
-rmd160  b28b70faf136b3e04c5b483da0f4c2279378f43a \
-sha256  aae115a318d80b3f32cedf876e7a8e4b932febb1b0c743c0b398003ebe122f91 \
-size    23069
+                        rmd160  b28b70faf136b3e04c5b483da0f4c2279378f43a \
+                        sha256  aae115a318d80b3f32cedf876e7a8e4b932febb1b0c743c0b398003ebe122f91 \
+                        size    23069
     }
     5.3 {
         version         5.3.29
@@ -82,75 +82,75 @@ size    23069
         set suhosin_patch_version   5.3.9-0.9.10
         set suhosin_patch           suhosin-patch-${suhosin_patch_version}.patch.gz
         checksums       ${distname}${extract.suffix} \
-md5     9469e240cbe6ac865aeaec89b253dd30 \
-rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
-sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
-size    11396771 \
+                        md5     9469e240cbe6ac865aeaec89b253dd30 \
+                        rmd160  e57beb4fdda41bca81b5856161bc97f3c5e3e9da \
+                        sha256  c4e1cf6972b2a9c7f2777a18497d83bf713cdbecabb65d3ff62ba441aebb0091 \
+                        size    11396771 \
                         ${suhosin_patch} \
-rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
-sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
-size    40967
+                        rmd160  ce43921fd9b183b154713ecda98294f6c68d5f22 \
+                        sha256  4438caeab0a10c6c94aee9f7eaa703f5799f97d4e0579f43a947bb7314e38317 \
+                        size    40967
     }
     5.4 {
         epoch           1
         version         5.4.45
         use_bzip2       yes
         checksums       rmd160  352a0ea8fb75a447301c1434609ac0e4b96acc0c \
-sha256  4e0d28b1554c95cfaea6fa2b64aac85433f158ce72bb571bcd5574f98f4c6582 \
-size    12703324
+                        sha256  4e0d28b1554c95cfaea6fa2b64aac85433f158ce72bb571bcd5574f98f4c6582 \
+                        size    12703324
     }
     5.5 {
         epoch           2
         version         5.5.38
         use_xz          yes
         checksums       rmd160  08d200f9458f37ffd69a2daf30436c5f25fc948f \
-sha256  cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f \
-size    11077780
+                        sha256  cb527c44b48343c8557fe2446464ff1d4695155a95601083e5d1f175df95580f \
+                        size    11077780
     }
     5.6 {
         epoch           2
         version         5.6.38
         use_xz          yes
         checksums       rmd160  f8f61b7369b4cdeb65645be08a5c96a0c42a7cb8 \
-sha256  c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e \
-size    12467408
+                        sha256  c2fac47dc6316bd230f0ea91d8a5498af122fb6a3eb43f796c9ea5f59b04aa1e \
+                        size    12467408
     }
     7.0 {
         epoch           2
         version         7.0.32
         use_xz          yes
         checksums       rmd160  4852fe0fda5988ce042bc767f4bb494f2cff603a \
-sha256  ff6f62afeb32c71b3b89ecbd42950ef6c5e0c329cc6e1c58ffac47e6f1f883c4 \
-size    12030780
+                        sha256  ff6f62afeb32c71b3b89ecbd42950ef6c5e0c329cc6e1c58ffac47e6f1f883c4 \
+                        size    12030780
     }
     7.1 {
         epoch           2
         version         7.1.23
         use_xz          yes
         checksums       rmd160  6438b85f48ba205f0ded4a6cf2b9758990737999 \
-sha256  227a3c76133c3dc1cec937989456cbd89ed00e68e7260c651900dbe1f5b798bc \
-size    12227528
+                        sha256  227a3c76133c3dc1cec937989456cbd89ed00e68e7260c651900dbe1f5b798bc \
+                        size    12227528
     }
     7.2 {
         epoch           2
         version         7.2.11
         use_xz          yes
         checksums       rmd160  320afbf5b307eca6b4638a3a92147b0383ff15e6 \
-sha256  da1a705c0bc46410e330fc6baa967666c8cd2985378fb9707c01a8e33b01d985 \
-size    12132268
+                        sha256  da1a705c0bc46410e330fc6baa967666c8cd2985378fb9707c01a8e33b01d985 \
+                        size    12132268
     }
     7.3 {
         # When this becomes a stable version, remove the overrides for homepage,
         # master_sites and livecheck, and update php.latest_stable_branch in the
         # php-1.1 portgroup.
         epoch           1
-        version         7.3.0RC3
+        version         7.3.0RC4
         homepage        https://qa.php.net/
         master_sites    https://downloads.php.net/~cmb/
         use_xz          yes
-        checksums       rmd160  d10290973696f1f85f46c8e7eb09ea6c6d511ad5 \
-sha256  bd6c7fa718ff5b430d64ae1b5cfdf3e076ceb0a4a8569927bba8fe65fa04c4b5 \
-size    11927028
+        checksums       rmd160  d2626f07af9e1734213295d9a8d065bcf41472f3 \
+                        sha256  11582176003e0e8ca06dbdebab0921d539cab2ad795c0d90f146977859e21c26 \
+                        size    11915112
         livecheck.url   ${homepage}
         livecheck.regex php-([strsed ${subport_branch} {g/\\./\\./}](?:\\.\[0-9.\]+)*(?:(?:alpha|beta|RC)\\d+|-latest))\\.tar
     }
@@ -195,11 +195,12 @@ if {[is_sapi_subport]} {
         depends_lib-append  port:pcre
     } else {
         depends_lib-append  port:pcre2
+        patchfiles-append   patch-${php}-cpuid_count.diff
     }
     
     # Use -p1 to accommodate the Suhosin patch
     patch.pre_args      -p1
-    patchfiles          patch-${php}-scripts-php-config.in.diff
+    patchfiles-append   patch-${php}-scripts-php-config.in.diff
 
     if {[vercmp ${branch} 5.3] <= 0} {
         patchfiles-append \

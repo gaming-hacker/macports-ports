@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-tensorboard
-version             1.6.0
+version             1.12.0
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
@@ -16,22 +16,32 @@ long_description    TensorBoard is a suite of web applications for inspecting \
 
 homepage            https://github.com/tensorflow/tensorboard
 
-master_sites       https://pypi.python.org/packages/b0/67/a8c91665987d359211dcdca5c8b2a7c1e0876eb0702a4383c1e4ff76228d
+if {${python.version} < 30} {
+    master_sites        https://files.pythonhosted.org/packages/0b/af/fda67f0a88e31cfabab58421dc1b6025cc1f8fd5c17f24fee5fe9a38eb57/
+    distname            tensorboard-${version}-py2-none-any
+    checksums           rmd160  7bb0f410a635eb2b011520842d8b35ff29134509 \
+                        sha256  537603db949e10d2f5f201d88b073f3f8fb4e4c311d5541e1d4518aa59aa8daa \
+                        size    3046073
+} else {
+    master_sites        https://files.pythonhosted.org/packages/e0/d0/65fe48383146199f16dbd5999ef226b87bce63ad5cd73c840cf722637969/
     distname            tensorboard-${version}-py3-none-any
-
-    checksums           rmd160 f0580f8d20f42f8aeffabf237d21418e4b17b737 \
-sha256 ab3e4568a277d4d06fc2928e6e5aa2a32ece073ad234a6b7ade08671dbf8f339 \
-size   3042047
-
+    checksums           rmd160  7ad47aad8032a2c12076e236adbe2de0631e6845 \
+                        sha256  ca275a7e39797946930d7d4460999369b73968e8191f2256e23bfb7924004d59 \
+                        size    3046073
+}
 
 extract.suffix      .whl
 extract.only
 
-set python.version 37
-   depends_build-append \
+# add 37 when py-tensorflow supports it
+python.versions     27 35 36
+
+if {${name} ne ${subport}} {
+
+    depends_build-append \
         port:py${python.version}-pip
 
-    depends_lib-append \
+depends_lib-append \
         port:py${python.version}-bleach \
         port:py${python.version}-html5lib \
         port:py${python.version}-markdown \
@@ -41,7 +51,13 @@ set python.version 37
         port:py${python.version}-werkzeug \
         port:py${python.version}-wheel
 
-    build {  }
+    if {${python.version} eq 27} {
+        depends_lib-append \
+            port:py${python.version}-futures
+    }
+
+    build {
+    }
 
     destroot.cmd        pip-${python.branch}
     destroot.args       \
@@ -52,3 +68,4 @@ set python.version 37
     destroot.post_args
 
     livecheck.type      none
+}

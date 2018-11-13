@@ -1,14 +1,14 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           app 1.0
 PortGroup           active_variants 1.1
 
 name                pspp-devel
-set buildstamp      20181023030501
-set buildhash       g77ccca
-version             1.1.0
-revision            12
+set buildstamp      20181112030501
+set buildhash       g94e47c
+version             1.2.0
+revision            1
 # depends_test port:p${perl5.major}-text-diff
 categories          math
 license             GPL-3+
@@ -44,9 +44,10 @@ depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
 
 depends_build-append    port:pkgconfig
 
-checksums           rmd160  e3e9d5a4ade642ab6f147f59e17712ec5527bdfa \
-sha256  2f2205a55285ea0de0fbfd77bb69c8949d296798410a8095f7194111f8af2742 \
-size    7172169
+checksums           rmd160  161e2c27ad563c8920e98d1b4e0f0e188b56aa0e \
+                    sha256  8515580533e815b2c0f06046a87f48baa88c7fa9312e90c9ff7226a08756595e \
+                    size    7212903
+
 post-extract {
     if {[variant_isset gui]} {
         copy ${filespath}/PSPP ${worksrcpath}

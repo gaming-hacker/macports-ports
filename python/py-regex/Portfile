@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-regex
-version             2018.08.29
+version             2018.11.07
 revision            0
 categories-append   devel
 platforms           darwin
 license             PSF
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -22,9 +22,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  c4109f0fe29bad67ec052afdc5aead9494645e24 \
-sha256  b73cea07117dca888b0c3671770b501bef19aac9c45c8ffdb5bea2cca2377b0a \
-size    643384
+checksums           rmd160  215ae7bbc1d9ca666a4da54a77ad135045ce0ec5 \
+                    sha256  7bfb6e13ed8195513160550c3a82c49da8bbc6df5d149089cd37f51f36eddd39 \
+                    size    646688
 
 if {${name} ne ${subport}} {
     livecheck.type      none

@@ -21,5 +21,8 @@ sha256  f25f01b8117e16591edbd719bfcdefb1fce64b4cae0df77ecbb881165988f8a4
 python.version 37
 
 if {$subport ne $name} {
+    depends_build-append \
+                    port:py${python.version}-setuptools
+
     livecheck.type  none
 }

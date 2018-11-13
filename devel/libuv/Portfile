@@ -1,8 +1,8 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup           snowleopard_fixes 1.0
+PortGroup           legacysupport 1.0
 
 name                libuv
 categories          devel
@@ -19,9 +19,10 @@ long_description \
 if {${subport} eq ${name}} {
 
     github.setup    libuv libuv 1.23.2 v
+    revision        1
     checksums       rmd160 7fda655697a845693008daa9e0a483d15d6214d8 \
-sha256 f5c360b53c5d5c22c4429af9e8cb61c9504d176a4bdd533813aaead78447730c \
-size   1192667
+                    sha256 f5c360b53c5d5c22c4429af9e8cb61c9504d176a4bdd533813aaead78447730c \
+                    size   1192667
 
     conflicts       libuv-devel
 
@@ -29,11 +30,11 @@ size   1192667
 
 subport libuv-devel {
 
-    github.setup    libuv libuv b901e2620cdf79534730bbdff5b3d41f2fccb6d6
-    version         20181023
-    checksums       rmd160 c0f7356a958298d51626e1698ce9a83894a6ce42 \
-sha256 d18bd12e2937fd440b5616ab1992be5f9b01713f28146529d1cd421b9426e046 \
-size   1195297
+    github.setup    libuv libuv 00c6b1649d13fdd94bedbfe7ad26c9269c80b32c
+    version         20181102
+    checksums       rmd160 82cfdf44879422315bcf61a18d418535d720ccfa \
+                    sha256 452c14e9cc2b4217eb62005c55f90911350f7bf502330bc3299f883fb3d40a9f \
+                    size   1202234
 
     long_description    ${long_description} \
         This port is kept up with the libuv GIT 'master' branch, is typically updated weekly to monthly.
@@ -42,6 +43,9 @@ size   1195297
     github.livecheck.branch v1.x
 
 }
+
+test.run            yes
+test.target         check
 
 homepage            http://libuv.org/
 

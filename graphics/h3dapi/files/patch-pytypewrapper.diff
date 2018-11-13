@@ -6,3 +6,6 @@
  #endif
 -#if defined(__APPLE__) && defined(__MACH__)
 +#if defined(__APPLE__) && defined(__MACH__) && defined(HAVE_PYTHON_OSX_FRAMEWORK)
+ #include <Python/Python.h>
+ #else
+ #include <Python.h>
