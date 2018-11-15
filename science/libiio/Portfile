@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -17,18 +17,18 @@ subport libiio-devel {
     PortGroup       obsolete 1.0
 }
 
-github.setup    analogdevicesinc libiio 72feae0bca60e5c7803f5120e69edd287a419264
-version         20181022
-checksums       rmd160 5b12981ed11bf1ebd7b81bb321fac8ca87f40040 \
-sha256 37800225faa5da4dfc1acb9387116aa30c0286cf67e26febb22c6a751018f406 \
-size   194453
+github.setup    analogdevicesinc libiio 29c582ecab0588e03458c65ba4ee6541536bed16
+version         20181108
+checksums       rmd160 bc7db0bef90161df0a5cf1a58485c36a592f5ccb \
+                sha256 375733bb195eb4c0ddb909c54c90e3b7665a93951724e8853b66664780920172 \
+                size   195733
 
 depends_lib-append port:libxml2 \
     path:lib/libusb.dylib:libusb \
     port:avahi port:xz port:zlib port:libiconv
 
 depends_build-append port:pkgconfig \
-    port:python37 port:doxygen
+    port:python27 port:doxygen
 
 # patch to fix install directory of the framework
 
@@ -60,7 +60,7 @@ configure.args-append \
 
 post-destroot {
     # move Python install to frameworks_dir for Python
-    set py_install_dir ${frameworks_dir}/Python.framework/Versions/3.7/lib
+    set py_install_dir ${frameworks_dir}/Python.framework/Versions/2.7/lib
     xinstall -m 755 -d ${destroot}${py_install_dir}
     move ${destroot}${prefix}/lib/python2.7 ${destroot}${py_install_dir}
 

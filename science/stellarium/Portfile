@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,8 +26,8 @@ if {${name} eq ${subport}} {
     conflicts       stellarium-devel stellarium-qt4
     github.setup    Stellarium stellarium 0.18.2 v
     checksums       rmd160  7eb375e9c1cfa57e81bf35ce40c36fe3a81f95b5 \
-sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
-size    265610764
+                    sha256  dac3d71fd24df72cfd3f3e69e4d24498999359c0e5f6bb4e5b29c04aaeb399a4 \
+                    size    265610764
 
 } else {
 
@@ -37,11 +37,11 @@ size    265610764
         This port is kept up with the Stellarium GIT master branch, which is typically updated daily to weekly.
 
     conflicts       stellarium stellarium-qt4
-    github.setup    Stellarium stellarium d2962c6c0185c66f3e0e7f1d4663b88686ff6f2e
-    version         20181103
-    checksums       rmd160 02ce290425c2182a32a1d823779a2daf0db98d06 \
-sha256 ce16b0eb956e7822db0782ea160e5a0abb96fbd7c8605374b4d7c1d43a70e69a \
-size   304509726
+    github.setup    Stellarium stellarium 013a31f8b9d431ec62c5929dc631ce013b0eb59f
+    version         20181112
+    checksums       rmd160 f2ea427fee46c5cd2ee1fe442e23caa6e4c42b99 \
+                    sha256 17165a547cb90442dd61481427a259cb21a7cc78b35076478189383e568c7ccf \
+                    size   307780606
 
 }
 
@@ -57,7 +57,7 @@ depends_lib-append \
     path:lib/libgps.dylib:gpsd \
     port:gettext \
     port:doxygen \
-    port:python37
+    port:python27
 
 # for libqcocoa.dylib (if not above)
 

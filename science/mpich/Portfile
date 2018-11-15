@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -26,7 +26,7 @@ long_description    MPICH is a high-performance and widely portable\
                     (1) to provide an MPI implementation that efficiently\
                     supports different computation and communication platforms\
                     including commodity clusters (desktop systems,\
-shared-memory systems, multicore architectures), high-speed\
+                    shared-memory systems, multicore architectures), high-speed\
                     networks (10 Gigabit Ethernet, InfiniBand, Myrinet,\
                     Quadrics) and proprietary high-end computing systems (Blue\
                     Gene, Cray) and (2) to enable cutting-edge research in MPI\
@@ -37,9 +37,9 @@ homepage            http://www.mpich.org/
 master_sites        ${homepage}static/downloads/${version}
 
 checksums \
-rmd160  b830ba3f5cb5401c03898ad9abf87c60d5cf1e50 \
-sha256  5db53bf2edfaa2238eb6a0a5bc3d2c2ccbfbb1badd79b664a1a919d2ce2330f1 \
-size    11908154
+    rmd160  b830ba3f5cb5401c03898ad9abf87c60d5cf1e50 \
+    sha256  5db53bf2edfaa2238eb6a0a5bc3d2c2ccbfbb1badd79b664a1a919d2ce2330f1 \
+    size    11908154
 
 livecheck.type      regex
 livecheck.regex     {href=.([0-9.p]+)/}
@@ -47,7 +47,7 @@ livecheck.url       ${homepage}/static/downloads/
 
 if {[string first "-devel" $subport] > 0} {
     name                mpich-devel
-    version             3.3b3
+    version             3.3rc1
     revision            0
     # To see 3.2 as newer than 3.2rcX
     epoch               2
@@ -68,9 +68,12 @@ if {[string first "-devel" $subport] > 0} {
     livecheck.type      none
     # livecheck.regex     {href=.([0-9.abrcp]+)/}
     checksums \
-rmd160  d92c79d1daec0614968872f4d6c292894c4f3395 \
-sha256  73a881c065f798a47a7db1e0ad34ad16c4cb73bf7ebf34c97618aac152c416bf \
-size    22784014
+        rmd160  40c558dd598b2bbf8772925722a52c1eb0ffdd41 \
+        sha256  4a83f1f3b28d1bcd2f6dc9f91c87cf74583dc5f29cfef172015844b9ec75e9f2 \
+        size    27216970
+
+    # Currently getting spurious crashes on MPI_Finalize() with 3.2.1
+    configure.args-append   --enable-nemesis-shm-collectives
 }
 
 # As MPICH creates compiler wrappers, there are lots of
@@ -79,8 +82,19 @@ size    22784014
 # Subport names and corresponding configure.compiler value
 array set clist {
     clang   {clang}
+    clang37 {macports-clang-3.7}
+    clang39 {macports-clang-3.9}
+    clang40 {macports-clang-4.0}
+    clang50 {macports-clang-5.0}
+    clang60 {macports-clang-6.0}
     clang70 {macports-clang-7.0}
-    gcc9    {macports-gcc-9}
+    gcc44   {macports-gcc-4.4}
+    gcc48   {macports-gcc-4.8}
+    gcc49   {macports-gcc-4.9}
+    gcc5    {macports-gcc-5}
+    gcc6    {macports-gcc-6}
+    gcc7    {macports-gcc-7}
+    gcc8    {macports-gcc-8}
 }
 
 foreach key [array name clist] {
@@ -102,7 +116,6 @@ configure.args      --disable-dependency-tracking    \
                     --enable-cache                   \
                     --enable-cxx                     \
                     --enable-fast=O2                 \
-                    --enable-nemesis-shm-collectives \
                     --enable-shared                  \
                     --enable-versioning              \
                     --with-device=ch3:nemesis        \
@@ -276,7 +289,7 @@ if {${subport} != ${name}} {
 
     if { [string first gcc $cname] == 0 } {
         append long_description " AND FORTRAN COMPILERS"
-        revision                5
+        revision                6
         configure.args-delete   --disable-fortran
         configure.args-append   --enable-fortran
         select.file             ${filespath}/${name}-${cname}-fortran
@@ -306,7 +319,7 @@ if {${subport} != ${name}} {
         }
     } else {
         append long_description " (AND THE FORTRAN COMPILER SELECTED BY THE VARIANT, IF ANY)"
-        revision                4
+        revision                5
 
         compilers.choose   fc f77 f90
         compilers.setup    default_fortran
@@ -350,18 +363,22 @@ notes "
 
 "
 
-    if {[variant_isset gcc5]} {
+    if {[variant_isset gcc48] ||
+        [variant_isset gcc49] ||
+        [variant_isset gcc5] ||
+        [variant_isset gcc6] ||
+        [variant_isset gcc7] } {
         set DEFAULT_MSG "
-NOTE: Default fortran changed to +gcc6; consider switching variants to enable
+NOTE: Default fortran changed to +gcc8; consider switching variants to enable
 pre-built packages for ${subport} by running:
-  \"sudo port clean ${subport} && sudo port upgrade ${subport} +gcc6-gcc5\"
+  \"sudo port clean ${subport} && sudo port upgrade ${subport} +gcc8-gcc<N>\"
 "
         notes-append    ${DEFAULT_MSG}
 
         pre-fetch {
             ui_msg ${DEFAULT_MSG}
             system "sleep 3"
-            ui_msg "Continuing with local +gcc5 build."
+            ui_msg "Continuing with local build."
         }
     }
 

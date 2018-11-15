@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -27,7 +27,7 @@ if {${os.platform} eq "darwin" && ${os.major} == 10} {
     github.setup    glfw glfw a94a84b507b0d6d11e8a3f257cb21f4bd6553516
     version         3.1.2-20151024
     checksums       rmd160 1c07a75a88f272653ca246aa1212a208a83ecb30 \
-sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
+                    sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
 
     # bump the epoch because I moved the version from 20151012 to 3.1.2
 
@@ -51,7 +51,7 @@ sha256 ff4745264f92b740c50ecc90370f102c86c439f2b6108f1495bd60c87e5d6a83
 
         github.setup    glfw glfw 3.2.1
         checksums       rmd160 5fb5988736a0a2812426907ab8d64b94eeacc010 \
-sha256 34bc25f8111501eec35a52fd39fa50336a0c2e812d4a14454c7c946458ab015c
+                        sha256 34bc25f8111501eec35a52fd39fa50336a0c2e812d4a14454c7c946458ab015c
 
         # bump the epoch because I moved the version from 20151012 to 3.1.2
 
@@ -69,11 +69,11 @@ sha256 34bc25f8111501eec35a52fd39fa50336a0c2e812d4a14454c7c946458ab015c
 
         # devel
 
-        github.setup    glfw glfw cc3552465de96118d2fae3c80c5f38dbc89d3d52
-        version         20181103
-        checksums       rmd160 33ff4a163efb932647a16ac1a562adb34e072fe8 \
-sha256 0797de5e755d77f9535ee68348a2d3115e9a1c710ad5890971f87c4286fe487e \
-size   767560
+        github.setup    glfw glfw 53c8c72c676ca97c10aedfe3d0eb4271c5b23dba
+        version         20181104
+        checksums       rmd160 2d35b29b1dc4ab0c6b6b0271ac9055f583d20724 \
+                        sha256 4f38ceb5b5e8bd993ab3d2d75820f10536e0ebb43318129aee7039c015f554af \
+                        size   767765
 
         conflicts       glfw
         long_description ${description}: \
