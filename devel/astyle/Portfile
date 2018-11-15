@@ -33,7 +33,7 @@ patchfiles          patch-CMakeLists.txt.diff
 # things, we have to do each one separately.
 set builds {
                     executable  {}
-                    shared      {-DBUILD_SHARED_LIBS=ON}
+shared      {-DBUILD_SHARED_LIBS=ON}
                     static      {-DBUILD_STATIC_LIBS=ON}
 }
 

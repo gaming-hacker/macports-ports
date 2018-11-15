@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -31,8 +31,8 @@ depends_lib         port:libiconv \
 use_xz              yes
 
 checksums           rmd160  9bdfcd3959043c177f8ff7f9bb1f8e7d2118f57c \
-                    sha256  62373e83a8a165b2ed43967975efecd3feee530f4557d6b861dd08aa89d52b2d \
-                    size    43896
+sha256  62373e83a8a165b2ed43967975efecd3feee530f4557d6b861dd08aa89d52b2d \
+size    43896
 
 patchfiles          patch-iconv.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ long_description    SHC is a generic shell script compiler. It takes a script,\
     option.
 
 checksums           rmd160  1da9f78a13fb1d8d0a88aa6e40421c50cb56bd90 \
-                    sha256  706e4f02cfa85ba459eb6114fd37ff17b037b9d108e3cae48aee2ba0a00b6910 \
-                    size    136741
+sha256  706e4f02cfa85ba459eb6114fd37ff17b037b9d108e3cae48aee2ba0a00b6910 \
+size    136741
 
 # Do not grab alpha releases
 livecheck.regex     (\[0-9\]+\\.\[0-9\]+\\.\[0-9\]+)${extract.suffix}

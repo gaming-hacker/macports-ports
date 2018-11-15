@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ homepage            http://www.percona.com/software/percona-toolkit
 master_sites        https://www.percona.com/downloads/percona-toolkit/$version/source/tarball
 
 checksums           rmd160 0f322694b47432fa7998cd3d1fe434b7013adc16 \
-                    sha256 7d15d6b186a0fa6e45a1f9c390fab210b1d18f66d24d58b1bea30d2f59b35e20 \
-                    size   16205557
+sha256 7d15d6b186a0fa6e45a1f9c390fab210b1d18f66d24d58b1bea30d2f59b35e20 \
+size   16205557
 
 set mp.perl.versions {
     5.26

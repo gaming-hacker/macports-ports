@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {${subport} eq "volk-gnss-sdr"} {
     github.setup        gnss-sdr gnss-sdr 0.0.9 v
     revision            3
     checksums           rmd160 695cab70f3fe597e53cc772bfb96096e6fe0d139 \
-                        sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
+sha256 5110f66c8b8a63ee5db5569f0b1f8040f36e3541a3a249d08f3154bc05317184
     github.tarball_from tags
 
     # github changed the way tarballs are generated
@@ -45,8 +45,8 @@ subport volk-gnss-sdr-devel {
     github.setup        gnss-sdr gnss-sdr c224817e9ce2bbac8f81a48168757d316cfd1694
     version             20180828
     checksums           rmd160 6dd660cfeace4f70ecf9c08995d8469bd7c1b77d \
-                        sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
-                        size   3311359
+sha256 644aa9acd223836aab2637fd787cba44ee35c5bb80257a8cab8edd780e4e97cc \
+size   3311359
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-next
 
@@ -60,8 +60,8 @@ subport volk-gnss-sdr-next {
     github.setup        gnss-sdr gnss-sdr b9fb38d71ef2295e80b8f58f0eacb21f4ffdd2bd
     version             20181112
     checksums           rmd160 5d28c6386b1800653178b175d3b22193eae41078 \
-                        sha256 84cd2e68b4ec638e604c3e5f7c3a5b6d3b9126e9e963d80fa4ba82b1153a0069 \
-                        size   3569608
+sha256 84cd2e68b4ec638e604c3e5f7c3a5b6d3b9126e9e963d80fa4ba82b1153a0069 \
+size   3569608
 
     conflicts           volk-gnss-sdr volk-gnss-sdr-devel
 
@@ -88,9 +88,9 @@ depends_build-append port:pkgconfig
 depends_lib-append \
     path:lib/libvolk.dylib:volk \
     port:orc \
-    port:python27 \
-    port:py27-mako \
-    port:py27-six \
+    port:python37 \
+    port:py37-mako \
+    port:py37-six \
     port:boost
 
 # do VPATH (out of source tree) build
@@ -109,7 +109,7 @@ configure.ldflags-delete -L${prefix}/lib
 # specify the Python version to use
 
 configure.args-append \
-    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+    -DPYTHON_EXECUTABLE=${frameworks_dir}/Python.framework/Versions/3.7/bin/python2.7
 
 # specify where to install cmake files
 
