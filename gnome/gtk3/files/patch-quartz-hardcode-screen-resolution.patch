@@ -1,11 +1,16 @@
-From 828f634d5c08b9c39626dd1512ec7a1af4800f3d Mon Sep 17 00:00:00 2001
-From: John Ralls <jralls@ceridwen.us>
-Date: Mon, 30 Apr 2018 20:34:45 -0700
-Subject: [PATCH] [Quartz] Hardcode screen resolution for text at 96.0.
+This patch comprises two upstream patches
 
-It seems that CoreText is internally calibrated for this, see
-https://bugzilla.gnome.org/show_bug.cgi?id=787867 for a detailed
-discussion.
+https://github.com/GNOME/gtk/commit/828f634 and
+https://github.com/GNOME/gtk/commit/bb376222c104aef0ec7e31b40959bc35eecf2253
+
+for the gtk3 3.22.30 release to solve the font rendering
+problem for the quartz backend of gtk on HiDPI screens
+like the MacBookPro Retina. The 828f634 patch is already
+in 3.24.1 and the bb3762 patch will be in 3.24.2. See
+
+https://bugzilla.gnome.org/show_bug.cgi?id=787867
+
+for a detailed discussion.
 ---
  gdk/quartz/gdkscreen-quartz.c | 18 +++++++++++-------
  1 file changed, 11 insertions(+), 7 deletions(-)
@@ -19,7 +24,7 @@ index 586f7af02a6..219338832ee 100644
                                                CGDisplayChangeSummaryFlags  flags,
                                                void                        *userInfo);
 -
-+static const double dpi = 96.0;
++static const double dpi = 72.0;
  static gint get_mm_from_pixels (NSScreen *screen, int pixels);
  
  G_DEFINE_TYPE (GdkQuartzScreen, gdk_quartz_screen, GDK_TYPE_SCREEN);
