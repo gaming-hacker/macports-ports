@@ -8,7 +8,7 @@ perl5.setup         Tcl 1.27
 revision            1
 
 platforms           darwin
-maintainers         {@mojca mojca} openmaintainer
+maintainers         {@chrstphrchvz gmx.us:chrischavez} {@mojca mojca} openmaintainer
 license             {Artistic-1 GPL}
 
 description         Tcl extension module for Perl
