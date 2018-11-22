@@ -29,8 +29,8 @@ sha1    f5f8e1a427339a4e9113b5fa513b01a42ae1be4b \
 rmd160  0c4a07726c2f9819da0f8aa8f1982e939f1fc20f
 =======
 checksums           rmd160  2f047baa0e2af16c949f6bb33667124253e231e4 \
-                    sha256  761934c1c62daf69215f085ba24d7f9cd4db05ef0ad735383d68fb03d21571ad \
-                    size    2119840
+sha256  761934c1c62daf69215f085ba24d7f9cd4db05ef0ad735383d68fb03d21571ad \
+size    2119840
 >>>>>>> 5dd6f69b0aca6f7d3bd0f765f7f220c4c16fe107
 
 configure.args      --bindir=${applications_dir} \
