@@ -1,16 +1,16 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-reportlab
-version             3.5.9
+version             3.5.11
 revision            0
 categories-append   textproc
 platforms           darwin
 license             BSD
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname} 
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  386728da9fee497126dbfc1183d94488471e2d09 \
-sha256  f92f81314807cd860f29fe07a1a4100b03910ae6bbfca20a07e02c3b460f4f20 \
-size    2837351
+checksums           rmd160  9421aca73fa1c84c298d919557372d4906b0248d \
+                    sha256  234e1790858f1608d2fc8f820fa5660b7838cb14f12dec81e3c1156a4891ee1a \
+                    size    2840468
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

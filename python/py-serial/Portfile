@@ -1,4 +1,5 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,20 +9,19 @@ github.setup        pyserial pyserial 3.0 v
 name                py-serial
 categories-append   comms
 platforms           darwin
-maintainers         twinleaf.com:maintainers \
-                    openmaintainer
+maintainers         nomaintainer
 license             BSD
 description         Python Serial Port Extension
-long_description    This module incapsulates the access for the serial port. \
+long_description    This module encapsulates the access for the serial port. \
                     It provides backends for standard Python running on Windows, \
                     Linux, BSD (possibly any POSIX compliant system) and Jython. \
                     The module named "serial" automatically selects the appropriate \
                     backend.
 
 checksums           rmd160  6e5466e785a61d42ff9d1de2e4bfa0cf059eb02d \
-sha256  1e4043a9b02849c3bea778c7a3c53aec17e3465643f199732f2febbf2d01b5a9
+                    sha256  1e4043a9b02849c3bea778c7a3c53aec17e3465643f199732f2febbf2d01b5a9
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

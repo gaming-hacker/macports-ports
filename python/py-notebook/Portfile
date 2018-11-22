@@ -1,17 +1,17 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-notebook
-version             5.7.0
+version             5.7.2
 revision            0
 categories-append   devel science
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  f887456cbdc23b343e704080ec4ebf8f75771b38 \
-sha256  b85e4de3d54cf4f14fe1d0515a980ccb49ddd4cdd21250cc0d4fb6374d50b1a7 \
-size    13394162
+checksums           rmd160  3b5753e9674b9b6e44f93518a72b4180c9472e1a \
+                    sha256  91705b109fc785198faed892489cddb233265564d5e2dad5e4f7974af05ee8dd \
+                    size    13394141
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

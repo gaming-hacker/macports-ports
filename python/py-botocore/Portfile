@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-botocore
-version             1.12.42
+version             1.12.47
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
@@ -19,11 +19,11 @@ homepage            https://github.com/boto/botocore
 master_sites        pypi:b/botocore
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  9ca7f2aad18f4653c439303b60030eece5cff18d \
-sha256  0e495bcf2e474b82da7938b35ad2f71e28384c246b47ca131779f736621da504 \
-size    4928041
+checksums           rmd160  b674566c54c1bc1c9f06804859c2c516ab321e00 \
+                    sha256  f802865c2fdffccc47a9843f4439ce0e36bc4e1bafc18fc9e79623212f7fa468 \
+                    size    4992315
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

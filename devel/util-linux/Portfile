@@ -35,6 +35,17 @@ sha256  86e6707a379c7ff5489c218cfaf1e3464b0b95acf7817db0bc5f179e356a67b2 \
 size    4561088
 }
 
+if { ${os.platform} eq "darwin" && ${os.major} < 14 } {
+    # versions after this use faccessat and are compatible with darwin 14 and newer
+    # https://github.com/karelzak/util-linux/issues/716
+    github.setup        karelzak util-linux 2.32.1 v
+    revision            1
+
+    checksums           rmd160  bf61cb460eabcfdb90909dbcfd8e64bb9097ce65 \
+                        sha256  86e6707a379c7ff5489c218cfaf1e3464b0b95acf7817db0bc5f179e356a67b2 \
+                        size    4561088
+}
+
 depends_lib-append  port:gettext \
                     port:ncurses
 

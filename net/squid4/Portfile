@@ -38,7 +38,8 @@ rmd160 80bc003279374e84f283d0a41bafa1da95c27256
 
 patchfiles      patch-cf.data.pre.diff \
                 patch-compat_types.h.diff \
-                patch-basic_pam_auth.cc.diff
+                patch-basic_pam_auth.cc.diff \
+                kerberos_ldap_group_Makefile.in.diff
 
 platform darwin 10 {
     # ticket #37102, /usr/include/rpcsvc/yp_prot.h tries to redefine bool
