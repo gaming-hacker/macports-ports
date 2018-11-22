@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ master_sites        https://archive.hadrons.org/software/libmd/
 use_xz yes
 
 checksums           rmd160  0067fbe7cbb8b35d45dd891db86922ac90680122 \
-                    sha256  e14eeb931cf85330f95ff822262d3033125488dfb2f867441e36e2d2c4a34c71 \
-                    size    257372
+sha256  e14eeb931cf85330f95ff822262d3033125488dfb2f867441e36e2d2c4a34c71 \
+size    257372
 
 patchfiles          0002-drop-weakness-of-SHA384-symbols.patch
 

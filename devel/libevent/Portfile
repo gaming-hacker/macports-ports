@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,7 +21,7 @@ long_description    The libevent API provides a mechanism to execute \
 homepage            http://libevent.org
 
 checksums           rmd160  f23ad93d555089535085c99f3f8cbb9ebae4fd53 \
-                    sha256  d53e88f2b31fbccab93f6b1e54fe7f4c1d536b6d8250c95cd42dbc14f958baeb
+sha256  d53e88f2b31fbccab93f6b1e54fe7f4c1d536b6d8250c95cd42dbc14f958baeb
 
 depends_lib         path:lib/libssl.dylib:openssl
 

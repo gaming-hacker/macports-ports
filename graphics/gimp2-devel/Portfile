@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -31,8 +31,8 @@ distname            ${git_name}-${git_commit}
 use_bzip2           yes
 
 checksums           rmd160  44961affa5c1d5940bd46d777845956099c4c1ba \
-                    sha256  c43e0af066f31c0ffb44fa74c8d3467b3cb12fda6136d686e5b57f1b55bc3932 \
-                    size    82059689
+sha256  c43e0af066f31c0ffb44fa74c8d3467b3cb12fda6136d686e5b57f1b55bc3932 \
+size    82059689
 
 set perl_version    5.26
 
@@ -155,11 +155,11 @@ configure.args      --build=${configure.build_arch}-apple-${os.platform}${os.ver
 # - /opt/local/share/gimp/2.0/fonts/
 destroot.keepdirs   ${destroot}${prefix}/share/gimp/2.0/fonts
 
-variant python27 description {Build with python plugin support using python 2.7} {
+variant python37 description {Build with python plugin support using python 3.7} {
     configure.args-delete     --disable-python
     configure.python          ${prefix}/bin/python2.7
-    depends_lib-append        port:py27-pygtk
-    set python_framework      ${frameworks_dir}/Python.framework/Versions/2.7
+    depends_lib-append        port:py37-pygtk
+    set python_framework      ${frameworks_dir}/Python.framework/Versions/3.7
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
     configure.env-append      PATH=${python_framework}/bin:$env(PATH)
 }
@@ -190,7 +190,7 @@ variant quartz {
 # set default variants
 #
 
-default_variants    +python27
+default_variants    +python37
 
 post-activate {
     system "${prefix}/bin/gtk-update-icon-cache -f -t ${prefix}/share/icons/hicolor"

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -24,8 +24,8 @@ dist_subdir         tcltk
 distname            ${name}${version}.1-src
 
 checksums           rmd160  34ec51e1dbf02459960f77795009743708490831 \
-                    sha256  8fcbcd958a8fd727e279f4cac00971eee2ce271dc741650b1fc33375fb74ebb4 \
-                    size    4364603
+sha256  8fcbcd958a8fd727e279f4cac00971eee2ce271dc741650b1fc33375fb74ebb4 \
+size    4364603
 
 depends_build       port:pkgconfig
 

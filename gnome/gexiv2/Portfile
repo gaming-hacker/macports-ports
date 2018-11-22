@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -22,8 +22,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  cbbd9cb12bd685f8c07d3a388370a07b49ba789b \
-                    sha256  8806234aa6fd1c345d46bf07a14e82771415071ca5ff63615b1ea62bd2fec0ed \
-                    size    380348
+sha256  8806234aa6fd1c345d46bf07a14e82771415071ca5ff63615b1ea62bd2fec0ed \
+size    380348
 
 depends_build       port:pkgconfig \
                     port:autoconf \
@@ -44,12 +44,12 @@ configure.args      --enable-compile-warnings=no \
 
 # one each of python2 python3 allowed
 
-variant python27 description {Build Python2 bindings using Python 2.7} {
-    depends_lib-append      port:py27-gobject3
+variant python37 description {Build Python2 bindings using Python 3.7} {
+    depends_lib-append      port:py37-gobject3
     configure.env-append    PYTHON2_PATH=${prefix}/bin/python2.7
 }
 
-default_variants +python27
+default_variants +python37
 
 variant python35 conflicts python36 python37 description {Build Python3 bindings using Python 3.5} {
     depends_lib-append      port:py35-gobject3

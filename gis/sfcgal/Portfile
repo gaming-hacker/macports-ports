@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.0
@@ -24,8 +24,8 @@ revision            0
 name                sfcgal
 
 checksums           rmd160  63cac05ff9c903b7698ce9ad0d14a8bd10a014a4 \
-                    sha256  31b4b33572a37171137f1f9f2d879e5211fa416fe475c75e11c3b299d014b635 \
-                    size    2473842
+sha256  31b4b33572a37171137f1f9f2d879e5211fa416fe475c75e11c3b299d014b635 \
+size    2473842
 
 depends_lib-append  port:cgal \
                     port:mpfr \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -19,10 +19,10 @@ description             Pycairo is set of Python bindings for the cairo graphics
 long_description        ${description}
 
 checksums               rmd160  0e5f6d6c9be9b7a58ac74b4b2dbee802e07e8d8a \
-                        sha256  abd42a4c9c2069febb4c38fe74bfc4b4a9d3a89fea3bc2e4ba7baff7a20f783f \
-                        size    202140
+sha256  abd42a4c9c2069febb4c38fe74bfc4b4a9d3a89fea3bc2e4ba7baff7a20f783f \
+size    202140
 
-python.versions         27 34 35 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:pkgconfig

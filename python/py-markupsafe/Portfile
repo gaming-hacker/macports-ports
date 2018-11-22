@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   textproc
 platforms           darwin
 license             BSD
 
-python.versions     27 34 35 36 37
+python.version 37
 
 maintainers         nomaintainer
 
@@ -21,8 +21,8 @@ master_sites        pypi:M/MarkupSafe
 distname            MarkupSafe-${version}
 
 checksums           rmd160  e6c0a61abb702197a59746c01d7747c661364996 \
-                    sha256  4e97332c9ce444b0c2c38dd22ddc61c743eb208d916e4265a2a3b575bdccb1d3 \
-                    size    18938
+sha256  4e97332c9ce444b0c2c38dd22ddc61c743eb208d916e4265a2a3b575bdccb1d3 \
+size    18938
 
 if {${name} ne ${subport}} {
     depends_build-append \

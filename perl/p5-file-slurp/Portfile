@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,7 +20,7 @@ long_description    This module provides subs that allow you to read or \
 platforms           darwin
 
 checksums           rmd160  786eef19241015ba11572b4dfeb54acbece6c0e8 \
-                    sha256  c7ea97bae61bc68404476ce69277f6f796d31ab58c9c40ee390d9d5a1c5ce3c1 \
-                    size    38260
+sha256  c7ea97bae61bc68404476ce69277f6f796d31ab58c9c40ee390d9d5a1c5ce3c1 \
+size    38260
 
 supported_archs     noarch

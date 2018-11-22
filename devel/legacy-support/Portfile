@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,8 +12,8 @@ revision            1
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  6696fc5b8b380a2740fea1efacb4132ff2315cc5 \
-                    sha256  79fef11cfd82a55ec94721e258730faab37a965d2225a8dc5c98adc09728cd01 \
-                    size    7920
+sha256  79fef11cfd82a55ec94721e258730faab37a965d2225a8dc5c98adc09728cd01 \
+size    7920
 
 if {${subport} eq ${name}} {
     conflicts       ${name}-devel
@@ -24,8 +24,8 @@ subport ${name}-devel {
 	github.setup        macports macports-legacy-support 462d0d0951767032d80b6467beab03f1236cecec
 	version             20181121
 	checksums           rmd160  7db691b2531f15a6789e90ba5172b10b096875f3 \
-						sha256  9f61b274111c4e1f546486bff3dfdefbc5fe94ee800abef1fc18656b325e5295 \
-						size    11189
+sha256  9f61b274111c4e1f546486bff3dfdefbc5fe94ee800abef1fc18656b325e5295 \
+size    11189
 }
 
 categories          devel

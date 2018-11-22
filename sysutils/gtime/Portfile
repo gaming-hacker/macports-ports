@@ -24,8 +24,8 @@ master_sites        gnu:time
 distname            time-${version}
 
 checksums           sha256  fbacf0c81e62429df3e33bda4cee38756604f18e01d977338e23306a3e3b521e \
-                    rmd160  a9e2142d7014e5fefd34baf4fd06a05ac58730d4 \
-                    size    596779
+rmd160  a9e2142d7014e5fefd34baf4fd06a05ac58730d4 \
+size    596779
 
 configure.args      --program-prefix=g
 

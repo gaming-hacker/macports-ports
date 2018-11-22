@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -24,8 +24,8 @@ license             GPL-2+
 homepage            http://www.qgis.org/
 
 checksums           rmd160  ee73b43e7312b46ed0a60d691a29c78c1b62be58 \
-                    sha256  cdb3da10a9b7e92b96023247aa7712586ad96aee717ec3f71d9bdf9390f7cb4f \
-                    size    88528772
+sha256  cdb3da10a9b7e92b96023247aa7712586ad96aee717ec3f71d9bdf9390f7cb4f \
+size    88528772
 
 # Qt version
 set                 QtVer   5

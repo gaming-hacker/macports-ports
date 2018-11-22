@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        https://dist.torproject.org/
 distname            tor-${version}
 
 checksums           rmd160  597310466b0d2c6ec08c17c5e36505658416175e \
-                    sha256  84d746abc960e8212fc8bffbf91020ab55d426d2a00751cfd038c41c1bee1332 \
-                    size    6893528
+sha256  84d746abc960e8212fc8bffbf91020ab55d426d2a00751cfd038c41c1bee1332 \
+size    6893528
 
 depends_lib         port:libevent \
                     path:lib/libssl.dylib:openssl \
