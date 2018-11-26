@@ -46,7 +46,7 @@
 options ruby.default_branch
 default ruby.default_branch 2.5
 options ruby.branch ruby.branches
-default ruby.branches {}
+default ruby.branches {2.5}
 options ruby.bin ruby.rdoc ruby.gem ruby.rake ruby.bindir ruby.gemdir ruby.suffix
 options ruby.api_version ruby.lib ruby.archlib
 # ruby.version is obsoleted. use ruby.api_version.
@@ -91,7 +91,7 @@ set ruby.project        ""
 set ruby.docs           {}
 set ruby.srcdir         ""
 set ruby.prog_suffix    ""
-
+set ruby.suffix 25
 # detect setup.rb config option name of --rubyprog.
 # some setup.rb accepts this option by other name, such as --ruby-prog.
 # NOTE: set the value *before ruby.setup* to use ohter name.
@@ -166,17 +166,17 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
                 return
             }
         }
-    } else {
-        switch ${implementation} {
-            ruby25 { ruby.branch 2.5 }
-            default {
-                ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
-                return -code error "ruby.setup failed"
-            }
-        }
-        name            rb${ruby.suffix}-[string tolower ${ruby.module}]
-        depends_lib     port:${implementation}
-    }
+#     } else {
+#         switch ${implementation} {
+#             ruby25 { ruby.branch 2.5 }
+#             default {
+#                 ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
+#                 return -code error "ruby.setup failed"
+#             }
+#         }
+#         name            rb${ruby.suffix}-[string tolower ${ruby.module}]
+#         depends_lib     port:${implementation}
+#     }
 
     set ruby.docs   ${docs}
 
