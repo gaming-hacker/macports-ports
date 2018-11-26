@@ -36,7 +36,7 @@ use_configure       no
 
 variant universal {}
 
-build.target        allmost
+build.target        default
 
 build.env-append    CC="${configure.cc}" \
                     CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \

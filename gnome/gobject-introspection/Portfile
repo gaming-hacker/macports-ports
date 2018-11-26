@@ -40,7 +40,7 @@ post-patch {
     reinplace "s|libcairo-gobject.2.dylib|${prefix}/lib/libcairo-gobject.2.dylib|g" ${worksrcpath}/configure
 }
 
-configure.python    ${prefix}/bin/python2.7
+configure.python    ${prefix}/bin/python3.7
 
 # use autoreconf to sync with our build tools
 use_autoreconf      yes

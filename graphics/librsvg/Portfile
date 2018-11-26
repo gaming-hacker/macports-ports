@@ -2,7 +2,7 @@
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
-# PortGroup user 1.0
+PortGroup user 1.0
 
 name                librsvg
 # version 2.42.3 requires unstable cairo >= 1.15.4
@@ -59,7 +59,7 @@ size    6054020
 
 gobject_introspection yes
 
-configure.args      --enable-vala=yes \
+configure.args      --enable-vala=no \
                     --disable-silent-rules \
                     --disable-Bsymbolic \
                     --disable-dependency-tracking \

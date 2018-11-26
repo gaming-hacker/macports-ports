@@ -25,7 +25,7 @@ long_description        zlib is designed to be a free, general-purpose, \
 master_sites            ${homepage}
 fetch.type          git
 
-configure.universal_args
+# configure.universal_args
 
 use_parallel_build      yes
 

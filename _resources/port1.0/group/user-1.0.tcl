@@ -10,19 +10,19 @@ set user.py.dot     3.7
 set user.py.nodot   37
 set user.arch       x86_64
 set user.ghub       gaming-hacker
-set user.ver.intel  2018.3.185
-set user.intel.root /opt/intel/compilers_and_libraries_${user.ver.intel}/mac
-set user.tbb.inc    ${user.intel.root}/tbb/inc
-set user.tbb.lib    ${user.intel.root}/tbb/lib
-set user.mkl.root   ${user.intel.root}/mkl
-set user.mkl.inc    ${user.intel.root}/mkl/inc
-set user.mkl.lib    ${user.intel.root}/mkl/lib
-set user.ipp.inc    ${user.intel.root}/ipp/inc
-set user.ipp.lib    ${user.intel.root}/ipp/lib
-set user.daal.inc   ${user.intel.root}/daal/inc
-set user.daal.lib   ${user.intel.root}/daal/lib
+# set user.ver.intel  2018.3.185
+# set user.intel.root /opt/intel/compilers_and_libraries_${user.ver.intel}/mac
+# set user.tbb.inc    ${user.intel.root}/tbb/inc
+# set user.tbb.lib    ${user.intel.root}/tbb/lib
+# set user.mkl.root   ${user.intel.root}/mkl
+# set user.mkl.inc    ${user.intel.root}/mkl/inc
+# set user.mkl.lib    ${user.intel.root}/mkl/lib
+# set user.ipp.inc    ${user.intel.root}/ipp/inc
+# set user.ipp.lib    ${user.intel.root}/ipp/lib
+# set user.daal.inc   ${user.intel.root}/daal/inc
+# set user.daal.lib   ${user.intel.root}/daal/lib
 
-set user.CFLAGS "-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.12 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2"
+set user.CFLAGS "-O3 -pipe -m64 -arch x86_64 -march=native -mtune=native -mmacosx-version-min=10.13 -fomit-frame-pointer -fno-common -mavx -mavx2 -mfma -mfpmath=sse -msse2 -msse3 -msse4.1 -msse4.2"
 
 set user.WNO "-Wno-unknown-warning-option -Wno-unused-function -Wno-unused-variable -Wno-unused-command-line-argument -Wno-ignored-optimization-argument"
 
@@ -44,7 +44,7 @@ set configure.cflags   "${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c11 -stdl
 
 set configure.cxx      "${prefix}/bin/clang++-mp-${user.ver.clang}"
 
-set configure.cxxflags "${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c++17 -stdlib=libc++"
+set configure.cxxflags "${user.CFLAGS} ${user.WNO} ${user.MACROS} -std=c++11 -stdlib=libc++"
 
 set configure.cpp      "${prefix}/bin/clang-cpp-mp-${user.ver.clang} -E"
 
@@ -52,6 +52,6 @@ set configure.env ${user.MACROS}
 
 set configure.optflags ${user.CFLAGS}
 
-set minimum_xcodeversions {16 9.0 17 9.0}
+set minimum_xcodeversions {17 10.0}
 
-set user.config.default  "--quiet --disable-option-checking  --enable-shared --enable-static  --enable-silent-rules --enable-fast-install --enable-pic --with-pic --disable-dependency-tracking --enable-libtool-lock --disable-debug --disable-example --enable-simd --enable-asm --enable-libc++ --enable-sse"
+set user.config.default  "--quiet --disable-option-checking  --enable-shared --disable-static  --enable-silent-rules --enable-fast-install --enable-pic --with-pic --disable-dependency-tracking --enable-libtool-lock --disable-debug --disable-example --enable-simd --enable-asm --enable-libc++ --enable-sse"

@@ -45,8 +45,8 @@ build.type gnu
 
 variant clang description {use whatever clang is first in your env} { build.type clang
 }
-variant clang6 description {use macports-clang-6.0} {
-configure.compiler  macports-clang-6.0
+variant clang7 description {use macports-clang-7.0} {
+configure.compiler  macports-clang-7.0
 build.type clang
 }
 
@@ -55,7 +55,7 @@ depends_build-append       port:gmake
 build.cmd           gmake
 }
 
-default_variants +clang6 +gmake
+default_variants +clang7 +gmake
 
 destroot.env-append     PREFIX=${prefix}
 
