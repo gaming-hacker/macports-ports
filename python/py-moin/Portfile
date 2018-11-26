@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ master_sites        http://static.moinmo.in/files/
 distname            moin-${version}
 
 checksums           rmd160  b6dc98e5c33c8e15dadf5f8063b86d8fce721c86 \
-                    sha256  4a264418e886082abd457c26991f4a8f4847cd1a2ffc11e10d66231da8a5053c \
-                    size    37283678
+sha256  4a264418e886082abd457c26991f4a8f4847cd1a2ffc11e10d66231da8a5053c \
+size    37283678
 
-python.versions     27
+python.version 37
 
 if {${name} ne ${subport}} {
     post-destroot {

@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    dante
 version                 1.4.2
@@ -28,7 +30,7 @@ master_sites            ${homepage}files/ \
 
 dist_subdir             ${name}/${version}_1
 checksums               rmd160 d2e01bf899b0df74ef441926c497385ab8040a7c \
-                        sha256 4c97cff23e5c9b00ca1ec8a95ab22972813921d7fbf60fc453e3e06382fc38a7
+sha256 4c97cff23e5c9b00ca1ec8a95ab22972813921d7fbf60fc453e3e06382fc38a7
 
 configure.args          --mandir=${prefix}/share/man \
                         --without-gssapi \

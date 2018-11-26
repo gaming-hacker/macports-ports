@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                youtube-dl
 version             2018.11.23
 checksums           rmd160  5d0631f4e10aea0ec4626066d3f090054b04551d \
-                    sha256  cf1fda52b5b6baaa625d80220c454c22876ae9e440d6c1e58ba4e529764bc00c \
-                    size    3061698
+sha256  cf1fda52b5b6baaa625d80220c454c22876ae9e440d6c1e58ba4e529764bc00c \
+size    3061698
 
 categories          net
 platforms           darwin
@@ -69,31 +69,31 @@ variant ffmpeg description {Add ffmpeg dependency, used to extract audio} {
 
 default_variants    +ffmpeg
 
-variant python27 conflicts python35 python36 python37 description {Use Python 2.7} {
-    depends_run-append      port:python27
-    depends_build-append    port:python27
+variant python37 conflicts python35 python36 python37 description {Use Python 3.7} {
+    depends_run-append      port:python37
+    depends_build-append    port:python37
     configure.python        ${prefix}/bin/python2.7
 }
 
-variant python35 conflicts python27 python36 python37 description {Use Python 3.5} {
+variant python35 conflicts python37 python36 python37 description {Use Python 3.5} {
     depends_run-append      port:python35
     depends_build-append    port:python35
     configure.python        ${prefix}/bin/python3.5
 }
 
-variant python36 conflicts python27 python35 python37 description {Use Python 3.6} {
+variant python36 conflicts python37 python35 python37 description {Use Python 3.6} {
     depends_run-append      port:python36
     depends_build-append    port:python36
     configure.python        ${prefix}/bin/python3.6
 }
 
-variant python37 conflicts python27 python35 python36 description {Use Python 3.7} {
+variant python37 conflicts python37 python35 python36 description {Use Python 3.7} {
     depends_run-append      port:python37
     depends_build-append    port:python37
     configure.python        ${prefix}/bin/python3.7
 }
 
-if {![variant_isset python27] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python37] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
     default_variants +python37
 }
 

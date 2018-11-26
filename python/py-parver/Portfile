@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ master_sites        pypi:p/parver
 distname            parver-${version}
 
 checksums           rmd160  039647a9756c967ca8f00c6e71693c5a3cd28299 \
-                    sha256  b8b2976fd8a73a0515465b2a265fd9b20cc25a6dc88bc1154fd5f60f10dad4db \
-                    size    26598
+sha256  b8b2976fd8a73a0515465b2a265fd9b20cc25a6dc88bc1154fd5f60f10dad4db \
+size    26598
 
-python.versions     27 36 37
+python.version 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

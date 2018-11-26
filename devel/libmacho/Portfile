@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 name                    libmacho
@@ -19,8 +19,8 @@ master_sites            https://opensource.apple.com/tarballs/cctools/
 distname                cctools-${version}
 
 checksums               rmd160  fedeb6bae83f0322cd131895cc39c525bf549581 \
-                        sha256  53449a7f2e316c7df5e6b94fd04e12b6d0356f2487d77aad3000134e4c010cc5 \
-                        size    1755929
+sha256  53449a7f2e316c7df5e6b94fd04e12b6d0356f2487d77aad3000134e4c010cc5 \
+size    1755929
 
 patchfiles              cctools-921-noavx512.patch
 

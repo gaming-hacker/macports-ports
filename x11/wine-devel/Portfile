@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   muniversal 1.0
@@ -59,21 +59,21 @@ distfiles                   ${wine_distfile}:winesource \
                             ${wine_mono_distfile}:winemono
 
 checksums                   ${wine_distfile} \
-                            rmd160  e4984745ebaaa4ac55702926def7632778d713b5 \
-                            sha256  a84cc06015df06e12c524213a98d879caa0d63f474b911cdd87f693fcfe2e0c0 \
-                            size    21573872 \
+rmd160  e4984745ebaaa4ac55702926def7632778d713b5 \
+sha256  a84cc06015df06e12c524213a98d879caa0d63f474b911cdd87f693fcfe2e0c0 \
+size    21573872 \
                             ${wine_gecko_distfile} \
-                            rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
-                            sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
-                            size    49266176 \
+rmd160  abf7cc78b49dd0623bc8fe87ae0e32bb8694e13d \
+sha256  3b8a361f5d63952d21caafd74e849a774994822fb96c5922b01d554f1677643a \
+size    49266176 \
                             ${wine_gecko64_distfile} \
-                            rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
-                            sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
-                            size    50806272 \
+rmd160  254da21cb2503f20d065167b385b3e83ea3ab327 \
+sha256  c565ea25e50ea953937d4ab01299e4306da4a556946327d253ea9b28357e4a7d \
+size    50806272 \
                             ${wine_mono_distfile} \
-                            rmd160  1c4aca42bfff33ca7fc485442820c84665a3e581 \
-                            sha256  d24a8017371c7e8224a1778bb43a113ed7ed9720efd9d0cda175d42db6106d3a \
-                            size    56470528
+rmd160  1c4aca42bfff33ca7fc485442820c84665a3e581 \
+sha256  d24a8017371c7e8224a1778bb43a113ed7ed9720efd9d0cda175d42db6106d3a \
+size    56470528
 
 # Note: Most of the X11 libs are dlopen()'d
 depends_lib                 port:fontconfig \

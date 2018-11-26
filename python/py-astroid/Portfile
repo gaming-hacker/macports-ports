@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 license             LGPL-2.1+
 supported_archs     noarch
 
-python.versions     27 34 35 36 37
+python.version 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,8 +28,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  d44ca4b42d075d31d45512c7ef7f8897a80c6d98 \
-                    sha256  35b032003d6a863f5dcd7ec11abd5cd5893428beaa31ab164982403bcb311f22 \
-                    size    276196
+sha256  35b032003d6a863f5dcd7ec11abd5cd5893428beaa31ab164982403bcb311f22 \
+size    276196
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -48,8 +48,8 @@ if {${name} ne ${subport}} {
         version         1.6.5
         distname        ${python.rootname}-${version}
         checksums       rmd160  bba1d1e3582e557ecbe6a56ca83adef5b1d80506 \
-                        sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
-                        size    255688
+sha256  fc9b582dba0366e63540982c3944a9230cbc6f303641c51483fa547dcc22393a \
+size    255688
 
         depends_lib-append \
                         port:py${python.version}-enum34 \
