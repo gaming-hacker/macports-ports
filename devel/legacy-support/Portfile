@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -10,28 +10,24 @@ platforms           darwin
 maintainers         {jonesc @cjones051073} {kencu @kencu} openmaintainer
 license             MIT
 
-description         Installs wrapper headers to add missing functionality from legacy OSX versions.
+description         Installs wrapper headers to add missing functionality to legacy OSX versions.
 long_description    ${description}
 
 subport ${name} {
     conflicts           ${name}-devel
-    github.setup        macports macports-legacy-support 0.5 v
-    checksums           rmd160  6696fc5b8b380a2740fea1efacb4132ff2315cc5 \
-sha256  79fef11cfd82a55ec94721e258730faab37a965d2225a8dc5c98adc09728cd01 \
-size    7920
-    revision            1
-    # Remove at the next version update
-    dist_subdir         ${name}/${version}_1
+    github.setup        macports macports-legacy-support 0.6 v
+    checksums           rmd160  96ac164b8216698e7a6caf29bd767cdc2956f001 \
+                        sha256  eafafaf64a7647db14e66adf6f687b483f66d60d98adb1d3f08b8f97fba1421d \
+                        size    11379
 }
 
 subport ${name}-devel {
     conflicts           ${name}
-    github.setup        macports macports-legacy-support 4a71b66776657bcad389c53a067b1966c864bcf6
-    version             20181122
-    checksums           rmd160  32374c83f5be4be61c377d563387e97464ad337c \
-sha256  8ab1c60b2a0f125c0ab56d2bf0526e1192ff606e88e60866536c5c42a0b241d9 \
-size    11276
-    revision            1
+    github.setup        macports macports-legacy-support 4a71459007f40711ebe8da0d27687b1499a00859
+    version             20181130
+    checksums           rmd160  04f0a9a6fd968c26f0ce068905fff7ce33f3f0fa \
+                        sha256  16c6496e0ad1333e994f3738383a428319d5278e150e7549bf82e2f63dfd8fd5 \
+                        size    11766
 }
 
 use_configure       no

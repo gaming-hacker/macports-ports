@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
 
 name                parallel
-version             20181022
+version             20181122
 categories          sysutils
 platforms           darwin
 license             GPL-3+
@@ -20,9 +20,9 @@ use_bzip2           yes
 
 depends_lib         port:perl5
 
-checksums           rmd160  e4eca0e4f722a066364920f5eeedcb209b61e547 \
-sha256  2e84dee3556cbb8f6a3794f5b21549faffb132db3fc68e2e95922963adcbdbec \
-size    1796547
+checksums           rmd160  db8400cab783adeaa27cc46b938c866cfdf3f4bc \
+                    sha256  2f06580c833ca30f434511ea28a0c097e75e3ee35a87b3a58512bd6d5cf598d5 \
+                    size    1797525
 
 post-patch {
     set perl_bin ${prefix}/bin/perl
