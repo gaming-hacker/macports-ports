@@ -22,8 +22,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  33e1cf607ba17a6408b2ac00c5be404cb50aa409 \
-                    sha256  d3744d22e398c19405d819d3c2d3bb82dc05a96513f577411c8847bb207dc289 \
-                    size    44171
+sha256  d3744d22e398c19405d819d3c2d3bb82dc05a96513f577411c8847bb207dc289 \
+size    44171
 
 python.version 37
 
