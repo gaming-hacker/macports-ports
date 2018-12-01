@@ -28,7 +28,7 @@ homepage            https://www.rust-lang.org/
 set ruststd_version 1.29.2
 set rustc_version   1.29.2
 set cargo_version   0.30.0
-set llvm_version    6.0
+set llvm_version    7.0
 
 # can use cmake or cmake-devel; default to cmake.
 depends_build       path:bin/cmake:cmake \
