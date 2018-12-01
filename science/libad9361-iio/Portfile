@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -17,8 +17,8 @@ github.setup analogdevicesinc libad9361-iio 77e947eb8f1cb4526cd397d0e3c452f67cf0
 version             20181124
 revision            1
 checksums           rmd160 d95c19f9e8b4eb7ca2858dcc8ae3455351a9b4d9 \
-                    sha256 a14be5c7242fcb9952939df9cff52e6addcede7ad9910db5cc6f3a90838d46df \
-                    size   160970
+sha256 a14be5c7242fcb9952939df9cff52e6addcede7ad9910db5cc6f3a90838d46df \
+size   160970
 
 # patch to fix install IIO header inclusion
 

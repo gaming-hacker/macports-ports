@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -24,8 +24,8 @@ homepage            http://www.saga-gis.org/en/index.html
 master_sites        sourceforge:project/saga-gis/SAGA%20-%207/SAGA%20-%20${version}
 
 checksums           rmd160  546c2c4757c1489731a4fbe7a14428384b25c8ea \
-                    sha256  b30418eb60c28324536011c0331a4da14f8f3881ddf2ac240e35944229fdc592 \
-                    size    4646132
+sha256  b30418eb60c28324536011c0331a4da14f8f3881ddf2ac240e35944229fdc592 \
+size    4646132
 
 patchfiles          patch-configure.diff
 
@@ -72,8 +72,8 @@ variant gui description "build the GUI interface" {
     configure.args-delete   --disable-gui
 }
 
-variant python27 description "build Python 2.7 bindings" {
-    depends_lib-append      port:python27\
+variant python37 description "build Python 3.7 bindings" {
+    depends_lib-append      port:python37\
                             port:swig-python
     
     configure.args-append   --enable-python
@@ -100,10 +100,10 @@ if {![variant_isset postgresql10] && ![variant_isset postgresql96]} {
 }
 
 post-destroot {
-    if {[variant_isset python27]} {
-        file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7
+    if {[variant_isset python37]} {
+        file mkdir ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7
         file rename ${destroot}${prefix}/lib/python2.7/site-packages \
-        ${destroot}${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
+        ${destroot}${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages
     }
 }
 

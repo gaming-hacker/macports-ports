@@ -37,8 +37,8 @@ size   8755304
 =======
     version             3.18.1
     checksums           rmd160  08f95b51218f11f7b07c1a5046cead366216fdc8 \
-                        sha256  5cb1e6d880ec9a52c62492dd0e3d77451b7c7ad625895bd652f6354215aec23e \
-                        size    9031595
+sha256  5cb1e6d880ec9a52c62492dd0e3d77451b7c7ad625895bd652f6354215aec23e \
+size    9031595
 >>>>>>> b1ae942d411bb90a22abe95da85a86219b6dbdb9
 
     master_sites        savannah
@@ -102,8 +102,8 @@ size   9770512
     version             20181126
     set commit          513cab610322755a45143eac42eb53ceb08fca2d
     checksums           rmd160  1b699eb333df171217c4c499468a6eff576e3ea6 \
-                        sha256  875c3283e6f4cc1061052d7bfdef891af566ac79af3b32de8b88330fc8d1921f \
-                        size    10067065
+sha256  875c3283e6f4cc1061052d7bfdef891af566ac79af3b32de8b88330fc8d1921f \
+size    10067065
 >>>>>>> b1ae942d411bb90a22abe95da85a86219b6dbdb9
 
     master_sites        http://git.savannah.gnu.org/cgit/gpsd.git/snapshot
@@ -158,7 +158,7 @@ foreach s ${pythons_suffixes} {
 }
 >>>>>>> b1ae942d411bb90a22abe95da85a86219b6dbdb9
 
-# default to +python27
+# default to +python37
 set pyver_no_dot "27"
 foreach s ${pythons_suffixes} {
     if {[variant_isset python${s}]} {
@@ -167,7 +167,7 @@ foreach s ${pythons_suffixes} {
 }
 default_variants +python${pyver_no_dot}
 
-# make sure -python27 isn't specified alone
+# make sure -python37 isn't specified alone
 set pyver_no_dot ""
 foreach s ${pythons_suffixes} {
     if {[variant_isset python${s}]} {

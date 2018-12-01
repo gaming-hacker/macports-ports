@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -26,8 +26,8 @@ master_sites        http://lilypond.org/download/sources/v${branch}/
 # master_sites      http://download.linuxaudio.org/lilypond/sources/v${branch}/
 distname            ${my_name}-${version}
 checksums           rmd160 71f199afa24a75cfde53337c2140e96c74d7857d \
-                    sha256 a5679cddb3e415828642f75027997596b814922aadb1fa633c8f973238ae291b \
-                    size   17407520
+sha256 a5679cddb3e415828642f75027997596b814922aadb1fa633c8f973238ae291b \
+size   17407520
 
 depends_build       port:autoconf \
                     port:t1utils \
@@ -53,11 +53,11 @@ depends_lib         port:fontconfig \
                     port:texlive-lang-cyrillic \
                     port:texlive-metapost \
                     port:dblatex \
-                    port:python27 \
+                    port:python37 \
                     port:urw-core35-fonts
 
 configure.cmd       autoconf -f && ./configure
-configure.python    ${frameworks_dir}/Python.framework/Versions/2.7/bin/python2.7
+configure.python    ${frameworks_dir}/Python.framework/Versions/3.7/bin/python2.7
 
 set lilyponddevel.texgyredir \
     "${prefix}/share/texmf-texlive/fonts/opentype/public/tex-gyre"

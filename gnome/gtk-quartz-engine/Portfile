@@ -17,8 +17,8 @@ checksums           rmd160  f2ae0bccf168a8281c82933d77fe96958603a102 \
 <<<<<<< HEAD
 sha256  56441340aabd79ead12fea043d5772084e9f76d066b1ccb34a77469e1f453031
 =======
-                    sha256  56441340aabd79ead12fea043d5772084e9f76d066b1ccb34a77469e1f453031 \
-                    size    29663
+sha256  56441340aabd79ead12fea043d5772084e9f76d066b1ccb34a77469e1f453031 \
+size    29663
 >>>>>>> b1ae942d411bb90a22abe95da85a86219b6dbdb9
 
 depends_build       port:pkgconfig \

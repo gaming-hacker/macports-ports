@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -32,7 +32,7 @@ set llvm_version    6.0
 
 # can use cmake or cmake-devel; default to cmake.
 depends_build       path:bin/cmake:cmake \
-                    bin:python2.7:python27
+                    bin:python2.7:python37
 
 depends_lib         port:llvm-${llvm_version}
 
@@ -66,37 +66,37 @@ foreach arch ${architectures} {
 }
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  9b8bda1fb32573e9b4160393d2031ff5e06df2f7 \
-                    sha256  36a38902dbd9a3e1240d46ab0f2ca40d2fd07c2ab6508ed7970c6c4c036b5b29 \
-                    size    149474922
+rmd160  9b8bda1fb32573e9b4160393d2031ff5e06df2f7 \
+sha256  36a38902dbd9a3e1240d46ab0f2ca40d2fd07c2ab6508ed7970c6c4c036b5b29 \
+size    149474922
 
 checksums-append \
                     rust-std-${ruststd_version}-i686-apple-${os.platform}${extract.suffix} \
-                    rmd160  f3f3ce75da15fa436e0bc97eaf1ce3d352e26b28 \
-                    sha256  ad6813a6ede805b0eb508877e04c519b94fb878f891f7dfbfe213788da3abf7d \
-                    size    57955341 \
+rmd160  f3f3ce75da15fa436e0bc97eaf1ce3d352e26b28 \
+sha256  ad6813a6ede805b0eb508877e04c519b94fb878f891f7dfbfe213788da3abf7d \
+size    57955341 \
                     rustc-${rustc_version}-i686-apple-${os.platform}${extract.suffix} \
-                    rmd160  c65c40ea0c0f2a61e54ef359b15942d885d7d6ea \
-                    sha256  2f1de5212764d33fe1b010fc18b00bea3a696097b6278a10fef7f08dde1b63ce \
-                    size    77715636 \
+rmd160  c65c40ea0c0f2a61e54ef359b15942d885d7d6ea \
+sha256  2f1de5212764d33fe1b010fc18b00bea3a696097b6278a10fef7f08dde1b63ce \
+size    77715636 \
                     cargo-${cargo_version}-i686-apple-${os.platform}${extract.suffix} \
-                    rmd160  c2aa8866807254af6bdefe0c17baa47b5e21ff32 \
-                    sha256  fb3fa6127387c7f633d7e6747038c4f854056f78f87e509df37118979b0064a0 \
-                    size    4615715
+rmd160  c2aa8866807254af6bdefe0c17baa47b5e21ff32 \
+sha256  fb3fa6127387c7f633d7e6747038c4f854056f78f87e509df37118979b0064a0 \
+size    4615715
 
 checksums-append \
                     rust-std-${ruststd_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  9c4a2a2ec906a0b8d71adc3619f76ce71f310716 \
-                    sha256  72cd953cb8ea05667f5d58f5c4ba615a564611a86303c0f8f9235e7a53852692 \
-                    size    59230589 \
+rmd160  9c4a2a2ec906a0b8d71adc3619f76ce71f310716 \
+sha256  72cd953cb8ea05667f5d58f5c4ba615a564611a86303c0f8f9235e7a53852692 \
+size    59230589 \
                     rustc-${rustc_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  d2d1c571ed033e28d673dc62f649ef9b8579aae5 \
-                    sha256  d9c0dd8127ed632e27d751f051bca933578317ffe891e39155ae721bc1d3ec05 \
-                    size    79908332 \
+rmd160  d2d1c571ed033e28d673dc62f649ef9b8579aae5 \
+sha256  d9c0dd8127ed632e27d751f051bca933578317ffe891e39155ae721bc1d3ec05 \
+size    79908332 \
                     cargo-${cargo_version}-x86_64-apple-${os.platform}${extract.suffix} \
-                    rmd160  451d01878d742d20e12979a68db5ff109d5593d2 \
-                    sha256  defc1ba047f09219a50ff39032b5d7aaf26563f6bed528b93055622eedfddabf \
-                    size    4948131
+rmd160  451d01878d742d20e12979a68db5ff109d5593d2 \
+sha256  defc1ba047f09219a50ff39032b5d7aaf26563f6bed528b93055622eedfddabf \
+size    4948131
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} < 11} {

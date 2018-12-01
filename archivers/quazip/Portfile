@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -24,7 +24,7 @@ homepage                https://stachenov.github.io/quazip/
 
 # See https://github.com/stachenov/quazip/releases for SHA256 archive checksums
 checksums               rmd160  1d612f64c94c83ba291998d0ae6b9acae816d830 \
-                        sha256  4118a830a375a81211956611cc34b1b5b4ddc108c126287b91b40c2493046b70 \
-                        size    149029
+sha256  4118a830a375a81211956611cc34b1b5b4ddc108c126287b91b40c2493046b70 \
+size    149029
 
 patchfiles-append       trac-57700.patch
