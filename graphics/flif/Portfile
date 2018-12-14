@@ -11,7 +11,7 @@ license             LGPL
 platforms           darwin
 supported_archs     x86_64
 
-set ver_clang "6.0"
+set ver_clang "7.0"
 set ver_perl "26"
 
 github.setup        gaming-hacker FLIF d790731
