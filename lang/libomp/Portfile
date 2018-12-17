@@ -31,15 +31,16 @@ if { ${subport} eq "libomp-devel" } {
         replaced_by             libomp
     } else {
         conflicts               libomp
-        github.setup            llvm-mirror openmp 5cab539
+        github.setup            llvm-mirror openmp 7a5b758
         worksrcdir              openmp-${version}
-        version                 341964
-        revision                0
+        version                 349521
+        revision                1
         name                    ${subport}
         checksums \
-rmd160  a3852e92166568420178d052c331abd29a76aec6 \
-sha256  2d2c2e8b511b9d8e9d48c1330561dc75afc2a3cc35b69b936eee0719ef2bc9bc \
-size    1444786
+            rmd160  e311b1ca106aa80a391921e1cef8a1fd6b5bbbfa \
+            sha256  35b4662c6f61ac6261fef4ab35955a69cb2dfba570c1abd96733ccab52bd27e4 \
+            size    1471884
+
 
         livecheck.url \
             http://llvm.org/viewvc/llvm-project/openmp/trunk/?view=log
@@ -120,7 +121,7 @@ configure.args-delete   -DCMAKE_INSTALL_RPATH=${prefix}/lib \
 # final destination we move them to
 configure.args-append   -DCMAKE_INSTALL_RPATH=${prefix}/lib/libomp \
                         -DCMAKE_INSTALL_NAME_DIR=${prefix}/lib/libomp \
-                        -DLIBOMP_OMPT_SUPPORT=FALSE 
+                        -DLIBOMP_OMPT_SUPPORT=FALSE
 
 variant top_level description \
     "Install (links to) omp.h and libs into ${prefix}/(include|lib)" {}
@@ -153,7 +154,7 @@ post-destroot {
     set fpath ${worksrcpath}/${rtpath}
     file copy ${fpath}/README.txt ${fpath}/../LICENSE.txt \
         ${fpath}/../www ${instdest}/share/doc/libomp/
-    
+
 }
 
 notes "

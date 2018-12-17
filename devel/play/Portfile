@@ -1,11 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           github 1.0
+
+github.setup        playframework play1 1.5.2
 
 name                play
 conflicts           sox
-version             1.5.0
-revision            0
 categories          devel java www
 platforms           darwin
 license             Apache-2
@@ -25,15 +26,17 @@ long_description    The Play framework is a clean alternative to bloated Enterpr
                     development while sticking with Java. (From the documentation)
 
 homepage            http://www.playframework.org/
-master_sites        https://github.com/playframework/play/tarball/${version}
 
-checksums           rmd160  b389bcb65ea5c0fdc701d84d42692e920a651343 \
-sha256  b2261eb5daccedfc030452891950f2e7ca332a25fa47dc76587336515324cc4d \
-size    78540697
+checksums           rmd160  f00eb64c2cfb4b15b314be2c0073dab71fefe63a \
+sha256  1bb73052ab69867048bce482151665c0d009355d7ffcdd8be1d0b2fca910d2d6 \
+size    84041185
+
 
 depends_build       port:apache-ant
 
 depends_lib         port:python37
+depends_run         port:py37-simplejson \
+                    port:py37-yaml
 
 post-patch {
     reinplace "s|/usr/bin/env python|${prefix}/bin/python3.7|" ${worksrcpath}/play
@@ -48,14 +51,19 @@ build.dir           ${worksrcpath}/framework
 destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}
     set javadir ${destroot}${prefix}/share/java/${distname}
+    set python_prefix ${destroot}/${frameworks_dir}/Python.framework/Versions/3.7
+    set pythondir ${python_prefix}/lib/python3.7/site-packages
 
     xinstall -m 755 -d ${docdir}
     xinstall -m 755 -d ${javadir}
+    xinstall -m 755 -d ${pythondir}
+
 
     foreach f [list documentation samples-and-tests support] {
         file copy ${build.dir}/../${f} ${docdir}
     }
     file copy [glob -directory ${build.dir}/dist *] ${javadir}
+    file copy ${worksrcpath}/framework/pym/play ${pythondir}
     xinstall -m 755 ${build.dir}/../play ${destroot}${prefix}/bin
 }
 

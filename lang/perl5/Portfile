@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                perl5
-version             5.26.1
+version             5.26.3
 categories          lang
 platforms           darwin freebsd linux
 license             {Artistic-1 GPL}
@@ -24,7 +24,8 @@ master_sites        http://www.cpan.org/src/5.0/
 # - sha256
 # - size
 set perl5.versions_info {
-    5.26 2 1 e4a1c7f5f7611a8aa9625940066559a58691a2be  3f6a6b5bbd43016e5211e24b6631ea84216dd300216a2293b41c9195032f3e81  14495883
+    5.26 3 0 84ed404407c198ca2b8194c374c7914d941b6f49  9ff35a613213f29ab53975141af6825ae7d4408895538cac0922e47ab92a1477  14539342
+
 }
 
 foreach {perl5.v perl5.subversion perl5.revision perl5.rmd160 perl5.sha256 perl5.size} ${perl5.versions_info} {
