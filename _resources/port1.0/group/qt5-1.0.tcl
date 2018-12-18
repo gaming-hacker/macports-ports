@@ -7,6 +7,7 @@
 
 global available_qt_versions
 array set available_qt_versions {
+    qt5  {qt5-qtbase  5.12}
     qt5  {qt5-qtbase  5.11}
     qt59 {qt59-qtbase 5.9}
     qt58 {qt58-qtbase 5.8}
@@ -105,7 +106,7 @@ proc qt5.get_default_name {} {
         # Qt 5.7:  Supported
         # Qt 5.6:  Supported
         #
-        return qt5
+        return qt511
         #
     } elseif { ${os.major} == 16 } {
         #
@@ -126,6 +127,15 @@ proc qt5.get_default_name {} {
         #
         return qt5
         #
+    } elseif { ${os.major} == 18 } {
+        #
+        # macOS Mojave (10.14)
+        #
+        # Qt 5.12: Supported
+        #
+        return qt5
+        #
+
     } else {
         #
         # macOS ??? (???)
