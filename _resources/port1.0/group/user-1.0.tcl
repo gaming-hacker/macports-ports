@@ -3,7 +3,7 @@
 set user.ver.clang  7.0
 set user.ver.gcc    9
 set user.ver.perl   5.26
-set user.ver.ruby   2.5
+set user.ver.ruby   2.6
 set ruby.branch     ${user.ver.ruby}
 set user.ver.php    5.6
 set user.py.dot     3.7

@@ -37,9 +37,9 @@ if { ${subport} eq "libomp-devel" } {
         revision                1
         name                    ${subport}
         checksums \
-            rmd160  e311b1ca106aa80a391921e1cef8a1fd6b5bbbfa \
-            sha256  35b4662c6f61ac6261fef4ab35955a69cb2dfba570c1abd96733ccab52bd27e4 \
-            size    1471884
+rmd160  e311b1ca106aa80a391921e1cef8a1fd6b5bbbfa \
+sha256  35b4662c6f61ac6261fef4ab35955a69cb2dfba570c1abd96733ccab52bd27e4 \
+size    1471884
 
 
         livecheck.url \

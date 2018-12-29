@@ -24,8 +24,8 @@ master_sites        ${homepage}
 use_xz              yes
 
 checksums           rmd160  b95b76c26b53408dead3e08f3243980440cad663 \
-                    sha256  badbecd2dddf63352fd85ec08a9c2ed122fdadacf2a34fcb4cc227c4d01f2cf9 \
-                    size    1480852
+sha256  badbecd2dddf63352fd85ec08a9c2ed122fdadacf2a34fcb4cc227c4d01f2cf9 \
+size    1480852
 
 depends_build-append \
                     port:pkgconfig

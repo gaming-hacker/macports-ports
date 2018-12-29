@@ -44,9 +44,9 @@
 #   > destroot.post_args-append -- --with-any-option
 
 options ruby.default_branch
-default ruby.default_branch 2.5
+default ruby.default_branch 2.6
 options ruby.branch ruby.branches
-default ruby.branches {2.5}
+default ruby.branches {2.6}
 options ruby.bin ruby.rdoc ruby.gem ruby.rake ruby.bindir ruby.gemdir ruby.suffix
 options ruby.api_version ruby.lib ruby.archlib
 # ruby.version is obsoleted. use ruby.api_version.
@@ -91,7 +91,7 @@ set ruby.project        ""
 set ruby.docs           {}
 set ruby.srcdir         ""
 set ruby.prog_suffix    ""
-set ruby.suffix 25
+set ruby.suffix 26
 # detect setup.rb config option name of --rubyprog.
 # some setup.rb accepts this option by other name, such as --ruby-prog.
 # NOTE: set the value *before ruby.setup* to use ohter name.

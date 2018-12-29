@@ -25,6 +25,7 @@ master_sites        http://www.cpan.org/src/5.0/
 # - size
 set perl5.versions_info {
     5.26 3 0 84ed404407c198ca2b8194c374c7914d941b6f49  9ff35a613213f29ab53975141af6825ae7d4408895538cac0922e47ab92a1477  14539342
+    5.28 1 1 e2f0618fc01bcd253ef6e003c1d9b957b6f6aa53  fea7162d4cca940a387f0587b93f6737d884bf74d8a9d7cfd978bc12cd0b202d  12372080
 
 }
 
@@ -43,7 +44,9 @@ foreach {perl5.v perl5.subversion perl5.revision perl5.rmd160 perl5.sha256 perl5
                             administration, web development, network \
                             programming, GUI development, and more.
 
-        depends_lib-append  port:gdbm
+        depends_lib-append  port:gdbm \
+                            port:db64
+
 
         distname            perl-${perl5.major}.${perl5.subversion}
         dist_subdir         perl${perl5.major}
