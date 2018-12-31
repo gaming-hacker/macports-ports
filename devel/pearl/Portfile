@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 
 github.setup        rodnaph pearl 0.2.0 v
 revision            4
-perl5.branches      5.26
+perl5.branches 5.26
 categories          devel macports
 platforms           darwin
 maintainers         pu-gh.com:rod

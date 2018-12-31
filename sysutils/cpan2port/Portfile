@@ -23,7 +23,7 @@ homepage            https://trac.macports.org/wiki/howto/${name}
 checksums           rmd160  01bba5817f02fef13cbec6a87e10008a4b491e81 \
 sha256  50b1a7df150f0f2e0f8bba35912e2921d687a23da1e7aa110c05775aaf093608
 
-perl5.branches      5.26
+perl5.branches 5.26
 
 depends_run-append  port:p${perl5.major}-carp-clan \
                     port:p${perl5.major}-cpan-meta-yaml \

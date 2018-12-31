@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 name                tinyca2
 version             0.7.5
 revision            7
-perl5.branches      5.26
+perl5.branches 5.26
 license             GPL
 categories          security net
 maintainers         nomaintainer

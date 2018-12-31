@@ -64,7 +64,7 @@ build.type          gnu
 # set default variant to perl5_24 (#52081)
 
 perl5.conflict_variants yes
-perl5.branches          5.26
+perl5.branches 5.26
 perl5.default_branch    5.26
 perl5.create_variants   ${perl5.branches}
 

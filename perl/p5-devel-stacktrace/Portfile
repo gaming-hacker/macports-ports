@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 epoch               1
 
-perl5.branches  5.26
+perl5.branches 5.26
 
 perl5.setup         Devel-StackTrace 2.03 ../by-authors/id/D/DR/DROLSKY/
 license             Artistic-2

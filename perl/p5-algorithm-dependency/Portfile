@@ -3,10 +3,10 @@
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches  5.26
+perl5.branches 5.26
 
 perl5.setup         Algorithm-Dependency 1.110
-revision            3
+revision            4
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Base class for implementing various dependency trees

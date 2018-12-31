@@ -8,7 +8,7 @@ if {[variant_isset metview]} {
     PortGroup qt5   1.0
 }
 
-perl5.branches      5.26
+perl5.branches 5.26
 
 name                magicspp
 version             3.2.0

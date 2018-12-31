@@ -16,7 +16,7 @@ long_description    Subversion (svn) is a version control system designed to be 
 
 homepage            http://subversion.apache.org/
 
-set perl5.branches {5.26}
+set perl5.branches {5.28}
 foreach branch ${perl5.branches} {
     set p_idx [lsearch ${perl5.branches} ${branch}]
     set other_perls [lreplace ${perl5.branches} $p_idx $p_idx]
@@ -33,9 +33,9 @@ if {${subport} eq ${name}} {
     distfiles
     supported_archs noarch
     # depend on a default perl version
-    depends_lib     port:${name}-5.26
+    depends_lib     port:${name}-5.28
     # avoid conflict with old version when upgrading
-    replaced_by     ${name}-5.26
+    replaced_by     ${name}-5.28
     use_configure   no
     build {}
     destroot {
@@ -80,7 +80,7 @@ size	8490744
 
     depends_build   port:swig
 
-    configure.args  --with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6 \
+    configure.args  --with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db46:db-6.2 \
                     --with-apr=${prefix}/bin/apr-1-config \
                     --with-apr-util=${prefix}/bin/apu-1-config --without-apxs \
                     --mandir=\\\${prefix}/share/man \
@@ -109,8 +109,8 @@ size	8490744
     }
 
     variant no_bdb description {Build without support for BerkeleyDB repositories} {
-        depends_lib-delete      port:db46
-        configure.args-delete   --with-berkeley-db=:${prefix}/include/db46:${prefix}/lib/db46:db-4.6
+        depends_lib-delete      port:db62
+        configure.args-delete   --with-berkeley-db=:${prefix}/include/db62:${prefix}/lib/db46:db-6.2
         configure.args-append   --without-berkeley-db
     }
 

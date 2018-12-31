@@ -32,7 +32,7 @@ size    432200
 
 perl5.require_variant   yes
 perl5.conflict_variants no
-perl5.branches          5.26
+perl5.branches 5.26
 perl5.default_branch    5.26
 perl5.create_variants   ${perl5.branches}
 

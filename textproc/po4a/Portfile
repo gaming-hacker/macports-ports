@@ -5,7 +5,7 @@ PortGroup           github 1.0
 PortGroup           perl5 1.0
 
 github.setup        mquinson po4a 0.54 v
-perl5.branches      5.26
+perl5.branches 5.26
 
 categories          textproc
 platforms           darwin

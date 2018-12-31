@@ -39,7 +39,7 @@ patchfiles          patch-rules.mk.in.diff \
                     patch-util__ulist.c \
                     patch-util__ulocks.c
 
-perl5.branches      5.26
+perl5.branches 5.26
 
 depends_lib         port:gettext \
                     port:perl${perl5.major} \

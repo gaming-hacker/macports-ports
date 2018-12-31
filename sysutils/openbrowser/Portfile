@@ -24,7 +24,7 @@ homepage                https://www.macports.org
 
 distfiles
 
-perl5.branches          5.26
+perl5.branches 5.26
 
 depends_lib
 depends_run-append      port:perl${perl5.major} \

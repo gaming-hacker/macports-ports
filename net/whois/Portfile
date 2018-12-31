@@ -36,7 +36,7 @@ size    82984
 
 distfiles                   ${name}_${version}${extract.suffix}
 
-perl5.branches              5.26
+perl5.branches 5.26
 
 depends_build               port:perl${perl5.major}
 

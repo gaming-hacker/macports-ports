@@ -9,7 +9,7 @@ name              gnucash
 conflicts         gnucash gnucash-devel
 conflicts-delete  ${subport}
 version           3.3
-perl5.branches    5.26
+perl5.branches 5.26
 categories        gnome x11
 license           GPL-2+
 maintainers       {dports @drkp} openmaintainer

@@ -25,7 +25,7 @@ checksums               rmd160  f3a2d81e3d3454221cd88c4bbebb56dc0c7a260b \
 sha256  70ec6e06b791115fbe88dee313f58f691f9b559ee992f2af5ed64fe6ad2e55d7 \
 size    159563
 
-perl5.branches          5.26
+perl5.branches 5.26
 
 depends_lib             port:vorbis-tools \
                         port:lame \
