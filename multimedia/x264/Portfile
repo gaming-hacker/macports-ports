@@ -5,7 +5,8 @@ PortGroup           muniversal 1.0
 PortGroup           xcodeversion 1.0
 
 name                x264
-version             20171225
+version             20180807
+
 categories          multimedia
 license             GPL-2+
 platforms           darwin
@@ -24,9 +25,10 @@ distname            ${name}-snapshot-${version}-2245-stable
 
 use_bzip2           yes
 
-checksums           rmd160  e22257528fea7490df1b3c4b21a15df9fb801833 \
-sha256  91143276d18414f1c94ecdc472b063c874308833d57d7353f15286372ba4ba68 \
-size    750690
+checksums           rmd160  ac2611138ecdf0f4f97b0c77326af26e80b17cc9 \
+                    sha256  1439f1a054c87965089b646e77d16e1a8bf2f9687e4dd696ac518e44c7644c2a \
+                    size    766771
+
 
 minimum_xcodeversions {9 3.1}
 

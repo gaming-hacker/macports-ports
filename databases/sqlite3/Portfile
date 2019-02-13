@@ -4,7 +4,8 @@ PortSystem          1.0
 
 name                sqlite3
 # don't forget to update the checksums for sqlite3-tools when updating sqlite3
-version             3.25.3
+version             3.27.1
+
 categories          databases
 platforms           darwin
 license             public-domain
@@ -27,9 +28,10 @@ master_sites        ${homepage}2018
 set padded_ver      [string range [subst [regsub -all {\.([0-9]+)} "${version}.0.0" {[format %02d \1]}]] 0 6]
 distname            sqlite-autoconf-${padded_ver}
 
-checksums           rmd160  98578994f8edaac730ff18f0196eb2220b88492d \
-sha256  00ebf97be13928941940cc71de3d67e9f852698233cd98ce2d178fd08092f3dd \
-size    2764429
+checksums           rmd160  59be346b5c342a72eb55cfb4c1b962963d8bad04 \
+                    sha256  54a92b8ff73ff6181f89b9b0c08949119b99e8cccef93dbef90e852a8b10f4f8 \
+                    size    2797765
+
 
 depends_lib         port:libedit \
                     port:ncurses \

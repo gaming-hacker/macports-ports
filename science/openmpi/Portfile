@@ -7,7 +7,7 @@ PortGroup           compilers 1.0
 PortGroup           muniversal 1.0
 
 name                openmpi
-version             3.0.0
+version             4.0.0
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          science parallel net
 platforms           darwin
@@ -27,8 +27,10 @@ master_sites        http://www.open-mpi.org/software/${subdir} \
                     http://www.open-mpi.de/software/${subdir} \
                     http://icl.cs.utk.edu/open-mpi/${subdir}
 
-checksums           rmd160  8f6c2e503235f2ce227dd31db4ecf810eb468d0c \
-sha256  f699bff21db0125d8cccfe79518b77641cd83628725a1e1ed3e45633496a82d7
+checksums           rmd160  e7833fdac28306e23e0fc878c0715e860aa80f97 \
+                    sha256  2f0b8a36cfeb7354b45dda3c5425ef8393c9b04115570b615213faaa3f97366b \
+                    size    9812193
+
 use_bzip2           yes
 
 livecheck.type      regex
