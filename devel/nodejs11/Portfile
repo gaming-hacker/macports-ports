@@ -4,7 +4,7 @@ PortSystem              1.0
 PortGroup               cxx11 1.1
 
 name                    nodejs11
-version                 11.6.0
+version                 11.10.1
 
 categories              devel net
 platforms               darwin
@@ -24,11 +24,9 @@ homepage                http://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  ef1c7f0b29b588e3e5e86c50f470c877565551bd \
-sha256  94f2be389c80ab939114f67c824db7ebd12df602358b7481c55431336bbff9b3 \
-size    20410716
-
-
+checksums               rmd160  224b1454077ab4763e7a7be5b07b0710cb144da2 \
+sha256  c9ed8de288a76b7a2c7f89ec52b10a6c741ed88d16499033ab5ec88351836006 \
+                        size    22074212
 
 distname                node-v${version}
 
@@ -45,7 +43,7 @@ proc rec_glob {basedir pattern} {
     return $files
 }
 
-configure.python ${prefix}/bin/python2.7
+configure.python ${prefix}/bin/python3.7
 
 patchfiles              patch-common.gypi.diff
 

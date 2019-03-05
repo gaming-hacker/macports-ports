@@ -3,10 +3,8 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        yarnpkg yarn 1.12.1 v
-
-revision            1
-
+github.setup        yarnpkg yarn 1.13.0 v
+revision            0
 categories          devel
 
 platforms           darwin
@@ -28,9 +26,10 @@ homepage            https://yarnpkg.com/
 
 github.tarball_from releases
 distname            ${name}-${git.branch}
-checksums           rmd160  4ea718e17eaf01e5ff33ca5f843e970a5d64ff5c \
-sha256  09bea8f4ec41e9079fa03093d3b2db7ac5c5331852236d63815f8df42b3ba88d \
-size    1150378
+checksums           rmd160  057902768270204a114bd01a7a15220f27ff245d \
+sha256  125d40ebf621ebb08e3f66a618bd2cc5cd77fa317a312900a1ab4360ed38bf14 \
+                    size    1169613
+
 
 depends_run         path:bin/node:nodejs10
 
