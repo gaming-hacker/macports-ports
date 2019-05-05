@@ -4,7 +4,7 @@ PortSystem              1.0
 PortGroup               cxx11 1.1
 
 name                    nodejs11
-version                 11.10.1
+version                 11.15.0
 
 categories              devel net
 platforms               darwin
@@ -24,9 +24,10 @@ homepage                http://nodejs.org/
 master_sites            ${homepage}dist/v${version}
 use_xz                  yes
 
-checksums               rmd160  224b1454077ab4763e7a7be5b07b0710cb144da2 \
-sha256  c9ed8de288a76b7a2c7f89ec52b10a6c741ed88d16499033ab5ec88351836006 \
-                        size    22074212
+checksums               rmd160  17544480410399b4f9e74ed288fcd0d414bde1c7 \
+                        sha256  68a776c5d8b8b91a8f2adac2ca4ce4390ae1804883ec7ec9c0d6a6a64d306a76 \
+                        size    22115480
+
 
 distname                node-v${version}
 

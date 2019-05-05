@@ -9,7 +9,7 @@ PortGroup           cmake 1.1
 
 name                poppler
 conflicts           xpdf-tools
-version             0.71.0
+version             0.76.0
 license             GPL-2+
 maintainers         {devans @dbevans} openmaintainer
 categories          graphics
@@ -23,9 +23,9 @@ master_sites        ${homepage}
 
 use_xz              yes
 
-checksums           rmd160  b95b76c26b53408dead3e08f3243980440cad663 \
-sha256  badbecd2dddf63352fd85ec08a9c2ed122fdadacf2a34fcb4cc227c4d01f2cf9 \
-size    1480852
+checksums           rmd160  312e7a9038f3fe91124b2b5e8acc40ceda82afcc \
+                    sha256  370f5fcfe2bbf0c76fc394d338cd72ed7f2044b67f4eb4b115eb074ccfc70d63 \
+                    size    1530264
 
 depends_build-append \
                     port:pkgconfig
