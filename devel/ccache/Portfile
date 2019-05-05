@@ -1,12 +1,14 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           github 1.0
 
 name                ccache
-version             3.5
-checksums           rmd160  4ff3240045cf5c30f66ebfe8e481be01867f086d \
-sha256  bdd44b72ae4506a2e2deef9fefb15c606a474bbca7658cd2be26105155eec012 \
-size    334668
+github.setup        ccache ccache 3.7.1 v
+revision            0
+checksums           rmd160  ea189d1a42490050d591551e4396a89d4c611e23 \
+                    sha256  d618e6c257d000d974a7ebb46aaefd872f77a1efeaefe33829d7396b2ec60420 \
+                    size    384420
 
 categories          devel
 platforms           darwin freebsd
@@ -22,11 +24,14 @@ long_description \
     compilation can be satisfied from cache.  This often results in a 5 to 10 \
     times speedup in common compilations.
 
-homepage            https://ccache.samba.org/
-master_sites        https://www.samba.org/ftp/ccache/
-use_xz              yes
+homepage            https://ccache.dev
 
-depends_lib         port:zlib
+use_autoconf        yes
+autoconf.cmd        ./autogen.sh
+
+depends_lib         port:zlib \
+                    port:autoconf \
+                    port:asciidoc
 
 conflicts           ccache-devel
 
