@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 set nkf_ver         2.1.4
 
-perl5.branches 5.26
+perl5.branches 5.28
 
 perl5.setup         NKF [string range ${nkf_ver} 0 2][string range ${nkf_ver} 4 end]
 categories-append   textproc japanese

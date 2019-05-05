@@ -278,10 +278,10 @@ proc python_get_defaults {var} {
                 return "${python.prefix}"
         }
         link_binaries {
-                return yes
+                return no
         }
         move_binaries {
-              return yes
+              return no
         }
         binary_suffix {
             if {[string match py-* [option name]]} {

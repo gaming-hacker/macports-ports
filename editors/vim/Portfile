@@ -5,31 +5,30 @@ PortGroup           github 1.0
 
 name                vim
 set vim_version     8.1
-set vim_patchlevel  0280
+set vim_patchlevel  0577
 github.setup        vim vim ${vim_version}.${vim_patchlevel} v
-revision            1
 categories          editors
 platforms           darwin freebsd
 license             Vim GPL-2+
 maintainers         {raimue @raimue}
 
-description         Vi \"workalike\" with many additional features
+description         Vi with many additional features
 long_description \
     Vim is an advanced text editor that seeks to provide the power of the   \
-    de-facto Unix editor 'Vi', with a more complete feature set.
+    de-facto Unix editor Vi, with a more complete feature set.
 
 homepage            http://www.vim.org/
 
-checksums           rmd160  66e1101f20368d60bf37c438f84a6b6d319fa2c1 \
-sha256  fe1d620e4a4663a35c9401b9a3ff4d958415ee3c2bcba9a10d95d3fb0b6f7188 \
-size    13783224
+checksums           rmd160  86dd2b1b33ddeeb0471e484b31ea446da2538fab \
+                    sha256  df2fe27350e9fa79b109602c5f9ba154d2f77568da6a83fff5b269d9f66319d8 \
+                    size    13891160
 
 depends_lib         port:ncurses \
                     port:gettext \
                     port:libiconv
 
 # fix test macro for sdk check
-patchfiles-append   patch-vim-src-os_macosx-availability.diff
+#patchfiles-append   patch-vim-src-os_macosx-availability.diff
 
 post-patch {
     set features [open ${worksrcpath}/src/feature.h a+]
@@ -90,29 +89,11 @@ variant xim description {Build with support for X Input Method} {
 
 variant perl description {Enable Perl scripting} {
     configure.args-append   --enable-perlinterp
-    depends_lib-append      path:bin/perl:perl5.26
+    depends_lib-append      path:bin/perl:perl5
 }
 
 variant python37 description {Enable Python scripting} {
     configure.args-append   --enable-pythoninterp --with-python-command=${prefix}/bin/python3.7
-    patchfiles-append       patch-python.diff
-    depends_lib-append      port:python37
-
-    use_autoconf yes
-    # Overwriting autoconf.cmd above removes dependency, add it again
-    depends_build-append port:autoconf
-}
-variant python36 conflicts python37 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.6
-    patchfiles-append       patch-python3.diff
-    depends_lib-append      port:python36
-
-    use_autoconf yes
-    # Overwriting autoconf.cmd above removes dependency, add it again
-    depends_build-append port:autoconf
-}
-variant python37 conflicts python36 description {Enable Python scripting} {
-    configure.args-append   --enable-python3interp --with-python3-command=${prefix}/bin/python3.7
     patchfiles-append       patch-python3.diff
     depends_lib-append      port:python37
 
@@ -121,10 +102,11 @@ variant python37 conflicts python36 description {Enable Python scripting} {
     depends_build-append port:autoconf
 }
 
-variant ruby25 conflicts ruby18 ruby19 ruby20 ruby21 ruby22 ruby23 ruby24 description {Enable Ruby scripting} {
+variant ruby requires ruby26 description {Compatibility variant, requires +ruby26} {}
+variant ruby26 description {Enable Ruby scripting} {
     configure.args-append   --enable-rubyinterp
-    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.5
-    depends_lib-append      port:ruby25
+    configure.args-append   --with-ruby-command=${prefix}/bin/ruby2.6
+    depends_lib-append      port:ruby26
 }
 
 variant tcl description {Enable Tcl scripting} {

@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 platforms           darwin
 
-perl5.branches 5.26
+perl5.branches 5.28
 
 perl5.setup         Net-Z3950-ZOOM 1.30
 license             {Artistic-1 GPL}

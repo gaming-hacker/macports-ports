@@ -267,7 +267,14 @@ post-extract {
         # as the result will not be accurate when go.package has been
         # customized.
         file mkdir [file dirname ${worksrcpath}]
-        move [glob ${workpath}/${go.author}-${go.project}-*] ${worksrcpath}
+        if [file exists [glob -nocomplain ${workpath}/${go.author}-${go.project}-*]] {
+            # GitHub and Bitbucket follow this path
+            move [glob ${workpath}/${go.author}-${go.project}-*] ${worksrcpath}
+        } else {
+            # GitLab follows this path
+            move [glob ${workpath}/${go.project}-*] ${worksrcpath}
+        }
+        # If the above fails then something went wrong and we should error out.
     }
 
     foreach vlist ${go.vendors_internal} {

@@ -6,7 +6,7 @@ PortGroup compiler_blacklist_versions 1.0
 
 epoch               2
 name                gcc9
-version             9-20190224
+version             9-20190428
 revision            1
 subport             libgcc-devel { revision 1 }
 platforms           darwin
@@ -27,9 +27,9 @@ master_sites        ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/gcc/sn
 distname            gcc-${version}
 use_xz              yes
 
-checksums           rmd160  e37a086f5d41d01726c04ce4495d513109d16b78 \
-                    sha256  0fe11d26b65c8e014c5089ab6199959c97ceaf0ae8a605f86973e3c0492870f8 \
-                    size    68397172
+checksums           rmd160  57abc9782257357318747b4db7fe211f86597252 \
+                    sha256  6b75ad6fedcc1c4fad77283d440a2816cccc859200d98329949d2eb1397fa590 \
+                    size    68747260
 
 
 depends_lib         port:cctools \
@@ -96,6 +96,11 @@ configure.env-append \
                     STRIP_FOR_TARGET=${prefix}/bin/strip \
                     OTOOL=${prefix}/bin/otool \
                     OTOOL64=${prefix}/bin/otool
+
+# Make sure the MP clang version used by cctool's 'as' is available at
+# build time and used. Versions here must match those in cctools port.
+  configure.compiler macports-clang-8.0
+
 
 pre-configure {
     configure.args-append --with-pkgversion="MacPorts ${name} ${version}_${revision}${portvariants}"
@@ -201,14 +206,14 @@ if {${subport} eq "libgcc-devel"} {
     post-destroot {
         file mkdir ${destroot}${prefix}/lib/libgcc.merged
 
-        file delete ${destroot}${prefix}/share/info/dir
+        #file delete ${destroot}${prefix}/share/info/dir
 
-        foreach file [glob ${destroot}${prefix}/share/{info,man/man7}/*] {
-            set extension [file extension ${file}]
-            set newfile [regsub "${extension}$" ${file} "-mp-${major}${extension}"]
-
-            file rename ${file} ${newfile}
-        }
+        #foreach file [glob ${destroot}${prefix}/share/{info,man/man7}/*] {
+        #    set extension [file extension ${file}]
+        #    set newfile [regsub "${extension}$" ${file} "-mp-${major}${extension}"]
+#
+         #   file rename ${file} ${newfile}
+        #}
 
         # Note that we really don't want to include libgcc_ext.10.[45].dylib here, but install_name_tool
         # doesn't know how to change the id of stubs, and it's easier than recreating them for each

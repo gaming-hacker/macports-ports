@@ -7,13 +7,13 @@ name                rb-rubygems
 categories          ruby devel
 license             {Ruby GPL-2}
 version             1.3.7
-revision            2
+revision            3
 
 homepage            http://rubygems.org/
 master_sites        http://production.cf.rubygems.org/rubygems
 
 distname            rubygems-${version}
-dist_subdir         ruby2.5
+dist_subdir         ruby2.6
 
 maintainers         nomaintainer
 description         a package management framework for Ruby

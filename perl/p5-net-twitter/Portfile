@@ -7,7 +7,7 @@ categories          perl net
 license             {Artistic-1 GPL}
 platforms           darwin
 
-perl5.branches 5.26
+perl5.branches 5.28
 
 perl5.setup         Net-Twitter 4.01043 ../../authors/id/M/MM/MMIMS/
 maintainers         nomaintainer

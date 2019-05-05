@@ -13,16 +13,16 @@ default perl5.use_search_cpan_org {false}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches
-    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.26
+    # use whatever ${prefix}/bin/perl5 was chosen, and if none, fall back to 5.28
     if {![catch {set val [lindex [split [exec ${prefix}/bin/perl5 -V:version] {'}] 1]}]} {
         set ret [join [lrange [split $val .] 0 1] .]
     } else {
-        set ret 5.26
+        set ret 5.28
     }
     # if the above default is not supported by this module, use the latest it does support
     if {[info exists perl5.branches] && $ret ni ${perl5.branches}} {
 #         set ret [lindex ${perl5.branches} end]
-        set ret 5.26
+        set ret 5.28
     }
     return $ret
 }

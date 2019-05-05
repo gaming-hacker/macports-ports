@@ -81,14 +81,14 @@ set compilers.list {cc cxx cpp objc fc f77 f90}
 set gcc_versions {9}
 foreach v ${gcc_versions} {
     # if the string is more than one character insert a '.' into it: e.g 49 -> 4.9
-    set version $v
+    set compiler_version $v
     if {[string length $v] > 1} {
         set version [string index $v 0].[string index $v 1]
     }
     lappend compilers.gcc_variants gcc$v
     set cdb(gcc$v,variant)  gcc$v
-    set cdb(gcc$v,compiler) macports-gcc-$version
-    set cdb(gcc$v,descrip)  "MacPorts gcc $version"
+    set cdb(gcc$v,compiler) macports-gcc-$compiler_version
+    set cdb(gcc$v,descrip)  "MacPorts gcc $compiler_version"
     set cdb(gcc$v,depends)  port:gcc$v
     set cdb(gcc$v,dependsl) "path:lib/libgcc/libgcc_s.1.dylib:libgcc"
     set cdb(gcc$v,libfortran) ${prefix}/lib/gcc$v/libgfortran.dylib
@@ -96,35 +96,35 @@ foreach v ${gcc_versions} {
     set cdb(gcc$v,dependsd) port:g95
     set cdb(gcc$v,dependsa) gcc$v
     set cdb(gcc$v,conflict) "gfortran"
-    set cdb(gcc$v,cc)       ${prefix}/bin/gcc-mp-$version
-    set cdb(gcc$v,cxx)      ${prefix}/bin/g++-mp-$version
-    set cdb(gcc$v,cpp)      ${prefix}/bin/cpp-mp-$version
-    set cdb(gcc$v,objc)     ${prefix}/bin/gcc-mp-$version
-    set cdb(gcc$v,fc)       ${prefix}/bin/gfortran-mp-$version
-    set cdb(gcc$v,f77)      ${prefix}/bin/gfortran-mp-$version
-    set cdb(gcc$v,f90)      ${prefix}/bin/gfortran-mp-$version
+    set cdb(gcc$v,cc)       ${prefix}/bin/gcc-mp-$compiler_version
+    set cdb(gcc$v,cxx)      ${prefix}/bin/g++-mp-$compiler_version
+    set cdb(gcc$v,cpp)      ${prefix}/bin/cpp-mp-$compiler_version
+    set cdb(gcc$v,objc)     ${prefix}/bin/gcc-mp-$compiler_version
+    set cdb(gcc$v,fc)       ${prefix}/bin/gfortran-mp-$compiler_version
+    set cdb(gcc$v,f77)      ${prefix}/bin/gfortran-mp-$compiler_version
+    set cdb(gcc$v,f90)      ${prefix}/bin/gfortran-mp-$compiler_version
 }
 
-set clang_versions {70}
+set clang_versions {70 80}
 foreach v ${clang_versions} {
     # if the string is more than one character insert a '.' into it: e.g 33 -> 3.3
-    set version $v
+    set compiler_version $v
     if {[string length $v] > 1} {
         set version [string index $v 0].[string index $v 1]
     }
     lappend compilers.clang_variants clang$v
     set cdb(clang$v,variant)  clang$v
-    set cdb(clang$v,compiler) macports-clang-$version
-    set cdb(clang$v,descrip)  "MacPorts clang $version"
-    set cdb(clang$v,depends)  port:clang-$version
+    set cdb(clang$v,compiler) macports-clang-$compiler_version
+    set cdb(clang$v,descrip)  "MacPorts clang $compiler_version"
+    set cdb(clang$v,depends)  port:clang-$compiler_version
     set cdb(clang$v,dependsl) ""
     set cdb(clang$v,libfortran) ""
     set cdb(clang$v,dependsd) ""
-    set cdb(clang$v,dependsa) clang-$version
+    set cdb(clang$v,dependsa) clang-$compiler_version
     set cdb(clang$v,conflict) ""
-    set cdb(clang$v,cc)       ${prefix}/bin/clang-mp-$version
-    set cdb(clang$v,cxx)      ${prefix}/bin/clang++-mp-$version
-    set cdb(clang$v,cpp)      "${prefix}/bin/clang-mp-$version -E"
+    set cdb(clang$v,cc)       ${prefix}/bin/clang-mp-$compiler_version
+    set cdb(clang$v,cxx)      ${prefix}/bin/clang++-mp-$compiler_version
+    set cdb(clang$v,cpp)      "${prefix}/bin/clang-mp-$compiler_version -E"
     set cdb(clang$v,objc)     ""
     set cdb(clang$v,fc)       ""
     set cdb(clang$v,f77)      ""
@@ -213,7 +213,7 @@ proc compilers.setup_variants {variants} {
                 depends_lib-delete     $cdb($variant,dependsd)
                 depends_skip_archcheck $cdb($variant,dependsa)
 
-                set compilers.slibfortran $cdb($variant,libfortran)
+                set compilers.libfortran $cdb($variant,libfortran)
             "
             # TODO: all the compilers are in portconfigure now, so see if below
             # is even needed now;

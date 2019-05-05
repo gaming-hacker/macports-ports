@@ -101,7 +101,7 @@ php.branches 7.3
 # when the php port is updated.
 
 options php.latest_stable_branch
-default php.latest_stable_branch 7.2
+default php.latest_stable_branch 7.3
 
 
 # php.default_branch: the branch of PHP for which the port should be installed

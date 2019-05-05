@@ -2,7 +2,7 @@
 PortSystem	1.0
 PortGroup           ruby 1.0
 
-ruby.setup          mustache 0.12.1 gem {} rubygems
+ruby.setup          mustache 0.12.1 gem {} rubygems ruby26
 revision            1
 maintainers         nomaintainer
 description         Logic-less templates, implemented in Ruby.
@@ -20,13 +20,13 @@ size    37376
 
 post-destroot {
     set gemdir ${destroot}${ruby.gemdir}/gems/${worksrcdir}
-#     set mandir ${destroot}${prefix}/share/man/
-#     set docdir ${destroot}${prefix}/share/doc/${ruby.module}
-#     xinstall -d ${docdir}
-#
-#     xinstall ${gemdir}/man/${ruby.module}.1 ${mandir}/man1/
-#     xinstall ${gemdir}/man/${ruby.module}.5 ${mandir}/man5/
-#     xinstall -W ${gemdir} README.md LICENSE ${docdir}
-#     xinstall {*}[glob  ${gemdir}/man/*.html] ${docdir}
+    set mandir ${destroot}${prefix}/share/man/
+    set docdir ${destroot}${prefix}/share/doc/${ruby.module}
+    xinstall -d ${docdir}
+
+    xinstall ${gemdir}/man/${ruby.module}.1 ${mandir}/man1/
+    xinstall ${gemdir}/man/${ruby.module}.5 ${mandir}/man5/
+    xinstall -W ${gemdir} README.md LICENSE ${docdir}
+    xinstall {*}[glob  ${gemdir}/man/*.html] ${docdir}
 }
 
