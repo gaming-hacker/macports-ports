@@ -6,8 +6,8 @@ PortGroup compiler_blacklist_versions 1.0
 
 epoch               2
 name                gcc9
-version             9-20190428
-revision            1
+version             9.1.0
+revision            0
 subport             libgcc-devel { revision 1 }
 platforms           darwin
 categories          lang
@@ -27,9 +27,9 @@ master_sites        ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/gcc/sn
 distname            gcc-${version}
 use_xz              yes
 
-checksums           rmd160  57abc9782257357318747b4db7fe211f86597252 \
-                    sha256  6b75ad6fedcc1c4fad77283d440a2816cccc859200d98329949d2eb1397fa590 \
-                    size    68747260
+checksums           rmd160  b9dd53082905c4ca2f7f8291af1e4d015bc97d39 \
+                    sha256  79a66834e96a6050d8fe78db2c3b32fb285b230b855d0a66288235bc04b327a0 \
+                    size    70546856
 
 
 depends_lib         port:cctools \
@@ -41,7 +41,7 @@ depends_lib         port:cctools \
                     port:mpfr \
                     port:zlib
 depends_run         port:gcc_select \
-                    port:libgcc-devel
+                    path:lib/libgcc/libgcc_s.1.dylib:libgcc
 
 depends_skip_archcheck-append gcc_select ld64 cctools
 license_noconflict  gmp mpfr ppl libmpc zlib
