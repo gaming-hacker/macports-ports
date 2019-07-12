@@ -99,6 +99,8 @@ configure.args      --disable-silent-rules \
                     --without-xen-inotify \
                     --with-yajl
 
+configure.cflags-append -std=c99
+
 if {![variant_isset openssl]} {
     default_variants +gnutls
 }
