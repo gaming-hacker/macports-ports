@@ -135,7 +135,7 @@ set perl5.cpandir ""
 # perl5 group setup procedure
 proc perl5.setup {module vers {cpandir ""}} {
     global perl5.branches perl5.default_branch perl5.bin perl5.lib \
-           perl5.module perl5.moduleversion perl5.cpandir perl5.use_search_cpan_org \
+           perl5.module perl5.moduleversion perl5.cpandir \
            prefix subport name
 
     # define perl5.module
@@ -159,11 +159,7 @@ proc perl5.setup {module vers {cpandir ""}} {
     version             [perl5_convert_version ${perl5.moduleversion}]
     categories          perl
 
-    if {${perl5.use_search_cpan_org}} {
-        homepage        http://search.cpan.org/dist/${perl5.module}/
-    } else {
-        homepage        https://metacpan.org/pod/[string map {"-" "::"} ${perl5.module}]
-    }
+    homepage    https://metacpan.org/pod/[string map {"-" "::"} ${perl5.module}]
 
     master_sites        perl_cpan:${perl5.cpandir}
     distname            ${perl5.module}-${perl5.moduleversion}
@@ -234,13 +230,8 @@ proc perl5.setup {module vers {cpandir ""}} {
 
     livecheck.type      regexm
 
-    if {${perl5.use_search_cpan_org}} {
-        livecheck.url       http://search.cpan.org/dist/${perl5.module}/
-        livecheck.regex     >[quotemeta ${perl5.module}]-(\[^"\ \]+?)<
-    } else {
-        livecheck.url       https://fastapi.metacpan.org/v1/release/${perl5.module}/
-        livecheck.regex     \"name\" : \"[quotemeta ${perl5.module}]-(\[^"\]+?)\"
-    }
+    livecheck.url       https://fastapi.metacpan.org/v1/release/${perl5.module}/
+    livecheck.regex     \"name\" : \"[quotemeta ${perl5.module}]-(\[^"\]+?)\"
 
     default livecheck.version {${perl5.moduleversion}}
 }

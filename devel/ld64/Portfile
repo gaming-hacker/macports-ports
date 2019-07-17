@@ -276,14 +276,14 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm70}
+    set all_llvm_variants {llvm80}
     if {${os.major} < 10} {
-        lappend all_llvm_variants llvm70
+        lappend all_llvm_variants llvm80
     }
     if {${os.major} < 12} {
-        lappend all_llvm_variants llvm70
+        lappend all_llvm_variants llvm80
     }
-    array set llvm_variant_version {llvm70 7.0}
+    array set llvm_variant_version {llvm80 8.0}
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
@@ -312,16 +312,16 @@ if {${subport} eq ${name}} {
     if {![some_llvm_variant_set]} {
         if {${os.major} == 12 || ${os.major} == 13} {
             # Using llvm-3.7 to break a dependency cycle (https://trac.macports.org/ticket/53138)
-            default_variants +llvm70
+            default_variants +llvm80
         } elseif {${os.major} == 10 || ${os.major} == 11} {
-            default_variants +llvm70
+            default_variants +llvm80
         } elseif {${os.major} == 9} {
             # Using llvm-3.3 to break dependency cycle (https://trac.macports.org/ticket/52091)
-            default_variants +llvm70
+            default_variants +llvm80
         }
 
         if {![some_llvm_variant_set] && ${os.major} >= 9} {
-            default_variants +llvm70
+            default_variants +llvm80
         }
 
         if {![some_llvm_variant_set] && ${os.major} >= 9} {

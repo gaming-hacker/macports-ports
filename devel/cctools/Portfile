@@ -6,6 +6,7 @@ name                    cctools
 # Xcode 10.0
 version                 921
 set ld64_version        409.12
+revision                2
 categories              devel
 platforms               darwin
 maintainers             {jeremyhu @jeremyhu} openmaintainer
@@ -45,10 +46,10 @@ if {${os.major} < 11} {
 
 set all_llvm_variants {llvm80 }
 if {${os.major} < 12} {
-    lappend all_llvm_variants llvm34
+    lappend all_llvm_variants llvm80
 }
 if {${os.major} < 14} {
-    lappend all_llvm_variants llvm37
+    lappend all_llvm_variants llvm80
 }
 array set llvm_variant_version {llvm80 8.0 }
 set llvm_version {8.0}
@@ -74,9 +75,9 @@ proc some_llvm_variant_set {} {
 if { ![some_llvm_variant_set] && ![variant_isset xcode] } {
     if {${os.major} == 12 || ${os.major} == 13} {
         # Using llvm-3.7 to break a dependency cycle (https://trac.macports.org/ticket/53138)
-        default_variants +llvm37
+        default_variants +llvm80
     } elseif {${os.major} == 10 || ${os.major} == 11} {
-        default_variants +llvm34
+        default_variants +llvm80
     }
 
     # TODO?: cctools-895 requires llvm-3.4 as a minimum version for LTO support
@@ -140,6 +141,36 @@ post-patch {
             reinplace "s:\"llvm-mc\":\"llvm-mc-mp-${llvm_version}\":" ${worksrcpath}/as/driver.c
             reinplace "s:@@LLVM_LIBDIR@@:${prefix}/libexec/llvm-${llvm_version}/lib:" ${worksrcpath}/libstuff/lto.c
         }
+
+        # List of clang versions to search for at runtime internally by 'as'
+        # Build list from llvm variants, excluding clang < 5 and devel version
+        # (unless devel variant is used in which case it is included first)
+        set as_comps ""
+        foreach variantname ${all_llvm_variants} {
+            set ver $llvm_variant_version($variantname)
+            # Use all non-devel and clang > 4 versions
+            if { ${ver} ne "devel" && ${ver} > 4.999 } {
+                if { ${as_comps} ne "" } {
+                    set as_comps ",${as_comps}"
+                }
+                set as_comps "\"clang-mp-${ver}\"${as_comps}"
+            }
+        }
+        # If llvmdev variant is active, include at start of list
+        if {[variant_isset llvmdev]} {
+            set as_comps "\"clang-mp-devel\",${as_comps}"
+        }
+        ui_debug "as compiler list ${as_comps}"
+        reinplace "s:__MP_CLANG_NAMES__:${as_comps}:" ${worksrcpath}/as/driver.c
+
+        if {${os.major} >= 11} {
+            set try_system_clang 1
+        } else {
+            # clang's integrated assembler may not work well on 10.6 and doesn't
+            # exist on older OS versions.
+            set try_system_clang 0
+        }
+        reinplace "s:__TRY_SYSTEM_CLANG__:${try_system_clang}:" ${worksrcpath}/as/driver.c
 
         foreach file [glob ${worksrcpath}/{*/,}Makefile] {
             reinplace "s:/usr/local:@PREFIX@:g" ${file}
