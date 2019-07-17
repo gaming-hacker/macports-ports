@@ -3,7 +3,7 @@
 PortSystem              1.0
 
 name                    bzip2
-version                 1.0.6
+version                 1.0.8
 platforms               darwin freebsd linux sunos
 categories              archivers sysutils
 maintainers             {ryandesign @ryandesign} openmaintainer
@@ -17,9 +17,10 @@ long_description        ${name} is a freely available, patent free, \
 homepage                https://sourceware.org/bzip2/
 master_sites            macports_distfiles
 
-checksums               rmd160  cc31bbae95e8eec259cef7627eae0c667654a339 \
-sha256  a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd \
-size    782025
+checksums               rmd160  a593488c5c0240bcfceb292c9fa95fb7ad42cb27 \
+                        sha256  ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269 \
+                        size    810029
+
 
 patchfiles              patch-Makefile-man.diff \
                         patch-Makefile-links.diff \
