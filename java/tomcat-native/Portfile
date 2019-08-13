@@ -1,9 +1,10 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem 1.0
+PortSystem          1.0
+PortGroup           java 1.0
 
 name                tomcat-native
-version             1.2.18
+version             1.2.23
 categories          java www
 maintainers         {thebishops.org:matt @mattbishop} openmaintainer
 license             Apache-2
@@ -13,27 +14,25 @@ description         Tomcat 7+ HTTP Server native library support.
 long_description    This port provides access to native apr and other \
                     functions utilized by tomcat.
 
-homepage            http://tomcat.apache.org/
+homepage            https://tomcat.apache.org/
 master_sites        apache:tomcat/tomcat-connectors/native/${version}/source/
 
-checksums           rmd160  26b6ab2d089eb34e9c8ec795131d70790ffed602 \
-sha256  846c579ff81655f72382597272c1bcf850491d39ba5ba079b541c79887d827d2 \
-size    411789
+checksums           rmd160  6b40e49cfdf91045359474dd4eacde2070df41b2 \
+sha256  5ae5940f759cfdd68384ecf61f2c4fd9b01eb430ab0d349c0b197df0b0c0c3c7 \
+size    419428
 
 distname            ${name}-${version}-src
 worksrcdir          ${distname}/native
 
 depends_lib         port:apr \
-                    path:lib/libssl.dylib:openssl
+                    path:lib/libssl.dylib:openssl11
+
+# java Portgroup settings
+java.version        1.7+
+java.fallback       openjdk8
 
 configure.args      --with-apr=${prefix} \
                     --with-ssl=${prefix}
-
-if {[info exists env(JAVA_HOME)]} {
-    configure.args-append   --with-java-home="$env(JAVA_HOME)"
-} else {
-    configure.args-append   --with-java-home="/System/Library/Frameworks/JavaVM.framework"
-}
 
 build.args          EXTRA_LDFLAGS="-shrext .jnilib"
 
@@ -41,8 +40,7 @@ notes "
 To integrate this into tomcat, add -Djava.library.path=${prefix} to the tomcat options or\
 to CATALINA_OPTS.
 
-You then need to configure a Connector in server.xml\
-with the appropriate apr protocol class for your use,\
+You then need to configure a Connector in server.xml with the appropriate apr protocol class for your use,\
 for instance:
     protocol=\"org.apache.coyote.http11.Http11AprProtocol\",
     protocol=\"org.apache.coyote.ajp.AjpAprProtocol\"
@@ -59,5 +57,5 @@ For further information please see https://tomcat.apache.org/native-doc/index.ht
 "
 
 livecheck.type      regex
-livecheck.url       http://archive.apache.org/dist/tomcat/tomcat-connectors/native/
+livecheck.url       https://archive.apache.org/dist/tomcat/tomcat-connectors/native/
 livecheck.regex     {(\d+\.\d+\.\d+)/}

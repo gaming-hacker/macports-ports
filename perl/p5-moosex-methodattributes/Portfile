@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         MooseX-MethodAttributes 0.31
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -22,6 +21,7 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-moosex-role-parameterized \
                     port:p${perl5.major}-test-fatal \
                     port:p${perl5.major}-test-requires
+
 
     depends_lib-append \
                     port:p${perl5.major}-moose \

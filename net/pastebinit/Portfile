@@ -26,11 +26,11 @@ use_configure       no
 set sharedir        ${prefix}/share/${name}/
 set localedir       ${prefix}/share/locale/
 
-depends_lib-append  port:py37-configobj
+depends_lib-append  port:py27-configobj
 
 post-patch {
     # Fix paths
-    reinplace "s|^#!/usr/bin/python3|#!${prefix}/bin/python3.7|" ${worksrcpath}/pastebinit
+    reinplace "s|^#!/usr/bin/python3|#!${prefix}/bin/python2.7|" ${worksrcpath}/pastebinit
     reinplace "s|/etc/pastebin.d|${prefix}/etc/pastebin.d|" ${worksrcpath}/pastebinit
 }
 

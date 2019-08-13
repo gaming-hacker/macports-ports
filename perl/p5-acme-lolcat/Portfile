@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.28
 perl5.setup         Acme-LOLCAT 0.0.5
-
 revision            3
 license             {Artistic-1 GPL}
 maintainers         fpassera.com:dev openmaintainer

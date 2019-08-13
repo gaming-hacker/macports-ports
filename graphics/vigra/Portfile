@@ -10,14 +10,14 @@ PortGroup           cxx11 1.1
 
 github.setup        ukoethe vigra 1-11-1 Version-
 version             [strsed ${github.version} {g/-/./}]
-revision            6
+revision            7
 categories          graphics
 platforms           darwin
 license             MIT
 maintainers         {gmail.com:benjamin.seppke @BSeppke}
 description         Generic Image Processing Library for C++
-long_description    VIGRA stands for Vision with Generic Algorithms. \
-                    Its a novel computer vision library that puts its \
+long_description    VIGRA stands for \"Vision with Generic Algorithms\". \
+                    It's a novel computer vision library that puts its \
                     main emphasis on customizable algorithms and data \
                     structures. By using template techniques similar to \
                     those in the C++ Standard Template Library, you can \
@@ -90,8 +90,47 @@ if {[variant_isset valgrind]} {
     configure.args-append -DWITH_VALGRIND=NO
 }
 
+variant python27 conflicts python34 python35 python36 python37 description "Also build vigranumpy python27 bindings" {
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
+                            -DPYTHON_SPHINX=${prefix}/bin/sphinx-build-2.7
+    depends_lib-append  port:boost \
+                        port:python27 \
+                        port:py27-numpy \
+                        port:py27-sphinx
+    require_active_variants boost python27
+}
 
-variant python37 description "Also build vigranumpy python37 bindings" {
+variant python34 conflicts python27 python35 python36 python37 description "Also build vigranumpy python34 bindings" {
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.4 \
+                            -DPYTHON_SPHINX=${prefix}/bin/sphinx-build-3.4
+    depends_lib-append  port:boost \
+                        port:python34 \
+                        port:py34-numpy \
+                        port:py34-sphinx
+    require_active_variants boost python34
+}
+
+variant python35 conflicts python27 python34 python36 python37 description "Also build vigranumpy python35 bindings" {
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.5 \
+                            -DPYTHON_SPHINX=${prefix}/bin/sphinx-build-3.5
+    depends_lib-append  port:boost \
+                        port:python35 \
+                        port:py35-numpy \
+                        port:py35-sphinx
+    require_active_variants boost python35
+}
+
+variant python36 conflicts python27 python34 python35 python37 description "Also build vigranumpy python36 bindings" {
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.6 \
+                            -DPYTHON_SPHINX=${prefix}/bin/sphinx-build-3.6
+    depends_lib-append  port:boost \
+                        port:python36 \
+                        port:py36-numpy \
+                        port:py36-sphinx
+    require_active_variants boost python36
+}
+
+variant python37 conflicts python27 python34 python35 python36 description "Also build vigranumpy python37 bindings" {
     configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
                             -DPYTHON_SPHINX=${prefix}/bin/sphinx-build-3.7
     depends_lib-append  port:boost \
@@ -102,10 +141,10 @@ variant python37 description "Also build vigranumpy python37 bindings" {
 }
 
 if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python37
+    default_variants +python27
 }
 
-if {![variant_isset python37] && ![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python27] && ![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
     configure.args-append -DWITH_VIGRANUMPY=NO
 }
 

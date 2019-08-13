@@ -1,36 +1,37 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem            1.0
-PortGroup             github         1.0
-PortGroup             mpi            1.0
-PortGroup             linear_algebra 1.0
-PortGroup             cxx11          1.1
-PortGroup             muniversal     1.0
+PortSystem              1.0
+PortGroup               github         1.0
+PortGroup               mpi            1.0
+PortGroup               linear_algebra 1.0
+PortGroup               cxx11          1.1
+PortGroup               muniversal     1.0
 
-github.setup          hpddm hpddm 58158b54b1ff9f916b85f897adfb6993093d220f
+github.setup            hpddm hpddm dc10b0f67b5c8a725fe16eb81383cf9d5859b498
 # see ${worksrcpath}/include/HPDDM.hpp
-version               993
-categories            math science
-license               LGPL-3+
-maintainers           {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
-platforms             darwin
-description           a framework for high-performance domain decomposition methods
-long_description      \
+version                 1900
+revision                1
+categories              math science
+license                 LGPL-3+
+maintainers             {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
+platforms               darwin
+description             a framework for high-performance domain decomposition methods
+long_description        \
     HPDDM is an efficient implementation of various domain decomposition methods.
 
-checksums             rmd160  38f92cca0a91f8d94852cd160c8bc0fa6f583552 \
-sha256  4499193e0127d6968bccec68666b96c0268d3b21e971a1cec50eed21b512c2f9 \
-size    248106
+checksums               rmd160  cad59a81d5ac5a2e70d449d890eb1a75f3fddea5 \
+sha256  4ef6333a5a34df09aa875420db1c5852aff41baf0e8a2a457b67c3112965ce80 \
+size    263694
 
-mpi.setup             require require_fortran
+mpi.setup               require require_fortran
 
-depends_lib-append    port:python37 \
-                      port:mumps \
-                      port:arpack \
-                      port:scalapack \
-                      port:hypre
+depends_lib-append      port:python27 \
+                        port:mumps \
+                        port:arpack \
+                        port:scalapack \
+                        port:hypre
 
-patchfiles-append     patch-install_name.diff
+patchfiles-append       patch-install_name.diff
 post-patch {
     reinplace "s|__MACPORTS_PREFIX__|${prefix}|g" ${worksrcpath}/Makefile
 }
@@ -40,21 +41,37 @@ post-extract {
     copy ${worksrcpath}/Make.inc/Makefile.OSX ${worksrcpath}/Makefile.inc
 }
 pre-configure {
+    if {[vercmp [macports_version] 2.5.99] >= 0} {
+    configure.env-append \
+        MPICXX=${configure.cxx} \
+        MPICC=${configure.cc} \
+        MPIF90=${configure.f90} \
+        "MPIRUN=${prefix}/bin/${mpi.exec} -np" \
+        MUMPS_INCS=-I${prefix}/include \
+        PYTHON_INCS=-I${prefix}/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 \
+        "BLAS_LIBS=-L${prefix}/lib ${linalglib}" \
+        "ARPACK_LIBS=-L${prefix}/lib -larpack" \
+        "SCALAPACK_LIBS=-L${prefix}/lib -lscalapack" \
+        "MUMPS_LIBS=-L${prefix}/lib -lmumps_common -lsmumps -ldmumps -lcmumps -lzmumps -lpord" \
+        "HYPRE_LIBS=-L${prefix}/lib -lHYPRE" \
+        "PYTHON_LIBS=-L${prefix}/Library/Frameworks/Python.framework/Versions/2.7/lib -lpython2.7"
+    } else {
     configure.env-append \
         MPICXX=${configure.cxx} \
         MPICC=${configure.cc} \
         MPIF90=${configure.f90} \
         MPIRUN="${prefix}/bin/${mpi.exec} -np" \
         MUMPS_INCS=-I${prefix}/include \
-        PYTHON_INCS=-I${prefix}/Library/Frameworks/Python.framework/Versions/3.7/include/python2.7 \
+        PYTHON_INCS=-I${prefix}/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 \
         BLAS_LIBS="-L${prefix}/lib ${linalglib}" \
         ARPACK_LIBS="-L${prefix}/lib -larpack" \
         SCALAPACK_LIBS="-L${prefix}/lib -lscalapack" \
         MUMPS_LIBS="-L${prefix}/lib -lmumps_common -lsmumps -ldmumps -lcmumps -lzmumps -lpord" \
         HYPRE_LIBS="-L${prefix}/lib -lHYPRE" \
-        PYTHON_LIBS="-L${prefix}/Library/Frameworks/Python.framework/Versions/3.7/lib -lpython2.7"
+        PYTHON_LIBS="-L${prefix}/Library/Frameworks/Python.framework/Versions/2.7/lib -lpython2.7"
+    }
 }
-configure.cmd       printenv
+configure.cmd         printenv
 configure.pre_args
 configure.universal_args
 configure.post_args {>> Makefile.inc}
@@ -66,7 +83,7 @@ post-configure {
 
 # Makefile searches for gfortran in $(MPIF90) name, which is not always true
 #    even though $(MPIF90) uses gfortran
-build.args-append     F90MOD=-J
+build.args-append       F90MOD=-J
 
 destroot {
     xinstall -d  -m 0755 ${destroot}${prefix}/include/${name}
@@ -78,12 +95,12 @@ destroot {
     }
 }
 
-test.run              yes
+test.run                yes
 
-depends_test-append   port:py37-mpi4py \
-                      port:py37-numpy \
-      	      	      port:py37-scipy
+depends_test-append     port:py27-mpi4py \
+                        port:py27-numpy \
+                        port:py27-scipy
 
 pre-test {
-    test.args-append PATH=${prefix}/Library/Frameworks/Python.framework/Versions/3.7/bin:$env(PATH)
+    test.args-append PATH=${prefix}/Library/Frameworks/Python.framework/Versions/2.7/bin:$env(PATH)
 }

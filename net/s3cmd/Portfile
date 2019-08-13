@@ -26,11 +26,11 @@ sha256  4675794f84d8744ee3d35873d180f41c7b2116895ccbe2738a9bc552e1cf214e
 platforms           darwin
 supported_archs     noarch
 
-python.default_version 37
+python.default_version  27
 
-depends_build-append    port:py37-setuptools
-depends_run-append      port:py37-dateutil \
-                        port:py37-magic \
+depends_build-append    port:py27-setuptools
+depends_run-append      port:py27-dateutil \
+                        port:py27-magic \
                         path:share/curl/curl-ca-bundle.crt:curl-ca-bundle
 
 livecheck.type      regex

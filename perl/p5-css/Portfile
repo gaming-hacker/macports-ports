@@ -2,14 +2,12 @@
 
 PortSystem          1.0
 PortGroup           perl5 1.0
-PortGroup user 1.0
 
 perl5.branches 5.28
 perl5.setup         CSS 1.09
-# perl5.setup         {CSS @cssdev} 1.09
 revision            1
 maintainers         nomaintainer
-license             Artistic-1 GPL
+license             {Artistic-1 GPL}
 
 description         Object oriented access to Cascading Style Sheets (CSS)
 

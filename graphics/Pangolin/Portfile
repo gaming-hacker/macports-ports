@@ -4,10 +4,9 @@ PortSystem          1.0
 PortGroup           cmake 1.1
 PortGroup           cxx11 1.1
 PortGroup           github 1.0
-PortGroup user 1.0
 
 github.setup        stevenlovegrove Pangolin 0.5 v
-revision            4
+revision            5
 categories          graphics
 platforms           darwin
 license             MIT
@@ -33,7 +32,7 @@ depends_lib-append  port:glew \
                     port:tiff \
                     path:lib/libavcodec.dylib:ffmpeg
 
-checksums rmd160  5b31d14e8cb1d78cde3f48b9f2576e77e8a5f717 \
+checksums           rmd160  5b31d14e8cb1d78cde3f48b9f2576e77e8a5f717 \
 sha256  7d9ac216ae4ef86150a3ced1cfb0bb23572493aae4f7403b1552be4314b766df
 
 patchfiles-append   CMakeLists.txt.patch \

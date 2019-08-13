@@ -3,7 +3,8 @@
 PortSystem          1.0
 
 name                bro
-version             2.5.4
+version             2.6.3
+revision            0
 categories          net security
 platforms           darwin
 maintainers         nomaintainer
@@ -20,9 +21,9 @@ master_sites        ${homepage}downloads/ \
                     ${homepage}downloads/release/ \
                     ${homepage}downloads/archive/
 
-checksums           rmd160  9110f1a42613af851e5d802a83d5c83fbc1ebd09 \
-sha256  80daea433fa654f2602cf67b19b9121ff6ad57761bad73cc29020c4f490c5f1f \
-size    18520847
+checksums           rmd160  7cc84bf1459bc18ffe3a7208d2deb845b7e4e41f \
+sha256  469dd7456af388ba65d8722fbfdd5b9182f14def16149aa5ebceb1cfd881697f \
+size    28480249
 
 depends_build       path:bin/cmake:cmake \
                     port:libgeoip \
@@ -35,7 +36,7 @@ depends_lib         port:bison \
                     port:libpcap \
                     path:lib/libssl.dylib:openssl \
                     port:perl5 \
-                    port:python37 \
+                    port:python27 \
                     port:readline \
                     port:zlib
 
@@ -55,14 +56,13 @@ post-patch {
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/examples/${name}
-    move ${destroot}${prefix}/etc/bro/broccoli.conf ${destroot}${prefix}/share/examples/${name}/
     move ${destroot}${prefix}/etc/bro/node.cfg ${destroot}${prefix}/share/examples/${name}/
     move ${destroot}${prefix}/etc/bro/networks.cfg ${destroot}${prefix}/share/examples/${name}/
     move ${destroot}${prefix}/etc/bro/broctl.cfg ${destroot}${prefix}/share/examples/${name}/
 
-    reinplace "s|/usr/bin/python|${prefix}/bin/python3.7|" ${destroot}${prefix}/bin/broctl
+    reinplace "s|/usr/bin/python|${prefix}/bin/python2.7|" ${destroot}${prefix}/bin/broctl
 
-    reinplace "s|/usr/bin/python|${prefix}/bin/python3.7|" ${destroot}${prefix}/bin/trace-summary
+    reinplace "s|/usr/bin/python|${prefix}/bin/python2.7|" ${destroot}${prefix}/bin/trace-summary
 
     xinstall -d ${destroot}${prefix}/Library/LaunchDaemons/
     copy ${filespath}/org.macports.bro.plist ${destroot}${prefix}/Library/LaunchDaemons/
@@ -77,9 +77,6 @@ post-destroot {
 }
 
 post-activate {
-    if {![file exists ${prefix}/etc/bro/broccoli.conf]} {
-        copy ${prefix}/share/examples/${name}/broccoli.conf ${prefix}/etc/bro/broccoli.conf
-    }
     if {![file exists ${prefix}/etc/bro/node.cfg]} {
         copy ${prefix}/share/examples/${name}/node.cfg ${prefix}/etc/bro/node.cfg
     }
@@ -127,6 +124,7 @@ http://www.bro.org/sphinx/quickstart/index.html
 3) Use scheduled task for maintenance
   # ln -s ${prefix}/Library/LaunchDaemons/org.macports.bro.plist /Library/LaunchDaemons/
   # launchctl load -w /Library/LaunchDaemons/org.macports.bro.plist
+
 
 **** UPGRADING ****
 

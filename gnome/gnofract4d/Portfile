@@ -29,7 +29,7 @@ dist_subdir             ${name}/${version}_1
 distname                V_[regsub -all {\.} $version {_}]
 worksrcdir              ${name}-${distname}
 
-python.default_version 37
+python.default_version  27
 
 depends_build           port:pkgconfig
 depends_lib-append      port:py${python.version}-pygtk \

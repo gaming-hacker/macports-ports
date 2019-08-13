@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name                    google-guava
@@ -6,7 +7,7 @@ version                 13.0.1
 categories              java
 license                 Apache-2
 platforms               darwin
-maintainers             {blair @blair}
+maintainers             nomaintainer
 description             Google's core libraries for Java 1.6
 long_description        Google Guava replaces and includes Google Collections \
                         plus many other important core libraries.  It is a \

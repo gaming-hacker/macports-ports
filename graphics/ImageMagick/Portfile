@@ -9,8 +9,8 @@ PortGroup                   conflicts_build 1.0
 # PHP Warning:  Version warning: Imagick was compiled against Image Magick version XXXX but version YYYY is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
 
 name                        ImageMagick
-version                     7.0.8-16
-revision                    1
+version                     6.9.9-40
+revision                    6
 set reasonable_version      [lindex [split ${version} -] 0]
 homepage                    http://www.imagemagick.org/
 categories                  graphics devel
@@ -42,9 +42,9 @@ master_sites                http://www.imagemagick.org/download/ \
                             ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick \
                             ftp://sunsite.icm.edu.pl/packages/ImageMagick
 
-checksums           rmd160  614ee7c7b255f6a7407fff765af046fa1eb5ba2e \
-sha256  2d4713956fb11d500681da5b32a3243d5d5823551dfdfeb62ba8e5959244e951 \
-size    8646148
+checksums                   rmd160  d01d39b0da259c1296acaa37867f1a428928b72e \
+sha256  62f25d46bfbcffe00b84e167994d593868a9a47d4defc489a429cae1d6aab9f7 \
+size    8919136
 
 depends_lib                 port:bzip2 \
                             port:djvulibre \
@@ -66,15 +66,12 @@ depends_lib                 port:bzip2 \
                             port:openjpeg \
                             port:openexr \
                             port:expat \
-                            port:libxml2 \
-                            port:flif
+                            port:libxml2
 
 # Magick-config etc. use pkg-config
 depends_lib-append          port:pkgconfig
 
-depends_run                 port:urw-fonts \
-                            port:urw-core35-fonts \
-                            port:dejavu-fonts
+depends_run                 port:urw-fonts
 
 configure.ccache            no
 
@@ -86,7 +83,7 @@ configure.args              --enable-shared \
                             --disable-silent-rules \
                             --with-frozenpaths \
                             --with-openexr \
-                            --enable-hdri \
+                            --disable-hdri \
                             --with-dps \
                             --with-bzlib \
                             --with-djvu \
@@ -102,9 +99,6 @@ configure.args              --enable-shared \
                             --with-zlib \
                             --with-modules \
                             --with-xml \
-                            --with-quantum-depth=64 --enable-openmp --enable-largefile \
-                            --enable-pipes --enable-hugepages --disable-assert \
-                            --with-magick-plus-plus --with-jbig --with-openexr \
                             --without-perl \
                             --without-fpx \
                             --without-wmf \
@@ -113,9 +107,7 @@ configure.args              --enable-shared \
                             --without-lqr \
                             --without-pango \
                             --without-x \
-                            --with-gs-font-dir=${prefix}/share/fonts/urw-fonts \
-                            --with-urw-base35-font-dir=${prefix}/share/fonts/urw-core35-fonts \
-                            --with-dejavu-font-dir=${prefix}/share/fonts/dejavu-fonts
+                            --with-gs-font-dir=${prefix}/share/fonts/urw-fonts
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     configure.args-append   --disable-opencl
@@ -167,7 +159,7 @@ variant x11 {
     configure.args-replace  --without-x --with-x
 }
 
-default_variants            +x11 +pango +lqr +rsvg +wmf
+default_variants            +x11
 
 livecheck.version           ${reasonable_version}
 livecheck.type              regex

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name		libfetch
@@ -19,9 +20,15 @@ sha1 1059a18b860dc42e84931f5f914a81e3452bb204 \
 rmd160 27190ff9b524992e7eb8f0e96f79c3153d92d1eb
 variant universal {}
 build.type	bsd
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env	CC=${configure.cc} \
+		"CFLAGS=${configure.cppflags} ${configure.cflags} [get_canonical_archflags]" \
+		"LDFLAGS=${configure.ldflags} [get_canonical_archflags]"
+} else {
 build.env	CC=${configure.cc} \
 		CFLAGS="${configure.cppflags} ${configure.cflags} [get_canonical_archflags]" \
 		LDFLAGS="${configure.ldflags} [get_canonical_archflags]"
+}
 build.args	-DMK_INET6_SUPPORT -DMK_OPENSSL
 worksrcdir	${name}
 use_configure	no

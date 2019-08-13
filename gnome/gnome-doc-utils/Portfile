@@ -34,7 +34,7 @@ depends_build       port:intltool \
 
 depends_lib         port:gettext \
                     port:libxslt \
-                    port:py37-libxml2
+                    port:py27-libxml2
 
 depends_run         port:docbook-xml \
                     port:docbook-xsl-nons \
@@ -44,8 +44,8 @@ depends_run         port:docbook-xml \
 # Pickup saner intltool macros
 patchfiles          no-intltool-perl.patch
 
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 configure.args      --disable-scrollkeeper \
-                    am_cv_python_pythondir=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages/
+                    am_cv_python_pythondir=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages/
 
 livecheck.type      gnome

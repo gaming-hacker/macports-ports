@@ -8,7 +8,7 @@ PortGroup   muniversal 1.0
 name                gstreamer010-gst-plugins-ugly
 set my_name         gst-plugins-ugly
 version             0.10.19
-revision            8
+revision            10
 description         \
     A set of good-quality plug-ins for GStreamer that might pose distribution \
     problems.
@@ -27,6 +27,7 @@ license             GPL-2+ LGPL-2+
 use_bzip2           yes
 checksums           rmd160  39fadcf4205bbe0fd2dc079296c816d8668cc59d \
 sha256  1ca90059275c0f5dca71d4d1601a8f429b7852baed0723e820703b977e2c8df0
+
 
 depends_build       port:pkgconfig
 depends_lib         port:gstreamer010-gst-plugins-base \

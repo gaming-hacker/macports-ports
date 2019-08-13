@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name              honeyd
@@ -25,21 +26,27 @@ depends_lib       port:libevent1 \
 		  port:libdnet \
 		  port:libpcap \
 		  port:pcre \
-		  port:py37-libdnet \
-		  port:py37-pylibpcap
+		  port:py27-libdnet \
+		  port:py27-pylibpcap
 
 patchfiles        configure.patch dpkt_Makefile.patch
 platform darwin {
     patchfiles-append   darwin_rlimit.patch
 }
 post-patch {
-    reinplace "s|__PYTHON__|${prefix}/bin/python3.7|" ${worksrcpath}/dpkt/Makefile
+    reinplace "s|__PYTHON__|${prefix}/bin/python2.7|" ${worksrcpath}/dpkt/Makefile
 }
 
 configure.args	  --with-python
-configure.env     PATH_PYTHON=${prefix}/bin/python3.7 \
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+configure.env     PATH_PYTHON=${prefix}/bin/python2.7 \
+                  EVENTINC=-I${prefix}/include/libevent1 \
+                  "EVENTLIB=-L${prefix}/lib/libevent1 -levent"
+} else {
+configure.env     PATH_PYTHON=${prefix}/bin/python2.7 \
                   EVENTINC="-I${prefix}/include/libevent1" \
                   EVENTLIB="-L${prefix}/lib/libevent1 -levent"
+}
 
 variant rrdtool {
 	depends_lib-append	port:rrdtool

@@ -5,12 +5,28 @@ PortGroup               github 1.0
 
 # Download distfiles from GitHub mirror because fetching from svn keeps being
 # problematic.
-github.setup            chneukirchen netpbm-mirror f79daabd7540e5cc6c6a6cd128b884ea0de54906
+github.setup            leahneukirchen netpbm-mirror be0a23cddaf0182d1fda4f623a3b23f67db91d73
 name                    netpbm
-version                 10.84.02
-svn.revision            3405
-set userguide_commit    ea4ccc82bcaf4fdf8154567808ddf1c71bf983d8
-set userguide_revision  3378
+version                 10.87.00
+svn.revision            3647
+set source_branch       advanced
+distname                ${source_branch}-r${svn.revision}
+set source_distfile     ${distfiles}
+
+set userguide_commit    659088e47395511bee20a5ac319bc6a3ea5d64cb
+set userguide_revision  3633
+set userguide_branch    userguide
+set userguide_distname  ${userguide_branch}-r${userguide_revision}
+set userguide_distfile  ${userguide_distname}${extract.suffix}
+
+checksums               ${source_distfile} \
+rmd160  25f855b6eccb036898059081d4111b19dccaf402 \
+sha256  712d8b6c4b6525d3f78b26785b90b1e5382630740f5b2794aa257a1983e90357 \
+size    2858101 \
+                        ${userguide_distfile} \
+rmd160  cd068321c8b3e943833072b76f562c671e656d37 \
+sha256  83962e45a202b090d732d80dccde15e11ee34aca8ce22cc3700ec5638f25f270 \
+size    1217920
 
 categories              graphics
 platforms               darwin freebsd linux
@@ -27,31 +43,28 @@ long_description        A whole bunch of utilities for primitive manipulation \
 
 homepage                http://netpbm.sourceforge.net/
 
-set source_branch       advanced
-set userguide_branch    userguide
-distname                ${source_branch}-r${svn.revision}
-set source_distfile     ${distfiles}
-set userguide_distname  ${userguide_branch}-r${userguide_revision}
-set userguide_distfile  ${userguide_distname}${extract.suffix}
-
 distfiles               ${source_distfile}:source \
                         ${userguide_distfile}:userguide
 
 master_sites            ${github.master_sites}:source \
                         ${github.homepage}/tarball/${userguide_commit}:userguide
 
-checksums               ${source_distfile} \
-rmd160  b8d8e1a773d7e9dd5eba9c97a05fde367ed13681 \
-sha256  09bbc638f7e29f1d3118406cd267e17fcf7d7f27b52875fdae7e44541fe1ce16 \
-size    2821634 \
-                        ${userguide_distfile} \
-rmd160  5ee192f111207d716e8002f2388e69f8e0e5cd57 \
-sha256  1f844c9eb6975a48dc8fd15fbaee67f8a5f0dc0a1293c297fc8d9a87b30a5687\
-size    1206800
-
 post-extract {
     move ${workpath}/${github.author}-${github.project}-[string range ${git.branch} 0 6] ${workpath}/${distname}
     move ${workpath}/${github.author}-${github.project}-[string range ${userguide_commit} 0 6] ${workpath}/${userguide_distname}
+
+    set newest_mtime 0
+    fs-traverse item ${worksrcpath} {
+        if [file isfile ${item}] {
+            set item_mtime [file mtime ${item}]
+            if {${item_mtime} > ${newest_mtime}} {
+                set newest_mtime ${item_mtime}
+            }
+        }
+    }
+    set fp [open ${workpath}/mtime w]
+    puts ${fp} ${newest_mtime}
+    close ${fp}
 
     # Delete the manpages that aren't for this subport.
     set libmanpages {libnetpbm pam pbm pgm pnm ppm}
@@ -132,6 +145,13 @@ platform freebsd {
     set ldshlib "${prefix}/lib/glibtool --mode=link gcc"
 }
 
+pre-build {
+    set fp [open ${workpath}/mtime r]
+    set mtime [read ${fp}]
+    close ${fp}
+    build.env-append    SOURCE_DATE_EPOCH=${mtime}
+}
+
 build.args              messages=yes
 build.type              gnu
 
@@ -199,7 +219,7 @@ if {${subport} eq ${name}} {
         # Install documentation.
         set docdir ${prefix}/share/doc/${subport}
         xinstall -d ${destroot}${docdir}
-        xinstall -m 644 -W ${worksrcpath} \
+        xinstall -m 0644 -W ${worksrcpath} \
             README \
             doc/COPYRIGHT.PATENT \
             doc/GPL_LICENSE.txt \
@@ -259,25 +279,13 @@ subport libnetpbm {
 
     post-destroot {
         # Install netpbm-config and netpbm.pc.
-        xinstall -m 755 ${build.dir}/netpbm-config ${destroot}${prefix}/bin/
-        xinstall -m 644 ${build.dir}/netpbm.pc ${destroot}${prefix}/lib/pkgconfig/
-
-        move {*}[glob ${destroot}${prefix}/link/*] ${destroot}${prefix}/lib/
+        xinstall -m 0755 ${build.dir}/netpbm-config ${destroot}${prefix}/bin/
+        xinstall -m 0644 ${build.dir}/netpbm.pc ${destroot}${prefix}/lib/pkgconfig/
 
         # Add symlinks for old library names that some old software still uses.
         set new_library [file readlink ${destroot}${prefix}/lib/libnetpbm.${netpbmlibsuffix}]
         foreach old_library {pbm pgm pnm ppm} {
             ln -s ${new_library} ${destroot}${prefix}/lib/lib${old_library}.${netpbmlibsuffix}
-        }
-    }
-
-    pre-activate {
-        # netpbm < 10.70.07 installed libnetpbm and associated files
-        if {![catch {set installed [lindex [registry_active netpbm] 0]}]} {
-            set installed_version [lindex ${installed} 1]
-            if {[vercmp ${installed_version} 10.70.07] < 0} {
-                registry_deactivate_composite netpbm "" [list ports_nodepcheck 1]
-            }
         }
     }
 }
@@ -286,6 +294,7 @@ subport libnetpbm {
 platform darwin 8 {
     depends_build-append port:gmake
     build.cmd ${prefix}/bin/gmake
+    use_parallel_build  no
     pre-configure {
         set fl [open "| ${configure.cc} --version"]
         set data [read $fl]
@@ -301,7 +310,7 @@ patchfiles-append       patch-python.diff
 if {${os.platform} eq "darwin" && ${os.major} < 10} {
     # the system python is too old to run scripts
     depends_build-append \
-                        port:python37
+                        port:python27
     configure.python    ${prefix}/bin/python2.7
 } else {
     configure.python    /usr/bin/python

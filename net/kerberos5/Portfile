@@ -4,10 +4,11 @@ PortSystem                  1.0
 PortGroup                   compiler_blacklist_versions 1.0
 
 name                        kerberos5
-version                     1.16.2
-checksums                   rmd160  76188113d13eb9667d6057fe23d653a3d09d4817 \
-sha256  9f721e1fe593c219174740c71de514c7228a97d23eb7be7597b2ae14e487f027 \
-size    9652415
+version                     1.17
+revision                    0
+checksums                   rmd160  cb6ec84514a1a1fab8a0faefdc3ecca706df8b2d \
+sha256  5a6e2284a53de5702d3dc2be3b9339c963f9b5397d3fbbc53beb249380a781f5 \
+size    8761763
 
 set branch                  [join [lrange [split ${version} .] 0 1] .]
 conflicts                   fbopenssl
@@ -30,7 +31,8 @@ homepage                    http://web.mit.edu/kerberos/
 master_sites                ${homepage}dist/krb5/${branch}/
 distname                    krb5-${version}
 
-depends_build               port:python37
+depends_build               port:pkgconfig \
+                            port:python27
 
 depends_lib                 port:gettext \
                             port:libcomerr \
@@ -56,7 +58,7 @@ use_autoreconf              yes
 # remove ${prefix}/lib from configure.ldflags to allow linking against its own libs first
 # adding ${worksrcpath}/lib is not necessary and pollutes krb5-config --libs and pkg-config files
 configure.ldflags-delete    -L${prefix}/lib
-configure.python            ${prefix}/bin/python3.7
+configure.python            ${prefix}/bin/python2.7
 configure.args              --mandir=${prefix}/share/man \
                             --with-system-et \
                             --without-system-db \
@@ -77,7 +79,7 @@ compiler.blacklist-append   {clang <= 318.0.61}
 # i386 linking fails on Snow Leopard with gcc-4.2 from Xcode 3.2.6
 if {[string match *gcc-4.2 ${configure.compiler}] &&
     ($build_arch eq "i386" || ([variant_isset universal] && "i386" in $universal_archs))} {
-    configure.optflags -O3
+    configure.optflags -O2
 }
 
 post-configure {

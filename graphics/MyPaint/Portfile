@@ -69,12 +69,12 @@ depends_lib-append          path:lib/pkgconfig/glib-2.0.pc:glib2 \
                             port:lcms2 \
                             port:libpng \
                             port:librsvg \
-                            port:python37 \
-                            port:py37-cairo \
-                            port:py37-gobject3 \
-                            port:py37-numpy \
-                            port:py37-protobuf \
-                            port:py37-pyobjc-cocoa
+                            port:python27 \
+                            port:py27-cairo \
+                            port:py27-gobject3 \
+                            port:py27-numpy \
+                            port:py27-protobuf \
+                            port:py27-pyobjc-cocoa
 
 depends_run-append          port:hicolor-icon-theme
 
@@ -88,11 +88,17 @@ variant universal {}
 
 build.cmd                   ${prefix}/bin/scons
 build.target
-build.args                  python_binary=${prefix}/bin/python3.7 \
-                            python_config=${prefix}/bin/python3.7-config
+build.args                  python_binary=${prefix}/bin/python2.7 \
+                            python_config=${prefix}/bin/python2.7-config
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env                   "CC=${configure.cc} [get_canonical_archflags cc]" \
+                            "CXX=${configure.cxx} [get_canonical_archflags cxx]" \
+                            PKG_CONFIG_PATH=${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig
+} else {
 build.env                   CC="${configure.cc} [get_canonical_archflags cc]" \
                             CXX="${configure.cxx} [get_canonical_archflags cxx]" \
-                            PKG_CONFIG_PATH="${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig"
+                            PKG_CONFIG_PATH="${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig"
+}
 
 destroot.args               {*}${build.args} \
                             prefix=${prefix}

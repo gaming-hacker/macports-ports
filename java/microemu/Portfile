@@ -29,7 +29,7 @@ rmd160  87b0bc80e5695d4111528ed8f60ebc69cf1dd290
 
 use_configure	    no
 use_zip		    yes
-build.cmd	    true
+build {}
 
 destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/java

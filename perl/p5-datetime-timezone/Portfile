@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 epoch               5
 perl5.branches 5.28
-perl5.setup         DateTime-TimeZone 2.21 ../../authors/id/D/DR/DROLSKY
+perl5.setup         DateTime-TimeZone 2.36 ../../authors/id/D/DR/DROLSKY
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
 supported_archs     noarch
@@ -18,9 +18,9 @@ long_description    This class is the base class for all time zone \
 
 platforms           darwin
 
-checksums           rmd160  70bf37d7c8d3a5e0d5f30af11f5bd5b25215b4f8 \
-sha256  54d685f79df1033c259502cd9c22b1a9d37b627bf815faecebaa27f8e1079e1e \
-size    954717
+checksums           rmd160  165448e4d213a6845257e89ef41a48323b99f82d \
+sha256  7e033a3cae17a62a0a4011b9e3dd900acf8b7614e05dc6595d1f55406ec6f6a7 \
+size    979782
 
 if {${perl5.major} != ""} {
     depends_build-append \
@@ -31,6 +31,7 @@ if {${perl5.major} != ""} {
     
     depends_lib-append \
                     port:p${perl5.major}-class-singleton \
+                    port:p${perl5.major}-locale-codes \
                     port:p${perl5.major}-module-runtime \
                     port:p${perl5.major}-namespace-autoclean \
                     port:p${perl5.major}-params-validationcompiler \

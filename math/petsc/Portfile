@@ -8,7 +8,7 @@ PortGroup           muniversal 1.0
 
 bitbucket.setup     petsc petsc 3.9.3 v
 categories          math science
-maintainers         {sean @seanfarley}
+maintainers         nomaintainer
 license             BSD
 description         Portable, Extensible Toolkit for Scientific Computation
 long_description    PETSc, pronounced PET-see (the S is silent), is a suite \
@@ -23,23 +23,20 @@ sha256  f41ca153cfac7818c0d9444e88a014c1cf2f505ae8bd5fb2a561783751db6ee5 \
 size    17921685
 
 mpi.setup           default
-compilers.clear_archflags no
 
 use_parallel_build  no
 
 depends_build-append \
                     port:sowing \
-                    port:python37 \
+                    port:python27 \
                     port:c2html
 
 # Sundials requires SuiteSparse
 patchfiles-append   patch-sundials.py.diff
 # see https://bitbucket.org/petsc/petsc/commits/0425e358a93e3df180e109da13d1c846f016d85b
 patchfiles-append   patch-superlu_dist.diff
-# in serial mode, MUMPS requires Metis
-patchfiles-append   patch-mumps.py.diff
 post-patch {
-    reinplace -W ${worksrcpath} "s,#!/usr/bin/env python,#!${prefix}/bin/python3.7," configure
+    reinplace -W ${worksrcpath} "s,#!/usr/bin/env python,#!${prefix}/bin/python2.7," configure
 }
 
 pre-configure {
@@ -123,15 +120,14 @@ if {[variant_isset universal]} {
     }
 }
 
+# Remove after 2020-05-21
 subport petsc-devel {
-    bitbucket.setup     petsc petsc d745d2547b89
-    bitbucket.livecheck master
-    name                petsc-devel
-    version             3.7.99
-    revision            6
+    PortGroup           obsolete 1.0
 
-    checksums           rmd160  d67afbc8fd5ec371cd1debfff4b9c0bb41f04a78 \
-sha256  88beb37f34b5f997d47ff0950bc1b89a41035de05b292873d215e7fd78824f56
+    name                petsc-devel
+    replaced_by         petsc
+    version             3.7.99
+    revision            8
 }
 
 notes               "Add the following line to your .bash_profile if you plan to use\
@@ -197,20 +193,11 @@ variant superlu description {Build with SuperLU interface for a serial direct so
     configure.args-append --with-superlu-dir=${prefix}
 }
 
-if {[mpi_variant_isset]} {
 variant mumps description {Build with MUMPS interface for a parallel direct solver} requires parmetis {
     depends_lib-append    port:mumps
     configure.args-append --with-scalapack-dir=${prefix} \
                           --with-mumps-dir=${prefix}
     mpi.enforce_variant   mumps
-}
-} else {
-variant mumps description {Build with MUMPS interface for a direct solver} requires metis {
-    depends_lib-append    port:mumps
-    configure.args-append --with-mumps-dir=${prefix} \
-                          --with-mumps-serial
-    mpi.enforce_variant   mumps
-}
 }
 
 variant superlu_dist description {Build with SuperLU_DIST interface for a parallel direct solver} requires parmetis {
@@ -232,15 +219,12 @@ variant hypre description {Build with HYPRE interface for a sparse parallel solv
     mpi.enforce_variant   hypre
 }
 
-variant parmetis description {Build with ParMetis interface for parallel graph partitioning} requires metis {
-    depends_lib-append    port:parmetis
-    configure.args-append --with-metis-dir=${prefix}
+variant parmetis description {Build with ParMetis interface for parallel graph partitioning} {
+    depends_lib-append    port:metis \
+                          port:parmetis
+    configure.args-append --with-metis-dir=${prefix} \
+                          --with-parmetis-dir=${prefix}
     mpi.enforce_variant   parmetis
-}
-
-variant metis description {Build with Metis interface for graph partitioning} {
-    depends_lib-append    port:metis
-    configure.args-append --with-metis-dir=${prefix}
 }
 
 variant hdf5 description {Build with HDF5 interface for parallel file io} {

@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.28
 perl5.setup         Unix-Groups-FFI 0.002
-
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         Unix::Groups::FFI - Interface to Unix group syscalls

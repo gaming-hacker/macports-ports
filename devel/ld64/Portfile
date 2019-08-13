@@ -1,6 +1,6 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem	1.0
+PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
 
 name                    ld64
@@ -8,17 +8,12 @@ epoch                   2
 version                 3
 revision                1
 set dyld_version        421.2
-set tapi_version        1.30
-set tapi_version_major  1
-set tapi_version_minor  30
-set tapi_version_patch  0
 categories              devel
 platforms               darwin
 maintainers             {jeremyhu @jeremyhu}
 homepage                http://opensource.apple.com/source/${name}/
 master_sites            http://opensource.apple.com/tarballs/${name} \
-                        http://opensource.apple.com/tarballs/dyld \
-                        http://opensource.apple.com/tarballs/tapi
+                        http://opensource.apple.com/tarballs/dyld
 license                 APSL-2
 installs_libs           no
 description             ld64 is the new mach-o linker
@@ -28,9 +23,6 @@ long_description        ld64 combines several object files and libraries, \
 checksums           dyld-421.2.tar.gz \
 rmd160  8985a77c70b6018f456634f89142670834489a4d \
 sha256  e922c4e78af8f7af14dd158f1db986f8eb260403e7a0dc67fa35279d2cfdceb7 \
-                    tapi-1.30.tar.gz \
-rmd160  837529ba8afae924c96bd9641542ec99e01cfbb2 \
-sha256  be2f3732c4ba7e9d78696fe43f0b31fa4963925ee6e4e5e11cc45603a83ff9a1 \
                     ld64-97-standalone-libunwind-headers.patch \
 rmd160  f6da71e097aa61b1055b3fdc12cd39aafed5f492 \
 sha256  370d02757ea628b5dd145c099e42fc4eb88cc09cf459a59e32d14bbc9b4a105e \
@@ -53,7 +45,7 @@ subport ld64-97 {
     version             97.17
     revision            8
 
-    set makefile	"Makefile-97"
+    set makefile        "Makefile-97"
     set ld64_ver        97
 
     compiler.blacklist-append *clang*
@@ -84,7 +76,7 @@ subport ld64-127 {
     version             127.2
     revision            14
 
-    set makefile	"Makefile-127"
+    set makefile        "Makefile-127"
     set ld64_ver        127
 
     patchfiles-append \
@@ -108,14 +100,6 @@ subport ld64-127 {
         PR-13282463.patch \
         PR-29117886.patch \
         ld64-ppc-9610466.patch
-}
-
-subport ld64-136 {
-    # Xcode 4.6
-    version             136
-    revision            10
-    replaced_by         ld64-236
-    PortGroup           obsolete 1.0
 }
 
 subport ld64-236 {
@@ -172,26 +156,13 @@ subport ld64-latest {
         ld64-134-missing-include.patch \
         ld64-136-i386-badAddress.patch \
         ld64-ppc-9610466.patch \
-        ld64-274-use-after-free.patch \
         PR-49393.patch \
         PR-28988396.patch \
         PR-29117886.patch \
+        PR-29679726.patch \
         PR-29723276.patch \
-        PR-33746767.patch \
         PR-29723629.patch \
-        PR-30596832.patch
-
-
-    # TAPI fixes:
-
-    # only +llvm37 is presently known to work with tapi-1.30 code base
-    # llvm34 fails, llvm39 fails, llvm40 fails, llvm50 fails
-    default_variants +llvm70
-
-    # patch out missing definitions for TVOS and WATCHOS not in llvm-3.7 include files
-    post-extract {
-        system "cd ${workpath}/libtapi-${tapi_version} && patch -p1 < ${filespath}/patch-libtapi-lib-Core-MachODylibReader-unknown-LC-options.diff"
-    }
+        PR-33746767.patch
 
     depends_lib-append port:libcxx
     configure.cxx_stdlib libc++
@@ -266,8 +237,8 @@ if {${subport} eq ${name}} {
         xinstall -m 755 ${filespath}/ld-xcode ${destroot}${prefix}/libexec/ld64/ld-xcode
         ln -s ../libexec/ld64/ld-xcode ${destroot}${prefix}/bin/ld-xcode
     }
-} elseif {${subport} ne "${name}-136"} {
-    distfiles           dyld-${dyld_version}.tar.gz ${name}-${version}.tar.gz tapi-${tapi_version}.tar.gz
+} else {
+    distfiles           dyld-${dyld_version}.tar.gz ${name}-${version}.tar.gz
 
     depends_build       path:include/mach-o/arm/reloc.h:libmacho-headers
 
@@ -276,14 +247,17 @@ if {${subport} eq ${name}} {
         depends_build-append port:cctools
     }
 
-    set all_llvm_variants {llvm80}
+    set all_llvm_variants {llvm50 llvm60 llvm70 llvm80 llvmdev}
     if {${os.major} < 10} {
-        lappend all_llvm_variants llvm80
+        lappend all_llvm_variants llvm33
     }
     if {${os.major} < 12} {
-        lappend all_llvm_variants llvm80
+        lappend all_llvm_variants llvm34
     }
-    array set llvm_variant_version {llvm80 8.0}
+    if {${os.major} < 14} {
+        lappend all_llvm_variants llvm37
+    }
+    array set llvm_variant_version {llvm33 3.3 llvm34 3.4 llvm37 3.7 llvm50 5.0 llvm60 6.0 llvm70 7.0 llvm80 8.0 llvmdev devel}
     set llvm_version {}
 
     foreach variantname $all_llvm_variants {
@@ -312,12 +286,12 @@ if {${subport} eq ${name}} {
     if {![some_llvm_variant_set]} {
         if {${os.major} == 12 || ${os.major} == 13} {
             # Using llvm-3.7 to break a dependency cycle (https://trac.macports.org/ticket/53138)
-            default_variants +llvm80
+            default_variants +llvm37
         } elseif {${os.major} == 10 || ${os.major} == 11} {
-            default_variants +llvm80
+            default_variants +llvm34
         } elseif {${os.major} == 9} {
             # Using llvm-3.3 to break dependency cycle (https://trac.macports.org/ticket/52091)
-            default_variants +llvm80
+            default_variants +llvm33
         }
 
         if {![some_llvm_variant_set] && ${os.major} >= 9} {
@@ -352,20 +326,9 @@ if {${subport} eq ${name}} {
 
     post-extract {
         file copy ${filespath}/${makefile} ${worksrcpath}/Makefile
-        file copy ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc.in ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc
-        ln -s ../libtapi-${tapi_version} ${worksrcpath}/libtapi
     }
 
     post-patch {
-        reinplace "s|@TAPI_VERSION_MAJOR@|${tapi_version_major}|g" \
-            ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc
-        reinplace "s|@TAPI_VERSION_MINOR@|${tapi_version_minor}|g" \
-            ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc
-        reinplace "s|@TAPI_VERSION_PATCH@|${tapi_version_patch}|g" \
-            ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc
-        reinplace "s|@TAPI_VERSION@|${tapi_version_major}.${tapi_version_minor}.${tapi_version_patch}|g" \
-            ${workpath}/libtapi-${tapi_version}/include/tapi/Version.inc
-
         reinplace "s|@@VERSION@@|${version}|g" \
             ${worksrcpath}/src/ld/Options.cpp
 
@@ -412,11 +375,11 @@ if {${subport} eq ${name}} {
 
         # On Leopard, we want to make sure we pick up our newer libunwind (in libc++abi.dylib) instead of the one in libgcc_s.10.5.dylib
         if {${configure.cxx_stdlib} eq "libc++"} {
-            configure.ldflags-append -lc++abi --system-libs --cppflags
+            configure.ldflags-append -lc++abi
         }
     }
 
-    configure.cppflags-append -I${workpath}/dyld-${dyld_version}/include -I${workpath}/libtapi-${tapi_version}/include
+    configure.cppflags-append -I${workpath}/dyld-${dyld_version}/include
 
     build.args \
         CC="${configure.cc}" \

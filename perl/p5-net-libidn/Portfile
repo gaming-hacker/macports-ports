@@ -2,9 +2,8 @@
 
 PortSystem          1.0
 PortGroup           perl5 1.0
-PortGroup user 1.0
-perl5.branches 5.28
 
+perl5.branches 5.28
 perl5.setup         Net-LibIDN 0.12
 revision            5
 license             {Artistic-1 GPL}
@@ -29,7 +28,7 @@ post-patch {
     } else {
         set archflags ${configure.cc_archflags}
     }
-
+    
     reinplace "s|@CC@|${configure.cc} ${archflags}|g" ${worksrcpath}/Makefile.PL
 }
 

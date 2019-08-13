@@ -5,7 +5,7 @@ PortGroup           github 1.0
 
 github.setup        BVLC caffe 1de4cebfb81d50267d0d8c2595372b14e1408248
 version             20170817
-revision            9
+revision            11
 categories          math science
 maintainers         nomaintainer
 
@@ -89,7 +89,7 @@ if {[variant_isset cudnn]} { default_variants +gpu }
 
 if {![variant_isset gpu]} { default_variants +cpu }
 
-default_variants    +python37 +openblas
+default_variants    +python27 +openblas
 
 variant cpu conflicts gpu description {Use CPU only} {
     patchfiles-append  patch-cpu-only.diff
@@ -109,32 +109,32 @@ variant openblas description {Use OpenBLAS} {
     patchfiles-append  patch-openblas.diff
 }
 
-variant python37 description {Install Python 3.7 interface} {
+variant python27 description {Install Python 2.7 interface} {
     depends_lib-append \
-                    port:python37 \
-                    port:py37-cython \
-                    port:py37-numpy \
-                    port:py37-scipy \
-                    port:py37-scikit-image \
-                    port:py37-scikit-learn \
-                    port:py37-matplotlib \
-                    port:py37-ipython \
-                    port:py37-h5py \
-                    port:py37-networkx \
-                    port:py37-nose \
-                    port:py37-pandas \
-                    port:py37-protobuf3 \
-                    port:py37-gflags \
-                    port:py37-leveldb \
-                    port:py37-dateutil \
-                    port:py37-pydot
+                    port:python27 \
+                    port:py27-cython \
+                    port:py27-numpy \
+                    port:py27-scipy \
+                    port:py27-scikit-image \
+                    port:py27-scikit-learn \
+                    port:py27-matplotlib \
+                    port:py27-ipython \
+                    port:py27-h5py \
+                    port:py27-networkx \
+                    port:py27-nose \
+                    port:py27-pandas \
+                    port:py27-protobuf3 \
+                    port:py27-gflags \
+                    port:py27-leveldb \
+                    port:py27-dateutil \
+                    port:py27-pydot
 
     build.target-append  pycaffe
     test.target-append   pytest
 
     post-destroot {
         set packages_dir \
-            ${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
+            ${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
         xinstall -m 755 -d ${destroot}${packages_dir}
         system "install_name_tool -change @rpath/libcaffe.so.1.0.0 ${prefix}/lib/libcaffe.so \
                 ${worksrcpath}/python/caffe/_caffe.so"

@@ -86,22 +86,22 @@ configure.args      --disable-autoipd \
                     --with-avahi-user=${avahi_user} \
                     --with-avahi-group=${avahi_group}
 
-# __APPLE_USE_RFC_2292 should be removed once avhi is updated to support RFC 3542
+# __APPLE_USE_RFC_2292 should be removed once avahi is updated to support RFC 3542
 configure.cppflags-append   -L${prefix}/lib -D__APPLE_USE_RFC_2292
 
 set daemon_uniquename   org.freedesktop.avahi-daemon
 set dnsconfd_uniquename org.freedesktop.avahi-dnsconfd
 
-# startupitem.type    launchd
-# startupitem.create  no
-# startupitems        name        avahi-daemon \
-#                     location    LaunchDaemons \
-#                     uniquename  ${daemon_uniquename} \
-#                     plist       ${daemon_uniquename}.plist \
-#                     name        avahi-dnsconfd \
-#                     location    LaunchDaemons \
-#                     uniquename  ${dnsconfd_uniquename} \
-#                     plist       ${dnsconfd_uniquename}.plist
+startupitem.type    launchd
+startupitem.create  no
+startupitems        name        avahi-daemon \
+                    location    LaunchDaemons \
+                    uniquename  ${daemon_uniquename} \
+                    plist       ${daemon_uniquename}.plist \
+                    name        avahi-dnsconfd \
+                    location    LaunchDaemons \
+                    uniquename  ${dnsconfd_uniquename} \
+                    plist       ${dnsconfd_uniquename}.plist
 
 post-destroot {
     foreach uniquename "${daemon_uniquename} ${dnsconfd_uniquename}" {
@@ -109,6 +109,8 @@ post-destroot {
         move ${destroot}/Library/LaunchDaemons/${uniquename}.plist ${destroot}${prefix}/etc/LaunchDaemons/${uniquename}/
         if {${startupitem.install} && [geteuid] == 0} {
             ln -s ${prefix}/etc/LaunchDaemons/${uniquename}/${uniquename}.plist ${destroot}/Library/LaunchDaemons/
+        } else {
+            ln -s ${prefix}/etc/LaunchDaemons/${uniquename}/${uniquename}.plist ${destroot}${prefix}/etc/LaunchDaemons
         }
     }
 }
@@ -158,15 +160,15 @@ variant qt4 description {Build with Qt4} {
     configure.args-delete   --disable-qt4
 }
 
-# just use python37 with no python variants
+# just use python27 with no python variants
 
-configure.python        ${prefix}/bin/python3.7
+configure.python        ${prefix}/bin/python2.7
 
-depends_lib-append      port:dbus-python37 \
-                        port:py37-gdbm
+depends_lib-append      port:dbus-python27 \
+                        port:py27-gdbm
 
-depends_lib-append      port:py37-gobject3
-configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig
+depends_lib-append      port:py27-gobject3
+configure.pkg_config_path-append ${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig
 
 # see https://trac.macports.org/ticket/55054
 pre-configure {
@@ -175,7 +177,7 @@ pre-configure {
 }
 
 if [variant_isset gtk] {
-    depends_lib-append      port:py37-pygtk
+    depends_lib-append      port:py27-pygtk
     configure.args-delete   --disable-pygtk
 }
 

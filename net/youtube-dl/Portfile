@@ -3,10 +3,11 @@
 PortSystem          1.0
 
 name                youtube-dl
-version             2018.11.23
-checksums           rmd160  5d0631f4e10aea0ec4626066d3f090054b04551d \
-sha256  cf1fda52b5b6baaa625d80220c454c22876ae9e440d6c1e58ba4e529764bc00c \
-size    3061698
+version             2019.08.02
+revision            0
+checksums           rmd160  e02f6ce3ac84a6f0d22c68afc0f76427da953ae6 \
+sha256  573c37add3e6107bf0c3c8ce43443bb788957d7bfb5e736cee6b32e3b2342b80 \
+size    3174224
 
 categories          net
 platforms           darwin
@@ -69,13 +70,31 @@ variant ffmpeg description {Add ffmpeg dependency, used to extract audio} {
 
 default_variants    +ffmpeg
 
-variant python37 description {Use Python 3.7} {
+variant python27 conflicts python35 python36 python37 description {Use Python 2.7} {
+    depends_run-append      port:python27
+    depends_build-append    port:python27
+    configure.python        ${prefix}/bin/python2.7
+}
+
+variant python35 conflicts python27 python36 python37 description {Use Python 3.5} {
+    depends_run-append      port:python35
+    depends_build-append    port:python35
+    configure.python        ${prefix}/bin/python3.5
+}
+
+variant python36 conflicts python27 python35 python37 description {Use Python 3.6} {
+    depends_run-append      port:python36
+    depends_build-append    port:python36
+    configure.python        ${prefix}/bin/python3.6
+}
+
+variant python37 conflicts python27 python35 python36 description {Use Python 3.7} {
     depends_run-append      port:python37
     depends_build-append    port:python37
     configure.python        ${prefix}/bin/python3.7
 }
 
-if {![variant_isset python37] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
+if {![variant_isset python27] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
     default_variants +python37
 }
 

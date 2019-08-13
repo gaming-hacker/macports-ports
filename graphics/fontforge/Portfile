@@ -5,6 +5,7 @@ PortGroup           github 1.0
 
 name                fontforge
 github.setup        fontforge fontforge 20170731
+revision            2
 github.tarball_from releases
 use_xz              yes
 distname            ${name}-dist-${version}
@@ -38,6 +39,7 @@ if {${os.platform} eq "darwin" && ${os.major} > 9} {
 depends_build       port:pkgconfig
 
 depends_lib         path:lib/pkgconfig/cairo.pc:cairo \
+                    port:readline \
                     port:freetype \
                     port:gettext \
                     port:giflib \
@@ -61,13 +63,13 @@ configure.args      --mandir=${prefix}/share/man \
 configure.ldflags-append \
                     -lintl
 
-variant python37 description {Enable Python support (Python 3.7)} {
-    depends_lib-append      port:python37
+variant python27 description {Enable Python support (Python 2.7)} {
+    depends_lib-append      port:python27
     configure.args-delete   --disable-python-scripting \
                             --disable-python-extension
-    configure.python        ${prefix}/bin/python3.7
+    configure.python        ${prefix}/bin/python2.7
     configure.pkg_config_path \
-                            "${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig"
+                            "${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig"
 }
 
 variant gui description {Enable GUI support} {
@@ -94,4 +96,4 @@ first time, e.g.:
 "
 }
 
-default_variants    +python37
+default_variants    +python27

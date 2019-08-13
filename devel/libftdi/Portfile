@@ -56,22 +56,23 @@ subport             libftdi1 {
                         port:gettext \
                         port:libconfuse \
                         port:libusb \
-                        port:python37 \
+                        port:python27 \
                         port:swig-python
 
     checksums           rmd160  c7160d343c6098eb1f26f54d37b221113985e4e3 \
 sha256  ec36fb49080f834690c24008328a5ef42d3cf584ef4060f3a35aa4681cb31b74
 
+
     patchfiles          patch-python-CMakeLists.txt.diff \
                         patch-test-CMakeLists.txt.diff
 
     cmake.out_of_source yes
-    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
-                            -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/3.7/lib/libpython3.7.dylib \
+    configure.args-append   -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
+                            -DPYTHON_LIBRARY=${frameworks_dir}/Python.framework/Versions/2.7/lib/libpython2.7.dylib \
                             -DDOCUMENTATION=off \
                             -DCMAKE_CXX_FLAGS=${configure.cxxflags} \
                             -DCMAKE_C_FLAGS=${configure.cflags} \
-                            -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/3.7/Headers
+                            -DPYTHON_INCLUDE_DIR=${frameworks_dir}/Python.framework/Versions/2.7/Headers
 
     livecheck.regex     ${subport}-(1(\\.\\d+)+)
 }

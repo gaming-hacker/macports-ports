@@ -36,21 +36,21 @@ gobject_introspection yes
 # due to error: redefinition of typedef 'GUPnPService'
 # build fix for SL and earlier
 
-compiler.blacklist  *gcc* {clang < 300}
+compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 
 configure.args      --disable-silent-rules \
                     --disable-python
 
-variant python37 description {Enable Python 3.7 bindings} {
+variant python27 description {Enable Python 2.7 bindings} {
                 configure.args-replace      --disable-python --enable-python
-                depends_lib-append          port:py37-gobject
-                configure.python            ${prefix}/bin/python3.7
-                set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.7
+                depends_lib-append          port:py27-gobject
+                configure.python            ${prefix}/bin/python2.7
+                set python_prefix           ${frameworks_dir}/Python.framework/Versions/2.7
                 set python_pkg_config_path  ${python_prefix}/lib/pkgconfig
                 configure.pkg_config_path   ${python_pkg_config_path}
                 build.env-append            PATH=${python_prefix}/bin:$env(PATH)
 }
 
-default_variants    +python37
+default_variants    +python27
 
 livecheck.type      gnome

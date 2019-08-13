@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name		logjam
@@ -19,8 +20,12 @@ depends_build	port:pkgconfig
 depends_lib	lib:libgtk.2:gtk2 lib:libcurl.2:curl \
 		path:lib/libxml2.2.dylib:libxml2
 
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+configure.env "LIBS=-L${prefix}/lib -lX11"
+} else {
 configure.env LIBS="-L${prefix}/lib -lX11"
-configure.ldflags-append "-L${prefix}/lib -bind_at_load"
+}
+configure.ldflags-append -L${prefix}/lib -bind_at_load
 
 configure.args	--without-gtkspell --without-xmms --without-gtkhtml \
 		--without-librsvg --mandir=${prefix}/share/man

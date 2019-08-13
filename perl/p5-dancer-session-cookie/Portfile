@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.28
 perl5.setup         Dancer-Session-Cookie 0.30
-
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Dancer::Session::Cookie - Encrypted cookie-based session backend for Dancer

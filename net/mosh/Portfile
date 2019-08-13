@@ -6,7 +6,7 @@ PortGroup               cxx11 1.1
 
 name                    mosh
 version                 1.3.2
-revision                2
+revision                5
 categories              net
 license                 {GPL-3+ OpenSSLException}
 platforms               darwin
@@ -24,8 +24,7 @@ sha256  da600573dfa827d88ce114e0fed30210689381bbdcff543c931e4d6a2e851216
 
 perl5.require_variant   yes
 perl5.conflict_variants no
-perl5.branches 5.26
-perl5.default_branch    5.26
+perl5.branches          5.26 5.28
 perl5.create_variants   ${perl5.branches}
 
 depends_build           port:pkgconfig
@@ -36,6 +35,13 @@ depends_lib             port:ncurses \
                         port:p${perl5.major}-getopt-long \
                         port:p${perl5.major}-io-socket-ip
 
+patchfiles              network-bind.patch \
+                        patch-version-subdir.diff
+
+# Remove patch-version-subdir.diff and autoreconf when mosh > 1.3.2 is released.
+use_autoreconf          yes
+autoreconf.args         --install --verbose --force
+
 post-patch {
     reinplace "s|#!/usr/bin/env perl|#!${prefix}/bin/perl${perl5.major}|" \
         ${worksrcpath}/scripts/mosh.pl
@@ -43,11 +49,6 @@ post-patch {
 
 #protobuf3-cpp requires c++11 now
 configure.cxxflags-append -std=c++11
-
-# force protobuf3-cpp into the no_threadlocal mode on older systems
-if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
-    configure.cppflags-append -DGOOGLE_PROTOBUF_NO_THREADLOCAL
-}
 
 # force protobuf3-cpp into the no_threadlocal mode on older systems
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {

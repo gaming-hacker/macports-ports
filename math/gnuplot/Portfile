@@ -6,7 +6,7 @@ PortGroup           xcodeversion    1.0
 PortGroup           wxWidgets       1.0
 
 name                gnuplot
-version             5.2.5
+version             5.2.7
 categories          math science
 # the license has some inconvenient requirements that we're not meeting
 # to be allowed to distribute binaries
@@ -29,9 +29,9 @@ homepage            http://gnuplot.sourceforge.net/
 master_sites        sourceforge:project/gnuplot/gnuplot/${version}
 dist_subdir         ${name}/${version}
 
-checksums           rmd160  7054759e91c1bd44d9b1acf9aa15816d4e386a16 \
-sha256  039db2cce62ddcfd31a6696fe576f4224b3bc3f919e66191dfe2cdb058475caa \
-size    5305288
+checksums           rmd160  59a3d9fbcd5856b123b4e8eb9ecde753ab252060 \
+sha256  97fe503ff3b2e356fe2ae32203fc7fd2cf9cef1f46b60fe46dc501a228b9f4ed \
+size    5335673
 
 depends_build       port:pkgconfig
 
@@ -104,7 +104,7 @@ variant qt conflicts qt5 description "Enable qt terminal with Qt 4" {
 variant qt5 conflicts qt description "Enable qt terminal with Qt 5" {
     # Latest versions of Qt require C++11
     PortGroup qt5   1.0
-    PortGroup cxx11 1.0
+    PortGroup cxx11 1.1
 
     configure.cxxflags-append   -std=c++11
 

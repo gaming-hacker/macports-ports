@@ -6,7 +6,7 @@ PortGroup           cmake 1.0
 name                shogun-devel
 version             4.0.0
 set branch          [join [lrange [split ${version} .] 0 1] .]
-revision            11
+revision            13
 categories          math science
 platforms           darwin
 license             GPL-3
@@ -64,11 +64,11 @@ cmake.out_of_source yes
 configure.args-append \
                     -DENABLE_CCACHE=NO \
                     -DPythonModular=ON \
-                    -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python37
+                    port:python27
 
 depends_lib-append  port:hdf5 \
                     port:json-c \
@@ -84,12 +84,12 @@ depends_lib-append  port:hdf5 \
                     port:gzip \
                     port:bzip2 \
                     port:xz \
-                    port:protobuf3-cpp
+                    port:protobuf-cpp
 
-variant python37 description {Build the Python 3.7 API}  {
+variant python27 description {Build the Python 2.7 API}  {
     depends_lib-append  port:swig-python \
-                        port:python37 \
-                        port:py37-numpy
+                        port:python27 \
+                        port:py27-numpy
     configure.args-append \
                         -DPythonModular=ON
 }

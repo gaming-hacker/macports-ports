@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 name                nedi
 version             1.0.9
-revision            4
+revision            5
 license             GPL-3
 categories          net
 maintainers         nomaintainer
@@ -25,10 +25,10 @@ extract.suffix      .tgz
 checksums           rmd160  776b178b4fd3fe139796dbc367ae0e626f6ccaa1 \
 sha256  cf004dafb781f1ac638b2291ea565d3c3972eb5dd049f9119b46dbc66f722f13
 
-perl5.branches 5.26
+perl5.branches      5.28
 
 depends_lib         port:perl${perl5.major} \
-                    path:bin/mysql_config5:mysql5 \
+                    path:bin/mysql_config5:mysql56 \
                     port:p${perl5.major}-net-snmp \
                     port:p${perl5.major}-net-ssh-perl \
                     port:p${perl5.major}-net-telnet \
@@ -39,6 +39,7 @@ depends_lib         port:perl${perl5.major} \
                     port:p${perl5.major}-dbd-mysql \
                     port:rrdtool \
                     port:fping
+
 
 # Set some useful variables
 set nedidir         ${prefix}/share/${name}
@@ -128,6 +129,7 @@ pre-activate {
 notes \
   "**** To complete the NeDi OS X installation ****
 
+
 1) Setup MySQL (for new installs)
 -----------------------------------------------
 -Configure MySQL:
@@ -139,6 +141,7 @@ notes \
 -Set the root MySQL password (replace <mypassword> with your chosen password):
     sudo ${prefix}/lib/mysql5/bin/mysqladmin -u root password <mypassword>
 
+
 2) Install PHP5 with SNMP support and MacPorts Apache
 ------------------------------------------------
     sudo port install php5 +apache2 +mysql5 +snmp
@@ -148,6 +151,7 @@ notes \
 NOTE: Check to make sure the PHP variable \"mysql.default_socket\" is set to path
  ${prefix}/var/run/mysql5/mysqld.sock by viewing the output of this terminal command:
         php -i
+
 
 3) Turn on MacPorts Apache
 ------------------------------------------------
@@ -165,6 +169,7 @@ NOTE: Check to make sure the PHP variable \"mysql.default_socket\" is set to pat
 
 -Start Apache and set it to run at system boot:
     sudo launchctl load -w /Library/LaunchdDaemons/org.macports.apache2.plist
+
 
 4) Configure NeDi, initialize NeDi database, and Login to NeDi
 -----------------------------------------------
@@ -194,6 +199,7 @@ comm <my-community-string> (community string of your Cisco devices)
 -Login to the NeDi web interface: http://localhost/nedi
     Initial user/pass is 'admin'/'admin'
 
+
 5) Discover Your Network with NeDi
 -----------------------------------------------
 -Edit nedi.conf Device Acc. variables: sudo pico ${nedidir}/nedi.conf
@@ -214,6 +220,7 @@ comm <my-community-string>
     NeDi every hour, the cron entry is:
 
 0 * * * * cd ${nedidir} ; ./nedi.pl -pr >> /dev/null 2>&1
+
 
 6) Set NeDi to receive device alerts, syslogs, and SNMP traps.  (optional)
 -----------------------------------------------

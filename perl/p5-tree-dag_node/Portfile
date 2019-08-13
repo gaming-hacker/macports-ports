@@ -4,10 +4,8 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         Tree-DAG_Node 1.31
-license             {Artistic-2 GPL}
-
+license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         A (super)class for representing nodes in a tree
 long_description    This class encapsulates/makes/manipulates objects that \

@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.28
 perl5.setup         Hash-Merge 0.300
-
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Merges arbitrarily deep hashes into a single hash

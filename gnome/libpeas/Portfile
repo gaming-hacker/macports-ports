@@ -58,16 +58,16 @@ variant glade description {Enable glade catalog support} {
 
 # supports one version each of python2 python3 in parallel
 
-variant python37 description {Enable Python 3.7 plugin support} {
-    depends_lib-append          port:py37-gobject3
-    set python_prefix           ${frameworks_dir}/Python.framework/Versions/3.7
+variant python27 description {Enable Python 2.7 plugin support} {
+    depends_lib-append          port:py27-gobject3
+    set python_prefix           ${frameworks_dir}/Python.framework/Versions/2.7
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
-    configure.env-append        PYTHON2=${prefix}/bin/python3.7 \
+    configure.env-append        PYTHON2=${prefix}/bin/python2.7 \
                                 PYTHON2_CONFIG=${python_prefix}/bin/python-config
     configure.args-replace      --disable-python2 --enable-python2
 }
 
-default_variants +python37
+default_variants +python27
 
 # python3 minimum version is 3.2.0
 

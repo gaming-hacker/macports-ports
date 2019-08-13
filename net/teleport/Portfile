@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        gravitational teleport 3.0.1 v
+github.setup        gravitational teleport 4.0.1 v
 
 homepage            http://gravitational.com/teleport/
 categories          net
@@ -16,9 +16,9 @@ long_description    Teleport is a modern SSH server and CA for managing clusters
                     and a Web UI.  Built on the Golang SSH library, and compatible with OpenSSH
 license             Apache-2
 
-checksums           rmd160  762857aa4e48c3d640615fb510ab01a6a035e748 \
-sha256  8f76b6875f1c4c43b8eb46781f1781bdf60ac4ef53110017b4a61d9b04a60cf1 \
-size    22370777
+checksums           rmd160  c3a256ad779b7afc7bd3464d2778121149c00277 \
+sha256  8d110936a8501e6c7e5a8d66d0b895ee191a6bca70e626dfd7626ec10f472855 \
+size    34915584
 
 depends_lib         port:go port:zip
 platforms           darwin

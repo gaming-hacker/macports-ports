@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           mpi 1.0
-PortGroup user 1.0
 
 name                feast
 version             3.0
@@ -40,7 +39,7 @@ worksrcdir          FEAST/${version}/src
 
 compilers.choose    cc fc
 # g95 does not support OpenMP
-mpi.setup           default require_fortran
+mpi.setup           default require_fortran -g95
 configure.optflags  -O3
 
 use_parallel_build  yes
@@ -115,7 +114,7 @@ pre-test {
     } else {
         set mpiflib "${compilers.libfortran}"
     }
-
+    
     test.args-append  CC=${configure.cc} CFLAGS="${configure.cflags}" \
         F90=${configure.fc} F90FLAGS="${configure.fcflags}" \
         FORT=${configure.fc} FFLAGS="${configure.fcflags}" \

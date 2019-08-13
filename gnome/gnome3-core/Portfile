@@ -186,7 +186,7 @@ depends_lib     port:adwaita-icon-theme \
 # for now, just depend on current preferred subports of py-gobject3
 
     depends_lib-append \
-                port:py37-gobject3 \
+                port:py27-gobject3 \
                 port:py36-gobject3
 
 # ports that require libc++ to build

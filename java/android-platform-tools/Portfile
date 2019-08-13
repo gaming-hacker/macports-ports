@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                android-platform-tools
-version             28.0.1
+version             29.0.1
 categories          java devel
 maintainers         {yan12125 @yan12125} openmaintainer
 
@@ -21,9 +21,9 @@ master_sites        https://dl.google.com/android/repository
 distname            platform-tools_r${version}-darwin
 use_zip             yes
 
-checksums           rmd160  ae7f5616c026a4ceb3c3092a57bb569a4692f88b \
-sha256  3bc833ae3f4bd831af03811f2d1be540c2eb2eb9a17de9398b0a06dc5af6fa84 \
-size    6848749
+checksums           rmd160  5226ec847dc2e0943d206d018b6a8ee0b0e9d044 \
+sha256  3149f867ccd49624dd29d9c71684bc0787d772dfa163068b7a9e2660794d027e \
+size    12282891
 
 use_configure       no
 

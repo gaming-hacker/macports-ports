@@ -9,10 +9,11 @@ PortGroup               muniversal 1.0
 name                    libpixman-devel
 conflicts               libpixman
 set my_name             pixman
-version                 0.36.0
-checksums               rmd160  1d10373ab966c20d2e9825d4f936569b2e7cf6d9 \
-sha256  fd92c0cc99183977e54a278d7c595ee094a8e75724c03faf3796d1e49f7780dc \
-size    739957
+version                 0.38.4
+revision                0
+checksums               rmd160  106b73f871b5e0f8a739a47788fb9fd7a82cb8c5 \
+sha256  84abb7fa2541af24d9c3b34bf75d6ac60cc94ac4410061bbb295b66a29221550 \
+size    756898
 
 categories              graphics
 platforms               darwin

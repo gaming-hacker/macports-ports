@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         OpenGL 0.70
 # can be distributed under the same terms as Perl itself
 # see https://metacpan.org/pod/OpenGL#AUTHORS
@@ -44,6 +43,7 @@ if {${perl5.major} != ""} {
                     port:xorg-libXi \
                     port:xorg-libice \
                     port:xorg-libX11
+
 
     patchfiles      patch-Makefile.PL.diff \
                     patch-utils-Makefile.macosx.diff

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name				jakarta-oro
@@ -18,9 +19,9 @@ long_description	The Jakarta-ORO Java classes are a set of text-processing \
 					library is the successor to the OROMatcher, AwkTools, \
 					PerlTools, and TextTools libraries originally  from ORO, \
 					Inc.
-homepage			http://jakarta.apache.org/oro/
+homepage			https://jakarta.apache.org/oro/
 
-master_sites		http://archive.apache.org/dist/jakarta/oro/source/
+master_sites		https://archive.apache.org/dist/jakarta/oro/source/
 checksums			md5 6f7690c6ba9750e3cbb8ebd10078a79a
 
 depends_build		bin:ant:apache-ant

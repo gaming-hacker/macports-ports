@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           active_variants 1.1
+PortGroup           cmake 1.1
+PortGroup           cxx11 1.1
+PortGroup           github 1.0
+
+github.setup        ledger ledger 3.1.1 v
+revision            4
+homepage            https://ledger-cli.org/
+categories          finance
+
+description         A command-line, double-entry accounting tool.
+long_description    Ledger is a powerful, double-entry accounting system that \
+                    is accessed from the UNIX command-line.
+license             BSD
+maintainers         nomaintainer
+
+platforms           darwin
+
+checksums           rmd160  521cba111fb3fd3a5c586568497a6c661e8b4d48 \
+sha256  3ec4914f2a25b2de8faf867a561b87e4550c75ac69c9400fd6fae2e2a7361b13 \
+size    842440
+
+depends_lib-append  port:boost \
+                    port:python27 \
+                    port:libedit \
+                    port:gmp \
+                    port:mpfr \
+                    port:gettext
+
+require_active_variants boost python27
+
+configure.args      -DBOOST_ROOT=${prefix} \
+                    -DBUILD_DOCS=OFF \
+                    -DEDIT_LIB=${prefix}/lib/libedit.dylib \
+                    -DEDIT_PATH=${prefix}/include \
+                    -DGMP_LIB=${prefix}/lib/libgmp.dylib \
+                    -DGMP_PATH=${prefix}/include \
+                    -DMPFR_LIB=${prefix}/lib/libmpfr.dylib \
+                    -DMPFR_PATH=${prefix}/include \
+                    -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
+                    -DUSE_DOXYGEN=OFF \
+                    -DUSE_PYTHON=ON
+
+test.run            yes

@@ -5,7 +5,7 @@ PortSystem          1.0
 name                rbldnsd
 version             0.996b
 categories          net
-maintainers         {pixilla @pixilla}
+maintainers         nomaintainer
 master_sites        http://www.corpit.ru/mjt/rbldnsd/
 platforms           darwin
 homepage            http://www.corpit.ru/mjt/rbldnsd.html
@@ -34,6 +34,7 @@ rmd160  15be588fb4051f0526084425b586ea7986b6493a
 depends_lib         port:zlib
 
                     configure.pre_args-delete --prefix=${prefix}
+
 
 pre-destroot {
         # Add user and group, these are the users rbldnsd will start as

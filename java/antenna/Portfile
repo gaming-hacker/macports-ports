@@ -43,7 +43,7 @@ md5     bb54096888a709118a5db340bdee430e \
 sha1    a0e0955b19bdb377cb54bfe9616a743c19d6e89d \
 rmd160  299cb40e6ff4d55f58f74cd2a7160743f9ade551
 use_configure	    no
-build.cmd	    true
+build {}
 worksrcdir	    .
 
 extract {
@@ -51,6 +51,7 @@ extract {
     file copy ${distpath}/preprocessor-v3-bin-${preprocversion}.jar  ${workpath}
     file copy ${distpath}/preprocessor-v2-bin-${preprocversion}.jar  ${workpath}
 }
+
 
 destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/java

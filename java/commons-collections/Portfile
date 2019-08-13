@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup java 1.0
 
@@ -7,14 +8,14 @@ version			3.2.1
 
 categories		java
 license			Apache-2
-maintainers		{blair @blair} openmaintainer
+maintainers		nomaintainer
 platforms		darwin
 
 description		Jakarta Commons-Collections
 long_description	Commons-Collections provides a suite of classes that \
 				extend or augment the Java Collections \
 				Framework.
-homepage		http://commons.apache.org/collections/
+homepage		https://commons.apache.org/collections/
 
 distfiles		${distname}-src${extract.suffix}
 master_sites		apache:commons/collections/source/
@@ -48,5 +49,5 @@ destroot	{
 }
 
 livecheck.type  regex
-livecheck.url   http://commons.apache.org/downloads/download_collections.cgi
+livecheck.url   https://commons.apache.org/proper/commons-collections/download_collections.cgi
 livecheck.regex "${name}-(\\d+\\.\\d+(\\.\\d+)?)-src.tar.gz"

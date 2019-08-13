@@ -3,8 +3,13 @@
 PortSystem          1.0
 PortGroup           github 1.0
 PortGroup           gobject_introspection 1.0
+PortGroup           legacysupport 1.0
 
-github.setup        libvips libvips 8.7.1 v
+# realpath NULL ptr fix
+legacysupport.newest_darwin_requires_legacy 9
+
+github.setup        libvips libvips 8.7.4 v
+revision            1
 name                vips
 distname            vips-${version}
 description         VIPS is an image processing library.
@@ -17,8 +22,9 @@ license             LGPL-2.1+
 homepage            https://libvips.github.io/libvips/
 github.tarball_from releases
 
-checksums           rmd160  aef3ff2e8b954507af6ce0f38735b5da19049474 \
-sha256  1ab080fc7970e6f0a16b1499e44628ea55f80d34c991f5c015d21ede2e486bf0
+checksums           rmd160  01a3bcbc13467a998c4e22c3fa4b814661eb22cd \
+sha256  ce7518a8f31b1d29a09b3d7c88e9852a5a2dcb3ee1501524ab477e433383f205 \
+size    15173851
 
 depends_build       port:gtk-doc \
                     port:pkgconfig
@@ -59,15 +65,15 @@ proc install_pygi {pyver} {
     xinstall ${worksrcpath}/python/packages/gi/overrides/Vips.py ${destdir}
     system "${prefix}/bin/python${pyver} -m compileall ${destdir}"
 }
-variant python37 description {Install Python 3.7 interface} {
-    depends_lib-append      port:py37-gobject3
+variant python27 description {Install Python 2.7 interface} {
+    depends_lib-append      port:py27-gobject3
     post-destroot {
         install_pygi        2.7
     }
     # Include vips7 legacy API
     configure.args-append   --enable-pyvips7 \
-                            am_cv_python_pyexecdir='${frameworks_dir}/Python.framework/Versions/3.7/lib/python2.7/site-packages'
-    configure.env-append    PYTHON='${prefix}/bin/python2.7'
+                            am_cv_python_pyexecdir='${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages'
+    configure.env-append    PYTHON=${prefix}/bin/python2.7
 }
 variant python34 description {Install Python 3.4 interface} {
     depends_lib-append      port:py34-gobject3
@@ -93,4 +99,4 @@ variant python37 description {Install Python 3.7 interface} {
         install_pygi        3.7
     }
 }
-default_variants    +python37
+default_variants    +python27

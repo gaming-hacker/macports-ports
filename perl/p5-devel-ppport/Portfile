@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-perl5.setup         Devel-PPPort 3.43
+perl5.setup         Devel-PPPort 3.52
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Perl/Pollution/Portability
@@ -12,10 +12,6 @@ long_description    ${description}
 
 platforms           darwin
 
-checksums           rmd160  4c73d095def80136e59d71dca00952cfd3ded947 \
-sha256  90fd98fb24e1d7252011ff181244e04c8c8135933e67eab93c57ed6a61ed86f4 \
-size    225129
-
-if {${perl5.major} != ""} {
-    patchfiles      fix-manifest.patch
-}
+checksums           rmd160  a73ff3bf624c5cdbbc8c0f91646e8a432fa44c15 \
+sha256  cf4963786ea6821fcb7fe8979229f1c1c69a624b1ef968a498460792e35ec390 \
+size    181377

@@ -1,45 +1,94 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem          1.0
-PortGroup           cxx11 1.1
-PortGroup           github 1.0
+PortSystem       1.0
+PortGroup        cxx11 1.1
+PortGroup        github 1.0
 
-github.setup        mgieseki dvisvgm 2.6.1
-revision            1
-categories          graphics textproc
-platforms           darwin
-license             GPL-3+
-maintainers         nomaintainer
+name             dvisvgm
+categories       graphics textproc
+platforms        darwin
+license          GPL-3+
+maintainers      {michaelld @michaelld} openmaintainer
 
-description         DVI to SVG converter
-long_description    The command-line utility dvisvgm is a tool for TeX/LaTeX users. It \
-                    converts DVI files to the XML-based scalable vector graphics format SVG.
+description      DVI to SVG converter
+long_description ${description}. The command-line utility dvisvgm is a tool \
+    for TeX/LaTeX users. It converts DVI files to the XML-based scalable \
+    vector graphics format SVG.
 
-github.tarball_from releases
+subport dvisvgm-devel {}
 
-checksums           rmd160  bb854e937a58b5016b0dfc8db61ba22abcaa35a2 \
-sha256  bda5e875f810be08e4d26add9c4ea191f53aa9ae14cd2c1fa130e0c8922ab0c4 \
-size    2911596
+if {${subport} eq ${name}} {
 
-depends_build       port:asciidoc \
-                    port:pkgconfig
+    github.setup mgieseki dvisvgm 2.7.4
+    checksums rmd160 c07ca8a310ddeb6c01aac42425baaed8f017e2c9 \
+sha256 3de7a6c448e7f407a42e27d2c7b34b7d73448e465696c58023d42cd1b482f9a8 \
+size   2560102
+    revision  0
 
-depends_lib         port:brotli \
-                    port:freetype \
-                    port:ghostscript \
-                    port:potrace \
-                    port:texlive-bin \
-                    port:woff2 \
-                    port:zlib
+    conflicts    ${name}-devel
+
+    # deal moving from github release to tags; remove at next update
+    dist_subdir  ${name}/${version}_1
+
+    long_description ${description}: \
+        This port follows the release version of ${name}, which is typically \
+        updated every 6 months. If for some reason this port does not build or \
+        function as desired, try the ${name}-devel port.
+
+} else {
+
+    # devel
+
+    github.setup mgieseki dvisvgm fc76f77c8afa534168db1023b45f2081f3395ad1
+    version   20190728-[string range ${github.version} 0 7]
+    checksums rmd160 a9b0bb7201d321b0e3ef460d2049f714fcd63ea6 \
+sha256 8a330b605aba09e3b41645534a951eb31319c0dab457c4e0691792d8f2e3cb16 \
+size   2560084
+    revision  0
+
+    conflicts    ${name}
+    long_description ${description}: \
+        This port follows the GIT master version of ${name}, which is typically \
+        updated every few days to weeks.
+
+}
+
+use_autoconf yes
+autoconf.cmd ${worksrcpath}/autogen.sh
+
+# Setting autoconf.cmd to a non-default value after setting 'use_autoconf yes'
+# removes the automatic dependencies, so re-add them.
+depends_build \
+    port:autoconf \
+    port:automake \
+    port:libtool
+
+# these are dependencies of the project itself
+depends_build-append \
+    port:asciidoc \
+    port:pkgconfig
+
+depends_lib \
+    port:brotli \
+    port:freetype \
+    port:ghostscript \
+    port:potrace \
+    port:texlive-bin \
+    port:woff2 \
+    port:zlib
 # dvisvgm also depends on xxhash which is not yet packaged by MacPorts
 # but the dependency is bundled with the sources & taken from there
-#                   port:xxhash
+#   port:xxhash
+
+# prevent opportunistic dependency on gawk
+configure.env-append \
+    AWK=/usr/bin/awk
 
 # see https://trac.macports.org/ticket/57528
-use_parallel_build  no
+use_parallel_build no
 
-test.run            yes
-test.target         check
+test.run    yes
+test.target check
 
 pre-activate {
     if {![catch {set vers [lindex [registry_active texlive-bin-extra] 0]}]

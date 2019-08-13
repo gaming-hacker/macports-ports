@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         Encoding-FixLatin-XS 1.01 ../by-authors/id/G/GR/GRANTM
 revision            1
 

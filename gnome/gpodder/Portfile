@@ -22,15 +22,16 @@ distfiles           ${version}.tar.gz
 checksums           rmd160  a104f2f22e80c7f693b784bb190706ac3ff6d43d \
 sha256  5ae1c6d4337834fd29697250dffd439bd3f234a6878ef461b53cd218898b5e72
 
+
 depends_build       port:help2man\
                     port:intltool
 
 depends_lib         port:vorbis-tools\
                     port:lame \
-                    port:py37-podcastparser \
-                    port:dbus-python37 \
-                    port:py37-mygpoclient \
-                    port:py37-pygtk
+                    port:py27-podcastparser \
+                    port:dbus-python27 \
+                    port:py27-mygpoclient \
+                    port:py27-pygtk
 
 set python.version  27
 set python.branch   "[string range ${python.version} 0 end-1].[string index ${python.version} end]"
@@ -45,7 +46,7 @@ post-patch {
     }
 }
 
-# install in python 3.7 prefix
+# install in python 2.7 prefix
 destroot.args PREFIX=${my_python}
 
 # Install the apps in the standard path :
@@ -56,7 +57,7 @@ post-destroot {
 }
 
 variant quartz {
-    depends_lib-append  port:py37-gtk-osx-application-gtk2
+    depends_lib-append  port:py27-gtk-osx-application-gtk2
 
     post-destroot {
     	# Command-XX shortcuts in gPodder menus

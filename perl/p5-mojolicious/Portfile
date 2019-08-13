@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 perl5.branches 5.28
 
-perl5.setup         Mojolicious 8.07 ../../authors/id/S/SR/SRI
+perl5.setup         Mojolicious 8.22 ../../authors/id/S/SR/SRI
 epoch               2
 categories-append   www
 platforms           darwin
@@ -16,9 +16,9 @@ homepage            https://mojolicious.org/
 description         A real-time MVC web framework emphasizing minimalism and simplicity
 long_description    ${description}
 
-checksums           rmd160  650b038b3634234fdd61c1d2c25a58e619f1aade \
-sha256  53e2971d6ce11fb29e7956079b2d6c3f77b1fcb43f1538854f950f7d7380f8ee \
-size    753682
+checksums           rmd160  99f02beba9888b237b849d0c2078d7d4d1626d96 \
+sha256  86e34a50f7daeb7af43655d7b3bfe43bb09124216bfaf3016e6fd975c3f24854 \
+size    764431
 
 if {${perl5.major} != ""} {
     depends_lib-append \

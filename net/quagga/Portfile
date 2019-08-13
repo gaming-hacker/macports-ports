@@ -1,9 +1,10 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name            quagga
 version         0.99.16
-revision        1
+revision        2
 categories      net
 license         GPL-2+
 platforms       darwin

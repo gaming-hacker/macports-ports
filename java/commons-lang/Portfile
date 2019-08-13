@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name				commons-lang
@@ -18,7 +19,7 @@ long_description	The Lang Component provides a host of helper utilities for \
 					of nested-Exceptions, basic enhancements to java.util.Date and \
 					a series of utlities dedicated to help with building methods, \
 					such as hashCode, toString and equals.
-homepage			http://commons.apache.org/lang/
+homepage			https://commons.apache.org/lang/
 				
 distname			${name}-${version}-src
 master_sites		apache:commons/lang/source/
@@ -49,5 +50,5 @@ destroot {
 }
 
 livecheck.type  regex
-livecheck.url   http://commons.apache.org/downloads/download_lang.cgi
+livecheck.url   https://commons.apache.org/downloads/download_lang.cgi
 livecheck.regex "${name}-(\\d+\\.\\d+(\\.\\d+)?)-src.tar.gz"

@@ -177,6 +177,7 @@ if { [variant_isset agent_only] } {
 			${destroot}${prefix}/share/zabbix/zabbix_agent_win32
 }
 
+
 notes "
 #### ZABBIX agent installation section (steps 1 - 3 only) ####
 
@@ -187,24 +188,30 @@ notes "
 
 	Server=x.x.x.x
 
+
 2) Set zabbix_agentd to run at system boot
 
 	sudo launchctl load -w /Library/LaunchDaemons/org.macports.zabbix.plist
 
    To start Zabbix manually, use: ${prefix}/share/zabbix/zabbix_agentd.init start (stop|status)
 
+
 3) A Win32 agent is in ${prefix}/share/zabbix/zabbix_agent_win32 for\
    installation on Windows NT 4.0, Windows 2000, and Windows XP.
+
 
 #### End ZABBIX agent installation section ####
 ####                                       ####
 
+
 ####                                          ####
 #### Begin ZABBIX server installation section ####
+
 
 1) Setup MySQL, i.e. via MacPorts:
 
 	sudo port install mysql5-server
+
 
 2) Setup the ZABBIX MySQL database
 
@@ -226,6 +233,7 @@ notes "
 	mysql> grant all privileges on zabbix.* to zabbix identified by '<zabbix-mysql-password>';
 	mysql> quit;
 
+
 3) Edit the sample .conf file ${prefix}/etc/zabbix/zabbix_server.conf (rename & omit .sample)
 
    Modify these variables at the very least:
@@ -234,13 +242,16 @@ notes "
 	DBUser=zabbix
 	DBPassword=<zabbix-mysql-password>
 
+
 4) Install PHP 5, i.e. via MacPorts:
 
 	sudo port install php5 php5-gd php5-mbstring php5-mysql php5-sockets
 
+
 5) Set a symbolic link in your Apache document root pointing to the PHP frontend files
 
 	sudo ln -s ${prefix}/share/zabbix/frontends/php <Apache-docroot>/zabbix
+
 
 6) Set zabbix_server to run at system boot, then start it
 
@@ -250,11 +261,14 @@ notes "
 
 	Note: Eventually your shared memory has to be increased (see http://www.zabbix.org/forum/showthread.php?p=64232)!
 
+
 7) A Win32 agent is in ${prefix}/share/zabbix/zabbix_agent_win32 for\
    installation on Windows NT 4.0, Windows 2000, and Windows XP.  See\
    the ReadMe.txt for instructions.
 
+
 8) Open http://localhost/zabbix/ in your browser and walk through the setup, then login with default user 'Admin' and password 'zabbix'.
+
 
 9) Read the fine manual at http://www.zabbix.com/documentation/
 "

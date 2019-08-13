@@ -3,10 +3,8 @@
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
 PortGroup           perl5 1.0
-PortGroup user 1.0
 
 perl5.branches 5.28
-
 perl5.setup         Locale-gettext 1.07
 set my_name         gettext
 distname            ${my_name}-${perl5.moduleversion}

@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         List-MoreUtils-XS 0.428
 license             Apache-2
 maintainers         {devans @dbevans} openmaintainer

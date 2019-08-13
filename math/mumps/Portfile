@@ -11,7 +11,7 @@ revision            2
 categories          math
 license             CeCILL-C
 platforms           darwin
-maintainers         {sean @seanfarley} openmaintainer
+maintainers         nomaintainer
 description         MUltifrontal Massively Parallel sparse direct Solver
 long_description    MUMPS: a parallel sparse direct solver
 
@@ -26,15 +26,9 @@ checksums           rmd160  ca1a96752c42d603a2c4b1d28a9965d34623495a \
 sha256  eb345cda145da9aea01b851d17e54e7eef08e16bfa148100ac1f7f046cd42ae9 \
 size    3351215
 
-mpi.setup           default require_fortran
+mpi.setup           require require_fortran
 
-if {[mpi_variant_isset]} {
-    mpi.enforce_variant scalapack
-    mpi.enforce_variant parmetis
-} else {
-    depends_lib-delete  port:scalapack
-    depends_lib-delete  port:parmetis
-}
+mpi.enforce_variant scalapack
 
 linalg.setup        blas_only
 
@@ -43,14 +37,6 @@ patchfiles-append   patch-shared.diff patch-Makefile.inc.diff
 
 use_parallel_build  no
 
-pre-configure {
-    if {[mpi_variant_isset]} {
-        set makefile Makefile.inc.generic
-    } else {
-        set makefile Makefile.inc.generic.SEQ
-    }
-    file copy ${worksrcpath}/Make.inc/${makefile} ${worksrcpath}/Makefile.inc
-}
 configure.cmd       printenv
 configure.pre_args
 configure.universal_args
@@ -66,7 +52,11 @@ configure.fflags-append -fPIC
 
 configure.env-append MACPORTS_PREFIX=${prefix}
 pre-configure {
+    if {[vercmp [macports_version] 2.5.99] >= 0} {
+    configure.env-append MACPORTS_BLAS=${linalglib}
+    } else {
     configure.env-append MACPORTS_BLAS="${linalglib}"
+    }
 }
 
 if {![variant_isset universal]} {
@@ -90,13 +80,14 @@ if {![variant_isset universal]} {
     }
 }
 
+post-extract {
+    file copy ${worksrcpath}/Make.inc/Makefile.inc.generic ${worksrcpath}/Makefile.inc
+}
+
 destroot {
   xinstall -m 644 {*}[glob ${worksrcpath}/include/*.h] ${destroot}${prefix}/include
   xinstall -m 644 {*}[glob ${worksrcpath}/lib/*.a] ${destroot}${prefix}/lib
   xinstall -m 644 {*}[glob ${worksrcpath}/lib/*.dylib] ${destroot}${prefix}/lib
-  if {![mpi_variant_isset]} {
-    xinstall -m 644 {*}[glob ${worksrcpath}/libseq/*.a] ${destroot}${prefix}/lib
-  }
 }
 
 livecheck.url       http://mumps.enseeiht.fr/index.php?page=dwnld

@@ -28,7 +28,7 @@ size    2966884
 depends_build       port:pkgconfig \
                     port:itstool \
                     port:yelp-tools \
-                    port:python37
+                    port:python27
 
 depends_lib         port:desktop-file-utils \
                     port:gtk3 \
@@ -52,7 +52,7 @@ depends_run         port:adwaita-icon-theme \
 
 gobject_introspection yes
 
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 
 configure.args      --disable-silent-rules \
                     --enable-compile-warnings=no \

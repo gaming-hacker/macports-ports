@@ -285,6 +285,7 @@ if { ${name} ne ${subport} } {
 
     Server=x.x.x.x
 
+
 2) Set zabbix_agentd to run at system boot
 
      sudo port load zabbix2-agent
@@ -306,6 +307,7 @@ if { ${name} ne ${subport} } {
 1) Setup MySQL, i.e. via MacPorts: (for local MySQL server)
 
     sudo port install mysql5-server
+
 
 2) Setup the ZABBIX MySQL database
 
@@ -330,6 +332,7 @@ if { ${name} ne ${subport} } {
     mysql> grant all privileges on zabbix.* to zabbix identified by '<zabbix-mysql-password>';
     mysql> quit;
 
+
 3) Edit the sample .conf file ${prefix}/etc/zabbix/zabbix_server.conf
    (rename & omit .sample)
 
@@ -341,11 +344,13 @@ if { ${name} ne ${subport} } {
     DBSocket=<location for your active mysql5\[15\] server socket>
       Typically ${prefix}/var/run/mysql\[51|55\]/mysqld.sock
 
+
 4) Set a symbolic link in your Apache document root pointing to the PHP
    frontend files. Note that the phpNN variants only add the dependencies; it
    is up to you to enable your desired version in httpd.conf.
 
     sudo ln -s ${prefix}/share/zabbix/frontends/php <Apache-docroot>/zabbix
+
 
 5) Set zabbix_server to run at system boot, then start it
 
@@ -357,17 +362,22 @@ if { ${name} ne ${subport} } {
  !! Note: Your shared memory will likely need to be increased  !!
  !!       (see http://support.apple.com/kb/HT4022)             !!
 
+
 6) A Win32 agent is in ${prefix}/share/zabbix/zabbix_agent_win32 for\
    installation on Windows NT 4.0, Windows 2000, and Windows XP.  See\
    the ReadMe.txt for instructions.
 
+
 7) Open http://localhost/zabbix/ in your browser and walk through the setup,
    then login with default user 'Admin' and password 'zabbix'.
 
+
 8) Read the fine manual at http://www.zabbix.com/documentation/
+
 
 #### End ZABBIX2 local server installation section   ####
 ####                                                 ####
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! ZABBIX -> ZABBIX2 Server Upgrade process !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

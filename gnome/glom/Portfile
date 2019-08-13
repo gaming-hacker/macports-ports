@@ -38,7 +38,7 @@ depends_build       port:pkgconfig \
                     path:bin/dot:graphviz \
                     port:doxygen \
                     port:libxslt \
-                    port:py37-sphinx \
+                    port:py27-sphinx \
                     port:perl${pbranch}
 
 depends_lib         port:desktop-file-utils \
@@ -52,7 +52,7 @@ depends_lib         port:desktop-file-utils \
                     port:goocanvasmm2\
                     port:gtksourceviewmm3 \
                     port:postgresql94 \
-                    port:py37-gobject3 \
+                    port:py27-gobject3 \
                     port:libepc \
                     port:evince \
                     port:shared-mime-info
@@ -70,7 +70,7 @@ require_active_variants libgda5 postgresql94
 
 configure.cmd       ./autogen.sh
 
-set python.branch 3.7
+set python.branch   2.7
 set python.prefix   ${frameworks_dir}/Python.framework/Versions/${python.branch}
 
 configure.pkg_config_path ${python.prefix}/lib/pkgconfig

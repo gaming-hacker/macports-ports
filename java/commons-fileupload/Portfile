@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup java 1.0
 
@@ -13,7 +14,7 @@ description			Jakarta Commons-FileUpload
 long_description	FileUpload makes it easy to add robust, high-performance, file \
 					upload  capability to your servlets and web applications.
 					
-homepage			http://commons.apache.org/fileupload/
+homepage			https://commons.apache.org/fileupload/
 
 distname			${name}-${version}-src
 master_sites		apache:commons/fileupload/source/
@@ -45,6 +46,7 @@ destroot	{
 	file copy ${worksrcpath}/dist/docs ${destroot}${prefix}/share/doc/${name}
 }
 
+
 livecheck.type  regex
-livecheck.url   http://commons.apache.org/downloads/download_fileupload.cgi
+livecheck.url   https://commons.apache.org/proper/commons-fileupload/download_fileupload.cgi
 livecheck.regex "${name}-(\\d+\\.\\d+(\\.\\d+)?)-src.tar.gz"

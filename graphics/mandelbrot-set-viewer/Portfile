@@ -47,7 +47,7 @@ post-activate {
     }
 }
 
-notes "To run this program, type 'python3.7 ${prefix}/share/${name}/main.py'. 
+notes "To run this program, type 'python2.7 ${prefix}/share/${name}/main.py'. 
 You can modify the output by changing ${prefix}/share/${name}/config.py"
 
 livecheck.url       ${homepage}

@@ -33,8 +33,8 @@ depends_lib		port:libpcap \
 			port:gdbm \
 			port:libgeoip \
 			port:rrdtool \
-			port:py37-rrdtool \
-			port:python37
+			port:py27-rrdtool \
+			port:python27
 
 post-extract {
 	move ${worksrcpath}/configure.in ${worksrcpath}/configure.ac
@@ -50,7 +50,7 @@ post-patch {
 }
 
 configure.env		LOCALEDIR=${prefix}/share/locale \
-			PYTHON=${prefix}/bin/python3.7-config
+			PYTHON=${prefix}/bin/python2.7-config
 
 configure.cmd		${worksrcpath}/autogen.sh
 

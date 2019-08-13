@@ -22,7 +22,7 @@ long_description    Replicator is a replicating HTTP proxy server. \
                     packages.
 homepage            http://gertjan.freezope.org/replicator/
 
-depends_run         port:python37
+depends_run         port:python27
 
 master_sites        ${homepage}
 distname            ${name}_${version}
@@ -30,7 +30,7 @@ worksrcdir          ${name}-${version}
 checksums           md5 7d8d69175a5dc3d470273b1e508a27f3
 
 configure {
-    reinplace -W ${worksrcpath} "s| /usr/bin/python|${prefix}/bin/python3.7|" \
+    reinplace -W ${worksrcpath} "s| /usr/bin/python|${prefix}/bin/python2.7|" \
             http-replicator \
             http-replicator_maintenance
 }

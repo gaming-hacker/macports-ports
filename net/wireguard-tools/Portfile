@@ -3,13 +3,12 @@
 PortSystem          1.0
 
 name                wireguard-tools
-# please only update the version when the tools (in "src/tools") have
-# been modified/updated (git commit messages starting with "tools:").
-#
-# the WireGuard repository and its updates primarily deals with the
-# Linux kernel module, which isn't useful or relevant for macOS (we're
-# just interested in its tools for manipulating WireGuard interfaces).
-version             0.0.20181119
+version             0.0.20190702
+revision            0
+checksums           rmd160  1770c986502634e32f73755bbf991e2297226899 \
+sha256  1a1311bc71abd47a72c47d918be3bacc486b3de90734661858af75cc990dbaac \
+size    327632
+
 categories          net
 platforms           darwin
 license             GPL-2
@@ -26,10 +25,6 @@ homepage            https://www.wireguard.com/
 master_sites        https://git.zx2c4.com/WireGuard/snapshot/
 distname            WireGuard-${version}
 use_xz              yes
-
-checksums           rmd160  5738fb599845c79098fdd5d2da6c129f7a35b1d2 \
-sha256  7d47f7996dd291069de4efb3097c42f769f60dc3ac6f850a4d5705f321e4406b \
-size    319816
 
 depends_run         port:bash \
                     port:wireguard-go

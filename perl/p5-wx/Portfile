@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 PortGroup           wxWidgets 1.0
 
 perl5.branches 5.28
-
 perl5.setup         Wx 0.9932
 
 platforms           darwin

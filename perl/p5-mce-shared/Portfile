@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-perl5.setup         MCE-Shared 1.839 ../../authors/id/M/MA/MARIOROY
+perl5.setup         MCE-Shared 1.843 ../../authors/id/M/MA/MARIOROY
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
 description         MCE::Shared - MCE extension for sharing data supporting threads and processes
@@ -12,9 +12,9 @@ long_description    ${description}
 
 platforms           darwin
 
-checksums           rmd160  2d13367cc9403a64a2428c78c3fdc8a0b2f2b481 \
-sha256  f25dd3d67103adea1e1f862e67182cba1c7b64cf55b8dcded32752dd488321bc \
-size    141874
+checksums           rmd160  c599d7973ac0c4b919d9352810052406beb2afc4 \
+sha256  6b071e13cace209a3e1c60be1aaf7b977b71c5e6a955cc6d19147f1753d3903b \
+size    144133
 
 if {${perl5.major} != ""} {
 # Sereal is loaded automatically if available

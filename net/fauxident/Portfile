@@ -24,14 +24,14 @@ master_sites        ${homepage}
 checksums           rmd160  43e4e87e51f297b23afb0e4e184dc6b9988ef42d \
 sha256  73dd881432d5c816f34ed3ba1bf78b477beb8a7a53ae0f542390dab33b6a697f
 
-depends_lib         port:python37
+depends_lib         port:python27
 
 post-extract {
     file attributes ${worksrcpath}/fauxident.py -permissions 0755
 }
 
 configure {
-    reinplace "s|/usr/local/bin/python|${prefix}/bin/python3.7|g" \
+    reinplace "s|/usr/local/bin/python|${prefix}/bin/python2.7|g" \
         ${worksrcpath}/fauxident.py
 }
 

@@ -51,7 +51,6 @@ if {${perl5.major} != ""} {
                     port:p${perl5.major}-namespace-clean \
                     port:p${perl5.major}-parent \
                     port:p${perl5.major}-scope-guard \
-                    port:p${perl5.major}-string-camelcase \
                     port:p${perl5.major}-string-toidentifier-en \
                     port:p${perl5.major}-try-tiny
 }

@@ -8,7 +8,7 @@ categories	net
 maintainers	darkart.com:opendarwin.org {geeklair.net:dluke @danielluke}
 description	Port scanning utility for large networks
 license		{GPL-2 OpenSSLException}
-homepage	http://nmap.org/
+homepage	https://nmap.org/
 platforms	darwin freebsd
 
 long_description Nmap is a utility for port scanning large networks, although \
@@ -69,6 +69,6 @@ variant subversion description {build with subversion (nmap-update) support} {
 
 variant zenmap description {build zenmap in addition to nmap} {
 			configure.args-delete --without-zenmap
-			configure.python ${prefix}/bin/python3.7
-			depends_lib-append port:py37-pygtk
+			configure.python ${prefix}/bin/python2.7
+			depends_lib-append port:py27-pygtk
 		}

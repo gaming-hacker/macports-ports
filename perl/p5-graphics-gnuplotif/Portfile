@@ -5,7 +5,6 @@ PortGroup           perl5 1.0
 PortGroup           active_variants 1.1
 
 perl5.branches 5.28
-
 perl5.setup         Graphics-GnuplotIF 1.8
 
 platforms           darwin

@@ -15,30 +15,62 @@ long_description    ${description}
 
 subport ${name} {
     conflicts           ${name}-devel
-    github.setup        macports macports-legacy-support 0.6 v
-    checksums           rmd160  96ac164b8216698e7a6caf29bd767cdc2956f001 \
-sha256  eafafaf64a7647db14e66adf6f687b483f66d60d98adb1d3f08b8f97fba1421d \
-size    11379
+    github.setup        macports macports-legacy-support 0.11 v
+    revision            0
+    checksums           rmd160  fee7ffe6d36506625d533c55bfc064c871e363cb \
+sha256  1e786c5d424f6f48ef9a7389de8b4c266bb13117feea7b2d8fbcca8ec4be096f \
+size    31313
 }
 
 subport ${name}-devel {
     conflicts           ${name}
-    github.setup        macports macports-legacy-support 4a71459007f40711ebe8da0d27687b1499a00859
-    version             20181130
-    checksums           rmd160  04f0a9a6fd968c26f0ce068905fff7ce33f3f0fa \
-sha256  16c6496e0ad1333e994f3738383a428319d5278e150e7549bf82e2f63dfd8fd5 \
-size    11766
+    github.setup        macports macports-legacy-support 5dd8c17c0a6e5c3080d02c34654e4d4f953adaa2
+    version             20190811
+    revision            0
+    livecheck.type      none
+    checksums           rmd160  d3896c4133489fcbe8f86ba9d6cc5853dbabf091 \
+sha256  fa8e511d68f6270f0490d3e8f5ad5c4f35d6e7956963f882e2b00ad42b4e796c \
+size    31316
 }
 
 use_configure       no
 
-variant universal {}
+test.run            yes
+test.target         test
 
+variant universal {}
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env           CXX=${configure.cxx} \
+                    "CXXFLAGS=${configure.cxxflags} [get_canonical_archflags cxx]" \
+                    CC=${configure.cc} \
+                    "CFLAGS=${configure.cflags} [get_canonical_archflags cc]" \
+                    "LDFLAGS=${configure.ldflags} [get_canonical_archflags ld]" \
+                    PREFIX=${prefix}
+} else {
 build.env           CXX="${configure.cxx}" \
                     CXXFLAGS="${configure.cxxflags} [get_canonical_archflags cxx]" \
                     CC="${configure.cc}" \
                     CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \
                     LDFLAGS="${configure.ldflags}  [get_canonical_archflags ld]" \
                     PREFIX=${prefix}
-
+}
 destroot.env        PREFIX=${prefix}
+
+post-destroot {
+  platform darwin 8 {
+    # install Tiger-specific fixes
+
+    # very slightly modified which command to match behaviour of 10.5+
+    copy ${worksrcpath}/tiger_only/bin/which \
+         ${destroot}${prefix}/bin/which
+
+    if { ${subport} eq "${name}-devel" } {
+        #copy ${worksrcpath}/tiger_only/include/libproc.h \
+        #     ${destroot}${prefix}/include/LegacySupport/libproc.h
+
+        #copy ${worksrcpath}/tiger_only/include/sys/proc_info.h \
+        #     ${destroot}${prefix}/include/LegacySupport/sys/proc_info.h
+
+    }
+  }
+}

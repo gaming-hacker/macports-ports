@@ -2,23 +2,22 @@
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
-
-# requires libc++ as of 2.4.0
+PortGroup           legacysupport 1.0
 
 name                exempi
-version             2.4.5
+version             2.5.1
 license             BSD
 categories          graphics
 maintainers         {devans @dbevans} openmaintainer
 platforms           darwin
-homepage            https://libopenraw.freedesktop.org/wiki/Exempi/
+homepage            https://libopenraw.freedesktop.org/${name}/
 master_sites        https://libopenraw.freedesktop.org/download/
 
 use_bzip2           yes
 
-checksums           rmd160  80a9ee6b33894d60cfbe92b341c551e8d6970e41 \
-sha256  406185feb88e84ea1d4b4251370be2991205790d7113a7e28e192ff46a4f221e \
-size    3615134
+checksums           rmd160  5bf9d72d7cde0916f38b7a9499f75b66e0ad4009 \
+sha256  100b3d5b1b3370bc2e31c0978991716c4a4478246a2ac2df6382054a0ae89bc8 \
+size    3659352
 
 description         Exempi is an implementation of XMP.
 
@@ -33,6 +32,9 @@ if {[vercmp $xcodeversion 4.3] < 0 && [string match "*macports*" ${configure.com
         RANLIB=${prefix}/bin/ranlib
 }
 
+patchfiles          limits.patch \
+                    stdlib.patch
+
 configure.args      --enable-unittest=no \
                     --disable-silent-rules
 
@@ -43,5 +45,5 @@ variant unit_test description {Enable unit test}  {
 }
 
 livecheck.type      regex
-livecheck.url       [lindex ${master_sites} 0]
-livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)\\.tar"
+livecheck.url       ${homepage}
+livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)${extract.suffix}"

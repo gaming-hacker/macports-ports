@@ -27,6 +27,7 @@ depends_lib         port:ncurses \
                     port:py${python.version}-feedparser \
                     port:py${python.version}-chardet
 
+
 post-destroot {
     ln -s ${python.prefix}/bin/canto ${destroot}${prefix}/bin/canto
 }

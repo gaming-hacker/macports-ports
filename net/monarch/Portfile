@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 PortGroup           perl5 1.0
-perl5.branches 5.26
+perl5.branches      5.26
 
 name                monarch
 version             2.5.0
@@ -91,6 +91,7 @@ post-destroot {
     system "chown root ${destroot}${monarchdir}/bin/nmap_scan_one"
 }
 
+
 notes "
 
 **** To complete the Monarch installation ****
@@ -98,6 +99,7 @@ notes "
 Read the README at ${prefix}/share/groundwork/monarch/ for full information.
 
 1) Configure Nagios with the default sample files or begin with a Nagios configuration you created manually.
+
 
 2) Setup MySQL and create the Monarch user
    Configure MySQL (new MySQL installs)
@@ -118,6 +120,7 @@ Read the README at ${prefix}/share/groundwork/monarch/ for full information.
         mysql> grant CREATE,INSERT,SELECT,DELETE,UPDATE on monarch.* to monarch;
     mysql> SET PASSWORD FOR monarch@localhost = PASSWORD('my-password');
         mysql> exit
+
 
 3) Create the Monarch MySQL database and initialize it using monarch_setup.pl.
    Login to MySQL and the create Monarch database
@@ -153,11 +156,13 @@ NOTE: If you wish to delete the monarch database to start over: a) log into MySQ
       to repeat step 1 because the Monarch user/pass and permissions are not deleted
       by dropping (deleting) the database.
 
+
 4) Set your Apache user and group to the Nagios user
         sudo pico /etc/httpd/httpd.conf
         
     user nagios
     group nagios
+
 
 5) Initial Monarch setup at http://localhost/cgi-bin/monarch.cgi
 
@@ -170,6 +175,7 @@ Control menu
    Load (to populate the Monarch database with sample Nagios object files or manually created ones)
 
 Now setup your hosts, services, etc using the Monarch GUI.
+
 
 6) Optionally use the simplified Monarch interface
 

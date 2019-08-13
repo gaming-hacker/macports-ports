@@ -1,45 +1,28 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           perl5 1.0
 
-name                p5-image-exiftool
-version             11.20
-
-if {$subport ne "exiftool"} {
-    PortGroup           perl5 1.0
 perl5.branches 5.28
-    perl5.setup         Image-ExifTool ${version}
-}
+perl5.link_binaries no
+# when updating this port, don't forget to keep port exiftool at same version
+perl5.setup         Image-ExifTool 11.61
 
 license             {Artistic-1 GPL}
-maintainers         nomaintainer
+maintainers         {devans @dbevans} openmaintainer
 platforms           darwin
 supported_archs     noarch
 
-description         Perl interface and general command line utility to read, write and edit EXIF metadata
+description         Perl interface to read, write and edit EXIF metadata
 long_description    ${description}
-
-checksums           rmd160  a9b242ce17b058ac7c0424781cdc3ebcda404209 \
-sha256  9bf5fefb5d784bfee2ff90e1237c5ea0c756963b859a3fd44685e75f0e9f71fc \
-size    4487203
 
 homepage            http://exiftool.sourceforge.net/
 master_sites        sourceforge:project/exiftool/
 
+checksums           rmd160  dd85bdfdba8765a5c55ee9eabfd58cada53c0698 \
+sha256  f959f3436fb4e42f7561ad56771454670f95110b0bcd099c1bc72eefb4de23e1 \
+size    4611695
+
 livecheck.type      regex
 livecheck.url       ${homepage}
-if {$subport ne "exiftool"} {
-    livecheck.regex     ${perl5.module}-(\[0-9.\]+)${extract.suffix}
-}
-
-subport exiftool {
-    distfiles
-    use_configure   no
-    depends_run     port:p5.26-image-exiftool
-    build {}
-
-    destroot {
-        xinstall -d ${destroot}${prefix}/bin
-        ln -s ${prefix}/bin/exiftool-5.26 ${destroot}${prefix}/bin/exiftool
-    }
-}
+livecheck.regex     ${perl5.module}-(\[0-9.\]+)${extract.suffix}

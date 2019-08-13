@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name                bittwist
@@ -32,8 +33,11 @@ livecheck.regex	    bittwist-macosx-(.*?)${extract.suffix}
 configure {
     reinplace "s|/usr/local|${prefix}|g" ${worksrcpath}/Makefile
 }
-
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env           "CFLAGS=${configure.cflags} -D__BSD_VISIBLE"
+} else {
 build.env           CFLAGS="${configure.cflags} -D__BSD_VISIBLE"
+}
 
 destroot {
     xinstall -m 755 -W ${worksrcpath}/src bittwist bittwistb bittwiste \

@@ -29,15 +29,15 @@ depends_run             path:bin/inkscape:inkscape \
                         port:pdf2svg \
                         bin:pdflatex:texlive-latex
 
-variant python26 conflicts python37 description {Configure to use Python version 2.6} {}
-variant python37 conflicts python26 description {Configure to use Python version 2.7} {}
+variant python26 conflicts python27 description {Configure to use Python version 2.6} {}
+variant python27 conflicts python26 description {Configure to use Python version 2.7} {}
 
 if { ![variant_isset python26] } {
-	default_variants      +python37
+	default_variants      +python27
 }
 if {[variant_isset python26]} {
     set python.version 26
-} elseif {[variant_isset python37]} {
+} elseif {[variant_isset python27]} {
     set python.version 27
 }
 

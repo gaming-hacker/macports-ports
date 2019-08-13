@@ -3,7 +3,7 @@
 PortSystem	1.0
 
 name			bind9
-version			9.12.3
+version			9.14.4
 categories		net
 maintainers		{geeklair.net:dluke @danielluke}
 platforms		darwin freebsd sunos
@@ -25,16 +25,21 @@ homepage		https://www.isc.org/
 distname		bind-${version}
 master_sites		isc:${name}/${version}
 
-checksums	rmd160	bbfc7901afad2f2bcfa1d0515fd4eac01539da5e \
-sha256	0e80762631258e1c193552efa7c56c05ec5e8c2f98e4b2a3b91a61fd8d96b938 \
-size	8616664
+checksums	rmd160	d5b732b9c344d84885b3928ece88731e723185ff \
+sha256	312efb82a6889074f31ef2849af498b3ec97ca69acd5c4e5e4b4045a8fe6b83f \
+size	6295768
 
-depends_lib		path:lib/libssl.dylib:openssl port:libxml2
-
-patchfiles-append	gssapi-link.patch
+depends_lib		path:lib/libssl.dylib:openssl  \
+			port:libxml2 \
+			port:python37 \
+			port:py37-ply
 
 use_parallel_build	no
 universal_variant	no
+
+compiler.blacklist	gcc-4.2
+
+patchfiles		atomics.patch
 
 test.run		yes
 test.target		test
@@ -51,8 +56,7 @@ configure.args		--mandir=${prefix}/share/man \
 				--with-openssl=${prefix} \
 				--with-libxml2=${prefix} \
 				--without-libjson \
-				--enable-threads \
-				--enable-ipv6
+				--with-python=${prefix}/bin/python3.7
 
 platform darwin 8 {
 	configure.args-append --with-dlopen=no \
@@ -106,19 +110,6 @@ notes "******************************************************
 * logging into a directory where this new user can write files.
 ******************************************************"
 
-variant python37 description {Build python37 module} {
-	depends_lib-append port:python37 \
-			port:py37-configargparse \
-			port:py37-ply
-	configure.args-append --with-python=${prefix}/bin/python2.7
-}
-
-variant python36 description {Build python36 module} {
-	depends_lib-append port:python36 \
-			port:py36-configargparse \
-			port:py36-ply
-	configure.args-append --with-python=${prefix}/bin/python3.6
-}
 livecheck.type	regex
 livecheck.url	${homepage}downloads/
-livecheck.regex	"bind-(\\d+\.\\d+\.\\d+(?:-P\\d+)?).tar.gz - tar.gz\\s*</a>"
+livecheck.regex	"BIND(\\d+\.\\d+\.\\d+(?:-P\\d+)?).tar.gz - tar.gz\\s*</a>"

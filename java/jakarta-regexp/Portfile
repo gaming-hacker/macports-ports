@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name           		jakarta-regexp
@@ -11,9 +12,9 @@ platforms       	darwin
 
 description     	Jakarta Regular Expressions Parser.
 long_description	Jakarta Regexp is a 100% Pure Java Regular Expression package.
-homepage			http://jakarta.apache.org/regexp/
+homepage			https://jakarta.apache.org/regexp/
 				
-master_sites    	http://archive.apache.org/dist/jakarta/regexp/source
+master_sites    	https://archive.apache.org/dist/jakarta/regexp/source
 
 checksums           md5     b941b8f4de297827f3211c2cb34af199 \
 sha1    a8c98ac37e2a34dd39fca1e9d4d632944ea930e1 \

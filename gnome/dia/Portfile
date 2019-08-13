@@ -92,14 +92,14 @@ if {[variant_isset quartz]} {
     require_active_variants gtk2 x11
 }
 
-variant python37 description {Add python 3.7 bindings} {
-    set python_prefix       ${frameworks_dir}/Python.framework/Versions/3.7
+variant python27 description {Add python 2.7 bindings} {
+    set python_prefix       ${frameworks_dir}/Python.framework/Versions/2.7
     depends_build-append    port:swig
-    depends_lib-append      port:py37-pygtk
+    depends_lib-append      port:py27-pygtk
 
     configure.args-append   --with-swig \
                             --with-python
-    configure.python        ${python_prefix}/bin/python3.7
+    configure.python        ${python_prefix}/bin/python2.7
     configure.env-append    am_cv_python_pyexecdir=${python_prefix} \
                             am_cv_python_pythondir=${python_prefix}
 }

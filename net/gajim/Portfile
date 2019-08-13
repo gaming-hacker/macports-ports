@@ -33,14 +33,14 @@ depends_build       port:intltool \
 
 depends_lib         port:gtk2 \
                     port:gtkspell2 \
-                    port:py37-pygtk \
-                    port:py37-docutils \
-                    port:py37-nbxmpp \
-                    port:py37-openssl \
-                    port:dbus-python37
+                    port:py27-pygtk \
+                    port:py27-docutils \
+                    port:py27-nbxmpp \
+                    port:py27-openssl \
+                    port:dbus-python27
 
-set python_prefix   ${frameworks_dir}/Python.framework/Versions/3.7
-configure.python    ${prefix}/bin/python3.7
+set python_prefix   ${frameworks_dir}/Python.framework/Versions/2.7
+configure.python    ${prefix}/bin/python2.7
 configure.pkg_config_path  ${python_prefix}/lib/pkgconfig
 
 # reconfigure using autogen.sh for intltool 0.51 compatibility

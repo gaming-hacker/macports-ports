@@ -53,18 +53,18 @@ configure.args  --with-gtk=2.0 \
 
 configure.cflags-append -fstrict-aliasing
 
-variant python37 description {Build Python bindings using Python 3.7} {
+variant python27 description {Build Python bindings using Python 2.7} {
     configure.args-delete --disable-python
-    set python_prefix ${frameworks_dir}/Python.framework/Versions/3.7
-    depends_lib-append port:py37-pygtk
-    configure.python ${prefix}/bin/python3.7
+    set python_prefix ${frameworks_dir}/Python.framework/Versions/2.7
+    depends_lib-append port:py27-pygtk
+    configure.python ${prefix}/bin/python2.7
     configure.pkg_config_path   ${python_prefix}/lib/pkgconfig
     configure.env               PATH=${python_prefix}/bin:$env(PATH)
 }
 
-# default to optional python37 bindings
+# default to optional python27 bindings
 
-default_variants +python37
+default_variants +python27
 
 # rename gnome-pty-helper to avoid a conflict with port vte
 

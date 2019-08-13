@@ -40,6 +40,7 @@ notes "
 
 The full documentation may be found at http://www.cacti.net/documentation.php.
 
+
 1) Install PHP and MySQL 5 (not covered).  These instructions assume MySQL 5 was
    installed from MacPorts.
 
@@ -49,8 +50,10 @@ The full documentation may be found at http://www.cacti.net/documentation.php.
 
    If not, locate the php.ini file for your version of PHP and type the path there.
 
+
 2) Set Cacti permissions.
    sudo chown -R <cacti-user>:<cacti-group> ${prefix}/share/${name}/
+
 
 3) Setup MySQL and prepare it for Cacti.
    Configure MySQL (new MySQL installs)
@@ -82,6 +85,7 @@ The full documentation may be found at http://www.cacti.net/documentation.php.
     mysql> show tables;
     mysql> exit;
 
+
 4) Edit ${cactidir}/include/config.php to match your MySQL information and url path.
 
     \$database_type = \"mysql\";
@@ -90,15 +94,18 @@ The full documentation may be found at http://www.cacti.net/documentation.php.
     \$database_username = \"cacti\";
     \$database_password = \"<my-cactidb-pwd>\";
 
+
 5) Place a symlink for Cacti inside your Apache document root.
 
     ln -s ${cactidir}  <Apache-docroot>/cacti
+
 
 6) Edit the Cacti user's crontab file.
     sudo -u <cactiuser> crontab -e
 
   Insert the crontab entry below:
     */5 * * * * ${prefix}/bin/php ${cactidir}/poller.php > /dev/null 2>&1
+
 
 7) If you wish to use Cacti plugins, you must perform these additional steps.
 
@@ -112,6 +119,7 @@ The full documentation may be found at http://www.cacti.net/documentation.php.
    c) Ensure that your Cacti user has permissions to manage the plugins
       User Management - select a Cacti user and set Configure/Manage or View options as desired
 
+
 8) Go to http://localhost/cacti/install/index.php.
     The default user/password is admin/admin.  Select 'New Install', enter
     the paths for SNMP / RRDtool / PHP (see below), and click 'Finish'.
@@ -123,6 +131,7 @@ Verify paths:
 
     RRDtool binary path: ${prefix}/bin/rrdtool
     PHP binary path: ${prefix}/bin/php (if not using MacPorts PHP, use appropriate path)
+
 
 9) Create interface traffic graphs
    a) Devices -> Add

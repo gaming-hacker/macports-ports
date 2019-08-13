@@ -1,12 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup           perl5 1.0
 
 perl5.branches 5.28
-
 perl5.setup         Class-Inner 0.200001
 license             {Artistic-1 GPL}
-maintainers         {blair @blair} openmaintainer
+maintainers         nomaintainer
 description         A perlish implementation of Java like inner classes
 long_description    ${description}
 

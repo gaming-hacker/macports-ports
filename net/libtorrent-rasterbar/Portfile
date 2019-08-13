@@ -7,7 +7,7 @@ PortGroup           conflicts_build 1.0
 PortGroup           cxx11 1.1
 PortGroup           github 1.0
 
-github.setup        arvidn libtorrent 1_1_11 libtorrent_
+github.setup        arvidn libtorrent 1_1_12 libtorrent_
 name                libtorrent-rasterbar
 version             [string map {_ .} ${version}]
 license             BSD
@@ -21,9 +21,9 @@ description         A C++ bittorrent library (not the same as port libtorrent)
 long_description    A C++ bittorrent library designed to run on anything from embedded systems to large scale \
                     seed servers. It comes with python bindings and detailed documentation.
 
-checksums           rmd160  9c03f2d0b5a337449358d2ace89fdf0877c9d6f9 \
-sha256  475500e8fa14b39736a89df3fcc9d7d7e8990d389285535e8f676b9a118e34f0 \
-size    2920771
+checksums           rmd160  0d72014dbb640887e99aaa338ff812678e3dfb8b \
+sha256  231ff7562e32a760103edb6794501899177905288f6729d0d2cdb4f7be37199a \
+size    2920219
 
 depends_build       port:pkgconfig \
                     port:autoconf \
@@ -53,17 +53,21 @@ universal_variant   no
 
 conflicts_build     ${name}
 
-variant python37 description {Build bindings for Python 3.7} {
-        require_active_variants boost python37
-        depends_lib-append port:python37
+variant python27 description {Build bindings for Python 2.7} {
+        require_active_variants boost python27
+        depends_lib-append port:python27
         configure.python ${prefix}/bin/python2.7
         configure.env-append \
-                "PYTHON_INSTALL_PARAMS=--prefix=${destroot}${frameworks_dir}/Python.framework/Versions/3.7" \
-                PYTHON_EXTRA_LIBS=' '
+                PYTHON_INSTALL_PARAMS=--prefix=${destroot}${frameworks_dir}/Python.framework/Versions/2.7 \
+                PYTHON_EXTRA_LIBS=
 }
 
 variant error_logging description {Enable logging of errors to disk} {
         configure.args-append --enable-logging=errors
 }
 
-default_variants    +python37
+default_variants    +python27
+
+# restrict livecheck to 1.1 branch for now
+# version 1.2 has incompatible API/ABI changes
+github.livecheck.regex  {(1_1_[^"]+)}

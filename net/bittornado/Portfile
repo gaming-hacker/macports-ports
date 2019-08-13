@@ -22,7 +22,7 @@ long_description    bittornado is a tool for distributing files. It is \
 homepage            http://www.bittornado.com/
 
 supported_archs         noarch
-python.default_version 37
+python.default_version  27
 
 master_sites        http://download2.bittornado.com/download/
 distname            BitTornado-${version}

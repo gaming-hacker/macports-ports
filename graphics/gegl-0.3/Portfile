@@ -8,7 +8,7 @@ PortGroup           gobject_introspection 1.0
 name                gegl-0.3
 set gname           gegl
 version             0.3.34
-revision            4
+revision            5
 set branch          [join [lrange [split ${version} .] 0 1] .]
 conflicts           gegl-devel
 license             {GPL-3+ LGPL-3+}
@@ -35,7 +35,7 @@ size    6707964
 
 depends_build       port:pkgconfig \
                     port:w3m \
-                    port:python37
+                    port:python27
 
 depends_lib         port:babl \
                     port:gdk-pixbuf2 \
@@ -80,7 +80,7 @@ compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 use_autoreconf      yes
 autoreconf.args     -fvi
 
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 
 configure.args      --disable-docs \
                     --disable-silent-rules \

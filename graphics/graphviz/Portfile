@@ -8,11 +8,11 @@ PortGroup                       xcodeversion 1.0
 name                            graphviz
 set my_name                     graphviz
 version                         2.40.1
-revision                        1
+revision                        2
 set thisbranch                  [strsed ${name} "g/^${my_name}//"]
 set otherbranch                 [expr {${thisbranch} eq {} ? {-devel} : {}}]
 categories                      graphics
-maintainers                     ryandesign
+maintainers                     {ryandesign @ryandesign}
 license                         EPL-1
 homepage                        http://www.graphviz.org/
 master_sites                    ${homepage}pub/graphviz/stable/SOURCES/
@@ -39,7 +39,7 @@ sha256  ca5218fade0204d59947126c38439f432853543b0818d9d728c589dfe7f3a421
 minimum_xcodeversions           {9 3.1.2}
 
 if {${name} eq ${subport}} {
-revision                        1
+revision                        2
 
 conflicts                       graphviz${otherbranch}
 
@@ -179,13 +179,13 @@ variant perl description {Include PERL 5 language bindings} {
 #    }
 #}
 
-variant python37 description {Include Python 3.7 language bindings} {
-    depends_lib-append          port:python37
+variant python27 description {Include Python 2.7 language bindings} {
+    depends_lib-append          port:python27
     depends_build-append        port:swig-python
 
     configure.args-replace      --disable-swig --enable-swig
     configure.args-replace      --disable-python --enable-python
-    configure.python            ${prefix}/bin/python3.7
+    configure.python            ${prefix}/bin/python2.7
 }
 
 variant ruby description {Include Ruby language bindings} {
@@ -285,8 +285,8 @@ post-destroot {
 }
 
 livecheck.type                  regex
-livecheck.url                   ${homepage}Download_source.php
-livecheck.regex                 ${my_name}-(\[0-9\]+\\.\[0-9\]*\[02468\](\\.\[0-9\]+)*)\\.tar
+livecheck.url                   https://graphviz.gitlab.io/_pages/Download/Download_source.html
+livecheck.regex                 ${my_name}-(\[0-9\]+\\.\[0-9\]*\[02468\](\\.\[0-9\]+)*)\\.tar.gz
 } else {
     livecheck.type              none
 }
@@ -294,8 +294,8 @@ livecheck.regex                 ${my_name}-(\[0-9\]+\\.\[0-9\]*\[02468\](\\.\[0-
 subport graphviz-gui${thisbranch} {
     PortGroup                   xcode 1.0
     
-    revision                    0
-    
+    revision                    1
+
     conflicts                   graphviz-gui${otherbranch} graphviz-oldgui
     
     categories-append           aqua
@@ -322,6 +322,15 @@ subport graphviz-gui${thisbranch} {
     
     patchfiles                  patch-project.pbxproj.diff
     
+    # this port does not build with the new xcode build system at present
+    if {[vercmp ${xcodeversion} 10.0] >= 0} {
+        # Xcode10 will not build against an IBDocument.SystemTarget of 10.5
+        patchfiles-append    patch-xib-target.diff
+
+        build.pre_args      -UseNewBuildSystem=NO
+        destroot.pre_args   -UseNewBuildSystem=NO
+    }
+
     xcode.configuration         Release
     
     build.dir                   ${worksrcpath}/macosx
@@ -334,8 +343,8 @@ subport gvedit${thisbranch} {
     PortGroup                   app 1.0
     PortGroup                   qt4 1.0
     
-    revision                    0
-    
+    revision                    1
+
     conflicts                   gvedit${otherbranch}
     
     description                 Qt-based GUI for Graphviz

@@ -42,7 +42,7 @@ sha1    2c9c56246ed15ae82c90ff5da1f1a9c531b6189a    \
 rmd160  2dfbe666c93d701dab56728ad4eeaff0654ce608
 
 use_configure       no
-build.cmd           true
+build {}
 
 # This port installs binaries linked with this C++ library.
 configure.cxx_stdlib libstdc++

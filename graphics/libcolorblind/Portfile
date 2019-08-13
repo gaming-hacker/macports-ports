@@ -25,6 +25,7 @@ long_description \
     It provides an unified way to recalculate colors in order to \
     present alternative views of images for colorblind people.
 
+
 checksums        md5     c4b79e74f4e4edc02620e850cfcddd4e \
 sha1    8332de202b15be7b94fb144fb4628ad70e42d6fa \
 rmd160  c783aa03d98f92fd09e7a40edc305cea72036073
