@@ -66,6 +66,8 @@ proc ruby_set_branch {option action args} {
     set ruby.rake           ${prefix}/bin/rake${ruby.branch}
     set ruby.bindir         ${prefix}/libexec/ruby${ruby.branch}
     # gem, rake command for 1.8 from port:rb-rubygems, port:rb-rake
+    set ruby.suffix         [join [split ${ruby.branch} .] {}]
+    set ruby.prog_suffix    ${ruby.branch}
     set ruby.api_version ${ruby.branch}.0
     set ruby.gemdir         ${prefix}/lib/ruby${ruby.prog_suffix}/gems/${ruby.api_version}
     # define installation libraries as vendor location
@@ -166,17 +168,11 @@ proc ruby.setup {module vers {type "install.rb"} {docs {}} {source "custom"} {im
                 return
             }
         }
-#     } else {
-#         switch ${implementation} {
-#             ruby25 { ruby.branch 2.5 }
-#             default {
-#                 ui_error "ruby.setup: unknown implementation '${implementation}' specified (ruby24, ruby23, ruby22, ruby21, ruby20, ruby19 or ruby possible)"
-#                 return -code error "ruby.setup failed"
-#             }
-#         }
-#         name            rb${ruby.suffix}-[string tolower ${ruby.module}]
-#         depends_lib     port:${implementation}
-#     }
+    } else {
+        ruby26 { ruby.branch 2.6 }
+        name            rb${ruby.suffix}-[string tolower ${ruby.module}]
+        depends_lib     port:${implementation}
+    }
 
     set ruby.docs   ${docs}
 

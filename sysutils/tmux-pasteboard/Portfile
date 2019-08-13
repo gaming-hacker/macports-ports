@@ -22,9 +22,9 @@ size    16932
 use_configure       no
 variant universal {}
 
-build.env           CC="${configure.cc}" \
-                    CFLAGS="-I${prefix}/include" \
-                    LDFLAGS="-L${prefix}/lib"
+build.env           CC=${configure.cc} \
+                    CFLAGS=-I${prefix}/include \
+                    LDFLAGS=-L${prefix}/lib
 build.target        reattach-to-user-namespace
 build.args          ARCHES="[get_canonical_archs]"
 

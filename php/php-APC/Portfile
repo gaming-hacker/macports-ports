@@ -12,7 +12,7 @@ platforms           darwin
 maintainers         ryandesign openmaintainer
 license             PHP-3.01
 
-php.branches 7.3
+php.branches        5.3 5.4
 php.pecl            yes
 php.pecl.prerelease yes
 
@@ -21,7 +21,7 @@ description         Alternative PHP Cache
 long_description    APC is a free, open, and robust framework for caching and \
                     optimizing PHP intermediate code.
 
-checksums           rmd160  128bc0c81c09bab5.6ba09dc10fbe846ff60cb1 \
+checksums           rmd160  128bc0c81c09bab5586ba09dc10fbe846ff60cb1 \
 sha256  5ef8ba07729e72946e95951672a5378bed98cb5a294e79bf0f0a97ac62829abd
 
 if {${name} ne ${subport}} {

@@ -50,6 +50,7 @@ configure.args      --with-serial=no \
                     --with-user=${userName} \
                     --with-group=${groupName}
 
+
 pre-destroot {
     addgroup ${groupName}
     set gid [existsgroup ${groupName}]

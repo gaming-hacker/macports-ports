@@ -5,10 +5,11 @@ PortGroup           compiler_blacklist_versions 1.0
 PortGroup           cxx11 1.1
 
 name                dar
-version             2.5.17
-checksums           rmd160  6f0f71ea4ce25baba1b05a0f8fbde167473e3dc5 \
-sha256  7bf4a5f3f9ac78a5b5cd37d7e94cd3299239f26fdc5404b53f36f1036da286df \
-size    1905938
+version             2.6.5
+revision            0
+checksums           rmd160  0e710d56c14dc54a36c10cc0202ed9d334f8eeb0 \
+sha256  cdfe72ecf29d7debc3492296981b400174167a356a2fa257dd01e3c16dc95ff4 \
+size    2104866
 
 categories          archivers
 platforms           darwin
@@ -32,6 +33,8 @@ depends_lib         port:bzip2 \
                     port:lzo2 \
                     path:lib/libssl.dylib:openssl \
                     port:zlib
+
+patchfiles          deci.patch
 
 # error: unknown type name 'thread_local'
 compiler.blacklist-append {clang < 800}

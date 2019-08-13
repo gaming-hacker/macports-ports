@@ -21,8 +21,13 @@ sha256  053d0f277f69b183f9c8e8c8b09b94d5bb4a1de6d9b122c0e6c00cc6593dfb46 \
 size    1463718
 
 platform darwin {
+        if {[vercmp [macports_version] 2.5.99] >= 0} {
+        configure.env \
+                    "LIBS=-framework CoreFoundation -framework IOKit"
+        } else {
         configure.env \
                     LIBS="-framework CoreFoundation -framework IOKit"
+        }
         patchfiles  patch-scsi-mac-iokit.c.diff \
                     patch-cdda2wav-cdda2wav.c.diff \
                     patch-cdrecord-cdrecord.c.diff

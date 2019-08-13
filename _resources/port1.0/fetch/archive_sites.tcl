@@ -1,4 +1,6 @@
-namespace eval portfetch::mirror_sites { }
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 global os.platform os.major
 set packages_scheme [expr {${os.platform} eq "darwin" && ${os.major} < 10 ? "http" : "https"}]
@@ -14,8 +16,6 @@ set portfetch::mirror_sites::sites(macports_archives) "
     http://nue.de.packages.macports.org/:nosubdir
     http://mse.uk.packages.macports.org/sites/packages.macports.org/:nosubdir
     ${packages_scheme}://pek.cn.packages.macports.org/macports/packages/:nosubdir
-    ${packages_scheme}://mirrors.shu.edu.cn/macports/packages/:nosubdir
-    http://sea.us.packages.macports.org/macports/packages/:nosubdir
     http://jog.id.packages.macports.org/macports/packages/:nosubdir
     http://ywg.ca.packages.macports.org/mirror/macports/packages/:nosubdir
 "

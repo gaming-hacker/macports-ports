@@ -3,7 +3,7 @@
 PortSystem          1.0
 
 name                parallel
-version             20181222
+version             20190722
 categories          sysutils
 platforms           darwin
 license             GPL-3+
@@ -20,10 +20,9 @@ use_bzip2           yes
 
 depends_lib         port:perl5
 
-checksums           rmd160  b1635e254d4a4865988eb6d15142734d71d71105 \
-sha256  058c9f7cf599652aef5b54cf5c95c9a5b6d57d59ce4deebebf7938f7be4da369 \
-size    1799554
-
+checksums           rmd160  a82a9c6c82cc57dcc37c5b03758c9013fcb91685 \
+sha256  0ed0863184dbb396b4c030848e754b1ea76329c06ae9e43314bc0915eb6cbca7 \
+size    2055028
 
 post-patch {
     set perl_bin ${prefix}/bin/perl

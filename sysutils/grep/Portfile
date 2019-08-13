@@ -4,7 +4,6 @@ PortSystem 1.0
 
 name            grep
 version         3.3
-revision        0
 platforms       darwin
 categories      sysutils
 license         GPL-3+
@@ -22,7 +21,6 @@ use_xz          yes
 checksums       rmd160  dd32e6f23b55fd7bde6adec25c4d2666b9d4daf1 \
 sha256  b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514 \
 size    1473056
-
 
 # Ensure system version of grep is used instead of a possibly broken MacPorts version.
 configure.env   PATH=/usr/bin:$env(PATH)

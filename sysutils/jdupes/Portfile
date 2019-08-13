@@ -3,7 +3,12 @@
 PortSystem          1.0
 PortGroup           github 1.0
 
-github.setup        jbruchon jdupes 1.11.1 v
+github.setup        jbruchon jdupes 1.13.2 v
+revision            0
+checksums           rmd160  11e16a93975d14ac1f44ce983d1b5a14a0c4ece1 \
+sha256  7c3cf0b9e2924407a5c65e9bf629c11686b8b5971c952ca77bfd4fb3f506cc27 \
+size    94275
+
 platforms           darwin
 categories          sysutils
 license             MIT
@@ -11,10 +16,6 @@ maintainers         {isi.edu:calvin @cardi} openmaintainer
 description         identify and take actions upon duplicate files
 long_description    ${name} is a powerful duplicate file finder and an \
                     enhanced fork of 'fdupes'.
-
-checksums           rmd160  27fbf208fcf770cf246ae53e4b2b6a4cafde186e \
-sha256  ca70ed020d67e5643024e2383f46aea94168a724503fe2389f5acabe434057b7 \
-size    71718
 
 use_configure       no
 

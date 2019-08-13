@@ -31,7 +31,7 @@ checksums           rmd160  20d6e1d63d3da925009709cafd3e721af68bcc2e \
 sha256  3724c5f1f839e584e49154ee0ff137e6f3450eedbd7f3886f31d2093001cb04a \
 size    1719145
 
-python.default_version 37
+python.default_version 27
 
 post-patch {
     foreach f {duplicity rdiffdir} {

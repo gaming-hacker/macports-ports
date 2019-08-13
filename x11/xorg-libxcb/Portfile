@@ -4,7 +4,6 @@ PortSystem      1.0
 
 name            xorg-libxcb
 version         1.13.1
-revision        2
 categories      x11 devel
 license         X11
 maintainers     {jeremyhu @jeremyhu} openmaintainer
@@ -30,7 +29,8 @@ depends_lib     port:xorg-libXau \
                 port:xorg-xcb-proto \
                 port:xorg-libpthread-stubs
 
-configure.args  --disable-build-docs
+configure.args  --disable-devel-docs \
+                --disable-silent-rules
 
 variant docs description "Install extra documentation" {
     depends_build-append \
@@ -41,21 +41,39 @@ variant docs description "Install extra documentation" {
         doxygen
 
     configure.args-delete \
-        --disable-build-docs
+        --disable-devel-docs
 
     configure.args-append \
-        --enable-build-docs
+        --enable-devel-docs
 
     configure.env-append \
-        DOXYGEN="${prefix}/bin/doxygen"
+        DOXYGEN=${prefix}/bin/doxygen
 }
 
-variant python37 conflicts description {Use python 3.7} {
-    depends_run-append      port:python37
+# No need to use require_active_variants here. Technically, `xorg-libxcb +python37` builds fine
+# with `xorg-xcb-proto +python36` as the xcbgen module in xorg-xcb-proto is not located using
+# usual Python import mechanism. Instead, the path for xcbgen is recorded in
+# `$prefix/lib/pkgconfig/xcb-proto.pc` as the pythondir variable when building xorg-xcb-proto
+# and the build system of libxcb loads xcbgen using that pkg-config variable [1].
+#
+# [1] https://gitlab.freedesktop.org/xorg/lib/libxcb/blob/1.13.1/configure.ac#L85
+
+variant python35 conflicts python36 python37 description {Use python 3.5} {
+    depends_build-append    port:python35
+    configure.python        ${prefix}/bin/python3.5
+}
+
+variant python36 conflicts python35 python37 description {Use python 3.6} {
+    depends_build-append    port:python36
+    configure.python        ${prefix}/bin/python3.6
+}
+
+variant python37 conflicts python35 python36 description {Use python 3.7} {
+    depends_build-append    port:python37
     configure.python        ${prefix}/bin/python3.7
 }
 
-if {![variant_isset python37]} {
+if {![variant_isset python35] && ![variant_isset python36]} {
     default_variants +python37
 }
 

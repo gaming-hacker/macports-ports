@@ -1,34 +1,34 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem              1.0
+PortSystem          1.0
 
-name                    unrar
-set my_name             ${name}src
-version                 5.7.5
-categories              archivers
-platforms               darwin freebsd
-maintainers             nomaintainer
-license                 Restrictive/Distributable
+name                unrar
+set my_name         ${name}src
+version             5.7.5
+categories          archivers
+platforms           darwin freebsd
+maintainers         nomaintainer
+license             Restrictive/Distributable
 
-description             Extract, view & test RAR archives
+description         Extract, view & test RAR archives
 
-long_description        The unRAR utility is a minor part of the RAR archiver \
-                        and contains RAR uncompression algorithm. unRAR \
-                        requires very small volume of memory to operate.
+long_description    The unRAR utility is a minor part of the RAR archiver \
+                    and contains RAR uncompression algorithm. unRAR \
+                    requires very small volume of memory to operate.
 
-homepage                https://www.rarlab.com/
-master_sites            ${homepage}rar/
-distname                ${my_name}-${version}
+homepage            https://www.rarlab.com/
+master_sites        ${homepage}rar/
+distname            ${my_name}-${version}
 
 checksums           rmd160  b439021e5f3538a80d9c2351e6a8cff7231a95ca \
-                    sha256  e1c2fddaa87a88b1535bfc10ca484f3c5af4e5a55fbb933f8819e26203bbe2ee \
-                    size    228818
+sha256  e1c2fddaa87a88b1535bfc10ca484f3c5af4e5a55fbb933f8819e26203bbe2ee \
+size    228818
 
-patchfiles              patch-makefile.unix.diff
+patchfiles          patch-makefile.unix.diff
 
-worksrcdir              ${name}
+worksrcdir          ${name}
 
-use_configure           no
+use_configure       no
 
 variant universal {}
 
@@ -65,11 +65,11 @@ platform darwin {
 
 if {${name} == ${subport}} {
     installs_libs       no
-
+    
     destroot {
         xinstall ${worksrcpath}/${name} ${destroot}${prefix}/bin
     }
-
+    
     livecheck.type      regex
     livecheck.url       ${homepage}rar_add.htm
     livecheck.regex     ${my_name}-(\\d+(?:\\.\\d+)*)
@@ -80,16 +80,16 @@ if {${name} == ${subport}} {
 subport libunrar {
     description         unrar library
     long_description    ${description}
-
+    
     # Copied from standalone libunrar port. Why do we need these?
     configure.cxxflags-append -DSILENT
-
+    
     # The makefile adds -fPIC to the CXXFLAGS when building the library, but we
     # override the CXXFLAGS with our own, so we have to manually add this again.
     configure.cxxflags-append -fPIC
-
+    
     build.target        lib
-
+    
     destroot {
         xinstall -d ${destroot}${prefix}/include/unrar
         xinstall -m 644 ${worksrcpath}/dll.hpp ${destroot}${prefix}/include/unrar

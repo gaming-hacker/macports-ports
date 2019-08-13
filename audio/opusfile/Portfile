@@ -25,7 +25,7 @@ depends_lib         path:lib/libssl.dylib:openssl \
                     port:libogg \
                     port:libopus
 
-# patchfiles          patch-libressl.diff
+patchfiles          patch-libressl.diff
 configure.args      --disable-silent-rules
 
 livecheck.type      regex

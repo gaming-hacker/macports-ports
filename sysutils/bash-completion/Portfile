@@ -19,8 +19,8 @@ github.tarball_from releases
 use_xz yes
 
 checksums       rmd160  fc664ed3392570ed25150b4e8465fdce4effb243 \
-                sha256  d48fe378e731062f479c5f8802ffa9d3c40a275a19e6e0f6f6cc4b90fa12b2f5 \
-                size    305788
+sha256  d48fe378e731062f479c5f8802ffa9d3c40a275a19e6e0f6f6cc4b90fa12b2f5 \
+size    305788
 
 depends_run     port:bash
 
@@ -68,4 +68,3 @@ if {${os.platform} eq "darwin" && ${os.subplatform} eq "macosx"} {
         will be available.
     "
 }
-

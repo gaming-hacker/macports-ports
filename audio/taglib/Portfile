@@ -24,15 +24,11 @@ sha256  b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b
 
 depends_lib-append  port:zlib
 
-platform darwin 8 {
-    configure.ldflags-append -lz
-}
-
 cmake.out_of_source yes
 
 configure.args-append  ../${distname} \
                        -DWITH_ASF=On -DWITH_MP4=On -DBUILD_SHARED_LIBS=On
 
-# asf and mp4 are necessary for Amarok. 
+# asf and mp4 are necessary for Amarok.
 # Change to make them optional was reportedly political
 # http://lists.kde.org/?l=amarok&m=125338541922769&w=2

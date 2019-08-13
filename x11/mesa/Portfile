@@ -10,7 +10,7 @@ revision            1
 categories          x11 graphics
 maintainers         {jeremyhu @jeremyhu} openmaintainer
 license             MIT
-license_noconflict  py37-libxml2
+license_noconflict  py27-libxml2
 description         Mesa 3D Graphics Library
 long_description    Mesa is an open-source implementation of the OpenGL specification, a system for rendering interactive 3D graphics.
 
@@ -114,15 +114,15 @@ platform darwin {
 
 configure.cppflags-delete -I${prefix}/include
 
-variant python37 description {Use python 3.7} {
+variant python27 description {Use python 2.7} {
     depends_build-append \
-        port:py37-libxml2
+        port:py27-libxml2
     configure.env-append \
-        PYTHON2="${prefix}/bin/python3.7"
+        PYTHON2=${prefix}/bin/python2.7
 }
 
-if {![variant_isset python37]} {
-    default_variants-append +python37
+if {![variant_isset python27]} {
+    default_variants-append +python27
 }
 
 variant osmesa description {enable OSMesa library} {

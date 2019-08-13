@@ -23,7 +23,7 @@ if {$subport eq $name} {
     github.setup            saltstack salt ${version} v
     revision                1
 
-python.version 37
+    python.versions         27 34 35 36
     categories              sysutils python
 
     checksums           rmd160  ddb1cbf6f26890360cc06592bb4ba17decf4b772 \
@@ -32,11 +32,11 @@ sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
     notes    "Salt startupitems are installed by subports salt-minion, salt-master, salt-syndic, salt-api."
 
     if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36]} {
-        default_variants +python37
+        default_variants +python27
     }
 
-    variant python37 conflicts python34 python35 python36 description {python-2.7 support} {
-        python.default_version 37
+    variant python27 conflicts python34 python35 python36 description {python-2.7 support} {
+        python.default_version 27
         depends_build       port:py${python.version}-setuptools
 
         depends_lib-append  port:py${python.version}-yaml \
@@ -50,7 +50,7 @@ sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
         notes    "Salt startupitems are installed by subports salt-minion, salt-master, salt-syndic, salt-api."
     }
 
-    variant python34 conflicts python37 python35 python36 description {python-3.4 support} {
+    variant python34 conflicts python27 python35 python36 description {python-3.4 support} {
         python.default_version 34
         depends_build       port:py${python.version}-setuptools
 
@@ -63,7 +63,7 @@ sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
         destroot.cmd-append --with-salt-version=${version}
     }
 
-    variant python35 conflicts python37 python34 python36 description {python-3.5 support} {
+    variant python35 conflicts python27 python34 python36 description {python-3.5 support} {
         python.default_version 35
         depends_build       port:py${python.version}-setuptools
 
@@ -76,7 +76,7 @@ sha256  2698745b572541ccf2e2b1cec48c0c1646b6cad5f56d372a29c4a2a93655e592
         destroot.cmd-append --with-salt-version=${version}
     }
 
-    variant python36 conflicts python37 python34 python35 description {python-3.6 support} {
+    variant python36 conflicts python27 python34 python35 description {python-3.6 support} {
         python.default_version 36
         depends_build       port:py${python.version}-setuptools
 

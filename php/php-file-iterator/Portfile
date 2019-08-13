@@ -21,7 +21,7 @@ description             file iterator for PHP
 long_description \
     ${description}
 
-php.branches 7.3
+php.branches            5.3 5.4 5.5
 
 php.build_dirs
 

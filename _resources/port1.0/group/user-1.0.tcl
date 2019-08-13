@@ -5,7 +5,7 @@ set user.ver.gcc    9
 set user.ver.perl   5.28
 set user.ver.ruby   2.6
 set ruby.branch     ${user.ver.ruby}
-set user.ver.php    5.7
+set user.ver.php    7.3
 set user.py.dot     3.7
 set user.py.nodot   37
 set user.arch       x86_64

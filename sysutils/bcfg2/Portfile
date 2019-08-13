@@ -23,7 +23,7 @@ master_sites        ftp://ftp.mcs.anl.gov/pub/bcfg
 checksums           rmd160  c39f375ba20a5f457e3b2cd1b890a8baa877056c \
 sha256  0bb53c16b46ee5e27a7692c7c43b53876d25b1fe9354262a0271c70beaad5bb0
 
-python.default_version 37
+python.default_version  27
 
 patchfiles          patch-setup.py.diff
 

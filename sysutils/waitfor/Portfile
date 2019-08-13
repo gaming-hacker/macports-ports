@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name            waitfor
@@ -17,7 +18,7 @@ homepage        http://www.hennessynet.com/waitfor/
 master_sites    ${homepage}
 checksums       md5 9c8759e26e8f5cb2345443a6523dfca3
 
-depends_run     bin:python:python26
+depends_run     bin:python:python27
 
 use_configure   no
 

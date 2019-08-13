@@ -10,7 +10,7 @@ platforms           darwin
 maintainers         {khindenburg @kurthindenburg} openmaintainer
 license             Apache-2
 
-python.default_version 37
+python.default_version     27
 
 description         A binary plist parser
 long_description    ${description}

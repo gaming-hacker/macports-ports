@@ -5,8 +5,8 @@ PortGroup           perl5 1.0
 
 name                rpm
 version             4.4.9
-revision            20
-perl5.branches 5.26
+revision            21
+perl5.branches      5.28
 platforms           darwin freebsd linux
 license             GPL-2 LGPL-2
 categories          sysutils archivers
@@ -19,13 +19,13 @@ long_description    The RPM Package Manager (RPM) is a powerful command line dri
                     package consists of an archive of files along with information about \
                     the package like its version, a description, etc.
 
-homepage            http://rpm5.org
-master_sites        ${homepage}/files/${name}/${name}-4.4
+homepage            https://rpm.org
+master_sites        macports_distfiles:${name}
 checksums           rmd160  4abae3d8262a71eb3136c7817c5ae95bd8cd48e5 \
 sha256  1da0dd4fd6743db9a5cb89d04e2ee192130a7ac861d0344589c712f2faeb74fa
 
 depends_build       port:perl${perl5.major} \
-                    port:python37
+                    port:python27
 
 depends_lib         port:beecrypt \
                     port:gettext \
@@ -58,7 +58,7 @@ configure.libs-append \
                     -liconv
 
 configure.env       __PERL=${perl5.bin} \
-                    __PYTHON=${prefix}/bin/python3.7
+                    __PYTHON=${prefix}/bin/python2.7
                     
 
             # needed because it checks for sqlite3_open in sqlite lib...
@@ -119,7 +119,7 @@ platform darwin {
                     --with-glob
 
     configure.cppflags-append \
-                    -I${frameworks_dir}/Python.framework/Versions/3.7/include/python3.7
+                    -I${frameworks_dir}/Python.framework/Versions/2.7/include/python2.7
 
     post-destroot {
         # Mac OS X specific changes
@@ -158,6 +158,5 @@ variant docs description "API documentation" {
 }
 
 livecheck.type      regex
-# get the last modified tarball
-livecheck.url       ${master_sites}
-livecheck.regex     ${name}-(\[0-9\\.\]+)${extract.suffix}
+livecheck.url       ${homepage}/download.html
+livecheck.regex     "${name}-(\\d+(?:\\.\\d+)+)"

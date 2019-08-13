@@ -10,7 +10,7 @@ categories      php devel
 platforms       darwin
 maintainers     ryandesign openmaintainer
 
-php.branches 7.3
+php.branches    5.3 5.4
 php.pecl        yes
 php.pecl.prerelease yes
 
@@ -25,7 +25,7 @@ sha256  89d7324b164b739b53d5290c7ec99d8e05522e76db0885bda4b4a693113b4a28
 
 if {${name} != ${subport}} {
     use_parallel_build  yes
-
+    
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}
         xinstall -d ${destroot}${docdir}

@@ -5,13 +5,13 @@ PortGroup       php 1.1
 
 name            php-http
 version         1.7.6
-revision        1
+revision        3
 categories      php www
 platforms       darwin
 maintainers     ryandesign openmaintainer
 license         BSD
 
-php.branches 7.3
+php.branches    5.3 5.4 5.5
 php.pecl        yes
 php.pecl.name   pecl_http
 

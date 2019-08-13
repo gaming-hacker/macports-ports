@@ -3,11 +3,11 @@
 PortSystem          1.0
 
 name                terraform
-version             0.11.10
+version             0.12.6
 
 categories          sysutils
 license             MPL-2
-maintainers         {emcrisostomo @emcrisostomo} openmaintainer
+maintainers         {emcrisostomo @emcrisostomo} {gmail.com:herby.gillot @herbygillot} openmaintainer
 platforms           darwin
 supported_archs     x86_64
 
@@ -25,9 +25,9 @@ homepage            https://www.terraform.io/downloads.html
 master_sites        https://releases.hashicorp.com/${name}/${version}
 distname            ${name}_${version}_darwin_amd64
 
-checksums           rmd160 29f0a14deca6297d82c8c4286579a9310d9a5fe1 \
-sha256 cb5ae1fa5bed45d81d79d427cd1dd84ed7c04f712c72b420003e28f522a77a78 \
-size   22403955
+checksums           rmd160  cd316a519d73c758695a1a79a5ee15add7399b51 \
+sha256  7168dfa057d9aed7ea3f111d87294f263e341c8b848e776bc13d169ddf2926c7 \
+size    16806246
 
 use_configure       no
 use_zip             yes

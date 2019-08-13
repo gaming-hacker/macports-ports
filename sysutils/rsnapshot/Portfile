@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                rsnapshot
 version             1.4.2
 revision            1
-perl5.branches 5.26
+perl5.branches      5.26
 categories          sysutils net
 platforms           darwin
 maintainers         nomaintainer

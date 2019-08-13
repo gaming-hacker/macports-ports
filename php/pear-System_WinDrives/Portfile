@@ -12,4 +12,4 @@ description         PEAR System_WinDrives package
 long_description    ${description}
 
 checksums           rmd160  f12f770b8908cb6bca7b5e82a2a5c3b8c74fc3cd \
-sha256  e2f262156107ef5.62bd3927dc8a81c07d23ca272f4e8359cedb8ebcd541899
+sha256  e2f262156107ef55762bd3927dc8a81c07d23ca272f4e8359cedb8ebcd541899

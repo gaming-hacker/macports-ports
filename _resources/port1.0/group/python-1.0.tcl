@@ -278,7 +278,7 @@ proc python_get_defaults {var} {
                 return "${python.prefix}"
         }
         link_binaries {
-                return no
+                return yes
         }
         move_binaries {
               return no

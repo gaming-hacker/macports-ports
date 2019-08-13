@@ -7,9 +7,8 @@
 # perl5.default_branch: the branch used when you request p5-foo
 # perl5.use_search_cpan_org: if true use search.cpan.org instead of
 #    metacpan.org for livecheck and homepage. Default: false.
-options perl5.default_branch perl5.branches perl5.use_search_cpan_org
+options perl5.default_branch perl5.branches
 default perl5.default_branch {[perl5_get_default_branch]}
-default perl5.use_search_cpan_org {false}
 
 proc perl5_get_default_branch {} {
     global prefix perl5.branches

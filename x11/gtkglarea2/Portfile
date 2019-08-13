@@ -38,5 +38,6 @@ require_active_variants gtk2 x11
 configure.args          --with-GL-prefix=${prefix} \
                         --with-lib-GL
 
+
 livecheck.type          gnome-with-unstable
 livecheck.name          ${gname}

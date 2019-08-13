@@ -71,6 +71,7 @@ post-destroot {
         ${destroot}${prefix}/share/doc/${name}/lirc
 }
 
+
 startupitem.create  yes
 startupitem.executable ${prefix}/bin/igdaemon --no-daemon --driver-dir=${prefix}/lib/iguanaIR
 

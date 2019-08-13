@@ -12,7 +12,7 @@ platforms           darwin freebsd openbsd
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             GPL-2+
 
-php.branches 7.3
+php.branches        5.3
 
 description         php5 extension for PHP acceleration, optimization, and \
                     dynamic content caching

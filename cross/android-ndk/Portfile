@@ -3,34 +3,31 @@
 PortSystem          1.0
 
 name                android-ndk
-version             r16b
-
-categories          java cross devel
+version             9d
+categories          cross devel
 maintainers         nomaintainer
-license		    Apache-2
 platforms           darwin
 description         Android NDK
-long_description  ${description} allows native development \
-                  for the Android mobile platform.
-supported_archs	    noarch
+long_description \
+    The Android NDK allows native development for the Android mobile platform.
 
-set prog    ${name}-${version}-darwin-x86.zip
+set prog            ${name}-r${version}-darwin-x86.tar.bz2
 
-homepage	    https://developer.android.com/
-master_sites	https://dl.google.com/android/repository
+homepage            https://developer.android.com/tools/sdk/ndk
+master_sites        https://dl.google.com/android/ndk
+use_bzip2           yes
+extract.mkdir       no
 
-use_zip           yes
-extract.mkdir     no
+distfiles           ${prog}:prog
+distname            android-ndk-macosx
+worksrcdir          android-ndk-r${version}
 
-distname            ${name}-${version}-darwin-x86_64
-worksrcdir          android-ndk-${version}
-
-checksums rmd160  295b861433bd6e9980cf441d718643c19147c173 \
-sha256  9654a692ed97713e35154bfcacb0028fdc368128d636326f9644ed83eec5d88b \
-size 839630771
+checksums           ${prog} \
+rmd160  c9bdb257758266cc309fc1a2bc0cc024b57eb7dd \
+sha256  82ee78e79fb049f099dcee6680e229339f4c5507308d67c9e145e0964d0b40af
 
 use_configure       no
-build.cmd           true
+build {}
 
 destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/java
@@ -44,11 +41,4 @@ destroot {
 
 notes "
 ${distname} has been made group _developer writable
-set ANDROID_NDK to ${prefix}/share/java/android-ndk-${version}-darwin-x86_64??
 "
-# declare +devel variant
-variant devel description {beta version } {
-version     r17-beta1
-checksums sha1 883d7d1be3007637de7f2f2cb1f1bb66193d89e0 \
-size 679061122
-}

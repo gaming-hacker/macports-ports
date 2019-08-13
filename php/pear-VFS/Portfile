@@ -13,6 +13,6 @@ description         PEAR VFS package
 long_description    ${description}
 
 checksums           rmd160  ab5158ea8b5f0e860e0376dccdceb7c00f9a1817 \
-sha256  914ad5.6583ffd325de529acf9bc8931835f9d60f9d8162fdcea673f95d1670
+sha256  914ad55c6583ffd325de529acf9bc8931835f9d60f9d8162fdcea673f95d1670
 
 depends_lib-append  port:pear-Log

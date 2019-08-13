@@ -20,10 +20,10 @@ long_description \
 checksums           rmd160  41da918b12b7d3ef9ae7cbee6e07ec653458771b \
 sha256  5ef527543ec8a6060da93aa4efcdeb360564242495d0a6e15fcbde071fa5decc
 
-depends_run-append  path:bin/ansible:py37-ansible
+depends_run-append  path:bin/ansible:py27-ansible
 
-python.version 37
-python.default_version 37
+python.versions             27
+python.default_version      27
 python.link_binaries_suffix
 
 github.livecheck.regex  {([^"r-]+)}

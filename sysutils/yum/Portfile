@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name		yum
@@ -25,8 +26,8 @@ rmd160 ab885fc93875925ae57ceabc8731357221d1fae3
 
 patchfiles	patch-prefix.diff patch-sqlutils.py patch-packages.py
 
-depends_lib	path:lib/python3.7/site-packages/rpm/__init__.py:rpm port:python37 port:py37-urlgrabber port:py37-libxml2 port:py37-yum-metadata-parser port:py37-iniparse port:py37-pygpgme
-depends_build	port:intltool port:py37-nose
+depends_lib	path:lib/python2.7/site-packages/rpm/__init__.py:rpm port:python27 port:py27-urlgrabber port:py27-libxml2 port:py27-yum-metadata-parser port:py27-iniparse port:py27-pygpgme
+depends_build	port:intltool port:py27-nose
 
 set python.bin  ""
 

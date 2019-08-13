@@ -28,7 +28,7 @@ long_description \
     as well as the functionality to easily run the tests and analyse \
     their results.
 
-php.branches 7.3
+php.branches            5.3 5.4 5.5
 
 php.build_dirs
 

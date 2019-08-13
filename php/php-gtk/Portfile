@@ -12,7 +12,7 @@ license             LGPL-2.1+
 homepage            http://gtk.php.net/
 platforms           darwin freebsd
 
-php.branches 7.3
+php.branches        5.3 5.4
 
 description         PHP-GTK: Gtk+ bindings for PHP 5.
 

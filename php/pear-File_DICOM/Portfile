@@ -12,4 +12,4 @@ description         PEAR File_DICOM package
 long_description    ${description}
 
 checksums           rmd160  5dac2b38eb0a01aa0239eb98f1f0ec5a3ef12b84 \
-sha256  82c65.6ce9fbf5e58e7cfecbc71f59450e74e0b11f73bc884ba271b77d69181
+sha256  82c65516ce9fbf5e58e7cfecbc71f59450e74e0b11f73bc884ba271b77d69181

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name            apparix
@@ -19,3 +20,5 @@ sha1 0f59c16a8bdc9b9ad7ec2b75e07645cd9ef1eb9e \
 rmd160 d79ee7a0982301872ecc11d5ac0ed2a217812e57
 
 configure.args  --mandir=${prefix}/share/man
+
+livecheck.regex ${name}-(\\d+-\\d+)${extract.suffix}

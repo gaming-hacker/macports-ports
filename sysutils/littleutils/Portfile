@@ -3,8 +3,8 @@
 PortSystem          1.0
 
 name                littleutils
-version             1.0.39
-revision            2
+version             1.0.42
+revision            0
 categories          sysutils
 maintainers         {mps @Schamschula} openmaintainer
 platforms           darwin
@@ -24,13 +24,13 @@ homepage            https://sourceforge.net/projects/littleutils/
 master_sites        sourceforge:project/littleutils/littleutils-source/${version}/
 use_xz              yes
 
-checksums           rmd160  3a0cc022342c02463ef0b23fa0d083ac0694266e \
-sha256  c24185a0752140f38b1c295bfad3f038fbeda2f1643cd83d7496130cc3a03160 \
-size    181344
+checksums           rmd160  d3af0cde44b41a70dd0a3d440aecc71b78143d90 \
+sha256  cd946e42e3cac80fe529dee81d80878fa1e75d22034ce972f71907fa287f0ea7 \
+size    188892
 
 depends_lib         port:bash \
                     port:perl5 \
-                    port:python37 \
+                    port:python27 \
                     port:gettext \
                     port:gifsicle \
                     port:pngcrush \
@@ -44,6 +44,6 @@ depends_lib         port:bash \
                     port:p7zip \
                     port:xz
 
-configure.env       PROGPYTHON=${prefix}/bin/python3.7
+configure.env       PROGPYTHON=${prefix}/bin/python2.7
 
 livecheck.regex     /${name}-(\[0-9.\]+)${extract.suffix}

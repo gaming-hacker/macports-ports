@@ -23,5 +23,5 @@ size    84139
 use_bzip2	yes
 
 livecheck.type  regex
-livecheck.url   http://xorg.freedesktop.org/archive/individual/util/?C=M&O=D
+livecheck.url   https://xorg.freedesktop.org/archive/individual/util/?C=M&O=D
 livecheck.regex util-macros-(\\d+(?:\\.\\d+)*)

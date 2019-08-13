@@ -6,11 +6,32 @@ name                pear-install-phar
 version             20170831
 categories          php www
 platforms           darwin
-maintainers         {pixilla @pixilla} openmaintainer
+maintainers         nomaintainer
 homepage            http://pear.php.net
 master_sites        http://pear.php.net
 
 subport php5-pear {}
+
+subport php53-pear {
+
+    set php.port        [lindex [split $subport -] 0]
+    set php.db          /var/db/${php.port}
+    depends_lib         port:${php.port}
+}
+
+subport php54-pear {
+
+    set php.port        [lindex [split $subport -] 0]
+    set php.db          /var/db/${php.port}
+    depends_lib         port:${php.port}
+}
+
+subport php55-pear {
+
+    set php.port        [lindex [split $subport -] 0]
+    set php.db          /var/db/${php.port}
+    depends_lib         port:${php.port}
+}
 
 subport php56-pear {
 
@@ -19,7 +40,14 @@ subport php56-pear {
     depends_lib         port:${php.port}
 }
 
-subport php72-pear {
+subport php70-pear {
+
+    set php.port        [lindex [split $subport -] 0]
+    set php.db          /var/db/${php.port}
+    depends_lib         port:${php.port}
+}
+
+subport php71-pear {
 
     set php.port        [lindex [split $subport -] 0]
     set php.db          /var/db/${php.port}

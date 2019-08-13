@@ -11,7 +11,7 @@ maintainers         nomaintainer
 description         PEAR XML_FOAF package
 long_description    ${description}
 
-checksums           rmd160  68415333c7051568d6a8d5964552a40ba35.6b8 \
+checksums           rmd160  68415333c7051568d6a8d5964552a40ba355c6b8 \
 sha256  744c242d1ca278c5dd1a384c4016ca11796d161bcf5f84e425df79c91a479589
 
 depends_lib-append  port:pear-RDF \
