@@ -26,7 +26,7 @@
 #   instance of wxWidgets was made available for cases when wxPython
 #   releases lag behind the wxWidgets releases.
 #   You should only use this option for ports that need both wxPython
-#   (usually py37-wxpython) as well as require linking of C++ code against
+#   (usually py27-wxpython) as well as require linking of C++ code against
 #   wxWidgets via the usual ./configure && make. Using 'wxPython-3.0'
 #   avoids any version mismatches between wxPython and wxWidgets.
 #

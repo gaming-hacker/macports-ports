@@ -9,7 +9,7 @@ revision        2
 categories-append   net
 license         BSD ZPL-2
 platforms       darwin
-maintainers     {blair @blair} openmaintainer
+maintainers     nomaintainer
 description     SOAP library for Python
 long_description \
     The goal of the SOAPpy team is to provide a full-featured SOAP \
@@ -24,7 +24,7 @@ sha256 42c8cb3e42b439bc36b6ba3f090ddb72a214ca9264a2babf102c98731dea8e6a
 
 patchfiles      patch-remove-import-of-nested-scopes-from-future.diff
 
-python.version 37
+python.versions 27
 
 if {${name} ne ${subport}} {
     depends_lib-append    port:py${python.version}-fpconst

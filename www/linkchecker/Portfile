@@ -26,13 +26,13 @@ checksums           rmd160  0d9a4969fdfac4ee45412c08c28718d5fba01387 \
 sha256  561122d58c5a8951456e1cc91028b4b1be309df44dc8a7e3604c6c9ba7d47db2 \
 size    489926
 
-python.default_version 37
+python.default_version  27
 
-depends_build-append    port:py37-setuptools
+depends_build-append    port:py27-setuptools
 
-depends_lib-append  port:py37-dnspython \
-                    port:py37-requests \
-                    port:py37-xdg
+depends_lib-append  port:py27-dnspython \
+                    port:py27-requests \
+                    port:py27-xdg
 
 # A few tests fail to missing python modules
 depends_test-append port:py${python.version}-py \

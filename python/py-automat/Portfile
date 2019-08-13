@@ -19,7 +19,7 @@ size    61461
 
 master_sites        pypi:A/${github.project}
 
-python.version 37
+python.versions 27 34 35 36 37
 
 if {${name} ne ${subport}} {
 

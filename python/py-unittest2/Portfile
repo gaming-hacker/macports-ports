@@ -8,12 +8,12 @@ version             1.1.0
 license             PSF
 maintainers         {aronnax @lpsinger} openmaintainer
 # do not add subports for python > 3.4
-python.version 37
+python.versions     27 34
 
 description         New features in the unittest library
 
 long_description    unittest2 is a backport of the new features added to the unittest \
-                    testing framework in Python 3.7 and onwards. \
+                    testing framework in Python 2.7 and onwards. \
                     It is tested to run on Python 2.6, 2.7, 3.2, 3.3, 3.4 and pypy. \
                     To use unittest2 instead of unittest simply replace import unittest with \
                     import unittest2.

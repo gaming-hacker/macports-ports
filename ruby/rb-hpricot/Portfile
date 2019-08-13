@@ -1,14 +1,19 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem          1.0
-PortGroup           ruby 1.0
-#PortGroup user 1.0
+PortSystem	1.0
+PortGroup			ruby 1.0
 
-ruby.setup			hpricot 0.8.6 gem {} rubygems
-license             MIT
-maintainers         nomaintainer
-homepage            https://github.com/hpricot/hpricot
+ruby.setup			hpricot 0.6.161 gem {} rubygems
+license				MIT
+maintainers			nomaintainer
+description			a swift, liberal HTML parser with a fantastic library
+long_description	${description}
+checksums			md5 a0c60f8ca593454cbedb04733427604c \
+sha1 f64fdd6897194ad2af8658d085bccf7a23eb4895 \
+rmd160 3aff8666bf590630ef477152cdd2a8ce4408642c
+homepage			http://code.whytheluckystiff.net/hpricot/
 platforms           darwin
-checksums           rmd160  782464d9532ca5008f2e9a1732d9812230069330 \
-                    sha256  dfe8f4b3414ba8377d7626030f3aa605caadee9de87cffbeadf8a50359eac8ca
 
+livecheck.type	regex
+livecheck.regex	"<b>${ruby.module}-(.*)</b>"
+livecheck.url	http://gentoo-portage.com/dev-ruby/${ruby.module}

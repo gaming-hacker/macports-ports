@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-partd
-version             0.3.9
+version             1.0.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  0edd127a519d7b91594763109b92acb5c8b07585 \
-sha256  1fd6d9c12f14ea180e659a9e4a686ff2816dd930e8fb0b84c0d8116a29cfe66b \
-size    19312
+checksums           rmd160  a72b3166f4fc09ade82a1fd530ea8b8224dd307e \
+sha256  54fd91bc3b9c38159c790cd16950dbca6b019a2ead4c51dee4f9efc884f8ce0e \
+size    19185
 
 if {${name} ne ${subport}} {
     depends_build-append \

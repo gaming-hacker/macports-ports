@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup user 1.0
 
 github.setup        facebook zstd 1.3.7 v
 
@@ -27,7 +26,7 @@ depends_lib         port:lz4 \
                     port:xz \
                     port:zlib
 
-#patchfiles          patch-zstd-tiger-no-backtrace.diff
+patchfiles          patch-zstd-tiger-no-backtrace.diff
 
 post-patch {
     reinplace -W ${worksrcpath} "s/-Wvla //g" lib/Makefile programs/Makefile tests/Makefile tests/fuzz/Makefile
@@ -39,12 +38,21 @@ variant universal {}
 
 build.target        allmost
 
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env-append    CC=${configure.cc} \
+                    "CFLAGS=${configure.cflags} [get_canonical_archflags cc]" \
+                    CXX=${configure.cxx} \
+                    "CXXFLAGS=${configure.cxxflags} [get_canonical_archflags cxx]" \
+                    "LDFLAGS=${configure.ldflags} [get_canonical_archflags ld]" \
+                    PREFIX=${prefix}
+} else {
 build.env-append    CC="${configure.cc}" \
-  CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \
-  CXX="${configure.cxx}" \
-  CXXFLAGS="${configure.cxxflags} [get_canonical_archflags cxx]" \
-  LDFLAGS="${configure.ldflags} [get_canonical_archflags ld]" \
-  PREFIX="${prefix}"
+                    CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \
+                    CXX="${configure.cxx}" \
+                    CXXFLAGS="${configure.cxxflags} [get_canonical_archflags cxx]" \
+                    LDFLAGS="${configure.ldflags} [get_canonical_archflags ld]" \
+                    PREFIX="${prefix}"
+}
 
 test.run            yes
 test.env-append     {*}${build.env}

@@ -1,6 +1,8 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
-PortSystem	1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
 PortGroup python    1.0
+PortGroup           deprecated 1.0
 
 name                py-pythonutils
 version             0.4.0
@@ -33,4 +35,7 @@ sha1    5787587366b0cd80a94003d8ab19df37308c499b \
 rmd160  de19e74217a9c278f99447b05436afe1f99b1d03
 use_zip             yes
 
-python.version 37
+python.versions     27
+
+deprecated.upstream_support no
+livecheck.type      none

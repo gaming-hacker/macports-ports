@@ -3,7 +3,6 @@
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           compilers 1.0
-PortGroup user 1.0
 
 name                py-usadel1
 version             0.2.4
@@ -27,14 +26,15 @@ distname            usadel1-${version}
 checksums           rmd160  a520258f5171002af6806ddc39672a60362d3082 \
 sha256  13a15231627ab2bcb86b4e85540979af1c12adb9265b3b0169c5a848f0761c4d
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
-    depends_lib-append  port:py${user.ver.py}-numpy \
-                        port:py${user.ver.py}-scipy \
-                        port:py${user.ver.py}-tables
+    depends_lib-append  port:py${python.version}-numpy \
+                        port:py${python.version}-scipy \
+                        port:py${python.version}-tables
 
     python.add_archflags no
+    universal_variant no
 
     compilers.choose    fc f77 f90
     compilers.setup     require_fortran

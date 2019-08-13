@@ -10,7 +10,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.default_version 37
+python.default_version 27
 
 maintainers         nomaintainer
 

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name                redland-bindings
@@ -21,7 +22,7 @@ rmd160  0f4ac6f67fd2ddfa842dc82c52e5c380d9fc95d3
 depends_lib         port:redland
 
 pre-configure {
-    if {![variant_isset perl5] && ![variant_isset php5] && ![variant_isset python26] && ![variant_isset python37] && ![variant_isset ruby] && ![variant_isset tcl] && ![variant_isset lua]} {
+    if {![variant_isset perl5] && ![variant_isset php5] && ![variant_isset python26] && ![variant_isset python27] && ![variant_isset ruby] && ![variant_isset tcl] && ![variant_isset lua]} {
         ui_error "You must select at least one variant."
         return -code error "no variant selected"
     }
@@ -47,14 +48,14 @@ variant php5 {
 	depends_lib-append path:bin/php:php5
 }
 
-variant python26 conflicts python37 {
+variant python26 conflicts python27 {
 	configure.args-append --with-python --with-python-ldflags="-Wl,-F. -Wl,-F. -bundle ${frameworks_dir}/Python.framework/Versions/2.6/Python"
 	depends_lib-append port:python26
 }
 
-variant python37 conflicts python26 {
-	configure.args-append --with-python --with-python-ldflags="-Wl,-F. -Wl,-F. -bundle ${frameworks_dir}/Python.framework/Versions/3.7/Python"
-	depends_lib-append port:python37
+variant python27 conflicts python26 {
+	configure.args-append --with-python --with-python-ldflags="-Wl,-F. -Wl,-F. -bundle ${frameworks_dir}/Python.framework/Versions/2.7/Python"
+	depends_lib-append port:python27
 }
 
 variant ruby {

@@ -2,12 +2,11 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                py-abjad
 set real_name       Abjad
 version             1.1.1
+python.versions     27
 categories-append   textproc
 license             GPL-3
 maintainers         nomaintainer

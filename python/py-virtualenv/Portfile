@@ -5,11 +5,12 @@ PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-virtualenv
-version             16.1.0
+version             16.7.2
+revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
-maintainers         {larryv @larryv}
+maintainers         {larryv @larryv} openmaintainer
 supported_archs     noarch
 
 description         Virtual Python Environment builder
@@ -19,18 +20,18 @@ homepage            https://virtualenv.pypa.io
 
 master_sites        pypi:v/${python.rootname}
 distname            ${python.rootname}-${version}
-checksums           rmd160  17ea55a18a04ef155b74a062048bf6edf8e53155 \
-sha256  f899fafcd92e1150f40c8215328be38ff24b519cd95357fa6e78e006c7638208 \
-size    1977229
+checksums           rmd160  b41c0a14854bca3a0b64aecca22b04f541f02912 \
+sha256  909fe0d3f7c9151b2df0a2cb53e55bdb7b0d61469353ff7a49fd47b0f0ab9285 \
+size    5111318
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools
 
     depends_test-append port:py${python.version}-pytest \
                         port:py${python.version}-mock
-    test.run            yes
+    test.run            no
     test.cmd            py.test-${python.branch}
     test.target
     test.env            PYTHONPATH=${worksrcpath}/build/lib
@@ -42,9 +43,13 @@ if {${name} ne ${subport}} {
 
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}
-        xinstall -m 755 -d ${destroot}${docdir}
-        xinstall -m 644 {*}[glob -directory ${worksrcpath}/docs *] \
-                ${destroot}${docdir}
+        xinstall -m 0755 -d ${destroot}${docdir}/docs/changelog
+        xinstall -m 0644 -W ${worksrcpath} README.rst LICENSE.txt AUTHORS.txt \
+            ${destroot}${docdir}
+        xinstall -m 0644 {*}[glob -directory ${worksrcpath}/docs *.rst] \
+                ${destroot}${docdir}/docs
+        xinstall -m 0644 {*}[glob -directory ${worksrcpath}/docs/changelog *] \
+                ${destroot}${docdir}/docs/changelog
     }
 
     notes "

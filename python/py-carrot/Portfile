@@ -10,5 +10,5 @@ revision            1
 categories-append   python devel
 license             BSD
 
-subport py26-carrot "replaced_by py37-kombu"
+subport py26-carrot "replaced_by py27-kombu"
 # remove after August 18, 2019

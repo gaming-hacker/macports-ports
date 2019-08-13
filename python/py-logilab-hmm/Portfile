@@ -28,7 +28,7 @@ sha256  62f51ea6c7b374cebdc3747b391d314336255cc48b0d2413722400f1d200a1ca \
 size    32856
 
 compilers.setup     require_fortran
-python.version 37
+python.versions     27
 
 if {${subport} ne ${name}} {
     depends_lib-append      port:py${python.version}-logilab-common \

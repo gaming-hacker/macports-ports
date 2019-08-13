@@ -22,7 +22,7 @@ checksums             rmd160  b4bd7bae346c5ae187dfbad646d0c1f9087d70ae \
 sha256  22d884aad87e585ce5f3b4a6d33442e3a855162f27e48358c7c93af1b5f2fc87
 
 depends_build         port:pkgconfig \
-                      port:py37-docutils
+                      port:py27-docutils
 
 depends_lib           port:pcre
 

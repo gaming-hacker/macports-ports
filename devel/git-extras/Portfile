@@ -16,9 +16,8 @@ long_description        \
 license                 MIT
 
 checksums           rmd160  4db698a7286afd0217b274803acbaa255e47899b \
-                    sha256  fd8ecd6305c44054b824c426941c4179331c8e599ee294651a0b873ee4195865 \
-                    size    137080
-
+sha256  fd8ecd6305c44054b824c426941c4179331c8e599ee294651a0b873ee4195865 \
+size    137080
 
 use_configure           no
 

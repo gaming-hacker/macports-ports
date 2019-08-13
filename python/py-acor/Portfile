@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                py-acor
 version             1.1.1
@@ -24,6 +22,8 @@ license             MIT
 checksums           md5     8681b949f50e0f9a02bfbd15f7a3d56c \
 rmd160  d6e0c55e4db74b45e2ed632a0a553851ef6fe017 \
 sha256  4c647d30326004cfcfbcf630e97586ce574954e36bebf75b657d33d5d79e94e3
+
+python.versions     27 34 35 36
 
 if {${name} eq ${subport}} {
     livecheck.type  pypi

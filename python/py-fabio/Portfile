@@ -28,7 +28,7 @@ sha256  477fd1fb2325da12f09fe9d59ebab2d010e94908f6a48b4ff3dc755b21e5aeea
 
 universal_variant   no
 
-python.version 37
+python.versions     27 34 35 36
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy

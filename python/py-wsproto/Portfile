@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-wsproto
-version             0.12.0
+version             0.14.0
 
 categories-append   net www
 platforms           darwin
 supported_archs     noarch
 license             MIT
 
-maintainers         {yan12125 @yan12125} openmaintainer
+maintainers         nomaintainer
 
 description         WebSockets state-machine based protocol implementation
 long_description    ${description}
@@ -21,11 +21,11 @@ homepage            https://github.com/python-hyper/wsproto
 distname            ${python.rootname}-${version}
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}/
 
-checksums           rmd160  3b37bd2e2874347c543c82038564ce714dd01bbc \
-sha256  1fcb726d448f1b9bcbea884e26621af5ddd01d2d502941a024f4c727828b6009 \
-size    45252
+checksums           rmd160  525936c256da69977097490353c2feaf18978285 \
+sha256  55c3da870460e8838b2fbe4d10f3accc0cea3a13d5e8dbbdc6da5d537d6d44dc \
+size    51540
 
-python.version 37
+python.versions     37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

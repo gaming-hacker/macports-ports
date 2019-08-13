@@ -23,7 +23,7 @@ long_description    This recode program has the purpose of converting files \
 
 github.tarball_from releases
 
-depends_test        port:py37-cython
+depends_test        port:py27-cython
 
 depends_lib         port:gettext \
                     port:libiconv
@@ -49,5 +49,5 @@ test.run            yes
 test.target         check
 test.env            CC=${configure.cc} \
                     DYLD_LIBRARY_PATH=${worksrcpath}/src/.libs \
-                    PATH=${frameworks_dir}/Python.framework/Versions/3.7/bin:$env(PATH)
-test.args           PYTHON=${prefix}/bin/python3.7
+                    PATH=${frameworks_dir}/Python.framework/Versions/2.7/bin:$env(PATH)
+test.args           PYTHON=${prefix}/bin/python2.7

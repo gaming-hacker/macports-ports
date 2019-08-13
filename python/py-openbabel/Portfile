@@ -31,7 +31,7 @@ dist_subdir         openbabel
 checksums           rmd160  317c15ebbe7f2f86c5ec7d54230487853545cfc4 \
 sha256  204136582cdfe51d792000b20202de8950218d617fd9c6e18cee36706a376dfc
 
-python.version 37
+python.versions     27
 
 worksrcdir          ${distname}/scripts/python
 

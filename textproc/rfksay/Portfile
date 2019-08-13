@@ -1,11 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 name		rfksay
 version		0.1
 distname	${name}
 categories	textproc amusements
 platforms	darwin freebsd
-maintainers	{freebsdcluster.org:mich @michbsd}
+maintainers	nomaintainer
 description	Generates a kitten finding robot with a text bubble
 long_description    ${description}
 homepage    	http://freebsdcluster.org/~mich/software/

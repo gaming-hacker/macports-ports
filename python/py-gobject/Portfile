@@ -13,7 +13,7 @@ categories-append   gnome
 license         LGPL-2.1+
 maintainers     nomaintainer
 platforms       darwin
-python.version 37
+python.versions	27 34 35 36 37
 
 description     Python bindings for GObject.
 
@@ -44,7 +44,7 @@ if {$subport ne $name} {
 
     use_configure			yes
     configure.python        ${python.bin}
-    configure.env-append    PKG_CONFIG_PATH='${python.prefix}/lib/pkgconfig'
+    configure.env-append    PKG_CONFIG_PATH=${python.prefix}/lib/pkgconfig
     configure.pre_args      --prefix='${python.prefix}'
     configure.args-append	--disable-glibtest \
                             --enable-introspection=no

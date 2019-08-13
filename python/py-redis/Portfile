@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-redis
-version             3.0.1
+version             3.3.6
 revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  b490c4e670f7a45344fcf6ef586ed10467e9b9e0 \
-sha256  2100750629beff143b6a200a2ea8e719fcf26420adabb81402895e144c5083cf \
-size    115949
+checksums           rmd160  9d2c05b57c80a68bcadeebfeaa0a8b523892f7f0 \
+sha256  f2609a85e5f37f489ba3b5652e1175dc3711c4d7a7818c4f657615810afd23df \
+size    130038
 
 if {${name} ne ${subport}} {
     depends_build-append \

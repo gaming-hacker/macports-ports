@@ -6,9 +6,9 @@ PortGroup       github 1.0
 PortGroup       cxx11 1.1
 
 name            py-protobuf3
-version         3.6.1
+version         3.9.1
 categories-append   devel
-maintainers     nomaintainer
+maintainers     {toby @tobypeterson} openmaintainer
 license         BSD
 description     Encode data in an efficient yet extensible format.
 
@@ -36,26 +36,28 @@ master_sites    https://github.com/google/protobuf/releases/download/v${version}
 distfiles       protobuf-python-${version}.tar.gz
 worksrcdir      protobuf-${version}
 
-checksums       sha256  40f009cb0c190816a52fc21d45c26558ee7d63c3bd511b326bd85739b2fd99a6 \
-rmd160  ee9f8344a688f636cee409227b36a5161fa88c44 \
-size    4748789
+checksums       sha256  d07934c7e78d424e5f0f2182c2f3bed47214481005b9614a7480d6aaac97e7ef \
+rmd160  e25c28d0b2d2cd6e66557111da0ced3563a07785 \
+size    4874011
 
 platforms       darwin
 
-python.version 37
+python.versions 27 35 36 37
 
 if {${name} ne ${subport}} {
-    depends_build   port:py${python.version}-setuptools \
-                    port:py${python.version}-absl
+    conflicts       py${python.version}-protobuf
 
-    depends_lib     port:protobuf3-cpp
+    depends_build   port:py${python.version}-setuptools
+
+    depends_lib     port:protobuf3-cpp \
+                    port:py${python.version}-six
 
     worksrcdir      ${worksrcdir}/python
     
     # tricks to force the right -stdlib setting
     # and to put a needed CXX flag on the 10.6 build
     # see https://trac.macports.org/ticket/56482
-    patchfiles-append patch-py-protobuf3-settings.diff py37.diff
+    patchfiles-append patch-py-protobuf3-settings.diff
 
     post-patch {
         set extraargs ""
@@ -79,4 +81,8 @@ if {${name} ne ${subport}} {
     test.run        yes
     test.cmd        "${python.bin} setup.py"
     test.target     test --cpp_implementation
+
+    livecheck.type  none
 }
+
+github.livecheck.regex  {([0-9.]+)}

@@ -5,8 +5,6 @@
 #   subport will be created for each. e.g. p5.12-foo, p5.10-foo, ...
 # perl5.branches must be set in the portfile
 # perl5.default_branch: the branch used when you request p5-foo
-# perl5.use_search_cpan_org: if true use search.cpan.org instead of
-#    metacpan.org for livecheck and homepage. Default: false.
 options perl5.default_branch perl5.branches
 default perl5.default_branch {[perl5_get_default_branch]}
 
@@ -20,10 +18,9 @@ proc perl5_get_default_branch {} {
     }
     # if the above default is not supported by this module, use the latest it does support
     if {[info exists perl5.branches] && $ret ni ${perl5.branches}} {
-#         set ret [lindex ${perl5.branches} end]
-        set ret 5.28
+        set ret [lindex ${perl5.branches} end]
     }
-    return $ret
+    return 5.28
 }
 
 proc perl5.extract_config {var {default ""}} {
@@ -158,7 +155,7 @@ proc perl5.setup {module vers {cpandir ""}} {
     version             [perl5_convert_version ${perl5.moduleversion}]
     categories          perl
 
-    homepage    https://metacpan.org/pod/[string map {"-" "::"} ${perl5.module}]
+    homepage            https://metacpan.org/pod/[string map {"-" "::"} ${perl5.module}]
 
     master_sites        perl_cpan:${perl5.cpandir}
     distname            ${perl5.module}-${perl5.moduleversion}

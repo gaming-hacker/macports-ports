@@ -10,7 +10,7 @@ categories-append   security
 platforms           darwin
 license             LGPL
 
-python.version 37
+python.versions     27
 
 maintainers         {stromnov @stromnov} openmaintainer
 

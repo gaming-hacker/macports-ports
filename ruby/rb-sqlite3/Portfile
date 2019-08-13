@@ -1,23 +1,24 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		ruby 1.0
 PortGroup		github 1.0
-PortGroup user 1.0
 
-# github.setup    sparklemotion sqlite3-ruby 1_3_13 v
-ruby.setup		{sqlite3 sqlite3-ruby} 1.3.13 setup.rb
+github.setup    sparklemotion sqlite3-ruby 1_2_5 v
+ruby.setup		{sqlite3 sqlite3-ruby} 1.2.5 setup.rb \
+				{README.txt LICENSE}
 maintainers		nomaintainer
-homepage      http://rubygems.org
-master_sites  http://rubygems.org/gems/sqlite3/versions/1.3.13
 description		Interface to the SQLite3 DB engine from Ruby
 long_description	This module allows Ruby programs to interface with \
-					the SQLite3 database engine (http://www.sqlite.org). \
+					the SQLite3 database engine (https://www.sqlite.org). \
 					You must have the SQLite engine installed in order \
 					to build this module. \
 					Note that this module is NOT compatible with SQLite 2.x.
 categories-append	databases
 license			BSD
 checksums           md5     156825c666f720f2b82216796c059394 \
-sha256  b138a22e0dbbb69be08540671dabf602599437e389a54054bb177f6ed1fd2e06
+sha1    f24827aa867add89bbf4056c195f475f785c16e4 \
+rmd160  a56b649a720141f64b96f78e8f136aac636727e4
+platforms		darwin
 
 depends_lib-append	port:sqlite3

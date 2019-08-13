@@ -18,8 +18,8 @@ long_description    Allows hosting test libraries on different processes \
 homepage            https://github.com/robotframework/PythonRemoteServer
 
 platforms           darwin
-python.version 37
-python.default_version 37
+python.versions     27 34 35 36
+python.default_version  27
 
 universal_variant   yes
 

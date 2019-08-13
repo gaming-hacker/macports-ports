@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # This PortGroup is used to indicate that a port is deprecated.
-# Usage of this PortGroup does not necessarily mean that the port is about to be removed, but its usage is discouraged.
+# Ports using this PortGroup are not necessarily about to be removed, but usage of those ports is discouraged.
 # Some possible reasons for deprecation:
 #     * the port no longer builds on recent versions of macOS and/or Xcode
 #     * the project is no longer maintained upstream

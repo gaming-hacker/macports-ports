@@ -26,6 +26,7 @@ configure.args	--prefix=${destroot}${prefix}		\
 		--mandir=${destroot}${prefix}/share/man	\
 		--infodir=${destroot}${prefix}/share/info
 
+
 notes "
 
 To use emacs-w3m, put the following in your ~/.emacs:
@@ -35,4 +36,5 @@ To use emacs-w3m, put the following in your ~/.emacs:
 Then you can use w3m by typing 'M-x w3m'.
 
 "
+
 

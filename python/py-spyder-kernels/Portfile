@@ -4,15 +4,17 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-spyder-kernels
-version             0.3.0
+version             0.5.1
+revision            0
 epoch               1
 categories-append   devel
 platforms           darwin
+supported_archs     noarch
 license             MIT
 
-python.version 37
+python.versions     27 34 35 36 37
 
-maintainers         {gmail.com:ottenr.work @reneeotten} openmaintainer
+maintainers         {reneeotten @reneeotten} openmaintainer
 
 description         Jupyter kernels for the Spyder console.
 long_description    ${description}
@@ -20,29 +22,24 @@ long_description    ${description}
 homepage            https://github.com/spyder-ide/spyder-kernels
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
-distname            spyder-kernels-${version}
+distname            ${python.rootname}-${version}
 
-checksums           rmd160  f326654bdca192831bd53669e207f72eb59d7ea4 \
-sha256  dcf54b519db2a11dcbbc07d3d06caea61b102f0d498c0282a08d00d91b578005 \
-size    34422
+checksums           rmd160  d810ebc3333b92907525661359d4bb1d41bc952b \
+sha256  7e124fad5203b748005e952cf33b44695dbb9d92f5e0dc5443e7ca0db817f400 \
+size    37914
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-spyder-kernels-devel
 
-    depends_build-append    port:py${python.version}-setuptools
+    depends_build-append \
+                    port:py${python.version}-setuptools
 
-    depends_lib-append      port:py${python.version}-cloudpickle \
-                            port:py${python.version}-ipykernel \
-                            port:py${python.version}-jupyter_client \
-                            port:py${python.version}-zmq
-
-    depends_test-append     port:py${python.version}-pytest \
-                            port:py${python.version}-numpy \
-                            port:py${python.version}-pandas
-
-    test.run                no
-    test.cmd                py.test-${python.branch}
-    test.target
+    depends_lib-append \
+                    port:py${python.version}-cloudpickle \
+                    port:py${python.version}-ipykernel \
+                    port:py${python.version}-jupyter_client \
+                    port:py${python.version}-wurlitzer \
+                    port:py${python.version}-zmq
 
     post-destroot {
         set docdir ${prefix}/share/doc/${subport}
@@ -51,7 +48,7 @@ if {${name} ne ${subport}} {
             LICENSE.txt README.md ${destroot}${docdir}
     }
 
-    livecheck.type      none
+    livecheck.type  none
 } else {
-    livecheck.regex     spyder-kernels-(0\\.\\d+\.\\d+)${extract.suffix}
+    livecheck.regex spyder-kernels-(0\\.\\d+\.\\d+)${extract.suffix}
 }

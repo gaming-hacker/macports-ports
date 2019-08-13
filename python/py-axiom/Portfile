@@ -32,8 +32,8 @@ sha256  82b227cb8ab270d8132416ddfe2c98c662cf548f3f741d73ac077c52aa08af8d
 
 worksrcdir          ${gname}-${version}
 
-python.default_version 37
-python.version 37
+python.default_version  27
+python.versions     27
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -20,7 +20,7 @@ rmd160  39fd8eb76f8e38fec3a7803659e3ae1a7cbfce2a \
 sha256  89c802ec051d01dec6fc983e9856a3706e4ea8265d2940b1f6d504a9e26ed3a9 \
 size    47120
 
-python.version 37
+python.versions         27 34 35 36
 
 if {${name} ne ${subport}} {
     livecheck.type          none

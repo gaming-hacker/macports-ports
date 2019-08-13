@@ -24,7 +24,7 @@ rmd160  59106aea117ad23b7c67dc6064802980d30b5752 \
 sha256  ec98751880020a3e0c861e43412c750240576b09882bd71cdeb67dbcb0ed7618
 
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
 

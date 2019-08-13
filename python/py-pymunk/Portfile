@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pymunk
-version             5.4.0
+version             5.5.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     i386 x86_64
 
-python.version 37
+python.versions     27 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,14 +25,16 @@ distname            pymunk-${version}
 
 use_zip             yes
 
-checksums           rmd160  b6bbae5e998637b104ea6d20f2912f6ec65eb3f9 \
-sha256  dcd92862927c57873a3d138a41330ecf0a553609b4c60887221c872a9fdf1054 \
-size    9497259
+checksums           rmd160  8744e30dca0c74ff85bf965c3a19ba964d3bcda1 \
+sha256  9ebaf08f0a8f8e9b7c50b1079829f3a4934d499a6c71d284ba5111ea865d6051 \
+size    5978044
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools \
                         port:py${python.version}-cffi
+
+    patchfiles-append   patch-setup.py.diff
 
     livecheck.type      none
 }

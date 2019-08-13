@@ -4,28 +4,28 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-ipykernel
-version             5.0.0
+version             5.1.2
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
 description         IPython Kernel for Jupyter.
 long_description    ${description}
 
-homepage            http://ipython.org
+homepage            https://ipython.org/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  b25281f11964fe047a422a5a324abfd3934b1133 \
-sha256  3e0ffdf545c0bf80d9dab6523ec6829831408c474772487aeb6eb9f0348b6a1e \
-size    100386
+checksums           rmd160  fabef4b01ab3751545a86a7e47211406e3e41169 \
+sha256  b503913e0b4cce7ed2de965457dfb2edd633e8234161a60e23f2fe2161345d12 \
+size    103286
 
 if {${name} ne ${subport}} {
 

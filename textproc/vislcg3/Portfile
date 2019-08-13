@@ -4,10 +4,10 @@ PortSystem              1.0
 
 name                    vislcg3
 version                 0.9.7.5129
-revision                10
+revision                9
 categories              textproc
 platforms               darwin
-maintainers             gmail.com:p.ixiemotion
+maintainers             {tinodidriksen.com:consult @TinoDidriksen}
 
 description             Constraint Grammar parser for the VISL CG-3 formalism
 

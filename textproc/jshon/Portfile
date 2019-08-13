@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup  github 1.0
 
@@ -13,6 +14,7 @@ maintainers     nomaintainer
 description     A JSON parser for the shell
 long_description  ${description}
 homepage        http://kmkeen.com/jshon/
+
 
 checksums       rmd160  8521fd3717eb50671ffc189305fe0624cea67527 \
 sha256  3dbfea5dd22cf842ce68bc0f12446caa3a10fc06b68065507531dda4fb253b04

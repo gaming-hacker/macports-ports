@@ -28,10 +28,11 @@ sha256  419ab2de80e6b201455775a939c158259af90695e59474a4a7bb3cd522a7193b
 
 worksrcdir          Epsilon-${version}
 
-# currently only supports python37
+# currently only supports python27
 
-python.default_version 37
-python.version 37
+python.default_version  27
+python.versions     27
+
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

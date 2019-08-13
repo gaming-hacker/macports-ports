@@ -2,6 +2,7 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
+PortGroup           cxx11 1.1
 
 set _name           GDAL
 set _n              [string index ${_name} 0]
@@ -26,7 +27,7 @@ checksums           rmd160  5444e9a39995d11d20ebbfeeb31058cdb2bde154 \
 sha256  cffd44249335159402a3d3d39c74c3035b5da091d9097ee93cd99c7a03681b78 \
 size    556883
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append     port:gdal \

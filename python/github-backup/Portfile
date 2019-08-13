@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                github-backup
 set _n              [string index ${name} 0]
@@ -21,6 +19,8 @@ master_sites        pypi:${_n}/${name}
 checksums           rmd160  1089dc2d67260cb41fb4639646f141c9caca5bd9 \
 sha256  d082fa39a956763a4f18aa4fd4def53a721215b3f202bd016cefa653bc6884e5 \
 size    16394
+
+python.default_version  37
 
 depends_build-append \
                     port:py${python.version}-setuptools

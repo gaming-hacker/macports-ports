@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                py-enum34
 version             1.1.6
@@ -11,7 +9,7 @@ categories          python
 platforms           darwin
 license             BSD
 maintainers         {mojca @mojca} openmaintainer
-description         Python 3.7
+description         Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4
 long_description    ${description}
 homepage            https://pypi.python.org/pypi/enum34
 master_sites        pypi:e/enum34
@@ -19,6 +17,9 @@ distname            enum34-${version}
 
 checksums           rmd160  b6bf8846921ddbbd4c1a70de69e9036f0a41a9b4 \
 sha256  8ad8c4783bf61ded74527bffb48ed9b54166685e4230386a9ed9b1279e2df5b1
+
+# works in 24 25 26 27 31 32 33
+python.versions     27
 
 if {${name} ne ${subport}} {
     depends_build-append \

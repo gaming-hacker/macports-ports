@@ -26,7 +26,7 @@ checksums           rmd160  82188a5ad5ea71bd81c8af570d90819b25a43685 \
 sha256  5f206d4f9dd0e2345b3f8a2cef8ddf0c697a2c3bea40963dbabe4cdb3e554b20
 
 use_configure       no
-depends_lib         port:python37
+depends_lib         port:python27
 
 build {
     copy ${worksrcpath}/doc/English/manpage.man ${worksrcpath}/txt2tags.1
@@ -45,7 +45,7 @@ destroot {
     copy ${worksrcpath}/extras ${destroot}${prefix}/share/txt2tags
     copy ${worksrcpath}/samples ${destroot}${prefix}/share/txt2tags
     xinstall -m 0644 ${worksrcpath}/txt2tags.1 ${destroot}${prefix}/share/man/man1
-    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python3.7|" \
+    reinplace "s|#!/usr/bin/env python|#!${prefix}/bin/python2.7|" \
         ${destroot}${prefix}/bin/txt2tags \
         ${destroot}${prefix}/share/txt2tags/extras/gensite
 }

@@ -4,10 +4,13 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-python-jsonrpc-server
-version             0.0.2
+version             0.2.0
+revision            0
+
 platforms           darwin
+supported_archs     noarch
 license             MIT
-maintainers         {gmail.com:ottenr.work @reneeotten} openmaintainer
+maintainers         {reneeotten @reneeotten} openmaintainer
 
 description         JSON RPC 2.0 server library
 long_description    ${description}
@@ -16,11 +19,11 @@ homepage            https://github.com/palantir/python-jsonrpc-server
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  9a5af71c7b4dee186bae7c34616942b5e2b2837f \
-sha256  533434fa982eb42c36ddb0b6758cef8e6eaf46d014f76b70a401b8790a3e6d57 \
-size    24845
+checksums           rmd160  629c82aab44ae2d0843b2a99596c640ec050afe7 \
+sha256  59ce9c9523c14c493a327b3a27ee37464a36dc2b9d8ab485ecbcedd38840380a \
+size    25797
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -37,6 +40,7 @@ if {${name} ne ${subport}} {
 
     test.run            yes
     test.cmd            py.test-${python.branch}
+    test.args           -o addopts=''
     test.target
     test.env            PYTHONPATH=${worksrcpath}/build/lib
 

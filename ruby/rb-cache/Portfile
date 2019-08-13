@@ -9,11 +9,11 @@ description		Simple cache library
 long_description	Simple Time-to-live based cache library with \
                     memory, file, GDBM, and memcached support.
 
-checksums  rmd160  932a0e13aef283573614fedbecee3a464f28ecb5 \
+checksums           rmd160  932a0e13aef283573614fedbecee3a464f28ecb5 \
 sha256  022cc75a3e60f1f3472befea40ef2f83e34046f8851a192325abaaef1b47bfca
 
 homepage            http://www.moonwolf.com/
 master_sites        http://www.moonwolf.com/ruby/archive/
 depends_lib-append  port:rb-memcache \
                     port:gdbm
-platforms		    darwin
+platforms		    darwin 

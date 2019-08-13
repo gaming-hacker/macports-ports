@@ -4,12 +4,13 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-hypothesis
-version             3.82.1
+version             4.32.3
+revision            0
 categories-append   devel
 platforms           darwin
 license             MPL-2
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {khindenburg @kurthindenburg} openmaintainer
 
@@ -24,19 +25,24 @@ homepage            https://pypi.python.org/pypi/hypothesis
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  62db65ac670f0dcdf70f0e09b94b2be9b485cc01 \
-sha256  f33d2e50080e09dcd4e81f939b1d825c6f5b104d89ebad7f57cdd3ea11983680 \
-size    181435
+checksums           rmd160  acbcf1d13143ec552a14c332671ddb385d36850b \
+sha256  c6d4ba47bc97e4651fccd692d6cecca9c1ad673f114107e4d37419d5fc172ee2 \
+size    201345
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools
     depends_lib-append    port:py${python.version}-attrs \
                           port:py${python.version}-coverage
-    if {${python.version} == 27} {
+    if {${python.version} eq 27} {
         depends_lib-append    port:py${python.version}-enum34
     }
 
     livecheck.type      none
-} else {
-    livecheck.type      pypi
+
+    notes "Welcome to the next major version of Hypothesis!\
+    If you were running on the last version of Hypothesis 3.x without\
+    any Hypothesis deprecation warnings (or using private APIs), this\
+    upgrade should cause no issues.\
+    See https://hypothesis.readthedocs.io/en/latest/changes.html#v4-0-0\
+    for more information."
 }

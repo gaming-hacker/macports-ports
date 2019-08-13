@@ -1,0 +1,49 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem 1.0
+
+name                postgresql10-doc
+conflicts           postgresql92-doc postgresql93-doc postgresql94-doc \
+                    postgresql95-doc postgresql96-doc
+version             10.9
+categories          databases
+platforms           darwin
+maintainers         {jwa @jyrkiwahlstedt}
+license             Permissive
+description         Documentation for the postgresql database BETA release.
+long_description    PostgreSQL is Object-Relational Database Management System.\
+                It supports almost all SQL constructs, including transactions, \
+                subselects, and user-defined types and functions. Write-ahead \
+                logging means increased performance while retaining data \
+                integrity. This is the documentation.
+
+homepage            https://www.postgresql.org/
+master_sites        postgresql:source/v${version}
+distname            postgresql-${version}
+set rname           postgresql10
+
+checksums           rmd160  e8167eec821418c9fc38c4938febab439a1b1d2d \
+sha256  958b317fb007e94f3bef7e2a6641875db8f7f9d73db9f283324f3d6e8f5b0f54 \
+size    18981395
+
+use_bzip2           yes
+dist_subdir         ${rname}
+
+set libdir          ${prefix}/lib/${rname}
+configure.args      --mandir=${prefix}/share/man \
+                    --without-openssl \
+                    --without-readline \
+                    --without-zlib
+
+build.dir           ${worksrcpath}/doc
+build.type          gnu
+build.target
+
+destroot.dir        ${build.dir}
+
+post-destroot {
+    file rename ${destroot}${prefix}/share/doc/postgresql \
+        ${destroot}${prefix}/share/doc/${rname}
+}
+
+livecheck.type      none

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name                    py-libdnet
@@ -26,10 +27,15 @@ checksums               md5     9253ef6de1b5e28e9c9a62b882e44cc9 \
 sha1    71302be302e84fc19b559e811951b5d600d976f8 \
 rmd160  4b849f07c3513522fda65af067928b7e6d504aab
 
-subport py37-libdnet {
-    set python.bin	${prefix}/bin/python3.7
-    set python.prefix  ${frameworks_dir}/Python.framework/Versions/3.7
-    depends_lib-append  port:python37
+subport py27-libdnet {
+    set python.bin	${prefix}/bin/python2.7
+    set python.prefix  ${frameworks_dir}/Python.framework/Versions/2.7
+    depends_lib-append  port:python27
+}
+subport py26-libdnet {
+    set python.bin	${prefix}/bin/python2.6
+    set python.prefix  ${frameworks_dir}/Python.framework/Versions/2.6
+    depends_lib-append  port:python26
 }
 
 if {$subport ne $name} {
@@ -49,8 +55,8 @@ if {$subport ne $name} {
 
     # py-libdnet was previously for python 2.4
     revision            1
-    replaced_by         py37-libdnet
-    depends_lib         port:py37-libdnet
+    replaced_by         py27-libdnet
+    depends_lib         port:py27-libdnet
     supported_archs     noarch
     use_configure       no
     build               {}

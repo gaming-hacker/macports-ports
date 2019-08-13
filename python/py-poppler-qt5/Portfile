@@ -31,7 +31,7 @@ rmd160  baa134c6a9e466dddcb15a23f7238b88d1eed8af \
 sha256  3970c35ce1f0f1464a6c2746bea4c479b9780b4e17030c92479f7f1738a5c950 \
 size    20944
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
@@ -41,15 +41,12 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-pyqt5
 
     patchfiles              patch-fix-qtxml.diff \
-                            patch-fix-qt-dirs.diff \
                             patch-fix-cxx11.diff \
                             patch-fix-demo.diff \
                             patch-types.sip.diff
 
-    post-patch {
-        reinplace "s|%%QMAKE%%|${qt_qmake_cmd}|g" ${worksrcpath}/setup.py
-        reinplace "s|%%PYQTSIPDIR%%|${python.prefix}/share/sip/PyQt5/|g" ${worksrcpath}/setup.py
-    }
+    build.pre_args          build_ext \
+                            --qmake-bin=${qt_qmake_cmd}
 
     post-destroot {
         set doc_dir ${destroot}${prefix}/share/doc/${subport}

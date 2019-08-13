@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-dask
-version             0.20.2
+version             2.2.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -31,13 +31,23 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  125bfcb0df51d2d5686b62b5dddbe6b6f8a05d74 \
-sha256  d4139a03ab5eb6cedeb06cf1e39af90fb5226ca214d77408def7677d7e6b7af3 \
-size    2366139
+checksums           rmd160  5505bb4f92b80c34e29a9be084edba6f521a36a6 \
+sha256  c0d9677b99b703737984294e82f89c333669dea8433383aad9ee783ed9c47172 \
+size    2443703
 
 if {${name} ne ${subport}} {
     depends_build-append \
                         port:py${python.version}-setuptools
+
+    if {${python.version} < 35} {
+        version             1.2.2
+        revision            0
+        epoch               1
+        distname            ${python.rootname}-${version}
+        checksums           rmd160  94cce1974d6ad2830a6fd3d745cbe5d4100ff5ba \
+sha256  5e7876bae2a01b355d1969b73aeafa23310febd8c353163910b73e93dc7e492c \
+size    2404729
+    }
 
     livecheck.type      none
 }

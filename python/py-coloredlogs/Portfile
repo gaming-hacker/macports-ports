@@ -23,7 +23,7 @@ homepage            https://coloredlogs.readthedocs.io/
 master_sites        pypi:c/${python.rootname}
 distname            ${python.rootname}-${version}
 
-python.version 37
+python.versions     36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

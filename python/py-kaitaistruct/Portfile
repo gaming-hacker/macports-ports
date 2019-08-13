@@ -7,7 +7,7 @@ name                py-kaitaistruct
 version             0.8
 platforms           darwin
 license             MIT
-maintainers         {yan12125 @yan12125} openmaintainer
+maintainers         nomaintainer
 
 description         Kaitai Struct declarative parser generator for binary data runtime \
                     library for Python
@@ -22,7 +22,7 @@ rmd160  bc96d8d4e051319b4e5b895b53dbc8702f90fd25 \
 sha256  d1d17c7f6839b3d28fc22b21295f787974786c2201e8788975e72e2a1d109ff5 \
 size    5158
 
-python.version 37
+python.versions     27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

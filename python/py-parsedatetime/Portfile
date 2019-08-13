@@ -1,11 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
 github.setup        bear parsedatetime 2.4 v
 name                py-${name}
-python.version 37
+python.versions     27 34 35 36 37
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
@@ -26,6 +27,7 @@ if {${name} ne ${subport}} {
                             port:py${python.version}-pytest-runner
     test.run        yes
     test.env        PYTHONPATH=[glob -nocomplain ${worksrcpath}/build/lib*]
+
 
     livecheck.type  none
 }

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup           python 1.0
 
@@ -25,7 +26,7 @@ checksums           md5     13b6e6dd8f9e3e9a8e005e05a8329408 \
 sha1    4cd6804f2af81697219307421996c6055c7c16e4 \
 rmd160  cbaf2d2540102e8d77462ad75bcf3bfa390671c2
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools 

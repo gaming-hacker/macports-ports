@@ -17,7 +17,7 @@ long_description \
     music theory, which includes topics like intervals, chords, scales and \
     progressions.
 
-python.version 37
+python.versions     27
 
 platforms           darwin
 

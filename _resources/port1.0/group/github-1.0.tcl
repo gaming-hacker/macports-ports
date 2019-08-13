@@ -4,7 +4,7 @@
 #
 # Documentation:
 # https://guide.macports.org/#reference.portgroup.github
-#
+# 
 # Documentation (sources):
 # https://github.com/macports/macports-guide/blob/master/guide/xml/portgroup-github.xml
 

@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-joblib
-version             0.13.0
+version             0.13.2
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,9 +28,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  3495d1367e26d340aeea310bf2a3e38fba5b223f \
-sha256  651fdd4888cdefa39f65c942e33ba1a610d395acd9c1d787adbda1a6beb22218 \
-size    1576411
+checksums           rmd160  64116ec0e9f568c95f1b16cb1c6a1138ad1b35c4 \
+sha256  315d6b19643ec4afd4c41c671f9f2d65ea9d787da093487a81ead7b0bac94524 \
+size    287438
 
 if {${name} ne ${subport}} {
     depends_build-append \

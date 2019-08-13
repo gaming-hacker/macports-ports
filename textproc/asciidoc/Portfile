@@ -24,10 +24,10 @@ long_description \
 platforms           darwin
 supported_archs     noarch
 
-homepage            http://www.methods.co.nz/asciidoc/
+homepage            http://asciidoc.org/
 master_sites        sourceforge
 
-depends_lib         port:python37
+depends_lib         port:python27
 depends_run         port:docbook-xml-4.5 \
                     port:fop \
                     port:libxml2 \
@@ -35,7 +35,7 @@ depends_run         port:docbook-xml-4.5 \
 # Other runtime dependencies include dblatex, w3m and epubcheck, but those are
 # rarely used and large. See #52758.
 
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 
 destroot.target install docs vimdir=${prefix}/share/vim/vimfiles/
 
@@ -44,7 +44,7 @@ pre-destroot {
 }
 
 post-destroot {
-    reinplace "s:#!/usr/bin/env python:#!${prefix}/bin/python3.7:" \
+    reinplace "s:#!/usr/bin/env python:#!${prefix}/bin/python2.7:" \
         ${destroot}${prefix}/bin/asciidoc \
         ${destroot}${prefix}/bin/a2x
 }

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name            py-orbit
@@ -27,9 +28,13 @@ checksums       md5     574593815e75ee6e98062c75d6d1581f \
 sha1    f9877ce9672ed3c3d001b86924f1b6514a79efc9 \
 rmd160  55aa1c3ac0739d398d8e9bbda93ef36f7c659360
 
-subport py37-orbit {
-    set pyversion 3.7
-    depends_lib-append  port:python37
+subport py27-orbit {
+    set pyversion 2.7
+    depends_lib-append  port:python27
+}
+subport py26-orbit {
+    set pyversion 2.6
+    depends_lib-append  port:python26
 }
 
 if {$subport ne $name} {
@@ -58,8 +63,8 @@ if {$subport ne $name} {
 
     # py-orbit was previously for python 2.4
     revision            1
-    replaced_by         py37-orbit
-    depends_lib         port:py37-orbit
+    replaced_by         py27-orbit
+    depends_lib         port:py27-orbit
     supported_archs     noarch
     use_configure       no
     build               {}

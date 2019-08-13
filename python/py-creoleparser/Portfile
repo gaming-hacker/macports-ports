@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-creoleparser
 set real_name       Creoleparser
 version             0.7.4
-python.version 37
+python.versions     27
 categories-append   textproc
 license             MIT
 maintainers         nomaintainer

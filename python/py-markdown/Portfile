@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-markdown
-version             3.0.1
+version             3.1.1
 revision            0
 categories-append   textproc
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -27,9 +27,9 @@ master_sites        pypi:M/Markdown
 
 distname            Markdown-${version}
 
-checksums           rmd160  e0a39213a6219b19b5c3882c0a99dda487c39b5c \
-sha256  d02e0f9b04c500cde6637c11ad7c72671f359b87b9fe924b2383649d8841db7c \
-size    284084
+checksums           rmd160  770c41f726e57b64e2c27266e6b0cf8b7bf895ab \
+sha256  2e50876bcdd74517e7b71f3e7a76102050edec255b3983403f1a63e7c8a41e7a \
+size    294136
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

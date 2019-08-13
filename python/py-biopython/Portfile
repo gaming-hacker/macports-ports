@@ -1,28 +1,28 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem 1.0
-PortGroup python 1.0
+PortSystem          1.0
+PortGroup           python 1.0
 
-name            py-biopython
-version         1.72
-categories-append     science
-maintainers     {mmoll @mamoll} openmaintainer
-platforms       darwin
-description     python tools for computational molecular biology
+name                py-biopython
+version             1.74
+categories-append   science
+maintainers         {mmoll @mamoll} openmaintainer
+platforms           darwin
+description         python tools for computational molecular biology
 long_description    python tools for computational molecular biology: \
-                parsers for various file formats, interfaces for programs, \
-                tools for performing common operations on sequences, etc.
+                    parsers for various file formats, interfaces for programs, \
+                    tools for performing common operations on sequences, etc.
 
-homepage        http://www.biopython.org/
-license         MIT
-master_sites    ${homepage}/DIST
-distname        biopython-${version}
-checksums       rmd160  8d3659c93a8d6c916ea242a2ae689609879454ce \
-sha256  ab6b492443adb90c66267b3d24d602ae69a93c68f4b9f135ba01cb06d36ce5a2 \
-size    16391360
+homepage            https://biopython.org/
+license             MIT
+master_sites        ${homepage}/DIST
+distname            biopython-${version}
+checksums           rmd160  c9b2130d895ecea30e37bdd71524ad7c6ea1db2d \
+sha256  25152c1be2c9205bf80901fc49adf2c2efff49f0dddbcf6e6b2ce31dfa6590c0 \
+size    16129257
 
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if { ${name} ne ${subport} } {
     depends_lib-append  port:py${python.version}-numpy
@@ -30,19 +30,20 @@ if { ${name} ne ${subport} } {
     post-destroot {
         file delete -force ${destroot}${prefix}/share/doc/${subport}
         file copy ${worksrcpath}/Doc ${destroot}${prefix}/share/doc/${subport}
-        xinstall -m 644 -W ${worksrcpath} CONTRIB DEPRECATED LICENSE NEWS README \
+        xinstall -m 644 -W ${worksrcpath} CONTRIB.rst CONTRIBUTING.rst \
+            DEPRECATED.rst LICENSE.rst NEWS.rst README.rst \
             ${destroot}${prefix}/share/doc/${subport}
     }
 
-    build.env   CFLAGS=-I${python.include}
+    build.env           CFLAGS=-I${python.include}
 
-    test.run        no
-    test.cmd        ${build.cmd}
-    test.target     test
+    test.run            no
+    test.cmd            ${build.cmd}
+    test.target         test
 
-    livecheck.type  none
+    livecheck.type      none
 } else {
-    livecheck.type  regex
-    livecheck.url   http://biopython.org/wiki/Download
-    livecheck.regex biopython-(\[0-9\.\]+).tar.gz
+    livecheck.type      regex
+    livecheck.url       https://biopython.org/wiki/Download
+    livecheck.regex     biopython-(\[0-9\.\]+).tar.gz
 }

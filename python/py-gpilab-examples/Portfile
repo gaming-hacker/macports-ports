@@ -8,7 +8,7 @@ github.setup            gpilab examples d9a6861
 version                 0
 name                    py-gpilab-examples
 revision                1
-python.version 37
+python.versions         35 36 37
 python.default_version  37
 supported_archs         noarch
 platforms               darwin

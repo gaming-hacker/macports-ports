@@ -5,7 +5,7 @@ PortGroup           python 1.0
 name                py-sunpy
 version             0.3.1
 revision            1
-maintainers         {robitaille @astrofrog}
+maintainers         nomaintainer
 
 categories-append   science
 description         A Community Python Library for Solar Physics
@@ -23,8 +23,8 @@ checksums           md5 6bc66ddbbfc081637e88c276fff5ac48 \
 sha1 e811627423d600391e3c1eb766df187229a828f0 \
 rmd160 3a6974c14ddf4540051f18830d4a45188b6e8579
 
-python.version 37
-python.default_version 37
+python.versions     27
+python.default_version 27
 
 if {${name} ne ${subport}} {
 

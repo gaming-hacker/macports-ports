@@ -5,7 +5,8 @@ PortGroup           python 1.0
 
 name                py-wheel
 set real_name       wheel
-version             0.32.3
+version             0.33.4
+revision            0
 platforms           darwin
 license             MIT
 maintainers         {mps @Schamschula} openmaintainer
@@ -17,11 +18,11 @@ homepage            https://bitbucket.org/pypa/wheel/
 master_sites        pypi:w/${real_name}
 distname            wheel-${version}
 
-checksums           rmd160  cfda2589204a48d0fa3242d60e98c98066975545 \
-sha256  029703bf514e16c8271c3821806a1c171220cc5bdd325cbf4e7da1e056a01db6 \
-size    18585
+checksums           rmd160  5529c3a12040e3ffc3b63e61b0039ace866fa024 \
+sha256  62fcfa03d45b5b722539ccbc07b190e4bfff4bb9e3a4d470dd9f6a0981002565 \
+size    18781
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,11 +1,13 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
+PortGroup           github 1.0
 PortGroup           python 1.0
 PortGroup           select 1.0
 
+github.setup        lilydjwg nvchecker 1.4.4 v
+github.tarball_from archive
 name                py-nvchecker
-version             1.2.7
 platforms           darwin
 license             MIT
 maintainers         {yan12125 @yan12125} openmaintainer
@@ -14,15 +16,11 @@ description         New version checker for software
 long_description    nvchecker (short for new version checker) is for checking \
                     if a new version of some software has been released.
 
-homepage            https://github.com/lilydjwg/nvchecker
-master_sites        pypi:n/nvchecker
-distname            nvchecker-${version}
+checksums           rmd160  4bceed6757b295c0d9927c66a868516295c644a4 \
+sha256  3875e0107af343e1836494017dde20e5848c60a2c7438aa7b8a612776fb95242 \
+size    30671
 
-checksums           rmd160  5bf77ed08c137e78f06b1e47e3041553beeefb73 \
-sha256  8024906a7f0da76785549841200c1e5f0a58b057e564927a0de0e43639170ca7 \
-size    30998
-
-python.version 37
+python.versions     37
 
 if {${name} ne ${subport}} {
     depends_lib-append \
@@ -45,6 +43,4 @@ if {${name} ne ${subport}} {
     "
 
     livecheck.type      none
-} else {
-    livecheck.type      pypi
 }

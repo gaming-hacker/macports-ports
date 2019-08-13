@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup       python 1.0
 PortGroup       github 1.0
@@ -7,7 +8,7 @@ name            py-protobuf
 version         2.6.1
 revision        2
 categories-append   devel
-maintainers     {blair @blair}
+maintainers     nomaintainer
 license         BSD
 description     Encode data in an efficient yet extensible format.
 
@@ -41,9 +42,11 @@ sha256  ee445612d544d885ae240ffbcbf9267faa9f593b7b101f21d58beceb92661910
 
 platforms       darwin
 
-python.version 37
+python.versions 27
 
 if {${name} ne ${subport}} {
+    conflicts       py${python.version}-protobuf3
+
     depends_build   port:py${python.version}-google-apputils
     depends_lib     port:protobuf-cpp \
                     port:py${python.version}-setuptools

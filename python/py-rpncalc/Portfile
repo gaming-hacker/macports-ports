@@ -26,7 +26,7 @@ rmd160  b7d7f5ae3489e76b8025b6691e0f9785339a1944
 
 supported_archs             noarch
 
-python.version 37
+python.versions             26
 
 if {$subport ne $name} {
     depends_run-append          port:py${python.version}-clnum

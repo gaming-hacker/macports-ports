@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        geopy geopy 1.17.0
+github.setup        geopy geopy 1.20.0
 name                py-geopy
 
 categories-append   devel
@@ -24,11 +24,11 @@ long_description \
     SmartyStreets, and GeocodeFarm geocoder services. The various geocoder \
     classes are located in geopy.geocoders.
 
-checksums           rmd160  3959fd77839000e8073cf8f4a9db45e9cb7b4e1b \
-sha256  b25e2a1360ff8e7d9af19d4059895e66c5be00e5300a47fcd0a3ab9b76017f71 \
-size    241972
+checksums           rmd160  b527670b3feab7556565ea4a7c0fd847950773db \
+sha256  e3b3110502e504b2d7ac08383390d3f5ea645ad2349bdc633c34ef9950dff614 \
+size    252423
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-geographiclib \

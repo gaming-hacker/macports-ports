@@ -6,6 +6,10 @@
 # PortGroup                     qmake 1.0
 
 PortGroup                       qt4 1.0
+PortGroup                       active_variants 1.1
+
+options qt4.debug_variant
+default qt4.debug_variant yes
 
 pre-configure {
     configure.cmd                   ${qt_qmake_cmd}
@@ -23,7 +27,7 @@ pre-configure {
                                     "QMAKE_LINK_SHLIB=${configure.cxx}"
     configure.universal_args-delete --disable-dependency-tracking
 
-if {[variant_exists universal] && [variant_isset universal]} {
+    if {[variant_exists universal] && [variant_isset universal]} {
         configure.pre_args-append   "CONFIG+=\"${qt_arch_types}\""
     }
 }

@@ -20,7 +20,7 @@ long_description    ajp-wsgi is a WSGI server/gateway that implements \
                     server.
 homepage            http://www.saddi.com/software/ajp-wsgi
 
-depends_lib-append  port:python37
+depends_lib-append  port:python27
 
 master_sites        ${homepage}/dist/
 use_bzip2           yes
@@ -28,7 +28,7 @@ checksums           md5     406bc951520186d3b17cc0abae6e32f6 \
 sha1    85e30d6f612f42485caa4ee406159661760de575 \
 rmd160  7f7b7d80f3daff25bbdfcb988c381b0d1a24722a
 
-configure.cmd       ${prefix}/bin/python3.7
+configure.cmd       ${prefix}/bin/python2.7
 configure.pre_args
 configure.args      configure.py
 

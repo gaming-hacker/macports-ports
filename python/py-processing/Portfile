@@ -1,11 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup python 1.0
 
 name			py-processing
 version			0.52
 platforms		darwin
-maintainers		{blair @blair}
+maintainers		nomaintainer
 description		Using processes which mimics the threading module
 long_description	Processing is a package for the Python language which \
 			supports the spawning of processes using the API of \
@@ -25,14 +26,14 @@ checksums		md5 62772fa3002d003b2395ed669072d51d \
 sha1 242cd025d80a5e077de01676465f6b8582222bf4 \
 rmd160 c04aa3ce3bf5534fa9d98dbfbec8c0ee0cf3fbd7
 
-python.version 37
+python.versions	27
 
 if {${name} ne ${subport}} {
     use_zip			yes
 
     test.run		yes
     test.cmd		${python.bin} -m processing.tests
-    test.env		"PYTHONPATH=build/lib.macosx-10.3-${os.arch}-${python.branch}"
+    test.env		PYTHONPATH=build/lib.macosx-10.3-${os.arch}-${python.branch}
 
     livecheck.type		none
 } else {

@@ -1,4 +1,5 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
@@ -19,7 +20,7 @@ long_description    This is a plugin to faciliate image comparison for \
                     easy to compare figures produced by tests to reference \
                     images when using pytest.
 
-python.version 37
+python.versions     27 34 35 36
 
 checksums           rmd160  6b135b3a08453376c88e23f434a1fc901d54bc9d \
 sha256  960d02c75d6b3b75043060c0b1fcdf98099ce1b6e72d3b3bd508bc13f074a152

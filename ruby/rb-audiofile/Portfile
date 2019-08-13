@@ -1,5 +1,6 @@
-# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		ruby 1.0
 
 revision        2
@@ -13,5 +14,5 @@ long_description	Reads and writes audio (wav, au, aiff, NeXT snd, etc \
 categories-append	audio
 checksums		md5 195665167f152c05ed56e0086735189a
 homepage        http://ruby-audiofile.sourceforge.net/
-platforms		darwin
+platforms		darwin 
 depends_lib-append		port:audiofile

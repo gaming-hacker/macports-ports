@@ -6,7 +6,7 @@ PortGroup           python 1.0
 
 github.setup        pyxg pyxg 0.3 v
 name                py-pyxg
-python.version 37
+python.versions     27
 categories-append   devel
 platforms           darwin
 maintainers         {snc @nerdling} openmaintainer
@@ -21,6 +21,7 @@ checksums           rmd160  254a41fe143b5b7ce53c11dd7f2c0bd3d961e0ff \
 sha256  6147735a7db386fecf4cbb0cac7f1800ddba30fcb025e55c1c70a41cb9837a1f
 
 supported_archs     noarch
+
 
 if {${os.platform} eq "darwin" && ${os.major} > 11} {
     archive_sites

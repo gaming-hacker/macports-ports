@@ -4,7 +4,7 @@ PortSystem              1.0
 PortGroup               python 1.0
 
 name                    py-pyside2
-version                 5.11.2
+version                 5.13.0
 categories-append       devel aqua
 platforms               darwin
 maintainers             {pmetzger @pmetzger} {mcalhoun @MarcusCalhoun-Lopez} openmaintainer
@@ -17,13 +17,13 @@ master_sites            https://download.qt.io/official_releases/QtForPython/pys
 distname                pyside-setup-everywhere-src-${version}
 use_xz                  yes
 
-checksums               rmd160  6af60baf36f49f330b2c7d60fd171dc996d1e86b \
-sha256  18f572f1f832e476083d30fccabab167450f2a8cbe5cd9c6e6e4fa078ccb86c2 \
-size    5298804
+checksums               rmd160  f9de0cd6d01dc3b9d400e7692ff094c1d0fab8d9 \
+sha256  8e47e778a6c8ee86e9bc7dbf56371cf607e9f3c1a03a7d6df9e34f8dba555782 \
+size    2979204
 
-python.version 37
+python.versions         27 36 37
 
-set llvm_version        7.0
+set llvm_version        8.0
 
 if {${name} ne ${subport}} {
     PortGroup           qt5 1.0
@@ -34,12 +34,13 @@ if {${name} ne ${subport}} {
     depends_build-append \
         path:bin/cmake:cmake \
         port:py${python.version}-setuptools \
+        port:py${python.version}-sphinx \
         port:py${python.version}-wheel
 
     build.args-append \
         --qmake=${qt_qmake_cmd} \
         --cmake=${prefix}/bin/cmake \
-        --jobs=${build.jobs} \
+        --parallel=${build.jobs} \
         --macos-deployment-target=${macosx_deployment_target}
 
     if {${configure.sdkroot} != ""} {

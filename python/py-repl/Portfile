@@ -6,7 +6,7 @@ PortGroup               python 1.0
 name                    py-repl
 set real_name           pyrepl
 version                 0.8.1
-python.version 37
+python.versions         27
 maintainers             nomaintainer
 license                 MIT
 

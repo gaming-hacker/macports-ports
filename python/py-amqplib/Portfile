@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                py-amqplib
 version             1.0.2
@@ -12,6 +10,8 @@ categories-append   devel
 platforms           darwin
 license             LGPL-2.1+
 supported_archs     noarch
+
+python.versions     27
 
 maintainers         {stromnov @stromnov} openmaintainer
 

@@ -2,10 +2,13 @@
 
 PortSystem              1.0
 PortGroup               ruby 1.0
+PortGroup               github 1.0
 PortGroup               active_variants 1.1
-PortGroup user 1.0
 
-ruby.setup              RMagick 2.13.2 gem {} rubygems
+github.setup            rmagick rmagick 2-13-3 RMagick_
+version                 [string map {- .} ${github.version}]
+revision                1
+ruby.setup              RMagick ${version} setup.rb {README examples}
 categories-append       graphics
 platforms               darwin
 maintainers             nomaintainer
@@ -14,10 +17,13 @@ license                 MIT
 description             The Ruby interface to ImageMagick
 
 long_description        RMagick is an interface between the Ruby programming \
-      language and the ImageMagick image processing library. It is \
-    fully featured and has good documentation.
+                        language and the ImageMagick image processing library. It is \
+                        fully featured and has good documentation.
 
 homepage                https://rmagick.github.io
+
+checksums               rmd160  84f99ad91fbc6ba4973b4e97e3ca8adbc6a508da \
+sha256  cc883db1591c5caea6c7be15841509e65d1231cf5b1adc936b2fe6126ed4bb2f
 
 depends_lib-append      port:ImageMagick
 require_active_variants ImageMagick wmf

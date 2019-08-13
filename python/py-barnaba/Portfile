@@ -25,22 +25,24 @@ sha256  6f4a76166f230ba1fa7f1a9669fd64909333cd71ea1c06afddb7024b56d9284a \
 size    30243004
 
 
-python.version 37
+python.versions     27 36 37
 
 if {${name} ne ${subport}} {
 
-    depends_build-append port:py${python.version}-setuptools_scm \
-                         port:py${python.version}-setuptools_scm_git_archive
+    depends_build-append    port:py${python.version}-setuptools_scm \
+                            port:py${python.version}-setuptools_scm_git_archive
 
-    depends_lib-append  port:py${python.version}-mdtraj \
-                        port:py${python.version}-scipy \
-                        port:py${python.version}-numpy \
-                        port:py${python.version}-pandas \
-                        port:py${python.version}-scikit-learn \
-                        port:py${python.version}-future
+    depends_lib-append      port:py${python.version}-future \
+                            port:py${python.version}-mdtraj \
+                            port:py${python.version}-numpy \
+                            port:py${python.version}-pandas \
+                            port:py${python.version}-scikit-learn \
+                            port:py${python.version}-scipy
 
-    depends_test-append port:py${python.version}-nose
-    test.run            yes
+    depends_test-append     port:py${python.version}-nose
+    test.run                yes
+    test.cmd                nosetests-${python.branch}
+    test.target
 }
 
 

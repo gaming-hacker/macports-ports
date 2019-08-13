@@ -14,12 +14,13 @@ long_description    ${description}
 
 homepage            http://www.panstamp.com/
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
 
     checksums       rmd160  54b44f2191fa5b879d85ef37aca2fc4f8c85ea7e \
 sha256  6d65b05424deeb012e36dd64de71e52f64d076cbea4db6b8d58c46dde503e270
+
 
     depends_lib	    port:py${python.version}-serial
 

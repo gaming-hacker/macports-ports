@@ -13,7 +13,7 @@ supported_archs     noarch
 description         Create PDF from reStructuredText
 long_description    ${description}
 
-python.default_version 37
+python.default_version 27
 
 platforms           darwin
 

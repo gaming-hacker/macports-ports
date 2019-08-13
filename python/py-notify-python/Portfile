@@ -36,7 +36,7 @@ rmd160  52f5b5cc7c01be32525db7a2edc0f3dee41911ef
 # So the build procedure must unravel the python PortGroup settings
 # and revert to values compatible with a make environment.
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
 

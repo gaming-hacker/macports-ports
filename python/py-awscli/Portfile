@@ -2,13 +2,16 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
+PortGroup           select 1.0
+
 
 name                py-awscli
-version             1.16.57
+version             1.16.193
+revision            0
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
-maintainers         {pixilla @pixilla} openmaintainer
+maintainers         nomaintainer
 
 description         Universal Command Line Environment for AWS.
 long_description    ${description}
@@ -17,16 +20,13 @@ homepage            https://aws.amazon.com/cli/
 master_sites        pypi:a/awscli
 distname            awscli-${version}
 
-checksums           rmd160  722b7ca6e91343b91725dac866d10ee4f78c865c \
-sha256  9910243782bb3c855d03c87af2aef9bf14cac9d0a51ea86d3d9642d25d27add5 \
-size    637292
+checksums           rmd160  959c15c20dcfcc7db8a3732f4c16afabd75a86d2 \
+sha256  b15d5f05d65a73119fbb1e0fedaa9436faeb77c7a65119cc9babd1bfbfcb6ddd \
+size    757231
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
-
-    PortGroup           select 1.0
-
     depends_build-append \
                         port:py${python.version}-setuptools
     depends_lib-append \

@@ -9,7 +9,7 @@ license                 GPL-2+
 version                 0.14.1
 revision                6
 
-python.version 37
+python.versions         27
 
 categories              python gnome
 platforms               darwin
@@ -19,6 +19,7 @@ description             GooCanvas python bindings
 
 long_description        PyGoocanvas are the python bindings for GooCanvas which is a canvas \
                         widget for GTK+ that uses the cairo 2D library for drawing.
+
 
 set branch              [join [lrange [split ${version} .] 0 1] .]
 master_sites            gnome:sources/pygoocanvas/${branch}/

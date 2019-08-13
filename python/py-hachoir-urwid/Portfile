@@ -25,7 +25,7 @@ distname            hachoir-urwid-${version}
 checksums           rmd160  63964024d1b52bd3d485f493aae81ef57897406d \
 sha256  95161ccc0708818958e974fde4d395ddf181cc05e92839e2c6aff1a8cac40681
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
     depends_lib         port:py${python.version}-hachoir-core \
@@ -33,8 +33,4 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-urwid
 
     livecheck.type      none
-} else {
-    livecheck.type      regex
-    livecheck.url       https://pypi.python.org/packages/source/h/hachoir-urwid/
-    livecheck.regex     {hachoir-urwid-(\d+(?:\.\d+)*)\.tar\.gz}
 }

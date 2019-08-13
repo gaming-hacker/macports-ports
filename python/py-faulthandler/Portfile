@@ -14,7 +14,7 @@ description         Display the Python traceback on a crash
 long_description    This module contains functions to dump Python tracebacks \
                     explicitly, on a fault, after a timeout, or on a user signal. \
                     It's part of python 3.3 onward so is only useful on MacPort \
-                    for python 3.7.
+                    for python 2.7.
 
 homepage            https://faulthandler.readthedocs.io/
 master_sites        pypi:f/faulthandler
@@ -24,7 +24,7 @@ checksums           md5     7ba7d707fe8f084e35f4f4b72b1f4b4d \
 rmd160  4062783445697da65b5b25835123e81ee2ae0493 \
 sha256  59487773e0189d6236ec694af53ac1fe564ec4a6d9593818deadd9afe4c0dc7f
 
-python.version 37
+python.versions     27
 
 if {$subport ne $name} {
     depends_build   port:py${python.version}-setuptools

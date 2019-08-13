@@ -4,7 +4,8 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-packaging
-version             18.0
+version             19.1
+revision            0
 platforms           darwin
 supported_archs     noarch
 maintainers         nomaintainer
@@ -18,11 +19,11 @@ homepage            https://pypi.python.org/pypi/packaging/
 master_sites        pypi:p/packaging
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  24b2a77156eb4bb77da56e4d078c48b7aac5fa9a \
-sha256  0886227f54515e592aaa2e5a553332c73962917f2831f1b0f9b9f4380a4b9807 \
-size    48018
+checksums           rmd160  4132cfc998b383bbbbe9902b2458cc934758533a \
+sha256  c491ca87294da7cc01902edbe30a5bc6c4c28172b5138ab4e4aa1b9d7bfaeafe \
+size    57886
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {$subport ne $name} {
     depends_lib-append  port:py${python.version}-parsing \

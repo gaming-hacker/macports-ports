@@ -3,7 +3,8 @@
 PortSystem          1.0
 
 name                nginx
-version             1.15.7
+version             1.17.2
+revision            0
 categories          www mail
 platforms           darwin
 license             BSD
@@ -19,11 +20,11 @@ long_description    \
     its stability, rich feature set, simple configuration, and low resource \
     consumption.
 
-homepage            http://nginx.org/
-master_sites        http://nginx.org/download:nginx \
+homepage            https://nginx.org/
+master_sites        https://nginx.org/download:nginx \
                     http://www.grid.net.ru/nginx/download/:upload_module \
                     googlecode:mod-zip:zip_module \
-                    http://people.freebsd.org/~osa/:redis_module \
+                    https://people.freebsd.org/~osa/:redis_module \
                     https://github.com/masterzen/nginx-upload-progress-module/archive/:uploadprogress_module \
                     https://github.com/arut/nginx-dav-ext-module/archive/:davext_module \
                     https://github.com/arut/nginx-rtmp-module/archive/:rtmp_module \
@@ -35,9 +36,9 @@ master_sites        http://nginx.org/download:nginx \
 
 distfiles           ${name}-${version}${extract.suffix}:nginx
 checksums           ${name}-${version}${extract.suffix} \
-rmd160  b68e430da182e07fd92b9c02b0cf7742d737af04 \
-sha256  8f22ea2f6c0e0a221b6ddc02b6428a3ff708e2ad55f9361102b1c9f4142bdf93 \
-size    1026732
+rmd160  667f38bbbd760b0d6786e0bcb432bf7f958b8543 \
+sha256  5e333687464e1d6dfb86fc22d653b99a6798dda40093b33186eeeec5a97e69ec \
+size    1034136
 
 depends_lib         port:pcre \
                     port:zlib
@@ -120,7 +121,7 @@ notes "\
     Additionally, the files [join ${auto_activate_confs} ", "] have been copied to ${nginx_confdir} if they didn't exist yet.\n\
     Adjust these files to your needs before starting nginx."
 
-default_variants +mp4 +flv +secure_link +ssl +http2
+default_variants +mp4 +flv +secure_link +ssl +http2 +stream
 
 variant auth_request description {Add client authorization based on the result of a subrequest} {
     configure.args-append   --with-http_auth_request_module
@@ -185,9 +186,6 @@ variant gzip_static description {Avoids compressing the same file each time it i
     configure.args-append   --with-http_gzip_static_module
 }
 
-variant spdy requires http2 description {Legacy compatibility variant: SPDY has been replaced by HTTP/2} {
-    # added 2015-11-05
-}
 variant http2 requires ssl description {Add HTTP/2 support to the server} {
     configure.args-append   --with-http_v2_module
 }
@@ -242,7 +240,8 @@ variant substitution description {Replace text in pages} {
 variant stream description {Enable ngx_stream_core_module for generic TCP proxying and load balancing (install with +ssl to enable ngx_stream_ssl_module)} {
     configure.args-append   --with-stream
     if {[variant_isset ssl]} {
-        configure.args-append   --with-stream_ssl_module
+        configure.args-append \
+            --with-stream_ssl_module --with-stream_ssl_preread_module
     }
 }
 

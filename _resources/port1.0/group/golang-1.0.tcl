@@ -258,6 +258,7 @@ proc handle_set_go_vendors {vendors_str} {
 #
 # - GitHub: ${author}-${project}-${7-digit hash}
 # - Bitbucket: ${author}-${project}-${12-digit hash}
+# - GitLab: ${project}-${ref}
 #
 # Support for additional hosts not conforming to this pattern will take some
 # work.

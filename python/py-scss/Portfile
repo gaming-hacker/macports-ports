@@ -22,7 +22,7 @@ long_description \
 
 platforms           darwin
 
-python.version 37
+python.versions     27
 
 if {${name} ne ${subport}} {
     livecheck.type          none

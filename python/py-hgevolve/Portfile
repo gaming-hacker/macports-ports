@@ -4,44 +4,37 @@ PortSystem              1.0
 PortGroup               python 1.0
 PortGroup               bitbucket 1.0
 
-bitbucket.setup         marmoute mutable-history 8.3.0
+bitbucket.setup         marmoute mutable-history 9.0.0
 name                    py-hgevolve
 
 categories-append       devel
 platforms               darwin
 license                 GPL-2+
-maintainers             {sean @seanfarley} openmaintainer
+maintainers             {lbschenkel @lbschenkel} openmaintainer
 supported_archs         noarch
 
 description             Mutable history for mercurial
 long_description        This extension provides several commands to mutate history \
                         and deal with issues it may raise.
 
-checksums               rmd160  1f041e6bee9645e21ce92becddda3ecfe10c1512 \
-sha256  b14503707c75af80edb470602538c1b11d8ba57bc5120d64e2de75c1d93bacf2 \
-size    742402
+checksums               rmd160  adb822fc9ef362eb3d9d6de1af72de25b659b52a \
+sha256  fbf7e1797c0e1209ff7f12f96034716706dc1800a3f25e30b5b24e78cc9db16f \
+size    768037
 
+# can't set python.versions before adding custom subports
+subport py-hgevolve-devel {}
+subport py27-hgevolve-devel {}
+
+# obsolete 20190301
 if {[string match "*-devel" $subport]} {
-    bitbucket.setup     marmoute mutable-history 45d4b49d81d9
-    bitbucket.livecheck default
-    name                py-hgevolve-devel
-    version             8.0.99
-    revision            1
-
-    checksums           rmd160  1f041e6bee9645e21ce92becddda3ecfe10c1512 \
-sha256  b14503707c75af80edb470602538c1b11d8ba57bc5120d64e2de75c1d93bacf2 \
-size    742402
+    replaced_by         ${name}
+    PortGroup           obsolete 1.0
 }
 
-python.version 37
+python.versions         27
 
 if {${name} ne ${subport}} {
-    depends_lib         path:bin/hg:mercurial
-
-    conflicts           py${python.version}-hgevolve-devel
-    if {[string match "*-devel" $subport]} {
-        conflicts       py${python.version}-hgevolve
-    }
+    depends_lib         port:mercurial
 
     post-destroot {
         file delete ${destroot}${python.pkgd}/hgext3rd/__init__.py
@@ -56,8 +49,4 @@ To enable hgevolve, add the following to your ~/.hgrc:
 rebase =
 evolve =
 "
-
-    if {![string match "*-devel" $subport]} {
-        livecheck.type      none
-    }
 }

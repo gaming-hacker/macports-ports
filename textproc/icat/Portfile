@@ -26,6 +26,7 @@ variant universal {}
 build.args-append   GCC="${configure.cc} [get_canonical_archflags]" \
                     LDFLAGS+="-L${prefix}/lib -lImlib2"
 
+
 destroot {
     xinstall -m 755 ${worksrcpath}/${name} ${destroot}${prefix}/bin
 }

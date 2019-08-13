@@ -23,12 +23,16 @@ checksums                   md5     f65404433484707f7fb5a50416de6acf \
 sha1    13d22216539b157d0369f44483c30390495c6a63 \
 rmd160  1e86c3df9ab44c7a777c637f274a736c81e4b231
 
-python.version 37
+python.versions             26
 
 if {${subport} ne ${name}} {
     depends_lib-append          port:cln
 
+    if {[vercmp [macports_version] 2.5.99] >= 0} {
+    build.env                   CPPFLAGS=${configure.cppflags}
+    } else {
     build.env                   CPPFLAGS="${configure.cppflags}"
+    }
 
     post-destroot {
         set docdir ${destroot}${prefix}/share/doc/${subport}

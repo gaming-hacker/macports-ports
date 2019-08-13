@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-distributed
-version             1.24.2
+version             2.2.0
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.version 37
+python.versions     27 34 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  ddd97e8d87746a5543416ab9c275e8d867d446a5 \
-sha256  8ab24f0ea634dab7b6667c32b18c98794141f3ef3b081293dfea1943498ce987 \
-size    513872
+checksums           rmd160  1952654ac15ef75e9042778d473bd1079dba473e \
+sha256  1101d441137d5aa345cd17c136f5f2f0ea186ee0857dfb0c6c12a6e262e2de35 \
+size    544198
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \
@@ -44,9 +44,19 @@ if {${name} ne ${subport}} {
                         port:py${python.version}-yaml \
                         port:py${python.version}-sortedcontainers
 
-    if {${python.version} == 27} {
-        depends_lib-append  port:py${python.version}-futures \
-                            port:py${python.version}-singledispatch
+    if {${python.version} < 35} {
+        version             1.28.1
+        revision            0
+        epoch               1
+        distname            ${python.rootname}-${version}
+        checksums           rmd160  e5d7ee1da92d535e8dc1926f28aa83f3776d5386 \
+sha256  3bd83f8b7eb5938af5f2be91ccff8984630713f36f8f66097e531a63f141c48a \
+size    536974
+
+        if {${python.version} == 27} {
+            depends_lib-append  port:py${python.version}-futures \
+                                port:py${python.version}-singledispatch
+        }
     }
 
     livecheck.type      none

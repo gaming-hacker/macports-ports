@@ -2,8 +2,6 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup user 1.0
-python.version ${user.py.nodot}
 
 name                impressive
 version             0.12.0
@@ -30,6 +28,8 @@ distname            Impressive-${version}
 checksums           rmd160  4d9b016907b504b36836c7e4eb0754b15ba08828 \
 sha256  7dc78de333e4a942036ba4bda53358799f493114f2f655b2ab2689b6fdc0587d \
 size    209514
+
+python.default_version 27
 
 depends_lib-append  port:py${python.version}-opengl \
                     port:py${python.version}-game \

@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-smart_open
-version             1.7.1
+version             1.8.4
 revision            0
 categories-append   textproc
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.version 37
+python.versions     27 35 36 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -23,9 +23,9 @@ homepage            https://github.com/RaRe-Technologies/smart_open
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  b987b31d27f5fbb43f119f678382861aea58a6d1 \
-sha256  57c568d104c37dbdf5598c41e94b5b143c38dd275bc2856242b8597cfede9453 \
-size    38198
+checksums           rmd160  f78ba34008e423c2b7d49a6427faa70c8ebbe070 \
+sha256  788e07f035defcbb62e3c1e313329a70b0976f4f65406ee767db73ad5d2d04f9 \
+size    63648
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -12,7 +12,7 @@ categories-append   math science
 license             LGPL-3+
 platforms           darwin
 supported_archs     noarch
-maintainers         {sean @seanfarley} openmaintainer
+maintainers         nomaintainer
 
 description         FEniCS Form Compiler
 long_description    FFC works as a compiler for multilinear forms by generating \
@@ -26,7 +26,7 @@ checksums           rmd160  e543d339823c0c15ef086cce472ce9c2168a38f4 \
 sha256  51b21e3557d4c1460b2d52ff2d5646dd3d15a8b458b51706d5ff58adc9485971 \
 size    1378112
 
-python.version 37
+python.versions     36
 python.link_binaries_suffix
 
 configure.cxxflags-append -std=c++11
@@ -39,11 +39,19 @@ if {${subport} ne ${name}} {
                     port:boost
 
     pre-build {
+        if {[vercmp [macports_version] 2.5.99] >= 0} {
+        build.env-append CXXFLAGS=${configure.cxxflags}
+        } else {
         build.env-append CXXFLAGS="${configure.cxxflags}"
+        }
     }
 
     pre-destroot {
+        if {[vercmp [macports_version] 2.5.99] >= 0} {
+        destroot.env-append CXXFLAGS=${configure.cxxflags}
+        } else {
         destroot.env-append CXXFLAGS="${configure.cxxflags}"
+        }
     }
 
     post-fetch {

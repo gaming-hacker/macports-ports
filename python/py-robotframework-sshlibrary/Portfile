@@ -16,8 +16,8 @@ long_description    ${description}
 homepage            https://github.com/robotframework/sshlibrary
 
 platforms           darwin
-python.version 37
-python.default_version 37
+python.versions		27
+python.default_version	27
 
 master_sites        pypi:r/robotframework-sshlibrary/
 distname            ${internal_name}-${version}

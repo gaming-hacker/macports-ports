@@ -3,9 +3,9 @@
 PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
-github.setup        pydicom pydicom 1.2.0 v
+github.setup        pydicom pydicom 1.3.0 v
 name                py-pydicom
-python.version 37
+python.versions     27 34 35 36 37
 platforms           darwin
 license             MIT BSD
 maintainers         {eborisch @eborisch} \
@@ -24,8 +24,9 @@ long_description    pydicom is a pure python package for working with DICOM \
 homepage            https://pydicom.github.io/pydicom/stable/index.html
 
 checksums \
-rmd160  a3f141868318f9877d17dc06888dea88a5419528 \
-sha256  b89e285e0b9d24b47715e4da5ebc6716715fd775f7c15eb8b70b5d925c068905
+rmd160  557ee7f6961fb269b6613906c640e2846853801c \
+sha256  39f2c32f718f29a81d04a76d74bbd3f646bc1c581d9eec1a85dca12a13239c07 \
+size    7070670
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-numpy
@@ -45,7 +46,7 @@ if {${name} ne ${subport}} {
     post-extract {
         reinplace s/sphinx-build/sphinx-build-${python.branch}/ \
             doc/Makefile
-        if {${subport} eq "py37-pydicom"} {
+        if {${subport} eq "py27-pydicom"} {
             reinplace {s/print(\(.*\), end=.*/print \1,/} \
                 examples/input_output/plot_read_dicom_directory.py
         }
@@ -69,12 +70,14 @@ if {${name} ne ${subport}} {
         }
     }
 
-    if {${subport} eq "py37-pydicom"} {
+    if {${subport} eq "py27-pydicom"} {
         # Backwards compatibility for upgraders
         notes \
-"pydicom >= 1.0 changed the library name. Install py37-dicom for backward\
+"pydicom >= 1.0 changed the library name. Install py27-dicom for backward\
 compatibility if required. (Can be installed without conflict.) See\
 https://pydicom.github.io/pydicom/stable/transition_to_pydicom1.html\
 for more information."
     }
+
+    livecheck.type        none
 }

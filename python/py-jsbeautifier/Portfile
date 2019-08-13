@@ -4,24 +4,25 @@ PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        beautify-web js-beautify 1.8.8 v
+github.setup        beautify-web js-beautify 1.9.0 v
+revision            0
 name                py-jsbeautifier
 categories-append   textproc
 platforms           darwin
 supported_archs     noarch
 license             MIT
-maintainers         {yan12125 @yan12125} openmaintainer
+maintainers         nomaintainer
 
 description         JS beautifier written in Python
 long_description    ${description}
 
 homepage            https://beautifier.io/
 
-checksums           rmd160  4724a7bf1cd2a8d0ea5fc70b59aec7b300ce243a \
-sha256  69041b577d833290775c05234337b4a7bb8d7804c91c94e66856c9b80ac08491 \
-size    1017091
+checksums           rmd160  4145ea10409a77b42bdc70782f8b40e2b8445ca7 \
+sha256  db25820d1c24df1822c32fbebbf63d450ce281956da2defff790ddf8b519e1a9 \
+size    1058163
 
-python.version 37
+python.versions     27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -37,4 +38,8 @@ if {${name} ne ${subport}} {
     test.dir            ${worksrcpath}
     test.cmd            ${python.bin}
     test.target         python/js-beautify-test.py
+
+    livecheck.type      none
+} else {
+    github.livecheck.regex  {([0-9.]+)}
 }

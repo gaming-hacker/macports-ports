@@ -24,8 +24,8 @@ mpi.setup           require
 
 depends_lib         port:boost
 
-depends_build       port:py37-docutils \
-                    port:py37-pygments
+depends_build       port:py27-docutils \
+                    port:py27-pygments
 
 configure.env-append \
     MPI_CXX_COMPILER=${mpi.cxx}

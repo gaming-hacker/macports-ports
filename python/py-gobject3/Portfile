@@ -26,7 +26,7 @@ checksums           rmd160  85a69fc1b45c094f55121901c60635f652321b21 \
 sha256  3dd3e21015d06e00482ea665fc1733b77e754a6ab656a5db5d7f7bfaf31ad0b0 \
 size    1005368
 
-python.version 37
+python.versions     27 35 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:pkgconfig
@@ -39,7 +39,7 @@ if {${name} ne ${subport}} {
     depends_test            port:py${python.version}-pytest
 
 #   blacklist compilers that do not support C11
-    compiler.blacklist  *gcc* {clang < 300}
+    compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
 
     patchfiles-append       patch-configure.ac.diff
 

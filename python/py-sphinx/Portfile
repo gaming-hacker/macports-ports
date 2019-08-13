@@ -5,7 +5,7 @@ PortGroup           python 1.0
 PortGroup           select 1.0
 
 name                py-sphinx
-version             1.8.2
+version             2.1.2
 categories-append   textproc devel
 license             BSD
 maintainers         {jmr @jmroot} openmaintainer
@@ -20,14 +20,13 @@ long_description \
 platforms           darwin
 supported_archs     noarch
 
-homepage            http://sphinx-doc.org/
+homepage            https://www.sphinx-doc.org/
 master_sites        pypi:S/Sphinx/
-distname            Sphinx-${version}
 
-checksums           rmd160 0cf57c141cd3491f57286ead7781bd5d0c673fb0 \
-sha256 120732cbddb1b2364471c3d9f8bfd4b0c5b550862f99a65736c77f970b142aea
+checksums           rmd160 b71c61f1c71ecd670b0db413346e4c5425f9964a \
+sha256 f9a79e746b87921cabc3baa375199c6076d1270cee53915dbd24fdbeaaacc427
 
-python.version 37
+python.versions     27 34 35 36 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-docutils \
@@ -39,13 +38,28 @@ if {$subport ne $name} {
                     port:py${python.version}-packaging \
                     port:py${python.version}-pygments \
                     port:py${python.version}-requests \
-                    port:py${python.version}-six \
                     port:py${python.version}-snowballstemmer \
-                    port:py${python.version}-sphinxcontrib-websupport \
                     port:sphinx_select
     if {${python.version} < 35} {
-        depends_run-append  port:py${python.version}-typing
+        version     1.8.5
+        revision    0
+        checksums   rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
+sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
+
+        depends_run-append  port:py${python.version}-six \
+                            port:py${python.version}-sphinxcontrib-websupport \
+                            port:py${python.version}-typing
+    } else {
+        depends_run-append  port:py${python.version}-sphinxcontrib-applehelp \
+                            port:py${python.version}-sphinxcontrib-devhelp \
+                            port:py${python.version}-sphinxcontrib-htmlhelp \
+                            port:py${python.version}-sphinxcontrib-jsmath \
+                            port:py${python.version}-sphinxcontrib-serializinghtml \
+                            port:py${python.version}-sphinxcontrib-qthelp
+
     }
+
+    distname        Sphinx-${version}
 
     select.group    sphinx
     select.file     ${filespath}/py${python.version}-sphinx

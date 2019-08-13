@@ -8,7 +8,7 @@ github.setup        igordejanovic Arpeggio 1.9.0 v
 name                py-arpeggio
 platforms           darwin
 license             MIT
-maintainers         {yan12125 @yan12125} openmaintainer
+maintainers         nomaintainer
 
 description         Packrat parser interpreter
 long_description    Arpeggio is a recursive descent parser with memoization \
@@ -18,7 +18,7 @@ checksums           rmd160  2e9823273ad9a382aaa42dbc6553e3892f7f25d5 \
 sha256  fc6e1bd37fd1c5620f86c338cfad3bfd73217e46d79af831a62c22c3fc0b184a \
 size    758169
 
-python.version 37
+python.versions     27 36 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

@@ -1,11 +1,12 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-zdaemon
 set real_name       zdaemon
 version             2.0.4
-python.version 37
+python.versions     27
 maintainers         nomaintainer
 platforms           darwin
 description         Daemon process control library and tools for Unix-based systems

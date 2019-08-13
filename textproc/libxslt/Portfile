@@ -26,18 +26,17 @@ master_sites    http://xmlsoft.org/sources/ \
 #                gnome:sources/${name}/[strsed ${version} {/\.[0-9]*$//}]/
 
 checksums       rmd160  e1c3ad9b6f7dbdf069320097e19fce0f11ce5c12 \
-                sha256  8e36605144409df979cab43d835002f63988f3dc94d5d3537c12796db90e38c8 \
-                size    3444093
+sha256  8e36605144409df979cab43d835002f63988f3dc94d5d3537c12796db90e38c8 \
+size    3444093
 
 configure.args  --without-python \
                 --without-crypto \
                 --disable-silent-rules
 
-
 if {${name} eq ${subport}} {
     revision            1
-    depends_build       port:pkgconfig
 
+    depends_build       port:pkgconfig
     depends_lib-append  port:libiconv \
                         port:libxml2 \
                         port:zlib

@@ -7,8 +7,8 @@ PortGroup               wxWidgets 1.0
 name                    py-winpdb
 version                 1.4.8
 revision                2
-python.version 37
-python.default_version 37
+python.versions         27
+python.default_version  27
 platforms               darwin
 license                 GPL
 maintainers             {eborisch @eborisch} \
@@ -20,6 +20,7 @@ long_description        Winpdb is a platform independent GPL Python debugger \
                         modification, embedded debugging, encrypted \
                         communication and is up to 20 times faster than pdb. \
                         Winpdb is being developed by Nir Aides since 2005. 
+
 
 homepage                https://code.google.com/p/winpdb/
 master_sites            googlecode:winpdb
