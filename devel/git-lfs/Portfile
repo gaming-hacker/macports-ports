@@ -31,13 +31,13 @@ build.args              RONN=${prefix}/bin/ronn-2.6
 destroot {
     set bindir ${destroot}${prefix}/bin
     xinstall -m 755 ${worksrcpath}/bin/git-lfs ${bindir}
-#
-#     set mandir ${destroot}${prefix}/share/man/man1
-#     set manfiles [glob ${worksrcpath}/man/*.1]
-#     xinstall -m 644 {*}${manfiles} ${mandir}
-#
-#     set docdir ${destroot}${prefix}/share/doc/${subport}
-#     xinstall -d ${docdir}
-#     set docfiles [glob ${worksrcpath}/man/*.html]
-#     xinstall -m 644 {*}${docfiles} ${docdir}
+
+    set mandir ${destroot}${prefix}/share/man/man1
+    set manfiles [glob ${worksrcpath}/man/*.1]
+    xinstall -m 644 {*}${manfiles} ${mandir}
+
+    set docdir ${destroot}${prefix}/share/doc/${subport}
+    xinstall -d ${docdir}
+    set docfiles [glob ${worksrcpath}/man/*.html]
+    xinstall -m 644 {*}${docfiles} ${docdir}
 }

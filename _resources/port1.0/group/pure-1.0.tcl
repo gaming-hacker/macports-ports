@@ -35,11 +35,11 @@ proc pure.setup {module module_version} {
             configure.cxxflags-append -stdlib=${configure.cxx_stdlib}
         }
         build.args-append       CC="${configure.cc}" \
-                                CFLAGS="${configure.cflags} ${configure.cc_archflags}" \
-                                CPPFLAGS="${configure.cppflags}" \
-                                CXX="${configure.cxx}" \
-                                CXXFLAGS="${configure.cxxflags} ${configure.cxx_archflags}" \
-                                LDFLAGS="${configure.ldflags} ${configure.ld_archflags}"
+          CFLAGS="${configure.cflags} ${configure.cc_archflags}" \
+          CPPFLAGS="${configure.cppflags}" \
+          CXX="${configure.cxx}" \
+          CXXFLAGS="${configure.cxxflags} ${configure.cxx_archflags}" \
+          LDFLAGS="${configure.ldflags} ${configure.ld_archflags}"
     }
 
     post-destroot {

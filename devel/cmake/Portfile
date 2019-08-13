@@ -2,6 +2,7 @@
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
+PortGroup           xcodeversion 1.0
 
 # devel requires C++11 as of 2017-08-21
 # https://gitlab.kitware.com/cmake/cmake/commit/c1f3eb9f2d628b2911aa17f65012fab0befc4b87
@@ -31,16 +32,17 @@ dist_subdir         cmake
 
 subport cmake-devel {}
 
-set branch          3.13
+set branch          3.15
 
 if {${subport} eq ${name}} {
 
     # release
 
-    version         ${branch}.1
-    checksums       rmd160 17b512802c0ba4b8648044d68a23782075881bf2 \
-sha256 befe1ce6d672f2881350e94d4e3cc809697dd2c09e5b708b76c1dae74e1b2210 \
-size   8614663
+    version         ${branch}.2
+    checksums       rmd160 7eb821f5e17de67c63a7cf7ae8a7dba336239949 \
+sha256 539088cb29a68e6d6a8fba5c00951e5e5b1a92c68fa38a83e1ed2f355933f768 \
+size   9269449
+revision        0
 
     master_sites    ${homepage}/files/v${branch}/
     conflicts       cmake-devel
@@ -53,8 +55,9 @@ size   8614663
         patch-Modules-noArchCheck.release.diff \
         patch-CMakeFindFrameworks.cmake.release.diff \
         patch-Source_CMakeVersionCompute.cmake.release.diff \
-        patch-Source_CMakeLists.txt.release.diff \
-        patch-Source_Modules_FindLibUV.cmake.release.diff
+        patch-Source_Modules_FindLibUV.cmake.release.diff \
+        patch-fix_cxx14_17_checks.release.diff \
+        patch-fix-system-prefix-path.release.diff
 
     livecheck.type  regex
     livecheck.regex ${name}-(\[0-9.\]+)${extract.suffix}
@@ -64,11 +67,12 @@ size   8614663
 
     # devel
 
-    version         20181128
-    set commit      772edffbf0c08fc0a6fcf74fb98545b7afcfee13
-    checksums       rmd160 c704c91148b44a5092b9ea19b71107265f8d7ccf \
-sha256 0d26b360414f477ed50a5305b61634cc86f09e9e6ffdea19ce17d8cf5d9189fb \
-size   6506100
+    set commit 114c52fa5b890092e1409c232c97733a8c04d5bf
+    version   20190807-[string range ${commit} 0 7]
+    checksums rmd160 ea183fe009aaf29a69a451fb4e8d1f3be4899841 \
+sha256 55032ade37947686c5a12b4b37d2307893896e84a78c9451d356fe789ccbf99a \
+size   6991057
+    revision  0
 
     use_bzip2       yes
     master_sites    https://gitlab.kitware.com/cmake/cmake/repository/archive${extract.suffix}?ref=${commit}&
@@ -91,7 +95,7 @@ size   6506100
         patch-Source_Modules_FindLibUV.cmake.devel.diff
 
     livecheck.type  regex
-    livecheck.regex data-clipboard-text=\"(\[0-9a-g\]+)\"
+    #livecheck.regex data-clipboard-text=\"(\[0-9a-g\]+)\"
     livecheck.version ${commit}
     livecheck.url   https://gitlab.kitware.com/cmake/cmake/tree/master
 
@@ -132,13 +136,6 @@ platform darwin {
         configure.env-append CMAKE_OSX_SYSROOT="/"
     }
 
-    if {${os.arch} eq "i386" && ${os.major} <= 9} {
-        # The old system headers do some bit shifting on Intel about which
-        # newer compilers throw errors:
-        # SecKeychain.h:102:46: error: shift expression '(1853123693 << 8)' overflows [-fpermissive]
-        configure.cflags-append -fpermissive
-        configure.cxxflags-append -fpermissive
-    }
 }
 
 # jsoncpp 1.0+ requires CMake for building; circular dependencies are
@@ -159,23 +156,7 @@ configure.universal_args
 configure.post_args
 
 # CMake's configure script doesn't recognize `--host`.
-array set merger_host {i386 {} x86_64 {} ppc {} ppc64 {}}
-
-platform darwin 8 {
-    patchfiles-append patch-cmake-3-12-libuv-tiger.diff
-    configure.ldflags-append -Wl,-framework -Wl,ApplicationServices
-}
-
-# Leopard's Rosetta has some difficulties configuring the ppc slice
-platform darwin 9 {
-    global universal_archs_supported
-    if {${build_arch} eq "i386" || ${build_arch} eq "x86_64"} {
-        supported_archs i386 x86_64
-    } elseif {${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
-        supported_archs ppc ppc64
-    }
-    set universal_archs_supported ${supported_archs}
-}
+array set merger_host {i386 {} x86_64 {} }
 
 build.post_args VERBOSE=ON
 
@@ -191,17 +172,7 @@ post-patch {
     # used, because the PYTHON_EXECUTABLE is used only when building
     # docs -- so, when not building docs its setting makes no difference.
 
-    if {[variant_isset python37]} {
-        set PYTHON_VERSION_WITH_DOT "2.7"
-    } elseif {[variant_isset python34]} {
-        set PYTHON_VERSION_WITH_DOT "3.4"
-    } elseif {[variant_isset python35]} {
-        set PYTHON_VERSION_WITH_DOT "3.5"
-    } elseif {[variant_isset python36]} {
-        set PYTHON_VERSION_WITH_DOT "3.6"
-    } else {
-        set PYTHON_VERSION_WITH_DOT "3.7"
-    }
+    set PYTHON_VERSION_WITH_DOT "3.7"
     reinplace "s|__PYTHON_VERSION_WITH_DOT__|${PYTHON_VERSION_WITH_DOT}|g" ${worksrcpath}/macports.cmake
 }
 
@@ -230,17 +201,8 @@ variant gui description {Build Qt-based cmake-gui} {
     configure.args-append --qt-gui
 }
 
-variant qt4 conflicts qt5 requires gui description {Build Qt GUI using Qt4} {
-    PortGroup qt4 1.0
-    if {${subport} eq ${name}} {
-        patchfiles-append patch-qt4gui.release.diff
-    } else {
-        patchfiles-append patch-qt4gui.devel.diff
-    }
-    configure.args-append --qt-qmake=${qt_qmake_cmd}
-}
 
-variant qt5 conflicts qt4 requires gui description {Build Qt GUI using Qt5} {
+variant qt5 requires gui description {Build Qt GUI using Qt5} {
     PortGroup qt5 1.0
     if {${subport} eq ${name}} {
         patchfiles-append patch-qt5gui.release.diff
@@ -251,14 +213,7 @@ variant qt5 conflicts qt4 requires gui description {Build Qt GUI using Qt5} {
 }
 
 if {[variant_isset gui]} {
-    if {![variant_isset qt4] && ![variant_isset qt5]} {
-        default_variants +qt4
-    }
-
-    if {![variant_isset qt4] && ![variant_isset qt5]} {
-        ui_error "\n\nYou must select either the +qt4 or +qt5 variant when using variant +gui.\n"
-        return -code error "Invalid variant selection"
-    }
+        default_variants +qt5
 } else {
     configure.args-append --no-qt-gui
 }
@@ -270,35 +225,8 @@ variant docs description {Build documentation: HTML and manpages} {
         --sphinx-html
 }
 
-variant python37 conflicts python34 python35 python36 requires docs \
-    description {Build documentation using Sphinx from Python 3.7} {
-    depends_build-append port:py37-sphinx
-    configure.args-append \
-        --sphinx-build=${prefix}/bin/sphinx-build-2.7
-}
 
-variant python34 conflicts python37 python35 python36 python37 requires docs \
-    description {Build documentation using Sphinx from Python 3.4} {
-    depends_build-append port:py34-sphinx
-    configure.args-append \
-        --sphinx-build=${prefix}/bin/sphinx-build-3.4
-}
-
-variant python35 conflicts python37 python34 python36 python37 requires docs \
-    description {Build documentation using Sphinx from Python 3.5} {
-    depends_build-append port:py35-sphinx
-    configure.args-append \
-        --sphinx-build=${prefix}/bin/sphinx-build-3.5
-}
-
-variant python36 conflicts python37 python34 python35 python37 requires docs \
-    description {Build documentation using Sphinx from Python 3.6} {
-    depends_build-append port:py36-sphinx
-    configure.args-append \
-        --sphinx-build=${prefix}/bin/sphinx-build-3.6
-}
-
-variant python37 conflicts python37 python34 python35 python36 requires docs \
+variant python37 requires docs \
     description {Build documentation using Sphinx from Python 3.7} {
     depends_build-append port:py37-sphinx
     configure.args-append \
@@ -306,20 +234,5 @@ variant python37 conflicts python37 python34 python35 python36 requires docs \
 }
 
 if {[variant_isset docs]} {
-    if {![variant_isset python37] &&
-        ![variant_isset python34] &&
-        ![variant_isset python35] &&
-        ![variant_isset python36] &&
-        ![variant_isset python37]} {
         default_variants +python37
-    }
-
-    if {![variant_isset python37] &&
-        ![variant_isset python34] &&
-        ![variant_isset python35] &&
-        ![variant_isset python36] &&
-        ![variant_isset python37]} {
-        ui_error "\n\nYou must select either the +python37, +python34, +python35, +python36, or +python37 variant when using variant +docs.\n"
-        return -code error "Invalid variant selection"
-    }
 }

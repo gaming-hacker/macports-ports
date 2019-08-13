@@ -19,12 +19,6 @@ pre-configure {
     if {${configure.cxx_stdlib} eq "libstdc++"} {
         ui_error "${subport} does not support your selected MacPorts C++ runtime. libc++ must be selected and C++-based ports built against it."
 
-        if {${os.major} < 13} {
-            ui_error "Please follow the instructions on https://trac.macports.org/wiki/LibcxxOnOlderSystems."
-            ui_error "After adding the required options to macports.conf, reinstall all ports like you would when switching macOS versions."
-            ui_error "Follow step 3 on https://trac.macports.org/wiki/Migration in order to do this."
-        }
-
         return -code error "libstdc++ unsupported."
     }
 }

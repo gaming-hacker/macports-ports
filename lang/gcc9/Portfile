@@ -150,12 +150,21 @@ use_parallel_build  yes
 destroot.target     install install-info-host
 
 # Is this gcc release supported here.
-# pre-fetch {
-#     if { ${os.major} < 10 } {
-#         ui_error "${name} ${version} is not supported on Darwin ${os.major}"
-#         return -code error "incompatible OS X version"
-#     }
-# }
+pre-fetch {
+    if { ${os.major} < 11 } {
+        ui_error "${name} ${version} is not supported on Darwin ${os.major}"
+        return -code error "incompatible OS X version"
+    }
+}
+
+# gcc cannot build if libunwind-headers is active
+conflicts_build-append libunwind-headers
+
+# List of dylibs to be installed
+# Note that we really don't want to include libgcc_ext.10.[45].dylib here, but install_name_tool
+# doesn't know how to change the id of stubs, and it's easier than recreating them for each
+# gcc port.
+set dylibs {libgcc_ext.10.4.dylib libgcc_ext.10.5.dylib libgcc_s.1.dylib libgfortran.5.dylib libquadmath.0.dylib libstdc++.6.dylib libobjc-gnu.4.dylib libgomp.1.dylib libitm.1.dylib libssp.0.dylib libasan.5.dylib libubsan.1.dylib libatomic.1.dylib}
 
 if {${subport} eq "libgcc9"} {
 
@@ -314,21 +323,12 @@ variant universal {
     configure.args-delete --disable-multilib
 }
 # the generated compiler doesn't accept -arch
-if {[vercmp [macports_version] 2.5.99] >= 0} {
-configure.env-append \
-    "CPP=${configure.cc} -E" \
-    "CXXCPP=${configure.cxx} -E"
-build.env-append \
-    "CPP=${configure.cc} -E" \
-    "CXXCPP=${configure.cxx} -E"
-} else {
 configure.env-append \
     CPP="${configure.cc} -E" \
     CXXCPP="${configure.cxx} -E"
 build.env-append \
     CPP="${configure.cc} -E" \
     CXXCPP="${configure.cxx} -E"
-}
 configure.cc-append [get_canonical_archflags]
 configure.cc_archflags
 configure.cxx-append ${configure.cxx_archflags}

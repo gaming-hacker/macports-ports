@@ -19,31 +19,11 @@ if {${configure.cxx_stdlib} eq "libstdc++"} {
         global os.major os.platform
         depends_lib-delete path:lib/libgcc/libgcc_s.1.dylib:libgcc
         depends_lib-append path:lib/libgcc/libgcc_s.1.dylib:libgcc
-        if {${os.platform} eq "darwin" && ${os.major} < 13} {
-            # prior to OS X Mavericks, libstdc++ was the default C++ runtime, so
-            #    assume MacPorts libstdc++ must be ABI compatible with system libstdc++
-            # for OS X Mavericks and above, users must select libstdc++, so
-            #    assume they want default ABI compatibility
-            # see https://gcc.gnu.org/onlinedocs/gcc-5.2.0/libstdc++/manual/manual/using_dual_abi.html
-            configure.cxxflags-delete    -D_GLIBCXX_USE_CXX11_ABI=0
-            configure.cxxflags-append    -D_GLIBCXX_USE_CXX11_ABI=0
-            configure.objcxxflags-delete -D_GLIBCXX_USE_CXX11_ABI=0
-            configure.objcxxflags-append -D_GLIBCXX_USE_CXX11_ABI=0
-        }
     }
     # do not force all Portfiles to switch from depends_lib to depends_lib-append
     port::register_callback cxx11.add_dependencies
 
-    if {(${os.platform} eq "darwin" && ${os.major} < 10) || ${build_arch} eq "ppc" || ${build_arch} eq "ppc64"} {
-        # ports will build with gcc6, gcc4ABI-compatible
-        pre-configure {
-            ui_msg "C++11 ports are compiling with GCC. EXPERIMENTAL."
-        }
-        compiler.whitelist  macports-gcc-9
-        universal_variant   no
-    } else {
-        compiler.whitelist  macports-clang-8.0
-    }
+    compiler.whitelist  macports-clang-8.0
 
     # see https://trac.macports.org/ticket/54766
     depends_lib-append path:lib/libgcc/libgcc_s.1.dylib:libgcc
