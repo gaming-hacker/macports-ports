@@ -10,10 +10,11 @@ PortGroup           compiler_blacklist_versions 1.0
 compiler.blacklist-append {clang < 700}
 
 name                harfbuzz
-version             2.5.3
-checksums           rmd160  d3e57a0c2b0b43df571200db8635c88ae1959d5b \
-sha256  fed00dc797b7ba3ca943225f0a854baaed4c1640fff8a31d455cd3b5caec855c \
-size    5685712
+version             2.6.0
+checksums           rmd160  993fc58ca1f793a97ef6c37a8f2aee1c37856599 \
+                    sha256  9cf7d117548265f95ca884e2f4c9fafaf4e17d45a67b11107147b79eed76c966 \
+                    size    5736808
+
 
 categories          graphics
 platforms           darwin
@@ -42,20 +43,20 @@ configure.cxxflags-append   -DHB_NO_PRAGMA_GCC_DIAGNOSTIC_ERROR
 
 if {${name} eq ${subport}} {
     revision        0
-    
+
     depends_lib-append \
                     path:lib/pkgconfig/cairo.pc:cairo \
                     port:freetype \
                     path:lib/pkgconfig/glib-2.0.pc:glib2 \
                     port:graphite2
-    
+
     configure.args-append \
                     --with-cairo \
                     --with-freetype \
                     --with-glib \
                     --with-graphite2 \
                     --without-icu
-    
+
     test.run        yes
     test.target     check
 
@@ -72,7 +73,7 @@ if {${name} eq ${subport}} {
                     TODO \
                     ${destroot}${docdir}
     }
-    
+
     if {${os.platform} eq "darwin" && ${os.major} >= 9} {
         configure.args-append \
                     --with-coretext
@@ -97,15 +98,15 @@ if {${name} eq ${subport}} {
 
 subport harfbuzz-icu {
     revision        0
-    
+
     description     HarfBuzz ICU support library
-    
+
     long_description This library adds support for ICU (the International Components for Unicode) to HarfBuzz.
-    
+
     depends_lib-append \
                     port:harfbuzz \
                     port:icu
-    
+
     # Generate a newer libtool that passes -stdlib when linking C++ dylibs.
     use_autoreconf  yes
     autoreconf.args-append --force
@@ -116,7 +117,7 @@ subport harfbuzz-icu {
                     --without-glib \
                     --without-graphite2 \
                     --with-icu
-    
+
     destroot.dir    ${worksrcpath}/src
     destroot.args   cmake_DATA= \
                     lib_LTLIBRARIES=libharfbuzz-icu.la \
