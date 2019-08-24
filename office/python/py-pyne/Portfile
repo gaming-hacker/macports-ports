@@ -1,0 +1,42 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           python 1.0
+
+github.setup        pyne pyne 0.4.1
+
+revision            8
+name                py-pyne
+categories-append   science
+platforms           darwin
+license             BSD
+
+python.versions 37
+
+maintainers         nomaintainer
+
+description         Python for Nuclear Engineering
+long_description    PyNE is a toolkit for making common tasks in nuclear\
+                    engineering easier, faster, better
+
+homepage            http://www.pyne.io/
+
+checksums           rmd160  38443939bb5da0ad29c05373c3f42fa7fab96a57 \
+sha256  7102593eb8b570c9828ce4026a60ea1ad10b7a3c728179b5ff8780a61313cc9f
+
+if {${name} ne ${subport}} {
+    build.target        build
+    build.args          --hdf5=${prefix}
+
+    destroot.args       --hdf5=${prefix}
+
+    depends_build-append \
+                        path:bin/cmake:cmake \
+                        port:py${python.version}-cython
+
+    depends_lib-append  port:hdf5 \
+                        port:py${python.version}-numpy \
+                        port:py${python.version}-scipy \
+                        port:py${python.version}-tables
+}

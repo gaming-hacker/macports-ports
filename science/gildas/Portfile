@@ -2,15 +2,15 @@
 
 PortSystem          1.0
 PortGroup           compilers 1.0
-PortGroup           active_variants 1.1
+PortGroup           active_variants 1.1 
 
 name                gildas
-version             201811a
+version             201908a
 set my_version      [string tolower [clock format [clock scan 2000-[string range ${version} 4 5]-10] -format %b]][string range ${version} 2 3][string range ${version} 6 end]
 categories          science
 platforms           darwin
 maintainers         {smaret @smaret} \
-                    {@bardeau iram.fr:bardeau}
+                    {bardeau @bardeau}
 license             permissive
 
 description         Radioastronomy data analysis software
@@ -29,10 +29,11 @@ homepage            http://www.iram.fr/IRAMFR/GILDAS/gildas.html
 master_sites        http://www.iram.fr/~gildas/dist/ \
                     http://www.iram.fr/~gildas/dist/archive/gildas/
 distname            ${name}-src-${my_version}
+use_xz              yes
 
-checksums           rmd160  152d719f80dbb74bc6c8659d669232a3fd71594b \
-sha256  3b1441c0291fbfc31eb7bc4fe12185cbff1bc76ec6d9b346ed8ae76d3cda82b6 \
-size    32815973
+checksums           rmd160  2e15057647e9b8dfb7d60da4b06c9c0daf3f1023 \
+sha256  404945c1182c47ffa26d2c74e371b780b98563e7e5c39d0c295b98d441a9aa91 \
+size    138554660
 
 patch.pre_args      -p1
 patchfiles          patch-admin-Makefile.def.diff \
@@ -43,8 +44,8 @@ patchfiles          patch-admin-Makefile.def.diff \
 
 depends_lib         port:gtk2 \
                     port:libpng \
-                    port:python37 \
-                    port:py37-numpy
+                    port:python27 \
+                    port:py27-numpy
 
 depends_build       port:cfitsio \
                     port:pkgconfig \
@@ -60,8 +61,8 @@ require_active_variants gtk2 x11 quartz
 compilers.enforce_some_fortran cfitsio
 
 compilers.choose    fc
-compilers.setup     require_fortran
-configure.python    ${prefix}/bin/python3.7
+compilers.setup         require_fortran
+configure.python    ${prefix}/bin/python2.7
 
 post-extract {
     if {![gcc_variant_isset]} {
@@ -103,10 +104,11 @@ destroot {
     xinstall ${filespath}/mrtcal.in ${destroot}${prefix}/bin/mrtcal
     xinstall ${filespath}/sic.in ${destroot}${prefix}/bin/sic
     xinstall ${filespath}/sched-30m.in ${destroot}${prefix}/bin/sched-30m
+    xinstall ${filespath}/imager.in ${destroot}${prefix}/bin/imager
 
-    reinplace -W ${destroot}${prefix}/bin s|@PREFIX@|${prefix}|g astro class clic greg mapping mira mrtcal sic sched-30m
+    reinplace -W ${destroot}${prefix}/bin s|@PREFIX@|${prefix}|g astro class clic greg mapping mira mrtcal sic sched-30m imager
 
     # delete broken module
     delete ${destroot}${prefix}/lib/gildas/x86_64-darwin-gfortran/python/pyclassfiller
-
+    
 }

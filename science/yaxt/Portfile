@@ -20,7 +20,7 @@ checksums           rmd160  3d35c66e2c067729d8d585a78cc88e704676bddf \
 sha256  161f3e04f0ee04c034722fda5eac3ed0f9d141496708fa7cbabd2cb690e0a001 \
 size    780016
 
-mpi.setup           require -gfortran
+mpi.setup           require    -gfortran
 
 patchfiles          patch-Makefile.in.diff \
                     patch-configure.diff

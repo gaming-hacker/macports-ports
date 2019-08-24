@@ -5,7 +5,7 @@ PortGroup compilers 1.0
 
 name                wgrib2
 version             2.0.7
-revision            7
+revision            9
 platforms           darwin
 maintainers         {takeshi @tenomoto}
 license             public-domain
@@ -26,7 +26,7 @@ long_description   \
     GRIB-2 can reduce the file size by up to 80% (NAM, JPEG2000 compression).
 
 compilers.choose    cc fc f77 f90
-compilers.setup     require_fortran
+compilers.setup     require_fortran  
 
 depends_build       port:gctpc
 depends_lib         port:jasper \
@@ -79,14 +79,27 @@ pre-build {
             set fsymbol -DGFORTRAN
             build.args-append   USE_OPENMP=1
         }
+        if {[vercmp [macports_version] 2.5.99] >= 0} {
+        build.env           FC=${configure.fc} \
+                            F90=${configure.fc} \
+                            "FFLAGS=${configure.fflags} ${ompflg}"
+        } else {
         build.env           FC=\"${configure.fc}\" \
                             F90=\"${configure.fc}\" \
                             FFLAGS=\"${configure.fflags} ${ompflg}\"
+        }
     }
+    if {[vercmp [macports_version] 2.5.99] >= 0} {
+    build.env-append    "LDFLAGS=${ldflags} ${ompflg}" \
+                        CC=${configure.cc} \
+                        "CPPFLAGS=${fsymbol} ${configure.cppflags}" \
+                        "CFLAGS=${cflags} ${ompflg}"
+    } else {
     build.env-append    LDFLAGS=\"${ldflags} ${ompflg}\" \
                         CC=\"${configure.cc}\" \
                         CPPFLAGS=\"${fsymbol} ${configure.cppflags}\" \
                         CFLAGS=\"${cflags} ${ompflg}\"
+    }
 }
 
 destroot {
@@ -106,7 +119,7 @@ destroot {
 
 variant openmp description {Add support for OpenMP} {
     compiler.whitelist      macports-clang-7.0 macports-clang-6.0 macports-clang-5.0 \
-                            macports-clang-4.0 macports-clang-3.9 macports-clang-3.7 \
+                            macports-clang-3.7 \
                             macports-gcc-8 macports-gcc-7 macports-gcc-6 macports-gcc-5 \
                             macports-gcc-4.8 macports-gcc-4.7 macports-gcc-4.6 macports-gcc-4.5 \
                             macports-gcc-4.4 macports-gcc-4.3

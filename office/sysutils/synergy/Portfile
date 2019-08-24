@@ -1,0 +1,65 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem 1.0
+PortGroup cmake 1.0
+PortGroup github 1.0
+
+github.setup    symless synergy-core 1.8.8-stable v
+name            synergy
+categories      sysutils
+license         GPL-2
+platforms       darwin
+maintainers     nomaintainer
+description     A client/server for sharing a single mouse and keyboard
+long_description \
+    Synergy lets you easily share a single mouse and keyboard \
+    between multiple computers with different operating systems \
+    without special hardware. It is intended for users with \
+    multiple computers on their desk since each system uses its \
+    own display.
+homepage        http://synergy-project.org
+
+depends_lib     port:curl
+
+checksums       rmd160  b028c0eede2741888baf2071ae338aa118ba2c3a \
+sha256  fd49a293d70f6201f4182387328d85e874d350f1a5bcf90adf9c702805fb4975
+
+
+post-extract {
+    foreach x {gmock-1.6.0 gtest-1.6.0} {
+        xinstall -d ${worksrcpath}/ext/$x
+        system -W ${worksrcpath}/ext/$x "unzip ../$x.zip"
+    }
+}
+
+patchfiles patch-CMakeLists.txt.diff \
+           patch-src_CMakeLists.txt.diff \
+           patch-src-lib-platform-OSXScreen.mm.diff
+
+post-patch {
+    reinplace "s|@@PREFIX@@|${prefix}|g" ${worksrcpath}/src/CMakeLists.txt
+}
+
+set macos_major [lindex [split ${macosx_version} .] 0]
+set macos_minor [lindex [split ${macosx_version} .] 1]
+configure.args  -G \"Unix Makefiles\" \
+                -DOSX_TARGET_MAJOR=${macos_major} -DOSX_TARGET_MINOR=${macos_minor}
+
+use_parallel_build no
+
+destroot {
+        xinstall -d ${destroot}${prefix}/bin
+        xinstall -m 755 ${worksrcpath}/bin/synergyc ${destroot}${prefix}/bin
+        xinstall -m 755 ${worksrcpath}/bin/synergys ${destroot}${prefix}/bin
+        xinstall -m 644 ${worksrcpath}/doc/synergyc.man ${destroot}${prefix}/share/man/man1/synergyc.1
+        xinstall -m 644 ${worksrcpath}/doc/synergys.man ${destroot}${prefix}/share/man/man1/synergys.1
+        xinstall -d ${destroot}${prefix}/etc/${name}
+        xinstall -m 644 -W ${worksrcpath}/doc/ \
+            synergy.conf.example \
+            synergy.conf.example-advanced \
+            synergy.conf.example-basic \
+            ${destroot}${prefix}/etc/${name}
+}
+
+startupitem.create      yes
+startupitem.executable  ${prefix}/bin/synergys --no-daemon

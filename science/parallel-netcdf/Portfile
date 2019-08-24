@@ -28,7 +28,7 @@ checksums               rmd160  4de992174820518019392150d976d7f7eb81375e \
 sha256  ed189228b933cfeac3b7b4f8944eb00e4ff2b72cf143365b1a77890980663a09 \
 size    2089202
 
-mpi.setup               require -gcc9 -gfortran
+mpi.setup               require  -gfortran
 
 #compilers.choose       fc f77 f90 cc cxx
 
@@ -38,7 +38,7 @@ depends_build-append    port:perl5 \
                         port:libtool \
                         port:m4
 
-default_variants        +gcc9 +mpich
+default_variants        +gcc7 +mpich
 
 use_parallel_build      yes
 

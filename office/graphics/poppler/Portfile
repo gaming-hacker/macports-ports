@@ -1,0 +1,126 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           compiler_blacklist_versions 1.0
+PortGroup           conflicts_build 1.0
+PortGroup           cxx11 1.1
+PortGroup           gobject_introspection 1.0
+PortGroup           cmake 1.1
+PortGroup           legacysupport 1.0
+
+name                poppler
+conflicts           xpdf-tools
+version             0.79.0
+license             GPL-2+
+maintainers         {devans @dbevans} openmaintainer
+categories          graphics
+platforms           darwin
+homepage            https://poppler.freedesktop.org/
+
+description         Poppler is a PDF rendering library based on the xpdf-3.0 code base.
+long_description    ${description}
+
+master_sites        ${homepage}
+
+use_xz              yes
+
+checksums           rmd160  3b276167632bd3993c2e3531e7a0a1fbab42ea52 \
+sha256  f985a4608fe592d2546d9d37d4182e502ff6b4c42f8db4be0a021a1c369528c8 \
+size    1544140
+
+depends_build-append \
+                    port:pkgconfig
+
+depends_lib-append  port:bzip2 \
+                    port:curl \
+                    port:expat \
+                    port:fontconfig \
+                    port:freetype \
+                    port:jpeg \
+                    path:lib/pkgconfig/glib-2.0.pc:glib2 \
+                    path:lib/pkgconfig/cairo.pc:cairo \
+                    port:lcms2 \
+                    port:libiconv \
+                    port:libpng \
+                    port:openjpeg \
+                    port:poppler-data \
+                    port:tiff \
+                    port:zlib
+
+# remove top-level paths, such that internal headers and
+# libraries are used instead of any already-installed ones.
+configure.ldflags-delete -L${prefix}/lib
+configure.cppflags-delete -I${prefix}/include
+
+configure.ldflags-append -liconv
+gobject_introspection yes
+
+# C++14, thread_local
+configure.cxxflags-append -std=c++14
+compiler.blacklist-append {clang < 800.0.38}
+
+# https://bugs.freedesktop.org/show_bug.cgi?id=106417
+patchfiles-append   patch-bug106417.diff
+
+# https://trac.macports.org/ticket/57167
+patchfiles-append   patch-trac-57167.diff
+  
+configure.args-append \
+                    -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
+                    -DENABLE_QT5=OFF \
+                    -DBUILD_GTK_TESTS=OFF \
+                    -DBUILD_QT5_TESTS=OFF \
+                    -DBUILD_CPP_TESTS=OFF \
+                    -DWITH_NSS3=OFF
+
+subport poppler-qt5 {
+    PortGroup qt5 1.0
+
+    patchfiles-append       patch-qt5-106118.diff
+
+    configure.env-append    MOCQT5=${qt_bins_dir}/moc
+    configure.args-delete   -DENABLE_QT5=OFF
+    configure.args-delete   -DENABLE_XPDF_HEADERS=ON
+    configure.args-append   -DENABLE_UTILS=OFF
+    configure.args-append   -DENABLE_CPP=OFF
+    configure.args-append   -DENABLE_GLIB=OFF
+
+    post-destroot {
+        file delete ${destroot}${prefix}/lib/pkgconfig/poppler-cairo.pc
+    }
+}
+
+if {${subport} ne ${name}} {
+    depends_extract-append  port:git
+
+    depends_lib-append      port:poppler
+
+    post-extract {
+        system -W ${workpath} "${prefix}/bin/git clone --depth=1 http://anongit.freedesktop.org/git/poppler/test"
+    }
+
+
+# currently poppler only provides unit tests for the Qt wrappers
+
+    test.run    yes
+    test.dir    test
+    test.target test
+
+    post-destroot {
+        foreach dot_h [glob -nocomplain -directory ${destroot}${prefix}/include/poppler *.h] {
+            delete $dot_h
+        }
+        foreach libpoppler [glob -nocomplain ${destroot}${prefix}/lib/libpoppler.*] {
+            delete ${libpoppler}
+        }
+        delete  ${destroot}${prefix}/include/poppler/fofi \
+                ${destroot}${prefix}/include/poppler/goo \
+                ${destroot}${prefix}/include/poppler/splash \
+                ${destroot}${prefix}/lib/pkgconfig/poppler-splash.pc \
+                ${destroot}${prefix}/lib/pkgconfig/poppler.pc
+    }
+}
+
+livecheck.type      regex
+livecheck.url       ${homepage}releases.html
+livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)${extract.suffix}"

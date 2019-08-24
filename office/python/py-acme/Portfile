@@ -1,0 +1,52 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+set real_name       acme
+name                py-${real_name}
+version             0.37.2
+revision            0
+worksrcdir          ${real_name}-${version}
+distfiles           ${real_name}-${version}${extract.suffix}
+categories-append   security
+license             Apache-2
+maintainers         {mps @Schamschula} openmaintainer
+description         ACME protocol implementation in Python.
+long_description    ${description}
+platforms           darwin
+homepage            https://pypi.python.org/pypi/acme
+master_sites        pypi:a/acme
+
+python.versions 37
+
+checksums           rmd160  bef484f0cf5852b7c141612fb4201520bcb8f4c5 \
+sha256  88798fae3bc692397db79c66930bd02fcaba8a6b1fba9a62f111dda42cc47f5c \
+size    86528
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                    port:py${python.version}-funcsigs \
+                    port:py${python.version}-mock \
+                    port:py${python.version}-nose \
+                    port:py${python.version}-setuptools
+
+    depends_lib-append  \
+                    port:py${python.version}-asn1 \
+                    port:py${python.version}-cryptography \
+                    port:py${python.version}-idna \
+                    port:py${python.version}-josepy \
+                    port:py${python.version}-ndg_httpsclient \
+                    port:py${python.version}-openssl \
+                    port:py${python.version}-requests \
+                    port:py${python.version}-requests-toolbelt \
+                    port:py${python.version}-pyrfc3339 \
+                    port:py${python.version}-six \
+                    port:py${python.version}-tz \
+                    port:py${python.version}-werkzeug
+
+    livecheck.type      none
+} else {
+    livecheck.type      regex
+    livecheck.regex     ${real_name}-(\[0-9.\]+)${extract.suffix}
+}

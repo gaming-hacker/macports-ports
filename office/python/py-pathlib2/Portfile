@@ -1,0 +1,39 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-pathlib2
+version             2.3.4
+categories-append   devel
+platforms           darwin
+license             MIT
+supported_archs     noarch
+
+python.versions 37
+
+maintainers         {stromnov @stromnov} openmaintainer
+
+description         Object-oriented filesystem paths (backport of standard pathlib)
+long_description    ${description}
+
+homepage            https://pypi.python.org/pypi/pathlib2/
+master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
+
+distname            ${python.rootname}-${version}
+
+checksums           rmd160  869593d496986363c7c384cb3870049a5989ffc5 \
+sha256  446014523bb9be5c28128c4d2a10ad6bb60769e78bd85658fe44a450674e0ef8 \
+size    34325
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                        port:py${python.version}-setuptools
+    depends_lib-append  port:py${python.version}-six
+
+    if {${python.version} < 35} {
+        depends_lib-append  port:py${python.version}-scandir
+    }
+
+    livecheck.type      none
+}

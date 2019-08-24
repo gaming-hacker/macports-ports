@@ -1,0 +1,74 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           python 1.0
+
+github.setup        django django 2.2.3
+name                py-django
+categories-append   www
+platforms           darwin
+license             BSD
+maintainers         {mojca @mojca} openmaintainer
+
+description         Django is a high-level Python Web framework
+long_description    Django is a high-level Python Web framework that \
+                    encourages rapid development and clean, pragmatic \
+                    design.
+
+homepage            https://www.djangoproject.com
+
+python.versions 37
+supported_archs     noarch
+
+if {${name} ne ${subport}} {
+    if {${python.version} == 27} {
+        github.setup    django django 1.11.22
+
+        checksums       rmd160  9dd2a3321ee0c3c27aff123424a9ba5429ed9924 \
+sha256  c2a56ec1518670b3241705dc55ea62ce7edc224f5bc3c46742594587a0b11361 \
+size    7895235
+
+        github.livecheck.regex  {(1\..+?)}
+    } else {
+        checksums       rmd160  29f8c3f60a1556a4be5d4f61e750cff3ab487927 \
+sha256  247fde8a1c5d3928e067273f024f86ac31e0a3ae456c0ccf4fb56de3c5d6dabb \
+size    8905910
+
+        livecheck.type  none
+    }
+
+    depends_build-append    port:py${python.version}-setuptools
+    depends_run-append      port:py${python.version}-tz
+
+    variant bash_completion {
+        depends_run-append  path:etc/bash_completion:bash-completion
+
+        post-patch {
+            reinplace "s|django-admin.py|django-admin-${python.branch}.py|g" \
+                ${worksrcpath}/extras/django_bash_completion
+        }
+
+        post-destroot {
+            xinstall -d ${destroot}${prefix}/etc/bash_completion.d
+            xinstall -m 644 ${worksrcpath}/extras/django_bash_completion \
+                ${destroot}${prefix}/etc/bash_completion.d/django-admin-${python.branch}.py
+        }
+    }
+
+    # we want *-${python.branch}.py not *.py-${python.branch}
+    python.link_binaries no
+    python.move_binaries no
+    post-destroot   {
+        xinstall -m 644 -W ${worksrcpath} \
+            AUTHORS INSTALL LICENSE README.rst \
+            ${destroot}${prefix}/share/doc/${subport}
+
+        file copy ${worksrcpath}/docs \
+            ${destroot}${prefix}/share/doc/${subport}/docs
+
+        # To avoid conflict between py*-django
+        ln -s ${python.prefix}/bin/django-admin.py \
+            ${destroot}${prefix}/bin/django-admin-${python.branch}.py
+    }
+}

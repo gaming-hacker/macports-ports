@@ -1,0 +1,24 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Module-Metadata 1.000036
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+description         Gather package and POD information from perl module files
+long_description    ${description}
+
+platforms           darwin
+
+checksums           rmd160  f0b13aacd94fb8017fb8385c8fe5b6809ca1d254 \
+sha256  1c70e438cec1f7f99a5cccd4529efb4ee0fb7ca958ca885ebf09952015b957aa \
+size    50031
+
+if {${perl5.major} != ""} {
+    depends_lib-append \
+                    port:p${perl5.major}-version
+
+    supported_archs noarch
+}

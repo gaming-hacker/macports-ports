@@ -4,7 +4,6 @@ PortSystem          1.0
 PortGroup           cmake 1.0
 PortGroup           github 1.0
 PortGroup           mpi 1.0
-PortGroup user 1.0
 
 github.setup        sourceryinstitute OpenCoarrays 1.8.6
 revision            2
@@ -25,7 +24,10 @@ long_description    OpenCoarrays is an open-source software project \
                     Parallel Features in Fortran'.
 homepage            http://opencoarrays.org
 
-mpi.setup           require require_fortran
+mpi.setup           require require_fortran \
+                           \
+                    -clang -fortran
+universal_variant   no
 
 checksums           rmd160  fc31bb79550f46c1b6eb48c39193fd59f0c1d68c \
 sha256  738e803a86ff0aba568f89a2c7aa6a0fd96593c894c476cd9d4f4ea44c83006c

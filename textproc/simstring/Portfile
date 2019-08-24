@@ -38,10 +38,10 @@ use_autoconf        yes
 autoconf.cmd        ./autogen.sh
 
 # Python port
-subport py27-simstring {
+subport py37-simstring {
     PortGroup           python 1.0
     name                py-simstring
-    python.versions     27
+python.versions 37
     categories-append   textproc math
     description         SimString Python module
     long_description    ${description}

@@ -1,0 +1,42 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem              1.0
+PortGroup               github 1.0
+
+github.setup            Winetricks winetricks 20190615
+revision                0
+checksums               rmd160  4f35d538ea886e47c1852df0a5e58eb02e9095b8 \
+sha256  1a0f31544ebbb87e3f518d2ed93e0122db5782097f15c4cc3ca3969ab477b5ee \
+size    681081
+
+categories              x11
+maintainers             {ryandesign @ryandesign} openmaintainer
+license                 LGPL-2.1+
+homepage                http://www.winetricks.org/
+platforms               darwin
+supported_archs         noarch
+use_configure           no
+
+description             downloads and installs various redistributable \
+                        runtime libraries
+
+long_description        ${name} can help you prepare your system for Windows \
+                        applications that mistakenly assume all users' \
+                        systems have all the needed redistributable runtime \
+                        libraries or fonts.
+
+depends_run             port:zenity \
+                        port:cabextract \
+                        path:bin/openssl:openssl \
+                        bin:curl:curl \
+                        bin:unzip:unzip
+
+build {}
+
+destroot.args           PREFIX=${prefix}
+
+post-destroot {
+    set docdir ${prefix}/share/doc/${name}
+    xinstall -d ${destroot}${docdir}
+    xinstall -m 0644 -W ${worksrcpath} COPYING README.md ${destroot}${docdir}
+}

@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         WWW-Mechanize 1.91
+platforms           darwin
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+
+description         Handy web browsing in a Perl object
+long_description    WWW::Mechanize, or Mech for short, helps you automate \
+                    interaction with a website. It supports performing a \
+                    sequence of page fetches including following links and \
+                    submitting forms. Each fetched page is parsed and its \
+                    links and forms are extracted. A link or a form can be \
+                    selected, form fields can be filled and the next page \
+                    can be fetched. Mech also stores a history of the URLs \
+                    you have visited, which can be queried and revisited.
+
+checksums           rmd160  cd6ddc8f80a0c29d25aca3d01b40f63bc9fe318f \
+sha256  eb887afa401cf8c7f5294fe00bcf890e76712a2c916327ecabc029b843256131 \
+size    178877
+
+if {${perl5.major} != ""} {
+    depends_build-append \
+                    port:p${perl5.major}-cgi \
+                    port:p${perl5.major}-http-daemon \
+                    port:p${perl5.major}-http-server-simple \
+                    port:p${perl5.major}-test-deep \
+                    port:p${perl5.major}-test-fatal \
+                    port:p${perl5.major}-test-output \
+                    port:p${perl5.major}-test-warnings
+                    
+
+    depends_lib-append \
+                    port:p${perl5.major}-getopt-long \
+                    port:p${perl5.major}-html-form \
+                    port:p${perl5.major}-html-parser \
+                    port:p${perl5.major}-html-tree \
+                    port:p${perl5.major}-http-message \
+                    port:p${perl5.major}-libwww-perl \
+                    port:p${perl5.major}-uri
+
+    supported_archs noarch
+}

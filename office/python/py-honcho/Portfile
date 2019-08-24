@@ -1,0 +1,32 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           python 1.0
+PortGroup           select 1.0
+
+set realname        honcho
+
+github.setup        nickstenning ${realname} 1.0.1 v
+name                py-${realname}
+platforms           darwin
+supported_archs     noarch
+license             MIT
+maintainers         nomaintainer
+
+description         Python clone of Foreman (managing Procfile-based applications)
+long_description    ${description}
+
+checksums           rmd160  81c719eb6afca1307ff2dea27aa64f70d09025ab \
+sha256  846d64acd9d59cfad0708fb9203e5ae48229e3dcdce69eb6b99928ed365626d3
+
+python.versions 37
+
+if {${name} ne ${subport}} {
+
+    depends_build           port:py${python.version}-setuptools
+    depends_run             port:honcho_select
+
+    select.group            ${realname}
+    select.file             ${filespath}/${realname}${python.version}
+}

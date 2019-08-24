@@ -1,0 +1,81 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+
+name                proftpd
+version             1.3.6
+revision            0
+categories          net
+license             GPL-2+
+maintainers         nomaintainer
+description         Highly configurable ftp-server.
+long_description    ProFTPD is a highly configurable ftp daemon for unix \
+                    and unix-like operating systems. ProFTPD is designed \
+                    to be somewhat of a "drop-in" replacement for wu-ftpd \
+                    with a configuration format like Apache.
+homepage            http://www.proftpd.org
+platforms           darwin freebsd
+master_sites        ftp://ftp.proftpd.org/distrib/source/ \
+                    ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.proftpd.net/distrib/source/ \
+                    ftp://mirror.hostfuss.com/proftpd/distrib/source/ \
+                    ftp://ftp.piotrkosoft.net/pub/mirrors/ftp.proftpd.org/distrib/source/ \
+                    ftp://proftpd.get7.biz/proftpd/distrib/source/ \
+                    ftp://ftp.ibiblio.org/pub/mirrors/proftpd/distrib/source/ \
+                    ftp://ftp.solnet.ch/mirror/proftpd.org/distrib/source/
+
+checksums           rmd160  5da3934e46ea517ee6652382e5e3a9f87e591dd6 \
+sha256  91ef74b143495d5ff97c4d4770c6804072a8c8eb1ad1ecc8cc541b40e152ecaf \
+size    20251898
+                    
+depends_lib         path:lib/libssl.dylib:openssl
+
+configure.args      --sysconfdir=${prefix}/etc --localstatedir=${prefix}/var/run \
+                    --mandir=${prefix}/share/man install_user=`id -u` install_group=`id -g`
+
+# only one --with-modules arg can be used, likewise --with-{includes,libraries}
+set modules mod_tls
+set includes {}
+set libs {}
+pre-configure {
+    configure.args-append --with-modules=[join $modules :]
+    if {$includes != {}} {
+        configure.args-append --with-includes=[join $includes :]
+    }
+    if {$libs != {}} {
+        configure.args-append --with-libraries=[join $libs :]
+    }
+}
+
+pre-destroot {
+    reinplace "s|nogroup|nobody|g" ${worksrcpath}/sample-configurations/basic.conf
+    xinstall -m 755 -d ${destroot}${prefix}/var/run/proftpd
+    system "touch ${destroot}${prefix}/var/run/proftpd/proftpd.scoreboard"
+}
+
+variant mysql57 conflicts postgresql11 sqlite3 description {Build with mysql 5.7 support} {
+    depends_lib-append   port:mysql57
+    lappend modules mod_sql mod_sql_mysql
+    lappend includes ${prefix}/include/mysql57/mysql
+    lappend libs ${prefix}/lib/mysql57/mysql
+}
+
+variant postgresql11 conflicts mysql57 sqlite3 description {Build with PostgreSQL 11 support} {
+    depends_lib-append      port:postgresql11
+    lappend modules mod_sql mod_sql_postgres
+    lappend includes ${prefix}/include/postgresql11
+    lappend libs ${prefix}/lib/postgresql11
+}
+
+variant sqlite3 conflicts mysql57 postgresql11 description {Build with sqlite3 support} {
+    depends_lib-append      port:sqlite3
+    lappend modules mod_sql mod_sql_sqlite
+}
+
+variant quotatab description {Build with SQL quota support} {
+    lappend modules mod_quotatab mod_quotatab_sql
+}
+
+startupitem.create  yes
+startupitem.start   "${prefix}/sbin/proftpd"
+startupitem.restart "/bin/kill -HUP \$(/bin/cat ${prefix}/var/run/proftpd.pid)"
+startupitem.stop    "/bin/kill -15 \$(/bin/cat ${prefix}/var/run/proftpd.pid)"

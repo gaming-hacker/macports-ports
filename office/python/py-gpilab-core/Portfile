@@ -1,0 +1,78 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem              1.0
+PortGroup               python 1.0
+PortGroup               github 1.0
+
+github.setup            gpilab core-nodes 1.0.6 v
+name                    py-gpilab-core
+revision                0
+python.versions 37
+python.default_version  37
+platforms               darwin
+license                 {BSD LGPL-3+}
+maintainers             {eborisch @eborisch} \
+                        openmaintainer
+description             Core GPI nodes.
+
+long_description        The core nodes are a collection of basic data \
+                        manipulation and visualization algorithms. 
+
+homepage                http://gpilab.com
+
+checksums \
+rmd160  840f103578a72ee37aabd3d7b1c95046d1ee56b8 \
+sha256  6c7491cd5e6529eec7ea50ca0b927cfb6b6b62ccb1d1ea5e677ceda0391ec868 \
+size    174376
+
+if {${name} ne ${subport} } {
+    depends_lib-append      port:py${python.version}-gpilab-framework \
+                            port:py${python.version}-h5py \
+                            port:py${python.version}-matplotlib
+
+    patchfiles              math_fft_PyMOD_cpp.patch
+
+    use_configure no
+
+    build { 
+        set MODS [glob ${worksrcpath}/*/*_PyMOD.cpp]
+        foreach mod ${MODS} {
+            set D [file dirname ${mod}]
+            set M [string range [file tail ${mod}] 0 end-10]
+            ln -s ${worksrcpath} ${D}/core
+            system -W ${D} "${prefix}/bin/gpi_make-${python.version} ${M}"
+            delete ${D}/core
+        }
+        system -W ${worksrcpath} \
+            "${prefix}/bin/python${python.branch} -O -m compileall ."
+    }
+
+    destroot {
+        xinstall -d ${destroot}${prefix}/share/${subport}/
+     
+        set PP ${destroot}${python.pkgd}/gpi/node-libs
+        xinstall -d ${PP}
+
+        # Normalize hack required due to symlink generation in github portgroup
+        file copy [file dirname [file normalize ${worksrcpath}/_]] ${PP}/core
+
+        system -W ${PP}/core \
+            "mv {AUT,LIC,COP,READ}* ${destroot}${prefix}/share/${subport}"
+
+        delete ${PP}/core/.gitattributes \
+               ${PP}/core/.gitignore
+
+        fs-traverse pth ${PP}/core {
+            if {[file isfile ${pth}]} {
+                if {[string match *build/temp* ${pth}] || 
+                    [string match *.c ${pth}] ||
+                    [string match *.cpp ${pth}]} {
+                    delete ${pth}
+                }
+            }
+        }
+    }
+                            
+    livecheck.type          none
+}
+

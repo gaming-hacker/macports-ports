@@ -1,0 +1,56 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+PortGroup           github 1.0
+
+github.setup        numba llvmlite 0.29.0 v
+name                py-llvmlite
+revision            0
+categories-append   devel science
+platforms           darwin
+license             BSD
+
+python.versions 37
+
+maintainers         {stromnov @stromnov} openmaintainer
+
+description         A lightweight LLVM python binding for writing JIT compilers
+long_description    ${description}
+
+homepage            http://llvmlite.pydata.org/
+
+checksums           rmd160  1f338c3b64bff688f47d98812f27f6070ba6143d \
+sha256  ce381131ded4668dbe150634a0736da324fa32c9e31068d2305ced853f09f6fc \
+size    196505
+
+if {${name} ne ${subport}} {
+    patchfiles-append   patch-ffi_Makefile.osx.diff
+
+    post-patch {
+        reinplace "s|%%CXX%%|clang++-mp-7.0|" ${worksrcpath}/ffi/Makefile.osx
+    }
+
+    depends_build-append \
+                        port:py${python.version}-setuptools \
+                        port:clang-7.0
+
+    depends_lib-append  port:llvm-7.0 \
+                        port:zlib \
+                        port:ncurses \
+                        port:libxml2
+
+    if {${python.version} < 34} {
+        depends_lib-append  port:py${python.version}-enum34
+    }
+
+    build.env-append    LLVM_CONFIG=llvm-config-mp-7.0
+    destroot.env-append LLVM_CONFIG=llvm-config-mp-7.0
+
+    livecheck.type      none
+} else {
+    livecheck.name      ${python.rootname}
+    livecheck.url       https://pypi.org/pypi/${livecheck.name}/json
+    livecheck.type      regex
+    livecheck.regex     {"version":"([^"]+)"[,\}]}
+}

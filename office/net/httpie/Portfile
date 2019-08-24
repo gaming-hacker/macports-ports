@@ -1,0 +1,32 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           python 1.0
+
+github.setup        jakubroztocil httpie 1.0.2
+
+maintainers         {g5pw @g5pw} openmaintainer
+categories          net
+description         HTTPie is a command line HTTP client, a user-friendly cURL replacement.
+long_description    HTTPie (pronounced aych-tee-tee-pie) is a command line HTTP \
+                    client. Its goal is to make CLI interaction with web \
+                    services as human-friendly as possible. It provides a simple \
+                    http command that allows for sending arbitrary HTTP requests \
+                    using a simple and natural syntax, and displays colorized \
+                    responses. HTTPie can be used for testing, debugging, and \
+                    generally interacting with HTTP servers.
+platforms           darwin
+license             BSD
+homepage            http://httpie.org
+
+python.default_version      37
+
+depends_lib-append  port:py${python.version}-requests \
+                    port:py${python.version}-pygments
+
+checksums           rmd160  65f7547a0f0e0d743e97c947fa397074f3f237e0 \
+sha256  0365f45af4e759593f0eb7ef335d3211029c4dbd4c739364dc9677d49b5eb1d0 \
+size    765206
+
+python.link_binaries_suffix

@@ -1,0 +1,48 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem 1.0
+PortGroup           github 1.0
+PortGroup           cxx11 1.1
+
+github.setup        vgough encfs 1.8.1 v
+revision            3
+categories          fuse
+platforms           darwin
+maintainers         nomaintainer
+license             {GPL-3+ OpenSSLException}
+
+description         An encrypted pass-through FUSE filesystem
+
+long_description    EncFS is an encrypted pass-through filesystem which \
+                    runs in userspace, using the FUSE kernel module.  \
+                    Similar in design to CFS and other pass-through \
+                    filesystems, all data is encrypted and stored in the \
+                    underlying filesystem.  Unlike loopback filesystems, \
+                    there is no predetermined or pre-allocated filesystem size.
+
+homepage            https://vgough.github.io/encfs/
+github.tarball_from releases
+
+checksums           rmd160  206cc3779222cb6df5278d27ad4a58c25138ab02 \
+sha256  8a0257ff500c14244ee99acdd472696966796e2a0931e4a132191f14a666d5d1
+
+depends_build       port:pkgconfig
+depends_lib         port:rlog path:lib/libssl.dylib:openssl port:osxfuse port:gettext port:boost
+
+# osxfuse is not universal
+universal_variant   no
+
+patchfiles          patch-configure.ac.diff
+
+platform darwin {
+    patchfiles-append   patch-encfs-encfssh.diff
+}
+
+post-patch {
+    reinplace "s|@@PREFIX@@|${prefix}|g" ${worksrcpath}/configure.ac
+}
+
+use_autoreconf      yes
+autoreconf.args     -fvi
+
+configure.args      --with-boost=${prefix}

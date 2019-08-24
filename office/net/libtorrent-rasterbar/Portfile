@@ -1,0 +1,66 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           active_variants 1.1
+PortGroup           compiler_blacklist_versions 1.0
+PortGroup           conflicts_build 1.0
+PortGroup           cxx11 1.1
+PortGroup           github 1.0
+
+github.setup        arvidn libtorrent 1_2_1 libtorrent-
+name                libtorrent-rasterbar
+version             [string map {_ .} ${version}]
+license             BSD
+categories          net
+maintainers         {devans @dbevans} openmaintainer
+platforms           darwin
+homepage            https://libtorrent.org/
+
+description         A C++ bittorrent library (not the same as port libtorrent)
+
+long_description    A C++ bittorrent library designed to run on anything from embedded systems to large scale \
+                    seed servers. It comes with python bindings and detailed documentation.
+
+checksums           rmd160  58e33c788d50c7188f7e32af2246a58fd6e10869 \
+sha256  aaa23969813ada46c70e45eb2c485934d7e16fcbad57ab749280b40d2fef99a4 \
+size    3564372
+
+depends_build       port:pkgconfig \
+                    port:autoconf \
+                    port:automake \
+                    port:libtool
+
+depends_lib         port:boost \
+                    path:lib/libssl.dylib:openssl
+
+patchfiles          patch-configure.ac.diff
+
+# don't overwrite any existing blacklist
+# Apple clang less than 900.0.39.2 fails to build
+compiler.blacklist-append  *gcc-3.* *gcc-4.* {clang < 900.0.39.2}
+
+configure.args      --disable-silent-rules \
+                    --enable-python-binding \
+                    --with-boost-libdir="${prefix}/lib" \
+                    --with-boost-python="boost_python-mt"
+
+configure.cmd       ./autotool.sh && ./configure
+
+universal_variant   no
+
+conflicts_build     ${name}
+
+variant python27 description {Build bindings for Python 2.7} {
+        require_active_variants boost python27
+        depends_lib-append port:python27
+        configure.python ${prefix}/bin/python2.7
+        configure.env-append \
+                PYTHON_INSTALL_PARAMS=--prefix=${destroot}${frameworks_dir}/Python.framework/Versions/2.7 \
+                PYTHON_EXTRA_LIBS=
+}
+
+variant error_logging description {Enable logging of errors to disk} {
+        configure.args-append --enable-logging=errors
+}
+
+default_variants    +python27

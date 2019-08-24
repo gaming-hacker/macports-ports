@@ -1,0 +1,46 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-configparser
+epoch               1
+version             3.8.1
+revision            0
+categories-append   devel
+platforms           darwin
+license             MIT
+supported_archs     noarch
+
+python.versions 37
+
+maintainers         {stromnov @stromnov} openmaintainer
+
+description         Configparser from Python 3.8 to Python 2.6-3.7
+long_description    ${description}
+
+homepage            https://github.com/jaraco/configparser/
+master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
+
+distname            ${python.rootname}-${version}
+
+checksums           rmd160  4c82ab13fa0b390d1245df4e1d70581b957a4b6f \
+sha256  bc37850f0cc42a1725a796ef7d92690651bf1af37d744cc63161dac62cabee17 \
+size    72571
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                        port:py${python.version}-setuptools
+    depends_lib-append  port:py${python.version}-backports
+
+    post-destroot {
+        foreach f {__init__.py __init__.pyc __init__.pyo __pycache__} {
+            set fp "${destroot}${python.pkgd}/backports/$f"
+            if {[file exists ${fp}]} {
+                file delete -force ${fp}
+            }
+        }
+    }
+
+    livecheck.type      none
+}

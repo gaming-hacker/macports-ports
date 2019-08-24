@@ -1,0 +1,18 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Lingua-Stem-Ru 0.04
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+description         Porter's stemming algorithm for Russian (KOI8-R only)
+long_description    ${description}
+
+platforms           darwin
+
+checksums           rmd160  9179527391a1c16f1d8274394d6add493a167c77 \
+sha256  1270ceb74764fdb958370a808834af976e87f69a85470f8bc46258797eab5228
+
+supported_archs     noarch

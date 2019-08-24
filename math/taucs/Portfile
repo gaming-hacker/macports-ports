@@ -34,7 +34,7 @@ depends_lib-append      port:metis \
 compiler.blacklist-append \
                         {clang < 211.10.1}
 compilers.choose        cc
-compilers.setup
+compilers.setup         
 linalg.setup            noveclibfort blas_only
 
 post-extract {

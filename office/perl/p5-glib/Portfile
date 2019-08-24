@@ -1,0 +1,23 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Glib 1.329 ../../authors/id/X/XA/XAOC
+platforms           darwin
+maintainers         nomaintainer
+license             LGPL-2.1+
+description         Glib - Perl wrappers for the GLib utility and Object libraries
+long_description    ${description}
+
+checksums           rmd160  21758851a5a6c5b5639c85ca138da2a956e07960 \
+sha256  7b4ce1c8cf884849189efaa0b5722ecfb0d87a15f94fccc6a6017d3b3f982a35 \
+size    301794
+
+if {${perl5.major} != ""} {
+    depends_lib-append \
+                    path:lib/pkgconfig/glib-2.0.pc:glib2 \
+                    port:p${perl5.major}-extutils-depends \
+                    port:p${perl5.major}-extutils-pkgconfig
+}

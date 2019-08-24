@@ -1,0 +1,68 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+
+name                mod_qos
+version             11.63
+revision            0
+categories          www
+license             Apache-2
+maintainers         nomaintainer
+description         mod_qos is a quality of service module for the Apache web server
+long_description    ${description} implementing control mechanisms that can provide \
+                    different levels of priority to different HTTP requests.
+platforms           darwin
+homepage            http://mod-qos.sourceforge.net/index.html
+master_sites        sourceforge:project/mod-qos/
+
+checksums           rmd160  5016b229b68c3b0051f94edd72b7bd4de1044d52 \
+sha256  1a391c476d59617f69108d2069a4e0eadfc639caf3a4da29b0374d9e603815c8 \
+size    1244801
+
+depends_build       port:autoconf \
+                    port:automake
+
+depends_lib         port:apache2 \
+                    port:db48 \
+                    port:libpng \
+                    path:lib/libssl.dylib:openssl \
+                    port:pcre
+
+patchfiles          patch-tools-Makefile.in.diff
+
+configure.dir       ${worksrcpath}/tools
+configure.env       LDFLAGS=-L${prefix}/lib/db48
+build.dir           ${configure.dir}
+
+pre-configure { copy ${filespath}/aclocal.m4 ${worksrcpath}/tools }
+
+set apxs            ${prefix}/bin/apxs
+set mdir            ${destroot}${prefix}/lib/apache2/modules/
+
+variant apache22 description "use apache22 instead of apache2" {
+    # remove after 2020-05-06
+    ui_error "Please do not install this variant since Apache 2.2 is obsolete."
+    return -code error
+}
+
+post-build {
+   system -W ${worksrcpath}/apache2 "${apxs} -c mod_qos.c -lcrypto -lpcre"
+}
+
+pre-destroot {
+   xinstall -m 755 -d ${mdir}
+}
+
+post-destroot {
+    xinstall -m 755 ${worksrcpath}/apache2/.libs/mod_qos.so ${mdir}
+    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}/images
+    xinstall -m 644 {*}[glob -type f ${worksrcpath}/doc/*] \
+        ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 644 {*}[glob ${worksrcpath}/doc/images/*] \
+        ${destroot}${prefix}/share/doc/${name}/images
+}
+
+livecheck.type      regex
+livecheck.url       https://sourceforge.net/projects/mod-qos/rss
+livecheck.regex     ${name}-(\[0-9.\]+)${extract.suffix}

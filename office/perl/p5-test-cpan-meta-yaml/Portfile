@@ -1,0 +1,23 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Test-CPAN-Meta-YAML 0.25
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+description         Test::CPAN::Meta::YAML - Validate a META.yml file within a CPAN distribution.
+long_description    ${description}
+
+platforms           darwin
+
+checksums           rmd160  439ea0bfdf326ced94cfe49fa1069ef924e88640 \
+sha256  33f5c474fb7cb57a7bf0005b20fde901cf6b5813e306c9370ae4263d3ffabc60
+
+if {${perl5.major} != ""} {
+    depends_lib-append \
+                    port:p${perl5.major}-test-yaml-valid
+
+    supported_archs noarch
+}

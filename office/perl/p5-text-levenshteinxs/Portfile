@@ -1,0 +1,14 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Text-LevenshteinXS 0.03
+revision            4
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+description         An XS implementation of the Levenshtein edit distance
+long_description    ${description}
+platforms           darwin
+checksums           md5 576d6dc3e6aa9e80686f244969e885e6

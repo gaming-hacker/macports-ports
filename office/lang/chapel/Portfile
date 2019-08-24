@@ -1,0 +1,77 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+
+github.setup        chapel-lang chapel 1.15.0
+categories          lang parallel science
+platforms           darwin
+supported_archs     i386 x86_64
+maintainers         {takeshi @tenomoto} openmaintainer
+description         parallel programming language
+long_description \
+    Chapel is a new parallel programming language \
+    being developed by Cray Inc. as part of the DARPA-led \
+    High Productivity Computing Systems program (HPCS).
+license             BSD
+homepage            http://chapel.cray.com/
+
+checksums           rmd160  ed4a788016dc6e015176c9e8a79eaffdbfb7747f \
+sha256  5474ef5e20ab3b46804ce9c35524b1b8995e7845603e99a0525bca8199c62d4b
+
+use_configure       no
+use_parallel_build  no
+
+configure.optflags  -O3
+
+variant universal {}
+
+build.env-append    CHPL_HOST_COMPILER=clang \
+                    CHPL_TARGET_COMPILER=clang \
+                    CHPL_COMM=none \
+                    CHPL_TASKS=fifo \
+                    CHPL_MEM=cstdlib \
+                    CHPL_GMP=none \
+                    CHPL_REGEXP=none \
+                    CHPL_LLVM=none
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env-append    LDFLAGS=[get_canonical_archflags ld]
+} else {
+build.env-append    LDFLAGS="[get_canonical_archflags ld]"
+}
+
+build.args          CXX=${configure.cxx} \
+                    CC=${configure.cc} \
+                    OPT_CFLAGS="${configure.optflags} [get_canonical_archflags cc]"
+
+destroot {
+    xinstall -m 755 ${worksrcpath}/bin/darwin/chpl ${destroot}${prefix}/bin
+    xinstall -d ${destroot}${prefix}/lib/${name}
+    foreach d "compiler lib examples make modules util runtime" {
+        file copy ${worksrcpath}/${d} ${destroot}${prefix}/lib/${name}
+    }
+    xinstall -d ${destroot}${prefix}/lib/${name}/third-party
+    foreach d "chpl-venv fltk gasnet gmp hwloc jemalloc massivethreads qthread re2" {
+        xinstall -d ${destroot}${prefix}/lib/${name}/third-party/$d
+        xinstall -m 644 ${worksrcpath}/third-party/${d}/Makefile.include \
+            ${destroot}${prefix}/lib/${name}/third-party/$d
+    }
+    xinstall -d ${destroot}${prefix}/lib/${name}/third-party/llvm
+    foreach f "Makefile.include-none Makefile.share" {
+        xinstall -m 644 ${worksrcpath}/third-party/llvm/$f \
+            ${destroot}${prefix}/lib/${name}/third-party/llvm
+    }
+    xinstall -d ${destroot}${prefix}/lib/${name}/third-party/utf8-decoder
+    xinstall -m 644 ${worksrcpath}/third-party/utf8-decoder/utf8-decoder.h \
+        ${destroot}${prefix}/lib/${name}/third-party/utf8-decoder
+    xinstall -d ${destroot}${prefix}/etc/${name}
+    foreach d "README.md emacs source-highlight vim" {
+        file copy ${worksrcpath}/highlight/${d} ${destroot}${prefix}/etc/${name}
+    }
+}
+
+variant universal {}
+
+notes "
+set environmental variables following ${prefix}/lib/${name}/util/quickstart/setchplenv.bash
+"

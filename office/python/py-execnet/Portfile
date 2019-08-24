@@ -1,0 +1,43 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-execnet
+version             1.6.0
+revision            0
+categories-append   devel
+platforms           darwin
+supported_archs     noarch
+license             MIT
+maintainers         nomaintainer
+
+description         rapid multi-Python deployment
+long_description    ${description}
+
+homepage            https://github.com/pytest-dev/execnet
+master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
+
+distname            ${python.rootname}-${version}
+
+checksums           rmd160  a71a6ad04f12ef5b2db7170487573d8a5c3c0ddf \
+sha256  752a3786f17416d491f833a29217dda3ea4a471fc5269c492eebcee8cc4772d3 \
+size    169744
+
+python.versions 37
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                    port:py${python.version}-setuptools_scm
+
+    depends_lib-append \
+                    port:py${python.version}-apipkg
+
+    post-destroot {
+        xinstall -m 0755 -d ${destroot}${prefix}/share/doc/${subport}
+        xinstall -m 0644 -W ${worksrcpath} CHANGELOG.rst ISSUES.txt LICENSE README.rst \
+            ${destroot}${prefix}/share/doc/${subport}
+    }
+
+    livecheck.type  none
+}

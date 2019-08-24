@@ -4,8 +4,7 @@ PortSystem          1.0
 PortGroup           compilers 1.0
 PortGroup           github 1.0
 
-github.setup        nco nco 4.7.7
-revision            1
+github.setup        nco nco 4.8.0
 platforms           darwin
 maintainers         {takeshi @tenomoto}
 license             GPL-3
@@ -13,11 +12,11 @@ categories          science
 description         The netCDF Operators
 
 compilers.choose    cc cxx
-compilers.setup
+compilers.setup      
 
-checksums           rmd160  5f9a327b430c2ac945ecf5b3e47061f157d50837 \
-sha256  ae6cc2363b947bdcd9c06379f1b0cf029a1f97f58a9450d0f68b09b07d5eff90 \
-size    5106943
+checksums           rmd160  12272e2a538246ad77de16168aa769d94f781a20 \
+sha256  6b2e74dbc14514f55700fcec9fe9c156ca5c59515ea2e2df4535a01345c73e80 \
+size    5224429
 
 homepage            http://nco.sourceforge.net/
 long_description \
@@ -83,7 +82,7 @@ variant openmp description {enable support for OpenMP} {
     configure.args-delete   --disable-openmp
     configure.args-append   --enable-openmp --disable-ncoxx
     compiler.whitelist      macports-clang-7.0 macports-clang-6.0 macports-clang-5.0 \
-                            macports-clang-4.0 macports-clang-3.9 macports-clang-3.7 \
+                            macports-clang-3.7 \
                             macports-gcc-8 macports-gcc-7 macports-gcc-6 macports-gcc-5 \
                             macports-gcc-4.8 macports-gcc-4.7 macports-gcc-4.6 macports-gcc-4.5 \
                             macports-gcc-4.4 macports-gcc-4.3

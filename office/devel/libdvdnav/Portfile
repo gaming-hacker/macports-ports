@@ -1,0 +1,53 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+
+name                libdvdnav
+version             6.0.0
+categories          devel multimedia
+license             GPL-2+
+maintainers         nomaintainer
+
+description         DVD navigation library
+
+long_description    libdvdnav is a library that allows easy use of \
+                    sophisticated DVD navigation features such as DVD menus, \
+                    multiangle playback and even interactive DVD games. All \
+                    this functionality is provided through a simple API which \
+                    provides the DVD playback as a single logical stream of \
+                    blocks, intermitted by special dvdnav events to report \
+                    certain conditions. The main usage of libdvdnav is a loop \
+                    regularly calling a function to get the next block, \
+                    surrounded by additional calls to tell the library of \
+                    user interaction. The whole DVD virtual machine and \
+                    internal playback states are completely encapsulated.
+
+platforms           darwin
+
+depends_lib         port:libdvdread
+
+use_autoreconf      yes
+
+homepage            http://dvdnav.mplayerhq.hu/
+master_sites        https://download.videolan.org/pub/videolan/${name}/${version}/
+use_bzip2           yes
+checksums           rmd160  0b972d4bb872135f8b6c206163373ee9b4454ea7 \
+sha256  f0a2711b08a021759792f8eb14bb82ff8a3c929bf88c33b64ffcddaa27935618
+
+depends_build-append \
+                    port:pkgconfig
+
+configure.args-append   --disable-silent-rules
+
+# Fix build failure when upgrading from previous version.
+configure.cppflags-replace -I${prefix}/include -isystem${prefix}/include
+
+post-destroot {
+    xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 644 -W ${worksrcpath} AUTHORS COPYING ChangeLog \
+        README TODO ${destroot}${prefix}/share/doc/${name}
+}
+
+livecheck.type      regex
+livecheck.url       https://download.videolan.org/pub/videolan/${name}/
+livecheck.regex     {>([0-9.]+)/<}

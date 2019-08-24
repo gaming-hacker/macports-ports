@@ -1,0 +1,38 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-snowballstemmer
+version             1.9.0
+revision            0
+
+platforms           darwin
+supported_archs     noarch
+license             BSD
+maintainers         nomaintainer
+
+description         This package provides 23 stemmer algorithms for 22 languages \
+                    generated from Snowball algorithms.
+long_description    ${description}
+
+homepage            https://github.com/snowballstem/snowball
+master_sites        pypi:s/snowballstemmer
+distname            snowballstemmer-${version}
+
+checksums           sha256  9f3b9ffe0809d174f7047e121431acf99c89a7040f0ca84f94ba53a498e6d0c9 \
+rmd160  32470e6eec372f61106a0fd9421836d0bbcbe274 \
+size    76910
+
+python.versions 37
+
+if {$subport ne $name} {
+    post-destroot {
+        set docdir ${prefix}/share/doc/${subport}
+        xinstall -d ${destroot}${docdir}
+        xinstall -m 0644 -W ${worksrcpath} README.rst \
+            ${destroot}${docdir}
+    }
+
+    livecheck.type  none
+}

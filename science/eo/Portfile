@@ -3,7 +3,6 @@
 PortSystem              1.0
 PortGroup               cmake 1.0
 PortGroup               compilers 1.0
-PortGroup user 1.0
 
 name                    eo
 categories              science
@@ -48,5 +47,28 @@ configure.args-append   -DENABLE_CMAKE_TESTING:BOOL=ON
 test.run                yes
 
 compilers.choose        cc cxx
+compilers.setup           
+
+#gcc44 gcc45 gcc46 dragonegg: cc1: error: unrecognized command line option "-arch"
+
+# gcc, clang:  fails test 40 - t-eoIQRStat (Failed)
+
+# caused by gcc use of -ftree-vectorize -march=native -O3
+# if /opt/local/bin/g++-mp-4.4 -DHAVE_CONFIG_H -I. -I. -I../..   -I/opt/local/include -I../../src -pipe -Os -fpermissive -ftree-vectorize -march=native -O3 -MT make_genotype_real.o -MD -MP -MF ".deps/make_genotype_real.Tpo" -c -o make_genotype_real.o make_genotype_real.cpp; \
+#         then mv -f ".deps/make_genotype_real.Tpo" ".deps/make_genotype_real.Po"; else rm -f ".deps/make_genotype_real.Tpo"; exit 1; fi
+# {standard input}:807:no such instruction: `vmovsd (%r9), %xmm1'
+# {standard input}:808:no such instruction: `vmovd %rbx, %xmm0'
+# {standard input}:809:no such instruction: `vucomisd %xmm0, %xmm1'
+# {standard input}:810:no such instruction: `vcmpnltsd %xmm1, %xmm0,%xmm2'
+# {standard input}:813:no such instruction: `vandpd %xmm2, %xmm0,%xmm0'
+# {standard input}:814:no such instruction: `vandnpd %xmm1, %xmm2,%xmm1'
+
+# There is no longer an option (as there was in 1.0.1) to install applications
+#variant applications {
+#        license-append  GPL-2+
+#        configure.args-append   --enable-applications
+#        configure.args-delete   --disable-applications
+#}
+#
 
 livecheck.distname   eo

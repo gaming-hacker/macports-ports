@@ -1,0 +1,63 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-pyobjc-quartz
+python.rootname     pyobjc-framework-Quartz
+version             5.2
+revision            0
+categories-append   devel
+platforms           darwin
+license             MIT
+maintainers         nomaintainer
+
+description         Quartz wrappers for PyObjC
+long_description    This port provides the CoreGraphics, ImageIO, \
+                    QuartzComposer, QuartzCore, QuartzFilters, ImageKit, \
+                    PDFKit and CoreVideo framework wrappers \
+                    for use with PyObjC.
+homepage            https://pyobjc.readthedocs.io/
+
+master_sites        pypi:p/${python.rootname}/
+distname            ${python.rootname}-${version}
+
+checksums           rmd160  c8e9a5810520d0155bb440415f57850757bd6407 \
+sha256  89d41e86b075788deb65695e32001de488412ae9b60191294a3fd31e8b3d2613 \
+size    3353568
+
+python.versions 37
+
+if {${name} ne ${subport}} {
+    depends_build-append \
+                        port:py${python.version}-setuptools
+    depends_lib-append  port:py${python.version}-pyobjc \
+                        port:py${python.version}-pyobjc-cocoa
+
+    if {${configure.sdkroot} eq ""} {
+        set sdkroot "/"
+    } else {
+        set sdkroot ${configure.sdkroot}
+    }
+
+    build.env-append    SDKROOT=${sdkroot}
+
+    platform darwin 8 {
+        depends_build
+        depends_lib
+        pre-fetch {
+            ui_error "${subport} @${version} requires Mac OS X 10.5 or later"
+            return -code error "incompatible Mac OS X version"
+        }
+    }
+
+    post-destroot {
+        xinstall -m 0644 -W ${worksrcpath} \
+            LICENSE.txt README.txt \
+            ${destroot}${prefix}/share/doc/${subport}
+        copy ${worksrcpath}/Examples \
+            ${destroot}${prefix}/share/doc/${subport}/examples
+    }
+
+    livecheck.type  none
+}

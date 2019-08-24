@@ -1,0 +1,76 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           active_variants 1.1
+PortGroup           gobject_introspection 1.0
+
+name                gcr
+version             3.28.0
+license             LGPL-2
+set branch          [join [lrange [split ${version} .] 0 1] .]
+description         GCR is a library for displaying certificates, and crypto UI, accessing \
+                    key stores.
+long_description    ${description} \
+                    It also provides the viewer for crypto files on the GNOME \
+                    desktop and a library for accessing PKCS#11 modules like smart cards, in a \
+                    (G)object oriented way.
+
+maintainers         {devans @dbevans} openmaintainer
+categories          gnome security
+platforms           darwin
+homepage            https://wiki.gnome.org/Projects/GnomeKeyring
+master_sites        gnome:sources/${name}/${branch}/
+
+use_xz              yes
+
+checksums           rmd160  8180637d78b7ca893aff5bca6d6050fb7e14d4be \
+sha256  15e175d1da7ec486d59749ba34906241c442898118ce224a7b70bf2e849faf0b \
+size    1329044
+
+depends_build       port:pkgconfig \
+                    port:intltool \
+                    port:gtk-doc \
+                    port:autoconf \
+                    port:automake \
+                    port:libtool
+
+depends_lib         port:desktop-file-utils \
+                    path:lib/pkgconfig/glib-2.0.pc:glib2 \
+                    port:gtk3 \
+                    port:p11-kit \
+                    port:libgcrypt \
+                    port:vala
+
+gobject_introspection yes
+
+patchfiles          patch-egg-egg-armor.c.diff \
+                    patch-ui-gcr.pc.in.diff
+
+# gcr uses X11 specific code in UI (#41839)
+# https://bugzilla.gnome.org/show_bug.cgi?id=734366
+# https://bugzilla.gnome.org/show_bug.cgi?id=688678
+
+require_active_variants port:gtk3 x11
+
+# reconfigure using upstream autogen.sh for intltool 0.51 compatibility
+
+post-patch {
+    xinstall -m 755 ${filespath}/autogen.sh ${worksrcpath}
+}
+
+configure.cmd       ./autogen.sh
+
+configure.args      --enable-vala=yes \
+                    --disable-schemas-compile \
+                    --disable-update-mime \
+                    --disable-update-icon-cache \
+                    --disable-silent-rules
+
+post-activate {
+    system "${prefix}/bin/glib-compile-schemas ${prefix}/share/glib-2.0/schemas"
+    system "${prefix}/bin/update-desktop-database ${prefix}/share/applications"
+    system "${prefix}/bin/gtk-update-icon-cache-3.0 -f -t ${prefix}/share/icons/hicolor"
+    system "${prefix}/bin/update-mime-database ${prefix}/share/mime"
+}
+
+livecheck.type      gnome

@@ -1,0 +1,36 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           python 1.0
+
+name                py-typing
+version             3.7.4
+categories-append   devel
+platforms           darwin
+supported_archs     noarch
+license             PSF
+maintainers         {gmail.com:allan.que @aque} openmaintainer
+
+description         Type hints for Python
+long_description    Typing is a backport of the standard library \
+                    'typing' module to Python versions older than 3.5. \
+                    It defines a standard notation for Python function \
+                    and variable type annotations. The notation can be \
+                    used for documenting code in a concise, standard \
+                    format, and it has been designed to also be used \
+                    by static and runtime type checkers, static \
+                    analyzers, IDEs and other tools.
+homepage            https://pypi.python.org/pypi/${python.rootname}/
+
+master_sites        pypi:t/${python.rootname}
+distname            ${python.rootname}-${version}
+checksums           rmd160  58663c5877a63ad0694f8e06b56829e844bdeb30 \
+sha256  53765ec4f83a2b720214727e319607879fec4acde22c4fbb54fa2604e79e44ce \
+size    77413
+
+# do not add subports for python 3.5 and later; module is in stdlib.
+python.versions 37
+
+if {${name} ne ${subport}} {
+    depends_build   port:py${python.version}-setuptools
+}

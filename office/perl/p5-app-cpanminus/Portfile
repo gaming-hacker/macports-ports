@@ -1,0 +1,19 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         App-cpanminus 1.7044
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+description         get, unpack, build and install modules from CPAN
+long_description    ${description}
+
+platforms           darwin
+
+checksums           rmd160  13a4a1dea0ccc143702b407e3bcc40487033fc66 \
+sha256  9b60767fe40752ef7a9d3f13f19060a63389a5c23acc3e9827e19b75500f81f3 \
+size    316368
+
+supported_archs     noarch

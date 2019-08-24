@@ -1,0 +1,91 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+
+# UPDATE THESE IN SYNC!
+set version         2019-07-10T00-34-56Z
+set commit          9d49688c87e9c7c3f769833c3a8697d16349f6c0
+
+set relversion      [regsub {(T..)-(..)-(..Z)} $version {\1:\2:\3}]
+# This is not used for fetching, but is compiled into the executable
+
+github.setup        minio minio $version RELEASE.
+revision            0
+
+homepage            https://minio.io
+categories          www
+maintainers         {eborisch @eborisch} openmaintainer
+description         Open source Amazon S3-compatible object storage server.
+long_description \
+    ${description} It is best suited for storing unstructured data such as \
+    photos, videos, log files, backups and container / VM images. Size of an \
+    object can range from a few KBs to a maximum of 5TB. See also minio-mc \
+    for command-line client.
+license             Apache-2
+
+checksums \
+rmd160  ddd215d883ba97b5b3ae78f5e8f3845cfffc3b52 \
+sha256  2ca8aa8a879854f146d26cb172cd9af97299bc242ec38d45d21ab29606759a35 \
+size    6011718
+
+set goproj          github.com/${github.author}/${github.project}
+
+depends_lib         port:go
+platforms           darwin
+use_configure       no
+worksrcdir          src/${goproj}
+
+post-extract {
+    xinstall -d ${workpath}/src/github.com/${github.author}
+    move ${workpath}/${name}-${github.version} \
+        ${worksrcpath}
+}
+
+build {
+    system -W ${worksrcpath} "GOPATH=${workpath} \
+      CGO_ENABLED=0 GO111MODULE=on ${prefix}/bin/go build -tags kqueue -v \
+      -o ${workpath}/${github.project} \
+      -ldflags '-X ${goproj}/cmd.Version=${relversion} \
+                -X ${goproj}/cmd.ReleaseTag=RELEASE.${version} \
+                -X ${goproj}/cmd.CommitID=${commit} \
+                -X ${goproj}/cmd.ShortCommitId=[string range ${commit} 0 11]'"
+}
+
+destroot {
+    xinstall ${workpath}/${github.project} ${destroot}${prefix}/bin
+
+    set docdir ${prefix}/share/doc/${name}
+    xinstall -d ${destroot}${docdir}
+    xinstall -m 644 -W ${worksrcpath} README.md LICENSE NOTICE \
+        ${destroot}${docdir}
+
+    # Config / log / storage directories
+    set logPath     ${destroot}${prefix}/var/log/${name}
+    set varPath     ${destroot}${prefix}/var/${name}
+    set confPath    ${destroot}${prefix}/etc/${name}
+    xinstall -m 700 -d ${logPath} ${confPath} ${varPath}
+    destroot.keepdirs ${logPath} ${varPath} ${confPath}
+}
+
+startupitem.create      yes
+startupitem.name        ${name} 
+startupitem.executable  ${prefix}/bin/${name} server \
+                           --config-dir=${prefix}/etc/minio \
+                           --address :9000 \
+                           ${prefix}/var/minio
+startupitem.logfile     ${prefix}/var/log/minio/server.log
+startupitem.logevents   yes
+
+notes " \
+If you use 'port load minio':
+ * after loading, view ${prefix}/var/log/minio/server.log for server info.
+ * Object storage in ${prefix}/var/minio. To relocate:
+ 1) Copy with all (* and .*) contents to desired location.
+ 2) Replace ${prefix}/var/minio with symlink to new storage.
+
+Or use 'minio server <dir>' to run a server manually / roll your own
+startup system. Note './.minio/' will be created by default.
+
+See also minio-mc port for command-line interaction.
+"

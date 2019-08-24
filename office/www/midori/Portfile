@@ -1,0 +1,51 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+PortGroup           cmake 1.1
+PortGroup           compiler_blacklist_versions 1.0
+
+github.setup        midori-browser core v7
+name                midori
+version             7.0
+
+categories          www
+platforms           darwin
+license             LGPL-2+
+maintainers         nomaintainer
+
+description         Midori is a lightweight yet powerful web browser
+long_description    ${description}
+
+homepage            http://midori-browser.org
+
+checksums           rmd160  310bc9aeb650bf09c41842d9911a184b95c8dff3 \
+sha256  397244e03ee47fd1fcbb8708632ee8e90460c88ed763ea80eedec3699572506d \
+size    1863220
+
+depends_build-append \
+                    port:pkgconfig \
+                    port:intltool
+
+depends_lib         port:desktop-file-utils \
+                    path:lib/pkgconfig/glib-2.0.pc:glib2 \
+                    port:gtk3 \
+                    port:gcr \
+                    port:libpeas \
+                    port:libsoup \
+                    port:sqlite3 \
+                    port:vala \
+                    path:lib/pkgconfig/webkit2gtk-4.0.pc:webkit2-gtk
+
+depends_run         port:adwaita-icon-theme
+
+# blacklist compilers that do not support C11 (redefinition of typedef ‘WebKitWebEditor’ at webkit2/WebKitWebEditor.h:40)
+compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 300}
+
+# Not autoconf
+configure.universal_args-delete --disable-dependency-tracking
+
+post-activate {
+    system "${prefix}/bin/update-desktop-database ${prefix}/share/applications"
+    system "${prefix}/bin/gtk-update-icon-cache-3.0 -f -t ${prefix}/share/icons/hicolor"
+}

@@ -1,0 +1,35 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+
+name                raptor2
+version             2.0.15
+revision            2
+set major           [lindex [split ${version} .] 0]
+description         Raptor RDF Parser Toolkit
+long_description    Raptor is an open source C library that provides a set of \
+                    parsers and serializers that generate Resource Description \
+                    Framework (RDF) triples by parsing syntaxes or serializing \
+                    the triples into a syntax.
+maintainers         nomaintainer
+license             {LGPL-2.1+ GPL-2+ Apache-2+}
+categories          www
+platforms           darwin
+homepage            http://librdf.org/raptor/
+master_sites        http://download.librdf.org/source/
+
+checksums           rmd160  6c3dddc13a14626f3fdece08961ad8756e237c30 \
+sha256  ada7f0ba54787b33485d090d3d2680533520cd4426d2f7fb4782dd4a6a1480ed
+
+depends_lib         port:curl \
+                    port:libiconv \
+                    port:libxml2 \
+                    port:libxslt \
+                    path:lib/libssl.dylib:openssl \
+                    port:zlib
+
+test.run            yes
+test.target         check
+livecheck.type      regex
+livecheck.url       ${master_sites}
+livecheck.regex     "${name}-(\\d+(?:\\.\\d+)*)${extract.suffix}"

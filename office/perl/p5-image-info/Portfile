@@ -1,0 +1,29 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           perl5 1.0
+
+perl5.branches 5.28
+perl5.setup         Image-Info 1.41
+license             {Artistic-1 GPL}
+maintainers         nomaintainer
+categories-append   graphics
+platforms           darwin
+
+description         Extract meta information from image files
+
+long_description    This module provide functions to extract various \
+                    kind of meta information from image files.
+
+checksums           rmd160  3ae32927a34102665a07d0c1dab91e8adfea21b2 \
+sha256  c546d27414686660dbc3cd8501537128c5285a8db0faf742c2dc12b9a29ba3db
+
+if {${perl5.major} != ""} {
+    depends_build-append \
+                    port:p${perl5.major}-xml-simple
+
+    depends_lib-append \
+                    port:p${perl5.major}-io-stringy
+
+    supported_archs noarch
+}

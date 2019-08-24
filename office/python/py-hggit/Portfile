@@ -1,0 +1,54 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem              1.0
+PortGroup               python 1.0
+PortGroup               bitbucket 1.0
+
+epoch                   20130201
+
+bitbucket.setup         durin42 hg-git 2135ddef6d6e93afd8998ca824efd4680d4f1830
+name                    py-hggit
+version                 0.8.12-git-20190516
+revision                0
+
+categories-append       devel
+license                 GPL-2
+platforms               darwin
+supported_archs         noarch
+maintainers             {easieste @easye} openmaintainer
+
+homepage                http://hg-git.github.com/
+description             Push to and pull from a Git server repository from Mercurial.
+long_description        This is the Hg-Git plugin for Mercurial, adding the ability \
+                        to push to and pull from a Git server repository from Mercurial.\
+                        This means you can collaborate on Git based projects from Mercurial, \
+                        or use a Git server as a collaboration point for a team with \
+                        developers using both Git and Mercurial.
+
+checksums               rmd160  0005cb7464652a254d9219e9cd8d9af26a1917d0 \
+sha256  82709c845473815652fc304cf636cfe8da8048e05f88ee757fa190b17bb429ad \
+size    138454
+
+# can't set python.versions before adding custom subports
+subport py-hggit-devel {}
+subport py27-hggit-devel {}
+
+# obsolete 20190301
+if {[string match "*-devel" $subport]} {
+    replaced_by         ${name}
+    PortGroup           obsolete 1.0
+}
+
+python.versions 37
+
+if {${name} ne ${subport}} {
+    depends_lib-append  port:mercurial \
+                        bin:dulwich-2.7:py${python.version}-dulwich
+
+    notes               "
+To enable hggit, add the following to your ~/.hgrc:
+
+\[extensions\]
+hggit =
+"
+}

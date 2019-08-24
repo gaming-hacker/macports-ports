@@ -1,0 +1,60 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           github 1.0
+
+# UPDATE THESE IN SYNC!
+set version         2019-07-11T19-31-28Z
+set commit          31e5ac02bdbdbaf20a87683925041f406307cfb9 
+
+set relversion      [regsub {(T..)-(..)-(..Z)} $version {\1:\2:\3}]
+# This is not used for fetching, but is compiled into the executable
+
+github.setup        minio mc $version RELEASE.
+name                minio-mc
+revision            0
+
+categories          www
+maintainers         {eborisch @eborisch} openmaintainer
+description         Provides cloud-enabled UNIX commands like ls, cat, cp, etc.
+long_description \
+    ${description} It supports filesystems and Amazon S3 compatible cloud \
+    storage service (AWS Signature v2 and v4). See minio port for server.
+license             Apache-2
+
+checksums \
+rmd160  7359da67c57dc00c8f4022b1f77a282eb46bc9aa \
+sha256  3681345245d888a38600f5378280051da43b3980b18791a468244914c163ac92 \
+size    281906
+
+set goproj          github.com/${github.author}/${github.project}
+
+conflicts           mc
+depends_lib         port:go
+platforms           darwin
+use_configure       no
+worksrcdir          src/${goproj}
+
+post-extract {
+    xinstall -d ${workpath}/src/github.com/${github.author}
+    move ${workpath}/mc-${github.version} \
+        ${worksrcpath}
+}
+
+build {
+    system -W ${worksrcpath} "GOPATH=${workpath} GO111MODULE=on CGO_ENABLED=0  \
+      ${prefix}/bin/go build -tags kqueue -v -o ${workpath}/${github.project} \
+      -ldflags '-X ${goproj}/cmd.Version=${relversion} \
+                -X ${goproj}/cmd.ReleaseTag=RELEASE.${version} \
+                -X ${goproj}/cmd.CommitID=${commit} \
+                -X ${goproj}/cmd.ShortCommitId=[string range ${commit} 0 11]'"
+}
+
+destroot {
+    xinstall ${workpath}/mc ${destroot}${prefix}/bin
+
+    set docdir ${prefix}/share/doc/mc
+    xinstall -d ${destroot}${docdir}
+    xinstall -m 644 -W ${worksrcpath} \
+        README.md LICENSE NOTICE ${destroot}${docdir}
+}

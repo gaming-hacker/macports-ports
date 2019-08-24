@@ -1,0 +1,49 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem              1.0
+
+name                    parrot
+version                 7.0.2
+revision                2
+categories              lang devel
+license                 Artistic-2
+maintainers             nomaintainer
+description             Open source virtual machine
+long_description    \
+        Parrot is a virtual machine designed to efficiently compile and \
+        execute bytecode for dynamic languages. Parrot currently hosts a \
+        variety of language implementations in various stages of completion, \
+        including Tcl, Javascript, Ruby, Lua, Scheme, PHP, Python, Perl 6, \
+        and a .NET bytecode translator.
+
+platforms               darwin
+homepage                http://www.parrot.org/
+master_sites            http://ftp.parrot.org/releases/supported/${version}/
+
+checksums               rmd160  2423a39f5b37394c78262872d5ae50d0c2d6cde5 \
+sha256  1a8e9e203ad8ac92c89422603d1603fa821e957aa3a9ae57420c737d93c55213
+
+depends_build           bin:perl:perl5 \
+                        port:pkgconfig
+
+depends_lib             port:gettext \
+                        port:gmp \
+                        port:icu \
+                        port:libffi \
+                        port:pcre \
+                        port:readline \
+                        port:zlib
+
+configure.cmd           perl Configure.pl
+configure.args          --mandir=${prefix}/share/man \
+                        --optimize
+
+build.type              gnu
+build.target
+
+test.run                yes
+test.target             test
+
+livecheck.type          regex
+livecheck.url           http://ftp.parrot.org/releases/supported/
+livecheck.regex         {"([0-9.]+)/"}

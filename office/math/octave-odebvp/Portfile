@@ -1,0 +1,21 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
+
+PortSystem          1.0
+PortGroup           octave 1.0
+
+octave.setup        odebvp 1.0.6
+revision            4
+platforms           darwin
+license             GPL-2+
+maintainers         nomaintainer
+description         To approximate the solution of the \
+                    boundary-value problem \
+                    y''=p(x)*y' + q(x)*y + r(x), a<=x<=b, \
+                    y(a)=alpha, y(b)=beta by the linear \
+                    finite-diffence method.
+long_description    ${description}
+
+checksums           rmd160 f8542decb4d7e3b7852ceb806aa1310367de8c18 \
+sha256 36f924e58d80b8f23852a1d4ef8486eba2975e6d20dd00bd4ce3307586eb3f67
+
+supported_archs     noarch
