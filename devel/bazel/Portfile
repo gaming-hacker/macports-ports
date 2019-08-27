@@ -19,7 +19,7 @@ subport               bazel21 { }
 subport               bazel25 { }
 
 if { ${name} eq ${subport} } {
-    
+
     # Main port
     github.setup      bazelbuild ${name} 0.28.1
     revision          1
@@ -39,14 +39,14 @@ size    256641169
             return -code error "incompatible macOS version"
         }
     }
-    
+
     # Required java version.
     java.version      12
     # JDK port to install if required java not found
     java.fallback     openjdk12
 
 } elseif { "bazel25" eq ${subport} } {
-    
+
     github.setup      bazelbuild ${name} 0.25.2
     revision          1
 
@@ -65,30 +65,30 @@ size    275804130
             return -code error "incompatible macOS version"
         }
     }
-    
+
     # Required java version.
     java.version      12
     # JDK port to install if required java not found
     java.fallback     openjdk12
-    
+
 } elseif { "bazel21" eq ${subport} } {
-    
+
     github.setup      bazelbuild ${name} 0.21.0
     revision          1
 
     livecheck.type    none
 
     conflicts         bazel bazel25
-    
+
     checksums         rmd160  db49db0e036eee72451c7c83a92359c8b5b3a7ec \
 sha256  6ccb831e683179e0cfb351cb11ea297b4db48f9eab987601c038aa0f83037db4 \
 size    88279748
-    
+
     # Required java version.
     java.version      11
     # JDK port to install if required java not found
     java.fallback     openjdk11
-    
+
 }
 
 github.tarball_from   releases
@@ -147,19 +147,6 @@ if {${os.major} < 16} {
     depends_build-append  port:unzip
 }
 post-patch {
-    if       {[vercmp ${xcodeversion} 7.0] < 0} {
-        # Use hacked version that does not find anything.
-        # We use MacPorts compiler toolchain anyway so not a problem.
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode6-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    } elseif {[vercmp ${xcodeversion} 8.0] < 0} {
-        # Revert xcode-locator to an older version
-        # https://raw.githubusercontent.com/bazelbuild/bazel/7372c04d40d7ab45fa2649c8be002ee6909668d1/tools/osx/xcode_locator.m
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode7-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    } elseif {[vercmp ${xcodeversion} 9.0] < 0} {
-        # Revert xcode-locator to an older version
-        # From bazel 0.21.0
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode8-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    }
 
     # Patch build files to enforce correct compiler
     foreach f [ exec find ${worksrcpath} -name "configure" -or -name "configure.py" -or -name "compile.sh" -or -name "*.tpl" -or -name "*.bzl" -or -name "CROSSTOOL" -or -name "configure.py" -or -name "MOCK_CROSSTOOL" ] {
@@ -187,7 +174,7 @@ if {[vercmp ${xcodeversion} ${bazel_min_xcode}] < 0} {
 }
 
 variant bash_completion {
-    depends_build-append  bin:bash:bash 
+    depends_build-append  bin:bash:bash
 }
 
 build {
@@ -208,7 +195,7 @@ build {
 
     # Put executable in main working folder
     xinstall -m 755 -W ${worksrcpath}/output ${name} ${worksrcpath}
-    
+
     # Include bash completion support ?
     if { [variant_isset bash_completion]} {
 

@@ -36,7 +36,7 @@ compiler.blacklist-append {clang < 840}
 patch.pre_args      -p1
 
 # Required java version
-java.version        11+
+java.version        12+
 # JDK port to install if required java not found
 java.fallback       openjdk12
 
@@ -53,7 +53,7 @@ if {${os.major} < 16} {
 variant native description {Build from source for best native platform support} { }
 
 # Support python versions
-python.versions        27 35 36 37
+python.versions        27 37
 python.default_version 37
 
 if {${name} ne ${subport}} {
@@ -97,8 +97,8 @@ if {${name} ne ${subport}} {
     if {![variant_isset native]} {
         configure.env-append CC_OPT_FLAGS=${base_march}
         build.env-append     CC_OPT_FLAGS=${base_march}
-        notes "This version is built based on a base architecture for convenience, 
-              which may not be optimized for your system. To build a version 
+        notes "This version is built based on a base architecture for convenience,
+              which may not be optimized for your system. To build a version
               customized for your machine, use the +native variant"
     }
     # Disable Xcode detection on older OSes, as we want the
