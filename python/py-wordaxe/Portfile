@@ -31,4 +31,4 @@ size    514422
 
 deprecated.upstream_support no
 livecheck.type      none
-python.versions     27
+python.versions 27 37

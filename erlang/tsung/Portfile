@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                tsung
 version             1.7.0
 revision            1
-perl5.branches 5.26
+perl5.branches 5.28
 categories          erlang devel
 platforms           darwin
 maintainers         nomaintainer

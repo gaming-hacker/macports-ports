@@ -21,7 +21,7 @@ checksums               rmd160  f9de0cd6d01dc3b9d400e7692ff094c1d0fab8d9 \
 sha256  8e47e778a6c8ee86e9bc7dbf56371cf607e9f3c1a03a7d6df9e34f8dba555782 \
 size    2979204
 
-python.versions         27 36 37
+python.versions 27 37
 
 set llvm_version        8.0
 

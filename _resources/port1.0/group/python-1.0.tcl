@@ -69,7 +69,7 @@ proc python_get_default_version {} {
             return [lindex ${python.versions} end]
         }
     } else {
-        return 27
+        return 37
     }
 }
 
@@ -258,7 +258,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-python.versions 37
+python.versions 27 37
         depends_lib-append port:python[option python.default_version]
     }
 }

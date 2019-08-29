@@ -39,7 +39,7 @@ livecheck.regex "tensorboard (\\d+(\\.\\d+)+)"
 extract.suffix      .whl
 extract.only
 
-python.versions        27 35 36 37
+python.versions 27 37
 python.default_version 37
 
 if {${name} ne ${subport}} {

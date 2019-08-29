@@ -23,7 +23,7 @@ checksums           md5     58a6bc1c1d922b0b1e4579c6440448d1 \
 sha1    442d1d11bf4ba5d54684f78783f94f753a02292e \
 rmd160  a3fc4339c6e7ce1397584363d127ae1219ee3888
 
-python.default_version 27
+python.default_version 37
 
 post-destroot {
     # install docs

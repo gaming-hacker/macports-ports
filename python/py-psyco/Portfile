@@ -21,7 +21,7 @@ sha1 3c1ffa70b1a37bd855454d41d41a830e9ea82e7d \
 rmd160 472669a7a3714aae63710fd9bc5322b4b5214944
 worksrcdir              psyco-${version}
 
-python.versions         26
+python.versions 27 37
 
 if {$subport ne $name} {
     extract.post_args       "| tar -xf - --exclude '.cvsignore'"

@@ -27,7 +27,7 @@ rmd160  8fbfb42762c6194442d9034689a422c13309676d \
 sha256  2bbf206bd4c07b7d690b0397714fd893ab380f0ba5a82a897cda3647a3641cb5 \
 size    31038
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

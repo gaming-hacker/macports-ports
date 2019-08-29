@@ -36,7 +36,7 @@ sha256  52dc7ae13a8e81d78afbc0f13e88ecbdf969673923425a4d65021ae241d99b91
 
 patchfiles          patch-comparsion-error.diff
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

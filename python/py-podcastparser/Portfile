@@ -10,7 +10,7 @@ platforms           darwin
 license             ISC
 supported_archs     noarch
 
-python.versions     27 36
+python.versions 27 37
 
 maintainers         {elelay @elelay} openmaintainer
 

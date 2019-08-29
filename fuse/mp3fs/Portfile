@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup user 1.0
 
 github.setup        khenriks mp3fs 0.91 v
 github.tarball_from releases
@@ -31,3 +30,5 @@ depends_lib         port:osxfuse \
                     port:lame \
                     port:libid3tag
 
+# osxfuse is not universal
+universal_variant   no

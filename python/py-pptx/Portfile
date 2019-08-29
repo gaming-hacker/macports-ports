@@ -6,8 +6,8 @@ PortGroup           github 1.0
 
 github.setup        scanny python-pptx 0.6.17 v
 name                py-pptx
-python.versions     27 34 35 36
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 platforms           darwin
 license             MIT
 maintainers         {eborisch @eborisch} \

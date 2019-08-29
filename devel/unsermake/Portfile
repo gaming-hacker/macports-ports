@@ -27,7 +27,7 @@ size    66319
 
 worksrcdir      ${name}
 
-python.default_version 27
+python.default_version 37
 
 patch {
     reinplace "s|exec python|exec ${python.bin}|" ${worksrcpath}/unsermake

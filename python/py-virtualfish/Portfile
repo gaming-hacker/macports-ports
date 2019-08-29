@@ -23,7 +23,7 @@ size    19137
 
 patchfiles              patch-setup.py.diff
 
-python.versions         27 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-virtualenv \

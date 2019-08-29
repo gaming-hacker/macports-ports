@@ -26,7 +26,7 @@ md5     2f2bf66faa4bf1a79eb28a47584077b7 \
 sha1    78331a3c1640f0e351f71774b576fef1d9d3951d \
 rmd160  9eb520d354b3b95b8e324cf846a6cb5556a29056
 
-python.versions         27
+python.versions 27 37
 
 deprecated.upstream_support no
 

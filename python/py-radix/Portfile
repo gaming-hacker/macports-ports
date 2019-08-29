@@ -24,7 +24,7 @@ checksums           md5 a3e7a2cb078c009e39633aa4034ad523
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     pre-test {

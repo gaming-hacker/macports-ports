@@ -10,7 +10,7 @@ sha256  2317ddb006859b92ea575e3a578b2e1783ab3259f859de7cbbcf566e8df010b9
 
 name                    py-flask-restful
 set real_name           Flask-Restful
-python.versions         27
+python.versions 27 37
 categories-append       www
 maintainers             {cal @neverpanic} openmaintainer
 description             Flask extension for quickly building REST APIs.

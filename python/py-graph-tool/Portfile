@@ -27,8 +27,8 @@ sha256  6c0c4336bed6e2f79c91ace6d6914145ee03d0bd5025473b5918aec2b0657f7a \
 size    15068583
 distname            ${realname}-${version}
 
-python.versions     27 35 36 37
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     version         2.2.26

@@ -42,7 +42,7 @@ sha256  ee445612d544d885ae240ffbcbf9267faa9f593b7b101f21d58beceb92661910
 
 platforms       darwin
 
-python.versions 27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-protobuf3

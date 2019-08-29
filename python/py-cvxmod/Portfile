@@ -28,7 +28,7 @@ rmd160  ca87ce7a7073a6896403562f08033b2e057ad37f
 
 deprecated.upstream_support no
 livecheck.type      none
-python.versions     27
+python.versions 27 37
 
 if {$subport ne $name} {
     depends_lib-append  port:py${python.version}-cvxopt

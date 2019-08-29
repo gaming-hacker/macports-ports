@@ -26,7 +26,7 @@ supported_archs     noarch
 # Solfege fails to load its icon without librsvg; it should be a dependency of
 # gdk-pixbuf2, but can't be because it would create a cycle. Add it here
 # instead.
-depends_lib         port:py37-pygtk \
+depends_lib         port:py27-pygtk \
                     port:librsvg
 
 depends_build       port:texinfo \
@@ -43,8 +43,8 @@ post-patch {
     reinplace "s|@PREFIX@|${prefix}|g" ${worksrcpath}/default.config
 }
 
-configure.python    ${prefix}/bin/python3.7
-configure.pkg_config_path   ${frameworks_dir}/Python.framework/Versions/3.7/lib/pkgconfig/
+configure.python    ${prefix}/bin/python2.7
+configure.pkg_config_path   ${frameworks_dir}/Python.framework/Versions/2.7/lib/pkgconfig/
 
 livecheck.type      regex
 livecheck.url       http://sourceforge.net/projects/${name}/files/

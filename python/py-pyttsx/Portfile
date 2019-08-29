@@ -24,7 +24,7 @@ rmd160  a7fc99cb0457ef07abaf46ee9c85412170ab4747 \
 sha256  f435937d8c30e30f8fe034030e4ecbd0a69c3eaa4205e7280d5c9e19bf153df6
 
 deprecated.upstream_support no
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -23,7 +23,7 @@ size    64237
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

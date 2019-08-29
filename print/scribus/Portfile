@@ -8,7 +8,7 @@ PortGroup           qt4 1.0
 name                scribus
 epoch               1
 version             1.4.7
-revision            4
+revision            5
 categories          print
 license             GPL-2+
 platforms           darwin
@@ -50,7 +50,7 @@ depends_lib-append  port:hunspell \
                     port:libpng\
                     port:libxml2 \
                     port:podofo \
-                    port:python37 \
+                    port:python27 \
                     port:tiff \
                     port:zlib
 
@@ -60,8 +60,8 @@ set PyFRM           ${frameworks_dir}/Python.framework/Versions
 
 configure.args-append \
                     -DCMAKE_INSTALL_PREFIX="${applications_dir}/[string toupper ${name} 0].app" \
-                    -DPYTHON_LIBRARY="${prefix}/lib/libpython3.7.dylib" \
-                    -DPYTHON_INCLUDE_DIR="${PyFRM}/2.7/include/python3.7" \
+                    -DPYTHON_LIBRARY="${prefix}/lib/libpython2.7.dylib" \
+                    -DPYTHON_INCLUDE_DIR="${PyFRM}/2.7/include/python2.7" \
                     -DWITH_PODOFO=YES
 
 build.env           HOME=${worksrcpath}

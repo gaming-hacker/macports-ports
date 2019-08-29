@@ -2,7 +2,6 @@
 
 PortSystem          1.0
 PortGroup           github 1.0
-PortGroup user 1.0
 
 github.setup        gerard ext4fuse 0.1.3 v
 categories          fuse
@@ -24,12 +23,20 @@ depends_lib-append  path:lib/libfuse.dylib:osxfuse \
 
 use_configure       no
 
+# osxfuse is not universal
+universal_variant   no
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+build.env           CC=${configure.cc} \
+                    "CFLAGS=${configure.cflags} [get_canonical_archflags cc]" \
+                    "LDFLAGS=${configure.ldflags} [get_canonical_archflags ld]"
+} else {
 build.env           CC=${configure.cc} \
                     CFLAGS="${configure.cflags} [get_canonical_archflags cc]" \
                     LDFLAGS="${configure.ldflags} [get_canonical_archflags ld]"
+}
 
 build.target
 
 destroot            {
-    xinstall -m 0755 ${worksrcpath}/ext4fuse ${destroot}${prefix}/bin/
+    xinstall -m 755 ${worksrcpath}/ext4fuse ${destroot}${prefix}/bin/
 }

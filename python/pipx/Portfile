@@ -19,5 +19,5 @@ sha256  d3ea7e0f0c1f7bf833956699140fa4b6f6cf971b5927f3e402bbcb1242ba54e0 \
 size    363233
 
 python.default_version 37
-python.versions     36 37
+python.versions 27 37
 depends_lib         port:py${python.version}-setuptools

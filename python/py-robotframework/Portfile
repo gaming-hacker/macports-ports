@@ -23,7 +23,7 @@ size    638394
 use_zip             yes
 
 platforms           darwin
-python.versions         27 36 37
+python.versions 27 37
 python.default_version  37
 
 universal_variant   yes

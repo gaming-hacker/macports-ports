@@ -27,7 +27,7 @@ long_description        This is net-snmp, a derivative of CMU's SNMP \
                         handle SNMP traps, a version of the unix 'netstat' \
                         command using SNMP, a Tk/perl MIB browser.
 
-perl5.branches          5.28
+perl5.branches 5.28
 
 depends_lib             port:bzip2 \
                         port:libpcap \

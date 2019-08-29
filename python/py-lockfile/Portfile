@@ -30,4 +30,4 @@ checksums           md5     4e4c7ea4c4301500da5e7f3b51e01cfe \
 sha1    1eebaee375641c9f29aeb21768f917dd2b985752 \
 rmd160  c94c1a638f2a11181063d6025a6c5acc8c9d09e6
 
-python.versions     27
+python.versions 27 37

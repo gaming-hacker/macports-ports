@@ -22,7 +22,7 @@ sha256  e1fcd8d40bba7f17b36cfcc49d3462dc26ab24a82d694a6ea3155f03318da166
 
 use_configure       no
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     build {}

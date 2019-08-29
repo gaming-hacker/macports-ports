@@ -21,7 +21,7 @@ sha1    009fe952a3d469d31a656083ef951a61efa52dd6 \
 rmd160  e109c1df8f164993c3236af60397d61029040259
 dist_subdir         python
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-pyprotocols

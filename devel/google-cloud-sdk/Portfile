@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                google-cloud-sdk
-version             258.0.0
+version             260.0.0
 categories          devel python
 license             Apache-2
 maintainers         {breun.nl:nils @breun} openmaintainer
@@ -20,11 +20,11 @@ master_sites        https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/
 distname            ${name}-${version}-${os.platform}-${configure.build_arch}
 worksrcdir          ${name}
 
-checksums           rmd160  cf56e91f6af5aec807f67343c26c60c40c402b86 \
-sha256  39b56292457637ddee0c43a1426132f8a58984e2cbdea978852e8e6414f2995e \
-size    20466213
+checksums           rmd160  ca17308e9e1cd64a4fe55b34bc3edbc66d50ba62 \
+sha256  325ee7cbf6dd006111d9b8f68b9e99fba01d3b8bcf11365ad91ad9bf3237975f \
+size    21519211
 
-python.default_version 27
+python.default_version 37
 
 post-patch {
     reinplace "s|\"disable_updater\": false|\"disable_updater\": true|" ${worksrcpath}/lib/googlecloudsdk/core/config.json

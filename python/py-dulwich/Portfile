@@ -22,7 +22,7 @@ checksums           rmd160  41daf28eb8f7e3147a80453b271eceb2274ec273 \
 sha256  9088a0e8bb6bef55e67571d6b75eb683f02e9760ed210bf5dffb6d5c86170b59 \
 size    358843
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     conflicts           py${python.version}-dulwich-devel

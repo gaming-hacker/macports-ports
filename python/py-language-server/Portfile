@@ -21,7 +21,7 @@ checksums           rmd160  51dffc93120aad13ae083b610331e13011b9de72 \
 sha256  b9b3193231938ef6908a1d642a3a7dd088ec21622a5fa8d80ebc62ecc90ec4f6 \
 size    446276
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_lib-append \

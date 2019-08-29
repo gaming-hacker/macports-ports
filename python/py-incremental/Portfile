@@ -23,7 +23,7 @@ sha256  7be9a13ebb2ad1dd1ed3ecf547c3fa6e1154bb793418c6cc504b9b6039b0045a
 
 worksrcdir          incremental-incremental-${version}
 
-python.versions 27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

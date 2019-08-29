@@ -45,7 +45,7 @@ sha1 08d0f32bdb7d909b4a531d45cccfa97bdde649aa \
 rmd160 d64d52c35640cebe1145e62f57618473d17cbeb5
 platforms       darwin
 
-python.versions 27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:zeroc-ice33

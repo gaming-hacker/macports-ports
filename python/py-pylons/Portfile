@@ -35,7 +35,7 @@ sha256  49291401cef1bea680499dd5e3b5906cfdfe52d65f6f396f6f6b90842ff70da8 \
 size    190744
 
 deprecated.upstream_support no
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

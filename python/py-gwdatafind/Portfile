@@ -26,7 +26,7 @@ checksums           rmd160  0ab3223d8526bae8bcaadb942ee28cd4e0334483 \
 sha256  1c26a2abf912c25c214c08da304328042ca2945e8acc92923b8eba03b838bc2b \
 size    31397
 
-python.versions     27 36 37
+python.versions 27 37
 python.default_version 36
 
 if {${name} ne ${subport}} {

@@ -17,7 +17,7 @@ long_description    ${name} allows you to create and manage Trac tickets from th
                     command-line, without the need to setup physical access to the \
                     Trac server or database. All you need is a Trac account.
 
-python.default_version 27
+python.default_version 37
 
 homepage            https://tamentis.com/projects/cartman/
 master_sites        pypi:c/cartman

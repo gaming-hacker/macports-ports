@@ -22,7 +22,7 @@ checksums           rmd160  d1c138a471707bb917f9ffbb83f3b6c5f0b68462 \
 sha256  4092bdf72cdcc53012844b7a3a708ec960000267a627c28320810554d26f19d9 \
 size    69331613
 
-python.versions     27 36 37
+python.versions 27 37
 
 # python setup is located in python subdir of plumed repository
 worksrcdir  ${distname}/python

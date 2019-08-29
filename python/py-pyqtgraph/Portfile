@@ -32,7 +32,7 @@ homepage          http://pyqtgraph.org/
 master_sites      http://pyqtgraph.org/downloads/${version}/
 distname          ${real_name}-${version}
 
-python.versions   27 35 36 37
+python.versions 27 37
 
 if {$subport ne $name} {
 

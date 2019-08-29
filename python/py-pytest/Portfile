@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-pytest
-version             5.0.1
+version             5.1.1
 revision            0
 categories-append   devel
 platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,9 +25,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  ea387d2f39e6687d8c12770d06ac77d704973e38 \
-sha256  6ef6d06de77ce2961156013e9dff62f1b2688aa04d0dc244299fe7d67e09370d \
-size    949744
+checksums           rmd160  ee71b87898eb842cb5590351a138d9663751539b \
+sha256  c3d5020755f70c82eceda3feaf556af9a341334414a8eca521a18f463bcead88 \
+size    964525
 
 if {${name} ne ${subport}} {
     depends_build-append \

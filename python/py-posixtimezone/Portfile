@@ -26,7 +26,7 @@ size    8047
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

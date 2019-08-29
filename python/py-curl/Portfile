@@ -25,7 +25,7 @@ rmd160  6891ba8ee4d79fd5a10e824db47b9083309306b3 \
 sha256  553047902a738cc2e6b1cd42783a9d0992e47086773be30027a71e1293493c39 \
 size    208879
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     worksrcdir          ${github.project}-${git.branch}

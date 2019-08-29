@@ -21,7 +21,7 @@ sha256  9e750833a37dd37cdb320f8baa1347810ae35da0497dace0a9bf68182e447faf
 
 supported_archs     noarch
 
-perl5.branches      5.26
+perl5.branches 5.28
 depends_run         port:p${perl5.major}-net \
                     port:p${perl5.major}-libwww-perl
 

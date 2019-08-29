@@ -23,7 +23,7 @@ checksums           md5 7194c91338f8583acf1b09c51d322a76 \
 rmd160 a8ac90ef41b75a672590eea6983cee763eff7f1f \
 sha256 73fc8169d58e910340aae1ac5370c3b63a9943f748e2a20e4a1dfd7277525c86
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

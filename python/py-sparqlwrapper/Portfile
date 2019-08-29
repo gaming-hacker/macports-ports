@@ -13,7 +13,7 @@ supported_archs     noarch
 license             W3C
 maintainers         nomaintainer
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 description         SPARQL Endpoint interface to Python
 long_description    This is a wrapper around a SPARQL service. It helps in \

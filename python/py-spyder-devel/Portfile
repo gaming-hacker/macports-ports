@@ -15,7 +15,7 @@ name                py-spyder-devel
 # This is already a date code, so sticking with dates.
 epoch               20161005
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 categories-append   devel
 platforms           darwin

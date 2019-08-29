@@ -5,7 +5,7 @@ PortGroup               waf 1.0
 
 name                    xmms2
 version                 0.8DrO_o
-revision                19
+revision                20
 categories              audio
 # Mostly LGPL, some plugins and clients are GPL
 license                 LGPL-2.1+ GPL-2+ GPL-2
@@ -119,12 +119,12 @@ if {![variant_isset jack]} {
     configure.args-append --without-plugins=jack
 }
 
-variant python37 description {Support for Python 3.7} {
-    depends_lib-append      port:py37-pyrex
+variant python27 description {Support for Python 2.7} {
+    depends_lib-append      port:py27-pyrex
     configure.args-delete   --without-optionals python
-    configure.python        ${prefix}/bin/python3.7
+    configure.python        ${prefix}/bin/python2.7
 }
 
-default_variants +python37
+default_variants +python27
 
 livecheck.regex         /${name}-(.+)${extract.suffix}

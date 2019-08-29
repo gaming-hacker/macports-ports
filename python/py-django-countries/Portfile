@@ -15,7 +15,7 @@ description         Provides a country field for Django models
 long_description    A Django application that provides country choices for use with forms, \
                     flag icons static files, and a country field for models.
 
-python.versions     27 37
+python.versions 27 37
 
 checksums           rmd160  2b27adbc63d1183bcc0d954c9a8a4c6b3fe2a733 \
 sha256  f06ad7a1f5ca85cafeff920fd30279962a107ef5fb06549e4b8cbf008167b6f7 \

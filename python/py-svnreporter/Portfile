@@ -26,7 +26,7 @@ rmd160 ba0610347c93ab61f161a0088559ec32cc6affbd
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append	\

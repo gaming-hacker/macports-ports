@@ -39,7 +39,7 @@ if {[variant_isset python26]} {
 
 variant python27 conflicts python26 description {Use Python 2.7} {}
 if {[variant_isset python27]} {
-    python.default_version 27
+    python.default_version 37
 }
 
 depends_build-append    port:intltool

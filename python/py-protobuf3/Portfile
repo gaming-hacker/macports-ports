@@ -42,7 +42,7 @@ size    4874011
 
 platforms       darwin
 
-python.versions 27 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-protobuf

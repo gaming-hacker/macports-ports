@@ -40,7 +40,7 @@ rmd160 6b52cce7efb57409d02e4b97b1724d9ebdbb61fd
 
 use_bzip2       yes
 
-perl5.branches  5.28
+perl5.branches 5.28
 
 depends_lib     port:p${perl5.major}-crypt-cbc \
                 port:p${perl5.major}-crypt-rijndael \

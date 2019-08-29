@@ -27,7 +27,7 @@ checksums           rmd160  48c70a7cfdd91a2dbfe8f24fe07c8ab1a851de46 \
 sha256  d5db93026568f60cacdc0615fcd21d46f694a6bfad0ef3ff53cde2b4bb85a39d \
 size    3092680
 
-python.versions 27 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     # uses "from pkg_resources import load_entry_point"

@@ -9,13 +9,13 @@ revision                0
 set docdistname         ${name}-doc-${version}
 use_xz                  yes
 checksums               ${distname}${extract.suffix} \
-                        rmd160  9f4d8caf9396995b81658c2534d4dce17b48a733 \
-                        sha256  16dbfa488a21fe827dc27eaf708f42f7aa3bb997d745d31a19781628c36ba26f \
-                        size    2378784 \
+rmd160  9f4d8caf9396995b81658c2534d4dce17b48a733 \
+sha256  16dbfa488a21fe827dc27eaf708f42f7aa3bb997d745d31a19781628c36ba26f \
+size    2378784 \
                         ${docdistname}${extract.suffix} \
-                        rmd160  5c3812a0cee9b30605b04b9e71607e1fb45ce0f3 \
-                        sha256  2fc160eda64cb6ee9f357c3fd6ef5f1f2b6039f10da650c726b0db49f863341f \
-                        size    2079092
+rmd160  5c3812a0cee9b30605b04b9e71607e1fb45ce0f3 \
+sha256  2fc160eda64cb6ee9f357c3fd6ef5f1f2b6039f10da650c726b0db49f863341f \
+size    2079092
 
 categories              print graphics
 maintainers             {ryandesign @ryandesign}
@@ -42,9 +42,10 @@ master_sites            sourceforge:project/freetype/freetype2/${version}:source
 distfiles               ${distname}${extract.suffix}:source \
                         ${docdistname}${extract.suffix}:docs
 
-patchfiles      freetype-config-no-pkg-config.patch \
-     patch-src_base_ftrfork.c.diff
-     #    patch-modules.cfg.diff
+patchfiles \
+    freetype-config-no-pkg-config.patch \
+    patch-src_base_ftrfork.c.diff \
+    patch-modules.cfg.diff
 
 depends_build           port:pkgconfig
 
@@ -79,7 +80,7 @@ set docdir              ${prefix}/share/doc/${name}
 
 post-destroot {
     xinstall -m 0755 -d ${destroot}${docdir}
-
+    
     xinstall -m 0644 -W ${worksrcpath} \
         ChangeLog \
         README \
@@ -94,7 +95,7 @@ post-destroot {
         formats.txt \
         raster.txt \
         ${destroot}${docdir}
-
+    
     xinstall -m 0755 -d ${destroot}${docdir}/html
     xinstall -m 0644 -W ${worksrcpath}/docs ft2faq.html ${destroot}${docdir}/html
     foreach dir {design glyphs reference tutorial} {

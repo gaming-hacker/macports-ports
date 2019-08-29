@@ -31,7 +31,7 @@ sha256  4c5ed56e63752adb21e136c4ae0de2a3ed712aaa6f77f08984eed261ed26ecea
 
 worksrcdir          ${name}
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_run         port:perl${perl5.major} \
                     port:p${perl5.major}-libwww-perl \

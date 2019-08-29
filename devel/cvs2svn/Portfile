@@ -27,7 +27,7 @@ checksums       rmd160  0ec03a846b20128ebffa8ab0590219152588d4fa \
 sha256  6409d118730722f439760d41c08a5bfd05e5d3ff4a666050741e4a5dc2076aea \
 size    539332
 
-python.default_version 27
+python.default_version 37
 
 test.run        yes
 test.cmd        ${python.bin}

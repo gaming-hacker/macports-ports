@@ -91,7 +91,7 @@ proc php._set_name {option action args} {
     }
 
     if {[regexp {^php\d+-} ${args}]} {
-        php.branches            [php.branch_from_subport]
+        php.branches            7.3
     }
 }
 

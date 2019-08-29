@@ -2,7 +2,6 @@
 
 PortSystem 1.0
 PortGroup xcode 1.0
-PortGroup user 1.0
 
 name                sshfs-gui
 version             1.3
@@ -33,6 +32,9 @@ xcode.target        sshfs
 xcode.configuration Release
 
 xcode.destroot.settings SKIP_INSTALL=NO
+
+# sshfs is -universal
+universal_variant no
 
 post-patch {
     reinplace "s|##PREFIX##|${prefix}|" ${worksrcpath}/AppController.m

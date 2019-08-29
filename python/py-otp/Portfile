@@ -27,7 +27,7 @@ rmd160  18297d9fd3a30efc034e5e540a320baac44f4619 \
 sha256  23f48a8310397f6a53cc7a2a40656f3522d8271a7d31883585a7d32ac36d2603 \
 size    38163
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

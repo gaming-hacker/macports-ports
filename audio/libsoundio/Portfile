@@ -50,5 +50,6 @@ pre-fetch {
     }
 }
 
+
 livecheck.type              regex
 livecheck.regex             ${name}-(\[0-9.\]+)${extract.suffix}

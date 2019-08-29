@@ -24,4 +24,4 @@ rmd160  3306f3b1362f14296472577d9eeba213ae2530b5
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37

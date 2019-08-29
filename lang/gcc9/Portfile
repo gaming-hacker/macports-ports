@@ -1,8 +1,8 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
-PortSystem 1.0
-PortGroup select 1.0
-PortGroup compiler_blacklist_versions 1.0
+PortSystem                                       1.0
+PortGroup           select                       1.0
+PortGroup           compiler_blacklist_versions  1.0
 PortGroup           active_variants              1.1
 PortGroup           conflicts_build              1.0
 
@@ -10,7 +10,7 @@ epoch               2
 name                gcc9
 version             9.2.0
 revision            0
-subport             libgcc-devel { revision 1 }
+subport             libgcc9 { revision 0 }
 platforms           darwin
 categories          lang
 maintainers         nomaintainer
@@ -18,13 +18,17 @@ maintainers         nomaintainer
 license             {GPL-3+ Permissive}
 description         The GNU compiler collection, prerelease BETA
 long_description    The GNU compiler collection, including front ends for \
-                    C, C++, Objective-C, Objective-C++ and Fortran. \
-                    This is a prerelease BETA version!
+                    C, C++, Objective-C, Objective-C++ and Fortran.
 
 homepage            https://gcc.gnu.org/
-master_sites        ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/gcc/snapshots/${version}/ \
-                    ftp://gcc.gnu.org/pub/gcc/snapshots/${version}/ \
-                    http://mirror.koddos.net/gcc/snapshots/${version}/
+master_sites        ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/gcc/releases/gcc-${version}/ \
+                    http://mirror.koddos.net/gcc/releases/gcc-${version}/ \
+                    https://www.mirrorservice.org/sites/ftp.gnu.org/gnu/gcc/gcc-${version}/ \
+                    https://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.gnu.org/gcc/gcc-${version}/ \
+                    ftp://ftp.gwdg.de/pub/linux/gcc/releases/gcc-${version}/ \
+                    ftp://gcc.ftp.nluug.nl/mirror/languages/gcc/releases/gcc-${version}/ \
+                    ftp://gcc.gnu.org/pub/gcc/releases/gcc-${version}/ \
+                    gnu:gcc/gcc-${version}
 
 distname            gcc-${version}
 use_xz              yes
@@ -32,7 +36,6 @@ use_xz              yes
 checksums           rmd160  a51d7f812f45980c517c4505e04a217cf319a992 \
 sha256  ea6ef08f121239da5695f76c9b33637a118dcf63e24164422231917fa61fb206 \
 size    70607648
-
 
 depends_lib         port:cctools \
                     port:gmp \
@@ -52,7 +55,6 @@ set major           [lindex [split ${version} .-] 0]
 
 platform darwin {
     configure.pre_args-append --build=${build_arch}-apple-darwin${os.major}
-#     patchfiles-append         patch-float128.diff
 }
 
 configure.dir       ${workpath}/build
@@ -99,12 +101,9 @@ configure.env-append \
                     OTOOL=${prefix}/bin/otool \
                     OTOOL64=${prefix}/bin/otool
 
-# Make sure the MP clang version used by cctool's 'as' is available at
-# build time and used. Versions here must match those in cctools port.
-  configure.compiler macports-clang-8.0
-
-
 pre-configure {
+
+    # Set package info
     configure.args-append --with-pkgversion="MacPorts ${name} ${version}_${revision}${portvariants}"
 
     if {${configure.sdkroot} ne ""} {
@@ -117,10 +116,6 @@ pre-configure {
         #
         # https://trac.macports.org/ticket/53726
         # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=79885
-        #
-        # Note that macports toolchains will fail to compile gcc unless
-        # the DevSDK is installed due to another gcc build system bug:
-        # https://gcc.gnu.org/bugzilla/show_bug.cgi?id=80203
         configure.args-append --with-sysroot="${configure.sdkroot}"
     }
 
@@ -128,17 +123,21 @@ pre-configure {
     file mkdir ${configure.dir}
 }
 
-# Added for gcc9 beta. To be checked if needed come release.
-# compiler.blacklist-append gcc-4.2
+# Added for gcc9+
+compiler.blacklist-append gcc-4.2
 
 # http://trac.macports.org/ticket/29067
-# compiler.blacklist-append gcc-4.0
+compiler.blacklist-append gcc-4.0
 
 # http://trac.macports.org/ticket/29104
-# compiler.blacklist-append {llvm-gcc-4.2 < 2336.1}
+compiler.blacklist-append {llvm-gcc-4.2 < 2336.1}
 
 # https://trac.macports.org/ticket/47996
-# compiler.blacklist-append {clang < 300}
+compiler.blacklist-append {clang < 300}
+
+# https://trac.macports.org/ticket/58493
+compiler.blacklist-append {clang < 800} *gcc-4.2 macports-clang-3.* {macports-clang-[4-6].0}
+compiler.fallback-append macports-clang-7.0 macports-clang-8.0
 
 # "-stdlib" would be passed on to the bootstrap compiler if present
 configure.cxx_stdlib
@@ -160,7 +159,7 @@ pre-fetch {
 # gcc cannot build if libunwind-headers is active
 conflicts_build-append libunwind-headers
 
-# List of dylibs to be installed
+# List of dylibs to be installed 
 # Note that we really don't want to include libgcc_ext.10.[45].dylib here, but install_name_tool
 # doesn't know how to change the id of stubs, and it's easier than recreating them for each
 # gcc port.
@@ -232,7 +231,7 @@ if {${subport} eq "libgcc9"} {
     #build.target        all
 
     post-destroot {
-
+        
         file mkdir ${destroot}${prefix}/lib/libgcc.merged
 
         foreach dylib ${dylibs} {
@@ -276,7 +275,7 @@ if {${subport} eq "libgcc9"} {
     }
 
 } else {
-
+    
     post-destroot {
 
         file delete ${destroot}${prefix}/share/info/dir
@@ -323,12 +322,21 @@ variant universal {
     configure.args-delete --disable-multilib
 }
 # the generated compiler doesn't accept -arch
+if {[vercmp [macports_version] 2.5.99] >= 0} {
+configure.env-append \
+    "CPP=${configure.cc} -E" \
+    "CXXCPP=${configure.cxx} -E"
+build.env-append \
+    "CPP=${configure.cc} -E" \
+    "CXXCPP=${configure.cxx} -E"
+} else {
 configure.env-append \
     CPP="${configure.cc} -E" \
     CXXCPP="${configure.cxx} -E"
 build.env-append \
     CPP="${configure.cc} -E" \
     CXXCPP="${configure.cxx} -E"
+}
 configure.cc-append [get_canonical_archflags]
 configure.cc_archflags
 configure.cxx-append ${configure.cxx_archflags}

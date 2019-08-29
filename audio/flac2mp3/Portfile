@@ -26,7 +26,7 @@ sha256  c01128e292f896b7e9e1a29a66eecb1bc7b35c9b0c0313a64760138fd8af6ac4
 
 distname            ${name}
 
-perl5.branches 5.26
+perl5.branches 5.28
 
 depends_run         port:flac \
                     port:lame \

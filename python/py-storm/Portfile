@@ -32,7 +32,7 @@ patchfiles-append   patch-setup.py.diff
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

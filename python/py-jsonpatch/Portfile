@@ -23,7 +23,7 @@ checksums           sha256  49f29cab70e9068db3b1dc6b656cbe2ee4edf7dfe9bf5a0055f1
 rmd160  4dc717550dc31026db66d035c8ff13c28b6b2b5c \
 size    18162
 
-python.versions     37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

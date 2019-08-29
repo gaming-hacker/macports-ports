@@ -19,7 +19,7 @@ checksums           rmd160  7171e71a1bb1d7426a168956c3312134ba98e8cb \
 sha256  9a6f780d616b66f7e890f380f90dc1d8918dc62165847343fe2ac44e95486757 \
 size    141452
 
-perl5.branches      5.26
+perl5.branches 5.28
 
 depends_run         port:perl${perl5.major} \
                     port:p${perl5.major}-libwww-perl \

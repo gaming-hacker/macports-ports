@@ -28,7 +28,7 @@ size    360102
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     livecheck.type  none

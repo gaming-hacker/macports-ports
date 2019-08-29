@@ -11,7 +11,16 @@ name                audacity
 
 description         A Free, Cross-Platform Digital Audio Editor.
 long_description    Audacity is a free, easy-to-use, multi-track audio editor and recorder \
-                    for Windows, Mac OS X, GNU/Linux and other operating systems. The interface
+                    for Windows, Mac OS X, GNU/Linux and other operating systems. The interface is translated \
+                    into many languages. You can use Audacity to: \n\
+                    Record live audio. \n\
+                    Record computer playback on any Windows Vista or later machine. \n\
+                    Convert tapes and records into digital recordings or CDs. \n\
+                    Edit WAV, AIFF, FLAC, MP2, MP3 or Ogg Vorbis sound files. \n\
+                    AC3, M4A/M4R (AAC), WMA and other formats supported using optional libraries. \n\
+                    Cut, copy, splice or mix sounds together. \n\
+                    Numerous effects including change the speed or pitch of a recording. \n\
+                    And more!
 
 subport audacity-devel {
     long_description A port of the Audacity audio editor aimed at development purposes.
@@ -86,7 +95,7 @@ if {![catch {set wxw_stdlib [active_variants ${wxWidgets.port} stdlib]} err]} {
 
 depends_build-append \
                     port:pkgconfig \
-                    port:python37
+                    port:python27
 depends_lib-append  port:freetype \
                     port:harfbuzz \
                     port:libid3tag \
@@ -149,6 +158,7 @@ if {${configure.cxx_stdlib} eq "libc++"} {
     patchfiles-append patch-src-memoryx-disable-snowleopard-fix.diff
 }
 
+
 # quelch a huge number of warnings
 configure.cxxflags-append \
                     -Wno-inconsistent-missing-override \
@@ -199,7 +209,7 @@ build.args-append   V=1 VERBOSE=1
 # with everything defined/declared as intended we can now
 # handle the post-patch step with its reinplace statements.
 post-patch {
-    set python_bin ${prefix}/bin/python3.7
+    set python_bin ${prefix}/bin/python2.7
     reinplace -W ${worksrcpath} "s|@@PYTHON@@|${python_bin}|g" \
                                 lib-src/lv2/build \
                                 lib-src/lv2/configure

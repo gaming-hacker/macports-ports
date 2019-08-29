@@ -25,6 +25,10 @@ distname            ID3.framework.${version}
 checksums           rmd160  3b41296cca04d641c1e315fe7a93a0443ebbb8a5 \
 sha256  7d294b2348fc36ac8b068bab15e1b58602aafec098f670cccc52b7436b918270
 
+post-extract {
+    move "${workpath}/id3 tag framework" ${worksrcpath}
+}
+
 patchfiles          patch-ID3-ID3.xcodeproj-project.pbxproj.diff
 
 build.dir           ${worksrcpath}/ID3

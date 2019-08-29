@@ -34,4 +34,4 @@ sha256  1016246265f9d48645229164ef44483e9b9a1b3e6902783782f9ae4e1024ea19
 livecheck.url       ${master_sites}
 livecheck.regex     pdfminer-(\[0-9\]+)\.tar\.gz
 
-python.versions     27
+python.versions 27 37

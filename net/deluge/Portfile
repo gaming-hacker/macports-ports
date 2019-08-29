@@ -46,7 +46,7 @@ build.env           PYTHON_CFLAGS="-I${prefix}/include -I${prefix}/include/boost
 
 variant python27 description {Build for Python 2.7} {
         require_active_variants libtorrent-rasterbar python27
-        python.default_version 27
+        python.default_version 37
         depends_lib-append \
                     port:dbus-python27 \
                     port:py27-chardet \

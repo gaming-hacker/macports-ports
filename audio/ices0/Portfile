@@ -49,7 +49,7 @@ configure.args      --program-suffix=0 \
 variant python description {Enable Python support} {
     configure.args-delete --without-python
     configure.args-append --with-python=${prefix}/bin/python2.7
-    depends_lib-append      port:python37
+    depends_lib-append      port:python27
 }
 
 variant perl description {Enable Perl support} {

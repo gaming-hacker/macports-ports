@@ -2,7 +2,6 @@
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
-PortGroup user 1.0
 
 name            libvorbis
 version         1.3.6

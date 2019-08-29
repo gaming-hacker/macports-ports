@@ -22,7 +22,7 @@ sha256  988815b3650b69373be9abbf2355df512dfd200aa74b1785b50a484d6dfee971
 
 mpi.setup           require
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 build.env-append    PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc
 destroot.env-append PETSC_DIR=${prefix}/lib/petsc SLEPC_DIR=${prefix}/lib/slepc

@@ -24,7 +24,7 @@ sha256  6234f14ddc7323faaa4f10f890786a0f69da00774855412a4382b11a6158cf4b
 
 use_bzip2           yes
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_build       port:pkgconfig \
                     port:intltool \

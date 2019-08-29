@@ -21,7 +21,7 @@ long_description    PyMC is a python module that implements Bayesian statistical
 
 platforms           darwin
 
-python.versions     27 37
+python.versions 27 37
 
 checksums           rmd160  756e3692f1ae14ab2545f194c4db8a17855c9075 \
 sha256  511f382a0e4b5c0befdfbf33e75c4730bcc62402ad19c6a845e8c08e326439da \
@@ -33,7 +33,8 @@ if {${name} ne ${subport}} {
     compilers.enforce_c  port:py${python.version}-numpy
 
     # keep compilers.setup the same as in the py-numpy port
-    compilers.setup    require_fortran -clang
+    compilers.setup    require_fortran -clang   \
+                           clang37
 
     if {[gcc_variant_isset]} {
         build.cmd "${build.cmd} config_fc --fcompiler gfortran"

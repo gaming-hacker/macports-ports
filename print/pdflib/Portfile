@@ -51,7 +51,7 @@ variant perl description {Enable Perl language binding} {
     configure.args-replace  --without-perl --with-perl=${prefix}/bin/perl
 }
 
-variant python37 description {Enable Python 3.7 binding} {
+variant python27 description {Enable Python 2.7 binding} {
     set pyversion 2.7
     depends_lib-append      port:python[strsed ${pyversion} {g/[.]//}]
     configure.args-replace  --without-py --with-py=${frameworks_dir}/Python.framework/Versions/${pyversion}

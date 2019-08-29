@@ -4,14 +4,14 @@ PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-jupyterlab
-version             1.0.4
+version             1.0.9
 revision            0
 categories-append   devel
 platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -27,9 +27,9 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 
 distname            ${python.rootname}-${version}
 
-checksums           rmd160  6cd6bb9597f4400bfb6ae9d6d8af7a6e2da7b971 \
-sha256  32a72032ad537a7410f11c8c08243fce68d8d503f09376461f344778f35f0d6e \
-size    12071565
+checksums           rmd160  4541a50a8f47db5e1a574156a5e174bfbe18ab2f \
+sha256  e8b6f058bc2ef8bf11fb742e170226fa5100c01ff57c0b37deb173ddd4a3f8c2 \
+size    11891259
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools \

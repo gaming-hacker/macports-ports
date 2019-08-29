@@ -16,7 +16,7 @@ platforms           darwin
 homepage            https://pypi.python.org/pypi/certbot-apache
 master_sites        pypi:c/certbot-apache
 
-python.versions 37
+python.versions 27 37
 
 checksums           rmd160  59ea8112cd0cfcbd4cb80e91442154046b1ef063 \
 sha256  4cb44d1a7c56176a84446a11412c561479ed0fed19848632e61f104dbf6a3031 \
@@ -27,7 +27,7 @@ if {[variant_isset python37]} {
 } elseif {[variant_isset python36]} {
     python.default_version 36
 } else {
-    python.default_version 27
+    python.default_version 37
 }
 
 depends_build       port:py${python.version}-setuptools

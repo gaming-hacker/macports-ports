@@ -39,7 +39,7 @@ rmd160  5442d263857277761830878b8aa109038a23f2b2 \
 sha256  2ea3517cd5779843de8a759c2349a3cd8d3893e03ab47053b66d5ec6f8bc4f93 \
 size    15553718
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     build.env-append \

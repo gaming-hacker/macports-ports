@@ -22,7 +22,7 @@ sha256  65417d091c68f6262ebaf18c1358f55ffe9e3735261d4c1bfb0d6e5bed1905b8
 
 deprecated.upstream_support no
 
-python.versions         27
+python.versions 27 37
 python.link_binaries    no
 python.move_binaries    no
 

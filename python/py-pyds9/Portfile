@@ -21,7 +21,7 @@ rmd160  ddd4af816195c132aa92cf3af38994998e9f82f3
 
 distname            ${realname}-${version}
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

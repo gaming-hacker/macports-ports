@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-zope-keyreference
 set real_name       zope.keyreference
 version             3.6.4
-python.versions     27
+python.versions 27 37
 maintainers         nomaintainer
 platforms           darwin
 description         Object references that support stable comparison and hashes

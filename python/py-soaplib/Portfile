@@ -30,7 +30,7 @@ sha1 d3993e81290bf58e21e67ad4fb849e0659712440 \
 rmd160 e8fcd86554450f41bf279f88e11016baa4787d6d
 
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

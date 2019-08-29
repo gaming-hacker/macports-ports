@@ -25,7 +25,7 @@ sha256  be63c40ef853ee785045a1d20327d8153db9291f9aaff552796bed5272f9dd60
 
 worksrcdir          constantly-${version}
 
-python.versions 27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

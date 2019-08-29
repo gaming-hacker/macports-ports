@@ -22,7 +22,7 @@ sha256  25152c1be2c9205bf80901fc49adf2c2efff49f0dddbcf6e6b2ce31dfa6590c0 \
 size    16129257
 
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if { ${name} ne ${subport} } {
     depends_lib-append  port:py${python.version}-numpy

@@ -93,8 +93,8 @@ variant qt4 description {Wrap QT4} {
     configure.args-append   -DOTB_WRAP_QT=ON
 }
 
-variant python37 description {Wrap Python 3.7} {
-    depends_lib-append      port:python37 \
+variant python27 description {Wrap Python 2.7} {
+    depends_lib-append      port:python27 \
                             port:swig \
                             port:swig-python
 
@@ -102,8 +102,8 @@ variant python37 description {Wrap Python 3.7} {
                             patch-Code-Wrappers-SWIG-CMakeLists.txt.diff
 
     configure.args-append   -DOTB_WRAP_PYTHON=ON \
-                            -DPYTHON_EXECUTABLE=${prefix}/bin/python3.7 \
-                            -DOTB_INSTALL_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/3.7/lib/python3.7/site-packages
+                            -DPYTHON_EXECUTABLE=${prefix}/bin/python2.7 \
+                            -DOTB_INSTALL_PYTHON_DIR=${frameworks_dir}/Python.framework/Versions/2.7/lib/python2.7/site-packages
 }
 
 livecheck.type      regex

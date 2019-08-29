@@ -30,7 +30,7 @@ sha256  29edb72fd21e3044093d86f33c66cf847c5aaab26d64cb90e69e528ef014e57f
 
 deprecated.upstream_support no
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     # Build will download setuptools on its own otherwise.

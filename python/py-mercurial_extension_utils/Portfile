@@ -20,7 +20,7 @@ checksums           rmd160  6319dccf8844f23d88b2ae95c54ab886006c3c1b \
 sha256  66ddd08fb9f1f1f2aa6442ac1b634092842c018c9c1243cca9442c6edbee9234 \
 size    22099
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_run         port:mercurial

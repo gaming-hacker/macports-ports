@@ -1,9 +1,10 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name                see
 version             3.1.1424
-revision            2
+revision            3
 categories          lang
 maintainers         nomaintainer
 platforms           darwin
@@ -18,7 +19,7 @@ livecheck.regex     {see-(\d+(?:\.\d+)*)\.tar\.gz}
 livecheck.type      regex
 livecheck.url       ${homepage}
 
-depends_lib         path:include/gc.h:boehmgc
+depends_lib         port:boehmgc
 
 master_sites        ${homepage}
 

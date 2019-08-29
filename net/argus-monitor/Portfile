@@ -22,7 +22,7 @@ size    435683
 
 worksrcdir          argus-${version}
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_lib         port:perl${perl5.major} \
                     port:postfix \

@@ -31,7 +31,7 @@ sha1   64feff3bc6e47ff04d7efceeaad027036215d2c2 \
 rmd160 58f1fe17b32c3b307851b9f2701a987aab8d9849
 
 # Python >= 2.6 required, Python 3.x supported "soon"
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

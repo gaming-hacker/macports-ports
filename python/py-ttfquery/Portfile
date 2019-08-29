@@ -26,7 +26,7 @@ distname            ${real_name}-${version}
 checksums           rmd160 5630dbbda57708d4170bcba757c669c1a1b60e69 \
 sha256 d5b8d369903ee2754541819f27de8ea35486d124484e36a4869503d9a9ac7e4d
 
-python.versions     27
+python.versions 27 37
 
 if {$subport ne $name} {
     depends_build-append    port:fonttools

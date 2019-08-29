@@ -19,4 +19,4 @@ homepage            http://silvercity.sourceforge.net/
 master_sites        sourceforge:silvercity
 checksums           md5 4ae4f9691798385dbde3df9cbb228e8c
 
-python.default_version 27
+python.default_version 37

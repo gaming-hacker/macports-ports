@@ -24,7 +24,7 @@ long_description    Chaco is a Python plotting application toolkit that\
 checksums           rmd160  846a6673a63a14b5221c9e51b1d9fb12871ef3aa \
 sha256  f07008ac77997438762fc5d80caf85ba83c3761a0f45b12605ffd5dc7b385608
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

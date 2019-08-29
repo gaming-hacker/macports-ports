@@ -26,7 +26,7 @@ if {[variant_isset python37]} {
     python.default_version 37
 } else {
     default_variants +python27
-    python.default_version 27
+    python.default_version 37
 }
 
 depends_run-append  port:py${python.version}-requests

@@ -27,7 +27,7 @@ size    19383
 
 patchfiles          patch-remove-flake8.diff
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools_scm

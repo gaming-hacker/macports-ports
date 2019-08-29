@@ -1,7 +1,6 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
-PortGroup user 1.0
 
 name                offlinefs
 version             0.4.6
@@ -17,7 +16,7 @@ long_description    The OFS (Offline FileSystem or Ohm FileSystem) is an \
                     that the user is able to work on his network documents, \
                     even when he is disconnected from the server. When \
                     connection is restored, the filesystem automatically synchronizes the files.
-
+                    
 homepage            http://offlinefs.sourceforge.net/wiki/
 
 master_sites        sourceforge:offlinefs
@@ -36,7 +35,7 @@ depends_build       port:automake \
 
 depends_lib         port:osxfuse \
                     port:dbus \
-                    port:libconfuse
+                    port:libconfuse 
 
 patchfiles          patch-src-Makefile.in.diff \
                     patch-src-Makefile.am.diff

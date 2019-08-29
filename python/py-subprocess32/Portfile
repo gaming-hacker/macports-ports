@@ -20,7 +20,7 @@ long_description    This is a backport of the subprocess standard library \
                     applications. It includes timeout support from Python 3.3 \
                     and the run() API from 3.5 but otherwise matches 3.2's API.
 
-python.versions     27
+python.versions 27 37
 
 checksums           rmd160  cfba1a593e58e1840ddf47468804af7c21533c00 \
 sha256  e0a11e14eadd791bee0cc2e200f03db39b271122eed6f0731384e41580d0f807 \

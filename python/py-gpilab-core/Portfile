@@ -7,7 +7,7 @@ PortGroup               github 1.0
 github.setup            gpilab core-nodes 1.0.6 v
 name                    py-gpilab-core
 revision                0
-python.versions         35 36 37
+python.versions 27 37
 python.default_version  37
 platforms               darwin
 license                 {BSD LGPL-3+}

@@ -5,12 +5,13 @@ PortGroup               github 1.0
 PortGroup               cmake 1.0
 
 github.setup            IoLanguage io 2017.09.06
+revision                1
 name                    Io
 categories              lang
 # mostly BSD, but some LGPL and GPL files
 license                 GPL-2
 platforms               macosx
-maintainers             {emer.net:emer @markemer} openmaintainer
+maintainers             {mark @markemer} openmaintainer
 
 description             Io is small prototype-based programming language
 

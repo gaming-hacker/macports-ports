@@ -30,7 +30,7 @@ size    18820
 
 deprecated.upstream_support no
 livecheck.type      none
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

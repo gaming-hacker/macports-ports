@@ -23,7 +23,7 @@ if {$subport eq $name} {
     github.setup            saltstack salt ${version} v
     revision                1
 
-python.versions 37
+python.versions 27 37
     categories              sysutils python
 
     checksums       rmd160  47b77490e40fdc2ec4c5d262003afecdb0b8e94a \
@@ -37,7 +37,7 @@ size    14987367
     }
 
     variant python27 conflicts python34 python35 python36 description {python-2.7 support} {
-        python.default_version 27
+        python.default_version 37
         depends_build       port:py${python.version}-setuptools
 
         depends_lib-append  port:py${python.version}-yaml \

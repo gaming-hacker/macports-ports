@@ -11,7 +11,7 @@ sha256 93f44739db69234c013a16990e43db1aa0af3cf5a4b8b377d028ff24515fbeb3 \
 size   1158509
 revision            0
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {gmail.com:jrjsmrtn @jrjsmrtn} {michaelld @michaelld} openmaintainer
 

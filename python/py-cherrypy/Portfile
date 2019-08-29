@@ -36,7 +36,7 @@ checksums           rmd160  81b7638d04d386fc9b57e7262d03634eca102720 \
 sha256  48de31ba3db04c5354a0fcf8acf21a9c5190380013afca746d50237c9ebe70f0 \
 size    683411
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     conflicts       py${python.version}-cherrypy3

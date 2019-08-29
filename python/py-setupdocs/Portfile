@@ -26,7 +26,7 @@ rmd160  d9c2dc651ab1dbb7c231bdd5ee2819818b008be0
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

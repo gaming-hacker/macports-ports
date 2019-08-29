@@ -29,7 +29,7 @@ rmd160  1652039cdd960424e18ab5aa575f4397c1596a11
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot   {

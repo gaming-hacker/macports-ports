@@ -24,7 +24,7 @@ sha256  c9502d469593c584d38a9001fabff6287c5fce1154aa003cb4a57769ddeeead9 \
 size    20104
 
 #not supporting 3x because py-keyring is broken on python 3.x
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_run         port:py${python.version}-keyring \

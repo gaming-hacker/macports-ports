@@ -28,4 +28,4 @@ post-destroot {
     ln -s "${python.prefix}/share/man/man1/${name}.1" "${destroot}${prefix}/share/man/man1/${name}.1"
 }
 
-python.default_version 27
+python.default_version 37

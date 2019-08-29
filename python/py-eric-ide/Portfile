@@ -33,7 +33,7 @@ checksums           rmd160  34a8f2a9b2af2fa0e0e4b17e6822c97ed13ac864 \
 sha256  7adcc5299df105d70eae71b4ed02781c937858ac2aee6bfc8dbf63f68527b025 \
 size    17205953
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     variant qt5 conflicts qt4 description "Use Qt5 backend" {

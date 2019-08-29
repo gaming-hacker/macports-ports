@@ -26,7 +26,7 @@ size    5240075
 use_configure       no
 
 #####Python information
-python.versions     37
+python.versions 27 37
 python.default_version  37
 python.add_archflags    no
 universal_variant       no
@@ -42,11 +42,11 @@ use_parallel_build  no
 
 #Currently testing only gcc >= 6
 #We will be supporting clang from v2.3.2
-compilers.setup         -gfortran
+compilers.setup         -clang         -gfortran
 
 #Check if compiler is set
 if {![gcc_variant_isset]} {
-        default_variants-append +gcc8
+        default_variants-append +gcc7
 }
 
 # From Portfile for nodejs10

@@ -27,7 +27,7 @@ sha256  78d60f23a1b8a2d32f400b3c8c06b01142ac7841b75d8a1efcb33515877ba531 \
 size    7504
 distname            ${real_name}-${version}
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

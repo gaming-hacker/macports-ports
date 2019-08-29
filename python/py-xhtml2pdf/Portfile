@@ -22,7 +22,7 @@ checksums               rmd160  c4f15229b1cbae876a49b01794cdde798cb84109 \
 sha256  86a37e78d7a8d8bb2761746c3d559e12284d92c4d531b3a8a0f8fd632b436f82 \
 size    99510
 
-python.versions         27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-html5lib \

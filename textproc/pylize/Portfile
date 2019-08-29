@@ -26,7 +26,7 @@ distname		pylize-${version}
 checksums		md5 ab88ef521602c826390fe919b6bc572e
 use_bzip2		yes
 
-python.default_version 27
+python.default_version 37
 
 depends_run		port:py${python.version}-htmlgen port:py${python.version}-empy
 

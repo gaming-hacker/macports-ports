@@ -11,7 +11,7 @@ categories-append   www
 platforms           darwin
 license             BSD
 
-python.versions     35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     replaced_by     py${python.version}-django

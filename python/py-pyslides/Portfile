@@ -23,7 +23,7 @@ sha256  b29bc1248812db899a601869bd9166ccd73b0310d96b9ceef78ada1c532e3773 \
 size    6067
 # SHA256 as posted on pypi
 
-python.versions     27
+python.versions 27 37
 #36 would work but some dependencies don't have py36 versions.
 
 if {${name} ne ${subport}} {

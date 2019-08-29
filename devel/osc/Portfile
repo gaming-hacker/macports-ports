@@ -28,7 +28,7 @@ size    340944
 patchfiles          patch-config.diff \
                     patch-build-disable.diff
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-elementtree \
                     port:py${python.version}-urlgrabber \

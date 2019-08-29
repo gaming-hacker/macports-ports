@@ -25,7 +25,7 @@ sha256  6f4a76166f230ba1fa7f1a9669fd64909333cd71ea1c06afddb7024b56d9284a \
 size    30243004
 
 
-python.versions     27 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

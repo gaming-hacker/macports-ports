@@ -30,7 +30,7 @@ rmd160  d68de908319baaea022a97565a76af311d8aac19
 
 deprecated.upstream_support no
 livecheck.type      none
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:libmtp
