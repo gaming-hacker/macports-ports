@@ -33,8 +33,7 @@ if {${name} ne ${subport}} {
     compilers.enforce_c  port:py${python.version}-numpy
 
     # keep compilers.setup the same as in the py-numpy port
-    compilers.setup    require_fortran -clang   \
-                           clang37
+    compilers.setup    require_fortran -clang
 
     if {[gcc_variant_isset]} {
         build.cmd "${build.cmd} config_fc --fcompiler gfortran"

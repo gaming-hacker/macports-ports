@@ -31,7 +31,7 @@ python.default_version 37
 
 patch.pre_args      -p1
 
-mpi.setup               -clang37 -clang39 -clang40 -gfortran 
+mpi.setup          -gfortran
 
 # Compiler selection
 compiler.blacklist-append *gcc* {clang < 800} {macports-clang-3.[0-9]} macports-clang-4.0
@@ -72,7 +72,7 @@ if {${name} ne ${subport}} {
         port:py${python.version}-pybind11 \
         port:py${python.version}-yaml \
         port:py${python.version}-torchtext
-    
+
     if {${python.version} < 35} {
         depends_lib-append \
             port:py${python.version}-typing
@@ -86,7 +86,7 @@ if {${name} ne ${subport}} {
     set PythonVersionWithDot [join [split ${python.version} ""] "."]
     set py_lib_root ${prefix}/Library/Frameworks/Python.framework/Versions/${PythonVersionWithDot}
 
-    # Use Intel Math kernel Library 
+    # Use Intel Math kernel Library
     if {[variant_isset mkl]} {
         patchfiles-append FindMKL-OMP.patch
         pre-build {
@@ -98,7 +98,7 @@ if {${name} ne ${subport}} {
         depends_lib-append   port:py${python.version}-mkl
         depends_build-append port:py${python.version}-mkl-include
     }
-    
+
     build.cmd    "${t_build_env} ${python.bin} setup.py"
     destroot.cmd "${t_build_env} ${python.bin} setup.py install"
 
@@ -109,6 +109,6 @@ if {${name} ne ${subport}} {
         }
     }
 
-    livecheck.type none 
+    livecheck.type none
 
 }

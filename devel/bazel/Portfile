@@ -19,16 +19,16 @@ subport               bazel21 { }
 subport               bazel25 { }
 
 if { ${name} eq ${subport} } {
-    
+
     # Main port
-    github.setup      bazelbuild ${name} 0.28.1
-    revision          1
+    github.setup      bazelbuild ${name} 0.29.0
+    revision          0
 
     conflicts         bazel21 bazel25
 
-    checksums         rmd160  16aa4e271f47a425e39adc9469c670cdacde118b \
-sha256  2cea463d611f5255d2f3d41c8de5dcc0961adccb39cf0ac036f07070ba720314 \
-size    256641169
+    checksums         rmd160  717129ee7cd7dfd247d75a8c8f0d4bd52df50a0a \
+sha256  01cb6f2e808bd016cf0e217e12373c9efb808123e58b37885be8364458d3a40a \
+size    265746350
 
     pre-fetch {
         # https://trac.macports.org/ticket/58518
@@ -37,7 +37,7 @@ size    256641169
             return -code error "incompatible macOS version"
         }
     }
-    
+
     # Required java version.
     java.version      12
     # JDK port to install if required java not found
@@ -66,14 +66,14 @@ size    275804130
             return -code error "incompatible macOS version"
         }
     }
-    
+
     # Required java version.
     java.version      12
     # JDK port to install if required java not found
     java.fallback     openjdk12
-    
+
 } elseif { "bazel21" eq ${subport} } {
-    
+
     github.setup      bazelbuild ${name} 0.21.0
     revision          1
 
@@ -81,16 +81,16 @@ size    275804130
     livecheck.type    none
 
     conflicts         bazel bazel25
-    
+
     checksums         rmd160  db49db0e036eee72451c7c83a92359c8b5b3a7ec \
 sha256  6ccb831e683179e0cfb351cb11ea297b4db48f9eab987601c038aa0f83037db4 \
 size    88279748
-    
+
     # Required java version.
     java.version      11
     # JDK port to install if required java not found
     java.fallback     openjdk11
-    
+
 }
 
 github.tarball_from   releases
@@ -118,7 +118,7 @@ patch.pre_args        -p1
 
 # The oldest Xcode version to use default Xcode compiler
 # Note setting here should be in sync with that in py-tensorflow
-set bazel_min_xcode   9.0
+set bazel_min_xcode   10.0
 
 # Even though bazel can build without Xcode, mark use Xcode for now since it fails to
 # build with tracemode on latest master if both CLT and Xcode are available.
@@ -149,19 +149,6 @@ if {${os.major} < 16} {
     depends_build-append  port:unzip
 }
 post-patch {
-    if       {[vercmp ${xcodeversion} 7.0] < 0} {
-        # Use hacked version that does not find anything.
-        # We use MacPorts compiler toolchain anyway so not a problem.
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode6-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    } elseif {[vercmp ${xcodeversion} 8.0] < 0} {
-        # Revert xcode-locator to an older version
-        # https://raw.githubusercontent.com/bazelbuild/bazel/7372c04d40d7ab45fa2649c8be002ee6909668d1/tools/osx/xcode_locator.m
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode7-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    } elseif {[vercmp ${xcodeversion} 9.0] < 0} {
-        # Revert xcode-locator to an older version
-        # From bazel 0.21.0
-        file copy -force ${filespath}/xcode_locator_fixes/Xcode8-xcode_locator.m ${worksrcpath}/tools/osx/xcode_locator.m
-    }
 
     # Patch build files to enforce correct compiler
     foreach f [ exec find ${worksrcpath} -name "configure" -or -name "configure.py" -or -name "compile.sh" -or -name "*.tpl" -or -name "*.bzl" -or -name "CROSSTOOL" -or -name "configure.py" -or -name "MOCK_CROSSTOOL" ] {
@@ -189,7 +176,7 @@ if {[vercmp ${xcodeversion} ${bazel_min_xcode}] < 0} {
 }
 
 variant bash_completion {
-    depends_build-append  bin:bash:bash 
+    depends_build-append  bin:bash:bash
 }
 
 build {
@@ -210,7 +197,7 @@ build {
 
     # Put executable in main working folder
     xinstall -m 755 -W ${worksrcpath}/output ${name} ${worksrcpath}
-    
+
     # Include bash completion support ?
     if { [variant_isset bash_completion]} {
 
@@ -218,7 +205,7 @@ build {
         file delete -force /var/tmp/_${name}_root
 
         # Build the bash completion script
-        system -W ${worksrcpath} "./${name} --max_idle_secs=60 --output_user_root=${workpath} build -s --javabase //:jdk10 --host_javabase //:jdk10 //scripts:${name}-complete.bash"
+        system -W ${worksrcpath} "./${name} --max_idle_secs=60 --output_user_root=${workpath} build -s --javabase //:jdk12 --host_javabase //:jdk12 //scripts:${name}-complete.bash"
 
     }
 }

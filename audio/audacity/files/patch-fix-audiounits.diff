@@ -15,11 +15,7 @@ diff --git a/src/Makefile.am b/src/Makefile.am
 index e61be0e4e..cd0b45fd7 100644
 --- a/src/Makefile.am
 +++ b/src/Makefile.am
-<<<<<<< HEAD
-@@ -708,6 +708,8 @@ audacity_LDADD += $(AUDIOUNITS_LIBS)
-=======
 @@ -710,6 +710,8 @@ audacity_LDADD += $(AUDIOUNITS_LIBS)
->>>>>>> master
  audacity_SOURCES += \
  	effects/audiounits/AudioUnitEffect.cpp \
  	effects/audiounits/AudioUnitEffect.h \
@@ -61,11 +57,7 @@ index d28e7abc1..6fa29336d 100644
  @USE_FFMPEG_TRUE@am__objects_3 =  \
  @USE_FFMPEG_TRUE@	export/audacity-ExportFFmpeg.$(OBJEXT) \
  @USE_FFMPEG_TRUE@	export/audacity-ExportFFmpegDialogs.$(OBJEXT) \
-<<<<<<< HEAD
-@@ -2293,6 +2297,9 @@ effects/audiounits/$(DEPDIR)/$(am__dirstamp):
-=======
 @@ -2294,6 +2298,9 @@ effects/audiounits/$(DEPDIR)/$(am__dirstamp):
->>>>>>> master
  effects/audiounits/audacity-AudioUnitEffect.$(OBJEXT):  \
  	effects/audiounits/$(am__dirstamp) \
  	effects/audiounits/$(DEPDIR)/$(am__dirstamp)
@@ -75,11 +67,7 @@ index d28e7abc1..6fa29336d 100644
  export/audacity-ExportFFmpeg.$(OBJEXT): export/$(am__dirstamp) \
  	export/$(DEPDIR)/$(am__dirstamp)
  export/audacity-ExportFFmpegDialogs.$(OBJEXT): export/$(am__dirstamp) \
-<<<<<<< HEAD
-@@ -2588,6 +2595,7 @@ distclean-compile:
-=======
 @@ -2590,6 +2597,7 @@ distclean-compile:
->>>>>>> master
  @AMDEP_TRUE@@am__include@ @am__quote@effects/$(DEPDIR)/audacity-Wahwah.Po@am__quote@
  @AMDEP_TRUE@@am__include@ @am__quote@effects/VST/$(DEPDIR)/audacity-VSTControlGTK.Po@am__quote@
  @AMDEP_TRUE@@am__include@ @am__quote@effects/VST/$(DEPDIR)/audacity-VSTEffect.Po@am__quote@
@@ -87,11 +75,7 @@ index d28e7abc1..6fa29336d 100644
  @AMDEP_TRUE@@am__include@ @am__quote@effects/audiounits/$(DEPDIR)/audacity-AudioUnitEffect.Po@am__quote@
  @AMDEP_TRUE@@am__include@ @am__quote@effects/ladspa/$(DEPDIR)/audacity-LadspaEffect.Po@am__quote@
  @AMDEP_TRUE@@am__include@ @am__quote@effects/lv2/$(DEPDIR)/audacity-LV2Effect.Po@am__quote@
-<<<<<<< HEAD
-@@ -7179,6 +7187,20 @@ effects/audiounits/audacity-AudioUnitEffect.obj: effects/audiounits/AudioUnitEff
-=======
 @@ -7195,6 +7203,20 @@ effects/audiounits/audacity-AudioUnitEffect.obj: effects/audiounits/AudioUnitEff
->>>>>>> master
  @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
  @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(audacity_CPPFLAGS) $(CPPFLAGS) $(audacity_CXXFLAGS) $(CXXFLAGS) -c -o effects/audiounits/audacity-AudioUnitEffect.obj `if test -f 'effects/audiounits/AudioUnitEffect.cpp'; then $(CYGPATH_W) 'effects/audiounits/AudioUnitEffect.cpp'; else $(CYGPATH_W) '$(srcdir)/effects/audiounits/AudioUnitEffect.cpp'; fi`
  
