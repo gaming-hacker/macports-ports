@@ -64,7 +64,7 @@ variant python27 description {Enable zen-coding plugin using Python 2.7} {
     configure.args-delete --disable-python
 }
 
-default_variants +python27
+
 
 variant quartz {}
 

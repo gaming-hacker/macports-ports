@@ -10,7 +10,7 @@ if {${subport} ne "${name}-bootstrap"} {
 }
 PortGroup           cargo 1.0
 
-revision            0
+revision            1
 categories          devel
 platforms           darwin
 supported_archs     i386 x86_64
@@ -30,7 +30,7 @@ if {${subport} ne "${name}-bootstrap"} {
     # can use cmake or cmake-devel; default to cmake.
     depends_build   port:pkgconfig \
                     path:bin/cmake:cmake \
-                    bin:python:python27
+                    bin:python:python37
 
     depends_lib     path:lib/libssl.dylib:openssl \
                     port:curl \

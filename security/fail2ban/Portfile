@@ -28,7 +28,7 @@ distname                ${version}
 checksums               rmd160  05ae35c2dc03f04e474985b394193b92029f8ca9 \
 sha256  9a4a6402f8e6bda15ef8b5a848ce8d91d80735356b52dfac0d7612cdd2fbcaf3
 
-python.default_version  27
+python.default_version 37
 
 set f2bconfdir          ${prefix}/etc/${name}
 set f2bbindir           ${prefix}/bin

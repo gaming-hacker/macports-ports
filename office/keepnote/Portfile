@@ -27,7 +27,7 @@ master_sites        ${homepage}download
 checksums           rmd160  4b3868b56ad6dc19136992f86e7b6344934c0ad1 \
 sha256  b015a21ff22c9bd3788fb03a4824e53c6c9f1f2bafdf13ec1f0e5360c39e135a
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-pygtk
 

@@ -102,7 +102,7 @@ variant python27 description {Build Python plugin loader using python 2.7} {
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
-default_variants +python27
+
 
 post-activate {
     system "${prefix}/bin/scrollkeeper-update"

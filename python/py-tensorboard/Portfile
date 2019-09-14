@@ -2,11 +2,10 @@
 
 PortSystem          1.0
 PortGroup           python 1.0
-PortGroup           conflicts_build 1.0
 
 name                py-tensorboard
 version             1.14.0
-revision            0
+revision            1
 platforms           darwin
 supported_archs     noarch
 license             Apache-2
@@ -43,15 +42,12 @@ python.versions 27 37
 python.default_version 37
 
 if {${name} ne ${subport}} {
-
-    conflicts_build ${subport}
-
     depends_build-append \
         port:py${python.version}-pip
 
     depends_lib-append \
-        port:py${python.version}-bleach \
-        port:py${python.version}-html5lib \
+        port:py${python.version}-absl \
+        port:py${python.version}-grpcio \
         port:py${python.version}-markdown \
         port:py${python.version}-numpy \
         port:py${python.version}-protobuf3 \
@@ -69,6 +65,7 @@ if {${name} ne ${subport}} {
 
     destroot.cmd        pip-${python.branch}
     destroot.args       \
+        --ignore-installed \
         --no-cache-dir \
         --no-dependencies \
         --root ${destroot} \
@@ -76,6 +73,4 @@ if {${name} ne ${subport}} {
     destroot.post_args
 
     livecheck.type      none
-
 }
-

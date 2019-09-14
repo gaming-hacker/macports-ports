@@ -26,7 +26,7 @@ master_sites  https://launchpad.net/${name}/${branch}/${version}/+download/
 checksums     rmd160  41c6303a4fa9caa32df2e655c2851f7ce2de4c6e \
 sha256  8e8049c439f575d97e28e14d49bf3e7b194c02a8c5ca6ce47b91fe2f4b423ad1
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append  port:bzr \
                     port:bzr-rewrite \

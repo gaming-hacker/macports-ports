@@ -26,7 +26,7 @@ checksums           md5     fecef8ac64fa5de903ddde0333200e5e \
 sha1    a8c294e31f3a184a8c867aa13a3b640d9c20728b \
 rmd160  c5c11877604737cd2106afd839f3d48f00684b8b
 
-python.default_version  27
+python.default_version 37
 
 patchfiles          patch-fix-imports.diff
 

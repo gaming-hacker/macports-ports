@@ -28,7 +28,7 @@ sha256  74cd25fdca3fa8a572ad086d09c0cb4597a47de9e839903bad1826ed7ca50935
 python.versions 27 37
 
 variant python27 conflicts python34 python35 python36 description {Use Python 2.7} {
-    python.default_version 37
+python.default_version 37
 }
 variant python34 conflicts python27 python35 python36 description {Use Python 3.4} {
     python.default_version 34
@@ -40,7 +40,7 @@ variant python36 conflicts python27 python34 python35 description {Use Python 3.
     python.default_version 36
 }
 if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36]} {
-    default_variants +python27
+
 }
 
 build {}

@@ -37,7 +37,7 @@ default_variants    +python27
 
 variant python27 description {Use python27} {}
 if {[variant_isset python27]} {
-    python.default_version  27
+python.default_version 37
 }
 
 depends_lib-append  port:py${python.version}-curl \

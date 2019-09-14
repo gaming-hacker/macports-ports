@@ -23,7 +23,7 @@ sha256  5ef527543ec8a6060da93aa4efcdeb360564242495d0a6e15fcbde071fa5decc
 depends_run-append  path:bin/ansible:py27-ansible
 
 python.versions 27 37
-python.default_version      27
+python.default_version 37
 python.link_binaries_suffix
 
 github.livecheck.regex  {([^"r-]+)}

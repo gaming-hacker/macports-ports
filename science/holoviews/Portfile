@@ -20,7 +20,7 @@ checksums           rmd160  eb7dec204fce1537a905afec96b504d84ce11ec7 \
 sha256  0787536e44bc29cda24d13fa4e9779499ab4c452bcd11054df5a8ad402cebe07 \
 size    4667878
 
-python.versions 37
+python.versions 27 37
 
 depends_lib-append  port:py${python.version}-matplotlib \
                     port:py${python.version}-notebook \

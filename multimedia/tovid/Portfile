@@ -20,7 +20,7 @@ homepage            http://tovid.wikia.com/
 
 platforms           darwin
 
-python.default_version 27
+python.default_version 37
 
 # see http://tovid.wikia.com/wiki/Tovid_dependencies
 depends_build       port:txt2tags

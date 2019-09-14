@@ -80,7 +80,7 @@ if {![variant_isset quartz]} {
     require_active_variants gtk2 x11
 }
 
-default_variants +python27
+
 if {![variant_isset quartz]} {
     default_variants-append +gnome
 }

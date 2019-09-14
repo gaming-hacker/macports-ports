@@ -9,7 +9,7 @@ version                 2
 epoch                   1
 name                    py-clang
 python.versions 27 37
-python.default_version  27
+python.default_version 37
 platforms               darwin
 license                 NCSA
 maintainers             {eborisch @eborisch} \

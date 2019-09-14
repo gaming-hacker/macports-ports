@@ -23,7 +23,7 @@ checksums           rmd160 b64c17ec194824616e542ab704b5df0888bab197 \
 sha256 a81ff254c23718cd6f364b03bf6e9c80468fa4663fd5be66043de7b0bece1cab \
 size 250539
 
-python.default_version  27
+python.default_version 37
 
 depends_build       path:bin/dot:graphviz
 

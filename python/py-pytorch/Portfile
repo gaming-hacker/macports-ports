@@ -31,7 +31,7 @@ python.default_version 37
 
 patch.pre_args      -p1
 
-mpi.setup          -gfortran
+mpi.setup        -gfortran
 
 # Compiler selection
 compiler.blacklist-append *gcc* {clang < 800} {macports-clang-3.[0-9]} macports-clang-4.0

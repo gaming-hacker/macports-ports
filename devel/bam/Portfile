@@ -22,7 +22,7 @@ checksums       rmd160  fba2bed2c2904f5bcb477c3a42f41a8c091221c6 \
 sha256  a81c5217e2ccc86d9957819c08cbe730777cae9185776574cc0c5e708df9464b \
 size    258770
 
-python.default_version  27
+python.default_version 37
 
 patchfiles      patch-scripts_gendocs.py.diff
 

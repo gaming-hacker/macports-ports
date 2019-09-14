@@ -21,7 +21,7 @@ sha1    ec3b2548fd32b3a3e207aed8c8a71767fe8d6068 \
 rmd160  b08fc9118cc3b96f57af510829e58af14bbefe16 \
 sha256  c2b14b0c95ffd76c910af108541a34beaea5f5c2e44246a61640644b2990c3cb
 
-python.default_version  27
+python.default_version 37
 
 worksrcdir          ${name}-src-${version}
 

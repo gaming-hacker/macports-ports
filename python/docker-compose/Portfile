@@ -22,7 +22,7 @@ sha256  5d4f4982a041daab4e90ccc3adc63136bdf2db880ebcd73ddb6c40ad4161589c
 
 patchfiles          patch-setup.py.diff
 
-python.default_version     27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-cached-property \
                     port:py${python.version}-colorama \

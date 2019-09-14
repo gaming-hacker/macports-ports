@@ -41,7 +41,7 @@ sha256  3bf86a7c51deaa49ccddeadbc35ec337f43a57b31dfd3d998a61f82d2f6f2fa2
 
 # pick up the old revision number to continue the proper flow
 version             0.8.0
-revision            655
+revision            656
 
 
 build.post_args-append \

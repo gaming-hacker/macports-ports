@@ -21,7 +21,7 @@ rmd160  152b13853026d93b7080e30e812abf7f92e7f2ef
 
 use_zip             yes
 
-python.default_version  27
+python.default_version 37
 
 patchfiles          setup.py.patch
 

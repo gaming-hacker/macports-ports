@@ -34,7 +34,7 @@ github.livecheck.regex {([0-9.]+)}
 # Support python versions
 python.versions 27 37
 
-mpi.setup    -gfortran
+mpi.setup                -gfortran
 
 # Compiler selection
 compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} macports-clang-4.0

@@ -4,6 +4,7 @@ PortSystem          1.0
 
 name                nasm
 version             2.14.02
+revision            0
 categories          lang
 platforms           darwin
 license             BSD
@@ -31,8 +32,8 @@ master_sites        ${homepage}pub/nasm/releasebuilds/${version}
 use_bzip2           yes
 
 checksums           rmd160  55e35ee095c30edf22ecdc0c51accf00f9606009 \
-                    sha256  34fd26c70a277a9fdd54cb5ecf389badedaf48047b269d1008fbc819b24e80bc \
-                    size    1000406
+sha256  34fd26c70a277a9fdd54cb5ecf389badedaf48047b269d1008fbc819b24e80bc \
+size    1000406
 
 destroot.target     install install_rdf
 destroot.destdir    prefix=${destroot}${prefix}

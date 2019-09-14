@@ -24,4 +24,4 @@ sha1    11a0f89b8d1b0b97181375cc9c98c49c236ba2f4
 
 extract.suffix  .tgz
 
-python.default_version  27
+python.default_version 37

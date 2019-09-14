@@ -27,7 +27,7 @@ sha256  5190ead13a7238e3ccf328cb3b71b16716e1c73939909a4f3fa6904ba58ddf7d
 patchfiles          patch-denyhosts.cfg-dist.diff \
                     patch-daemon-control-dist.diff
 
-python.default_version  27
+python.default_version 37
 
 pre-fetch {
     if { ${os.major} > 11 } {

@@ -48,7 +48,7 @@ set python.bin		${prefix}/bin/python${python.branch}
 }
 
 if {![variant_isset python26]} {
-	default_variants +python27
+
 }
 
 post-patch   {

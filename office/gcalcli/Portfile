@@ -23,7 +23,7 @@ sha256  f40d4572445cb0f310ddfdc89c700822487d61532fbe1a865ce851b83577f33d
 
 patchfiles          patch-oauth2client-compat.diff
 
-python.default_version  27
+python.default_version 37
 
 depends_lib         port:py${python.version}-dateutil \
                     port:py${python.version}-gflags \

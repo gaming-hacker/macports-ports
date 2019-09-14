@@ -1,12 +1,14 @@
 # -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
-# PortGroup select 1.0
+PortGroup select 1.0
+PortGroup clang_dependency 1.0
 
 name                python37
 
 # Remember to keep py37-tkinter and py37-gdbm's versions sync'd with this
 version             3.7.4
+revision            1
 
 set major           [lindex [split $version .] 0]
 set branch          [join [lrange [split ${version} .] 0 1] .]
@@ -28,7 +30,6 @@ checksums           md5 d33e4aae66097051c2eca45ee3604803 \
 rmd160 b9ddfd1ad22b75920f37104ed2fbc0ab39c683f2 \
 sha256 fb799134b868199930b75f26678f18932214042639cd52b16da7fd134cd9b13f
 
-
 patchfiles          patch-setup.py.diff \
                     patch-Lib-cgi.py.diff \
                     patch-configure.diff \
@@ -47,11 +48,11 @@ depends_lib         port:bzip2 \
                     port:sqlite3 \
                     port:xz \
                     port:zlib
-# depends_run         port:python_select \
-#                     port:python3_select
+depends_run         port:python_select \
+                    port:python3_select
 
 # blacklist llvm-gcc-4.2 compiler known to produce bad code
-compiler.blacklist  *llvm-gcc-4.2
+compiler.blacklist-append *llvm-gcc-4.2
 
 # ensurepip arg may be removed later, now conflicts with pip and setuptools
 # packages
@@ -85,8 +86,8 @@ test.target         test
 destroot.target     frameworkinstall maninstall
 
 set pythonNoDot python[string map {. {}} $branch]
-# select.entries      [list python python-$pythonNoDot $pythonNoDot] \
-#                     [list python3 python3-$pythonNoDot $pythonNoDot]
+select.entries      [list python python-$pythonNoDot $pythonNoDot] \
+                    [list python3 python3-$pythonNoDot $pythonNoDot]
 
 platform darwin {
     set framewpath  ${frameworks_dir}/Python.framework
@@ -198,4 +199,4 @@ variant optimizations description {Compile with LTO and PGO. Build time greatly 
 
 livecheck.type      regex
 livecheck.url       ${homepage}downloads/source/
-livecheck.regex     Python (${branch}\[.0-9\]+)
+livecheck.regex     Python (${branch}\[.0-9\]+) -

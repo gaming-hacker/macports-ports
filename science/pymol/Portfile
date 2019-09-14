@@ -42,8 +42,8 @@ if {[variant_isset python34]} {
 } elseif {[variant_isset python37]} {
     python.default_version 37
 } else {
-    default_variants +python27
-    python.default_version 27
+
+python.default_version 37
 }
 python.link_binaries no
 

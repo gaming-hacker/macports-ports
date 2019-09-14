@@ -84,7 +84,7 @@ variant python37 description {Build the Python 3.7 bindings} conflicts python27 
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset python37]} {

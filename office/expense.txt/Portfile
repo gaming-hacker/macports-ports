@@ -21,7 +21,7 @@ extract.mkdir       yes
 checksums           rmd160  c9dcaaf3760a4cfb81e66f88b85bea13b758e53d \
 sha256  4c8264b55d411cfecbb0b5cbd1310bd15bd162e2d8d656b5f6925715fa4000a3
 
-python.default_version     27
+python.default_version 37
 
 depends_build   port:py${python.version}-setuptools
 depends_lib-append  port:py${python.version}-dateutil

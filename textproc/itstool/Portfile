@@ -49,7 +49,7 @@ variant python37 conflicts python27 description {Use Python 3.7 (experimental, s
 }
 
 if {![variant_isset python27] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 livecheck.type      regex

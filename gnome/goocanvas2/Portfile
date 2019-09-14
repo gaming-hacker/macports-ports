@@ -46,7 +46,7 @@ variant python27 description {Build Python bindings using Python 2.7} {
     depends_lib-append          port:py27-gobject3
 }
 
-default_variants +python27
+
 
 livecheck.type      gnome
 livecheck.name      ${gname}

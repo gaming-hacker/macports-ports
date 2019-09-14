@@ -37,7 +37,7 @@ worksrcdir          stgit-48e5cef
 
 depends_run         port:git
 
-python.default_version  27
+python.default_version 37
 
 patch.pre_args      -p1
 

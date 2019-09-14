@@ -31,7 +31,7 @@ sha256  b341518a3828806679cf1d68a5f0f32eb3dd7934be7a721e9a883d5be728fd23
 
 supported_archs     noarch
 
-python.default_version  27
+python.default_version 37
 
 depends_build-append    port:py${python.version}-setuptools
 depends_lib-append      port:py${python.version}-crypto \

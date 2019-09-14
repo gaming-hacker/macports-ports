@@ -43,7 +43,7 @@ variant python27 description {Build using Python 2.7} {
         configure.args-append   -DPYTHON_EXECUTABLE:FILEPATH=${prefix}/bin/python2.7
 }
 
-default_variants +python27
+
 
 livecheck.type  regex
 livecheck.url   ${master_sites}

@@ -58,10 +58,10 @@ variant python26 conflicts python27 description {Build for python26} {
     python.default_version 26
 }
 variant python27 conflicts python26 description {Build for python27} {
-    python.default_version 37
+python.default_version 37
 }
 if {    ![variant_isset python26]
     &&  ![variant_isset python27]
     } {
-    default_variants +python27
+
 }

@@ -19,7 +19,7 @@ sha256  90a65d396f4410b55daeef8df69100cc9922693d3ba8045b6f48dc5b7a98c696
 
 patchfiles          patch-setup.py.diff
 
-python.default_version  27
+python.default_version 37
 
 # py-nose is only needed to run tests, but installation on the buildbot fails if the package is absent
 depends_build-append    port:py${python.version}-setuptools \

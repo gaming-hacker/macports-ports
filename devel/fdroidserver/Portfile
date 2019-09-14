@@ -29,7 +29,7 @@ checksums           md5 b98635817b6305353beb7ebf639be3d3 \
 rmd160 e0b6a91a3ed8692d61835e6e6b6ee0f2c3435662 \
 sha256 89742f2e03e082c9d185835dbb4f166dade19a0e257b247a6e0bca3b4fd9b523
 
-python.default_version  27
+python.default_version 37
 
 # TODO: package pyasn1_modules
 

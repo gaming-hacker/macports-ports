@@ -76,7 +76,7 @@ proc install_py {branch} {
 }            
 
 if {![variant_isset python27] && ![variant_isset python34]} {
-    default_variants +python27
+
 }
 
 livecheck.type          regex

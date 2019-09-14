@@ -7,6 +7,7 @@ PortGroup               active_variants 1.1
 
 github.setup            htcondor htcondor 8_8_1 V
 version                 [strsed ${github.version} g/_/\./]
+revision                1
 maintainers             {aronnax @lpsinger}
 
 categories              science parallel net
@@ -40,7 +41,7 @@ variant personal \
 set pythons_suffixes {27 34 35 36}
 
 if {!([variant_isset python34] || [variant_isset python35] || [variant_isset python36])} {
-    default_variants +python27
+
 }
 
 set pythons_ports {}

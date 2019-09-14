@@ -109,7 +109,7 @@ if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset py
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 variant gmsh description {Enable Gmsh functions (for field interpolation)} {

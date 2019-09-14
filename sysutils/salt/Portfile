@@ -33,11 +33,11 @@ size    14987367
     notes    "Salt startupitems are installed by subports salt-minion, salt-master, salt-syndic, salt-api."
 
     if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36]} {
-        default_variants +python27
+
     }
 
     variant python27 conflicts python34 python35 python36 description {python-2.7 support} {
-        python.default_version 37
+python.default_version 37
         depends_build       port:py${python.version}-setuptools
 
         depends_lib-append  port:py${python.version}-yaml \

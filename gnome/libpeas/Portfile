@@ -67,7 +67,7 @@ variant python27 description {Enable Python 2.7 plugin support} {
     configure.args-replace      --disable-python2 --enable-python2
 }
 
-default_variants +python27
+
 
 # python3 minimum version is 3.2.0
 

@@ -26,7 +26,7 @@ worksrcdir    ${name}
 
 supported_archs     noarch
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append  port:bzr \
                     port:py${python.version}-pyqt4 \

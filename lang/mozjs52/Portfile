@@ -6,6 +6,7 @@ PortGroup           compiler_blacklist_versions 1.0
 
 name                mozjs52
 version             52.6.0
+revision            2
 categories          lang
 platforms           darwin
 license             {MPL-2 LGPL-2.1+}
@@ -28,7 +29,7 @@ size    24712740
 
 depends_build       port:autoconf213 \
                     port:pkgconfig \
-                    port:python37
+                    port:python27
 
 depends_lib         port:icu \
                     port:nspr \
@@ -39,7 +40,7 @@ depends_lib         port:icu \
 # Requires clang-3.6 or equivalent
 # While clang-602.0.53 (Xcode 6.4) is based on 3.6, it apparently doesn't pass the configure check
 compiler.blacklist  *gcc-3.* *gcc-4.* {clang < 700} macports-clang-3.3 macports-clang-3.4
-compiler.fallback-append macports-clang-5.0 macports-clang-4.0 macports-clang-3.9 macports-clang-3.7
+compiler.fallback-append macports-clang-5.0 macports-clang-3.7
 
 if { ${os.platform} eq "darwin" && ${os.major} < 11 } {
     depends_build-append port:cctools
@@ -54,7 +55,7 @@ post-patch {
 }
 
 configure.perl      /usr/bin/perl
-configure.python    ${prefix}/bin/python3.7
+configure.python    ${prefix}/bin/python2.7
 
 configure.env-append \
                     SHELL=/bin/bash

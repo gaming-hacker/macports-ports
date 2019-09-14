@@ -46,7 +46,7 @@ variant python27 description {Build Python2 bindings using Python 2.7} {
     configure.env-append    PYTHON2_PATH=${prefix}/bin/python2.7
 }
 
-default_variants +python27
+
 
 variant python35 conflicts python36 python37 description {Build Python3 bindings using Python 3.5} {
     depends_lib-append      port:py35-gobject3

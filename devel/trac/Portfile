@@ -31,7 +31,7 @@ size	5443966
 
 variant python27 description {Use Python 2.7} {}
 
-default_variants +python27
+
 python.default_version 37
 
 depends_lib	port:py${python.version}-pygments \

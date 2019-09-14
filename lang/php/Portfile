@@ -3,6 +3,7 @@
 PortSystem              1.0
 PortGroup               php 1.1
 PortGroup               compiler_blacklist_versions 1.0
+PortGroup               old_openssl 1.0
 
 name                    php
 platforms               darwin freebsd
@@ -75,10 +76,26 @@ switch ${subport_branch} {
                         sha256  ba067200ba649956b3a92ec8b71a6ed8ce8a099921212443c1bcf3260a29274c \
                         size    11993760
 }
+    7.4 {
+        # When this becomes a stable version, remove the overrides for homepage,
+        # master_sites and livecheck, and update php.latest_stable_branch in the
+        # php-1.1 portgroup.
+        epoch           0
+        version         7.4.0alpha1
+        homepage        https://qa.php.net/
+        master_sites    https://downloads.php.net/~cmb/
+        use_xz          yes
+        checksums       rmd160  0 \
+sha256  0 \
+size    0
+        livecheck.url   ${homepage}
+        livecheck.regex php-([strsed ${subport_branch} {g/\\./\\./}](?:\\.\[0-9.\]+)*(?:(?:alpha|beta|RC)\\d+|-latest))\\.tar
+    }
+
 }
 
 # http://php.net/eol.php
-set php.oldest_supported_branch 7.1
+set php.oldest_supported_branch 7.2
 
 # Iterate through branches in reverse order, so that the list of subports in
 # "port info" will show newer versions before older versions.
@@ -116,7 +133,6 @@ if {[is_sapi_subport]} {
         depends_lib-append  port:pcre
     } else {
         depends_lib-append  port:pcre2
-        patchfiles-append   patch-${php}-Zend-zend_cpuinfo.c.diff
     }
 
     # Use -p1 to accommodate the Suhosin patch

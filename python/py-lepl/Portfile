@@ -26,7 +26,7 @@ distname            LEPL-${version}
 checksums           rmd160  dc5bb15465e38d7748a440e644adbc3a2984a929 \
 sha256  a8715c709308350ce4afed5d525682656886d38141387ec87d44421da8d41397
 
-python.default_version  27
+python.default_version 37
 python.versions 27 37
 
 if {${name} ne ${subport}} {
