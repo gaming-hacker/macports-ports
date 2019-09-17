@@ -20,7 +20,7 @@ long_description    archivemail is a tool written in Python for \
 homepage            http://archivemail.sourceforge.net
 
 supported_archs         noarch
-python.default_version  27
+python.default_version 37
 
 master_sites        sourceforge
 checksums           rmd160  7d524d7c3b4e089cb50a6c3637254931ccb06b72 \

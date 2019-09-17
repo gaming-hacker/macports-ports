@@ -1,0 +1,42 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
+PortGroup github 1.0
+
+github.setup    ldmud ldmud 3.5.2
+categories      games
+maintainers     {toby @tobypeterson}
+description     modern LPMud gamedriver
+long_description \
+    LDMud started as a project to clean up and modernize Amylaar's LPMud \
+    gamedriver. Primary goals are full documentation, a commented source body \
+    and out-of-the-box support for the major mudlibs, of which the commented \
+    source body has been pretty much completed. During the course of work a \
+    lot of bug fixes and improvements found their way into the driver - much \
+    more than originally expected, and definitely enough to make LDMud a \
+    driver in its own right.
+homepage        http://www.ldmud.eu/
+platforms       darwin
+
+checksums       rmd160 498894f712ca7e12f73cfc2bf75e2b21eddfb02c \
+sha256 93d9ed7ef2dbefc213016cf3f02505ca08b0001aa7b0a1ab9ac14c0408234bd8 \
+size   2724900
+
+patchfiles      patch-src__Makefile.in
+
+depends_build   port:bison
+depends_lib     port:libiconv port:pcre
+
+use_autoreconf  yes
+autoreconf.dir  ${worksrcpath}/src
+autoreconf.cmd  ./autogen.sh
+
+configure.dir   ${worksrcpath}/src
+configure.args  --libdir=${prefix}/var/ldmud \
+                --with-optimize=no
+configure.env   EXTRA_CFLAGS=${configure.cflags}
+
+use_parallel_build  no
+build.dir       ${worksrcpath}/src
+
+destroot.target install-driver

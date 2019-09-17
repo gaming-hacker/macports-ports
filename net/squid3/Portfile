@@ -38,13 +38,15 @@ rmd160 5c102be674a567d780590035e0ac3362e5b1a4b8
 patchfiles      patch-cf.data.pre.diff \
                 patch-compat_types.h.diff \
                 patch-basic_pam_auth.cc.diff \
-                configure-db.h.diff
+                configure-db.h.diff \
+                openssl-1.1.diff
 
 platform darwin 10 {
     # ticket #37102, /usr/include/rpcsvc/yp_prot.h tries to redefine bool
     patchfiles-append snowleopard-bool.diff
 }
 
+depends_build   port:pkgconfig
 depends_lib     port:zlib
 
 conflicts       squid2 squid4

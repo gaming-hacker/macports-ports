@@ -22,7 +22,7 @@ use_bzip2           yes
 checksums           rmd160  3293e0cc04b0fc17ed67c064be8def71ce46030a \
 sha256  592542315eec829742d76a82bfded5eaa22af1a509310113ec3d8e014e3ece0a
 
-python.default_version  27
+python.default_version 37
 
 post-destroot {
    set examplesdir ${prefix}/share/examples/${name}

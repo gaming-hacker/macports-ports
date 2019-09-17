@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                t-prot
 version             3.4
 revision            2
-perl5.branches      5.26
+perl5.branches 5.28
 categories          mail
 license             BSD-old
 platforms           darwin

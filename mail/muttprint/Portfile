@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                muttprint
 version             0.72d
 revision            6
-perl5.branches      5.26
+perl5.branches 5.28
 categories          mail
 license             GPL-2
 maintainers         nomaintainer

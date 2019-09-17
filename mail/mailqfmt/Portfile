@@ -19,7 +19,7 @@ distfiles           ${name}.pl
 checksums           rmd160  d5e24479642537db03f3ab82eee380fefce1bdf9 \
 sha256  11e6410cdc811cebc8212b73eeaad2386cb15569b526d73376d35a69bda54b95
 
-perl5.branches      5.26
+perl5.branches 5.28
 
 depends_lib-append  port:postfix \
                     port:p${perl5.major}-libwww-perl

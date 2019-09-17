@@ -22,7 +22,7 @@ size    4103
 
 distfiles           ${name}.pl
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_run         port:perl${perl5.major} \
                     port:p${perl5.major}-timedate

@@ -27,7 +27,7 @@ size    49323019
 
 compilers.choose    fc cc cxx
 mpi.setup           require_fortran  -clang -gfortran
-#  -clang38
+#  
 # not clear if clang33 and clang34 work; clang38 gives cxx11 error as does default clang.
 # clang fails in tests, relating to pseudopotentials and XML
 

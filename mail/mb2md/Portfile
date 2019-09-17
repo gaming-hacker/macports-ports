@@ -28,7 +28,7 @@ sha256  af45a9b5413a9fe49be0092e560485bf17efc50a4eb4a90744e380c4869f732f
 platforms           darwin
 supported_archs     noarch
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_run         port:perl${perl5.major} \
                     port:p${perl5.major}-timedate

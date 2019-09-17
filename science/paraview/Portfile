@@ -45,7 +45,8 @@ size    38756076
 patchfiles          patch-icon-size.diff \
                     patch-vtk_target_export.diff \
                     patch-ogg_dependency.diff \
-                    patch-system_ok.diff
+                    patch-system_ok.diff \
+                    patch-case-sensitivity.diff
 
 depends_lib-append  path:include/eigen3/Eigen/Eigen:eigen3 \
                     port:glew \

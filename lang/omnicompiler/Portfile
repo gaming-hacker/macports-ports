@@ -32,7 +32,7 @@ size    3106504
 use_bzip2           yes
 
 compilers.choose    cc fc
-mpi.setup           require -clang -gfortran
+mpi.setup           require -clang  -gfortran
 if {[variant_isset coarray]} {
     mpi.enforce_variant GASNet
 }

@@ -39,7 +39,7 @@ extract.only        ${distname}${extract.suffix}
 platforms           darwin freebsd
 supported_archs     noarch
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_lib         port:perl${perl5.major}
 depends_run         port:p${perl5.major}-date-calc

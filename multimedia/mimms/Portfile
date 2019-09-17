@@ -26,7 +26,7 @@ sha1    279eee76dd4032cd2c1dddf1d49292a952c57b80 \
 rmd160  669d5d80ae9bd318bf98c032197fa6980622182e
 use_bzip2       yes
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append    port:libmms
 

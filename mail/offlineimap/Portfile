@@ -40,7 +40,7 @@ checksums           rmd160  ae800a7f9b817b76ec36f18622d880b278e11ad0 \
 sha256  3f3f142392456b38b02fcf505e737bfe5057ccc9e3f31c7d674e65be05faea1b \
 size    720398
 
-python.default_version 27
+python.default_version 37
 
 depends_build       port:py${python.version}-docutils \
                     port:py${python.version}-sphinx \

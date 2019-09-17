@@ -62,7 +62,7 @@ description {Build Bindings for Python 2.6} {}
 
 # default to python27 bindings
 if {![variant_isset python27] && ![variant_isset python26]} {
-    default_variants +python27
+
 }
 
 # allow for -python27 to disable all Python support

@@ -22,7 +22,7 @@ distname            Mixminion-${version}
 
 checksums           md5 a7ee96a22dd6246760556fa959a37380
 
-python.default_version  27
+python.default_version 37
 
 post-destroot {
    foreach mannum {1 5 8} {

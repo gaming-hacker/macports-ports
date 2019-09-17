@@ -8,7 +8,7 @@ PortGroup           select 1.0
 
 name                pypy
 bitbucket.setup     pypy pypy 7.1.1 {release-pypy${python.branch}-v}
-revision            0
+revision            1
 categories          lang python devel
 license             MIT PSF
 maintainers         {danchr @danchr} openmaintainer
@@ -195,7 +195,7 @@ post-destroot {
 
     foreach script [array names module_scripts] {
         set module $module_scripts($script)
-        set scriptpath "${destroot}/${prefix}/lib/${subport}/bin/${script}"
+        set scriptpath "${destroot}${prefix}/lib/${subport}/bin/${script}"
 
         xinstall -m 755 ${filespath}/module-script.sh $scriptpath
         reinplace "s+__PYPY__+${prefix}/bin/${subport}+" $scriptpath

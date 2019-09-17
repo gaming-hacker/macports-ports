@@ -43,7 +43,7 @@ sha256  175d89c419e99d49a7a5f7e4196d3cef4c9e19cc17a425c332e86df6b516f7d7
 subport ld64-97 {
     # Xcode 3.2.6
     version             97.17
-    revision            8
+    revision            9
 
     set makefile        "Makefile-97"
     set ld64_ver        97
@@ -405,7 +405,9 @@ if {${subport} eq ${name}} {
         }
 
         if {${os.major} < 9} {
-            build.args-append OTHER_LDFLAGS_LD64=-lcrypto
+            # use full library path to prevent opportunistic linking to MP openssl
+            # see https://trac.macports.org/ticket/57016
+            build.args-append OTHER_LDFLAGS_LD64=/usr/lib/libcrypto.dylib
         }
     }
 

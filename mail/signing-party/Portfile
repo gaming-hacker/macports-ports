@@ -32,7 +32,7 @@ use_configure       no
 depends_build       port:automake \
                     port:autoconf
 
-perl5.branches      5.26
+perl5.branches 5.28
 
 depends_lib         port:perl${perl5.major} \
                     port:p${perl5.major}-class-methodmaker \

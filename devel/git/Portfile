@@ -5,7 +5,7 @@ PortGroup           perl5 1.0
 
 name                git
 version             2.23.0
-revision            2
+revision            1
 
 description         A fast version control system
 long_description    Git is a fast, scalable, distributed open source version \
@@ -41,7 +41,7 @@ depends_lib-append  port:curl \
                     path:lib/libssl.dylib:openssl \
                     port:expat \
                     port:libiconv \
-                    port:python37
+                    port:python27
 
 depends_run-append  port:p${perl5.major}-authen-sasl \
                     port:p${perl5.major}-error \
@@ -60,7 +60,7 @@ use_configure       no
 
 variant universal   {}
 
-set CFLAGS          "-I. -Wall -O3 -I${prefix}/include [get_canonical_archflags cc]"
+set CFLAGS          "-I. -Wall -O2 -I${prefix}/include [get_canonical_archflags cc]"
 set LDFLAGS         "-L${prefix}/lib [get_canonical_archflags ld]"
 
 build.args          CFLAGS="${CFLAGS}" \
@@ -71,7 +71,7 @@ build.args          CFLAGS="${CFLAGS}" \
                     OPENSSLDIR=${prefix} \
                     ICONVDIR=${prefix} \
                     PERL_PATH="${prefix}/bin/perl${perl5.major}" \
-                    PYTHON_PATH="${prefix}/bin/python3.7" \
+                    PYTHON_PATH="${prefix}/bin/python2.7" \
                     NO_FINK=1 \
                     NO_DARWIN_PORTS=1 \
                     NO_R_TO_GCC_LINKER=1 \
