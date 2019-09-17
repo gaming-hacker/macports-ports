@@ -59,19 +59,18 @@ size   4676166
         revision            0
         patchfiles-append   patch-numpy_core_setup.py.34.diff \
                             patch-numpy_tests_test_scripts.py.34.diff \
-                            patch-fcompiler_g95.34.diff        
+                            patch-fcompiler_g95.34.diff
     } else {
         patchfiles-append   patch-numpy_core_setup.py.diff \
                             patch-numpy_tests_test_scripts.py.diff \
                             patch-fcompiler_g95.diff
-#                            patch-numpy_distutils_fcompiler_gnu.py.diff 
+#                            patch-numpy_distutils_fcompiler_gnu.py.diff
     }
-    compilers.setup         -clang   \
-                                clang37
+    compilers.setup         -clang
 
     # https://trac.macports.org/ticket/58771
     if { ${os.major} == 15 } {
-        default_variants-append +clang37
+        default_variants-append +clang80
     }
 
     depends_lib-append      port:fftw-3 \

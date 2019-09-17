@@ -77,7 +77,7 @@ subport gnuradio-next {
     name                gnuradio-next
     conflicts           gnuradio gnuradio-devel
 
-    github.setup gnuradio gnuradio 41348a2b6f7cdb200a88dbcfba936e5a438094c6 
+    github.setup gnuradio gnuradio 41348a2b6f7cdb200a88dbcfba936e5a438094c6
     version   20190814-[string range ${github.version} 0 7]
     checksums rmd160 c8b689116c8ecc9a596641d94cac05046e489380 \
 sha256 c85080a1713586467574ab0968b5bc802cc34f23027f0f492a15ab3048ed6315 \
@@ -235,7 +235,7 @@ if {${subport} eq "gnuradio-next"} {
         ![variant_isset python35] &&
         ![variant_isset python36] &&
         ![variant_isset python37]} {
-
+default_variants +python37
     }
 
     if {![variant_isset python27] &&
