@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ description         Efficient binary-decimal and decimal-binary conversion \
 long_description    ${description}
 
 checksums           rmd160  d814e2c356ecd584cb06f402300c7f4a2ab4e001 \
-                    sha256  43da6cc9c40f7a053634b335a2f39a4bb65224e3dbf5993a79fc5197a5db5e6f \
-                    size    7022506
+sha256  43da6cc9c40f7a053634b335a2f39a4bb65224e3dbf5993a79fc5197a5db5e6f \
+size    7022506
 
 configure.args-append \
                     -DBUILD_SHARED_LIBS=ON

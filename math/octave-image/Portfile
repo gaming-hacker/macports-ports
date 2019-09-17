@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -18,8 +18,8 @@ description         The Octave-forge Image package provides functions \
 long_description    ${description}
 
 checksums           rmd160  63edd550c0101f4451f0605c371bf886ed7c2d18 \
-                    sha256  33cb171c47d37a57b2f4bfe5e045d7c68e0ac56d887a94a36777d56b90e3f671 \
-                    size    426087
+sha256  33cb171c47d37a57b2f4bfe5e045d7c68e0ac56d887a94a36777d56b90e3f671 \
+size    426087
 
 depends_lib-append  port:octave-signal
 

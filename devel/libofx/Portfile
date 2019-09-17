@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -21,8 +21,8 @@ license                 GPL-2+
 master_sites            sourceforge
 
 checksums               rmd160  3e27e7d599a19b2322645264c7f476a93b4e6898 \
-                        sha256  57eaf97cddbaf82c24f26b8f5cf8b2fbfd4969c74500a2c9acc9082b83bcc0e4 \
-                        size    1290532
+sha256  57eaf97cddbaf82c24f26b8f5cf8b2fbfd4969c74500a2c9acc9082b83bcc0e4 \
+size    1290532
 
 depends_build           port:pkgconfig
 depends_lib             port:opensp

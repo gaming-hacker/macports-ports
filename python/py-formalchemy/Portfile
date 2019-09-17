@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,10 +23,10 @@ master_sites        https://files.pythonhosted.org/packages/2b/5c/f63bc770c89e73
 distname            FormAlchemy-${version}
 
 checksums           rmd160  5d10303cd512687d9235f3ecead02b0df4c92606 \
-                    sha256  3be7c312edaa29f865afed7a3007e5ba047698aea7939eb1b524f0b717a0c796 \
-                    size    108591
+sha256  3be7c312edaa29f865afed7a3007e5ba047698aea7939eb1b524f0b717a0c796 \
+size    108591
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append    port:py${python.version}-setuptools

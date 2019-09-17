@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 
@@ -23,8 +23,8 @@ description                     Mac OS X Aqua GUI for viewing and exporting \
 long_description                ${description}.
 
 checksums                       md5     a3278f993ef3ce021043a17b16a9fd5f \
-                                sha1    87ee05a99088a98aef4937d72c3bb6cf488e3074 \
-                                rmd160  35eac7c7013bddc0d1f107fcaf8e9c7d1e078231
+sha1    87ee05a99088a98aef4937d72c3bb6cf488e3074 \
+rmd160  35eac7c7013bddc0d1f107fcaf8e9c7d1e078231
 
 depends_build                   port:pkgconfig \
                                 port:libiconv

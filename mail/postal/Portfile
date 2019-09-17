@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name             postal
 version          0.72
 revision         3
@@ -16,7 +18,7 @@ homepage         http://www.coker.com.au/postal/
 master_sites     ${homepage}
 extract.suffix      .tgz
 checksums           rmd160  d0823aafb215f4fd3c81d1365d61b039254eb436 \
-                    sha256  70d59adf8ab006a6ea389d8f276a265de743330458f5c1affb97d86bb0663bad
+sha256  70d59adf8ab006a6ea389d8f276a265de743330458f5c1affb97d86bb0663bad
 
 patchfiles          patch-Makefile.in.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -33,7 +33,7 @@ dist_subdir         ${name}/${version}_1
 extract.suffix      .tgz
 
 checksums           rmd160  68b5c4df1c7664b81217a076b431a953e1d3e0a9 \
-                    sha256  97e458626da9d9307a0189a20574fe671e384cf5143f5fa5c5ed4faf753f3fed
+sha256  97e458626da9d9307a0189a20574fe671e384cf5143f5fa5c5ed4faf753f3fed
 
 worksrcdir          lanhep${short_version}
 

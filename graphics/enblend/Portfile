@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       cxx11 1.1
 
 name            enblend
@@ -19,8 +21,8 @@ platforms       darwin
 distname        enblend-enfuse-${version}
 
 checksums       rmd160  997a849a39da3f367b666c6d0d344059d97738d7 \
-                sha256  8703e324939ebd70d76afd350e56800f5ea2c053a040a5f5218b2a1a4300bd48 \
-                size    777747
+sha256  8703e324939ebd70d76afd350e56800f5ea2c053a040a5f5218b2a1a4300bd48 \
+size    777747
 
 depends_build   port:pkgconfig \
                 port:texlive-latex \

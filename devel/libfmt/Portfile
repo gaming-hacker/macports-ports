@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    \
     It can be used as a safe alternative to printf or as a fast alternative to C++ IOStreams.
 
 checksums           rmd160  7ab5001c8144d8d3d25b1726295e1447d065d694 \
-                    sha256  7b40e266c16cbcc16a9d8743713d012be3188872c4bce5dde3556cdf3b5846d2 \
-                    size 662560
+sha256  7b40e266c16cbcc16a9d8743713d012be3188872c4bce5dde3556cdf3b5846d2 \
+size 662560
 
 configure.args-append \
     -DBUILD_SHARED_LIBS=ON

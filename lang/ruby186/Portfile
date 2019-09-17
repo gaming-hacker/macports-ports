@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		deprecated 1.0
 
 # Reached EOL in 2011
@@ -28,8 +30,8 @@ use_bzip2		yes
 dist_subdir		ruby
 distname		ruby-${version}
 checksums		md5     1c7a978e9ffd4f56dc2ad74bbd2c34f3 \
-				sha1    00e977ac46df0ccd1545657426439a82f44bf284 \
-				rmd160  2f76f19e0a3a35d92200769052d4a049c1478c42
+sha1    00e977ac46df0ccd1545657426439a82f44bf284 \
+rmd160  2f76f19e0a3a35d92200769052d4a049c1478c42
 
 platforms		darwin
 
@@ -70,7 +72,7 @@ patchfiles-append \
 # words-bigendian-from-arch.diff: [ruby-core:12895], [ruby-dev:32160]
 patchfiles-append      	dot-darwin.diff \
 						etc-irbrc.diff \
-						md5_sha1_commoncrypto.diff \
+md5_sha1_commoncrypto.diff \
 						use-setreugid.diff \
 						words-bigendian-from-arch.diff
 

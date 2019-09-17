@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -28,8 +28,8 @@ distname            Botan-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  f3a4c1b963b47d543430f8705d7db87c64e013b9 \
-                    sha256  88481997578c27924724fea76610d43d9f59c99edfe561d41803bbc98871ad31 \
-                    size    7240021
+sha256  88481997578c27924724fea76610d43d9f59c99edfe561d41803bbc98871ad31 \
+size    7240021
 
 depends_build       port:python27
 depends_lib         path:lib/libssl.dylib:openssl port:zlib port:bzip2

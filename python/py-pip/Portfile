@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ platforms           darwin
 license             MIT
 supported_archs     noarch
 
-python.versions     26 27 33 34 35 36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -29,8 +29,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  3acdfeb4f1a0e06e218e8b11f91492a896f2b181 \
-                    sha256  e7a31f147974362e6c82d84b91c7f2bdf57e4d3163d3d454e6c3e71944d67135 \
-                    size    1377284
+sha256  e7a31f147974362e6c82d84b91c7f2bdf57e4d3163d3d454e6c3e71944d67135 \
+size    1377284
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools
@@ -41,7 +41,7 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  9cf0429a7a7e9897339ffc5a141e9b2e1da8086e \
-                            sha256  7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
+sha256  7bf48f9a693be1d58f49f7af7e0ae9fe29fd671cde8a55e6edca3581c4ef5796
     }
 
     if {[lsearch {33} ${python.version}] != -1} {
@@ -49,8 +49,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  008e4a069e4969ee08ad383eb1d0070eeb63b405 \
-                            sha256  f2bd08e0cd1b06e10218feaf6fef299f473ba706582eb3bd9d52203fdbd7ee68 \
-                            size    1246072
+sha256  f2bd08e0cd1b06e10218feaf6fef299f473ba706582eb3bd9d52203fdbd7ee68 \
+size    1246072
     }
 
     if {[lsearch {34} ${python.version}] != -1} {
@@ -58,8 +58,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  53409af5e0f06b66656d2d0d81c79ff0a7aba29f \
-                            sha256  c0a292bd977ef590379a3f05d7b7f65135487b67470f6281289a94e015650ea1 \
-                            size    1259370
+sha256  c0a292bd977ef590379a3f05d7b7f65135487b67470f6281289a94e015650ea1 \
+size    1259370
     }
 
     post-destroot {

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xscope
 version             1.4.1
@@ -14,8 +16,8 @@ homepage            https://www.x.org
 master_sites        https://xorg.freedesktop.org/archive/individual/app/
 
 checksums           sha1    d1da41796e72ec41b7763ce0370182e7a33cdbfd \
-                    rmd160  fd00da57aa626974eb6ecbe882c079b7cf76f17e \
-                    sha256  33807fbd51822435b23c28e7e78116e552826a6ca4d85632f098ad0ddf1ff423
+rmd160  fd00da57aa626974eb6ecbe882c079b7cf76f17e \
+sha256  33807fbd51822435b23c28e7e78116e552826a6ca4d85632f098ad0ddf1ff423
 
 use_bzip2	    yes
 use_parallel_build  yes

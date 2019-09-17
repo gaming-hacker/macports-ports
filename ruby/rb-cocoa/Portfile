@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		ruby 1.0
 
 ruby.setup		{cocoa rubycocoa} 1.0.6 install.rb {ChangeLog ReadMe.html}
@@ -17,8 +19,8 @@ license			{LGPL Ruby}
 master_sites	sourceforge:${ruby.project}
 distname		RubyCocoa-${version}
 checksums		md5 ddc0b4e033e70bbdd8d59901e9631d23 \
-				rmd160 6dff7373e73924e266d1f760650db97d321d23dc \
-				sha1 5ab73bceaec2b36955f49f405a9d6001dc01ce15
+rmd160 6dff7373e73924e266d1f760650db97d321d23dc \
+sha1 5ab73bceaec2b36955f49f405a9d6001dc01ce15
 platforms		darwin
 
 # fix #16928: allow non Mac OS X's make, like gmake

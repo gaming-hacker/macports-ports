@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -20,5 +20,5 @@ long_description    ${description} Its primary focus in on the interpolation/reg
                     Geostatistics, Machine Learning, Non-parametric Regression, etc.).
 
 checksums           rmd160  60f4085ed9299a1243eba0f2fcd9c7ddf0afff82 \
-                    sha256  4fec8203ef96cb205614a4b83991a41511ca50b16baaaee0334574af55ffbc26 \
-                    size    380197
+sha256  4fec8203ef96cb205614a4b83991a41511ca50b16baaaee0334574af55ffbc26 \
+size    380197

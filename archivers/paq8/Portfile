@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ use_zip             yes
 distname            paq${version}
 dist_subdir         ${name}/${version}_${revision}
 checksums           md5 a5099ae1f62c292eb16fb7930eb1f68d \
-                    sha1 88628a11045105dd4d2158e8800e8c5ef71c0918 \
-                    rmd160 d5b19357208be514855a94ac4dbbf37d2d9aa9d0
+sha1 88628a11045105dd4d2158e8800e8c5ef71c0918 \
+rmd160 d5b19357208be514855a94ac4dbbf37d2d9aa9d0
 
 extract.mkdir       yes
 use_configure       no

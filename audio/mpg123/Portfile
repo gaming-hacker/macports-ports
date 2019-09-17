@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -28,8 +28,8 @@ master_sites        sourceforge:project/mpg123/mpg123/${version} \
 use_bzip2           yes
 
 checksums           rmd160  d6bb641bc56c7e5f83e7658c044b231b94f4886c \
-                    sha256  1ffec7c9683dfb86ea9040d6a53d6ea819ecdda215df347f79def08f1fe731d1 \
-                    size    910149
+sha256  1ffec7c9683dfb86ea9040d6a53d6ea819ecdda215df347f79def08f1fe731d1 \
+size    910149
 
 depends_lib         port:libtool
 

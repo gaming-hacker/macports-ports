@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -18,7 +18,7 @@ homepage                    http://memcachedb.org/memcacheq/
 master_sites                googlecode
 
 checksums                   sha1    fc373e02335301cbfe4c00420bdf8592ca2bf95a \
-                            rmd160  7a8b7e4658915d011d148bcd6427a0aa13aaa908
+rmd160  7a8b7e4658915d011d148bcd6427a0aa13aaa908
 
 depends_lib                 port:libevent \
                             port:db47

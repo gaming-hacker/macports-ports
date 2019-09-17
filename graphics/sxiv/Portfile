@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ long_description    sxiv is an alternative to feh and qiv. Its only \
 license             GPL-2
 
 checksums           rmd160  2e716be646e4b3a770e3af9ab155ff9c5a305e53 \
-                    sha256  1803a6a338533728a2cf25af10311eaa6bfe406b626dd60b51983f2198b578d6
+sha256  1803a6a338533728a2cf25af10311eaa6bfe406b626dd60b51983f2198b578d6
 
 depends_lib-append  port:imlib2 \
                     port:libexif \

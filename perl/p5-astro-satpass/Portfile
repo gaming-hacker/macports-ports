@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Astro-satpass 0.109 ../../authors/id/W/WY/WYANT
 maintainers         nomaintainer
 platforms           darwin
@@ -18,8 +18,8 @@ long_description    This package contains classes needed to predict \
 homepage            https://metacpan.org/release/${perl5.module}
 
 checksums           rmd160  1b8d25c97307d66b4438a293d9aa24fa6a86d596 \
-                    sha256  c0770868db1d6c73a7b8a8d25df734409582606fd37ed361006e143426b99a34 \
-                    size    520124
+sha256  c0770868db1d6c73a7b8a8d25df734409582606fd37ed361006e143426b99a34 \
+size    520124
 
 variant script description {Install the deprecated satpass script and optional dependencies} {}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               waf 1.0
@@ -21,7 +21,7 @@ master_sites            http://download.drobilla.net/
 use_bzip2               yes
 
 checksums               rmd160  7830520d983fa8effa7c3e18fda545bc55253642 \
-                        sha256  428a39f1265d44c55f2604829a12ade0ea13e1a1022ff937ca2a9ad227bd422a
+sha256  428a39f1265d44c55f2604829a12ade0ea13e1a1022ff937ca2a9ad227bd422a
 
 configure.args-append   --dyn-manifest
 

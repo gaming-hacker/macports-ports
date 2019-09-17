@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,7 +8,7 @@ qt5.depends_component qtwebkit qtsvg
 
 github.setup        wkhtmltopdf wkhtmltopdf 0.12.3.2
 checksums           rmd160  67017d05e0455e26e39cf8c6307a3665d0dec853 \
-                    sha256  547111465b61b2aa0e1a658209b53682259c038100552ba40dba4e74b12c5d5d
+sha256  547111465b61b2aa0e1a658209b53682259c038100552ba40dba4e74b12c5d5d
 
 maintainers         {cal @neverpanic} openmaintainer
 categories          textproc www

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Extracts small pieces of useful information, such as \
 master_sites        http://digitalcorpora.org/downloads/bulk_extractor/
 
 checksums           rmd160  311a19129303fc0dd478e3870d59e18b1b7887e7 \
-                    sha256  297a57808c12b81b8e0d82222cf57245ad988804ab467eb0a70cf8669594e8ed \
-                    size    4473107
+sha256  297a57808c12b81b8e0d82222cf57245ad988804ab467eb0a70cf8669594e8ed \
+size    4473107
 
 depends_build       port:flex
 

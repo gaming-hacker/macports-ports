@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -21,23 +21,23 @@ long_description        ld64 combines several object files and libraries, \
                         resolves references, and produces an ouput file.
 
 checksums           dyld-421.2.tar.gz \
-                    rmd160  8985a77c70b6018f456634f89142670834489a4d \
-                    sha256  e922c4e78af8f7af14dd158f1db986f8eb260403e7a0dc67fa35279d2cfdceb7 \
+rmd160  8985a77c70b6018f456634f89142670834489a4d \
+sha256  e922c4e78af8f7af14dd158f1db986f8eb260403e7a0dc67fa35279d2cfdceb7 \
                     ld64-97-standalone-libunwind-headers.patch \
-                    rmd160  f6da71e097aa61b1055b3fdc12cd39aafed5f492 \
-                    sha256  370d02757ea628b5dd145c099e42fc4eb88cc09cf459a59e32d14bbc9b4a105e \
+rmd160  f6da71e097aa61b1055b3fdc12cd39aafed5f492 \
+sha256  370d02757ea628b5dd145c099e42fc4eb88cc09cf459a59e32d14bbc9b4a105e \
                     ld64-97.17.tar.gz \
-                    rmd160  d52df7d7f741c8bedd29cbac73dbb9db992b4795 \
-                    sha256  02bd46af0809eaa415d096d7d41c3e8e7d80f7d8d181840866fb87f036b4e089 \
+rmd160  d52df7d7f741c8bedd29cbac73dbb9db992b4795 \
+sha256  02bd46af0809eaa415d096d7d41c3e8e7d80f7d8d181840866fb87f036b4e089 \
                     ld64-127.2.tar.gz \
-                    rmd160  8ee709341549a1944732daef6ebab7ef1acfcc6e \
-                    sha256  97b75547b2bd761306ab3e15ae297f01e7ab9760b922bc657f4ef72e4e052142 \
+rmd160  8ee709341549a1944732daef6ebab7ef1acfcc6e \
+sha256  97b75547b2bd761306ab3e15ae297f01e7ab9760b922bc657f4ef72e4e052142 \
                     ld64-236.3.tar.gz \
-                    rmd160  6a3f44aa9ae57a60d2cff5b3d47be7972ad83029 \
-                    sha256  8ef36729b643201081ab45ebd8586ede8f9968bc17614b679a940faa82875ca6 \
+rmd160  6a3f44aa9ae57a60d2cff5b3d47be7972ad83029 \
+sha256  8ef36729b643201081ab45ebd8586ede8f9968bc17614b679a940faa82875ca6 \
                     ld64-274.2.tar.gz \
-                    rmd160  16e57faf2b1d3f3808fb8e4b167cf23a14f106b0 \
-                    sha256  175d89c419e99d49a7a5f7e4196d3cef4c9e19cc17a425c332e86df6b516f7d7
+rmd160  16e57faf2b1d3f3808fb8e4b167cf23a14f106b0 \
+sha256  175d89c419e99d49a7a5f7e4196d3cef4c9e19cc17a425c332e86df6b516f7d7
 
 
 subport ld64-97 {

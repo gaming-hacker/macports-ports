@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -18,8 +18,8 @@ master_sites            http://math.lbl.gov/voro++/download/dir/
 distname                voro++-${version}
 
 checksums               rmd160  c5236d7d5bad9ca7df5e580d7b0f525741c92102 \
-                        sha256  ef7970071ee2ce3800daa8723649ca069dc4c71cc25f0f7d22552387f3ea437e \
-                        size    809124
+sha256  ef7970071ee2ce3800daa8723649ca069dc4c71cc25f0f7d22552387f3ea437e \
+size    809124
 
 patchfiles-append       patch-makefiles.diff
 

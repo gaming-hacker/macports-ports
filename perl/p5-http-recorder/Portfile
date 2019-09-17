@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         HTTP-Recorder 0.07
 license             GPL
 maintainers         nomaintainer
@@ -13,7 +13,7 @@ long_description    This is a browser-independent recorder for recording \
 platforms           darwin
 
 checksums           rmd160  7bfea3ff521de664ac3efbc70df7241f5ac91a91 \
-                    sha256  66fe80d8fd910b6e5fb8ae2d57c0b59682f3b81cc14d242598a84781425ee480
+sha256  66fe80d8fd910b6e5fb8ae2d57c0b59682f3b81cc14d242598a84781425ee480
 
 if {${perl5.major} != ""} {
     depends_lib-append \

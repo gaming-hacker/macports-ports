@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -25,8 +25,8 @@ master_sites    http://dist.schmorp.de/rxvt-unicode/ \
 use_bzip2       yes
 
 checksums       rmd160  83e315f513500c2bf1f31cd4fd3854b508bc8d22 \
-                sha256  e94628e9bcfa0adb1115d83649f898d6edb4baced44f5d5b769c2eeb8b95addd \
-                size    931198
+sha256  e94628e9bcfa0adb1115d83649f898d6edb4baced44f5d5b769c2eeb8b95addd \
+size    931198
 depends_build \
         port:pkgconfig
 

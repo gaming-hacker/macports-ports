@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 epoch               1
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Spreadsheet-ParseExcel 0.65
 revision            1
 license             {Artistic-1 GPL}
@@ -16,8 +16,8 @@ long_description    Spreadsheet::ParseExcel lets you to get information \
 platforms           darwin
 
 checksums           md5     4b8857e3a391d86501c1b742b459ac9e \
-                    sha1    76f49a87bffcbe0191117493c69017cf6a0598da \
-                    rmd160  d37321fe9612ac543ec4e611ca732ae789a5e0e8
+sha1    76f49a87bffcbe0191117493c69017cf6a0598da \
+rmd160  d37321fe9612ac543ec4e611ca732ae789a5e0e8
 
 if {${perl5.major} != ""} {
     depends_lib-append \

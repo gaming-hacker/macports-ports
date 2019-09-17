@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup xcodeversion  1.0
@@ -22,7 +22,7 @@ long_description        ODE is a free, industrial quality library for \
                         contact with friction, and built-in collision detection.
 
 checksums               rmd160  d856bce32d853a16dc7c0afdc00eef0a6984bb77 \
-                        sha256  b1fa91af39fcb4e5add94b4ba97e4eff2226b99e3fa837fff19cea9e8cab8b2b
+sha256  b1fa91af39fcb4e5add94b4ba97e4eff2226b99e3fa837fff19cea9e8cab8b2b
 
 depends_build-append    port:libccd
 patch {

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup  cmake 1.0
 
 name                generatorrunner
@@ -20,8 +22,8 @@ platforms           darwin
 master_sites        http://www.pyside.org/files/
 
 checksums           md5     c7011b8ee08e228779a769b7cfa90f5f \
-                    rmd160  ae146f36ab3752756decdca32c4d1c75da2dfc9c \
-                    sha1    3f118992bff2cbadcadfe5fbc0372e17da252b2e
+rmd160  ae146f36ab3752756decdca32c4d1c75da2dfc9c \
+sha1    3f118992bff2cbadcadfe5fbc0372e17da252b2e
 use_bzip2           yes
 depends_lib-append  port:qt4-mac port:apiextractor
 configure.args-append -DBUILD_TESTS:BOOL=FALSE

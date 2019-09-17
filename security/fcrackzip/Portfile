@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            fcrackzip
 version         1.0
@@ -15,8 +17,8 @@ homepage        http://oldhome.schmorp.de/marc/fcrackzip.html
 master_sites    http://oldhome.schmorp.de/marc/data/
 
 checksums       md5     254941f51759f9425965f4b05fe7ac2c \
-                sha1    92e4f8caa880c55b20e13feb7a25c8b8fd3accf8 \
-                rmd160  8c784108816c990fcd09cfafc69a5d4a0ef1d33a
+sha1    92e4f8caa880c55b20e13feb7a25c8b8fd3accf8 \
+rmd160  8c784108816c990fcd09cfafc69a5d4a0ef1d33a
 
 depends_build   path:bin/perl:perl5
 configure.perl  ${prefix}/bin/perl

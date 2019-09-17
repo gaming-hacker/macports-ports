@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             xtermcontrol
 categories       x11
@@ -16,7 +18,7 @@ homepage         http://www.thrysoee.dk/xtermcontrol/
 master_sites     ${homepage}
 
 checksums        rmd160  4b81784ba15d220ba88d5de6347cf04712bc0cd8 \
-                 sha256  34ab906bb6639c41819799330ec9243c4a2f302b5201f524d2f4c486273032b3
+sha256  34ab906bb6639c41819799330ec9243c4a2f302b5201f524d2f4c486273032b3
 
 livecheck.type   regex
 livecheck.url    ${homepage}

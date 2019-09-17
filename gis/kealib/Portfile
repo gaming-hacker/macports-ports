@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           cmake 1.0
 PortGroup           bitbucket 1.0
 PortGroup           cxx11 1.1
@@ -17,8 +19,8 @@ platforms           darwin
 bitbucket.tarball_from  downloads
 
 checksums           rmd160  a378fce28c2cc996dd070efc4c9d373a7242bb65 \
-                    sha256  b1bd2d6834d2fe09ba456fce77f7a9452b406dbe302f7ef1aabe924e45e6bb5e \
-                    size    116331
+sha256  b1bd2d6834d2fe09ba456fce77f7a9452b406dbe302f7ef1aabe924e45e6bb5e \
+size    116331
 
 depends_lib-append  port:gdal \
                     port:hdf5

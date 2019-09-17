@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            https://pypi.python.org/pypi/TurboCheetah/
 master_sites        pypi:T/TurboCheetah/
 distname            TurboCheetah-${version}
 checksums           md5 daf99f38f6696ac64b7df8ac2e003a03 \
-                    sha1 f2e983c1a57e00e4abbffb906280e147dcd787e9 \
-                    rmd160 6d224c43740a9d0e13bb8a765d710df0ec169986
+sha1 f2e983c1a57e00e4abbffb906280e147dcd787e9 \
+rmd160 6d224c43740a9d0e13bb8a765d710df0ec169986
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

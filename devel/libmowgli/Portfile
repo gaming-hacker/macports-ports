@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -16,8 +16,8 @@ platforms               darwin
 master_sites            macports_distfiles
 
 checksums               rmd160  55b3eea025e27bed54c6f59bba6fd989606da1f9 \
-                        sha256  c1ed9a4efafc9ec9700142eb41accc8bf69d205e23e5a5664e5ab4c56c1a5a11 \
-                        size    126941
+sha256  c1ed9a4efafc9ec9700142eb41accc8bf69d205e23e5a5664e5ab4c56c1a5a11 \
+size    126941
 
 patchfiles              patch-m4-buildsys.m4.diff
 

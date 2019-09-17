@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -37,8 +37,8 @@ build.dir           ${configure.dir}
 destroot.dir        ${configure.dir}
 
 checksums           rmd160  da0870ffe1a1fea52b4244ed2cd6c4568a415b03 \
-                    sha256  686f0cad88d033fe71c8b781735ff742b73a1d82a65b8b1586526d69729ac4cf \
-                    size    5690553
+sha256  686f0cad88d033fe71c8b781735ff742b73a1d82a65b8b1586526d69729ac4cf \
+size    5690553
 
 compilers.choose    cc cxx
 mpi.setup           require

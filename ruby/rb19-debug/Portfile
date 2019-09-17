@@ -1,4 +1,6 @@
-PortSystem		    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		    ruby 1.0
 
 ruby.setup          ruby-debug19 0.11.6 gem {} rubygems ruby19
@@ -11,8 +13,8 @@ license             Ruby
 maintainers		    nomaintainer
 platforms           darwin
 checksums           md5     73bc88012167fd82464a8e7fd4dd8b4f \
-                    sha1    e4bc8f8dfc9db766d0b14e6d45228d9b98f9a8db \
-                    rmd160  97ac04ef740762e4a67119d888f1590dc6998752
+sha1    e4bc8f8dfc9db766d0b14e6d45228d9b98f9a8db \
+rmd160  97ac04ef740762e4a67119d888f1590dc6998752
 
 depends_lib-append  \
     port:rb19-debug-base \

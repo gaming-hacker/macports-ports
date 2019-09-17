@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,14 +26,14 @@ homepage            http://www.speakeasy.org/~bob_green/pipedream/
 master_sites        macports
 distname            pipedream-${version}
 checksums           md5     bb7a502071d593a518aa31e9bc64244c \
-                    rmd160  086c48afd860de2e641b4d155bc84c9a900cb50b \
-                    sha256  60003dbfcbef1230fadfc8ff6dfba3dfa38927c10361d8dc11843a25e055aa19 \
-                    size    5028
+rmd160  086c48afd860de2e641b4d155bc84c9a900cb50b \
+sha256  60003dbfcbef1230fadfc8ff6dfba3dfa38927c10361d8dc11843a25e055aa19 \
+size    5028
 
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -15,11 +15,11 @@ description         Sphinx bootstrap theme.
 long_description    ${description}
 
 checksums \
-    rmd160  b57d6742d215223f9b4e995b3456ff00ae0c32ec \
-    sha256  df0cafc62db5768f2b595a0709099d2ff65bf19b1c19855bdfd9e1d6a1af6bfb \
-    size    1253883
+rmd160  b57d6742d215223f9b4e995b3456ff00ae0c32ec \
+sha256  df0cafc62db5768f2b595a0709099d2ff65bf19b1c19855bdfd9e1d6a1af6bfb \
+size    1253883
 
-python.versions     27 36 37
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build       port:py${python.version}-setuptools

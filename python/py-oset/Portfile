@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ master_sites        pypi:o/oset
 distname            oset-${version}
 
 checksums           rmd160  e5e9cc294b62abf761db863c89c2ab30510b837f \
-                    sha256  4c1fd7dec96eeff9d3260995a8e37f9f415d0bdb79975f57824e68716ac8f904 \
-                    size    7345
+sha256  4c1fd7dec96eeff9d3260995a8e37f9f415d0bdb79975f57824e68716ac8f904 \
+size    7345
 
-python.versions     27 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

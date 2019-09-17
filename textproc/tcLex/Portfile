@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            tcLex
 version         1.2a1
@@ -13,8 +15,8 @@ long_description \
                 written in C.
 
 checksums       md5     3ff41a67ba988f8708c8a05ea5c463a0 \
-                sha1    ee8d467d6d977951a2ecb43cf61628f7a66a26ee \
-                rmd160  6a39a3925358618f898ec5a8e6e8a1226153a9dc
+sha1    ee8d467d6d977951a2ecb43cf61628f7a66a26ee \
+rmd160  6a39a3925358618f898ec5a8e6e8a1226153a9dc
 
 homepage        http://membres.multimania.fr/fbonnet/Tcl/tcLex/index.en.htm
 master_sites    http://membres.multimania.fr/fbonnet/pub/

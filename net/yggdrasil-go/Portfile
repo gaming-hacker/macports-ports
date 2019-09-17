@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Yggdrasil is an early-stage implementation of a fully \
                     nodes.
 
 checksums           rmd160  a108d1732704ca66167238c7802c31d52cf4a591 \
-                    sha256  d7cef3a4d53cd8c9f00c8bdb5d9b4850a5b870ed4df832fd0c4d63b7e383e72f \
-                    size    154631
+sha256  d7cef3a4d53cd8c9f00c8bdb5d9b4850a5b870ed4df832fd0c4d63b7e383e72f \
+size    154631
 
 depends_build       port:go
 

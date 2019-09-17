@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             trio
 version          1.16
@@ -16,7 +18,7 @@ platforms        darwin
 license          MIT
 master_sites     sourceforge:ctrio
 checksums        rmd160 ce7aaa21611d5cc4c1d888d557bc0a13ad6b0e53 \
-                 sha256 84d0e74f5b25f0b6c7d9b264ef41f98908e65a5056d4e75c5ef0e05d6a69fc0a
+sha256 84d0e74f5b25f0b6c7d9b264ef41f98908e65a5056d4e75c5ef0e05d6a69fc0a
 
 patchfiles       patch-Makefile.in
 

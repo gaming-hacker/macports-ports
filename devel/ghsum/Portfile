@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 
 github.setup        rodnaph ghsum 0.1.0 v
 revision            6
-perl5.branches      5.26
+perl5.branches 5.28
 categories          devel shells macports
 platforms           darwin
 maintainers         nomaintainer
@@ -24,7 +24,7 @@ depends_lib         port:wget \
                     port:p${perl5.major}-getopt-long-descriptive
 
 checksums           rmd160 8135a086a7ba075d5ce3596caaa46cd21705bb64 \
-                    sha256 863ce994a8a9a276f3ea8a6a395b33015540cccf08c8e419223aa8253ed42eb2
+sha256 863ce994a8a9a276f3ea8a6a395b33015540cccf08c8e419223aa8253ed42eb2
 
 use_configure       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,7 +25,7 @@ homepage            http://sqlmap.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  5a6a737157cda4ffe9c6fd326d9fa39f0a0bfe59 \
-                    sha256  9c76666d0555620329d949aca87571825adb8fcda9cd564e6410e1d2b6228c55
+sha256  9c76666d0555620329d949aca87571825adb8fcda9cd564e6410e1d2b6228c55
 
 worksrcdir          ${name}
 python.link_binaries no
@@ -58,10 +58,10 @@ variant python26 conflicts python27 description {Build for python26} {
     python.default_version 26
 }
 variant python27 conflicts python26 description {Build for python27} {
-    python.default_version 27
+python.default_version 37
 }
 if {    ![variant_isset python26]
     &&  ![variant_isset python27]
     } {
-    default_variants +python27
+
 }

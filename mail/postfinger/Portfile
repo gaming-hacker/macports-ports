@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,11 +25,11 @@ dist_subdir         ${name}/${version}
 distfiles           ${name}-${version} \
                     README
 checksums           ${name}-${version} \
-                    rmd160  62f8e8ce2888bf3d9e615072e9f25284d3f4155e \
-                    sha256  2c993b87ca3063eb4b81f7f652d6292a72d777be500bda214d54ce485aee2fd0 \
+rmd160  62f8e8ce2888bf3d9e615072e9f25284d3f4155e \
+sha256  2c993b87ca3063eb4b81f7f652d6292a72d777be500bda214d54ce485aee2fd0 \
                     README \
-                    rmd160  7f08ecd13c073d81ca11ef097370fbdd361adb3d \
-                    sha256  1e842f569b1d7878adc6bb38a1f5e80d8d3d25de051b820527f7f9fb9a8a4d95
+rmd160  7f08ecd13c073d81ca11ef097370fbdd361adb3d \
+sha256  1e842f569b1d7878adc6bb38a1f5e80d8d3d25de051b820527f7f9fb9a8a4d95
 
 extract.mkdir       yes
 extract {

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Captcha-reCaptcha 0.99
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -14,7 +14,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  b194722086433d4a37e4b71196359a32c207357a \
-                    sha256  b8923576601166ede3f7f2f2ff55ff6e3c3bce70e69f365a51ed3be8cca44392
+sha256  b8923576601166ede3f7f2f2ff55ff6e3c3bce70e69f365a51ed3be8cca44392
 
 worksrcdir          ${perl5.module}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: LaTeX fundamental packages
 long_description    These packages are either mandated by the core LaTeX team, or very widely used and strongly recommended in practice.
 
 checksums           texlive-latex-50741-run.tar.xz \
-                    rmd160  8befd05ae348cc7b2118ba947411146a46c10ba7 \
-                    sha256  51d51010510999d0ac0188d3ef1f515c7763b79430ba068be7cbaa28e03eefea \
+rmd160  8befd05ae348cc7b2118ba947411146a46c10ba7 \
+sha256  51d51010510999d0ac0188d3ef1f515c7763b79430ba068be7cbaa28e03eefea \
                     texlive-latex-50741-doc.tar.xz \
-                    rmd160  80a3a6c8e10cd14c97f61340dc7dab93ce71eaba \
-                    sha256  a5385ccff463da3b6e365436d3fbae8c55bcd7c687aa017a34e4a1913175fa54 \
+rmd160  80a3a6c8e10cd14c97f61340dc7dab93ce71eaba \
+sha256  a5385ccff463da3b6e365436d3fbae8c55bcd7c687aa017a34e4a1913175fa54 \
                     texlive-latex-50741-src.tar.xz \
-                    rmd160  75287197337dc1e782b3e411272b5af2bbf7c26f \
-                    sha256  87f7d374223539e823ba132a9265f31c9859d68c0264c39b189b0385669c42eb
+rmd160  75287197337dc1e782b3e411272b5af2bbf7c26f \
+sha256  87f7d374223539e823ba132a9265f31c9859d68c0264c39b189b0385669c42eb
 
 depends_lib         port:texlive-basic
 

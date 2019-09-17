@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ homepage            http://fmv.jku.at/picosat/
 master_sites        ${homepage}
 
 checksums           rmd160  cf196a11b86e028e1db8bcc7f5c3493c16f85978 \
-                    sha256  15169b4f28ba8f628f353f6f75a100845cdef4a2244f101a02b6e5a26e46a754 \
-                    size    64386
+sha256  15169b4f28ba8f628f353f6f75a100845cdef4a2244f101a02b6e5a26e46a754 \
+size    64386
 
 installs_libs       yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -13,7 +13,7 @@ description         PEAR Inline_C package
 long_description    ${description}
 
 checksums           rmd160  8bf21ba99a94930da346d69797f69e4445bdaef3 \
-                    sha256  45abc0d02d2334a4a7c1bf680dc4885b776aaf512d0a014726b681e972a42e41
+sha256  45abc0d02d2334a4a7c1bf680dc4885b776aaf512d0a014726b681e972a42e41
 
 post-patch {
     move ${pear.sourceroot}/Inline_C.php.in \

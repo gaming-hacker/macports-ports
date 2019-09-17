@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                bladeenc
 version             0.94.2
@@ -17,7 +19,7 @@ platforms           darwin freebsd
 master_sites        ${homepage}source
 distname            ${name}-${version}-src-stable
 checksums           rmd160  4e1e0c2e56abb2e6d87543c9569ecfde720fcf67 \
-                    sha256  c5e9dd180f28d1865599d0755e36fa1a4c146bb5e1b7ba9ad099955261fc1164
+sha256  c5e9dd180f28d1865599d0755e36fa1a4c146bb5e1b7ba9ad099955261fc1164
 
 worksrcdir          ${name}-${version}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 
@@ -24,8 +24,8 @@ livecheck.regex     nagios-(\[0-9.\]+)${extract.suffix}
 
 master_sites        sourceforge:project/nagios/nagios-4.x/nagios-${version}
 checksums           rmd160  afdbd6ed29b6ac64574caeade70a37810c5b2cdc \
-                    sha256  bf69e2d2fae218694585677472d355ba676120cbd024164281e635dc467c391d\
-                    size    11304463
+sha256  bf69e2d2fae218694585677472d355ba676120cbd024164281e635dc467c391d\
+size    11304463
 
 depends_build       port:gd2
 depends_lib         path:lib/libssl.dylib:openssl \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ master_sites        http://cdsarc.u-strasbg.fr/ftp/pub/sw/ \
                     ftp://cdsarc.u-strasbg.fr/pub/sw/
 
 checksums           rmd160  9010659d34e48414142915791034573c2c0fadc9 \
-                    sha256  6363529d547acc00c6ebc48efd48bde4c992ceeef6505b91b0e247f373b11134
+sha256  6363529d547acc00c6ebc48efd48bde4c992ceeef6505b91b0e247f373b11134
 
 depends_run         port:wget
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -17,9 +17,9 @@ long_description            Command line interface for Bluetooth on OSX, \
                             devices, and check if a device is connected.
 
 checksums                   sha1    de57e6a1783a89523b0aec96b1bbbac2b1dd3a0e \
-                            rmd160  e342c7a6b8112b93abccfc86fe177cd2b1db1a5d \
-                            sha256  3ddbd876885f9b79d7da8dc2f6a19b263b4c7708c6f7f1172a5320a89464066b \
-                            size    9727
+rmd160  e342c7a6b8112b93abccfc86fe177cd2b1db1a5d \
+sha256  3ddbd876885f9b79d7da8dc2f6a19b263b4c7708c6f7f1172a5320a89464066b \
+size    9727
 
 if { ${os.platform} eq "darwin" && ${os.major} <= 12} {
     pre-fetch {

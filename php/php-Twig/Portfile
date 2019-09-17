@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             BSD
 
-php.branches        5.3 5.4 5.5 5.6
+php.branches 7.3
 php.build_dirs      ${worksrcpath}/ext/twig/
 
 description         Enhances the performance of the Twig runtime engine.
@@ -21,6 +21,6 @@ long_description    Enhances the performance of the Twig runtime engine.
 homepage            https://twig.sensiolabs.org
 
 checksums           rmd160  340c869fbb55bb1280e0d43c1d11a20fe901e2b4 \
-                    sha256  b06a14be0dd0c414f1bbb28b99ef0a3d448dfb04553c6c2ac3798977d7b5ddbf
+sha256  b06a14be0dd0c414f1bbb28b99ef0a3d448dfb04553c6c2ac3798977d7b5ddbf
 
 use_parallel_build  yes

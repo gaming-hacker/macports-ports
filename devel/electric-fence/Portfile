@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -26,8 +26,8 @@ master_sites    http://perens.com/FreeSoftware/ElectricFence/
 distname        ${name}_${version}
 worksrcdir      ${name}-[lindex [split ${version} -] 0]
 checksums       md5 59e4e7817a30aff52d8971ce00e1ad35 \
-                sha1 e6765bcb1543272040b806eea706fc7ae9b60524 \
-                rmd160 75e41de7bef263007f24a1053528959f9f7fe1fa
+sha1 e6765bcb1543272040b806eea706fc7ae9b60524 \
+rmd160 75e41de7bef263007f24a1053528959f9f7fe1fa
 patchfiles      patch-page.c.diff
 
 use_configure   no

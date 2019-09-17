@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -25,10 +25,10 @@ master_sites            pypi:P/PyHyphen/
 distname                PyHyphen-${version}
 
 checksums               rmd160  06d5cf7859443b40c8a380b7ad3b1ec74b25056b \
-                        sha256  379a78c49cadd8653d5634951bf243a0d99704eee496d8b23ddb00dc81a0e1fb \
-                        size    31174
+sha256  379a78c49cadd8653d5634951bf243a0d99704eee496d8b23ddb00dc81a0e1fb \
+size    31174
 
-python.versions         27 36 37
+python.versions 27 37
 
 if {$subport ne $name} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ master_sites        sourceforge:pysparse
 distname            pysparse-${version}
 
 checksums           md5     a9f4d0b31488a08cc3235df0b3d8b558 \
-                    sha1    dca36520f39551781bcaeac8c1bbc6d3baefa57a \
-                    rmd160  0848e7f061d0d2571bbad3e4fd2b4e0f070b961a
+sha1    dca36520f39551781bcaeac8c1bbc6d3baefa57a \
+rmd160  0848e7f061d0d2571bbad3e4fd2b4e0f070b961a
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib         port:py${python.version}-numpy

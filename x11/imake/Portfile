@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,8 +20,8 @@ master_sites            xorg:individual/util/
 use_bzip2               yes
 
 checksums               rmd160  e7208565e48a23ec85deb2154cb58b067f692fdf \
-                        sha256  b8d2e416b3f29cd6482bcffaaf19286d32917a164d07102a0e531ccd41a2a702 \
-                        size    159398
+sha256  b8d2e416b3f29cd6482bcffaaf19286d32917a164d07102a0e531ccd41a2a702 \
+size    159398
 
 depends_run             port:xorg-cf-files \
                         path:bin/perl:perl5

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xcc
 version             0.6.3
@@ -20,8 +22,8 @@ long_description    \
 homepage            ftp://plasma-gate.weizmann.ac.il/pub/xcc/
 master_sites        ftp://plasma-gate.weizmann.ac.il/pub/xcc/
 checksums           md5     ad3bca85eb438b50e180c19fcbbc4673 \
-                    sha1    59a6e22ffcc5fea176031e70bfd6a4892e5df162 \
-                    rmd160  cdd62d071d3d389f16168ac38968f38a2bdf79a7
+sha1    59a6e22ffcc5fea176031e70bfd6a4892e5df162 \
+rmd160  cdd62d071d3d389f16168ac38968f38a2bdf79a7
 
 fetch.use_epsv      no
 

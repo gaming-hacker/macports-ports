@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		libelf
 version		0.8.13
@@ -12,13 +14,13 @@ platforms	darwin
 
 long_description  'Libelf' lets you read, modify or create ELF files in an \
 		   architecture-independent way. The library takes care of \
-		   size and endian issues, e.g. you can process a file for \
+size and endian issues, e.g. you can process a file for \
 		   SPARC processors on an Intel-based system.
 
 master_sites	http://www.mr511.de/software
 distname	    libelf-${version}
 checksums       md5     4136d7b4c04df68b686570afa26988ac \
-                sha1    c1d6ac5f182d19dd685c4dfd74eedbfe3992425d
+sha1    c1d6ac5f182d19dd685c4dfd74eedbfe3992425d
 
 patchfiles      elf_repl.diff
 

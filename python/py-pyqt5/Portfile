@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -18,14 +18,14 @@ license                 GPL-3
 master_sites            https://www.riverbankcomputing.com/static/Downloads/PyQt5/${version}/
 distname                PyQt5_gpl-${version}
 checksums               rmd160  9215967ed17e4b897d482a3d45c33e4ca900a596 \
-                        sha256  c565829e77dc9c281aa1a0cdf2eddaead4e0f844cbaf7a4408441967f03f5f0f \
-                        size    3147205
+sha256  c565829e77dc9c281aa1a0cdf2eddaead4e0f844cbaf7a4408441967f03f5f0f \
+size    3147205
 
 livecheck.type          regex
 livecheck.url           https://www.riverbankcomputing.com/software/pyqt/download5
 livecheck.regex         >PyQt5_gpl-(\[0-9.\]*).tar.gz<
 
-python.versions 27 34 35 36 37
+python.versions 27 37
 subport "${name}-common" {}
 
 foreach py_ver ${python.versions} {
@@ -59,8 +59,8 @@ if {${subport} eq "${name}-common"} {
     master_sites        https://www.riverbankcomputing.com/static/Downloads/PyQtWebEngine/${version}
     distname            PyQtWebEngine_gpl-${version}
     checksums           rmd160  5e0c3cd69448b8dee042ba6565c823e266c22a14 \
-                        sha256  860704672ea1b616e1347be1f347bc1c749e64ed378370863fe209e84e9bd473 \
-                        size    42474
+sha256  860704672ea1b616e1347be1f347bc1c749e64ed378370863fe209e84e9bd473 \
+size    42474
 
     livecheck.type      regex
     livecheck.url       https://www.riverbankcomputing.com/software/pyqtwebengine/download

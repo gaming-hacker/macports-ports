@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -20,7 +20,7 @@ homepage            http://www.netfort.gr.jp/~dancer/software/dsh.html.en
 master_sites        http://www.netfort.gr.jp/~dancer/software/downloads/
 
 checksums           rmd160  2a60c27f8c0b7d4546f3cf96b37aaa01cbd0579c \
-                    sha256  520031a5474c25c6b3f9a0840e06a4fea4750734043ab06342522f533fa5b4d0
+sha256  520031a5474c25c6b3f9a0840e06a4fea4750734043ab06342522f533fa5b4d0
 
 depends_lib         port:libdshconfig
 depends_run         port:openssh

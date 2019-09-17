@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -19,8 +19,8 @@ homepage                https://www.mono-project.com/Libgdiplus
 master_sites            https://download.mono-project.com/sources/libgdiplus/
 
 checksums               rmd160  4b11e8dd15edb86d21170a215c62681c777a9df3 \
-                        sha256  716cf8fbbca6963022d5f1510b58a44cf8f40380cf6f7433d68c3db651f6f904 \
-                        size    1377140
+sha256  716cf8fbbca6963022d5f1510b58a44cf8f40380cf6f7433d68c3db651f6f904 \
+size    1377140
 
 depends_build           port:pkgconfig
 

@@ -1,3 +1,5 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name			network-weathermap
@@ -19,7 +21,7 @@ master_sites		http://www.network-weathermap.com/files
 use_zip			yes
 distfiles		php-weathermap-${version}${extract.suffix}
 checksums		md5 221f64506abc4d6572774b3fd3d2e2a7 \
-			rmd160 76181bfbf6850157265d1851897ada95007c1898
+rmd160 76181bfbf6850157265d1851897ada95007c1898
 worksrcdir		weathermap
 
 depends_lib		path:bin/perl:perl5 \

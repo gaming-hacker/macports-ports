@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -15,8 +15,8 @@ homepage        https://www.xfce.org
 master_sites    http://archive.xfce.org/src/xfce/${name}/${branch}/
 use_bzip2       yes
 checksums       md5 4eb012b6c1292ceedb3a83ebfc1ff08d \
-                sha1 fbea10b13db55c1f7756ec36ea7c8e84ca781492 \
-                sha256 876bdefa2e13cbf68b626b2158892fb93e824e1ef59cf951123a96cefbc8881d
+sha1 fbea10b13db55c1f7756ec36ea7c8e84ca781492 \
+sha256 876bdefa2e13cbf68b626b2158892fb93e824e1ef59cf951123a96cefbc8881d
 
 depends_build   port:intltool port:pkgconfig
 depends_lib     port:gettext path:lib/pkgconfig/glib-2.0.pc:glib2 \

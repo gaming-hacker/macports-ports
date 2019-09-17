@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		xcode 1.0
 
 name			wtf-x
@@ -19,7 +21,7 @@ use_zip 		yes
 distname		${name}-release-${version}-source
 
 checksums		md5 101f0798f34f0c9f6a5c9ef8b179192d \
-				sha1 4ef240617206d15473e77af21146637bc0e96f37 \
-				rmd160 fb971c1056fb8dc6412216402d5b57e6b65a2d30
+sha1 4ef240617206d15473e77af21146637bc0e96f37 \
+rmd160 fb971c1056fb8dc6412216402d5b57e6b65a2d30
 
 worksrcdir 		${name}

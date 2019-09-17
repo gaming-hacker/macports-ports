@@ -1,10 +1,12 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                cpio
 version             2.12
 revision            0
 checksums           rmd160  156e7852db0f83e35fc02c007a1fb21e4a3393d6 \
-                    sha256  70998c5816ace8407c8b101c9ba1ffd3ebbecba1f5031046893307580ec1296e
+sha256  70998c5816ace8407c8b101c9ba1ffd3ebbecba1f5031046893307580ec1296e
 
 categories          archivers
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ use_configure       no
 build               {}
 
 checksums           rmd160  acfd7e2aa608977183ae7855aa3656f297b4b4f3 \
-                    sha256  9d6c6a6af885bbae3b4bfa94a5e06d5ec7c4814a0f5fab3d87c5406cf564a27e \
-                    size    2942626
+sha256  9d6c6a6af885bbae3b4bfa94a5e06d5ec7c4814a0f5fab3d87c5406cf564a27e \
+size    2942626
 
 destroot {
     xinstall -d ${destroot}${texlive_texmfdist}/tex/latex/f7u12/

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ if {${name} eq ${subport}} {
     master_sites    sourceforge:project/w3m/w3m/w3m-${version}
 
     checksums       md5     1b845a983a50b8dec0169ac48479eacc \
-                    sha1    444b6c8cf7094ee95f8e9de96b37f814b9d83237 \
-                    sha256  e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3
+sha1    444b6c8cf7094ee95f8e9de96b37f814b9d83237 \
+sha256  e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3
 
     # LC_ALL=C sed -i '' 's|^+++ w3m/|+++ |' 010_upstream.patch
     # LC_ALL=C sed -i '' 's|^+++ b/|+++ |' 020_debian.patch
@@ -44,8 +44,8 @@ subport w3m-devel {
     revision        1
 
     checksums       rmd160  76853eefec217a90c8876599f33e3d2fb74bf3b8 \
-                    sha256  1bb513056fba2b581ce0e45e6e4d6f15eae1dd0b0af78dce9ecb49a1c73b87e8 \
-                    size    2182420
+sha256  1bb513056fba2b581ce0e45e6e4d6f15eae1dd0b0af78dce9ecb49a1c73b87e8 \
+size    2182420
 
     conflicts       w3m
 }

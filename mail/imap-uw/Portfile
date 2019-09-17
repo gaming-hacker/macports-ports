@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -13,7 +13,7 @@ maintainers         nomaintainer
 description         University of Washington IMAP daemon
 long_description    IMAP (Internet Message Access Protocol) is a method \
                     of accessing electronic messages kept on a (possibly \
-                    shared) mail server. This port provides the \
+shared) mail server. This port provides the \
                     University of Washington IMAP toolkit (IMAP \
                     supporting software developed by the UW).
 
@@ -25,8 +25,8 @@ distname            imap-${version}
 extract.suffix      .tar.Z
 
 checksums           rmd160  14f40284e9e164c0ed7677f1e5d8e3309c7c58c1 \
-                    sha256  870e95f6bd19265832a88fd89b77c54c841c59022fd21e69254050c8b1005e3c \
-                    size    2793529
+sha256  870e95f6bd19265832a88fd89b77c54c841c59022fd21e69254050c8b1005e3c \
+size    2793529
 
 depends_lib         port:gss \
                     lib:libgssapi_krb5:kerberos5 \

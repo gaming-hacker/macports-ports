@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            vobcopy
 version         1.2.0
@@ -14,8 +16,8 @@ platforms       darwin
 use_bzip2       yes
 master_sites    http://vobcopy.org/download/
 checksums       md5 88f735ccd051093ff40dab4597bc586e \
-                sha1 a848a777f0e477d42a20a52718599d5da00c36db \
-                rmd160 01cd2d51fc153a082d055f17db0dd783b39d0069
+sha1 a848a777f0e477d42a20a52718599d5da00c36db \
+rmd160 01cd2d51fc153a082d055f17db0dd783b39d0069
 depends_lib     port:libdvdread
 patchfiles      patch-configure.sh patch-vobcopy.c
 

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          sinatra 1.0 gem {} rubygems ruby19
@@ -15,5 +17,5 @@ homepage            http://www.sinatrarb.com/
 categories-append   www
 platforms           darwin
 checksums           md5     58dd78900b2b945f12665ed29d33a909 \
-                    sha1    0f79a20ae46eedd387d5b93a823ecc1f9c4133bb \
-                    rmd160  90b5c985f494574141c0cf33144d2cf206f0eaed
+sha1    0f79a20ae46eedd387d5b93a823ecc1f9c4133bb \
+rmd160  90b5c985f494574141c0cf33144d2cf206f0eaed

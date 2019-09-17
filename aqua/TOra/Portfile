@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               qt4 1.0
@@ -18,8 +18,8 @@ master_sites            sourceforge:tora
 distname                tora-${version}
 
 checksums               md5     ea4a75a9daeaf58492413e3f7fe40293 \
-                        sha1    d33ea3bafb09c5382ef4e0cb0e8ca4ed848a9155 \
-                        rmd160  084d90c94184939e24ac94109ff7940a33bed1d7
+sha1    d33ea3bafb09c5382ef4e0cb0e8ca4ed848a9155 \
+rmd160  084d90c94184939e24ac94109ff7940a33bed1d7
 
 depends_lib             port:qscintilla-qt4
 

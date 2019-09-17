@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ master_sites        http://www.ryandesign.com/macports/distfiles/${name}
 use_bzip2           yes
 
 checksums           rmd160  c984a9bfe6d0f5da6e4325c80b6880af733591d8 \
-                    sha256  418dc57b98598c8a538931f2704ec30ff7bf78aaa395bb3820f8e4530cf88409
+sha256  418dc57b98598c8a538931f2704ec30ff7bf78aaa395bb3820f8e4530cf88409
 
 depends_run         port:libf2c
 

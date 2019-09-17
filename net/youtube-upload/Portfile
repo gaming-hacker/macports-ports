@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           python 1.0
 github.setup        tokland youtube-upload 0.8.0
 revision            0
 checksums           rmd160  f8c72d83736e54765afd72e60124e340b2cb9754 \
-                    sha256  86fe582ceaac9e5de0bdba2e95afad3b7a9dd4dc9f17295d70bc164e68f8aef3 \
-                    size    8178
+sha256  86fe582ceaac9e5de0bdba2e95afad3b7a9dd4dc9f17295d70bc164e68f8aef3 \
+size    8178
 
 categories          net
 platforms           darwin
@@ -37,7 +37,7 @@ default_variants    +python27
 
 variant python27 description {Use python27} {}
 if {[variant_isset python27]} {
-    python.default_version  27
+python.default_version 37
 }
 
 depends_lib-append  port:py${python.version}-curl \

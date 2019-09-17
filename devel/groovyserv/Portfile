@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				groovyserv
 version				0.9
@@ -15,8 +17,8 @@ platforms			darwin
 distname			${name}-${version}-macosx-x86_64-bin
 master_sites		https://github.com/downloads/kobo/groovyserv
 checksums 			md5     99dc7505ba03fe4ed22353e492e20121 \
-                    sha1    8c3ee10527af0f390a15a3d75b5199b1fa05c90e \
-                    rmd160  24482827f878985361f8147b60901843a4f37d4b
+sha1    8c3ee10527af0f390a15a3d75b5199b1fa05c90e \
+rmd160  24482827f878985361f8147b60901843a4f37d4b
 
 worksrcdir			${name}-${version}
 set workTarget		""

@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name			hyperestraier
 version         1.4.13
 categories      textproc net
@@ -24,8 +26,8 @@ homepage	 	http://hyperestraier.sourceforge.net/
 master_sites    ${homepage} \
 				sourceforge:${name}
 checksums       md5 847aefb9e23266545280378d797f3981 \
-				sha1 21c3f325f42019fef096172105c2fc16f3e72fc0 \
-				rmd160 8af0af25df6d5bd45a09e9abfbb26300339b5a2c
+sha1 21c3f325f42019fef096172105c2fc16f3e72fc0 \
+rmd160 8af0af25df6d5bd45a09e9abfbb26300339b5a2c
 
 depends_build	port:pkgconfig
 depends_lib		port:qdbm port:libiconv port:zlib 

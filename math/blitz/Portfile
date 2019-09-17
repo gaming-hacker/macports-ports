@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -26,7 +26,7 @@ master_sites        sourceforge:project/blitz/blitz/Blitz%2B%2B%20${version}
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  c48e8a01ebfb8ae907a8a2c2c8d345b1625b4ad5 \
-                    sha256  804ef0e6911d43642a2ea1894e47c6007e4c185c866a7d68bad1e4c8ac4e6f94
+sha256  804ef0e6911d43642a2ea1894e47c6007e4c185c866a7d68bad1e4c8ac4e6f94
 
 compilers.choose    fc f77 f90
 compilers.setup     require_fortran

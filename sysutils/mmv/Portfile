@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,13 +23,13 @@ patchfiles          ${name}_${version}.diff.gz
 patch.pre_args      -p1
 
 checksums           ${distfiles} \
-                    rmd160  b268bd5ec5149a4628b73844221f6f60b026e80b \
-                    sha256  0399c027ea1e51fd607266c1e33573866d4db89f64a74be8b4a1d2d1ff1fdeef \
-                    size    25656 \
+rmd160  b268bd5ec5149a4628b73844221f6f60b026e80b \
+sha256  0399c027ea1e51fd607266c1e33573866d4db89f64a74be8b4a1d2d1ff1fdeef \
+size    25656 \
                     ${patchfiles} \
-                    rmd160  5fe3beaf00dcdf0080aeebb9c6af2450c1c857fb \
-                    sha256  9ad3e3d47510f816b4a18bae04ea75913588eec92248182f85dd09bc5ad2df13 \
-                    size    10613 \
+rmd160  5fe3beaf00dcdf0080aeebb9c6af2450c1c857fb \
+sha256  9ad3e3d47510f816b4a18bae04ea75913588eec92248182f85dd09bc5ad2df13 \
+size    10613 \
 
 use_configure       no
 

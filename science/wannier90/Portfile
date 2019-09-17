@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -22,9 +22,9 @@ homepage            http://www.wannier.org
 master_sites        https://github.com/wannier-developers/wannier90/archive
 
 checksums           rmd160  cf937b9854e64ea545fe81ce063a02689aefa8de \
-                    sha1    233773801b170d46200004dd1c0db8cdf7003ddd \
-                    sha256  f196e441dcd7b67159a1d09d2d7de2893b011a9f03aab6b30c4703ecbf20fe5b \
-                    size    71943515
+sha1    233773801b170d46200004dd1c0db8cdf7003ddd \
+sha256  f196e441dcd7b67159a1d09d2d7de2893b011a9f03aab6b30c4703ecbf20fe5b \
+size    71943515
 
 distname            v${version}
 worksrcdir          ${name}-${version}

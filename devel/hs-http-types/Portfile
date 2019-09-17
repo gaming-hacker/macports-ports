@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell 1.0
@@ -6,7 +6,7 @@ PortGroup           haskell 1.0
 haskell.setup       http-types 0.8.3
 revision            2
 checksums           rmd160  dc527a2be90ecfb8e06a24385dbf7ea7f0bccf5b \
-                    sha256  429d97fed1ad32961518c36b0c6a78edb62016b5c30cfc8f2b75492528a4810a
+sha256  429d97fed1ad32961518c36b0c6a78edb62016b5c30cfc8f2b75492528a4810a
 
 maintainers         {cal @neverpanic} openmaintainer
 platforms           darwin

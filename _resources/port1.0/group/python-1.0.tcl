@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # Usage:
 # name should be of the form py-foo for modules
@@ -258,7 +258,7 @@ proc python_set_default_version {option action args} {
             depends_lib port:py${python.default_version}[string trimleft $name py]
         }
     } else {
-        python.versions ${python.default_version}
+python.versions 27 37
         depends_lib-append port:python[option python.default_version]
     }
 }

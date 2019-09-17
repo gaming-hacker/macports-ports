@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description    The Open Lighting Architecture (OLA) provides a plugin \
 homepage            http://www.openlighting.org/ola/
 
 checksums           rmd160  1312a43f8db8f211f68cd1ab390eb9c8bf476144 \
-                    sha256  8a65242d95e0622a3553df498e0db323a13e99eeb1accc63a8a2ca8913ab31a0 \
-                    size    2512577
+sha256  8a65242d95e0622a3553df498e0db323a13e99eeb1accc63a8a2ca8913ab31a0 \
+size    2512577
 
 github.tarball_from releases
 

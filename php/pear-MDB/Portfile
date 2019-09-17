@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -13,6 +13,6 @@ description         PEAR MDB package
 long_description    ${description}
 
 checksums           rmd160  088cafba2c2954c7da367e48e52b01600adb00a7 \
-                    sha256  0e407b21797d4e4ec04e5490bf63a1f9de01c0d3f6d51a92949a478b184efaf4
+sha256  0e407b21797d4e4ec04e5490bf63a1f9de01c0d3f6d51a92949a478b184efaf4
 
 depends_lib-append  port:pear-XML_Parser

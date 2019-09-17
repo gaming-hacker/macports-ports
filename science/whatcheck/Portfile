@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -22,11 +22,11 @@ distfiles           whatcheck.tar.bz2:whatcheck \
                     dsspcmbi.zip:dsspcmbi
 
 checksums           whatcheck.tar.bz2 \
-                    sha1    1ea39eb695218643f26e80315a8d560f57b91de5 \
-                    rmd160  a6d6a0abe2fc378ae795675719f36a7f4d79817e \
+sha1    1ea39eb695218643f26e80315a8d560f57b91de5 \
+rmd160  a6d6a0abe2fc378ae795675719f36a7f4d79817e \
                     dsspcmbi.zip \
-                    sha1    880538dd36cc29918584f92dbc4e094c76ca3959 \
-                    rmd160  e18d010308ae2252135c72988247518cf44a8841
+sha1    880538dd36cc29918584f92dbc4e094c76ca3959 \
+rmd160  e18d010308ae2252135c72988247518cf44a8841
 
 dist_subdir         ${name}/${version}
 worksrcdir          ${name}

@@ -1,3 +1,5 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name		ha
@@ -16,8 +18,8 @@ distfiles	ha0999.tgz
 master_sites	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 
 checksums   md5 77f3266a451712bec55d60df67f61486 \
-            sha1 8dd106748619772f988ee0bce59937a4de1677ed \
-            rmd160 41b52392267551f834b58e0a4b69b89e813c8bd6
+sha1 8dd106748619772f988ee0bce59937a4de1677ed \
+rmd160 41b52392267551f834b58e0a4b69b89e813c8bd6
 
 extract.mkdir   yes
 

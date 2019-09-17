@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             bcpp
 version          20180401
@@ -16,5 +18,5 @@ master_sites     ftp://ftp.invisible-island.net/pub/bcpp/ \
                  https://invisible-mirror.net/archives/bcpp/
 extract.suffix   .tgz
 checksums        rmd160  27372d73b85e08c7d5063c9ab5ce374deab407bb \
-                 sha256  3fee78476833a8d6c647f0b9f6ad85209cdb104a538349bc24538c7f7aede81f
+sha256  3fee78476833a8d6c647f0b9f6ad85209cdb104a538349bc24538c7f7aede81f
 configure.args   --mandir=${prefix}/share/man

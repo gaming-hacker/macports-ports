@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             webpublish
 version          0.1.1
@@ -18,9 +20,9 @@ platforms        darwin
 supported_archs  i386 ppc
 master_sites     https://ftp.gnu.org/old-gnu/${name}/
 checksums \
-    md5 fbe44cfd13da8c0816c6b5956bd3c9ee \
-    sha1 f7809bfc4779529bec27dffaca8e9ae9e6c8a934 \
-    rmd160 004192233b374bc06b16498672fe0c44c56816d2
+md5 fbe44cfd13da8c0816c6b5956bd3c9ee \
+sha1 f7809bfc4779529bec27dffaca8e9ae9e6c8a934 \
+rmd160 004192233b374bc06b16498672fe0c44c56816d2
 
 patchfiles       patch-ftplib.h patch-ftplib.c
 

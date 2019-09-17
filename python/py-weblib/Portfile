@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            https://www.stroeder.com/pyweblib.html
 master_sites        pypi:p/pyweblib
 distname            pyweblib-${version}
 checksums           rmd160  5005209ad2174751b29fbb4810d8747a01dba77f \
-                    sha256  6fc9f99c468130aab4174a7e32a67d982431508cba97fa6bcf091aa5735373aa \
-                    size    36880
+sha256  6fc9f99c468130aab4174a7e32a67d982431508cba97fa6bcf091aa5735373aa \
+size    36880
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     # fix permissions

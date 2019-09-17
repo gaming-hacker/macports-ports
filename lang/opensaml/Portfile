@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ depends_lib         port:xmltooling \
                     port:log4shib
 
 checksums           rmd160  68c1f608c192b2afec3a780eb55729e5ea13fbf1 \
-                    sha256  80c1672929e3bfc3233e5a995517bc678c479ad925f0cdf9cacffaa7c786cc29
+sha256  80c1672929e3bfc3233e5a995517bc678c479ad925f0cdf9cacffaa7c786cc29
 
 configure.args      --disable-static
 

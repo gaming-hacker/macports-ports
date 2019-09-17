@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ long_description \
    even on Level1 PostScript devices.
 
 checksums           rmd160  c2edf19e86c5c0daf494b8e7ef28493787748ea4 \
-                    sha256  bbeff481ddfb579c5cdc3b4c0832576a8af509efebe9f9de952c98e591f37d2b \
-                    size    1767887
+sha256  bbeff481ddfb579c5cdc3b4c0832576a8af509efebe9f9de952c98e591f37d2b \
+size    1767887
 
 depends_build       port:tif22pnm \
                     port:lzw_codec

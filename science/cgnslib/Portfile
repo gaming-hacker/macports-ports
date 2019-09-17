@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github     1.0
@@ -25,8 +25,8 @@ long_description    \
 homepage            https://cgns.github.io
 
 checksums           rmd160  dd8234e354b260a12521df4a75405477e80fe25e \
-                    sha256  9c5e49f7f729ac4d5b66adaadfca579709d192e1ffed0279693e7e922f115f87 \
-                    size    3393521
+sha256  9c5e49f7f729ac4d5b66adaadfca579709d192e1ffed0279693e7e922f115f87 \
+size    3393521
 
 mpi.setup
 

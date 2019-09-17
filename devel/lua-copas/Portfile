@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                lua-copas
 version             1.1.6
@@ -13,8 +15,8 @@ long_description    Copas is a dispatcher based on coroutines that can be used b
 homepage            http://www.keplerproject.org/copas
 master_sites        https://github.com/downloads/keplerproject/copas
 checksums           md5     104b4325a6187eeb4b139181b6477558 \
-                    sha1    14fd64df94099af1f29d30f09777562803778da7 \
-                    rmd160  f1cdddfc588c1b5f4aa5a8b8796a8351aad6b8bf
+sha1    14fd64df94099af1f29d30f09777562803778da7 \
+rmd160  f1cdddfc588c1b5f4aa5a8b8796a8351aad6b8bf
 distname            copas-${version}
 depends_lib         port:lua \
                     port:lua-coxpcall \

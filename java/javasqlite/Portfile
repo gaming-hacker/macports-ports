@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				javasqlite
 version				20100131
@@ -15,8 +17,8 @@ homepage			http://www.ch-werner.de/javasqlite/
 master_sites		${homepage}
 
 checksums			md5     aa0c89534045f08e72f7b2d9538bb164 \
-					sha1    7aade6951dfb0b94368e8e5d6ac4e12d1a904899 \
-					rmd160  447252c09af76968bf76bf086eb58a946e855199
+sha1    7aade6951dfb0b94368e8e5d6ac4e12d1a904899 \
+rmd160  447252c09af76968bf76bf086eb58a946e855199
 
 patchfiles			patch-configure
 

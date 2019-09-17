@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		uptimed
 version		0.3.17
@@ -14,7 +16,7 @@ homepage	http://podgorny.cz/moin/Uptimed
 master_sites	http://podgorny.cz/uptimed/releases/
 use_bzip2	yes
 checksums	rmd160  0dece72bafb2f3434ea19c0aa83e91b473bc798d \
-		sha256  524ce8984c0d0a780a32025ba3ffb980e5eec3d78e65cf68c91edec7fe833a06
+sha256  524ce8984c0d0a780a32025ba3ffb980e5eec3d78e65cf68c91edec7fe833a06
 
 patchfiles	patch-Makefile.in.diff \
 		patch-etc-uptimed.conf-dist.diff \

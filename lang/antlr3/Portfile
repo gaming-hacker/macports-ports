@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -22,8 +22,8 @@ homepage        http://www.antlr3.org/
 extract.only
 
 checksums       rmd160  49d0ad8c6df2fe978d77d28623c66727257b223b \
-                sha256  fbb154cf834692185625811a78efde1291a68d2ef70fe497d404d384c4d9924e \
-                size    6927679
+sha256  fbb154cf834692185625811a78efde1291a68d2ef70fe497d404d384c4d9924e \
+size    6927679
 
 use_configure   no
 

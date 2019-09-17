@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ master_sites        sourceforge:project/pserv/pserv/${version}
 extract.suffix      .tar.Z
 
 checksums           rmd160  15ee471e2c0bc0aeb897dbe2eab5271928de8fbd \
-                    sha256  6a37e3056504db4e5623ce59fda95a759f7692f67dcb174ceb32d340b3441977
+sha256  6a37e3056504db4e5623ce59fda95a759f7692f67dcb174ceb32d340b3441977
 
 patchfiles          patch-main.h \
                     patch-pserv.conf

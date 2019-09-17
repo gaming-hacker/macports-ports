@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -33,9 +33,9 @@ distname            ${name}-${base_version}
 master_sites        http://www.mpfr.org/${distname}
 use_xz              yes
 checksums           ${distname}${extract.suffix} \
-                        rmd160  14fb12027e7be8d4aa84b8cb8d8dc8769c35b899 \
-                        sha256  1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a \
-                        size    1441996
+rmd160  14fb12027e7be8d4aa84b8cb8d8dc8769c35b899 \
+sha256  1d3be708604eae0e42d578ba93b390c2a145f17743a744d8f3f8c2ad5855a38a \
+size    1441996
 
 # Upstream patch names are not qualified with the base version.
 dist_subdir         ${name}/${base_version}

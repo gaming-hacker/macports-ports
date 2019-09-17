@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2
 
 PortSystem          1.0
 PortGroup cmake     1.1
@@ -20,8 +20,8 @@ master_sites	    https://gitlab.com/eidheim/Simple-Web-Server/-/archive/v${versi
 distname	    Simple-Web-Server-v${version}
 
 checksums           rmd160 d757957fd491b0f7fe8ea6cb9cfba4a133174b2a \
-                    sha256 b6230fb1f267cf7f45b6b8eb6efb3ed6a4308fd48003dc8397eba1d7cf048467 \
-		    size    30857
+sha256 b6230fb1f267cf7f45b6b8eb6efb3ed6a4308fd48003dc8397eba1d7cf048467 \
+size    30857
 
 depends_build-append \
 		    port:boost

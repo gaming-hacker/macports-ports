@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.0
@@ -8,7 +8,7 @@ if {[variant_isset metview]} {
     PortGroup qt5   1.0
 }
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 name                magicspp
 version             4.0.3
@@ -22,8 +22,8 @@ homepage            https://confluence.ecmwf.int/display/MAGP/Magics
 master_sites        https://confluence.ecmwf.int/download/attachments/3473464/
 distname            Magics-${version}-Source
 checksums           rmd160  c4a111be9ffde6fae05830f0280815c44bef0596 \
-                    sha256  e6e0518f9a0b37a7229790a29e5a153bfc3a064fa54635fc29ef3682070091a4 \
-                    size    69354346
+sha256  e6e0518f9a0b37a7229790a29e5a153bfc3a064fa54635fc29ef3682070091a4 \
+size    69354346
 long_description \
     Magics++ is the latest generation of the ECMWF's Meteorological plotting \
     software MAGICS (Meteorological Applications Graphics Integrated Colour System) \
@@ -37,7 +37,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    cxx fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran 
 
 depends_build-append \
                     port:flex \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,7 +19,7 @@ distname            ${name}-1-${version}
 use_bzip2           yes
 
 checksums           rmd160  6104a17a0b5ae4bd8c21426d30dbb3e49a225fbb \
-                    sha256  67fb03bf6ca3e0bdbd98d374dfb5b1651a07d17ae6c23e11a81b4b084447e7c6
+sha256  67fb03bf6ca3e0bdbd98d374dfb5b1651a07d17ae6c23e11a81b4b084447e7c6
 
 depends_build-append \
                     port:pkgconfig

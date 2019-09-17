@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -19,8 +19,8 @@ supported_archs     noarch
 master_sites        https://languagetool.org/download/
 
 checksums           rmd160  12a54ed1ba2d1920e7ea5e3a1c54f8a74708f29d \
-                    sha256  5fd82f2cae2254c682e603a8969a2af292c72c576b2db52dd680f0ec06abce3d \
-                    size    170185393
+sha256  5fd82f2cae2254c682e603a8969a2af292c72c576b2db52dd680f0ec06abce3d \
+size    170185393
 
 java.version        1.8+
 

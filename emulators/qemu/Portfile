@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup compiler_blacklist_versions 1.0
 
 # https://trac.macports.org/ticket/58700
@@ -24,8 +26,8 @@ master_sites            https://download.qemu.org/
 use_bzip2               yes
 
 checksums               rmd160  7ec340477414d5faee5969532e1b0c57327292a6 \
-                        sha256  6d7f713f7400c8a636c770118957b13d6a7f72b0d2da4a925d10455d8e33af20 \
-                        size    75668251
+sha256  6d7f713f7400c8a636c770118957b13d6a7f72b0d2da4a925d10455d8e33af20 \
+size    75668251
 
 patchfiles              patch-configure.diff
 patch.pre_args          -p1

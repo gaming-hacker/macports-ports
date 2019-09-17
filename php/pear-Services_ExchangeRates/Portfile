@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,7 +12,7 @@ description         PEAR Services_ExchangeRates package
 long_description    ${description}
 
 checksums           rmd160  361f985151b65ed51b97a426ef66386d0c1bebc1 \
-                    sha256  1701ca21a8d2b92a4b1792bfba71c17dd621a5dbeb78b46e3d5058908de7dc7f
+sha256  1701ca21a8d2b92a4b1792bfba71c17dd621a5dbeb78b46e3d5058908de7dc7f
 
 depends_lib-append  port:pear-HTTP_Request \
                     port:pear-Cache_Lite \

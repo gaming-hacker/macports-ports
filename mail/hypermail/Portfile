@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem	1.0
 name		hypermail
 version		2.3.0
@@ -17,7 +17,7 @@ master_sites    sourceforge
 platforms	darwin
 
 checksums           rmd160  65565776556847cd317672d9014d5b4aadd5b34c \
-                    sha256  619938b0cf54eae786f36ef237f106ef7bff7a5c69904ca32afd8d47bf1605d1
+sha256  619938b0cf54eae786f36ef237f106ef7bff7a5c69904ca32afd8d47bf1605d1
 
 worksrcdir  ${name}
 

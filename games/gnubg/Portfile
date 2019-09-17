@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -28,8 +28,8 @@ patchfiles              ignore-linkforshared-python_devel_m4.diff \
                         GLU-test-configure_ac.diff
 
 checksums               ${name}-release-${version}-sources.tar.gz \
-                        rmd160  fc83de42ae54163a90c04f9eb5e0a03a02ddac59 \
-                        sha256  b2c5f9457a023a229708bb788aee6f712428c911e199f32fb07f3a83d6c8b60b
+rmd160  fc83de42ae54163a90c04f9eb5e0a03a02ddac59 \
+sha256  b2c5f9457a023a229708bb788aee6f712428c911e199f32fb07f3a83d6c8b60b
 
 depends_build-append    port:pkgconfig \
                         port:bison \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,10 +18,10 @@ homepage            https://github.com/erikrose/nose-progressive
 master_sites        pypi:n/${python.rootname}/
 distname            ${python.rootname}-${version}
 checksums           rmd160  21428e8ab6e59cbfa80daa6990ed1a0f69b83a2b \
-                    sha256  3a6e2833e613c1c239baf05a19f66b5920915e62c07251d3ab3f3acb017ef5d7 \
-                    size    32828
+sha256  3a6e2833e613c1c239baf05a19f66b5920915e62c07251d3ab3f3acb017ef5d7 \
+size    32828
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

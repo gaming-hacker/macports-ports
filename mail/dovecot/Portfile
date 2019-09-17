@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                dovecot
 conflicts           dovecot2
@@ -21,7 +23,7 @@ homepage            http://dovecot.org/
 master_sites        ${homepage}releases/${branch}
 
 checksums           sha1    457b16791a15e739c6bc8b02bc9c78f9ad794e39 \
-                    rmd160  59f619dba2aadef3cccd6ceb045a2e75a11700a2
+rmd160  59f619dba2aadef3cccd6ceb045a2e75a11700a2
 
 depends_build       port:pkgconfig
 depends_lib         port:libiconv \

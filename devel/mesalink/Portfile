@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,9 +17,9 @@ long_description    MesaLink is a memory-safe and OpenSSL-compatible TLS \
                     library written in Rust.
 
 checksums           mesalink-${version}.tar.gz \
-                    rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
-                    sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
-                    size    132238
+rmd160  f9de9706545f0c35f22db98cebb7836bb771eab9 \
+sha256  9d9c3cbafbeaab3355f8aa11fc302116f54a875976e43f3c94b7345136259881 \
+size    132238
 
 supported_archs     x86_64
 

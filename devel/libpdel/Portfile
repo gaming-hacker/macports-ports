@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		libpdel
 version		0.6.1
@@ -40,8 +42,8 @@ depends_lib	port:expat \
 master_sites	sourceforge:project/libpdel/libpdel-combined/${version}
 use_bzip2	yes
 checksums	md5 13af4b8eb09602838e99c41a05712f56 \
-		sha1 dad96204f2d4f737326d8622f069bb74186c84f9 \
-		rmd160 5e99afa267fd20e6bfff2437b01065d85063f4a7
+sha1 dad96204f2d4f737326d8622f069bb74186c84f9 \
+rmd160 5e99afa267fd20e6bfff2437b01065d85063f4a7
 
 worksrcdir	${name}-${version}/pdel
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 
 name                smpeg
@@ -19,7 +19,7 @@ homepage            https://icculus.org/smpeg/
 master_sites        macports freebsd
 
 checksums           rmd160  d55249ad53417fa0df3d925aed0e83d2204e28b7 \
-                    sha256  1efa7984d0aada0c2954cd0aaef357e9d7871dadd3368dbe742ab5f260523e57
+sha256  1efa7984d0aada0c2954cd0aaef357e9d7871dadd3368dbe742ab5f260523e57
 
 depends_lib         port:libsdl
 

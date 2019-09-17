@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,8 +27,8 @@ long_description    The Play framework is a clean alternative to bloated Enterpr
 homepage            http://www.playframework.org/
 
 checksums           rmd160  f00eb64c2cfb4b15b314be2c0073dab71fefe63a \
-                    sha256  1bb73052ab69867048bce482151665c0d009355d7ffcdd8be1d0b2fca910d2d6 \
-                    size    84041185
+sha256  1bb73052ab69867048bce482151665c0d009355d7ffcdd8be1d0b2fca910d2d6 \
+size    84041185
 
 depends_build       port:apache-ant
 

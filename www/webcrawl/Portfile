@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name                  	webcrawl
 version               	1.10
 license                 permissive
@@ -12,8 +14,8 @@ platforms               darwin
 master_sites            sunsite:apps/www/mirroring
 extract.suffix			.tgz				
 checksums               md5     68dec8705d86fcc7e9d05b2ea74c53fd \
-                        rmd160  c81168236462927efa7b8b274468aa5b5a4e980c \
-                        sha256  f0bdac391c0f2a87d9db100232ad8aff5d3c10bc32e06880c9ee69cbbd3b4a79
+rmd160  c81168236462927efa7b8b274468aa5b5a4e980c \
+sha256  f0bdac391c0f2a87d9db100232ad8aff5d3c10bc32e06880c9ee69cbbd3b4a79
 patchfiles				patch-Makefile.diff
 
 

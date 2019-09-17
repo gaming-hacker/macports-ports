@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            xorg-libXtst
 version         1.2.3
@@ -14,8 +16,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXtst-${version}
 checksums           sha1    27d004db631bee3a82155d3caf961d9584207d36 \
-                    rmd160  1cfba7e6eced26d56677fb78de1e4c4a37ff9938 \
-                    sha256  4655498a1b8e844e3d6f21f3b2c4e2b571effb5fd83199d428a6ba7ea4bf5204
+rmd160  1cfba7e6eced26d56677fb78de1e4c4a37ff9938 \
+sha256  4655498a1b8e844e3d6f21f3b2c4e2b571effb5fd83199d428a6ba7ea4bf5204
 
 use_bzip2   yes
 use_parallel_build      yes

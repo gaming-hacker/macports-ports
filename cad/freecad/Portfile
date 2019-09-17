@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -28,8 +28,8 @@ long_description \
 homepage                https://www.freecadweb.org
 
 checksums               rmd160  9f6da6f2d1b666e818de0103520d96c95cd089dd \
-                        sha256  db93b20132c97fe07b169ce453e656c94d05874f1a648c6ae4e446904ef2dcd2 \
-                        size    192380486
+sha256  db93b20132c97fe07b169ce453e656c94d05874f1a648c6ae4e446904ef2dcd2 \
+size    192380486
 
 depends_lib-append      port:boost \
                         port:Coin-framework \
@@ -64,7 +64,7 @@ post-patch {
 }
 
 compilers.choose        fc
-compilers.setup         require_fortran -g95
+compilers.setup         require_fortran 
 
 cmake.install_prefix    ${prefix}/libexec/${name}
 cmake.install_rpath     ${cmake.install_prefix}/lib

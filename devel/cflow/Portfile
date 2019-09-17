@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                cflow
 version             1.6
 revision            0
 checksums           rmd160  351dd1292990bcc59ea66323b629ba1e4ef2b4ea \
-                    sha256  d5392a6d8a63ba2f41df9f88b51f97bc0452c5262762a3c27e0412a6c03c06db \
-                    size    679760
+sha256  d5392a6d8a63ba2f41df9f88b51f97bc0452c5262762a3c27e0412a6c03c06db \
+size    679760
 
 categories          devel
 platforms           darwin

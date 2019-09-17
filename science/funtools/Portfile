@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ long_description    Funtools is a \"minimal buy-in\" FITS library and \
     tables, raw arrays and binary event lists, and even tables of ASCII \
     column data. A sophisticated region filtering library (compatible with \
     ds9) filters images and tables using boolean operations between geometric \
-    shapes, support world coordinates, etc. Funtools also supports advanced \
+shapes, support world coordinates, etc. Funtools also supports advanced \
     capabilities such as optimized data searching using index files.\
     The main goal of the Funtools project has been to develop a minimal \
     buy-in FITS library for researchers who are occasional (but serious) \
@@ -26,7 +26,7 @@ long_description    Funtools is a \"minimal buy-in\" FITS library and \
     use, and easy to re-learn next month.
 
 checksums           rmd160  c3f78b45e7ea9585e7bc697a717d58a4f42d77a0 \
-                    sha256  624e24c2a58364b13f16b139b6d18c45a957fdcfe3a6f398e8af414355a4eed3
+sha256  624e24c2a58364b13f16b139b6d18c45a957fdcfe3a6f398e8af414355a4eed3
 
 # Rename 'gcat' to 'fungcat' to avoid collision with binary of same name
 # provided by port coreutils

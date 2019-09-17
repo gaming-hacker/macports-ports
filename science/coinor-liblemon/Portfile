@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -23,7 +23,7 @@ homepage            http://lemon.cs.elte.hu
 master_sites        http://lemon.cs.elte.hu/pub/sources/
 distname            lemon-${version}
 checksums           rmd160  2877b2fe0f02b356c0510ff327e53573d3801f99 \
-                    sha256  71b7c725f4c0b4a8ccb92eb87b208701586cf7a96156ebd821ca3ed855bad3c8
+sha256  71b7c725f4c0b4a8ccb92eb87b208701586cf7a96156ebd821ca3ed855bad3c8
 
 configure.args-append   -DLEMON_ENABLE_GLPK=NO \
                         -DLEMON_ENABLE_COIN=NO \

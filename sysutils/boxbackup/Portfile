@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -24,7 +24,7 @@ platforms       darwin
 master_sites    ${homepage}svn/box/packages/
 extract.suffix  .tgz
 checksums       rmd160  17553b3ff06d19f353dbadc0166b7dceaa11c271 \
-                sha256  1328b010477259c4767276dbfebab6580e883336cc9d25696c39991b09cc6d32
+sha256  1328b010477259c4767276dbfebab6580e883336cc9d25696c39991b09cc6d32
 
 depends_lib     path:bin/perl:perl5 path:lib/libssl.dylib:openssl port:libedit
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             insub
 version          13.0
@@ -17,7 +19,7 @@ master_sites     ${homepage}
 use_bzip2        yes
 
 checksums        sha1    4e8b492020f8cd5a8334fb1e52741557d51f33eb \
-                 rmd160  426ca527fb38c932760d7cac8680f07a94e744fe
+rmd160  426ca527fb38c932760d7cac8680f07a94e744fe
 
 use_configure    no
 build            {}

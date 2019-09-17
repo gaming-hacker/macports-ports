@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,9 +25,9 @@ installs_libs       no
 master_sites        debian:i/indent
 distname            indent_${version}.orig
 checksums           md5     98beafca62472805a3739d3867d5d70f \
-                    sha1    9b242528bbc4914464117c69ffae9df24d3fa4a7 \
-                    rmd160  b2e472fe85ce386fe61ab23f92242dad5184a08d \
-                    sha256  aaff60ce4d255efb985f0eb78cca4d1ad766c6e051666073050656b6753a0893
+sha1    9b242528bbc4914464117c69ffae9df24d3fa4a7 \
+rmd160  b2e472fe85ce386fe61ab23f92242dad5184a08d \
+sha256  aaff60ce4d255efb985f0eb78cca4d1ad766c6e051666073050656b6753a0893
 
 worksrcdir          indent-${version}
 

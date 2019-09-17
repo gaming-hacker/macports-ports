@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -38,7 +38,7 @@ homepage            http://www-users.cs.umn.edu/~saad/software/ITSOL/
 set distname        ITSOL_2
 master_sites        http://www-users.cs.umn.edu/~saad/software/ITSOL/
 checksums           rmd160 fe61d6602df541a30e0f3b587ac123bd6f1d318e \
-                    sha256 de8f2726e2dbc248e8ccebdbc9ce8515ad47a8c8595cca87264c22b44845736a
+sha256 de8f2726e2dbc248e8ccebdbc9ce8515ad47a8c8595cca87264c22b44845736a
 
 patchfiles          patch-INC_protos.h.diff \
                     patch-SRC.diff \

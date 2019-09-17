@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,9 +24,9 @@ homepage            https://www.sphinx-doc.org/
 master_sites        pypi:S/Sphinx/
 
 checksums           rmd160 50e6e21c0877955a2a08528c41519c41707ef31f \
-                    sha256 0d586b0f8c2fc3cc6559c5e8fd6124628110514fda0e5d7c82e682d749d2e845
+sha256 0d586b0f8c2fc3cc6559c5e8fd6124628110514fda0e5d7c82e682d749d2e845
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {$subport ne $name} {
     depends_lib     port:py${python.version}-docutils \
@@ -44,7 +44,7 @@ if {$subport ne $name} {
         version     1.8.5
         revision    0
         checksums   rmd160 a7a38523976288c13a8a7e5bf4a81367db9af462 \
-                    sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
+sha256 c7658aab75c920288a8cf6f09f244c6cfdae30d82d803ac1634d9f223a80ca08
 
         depends_run-append  port:py${python.version}-six \
                             port:py${python.version}-sphinxcontrib-websupport \

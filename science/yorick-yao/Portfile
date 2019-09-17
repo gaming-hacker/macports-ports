@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ long_description    Yao is a monte-carlo simulation package for adaptive \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  367af012dfca0b98a556f1ab5793e2ba735d17f6 \
-                    sha256  cd0e3bebc2027acab1beb8dec38437430db59769af37c27504504e1fe7f102ef
+sha256  cd0e3bebc2027acab1beb8dec38437430db59769af37c27504504e1fe7f102ef
 
 depends_lib-append  path:bin/yorick:yorick \
                     port:yorick-imutil \

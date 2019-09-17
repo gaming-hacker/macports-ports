@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -34,9 +34,9 @@ dist_subdir         ruby24
 patchfiles          patch-configure.diff
 
 checksums           md5 1ce166ced489908993d78e8bb68325e0 \
-                    rmd160 7f3f9c46edfeb60bbd481dd5127070012f3f1b43 \
-                    sha1 9eac11cd50a2c11ff310e88087f25a0ceb5d0994 \
-                    sha256 c10d6ba6c890aacdf27b733e96ec3859c3ff33bfebb9b6dc8e96879636be7bf5
+rmd160 7f3f9c46edfeb60bbd481dd5127070012f3f1b43 \
+sha1 9eac11cd50a2c11ff310e88087f25a0ceb5d0994 \
+sha256 c10d6ba6c890aacdf27b733e96ec3859c3ff33bfebb9b6dc8e96879636be7bf5
 
 use_parallel_build  no
 

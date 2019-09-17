@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,7 +30,7 @@ master_sites        ftp://ftp.funet.fi/pub/TeX/CTAN/support/xpdf/ \
                     ftp://ftp.foolabs.com/pub/xpdf/
 
 checksums           rmd160  fb29aad21054d5d3b349aec4806262feeca1bd8e \
-                    sha256  11390c74733abcb262aaca4db68710f13ffffd42bfe2a0861a5dfc912b2977e5
+sha256  11390c74733abcb262aaca4db68710f13ffffd42bfe2a0861a5dfc912b2977e5
 
 depends_lib         port:xorg-libXp \
                     port:xpm \

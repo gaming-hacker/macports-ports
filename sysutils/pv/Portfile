@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -25,8 +25,8 @@ master_sites        http://www.ivarch.com/programs/sources/
 use_bzip2           yes
 
 checksums \
-    rmd160  0372ad902d2dfc8936f02d060e512cd62a766255 \
-    sha256  608ef935f7a377e1439c181c4fc188d247da10d51a19ef79bcdee5043b0973f1
+rmd160  0372ad902d2dfc8936f02d060e512cd62a766255 \
+sha256  608ef935f7a377e1439c181c4fc188d247da10d51a19ef79bcdee5043b0973f1
 
 configure.args      --mandir=${prefix}/share/man \
                     --infodir=${prefix}/share/info

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*-
 
 PortSystem		1.0
 
@@ -27,8 +27,8 @@ distfiles	    	gprbuild-gpl-${version}-src.tgz
 worksrcdir	    	gprbuild-${version}w-src
 
 checksums           	md5     fb1724e419c15c7678ead0760da11dde \
-                    	sha1    e986ea8174334aee6057bbf32be2f205d30bcc2d \
-                    	rmd160  ae234d06e5adb59b864e8ad1139d0117165aba31
+sha1    e986ea8174334aee6057bbf32be2f205d30bcc2d \
+rmd160  ae234d06e5adb59b864e8ad1139d0117165aba31
 
 use_parallel_build  	yes
 use_configure	    	yes

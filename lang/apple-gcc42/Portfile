@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup select 1.0
 PortGroup xcodeversion 1.0
 
@@ -40,11 +42,11 @@ distfiles               ${dcore}:apple
 # ${dfort}:gnu ${djava}:gnu
 
 checksums           gcc-4.2.1-4.2.4-v2.patch \
-                    rmd160  f33804c6f04e853a6248bf4941f4a0ace1e3f30f \
-                    sha256  0f22916b8b1c96bafaccbb17b4350530d4ae903475ae934efe76a26b9c35e03f \
+rmd160  f33804c6f04e853a6248bf4941f4a0ace1e3f30f \
+sha256  0f22916b8b1c96bafaccbb17b4350530d4ae903475ae934efe76a26b9c35e03f \
                     gcc-5666.3.tar.gz \
-                    rmd160  a01d000f89c0e89dd0079dcd202bba7629ba78dc \
-                    sha256  6c46f4376d11ada5be0cfc3894b9296edf574af3c616ab71803ea78edfd7015b
+rmd160  a01d000f89c0e89dd0079dcd202bba7629ba78dc \
+sha256  6c46f4376d11ada5be0cfc3894b9296edf574af3c616ab71803ea78edfd7015b
 
 #                    gcc-fortran-4.2.1.tar.bz2 \
 #                    md5     2a91d467b50a404ca0cd3b10b413f9b2 \

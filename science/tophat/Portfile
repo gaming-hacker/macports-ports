@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    TopHat is ${description}. It aligns RNA-Seq reads to \
 homepage            https://ccb.jhu.edu/software/tophat/
 
 checksums           rmd160  5a5525f810a38efd5d95303224477d62eb2bd110 \
-                    sha256  ec4c522a1caa6cc7c52e2ed7d60f8cdfb21d010523de93d60c64cd5c1b0f352a \
-                    size    4538707
+sha256  ec4c522a1caa6cc7c52e2ed7d60f8cdfb21d010523de93d60c64cd5c1b0f352a \
+size    4538707
 
 use_autoconf        yes
 autoconf.cmd        ./bootstrap

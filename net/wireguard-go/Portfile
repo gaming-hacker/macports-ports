@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                wireguard-go
 version             0.0.20190908
 revision            0
 checksums           rmd160  914f8e384c445af9fd749b7e7d36a7a74d5f79b9 \
-                    sha256  3c4cc802a521736d01d24bfb4fe29a5e74da07d69637ec7bcdee074decf62c6a \
-                    size    79212
+sha256  3c4cc802a521736d01d24bfb4fe29a5e74da07d69637ec7bcdee074decf62c6a \
+size    79212
 
 categories          net
 platforms           darwin

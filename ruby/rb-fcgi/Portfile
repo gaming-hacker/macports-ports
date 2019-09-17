@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -19,7 +19,7 @@ long_description    FastCGI is a language independent, scalable, open \
 homepage            https://github.com/alphallc/ruby-fcgi-ng
 
 checksums           rmd160  fc4f4d85783b9bf1212d0fd25e63a3c38691dc76 \
-                    sha256  f5e18b6769dfea1760e3da1dae1df7ade140cd5c1394e9318e36d9834f13ca1e \
-                    size    15872
+sha256  f5e18b6769dfea1760e3da1dae1df7ade140cd5c1394e9318e36d9834f13ca1e \
+size    15872
 
 depends_lib-append  lib:libfcgi.2:fcgi

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         GnuPG-Interface 0.52
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  1fc947172288205893642bace958fad3e6c34c6f \
-                    sha256  247a9f5a88bb6745281c00d0f7d5d94e8599a92396849fd9571356dda047fd35
+sha256  247a9f5a88bb6745281c00d0f7d5d94e8599a92396849fd9571356dda047fd35
 
 if {${perl5.major} != ""} {
     revision        1

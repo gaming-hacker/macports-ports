@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -17,8 +17,8 @@ license             BSD
 use_parallel_build  no
 
 checksums           rmd160  5b1a99b7f798f1d0f4b3e93136cfc04af694391e \
-                    sha256  e2426197f2786435ea986595943e98689cd596f70b68896186e5060b4cd11f12 \
-                    size    35803
+sha256  e2426197f2786435ea986595943e98689cd596f70b68896186e5060b4cd11f12 \
+size    35803
 
 foreach qt_major {4 5} {
     subport ${name}-qt${qt_major} {

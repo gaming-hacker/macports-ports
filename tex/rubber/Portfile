@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -25,8 +25,8 @@ homepage        https://launchpad.net/rubber/
 master_sites    https://launchpad.net/rubber/trunk/${version}/+download/
 
 checksums       rmd160  65aab40dbe71019e63fcf34f9d0bc79b53500673 \
-                sha256  37a843dc36a8aa256f9a66de130a031a0406346e663e1c257e45fd0a6eae0d9d \
-                size    111812
+sha256  37a843dc36a8aa256f9a66de130a031a0406346e663e1c257e45fd0a6eae0d9d \
+size    111812
 
 python.default_version 37
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       clang_dependency 1.0
@@ -31,7 +31,7 @@ distname        ${my_name}-[join [split ${version} .] _]
 extract.suffix              .tgz
 distfiles                   ${distname}-src${extract.suffix}
 checksums                   rmd160  df06e7b18a87e383d3762564f2e9a59fd75865f9 \
-                            sha256  2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
+sha256  2b0a4410153a9b20de0e20c7d8b66049a72aef244b53683d0d7521371683da0c
 
 # This port is used by clang-3.4 to bootstrap libcxx
 subport ${name}-bootstrap {
@@ -62,7 +62,7 @@ subport ${name}-docs {
     use_zip             yes
     distfiles               ${distname}-docs${extract.suffix}
     checksums               rmd160  64c9385c43f994d283a38980c77638dc061bfe84 \
-                            sha256  dc17983debc1f23f1bd1ac1ba053f2df5b07858f5af9bd48eeb3b8044c8d3146
+sha256  dc17983debc1f23f1bd1ac1ba053f2df5b07858f5af9bd48eeb3b8044c8d3146
 
     extract.dir         ${worksrcpath}/doc/html
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    The signify utility creates and verifies cryptographic \
 homepage            https://man.openbsd.org/signify.1
 
 checksums           rmd160  752db6b518418387700ffccb97fdc37e8ecbc0d9 \
-                    sha256  8b3f30269dc4a6d236270bc78f41cf5f06e7502271c05c279453cdb6c3e328ef \
-                    size    99505
+sha256  8b3f30269dc4a6d236270bc78f41cf5f06e7502271c05c279453cdb6c3e328ef \
+size    99505
 
 variant universal   {}
 

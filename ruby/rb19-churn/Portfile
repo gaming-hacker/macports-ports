@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          churn 0.0.12 gem {} rubygems ruby19
@@ -14,8 +16,8 @@ homepage            https://github.com/danmayer/churn
 license             MIT
 platforms           darwin
 checksums           md5     c68db8a1aecacb08ea352ed4132792ca \
-                    sha1    a12c642919e3f9f58035fd1b9dd5a795c26d1661 \
-                    rmd160  04ba7ff6b6d81b591c54aa7d7bb2061e325a8be7
+sha1    a12c642919e3f9f58035fd1b9dd5a795c26d1661 \
+rmd160  04ba7ff6b6d81b591c54aa7d7bb2061e325a8be7
 
 depends_run         port:rb19-hirb \
                     port:rb19-parser \

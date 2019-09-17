@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cxx11 1.1
@@ -19,7 +19,7 @@ master_sites    sourceforge:project/libwpd/libwpd/libwpd-${version}
 use_xz          yes
 
 checksums       rmd160  aaaef9f2e1de819dc6519f540faa64819597ca4c \
-                sha256  b91df4ca0ef0f456be9531c9ee07cf6a5e50a16b52002abb99e8ebef13fac2b2
+sha256  b91df4ca0ef0f456be9531c9ee07cf6a5e50a16b52002abb99e8ebef13fac2b2
 
 depends_build   port:pkgconfig
 

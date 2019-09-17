@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: Essential programs and files
 long_description    These files are regarded as basic for any TeX system, covering plain TeX macros, Computer Modern fonts, and configuration for common drivers\; no LaTeX.
 
 checksums           texlive-basic-50893-run.tar.xz \
-                    rmd160  f6b41d5cc6c2fe5179a67dff2191513204e7b733 \
-                    sha256  04acf47af94d3972fcf4e21ef6324b30987ee80e941e8adddd3e77e392921826 \
+rmd160  f6b41d5cc6c2fe5179a67dff2191513204e7b733 \
+sha256  04acf47af94d3972fcf4e21ef6324b30987ee80e941e8adddd3e77e392921826 \
                     texlive-basic-50893-doc.tar.xz \
-                    rmd160  a3e2a5b2832e461ee64ce4cb1fef4093cac21bec \
-                    sha256  9035f1986a0c622cdd631c455a94ba43f706fae2cfcefe7b2b1ad1eee54a9ab4 \
+rmd160  a3e2a5b2832e461ee64ce4cb1fef4093cac21bec \
+sha256  9035f1986a0c622cdd631c455a94ba43f706fae2cfcefe7b2b1ad1eee54a9ab4 \
                     texlive-basic-50893-src.tar.xz \
-                    rmd160  3be482c6c89e9d254de83b89c974807a88f6db73 \
-                    sha256  84580b2d9f234b34baeca460dd380e119f1a5b8c642bc787be3f3cefcc6cf79f
+rmd160  3be482c6c89e9d254de83b89c974807a88f6db73 \
+sha256  84580b2d9f234b34baeca460dd380e119f1a5b8c642bc787be3f3cefcc6cf79f
 
 texlive.formats      \
     {1 luatex luatex language.def,language.dat.lua {luatex.ini}} \

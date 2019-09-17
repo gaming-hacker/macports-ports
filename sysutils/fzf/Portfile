@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -6,8 +6,8 @@ PortGroup           golang 1.0
 go.setup            github.com/junegunn/fzf 0.18.0
 revision            0
 checksums           rmd160  5db76ccaa47f93eef50328c81b55c3e060f88552 \
-                    sha256  5b5c54f9d576f76cb1d679918fc01b277a896d0a51832fe54e6ddad9c8ecd120 \
-                    size    143298
+sha256  5b5c54f9d576f76cb1d679918fc01b277a896d0a51832fe54e6ddad9c8ecd120 \
+size    143298
 
 categories          sysutils
 platforms           darwin

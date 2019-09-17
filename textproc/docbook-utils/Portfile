@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                docbook-utils
 version             0.6.14
 revision            5
-perl5.branches      5.26
+perl5.branches 5.28
 categories          textproc
 platforms           darwin
 license             GPL-2+
@@ -23,7 +23,7 @@ long_description \
 master_sites        ftp://sources.redhat.com/pub/docbook-tools/new-trials/SOURCES/
 
 checksums           rmd160  710fe047ea8a794cc6c0d944521184375a666e6b \
-                    sha256  48faab8ee8a7605c9342fb7b906e0815e3cee84a489182af38e8f7c0df2e92e9
+sha256  48faab8ee8a7605c9342fb7b906e0815e3cee84a489182af38e8f7c0df2e92e9
 
 conflicts           docbook2X
 

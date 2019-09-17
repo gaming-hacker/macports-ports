@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -14,9 +14,9 @@ homepage                http://www.openvas.org/
 master_sites            http://wald.intevation.org/frs/download.php/${download_id}
 
 checksums \
-    md5     b0d721f8d4c2f1c265841bf418311ea7 \
-    sha1    271f42118fc41ffec2d1365d618fa09e294aa4e5 \
-    rmd160  bb4702277401e657e20ccff082990f68a74f178e
+md5     b0d721f8d4c2f1c265841bf418311ea7 \
+sha1    271f42118fc41ffec2d1365d618fa09e294aa4e5 \
+rmd160  bb4702277401e657e20ccff082990f68a74f178e
 
 description \
     Open Vulnerability Assessment System libraries

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -9,8 +9,8 @@ github.setup        balint256 gr-baz 3cedf4bc261e01043daab66c70321889df4f701d
 version             20181012
 revision            3
 checksums           rmd160 71a8dfad14f9f31c8ac7c27173e445d8f34192d1 \
-                    sha256 17dfc144267a2f53e7ae0fc67c708287b9d5b02390d5934509daf0c642253be6 \
-                    size   511866
+sha256 17dfc144267a2f53e7ae0fc67c708287b9d5b02390d5934509daf0c642253be6 \
+size   511866
 
 # allow gr-baz to work with both gnuradio and gnuradio-devel ...
 

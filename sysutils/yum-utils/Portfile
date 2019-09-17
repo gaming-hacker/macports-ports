@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		yum-utils
 version		1.1.17
@@ -14,8 +16,8 @@ more powerful to use.
 homepage	http://yum.baseurl.org/
 master_sites	${homepage}download/${name}/
 checksums	md5 c9bb92a87a01e39d2d928ac3ae12e10a \
-		sha1 343a8eb894aadf4f91ca833d6672ca028eefe3ba \
-		rmd160 bbf90d0299bc0665ea78bad9ee892bf3cb2791a9
+sha1 343a8eb894aadf4f91ca833d6672ca028eefe3ba \
+rmd160 bbf90d0299bc0665ea78bad9ee892bf3cb2791a9
 
 patchfiles	patch-prefix.diff
 

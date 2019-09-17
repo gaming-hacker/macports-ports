@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup select 1.0
@@ -20,7 +20,7 @@ master_sites        http://www.gccupc.org/downloads/upc/rls/${name}-${version}/
 distname            ${name}-${version}.src
 use_bzip2           yes
 checksums           rmd160  d35ec1e77517f7e5edef7ae8b6880bfa1a206eb8 \
-                    sha256  45805995497cf7f52902d234f02bcd773e421a77b8b515026825aac46f64c6ad
+sha256  45805995497cf7f52902d234f02bcd773e421a77b8b515026825aac46f64c6ad
 
 depends_lib         port:gmp port:mpfr port:libiconv port:libmpc \
                     port:isl14 \

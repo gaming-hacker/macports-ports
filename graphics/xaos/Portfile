@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -30,8 +30,8 @@ long_description        XaoS is a fast portable real-time interactive \
                         palette changing, GIF saving, and fractal inversion.
 
 checksums               rmd160  4cfe8e7f5b98d28cd320f9ab21a9c2d76d122133 \
-                        sha256  989f3e38f7793810cbb1496d5291d44836a7d7c058422b9ee1cffb163a0b8d95 \
-                        size    2040707
+sha256  989f3e38f7793810cbb1496d5291d44836a7d7c058422b9ee1cffb163a0b8d95 \
+size    2040707
 
 depends_lib             port:xorg-libXext \
                         port:libpng \

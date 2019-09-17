@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -32,8 +32,8 @@ master_sites            ${homepage}/releases/ \
 distname                cyrus-sasl-${version}
 
 checksums               rmd160  7f5e4bd2ba1974f0b96ba5a659165f4484d550ce \
-                        sha256  26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5 \
-                        size    4111249
+sha256  26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5 \
+size    4111249
 
 depends_lib             path:lib/libssl.dylib:openssl \
                         port:zlib

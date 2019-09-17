@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xkeyboard-config
 version             2.5.1
@@ -15,8 +17,8 @@ homepage            https://www.x.org
 master_sites        xorg:individual/data
 
 checksums           md5     29cbf3980bbe94c3ffc9c233ea638059 \
-                    sha1    80f241325fed23278730a8cb565aa6c0e094b912 \
-                    rmd160  b9244c671def2fd2e2d85c23139275ea74bf1485
+sha1    80f241325fed23278730a8cb565aa6c0e094b912 \
+rmd160  b9244c671def2fd2e2d85c23139275ea74bf1485
 
 use_bzip2	    yes
 use_parallel_build  yes

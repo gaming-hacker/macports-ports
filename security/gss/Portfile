@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           legacysupport 1.0
@@ -21,7 +21,7 @@ platforms           darwin
 homepage            https://www.gnu.org/software/gss/
 master_sites        gnu
 checksums           rmd160  e20ee482f159f5ad9b6285f1302fa959e0139b79 \
-                    sha256  ff919ddc731531d65e27d7ababdc361aae05ada5f1a6dd60703d153307dcdeeb
+sha256  ff919ddc731531d65e27d7ababdc361aae05ada5f1a6dd60703d153307dcdeeb
 
 depends_build-append \
                     port:pkgconfig

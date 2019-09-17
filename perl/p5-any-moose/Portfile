@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Any-Moose 0.27
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -17,7 +17,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  93cc2f8303b468c78ade108a76270118afb45986 \
-                    sha256  a8a63e37fa802e8258be99983916cde4512581dc8062de50e73d66af6e2d8535
+sha256  a8a63e37fa802e8258be99983916cde4512581dc8062de50e73d66af6e2d8535
 
 if {${perl5.major} != ""} {
 #   the following build dependencies are optional test dependencies

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ supported_archs     noarch
 master_sites        gnu:freefont
 use_zip             yes
 checksums           rmd160  6d557859062a9aaf2022f4bfd63b9973f31474f0 \
-                    sha256  7c85baf1bf82a1a1845d1322112bc6ca982221b484e3b3925022e25b5cae89af
+sha256  7c85baf1bf82a1a1845d1322112bc6ca982221b484e3b3925022e25b5cae89af
 
 worksrcdir          freefont-${version}
 

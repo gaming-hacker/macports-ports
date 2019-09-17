@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ homepage            http://www.gedanken.org.uk/software/cxref
 master_sites        ${homepage}/download
 extract.suffix      .tgz
 checksums           rmd160  3f2c4d5b2bab5bc8abd681bea099b172a9fcedc7 \
-                    sha256  21492210f9e1030e4e697f0d84f31ac57a0844e64c8fb28432001c44663242f2
+sha256  21492210f9e1030e4e697f0d84f31ac57a0844e64c8fb28432001c44663242f2
 
 depends_build       bin:bison:bison bin:flex:flex
 

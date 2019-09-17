@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ depends_lib         port:curl \
 
 master_sites        googlecode:musicip-libofa
 checksums           md5     51507d2c4b432bd2755f48d58471696e \
-                    rmd160  77f393570bb5356026c4b9c7195236bd96cb9143 \
-                    sha256  0216466153e92058c5202dea03390ddc7601d916b983f71ce4f4d034405590a0
+rmd160  77f393570bb5356026c4b9c7195236bd96cb9143 \
+sha256  0216466153e92058c5202dea03390ddc7601d916b983f71ce4f4d034405590a0
 
 post-extract {
     move ${worksrcpath}/configure.in ${worksrcpath}/configure.ac

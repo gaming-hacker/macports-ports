@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ master_sites        https://www.vapor.ucar.edu/sites/default/files/
 distname            ${name}-${version}-src
 
 checksums           rmd160  a690f7f587f858195db8bdbb6736ccb4f5ba8626 \
-                    sha256  e43721801c89dc31766ae9304768670f24bea022690cefdd5cc73684249999af
+sha256  e43721801c89dc31766ae9304768670f24bea022690cefdd5cc73684249999af
 
 depends_build       port:gmake
 

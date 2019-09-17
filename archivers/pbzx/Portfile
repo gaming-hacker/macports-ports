@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,13 +25,13 @@ distfiles           ${pbzx.c}:pbzx \
                     ${02_decompress.c}:decompress
 
 checksums           ${pbzx.c} \
-                    rmd160  19731be9fc5e99257a3ebdddc7e0999543f48442 \
-                    sha256  44a780291ec8565123c1a5b064c3e01e9a18f8882e18d2278f995d2479759f9f \
-                    size    3506 \
+rmd160  19731be9fc5e99257a3ebdddc7e0999543f48442 \
+sha256  44a780291ec8565123c1a5b064c3e01e9a18f8882e18d2278f995d2479759f9f \
+size    3506 \
                     ${02_decompress.c} \
-                    rmd160  e698abf6f3054b198d1f1c6acd1126bdaec8b943 \
-                    sha256  244f2503675e1c14e35df5851d04db0cf067e9f8cd4c9b423ce917445740ae8e \
-                    size    13188
+rmd160  e698abf6f3054b198d1f1c6acd1126bdaec8b943 \
+sha256  244f2503675e1c14e35df5851d04db0cf067e9f8cd4c9b423ce917445740ae8e \
+size    13188
 
 depends_lib         port:xz
 

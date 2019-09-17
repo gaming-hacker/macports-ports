@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,7 +27,7 @@ maintainers         nomaintainer
 master_sites        http://ftp.isc.org/isc/dhcp/${version}/
 
 checksums           rmd160  1121d3ae8c541ef3e3add788af3f52da2796c082 \
-                    sha256  73b492041386149b23d7f5b0d1d893383eb9953f7cafbb5998c447b57f92b930
+sha256  73b492041386149b23d7f5b0d1d893383eb9953f7cafbb5998c447b57f92b930
 
 depends_lib         path:lib/libssl.dylib:openssl
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -40,13 +40,13 @@ master_sites        ${github.homepage}/tarball/${git.branch}:tagone \
                     https://github.com/${no_OS_github_author}/${no_OS_github_project}/tarball/${no_OS_commit}:tagtwo
 
 checksums           ${bladeRF_distfile} \
-                    rmd160 7027962a30c45ff17a9f680bebf2913876969ba0 \
-                    sha256 b3a99c8155feb83c9d6fcb55dce5379f833b11c77a75485faaaf3e1ae45b963e \
-                    size   2198232 \
+rmd160 7027962a30c45ff17a9f680bebf2913876969ba0 \
+sha256 b3a99c8155feb83c9d6fcb55dce5379f833b11c77a75485faaaf3e1ae45b963e \
+size   2198232 \
                     ${no_OS_distfile} \
-                    rmd160 dbe43395fc0b22919ac7e6a5e2f355987e4dd2b7 \
-                    sha256 53670c8f0a9feaa774d8c3067ba201b31c0197294bdd00a1795c72a0368aac40 \
-                    size   44184797
+rmd160 dbe43395fc0b22919ac7e6a5e2f355987e4dd2b7 \
+sha256 53670c8f0a9feaa774d8c3067ba201b31c0197294bdd00a1795c72a0368aac40 \
+size   44184797
 
 post-extract {
 

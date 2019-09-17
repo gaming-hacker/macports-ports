@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       xcode 1.0
@@ -24,7 +24,7 @@ distname        texshopsource[strsed ${version} {g/\.//}]
 worksrcdir      texshopsource-${version}
 
 checksums       rmd160  cd02b93bafa72de885338d32e98c61de39e11aa6 \
-                sha256  cd8f9fd827d9b080423da0f1d9664bdbfdfebb4525bbb7542ee54c44e2f9ce19
+sha256  cd8f9fd827d9b080423da0f1d9664bdbfdfebb4525bbb7542ee54c44e2f9ce19
 
 # force 32-bit, ticket #20291
 supported_archs i386 ppc

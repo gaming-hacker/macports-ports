@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -20,8 +20,8 @@ long_description            This is a collection of simple PIN or passphrase ent
 use_bzip2                   yes
 
 checksums                   rmd160  33b1f9ae44172a0bba37ad4b7d264822e040fe9e \
-                            sha256  68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570 \
-                            size    467702
+sha256  68076686fa724a290ea49cdf0d1c0c1500907d1b759a3bcbfbec0293e8f56570 \
+size    467702
 
 configure.args              --with-libiconv-prefix=${prefix} \
                             --with-ncurses-include-dir=${prefix}/include/ncurses \

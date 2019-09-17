@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ long_description    archivemail is a tool written in Python for \
 homepage            http://archivemail.sourceforge.net
 
 supported_archs         noarch
-python.default_version  27
+python.default_version 37
 
 master_sites        sourceforge
 checksums           rmd160  7d524d7c3b4e089cb50a6c3637254931ccb06b72 \
-                    sha256  4b430e2fba6f24970a67bd61eef39d7eae8209c7bef001196b997be1916fc663
+sha256  4b430e2fba6f24970a67bd61eef39d7eae8209c7bef001196b997be1916fc663
 
 destroot.destdir    --prefix=${prefix} \
                     --root=${destroot}

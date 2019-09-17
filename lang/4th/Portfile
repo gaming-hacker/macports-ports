@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                4th
 version             3.62.5
@@ -18,7 +20,7 @@ homepage            http://thebeez.home.xs4all.nl/4tH/
 master_sites        sourceforge:forth-4th
 distname            ${distname}-unix
 checksums           rmd160  17fe66a514c06d9abc7b038794fbe2a7ebe94c5e \
-                    sha256  f822f7dd8cfb0b1744a62d653c6efe933578ae1789ec60a088509a38bca4b4fc
+sha256  f822f7dd8cfb0b1744a62d653c6efe933578ae1789ec60a088509a38bca4b4fc
 
 patchfiles          patch-Makefile.OSX.diff
 

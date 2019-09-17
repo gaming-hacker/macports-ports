@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -23,8 +23,8 @@ github.tarball_from releases
 distname            gource-${version}
 
 checksums           rmd160  8a12f0731f201a1e49ea4ca2490dd2516f22e8da \
-                    sha256  a9dd23693861e224322708a8e26c9e3aaa3e4c9ec41264b1ee2d5dcd6e2c0e8a \
-                    size    874349
+sha256  a9dd23693861e224322708a8e26c9e3aaa3e4c9ec41264b1ee2d5dcd6e2c0e8a \
+size    874349
 
 depends_build       port:glm \
                     port:pkgconfig

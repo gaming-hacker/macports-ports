@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup			ruby 1.0
 
 ruby.setup			minitest 1.7.0 gem {} rubygems
@@ -19,7 +21,7 @@ homepage			http://docs.seattlerb.org/minitest/
 license				Ruby
 
 checksums			md5     0bccdbed224b3e027df685598e38a313 \
-					sha1    9d1b572c329758b07dfb58e5daded33b1505d0ab \
-					rmd160  b694fdb1716ab09675e305fc232b5de40a8c22bb
+sha1    9d1b572c329758b07dfb58e5daded33b1505d0ab \
+rmd160  b694fdb1716ab09675e305fc232b5de40a8c22bb
 platforms			darwin
 

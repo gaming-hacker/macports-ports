@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         DBIx-Class-EncodedColumn 0.00016
 platforms           darwin
 license             {Artistic-1 GPL}
@@ -12,8 +12,8 @@ description         Automatically encode columns
 long_description    ${description}
 
 checksums           rmd160  a531040ac9f55cdf2652ed0787105e597b389eec \
-                    sha256  b5bd02c84d258b013ad71977cd70eb6180d44d49069346477a79498abc890fe4 \
-                    size    43623
+sha256  b5bd02c84d258b013ad71977cd70eb6180d44d49069346477a79498abc890fe4 \
+size    43623
 
 if {${perl5.major} != ""} {
     depends_build-append \

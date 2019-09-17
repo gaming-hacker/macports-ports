@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                wordnet
 version             3.0
@@ -21,8 +23,8 @@ master_sites        http://wordnet.princeton.edu/${version}/ \
                     ftp://ftp.cogsci.princeton.edu/pub/wordnet/${version}/
 distname            WordNet-${version}
 checksums           md5     89b4db7c6840ce69a8e315a3f83d996b \
-                    sha1    aeb7887cb4935756cf77deb1ea86973dff0e32fb \
-                    rmd160  87b3719273ec8f1d87742d6802af4d442b6ad040
+sha1    aeb7887cb4935756cf77deb1ea86973dff0e32fb \
+rmd160  87b3719273ec8f1d87742d6802af4d442b6ad040
 use_bzip2           yes
 
 depends_lib         port:tcl \

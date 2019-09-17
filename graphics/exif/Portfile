@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                exif
 version             0.6.21
@@ -16,8 +18,8 @@ homepage            http://libexif.sourceforge.net/
 master_sites        sourceforge:libexif
 
 checksums           md5     78b9f501fc19c6690ebd655385cd5ad6 \
-                    sha1    d23139d26226b70c66d035bbc64482792c9f1101 \
-                    rmd160  b60791c2fc103ebeef1489b81664c06520d45022
+sha1    d23139d26226b70c66d035bbc64482792c9f1101 \
+rmd160  b60791c2fc103ebeef1489b81664c06520d45022
 
 depends_build       port:pkgconfig
 depends_lib         port:libexif \

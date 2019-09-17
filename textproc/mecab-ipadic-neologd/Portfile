@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,7 +21,7 @@ long_description    mecab-ipadic-neologd is customized system dictionary for \
 
 dist_subdir         mecab
 checksums           rmd160  15a86d19fe02138c8ba5622b4e568f2a1d341696 \
-                    sha256  c46ad13f6a023c05429b27a55d46861f23443722fa8151b86c8072f967ffa680
+sha256  c46ad13f6a023c05429b27a55d46861f23443722fa8151b86c8072f967ffa680
 
 depends_lib         port:mecab-base
 

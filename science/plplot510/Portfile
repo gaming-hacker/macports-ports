@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake     1.0
@@ -15,7 +15,7 @@ license         LGPL
 description     Scientific plotting package, double precision version
 master_sites    sourceforge:plplot
 checksums       rmd160  16e353cf410232da700d5f2edd1533006f2dc4c4 \
-                sha256  d4e930b8b9d43cd1663408986218d61f166de7cbc9ef5bed111b0bdea934f9d5
+sha256  d4e930b8b9d43cd1663408986218d61f166de7cbc9ef5bed111b0bdea934f9d5
 homepage        http://plplot.sourceforge.net/
 set description_base "PLplot is a cross-platform software package for \
 creating scientific plots. To help accomplish that task it is organized as a \

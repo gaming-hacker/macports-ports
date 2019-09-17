@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    DateLine
@@ -22,8 +24,8 @@ use_zip                 yes
 worksrcdir              ${name}
 
 checksums               md5 dde69a24fb0bfe2aad1edd0d15ff96af \
-                        sha1 4b4be6b9ceb28e5bc42c4c1526cc183d36485302 \
-                        rmd160 fd70a43ca5fff28d8b425ed8571ab3c2211f92c8
+sha1 4b4be6b9ceb28e5bc42c4c1526cc183d36485302 \
+rmd160 fd70a43ca5fff28d8b425ed8571ab3c2211f92c8
 
 supported_archs         i386 ppc
 

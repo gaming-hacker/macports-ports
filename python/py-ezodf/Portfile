@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           bitbucket 1.0
 
 bitbucket.setup     mozman ezodf 0.2.5
 name                py-ezodf
-python.versions     27 34 35 36
+python.versions 27 37
 platforms           darwin
 maintainers         {@Synss gmail.com:Mathias.Laurin+macports} openmaintainer
 license             MIT
@@ -23,7 +23,7 @@ distname            ezodf-${version}
 bitbucket.tarball_from downloads
 
 checksums           rmd160  add33e930e302f84971099da2db86bca225d468a \
-                    sha256  f73f56f38594e596e6ec3ca90f16b317858023ed340e73ce78fcac8010fed535
+sha256  f73f56f38594e596e6ec3ca90f16b317858023ed340e73ce78fcac8010fed535
 
 if {${subport} ne ${name}} {
     patchfiles          patch-ezodf-document.py.diff

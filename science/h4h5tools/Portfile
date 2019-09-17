@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ homepage        https://support.hdfgroup.org/products/hdf5_tools/h4toh5/
 master_sites    https://www.hdfgroup.org/ftp/HDF5/tools/h4toh5/src/
 
 checksums       rmd160  e70b41006334085cbd00fdcad9448bfb7b5cde3e \
-                sha256  ba167d9e5ec1f9014a95e3f5d0621f814caa6e83508e235ce60cfd315e3a9d3f \
-                size    2666039
+sha256  ba167d9e5ec1f9014a95e3f5d0621f814caa6e83508e235ce60cfd315e3a9d3f \
+size    2666039
 
 depends_lib-append \
                 port:hdf4 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ long_description    Exiv2 comprises of a C++ library and a command line utility 
 homepage            http://www.exiv2.org/
 
 checksums           rmd160  cfef5ea8520efb7bf32786756db1dff2fdc1ac74 \
-                    sha256  3c6c2d400d72a3b0fc226d2bf050c38a94d9d94ddede66a356bea1a29a61bc54 \
-                    size    26921216
+sha256  3c6c2d400d72a3b0fc226d2bf050c38a94d9d94ddede66a356bea1a29a61bc54 \
+size    26921216
 
 depends_build-append \
                     port:gmake

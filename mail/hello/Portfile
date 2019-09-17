@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name             hello
 version          2.10
 categories       mail
@@ -10,12 +12,12 @@ long_description \
     It allows nonprogrammers to use a classic computer science tool \
     which would otherwise be unavailable to them.  Because it is \
     protected by the GNU General Public License, users are free to \
-    share and change it.
+share and change it.
 homepage         https://www.gnu.org/software/hello/
 platforms        darwin
 master_sites     gnu
 checksums        rmd160 0bb0addbc7d65d6d8eda1e34dbdd586df9b71fa5 \
-                 sha256 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b
+sha256 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b
 configure.args   --disable-nls \
                  --infodir=${prefix}/share/info \
                  --mandir=${prefix}/share/man

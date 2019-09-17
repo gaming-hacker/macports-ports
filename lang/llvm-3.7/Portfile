@@ -110,23 +110,23 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-3.7.1.src.tar.xz \
-                    rmd160  677e652107e53ec1edeccaf479eff186a9f4c7d6 \
-                    sha256  be7794ed0cec42d6c682ca8e3517535b54555a3defabec83554dbc74db545ad5 \
+rmd160  677e652107e53ec1edeccaf479eff186a9f4c7d6 \
+sha256  be7794ed0cec42d6c682ca8e3517535b54555a3defabec83554dbc74db545ad5 \
                     cfe-3.7.1.src.tar.xz \
-                    rmd160  185b0f75970bc50682766a21794440578db87b5d \
-                    sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
+rmd160  185b0f75970bc50682766a21794440578db87b5d \
+sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
                     compiler-rt-3.7.1.src.tar.xz \
-                    rmd160  d80d61d0352e4a88265999e081a745779ccc4897 \
-                    sha256  9d4769e4a927d3824bcb7a9c82b01e307c68588e6de4e7f04ab82d82c5af8181 \
+rmd160  d80d61d0352e4a88265999e081a745779ccc4897 \
+sha256  9d4769e4a927d3824bcb7a9c82b01e307c68588e6de4e7f04ab82d82c5af8181 \
                     libcxx-3.7.1.src.tar.xz \
-                    rmd160  b63d75f0547eb17e3f3f4df0875dfe1d0c32525d \
-                    sha256  357fbd4288ce99733ba06ae2bec6f503413d258aeebaab8b6a791201e6f7f144 \
+rmd160  b63d75f0547eb17e3f3f4df0875dfe1d0c32525d \
+sha256  357fbd4288ce99733ba06ae2bec6f503413d258aeebaab8b6a791201e6f7f144 \
                     clang-tools-extra-3.7.1.src.tar.xz \
-                    rmd160  62c82a42807ea68bebabec96d3d30d787e3996f2 \
-                    sha256  4a91edaccad1ce984c7c49a4a87db186b7f7b21267b2b03bcf4bd7820715bc6b \
+rmd160  62c82a42807ea68bebabec96d3d30d787e3996f2 \
+sha256  4a91edaccad1ce984c7c49a4a87db186b7f7b21267b2b03bcf4bd7820715bc6b \
                     polly-3.7.1.src.tar.xz \
-                    rmd160  0549da0fdf597e812d5281a01cdd0974f6742718 \
-                    sha256  ce9273ad315e1904fd35dc64ac4375fd592f3c296252ab1d163b9ff593ec3542
+rmd160  0549da0fdf597e812d5281a01cdd0974f6742718 \
+sha256  ce9273ad315e1904fd35dc64ac4375fd592f3c296252ab1d163b9ff593ec3542
 
 patch.pre_args  -p1
 patchfiles \

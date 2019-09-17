@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,7 +16,7 @@ long_description    ${description} \
                     It can generate fractals from an L-System definition.
 
 checksums           rmd160  b3e8a5c7053768bae44e9bc5b9b267540ab9899d \
-                    sha256  024695c3e37e6e4394453a76735cf4a1846a0ddad52bd0d78703f3686398e02d
+sha256  024695c3e37e6e4394453a76735cf4a1846a0ddad52bd0d78703f3686398e02d
 
 depends_build       port:pkgconfig \
                     port:intltool \

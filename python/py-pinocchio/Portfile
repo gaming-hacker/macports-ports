@@ -1,10 +1,12 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-pinocchio
 set real_name       pinocchio
 version             0.3.1
-python.versions     27 34 35 36
+python.versions 27 37
 categories-append   devel
 platforms           darwin
 license             MIT
@@ -23,7 +25,7 @@ if {${name} ne ${subport}} {
     distname            ${real_name}-${version}
 
     checksums           rmd160  a3f5b30512a63c9d177dfe56cb1de3ff1f702b13 \
-                        sha256  3de3e3ac360f330b5c80d88e25f4d32cc733669b3f25e13dd6a3d2af4197ea14
+sha256  3de3e3ac360f330b5c80d88e25f4d32cc733669b3f25e13dd6a3d2af4197ea14
 
     depends_lib         port:py${python.version}-nose
 }

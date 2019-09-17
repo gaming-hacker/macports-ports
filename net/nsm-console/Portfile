@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup        ruby 1.0
@@ -26,7 +26,7 @@ homepage            https://writequit.org/projects/nsm-console/
 master_sites        https://writequit.org/projects/nsm-console/files/
 
 checksums           rmd160  227db94d9b9ff5fe1ca85b74d3df7e2b2b22bb91 \
-                    sha256  36cc2efe466d47b0a4eaa53169e9e63fb1a4dc2938f2ceac10176274674a4908
+sha256  36cc2efe466d47b0a4eaa53169e9e63fb1a4dc2938f2ceac10176274674a4908
 
 depends_run         port:wireshark port:ngrep port:tcpflow port:snort \
                     port:p0f port:argus port:argus-clients \

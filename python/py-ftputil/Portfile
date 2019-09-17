@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-off set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-off set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 PortGroup python  1.0
@@ -23,11 +23,11 @@ extract.suffix    .tar.gz
 homepage          http://ftputil.sschwarzer.net/trac/
 master_sites      ${homepage}raw-attachment/wiki/Download/${distfiles}?format=raw?dummy=
 checksums         md5    df1880064485be39b3e6eeefbd812b03 \
-                  sha1   5fe61f7165b309e021011de66bd80f990c0cff3c \
-                  rmd160 cd7bd7bfcb40c82b13f5d9daa1ba15a0a26c4b51
+sha1   5fe61f7165b309e021011de66bd80f990c0cff3c \
+rmd160 cd7bd7bfcb40c82b13f5d9daa1ba15a0a26c4b51
 
 
-python.versions   27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
   depends_build   port:py${python.version}-setuptools

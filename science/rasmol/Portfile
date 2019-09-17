@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                rasmol
 version             2.7.4.2
@@ -14,8 +16,8 @@ distname            RasMol_${version}
 master_sites        ${homepage}software/ \
                     http://www.bernstein-plus-sons.com/software/
 checksums           md5 80e4514c2522101a65fa109b85f748d5 \
-                    sha1 2e8d15f430971379ad5d1930f3ecd4c0f7ede3f5 \
-                    rmd160 c8480e36ca758601cc2341049ff2ca72ee64c629
+sha1 2e8d15f430971379ad5d1930f3ecd4c0f7ede3f5 \
+rmd160 c8480e36ca758601cc2341049ff2ca72ee64c629
 
 depends_lib         port:xorg-libXi
 

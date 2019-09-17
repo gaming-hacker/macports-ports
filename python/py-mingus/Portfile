@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,7 +17,7 @@ long_description \
     music theory, which includes topics like intervals, chords, scales and \
     progressions.
 
-python.versions     27
+python.versions 27 37
 
 platforms           darwin
 
@@ -29,8 +29,8 @@ distname            mingus-${version}
 dist_subdir         python
 
 checksums           md5     ef1c3a9a2b4e39806018988c62413328 \
-                    sha1    ffbd12d53375f95966e3d00474af75d28a9acbf1 \
-                    rmd160  c8dc63b0b1b4e3d0b1417c71c27ef2fd2e15a68a
+sha1    ffbd12d53375f95966e3d00474af75d28a9acbf1 \
+rmd160  c8dc63b0b1b4e3d0b1417c71c27ef2fd2e15a68a
 
 if {${name} ne ${subport}} {
     livecheck.type  none

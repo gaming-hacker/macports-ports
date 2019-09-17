@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,8 +26,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  e1fdc8b89a03ae009f82ee97813edbdffe9e4c63 \
-                    sha256  3098ada0a24effbde52b0074968a8dc03b7cf1c522e9e1b1186f48bb67a00d31 \
-                    size    18262848
+sha256  3098ada0a24effbde52b0074968a8dc03b7cf1c522e9e1b1186f48bb67a00d31 \
+size    18262848
 
 # set pbranch to desired perl version
 set pbranch         5.28
@@ -102,7 +102,7 @@ variant python27 description {Build Python plugin loader using python 2.7} {
     configure.pkg_config_path ${python_framework}/lib/pkgconfig
 }
 
-default_variants +python27
+
 
 post-activate {
     system "${prefix}/bin/scrollkeeper-update"

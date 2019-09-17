@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -24,9 +24,9 @@ long_description \
     on the net.
 
 checksums \
-    md5 a9555e48d9719868dd9ec7ce1423861b \
-    sha1 3c061673baedb082cfe53a7c26ea1bbe4f266fe3 \
-    rmd160 7be878e3c9cd517c37d1b8dcfd5e4992cfaad0e3
+md5 a9555e48d9719868dd9ec7ce1423861b \
+sha1 3c061673baedb082cfe53a7c26ea1bbe4f266fe3 \
+rmd160 7be878e3c9cd517c37d1b8dcfd5e4992cfaad0e3
 
 build.dir               ${worksrcpath}/Source
 xcode.destroot.path     ${prefix}/bin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ platforms           darwin
 homepage            https://www.flameeyes.eu/projects/unpaper
 
 checksums           rmd160  29bfd4b927ecd5e56d49b0f8f540d5138544a8a4 \
-                    sha256  9421fa66c8506f12dc0cc4c3814f1b41903420f6afeecd0db50fae49fcdb5740 \
-                    size    2704127
+sha256  9421fa66c8506f12dc0cc4c3814f1b41903420f6afeecd0db50fae49fcdb5740 \
+size    2704127
 
 depends_build       port:libxslt \
                     port:netpbm \

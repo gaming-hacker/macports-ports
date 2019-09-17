@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -33,9 +33,9 @@ variant gtk2 conflicts gtk3 description {Use the GTK2+ toolkit for the GUI} {
     distname                ${name}2-${version}
 
     checksums               md5     62f512dc42c789c115b2e51498307c1f \
-                            sha1    f8ee9b494a597ecfee646371064bd4b8256a66b8 \
-                            rmd160  b8ff66ff4033c7abad422f0ef14ebb2556475214 \
-                            sha256  a73658c52f097bdede96277694dae1c2b41fae82fe95ed9f11a9b8e635680ed8
+sha1    f8ee9b494a597ecfee646371064bd4b8256a66b8 \
+rmd160  b8ff66ff4033c7abad422f0ef14ebb2556475214 \
+sha256  a73658c52f097bdede96277694dae1c2b41fae82fe95ed9f11a9b8e635680ed8
     depends_lib-append      port:gtk2
 
     require_active_variants gtk2 x11
@@ -47,9 +47,9 @@ variant gtk3 conflicts gtk2 description {Use the GTK3+ toolkit for the GUI} {
     distname                ${name}3-${version}
 
     checksums               md5     ccffcd34d63a1f3716dd33eaa4950d77 \
-                            sha1    837e59cc363a845276618afd6040d9335804f21f \
-                            rmd160  cefeb10d12e4c7b4deb7d1ed84506ee628f75ea0 \
-                            sha256  8dfc1d741bdc50d43ba79f7080a807549730cb17b240eb5de5e2273b8063d658
+sha1    837e59cc363a845276618afd6040d9335804f21f \
+rmd160  cefeb10d12e4c7b4deb7d1ed84506ee628f75ea0 \
+sha256  8dfc1d741bdc50d43ba79f7080a807549730cb17b240eb5de5e2273b8063d658
 
     depends_lib-append      port:gtk3
 

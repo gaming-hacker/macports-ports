@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Oniguruma is a regular expressions library in which \
                     expression. Supports Unicode Porperty/Script.
 
 checksums           rmd160  aabeb3a0cc5af8d6fe2d1ef162b9d501f36ced41 \
-                    sha256  4ad934dc7d3fdb46ae4a6f2e75e91a954553206502a5a045482918517c0d7372 \
-                    size    570911
+sha256  4ad934dc7d3fdb46ae4a6f2e75e91a954553206502a5a045482918517c0d7372 \
+size    570911
 
 conflicts           oniguruma5
 

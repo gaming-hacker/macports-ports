@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   github 1.0
@@ -29,8 +29,8 @@ homepage                    http://www.semicomplete.com/projects/xdotool/
 github.tarball_from         releases
 
 checksums                   rmd160  33a99746cba56e7b8fdd151cc236326acf27057d \
-                            sha256  35be5ff6edf0c620a0e16f09ea5e101d5173280161772fca18657d83f20fcca8 \
-                            size    105388
+sha256  35be5ff6edf0c620a0e16f09ea5e101d5173280161772fca18657d83f20fcca8 \
+size    105388
 
 depends_build               port:pkgconfig \
                             path:bin/perl:perl5

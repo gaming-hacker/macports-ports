@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		fetch
 version		9.0.0-RELEASE
@@ -14,8 +16,8 @@ use_bzip2	yes
 homepage	http://www.freebsd.org/
 master_sites	macports
 checksums	md5 3788e294fbcf146495983a7dd6578ea3 \
-		sha1 8524a7ceff4b357068ae186de9193e7779ae2a65 \
-		rmd160 58de08f399a04b20eef4f810077c37d6566f72b9
+sha1 8524a7ceff4b357068ae186de9193e7779ae2a65 \
+rmd160 58de08f399a04b20eef4f810077c37d6566f72b9
 variant universal {}
 build.type	bsd
 if {[vercmp [macports_version] 2.5.99] >= 0} {

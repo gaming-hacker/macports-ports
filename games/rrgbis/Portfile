@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                rrgbis
 version             1.12
@@ -19,13 +21,13 @@ set data            rrgbis-${data_version}-data${extract.suffix}
 distfiles           ${source}:source \
                     ${data}:data
 checksums           ${source} \
-                        md5 14396c77f2b68cf2e5104174c135f4e4 \
-                        sha1 aa48440907f82fdb99f564fba69084146b9fae59 \
-                        rmd160 ec7d2f15086125d437179a53e552fd03f16c4539 \
+md5 14396c77f2b68cf2e5104174c135f4e4 \
+sha1 aa48440907f82fdb99f564fba69084146b9fae59 \
+rmd160 ec7d2f15086125d437179a53e552fd03f16c4539 \
                     ${data} \
-                        md5 abd55dc67686ac99e96f9db2e59b5981 \
-                        sha1 bbfb809982f3c1a9d39d1685f23bd2e6b9b5599e \
-                        rmd160 65d9eca5be7c67d3e3c48bf90fb4a5a17f2bada4
+md5 abd55dc67686ac99e96f9db2e59b5981 \
+sha1 bbfb809982f3c1a9d39d1685f23bd2e6b9b5599e \
+rmd160 65d9eca5be7c67d3e3c48bf90fb4a5a17f2bada4
 worksrcdir          ${name}
 
 depends_lib         port:freetype \

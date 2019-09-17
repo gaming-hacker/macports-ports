@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,7 +17,7 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  fbf514385ccfb2e7c0ef3ccd85c15ffbbd52ec88 \
-                    sha256  3fae039f041bc024c966c3f6e99395602cbcd5a29a540f6f4336b6007f8d79b6
+sha256  3fae039f041bc024c966c3f6e99395602cbcd5a29a540f6f4336b6007f8d79b6
 
 depends_lib-append  port:google-glog \
                     port:gflags \

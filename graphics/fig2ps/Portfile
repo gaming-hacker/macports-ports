@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -24,8 +24,8 @@ long_description        fig2ps is a perl script which converts xfig files to \
                         in the figures is exactly the same as in the text).
 
 checksums               md5     22ea30b5d0f36dfec7b462449b0fc82b \
-                        sha1    088f5b4a4beda035b6ddb8019e290627c2452d34 \
-                        rmd160  1d33c9b7377989f1a83cbfd8f63ecf82c8bad5ac
+sha1    088f5b4a4beda035b6ddb8019e290627c2452d34 \
+rmd160  1d33c9b7377989f1a83cbfd8f63ecf82c8bad5ac
 
 use_bzip2               yes
 

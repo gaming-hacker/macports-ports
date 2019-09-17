@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,13 +17,13 @@ license             Apache-2
 homepage	https://github.com/rtomac/${internal_name}/downloads
 
 platforms           darwin
-python.versions		27
+python.versions 27 37
 
 master_sites        pypi:r/${internal_name}/
 distname            ${internal_name}-${version}
 
 checksums           rmd160  d5d6fc35e01350dcf95b4d97191ef69535fdecf9 \
-                    sha256  2cb983b3237a6f63842c2c800f35c77a76db88623751054644c50f7a3698c0f9
+sha256  2cb983b3237a6f63842c2c800f35c77a76db88623751054644c50f7a3698c0f9
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

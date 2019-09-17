@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,9 +20,9 @@ master_sites        pypi:r/rsa
 distname            rsa-${version}
 
 checksums           rmd160  ed031a093373ab3c1a6d27d2d9e58235c0058809 \
-                    sha256  25df4e10c263fb88b5ace923dd84bf9aa7f5019687b5e55382ffcdb8bede9db5
+sha256  25df4e10c263fb88b5ace923dd84bf9aa7f5019687b5e55382ffcdb8bede9db5
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

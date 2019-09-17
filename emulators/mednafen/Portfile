@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ epoch               1
 version             1.22.2
 revision            1
 checksums           rmd160  7dbec84f5802ac43a21646337de70ae21ca702be \
-                    sha256  fad433ac694696d69ea38f6f4be1d0a6c1aa3609ec7f46ce75412be2f2df2f95 \
-                    size    3270004
+sha256  fad433ac694696d69ea38f6f4be1d0a6c1aa3609ec7f46ce75412be2f2df2f95 \
+size    3270004
 
 platforms           darwin
 categories          emulators games

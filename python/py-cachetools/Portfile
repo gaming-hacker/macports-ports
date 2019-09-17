@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,8 +6,8 @@ PortGroup           python 1.0
 name                py-cachetools
 version             3.1.0
 checksums           rmd160  ba8042f518899a8a6fe0b1506741290cbf720812 \
-                    sha256  9efcc9fab3b49ab833475702b55edd5ae07af1af7a4c627678980b45e459c460 \
-                    size    20664
+sha256  9efcc9fab3b49ab833475702b55edd5ae07af1af7a4c627678980b45e459c460 \
+size    20664
 
 license             MIT
 platforms           darwin
@@ -22,7 +22,7 @@ homepage            https://github.com/tkem/cachetools
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

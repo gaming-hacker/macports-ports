@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    jna
 version                 3.2.7
@@ -27,8 +29,8 @@ fetch.ignore_sslcert    yes
 extract.only
 
 checksums               md5 56c4d32d08c89a93159259e0da38d9db \
-                        sha1 4f25aa7292f70e721a9b96a6ed49365ba6e03eab \
-                        rmd160 93a01009c06ee9821f9677930634211a8ca9e666
+sha1 4f25aa7292f70e721a9b96a6ed49365ba6e03eab \
+rmd160 93a01009c06ee9821f9677930634211a8ca9e666
 
 depends_lib             bin:java:kaffe
 

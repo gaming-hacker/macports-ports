@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -23,9 +23,9 @@ platforms       darwin
 supported_archs noarch
 
 checksums       rmd160  5d0acced50cc329c91ab637cb24184a9a925dd1b \
-                sha256  5879c28807184270b91ff811e806be735dc4b3d55f6cc5519a72ccffc31259b4
+sha256  5879c28807184270b91ff811e806be735dc4b3d55f6cc5519a72ccffc31259b4
 
-python.default_version 27
+python.default_version 37
 
 depends_build-append \
                 port:py${python.version}-setuptools \

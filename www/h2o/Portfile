@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    H2O is a new generation HTTP server that provides quicker \
 homepage            https://h2o.examp1e.net/
 
 checksums           rmd160  916625188c8388a9c10be58201b40c470c80df1c \
-                    sha256  3919af04604e459bbfb47a278d41c7a65d62d43b8ae3271d63e328fe26392b90 \
-                    size    16257988
+sha256  3919af04604e459bbfb47a278d41c7a65d62d43b8ae3271d63e328fe26392b90 \
+size    16257988
 
 depends_build-append \
                     port:pkgconfig

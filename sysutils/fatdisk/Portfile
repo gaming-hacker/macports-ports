@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ long_description    ${name} is ${description}. It allows you to perform \
                     cat, hexdump, etc.
 
 checksums           rmd160  0ef84b43e37a3f9f8c4c3cca3c617daf3b60eca1 \
-                    sha256  950b60fa52e80ee3a01d9f939eedec41af90906f947a663d13c05fc78148bfa6
+sha256  950b60fa52e80ee3a01d9f939eedec41af90906f947a663d13c05fc78148bfa6
 
 depends_build       port:makedepend
 

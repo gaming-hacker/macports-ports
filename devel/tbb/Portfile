@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -22,8 +22,8 @@ long_description    ${description} \
 homepage            https://www.threadingbuildingblocks.org/
 
 checksums           rmd160  511ce5f44dd88548da33246530fd65a58efaaea1 \
-                    sha256  dd134c3786a0438eeaf0284e24f9d9f83082e635f81914d1d9e65f2e7455a63c \
-                    size    2580638
+sha256  dd134c3786a0438eeaf0284e24f9d9f83082e635f81914d1d9e65f2e7455a63c \
+size    2580638
 
 github.livecheck.regex {(\d+(?:\_U)+(?:\d+)*)}
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Class-DBI-mysql 1.00
 revision            3
 license             GPL-2+
@@ -18,7 +18,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  2a25535b9e1c7c337ed26734d654a44646b9b4e8 \
-                    sha256  6fd344111a0bf5a62e0b88409f096c669cbe0f14fd3fefdf2e385e6c97e9de7b
+sha256  6fd344111a0bf5a62e0b88409f096c669cbe0f14fd3fefdf2e385e6c97e9de7b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

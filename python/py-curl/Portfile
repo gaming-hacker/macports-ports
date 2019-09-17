@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,11 +21,11 @@ long_description    Python module interface to the cURL library which \
 homepage            http://pycurl.io/
 
 checksums           md5     719c76c8c3937d6ba544d08183aa1e91 \
-                    rmd160  6891ba8ee4d79fd5a10e824db47b9083309306b3 \
-                    sha256  553047902a738cc2e6b1cd42783a9d0992e47086773be30027a71e1293493c39 \
-                    size    208879
+rmd160  6891ba8ee4d79fd5a10e824db47b9083309306b3 \
+sha256  553047902a738cc2e6b1cd42783a9d0992e47086773be30027a71e1293493c39 \
+size    208879
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     worksrcdir          ${github.project}-${git.branch}

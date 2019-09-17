@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -34,8 +34,8 @@ distname                gambit-v[strsed ${version} {g/\./_/}]-devel
 extract.suffix          .tgz
 
 checksums               rmd160  e0586d3b588eeb078485e38a105d64c6d2b2c2ff \
-                        sha256  4321ea0042f349eef673d2607a39c24f72e223aaf63f60298fffb7365f60fe53 \
-                        size    142938902
+sha256  4321ea0042f349eef673d2607a39c24f72e223aaf63f60298fffb7365f60fe53 \
+size    142938902
 
 # https://trac.macports.org/ticket/46013
 compiler.blacklist {clang < 600} *llvm-gcc-4.2

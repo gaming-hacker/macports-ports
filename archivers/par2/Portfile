@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup         compiler_blacklist_versions 1.0
 
 name              par2
@@ -21,8 +23,8 @@ homepage          http://parchive.sourceforge.net/
 master_sites      sourceforge:parchive
 
 checksums         md5 1551b63e57e3c232254dc62073b723a9 \
-                  sha1 2fcdc932b5d7b4b1c68c4a4ca855ca913d464d2f \
-                  rmd160 e98dc84fa7a4304b8d71c1d373fdce0bca1e6290
+sha1 2fcdc932b5d7b4b1c68c4a4ca855ca913d464d2f \
+rmd160 e98dc84fa7a4304b8d71c1d373fdce0bca1e6290
 
 distname          par2cmdline-${version}
 

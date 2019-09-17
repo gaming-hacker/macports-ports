@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -24,8 +24,8 @@ master_sites            sourceforge:project/cntlm/cntlm/cntlm%20${version}
 use_bzip2               yes
 
 checksums               rmd160  6655738ca5f93d15f14681d3c14bbe8ec8e6a543 \
-                        sha256  7b603d6200ab0b26034e9e200fab949cc0a8e5fdd4df2c80b8fc5b1c37e7b930 \
-                        size    78198
+sha256  7b603d6200ab0b26034e9e200fab949cc0a8e5fdd4df2c80b8fc5b1c37e7b930 \
+size    78198
 
 patchfiles              patch-Makefile.diff
 

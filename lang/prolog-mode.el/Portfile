@@ -1,3 +1,5 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
 PortSystem	1.0
 
 name		prolog-mode.el
@@ -30,8 +32,8 @@ extract.suffix
 homepage	http://bruda.ca/emacs/prolog_mode_for_emacs
 master_sites	http://bruda.ca/_media/emacs
 checksums           md5     f871429f5a7803254cdbeaeea947285a \
-                    sha1    cddd5b727f4badcc4dcdef461838c8e02478d573 \
-                    rmd160  6818a7f3248fbe9f45f6a513e1e1b27f92da988d
+sha1    cddd5b727f4badcc4dcdef461838c8e02478d573 \
+rmd160  6818a7f3248fbe9f45f6a513e1e1b27f92da988d
 
 
 depends_lib	path:bin/emacs:emacs

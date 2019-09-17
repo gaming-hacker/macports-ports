@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ platforms           darwin
 master_sites        http://www.rkeene.org/files/oss/libopennet/
 
 checksums           md5     621294efc0d2d1a839d6262359b46f9c \
-                    sha1    d15c698498401ec6036646eaf19914117d6f5c56 \
-                    rmd160  551d6ce9ad7a262eeb7855e365c7f736f8763ee5
+sha1    d15c698498401ec6036646eaf19914117d6f5c56 \
+rmd160  551d6ce9ad7a262eeb7855e365c7f736f8763ee5
 
 patchfiles          patch-Makefile
 

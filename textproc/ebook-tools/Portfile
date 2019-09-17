@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -19,7 +19,7 @@ homepage            https://sourceforge.net/projects/ebook-tools/
 master_sites        sourceforge
 
 checksums           sha1    1f10bef62c9125cf804366134e486a58308f07ff \
-                    rmd160  2808a20b7bc9dc01b54be0e46dfb4cf96508d1a2
+rmd160  2808a20b7bc9dc01b54be0e46dfb4cf96508d1a2
 
 depends_build-append \
                     port:pkgconfig

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			libconfig
 conflicts		libconfig-hr
@@ -22,7 +24,7 @@ homepage		http://www.rkeene.org/oss/libconfig/
 master_sites	http://www.rkeene.org/files/oss/libconfig/devel/
 
 checksums               rmd160  88bbd0c5c43d314996c844df9875117b6b84575a \
-                        sha256  7413f6a377c899c2c598aa60d8e2c798aa032d21000c81fb8b4e1602649534b2
+sha256  7413f6a377c899c2c598aa60d8e2c798aa032d21000c81fb8b4e1602649534b2
 
 patchfiles		patch-Makefile.in.diff
 

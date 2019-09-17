@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -27,8 +27,8 @@ distname        ${name}_${realversion}
 worksrcdir      ${name}-${realversion}
 
 checksums       rmd160  36b669b51e81e1483232f73726952491304ab34a \
-                sha256  c8bb946ec93d3c2c72bbb1d7257e90172a22a44a07a07fb6b802a5bb2c95fddc \
-                size    42356
+sha256  c8bb946ec93d3c2c72bbb1d7257e90172a22a44a07a07fb6b802a5bb2c95fddc \
+size    42356
 
 post-patch {
     set fd [open [file join ${worksrcpath}/lib paperspecs] a 0644]

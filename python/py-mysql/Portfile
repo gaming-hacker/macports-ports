@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,9 +22,9 @@ master_sites        sourceforge:mysql-python
 distname            MySQL-python-${version}
 
 checksums           rmd160  e394e7bf08127068795aeebfbaea7dc3b2127c86 \
-                    sha256  7de66fbbf923634e7c965aeaefa74642ba75ae20ee1cefcefc3009595b7a7e6e
+sha256  7de66fbbf923634e7c965aeaefa74642ba75ae20ee1cefcefc3009595b7a7e6e
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             lincity
 version          1.13.0
@@ -18,7 +20,7 @@ homepage         http://lincity.sourceforge.net/
 platforms        darwin
 master_sites     sourceforge
 checksums        rmd160  e50762b5daa3346342bfe199deebf8ea9a9b0f4d \
-                 sha256  b2fdca8ce3fd0fa5f79a80a96c1494dc0750e951c7862273c82156153856f0c2
+sha256  b2fdca8ce3fd0fa5f79a80a96c1494dc0750e951c7862273c82156153856f0c2
 
 depends_lib \
 	port:xorg-libsm \

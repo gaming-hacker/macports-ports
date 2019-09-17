@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       gobject_introspection 1.0
@@ -20,7 +20,7 @@ master_sites    http://telepathy.freedesktop.org/releases/${name}/
 use_bzip2       yes
 
 checksums       sha256  8fcad534d653b1b365132c5b158adae947810ffbae9843f72dd1797966415dae \
-                rmd160  c68a859d9434cdceb8a82788d72e58611616b2ce
+rmd160  c68a859d9434cdceb8a82788d72e58611616b2ce
 
 depends_build   port:pkgconfig \
                 port:intltool \

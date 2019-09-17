@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                pssh
-python.default_version 27
+python.default_version 37
 version             2.3.1
 revision            1
 categories          sysutils net
@@ -27,7 +27,7 @@ homepage            https://code.google.com/p/parallel-ssh/
 master_sites        googlecode:parallel-ssh
 
 checksums           rmd160  6c5f238103a534aa73e4c2852be03d60a711a8bd \
-                    sha256  539f8d8363b722712310f3296f189d1ae8c690898eca93627fc89a9cb311f6b4
+sha256  539f8d8363b722712310f3296f189d1ae8c690898eca93627fc89a9cb311f6b4
 
 # link manpages too
 post-destroot {

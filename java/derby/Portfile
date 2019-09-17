@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    derby
 version                 10.9.1.0
@@ -26,8 +28,8 @@ homepage                https://db.apache.org/derby/
 master_sites            apache:db/derby/db-${name}-${version}
 distname                db-${name}-${version}-bin
 checksums               md5    32d81d803fd8ce449205dda1405ef6d3 \
-                        sha1   3d9e4f7b54e28c741277a41589ff8cd6ed74a07c \
-                        sha256 2f84bcddfd54aaab08aea431c93b8bf24b731aa343434923042ef57d6c6d8b30
+sha1   3d9e4f7b54e28c741277a41589ff8cd6ed74a07c \
+sha256 2f84bcddfd54aaab08aea431c93b8bf24b731aa343434923042ef57d6c6d8b30
 
 depends_lib             bin:java:kaffe
 depends_run             port:rlwrap

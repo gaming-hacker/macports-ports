@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    s710
 version                 0.21
@@ -17,8 +19,8 @@ homepage                http://daveb.net/s710/
 
 master_sites            googlecode
 checksums               md5 5cacc616971265881400e18e09c60fa5 \
-                        sha1 3b6f703082d19056490c76b22b4ef8158795876c \
-                        rmd160 866ed5d0dec77582872123f2762cbc2dfd6c0856
+sha1 3b6f703082d19056490c76b22b4ef8158795876c \
+rmd160 866ed5d0dec77582872123f2762cbc2dfd6c0856
 depends_lib             port:gd2  port:libiconv
 configure.cflags        "-DS710_SERIAL_ALT_INTER_CHAR_TIMER_IMP -L${prefix}/libs710"
 configure.ldflags       "-lz -liconv"

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Lutok provides thin C++ wrappers around the Lua C \
 
 github.tarball_from releases
 checksums           md5     5da43895d9209f8c19d79433dd046b3f \
-                    sha1    f13ea7cd8344e43c71c41f87c9fdbc2b9047a504 \
-                    rmd160  4eb9e52dda238ac6051c7d73fc481955b39e9079
+sha1    f13ea7cd8344e43c71c41f87c9fdbc2b9047a504 \
+rmd160  4eb9e52dda238ac6051c7d73fc481955b39e9079
 
 platforms           darwin
 

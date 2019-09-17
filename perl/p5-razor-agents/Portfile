@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         razor-agents 2.84
 revision            3
 license             Artistic
@@ -27,7 +27,7 @@ homepage            http://razor.sourceforge.net/
 master_sites        sourceforge:razor
 
 checksums           rmd160  204fc2b68ca6f01329676a62b36ca87be659565d \
-                    sha256  1e9eb8e4d562de79f01e059a7885e5e2a87f47688f146310a0400893edf3077c
+sha256  1e9eb8e4d562de79f01e059a7885e5e2a87f47688f146310a0400893edf3077c
 
 platforms           darwin
 

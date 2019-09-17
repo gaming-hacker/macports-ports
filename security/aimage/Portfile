@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                aimage
 version             3.2.5
@@ -16,7 +18,7 @@ homepage            http://www.afflib.org/
 master_sites        ${homepage}downloads/
 
 checksums           rmd160  ddf2a0686116230f771007f73bf3d4f3a2bc2ea9 \
-                    sha256  9c362dbb24a064af014677c30d9511ed65b4f2b2c5ea3ba051bc4c5ada635b11
+sha256  9c362dbb24a064af014677c30d9511ed65b4f2b2c5ea3ba051bc4c5ada635b11
 
 depends_lib         port:libewf \
                     port:afflib \

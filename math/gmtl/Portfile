@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                gmtl
 version             0.6.1
@@ -11,8 +13,8 @@ long_description    The math library used by vrjuggler. It is \
 homepage            http://ggt.sourceforge.net/
 master_sites        sourceforge:ggt
 checksums           md5 1391af2c5ea050dda7735855ea5bb4c1 \
-                    sha1 473a454d17956d3ce3babafdb57f73c0685579fd \
-                    rmd160 19ca8c25cf54b1650272f7a387f5f8b8c5c3140c
+sha1 473a454d17956d3ce3babafdb57f73c0685579fd \
+rmd160 19ca8c25cf54b1650272f7a387f5f8b8c5c3140c
 
 depends_build       port:scons
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  muniversal 1.0
@@ -26,8 +26,8 @@ master_sites    http://download.oracle.com/berkeley-db/
 distname        db-${version}
 
 checksums       rmd160  a4898908ef6dccb137df02e43843f7d3cfab6a3c \
-                sha256  e0a992d740709892e81f9d93f06daf305cf73fb81b545afe72478043172c3628 \
-                size    35090431
+sha256  e0a992d740709892e81f9d93f06daf305cf73fb81b545afe72478043172c3628 \
+size    35090431
 
 patchfiles      patch-src_dbinc_atomic.h
 

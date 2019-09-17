@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -14,7 +14,7 @@ categories      editors gnome
 platforms       darwin
 
 checksums       rmd160  35f5998c78b7c4141dcd5601fa9296dde4821782 \
-                sha256  50d3e842c9c214e02e43da1f149831a36bd166528d3a2f7bb16a76f81ddf499d
+sha256  50d3e842c9c214e02e43da1f149831a36bd166528d3a2f7bb16a76f81ddf499d
 
 depends_build   port:pkgconfig \
                 port:intltool

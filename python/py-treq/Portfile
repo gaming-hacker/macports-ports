@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ distname            ${python.rootname}-${version}
 license             MIT
 
 checksums           sha256  91e09ff6b524cc90aa5e934b909c8d0d1a9d36ebd618b6c38e37b17013e69f48 \
-                    rmd160  0960e004dc9769df3228915bba439acc41162294 \
-                    size    59156
+rmd160  0960e004dc9769df3228915bba439acc41162294 \
+size    59156
 
-python.versions     37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

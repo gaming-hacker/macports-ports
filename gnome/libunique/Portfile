@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -20,7 +20,7 @@ homepage            https://wiki.gnome.org/Attic/LibUnique
 master_sites        gnome:sources/${name}/${branch}/
 
 checksums           rmd160  15ae8cc81f978554395fcb194ecb11c7bc6a1938 \
-                    sha256  2cb918dde3554228a211925ba6165a661fd782394bd74dfe15e3853dc9c573ea
+sha256  2cb918dde3554228a211925ba6165a661fd782394bd74dfe15e3853dc9c573ea
 
 patchfiles          patch-g_const_return.diff
 patch.pre_args      -p1

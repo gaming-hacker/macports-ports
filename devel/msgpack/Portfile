@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,7 +19,7 @@ platforms           darwin
 license             Apache-2
 
 checksums           rmd160  c708651d37d62fa8e1fb18cadbce129fd838b777 \
-                    sha256  edfe42e4a9199b9e6c05d421c087a0de8575d045cae88df0873ed9158a9494e0
+sha256  edfe42e4a9199b9e6c05d421c087a0de8575d045cae88df0873ed9158a9494e0
 
 conflicts           msgpack1
 

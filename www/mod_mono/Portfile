@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -15,7 +15,7 @@ long_description    An Apache web server plug-in that hosts the Mono System.Web 
 homepage        http://www.mono-project.com/Mod_mono
 master_sites    https://download.mono-project.com/sources/mod_mono/
 checksums       rmd160  c8f26e196fc796c8ab07fdcb5400bf67ba653ad4 \
-                sha256  bb18dd59efe56c719df7c89b353327dd30dddb87f395d60b188f92b911c9f04b
+sha256  bb18dd59efe56c719df7c89b353327dd30dddb87f395d60b188f92b911c9f04b
 
 depends_build   port:gsed \
                 port:pkgconfig

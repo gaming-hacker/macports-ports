@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -10,8 +10,8 @@ if {${subport} eq "enigma"} {
     version                 1.21
     master_sites            sourceforge:project/enigma-game/Release%20${version}/
     checksums               rmd160  7942dd2acc1e21cb40200a9ae767a4673c569a2a \
-                            sha256  d872cf067d8eb560d3bb1cb17245814bc56ac3953ae1f12e2229c8eb6f82ce01 \
-                            size    56409951
+sha256  d872cf067d8eb560d3bb1cb17245814bc56ac3953ae1f12e2229c8eb6f82ce01 \
+size    56409951
                             
     patchfiles-append       patch-remove-SDL-frameworks-stop-static-linking.diff
 
@@ -23,8 +23,8 @@ if {${subport} eq "enigma"} {
     github.setup            Enigma-Game Enigma 3864fcf29cd6a7ab89b6a2160c281ab995e5f386
     version                 20171207
     checksums               rmd160  6a0186344130e79751b23ee23cf15c713dfb1cef \
-                            sha256  db742a85983482aef9f223fc17c26039454f16d2ee14865b937af53e53e78d0e \
-                            size    51848604
+sha256  db742a85983482aef9f223fc17c26039454f16d2ee14865b937af53e53e78d0e \
+size    51848604
 
     # remove SDL frameworks - these are not used in MacPorts as we use dylibs
     patchfiles-append       patch-configure-ac-remove-frameworks.diff

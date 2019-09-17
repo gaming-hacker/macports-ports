@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Crypt-OpenSSL-EC 1.31
 revision            1
 license             {Artistic-1 GPL}
@@ -14,7 +14,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  cf2f7701f786c727e83003a946bb5e40898d0974 \
-                    sha256  06c13934f4188a6c3b6266d6c62d0127c6a00bb5808d17d51d18c998627eff70
+sha256  06c13934f4188a6c3b6266d6c62d0127c6a00bb5808d17d51d18c998627eff70
 
 if {${perl5.major} != ""} {
     depends_lib-append \

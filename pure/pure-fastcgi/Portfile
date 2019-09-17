@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       pure 1.0
@@ -16,7 +16,7 @@ long_description                ${name} lets you write FastCGI scripts in \
                                 Pure, to be run by web servers like Apache.
 
 checksums                       rmd160  1a0ceea876a2c2d20fda1b1ef2b2743851def8e2 \
-                                sha256  aa5789cc1e17521c01f349ee82ce2a00500e025b3f8494f89a7ebe165b5aabc7
+sha256  aa5789cc1e17521c01f349ee82ce2a00500e025b3f8494f89a7ebe165b5aabc7
 
 depends_build-append            port:pkgconfig
 

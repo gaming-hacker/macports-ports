@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            jobpool
 version         0.2
@@ -18,13 +20,13 @@ master_sites
 distfiles-append    index.html
 checksums \
     ${distname}${extract.suffix} \
-        md5     b8d1b0a962d00e9b674b6a3f1b03ca50 \
-        sha1    c22bd3b83e1474a9c423e7e2ff6810bc73891d2a \
-        rmd160  a94f92fe506e67df667f2f73b9f626d688ca79e6 \
+md5     b8d1b0a962d00e9b674b6a3f1b03ca50 \
+sha1    c22bd3b83e1474a9c423e7e2ff6810bc73891d2a \
+rmd160  a94f92fe506e67df667f2f73b9f626d688ca79e6 \
     index.html \
-        md5     42311dcdec59f01b5c663d7eb66e1018 \
-        sha1    1254aaa0936cfad89b92b1c2962c5e4a2663bd27 \
-        rmd160  14be2515560658540225e2aa4c3ae030f2082daf
+md5     42311dcdec59f01b5c663d7eb66e1018 \
+sha1    1254aaa0936cfad89b92b1c2962c5e4a2663bd27 \
+rmd160  14be2515560658540225e2aa4c3ae030f2082daf
 
 use_configure   no
 build.target    jobpool

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -21,7 +21,7 @@ distname            ${name}-src-${version}
 use_zip             yes
 
 checksums           sha1 f45bf4e247c0d7617deacd6a65d23d9fddae6117 \
-                    rmd160 f83aa8288063690ff60654fa291e2982ba637633
+rmd160 f83aa8288063690ff60654fa291e2982ba637633
 
 worksrcdir          ${name}
 

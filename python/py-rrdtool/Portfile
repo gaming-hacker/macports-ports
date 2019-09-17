@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            rrdtool-${version}
 
 checksums           rmd160  4b4c68b39a5260df851c8b322696b328c3fc8378 \
-                    sha256  951d2c23121dbe94859ea46bc9ed54e908e2f2ee60eff3c505db0778a3212732 \
-                    size    21864
+sha256  951d2c23121dbe94859ea46bc9ed54e908e2f2ee60eff3c505db0778a3212732 \
+size    21864
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

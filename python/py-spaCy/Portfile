@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           python                      1.0
@@ -13,8 +13,8 @@ revision            0
 github.setup        explosion spaCy ${version} v
 
 checksums           rmd160  1b72d15fe8459657a34140d0f5145f91801d2485 \
-                    sha256  1148a02e4d16098a7f0eca646d444b5a9152b8200864abae374d31497df3a26d \
-                    size    30442029
+sha256  1148a02e4d16098a7f0eca646d444b5a9152b8200864abae374d31497df3a26d \
+size    30442029
 
 platforms           darwin
 supported_archs     x86_64
@@ -32,9 +32,9 @@ homepage            https://spacy.io
 github.livecheck.regex {([0-9.]+)}
 
 # Support python versions
-python.versions     35 36 37
+python.versions 27 37
 
-mpi.setup           -gcc44 -gcc45 -clang33 -clang34 -clang37 -clang39 -clang40 -gfortran -g95
+mpi.setup                  -gfortran 
 
 # Compiler selection
 compiler.blacklist-append *gcc* {clang < 900} {macports-clang-3.[0-9]} macports-clang-4.0

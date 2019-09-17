@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,4 +12,4 @@ description         PEAR QA_Peardoc_Coverage package
 long_description    ${description}
 
 checksums           rmd160  46ec0f2dcff1cdf423edc6ba354ccd207be24839 \
-                    sha256  38b3a637779235138476d47e8ae9a2d69c5c902437a591cef2483caa6b8f0b32
+sha256  38b3a637779235138476d47e8ae9a2d69c5c902437a591cef2483caa6b8f0b32

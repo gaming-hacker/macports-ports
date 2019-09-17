@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell 1.0
@@ -6,7 +6,7 @@ PortGroup           haskell 1.0
 haskell.setup       blaze-builder 0.3.3.4
 revision            1
 checksums           rmd160  6b2deac644b39787113cfea3f8123bbce32627b2 \
-                    sha256  e5c1101e6a0db4ee85e0bf57fe797bdd6f5ee9542ee730a663030eb650acaf8b
+sha256  e5c1101e6a0db4ee85e0bf57fe797bdd6f5ee9542ee730a663030eb650acaf8b
 
 platforms           darwin
 license             BSD

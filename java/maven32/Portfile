@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -36,7 +36,7 @@ distname        apache-maven-${version}-bin
 worksrcdir      apache-maven-${version}
 
 checksums       rmd160 875c93c8dcdd949928ba9a3ec7ef927a164251d0 \
-                sha256 8c190264bdf591ff9f1268dc0ad940a2726f9e958e367716a09b8aaa7e74a755
+sha256 8c190264bdf591ff9f1268dc0ad940a2726f9e958e367716a09b8aaa7e74a755
 
 patchfiles      patch-bin-mvn.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ distname            ${python.rootname}-${version}
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}/
 
 checksums           rmd160  52a7e37313eadce8dc0207530b1e919f14c84071 \
-                    sha256  13fb1e5486a611374a06177663c2ab878f0c192c8fc8765a63dfef86859006c9 \
-                    size    10054
+sha256  13fb1e5486a611374a06177663c2ab878f0c192c8fc8765a63dfef86859006c9 \
+size    10054
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     conflicts               py${python.version}-pymongo

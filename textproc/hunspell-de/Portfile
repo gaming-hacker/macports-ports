@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ supported_archs     noarch
 use_bzip2           yes
 
 checksums           rmd160  6c8e460d27af7930af5b457e513316410c8321a6 \
-                    sha256  17296f03c5fea62d76ecc530ebe80f6adc430278f58d472dc1842d71612960a8
+sha256  17296f03c5fea62d76ecc530ebe80f6adc430278f58d472dc1842d71612960a8
 
 use_configure       no
 

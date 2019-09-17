@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake          1.1
@@ -25,8 +25,8 @@ extract.suffix          .tgz
 distname                ${name}-${version}-source
 
 checksums               rmd160  4c979a0b623b331c6aa627a3f03cb440f1f38612 \
-                        sha256  5f4d2a97e05e7056b0336312423a43804e145e842a61202791607b18ca0e6391 \
-                        size    1859286
+sha256  5f4d2a97e05e7056b0336312423a43804e145e842a61202791607b18ca0e6391 \
+size    1859286
 
 mpi.setup               require_fortran
 
@@ -109,7 +109,7 @@ if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset py
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 variant gmsh description {Enable Gmsh functions (for field interpolation)} {

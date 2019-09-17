@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -27,10 +27,10 @@ homepage            https://cdsoft.fr/tpg/
 master_sites        ${homepage}
 distname            TPG-${version}
 checksums           rmd160  e254a462fb390af038b08b251e4ca4d0142b347f \
-                    sha256  52e61232b09df90afa7d26555526464ce4d2b194d9fc505298c75036b1442923 \
-                    size    379868
+sha256  52e61232b09df90afa7d26555526464ce4d2b194d9fc505298c75036b1442923 \
+size    379868
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     # fix permissions

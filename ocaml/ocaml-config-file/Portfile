@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ocaml 1.0
 
 name                ocaml-config-file
@@ -14,7 +16,7 @@ homepage            https://config-file.forge.ocamlcore.org/
 master_sites        https://forge.ocamlcore.org/frs/download.php/1387/
 distname            config-file-${version}
 checksums           rmd160  fbab4619ee79a9ba77e0f34c36f702abe7880931 \
-                    sha256  f89877269fd6f131a61db4513278bb527748d4147909a87501194a6d59f702ac
+sha256  f89877269fd6f131a61db4513278bb527748d4147909a87501194a6d59f702ac
 
 depends_lib         port:ocaml port:ocaml-findlib
 depends_build       port:ocaml-camlp4

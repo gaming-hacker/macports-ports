@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                tcl2doxy
 version             0-2
 checksums           rmd160  fb746ebbbfbf6bd03cec44c94f8bb1854f4d00a6 \
-                    sha256  f230d9099941b3cc907313df9af1b87674ec09a823654a57c1d7548331c596f5
+sha256  f230d9099941b3cc907313df9af1b87674ec09a823654a57c1d7548331c596f5
 
 categories          textproc
 platforms           darwin

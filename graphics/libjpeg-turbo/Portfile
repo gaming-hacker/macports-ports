@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 PortGroup           muniversal 1.0
 
@@ -28,8 +28,8 @@ homepage            http://www.${name}.org
 
 master_sites        sourceforge:project/${name}/${version}
 checksums           md5     3fc5d9b6a8bce96161659ae7a9939257 \
-                    rmd160  5ec39b43d6ab39864739ea4009a22c59cb5924cf \
-                    sha256  9f397c31a67d2b00ee37597da25898b03eb282ccd87b135a50a69993b6a2035f
+rmd160  5ec39b43d6ab39864739ea4009a22c59cb5924cf \
+sha256  9f397c31a67d2b00ee37597da25898b03eb282ccd87b135a50a69993b6a2035f
 
 depends_build       port:nasm
 

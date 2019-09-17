@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -6,8 +6,8 @@ PortGroup           golang 1.0
 go.setup            github.com/gohugoio/hugo 0.58.2 v
 revision            0
 checksums           rmd160  0a48598c1350bc828f95fa0ef313a7ba91c1f5c0 \
-                    sha256  772d817759c921b1df4a5204caf50dbef4a4081a531a64932563fa3bcad27ecf \
-                    size    30043910
+sha256  772d817759c921b1df4a5204caf50dbef4a4081a531a64932563fa3bcad27ecf \
+size    30043910
 
 categories          www
 platforms           darwin

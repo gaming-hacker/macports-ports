@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,7 +7,7 @@ github.setup        heimdal heimdal 7.5.0 heimdal-
 revision            2
 github.tarball_from releases
 checksums           rmd160  e056d1ce93d783fdc321ad02f373e363bce47d9e \
-                    sha256  c5a2a0030fcc728022fa2332bad85569084d1c3b9a59587b7ebe141b0532acad
+sha256  c5a2a0030fcc728022fa2332bad85569084d1c3b9a59587b7ebe141b0532acad
 
 maintainers         nomaintainer
 categories          net security

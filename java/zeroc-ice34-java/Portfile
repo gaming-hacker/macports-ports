@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            zeroc-ice34-java
 version         3.4.2
@@ -33,8 +35,8 @@ master_sites    ${homepage}download/Ice/${branch}/
 dist_subdir     zeroc-ice34
 distname        Ice-${version}
 checksums       md5 e97672eb4a63c6b8dd202d0773e19dc7 \
-                sha1 8c84d6e3b227f583d05e08251e07047e6c3a6b42 \
-                rmd160 7ce680a4eb5fa9d0bb6f8b8910e267dfc2373d75
+sha1 8c84d6e3b227f583d05e08251e07047e6c3a6b42 \
+rmd160 7ce680a4eb5fa9d0bb6f8b8910e267dfc2373d75
 platforms       darwin
 
 depends_lib     port:db46-java \

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         NTLM 1.09 ../by-authors/id/N/NB/NBEBOUT
 
 platforms           darwin
@@ -16,7 +16,7 @@ description         A perl NTLM authentication module
 long_description    ${description}
 
 checksums           rmd160  42fb64b80207aed722e6789416db911b05ef3cfc \
-                    sha256  c823e30cda76bc15636e584302c960e2b5eeef9517c2448f7454498893151f85
+sha256  c823e30cda76bc15636e584302c960e2b5eeef9517c2448f7454498893151f85
 
 if {${perl5.major} != ""} {
     depends_lib-append \

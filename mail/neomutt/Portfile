@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    Mutt is a small but very powerful text-based MIME \
 homepage            https://neomutt.org
 
 checksums           rmd160  10d70fdcbd6f705ca33a79d2cdc2aa1bf6c864a1 \
-                    sha256  3d5762b506f956fee89635e60128fdcbd3532cded7536dcadb6f0e1d1847f8d6 \
-                    size    2778195
+sha256  3d5762b506f956fee89635e60128fdcbd3532cded7536dcadb6f0e1d1847f8d6 \
+size    2778195
 
 depends_build       port:docbook-xml-4.2 port:docbook-xsl-nons port:libxslt port:w3m
 depends_lib         path:bin/perl:perl5 \

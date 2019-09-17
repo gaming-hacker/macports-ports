@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            cgdb
 version         0.6.7
@@ -15,7 +17,7 @@ long_description \
 homepage        https://cgdb.github.io
 master_sites    http://cgdb.me/files/
 checksums       rmd160  85ccfc72bf8f02f98331ba4447eb569e63174738 \
-                sha256  074ed31d1e827a04574add8c27d391447d75313e85ff938005d8ec939499fda9
+sha256  074ed31d1e827a04574add8c27d391447d75313e85ff938005d8ec939499fda9
 
 depends_lib     port:ncurses port:readline
 

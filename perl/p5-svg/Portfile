@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         SVG 2.84
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -16,8 +16,8 @@ description         Perl extension for generating Scalable Vector Graphics \
 long_description    ${description}
 
 checksums           rmd160  1d2cf2e25f9d507768cd2d0a88709832b81210a5 \
-                    sha256  ec3d6ddde7a46fa507eaa616b94d217296fdc0d8fbf88741367a9821206f28af \
-                    size    55797
+sha256  ec3d6ddde7a46fa507eaa616b94d217296fdc0d8fbf88741367a9821206f28af \
+size    55797
 
 if {${perl5.major} != ""} {
     post-destroot {

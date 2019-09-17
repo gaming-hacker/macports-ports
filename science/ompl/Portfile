@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           cmake 1.0
 PortGroup           active_variants 1.1
 PortGroup           cxx11 1.1
@@ -18,8 +20,8 @@ license             BSD
 master_sites        https://bitbucket.org/ompl/ompl/downloads
 distname            ${name}-${version}-Source
 checksums           rmd160  86636ba53ff3c291487c9ad605bb9a87d1381f8c \
-                    sha256  03d5a661061928ced63bb945055579061665634ef217559b1f47fef842e1fa85 \
-                    size    22777652
+sha256  03d5a661061928ced63bb945055579061665634ef217559b1f47fef842e1fa85 \
+size    22777652
 depends_build-append port:pkgconfig
 depends_lib-append  port:boost port:ode port:flann port:triangle port:eigen3
 
@@ -61,8 +63,8 @@ http://ompl.kavrakilab.org/license.html#ricelicense"
         -DASSIMP_LIBRARIES=assimp -DASSIMP_INCLUDE_DIRS=${prefix}/include
     distname            omplapp-${version}-Source
     checksums           rmd160  eb1969b0489d1acfd91d8bb5dccbbeeb6d2adf1e \
-                        sha256  70782c458af368de6419075bf3cbdce703e4819f3ba9c67517c6cf74f27c2d0a \
-                        size    51016629
+sha256  70782c458af368de6419075bf3cbdce703e4819f3ba9c67517c6cf74f27c2d0a \
+size    51016629
 
     notes "
     If you intend to use ompl_webapp, you need to first launch the redis server:

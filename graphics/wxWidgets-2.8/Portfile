@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -40,11 +40,11 @@ distfiles           ${distname}-${version}${extract.suffix} \
 dist_subdir         ${distname}/${version}
 
 checksums           ${distname}-${version}${extract.suffix} \
-                    rmd160  928e221abe1a00cd2d72d2a4fd3640ba639b9915 \
-                    sha256  3b0ac1d2d017683851841501c8e1b744b97242d684a1668ded61809b0504f707 \
+rmd160  928e221abe1a00cd2d72d2a4fd3640ba639b9915 \
+sha256  3b0ac1d2d017683851841501c8e1b744b97242d684a1668ded61809b0504f707 \
                     ${wxpythonsubset}${extract.suffix} \
-                    rmd160  df824e5cd99cb2fc927194526edadd2f650a1c87 \
-                    sha256  01d77736aca3d16d1c26aa1002748bf43cd8ad261802f35e9a8f7b75c2227e8a
+rmd160  df824e5cd99cb2fc927194526edadd2f650a1c87 \
+sha256  01d77736aca3d16d1c26aa1002748bf43cd8ad261802f35e9a8f7b75c2227e8a
 
 subport wxgtk-2.8   {}
 

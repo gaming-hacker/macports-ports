@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    This is a DHCP test tool. It can send DHCP discover \
                     packets, and listen for DHCP replies.
 
 checksums           rmd160  4b3ab0bb209ed449e22ac3779346de402edb58e2 \
-                    sha256  1da188de642b47a31b3516caf27f820aa0298ec2bf91c1a2c01fc06dcc8a4bc5 \
-                    size    10422
+sha256  1da188de642b47a31b3516caf27f820aa0298ec2bf91c1a2c01fc06dcc8a4bc5 \
+size    10422
 
 depends_build       port:dmd \
                     port:druntime \

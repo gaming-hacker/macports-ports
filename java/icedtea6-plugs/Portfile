@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                icedtea6-plugs
 version             1.6b
@@ -20,7 +22,7 @@ distname            jdk-7-icedtea-plugs-${version}
 
 master_sites        http://www.intricatesoftware.com/distfiles/
 checksums           md5     86e575da6209157b484d0e91e41cffc8 \
-                    sha256  016d64416bdfe1d66901d169b2d7eaaf40a1ef00aa1d9643bf5130399619d9a0 
+sha256  016d64416bdfe1d66901d169b2d7eaaf40a1ef00aa1d9643bf5130399619d9a0 
                     
 use_configure        no
 

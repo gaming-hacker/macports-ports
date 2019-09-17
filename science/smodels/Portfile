@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ platforms           darwin
 master_sites        ${homepage}/src/
 
 checksums           rmd160  032b9063635a1025dbe3528a7a803a7f2ccef9e0 \
-                    sha256  8d14fe02ad2aec636d674c5e1dd6026e8bac5787693fa16425bf6f6fe3959834
+sha256  8d14fe02ad2aec636d674c5e1dd6026e8bac5787693fa16425bf6f6fe3959834
 
 configure.optflags  -O3
 configure.cxxflags-append   -arch ${build_arch}

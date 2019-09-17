@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,6 +22,6 @@ homepage            https://gitlab.dkrz.de/k202009/libaec
 master_sites        ${homepage}/uploads/e3a951204308ba1f623b529cf9e5f574
 
 checksums           rmd160  7ab1c81d1f45ded6236a1bad8c55980f8a412a37 \
-                    sha256  984657b2db033c278b60bbfae8ca450d157c9c5eb627a1270f31905f6362dd82
+sha256  984657b2db033c278b60bbfae8ca450d157c9c5eb627a1270f31905f6362dd82
 
 configure.args      --prefix=${prefix}/lib/${name}

@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    mysql-connector-odbc
 version                 5.1.8
@@ -26,7 +28,7 @@ master_sites \
     http://ftp.plusline.de/mysql/Downloads/Connector-ODBC/${branch}/
 
 checksums               sha1    2272075c66712cf7a05e50eeb4520f7c504c3ae8 \
-                        rmd160  0db5c4d42c7377f7fc1fa2ad569f50f9a497511e
+rmd160  0db5c4d42c7377f7fc1fa2ad569f50f9a497511e
 
 depends_lib \
     port:unixODBC \

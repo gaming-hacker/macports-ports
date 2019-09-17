@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 PortGroup     compiler_blacklist_versions 1.0
@@ -21,7 +21,7 @@ patchfiles    patch-config-autotools-make-python.mk.diff \
               patch-src-Makefile.in.diff
 
 checksums     rmd160 d8ca30fc0d10b05015591a87951ee7e0333218e0 \
-              sha256 c7d58952e213a024dd6ac33dd907862b2c96baa7a4fb2ac4bb47ceef6bc45d50
+sha256 c7d58952e213a024dd6ac33dd907862b2c96baa7a4fb2ac4bb47ceef6bc45d50
 
 depends_build  port:pkgconfig
 depends_lib    port:ldas-tools-ldasgen \

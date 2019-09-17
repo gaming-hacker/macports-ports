@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         String-Escape 2010.002
 revision            3
 platforms           darwin
@@ -15,4 +15,4 @@ long_description    ${description}
 supported_archs     noarch
 
 checksums           rmd160  dafd6e667401bc93e9f3208684c47356e41bf02f \
-                    sha256  fd645f8b336224d20a85ae7fb1a384576eac329f7adc3923c3241e828e3b9a8a
+sha256  fd645f8b336224d20a85ae7fb1a384576eac329f7adc3923c3241e828e3b9a8a

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        http://icculus.org/rott/releases/
 worksrcdir          ${name}-${version}/rott
 
 checksums           md5     d523c7c6c97f95ba84b8cf4deae7db38 \
-                    sha1    2c8841934008b1afe704b6b8743d82492def35ba \
-                    rmd160  009cf7ac62ff4d96c69446df8bbbc2cc40e8932f
+sha1    2c8841934008b1afe704b6b8743d82492def35ba \
+rmd160  009cf7ac62ff4d96c69446df8bbbc2cc40e8932f
 
 depends_lib         port:libsdl \
                     port:libsdl_image \

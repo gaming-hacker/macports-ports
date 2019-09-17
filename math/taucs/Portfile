@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compilers 1.0
@@ -24,8 +24,8 @@ extract.suffix          .tgz
 extract.mkdir           yes
 
 checksums               rmd160  e7621bc65af42432e708318e93bce8958bf3a482 \
-                        sha256  fc13dae767db5e9035b1ce63036a16d3a260aad784f461e073f1150a078a77e4 \
-                        size    1573863
+sha256  fc13dae767db5e9035b1ce63036a16d3a260aad784f461e073f1150a078a77e4 \
+size    1573863
 
 depends_lib-append      port:metis \
                         port:libf2c
@@ -34,7 +34,7 @@ depends_lib-append      port:metis \
 compiler.blacklist-append \
                         {clang < 211.10.1}
 compilers.choose        cc
-compilers.setup         -gcc44
+compilers.setup         
 linalg.setup            noveclibfort blas_only
 
 post-extract {

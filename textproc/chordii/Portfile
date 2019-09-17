@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,4 +23,4 @@ homepage            https://www.vromans.org/johan/projects/Chordii/
 master_sites        sourceforge:project/${name}/${name}/${branch}
 
 checksums           rmd160  a5abb489c0b59231cd4c7c7fd12c19961862211f \
-                    sha256  140d24a8bc8c298e8db1b9ca04cf02890951aa048a656adb7ee7212c42ce8d06
+sha256  140d24a8bc8c298e8db1b9ca04cf02890951aa048a656adb7ee7212c42ce8d06

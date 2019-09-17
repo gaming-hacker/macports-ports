@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ master_sites        sourceforge:project/crayzedsgui/CEGUI%20Mk-2/${version}
 distname            CEGUI-${version}
 
 checksums           rmd160  d776fd49a629248783b0d45b05ef8ad2804cca3b \
-                    sha256  7c3b264def08b46de749c2acaba363e907479d924612436f3bd09da2e474bb8c
+sha256  7c3b264def08b46de749c2acaba363e907479d924612436f3bd09da2e474bb8c
 
 depends_build       port:pkgconfig
 

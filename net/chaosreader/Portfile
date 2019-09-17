@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                chaosreader
 version             0.94
@@ -29,8 +31,8 @@ extract.suffix
 extract.only
 
 checksums           md5     ef307a4aa11964dc2558248847219ae9 \
-                    sha1    83277753ee1f1a3bf7cecf82415f381eeffbdd26 \
-                    rmd160  3a915f380d8ca6a6c5f24695c18c0dac9f64bba8
+sha1    83277753ee1f1a3bf7cecf82415f381eeffbdd26 \
+rmd160  3a915f380d8ca6a6c5f24695c18c0dac9f64bba8
 
 supported_archs     noarch
 

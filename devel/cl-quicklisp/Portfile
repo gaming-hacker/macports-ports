@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    ${description}. It works with your existing Common Lisp \
 homepage            https://www.quicklisp.org/beta/
 
 checksums           rmd160  b0d6482491853919566b4a6dc7e86c731f949cbe \
-                    sha256  be2c4bf2d3d630b82c6081d2c01563980464810552b343ef84f6bfe75003127e \
-                    size    13941
+sha256  be2c4bf2d3d630b82c6081d2c01563980464810552b343ef84f6bfe75003127e \
+size    13941
 
 use_configure       no
 build               {}

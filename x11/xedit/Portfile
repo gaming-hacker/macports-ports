@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xedit
 version             1.2.2
@@ -15,8 +17,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           md5     74ee6db901e81978b087b2026d8f30a0 \
-                    sha1    f37b5d0f8ec461955f0419dbb1890d8cf63d179d \
-                    rmd160  90c7f18e0a1c85fac650dad07883cb61069e6008
+sha1    f37b5d0f8ec461955f0419dbb1890d8cf63d179d \
+rmd160  90c7f18e0a1c85fac650dad07883cb61069e6008
 
 depends_build       port:pkgconfig
 

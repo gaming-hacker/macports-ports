@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ long_description    Julius is an open-source high-performance large vocabulary \
 homepage            http://julius.sourceforge.jp/
 master_sites        sourceforge_jp:julius/60273/
 checksums           ${distname}${extract.suffix} \
-                    rmd160  6c43a6f7ecf650b80c98c7f51f1869a874dc4222 \
-                    sha256  4bf77c7b91f4bb0686c375c70bd4f2077e7de7db44f60716af9f3660f65a6253
+rmd160  6c43a6f7ecf650b80c98c7f51f1869a874dc4222 \
+sha256  4bf77c7b91f4bb0686c375c70bd4f2077e7de7db44f60716af9f3660f65a6253
 
 patchfiles          patch-configure.diff \
                     patch-Makefile.in.diff
@@ -70,8 +70,8 @@ variant kit description {Add dictation kit} {
     distfiles-append    ${kit_distfile}:kit
     master_sites-append sourceforge_jp:julius/60416/:kit
     checksums-append    ${kit_distfile} \
-                        rmd160  2db607e470a8f2516a9cd0b9a1b8925523b62e9d \
-                        sha256  2ff46d1bd4d8e7690bd568d2973978081460e661085f6b4c2a0a630234a911c1
+rmd160  2db607e470a8f2516a9cd0b9a1b8925523b62e9d \
+sha256  2ff46d1bd4d8e7690bd568d2973978081460e661085f6b4c2a0a630234a911c1
 
     post-patch {
         system -W ${workpath}/${dictation_kit} "patch < ${filespath}/patch-run-dnn.sh.diff"

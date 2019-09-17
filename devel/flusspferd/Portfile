@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ depends_lib         port:spidermonkey \
 master_sites        sourceforge
 use_bzip2           yes
 checksums           md5     4a93f9b8ee2ec1fd9c50029f184ceffa \
-                    sha1    df18e259e2ee0cd75ad13130881ae7f55ae0bd27 \
-                    rmd160  3b1f7a6d16708dfcfeb1e827a2e93aaa8b45e95e
+sha1    df18e259e2ee0cd75ad13130881ae7f55ae0bd27 \
+rmd160  3b1f7a6d16708dfcfeb1e827a2e93aaa8b45e95e
 
 # spidermonkey is not universal
 universal_variant   no

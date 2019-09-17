@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    ${description}
 homepage            https://pilotmoon.com/scrollreverser/
 
 checksums           rmd160  5eda00d33ca4c34587e50f1ff2685b12381087de \
-                    sha256  9280444203032fe76836a1ec293c60988973d520da02b814de1ce1c9500acf0d \
-                    size    2512486
+sha256  9280444203032fe76836a1ec293c60988973d520da02b814de1ce1c9500acf0d \
+size    2512486
 
 patchfiles          patch-mojave-event-tapping.diff
 

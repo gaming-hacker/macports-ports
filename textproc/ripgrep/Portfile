@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -84,9 +84,9 @@ cargo.crates \
     wincolor                      1.0.1    561ed901ae465d6185fa7864d63fbd5720d0ef718366c9a4dc83cf6170d7e9ba
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  866a968b33787a18efecfdfb5305d9a7a16569bf \
-                    sha256  ef846618e0e8b8ed2d4aaa6394ddc04765253007fe54beec6923b765fa1fabb5 \
-                    size    461941
+rmd160  866a968b33787a18efecfdfb5305d9a7a16569bf \
+sha256  ef846618e0e8b8ed2d4aaa6394ddc04765253007fe54beec6923b765fa1fabb5 \
+size    461941
 
 depends_build-append \
                     port:asciidoc \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,11 +25,11 @@ distname            PyQwt-${version}
 dist_subdir         python
 
 checksums           rmd160 e4c8a63d623d974cd500e29fbc62255746ca7feb \
-                    sha256 98a8c7e0c76d07701c11dffb77793b05f071b664a8b520d6e97054a98179e70b
+sha256 98a8c7e0c76d07701c11dffb77793b05f071b664a8b520d6e97054a98179e70b
 
 # PyQwt's Python scripts are not compatible with Python 3.4+, and
 # there are many changes required to make it compatible.
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

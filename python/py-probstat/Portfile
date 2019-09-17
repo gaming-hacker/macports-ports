@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,13 +20,13 @@ master_sites        sourceforge:probstat
 distname            probstat_${version}
 extract.suffix      .tgz
 checksums           md5     7377fbd7a1c6a968dc1e7258acbac6d6 \
-                    rmd160  a38af692bce0de316d35c658a6642bb53f128757 \
-                    sha256  d4c145f1769de926d553d81c52fbc4358024219e76a243ce178c6b092264221b \
-                    size    33843
+rmd160  a38af692bce0de316d35c658a6642bb53f128757 \
+sha256  d4c145f1769de926d553d81c52fbc4358024219e76a243ce178c6b092264221b \
+size    33843
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

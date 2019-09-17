@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -20,8 +20,8 @@ long_description    A cross-platform GUI front-end to chmlib, xCHM can \
                     page and the whole book.
 
 checksums           rmd160  f22831cd74a8c2d893b0e3e8dc169f9e4437d4df \
-                    sha256  85a98f2a40d53fb43a49dfe91f0854cd511033271b3a9c45f0a5d77bc7e2c5a0 \
-                    size    981171
+sha256  85a98f2a40d53fb43a49dfe91f0854cd511033271b3a9c45f0a5d77bc7e2c5a0 \
+size    981171
 
 app.name            xCHM
 app.executable      xchm

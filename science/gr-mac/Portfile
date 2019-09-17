@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -8,7 +8,7 @@ github.setup        jmalsbury gr-mac 3ed6f0893341f48fc7fb000ca1cf679524b033a4
 version             20140919
 revision            8
 checksums           rmd160 9aab2a5b9e0a54019cc08980fe482fc126602970 \
-                    sha256 5eacd2f208034dcc8d34cfdc5dbc2715aeb2c7d35855983221f371e21215e9a3
+sha256 5eacd2f208034dcc8d34cfdc5dbc2715aeb2c7d35855983221f371e21215e9a3
 
 # allow gr-mac to work with both gnuradio and gnuradio-devel ...
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -7,7 +7,7 @@ PortGroup           python 1.0
 name                py-omniORBpy
 version             4.2.2
 revision            1
-python.versions     27 36
+python.versions 27 37
 python.default_version 36
 categories-append   devel
 license             LGPL-2.1
@@ -27,8 +27,8 @@ master_sites        sourceforge:project/omniorb/omniORBpy/omniORBpy-${version}
 distname            omniORBpy-${version}
 
 checksums           rmd160  7a162d5c1ceb130b5951b8981f215a454c326ab8 \
-                    sha256  f3686e5f85b7c7fec83a1ec97dc6874d336e24830c0e68f1e1ecbd798fa1696a \
-                    size    666047
+sha256  f3686e5f85b7c7fec83a1ec97dc6874d336e24830c0e68f1e1ecbd798fa1696a \
+size    666047
 
 use_bzip2           yes
 

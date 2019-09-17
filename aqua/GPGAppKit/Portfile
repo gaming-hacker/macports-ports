@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup xcode 1.0
 
 name		GPGAppKit
@@ -19,7 +21,7 @@ master_sites	sourceforge:macgpg
 dist_subdir	macgpg
 worksrcdir	${name}
 checksums	md5 bdf8de6fee79e1e6ffe0b8374b283e35			\
-		sha1 3b09b07e864b2600894f7eafafe2f537e0b6ce0d
+sha1 3b09b07e864b2600894f7eafafe2f537e0b6ce0d
 depends_lib	port:gpgme-objc
 xcode.build.settings	FRAMEWORK_SEARCH_PATHS=${frameworks_dir}
 xcode.destroot.type     framework

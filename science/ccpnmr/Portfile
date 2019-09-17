@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -21,14 +21,14 @@ homepage            http://www.ccpn.ac.uk/ccpn/software/ccpnmr-suite
 master_sites        http://www2.ccpn.ac.uk/download/ccpnmr/
 distname            analysis${version}
 checksums           rmd160  d87e6bfee8ab3f64790f925eee8fcf6e1efad257 \
-                    sha256  14941131033cbd4b0b13d6d4fe3f9253360a7c2ace8ece9194be00c1fe4b2903
+sha256  14941131033cbd4b0b13d6d4fe3f9253360a7c2ace8ece9194be00c1fe4b2903
 worksrcdir          ${name}
 depends_lib         port:py27-scipy port:mesa port:libGLU port:freeglut port:tk port:py27-tkinter
 patchfiles          ccpnmr.patch
 use_configure       no
 
 compilers.choose    cc cxx
-compilers.setup     -clang -g95 -gfortran
+compilers.setup     -clang  -gfortran
 compiler.blacklist  cc clang {macports-clang-3.[0-7]}
 
 set python.branch	2.7

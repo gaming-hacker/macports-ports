@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,7 +15,7 @@ long_description    Kyua is a testing framework for infrastructure software, \
 
 github.tarball_from releases
 checksums           rmd160  b83cd7e8d5a45896a7b148e822c1335218f8067c \
-                    sha256  db6e5d341d5cf7e49e50aa361243e19087a00ba33742b0855d2685c0b8e721d6
+sha256  db6e5d341d5cf7e49e50aa361243e19087a00ba33742b0855d2685c0b8e721d6
 
 platforms           darwin
 

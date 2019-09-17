@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Fey-ORM 0.47 ../by-authors/id/D/DR/DROLSKY
 platforms           darwin
 maintainers         nomaintainer
@@ -18,7 +18,7 @@ long_description    Fey::ORM builds on top of other Fey project libraries to \
                     like OO and don't want to think about the DBMS.
 
 checksums           rmd160  7951f4fb805f2b95be56ef52aa5e85ba6ecfa1b8 \
-                    sha256  bcb67e3980252e00a184d54eddf949780042932d6793c60f0b009fce0adcee63
+sha256  bcb67e3980252e00a184d54eddf949780042932d6793c60f0b009fce0adcee63
 
 if {${perl5.major} != ""} {
     depends_build-append \

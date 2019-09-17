@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ description         Client API for Matrix
 long_description    Client API library for the Matrix protocol, built on top of Boost.Asio.
 
 checksums           rmd160  28330b8f5c028792aaa5a1dbdd3738aea4854e7d \
-                    sha256  760a03fabae4cca250a5a7aa1328e7fb922186b431c1b65530ad083dcb9fda4c \
-                    size    92272
+sha256  760a03fabae4cca250a5a7aa1328e7fb922186b431c1b65530ad083dcb9fda4c \
+size    92272
 
 #C++14 was first fully supported by clang 3.4 aka apple clang 503.0.38
 compiler.blacklist-append   {clang < 503.0.38}

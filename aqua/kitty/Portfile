@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           python 1.0
 github.setup        kovidgoyal kitty 0.13.2 v
 revision            0
 checksums           rmd160  9a0f1917339008ac28a8d080c616c821544d3142 \
-                    sha256  84699311cd99989fa428326264df193f9c5e449afa1d399ece324e269c5b9726 \
-                    size    2849800
+sha256  84699311cd99989fa428326264df193f9c5e449afa1d399ece324e269c5b9726 \
+size    2849800
 
 categories          aqua
 platforms           darwin

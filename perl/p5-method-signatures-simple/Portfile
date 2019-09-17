@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Method-Signatures-Simple 1.07 ../by-authors/id/R/RH/RHESA
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  5bc5e5d18299954d6826eca4827d3a981ff6065b \
-                    sha256  c8cd7d471977cc8876044192abd98a81afddff2a26bb9a10bbe358efa371dadc
+sha256  c8cd7d471977cc8876044192abd98a81afddff2a26bb9a10bbe358efa371dadc
 
 if {${perl5.major} != ""} {
     depends_lib-append \

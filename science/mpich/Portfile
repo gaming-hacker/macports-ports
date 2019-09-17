@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -26,7 +26,7 @@ long_description    MPICH is a high-performance and widely portable\
                     (1) to provide an MPI implementation that efficiently\
                     supports different computation and communication platforms\
                     including commodity clusters (desktop systems,\
-                    shared-memory systems, multicore architectures), high-speed\
+shared-memory systems, multicore architectures), high-speed\
                     networks (10 Gigabit Ethernet, InfiniBand, Myrinet,\
                     Quadrics) and proprietary high-end computing systems (Blue\
                     Gene, Cray) and (2) to enable cutting-edge research in MPI\
@@ -37,9 +37,9 @@ homepage            http://www.mpich.org/
 master_sites        ${homepage}static/downloads/${version}
 
 checksums \
-    rmd160  0cece6eeb8c3fe9ddd16eae47be5dae45f3b7941 \
-    sha256  fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5 \
-    size    27275466
+rmd160  0cece6eeb8c3fe9ddd16eae47be5dae45f3b7941 \
+sha256  fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5 \
+size    27275466
 
 livecheck.type      regex
 livecheck.regex     {href=.([0-9.p]+)/}
@@ -68,9 +68,9 @@ if {[string first "-devel" $subport] > 0} {
     livecheck.type      none
     # livecheck.regex     {href=.([0-9.abrcp]+)/}
     checksums \
-        rmd160  0cece6eeb8c3fe9ddd16eae47be5dae45f3b7941 \
-        sha256  fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5 \
-        size    27275466
+rmd160  0cece6eeb8c3fe9ddd16eae47be5dae45f3b7941 \
+sha256  fe551ef29c8eea8978f679484441ed8bb1d943f6ad25b63c235d4b9243d551e5 \
+size    27275466
 }
 
 # As MPICH creates compiler wrappers, there are lots of

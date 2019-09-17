@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   cmake 1.0
@@ -24,7 +24,7 @@ homepage                    http://soci.sourceforge.net/
 master_sites                sourceforge:project/soci/soci/soci-${version}
 
 checksums                   rmd160  9dd5f9ac9d5364606f4fc7bc988f6f700a965361 \
-                            sha256  5ee765fdb65e50f2f5109b484417506d5550ba69b51f9a15bdce0f471e550e32
+sha256  5ee765fdb65e50f2f5109b484417506d5550ba69b51f9a15bdce0f471e550e32
 
 configure.args-append       -DWITH_BOOST=OFF \
                             -DWITH_MYSQL=OFF \

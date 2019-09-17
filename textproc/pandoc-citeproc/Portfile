@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -7,8 +7,8 @@ PortGroup           haskell_stack 1.0
 github.setup        jgm pandoc-citeproc 0.16.2
 
 checksums           rmd160  20b110a54916bc3ab2b5441d957d23f7e56ef2ea \
-                    sha256  bcc48783bbe97787b4037a37204fe343485bf90bdadce5adca6a42a966094bb0 \
-                    size    339977
+sha256  bcc48783bbe97787b4037a37204fe343485bf90bdadce5adca6a42a966094bb0 \
+size    339977
 
 categories          textproc haskell
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    Machine lets you create Docker hosts on your computer, \
 depends_lib         port:go port:docker
 
 checksums           rmd160  2b1ed8e056897f793ee3e69502081de18c6702d5 \
-                    sha256  7adefa15140c391895b33c3334a738cc861a46a148bff669e10463628afa4750 \
-                    size    2823057
+sha256  7adefa15140c391895b33c3334a738cc861a46a148bff669e10463628afa4750 \
+size    2823057
 
 use_configure       no
 build.target        build

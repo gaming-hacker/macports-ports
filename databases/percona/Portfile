@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -51,13 +51,13 @@ if {$subport eq $name} {
                         patch-libmysql-CMakeLists.txt.diff
 
     checksums           ${distname}${extract.suffix} \
-                        rmd160  904197ca867504d947eeaa7a5b1a896aa26e6471 \
-                        sha256  25d946763aabc51bd18a547fba6be109ad083700318844e80675ae567057358b \
-                        size    160116772 \
+rmd160  904197ca867504d947eeaa7a5b1a896aa26e6471 \
+sha256  25d946763aabc51bd18a547fba6be109ad083700318844e80675ae567057358b \
+size    160116772 \
                         ${boost_distname}${extract.suffix} \
-                        rmd160  2995fce4cb6d2741f47e3566626f965b7047934e \
-                        sha256  da3411ea45622579d419bfda66f45cd0f8c32a181d84adfa936f5688388995cf \
-                        size    108771741
+rmd160  2995fce4cb6d2741f47e3566626f965b7047934e \
+sha256  da3411ea45622579d419bfda66f45cd0f8c32a181d84adfa936f5688388995cf \
+size    108771741
 
     depends_lib-append  port:cyrus-sasl2 \
                         port:icu \

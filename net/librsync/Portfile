@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,7 +26,7 @@ homepage            http://librsync.sourceforge.net/
 master_sites        sourceforge
 
 checksums           sha256  6633e4605662763a03bb6388529cbdfd3b11a9ec55b8845351c1bd9a92bc41d6 \
-                    rmd160  39ca29334d0efabc0ee9e4d44abbe73a7d2fe831
+rmd160  39ca29334d0efabc0ee9e4d44abbe73a7d2fe831
 
 depends_lib         port:bzip2 \
                     port:popt \

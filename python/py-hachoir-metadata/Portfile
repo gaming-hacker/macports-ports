@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -35,9 +35,9 @@ master_sites        pypi:h/hachoir-metadata/
 distname            hachoir-metadata-${version}
 
 checksums           rmd160  9fc1fc7e35321a1839b4270b1723887a0465f2a0 \
-                    sha256  ec403f13a44e2cf3d26001f8f440cdc4329a316a4c971035944bfadacc90eb3c
+sha256  ec403f13a44e2cf3d26001f8f440cdc4329a316a4c971035944bfadacc90eb3c
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-hachoir-core \

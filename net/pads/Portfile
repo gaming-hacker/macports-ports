@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    pads
 version                 1.2
@@ -23,8 +25,8 @@ homepage                http://passive.sourceforge.net/
 master_sites            sourceforge:passive
 
 checksums               md5     2a366195c55ad6b6859c4c84ce877ee8 \
-                        sha1    fa64f3024518d6758bf6c1278c1ec65db1686069 \
-                        rmd160  7edb4e27864f70e76c2ec8d54ffdf5d70806f3d4
+sha1    fa64f3024518d6758bf6c1278c1ec65db1686069 \
+rmd160  7edb4e27864f70e76c2ec8d54ffdf5d70806f3d4
 
 depends_lib             port:libpcap \
                         port:pcre

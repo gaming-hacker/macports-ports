@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -22,7 +22,7 @@ homepage      https://www.lsc-group.phys.uwm.edu/daswg/projects/gstlal.html
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160 c7e79881fb91f02084e3631d592795175e0729bd \
-              sha256 85922c0be298607a182f18a8aa1f9680423184f8019ea01c775dc139d91764c7
+sha256 85922c0be298607a182f18a8aa1f9680423184f8019ea01c775dc139d91764c7
 
 #depends_build port:pkgconfig
 

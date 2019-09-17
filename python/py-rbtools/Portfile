@@ -1,10 +1,12 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       python 1.0
 
 name            py-rbtools
 set cap_name    RBTools
 version         0.4.3
-python.versions 27
+python.versions 27 37
 set branch      [join [lrange [split ${version} .] 0 1] .] 
 categories-append     devel
 maintainers     nomaintainer
@@ -24,7 +26,7 @@ master_sites        http://downloads.reviewboard.org/releases/${cap_name}/${bran
 distname            ${cap_name}-${version}
 
 checksums           rmd160 fc6b3e470ca7142ecb1165d02e1a04d0daca2be3 \
-                    sha256 7c35271b7d65e8ab72ae1a10b0c65e8dbf718f31391fff44034f0bc4262a0917
+sha256 7c35271b7d65e8ab72ae1a10b0c65e8dbf718f31391fff44034f0bc4262a0917
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-setuptools

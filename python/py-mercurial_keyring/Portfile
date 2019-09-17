@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ long_description \
 platforms           darwin
 
 checksums           rmd160  694e31a5b9c1832ad042105ef2181f0e986e77af \
-                    sha256  c9502d469593c584d38a9001fabff6287c5fce1154aa003cb4a57769ddeeead9 \
-                    size    20104
+sha256  c9502d469593c584d38a9001fabff6287c5fce1154aa003cb4a57769ddeeead9 \
+size    20104
 
 #not supporting 3x because py-keyring is broken on python 3.x
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_run         port:py${python.version}-keyring \

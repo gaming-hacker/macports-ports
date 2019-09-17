@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,11 +17,11 @@ long_description    ${description}
 platforms           darwin
 homepage            https://certbot.eff.org/
 
-python.versions     27 36 37
+python.versions 27 37
 
 checksums           rmd160  1fdf508644ee960a0a5c26b64d9fc1e878cffb8b \
-                    sha256  9242796712bbc57b3fcfa918c54236f3509bc063da4cc420f3fd2dee4b019b59 \
-                    size    1328397
+sha256  9242796712bbc57b3fcfa918c54236f3509bc063da4cc420f3fd2dee4b019b59 \
+size    1328397
 
 if {${name} ne ${subport}} {
     depends_build-append \

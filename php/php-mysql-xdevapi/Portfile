@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -14,15 +14,15 @@ categories              php devel
 
 homepage                https://dev.mysql.com/doc/x-devapi-userguide/en
 
-php.branches            7.1 7.2 7.3
+php.branches 7.3
 php.pecl                yes
 
 if {[vercmp ${php.branch} 7.1] >= 0} {
     version             8.0.16
     revision            1
     checksums           rmd160  751fb2f2e33c81f6e07db4d6b32ca3a0fe41f612 \
-                        sha256  5d9e835142bd0b00b1559386d4ab284bde12637a786cbaa243bf7b33410d873c \
-                        size    458642
+sha256  5d9e835142bd0b00b1559386d4ab284bde12637a786cbaa243bf7b33410d873c \
+size    458642
 }
 
 distname                mysql_xdevapi-${version}

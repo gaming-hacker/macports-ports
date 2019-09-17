@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    authforce
 version                 0.9.9
@@ -20,8 +22,8 @@ homepage                http://divineinvasion.net/authforce/
 master_sites            ${homepage}
 
 checksums               md5     a5013c123172a2b9189124afeab74bed \
-                        sha1    cf22ee24388d1399a5a55b32460d0c49d45d2e07 \
-                        rmd160  783cc5acd3d380f9ba77e907c8e39747dcd36375
+sha1    cf22ee24388d1399a5a55b32460d0c49d45d2e07 \
+rmd160  783cc5acd3d380f9ba77e907c8e39747dcd36375
 
 depends_lib             port:gettext \
                         port:curl \

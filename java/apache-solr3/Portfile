@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           deprecated 1.0
@@ -27,7 +27,7 @@ extract.suffix      .tgz
 
 master_sites        apache:lucene/solr/${version}
 checksums           rmd160  2f6b734c88979c2079658a21cc9358e12f228254 \
-                    sha256  537426dcbdd0dc82dd5bf16b48b6bcaf87cb4049c1245eea8dcb79eeaf3e7ac6
+sha256  537426dcbdd0dc82dd5bf16b48b6bcaf87cb4049c1245eea8dcb79eeaf3e7ac6
 
 # set the destination paths.
 set java_basepath   ${prefix}/share/java

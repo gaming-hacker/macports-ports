@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name			simage
 version			1.7.0
 revision                5
@@ -15,8 +17,8 @@ platforms		darwin
 maintainers		nomaintainer
 master_sites		http://ftp.coin3d.org/coin/src/all/
 checksums		md5     c479cc27fc80ffc39142318a233c6ae2 \
-			sha1    32b2bbfd7f2e7ec3591f506094c9d006e4af3921 \
-			rmd160  be5e13c0acc345a39f4686e3121222faa3cdbd51
+sha1    32b2bbfd7f2e7ec3591f506094c9d006e4af3921 \
+rmd160  be5e13c0acc345a39f4686e3121222faa3cdbd51
 
 depends_lib		port:jpeg \
 			port:libpng \

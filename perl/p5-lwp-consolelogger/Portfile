@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         LWP-ConsoleLogger 0.000042
 license             Artistic-2
 maintainers         {devans @dbevans} openmaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  afd6e71db82bef7d8248b648f32cf571b014171a \
-                    sha256  7823c5a5775c90bd5ae170e0ed03cb221612058bff60a980cb267ee90f22ec42 \
-                    size    40017
+sha256  7823c5a5775c90bd5ae170e0ed03cb221612058bff60a980cb267ee90f22ec42 \
+size    40017
 
 if {${perl5.major} != ""} {
     depends_build-append \

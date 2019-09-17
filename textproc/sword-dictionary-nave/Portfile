@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			sword-dictionary-nave
 version			1.1
@@ -25,7 +27,7 @@ master_sites	http://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/
 dist_subdir		sword/${distname}-${version}_3
 use_zip			yes
 checksums		rmd160 067902ee61284498242d7a8e37a855aab6f4c4b9 \
-				sha256 ccbb1e23b6c16f88e08eae4799a04ce6225f3673a0ab26c7c121d0e7d8606083
+sha256 ccbb1e23b6c16f88e08eae4799a04ce6225f3673a0ab26c7c121d0e7d8606083
 depends_lib		lib:libsword:sword
 use_configure	no
 build			{}

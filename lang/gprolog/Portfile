@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name		gprolog
 version		1.4.5
 
@@ -26,9 +28,9 @@ homepage	http://gprolog.inria.fr/
 master_sites	http://www.gprolog.org/
 
 checksums	\
-	rmd160  781c8fcffa180e63b821689589f5b02ab803135c \
-	sha256  bfdcf00e051e0628b4f9af9d6638d4fde6ad793401e58a5619d1cc6105618c7c \
-	size    3587361
+rmd160  781c8fcffa180e63b821689589f5b02ab803135c \
+sha256  bfdcf00e051e0628b4f9af9d6638d4fde6ad793401e58a5619d1cc6105618c7c \
+size    3587361
 
 worksrcdir 	${name}-${version}/src
 

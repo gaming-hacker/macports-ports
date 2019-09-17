@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            txt2regex
 version         0.8
@@ -23,8 +25,8 @@ master_sites    ${homepage}
 extract.suffix  .tgz
 
 checksums       md5 83bc1f95b36fe51ade8d130fab390103 \
-                sha1 367923b1dad95c68b8e46db6888135b8b8d00807 \
-                rmd160 03387e1a43b17b7a977bcd8a5beb9b48c3cff24c
+sha1 367923b1dad95c68b8e46db6888135b8b8d00807 \
+rmd160 03387e1a43b17b7a977bcd8a5beb9b48c3cff24c
 
 depends_build   port:gettext
 

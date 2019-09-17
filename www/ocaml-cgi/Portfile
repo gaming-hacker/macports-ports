@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ocaml 1.0
 
 name                ocaml-cgi
@@ -16,8 +18,8 @@ master_sites        http://www.lri.fr/~filliatr/ftp/ocaml/cgi/
 distname            cgi-${version}
 
 checksums           md5     87e1e239dfb9af15f6c8ed469dca313a \
-                    sha1    33c1640d4616fd7e83cf0a383a52740bfe518434 \
-                    rmd160  be81fa7893a63946066759e33eaa31f1a8da67e2
+sha1    33c1640d4616fd7e83cf0a383a52740bfe518434 \
+rmd160  be81fa7893a63946066759e33eaa31f1a8da67e2
 
 depends_lib         port:ocaml
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ homepage            http://v6shell.org/
 master_sites        ${homepage}src/
 
 checksums           rmd160  2ab1948d4206256bed7a923c4a75a39ab6d34768 \
-                    sha256  6123b24cd87e70cbf99f26ce5dea992abedf7e4f0c6ad964853427919b47dcc7
+sha256  6123b24cd87e70cbf99f26ce5dea992abedf7e4f0c6ad964853427919b47dcc7
 
 use_configure       no
 use_parallel_build  yes

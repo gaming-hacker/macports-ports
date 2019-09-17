@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -22,8 +22,8 @@ if {${name} eq ${subport}} {
 
     go.setup        github.com/direnv/direnv 2.20.1 v
     checksums       rmd160 8372c319e57ac8557c87b8dca32da6d874014afa \
-                    sha256 837b208c0bbee6f250f051d53cc1d89cfcd7899dad4363ade9845dd955bce425 \
-                    size   98939
+sha256 837b208c0bbee6f250f051d53cc1d89cfcd7899dad4363ade9845dd955bce425 \
+size   98939
     revision        0
 
     conflicts       direnv-devel
@@ -34,8 +34,8 @@ subport direnv-devel {
     go.setup  github.com/direnv/direnv e93e6afd5fc6bf0b432ceaca83d98c96756bdd88
     version   20190804-[string range ${github.version} 0 7]
     checksums rmd160 68cff6f4646f755c18456a05b4feac6237f12d5b \
-              sha256 63dde3823a5df9cbc9c307ad4794ccf65645227b9750fe1728e54e8b54927ade \
-              size   100413
+sha256 63dde3823a5df9cbc9c307ad4794ccf65645227b9750fe1728e54e8b54927ade \
+size   100413
     revision  0
 
     conflicts       direnv

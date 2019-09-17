@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			sendfile
 # upstream doesn't change the filename for revision changes
@@ -26,8 +28,8 @@ distname        ${name}-${up_version}
 dist_subdir		${name}/${version}
 master_sites		https://fex.belwue.de/download/
 checksums		rmd160 44f5cf03e02f1b620da12cccc62ece87f1a98873 \
-			sha256 d0b4305c38e635d67bb2e316ccaf1d3afde63e67b748a104582d0ce9cf7f2a8c \
-			size 343785
+sha256 d0b4305c38e635d67bb2e316ccaf1d3afde63e67b748a104582d0ce9cf7f2a8c \
+size 343785
 
 patchfiles		patch-makeconfig.diff patch-sendfiled.c.diff
 

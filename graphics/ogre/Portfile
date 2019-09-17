@@ -1,4 +1,4 @@
-# -*- mode: tcl; indent-tabs-mode: nil; tab-width: 4; c-basic-offset: 4 -*-
+# -*- mode: _tcl; indent-tabs-mode: nil; tab-width: 2; c-basic-offset: 2 -*-
 
 PortSystem 1.0
 PortGroup cmake 1.0
@@ -34,7 +34,7 @@ platforms           darwin
 supported_archs     x86_64
 master_sites        sourceforge:project/ogre/ogre/${branch}
 checksums           rmd160  fea467f35aaf0fd5926573de4f0348ed44191893 \
-                    sha1    41acccfbbf7297c91cda78a0ce8a053e56505f04
+sha1    41acccfbbf7297c91cda78a0ce8a053e56505f04
 distname            ogre_src_v[strsed ${version} {g/\./-/}]
 use_bzip2           yes
 

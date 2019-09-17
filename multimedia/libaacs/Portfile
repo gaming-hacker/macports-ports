@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,7 +28,7 @@ depends_lib         port:libgcrypt \
                     port:libiconv
                     
 checksums           rmd160  9913f0cab24a989329d38a370b99a3e12d55dcc6 \
-                    sha256  95c344a02c47c9753c50a5386fdfb8313f9e4e95949a5c523a452f0bcb01bbe8
+sha256  95c344a02c47c9753c50a5386fdfb8313f9e4e95949a5c523a452f0bcb01bbe8
 
 configure.perl      ${prefix}/bin/perl5
 

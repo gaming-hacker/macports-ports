@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -35,9 +35,9 @@ if {${subport} eq ${name}} {
     revision 1
 
     checksums \
-        rmd160  3444fe1aa647be9ab2e6ea1638e27ea97c3f6688 \
-        sha256  fd6cb3a87f8c1a233be17b94c74799e6241d50fc5efd4df75c7a4b9cf4e25ea6 \
-        size    18412067
+rmd160  3444fe1aa647be9ab2e6ea1638e27ea97c3f6688 \
+sha256  fd6cb3a87f8c1a233be17b94c74799e6241d50fc5efd4df75c7a4b9cf4e25ea6 \
+size    18412067
 
     depends_lib-append \
         port:ilmbase \
@@ -72,8 +72,8 @@ subport ilmbase {
     revision    1
     distname    ilmbase-${version}
     checksums   rmd160  bd60ebfdc114e186db87f8c8b92c4f031b17e0d9 \
-                sha256  456978d1a978a5f823c7c675f3f36b0ae14dba36638aeaa3c4b0e784f12a3862 \
-                size    595490
+sha256  456978d1a978a5f823c7c675f3f36b0ae14dba36638aeaa3c4b0e784f12a3862 \
+size    595490
 
     # Bitrotted ucontext usage is buggy, don't bother with it.
     patchfiles-append patch-configure.diff
@@ -87,8 +87,8 @@ foreach pver ${python_versions} {
         revision    3
         distname    pyilmbase-${version}
         checksums   rmd160  127329978f2fd5793a267d1c7c46d5514d1d46b7 \
-                    sha256  9c898bb16e7bc916c82bebdf32c343c0f2878fc3eacbafa49937e78f2079a425 \
-                    size    524975
+sha256  9c898bb16e7bc916c82bebdf32c343c0f2878fc3eacbafa49937e78f2079a425 \
+size    524975
 
         # so long as boost can only be installed with one version of python at a time,
         #    conflict with all other pyilmbase ports
@@ -119,8 +119,8 @@ subport openexr_viewers {
     revision    1
     distname    openexr_viewers-${version}
     checksums   rmd160  cf8cebf8075959db7539cc1f2858b1177b9b8c3e \
-                sha256  9b8a6abebfda17586ef7e5fea9ba8e87a3cc688676681ef306b445c3f4034175 \
-                size    532154
+sha256  9b8a6abebfda17586ef7e5fea9ba8e87a3cc688676681ef306b445c3f4034175 \
+size    532154
 
     depends_lib-append  \
         port:openexr                \

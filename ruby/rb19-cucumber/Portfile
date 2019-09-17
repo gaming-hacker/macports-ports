@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          cucumber 0.7.3 gem {} rubygems ruby19
@@ -15,8 +17,8 @@ homepage            http://cukes.info/
 categories-append   www
 platforms           darwin
 checksums           md5     ab972fd0590391d04a243b2b8744196b \
-                    sha1    0057116d831a133bebb4e4e511c97d4bc67c77e0 \
-                    rmd160  14724fa8b2436cc2381bda9ad433f60942449806
+sha1    0057116d831a133bebb4e4e511c97d4bc67c77e0 \
+rmd160  14724fa8b2436cc2381bda9ad433f60942449806
 
 depends_run-append  port:rb19-json \
                     port:rb19-diff-lcs \

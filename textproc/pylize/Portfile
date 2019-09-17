@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name			pylize
@@ -24,7 +26,7 @@ distname		pylize-${version}
 checksums		md5 ab88ef521602c826390fe919b6bc572e
 use_bzip2		yes
 
-python.default_version 27
+python.default_version 37
 
 depends_run		port:py${python.version}-htmlgen port:py${python.version}-empy
 

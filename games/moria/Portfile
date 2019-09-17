@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,7 +17,7 @@ homepage            http://www-math.bgsu.edu/~grabine/moria.html
 master_sites        http://www.nic.funet.fi/pub/unix/games/${name}/source/
 
 checksums           rmd160  1556c76f151d7ea29da79071a57398f63d0b138b \
-                    sha256  fffab65703c77058a1aadd8647cc1f44bd4349065af0b334702986f36007b2ed
+sha256  fffab65703c77058a1aadd8647cc1f44bd4349065af0b334702986f36007b2ed
 
 extract.suffix      .tar.Z
 distname            um${version}

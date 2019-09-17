@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,14 +25,14 @@ distname            storm-${version}
 use_bzip2           yes
 
 checksums           rmd160  b6ab49b5ea1977d601bc037d1eb3a89749685527 \
-                    sha256  1fe016c9ec40520eafc3cf359f1ec2b7fa86be91e45c9279bfb0ea3b06390a82 \
-                    size    213069
+sha256  1fe016c9ec40520eafc3cf359f1ec2b7fa86be91e45c9279bfb0ea3b06390a82 \
+size    213069
 
 patchfiles-append   patch-setup.py.diff
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

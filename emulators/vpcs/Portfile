@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ homepage            https://wiki.freecode.com.cn/doku.php?id=wiki:vpcs
 master_sites        https://sourceforge.net/code-snapshots/svn/v/vp/vpcs/code/
 
 checksums           rmd160   5f633b911a6c0c75b308c1d5e8d12932930ba0c8 \
-                    sha256   36182e14866d181e01a7f525cfad6e42f0a8f50f1c6dbce74e91472fd7d41411 \
-                    size     171386
+sha256   36182e14866d181e01a7f525cfad6e42f0a8f50f1c6dbce74e91472fd7d41411 \
+size     171386
 
 use_zip             yes
 set release         126

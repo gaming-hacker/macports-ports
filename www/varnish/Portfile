@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem            1.0
 
@@ -19,7 +19,7 @@ master_sites          ${homepage}_downloads/
 extract.suffix        .tgz
 
 checksums             rmd160  b4bd7bae346c5ae187dfbad646d0c1f9087d70ae \
-                      sha256  22d884aad87e585ce5f3b4a6d33442e3a855162f27e48358c7c93af1b5f2fc87
+sha256  22d884aad87e585ce5f3b4a6d33442e3a855162f27e48358c7c93af1b5f2fc87
 
 depends_build         port:pkgconfig \
                       port:py27-docutils

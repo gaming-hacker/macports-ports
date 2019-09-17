@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Gnome2-VFS 1.083
 license             LGPL-2.1+
 maintainers         nomaintainer
@@ -17,7 +17,7 @@ long_description    Perl bindings to the 2.x series of the Gtk+ graphical user i
 platforms           darwin
 
 checksums           rmd160  b1d017ccdc4e87587794496a00948b75f9d8b8d6 \
-                    sha256  eca974669df4e7f21b4fcedb96c8a328422369c68b8c2cd99b9ce9cc5d7a7979
+sha256  eca974669df4e7f21b4fcedb96c8a328422369c68b8c2cd99b9ce9cc5d7a7979
 
 if {${perl5.major} != ""} {
     depends_lib-append \

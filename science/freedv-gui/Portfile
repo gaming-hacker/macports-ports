@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ long_description    ${description}
 github.setup        drowe67 freedv-gui 05c03348994849008fefc8fbbbe0069b03da8d3b
 version             20190821
 checksums           rmd160  8a19ecbac2f94f9540b0d535af3f6dcddc211fd3 \
-                    sha256  7b1b168e2fb9fc3581513088f01179dcb021960857a7bed1834d979ee749f648 \
-                    size    5793777
+sha256  7b1b168e2fb9fc3581513088f01179dcb021960857a7bed1834d979ee749f648 \
+size    5793777
 revision            0
 
 depends_build-append \

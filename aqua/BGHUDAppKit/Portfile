@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup  github 1.0
 PortGroup  xcode 1.0
 
@@ -13,7 +15,7 @@ description         Aqua HUD window framework
 long_description    BGHUDAppKit is a small framework to assist GUI apps in designing HUD windows
 
 checksums           rmd160  3a26a8497eff103774e86bcd04c1c61b2601faa6 \
-                    sha256  e0f89ecb2692c53a3144ce6f2fcd8b9c2cb814d52a16ed2cc8f5b15b7e87ea52
+sha256  e0f89ecb2692c53a3144ce6f2fcd8b9c2cb814d52a16ed2cc8f5b15b7e87ea52
 
 xcode.destroot.type framework
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ distname            ${name}_${version}
 worksrcdir          ${name}-${branch}
 
 checksums           rmd160  382b7e3f511a1a40af7fc1ece7a2cac27e0409b3 \
-                    sha256  ef7a7ebf3963922ebc97424a6b2371b3761581f3fd07ecfdbaf8a36a8df63d59 \
-                    size    33002504
+sha256  ef7a7ebf3963922ebc97424a6b2371b3761581f3fd07ecfdbaf8a36a8df63d59 \
+size    33002504
 
 depends_lib         path:lib/libssl.dylib:openssl
 

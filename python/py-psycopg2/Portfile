@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,16 +19,16 @@ long_description    Psycopg2 is a postgresql database adapter for python. \
                     designed for heavily multi-threaded applications \
                     featuring connection pooling.
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 homepage            http://initd.org/psycopg/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           md5     bc00aa77595c03af7d68876ceb74ef77 \
-                    rmd160  f03a3ec9775d92d65b43c6a651570a4d38b45f0a \
-                    sha256  897a6e838319b4bf648a574afb6cabcb17d0488f8c7195100d48d872419f4457 \
-                    size    377333
+rmd160  f03a3ec9775d92d65b43c6a651570a4d38b45f0a \
+sha256  897a6e838319b4bf648a574afb6cabcb17d0488f8c7195100d48d872419f4457 \
+size    377333
 
 if {${name} ne ${subport}} {
     depends_lib-append  path:lib/libssl.dylib:openssl port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -21,7 +21,7 @@ homepage            http://www.indexdata.dk/yazproxy/
 master_sites        http://ftp.indexdata.dk/pub/yazproxy/
 
 checksums           rmd160  cfb50ee8a6d988f14fe77c4b913f9f0fec7d4b15 \
-                    sha256  e4e9e121a6d9752561a33bcd440e43db17cf18cafa35b8f5481b81ef773a1bd0
+sha256  e4e9e121a6d9752561a33bcd440e43db17cf18cafa35b8f5481b81ef773a1bd0
 
 depends_build       port:boost
 

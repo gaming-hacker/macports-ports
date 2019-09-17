@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -22,8 +22,8 @@ master_sites        sourceforge:project/activewire-osx/activewire-osx/${version}
 distname            aw_${version}
 
 checksums           rmd160  11740b6f835a2ebfbaea14f12dcec921a8a9a03b \
-                    sha256  1af16eaa1a0b7b70d75cad5e21f023e0efa5aba928bf106d25bacbac8eaa4a61 \
-                    size    1126950
+sha256  1af16eaa1a0b7b70d75cad5e21f023e0efa5aba928bf106d25bacbac8eaa4a61 \
+size    1126950
 
 worksrcdir          ${distname}/Source/
 use_dmg             yes

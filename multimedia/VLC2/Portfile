@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -64,7 +64,7 @@ if {(${subport} eq ${name}) || (${subport} eq "lib${name}")} {
     use_xz              yes
 
     checksums           rmd160  4434e91384520fe1fe129a52f5d66d61e4404a9a \
-                        sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
+sha256  9bf046848fb56d93518881b39099b8288ee005d5ba0ddf705b6f6643b8d562ec
 
     depends_build       port:pkgconfig
 

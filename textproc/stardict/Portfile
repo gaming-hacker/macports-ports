@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		stardict
 version		3.0.4
@@ -20,7 +22,7 @@ master_sites	googlecode:stardict-3
 use_bzip2	yes
 
 checksums	rmd160  78f20b2092006951f35497b804b176b9c2a15195 \
-		sha256  c38b9d953fe0b2380a8aed4c98cb121ad83aff91a32af3c665198d8268b1dce8
+sha256  c38b9d953fe0b2380a8aed4c98cb121ad83aff91a32af3c665198d8268b1dce8
 
 depends_build	port:pkgconfig \
 		port:intltool \

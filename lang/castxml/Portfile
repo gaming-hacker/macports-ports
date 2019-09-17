@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ description         CastXML is a C-family abstract syntax tree XML output tool.
 long_description    ${description}
 
 checksums           rmd160  32a444fcf649bbbd3757ff58ea16b605e158a261 \
-                    sha256  669b2a06f04ed2fb3a3dc41eb8e68051d439e4e01a665153b8f424d084199725 \
-                    size    94839
+sha256  669b2a06f04ed2fb3a3dc41eb8e68051d439e4e01a665153b8f424d084199725 \
+size    94839
 
 depends_lib-append  port:zlib \
                     port:libffi \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		shntool
 version		3.0.10
@@ -14,9 +16,9 @@ homepage	http://www.etree.org/shnutils/shntool/
 platforms	darwin
 master_sites	${homepage}dist/src/
 checksums \
-	md5 5d41f8f42c3c15e3145a7a43539c3eae \
-	sha1 7a2bc8801e180cf582f0e39775603582e35d50d2 \
-	rmd160 3c41c5da4ee11127dae02609052d1f1a355aef4a
+md5 5d41f8f42c3c15e3145a7a43539c3eae \
+sha1 7a2bc8801e180cf582f0e39775603582e35d50d2 \
+rmd160 3c41c5da4ee11127dae02609052d1f1a355aef4a
 	
 depends_lib	\
 	port:expat \

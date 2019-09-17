@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ platforms           darwin
 homepage            http://www.plumed.org/
 
 checksums           rmd160  d1c138a471707bb917f9ffbb83f3b6c5f0b68462 \
-                    sha256  4092bdf72cdcc53012844b7a3a708ec960000267a627c28320810554d26f19d9 \
-                    size    69331613
+sha256  4092bdf72cdcc53012844b7a3a708ec960000267a627c28320810554d26f19d9 \
+size    69331613
 
 # Disable additional features.
 # --disable-doc:          Do not create documentation, and avoid searching for Doxygen.
@@ -117,8 +117,8 @@ subport plumed-devel {
     long_description    ${long_description} (development version)
     conflicts plumed
     checksums           rmd160  9b980081a6cb733769d8acfc52f44810698634e6 \
-                        sha256  018681903daae08b45eb836209165dfbf443edff49984c591a64a9602feb278d \
-                        size    72598389
+sha256  018681903daae08b45eb836209165dfbf443edff49984c591a64a9602feb278d \
+size    72598389
 }
 
 # Allow running tests from MacPorts

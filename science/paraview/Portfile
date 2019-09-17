@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -36,8 +36,8 @@ distname            ParaView-v${version}
 use_xz              yes
 
 checksums           sha256  50ef01f54db6358b402e50d1460ef47c04d675bf26f250c6937737169f1e6612 \
-                    rmd160  623a29d65d39d65644605bb40943f22df3918fff \
-                    size    38756076
+rmd160  623a29d65d39d65644605bb40943f22df3918fff \
+size    38756076
 
 # Fix the icon size of the render area. This should be already included
 # version > 5.6.0. So when you bump the version, you should be able to remove
@@ -141,7 +141,7 @@ pre-configure {
 
 # Some cmake tests will fail with "error: unrecognized option '-arch'" from gcc 4.6 and earlier.
 compilers.choose    fc
-mpi.setup           require -gcc44 -gcc45 -gcc46
+mpi.setup           require   
 mpi.enforce_variant icet
 
 if {![mpi_variant_isset]} {

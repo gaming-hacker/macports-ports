@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			xotcl
 version			1.6.7
@@ -31,13 +33,13 @@ distfiles               ${distname}.tar.gz:xotcl \
                         tcl${tclv}-src.tar.gz:tcl
 
 checksums               ${distname}.tar.gz \
-                        md5     ff136c3237eb11fad257576ee02579db \
-                        sha1    230f83e192e0666785e52c037130bd8caa9cb9e7 \
-                        rmd160  cbf2f0f1476c09425a69e12d109eb2f8d0ac2815 \
+md5     ff136c3237eb11fad257576ee02579db \
+sha1    230f83e192e0666785e52c037130bd8caa9cb9e7 \
+rmd160  cbf2f0f1476c09425a69e12d109eb2f8d0ac2815 \
                         tcl${tclv}-src.tar.gz \
-                        md5     573aa5fe678e9185ef2b3c56b24658d3 \
-                        sha1    fc57fc08ab113740a702bb67d4f350f8ec85ef58 \
-                        rmd160  656d100ad89d3c63596159b43c36f0fbd0507aca
+md5     573aa5fe678e9185ef2b3c56b24658d3 \
+sha1    fc57fc08ab113740a702bb67d4f350f8ec85ef58 \
+rmd160  656d100ad89d3c63596159b43c36f0fbd0507aca
 
 depends_lib		port:tcl \
 			port:tk

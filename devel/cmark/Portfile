@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ long_description    shared library (libcmark) with functions for parsing CommonM
                     or an XML representation of the AST.
 
 checksums           rmd160  1b9a087d89c48aecea2ef7277762e51035c7ee33 \
-                    sha256  13d6dc771178308453901abf7fe661fa12a28863a1050a55ec1e8eaecb112115 \
-                    size    234593
+sha256  13d6dc771178308453901abf7fe661fa12a28863a1050a55ec1e8eaecb112115 \
+size    234593
 
 configure.args-append \
                     -DCMARK_TESTS=OFF \

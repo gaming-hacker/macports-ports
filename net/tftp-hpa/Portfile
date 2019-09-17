@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                tftp-hpa
 version             5.2
@@ -17,7 +19,7 @@ master_sites        ${homepage}/tftp-hpa/
 use_bzip2           yes
 
 checksums           rmd160  dc3935af75f2919c55cac6c04b61488af425918c \
-                    sha256  0a9f88d4c1c02687b4853b02ab5dd8779d4de4ffdb9b2e5c9332841304d1a269
+sha256  0a9f88d4c1c02687b4853b02ab5dd8779d4de4ffdb9b2e5c9332841304d1a269
 
 patchfiles          patch-tftpd-recvfrom.c.diff
 

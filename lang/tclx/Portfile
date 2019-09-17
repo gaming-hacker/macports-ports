@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -27,11 +27,11 @@ master_sites            sourceforge \
 distfiles               ${distname}.tar.bz2 \
                         tcl${tclv}-src.tar.gz:tcl
 checksums               ${distname}.tar.bz2 \
-                        rmd160  253c71aea7ad85ac364d9bda03556628d2e545c6 \
-                        sha256  a9b41f606ec6c1268b9c78512e6e1cb533bd9ae3e786e650d111fc16ffe758ec \
+rmd160  253c71aea7ad85ac364d9bda03556628d2e545c6 \
+sha256  a9b41f606ec6c1268b9c78512e6e1cb533bd9ae3e786e650d111fc16ffe758ec \
                         tcl${tclv}-src.tar.gz \
-                        rmd160  574bffdf3e390cf6460ab4a9d4b59db0e58f2998 \
-                        sha256  86f7ae5f581dd0904d04415637ab3aef5a50986c1b6d04c340e2b1b0258da9c4
+rmd160  574bffdf3e390cf6460ab4a9d4b59db0e58f2998 \
+sha256  86f7ae5f581dd0904d04415637ab3aef5a50986c1b6d04c340e2b1b0258da9c4
 
 use_bzip2               yes
 extract.only            ${distname}.tar.bz2

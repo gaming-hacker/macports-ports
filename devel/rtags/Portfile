@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -12,8 +12,8 @@ platforms           darwin
 license             GPL-3+
 
 checksums           rmd160  156ccfa3adbb7e94368a1b52b9058a7aa7082db3 \
-                    sha256  8cc4e1a713275510cbe1f5f413d3e6a3d943e12b01ede573d1dba9b3be649a75 \
-                    size    1606535
+sha256  8cc4e1a713275510cbe1f5f413d3e6a3d943e12b01ede573d1dba9b3be649a75 \
+size    1606535
 
 maintainers         nomaintainer
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2
 # vim: set fileencoding=utf-8 tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem					1.0
@@ -32,21 +32,21 @@ extract.only				${prog}												\
 							${appbundles}
 
 checksums					${prog}												\
-							md5     354f8756a7f33cf5b7a56377d1759e41			\
-							sha1    d81d57ae8cc14169521e3738d3ac1b2e18a95080	\
-							rmd160  8644aec61b8f9084d7ced672236d779bee1fedcc	\
+md5     354f8756a7f33cf5b7a56377d1759e41			\
+sha1    d81d57ae8cc14169521e3738d3ac1b2e18a95080	\
+rmd160  8644aec61b8f9084d7ced672236d779bee1fedcc	\
 							${rom}												\
-							md5     4dc3b6b4313e9596c4d474785a37b94d			\
-							sha1    e65923fd3a4845c1c72d1677db0fda969187eb42	\
-							rmd160  e3960898223dd4d1b9a9cc5cfb1251bd726ea5a7	\
+md5     4dc3b6b4313e9596c4d474785a37b94d			\
+sha1    e65923fd3a4845c1c72d1677db0fda969187eb42	\
+rmd160  e3960898223dd4d1b9a9cc5cfb1251bd726ea5a7	\
 							${share}											\
-							md5     ed8858c0588f9cdf0fc0f9115192b2b2			\
-							sha1    270ca8cccb0295bfe3189530687234c1368ec189	\
-							rmd160  d8ef85ece43ac90aa966eb0bb3e811c02f0db64d	\
+md5     ed8858c0588f9cdf0fc0f9115192b2b2			\
+sha1    270ca8cccb0295bfe3189530687234c1368ec189	\
+rmd160  d8ef85ece43ac90aa966eb0bb3e811c02f0db64d	\
 							${appbundles}										\
-							md5     b1328ea5cacb72745fbbb93823a1d2c5			\
-							sha1    b9ffbdfc14810fc211250b716f318a30a6adf632	\
-							rmd160  f6a98b558f01e4c4fd078c106e6862436094fa3d
+md5     b1328ea5cacb72745fbbb93823a1d2c5			\
+sha1    b9ffbdfc14810fc211250b716f318a30a6adf632	\
+rmd160  f6a98b558f01e4c4fd078c106e6862436094fa3d
 
 depends_lib					port:libsdl											\
 							port:libpng											\

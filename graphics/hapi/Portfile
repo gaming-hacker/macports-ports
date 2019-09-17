@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ homepage            http://www.h3dapi.org
 master_sites        ftp://www.h3dapi.org/pub/releases/source/
 
 checksums           rmd160  1b444e5902a1b94ff84837ea452c4cdb57789e17 \
-                    sha256  dff7f1eed39b7de87032fccdac6be4597edfac54e13e02de1cfdea633246bf71 \
-                    size    420758
+sha256  dff7f1eed39b7de87032fccdac6be4597edfac54e13e02de1cfdea633246bf71 \
+size    420758
 
 depends_lib         port:h3dutil
 

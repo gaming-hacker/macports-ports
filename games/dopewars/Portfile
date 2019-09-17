@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		dopewars
 version		1.5.12
@@ -17,8 +19,8 @@ long_description The idea of dopewars is to deal drugs on the streets \
 master_sites	sourceforge:project/dopewars/dopewars/${version}
 
 checksums	md5 debf749de9053dc2fb2e74c37ae06206 \
-	sha1 ad46a38e225680e591b078eeec563d47b96684bc \
-	rmd160 66c86bceb67657a9fb2ef7944b1a069dafab8ae0
+sha1 ad46a38e225680e591b078eeec563d47b96684bc \
+rmd160 66c86bceb67657a9fb2ef7944b1a069dafab8ae0
 
 depends_build	port:pkgconfig
 depends_lib	port:gtk2 port:esound

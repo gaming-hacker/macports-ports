@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,7 +20,7 @@ long_description    Compiled routines for basic but fast image manipulation in \
 homepage            http://maumae.net/yorick/doc/plugins.php
 
 checksums           rmd160  47502d8ef7363cc20648932e3a8d50f03c91cc5c \
-                    sha256  d10d3323a777f176991a7405ffb4b76d8b5fffbe8c37fcd8031b03e7ec9700f3
+sha256  d10d3323a777f176991a7405ffb4b76d8b5fffbe8c37fcd8031b03e7ec9700f3
 
 depends_lib         port:yorick
 

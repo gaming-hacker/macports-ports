@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup ocaml 1.0
 
 name                ocaml-sqlite3
@@ -17,7 +19,7 @@ master_sites        https://bitbucket.org/mmottl/sqlite3-ocaml/downloads/
 distname            sqlite3-ocaml-${version}
 
 checksums           rmd160  fdcab2e88ac91e19fee2c23f38132bef372a4860 \
-                    sha256  51ccb4c7a240eb40652c59e1770cfe1827dfa1eb926c969d19ff414aef4e80a1
+sha256  51ccb4c7a240eb40652c59e1770cfe1827dfa1eb926c969d19ff414aef4e80a1
 
 depends_build       port:pkgconfig
 depends_lib         port:ocaml \

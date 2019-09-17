@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                sessreg
 version             1.1.2
@@ -16,9 +18,9 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           sha1    169c1ff9fb152b4b4ca0cfbd3e1aee33af042016 \
-                    rmd160  089bf648ed9c7cdfd488d2161ff0be562f33ab7f \
-                    sha256  dfcb9e954273ace63879aec053c7880466f8755752a35aa9ced3fa5f04fd2c33 \
-                    size    137612
+rmd160  089bf648ed9c7cdfd488d2161ff0be562f33ab7f \
+sha256  dfcb9e954273ace63879aec053c7880466f8755752a35aa9ced3fa5f04fd2c33 \
+size    137612
 
 depends_build       port:pkgconfig port:xorg-xorgproto
 

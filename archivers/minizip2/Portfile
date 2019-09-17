@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        nmoinvaz minizip 2.8.9
 revision            0
 checksums           rmd160  f4c497465201e507c19c9fcc2ebeb3928393896d \
-                    sha256  b2f8fb6fc5616fae200a97bf6cd11b80dd5bd8c129b5f27c89b7bee7da04c267 \
-                    size    752494
+sha256  b2f8fb6fc5616fae200a97bf6cd11b80dd5bd8c129b5f27c89b7bee7da04c267 \
+size    752494
 
 name                minizip2
 categories          archivers

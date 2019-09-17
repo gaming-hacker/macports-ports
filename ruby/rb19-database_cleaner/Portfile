@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          database_cleaner 0.5.2 gem {} rubygems ruby19
@@ -11,5 +13,5 @@ homepage            https://github.com/bmabey/database_cleaner
 license             MIT
 platforms           darwin
 checksums           md5     00d05eab13233135cbc71f125d171d42 \
-                    sha1    47c4dd2d68ccd3322cbed84ed326602902b603c3 \
-                    rmd160  d12c1d1a1472222be41e7e78d27fe38a876fd19f
+sha1    47c4dd2d68ccd3322cbed84ed326602902b603c3 \
+rmd160  d12c1d1a1472222be41e7e78d27fe38a876fd19f

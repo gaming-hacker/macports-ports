@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,5 +19,5 @@ homepage            https://nih.at/cftp/
 master_sites        https://nih.at/cftp/
 
 checksums           rmd160  9dfd1d3a03efd5d724bc0ed4c0dafbe19c47670d \
-                    sha256  70a353cfd5a912350405e2ea8c1c1925931c07e58103ae64c589b05b642b8881
+sha256  70a353cfd5a912350405e2ea8c1c1925931c07e58103ae64c589b05b642b8881
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name        libsieve
 version     2.2.5
@@ -23,8 +25,8 @@ master_sites    sourceforge
 patchfiles  patch-src__sv_parser__addr.c.diff patch-src__sv_parser__sieve.c.diff
 
 checksums   md5 f0adbfa59254d07611d907f78aaa20cd \
-            sha1 27816679f4d8ecbaf8a3504cc47aad7015e7719b \
-            rmd160 bcb4912008592a7372bacc336575f8416a105acd
+sha1 27816679f4d8ecbaf8a3504cc47aad7015e7719b \
+rmd160 bcb4912008592a7372bacc336575f8416a105acd
 
 configure.dir   ${worksrcpath}/src
 build.dir       ${worksrcpath}/src

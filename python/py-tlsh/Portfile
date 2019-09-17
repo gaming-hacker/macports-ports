@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,13 +15,13 @@ long_description    TLSH is a fuzzy matching library. Given a byte stream with \
                     which can be used for similarity comparisons.
 
 checksums           rmd160  95162351a0d04d6922bea9812acbe84a310ff7de \
-                    sha256  e36a4e8ea0670e8561af72be520d82c7eb38fd86f751dd5a5fa90b9df91d7519 \
-                    size    2763206
+sha256  e36a4e8ea0670e8561af72be520d82c7eb38fd86f751dd5a5fa90b9df91d7519 \
+size    2763206
 
 dist_subdir         tlsh
 worksrcdir          ${distname}/py_ext
 
-python.versions     37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

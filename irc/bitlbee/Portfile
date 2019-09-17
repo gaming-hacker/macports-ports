@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            https://www.bitlbee.org/
 master_sites        https://get.bitlbee.org/src/
 
 checksums           rmd160  f7c3c6154d3c28cb1e48ccb5f86dbb9141795cea \
-                    sha256  9636d7fd89ebb3756c13a9a3387736ca6d56ccf66ec0580d512f07b21db0fa69
+sha256  9636d7fd89ebb3756c13a9a3387736ca6d56ccf66ec0580d512f07b21db0fa69
 
 depends_build       port:pkgconfig
 depends_lib         port:gettext \

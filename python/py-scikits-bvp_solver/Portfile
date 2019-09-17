@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -27,11 +27,11 @@ distname                scikits.bvp_solver-${version}
 
 # md5 checksum comes from the source site
 checksums               md5     894a566a3080ea6fe0e0b0c17fc628a7 \
-                        rmd160  903e53a0b4bf40d864abbdb83dc5d008a3e1c874 \
-                        sha256  3de71a39d97cdd61fea5693f7dd01b3820310d755f8e6669a3694b01eb787f1d
+rmd160  903e53a0b4bf40d864abbdb83dc5d008a3e1c874 \
+sha256  3de71a39d97cdd61fea5693f7dd01b3820310d755f8e6669a3694b01eb787f1d
 
 # Only tested on python 2.7.
-python.versions         27
+python.versions 27 37
 
 python.add_archflags    no
 universal_variant       no

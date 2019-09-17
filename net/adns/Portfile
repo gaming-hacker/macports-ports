@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             adns
 version          1.5.1
@@ -16,7 +18,7 @@ license          GPL-3
 master_sites     ${homepage}ftp/ \
                  ftp://ftp.chiark.greenend.org.uk/users/ian/adns/
 checksums        rmd160  1247903d0fb02f34ea402a75f46c34e8a8190f68 \
-                 sha256  5b1026f18b8274be869245ed63427bf8ddac0739c67be12c4a769ac948824eeb
+sha256  5b1026f18b8274be869245ed63427bf8ddac0739c67be12c4a769ac948824eeb
 
 patchfiles       patch-configure \
                  patch-client__Makefile.in \

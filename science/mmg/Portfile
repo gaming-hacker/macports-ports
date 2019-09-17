@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -16,8 +16,8 @@ description             An open source software for simplicial remeshing
 long_description        mmg is an open source software for bidimensional and tridimensional surface and volume remeshing
 
 checksums               rmd160  613d890885647d8102bd8071b2c0e606be6d4ba4 \
-                        sha256  fbaa64d0219e1bc12eabd368bbae5faf78083320518631ad6946fb10c44fa35a \
-                        size    10213100
+sha256  fbaa64d0219e1bc12eabd368bbae5faf78083320518631ad6946fb10c44fa35a \
+size    10213100
 
 depends_lib-append      port:zlib \
                         port:scotch

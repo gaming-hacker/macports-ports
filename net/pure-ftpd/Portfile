@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ master_sites        https://download.pureftpd.org/pub/pure-ftpd/releases/ \
 use_bzip2           yes
 
 checksums           rmd160  2ac1e3e2518b4497f0248a79917b7823a1b8a60d \
-                    sha256  9e733f366d8d600004bb171cf2ec75dad0da4b922b7102ee4b3e18824966192d
+sha256  9e733f366d8d600004bb171cf2ec75dad0da4b922b7102ee4b3e18824966192d
 
 livecheck.type      regex
 livecheck.url       https://download.pureftpd.org/pub/pure-ftpd/releases/

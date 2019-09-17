@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -28,14 +28,14 @@ distfiles-append    argparser-${argparser_commit}.tar.gz:argparser \
                     coreparse-${coreparse_commit}.tar.gz:coreparse
 
 checksums           ${name}-${version}.tar.gz \
-                    rmd160  d044c322651023bd87c1e2dc29b90d97d7207a0e \
-                    sha256  4f6e815f86c4f7f63fe82118f5e52acb54ef61c40bd1195493715c9fde267f90 \
+rmd160  d044c322651023bd87c1e2dc29b90d97d7207a0e \
+sha256  4f6e815f86c4f7f63fe82118f5e52acb54ef61c40bd1195493715c9fde267f90 \
                     argparser-${argparser_commit}.tar.gz \
-                    rmd160  dbb60b1d0194d264c477fedc19bfe894b5dbd1d3 \
-                    sha256  cd4272e8a8cad6d8080c6ddf964b4c469337fdf61bb06cc0aed6de1daa7bd91f \
+rmd160  dbb60b1d0194d264c477fedc19bfe894b5dbd1d3 \
+sha256  cd4272e8a8cad6d8080c6ddf964b4c469337fdf61bb06cc0aed6de1daa7bd91f \
                     coreparse-${coreparse_commit}.tar.gz \
-                    rmd160  a0e7cd15c6c927d2ead9f997553044c060a52023 \
-                    sha256  3c468346405aa65f34b275fd23a94b600fbd60111ded67ec5d64ddfc462ef76e
+rmd160  a0e7cd15c6c927d2ead9f997553044c060a52023 \
+sha256  3c468346405aa65f34b275fd23a94b600fbd60111ded67ec5d64ddfc462ef76e
 
 post-extract {
     # Replace empty directories with the real library sources

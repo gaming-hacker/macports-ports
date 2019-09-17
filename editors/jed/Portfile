@@ -1,4 +1,6 @@
-PortSystem                  1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                        jed
 version                     0.99-19
@@ -23,8 +25,8 @@ master_sites                ftp://space.mit.edu/pub/davis/jed/v0.99/ \
 use_bzip2                   yes
 
 checksums                   md5     c9b2f58a3defc6f61faa1ce7d6d629ea \
-                            sha1    7783ac9035c7221575e74b544902151309d0d0ef \
-                            rmd160  c6182d918322c30922f7590c7e8b15a1da0ba22f
+sha1    7783ac9035c7221575e74b544902151309d0d0ef \
+rmd160  c6182d918322c30922f7590c7e8b15a1da0ba22f
 
 depends_lib                 port:slang2
 

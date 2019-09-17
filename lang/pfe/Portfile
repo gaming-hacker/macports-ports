@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		pfe
 version		0.33.71
@@ -15,7 +17,7 @@ master_sites	sourceforge
 use_bzip2	yes
 
 checksums	sha1    2e61bbf550767793b20bffc544b625fc4e889f44 \
-		rmd160  5bfdc5561c281f5d506151ec17552b03e6a411ab
+rmd160  5bfdc5561c281f5d506151ec17552b03e6a411ab
 
 configure.args	--with-sbr-static --without-testmodule
 

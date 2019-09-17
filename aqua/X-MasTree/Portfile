@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -21,7 +21,7 @@ distname            ${name}Source
 use_zip             yes
 
 checksums           sha1    25af00c8b80220d50b49bf33f9003e24d2ea4103 \
-                    rmd160  a3ff3650c9cd8bb73bcd0b85ebcc5f866b5c2067
+rmd160  a3ff3650c9cd8bb73bcd0b85ebcc5f866b5c2067
 
 patchfiles          InfoPlist.strings.diff
 

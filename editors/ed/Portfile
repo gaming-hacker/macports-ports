@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            ed
 version         1.15
@@ -23,8 +25,8 @@ master_sites    gnu
 use_lzip        yes
 
 checksums       rmd160  f9683db7b0a4541790ee85bdc0f3b12a26e4ffa1 \
-                sha256  ad4489c0ad7a108c514262da28e6c2a426946fb408a3977ef1ed34308bdfd174 \
-                size    67343
+sha256  ad4489c0ad7a108c514262da28e6c2a426946fb408a3977ef1ed34308bdfd174 \
+size    67343
 
 configure.args-append       \
     CC=\"\$CC\"             \

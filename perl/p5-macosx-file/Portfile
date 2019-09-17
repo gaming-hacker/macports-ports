@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MacOSX-File 0.71 BSD/DANKOGAI
 revision            4
 categories-append   sysutils
@@ -19,7 +19,7 @@ long_description    MacOSX::File is a collection of Perl modules that \
                     SetFile without calling these binaries.
 
 checksums           rmd160  a7e06d8126cff447cf7f3a422138fa7f6d140a36 \
-                    sha256  0a5a0b5f52446d305f590508e29f59fca90609663a8f4581cb2694165438e903
+sha256  0a5a0b5f52446d305f590508e29f59fca90609663a8f4581cb2694165438e903
 
 platforms           darwin
 supported_archs     i386 ppc

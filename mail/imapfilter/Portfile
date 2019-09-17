@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                imapfilter
 version             2.5.6
@@ -18,7 +20,7 @@ master_sites        https://githubredir.debian.net/github/lefcha/imapfilter
 distname            v${version}
 
 checksums           rmd160  29571b98820e27d803ebcda95444e128e62c31bf \
-                    sha256  064d4da9b3b6458e3f9e061174ae4da07e57bdca6b7e1a9d6863cc6959eb2431
+sha256  064d4da9b3b6458e3f9e061174ae4da07e57bdca6b7e1a9d6863cc6959eb2431
 depends_lib         port:lua path:lib/libssl.dylib:openssl port:pcre port:libiconv
 
 worksrcdir          ${workpath}/imapfilter-${version}/src

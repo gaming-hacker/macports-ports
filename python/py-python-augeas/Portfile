@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -7,7 +7,7 @@ name                py-python-augeas
 set real_name       python-augeas
 version             1.0.3
 revision            0
-python.versions     27 34 35 36 37
+python.versions 27 37
 maintainers         nomaintainer
 license             LGPL-2.1+
 description         Python bindings for Augeas
@@ -21,8 +21,8 @@ master_sites        pypi:p/${real_name}
 distname            ${real_name}-${version}
 
 checksums           rmd160  ecd3dce58550862c9753022713944aa431510d93 \
-                    sha256  d062f4a44aee797aa9296f5a82cd8c3df5036ca23df6b9ac48cbaa3b4f29a664 \
-                    size    92747
+sha256  d062f4a44aee797aa9296f5a82cd8c3df5036ca23df6b9ac48cbaa3b4f29a664 \
+size    92747
 
 if {${name} ne ${subport}} {
     depends_lib-append  \

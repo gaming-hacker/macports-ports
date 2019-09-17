@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,10 +22,10 @@ master_sites        sourceforge:pytseries
 distname            scikits.timeseries-${version}
 
 checksums           rmd160  24d2b6c1024265a59669aa99fd536b0334f60646 \
-                    sha256  2c4f74f1151763c231df713e9f990d0f7961cae0be59e31d3bb41781eadca6c0 \
-                    size    323771
+sha256  2c4f74f1151763c231df713e9f990d0f7961cae0be59e31d3bb41781eadca6c0 \
+size    323771
 
-python.versions     27
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append    port:py${python.version}-setuptools

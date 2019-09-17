@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		xine-lib
 version             1.2.9
@@ -15,8 +17,8 @@ master_sites    sourceforge:project/xine/xine-lib/${version}
 use_xz      yes
 
 checksums           rmd160  3feb81b93add382c5382984980189f323f2ac746 \
-                    sha256  32b34e8049feb762d75a551d5d2cdb56c396fdd83e35b9b7de5fd08e498e948d \
-                    size    5180452
+sha256  32b34e8049feb762d75a551d5d2cdb56c396fdd83e35b9b7de5fd08e498e948d \
+size    5180452
 
 depends_build port:libtool \
             port:pkgconfig

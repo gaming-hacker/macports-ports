@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               app 1.0
@@ -23,8 +23,8 @@ platforms               darwin
 master_sites            gnu
 
 checksums           rmd160  0ba58a2540b52bf49bf384c550e5ea17e7f07321 \
-                    sha256  a50e437974cff8d57f41ba87026509c9c383474e52717944ea6565e6ff11f71e \
-                    size    7213194
+sha256  a50e437974cff8d57f41ba87026509c9c383474e52717944ea6565e6ff11f71e \
+size    7213194
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
                     port:fontconfig \

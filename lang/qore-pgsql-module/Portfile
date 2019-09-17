@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-pgsql/releases/download/v${version}
 
 checksums           md5 f091023785af501ae73b754eb52d9613 \
-                    sha1 fbd797123ccb086cb97b50b267fbfc74ebfb96a9 \
-                    rmd160 bde4661b456474aee2e54e83c54372e6464c12b9
+sha1 fbd797123ccb086cb97b50b267fbfc74ebfb96a9 \
+rmd160 bde4661b456474aee2e54e83c54372e6464c12b9
 
 variant postgresql83 conflicts postgresql84 postgresql90 postgresql91 postgresql92 postgresql93 postgresql94 postgresql95 postgresql96 postgresql10 description {Enable PostgreSQL Driver version 8.3} {}
 variant postgresql84 conflicts postgresql83 postgresql90 postgresql91 postgresql92 postgresql93 postgresql94 postgresql95 postgresql96 postgresql10 description {Enable PostgreSQL Driver version 8.4} {}

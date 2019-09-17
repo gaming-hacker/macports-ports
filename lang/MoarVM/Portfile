@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            https://moarvm.org/
 master_sites        https://moarvm.org/releases/
 
 checksums           rmd160  e114c3a2b221bb834fb70afee0fb58ccca27050e \
-                    sha256  24b00e5228894fa6f70e9caa73114e5c6ec3686b6305e6e463807a93f70ffc04 \
-                    size    5136086
+sha256  24b00e5228894fa6f70e9caa73114e5c6ec3686b6305e6e463807a93f70ffc04 \
+size    5136086
 
 # TODO: https://github.com/MoarVM/MoarVM/issues/321
 # conflicts         dyncall libtommath libuv

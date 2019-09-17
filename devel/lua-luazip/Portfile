@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                lua-luazip
 version             1.2.3
@@ -14,8 +16,8 @@ master_sites        http://luaforge.net/frs/download.php/2493/
 distname            luazip-${version}
 use_configure       no
 checksums           md5  8129ba93a8df6ebd324fee9adca23fae \
-                    sha1  40d2589d5060582ce5dc1dd87604114eb42067ea \
-                    rmd160  035d290488a7d67efe9df461e6c790ea67c908dd
+sha1  40d2589d5060582ce5dc1dd87604114eb42067ea \
+rmd160  035d290488a7d67efe9df461e6c790ea67c908dd
 patchfiles          config-patch.diff \
 					Makefile-patch.diff
 post-patch {

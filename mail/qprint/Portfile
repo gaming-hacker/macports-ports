@@ -1,4 +1,6 @@
-PortSystem  1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name        qprint
 version     1.0
@@ -19,8 +21,8 @@ long_description    \
 homepage        http://www.fourmilab.ch/webtools/qprint/
 master_sites    ${homepage}
 checksums       md5     6dc7931376370d5be9223d0d43bec7d0 \
-                sha1    533a4942e93cccc2e6b3fd2171707bf1d0054d20 \
-                rmd160  76b390c97a951e88a83310face941593c8d3b13a
+sha1    533a4942e93cccc2e6b3fd2171707bf1d0054d20 \
+rmd160  76b390c97a951e88a83310face941593c8d3b13a
 
 build.target    prog
 destroot.target install-bin

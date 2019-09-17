@@ -1,4 +1,6 @@
-PortSystem		    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		    ruby 1.0
 
 ruby.setup          linecache19 0.5.12 gem {} rubygems ruby19
@@ -11,7 +13,7 @@ license             Ruby
 maintainers		    nomaintainer
 platforms           darwin
 checksums           md5     ed96791dc9ace3185b543f26afe12f54 \
-                    sha1    69e34275cefa198f1fc7a4ae831cc2a7d7ede238 \
-                    rmd160  ef1d21255d10fb2808f954ffcad88379db05f145
+sha1    69e34275cefa198f1fc7a4ae831cc2a7d7ede238 \
+rmd160  ef1d21255d10fb2808f954ffcad88379db05f145
 
 depends_lib-append  port:rb19-core_source

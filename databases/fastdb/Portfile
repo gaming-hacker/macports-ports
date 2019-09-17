@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ master_sites        http://www.garret.ru/ \
                     sourceforge:project/${name}/${name}/${version}
 
 checksums           rmd160  b91190466aadddd24077112804d537385aa740e6 \
-                    sha256  5382ff0c17692118c4147999f300d50cf972f7096164896529ef61501b166841 \
-                    size    3287628
+sha256  5382ff0c17692118c4147999f300d50cf972f7096164896529ef61501b166841 \
+size    3287628
 
 patchfiles          patch-fastdb-apple-is-not-freebsd.diff \
                     patch-inc-config.h.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ long_description    mandoc is a suite of tools compiling mdoc, \
 master_sites        https://mandoc.bsd.lv/snapshots/
 
 checksums           rmd160  19948d8b99862132993d32968e774077e7e7fe5b \
-                    sha256  8219b42cb56fc07b2aa660574e6211ac38eefdbf21f41b698d3348793ba5d8f7 \
-                    size    651846
+sha256  8219b42cb56fc07b2aa660574e6211ac38eefdbf21f41b698d3348793ba5d8f7 \
+size    651846
 
 pre-configure {
     set filename "${worksrcpath}/configure.local"

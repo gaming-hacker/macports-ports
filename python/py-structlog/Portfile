@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ master_sites        pypi:s/structlog
 distname            structlog-${version}
 
 checksums           rmd160  bfe0ad26fd25385f7692cc85ea828d2779c33c4e \
-                    sha256  5feae03167620824d3ae3e8915ea8589fc28d1ad6f3edf3cc90ed7c7cb33fab5 \
-                    size    317443
+sha256  5feae03167620824d3ae3e8915ea8589fc28d1ad6f3edf3cc90ed7c7cb33fab5 \
+size    317443
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

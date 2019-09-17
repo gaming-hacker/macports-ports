@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,6 +12,6 @@ description         PEAR File_Infopath package
 long_description    ${description}
 
 checksums           rmd160  49a36d5a74c99a442e8796aedc974cc5828cefad \
-                    sha256  a535dc42e0a6dfc57def65630bea37834de64d40dd44090d6e807dab26c47382
+sha256  a535dc42e0a6dfc57def65630bea37834de64d40dd44090d6e807dab26c47382
 
 depends_lib-append  port:pear-File_Cabinet

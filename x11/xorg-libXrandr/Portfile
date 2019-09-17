@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		xorg-libXrandr
 version		1.5.2
@@ -15,8 +17,8 @@ master_sites	 xorg:individual/lib/
 distname	libXrandr-${version}
 
 checksums       rmd160  43d1d57a16ccd0b30c02d1f8489ba1e7dc9493c8 \
-                sha256  8aea0ebe403d62330bb741ed595b53741acf45033d3bda1792f1d4cc3daee023 \
-                size    330726
+sha256  8aea0ebe403d62330bb741ed595b53741acf45033d3bda1792f1d4cc3daee023 \
+size    330726
 
 use_bzip2	yes
 use_parallel_build      yes

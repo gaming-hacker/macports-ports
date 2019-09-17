@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        sourceforge:project/healpix/Healpix_${branch}/
 distname            healpix_cxx-${version}
 
 checksums           rmd160  7e7f3e0870b714f2db2aedd9327e919cc1530a6f \
-                    sha256  6538ee160423e8a0c0f92cf2b2001e1a2afd9567d026a86ff6e2287c1580cb4c \
-                    size    566512
+sha256  6538ee160423e8a0c0f92cf2b2001e1a2afd9567d026a86ff6e2287c1580cb4c \
+size    566512
 
 depends_build       port:pkgconfig
 depends_lib         port:cfitsio

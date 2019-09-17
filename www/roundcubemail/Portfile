@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -39,7 +39,7 @@ if {![variant_isset php54] && ![variant_isset php55] && ![variant_isset php56]} 
 master_sites        sourceforge:project/${name}/${name}/${version}
 
 checksums           rmd160  e4301d85004cc5986743ef16e3c4ea2c3f8dd9fd \
-                    sha256  343d3981067da44e9f3eaee94c2c86247a4341ebe7268bba8bff67d9906aaf34
+sha256  343d3981067da44e9f3eaee94c2c86247a4341ebe7268bba8bff67d9906aaf34
 
 use_configure       no
 

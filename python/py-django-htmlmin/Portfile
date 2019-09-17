@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,9 +20,9 @@ long_description \
     deployment scripts.
 
 checksums           rmd160  6b0a90fdb8d3591f0273d56211c2d04d1337c145 \
-                    sha256  7f00773ecadb73161f74e12a1ab57d029fbb3ef631a9c62c9655949c84a549b3
+sha256  7f00773ecadb73161f74e12a1ab57d029fbb3ef631a9c62c9655949c84a549b3
 
-python.versions     27 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

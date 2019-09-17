@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup java 1.0
 
 name			commons-pool
@@ -20,8 +22,8 @@ distname		${name}-${version}-src
 master_sites		apache:commons/pool/source/
 
 checksums       md5     4216bb6eca49e7b3db9f287d7b0c0cd8 \
-                sha1    18279249c27fee5bdedeaff169b9d1b70d135839 \
-                rmd160  bb72683ef378e6e6741e6c6eea93b6077571edec
+sha1    18279249c27fee5bdedeaff169b9d1b70d135839 \
+rmd160  bb72683ef378e6e6741e6c6eea93b6077571edec
 
 depends_build		bin:ant:apache-ant
 depends_lib		bin:java:kaffe \

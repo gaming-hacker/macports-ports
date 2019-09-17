@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            foremost
 version         1.5.7
@@ -15,7 +17,7 @@ choose which headers you want to look for.
 homepage        http://foremost.sourceforge.net/
 master_sites    ${homepage}pkg/
 checksums       sha256  502054ef212e3d90b292e99c7f7ac91f89f024720cd5a7e7680c3d1901ef5f34 \
-                rmd160  437e174cccc25c4ae672825a413c865555bb4a46
+rmd160  437e174cccc25c4ae672825a413c865555bb4a46
 
 use_configure   no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -23,8 +23,8 @@ distname            Chipmunk-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  29d617a1ce16eac77530661f847942e4c5133007 \
-                    sha256  048b0c9eff91c27bab8a54c65ad348cebd5a982ac56978e8f63667afbb63491a \
-                    size    1015496
+sha256  048b0c9eff91c27bab8a54c65ad348cebd5a982ac56978e8f63667afbb63491a \
+size    1015496
 
 use_parallel_build  yes
 

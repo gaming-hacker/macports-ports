@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       pure 1.0
@@ -15,6 +15,6 @@ description                     an interface to access OpenGL functions from \
 long_description                ${name} provides ${description}.
 
 checksums                       rmd160  2ce3181b7630d353f44234113bd701beadb2f1f7 \
-                                sha256  edd594222f89ae372067eda6679a37488986b9739b5b79b4a25ac48255d31bba
+sha256  edd594222f89ae372067eda6679a37488986b9739b5b79b4a25ac48255d31bba
 
 depends_build-append            port:pkgconfig

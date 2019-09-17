@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -46,7 +46,7 @@ master_sites        sourceforge:pyphant
 
 use_configure       no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools
@@ -63,7 +63,7 @@ foreach python.vers ${python.versions} {
         worksrcdir          ${distname}-${version}
         distfiles           ${distname}-${version}${extract.suffix}
         checksums           rmd160  aa56f61a73300651730f867b249264e2ca63d200 \
-                            sha256  c873352467f9ecf96fac03082e3cbc4153d13f8103e5339e608897884867db53
+sha256  c873352467f9ecf96fac03082e3cbc4153d13f8103e5339e608897884867db53
 
         app.name            pyphant-${python.branch}
         app.executable      pyphant-${python.branch}
@@ -104,7 +104,7 @@ foreach python.vers ${python.versions} {
 
         distname            ${distname}.fmf-${version}
         checksums           rmd160  42d70609400f636b2c4ffced5e5f2192f76ac4ad \
-                            sha256  8ef7acf200f6a7a8805d4f91680fd771129f1c68178d8d710b7a9a322267cdfc
+sha256  8ef7acf200f6a7a8805d4f91680fd771129f1c68178d8d710b7a9a322267cdfc
     }
 
     subport py${python.vers}-${distname}-imageprocessing {
@@ -120,7 +120,7 @@ foreach python.vers ${python.versions} {
 
         distname            ${distname}.imageprocessing-${version}
         checksums           rmd160  e4d160989c0e5b07528577052dd451b47828a7d4 \
-                            sha256  9e1619cf3abbe94ce785b9b5b02383b5a31f9ba2ef0bc75922c785195620229f
+sha256  9e1619cf3abbe94ce785b9b5b02383b5a31f9ba2ef0bc75922c785195620229f
         revision            2
 
         # numpy and scipy are already dependencies of pyphant
@@ -157,7 +157,7 @@ foreach python.vers ${python.versions} {
 
         distname            ${distname}.osc-${version}
         checksums           rmd160  1093b2a9b036648f76089f5d1b919186b7a2dd2c \
-                            sha256  ba573aaa5cb78c4f692798e2c6845f4a0b11b99d721905be56c47db1885d3e67
+sha256  ba573aaa5cb78c4f692798e2c6845f4a0b11b99d721905be56c47db1885d3e67
 
         depends_lib-append  port:py${python.version}-numpy \
                             port:py${python.version}-scipy \
@@ -173,7 +173,7 @@ foreach python.vers ${python.versions} {
 
         distname            ${distname}.statistics-${version}
         checksums           rmd160  893f87f8d9b206a71a963ba30be37e2fd4bb002f \
-                            sha256  ae71e825508fe74c88693108a7bc0612416fdabb1e71442c815ccbfe2b37c7cb
+sha256  ae71e825508fe74c88693108a7bc0612416fdabb1e71442c815ccbfe2b37c7cb
 
         depends_lib-append  port:py${python.version}-numpy \
                             port:py${python.version}-scipy
@@ -193,6 +193,6 @@ foreach python.vers ${python.versions} {
 
         distname            ${distname}.tools-${version}
         checksums           rmd160  7eabbd970968bd118a9fd93670bf79e48790d130 \
-                            sha256  1d97e9b5b798047aa529148e8c5356cdbc61a3333394b5e72e8cf6b429c3b23f
+sha256  1d97e9b5b798047aa529148e8c5356cdbc61a3333394b5e72e8cf6b429c3b23f
     }
 }

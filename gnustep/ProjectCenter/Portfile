@@ -1,4 +1,6 @@
-PortSystem  1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup   gnustep 1.0
 
 name        ProjectCenter
@@ -17,8 +19,8 @@ long_description \
 
 master_sites  gnustep:dev-apps
 checksums     md5     f68de67b89c686c4c68fb123a84de767 \
-              rmd160  48156150e4849023f836b4b51a7a5aff9e47cb4a \
-              sha256  c5104ae18511260f900c6de6cca0bcf39361da1866499102bf2a90e2f05d9473
+rmd160  48156150e4849023f836b4b51a7a5aff9e47cb4a \
+sha256  c5104ae18511260f900c6de6cca0bcf39361da1866499102bf2a90e2f05d9473
 
 array set gnustep.post_flags {
     Library "-lgnustep-base"

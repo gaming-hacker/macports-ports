@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Mail-SRS 0.31
 revision            3
 license             {Artistic-1 GPL}
@@ -39,7 +39,7 @@ long_description    The Sender Rewriting Scheme preserves .forward \
                     To run this from the build directory, type \"make teach\".
 
 checksums           rmd160  5f91268b1f231050b0b047659c4c4f4e932a1d50 \
-                    sha256  e791844f6152e503a92c2ac6f223f166769316fa768d8ef09378e5470d6b0028
+sha256  e791844f6152e503a92c2ac6f223f166769316fa768d8ef09378e5470d6b0028
 
 platforms           darwin
 

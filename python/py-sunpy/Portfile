@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ homepage            http://www.sunpy.org
 master_sites        pypi:s/sunpy/
 distname            sunpy-${version}
 checksums           md5 6bc66ddbbfc081637e88c276fff5ac48 \
-                    sha1 e811627423d600391e3c1eb766df187229a828f0 \
-                    rmd160 3a6974c14ddf4540051f18830d4a45188b6e8579
+sha1 e811627423d600391e3c1eb766df187229a828f0 \
+rmd160 3a6974c14ddf4540051f18830d4a45188b6e8579
 
-python.versions     27
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 if {${name} ne ${subport}} {
 

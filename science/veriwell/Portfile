@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             veriwell
 version          2.8.7
@@ -18,8 +20,8 @@ homepage         http://sourceforge.net/projects/veriwell
 platforms        darwin
 master_sites     sourceforge
 checksums           md5     bf686d4f96d3ff8fb08616da157888fb \
-                    sha1    9ef4e6a25a4fd65db325a89ed89b199547fabbd6 \
-                    rmd160  3d86c40b353f701d61cab301e0f7c3ec136c88e7
+sha1    9ef4e6a25a4fd65db325a89ed89b199547fabbd6 \
+rmd160  3d86c40b353f701d61cab301e0f7c3ec136c88e7
 
 depends_build    port:help2man
 depends_lib      port:bzip2 \

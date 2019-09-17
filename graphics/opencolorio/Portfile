@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    \
     geared towards motion picture production with an emphasis on visual effects and computer animation.
 
 checksums           rmd160  c05a97f24a4637597e88af7afc1698250e5ff469 \
-                    sha256  e1e6f9fd81af8d6714cea9deb6e3684bdefa285aadbab306b7117e5dedcf00f9 \
-                    size    13829193
+sha256  e1e6f9fd81af8d6714cea9deb6e3684bdefa285aadbab306b7117e5dedcf00f9 \
+size    13829193
 
 # see https://github.com/imageworks/OpenColorIO/commit/c43cc918c3e79e324f11ca47e95bfe36e9e0dd15
 patchfiles-append   patch-upstream.diff
@@ -107,7 +107,7 @@ if {![variant_isset python27] && ![variant_isset python36] && ![variant_isset py
 }
 
 if {![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 # make neither x11 nor quartz default since openimageio depends on opencolorio

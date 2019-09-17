@@ -1,4 +1,4 @@
-# -*- mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# -*- mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*-
 
 PortSystem 1.0
 
@@ -31,13 +31,13 @@ set git_distfile    ${git_distname}${extract.suffix}
 distfiles       ${cgit_distfile}:cgit ${git_distfile}:git
 
 checksums           ${cgit_distfile} \
-                    rmd160  8057b3cbfde51d64272e01bf7325084677634a8e \
-                    sha256  3c547c146340fb16d4134326e7524bfb28ffa681284f1e3914bde1c27a9182bf \
-                    size    89648 \
+rmd160  8057b3cbfde51d64272e01bf7325084677634a8e \
+sha256  3c547c146340fb16d4134326e7524bfb28ffa681284f1e3914bde1c27a9182bf \
+size    89648 \
                     ${git_distfile} \
-                    rmd160  2fc27cb7eaf9d74d0d305ef97fc1c6f7ea14a75f \
-                    sha256  8b40be383a603147ae29337136c00d1c634bdfdc169a30924a024596a7e30e92 \
-                    size    5102264
+rmd160  2fc27cb7eaf9d74d0d305ef97fc1c6f7ea14a75f \
+sha256  8b40be383a603147ae29337136c00d1c634bdfdc169a30924a024596a7e30e92 \
+size    5102264
 
 depends_lib     port:git \
                 path:lib/libssl.dylib:openssl \

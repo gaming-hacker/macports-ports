@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    tightvnc
 conflicts               vnc tigervnc
@@ -23,8 +25,8 @@ distname                ${name}-${version}_unixsrc
 use_bzip2               yes
 
 checksums               md5     397b35faad32d5246b6d44b142f8304f \
-                        sha1    ab4ed3d8e9d5188edf0ff27fce3027495f1a8851 \
-                        rmd160  0c24207ec13c1d41f445ccbdea16ce2b5d0729a7
+sha1    ab4ed3d8e9d5188edf0ff27fce3027495f1a8851 \
+rmd160  0c24207ec13c1d41f445ccbdea16ce2b5d0729a7
 
 depends_build           port:gccmakedep
 

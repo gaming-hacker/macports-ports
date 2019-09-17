@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    cdecl (see-deh-kull) is a program for composing \
                     or standard input.
 
 checksums           rmd160  f3b89d81fc801158fa4eca7876b6bf40789232ff \
-                    sha256  53f60863e8cb597234ff08f619b47f7d7e11fc8d83543821b0e88acf11a714e4 \
-                    size    299046
+sha256  53f60863e8cb597234ff08f619b47f7d7e11fc8d83543821b0e88acf11a714e4 \
+size    299046
 
 depends_build-append    port:autoconf \
                         port:automake

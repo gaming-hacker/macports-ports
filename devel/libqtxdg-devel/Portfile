@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -18,8 +18,8 @@ github.tarball_from archive
 version             20190601
 revision            0
 checksums           rmd160  6ee892d05aaf50a41a3da048143bf956d4efa541 \
-                    sha256  87cb265b0afb9d1d5441a971a04127a890814a15041b27bd02c4fa422c7f105e \
-                    size    81402
+sha256  87cb265b0afb9d1d5441a971a04127a890814a15041b27bd02c4fa422c7f105e \
+size    81402
 
 qt5.depends_component \
                     qtsvg

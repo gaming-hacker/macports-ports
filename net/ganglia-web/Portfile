@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ homepage            http://ganglia.info/
 master_sites        sourceforge:project/ganglia/${name}/${version}
 
 checksums           rmd160  2abd57780260ea795a702a877dac63de4dfa669c \
-                    sha256  98820187c98d24d3645b92d31060623de696dad331a361a19874898339523628
+sha256  98820187c98d24d3645b92d31060623de696dad331a361a19874898339523628
 
 depends_lib         port:ganglia
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -19,8 +19,8 @@ distname            qbs-src-${version}
 master_sites        https://download.qt.io/official_releases/qbs/${version}/
 
 checksums           rmd160  086df6cb640585d2ce21a0bb0c7dd322f2fb0b78 \
-                    sha256  e63b579694bdc9c7cf76fce49539c42f9a4ccb0f130cdd46c984e69dfd078299 \
-                    size    4324622
+sha256  e63b579694bdc9c7cf76fce49539c42f9a4ccb0f130cdd46c984e69dfd078299 \
+size    4324622
 
 qt5.depends_component qtscript
 qt5.min_version     5.9.0

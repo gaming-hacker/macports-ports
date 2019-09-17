@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ master_sites    xorg:individual/lib/
 
 distname        libXcursor-${version}
 checksums       rmd160  e6e724a5a1ffb60d345733c9a2606565375e3b58 \
-                sha256  3ad3e9f8251094af6fe8cb4afcf63e28df504d46bfa5a5529db74a505d628782 \
-                size    334144
+sha256  3ad3e9f8251094af6fe8cb4afcf63e28df504d46bfa5a5529db74a505d628782 \
+size    334144
 use_bzip2       yes
 use_parallel_build yes
 

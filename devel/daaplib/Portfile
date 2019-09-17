@@ -1,13 +1,13 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                daaplib
 version             0.1.1a
 checksums           md5     038df4ac53780074e6e642a6e928f4fb \
-                    rmd160  03143525e25f13b3da5d06e4002952e449700846 \
-                    sha256  c5db7126f03049722a5325b0eb71b64108301de52c1fb23de6e12c41943e8d0b \
-                    size    26059
+rmd160  03143525e25f13b3da5d06e4002952e449700846 \
+sha256  c5db7126f03049722a5325b0eb71b64108301de52c1fb23de6e12c41943e8d0b \
+size    26059
 
 categories          devel net
 platforms           darwin

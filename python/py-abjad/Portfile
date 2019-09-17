@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                py-abjad
 set real_name       Abjad
 version             1.1.1
-python.versions     27
+python.versions 27 37
 categories-append   textproc
 license             GPL-3
 maintainers         nomaintainer
@@ -26,7 +26,7 @@ homepage            http://www.projectabjad.org
 master_sites        pypi:A/${real_name}
 distname            ${real_name}-${version}
 checksums           rmd160  d53ff4bde389723381a03dab9521891a96488916 \
-                    sha256  9413fb075ebdb6b498ec49e65048432881c629585c0d3bb1cbe813b4a73d1682
+sha256  9413fb075ebdb6b498ec49e65048432881c629585c0d3bb1cbe813b4a73d1682
 
 if {${name} ne ${subport}} {
     depends_build port:py${python.version}-setuptools

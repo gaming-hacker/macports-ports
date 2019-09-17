@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 # kate: backspace-indents true; indent-pasted-text true; indent-width 4; keep-extra-spaces true; remove-trailing-spaces modified; replace-tabs true; replace-tabs-save true; syntax Tcl/Tk; tab-indents true; tab-width 4;
 
 PortSystem        1.0
@@ -42,7 +42,7 @@ conflicts-delete  $subport
     set release             208
 
     checksums           rmd160  fae887264c9655206630656f32131e42d9a6ffd5 \
-                        sha256  5a88daabba1388f9528590aab5de527a12dd44a7da4572ce48469a29911b0fb0
+sha256  5a88daabba1388f9528590aab5de527a12dd44a7da4572ce48469a29911b0fb0
 #}
 
 subport gwenhywfar4-gtk {}

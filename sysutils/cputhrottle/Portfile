@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ distname            ${name}
 dist_subdir         ${name}/${version}
 
 checksums           md5     21b8c53310111dabe4d6b58cc702deb6 \
-                    sha1    e88c7264cb09399f2e4c54f9d10978ffbb99078b \
-                    rmd160  4fc0e11712e6fd308c955d821091c9bd2188b720
+sha1    e88c7264cb09399f2e4c54f9d10978ffbb99078b \
+rmd160  4fc0e11712e6fd308c955d821091c9bd2188b720
 
 depends_build       port:boost
 

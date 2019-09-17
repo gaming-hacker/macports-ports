@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # TODO: figure out how to make PAM happy without blowing a large hole
 #       in the security of the OS or touching PAM
@@ -22,7 +22,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  4c453f997bdce66dff734a8735ddd4a2927fc5e9 \
-                    sha256  281dd28d729eaab2f67e450b5b162299dec537b6f7e81fa1124e35c89d3942fd
+sha256  281dd28d729eaab2f67e450b5b162299dec537b6f7e81fa1124e35c89d3942fd
 
 depends_build       port:pkgconfig \
                     port:intltool \

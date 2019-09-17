@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    LuaFileSystem is a Lua library developed to complement the s
 homepage            https://keplerproject.github.com/luafilesystem/
 
 checksums           rmd160  2c1ddbe3855f8418a5b65dc935dc77edbd2cca34 \
-                    sha256  b8884702cdf729a0de25899197e8f4f29163583fba1d9e2b1f496ad860691d42 \
-                    size    30881
+sha256  b8884702cdf729a0de25899197e8f4f29163583fba1d9e2b1f496ad860691d42 \
+size    30881
 
 depends_lib         port:lua
 patchfiles          patch-config.diff MDT.diff

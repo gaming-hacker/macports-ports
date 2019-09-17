@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,13 +26,13 @@ distfiles-append    nsis-${version}.zip
 extract.only-delete nsis-${version}.zip
 
 checksums           nsis-3.04-src.tar.bz2 \
-                    rmd160  9647acea3069fb8abb89853f3b394f4be7307728 \
-                    sha256  609536046c50f35cfd909dd7df2ab38f2e835d0da3c1048aa0d48c59c5a4f4f5 \
-                    size    1740579 \
+rmd160  9647acea3069fb8abb89853f3b394f4be7307728 \
+sha256  609536046c50f35cfd909dd7df2ab38f2e835d0da3c1048aa0d48c59c5a4f4f5 \
+size    1740579 \
                     nsis-3.04.zip \
-                    rmd160  795f9233fbbbd60876734a68397d172b1f47dec5 \
-                    sha256  22f3349fea453a45551745635c13e5efb7849ecbdce709daa2b2fa8e2ac55fc4 \
-                    size    2246851
+rmd160  795f9233fbbbd60876734a68397d172b1f47dec5 \
+sha256  22f3349fea453a45551745635c13e5efb7849ecbdce709daa2b2fa8e2ac55fc4 \
+size    2246851
 
 depends_build       port:scons
 

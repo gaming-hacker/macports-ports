@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4   1.1
@@ -20,7 +20,7 @@ master_sites        kde:stable/${version}/src
 use_xz              yes
 distname            kdf-${version}
 checksums           rmd160  ae84351ebf746f8febc09575db6be11c19a650c8 \
-                    sha256  a02a38d67196e014d1a04f1bb2ac3c472e19c060fccdcc35abcc17ca4d33ad78
+sha256  a02a38d67196e014d1a04f1bb2ac3c472e19c060fccdcc35abcc17ca4d33ad78
 
 #Binaries do not link to openssl, nor use the ssl backend of kdelibs4
 license_noconflict  openssl

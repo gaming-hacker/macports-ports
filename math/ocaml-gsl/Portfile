@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name              ocaml-gsl
 version           0.6.0
@@ -17,8 +19,8 @@ homepage          http://oandrieu.nerim.net/ocaml/gsl/
 platforms         darwin
 master_sites      ${homepage}
 checksums         md5    04795211d49c2fe1f59a5669f33ec5fc         \
-                  sha1   819d2f95f44cc4c331a4aa644f8d23704477de05 \
-                  rmd160 f7e9db2f388694dbede5b95ed961cb6eeef1fb00
+sha1   819d2f95f44cc4c331a4aa644f8d23704477de05 \
+rmd160 f7e9db2f388694dbede5b95ed961cb6eeef1fb00
 
 patchfiles        patch-Makefile.diff
 depends_lib       port:gsl port:ocaml

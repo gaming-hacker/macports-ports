@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cxx11 1.0
@@ -17,8 +17,8 @@ homepage                https://sourceforge.net/projects/libebook/
 master_sites            sourceforge:libebook
 
 checksums               rmd160  77ffc3b6fe7982f4ed2aa08b91ad265737488218 \
-                        sha256  b76f0f9170160cb07e77905d3d6ecdf07757b4373ebd77484e5561e0b62b710c \
-                        size    660524
+sha256  b76f0f9170160cb07e77905d3d6ecdf07757b4373ebd77484e5561e0b62b710c \
+size    660524
 
 depends_build-append    port:pkgconfig \
                         port:gperf \

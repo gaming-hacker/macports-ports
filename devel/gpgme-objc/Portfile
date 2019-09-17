@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -23,7 +23,7 @@ extract.suffix      .tgz
 distname            ${rname}-${version}
 dist_subdir         macgpg
 checksums           md5 9f6fc9eb6d36c298c045178703041314            \
-                    sha1 ff02efeac01253c9df797ec314ef0e4fc537964e
+sha1 ff02efeac01253c9df797ec314ef0e4fc537964e
 
 patchfiles          patch-GPGME.xcode-project.pbxproj.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cxx11 1.1
@@ -21,8 +21,8 @@ homepage		        https://shoup.net/ntl/
 master_sites            ${homepage}
 
 checksums               rmd160  f9300445ada42f266ef0bb50f5c32c14e8112121 \
-                        sha256  84ba3145abf8d5f3be6832a14c60b3368eb920719ee96e5774587e71ecd66e9d \
-                        size    2364807
+sha256  84ba3145abf8d5f3be6832a14c60b3368eb920719ee96e5774587e71ecd66e9d \
+size    2364807
 
 depends_build-append    path:bin/perl:perl5
 depends_lib-append      port:gmp

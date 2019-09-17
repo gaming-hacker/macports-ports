@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name			trafshow
 version			5.2.3
 revision		2
@@ -14,8 +16,8 @@ homepage		http://soft.risp.ru/trafshow/index_en.shtml
 platforms		darwin
 master_sites		ftp://ftp.nsk.su/pub/RinetSoftware/
 checksums               md5 0b2f0bb23b7832138b7d841437b9e182 \
-						sha1 1c68f603f12357e932c83de850366c9b46e53d89 \
-						rmd160 f1ae068f898160f16ae9b3cb5f9d73ae3aece6cb
+sha1 1c68f603f12357e932c83de850366c9b46e53d89 \
+rmd160 f1ae068f898160f16ae9b3cb5f9d73ae3aece6cb
 depends_lib		port:libtool \
 			port:libpcap \
 					port:ncurses

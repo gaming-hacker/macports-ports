@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ depends_lib         port:lua-luasocket \
                     port:libidn
 
 checksums           rmd160  a27ba1b4ddd4511842cba45aeef7193b42c7ff17 \
-                    sha256  8911f6dc29b9e0c4edf9e61dc23fa22d77bc42c4caf28b809ab843b2f08e4831 \
-                    size    420689
+sha256  8911f6dc29b9e0c4edf9e61dc23fa22d77bc42c4caf28b809ab843b2f08e4831 \
+size    420689
 
 set logdir          ${prefix}/var/log/${name}
 set rundir          ${prefix}/var/run/${name}

@@ -1,9 +1,11 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       hunspelldict 1.0
 
 hunspelldict.setup en_ZA 2006-01-20 {English (South Africa)} ooo
 maintainers     nomaintainer
 
 checksums       md5     20f98eccf86344d3858bb8ab32c46068 \
-                sha1    4d4b6db251343427c61ef1d46a1b9258ab5b6383 \
-                rmd160  fe3a4bfb04232e5a1e87db1fb17e0c27dfea0a77
+sha1    4d4b6db251343427c61ef1d46a1b9258ab5b6383 \
+rmd160  fe3a4bfb04232e5a1e87db1fb17e0c27dfea0a77

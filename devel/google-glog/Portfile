@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ name                google-glog
 github.setup        google glog 0.4.0 v
 revision            2
 checksums           rmd160  c2627b9fc5c92a6f2f6d5475dbed9b8cf012ad86 \
-                    sha256  217fd7e5c52b76d6163459d9b2a1ca790075f6e089887e48257362d4874ed133 \
-                    size    200999
+sha256  217fd7e5c52b76d6163459d9b2a1ca790075f6e089887e48257362d4874ed133 \
+size    200999
 
 categories          devel
 maintainers         nomaintainer

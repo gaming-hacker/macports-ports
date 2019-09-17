@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ platforms           darwin
 master_sites        googlecode
 
 checksums           md5     c91f06711225b34b4c192c9114887b14 \
-                    sha1    193260cfb7201e6ec250137bcca1468d4d20e2f0 \
-                    rmd160  1b309ec6480dd06fac2e1e72ab666ca123e714d8
+sha1    193260cfb7201e6ec250137bcca1468d4d20e2f0 \
+rmd160  1b309ec6480dd06fac2e1e72ab666ca123e714d8
 
 depends_build       port:help2man
 

@@ -1,4 +1,6 @@
-namespace eval portfetch::mirror_sites { }
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 global os.platform os.major
 set packages_scheme [expr {${os.platform} eq "darwin" && ${os.major} < 10 ? "http" : "https"}]

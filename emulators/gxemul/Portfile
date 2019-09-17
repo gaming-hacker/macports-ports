@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            gxemul
 version         0.4.7.2
@@ -17,8 +19,8 @@ homepage        http://gxemul.sourceforge.net/
 master_sites    ${homepage}src/
 
 checksums       md5       a2ec4f58a831dd883c196c4fd362b702         \
-                sha1      63a20b810ef4ea9d7ec4678f135470fb324f61f1 \
-                rmd160    a54fb4f1ecf567ff9f62e8b1541018b38dea1e1a
+sha1      63a20b810ef4ea9d7ec4678f135470fb324f61f1 \
+rmd160    a54fb4f1ecf567ff9f62e8b1541018b38dea1e1a
 
 depends_build   port:pkgconfig
 depends_lib     port:xorg-libX11

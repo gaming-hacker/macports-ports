@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ master_sites        https://downloads.xiph.org/releases/ogg/
 use_xz              yes
 
 checksums           rmd160  ee76a42b00bc11d483de53d9e84a487be3900d06 \
-                    sha256  c163bc12bc300c401b6aa35907ac682671ea376f13ae0969a220f7ddf71893fe \
-                    size    428696
+sha256  c163bc12bc300c401b6aa35907ac682671ea376f13ae0969a220f7ddf71893fe \
+size    428696
 
 # revert upstream change to os_types.h header
 # https://git.xiph.org/?p=ogg.git;a=commitdiff;h=6449883ccacfee276ed9d99fa047342cdc51ab88

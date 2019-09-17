@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Mail-IMAPClient 3.42
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ long_description    This module provides perl routines that simplify a sockets \
                     connection to and an IMAP conversation with an IMAP server.
 
 checksums           rmd160  14acb8b2b8ed44268a10d086825377ffaa2fbfaf \
-                    sha256  1c2264d50c54c839a3e38ce2f8edda3d24f30cc607940d7574beab19cb00ce7e \
-                    size    192320
+sha256  1c2264d50c54c839a3e38ce2f8edda3d24f30cc607940d7574beab19cb00ce7e \
+size    192320
 
 platforms           darwin
 supported_archs     noarch

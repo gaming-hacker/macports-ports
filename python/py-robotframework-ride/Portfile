@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,11 +17,11 @@ long_description    ${description}
 
 platforms           darwin
 # support for python 2 will be dropped, but we don't yet have wxPython 4 available
-python.versions     27
+python.versions 27 37
 
 checksums           rmd160  69e75ae79cd32aa76109181d28a3606ad00228ae \
-                    sha256  1a652edf4012bb21d8aad750c60bcbdc4cc84afeda524363fb872e536e1e2b1a \
-                    size    951470
+sha256  1a652edf4012bb21d8aad750c60bcbdc4cc84afeda524363fb872e536e1e2b1a \
+size    951470
 
 if {${name} ne ${subport}} {
     depends_build-append \

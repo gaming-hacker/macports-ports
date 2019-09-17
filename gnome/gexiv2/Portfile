@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -23,8 +23,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  95a0cf86e1100605c32cb5ea9fa861b54f4259f3 \
-                    sha256  7d9ad7147ab51ab691edf043c44a0a44de4088c48a12d9c23c26939710e66ce1 \
-                    size    638168
+sha256  7d9ad7147ab51ab691edf043c44a0a44de4088c48a12d9c23c26939710e66ce1 \
+size    638168
 
 depends_build       port:pkgconfig \
                     port:libtool \
@@ -46,7 +46,7 @@ variant python27 description {Build Python2 bindings using Python 2.7} {
     configure.env-append    PYTHON2_PATH=${prefix}/bin/python2.7
 }
 
-default_variants +python27
+
 
 variant python35 conflicts python36 python37 description {Build Python3 bindings using Python 3.5} {
     depends_lib-append      port:py35-gobject3

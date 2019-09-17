@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ homepage            http://www.bacula.org/
 master_sites        sourceforge:project/bacula/bacula/${version}/
 
 checksums           rmd160  bcc168143c0eec5cb5e983f765935534379f4fcf \
-                    sha256  a4bed458bf001889bd06bf31671b5d9908055a1d1e8113fd750ae4d326607ad8
+sha256  a4bed458bf001889bd06bf31671b5d9908055a1d1e8113fd750ae4d326607ad8
 
 distname            ${realname}-${version}
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4    1.1
@@ -20,7 +20,7 @@ use_xz              yes
 distname            kdepim-${version}
 
 checksums           rmd160  7dabf2be18cc9d3a0e42c9be855ebbe45dc54181 \
-                    sha256  a3fd17fa2f3b1debc32bd28537402aaf7337582ff2fe39dbadd47d5b3232f944
+sha256  a3fd17fa2f3b1debc32bd28537402aaf7337582ff2fe39dbadd47d5b3232f944
 
 depends_lib-append  port:kde4-runtime \
                     port:nepomuk-widgets \

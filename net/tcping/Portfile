@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			tcping
 version			0.2
@@ -16,7 +18,7 @@ homepage		https://www.vanheusden.com/tcping/
 master_sites	${homepage}
 extract.suffix	.tgz
 checksums		rmd160 30a7810d41ea07a50f9704d75b487881e1ca4140 \
-				sha256 976c41fb6ded7bf07cca31d83863fc134838bc9f1283faf88df86bdef5f18abc
+sha256 976c41fb6ded7bf07cca31d83863fc134838bc9f1283faf88df86bdef5f18abc
 
 use_configure	no
 

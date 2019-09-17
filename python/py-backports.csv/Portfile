@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,15 +12,15 @@ maintainers         {@xeron gmail.com:xeron.oskom} openmaintainer
 description         Backport of Python 3 csv module
 long_description    ${description}
 
-python.versions     27
+python.versions 27 37
 
 homepage            https://pypi.python.org/pypi/${python.rootname}/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  1dcbaf1c901755107c273f3a64bc75d71ae085a8 \
-                    sha256  bed884eeb967c8d6f517dfcf672914324180f1e9ceeb0376fde2c4c32fd7008d \
-                    size    12127
+sha256  bed884eeb967c8d6f517dfcf672914324180f1e9ceeb0376fde2c4c32fd7008d \
+size    12127
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

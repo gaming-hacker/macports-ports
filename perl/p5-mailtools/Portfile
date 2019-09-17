@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MailTools 2.21 ../../authors/id/M/MA/MARKOV
 platforms           darwin
 maintainers         nomaintainer
@@ -17,8 +17,8 @@ long_description    ${description}. Be warned: The code you find here is very ol
                     then please use more sophisticated libraries.
 
 checksums           rmd160  d8520f09dbcfff48462cdc2cf1518c095d046ef4 \
-                    sha256  4ad9bd6826b6f03a2727332466b1b7d29890c8d99a32b4b3b0a8d926ee1a44cb \
-                    size    58013
+sha256  4ad9bd6826b6f03a2727332466b1b7d29890c8d99a32b4b3b0a8d926ee1a44cb \
+size    58013
 
 if {${perl5.major} != ""} {
     depends_lib-append \

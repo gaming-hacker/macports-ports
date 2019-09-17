@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,9 +21,9 @@ master_sites        sourceforge:jekyllc
 distname            ${name}-${version}-src
 
 checksums           md5     9df1d427924bceb82515a72e59e53ced \
-                    rmd160  0e2df469fc6cbc538309f5414f2c9a64e9a8324d \
-                    sha256  495256f6988905596494e2ff1e630f49a07401a1c1417f47e7eafba661529a71 \
-                    size    89017
+rmd160  0e2df469fc6cbc538309f5414f2c9a64e9a8324d \
+sha256  495256f6988905596494e2ff1e630f49a07401a1c1417f47e7eafba661529a71 \
+size    89017
 
 depends_lib         port:ocaml
 

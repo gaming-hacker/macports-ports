@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            https://pypi.python.org/pypi/TurboJson/
 master_sites        pypi:T/TurboJson/
 distname            TurboJson-${version}
 checksums           md5 21969123122e02d87e2727a73e950796 \
-                    sha1 62b789ba593ad9f1e4b7a9b89660f252a56db835 \
-                    rmd160 5d18dfd76a8b78f1b2e5512d4293356039211e67
+sha1 62b789ba593ad9f1e4b7a9b89660f252a56db835 \
+rmd160 5d18dfd76a8b78f1b2e5512d4293356039211e67
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-ruledispatch

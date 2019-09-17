@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ homepage            http://www.xs4all.nl/~rfsber/Robo/${name}.html
 master_sites        http://www.xs4all.nl/~rfsber/Robo/
 
 checksums           rmd160  5bf25607da0598de726c76dd8f32cb2b884bb295 \
-                    sha256  6a35993bcb7df46143149c46eb500d62a4fb0f0dcab3700a42b7d38656abd2b9
+sha256  6a35993bcb7df46143149c46eb500d62a4fb0f0dcab3700a42b7d38656abd2b9
 
 configure.args      --mandir="${prefix}/share/man"
 

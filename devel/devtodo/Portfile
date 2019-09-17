@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            devtodo
 version         0.1.20
@@ -17,8 +19,8 @@ homepage        https://swapoff.org/devtodo1.html
 master_sites    https://swapoff.org/files/devtodo/
 
 checksums       md5     4a6241437cb56f237f850bcd2233c3c4 \
-                sha1    003067a12139d712dbb3706069e0950a93ecaaf4 \
-                rmd160  389201318faa5ff6d302bd5f8c8f8b094664b45c
+sha1    003067a12139d712dbb3706069e0950a93ecaaf4 \
+rmd160  389201318faa5ff6d302bd5f8c8f8b094664b45c
 
 depends_lib		port:readline
 

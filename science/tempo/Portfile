@@ -1,4 +1,4 @@
-#-*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+#-*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,9 +22,9 @@ homepage            http://tempo.sourceforge.net/
 master_sites        sourceforge
 
 checksums           md5     56778b4b5b8c3df809bd6c7b0022a518 \
-                    rmd160  5f2191235195f9867c4e34793d781cc63a3f1245 \
-                    sha256  33beabff1ef5923f6505f64cabec6656441cddb1ee67074f422ffb66bfedcf25 \
-                    size    1132826
+rmd160  5f2191235195f9867c4e34793d781cc63a3f1245 \
+sha256  33beabff1ef5923f6505f64cabec6656441cddb1ee67074f422ffb66bfedcf25 \
+size    1132826
 
 depends_build       port:pkgconfig
 depends_lib         lib:libgtkglext-x11-1.0:gtkglext \

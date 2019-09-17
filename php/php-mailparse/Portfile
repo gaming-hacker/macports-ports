@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       php 1.1
@@ -9,21 +9,21 @@ categories      php mail devel
 platforms       darwin
 maintainers     {ryandesign @ryandesign} openmaintainer
 
-php.branches    5.3 5.4 5.5 5.6 7.0 7.1 7.2 7.3
+php.branches 7.3
 php.pecl        yes
 
 if {[vercmp ${php.branch} 7] >= 0} {
     version     3.0.3
     revision    0
     checksums   rmd160  941a05ca1b6ec252eb7a2351a8bea6191bc0ef87 \
-                sha256  bfaeae61342c147bcb66b9a90949722e04b65548e6a9d1eb4896aeb62409d302 \
-                size    940370
+sha256  bfaeae61342c147bcb66b9a90949722e04b65548e6a9d1eb4896aeb62409d302 \
+size    940370
 } else {
     version     2.1.6
     revision    1
     checksums   rmd160  68b2fedcacda2850c10e3551131502429b8daee1 \
-                sha256  73705197d2b2ee782efa5477eb2a21432f592c2cb05a72c3a037bbe39e02b5cc \
-                size    36538
+sha256  73705197d2b2ee782efa5477eb2a21432f592c2cb05a72c3a037bbe39e02b5cc \
+size    36538
 }
 
 description     Email message manipulation

@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		muniversal 1.0
 PortGroup		ruby 1.0
 
@@ -13,8 +15,8 @@ long_description	Ruby/Poppler is a Ruby binding of poppler-glib.
 categories-append	gnome
 license			LGPL-2
 checksums		md5 8fa5a2b35f45df722df599fb0765b069 \
-				rmd160 7f78bd36632bf5547000a92304cefd368da9ad98 \
-				sha1 f99af53f020136a1e1162e97c792343cd97a9a45
+rmd160 7f78bd36632bf5547000a92304cefd368da9ad98 \
+sha1 f99af53f020136a1e1162e97c792343cd97a9a45
 configure.env	RUBYOPT=-rvendor-specific
 configure.args	--strict poppler
 depends_lib-append	port:poppler port:rb-glib2 port:rb-gtk2 \

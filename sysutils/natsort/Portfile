@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5 1bc2d32c9c95595f3b67165ee370dade \
-                    sha1 3843dd1dbb0c7f1c593f99c6706907d3d363b655
+sha1 3843dd1dbb0c7f1c593f99c6706907d3d363b655
 
 patchfiles          patch-Makefile.diff \
                     patch-natsort.c.diff

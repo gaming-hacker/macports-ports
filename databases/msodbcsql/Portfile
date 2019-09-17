@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                msodbcsql
 version             17.3.1.1
@@ -16,8 +18,8 @@ homepage            https://msdn.microsoft.com/en-us/library/mt654048(v=sql.1).a
 master_sites        https://download.microsoft.com/download/1/9/A/19AF548A-6DD3-4B48-88DC-724E9ABCEB9A/
 
 checksums           rmd160  1e2ad75a27da2b32ae61dc7133ab65832eab6902 \
-                    sha256  a34ff2c4842b7cacb6b246d55955563f9c27b7bcef28fa3e422e50a60b4c0c37 \
-                    size    813394
+sha256  a34ff2c4842b7cacb6b246d55955563f9c27b7bcef28fa3e422e50a60b4c0c37 \
+size    813394
                     
 depends_run         port:unixODBC \
                     path:lib/libssl.dylib:openssl

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ homepage            http://latex-mk.sourceforge.net/
 master_sites        sourceforge
 
 checksums           md5     88307abfefec86bdf51fcacd47374586 \
-                    sha1    e7bc1a422a88525332d275b40fc1516861bce91a
+sha1    e7bc1a422a88525332d275b40fc1516861bce91a
 
 depends_lib         bin:latex:texlive-latex
 

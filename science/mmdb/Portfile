@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                mmdb
 version             1.23.2.2
@@ -28,6 +30,6 @@ platforms           darwin
 master_sites        http://launchpad.net/mmdb/${branch}/${version}/+download/
 
 checksums           md5 5ca1159317409bf5398a5a8489b42b22 \
-                    sha256 bcdd9cdb58934a2e28e2a599d6b18f3c10fb90eb86b969eaa39901925c17bd0d
+sha256 bcdd9cdb58934a2e28e2a599d6b18f3c10fb90eb86b969eaa39901925c17bd0d
 
 depends_build       port:gawk port:gsed

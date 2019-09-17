@@ -1,4 +1,6 @@
-PortSystem    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup     python 1.0
 
 name          bzr
@@ -25,10 +27,10 @@ homepage      http://bazaar-vcs.org/
 master_sites  https://launchpad.net/${name}/${branch}/${version}/+download/
 
 checksums     rmd160  794dbc585fd1acc711b59016d0b2c3dfe97927d7 \
-              sha256  0994797182eb828867eee81cccc79480bd2946c99304266bc427b902cf91dab0 \
-              size    11301124
+sha256  0994797182eb828867eee81cccc79480bd2946c99304266bc427b902cf91dab0 \
+size    11301124
 
-python.default_version  27
+python.default_version 37
 
 patchfiles    patch-setup.py.diff \
               patch-lazy-regex.diff \

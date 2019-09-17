@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 set base_name       leather
 name                py-$base_name
 version             0.3.3
-python.versions     27 35 36 37
+python.versions 27 37
 
 platforms           darwin
 maintainers         {gmail.com:esafak @esafak} openmaintainer
@@ -23,7 +23,7 @@ homepage            https://pypi.python.org/pypi/$base_name
 master_sites        pypi:l/$base_name
 
 checksums           rmd160  5d9701a4ef7ac3e32bd9275e0dd2906aa0b6a624 \
-                    sha256  076d1603b5281488285718ce1a5ce78cf1027fe1e76adf9c548caf83c519b988
+sha256  076d1603b5281488285718ce1a5ce78cf1027fe1e76adf9c548caf83c519b988
 
 distname            $base_name-${version}
 

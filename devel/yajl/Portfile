@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,6 +15,6 @@ homepage            http://lloyd.github.com/yajl/
 platforms           darwin
 
 checksums           rmd160  df525cb99a1e6f1786c8f8f047127cad1b4eb80a \
-                    sha256  510a13e0be57cd4ba99e60ac806a3635854af51316d3131d3742a90298ccde38
+sha256  510a13e0be57cd4ba99e60ac806a3635854af51316d3131d3742a90298ccde38
 
 cmake.out_of_source yes

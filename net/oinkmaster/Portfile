@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            http://oinkmaster.sourceforge.net/
 master_sites        sourceforge:project/oinkmaster/oinkmaster/${version}/
 
 checksums           rmd160  a3292cfc2e6b175008a7172be5809ca6e2fc85b7 \
-                    sha256  3d52f0426aa7c81b122cef22b80d708d8bb8337537e48754a065804f46c46162
+sha256  3d52f0426aa7c81b122cef22b80d708d8bb8337537e48754a065804f46c46162
 
 depends_run         port:wget
 

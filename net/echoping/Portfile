@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			echoping
 version			6.0.2
@@ -14,8 +16,8 @@ homepage		https://bortzmeyer.github.io/echoping/
 master_sites	https://fossies.org/linux/misc/old/
 
 checksums		md5     991478532b56ab3b6f46ea9fa332626f \
-				sha1    8b414d1dbc5a0f21a7f2cccb0138aec13117a1a4 \
-				rmd160  73ee80f4b666fde3a0e02589388e485c487005fc
+sha1    8b414d1dbc5a0f21a7f2cccb0138aec13117a1a4 \
+rmd160  73ee80f4b666fde3a0e02589388e485c487005fc
 
 platforms		darwin
 

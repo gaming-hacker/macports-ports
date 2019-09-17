@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -16,13 +16,13 @@ distname                ${cap_name}-${version}
 extract.suffix          .tgz
 platforms               darwin freebsd
 checksums               rmd160  245d5f25b0373cbaeaa9be7a62c32a52fc8baf53 \
-                        sha256  e33bf29710944edc2ea53765551565848533ab9caf75c3c06666e5de6d1ac05f
+sha256  e33bf29710944edc2ea53765551565848533ab9caf75c3c06666e5de6d1ac05f
 description             code coverage information for PHP
 long_description \
     PHP_CodeCoverage is a library that provides collection, processing, and rendering \
     functionality for PHP code coverage information.
 
-php.branches            5.3 5.4 5.5
+php.branches 7.3
 
 php.build_dirs
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Convert-PEM 0.08
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,7 +13,7 @@ description         Read/write encrypted ASN.1 PEM files
 long_description    ${description}
 
 checksums           rmd160  9bb9713bc5dde93422ff05089d849dc51ad7191b \
-                    sha256  070ef357af0394d776647ca4b9dd992395617e49f0a5f393c85a29733f100b52
+sha256  070ef357af0394d776647ca4b9dd992395617e49f0a5f393c85a29733f100b52
 
 platforms           darwin
 

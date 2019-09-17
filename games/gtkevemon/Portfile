@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,7 +26,7 @@ distfiles           ${name}-${version}-${build_version}${extract.suffix}
 worksrcdir          BattleClinic-${name}-${hg_tag}/${name}
 
 checksums           rmd160  5776202f1ccbf7cb543b41ec33dd12a0ec57d0be \
-                    sha256  e8ea0883178a297728b9d5c28e5ec83a37042237949b9ebba7fb764e2c3bb534
+sha256  e8ea0883178a297728b9d5c28e5ec83a37042237949b9ebba7fb764e2c3bb534
 
 depends_build       port:pkgconfig
 

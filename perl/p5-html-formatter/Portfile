@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         HTML-Formatter 2.16 ../by-authors/id/N/NI/NIGELM
 maintainers         {geeklair.net:dluke @danielluke} openmaintainer
 description         Perl modules that format HTML as plaintext, PostScript or RTF.
@@ -12,7 +12,7 @@ license             {Artistic-1 GPL}
 long_description    ${description}
 
 checksums           rmd160  cc447e6bf39426f21173e598f21588370cfd6e76 \
-                    sha256  cb0a0dd8aa5e8ba9ca214ce451bf4df33aa09c13e907e8d3082ddafeb30151cc
+sha256  cb0a0dd8aa5e8ba9ca214ce451bf4df33aa09c13e907e8d3082ddafeb30151cc
 
 platforms           darwin
 

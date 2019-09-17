@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ master_sites        sourceforge:project/tkdiff/tkdiff/${version}/
 worksrcdir          ${name}-unix
 
 checksums           rmd160  96bb5b6ebc004dc5247c0f7fbce4b20816af8024 \
-                    sha256  734bb417184c10072eb64e8d274245338e41b7fdeff661b5ef30e89f3e3aa357
+sha256  734bb417184c10072eb64e8d274245338e41b7fdeff661b5ef30e89f3e3aa357
 
 depends_run         port:tk
 

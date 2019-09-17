@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 PortGroup          python 1.0
@@ -21,12 +21,12 @@ homepage           https://code.google.com/p/closure-linter/
 master_sites       googlecode:closure-linter
 distname           closure_linter-${version}
 
-python.default_version 27
+python.default_version 37
 
 depends_build      port:py${python.version}-setuptools
 depends_lib-append port:py${python.version}-gflags
 
 checksums          sha1 71763adfd097dbf2d456db3b1b77ebeb0ba60664 \
-                   rmd160 d76c1e64f05d91f11b71d237ad2d0dafb9f4b0e5
+rmd160 d76c1e64f05d91f11b71d237ad2d0dafb9f4b0e5
 
 livecheck.type     googlecode

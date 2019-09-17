@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -24,9 +24,9 @@ master_sites    http://software.ligo.org/lscsoft/source/
 #master_sites    ${homepage}
 
 checksums       rmd160 20a8f565ce9b71621e949aea00750b78998a0481 \
-                sha256 a08d4c4a4918cc47d15c2bab60a7913162e7e309420297fbfcc1f0abd9765bec
+sha256 a08d4c4a4918cc47d15c2bab60a7913162e7e309420297fbfcc1f0abd9765bec
 
-python.versions 27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
   patchfiles    patch-fix_version.diff

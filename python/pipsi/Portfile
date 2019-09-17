@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,8 +19,8 @@ long_description    Wrapper around virtualenv and pip which installs scripts \
                     shield them from your system and each other.
 
 checksums           rmd160  d91d62a591d11344b1c113d8710ece45b1cd80e9 \
-                    sha256  cbfb5ebc0daf4da1dc88c77c7fc9b2316819a837ca1b9f10014ae588134b9838 \
-                    size    11486
+sha256  cbfb5ebc0daf4da1dc88c77c7fc9b2316819a837ca1b9f10014ae588134b9838 \
+size    11486
 
 python.default_version 37
 depends_lib         port:py${python.version}-click \

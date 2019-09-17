@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ homepage            http://frodo.looijaard.name/project/psiconv
 master_sites        http://frodo.looijaard.name/system/files/software/psiconv/
 
 checksums           rmd160  8da701123273775db6e6f8fcacfc34e4077b9455 \
-                    sha256  6d51fe79b502a1e277bea275a574ae2db5b1b9d7daef703a8fa3635ae02a8bb0
+sha256  6d51fe79b502a1e277bea275a574ae2db5b1b9d7daef703a8fa3635ae02a8bb0
 
 depends_build       port:pkgconfig
 

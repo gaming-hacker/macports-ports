@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,11 +28,11 @@ master_sites        https://www.apache.org/dist/libcloud/ \
 distname            ${_name}-${version}
 
 checksums           sha1    18c60d7a0b3f872c24527aaf386a543fa8c79e9b \
-                    rmd160  14c8d03e1b821afce479d83f2522fe33f1cdfcc5 \
-                    sha256  0e2eee3802163bd0605975ed1e284cafc23203919bfa80c0cc5d3cd2543aaf97 \
-                    size    1801711
+rmd160  14c8d03e1b821afce479d83f2522fe33f1cdfcc5 \
+sha256  0e2eee3802163bd0605975ed1e284cafc23203919bfa80c0cc5d3cd2543aaf97 \
+size    1801711
 
-python.versions     27 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

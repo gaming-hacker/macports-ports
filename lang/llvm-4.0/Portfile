@@ -121,26 +121,26 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-4.0.1.src.tar.xz \
-                    rmd160  37387a5ca73ea270b2f541ecbd1cd641f7b09be2 \
-                    sha256  da783db1f82d516791179fe103c71706046561f7972b18f0049242dee6712b51 \
+rmd160  37387a5ca73ea270b2f541ecbd1cd641f7b09be2 \
+sha256  da783db1f82d516791179fe103c71706046561f7972b18f0049242dee6712b51 \
                     cfe-4.0.1.src.tar.xz \
-                    rmd160  4f30f077c6c39489720ec43a748d04dab0fbff79 \
-                    sha256  61738a735852c23c3bdbe52d035488cdb2083013f384d67c1ba36fabebd8769b \
+rmd160  4f30f077c6c39489720ec43a748d04dab0fbff79 \
+sha256  61738a735852c23c3bdbe52d035488cdb2083013f384d67c1ba36fabebd8769b \
                     compiler-rt-4.0.1.src.tar.xz \
-                    rmd160  5dc0cfa63a5b01595abdd718ba566439df56cbfc \
-                    sha256  a3c87794334887b93b7a766c507244a7cdcce1d48b2e9249fc9a94f2c3beb440 \
+rmd160  5dc0cfa63a5b01595abdd718ba566439df56cbfc \
+sha256  a3c87794334887b93b7a766c507244a7cdcce1d48b2e9249fc9a94f2c3beb440 \
                     libcxx-4.0.1.src.tar.xz \
-                    rmd160  0f97ba9597a0b93c545fa06ac45ae5106440ab8e \
-                    sha256  520a1171f272c9ff82f324d5d89accadcec9bc9f3c78de11f5575cdb99accc4c \
+rmd160  0f97ba9597a0b93c545fa06ac45ae5106440ab8e \
+sha256  520a1171f272c9ff82f324d5d89accadcec9bc9f3c78de11f5575cdb99accc4c \
                     clang-tools-extra-4.0.1.src.tar.xz \
-                    rmd160  e6e99d84ee314688e94bde8b2f9eec058236473f \
-                    sha256  35d1e64efc108076acbe7392566a52c35df9ec19778eb9eb12245fc7d8b915b6 \
+rmd160  e6e99d84ee314688e94bde8b2f9eec058236473f \
+sha256  35d1e64efc108076acbe7392566a52c35df9ec19778eb9eb12245fc7d8b915b6 \
                     lldb-4.0.1.src.tar.xz \
-                    rmd160  b97f62bb00f2df15e7ba9f720c4981b3fac232d7 \
-                    sha256  8432d2dfd86044a0fc21713e0b5c1d98e1d8aad863cf67562879f47f841ac47b \
+rmd160  b97f62bb00f2df15e7ba9f720c4981b3fac232d7 \
+sha256  8432d2dfd86044a0fc21713e0b5c1d98e1d8aad863cf67562879f47f841ac47b \
                     polly-4.0.1.src.tar.xz \
-                    rmd160  473d2c41d30a1e504cf43ffd02f1ce11b0c3c54e \
-                    sha256  b443bb9617d776a7d05970e5818aa49aa2adfb2670047be8e9f242f58e84f01a
+rmd160  473d2c41d30a1e504cf43ffd02f1ce11b0c3c54e \
+sha256  b443bb9617d776a7d05970e5818aa49aa2adfb2670047be8e9f242f58e84f01a
 
 patch.pre_args  -p1
 patchfiles \

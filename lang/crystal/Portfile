@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -40,13 +40,13 @@ master_sites-append https://github.com/crystal-lang/${name}/releases/download/${
 distfiles-append    ${name}-${cr_full_ver}-${os.platform}-${build_arch}${extract.suffix}:bootstrap
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  b222a9c8c56f3980cf83a9dff38d34a6b6346f3b \
-                    sha256  b1032868bbd2f41107b12e93af0975ae3908b1e348b0d609986eec0d9dca8254 \
-                    size    2153561 \
+rmd160  b222a9c8c56f3980cf83a9dff38d34a6b6346f3b \
+sha256  b1032868bbd2f41107b12e93af0975ae3908b1e348b0d609986eec0d9dca8254 \
+size    2153561 \
                     ${name}-${cr_full_ver}-${os.platform}-${build_arch}${extract.suffix} \
-                    rmd160  464f2ca7cda8e620f2063825011f756cbb00745c \
-                    sha256  ffc3ee9124367a2dcd76f9b4c2bf8df083ba8fce506aaf0e3c6bfad738257adc \
-                    size    17902846
+rmd160  464f2ca7cda8e620f2063825011f756cbb00745c \
+sha256  ffc3ee9124367a2dcd76f9b4c2bf8df083ba8fce506aaf0e3c6bfad738257adc \
+size    17902846
 
 patchfiles          patch-compiler.diff patch-readline.diff \
                     patch-crypto.diff patch-ssl.diff patch-xml.diff

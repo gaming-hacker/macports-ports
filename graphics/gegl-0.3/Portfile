@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -30,8 +30,8 @@ use_bzip2           yes
 distname            ${gname}-${version}
 
 checksums           rmd160  d9f4ffbb1be827a8dbd4fc10e828325b4b85e384 \
-                    sha256  5ca2227655ebf1ab2e252cee3eede219c758336394288ef301b93264b9411304 \
-                    size    6707964
+sha256  5ca2227655ebf1ab2e252cee3eede219c758336394288ef301b93264b9411304 \
+size    6707964
 
 depends_build       port:pkgconfig \
                     port:w3m \

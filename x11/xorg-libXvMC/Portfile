@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ master_sites     xorg:individual/lib/
 distname        libXvMC-${version}
 
 checksums       rmd160  0d6cb6e08e4d30c2f4c909a9a1549197971a4886 \
-                sha256  4a2e34d444a683a7c010b01b23cefe2b8043a063ce4dc6a9b855836b5262622d \
-                size    303516
+sha256  4a2e34d444a683a7c010b01b23cefe2b8043a063ce4dc6a9b855836b5262622d \
+size    303516
                     
 use_bzip2           yes
 use_parallel_build  yes

@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    silc-client
 version                 1.1.4
@@ -14,8 +16,8 @@ platforms               darwin
 maintainers             nomaintainer
 master_sites            ${homepage}download/client/sources/
 checksums               md5     03e9ef2eb4ce6267bf791c450b929fb7 \
-                        sha1    043fd02ffc0bb420d411c4ca14ad307b48beaa06 \
-                        rmd160  519ba59912da4bb514330ca8e87979844f957ad0
+sha1    043fd02ffc0bb420d411c4ca14ad307b48beaa06 \
+rmd160  519ba59912da4bb514330ca8e87979844f957ad0
 use_bzip2               yes
 use_parallel_build      yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -16,8 +16,8 @@ homepage        http://guichan.sourceforge.net/
 master_sites    googlecode:guichan
 distname        guichan-${version}
 checksums       md5     af535d7f387e774e3197cef8023ea105 \
-                sha1    50cac146154740d604c752c87dbba00a2793892b \
-                rmd160  42962ecbb9efd00448cdb7249e2f3d1cbe94f79f
+sha1    50cac146154740d604c752c87dbba00a2793892b \
+rmd160  42962ecbb9efd00448cdb7249e2f3d1cbe94f79f
 
 patchfiles	patch-src_allegro,opengl,sdl_Makefile.in.diff
 

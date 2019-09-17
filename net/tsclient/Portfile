@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		tsclient
 version		0.150
@@ -13,8 +15,8 @@ homepage	http://sourceforge.net/projects/tsclient/
 master_sites    sourceforge
 
 checksums       md5     1dc95fbdbcf4344d05114e1f43bf32ea \
-                sha1    75e061ba365a826c1b88623cedf33736578c8a3c \
-                rmd160  b4263f667bdf6c4d1f4d5b10ccb77b3a1c356252
+sha1    75e061ba365a826c1b88623cedf33736578c8a3c \
+rmd160  b4263f667bdf6c4d1f4d5b10ccb77b3a1c356252
 
 depends_build   port:pkgconfig \
                 port:intltool

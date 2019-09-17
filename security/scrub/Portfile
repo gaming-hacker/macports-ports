@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup github 1.0
 
 github.setup        chaos scrub 2.6.1
@@ -17,4 +19,4 @@ long_description    Scrub writes patterns on special files \
                     or one of several other selectable pattern sequences
 
 checksums           rmd160  caba1d4263143cc07c47a2870cb4a26bfa7b8a93 \
-                    sha256  43d98d3795bc2de7920efe81ef2c5de4e9ed1f903c35c939a7d65adc416d6cb8
+sha256  43d98d3795bc2de7920efe81ef2c5de4e9ed1f903c35c939a7d65adc416d6cb8

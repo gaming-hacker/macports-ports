@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   mpi 1.0
@@ -25,8 +25,8 @@ master_sites                ftp://ftp.unidata.ucar.edu/pub/netcdf/ \
                             ftp://www.gfd-dennou.org/arch/netcdf/unidata-mirror/
 
 checksums           md5     d32b20c00f144ae6565d9e98d9f6204c \
-                    sha1    bab9b2d873acdddbdbf07ab35481cd0267a3363b \
-                    rmd160  69e9348ced7da8b6ddf08dad4c3a92c4f18d0648
+sha1    bab9b2d873acdddbdbf07ab35481cd0267a3363b \
+rmd160  69e9348ced7da8b6ddf08dad4c3a92c4f18d0648
 
 compilers.choose            cc cpp cxx
 mpi.setup

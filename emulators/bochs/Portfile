@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                bochs
 version             2.6.8
@@ -19,7 +21,7 @@ homepage            http://bochs.sourceforge.net/
 master_sites        sourceforge
 
 checksums           sha256  79700ef0914a0973f62d9908ff700ef7def62d4a28ed5de418ef61f3576585ce \
-                    rmd160  cf6f9a427559c79e18c208a89e7146b6e9798ea5
+rmd160  cf6f9a427559c79e18c208a89e7146b6e9798ea5
 
 patchfiles          patch-.bochsrc.diff \
                     patch-cdrom_osx.cc.diff

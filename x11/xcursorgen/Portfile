@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xcursorgen
 version             1.0.7
@@ -17,9 +19,9 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           sha1    109367eb23b0ad52cf5de15f50c02ebe872698ae \
-                    rmd160  0aa2611d75c171a3e1680540b4082f971410a2cd \
-                    sha256  35b6f844b24f1776e9006c880a745728800764dbe3b327a128772b4610d8eb3d \
-                    size    128102
+rmd160  0aa2611d75c171a3e1680540b4082f971410a2cd \
+sha256  35b6f844b24f1776e9006c880a745728800764dbe3b327a128772b4610d8eb3d \
+size    128102
 
 depends_build       port:pkgconfig port:xorg-util-macros
 

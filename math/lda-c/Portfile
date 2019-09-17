@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ extract.suffix      .tgz
 
 master_sites        ${homepage}
 checksums           ${distname}${extract.suffix} \
-                    rmd160  a1e2fb1248827142eb31b72dc5a63ca57ffb6470 \
-                    sha256  d3f387bfd468552319a05d62f33be9872c1b03bee1c7e382ebda37d8e35bc993
+rmd160  a1e2fb1248827142eb31b72dc5a63ca57ffb6470 \
+sha256  d3f387bfd468552319a05d62f33be9872c1b03bee1c7e382ebda37d8e35bc993
 
 use_configure       no
 
@@ -53,8 +53,8 @@ destroot {
 variant sample description {Add sample data from the Associated Press} {
     distfiles-append    ap${extract.suffix}
     checksums-append    ap${extract.suffix} \
-                        rmd160  25b1b2e8871eb50cb6a179c0b100c455fc19bca6 \
-                        sha256  91bc914b8f66d55c3b87556d6450b7a7c635efae752eedc702fd20b1fb1b3e8b
+rmd160  25b1b2e8871eb50cb6a179c0b100c455fc19bca6 \
+sha256  91bc914b8f66d55c3b87556d6450b7a7c635efae752eedc702fd20b1fb1b3e8b
     post-destroot {
         copy ${workpath}/ap ${destroot}${share_dir}
     }

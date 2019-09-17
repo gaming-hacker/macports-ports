@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup               cmake 1.0
@@ -22,7 +22,7 @@ homepage                http://clucene.sourceforge.net/
 master_sites            sourceforge:project/clucene/clucene-core-unstable/${branch}
 
 checksums               rmd160  5acfc9c8acd167b3684cfc731a60fd9c5465cc9b \
-                        sha256  ddfdc433dd8ad31b5c5819cc4404a8d2127472a3b720d3e744e8c51d79732eab
+sha256  ddfdc433dd8ad31b5c5819cc4404a8d2127472a3b720d3e744e8c51d79732eab
 
 depends_lib             port:zlib
 

@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -21,8 +21,8 @@ long_description    ${description} \
 homepage            http://www.hydrogen-music.org/
 
 checksums           rmd160  12ff3dca8f5eb8464bb810fac7277bdb7264c1f8 \
-                    sha256  52e4a45bc3b9b4a4ef5b5f0ab1a40979192ac389463539c6f67816eb08a07470 \
-                    size    9865007
+sha256  52e4a45bc3b9b4a4ef5b5f0ab1a40979192ac389463539c6f67816eb08a07470 \
+size    9865007
 
 # Needed to correctly set the install prefix using the cmake portgroup
 patchfiles          patch-CMakeLists.txt.diff

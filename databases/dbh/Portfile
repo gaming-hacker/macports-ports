@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		dbh
 version		1.0.24
@@ -21,8 +23,8 @@ homepage	http://dbh.sourceforge.net
 master_sites	sourceforge:project/dbh/dbh/${version}
 
 checksums	md5 42e122a321089f2429986d0d161ed92a \
-		sha1 235e33979da23727c40070c8c9c215590e3e6898 \
-		rmd160 e7ac0eeff608a73b9fc1c3a2b3185b07c3769ada
+sha1 235e33979da23727c40070c8c9c215590e3e6898 \
+rmd160 e7ac0eeff608a73b9fc1c3a2b3185b07c3769ada
 
 configure.args	--disable-debug
 

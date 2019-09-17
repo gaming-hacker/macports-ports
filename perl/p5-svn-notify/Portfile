@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         SVN-Notify 2.87
 maintainers         {geeklair.net:dluke @danielluke} openmaintainer
 description         Subversion activity notification
@@ -19,8 +19,8 @@ long_description    This class may be used for sending email messages for \
                     appended to the message or added as an attachment.
 
 checksums           rmd160  e3cc14c6633144bded7c63ac9bd2c3f845991ee7 \
-                    sha256  6b892d3b17010bde4565cd5d62be9ecab01b0787ca59a82297b55d8abb3feb14 \
-                    size    99243
+sha256  6b892d3b17010bde4565cd5d62be9ecab01b0787ca59a82297b55d8abb3feb14 \
+size    99243
 
 platforms           darwin
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-off    set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-off    set: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ depends_lib         path:lib/libssl.dylib:openssl
 master_sites        sourceforge:dtorrent
 distname            ${name}-dnh${version}
 checksums           md5 59b23dd05ff70791cd6449effa7fc3b6 \
-                    sha1 d4e221f0292268f80e2430ce9d451dd64cf1ffaa \
-                    rmd160 5db2613109fc7e55e7ccdf0d2da12e352c99b385
+sha1 d4e221f0292268f80e2430ce9d451dd64cf1ffaa \
+rmd160 5db2613109fc7e55e7ccdf0d2da12e352c99b385
 
 patchfiles          detect-clockid_t.patch

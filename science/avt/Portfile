@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ homepage            https://github.com/elboza/avt
 master_sites        http://www.autistici.org/0xFE/software/releases/avt/
 
 checksums           md5     aefca34db3fea738019dbfb402cf9f18 \
-                    sha1    54fc9a0085dd0a372b2af81b7f3c60f042a85898 \
-                    rmd160  1ba76e714eaa02246d40064574a35c3b3940ebb8
+sha1    54fc9a0085dd0a372b2af81b7f3c60f042a85898 \
+rmd160  1ba76e714eaa02246d40064574a35c3b3940ebb8
 
 worksrcdir          ${name}
 

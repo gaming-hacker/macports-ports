@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   app 1.0
@@ -26,7 +26,7 @@ extract.suffix              .jar
 extract.only
 
 checksums                   rmd160  d343759590a826344f44d3999fed990e12cb380a \
-                            sha256  32ce0e9bceea7cf55c6a381a10b3942e5f3904f7aa08ea6735c1413386ef4667
+sha256  32ce0e9bceea7cf55c6a381a10b3942e5f3904f7aa08ea6735c1413386ef4667
 
 extract.mkdir               yes
 

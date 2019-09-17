@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 supported_archs     noarch
 license             Apache-2
 
-python.versions     35 36 37
+python.versions 27 37
 
 maintainers         {@jandemter demter.de:jan} openmaintainer
 
@@ -27,8 +27,8 @@ master_sites        pypi:i/immutables
 distname            immutables-${version}
 
 checksums           rmd160  40185d1e07091e051eb91caeddbe1f3cba3febfe \
-                    sha256  d71d1c822498646143270580dd6f743bb31ab89ae0ded8b2307c356d3a00f1c0 \
-                    size    37754
+sha256  d71d1c822498646143270580dd6f743bb31ab89ae0ded8b2307c356d3a00f1c0 \
+size    37754
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ homepage            http://${name}.sourceforge.net/
 master_sites        sourceforge:project/lifelines/lifelines/${version}
 
 checksums           md5     ff617e64205763c239b0805d8bbe19fe \
-                    rmd160  55de24a87380867fae50f458465d748882567bd3 \
-                    sha256  2f00441ac0ed64aab8f76834c055e2b95600ed4c6f5845b9f6e5284ac58a9a52
+rmd160  55de24a87380867fae50f458465d748882567bd3 \
+sha256  2f00441ac0ed64aab8f76834c055e2b95600ed4c6f5845b9f6e5284ac58a9a52
 
 depends_lib         port:gettext
 

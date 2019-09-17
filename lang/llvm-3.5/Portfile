@@ -55,8 +55,8 @@ distfiles               llvm-${version}.src${extract.suffix}
 worksrcdir              llvm-${version}.src
 
 checksums           llvm-3.5.2.src.tar.xz \
-                    rmd160  a6117b21f7f6ffe694ed152fba492015450b63f8 \
-                    sha256  44196156d5749eb4b4224fe471a29cc3984df92570a4a89fa859f7394fc0c575
+rmd160  a6117b21f7f6ffe694ed152fba492015450b63f8 \
+sha256  44196156d5749eb4b4224fe471a29cc3984df92570a4a89fa859f7394fc0c575
 
 patch.pre_args  -p1
 patchfiles    \

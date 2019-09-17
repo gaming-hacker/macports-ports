@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ homepage            http://www.surina.net/soundtouch/
 master_sites        ${homepage}
 
 checksums           rmd160  de9e1b3abc2c48722e229a8bb6d68c840d8099b0 \
-                    sha256  d224f7d1421b5f8e74a74c85741345bd9802618a40ae30ce5b427a5705c89d25 \
-                    size    455148
+sha256  d224f7d1421b5f8e74a74c85741345bd9802618a40ae30ce5b427a5705c89d25 \
+size    455148
 
 worksrcdir          ${name}
 

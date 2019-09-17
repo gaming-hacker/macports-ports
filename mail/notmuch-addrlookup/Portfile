@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,7 +13,7 @@ description         Address lookup tool for Notmuch in C using GLib and libnotmu
 long_description    ${description}
 
 checksums           rmd160  55222d0857ec2da40201401d3757dc1e0aea4748 \
-                    sha256  6c587a68f4c807b20873cbaf237916680f00340db5bc174c0faa48597f549baf
+sha256  6c587a68f4c807b20873cbaf237916680f00340db5bc174c0faa48597f549baf
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -8,7 +8,7 @@ github.setup        osh gr-pyqt 81807ed786fc940e833e5fa8f385f3870d0939f4
 version             20160712
 revision            8
 checksums           rmd160 2b1f472ef0e196958e165d156c21b4348b59631a \
-                    sha256 1bfbccccfdf69583722728437ab6f12d9644147bcab99fd0a0e2e026442f01f9
+sha256 1bfbccccfdf69583722728437ab6f12d9644147bcab99fd0a0e2e026442f01f9
 
 # allow gr-pyqt to work with both gnuradio and gnuradio-devel ...
 

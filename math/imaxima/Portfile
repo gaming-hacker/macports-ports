@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ master_sites    https://sites.google.com/site/imaximaimath/download-and-install/
 distname        ${name}-imath-${version}
 patchfiles      patch-imaxima.el.diff
 checksums       md5     1cd6d58ec186d9b0477d99540358953a \
-                sha1    7ae8d3a4dffed322ed6c79af6fe2a81df7c253e8 \
-                rmd160  8cc125e6d9cd9d678506b856ab71b640bf23c966
+sha1    7ae8d3a4dffed322ed6c79af6fe2a81df7c253e8 \
+rmd160  8cc125e6d9cd9d678506b856ab71b640bf23c966
 depends_lib     path:bin/emacs:emacs
 depends_run     port:ghostscript \
                 port:texlive \

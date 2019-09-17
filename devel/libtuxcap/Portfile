@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -22,7 +22,7 @@ homepage            https://sourceforge.net/projects/tuxcap/
 master_sites        sourceforge:project/tuxcap/tuxcap/libtuxcap-${version}
 
 checksums           rmd160  43d236b65fd6bb28b3ceaa6ba3193ecbcc5e6675 \
-                    sha256  dae27bad276bffce6eba8114cd0e3edc0db710306f627b984464c4f0ec1fab2f
+sha256  dae27bad276bffce6eba8114cd0e3edc0db710306f627b984464c4f0ec1fab2f
 
 depends_lib         port:ImageMagick \
                     port:libsdl \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -12,7 +12,7 @@ platforms           darwin freebsd openbsd
 maintainers         {ryandesign @ryandesign} openmaintainer
 license             GPL-2+
 
-php.branches        5.3
+php.branches 7.3
 
 description         php5 extension for PHP acceleration, optimization, and \
                     dynamic content caching
@@ -29,8 +29,8 @@ homepage            http://eaccelerator.net/
 github.tarball_from downloads
 
 checksums           rmd160  6a16ab377ec124a27e26a5fdc1fd6ada845695bd \
-                    sha256  33703ad1678cdb65ef0cd28fbd2e262ef5d9f201f9016de26b7254987deba53c \
-                    size    106049
+sha256  33703ad1678cdb65ef0cd28fbd2e262ef5d9f201f9016de26b7254987deba53c \
+size    106049
 
 use_bzip2           yes
 

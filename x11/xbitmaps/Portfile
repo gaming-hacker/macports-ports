@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 name                xbitmaps
@@ -17,8 +17,8 @@ master_sites        https://xorg.freedesktop.org/archive/individual/data/
 use_bzip2           yes
 
 checksums           rmd160  094623c87c9b594d97049561e1d7a4916f50d912 \
-                    sha256  b9f0c71563125937776c8f1f25174ae9685314cbd130fb4c2efce811981e07ee \
-                    size    129435
+sha256  b9f0c71563125937776c8f1f25174ae9685314cbd130fb4c2efce811981e07ee \
+size    129435
 
 livecheck.type      regex
 livecheck.regex     ${name}-(\[\\d.\]+)${extract.suffix}

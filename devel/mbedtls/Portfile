@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,13 +25,13 @@ distfiles           ${name}-${version}${extract.suffix}:mbedtls \
                     mbedcrypto-${mbedcrypto_version}${extract.suffix}:mbedcrypto
 
 checksums           ${name}-${version}${extract.suffix} \
-                    rmd160  07e6ad8a818ac4874de6dff04faf4bb69c50cc7b \
-                    sha256  adc9055a494533df3a5b4e26b3c2868fc506f1d5c4f70f377f6ee3967d4ad624 \
-                    size    2810688 \
+rmd160  07e6ad8a818ac4874de6dff04faf4bb69c50cc7b \
+sha256  adc9055a494533df3a5b4e26b3c2868fc506f1d5c4f70f377f6ee3967d4ad624 \
+size    2810688 \
                     mbedcrypto-${mbedcrypto_version}${extract.suffix} \
-                    rmd160  4336698465756f0818f188b19118e5689fb892da \
-                    sha256  7fa2c87f7a72f402ae33a20583b9e29d1707b1ed73ef7620eeac75644e151486 \
-                    size    2909719
+rmd160  4336698465756f0818f188b19118e5689fb892da \
+sha256  7fa2c87f7a72f402ae33a20583b9e29d1707b1ed73ef7620eeac75644e151486 \
+size    2909719
 
 depends_build-append \
                     port:perl5 \

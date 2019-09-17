@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,7 +18,7 @@ description             MAME emulator as a library
 long_description        libmame is the MAME emulator as a library
 
 checksums               rmd160  32731fcc116b08b7d8b2f56abf220a41c6c34458 \
-                        sha256  02dba073fc12a0f554e3a49442b4870dc18a4814d05264fbef748ad07a43c227
+sha256  02dba073fc12a0f554e3a49442b4870dc18a4814d05264fbef748ad07a43c227
 
 universal_variant       no
 

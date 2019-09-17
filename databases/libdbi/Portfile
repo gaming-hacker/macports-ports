@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                libdbi
 version             0.8.4
@@ -12,8 +14,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5    c5f15407ef7b07ba854cd8c9b15b88ff \
-                    sha1   e86977d75150dde10c82ddb6193b9d4eb677d7ad \
-                    rmd160 0673c78a1411638db768b633d1df709da55779d0
+sha1   e86977d75150dde10c82ddb6193b9d4eb677d7ad \
+rmd160 0673c78a1411638db768b633d1df709da55779d0
 
 configure.args      --disable-docs
 

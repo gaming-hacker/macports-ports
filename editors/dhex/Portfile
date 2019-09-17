@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,7 +20,7 @@ homepage                http://www.dettus.net
 master_sites            ${homepage}/${name}/
 distname                ${name}_${version}
 checksums               rmd160  0b5e4232a8f9e0a3ae345a9c1486c335ae7038c2 \
-                        sha256  126c34745b48a07448cfe36fe5913d37ec562ad72d3f732b99bd40f761f4da08
+sha256  126c34745b48a07448cfe36fe5913d37ec562ad72d3f732b99bd40f761f4da08
 
 depends_lib-append      port:ncurses
 

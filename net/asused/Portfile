@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -27,8 +27,8 @@ master_sites            macports_distfiles
 distname                ${name}-${version}_whois_new_query_fix
 
 checksums               md5 133dba98ecc836897c8a53846d9d2463 \
-                        sha1 c81f54260488b25905f36fe22cf4257f2c6d8dd2 \
-                        rmd160 7beb7969ef19871cf0f033e3ff425ac010f470d3
+sha1 c81f54260488b25905f36fe22cf4257f2c6d8dd2 \
+rmd160 7beb7969ef19871cf0f033e3ff425ac010f470d3
 
 depends_lib             port:perl5
 

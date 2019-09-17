@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -12,7 +12,7 @@ platforms           darwin
 maintainers         nomaintainer
 license             Apache-2
 
-python.versions     27
+python.versions 27 37
 
 description         Python binding for the SleuthKit
 long_description    ${description}
@@ -22,7 +22,7 @@ distname            pytsk-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  ae38d154d53a97e12520357ec295e32426834e6c \
-                    sha256  73e5b811611ac57fc8081c67f9f011c5fee23e85d2ee07a0de2ea5d91ff22dc0
+sha256  73e5b811611ac57fc8081c67f9f011c5fee23e85d2ee07a0de2ea5d91ff22dc0
 
 depends_lib-append  port:sleuthkit \
                     port:talloc

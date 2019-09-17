@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,11 +30,11 @@ set docdistfile     ${name}-resources${dashed_branch}${extract.suffix}
 distfiles           ${jardistfile} ${docdistfile}
 
 checksums           ${jardistfile} \
-                        rmd160  af67cae4b9caaceb44837dc0df2ef216aeb83681 \
-                        sha256  0e2b625264128593e8c05a1672691d093b4a54923cf9f59d442764101712636a \
+rmd160  af67cae4b9caaceb44837dc0df2ef216aeb83681 \
+sha256  0e2b625264128593e8c05a1672691d093b4a54923cf9f59d442764101712636a \
                     ${docdistfile} \
-                        rmd160  4b58fbfcd7c6fec60f0b91fe23d9f9cc22042980 \
-                        sha256  7cdbcfc4d88015f6f53bef3b25e78c3447e0fc18d268307159be0595399881e2
+rmd160  4b58fbfcd7c6fec60f0b91fe23d9f9cc22042980 \
+sha256  7cdbcfc4d88015f6f53bef3b25e78c3447e0fc18d268307159be0595399881e2
 
 depends_lib         bin:java:kaffe
 

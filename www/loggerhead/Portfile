@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                loggerhead
@@ -21,10 +23,10 @@ homepage            https://launchpad.net/loggerhead
 master_sites        ${homepage}/${branch}/${version}/+download/
 
 checksums           md5    bef897d4674967ef835d1183d587d34f \
-                    rmd160 a03a119ff82470cba2bccf215bce8c468daf7357 \
-                    sha256 f66123abef4e06b893fe91e2c2b367dd9f17d5f523096ff37f33178d004ffdb4
+rmd160 a03a119ff82470cba2bccf215bce8c468daf7357 \
+sha256 f66123abef4e06b893fe91e2c2b367dd9f17d5f523096ff37f33178d004ffdb4
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-setuptools \
                     port:py${python.version}-paste \

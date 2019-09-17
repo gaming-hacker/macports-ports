@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -20,8 +20,8 @@ platforms           darwin
 master_sites        https://chiselapp.com/user/pooryorick/repository/tktable/tarball/4018de567f/
 distname            unnamed-4018de567f
 checksums           rmd160  2332e79467b15c5b9855dd12ad6f21328017fa2b \
-                    sha256  7c9c06338c2cb7e414f23650e4122093b540c60c672dc4f440a12588e1b3a1d5 \
-                    size    292797
+sha256  7c9c06338c2cb7e414f23650e4122093b540c60c672dc4f440a12588e1b3a1d5 \
+size    292797
 
 # ensure correct libraries are found during testing
 # see https://trac.macports.org/ticket/38238

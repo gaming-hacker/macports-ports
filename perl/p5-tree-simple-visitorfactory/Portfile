@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Tree-Simple-VisitorFactory 0.15
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -16,7 +16,7 @@ platforms           darwin
 extract.suffix      .tgz
 
 checksums           rmd160  81d249a46afa135e636bc56e8dd755cf6a40e52c \
-                    sha256  367e82ece7ce3e2a166c38dcfa6608e7dc715781e94e0b5399070c3abfdac21b
+sha256  367e82ece7ce3e2a166c38dcfa6608e7dc715781e94e0b5399070c3abfdac21b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

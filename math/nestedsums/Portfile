@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup xcodeversion 1.0
 
 name		nestedsums
@@ -15,7 +17,7 @@ homepage	http://wwwthep.physik.uni-mainz.de/~stefanw/nestedsums/
 master_sites	http://wwwthep.physik.uni-mainz.de/~stefanw/download/
 
 checksums	sha1    07c19f2bf6a2cd43555deb9f5d16ec7ea7a97f65 \
-		rmd160  381256ed0aa4c55d1f3ea87f493b83e6a5befae1
+rmd160  381256ed0aa4c55d1f3ea87f493b83e6a5befae1
 
 depends_build	port:pkgconfig
 depends_lib	port:GiNaC

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -17,8 +17,8 @@ long_description    k6 is a modern load testing tool, building on Load Impact's 
 homepage            https://k6.io/
 
 checksums           rmd160  cc6e6cfbcbb328a318c5d7587697c12489f4fab9 \
-                    sha256  e60cc92bca8da7b81ae1e21ee2ea178dd577b1d14457f49b55788c701f9308f7 \
-                    size    5432933
+sha256  e60cc92bca8da7b81ae1e21ee2ea178dd577b1d14457f49b55788c701f9308f7 \
+size    5432933
 
 set goproj          github.com/${github.author}/${github.project}
 

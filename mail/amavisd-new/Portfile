@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -25,12 +25,12 @@ master_sites        ${homepage}
 use_xz              yes
 
 checksums           rmd160  cd06768a530fb86371f171e16b7f8c13c019b525 \
-                    sha256  b41de4f0796cb344120c9792c82fc25177cbf9f51aaa5f91536cdf34aea89906 \
-                    size    780548
+sha256  b41de4f0796cb344120c9792c82fc25177cbf9f51aaa5f91536cdf34aea89906 \
+size    780548
 
 perl5.require_variant   yes
 perl5.conflict_variants yes
-perl5.branches          5.26 5.28
+perl5.branches 5.28
 perl5.create_variants   ${perl5.branches}
 
 set daemon_user     _amavisd

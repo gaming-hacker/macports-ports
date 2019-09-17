@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup  compiler_blacklist_versions 1.0
 
 name            lout
@@ -18,7 +20,7 @@ master_sites    http://www.ctan.org/tex-archive/support/lout/ \
                 ftp://ftp.it.usyd.edu.au/jeff/lout/
 
 checksums           rmd160  d1da2583f1727abf4ccb74d2128c26deacca2ef9 \
-                    sha256  3d16f1ce3373ed96419ba57399c2e4d94f88613c2cb4968cb0331ecac3da68bd
+sha256  3d16f1ce3373ed96419ba57399c2e4d94f88613c2cb4968cb0331ecac3da68bd
 
 depends_build   port:zlib
 

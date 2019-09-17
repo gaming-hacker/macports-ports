@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -23,7 +23,7 @@ master_sites        http://mysql.mirrors.pair.com/${mirror_dir} \
 
 distname            ${name_package}-${version}
 checksums           rmd160  2445b7c3aab96e459bf8726963fbc7e203af7e6e \
-                    sha256  3e31847a69a4e5c113b7c483731317ec4533858e3195d3a85026a0e2f509d2e4
+sha256  3e31847a69a4e5c113b7c483731317ec4533858e3195d3a85026a0e2f509d2e4
 
 depends_build-append \
                     port:boost

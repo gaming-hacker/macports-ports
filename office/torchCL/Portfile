@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,9 +20,9 @@ homepage            http://torch.wbpsystems.com/cl.php
 master_sites        https://mytorch.net/CL/
 
 checksums           rmd160  25f34d30fdd1364546a9a3a4b038a4a95faf06a4 \
-                    sha256  023712d65e0779447062d760c61cd1ece9297a32c6cb837a9ebdd098959cd35a
+sha256  023712d65e0779447062d760c61cd1ece9297a32c6cb837a9ebdd098959cd35a
 
-python.default_version          27
+python.default_version 37
 
 livecheck.url       [lindex $master_sites 0]
 livecheck.regex     "${name}-((?!.*${name}.*|\\${extract.suffix}).*)\\${extract.suffix}"

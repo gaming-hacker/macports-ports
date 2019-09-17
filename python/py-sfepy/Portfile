@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -26,9 +26,9 @@ distname                sfepy-${version}
 worksrcdir              ${distname}
 
 checksums               rmd160  fd925d8866ebcae5d5d5a92a44edb6206f9e1d3a \
-                        sha256  42b10f3c4b32ff811becef88cfeb76519f492a34d905ee83ca8b91d99357f637
+sha256  42b10f3c4b32ff811becef88cfeb76519f492a34d905ee83ca8b91d99357f637
 
-python.versions         27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

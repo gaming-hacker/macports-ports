@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake 1.0
@@ -14,7 +14,7 @@ if {${subport} eq "openscad"} {
     master_sites        http://files.openscad.org
     distfiles           ${distname}.src${extract.suffix}
     checksums           rmd160  323eda5bd96b2093d4fbb2274763f7a0ae4eb7f4 \
-                        sha256  5d2a7d83c32f4201ee0d17445a36baccaebc0bc7facd009fc8dd86ee537c5a36
+sha256  5d2a7d83c32f4201ee0d17445a36baccaebc0bc7facd009fc8dd86ee537c5a36
 
     # patchfiles for openscad 2015.03-3 release
     # Fix these errors, as per https://bugreports.qt.io/browse/QTBUG-22829
@@ -43,7 +43,7 @@ if {${subport} eq "openscad"} {
     version             2018.04-1
 
     checksums           rmd160  57ce759879770675cb7853a6735ad66a5956ddd1 \
-                        sha256  40447cbb91a853a16dc1872063cd5c90150356ff31c4d8b5e6296a7a4ec26f23
+sha256  40447cbb91a853a16dc1872063cd5c90150356ff31c4d8b5e6296a7a4ec26f23
 
     # should move this to another distfile at some point instead of using git clone
     depends_extract-append port:git

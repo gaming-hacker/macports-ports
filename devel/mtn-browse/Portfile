@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
 name                mtn-browse
 version             1.20
-perl5.branches      5.26
+perl5.branches 5.28
 revision            1
 categories          devel
 license             GPL-3+
@@ -24,7 +24,7 @@ homepage            http://www.coosoft.plus.com/software.html
 master_sites        sourceforge:mtn-browse
 
 checksums           rmd160  abdfef1bc211c8ff02666c13d7ac93dd7bb3cad7 \
-                    sha256  c14ffaf742ccdc47dad7ad98f2bf93cf01f6a00bfce6ce4c020227b41006a90d
+sha256  c14ffaf742ccdc47dad7ad98f2bf93cf01f6a00bfce6ce4c020227b41006a90d
 
 depends_lib         port:p${perl5.major}-gnome2 \
                     port:p${perl5.major}-gtk2-gladexml \

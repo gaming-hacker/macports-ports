@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -13,8 +13,8 @@ long_description    Ptex is a texture mapping system developed by Walt Disney An
 platforms           darwin
 
 checksums           rmd160  d2f12393f3c6acb9dd18f9696cef50df0243cc80 \
-                    sha256  9591ebe212c619e978b7e95aa7202a95758e8eebb8e7e3f40257b28825d4ec15 \
-                    size    308622
+sha256  9591ebe212c619e978b7e95aa7202a95758e8eebb8e7e3f40257b28825d4ec15 \
+size    308622
 
 # CMakeLists.txt attempts to use git to determine version
 configure.args-append -DPTEX_VER=${version}

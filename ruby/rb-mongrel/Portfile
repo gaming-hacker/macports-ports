@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup			ruby 1.0
 
 ruby.setup			mongrel 1.1.5 gem {} rubygems
@@ -12,8 +14,8 @@ long_description	Mongrel is a fast HTTP library and server for Ruby that \
 					framework agnostic and already supports Ruby On Rails, \
 					Og+Nitro, and Camping frameworks.
 checksums			md5 a37617eb48f0932cc32143b2d76c0d12 \
-					sha1 ce2393a56d49c5fcf726c744917b9a37b6daa743 \
-					rmd160 d678d5a07e4ae61c28d0174f1c591a261a335056
+sha1 ce2393a56d49c5fcf726c744917b9a37b6daa743 \
+rmd160 d678d5a07e4ae61c28d0174f1c591a261a335056
 platforms			darwin
 
 depends_run-append \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                star
 version             1.5.2
@@ -12,8 +14,8 @@ long_description    ${description}
 homepage            http://cdrecord.berlios.de/old/private/star.html
 master_sites        ftp://ftp.berlios.de/pub/star
 checksums           sha1    be23b7c282dd4f8533be51129d980e03fc5f2365 \
-                    rmd160  99f24644d335803d47bab959e534faa904f8dcae \
-                    sha256  762645b98af13bb9b0512812814ec8e90635d1400c94eb5911e9774daed2addf
+rmd160  99f24644d335803d47bab959e534faa904f8dcae \
+sha256  762645b98af13bb9b0512812814ec8e90635d1400c94eb5911e9774daed2addf
 patchfiles          patch-RULES__rules.prg.diff
 use_bzip2           yes
 

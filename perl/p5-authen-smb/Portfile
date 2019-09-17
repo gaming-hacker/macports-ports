@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Authen-Smb 0.91
 revision            3
 license             unknown
@@ -13,7 +13,7 @@ long_description    Authen::Smb is a module which allows you to authenticate a u
                     against an NT domain directly from Perl.
 
 checksums           rmd160  80949c7fe6ad94db91a6c364925a983f063e6fc0 \
-                    sha256  e0b664ef8744c6fba0af1f44b6154a0fd723cc92d3e13f1ec3620b5637a208bc
+sha256  e0b664ef8744c6fba0af1f44b6154a0fd723cc92d3e13f1ec3620b5637a208bc
 
 platforms           darwin
 

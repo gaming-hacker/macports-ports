@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -33,7 +33,7 @@ depends_lib-append  port:glew \
                     path:lib/libavcodec.dylib:ffmpeg
 
 checksums           rmd160  5b31d14e8cb1d78cde3f48b9f2576e77e8a5f717 \
-                    sha256  7d9ac216ae4ef86150a3ced1cfb0bb23572493aae4f7403b1552be4314b766df
+sha256  7d9ac216ae4ef86150a3ced1cfb0bb23572493aae4f7403b1552be4314b766df
 
 patchfiles-append   CMakeLists.txt.patch \
                     ffmpeg-4.0.patch

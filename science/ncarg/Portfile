@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   active_variants 1.1
@@ -42,13 +42,13 @@ distfiles           ${ncl_src}:ncl \
                     ${g2clib_src}:g2clib
 
 checksums   ${ncl_src} \
-                    rmd160  061d4230adfc9e601393a396aff06704ffa68c3c \
-                    sha256  cad4ee47fbb744269146e64298f9efa206bc03e7b86671e9729d8986bb4bc30e \
-                    size    60523044 \
+rmd160  061d4230adfc9e601393a396aff06704ffa68c3c \
+sha256  cad4ee47fbb744269146e64298f9efa206bc03e7b86671e9729d8986bb4bc30e \
+size    60523044 \
             ${g2clib_src} \
-                    rmd160  112d90fd297f772643d6223041f741d6e4101b49 \
-                    sha256  ec79fb768ce9e45ca6c2c94fa4dfc99b30600d7f8f44d272cdb36ab542d59468 \
-                    size    184817
+rmd160  112d90fd297f772643d6223041f741d6e4101b49 \
+sha256  ec79fb768ce9e45ca6c2c94fa4dfc99b30600d7f8f44d272cdb36ab542d59468 \
+size    184817
 
 depends_lib                 path:lib/pkgconfig/cairo.pc:cairo \
                             port:proj       \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -6,7 +6,7 @@ PortGroup           perl5 1.0
 name                rpm
 version             4.4.9
 revision            22
-perl5.branches      5.28
+perl5.branches 5.28
 platforms           darwin freebsd linux
 license             GPL-2 LGPL-2
 categories          sysutils archivers
@@ -22,7 +22,7 @@ long_description    The RPM Package Manager (RPM) is a powerful command line dri
 homepage            https://rpm.org
 master_sites        macports_distfiles:${name}
 checksums           rmd160  4abae3d8262a71eb3136c7817c5ae95bd8cd48e5 \
-                    sha256  1da0dd4fd6743db9a5cb89d04e2ee192130a7ac861d0344589c712f2faeb74fa
+sha256  1da0dd4fd6743db9a5cb89d04e2ee192130a7ac861d0344589c712f2faeb74fa
 
 depends_build       port:perl${perl5.major} \
                     port:python27

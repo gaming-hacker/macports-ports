@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Net-NfDump 1.25
 
 platforms           darwin
@@ -17,4 +17,4 @@ long_description    This module implements basic operations and allows to read, 
                     files produced with nfdump (http://nfdump.sourceforge.net/) tool.
 
 checksums           rmd160  fd1e5605b3c5ce618ba354625fdfa92ef21f17a8 \
-                    sha256  d0ca95c15940e046ab9be7b370cc4af138cb8c91cc836bf04f5936c7e202a240
+sha256  d0ca95c15940e046ab9be7b370cc4af138cb8c91cc836bf04f5936c7e202a240

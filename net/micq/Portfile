@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            micq
 version         0.5.4.2
@@ -17,8 +19,8 @@ platforms       darwin freebsd
 extract.suffix  .tgz
 master_sites    ${homepage}archives/
 checksums	md5 ce6f44a335dcc03877e357689ca35489 \
-		sha1 e9f90e8c2b9c99a9b8863aca0329bed72da127b7 \
-		rmd160 bc387467c64047198520fb65985343bd4ce6befb
+sha1 e9f90e8c2b9c99a9b8863aca0329bed72da127b7 \
+rmd160 bc387467c64047198520fb65985343bd4ce6befb
 
 post-destroot { system "cp ${worksrcpath}/doc/*png ${destroot}${prefix}/share/micq"
                 system "cp ${worksrcpath}/doc/*xpm ${destroot}${prefix}/share/micq" }

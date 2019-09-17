@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cxx11 1.1
@@ -45,8 +45,8 @@ depends_skip_archcheck  clang-${llvm_version} \
 
 master_sites            ${homepage}/
 checksums               rmd160  183be95aec282812724ec66204952ad33dbc923b \
-                        sha256  db1c0f123967f24d620b040cebd53001bf3dcf03e400f78556a2ff2e11fea063 \
-                        size    779318
+sha256  db1c0f123967f24d620b040cebd53001bf3dcf03e400f78556a2ff2e11fea063 \
+size    779318
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} <= 9} {

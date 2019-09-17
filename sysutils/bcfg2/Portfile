@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,9 +21,9 @@ platforms           darwin
 master_sites        ftp://ftp.mcs.anl.gov/pub/bcfg
 
 checksums           rmd160  c39f375ba20a5f457e3b2cd1b890a8baa877056c \
-                    sha256  0bb53c16b46ee5e27a7692c7c43b53876d25b1fe9354262a0271c70beaad5bb0
+sha256  0bb53c16b46ee5e27a7692c7c43b53876d25b1fe9354262a0271c70beaad5bb0
 
-python.default_version  27
+python.default_version 37
 
 patchfiles          patch-setup.py.diff
 

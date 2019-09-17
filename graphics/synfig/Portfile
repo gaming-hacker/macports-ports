@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,7 +27,7 @@ if {${subport} eq ${name}} {
                         images, and a flexible plugin system.
 
     checksums           rmd160  51f687541f7ea74b65caa3fee1cad694f8534745 \
-                        sha256  611ea9f156188c9ecbb99a21116b5330e5070c51a0ffa721c7791c46ec231dbf
+sha256  611ea9f156188c9ecbb99a21116b5330e5070c51a0ffa721c7791c46ec231dbf
 
     depends_build       port:pkgconfig
 
@@ -90,7 +90,7 @@ subport ETL {
                         Library (STL).
 
     checksums           rmd160  c9dcf4a0f3ef1cc33b4453416b3ca7c4f0f0f9a6 \
-                        sha256  ac5aeb9b8ec2c69dd455c6c72e104ff20c43e1e5dde6c0cd87f3f7d1b41d2746
+sha256  ac5aeb9b8ec2c69dd455c6c72e104ff20c43e1e5dde6c0cd87f3f7d1b41d2746
 
     # ETL-config is a wrapper around pkg-config
     depends_run         port:pkgconfig
@@ -120,7 +120,7 @@ subport synfigstudio {
                         saved in Synfig .sif or .sifz format.
 
     checksums           rmd160  c0cbbd19c0430ccd18f21c89c9d552776cee34be \
-                        sha256  159b6bef1f5a819602f82014f787c22d4c9108af749fcd4505ee37c4979b6c39
+sha256  159b6bef1f5a819602f82014f787c22d4c9108af749fcd4505ee37c4979b6c39
 
     depends_build       port:intltool \
                         port:pkgconfig

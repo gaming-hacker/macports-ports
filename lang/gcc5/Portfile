@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -41,13 +41,13 @@ distfiles           ${distname}${extract.suffix}:gcc ${ecj}:ecj
 extract.only        ${distname}${extract.suffix}
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  63fdc006c2289f81df664d1fd9b4124f71732e7b \
-                    sha256  530cea139d82fe542b358961130c69cfde8b3d14556370b65823d2f91f0ced87 \
-                    size    71096120 \
+rmd160  63fdc006c2289f81df664d1fd9b4124f71732e7b \
+sha256  530cea139d82fe542b358961130c69cfde8b3d14556370b65823d2f91f0ced87 \
+size    71096120 \
                     ${ecj} \
-                    rmd160  eb1b19d9ac0e9e265bf993f38b9576e3c710e91e \
-                    sha256  9506e75b862f782213df61af67338eb7a23c35ff425d328affc65585477d34cd \
-                    size    1619429
+rmd160  eb1b19d9ac0e9e265bf993f38b9576e3c710e91e \
+sha256  9506e75b862f782213df61af67338eb7a23c35ff425d328affc65585477d34cd \
+size    1619429
 
 depends_lib         port:cctools \
                     port:gmp \

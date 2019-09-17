@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -19,8 +19,8 @@ master_sites                sourceforge:project/geomview/${name}
 use_xz                      yes
 
 checksums                   rmd160  79ac83c23bd56150254487ea342dcbf3db46dff5 \
-                            sha256  0c61335b86762cd9b710ddd7582461f592ea844edb9da3fa728c083920549eb0 \
-                            size    256860
+sha256  0c61335b86762cd9b710ddd7582461f592ea844edb9da3fa728c083920549eb0 \
+size    256860
 
 depends_lib                 port:geomview \
                             port:xforms

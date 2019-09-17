@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                bittwist
 categories          net security
@@ -19,7 +21,7 @@ homepage            http://bittwist.sourceforge.net
 master_sites        sourceforge
 distname	    ${name}-bsd-${version}
 checksums           md5 10b5e7e13fe009bad6d7d100c60a600a \
-		    sha1 fbf749190146ab3aded38b38017605171c6c5062
+sha1 fbf749190146ab3aded38b38017605171c6c5062
 
 depends_lib         port:libpcap
 worksrcdir	    ${name}-${version}

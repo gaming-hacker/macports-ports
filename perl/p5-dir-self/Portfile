@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Dir-Self 0.11
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,6 +15,6 @@ long_description    Perl has two pseudo-constants describing the current locatio
 platforms           darwin
 
 checksums           rmd160  699a8000f5df05c86920b7bbd3e2521851ad555d \
-                    sha256  e251a51abc7d9ba3e708f73c2aa208e09d47a0c528d6254710fa78cc8d6885b5
+sha256  e251a51abc7d9ba3e708f73c2aa208e09d47a0c528d6254710fa78cc8d6885b5
 
 supported_archs     noarch

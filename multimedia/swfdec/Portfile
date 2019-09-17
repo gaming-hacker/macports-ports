@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -21,8 +21,8 @@ master_sites    ${homepage}download/${name}/${branch}/ \
                 ftp://mirror.iawnet.sandia.gov/pub/gentoo/distfiles
 
 checksums       md5     aece501d0e73f3e564200a44ec03c385 \
-                sha1    cf95930ccd0b66146c97d6e111b1e27ec0d802dc \
-                rmd160  1931b2c8b0ed54212e43fc8638b118c6bc559dda
+sha1    cf95930ccd0b66146c97d6e111b1e27ec0d802dc \
+rmd160  1931b2c8b0ed54212e43fc8638b118c6bc559dda
 
 depends_build   port:pkgconfig
 depends_lib     port:gstreamer010-gst-plugins-base \

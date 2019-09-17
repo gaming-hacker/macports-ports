@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,7 +32,7 @@ long_description \
 
 if {${name} eq ${subport}} {
     checksums       rmd160  ce9a54b6d11da4c5e042c760284f8b3c6ac5a4ff \
-                    sha256  79b4c54cdbaf02c1a9a691d9948fcb1a77a1591a813e904283a8b614b757e850
+sha256  79b4c54cdbaf02c1a9a691d9948fcb1a77a1591a813e904283a8b614b757e850
 
     conflicts       fetchmail-devel
 
@@ -44,7 +44,7 @@ subport fetchmail-devel {
     revision        1
 
     checksums       rmd160  c337d0b615d8a900eefab215a697f07db989eb7e \
-                    sha256  da6e50df42f37cab5e92be0acd476ff8abf3824f3e18eac2bd8ff818d4ca11dc
+sha256  da6e50df42f37cab5e92be0acd476ff8abf3824f3e18eac2bd8ff818d4ca11dc
 
     conflicts       fetchmail
 }

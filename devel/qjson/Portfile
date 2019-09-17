@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,7 +28,7 @@ long_description    QJson is a qt-based library that maps JSON data to QVariant 
 homepage            http://qjson.sourceforge.net/
 
 checksums           rmd160  14405882a8e53bbeaf85351d4741fafffe8ce115 \
-                    sha256  31d5849d9a37e39be60e8ab4a505c2647278893714cbeca8c34924c3e9377791
+sha256  31d5849d9a37e39be60e8ab4a505c2647278893714cbeca8c34924c3e9377791
 
 if {${subport} eq "qjson"} {
     configure.args-append   -DQT4_BUILD=1

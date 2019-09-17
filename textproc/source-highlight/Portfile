@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -23,7 +23,7 @@ homepage        https://www.gnu.org/software/src-highlite/
 platforms       darwin
 master_sites    gnu:src-highlite
 checksums       rmd160  a6e0ad1713deb2056984a97adc7dfd0e6610809f \
-                sha256  01336a7ea1d1ccc374201f7b81ffa94d0aecb33afc7d6903ebf9fbf33a55ada3
+sha256  01336a7ea1d1ccc374201f7b81ffa94d0aecb33afc7d6903ebf9fbf33a55ada3
 
 # bundled libtool version doesn't recognise -stdlib
 use_autoreconf  yes

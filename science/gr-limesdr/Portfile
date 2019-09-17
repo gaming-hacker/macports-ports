@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ if {[string first "-devel" $subport] > 0} {
     github.setup myriadrf gr-limesdr 14b29b3b9c46571fe6dbfd4c818ae5db419d1aa7
     version   20190703-[string range ${github.version} 0 7]
     checksums rmd160 eb504fc373e10766a3231c3ad6809d02885a3e9d \
-              sha256 288bc879cd7b8097070ac10678a9a15167c99117e87c55522f3792944b6e24d2 \
-              size   3086332
+sha256 288bc879cd7b8097070ac10678a9a15167c99117e87c55522f3792944b6e24d2 \
+size   3086332
     revision  0
 
     name            gr-limesdr-devel
@@ -34,8 +34,8 @@ if {[string first "-devel" $subport] > 0} {
 
     github.setup    myriadrf gr-limesdr 2.0.0 v
     checksums       rmd160  c8b2b7a745a316bcc7c6b7b0a1121da2bddea05a \
-                    sha256  6f2fcf42dd45ca3893c914752f803dd811e046c21c567286fd1ad35a8d362f05 \
-                    size    3083984
+sha256  6f2fcf42dd45ca3893c914752f803dd811e046c21c567286fd1ad35a8d362f05 \
+size    3083984
     revision        2
 
     conflicts       gr-limesdr-devel

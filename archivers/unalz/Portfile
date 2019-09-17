@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			unalz
 version         0.65
@@ -18,8 +20,8 @@ extract.suffix	.tgz
 depends_lib     port:libiconv
 
 checksums       md5 e4db2c4e3c8f6f5ee414b68bc55288e5 \
-                sha1 98a64f799892f7adfffd4635bd19826fe8f18b26 \
-                rmd160 bb55aee26e12c8bf0e4422b11feffa5c88844771
+sha1 98a64f799892f7adfffd4635bd19826fe8f18b26 \
+rmd160 bb55aee26e12c8bf0e4422b11feffa5c88844771
 
 worksrcdir		unalz
 

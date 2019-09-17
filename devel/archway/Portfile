@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            https://www.nongnu.org/archway/
 
 master_sites        https://savannah.nongnu.org/download/archway/
 checksums           md5 130b7aaec6fc57a5bc0d132158455ce9 \
-                    sha1 a8be0c8105b1647c1570dc903727e3e9100c6917 \
-                    rmd160 ac30f3df2db502ab5e162957264628e8fd540fa0
+sha1 a8be0c8105b1647c1570dc903727e3e9100c6917 \
+rmd160 ac30f3df2db502ab5e162957264628e8fd540fa0
 
 set perl_version    5.26
 

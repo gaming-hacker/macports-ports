@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name                    CoreOSMakefiles
 version                 77
 categories              devel
@@ -14,7 +16,7 @@ homepage                http://opensource.apple.com/source/${name}/
 master_sites            http://opensource.apple.com/tarballs/${name}/
 
 checksums               rmd160  ab3816588c11c9c9ef6720717d323846d69ebefe \
-                        sha256  6b8a9521bb65a2868181696f12515eb4c2498fb05a8f28075e29cb1eda67bae6
+sha256  6b8a9521bb65a2868181696f12515eb4c2498fb05a8f28075e29cb1eda67bae6
 
 supported_archs         noarch
 universal_variant       no

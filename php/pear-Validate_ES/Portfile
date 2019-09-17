@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,6 +12,6 @@ description         PEAR Validate_ES package
 long_description    ${description}
 
 checksums           rmd160  a858c7f1f3936473ca26905fb5935f0ff91793ed \
-                    sha256  1e69a23941c02daf83eeff867149b0de5af46dd21e81c01ecd9bd0a19adb227d
+sha256  1e69a23941c02daf83eeff867149b0de5af46dd21e81c01ecd9bd0a19adb227d
 
 depends_lib-append  port:pear-Validate

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,12 +23,12 @@ homepage            https://pypi.org/project/Poly/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            Poly-${version}
 checksums           rmd160  e69315fad0d91c404df727bdd4ca2cfac3be2eb6 \
-                    sha256  3597e207d6db6f7fc525b8cbadefb65bc9cf01f7e710ff83de8b0ab320715994 \
-                    size    26707
+sha256  3597e207d6db6f7fc525b8cbadefb65bc9cf01f7e710ff83de8b0ab320715994 \
+size    26707
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

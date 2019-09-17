@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 
 github.setup        keplerproject xavante 2.2.1 v
@@ -14,8 +16,8 @@ long_description    Xavante is a Lua HTTP 1.1 Web server that uses a modular arc
 homepage            http://keplerproject.github.com/xavante/ 
 platforms           darwin
 checksums           md5     fbbb0655095bcd6b8345095f39470a1a \
-                    sha1    9b75b3750bc058eb8af115d081d56d76c67fa4dc \
-                    rmd160  75c2a41d3c333d7e05a221eec2f816431ee8b515
+sha1    9b75b3750bc058eb8af115d081d56d76c67fa4dc \
+rmd160  75c2a41d3c333d7e05a221eec2f816431ee8b515
 patchfiles          patch-Makefile.diff \
 					patch-config.diff
 post-patch {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -31,13 +31,13 @@ distname            ${realname}-${version}
 distfiles-append    ${realname}-datumgrid-${datumgrid_ver}.zip
 
 checksums           ${realname}-${version}.tar.gz \
-                    rmd160  5fa62a0b66845020234c89967dcbf15036925be6 \
-                    sha256  b300c0f872f632ad7f8eb60725edbf14f0f8f52db740a3ab23e7b94f1cd22a50 \
-                    size    2685319 \
+rmd160  5fa62a0b66845020234c89967dcbf15036925be6 \
+sha256  b300c0f872f632ad7f8eb60725edbf14f0f8f52db740a3ab23e7b94f1cd22a50 \
+size    2685319 \
                     ${realname}-datumgrid-${datumgrid_ver}.zip \
-                    rmd160  f84c374f85c1314c7e357fd50683b67767cea358 \
-                    sha256  b9838ae7e5f27ee732fb0bfed618f85b36e8bb56d7afb287d506338e9f33861e \
-                    size    6601640
+rmd160  f84c374f85c1314c7e357fd50683b67767cea358 \
+sha256  b9838ae7e5f27ee732fb0bfed618f85b36e8bb56d7afb287d506338e9f33861e \
+size    6601640
 
 extract.only        ${realname}-${version}.tar.gz
 

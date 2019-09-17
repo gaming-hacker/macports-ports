@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         Interface to SQL databases, currently only \
 long_description    ${description}
 
 checksums           rmd160  322ffc24271b370ffe9a00b3e3df66a2935dd624 \
-                    sha256  3761962f08beed41aadae27f8a14336b1ad5bcdc046861fa325c82d8943916b0 \
-                    size    156339
+sha256  3761962f08beed41aadae27f8a14336b1ad5bcdc046861fa325c82d8943916b0 \
+size    156339
 
 depends_lib-append  port:octave-struct \
                     port:swig-octave

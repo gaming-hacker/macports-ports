@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                xorg-libXTrap
 version             1.0.1
@@ -17,8 +19,8 @@ use_bzip2           yes
 distname            libXTrap-${version}
 
 checksums           md5     076ff6279d202f19421b51af4f723935 \
-                    sha1    40850a53d916730720b8b32e9ebd5969f66115bf \
-                    rmd160  efd57663d5d032f7ae3230be963b1c1931e4b8ea
+sha1    40850a53d916730720b8b32e9ebd5969f66115bf \
+rmd160  efd57663d5d032f7ae3230be963b1c1931e4b8ea
 
 depends_build       port:pkgconfig
 

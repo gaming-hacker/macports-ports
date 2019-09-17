@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ configure.cxx_stdlib libstdc++
 use_zip             yes
 distfiles           dmd.${version}.osx${extract.suffix}
 checksums           rmd160  df24b4c874ff0bd892809638c592ff27efcf44f4 \
-                    sha256  3c326eb35974bd7701844115472a2984fd9d78a3746f1ac21a908f2fe0f62291 \
-                    size    30980002
+sha256  3c326eb35974bd7701844115472a2984fd9d78a3746f1ac21a908f2fe0f62291 \
+size    30980002
 
 worksrcdir          dmd2
 

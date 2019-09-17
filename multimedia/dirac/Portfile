@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -24,8 +24,8 @@ long_description \
     competitive with other state of the art codecs.
 
 checksums       md5     a57c2c5e58062d437d9ab13dffb28f0f \
-                sha1    895aaad832a54b754e58f77c87d38c0c37752b0b \
-                rmd160  0af65c4216230b5418667081cecb7bdcdc853d2e
+sha1    895aaad832a54b754e58f77c87d38c0c37752b0b \
+rmd160  0af65c4216230b5418667081cecb7bdcdc853d2e
 
 patchfiles      patch-Makefile.am.diff  patch-doc-Makefile.am.diff nolibstdc++.patch
 

@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             geos2
 version          2.2.3
@@ -18,8 +20,8 @@ use_bzip2        yes
 distname         geos-${version}
 
 checksums	       md5 440be2b11fd3d711e950a47ea6f1b424 \
-                 sha1 c5da21829255e3625f7c2482c9220234cc5d9f90 \
-                 rmd160 968de157f96f41aa71d5ef7c28c7186e8db0939e
+sha1 c5da21829255e3625f7c2482c9220234cc5d9f90 \
+rmd160 968de157f96f41aa71d5ef7c28c7186e8db0939e
 
 test.run         yes
 test.cmd         make

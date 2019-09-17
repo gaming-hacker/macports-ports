@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 PortSystem     1.0
 
 name           yap
@@ -24,7 +24,7 @@ homepage        http://www.dcc.fc.up.pt/~vsc/yap/
 master_sites    ${homepage}
 
 checksums       sha1 1084b1630b48a430d60d6aee8e31914ecc6d5369 \
-                rmd160 b35264a7911c73d095426fb3790a104d41d44157
+rmd160 b35264a7911c73d095426fb3790a104d41d44157
 
 depends_lib     port:gmp \
                 port:readline

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          culerity 0.2.10 gem {} rubygems ruby19
@@ -14,8 +16,8 @@ maintainers         nomaintainer
 homepage            https://github.com/langalex/culerity
 platforms           darwin
 checksums           md5     b8d90ed163bfcbcf800204ae9165cb45 \
-                    sha1    aff72d4e1a9ccb7f0966c5d3aac526049f7465b9 \
-                    rmd160  c0b119705205a1df35b04761319294c0de9b0de9
+sha1    aff72d4e1a9ccb7f0966c5d3aac526049f7465b9 \
+rmd160  c0b119705205a1df35b04761319294c0de9b0de9
 
 depends_run         port:rb19-rspec \
                     port:rb19-cucumber

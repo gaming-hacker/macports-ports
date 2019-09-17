@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -18,7 +18,7 @@ homepage                http://launchpad.net/postgresql-unaccent/
 master_sites            ${homepage}trunk/${version}/+download/
 
 checksums               sha1    2867e9f95e764da3d04fe3719275ae05503033bd \
-                        rmd160  85e8ed5221c4e3a659d6d3091460207ac9f29746
+rmd160  85e8ed5221c4e3a659d6d3091460207ac9f29746
 
 depends_lib             port:unac
 

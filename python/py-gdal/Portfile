@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ master_sites        pypi:${_n}/${_name}/
 distname            ${_name}-${version}
 
 checksums           rmd160  a0d87d677475c0fef53a4a318a23e5e0cf09789a \
-                    sha256  1741bc59c5ceb9b1c50763348cd1050048fc916b23d08138982a340485f0e4af \
-                    size    576241
+sha256  1741bc59c5ceb9b1c50763348cd1050048fc916b23d08138982a340485f0e4af \
+size    576241
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append     port:gdal \

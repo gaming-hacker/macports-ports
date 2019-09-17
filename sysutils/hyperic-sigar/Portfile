@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ platforms           darwin
 
 master_sites        sourceforge:sigar
 checksums           md5     bc20535650a7529e72c4b5c7a76c9f04 \
-                    sha1    1f377f0a635f0ee9b8d987aa0ec28f2e75436ed0 \
-                    rmd160  5c7526fe2753f40c67dfa1958bb7460a69f76ad2
+sha1    1f377f0a635f0ee9b8d987aa0ec28f2e75436ed0 \
+rmd160  5c7526fe2753f40c67dfa1958bb7460a69f76ad2
 
 use_configure       no
 

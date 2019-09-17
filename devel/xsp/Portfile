@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ homepage            https://www.mono-project.com/docs/web/aspnet/
 master_sites        https://download.mono-project.com/sources/xsp/
 
 checksums           rmd160  733e6d868e7126a9081658bcb7626d0404c3ed73 \
-                    sha256  5a5cb7a91f0298e01e3773dc1626b381f9a4b15ecd61e1476c0d00a45784b639 \
-                    size    736913
+sha256  5a5cb7a91f0298e01e3773dc1626b381f9a4b15ecd61e1476c0d00a45784b639 \
+size    736913
 
 depends_build       port:pkgconfig
 

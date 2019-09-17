@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -35,8 +35,8 @@ if {${subport} eq ${name}} {
     use_xz              yes
 
     checksums           rmd160  741945a320ffc27e18e7046f1b30fd2d1fceb7cc \
-                        sha256  2488f1105ba8008996b4f6a0df5c556c657c733a47a422ea3f2e59115c051758 \
-                        size    22520
+sha256  2488f1105ba8008996b4f6a0df5c556c657c733a47a422ea3f2e59115c051758 \
+size    22520
 } else {
     # devel
     conflicts           lxqt-build-tools
@@ -47,6 +47,6 @@ if {${subport} eq ${name}} {
     revision            0
 
     checksums           rmd160  2e03b8a20abb0834b0413db29edfb00bad359fe5 \
-                        sha256  21a445f586bd9e40643bc86be5c16c73dd067dd3edcfccf1f904ebeadfe4b51d \
-                        size    26218
+sha256  21a445f586bd9e40643bc86be5c16c73dd067dd3edcfccf1f904ebeadfe4b51d \
+size    26218
 }

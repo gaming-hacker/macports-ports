@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         XML-Atom 0.42
 maintainers         nomaintainer
 categories-append   textproc
@@ -14,7 +14,7 @@ long_description    Atom is a syndication, API, and archiving format \
                     the feed format as well as a client for the API.
 
 checksums           rmd160  a2a44790837616a485cb142975abb1821a9cc550 \
-                    sha256  c61b46b89ddcff43d202573943a35088d899af879cd4d8ff3caf121ebc9b48f1
+sha256  c61b46b89ddcff43d202573943a35088d899af879cd4d8ff3caf121ebc9b48f1
 
 platforms           darwin
 

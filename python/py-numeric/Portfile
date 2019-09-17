@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -22,10 +22,10 @@ master_sites    sourceforge:project/numpy/Old%20Numeric/${version}/ \
 distname        Numeric-${version}
 
 checksums       md5 2ae672656e06716a149acb048cca3093 \
-                sha1 72869ef80c12630a9a125ba10c96093b6ae16aff \
-                rmd160 c9502db28663558c535e236392c9beddec9743bb
+sha1 72869ef80c12630a9a125ba10c96093b6ae16aff \
+rmd160 c9502db28663558c535e236392c9beddec9743bb
 
-python.versions 26 27
+python.versions 27 37
 
 if {$subport ne $name} {
     patchfiles      patch-ranf.c.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -20,7 +20,7 @@ platforms           darwin
 # master_sites        http://iaida.dynalias.net/downloads/
 
 checksums           rmd160  5afdd32b3edae8464cef317bff05f0bcb57abbc9 \
-                    sha256  d3bfe1790a3f79b9aed4785d06263d9f9bde8f584bf2c8d5bbaf5a06f9d9eb3f
+sha256  d3bfe1790a3f79b9aed4785d06263d9f9bde8f584bf2c8d5bbaf5a06f9d9eb3f
 
 depends_lib         port:aida \
                     port:boost \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ distname            ${name}src.v${version}
 worksrcdir          ${name}-${version}
 
 checksums           rmd160  b68c38b896e01136a131c1524bf0a697867a98f0 \
-                    sha256  39e111cd9da5e72a589b98feeded334bb0e5776511e507e3d811ab25a213a3cd \
-                    size    1028200
+sha256  39e111cd9da5e72a589b98feeded334bb0e5776511e507e3d811ab25a213a3cd \
+size    1028200
 
 configure.ldflags-delete    -L${prefix}/lib
 configure.cppflags-delete   -I${prefix}/include

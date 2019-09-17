@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ if {${subport} eq "${name}"} {
     conflicts           LibreCAD-devel
     github.setup        LibreCAD LibreCAD 2.1.3
     checksums           rmd160  2f50b879e95c0ecc019dd5b7f6a218f62744cc1b \
-                        sha256  5d0bc37efa1006742785c06ec30737c7866b0366048553c5560e06a3e442f7b3 \
-                        size    22416015
+sha256  5d0bc37efa1006742785c06ec30737c7866b0366048553c5560e06a3e442f7b3 \
+size    22416015
                  
     post-extract {
         reinplace "s|lrelease|${qt_bins_dir}/lrelease|g" scripts/postprocess-osx.sh
@@ -29,8 +29,8 @@ if {${subport} eq "${name}"} {
     version             2.2.0-20190419
 
     checksums           rmd160  c63d35a9e5261d1401faaffb3e4c7549a13b4deb \
-                        sha256  f290a99498ebc5fcd359fe97645491ff3ef0ccab8c6feb56a2626cb7c1de34bd \
-                        size    13610022
+sha256  f290a99498ebc5fcd359fe97645491ff3ef0ccab8c6feb56a2626cb7c1de34bd \
+size    13610022
 }
 
 # the default destructor cannot be created in all cases

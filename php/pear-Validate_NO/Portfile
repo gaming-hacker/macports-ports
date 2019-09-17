@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,4 +12,4 @@ description         PEAR Validate_NO package
 long_description    ${description}
 
 checksums           rmd160  6dbd05b7522e3434062fcbc410d6d6463cdebc4b \
-                    sha256  c174e7b8d64de3b363c4e039d4a6096cc78be8b8320cec3f06abad449c0dd710
+sha256  c174e7b8d64de3b363c4e039d4a6096cc78be8b8320cec3f06abad449c0dd710

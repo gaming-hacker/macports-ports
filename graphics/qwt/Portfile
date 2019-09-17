@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ if {${subport} eq ${name}} {
     revision        3
     conflicts       qwt52 qwt60 qwt61
     checksums       sha1    2fc04b78c438635a78e41a22fea6f9e016f7ca17 \
-                    rmd160  a5a94aa3870a631f9605e6370c4d04fb1c79347e
+rmd160  a5a94aa3870a631f9605e6370c4d04fb1c79347e
     patchfiles      patch-qwtconfig.pri.51.diff
     livecheck.url   http://sourceforge.net/api/file/index/project-id/13693/mtime/desc/rss
     livecheck.regex \\/qwt\\/(5\\.1\\.\\d+)\\/
@@ -37,7 +37,7 @@ subport qwt52 {
     distname        qwt-${version}
     conflicts       qwt qwt60 qwt61
     checksums       sha1    ff81595a1641a8b431f98d6091bb134bc94e0003 \
-                    rmd160  9b2128ad2b53a65678f9ea57d34cdc73a3674d21
+rmd160  9b2128ad2b53a65678f9ea57d34cdc73a3674d21
     patchfiles      patch-qwtconfig.pri.52.diff
     livecheck.url   http://sourceforge.net/api/file/index/project-id/13693/mtime/desc/rss
     livecheck.regex \\/qwt\\/(5\\.2\\.\\d+)\\/
@@ -51,7 +51,7 @@ subport qwt60 {
     distname        qwt-${version}
     conflicts       qwt qwt52 qwt61
     checksums       sha1    cbdd00b29521987c9e7bc6aa51092f0474b9428d \
-                    rmd160  c9d31f40b6001f09c59dbf4c0628ddd860474821
+rmd160  c9d31f40b6001f09c59dbf4c0628ddd860474821
     patchfiles      patch-qwtconfig.pri.60.diff \
                     patch-qwtbuild.pri.60.diff \
                     patch-qwtfunctions.pri.60.diff \
@@ -67,7 +67,7 @@ subport qwt61 {
     distname        qwt-${version}
     conflicts       qwt qwt52 qwt60
     checksums       rmd160 1e36e79dab0ecc4df89d9fb20607925fe261c6b3 \
-                    sha256 f3ecd34e72a9a2b08422fb6c8e909ca76f4ce5fa77acad7a2883b701f4309733
+sha256 f3ecd34e72a9a2b08422fb6c8e909ca76f4ce5fa77acad7a2883b701f4309733
 
     use_parallel_build  yes
 

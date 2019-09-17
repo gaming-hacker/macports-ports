@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ license             BSD
 
 master_sites        sourceforge:${name}
 checksums           ${distname}${extract.suffix} \
-                    rmd160  3c7a4397d20f6b8d5d1f5fe5ab775cf9e8aafd20 \
-                    sha256  b2ccc1b9f277251f495a96cd187f01dc101047b101079176154f5d19dd972880
+rmd160  3c7a4397d20f6b8d5d1f5fe5ab775cf9e8aafd20 \
+sha256  b2ccc1b9f277251f495a96cd187f01dc101047b101079176154f5d19dd972880
 
 patchfiles          patch-dic_Makefile.diff
 
@@ -47,8 +47,8 @@ variant voice description {Add HTS voices and a demo script} {
     distfiles-append    ${voice_nitech_dist}
     master_sites-append sourceforge:project/sinsy/files/HTS%20voice/${voice_nitech}/
     checksums-append    ${voice_nitech_dist} \
-                        rmd160  502e4b10d2a147bc6f3fbc8d609aea123eea1898 \
-                        sha256  461c94d2eadd4f81d31ae860527382002cb7bfc5a28b9648bfa96ca89b33b227
+rmd160  502e4b10d2a147bc6f3fbc8d609aea123eea1898 \
+sha256  461c94d2eadd4f81d31ae860527382002cb7bfc5a28b9648bfa96ca89b33b227
 
     post-destroot {
         # copy voice data.

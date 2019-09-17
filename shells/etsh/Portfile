@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            https://etsh.io/
 master_sites        ${homepage}src/
 
 checksums           rmd160  28a90c52738af122e88adaf3255fdb05aa17acfc \
-                    sha256  af561b7fa2f9eb872e2e5a71a8f8e5479f8bb5829a8ec1534f0240475c3dfe5e \
-                    size    143583
+sha256  af561b7fa2f9eb872e2e5a71a8f8e5479f8bb5829a8ec1534f0240475c3dfe5e \
+size    143583
 
 configure.pre_args
 

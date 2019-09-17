@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ long_description    A set of graphical tools for the Mercurial distributed \
                     source control management system.
 
 checksums           rmd160  e5ace5f7200036548266208c43b22806bd68b412 \
-                    sha256  8a59ecf7cadd93ce320e842e9a6c77ad1065e02040262bde0c953028fbb69178 \
-                    size    8262684
+sha256  8a59ecf7cadd93ce320e842e9a6c77ad1065e02040262bde0c953028fbb69178 \
+size    8262684
 
-python.default_version 27
+python.default_version 37
 
 # we use qt5 only if macOS is 10.12 or later
 # as defined on qt5 port

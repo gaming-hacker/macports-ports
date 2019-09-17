@@ -1,5 +1,5 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-
-# vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*-
+# vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 
@@ -23,9 +23,9 @@ master_sites      ${homepage}
 distfiles         cdk.tar.gz
 dist_subdir       ${name}/${version}
 checksums \
-    md5 dea61345f17ee4d7aa1f2e50d248696a            \
-    sha1 6259f67e03f2f790f78e638984e90a0b736f1a04   \
-    rmd160 f2d4470d4b0f212a73c55506a678b265033521d3
+md5 dea61345f17ee4d7aa1f2e50d248696a            \
+sha1 6259f67e03f2f790f78e638984e90a0b736f1a04   \
+rmd160 f2d4470d4b0f212a73c55506a678b265033521d3
 
 depends_lib       port:ncurses
 

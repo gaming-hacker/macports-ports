@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -30,8 +30,8 @@ long_description        iSightCapture captures a single frame from an \
                         only been tested with Mac OS X Tiger and iSight.
 
 checksums               md5     b0adf800e285ca0bc46f20d2450d45fa \
-                        sha1    038cc8852641c4ca10f4960eb30d508a0e9b99c1 \
-                        rmd160  fcbfc6bf0dd08d3b8a4a268378a57b54a5bfd82e
+sha1    038cc8852641c4ca10f4960eb30d508a0e9b99c1 \
+rmd160  fcbfc6bf0dd08d3b8a4a268378a57b54a5bfd82e
 
 use_configure           no
 

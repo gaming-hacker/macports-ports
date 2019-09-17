@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -20,8 +20,8 @@ use_xz              yes
 master_sites        https://mesa.freedesktop.org/archive
 
 checksums           sha1    2acc201e24ea67c5231074d6746a42a747228ed6 \
-                    rmd160  43a9b758462316ad344ccdccf72d6d0ce295620e \
-                    sha256  0686deadde1f126b20aa67e47e8c50502043eee4ecdf60d5009ffda3cebfee50
+rmd160  43a9b758462316ad344ccdccf72d6d0ce295620e \
+sha256  0686deadde1f126b20aa67e47e8c50502043eee4ecdf60d5009ffda3cebfee50
 
 depends_build       port:pkgconfig \
                     port:flex \

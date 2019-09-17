@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell_stack 1.0
@@ -7,8 +7,8 @@ name                darcs
 version             2.14.2
 revision            0
 checksums           rmd160  efe4f297156099223f01f24b23b9fab3e9136e8e \
-                    sha256  65d160a43874960dcba114c0b74d9c7b25d098486f515655502f42ff0c22a27e \
-                    size    1067578
+sha256  65d160a43874960dcba114c0b74d9c7b25d098486f515655502f42ff0c22a27e \
+size    1067578
 
 categories          devel haskell
 maintainers         {cal @neverpanic} openmaintainer

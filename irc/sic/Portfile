@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             sic
 version          1.2
@@ -16,7 +18,7 @@ platforms        darwin
 license          MIT
 master_sites     http://dl.suckless.org/tools/
 checksums        rmd160 19810b37d5635dbf7e3155344a6dff71b9c8bacc \
-                 sha256 ac07f905995e13ba2c43912d7a035fbbe78a628d7ba1c256f4ca1372fb565185
+sha256 ac07f905995e13ba2c43912d7a035fbbe78a628d7ba1c256f4ca1372fb565185
 
 patchfiles       patch-config.mk
 

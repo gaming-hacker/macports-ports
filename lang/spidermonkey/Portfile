@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  muniversal 1.0
@@ -18,8 +18,8 @@ homepage            https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Sp
 master_sites        https://ftp.mozilla.org/pub/js/
 distname            js-${version}
 checksums           md5 5571134c3863686b623ebe4e6b1f6fe6 \
-                    sha1 1a99e8e10cb6600a03ea98895583a8ed42136d1f \
-                    rmd160 6eadf1ac7c10a13b3db3d499856c9e18ddbcdfdb
+sha1 1a99e8e10cb6600a03ea98895583a8ed42136d1f \
+rmd160 6eadf1ac7c10a13b3db3d499856c9e18ddbcdfdb
 
 depends_lib         port:nspr \
                     port:readline

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Gnome2-Wnck 0.16
 revision            3
 license             LGPL-2.1+
@@ -15,8 +15,8 @@ long_description    This module allows you to use the Window Navigator Construct
 platforms           darwin
 
 checksums           md5     439f4569ffd7af96ef1d3feaab23760e \
-                    sha1    9a9a9876871d5192e7e04db4e65633cf02f75ff0 \
-                    rmd160  919d78b7a556215efa2ab3a6639f48552fd3a2e1
+sha1    9a9a9876871d5192e7e04db4e65633cf02f75ff0 \
+rmd160  919d78b7a556215efa2ab3a6639f48552fd3a2e1
 
 if {${perl5.major} != ""} {
     depends_lib-append \

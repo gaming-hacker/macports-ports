@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ long_description    The MenuMeters monitors are true SystemUIServer plugins     
                     across logins and restarts.
 
 checksums           rmd160  61843c5aebc9550036c91674600f738e232982a4 \
-                    sha256  217c374ab5f324230e281bde8d424dbd0db016ce522e8d262845a55464b68ba5 \
-                    size    228098
+sha256  217c374ab5f324230e281bde8d424dbd0db016ce522e8d262845a55464b68ba5 \
+size    228098
 
 patchfiles          patch-MenuMeters.xcodeproj-project.pbxproj.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake   1.1
@@ -29,8 +29,8 @@ use_xz              yes
 homepage            http://www.cgal.org/
 
 checksums           rmd160  12b008b415133061f6b4933093c889890e4f4c72 \
-                    sha256  59464b1eaee892f2223ba570a7642892c999e29524ab102a6efd7c29c94a29f7 \
-                    size    15602228
+sha256  59464b1eaee892f2223ba570a7642892c999e29524ab102a6efd7c29c94a29f7 \
+size    15602228
 
 worksrcdir          CGAL-${version}
 depends_lib-append  port:boost \

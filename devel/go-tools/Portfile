@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,8 +14,8 @@ description         Various packages and tools that support the Go programming l
 long_description    $description
 
 checksums           rmd160  88f1cb58db2d89ea3b4a4df3d14b58bda612c68c \
-                    sha256  9405518b3f8935f923a8d17451fa0509d365442774ba1ab5c261888b85f0f9f5 \
-                    size    2109599
+sha256  9405518b3f8935f923a8d17451fa0509d365442774ba1ab5c261888b85f0f9f5 \
+size    2109599
 		    
 depends_build	    port:go
 

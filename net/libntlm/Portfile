@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		libntlm
 version		1.2
@@ -18,7 +20,7 @@ homepage	http://josefsson.org/libntlm
 master_sites	http://josefsson.org/libntlm/releases
 platforms	darwin
 checksums	md5 13b40af721b29005652fb429a3ae9582 \
-		sha1 27538a3375690a37574fa991fbd327d150d8b505 \
-		rmd160 b7344213f2510c93e30583fc567961a4e6aedd13
+sha1 27538a3375690a37574fa991fbd327d150d8b505 \
+rmd160 b7344213f2510c93e30583fc567961a4e6aedd13
 configure.args	--infodir=${prefix}/share/info \
 		--mandir=${prefix}/share/man

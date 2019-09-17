@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -14,11 +14,11 @@ description         Geomagnetic analysis tools.
 long_description    ${description}
 
 checksums           rmd160  2493f090aa46af18693b985f2b7b1ac8879603cd \
-                    sha256  0a3f789c7916393fa888855fcef51d476aa574fef9f9663b7a5f3e40ade7705a \
-                    size    8177303
+sha256  0a3f789c7916393fa888855fcef51d476aa574fef9f9663b7a5f3e40ade7705a \
+size    8177303
 
 # python3 versions are currently broken
-python.versions     27
+python.versions 27 37
 
 # TODO:
 # - add a port py-autobahn

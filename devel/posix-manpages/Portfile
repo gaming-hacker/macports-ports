@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        https://www.kernel.org/pub/linux/docs/man-pages/man-pages-po
 distname            man-pages-posix-${version}-a
 
 checksums           rmd160  b19d97fad34a199ebb34bb3b4085e1439f63de77 \
-                    sha256  77de3cc94de6312d2b18d4bfd53b8922456688212dbfdee3ede6191f400a4b29 \
-                    size    1489221
+sha256  77de3cc94de6312d2b18d4bfd53b8922456688212dbfdee3ede6191f400a4b29 \
+size    1489221
 
 use_configure       no
 build {}

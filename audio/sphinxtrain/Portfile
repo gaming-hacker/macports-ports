@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                sphinxtrain
 version             1.0.8
@@ -16,7 +18,7 @@ depends_build       port:pkgconfig
 depends_lib         port:sphinxbase bin:perl:perl5 port:python27
 
 checksums           rmd160  1238b9dcc296dc0cab3fc4d0d7c55649b6917b74 \
-                    sha256  548e3e513ceaa1b2fd6fd7ed1724349e0a4bf7bdeb11be9c91787e6f2b865203
+sha256  548e3e513ceaa1b2fd6fd7ed1724349e0a4bf7bdeb11be9c91787e6f2b865203
 
 set python.branch       2.7
 set python.prefix       ${frameworks_dir}/Python.framework/Versions/${python.branch}

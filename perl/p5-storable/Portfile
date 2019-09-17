@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Storable 3.15
 
 platforms           darwin
@@ -14,5 +14,5 @@ description         Storable - persistence for Perl data structures
 long_description    ${description}
 
 checksums           rmd160  eb227a9966603bd64078630673779284f5061d96 \
-                    sha256  fc3dad06cb2e6fc86a2f2abc5b5491d9da328ca3e6b6306559c224521db174da \
-                    size    200589
+sha256  fc3dad06cb2e6fc86a2f2abc5b5491d9da328ca3e6b6306559c224521db174da \
+size    200589

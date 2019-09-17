@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # This PortGroup automatically sets all the fields of the various cross binutils
 # ports (e.g. spu-binutils).
@@ -12,29 +12,29 @@ options crossbinutils.target
 
 array set crossbinutils.versions_info {
     2.26 {bzip2 {
-        rmd160  ce0400ffcc1200280854fefb29f97b63507bad14 \
-        sha256  c2ace41809542f5237afc7e3b8f32bb92bc7bc53c6232a84463c423b0714ecd9 \
-        size    25543552
+rmd160  ce0400ffcc1200280854fefb29f97b63507bad14 \
+sha256  c2ace41809542f5237afc7e3b8f32bb92bc7bc53c6232a84463c423b0714ecd9 \
+size    25543552
     }}
     2.30 {xz {
-        rmd160  7f439bd642e514e89075a47758414ea65c50c3b3 \
-        sha256  6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6 \
-        size    20286700
+rmd160  7f439bd642e514e89075a47758414ea65c50c3b3 \
+sha256  6e46b8aeae2f727a36f0bd9505e405768a72218f1796f0d09757d45209871ae6 \
+size    20286700
     }}
     2.31 {xz {
-        rmd160  cc4eece9d281ca10511e0618fac1f6ddbd9b42df \
-        sha256  231036df7ef02049cdbff0681f4575e571f26ea8086cf70c2dcd3b6c0f4216bf \
-        size    20445772
+rmd160  cc4eece9d281ca10511e0618fac1f6ddbd9b42df \
+sha256  231036df7ef02049cdbff0681f4575e571f26ea8086cf70c2dcd3b6c0f4216bf \
+size    20445772
     }}
     2.31.1 {xz {
-        rmd160  9eeff67d0ae96bfb1bd1db20991b90166d5b15c5 \
-        sha256  5d20086ecf5752cc7d9134246e9588fa201740d540f7eb84d795b1f7a93bca86 \
-        size    20467996
+rmd160  9eeff67d0ae96bfb1bd1db20991b90166d5b15c5 \
+sha256  5d20086ecf5752cc7d9134246e9588fa201740d540f7eb84d795b1f7a93bca86 \
+size    20467996
     }}
     2.32 {xz {
-        rmd160  cfff50aae6534512a51fbb720e30f37484f8193e \
-        sha256  0ab6c55dd86a92ed561972ba15b9b70a8b9f75557f896446c82e8b36e473ee04 \
-        size    20774880
+rmd160  cfff50aae6534512a51fbb720e30f37484f8193e \
+sha256  0ab6c55dd86a92ed561972ba15b9b70a8b9f75557f896446c82e8b36e473ee04 \
+size    20774880
     }}
 }
 

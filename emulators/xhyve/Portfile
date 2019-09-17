@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description \
     may gain support for other guest operating systems in the future.
 
 checksums           rmd160  62cc38624eee0780f1d4bf85166ec557c3313518 \
-                    sha256  bc586c6bbb9f6e28e64bf98b1b24e2abfe5698bb7f3970940957979048d36758 \
-                    size    11717868
+sha256  bc586c6bbb9f6e28e64bf98b1b24e2abfe5698bb7f3970940957979048d36758 \
+size    11717868
 
 post-patch {
     foreach script [glob -- ${worksrcpath}/${name}run-*.sh] {

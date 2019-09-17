@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -6,8 +6,8 @@ PortGroup               github 1.0
 github.setup            Winetricks winetricks 20190615
 revision                1
 checksums               rmd160  4f35d538ea886e47c1852df0a5e58eb02e9095b8 \
-                        sha256  1a0f31544ebbb87e3f518d2ed93e0122db5782097f15c4cc3ca3969ab477b5ee \
-                        size    681081
+sha256  1a0f31544ebbb87e3f518d2ed93e0122db5782097f15c4cc3ca3969ab477b5ee \
+size    681081
 
 categories              x11
 maintainers             {ryandesign @ryandesign} openmaintainer

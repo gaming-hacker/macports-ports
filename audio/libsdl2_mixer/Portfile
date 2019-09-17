@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            libsdl2_mixer
 set my_name     SDL2_mixer
@@ -19,7 +21,7 @@ master_sites    ${homepage}release/
 distname        ${my_name}-${version}
 
 checksums       rmd160 d5674a92bc9a81e3aba0072c4d7e2314e56958d6 \
-                sha256 b4cf5a382c061cd75081cf246c2aa2f9df8db04bdda8dcdc6b6cca55bede2419
+sha256 b4cf5a382c061cd75081cf246c2aa2f9df8db04bdda8dcdc6b6cca55bede2419
 
 depends_build   port:pkgconfig
 depends_lib     port:libsdl2 \

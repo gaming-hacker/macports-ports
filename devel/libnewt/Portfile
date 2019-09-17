@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                libnewt
 version             0.52.21
 revision            0
 checksums           rmd160  f9594ab077399486d682a6b20ab0d831460843da \
-                    sha256  265eb46b55d7eaeb887fca7a1d51fe115658882dfe148164b6c49fccac5abb31 \
-                    size    174895
+sha256  265eb46b55d7eaeb887fca7a1d51fe115658882dfe148164b6c49fccac5abb31 \
+size    174895
 
 categories          devel
 platforms           darwin

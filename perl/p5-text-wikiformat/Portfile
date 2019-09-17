@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Text-WikiFormat 0.81
 revision            2
 license             {Artistic-1 GPL}
@@ -12,7 +12,7 @@ description         Module for translating Wiki formatted text into other format
 long_description    ${description}
 
 checksums           rmd160  fea36f200cb04eddda7299de2391667e25821a6a \
-                    sha256  e43cd995ad9157a7e839d993ee7b6c4d1854947e557d096d9d5aaf74507fab33
+sha256  e43cd995ad9157a7e839d993ee7b6c4d1854947e557d096d9d5aaf74507fab33
 
 platforms           darwin
 

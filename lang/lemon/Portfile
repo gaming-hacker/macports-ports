@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                lemon
 version             1.39
@@ -14,8 +16,8 @@ homepage            https://www.hwaci.com/sw/lemon/
 master_sites        https://people.FreeBSD.org/~seanc/ports/lemon/ \
                     freebsd
 checksums           sha1    0baa13c54d437b21ccf802792e4ef081e5af3348 \
-                    rmd160  fe09fb8862467da6e20090bbab18d0fb1971cfbc \
-                    sha256  22ea0766611dcfa33629a9d44c275e82c9060bcfd2a2662d0ff533d428b5b5dd
+rmd160  fe09fb8862467da6e20090bbab18d0fb1971cfbc \
+sha256  22ea0766611dcfa33629a9d44c275e82c9060bcfd2a2662d0ff533d428b5b5dd
 use_bzip2           yes
 post-extract {
     xinstall -m 644 ${filespath}/Makefile ${worksrcpath}

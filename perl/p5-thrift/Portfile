@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Thrift 0.10.0
 platforms           darwin
 maintainers         nomaintainer
@@ -24,8 +24,8 @@ dist_subdir         thrift
 distname            thrift-${version}
 
 checksums           sha1   5c67fb6d2e01fa4ee02823a9c577f4d985f0ecfe \
-                    rmd160 cf7d49bf4d39c980c7549088e947c12df4d1046d \
-                    sha256 2289d02de6e8db04cbbabb921aeb62bfe3098c4c83f36eec6c31194301efa10b
+rmd160 cf7d49bf4d39c980c7549088e947c12df4d1046d \
+sha256 2289d02de6e8db04cbbabb921aeb62bfe3098c4c83f36eec6c31194301efa10b
 
 if {${perl5.major} != ""} {
     configure.dir   ${worksrcpath}/lib/perl

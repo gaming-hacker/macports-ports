@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,8 +19,8 @@ platforms           darwin
 depends_lib         port:pcre
 
 checksums           rmd160  14a1e30f0db589c7c37592855aad432c705cef68 \
-                    sha256  ad16136ab410aebf1abbf7f6d457412e7b3cab27a903abc952224e1d4102fd20 \
-                    size    66999
+sha256  ad16136ab410aebf1abbf7f6d457412e7b3cab27a903abc952224e1d4102fd20 \
+size    66999
 
 pre-build {
     file mkdir "${worksrcpath}/doc/man"

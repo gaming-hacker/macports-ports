@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,9 +20,9 @@ long_description \
     the server component.
 
 checksums \
-    md5     d3ab75534253f57766be0f835a6c95da \
-    sha1    4ca87b1065d3d6b1559b582f0a6c5af476f0bb71 \
-    rmd160  0bb3029dca0a3c88177559052e5cd4192107cfc6
+md5     d3ab75534253f57766be0f835a6c95da \
+sha1    4ca87b1065d3d6b1559b582f0a6c5af476f0bb71 \
+rmd160  0bb3029dca0a3c88177559052e5cd4192107cfc6
 
 depends_build           port:pkgconfig
 

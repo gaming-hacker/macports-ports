@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            less
 version         551
@@ -20,8 +22,8 @@ homepage        http://www.greenwoodsoftware.com/less/
 master_sites    ${homepage}
 
 checksums       rmd160  7011513218523819c0565ffdda305c432a034c11 \
-                sha256  ff165275859381a63f19135a8f1f6c5a194d53ec3187f94121ecd8ef0795fe3d \
-                size    347007
+sha256  ff165275859381a63f19135a8f1f6c5a194d53ec3187f94121ecd8ef0795fe3d \
+size    347007
 
 depends_lib     port:ncurses \
                 port:gettext

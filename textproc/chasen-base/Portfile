@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ distname            chasen-${version}
 
 master_sites        sourceforge_jp:chasen-legacy/24339
 checksums           rmd160  2f2416f82fb0341023314a4672e442fed86207a9 \
-                    sha256  a91b422398f30c9c6c2d27fdbcc1aeb8e026ded44d6e729fc060d5d18bfaefdb
+sha256  a91b422398f30c9c6c2d27fdbcc1aeb8e026ded44d6e729fc060d5d18bfaefdb
 
 # chasen-2.3.3-2003082[12].patch are official patches taken from http://chasen.aist-nara.ac.jp/stable/chasen/
 # see http://chasen.naist.jp/hiki/ChaSen/?%A5%D0%A5%B0%BE%F0%CA%F3

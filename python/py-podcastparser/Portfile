@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ platforms           darwin
 license             ISC
 supported_archs     noarch
 
-python.versions     27 36
+python.versions 27 37
 
 maintainers         {elelay @elelay} openmaintainer
 
@@ -26,7 +26,7 @@ master_sites        pypi:p/podcastparser
 distname            podcastparser-${version}
 
 checksums           rmd160  e4b55f89a27bcfc199e9c489a72ffc9b862ecd2e \
-                    sha256  8b915224c00f2bf2481139f80bf365ed20742a3907f437711c96b0a86a878968
+sha256  8b915224c00f2bf2481139f80bf365ed20742a3907f437711c96b0a86a878968
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

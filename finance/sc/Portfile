@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ homepage            http://www.ibiblio.org/pub/Linux/apps/financial/spreadsheet/
 master_sites        ${homepage}
 
 checksums           rmd160  bcaffd292bc3d0868e5be870fee743c6b3294377 \
-                    sha256  1997a00b6d82d189b65f6fd2a856a34992abc99e50d9ec463bbf1afb750d1765
+sha256  1997a00b6d82d189b65f6fd2a856a34992abc99e50d9ec463bbf1afb750d1765
 
 patchfiles          Makefile.diff
 

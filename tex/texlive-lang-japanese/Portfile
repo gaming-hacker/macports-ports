@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: Japanese
 long_description    Support for Japanese\; additional packages in collection-langcjk.
 
 checksums           texlive-lang-japanese-50873-run.tar.xz \
-                    rmd160  969e330130efdd4247d8d2e137cf01ec67322620 \
-                    sha256  07e14f4c0092f846d5ce7a66f633fdd344d9464b878fb7f107956b5b9b7e40f0 \
+rmd160  969e330130efdd4247d8d2e137cf01ec67322620 \
+sha256  07e14f4c0092f846d5ce7a66f633fdd344d9464b878fb7f107956b5b9b7e40f0 \
                     texlive-lang-japanese-50873-doc.tar.xz \
-                    rmd160  55513c6cebf1a56743fdc9fb1e5a40e1e83c8d27 \
-                    sha256  3690ef4b54d832a05327cdb55cb617dfac02d55e4f5370b4667d234779309103 \
+rmd160  55513c6cebf1a56743fdc9fb1e5a40e1e83c8d27 \
+sha256  3690ef4b54d832a05327cdb55cb617dfac02d55e4f5370b4667d234779309103 \
                     texlive-lang-japanese-50873-src.tar.xz \
-                    rmd160  c648d9fedc71794b914be9159db362cc65c5054a \
-                    sha256  c911a0c28a090cad82fcbd71a8de27389fc7b813d9b59daee24e87bca3c2ab4f
+rmd160  c648d9fedc71794b914be9159db362cc65c5054a \
+sha256  c911a0c28a090cad82fcbd71a8de27389fc7b813d9b59daee24e87bca3c2ab4f
 
 depends_lib         port:texlive-lang-cjk
 

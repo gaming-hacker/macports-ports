@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Sysadm-Install 0.48 ../by-authors/id/M/MS/MSCHILLI/
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -19,7 +19,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  54767663c4ebc5c8cd5d7043425a83b091402d5e \
-                    sha256  ffdf1c4291dae94650a728e251beba8e6fcd2e5c697bcde0d791b5fb9c6b8c99
+sha256  ffdf1c4291dae94650a728e251beba8e6fcd2e5c697bcde0d791b5fb9c6b8c99
 
 if {${perl5.major} != ""} {
     depends_lib-append \

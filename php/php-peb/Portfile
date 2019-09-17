@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -14,7 +14,7 @@ categories      php devel
 platforms       darwin
 maintainers     {ryandesign @ryandesign} openmaintainer
 
-php.branches    5.3 5.4 5.5 5.6
+php.branches 7.3
 
 description     PHP-Erlang Bridge
 
@@ -26,8 +26,8 @@ master_sites    googlecode:mypeb
 distname        ${php.rootname}-${version}
 
 checksums       md5     5ccde4b9e8bcd0dc0a420e290941703a \
-                sha1    c9c940b79d8b739af95a456a2ad90f93d8ef6982 \
-                rmd160  169f7d6bfcb855c45c132db1091fad428f739a30
+sha1    c9c940b79d8b739af95a456a2ad90f93d8ef6982 \
+rmd160  169f7d6bfcb855c45c132db1091fad428f739a30
 
 if {${name} ne ${subport}} {
     depends_build-append    port:erlang

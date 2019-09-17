@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                dnuos
@@ -18,8 +20,8 @@ homepage            https://bitheap.org/dnuos/
 master_sites        ${homepage}files
 
 checksums           rmd160  ff2403dd66f3f038bb06efa96df8dec9899890d1 \
-                    sha256  bfadc736d769ff9414d23a2084807c77f3eabcd6306e230faa16db18754fda54
+sha256  bfadc736d769ff9414d23a2084807c77f3eabcd6306e230faa16db18754fda54
 
-python.default_version  27
+python.default_version 37
 
 depends_build-append    port:py${python.version}-setuptools

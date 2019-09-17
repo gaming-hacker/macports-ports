@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ homepage            http://hessling-editor.sourceforge.net/
 master_sites        sourceforge:hessling-editor
 
 checksums           sha1    7b86275c764efadbfb61c8f7c7507b0db1812db3 \
-                    rmd160  586f5ab46ad483fb9036651b5ca2bfe1f7b8652d
+rmd160  586f5ab46ad483fb9036651b5ca2bfe1f7b8652d
 
 depends_lib         port:rexx \
                     port:ncurses

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description    SHC is a generic shell script compiler. It takes a script,\
     option.
 
 checksums           rmd160  e9ec69646a07c68a50e9c25e0d7496cc2716238f \
-                    sha256  a372b0c349f19cb5048499777fc8dd5c67a3c6b8a11da61225ad00bd7cbb6213 \
-                    size    124300
+sha256  a372b0c349f19cb5048499777fc8dd5c67a3c6b8a11da61225ad00bd7cbb6213 \
+size    124300
 
 patchfiles          patch-test.diff
 

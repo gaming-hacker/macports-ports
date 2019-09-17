@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   muniversal 1.0
@@ -6,8 +6,8 @@ PortGroup                   muniversal 1.0
 name                        fontconfig
 version                     2.13.1
 checksums                   rmd160  a971903874fb0395a7ab2d5705378af1ffce2b2c \
-                            sha256  f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741 \
-                            size    1723639
+sha256  f655dd2a986d7aa97e052261b36aa67b0a64989496361eca8d604e6414006741 \
+size    1723639
 
 categories                  graphics
 maintainers                 {ryandesign @ryandesign}

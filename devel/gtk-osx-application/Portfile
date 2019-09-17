@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       active_variants 1.1
@@ -30,7 +30,7 @@ use_xz          yes
 
 # sha256 from upstream, rmd160 computed locally
 checksums       sha256    74fce9dbc5efe4e3d07a20b24796be1b1d6c3ac10a0ee6b1f1d685c809071b79 \
-                rmd160    53fd44172a3fa076e4401b6aac1adb10b76a5b7c
+rmd160    53fd44172a3fa076e4401b6aac1adb10b76a5b7c
 
 
 depends_build   port:pkgconfig

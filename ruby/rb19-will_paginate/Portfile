@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -11,5 +11,5 @@ maintainers         nomaintainer
 homepage            https://github.com/mislav/will_paginate/wikis
 platforms           darwin
 checksums           md5     8955808d2def87d7526185c57261fdc8 \
-                    sha1    2d2a65ae8edc0af8fab89bd7b6e3b7d1892ddaa6 \
-                    rmd160  18b21f498f7b811c074474e129ededb3807ccb62
+sha1    2d2a65ae8edc0af8fab89bd7b6e3b7d1892ddaa6 \
+rmd160  18b21f498f7b811c074474e129ededb3807ccb62

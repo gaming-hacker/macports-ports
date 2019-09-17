@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,14 +16,14 @@ long_description    ${description}
 homepage            https://github.com/robotframework/sshlibrary
 
 platforms           darwin
-python.versions		27
+python.versions 27 37
 python.default_version	27
 
 master_sites        pypi:r/robotframework-sshlibrary/
 distname            ${internal_name}-${version}
 
 checksums           rmd160  525b46a58983127c55f2cb667a52ae4893053683 \
-                    sha256  ab1daa49d38934ad57433500c1e177b4f3b3a16f5218a687a6061014343dabcb
+sha256  ab1daa49d38934ad57433500c1e177b4f3b3a16f5218a687a6061014343dabcb
 
 if {${name} ne ${subport}} {
     depends_lib-append	port:py${python.version}-robotframework \

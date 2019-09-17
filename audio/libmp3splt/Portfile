@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ homepage            http://mp3splt.sourceforge.net/
 master_sites        sourceforge:project/mp3splt/${name}/${version}
 
 checksums           rmd160  6f9ec5b887f3b58059a3cecb5a56e7d7afef5820 \
-                    sha256  c006436db293a21da2ebc65ceaecf775cbf694b82b20a8506b827e236d7e0e73
+sha256  c006436db293a21da2ebc65ceaecf775cbf694b82b20a8506b827e236d7e0e73
 
 depends_build       port:pkgconfig
 

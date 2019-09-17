@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                latexmk
 version             4.65
 
 checksums           rmd160  858015aa60b135e93a2a6ac74d7fb18d57647aa0 \
-                    sha256  fbd99fa6c606cc9378052cc1f974b2a6b1a72e1a635c87a2a7c3543386ad6ce8 \
-                    size    447290
+sha256  fbd99fa6c606cc9378052cc1f974b2a6b1a72e1a635c87a2a7c3543386ad6ce8 \
+size    447290
 
 categories          tex print
 platforms           darwin

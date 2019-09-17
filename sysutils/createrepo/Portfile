@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			createrepo
 conflicts		yum-createrepo
@@ -15,8 +17,8 @@ long_description	createrepo generates the metadata necessary for an RPM package 
 homepage		http://createrepo.baseurl.org/
 master_sites		${homepage}download/
 checksums		md5 3e9ccf4abcffe3f49af078c83611eda2 \
-				sha1 10316e9ee98e92f961c727cf991589611a2de7cb \
-				rmd160 74b89d3f097914bd5fc67282d083c063ad7fc18e
+sha1 10316e9ee98e92f961c727cf991589611a2de7cb \
+rmd160 74b89d3f097914bd5fc67282d083c063ad7fc18e
 patchfiles		patch-Makefile patch-createrepo patch-modifyrepo \
 			patch-dumpMetadata.py patch-genpkgmetadata.py \
 			patch-readMetadata.py patch-modifyrepo.py

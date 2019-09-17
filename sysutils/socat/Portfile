@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ homepage        http://www.dest-unreach.org/socat/
 master_sites    http://www.dest-unreach.org/socat/download/
 
 checksums       rmd160  692b2d350b38355ad4d9d50c32ee7eb076e85b0e \
-                sha256  0dd63ffe498168a4aac41d307594c5076ff307aa0ac04b141f8f1cec6594d04a \
-                size    489901
+sha256  0dd63ffe498168a4aac41d307594c5076ff307aa0ac04b141f8f1cec6594d04a \
+size    489901
 
 use_bzip2 yes
 

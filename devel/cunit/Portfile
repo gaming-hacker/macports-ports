@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ distname            CUnit-${version}
 use_bzip2           yes
 
 checksums           md5     b5f1a9f6093869c070c6e4a9450cc10c \
-                    sha1    eac0c71167aa3fab83483ae1313b78163f0f7238 \
-                    rmd160  c9d74d5406fb5fed0d61cfd5fee12a4d77d7e2cc
+sha1    eac0c71167aa3fab83483ae1313b78163f0f7238 \
+rmd160  c9d74d5406fb5fed0d61cfd5fee12a4d77d7e2cc
 
 depends_lib         port:ncurses
 

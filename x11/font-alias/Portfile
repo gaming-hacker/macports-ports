@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                font-alias
 version             1.0.3
@@ -17,7 +19,7 @@ master_sites        xorg:individual/font/
 use_bzip2           yes
 
 checksums           rmd160 8fe5576ba106f912f81b77468759935cc50a0b62 \
-                    sha256 8b453b2aae1cfa8090009ca037037b8c5e333550651d5a158b7264ce1d472c9a
+sha256 8b453b2aae1cfa8090009ca037037b8c5e333550651d5a158b7264ce1d472c9a
 
 configure.args      --with-fontrootdir=${prefix}/share/fonts
 

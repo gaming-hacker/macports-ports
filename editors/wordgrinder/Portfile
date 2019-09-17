@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                wordgrinder
 version             0.3.3
@@ -14,8 +16,8 @@ long_description    WordGrinder is a light-weight character-cell word processor 
 homepage            http://wordgrinder.sourceforge.net/
 master_sites        sourceforge:wordgrinder
 checksums           md5     1ae3bcf2fc4ee027bdd9518a73733505 \
-                    sha1    8a15b99872ffd7317e0c654ab74157c0bc1164fa \
-                    rmd160  939dde7b35964e7ba41898eee5fdedaa5396d60d
+sha1    8a15b99872ffd7317e0c654ab74157c0bc1164fa \
+rmd160  939dde7b35964e7ba41898eee5fdedaa5396d60d
 
 use_bzip2           yes
 depends_lib         port:lua \

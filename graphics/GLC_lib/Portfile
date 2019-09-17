@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt4 1.0
@@ -19,8 +19,8 @@ master_sites        sourceforge:glc-lib
 distname            ${name}_src_${version}
 
 checksums           md5     2c05978bd719f3dded08ac778b1854bf \
-                    sha1    b109895b34940789470dcd3a2748913035a0e576 \
-                    rmd160  127b6eadfb3b5ae8eb9c26583d63065c1ee6db40
+sha1    b109895b34940789470dcd3a2748913035a0e576 \
+rmd160  127b6eadfb3b5ae8eb9c26583d63065c1ee6db40
 
 use_zip             yes
 

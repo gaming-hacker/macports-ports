@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            xorg-libXcomposite
 version         0.4.5
@@ -14,8 +16,8 @@ master_sites     xorg:individual/lib/
 
 distname        libXcomposite-${version}
 checksums       rmd160  d2b1e8a57c4b15033e08872538f9bf1dc9ab6c9c \
-                sha256  b3218a2c15bab8035d16810df5b8251ffc7132ff3aa70651a1fba0bfe9634e8f \
-                size    316993
+sha256  b3218a2c15bab8035d16810df5b8251ffc7132ff3aa70651a1fba0bfe9634e8f \
+size    316993
 use_bzip2           yes
 use_parallel_build  yes
 

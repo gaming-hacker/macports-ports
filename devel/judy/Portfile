@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       muniversal 1.0
@@ -23,8 +23,8 @@ distname        Judy-${version}
 worksrcdir      judy-${version}
 
 checksums       md5     115a0d26302676e962ae2f70ec484a54 \
-                sha1    3540f003509acac3b1260424380ddf97914f7745 \
-                rmd160  00cc2d28fd385e64c8fb9a564e186aee4bd52b4f
+sha1    3540f003509acac3b1260424380ddf97914f7745 \
+rmd160  00cc2d28fd385e64c8fb9a564e186aee4bd52b4f
 
 patchfiles      patch-tool-jhton.c.diff
 

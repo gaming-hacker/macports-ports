@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -15,8 +15,8 @@ name                cryptlib
 version             3.4.5
 revision            0
 checksums           rmd160  b2b54b8c67bc35799290e25ed61b61ba9bd29415 \
-                    sha256  2a98aeb09190301ba782ba2f79837332ae277ac93851d3066e63fecf6abe6f2a \
-                    size    6139150
+sha256  2a98aeb09190301ba782ba2f79837332ae277ac93851d3066e63fecf6abe6f2a \
+size    6139150
 
 set branch          [join [lrange [split ${version} .] 0 1] .]
 categories          devel security crypto

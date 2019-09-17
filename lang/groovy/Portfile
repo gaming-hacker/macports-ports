@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            groovy
 version         2.5.8
@@ -38,8 +40,8 @@ distname        apache-${name}-binary-${version}
 use_zip         yes
 
 checksums       rmd160  2df28ec5e7c917570827578bda24b8e3a063ad4b \
-                sha256  49fb14b98f9fed1744781e4383cf8bff76440032f58eb5fabdc9e67a5daa8742 \
-                size    30368648
+sha256  49fb14b98f9fed1744781e4383cf8bff76440032f58eb5fabdc9e67a5daa8742 \
+size    30368648
 
 worksrcdir      ${name}-${version}
 

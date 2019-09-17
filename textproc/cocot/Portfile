@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            cocot
 version         20080315
@@ -15,8 +17,8 @@ master_sites    macports \
 use_bzip2       yes
 patchfiles      patch-README.ja.diff
 checksums       md5 f2519673fb4bf9e07769b88de7746278 \
-                sha1 06d098fb54b6e61bbddc8ef00079b9b529ca2133 \
-                rmd160 ecb93ffe77c9c59aa822b33fc399b802ab9fe202
+sha1 06d098fb54b6e61bbddc8ef00079b9b529ca2133 \
+rmd160 ecb93ffe77c9c59aa822b33fc399b802ab9fe202
 
 depends_lib     port:libiconv
 

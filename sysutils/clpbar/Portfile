@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			clpbar
 version			1.11.1
@@ -20,7 +22,7 @@ distname		bar_${version}
 worksrcdir      bar-${version}
 
 checksums           rmd160  1bce804b7aa448f2a5c031d807b239298b26be50 \
-                    sha256  fa0f5ec5c8400316c2f4debdc6cdcb80e186e668c2e4471df4fec7bfcd626503
+sha256  fa0f5ec5c8400316c2f4debdc6cdcb80e186e668c2e4471df4fec7bfcd626503
 
 universal_variant	no
 

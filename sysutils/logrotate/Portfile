@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -9,8 +9,8 @@ revision            1
 github.tarball_from releases
 use_xz              yes
 checksums           rmd160  8a2a190a1e4240575d038f5400d08d1550a7fcbf \
-                    sha256  313612c4776a305393454c874ef590d8acf84c9ffa648717731dfe902284ff8f \
-                    size    158284
+sha256  313612c4776a305393454c874ef590d8acf84c9ffa648717731dfe902284ff8f \
+size    158284
 categories          sysutils
 platforms           darwin
 license             GPL-2

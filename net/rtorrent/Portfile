@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -13,8 +13,8 @@ conflicts           rtorrent-devel
 set real_name       rtorrent
 
 checksums           rmd160  fde07c9b9db00a90cb851b058402a87d447f92f7 \
-                    sha256  9edf0304bf142215d3bc85a0771446b6a72d0ad8218efbe184b41e4c9c7542af \
-                    size    647523
+sha256  9edf0304bf142215d3bc85a0771446b6a72d0ad8218efbe184b41e4c9c7542af \
+size    647523
 
 categories          net
 platforms           darwin

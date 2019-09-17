@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       kde4 1.1
@@ -21,7 +21,7 @@ supported_archs noarch
 depends_lib     port:kdelibs4
 
 checksums           rmd160  6d7c8194076d793793b3fd5a2238d8a8d10f111a \
-                    sha256  9681fdaae36744242e8a469e03bdab61a6481fbeec12c58c926ea19bf04d564e
+sha256  9681fdaae36744242e8a469e03bdab61a6481fbeec12c58c926ea19bf04d564e
 
 if {![variant_isset docs]} {
     patchfiles-append   patch-CMakeLists.txt.diff

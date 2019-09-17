@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -49,8 +49,8 @@ if {${subport} eq ${name}} {
 
     version   ${branch}.3
     checksums rmd160 2707bff0caad92199e62bea45b9e68fae411d600 \
-              sha256 13958243a01365b05652fa01b21d40fa834f70a9e30efa69c02604e64f58b8f5 \
-              size   9270184
+sha256 13958243a01365b05652fa01b21d40fa834f70a9e30efa69c02604e64f58b8f5 \
+size   9270184
     revision  0
 
     master_sites    ${homepage}/files/v${branch}/
@@ -79,8 +79,8 @@ if {${subport} eq ${name}} {
     set commit c6ed04431988ac337ea21d74f035148b6c57f894
     version   20190915-[string range ${commit} 0 7]
     checksums rmd160 e1fc457014ee9946e2a4041dd9d40c68089b4499 \
-              sha256 8e2fadafd8438f5232bdbe035eaca61e507b2fad0e6647f4f9edaa7ec5b0c77a \
-              size   6999101
+sha256 8e2fadafd8438f5232bdbe035eaca61e507b2fad0e6647f4f9edaa7ec5b0c77a \
+size   6999101
     revision  0
 
     use_bzip2       yes

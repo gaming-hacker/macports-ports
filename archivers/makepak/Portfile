@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem           1.0
 
@@ -14,8 +14,8 @@ long_description     MakePAK is a command-line tool for the creation of Quake \
 homepage             https://github.com/Luiji/MakePAK
 master_sites         https://github.com/downloads/Luiji/MakePAK/
 checksums            md5     f825bc20e81be7448807ef3aba313735 \
-                     sha1    0c0d226e01a681bea800c121b54926030107efae \
-                     rmd160  0506955b9c851117678e959da8ed58fb10e275d6
+sha1    0c0d226e01a681bea800c121b54926030107efae \
+rmd160  0506955b9c851117678e959da8ed58fb10e275d6
 depends_build        port:texinfo
 depends_lib          port:gettext
 

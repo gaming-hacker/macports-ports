@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem       1.0
 PortGroup        github 1.0
@@ -24,8 +24,8 @@ platform darwin {
         # peg at version 1.30.0 with patches for 10.4 Tiger, updated occasionally
         github.setup libuv libuv 1.30.0 v
         checksums rmd160 cb73c5f0681bb47606abf8e58f8fad3b75640862 \
-                  sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
-                  size   1228472
+sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
+size   1228472
         revision  0
 
         maintainers-prepend {kencu @kencu}
@@ -60,8 +60,8 @@ platform darwin {
         # see https://trac.macports.org/ticket/57926
         github.setup libuv libuv 1.30.0 v
         checksums rmd160 cb73c5f0681bb47606abf8e58f8fad3b75640862 \
-                  sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
-                  size   1228472
+sha256 97cf47b87f20532e58f4912cfa2f68de1e2fd7c31b35b836e80e1942f2fd76e3 \
+size   1228472
         revision  0
 
         # needed for the tests to compile correctly on Leopard
@@ -87,8 +87,8 @@ platform darwin {
 
             github.setup libuv libuv 1.32.0 v
             checksums rmd160 86c9803f3bb94a937cd73f903d9b2406f31b60cd \
-                      sha256 bbea9c40656b122c64f637cc869f9a1abf57459fdf2542593a078d152e101ef3 \
-                      size   1242723
+sha256 bbea9c40656b122c64f637cc869f9a1abf57459fdf2542593a078d152e101ef3 \
+size   1242723
             revision  0
 
             conflicts libuv-devel
@@ -100,8 +100,8 @@ platform darwin {
             github.setup libuv libuv 549f52c4672a4d8198f096efa513a96b20e2f843
             version   20190909-[string range ${github.version} 0 7]
             checksums rmd160 fe38a09873db8a8a4a11d4d43e82f4b4e1844752 \
-                    sha256  dde7975379693ccda4eb7e92bc0b5c91b7e9dd5302649f6f7b745e2e2a98f9df \
-                    size    1242780
+sha256  dde7975379693ccda4eb7e92bc0b5c91b7e9dd5302649f6f7b745e2e2a98f9df \
+size    1242780
             revision  0
 
             long_description ${long_description} \

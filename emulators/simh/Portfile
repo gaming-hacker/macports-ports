@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 github.setup        simh simh 3.9-0 v
 revision            1
 checksums           rmd160  a464e7d1fc6d58dd23a3ef623c3c018d5d60b050 \
-                    sha256  e49b259b66ad6311ca9066dee3d3693cd915106a6938a52ed685cdbada8eda3b \
-                    size    3103657
+sha256  e49b259b66ad6311ca9066dee3d3693cd915106a6938a52ed685cdbada8eda3b \
+size    3103657
 
 categories          emulators
 platforms           darwin

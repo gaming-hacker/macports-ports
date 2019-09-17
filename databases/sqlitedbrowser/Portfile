@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 PortSystem          1.0
 PortGroup           qt4 1.0
@@ -21,7 +21,7 @@ distfiles           ${distname}.tar.gz
 worksrcdir          sqlitestudio
 
 checksums           rmd160  0a29e7833ae6f9c45108e74bbd42b4f0ba08c2c4 \
-                    sha256  0ec9b3ca5cc3bf7433d7e19a37fef0254af6a4ffd6059fb61341f906774c9179
+sha256  0ec9b3ca5cc3bf7433d7e19a37fef0254af6a4ffd6059fb61341f906774c9179
 
 configure.cmd       ${qt_qmake_cmd}
 configure.pre_args

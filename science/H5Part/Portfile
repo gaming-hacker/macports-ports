@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,7 +15,7 @@ platforms           darwin
 master_sites        https://codeforge.lbl.gov/frs/download.php/387
 
 checksums           rmd160  59b7860845b515198a6e6a28b8bcb53de18474ea \
-                    sha256  10347e7535d1afbb08d51be5feb0ae008f73caf889df08e3f7dde717a99c7571
+sha256  10347e7535d1afbb08d51be5feb0ae008f73caf889df08e3f7dde717a99c7571
 
 depends_lib         port:hdf5
 

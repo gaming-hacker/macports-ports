@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -18,10 +18,10 @@ homepage	https://apr.apache.org/
 master_sites	apache:apr
 use_bzip2	yes
 checksums	md5	8ff5dc36fa39a2a3db1df196d3ed6086 \
-		sha1	4cc73bc36ca697419f555476f2fc1c63df6069f4 \
-		rmd160	6fb156f827980f21ff9f59039529d55bda824e93 \
-		sha256	d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b \
-		size	428595
+sha1	4cc73bc36ca697419f555476f2fc1c63df6069f4 \
+rmd160	6fb156f827980f21ff9f59039529d55bda824e93 \
+sha256	d3e12f7b6ad12687572a3a39475545a072608f4ba03a6ce8a3778f607dd0035b \
+size	428595
 
 depends_lib	port:apr port:expat \
 		port:libiconv port:db48 \

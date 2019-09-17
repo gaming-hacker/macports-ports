@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ master_sites        http://gigenet.dl.osdn.jp/nkf/70406
 dist_subdir         nkf
 
 checksums           rmd160  0c41198eda7361f797439b6e3a590cb767d63498 \
-                    sha256  d1a7df435847a79f2f33a92388bca1d90d1b837b1b56523dcafc4695165bad44 \
-                    size    215879
+sha256  d1a7df435847a79f2f33a92388bca1d90d1b837b1b56523dcafc4695165bad44 \
+size    215879
 
 use_configure       no
 

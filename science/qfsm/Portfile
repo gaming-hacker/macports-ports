@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -22,8 +22,8 @@ master_sites        sourceforge:project/${name}/${name}/${name}-${major}.${minor
 distname            ${name}-${version}-Source
 use_bzip2           yes
 checksums           md5     62590fe7dfd7d77c80b03695860a2434 \
-                    sha1    6820603155270d0abdc5a302a647e9588f92a2dc \
-                    rmd160  c60d6b49e1eaaffdf258f468e7e897479524baff
+sha1    6820603155270d0abdc5a302a647e9588f92a2dc \
+rmd160  c60d6b49e1eaaffdf258f468e7e897479524baff
 
 livecheck.url       http://sourceforge.net/projects/qfsm/files/
 livecheck.type      regex

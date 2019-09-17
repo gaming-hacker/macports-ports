@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             boost-jam
 version          3.1.18
@@ -16,8 +18,8 @@ homepage         http://www.boost.org/
 master_sites     sourceforge:boost
 extract.suffix   .tgz
 checksums        md5 f790e022d658db38db5cc4aeeccad3f1 \
-                 sha1 3f2fe83add40691b9a5f9ebe5ea8a2264a808370 \
-                 rmd160 b25c123b82662323cc2cc4a67096ece4a0da47d6
+sha1 3f2fe83add40691b9a5f9ebe5ea8a2264a808370 \
+rmd160 b25c123b82662323cc2cc4a67096ece4a0da47d6
 platforms        darwin
 
 patchfiles       patch-strings.c patch-build.sh

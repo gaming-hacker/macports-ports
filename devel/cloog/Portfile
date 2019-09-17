@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 if {${subport} eq "cloog"} {
@@ -36,7 +36,7 @@ depends_lib         port:gmp path:lib/pkgconfig/isl.pc:isl
 
 master_sites        http://www.bastoul.net/cloog/pages/download/count.php3?url=./
 checksums           rmd160  12d7a27442fc95f01f7c6445b5559579f8f614cc \
-                    sha256  325adf3710ce2229b7eeb9e84d3b539556d093ae860027185e7af8a8b00a750e
+sha256  325adf3710ce2229b7eeb9e84d3b539556d093ae860027185e7af8a8b00a750e
 
 # prevent -L/lib from being added to LDFLAGS
 # see https://groups.google.com/group/isl-development/t/37ad876557e50f2c

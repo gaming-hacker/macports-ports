@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                fslsfonts
 version             1.0.5
@@ -15,8 +17,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           sha1    0a0d37c65a8cdd3aff22d633b5ed164e864929d4 \
-                    rmd160  13f7f4e02af98ba416c042b059a0f21d0fc0c924 \
-                    sha256  f1ed55093356b78daec2678d22f52d42ec11fe88575562d734396962e626d7f6
+rmd160  13f7f4e02af98ba416c042b059a0f21d0fc0c924 \
+sha256  f1ed55093356b78daec2678d22f52d42ec11fe88575562d734396962e626d7f6
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,6 +12,6 @@ description         PEAR Services_UseKetchup package
 long_description    ${description}
 
 checksums           rmd160  f9ced1796e746770262e120ee50c60527a2628d4 \
-                    sha256  ef9d65e4d2c08b2ad5a7c868aec260a5f8113a2f512e1340318f10169c2c0a67
+sha256  ef9d65e4d2c08b2ad5a7c868aec260a5f8113a2f512e1340318f10169c2c0a67
 
 depends_lib-append  port:pear-HTTP_Request2

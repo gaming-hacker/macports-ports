@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -19,8 +19,8 @@ homepage        https://www.freedesktop.org/wiki/Software/dbus/
 master_sites    https://dbus.freedesktop.org/releases/dbus-glib/
 
 checksums       rmd160  6afadf2d618a4fbb4c3ced7bcfff8c98eb58c5cc \
-                sha256  7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825 \
-                size    836497
+sha256  7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825 \
+size    836497
 
 depends_build   port:pkgconfig
 

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Package-Pkg 0.0020
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  09ba7d1791726bda2dfd5d18b198583016d22b44 \
-                    sha256  141df0b73d30c944aef0d3bb96fb4b124e71439cdbfd220280158a8a87a328e5
+sha256  141df0b73d30c944aef0d3bb96fb4b124e71439cdbfd220280158a8a87a328e5
 
 if {${perl5.major} != ""} {
     depends_build-append \

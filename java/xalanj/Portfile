@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				xalanj
 version				2.7.1
@@ -21,8 +23,8 @@ distname			xalan-j_${ver2}-src
 master_sites		apache:xml/xalan-j/source/
 
 checksums           md5     fc805051f0fe505c7a4b1b5c8db9b9e3 \
-                    sha1    dfaac3bd3e18a8961c27b3d07b7405bd8a15d64a \
-                    rmd160  021c239122b6b3d0bc9781abd9675c7cb5951b13
+sha1    dfaac3bd3e18a8961c27b3d07b7405bd8a15d64a \
+rmd160  021c239122b6b3d0bc9781abd9675c7cb5951b13
 
 depends_build		bin:ant:apache-ant
 depends_lib			bin:java:kaffe

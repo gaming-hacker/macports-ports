@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            gcal
 version         3.6.3
@@ -22,6 +24,6 @@ homepage        https://www.gnu.org/software/gcal/
 master_sites    gnu
 use_xz          yes
 checksums       rmd160  9474081c5c0ce6da55c8540076c39e4107fe8be2 \
-                sha256  6742913a1d011ac109ad713ef4a8263eaf4c5cfd315471626a92f094e3e4b31b
+sha256  6742913a1d011ac109ad713ef4a8263eaf4c5cfd315471626a92f094e3e4b31b
 
 depends_lib     port:gettext

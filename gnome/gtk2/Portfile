@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -28,8 +28,8 @@ master_sites        gnome:sources/gtk+/${branch}/
 minimum_xcodeversions {9 3.1}
 
 checksums           rmd160  c0c83479fad040e25159bf7a8a9eb51322716a56 \
-                    sha256  b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e \
-                    size    12620860
+sha256  b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e \
+size    12620860
 
 depends_build       port:gtk-doc \
                     port:pkgconfig \

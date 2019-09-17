@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,5 +18,5 @@ homepage            https://thoughtbot.github.io/rcm/
 master_sites        ${homepage}dist/
 
 checksums           rmd160  4cf0677991a872ab7e94cb73dbdbbcaaee78bfc6 \
-                    sha256  935524456f2291afa36ef815e68f1ab4a37a4ed6f0f144b7de7fb270733e13af \
-                    size    92193
+sha256  935524456f2291afa36ef815e68f1ab4a37a4ed6f0f144b7de7fb270733e13af \
+size    92193

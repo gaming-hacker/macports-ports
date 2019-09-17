@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -20,8 +20,8 @@ long_description    GolangCI-Lint is a linters aggregator. It's fast: on \
                     number of false positives. It supports go modules.
 
 checksums           rmd160  2abb836c0258e23f21d2b5f6b837c4142ebba1f7 \
-                    sha256  610a199d74a1feb0f17c9331b7ab5f9454cdf594a419437fa672240c0a360d58 \
-                    size    3929522
+sha256  610a199d74a1feb0f17c9331b7ab5f9454cdf594a419437fa672240c0a360d58 \
+size    3929522
 
 build.args          ./cmd/golangci-lint
 

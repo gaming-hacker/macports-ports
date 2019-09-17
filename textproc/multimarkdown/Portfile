@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 
 github.setup        fletcher MultiMarkdown-6 6.4.0
 checksums           rmd160  8f2ba7399afbad73f208704f13e0d582df6b0708 \
-                    sha256  ed34ce1febe1f785187b012c8a5a4dd982600fa745cd80a12f1c3d51f1ea8580 \
-                    size    3208024
+sha256  ed34ce1febe1f785187b012c8a5a4dd982600fa745cd80a12f1c3d51f1ea8580 \
+size    3208024
 
 name                multimarkdown
 categories          textproc

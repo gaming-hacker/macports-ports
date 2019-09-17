@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           waf 1.0 
@@ -20,7 +20,7 @@ license             BSD
 
 master_sites        googlecode
 checksums           rmd160  76224eee7385acbc8a0776bc55773a382e165675 \
-                    sha256  6e6e635db08092f676f2e736885ba6838df93f94f11451f7c40b4c6cb6b7b4c6
+sha256  6e6e635db08092f676f2e736885ba6838df93f94f11451f7c40b4c6cb6b7b4c6
 
 worksrcdir          ${name}
 

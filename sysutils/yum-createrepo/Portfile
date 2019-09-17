@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			yum-createrepo
 conflicts		createrepo
@@ -16,8 +18,8 @@ homepage		http://createrepo.baseurl.org/
 distname		createrepo-${version}
 master_sites		${homepage}download/
 checksums		md5 e37418bebb559e7420532574c1bdb18c \
-			sha1 b4964ea3caf039954467374ffd7769cc6875c70a \
-			rmd160 aa6021d6cc3e01f8b7dde108a966210dd7480509
+sha1 b4964ea3caf039954467374ffd7769cc6875c70a \
+rmd160 aa6021d6cc3e01f8b7dde108a966210dd7480509
 patchfiles		patch-prefix.diff patch-sqlite.diff
 
 depends_run		port:python27 port:yum

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo 1.0
@@ -16,9 +16,9 @@ homepage            https://pijul.org/
 master_sites        ${homepage}releases/
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  240028d5b709e68b94297e6f14149049abaf000b \
-                    sha256  da3fcba4ab39a4371cda7273691364c2355c9b216bb7867d92dae5812ebb71d2 \
-                    size    183007
+rmd160  240028d5b709e68b94297e6f14149049abaf000b \
+sha256  da3fcba4ab39a4371cda7273691364c2355c9b216bb7867d92dae5812ebb71d2 \
+size    183007
 
 depends_build       port:pkgconfig
 

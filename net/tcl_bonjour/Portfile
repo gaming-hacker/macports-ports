@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,7 +21,7 @@ long_description    This package provides script level access to the Bonjour \
                     service name resolution, and service registration.
 
 checksums           rmd160  f7e080c9d5d1800e98174d8184e9a8257f3b0a56 \
-                    sha256  c2daee6da55c6d8e703a3c6f204a4b3b366bc968dd1fac8055fc8154de777df4
+sha256  c2daee6da55c6d8e703a3c6f204a4b3b366bc968dd1fac8055fc8154de777df4
 
 depends_build       port:tcllib
 depends_lib         port:tcl

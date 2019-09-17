@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -8,8 +8,8 @@ version             6.4
 revision            0
 
 checksums           rmd160  2783f7b25c8cadc9ca884547ac9c27aa26d66129 \
-                    sha256  13c11ff70a7725563ec5fa52707a9965fce186a1766db193d08c9766ea107000 \
-                    size    2379163
+sha256  13c11ff70a7725563ec5fa52707a9965fce186a1766db193d08c9766ea107000 \
+size    2379163
 
 categories          science
 license             LGPL-3+

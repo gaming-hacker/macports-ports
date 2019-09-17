@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -31,13 +31,13 @@ distfiles-append        ${waf_distfile}:waf
 extract.only-delete     ${waf_distfile}
 
 checksums               ${mpv_distfile} \
-                        rmd160  10edd02cf12c4668c57317caf3042df30ae1128c \
-                        sha256  c7076df8c46f2696121d0b96cc5edfc472cbccc3b6a70d9b5c00a72b6a41c820 \
-                        size    3059829 \
+rmd160  10edd02cf12c4668c57317caf3042df30ae1128c \
+sha256  c7076df8c46f2696121d0b96cc5edfc472cbccc3b6a70d9b5c00a72b6a41c820 \
+size    3059829 \
                         ${waf_distfile} \
-                        rmd160  bbb01fa7c1d552c01e5a6531ed27aef710d668e7 \
-                        sha256  2a8e0816f023995e557f79ea8940d322bec18f286917c8f9a6fa2dc3875dfa48 \
-                        size    103104
+rmd160  bbb01fa7c1d552c01e5a6531ed27aef710d668e7 \
+sha256  2a8e0816f023995e557f79ea8940d322bec18f286917c8f9a6fa2dc3875dfa48 \
+size    103104
 
 installs_libs           no
 

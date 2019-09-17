@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.0
@@ -35,9 +35,9 @@ master_sites            http://doxygen.nl/files
 distfiles               ${distname}.src${extract.suffix}
 
 checksums               ${distname}.src${extract.suffix} \
-                        rmd160  c9f14928c77410d2f71568d4602a489d8ab889d9 \
-                        sha256  bd9c0ec462b6a9b5b41ede97bede5458e0d7bb40d4cfa27f6f622eb33c59245d \
-                        size    5097791
+rmd160  c9f14928c77410d2f71568d4602a489d8ab889d9 \
+sha256  bd9c0ec462b6a9b5b41ede97bede5458e0d7bb40d4cfa27f6f622eb33c59245d \
+size    5097791
 
 installs_libs           no
 

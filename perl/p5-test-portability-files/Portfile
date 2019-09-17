@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Test-Portability-Files 0.10
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,8 +13,8 @@ long_description    This module is used to check the portability across \
                     in the distribution of a module.
 
 checksums           rmd160  6ef2ed1bc871a325b497699632ea9d4fec262945 \
-                    sha256  08e4b432492dc1b44b55d5db57952eb76379c7f434ee8f16aca64d491f401a16 \
-                    size    20879
+sha256  08e4b432492dc1b44b55d5db57952eb76379c7f434ee8f16aca64d491f401a16 \
+size    20879
 
 platforms           darwin
 supported_archs     noarch

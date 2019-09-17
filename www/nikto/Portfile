@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,7 +25,7 @@ long_description        Nikto is an Open Source (GPL) web server scanner \
 master_sites            https://cirt.net/nikto/
 use_bzip2               yes
 checksums               rmd160  ba392c5301ab01fc44c63c62fc519b92c06f60b8 \
-                        sha256  65b99c1fdec14d1d5e7cbc964f70fce162cbec50aee878e1500e2d22df079b34
+sha256  65b99c1fdec14d1d5e7cbc964f70fce162cbec50aee878e1500e2d22df079b34
 depends_run             port:perl5
 
 patchfiles              patch-nikto.conf.diff

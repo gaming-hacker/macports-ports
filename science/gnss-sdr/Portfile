@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -37,8 +37,8 @@ if {${subport} eq "gnss-sdr"} {
 
     github.setup        gnss-sdr gnss-sdr 0.0.11 v
     checksums           rmd160 c280bf809e1e99187a1d060684f06d9b2f6aeb7f \
-                        sha256 0c55b5cd971f308d734b00c7d68e3c43fc25fcf787b40b330b04ca624d3583d1 \
-                        size   3716114
+sha256 0c55b5cd971f308d734b00c7d68e3c43fc25fcf787b40b330b04ca624d3583d1 \
+size   3716114
     revision            1
 
     conflicts           gnss-sdr-devel gnss-sdr-next
@@ -58,8 +58,8 @@ subport gnss-sdr-devel {
     github.setup        gnss-sdr gnss-sdr 95cc4d7b7a5a6ba3682abca53b0fde41b8b6e206
     version             20190805
     checksums           rmd160 c280bf809e1e99187a1d060684f06d9b2f6aeb7f \
-                        sha256 0c55b5cd971f308d734b00c7d68e3c43fc25fcf787b40b330b04ca624d3583d1 \
-                        size   3716114
+sha256 0c55b5cd971f308d734b00c7d68e3c43fc25fcf787b40b330b04ca624d3583d1 \
+size   3716114
     revision            1
 
     conflicts           gnss-sdr gnss-sdr-next
@@ -78,8 +78,8 @@ subport gnss-sdr-next {
     github.setup gnss-sdr gnss-sdr 75e735043bc9af44e39d376673f54feeacc9c985
     version   20190805-[string range ${github.version} 0 7]
     checksums rmd160 58b6f706b1f99fe9df8d7056cb9436031fe8be8a \
-              sha256 ba524012e354fd2db6a500cfe7b79dba57a1f6ae07d9708bc2d3a89b76cc9a02 \
-              size   3716016
+sha256 ba524012e354fd2db6a500cfe7b79dba57a1f6ae07d9708bc2d3a89b76cc9a02 \
+size   3716016
     revision  1
 
     conflicts gnss-sdr gnss-sdr-devel

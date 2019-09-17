@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ distname            ${name}-${version}-${os.platform}-${configure.build_arch}
 worksrcdir          ${name}
 
 checksums           rmd160  627cb2b46a840c5e87c97f870fbcd75fbc3fe931 \
-                    sha256  3654c502d0451a7b38b5391c6f2407b0d96895ebfea14098d321646eaec05297 \
-                    size    21774624
+sha256  3654c502d0451a7b38b5391c6f2407b0d96895ebfea14098d321646eaec05297 \
+size    21774624
 
-python.default_version 27
+python.default_version 37
 
 post-patch {
     reinplace "s|\"disable_updater\": false|\"disable_updater\": true|" ${worksrcpath}/lib/googlecloudsdk/core/config.json

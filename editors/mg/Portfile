@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 
 github.setup	    ibara mg 6.5 mg-
@@ -16,8 +18,8 @@ long_description    Micro GNU/Emacs: a small, fast, lightweight, emacs-like edit
                     No extension language, just a basic editor for text & code.
 
 checksums           rmd160  3a28ec30e6a2f8ec49f968abdf21caa8135c86c7 \
-                    sha256  3e4bb4582c8d1a72fb798bc320a9eede04f41e7e72a1421193174b1a6fc43cd8 \
-                    size    159278
+sha256  3e4bb4582c8d1a72fb798bc320a9eede04f41e7e72a1421193174b1a6fc43cd8 \
+size    159278
 
 depends_lib-append  port:ncurses
 

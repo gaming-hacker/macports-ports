@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       muniversal 1.0
@@ -34,21 +34,21 @@ master_sites    macports_distfiles
 use_bzip2       yes
 
 checksums       ${distfiles} \
-                    rmd160  faa854acbbfd52faaa216505176f94d756d77841 \
-                    sha256  1e4e72d8e0dd62a80b8dd90699f5ca64c9b0cb37a5c9325c184166a9654f0a92 \
-                    size    2183627 \
+rmd160  faa854acbbfd52faaa216505176f94d756d77841 \
+sha256  1e4e72d8e0dd62a80b8dd90699f5ca64c9b0cb37a5c9325c184166a9654f0a92 \
+size    2183627 \
                 transcode-ffmpeg3.patch \
-                    rmd160  bac993cb3bbe6ce69c995b596bb76e75fb185fa2 \
-                    sha256  728ec3101039d98116275e36ea5cf0434a23a0bb82aca830ea9612fb9d16b062 \
-                    size    50234 \
+rmd160  bac993cb3bbe6ce69c995b596bb76e75fb185fa2 \
+sha256  728ec3101039d98116275e36ea5cf0434a23a0bb82aca830ea9612fb9d16b062 \
+size    50234 \
                 transcode-ffmpeg4.patch \
-                    rmd160  df5df5fb91b7051a580d697a52c3a6bd4d44e91a \
-                    sha256  2cc680666f705685a9fdc54b5a377e7728765bde6ed83c43b835634e27767721 \
-                    size    26970 \
+rmd160  df5df5fb91b7051a580d697a52c3a6bd4d44e91a \
+sha256  2cc680666f705685a9fdc54b5a377e7728765bde6ed83c43b835634e27767721 \
+size    26970 \
                 transcode-imagemagick7.patch \
-                    rmd160  af4e4214203f4879c359b772afa73ef928710347 \
-                    sha256  4ede15540ea6932954ac332c12dde130bf48e7e4773d1e04d3c3f23038c6ac51 \
-                    size    34353
+rmd160  af4e4214203f4879c359b772afa73ef928710347 \
+sha256  4ede15540ea6932954ac332c12dde130bf48e7e4773d1e04d3c3f23038c6ac51 \
+size    34353
 
 depends_build   port:pkgconfig
 

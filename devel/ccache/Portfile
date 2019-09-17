@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -8,8 +8,8 @@ revision            0
 # Use tarball, since the releases archive discourages running ./autogen.sh
 github.tarball_from tarball
 checksums           rmd160  a2aa777967d47700e6de73fc33e844c282222aeb \
-                    sha256  cbaafc73944864f76f910695b68ab82162b02c2ff0cec0e25292c553befaca0b \
-                    size    386099
+sha256  cbaafc73944864f76f910695b68ab82162b02c2ff0cec0e25292c553befaca0b \
+size    386099
 
 categories          devel
 platforms           darwin freebsd

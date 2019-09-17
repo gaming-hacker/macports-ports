@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,7 +22,7 @@ master_sites        sourceforge:/project/${name}/Rel_${relversion}
 distname            ${name}${relversion}
 
 checksums           rmd160  cd004df56030820009ba451816c501e130870840 \
-                    sha256  346ecd716b730441ea2ffe224591a6b8358413c85652a2425f1b5d771c9836ef
+sha256  346ecd716b730441ea2ffe224591a6b8358413c85652a2425f1b5d771c9836ef
 
 use_configure       no
 

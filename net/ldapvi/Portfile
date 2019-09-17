@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            ldapvi
 version         1.7
@@ -12,7 +14,7 @@ homepage        http://www.lichteblau.com/src.html
 platforms       darwin freebsd
 master_sites    http://www.lichteblau.com/download/
 checksums       md5 6dc2f5441ac5f1e2b5b036e3521012cc \
-                sha1 d1cde4cbb618180f9ae0e77c56a1520b8ad61c9a
+sha1 d1cde4cbb618180f9ae0e77c56a1520b8ad61c9a
 
 depends_build	port:pkgconfig \
 		port:autoconf \

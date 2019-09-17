@@ -1,9 +1,9 @@
-# -*-coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4-*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*-coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2-*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Mac-AppleScript-Glue 0.06
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ long_description    This module allows you to write Perl code in object-oriented
                     causes it to be executed.
 
 checksums           rmd160  c062eb1e61527d86a3f0b48963430005ea2570cd \
-                    sha256  84cedb221ce280de58dda834ffa532a27c7bafa3ad249c81226a51411af6e3df \
-                    size    22372
+sha256  84cedb221ce280de58dda834ffa532a27c7bafa3ad249c81226a51411af6e3df \
+size    22372
 
 platforms           darwin
 supported_archs     noarch

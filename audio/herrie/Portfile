@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		herrie
 version		2.2
@@ -25,8 +27,8 @@ platforms	darwin
 master_sites	http://herrie.info/distfiles/ \
 		http://www.stack.nl/~ed/projects/${name}/distfiles/
 checksums	md5 88832b10298ab89473730eb0c93b6ddf \
-		rmd160 e0f70ca4d867cf6cdbb452bd0f0860ef1f5a9f39 \
-		sha1 ae5c39be11aeb19898cd3f968580eafc623830b7
+rmd160 e0f70ca4d867cf6cdbb452bd0f0860ef1f5a9f39 \
+sha1 ae5c39be11aeb19898cd3f968580eafc623830b7
 use_bzip2	yes
 
 depends_build	port:gettext port:pkgconfig

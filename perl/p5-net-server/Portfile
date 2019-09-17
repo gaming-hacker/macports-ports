@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Net-Server 2.009
 license             {Artistic-1 GPL}
 platforms           darwin
@@ -18,4 +18,4 @@ long_description    Net::Server is an extensible, generic Perl server \
                     various concepts in the Apache Webserver.
 
 checksums           rmd160  3c7d76a898ef080bf9e27087e5fec2a00b259e52 \
-                    sha256  8267c6560355e2e0f483d3cc16195f342f32fe13cae9dde75a0a1ece5e9a813f
+sha256  8267c6560355e2e0f483d3cc16195f342f32fe13cae9dde75a0a1ece5e9a813f

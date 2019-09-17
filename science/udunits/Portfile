@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -23,8 +23,8 @@ homepage        http://www.unidata.ucar.edu/software/udunits/
 master_sites    ftp://ftp.unidata.ucar.edu/pub/udunits/ \
                 ftp://www.gfd-dennou.org/arch-large1/ucar/unidata/pub/udunits
 checksums           md5     2d984c738be0d674ec774d03997fdd9c \
-                    sha1    da4c3c50764b03db4cc83c679670203280aac51a \
-                    rmd160  cc1bffe18ba042cc6e19243a2efc52242649493f
+sha1    da4c3c50764b03db4cc83c679670203280aac51a \
+rmd160  cc1bffe18ba042cc6e19243a2efc52242649493f
 worksrcdir      ${distname}/src
 
 use_parallel_build no

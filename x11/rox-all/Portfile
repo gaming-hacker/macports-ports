@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            rox-all
 version         1.4
@@ -16,8 +18,8 @@ homepage        http://rox.sourceforge.net/desktop/ROX-All
 master_sites    sourceforge:rox
 use_bzip2       yes
 checksums       md5 48bc92054587882bfd874ffd0b487730 \
-                sha1 d3247138056b74b5864446a70af8a708897f7bbb \
-                rmd160 fe5eb4a5575c32fde0ba97554a85dd319972e0f8
+sha1 d3247138056b74b5864446a70af8a708897f7bbb \
+rmd160 fe5eb4a5575c32fde0ba97554a85dd319972e0f8
 
 depends_lib     port:rox-filer port:zeroinstall-injector
 

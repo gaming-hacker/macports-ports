@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           compiler_blacklist_versions 1.0
 
 name                spot
@@ -13,8 +15,8 @@ platforms           darwin
 license             GPL-3
 master_sites        http://www.lrde.epita.fr/dload/spot/
 checksums           rmd160  0735dc3744091e6d39e024da2aa8bde9dfcf4b6d \
-                    sha256  dcb7aa684725304afb3d435f26f25b51fbd6e9a6ef610e16163cc0030ad5eab4 \
-                    size    7484722
+sha256  dcb7aa684725304afb3d435f26f25b51fbd6e9a6ef610e16163cc0030ad5eab4 \
+size    7484722
 depends_lib-append  port:boost
 
 # make sure compiler supports C++14

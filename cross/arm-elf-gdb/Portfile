@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    arm-elf-gdb
 version                 7.1
@@ -16,8 +18,8 @@ distname                gdb-${version}
 dist_subdir             gdb
 use_bzip2               yes
 checksums               md5 21dce610476c054687b52770d2ddc657 \
-                        sha1 417e2e637a296ea0e1cdddf56233311b8708fa19 \
-                        rmd160 800d224496240a360c996e588490f2d87367c4e3
+sha1 417e2e637a296ea0e1cdddf56233311b8708fa19 \
+rmd160 800d224496240a360c996e588490f2d87367c4e3
 
 set crossgdb-target arm-elf
 

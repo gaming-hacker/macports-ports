@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ long_description    \
     command from the Android SDK
 platforms           darwin
 
-python.versions     27
+python.versions 27 37
 
 checksums           rmd160  0870039c7c99bf2d9d08a660862a8941229a80fb \
-                    sha256  ff4eb54063a063e6112f291c86b8e14ab6bcbfd458cca2116405d554557f202f \
-                    size    20913
+sha256  ff4eb54063a063e6112f291c86b8e14ab6bcbfd458cca2116405d554557f202f \
+size    20913
 
 if {${name} ne ${subport}} {
     post-extract {

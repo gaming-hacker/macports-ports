@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -24,8 +24,8 @@ distname            ${name}-snapshot-${snapshot}
 master_sites        http://gts.sourceforge.net/tarballs
 
 checksums           rmd160  24b3c469d5a35b658825eb342ae03e9e9d93afb8 \
-                    sha256  c23f72ab74bbf65599f8c0b599d6336fabe1ec2a09c19b70544eeefdc069b73b \
-                    size    880569
+sha256  c23f72ab74bbf65599f8c0b599d6336fabe1ec2a09c19b70544eeefdc069b73b \
+size    880569
 
 depends_build       port:pkgconfig
 

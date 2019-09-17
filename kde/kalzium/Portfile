@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4   1.1
@@ -18,7 +18,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 
 checksums           rmd160  79c3d78183b71829835b8b623a44152ee84e85fe \
-                    sha256  4b8d086c942874c56b4835079991f2d86289d163d2dbb3e86390270c758317e5
+sha256  4b8d086c942874c56b4835079991f2d86289d163d2dbb3e86390270c758317e5
 
 depends_lib-append  port:eigen port:openbabel \
                     port:libkdeedu port:ocaml

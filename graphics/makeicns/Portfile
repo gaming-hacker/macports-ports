@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ use_bzip2           yes
 worksrcdir          ${name}
 
 checksums           md5     29613f4774d4dc2871a0052826abe1ae \
-                    sha1    2a3b1229781516c8cc36089bf09729d5c17ac17c \
-                    rmd160  8bf438b375dbc3d84a7dc47cef39c5c290a4c2ed
+sha1    2a3b1229781516c8cc36089bf09729d5c17ac17c \
+rmd160  8bf438b375dbc3d84a7dc47cef39c5c290a4c2ed
 
 use_configure       no
 

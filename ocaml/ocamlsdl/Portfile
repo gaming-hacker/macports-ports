@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ocaml 1.0
 
 name              ocamlsdl
@@ -16,7 +18,7 @@ homepage          http://ocamlsdl.sourceforge.net/
 platforms         darwin
 master_sites      sourceforge:project/${name}/OCamlSDL/${name}-${version}
 checksums           rmd160  9ed03415db7dabe652efa78e80ddfae221f09d20 \
-                    sha256  abfb295b263dc11e97fffdd88ea1a28b46df8cc2b196777093e4fe7f509e4f8f
+sha256  abfb295b263dc11e97fffdd88ea1a28b46df8cc2b196777093e4fe7f509e4f8f
 
 depends_lib       port:libsdl_image port:libsdl_mixer port:libsdl_ttf port:ocaml port:lablgl port:ocaml-findlib
 

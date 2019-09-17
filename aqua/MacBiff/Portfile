@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    MacBiff
@@ -20,8 +22,8 @@ master_sites            sourceforge:project/macbiff/macbiff/${version}
 distname                macbiff-${version}
 use_zip                 yes
 checksums               md5     ba9ff1e8c0ee54602dbf008aac693472 \
-                        sha1    b722f8b82125971e85c06c979e5f15145c4f2380 \
-                        rmd160  399be866a24469984e0fe9cdf4febd60d2afa856
+sha1    b722f8b82125971e85c06c979e5f15145c4f2380 \
+rmd160  399be866a24469984e0fe9cdf4febd60d2afa856
 
 depends_lib             path:lib/libssl.dylib:openssl
 

@@ -1,9 +1,11 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           haskell 1.0
 
 haskell.setup       tf-random 0.5
 checksums           rmd160  bd58a02f7e68c4fd4e51591fa4ddad93d416d717 \
-                    sha256  2e30cec027b313c9e1794d326635d8fc5f79b6bf6e7580ab4b00186dadc88510
+sha256  2e30cec027b313c9e1794d326635d8fc5f79b6bf6e7580ab4b00186dadc88510
 
 license             BSD
 maintainers         nomaintainer

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,8 +25,8 @@ master_sites            https://sites.google.com/site/rainbowflight2/
 distname                ${name}${version}
 
 checksums               md5     f6cb47521afbfc5b40efdd2d8433830d \
-                        sha1    fd7394675c972377a48c2ff8e0a774853c0be6a3 \
-                        rmd160  4c97ee8d38537f52547cb7a4d31eced0a93f2054
+sha1    fd7394675c972377a48c2ff8e0a774853c0be6a3 \
+rmd160  4c97ee8d38537f52547cb7a4d31eced0a93f2054
 
 use_parallel_build      no
 

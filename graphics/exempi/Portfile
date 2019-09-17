@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -16,8 +16,8 @@ master_sites        https://libopenraw.freedesktop.org/download/
 use_bzip2           yes
 
 checksums           rmd160  5bf9d72d7cde0916f38b7a9499f75b66e0ad4009 \
-                    sha256  100b3d5b1b3370bc2e31c0978991716c4a4478246a2ac2df6382054a0ae89bc8 \
-                    size    3659352
+sha256  100b3d5b1b3370bc2e31c0978991716c4a4478246a2ac2df6382054a0ae89bc8 \
+size    3659352
 
 description         Exempi is an implementation of XMP.
 

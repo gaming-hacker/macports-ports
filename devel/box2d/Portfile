@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -20,7 +20,7 @@ long_description    ${description}
 homepage            http://box2d.org/
 
 checksums           rmd160  4cc7cf8918ab19a552ee1939c345aa061cd818a3 \
-                    sha256  d323141a9bb202e37f9860568ca0769be67e4758e6bbccb4f190fdf50cc7bf4e
+sha256  d323141a9bb202e37f9860568ca0769be67e4758e6bbccb4f190fdf50cc7bf4e
 
 conflicts_build     ${name}
 

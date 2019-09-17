@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ distname            tct-${version}
 dist_subdir         tct
 
 checksums           sha1    6ca3e507cbd9845593c93f4f5768f2e64e77a60a \
-                    rmd160  40a40256f0afc30a712d3e2f43771a67d7bc7808
+rmd160  40a40256f0afc30a712d3e2f43771a67d7bc7808
 
 use_configure       no
 

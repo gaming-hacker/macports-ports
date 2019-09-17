@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -37,8 +37,8 @@ use_parallel_build  no
 distfiles           alertmanager-${version}${extract.suffix}:main
 
 checksums   rmd160  c19ed98763ca6ff3e6ed131a3f2d2fb0c4c653e6 \
-            sha256  4730664f746173f89804df43b3f608cac030e79baae165d6d99df472eb52d36a \
-            size    5862442
+sha256  4730664f746173f89804df43b3f608cac030e79baae165d6d99df472eb52d36a \
+size    5862442
 
 set svc_name        prometheus-alertmanager
 set prom_user       prometheus

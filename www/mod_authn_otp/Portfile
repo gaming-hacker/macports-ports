@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ long_description    mod_authn_otp is an Apache web server module for two-factor 
                     mod_authn_otp also supports the Mobile-OTP algorithm.
 
 checksums           rmd160  dcb2a74554d4cc7665302b9c903d61b6a21ac7e3 \
-                    sha256  a11d44cb3a52215a0a5ee320b361d26ca66cc9f5d789d37f8fedb78e4b3ff18d
+sha256  a11d44cb3a52215a0a5ee320b361d26ca66cc9f5d789d37f8fedb78e4b3ff18d
 
 depends_build       port:gsed
 depends_lib         port:apache2 path:lib/libssl.dylib:openssl

@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 PortGroup           compilers 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Ifeffit 2
 epoch               1
 version             1.2.13
@@ -22,7 +22,7 @@ homepage            http://cars9.uchicago.edu/ifeffit/
 master_sites        https://github.com/newville/ifeffit/archive/
 
 checksums           rmd160  dedd8b9f6be0d0b0bce67e5f53c18faddf7b0912 \
-                    sha256  72a7f5bd6e6e1ff2b41761cfe726f79f2da8e71606399d3c3307451496a1c0ef
+sha256  72a7f5bd6e6e1ff2b41761cfe726f79f2da8e71606399d3c3307451496a1c0ef
 
 dist_subdir         ifeffit
 distname            1.2.final

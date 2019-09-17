@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                libsdl_gfx
 version             2.0.24
@@ -27,7 +29,7 @@ distname            SDL_gfx-${version}
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160 3534b70d638f130065a23bb10039e7784544eca9 \
-                    sha256 30ad38c3e17586e5212ce4a43955adf26463e69a24bb241f152493da28d59118
+sha256 30ad38c3e17586e5212ce4a43955adf26463e69a24bb241f152493da28d59118
 
 use_autoreconf      yes
 

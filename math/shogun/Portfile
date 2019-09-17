@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -30,7 +30,7 @@ master_sites        ${homepage}/archives/shogun/releases/${branch}/sources/
 use_bzip2           yes
 
 checksums           rmd160  5fece569be7d95bbe9ad406f1b5e10f06f4ac20e \
-                    sha256  6c47941a98d506d7b1e21d5bfd511f8684a2e1f371accd4756cdc8821916a63b
+sha256  6c47941a98d506d7b1e21d5bfd511f8684a2e1f371accd4756cdc8821916a63b
 
 worksrcdir          ${name}-${version}/src
 

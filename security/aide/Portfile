@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 
@@ -115,7 +115,7 @@ if {${subport} eq ${name}} {
     version           0.15.1
     master_sites      sourceforge:project/aide/aide/${version}
     checksums           rmd160  80ea88b1c1496bcca57d2d1cdeecdcdfca0fa5cf \
-                        sha256  303e5c186257df8c86e418193199f4ea2183fc37d3d4a9098a614f61346059ef
+sha256  303e5c186257df8c86e418193199f4ea2183fc37d3d4a9098a614f61346059ef
 
     livecheck.type      regex
     livecheck.url       ${homepage}

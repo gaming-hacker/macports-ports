@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        ftp://ftp.tin.org/pub/news/clients/tin/v${branch}
 
 use_xz              yes
 checksums           rmd160  ca9404b46705b75b615b79e6d0434c85e009c616 \
-                    sha256  cb1dc96cc61dcd12ad2e047ae41f4328fb424571fa3d8105dd700d71fada42aa \
-                    size    1538960
+sha256  cb1dc96cc61dcd12ad2e047ae41f4328fb424571fa3d8105dd700d71fada42aa \
+size    1538960
 
 depends_lib         port:icu \
                     port:libiconv \

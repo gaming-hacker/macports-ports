@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                mrxvt
 version             0.5.4
@@ -24,13 +26,13 @@ patchfiles          patch-src__rxvt.h.diff \
                     newer_libpng.diff \
                     CVE-2017-7483.patch
 checksums           ${distname}${extract.suffix} \
-                        md5     0232c8868484751dcb931a28f0756f69 \
-                        sha1    f50e9ad2f652d4212b0ac5241b919372d9e43744 \
-                        rmd160  175ce5c554c267ada4efde18e22704ff1b688dac \
+md5     0232c8868484751dcb931a28f0756f69 \
+sha1    f50e9ad2f652d4212b0ac5241b919372d9e43744 \
+rmd160  175ce5c554c267ada4efde18e22704ff1b688dac \
                     mrxvt-0.5.4-001-fix-segfault-when-wd-empty.patch \
-                        md5     2b6ecc9d68185e56a50eca0a2548fa8b \
-                        sha1    62b1d128f71e463dd38239efa4d5bc0daa77e9cf \
-                        rmd160  039929a83065055abfe29e239d7760390bb54a6b
+md5     2b6ecc9d68185e56a50eca0a2548fa8b \
+sha1    62b1d128f71e463dd38239efa4d5bc0daa77e9cf \
+rmd160  039929a83065055abfe29e239d7760390bb54a6b
 depends_lib \
 	port:xorg-libsm \
 	port:Xft2 \

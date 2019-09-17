@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ master_sites        http://www-obs.univ-lyon1.fr/labo/perso/eric.thiebaut/files/
 distname            OptimPack-${version}
 use_bzip2           yes
 checksums           rmd160 f360d6886a80218f077691736bb2308af232574a\
-                    sha256 13fb7ac0dc211df7236bd32253064c44144268e1f736a91021791798abd64694
+sha256 13fb7ac0dc211df7236bd32253064c44144268e1f736a91021791798abd64694
 
 depends_lib         path:bin/yorick:yorick
 

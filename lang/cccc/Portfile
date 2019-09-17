@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                cccc
 version             3.1.4
@@ -13,8 +15,8 @@ long_description    ${description}
 homepage            http://cccc.sourceforge.net/
 master_sites        sourceforge
 checksums           md5 7bd3ad868913a0beab2fde931737f928 \
-                    rmd160  1135f86c3e60010dda8f420492cfe5bcbfc98cd2 \
-                    sha256  27b3eca9a83a66799332363a80cc4bcd6db9869eddbda1a59a25cdace3ff4dbf
+rmd160  1135f86c3e60010dda8f420492cfe5bcbfc98cd2 \
+sha256  27b3eca9a83a66799332363a80cc4bcd6db9869eddbda1a59a25cdace3ff4dbf
 patchfiles          patch-posixgcc.mak.diff \
                     patch-cccc_tbl.cc.diff
 

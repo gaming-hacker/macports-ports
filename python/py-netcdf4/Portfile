@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,8 +26,8 @@ master_sites        pypi:n/netCDF4
 distname            netCDF4-${version}
 
 checksums           rmd160  232de81a67802e90c21117e32c2b549d184470d2 \
-                    sha256  259edab1f03b1c1b93bdbaa804d50211a0c9d8a15eee4f23988b5685c6c0d2c0 \
-                    size    538450
+sha256  259edab1f03b1c1b93bdbaa804d50211a0c9d8a15eee4f23988b5685c6c0d2c0 \
+size    538450
 
 mpi.enforce_variant netcdf
 mpi.setup
@@ -35,7 +35,7 @@ mpi.setup
 build.env-append    USE_NCCONFIG=1
 destroot.env-append USE_NCCONFIG=1
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:netcdf \

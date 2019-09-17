@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ description         Light-weight Approach to Aspect Oriented Programming in Pyth
 long_description    ${description}
 license             LGPL-2.1+
 
-python.versions     27
+python.versions 27 37
 
 homepage            https://pypi.org/project/python-aspects/
 master_sites        macports_distfiles
@@ -20,8 +20,8 @@ distname            python-aspects-${version}
 livecheck.type      none
 
 checksums           rmd160  2366ad4fc39dc202c6b88f3d680eab2ae6bbf1e2 \
-                    sha256  c012fadc798c3fa0f43b30193d7c0fddcbc0f003f3b51c80d4519112ee15d3ed \
-                    size    24485
+sha256  c012fadc798c3fa0f43b30193d7c0fddcbc0f003f3b51c80d4519112ee15d3ed \
+size    24485
 
 supported_archs     noarch
 

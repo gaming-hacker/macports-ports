@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    Genders is a static cluster configuration database \
                     variety of tools and scripts for management of large clusters.
 
 checksums           rmd160  819ea7a2e8ad552815c5446037554a6871ca9ae8 \
-                    sha256  0ff292825a29201106239c4d47d9ce4c6bda3f51c78c0463eb2634ecc337b774 \
-                    size    595795
+sha256  0ff292825a29201106239c4d47d9ce4c6bda3f51c78c0463eb2634ecc337b774 \
+size    595795
 
 master_sites        ${homepage}/releases/download/${github.project}-${github.tag_prefix}
 

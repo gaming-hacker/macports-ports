@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Data-UUID 1.224
 license             BSD
 maintainers         nomaintainer
@@ -14,8 +14,8 @@ long_description    $description
 platforms           darwin
 
 checksums           rmd160  b2a7ce331c4ea5ac03ca0374d856f4651031c849 \
-                    sha256  c958c17502bbef5eccf40c040874895747f7f9b9f9e5192c18688370981bf47c \
-                    size    17635
+sha256  c958c17502bbef5eccf40c040874895747f7f9b9f9e5192c18688370981bf47c \
+size    17635
 
 
 if {${perl5.major} != ""} {

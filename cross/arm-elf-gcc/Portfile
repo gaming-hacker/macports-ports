@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,11 +29,11 @@ distfiles           gcc-${version}.tar.bz2:gcc newlib-${newlibversion}.tar.gz:ne
 worksrcdir          gcc-${version}
 
 checksums           gcc-${version}.tar.bz2 \
-                    rmd160  b4ba153b098cad726ecd28195ee445aa542d37ae \
-                    sha256  2f7c37eb4fc14422ff2358a9ef59c974a75ab41204ef0e49fc34ab1d8981a9c3 \
+rmd160  b4ba153b098cad726ecd28195ee445aa542d37ae \
+sha256  2f7c37eb4fc14422ff2358a9ef59c974a75ab41204ef0e49fc34ab1d8981a9c3 \
                     newlib-${newlibversion}.tar.gz \
-                    rmd160  e36c5337a74633456b47d09594974c7dd7a9cc3e \
-                    sha256  c644b2847244278c57bec2ddda69d8fab5a7c767f3b9af69aa7aa3da823ff692
+rmd160  e36c5337a74633456b47d09594974c7dd7a9cc3e \
+sha256  c644b2847244278c57bec2ddda69d8fab5a7c767f3b9af69aa7aa3da823ff692
 
 patchfiles          patch-gcc-config-arm-t-arm-elf.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ platforms           darwin
 master_sites        https://savannah.nongnu.org/download/numdiff/
 
 checksums           rmd160  f6fb3a6bc046861f02575ce1cf55b12e19ed99f4 \
-                    sha256  87284a117944723eebbf077f857a0a114d818f8b5b54d289d59e73581194f5ef
+sha256  87284a117944723eebbf077f857a0a114d818f8b5b54d289d59e73581194f5ef
 
 depends_lib         port:gmp
 

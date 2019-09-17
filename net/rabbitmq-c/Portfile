@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ description         a C-language AMQP client library for use with RabbitMQ
 long_description    RabbitMQ-C is ${description}.
 
 checksums           rmd160  a4a8b7d6a338d8316bbfa7b8409ba386fc5d333d \
-                    sha256  39a47b01bb5c0df1eb7b31c16fd3f17ffd37b2126701f3031da7d3323d408c50 \
-                    size    144781
+sha256  39a47b01bb5c0df1eb7b31c16fd3f17ffd37b2126701f3031da7d3323d408c50 \
+size    144781
 
 depends_build-append \
                     port:xmlto

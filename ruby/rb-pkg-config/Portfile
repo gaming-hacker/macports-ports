@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -14,6 +14,6 @@ license             LGPL-2+
 supported_archs     noarch
 
 checksums           md5     cae3d681a928482108b670ceda8c3eec \
-                    sha1    20266e013b094e539bbb218daad8235ef987d7c9 \
-                    sha256  c08fc6596eeef6f0fcfd4c8433010a143c22142f9cccbc2666f32c67c5af8b34 \
-                    rmd160  d9c35bf1e7015db96e01e9d8b1f3736a47047468
+sha1    20266e013b094e539bbb218daad8235ef987d7c9 \
+sha256  c08fc6596eeef6f0fcfd4c8433010a143c22142f9cccbc2666f32c67c5af8b34 \
+rmd160  d9c35bf1e7015db96e01e9d8b1f3736a47047468

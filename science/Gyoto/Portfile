@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    Gyoto aims at providing a framework for computing orbits \
 homepage            http://gyoto.obspm.fr
 
 checksums           rmd160  6f40f8c80c26bdffffb3c18dab842d03aa9b781d \
-                    sha256  ce8e4a8ab57885b556fda7dfc5110d9b5fb971eca005a4ac43769c25a4eb1b28 \
-                    size    1971860
+sha256  ce8e4a8ab57885b556fda7dfc5110d9b5fb971eca005a4ac43769c25a4eb1b28 \
+size    1971860
 
 depends_build       port:LORENE \
                     port:pkgconfig

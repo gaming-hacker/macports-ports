@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,10 +30,10 @@ distname            ${worksrcdir}-${version}
 use_zip             yes
 
 checksums           rmd160  b7538e06c47370f9c9f2df70fc41932145621281 \
-                    sha256  7f37a2d073816966c076c718af3cd2af3a934e0a812d6ca9703dc595edba59bc
+sha256  7f37a2d073816966c076c718af3cd2af3a934e0a812d6ca9703dc595edba59bc
 
 # Note that python 3.1 is not supported
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append port:mesa

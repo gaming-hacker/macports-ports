@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  github 1.0
@@ -18,8 +18,8 @@ long_description            Hunspell is a spell checker and morphological analyz
                             using Curses library, Ispell pipe interface, OpenOffice.org UNO module.
 
 checksums                   rmd160  ed6b7276209cb87b0b334da7141404667bba1ccd \
-                            sha256  7dc48b233424061c11bda2b5207310458cb106bcbf8d2bbdb7f3915a8f312342 \
-                            size    482217
+sha256  7dc48b233424061c11bda2b5207310458cb106bcbf8d2bbdb7f3915a8f312342 \
+size    482217
 
 conflicts                   freeling
 

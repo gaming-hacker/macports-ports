@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Module-Build-Tiny 0.039
 revision            1
 platforms           darwin
@@ -18,7 +18,7 @@ long_description    Many Perl distributions use a Build.PL file instead of a Mak
                     This module provides a simple, lightweight, drop-in replacement.
 
 checksums           rmd160  ed351a2e2fad790df701b031b66d26eb16779cc7 \
-                    sha256  7d580ff6ace0cbe555bf36b86dc8ea232581530cbeaaea09bccb57b55797f11c
+sha256  7d580ff6ace0cbe555bf36b86dc8ea232581530cbeaaea09bccb57b55797f11c
 
 if {${perl5.major} != ""} {
     depends_lib-append \

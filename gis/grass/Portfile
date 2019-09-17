@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           wxWidgets 1.0
@@ -21,8 +21,8 @@ homepage            http://grass.osgeo.org/
 master_sites        ${homepage}grass[join [lrange [split ${version} .] 0 1] {}]/source/
 
 checksums           rmd160  7c67afcd9ef8c75558ef8eafd8cab23ad257c37c \
-                    sha256  5a84754614619cc265d843980e28f39a1d24048805b9b2865e76a583d973f333 \
-                    size    25737006
+sha256  5a84754614619cc265d843980e28f39a1d24048805b9b2865e76a583d973f333 \
+size    25737006
 
 depends_build       port:pkgconfig
 depends_lib         port:fftw-3 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       cmake 1.0
@@ -29,8 +29,8 @@ master_sites                    sourceforge:project/arma
 use_xz                          yes
 
 checksums                       rmd160  f7565b1393c494d4858ec955fceec48875bf0ccc \
-                                sha256  923f2b48974f707c9da3176aab8d370e8003de23277c17ca0e49fdf97fac08bd \
-                                size    4710256
+sha256  923f2b48974f707c9da3176aab8d370e8003de23277c17ca0e49fdf97fac08bd \
+size    4710256
 
 depends_build-append            port:pkgconfig
 

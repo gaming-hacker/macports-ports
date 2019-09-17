@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                uade2
 version             2.13
@@ -15,8 +17,8 @@ use_bzip2           yes
 master_sites        http://zakalwe.fi/uade/uade2/
 
 checksums           md5     29bb1018b7fa58f93b246264c160bdc6 \
-                    sha1    61c5ce9dfecc37addf233de06be196c9b15a91d8 \
-                    rmd160  10034302e848ea7c974429ae302ca52403909ded
+sha1    61c5ce9dfecc37addf233de06be196c9b15a91d8 \
+rmd160  10034302e848ea7c974429ae302ca52403909ded
 
 depends_build       port:pkgconfig
 depends_lib         port:libao

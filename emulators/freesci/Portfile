@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                freesci
 version             0.6.4
@@ -23,8 +25,8 @@ use_autoreconf      yes
 autoreconf.args     -fvi
 
 checksums           md5     b7669c1f1db8b7b19967ed61f103df3a \
-                    sha1    2761812ab95ed9eb3225717a2d336c0b4098fc76 \
-                    rmd160  8aa189f4b9b612fe8625be6b42a9bdfd46fef33b
+sha1    2761812ab95ed9eb3225717a2d336c0b4098fc76 \
+rmd160  8aa189f4b9b612fe8625be6b42a9bdfd46fef33b
 
 configure.cflags-append -std=gnu89
 configure.args      --datadir=${prefix}/share/${name} \

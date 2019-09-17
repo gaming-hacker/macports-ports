@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 name           aterm
@@ -21,7 +21,7 @@ master_sites   sourceforge:project/aterm/aterm/${version} \
                ftp://ftp.afterstep.org/apps/aterm/
 use_bzip2      yes
 checksums      md5 c2eede028e1011e0ec7035cf319c9b5a \
-               sha1 a975753b415306a0734efc3773de8a86129bb54b
+sha1 a975753b415306a0734efc3773de8a86129bb54b
 
 depends_build       port:xorg-libXt
 

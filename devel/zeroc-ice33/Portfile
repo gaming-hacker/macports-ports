@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            zeroc-ice33
 version         3.3.1
@@ -35,8 +37,8 @@ master_sites    ${homepage}download/Ice/${branch}/
 
 distname        Ice-${version}
 checksums       md5 1f37dfcec4662fcde030553fb447d064 \
-                sha1 08d0f32bdb7d909b4a531d45cccfa97bdde649aa \
-                rmd160 d64d52c35640cebe1145e62f57618473d17cbeb5
+sha1 08d0f32bdb7d909b4a531d45cccfa97bdde649aa \
+rmd160 d64d52c35640cebe1145e62f57618473d17cbeb5
 patchfiles      patch-ice.cpp.config.Make.rules.diff \
                 patch-ice.cpp.config.Make.rules.Darwin.diff \
                 patch-ice.cpp.src.Ice.DynamicLibrary.cpp.diff \

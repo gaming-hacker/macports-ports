@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
 name                sptk
 version             3.11
 checksums           rmd160  7c87b533ff66496d2ea02b801c809197546deda5 \
-                    sha256  ae26929a3c196ca8a1d1a638718fc4400adf8ce963b8328be72f8802f1589100 \
-                    size    1160658
+sha256  ae26929a3c196ca8a1d1a638718fc4400adf8ce963b8328be72f8802f1589100 \
+size    1160658
 
 categories          audio
 maintainers         nomaintainer

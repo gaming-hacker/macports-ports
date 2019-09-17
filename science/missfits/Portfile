@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 
@@ -23,8 +23,8 @@ long_description    MissFITS uses its own optimized library to \
 homepage            http://www.astromatic.net/software/missfits/
 master_sites        http://www.astromatic.net/download/missfits/
 checksums           md5     d84959e0e6d7bd8da6a6aa464eb773eb \
-                    sha1    10a4b17302c011b76db9db526d59a6737401a96d \
-                    rmd160  ac07fe9c70afa935ffe7a1b82bfe0847af41cf0f
+sha1    10a4b17302c011b76db9db526d59a6737401a96d \
+rmd160  ac07fe9c70afa935ffe7a1b82bfe0847af41cf0f
 
 post-destroot {
     set docdir ${destroot}${prefix}/share/doc

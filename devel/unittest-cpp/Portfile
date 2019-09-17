@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup               github 1.0
@@ -17,4 +17,4 @@ long_description        UnitTest++ is a lightweight unit testing framework for C
 github.tarball_from     releases
 
 checksums               rmd160  cbd4071442622eec6b9246fba84c351290f854d8 \
-                        sha256  5b00a217f90fe262d91d09405ef5a8b5d28063da2f701cc58af48d560c4792af
+sha256  5b00a217f90fe262d91d09405ef5a8b5d28063da2f701cc58af48d560c4792af

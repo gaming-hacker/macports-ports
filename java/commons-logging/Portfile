@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup java 1.0
 
 name                commons-logging
@@ -17,8 +19,8 @@ homepage            https://commons.apache.org/logging/
 distname            ${name}-${version}-src
 master_sites        apache:commons/logging/source/
 checksums           rmd160  ff628c8de57f7da8572de3554196ee033e255312 \
-                    sha256  49665da5a60d033e6dff40fe0a7f9173e886ae859ce6096c1afe34c48b677c81 \
-                    size    188536
+sha256  49665da5a60d033e6dff40fe0a7f9173e886ae859ce6096c1afe34c48b677c81 \
+size    188536
 
 # This port would normally be compatible with Java 1.2+,
 # but because it doesn't build with JDK 9 or higher,

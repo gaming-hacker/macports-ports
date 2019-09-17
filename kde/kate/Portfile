@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4   1.1
@@ -21,7 +21,7 @@ master_sites        kde:stable/${version}/src/
 use_xz              yes
 distname            kate-${version}
 checksums           rmd160  195cfac39111a1434b6b5c60543b219a70c0c74e \
-                    sha256  513d4ae2c36fa6b59caf3b2b685e3ea1167093d16025859cfac90d75617e707d
+sha256  513d4ae2c36fa6b59caf3b2b685e3ea1167093d16025859cfac90d75617e707d
 
 depends_lib-append  port:kdelibs4 \
                     port:qjson \

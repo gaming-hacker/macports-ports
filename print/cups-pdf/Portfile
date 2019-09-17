@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                cups-pdf
 version             2.6.1
@@ -46,8 +48,8 @@ distname            ${name}_${version}
 worksrcdir          ${name}-${version}
 
 checksums           md5     65f3fd525c4a9b1d736b91594b3166d5 \
-                    sha1    6806f0004dfed5216625ab60cfe307ded23c2f6a \
-                    rmd160  ebb7ed5192ff91201e2ef9d87d8f24c1c7a393cc
+sha1    6806f0004dfed5216625ab60cfe307ded23c2f6a \
+rmd160  ebb7ed5192ff91201e2ef9d87d8f24c1c7a393cc
 
 post-patch {
    reinplace "s|/etc|${prefix}/etc|" ${worksrcpath}/src/cups-pdf.h

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,9 +6,9 @@ name                VisualBoyAdvance
 version             1.7.2
 revision            4
 checksums           md5     cc02339e3fd8efd9f23121b0a2f81fd8 \
-                    rmd160  44f94a4f270f2cda25879681c52892f6978caf99 \
-                    sha256  f4114f921a4fd4bf2ccfc68a46b9c5aa9c71cd94519fbe9ec0be992462e129b7 \
-                    size    1410762
+rmd160  44f94a4f270f2cda25879681c52892f6978caf99 \
+sha256  f4114f921a4fd4bf2ccfc68a46b9c5aa9c71cd94519fbe9ec0be992462e129b7 \
+size    1410762
 
 maintainers         nomaintainer
 categories          emulators games

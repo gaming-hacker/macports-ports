@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           x11font 1.0
 
 x11font.setup       font-bh-type1 1.0.3 Type1
@@ -11,4 +13,4 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160 b44fd0c3b0be52605fd40f25fdbf7f97a933a098 \
-                    sha256 761455a297486f3927a85d919b5c948d1d324181d4bea6c95d542504b68a63c1
+sha256 761455a297486f3927a85d919b5c948d1d324181d4bea6c95d542504b68a63c1

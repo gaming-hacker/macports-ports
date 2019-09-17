@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -19,7 +19,7 @@ master_sites            sourceforge:project/fife/active/src
 distname                ${name}_${version}
 
 checksums               rmd160  ccd94e7dd8c0487b81ee2e7076341ddb5e355018 \
-                        sha256  1d3c7a19d05ae426af6ccd50a8ba79a71eb6e6f18f0226d1abdaeae7fcf9d3a8
+sha256  1d3c7a19d05ae426af6ccd50a8ba79a71eb6e6f18f0226d1abdaeae7fcf9d3a8
 
 depends_build           port:scons
 

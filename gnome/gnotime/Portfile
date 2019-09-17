@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -20,7 +20,7 @@ homepage            http://gttr.sourceforge.net/
 master_sites        sourceforge:gttr
 
 checksums           rmd160  a0963cad9547c9b25f2ee6280c211a7fcb87e4d2 \
-                    sha256  a1bf1389829e5795016cc49810c8be80f9bbccb5d56e97f00efb0718559a539b
+sha256  a1bf1389829e5795016cc49810c8be80f9bbccb5d56e97f00efb0718559a539b
 
 depends_build       port:pkgconfig \
                     port:intltool \

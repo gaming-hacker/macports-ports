@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -26,7 +26,7 @@ homepage            http://www.xcrysden.org/
 master_sites        ${homepage}/download
 
 checksums           rmd160  2473752e074b2877df890b232cdc7bd02580a9e5 \
-                    sha1    388cf837aa757e612f36a12eb7fb592c36cfd6f3
+sha1    388cf837aa757e612f36a12eb7fb592c36cfd6f3
 
 compilers.choose    fc
 compilers.setup     require_fortran

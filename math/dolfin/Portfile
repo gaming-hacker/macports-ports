@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; c-basic-offset: 4; indent-tabs-mode: nil; tab-width: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; c-basic-offset: 2; indent-tabs-mode: nil; tab-width: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           bitbucket 1.0
@@ -16,8 +16,8 @@ description         DOLFIN is a part of FEniCS
 long_description    DOLFIN is a library that functions as the main user interface of FEniCS
 
 checksums           rmd160  9b1c8b3c54368d7cda0cc615d5ca16070adbbde0 \
-                    sha256  2afb54e2f8a2c7be5a89e4ef224b68ae514c32168c9a94b1921d62339f8decd4 \
-                    size    4835222
+sha256  2afb54e2f8a2c7be5a89e4ef224b68ae514c32168c9a94b1921d62339f8decd4 \
+size    4835222
 
 mpi.setup           require
 

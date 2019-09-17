@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup   github  1.0
 
 github.setup        keplerproject cgilua 5.1.4 v
@@ -16,8 +18,8 @@ long_description    CGILua is a tool for creating dynamic Web pages and manipula
 					applications with Lua.
 
 checksums           md5     6c120f3bb235e1edd9baad762eb303c1 \
-                    sha1    573da0ffbaed5c60eb6b2f1c5587d32f9cdc5a49 \
-                    rmd160  e094af41d5162a0793b68f46597983a8d4d220e5
+sha1    573da0ffbaed5c60eb6b2f1c5587d32f9cdc5a49 \
+rmd160  e094af41d5162a0793b68f46597983a8d4d220e5
 
 depends_lib         port:lua \
                     port:lua-luafilesystem

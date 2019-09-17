@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -37,7 +37,7 @@ distname        gdb-${version}
 master_sites    http://opensource.apple.com/tarballs/gdb
 
 checksums       rmd160  90290c3950dd06c1691a477b9ee302c00b681ed1 \
-                sha256  d25b056a826015e1e0ea338b9b8f03e40dce3ff4696faf95df259ae1a42698da
+sha256  d25b056a826015e1e0ea338b9b8f03e40dce3ff4696faf95df259ae1a42698da
 
 depends_build   port:gettext port:zlib port:flex port:texinfo
 

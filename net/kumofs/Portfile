@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ long_description    \
 master_sites        https://github.com/downloads/etolabo/${name}
 
 checksums           md5     70fc53a332fb2b76ae6a3aad7aa59aad \
-                    sha1    a1e895e42c8d5d75233f2234cf55069e76b4d39b \
-                    rmd160  01bbc92c4d06194e9fef02191a07238ebdc49020
+sha1    a1e895e42c8d5d75233f2234cf55069e76b4d39b \
+rmd160  01bbc92c4d06194e9fef02191a07238ebdc49020
 
 use_parallel_build  yes
 

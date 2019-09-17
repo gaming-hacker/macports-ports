@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -34,13 +34,13 @@ distfiles       ${distname}${extract.suffix}:gap \
                 ${ffmpeg-name}${extract.suffix}:ffmpeg
 
 checksums       ${distname}${extract.suffix} \
-                    md5     249ed829de8b78675c0fe4ef4212089f \
-                    sha1    5ce9b73de4c992bd2a527197847033e15eb2c346 \
-                    rmd160  2121eae37bd02f8e784cd377d1a48515221a97e8 \
+md5     249ed829de8b78675c0fe4ef4212089f \
+sha1    5ce9b73de4c992bd2a527197847033e15eb2c346 \
+rmd160  2121eae37bd02f8e784cd377d1a48515221a97e8 \
                 ${ffmpeg-name}${extract.suffix} \
-                    md5     4dc369e19df67f0e67a87a389a7dafbd \
-                    sha1    1187f2d7dd45c1f72a0eadd47058568b94349a00 \
-                    rmd160  814720c3adbb85053e528783a11b18904dc87f40
+md5     4dc369e19df67f0e67a87a389a7dafbd \
+sha1    1187f2d7dd45c1f72a0eadd47058568b94349a00 \
+rmd160  814720c3adbb85053e528783a11b18904dc87f40
 
 patch.dir       ${workpath}
 patchfiles      patch-extern_libs-configure_options_ffmpeg.txt.diff \

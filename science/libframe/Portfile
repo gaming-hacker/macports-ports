@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -20,7 +20,7 @@ homepage      http://lappweb.in2p3.fr/virgo/FrameL/
 master_sites  http://software.ligo.org/lscsoft/source/
 
 checksums     rmd160 73f98260d4a279985a5b54001f03f1623e54a038 \
-              sha256 374743ccce835427a0900590a515c112661760e12ec596159d3f86073dd099da
+sha256 374743ccce835427a0900590a515c112661760e12ec596159d3f86073dd099da
 
 use_parallel_build yes
 

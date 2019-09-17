@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -21,7 +21,7 @@ long_description    Rebar is a self-contained Erlang script, so it's easy to \
                     variety of locations (Git, Hg, etc).
                  
 checksums           rmd160  8415c14c4de7f6d9951fd2804b5b84f01ce8af10 \
-                    sha256  275e7f5ae911d6025832151e2f7fe40e1d02535843cb751720cc0e9d910bb864
+sha256  275e7f5ae911d6025832151e2f7fe40e1d02535843cb751720cc0e9d910bb864
 
 depends_lib         port:erlang
 

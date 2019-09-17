@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ master_sites        pypi:a/asteval/
 distname            asteval-${version}
 
 checksums           rmd160  6948f9abd26664384ef96887312847e8b3e8560c \
-                    sha256  10445b8e8cc748f4b44148b2c3b9a1d5042cf0a84a110525193fb156e1de8205 \
-                    size    52999
+sha256  10445b8e8cc748f4b44148b2c3b9a1d5042cf0a84a110525193fb156e1de8205 \
+size    52999
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_build-append \

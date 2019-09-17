@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            hffzip
 version         1.01
@@ -20,8 +22,8 @@ master_sites    http://retis.sssup.it/~scordino/projects/
 distname        ${name}${version}
 
 checksums       md5 d81cdfb92e03cfdb109c2728f8ba8594 \
-                sha1 f22e7a39b5dbe9888d6f00994a5ee42cbca66d1d \
-                rmd160 cc73025f112b9c8f4a4d2a1eae9e5da524d63939
+sha1 f22e7a39b5dbe9888d6f00994a5ee42cbca66d1d \
+rmd160 cc73025f112b9c8f4a4d2a1eae9e5da524d63939
 
 worksrcdir      ${name}
 

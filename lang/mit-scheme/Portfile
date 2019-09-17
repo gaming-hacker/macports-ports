@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -26,7 +26,7 @@ master_sites            gnu:${name}/stable.pkg/${version}/
 distname                ${name}-c-${version}
 
 checksums               rmd160  a8028230d500855fe1864e2ad7f8210810296ec5 \
-                        sha256  4f6a16f9c7d4b4b7bb3aa53ef523cad39b54ae1eaa3ab3205930b6a87759b170
+sha256  4f6a16f9c7d4b4b7bb3aa53ef523cad39b54ae1eaa3ab3205930b6a87759b170
 
 depends_lib \
     port:xorg-libX11 \

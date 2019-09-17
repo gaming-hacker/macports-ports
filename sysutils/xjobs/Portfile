@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,6 +15,6 @@ platforms           darwin
 master_sites        http://www.maier-komor.de/xjobs
 
 checksums           rmd160  d657b21900783ea00f03e153c9cf5322201c5ec7 \
-                    sha256  a27df96bce241974c444beb63ebe62ba638654619b6a8012523eca93a0f7cbef
+sha256  a27df96bce241974c444beb63ebe62ba638654619b6a8012523eca93a0f7cbef
 
 extract.suffix      .tgz

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup github 1.0
@@ -19,8 +19,8 @@ long_description \
     thread-safe.
 
 checksums           rmd160  7dcb792282fbe353c145cb8727a97bf0927fda99 \
-                    sha256  dc9e6ba177d5ded698abcade77a8546b70d14c6eb47e9e040e94c15d4580e2c1 \
-                    size    112610
+sha256  dc9e6ba177d5ded698abcade77a8546b70d14c6eb47e9e040e94c15d4580e2c1 \
+size    112610
 
 depends_build       port:libtool
 

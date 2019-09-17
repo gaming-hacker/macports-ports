@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -12,8 +12,8 @@ long_description \
   routines for gravitational wave data analysis.
 
 checksums     rmd160  8740da3afb0518f9143c5575c6d8558345c9a0da \
-              sha256  360544a6372b279b88fde55550730985dca49c1fe7e8daaa3c6cd16a82cfcc37 \
-              size    1653152
+sha256  360544a6372b279b88fde55550730985dca49c1fe7e8daaa3c6cd16a82cfcc37 \
+size    1653152
 
 depends_lib   port:gsl \
               port:fftw-3 \

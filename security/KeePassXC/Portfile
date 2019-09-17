@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               qt5 1.0
@@ -93,8 +93,8 @@ if {${subport} eq ${name}} {
     conflicts               KeePassXC-devel
 
     checksums               rmd160  44302495518351d1596117bbb6f2e1c224715c19 \
-                            sha256  4e78c04d0e3ea0a45d4f944e396358866dfde7316721b031c135b78920099af6 \
-                            size    4840019
+sha256  4e78c04d0e3ea0a45d4f944e396358866dfde7316721b031c135b78920099af6 \
+size    4840019
 
     patchfiles              stable/patch-no-deployqt.diff
 
@@ -110,8 +110,8 @@ if {${subport} eq ${name}} {
     conflicts               KeePassXC
 
     checksums               rmd160  36651aaf95a185b99620c6ad87bb316d9ad3939d \
-                            sha256  fd968352dec7754c7e5f15b77a98f1eb56a882e66739591432381dfb95dfa02a \
-                            size    9451238
+sha256  fd968352dec7754c7e5f15b77a98f1eb56a882e66739591432381dfb95dfa02a \
+size    9451238
 
     patchfiles              devel/patch-no-deployqt.diff
 }

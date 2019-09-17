@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,8 +15,8 @@ platforms           darwin
 master_sites        sourceforge:qore
 
 checksums           md5 d4443692be9617d040894c40047aa715 \
-                    sha1 59c5ba422fedff6cc53bf518c975a81cfbcd5e85 \
-                    rmd160 63130c9996b4312c1d135b408848f357cdfeb686
+sha1 59c5ba422fedff6cc53bf518c975a81cfbcd5e85 \
+rmd160 63130c9996b4312c1d135b408848f357cdfeb686
 
 depends_lib         port:qore \
                     port:qore-opengl-module \

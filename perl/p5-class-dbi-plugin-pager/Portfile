@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Class-DBI-Plugin-Pager 0.566
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,7 +15,7 @@ long_description    Adds a pager method to your class that can query \
 platforms           darwin
 
 checksums           rmd160  e65041ea1b133eae17b8372d84d3c0e8970de8d4 \
-                    sha256  13629f4159e5e3dd28ce5522cce50310ba41d1c36c4f9610a04a031077ed5b5b
+sha256  13629f4159e5e3dd28ce5522cce50310ba41d1c36c4f9610a04a031077ed5b5b
 
 if {${perl5.major} != ""} {
     depends_lib-append \

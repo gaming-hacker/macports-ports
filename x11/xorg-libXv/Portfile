@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            xorg-libXv
 version         1.0.11
@@ -14,8 +16,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXv-${version}
 checksums           sha1    d79f9c56faedd682f420fa68bb9d7ff755b84579 \
-                    rmd160  631097e33dff4a2de2bd42594e0b8020a9156ddc \
-                    sha256  d26c13eac99ac4504c532e8e76a1c8e4bd526471eb8a0a4ff2a88db60cb0b088
+rmd160  631097e33dff4a2de2bd42594e0b8020a9156ddc \
+sha256  d26c13eac99ac4504c532e8e76a1c8e4bd526471eb8a0a4ff2a88db60cb0b088
 
 use_bzip2   yes
 use_parallel_build      yes

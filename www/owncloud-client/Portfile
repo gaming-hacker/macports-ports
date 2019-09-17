@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -15,8 +15,8 @@ set build_id            11654
 set version_id          11456
 
 checksums               rmd160  d241db4536309c8878e9cdf232063133f3e67f11 \
-                        sha256  615439c6a224e263cee0d554b8b5f98b57c331dbc18df7ae5d99197480cf563f \
-                        size    16720764
+sha256  615439c6a224e263cee0d554b8b5f98b57c331dbc18df7ae5d99197480cf563f \
+size    16720764
 
 categories              www aqua
 maintainers             {mps @Schamschula} openmaintainer

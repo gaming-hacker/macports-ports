@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MogileFS-Server 2.73
 license             {Artistic-1 GPL}
 categories-append   net sysutils
@@ -14,8 +14,8 @@ description         MogileFS (distributed filesystem) server
 long_description    ${description}
 
 checksums           rmd160  ca73a6acb31911e5ec940e80c5082bd315b00973 \
-                    sha256  d755bb3a0390537051382406726df96c6bac983de074aa8212dcde1cb3363a30 \
-                    size    202285
+sha256  d755bb3a0390537051382406726df96c6bac983de074aa8212dcde1cb3363a30 \
+size    202285
 
 if {${perl5.major} != ""} {
 #

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup			UNIVERSAL-moniker 0.08
 revision            4
 license			{Artistic-1 GPL}
@@ -19,7 +19,7 @@ long_description \
 platforms			darwin
 
 checksums           rmd160  38bc2d57a8f2446c08eee4143e43f0662b851bf2 \
-                    sha256  94ce27a546cd57cb52e080a8f2533a7cc2350028388582485bd1039a37871f9c
+sha256  94ce27a546cd57cb52e080a8f2533a7cc2350028388582485bd1039a37871f9c
 
 if {${perl5.major} != ""} {
 depends_lib-append	port:p${perl5.major}-lingua-en-inflect

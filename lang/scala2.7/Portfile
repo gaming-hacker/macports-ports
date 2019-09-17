@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup select 1.0
 
 name            scala2.7
@@ -23,8 +25,8 @@ master_sites    ${homepage}downloads/distrib/files/
 distname        scala-${version}.final
 extract.suffix  .tgz
 checksums       md5 5d2294d5aab72fec869c0ba666d28b7e \
-                sha1 2197475c8d137cb9f05614807e7d4f18ad8db7e3 \
-                rmd160 ea590b9e25fd0ede59cc6ccd5e9d3bba99885b0f
+sha1 2197475c8d137cb9f05614807e7d4f18ad8db7e3 \
+rmd160 ea590b9e25fd0ede59cc6ccd5e9d3bba99885b0f
 
 depends_lib     port:scala_select
 

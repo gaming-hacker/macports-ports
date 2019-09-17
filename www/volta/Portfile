@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           bitbucket 1.0
@@ -23,7 +23,7 @@ long_description    Volta is a high performance, low resource URI rewriter \
 extract.suffix      .tgz
 
 checksums           rmd160  6904a79e1ae709189abb0703de2f7194ee5bbbb2 \
-                    sha256  499e2ba9167b2b1663790961f13d1289bfcb9339d2032b7e2076314bc96fba5c
+sha256  499e2ba9167b2b1663790961f13d1289bfcb9339d2032b7e2076314bc96fba5c
 
 depends_build       port:pkgconfig \
                     port:tinycdb

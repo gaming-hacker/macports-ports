@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         XML-Validator-Schema 1.10
 revision            1
 maintainers         nomaintainer
@@ -15,7 +15,7 @@ long_description    This module allows you to validate XML documents against a \
                     XML Schema recommendation, but a useful subset.
 
 checksums           rmd160  78d40b544152fbfc185b5caa6bae7b2d8bdd2c27 \
-                    sha256  6142679580150a891f7d32232b5e31e2b4e5e53e8a6fa9cbeecb5c23814f1422
+sha256  6142679580150a891f7d32232b5e31e2b4e5e53e8a6fa9cbeecb5c23814f1422
 
 platforms           darwin
 

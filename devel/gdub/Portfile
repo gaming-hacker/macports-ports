@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,7 +24,7 @@ long_description    gdub (gw on the command line) is a gradle / gradlew wrapper.
 homepage            http://www.gdub.rocks/
 
 checksums           rmd160  9100f5eca0cff7050d0acf774d8bc8f7df2167af \
-                    sha256  0651ae907fec2fe0d386259bd5e30c89a7974cbf85d3a811a922deecf8688aab
+sha256  0651ae907fec2fe0d386259bd5e30c89a7974cbf85d3a811a922deecf8688aab
 
 use_configure       no
 build {}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup analogdevicesinc gr-iio 9088ac791955c522ce1143fe10b85ded56ead0ee
 version   20190725-[string range ${github.version} 0 7]
 checksums rmd160 15848e397eff6bd8782cf3927795cd51cf730794 \
-          sha256 0bcb973ba406bbf5149765b974e36137ffc515457f2e86e8cade389a334fc5d7 \
-          size   68707
+sha256 0bcb973ba406bbf5149765b974e36137ffc515457f2e86e8cade389a334fc5d7 \
+size   68707
 revision  1
 
 # allow gr-iio to work with both gnuradio and gnuradio-devel ...

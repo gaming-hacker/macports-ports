@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            xorg-libXp
 version         1.0.3
@@ -14,8 +16,8 @@ master_sites     xorg:individual/lib/
 
 distname    libXp-${version}
 checksums           md5     df9e6bf0d988de6694f08693b8002079 \
-                    sha1    9e10371ca8961b50c2d69150a88fc031455699d1 \
-                    rmd160  98a12f1a77712065355af0a7f51b96e6874b8a7d
+sha1    9e10371ca8961b50c2d69150a88fc031455699d1 \
+rmd160  98a12f1a77712065355af0a7f51b96e6874b8a7d
 
 use_bzip2   yes
 use_parallel_build      yes

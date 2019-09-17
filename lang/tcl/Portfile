@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.tcl-lang.org/
 master_sites        sourceforge:project/tcl/Tcl/${version}
 
 checksums           rmd160  73d064888101ab3a4a832bd9b242937e5f26315c \
-                    sha256  ad0cd2de2c87b9ba8086b43957a0de3eb2eb565c7159d5f53ccbba3feb915f4e \
-                    size    10000896
+sha256  ad0cd2de2c87b9ba8086b43957a0de3eb2eb565c7159d5f53ccbba3feb915f4e \
+size    10000896
 
 # see https://trac.macports.org/ticket/57636
 dist_subdir         tcltk_1

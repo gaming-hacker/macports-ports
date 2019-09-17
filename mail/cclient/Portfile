@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            cclient
 version         2007f
@@ -20,7 +22,7 @@ distname        imap-${version}
 dist_subdir     imap-uw
 
 checksums       rmd160  298b09c2da9650cb7bc70094da49bab57878ae20 \
-                sha256  53e15a2b5c1bc80161d42e9f69792a3fa18332b7b771910131004eb520004a28
+sha256  53e15a2b5c1bc80161d42e9f69792a3fa18332b7b771910131004eb520004a28
 
 depends_lib     path:lib/libssl.dylib:openssl \
                 port:zlib \

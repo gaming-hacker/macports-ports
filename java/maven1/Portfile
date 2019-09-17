@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           deprecated 1.0
@@ -27,8 +27,8 @@ homepage            http://maven.apache.org/
 master_sites        apache:maven/binaries
 distname            maven-${version}
 checksums           md5    ec2b0ad8c78ba52497f63ee7f613b526 \
-                    sha1   d9174675f0e846a225278949869fa2d979fa7f3b \
-                    rmd160 82ef869218ac42d9132fc74316f0e8a5edcf9431
+sha1   d9174675f0e846a225278949869fa2d979fa7f3b \
+rmd160 82ef869218ac42d9132fc74316f0e8a5edcf9431
 
 depends_build       bin:java:kaffe \
                     bin:ant:apache-ant

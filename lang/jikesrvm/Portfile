@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			jikesrvm
 version			2.3.3
@@ -24,9 +26,9 @@ distfiles		${name}-${version}.tar.gz:rvm \
 				classpath-${cpversion}.tar.gz:cp
 fetch.use_epsv	yes
 checksums		${distname}.tar.gz \
-					md5 ec0fb55a9573727928f82dce46ca5d49 \
+md5 ec0fb55a9573727928f82dce46ca5d49 \
 				classpath-${cpversion}.tar.gz \
-					md5 a59a5040f9c1237dbf27bfc668919943
+md5 a59a5040f9c1237dbf27bfc668919943
 patchfiles		patch-rvm.diff
 
 post-extract	{

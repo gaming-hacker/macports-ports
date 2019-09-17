@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -19,8 +19,8 @@ homepage            https://www.indexdata.com/yaz/
 master_sites        http://ftp.indexdata.com/pub/yaz/
 
 checksums           rmd160  c7dca889928164b8cea69a1a59431ad80230b6ac \
-                    sha256  2e3f0cd304f38b4ad315d70771b378d4efafab37e9a28d4d4d6cd634718c3025 \
-                    size    2578009
+sha256  2e3f0cd304f38b4ad315d70771b378d4efafab37e9a28d4d4d6cd634718c3025 \
+size    2578009
 
 depends_build       port:pkgconfig
 depends_lib         port:gnutls \

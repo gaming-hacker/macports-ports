@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ distname            GeneralUser_GS_${version}
 worksrcdir          "GeneralUser GS ${version}"
 
 checksums           rmd160  aa8eabb515b0e27ff94b05b6be30ac7e1afc0414 \
-                    sha256  4203835164766f428c4926c097c9ea58dae431c7fb8f9dbe277b92d80da45ec2 \
-                    size    28373045
+sha256  4203835164766f428c4926c097c9ea58dae431c7fb8f9dbe277b92d80da45ec2 \
+size    28373045
 
 use_configure       no
 build               {}

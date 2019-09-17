@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ distname            SuiteSparse-${version}
 worksrcdir          ${name}
 
 checksums           rmd160  7f2f89488a56e99d44c0559f9394234a330becd7 \
-                    sha256  90e69713d8c454da5a95a839aea5d97d8d03d00cc1f667c4bdfca03f640f963d \
-                    size    50500894
+sha256  90e69713d8c454da5a95a839aea5d97d8d03d00cc1f667c4bdfca03f640f963d \
+size    50500894
 
 use_parallel_build  no
 

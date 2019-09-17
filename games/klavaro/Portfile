@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -20,8 +20,8 @@ homepage        http://klavaro.sourceforge.net/
 master_sites    sourceforge
 
 checksums       md5 dc1b34e5f58dc403c4ed0d108e48ad15 \
-                sha1 a1e6fb681b4ad3e1f8f03735572c7604dcfc1804 \
-                rmd160 9cd7ed7ae647b0628b70c832ccf1820d89a07950
+sha1 a1e6fb681b4ad3e1f8f03735572c7604dcfc1804 \
+rmd160 9cd7ed7ae647b0628b70c832ccf1820d89a07950
 
 use_bzip2       yes
 

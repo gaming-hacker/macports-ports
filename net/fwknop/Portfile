@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       perl5 1.0
 
 name            fwknop
@@ -33,12 +35,12 @@ long_description \
 master_sites    ${homepage}download/
 
 checksums       md5    4e190dfd31921ddcc0aa6ded8cdae6ae \
-                sha1   ece88ad7653bebee46ae348d9854f3e8751f392c \
-                rmd160 6b52cce7efb57409d02e4b97b1724d9ebdbb61fd
+sha1   ece88ad7653bebee46ae348d9854f3e8751f392c \
+rmd160 6b52cce7efb57409d02e4b97b1724d9ebdbb61fd
 
 use_bzip2       yes
 
-perl5.branches  5.28
+perl5.branches 5.28
 
 depends_lib     port:p${perl5.major}-crypt-cbc \
                 port:p${perl5.major}-crypt-rijndael \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup select 1.0
 PortGroup compiler_blacklist_versions 1.0
 
@@ -23,8 +25,8 @@ master_sites            http://opensource.apple.com/tarballs/llvmgcc42/
 distname                llvmgcc42-${version}
 
 checksums               md5     046629f7b3ce59bcb32b5116d29c27cd \
-                        sha1    97b82b328780d1b4f261301dc084bb256172ee2a \
-                        rmd160  90e496dc075ebd3daa088f818e52e7ecbb4a182e
+sha1    97b82b328780d1b4f261301dc084bb256172ee2a \
+rmd160  90e496dc075ebd3daa088f818e52e7ecbb4a182e
 
 depends_lib             port:ld64 port:cctools
 depends_run             port:gcc_select

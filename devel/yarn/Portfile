@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ github.tarball_from releases
 distname            ${name}-${git.branch}
 
 checksums           rmd160  8682b29457d836a16d5e9e724fb57b95425133c8 \
-                    sha256  e3835194409f1b3afa1c62ca82f561f1c29d26580c9e220c36866317e043c6f3 \
-                    size    1240577
+sha256  e3835194409f1b3afa1c62ca82f561f1c29d26580c9e220c36866317e043c6f3 \
+size    1240577
 
 depends_run         path:bin/node:nodejs10
 

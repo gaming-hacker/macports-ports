@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ long_description    GPAC is an Open Source multimedia framework for \
 homepage            http://gpac.wp.mines-telecom.fr/
 
 checksums           rmd160  9a95cf4b2bd0a98e995b21e13ba3ad1ccdb29246 \
-                    sha256  c5ac9846b313a718b030de629d9ed9c0a5db9fec40fdb4f803a571525eb63a8d \
-                    size    11406479
+sha256  c5ac9846b313a718b030de629d9ed9c0a5db9fec40fdb4f803a571525eb63a8d \
+size    11406479
 
 depends_build       port:pkgconfig \
                     port:zlib

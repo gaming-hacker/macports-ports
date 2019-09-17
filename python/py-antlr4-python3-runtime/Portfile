@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,10 +19,10 @@ master_sites        pypi:a/antlr4-python3-runtime
 distname            antlr4-python3-runtime-${version}
 
 checksums           rmd160  0cd4eff6938d1feea8559e2fb8a1960d669210d3 \
-                    sha256  168cdcec8fb9152e84a87ca6fd261b3d54c8f6358f42ab3b813b14a7193bb50b \
-                    size    112278
+sha256  168cdcec8fb9152e84a87ca6fd261b3d54c8f6358f42ab3b813b14a7193bb50b \
+size    112278
 
-python.versions     36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

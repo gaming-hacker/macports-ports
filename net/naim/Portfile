@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name             naim
 version          0.11.8.3.2
 categories       net
@@ -15,7 +17,7 @@ use_bzip2        yes
 master_sites     googlecode
 
 checksums        sha1    e2ddfcbf66b6139a68155cae0dddd1ac79d6c713 \
-                 rmd160  5d9f88c99ad78d30defe09c0f3b62c6217e8ed27
+rmd160  5d9f88c99ad78d30defe09c0f3b62c6217e8ed27
 
 # https://code.google.com/p/naim/issues/detail?id=11
 use_parallel_build no
