@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Net-OpenID-Consumer 1.18
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  ca21468f04b08fd2b7ac03804e343ecffe487fec \
-                    sha256  0e1c386fe7c1843071dd996bdcaca610910664ae4b5d127c95feaefd99364f38
+sha256  0e1c386fe7c1843071dd996bdcaca610910664ae4b5d127c95feaefd99364f38
 
 if {${perl5.major} != ""} {
     depends_build-append \

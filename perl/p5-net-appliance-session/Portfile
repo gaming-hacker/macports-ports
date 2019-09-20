@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Net-Appliance-Session 4.300005 ../../authors/id/O/OL/OLIVER
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ long_description    Use this module to establish an interactive command-line ses
                     generic call to your session object.
 
 checksums           rmd160  a8c0dc485522a701b6076e060cee651d761376ca \
-                    sha256  a2073aaa56827518174c3e9b0c7fba8c39d5a4d876b67a9fc0bb18729186c2cf \
-                    size    24708
+sha256  a2073aaa56827518174c3e9b0c7fba8c39d5a4d876b67a9fc0bb18729186c2cf \
+size    24708
 
 platforms           darwin
 

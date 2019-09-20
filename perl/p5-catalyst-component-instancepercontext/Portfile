@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Catalyst-Component-InstancePerContext 0.001001
 revision            3
 license             {Artistic-1 GPL}
@@ -12,7 +12,7 @@ description         Return a new instance a component on each request
 long_description    ${description}
 
 checksums           rmd160  6cc57280eb61f45a73c36c79e36058b76c59f186 \
-                    sha256  7f63f930e1e613f15955c9e6d73873675c50c0a3bc2a61a034733361ed26d271
+sha256  7f63f930e1e613f15955c9e6d73873675c50c0a3bc2a61a034733361ed26d271
 
 platforms           darwin
 supported_archs     noarch

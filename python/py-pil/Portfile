@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       python 1.0
 
 name            py-pil
@@ -18,10 +20,10 @@ homepage        http://www.pythonware.com/products/pil/
 master_sites    http://effbot.org/downloads/
 distname        Imaging-${version}
 checksums       md5 fc14a54e1ce02a0225be8854bfba478e \
-                sha1 76c37504251171fda8da8e63ecb8bc42a69a5c81 \
-                rmd160 9af570fe100e250a4860314341fe3e6d695d7fde
+sha1 76c37504251171fda8da8e63ecb8bc42a69a5c81 \
+rmd160 9af570fe100e250a4860314341fe3e6d695d7fde
 
-python.versions 26 27
+python.versions 27 37
 
 if {$subport ne $name} {
     conflicts       py${python.version}-Pillow

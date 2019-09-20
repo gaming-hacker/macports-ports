@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MooseX-Types-LaxNum 0.04
 revision            1
 
@@ -18,7 +18,7 @@ description         MooseX::Types::LaxNum - A LaxNum type which provides the loo
 long_description    ${description}
 
 checksums           rmd160 b5d10250c7397ff895a30955fec1fdaf73a4735f \
-                    sha256 48114404429e4d010e5bdf315d88cc2898d158c196a2567bc8e3805a9948b18f
+sha256 48114404429e4d010e5bdf315d88cc2898d158c196a2567bc8e3805a9948b18f
 
 if {${perl5.major} != ""} {
 depends_build-append \

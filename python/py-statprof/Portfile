@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,9 +16,9 @@ master_sites        pypi:s/statprof
 distname            statprof-${version}
 
 checksums           rmd160  f52c929dc5a9a942e3fc6c2281b823b59047c01d \
-                    sha256  adb8654edd5183e91e1538ee9112314f8129a52796bfa32cfa34b2f0e73295b4
+sha256  adb8654edd5183e91e1538ee9112314f8129a52796bfa32cfa34b2f0e73295b4
 
-python.versions     27
+python.versions 27 37
 python.link_binaries_suffix
 
 if {${name} ne ${subport}} {

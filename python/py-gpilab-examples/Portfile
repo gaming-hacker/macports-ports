@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -8,7 +8,7 @@ github.setup            gpilab examples d9a6861
 version                 0
 name                    py-gpilab-examples
 revision                1
-python.versions         35 36 37
+python.versions 27 37
 python.default_version  37
 supported_archs         noarch
 platforms               darwin
@@ -24,9 +24,9 @@ long_description        GPI was packaged with a few demo networks to \
 homepage                http://gpilab.com
 
 checksums \
-    rmd160  8ef5bad59d148f2b2aeb8e5f5d883f7915392da2 \
-    sha256  c771227cc1e8ad834e5f905e50f1ddef3aefd85f0fd0a6e32f9d8df018dc1886 \
-    size    37484309
+rmd160  8ef5bad59d148f2b2aeb8e5f5d883f7915392da2 \
+sha256  c771227cc1e8ad834e5f905e50f1ddef3aefd85f0fd0a6e32f9d8df018dc1886 \
+size    37484309
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:py${python.version}-gpilab-core

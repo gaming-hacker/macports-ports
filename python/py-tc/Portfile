@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-tc
@@ -15,9 +17,9 @@ homepage            https://github.com/rsms/tc
 master_sites        pypi:t/tc/
 distname            tc-${version}
 checksums           md5  4405e1464caf0a0b1e1bc30f0874cd9f \
-                    sha1 cf95b3c67ab632b551042b9b75d29036cdece0d8
+sha1 cf95b3c67ab632b551042b9b75d29036cdece0d8
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:tokyocabinet

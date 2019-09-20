@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-yappi
@@ -13,7 +15,7 @@ platforms           darwin
 maintainers         openmaintainer {adfernandes @adfernandes}
 
 supported_archs     noarch
-python.versions     27 34 35 36
+python.versions 27 37
 
 description         Yet Another Python Profiler.
 long_description    \
@@ -27,8 +29,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           md5     a02c49efe783c4e31d6bbd805a37adec \
-                    sha1    3a64499d0a60f144128020b1d000868465d39499 \
-                    rmd160  52fbdea9892c3fc9187474b255163ef40a416f16
+sha1    3a64499d0a60f144128020b1d000868465d39499 \
+rmd160  52fbdea9892c3fc9187474b255163ef40a416f16
 
 if {$subport ne $name} {
     depends_build-append \

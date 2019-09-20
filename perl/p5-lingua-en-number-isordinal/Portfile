@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Lingua-EN-Number-IsOrdinal 0.05
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,7 +15,7 @@ long_description    This module will tell you if a number, either in words or as
 platforms           darwin
 
 checksums           rmd160  97e5a76d39e4202e5ef9534a9859dd5f644a9dbe \
-                    sha256  28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6
+sha256  28d5695400c0f4e2bd209793cb74f6da2b9257356aacb2947c603425e09618d6
 
 if {${perl5.major} != ""} {
     depends_build-append \

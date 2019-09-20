@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,10 +25,10 @@ supported_archs     noarch
 master_sites        pypi:f/freebase/
 distname            freebase-${version}
 checksums           md5     f873f6f53668b4df66c8b844c716acf5 \
-                    sha1    9f0e398d4f1e21126d5949ccf2bc8172d10065c0 \
-                    rmd160  f7ec4ba8c1918c60852724ff79e72e36800658e8
+sha1    9f0e398d4f1e21126d5949ccf2bc8172d10065c0 \
+rmd160  f7ec4ba8c1918c60852724ff79e72e36800658e8
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     post-destroot {

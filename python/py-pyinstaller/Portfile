@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python    1.0
 PortGroup github    1.0
 
@@ -10,7 +12,7 @@ github.setup        pyinstaller PyInstaller ${version} v
 github.tarball_from releases
 
 checksums           rmd160  8d0659ac74a81b634f0712a64ff28db71a3450e4 \
-                    sha256  5a28c3bb9d23ea644f9dc9e561e66471b83258d44063bcb108dfbbfe4af3c02b
+sha256  5a28c3bb9d23ea644f9dc9e561e66471b83258d44063bcb108dfbbfe4af3c02b
 
 platforms           darwin
 supported_archs     noarch
@@ -21,7 +23,7 @@ license             GPL
 
 homepage            http://www.pyinstaller.org/
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

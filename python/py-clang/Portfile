@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -8,8 +8,8 @@ version                 3
 # Needed for change to meta-versioning
 epoch                   1
 name                    py-clang
-python.versions         27 34 35 36 37
-python.default_version  27
+python.versions 27 37
+python.default_version 37
 platforms               darwin
 license                 NCSA
 maintainers             {eborisch @eborisch} \
@@ -29,26 +29,26 @@ if {${name} ne ${subport}} {
 
     checksums \
      cfe-3.7.1.src.tar.xz \
-      rmd160  185b0f75970bc50682766a21794440578db87b5d \
-      sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
+rmd160  185b0f75970bc50682766a21794440578db87b5d \
+sha256  56e2164c7c2a1772d5ed2a3e57485ff73ff06c97dff12edbeea1acc4412b0674 \
      cfe-3.9.1.src.tar.xz \
-      rmd160  51930c2d55eacd44df28b49a84565771c94f418e \
-      sha256  e6c4cebb96dee827fa0470af313dff265af391cb6da8d429842ef208c8f25e63 \
+rmd160  51930c2d55eacd44df28b49a84565771c94f418e \
+sha256  e6c4cebb96dee827fa0470af313dff265af391cb6da8d429842ef208c8f25e63 \
      cfe-4.0.1.src.tar.xz \
-      rmd160  4f30f077c6c39489720ec43a748d04dab0fbff79 \
-      sha256  61738a735852c23c3bdbe52d035488cdb2083013f384d67c1ba36fabebd8769b \
+rmd160  4f30f077c6c39489720ec43a748d04dab0fbff79 \
+sha256  61738a735852c23c3bdbe52d035488cdb2083013f384d67c1ba36fabebd8769b \
      cfe-5.0.2.src.tar.xz \
-      rmd160  e4aa04b8aaa39d7c222d33b0e95b8d06c423d229 \
-      sha256  fa9ce9724abdb68f166deea0af1f71ca0dfa9af8f7e1261f2cae63c280282800 \
+rmd160  e4aa04b8aaa39d7c222d33b0e95b8d06c423d229 \
+sha256  fa9ce9724abdb68f166deea0af1f71ca0dfa9af8f7e1261f2cae63c280282800 \
      cfe-6.0.1.src.tar.xz \
-      rmd160  c280cd2037b19f9bd733944b765f9ca23b35e0a4 \
-      sha256  7c243f1485bddfdfedada3cd402ff4792ea82362ff91fbdac2dae67c6026b667 \
+rmd160  c280cd2037b19f9bd733944b765f9ca23b35e0a4 \
+sha256  7c243f1485bddfdfedada3cd402ff4792ea82362ff91fbdac2dae67c6026b667 \
      cfe-7.0.1.src.tar.xz \
-      rmd160  914adafed7c97e5ebab15a437670906c404cb8bd \
-      sha256  a45b62dde5d7d5fdcdfa876b0af92f164d434b06e9e89b5d0b1cbc65dfe3f418 \
+rmd160  914adafed7c97e5ebab15a437670906c404cb8bd \
+sha256  a45b62dde5d7d5fdcdfa876b0af92f164d434b06e9e89b5d0b1cbc65dfe3f418 \
      cfe-8.0.1.src.tar.xz \
-      rmd160  8bec1ef0e0e49000886d8caed5ef42fb56a418b2 \
-      sha256  70effd69f7a8ab249f66b0a68aba8b08af52aa2ab710dfb8a0fba102685b1646 \
+rmd160  8bec1ef0e0e49000886d8caed5ef42fb56a418b2 \
+sha256  70effd69f7a8ab249f66b0a68aba8b08af52aa2ab710dfb8a0fba102685b1646 \
 
     depends_build-append    port:py${python.version}-setuptools
 

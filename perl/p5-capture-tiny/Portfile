@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Capture-Tiny 0.48 ../../authors/id/D/DA/DAGOLDEN
 
 platforms           darwin
@@ -17,5 +17,5 @@ description         Capture::Tiny - Capture STDOUT and STDERR from Perl, XS \
 long_description    ${description}
 
 checksums           rmd160  5096b8bd4576528b410041d029175f890a5bd3af \
-                    sha256  6c23113e87bad393308c90a207013e505f659274736638d8c79bac9c67cc3e19 \
-                    size    37480
+sha256  6c23113e87bad393308c90a207013e505f659274736638d8c79bac9c67cc3e19 \
+size    37480

@@ -1,11 +1,13 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
 github.setup        gccxml pygccxml 1.9.1 v
 name                py-pygccxml
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 categories-append   devel
 maintainers         {mmoll @mamoll} openmaintainer
 license             Boost-1
@@ -15,7 +17,7 @@ long_description    ${description} It provides a simple framework to navigate C+
 platforms           darwin
 supported_archs     noarch
 checksums           rmd160  22101515b54349f5b0fa1e34e168d93fc0b31cd1 \
-                    sha256  f57fcb7f2646c952efe623e8c3dc2e7aa057354c0a7daf331b93177776acca11
+sha256  f57fcb7f2646c952efe623e8c3dc2e7aa057354c0a7daf331b93177776acca11
 
 if {${name} ne ${subport}} {
     depends_build-append   port:py${python.version}-setuptools

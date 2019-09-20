@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,9 +23,9 @@ supported_archs     noarch
 master_sites        pypi:P/PyX/
 distname            PyX-${version}
 checksums           rmd160  1beb789478f6b93fdec25b101158a65a455f778c \
-                    sha256  05d1b7fc813379d2c12fcb5bd0195cab522b5aabafac88f72913f1d47becd912
+sha256  05d1b7fc813379d2c12fcb5bd0195cab522b5aabafac88f72913f1d47becd912
 
-python.versions     27 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  bin:tex:texlive

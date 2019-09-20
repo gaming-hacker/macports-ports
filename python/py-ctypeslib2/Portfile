@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
 PortGroup               github 1.0
 github.setup            trolldbois ctypeslib 2.2.2
 name                    py-ctypeslib2
-python.versions         27 36 37
-python.default_version  27
+python.versions 27 37
+python.default_version 37
 platforms               darwin
 license                 MIT
 maintainers             {eborisch @eborisch} \
@@ -20,8 +20,8 @@ long_description        This fork of ctypeslib is mainly about using the \
                         code from C source code, instead of gccxml.
 
 checksums \
-    rmd160  f99e20769f606d44ddb34aff6e20183fd186aaa2 \
-    sha256  e968d0c60101fdebbd51f392bd6402e5bad415fa62dff23de79cc467d24c1eee
+rmd160  f99e20769f606d44ddb34aff6e20183fd186aaa2 \
+sha256  e968d0c60101fdebbd51f392bd6402e5bad415fa62dff23de79cc467d24c1eee
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

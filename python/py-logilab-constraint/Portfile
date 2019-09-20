@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             GPL-2+
 supported_archs     noarch
 
-python.versions     27 35 36
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -28,7 +28,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  837ae8246892162f5886b2ee477ea0f9f7899bba \
-                    sha256  8f494b26ab584c24c156a569fabe16424b482907cc6f8cfdf6c40619498d1dd8
+sha256  8f494b26ab584c24c156a569fabe16424b482907cc6f8cfdf6c40619498d1dd8
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-logilab-common

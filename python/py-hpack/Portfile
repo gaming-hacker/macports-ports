@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,10 +29,10 @@ homepage            https://python-hyper.org/hpack/
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  b9a96210a7713ad5dfbbabf78118cc2ba8d05a44 \
-                    sha256  184bb68e6a4c421cef59c96e6ef788ea7dac86127cf2a0af51d096a5477417c4 \
-                    size    5307313
+sha256  184bb68e6a4c421cef59c96e6ef788ea7dac86127cf2a0af51d096a5477417c4 \
+size    5307313
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

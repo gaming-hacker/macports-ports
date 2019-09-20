@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -26,10 +26,10 @@ supported_archs     noarch
 master_sites        googlecode:google-chartwrapper
 distname            GChartWrapper-${version}
 checksums           md5     475333f3d592a48ab95ea31469435484 \
-                    sha1    94cf8a8cf8cae0457a517deadef8d60738a0c450 \
-                    rmd160  9bd30093dc66676d4abee2b55dd45cf3505fd4e3
+sha1    94cf8a8cf8cae0457a517deadef8d60738a0c450 \
+rmd160  9bd30093dc66676d4abee2b55dd45cf3505fd4e3
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     livecheck.type      none

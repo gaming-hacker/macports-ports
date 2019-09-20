@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -24,11 +24,11 @@ master_sites    pypi:1b/50/4cdc62fc0753595fc16c8f722a89740f487c6e5670c644eb89839
 distname        ${my_name}-${version}
 #use_zip         yes
 
-python.versions 27 34 35 36 37
+python.versions 27 37
 
 checksums       rmd160  60a5a4de522e3a4d8bed1f8f58f7bdcf0abfb157 \
-                sha256  d5f05e487007e29e03409f9398d074e158d920d36eb82eaf66fb1136b0c5374c \
-                size    310705
+sha256  d5f05e487007e29e03409f9398d074e158d920d36eb82eaf66fb1136b0c5374c \
+size    310705
 
 post-destroot {
     if {${name} ne ${subport}} {

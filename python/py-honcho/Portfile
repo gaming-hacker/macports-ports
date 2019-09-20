@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,9 +18,9 @@ description         Python clone of Foreman (managing Procfile-based application
 long_description    ${description}
 
 checksums           rmd160  81c719eb6afca1307ff2dea27aa64f70d09025ab \
-                    sha256  846d64acd9d59cfad0708fb9203e5ae48229e3dcdce69eb6b99928ed365626d3
+sha256  846d64acd9d59cfad0708fb9203e5ae48229e3dcdce69eb6b99928ed365626d3
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

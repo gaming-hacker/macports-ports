@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Fey-Test 0.10 ../by-authors/id/D/DR/DROLSKY
 platforms           darwin
 maintainers         nomaintainer
@@ -16,7 +16,7 @@ long_description    This module is only useful for testing p5-fey and any \
                     explicitly.
 
 checksums           rmd160  28cb1e6c717f0acf869d8f9302aa4ef6a042fef7 \
-                    sha256  9d048678b0ce4ae784e761444858b33adbd214a03c774a7d20d54aec2900ae0d
+sha256  9d048678b0ce4ae784e761444858b33adbd214a03c774a7d20d54aec2900ae0d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,9 +23,9 @@ homepage            http://pychecker.sourceforge.net/
 master_sites        sourceforge:pychecker
 distname            pychecker-${version}
 checksums           sha1    acbc469b4ecde0182e9be42dceeae5375a923ff3 \
-                    rmd160  7c401f3d2025dec1438c623b161359ef9721d0bf
+rmd160  7c401f3d2025dec1438c623b161359ef9721d0bf
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     patchfiles          patch-setup.py.diff

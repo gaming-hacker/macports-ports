@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,11 +28,11 @@ master_sites        pypi:r/recaptcha-client/
 distname            recaptcha-client-${version}
 
 checksums           rmd160  7dffe66b7fd37f5be2a7d7b2bf24c3978f46c8e9 \
-                    sha256  28c6853c1d13d365b7dc71a6b05e5ffb56471f70a850de318af50d3d7c0dea2f \
-                    size    7389
+sha256  28c6853c1d13d365b7dc71a6b05e5ffb56471f70a850de318af50d3d7c0dea2f \
+size    7389
 
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build       port:py${python.version}-setuptools

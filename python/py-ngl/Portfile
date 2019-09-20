@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup python    1.0
@@ -23,10 +23,10 @@ distname            PyNGL-${version}
 master_sites        https://www.earthsystemgrid.org/download/fileDownload.htm?logicalFileId=40003c7a-306d-11df-8e89-00c0f03d5b7c&dummy=
 
 checksums           md5     231e0ad8ab7f295483f131367ab856cc \
-                    rmd160  bd4357d46af0a723cd81c16bdb0ecc3df03fa6a2 \
-                    sha256  0666f605033609680f3e7312ae412a5a5b8792bc8f423b3cae3ae3e4af235a25
+rmd160  bd4357d46af0a723cd81c16bdb0ecc3df03fa6a2 \
+sha256  0666f605033609680f3e7312ae412a5a5b8792bc8f423b3cae3ae3e4af235a25
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:zlib \

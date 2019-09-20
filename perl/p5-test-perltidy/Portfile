@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Test-PerlTidy 20190402
 revision            0
 license             {Artistic-1 GPL}
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  d6966a0dff83e5cdb7fdcc3b1ebcbf471c0377a7 \
-                    sha256  e9cb9b23ed62e8c6a47a1e18b55328aa3bfa467e05cd93e7e12b2738dd1e025f \
-                    size    13410
+sha256  e9cb9b23ed62e8c6a47a1e18b55328aa3bfa467e05cd93e7e12b2738dd1e025f \
+size    13410
 
 if {${perl5.major} != ""} {
     depends_build-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,10 +24,10 @@ master_sites        pypi:P/Paver/
 distname            Paver-${version}
 
 checksums           md5    78d0cea13e41a31fcb347cf37ea4577f \
-                    rmd160 bde2ffebe80a49facd7b1cc40a673fb9b6009793 \
-                    sha256 1e281faaef479674299ba00031f95e04b6d3bff0c33778790ef1053de51020ac
+rmd160 bde2ffebe80a49facd7b1cc40a673fb9b6009793 \
+sha256 1e281faaef479674299ba00031f95e04b6d3bff0c33778790ef1053de51020ac
 
-python.versions		27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

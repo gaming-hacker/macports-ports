@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -12,7 +12,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     35 36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,8 +25,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  65c96a31c2b5b535ba8eca701db096dd4e770cd7 \
-                    sha256  4fd9439a155cc569000ec039e13680804d8cc233c6d602c88cf0f63174b2babd \
-                    size    1776184
+sha256  4fd9439a155cc569000ec039e13680804d8cc233c6d602c88cf0f63174b2babd \
+size    1776184
 
 if {${name} ne ${subport}} {
     # Pick a compiler that supports openmp

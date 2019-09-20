@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,11 +16,11 @@ platforms           darwin
 homepage            https://github.com/box/flaky
 master_sites        pypi:f/flaky
 
-python.versions     27 37
+python.versions 27 37
 
 checksums           rmd160  28066bd534b086132ae41d7a6745cbfa8eced828 \
-                    sha256  8cd5455bb00c677f787da424eaf8c4a58a922d0e97126d3085db5b279a98b698 \
-                    size    29501
+sha256  8cd5455bb00c677f787da424eaf8c4a58a922d0e97126d3085db5b279a98b698 \
+size    29501
 
 if {${name} ne ${subport}} {
     depends_test-append port:py${python.version}-tox

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         IO-Async 0.74
 
 platforms           darwin
@@ -17,8 +17,8 @@ description         IO::Async - Asynchronous event-driven programming
 long_description    ${description}
 
 checksums           rmd160  864103a9524a4040f1b703a28525b4ac2feb6b91 \
-                    sha256  0c86305c141bf602d064bcce7f28b49ec80e75f4f847096fd4fca9b54330bbd1 \
-                    size    241367
+sha256  0c86305c141bf602d064bcce7f28b49ec80e75f4f847096fd4fca9b54330bbd1 \
+size    241367
 
 if {${perl5.major} != ""} {
     depends_build-append \

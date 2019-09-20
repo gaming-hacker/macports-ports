@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         DBIx-DBSchema 0.45
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -12,7 +12,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  d5889b57d66f15e3274cf3ccbe28c8a89c4752e0 \
-                    sha256  7a2a978fb6d9feaa3e4b109c71c963b26a008a2d130c5876ecf24c5a72338a1d
+sha256  7a2a978fb6d9feaa3e4b109c71c963b26a008a2d130c5876ecf24c5a72338a1d
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,9 +17,9 @@ homepage            https://pypi.python.org/pypi/pysqlite
 master_sites        pypi:p/pysqlite
 distname            pysqlite-${version}
 checksums           rmd160  ec33a3083d8af35935c879796fce67ac0a9cf93d \
-                    sha256  17d3335863e8cf8392eea71add33dab3f96d060666fe68ab7382469d307f4490
+sha256  17d3335863e8cf8392eea71add33dab3f96d060666fe68ab7382469d307f4490
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:sqlite3

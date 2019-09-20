@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Test2-Tools-Explain 0.02 ../../authors/id/P/PE/PETDANCE
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  2071e7546e600d40b66654a51cb54de99f82565e \
-                    sha256  e476bd1739e68f418617c308c3c3cf742de6a595c23bbac2c270e14159f73122 \
-                    size    4091
+sha256  e476bd1739e68f418617c308c3c3cf742de6a595c23bbac2c270e14159f73122 \
+size    4091
 
 if {${perl5.major} != ""} {
     depends_lib-append \

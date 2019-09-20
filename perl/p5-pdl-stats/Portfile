@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         PDL-Stats 0.75
 revision            1
 
@@ -16,7 +16,7 @@ description         PDL::Stats - a collection of statistics modules in Perl Data
 long_description    ${description}
 
 checksums           rmd160  e6f82ae84549782c4a087d27380a66d327bbc5cd \
-                    sha256  b40f73c3201f74fd0a5aa3796f20e2c7252d6c27d1c158dceb8da94633668f36
+sha256  b40f73c3201f74fd0a5aa3796f20e2c7252d6c27d1c158dceb8da94633668f36
 
 if {${perl5.major} != ""} {
     depends_lib-append \

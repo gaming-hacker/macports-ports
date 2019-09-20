@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Getopt-Long 2.51
 revision            0
 license             {Artistic-1 GPL-2+}
@@ -22,7 +22,7 @@ long_description    Module Getopt::Long implements an extended getopt function \
                     double dash `--'.
 
 checksums           rmd160  d11c0ac795731d5b0fd06836e7648c32a038224e \
-                    sha256  20b43b94c2f4096e9e05c213d6184d7391567f127631d69e9b1ffd994d4cc564 \
-                    size    43623
+sha256  20b43b94c2f4096e9e05c213d6184d7391567f127631d69e9b1ffd994d4cc564 \
+size    43623
 
 supported_archs     noarch

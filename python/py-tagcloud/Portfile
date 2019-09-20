@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python    1.0
@@ -18,11 +18,11 @@ distname            pytagcloud-${version}
 master_sites        pypi:p/pytagcloud/
 
 checksums           rmd160  bfddcc17caed92400bb9e8f704ce86cfc384dba6 \
-                    sha256  4d56539f0c80ed96f0d320fa0667db3f2d0cc3d2925f84522b82f48f6c0973e9
+sha256  4d56539f0c80ed96f0d320fa0667db3f2d0cc3d2925f84522b82f48f6c0973e9
 
 deprecated.upstream_support no
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_run-append  port:py${python.version}-game \

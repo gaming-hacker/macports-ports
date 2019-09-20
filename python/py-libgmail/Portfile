@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,9 +20,9 @@ supported_archs     noarch
 master_sites        sourceforge:libgmail
 distname            libgmail-${version}
 checksums           md5     247477ac98b39658fdcdee8d65639e51 \
-                    sha1    485a06227043104e192839e895325f2c9df09d15
+sha1    485a06227043104e192839e895325f2c9df09d15
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib     port:py${python.version}-mechanize

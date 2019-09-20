@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 set realname        pyds9
@@ -14,12 +16,12 @@ homepage            http://hea-www.harvard.edu/saord/ds9/
 platforms           darwin
 master_sites        http://hea-www.harvard.edu/saord/download/ds9/python/
 checksums           md5     e42278ca0e8e6b6e55225a622359b33c \
-                    sha1    44417aae292d0f57b238c510dac0181d1a24b9e3 \
-                    rmd160  ddd4af816195c132aa92cf3af38994998e9f82f3
+sha1    44417aae292d0f57b238c510dac0181d1a24b9e3 \
+rmd160  ddd4af816195c132aa92cf3af38994998e9f82f3
 
 distname            ${realname}-${version}
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append port:py${python.version}-setuptools

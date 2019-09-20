@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             Apache-2
 
-python.versions     35 36 37
+python.versions 27 37
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -26,8 +26,8 @@ master_sites        pypi:a/async-timeout
 distname            async-timeout-${version}
 
 checksums           rmd160  6dc15c02bc3565772a71ebcdbccc368e6c3db87b \
-                    sha256  0c3c816a028d47f659d6ff5c745cb2acf1f966da1fe5c19c77a70282b25f4c5f \
-                    size    9724
+sha256  0c3c816a028d47f659d6ff5c745cb2acf1f966da1fe5c19c77a70282b25f4c5f \
+size    9724
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

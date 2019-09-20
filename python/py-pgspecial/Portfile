@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -13,15 +13,15 @@ description         Meta-commands handler for Postgres Database
 long_description    This package provides an API to execute meta-commands \
                     (AKA “special”, or “backslash commands”) on PostgreSQL.
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 homepage            https://pypi.python.org/pypi/${python.rootname}/
 master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  37085fc71c2b89500c5df3366f019db264574ec5 \
-                    sha256  f44dd48db53fd93dc78d61ebac0ca2cc3c58203f94b30edc730b02bfd3ee747b \
-                    size    42857
+sha256  f44dd48db53fd93dc78d61ebac0ca2cc3c58203f94b30edc730b02bfd3ee747b \
+size    42857
 
 if {${name} ne ${subport}} {
     depends_build-append \

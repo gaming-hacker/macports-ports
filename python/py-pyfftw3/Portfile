@@ -1,4 +1,6 @@
-PortSystem    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup     python 1.0
 
 name          py-pyfftw3
@@ -18,11 +20,11 @@ homepage      https://launchpad.net/pyfftw
 master_sites  http://launchpad.net/pyfftw/trunk/${version}/+download/
 distname      PyFFTW3-${version}
 
-python.versions 27
+python.versions 27 37
 
 checksums     md5 0a98bbac3979abef4b87251530101331 \
-              sha1 5c059745036e524f7a9ec17ea2f75648255c30ea \
-              rmd160 406942ee80d3da75a8c59f96c48ec2e14fc7d602
+sha1 5c059745036e524f7a9ec17ea2f75648255c30ea \
+rmd160 406942ee80d3da75a8c59f96c48ec2e14fc7d602
 
 if {${name} ne ${subport}} {
   depends_lib-append  port:fftw-3 \

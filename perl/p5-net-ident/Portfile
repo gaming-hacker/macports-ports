@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Net-Ident 1.24
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -16,7 +16,7 @@ long_description    Net::Ident is a module that looks up the username on \
                     (which supersedes RFC931).
 
 checksums           rmd160  e62465be148b9fd288bf92259471a88da49c9c43 \
-                    sha256  5f5f1142185a67b87406a3fb31f221564f61838a70ef4c07284a66c55e82ad05
+sha256  5f5f1142185a67b87406a3fb31f221564f61838a70ef4c07284a66c55e82ad05
 
 platforms           darwin
 supported_archs     noarch

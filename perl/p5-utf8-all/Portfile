@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         utf8-all 0.024 ../../authors/id/H/HA/HAYOBAAN
 platforms           darwin
 supported_archs     noarch
@@ -13,8 +13,8 @@ description         Turn on Unicode - all of it
 long_description    ${description}
 
 checksums           rmd160  245249a9b859755871ce03878cc31106ef315965 \
-                    sha256  9233465d41174077ccdbc04f751ab7d68c8d19114e36cd02f2c5fdc2bc3937b7 \
-                    size    27272
+sha256  9233465d41174077ccdbc04f751ab7d68c8d19114e36cd02f2c5fdc2bc3937b7 \
+size    27272
 
 if {${perl5.major} != ""} {
     depends_build-append \

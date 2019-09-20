@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ license             Apache-2
 # build fails with python3
 # https://github.com/google/google-apputils/issues/9
 
-python.versions     27
+python.versions 27 37
 
 maintainers         {devans @dbevans} openmaintainer
 
@@ -27,7 +27,7 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  b661a451df07ac2f7c7a345e6a663d730957e28b \
-                    sha256  47959d0651c32102c10ad919b8a0ffe0ae85f44b8457ddcf2bdc0358fb03dc29
+sha256  47959d0651c32102c10ad919b8a0ffe0ae85f44b8457ddcf2bdc0358fb03dc29
 
 if {${name} ne ${subport}} {
     depends_build-append \

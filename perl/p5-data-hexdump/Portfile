@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.28
+perl5.branches 5.28
 perl5.setup         Data-HexDump 0.02
 revision            1
 categories          perl
@@ -18,8 +18,8 @@ long_description    ${description}  The result is returned in a string. Each lin
 platforms           darwin
 
 checksums           rmd160  2e5ea203eaca90c02b1975fa79f838b010a29c68 \
-                    sha256  1a9d843e7f667c1c6f77c67af5d77e7462ff23b41937cb17454d03535cd9be70 \
-                    size    3525
+sha256  1a9d843e7f667c1c6f77c67af5d77e7462ff23b41937cb17454d03535cd9be70 \
+size    3525
 
 if {${perl5.major} != ""} {
     depends_build-append \

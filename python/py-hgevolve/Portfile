@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -18,8 +18,8 @@ long_description        This extension provides several commands to mutate histo
                         and deal with issues it may raise.
 
 checksums               rmd160  f004f3ab05b805099662402d2ff7e49370bacde4 \
-                        sha256  d851a405a6844b884caea220434c8ce8078ee7d06d40a514e00098322512c95b \
-                        size    772453
+sha256  d851a405a6844b884caea220434c8ce8078ee7d06d40a514e00098322512c95b \
+size    772453
 
 # can't set python.versions before adding custom subports
 subport py-hgevolve-devel {}
@@ -31,7 +31,7 @@ if {[string match "*-devel" $subport]} {
     PortGroup           obsolete 1.0
 }
 
-python.versions         27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib         port:mercurial

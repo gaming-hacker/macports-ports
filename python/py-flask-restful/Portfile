@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -6,11 +6,11 @@ PortGroup               github 1.0
 
 github.setup            flask-restful flask-restful 0.3.1
 checksums               rmd160  c48cbb6ff03c608b26d64e8f68f2b5b80354eeed \
-                        sha256  2317ddb006859b92ea575e3a578b2e1783ab3259f859de7cbbcf566e8df010b9
+sha256  2317ddb006859b92ea575e3a578b2e1783ab3259f859de7cbbcf566e8df010b9
 
 name                    py-flask-restful
 set real_name           Flask-Restful
-python.versions         27
+python.versions 27 37
 categories-append       www
 maintainers             {cal @neverpanic} openmaintainer
 description             Flask extension for quickly building REST APIs.

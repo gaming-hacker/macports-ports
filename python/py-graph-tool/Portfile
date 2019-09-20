@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; c-basic-offset: 2 -*-
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -23,12 +23,12 @@ homepage            http://graph-tool.skewed.de
 master_sites        http://downloads.skewed.de/graph-tool/
 use_bzip2           yes
 checksums           rmd160  ad784fc2ffe7dd745d8cadfd90bae2a03eef3116 \
-                    sha256  6c0c4336bed6e2f79c91ace6d6914145ee03d0bd5025473b5918aec2b0657f7a \
-                    size    15068583
+sha256  6c0c4336bed6e2f79c91ace6d6914145ee03d0bd5025473b5918aec2b0657f7a \
+size    15068583
 distname            ${realname}-${version}
 
-python.versions     27 35 36 37
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     version         2.2.26
@@ -36,8 +36,8 @@ if {${os.major} <= 12 && ${os.platform} eq "darwin"} {
     master_sites    https://downloads.skewed.de/graph-tool/old/
     distname        ${realname}-${version}
     checksums       md5     317b29de0d3ef715fdc9281e078cfb17 \
-                    sha1    108be4cf6212eb6886f172ea03813187f73e4c3c \
-                    rmd160  cd2e8506522821750d70a97b951254f0a133d218
+sha1    108be4cf6212eb6886f172ea03813187f73e4c3c \
+rmd160  cd2e8506522821750d70a97b951254f0a133d218
 } else {
     if {${name} ne ${subport}} {
         compiler.blacklist *gcc* {clang <= 700.1.81} {macports-clang-3.[0-6]}

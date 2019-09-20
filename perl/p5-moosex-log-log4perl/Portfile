@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MooseX-Log-Log4perl 0.47
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -14,7 +14,7 @@ description         A Logging Role for Moose based on Log::Log4perl
 long_description    ${description}
 
 checksums           rmd160  f7cb1d6d13617d67a5cbe6651eb3cf6179f33f01 \
-                    sha256  da0be319762066ef0546f54ecf42b0da6d2463a932a55e06e6161678e21078d3
+sha256  da0be319762066ef0546f54ecf42b0da6d2463a932a55e06e6161678e21078d3
 
 if {${perl5.major} != ""} {
     depends_lib-append \

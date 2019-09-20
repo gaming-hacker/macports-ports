@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         pmtools 2.2.0 Devel
 license             {Artistic-1 GPL}
 platforms           darwin
@@ -17,7 +17,7 @@ long_description    \
     thing well, eschewing giant megatools with millions of options.
 
 checksums           rmd160  3aa91660980c86141226c498687b62453c2a5ad4 \
-                    sha256  2cc88d4408d5c3fcdd06de2ddb9e330b8fd55eb5450f89f8333f44b0b86bc7b8 \
-                    size    32745
+sha256  2cc88d4408d5c3fcdd06de2ddb9e330b8fd55eb5450f89f8333f44b0b86bc7b8 \
+size    32745
 
 supported_archs     noarch

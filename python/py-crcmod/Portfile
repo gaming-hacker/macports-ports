@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ master_sites        sourceforge:crcmod
 distname            crcmod-${version}
 
 checksums           md5     2d5b92117d958dcead94f9e17f54cd32 \
-                    sha1    61d9fea169099b87c2e36ce572d2d25e0fd2de59 \
-                    rmd160  503b415394d7c833b22e5a999454c0d67598cd54
+sha1    61d9fea169099b87c2e36ce572d2d25e0fd2de59 \
+rmd160  503b415394d7c833b22e5a999454c0d67598cd54
 
-python.versions     34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     build.args-append -f

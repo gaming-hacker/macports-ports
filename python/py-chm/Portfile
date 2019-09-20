@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,11 +18,11 @@ homepage            http://gnochm.sourceforge.net/pychm.html
 master_sites        sourceforge:gnochm
 distname            pychm-${version}
 checksums           sha1    73104f4a351dc1450a16f07680d772817b05442d \
-                    rmd160  0d7e5bc293b856fc0ac8f76acc7d18e63447c6f7 \
-                    sha256  84c99d7b28fb6862ee60a5d1d52fad0da4c95f1934e9c101d3293ee7e8b5357d \
-                    size    28803
+rmd160  0d7e5bc293b856fc0ac8f76acc7d18e63447c6f7 \
+sha256  84c99d7b28fb6862ee60a5d1d52fad0da4c95f1934e9c101d3293ee7e8b5357d \
+size    28803
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:chmlib

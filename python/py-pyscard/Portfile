@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -16,10 +16,10 @@ long_description    ${description}
 homepage            https://pyscard.sourceforge.io/
 
 checksums           rmd160  dfa77f4a70bd51d3a7af9c188ac76fbde9b2014e \
-                    sha256  620bb68cbe563cafa0abf2fa6a0921540953a39cb4a5aa83d3618acb67460d97 \
-                    size    176540
+sha256  620bb68cbe563cafa0abf2fa6a0921540953a39cb4a5aa83d3618acb67460d97 \
+size    176540
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

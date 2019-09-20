@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             MIT
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {khindenburg @kurthindenburg} openmaintainer
 
@@ -26,8 +26,8 @@ master_sites        pypi:8b/0b/a06cfcb69d0cb004fde8bc6f0fd192d96d565d1b8aa2829f0
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  af44a046cf42ff74c5c66a99849c977f8c97ff03 \
-                    sha256  f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399 \
-                    size    124220
+sha256  f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399 \
+size    124220
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools

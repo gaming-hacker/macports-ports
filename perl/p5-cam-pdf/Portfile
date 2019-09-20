@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         CAM-PDF 1.60
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -17,7 +17,7 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  dbf72f375ce57845f012bcf24443b888266b83d8 \
-                    sha256  e76afc7f38a624924a77c5c988c36c9e388bfa7716e75cd397fef8e1b42ebb89
+sha256  e76afc7f38a624924a77c5c988c36c9e388bfa7716e75cd397fef8e1b42ebb89
 
 if {${perl5.major} != ""} {
     patchfiles      patch-lib-CAM-PDF.pm

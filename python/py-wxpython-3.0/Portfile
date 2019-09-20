@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python      1.0
@@ -28,10 +28,10 @@ distname            wxPython
 use_bzip2           yes
 
 checksums           rmd160  6ae920a192f482ec92de8539c8f957e1f427f9c4 \
-                    sha256  d54129e5fbea4fb8091c87b2980760b72c22a386cb3b9dd2eebc928ef5e8df61
+sha256  d54129e5fbea4fb8091c87b2980760b72c22a386cb3b9dd2eebc928ef5e8df61
 
-python.versions     27
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 distfiles           ${distname}-src-${version}${extract.suffix}
 worksrcdir          ${distname}-src-${version}/wxPython

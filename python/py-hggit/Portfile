@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -26,8 +26,8 @@ long_description        This is the Hg-Git plugin for Mercurial, adding the abil
                         developers using both Git and Mercurial.
 
 checksums               rmd160  d78cb278f0902a8d3e7d1718eacc99e9124be479 \
-                        sha256  17b8c8b23834f456ab577d7a3ef436e9b295a5586132b5594713f64820eb26e1 \
-                        size    136809
+sha256  17b8c8b23834f456ab577d7a3ef436e9b295a5586132b5594713f64820eb26e1 \
+size    136809
 
 # can't set python.versions before adding custom subports
 subport py-hggit-devel {}
@@ -39,7 +39,7 @@ if {[string match "*-devel" $subport]} {
     PortGroup           obsolete 1.0
 }
 
-python.versions         27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:mercurial \

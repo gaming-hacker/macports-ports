@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Const-Fast 0.014 ../by-authors/id/L/LE/LEONT
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -12,7 +12,7 @@ description         Const::Fast - Facility for creating read-only scalars, array
 long_description    ${description}
 
 checksums           rmd160  6f25074c8785a17ecdca5989d797d966bdea4b28 \
-                    sha256  f805953a08c57846a16a4d85d7b766398afaf7c36c1465fcb1dea09e5fa394db
+sha256  f805953a08c57846a16a4d85d7b766398afaf7c36c1465fcb1dea09e5fa394db
 
 platforms           darwin
 supported_archs     noarch

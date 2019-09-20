@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,14 +18,14 @@ long_description    Library to run web-based tests with Selenium \
 homepage	https://github.com/robotframework/${internal_name}
 
 platforms           darwin
-python.versions		27
+python.versions 27 37
 
 master_sites        ${homepage}/archive
 distname            ${version}
 set worksrcdir      ${internal_name}-${version}
 
 checksums           rmd160  3a73c9b167ec9252197c3614d675753c51ebfbf2 \
-                    sha256  cff84f0c44ec8fdffece600ce3b52a9f1252d4f63dc367d42a56c38ade3c8bce
+sha256  cff84f0c44ec8fdffece600ce3b52a9f1252d4f63dc367d42a56c38ade3c8bce
 
 if {${name} ne ${subport}} {
     depends_lib-append	port:py${python.version}-robotframework

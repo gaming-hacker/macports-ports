@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
@@ -18,10 +20,10 @@ supported_archs     noarch
 homepage            http://python-colormath.readthedocs.org/
 
 checksums           rmd160  9967dd7e3011c93d5b73565f905f740e6d6e285f \
-                    sha256  e497f89469e9b532d84c0355c9dd8098b2c0f999712e5b7a8a5e9c53ef2cf9e7 \
-                    size    74973
+sha256  e497f89469e9b532d84c0355c9dd8098b2c0f999712e5b7a8a5e9c53ef2cf9e7 \
+size    74973
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

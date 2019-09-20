@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         LockFile-Simple 0.208
 license             Artistic-1
 maintainers         nomaintainer
@@ -14,4 +14,4 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  dc5bf6016844657bfaf6a91e558aa32b2ae56b4f \
-                    sha256  45c77896b2a5a0a45f6202a6f813f437ff8b283f84a1c60d0c4f3730802af3a2
+sha256  45c77896b2a5a0a45f6202a6f813f437ff8b283f84a1c60d0c4f3730802af3a2

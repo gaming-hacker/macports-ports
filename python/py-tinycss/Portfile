@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -22,9 +22,9 @@ long_description        tinycss is a complete yet simple CSS parser for Python. 
 homepage                https://tinycss.readthedocs.io/en/latest/
 
 checksums               rmd160  bbfe212d317350f8e877ce898805ae4509f738c5 \
-                        sha256  fd4828775c8711c159c60323bbd8bdbe3c38a1ea95f615c5158294a8923080f4
+sha256  fd4828775c8711c159c60323bbd8bdbe3c38a1ea95f615c5158294a8923080f4
 
-python.versions         27 34 35 36
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

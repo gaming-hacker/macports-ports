@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Class-Factory-Util 1.7
 revision            4
 license             {Artistic-1 GPL}
@@ -15,8 +15,8 @@ long_description    This module exports a method that is useful \
 platforms           darwin
 
 checksums           md5 aebd79da361b676a7ecd3245fc3d1b3f \
-                    sha1 d7d3f27b3d7af789ea58e1acdf0ea9da3251d239 \
-                    rmd160 114b60a66db59d536a84c6ce3b801c1c6e71e296
+sha1 d7d3f27b3d7af789ea58e1acdf0ea9da3251d239 \
+rmd160 114b60a66db59d536a84c6ce3b801c1c6e71e296
 
 supported_archs     noarch
 

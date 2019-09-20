@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,10 +21,10 @@ long_description    Biggles is a Python module for the creation of \
 homepage            https://biggles-plot.github.io/
 
 checksums           rmd160  ab9e498ba91a89dba179c33083a2a0dc05ec80cd \
-                    sha256  3806d9b64e6e0ad40bf9f7ed81b0477ba2d31688865c123de3d2a01bae13b81f \
-                    size    215231
+sha256  3806d9b64e6e0ad40bf9f7ed81b0477ba2d31688865c123de3d2a01bae13b81f \
+size    215231
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     require_active_variants \

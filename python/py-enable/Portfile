@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,9 +19,9 @@ license             BSD
 platforms           darwin
 
 checksums           rmd160  d2c43d3f488fe81be39f7168b77d9697fdbed9ec \
-                    sha256  453b1fb373845f703a5cb31c92166925fb74f2285717d04f0e1d0e9705d28496
+sha256  453b1fb373845f703a5cb31c92166925fb74f2285717d04f0e1d0e9705d28496
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     # It seems this is not needed for version >= 4.3.0, but leaving here in

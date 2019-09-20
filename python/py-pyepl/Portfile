@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -21,10 +21,10 @@ master_sites            sourceforge:pyepl
 extract.suffix          .tgz
 
 checksums               md5     009e5a537bcf27b8810afa416487a8d6 \
-                        sha1    bd84ad6b765e5aa49e5da3ab0c8ebdd0fd6b14b6 \
-                        rmd160  7a83e6c0359e9b9ba856575e7d881a0770e8a57b
+sha1    bd84ad6b765e5aa49e5da3ab0c8ebdd0fd6b14b6 \
+rmd160  7a83e6c0359e9b9ba856575e7d881a0770e8a57b
 
-python.versions         27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib             port:libsndfile \

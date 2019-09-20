@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         HTML-WikiConverter-MultiMarkdown 0.02
 revision            2
 maintainers         nomaintainer
@@ -14,7 +14,7 @@ long_description    This module contains rules for converting HTML into MultiMar
                     See HTML::WikiConverter for additional usage details.
 
 checksums           rmd160  bf864f6bd5a5b92633a37d67fa72b1e2c0576494 \
-                    sha256  45491805644c5eae992fc15965e4bfae3a5b76d8a5c966a53cf4f49984312013
+sha256  45491805644c5eae992fc15965e4bfae3a5b76d8a5c966a53cf4f49984312013
 
 platforms           darwin
 supported_archs     noarch

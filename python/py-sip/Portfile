@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -54,8 +54,8 @@ epoch               1
 # SIP 4.16.[1-7] provides SIP API 11.1.
 # SIP 4.15.5 provided SIP API 11.0.
 
-python.versions     27 34 35 36 37
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 if {${name} ne ${subport}} {
 
@@ -71,8 +71,8 @@ if {${name} ne ${subport}} {
     }
 
     checksums           rmd160 722dd0b88078abf73e3a1d41a2548b80ff1eb1d4 \
-                        sha256 5436b61a78f48c7e8078e93a6b59453ad33780f80c644e5f3af39f94be1ede44 \
-                        size   1058422
+sha256 5436b61a78f48c7e8078e93a6b59453ad33780f80c644e5f3af39f94be1ede44 \
+size   1058422
     revision            0
 
     patchfiles          patch-siputils.py.diff \

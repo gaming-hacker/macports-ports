@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         PlRPC 0.2020 ../by-authors/id/M/MN/MNOONING/PlRPC/
 revision            4
 license             {Artistic-1 GPL}
@@ -18,8 +18,8 @@ platforms           darwin
 worksrcdir          ${perl5.module}
 
 checksums           md5 5361e137e56d037c5e796926ecb5300b \
-                    sha1 2a1dd4f650764f6cfc654e528a579293422073c0 \
-                    rmd160 ed2e37427166fa9666d91fcf5f316086146c2319
+sha1 2a1dd4f650764f6cfc654e528a579293422073c0 \
+rmd160 ed2e37427166fa9666d91fcf5f316086146c2319
 
 if {${perl5.major} != ""} {
     depends_lib-append \

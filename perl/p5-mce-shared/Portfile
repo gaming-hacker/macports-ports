@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         MCE-Shared 1.862 ../../authors/id/M/MA/MARIOROY
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,8 +13,8 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  0b3efe887d95804c198ae8955407b2b64db147f3 \
-                    sha256  51949e8ed3b00dc9902c24fe60e6b001359af7eabf3ccfdc2247035423adc72b \
-                    size    147293
+sha256  51949e8ed3b00dc9902c24fe60e6b001359af7eabf3ccfdc2247035423adc72b \
+size    147293
 
 if {${perl5.major} != ""} {
 # Sereal is loaded automatically if available

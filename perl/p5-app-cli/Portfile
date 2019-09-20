@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         App-CLI 0.50
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -12,8 +12,8 @@ long_description    App::CLI provides a simple interface for dispatching \
                     command line applications.
 
 checksums           rmd160  c4f26851c1236cee4dc10e39870869a6ed907e9f \
-                    sha256  51d3f5833ab519fb46e5552b60e5455e4f9c1c6827d1eee4153d0b409f2a9345 \
-                    size    15624
+sha256  51d3f5833ab519fb46e5552b60e5455e4f9c1c6827d1eee4153d0b409f2a9345 \
+size    15624
 
 platforms           darwin
 supported_archs     noarch

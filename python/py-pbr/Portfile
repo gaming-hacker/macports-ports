@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,10 +28,10 @@ master_sites        pypi:p/pbr
 distname            pbr-${version}
 
 checksums           rmd160  f47fe243c0b85df4e9fec2c3ef15477b17d131de \
-                    sha256  2c8e420cd4ed4cec4e7999ee47409e876af575d4c35a45840d59e8b5f3155ab8 \
-                    size    117587
+sha256  2c8e420cd4ed4cec4e7999ee47409e876af575d4c35a45840d59e8b5f3155ab8 \
+size    117587
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${subport} ne ${name}} {
     depends_lib-append  port:py${python.version}-setuptools

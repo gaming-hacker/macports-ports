@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Test-Compile v2.2.2
 maintainers         nomaintainer
 license             {Artistic-1 GPL}
@@ -12,8 +12,8 @@ description         Check whether Perl files compile correctly
 long_description    ${description}
 
 checksums           rmd160  9185c8f2901421f331a9e21b259655771a847aa1 \
-                    sha256  7853b44a9819eb3e6003260eedf904a1ad80035ea5254296ce014f96084b65d4 \
-                    size    17532
+sha256  7853b44a9819eb3e6003260eedf904a1ad80035ea5254296ce014f96084b65d4 \
+size    17532
 
 platforms           darwin
 

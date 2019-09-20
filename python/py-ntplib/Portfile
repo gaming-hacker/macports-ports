@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; # indent-tabs-mod e: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; # indent-tabs-mod e: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
 
 name                py-ntplib
 version             0.3.1
-python.versions     27
+python.versions 27 37
 platforms           darwin
 maintainers         {maiar.org:jason-macports @gorticus}
 license             LGPL
@@ -21,8 +21,8 @@ homepage            https://pypi.python.org/pypi/ntplib
 master_sites        pypi:n/ntplib/
 distname            ntplib-${version}
 checksums           md5   991a5df0d198f701028001002dc34f2b \
-                    sha1   909c867883206bac642dfa45aa11bd9848d0f5b0 \
-                    rmd160   6497a5859a0083d6852a0d4cd2132da86ab5bc26
+sha1   909c867883206bac642dfa45aa11bd9848d0f5b0 \
+rmd160   6497a5859a0083d6852a0d4cd2132da86ab5bc26
 
 if {${name} ne ${subport}} {
     livecheck.type      none

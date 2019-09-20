@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            http://www.owlfish.com/software/simpleTAL
 master_sites        ${homepage}/downloads
 distname            SimpleTAL-${version}
 checksums           md5     16c5673382967310b336c68591ae6786 \
-                    sha1    d64ad70708cb07850d705d50ae7363504fea60d7 \
-                    rmd160  b627e4599a9b2988efde70b3119fb24f3253bb6a
+sha1    d64ad70708cb07850d705d50ae7363504fea60d7 \
+rmd160  b627e4599a9b2988efde70b3119fb24f3253bb6a
 
 deprecated.upstream_support no
 livecheck.type      none
 
-python.versions     27
+python.versions 27 37

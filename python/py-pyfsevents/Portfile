@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ master_sites        pypi:p/pyfsevents/
 distname            pyfsevents-${version}
 
 checksums           rmd160  a5f9486dc6ffd08e502aba7dd444c8aa7b9026dc \
-                    sha256  3ce90f5c235f413178dfd78e8bef878077193a16ef3b38402a85e06f946c45c1 \
-                    size    11992
+sha256  3ce90f5c235f413178dfd78e8bef878077193a16ef3b38402a85e06f946c45c1 \
+size    11992
 
-python.versions     27
+python.versions 27 37
 
 if {$subport ne $name} {
     post-destroot {

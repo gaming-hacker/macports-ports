@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         SGMLSpm 1.1 ../../authors/id/R/RA/RAAB
 revision            1
 platforms           darwin
@@ -17,7 +17,7 @@ long_description    Perl programs can use the SGMLSpm module to help convert \
                     SGML, HTML or XML documents into new formats.
 
 checksums           rmd160  30a66405f0740dbfe530d3874371c33faff93a82 \
-                    sha256  550c9245291c8df2242f7e88f7921a0f636c7eec92c644418e7d89cfea70b2bd
+sha256  550c9245291c8df2242f7e88f7921a0f636c7eec92c644418e7d89cfea70b2bd
 
 if {${perl5.major} != ""} {
     depends_lib-append \

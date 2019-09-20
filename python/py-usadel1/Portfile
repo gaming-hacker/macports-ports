@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,9 +24,9 @@ master_sites        ${homepage}_static/
 distname            usadel1-${version}
 
 checksums           rmd160  a520258f5171002af6806ddc39672a60362d3082 \
-                    sha256  13a15231627ab2bcb86b4e85540979af1c12adb9265b3b0169c5a848f0761c4d
+sha256  13a15231627ab2bcb86b4e85540979af1c12adb9265b3b0169c5a848f0761c4d
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-numpy \
@@ -37,7 +37,7 @@ if {${name} ne ${subport}} {
     universal_variant no
 
     compilers.choose    fc f77 f90
-    compilers.setup     require_fortran -g95
+    compilers.setup     require_fortran 
     
     # probably a different --fcompiler is needed for dragonegg or g95
     build.args          config_fc \

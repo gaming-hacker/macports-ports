@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Snowball-Swedish 1.2 ../../authors/id/A/AS/ASKSH
 revision            3
 license             {Artistic-1 GPL}
@@ -18,7 +18,7 @@ homepage            https://metacpan.org/release/${perl5.module}
 platforms           darwin
 
 checksums           md5 e2ed0f5c2a9fc7e500c61553c4c1e9c9 \
-                    sha1 ab48aabdaaac5d805c491f6d5779e914ef5f66f9 \
-                    rmd160 ea464173a8cbbdb2a550bae57807cc7fc0da8423
+sha1 ab48aabdaaac5d805c491f6d5779e914ef5f66f9 \
+rmd160 ea464173a8cbbdb2a550bae57807cc7fc0da8423
 
 perl5.use_module_build

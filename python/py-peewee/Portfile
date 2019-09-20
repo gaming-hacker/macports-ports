@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -17,10 +17,10 @@ master_sites        pypi:p/peewee
 distname            peewee-${version}
 
 checksums           rmd160  4a4d6878cdba176d2b1cc32197ba7c8b7ad67ae0 \
-                    sha256  f0cad072ca3213ca3cfea445a4969c8951cbccc05b68092a758ce43b0e207ed2 \
-                    size    2278711
+sha256  f0cad072ca3213ca3cfea445a4969c8951cbccc05b68092a758ce43b0e207ed2 \
+size    2278711
 
-python.versions     37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools \

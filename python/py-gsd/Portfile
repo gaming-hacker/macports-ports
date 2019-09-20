@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   science
 platforms           darwin
 license             BSD
 
-python.versions     27 36 37
+python.versions 27 37
 python.default_version 37
 
 maintainers         {gmail.com:giovanni.bussi @GiovanniBussi} openmaintainer
@@ -22,8 +22,8 @@ long_description    ${description} \
 homepage            https://gsd.readthedocs.io/
 
 checksums           rmd160  da5285585d92dd49fd9980ded7da9484de5b3836 \
-                    sha256  573d8c534429ebb00668938e96d5c1949b76fe51a1a54de911850d9454f73e9e \
-                    size    167783
+sha256  573d8c534429ebb00668938e96d5c1949b76fe51a1a54de911850d9454f73e9e \
+size    167783
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-cython \
@@ -43,8 +43,8 @@ if {${name} ne ${subport}} {
         distname            v1.7.0
         worksrcdir          gsd-1.7.0
         checksums           rmd160  ec92677fb4ed0321205e238c06c8f58ad5054be4 \
-                            sha256  2e6e8d7cd6e9786b3d0594318fc665ab11cd5963d5bac115081eb46a3f4acca7 \
-                            size    247039
+sha256  2e6e8d7cd6e9786b3d0594318fc665ab11cd5963d5bac115081eb46a3f4acca7 \
+size    247039
 
         test.run            no
     }

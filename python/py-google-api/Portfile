@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ set realname        google-api-python-client
 version             1.7.9
 revision            1
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 categories-append   www devel
 maintainers         nomaintainer
@@ -25,8 +25,8 @@ master_sites        pypi:g/${realname}/
 distname            ${realname}-${version}
 
 checksums           rmd160  873bf2f66b15993daac708926c12c25e75792ac0 \
-                    sha256  048da0d68564380ee23b449e5a67d4666af1b3b536d2fb0a02cee1ad540fa5ec \
-                    size    142053
+sha256  048da0d68564380ee23b449e5a67d4666af1b3b536d2fb0a02cee1ad540fa5ec \
+size    142053
 
 if {${name} ne ${subport}} {
     depends_build           port:py${python.version}-setuptools

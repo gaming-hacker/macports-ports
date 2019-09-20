@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Digest-SHA1 2.13
 revision            4
 license             {Artistic-1 GPL}
@@ -16,6 +16,6 @@ long_description    The Digest::SHA1 module allows you to use the NIST \
                     \"fingerprint\" or \"message digest\" of the input.
 
 checksums           rmd160  a1070dd6c3b626982b4c39d6de05c36001116ac7 \
-                    sha256  68c1dac2187421f0eb7abf71452a06f190181b8fc4b28ededf5b90296fb943cc
+sha256  68c1dac2187421f0eb7abf71452a06f190181b8fc4b28ededf5b90296fb943cc
 
 platforms           darwin

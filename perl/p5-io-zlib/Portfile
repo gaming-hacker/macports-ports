@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         IO-Zlib 1.10
 revision            3
 license             {Artistic-1 GPL}
@@ -18,7 +18,7 @@ long_description    This modules provides an IO:: style interface to the \
 platforms           darwin
 
 checksums           rmd160  e7e021350568003f004a41aa9f08933836b37237 \
-                    sha256  fda584f55531e5102c350b9490673be3465e356602bf3b3d2a93f3a597f2d4d4
+sha256  fda584f55531e5102c350b9490673be3465e356602bf3b3d2a93f3a597f2d4d4
 
 if {${perl5.major} != ""} {
     depends_lib-append \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               python 1.0
@@ -7,7 +7,7 @@ PortGroup               github 1.0
 github.setup            gpilab core-nodes 1.0.6 v
 name                    py-gpilab-core
 revision                0
-python.versions         35 36 37
+python.versions 27 37
 python.default_version  37
 platforms               darwin
 license                 {BSD LGPL-3+}
@@ -21,9 +21,9 @@ long_description        The core nodes are a collection of basic data \
 homepage                http://gpilab.com
 
 checksums \
-    rmd160  840f103578a72ee37aabd3d7b1c95046d1ee56b8 \
-    sha256  6c7491cd5e6529eec7ea50ca0b927cfb6b6b62ccb1d1ea5e677ceda0391ec868 \
-    size    174376
+rmd160  840f103578a72ee37aabd3d7b1c95046d1ee56b8 \
+sha256  6c7491cd5e6529eec7ea50ca0b927cfb6b6b62ccb1d1ea5e677ceda0391ec868 \
+size    174376
 
 if {${name} ne ${subport} } {
     depends_lib-append      port:py${python.version}-gpilab-framework \

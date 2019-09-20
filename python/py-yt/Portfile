@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -25,10 +25,10 @@ master_sites        pypi:y/yt/
 distname            yt-${version}
 
 checksums           rmd160  34e493fed435b837ca9c1934110c74b11a40d589 \
-                    sha256  de52057d1677473a83961d8a1119a9beae3121ec69a4a5469c65348a75096d4c \
-                    md5     4e3df6a98d6199a942a67a701bffb406
+sha256  de52057d1677473a83961d8a1119a9beae3121ec69a4a5469c65348a75096d4c \
+md5     4e3df6a98d6199a942a67a701bffb406
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_run-append  port:py${python.version}-numpy \

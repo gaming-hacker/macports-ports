@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Data-Stag 0.14 Data/CMUNGALL/
 license             {Artistic-1 GPL}
 maintainers         tonym.us:tonym openmaintainer
@@ -18,7 +18,7 @@ long_description    This module is for manipulating data as hierarchical \
                     which have the advantage of being native to perl.
 
 checksums           rmd160  9c66074546e600bb230f0a06d6f7670b87e8da07 \
-                    sha256  4ab122508d2fb86d171a15f4006e5cf896d5facfa65219c0b243a89906258e59
+sha256  4ab122508d2fb86d171a15f4006e5cf896d5facfa65219c0b243a89906258e59
 
 if {${perl5.major} != ""} {
     depends_lib-append \

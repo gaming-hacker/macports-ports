@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup python 1.0
@@ -6,7 +6,7 @@ PortGroup python 1.0
 name			py-elementtree
 # if version or revision change, be sure to update the py24 subport revision
 version			1.2.6-20050316
-python.versions 27
+python.versions 27 37
 platforms		darwin
 maintainers		{snc @nerdling} openmaintainer
 license         MIT
@@ -25,7 +25,7 @@ if {${name} ne ${subport}} {
     master_sites	http://effbot.org/downloads/
     distname		elementtree-${version}
     checksums           rmd160  813aaf07a0fcdfb23d29b648a8e082e1674539f5 \
-                        sha256  b5dd2c4e234f325abc1c7fb17815cb6cbcfef062f01065ddb05a6d6b96452f18
+sha256  b5dd2c4e234f325abc1c7fb17815cb6cbcfef062f01065ddb05a6d6b96452f18
     use_zip			yes
     patchfiles		patch-setup.py.diff
 

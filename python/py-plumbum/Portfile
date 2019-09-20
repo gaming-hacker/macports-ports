@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,14 +23,14 @@ platforms           darwin
 
 homepage            http://plumbum.readthedocs.org
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 if { ${subport} ne ${name} } {
     depends_lib         port:py${python.version}-six
 
     checksums           rmd160  76f950fd846b05c982f3a4764e92dafa8f1a2e75 \
-                        sha256  86304e1d215ac871571cb2e965106a59db838cd321cbbf7942db3c9adce28564 \
-                        size    300889
+sha256  86304e1d215ac871571cb2e965106a59db838cd321cbbf7942db3c9adce28564 \
+size    300889
 
     livecheck.type      none
 }

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://gwosc.readthedocs.io
 master_sites        pypi:g/gwosc
 distname            gwosc-${version}
 checksums           rmd160  45a7437f7cbd62393af7d293ff8b35ae484e9002 \
-                    sha256  863a67296763ec9be79fa057b6ee0b3cb4f91c768b97b769840fa91f2f3b4e2c \
-                    size    31201
+sha256  863a67296763ec9be79fa057b6ee0b3cb4f91c768b97b769840fa91f2f3b4e2c \
+size    31201
 
-python.versions     27 36 37
+python.versions 27 37
 python.default_version 36
 
 if {${name} ne ${subport}} {

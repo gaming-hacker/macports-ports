@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -18,11 +18,11 @@ license             MIT
 master_sites        ${homepage}/DIST
 distname            biopython-${version}
 checksums           rmd160  c9b2130d895ecea30e37bdd71524ad7c6ea1db2d \
-                    sha256  25152c1be2c9205bf80901fc49adf2c2efff49f0dddbcf6e6b2ce31dfa6590c0 \
-                    size    16129257
+sha256  25152c1be2c9205bf80901fc49adf2c2efff49f0dddbcf6e6b2ce31dfa6590c0 \
+size    16129257
 
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if { ${name} ne ${subport} } {
     depends_lib-append  port:py${python.version}-numpy

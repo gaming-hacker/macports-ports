@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         IO-Capture 0.05
 maintainers         nomaintainer
 # per copyright notice, may be used, redistributed and/or modified under the same terms as Perl itself.
@@ -13,7 +13,7 @@ description         Abstract Base Class to build modules to capture output
 long_description    ${description}
 
 checksums           rmd160 69cfc12caef6b736dd6de682a6ff2daaa790d668 \
-                    sha256 c2c15a254ca74fb8c57d25d7b6cbcaff77a3b4fb5695423f1f80bb423abffea9
+sha256 c2c15a254ca74fb8c57d25d7b6cbcaff77a3b4fb5695423f1f80bb423abffea9
 
 platforms           darwin
 supported_archs     noarch

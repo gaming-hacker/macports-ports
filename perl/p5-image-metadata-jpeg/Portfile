@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Image-MetaData-JPEG 0.159
 maintainers         nomaintainer
 categories-append   graphics
@@ -14,6 +14,6 @@ long_description    This module provide functions to access and \
                     extract various kind of meta information from JPEG image files.
 
 checksums           rmd160  cf3203f35cd6315cb5502c3de6b20dca4decf6be \
-                    sha256  42e744ea3467d81ef470f1b098edc77b653789e7ac33455041ee8d6976ccf4e7
+sha256  42e744ea3467d81ef470f1b098edc77b653789e7ac33455041ee8d6976ccf4e7
 
 supported_archs     noarch

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Pango 1.227 ../by-authors/id/X/XA/XAOC
 license             LGPL-2.1+
 maintainers         ryandesign openmaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  a5d34279ee3e67280aa2dd000c8cb9601e529235 \
-                    sha256  34b0a422df3fecd7597587048552457d48ae764c43bbefd2a9d62ceb6c8bac71
+sha256  34b0a422df3fecd7597587048552457d48ae764c43bbefd2a9d62ceb6c8bac71
 
 if {${perl5.major} != ""} {
     depends_lib-append \

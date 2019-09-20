@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://virtualenv.pypa.io
 master_sites        pypi:v/${python.rootname}
 distname            ${python.rootname}-${version}
 checksums           rmd160  f8386c43ff97854cc9e9dbe9a11479c422e50c07 \
-                    sha256  94a6898293d07f84a98add34c4df900f8ec64a570292279f6d91c781d37fd305 \
-                    size    5111938
+sha256  94a6898293d07f84a98add34c4df900f8ec64a570292279f6d91c781d37fd305 \
+size    5111938
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:py${python.version}-setuptools

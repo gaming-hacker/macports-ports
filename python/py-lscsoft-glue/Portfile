@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem           1.0
 PortGroup            python 1.0
@@ -23,11 +23,11 @@ master_sites         http://software.ligo.org/lscsoft/source/
 distname             lscsoft-glue-${version}
 
 checksums            rmd160  08ad85a70e86960a6baa4bf1c283c7b0fda80498 \
-                     sha256  89d8e55c7e9d9abacec0abac9f91090f0bb0789279309b530c5e4d9fe1a8e687 \
-                     size    2490073
+sha256  89d8e55c7e9d9abacec0abac9f91090f0bb0789279309b530c5e4d9fe1a8e687 \
+size    2490073
 
-python.versions      27 36 37
-python.default_version 27
+python.versions 27 37
+python.default_version 37
 
 if {${name} ne ${subport}} {
     depends_lib-append port:py${python.version}-six \

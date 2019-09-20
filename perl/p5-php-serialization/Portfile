@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         PHP-Serialization 0.34
 revision            3
 maintainers         nomaintainer
@@ -17,5 +17,5 @@ long_description    Provides a simple, quick means of serializing perl memory st
                     and vice versa.
 
 checksums           md5     333af0848ad79931875a35cc61dc22e0 \
-                    sha1    838e1eff1c56d3dbb15bf035ee22d9f2773abdf2 \
-                    rmd160  11df0b4303be2846ed8af0e3322fd2ac0ccf885e
+sha1    838e1eff1c56d3dbb15bf035ee22d9f2773abdf2 \
+rmd160  11df0b4303be2846ed8af0e3322fd2ac0ccf885e

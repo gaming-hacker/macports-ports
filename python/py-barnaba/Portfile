@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ long_description    ${description} \
 supported_archs     noarch
 
 checksums           rmd160  f6e4f68d5af8149e9a884e6dc88fbe77545507e6 \
-                    sha256  392402230279c710a263062d52a239d5a9cbebd19946f6dd03dbc8453c62dc87 \
-                    size    30260068
+sha256  392402230279c710a263062d52a239d5a9cbebd19946f6dd03dbc8453c62dc87 \
+size    30260068
 
-python.versions     27 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
 

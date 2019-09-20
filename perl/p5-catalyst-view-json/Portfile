@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Catalyst-View-JSON 0.37
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  27d6ff26da7c0cd29094b4a7ef73ed1a97bf43b3 \
-                    sha256  c5da3f6e8a77b1c99855de37d58802c0b194e29a7d86c60ed3831cfdd59f9dec \
-                    size    21127
+sha256  c5da3f6e8a77b1c99855de37d58802c0b194e29a7d86c60ed3831cfdd59f9dec \
+size    21127
 
 if {${perl5.major} != ""} {
     depends_lib-append \

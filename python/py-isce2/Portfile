@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,13 +20,13 @@ description         Library for SAR data processing
 long_description    ${description}
 
 checksums           sha256  86ea039f5f98a61f21e1e5f446c366f8c45432c2b13b482125acbc52d221b37b \
-                    rmd160  2d1716a6ed2b78983085adad936683d3aa578731 \
-                    size    5240075
+rmd160  2d1716a6ed2b78983085adad936683d3aa578731 \
+size    5240075
 
 use_configure       no
 
 #####Python information
-python.versions     36 37
+python.versions 27 37
 python.default_version  37
 python.add_archflags    no
 universal_variant       no
@@ -42,7 +42,7 @@ use_parallel_build  no
 
 #Currently testing only gcc >= 6
 #We will be supporting clang from v2.3.2
-compilers.setup         -clang -gcc44 -gcc45 -gcc46 -gcc47 -gcc48 -gcc49 -gcc5 -g95 -gfortran
+compilers.setup         -clang         -gfortran
 
 #Check if compiler is set
 if {![gcc_variant_isset]} {

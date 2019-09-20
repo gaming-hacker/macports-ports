@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim: fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim: fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -10,7 +10,7 @@ categories-append   science
 license             BSD
 platforms           darwin
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -24,8 +24,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  1f4ff253e3542e349e3bcc97819bde90b0267b9d \
-                    sha256  cb2e197b7b0687becb026b84d3c242482f20cbb29a9981e43604eb67576da9f6 \
-                    size    12626560
+sha256  cb2e197b7b0687becb026b84d3c242482f20cbb29a9981e43604eb67576da9f6 \
+size    12626560
 
 if {${name} ne ${subport}} {
     if {${python.version} < 35} {
@@ -33,8 +33,8 @@ if {${name} ne ${subport}} {
         revision            0
         distname            ${python.rootname}-${version}
         checksums           rmd160  a4b18e58b6be7bf13893dbccaf73542918dda1c8 \
-                            sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
-                            size    11837693
+sha256  4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2 \
+size    11837693
 
         depends_lib-append  port:py${python.version}-scipy \
                             port:py${python.version}-tables \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -19,12 +19,12 @@ homepage            https://code.google.com/p/py-leveldb/
 master_sites        pypi:l/${python.rootname}/
 
 checksums           rmd160  bc2cb6928661fee9c5fb9030b87a10172103325e \
-                    sha256  9c3378b3b4336cc63303e9fe5d054a337d50bafec80ac4628db19a598c0fcd38 \
-                    size    228566
+sha256  9c3378b3b4336cc63303e9fe5d054a337d50bafec80ac4628db19a598c0fcd38 \
+size    228566
 
 distname            ${python.rootname}-${version}
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append  port:py${python.version}-setuptools

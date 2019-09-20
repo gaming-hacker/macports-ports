@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         GraphViz2 2.47
 license             {Artistic-1 GPL}
 maintainers         {ryandesign @ryandesign} openmaintainer
@@ -17,8 +17,8 @@ platforms           darwin
 extract.suffix      .tgz
 
 checksums           rmd160  7e720a1cd2d4b168225856faf5ef70276a805c4c \
-                    sha256  37576e30a84bebcf94895505c3ce7507bc50fee4b690179c332d93f5cb16ad8b \
-                    size    232466
+sha256  37576e30a84bebcf94895505c3ce7507bc50fee4b690179c332d93f5cb16ad8b \
+size    232466
 
 if {${perl5.major} != ""} {
     depends_lib-append \

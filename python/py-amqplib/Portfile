@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             LGPL-2.1+
 supported_archs     noarch
 
-python.versions     27
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -25,7 +25,7 @@ distname            amqplib-${version}
 extract.suffix      .tgz
 
 checksums           rmd160  75cc47bf148a1be2b1349ec1d37268423038bf63 \
-                    sha256  843d69b681a60afd21fbf50f310404ec67fcdf9d13dfcf6e9d41f3b456217e5b
+sha256  843d69b681a60afd21fbf50f310404ec67fcdf9d13dfcf6e9d41f3b456217e5b
 
 if {${name} ne ${subport}} {
     depends_build   port:py${python.version}-setuptools

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                py-textile
@@ -19,10 +21,10 @@ homepage            https://pypi.python.org/pypi/textile
 master_sites        pypi:t/textile/
 distname            textile-${version}
 
-python.versions     27 34 35 36
+python.versions 27 37
 
 checksums           rmd160  ca2870e180fe3764b0273bcad7847c818fdab6d3 \
-                    sha256  4899f06c63bfdc32a204d4c1c1e9302ddf17f26c20328419747d109348e23afd
+sha256  4899f06c63bfdc32a204d4c1c1e9302ddf17f26c20328419747d109348e23afd
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Event-RPC 1.10
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
@@ -15,8 +15,8 @@ platforms           darwin
 supported_archs     noarch
 
 checksums           rmd160  6f48963d526b717493b68b169aec077b386d69a9 \
-                    sha256  93a5d52641c85688f3dc7eb3ab544b7a89f4e6cc5e4f094d574ec6992c498d06 \
-                    size    51373
+sha256  93a5d52641c85688f3dc7eb3ab544b7a89f4e6cc5e4f094d574ec6992c498d06 \
+size    51373
 
 if {${perl5.major} != ""} {
     depends_lib-append \

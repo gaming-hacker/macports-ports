@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -8,7 +8,7 @@ version             1.1.0
 license             PSF
 maintainers         {aronnax @lpsinger} openmaintainer
 # do not add subports for python > 3.4
-python.versions     27 34
+python.versions 27 37
 
 description         New features in the unittest library
 
@@ -26,8 +26,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  b9294b1ef9a6f0f7d8d2419b3260fc27ba81777d \
-                    sha256  22882a0e418c284e1f718a822b3b022944d53d2d908e1690b319a9d3eb2c0579 \
-                    size    81432
+sha256  22882a0e418c284e1f718a822b3b022944d53d2d908e1690b319a9d3eb2c0579 \
+size    81432
 
 # see: last two commits in https://hg.python.org/unittest2, but also don't require argparse for setup
 patch.pre_args      -p1

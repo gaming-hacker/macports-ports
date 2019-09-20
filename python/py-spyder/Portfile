@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,7 +14,7 @@ revision            0
 # This is already a date code, so sticking with dates.
 epoch               20111202
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 categories-append   devel
 platforms           darwin
@@ -37,8 +37,8 @@ long_description    ${description}. \
 supported_archs     noarch
 
 checksums           rmd160  848f5fc7ee8d1bc5dc1d4cf749d531aeb9ec89e1 \
-                    sha256  3e95c6342324608a746c9a7cad7678b583a3c90e734706b6b5028efba21b6229 \
-                    size    3949802
+sha256  3e95c6342324608a746c9a7cad7678b583a3c90e734706b6b5028efba21b6229 \
+size    3949802
 
 if {${name} ne ${subport}} {
     require_active_variants py${python.version}-qtpy qt5

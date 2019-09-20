@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,10 +20,10 @@ homepage            https://launchpad.net/pygpgme
 master_sites        pypi:p/pygpgme/
 distname            pygpgme-${version}
 checksums           rmd160  7d15991622ee7adf643d9d658c5da718c6b1bfd0 \
-                    sha256  5fd887c407015296a8fd3f4b867fe0fcca3179de97ccde90449853a3dfb802e1 \
-                    size    50100
+sha256  5fd887c407015296a8fd3f4b867fe0fcca3179de97ccde90449853a3dfb802e1 \
+size    50100
 
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

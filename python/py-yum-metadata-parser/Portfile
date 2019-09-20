@@ -1,10 +1,12 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name			py-yum-metadata-parser
 version			1.1.4
 revision		1
-python.versions		27
+python.versions 27 37
 license			GPL-2
 platforms		darwin
 categories		python
@@ -16,8 +18,8 @@ homepage		http://yum.baseurl.org/
 master_sites		${homepage}download/yum-metadata-parser/
 distname		yum-metadata-parser-${version}
 checksums		md5 05289971e5cfde532631f2a99f6c58c7 \
-			sha1 044e69a04ea5ac39d79020d9e1f1a35c9dc64d9b \
-			rmd160 2a92f6818bf0c54e99654e242eb7c98416f8e740
+sha1 044e69a04ea5ac39d79020d9e1f1a35c9dc64d9b \
+rmd160 2a92f6818bf0c54e99654e242eb7c98416f8e740
 
 if {${name} ne ${subport}} {
 depends_lib-append	path:lib/pkgconfig/glib-2.0.pc:glib2 port:libxml2 port:sqlite3

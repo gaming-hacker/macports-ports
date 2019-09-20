@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -31,11 +31,11 @@ master_sites        pypi:P/${real_name}
 distname            ${real_name}-${version}
 
 checksums           rmd160  9e9fd5e7e7017f40d2b43a5c1f72524b8557cf53 \
-                    sha256  49291401cef1bea680499dd5e3b5906cfdfe52d65f6f396f6f6b90842ff70da8 \
-                    size    190744
+sha256  49291401cef1bea680499dd5e3b5906cfdfe52d65f6f396f6f6b90842ff70da8 \
+size    190744
 
 deprecated.upstream_support no
-python.versions     27
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append \

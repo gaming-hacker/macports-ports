@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             Apache-2
 supported_archs     noarch
 
-python.versions     27 35 36 37
+python.versions 27 37
 
 maintainers         nomaintainer
 
@@ -25,8 +25,8 @@ master_sites        pypi:a/anytree
 distname            anytree-${version}
 
 checksums           rmd160  3ab619604e838f6d013612ae90b774cd20aa1ee6 \
-                    sha256  a221b6a603c3a5d5e417894dc48eaa8b1eab04056e1f5bb509bcfff0e7a47883 \
-                    size    19092
+sha256  a221b6a603c3a5d5e417894dc48eaa8b1eab04056e1f5bb509bcfff0e7a47883 \
+size    19092
 
 if {${name} ne ${subport}} {
     depends_build-append \

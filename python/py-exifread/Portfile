@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
@@ -16,10 +18,10 @@ long_description    Exchangeable Image File Format for Digital Still \
                     interface to this data.
 
 checksums           rmd160  deaea5d19bf9532b3a31e8c745a381a78d549830 \
-                    sha256  673cabc0ca73656494efbf9f1e0bcaf493892c8e8748f67710a53b9ebeed72cc \
-                    size    35326
+sha256  673cabc0ca73656494efbf9f1e0bcaf493892c8e8748f67710a53b9ebeed72cc \
+size    35326
 
-python.versions     27 37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_build-append    port:py${python.version}-setuptools

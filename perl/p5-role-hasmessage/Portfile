@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Role-HasMessage 0.006 ../../authors/id/R/RJ/RJBS
 license             {Artistic-1 GPL}
 maintainers         {devans @dbevans} openmaintainer
@@ -13,7 +13,7 @@ long_description    ${description}
 platforms           darwin
 
 checksums           rmd160  a491950bbb0c443f23c658f65a28acd6346cac7b \
-                    sha256  f6a6dbe0476ff95ee1ffbef825eb18d9b02b0618deba4686e7c63b99d576d4d3
+sha256  f6a6dbe0476ff95ee1ffbef825eb18d9b02b0618deba4686e7c63b99d576d4d3
 
 if {${perl5.major} != ""} {
     depends_lib-append \

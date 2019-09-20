@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         DBD-Pg 3.10.0
 license             {Artistic-1 GPL}
 categories          perl databases
@@ -15,8 +15,8 @@ long_description    DBD::Pg is a Perl module which works with the DBI \
 platforms           darwin
 
 checksums           rmd160  dbfd7fdc0108c0fe43ddc135c6665dbca971bfb7 \
-                    sha256  e103268a63e2828e3d43659bdba5f743446cbbe047a766f843112eedae105f80 \
-                    size    268414
+sha256  e103268a63e2828e3d43659bdba5f743446cbbe047a766f843112eedae105f80 \
+size    268414
 
 if {${perl5.major} ne ""} {
     depends_build-append \

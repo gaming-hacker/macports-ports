@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -17,10 +17,10 @@ description         Checks cloudformation for practices and behaviour that could
 long_description    ${description}
 
 checksums           sha256  de9663a8cbb69427fe9755c93fba81a4635e2e849abc1a940c7565bfb10d2af3 \
-                    rmd160  022003ed2e661b2fb95e3c861ecc766679fa375d \
-                    size    2959506
+rmd160  022003ed2e661b2fb95e3c861ecc766679fa375d \
+size    2959506
 
-python.versions     37
+python.versions 27 37
 
 if {${name} ne ${subport}} {
     depends_lib-append \

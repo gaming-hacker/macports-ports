@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -9,7 +9,7 @@ categories-append   devel
 platforms           darwin
 license             GPL-2
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {ipglider.org:miguel @ipglider} openmaintainer
 
@@ -22,7 +22,7 @@ master_sites        pypi:p/pylru
 distname            pylru-${version}
 
 checksums           rmd160  a0914d3f8e906c84a03bb2af7fb4f4d9fa1efe72 \
-                    sha256  e03a3d354eb8fdfa11638698e8a1f06cd3b3a214ebc0a120c603a79290d9ebec \
-                    size    17288
+sha256  e03a3d354eb8fdfa11638698e8a1f06cd3b3a214ebc0a120c603a79290d9ebec \
+size    17288
 
 livecheck.type      pypi

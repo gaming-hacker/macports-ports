@@ -1,9 +1,9 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
 
-perl5.branches      5.26 5.28
+perl5.branches 5.28
 perl5.setup         Test-MockModule v0.170.0
 maintainers         nomaintainer
 license             GPL-3
@@ -12,8 +12,8 @@ description         Override subroutines in a module for unit testing
 long_description    ${description}
 
 checksums           rmd160  c8fdc27ba2ac12ec7c65f1bf085b93fd1fa1d35d \
-                    sha256  9f79ba975cb049e1e807c36de1a31126079fffc4f22ee81526641a8969e6ef5d \
-                    size    24765
+sha256  9f79ba975cb049e1e807c36de1a31126079fffc4f22ee81526641a8969e6ef5d \
+size    24765
 
 platforms           darwin
 

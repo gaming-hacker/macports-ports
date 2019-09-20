@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -6,7 +6,7 @@ PortGroup           python 1.0
 set base_name       isodate
 name                py-$base_name
 version             0.5.4
-python.versions     27 35 36 37
+python.versions 27 37
 
 license             BSD
 platforms           darwin
@@ -23,7 +23,7 @@ homepage            https://pypi.python.org/pypi/$base_name
 master_sites        pypi:i/$base_name
 
 checksums           rmd160  8b483cedd72d92c3d0182a0d409672e1e21dc893 \
-                    sha256  42105c41d037246dc1987e36d96f3752ffd5c0c24834dd12e4fdbe1e79544e31
+sha256  42105c41d037246dc1987e36d96f3752ffd5c0c24834dd12e4fdbe1e79544e31
 
 distname            $base_name-${version}
 

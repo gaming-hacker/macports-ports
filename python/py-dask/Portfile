@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -11,7 +11,7 @@ platforms           darwin
 license             BSD
 supported_archs     noarch
 
-python.versions     27 34 35 36 37
+python.versions 27 37
 
 maintainers         {stromnov @stromnov} openmaintainer
 
@@ -32,8 +32,8 @@ master_sites        pypi:[string index ${python.rootname} 0]/${python.rootname}
 distname            ${python.rootname}-${version}
 
 checksums           rmd160  3af204be262e5b2bc9ab12dffedf95dda369c440 \
-                    sha256  a6791908725930e0f418e52e9b059d53f8c66e3a41107fd5b779ea91755cd9f6 \
-                    size    2457820
+sha256  a6791908725930e0f418e52e9b059d53f8c66e3a41107fd5b779ea91755cd9f6 \
+size    2457820
 
 if {${name} ne ${subport}} {
     depends_build-append \
@@ -45,8 +45,8 @@ if {${name} ne ${subport}} {
         epoch               1
         distname            ${python.rootname}-${version}
         checksums           rmd160  94cce1974d6ad2830a6fd3d745cbe5d4100ff5ba \
-                            sha256  5e7876bae2a01b355d1969b73aeafa23310febd8c353163910b73e93dc7e492c \
-                            size    2404729
+sha256  5e7876bae2a01b355d1969b73aeafa23310febd8c353163910b73e93dc7e492c \
+size    2404729
     }
 
     livecheck.type      none
