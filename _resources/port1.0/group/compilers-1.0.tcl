@@ -527,7 +527,7 @@ proc compilers.setup {args} {
         }
 
         foreach v $args {
-            # if any negated compiler (e.g. -gcc47) is specified then we are
+            # if any negated compiler (e.g. ) is specified then we are
             # removing from the default, complete list
             set mode add
             if {[string first - $v] == 0} {
