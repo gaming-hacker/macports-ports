@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -27,8 +27,8 @@ master_sites            ftp://ftp.exim.org/pub/exim/exim4/ \
 use_xz                  yes
 
 checksums               rmd160  50e60a8028f6d5d938b61cb51545baee1a0999e7 \
-                        sha256  2c64a871dd7ac464c14df8eb0dcf5cf766b46fff5af0316aaa4bf0268dde24b4 \
-                        size    1767976
+sha256  2c64a871dd7ac464c14df8eb0dcf5cf766b46fff5af0316aaa4bf0268dde24b4 \
+size    1767976
 
 depends_build           path:bin/perl:perl5 \
                         port:pcre

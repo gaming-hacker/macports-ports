@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        googlecode
 distfiles           rgm3800-rev${version}.py
 
 checksums           md5     28f575cf28d32a00615a2fc8b69f54b0 \
-                    sha1    e8cf2f6aad55ea00b5b81a3dca03e18c3859960d \
-                    rmd160  d339eeb8a892e3aaf53209483f61cfbc39bd1d64
+sha1    e8cf2f6aad55ea00b5b81a3dca03e18c3859960d \
+rmd160  d339eeb8a892e3aaf53209483f61cfbc39bd1d64
 
 use_configure       no
 

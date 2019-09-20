@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: Additional fonts
 long_description    Additional fonts
 
 checksums           texlive-fonts-extra-50876-run.tar.xz \
-                    rmd160  2077c53d4836f3a561415d266da17ddf15dafe09 \
-                    sha256  d1f7375061385d70ea96167c771df4b195983c212d71bc3c73b18a6149241528 \
+rmd160  2077c53d4836f3a561415d266da17ddf15dafe09 \
+sha256  d1f7375061385d70ea96167c771df4b195983c212d71bc3c73b18a6149241528 \
                     texlive-fonts-extra-50876-doc.tar.xz \
-                    rmd160  17a599299fb60a2e97025b239c8091e41e50090f \
-                    sha256  c7c7f5fc50658813ce43e7ba7c162daa71af0a0e173ee40214fa0ffffb4c77eb \
+rmd160  17a599299fb60a2e97025b239c8091e41e50090f \
+sha256  c7c7f5fc50658813ce43e7ba7c162daa71af0a0e173ee40214fa0ffffb4c77eb \
                     texlive-fonts-extra-50876-src.tar.xz \
-                    rmd160  b92ccd8d80c31a976a5324b144c1d4ceb13bcbb4 \
-                    sha256  ef9b98f66b92de75b3701c5900a0777258b1dacad2f883bd0ee074782a15cd2e
+rmd160  b92ccd8d80c31a976a5324b144c1d4ceb13bcbb4 \
+sha256  ef9b98f66b92de75b3701c5900a0777258b1dacad2f883bd0ee074782a15cd2e
 
 depends_lib         port:texlive-basic
 

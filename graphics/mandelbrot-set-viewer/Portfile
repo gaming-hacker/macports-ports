@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ use_zip             yes
 supported_archs     noarch
 
 checksums           rmd160  2324558ff47c91453650156c9137dffe87bcfbf4 \
-                    sha256  1cf037a2b0b759e5702e2cc06261d110179fe5a8e6deaa4fc8bc069780e17a93
+sha256  1cf037a2b0b759e5702e2cc06261d110179fe5a8e6deaa4fc8bc069780e17a93
 
 patchfiles          patch-main.py.diff
 

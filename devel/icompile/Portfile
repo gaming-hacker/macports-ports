@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			icompile
 version			0.5.7
@@ -17,8 +19,8 @@ long_description	iCompile is the easiest way to compile your C++ \
 homepage		http://ice.sourceforge.net/
 master_sites	sourceforge:ice
 checksums		md5     c0b0d9c6cac98ec758666658ce8be286 \
-				sha1    0f2ef850de68057bcfb9e7044b0463e04ee0008a \
-				rmd160  16c35c4f53034a732aad3689e0610cd9f8860575
+sha1    0f2ef850de68057bcfb9e7044b0463e04ee0008a \
+rmd160  16c35c4f53034a732aad3689e0610cd9f8860575
 
 depends_run		bin:python:python27
 

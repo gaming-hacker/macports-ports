@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           muniversal 1.0
 
 name                elinks
@@ -20,8 +22,8 @@ homepage            http://elinks.or.cz/
 master_sites        ${homepage}download/
 use_bzip2           yes
 checksums           rmd160  2e6e863d08f9accb71892ba6f236f795c83cba9c \
-                    sha256  456db6f704c591b1298b0cd80105f459ff8a1fc07a0ec1156a36c4da6f898979 \
-                    size    2467915
+sha256  456db6f704c591b1298b0cd80105f459ff8a1fc07a0ec1156a36c4da6f898979 \
+size    2467915
 
 depends_lib         path:lib/libssl.dylib:openssl \
                     port:bzip2 \

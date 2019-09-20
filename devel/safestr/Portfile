@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			safestr
 version			1.0.3
@@ -20,7 +22,7 @@ platforms		darwin
 
 master_sites		http://web.archive.org/web/20061205223843/http://www.zork.org/software/
 checksums		md5 a07412095226b0f6fcbd1d7acd4be732 \
-			sha256 791256efff74317273cf8b64c9ad360b7bce16d561b4350bb7de9776c5855b6c
+sha256 791256efff74317273cf8b64c9ad360b7bce16d561b4350bb7de9776c5855b6c
 
 depends_lib		port:xxl
 

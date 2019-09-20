@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -16,8 +16,8 @@ long_description    TeXworks is an environment for authoring TeX (LaTeX, ConTeXt
                     simple interface accessible to casual and non-technical users.
 
 checksums           rmd160  dc56df2c97b4bc408fbfeb9c2b30d4024ed8c5f5 \
-                    sha256  eb7426b9296aa92da06183690f542c2dcf0f2236215de5843f4585dd544d28be \
-                    size    12082392
+sha256  eb7426b9296aa92da06183690f542c2dcf0f2236215de5843f4585dd544d28be \
+size    12082392
 
 depends_build-append \
                     port:pkgconfig

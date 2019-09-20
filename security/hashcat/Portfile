@@ -7,8 +7,8 @@ version                 5.1.0
 master_sites            https://hashcat.net/files/
 
 checksums               rmd160  af192e07415d8b24cfa305e5a3e9b9dcca6ab8b1 \
-                        sha256  283beaa68e1eab41de080a58bb92349c8e47a2bb1b93d10f36ea30f418f1e338 \
-                        size    4266878
+sha256  283beaa68e1eab41de080a58bb92349c8e47a2bb1b93d10f36ea30f418f1e338 \
+size    4266878
 
 categories              security
 license                 MIT

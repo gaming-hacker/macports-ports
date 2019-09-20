@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                radvd
 version             1.8.5
@@ -19,7 +21,7 @@ long_description    The router advertisement daemon (radvd) is run by \
                     These messages are required for IPv6 stateless autoconfiguration.
 
 checksums           rmd160  cdadcc1dc96e66142a2a9988676967c2aee9dc48 \
-                    sha256  ac789d820c96570fe6921bd0c96ce69d7265c9686bdeb67170d9438091cfd08e
+sha256  ac789d820c96570fe6921bd0c96ce69d7265c9686bdeb67170d9438091cfd08e
 
 if {${os.platform} eq "darwin" && ${os.major} >= 11} {
     patchfiles-append   rfc3542.patch

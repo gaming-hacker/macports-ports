@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -13,9 +13,9 @@ homepage                http://www.openvas.org/
 master_sites            http://wald.intevation.org/frs/download.php/${download_id}
 
 checksums \
-    md5     c6d4e9099b860a0dceda6c10eacc26f4 \
-    sha1    7a4342418de2a591353a4404455ca97a49d589d8 \
-    rmd160  59f583f7e91c1d7e69bd16ce4fcacccb25b49e02
+md5     c6d4e9099b860a0dceda6c10eacc26f4 \
+sha1    7a4342418de2a591353a4404455ca97a49d589d8 \
+rmd160  59f583f7e91c1d7e69bd16ce4fcacccb25b49e02
 
 description \
     Open Vulnerability Assessment System NASL library

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		sipcalc
 version		1.1.6
@@ -17,6 +19,6 @@ master_sites	${homepage}files/
 
 
 checksums      rmd160  3b0c3caa7b0029980c8ea9936062e4e3d9453e99 \
-               sha256  cfd476c667f7a119e49eb5fe8adcfb9d2339bc2e0d4d01a1d64b7c229be56357
+sha256  cfd476c667f7a119e49eb5fe8adcfb9d2339bc2e0d4d01a1d64b7c229be56357
 
 configure.args	--mandir=${prefix}/share/man

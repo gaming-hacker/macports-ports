@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                rgb
 version             1.0.6
@@ -16,8 +18,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           md5     eab5bbd7642e5c784429307ec210d198 \
-                    sha1    542fade81a74f8a6beaea8cb517bdf1033fc6b71 \
-                    rmd160  aaf1a6b1c96238a81b2b6a15648f93705a68f08f
+sha1    542fade81a74f8a6beaea8cb517bdf1033fc6b71 \
+rmd160  aaf1a6b1c96238a81b2b6a15648f93705a68f08f
 
 depends_build       port:pkgconfig port:xorg-xorgproto
 

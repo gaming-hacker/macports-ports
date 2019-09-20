@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4   1.1
@@ -23,7 +23,7 @@ distname            kde-baseapps-${version}
 license_noconflict  openssl
 
 checksums           rmd160  318ac5cae826538ae6e4fcb805ece512f537378a \
-                    sha256  125baf42a7ab8c255b5829d12837f54c1791498f79593a9b09a9e55344ade6db
+sha256  125baf42a7ab8c255b5829d12837f54c1791498f79593a9b09a9e55344ade6db
 
 depends_lib-append  port:kdelibs4 \
                     port:kfilemetadata \

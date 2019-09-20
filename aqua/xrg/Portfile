@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       xcode 1.0
@@ -32,7 +32,7 @@ pre-fetch {
 }
 
 checksums           rmd160  f2ce37dffca36c8cda899ae4fa9201336cc1fdf9 \
-                    sha256  97b24ae17fb60b7c4149731574f9afd313373c928efdd00f33b5b77f5cf94ca6
+sha256  97b24ae17fb60b7c4149731574f9afd313373c928efdd00f33b5b77f5cf94ca6
 
 patch.pre_args-append -b
 patchfiles          patch-XRG.xcodeproj-project.pbxproj.diff

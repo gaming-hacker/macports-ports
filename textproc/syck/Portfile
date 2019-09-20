@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name              syck
 version           0.70
@@ -17,7 +19,7 @@ long_description  Syck is an extension for reading and writing YAML swiftly \
 homepage          https://github.com/indeyets/syck
 master_sites      https://github.com/indeyets/syck/downloads
 checksums         md5 198f925b4ed7fe04a182c35014498634 \
-                  sha1 30f89eba1fae0546ccfa75a9a3b865a3c8a9ac79
+sha1 30f89eba1fae0546ccfa75a9a3b865a3c8a9ac79
 
 patch.pre_args      -p1
 patchfiles          patch-bison-2.6.diff

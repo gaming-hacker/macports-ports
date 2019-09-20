@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ocaml 1.0
 
 name                ocaml-xtmpl
@@ -17,7 +19,7 @@ master_sites        http://zoggy.github.com/xtmpl/
 distname            xtmpl-${version}
 
 checksums           rmd160  ee488e0eae0b2a0f7d56621b91ba6f3fa487556e \
-                    sha256  4faca7b99e1b807d2bfdaaf4874a3932c667a2143f12da99eb467743a7d67e5d
+sha256  4faca7b99e1b807d2bfdaaf4874a3932c667a2143f12da99eb467743a7d67e5d
 
 depends_lib         port:ocaml port:ocaml-findlib port:ocaml-xmlm
 

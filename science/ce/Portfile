@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name                ce
 version             2004-07-06
 revision            1
@@ -12,8 +14,8 @@ platforms           darwin
 master_sites        ftp://ftp.sdsc.edu/pub/sdsc/biology/CE/src
 distname            ${name}
 checksums           md5     ec838ffc2d7c6ac15043e98b094519e1 \
-                    sha1    cb1d7507a931e2635f302cad523c3082ba63596b \
-                    rmd160  5475e00ff66d95fbe61e433d85067f5830259d0d
+sha1    cb1d7507a931e2635f302cad523c3082ba63596b \
+rmd160  5475e00ff66d95fbe61e433d85067f5830259d0d
 worksrcdir          ${name}_distr_${version}
 patchfiles          patch-Makefiles.diff patch-nonstandardcode.diff
 post-patch {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -23,7 +23,7 @@ long_description        Textext provides re-editable LaTeX objects to Inkscapeâ€
                         repertoire.
 
 checksums               sha256  4d3d262efc8b199dff407b6d153c8822ac9b30d46357e0cdc191c2c0f5fea077 \
-                        rmd160  fcaf932207a5477562135b00be29445fc92e1caa
+rmd160  fcaf932207a5477562135b00be29445fc92e1caa
                     
 depends_run             path:bin/inkscape:inkscape \
                         port:pdf2svg \

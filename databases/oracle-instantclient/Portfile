@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -28,11 +28,11 @@ if {${os.arch} eq "powerpc"} {
     master_sites        http://cmsrep.cern.ch/cmssw/cms/SOURCES/external/oracle/10.2.0.2/
     
     checksums           instantclient-basic-macosx-${version}${extract.suffix} \
-                        rmd160  d1f056f8f1b308c5493f4938b29b55fcb32452cf \
-                        sha256  55dafdab1b7387b05226fd7eb0d86d52225a702a5e690fc82af42073f49e7725 \
+rmd160  d1f056f8f1b308c5493f4938b29b55fcb32452cf \
+sha256  55dafdab1b7387b05226fd7eb0d86d52225a702a5e690fc82af42073f49e7725 \
                         instantclient-sdk-macosx-${version}${extract.suffix} \
-                        rmd160  c819db7f739b8ca468c8059dfbac31a6a6965938 \
-                        sha256  350052656466cc2daecbb8b1c162ff444365def151636ba704f28ae5f05ca411
+rmd160  c819db7f739b8ca468c8059dfbac31a6a6965938 \
+sha256  350052656466cc2daecbb8b1c162ff444365def151636ba704f28ae5f05ca411
     
     set my_worksrcdir_format        instantclient%s
     set my_distname_format(ppc)     instantclient-%s-macosx-${version}
@@ -50,17 +50,17 @@ if {${os.arch} eq "powerpc"} {
     master_sites        http://download.oracle.com/otn/mac/instantclient/[join [lrange [split ${version} .] 0 3] ""]/
     
     checksums           instantclient-basic-macos.x32-${version}${extract.suffix} \
-                        rmd160  a34edfd79dc3a34026b755bba64499ca74f72f56 \
-                        sha256  c1d59a284d7ed8a65fc38c1df08b4ab632aebeb27420f7892e38e0725f1325b4 \
+rmd160  a34edfd79dc3a34026b755bba64499ca74f72f56 \
+sha256  c1d59a284d7ed8a65fc38c1df08b4ab632aebeb27420f7892e38e0725f1325b4 \
                         instantclient-sdk-macos.x32-${version}${extract.suffix} \
-                        rmd160  350790b2c08c84e03a645bef6dcc72864d5c4bfc \
-                        sha256  4d4af789e471ea393ec019c16a3731abea9d384cdde8fce562f34406e79c6d13 \
+rmd160  350790b2c08c84e03a645bef6dcc72864d5c4bfc \
+sha256  4d4af789e471ea393ec019c16a3731abea9d384cdde8fce562f34406e79c6d13 \
                         instantclient-basic-macos.x64-${version}${extract.suffix} \
-                        rmd160  a1ab486f91a1a648cafaa6ff77b4e7f0a4dcdb62 \
-                        sha256  6c079713ab0a65193f7bfcbad6c90e7806fa6634a3828052f8428e1533bb89d3 \
+rmd160  a1ab486f91a1a648cafaa6ff77b4e7f0a4dcdb62 \
+sha256  6c079713ab0a65193f7bfcbad6c90e7806fa6634a3828052f8428e1533bb89d3 \
                         instantclient-sdk-macos.x64-${version}${extract.suffix} \
-                        rmd160  dd54cc83c54bd9d702c0de6cd2219370ca98d2e2 \
-                        sha256  aead0663c206a811cf1f61d3b2a533ff81e6e6109dd31544ad850a7ef6eb5d19
+rmd160  dd54cc83c54bd9d702c0de6cd2219370ca98d2e2 \
+sha256  aead0663c206a811cf1f61d3b2a533ff81e6e6109dd31544ad850a7ef6eb5d19
     
     set my_worksrcdir_format        instantclient_%s
     set my_distname_format(i386)    instantclient-%s-macos.x32-${version}

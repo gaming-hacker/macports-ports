@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://potrace.sourceforge.net/
 master_sites        sourceforge:project/potrace/${version}/
 
 checksums           rmd160  7301ae2d2ae88e5f9825d7655e046d98a8083a6c \
-                    sha256  be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc \
-                    size    657314
+sha256  be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc \
+size    657314
 
 depends_lib         port:zlib
 

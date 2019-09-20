@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,7 +20,7 @@ homepage            http://tovid.wikia.com/
 
 platforms           darwin
 
-python.default_version 27
+python.default_version 37
 
 # see http://tovid.wikia.com/wiki/Tovid_dependencies
 depends_build       port:txt2tags
@@ -38,8 +38,8 @@ depends_lib-append  path:bin/mplayer:mplayer-devel \
 depends_run-append  port:md5sha1sum
 
 checksums           rmd160  18f4f662a0547f50b8069fe02dd4d50f3e6d793a \
-                    sha256  e6008845537b0f69f93680f24684380bfbf4d7660b525e257e77cd042cee69e5 \
-                    size    527423
+sha256  e6008845537b0f69f93680f24684380bfbf4d7660b525e257e77cd042cee69e5 \
+size    527423
 
 post-destroot {
     foreach manfile [glob -tails -directory ${destroot}${python.prefix}/share/man/man1 *] {

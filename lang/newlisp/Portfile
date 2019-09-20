@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                newlisp
 version             10.4.3
@@ -20,8 +22,8 @@ homepage            http://www.newlisp.org
 master_sites        sourceforge
 extract.suffix      .tgz
 checksums           md5     f744b2ef55cba3f4b8729a34a647b43b \
-                    sha1    7caf5b54311d0004ed1fd7b14e1929ad2ae5977c \
-                    rmd160  ca51e93e672e5bd57f9fb7cff5d81f26ebece37a
+sha1    7caf5b54311d0004ed1fd7b14e1929ad2ae5977c \
+rmd160  ca51e93e672e5bd57f9fb7cff5d81f26ebece37a
                     
 supported_archs     x86_64
 depends_lib         port:readline \

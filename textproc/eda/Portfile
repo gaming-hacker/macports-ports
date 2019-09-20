@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ license             BSD
 
 master_sites        ${homepage}downloads/
 checksums           ${distname}${extract.suffix} \
-                    rmd160  39f4767b034d98af705058201c83227cc112f534 \
-                    sha256  d7324d588b8d44fdfeda51a34ffeb3431cb585cc85ac9927ff172e5f56c55b7f
+rmd160  39f4767b034d98af705058201c83227cc112f534 \
+sha256  d7324d588b8d44fdfeda51a34ffeb3431cb585cc85ac9927ff172e5f56c55b7f
 
 patchfiles          patch-LBFGS.hpp.diff
 
@@ -59,8 +59,8 @@ set model_file      bccwj-20130906.etm
 variant model description {Add model} {
     distfiles-append   ${model_file}
     checksums-append   ${model_file} \
-        rmd160  73a31ef68615df9fd5d167c4f01a591cfb663bc7 \
-        sha256  c665c79ca264f59de15edb0fbb96103e6655a8a9fee826068341bdfc768d7ce5
+rmd160  73a31ef68615df9fd5d167c4f01a591cfb663bc7 \
+sha256  c665c79ca264f59de15edb0fbb96103e6655a8a9fee826068341bdfc768d7ce5
 
     post-destroot {
         # install models.

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem			1.0
 name				mftrace
@@ -19,7 +19,7 @@ homepage			http://lilypond.org/mftrace/
 master_sites			http://lilypond.org/download/sources/mftrace/
 
 checksums           sha1    f227a98401ded8fbb0f692933ee6324ef80f3b61 \
-                    rmd160  71bb646fa78c81788fd1134659b3363e04ffed4c
+rmd160  71bb646fa78c81788fd1134659b3363e04ffed4c
 
 depends_lib			port:python27 port:potrace bin:kpsewhich:texlive
 

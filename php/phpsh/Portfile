@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -12,7 +12,7 @@ supported_archs         noarch
 license                 BSD
 platforms               darwin freebsd
 
-python.default_version 27
+python.default_version 37
 
 homepage                http://www.phpsh.org
 description             PHP read-eval-print-loop
@@ -21,8 +21,8 @@ long_description \
     completion, and quick access to documentation. It was developed at Facebook \
     and ironically, is written mostly in Python.
 checksums               rmd160  cc125343ad114f371a7a86bea53f49ec02fafb35 \
-                        sha256  23ed7e2bdbd5b2b0d1a3ee0667af4402d19dcc6561e1f2b31f8b2a6faf946994 \
-                        size    5915531
+sha256  23ed7e2bdbd5b2b0d1a3ee0667af4402d19dcc6561e1f2b31f8b2a6faf946994 \
+size    5915531
 
 patchfiles              src-__init__.py.diff
 

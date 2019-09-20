@@ -1,4 +1,6 @@
-PortSystem		    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		    ruby 1.0
 
 ruby.setup          actionmailer 3.0.5 gem {} rubygems ruby19
@@ -18,8 +20,8 @@ platforms           darwin
 maintainers		    nomaintainer
 homepage		    http://www.rubyonrails.org/
 checksums           md5     dd675260847b9284f80028facfef4b81 \
-                    sha1    b25750c8126aa21db27d7b0ee829b2e94e525ebc \
-                    rmd160  d752ba0f7333387deba6a5ac2adf60cae1b2d862
+sha1    b25750c8126aa21db27d7b0ee829b2e94e525ebc \
+rmd160  d752ba0f7333387deba6a5ac2adf60cae1b2d862
 
 depends_run-append  port:rb19-mail \
                     port:rb19-actionpack

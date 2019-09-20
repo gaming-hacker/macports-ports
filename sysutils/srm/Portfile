@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            srm
 version         1.2.15
@@ -21,7 +23,7 @@ homepage        http://srm.sourceforge.net/
 master_sites    sourceforge
 
 checksums           rmd160  61b674b21acf48ec837fcaf59836abdda62bc496 \
-                    sha256  7583c1120e911e292f22b4a1d949b32c23518038afd966d527dae87c61565283
+sha256  7583c1120e911e292f22b4a1d949b32c23518038afd966d527dae87c61565283
 
 test.run            yes
 

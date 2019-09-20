@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ homepage            http://xmlrpc-c.sourceforge.net/
 master_sites        sourceforge:project/xmlrpc-c/Xmlrpc-c%20Super%20Stable/${version}
 
 checksums           sha1    7a71fabc652c2848a7226605432a2e420a02dff0 \
-                    rmd160  945fb092152a8ff139407ce1e80da9803b5afdce \
-                    sha256  6eaf6d4ceba41ad6b47d7e4321afab8fbb18998d9d16655b73242496f759b59b
+rmd160  945fb092152a8ff139407ce1e80da9803b5afdce \
+sha256  6eaf6d4ceba41ad6b47d7e4321afab8fbb18998d9d16655b73242496f759b59b
 
 extract.suffix      .tgz
 

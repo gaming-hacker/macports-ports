@@ -1,11 +1,11 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
 PortGroup           perl5 1.0
 
 name                frozenbubble2
-perl5.branches      5.26
+perl5.branches 5.28
 perl5.setup         Games-FrozenBubble 2.212
 revision            1
 categories          games
@@ -25,7 +25,7 @@ homepage            http://www.frozen-bubble.org/
 dist_subdir         ${name}
 
 checksums           rmd160  f9f4e64e0a9ee0c5dd1d81c702d6787714430b6a \
-                    sha256  721e04ff69c5233060656bfbf4002aa1aeadd96c95351f0c57bb85b6da35a305
+sha256  721e04ff69c5233060656bfbf4002aa1aeadd96c95351f0c57bb85b6da35a305
 
 depends_build-append \
                     port:p${perl5.major}-file-slurp \

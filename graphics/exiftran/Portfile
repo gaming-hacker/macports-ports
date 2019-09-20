@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        https://www.kraxel.org/releases/fbida/
 distname            fbida-${version}
 
 checksums           rmd160  9efb457253558b7cd10e8cddbdef24585c0726f7 \
-                    sha256  95b7c01556cb6ef9819f358b314ddfeb8a4cbe862b521a3ed62f03d163154438 \
-                    size    296826
+sha256  95b7c01556cb6ef9819f358b314ddfeb8a4cbe862b521a3ed62f03d163154438 \
+size    296826
 
 patchfiles          patch-cflags.diff \
                     patch-jpeg-version.diff \

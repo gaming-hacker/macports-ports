@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -6,8 +6,8 @@ name                    libpng
 version                 1.6.37
 revision                0
 checksums               rmd160  7d68b596480e994aeccb2794df48a3613f1de9c4 \
-                        sha256  505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca \
-                        size    1012272
+sha256  505e70834d35383537b6491e7ae8641f1a4bed1876dbfe361201fc80868d88ca \
+size    1012272
 
 set branch              [join [lrange [split ${version} .] 0 1] ""]
 categories              graphics

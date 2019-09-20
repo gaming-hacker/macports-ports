@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       php 1.1
@@ -11,7 +11,7 @@ platforms       darwin
 maintainers     ryandesign openmaintainer
 license         BSD
 
-php.branches    5.3 5.4 5.5 5.6
+php.branches 7.3
 php.pecl        yes
 php.pecl.name   pecl_http
 
@@ -34,7 +34,7 @@ long_description \
 dist_subdir     php5-http
 
 checksums       rmd160  054adc8c50ed2ed494d70c3ccf154746d2ee3333 \
-                sha256  8435eb9082b8fdc56b630e3d3d8e63617a3bc43d360f6f49fbd7b1856b266be4
+sha256  8435eb9082b8fdc56b630e3d3d8e63617a3bc43d360f6f49fbd7b1856b266be4
 
 if {${name} ne ${subport}} {
     conflicts           ${php}-http

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -8,8 +8,8 @@ PortGroup               python 1.0
 
 github.setup            muflone gwakeonlan 0.6.3
 checksums               rmd160  f031c9d20947d6f934b7c469d8d519b80b957465 \
-                        sha256  06fa095e6dec8bd4316104b9de7b404fa492542e83878ff4c4b0c343986ae79d \
-                        size    87443
+sha256  06fa095e6dec8bd4316104b9de7b404fa492542e83878ff4c4b0c343986ae79d \
+size    87443
 
 name                    gWakeOnLAN
 categories              net
@@ -26,7 +26,7 @@ long_description        ${name} is a GTK+ GUI for waking machines on your \
 homepage                http://www.muflone.com/gwakeonlan
 github.tarball_from     releases
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append      port:gtk3 \
                         port:py${python.version}-gobject3 \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup cmake 1.0
 PortGroup mpi 1.0
 PortGroup github 1.0
@@ -18,8 +20,8 @@ long_description    FLANN is a library for performing fast approximate \
 platforms           darwin
 license             BSD
 checksums           md5     9583ae34a3fd05b730f312c416ebdda7 \
-                    sha1    bb65830d02d6603137f55901aea561944086f5d5 \
-                    rmd160  05758ce066371c6d9734fcfeec248f8c252585ff
+sha1    bb65830d02d6603137f55901aea561944086f5d5 \
+rmd160  05758ce066371c6d9734fcfeec248f8c252585ff
 depends_lib         port:hdf5 port:lz4
 patchfiles          patch-src-python-CMakeLists.txt.diff
 mpi.setup

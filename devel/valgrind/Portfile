@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -31,7 +31,7 @@ compiler.blacklist-append \
                     llvm-gcc-4.2
 
 compilers.choose    cc cxx
-mpi.setup           -gcc44 -gcc45 -gcc46
+mpi.setup             
 
 depends_build       bin:perl:perl5
 # Ignore trace reports about boost, Qt and OpenMP
@@ -83,8 +83,8 @@ if {$subport eq $name} {
     conflicts           valgrind-devel
 
     checksums           rmd160  562359c6222acd8546eedf6f0b6db964e91bd434 \
-                        sha256  037c11bfefd477cc6e9ebe8f193bb237fe397f7ce791b4a4ce3fa1c6a520baa5 \
-                        size    16602858
+sha256  037c11bfefd477cc6e9ebe8f193bb237fe397f7ce791b4a4ce3fa1c6a520baa5 \
+size    16602858
 
     use_bzip2           yes
 

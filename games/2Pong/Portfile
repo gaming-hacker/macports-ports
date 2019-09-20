@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               app 1.0
 
 name                    2Pong
@@ -18,7 +20,7 @@ distname                2pong-src-${version}
 worksrcdir              2Pong-Source
 
 checksums               rmd160  43e0cde2485a3b89a4009db80118dda4a14aa82c \
-                        sha256  4075bf686126f785e10f3ff9dcaa7febc05291ad6ddf7a84bf2dd2890382a87b
+sha256  4075bf686126f785e10f3ff9dcaa7febc05291ad6ddf7a84bf2dd2890382a87b
 
 depends_lib             port:libsdl \
                         port:libsdl_net \

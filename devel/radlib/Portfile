@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,8 +29,8 @@ homepage            http://www.radlib.teel.ws/
 master_sites        sourceforge:radlib
 
 checksums           md5     1330d46ab22e43425169d7dc75f5f2ea \
-                    sha1    1b3feace6d0361436c9e4ce9b06856195a5ac1b1 \
-                    rmd160  3509e555a35da26fc6e86a1f1134ef29d07f95c9
+sha1    1b3feace6d0361436c9e4ce9b06856195a5ac1b1 \
+rmd160  3509e555a35da26fc6e86a1f1134ef29d07f95c9
 
 variant mysql5 description {Includes mySQL5 database support} {
   configure.args-append     --enable-mysql

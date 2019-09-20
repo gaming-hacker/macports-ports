@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -27,8 +27,8 @@ platform i386 {
 }
 
 checksums       rmd160  c8351ef3aa78dd620b2ee02ccd986f025525b0da \
-                sha256  65b58e1e25b2a114157014736a3d9dfeaad8d41be1c8179866f144a2fb44ff9d \
-                size    1040054
+sha256  65b58e1e25b2a114157014736a3d9dfeaad8d41be1c8179866f144a2fb44ff9d \
+size    1040054
 
 distname        opus-${version}
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup java 1.0
 
 name				commons-codec
@@ -18,8 +20,8 @@ distname			${name}-${version}-src
 master_sites		apache:commons/codec/source/
 
 checksums           md5     6d96f8134e12cdab105d4934b90cb993 \
-                    sha1    61edf10e2a95bdef49d04fdbb97783be8e2b114a \
-                    rmd160  b00969ab4bf8004d87e97b91072f4379590e62ea
+sha1    61edf10e2a95bdef49d04fdbb97783be8e2b114a \
+rmd160  b00969ab4bf8004d87e97b91072f4379590e62ea
 
 depends_build		bin:ant:apache-ant
 depends_lib			bin:java:kaffe \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 8; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4
+# -*- coding: utf-8; mode: _tcl; tab-width: 8; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2
 # vim: set fileencoding=utf-8 tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem 1.0
@@ -31,17 +31,17 @@ distfiles	    antenna-bin-${version}.jar			\
 		    preprocessor-v2-bin-${preprocversion}.jar
 distname	    ${name}-bin-${version}
 checksums           antenna-bin-${version}.jar \
-                    md5     9e9029e4e6c523aa57a4374a8cb00b45 \
-                    sha1    ab580c4be307b7d4b9dd2fe1e3e819dbb2df644c \
-                    rmd160  0c30a7674b5aefb928f66b4197cb2de98aa670fd \
+md5     9e9029e4e6c523aa57a4374a8cb00b45 \
+sha1    ab580c4be307b7d4b9dd2fe1e3e819dbb2df644c \
+rmd160  0c30a7674b5aefb928f66b4197cb2de98aa670fd \
                     preprocessor-v3-bin-${preprocversion}.jar \
-                    md5     6bfea645b61682fee58d3f23adb183b5 \
-                    sha1    a3a795225fed870133f73e8180f592fced0b76dd \
-                    rmd160  9106160faa3d37a1924b94792c53eb0306750ecd \
+md5     6bfea645b61682fee58d3f23adb183b5 \
+sha1    a3a795225fed870133f73e8180f592fced0b76dd \
+rmd160  9106160faa3d37a1924b94792c53eb0306750ecd \
                     preprocessor-v2-bin-${preprocversion}.jar \
-                    md5     bb54096888a709118a5db340bdee430e \
-                    sha1    a0e0955b19bdb377cb54bfe9616a743c19d6e89d \
-                    rmd160  299cb40e6ff4d55f58f74cd2a7160743f9ade551
+md5     bb54096888a709118a5db340bdee430e \
+sha1    a0e0955b19bdb377cb54bfe9616a743c19d6e89d \
+rmd160  299cb40e6ff4d55f58f74cd2a7160743f9ade551
 use_configure	    no
 build {}
 worksrcdir	    .

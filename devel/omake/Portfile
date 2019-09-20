@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ homepage            http://projects.camlcity.org/projects/omake.html
 master_sites        http://download.camlcity.org/download/
 
 checksums           rmd160  fc83dffbeb0e164ec8ed2e117514a2f16698676c \
-                    sha256  ff3107e9459615ea6526309c533b04815eef60692a20dcd3a6169f5860786d1d \
-                    size    2438877
+sha256  ff3107e9459615ea6526309c533b04815eef60692a20dcd3a6169f5860786d1d \
+size    2438877
 
 patchfiles-append   patch-cflags.diff
 

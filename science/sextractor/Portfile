@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ long_description    SExtractor stands for ``Source Extractor'': software \
 homepage            http://www.astromatic.net/software/sextractor/
 master_sites        http://www.astromatic.net/download/sextractor/
 checksums           md5     2115556b5d30571306608b7c023a318f \
-                    sha1    43a48391b90b915b1c256b68c29c2276bee8621d \
-                    rmd160  edea782b2c37776b50b214628fb088bb97df908b
+sha1    43a48391b90b915b1c256b68c29c2276bee8621d \
+rmd160  edea782b2c37776b50b214628fb088bb97df908b
 
 depends_lib         port:fftw-3 \
                     port:fftw-3-single \

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 PortGroup           cmake 1.1
 
@@ -22,8 +24,8 @@ long_description    Dynamips emulates a variety of Cisco routers on a \
                     CCNA/CCNP/CCIE exams.
 
 checksums           rmd160  23c02f144b13a466a1b6a96d43cd6c1d4770e1d4 \
-                    sha256  9688563ffca379e96a29f5777f68958501282fd02f1f9748526e4b8770f2e80d \
-                    size    834033
+sha256  9688563ffca379e96a29f5777f68958501282fd02f1f9748526e4b8770f2e80d \
+size    834033
 
 depends_lib         port:libelf \
                     port:libpcap

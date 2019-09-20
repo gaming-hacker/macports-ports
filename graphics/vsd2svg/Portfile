@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -17,7 +17,7 @@ description             A commandline tool to convert files in VSD (Visio) forma
 long_description        ${description} VSD is the format used by Visio.
 
 checksums               sha256  15d113e7aabeed58a708f0a3209b9b590ac51284738440124e58198997a10f65 \
-                        rmd160  ce07daa11886a6acdedaaee935978ff5a8483614
+rmd160  ce07daa11886a6acdedaaee935978ff5a8483614
 
 depends_build           port:pkgconfig
 

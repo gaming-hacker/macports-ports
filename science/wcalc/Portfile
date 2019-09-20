@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ homepage            http://wcalc.sourceforge.net/
 master_sites        sourceforge:${name}
 
 checksums           md5     62d41eac2979c1a745e4e4c7045d97c4 \
-                    sha1    f6a96ef3abad9c87b491bc7fb0379b022809d182 \
-                    rmd160  d59b8b3dd8a850cc33bef601a61b6aafb6116384
+sha1    f6a96ef3abad9c87b491bc7fb0379b022809d182 \
+rmd160  d59b8b3dd8a850cc33bef601a61b6aafb6116384
 
 depends_build       port:pkgconfig
 depends_lib         port:gtk2 \

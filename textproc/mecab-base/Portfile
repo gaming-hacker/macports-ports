@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ distname            mecab-${version}
 
 master_sites        macports_distfiles:mecab
 checksums           rmd160  a06fa0c0eb44eef8c45171b769b43c655971ac4a \
-                    sha256  e073325783135b72e666145c781bb48fada583d5224fb2490fb6c1403ba69c59
+sha256  e073325783135b72e666145c781bb48fada583d5224fb2490fb6c1403ba69c59
 
 depends_lib         port:libiconv
 

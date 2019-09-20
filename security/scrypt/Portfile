@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -18,7 +18,7 @@ homepage                http://www.tarsnap.com/scrypt.html
 master_sites            http://www.tarsnap.com/scrypt/
 
 checksums               rmd160  2d32ba91eec5fa51bbce0242650ed9fc9230f177 \
-                        sha256  4621f5e7da2f802e20850436219370092e9fcda93bd598f6d4236cce33f4c577
+sha256  4621f5e7da2f802e20850436219370092e9fcda93bd598f6d4236cce33f4c577
 
 extract.suffix          .tgz
 

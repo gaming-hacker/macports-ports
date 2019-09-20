@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ master_sites        sourceforge:project/darkice/darkice/${version}/ \
                     ${homepage}download/
 
 checksums           rmd160  23ecd35ee210b751fd90bb1483b6dcd0ff9df341 \
-                    sha256  2c0d0faaa627c0273b2ce8b38775a73ef97e34ef866862a398f660ad8f6e9de6
+sha256  2c0d0faaa627c0273b2ce8b38775a73ef97e34ef866862a398f660ad8f6e9de6
 
 depends_build       port:pkgconfig
 

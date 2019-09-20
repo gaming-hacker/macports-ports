@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -20,8 +20,8 @@ long_description    BerkeleyGW is a set of computer codes that calculate the qua
 homepage            http://www.berkeleygw.org
 
 checksums           rmd160  56c3330b9f8928439b04b503f56a3df6dc3a32f0 \
-                    sha256  887146cc6598a509a6d2a7b5044d12ebc5a4a2c7b028513f247fe62cf0861563 \
-                    size    71864027
+sha256  887146cc6598a509a6d2a7b5044d12ebc5a4a2c7b028513f247fe62cf0861563 \
+size    71864027
 
 master_sites        https://berkeley.box.com/shared/static
 distfiles           wkqu37wu77tll53r8t1soe6ozqja67yy.gz
@@ -34,16 +34,16 @@ if {![variant_isset fftw2]} {
 }
 
 # May fail with +mpich +gcc5. Use +mpich +gfortran instead.
-# In file included from /opt/local/include/mpich-gcc5/mpi.h:2231:0,
+# In file included from /opt/local/include/mpich/mpi.h:2231:0,
 #                  from icm.cpp:86:
-# /opt/local/include/mpich-gcc5/mpicxx.h:22:4: error: #error 'Please use the same version of GCC and g++ for compiling MPICH and user MPI programs'
+# /opt/local/include/mpich/mpicxx.h:22:4: error: #error 'Please use the same version of GCC and g++ for compiling MPICH and user MPI programs'
 #  #  error 'Please use the same version of GCC and g++ for compiling MPICH and user MPI programs'
 #     ^
 
 # WHAT DO WE DO WHEN meaning of 'gfortran' is updated? No record... Maybe rename to gfortran5 etc. ?
 
 compilers.choose    fc cc cxx cpp
-mpi.setup           require_fortran -g95
+mpi.setup           require_fortran 
 # won't compile with g95
 #In file Common/timing.p.f:289
 #   contains

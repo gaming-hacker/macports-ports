@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,9 +20,9 @@ distname            ${name}_${version}
 worksrcdir          ${name}-${version}
 
 checksums           md5     710f68a3e7026b4139cc94ea790576c3 \
-                    sha1    1dc0b679aba8f08577e8280f6d5ed836a86c4e22 \
-                    rmd160  4660c6d90db28373134ab0cbf8d9c8d2888f0225 \
-                    sha256  213da77e9263e6aa7edbb1204402ef55d5daff2cd66add2cacbf84a1206da1ef
+sha1    1dc0b679aba8f08577e8280f6d5ed836a86c4e22 \
+rmd160  4660c6d90db28373134ab0cbf8d9c8d2888f0225 \
+sha256  213da77e9263e6aa7edbb1204402ef55d5daff2cd66add2cacbf84a1206da1ef
 
 depends_build       port:pkgconfig
 

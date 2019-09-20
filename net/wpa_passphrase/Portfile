@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -24,8 +24,8 @@ master_sites    https://w1.fi/releases/
 distname        wpa_supplicant-${version}
 
 checksums       rmd160  aad7b11821396dda36641a04aa51e20f006953d1 \
-                sha256  a689336a12a99151b9de5e25bfccadb88438f4f4438eb8db331cd94346fd3d96 \
-                size    3155904
+sha256  a689336a12a99151b9de5e25bfccadb88438f4f4438eb8db331cd94346fd3d96 \
+size    3155904
 
 patchfiles      patch-Makefile.diff
 

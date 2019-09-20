@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup			ruby 1.0
 
 ruby.setup			mongrel_cluster 1.0.5 gem {} rubygems
@@ -9,8 +11,8 @@ description			Mongrel plugin that provides commands and Capistrano \
 					tasks for managing multiple Mongrel processes.
 long_description	${description}
 checksums			md5 7ff77538842c97b363137c471903f7e3 \
-					sha1 e29a902b09c91662cbd7388062980ce2b14f5e4a \
-					rmd160 095736d09203521bdfa1668cefb8a1b9d64bc3d9
+sha1 e29a902b09c91662cbd7388062980ce2b14f5e4a \
+rmd160 095736d09203521bdfa1668cefb8a1b9d64bc3d9
 platforms			darwin
 depends_lib-append \
 					port:rb-gem_plugin \

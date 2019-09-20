@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			icpld
 version			1.1.5
@@ -19,8 +21,8 @@ master_sites	http://www.ibiblio.org/icpld/download/
 use_bzip2		yes
 
 checksums		md5     b6faa64bdbe4d31b3e0cfdbde2a9b0e9 \
-				sha1    cbe04ed210607f9e18b2a91a586f7e17f8018938 \
-				rmd160  457df771324d94867ed481e790cd0caa224945a0
+sha1    cbe04ed210607f9e18b2a91a586f7e17f8018938 \
+rmd160  457df771324d94867ed481e790cd0caa224945a0
 
 patchfiles		patch-src-fork.cpp
 

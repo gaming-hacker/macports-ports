@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup deprecated 1.0
@@ -24,8 +24,8 @@ master_sites	postgresql:source/v${version}
 distname		postgresql-${version}
 
 checksums           md5     7ecc63c517a8e79b86cd680214ec14fc \
-                    sha1    f51ac2051c4b1c95f5f58bf75bbafc50d2bc359b \
-                    rmd160  5a1d45cae1e7a9d9caa8e902608404b281bac7ff
+sha1    f51ac2051c4b1c95f5f58bf75bbafc50d2bc359b \
+rmd160  5a1d45cae1e7a9d9caa8e902608404b281bac7ff
 
 use_bzip2		yes
 dist_subdir		postgresql82

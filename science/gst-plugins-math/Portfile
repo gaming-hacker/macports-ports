@@ -1,4 +1,6 @@
-PortSystem            1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup             github 1.0
 
 github.setup          lpsinger gst-plugins-math 1.0.1 v
@@ -15,7 +17,7 @@ long_description \
   Perform simple arithmetic operations on audio streams in GStreamer pipelines.
 
 checksums             rmd160  cabaf60201854ec6c93cb317b80127cddcf62adc \
-                      sha256  33805cbc2cd12c655777deb839ff218951f19e45374f0633976bd3bf3d87957c
+sha256  33805cbc2cd12c655777deb839ff218951f19e45374f0633976bd3bf3d87957c
 
 depends_build-append  port:pkgconfig
 

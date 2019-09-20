@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ long_description    ${description}
 homepage            http://www.raceintospace.org
 
 checksums           rmd160  8989a36c664927b057cf789de4a0fab07a8a7876 \
-                    sha256  ee106089d90aa53ebbfd9854a6b57883510fc2f58d3b0f481c8ad859b9133faa \
-                    size    63501320
+sha256  ee106089d90aa53ebbfd9854a6b57883510fc2f58d3b0f481c8ad859b9133faa \
+size    63501320
 
 depends_build-append \
                     port:boost

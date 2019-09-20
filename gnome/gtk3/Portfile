@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -31,8 +31,8 @@ use_xz              yes
 master_sites        gnome:sources/gtk+/${branch}/
 
 checksums           rmd160  915f2ccceefab24893e02e0e26c57b0146909218 \
-                    sha256  a1a4a5c12703d4e1ccda28333b87ff462741dc365131fbc94c218ae81d9a6567 \
-                    size    18946084
+sha256  a1a4a5c12703d4e1ccda28333b87ff462741dc365131fbc94c218ae81d9a6567 \
+size    18946084
 
 minimum_xcodeversions {9 3.1}
 

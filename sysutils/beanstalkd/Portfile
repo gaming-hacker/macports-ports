@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,7 +18,7 @@ long_description        beanstalkd is a fast, distributed, in-memory workqueue \
                         time-consuming tasks asynchronously.
 
 checksums               rmd160  a5ac5261b14092b087747500324753df01c11f26 \
-                        sha256  9d8119ac782c2d699842020fd6776eca21afa199b046884bbb2f3e01037b1026
+sha256  9d8119ac782c2d699842020fd6776eca21afa199b046884bbb2f3e01037b1026
 
 patchfiles              patch-Makefile.diff
 

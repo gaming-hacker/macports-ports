@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cargo 1.0
@@ -60,9 +60,9 @@ cargo.crates \
     winapi-x86_64-pc-windows-gnu     0.4.0  712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f
 
 checksums-append    ${distname}${extract.suffix} \
-                    rmd160  7a82208d831582841b2d8bd2faa78c9acab0032c \
-                    sha256  fd333294b3a21d3d090238c169e8825b7b9d0e6fc206f5b455c8d8371e312538 \
-                    size    60542
+rmd160  7a82208d831582841b2d8bd2faa78c9acab0032c \
+sha256  fd333294b3a21d3d090238c169e8825b7b9d0e6fc206f5b455c8d8371e312538 \
+size    60542
 
 destroot {
     xinstall -m 755 ${worksrcpath}/target/[cargo.rust_platform]/release/xsv ${destroot}${prefix}/bin/

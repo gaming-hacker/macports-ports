@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ master_sites        ${homepage}/trunk/packagingfix/+download/
 use_bzip2           yes
 
 checksums           rmd160  0920813d6117e33f932020688f74ed0a0e397421 \
-                    sha256  cbed9121bf550ef14a434d6ed3d8806ded7a339db16b698cfa2f39fdc3d48bf6
+sha256  cbed9121bf550ef14a434d6ed3d8806ded7a339db16b698cfa2f39fdc3d48bf6
 
 depends_lib-append  port:expat
 

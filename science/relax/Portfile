@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -20,11 +20,11 @@ distfiles           ${name}-${version}.src.tar.bz2
 dist_subdir         ${name}
 
 checksums           rmd160  2a91388482c21ae885a5201cebcf970b1b923d29 \
-                    sha256  6791520ce38c949de214b8b0260f1cccdad11de61598934c57869f86d4463316
+sha256  6791520ce38c949de214b8b0260f1cccdad11de61598934c57869f86d4463316
 
 use_bzip2           yes
 
-python.default_version 27
+python.default_version 37
 
 depends_build-append \
                     port:scons

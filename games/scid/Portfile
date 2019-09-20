@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -14,8 +14,8 @@ long_description        Scid is an open source application to view, edit, and \
 homepage                http://scid.sourceforge.net/
 master_sites            sourceforge
 checksums               rmd160  7245036f6be164955c8fedf0dd22b5f67f37c2da \
-                        sha256  4fde535051786c0f8b13e6a2a20b306e7ba29e7af7394f5e510aae4f87e223e6 \
-                        size    12248886
+sha256  4fde535051786c0f8b13e6a2a20b306e7ba29e7af7394f5e510aae4f87e223e6 \
+size    12248886
 
 use_zip                 yes
 depends_lib             port:tcl port:tcllib port:zlib port:tDOM port:tk port:tklib

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -25,8 +25,8 @@ homepage                http://www.littlecms.com/
 master_sites            sourceforge:lcms
 
 checksums               md5     8af94611baf20d9646c7c2c285859818 \
-                        sha1    d5b075ccffc0068015f74f78e4bc39138bcfe2d4 \
-                        rmd160  530615c061dccdcb64d75c6fab148dd565bb6c91
+sha1    d5b075ccffc0068015f74f78e4bc39138bcfe2d4 \
+rmd160  530615c061dccdcb64d75c6fab148dd565bb6c91
 
 depends_lib             port:tiff port:jpeg port:zlib
 

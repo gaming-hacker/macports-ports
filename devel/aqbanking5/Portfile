@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 
@@ -75,7 +75,7 @@ patchfiles        patch-aqbanking-config.cmake.in.diff
     set release         217
 
     checksums           rmd160  801bc2ba0c37320b8f5915b528c83aae2df813d9 \
-                        sha256  16f86e4cc49a9eaaa8dfe3206607e627873208bce45a70030c3caea9b5afc768
+sha256  16f86e4cc49a9eaaa8dfe3206607e627873208bce45a70030c3caea9b5afc768
 
     if {$subport eq $name} {
         depends_lib-append port:gwenhywfar4

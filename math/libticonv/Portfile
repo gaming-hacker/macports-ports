@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                libticonv
 version             1.1.5
@@ -15,8 +17,8 @@ master_sites        sourceforge:tilp
 use_bzip2           yes
 
 checksums           rmd160  2865f8e23902154d2e6e0d6775066e5d88bc89d3 \
-                    sha256  316da6a73bf26b266dd23443882abc4c9fe7013edc3a53e5e301d525c2060878 \
-                    size    86036
+sha256  316da6a73bf26b266dd23443882abc4c9fe7013edc3a53e5e301d525c2060878 \
+size    86036
 
 depends_build       port:pkgconfig
 

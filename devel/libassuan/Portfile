@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,9 +22,9 @@ depends_lib         port:libgpg-error port:pth
 master_sites        gnupg
 use_bzip2           yes
 checksums           sha1    6d81bf42fa91ed2894df8b65764ce899e39776f8 \
-                    rmd160  d9feb40b2b5f7efb0c8b981d889daf0a592c73d2 \
-                    sha256  91bcb0403866b4e7c4bc1cc52ed4c364a9b5414b3994f718c70303f7f765e702 \
-                    size    572348
+rmd160  d9feb40b2b5f7efb0c8b981d889daf0a592c73d2 \
+sha256  91bcb0403866b4e7c4bc1cc52ed4c364a9b5414b3994f718c70303f7f765e702 \
+size    572348
 
 patchfiles          yosemite-libtool.patch
 

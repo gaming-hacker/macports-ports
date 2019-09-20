@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ master_sites        sourceforge:lib3ds
 distname            lib3ds-${version}
 
 checksums           md5 2572f7b0f29b591d494c1a0658b35c86 \
-                    sha1 544262eac73c1e4a1d77f0f1cbd90b990a996db8 \
-                    rmd160 3b7293b53dada43af97d02c200527c6ba3068487
+sha1 544262eac73c1e4a1d77f0f1cbd90b990a996db8 \
+rmd160 3b7293b53dada43af97d02c200527c6ba3068487
 
 use_zip             yes

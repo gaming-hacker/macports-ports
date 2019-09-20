@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             shorten
 version          3.6.1
@@ -20,9 +22,9 @@ homepage         http://www.etree.org/shnutils/shorten/
 platforms        darwin
 master_sites     ${homepage}dist/src/
 checksums \
-	md5 fb59c16fcedc4f4865d277f6e45866a7 \
-	sha1 bd525ced0b9ba99a7a178c11647a853147977fa5 \
-	rmd160 c25d0cf634ea86de2a3f155bc96f494c0a3167a0
+md5 fb59c16fcedc4f4865d277f6e45866a7 \
+sha1 bd525ced0b9ba99a7a178c11647a853147977fa5 \
+rmd160 c25d0cf634ea86de2a3f155bc96f494c0a3167a0
 configure.args   --mandir=${prefix}/share/man
 
 test.run         yes

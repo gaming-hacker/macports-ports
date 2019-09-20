@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -21,8 +21,8 @@ platforms           darwin
 license             BSD
 
 checksums           rmd160  99875fb7dafb5c4afbc7ac339a943e37b1ff3e57 \
-                    sha256  b029c05619f888821b4eb150c8f73feb83cca893129655057137d2b8da4cae18 \
-                    size    322091
+sha256  b029c05619f888821b4eb150c8f73feb83cca893129655057137d2b8da4cae18 \
+size    322091
 
 patchfiles          patch-configure.ac.diff \
                     patch-Makefile.am.diff

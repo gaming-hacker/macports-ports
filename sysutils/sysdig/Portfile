@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,7 +25,7 @@ license             GPL-2
 homepage            http://www.sysdig.org
 
 checksums           rmd160  539aa8ca92577335a52aa325b5a5b1d5d022766a \
-                    sha256  3f88be31d05f364a04873a8a0d78767169248fc0a97b04801482786bf3d33bc7
+sha256  3f88be31d05f364a04873a8a0d78767169248fc0a97b04801482786bf3d33bc7
 
 depends_lib-append  port:luajit \
                     port:zlib \

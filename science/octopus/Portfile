@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -22,12 +22,12 @@ homepage            http://www.tddft.org/programs/octopus
 master_sites        ${homepage}/download/${version}
 
 checksums           rmd160  aaa9dd7a6835014052d42396dfcfb4e5ba4e43ff \
-                    sha256  ee9fdc9388fac20ecb398285571e7ed8f55ee81de4929b31f2ce5ce87cc5235b \
-                    size    49323019
+sha256  ee9fdc9388fac20ecb398285571e7ed8f55ee81de4929b31f2ce5ce87cc5235b \
+size    49323019
 
 compilers.choose    fc cc cxx
-mpi.setup           require_fortran -g95 -clang -gfortran
-#-clang33 -clang34 -clang38
+mpi.setup           require_fortran  -clang -gfortran
+#  
 # not clear if clang33 and clang34 work; clang38 gives cxx11 error as does default clang.
 # clang fails in tests, relating to pseudopotentials and XML
 

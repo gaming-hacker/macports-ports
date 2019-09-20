@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -19,8 +19,8 @@ long_description            RESTinio is a header-only C++14 library that gives y
                             HTTP/Websocket server. It is based on standalone version of ASIO and targeted \
                             primarily for asynchronous processing of HTTP-requests.
 checksums                   rmd160  15b3c324ca28abd62bb4877dd2ce315461d062aa \
-                            sha256  454352bde5f01de5f903322ed55bb39c67616312bffeb1cf7c8f1c85bee502b3 \
-                            size    459870
+sha256  454352bde5f01de5f903322ed55bb39c67616312bffeb1cf7c8f1c85bee502b3 \
+size    459870
 
 depends_build-append        port:boost \
                             port:openssl \

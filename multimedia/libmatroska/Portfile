@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ name                libmatroska
 version             1.4.9
 revision            0
 checksums           rmd160  ca85491dca0ac8e957b55c5c0db738784bc12af0 \
-                    sha256  38a61dd5d87c070928b5deb3922b63b2b83c09e2e4a10f9393eecb6afa9795c8 \
-                    size    64556
+sha256  38a61dd5d87c070928b5deb3922b63b2b83c09e2e4a10f9393eecb6afa9795c8 \
+size    64556
 
 categories          multimedia
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,7 +15,7 @@ long_description    Corrects you if you type sl instead of ls
 platforms           darwin
 
 checksums           rmd160  6df6fbc6fd14cecb2832725553eafab5714e2f15 \
-                    sha256  44dcba02a9fb0f0f66c8a35423898b3089e5f004ee71442462adb3d8d1639c70
+sha256  44dcba02a9fb0f0f66c8a35423898b3089e5f004ee71442462adb3d8d1639c70
 
 depends_lib         port:ncurses
 

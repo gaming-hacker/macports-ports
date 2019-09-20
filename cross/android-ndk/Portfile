@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ distname            android-ndk-macosx
 worksrcdir          android-ndk-r${version}
 
 checksums           ${prog} \
-                    rmd160  c9bdb257758266cc309fc1a2bc0cc024b57eb7dd \
-                    sha256  82ee78e79fb049f099dcee6680e229339f4c5507308d67c9e145e0964d0b40af
+rmd160  c9bdb257758266cc309fc1a2bc0cc024b57eb7dd \
+sha256  82ee78e79fb049f099dcee6680e229339f4c5507308d67c9e145e0964d0b40af
 
 use_configure       no
 build {}

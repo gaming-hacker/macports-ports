@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        macports_distfiles
 use_bzip2           yes
 
 checksums           md5     c338357e3918cf391193b8429cab5975 \
-                    sha1    0b984715e0c010ce034a32b7ba69e0582be65362 \
-                    rmd160  27ca94d7e5924db73a594086903b5b8cdf8e369a
+sha1    0b984715e0c010ce034a32b7ba69e0582be65362 \
+rmd160  27ca94d7e5924db73a594086903b5b8cdf8e369a
 
 depends_build       port:intltool \
                     port:pkgconfig \

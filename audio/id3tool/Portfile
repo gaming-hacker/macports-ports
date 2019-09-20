@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             id3tool
 version          1.2a
@@ -14,7 +16,7 @@ platforms        darwin
 master_sites     ${homepage}
 
 checksums        md5     061185562c0d0e6327406d9fc2f194b2 \
-                 sha1    23ce1b33c44290e72a0520c07bc43d1dd4cc7886 \
-                 rmd160  b04486939f4f6a3ef2da9fadf5a3b1d0d8116711
+sha1    23ce1b33c44290e72a0520c07bc43d1dd4cc7886 \
+rmd160  b04486939f4f6a3ef2da9fadf5a3b1d0d8116711
 
 configure.args   --mandir=${prefix}/share/man

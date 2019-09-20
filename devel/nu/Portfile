@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                nu
 version             0.4.0
@@ -23,7 +25,7 @@ distname            Nu-${version}
 extract.suffix      .tgz
 
 checksums           sha1    02e0df424f18a6c6c3c3221699014018cabcd8bc \
-                    rmd160  31aa22c7a4dddd1135a55f6bdaf27b1f485ded43
+rmd160  31aa22c7a4dddd1135a55f6bdaf27b1f485ded43
 
 patchfiles          patch-Makefile.diff patch-Nukefile.diff
 

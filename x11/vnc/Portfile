@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ homepage        http://www.realvnc.com/
 master_sites    freebsd:xc
 distname        ${name}-[string map {. _} ${version}]-unixsrc
 checksums       md5 a119f3c75ad2767c0588260e2abe39be \
-                sha1 fd4ebf2bf8945b5a419ab69059a98fe3bc6698ef \
-                rmd160 9ef5a3b6f13d1227e5b9399c4d56884639cf9686
+sha1 fd4ebf2bf8945b5a419ab69059a98fe3bc6698ef \
+rmd160 9ef5a3b6f13d1227e5b9399c4d56884639cf9686
 platforms       darwin
 
 depends_lib     port:xorg-libXaw \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -12,8 +12,8 @@ compiler.blacklist-append {clang < 700}
 name                harfbuzz
 version             2.6.0
 checksums           rmd160  993fc58ca1f793a97ef6c37a8f2aee1c37856599 \
-                    sha256  9cf7d117548265f95ca884e2f4c9fafaf4e17d45a67b11107147b79eed76c966 \
-                    size    5736808
+sha256  9cf7d117548265f95ca884e2f4c9fafaf4e17d45a67b11107147b79eed76c966 \
+size    5736808
 
 categories          graphics
 platforms           darwin

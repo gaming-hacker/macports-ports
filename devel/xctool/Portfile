@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,7 +16,7 @@ description         An extension for Apple's xcodebuild that makes it easier to 
 long_description    ${description}
 
 checksums           rmd160  bdcc9e513dbd3111099e59015977f74b10b5716b \
-                    sha256  05046f0befea09b9d8cf8735dbac3427bc0456f62aef342faf9d71155035eda4
+sha256  05046f0befea09b9d8cf8735dbac3427bc0456f62aef342faf9d71155035eda4
 
 use_configure       no
 

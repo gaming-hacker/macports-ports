@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,8 +27,8 @@ homepage            https://launchpad.net/intltool
 master_sites        ${homepage}/trunk/${version}/+download
 
 checksums           rmd160  f10a7a86bdc504db22c2e1eb4e09705c6a41fbaa \
-                    sha256  67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd \
-                    size    162286
+sha256  67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd \
+size    162286
 
 # intltool only uses perl internally and publishes no public modules
 # so there is no need for multiple perl variants

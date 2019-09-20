@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				lincity-ng
 version				2.0
@@ -18,8 +20,8 @@ use_bzip2			yes
 
 universal_variant no
 checksums           md5     1bd0f58e0f2b131d70044f4230600ed1 \
-                    sha1    2961a3f60f7481b33858d7d5ef7cf9c788d01077 \
-                    rmd160  0466d56687f18813f9c0454468c092d1f181123e
+sha1    2961a3f60f7481b33858d7d5ef7cf9c788d01077 \
+rmd160  0466d56687f18813f9c0454468c092d1f181123e
 
 
 configure.args		--mandir=${destroot}${prefix}/share/man \

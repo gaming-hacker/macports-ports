@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -24,8 +24,8 @@ long_description            These are the backends for the Scanner Access Now \
 master_sites                https://gitlab.com/sane-project/backends/uploads/${upload_tag}/
 
 checksums                   rmd160  03b8a59b0957f68ab0df8fdecb365ffc1a865e77 \
-                            sha256  31260f3f72d82ac1661c62c5a4468410b89fb2b4a811dabbfcc0350c1346de03 \
-                            size    6753880
+sha256  31260f3f72d82ac1661c62c5a4468410b89fb2b4a811dabbfcc0350c1346de03 \
+size    6753880
 
 depends_build               port:pkgconfig
 

@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    54321
 version                 1.0.2001.11.16
@@ -29,8 +31,8 @@ depends_lib             port:libsdl \
                         port:libpng
 
 checksums               md5     20b2ad52ef45742c1a65911b225b6ddc \
-                        sha1    9841276d6e1f00de4de22cc11d19e1f08a9a01cb \
-                        rmd160  63381c6f9cbc2d785ebf76dddc54b178cd704078
+sha1    9841276d6e1f00de4de22cc11d19e1f08a9a01cb \
+rmd160  63381c6f9cbc2d785ebf76dddc54b178cd704078
 
 patchfiles              patch-archs-Darwin-variables.GNU.diff
 

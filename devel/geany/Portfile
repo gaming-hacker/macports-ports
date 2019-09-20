@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           app 1.0
@@ -23,8 +23,8 @@ master_sites        http://download.geany.org/
 use_bzip2           yes
 
 checksums           rmd160  a17fc4ad93a52a354f12729450d299ccd81fa190 \
-                    sha256  63b93d25d037eaffa77895ae6dd29c91bca570e4053eff5cc8490f87e6021f8e \
-                    size    4474601
+sha256  63b93d25d037eaffa77895ae6dd29c91bca570e4053eff5cc8490f87e6021f8e \
+size    4474601
 
 depends_build       port:autoconf \
                     port:automake \

@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name              xorg-libice
 version           1.0.10
@@ -18,8 +20,8 @@ use_bzip2         yes
 use_parallel_build      yes
 
 checksums           rmd160  f34d9b26934de6d3df0d34081fa888a7e4c64816 \
-                    sha256  6f86dce12cf4bcaf5c37dddd8b1b64ed2ddf1ef7b218f22b9942595fb747c348 \
-                    size    393116
+sha256  6f86dce12cf4bcaf5c37dddd8b1b64ed2ddf1ef7b218f22b9942595fb747c348 \
+size    393116
 
 depends_build     port:pkgconfig \
                   port:xorg-xtrans

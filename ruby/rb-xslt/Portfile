@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		ruby 1.0
 PortGroup               github 1.0
 
@@ -14,8 +16,8 @@ homepage		http://greg.rubyfr.net/pub/packages/ruby-xslt/files/README.html
 platforms		darwin
 
 checksums		md5     b1d77162a9eaa2ca5e8d328f0476b79e \
-			sha1    486c099ef6f78273afc21505319bb1d7ecd5bfac \
-			rmd160  499b3fd1565ba490fcaa58772f0e80f64cbb0a29
+sha1    486c099ef6f78273afc21505319bb1d7ecd5bfac \
+rmd160  499b3fd1565ba490fcaa58772f0e80f64cbb0a29
 
 depends_lib-append	lib:libz:zlib \
 					lib:libxml2:libxml2 \

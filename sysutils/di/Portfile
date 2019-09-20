@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,8 +17,8 @@ homepage            https://gentoo.com/di/
 master_sites        sourceforge:project/diskinfo-di
 
 checksums           rmd160  05021a965bd5c4202741038eb7f20d32158fac48 \
-                    sha256  eea8ad94197d9f11790afea0924d8bf29ec001c32eb6209e81c4e13766a2abad \
-                    size    221051
+sha256  eea8ad94197d9f11790afea0924d8bf29ec001c32eb6209e81c4e13766a2abad \
+size    221051
 
 depends_lib         port:gettext
 

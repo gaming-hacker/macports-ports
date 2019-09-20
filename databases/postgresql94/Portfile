@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup select 1.0
@@ -27,8 +27,8 @@ master_sites		http://ftp3.de.postgresql.org/pub/Mirrors/ftp.postgresql.org/sourc
 distname		postgresql-${version}
 
 checksums           rmd160  ef2761b5c01444d0c5ebb0b6c15a97fba02aa9fd \
-                    sha256  52253d67dd46a7463a9d7c5e82bf959931fa4c11ec56293150210fa82a0f9429 \
-                    size    16842941
+sha256  52253d67dd46a7463a9d7c5e82bf959931fa4c11ec56293150210fa82a0f9429 \
+size    16842941
 
 use_bzip2		yes
 

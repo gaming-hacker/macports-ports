@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,7 +17,7 @@ homepage            http://www.stgraber.org/category/pastebinit
 master_sites        http://launchpad.net/pastebinit/trunk/${version}/+download/
 
 checksums           rmd160  90803045b9eb56d234b479eda29970d9a4ba9891 \
-                    sha256  0d931dddb3744ed38aa2d319dd2d8a2f38a391011ff99db68ce7c83ab8f5b62f
+sha256  0d931dddb3744ed38aa2d319dd2d8a2f38a391011ff99db68ce7c83ab8f5b62f
 
 patchfiles          patch-default.diff
 

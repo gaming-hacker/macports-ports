@@ -16,8 +16,8 @@ long_description    Philips Music Writer (PMW) is a computer program for \
 homepage            http://www.quercite.com/pmw.html
 master_sites        http://www.quercite.com/
 checksums           md5 3b8d02c6cf6239b9bdadbc6543c5a683 \
-                    sha1 27874638b23e66d39ed94fe716ca25c967f6e993 \
-                    rmd160 82b9991f3bf0ceedbf74c188c5fa44b98b5e40c9
+sha1 27874638b23e66d39ed94fe716ca25c967f6e993 \
+rmd160 82b9991f3bf0ceedbf74c188c5fa44b98b5e40c9
 
 build.target
 

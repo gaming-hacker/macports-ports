@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       github 1.0
 PortGroup       xcode 1.0
 PortGroup       xcodeversion 1.0
@@ -26,8 +28,8 @@ pre-fetch {
 }
 
 checksums       rmd160  72ddf0b935edefb734a6073bbf1a16fd4fe9452e \
-                sha256  7831e92a48c041c2b1c58671a6de62d4162d7144b63cbc489fc43ac4a74e179d \
-                size    662059
+sha256  7831e92a48c041c2b1c58671a6de62d4162d7144b63cbc489fc43ac4a74e179d \
+size    662059
 
 post-extract {
     # This icon is a copy from Apple and is protected by copyright. Delete this

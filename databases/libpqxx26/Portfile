@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 
@@ -33,9 +33,9 @@ master_sites    http://pqxx.org/download/software/libpqxx/
 distname        libpqxx-${version}
 
 checksums \
-    md5 0b0c64af41dfdeea8556dc359994e1cb \
-    sha1 8be9dcd0375337b170d5c94370fa896911d361f1 \
-    rmd160 c456b5a3ed3c96963aad334d3504ed0443a8f63e
+md5 0b0c64af41dfdeea8556dc359994e1cb \
+sha1 8be9dcd0375337b170d5c94370fa896911d361f1 \
+rmd160 c456b5a3ed3c96963aad334d3504ed0443a8f63e
 
 set server      postgresql83
 

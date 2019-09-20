@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            http://k3dsurf.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160  115d00a6c3b61442d661547708032348866c10cd \
-                    sha256  7d98781df74d3197b49a5a9ff748de088b8a8038ddaa6e53ee044c4c17440761
+sha256  7d98781df74d3197b49a5a9ff748de088b8a8038ddaa6e53ee044c4c17440761
 
 # It doesn't work with Qt 4 due to:
 #   File generated with too old version of Qt Designer (3.3)

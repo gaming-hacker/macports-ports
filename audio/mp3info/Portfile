@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -20,8 +20,8 @@ master_sites    sunsite:apps/sound/mp3-utils/${name}
 extract.suffix  .tgz
 
 checksums       md5 cb7b619a10a40aaac2113b87bb2b2ea2 \
-                sha1 54df29eb6c2e581899affc12be698b0a71d91ca6 \
-                rmd160 898b566d9ba2f352949d061d991d92f2c8996ec3
+sha1 54df29eb6c2e581899affc12be698b0a71d91ca6 \
+rmd160 898b566d9ba2f352949d061d991d92f2c8996ec3
 
 depends_lib     port:ncurses
 

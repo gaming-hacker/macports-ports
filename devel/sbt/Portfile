@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -24,10 +24,10 @@ distname        ${name}-launch
 dist_subdir     ${name}/${version}
 
 checksums       md5     c660658ea9b1300d31aaa713f214b1b4 \
-                sha1    db44e7b60ed5c82ea00315ad223e3a8cc3d086e5 \
-                rmd160  a61cd251a1593dafa0d1452dbb615b4fb1fd5a19 \
-                sha256  add170a6e07d3ecf2a5add54565a0b5f729524083f0b05f9e1d4df90adb9257b \
-                size    1210278
+sha1    db44e7b60ed5c82ea00315ad223e3a8cc3d086e5 \
+rmd160  a61cd251a1593dafa0d1452dbb615b4fb1fd5a19 \
+sha256  add170a6e07d3ecf2a5add54565a0b5f729524083f0b05f9e1d4df90adb9257b \
+size    1210278
 
 depends_build   bin:java:kaffe
 

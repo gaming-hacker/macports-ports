@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ homepage            http://sstp-client.sourceforge.net/
 master_sites        sourceforge:project/sstp-client/sstp-client/
 
 checksums           rmd160  c17919d0b83b03db73f329a9cc012a795f3b510d \
-                    sha256  487eb406579689803ce0397f6102b18641e4572ac7bc9b9e5f3027c84dcf67ff \
-                    size    468683
+sha256  487eb406579689803ce0397f6102b18641e4572ac7bc9b9e5f3027c84dcf67ff \
+size    468683
 
 depends_build       port:pkgconfig
 

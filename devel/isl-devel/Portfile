@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -34,8 +34,8 @@ depends_lib         port:gmp
 master_sites        http://repo.or.cz/isl.git/snapshot
 
 checksums           rmd160  e6fc61adff24de3ed764db3169467736d9c7d94f \
-                    sha256  4b47ef4320fb58079dafb4d4afaec65a3f0aa8306822560495e35f33e48030c1 \
-                    size    1162344
+sha256  4b47ef4320fb58079dafb4d4afaec65a3f0aa8306822560495e35f33e48030c1 \
+size    1162344
 
 distname            $gitSHA1
 worksrcdir          isl-[string range $gitSHA1 0 6]

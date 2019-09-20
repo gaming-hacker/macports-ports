@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -21,7 +21,7 @@ homepage        http://libemf.sourceforge.net/
 master_sites    sourceforge:project/libemf/libemf/${version}/
 
 checksums       rmd160  4fbc814edae4bc37a27990c62d16910b0f02787a \
-                sha256  ee0324f705136a4d3343c2f0c3e5fa526fae0ec3680a96400d5fd209c60a3891
+sha256  ee0324f705136a4d3343c2f0c3e5fa526fae0ec3680a96400d5fd209c60a3891
 
 depends_build   port:coreutils
 

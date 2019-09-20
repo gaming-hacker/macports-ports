@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -35,8 +35,8 @@ master_sites        https://www.kraxel.org/releases/${my_distname}/
 distname            ${my_distname}-${version}
 
 checksums           rmd160  9fb55ade1f5ca3015be0794236ea3031fc137367 \
-                    sha256  1242cea467827aa1e2e91b41846229ca0a5b3f3e09260b0df9d78dc875075590 \
-                    size    40804
+sha256  1242cea467827aa1e2e91b41846229ca0a5b3f3e09260b0df9d78dc875075590 \
+size    40804
 
 set perl_branch     5.28
 depends_build       port:pkgconfig

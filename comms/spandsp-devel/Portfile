@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ extract.suffix      .tgz
 worksrcdir          spandsp-${basever}
 
 checksums           rmd160  183a8e42d45f7b026064d696a361f0b64dad68bb \
-                    sha256  bd152152bf0b204661ab9439c5a649098bcb8cefebcbfa959dd602442739aa50 \
-                    size    3278758
+sha256  bd152152bf0b204661ab9439c5a649098bcb8cefebcbfa959dd602442739aa50 \
+size    3278758
 
 depends_lib         port:tiff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ master_sites    xorg:individual/lib/
 distname        libFS-${version}
 
 checksums       rmd160  9253e762e18e530910d405b612380c080e29594a \
-                sha256  c8e13727149b2ddfe40912027459b2522042e3844c5cd228c3300fe5eef6bd0f \
-                size    347880
+sha256  c8e13727149b2ddfe40912027459b2522042e3844c5cd228c3300fe5eef6bd0f \
+size    347880
 
 use_bzip2           yes
 use_parallel_build  yes

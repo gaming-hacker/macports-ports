@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell 1.0
@@ -6,7 +6,7 @@ PortGroup           haskell 1.0
 haskell.setup       readline 1.0.3.0
 revision            5
 checksums           rmd160  01af52c869af949a6dee8c69ceafa7b43ddf8f5a \
-                    sha256  c0b9e174910620db0edea8f9fd6fb6c1d7b066260d523e9a7208294c46a75feb
+sha256  c0b9e174910620db0edea8f9fd6fb6c1d7b066260d523e9a7208294c46a75feb
 
 # the source does not use the correct way to apply the GPL and never states
 # which versions of GPL apply. The LICENSE file is GPL-2.

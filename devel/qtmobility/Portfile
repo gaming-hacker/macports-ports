@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt4 1.0
@@ -20,8 +20,8 @@ long_description    Additional Qt APIs which enable developers to include \
 master_sites        http://get.qt.nokia.com/qt/add-ons/
 distname            qt-mobility-opensource-src-${version}
 checksums           md5     ea5db5a8d3dd4709c2926dceda646bd8 \
-                    sha1    090d1cc0d9c27f41d6fc9022b80ab5579af5e46d \
-                    rmd160  c8c3c6c301e90a2ba9a2a249569084b9c3923322
+sha1    090d1cc0d9c27f41d6fc9022b80ab5579af5e46d \
+rmd160  c8c3c6c301e90a2ba9a2a249569084b9c3923322
 
 # --prefix is not recognized.
 configure.pre_args-delete       --prefix=${prefix}

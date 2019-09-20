@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -16,7 +16,7 @@ platforms	darwin freebsd
 homepage	http://www.underbit.com/products/mad/
 master_sites	ftp://ftp.mars.org/pub/mpeg/ sourceforge:mad
 checksums	sha1    4d867e8a8436e73cd7762fe0e85958e35f1e4306 \
-		rmd160  31a69b8ad7684aefdb675acc8ebf89bd6f432095
+rmd160  31a69b8ad7684aefdb675acc8ebf89bd6f432095
 depends_lib	port:zlib
 
 patchfiles	patch-id3tag.diff

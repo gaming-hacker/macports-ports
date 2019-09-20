@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		xcode 1.0
 PortGroup		deprecated 1.0
 
@@ -18,8 +20,8 @@ master_sites	macports_distfiles
 distname		${distname}.src
 
 checksums		md5 23548a9f4160dcfd80725afb1f7160a4 \
-				sha1 dec0d383c98856973e5b52065da2816400e40a21 \
-				rmd160 66935704e20439b855e1013f430227756a3bdeaf
+sha1 dec0d383c98856973e5b52065da2816400e40a21 \
+rmd160 66935704e20439b855e1013f430227756a3bdeaf
 
 worksrcdir		${name}
 

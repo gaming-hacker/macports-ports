@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            https://ifdo.ca/~seymour/runabc/top.html
 master_sites        https://ifdo.ca/~seymour/runabc/
 
 checksums           rmd160  1d7401e4e68196de0d9d380add8ffdb36949a31b \
-                    sha256  e59d790174f4aa77d49715fca820d9fb9bc084221ad06342c873ef12f2389595 \
-                    size    566536
+sha256  e59d790174f4aa77d49715fca820d9fb9bc084221ad06342c873ef12f2389595 \
+size    566536
 
 worksrcdir          abcmidi
 

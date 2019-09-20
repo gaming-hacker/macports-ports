@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name				strategoxt
 epoch				1
 version				0.17
@@ -19,8 +21,8 @@ homepage			http://strategoxt.org/Stratego/StrategoXT
 master_sites		ftp://ftp.stratego-language.org/pub/stratego/StrategoXT/strategoxt-${version}/
 
 checksums			md5     6a1523ec105c5091a8174b276aceea1b \
-					sha1    65fbd0a394917747366ce5c7c83ba6e3883cbb5c \
-					rmd160  e25aa86c007c20ac5667e0f41c6954d618c3aee1
+sha1    65fbd0a394917747366ce5c7c83ba6e3883cbb5c \
+rmd160  e25aa86c007c20ac5667e0f41c6954d618c3aee1
 
 build.type			gnu
 depends_build		port:pkgconfig

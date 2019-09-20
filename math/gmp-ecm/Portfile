@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 # Future versions (with asm redc support) will need this...
 #PortGroup  muniversal  1.0
 
@@ -16,8 +18,8 @@ master_sites        https://gforge.inria.fr/frs/download.php/26838/
 distname            ecm-${version}
 depends_lib         port:gmp
 checksums           md5     b30b59e48d65c94e3b034a0296b02c1b \
-                    sha1    4ce7a903d9ff2cedf54f0f66cb43acf2ee819a48 \
-                    rmd160  4d58fb34b379942501b6c55e50e7edad814b3608
+sha1    4ce7a903d9ff2cedf54f0f66cb43acf2ee819a48 \
+rmd160  4d58fb34b379942501b6c55e50e7edad814b3608
 
 # Due to bugs:
 #   https://gforge.inria.fr/tracker/index.php?func=detail&aid=10646&group_id=135&atid=623

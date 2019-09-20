@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            gzrecover
 set my_name     gzrt
@@ -19,7 +21,7 @@ master_sites    ${homepage}
 distname        ${my_name}-${version}
 
 checksums       rmd160  3d35163f9351f1f496f69a143b0353448de50b22 \
-                sha256  b0b7dc53dadd8309ad9f43d6d6be7ac502c68ef854f1f9a15bd7f543e4571fee
+sha256  b0b7dc53dadd8309ad9f43d6d6be7ac502c68ef854f1f9a15bd7f543e4571fee
 
 depends_lib     port:zlib
 

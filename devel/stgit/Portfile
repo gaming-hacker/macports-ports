@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -30,14 +30,14 @@ homepage            http://procode.org/stgit/
 master_sites        http://repo.or.cz/stgit.git/snapshot/
 
 checksums           rmd160  60261f23324c1bb6c5165cc23a9280850ef23c34 \
-                    sha256  467e2271fb48d73733aa756ed68e53525bce7c4d52a12901f3fca310ba17e310
+sha256  467e2271fb48d73733aa756ed68e53525bce7c4d52a12901f3fca310ba17e310
 
 distname            48e5cef14cea5c810833d119900cd484c2a6ca85
 worksrcdir          stgit-48e5cef
 
 depends_run         port:git
 
-python.default_version  27
+python.default_version 37
 
 patch.pre_args      -p1
 

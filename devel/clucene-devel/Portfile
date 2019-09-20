@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake 1.0
@@ -30,8 +30,8 @@ homepage        http://clucene.sourceforge.net/
 dist_subdir     ${my_name}
 
 checksums       rmd160  bfade76ae659dbebce5d46dd0703588dbab3a878 \
-                sha256  1370d44d58905e4033972a9049734ab21a9d10c25617479f229bfc4fe8f6abcf \
-                size    1979665
+sha256  1370d44d58905e4033972a9049734ab21a9d10c25617479f229bfc4fe8f6abcf \
+size    1979665
 
 post-patch {
     reinplace \

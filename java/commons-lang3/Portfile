@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           java 1.0
 
 name                commons-lang3
@@ -24,8 +26,8 @@ distname            ${name}-${version}-src
 master_sites        apache:commons/lang/source/
 
 checksums           rmd160  c63c683570ae7a1391434b7e238c2358cb63380b \
-                    sha256  66415e0d1c843b04c61dea6b7e7e85a8f1469eaeb1174241622650aff7728e68 \
-                    size    987753
+sha256  66415e0d1c843b04c61dea6b7e7e85a8f1469eaeb1174241622650aff7728e68 \
+size    987753
 
 # Currently has issues building on later JDK versions,
 # see https://github.com/macports/macports-ports/pull/4925#issuecomment-519172241

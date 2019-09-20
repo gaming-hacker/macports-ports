@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -8,8 +8,8 @@ PortGroup           active_variants 1.1
 github.setup        PointCloudLibrary pcl 1.9.1 pcl-
 revision            1
 checksums           rmd160  223b36b48c9a77a1092bf0cbe8ed15e843c46386 \
-                    sha256  943c618003c0a57046bca7c3b8e9a1e9a51b5f44545ffff9e1e744dd9304cf19 \
-                    size    67161112
+sha256  943c618003c0a57046bca7c3b8e9a1e9a51b5f44545ffff9e1e744dd9304cf19 \
+size    67161112
 
 name                libpcl
 categories          gis graphics science

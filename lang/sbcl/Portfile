@@ -1,4 +1,4 @@
-# -*- mode: tcl; coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- mode: _tcl; coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- # vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -39,9 +39,9 @@ distfiles       ${name}-${version}-source${extract.suffix}:sbcl
 worksrcdir      ${name}-${version}
 
 checksums       ${name}-${version}-source${extract.suffix} \
-    rmd160  181844dc01653babd1c5a576669f1f76e0b4654b \
-    sha256  cb47fae6a86f0c5c57431604fb4e5f11c8a823f94ce128d568b8770fc5bcaae2 \
-    size    6351480 
+rmd160  181844dc01653babd1c5a576669f1f76e0b4654b \
+sha256  cb47fae6a86f0c5c57431604fb4e5f11c8a823f94ce128d568b8770fc5bcaae2 \
+size    6351480 
 
 # N.b. The version of i386 bootstrap port had to be updated to compile
 # sbcl-1.4.9.  there is no corresponding binary for macOS/PPC, so the
@@ -54,9 +54,9 @@ platform powerpc {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_powerpc
     distfiles-append    ${name}-${bootversion}-powerpc-darwin-binary${extract.suffix}:sbcl_powerpc
     checksums-append    ${name}-${bootversion}-powerpc-darwin-binary${extract.suffix} \
-                        md5     02747afc7631a7ccdeede4b52b78072d \
-                        sha1    93df00b3120810a086d37666c1ccdeabc8daeb49 \
-                        rmd160  85c76296a1c62db5affdff7e72e61e558bb5c819
+md5     02747afc7631a7ccdeede4b52b78072d \
+sha1    93df00b3120810a086d37666c1ccdeabc8daeb49 \
+rmd160  85c76296a1c62db5affdff7e72e61e558bb5c819
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-powerpc-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-powerpc-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }
@@ -66,11 +66,11 @@ platform i386 {
     master_sites-append sourceforge:project/sbcl/sbcl/${bootversion}:sbcl_i386
     distfiles-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix}:sbcl_i386
     checksums-append    ${name}-${bootversion}-x86-darwin-binary${extract.suffix} \
-        md5     cbf75b368e7770e3da2a23c835fe2b78 \
-        sha1    35a76b93f8714bc34ba127df4aaf69aacfc08164 \
-        rmd160  fb1ab24f3605b29af5716f0ba425ee178c6cfc06 \
-        sha256  5801c60e2a875d263fccde446308b613c0253a84a61ab63569be62eb086718b3 \
-        size    9091955
+md5     cbf75b368e7770e3da2a23c835fe2b78 \
+sha1    35a76b93f8714bc34ba127df4aaf69aacfc08164 \
+rmd160  fb1ab24f3605b29af5716f0ba425ee178c6cfc06 \
+sha256  5801c60e2a875d263fccde446308b613c0253a84a61ab63569be62eb086718b3 \
+size    9091955
     global host_lisp
     set host_lisp "\"${workpath}/${name}-${bootversion}-x86-darwin/src/runtime/sbcl --core ${workpath}/${name}-${bootversion}-x86-darwin/output/sbcl.core --disable-debugger --sysinit /dev/null --userinit /dev/null\" "
 }

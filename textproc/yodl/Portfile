@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,7 +28,7 @@ installs_libs       no
 master_sites        sourceforge:project/yodl/yodl/${version}
 distfiles           yodl_${version}.orig${extract.suffix}
 checksums           rmd160  712337201e8b899fd4ee513004e89db12fd9e540 \
-                    sha256  5a3d0e1b2abbba87217cfdc6cd354a00df8d782572495bbddbdfbd4f47fe0d3e
+sha256  5a3d0e1b2abbba87217cfdc6cd354a00df8d782572495bbddbdfbd4f47fe0d3e
 
 patchfiles          avoid-c++11.patch \
                     use-macports-compilers.patch \

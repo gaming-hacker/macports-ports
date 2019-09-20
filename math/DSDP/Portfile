@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -25,7 +25,7 @@ distname            ${name}${version}
 use_zip             yes
 
 checksums           rmd160  75cf8629445522a4f9bbfffdcec25e832c8ffc4e \
-                    sha256  8915e55456f1a7cc5c970ad157d094a5fb399737cf192dfe79b89c2d94d97a8a
+sha256  8915e55456f1a7cc5c970ad157d094a5fb399737cf192dfe79b89c2d94d97a8a
 
 patchfiles          patch-make.include.diff \
                     patch-src-sys-dsdploginfo.c.diff

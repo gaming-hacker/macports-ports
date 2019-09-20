@@ -1,5 +1,7 @@
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+PortSystem	1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem        1.0
 PortGroup         cmake 1.0
@@ -24,8 +26,8 @@ patchfiles        patch-java-rpath.diff \
                   patch-python-module.diff
 
 checksums         rmd160  f761fb66deab7b3e5d09df4f51500ff39e1c6f83 \
-                  sha256  08b666adaa0697baaa6f76bf96757fa580fbd02186826b37792691776b84c5c6 \
-                  size    195774
+sha256  08b666adaa0697baaa6f76bf96757fa580fbd02186826b37792691776b84c5c6 \
+size    195774
 
 depends_build-append \
     port:pkgconfig \

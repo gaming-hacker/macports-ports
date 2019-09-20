@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                ico
 version             1.0.5
@@ -19,8 +21,8 @@ master_sites        xorg:individual/app/
 use_bzip2           yes
 
 checksums           rmd160  8c4a0258eda8c576827667300a32d6126a284fc8 \
-                    sha256  d73b62f29eb98d850f16b76d759395180b860b613fbe1686b18eee99a6e3773f \
-                    size    136727
+sha256  d73b62f29eb98d850f16b76d759395180b860b613fbe1686b18eee99a6e3773f \
+size    136727
 
 depends_build       port:pkgconfig
 

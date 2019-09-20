@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           haskell 1.0
@@ -6,7 +6,7 @@ PortGroup           haskell 1.0
 haskell.setup       void 0.7
 revision            1
 checksums           rmd160  7a2d5a6ed02a5ffbdd82444d9d58c2df9d30e5fe \
-                    sha256  981b85d19bb51c1ac60103b184b86061621e0b016d4db24dd965751b2bc96f47
+sha256  981b85d19bb51c1ac60103b184b86061621e0b016d4db24dd965751b2bc96f47
 
 license             BSD
 maintainers         {cal @neverpanic} openmaintainer

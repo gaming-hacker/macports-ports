@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                jmol
 version             14.29.51
@@ -24,8 +26,8 @@ master_sites        sourceforge:project/jmol/Jmol/Version%20${branch}/Jmol%20${v
 distname            Jmol-${version}-binary
 
 checksums           rmd160  bd20357e9ea14ce4b9a185116930ce37b63b1599 \
-                    sha256  4cf9d19f6157e32c3692036b4b4e4606edd331145078efbe22ba69280fc0a453 \
-                    size    71892857
+sha256  4cf9d19f6157e32c3692036b4b4e4606edd331145078efbe22ba69280fc0a453 \
+size    71892857
 
 worksrcdir          ${name}-${version}
 

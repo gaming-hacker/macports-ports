@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ depends_lib-append  port:libxml2 \
 universal_variant   no
 
 checksums           md5     baecd0d98148de0985e8fc3ea0291431 \
-                    sha1    69e05471223741c03480a5b59a9a5ea4907ae626 \
-                    rmd160  50f4fd9b649842d5d344d6ccf29ac39354cb7c5c
+sha1    69e05471223741c03480a5b59a9a5ea4907ae626 \
+rmd160  50f4fd9b649842d5d344d6ccf29ac39354cb7c5c
 
 configure.args \
     --with-openssl

@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            	arm-aout-gcc
 version         	3.3.6
@@ -21,13 +23,13 @@ master_sites		gnu:gcc/gcc-${version}/:gcc \
 distfiles			gcc-${version}.tar.gz:gcc newlib-${newlibversion}.tar.gz:newlib
 worksrcdir			gcc-${version}
 checksums			gcc-${version}.tar.gz \
-						md5 22c911f0a10275a0035d6004b9d68b63 \
-						sha1 7c713380dc7eed4bf95e158118b555fc68031c73 \
-						rmd160 aa9bdc4d7549fc586684c4e6da90df68a1c191ff \
+md5 22c911f0a10275a0035d6004b9d68b63 \
+sha1 7c713380dc7eed4bf95e158118b555fc68031c73 \
+rmd160 aa9bdc4d7549fc586684c4e6da90df68a1c191ff \
 					newlib-${newlibversion}.tar.gz \
-						md5 3fa663f131b355d3adb24ead4df678f2 \
-						sha1 edc50f5cda734b50c5431a2b8d1e579ac82ce3f9 \
-						rmd160 6f2b3f32759925142421ddc069229eff857dd106
+md5 3fa663f131b355d3adb24ead4df678f2 \
+sha1 edc50f5cda734b50c5431a2b8d1e579ac82ce3f9 \
+rmd160 6f2b3f32759925142421ddc069229eff857dd106
 
 # All cross ports violate the mtree layout.
 destroot.violate_mtree	yes

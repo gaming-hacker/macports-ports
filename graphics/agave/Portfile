@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ homepage        https://web.archive.org/web/20170308183221/http://home.gna.org/c
 master_sites    https://web.archive.org/web/20170225200236/http://download.gna.org/colorscheme/releases/
 
 checksums       md5     93097881f28dcae1eca2800a763f77c3 \
-                sha1    9c48d646885e84ded7a5d444d4989ea0ee413b6f \
-                rmd160  a7d0294ab0ab318f1a654c48059659a50a32283a
+sha1    9c48d646885e84ded7a5d444d4989ea0ee413b6f \
+rmd160  a7d0294ab0ab318f1a654c48059659a50a32283a
 
 use_bzip2       yes
 

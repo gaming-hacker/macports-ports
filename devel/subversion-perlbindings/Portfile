@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 
 name                subversion-perlbindings
@@ -50,8 +50,8 @@ if {${subport} eq ${name}} {
     master_sites    apache:subversion
     use_bzip2       yes
     checksums       rmd160  8197a89bf5879f1a871ae0547dfdaecb8fa052ac \
-                    sha256  3bd0b5c8e4c5175263dc9a92fd9aef94ce917e80af034f26fe5c45fde7e0f771 \
-                    size    8506584
+sha256  3bd0b5c8e4c5175263dc9a92fd9aef94ce917e80af034f26fe5c45fde7e0f771 \
+size    8506584
 
     distname        subversion-${version}
     dist_subdir     subversion

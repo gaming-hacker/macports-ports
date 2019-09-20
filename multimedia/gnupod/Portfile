@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -11,7 +11,7 @@ maintainers         nomaintainer
 platforms           darwin
 license             GFDL-1.2
 supported_archs     noarch
-perl5.branches      5.28
+perl5.branches 5.28
 
 description         GNUpod is a collection of tools which allow you to \
                     use your iPod with UNIX-like operating systems.
@@ -22,7 +22,7 @@ master_sites        http://www.blinkenlights.ch/gnupod-dist/stable
 extract.suffix      .tgz
 
 checksums           rmd160  fd43914afb9646d21e3ce7dbbe6a81330794be10 \
-                    sha256  bd566295a2e14352e6d05f5c816cab36b0e80d3ab36d29c4bbb45c581d3f3c31
+sha256  bd566295a2e14352e6d05f5c816cab36b0e80d3ab36d29c4bbb45c581d3f3c31
 
 depends_lib         port:perl${perl5.major} \
                     port:p${perl5.major}-mp3-info \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,9 +19,9 @@ if {${subport} eq ${name}} {
 
     version     4.3.1
     checksums \
-        rmd160  2ca1bf46dc59a77703a384906f1d3fbbb1c43946 \
-        sha256  50717621c5dfb5ed22f8492f8af32b17776e6e06641dfe3a3a8f82c8d353b877 \
-        size    1289687
+rmd160  2ca1bf46dc59a77703a384906f1d3fbbb1c43946 \
+sha256  50717621c5dfb5ed22f8492f8af32b17776e6e06641dfe3a3a8f82c8d353b877 \
+size    1289687
 
     conflicts    itpp-devel
 
@@ -50,9 +50,9 @@ subport itpp-devel {
     git.branch   bb5c7e95f40e8fdb5c3f3d01a84bcbaf76f3676d
     version      20180529
     checksums \
-        rmd160 289850cecb008f8416206bcb280e5d27325aeb17 \
-        sha256 9951313ca0eb69b8f7e355598c989e3cc2ea7f0887b8b18f388970960df9f3f6 \
-        size   4422176
+rmd160 289850cecb008f8416206bcb280e5d27325aeb17 \
+sha256 9951313ca0eb69b8f7e355598c989e3cc2ea7f0887b8b18f388970960df9f3f6 \
+size   4422176
 
     # patch to allow setting "Apple" for BLAS / LAPACK, and
     # "MacPorts" for the build type

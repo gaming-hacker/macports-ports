@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    A collection tool for economists using the fact that Twitter
                     in an open access journal.
 
 checksums           rmd160  3efd2a5a9d5e92aa7ee88a541cfb37ec3c3cfda2 \
-                    sha256  c47ea4470e33a1df43bf60027c4a4e278f69dc740867d81efa31fee192cdbc10
+sha256  c47ea4470e33a1df43bf60027c4a4e278f69dc740867d81efa31fee192cdbc10
 
-python.default_version 27
+python.default_version 37
 
 depends_build       port:py${python.version}-setuptools
 depends_lib-append  port:py${python.version}-dateutil \

@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       xcode 1.0
 
 name            launch
@@ -20,8 +22,8 @@ homepage        https://sabi.net/nriley/software/
 master_sites    ${homepage}
 
 checksums       md5 bcd5179d5b519248a717aa73f3819e00 \
-                sha1 000d6f1063f1b9091a8b10de90cfa778ed6a6ed1 \
-                rmd160 7eba376fdedd322ecfcc4d429bf608dcd1e79c34
+sha1 000d6f1063f1b9091a8b10de90cfa778ed6a6ed1 \
+rmd160 7eba376fdedd322ecfcc4d429bf608dcd1e79c34
 
 patchfiles      patch-main.c.diff
 

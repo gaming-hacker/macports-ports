@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			ucspi-tcp
 version			0.88
@@ -21,13 +23,13 @@ master_sites		https://cr.yp.to/ucspi-tcp/
 patch_sites		https://www.fehcom.de/qmail/rblsmtpd:greetdelay
 
 checksums		${distname}${extract.suffix} \
-				md5 39b619147db54687c4a583a7a94c9163 \
-                        	sha1 793b4189795b563085602c030dd8aa0d206ddc0e \
-				rmd160 eb20085ea6ffd5d137a805f7c8768e0312c1f56a \
+md5 39b619147db54687c4a583a7a94c9163 \
+sha1 793b4189795b563085602c030dd8aa0d206ddc0e \
+rmd160 eb20085ea6ffd5d137a805f7c8768e0312c1f56a \
 			rblsmtpd.c.greetdelay \
-				md5 ce526be5be5c3ba2eab0f3624af9256f \
-				sha1 f52db52bbdee794e2cf0f79d3d5c861e1e2b5e31 \
-				rmd160 68ad0a181c9a4c7d6b40f042ebff4838fe2e29f3
+md5 ce526be5be5c3ba2eab0f3624af9256f \
+sha1 f52db52bbdee794e2cf0f79d3d5c861e1e2b5e31 \
+rmd160 68ad0a181c9a4c7d6b40f042ebff4838fe2e29f3
 
 variant greetdelay description {Add configurable delay to discourage Spambots to rblsmtpd} {
 	patchfiles-append	rblsmtpd.c.greetdelay:greetdelay

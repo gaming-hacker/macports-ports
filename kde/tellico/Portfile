@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4 1.1
@@ -23,7 +23,7 @@ master_sites        ${homepage}files/
 use_bzip2           yes
 
 checksums           rmd160  a58818f01d41a8952dd258dcb69131595af2149e \
-                    sha256  7a119460705dc4f0062eab9b0bd519e43df8bf15a4a447b947921fb7c26eb8cc
+sha256  7a119460705dc4f0062eab9b0bd519e43df8bf15a4a447b947921fb7c26eb8cc
 
 depends_lib-append  port:gettext \
                     port:qimageblitz \

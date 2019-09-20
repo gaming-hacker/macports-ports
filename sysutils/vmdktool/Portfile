@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ master_sites        https://people.freebsd.org/~brian/vmdktool/ \
                     ftp://ftp.awfulhak.org/pub/vmdktool/
 
 checksums           sha1    ed80b62cd7a97582192ad3a8f97bf73eee9ed36a \
-                    sha256  981eb43d3db172144f2344886040424ef525e15c85f84023a7502b238aa7b89c
+sha256  981eb43d3db172144f2344886040424ef525e15c85f84023a7502b238aa7b89c
 
 depends_lib         port:zlib
 

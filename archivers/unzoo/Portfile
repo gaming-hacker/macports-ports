@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            unzoo
 version         4.4
@@ -18,8 +20,8 @@ homepage        http://freecode.com/projects/unzoo/
 master_sites    http://critical.ch/unzoo/
 
 checksums       md5 2e73c26188688033b7c2b6c7da32ad39 \
-                sha1 9f1d0193492276bd0f59a48d720ab6092c6d4a0f \
-                rmd160 fd8e0c97e22adfc8fefd6f8d1b70d8ca53b234f3
+sha1 9f1d0193492276bd0f59a48d720ab6092c6d4a0f \
+rmd160 fd8e0c97e22adfc8fefd6f8d1b70d8ca53b234f3
 
 use_configure   no
 universal_variant   yes

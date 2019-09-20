@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ homepage            http://www.audiocoding.com/
 platforms           darwin
 master_sites        sourceforge:project/faac/faad2-src/faad2-${branch}.0
 checksums           rmd160  b69349ee69c869ba070f28c58418749d53898985 \
-                    sha256  985c3fadb9789d2815e50f4ff714511c79c2710ac27a4aaaf5c0c2662141426d \
-                    size    1069044
+sha256  985c3fadb9789d2815e50f4ff714511c79c2710ac27a4aaaf5c0c2662141426d \
+size    1069044
 
 patchfiles      patch-faad2-mp4read-ppc.diff
 

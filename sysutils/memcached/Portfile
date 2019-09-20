@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -20,8 +20,8 @@ homepage                https://memcached.org/
 master_sites            ${homepage}files/
 
 checksums               rmd160  4e08d75aa285daa57d5999a2624785c4734599b0 \
-                        sha256  494c060dbd96d546c74ab85a3cc3984d009b4423767ac33e05dd2340c01f1c4b \
-                        size    465169
+sha256  494c060dbd96d546c74ab85a3cc3984d009b4423767ac33e05dd2340c01f1c4b \
+size    465169
 
 configure.args          --with-libevent=${prefix} \
                         ac_cv_search_umem_cache_create=no \

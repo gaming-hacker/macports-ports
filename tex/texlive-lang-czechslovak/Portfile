@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: Czech/Slovak
 long_description    Support for Czech/Slovak.
 
 checksums           texlive-lang-czechslovak-50792-run.tar.xz \
-                    rmd160  c942368c2d78df06a9d39dfca71df45b203caf34 \
-                    sha256  528a4e85f0c404b15540423238868ed1e85ba246ce07b97f9590de05cfc91154 \
+rmd160  c942368c2d78df06a9d39dfca71df45b203caf34 \
+sha256  528a4e85f0c404b15540423238868ed1e85ba246ce07b97f9590de05cfc91154 \
                     texlive-lang-czechslovak-50792-doc.tar.xz \
-                    rmd160  4d15eff0f9af73194cf83e49d929348153ed69cf \
-                    sha256  3905f0443fbc79240ab9200143022bbd50595dc41beb0ac8fa54ec1a08de50b6 \
+rmd160  4d15eff0f9af73194cf83e49d929348153ed69cf \
+sha256  3905f0443fbc79240ab9200143022bbd50595dc41beb0ac8fa54ec1a08de50b6 \
                     texlive-lang-czechslovak-50792-src.tar.xz \
-                    rmd160  a1d6e28e408d9a5500fa7f2d6842be267668a8bd \
-                    sha256  e4b57663cfc4e0c2c9f3f933e0144c5d145da064bdffcd83fd28068a4b4bafc2
+rmd160  a1d6e28e408d9a5500fa7f2d6842be267668a8bd \
+sha256  e4b57663cfc4e0c2c9f3f933e0144c5d145da064bdffcd83fd28068a4b4bafc2
 
 depends_lib         port:texlive-basic port:texlive-latex
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup cmake 1.0
 
 name            allegro
@@ -19,8 +21,8 @@ homepage        http://alleg.sourceforge.net/
 master_sites    sourceforge:project/alleg/allegro/${version}
 
 checksums       md5     4db71b0460fc99926ae91d223199c2e6 \
-                sha1    ae0c15d2cb6b0337ef388dc98cefc620883720df \
-                rmd160  a6f6a03d6748230dfb5f306d1a05ef45ffa49f42
+sha1    ae0c15d2cb6b0337ef388dc98cefc620883720df \
+rmd160  a6f6a03d6748230dfb5f306d1a05ef45ffa49f42
 
 patchfiles      patch-main.m.diff patch-system.m.diff
 

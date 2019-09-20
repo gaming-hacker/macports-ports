@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ master_sites        sourceforge
 extract.suffix      .tgz
 
 checksums           rmd160  f2c6d061ff0abbb01c33b8d7617f3e1c03e967c5 \
-                    sha256  8406190e7912082719262b71b63ee31a98face49aa52297db96cc0c970f8d207
+sha256  8406190e7912082719262b71b63ee31a98face49aa52297db96cc0c970f8d207
 
 configure           {
     reinplace "s|BINDIR = .*|BINDIR = ${destroot}${prefix}/bin|" \

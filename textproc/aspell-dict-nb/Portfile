@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,8 +17,8 @@ supported_archs     noarch
 master_sites	    gnu:aspell/dict/${langcode}
 distname	        aspell-${langcode}-${version}
 checksums	        md5     d1173a5ce04f39e9c93183da691e7ce8 \
-                    sha1    40e2549973c192b82f782b9e0b1159e6b51464b3 \
-                    rmd160  5f2fd214608c9a80d318690912efd3aae02d5cd3
+sha1    40e2549973c192b82f782b9e0b1159e6b51464b3 \
+rmd160  5f2fd214608c9a80d318690912efd3aae02d5cd3
 
 use_bzip2           yes
 

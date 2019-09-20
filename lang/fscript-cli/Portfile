@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    fscript-cli
@@ -29,8 +31,8 @@ use_dmg                 yes
 set extract.asroot      yes
 
 checksums               md5     18020a44bef3323a6e5469554f3bbaab \
-                        sha1    cebd68adc2c3e039cc883d38671940616d1794d1 \
-                        rmd160  63f06655713fbface9ad131d4e989bbdb69fa989
+sha1    cebd68adc2c3e039cc883d38671940616d1794d1 \
+rmd160  63f06655713fbface9ad131d4e989bbdb69fa989
 
 xcode.configuration     Release
 xcode.build.settings    FRAMEWORK_SEARCH_PATHS=${frameworks_dir}

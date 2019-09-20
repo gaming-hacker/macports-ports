@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 # vim: set fileencoding=utf-8 tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem          1.0
@@ -34,13 +34,13 @@ distfiles           ${prog}:prog            \
                     ${appbundles}:appbundles
 
 checksums           ${prog} \
-                    md5		4274dee70d9633304194a904b2573489 \
-                    sha1	83bc2f57e6ece9ce19e3449cce075ef246a9f4c2 \
-                    rmd160	0bbf88e7c4614ac757bebbc1089804bea088d181 \
+md5		4274dee70d9633304194a904b2573489 \
+sha1	83bc2f57e6ece9ce19e3449cce075ef246a9f4c2 \
+rmd160	0bbf88e7c4614ac757bebbc1089804bea088d181 \
                     ${appbundles} \
-                    md5		b71f77851f4204b984b80e57c4ad7e65 \
-                    sha1	4798b1ae8a56275a4c2eb4df54f352c457f1ff0a \
-                    rmd160	f0aa0eea748297f652f08c239fe1922b9f61e31d
+md5		b71f77851f4204b984b80e57c4ad7e65 \
+sha1	4798b1ae8a56275a4c2eb4df54f352c457f1ff0a \
+rmd160	f0aa0eea748297f652f08c239fe1922b9f61e31d
 
 extract.only        ${prog}                                 \
                     ${appbundles}
@@ -102,9 +102,9 @@ variant voyager	                                                    \
     distfiles-append        ${voyager}:voyager
 
     checksums-append        ${voyager} \
-                            md5		fbb227a28045c0bf8165bba86f199ec9 \
-                            sha1	8a51f656a523c5739d82a35ad933f8c448be58e6 \
-                            rmd160	4f7fec5af3b387fd6a7df44ce0a7b019eeb4a253
+md5		fbb227a28045c0bf8165bba86f199ec9 \
+sha1	8a51f656a523c5739d82a35ad933f8c448be58e6 \
+rmd160	4f7fec5af3b387fd6a7df44ce0a7b019eeb4a253
 
     extract.only-append     ${voyager}
 
@@ -149,9 +149,9 @@ variant hpil                                                \
     master_sites-append     http://pagesperso-orange.fr/kdntl/hp41:hpil
 
     checksums-append        ${hpil} \
-                    md5     2bc700c9cb49ec4e0fe0240ab5653688 \
-                    sha1    e77648269e6e8cb04f6b4b275077ed8493b451ae \
-                    rmd160  ec3bea3f6eda7d29a480a880a7875d4e9fc6c8cf
+md5     2bc700c9cb49ec4e0fe0240ab5653688 \
+sha1    e77648269e6e8cb04f6b4b275077ed8493b451ae \
+rmd160  ec3bea3f6eda7d29a480a880a7875d4e9fc6c8cf
 
     patchfiles-delete       patch-src-util.diff
 

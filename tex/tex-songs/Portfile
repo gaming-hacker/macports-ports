@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,7 +17,7 @@ master_sites        sourceforge:songs
 distname            songs-${version}
 
 checksums           rmd160  72d80e1c4e6f1c5594c3c959d10f53615520387d \
-                    sha256  a7b3f4628dbab8513c8ab6ac619ae4aded614023bee81e94c9985b56653b2091
+sha256  a7b3f4628dbab8513c8ab6ac619ae4aded614023bee81e94c9985b56653b2091
 
 depends_lib         bin:tex:texlive
 

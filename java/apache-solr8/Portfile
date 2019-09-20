@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           java 1.0
@@ -24,8 +24,8 @@ extract.suffix      .tgz
 
 master_sites        apache:lucene/solr/${version}/
 checksums           rmd160  11bae37e629335375bea76c76f160964de892beb \
-                    sha256  bfa4b39b236e5d714f4233138b8b5cb7e1996ddc0aad60052ce83c4b7bf33449 \
-                    size    181899182
+sha256  bfa4b39b236e5d714f4233138b8b5cb7e1996ddc0aad60052ce83c4b7bf33449 \
+size    181899182
 
 # JDK port to install if required java not found
 java.fallback       openjdk12

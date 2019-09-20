@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -28,8 +28,8 @@ distname            ${name}${my_version}
 extract.suffix      .tgz
 
 checksums           rmd160  c030640299644c149087eb2c3e2ab7a53df1c5fa \
-                    sha256  f8ec27437d9c75302e192ab68929131a6fd642966fe66178dbe87da6da2b1c79 \
-                    size    23376594
+sha256  f8ec27437d9c75302e192ab68929131a6fd642966fe66178dbe87da6da2b1c79 \
+size    23376594
 
 universal_variant   no
 

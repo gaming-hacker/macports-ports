@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -19,8 +19,8 @@ long_description    multimon-ng is the successor of multimon. \
     DTMF ZVEI1 ZVEI2 ZVEI3 DZVEI PZVEI EEA EIA CCIR MORSE_CW X10
 
 checksums           rmd160  89cc4931978fc6cfcb90b3b8145f046c64e513ac \
-                    sha256  3cdd157b7f38581444c994911813ef27a57aefdc4890d653fe70a84ed54eb099 \
-                    size    2430568
+sha256  3cdd157b7f38581444c994911813ef27a57aefdc4890d653fe70a84ed54eb099 \
+size    2430568
 
 configure.args-append \
     -DPULSE_AUDIO_SUPPORT=0 \

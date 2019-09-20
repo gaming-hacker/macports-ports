@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,7 +24,7 @@ if {$subport eq $name} {
     extract.suffix      .tgz
 
     checksums           rmd160  eb5c1eb1644c2250d6d43358275da5c7741cbc0d \
-                        sha256  d61c97673447c841d773a6806f7bce9a5d669c30aa1fafbb7f9214dcef16a563
+sha256  d61c97673447c841d773a6806f7bce9a5d669c30aa1fafbb7f9214dcef16a563
 
     livecheck.regex     {ZF (2\.\d+\.\d+)}
 }
@@ -39,7 +39,7 @@ subport ZendFramework1 {
     master_sites        https://packages.zendframework.com/releases/ZendFramework-${version}/
 
     checksums           rmd160  7de3101bc67b929a7023274953b0a998b80d924e \
-                        sha256  984396e529a2de11bd29ba9662fbf652a1f1052ed18b69a06fa7602fdce84f83
+sha256  984396e529a2de11bd29ba9662fbf652a1f1052ed18b69a06fa7602fdce84f83
 
     livecheck.regex     {ZF (1\.\d+\.\d+)}
 }

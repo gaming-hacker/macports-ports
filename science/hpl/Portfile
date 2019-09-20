@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -22,8 +22,8 @@ homepage            http://www.netlib.org/benchmark/hpl
 master_sites        ${homepage}
 
 checksums           rmd160  02910b59a5a4378125b508b0a85013c998c35c74 \
-                    sha256  32c5c17d22330e6f2337b681aded51637fb6008d3f0eb7c277b163fadd612830 \
-                    size    660871
+sha256  32c5c17d22330e6f2337b681aded51637fb6008d3f0eb7c277b163fadd612830 \
+size    660871
 
 mpi.setup           require -fortran
 linalg.setup        blas_only

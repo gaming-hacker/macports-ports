@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    gkwebmon
 version                 0.2.1
@@ -15,8 +17,8 @@ platforms               darwin
 master_sites            sourceforge
 
 checksums               md5     22ffd3d96c1a04383daa3ce98d0e1364 \
-                        sha1    f1586c1562172522977cb4ca0fc1097d33d28959 \
-                        rmd160  7112dc753002033e28752752fa6ba350401468b4
+sha1    f1586c1562172522977cb4ca0fc1097d33d28959 \
+rmd160  7112dc753002033e28752752fa6ba350401468b4
 
 extract.suffix		.tgz
 

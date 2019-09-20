@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 
@@ -76,13 +76,13 @@ if {${my_subport} eq ${my_name}} {
     extract.only                ${my_src_distfile}
 
     checksums                   ${my_src_distfile} \
-                                rmd160  613534f9aa4fd779d245f5511731617df4da3bb6 \
-                                sha256  9b7343cec87723177a203e69ad3baf20f49b4e8f03619e366c4bf2705167dfa4 \
-                                size    500742 \
+rmd160  613534f9aa4fd779d245f5511731617df4da3bb6 \
+sha256  9b7343cec87723177a203e69ad3baf20f49b4e8f03619e366c4bf2705167dfa4 \
+size    500742 \
                                 ${my_icons_distfile} \
-                                rmd160  cef6d7d7578464538d0042b0d98379ae7f18fab7 \
-                                sha256  968a0bad51903c9cd3b08476ec5a6572856dc44eedf9ff9b174eb9c59b7b7117 \
-                                size    60373
+rmd160  cef6d7d7578464538d0042b0d98379ae7f18fab7 \
+sha256  968a0bad51903c9cd3b08476ec5a6572856dc44eedf9ff9b174eb9c59b7b7117 \
+size    60373
 
     depends_extract-append      bin:unzip:unzip
 

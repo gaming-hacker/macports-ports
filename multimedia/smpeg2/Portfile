@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		smpeg2
 version		2.0.0
@@ -16,7 +18,7 @@ homepage	http://www.lokigames.com/development/smpeg.php3
 master_sites	http://www.libsdl.org/projects/smpeg/release/
 
 checksums	rmd160 6c175111e38055d62064c6b6453d8c5e64945c09 \
-            sha256 979a65b211744a44fa641a9b6e4d64e64a12ff703ae776bafe3c4c4cd85494b3
+sha256 979a65b211744a44fa641a9b6e4d64e64a12ff703ae776bafe3c4c4cd85494b3
 
 depends_build	port:pkgconfig
 depends_lib	port:libsdl2

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -34,8 +34,8 @@ configure.dir       ${workpath}/build
 build.dir           ${configure.dir}
 
 checksums           rmd160  4c21cad6613772f4104c65ac3d8d9a42e3c4afe1 \
-                    sha256  a5799ff719a510d84d26df4ae7409ae61fe66477e3f1e8820422a9a4727a5be4 \
-                    size    1197397
+sha256  a5799ff719a510d84d26df4ae7409ae61fe66477e3f1e8820422a9a4727a5be4 \
+size    1197397
 
 depends_build       bin:perl:perl5 \
                     port:pkgconfig

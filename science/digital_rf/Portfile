@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -22,8 +22,8 @@ long_description    ${description} The Digital RF project encompasses a standard
                     directory in the source tree.
 
 checksums           rmd160  a8885c5e2976a6f904c59fa4debf4062ae8760c3 \
-                    sha256  c6e62d959b6716c953196dc33f47dc0dd81945379683b206762ca74e0888151e \
-                    size    4537334
+sha256  c6e62d959b6716c953196dc33f47dc0dd81945379683b206762ca74e0888151e \
+size    4537334
 
 configure.ldflags-delete    -L${prefix}/lib
 

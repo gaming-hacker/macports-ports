@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -32,7 +32,7 @@ master_sites        ${homepage}Downloads/
 use_dmg             yes
 
 checksums           sha1    1b49da4f959bbe7b14076a3bad956a4ab35ea0f3 \
-                    rmd160  4eab3d0bb86b4fe742cc991641121f615c0f58dc
+rmd160  4eab3d0bb86b4fe742cc991641121f615c0f58dc
 
 worksrcdir          ${name}-${version}/Source/${name}-${version}
 

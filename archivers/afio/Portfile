@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                afio
 version             2.5.1
@@ -20,7 +22,7 @@ master_sites        http://members.brabant.chello.nl/~k.holtman \
 extract.suffix      .tgz
 
 checksums           sha256  363457a5d6ee422d9b704ef56d26369ca5ee671d7209cfe799cab6e30bf2b99a \
-                    rmd160  923981a9e6766781705ceedecd3d86afa5b9abae
+rmd160  923981a9e6766781705ceedecd3d86afa5b9abae
 
 post-patch {
     reinplace -E "s|/usr(/local)?|\$(DESTDIR)${prefix}|" ${worksrcpath}/Makefile

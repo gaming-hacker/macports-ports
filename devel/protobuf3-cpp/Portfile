@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                1.0
 PortGroup       github    1.0
@@ -8,8 +8,8 @@ github.setup    google protobuf 3.9.1 v
 revision        0
 
 checksums       rmd160  c6e8fb3aaab436d5ebaac3af7751dfd58c821997 \
-                sha256  29a1db3b9bebcf054c540f13400563120ff29fbdd849b2c7a097ffe9d3d508eb \
-                size    4556914
+sha256  29a1db3b9bebcf054c540f13400563120ff29fbdd849b2c7a097ffe9d3d508eb \
+size    4556914
 
 name            protobuf3-cpp
 categories      devel

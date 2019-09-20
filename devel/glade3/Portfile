@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -19,7 +19,7 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  169269ce403fdd538c803d6c73112770cd6731d2 \
-                    sha256  aaeeebffaeb3068fb23757a2eede46adeb4c7cecc740feed7654e065491f5449
+sha256  aaeeebffaeb3068fb23757a2eede46adeb4c7cecc740feed7654e065491f5449
 
 depends_skip_archcheck devhelp
 
@@ -80,7 +80,7 @@ if {![variant_isset quartz]} {
     require_active_variants gtk2 x11
 }
 
-default_variants +python27
+
 if {![variant_isset quartz]} {
     default_variants-append +gnome
 }

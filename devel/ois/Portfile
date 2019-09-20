@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -35,7 +35,7 @@ distname                ${name}_v[strsed ${version} {g/[.]/-/}]
 worksrcdir              ${name}-v[strsed ${version} {g/[.]/-/}]
 
 checksums               md5     9697fead17eac6025151cd2e1fca1518 \
-                        sha1    860f366f87e5103109e72724ce096ce8559c2d3d
+sha1    860f366f87e5103109e72724ce096ce8559c2d3d
 
 patchfiles              patch-Mac_XCode-2_2_OIS_xcodeproj_project.pbxproj.diff \
                         patch-demos_OISConsole.cpp.diff \

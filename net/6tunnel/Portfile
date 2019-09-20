@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,5 +19,5 @@ long_description    6tunnel allows you to use services provided by IPv6 hosts \
 github.tarball_from releases
 
 checksums           rmd160  98d3929b5b132d3003d3ac5a85f94cd417a278cd \
-                    sha256  80dbe91bb92282c3c5e98dec871dcd1738ae824e532f9fd6db0d6ebd469d79bf \
-                    size    96364
+sha256  80dbe91bb92282c3c5e98dec871dcd1738ae824e532f9fd6db0d6ebd469d79bf \
+size    96364

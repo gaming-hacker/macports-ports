@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                espresso
 version             1.0
@@ -19,11 +21,11 @@ master_sites        ftp://ftp.cs.man.ac.uk/pub/amulet/balsa/other-software/:src 
 distfiles           espresso-ab-${version}.tar.gz:src espresso.man.tar.gz:doc
 
 checksums           espresso-ab-${version}.tar.gz \
-                    rmd160  36fa7f468db170d7a32f087401f1a9c819a7d606 \
-                    sha256  788a47b64258b8371e138c267da6043be324d49058462efe2f6870515bfd5479 \
+rmd160  36fa7f468db170d7a32f087401f1a9c819a7d606 \
+sha256  788a47b64258b8371e138c267da6043be324d49058462efe2f6870515bfd5479 \
                     espresso.man.tar.gz \
-                    rmd160  2d2929b156a8e68915fd4b6168455a0a2bb4d171 \
-                    sha256  4f63380e136351a2e229dd5c35ebeaffd14512e856ac317e77d18e67d4f45858
+rmd160  2d2929b156a8e68915fd4b6168455a0a2bb4d171 \
+sha256  4f63380e136351a2e229dd5c35ebeaffd14512e856ac317e77d18e67d4f45858
 
 worksrcdir          espresso-ab-${version}
 

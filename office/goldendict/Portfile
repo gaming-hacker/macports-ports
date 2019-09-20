@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,7 +26,7 @@ long_description    A feature-rich dictionary lookup program, \
 homepage            http://goldendict.org/
 
 checksums           rmd160  ae6b9d180492bb5beca70ae5dc23ea0a407fcb1f \
-                    sha256  e735cd74030b34accf20cece78dd2363222067cd5d8e593f70117751199fd36d
+sha256  e735cd74030b34accf20cece78dd2363222067cd5d8e593f70117751199fd36d
 
 depends_lib-append  port:bzip2 \
                     port:eb \

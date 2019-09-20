@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,7 +22,7 @@ homepage                https://www.coker.com.au/bonnie++/
 master_sites            ${homepage}
 
 checksums               rmd160  227f0e6b8e643bdd120e013c4f9f35426b3a7475 \
-                        sha256  e27b386ae0dc054fa7b530aab6bdead7aea6337a864d1f982bc9ebacb320746e
+sha256  e27b386ae0dc054fa7b530aab6bdead7aea6337a864d1f982bc9ebacb320746e
 
 distname                bonnie++-${version}
 extract.suffix          .tgz

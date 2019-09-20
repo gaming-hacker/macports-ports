@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem              1.0
 PortGroup               cxx11 1.1
 
@@ -8,8 +8,8 @@ revision                1
 set version_dashes      [regsub {^(\d{4})(\d{2})(\d{2})$} ${version} {\1-\2-\3}]
 set svnrev              4829
 checksums               rmd160  cf81887b9bab0d6fd7b4e4ff88e3eb67223d1330 \
-                        sha256  9787f31ef1ec23988f4c551388c6ffffe5b97ca290de6eed1c12dff1737763c8 \
-                        size    261842669
+sha256  9787f31ef1ec23988f4c551388c6ffffe5b97ca290de6eed1c12dff1737763c8 \
+size    261842669
 
 categories              math
 license                 BINARY BSD LGPL-2.1

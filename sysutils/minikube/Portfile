@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ long_description    Minikube runs a single-node Kubernetes cluster inside a VM \
 github.tarball_from releases
 distfiles           minikube-darwin-amd64
 checksums           minikube-darwin-amd64 \
-                    rmd160  e6d52edf00ce2fbf6c7cfa972708b7f6670c8e04 \
-                    sha256  5947abe57fa390fcfd96849ac87fc9319f026d4b13f944b6beecc3615e3668be \
-                    size    56856632
+rmd160  e6d52edf00ce2fbf6c7cfa972708b7f6670c8e04 \
+sha256  5947abe57fa390fcfd96849ac87fc9319f026d4b13f944b6beecc3615e3668be \
+size    56856632
 dist_subdir         ${name}/${version}
 
 depends_lib         path:${prefix}/bin/kubectl:kubectl-1.15
@@ -32,9 +32,9 @@ default_variants    +hyperkit
 variant hyperkit description {Install Hyperkit driver} {
     distfiles-append    docker-machine-driver-hyperkit
     checksums-append    docker-machine-driver-hyperkit \
-                        rmd160  6bed7af10deb12cd1cd5028530acca92234d933a \
-                        sha256  b6a54b465f6e6c709229ce68d95742771c470183e56a52133b875befadd510bb \
-                        size    11313580
+rmd160  6bed7af10deb12cd1cd5028530acca92234d933a \
+sha256  b6a54b465f6e6c709229ce68d95742771c470183e56a52133b875befadd510bb \
+size    11313580
 }
 
 build {

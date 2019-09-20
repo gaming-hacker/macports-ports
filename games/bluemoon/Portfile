@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -34,8 +34,8 @@ master_sites        ${homepage} \
                     sunsite:games/solitaires
 
 checksums           md5     49fba3643c689970939267fc821fedcf \
-                    rmd160  7c5059986ecaf8dfa6698312049e6a05f2bb7154 \
-                    sha256  52aec7ba74d0e811f46de44c30252877b612d780bc531e872357375b54083006
+rmd160  7c5059986ecaf8dfa6698312049e6a05f2bb7154 \
+sha256  52aec7ba74d0e811f46de44c30252877b612d780bc531e872357375b54083006
 
 patch {
     reinplace s|/usr|${prefix}|g ${worksrcpath}/Makefile

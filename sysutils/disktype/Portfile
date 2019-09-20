@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                disktype
 version             9
@@ -16,7 +18,7 @@ homepage            http://disktype.sourceforge.net/
 master_sites        sourceforge:project/disktype/disktype/${version}
 
 checksums           rmd160  d4bc6c2a00225a444fc0707cf5fbd311423509f3 \
-                    sha256  b6701254d88412bc5d2db869037745f65f94b900b59184157d072f35832c1111
+sha256  b6701254d88412bc5d2db869037745f65f94b900b59184157d072f35832c1111
 
 patchfiles          patch-Makefile.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup cmake     1.0
@@ -16,8 +16,8 @@ homepage            https://confluence.ecmwf.int/display/METV/
 master_sites        https://confluence.ecmwf.int/download/attachments/3964985/
 distname            Metview-${version}-Source
 checksums           rmd160  b2f61c2be7c0b6793071d4f249afeee187301620 \
-                    sha256  4bcde38088a2c2dca6a2b50dd3e07bfeddc26333fed7b3fe91d38370e2b94636 \
-                    size    6355558
+sha256  4bcde38088a2c2dca6a2b50dd3e07bfeddc26333fed7b3fe91d38370e2b94636 \
+size    6355558
 long_description \
     Metview is a meteorological workstation application designed to be \
     a complete working environment for both the operational and research meteorologist. \
@@ -26,7 +26,7 @@ long_description \
 fetch.ignore_sslcert    yes
 
 compilers.choose    cxx fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran 
 compilers.enforce_fortran \
                     port:ecCodes
 

@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		muniversal 1.0
 
 name			ucl
@@ -20,8 +22,8 @@ homepage		http://www.oberhumer.com/opensource/ucl/
 master_sites	${homepage}download/
 
 checksums		md5 852bd691d8abc75b52053465846fba34 \
-				sha1 5847003d136fbbca1334dd5de10554c76c755f7c \
-				rmd160 d1b50127d482481c125eabff9a9c157d491c4a6a
+sha1 5847003d136fbbca1334dd5de10554c76c755f7c \
+rmd160 d1b50127d482481c125eabff9a9c157d491c4a6a
 
 configure.args	--enable-shared
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4 1.1
@@ -19,7 +19,7 @@ depends_lib         port:kdelibs4 \
                     port:kdepimlibs4
 
 checksums           rmd160  39344ae0934271669092bc4df826f73c69304360 \
-                    sha256  97838dc3cb07210c96154958237e216ad05cffa334f5e549d8619b4c70961986
+sha256  97838dc3cb07210c96154958237e216ad05cffa334f5e549d8619b4c70961986
 
 patchfiles          workaround-qfontmetrics-bug.patch
 patch.dir           ${workpath}/${distname}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        Source code for pbrt, the renderer described in the seco
                         by Matt Pharr, Wenzel Jakob, and Greg Humphreys.
 
 checksums               rmd160  5640cbb10226d83f34335bcfb3e1592aafcfb6eb \
-                        sha256  ccd8084fff96eaac71a6d24314a391a22fd218d84dea2adaa1c6ccd04968bca3 \
-                        size    14349299
+sha256  ccd8084fff96eaac71a6d24314a391a22fd218d84dea2adaa1c6ccd04968bca3 \
+size    14349299
 
 conflicts               pbrt3
 

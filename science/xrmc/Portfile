@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,7 +26,7 @@ homepage            ${github.homepage}/wiki
 master_sites        http://lvserver.ugent.be/xrmc/files
 
 checksums           rmd160  9bfee4c796043c8dc8b3e7b81d0d8c5827ab412d \
-                    sha256  4995eaaf3b4583d443d0cf2003d73d1855b443938e431a4f758a607f540e026a
+sha256  4995eaaf3b4583d443d0cf2003d73d1855b443938e431a4f758a607f540e026a
 
 depends_build       port:pkgconfig
 

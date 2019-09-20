@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   cmake 1.0
@@ -32,9 +32,9 @@ distfiles           ${gdlsrc}:gdl
 worksrcdir          gdl-${version}
 
 checksums           ${gdlsrc} \
-                    rmd160  1248d6270a9d3fd98a02bc1e53021a30bec3e43c \
-                    sha256  ad5de3fec095a5c58b46338dcc7367d2565c093794ab1bbcf180bba1a712cf14 \
-                    size    4478934
+rmd160  1248d6270a9d3fd98a02bc1e53021a30bec3e43c \
+sha256  ad5de3fec095a5c58b46338dcc7367d2565c093794ab1bbcf180bba1a712cf14 \
+size    4478934
 
 depends_build-append        port:pkgconfig
 depends_lib-append          port:zlib \
@@ -179,8 +179,8 @@ variant gshhs description {build with support for GSHHS} {
     distfiles-append        ${gshhsdata}:gshhs
     checksums-append \
                     ${gshhsdata} \
-                    rmd160  1022a97fa324eaa4e5e4617fea25c8aaf1bec95c \
-                    sha256  28600e8f7a08645aab43079326df6504212ec5ccb2b4bcf3b5f4f12ed60e82bc
+rmd160  1022a97fa324eaa4e5e4617fea25c8aaf1bec95c \
+sha256  28600e8f7a08645aab43079326df6504212ec5ccb2b4bcf3b5f4f12ed60e82bc
     extract.only    ${gdlsrc}
     post-extract {
         system "cd ${workpath}; \

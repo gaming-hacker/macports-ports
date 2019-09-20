@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -18,7 +18,7 @@ homepage            http://librdf.org/rasqal/
 master_sites        http://download.librdf.org/source/
 
 checksums           rmd160  def2b5f5510596a1b2508f19493ecdeed8ef9e47 \
-                    sha256  6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c
+sha256  6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -21,8 +21,8 @@ if {${name} eq ${subport}} {
     version   20180115
     revision  6
     checksums rmd160 5b9614203006aa5ef497caccaa86dab2b40324b4 \
-              sha256 3cdd50bc68a002509bb14d4ab0565736409c171b7fb443694dc2fbcecd6d4227 \
-              size   562474
+sha256 3cdd50bc68a002509bb14d4ab0565736409c171b7fb443694dc2fbcecd6d4227 \
+size   562474
 
     # allow gr-specest to work with both gnuradio and gnuradio-devel ...
 
@@ -48,8 +48,8 @@ if {${name} eq ${subport}} {
     version   20190520-[string range ${github.version} 0 7]
     revision  0
     checksums rmd160 3227c18ada41a7725a8457102a8f31f4052d00b3 \
-              sha256 019a94a44be97e457ec73a4ed4971a1607431494228730ff742099ec306d643f \
-              size   568667
+sha256 019a94a44be97e457ec73a4ed4971a1607431494228730ff742099ec306d643f \
+size   568667
 
     # gr-specest-38 requires gnuradio-next ...
 

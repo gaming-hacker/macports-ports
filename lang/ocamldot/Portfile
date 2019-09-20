@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                ocamldot
 # this version number is just slapped on -- there is none and the project is stale since 2001
@@ -17,8 +19,8 @@ long_description    ${description}
 
 distfiles           ocamldot.tar
 checksums           md5     90c6e541359458d25c1defb225337d75 \
-                    sha1    91858540053f9cf59d410164f65365a6685a1678 \
-                    rmd160  574f4965a9f441008ca5bdab6425ded31a4c986d
+sha1    91858540053f9cf59d410164f65365a6685a1678 \
+rmd160  574f4965a9f441008ca5bdab6425ded31a4c986d
 
 patchfiles          patch-Makefile.diff
 

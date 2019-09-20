@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ homepage            http://www.desy.de/~twhite/crystfel/
 master_sites        ${homepage}
 
 checksums           rmd160  df8dcdabb4fd8deb76ab4e6e96fd663702bfe0d8 \
-                    sha256  31d0aa28c6c7ee550498dd9c3e736a0ac7c8c0c7529bf7bb7ca1c27ba7e9e105
+sha256  31d0aa28c6c7ee550498dd9c3e736a0ac7c8c0c7529bf7bb7ca1c27ba7e9e105
 
 depends_build       port:pkgconfig
 

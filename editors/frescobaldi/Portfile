@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -24,8 +24,8 @@ if {"${name}-devel" ne ${subport}} {
 }
 
 checksums           rmd160  27f121545cc7efe6a2b10fa69490a5714655f729 \
-                    sha256  c3d7faab7b21ddbab98749751a94d0a848138a800b0ae744f0ec94000b459ae4 \
-                    size    4478977
+sha256  c3d7faab7b21ddbab98749751a94d0a848138a800b0ae744f0ec94000b459ae4 \
+size    4478977
 
 subport ${name}-devel {
     PortGroup           active_variants 1.1
@@ -37,8 +37,8 @@ subport ${name}-devel {
     set devel_version   3.0.0
 
     checksums           rmd160  e79fb399116910fe15df5f449b495e7f0ab39165 \
-                        sha256  38e9f0f003316b70a1d11623087bd903d4f600e46930c757cedbf572979434f5 \
-                        size    8501726
+sha256  38e9f0f003316b70a1d11623087bd903d4f600e46930c757cedbf572979434f5 \
+size    8501726
 }
 
 subport ${name}2 {

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        mbkitine gr-tdd 13ae75ea7dd089f7d7082749f7b2ed2a7d771f38
 version             20190521-[string range ${github.version} 0 7]
 checksums           rmd160 c94cb8ed0e0b8601a50db8b3afe0322829216065 \
-                    sha256 33e6fad6c45b136742bc85869364d1acb428fc19934543e8a50c80f1602e3681 \
-                    size   1171149
+sha256 33e6fad6c45b136742bc85869364d1acb428fc19934543e8a50c80f1602e3681 \
+size   1171149
 revision            0
 
 # allow gr-iio to work with both gnuradio and gnuradio-devel ...

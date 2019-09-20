@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -38,7 +38,7 @@ depends_build-append   \
     port:texlive-latex
 
 checksums       rmd160  8b888c589720c081720010a55e48d00e33fe0ad9 \
-                sha256  2c8ee91db7217b5776b1ee5272dd259686f7ba3ec1d25c678f75a6c03fe9ba43
+sha256  2c8ee91db7217b5776b1ee5272dd259686f7ba3ec1d25c678f75a6c03fe9ba43
 
 configure.args  --disable-docs
 configure.perl  ${prefix}/bin/perl

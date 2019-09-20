@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ long_description    JUMAN is ${description}.
 master_sites        http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/juman/
 use_bzip2           yes
 checksums           rmd160  f1b5a96691c4d718d4dd492b6a908c2aaeb72267 \
-                    sha256  64bee311de19e6d9577d007bb55281e44299972637bd8a2a8bc2efbad2f917c6
+sha256  64bee311de19e6d9577d007bb55281e44299972637bd8a2a8bc2efbad2f917c6
 
 post-destroot {
     set docdir ${prefix}/share/doc/${name}

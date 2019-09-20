@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -23,7 +23,7 @@ long_description        Mutation++ is an open-source library originally \
 patchfiles              eigen3-config.diff
 
 checksums               rmd160  477c2da3eb49ab41fc64b3995f059511ed82e421 \
-                        sha256  2efeebf39f4f69cd98fd55c296b07726071ec0bcf7663a87571af8912e591a95 \
-                        size    4020173
+sha256  2efeebf39f4f69cd98fd55c296b07726071ec0bcf7663a87571af8912e591a95 \
+size    4020173
 
 depends_lib-append      path:include/eigen3/Eigen/Eigen:eigen3

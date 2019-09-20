@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -18,8 +18,8 @@ long_description            ${name} converts a dictionary from one file type \
                             to another.
 
 checksums                   md5     ceaf89a8d0f15cf48f77d0c553b6f895 \
-                            sha1    7a38b0268036aa80d7d794080cb9e28d9d45c6f9 \
-                            rmd160  298af2af69600f9e336f3c18785f4d7bfc69c7bd
+sha1    7a38b0268036aa80d7d794080cb9e28d9d45c6f9 \
+rmd160  298af2af69600f9e336f3c18785f4d7bfc69c7bd
 
 depends_lib                 port:libxml2
 

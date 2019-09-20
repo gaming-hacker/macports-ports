@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -18,7 +18,7 @@ homepage                https://g2gl.sourceforge.io
 master_sites            sourceforge:project/g2gl/${name}/${name}-${version}
 
 checksums               sha1    38a6865a7456ef12dda5aae8085f9347e8c77e4c \
-                        rmd160  946a2752a7cfe90c6594953c383d710b2b80561c
+rmd160  946a2752a7cfe90c6594953c383d710b2b80561c
 
 depends_lib             port:gd2 \
                         port:xorg-libX11 \

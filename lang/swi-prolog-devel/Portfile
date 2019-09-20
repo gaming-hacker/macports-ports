@@ -1,4 +1,6 @@
-PortSystem     1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup      cmake 1.1
 
 name           swi-prolog-devel
@@ -29,9 +31,9 @@ master_sites   http://www.swi-prolog.org/download/devel/src/
 dist_subdir    swi-prolog
 
 checksums	\
-	rmd160     460ca7402733e9a0bb37b026c07ccb3078fa113f \
-	sha256     a8ff9e2b67a4e745f759328b76631a5d6608b0825de2336a103ab84aa6de9577 \
-	size       10760459
+rmd160     460ca7402733e9a0bb37b026c07ccb3078fa113f \
+sha256     a8ff9e2b67a4e745f759328b76631a5d6608b0825de2336a103ab84aa6de9577 \
+size       10760459
 
 
 depends_build      \

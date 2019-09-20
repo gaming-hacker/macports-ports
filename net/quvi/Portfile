@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -31,7 +31,7 @@ master_sites        sourceforge:project/quvi/${branch}/quvi
 use_xz              yes
 
 checksums           rmd160  356e20d54c7a9137d032fa98a6e94d326b9bc04a \
-                    sha256  cb3918aad990b9bc49828a5071159646247199a63de0dd4c706adc5c8cd0a2c0
+sha256  cb3918aad990b9bc49828a5071159646247199a63de0dd4c706adc5c8cd0a2c0
 
 configure.cppflags  -I${worksrcpath}/include -I${prefix}/include
 

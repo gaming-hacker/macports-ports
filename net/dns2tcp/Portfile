@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             dns2tcp
 version          0.5.2
@@ -17,6 +19,6 @@ platforms        darwin
 
 master_sites     ${homepage}downloads/
 checksums        rmd160  2838d73800013e7763195e92410a2da2a6336c24 \
-                 sha256  ea9ef59002b86519a43fca320982ae971e2df54cdc54cdb35562c751704278d9
+sha256  ea9ef59002b86519a43fca320982ae971e2df54cdc54cdb35562c751704278d9
 
 configure.args   --mandir=${prefix}/share/man

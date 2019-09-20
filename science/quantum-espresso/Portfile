@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -22,8 +22,8 @@ long_description    An integrated suite of open-source computer codes for electr
 homepage            http://www.quantum-espresso.org
 master_sites        https://gitlab.com/QEF/q-e/-/archive/qe-${version}
 checksums           rmd160  2c2e20c94e3d0a48e1a78509d74efa5b7e0e36c5 \
-                    sha256  4067c8fffa957aabbd5cf2439e2fcb6cf3752325393c67a17d99fd09edf8689c \
-                    size    86418701
+sha256  4067c8fffa957aabbd5cf2439e2fcb6cf3752325393c67a17d99fd09edf8689c \
+size    86418701
 
 depends_lib-append  port:fftw-3
 
@@ -39,7 +39,7 @@ patchfiles          \
 
 compilers.choose    cc fc
 # g95 is not compatible with OpenMP
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran 
 
 configure.optflags  -O3
 

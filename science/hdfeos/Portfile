@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -23,8 +23,8 @@ worksrcdir          ${name}
 extract.suffix      .tar.Z
 fetch.use_epsv      no
 checksums           rmd160  6b3556a601d7b417b4b694fc66c36c87ab2e4597 \
-                    sha256  cb0f900d2732ab01e51284d6c9e90d0e852d61bba9bce3b43af0430ab5414903 \
-                    size    7699996
+sha256  cb0f900d2732ab01e51284d6c9e90d0e852d61bba9bce3b43af0430ab5414903 \
+size    7699996
 configure.args      --with-hdf4=${prefix} \
                     --with-jpeg=${prefix} \
                     --with-zlib=${prefix} \

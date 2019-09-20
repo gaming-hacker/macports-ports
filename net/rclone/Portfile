@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -16,9 +16,9 @@ long_description \
 license             MIT
 
 checksums \
-    rmd160  2e26d81d709f4c86916645e99c7961ff0181a0b5 \
-    sha256  9da313157d0a7629af890f8eb45388bdf4a4391d5123f3bd3a752153d8c91167 \
-    size    18201462
+rmd160  2e26d81d709f4c86916645e99c7961ff0181a0b5 \
+sha256  9da313157d0a7629af890f8eb45388bdf4a4391d5123f3bd3a752153d8c91167 \
+size    18201462
 
 platforms           darwin
 

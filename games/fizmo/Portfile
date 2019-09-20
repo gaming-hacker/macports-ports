@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ homepage            https://fizmo.spellbreaker.org/
 master_sites        ${homepage}source/
 
 checksums           rmd160 f3088db9395308dfe1c6565c248746d9a856d22a \
-                    sha256 1c259a29b21c9f401c12fc24d555aca4f4ff171873be56fb44c0c9402c61beaa
+sha256 1c259a29b21c9f401c12fc24d555aca4f4ff171873be56fb44c0c9402c61beaa
 
 depends_build       port:pkgconfig
 

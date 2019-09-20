@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup        github 1.0
@@ -21,7 +21,7 @@ long_description This is a major mode for editing files in the YAML \
                  very similar to that of python-mode. 
 
 checksums        rmd160  c1e819729e41426eb0c0716b0175b84c0de4358f \
-                 sha256  05494824f259b800004c840ac5b3f4b281e7eb3a9ca6a2634d95876b5cec020e
+sha256  05494824f259b800004c840ac5b3f4b281e7eb3a9ca6a2634d95876b5cec020e
 
 depends_lib      port:emacs
 

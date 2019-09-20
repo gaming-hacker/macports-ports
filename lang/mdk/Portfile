@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                mdk
 version             1.2.10
 revision            1
 checksums           rmd160  07751af84c4931f09b311b4788637b6ced6b9a7e \
-                    sha256  b0f4323a607a3346769499b00fdd6d4748af5a61dd8a24511867ef5d96c08ce7 \
-                    size    1175425
+sha256  b0f4323a607a3346769499b00fdd6d4748af5a61dd8a24511867ef5d96c08ce7 \
+size    1175425
 
 categories          lang
 license             GPL-3

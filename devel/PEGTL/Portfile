@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        The Parsing Expression Grammar Template Library (PEGTL) 
                         for creating parsers according to a Parsing Expression Grammar (PEG).
 
 checksums               rmd160  7012858119d98172ea0a7134ead67ef30818c727 \
-                        sha256  10168fab24d187ca1cbc835d44b0e0c6330d65a4c299167ecbb7e12c1fbdc0f1 \
-                        size    206319
+sha256  10168fab24d187ca1cbc835d44b0e0c6330d65a4c299167ecbb7e12c1fbdc0f1 \
+size    206319
 
 configure.args-append   -DPEGTL_BUILD_TESTS=OFF \
                         -DPEGTL_BUILD_EXAMPLES=OFF \

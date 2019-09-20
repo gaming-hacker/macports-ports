@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,7 +19,7 @@ long_description        boxes is a text filter which can draw various \
 homepage                http://boxes.thomasjensen.com
 
 checksums               rmd160  f175439db5e62f348321790b53e67b3b075aef11 \
-                        sha256  13af290ceab5eccfc54f9e230a70c8f2a1ade3fbe64b8e59a60f52e0cf5877f1
+sha256  13af290ceab5eccfc54f9e230a70c8f2a1ade3fbe64b8e59a60f52e0cf5877f1
 
 depends_build-append    port:bison port:cctools port:flex
 

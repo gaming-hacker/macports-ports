@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,4 +12,4 @@ description         PEAR Mail_Mbox package
 long_description    ${description}
 
 checksums           rmd160  7d206f867843b1bbc77122012cfe4e9db2fac182 \
-                    sha256  1e3a6cc0f7665e090c26b9ad4aca9fa6a24b248347dc6982991bfcb27a4a12eb
+sha256  1e3a6cc0f7665e090c26b9ad4aca9fa6a24b248347dc6982991bfcb27a4a12eb

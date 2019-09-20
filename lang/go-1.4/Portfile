@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,7 +29,7 @@ distfiles           go${version}.src.tar.gz
 worksrcdir          go
 
 checksums           rmd160  b1fbb2805a777c8107e7c946f36a881303ac5e35 \
-                    sha256  9947fc705b0b841b5938c48b22dc33e9647ec0752bae66e50278df4f23f64959
+sha256  9947fc705b0b841b5938c48b22dc33e9647ec0752bae66e50278df4f23f64959
 
 set GOROOT          ${worksrcpath}
 set GOROOT_FINAL    ${prefix}/lib/${name}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -18,7 +18,7 @@ set branch              [join [lrange [split ${version} .] 0 1] .]
 master_sites            sourceforge:project/irrlicht/Irrlicht%20SDK/${branch}/${version}/
 
 checksums               sha256  f42b280bc608e545b820206fe2a999c55f290de5c7509a02bdbeeccc1bf9e433 \
-                        rmd160  275eb79193a330b3924166e9cac8d74d37990256
+rmd160  275eb79193a330b3924166e9cac8d74d37990256
 
 use_zip                 yes
 

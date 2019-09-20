@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       xcode 1.0
@@ -7,8 +7,8 @@ PortGroup       github 1.0
 
 github.setup    ridiculousfish HexFiend 2.9.0 v
 checksums       rmd160  ba4276249a262c1b808baafe3aa580ecfa75f224 \
-                sha256  158d398c7f723a1b1e622cabac7dd80b5556a64c8b649ab88e9989f45d2a39cc \
-                size    3474321
+sha256  158d398c7f723a1b1e622cabac7dd80b5556a64c8b649ab88e9989f45d2a39cc \
+size    3474321
 
 epoch           1
 categories      editors aqua

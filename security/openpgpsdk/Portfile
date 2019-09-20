@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                openpgpsdk
 version             0.9
@@ -18,8 +20,8 @@ master_sites        ${homepage}downloads/
 extract.suffix      .tgz
 
 checksums           md5     a2fe87ee864e6bcc0d5ea3db20e0f57a \
-                    sha1    faa2eb844da0f1689dee29c3220364545ca7746b \
-                    rmd160  9260e464f8f9b385d0cc8348d20e1c264856cee3
+sha1    faa2eb844da0f1689dee29c3220364545ca7746b \
+rmd160  9260e464f8f9b385d0cc8348d20e1c264856cee3
 
 depends_build       bin:perl:perl5 path:bin/gpg:gnupg2
 

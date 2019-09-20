@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -20,8 +20,8 @@ homepage            http://www.clearsilver.net
 master_sites        ${homepage}/downloads
 
 checksums           rmd160  bd5c616f326b544df8a74eec71a98a474b408249 \
-                    sha256  1e9da038deafddd3d0c1c510626c28be5a0f4f17b9091d577fd30e7c5ba88680 \
-                    size    439190
+sha256  1e9da038deafddd3d0c1c510626c28be5a0f4f17b9091d577fd30e7c5ba88680 \
+size    439190
 
 patchfiles          patch-rules.mk.in.diff \
                     patch-cgi__cgi.c \
@@ -40,7 +40,7 @@ patchfiles          patch-rules.mk.in.diff \
                     patch-util__ulist.c \
                     patch-util__ulocks.c
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_lib         port:gettext \
                     port:perl${perl5.major} \

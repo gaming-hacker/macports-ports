@@ -1,4 +1,6 @@
-PortSystem       1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup        github 1.0
 
 github.setup     rene0 bf2c 1.3.1
@@ -14,7 +16,7 @@ long_description \
 homepage         http://rene-ladan.nl/bf2c/
 platforms        darwin
 checksums        rmd160 cb8b19c11c9e420977043337393825329f229110 \
-                 sha256 7a67397874f5229b8a1dbf784c7082a90da552d08bd2d471a7febc25960b44e8
+sha256 7a67397874f5229b8a1dbf784c7082a90da552d08bd2d471a7febc25960b44e8
 
 patchfiles       Makefile.patch
 

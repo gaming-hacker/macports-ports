@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -17,8 +17,8 @@ github.setup        lxqt qterminal 70a06fd22b1f5a6a4d95af3c86207669fdd0314f
 version             20180724
 revision            0
 checksums           rmd160  4cb5274aa554a537e52aa2bacde4abc55df2ffa9 \
-                    sha256  eee878d39e76de275c23e1b8314dc36e548ddea1c1a3ca21d2e415cb24fd89c4 \
-                    size    250355
+sha256  eee878d39e76de275c23e1b8314dc36e548ddea1c1a3ca21d2e415cb24fd89c4 \
+size    250355
 
 depends_build-append \
                     port:lxqt-build-tools-devel

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		bakery
 version		2.6.3
@@ -14,8 +16,8 @@ homepage	http://bakery.sf.net
 master_sites    gnome:sources/${name}/${branch}/
 
 checksums       md5     49d28fecf13252f4f2899461505e56e5 \
-                sha1    a379f36983b203c3759a05d49253fbe2c4d2bd60 \
-                rmd160  41089a0c9664933a9d67f97cf1d05d70d4038961
+sha1    a379f36983b203c3759a05d49253fbe2c4d2bd60 \
+rmd160  41089a0c9664933a9d67f97cf1d05d70d4038961
 
 depends_build   port:pkgconfig \
                 port:intltool

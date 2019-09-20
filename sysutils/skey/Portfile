@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,8 +17,8 @@ homepage            https://en.wikipedia.org/wiki/S/KEY
 master_sites        gentoo
 use_bzip2           yes
 checksums           md5     af816298e3a0bc722380d0fe480189d9 \
-                    sha1    d55fb286098900cdf3eb6b174a720a06c722312a \
-                    rmd160  33d97cbcd6dbc91bdca5b27056d51d1f5d06b68d
+sha1    d55fb286098900cdf3eb6b174a720a06c722312a \
+rmd160  33d97cbcd6dbc91bdca5b27056d51d1f5d06b68d
 
 patchfiles          patch-no-defined.diff \
                     patch-fix-manpage-name.diff

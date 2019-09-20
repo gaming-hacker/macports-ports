@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name                    jgoodies-common
 version                 1.4.0
 categories              java
@@ -13,7 +15,7 @@ homepage                http://www.jgoodies.com/downloads/libraries.html
 master_sites            http://www.jgoodies.com/download/libraries/common/
 distname                ${name}-1_4_0
 checksums               sha1 f3e8f55997a6ac9c1130590e7a23125f0dbc8d77 \
-                        sha256 3653468448825fb47c926c0729b49bfa693fe9d64b518b5f608a1c2e594c5569
+sha256 3653468448825fb47c926c0729b49bfa693fe9d64b518b5f608a1c2e594c5569
 use_zip                 yes
 
 depends_lib             bin:java:kaffe

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -16,8 +16,8 @@ platforms           darwin
 github.setup analogdevicesinc libad9361-iio e7bb5cd449716cbe288c3ac0a9aabf2a5c5c69c1
 version   20190224
 checksums rmd160 e508357206658f9ce68aa0a6b1a64532778b0a9e \
-          sha256 b50e8b96aff74e36cc8b163f4ab5796fc86620b4ba891a13a1e4a9fa12a33ed5 \
-          size   168187
+sha256 b50e8b96aff74e36cc8b163f4ab5796fc86620b4ba891a13a1e4a9fa12a33ed5 \
+size   168187
 revision  0
 
 # patch to fix install IIO header inclusion

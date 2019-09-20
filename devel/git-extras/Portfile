@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -16,8 +16,8 @@ long_description        \
 license                 MIT
 
 checksums           rmd160  05176839a54523ac48cdda010ef5eb95233b1ce0 \
-                    sha256  3842fd8b88a802195fb4cd499c5668c1d6b9ff6f24362264613426040c034d77 \
-                    size    139283
+sha256  3842fd8b88a802195fb4cd499c5668c1d6b9ff6f24362264613426040c034d77 \
+size    139283
 
 use_configure           no
 

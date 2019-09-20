@@ -1,4 +1,6 @@
-PortSystem    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup     python 1.0
 
 name          bzr-stats
@@ -16,10 +18,10 @@ homepage      http://launchpad.net/${name}/
 master_sites  ${homepage}trunk/${version}/+download/
 
 checksums     md5     3f2d977bd3dda53c5f06ba3c8f6333c2 \
-              sha1    406d60ee0e0bc35b392b651a673fa740ce8adbc2 \
-              sha256  963989be91c4b87749b186043ffad7c22362e10bf5ee175cc267bf47877608d9
+sha1    406d60ee0e0bc35b392b651a673fa740ce8adbc2 \
+sha256  963989be91c4b87749b186043ffad7c22362e10bf5ee175cc267bf47877608d9
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append  port:bzr
 

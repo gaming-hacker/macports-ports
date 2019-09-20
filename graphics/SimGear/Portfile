@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			SimGear
 version			1.0.0
@@ -15,8 +17,8 @@ long_description	SimGear is a set of open-source libraries designed to be \
 homepage		http://www.simgear.org/
 master_sites	ftp://ftp.simgear.org/pub/simgear/Source/
 checksums		md5 6d90c1b9e6fdd3d7a4a39bef027bfd10 \
-				sha1 cad6cc8a205005731633d8dec994cfa299f90e8a \
-				rmd160 62f260d55d621221076fafb703593f6c4e3c9d53
+sha1 cad6cc8a205005731633d8dec994cfa299f90e8a \
+rmd160 62f260d55d621221076fafb703593f6c4e3c9d53
 
 patchfiles		patch-configure
 

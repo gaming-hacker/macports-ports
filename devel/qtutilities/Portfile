@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ if {${subport} eq ${name}} {
     github.setup        Martchus qtutilities 6.0.0 v
     revision            0
     checksums           rmd160  5cc35d52b3dab3f03dd80a23eea0b14b137fdbd4 \
-                        sha256  fca8352d43a689264574daebcd4d59d6f296112e16122e5509fbe46ed3976692 \
-                        size    99292
+sha256  fca8352d43a689264574daebcd4d59d6f296112e16122e5509fbe46ed3976692 \
+size    99292
 
     depends_build-append \
                         port:cpp-utilities
@@ -36,8 +36,8 @@ if {${subport} eq ${name}} {
     version             20190821
     revision            0
     checksums           rmd160  717402ec2dac5495a21b85581327d826f5dc738e \
-                        sha256  b20f37c788c05803676ba05b48ff71f57d4f18b5504c0708a4e152bb7562b72a \
-                        size    99301
+sha256  b20f37c788c05803676ba05b48ff71f57d4f18b5504c0708a4e152bb7562b72a \
+size    99301
 
     depends_build-append \
                         port:cpp-utilities-devel

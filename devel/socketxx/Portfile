@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -24,8 +24,8 @@ distname                gdcm-${gdcm_version}
 dist_subdir             gdcm
 
 checksums               rmd160  0dd7e5458ee9747a8e310b8df44cbf974611a8be \
-                        sha256  4bd0caa18632d3af5cb672cf9b7051cd9ef5ba42eca3d31412d3c8a3166a0a27 \
-                        size    3857842
+sha256  4bd0caa18632d3af5cb672cf9b7051cd9ef5ba42eca3d31412d3c8a3166a0a27 \
+size    3857842
 
 worksrcdir              gdcm-${gdcm_version}/Utilities/socketxx
 

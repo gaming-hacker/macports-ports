@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description \
     interface with USB and Bluetooth HID-Class devices.
 
 checksums           rmd160  aa84a33aa09fb4b82f59e2e40d58c80ac37a5bfc \
-                    sha256  32ea444bdd6c6a8a940bfa3287a2dc8c291a141fdc78cd638b37b546b44d95be \
-                    size    103865
+sha256  32ea444bdd6c6a8a940bfa3287a2dc8c291a141fdc78cd638b37b546b44d95be \
+size    103865
 
 use_autoreconf yes
 

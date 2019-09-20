@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -20,8 +20,8 @@ homepage            http://mediatomb.cc/
 master_sites        sourceforge
 
 checksums           md5     e927dd5dc52d3cfcebd8ca1af6f0d3c2 \
-                    sha1    86e880584cc9c8aaf3926d56048510d1d06e76b4 \
-                    rmd160  ecb61ca2483f76421beef1036ac442b8f805fa96
+sha1    86e880584cc9c8aaf3926d56048510d1d06e76b4 \
+rmd160  ecb61ca2483f76421beef1036ac442b8f805fa96
 
 depends_lib         port:libiconv port:zlib port:spidermonkey \
                     path:lib/libssl.dylib:openssl \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       conflicts_build 1.0
@@ -36,7 +36,7 @@ depends_lib-append \
                 port:zlib
 
 checksums       rmd160  34cbbe98e7a371467b115b18586baf299340d1b8 \
-                sha256  43e461a625acdefa59bf58cc9d10aebda9eba920dfbe800fc77e6dcbf1eff989
+sha256  43e461a625acdefa59bf58cc9d10aebda9eba920dfbe800fc77e6dcbf1eff989
 
 patchfiles      patch-libstreamanalyzer-plugins-endplugins-ffmpegendanalyzer.cpp.diff \
                 patch-strigidaemon-bin-daemon-xesam-xesamsearch.h.diff \

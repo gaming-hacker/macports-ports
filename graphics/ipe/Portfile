@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                          1.0
 PortGroup               cxx11                       1.1
@@ -25,8 +25,8 @@ distname                ${name}-${version}-src
 worksrcdir              ${name}-${version}/src
 
 checksums               rmd160  eaa2b9fc1a923a78b14e1c1c27f8ffc139febe0e \
-                        sha256  a22dcae9cb660f466678a6b568e9fed1b12a3830e49465594d65fc789b0ba725 \
-                        size    1950071
+sha256  a22dcae9cb660f466678a6b568e9fed1b12a3830e49465594d65fc789b0ba725 \
+size    1950071
 
 depends_build-append    port:pkgconfig
 

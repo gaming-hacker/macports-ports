@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -28,9 +28,9 @@ if {${subport} eq ${name}} {
     livecheck.regex     {Eigen (\d+(\.\d+)+) released}
 
     checksums \
-        rmd160  3330627708f54055a282ccfbae395f2b2f0885e9 \
-        sha256  9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce \
-        size    1665168
+rmd160  3330627708f54055a282ccfbae395f2b2f0885e9 \
+sha256  9f13cf90dedbe3e52a19f43000d71fdf72e986beb9a5436dddcd61ff9d77a3ce \
+size    1665168
 }
 
 subport eigen3-devel {
@@ -49,9 +49,9 @@ subport eigen3-devel {
     # development branch. New epoch to catch as update.
     epoch               3
     checksums \
-        rmd160  176d694460a145c6cc577dac2feacefa7a5e9d95 \
-        sha256  a295f76f2bd53a69ddbbf1a37b707bedb2a426a05c15227042df34023856a039 \
-        size    1665262
+rmd160  176d694460a145c6cc577dac2feacefa7a5e9d95 \
+sha256  a295f76f2bd53a69ddbbf1a37b707bedb2a426a05c15227042df34023856a039 \
+size    1665262
 }
 
 homepage            http://eigen.tuxfamily.org/

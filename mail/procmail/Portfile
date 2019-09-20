@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -61,8 +61,8 @@ master_sites        ftp://ftp.procmail.org/pub/procmail/ \
                     ftp://ftp.mirror.ac.uk/sites/ftp.procmail.org/pub/procmail/
 
 checksums           md5     1678ea99b973eb77eda4ecf6acae53f1 \
-                    sha1    cd4e44c15559816453fd60349e5a32289f6f2965 \
-                    rmd160  e609ec94ea9ab3b93629c62b3e29add497806483
+sha1    cd4e44c15559816453fd60349e5a32289f6f2965 \
+rmd160  e609ec94ea9ab3b93629c62b3e29add497806483
 
 post-extract {
     move ${worksrcpath}/INSTALL ${worksrcpath}/INSTALL.README

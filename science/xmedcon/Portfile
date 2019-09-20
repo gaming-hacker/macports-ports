@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ platforms           darwin
 master_sites        sourceforge:project/${name}/XMedCon-Source/${version}
 
 checksums           rmd160  7d413426c20b1e0ef09b5b4846b289af1c71fb0e \
-                    sha256  75a1623714745efe03a8abd654f0715d56c5497f9b494f3e1e74cb52274f64d8 \
-                    size    836840
+sha256  75a1623714745efe03a8abd654f0715d56c5497f9b494f3e1e74cb52274f64d8 \
+size    836840
 
 use_parallel_build  yes
 

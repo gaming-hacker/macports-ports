@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name        packetforward
 version     0.8.1
@@ -15,8 +17,8 @@ long_description \
 homepage    http://www.holdorf.dk/software/downloads/
 master_sites    ${homepage}
 checksums   md5 686e70d857d9f0f34f20ed4205912da5 \
-            sha1 c3faad544315fe9a69725ec119cc1e1749920fff \
-            rmd160 fd27e891346b386b0785d840924552280bcba8ae
+sha1 c3faad544315fe9a69725ec119cc1e1749920fff \
+rmd160 fd27e891346b386b0785d840924552280bcba8ae
 depends_lib port:libpcap port:libnet
 worksrcdir  ${name}
 patchfiles  patch-Makefile.diff

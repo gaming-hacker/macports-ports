@@ -1,9 +1,11 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup       hunspelldict 1.0
 
 hunspelldict.setup gu_IN 2006-10-15 {Gujarati (India)} ooo
 maintainers     nomaintainer
 
 checksums       md5     30b8978dad3daef98e1046c197f4cd1c \
-                sha1    34226be6f463319aed02b67c46122718436372b2 \
-                rmd160  af9b909b9522c27ef04149056fbbb6c04a7b2cb6
+sha1    34226be6f463319aed02b67c46122718436372b2 \
+rmd160  af9b909b9522c27ef04149056fbbb6c04a7b2cb6

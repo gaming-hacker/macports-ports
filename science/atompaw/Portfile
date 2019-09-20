@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -28,8 +28,8 @@ master_sites        http://users.wfu.edu/natalie/papers/pwpaw
 homepage            ${master_sites}/man.html
 
 checksums           rmd160  b9d47bf772f15c67f0ca501bffe07439cbd24c07 \
-                    sha256  b458b33b547902195b85d19c0e2c6e6582b8013a6e90cc0cd352d5e09adbb283 \
-                    size    5642872
+sha256  b458b33b547902195b85d19c0e2c6e6582b8013a6e90cc0cd352d5e09adbb283 \
+size    5642872
 
 compilers.choose    fc
 compilers.setup     require_fortran

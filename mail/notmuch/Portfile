@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -22,8 +22,8 @@ homepage            https://notmuchmail.org
 master_sites        ${homepage}/releases/
 use_xz              yes
 checksums           rmd160  38a88682e2635c4d8af339ac271c6fe39bdeae4b \
-                    sha256  9846fc8e32d415cee41f6644581a4de7b0d2e6bc98e1ba86db918f061fcfe365 \
-                    size    660352
+sha256  9846fc8e32d415cee41f6644581a4de7b0d2e6bc98e1ba86db918f061fcfe365 \
+size    660352
 
 depends_build       port:pkgconfig \
                     port:python37 \

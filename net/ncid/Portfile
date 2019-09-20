@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -36,7 +36,7 @@ long_description \
     to each connected client.
 
 checksums               rmd160  6c19cb0c4d8a0cc4d24f549f0232f1f47c79c490 \
-                        sha256  e60bfa7b6f628648239b4a2d1c128ebc7122b4356391ba153e7a3f076fa89c02
+sha256  e60bfa7b6f628648239b4a2d1c128ebc7122b4356391ba153e7a3f076fa89c02
 
 depends_lib \
     port:tcl \

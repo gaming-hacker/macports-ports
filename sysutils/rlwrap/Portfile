@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,8 +17,8 @@ long_description        rlwrap is a 'readline wrapper' that uses the GNU \
 github.tarball_from     releases
 
 checksums               rmd160  8c122eb2acb8963132be744aae0f6d416169877e \
-                        sha256  8e86d0b7882d9b8a73d229897a90edc207b1ae7fa0899dca8ee01c31a93feb2f \
-                        size    313139
+sha256  8e86d0b7882d9b8a73d229897a90edc207b1ae7fa0899dca8ee01c31a93feb2f \
+size    313139
 
 depends_lib             port:readline port:ncurses
 

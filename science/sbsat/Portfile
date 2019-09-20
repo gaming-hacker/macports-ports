@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ platforms           freebsd darwin
 
 master_sites        http://www.cs.uc.edu/~weaversa/SBSAT_files/
 checksums           rmd160 0ef8e2ee04d54b71fe837407ba3f771cca381636 \
-                    sha256  deeddec6495a8065c28f4bf29823d5e8b702688e61e777cc281cead3881b1f52
+sha256  deeddec6495a8065c28f4bf29823d5e8b702688e61e777cc281cead3881b1f52
 
 variant jeremy description {Enable Jeremy's modifications} {
     depends_run     path:bin/python:python27

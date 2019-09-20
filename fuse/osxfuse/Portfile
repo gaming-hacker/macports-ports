@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -80,33 +80,33 @@ if { $use_signed_kext } {
 }
 
 checksums           osxfuse-48bc246.tar.gz \
-                    rmd160  e36ee956945058e54573eb7bd705664beac87ccf \
-                    sha256  cc810302c14e1e06808a95647fffd2e0655b201ba3e14b390059d5d150c164d7 \
-                    size    32351 \
+rmd160  e36ee956945058e54573eb7bd705664beac87ccf \
+sha256  cc810302c14e1e06808a95647fffd2e0655b201ba3e14b390059d5d150c164d7 \
+size    32351 \
                     kext-416c143.tar.gz \
-                    rmd160  05417d7d42aec901e1f93f764514460b477e4492 \
-                    sha256  011b03b8819cdc467ef923a2dc97feae7915a2db77da7d6195c2fc98e6045f42 \
-                    size    119375 \
+rmd160  05417d7d42aec901e1f93f764514460b477e4492 \
+sha256  011b03b8819cdc467ef923a2dc97feae7915a2db77da7d6195c2fc98e6045f42 \
+size    119375 \
                     framework-8b79906.tar.gz \
-                    rmd160  d3ad907fc8ed42fb7ca5cdf08ceb8aa09ba1ec74 \
-                    sha256  f08a2e063aa6b3299e4edc4cd898a557c20b6d6c85eb26cd489eb6a642d682e6 \
-                    size    35758 \
+rmd160  d3ad907fc8ed42fb7ca5cdf08ceb8aa09ba1ec74 \
+sha256  f08a2e063aa6b3299e4edc4cd898a557c20b6d6c85eb26cd489eb6a642d682e6 \
+size    35758 \
                     prefpane-095ba9c.tar.gz \
-                    rmd160  c7794cd3d644cf1f036b248d21a83901d93187ca \
-                    sha256  2426c4669aeb1c1179e5e89af46f2d9a30743f6929419c6414c7eeb8b3212fae \
-                    size    5346030 \
+rmd160  c7794cd3d644cf1f036b248d21a83901d93187ca \
+sha256  2426c4669aeb1c1179e5e89af46f2d9a30743f6929419c6414c7eeb8b3212fae \
+size    5346030 \
                     fuse-1a1977a.tar.gz \
-                    rmd160  26735fb56773d142f1e9a9a0fed3e64ec1fe6cdd \
-                    sha256  562f92a9a2b1acad725d8ea86494e53ed4f8bf48cf2664f964d069552b236e97 \
-                    size    231739 \
+rmd160  26735fb56773d142f1e9a9a0fed3e64ec1fe6cdd \
+sha256  562f92a9a2b1acad725d8ea86494e53ed4f8bf48cf2664f964d069552b236e97 \
+size    231739 \
                     support-2cdc560.tar.gz \
-                    rmd160  096fc6f329f626ca63d9ec5901004173357327bd \
-                    sha256  1c65b389628d5a675d700330143c55c60854faafd791a0743a05cf310721fcf8 \
-                    size    3391234 \
+rmd160  096fc6f329f626ca63d9ec5901004173357327bd \
+sha256  1c65b389628d5a675d700330143c55c60854faafd791a0743a05cf310721fcf8 \
+size    3391234 \
                     osxfuse-3.8.3.dmg \
-                    rmd160  4c26f209dd60329ebe97a0f4c65b374181142584 \
-                    sha256  87e507c44c19689beefa3d47dd00ba953254d9e616cb633c1b4343407fe99700 \
-                    size    6967386
+rmd160  4c26f209dd60329ebe97a0f4c65b374181142584 \
+sha256  87e507c44c19689beefa3d47dd00ba953254d9e616cb633c1b4343407fe99700 \
+size    6967386
 
 # extract phase will just extract the dmg; post-extract will expand
 # the tarballs

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name			reinteract
@@ -18,7 +20,7 @@ master_sites		http://download.reinteract.org/sources
 use_bzip2		yes
 
 checksums		rmd160  2d86afbf5b7c054181c1eead01bf8f1116cd7a84 \
-			sha256  d405f70863062ba52b9a075c7a50f465c221e1ded184c14fbecb7c8bf038854d
+sha256  d405f70863062ba52b9a075c7a50f465c221e1ded184c14fbecb7c8bf038854d
 
 depends_build		port:pkgconfig
 depends_lib-append		port:py${python.version}-pygtk

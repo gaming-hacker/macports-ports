@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                minimumprofit
 version             3.3.18b
@@ -14,8 +16,8 @@ master_sites        http://www.triptico.com/download/
 
 distname            mp-${version}
 checksums           md5 bfdc05b51bfdbafed892ab678eff8772 \
-                    sha1 5233b6481e654c8a096412ba9dacc7ae7de5900f \
-                    rmd160 37b52db182035243504cd49acd4ee5dc2668e744
+sha1 5233b6481e654c8a096412ba9dacc7ae7de5900f \
+rmd160 37b52db182035243504cd49acd4ee5dc2668e744
 depends_lib         port:gtk2 \
                     port:pcre \
                     port:ncurses

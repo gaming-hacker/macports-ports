@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -18,7 +18,7 @@ master_sites        http://www.etsf.eu/system/files \
                     https://launchpad.net/etsf-io/+milestone/${version}
 
 checksums           rmd160  25d311b2952714639f315ae26dd1c25c84b9c0f0 \
-                    sha1    8b7c7af083946e03f76b68af69c046d3b127494a
+sha1    8b7c7af083946e03f76b68af69c046d3b127494a
 
 compilers.choose    fc
 compilers.setup     require_fortran

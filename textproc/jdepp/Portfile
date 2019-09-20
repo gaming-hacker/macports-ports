@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ license             {GPL-2 LGPL-2.1}
 
 master_sites        ${homepage}
 checksums           ${distname}${extract.suffix} \
-                    rmd160  845584ae822b4ddb0bb439765be7714a97be0ed8 \
-                    sha256  55a1a99b6645c4e01126f931fd72bf308dde96df8319f09e1c7cb9cd1ffdae7f
+rmd160  845584ae822b4ddb0bb439765be7714a97be0ed8 \
+sha256  55a1a99b6645c4e01126f931fd72bf308dde96df8319f09e1c7cb9cd1ffdae7f
 
 depends_lib         port:mecab-base \
                     port:mecab-jumandic-utf8
@@ -52,8 +52,8 @@ variant kyoto_partial conflicts kyoto knbc description {Train a parser with Kyot
     distfiles-append      ${corpus_distfile}:corpus
     master_sites-append   http://nlp.ist.i.kyoto-u.ac.jp/nl-resource/corpus/:corpus
     checksums-append      ${corpus_distfile} \
-                          rmd160  9c8212d939b7112a79aff30ab0880f94c3ee9b48 \
-                          sha256  6fe4f7bac19e192f7545c4de0c765f690a524c7611191e2af9be031d4923871f
+rmd160  9c8212d939b7112a79aff30ab0880f94c3ee9b48 \
+sha256  6fe4f7bac19e192f7545c4de0c765f690a524c7611191e2af9be031d4923871f
 
     configure.args-append --with-corpus=kyoto-partial \
                           --enable-autopos-train=no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -29,16 +29,16 @@ master_sites        gnu:${name} \
 distfiles-append    18:encoding
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  371828d8de1f2f8a77b6c010e12b5ea91d351dd3 \
-                    sha256  1b6922520e6a0ce5e28768d620b0f640a6631397f95ccb043b70b91bb503fa3a \
-                    size    845210 \
+rmd160  371828d8de1f2f8a77b6c010e12b5ea91d351dd3 \
+sha256  1b6922520e6a0ce5e28768d620b0f640a6631397f95ccb043b70b91bb503fa3a \
+size    845210 \
                     18 \
-                    rmd160  bd143058417e1d4c040a2589fdfbf8f9203f0b4c \
-                    sha256  4d4b674a61dab6bac9b4207307c5f020fa670fc3948c39e7ea93c7fb9dfb5174 \
-                    size    54746 \
+rmd160  bd143058417e1d4c040a2589fdfbf8f9203f0b4c \
+sha256  4d4b674a61dab6bac9b4207307c5f020fa670fc3948c39e7ea93c7fb9dfb5174 \
+size    54746 \
                     vproc_priv.h \
-                    rmd160  ea1fb112d58a168c581ee58e761c26f7caed40ec \
-                    sha256  dcd2786d82865fb10542c20e97d7052110f7ca9a551f2ab5628c607f20e2bb2f
+rmd160  ea1fb112d58a168c581ee58e761c26f7caed40ec \
+sha256  dcd2786d82865fb10542c20e97d7052110f7ca9a551f2ab5628c607f20e2bb2f
 
 patchfiles          patch-apple.diff \
                     patch-config.h.in.diff \

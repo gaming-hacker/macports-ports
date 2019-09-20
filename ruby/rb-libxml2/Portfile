@@ -1,4 +1,6 @@
-PortSystem             1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup              ruby 1.0
 PortGroup              github 1.0
 
@@ -15,8 +17,8 @@ long_description       C-language Ruby binding to the Gnome libxml2 \
                        competitive performance across the board.
 
 checksums              md5     8a402ec46a1e0c60036fca2ef0d9ab96 \
-                       sha1    421af6ac090146ed7d9e541c2a83aff85bfeefc4 \
-                       rmd160  551e6795a9c9accd5e7501e056f4c351d20fbdd0
+sha1    421af6ac090146ed7d9e541c2a83aff85bfeefc4 \
+rmd160  551e6795a9c9accd5e7501e056f4c351d20fbdd0
 
 depends_lib-append     port:libxml2 \
                        port:zlib \

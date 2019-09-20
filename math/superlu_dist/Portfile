@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -23,8 +23,8 @@ distname            ${name}_${version}
 worksrcdir          SuperLU_DIST_${version}
 
 checksums           rmd160  e31c99e957570b4d2b60e039e0636282c2545c5e \
-                    sha256  2be9be0fc6985237f13e34017147227d1d3cafa8da345121d6318a2a6ab620f9 \
-                    size    1588028
+sha256  2be9be0fc6985237f13e34017147227d1d3cafa8da345121d6318a2a6ab620f9 \
+size    1588028
 
 mpi.setup           require -fortran
 

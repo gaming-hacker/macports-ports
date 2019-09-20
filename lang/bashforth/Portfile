@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name		bashforth
 version		0.56a
 categories	lang
@@ -16,8 +18,8 @@ platforms	darwin
 
 master_sites	${homepage}/bashforth.versions/
 checksums       md5 8262e2bdf50730aa6652aeee5ce3855f \
-		sha1 61fc03bf98ae241b315fbf55c1fe051bafb559df \
-		rmd160 55dc74de95d96e7e3874b7cb62fe394cbeca0b36
+sha1 61fc03bf98ae241b315fbf55c1fe051bafb559df \
+rmd160 55dc74de95d96e7e3874b7cb62fe394cbeca0b36
 
 use_configure	no
 

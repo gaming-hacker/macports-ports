@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,7 +14,7 @@ description         SAX XML parser
 long_description    LuaExpat is a SAX XML parser based on the Expat library.
 
 checksums           rmd160  0e03db5f71862cf3ebe06b211c5f11341553b3ec \
-                    sha256  948b9b87d432cfc980fae4f1a135b16230bec5dbab99ec16503aca20e4e4e4bd
+sha256  948b9b87d432cfc980fae4f1a135b16230bec5dbab99ec16503aca20e4e4e4bd
 
 depends_lib         port:lua \
                     port:expat

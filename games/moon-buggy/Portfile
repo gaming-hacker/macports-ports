@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -15,7 +15,7 @@ long_description        Moon-buggy is a simple character graphics game, where yo
                         craters there.  Fortunately your car can jump over them!
 
 checksums               rmd160  611ff30285007f605bff38d7507d4ecfcfcf2adc \
-                        sha256  8bebad15d5f8605c7ea07dfcb422416d1e23848d2c71f6e59e81b5f50eca95e9
+sha256  8bebad15d5f8605c7ea07dfcb422416d1e23848d2c71f6e59e81b5f50eca95e9
 
 depends_lib-append      port:ncurses
 

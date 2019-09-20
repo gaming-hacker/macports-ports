@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # This PortGroup sets up default variants for projects that want multiple
 # compilers for providing options for, example, different optimizations. More
@@ -555,7 +555,7 @@ proc compilers.setup {args} {
         }
 
         foreach v $args {
-            # if any negated compiler (e.g. -gcc47) is specified then we are
+            # if any negated compiler (e.g. ) is specified then we are
             # removing from the default, complete list
             set mode add
             if {[string first - $v] == 0} {

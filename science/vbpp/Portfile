@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                vbpp
 version             1.2.0
@@ -15,8 +17,8 @@ homepage            https://web.archive.org/web/20170425040737/http://www.verilo
 master_sites        https://web.archive.org/web/20120205223616/http://www.verilog.net/
 
 checksums           rmd160  177ee8bd4a3ea53f367f307476117de4bb7c1bb9 \
-                    sha256  416c1bf9c4921fcb5fb4a9bef36f5c05e22e41d4099dc67aa9e636faeef78e16 \
-                    size    113047
+sha256  416c1bf9c4921fcb5fb4a9bef36f5c05e22e41d4099dc67aa9e636faeef78e16 \
+size    113047
 
 use_parallel_build  no
 

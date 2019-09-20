@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -10,8 +10,8 @@ github.setup            nextcloud desktop 2.5.1 v
 fetch.type              git
 name                    nextcloud-client
 checksums               rmd160  d593987e1837114843a4234c0eaf81f00cd31064 \
-                        sha256  7938fa4b34ecdd98bd3d940b2b015fb6cdff7cede98f5d0a81ac51ee88fb0770 \
-                        size    18918775
+sha256  7938fa4b34ecdd98bd3d940b2b015fb6cdff7cede98f5d0a81ac51ee88fb0770 \
+size    18918775
 
 categories              www aqua
 maintainers             nomaintainer

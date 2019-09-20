@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  muniversal 1.0
@@ -28,8 +28,8 @@ master_sites    http://download.oracle.com/berkeley-db/
 distname        db-${version}
 
 checksums       md5     f80022099c5742cd179343556179aa8c \
-                sha1    ab36c170dda5b2ceaad3915ced96e41c6b7e493c \
-                rmd160  dd2fcd4c9b857a91e2f491fd4fadb0c51b993a9c
+sha1    ab36c170dda5b2ceaad3915ced96e41c6b7e493c \
+rmd160  dd2fcd4c9b857a91e2f491fd4fadb0c51b993a9c
 
 if {${os.platform} eq "darwin" && ${os.major} < 11 && ${cxx_stdlib} eq "libc++"} {
     # This port is in the dependency chain for clang 3.7 and later

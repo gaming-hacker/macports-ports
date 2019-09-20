@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,8 +18,8 @@ long_description    \
 platforms           darwin
 
 checksums           rmd160  73a2f4bcce0d8bf80f186dddaa5adcdd1e444aba \
-                    sha256  9249950de9f432008bb5810f67f02ffbb77ec7ee1c5f96b6dd38ae11814479b7 \
-                    size    27117
+sha256  9249950de9f432008bb5810f67f02ffbb77ec7ee1c5f96b6dd38ae11814479b7 \
+size    27117
 
 # a fix for case-sensitive filesystems
 # see https://trac.macports.org/ticket/57497

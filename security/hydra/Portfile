@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               old_openssl 1.0
 
 name                    hydra
@@ -22,8 +24,8 @@ homepage                https://github.com/vanhauser-thc/thc-hydra
 master_sites            https://github.com/vanhauser-thc/THC-Archive/raw/master/Tools
 
 checksums               rmd160  f5edc8473889ab90ef971226f4276683b193a466 \
-                        sha256  7293e7c32198219688e5bf5308f7e8eab37ad78d49701c9860a6b22aecda0ab6 \
-                        size    681784
+sha256  7293e7c32198219688e5bf5308f7e8eab37ad78d49701c9860a6b22aecda0ab6 \
+size    681784
 
 openssl.branch          1.0
 

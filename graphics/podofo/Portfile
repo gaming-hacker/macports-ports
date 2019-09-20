@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -22,8 +22,8 @@ long_description    PoDoFo is a library to work with the PDF file format. The Po
                     The parser can also be used to extract information from a PDF file.
 
 checksums           sha256  e9163650955ab8e4b9532e7aa43b841bac45701f7b0f9b793a98c8ca3ef14072 \
-                    rmd160  71764cd85c7e443654689f84dd8c68fccb24e442 \
-                    size    995898
+rmd160  71764cd85c7e443654689f84dd8c68fccb24e442 \
+size    995898
 
 depends_lib         port:zlib \
                     port:freetype \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       muniversal 1.0
@@ -18,8 +18,8 @@ homepage        https://www.freedesktop.org/wiki/Software/dbus/
 master_sites    https://dbus.freedesktop.org/releases/dbus/
 
 checksums       rmd160  fb9c2f01d3068600cb43eae05ccd687878a31e4f \
-                sha256  54a22d2fa42f2eb2a871f32811c6005b531b9613b1b93a0d269b05e7549fec80 \
-                size    2093296
+sha256  54a22d2fa42f2eb2a871f32811c6005b531b9613b1b93a0d269b05e7549fec80 \
+size    2093296
 
 # See r68276
 # For configure

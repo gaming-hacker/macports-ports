@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            erc
 version         5.3
@@ -17,8 +19,8 @@ homepage        https://savannah.gnu.org/projects/${name}
 master_sites    gnu
 
 checksums       md5     ebe35423994702c982bbbcfacd568add \
-                sha1    4dc9b698b9dffbf43771dd8abb4f19ea03ce4e1c \
-                rmd160  40c3b2fc28da1d249b7706daa708c588273f7a5e
+sha1    4dc9b698b9dffbf43771dd8abb4f19ea03ce4e1c \
+rmd160  40c3b2fc28da1d249b7706daa708c588273f7a5e
 
 depends_lib     port:emacs
 

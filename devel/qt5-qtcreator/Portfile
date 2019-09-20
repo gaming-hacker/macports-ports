@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake5 1.0
@@ -22,8 +22,8 @@ distname            qt-creator-opensource-src-${version}
 master_sites        https://download.qt.io/official_releases/qtcreator/[join [lrange [split ${version} .] 0 1] .]/${version}/
 
 checksums           rmd160  b1e8d068d7ef1e9b8b630c84c1d9d9dd54f2fcc2 \
-                    sha256  914844191fc3a2fd58792cfd54aeffb80f0855bcbf6431b37ee3898879e6ab4a \
-                    size    32432457
+sha256  914844191fc3a2fd58792cfd54aeffb80f0855bcbf6431b37ee3898879e6ab4a \
+size    32432457
 
 pre-fetch {
     if {${os.platform} eq "darwin" && ${os.major} < 16} {

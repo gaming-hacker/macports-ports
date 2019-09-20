@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           texlive 1.0
@@ -14,14 +14,14 @@ description         TeX Live: German
 long_description    Support for German.
 
 checksums           texlive-lang-german-50792-run.tar.xz \
-                    rmd160  a68038cf0d24c31ba177f05ab5c1dfb290b46147 \
-                    sha256  c23ad588ec67c4b56dd9c92711662654fcfac6fd499b2d050be0bee1c3f1ea4e \
+rmd160  a68038cf0d24c31ba177f05ab5c1dfb290b46147 \
+sha256  c23ad588ec67c4b56dd9c92711662654fcfac6fd499b2d050be0bee1c3f1ea4e \
                     texlive-lang-german-50792-doc.tar.xz \
-                    rmd160  24df3108764361c1b3adc5bbdddd969aea517fcd \
-                    sha256  5b00261b0016868a911c1bb35dc2e55665e9e070646ec728dbf94526db4b77ed \
+rmd160  24df3108764361c1b3adc5bbdddd969aea517fcd \
+sha256  5b00261b0016868a911c1bb35dc2e55665e9e070646ec728dbf94526db4b77ed \
                     texlive-lang-german-50792-src.tar.xz \
-                    rmd160  dbbb334398dec4936b00b54eed5752ec2c82912f \
-                    sha256  9e2ab9b29755db05744eb0a40e62d515dc3a3c8090317b4501994397ee1ffaea
+rmd160  dbbb334398dec4936b00b54eed5752ec2c82912f \
+sha256  9e2ab9b29755db05744eb0a40e62d515dc3a3c8090317b4501994397ee1ffaea
 
 depends_lib         port:texlive-basic
 

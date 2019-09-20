@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -21,8 +21,8 @@ master_sites        ${homepage}pub/
 distname            rem-${version}
 
 checksums           rmd160  88c0dba6716f448994141138daeb533a958b5b4f \
-                    sha256  417620da3986461598aef327c782db87ec3dd02c534701e68f4c255e54e5272c \
-                    size    41585
+sha256  417620da3986461598aef327c782db87ec3dd02c534701e68f4c255e54e5272c \
+size    41585
 
 depends_lib-append  port:libre \
                     path:lib/libssl.dylib:openssl

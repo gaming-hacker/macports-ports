@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ master_sites        sourceforge:project/chemical-mime/chemical-mime-data/${versi
 use_bzip2           yes
 
 checksums           rmd160  542274f991297e54f7ff881d0b49b8562fdb494c \
-                    sha256  4907cdf60e9edca0a453f6f24e9179ae9da085b67168e932ba44a4280316bff1
+sha256  4907cdf60e9edca0a453f6f24e9179ae9da085b67168e932ba44a4280316bff1
 
 depends_build       port:pkgconfig \
                     port:intltool \

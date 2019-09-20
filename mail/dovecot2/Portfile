@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github                      1.0
@@ -45,8 +45,8 @@ patchfiles          patch-doc-example-config-conf.d-10-master.conf.diff \
                     patch-src-master-master-settings.c.diff
 
 checksums           rmd160  37230c065284899fa107ab1c91831ca154f230ac \
-                    sha256  3b61c128f3ef947f5d3e8b1113c321d0597600a3102a8e5b405484a7c049eb51 \
-                    size    3653354
+sha256  3b61c128f3ef947f5d3e8b1113c321d0597600a3102a8e5b405484a7c049eb51 \
+size    3653354
 
 post-patch {
     reinplace "s|@@default_internal_user@@|${default_internal_user}|g" \

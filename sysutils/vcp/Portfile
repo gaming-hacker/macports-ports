@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -19,8 +19,8 @@ long_description   \
 homepage        http://members.iinet.net.au/~lynx/vcp/
 master_sites    ${homepage}
 checksums       md5    90a47777e6fcf364e2e1fd12e8b67d69 \
-                sha1   ed54932c36e8dbe54c585141a741ba295bd6e267 \
-                rmd160 14c228119457ee67ba1256a7e6f4b607c491f6f1
+sha1   ed54932c36e8dbe54c585141a741ba295bd6e267 \
+rmd160 14c228119457ee67ba1256a7e6f4b607c491f6f1
 use_configure   no
 destroot {
     xinstall ${worksrcpath}/vcp ${destroot}${prefix}/bin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ homepage            http://spivey.oriel.ox.ac.uk/corner/Oxford_Oberon-2_compiler
 master_sites        http://spivey.oriel.ox.ac.uk/wiki/resources/sw/
 
 checksums           sha1    4cc81fa256bd1ed9166b8746f1a52a003e3ed347 \
-                    rmd160  5d2a24f29240b2f59c44d6327795e38e9cc75437
+rmd160  5d2a24f29240b2f59c44d6327795e38e9cc75437
 
 depends_skip_archcheck ocaml
 depends_build          port:ocaml port:pkgconfig

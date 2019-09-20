@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -18,8 +18,8 @@ long_description    Syncthing replaces proprietary sync and cloud services \
 homepage            https://syncthing.net
 
 checksums           rmd160  a80a0c76c595f97c2de312a20b32379e2935476e \
-                    sha256  e3276b5974a92ed2070eeabf15687edaec4c15d5c93dc281822e585eac158a6e \
-                    size    4745209
+sha256  e3276b5974a92ed2070eeabf15687edaec4c15d5c93dc281822e585eac158a6e \
+size    4745209
 
 build.env-append    GO111MODULE=on
 build.cmd           ${go.bin} run build.go

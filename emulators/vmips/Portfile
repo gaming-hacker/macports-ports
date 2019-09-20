@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*-  # vim: set fileencoding=utf-8 tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*-  # vim: set fileencoding=utf-8 tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem				1.0
 
@@ -15,5 +15,5 @@ homepage				http://www.dgate.org/vmips/
 master_sites				sourceforge:project/vmips/vmips/${version}
 
 checksums				rmd160 246072dabad177889548f3d07d0e629394388861 \
-					sha256 cf4108d8d75be50d858a30a322c7a2bdc604e9a57a94d0a60ef7aab58796c1a5
+sha256 cf4108d8d75be50d858a30a322c7a2bdc604e9a57a94d0a60ef7aab58796c1a5
 

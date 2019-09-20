@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           muniversal 1.0
 
 name                libsockets
@@ -15,7 +17,7 @@ homepage            http://www.alhem.net/Sockets/
 master_sites        ${homepage}
 
 checksums           rmd160  9507b1b7e0a4e6a9471c90b2ee8efd73017e58b9 \
-                    sha256  5b88723fe26836fb42dc9d8c974e801fdb7a404c27511247e560455bef0ebc60
+sha256  5b88723fe26836fb42dc9d8c974e801fdb7a404c27511247e560455bef0ebc60
 
 patchfiles          patch-HttpRequest.cpp.diff \
                     patch-Makefile.diff

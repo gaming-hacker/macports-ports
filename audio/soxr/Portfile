@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -28,8 +28,8 @@ long_description    The SoX Resampler library `libsoxr' performs \
 homepage            http://sourceforge.net/projects/soxr/
 
 checksums           rmd160  11aea28f2a944982bcd42b1724150e1bf3d80779 \
-                    sha256  b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889 \
-                    size    94384
+sha256  b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889 \
+size    94384
 
 configure.args-append \
                     -DBUILD_TESTS=no

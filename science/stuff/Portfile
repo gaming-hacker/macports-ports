@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ long_description    Stuff is a program that generates artificial but \
 homepage            http://www.astromatic.net/software/stuff/
 master_sites        http://www.astromatic.net/download/stuff/
 checksums           md5     df7884d80257836f5e40d1b5654ec9b1 \
-                    sha1    53a9c860f1b7a44fec9aacdd8f6d404bf4bcde95 \
-                    rmd160  2ce1674727027deb1e23e4820574ca4e312be9d1
+sha1    53a9c860f1b7a44fec9aacdd8f6d404bf4bcde95 \
+rmd160  2ce1674727027deb1e23e4820574ca4e312be9d1
 
 post-destroot {
     set docdir ${destroot}${prefix}/share/doc/${name}

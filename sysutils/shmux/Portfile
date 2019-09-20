@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,6 +23,6 @@ master_sites        http://web.taranis.org/shmux/dist/
 extract.suffix      .tgz
 build.target        
 checksums           md5     4ab5c46b4154cbeab54bdc0036bd9140 \
-                    sha1    6fe39602c497331e448c4331b8cddbb2abb71b79 \
-                    rmd160  31937f39483e8ab54848f84830489bf45dff5783
+sha1    6fe39602c497331e448c4331b8cddbb2abb71b79 \
+rmd160  31937f39483e8ab54848f84830489bf45dff5783
 

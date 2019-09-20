@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem  1.0
 
@@ -21,8 +21,8 @@ homepage        https://www.gnome.org/
 master_sites    gnome:sources/${name}/${branch}/
 
 checksums       md5     ffcbb719c671ff5cd86e59aeba8d0b92 \
-                sha1    a5b07f33c44c460434dd0dad457d2fffb8a1baf9 \
-                rmd160  044d9980fdc0a074d72407a7fa70d99b2823817b
+sha1    a5b07f33c44c460434dd0dad457d2fffb8a1baf9 \
+rmd160  044d9980fdc0a074d72407a7fa70d99b2823817b
 
 # add a dummy +quartz variant to distinguish the binary packages,
 # because they must link against libgtk2-quartz instead of

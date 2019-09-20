@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           select 1.0
@@ -30,9 +30,9 @@ use_bzip2           yes
 distname            ruby-${version}
 
 checksums           md5 3544031334f4665aa2eb1414babc9345 \
-                    rmd160 3b6fd5d89e6e53fb71f512f44b710148698a6e29 \
-                    sha1 504be2eae6cdfe93aa7ed02ec55e35043d067ad5 \
-                    sha256 087ad4dec748cfe665c856dbfbabdee5520268e94bb81a1d8565d76c3cc62166
+rmd160 3b6fd5d89e6e53fb71f512f44b710148698a6e29 \
+sha1 504be2eae6cdfe93aa7ed02ec55e35043d067ad5 \
+sha256 087ad4dec748cfe665c856dbfbabdee5520268e94bb81a1d8565d76c3cc62166
 use_parallel_build  no
 
 depends_lib         port:readline \

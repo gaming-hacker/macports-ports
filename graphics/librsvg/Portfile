@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -19,8 +19,8 @@ master_sites        gnome:sources/${name}/${branch}/
 use_xz              yes
 
 checksums           rmd160  96c3f77b61004966d532244472772babda1d632d \
-                    sha256  6a85a7868639cdd4aa064245cc8e9d864dad8b8e9a4a8031bb09a4796bc4e303 \
-                    size    12616040
+sha256  6a85a7868639cdd4aa064245cc8e9d864dad8b8e9a4a8031bb09a4796bc4e303 \
+size    12616040
 
 depends_build       port:pkgconfig
 
@@ -62,8 +62,8 @@ if {${os.platform} eq "darwin" && ${os.major} < 15} {
     epoch           1
 
     checksums       rmd160  e697e1220779f77e81a890718ef5cda5b5e6b740 \
-                    sha256  cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b \
-                    size    1796376
+sha256  cff4dd3c3b78bfe99d8fcfad3b8ba1eee3289a0823c0e118d78106be6b84c92b \
+size    1796376
 
     if {![variant_isset viewer]} {
         patchfiles-append   patch-disable-viewer-pre-cargo.diff

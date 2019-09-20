@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,4 +15,4 @@ description         A small tool to do the statistics legwork on benchmarks
 long_description    ${description}
 
 checksums           rmd160  625d78eea43dccd89c5ae635a75e468f81b0a04c \
-                    sha256  ad73993469df4a61c904cf22c7772bcfeb68bf0723aab2e162eaed48e1fbec61
+sha256  ad73993469df4a61c904cf22c7772bcfeb68bf0723aab2e162eaed48e1fbec61

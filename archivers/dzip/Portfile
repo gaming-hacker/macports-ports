@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            dzip
 version         2.9
@@ -20,8 +22,8 @@ distname        dz[strsed ${version} {/\.//}]src
 use_zip         yes
 
 checksums       md5 b02d69c7c6ee491380d77f26c6f5a6e0 \
-                sha1 64e7b0d07c55aaa22bbcf04066135b5a9968e5ee \
-                rmd160 4719785c312a577eb7b1aacad43a24b6fd8a4ed2
+sha1 64e7b0d07c55aaa22bbcf04066135b5a9968e5ee \
+rmd160 4719785c312a577eb7b1aacad43a24b6fd8a4ed2
 
 extract.mkdir   yes
 post-extract {

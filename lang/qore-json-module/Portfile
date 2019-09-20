@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ platforms           darwin
 master_sites        https://github.com/qorelanguage/module-json/releases/download/v${version}
 
 checksums           md5 6776e7d21b100289399bc7e40ca74db1 \
-                    sha1 c90dec0efd068e36ec9504cadbdc557bfd5e0f83 \
-                    rmd160 1eb0936c7bbf8a6820e38aaf2dfe5c5aa9724d72
+sha1 c90dec0efd068e36ec9504cadbdc557bfd5e0f83 \
+rmd160 1eb0936c7bbf8a6820e38aaf2dfe5c5aa9724d72
 
 depends_lib         port:qore \
                     path:lib/libssl.dylib:openssl

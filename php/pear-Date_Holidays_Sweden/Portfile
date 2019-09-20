@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,6 +12,6 @@ description         PEAR Date_Holidays_Sweden package
 long_description    ${description}
 
 checksums           rmd160  b82591a958f23fb7b1298383bed8ceb65907ba69 \
-                    sha256  e7f104a995f00f04207f68dd314d2d259e0ed7a4a9fb14cf7109b237bf5dd0ea
+sha256  e7f104a995f00f04207f68dd314d2d259e0ed7a4a9fb14cf7109b237bf5dd0ea
 
 depends_lib-append  port:pear-Date_Holidays

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 8; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4
+# -*- coding: utf-8; mode: _tcl; tab-width: 8; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2
 # vim: set fileencoding=utf-8 tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem 1.0
@@ -24,8 +24,8 @@ homepage	    http://www.${name}.org/
 master_sites	    googlecode
 distname	    ${packagename}-${version}
 checksums           md5     d4a859a9aae5d90e25f11146abf1e27a \
-                    sha1    07a3ede56590edf21a68af2a8174d505e3b2d8e4 \
-                    rmd160  87b0bc80e5695d4111528ed8f60ebc69cf1dd290
+sha1    07a3ede56590edf21a68af2a8174d505e3b2d8e4 \
+rmd160  87b0bc80e5695d4111528ed8f60ebc69cf1dd290
 
 use_configure	    no
 use_zip		    yes

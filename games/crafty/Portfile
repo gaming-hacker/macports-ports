@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -31,11 +31,11 @@ distfiles           ${dist_srczip}:source \
 dist_subdir   ${name}/${version}_1
 
 checksums           ${dist_srczip} \
-                    rmd160  2ccafc543f64fac628f6262a57fa4f80c7527b19 \
-                    sha256  337e00bab79c33739fbaa71cd26c65f986886ee0d8ce181f2cb62f2efd317710 \
+rmd160  2ccafc543f64fac628f6262a57fa4f80c7527b19 \
+sha256  337e00bab79c33739fbaa71cd26c65f986886ee0d8ce181f2cb62f2efd317710 \
                     ${dist_book1} \
-                    rmd160  d316103399d48bc44237163a5e4cba76251c2342 \
-                    sha256  f95c827d65a12a34879e50554de687ee91f3ca42580ab65abfa77638f27c3983
+rmd160  d316103399d48bc44237163a5e4cba76251c2342 \
+sha256  f95c827d65a12a34879e50554de687ee91f3ca42580ab65abfa77638f27c3983
 
 use_zip             yes
 extract.mkdir       yes

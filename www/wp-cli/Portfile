@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ homepage            http://wp-cli.org
 extract.suffix      .phar
 
 checksums           rmd160  4a62ab068802fed86df54d8f6d0a6325b00ee10c \
-                    sha256  325924cf161856f9478f2a154572698ecb5d1054e620843b9c43a7baf4e5ce3b
+sha256  325924cf161856f9478f2a154572698ecb5d1054e620843b9c43a7baf4e5ce3b
 
 extract.only
 use_configure       no

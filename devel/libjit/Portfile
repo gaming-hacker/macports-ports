@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            libjit
 version         0.1.2
@@ -17,7 +19,7 @@ long_description        The libjit library has an extensive set of \
 homepage        http://dotgnu.org/
 master_sites    gnu:dotgnu/libjit
 checksums       md5 9e0c1986da9a03ce68cfb3021bbc6701 \
-                sha1 8512d5cd72abbbc838a0c69488ff329b02171f81
+sha1 8512d5cd72abbbc838a0c69488ff329b02171f81
 patchfiles      jit-apply-x86-64.h.diff
 
 # checking for the native integer types... configure: error: unknown

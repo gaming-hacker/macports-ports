@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -19,8 +19,8 @@ master_sites    gnu
 use_xz          yes
 
 checksums       rmd160  dd32e6f23b55fd7bde6adec25c4d2666b9d4daf1 \
-                sha256  b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514 \
-                size    1473056
+sha256  b960541c499619efd6afe1fa795402e4733c8e11ebf9fafccc0bb4bccdc5b514 \
+size    1473056
 
 # Ensure system version of grep is used instead of a possibly broken MacPorts version.
 configure.env   PATH=/usr/bin:$env(PATH)

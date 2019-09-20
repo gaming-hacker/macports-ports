@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            http://jocr.sourceforge.net/
 master_sites        http://www-e.uni-magdeburg.de/jschulen/ocr/
 
 checksums           rmd160  51eee235f56eb73be590286a8a7f6fee805b3c72 \
-                    sha256  cc29931d50b3be11608dc79d1c7d8a20919dbe6313b1ba5dc88ecf99cffd171a
+sha256  cc29931d50b3be11608dc79d1c7d8a20919dbe6313b1ba5dc88ecf99cffd171a
 
 depends_lib         port:netpbm
 

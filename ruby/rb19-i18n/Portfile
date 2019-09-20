@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          i18n 0.5.0 gem {} rubygems ruby19
@@ -11,5 +13,5 @@ long_description    \
    ${description} 
 
 checksums           md5     761d743478dfbdc4f2c1743d5241c009 \
-                    sha1    74ec4aeb2c46d6d59864e5fceecd3cd496963a3f \
-                    rmd160  6ecd50e863056b17a979960e0602015e094dd02f
+sha1    74ec4aeb2c46d6d59864e5fceecd3cd496963a3f \
+rmd160  6ecd50e863056b17a979960e0602015e094dd02f

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem                                      1.0
 PortGroup           cmake                       1.1
@@ -24,8 +24,8 @@ long_description    ${description}  It follows the regular expression syntax of 
                     Hyperscan is typically used in a DPI library stack.
 
 checksums           rmd160  d242ba7bae08734151dd627963068ecdd64c2140 \
-                    sha256  c78c5ec214196634bd484196eb24fce7cf8cf55e356c75ea5489f9dbda893d44 \
-                    size    1811524
+sha256  c78c5ec214196634bd484196eb24fce7cf8cf55e356c75ea5489f9dbda893d44 \
+size    1811524
 
 depends_build-append \
     port:pkgconfig \

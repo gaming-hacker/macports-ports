@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,21 +32,21 @@ platform i386 {
     if {${configure.build_arch} eq "x86_64"} {
         distname    ${name}${minor}-macosx-amd64
         checksums   rmd160  b89cf96ed6aed3a316638fe2676f563140109013 \
-                    sha256  035401485ba2968888d1fea42f583a71b9d1b75ca855921b604e34bc10ec210c \
-                    size    639441
+sha256  035401485ba2968888d1fea42f583a71b9d1b75ca855921b604e34bc10ec210c \
+size    639441
     } else {
         distname    ${name}${minor}-macosx-x86
         checksums   rmd160  f54e536ec3601b794d879f55a80b8de1e67817c9 \
-                    sha256  b7d4b97d648de67c0bdc4d532e778c00416a898b1364e991b56f704e73e961a4 \
-                    size    650821
+sha256  b7d4b97d648de67c0bdc4d532e778c00416a898b1364e991b56f704e73e961a4 \
+size    650821
     }
 }
 
 platform powerpc {
     distname        ${name}${minor}-macosx-ppc
     checksums       rmd160  4ca8416102966104c56b77271d7356b7f4fa2a80 \
-                    sha256  bba507d2b4a4bb9231f78286c5d9d47e4e4d448221fa0c867967149a7de163b3 \
-                    size    620190
+sha256  bba507d2b4a4bb9231f78286c5d9d47e4e4d448221fa0c867967149a7de163b3 \
+size    620190
 }
 
 startupitem.create    yes

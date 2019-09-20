@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           ruby 1.0
@@ -20,6 +20,6 @@ long_description    Madeleine is a Ruby  implementation of Object Prevalence, \
                     of object prevalence.
 
 checksums           rmd160  d9c6de2ec03bef3fccccfad4702b67250fdf1374 \
-                    sha256  2c4d79ff859373670536035bec4c2345044b19caeaf7eebfd901a6a2f88acceb
+sha256  2c4d79ff859373670536035bec4c2345044b19caeaf7eebfd901a6a2f88acceb
 
 homepage            http://madeleine.sourceforge.net/

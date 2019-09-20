@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup cmake 1.0
@@ -23,7 +23,7 @@ master_sites        sourceforge:project/potassco/aspcud/${version}/
 distname            ${name}-${version}-source
 
 checksums           rmd160  435c80ef6879b2e049caf0e1c4d5bf2d8165b4f2 \
-                    sha256  e0e917a9a6c5ff080a411ff25d1174e0d4118bb6759c3fe976e2e3cca15e5827
+sha256  e0e917a9a6c5ff080a411ff25d1174e0d4118bb6759c3fe976e2e3cca15e5827
 
 depends_build-append \
                     port:boost \

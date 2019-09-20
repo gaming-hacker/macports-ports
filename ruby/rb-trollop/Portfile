@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          trollop 1.14 gem {} rubygems
@@ -11,5 +13,5 @@ long_description    ${description}
 platforms           darwin
 
 checksums           md5     c9ec5bf5381b38cfd441370f9c618da5 \
-                    sha1    85af2858ce2ce6733b8c4391aec2bc679df9726e \
-                    rmd160  98bcf28066412abd3fa295906daeb655c77f4059
+sha1    85af2858ce2ce6733b8c4391aec2bc679df9726e \
+rmd160  98bcf28066412abd3fa295906daeb655c77f4059

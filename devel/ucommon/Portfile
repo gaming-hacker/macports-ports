@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                ucommon
 version             7.0.0
 revision            1
 checksums           rmd160  7af41f1dc3d965ac165cce56f19164aa18482f24 \
-                    sha256  6ac9f76c2af010f97e916e4bae1cece341dc64ca28e3881ff4ddc3bc334060d7 \
-                    size    837905
+sha256  6ac9f76c2af010f97e916e4bae1cece341dc64ca28e3881ff4ddc3bc334060d7 \
+size    837905
 
 categories          devel
 license             LGPL-3+ {GPL-2+ Permissive}

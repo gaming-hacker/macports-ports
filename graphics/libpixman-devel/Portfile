@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compiler_blacklist_versions 1.0
@@ -12,8 +12,8 @@ set my_name             pixman
 version                 0.38.4
 revision                0
 checksums               rmd160  106b73f871b5e0f8a739a47788fb9fd7a82cb8c5 \
-                        sha256  84abb7fa2541af24d9c3b34bf75d6ac60cc94ac4410061bbb295b66a29221550 \
-                        size    756898
+sha256  84abb7fa2541af24d9c3b34bf75d6ac60cc94ac4410061bbb295b66a29221550 \
+size    756898
 
 categories              graphics
 platforms               darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -44,13 +44,13 @@ if {$subport eq $name} {
                         ${boost_distname}${extract.suffix}:boost
 
     checksums           ${distname}${extract.suffix} \
-                        rmd160  aa6f5fe3a890e8e4a7fef8a6c3a30701d925a79f \
-                        sha256  c6e3f38199a77bfd8a4925ca00b252d3b6159b90e4980c7232f1c58d6ca759d6 \
-                        size    190203398 \
+rmd160  aa6f5fe3a890e8e4a7fef8a6c3a30701d925a79f \
+sha256  c6e3f38199a77bfd8a4925ca00b252d3b6159b90e4980c7232f1c58d6ca759d6 \
+size    190203398 \
                         ${boost_distname}${extract.suffix} \
-                        rmd160  ad6cd576a5229a11601986908ff03261582c9f81 \
-                        sha256  9a2c2819310839ea373f42d69e733c339b4e9a19deab6bfec448281554aa4dbb \
-                        size    111710205
+rmd160  ad6cd576a5229a11601986908ff03261582c9f81 \
+sha256  9a2c2819310839ea373f42d69e733c339b4e9a19deab6bfec448281554aa4dbb \
+size    111710205
 
     depends_lib-append  path:lib/libssl.dylib:openssl \
                         port:cyrus-sasl2 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,8 +25,8 @@ master_sites            http://www.billbaxter.com/etc/
 distname                d-mode.el
 distfiles               ${distname}
 checksums               md5     48da4b1713f5cac8db745dd31bc0a7cd \
-                        sha1    d8528a41b16d1ca288df5f5c790e276f2e76ed4f \
-                        rmd160  4da89b5c5d5f354d3718715bc5fdc3a33dd9a468
+sha1    d8528a41b16d1ca288df5f5c790e276f2e76ed4f \
+rmd160  4da89b5c5d5f354d3718715bc5fdc3a33dd9a468
 use_configure           no
 
 depends_lib             path:${prefix}/bin/emacs:emacs

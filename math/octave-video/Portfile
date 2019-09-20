@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -13,8 +13,8 @@ description         A wrapper for ffmpeg's libavformat and libavcodec, implement
 long_description    ${description}
 
 checksums           rmd160  2aa0bebfc8dfea08f29fb7bfd85777b5b7a34ead \
-                    sha256  69af2f5b7c9d96318d5528b150ec8aa12873e974bd16c714698a8558c5aee339 \
-                    size    53044
+sha256  69af2f5b7c9d96318d5528b150ec8aa12873e974bd16c714698a8558c5aee339 \
+size    53044
 
 depends_lib-append  path:lib/libavcodec.dylib:ffmpeg
 

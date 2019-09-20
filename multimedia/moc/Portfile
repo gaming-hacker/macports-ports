@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ platforms           darwin
 master_sites        http://ftp.daper.net/pub/soft/moc/unstable/
 
 checksums           rmd160  283f9945abbd3b3d4e15f23485228c00983edfe8 \
-                    sha256  0b0a3515c65b4c47a250e350c663535778239352db859921f5d564ed727a0bbc
+sha256  0b0a3515c65b4c47a250e350c663535778239352db859921f5d564ed727a0bbc
 
 use_xz              yes
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -29,9 +29,9 @@ master_sites \
     sourceforge
 
 checksums \
-    md5     d3968953320e3e3ff6f8707257545bfd \
-    sha1    6f600b2b5f9e76649b1b89fa0279fe005c8688fd \
-    rmd160  a54673a46f9c6d79c5c4d024e391d065ff37c2af
+md5     d3968953320e3e3ff6f8707257545bfd \
+sha1    6f600b2b5f9e76649b1b89fa0279fe005c8688fd \
+rmd160  a54673a46f9c6d79c5c4d024e391d065ff37c2af
 
 depends_lib \
     path:lib/libssl.dylib:openssl

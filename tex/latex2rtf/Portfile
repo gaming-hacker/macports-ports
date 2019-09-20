@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ long_description    LaTeX2rtf is a translator program which is intended to trans
 homepage            http://latex2rtf.sourceforge.net/
 master_sites        sourceforge
 checksums           rmd160  e0196576dd84b221261a5a85b6e75d3acf655655 \
-                    sha256  19f3763177d8ea7735511438de269b78c24ccbfafcd71d7a47aabc20b9ea05a8
+sha256  19f3763177d8ea7735511438de269b78c24ccbfafcd71d7a47aabc20b9ea05a8
 
 patchfiles          patch-Makefile.diff
 

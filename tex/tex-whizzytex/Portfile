@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ depends_lib         bin:tex:texlive
 
 
 checksums           md5     240d4ccb54b167f3baf55313411d6b92 \
-                    sha1    c01e0dc5886631250c786251c009324064dfde97 \
-                    rmd160  017cbdfa178216ec5f97ef0a4848813ac35550e1
+sha1    c01e0dc5886631250c786251c009324064dfde97 \
+rmd160  017cbdfa178216ec5f97ef0a4848813ac35550e1
 
 post-destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/texmf-dist/tex/latex/whizzytex

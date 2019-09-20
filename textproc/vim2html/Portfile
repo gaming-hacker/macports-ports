@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			vim2html
 version			1.46
@@ -17,8 +19,8 @@ long_description	vim2html is a small shell  program that will export any \
 homepage		http://chip.cuccio.us/projects/hacks#vim2html
 master_sites	http://chip.cuccio.us/resources/vim2html/
 checksums		md5 4fcccd28b2a28519bdc65e90120c7204 \
-				sha1 5f48b83dfb74a650f81065b1e3d0b5888bc4345e \
-				rmd160 c0bc0329dd35a7fa95cb76573075869379f5ed8d
+sha1 5f48b83dfb74a650f81065b1e3d0b5888bc4345e \
+rmd160 c0bc0329dd35a7fa95cb76573075869379f5ed8d
 
 depends_run		bin:bash:bash \
 				bin:vim:vim

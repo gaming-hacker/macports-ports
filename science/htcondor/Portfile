@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -41,7 +41,7 @@ variant personal \
 set pythons_suffixes {27 34 35 36}
 
 if {!([variant_isset python34] || [variant_isset python35] || [variant_isset python36])} {
-    default_variants +python27
+
 }
 
 set pythons_ports {}
@@ -84,8 +84,8 @@ variant kerberos description {enable Kerberos5 support} {
 
 
 checksums               rmd160  53f076464a125c3574b25a3df1cb36d1bdd9bc34 \
-                        sha256  abab3e8fe39bcebe68ea6efb60438f88f51bf9e2d345d8a1f061b6584440cc1d \
-                        size    13135083
+sha256  abab3e8fe39bcebe68ea6efb60438f88f51bf9e2d345d8a1f061b6584440cc1d \
+size    13135083
 
 depends_build-append    port:fig2dev \
                         port:latex2html

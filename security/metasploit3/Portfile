@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,7 +27,7 @@ master_sites        macports_distfiles
 distname            framework-${version}
 
 checksums           rmd160  849305ffcf0ccbdf16d3dac8d7ab20ac745fbcd8 \
-                    sha256  cb27df6dafe7b2d1c2d2174000afd07965cdc09e759e8cda5147cfc58e445251
+sha256  cb27df6dafe7b2d1c2d2174000afd07965cdc09e759e8cda5147cfc58e445251
 
 depends_run         port:ruby \
                     port:rb-libglade2 \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                geeqie
 version             1.4
 revision            0
 checksums           rmd160  1e3ffccba08edc2739051f1252ca653f008de35b \
-                    sha256  5c583a165573ec37874c278f9dc57e73df356b30e09a9ccac3179dd5d97e3e32 \
-                    size    35881152
+sha256  5c583a165573ec37874c278f9dc57e73df356b30e09a9ccac3179dd5d97e3e32 \
+size    35881152
 
 categories          graphics x11
 platforms           darwin

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -14,8 +14,8 @@ description         Autoformat shell script source code
 long_description    A shell script formatter supporting POSIX shell, Bash, and mksh.
 
 checksums           rmd160  af8812b3d96e06868c7709001949e03131b94f90 \
-                    sha256  2b9caa6ffc8122c6923a84385059f8d2f3f0c9e27f2e03917694fa84ad3202af \
-                    size    138249
+sha256  2b9caa6ffc8122c6923a84385059f8d2f3f0c9e27f2e03917694fa84ad3202af \
+size    138249
 
 go.package          mvdan.cc/sh
 

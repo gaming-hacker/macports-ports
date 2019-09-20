@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup  clang_dependency 1.0
 
 name            ncurses
@@ -18,7 +20,7 @@ long_description \
 homepage        https://invisible-island.net/ncurses/
 master_sites    gnu https://invisible-mirror.net/archives/ncurses/
 checksums       rmd160 938235f3922f9c6ef0f1081d643ecb2da1347a17 \
-                sha256 aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
+sha256 aa057eeeb4a14d470101eff4597d5833dcef5965331be3528c08d99cebaa0d17
 
 # hex.diff from https://opensource.apple.com/source/ncurses/ncurses-44/patches.applied/
 patchfiles      hex.diff

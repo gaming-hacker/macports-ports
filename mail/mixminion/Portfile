@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           python 1.0
 
 name                mixminion
@@ -20,7 +22,7 @@ distname            Mixminion-${version}
 
 checksums           md5 a7ee96a22dd6246760556fa959a37380
 
-python.default_version  27
+python.default_version 37
 
 post-destroot {
    foreach mannum {1 5 8} {

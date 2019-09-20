@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ use_bzip2           yes
 master_sites        https://mesa.freedesktop.org/archive/demos/
 
 checksums           rmd160  dcbfec40c173cacef19bf929b4b8119ce78e8e1b \
-                    sha256  01e99c94a0184e63e796728af89bfac559795fb2a0d6f506fa900455ca5fff7d \
-                    size    10073259
+sha256  01e99c94a0184e63e796728af89bfac559795fb2a0d6f506fa900455ca5fff7d \
+size    10073259
 
 depends_lib \
 	port:mesa

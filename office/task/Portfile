@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -21,7 +21,7 @@ homepage            https://taskwarrior.org/
 master_sites        https://taskwarrior.org/download/
 
 checksums           rmd160  ae04417ff7f007c6e01d4d6bd4dede67adc1e35f \
-                    sha256  d87bcee58106eb8a79b850e9abc153d98b79e00d50eade0d63917154984f2a15
+sha256  d87bcee58106eb8a79b850e9abc153d98b79e00d50eade0d63917154984f2a15
 
 depends_lib         port:gnutls
 

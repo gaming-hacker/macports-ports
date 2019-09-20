@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    kubectx helps you switch between clusters back and forth. \
                     kubens helps you switch between Kubernetes namespaces smoothly.
 
 checksums           rmd160  f6f011e466317cc1323954ac9e5b4f3cc4bd78f7 \
-                    sha256  f944d5677d82e10bc8fbdd70a835ffb0aa522402e0b57331cdc4b80f6aefeee6 \
-                    size    484008
+sha256  f944d5677d82e10bc8fbdd70a835ffb0aa522402e0b57331cdc4b80f6aefeee6 \
+size    484008
 
 depends_run         port:bash-completion path:${prefix}/bin/kubectl:kubectl-1.15
 

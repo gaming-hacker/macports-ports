@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ master_sites        http://dist.modpython.org/dist/
 extract.suffix      .tgz
 
 checksums           rmd160  03315af0843892059a11758209f350c82164acc3 \
-                    sha256  0ef09058ed98b41c18d899d8b710a0cce2df2b53c44d877401133b3f28bdca90
+sha256  0ef09058ed98b41c18d899d8b710a0cce2df2b53c44d877401133b3f28bdca90
 
 if {$subport ne $name} {
     depends_build       port:flex

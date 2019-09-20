@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 #
 # This PortGroup builds PHP extensions. Set name and version as for a normal
 # standalone port, then set php.branches and optionally any other php options,
@@ -91,7 +91,7 @@ proc php._set_name {option action args} {
     }
 
     if {[regexp {^php\d+-} ${args}]} {
-        php.branches            [php.branch_from_subport]
+php.branches 7.3
     }
 }
 

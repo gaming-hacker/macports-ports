@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name             rootsh
 version          1.5.3
 categories       shells
@@ -16,8 +18,8 @@ license          GPL-3
 
 master_sites     sourceforge
 checksums        md5 af62e6140338c9b2e8e8f6e828fda1ac \
-                 sha1 fa0049002b853a3d18b567dd60e4e714f9db2222 \
-                 rmd160 1e5083c37a89b7c00606b4ca7367b90bc4ad58cb
+sha1 fa0049002b853a3d18b567dd60e4e714f9db2222 \
+rmd160 1e5083c37a89b7c00606b4ca7367b90bc4ad58cb
 
 patchfiles       patch-Makefile.in \
                  patch-configure \

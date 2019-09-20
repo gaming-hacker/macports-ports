@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                quesoglc
 version             0.7.2
@@ -18,8 +20,8 @@ homepage            http://quesoglc.sourceforge.net/
 master_sites        sourceforge:project/quesoglc/QuesoGLC/${version}
 
 checksums           md5     1c8d394d4f41fa0c5b08eb7ead73c4ef \
-                    sha1    afa2662a2b884d2268657734668c2f79ec5173c8 \
-                    rmd160  505a091770a67565d882fc246d4adfa38089bc4e
+sha1    afa2662a2b884d2268657734668c2f79ec5173c8 \
+rmd160  505a091770a67565d882fc246d4adfa38089bc4e
 
 use_bzip2           yes
 

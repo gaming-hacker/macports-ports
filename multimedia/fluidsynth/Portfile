@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ platforms           darwin
 homepage            http://www.fluidsynth.org/
 
 checksums           rmd160  aa16d4e0caec65819a574451525494084998c936 \
-                    sha256  af29985642f98f66345d47f852ce08cdbf0ac69aaf7b97cfe49ff086bfc72976 \
-                    size    1314639
+sha256  af29985642f98f66345d47f852ce08cdbf0ac69aaf7b97cfe49ff086bfc72976 \
+size    1314639
 
 depends_build-append \
                     port:pkgconfig \

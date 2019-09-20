@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,7 +20,7 @@ long_description    \
     community driven collection of useful SCM functions.
 
 checksums           rmd160  51ea3cd198ac2e8cd6bce36508a961db443fd828 \
-                    sha256  e1793135162267f34e47c15f87f2ceb2bfb96dcf8c138dd1bcaf545f79691038
+sha256  e1793135162267f34e47c15f87f2ceb2bfb96dcf8c138dd1bcaf545f79691038
 
 use_configure       no
 

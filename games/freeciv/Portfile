@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ master_sites        sourceforge:project/${name}/Freeciv%20${branch}/${version}/ 
 use_bzip2           yes
 
 checksums           rmd160  9ffdc49773161cc1396e631db0e28d0ddc911bcc \
-                    sha256  7c20399198d6c7d846fed9a69b02e01134ae5340a3ae0f99d1e38063ade6c999 \
-                    size    51912466
+sha256  7c20399198d6c7d846fed9a69b02e01134ae5340a3ae0f99d1e38063ade6c999 \
+size    51912466
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 # Keep in sync with Geant4 (and/or implement a PortGroup)
 
@@ -25,8 +25,8 @@ homepage            http://www.opengatecollaboration.org
 platforms           darwin
 
 checksums           rmd160  44ceda2372c4138ef92a9a8641c1901d9d079ea8 \
-                    sha256  01185c6c448df227e081113abbfd04b71d638f7365269a492a917d0dae7db5a9 \
-                    size    2473245
+sha256  01185c6c448df227e081113abbfd04b71d638f7365269a492a917d0dae7db5a9 \
+size    2473245
 
 # Force the same compiler as ROOT6 is using
 # https://trac.macports.org/ticket/57735

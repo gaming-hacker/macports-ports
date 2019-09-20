@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    The ZZIPlib provides read access on ZIP-archives. The \
                     both with the same filepath.
 
 checksums           rmd160  d401fc327138d5b997c0cd318f808f95cea1f937 \
-                    sha256  c5cf1c11a6019862e5b6daea4d7c72124affe687b9637effc7ad3caf2b7b1d96 \
-                    size    1132209
+sha256  c5cf1c11a6019862e5b6daea4d7c72124affe687b9637effc7ad3caf2b7b1d96 \
+size    1132209
 
 depends_build       port:pkgconfig \
                     port:python27

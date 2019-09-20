@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=portfile:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=portfile:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -19,7 +19,7 @@ platforms               darwin
 homepage                http://aquaterm.sourceforge.net/
 
 checksums               rmd160  007db0806a2b1b1263043647035fa428b15560e3 \
-                        sha256  8e35cb81f5f024382ba4b2c96569631b34cf798966aa2870258f272e551c0e34
+sha256  8e35cb81f5f024382ba4b2c96569631b34cf798966aa2870258f272e551c0e34
 
 build.dir               ${worksrcpath}/aquaterm
 

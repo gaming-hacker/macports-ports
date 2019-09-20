@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -7,8 +7,8 @@ go.setup            github.com/digitalocean/doctl 1.20.1 v
 revision            0
 
 checksums           rmd160  689b390b734667042d2b1af2bc1ad875d147eafc \
-                    sha256  654bc9b7194fc9c12271e33cdcf4520c97ddb31091b16a5a9fbaadb83907e036 \
-                    size    15653842
+sha256  654bc9b7194fc9c12271e33cdcf4520c97ddb31091b16a5a9fbaadb83907e036 \
+size    15653842
 
 categories          www devel
 platforms           darwin

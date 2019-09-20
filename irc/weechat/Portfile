@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -13,8 +13,8 @@ if {${name} eq ${subport}} {
     version         2.5
     revision        0
     checksums       rmd160  d71265cdfb4df485f8fa7902a459c76168c95870 \
-                    sha256  4c772c949c59949ff4156560c66900c5aaa9ab2da4439ee278b7c21b24daf191 \
-                    size    2968058
+sha256  4c772c949c59949ff4156560c66900c5aaa9ab2da4439ee278b7c21b24daf191 \
+size    2968058
 
     master_sites    https://weechat.org/files/src/
     use_bzip2       yes
@@ -26,8 +26,8 @@ subport weechat-devel {
     version         2.5-dev-20190424
     revision        0
     checksums       rmd160  ef1b9219d799507e783f84aab90b163546184139 \
-                    sha256  00ca8188a67175e158fafa356a528731ed6520ae8b629627791653f1b204af1b \
-                    size    2952987
+sha256  00ca8188a67175e158fafa356a528731ed6520ae8b629627791653f1b204af1b \
+size    2952987
 
     master_sites    https://weechat.org/files/src/devel/
     use_bzip2       yes

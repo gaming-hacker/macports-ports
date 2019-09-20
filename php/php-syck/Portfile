@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               php 1.1
@@ -11,7 +11,7 @@ platforms               darwin freebsd openbsd
 maintainers             ryandesign openmaintainer
 license                 PHP-3.01
 
-php.branches            5.3 5.4 5.5 5.6
+php.branches 7.3
 php.pecl                yes
 php.pecl.prerelease     yes
 
@@ -22,8 +22,8 @@ long_description        Syck is a parser for YAML -- this package installs \
                         interface to the libsyck C library.
 
 checksums               md5     cbbe638b431f74eec71c76588cd14f7e \
-                        sha1    c015f8527a6dea2644c122f085a2598939f63920 \
-                        rmd160  b1f3c8a0e537feedd2a383b11a98afc97f666231
+sha1    c015f8527a6dea2644c122f085a2598939f63920 \
+rmd160  b1f3c8a0e537feedd2a383b11a98afc97f666231
 
 if {${name} ne ${subport}} {
     depends_lib-append  port:syck \

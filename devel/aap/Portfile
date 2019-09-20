@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,8 +23,8 @@ master_sites        sourceforge:a-a-p
 use_zip             yes
 
 checksums           sha1    7e8d043a3928c8e7688c1302acc21fe9c5a0f8ed \
-                    rmd160  88a5a026d89d3ab5cf657667eed39a1c8de291a4 \
-                    sha256  3f53b2fc277756042449416150acc477f29de93692944f8a77e8cef285a1efd8
+rmd160  88a5a026d89d3ab5cf657667eed39a1c8de291a4 \
+sha256  3f53b2fc277756042449416150acc477f29de93692944f8a77e8cef285a1efd8
 
 depends_lib         port:python27
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup	muniversal 1.0
@@ -39,8 +39,8 @@ homepage	https://www.gnu.org/software/guile/guile.html
 master_sites	gnu:guile
 
 checksums       md5     18661a8fdfef13e2fcb7651720aa53f3 \
-                sha1    548d6927aeda332b117f8fc5e4e82c39a05704f9 \
-                rmd160  8ac185a72ad8394b14d5377549e5bbf02889faaa
+sha1    548d6927aeda332b117f8fc5e4e82c39a05704f9 \
+rmd160  8ac185a72ad8394b14d5377549e5bbf02889faaa
 
 patchfiles	patch-srfi-60.c.diff \
 		patch-libguile-fports.c.diff \

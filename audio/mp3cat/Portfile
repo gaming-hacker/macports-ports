@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,7 +16,7 @@ homepage            http://tomclegg.net/mp3cat
 master_sites        http://tomclegg.net/software/
 
 checksums           rmd160  d6fa7a549ed1b2d81f6217b2fe0ed52e28c18aaa \
-                    sha256  fd2b0d58018f5117bd1e22298c899bef5e6af61a0c540186d16d2bf516d6849a
+sha256  fd2b0d58018f5117bd1e22298c899bef5e6af61a0c540186d16d2bf516d6849a
 
 patchfiles          patch-Makefile.diff
 

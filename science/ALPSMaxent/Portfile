@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,7 +24,7 @@ long_description    This package provides functionality for computing the \
 homepage            http://alpscore.org
 
 checksums           rmd160  54601a65eb8e7b778a804a7cc7426cf596d3d8f9 \
-                    sha256  6f459858e4dae5a0bf1432a34ee28157bf9870244c72e1666243d89c6c108190
+sha256  6f459858e4dae5a0bf1432a34ee28157bf9870244c72e1666243d89c6c108190
 
 # From https://trac.macports.org/ticket/51347#comment:4
 # gcc-4.2 causes problems with one of the dependencies (ALPSCore, some bug with

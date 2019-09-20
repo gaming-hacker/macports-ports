@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		tuareg-mode.el
 # reverting to version 1.45 because 1.46 was removed from official download website
@@ -21,8 +23,8 @@ distname	tuareg-${version}
 master_sites	http://forge.ocamlcore.org/frs/download.php/468/
 
 checksums	md5     71f54eb051d9e4ad84e1250c7e5b9534 \
-		sha1    0361f39c35d759cee66c549f3400390e9019c431 \
-		rmd160  153a0958bed6e6517db1a30bdd23980f7add37f9
+sha1    0361f39c35d759cee66c549f3400390e9019c431 \
+rmd160  153a0958bed6e6517db1a30bdd23980f7add37f9
 
 # We want emacs from MacPorts since this will install stuff in emacs'
 # site-lisp and we want it to go into ${prefix}'s site-lisp.

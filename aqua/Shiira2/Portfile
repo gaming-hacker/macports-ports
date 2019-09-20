@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup xcode 1.0
 
 name            Shiira2
@@ -18,8 +20,8 @@ master_sites    sourceforge_jp:shiira/26462
 distname        Shiira${version}src
 
 checksums       md5 95704032b91f29417f4fee698cce4ed4 \
-                sha1 f068e951a2466e08aa6256cbd0d824340a723521 \
-                rmd160 fbe772258f9e9d065f11a485cd027ca9bb811231
+sha1 f068e951a2466e08aa6256cbd0d824340a723521 \
+rmd160 fbe772258f9e9d065f11a485cd027ca9bb811231
 
 use_zip         yes
 

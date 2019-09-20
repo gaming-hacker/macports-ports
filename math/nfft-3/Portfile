@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -38,8 +38,8 @@ long_description    NFFT3 is a software library written in C for computing noneq
                         - polar FFT, discrete Radon transform, ridgelet transform
 
 checksums           rmd160  f628d634eeffa5b9f27e28f18acf63aa59befb79 \
-                    sha256  5f78a9d2a675aee7ace55c96bdf1b54f049e05a1dd50697757bdc609a8586a07 \
-                    size    5175253
+sha256  5f78a9d2a675aee7ace55c96bdf1b54f049e05a1dd50697757bdc609a8586a07 \
+size    5175253
 
 depends_lib         port:fftw-3
 

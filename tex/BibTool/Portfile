@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ homepage            http://www.gerd-neugebauer.de/software/TeX/BibTool/en/index.
 master_sites        http://www.gerd-neugebauer.de/software/TeX/BibTool/
 
 checksums           rmd160  c62bdc06bab461aa4d812e3aa571d42c369c7bc9 \
-                    sha256  5b6c4160975a926356e8e59d0e5c01ac2a7be337ecace2494918fc2a46d9d784
+sha256  5b6c4160975a926356e8e59d0e5c01ac2a7be337ecace2494918fc2a46d9d784
 
 worksrcdir          ${name}
 

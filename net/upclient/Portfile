@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            upclient
 revision        2
@@ -12,7 +14,7 @@ long_description ${description}
 homepage        http://upclient.sourceforge.net/
 master_sites    sourceforge
 checksums       md5 5d2ac85193fdb898dd16a694b05ac4d0 \
-                sha1 cffc7e232aa9eb487ec0206df2963a2f2c528a6d
+sha1 cffc7e232aa9eb487ec0206df2963a2f2c528a6d
 worksrcdir      ${worksrcdir}/src
 use_configure   no    
 build.target    ${os.platform}

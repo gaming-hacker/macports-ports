@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -27,8 +27,8 @@ homepage            https://www.ghostscript.com
 master_sites        "https://git.ghostscript.com/?p=urw-core35-fonts.git;a=snapshot;h=${git_version};sf=tgz;dummy="
 distname            urw-core35-fonts-${git_version}
 checksums           rmd160 26447c6c906c2fe1320f033b4e3a8b27c015bb1a \
-                    sha256 1e8d2bf93c7aed3301e2a12c672cdcf44ef50f250a57db6534ff2fb298307fa0 \
-                    size 11128006
+sha256 1e8d2bf93c7aed3301e2a12c672cdcf44ef50f250a57db6534ff2fb298307fa0 \
+size 11128006
 
 depends_run         port:fontconfig
 

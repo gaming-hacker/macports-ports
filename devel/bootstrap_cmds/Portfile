@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    bootstrap_cmds
@@ -15,7 +17,7 @@ long_description        Bootstrapping tools like the Mach Interface \
                         Generator (MIG) required to build the XNU kernel.
 
 checksums               rmd160  fca2a2bd26a1ca825e25281322914b70d3485278 \
-                        sha256  8b8be9a719c60e532454a4fc614e74140ff10a822855b5e6c123872a4d122077
+sha256  8b8be9a719c60e532454a4fc614e74140ff10a822855b5e6c123872a4d122077
 
 xcode.target            migcom
 xcode.destroot.path     ${prefix}/bin
@@ -27,7 +29,7 @@ if {${os.major} < 12} {
     version         80
     revision        5
     checksums       rmd160  072e399562eb021e4fa0cd66132153afcc02f417 \
-                    sha256  2ae65cd2ca6f0f684b25aad46a649aeb95a774d06a8287c59962fba42900a2fc
+sha256  2ae65cd2ca6f0f684b25aad46a649aeb95a774d06a8287c59962fba42900a2fc
 
     supported_archs i386 ppc
     xcode.project   migcom.tproj/migcom.xcodeproj

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,8 +20,8 @@ homepage                http://tclxml.sourceforge.net/
 platforms               darwin
 master_sites            sourceforge:tclxml
 checksums               md5  9d1605246c899eff7db591bca3c23200 \
-                        sha1  bb6a551785b12162ae977f66d7ad3d70e094e122 \
-                        rmd160  618d19c83159e85b1f95e4e8a173280d9ecb647c
+sha1  bb6a551785b12162ae977f66d7ad3d70e094e122 \
+rmd160  618d19c83159e85b1f95e4e8a173280d9ecb647c
 depends_run             port:tcl port:tcllib port:libxml2
 configure.args          --with-prefix=${prefix} --with-tcl=${prefix}/lib
 livecheck.regex tclxml-(\[0-9\\.\]+)\\.tar.gz

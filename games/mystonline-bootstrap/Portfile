@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -25,8 +25,8 @@ long_description            ${description} (MO:ULagain) bootstrap files for \
                             use with the Wine or Cider version
 
 checksums                   md5     6d92e689247a2dc1c9b77f32bec5d887 \
-                            sha1    8b22b4899f7fe4c9528493e961114e963b81a5b1 \
-                            rmd160  bdff9df019140bf4de43d85b1f46fa5c499d500e
+sha1    8b22b4899f7fe4c9528493e961114e963b81a5b1 \
+rmd160  bdff9df019140bf4de43d85b1f46fa5c499d500e
 
 set share_dir               ${prefix}/share/${my_name}
 set bootstrap_dir           ${share_dir}/bootstrap

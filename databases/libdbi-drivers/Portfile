@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                libdbi-drivers
 version             0.8.3-1
@@ -13,8 +15,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5     4de79b323162a5a7652b65b608eca6cd \
-                    sha1    599fbab115419e8fc88b3b31a38031584ee213b5 \
-                    rmd160  e0aa9e67f6560fb44018b1d35d90d4ac21b48597
+sha1    599fbab115419e8fc88b3b31a38031584ee213b5 \
+rmd160  e0aa9e67f6560fb44018b1d35d90d4ac21b48597
 
 depends_lib         port:libdbi
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   muniversal 1.0
@@ -24,7 +24,7 @@ long_description            Ming is an SWF ("Flash") file format output \
                             for Ruby and Perl.
 
 checksums                   rmd160  cd28c115a1eb37442f1b9c507ce3fad7837a6d54 \
-                            sha256  82da089bdfc3a7fcb732dc11c11a35003ee270d5102d4043d61ea69834239aeb
+sha256  82da089bdfc3a7fcb732dc11c11a35003ee270d5102d4043d61ea69834239aeb
 
 depends_lib                 port:giflib \
                             port:libpng \

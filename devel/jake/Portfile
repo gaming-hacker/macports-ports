@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ description         JavaScript build tool for Node.js, similar to make or rake
 long_description    ${name} is a ${description}.
 
 checksums           rmd160  6c854bac3652902cb4c4bacb2dca8023bb43da2b \
-                    sha256  6ee88d0299ede6008ed1575cd590ffd7860abe412432ad3796abf5f5fa67517d \
-                    size    636571
+sha256  6ee88d0299ede6008ed1575cd590ffd7860abe412432ad3796abf5f5fa67517d \
+size    636571
 
 depends_lib         path:bin/node:nodejs10
 depends_build       path:bin/npm:npm6

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -28,8 +28,8 @@ long_description \
     The primary use on macOS is for remote administration of Linux boxes.
 
 checksums           rmd160  2e9190ca7d04146650ef9dee832300a4c852a2cc \
-                    sha256  34ea069a6565f1f1860a0741e5a5029e8b45c779e81f16d27fb4d767fd4403d4 \
-                    size    2617988
+sha256  34ea069a6565f1f1860a0741e5a5029e8b45c779e81f16d27fb4d767fd4403d4 \
+size    2617988
 
 platforms           darwin
 

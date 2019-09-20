@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,11 +32,11 @@ patchfiles          patch-Canna.conf.diff \
                     patch-misc_default.ca.diff
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  33e5eb9e2dc144835db838612897e652acbc60ed \
-                    sha256  7d98d925043d3af24f99a8a2a09e3b4d6dfe881efc1303ef4a7f495a0f4542a7 \
+rmd160  33e5eb9e2dc144835db838612897e652acbc60ed \
+sha256  7d98d925043d3af24f99a8a2a09e3b4d6dfe881efc1303ef4a7f495a0f4542a7 \
                     cannadic-${dicversion}.tar.gz \
-                    rmd160  d0920e718d35d038fff930ac50ebe049a322174d \
-                    sha256  d477889aa54276eeb013f28f4f5a18c26baebbc5de28884421f086e1d38fdb04
+rmd160  d0920e718d35d038fff930ac50ebe049a322174d \
+sha256  d477889aa54276eeb013f28f4f5a18c26baebbc5de28884421f086e1d38fdb04
 
 extract.only        ${distname}${extract.suffix}
 

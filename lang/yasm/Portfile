@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            http://www.tortall.net/projects/yasm/
 master_sites        http://www.tortall.net/projects/yasm/releases/
 
 checksums           rmd160  9d9d40aa8cf5a20617564085f581b14ab1a553b4 \
-                    sha256  3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
+sha256  3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f
 
 depends_lib         port:gettext
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       pure 1.0
@@ -17,6 +17,6 @@ long_description                ${name} provides ${description}. The reading \
                                 Python’s CSV module
 
 checksums                       rmd160  91db93bdee379b5290698faab12b7a7004bfcd97 \
-                                sha256  fe7c4edebe8208c54d5792a9eefaeb28c4a58b9094d161a6dda8126f0823ab3c
+sha256  fe7c4edebe8208c54d5792a9eefaeb28c4a58b9094d161a6dda8126f0823ab3c
 
 depends_build-append            port:pkgconfig

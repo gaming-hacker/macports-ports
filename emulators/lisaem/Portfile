@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               wxWidgets 1.0
@@ -22,9 +22,9 @@ long_description \
     ${description}
 
 checksums \
-    md5 b236d7fa06c7589bb0de5d13ed680c9a \
-    sha1 c3552eb2fc89ff6e47994767aa4e524de7000dc7 \
-    rmd160 bc541ef181b417ee369ed960f29637f87cc1308a
+md5 b236d7fa06c7589bb0de5d13ed680c9a \
+sha1 c3552eb2fc89ff6e47994767aa4e524de7000dc7 \
+rmd160 bc541ef181b417ee369ed960f29637f87cc1308a
 
 patchfiles \
     patch-build.sh.diff

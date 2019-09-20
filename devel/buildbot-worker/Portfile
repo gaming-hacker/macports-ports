@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ master_sites        pypi:[string index ${name} 0]/${name}
 license             GPL-2
 
 checksums           rmd160  c679f8dfc6847a20274449a0f746ac8019e0425f \
-                    sha256  6279211b135d1b10ce0a0cda7bf9f6114a8c6fa0c7de234f6519600f9e0cb311 \
-                    size    111619
+sha256  6279211b135d1b10ce0a0cda7bf9f6114a8c6fa0c7de234f6519600f9e0cb311 \
+size    111619
 
 python.default_version \
                     37

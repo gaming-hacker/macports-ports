@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		openbox
 version		3.5.0
@@ -14,8 +16,8 @@ long_description	Openbox is a minimalistic, highly configurable, next \
 homepage	http://openbox.org/
 master_sites	http://openbox.org/dist/openbox/
 checksums	md5 00441b53cf14c03566c8e82643544ff9 \
-		sha1 3c3b8d2bc4f4e229871254e92d6b18639be00302 \
-		rmd160 af79a5e8b11f3605a9d3906ed6256ce4102effd5
+sha1 3c3b8d2bc4f4e229871254e92d6b18639be00302 \
+rmd160 af79a5e8b11f3605a9d3906ed6256ce4102effd5
 
 depends_build \
 	port:pkgconfig

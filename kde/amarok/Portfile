@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4    1.1
@@ -20,7 +20,7 @@ master_sites        kde:stable/${name}/${version}/src/
 use_bzip2           yes
 
 checksums           rmd160  89b8e3a56390dc240efc7dddd8e97ac9e4a03127 \
-                    sha256  a91280e588181cf9363d7146f339ef527220fe0c8057f26f010f592b01fdd2c0
+sha256  a91280e588181cf9363d7146f339ef527220fe0c8057f26f010f592b01fdd2c0
 
 configure.args-append   -DKDE4_BUILD_TESTS=OFF
 

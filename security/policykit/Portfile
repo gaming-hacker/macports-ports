@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -23,8 +23,8 @@ master_sites        https://www.freedesktop.org/software/polkit/releases/
 distname            polkit-${version}
 
 checksums           rmd160  fd98c3a4faf76c6adc021dff63f9a6cfd1804959 \
-                    sha256  2f87ecdabfbd415c6306673ceadc59846f059b18ef2fce42bac63fe283f12131 \
-                    size    1550932
+sha256  2f87ecdabfbd415c6306673ceadc59846f059b18ef2fce42bac63fe283f12131 \
+size    1550932
 
 depends_build-append \
                     port:pkgconfig \

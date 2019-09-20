@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -20,8 +20,8 @@ long_description    iODBC is the acronym for Independent Open DataBase Connectiv
 platforms           darwin
 
 checksums           rmd160  c2cd68c5c0789f2104fb8dafbc2f077aa8153cf4 \
-                    sha256  c5bdd5b30b6c3354112e3a953f29277f133aff4da21ffb214366e0b31a4a2375 \
-                    size    778544
+sha256  c5bdd5b30b6c3354112e3a953f29277f133aff4da21ffb214366e0b31a4a2375 \
+size    778544
 
 depends_build-append    port:automake \
                         port:autoconf \

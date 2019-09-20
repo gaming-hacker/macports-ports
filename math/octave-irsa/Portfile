@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -12,6 +12,6 @@ description         Irregular sampling analysis.
 long_description    ${description}
 
 checksums           rmd160 83343bbcb302f9ecbad311e879536ee7d540aaff \
-                    sha256 244c344e1217e3323aac46142c087ba303e5af2e2169cc7ea3287f4b5f2fe07c
+sha256 244c344e1217e3323aac46142c087ba303e5af2e2169cc7ea3287f4b5f2fe07c
 
 supported_archs     noarch

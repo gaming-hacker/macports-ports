@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup muniversal 1.0
@@ -21,8 +21,8 @@ master_sites    ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/ \
 extract.suffix    .tgz
 
 checksums       rmd160  c91aa87634856d84386d2d8498b647ea2b1b7521 \
-                sha256  d9523ffcab5cd14b709fcf3cb4d04e8bc76bb8970113255f372bc74954c6074d \
-                size    5704883
+sha256  d9523ffcab5cd14b709fcf3cb4d04e8bc76bb8970113255f372bc74954c6074d \
+size    5704883
 
 depends_lib     path:bin/perl:perl5 \
                 port:tcp_wrappers \

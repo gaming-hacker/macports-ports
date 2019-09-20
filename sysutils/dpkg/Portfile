@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -21,10 +21,10 @@ use_xz              yes
 extract.asroot      yes
 
 checksums           rmd160  4628134b3fc6d731c7397ef752a0af9ec5c3db63 \
-                    sha256  c15234e98655689586bff2d517a6fdc6135d139c54d52ae9cfa6a90007fee0ae \
-                    size    4645784
+sha256  c15234e98655689586bff2d517a6fdc6135d139c54d52ae9cfa6a90007fee0ae \
+size    4645784
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_build-append \
                     port:pkgconfig \

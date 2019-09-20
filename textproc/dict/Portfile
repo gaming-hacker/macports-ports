@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem          1.0
 
 name                dict
@@ -17,7 +17,7 @@ platforms           darwin
 distname            ${name}d-${version}
 master_sites        sourceforge:project/${name}/dictd/${distname}/
 checksums           rmd160  6c8b2ea5a8afa26fde019dea686d52ab5007ea17 \
-                    sha256  a237f6ecdc854ab10de5145ed42eaa2d9b6d51ffdc495f7daee59b05cc363656
+sha256  a237f6ecdc854ab10de5145ed42eaa2d9b6d51ffdc495f7daee59b05cc363656
 
 depends_build       port:libtool
 depends_lib         port:libmaa port:zlib

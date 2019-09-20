@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ distfiles           ${name}-generic-unix-${version}${extract.suffix}
 worksrcdir          [string map {- _} $name]-$version
 
 checksums           rmd160  b1d2e22d39eb711c9fb201513af5dcc7f788422e \
-                    sha256  43214e32316ce4eb6a0a0013b897b2a0c7c96d6814ba6bd01ae60032e8c2479f \
-                    size    9200564
+sha256  43214e32316ce4eb6a0a0013b897b2a0c7c96d6814ba6bd01ae60032e8c2479f \
+size    9200564
 
 depends_lib         port:erlang
 depends_build       port:libxslt

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               conflicts_build 1.0
@@ -25,8 +25,8 @@ homepage                http://meteora.ucsd.edu/~pierce/ncview_home_page.html
 master_sites            ftp://cirrus.ucsd.edu/pub/ncview/
 
 checksums               rmd160  d22d6bda76237b9b79d824a059a90896d087e2c5 \
-                        sha256  e8badc507b9b774801288d1c2d59eb79ab31b004df4858d0674ed0d87dfc91be \
-                        size 1267792
+sha256  e8badc507b9b774801288d1c2d59eb79ab31b004df4858d0674ed0d87dfc91be \
+size 1267792
 
 patchfiles              patch-configure.diff
 

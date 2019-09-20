@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -18,10 +18,10 @@ homepage            http://oss.oetiker.ch/rrdtool/
 master_sites        ${homepage}pub/
 
 checksums           rmd160  5f304435be4e0391eab2de41a1c33bf86c64e0a6 \
-                    sha256  989b778eda6967aa5192c73abafe43e7b10e6100776971a7e79d249942781aae \
-                    size    2881346
+sha256  989b778eda6967aa5192c73abafe43e7b10e6100776971a7e79d249942781aae \
+size    2881346
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_build       port:pkgconfig
 

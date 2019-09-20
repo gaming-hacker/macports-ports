@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -8,8 +8,8 @@ github.setup        kit-cel gr-gfdm f9b70a2b3f6761db16a6a1c19feb2a121e11a40a
 version             20180318
 revision            3
 checksums           rmd160 22f3da4c994253a74ff3fdcbb182ff48992435b1 \
-                    sha256 9f8560fa8ebbe4fbf6a9bdb96ecde41fa1c0a236d1a6e5c744d7c5dd5490070b \
-                    size   248905
+sha256 9f8560fa8ebbe4fbf6a9bdb96ecde41fa1c0a236d1a6e5c744d7c5dd5490070b \
+size   248905
 
 # allow gr-gsm to work with both gnuradio and gnuradio-devel ...
 

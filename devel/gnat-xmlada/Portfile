@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*-
 
 PortSystem	    1.0
 
@@ -24,8 +24,8 @@ distfiles	    xmlada-${version}-${epoch}.tar.bz2
 worksrcdir	    xmlada-${version}-${epoch}
 
 checksums	    md5     0cbed553776ae67e75a7b89324813aa7 \
-		    sha1    360fbc84dcf406c8edc0cfc8824bfa8080f1e9e4 \
-		    rmd160  0b2f44314ad2ef53f6fac094c3b20cbc32a12449
+sha1    360fbc84dcf406c8edc0cfc8824bfa8080f1e9e4 \
+rmd160  0b2f44314ad2ef53f6fac094c3b20cbc32a12449
 
 use_bzip2	    yes
 use_parallel_build  yes

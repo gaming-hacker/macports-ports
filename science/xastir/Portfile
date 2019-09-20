@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ homepage            http://www.xastir.org/
 master_sites        sourceforge:project/xastir/xastir-stable/xastir-${version}
 
 checksums           rmd160  2024eaaf1812113c088b601c996da0e768c531fe \
-                    sha256  775db0e3c4355051a9030b8398a1d995d48b3b721fa1c9bce5e3010300c1ebb6
+sha256  775db0e3c4355051a9030b8398a1d995d48b3b721fa1c9bce5e3010300c1ebb6
 
 depends_build       port:autoconf \
                     port:automake \

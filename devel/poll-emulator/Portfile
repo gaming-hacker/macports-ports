@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -17,7 +17,7 @@ long_description        This package implements the System V poll(2) system \
                         call for Unix-like systems that do not support poll.
 
 checksums               rmd160 7a093fb4043d3dd10ea3ac823ae0a7cc7a5bb647 \
-                        sha256 ea8a3607c2c652dadae7b25fda430fb4360bf27f855876bb1db447bdc727da75
+sha256 ea8a3607c2c652dadae7b25fda430fb4360bf27f855876bb1db447bdc727da75
 
 platform darwin {
     patchfiles          patch-Makefile.diff

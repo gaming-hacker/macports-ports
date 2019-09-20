@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 PortSystem              1.0
 
 name                    KlustaKwik
@@ -36,7 +36,7 @@ if {${subport} == ${name}} {
 
     master_sites        sourceforge:project/klustakwik/klustakwik/
     checksums           rmd160  d9eff4ddbda85cfd4258eee64756955473ea1613 \
-                        sha256  a5ccaba9fd9383591023d03bcedf339de462f9dbd540b424c873b6648172cf7a
+sha256  a5ccaba9fd9383591023d03bcedf339de462f9dbd540b424c873b6648172cf7a
 
     build.target
     build.args          CXX=${configure.cxx} \
@@ -59,7 +59,7 @@ subport maskedKlustaKwik {
     # Distfile decompresses to a tar file with no extension. Seriously.
     extract.suffix      .bz2
     checksums           rmd160  1d723b72ed17c285a160856c4f3131c1f3451896 \
-                        sha256  acdd9a71675d2c0b64809d7f67118eebdb42df1eddfc170b9a00fc8a37dac5b6
+sha256  acdd9a71675d2c0b64809d7f67118eebdb42df1eddfc170b9a00fc8a37dac5b6
 
     worksrcdir          MKK_sourceforge
 

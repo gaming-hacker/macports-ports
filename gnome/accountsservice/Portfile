@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           gobject_introspection 1.0
@@ -25,7 +25,7 @@ master_sites        https://www.freedesktop.org/software/accountsservice/
 use_xz              yes
 
 checksums           rmd160  72b3025468b855d50517729530a92e5cb31ca82e \
-                    sha256  e56494c2f18627900b57234e5628923cc16a37bf8fd16b06c46118d6ae9c007e
+sha256  e56494c2f18627900b57234e5628923cc16a37bf8fd16b06c46118d6ae9c007e
 
 depends_build       port:pkgconfig \
                     port:intltool \

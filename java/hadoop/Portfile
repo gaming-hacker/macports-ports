@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ license             Apache-2
 
 master_sites        apache:hadoop/common/${distname}
 checksums           rmd160  6330ded6043a1c8dd8597910e77f3dedf249a807 \
-                    sha256  94a1181771f173bdb55c8f901722825866396091f0516bdd12b34dc3de1706a1
+sha256  94a1181771f173bdb55c8f901722825866396091f0516bdd12b34dc3de1706a1
 
 patchfiles          patch-conf-hadoop-env.sh.diff \
                     patch-src-native.diff \

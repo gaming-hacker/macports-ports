@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -16,7 +16,7 @@ homepage            http://librdf.org/
 master_sites        http://download.librdf.org/source/
 
 checksums           rmd160  86bdf793f36ca01197580fe242c4456b8cbfae39 \
-                    sha256  de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
+sha256  de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681
 
 patchfiles          patch-configure.diff
 patch.pre_args      -p1

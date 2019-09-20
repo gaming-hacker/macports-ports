@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,7 +24,7 @@ long_description    Apophenia is an open statistical library for working with \
 homepage            http://apophenia.info
 
 checksums           rmd160  b905d993dae9eed84c431840e2ef69967f322ef9 \
-                    sha256  46fab2b1a9a34b2ace005c9ba9b1b7151a81b0261d7a0145adff3854b902acb1
+sha256  46fab2b1a9a34b2ace005c9ba9b1b7151a81b0261d7a0145adff3854b902acb1
 
 depends_lib         port:gsl \
                     port:sqlite3

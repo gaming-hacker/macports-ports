@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    dtrace
@@ -15,7 +17,7 @@ long_description        The ctfconvert, ctfmerge and ctfdump tools for \
                         these rely on an unpublished private framework.
 
 checksums               rmd160  f04dd8d0b0a1511dcec2a34536f3ec121f4beb4f \
-                        sha256  2c40103d02e3b240743a07d7b2c3ffce6cededc72dc534732a1cf887bc04b112
+sha256  2c40103d02e3b240743a07d7b2c3ffce6cededc72dc534732a1cf887bc04b112
 
 xcode.destroot.path     ${prefix}/bin
 xcode.target            ctfconvert ctfmerge ctfdump
@@ -24,7 +26,7 @@ xcode.target            ctfconvert ctfmerge ctfdump
 if {${os.major} == 9} {
     version         48.1
     checksums       rmd160  530acfb4bb2b69b121e5f461abba2a78ab53bd57 \
-                    sha256  3fdee5d4fcb36a4dae0f877dbe50330bd905cb09b10e70e7a219370a6e30760a
+sha256  3fdee5d4fcb36a4dae0f877dbe50330bd905cb09b10e70e7a219370a6e30760a
 
     depends_build           path:${prefix}/lib/libiberty.a:binutils
     xcode.build.settings    LIBRARY_SEARCH_PATHS='${prefix}/lib'          

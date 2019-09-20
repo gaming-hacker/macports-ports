@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ platforms       darwin
 master_sites    sourceforge:project/cdrdao/cdrdao/${version}
 
 checksums       md5 8d15ba6280bb7ba2f4d6be31d28b3c0c \
-                sha1 70d6547795a1342631c7ab56709fd1940c2aff9f \
-                rmd160 a162bdf2bc4d65581816d3a9e3c0d3ba66bb6523
+sha1 70d6547795a1342631c7ab56709fd1940c2aff9f \
+rmd160 a162bdf2bc4d65581816d3a9e3c0d3ba66bb6523
 use_bzip2       yes
 
 depends_build   port:pkgconfig

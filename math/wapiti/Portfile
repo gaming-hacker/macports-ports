@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ license             BSD
 
 master_sites        ${homepage}
 checksums           rmd160  8ca5a2db7a1e81e6871a72799e1bd35bf0731ec1 \
-                    sha256  4726101734acde4e2300f2a63991b76bbcf00d2b1897bd15277c9c9ebdfb654a
+sha256  4726101734acde4e2300f2a63991b76bbcf00d2b1897bd15277c9c9ebdfb654a
 
 use_configure       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -26,8 +26,8 @@ if {${name} eq ${subport}} {
     conflicts    stellarium-devel stellarium-qt4
     github.setup Stellarium stellarium 0.19.1 v
     checksums    rmd160 8ed78a544b9236f97d4322874860eedd5b11d436 \
-                 sha256 9ebdca45967d6bbfab8bebea3f91e243cbc89721471a18e4ad54dcf1997a2db0 \
-                 size   314661853
+sha256 9ebdca45967d6bbfab8bebea3f91e243cbc89721471a18e4ad54dcf1997a2db0 \
+size   314661853
     revision     0
 
     # temporary fix for the gpsd API changes
@@ -44,8 +44,8 @@ if {${name} eq ${subport}} {
     github.setup Stellarium stellarium c4e85006c75cb3f551a816d8e3c622044dc5cb6d
     version   20190916-[string range ${github.version} 0 7]
     checksums rmd160 23a96c5c40b840f7ec9cfeb302d657ac5cd2f513 \
-              sha256 e5e7eb7245d192387db80b7e8043fc02539dcd8afe9afa56a17e6f2ae2253e8f \
-              size   318039277
+sha256 e5e7eb7245d192387db80b7e8043fc02539dcd8afe9afa56a17e6f2ae2253e8f \
+size   318039277
     revision  0
 
     # temporary fix for the gpsd API changes

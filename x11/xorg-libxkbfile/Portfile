@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		xorg-libxkbfile
 version		1.1.0
@@ -15,8 +17,8 @@ master_sites	 xorg:individual/lib/
 distname	libxkbfile-${version}
 
 checksums       rmd160  e7315fef2836740fa4aa370418b697c29c4e56a1 \
-                sha256  758dbdaa20add2db4902df0b1b7c936564b7376c02a0acd1f2a331bd334b38c7 \
-                size    364678
+sha256  758dbdaa20add2db4902df0b1b7c936564b7376c02a0acd1f2a331bd334b38c7 \
+size    364678
 
 use_bzip2	yes
 use_parallel_build yes

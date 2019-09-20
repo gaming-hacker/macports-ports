@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             forkbomb
 version          1.4
@@ -20,8 +22,8 @@ platforms        darwin
 
 master_sites     http://home.tiscali.cz:8080/~cz210552/distfiles/
 checksums               md5     b806797a61a46c7176857bf24597a1b8 \
-                        rmd160  9f3a8b92c9f12f7181af49271a020cfe107faea8 \
-                        sha256  729b937e44c8408ad743fb243ee98580d01c9223a6716e8b25e0e1099097f1b6
+rmd160  9f3a8b92c9f12f7181af49271a020cfe107faea8 \
+sha256  729b937e44c8408ad743fb243ee98580d01c9223a6716e8b25e0e1099097f1b6
 
 patchfiles              patch-Makefile.diff
 

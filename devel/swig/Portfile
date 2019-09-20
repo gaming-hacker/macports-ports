@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -6,8 +6,8 @@ name            swig
 version         4.0.1
 revision        0
 checksums       rmd160 8dfb658742824cf47f5528d08f88c77e7aa79a35 \
-                sha256 7a00b4d0d53ad97a14316135e2d702091cd5f193bb58bcfcd8bc59d41e7887a9 \
-                size   8062962
+sha256 7a00b4d0d53ad97a14316135e2d702091cd5f193bb58bcfcd8bc59d41e7887a9 \
+size   8062962
 
 categories      devel
 maintainers     {michaelld @michaelld} openmaintainer
@@ -173,7 +173,7 @@ subport swig-gcj {
     }
     if {![variant_isset gcc43] && ![variant_isset gcc44] && ![variant_isset gcc45] &&
         ![variant_isset gcc47] && ![variant_isset gcc48]} {
-        ui_error "\n\nA +gcc4X variant must be selected; the variant '-gcc47' cannot be used alone.\n"
+        ui_error "\n\nA +gcc4X variant must be selected; the variant '' cannot be used alone.\n"
         return -code error "Invalid variant selection"
     }
 }

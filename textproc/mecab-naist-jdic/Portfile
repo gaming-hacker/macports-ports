@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ dist_subdir         mecab
 
 master_sites        sourceforge_jp:${dicname}/53500/
 checksums           rmd160  0f0bce78a7e304cfe6f3083cd5c947f95ddb7e0d \
-                    sha256  cb37700dc9a77b953f2bf3b15b49cfecd67848530a2cf8abcb09b594ca5628cc
+sha256  cb37700dc9a77b953f2bf3b15b49cfecd67848530a2cf8abcb09b594ca5628cc
 
 depends_lib         port:mecab-base
 

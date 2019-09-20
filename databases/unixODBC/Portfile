@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -7,8 +7,8 @@ conflicts           libiodbc virtuoso virtuoso-7
 version             2.3.7
 revision            1
 checksums           rmd160  ebbd9e9cee6888779e572b8a32596f49a8bdad2d \
-                    sha256  45f169ba1f454a72b8fcbb82abd832630a3bf93baa84731cf2949f449e1e3e77 \
-                    size    1669501
+sha256  45f169ba1f454a72b8fcbb82abd832630a3bf93baa84731cf2949f449e1e3e77 \
+size    1669501
 
 categories          databases
 platforms           darwin

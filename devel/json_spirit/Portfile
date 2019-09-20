@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -28,7 +28,7 @@ distname            ${name}_v${version}
 use_zip             yes
 
 checksums           sha1    abc23f20d04a5d52ef3dc3accd8046474f68105f \
-                    rmd160  fe9ee702ce9b4f6164d3d9b8f67ba7c6dfb9d7fd
+rmd160  fe9ee702ce9b4f6164d3d9b8f67ba7c6dfb9d7fd
 
 patchfiles          patch-CMakeLists.diff
 

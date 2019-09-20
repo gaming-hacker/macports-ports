@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,4 +12,4 @@ description         PEAR MDB2_TableBrowser package
 long_description    ${description}
 
 checksums           rmd160  4278b3c0ef66c55845c0191acca2987027d50edd \
-                    sha256  cbf245264aee6484a066d96a81d027089650c04c8e531e13afcc823f79ae8ae0
+sha256  cbf245264aee6484a066d96a81d027089650c04c8e531e13afcc823f79ae8ae0

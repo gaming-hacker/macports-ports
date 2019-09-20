@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -26,7 +26,7 @@ platforms           darwin
 master_sites        http://launchpad.net/gpp4/${branch}/${version}/+download/
 
 checksums           md5 e608519594f430c78be3c53e8e26a260 \
-                    sha256 ad18b8771f68b55bcf40a59f2be5489daf6bd97934a181602de7f44fbe27776f
+sha256 ad18b8771f68b55bcf40a59f2be5489daf6bd97934a181602de7f44fbe27776f
 
 depends_build       port:mmdb port:pkgconfig
 

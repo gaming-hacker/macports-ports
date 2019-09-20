@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            cherokee
 version         1.2.101
@@ -19,8 +21,8 @@ homepage        http://www.cherokee-project.com/
 master_sites    ${homepage}download/${branch}/${version}
 
 checksums       md5     ef47003355a2e368e4d9596cd070ef23 \
-                sha1    b27f149c7d7111207ac8c3cd8a4856c05490d136 \
-                rmd160  dd3dedc352ba17bdcefd8e200143b8ffa19ad035
+sha1    b27f149c7d7111207ac8c3cd8a4856c05490d136 \
+rmd160  dd3dedc352ba17bdcefd8e200143b8ffa19ad035
 
 depends_lib     port:pcre \
                 port:zlib \

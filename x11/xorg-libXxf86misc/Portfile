@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -17,8 +17,8 @@ master_sites     xorg:individual/lib/
 distname        libXxf86misc-${version}
 
 checksums       rmd160  7b3e8e8f77e67595df2981a45a1aadc9a5bc1739 \
-                sha256  a89c03e2b0f16239d67a2031b9003f31b5a686106bbdb3c797fb88ae472af380 \
-                size    282048
+sha256  a89c03e2b0f16239d67a2031b9003f31b5a686106bbdb3c797fb88ae472af380 \
+size    282048
 
 use_bzip2   yes
 use_parallel_build      yes

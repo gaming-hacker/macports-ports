@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ homepage            http://plib.sourceforge.net/
 master_sites        ${homepage}dist/
 
 checksums           md5 47a6fbf63668c1eed631024038b2ea90 \
-                    sha1 c2cf7e3e1e58f7b63dae4bb21e4fa82c3e4d4cfc \
-                    rmd160 55019bf3758ec2542804d8e3994f4bed5a188e60
+sha1 c2cf7e3e1e58f7b63dae4bb21e4fa82c3e4d4cfc \
+rmd160 55019bf3758ec2542804d8e3994f4bed5a188e60
 
 patchfiles          patch-src_js_jsMacOSX.cxx.diff \
                     patch-src_pui_puGLUT.h.diff \

@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                libxtract
 version             0.4.7
@@ -11,8 +13,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5 b1dadff5422a3f5b7661bbf2522dd01d \
-                    sha1 150e9ec17fb860845c58681bbc519907b4506cca \
-                    rmd160 9fa0d78ad263009ceb6ec2f1a441c633e8e60280
+sha1 150e9ec17fb860845c58681bbc519907b4506cca \
+rmd160 9fa0d78ad263009ceb6ec2f1a441c633e8e60280
 
 patchfiles          patch-configure.diff
 

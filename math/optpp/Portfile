@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup  mpi 1.0
 
 name		optpp
@@ -16,8 +18,8 @@ homepage	https://software.sandia.gov/opt++/
 distname	optpp-${version}
 master_sites	${homepage}/downloads/
 checksums   md5     7bd39f389c19ef16c3f62bc6ffa06234 \
-            sha1    089fb515f2f2e8632d603f2d1306d39aa355e9f0 \
-            rmd160  1f554c4702dedc24150f198e1a1df35ad1bf9a19
+sha1    089fb515f2f2e8632d603f2d1306d39aa355e9f0 \
+rmd160  1f554c4702dedc24150f198e1a1df35ad1bf9a19
 
 compilers.choose cc cxx
 mpi.setup

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -26,13 +26,13 @@ distfiles                   ${distname}${extract.suffix}:current \
                             ${name}-0.2.tar.bz2:old
 
 checksums                   ${distname}${extract.suffix} \
-                                rmd160  685734aa2e81d6f05a90bba6c29483f93e5a77e5 \
-                                sha256  e9c5f313364e9e2b5c581d1ceaa2d515b90a3b8b9bfc39bd230cdcdc97f7f6de \
-                                size    279808 \
+rmd160  685734aa2e81d6f05a90bba6c29483f93e5a77e5 \
+sha256  e9c5f313364e9e2b5c581d1ceaa2d515b90a3b8b9bfc39bd230cdcdc97f7f6de \
+size    279808 \
                             ${name}-0.2.tar.bz2 \
-                                rmd160  657afa170e4dad3b6b187af2a0c1554467d2a18e \
-                                sha256  692319800717b634bcaab9cb127d3de328150fb0d0b3001860bd2ab214c68564 \
-                                size    255949
+rmd160  657afa170e4dad3b6b187af2a0c1554467d2a18e \
+sha256  692319800717b634bcaab9cb127d3de328150fb0d0b3001860bd2ab214c68564 \
+size    255949
 
 depends_lib                 port:geomview \
                             port:tk

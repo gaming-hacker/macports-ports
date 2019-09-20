@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -13,11 +13,11 @@ categories          science
 description         The netCDF Operators
 
 compilers.choose    cc cxx
-compilers.setup     -clang33 -clang34
+compilers.setup      
 
 checksums           rmd160  12272e2a538246ad77de16168aa769d94f781a20 \
-                    sha256  6b2e74dbc14514f55700fcec9fe9c156ca5c59515ea2e2df4535a01345c73e80 \
-                    size    5224429
+sha256  6b2e74dbc14514f55700fcec9fe9c156ca5c59515ea2e2df4535a01345c73e80 \
+size    5224429
 
 homepage            http://nco.sourceforge.net/
 long_description \

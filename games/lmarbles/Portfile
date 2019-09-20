@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               app 1.0
 
 name                    lmarbles
@@ -24,7 +26,7 @@ homepage                http://lgames.sourceforge.net/index.php?project=LMarbles
 master_sites            sourceforge:project/lgames/lmarbles
 
 checksums               rmd160  cc77687efa88cecb2aabf2385eb6cb6a6dd71a9c \
-                        sha256  0e5a16a0116d325589b28f3555ced6a0b486f0fd7632cd3d98bee5cddf213e83
+sha256  0e5a16a0116d325589b28f3555ced6a0b486f0fd7632cd3d98bee5cddf213e83
 
 depends_lib             port:libsdl \
                         port:libsdl_mixer

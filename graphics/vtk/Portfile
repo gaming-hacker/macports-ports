@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -29,8 +29,8 @@ master_sites        http://www.vtk.org/files/release/${branch}
 distname            VTK-${version}
 
 checksums           rmd160  6e9b3d00602cb1e34483f4f68cc5f7a522516102 \
-                    sha256  0995fb36857dd76ccfb8bb07350c214d9f9099e80b1e66b4a8909311f24ff0db \
-                    size    33479307
+sha256  0995fb36857dd76ccfb8bb07350c214d9f9099e80b1e66b4a8909311f24ff0db \
+size    33479307
 
 cmake.out_of_source yes
 mpi.setup

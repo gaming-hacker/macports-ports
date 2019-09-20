@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               deprecated 1.0
@@ -42,7 +42,7 @@ master_sites \
     ftp://ftp.free.fr/pub/MySQL\${sitedir}
 
 checksums \
-    md5 37b4479951fa0cf052269d27c41ca200
+md5 37b4479951fa0cf052269d27c41ca200
 
 depends_lib \
     path:lib/libssl.dylib:openssl

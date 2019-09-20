@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ master_sites        xorg:individual/font/
 use_bzip2           yes
 
 checksums           rmd160 d1efa477c72f2522d3213544c838f774275d4c11 \
-                    sha256 53cb1fd83afdbe7939c0eac34003676ee0e6023216892d98054db90b703c98a5
+sha256 53cb1fd83afdbe7939c0eac34003676ee0e6023216892d98054db90b703c98a5
 
 depends_build       port:pkgconfig bin:bdftopcf:bdftopcf port:xorg-font-util \
                     bin:gzip:gzip

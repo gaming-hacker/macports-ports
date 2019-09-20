@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,7 +18,7 @@ master_sites        apache:httpd/${name}
 use_bzip2           yes
 
 checksums           rmd160  cb5fd1fbf705ba3dff62a705d06c0632acd491bd \
-                    sha256  442c29528e34fefc946dd356fcf8240e1953aed89eb5597fc55898d3d06f183f
+sha256  442c29528e34fefc946dd356fcf8240e1953aed89eb5597fc55898d3d06f183f
 
 depends_lib         port:apache2
 

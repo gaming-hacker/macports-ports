@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -19,10 +19,10 @@ distfiles           cws2fws
 dist_subdir         ${name}/${version}_1
 
 checksums           rmd160  8475a3e880ac76856b6c215c6d65584a575583bc \
-                    sha256  638164649e6626acaffd7e264b52cd711cc0ef71490a4d8221856ddd89ac0dd3 \
-                    size    4137
+sha256  638164649e6626acaffd7e264b52cd711cc0ef71490a4d8221856ddd89ac0dd3 \
+size    4137
 
-perl5.branches      5.28
+perl5.branches 5.28
 
 depends_run         port:p${perl5.major}-io-compress
 

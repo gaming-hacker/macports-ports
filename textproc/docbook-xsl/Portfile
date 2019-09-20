@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -39,8 +39,8 @@ subport ${name}-nons {
     description     Non-namespaced version of the DocBook XSL stylesheets
     distname        ${subport}-${version}
     checksums       rmd160  63bae43e79c3b8bc3dac66711eb8c9e5ae3e4a32 \
-                    sha256  ee8b9eca0b7a8f89075832a2da7534bce8c5478fc8fc2676f512d5d87d832102 \
-                    size    23400667
+sha256  ee8b9eca0b7a8f89075832a2da7534bce8c5478fc8fc2676f512d5d87d832102 \
+size    23400667
 }
 
 subport ${name}-ns {
@@ -48,8 +48,8 @@ subport ${name}-ns {
     description     Namespaced version of the DocBook XSL stylesheets
     distname        ${name}-${version}
     checksums       rmd160  425ca8723443bcd45c23d33df26e13b930b2ce42 \
-                    sha256  316524ea444e53208a2fb90eeb676af755da96e1417835ba5f5eb719c81fa371 \
-                    size    23404486
+sha256  316524ea444e53208a2fb90eeb676af755da96e1417835ba5f5eb719c81fa371 \
+size    23404486
 }
 
 subport ${name}-docs {
@@ -58,8 +58,8 @@ subport ${name}-docs {
     distname        ${name}-doc-${version}
     worksrcdir      ${name}-${version}
     checksums       rmd160  f0937514b2eaff60cdeca60b7dc1e86b07bf1e09 \
-                    sha256  9bc38a3015717279a3a0620efb2d4bcace430077241ae2b0da609ba67d8340bc \
-                    size    534208
+sha256  9bc38a3015717279a3a0620efb2d4bcace430077241ae2b0da609ba67d8340bc \
+size    534208
 
     destroot {
         copy ${worksrcpath}/doc ${destroot}${prefix}/${instdocdir}

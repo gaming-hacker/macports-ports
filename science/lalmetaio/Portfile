@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 
@@ -12,8 +12,8 @@ long_description \
   routines for reading/writing LIGO_LW XML files.
 
 checksums     rmd160 d2baa495c6b446f42cbe66ab5aa23c07823a7cab \
-              sha256 da06bc6a023e3edcc409d303ef576948d0a3c5103afaaaa748f33346b74daaa8 \
-              size   343108
+sha256 da06bc6a023e3edcc409d303ef576948d0a3c5103afaaaa748f33346b74daaa8 \
+size   343108
 
 depends_lib   port:lal \
               port:metaio

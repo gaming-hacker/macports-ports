@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,8 +26,8 @@ extract.suffix      .tgz
 worksrcdir          SVDLIBC
 
 checksums           md5     1b644ab4a3df72d6d0a1aeccb93ac503 \
-                    sha1    9243fbc0516af42b020423442212a025b3406dac \
-                    rmd160  3ef133f8ccd9cb1659c11c7692e148709aca7431
+sha1    9243fbc0516af42b020423442212a025b3406dac \
+rmd160  3ef133f8ccd9cb1659c11c7692e148709aca7431
 
 use_configure       no
 

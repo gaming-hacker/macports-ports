@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -31,8 +31,8 @@ homepage            http://www.h3dapi.org
 master_sites        ftp://www.h3dapi.org/pub/releases/source/
 
 checksums           rmd160  26e7ebf8dc1d315d8aa817c0db6ec6eefb293e36 \
-                    sha256  5f3d9262f125324c8bc52f099214ce2a78b58f7e1ba15b16ff97cfaf40a8f853 \
-                    size    29822042
+sha256  5f3d9262f125324c8bc52f099214ce2a78b58f7e1ba15b16ff97cfaf40a8f853 \
+size    29822042
 
 patchfiles          patch-FindAudiofile-PreventFramework.diff
 

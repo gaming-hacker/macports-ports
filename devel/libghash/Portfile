@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			libghash
 version			0.0.2
@@ -17,7 +19,7 @@ master_sites	http://www.partow.net/downloads/
 distname		GeneralHashFunctions_-_C
 dist_subdir		${name}/${version}_1
 checksums		rmd160 c13ce6f0de3970b81dfffa989920c37a7cc5f410 \
-			sha256 b352eda5d2660bfc4afc11918b577925d0d62fd39dcf6310be9bdb63d08b78c3
+sha256 b352eda5d2660bfc4afc11918b577925d0d62fd39dcf6310be9bdb63d08b78c3
 use_zip			yes
 patchfiles		patch-Makefile
 

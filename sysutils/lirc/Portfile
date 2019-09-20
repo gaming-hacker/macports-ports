@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           cxx11 1.1
 
 name                lirc
@@ -21,7 +23,7 @@ homepage            http://www.lirc.org
 master_sites        sourceforge
 #use_bzip2           yes
 checksums           rmd160  998a726823a90ad79bde50fce3bd0417c950ab59 \
-                    sha256  e225c8a6ed004ee0b3180d9bc8d8129dbc2b9ac3e0daccc2ca5e61ca16aae8d3
+sha256  e225c8a6ed004ee0b3180d9bc8d8129dbc2b9ac3e0daccc2ca5e61ca16aae8d3
 
 livecheck.distname  LIRC
 

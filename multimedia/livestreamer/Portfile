@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8::et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8::et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,7 +25,7 @@ long_description    Livestreamer is a command-line utility that pipes video stre
 homepage            http://docs.livestreamer.io/
 
 checksums           rmd160  51b79cff3a59ccc20f360176f857a969ab5e050e \
-                    sha256  a16a91122c4ccae92b8bfca7be65dbe08caa2c2460a160d73cda51d62c69281d
+sha256  a16a91122c4ccae92b8bfca7be65dbe08caa2c2460a160d73cda51d62c69281d
 
 python.default_version  34
 

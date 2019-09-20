@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -18,9 +18,9 @@ long_description    ${description}. Filters for bitshuffle, bzip2, and lz4 are \
                     more information.
 
 checksums \
-    rmd160  6724d20763725fe59d04329d5069e2943eec99cb \
-    sha256  3da58e714b94d2e1bffbf52a6b64952733874ef383c23a1ad08cd01cc69f28f9 \
-    size    943586
+rmd160  6724d20763725fe59d04329d5069e2943eec99cb \
+sha256  3da58e714b94d2e1bffbf52a6b64952733874ef383c23a1ad08cd01cc69f28f9 \
+size    943586
 
 variant optimized {
     # Bitshuffle code has sse and AVX implementations

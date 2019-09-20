@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           meson 1.0
@@ -20,8 +20,8 @@ master_sites        ${homepage}/-/archive/${version}
 distname            zathura-pdf-mupdf-${version}
 
 checksums           rmd160  34998a3d958037ecf8aff78374afe3f1a4bb4997 \
-                    sha256  6344acda225ca637fc72788cacce7448cd2e69ac13f19429726786a0b62cd7e3 \
-                    size    8901
+sha256  6344acda225ca637fc72788cacce7448cd2e69ac13f19429726786a0b62cd7e3 \
+size    8901
 
 configure.args-append \
                     -Dlink-external=true

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -41,7 +41,7 @@ if {${subport} ne "${name}-qt5"} {
 }
 
 checksums           rmd160  da690a57d743e8c79e2d60d8bb2f29a276b69055 \
-                    sha256  8729bc0936a481a113b8a56a747455ec488bf565182ca29d8bb583c74b194267
+sha256  8729bc0936a481a113b8a56a747455ec488bf565182ca29d8bb583c74b194267
 
 configure.args-append \
                     -DCharm_VERSION="${version}"

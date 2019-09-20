@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -15,7 +15,7 @@ homepage            http://bvi.sourceforge.net/
 master_sites        sourceforge
 
 checksums           rmd160 f1b3822cbaef7dfc078629819a0eefda6e82e15f \
-                    sha256 015a3c2832c7c097d98a5527deef882119546287ba8f2a70c736227d764ef802
+sha256 015a3c2832c7c097d98a5527deef882119546287ba8f2a70c736227d764ef802
 
 extract.suffix      .src.tar.gz
 

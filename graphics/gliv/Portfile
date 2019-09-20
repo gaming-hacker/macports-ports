@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    gliv
 version                 1.9.6
@@ -17,8 +19,8 @@ long_description        GLiv is an OpenGL image viewer, image \
                         user interface uses GTK+ with GtkGLExt.
 
 checksums               md5     5f16d48e493f2bbaf0c9135dc59247ae \
-                        sha1    52f49be04f4d33bfe1e14dd2468a6f10732f896b \
-                        rmd160  8636a8456112d45fff4a86ea87a353a1a5e05ac8
+sha1    52f49be04f4d33bfe1e14dd2468a6f10732f896b \
+rmd160  8636a8456112d45fff4a86ea87a353a1a5e05ac8
 
 depends_build           port:pkgconfig
 depends_lib             port:gtkglext

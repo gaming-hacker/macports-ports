@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup               java 1.0
@@ -25,8 +25,8 @@ master_sites            apache:ant/
 master_sites.mirror_subdir        binaries
 # Remember also to update the checksums in the source variant below.
 checksums               rmd160  9d439a52fea1b98bd2fbf548a26a09a9591fa319 \
-                        sha256  925fa954d82b6edf5cfd51fc66659d6e02cf1a6a082c3c41fe83f604c2d17c02 \
-                        size    4989904
+sha256  925fa954d82b6edf5cfd51fc66659d6e02cf1a6a082c3c41fe83f604c2d17c02 \
+size    4989904
 
 worksrcdir              ${name}-${version}
 set workTarget          ""
@@ -48,8 +48,8 @@ variant source description "build from source; not recommended" {
         distname                        ${name}-${version}-src
         master_sites.mirror_subdir      source
         checksums                       rmd160  a8ca528e26737a1778652a0e731bc2675e6d117b \
-                                        sha256  c8d68b396d9e44b49668bafe0c82f8c89497915254b5395d73d6f6e41d7a0e25 \
-                                        size    4271380
+sha256  c8d68b396d9e44b49668bafe0c82f8c89497915254b5395d73d6f6e41d7a0e25 \
+size    4271380
         set workTarget                  /${name}
 
         build.cmd                       ./build.sh

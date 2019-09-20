@@ -102,20 +102,20 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-3.4.2.src.tar.gz \
-                    rmd160  5fab44850977afccee34b21c6d339bc8dea21fce \
-                    sha256  17038d47069ad0700c063caed76f0c7259628b0e79651ce2b540d506f2f1efd7 \
+rmd160  5fab44850977afccee34b21c6d339bc8dea21fce \
+sha256  17038d47069ad0700c063caed76f0c7259628b0e79651ce2b540d506f2f1efd7 \
                     cfe-3.4.2.src.tar.gz \
-                    rmd160  f6b177408f5f9d3a453d41f1f60534f8e1e2845b \
-                    sha256  5ba6f5772f8d00f445209356a7daf83c5bca2da5acd10de517ad2359ae95bc10 \
+rmd160  f6b177408f5f9d3a453d41f1f60534f8e1e2845b \
+sha256  5ba6f5772f8d00f445209356a7daf83c5bca2da5acd10de517ad2359ae95bc10 \
                     compiler-rt-3.4.src.tar.gz \
-                    rmd160  530225a44fa743f80df759e5354a0854eb422306 \
-                    sha256  f37c89b1383ce462d47537a0245ac798600887a9be9f63073e16b79ed536ab5c \
+rmd160  530225a44fa743f80df759e5354a0854eb422306 \
+sha256  f37c89b1383ce462d47537a0245ac798600887a9be9f63073e16b79ed536ab5c \
                     libcxx-3.4.2.src.tar.gz \
-                    rmd160  7984caf2d055ea967544107ae1f948c77556d764 \
-                    sha256  826543ee2feb5d3313b0705145255ebb2ed8d52eace878279c2525ccde6e727c \
+rmd160  7984caf2d055ea967544107ae1f948c77556d764 \
+sha256  826543ee2feb5d3313b0705145255ebb2ed8d52eace878279c2525ccde6e727c \
                     clang-tools-extra-3.4.src.tar.gz \
-                    rmd160  8af0af0ead94bd50b1e6cbdcde5c4770bba5de0d \
-                    sha256  ba85187551ae97fe1c8ab569903beae5ff0900e21233e5eb5389f6ceab1028b4
+rmd160  8af0af0ead94bd50b1e6cbdcde5c4770bba5de0d \
+sha256  ba85187551ae97fe1c8ab569903beae5ff0900e21233e5eb5389f6ceab1028b4
 
 patch.pre_args  -p1
 patchfiles \

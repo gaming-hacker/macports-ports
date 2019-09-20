@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ long_description    Qstat is a command-line program that gathers real-time \
 master_sites        sourceforge:project/qstat/qstat/qstat-${version}
 
 checksums           md5     26c09831660ef9049fe74b786b80d091 \
-                    sha1    107796ab7512bdfdd0c3bb06a3458432b39458c7 \
-                    rmd160  576f1b81449366cd3586798e08ddad72cdfa3ffa
+sha1    107796ab7512bdfdd0c3bb06a3458432b39458c7 \
+rmd160  576f1b81449366cd3586798e08ddad72cdfa3ffa
 
 post-destroot {
         file mkdir ${destroot}${prefix}/share/doc/${name}

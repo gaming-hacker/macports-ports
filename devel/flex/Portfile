@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,7 +22,7 @@ github.tarball_from releases
 use_lzip            yes
 
 checksums           rmd160  22cbf6c42daa68ca33fb72adefb191724c256a78 \
-                    sha256  6fd4f424d69b3a03f7411050f74ce2199ac5cdd3a3174eb1f055fd04ea304ca7
+sha256  6fd4f424d69b3a03f7411050f74ce2199ac5cdd3a3174eb1f055fd04ea304ca7
 
 depends_lib         port:gettext
 depends_run         port:m4

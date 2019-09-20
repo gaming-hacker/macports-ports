@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            mongoose
 version         3.0
@@ -18,7 +20,7 @@ master_sites    googlecode
 extract.suffix  .tgz
 
 checksums       rmd160  1e11c3d3015f316ad8e5722874035604be9e3a4c \
-                sha256  018a7201e4d548e11a30b97f78ce1a02414a2f462bd12957b2247fdd7e865e22
+sha256  018a7201e4d548e11a30b97f78ce1a02414a2f462bd12957b2247fdd7e865e22
 
 worksrcdir      ${name}
 

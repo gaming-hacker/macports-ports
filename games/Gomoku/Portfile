@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup xcode 1.0
 
 name		Gomoku
@@ -21,9 +23,9 @@ master_sites	${homepage}:s \
 distfiles	${distname}${extract.suffix}:s \
 		${distname}_aqua${extract.suffix}:p
 checksums	${distname}${extract.suffix} \
-			md5 a6be66bed95483ecc6cfbde1ae746435 \
+md5 a6be66bed95483ecc6cfbde1ae746435 \
 		${distname}_aqua${extract.suffix} \
-			md5 0ed8a07fd4c2455651a6a5b630165b88
+md5 0ed8a07fd4c2455651a6a5b630165b88
 patchfiles	patch-Board.m.diff \
 		patch-Controller.h.diff \
 		patch-Controller.m.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   php 1.1
@@ -12,7 +12,7 @@ platforms                   darwin
 maintainers                 ryandesign openmaintainer
 license                     PHP-3.01
 
-php.branches                5.3 5.4 5.5 5.6
+php.branches 7.3
 
 homepage                    http://www.libming.org/
 master_sites                sourceforge:project/ming/Releases
@@ -26,7 +26,7 @@ description                 a PHP interface for generating Flash SWF files with 
 long_description            ${description}
 
 checksums                   rmd160  cd28c115a1eb37442f1b9c507ce3fad7837a6d54 \
-                            sha256  82da089bdfc3a7fcb732dc11c11a35003ee270d5102d4043d61ea69834239aeb
+sha256  82da089bdfc3a7fcb732dc11c11a35003ee270d5102d4043d61ea69834239aeb
 
 if {${name} ne ${subport}} {
     depends_lib-append      port:ming

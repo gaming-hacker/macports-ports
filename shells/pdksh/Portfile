@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		pdksh
 version		5.2.14
@@ -20,8 +22,8 @@ homepage    https://web.archive.org/web/20160918190548/http://www.cs.mun.ca/~mic
 master_sites	ftp://gd.tuwien.ac.at/utils/shells/pdk \
 		ftp://ftp.lip6.fr/pub/unix/shells/pdksh/
 checksums           rmd160  3ecb47ac7c7fc43445806a68c740c94278e2368f \
-                    sha256  ab15bcdd50f291edc632bca351b2edce5405d4f2ce3854d3d548d721ab9bbfa6 \
-                    size    480107
+sha256  ab15bcdd50f291edc632bca351b2edce5405d4f2ce3854d3d548d721ab9bbfa6 \
+size    480107
 
 configure.args  --infodir=${prefix}/share/info --mandir=${prefix}/share/man
 destroot.destdir	prefix=${destroot}${prefix}

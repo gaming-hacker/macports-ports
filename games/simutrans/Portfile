@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -38,7 +38,7 @@ if {${name} eq ${subport}} {
     distname            ${name}-src-${my_version}
     
     checksums           rmd160  82352f6509e4f9d8402cefb31b7fa7e4dbc228b7 \
-                        sha256  1f8c067290c7a286ddddbae41ba3cc4997a0e51d1d0dcbe57120a715d904791e
+sha256  1f8c067290c7a286ddddbae41ba3cc4997a0e51d1d0dcbe57120a715d904791e
     
     depends_build       port:pkgconfig
     
@@ -119,7 +119,7 @@ subport simutrans-pak64 {
     distname            simupak64-${my_branch}
     
     checksums           rmd160  ec268f1367d3b07f93b59a31e34f4b6be531f63e \
-                        sha256  a58052627e4f4257a8b0abd1622507aa5893ab13ebf38407bf43533b3b228719
+sha256  a58052627e4f4257a8b0abd1622507aa5893ab13ebf38407bf43533b3b228719
     
     post-extract {
         fs-traverse item ${worksrcpath} {

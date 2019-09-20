@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,9 +19,9 @@ github.tarball_from downloads
 extract.mkdir       yes
 
 checksums           rmd160  1af663479284a7b0d2e5ee38f94614a358ac9137 \
-                    sha256  9820bc99899075002f50bcd69f672a1e21c09234de714ec68414021358875412
+sha256  9820bc99899075002f50bcd69f672a1e21c09234de714ec68414021358875412
 
-python.default_version     27
+python.default_version 37
 
 depends_build       port:py${python.version}-setuptools
 depends_lib-append  port:py${python.version}-dateutil

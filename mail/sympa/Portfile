@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           perl5 1.0
@@ -7,7 +7,7 @@ name                sympa
 version             6.1.23
 revision            8
 set branch          [join [lrange [split ${version} .] 0 1] .]
-perl5.branches      5.26
+perl5.branches 5.28
 categories          mail
 license             GPL-2
 maintainers         nomaintainer
@@ -25,7 +25,7 @@ master_sites        http://www.sympa.org/distribution/ \
                     http://www.sympa.org/distribution/old/
 
 checksums           rmd160  0c65549bc01e154081554a7d9ff8bb11db1d0ccc \
-                    sha256  3d15aa8816dafcc4017cc06e52def44d5461498a05e9ef7634498b0993234ae4
+sha256  3d15aa8816dafcc4017cc06e52def44d5461498a05e9ef7634498b0993234ae4
 
 depends_lib         port:apache2 \
                     port:mod_fcgid \

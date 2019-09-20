@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       python 1.0
@@ -27,7 +27,7 @@ platforms       darwin
 distname        ccm-${version}
 
 checksums       md5 f60e8a1dfaaa0e767e19af05e0c8db05 \
-                sha256 8d46669127b4fbd517bc06488e1215475e3850fc97f565c092aa964ecb7674e9
+sha256 8d46669127b4fbd517bc06488e1215475e3850fc97f565c092aa964ecb7674e9
 
-python.default_version  27
+python.default_version 37
 depends_lib-append      port:py${python.version}-yaml

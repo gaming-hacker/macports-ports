@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -23,7 +23,7 @@ dist_subdir         ${name}/${version}
 use_zip             yes
 
 checksums           rmd160  73889dec7306cd3d435fe85e531fe2d81309ae4f \
-                    sha256  9a2a3a8dcc7bdac58fca88fde21bd9676b2fb4c31a178b2da74a7a3227bee0bd
+sha256  9a2a3a8dcc7bdac58fca88fde21bd9676b2fb4c31a178b2da74a7a3227bee0bd
 
 build.dir           ${worksrcpath}/Source/PBTOMAKE
 

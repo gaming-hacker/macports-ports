@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -7,8 +7,8 @@ PortGroup           github 1.0
 github.setup        uriparser uriparser 0.9.3 uriparser-
 revision            0
 checksums           rmd160  8fce419da21d3e5081d6eaa35eb3a3a84c8f6287 \
-                    sha256  28af4adb05e811192ab5f04566bebc5ebf1c30d9ec19138f944963d52419e28f \
-                    size    173073
+sha256  28af4adb05e811192ab5f04566bebc5ebf1c30d9ec19138f944963d52419e28f \
+size    173073
 
 categories          devel www
 platforms           darwin

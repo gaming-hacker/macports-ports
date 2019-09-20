@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup	github 1.0
 
 github.setup	apankrat sign 632d243fb9ccc1584118a37a5dd9b152d4454c83
@@ -13,7 +15,7 @@ long_description	${description}
 
 homepage	http://swapped.cc/sign/
 checksums		rmd160 f145829ef6f47ce96b8fe8bafddc7cf9d02c8aa4 \
-			sha256 1fe77931d03c0bac6b36a9dc12af42439fef3b0d7a43fe8c3c8d44fdf20ff04d
+sha256 1fe77931d03c0bac6b36a9dc12af42439fef3b0d7a43fe8c3c8d44fdf20ff04d
 
 depends_lib	path:lib/libssl.dylib:openssl
 

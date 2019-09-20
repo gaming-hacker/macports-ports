@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -18,7 +18,7 @@ homepage            https://savannah.nongnu.org/projects/$name/
 master_sites        savannah
 distname            png++-$version
 checksums           rmd160 f410b46cafe1fbe6972fad0a933dd51e8b090487 \
-                    sha256 339fa2dff2cdd117efb43768cb272745faef4d02705b5e0e840537a2c1467b72
+sha256 339fa2dff2cdd117efb43768cb272745faef4d02705b5e0e840537a2c1467b72
 
 depends_lib         port:libpng
 

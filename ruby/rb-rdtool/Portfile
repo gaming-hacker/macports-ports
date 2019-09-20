@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		ruby 1.0
 PortGroup		github 1.0
 
@@ -16,8 +18,8 @@ license			{Ruby GPL}
 platforms		darwin
 supported_archs	noarch
 checksums		md5 69dab7c77d62f51ca11e5d1f201c9f84 \
-				rmd160 be9644258c07a1d694a37b3a53636e0cef951430 \
-				sha1 77fad4202113d829f98639572ec85bb51701af6f
+rmd160 be9644258c07a1d694a37b3a53636e0cef951430 \
+sha1 77fad4202113d829f98639572ec85bb51701af6f
 
 test.run		yes
 test.cmd		${ruby.bin} -I./lib ./test.rb

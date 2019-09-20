@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake          1.1
@@ -27,8 +27,8 @@ distname                gmsh-${version}-source
 extract.suffix          .tgz
 
 checksums               rmd160  e126e2f054acb9321fb68299bbc354f6bccc6ce9 \
-                        sha256  853c6438fc4e4b765206e66a514b09182c56377bb4b73f1d0d26eda7eb8af0dc \
-                        size    13227645
+sha256  853c6438fc4e4b765206e66a514b09182c56377bb4b73f1d0d26eda7eb8af0dc \
+size    13227645
 
 patchfiles              patch-CMakeLists.txt.diff
 

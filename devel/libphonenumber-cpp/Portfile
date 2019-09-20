@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -29,13 +29,13 @@ master_sites        ${github.master_sites}:main \
                     ${gtest_master}:gtest
 
 checksums           ${main_distfile} \
-                    rmd160  6b58f522ab79c1888294de2badc43ba94e6aa789 \
-                    sha256  7db4a9a2fd86d794805925ab243ea8ce59c2016526a67308cab8505a8b3375bc \
-                    size    7302521 \
+rmd160  6b58f522ab79c1888294de2badc43ba94e6aa789 \
+sha256  7db4a9a2fd86d794805925ab243ea8ce59c2016526a67308cab8505a8b3375bc \
+size    7302521 \
                     ${gtest_distfile} \
-                    rmd160  ad357c51fa7a1f4f6be069cc1ceae2c722fc28a2 \
-                    sha256  9bf1fe5182a604b4135edc1a425ae356c9ad15e9b23f9f12a02e80184c3a249c \
-                    size    992298
+rmd160  ad357c51fa7a1f4f6be069cc1ceae2c722fc28a2 \
+sha256  9bf1fe5182a604b4135edc1a425ae356c9ad15e9b23f9f12a02e80184c3a249c \
+size    992298
 
 worksrcdir          google-libphonenumber-8cc9c1a/cpp
 

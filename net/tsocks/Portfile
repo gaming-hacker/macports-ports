@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,8 +25,8 @@ master_sites            ${homepage}
 use_bzip2               yes
 
 checksums               md5     dccf57d632136b62dbe7ec7970b6c3e3 \
-                        rmd160  4d0fc09ed1815cf66d067e9663061b596171d668 \
-                        sha256  a73ec8dc9ff74b1d3261afd6c5a6f7af8e129e470deddb1adde01adefac137c8
+rmd160  4d0fc09ed1815cf66d067e9663061b596171d668 \
+sha256  a73ec8dc9ff74b1d3261afd6c5a6f7af8e129e470deddb1adde01adefac137c8
 
 patchfiles              patch-Makefile.in \
                         patch-configure.in \

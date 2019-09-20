@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               app 1.0
@@ -26,7 +26,7 @@ long_description \
     cassette ports.
 
 checksums               rmd160  cc330ff569c2efc54b2139adc7d3428126bb1185 \
-                        sha256  3678abeef98c31e10a2f279319c509aa3ce11b9852b7ed68a49fbc53e41d3301
+sha256  3678abeef98c31e10a2f279319c509aa3ce11b9852b7ed68a49fbc53e41d3301
 
 post-extract {
     copy ${filespath}/${name}.in ${workpath}/${name}

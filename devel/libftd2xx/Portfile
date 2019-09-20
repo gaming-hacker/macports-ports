@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,7 +17,7 @@ distname            D2XX${version}
 master_sites        http://www.ftdichip.com/Drivers/D2XX/MacOSX/
 
 checksums           rmd160  d9fb6ceba3de5aaa87978e04bd6eb3b27ce8c2ef \
-                    sha256  7d6f39b4d092be2687321729e70ff8d08c20e288f7f036e1fdc19116c20a3250
+sha256  7d6f39b4d092be2687321729e70ff8d08c20e288f7f036e1fdc19116c20a3250
 
 use_dmg             yes
 use_configure       no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -32,13 +32,13 @@ homepage            https://www.abinit.org
 master_sites        ${homepage}/sites/default/files/packages
 
 checksums           rmd160  b47a865dc6a321ea5b66e4df4173f2ce93dacbe1 \
-                    sha256  4ee2e0329497bf16a9b2719fe0536cc50c5d5a07c65e18edaf15ba02251cbb73 \
-                    size    88370836
+sha256  4ee2e0329497bf16a9b2719fe0536cc50c5d5a07c65e18edaf15ba02251cbb73 \
+size    88370836
 
 
 compilers.choose    cc cxx fc
 # g95 is no longer supported by abinit
-mpi.setup           default require_fortran -g95
+mpi.setup           default require_fortran 
 
 configure.args-append  --enable-gw-dpc
 configure.fcflags-append  -ffree-line-length-none

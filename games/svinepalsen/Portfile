@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		svinepalsen
 version		0.2.1
@@ -29,9 +31,9 @@ distfiles	${name}-src-${version}${extract.suffix}:src \
 		${name}-data-${version}${extract.suffix}:data
 
 checksums	${name}-src-${version}${extract.suffix} \
-			md5 1c80abb76d139c51051e84ee79042349 \
+md5 1c80abb76d139c51051e84ee79042349 \
 		${name}-data-${version}${extract.suffix} \
-			md5 51580dffcfdc8c9301d653145cd4bc75
+md5 51580dffcfdc8c9301d653145cd4bc75
 
 depends_lib	port:libsdl \
 		port:libsdl_mixer \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -30,8 +30,8 @@ if {${subport} eq ${name}} {
 
     version             3.19
     checksums           rmd160  b9f41521519f6887585eb4cafa85a058ad1385b0 \
-                        sha256  27dd24d45b2ac69baab7933da2bf6ae5fb0be90130f67e753c110a3477155f39 \
-                        size    10581777
+sha256  27dd24d45b2ac69baab7933da2bf6ae5fb0be90130f67e753c110a3477155f39 \
+size    10581777
     revision            0
 
     master_sites        savannah
@@ -49,8 +49,8 @@ if {${subport} eq ${name}} {
     git.branch          a4ecde71556018f6d7a70831165169fffd0cc3a1
     version             20190817-[string range ${git.branch} 0 7]
     checksums           rmd160  9c365e553ebd80b173b0ddbbadb317d1103ff776 \
-                        sha256  16318c956793aa78f269dc5274d737da69c616c35746dd18b569eba6ca3d1048 \
-                        size    8698196
+sha256  16318c956793aa78f269dc5274d737da69c616c35746dd18b569eba6ca3d1048 \
+size    8698196
 
     master_sites        https://gitlab.com/gpsd/gpsd/-/archive/${git.branch}/
     distname            ${name}-${git.branch}

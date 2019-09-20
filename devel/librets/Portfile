@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sts=4:sw=4:ts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sts=2:sw=2:ts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ long_description    libRETS is RETS client library written in C++ that allows ra
                     the process.
 
 checksums           rmd160  336f0216575e5808860d9384cfba2b7536bc66fa \
-                    sha256  f908c879d98c63a20f5419d56c1da307ad73ee60d4f5ed693434e3fb6d09645b \
-                    size    904015
+sha256  f908c879d98c63a20f5419d56c1da307ad73ee60d4f5ed693434e3fb6d09645b \
+size    904015
 
 depends_build       port:autoconf \
                     port:automake \

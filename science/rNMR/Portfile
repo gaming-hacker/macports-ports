@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -30,7 +30,7 @@ master_sites        ${homepage}pages/download/files/Binaries/Mac%20and%20Linux/c
 distname            ${name}_${version}
 
 checksums           rmd160  daaa56141cb1fdd5febd33601147f6ef401ed837 \
-                    sha256  fb9082bb098af1678c5e9b566e6f3411ee46256d47488f5dd2f1f367b3513c1f
+sha256  fb9082bb098af1678c5e9b566e6f3411ee46256d47488f5dd2f1f367b3513c1f
 
 depends_lib         port:R
 

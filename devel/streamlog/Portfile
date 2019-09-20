@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           bitbucket 1.0
@@ -20,7 +20,7 @@ long_description    Streamlog is a simple and lightweight library that \
                     automatically writes to all of the added streams.
 
 checksums           rmd160  155dd5e4f4c1526c0516656d9d77d3bf610b447e \
-                    sha256  dc1dd26ce084a557b6e3a013fa87c1269344b94034de8598c4f17cc16625e6cd
+sha256  dc1dd26ce084a557b6e3a013fa87c1269344b94034de8598c4f17cc16625e6cd
 
 patchfiles          patch-cmakelists.diff
 

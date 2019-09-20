@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               active_variants 1.1
@@ -25,8 +25,8 @@ if {${name} eq ${subport}} {
     license             {GPL-2 GPL-3}
 
     checksums           rmd160  798bda4963ea01b17bb76c4376dbcebdc65e8c8a \
-                        sha256  702ba567e9ec0bbdd9b1a8161cd24648b4868d57a6cb89128f13c125f6f31947 \
-                        size    2397704
+sha256  702ba567e9ec0bbdd9b1a8161cd24648b4868d57a6cb89128f13c125f6f31947 \
+size    2397704
 
     depends_build       port:pkgconfig \
                         port:intltool \
@@ -83,7 +83,7 @@ subport goffice08 {
     revision            4
 
     checksums           sha256  165070beb67b84580afe80a8a100b674a81d553ab791acd72ac0c655f4fadb15 \
-                        rmd160  91d1df371c8164c8c5c9860c7c9c87b9fb69f6c3
+rmd160  91d1df371c8164c8c5c9860c7c9c87b9fb69f6c3
 
     license             GPL-2
 

@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			sword-dictionary-strongshebrew
 version			1.2
@@ -18,7 +20,7 @@ master_sites	http://www.crosswire.org/ftpmirror/pub/sword/packages/rawzip/
 dist_subdir		sword/${distname}-${version}_3
 use_zip			yes
 checksums		rmd160 537c33f8d56a3c24353c2d9166c7dc5f11da958c \
-				sha256 51bd1f67e8730ce60ce3ad601faa53e79110f24f695d88f85d914c153204d0e0
+sha256 51bd1f67e8730ce60ce3ad601faa53e79110f24f695d88f85d914c153204d0e0
 depends_lib		lib:libsword:sword
 use_configure	no
 build			{}

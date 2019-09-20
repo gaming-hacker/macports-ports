@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -19,8 +19,8 @@ long_description        libEtPan is a mail purpose library. It will be used for 
                         message/MIME parser
 
 checksums               rmd160  218c7f249109e7ca69f2d89a4528ff541155b997 \
-                        sha256  a85b3be56669c807ddc8234fadae8b0de8595bfdecc0ddb3e5fffa28655cabbc \
-                        size    5000466
+sha256  a85b3be56669c807ddc8234fadae8b0de8595bfdecc0ddb3e5fffa28655cabbc \
+size    5000466
 
 depends_build-append    port:autoconf \
                         port:automake \

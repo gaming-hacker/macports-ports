@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       kde4 1.1
@@ -21,7 +21,7 @@ supported_archs noarch
 depends_lib     port:kdelibs4
 
 checksums           rmd160  971cb9c50508a698d62788be4bfaec5270953c21 \
-                    sha256  d402220b7c0d8ffe5bd47765cc70ddec3ef0302c05c28910bcdc47581a35c50b
+sha256  d402220b7c0d8ffe5bd47765cc70ddec3ef0302c05c28910bcdc47581a35c50b
 
 post-destroot {
     xinstall -d -m 755 ${destroot}${prefix}/share/doc/kde-installed-packages

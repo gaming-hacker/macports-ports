@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,7 +18,7 @@ long_description        The tools have a executable file 'tir' and a script 'tir
 
 
 checksums               rmd160 7df06170ee91146b2c25b639bf8dddb058c7e0b6 \
-                        sha256 2623538947ace5730d69d82639e673248482d5c0c9495664b7c01ee5c4c029f0
+sha256 2623538947ace5730d69d82639e673248482d5c0c9495664b7c01ee5c4c029f0
 
 use_configure           no
 

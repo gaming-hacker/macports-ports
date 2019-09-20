@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -25,7 +25,7 @@ long_description    tolua++ is an extension of toLua, a tool to \
                     to create Lua modules.
 
 checksums           rmd160  c5cf5a16e4ea297b0bcf4ba8add3c4ed67ea3431 \
-                    sha256  1900908bd551c951d4ef6b460b00fb336086bfc67084d2edd029784ff3bf1a68
+sha256  1900908bd551c951d4ef6b460b00fb336086bfc67084d2edd029784ff3bf1a68
 
 depends_lib-append  port:lua51
 

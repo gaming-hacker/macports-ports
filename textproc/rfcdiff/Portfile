@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,8 +17,8 @@ master_sites     ${homepage}
 distname         ${name}-v${version}
 extract.suffix
 checksums        md5     974529296eda40a8c46a1ef6c5db7e57 \
-                 sha1    5a2bf0c2b1bb4a4a02482166a45df88e7e5bf87f \
-                 rmd160  fe97b99abc4bd22cef1b3214ba124a6da7d69fd5
+sha1    5a2bf0c2b1bb4a4a02482166a45df88e7e5bf87f \
+rmd160  fe97b99abc4bd22cef1b3214ba124a6da7d69fd5
 
 extract.only
 use_configure    no

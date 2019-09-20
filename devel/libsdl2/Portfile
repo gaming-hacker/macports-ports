@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup       compiler_blacklist_versions 1.0
@@ -23,7 +23,7 @@ master_sites    ${homepage}release/
 distname        ${my_name}-${version}
 
 checksums       rmd160 b35818cbf8eaf0c9c4d3b6d7a293c05a368366b2 \
-                sha256 b4656c13a1f0d0023ae2f4a9cf08ec92fffb464e0f24238337784159b8b91d57
+sha256 b4656c13a1f0d0023ae2f4a9cf08ec92fffb464e0f24238337784159b8b91d57
 
 # use of undeclared identifier 'NSEventSubtypeMouseEvent'
 patchfiles      10.11-fix.patch

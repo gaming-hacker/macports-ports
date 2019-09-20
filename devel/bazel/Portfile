@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                                            1.0
 PortGroup             github                          1.0
@@ -27,8 +27,8 @@ if { ${name} eq ${subport} } {
     conflicts         bazel21 bazel25
 
     checksums         rmd160  e83da6d224b5888da300082fd07a7f0457f2d07a \
-                      sha256  872a52cff208676e1169b3e1cae71b1fe572c4109cbd66eab107d8607c378de5 \
-                      size    265744999
+sha256  872a52cff208676e1169b3e1cae71b1fe572c4109cbd66eab107d8607c378de5 \
+size    265744999
 
     pre-fetch {
         # https://trac.macports.org/ticket/58518
@@ -56,8 +56,8 @@ if { ${name} eq ${subport} } {
     conflicts         bazel bazel21
 
     checksums         rmd160  cfff49a4be85f7693ae615c293b13d0a447b80d7 \
-                      sha256  7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51 \
-                      size    275804130
+sha256  7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51 \
+size    275804130
 
     pre-fetch {
         # https://trac.macports.org/ticket/58518
@@ -83,8 +83,8 @@ if { ${name} eq ${subport} } {
     conflicts         bazel bazel25
     
     checksums         rmd160  db49db0e036eee72451c7c83a92359c8b5b3a7ec \
-                      sha256  6ccb831e683179e0cfb351cb11ea297b4db48f9eab987601c038aa0f83037db4 \
-                      size    88279748
+sha256  6ccb831e683179e0cfb351cb11ea297b4db48f9eab987601c038aa0f83037db4 \
+size    88279748
     
     # Required java version.
     java.version      11

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -29,8 +29,8 @@ long_description    \
 conflicts           hs-happy
 
 checksums           rmd160  47cf8fed7674b0e2421019ff4c813ee4eea93882 \
-                    sha256  c6e6c9a7d71ba6349027f1fb818608f8355acafe6fa7cbe57265ec9951a5ddb4 \
-                    size    753553
+sha256  c6e6c9a7d71ba6349027f1fb818608f8355acafe6fa7cbe57265ec9951a5ddb4 \
+size    753553
 
 # use these to specify python versions, python3 required 
 set python3_version 3.7
@@ -59,10 +59,10 @@ haskell_stack.system_ghc \
 
 # relative paths to ${prefix}
 set ihaskell_datadir \
-                    share/${name}
+share/${name}
 set jupyter_dir     share/jupyter
 set hlint_datadir \
-                    share/hlint/datadir
+share/hlint/datadir
 
 post-extract {
     xinstall -o macports -m 0755 -d \

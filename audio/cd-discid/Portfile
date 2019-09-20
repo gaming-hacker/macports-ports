@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    cd-discid
 version                 1.4
@@ -23,7 +25,7 @@ homepage                http://linukz.org/cd-discid.shtml
 master_sites            http://linukz.org/download/
 
 checksums               rmd160  a63dabd35ca0b1f8114eeca78f79ea2f6b52cd6e \
-                        sha256  ffd68cd406309e764be6af4d5cbcc309e132c13f3597c6a4570a1f218edd2c63
+sha256  ffd68cd406309e764be6af4d5cbcc309e132c13f3597c6a4570a1f218edd2c63
 
 patchfiles              patch-Makefile.diff \
                         patch-cd-discid.c.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,8 +17,8 @@ platforms       darwin freebsd
 master_sites    sourceforge:project/dspam/dspam/dspam-${version}
 
 checksums       md5 0e0e405d3284485b2a43f47eaf6b09bb \
-                sha1 21133e0ee1880f3e8c849365b7e27a73f6d0413a \
-                rmd160 7e112981e45e483350b9afc056ebfa4c5561036c
+sha1 21133e0ee1880f3e8c849365b7e27a73f6d0413a \
+rmd160 7e112981e45e483350b9afc056ebfa4c5561036c
 
 configure.args  --sysconfdir='${prefix}/etc' \
                 --mandir='${prefix}/share/man' \

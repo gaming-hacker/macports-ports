@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    boo
 version                 0.9.1.3287
@@ -20,8 +22,8 @@ long_description        Boo is a new object oriented statically typed \
                         special focus on language and compiler extensibility.
 
 checksums               md5     7fed4903a6015777fa4a589f0d0ea397 \
-                        sha1    9c42253abd374f63b06685ce99ae7632678b1a80 \
-                        rmd160  535ca6caeccac2a9b71cc9d9dc5aa101e56bc003
+sha1    9c42253abd374f63b06685ce99ae7632678b1a80 \
+rmd160  535ca6caeccac2a9b71cc9d9dc5aa101e56bc003
 
 depends_lib             port:mono
 depends_build           port:nant port:pkgconfig

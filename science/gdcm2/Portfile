@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -20,8 +20,8 @@ master_sites            sourceforge:gdcm
 dist_subdir             gdcm
 
 checksums               rmd160  c301428024efd8137ceff84696a55c6ef7f6b80b \
-                        sha256  a2da88b7b3cbf9e76a9df3e89d06d057cca9ce54fc62fb059e04f47bf056b727 \
-                        size    3762694
+sha256  a2da88b7b3cbf9e76a9df3e89d06d057cca9ce54fc62fb059e04f47bf056b727 \
+size    3762694
 
 # C++11 required to use socketxx
 patchfiles-append       patch-cxx_standard.diff

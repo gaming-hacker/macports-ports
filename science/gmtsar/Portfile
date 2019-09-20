@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -33,8 +33,8 @@ distname            GMTSAR_V${version}
 
 
 checksums           rmd160  2bd36e74ecb8d2261cb8875b4ffd59adc5a39bf8 \
-                    sha256  dd25bb7e5e501a220c70ebd7ec3692e058004e9bf0db1868b7b40a69bb252a19 \
-                    size    14801408
+sha256  dd25bb7e5e501a220c70ebd7ec3692e058004e9bf0db1868b7b40a69bb252a19 \
+size    14801408
 
 depends_lib         port:gmt5 \
                     port:hdf5 \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    dvi2bitmap
 version                 1.0
@@ -16,7 +18,7 @@ homepage                http://dvi2bitmap.sourceforge.net/
 master_sites            sourceforge
 
 checksums               rmd160  81321103d7aca3b648f808377c2e6b4f6c001f12 \
-                        sha256  f40aca3b0cde343fa0b87408f811626832b1b154e95bcbd4e349c2b5c1d48b6d
+sha256  f40aca3b0cde343fa0b87408f811626832b1b154e95bcbd4e349c2b5c1d48b6d
 
 depends_lib             port:libpng port:zlib
 

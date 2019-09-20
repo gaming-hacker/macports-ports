@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ distname            ${name}_${version}
 use_zip             yes
 
 checksums           rmd160  5a78d0482a5a1dc62c4b14d113814d39bf141ca9 \
-                    sha256  3691090b23d4382849a4f4e0ab71d94526636c64deec94a97d7d9419e2e21ea3 \
-                    size    1954948
+sha256  3691090b23d4382849a4f4e0ab71d94526636c64deec94a97d7d9419e2e21ea3 \
+size    1954948
 
 worksrcdir          sdk/${name}/projects/gnuc macosx/
 

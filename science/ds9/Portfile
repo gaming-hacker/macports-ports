@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -26,8 +26,8 @@ homepage                http://ds9.si.edu/
 master_sites            ${homepage}/download/source
 distname                ${name}.${version}
 checksums               sha256  07c7396e220d9763d4a9edd18f5ba0edf8030a1bddbf1c65b33b962d37a97677 \
-                        rmd160  0c80027a4d5c5c42e0a50c996063d5e4509beee6 \
-                        size    84727405
+rmd160  0c80027a4d5c5c42e0a50c996063d5e4509beee6 \
+size    84727405
 
 depends_build           port:autoconf
 

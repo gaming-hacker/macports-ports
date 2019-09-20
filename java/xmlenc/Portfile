@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                    xmlenc
 version                 0.52
@@ -17,7 +19,7 @@ homepage                http://xmlenc.sourceforge.net/
 master_sites            ${homepage}
 
 checksums               rmd160  98aa383152c8b1f30c285b47d3872c4ee270bdd4 \
-                        sha256  b9440fe46d4a4e53cfbef15f9702b3cff955728a210d3246faf50a24a7b3aa53
+sha256  b9440fe46d4a4e53cfbef15f9702b3cff955728a210d3246faf50a24a7b3aa53
 
 extract.suffix          .tgz
 

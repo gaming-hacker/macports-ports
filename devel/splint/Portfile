@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,7 +25,7 @@ distname            ${name}-${version}.src
 depends_build-append    port:flex
 
 checksums           rmd160  52e9786d3cbeaa437877a33b18e42b32dff3b96b \
-                    sha256  c78db643df663313e3fa9d565118391825dd937617819c6efc7966cdf444fb0a
+sha256  c78db643df663313e3fa9d565118391825dd937617819c6efc7966cdf444fb0a
 
 worksrcdir          ${name}-${version}
 

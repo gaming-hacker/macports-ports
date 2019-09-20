@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,7 +20,7 @@ homepage            https://www.gnu.org/software/enscript/
 master_sites        gnu
 
 checksums           rmd160  eae37efdd916fbd2520834c2e2428e7b729621f1 \
-                    sha256  6d56bada6934d055b34b6c90399aa85975e66457ac5bf513427ae7fc77f5c0bb
+sha256  6d56bada6934d055b34b6c90399aa85975e66457ac5bf513427ae7fc77f5c0bb
 
 depends_lib         port:gettext
 

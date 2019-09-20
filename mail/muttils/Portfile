@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           bitbucket 1.0
 PortGroup           python 1.0
 
@@ -18,9 +20,9 @@ long_description \
 use_bzip2           yes
 
 checksums           rmd160  3293e0cc04b0fc17ed67c064be8def71ce46030a \
-                    sha256  592542315eec829742d76a82bfded5eaa22af1a509310113ec3d8e014e3ece0a
+sha256  592542315eec829742d76a82bfded5eaa22af1a509310113ec3d8e014e3ece0a
 
-python.default_version  27
+python.default_version 37
 
 post-destroot {
    set examplesdir ${prefix}/share/examples/${name}

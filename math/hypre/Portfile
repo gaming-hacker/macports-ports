@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -16,8 +16,8 @@ long_description    hypre is a library for solving large, sparse linear \
                     systems of equations on massively parallel computers.
 
 checksums           rmd160  e5728eab52dd5907473de790e3360c86b5ac2d7e \
-                    sha256  f2f39ab69c1a5f35edabba36e8ff18d0fce7e15f4e78c41ee6c6de9476902bea \
-                    size    7314626
+sha256  f2f39ab69c1a5f35edabba36e8ff18d0fce7e15f4e78c41ee6c6de9476902bea \
+size    7314626
 
 worksrcdir          ${distname}/src
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup ocaml 1.0
 
 name                ocaml-mysql
@@ -14,8 +16,8 @@ homepage            http://raevnos.pennmush.org/code/ocaml-mysql/
 master_sites        http://raevnos.pennmush.org/code/ocaml-mysql/
 
 checksums           md5     76f1282bb7299012669bf40cde78216b \
-                    rmd160  57b316fdbdd26762916859d04ab0ca15c1365203 \
-                    sha256  59d11111558986f0ed237016f9758a3cb99e2fdd0ce0dc128319a3ac2a55259e
+rmd160  57b316fdbdd26762916859d04ab0ca15c1365203 \
+sha256  59d11111558986f0ed237016f9758a3cb99e2fdd0ce0dc128319a3ac2a55259e
 
 depends_lib-append  port:mysql5
 depends_build       port:ocaml-findlib

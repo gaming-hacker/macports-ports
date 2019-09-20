@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -16,8 +16,8 @@ license             Permissive
 
 master_sites        https://www.fractint.org/ftp/current/linux/
 checksums           rmd160 8d69895ca3237caa76c9c1c93ee5abaeb77191c2 \
-                    sha256 0e2856e596a44f5a8dbd4cb389683ead484776cdba4cce75c6c2a09f86c9b849 \
-                    size 1336285
+sha256 0e2856e596a44f5a8dbd4cb389683ead484776cdba4cce75c6c2a09f86c9b849 \
+size 1336285
 
 patch.args          -p1
 patchfiles          patch-prefix-x11-dirs.diff

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qt4 1.0
@@ -26,7 +26,7 @@ patchfiles          patch-CMakeLists.txt.diff \
                     patch-qcppdialogimpl.h
 
 checksums           rmd160  32111bcf756b7972e5428f96e2b4352083794c39 \
-                    sha256  1b6620a6159cf3d50bb36cce544e91486817df7f1d553bf239d6db6108dd2ea5
+sha256  1b6620a6159cf3d50bb36cce544e91486817df7f1d553bf239d6db6108dd2ea5
 
 cmake.out_of_source yes
 

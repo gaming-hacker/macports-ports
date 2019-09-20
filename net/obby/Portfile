@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -20,7 +20,7 @@ master_sites            http://releases.0x539.de/${name}/ \
                         http://gentoo.osuosl.org/distfiles/
 
 checksums               rmd160  9b45340938cd0a85e379deab553be7396851366b \
-                        sha256  7d1d7ba6e800cea1b1a3c47d1189f959ef49a647ebe77170351e2dfd27b89b67
+sha256  7d1d7ba6e800cea1b1a3c47d1189f959ef49a647ebe77170351e2dfd27b89b67
 
 depends_build           port:pkgconfig
 

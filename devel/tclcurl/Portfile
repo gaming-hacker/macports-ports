@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		tclcurl
 version		7.17.1
@@ -16,8 +18,8 @@ homepage	${urlbase}english/
 master_sites	${urlbase}download/tarball/
 distname	TclCurl-${version}
 checksums	md5 6387d53f3965d62d4d1489d3ed13b6da \
-		sha1 a610af784850582c5e45d172b817a7946fc59d6a \
-		rmd160 6c8893e471b1cec942678fa165a28bbee61fc581
+sha1 a610af784850582c5e45d172b817a7946fc59d6a \
+rmd160 6c8893e471b1cec942678fa165a28bbee61fc581
 depends_lib	port:curl port:tcl
 configure.args	--exec-prefix=${prefix} \
 		--mandir=${prefix}/share/man \

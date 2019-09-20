@@ -1,4 +1,4 @@
-# -*- Mode: Tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description \
 homepage            http://fph.altervista.org/prog/bastet.html
 
 checksums           rmd160  9744b8efe4786c0e448ccb4b5e1a93b95778670c \
-                    sha256  e5f89dce9cef664f3ceabff6214b3d4a3e371273fadbba108d155faa2341ad57 \
-                    size    87496
+sha256  e5f89dce9cef664f3ceabff6214b3d4a3e371273fadbba108d155faa2341ad57 \
+size    87496
 
 depends_lib-append  port:boost \
                     port:ncurses

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             libxmi
 version          1.2
@@ -14,7 +16,7 @@ platforms        darwin
 master_sites     gnu
 
 checksums        md5 4e6935484f0ad71b531920bf4c546b47 \
-                 sha1 62fa13ec4c8b706729c2553122e44f81715f3c0b \
-                 rmd160 6622ed9793605380c8f55f93bf953182fff07dd4
+sha1 62fa13ec4c8b706729c2553122e44f81715f3c0b \
+rmd160 6622ed9793605380c8f55f93bf953182fff07dd4
 
 configure.args   --infodir=${prefix}/share/info

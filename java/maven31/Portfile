@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup java 1.0
@@ -36,8 +36,8 @@ distname        apache-maven-${version}-bin
 worksrcdir      apache-maven-${version}
 
 checksums       md5    6342fdf6b0aabc1457c7f8cc218127ed \
-                sha1   630eea2107b0742acb315b214009ba08602dda5f \
-                sha256 077ed466455991d5abb4748a1d022e2d2a54dc4d557c723ecbacdc857c61d51b
+sha1   630eea2107b0742acb315b214009ba08602dda5f \
+sha256 077ed466455991d5abb4748a1d022e2d2a54dc4d557c723ecbacdc857c61d51b
 
 java.version    1.5+
 java.fallback   openjdk11

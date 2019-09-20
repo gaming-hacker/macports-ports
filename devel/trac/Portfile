@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name			trac
@@ -22,15 +24,15 @@ master_sites	https://download.edgewall.org/trac/ \
 distname	Trac-${version}
 
 checksums	md5	9984fd689f3e6243aa70a32070dafd80     \
-		sha1	24b7650fc093966431b270f89b42675f86d3db88 \
-		rmd160	201f59c7659b67527d198d6d005b2f10ee575f92 \
-		sha256	a1ef354488d77bbce2aea016996fb71c76faf5f848d8c787703bad0d5e0ee5b1 \
-		size	5443966
+sha1	24b7650fc093966431b270f89b42675f86d3db88 \
+rmd160	201f59c7659b67527d198d6d005b2f10ee575f92 \
+sha256	a1ef354488d77bbce2aea016996fb71c76faf5f848d8c787703bad0d5e0ee5b1 \
+size	5443966
 
 variant python27 description {Use Python 2.7} {}
 
-default_variants +python27
-python.default_version 27
+
+python.default_version 37
 
 depends_lib	port:py${python.version}-pygments \
 		port:py${python.version}-genshi \

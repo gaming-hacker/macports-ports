@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -27,7 +27,7 @@ depends_build-append    path:bin/bison:bison \
 depends_lib             port:boost
 
 checksums               rmd160  34bdb046f345ab5919c150038544dad590fc9ded \
-                        sha256  ff64fb17e0eff2bfe1a1844649e762ffd83eecef9af1c5ead0a66d2af39bb63c
+sha256  ff64fb17e0eff2bfe1a1844649e762ffd83eecef9af1c5ead0a66d2af39bb63c
 
 cmake.out_of_source     yes
 

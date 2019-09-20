@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,8 +22,8 @@ depends_lib      port:libiconv
 master_sites     sourceforge:project/libcddb/libcddb/${version}
 
 checksums        md5     8bb4a6f542197e8e9648ae597cd6bc8a \
-                 sha1    2a7855918689692ff5ca3316d078a859d51959ce \
-                 rmd160  e38ed8c7dd5a9b4a5b2a1772a9e98f914872c397
+sha1    2a7855918689692ff5ca3316d078a859d51959ce \
+rmd160  e38ed8c7dd5a9b4a5b2a1772a9e98f914872c397
 
 use_bzip2        yes
 

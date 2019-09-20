@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,8 +25,8 @@ homepage                http://www.complang.tuwien.ac.at/schani/metapixel/
 master_sites            ${homepage}files/
 
 checksums               md5     af5d77d38826756af213a08e3ada9941 \
-                        sha1    f917aec91430b1bdbcc7b3dea29cb93f15a04c77 \
-                        rmd160  7343c66e925e5b55cfe63624be18159717b1295e
+sha1    f917aec91430b1bdbcc7b3dea29cb93f15a04c77 \
+rmd160  7343c66e925e5b55cfe63624be18159717b1295e
 
 depends_lib             port:jpeg \
                         port:giflib \

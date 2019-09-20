@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -18,8 +18,8 @@ master_sites        http://archive.xfce.org/src/xfce/thunar/${branch}/
 use_bzip2           yes
 
 checksums           rmd160  2af84abd40c210478b7626860f94b25b7de8218c \
-                    sha256  cb9fc2a8005494124a8d412eff7d7cb8032f7ff91b3d254fcff2d0a0d2790d20 \
-                    size    1977562
+sha256  cb9fc2a8005494124a8d412eff7d7cb8032f7ff91b3d254fcff2d0a0d2790d20 \
+size    1977562
 
 # Needed for intltool
 configure.perl      ${prefix}/bin/perl5.28

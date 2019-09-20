@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           kde4    1.1
@@ -20,7 +20,7 @@ master_sites        http://ktorrent.pwsp.net/downloads/${ktorrent_version}/
 use_bzip2           yes
 
 checksums           rmd160  1fba9d388868345f623d30dd8d7f5bc2c7c68b4b \
-                    sha256  2fe11ccb4bf2028c3da11e52cde890f1b3a90560e548eac89a4f8e1558b09725
+sha256  2fe11ccb4bf2028c3da11e52cde890f1b3a90560e548eac89a4f8e1558b09725
 
 patchfiles          patch-boostHeaders.diff
 

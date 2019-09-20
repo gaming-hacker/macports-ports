@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -29,7 +29,7 @@ platforms           darwin
 distname            libindi_${version}
 
 checksums           rmd160  aec032a5a131a67439fca36dc3a1bb71f0979dd5 \
-                    sha256  44ef0a943fe9f312f874b2e76b9892bd850c60cbd936f608fb2c224375d6d0b3
+sha256  44ef0a943fe9f312f874b2e76b9892bd850c60cbd936f608fb2c224375d6d0b3
 
 depends_lib         port:libnova \
                     port:zlib \

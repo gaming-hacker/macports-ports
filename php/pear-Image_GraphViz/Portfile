@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,4 +12,4 @@ description         PEAR Image_GraphViz package
 long_description    ${description}
 
 checksums           rmd160  627c58fbd088654c5f97e51ed6aa3025007f9cbc \
-                    sha256  e94c4a2fc52f76e1bad5c2e75a4e253fcd125a1d839e38dadf28b06729461ee6
+sha256  e94c4a2fc52f76e1bad5c2e75a4e253fcd125a1d839e38dadf28b06729461ee6

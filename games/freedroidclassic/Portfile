@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               app 1.0
 
 name                    freedroidclassic
@@ -26,7 +28,7 @@ master_sites            sourceforge:project/freedroid/freedroidClassic/Freedroid
 distname                freedroid-${version}
 
 checksums               rmd160  b53804a29efca5e8544a305694fb77b9097dc1c9 \
-                        sha256  0934bd29fb2ad0367ea3bdfdce47537179f9af6aa960cbcc897c40da2e1a0ee3
+sha256  0934bd29fb2ad0367ea3bdfdce47537179f9af6aa960cbcc897c40da2e1a0ee3
 
 depends_lib             port:libsdl \
                         port:libsdl_image \

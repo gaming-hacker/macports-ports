@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               xcode 1.0
@@ -19,8 +19,8 @@ master_sites            macports
 use_bzip2               yes
 
 checksums               md5 05c41aa87c3a6c390f83c12db7c4ff3d \
-                        sha1 2e609fe0548f44a316f77f15db39581aad7a587f \
-                        rmd160 0dbb3cbb23730654244091f4683c51a590a373ab
+sha1 2e609fe0548f44a316f77f15db39581aad7a587f \
+rmd160 0dbb3cbb23730654244091f4683c51a590a373ab
 
 post-patch {
     copy ${filespath}/Info-Freecell.plist ${worksrcpath}

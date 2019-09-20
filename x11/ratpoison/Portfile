@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		ratpoison
 version		1.4.5
@@ -26,7 +28,7 @@ homepage	https://www.nongnu.org/${name}/
 master_sites	https://savannah.nongnu.org/download/${name}/
 
 checksums	sha1 e32430de49c4ab5d501653c03dd19dfb623cb08b \
-		rmd160 ae2fc0cd7ef561944cf7aea0623875a7148771ce
+rmd160 ae2fc0cd7ef561944cf7aea0623875a7148771ce
 
 depends_lib \
 	port:xorg-libXinerama \

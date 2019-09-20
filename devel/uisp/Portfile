@@ -1,4 +1,6 @@
-PortSystem        1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name              uisp
 version           20050207
 categories        devel
@@ -11,7 +13,7 @@ long_description  UISP is a tool for AVR (and AT89S) microcontrollers \
 homepage          https://www.nongnu.org/uisp/
 master_sites      https://savannah.nongnu.org/download/uisp/
 checksums           rmd160  c0c1236912ac85515dc7f9d2851fa4aea621d525 \
-                    sha256  7c43c5f34f00a7243bda87457e43dc9122b5a3837b1370b30f39c1eecbedccae
+sha256  7c43c5f34f00a7243bda87457e43dc9122b5a3837b1370b30f39c1eecbedccae
 
 patchfiles        patch-src__Makefile.in
 

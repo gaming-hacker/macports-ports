@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -19,7 +19,7 @@ worksrcdir              ${real_name}
 platforms               darwin freebsd
 
 checksums               rmd160  a253e6a4424326455a00908e660d7d29a1730f54 \
-                        sha256  c9843becf2cec9022e11a05c8e95ae9e8d23624054c5c4e8e2b68f153e98d665
+sha256  c9843becf2cec9022e11a05c8e95ae9e8d23624054c5c4e8e2b68f153e98d665
 
 description             unit testing for PHP
 long_description \

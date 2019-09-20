@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
                     
 PortSystem          1.0
 PortGroup           github 1.0
@@ -34,13 +34,13 @@ master_sites        ${github.master_sites}:main \
                     https://github.com/publicsuffix/list/tarball/${psl_data_commit}:list
 
 checksums           ${main_distfile} \
-                    rmd160  6b8672d15e8d3fef30456b02202894534358e77e \
-                    sha256  41bd1c75a375b85c337b59783f5deb93dbb443fb0a52d257f403df7bd653ee12 \
-                    size    9217951 \
+rmd160  6b8672d15e8d3fef30456b02202894534358e77e \
+sha256  41bd1c75a375b85c337b59783f5deb93dbb443fb0a52d257f403df7bd653ee12 \
+size    9217951 \
                     ${psl_data_distfile} \
-                    rmd160  c31c8d554fe95e422ecb88a31352738d7843e4b6 \
-                    sha256  062f84f562662eab96c0383a4496395047669a343bd54b830c4247819e3b2f12 \
-                    size    87149
+rmd160  c31c8d554fe95e422ecb88a31352738d7843e4b6 \
+sha256  062f84f562662eab96c0383a4496395047669a343bd54b830c4247819e3b2f12 \
+size    87149
 
 depends_build-append \
                     port:pkgconfig \

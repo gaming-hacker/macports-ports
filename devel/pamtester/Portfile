@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            pamtester
 version         0.1.2
@@ -17,8 +19,8 @@ homepage        http://pamtester.sourceforge.net/
 master_sites    sourceforge
 
 checksums       md5     f441a6617cbc640ea02f3e22058c0461 \
-                sha1    33bcc610d7f208b50a0a23c144bdbd1e2cae4ac6 \
-                rmd160  a3ed40c8be57e05b56def790de7f7b25770b1e51
+sha1    33bcc610d7f208b50a0a23c144bdbd1e2cae4ac6 \
+rmd160  a3ed40c8be57e05b56def790de7f7b25770b1e51
 
 configure.args-append  --mandir=${prefix}/share/man
 

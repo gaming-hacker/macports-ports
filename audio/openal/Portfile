@@ -1,4 +1,6 @@
-PortSystem              1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup               xcode 1.0
 
 name                    openal
@@ -16,7 +18,7 @@ homepage                http://www.openal.org/
 master_sites            sourceforge:macports
 use_bzip2               yes
 checksums               sha1 16c230864a68c00910c5e5821ac34c795ec46458 \
-                        rmd160 35348268e975dc7ce5fecf30430ee4f748103921
+rmd160 35348268e975dc7ce5fecf30430ee4f748103921
 
 # distfile exported from svn://connect.creativelabs.com/OpenAL/tags/MacOSX1-3_Spec1-1
 worksrcdir              ${name}-${version}/OpenAL-MacOSX

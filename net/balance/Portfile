@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			balance
 version			3.52
@@ -15,8 +17,8 @@ homepage		http://balance.sourceforge.net/
 master_sites	http://www.inlab.de/
 
 checksums		md5     dd43b243290471536b7689382b7bb8d4 \
-				sha1    b916f4366d7608914469c148f87efc22a4f90222 \
-				rmd160  d9a462e2ef12e6c2af40b05855011827cf8564a5
+sha1    b916f4366d7608914469c148f87efc22a4f90222 \
+rmd160  d9a462e2ef12e6c2af40b05855011827cf8564a5
 
 use_configure	no
 

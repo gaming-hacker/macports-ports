@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,8 +25,8 @@ homepage            https://vulkan.lunarg.com
 use_zip             no
 
 checksums           sha256  80e182fc21f4d8636e929243609956f2e9fb86ab5a1afd0cb9e0f10af59e1ac6 \
-                    rmd160  3375d9ef0bbb47d17b5be1d72a46078043313b5c \
-                    size    616030
+rmd160  3375d9ef0bbb47d17b5be1d72a46078043313b5c \
+size    616030
 
 patchfiles          cmake.patch
 

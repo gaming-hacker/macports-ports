@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -25,8 +25,8 @@ depends_build-append \
                     port:pkgconfig
 
 checksums           rmd160  c6553757ae9675434e647f3cc1e6357bc60c7d2a \
-                    sha256  43a0ba57bf942095fe159d0748d8933c6b1dd1117caf0273fa9a0003215e681b \
-                    size    1210224
+sha256  43a0ba57bf942095fe159d0748d8933c6b1dd1117caf0273fa9a0003215e681b \
+size    1210224
 
 # https://sources.debian.org/data/main/o/opendkim/2.11.0~alpha-12/debian/patches/openssl_1.1.0_compat.patch
 patchfiles          openssl_1.1.0_compat.patch

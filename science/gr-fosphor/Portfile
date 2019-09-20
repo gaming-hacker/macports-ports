@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -13,8 +13,8 @@ github.setup        osmocom gr-fosphor 7b6b9961bc2d9b84daeb42a5c8f8aeba293d207c
 version             20160522
 revision            12
 checksums           rmd160 b58669d4caa99a724eaa8ea44848bbea07715d96 \
-                    sha256 57b8e59b6861a867f4cb938ef654c7f753b53720d3b4b249dd8f398ba9c2998b \
-                    size   254645
+sha256 57b8e59b6861a867f4cb938ef654c7f753b53720d3b4b249dd8f398ba9c2998b \
+size   254645
 
 # stealth update equivalent when moving to GitHub
 # remove on next update

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name                nMOLDYN
@@ -14,12 +16,12 @@ platforms           darwin
 
 master_sites        https://forge.epn-campus.eu/attachments/download/1160/
 checksums           md5     2d854468c7dfb8e1cb7250bae93b5d7a \
-                    sha1    d06f24ab3af9d3b7da39f46b42c50d1dfa72a519 \
-                    rmd160  152b13853026d93b7080e30e812abf7f92e7f2ef
+sha1    d06f24ab3af9d3b7da39f46b42c50d1dfa72a519 \
+rmd160  152b13853026d93b7080e30e812abf7f92e7f2ef
 
 use_zip             yes
 
-python.default_version  27
+python.default_version 37
 
 patchfiles          setup.py.patch
 

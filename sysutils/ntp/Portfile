@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		ntp
 version		4.2.8p13
@@ -16,9 +18,9 @@ homepage	http://www.ntp.org/
 master_sites	https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-[join [lrange [split ${version} .] 0 1] .]/
 
 checksums	md5	ea040ab9b4ca656b5229b89d6b822f13 \
-		rmd160	5d85e2a01bafa0bb755ab49e462f6dd7f96ce3d0 \
-		sha256	288772cecfcd9a53694ffab108d1825a31ba77f3a8466b0401baeca3bc232a38 \
-		size	6949363
+rmd160	5d85e2a01bafa0bb755ab49e462f6dd7f96ce3d0 \
+sha256	288772cecfcd9a53694ffab108d1825a31ba77f3a8466b0401baeca3bc232a38 \
+size	6949363
 
 platforms	darwin
 

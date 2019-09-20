@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        ftp://ftp.proftpd.org/distrib/source/ \
                     ftp://ftp.solnet.ch/mirror/proftpd.org/distrib/source/
 
 checksums           rmd160  5da3934e46ea517ee6652382e5e3a9f87e591dd6 \
-                    sha256  91ef74b143495d5ff97c4d4770c6804072a8c8eb1ad1ecc8cc541b40e152ecaf \
-                    size    20251898
+sha256  91ef74b143495d5ff97c4d4770c6804072a8c8eb1ad1ecc8cc541b40e152ecaf \
+size    20251898
                     
 depends_lib         path:lib/libssl.dylib:openssl
 

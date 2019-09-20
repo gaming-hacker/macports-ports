@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		wmcpuload
 version		1.0.1
@@ -18,8 +20,8 @@ AfterStep, BlackBox, and Enlightenment.
 platforms	darwin freebsd
 master_sites	http://distfiles.gentoo.org/distfiles/
 checksums           md5     f15b1a06a9b3467b84f36ba9e97cdf3e \
-                    sha1    6e767dd5acd291cfe3fc4fece5ff32eef78915e4 \
-                    rmd160  1ff01f09464dc8628acd7d375adcd106ea7ce317
+sha1    6e767dd5acd291cfe3fc4fece5ff32eef78915e4 \
+rmd160  1ff01f09464dc8628acd7d375adcd106ea7ce317
 
 depends_lib \
 	port:xorg-libXext \

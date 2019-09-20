@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -22,13 +22,13 @@ distfiles               ${src_distfile} \
                         ${help_distfile}
 
 checksums               ${src_distfile} \
-                        md5     3bea19d0086e3660cf53d256d6efa110 \
-                        sha1    2a4d4ef11f1a99de450dc8aa7104171a09fd9264 \
-                        rmd160  05351859e05f788cea7940b51d652a2910674833 \
+md5     3bea19d0086e3660cf53d256d6efa110 \
+sha1    2a4d4ef11f1a99de450dc8aa7104171a09fd9264 \
+rmd160  05351859e05f788cea7940b51d652a2910674833 \
                         ${help_distfile} \
-                        md5     acd61c53392a793250f6e86cbf277261 \
-                        sha1    1733ac530659a47c284492ac0f1a8d5d361c354f \
-                        rmd160  4d61a09a9a908f4221e28d33b313496f99dff62e
+md5     acd61c53392a793250f6e86cbf277261 \
+sha1    1733ac530659a47c284492ac0f1a8d5d361c354f \
+rmd160  4d61a09a9a908f4221e28d33b313496f99dff62e
 
 description             a text-based IRC and ICB client
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				mysql-connector-java
 version				5.1.12
@@ -23,8 +25,8 @@ homepage			https://dev.mysql.com/doc/refman/${branch}/en/connector-j.html
 master_sites		http://ftp.plusline.de/mysql/Downloads/Connector-J/
 
 checksums           md5     d2f836c761614a3fdf39f7a6c7c1acb5 \
-                    sha1    e63fed86be594a6166eaf4abf69375747042dcc6 \
-                    rmd160  43aa29a886c488c985608278b66f746546a4cfd7
+sha1    e63fed86be594a6166eaf4abf69375747042dcc6 \
+rmd160  43aa29a886c488c985608278b66f746546a4cfd7
 
 patchfiles			patch-build.xml
 

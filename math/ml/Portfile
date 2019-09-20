@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           mpi 1.0
@@ -18,7 +18,7 @@ homepage            http://trilinos.sandia.gov/packages/ml/
 master_sites        http://ftp.mcs.anl.gov/pub/petsc/externalpackages
 
 checksums           rmd160  f7a56200e19d89c3aa21927d578384a226146199 \
-                    sha256  cd04da3308430c1268560db808bea33e17d82a42324ebbd624ca451b4a6e03ba
+sha256  cd04da3308430c1268560db808bea33e17d82a42324ebbd624ca451b4a6e03ba
 
 mpi.setup           require_fortran
 

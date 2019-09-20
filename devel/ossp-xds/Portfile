@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name			ossp-xds
 version			0.9.3
@@ -15,7 +17,7 @@ homepage		http://www.ossp.org/pkg/lib/xds/
 master_sites	ftp://ftp.ossp.org/pkg/lib/xds/ freebsd
 distname		xds-${version}
 checksums		rmd160 ddac336716003581bca7fac14c810bec1a9a8ebd \
-				sha256 e21b441ea4fa8a568dbb5c22149313041d052c4591de81cba2147fdb9b9eebc8
+sha256 e21b441ea4fa8a568dbb5c22149313041d052c4591de81cba2147fdb9b9eebc8
 
 patchfiles		xds.c.patch
 

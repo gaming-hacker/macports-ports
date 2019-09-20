@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -23,8 +23,8 @@ homepage            http://www.luarocks.org/
 depends_lib         port:lua
 
 checksums           rmd160  3e30700a3684c20bc80a55cbcb4dd5748a67087c \
-                    sha256  1b4e6048306acacb69b0769100451250336ea2cf1f105786e852af8bfa4c8df5 \
-                    size    5820693
+sha256  1b4e6048306acacb69b0769100451250336ea2cf1f105786e852af8bfa4c8df5 \
+size    5820693
 
 configure.args      --with-lua=${prefix} \
                     --rocks-tree=${prefix}/share/${name}

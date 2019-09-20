@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,11 +30,11 @@ distfiles           ${distname}${extract.suffix}:boswars \
                     ${imagefile}:images
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  8a22afb974452d5290e4023f801752b8f2defe04 \
-                    sha256  dc3718f531e9ea413cf37e1333b62a4c5e69f1405502d9c59b9e424635135e3e \
+rmd160  8a22afb974452d5290e4023f801752b8f2defe04 \
+sha256  dc3718f531e9ea413cf37e1333b62a4c5e69f1405502d9c59b9e424635135e3e \
                     ${imagefile} \
-                    rmd160  4354ab05348d2827ec17eeac472b03e854bcdaa7 \
-                    sha256  87f3ee7f4045c3acfacd884348a2b376e710b42aa0f40acbc212732d0bee9a24
+rmd160  4354ab05348d2827ec17eeac472b03e854bcdaa7 \
+sha256  87f3ee7f4045c3acfacd884348a2b376e710b42aa0f40acbc212732d0bee9a24
 
 depends_extract-append port:xz
 

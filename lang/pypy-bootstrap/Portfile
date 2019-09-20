@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ master_sites        https://bitbucket.org/pypy/pypy/downloads/
 distname            pypy-${version}-osx64
 use_bzip2           yes
 checksums           md5 7f546940acb3ceebb5967697a9b05b65 \
-                    rmd160 fb209f68f77de56037faed5920678887608cdb0a \
-                    sha256 7e270c66347158dd794c101c4817f742f760ed805aa0d10abe19ba4a78a75118
+rmd160 fb209f68f77de56037faed5920678887608cdb0a \
+sha256 7e270c66347158dd794c101c4817f742f760ed805aa0d10abe19ba4a78a75118
 
 use_configure       no
 build               {}

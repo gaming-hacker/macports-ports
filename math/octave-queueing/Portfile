@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -20,7 +20,7 @@ long_description    ${description}This package can be used to compute steady-sta
                     continuous-time Markov chains are supported.
 
 checksums           rmd160  cf70ef53ee58fb9d228019258c0e4a19fe3b5ac4 \
-                    sha256  da80321899694c1e077830aaecd4b567f2297e0ff702d46500b8b6afecd835c8 \
-                    size    940632
+sha256  da80321899694c1e077830aaecd4b567f2297e0ff702d46500b8b6afecd835c8 \
+size    940632
 
 supported_archs     noarch

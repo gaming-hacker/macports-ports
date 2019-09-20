@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -22,7 +22,7 @@ homepage            http://avahi.org/
 github.tarball_from releases
 
 checksums           rmd160  40a58c780a01ae03a234cd52735ba8d63c93b867 \
-                    sha256  57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
+sha256  57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804
 
 patchfiles          patch-avahi-daemon-Makefile.in.diff \
                     patch-avahi-dnsconfd-Makefile.in.diff \

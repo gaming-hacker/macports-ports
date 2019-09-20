@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		modglue
 version		1.19
@@ -16,7 +18,7 @@ homepage	http://cadabra.phi-sci.com/
 master_sites	${homepage}
 
 checksums	rmd160 6d97669e9c5741d00b56bdbf692993c638b4a405 \
-		sha256 f228e6666e328a44472a3b8755aba317d38330af322023ce404146d504544f73
+sha256 f228e6666e328a44472a3b8755aba317d38330af322023ce404146d504544f73
 
 depends_build	port:pkgconfig port:libtool
 depends_lib	port:libsigcxx2

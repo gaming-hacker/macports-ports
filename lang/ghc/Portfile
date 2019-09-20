@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -40,22 +40,22 @@ master_sites        https://downloads.haskell.org/~${name}/${version}
 distfiles           ${distname}-x86_64-apple-darwin${extract.suffix} \
                     ${distname}-testsuite${extract.suffix}
 checksums           ${distname}-x86_64-apple-darwin${extract.suffix} \
-                    rmd160  618664b03640f58ebe28999c1c3bd3fc56c8ff7c \
-                    sha256  dfc1bdb1d303a87a8552aa17f5b080e61351f2823c2b99071ec23d0837422169 \
-                    size    159042284 \
+rmd160  618664b03640f58ebe28999c1c3bd3fc56c8ff7c \
+sha256  dfc1bdb1d303a87a8552aa17f5b080e61351f2823c2b99071ec23d0837422169 \
+size    159042284 \
                     ${distname}-testsuite${extract.suffix} \
-                    rmd160  9e4cb087bc8163feab7793f835916bdfd277868b \
-                    sha256  21391cb63a8a6b327f6c9519217a3dad39493e72c48967008ae35af142ca895f \
-                    size    1910060
+rmd160  9e4cb087bc8163feab7793f835916bdfd277868b \
+sha256  21391cb63a8a6b327f6c9519217a3dad39493e72c48967008ae35af142ca895f \
+size    1910060
 
 if {[variant_isset "bootstrap"]} {
     distfiles-append \
                     ${distname}-src${extract.suffix}
     checksums-append \
                     ${distname}-src${extract.suffix} \
-                    rmd160  2640736ab93348a6f9550d914d811c0e62b77e50 \
-                    sha256  4d4aa1e96f4001b934ac6193ab09af5d6172f41f5a5d39d8e43393b9aafee361 \
-                    size    19092168
+rmd160  2640736ab93348a6f9550d914d811c0e62b77e50 \
+sha256  4d4aa1e96f4001b934ac6193ab09af5d6172f41f5a5d39d8e43393b9aafee361 \
+size    19092168
 
     # use these to specify python versions, python3 required
     set python3_version 3.7
@@ -82,9 +82,9 @@ if {[option gpg_verify.use_gpg_verification]} {
                     ${distname}-testsuite${extract.suffix}.sig
     checksums-append \
                     ${distname}-x86_64-apple-darwin${extract.suffix}.sig \
-                    size    586 \
+size    586 \
                     ${distname}-testsuite${extract.suffix}.sig \
-                    size    586
+size    586
 
     post-checksum {
         # check GPG signature: https://www.haskell.org/ghc/download_ghc_8_6_5.html

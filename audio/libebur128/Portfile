@@ -1,4 +1,4 @@
-# -*- coding: utf-8; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -16,6 +16,6 @@ long_description    libebur128 is a library that implements the EBU R 128 standa
                     for loudness normalisation and true-peak measure.
 
 checksums           rmd160  16733513ea9d8536e97e6c0ebea3d82c921294f3 \
-                    sha256  7b899e763f8ed0af6d632c5be68f4da09cc546cc6c3c7f6801fff396e276fe33
+sha256  7b899e763f8ed0af6d632c5be68f4da09cc546cc6c3c7f6801fff396e276fe33
 
 cmake.out_of_source yes

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -18,8 +18,8 @@ master_sites     ${homepage}/dist/
 distname        xcb-proto-${version}
 
 checksums       rmd160  d085d1be1844009f08442113a83b7fdffeae8325 \
-                sha256  7b98721e669be80284e9bbfeab02d2d0d54cd11172b72271e47a2fe875e2bde1 \
-                size    151981
+sha256  7b98721e669be80284e9bbfeab02d2d0d54cd11172b72271e47a2fe875e2bde1 \
+size    151981
 
 use_bzip2       yes
 

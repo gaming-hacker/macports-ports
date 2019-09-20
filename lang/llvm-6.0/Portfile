@@ -121,33 +121,33 @@ if {${distfiles} ne ""} {
 }
 
 checksums           llvm-6.0.1.src.tar.xz \
-                    rmd160  6bfc568d0cab4d82ac948f54b18017d8e8ead934 \
-                    sha256  b6d6c324f9c71494c0ccaf3dac1f16236d970002b42bb24a6c9e1634f7d0f4e2 \
-                    size    25306628 \
+rmd160  6bfc568d0cab4d82ac948f54b18017d8e8ead934 \
+sha256  b6d6c324f9c71494c0ccaf3dac1f16236d970002b42bb24a6c9e1634f7d0f4e2 \
+size    25306628 \
                     cfe-6.0.1.src.tar.xz \
-                    rmd160  c280cd2037b19f9bd733944b765f9ca23b35e0a4 \
-                    sha256  7c243f1485bddfdfedada3cd402ff4792ea82362ff91fbdac2dae67c6026b667 \
-                    size    11905772 \
+rmd160  c280cd2037b19f9bd733944b765f9ca23b35e0a4 \
+sha256  7c243f1485bddfdfedada3cd402ff4792ea82362ff91fbdac2dae67c6026b667 \
+size    11905772 \
                     compiler-rt-6.0.1.src.tar.xz \
-                    rmd160  1e391941c1e0a7385bb3f22a7a7061d57bd18fe7 \
-                    sha256  f4cd1e15e7d5cb708f9931d4844524e4904867240c306b06a4287b22ac1c99b9 \
-                    size    1686820 \
+rmd160  1e391941c1e0a7385bb3f22a7a7061d57bd18fe7 \
+sha256  f4cd1e15e7d5cb708f9931d4844524e4904867240c306b06a4287b22ac1c99b9 \
+size    1686820 \
                     libcxx-6.0.1.src.tar.xz \
-                    rmd160  ead6a4fa9a0b700c96def8cfe5f7945d807da82c \
-                    sha256  7654fbc810a03860e6f01a54c2297a0b9efb04c0b9aa0409251d9bdb3726fc67 \
-                    size    1552328 \
+rmd160  ead6a4fa9a0b700c96def8cfe5f7945d807da82c \
+sha256  7654fbc810a03860e6f01a54c2297a0b9efb04c0b9aa0409251d9bdb3726fc67 \
+size    1552328 \
                     clang-tools-extra-6.0.1.src.tar.xz \
-                    rmd160  3b5936e76c17db58fbd851fa236ca821836c41e7 \
-                    sha256  0d2e3727786437574835b75135f9e36f861932a958d8547ced7e13ebdda115f1 \
-                    size    757256 \
+rmd160  3b5936e76c17db58fbd851fa236ca821836c41e7 \
+sha256  0d2e3727786437574835b75135f9e36f861932a958d8547ced7e13ebdda115f1 \
+size    757256 \
                     lldb-6.0.1.src.tar.xz \
-                    rmd160  60b396b12067b99590c3966578809974a2283b55 \
-                    sha256  6b8573841f2f7b60ffab9715c55dceff4f2a44e5a6d590ac189d20e8e7472714 \
-                    size    19292420 \
+rmd160  60b396b12067b99590c3966578809974a2283b55 \
+sha256  6b8573841f2f7b60ffab9715c55dceff4f2a44e5a6d590ac189d20e8e7472714 \
+size    19292420 \
                     polly-6.0.1.src.tar.xz \
-                    rmd160  0f50c00fcd1a1e6b5fcb1e8adce380e7c98fb391 \
-                    sha256  e7765fdf6c8c102b9996dbb46e8b3abc41396032ae2315550610cf5a1ecf4ecc \
-                    size    8684364
+rmd160  0f50c00fcd1a1e6b5fcb1e8adce380e7c98fb391 \
+sha256  e7765fdf6c8c102b9996dbb46e8b3abc41396032ae2315550610cf5a1ecf4ecc \
+size    8684364
 
 patch.pre_args  -p1
 patchfiles \

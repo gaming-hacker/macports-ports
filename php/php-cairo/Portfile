@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           php 1.1
@@ -11,7 +11,7 @@ categories          php devel
 platforms           darwin
 maintainers         ryandesign openmaintainer
 
-php.branches        5.3 5.4 5.5 5.6
+php.branches 7.3
 php.pecl            yes
 php.pecl.prerelease yes
 
@@ -23,7 +23,7 @@ long_description    Cairo is a 2D graphics library with support for multiple \
                     buffers, PostScript, PDF, and SVG file output.
 
 checksums           rmd160  de19dfadb9c4f8e4b209e6b51dff727b64b510db \
-                    sha256  c69a33b4d8c9611c0e32383b577509f64406afb5670518c8de2e34d53c926359
+sha256  c69a33b4d8c9611c0e32383b577509f64406afb5670518c8de2e34d53c926359
 
 distname            Cairo-${version}
 

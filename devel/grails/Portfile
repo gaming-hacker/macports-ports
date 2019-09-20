@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				grails
 version				2.2.0
@@ -18,8 +20,8 @@ platforms			darwin
 distname			${name}-${version}
 master_sites		http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/
 checksums           md5	9edbfe19b50a59872653d5322e424fa5 \
-                    sha1 b77a86b5ae36e73dd20acc0996cd04db5390a994 \
-                    rmd160 184a2ef989c43911d45f71e9913a8da5a197bfe9
+sha1 b77a86b5ae36e73dd20acc0996cd04db5390a994 \
+rmd160 184a2ef989c43911d45f71e9913a8da5a197bfe9
 
 worksrcdir			${name}-${version}
 set workTarget		""

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           waf 1.0
@@ -19,8 +19,8 @@ conflicts           ntp openntpd
 
 master_sites        ftp://ftp.ntpsec.org/pub/releases/
 checksums           rmd160  4f88807fc4652d2bb0608ca82df5b7e6be18eb63 \
-                    sha256  48eb3e0ed932fccc21373bc34a344b0c7164fda637f9b822b85b146f1aea398b \
-                    size    2534524
+sha256  48eb3e0ed932fccc21373bc34a344b0c7164fda637f9b822b85b146f1aea398b \
+size    2534524
 
 depends_build       port:bison
 depends_lib         path:lib/libssl.dylib:openssl port:python${python.version}

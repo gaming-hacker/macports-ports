@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		gengetopt
 version		2.22.6
@@ -23,7 +25,7 @@ platforms	darwin
 master_sites	gnu
 
 checksums           rmd160  e4e147cb4e75b4a0d0e959ae737b3082f534c3da \
-                    sha256  30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7
+sha256  30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7
 
 post-extract {
 	file attributes ${worksrcpath}/build-aux/install-sh -permissions a+x

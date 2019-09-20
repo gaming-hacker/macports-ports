@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup   gnustep 1.0
 
 name                gnustep-base
@@ -21,8 +23,8 @@ long_description \
     portion of the OpenStep standard (the Foundation library).
 
 checksums           md5     100e433a7e0624a6e4e5727b87e48c82 \
-                    sha1    98d1881b44f412432547abd7504ad654dc9f711f \
-                    rmd160  056e1d1a40479eddf6cd93b452897896e869733e
+sha1    98d1881b44f412432547abd7504ad654dc9f711f \
+rmd160  056e1d1a40479eddf6cd93b452897896e869733e
 
 depends_lib         port:gnustep-make \
                     port:libxslt \

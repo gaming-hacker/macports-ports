@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            tcl-dox
 version         0.8.3
@@ -15,8 +17,8 @@ homepage        http://therowes.net/~greg/software/
 master_sites    http://therowes.net/~greg/download/tcl-doxygen-filter/
 
 checksums       md5     94d0befbb7b7734e17fd37379e649d2f \
-                sha1    b83a6f132ff6b8bec569f98e00c9041b37047777 \
-                rmd160  7be30d03f0ff66f1764dbd8492f35c91bf3422ae
+sha1    b83a6f132ff6b8bec569f98e00c9041b37047777 \
+rmd160  7be30d03f0ff66f1764dbd8492f35c91bf3422ae
 
 depends_build   bin:flex:flex
 

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 name		rpl
 version		1.4.1
 platforms	darwin
@@ -14,7 +16,7 @@ long_description   \
 homepage	http://www.laffeycomputer.com/rpl.html
 master_sites	http://downloads.laffeycomputer.com/current_builds/
 checksums	rmd160  140630adce395641faabaffffd3fb60c73aecbf9 \
-		sha256  291055dc8763c855bab76142b5f7e9625392bcefa524b796bc4ddbcf941a1310
+sha256  291055dc8763c855bab76142b5f7e9625392bcefa524b796bc4ddbcf941a1310
 destroot { 	system "cd ${worksrcpath} && \
 		install src/${name} ${destroot}${prefix}/bin && \
 		install man/${name}.1 ${destroot}${prefix}/share/man/man1" }

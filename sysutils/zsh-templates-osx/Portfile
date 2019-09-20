@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                zsh-templates-osx
 version             2.0.5
@@ -24,7 +26,7 @@ distname            zsh-templates-${version}
 extract.suffix      .tgz
 
 checksums           rmd160 f38b59511bdda63d68310f54489135c37dc0a5f2 \
-                    sha256 205fd66958c1b14e0308f4238920dff5e6be793afd63013dace3a65ccdf6dfe5
+sha256 205fd66958c1b14e0308f4238920dff5e6be793afd63013dace3a65ccdf6dfe5
 
 depends_run         path:${prefix}/bin/zsh:zsh
 

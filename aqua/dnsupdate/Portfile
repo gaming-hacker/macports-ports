@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup xcode 1.0
@@ -18,8 +18,8 @@ homepage		http://www.dnsupdate.org/
 master_sites	http://ju.jalon.free.fr/DNSUpdateProject/
 distname		DNSUpdate${version}s
 checksums		md5 e7baab094ee3fa60871eec8f9aa3510e \
-				sha1 52367f763368a680ddb85f5abd886a2d7d1d0f35 \
-				rmd160 5deeca2a0468c8dceea89dc5109446ccb6acbbf6
+sha1 52367f763368a680ddb85f5abd886a2d7d1d0f35 \
+rmd160 5deeca2a0468c8dceea89dc5109446ccb6acbbf6
 
 extract.suffix	.tgz
 

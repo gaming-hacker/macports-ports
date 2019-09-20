@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           muniversal 1.0
@@ -22,8 +22,8 @@ master_sites        ${homepage} \
                     http://download.openpkg.org/components/cache/libedit/
 
 checksums           rmd160  213fb25fe0546ff99690b3d0f1f32bfd0ee08826 \
-                    sha256  ac8f0f51c1cf65492e4d1e3ed2be360bda41e54633444666422fbf393bba1bae \
-                    size    521999
+sha256  ac8f0f51c1cf65492e4d1e3ed2be360bda41e54633444666422fbf393bba1bae \
+size    521999
 
 depends_lib         port:ncurses
 

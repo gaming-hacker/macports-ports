@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,7 +22,7 @@ homepage            http://www.alcyone.com/software/fauxident/
 master_sites        ${homepage}
 
 checksums           rmd160  43e4e87e51f297b23afb0e4e184dc6b9988ef42d \
-                    sha256  73dd881432d5c816f34ed3ba1bf78b477beb8a7a53ae0f542390dab33b6a697f
+sha256  73dd881432d5c816f34ed3ba1bf78b477beb8a7a53ae0f542390dab33b6a697f
 
 depends_lib         port:python27
 

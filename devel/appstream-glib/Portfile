@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -20,8 +20,8 @@ description         This library provides objects and helper methods to help \
 long_description    ${description}
 
 checksums           rmd160  5c6ca22f413c6c14a6a56615e43d309000e5ebaa \
-                    sha256  576cff11d2ac1080e27fd89aecaea6a296813e2f49db7b9e93ba2047f5e253ff \
-                    size    2398015
+sha256  576cff11d2ac1080e27fd89aecaea6a296813e2f49db7b9e93ba2047f5e253ff \
+size    2398015
 
 depends_build-append  \
                     port:pkgconfig \

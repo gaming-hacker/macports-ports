@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -23,13 +23,13 @@ homepage            http://www.tddft.org/programs/libxc/
 master_sites        http://www.tddft.org/programs/octopus/download/libxc/${version}
 
 checksums           rmd160  48b4249e4ffa513e9c9c99e64bcc14c5d8ec7cc3 \
-                    sha256  a8ee37ddc5079339854bd313272856c9d41a27802472ee9ae44b58ee9a298337 \
-                    size    15602575
+sha256  a8ee37ddc5079339854bd313272856c9d41a27802472ee9ae44b58ee9a298337 \
+size    15602575
 
 distname            libxc-${version}
 
 compilers.choose    fc
-compilers.setup     require_fortran -g95
+compilers.setup     require_fortran 
 # g95 cannot handle F2003 here
 
 universal_variant   no

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -42,8 +42,8 @@ subport gf-core {
 
     version         20190828
     checksums       rmd160  e6c2e6eefe5bbb1c9387270f51b1eb9f915fb22a \
-                    sha256  317d0482e3ba07f7d40ce2ae57117ebb7d1b94f3f4df2b67af84b1c91e8afca9 \
-                    size    3963543
+sha256  317d0482e3ba07f7d40ce2ae57117ebb7d1b94f3f4df2b67af84b1c91e8afca9 \
+size    3963543
 }
 
 subport gf-rgl {
@@ -58,8 +58,8 @@ subport gf-rgl {
     license         {LGPL-3 BSD}
 
     checksums       rmd160  e15f89f2d79ca60995d2c1a49536db35487742b9 \
-                    sha256  6679c6a0b9aa12cf550efe17877371068b7e00ae05e16c745a39adf16c64b81e \
-                    size    26373374
+sha256  6679c6a0b9aa12cf550efe17877371068b7e00ae05e16c745a39adf16c64b81e \
+size    26373374
 
     depends_build   port:gf-core
 

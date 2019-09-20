@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          arrayfields 4.7.4 gem {} rubygems ruby19
@@ -17,5 +19,5 @@ maintainers         nomaintainer
 homepage            https://github.com/ahoward/arrayfields
 platforms           darwin
 checksums           md5     36efe975557d8ae8dee6a11875659a01 \
-                    sha1    4884471443a41e06b5ced53e6720e80cd57b71cd \
-                    rmd160  f0924889d97c36c42b7f4606a590f2cd2fea5646
+sha1    4884471443a41e06b5ced53e6720e80cd57b71cd \
+rmd160  f0924889d97c36c42b7f4606a590f2cd2fea5646

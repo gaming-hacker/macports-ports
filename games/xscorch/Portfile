@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -23,7 +23,7 @@ homepage            http://www.xscorch.org/
 master_sites        ${homepage}releases/
 
 checksums           rmd160  ac8688e40162834db064c2aa18f904748ef56d0e \
-                    sha256  a315f7001a020c6b8f644db1c1dc56ccfbb9e3efcbf12c41ac9eb4e5e75cb5f7
+sha256  a315f7001a020c6b8f644db1c1dc56ccfbb9e3efcbf12c41ac9eb4e5e75cb5f7
 
 depends_build       port:pkgconfig
 

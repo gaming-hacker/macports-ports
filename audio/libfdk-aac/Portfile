@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ homepage            https://sourceforge.net/projects/opencore-amr/
 master_sites        sourceforge:project/opencore-amr/fdk-aac
 distname            fdk-aac-${version}
 checksums           rmd160  8999925e5b8a17c93df359467a7e198bfd38d012 \
-                    sha256  f7d6e60f978ff1db952f7d5c3e96751816f5aef238ecf1d876972697b85fd96c \
-                    size    2864593
+sha256  f7d6e60f978ff1db952f7d5c3e96751816f5aef238ecf1d876972697b85fd96c \
+size    2864593
 
 livecheck.type      regex
 livecheck.url       https://sourceforge.net/projects/opencore-amr/files/fdk-aac/

@@ -1,4 +1,6 @@
-PortSystem      1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				qmail-spamcontrol
 version				2.5.19
@@ -32,13 +34,13 @@ distfiles			qmail-1.03.tar.gz:qmail \
 				spamcontrol-2519_tgz.bin:spamcontrol
 
 checksums			qmail-1.03.tar.gz \
-					md5 622f65f982e380dbe86e6574f3abcb7c \
-					sha1 18fb960481291a0503e93a94df3f6094edb7f27a \
-					rmd160 b851f273f1d365d38efd949b1efcf35768ffa30f \
+md5 622f65f982e380dbe86e6574f3abcb7c \
+sha1 18fb960481291a0503e93a94df3f6094edb7f27a \
+rmd160 b851f273f1d365d38efd949b1efcf35768ffa30f \
 				spamcontrol-2519_tgz.bin \
-					md5 acca46cc48d8b5cfa9eb3de4d3fc90ad \
-					sha1 b259183cb9afd7a574ad598cb2399af5002226ec \
-					rmd160 8374835ade0656145ba15eded23c6f8ce0a1b936
+md5 acca46cc48d8b5cfa9eb3de4d3fc90ad \
+sha1 b259183cb9afd7a574ad598cb2399af5002226ec \
+rmd160 8374835ade0656145ba15eded23c6f8ce0a1b936
 
 worksrcdir		qmail-1.03
 

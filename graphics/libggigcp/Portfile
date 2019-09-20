@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             libggigcp
 version          1.0.2
@@ -22,8 +24,8 @@ master_sites     ${homepage}ftp/ggi/v2.2/ \
 distname         ${name}-${version}.src
 use_bzip2        yes
 checksums        md5 d8e8a5317db1e3aeac98338a2ad10c69 \
-                 sha1 4e36a901d1f740cce04939cbdeb7c6272abfa1f8 \
-                 rmd160 d7bdc789afcd78ee73660cc07f670c1a217fa1ab
+sha1 4e36a901d1f740cce04939cbdeb7c6272abfa1f8 \
+rmd160 d7bdc789afcd78ee73660cc07f670c1a217fa1ab
 
 worksrcdir       ${name}-${version}
 

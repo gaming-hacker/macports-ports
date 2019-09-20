@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,10 +25,10 @@ master_sites    sourceforge
 distname        launch4j-${version}-macosx-x86
 extract.suffix  .tgz
 checksums       md5     089cbecf8f6aa022258044f3090b5cdf \
-                sha1    62f4732c0c1bb9a68c1dd129c1d696525ae38dcb \
-                rmd160  abd6e1b13ed016d5e4be4d4744824007ec1841ec \
-                sha256  754e557036ff4a469b4a24443c809113f85b9a0689a5ffdcf35a8a6e986c458f \
-                size    7287503
+sha1    62f4732c0c1bb9a68c1dd129c1d696525ae38dcb \
+rmd160  abd6e1b13ed016d5e4be4d4744824007ec1841ec \
+sha256  754e557036ff4a469b4a24443c809113f85b9a0689a5ffdcf35a8a6e986c458f \
+size    7287503
 
 use_configure   no
 build           {}

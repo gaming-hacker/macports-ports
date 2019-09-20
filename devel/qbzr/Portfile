@@ -1,4 +1,6 @@
-PortSystem    1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup     python 1.0
 
 name          qbzr
@@ -17,14 +19,14 @@ homepage      https://launchpad.net/${name}
 master_sites  https://launchpad.net/${name}/${branch}/${version}/+download/
 
 checksums     md5     d5e913bdc2cb94d084c196dfed6d3275 \
-              rmd160  3cfd02bd38877340e9c7b73f5ca3fd5c30ba9321 \
-              sha256  f3a41aac0eedf6a0ebfc66d01bdc311587fc14bc6cc03a9a74daed1ce4bdc071
+rmd160  3cfd02bd38877340e9c7b73f5ca3fd5c30ba9321 \
+sha256  f3a41aac0eedf6a0ebfc66d01bdc311587fc14bc6cc03a9a74daed1ce4bdc071
 
 worksrcdir    ${name}
 
 supported_archs     noarch
 
-python.default_version  27
+python.default_version 37
 
 depends_lib-append  port:bzr \
                     port:py${python.version}-pyqt4 \

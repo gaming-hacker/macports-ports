@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -25,7 +25,7 @@ homepage                http://tclap.sourceforge.net/
 master_sites            sourceforge
 
 checksums               sha1    4f124216dd6e6936f5af6372d921a6c51563f8fd \
-                        rmd160  96e424af115ffd27cea4ee1eb08f38e2f34d253e
+rmd160  96e424af115ffd27cea4ee1eb08f38e2f34d253e
 
 # do not generate docs (should the build phase be enabled again)
 configure.args-append   --disable-doxygen

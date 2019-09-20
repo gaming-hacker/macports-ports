@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.1
@@ -20,8 +20,8 @@ long_description    OpenHantek is a free software for Hantek and compatible \
     (Voltcraft/Darkwire/Protek/Acetech) USB digital signal oscilloscopes
 
 checksums rmd160 3e10e19b7688ab8e38837a3fff2c4b946675fed9 \
-          sha256 02ef968a7b0ba53e3e70513949cc615a0fd1a2b9c24ae5ba7801c09ba09effd0 \
-          size   17900828
+sha256 02ef968a7b0ba53e3e70513949cc615a0fd1a2b9c24ae5ba7801c09ba09effd0 \
+size   17900828
 
 depends_lib-append \
     path:lib/libusb.dylib:libusb \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -26,8 +26,8 @@ master_sites        http://lilypond.org/download/sources/v${branch}/
 # master_sites      http://download.linuxaudio.org/lilypond/sources/v${branch}/
 distname            ${my_name}-${version}
 checksums           rmd160  6250667c2a2799ec404e10e3e141101d043ab7f6 \
-                    sha256  96ba4f4b342d21057ad74d85d647aea7e47a5c24f895127c2b3553a252738fb3 \
-                    size    17996428
+sha256  96ba4f4b342d21057ad74d85d647aea7e47a5c24f895127c2b3553a252738fb3 \
+size    17996428
 
 depends_build-append \
                     port:autoconf \

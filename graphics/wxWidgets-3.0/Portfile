@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -66,9 +66,9 @@ use_bzip2           yes
 distfiles           ${distname}-${version}${extract.suffix}
 
 checksums           ${distname}-${version}${extract.suffix} \
-                    rmd160  179bcd489aec0a56a7a2890be68ee718b87a1c7a \
-                    sha256  96157f988d261b7368e5340afa1a0cad943768f35929c22841f62c25b17bf7f0 \
-                    size    20204622
+rmd160  179bcd489aec0a56a7a2890be68ee718b87a1c7a \
+sha256  96157f988d261b7368e5340afa1a0cad943768f35929c22841f62c25b17bf7f0 \
+size    20204622
 
 set selectdir       ${workpath}/select
 select.group        wxWidgets
@@ -145,12 +145,12 @@ if {${subport} eq "wxPython-3.0"} {
                             of wxWidgets and wxPython differ.
 
     checksums               ${distname}-${version}${extract.suffix} \
-                            rmd160  a7f404c8a64ca68fa31e408bded4387c2722196b \
-                            sha256  346879dc554f3ab8d6da2704f651ecb504a22e9d31c17ef5449b129ed711585d
+rmd160  a7f404c8a64ca68fa31e408bded4387c2722196b \
+sha256  346879dc554f3ab8d6da2704f651ecb504a22e9d31c17ef5449b129ed711585d
 
     checksums-append        ${wxpythonsubset}${extract.suffix} \
-                            rmd160  09280fd9ad1670162e38719e0055de5e6ddbc059 \
-                            sha256  bc886064820ac90997e10623a591e26ee8b08d73711e8d6d0512eaaffb5e9362
+rmd160  09280fd9ad1670162e38719e0055de5e6ddbc059 \
+sha256  bc886064820ac90997e10623a591e26ee8b08d73711e8d6d0512eaaffb5e9362
 
     patchfiles-append       patch-upstream-configure-highsierra.diff \
                             patch-upstream-src-osx-carbon-fontdlgosx.mm.diff \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -6,8 +6,8 @@ name                wireguard-tools
 version             0.0.20190913
 revision            0
 checksums           rmd160  c12a9519efe753f74c3851bbd37632e7147a1622 \
-                    sha256  997327185d2d1b597dc118f737c0c165e2a2c21453387ea02659f1159d148518 \
-                    size    330788
+sha256  997327185d2d1b597dc118f737c0c165e2a2c21453387ea02659f1159d148518 \
+size    330788
 
 categories          net
 platforms           darwin

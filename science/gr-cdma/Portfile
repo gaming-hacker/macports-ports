@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -8,7 +8,7 @@ github.setup        anastas gr-cdma 91067d780e907a1a8d9df53077460aac2ff09f15
 version             20161220
 revision            4
 checksums           rmd160 99c26aa048e690a4b11e10423baba5c9921db5c7 \
-                    sha256 18ba151aa085aeb9cdc8fc5329f51d1d4af012c1bc58a1a303fe0911809752a9
+sha256 18ba151aa085aeb9cdc8fc5329f51d1d4af012c1bc58a1a303fe0911809752a9
 
 # allow gr-cdma to work with both gnuradio and gnuradio-devel ...
 

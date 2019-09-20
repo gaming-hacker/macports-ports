@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           octave 1.0
@@ -14,6 +14,6 @@ description         Collection of routines to export data produced \
 long_description    ${description}
 
 checksums           rmd160 924c773486ecb7289ff308c9c0dabd6b985b320a \
-                    sha256 da13b8044e0ffb91f488427c4d3f3fdefb8d208753f572ef4d3b53972c547731
+sha256 da13b8044e0ffb91f488427c4d3f3fdefb8d208753f572ef4d3b53972c547731
 
 supported_archs     noarch

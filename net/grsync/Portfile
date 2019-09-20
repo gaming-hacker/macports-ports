@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -17,7 +17,7 @@ homepage            http://www.opbyte.it/grsync/
 master_sites        http://www.opbyte.it/release/
 
 checksums           rmd160  a8296e8c4b0961f177e09538048ea1d6d5e7ffdb \
-                    sha256  66d5acea5e6767d6ed2082e1c6e250fe809cb1e797cbbee5c8e8a2d28a895619
+sha256  66d5acea5e6767d6ed2082e1c6e250fe809cb1e797cbbee5c8e8a2d28a895619
 
 depends_build       port:intltool \
                     port:pkgconfig \

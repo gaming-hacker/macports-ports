@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -24,8 +24,8 @@ depends_lib         port:ocaml \
 depends_build       port:ocaml-findlib
 
 checksums           rmd160  fc62e3ec89ca563ea2ea3b50b9dfa469e1d6634f \
-                    sha256  ad68ccee8c95fe5c81e83d6d629cba56ffbd5d55446c7f4bac084bc1d1ec74c0 \
-                    size    5951293
+sha256  ad68ccee8c95fe5c81e83d6d629cba56ffbd5d55446c7f4bac084bc1d1ec74c0 \
+size    5951293
 
 configure.pre_args  -prefix ${prefix}
 configure.args      -emacslib ${prefix}/share/emacs/site-lisp/ \

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -18,8 +18,8 @@ long_description        The libmcs package is a library and set of tools which a
                         storage of configuration settings away from userland applications.
 
 checksums               rmd160  6bd840b24e7825d8315b99c51f9a9bcbc5b8c184 \
-                        sha256  09691556056cb20140d0f5ba284475445f2245891f3f0448e6cb629ff2b5783b \
-                        size    70417
+sha256  09691556056cb20140d0f5ba284475445f2245891f3f0448e6cb629ff2b5783b \
+size    70417
 
 patchfiles              patch-m4-buildsys.m4.diff
 

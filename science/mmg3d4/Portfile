@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -19,8 +19,8 @@ master_sites            https://gforge.inria.fr/frs/download.php/file/34531/${na
 distname                ${name}-${version}-Source
 
 checksums               rmd160  1734928f83e427712527005afd6d556b7cc62cf9 \
-                        sha256  5067cab6fa5b7478ccfd50f7ae1a00a356d66c8cbc014c20b89ad54857c227dd \
-                        size    167168
+sha256  5067cab6fa5b7478ccfd50f7ae1a00a356d66c8cbc014c20b89ad54857c227dd \
+size    167168
 
 depends_lib-append      port:scotch
 

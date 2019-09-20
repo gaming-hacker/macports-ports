@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup github    1.0
@@ -23,10 +23,10 @@ long_description    linkchecker for html pages with recursive checking, \
                     The gui portion is no longer included as it is not maintained.
 
 checksums           rmd160  0d9a4969fdfac4ee45412c08c28718d5fba01387 \
-                    sha256  561122d58c5a8951456e1cc91028b4b1be309df44dc8a7e3604c6c9ba7d47db2 \
-                    size    489926
+sha256  561122d58c5a8951456e1cc91028b4b1be309df44dc8a7e3604c6c9ba7d47db2 \
+size    489926
 
-python.default_version  27
+python.default_version 37
 
 depends_build-append    port:py27-setuptools
 

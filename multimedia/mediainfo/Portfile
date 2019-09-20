@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -6,8 +6,8 @@ PortGroup           github 1.0
 # normally update mediainfolib port at the same time
 github.setup        MediaArea MediaInfo 19.09 v
 checksums           rmd160  90f70cc854207f8bd910d5c895c239cf06c71c05 \
-                    sha256  ded3070d2ceef8e464f2fdf747cf5a119a9c264842292c78ac58d459dd05e019 \
-                    size    3049244
+sha256  ded3070d2ceef8e464f2fdf747cf5a119a9c264842292c78ac58d459dd05e019 \
+size    3049244
 
 name                mediainfo
 categories          multimedia

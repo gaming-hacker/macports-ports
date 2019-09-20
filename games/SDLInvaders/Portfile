@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               app 1.0
@@ -19,7 +19,7 @@ homepage                http://www.nielsweber.de/SDLInvaders/
 master_sites            $homepage fink
 
 checksums               rmd160  ff58486e240e8e9e1a6d02ae0aefe8b38b5df3c4 \
-                        sha256  621e67f6329668822319760ced9da5bb7e283faf1dcf0898fb326f362852071c
+sha256  621e67f6329668822319760ced9da5bb7e283faf1dcf0898fb326f362852071c
 
 depends_lib             port:libsdl \
                         port:libsdl_image \

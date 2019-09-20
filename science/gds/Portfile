@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem    1.0
 PortGroup     conflicts_build 1.0
@@ -24,7 +24,7 @@ master_sites  http://software.ligo.org/lscsoft/source/
 patchfiles    patch-std_cplusplus_2017.diff
 
 checksums     rmd160  3b2186057dec5d1e530ee1cefbfd12ab4f976d40 \
-              sha256  e592727d686af1042d775f192531d440600105c12d7cdad63455cfad3fb9913c
+sha256  e592727d686af1042d775f192531d440600105c12d7cdad63455cfad3fb9913c
 
 depends_build-append \
               port:pkgconfig \

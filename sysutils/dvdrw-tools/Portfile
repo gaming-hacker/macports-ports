@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                dvdrw-tools
 version             7.1
@@ -15,8 +17,8 @@ master_sites        ${homepage}tools/
 distname            dvd+rw-tools-${version}
 
 checksums           md5     8acb3c885c87f6838704a0025e435871 \
-                    sha1    6400e013934ff589b4b224eced03fd9f42ed719b \
-                    rmd160  a98367861335ecf9acea86a6b44ad68636bfb5c4
+sha1    6400e013934ff589b4b224eced03fd9f42ed719b \
+rmd160  a98367861335ecf9acea86a6b44ad68636bfb5c4
 
 depends_run         port:cdrtools
 

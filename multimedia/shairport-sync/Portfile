@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,7 +15,7 @@ description         Shairport Sync is an AirPlay audio player
 long_description    AirTunes emulator. Shairport Sync adds multi-room capability with Audio Synchronisation.
 
 checksums           rmd160  642f43d32f7bae3cddc7038ae9b48456882096c2 \
-                    sha256  99083c7134b1ad99adcdbdcc2d4122ff5e67853a754119d580c5173fbe8bfbc1
+sha256  99083c7134b1ad99adcdbdcc2d4122ff5e67853a754119d580c5173fbe8bfbc1
 
 depends_build       port:pkgconfig \
                     port:autoconf \

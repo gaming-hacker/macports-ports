@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup  muniversal 1.0
@@ -25,8 +25,8 @@ master_sites    http://download.oracle.com/berkeley-db/
 distname        db-${version}
 
 checksums       md5     ad28eb86ad3203b5422844db179c585b \
-                sha1    038dca3ef2984c6cb95ff088d1ab7c7b9da40883 \
-                rmd160  8684dba9e28ddc14dede4b633f2afb56f79c3b89
+sha1    038dca3ef2984c6cb95ff088d1ab7c7b9da40883 \
+rmd160  8684dba9e28ddc14dede4b633f2afb56f79c3b89
 
 patchfiles      yosemite-libtool.patch \
                 patch-src_dbinc_atomic.h

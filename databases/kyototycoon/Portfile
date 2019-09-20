@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ long_description    \
     applications.  Kyoto Tycoon is also a package of network interface to \
     the DBM called Kyoto Cabinet. Though the DBM has high performance and \
     high concurrency,  you might bother in case that  multiple  processes \
-    share the same database,  or remote processes  access  the  database. \
+share the same database,  or remote processes  access  the  database. \
     Thus, Kyoto Tycoon is provided for concurrent and remote  connections \
     to Kyoto Cabinet.  Kyoto Tycoon is composed  of  the  server  process \
     managing  multiple  databases  and  its  access  library  for  client \
@@ -29,7 +29,7 @@ homepage            http://fallabs.com/${name}/
 master_sites        http://fallabs.com/${name}/pkg/
 
 checksums           rmd160  e821d650ad71c39e8d915b8f7c9647f4daa2a5ff \
-                    sha256  553e4ea83237d9153cc5e17881092cefe0b224687f7ebcc406b061b2f31c75c6
+sha256  553e4ea83237d9153cc5e17881092cefe0b224687f7ebcc406b061b2f31c75c6
 
 patchfiles          patch-configure.diff
 

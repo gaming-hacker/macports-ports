@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,8 +22,8 @@ master_sites        https://ftp.osuosl.org/pub/deluge/source/2.0/
 use_xz              yes
 
 checksums           rmd160  ed887d87b711513be63fb800d64f44dbea834bb8 \
-                    sha256  7e7ae8e6ca2a2bf0d487227cecf81e27332f0b92b567cc2bda38e47d859da891 \
-                    size    1777624
+sha256  7e7ae8e6ca2a2bf0d487227cecf81e27332f0b92b567cc2bda38e47d859da891 \
+size    1777624
 
 depends_lib-append  port:libtorrent-rasterbar \
                     port:gettext \
@@ -56,7 +56,7 @@ if {[vercmp [macports_version] 2.5.99] >= 0} {
 
 variant python27 conflicts python37 description {Build for Python 2.7} {
         require_active_variants libtorrent-rasterbar python27
-        python.default_version 27
+python.default_version 37
         depends_build-append \
                     port:py27-setuptools \
                     port:py27-wheel
@@ -99,7 +99,7 @@ variant python37 conflicts python27 description {Build for Python 3.7} {
 }
 
 if {![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 python.link_binaries no

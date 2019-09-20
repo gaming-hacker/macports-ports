@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       xcode 1.0
@@ -30,9 +30,9 @@ distname        ${name}-${my_version}
 worksrcdir      mdales-${name}-${git_hash}
 
 checksums \
-    md5     897cf872c4006d4173b3c6ff046b0c44 \
-    sha1    1014e0ac22b0c00b47dde2b0f7f44eaa676acc7e \
-    rmd160  cc2a63b9dbfd9485c039fc989bbab96e6cf919ac
+md5     897cf872c4006d4173b3c6ff046b0c44 \
+sha1    1014e0ac22b0c00b47dde2b0f7f44eaa676acc7e \
+rmd160  cc2a63b9dbfd9485c039fc989bbab96e6cf919ac
 
 patchfiles      patch-osx2x.xcodeproj.diff \
                 patch-XXRemoteVNC.m.diff \

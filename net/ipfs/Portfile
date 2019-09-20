@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           golang 1.0
@@ -7,8 +7,8 @@ go.setup            github.com/ipfs/go-ipfs 0.4.21 v
 name                ipfs
 categories          net
 checksums           rmd160  449fff53125df076d113d7501bd3f192a8904dab \
-                    sha256  cfcd121f26939df24172a25501616d51792d26f1a36bfdfbfde8e9e2f28296b5 \
-                    size    736479
+sha256  cfcd121f26939df24172a25501616d51792d26f1a36bfdfbfde8e9e2f28296b5 \
+size    736479
 
 maintainers         {ogsite.net:sirn @sirn} openmaintainer
 platforms           darwin

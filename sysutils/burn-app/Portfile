@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup xcode 1.0
@@ -21,8 +21,8 @@ distname        burn[strsed ${version} {g/\\.//}]src
 use_zip         yes
 
 checksums       rmd160  d50980ba43d58fd1d930ec6ed992834f19ac545e \
-                sha256  90f59e140cb25b2cc7919769d023bf98ae1b678619b6719b37e8aeec466d8e94 \
-                size    170724909
+sha256  90f59e140cb25b2cc7919769d023bf98ae1b678619b6719b37e8aeec466d8e94 \
+size    170724909
 
 worksrcdir      Source.localized
 xcode.configuration     Release

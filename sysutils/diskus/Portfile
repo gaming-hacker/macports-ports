@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -14,15 +14,15 @@ license             {MIT Apache-2}
 description         A minimal, fast alternative to 'du -sb'
 
 long_description    diskus is a very simple program that computes the apparent \
-    size of the current directory. It is a parallelized version of du -sb. On \
+size of the current directory. It is a parallelized version of du -sb. On \
     the developer's 8-core laptop, it is about 10x faster than du with a cold \
     disk cache and more than 3x faster with a warm disk cache. Currently, it \
     only computes apparent size, not resident size.
 
 checksums           ${distname}${extract.suffix} \
-                    rmd160  69e85911b6c2facd4078563df55d10d7a705f6e2 \
-                    sha256  51f102e43e155f5c7550451170085b5bbfddacdf522eaa8219b3850d67a3f1e3 \
-                    size    14981
+rmd160  69e85911b6c2facd4078563df55d10d7a705f6e2 \
+sha256  51f102e43e155f5c7550451170085b5bbfddacdf522eaa8219b3850d67a3f1e3 \
+size    14981
 
 cargo.crates \
     ansi_term                       0.11.0  ee49baf6cb617b853aa8d93bf420db2383fab46d314482ca2803b40d5fde979b \

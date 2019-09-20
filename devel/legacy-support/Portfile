@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -19,8 +19,8 @@ subport ${name} {
     github.setup        macports macports-legacy-support 0.11.1 v
     revision            0
     checksums           rmd160  4a072025819439b498cc143441db40c88203bf41 \
-                        sha256  e5f1af5b57dc79a5227d2df2588ad91a276890af845133b29a01d48e32b74216 \
-                        size    31602
+sha256  e5f1af5b57dc79a5227d2df2588ad91a276890af845133b29a01d48e32b74216 \
+size    31602
 }
 
 subport ${name}-devel {
@@ -30,8 +30,8 @@ subport ${name}-devel {
     revision            0
     livecheck.type      none
     checksums           rmd160  4a072025819439b498cc143441db40c88203bf41 \
-                        sha256  e5f1af5b57dc79a5227d2df2588ad91a276890af845133b29a01d48e32b74216 \
-                        size    31602
+sha256  e5f1af5b57dc79a5227d2df2588ad91a276890af845133b29a01d48e32b74216 \
+size    31602
 }
 
 use_configure       no

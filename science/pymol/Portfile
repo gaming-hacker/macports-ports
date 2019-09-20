@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,8 +21,8 @@ platforms           darwin
 homepage            https://www.pymol.org/
 
 checksums           rmd160  2ff2f0035e3ff089a77c5e705d031fe2ac2848b4 \
-                    sha256  802a30e638a3bdc6254ece60bef3e9739a619335ce55c36b3a4c51adf5d646d5 \
-                    size    10448291
+sha256  802a30e638a3bdc6254ece60bef3e9739a619335ce55c36b3a4c51adf5d646d5 \
+size    10448291
 
 compilers.choose    cc cxx
 compilers.setup
@@ -42,8 +42,8 @@ if {[variant_isset python34]} {
 } elseif {[variant_isset python37]} {
     python.default_version 37
 } else {
-    default_variants +python27
-    python.default_version 27
+
+python.default_version 37
 }
 python.link_binaries no
 

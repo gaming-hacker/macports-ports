@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup python 1.0
 
 name                exabgp
@@ -17,9 +19,9 @@ long_description    Control your network using BGP from any commodity servers an
 homepage        https://code.google.com/p/exabgp/
 master_sites    googlecode
 checksums           md5     1d09588425dc32221217fcf5ec8ed22c \
-                    rmd160  1e91a89252bf3de9787a46f5fe139e4cad53a9cc \
-                    sha1    11a0f89b8d1b0b97181375cc9c98c49c236ba2f4
+rmd160  1e91a89252bf3de9787a46f5fe139e4cad53a9cc \
+sha1    11a0f89b8d1b0b97181375cc9c98c49c236ba2f4
 
 extract.suffix  .tgz
 
-python.default_version  27
+python.default_version 37

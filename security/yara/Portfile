@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -17,7 +17,7 @@ long_description \
     classify malware samples.
 
 checksums           rmd160  956c39a78ec3c373687650e41db844d9e37ded51 \
-                    sha256  7426bc3e35c96a8c996006d59bb4e8983fca10920ab6e12c9750dac71db924be
+sha256  7426bc3e35c96a8c996006d59bb4e8983fca10920ab6e12c9750dac71db924be
 
 if {${subport} eq ${name}} {
     # https://github.com/VirusTotal/yara/pull/259
@@ -72,7 +72,7 @@ foreach v ${python.versions} {
                                     This subport provides bindings for python ${python.branch}
 
         checksums               rmd160  f09802579ddde490a2b0873b54665c1db6a445a6 \
-                                sha256  fa501b99c58ffc012467818a56c2fcd2a35d2823884edc1c3d75372de9caaa28
+sha256  fa501b99c58ffc012467818a56c2fcd2a35d2823884edc1c3d75372de9caaa28
 
         depends_build-append    port:py${python.version}-setuptools
         depends_lib-append      port:${name} \

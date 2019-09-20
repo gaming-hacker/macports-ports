@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -17,7 +17,7 @@ homepage		http://web.archive.org/web/20101214025948/http://fireflymediaserver.or
 master_sites	sourceforge:project/mt-daapd/mt-daapd/${version}
 
 checksums           rmd160  918b76ffe3af7b0413be1cbbafdd11274f5d3e9d \
-                    sha256  50d89f77bdc3fd0ca408d52cabff528224fcc7319acc3b9456db0e3164a3b6cf
+sha256  50d89f77bdc3fd0ca408d52cabff528224fcc7319acc3b9456db0e3164a3b6cf
 
 patchfiles		patch-mt-daapd.conf
 

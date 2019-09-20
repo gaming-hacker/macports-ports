@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		pilot-link
 version		0.12.5
@@ -21,8 +23,8 @@ depends_lib	port:libiconv \
 
 use_bzip2	yes
 checksums	md5 568c55bf504b044f6fbd50baa407c990 \
-		sha1 b822466333ba58bbb32d7cfe5c547f4e7a78bdee \
-		rmd160  806c87b9849d37fc5f88b453fb0842504be71a76
+sha1 b822466333ba58bbb32d7cfe5c547f4e7a78bdee \
+rmd160  806c87b9849d37fc5f88b453fb0842504be71a76
 
 patchfiles	libpng14.diff
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ long_description    YACAS is an easy to use, general purpose Computer Algebra\
 master_sites        http://yacas.sourceforge.net/backups/
 
 checksums           md5 a07347b9276a2b2180a5a4855323ea8e \
-                    sha1 1e2395a835eab64ad519abb2b816bd94d2a27a09 \
-                    rmd160 0f01763d029d078f0a156b0d8549c1de14b16341
+sha1 1e2395a835eab64ad519abb2b816bd94d2a27a09 \
+rmd160 0f01763d029d078f0a156b0d8549c1de14b16341
 
 # perl is used to build documentation
 # ${prefix}/share/yacas/manmake/txt2yacasdoc.pl requires perl after build

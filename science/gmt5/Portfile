@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -38,12 +38,12 @@ distfiles           ${distname}-src${extract.suffix}
 
 if {${subport} eq "gmt5"} {
     checksums           rmd160  900befd66ec4a9aea75c53d99ed83f7e25163e35\
-                        sha256  078d4997507cb15344c74a874568985e45bdbd6d3a72d330c74c47f4c0359bb1 \
-                        size    59175704
+sha256  078d4997507cb15344c74a874568985e45bdbd6d3a72d330c74c47f4c0359bb1 \
+size    59175704
 } else {
     checksums           rmd160  c9d276100c5e78191ccbabd2ce084798a1f2046f \
-                        sha256  940ed0c49f18cd749edbe65ab84b28e2f6775b4529a71e9a8efd67bf94241b76 \
-                        size    65172968
+sha256  940ed0c49f18cd749edbe65ab84b28e2f6775b4529a71e9a8efd67bf94241b76 \
+size    65172968
 }
 
 depends_lib         port:dcw-gmt \

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		shsql
 version		1.28
@@ -23,8 +25,8 @@ master_sites	http://quisp.sourceforge.net/download/
 dist_subdir	quisp
 distname	quisp[strsed ${version} {g/\.//}]
 checksums	md5     e587266af100b46f68550affb900fdc4 \
-		sha1    2869b95fd264b848073423667d6efe9a19cf2bcf \
-		rmd160  4dae3a94250e5973f8ea4628f8d62044ac14fd4e
+sha1    2869b95fd264b848073423667d6efe9a19cf2bcf \
+rmd160  4dae3a94250e5973f8ea4628f8d62044ac14fd4e
 
 use_configure	no
 

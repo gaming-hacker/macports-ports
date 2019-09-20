@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,8 +24,8 @@ long_description \
                     many platforms.
 
 checksums           rmd160  c38a5f54d7bde7fe26ae84d2d4c547f41b14326b \
-                    sha256  de786bd06ffdbea57a35bc2e4f07150c2dc474411869c5113cb48713fafb4d5d \
-                    size    7087705
+sha256  de786bd06ffdbea57a35bc2e4f07150c2dc474411869c5113cb48713fafb4d5d \
+size    7087705
 
 depends_build-append \
                     port:libxslt \

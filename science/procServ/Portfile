@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ homepage            http://sourceforge.net/projects/procserv/
 master_sites        sourceforge:project/procserv/${version}
 
 checksums           md5     bbf052e7fcc6fa403d2514219346da04 \
-                    rmd160  795119646dcb1133ffbe05a71c3e5013c6b6ab81 \
-                    sha256  4ac2c3bc16abca2970a9a33935bb739df9910ec90297a60eaffb7bbc74d5645d
+rmd160  795119646dcb1133ffbe05a71c3e5013c6b6ab81 \
+sha256  4ac2c3bc16abca2970a9a33935bb739df9910ec90297a60eaffb7bbc74d5645d
 
 livecheck.regex     /${name}-(\[0-9.\]+)${extract.suffix}

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       github 1.0
@@ -21,7 +21,7 @@ long_description \
 homepage        http://stephanepeter.com/makeself/
 
 checksums       rmd160  5f3e10a6a1a5c855e3fd2f2f43210ae5635ff5d5 \
-                sha256  b3c844e424887f930bdca7bddd961f67dcbcfc2e43ad4306444370a1358888b2
+sha256  b3c844e424887f930bdca7bddd961f67dcbcfc2e43ad4306444370a1358888b2
 
 patchfiles      patch-makeself.sh
 

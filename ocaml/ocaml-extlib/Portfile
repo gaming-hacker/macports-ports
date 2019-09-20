@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                ocaml-extlib
 version             1.6.1
@@ -13,7 +15,7 @@ platforms           darwin
 master_sites        googlecode:ocaml-extlib
 
 checksums           rmd160  4d92f55e71ee6effe58b07126458caa118472aa3 \
-                    sha256  88d4b3638cb4da4e04d81ba157e7235e744373c5784cf4b906570d07b890aeca
+sha256  88d4b3638cb4da4e04d81ba157e7235e744373c5784cf4b906570d07b890aeca
 distname            extlib-${version}
 
 depends_build       port:ocaml-camlp4

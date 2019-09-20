@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -13,7 +13,7 @@ master_sites        kde:stable/phonon/${name}/${version}
 use_xz              yes
 distname            phonon-backend-gstreamer-${version}
 checksums           rmd160  43095bdb9fe8729fd795910188c46cdcb0eae12f \
-                    sha256  cec3e5ece1261d344b68363ef0606ebf49772628ba94bb55b0c0d18773b885f1
+sha256  cec3e5ece1261d344b68363ef0606ebf49772628ba94bb55b0c0d18773b885f1
 
 # ATTENTION: This renaming is suddenly needed, as the foldername skips "-backend" from version 4.8.2 to 4.9.0:
 worksrcdir          phonon-gstreamer-${version}

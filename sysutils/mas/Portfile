@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           xcode 1.0
@@ -17,8 +17,8 @@ platforms           darwin
 
 depends_build       port:carthage
 checksums           md5     ca1560e390fa17988b80248ec7b781b3 \
-                    sha1    e76df7b060cad78554e17ae328e55040d1b2698f \
-                    sha256  50af96b34ade6f0b67a8564e19d2b8818d56186329ce9a5d3f1b0ad3e9df8f6d
+sha1    e76df7b060cad78554e17ae328e55040d1b2698f \
+sha256  50af96b34ade6f0b67a8564e19d2b8818d56186329ce9a5d3f1b0ad3e9df8f6d
 
 # requirements:
 # - mas: Xcode 10 or later

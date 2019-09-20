@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name            spring-framework25
 version         2.5.6.SEC01
@@ -16,8 +18,8 @@ homepage        http://www.springframework.org/
 distname        spring-framework-${version}-with-dependencies
 master_sites    http://s3.amazonaws.com/dist.springframework.org/release/SPR
 checksums       md5 b57bae9b69472a5d59c6ee82ca587fd3 \
-                sha1 876e0b03f1ab18c7796894ba7532c8fa9a9896c4 \
-                rmd160 8200e5ccb17249201ebf60e01d18ae3fa7cba9b7
+sha1 876e0b03f1ab18c7796894ba7532c8fa9a9896c4 \
+rmd160 8200e5ccb17249201ebf60e01d18ae3fa7cba9b7
 
 use_zip         yes
 

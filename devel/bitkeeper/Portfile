@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ distname            bk-${version}
 extract.suffix      .src.tar.gz
 
 checksums           rmd160  eba72e926b0e6188c1c398ecd7abcd29925ab356 \
-                    sha256  da2b8ef3044b9fc9d96cbd5990e5a9e989f5856f9b394013affc1e25014a2928 \
-                    size    20273074
+sha256  da2b8ef3044b9fc9d96cbd5990e5a9e989f5856f9b394013affc1e25014a2928 \
+size    20273074
 
 depends_build       port:pkgconfig
 

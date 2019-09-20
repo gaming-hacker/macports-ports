@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -22,12 +22,12 @@ homepage            http://denyhosts.sourceforge.net/
 master_sites        sourceforge:denyhosts
 
 checksums           rmd160  cab4206af992f5405ed1c9b302341c7b5649c71a \
-                    sha256  5190ead13a7238e3ccf328cb3b71b16716e1c73939909a4f3fa6904ba58ddf7d
+sha256  5190ead13a7238e3ccf328cb3b71b16716e1c73939909a4f3fa6904ba58ddf7d
 
 patchfiles          patch-denyhosts.cfg-dist.diff \
                     patch-daemon-control-dist.diff
 
-python.default_version  27
+python.default_version 37
 
 pre-fetch {
     if { ${os.major} > 11 } {

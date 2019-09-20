@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ocaml 1.0
 
 name                ocaml-xmlm
@@ -25,7 +27,7 @@ use_bzip2           yes
 extract.suffix      .tbz
 
 checksums           rmd160  e0ba666e1186a0ba6fe42b284282a48a651d2399 \
-                    sha256  465630953ad80747250da53240b37c55f67991fdc83f28614ea76104d426aa26
+sha256  465630953ad80747250da53240b37c55f67991fdc83f28614ea76104d426aa26
 
 depends_lib         port:ocaml \
                     port:ocaml-findlib

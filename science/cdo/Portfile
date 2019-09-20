@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 PortGroup                   mpi 1.0
@@ -15,8 +15,8 @@ description                 Climate Data Operators
 homepage                    https://code.mpimet.mpg.de/projects/cdo
 master_sites                https://code.mpimet.mpg.de/attachments/download/19299
 checksums           rmd160  82a66d99bbe026254f8dea15ca078e3acaed29f0 \
-                    sha256  b31474c94548d21393758caa33f35cf7f423d5dfc84562ad80a2bdcb725b5585 \
-                    size    10463349
+sha256  b31474c94548d21393758caa33f35cf7f423d5dfc84562ad80a2bdcb725b5585 \
+size    10463349
 
 long_description \
     CDO is a collection of command line Operators               \

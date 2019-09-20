@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                e
 version             0.02718
@@ -13,7 +15,7 @@ long_description    e is a command line expression evaluator. It was designed \
 homepage            http://www.softnet.tuc.gr/~apdim/projects/e/
 master_sites        ${homepage}
 checksums           rmd160  084e13df470387926a403ba6c0ed8a9249f7865c \
-                    sha256  932bbe804d13c0e0e1513407420c80ea5ec077d6a90c0c6cabda8c503958b3e7
+sha256  932bbe804d13c0e0e1513407420c80ea5ec077d6a90c0c6cabda8c503958b3e7
 
 installs_libs       no
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -28,8 +28,8 @@ homepage            https://git.pwmt.org/pwmt/zathura
 master_sites        ${homepage}/-/archive/${version}/
 
 checksums           rmd160  50dbda19ca101f680c3935befbde631217143a3b \
-                    sha256  ebc98478fd8ec412b8f87c6b75067cf52d89d200731c1848ec3a2700f2a3b36c \
-                    size    194105
+sha256  ebc98478fd8ec412b8f87c6b75067cf52d89d200731c1848ec3a2700f2a3b36c \
+size    194105
 
 depends_build-append \
                     port:pkgconfig \

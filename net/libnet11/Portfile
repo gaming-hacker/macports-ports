@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -14,7 +14,7 @@ long_description \
     libnet is a high-level API (toolkit) allowing the application \
     programmer to construct and inject network packets. It provides a \
     portable and simplified interface for low-level network packet \
-    shaping, handling and injection. Libnet hides much of the tedium of \
+shaping, handling and injection. Libnet hides much of the tedium of \
     packet creation from the application programmer such as \
     multiplexing, buffer management, arcane packet header information, \
     byte-ordering, OS-dependent issues, and much more. Libnet features \
@@ -31,7 +31,7 @@ master_sites        sourceforge:libnet-dev
 distname            libnet-${version}
 
 checksums           rmd160  b0549f639abfd21a892b73989f11b9b0716d62bc \
-                    sha256  d392bb5825c4b6b672fc93a0268433c86dc964e1500c279dc6d0711ea6ec467a
+sha256  d392bb5825c4b6b672fc93a0268433c86dc964e1500c279dc6d0711ea6ec467a
 
 patchfiles          patch-configure.in.diff
 

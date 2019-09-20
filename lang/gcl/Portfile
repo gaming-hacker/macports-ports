@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           conflicts_build 1.0
@@ -25,8 +25,8 @@ depends_lib         port:gettext \
 master_sites        gnu
 
 checksums           rmd160  51414c7d3da76220246807985763656b6a2ef4d9 \
-                    sha256  8eb8491bccafc49683599e92a30ba36db0825dd4bb138a104cb662b9b0d090e8 \
-                    size    7031837
+sha256  8eb8491bccafc49683599e92a30ba36db0825dd4bb138a104cb662b9b0d090e8 \
+size    7031837
 
 worksrcdir          ${name}
 

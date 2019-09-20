@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -18,8 +18,8 @@ homepage                http://${name}.org/
 master_sites            http://archive.${name}.org/
 
 checksums \
-    rmd160  47346a01d26754ff6d3b78deebad2f6aaa2704bb \
-    sha256  46c75ee93cc95eedc6005625442b2b8e59a2bef3ba80987d0491f055185650e9
+rmd160  47346a01d26754ff6d3b78deebad2f6aaa2704bb \
+sha256  46c75ee93cc95eedc6005625442b2b8e59a2bef3ba80987d0491f055185650e9
 
 configure.args-append   --enable-largefile
 

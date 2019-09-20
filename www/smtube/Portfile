@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           qmake 1.0
@@ -20,8 +20,8 @@ master_sites        sourceforge
 use_bzip2           yes
 
 checksums           rmd160  cc2353791606d1cd06f024581857d86107778aca \
-                    sha256  f54233ecc2563fd88217ffa5843b232fc5a8514c09c99e04fea16465dad47034 \
-                    size    748844
+sha256  f54233ecc2563fd88217ffa5843b232fc5a8514c09c99e04fea16465dad47034 \
+size    748844
 
 depends_build-append \
                     port:makeicns

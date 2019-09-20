@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           ruby 1.0
 
 ruby.setup          rr 0.10.11 gem {} rubygems ruby19
@@ -10,5 +12,5 @@ maintainers         nomaintainer
 homepage            http://rr.github.com/rr
 platforms           darwin
 checksums           md5     9335f38b4fe3f485a89febb8a8863eeb \
-                    sha1    64b51b7963c616b547317bc8806deec1f32ebaab \
-                    rmd160  0e38b16e72ab69881d3bf84cb8769e9b8c9f1538
+sha1    64b51b7963c616b547317bc8806deec1f32ebaab \
+rmd160  0e38b16e72ab69881d3bf84cb8769e9b8c9f1538

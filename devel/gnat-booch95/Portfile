@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2 -*-
 
 PortSystem          1.0
 
@@ -20,8 +20,8 @@ distfiles           bc-${version}.7z
 worksrcdir          bc-${version}
 
 checksums           md5     3e5c7443db6e5beb7cdfe3706c9d9226 \
-                    sha1    1fa7d43d59232375b03bc21a3fbbb6a873b8e22d \
-                    rmd160  5d61b3784ca1e3744acd8297946d299fd8bebfe2
+sha1    1fa7d43d59232375b03bc21a3fbbb6a873b8e22d \
+rmd160  5d61b3784ca1e3744acd8297946d299fd8bebfe2
 
 use_7z              yes
 use_parallel_build  yes

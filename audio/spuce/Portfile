@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ long_description    ${description}
 
 github.setup        audiofilter spuce 0.4.3
 checksums           rmd160  492a296d34105c1a032cb02ebd58599616fee87e \
-                    sha256  53dc8fcb8ab8230e59b06242436b015ac67550ef21eb6b5a1b10fddb938a2a72 \
-                    size    4167961
+sha256  53dc8fcb8ab8230e59b06242436b015ac67550ef21eb6b5a1b10fddb938a2a72 \
+size    4167961
 revision            0
 
 configure.args-append \

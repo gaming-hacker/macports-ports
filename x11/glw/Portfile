@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,7 +26,7 @@ dist_subdir         mesa
 use_bzip2           yes
 
 checksums           sha1    21de672a1cbe307135d7f172dc6952041a38e1c7 \
-                    rmd160  d06c95bc36304b8ef72211b5defd3ac338fe7956
+rmd160  d06c95bc36304b8ef72211b5defd3ac338fe7956
 
 depends_build       port:pkgconfig
 

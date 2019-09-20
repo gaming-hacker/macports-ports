@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,7 +19,7 @@ homepage            https://www.cacti.net
 master_sites        https://www.cacti.net/downloads
 
 checksums           rmd160  313d40867437bbae1c8cde3a5ca106e41b70e50d \
-                    sha256  b4a5aa2a772aff7eb5abae31d07ed86a1c00300094d3c3c63091554fbb0deea9
+sha256  b4a5aa2a772aff7eb5abae31d07ed86a1c00300094d3c3c63091554fbb0deea9
 
 depends_lib         path:bin/mysql_config5:mysql57 \
                     port:rrdtool

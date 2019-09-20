@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               cmake 1.1
@@ -40,8 +40,8 @@ qt5.depends_component   qtwebengine \
 depends_run-append      port:hugin-app
 
 checksums               rmd160  b1ad15d37434524c5793685e035692c5fff579d6 \
-                        sha256  d7d2003e0ef4ead6f4b4c526bc44749a1fb845e795e0c5b7c35a393b0c0518a1 \
-                        size    11556372
+sha256  d7d2003e0ef4ead6f4b4c526bc44749a1fb845e795e0c5b7c35a393b0c0518a1 \
+size    11556372
 
 # see ${worksrcpath}/cmake/Version.cmake for LHDR_NAME and LHDR_OSX_EXECUTABLE_NAME values
 set ldhr_name           "Luminance HDR"

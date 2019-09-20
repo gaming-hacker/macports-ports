@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ platforms           darwin freebsd
 master_sites        http://www.tads.org/frobtads/
 
 checksums           rmd160  3e22c7db6dabc0544c84a09edbde618a18b35e1e \
-                    sha256  88c6a987813d4be1420a1c697e99ecef4fa9dd9bc922be4acf5a3054967ee788
+sha256  88c6a987813d4be1420a1c697e99ecef4fa9dd9bc922be4acf5a3054967ee788
 
 depends_lib         port:curl \
                     port:ncurses

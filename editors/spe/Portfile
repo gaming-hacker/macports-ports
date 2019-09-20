@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           python 1.0
@@ -21,10 +21,10 @@ homepage            https://pythonide.blogspot.com/
 master_sites        macports_distfiles
 distname            spe-${version}-wx2.6.1.0
 checksums           rmd160  211c0465dce7aeab5b8a3d7fd9cf444b3efbe845 \
-                    sha256  e43d42c42d0f716fa7e6e4430295471786611873e47b39dfe2593f8aa2dc1576 \
-                    size    1210145
+sha256  e43d42c42d0f716fa7e6e4430295471786611873e47b39dfe2593f8aa2dc1576 \
+size    1210145
 
-python.default_version 27
+python.default_version 37
 
 depends_lib-append  port:py${python.version}-wxpython-2.8
 depends_run-append  port:py${python.version}-checker

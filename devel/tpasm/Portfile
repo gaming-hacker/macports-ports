@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		tpasm
 version		1.5
@@ -25,8 +27,8 @@ homepage	http://www.sqrt.com/
 master_sites	ftp://ftp.ct0.com/pub/
 
 checksums	md5     0ecd2d4ae7a65a04a1e5617524f1ded2 \
-		sha1    ece4cc441ba756c7731436d8c36d715752e4b5a2 \
-		rmd160  4caab689a377e70dd44ed654b5c77f163dbfed23
+sha1    ece4cc441ba756c7731436d8c36d715752e4b5a2 \
+rmd160  4caab689a377e70dd44ed654b5c77f163dbfed23
 
 extract.suffix	.tgz
 

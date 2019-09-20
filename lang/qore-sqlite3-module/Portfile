@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -14,8 +14,8 @@ platforms           darwin
 master_sites        sourceforge:qore
 
 checksums           md5 e3f1680aebc46687e81cf0b61bce0ef6 \
-                    sha1 47572df91050c029fb62be4797354e8d2398853c \
-                    rmd160 1e702691fdf4cdc51157f1549218ffb1ced50eb5
+sha1 47572df91050c029fb62be4797354e8d2398853c \
+rmd160 1e702691fdf4cdc51157f1549218ffb1ced50eb5
 
 depends_lib         port:qore \
                     port:sqlite3

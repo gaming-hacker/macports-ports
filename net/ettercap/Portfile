@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -24,8 +24,8 @@ long_description \
 homepage            https://ettercap.github.io/ettercap/
 
 checksums           rmd160  4466f31fde0dd35fb7f251c056c836cec5c686eb \
-                    sha256  70ff35385194057005ea3e7bc85e02fa160d75732bca45c30bc520cdd6861aee \
-                    size    8382057
+sha256  70ff35385194057005ea3e7bc85e02fa160d75732bca45c30bc520cdd6861aee \
+size    8382057
 
 depends_build-append \
                     port:pkgconfig

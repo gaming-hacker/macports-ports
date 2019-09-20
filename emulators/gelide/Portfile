@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -33,7 +33,7 @@ use_zip                 yes
 distname                gelide-code-${git_commit}
 
 checksums               rmd160  85e68e55b6985910deefb159f64eed637131c2bd \
-                        sha256  74901f9a31962ac2c3b7ef5264b164aa07e8a8cfc990cce1787040f2ca0cb211
+sha256  74901f9a31962ac2c3b7ef5264b164aa07e8a8cfc990cce1787040f2ca0cb211
 
 patchfiles              patch-autogen.sh.diff \
                         patch-docdir.diff

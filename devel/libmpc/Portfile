@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -27,8 +27,8 @@ master_sites        gnu:mpc
 distname            mpc-${version}
 
 checksums           rmd160  e228957f800331e40ecb6c1c7c6781997812079d \
-                    sha256  6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e \
-                    size    701263
+sha256  6985c538143c1208dcb1ac42cedad6ff52e267b47e5f970183a3e75125b43c2e \
+size    701263
 
 test.run            yes
 test.target         check

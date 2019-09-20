@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -22,8 +22,8 @@ homepage            https://www.pidgin.im/
 master_sites        sourceforge:project/pidgin/Pidgin/${version}
 
 checksums           rmd160  48f1c281fb018257b2757c4c93ad1501f9f5a356 \
-                    sha256  2747150c6f711146bddd333c496870bfd55058bab22ffb7e4eb784018ec46d8f \
-                    size    8994457
+sha256  2747150c6f711146bddd333c496870bfd55058bab22ffb7e4eb784018ec46d8f \
+size    8994457
 
 use_bzip2           yes
 

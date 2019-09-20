@@ -1,4 +1,6 @@
-PortSystem			1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name				x3270
 version				3.3.11ga6
@@ -39,7 +41,7 @@ extract.post_args-append        ${worksrcdir}
 extract.suffix			.tgz
 
 checksums			sha1    c72c4f72313659863e8718ffdcd43b03aa77b8e5 \
-				rmd160  1f5214a2e18f2cbea7aa7a1d81f943f07e8f0dce
+rmd160  1f5214a2e18f2cbea7aa7a1d81f943f07e8f0dce
 
 depends_build			port:bdftopcf \
 				port:mkfontscale

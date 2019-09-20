@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                  1.0
 
@@ -23,8 +23,8 @@ distname                    ${name}[lindex [split ${version} .] 0][string index 
 use_zip                     yes
 
 checksums                   md5     28a4586409061b385d1cd27d3f120c0b \
-                            sha1    3b383fa042eae414c5e5608bfa91a42f44bd1a86 \
-                            rmd160  8dd4bbb9841fa6a66f2e1499b419084564f54e53
+sha1    3b383fa042eae414c5e5608bfa91a42f44bd1a86 \
+rmd160  8dd4bbb9841fa6a66f2e1499b419084564f54e53
 
 depends_build               port:bison \
                             port:flex \

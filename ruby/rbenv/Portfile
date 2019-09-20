@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -15,8 +15,8 @@ description         Simple Ruby Version Management
 long_description    ${description}
 
 checksums           rmd160  c47e07a503d1604bdc279b4919cbef61e3e79775 \
-                    sha256  e14fae927dc86683c47a00230ac2aafc8d9860443cae42e0d7383d664291508b \
-                    size    32199
+sha256  e14fae927dc86683c47a00230ac2aafc8d9860443cae42e0d7383d664291508b \
+size    32199
 
 patchfiles          patch-libexec-rbenv-init.diff
 use_configure       no

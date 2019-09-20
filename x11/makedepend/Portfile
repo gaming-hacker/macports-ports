@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                makedepend
 version             1.0.6
@@ -23,9 +25,9 @@ master_sites        https://xorg.freedesktop.org/archive/individual/util/
 use_bzip2           yes
 
 checksums           sha1    3f321f7b570ec98f1fabc441267d29347a2e1456 \
-                    rmd160  6e6aa137d6cc63ae03feea0d45b4c51d4105ee60 \
-                    sha256  d558a52e8017d984ee59596a9582c8d699a1962391b632bec3bb6804bf4d501c \
-                    size    147616
+rmd160  6e6aa137d6cc63ae03feea0d45b4c51d4105ee60 \
+sha256  d558a52e8017d984ee59596a9582c8d699a1962391b632bec3bb6804bf4d501c \
+size    147616
 
 depends_build       port:pkgconfig port:xorg-xorgproto
 

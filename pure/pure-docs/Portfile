@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem                      1.0
 PortGroup                       github 1.0
@@ -20,8 +20,8 @@ description                     documentation for the Pure programming language
 long_description                ${name} is an offline copy of the ${description}.
 
 checksums                       rmd160  3c4763f795d5e45ec63b61ba0f02f1a64a8632fc \
-                                sha256  a2a74fc17ca3bdde2b84fb1587b3fe145d5c7363bac1d79c54f5626dcf4cde94 \
-                                size    4852960
+sha256  a2a74fc17ca3bdde2b84fb1587b3fe145d5c7363bac1d79c54f5626dcf4cde94 \
+size    4852960
 
 variant tmdocs description {Also install the TeXmacs-formatted documentation} {
     destroot.target-append  install-tm

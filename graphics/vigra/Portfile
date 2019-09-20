@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -26,7 +26,7 @@ long_description    VIGRA stands for \"Vision with Generic Algorithms\". \
 homepage            https://ukoethe.github.io/vigra/
 
 checksums           rmd160  21378c72a0702cbdd4de4d79c59f0587f6bcde8d \
-                    sha256  b0cdf67e283d2b52e35a45cdcff44453b5b73a9b7d7a1ca84d6508107e49832f
+sha256  b0cdf67e283d2b52e35a45cdcff44453b5b73a9b7d7a1ca84d6508107e49832f
 
 depends_lib         port:jpeg \
                     port:tiff \
@@ -144,7 +144,7 @@ variant python37 conflicts python27 python34 python35 python36 description "Also
 }
 
 if {![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {
-    default_variants +python27
+
 }
 
 if {![variant_isset python27] && ![variant_isset python34] && ![variant_isset python35] && ![variant_isset python36] && ![variant_isset python37]} {

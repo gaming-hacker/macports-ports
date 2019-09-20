@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 
 github.setup        jmacd xdelta-devel 3.1.0 v
@@ -17,7 +19,7 @@ github.tarball_from releases
 distname            xdelta3-${version}
 
 checksums           rmd160  2e6dd8cfab9434f1354f98eb316a0d50970e049c \
-                    sha256  114543336ab6cee3764e3c03202701ef79d7e5e8e4863fe64811e4d9e61884dc
+sha256  114543336ab6cee3764e3c03202701ef79d7e5e8e4863fe64811e4d9e61884dc
 
 depends_lib         port:xz
 

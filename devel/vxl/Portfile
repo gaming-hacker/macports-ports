@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 PortGroup       cmake 1.0
@@ -22,7 +22,7 @@ platforms       darwin
 master_sites    sourceforge:project/vxl/vxl/${branch}
 use_zip         yes
 checksums       rmd160  a00d811aa86b2d3a2dad292ff94991c034092434 \
-                sha256  b06b4a087486af3a270ced2597242bd6cc4e3381779f27a944ea0620208ae7e1
+sha256  b06b4a087486af3a270ced2597242bd6cc4e3381779f27a944ea0620208ae7e1
 
 # licenses in vxl:
 # (see also: http://anonscm.debian.org/viewvc/debian-med/trunk/packages/vxl/trunk/debian/copyright?revision=10688&view=markup)

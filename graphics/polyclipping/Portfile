@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -19,7 +19,7 @@ master_sites        sourceforge
 distname            clipper_ver${version}
 worksrcdir          cpp
 checksums           rmd160  ce81f9aaa4c705fa65be4b06d53e7b5e9ca08f02 \
-                    sha256  a14320d82194807c4480ce59c98aa71cd4175a5156645c4e2b3edd330b930627
+sha256  a14320d82194807c4480ce59c98aa71cd4175a5156645c4e2b3edd330b930627
 
 use_zip             yes
 cmake.out_of_source yes

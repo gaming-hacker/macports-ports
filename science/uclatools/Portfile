@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name		          uclatools
 version           1.0.3
@@ -11,8 +13,8 @@ homepage          http://www.ccn.ucla.edu/BMCweb/SharedCode/SharedSoftware.html
 platforms		      darwin
 master_sites		  http://www.ccn.ucla.edu/jkyle/
 checksums		      md5 48246c595203f7c17bc1956d65ce58e5 \
-                  sha1 0e1c010ee5406ca2677569cc0588e8dd30cb7746 \
-                  rmd160 e57fed6bdaa6d85e2c75fde99f391f2c4c6d593a 
+sha1 0e1c010ee5406ca2677569cc0588e8dd30cb7746 \
+rmd160 e57fed6bdaa6d85e2c75fde99f391f2c4c6d593a 
 
 depends_build path:bin/cmake:cmake
 configure.cmd cmake

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem     1.0
 
@@ -23,7 +23,7 @@ homepage       http://opensource.apple.com/
 master_sites   http://opensource.apple.com/tarballs/${name}
 
 checksums      rmd160  ff6d946a8b742b20948f9a48c9cdaa95e9dee2bd \
-               sha256  82a948b80c2abfc61c4aa5c1da775986418a8e8eb3dd896288cfadf2e19c4985
+sha256  82a948b80c2abfc61c4aa5c1da775986418a8e8eb3dd896288cfadf2e19c4985
 
 patchfiles     patch-Makefile.diff \
                patch-mk.diff \

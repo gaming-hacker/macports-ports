@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compiler_blacklist_versions 1.0
@@ -27,8 +27,8 @@ set subdir          ompi/v${branch}/downloads/
 master_sites        https://www.open-mpi.org/software/${subdir}
 
 checksums           rmd160  a9b7730d31e77e8d8d49204f9945d24f2dd54072 \
-                    sha256  cce7b6d20522849301727f81282201d609553103ac0b09162cf28d102efb9709 \
-                    size    9838152
+sha256  cce7b6d20522849301727f81282201d609553103ac0b09162cf28d102efb9709 \
+size    9838152
 use_bzip2           yes
 
 livecheck.type      regex
@@ -50,8 +50,8 @@ if {[string first "-devel" $subport] > 0} {
                         http://www.open-mpi.de/nightly/v${branch}.x
 
     checksums           rmd160  65d03a8e8cb897ffb288eca36f4e2419cc119c81 \
-                        sha256  d90dce8cadf9344b989e8b44ceadd3e8f878effc99c8a800f4ab250a071233b1 \
-                        size    9890558
+sha256  d90dce8cadf9344b989e8b44ceadd3e8f878effc99c8a800f4ab250a071233b1 \
+size    9890558
 
     livecheck.version   ${base}
     livecheck.url       [lindex ${master_sites} 0]

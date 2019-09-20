@@ -1,4 +1,6 @@
-PortSystem		1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup		xcode 1.0
 
 name			macstl
@@ -19,8 +21,8 @@ master_sites	http://www.pixelglow.com/downloads/
 extract.suffix	.tgz
 
 checksums		md5 28288965464ed69718d616f7596939bb \
-				sha1 009e8ffdba976e3c09cbf3ff21091535771e86d9 \
-				rmd160 1485e24d9be7b5ed75ed62237208271d183edd86
+sha1 009e8ffdba976e3c09cbf3ff21091535771e86d9 \
+rmd160 1485e24d9be7b5ed75ed62237208271d183edd86
 
 worksrcdir		${name}/mac
 

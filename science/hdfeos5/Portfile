@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           active_variants 1.1
@@ -23,8 +23,8 @@ master_sites        ftp://edhs1.gsfc.nasa.gov/edhs/${name}/latest_release/ \
 distname            HDF-EOS5.${version}
 
 checksums           rmd160  68f57e4f7f9d05c820506b242f48d0219a49f27a \
-                    sha256  7054de24b90b6d9533329ef8dc89912c5227c83fb447792103279364e13dd452 \
-                    size    8280847
+sha256  7054de24b90b6d9533329ef8dc89912c5227c83fb447792103279364e13dd452 \
+size    8280847
 
 compilers.choose    cc cxx
 mpi.setup           -clang

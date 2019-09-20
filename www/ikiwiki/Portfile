@@ -1,10 +1,10 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               perl5 1.0
 
 name                    ikiwiki
-perl5.branches          5.28
+perl5.branches 5.28
 perl5.setup             ikiwiki 3.20190228
 # reset version because perl5 portgroup incorrectly converts it
 version                 3.20190228
@@ -34,8 +34,8 @@ livecheck.url           http://ftp.debian.org/debian/pool/main/i/ikiwiki/?C=N\;O
 livecheck.regex         "${name}_(\\d+(?:\\.\\d+)*)"
 
 checksums               rmd160  f47968a69528aea864ad412c8508a8c5063edb9d \
-                        sha256  d07a4d0da60c3e4de698a4dc54d0445547e762b37f0d433b0d664d88155dfe9e \
-                        size    2672244
+sha256  d07a4d0da60c3e4de698a4dc54d0445547e762b37f0d433b0d664d88155dfe9e \
+size    2672244
 
 depends_build           port:coreutils \
                         port:p${perl5.major}-ipc-run \

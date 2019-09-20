@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -32,8 +32,8 @@ master_sites        http://birdfont.org/releases/
 use_xz              yes
 
 checksums           rmd160  0559c52a7faab864ab9beb75a6cf7b2956b48554 \
-                    sha256  4274934ba6ac1532372113473c0d19f7dfbbd301017d4cd14abaab98ea34283a \
-                    size    2605312
+sha256  4274934ba6ac1532372113473c0d19f7dfbbd301017d4cd14abaab98ea34283a \
+size    2605312
 
 patchfiles          fix-install-name.patch
 

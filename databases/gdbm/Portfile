@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           clang_dependency 1.0
@@ -25,8 +25,8 @@ depends_lib         port:gettext \
 master_sites        gnu
 
 checksums           rmd160  041c0dd2ae49d724ba509ce70a4349d246a9767d \
-                    sha256  86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc \
-                    size    941863
+sha256  86e613527e5dba544e73208f42b78b7c022d4fa5a6d5498bf18c8d6f745b91dc \
+size    941863
 
 # Don't link using "-flat_namespace -undefined suppress" on Yosemite and
 # later (#45709).

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem         1.0
 
@@ -26,8 +26,8 @@ long_description   Eye stands for Enhance your Extraction: software for \
 homepage           http://www.astromatic.net/software/eye/
 master_sites       ftp://ftp.iap.fr/pub/from_users/bertin/eye/
 checksums          md5 6c8be5b9f1b233343d5b500c2073f58c \
-                   sha1 73815581cb93c6c579f4a8c8de88f274890439e9 \
-                   rmd160 886d85638f099276d393dd14c841efb41c06d50a
+sha1 73815581cb93c6c579f4a8c8de88f274890439e9 \
+rmd160 886d85638f099276d393dd14c841efb41c06d50a
 
 post-destroot {
     set docdir ${destroot}${prefix}/share/doc

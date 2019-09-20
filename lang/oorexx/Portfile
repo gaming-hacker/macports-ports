@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 4; -*-
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; truncate-lines: t; indent-tabs-mode: nil; c-basic-offset: 2; -*-
 # vim: set fileencoding=utf-8 tabstop=8 shiftwidth=4 softtabstop=4 noexpandtab filetype=tcl :
 
 PortSystem	    1.0
@@ -25,8 +25,8 @@ worksrcdir	    ooRexx-${version}
 use_parallel_build  yes
 
 checksums           md5     12728847478a5219efc988c69f6f12c8 \
-                    sha1    ce22a3caf3f69ae753cccc2904289ee65cd47934 \
-                    rmd160  ffe481d70f76f8c895736f0893c90036556b60fa
+sha1    ce22a3caf3f69ae753cccc2904289ee65cd47934 \
+rmd160  ffe481d70f76f8c895736f0893c90036556b60fa
 
 patchfiles          patch-common-platform-unix-SysLibrary.cpp.diff
 

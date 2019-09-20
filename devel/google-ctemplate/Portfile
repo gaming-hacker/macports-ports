@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup muniversal 1.0
 
 name            google-ctemplate
@@ -17,5 +19,5 @@ homepage        https://code.google.com/p/google-ctemplate/
 master_sites    googlecode
 
 checksums       md5     d6cfabbe1742dbe6f3bd10b77be319f1 \
-                sha1    e8267067747d6cd38e6314d68192a942909d5cee \
-                rmd160  4011c03ec8a484e94ea90935ad84f5b97ff39ee3
+sha1    e8267067747d6cd38e6314d68192a942909d5cee \
+rmd160  4011c03ec8a484e94ea90935ad84f5b97ff39ee3

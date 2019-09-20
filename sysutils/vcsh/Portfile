@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4; truncate-lines: t -*- vim:fenc=utf-8:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2; truncate-lines: t -*- vim:fenc=utf-8:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -18,7 +18,7 @@ long_description    vcsh allows you to have several git repositories, all mainta
                     configs you want to use on which machine.
 
 checksums           rmd160  492a49150523305b050bd5b19aa02d2d0f82bf67 \
-                    sha256  7ceb18c8faf2146b690ffa3b26a1b307c1d1acbccbc5824230949f85248d30a2
+sha256  7ceb18c8faf2146b690ffa3b26a1b307c1d1acbccbc5824230949f85248d30a2
 
 supported_archs     noarch
 

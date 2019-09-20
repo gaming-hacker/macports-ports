@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 PortGroup github 1.0
@@ -13,7 +13,7 @@ description         MessagePack for Lua
 long_description    A Lua implementation of MessagePack, a binary-based efficient data interchange format.
 
 checksums           rmd160  45b040eebd8575481d0cadc4490097d1db1c97fa \
-                    sha256  0f447a3bcbce594d357716daa9e7810922d7f08534d01231ebbb71bc835771c9
+sha256  0f447a3bcbce594d357716daa9e7810922d7f08534d01231ebbb71bc835771c9
 
 depends_build       port:pkgconfig
 depends_lib         port:lua

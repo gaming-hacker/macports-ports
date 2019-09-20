@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -30,7 +30,7 @@ distname            ${git_rev}
 worksrcdir          ${name}-${git_rev}
 
 checksums           rmd160  97d6212bb52b64cfb282c947e053e5e07418c790 \
-                    sha256  3704b7e151579c12909d87f11b7f5dc99f8b02a1d2d32cd341becd5fba71c547
+sha256  3704b7e151579c12909d87f11b7f5dc99f8b02a1d2d32cd341becd5fba71c547
 
 depends_build       port:libtool \
                     port:pkgconfig

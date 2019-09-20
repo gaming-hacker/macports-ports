@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cxx11 1.1
@@ -28,8 +28,8 @@ homepage            http://libmemcached.org/
 master_sites        http://launchpad.net/${name}/${branch}/${version}/+download/
 
 checksums           rmd160  647ea760191755da4832f1a4c78847a330e5b515 \
-                    sha256  e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82 \
-                    size    1039649
+sha256  e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82 \
+size    1039649
 
 # Uses umem.h if present.
 depends_build-append \

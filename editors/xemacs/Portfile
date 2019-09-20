@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -38,25 +38,25 @@ set mule_dist   ${name}-mule-sumo-${sumo_date}${extract.suffix}
 distfiles       ${xemacs_dist}:xemacs efs-${efs_version}-pkg.tar.gz:package xemacs-base-${base_version}-pkg.tar.gz:package
 
 checksums       xemacs-${version}.tar.gz \
-                md5     b0b762407316d6de170db69aba7a37cf \
-                sha1    24ed9b13d80c53c06bba60c7bb68387f692b7373 \
-                rmd160  f7d71d3607c3301760df8f7ae5a93d1d37df56ba \
+md5     b0b762407316d6de170db69aba7a37cf \
+sha1    24ed9b13d80c53c06bba60c7bb68387f692b7373 \
+rmd160  f7d71d3607c3301760df8f7ae5a93d1d37df56ba \
                 xemacs-sumo-${sumo_date}.tar.gz \
-                md5     12ee5fca32ff7e3bfd6ecfd4bb157688 \
-                sha1    60b9601b9d865bdb031c8babc4020ab2a8a3258f \
-                rmd160  15bdf45aaa8dc7fe0a4d378f5993b34054563d81 \
+md5     12ee5fca32ff7e3bfd6ecfd4bb157688 \
+sha1    60b9601b9d865bdb031c8babc4020ab2a8a3258f \
+rmd160  15bdf45aaa8dc7fe0a4d378f5993b34054563d81 \
                 xemacs-mule-sumo-${sumo_date}.tar.gz \
-                md5     2f5cd280cbc2db71d1211a87bcc37344 \
-                sha1    852a5ac51bb713a16f62676bb5db3f2ab06379cd \
-                rmd160  601a735ff800ceb2443ec9b26bc0f7c5b2215854 \
+md5     2f5cd280cbc2db71d1211a87bcc37344 \
+sha1    852a5ac51bb713a16f62676bb5db3f2ab06379cd \
+rmd160  601a735ff800ceb2443ec9b26bc0f7c5b2215854 \
                 efs-${efs_version}-pkg.tar.gz \
-                md5 1f424efc4a55b8da53a7d01136793c9d \
-                sha1 c2465e7308408edfbedd2758210e100151756546 \
-                rmd160 375a56d8bf361222ec84980a6afb762f8e2cd282 \
+md5 1f424efc4a55b8da53a7d01136793c9d \
+sha1 c2465e7308408edfbedd2758210e100151756546 \
+rmd160 375a56d8bf361222ec84980a6afb762f8e2cd282 \
                 xemacs-base-${base_version}-pkg.tar.gz \
-                md5     2ec18d0faf31e2d343f558c730474a63 \
-                sha1    35861ee64ab00191737e35908553f598bd845c9d \
-                rmd160  094fc92d1ebd390ccafcb338b17f44943bd834ae
+md5     2ec18d0faf31e2d343f558c730474a63 \
+sha1    35861ee64ab00191737e35908553f598bd845c9d \
+rmd160  094fc92d1ebd390ccafcb338b17f44943bd834ae
 
 patchfiles      51ced9b8fb63e4be59ea611b58128c400e3df987.diff \
                 bcefd94fa6513d48f4dc8519f633b2df66b553bc.diff \

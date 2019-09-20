@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           compilers 1.0
@@ -21,8 +21,8 @@ long_description    NGSolve is a general purpose Finite Element Library \
 homepage            https://ngsolve.org/
 
 checksums           rmd160  ddf70837091e04df77eb94e8265dc2775f8f0581 \
-                    sha256  8d3fb954dbe52325f6aef3b1321a275260be6ee8b2785df4fda27962471b791f \
-                    size    15069668
+sha256  8d3fb954dbe52325f6aef3b1321a275260be6ee8b2785df4fda27962471b791f \
+size    15069668
 
 # requires a compiler that supports C++17
 compiler.blacklist-append {clang < 900.0.39} macports-clang-3.*

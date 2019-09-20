@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,8 +25,8 @@ distname        ft_v${version}_src
 extract.suffix  .tar
 
 checksums       md5     f649f13b0937b1e4f5e4f45aa259d39e \
-                sha1    b23d74b493da63dff01d5c372312045cde95b54e \
-                rmd160  9a7be313c2421ce7b4c9a856c4b7f1c08217a088
+sha1    b23d74b493da63dff01d5c372312045cde95b54e \
+rmd160  9a7be313c2421ce7b4c9a856c4b7f1c08217a088
 
 extract.cmd     cat
 extract.pre_args

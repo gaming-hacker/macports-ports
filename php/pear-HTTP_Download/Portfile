@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,6 +12,6 @@ description         PEAR HTTP_Download package
 long_description    ${description}
 
 checksums           rmd160  1bd0333a305b90e6ad9eeda404bf733a5b74f956 \
-                    sha256  5936baa381ed17bb51603fdd82f2492829af91ba129aed78d5f5aa9079a19484
+sha256  5936baa381ed17bb51603fdd82f2492829af91ba129aed78d5f5aa9079a19484
 
 depends_lib-append  port:pear-HTTP_Header

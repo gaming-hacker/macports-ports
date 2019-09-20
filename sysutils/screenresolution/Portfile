@@ -1,12 +1,12 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
 
 github.setup        jhford screenresolution 1.6 v
 checksums           rmd160  e4e46d9b314667dbc93e5a990b0e00fd00f7f64e \
-                    sha256  548179c7a50431634a91270fd1464d57a9cf2a37b9f13d4b30733743e2c6bbfc \
-                    size    12840
+sha256  548179c7a50431634a91270fd1464d57a9cf2a37b9f13d4b30733743e2c6bbfc \
+size    12840
 
 categories          sysutils
 platforms           darwin

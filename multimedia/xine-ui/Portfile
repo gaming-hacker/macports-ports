@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 
@@ -24,8 +24,8 @@ master_sites            sourceforge:project/xine/xine-ui/${version}
 use_xz                  yes
 
 checksums               rmd160  14193feda1255e6dd7adc68d03ea09e3298b853e \
-                        sha256  ca20ab40aa386f609562de1b86a379ea3bf605813ceebe64b845bb1b23fc7244 \
-                        size    1762968
+sha256  ca20ab40aa386f609562de1b86a379ea3bf605813ceebe64b845bb1b23fc7244 \
+size    1762968
 
 depends_build           port:autoconf \
                         port:automake \

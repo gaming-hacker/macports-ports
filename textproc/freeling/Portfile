@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,7 +21,7 @@ homepage            http://nlp.lsi.upc.edu/freeling/
 master_sites        http://devel.cpl.upc.edu/freeling/downloads/32?dummy=
 
 checksums           rmd160  85be3adcf20690040d2d3e5927c9ea02b896a652 \
-                    sha256  e98471ceb3f58afbe70369584d8d316323d13fcc51d09b2fd7f431a3220982ba
+sha256  e98471ceb3f58afbe70369584d8d316323d13fcc51d09b2fd7f431a3220982ba
 
 conflicts           hunspell
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -9,8 +9,8 @@ PortGroup           cxx11 1.1
 github.setup        miek inspectrum cd115c22cf4d8d7d3ed18e549d6569abf71fa32c
 version             20190204
 checksums           rmd160 6d4e6c11eca447a395ef2272809c28d84a1068ec \
-                    sha256 6d501d5978167322f70c0e9134d3d5f6709f157b2e99b971ed9c4279dfeb8aac \
-                    size   109321
+sha256 6d501d5978167322f70c0e9134d3d5f6709f157b2e99b971ed9c4279dfeb8aac \
+size   109321
 revision            0
 
 categories          science comms

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ use_xz              yes
 use_parallel_build  yes
 
 checksums           sha256  bc7fdea79b180a5c3f4ac18abea103e72ee99eb4d77d7d7f66ee8b72a68b8b80 \
-                    rmd160  8fd592f338ca15107a438b944b9a010f8ba3933c \
-                    size    4452716
+rmd160  8fd592f338ca15107a438b944b9a010f8ba3933c \
+size    4452716
 
 depends_build       port:pkgconfig
 

@@ -1,4 +1,6 @@
-set                     ports_ignore_different "yes"
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 PortSystem              1.0
 PortGroup               muniversal 1.0
@@ -42,11 +44,11 @@ patchfiles          patch-archinfo_x86_c.diff \
                     patch-makes-Make.lib.diff
 
 checksums           atlas${version}.tar.bz2 \
-                    rmd160  af4099e8bb65f5d771618ca1580f5bc8210f83fe \
-                    sha256  3aab139b118bf3fcdb4956fbd71676158d713ab0d3bccb2ae1dc3769db22102f \
+rmd160  af4099e8bb65f5d771618ca1580f5bc8210f83fe \
+sha256  3aab139b118bf3fcdb4956fbd71676158d713ab0d3bccb2ae1dc3769db22102f \
                     lapack-${lapackversion}.tgz \
-                    rmd160  a92d0d869e42cf5835039b043e613e323b069f04 \
-                    sha256  a9a0082c918fe14e377bbd570057616768dca76cbdc713457d8199aaa233ffc3
+rmd160  a92d0d869e42cf5835039b043e613e323b069f04 \
+sha256  a9a0082c918fe14e377bbd570057616768dca76cbdc713457d8199aaa233ffc3
 
 worksrcdir          ATLAS
 

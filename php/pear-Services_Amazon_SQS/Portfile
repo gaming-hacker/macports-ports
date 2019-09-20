@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           pear 1.0
@@ -12,7 +12,7 @@ description         PEAR Services_Amazon_SQS package
 long_description    ${description}
 
 checksums           rmd160  c7e6001b19bf56e6b5e517167ea8c3b47addf40c \
-                    sha256  e2cb12ae535687fc8ff07d83af24e3fe1fb448b02ed92614edfbe8610ca15b7f
+sha256  e2cb12ae535687fc8ff07d83af24e3fe1fb448b02ed92614edfbe8610ca15b7f
 
 depends_lib-append  port:pear-Console_CommandLine \
                     port:pear-Crypt_HMAC2 \

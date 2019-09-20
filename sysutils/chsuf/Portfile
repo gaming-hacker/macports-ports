@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                chsuf
 version             0.9
@@ -12,8 +14,8 @@ long_description    ${description}
 homepage            http://chsuf.sourceforge.net/
 master_sites        sourceforge
 checksums           sha1 e5815bca06146c764c5ad537cb9504477988803c \
-                    rmd160  d7881244b0038f987ad80721f86ac2f4ad0d38d7 \
-                    sha256  fbbd0939e023a56753de9ff1ce36726bbf71c5afd37a5fe633a07a51ac5da2b1
+rmd160  d7881244b0038f987ad80721f86ac2f4ad0d38d7 \
+sha256  fbbd0939e023a56753de9ff1ce36726bbf71c5afd37a5fe633a07a51ac5da2b1
 
 depends_lib         port:perl5
 

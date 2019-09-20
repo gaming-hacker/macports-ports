@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -22,8 +22,8 @@ long_description    This is a public repository of all known ID's used \
 homepage            http://www.linux-usb.org/usb-ids.html
 
 checksums           rmd160  70167b2fdf52726bdd996508decc42d19064cdf1 \
-                    sha256  8c662407bd04bbce66f413f13e342e550e947d50de6f4d366c62346c0b6419b4 \
-                    size    225831
+sha256  8c662407bd04bbce66f413f13e342e550e947d50de6f4d366c62346c0b6419b4 \
+size    225831
 
 use_configure       no
 build {}

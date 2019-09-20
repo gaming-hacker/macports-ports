@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -24,8 +24,8 @@ master_sites        ${homepage}pub/pike/all/${version}/
 distname            Pike-v${version}
 
 checksums           md5     3ba03096741d6df839d32a940f4a865c \
-                    sha1    211050346d8efc01068e8ea7443f4743116a51be \
-                    rmd160  8983d5bc150beabd1796ff8f05df43e5cf36f467
+sha1    211050346d8efc01068e8ea7443f4743116a51be \
+rmd160  8983d5bc150beabd1796ff8f05df43e5cf36f467
 
 patchfiles          patch-Request.pike
 

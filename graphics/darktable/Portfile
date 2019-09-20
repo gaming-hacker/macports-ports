@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -30,8 +30,8 @@ github.tarball_from     releases
 use_xz                  yes
 
 checksums               rmd160  aa53751d60e7ada728651eb2bc56e0f90a898ccf \
-                        sha256  9cb9efbb09a40375ff05cef89343235a621c58339539e44985470a029a7ffb45 \
-                        size    3512572
+sha256  9cb9efbb09a40375ff05cef89343235a621c58339539e44985470a029a7ffb45 \
+size    3512572
 
 # avoid
 #     Unknown build type: MACPORTS.  Please specify one of:

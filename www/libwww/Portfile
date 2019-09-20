@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem      1.0
 
@@ -25,8 +25,8 @@ depends_build	port:pkgconfig
 depends_lib	path:lib/libssl.dylib:openssl
 
 checksums       rmd160  7b6ecfbd84ca8b2ce3b19d3b60e9f6a75ea914f5 \
-                sha256  32b855101f65466c67ae3a3cc0fd18fa982e4b59fc98c9d4691e2da663d05f04 \
-                size    2630357
+sha256  32b855101f65466c67ae3a3cc0fd18fa982e4b59fc98c9d4691e2da663d05f04 \
+size    2630357
 
 patchfiles      patch-configure.diff \
                 patch-Library_src_SSL_HTSSL.c.diff

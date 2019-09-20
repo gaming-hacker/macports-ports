@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           cmake 1.0
@@ -22,8 +22,8 @@ if {${name} eq ${subport}} {
 
     github.setup gnuradio volk 2.0.0 v
     checksums rmd160 ab6e7a497cd9efcd6873d4edd5b36fd8dbdf9e16 \
-              sha256 33eb98eeb036186665b0f941be1570e5a3350cb0193bbf67b28ef5d9a5ada617 \
-              size   261506
+sha256 33eb98eeb036186665b0f941be1570e5a3350cb0193bbf67b28ef5d9a5ada617 \
+size   261506
     revision  0
 
     # bump the epoch because I moved the version from 20150707 to 1.0.1
@@ -39,8 +39,8 @@ subport volk-devel {
     github.setup gnuradio volk 1299d72c396a88fd2679adfd7a919ac00d2cf678
     version   20190805-[string range ${github.version} 0 7]
     checksums rmd160 58e8d5f767e754e9270ebffa1d9a1d6a61c37ab0 \
-              sha256 afd5b0011e7f1f2be254f42a3cf63e0bdfb950391c165d6a38b24da996c0a178 \
-              size   261505
+sha256 afd5b0011e7f1f2be254f42a3cf63e0bdfb950391c165d6a38b24da996c0a178 \
+size   261505
     revision  0
 
     conflicts       volk

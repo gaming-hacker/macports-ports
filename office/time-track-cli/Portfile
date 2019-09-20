@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -21,8 +21,8 @@ homepage            https://github.com/dongola7/Time-Track-CLI
 master_sites        http://the-blair.com/sw/time-track-cli
 
 checksums           md5     ea6237ad43af401536322d2403ea1880 \
-                    sha1    7c0594cdea36c8485ac008f4db6269e887c09ae1 \
-                    rmd160  735e241d57a7814b7ac7f9b04151aec8795b71b9
+sha1    7c0594cdea36c8485ac008f4db6269e887c09ae1 \
+rmd160  735e241d57a7814b7ac7f9b04151aec8795b71b9
 
 depends_lib         port:tcl \
                     port:tcllib

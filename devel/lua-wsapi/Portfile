@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0 
 
 github.setup        keplerproject wsapi 1.5 v
@@ -15,8 +17,8 @@ long_description    WSAPI is an API that abstracts the web server from Lua web a
 
 github.tarball_from downloads
 checksums           md5     5c983a1db3659ed73e28c473ffd4f4d5 \
-                    sha1    8c9c86f4cb45f94afb110390c6af808ed8238fe4 \
-                    rmd160  a675f92700b588771f9da977912fb0171a28e0bf
+sha1    8c9c86f4cb45f94afb110390c6af808ed8238fe4 \
+rmd160  a675f92700b588771f9da977912fb0171a28e0bf
 
 depends_lib         port:lua \
                     port:lua-luafilesystem \

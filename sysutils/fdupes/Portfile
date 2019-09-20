@@ -1,4 +1,6 @@
-PortSystem          1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 PortGroup           github 1.0
 
 github.setup        adrianlopezroche fdupes 1.6.1 v
@@ -15,7 +17,7 @@ long_description    ${name} identifies and/or deletes duplicate files in specifi
 platforms           darwin freebsd
 
 checksums           rmd160  5319de380517167ebb86d450f412c88b518d8495 \
-                    sha256  ce522c258dc6e0ea39dd3f91c9f37f21859479f5f7e51773140e7c62ed766198
+sha256  ce522c258dc6e0ea39dd3f91c9f37f21859479f5f7e51773140e7c62ed766198
 
 use_configure       no
 

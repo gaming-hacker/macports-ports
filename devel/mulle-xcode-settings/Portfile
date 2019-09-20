@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               github 1.0
@@ -13,7 +13,7 @@ description             Edit Xcode build settings from the command line
 long_description        ${description}
 
 checksums               rmd160  57799a10c12af472a3ee4b8eb88ae0b6900f67c2 \
-                        sha256  a6eac4d3c665e8c33bfcfaaaa3e48a8792334ce978b8c0989364c807d1a00810
+sha256  a6eac4d3c665e8c33bfcfaaaa3e48a8792334ce978b8c0989364c807d1a00810
 
 # the xcode project crashes on closing on Xcode less than 4.2
 # so mulle-xcode-to-cmake was used to make it into a cmake build

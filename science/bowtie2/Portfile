@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -26,8 +26,8 @@ long_description    Bowtie 2 is an ultrafast and memory-efficient tool \
 homepage            http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
 
 checksums           rmd160  32fd950a84a901edc8db34a9939c2a7e8c82b8ef \
-                    sha256  663c8d44bea5532a8096d66414885e98f8077177959518015948db034fbdb280 \
-                    size    10587306
+sha256  663c8d44bea5532a8096d66414885e98f8077177959518015948db034fbdb280 \
+size    10587306
 
 patchfiles          patch-src-Makefile.diff
 

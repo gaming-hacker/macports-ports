@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -22,7 +22,7 @@ homepage            http://he.fi/bchunk/
 master_sites        ${homepage}
 
 checksums           rmd160  50160ddd03d1fd03d1c7ea5bd034e459e93da17e \
-                    sha256  e7d99b5b60ff0b94c540379f6396a670210400124544fb1af985dd3551eabd89
+sha256  e7d99b5b60ff0b94c540379f6396a670210400124544fb1af985dd3551eabd89
 
 configure           {
                         reinplace "s;/usr/local/;${destroot}${prefix};" ${worksrcpath}/Makefile

@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name                jline
 version             0.9.94
@@ -15,8 +17,8 @@ platforms           darwin
 master_sites        sourceforge
 
 checksums           md5 cd4aad9fb454e8acf7af476dae8abb72 \
-                    sha1 0c3b98545764e641f2e8255faa804d8225673602 \
-                    rmd160 664a69d52e8e8375881197988a7f3c348c5f7857
+sha1 0c3b98545764e641f2e8255faa804d8225673602 \
+rmd160 664a69d52e8e8375881197988a7f3c348c5f7857
 use_zip             yes
 
 use_configure       no

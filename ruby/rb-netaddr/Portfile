@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               ruby 1.0
@@ -16,5 +16,5 @@ long_description        \
     much more.
 
 checksums               md5     484de4eb10ab991e5c9f1fff1df13b5d \
-                        sha1    d8c11f3509273ed62e497e84099fd6069b64fccb \
-                        rmd160  0edc1cb72b82e627633fbcd3f91f6ee90be8a04e
+sha1    d8c11f3509273ed62e497e84099fd6069b64fccb \
+rmd160  0edc1cb72b82e627633fbcd3f91f6ee90be8a04e

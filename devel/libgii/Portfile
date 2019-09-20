@@ -1,4 +1,6 @@
-PortSystem 1.0
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -\*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
+
+PortSystem	1.0
 
 name             libgii
 version          1.0.2
@@ -24,8 +26,8 @@ master_sites     ${homepage}ftp/ggi/v2.2/ \
 distname         ${name}-${version}.src
 use_bzip2        yes
 checksums        md5 e002b3b3b7fae2b2558fe7ac854359b7 \
-                 sha1 5ee0cd4a5652df85d68303ace41b88df825a6ea0 \
-                 rmd160 8109f5e9bdd061c3d90120b439c471f5c4369971
+sha1 5ee0cd4a5652df85d68303ace41b88df825a6ea0 \
+rmd160 8109f5e9bdd061c3d90120b439c471f5c4369971
 
 worksrcdir       ${name}-${version}
 

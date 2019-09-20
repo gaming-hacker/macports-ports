@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:filetype=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:filetype=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 PortGroup           github 1.0
@@ -25,9 +25,9 @@ if {${subport} eq ${name}} {
     github.setup    csete gqrx 2.11.5 v
     revision        1
     checksums       \
-        rmd160 b22320ee122d428ff7accc3053796d8ff303ae63 \
-        sha256 e3e98ac8d0cccdb26122a0b8030e40bae99fe76ab188918bbcc9e2cc5639ea37 \
-        size   1329109
+rmd160 b22320ee122d428ff7accc3053796d8ff303ae63 \
+sha256 e3e98ac8d0cccdb26122a0b8030e40bae99fe76ab188918bbcc9e2cc5639ea37 \
+size   1329109
 
     patchfiles-append   patch-gqrx.pro.release.diff
 
@@ -45,8 +45,8 @@ subport gqrx-devel {
     github.setup csete gqrx 6e92a6a76ea623c62feb4b437137e5fa649e794c
     version      20190413-[string range ${github.version} 0 7]
     checksums    rmd160 726d46ba0df820577549cf7fbf5669f59082bc15 \
-                 sha256 7dcf542e7b37e57481153e4b7651a2165f83f1b9be29c347dcb37d16c9e515d4 \
-                 size   1329304
+sha256 7dcf542e7b37e57481153e4b7651a2165f83f1b9be29c347dcb37d16c9e515d4 \
+size   1329304
     revision     0
 
     patchfiles-append   patch-gqrx.pro.devel.diff

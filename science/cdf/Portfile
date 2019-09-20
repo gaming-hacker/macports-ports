@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem              1.0
 PortGroup               compilers 1.0
@@ -8,8 +8,8 @@ epoch                   1
 version                 3.7.1
 revision                0
 checksums               rmd160  a6a2876cd3e2d7ef3e928049af95fa3776a41a41 \
-                        sha256  bbc8f9295e732173eb4b8c1eb2e7e6c045ae0934573ee451fe8ead1c5eee61bb \
-                        size    2243734
+sha256  bbc8f9295e732173eb4b8c1eb2e7e6c045ae0934573ee451fe8ead1c5eee61bb \
+size    2243734
 
 set my_branch           [join [lrange [split ${version} .] 0 1] ""]
 set my_version          ${my_branch}_[join [lrange [split [regsub -- {\.0$} ${version} {}] .] 2 end] "_"]

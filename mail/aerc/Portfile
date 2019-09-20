@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -19,8 +19,8 @@ distname            ${version}
 worksrcdir          ${name}-${distname}
 
 checksums           rmd160  69e0d05966b204c5df72be5e2d6700f0a7483c50 \
-                    sha256  560cee4e284ed35623d28a5e793db79c5e4700296b0aa6ac2c8e92b20ab5c1cf \
-                    size    89448
+sha256  560cee4e284ed35623d28a5e793db79c5e4700296b0aa6ac2c8e92b20ab5c1cf \
+size    89448
 
 use_configure       no
 

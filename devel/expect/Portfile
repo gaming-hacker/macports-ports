@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem 1.0
 
@@ -32,11 +32,11 @@ distfiles       ${distname}.tar.gz:exp \
                 tcl${tclv}-src.tar.gz:tcl
 
 checksums       ${distname}.tar.gz \
-                rmd160  3463e841a451581e289aa59aa87dad2e3195eaa4 \
-                sha256  49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34 \
+rmd160  3463e841a451581e289aa59aa87dad2e3195eaa4 \
+sha256  49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34 \
                 tcl${tclv}-src.tar.gz \
-                rmd160  53723adf560606dc0403af568b6fc0d27a4fd93d \
-                sha256  c43cb0c1518ce42b00e7c8f6eaddd5195c53a98f94adc717234a65cbcfd3f96a
+rmd160  53723adf560606dc0403af568b6fc0d27a4fd93d \
+sha256  c43cb0c1518ce42b00e7c8f6eaddd5195c53a98f94adc717234a65cbcfd3f96a
 
 depends_lib     port:tcl
 

@@ -1,4 +1,4 @@
-# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# -*- coding: utf-8; mode: _tcl; tab-width: 2; indent-tabs-mode: nil; c-basic-offset: 2 -*- vim:fenc=utf-8:ft=tcl:et:sw=2:ts=2:sts=2
 
 PortSystem          1.0
 
@@ -13,7 +13,7 @@ homepage            http://mtools.linux.lu/
 platforms           darwin
 master_sites        ${homepage}
 checksums           md5 3c0ae05b0d98a5d3bd06d3d72fcaf80d \
-                    sha1 964b8af11ac6441e832f2bc4737f35cc3ed0226e \
-                    rmd160 f8498768a432f28689a58840baa11d80a2ba8532
+sha1 964b8af11ac6441e832f2bc4737f35cc3ed0226e \
+rmd160 f8498768a432f28689a58840baa11d80a2ba8532
 configure.args      --mandir=${prefix}/share/man \
                     --infodir=${prefix}/share/info
